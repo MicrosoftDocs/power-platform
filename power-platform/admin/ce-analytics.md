@@ -1,5 +1,5 @@
 ---
-title: "Analytics - Dynamics 365 Customer Engagement | MicrosoftDocs"
+title: "Analytics - CDS for Apps | MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/15/2018
 ms.reviewer: ""

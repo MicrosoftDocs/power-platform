@@ -1,5 +1,5 @@
 ---
-title: "Preview: Administer Business Application Platform | MicrosoftDocs"
+title: "Preview: Administer CDS for Apps | MicrosoftDocs"
 ms.custom: ""
 ms.date: 06/30/2018
 ms.reviewer: ""
@@ -16,7 +16,7 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: "kvivek"
 ---
-# Preview: Administer Business Application Platform
+# Preview: Administer CDS for Apps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
