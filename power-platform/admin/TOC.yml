@@ -1,8 +1,6 @@
 - name: "Preview: Administer Power platform"
   href: admin-guide.md 
   items:
-  - name: Introducing Power platform Admin center
-    href: intro-new-admin-center.md
   - name: Get Help + Support
     href: contact-technical-support.md
   - name: View analytics
