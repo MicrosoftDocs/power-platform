@@ -1,1 +1,1 @@
-# [Power platform administration]
+# [Power platform Admin center administration](admin/admin-guide-bap.md)
