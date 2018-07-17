@@ -1,5 +1,5 @@
 ---
-title: "Preview: Administer Microsoft Flow | MicrosoftDocs"
+title: "Microsoft Flow analytics| MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/30/2018
 ms.reviewer: ""
@@ -15,7 +15,7 @@ author: "MSFTMan"
 ms.author: "deonhe"
 manager: "kvivek"
 ---
-# Preview: Administer Microsoft Flow
+# Microsoft Flow analytics
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

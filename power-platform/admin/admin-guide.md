@@ -1,5 +1,5 @@
 ---
-title: "Preview: Administer CDS for Apps | MicrosoftDocs"
+title: "Preview: Administer Power platform | MicrosoftDocs"
 ms.custom: ""
 ms.date: 06/30/2018
 ms.reviewer: ""
@@ -16,7 +16,7 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: "kvivek"
 ---
-# Preview: Administer CDS for Apps
+# Preview: Administer Power platform
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

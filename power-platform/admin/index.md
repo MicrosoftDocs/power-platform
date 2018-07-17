@@ -1,3 +1,3 @@
 ---
-redirect_url: /power-platform/admin/admin-guide-bap
+redirect_url: /power-platform/admin/admin-guide
 ---

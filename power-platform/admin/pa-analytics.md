@@ -1,5 +1,5 @@
 ---
-title: "Preview: Administer Microsoft Flow | MicrosoftDocs"
+title: "PowerApps analytics | MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/30/2018
 ms.reviewer: ""
@@ -11,11 +11,11 @@ applies_to:
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"
 caps.latest.revision: 31
-author: "MSFTMan"
-ms.author: "deonhe"
+author: "jimholtz"
+ms.author: "jimholtz"
 manager: "kvivek"
 ---
-# Preview: Administer Microsoft Flow
+# PowerApps analytics
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
