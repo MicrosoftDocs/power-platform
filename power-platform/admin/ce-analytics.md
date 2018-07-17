@@ -1,5 +1,5 @@
 ---
-title: "Analytics - CDS for Apps | MicrosoftDocs"
+title: "CDS for Apps analytics | MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/15/2018
 ms.reviewer: ""
@@ -15,7 +15,7 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: kvivek
 ---
-# Analytics - Dynamics 365 Customer Engagement 
+# CDS for Apps analytics
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
