@@ -1,1 +1,1 @@
-# [Index](index.md)
+# [Power platform administration]
