@@ -6,7 +6,6 @@
   - name: Get Help + Support
     href: contact-technical-support.md
   - name: View analytics
-    href: analytics.md
     items:
     - name: CDS for Apps analytics
       href: ce-analytics.md
