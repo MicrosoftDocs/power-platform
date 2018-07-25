@@ -100,4 +100,6 @@ You'll continue to use the Office 365 admin center to manage settings like:
 
 ## Consolidating admin centers - a work in progress
 
+We're working to consolidate the various admin centers you use to manage your admin settings. It's going to be messy for a while and we're sorry about that, but the payoff will be worth it! Check back here for updates and announcements.
 
+[roadmap?]
