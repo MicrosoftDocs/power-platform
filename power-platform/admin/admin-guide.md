@@ -98,3 +98,6 @@ You'll continue to use the Office 365 admin center to manage settings like:
 
 ![Office 365 admin center](./media/o365-admin-center.png)
 
+## Consolidating admin centers - a work in progress
+
+
