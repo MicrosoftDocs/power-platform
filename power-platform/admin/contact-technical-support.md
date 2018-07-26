@@ -1,7 +1,7 @@
 ---
 title: "Get Help + Support | MicrosoftDocs"
 ms.custom: ""
-ms.date: 06/30/2018
+ms.date: 07/30/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -21,15 +21,13 @@ manager: kvivek
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!NOTE]
-> ![This page is under construction. Check back soon!](media/under_construction.png "Coming soon")  [!INCLUDE[cc-under-construction](../includes/cc-under-construction.md)]
+> We'd love your [feedback](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u)!.
 
 ## New Dynamics 365 support center 
 
 Admins, use the Help + support experience to contact a Microsoft support representative for Dynamics 365 (online) to get resolution for your issue. 
 
 ### Prerequisites
-
--  Currently provided in English. We’re working to provide other languages. 
 
 -  You have one of the following Office 365 admin roles to enter support requests:
  
@@ -50,11 +48,11 @@ Admins, use the Help + support experience to contact a Microsoft support represe
 
 ### Enter a support request through the new support center
 
-1. In the Business Application Platform Admin center, choose **Help + Support** > **+ New support request**.
+1. In the Power platform Admin center, choose **Help + Support** > **+ New support request**.
 
    ![New support request](media/new-support-request.png "New support request")
 
-3. Fill in your information, and then select **Submit**.
+3. Fill in the information on the pages, and then select **Submit**.
 
    ![Create a new support request](media/create-support-ticket.png "Create a new support request")
 
@@ -64,3 +62,11 @@ Your request will appear in the list of support requests.
 
 You can check the status and edit your request on this page.
   
+## Limited Preview: Report Outage
+For now, we're rolling out a new Preview feature to a limited set of customers to try out. If you're experiencing a service outage, we want your support request to get more timely review and action. Select the **! Report Outage** link to report the outage. If you don't see this link, don't worry! We'll be bringing this feature to all customers in the future.
+
+![Report Outage](media/new-report-outage.png "Report Outage")
+
+Fill out the pages and then submit to have your support request receive an expedited review.
+
+![Fill in outage info](media/report-outage-page-one.png "Fill in outage info")
