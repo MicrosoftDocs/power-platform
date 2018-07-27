@@ -1,5 +1,5 @@
 ---
-title: "Common Data Service analytics | MicrosoftDocs"
+title: "Common Data Service Analytics | MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/15/2018
 ms.reviewer: ""
@@ -15,14 +15,14 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: kvivek
 ---
-# Common Data Service analytics
+# Common Data Service Analytics
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!NOTE]
 > ![This page is under construction. Check back soon!](media/under_construction.png "Coming soon")  [!INCLUDE[cc-under-construction](../includes/cc-under-construction.md)]
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power platform Admin center to view adoption ad user metrics for your organization. And we've worked on performance so the reports should generate more quickly.
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service Analytics right from the Power platform Admin center to view adoption ad user metrics for your organization. And we've worked on performance so the reports should generate more quickly.
 
  **Key highlights**  
 
@@ -42,21 +42,21 @@ We've improved how you view metrics for your organization. You no longer need to
 
 <a name="BKMK_InstallSolution"></a>   
 
-## View Common Data Service analytics  
+## View Common Data Service Analytics  
 It's simple. In the Power platform Admin center, select **Analytics** > **Common Data Service**.
 
 <a name="BKMK_Home"></a>   
 
 ## Home (default)  
- ![Customer Data Service analytics Home Section](./media/organization-insights-home-section.png "Customer Data Service analytics Home Section")  
+ ![Customer Data Service Analytics Home Section](./media/organization-insights-home-section.png "Customer Data Service Analytics Home Section")  
 
 ### About this dashboard  
  This is the default dashboard that provides information on the number of active Common Data Service users, storage usage, the most active workflows, and more.  
 
 ### What's included in this dashboard  
 
-|              Chart element              |                                                                                                          Description                                                                                                           |
-|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Chart element |Description |
+|-----------|------------|
 |           Total Active Users            |                         Total number of active users (unique users) who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                          |
 |             Total API Calls             |                                            Total number of API calls that were made by the Customer Data Service environment for the selected time period.                                            |
 |            API Success Rate             |                        This chart shows the API success rate as percentage of total API calls that were made in the Customer Data Service environment over the specified time.                        |
@@ -68,15 +68,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 <a name="BKMK_ActiveUsage"></a>   
 
 ## Active Users  
- ![Customer Data Service analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Customer Data Service analytics Active Usage Section")  
+ ![Customer Data Service Analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Customer Data Service Analytics Active Usage Section")  
 
 ### About this dashboard  
  Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
 
 ### What's included in this dashboard  
 
-|                Chart element                |                                                                                                             Description                                                                                                             |               ChartID                |
-|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|Chart element  | Description  |ChartID|
+|----|-----|-----|
 |             Total Active Users              |                            Total number of active users (unique users) who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                            | 4555801D-0EAF-4100-891C-DB34400AB102 |
 |             Most Used  Entities             |                                                            Ten Entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                                                             | F6F2B9FD-FCA8-427A-9A0D-CAC619A3EE74 |
 |             Total Page Requests             | The number of page load requests for forms, dashboards, and reports. This is the count of requests received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages that are cached while browsing won't be counted. | D0401D82-6E7F-4B84-8D86-825D72C68EE6 |
@@ -123,15 +123,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 |Most Used OOB Entities|1 hour|  
 
 ## Users - Mode of Access
- ![Customer Data Service analytics Active Usage Section](./media/organization-insights-users-access-mode.png "Customer Data Service analytics Active Usage Section")  
+ ![Customer Data Service Analytics Active Usage Section](./media/organization-insights-users-access-mode.png "Customer Data Service Analytics Active Usage Section")  
 
 ### About this dashboard  
  Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
 
 ### What's included in this dashboard  
 
-|                Chart element                |                                                                                                             Description                                                                                                             |               ChartID                |
-|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|Chart element  | Description  |ChartID|
+|----|-----|-----|
 |             Total Active Users              |                            Total number of active users (unique users) who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                            | 4555801D-0EAF-4100-891C-DB34400AB102 |
 |             Most Used  Entities             |                                                            Ten Entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                                                             | F6F2B9FD-FCA8-427A-9A0D-CAC619A3EE74 |
 |             Total Page Requests             | The number of page load requests for forms, dashboards, and reports. This is the count of requests received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages that are cached while browsing won't be counted. | D0401D82-6E7F-4B84-8D86-825D72C68EE6 |
@@ -178,15 +178,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 |Most Used OOB Entities|1 hour|  
 
 ## Content Usage
- ![Customer Data Service analytics Active Usage Section](./media/organization-insights-content-usage.png "Customer Data Service analytics Active Usage Section")  
+ ![Customer Data Service Analytics Active Usage Section](./media/organization-insights-content-usage.png "Customer Data Service Analytics Active Usage Section")  
 
 ### About this dashboard  
  Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
 
 ### What's included in this dashboard  
 
-|                Chart element                |                                                                                                             Description                                                                                                             |               ChartID                |
-|---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|Chart element  | Description  |ChartID|
+|----|-----|-----|
 |             Total Active Users              |                            Total number of active users (unique users) who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                            | 4555801D-0EAF-4100-891C-DB34400AB102 |
 |             Most Used  Entities             |                                                            Ten Entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                                                             | F6F2B9FD-FCA8-427A-9A0D-CAC619A3EE74 |
 |             Total Page Requests             | The number of page load requests for forms, dashboards, and reports. This is the count of requests received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages that are cached while browsing won't be counted. | D0401D82-6E7F-4B84-8D86-825D72C68EE6 |
@@ -236,15 +236,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 <a name="BKMK_SystemJobs"></a>   
 
 ## System Jobs  
- ![Customer Data Service analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Customer Data Service analytics System Jobs Section")  
+ ![Customer Data Service Analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Customer Data Service Analytics System Jobs Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot workflows.  
 
 ### What's included in this dashboard  
 
-|         Chart element         |                                                                                                    Description                                                                                                     |               ChartID                |
-|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|Chart element  | Description  |ChartID|
+|----|-----|-----|
 |      Workflow Executions      |                                 This chart shows how many workflows have been executed in the Customer Data Service environment over the specified time.                                  | 3555801D-0EAF-4100-891C-DB34400AB102 |
 |     System Jobs Pass Rate     |               This chart shows the system job’s pass rate as percentage of system jobs that were executed in the Customer Data Service environment over the specified time.               | 1355801D-0EAF-4100-891C-DB34400AB102 |
 | System Jobs Throughput/Minute |                        This chart shows the average system jobs that have been executed per hour in the Customer Data Service environment over the specified time.                        | 090F51C1-7DBA-42BA-B031-FB1C0999EE28 |
@@ -267,15 +267,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 <a name="BKMK_Plugins"></a>   
 
 ## Plug-ins  
- ![Customer Data Service analytics Plugins Section](./media/organization-insights-plugins-section.png "Customer Data Service analytics Plugins Section")  
+ ![Customer Data Service Analytics Plugins Section](./media/organization-insights-plugins-section.png "Customer Data Service Analytics Plugins Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot plug-ins.  
 
 ### What's included in this dashboard  
 
-|         Chart element          |                                                                                          Description                                                                                           |               ChartID                |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|Chart element  | Description  |ChartID|
+|----|-----|-----|
 |      Plug-in Success Rate      | This chart shows the plug-in pass rate as percentage of total plug-in executions that were executed in the Customer Data Service environment over the specified time. | 190F51C1-7DBA-42BA-B031-FB1C0999EE28 |
 |       Plug-in Executions       |                        This chart shows how many plug-ins have been executed in the Customer Data Service environment over the specified time.                        | D48FF5C9-BFC9-4E1C-9215-E76FDBFF282E |
 | Average Plug-in Execution Time |                This chart shows average time taken to successfully execute a plug-in in the Customer Data Service environment over the specified time.                | A4094693-8638-44B5-83B1-B7EC8C8BFFF6 |
@@ -296,15 +296,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 <a name="BKMK_APICallStats"></a>   
 
 ## API Call Statistics  
- ![Customer Data Service analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Customer Data Service analytics API Call Statistics Section")  
+ ![Customer Data Service Analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Customer Data Service Analytics API Call Statistics Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot API calls.  
 
 ### What's included in this dashboard  
 
-|    Chart element    |                                                                                   Description                                                                                    |               ChartID                |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|Chart element  | Description  |ChartID|
+|----|-----|-----|
 |  API Success Rate   | This chart shows the API success rate as percentage of total API calls that were made in the Customer Data Service environment over the specified time. | 5555801D-0EAF-4100-891C-DB34400AB102 |
 | Top API by Failures |                       This chart shows top 10 failing API calls in the Customer Data Service environment over the specified time.                       | CCB98704-6E3F-4302-AC96-0A4E286061FA |
 |   Total API Calls   |              This chart shows how many API calls have been made in total in the Customer Data Service environment over the specified time.              | 9555801D-0EAF-4100-891C-DB34400AB102 |
@@ -325,15 +325,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 <a name="BKMK_MailboxUsage"></a>   
 
 ## Mailbox Usage  
- ![Customer Data Service analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Customer Data Service analytics Mailbox Usage Section")  
+ ![Customer Data Service Analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Customer Data Service Analytics Mailbox Usage Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor email mailbox usage.  
 
 ### What's included in this dashboard  
 
-|             Chart element              |                                                                                                                                                                                                                             Description                                                                                                                                                                                                                              |               ChartID                |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|Chart element  | Description  |ChartID|
+|----|-----|-----|
 |         Mailbox Details by GEO         | This chart shows mailbox details like:<br /><br /> -   the number of server-side synch configured mailboxes<br />-   the number of server-side synch enabled mailboxes<br />-   the number of server-side synch Appointments, Contacts, and Tasks enabled mailboxes<br />-   the number of server-side synch incoming enabled mailboxes<br />-   the number of server-side synch outgoing enabled mailboxes categorized by the geo location the mailbox is hosted in | F90E2120-58B6-4D8B-B913-ADABE7EA4833 |
 |        Mailboxes by Server Type        |                                                                                                                                                                                                      This chart shows the mailbox distribution by server type.                                                                                                                                                                                                       | AFBB2C1B-6405-4D6C-8D21-D808F796405A |
 |  Active Email Server Profiles by Geo   |                                                                                                                                                                          This chart shows active server-side synch enabled mailboxes distributed over the geo location they are hosted in.                                                                                                                                                                           | AE33B341-752B-4AC3-98F7-FC11EA8B5DE5 |
@@ -360,15 +360,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 <a name="BKMK_Storage"></a>   
 
 ## Storage  
- ![Customer Data Service analytics Storage Section](./media/organization-insights-storage-section.png "Customer Data Service analytics Storage Section")  
+ ![Customer Data Service Analytics Storage Section](./media/organization-insights-storage-section.png "Customer Data Service Analytics Storage Section")  
 
 ### About this dashboard  
  This dashboard provides a look at storage used by your tenant and instances.
 
 ### What's included in this dashboard  
 
-|                                          Chart element                                          |                                                                                Description                                                                                |               ChartID                |
-|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|Chart element  | Description  |ChartID|
+|----|-----|-----|
 |          [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] Tenant Storage Utilization           | This chart shows the storage used by all the Customer Data Service environments of your tenant out of the total storage allocated to the tenant. | 1C7B6699-9C07-478C-9C17-AF0D17160734 |
 |           Storage by Customer Data Service Environments (MB)           |                   This chart shows the breakdown of the storage used by the Customer Data Service environments of your tenant.                   | 66BF5239-56EB-4979-AC92-177D98C5077B |
 |     Top Tables by Size - Current Customer Data Service Environment     |              This chart shows top 10 largest tables by size and their row count in the Customer Data Service environment database.               | D37D16D2-C616-4F00-9E56-19E6AE218613 |
@@ -392,15 +392,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 <a name="BKMK_Download"></a>   
 
 ## Download  
- ![Customer Data Service analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service analytics Download Section")  
+ ![Customer Data Service Analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service Analytics Download Section")  
 
 ### About this dashboard  
  Use this dashboard to download the data selected for the date range selected as an Excel spreadsheet.  
 
 ### What's included in this dashboard  
 
-|              Chart element              |                                                                                      Description                                                                                      |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Chart element  | Description  |ChartID|
+|----|-----|-----|
 | Most Active Users Performing Operations | List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`. |
 |        Most Used Custom Entities        |                                List of custom entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                                |
 |         Most Used OOB Entities          |                              List of out-of-box entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                              |
@@ -421,31 +421,31 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 
 <a name="BKMK_CustomizeDashboard"></a>   
 
-## Customize your Customer Data Service analytics dashboard  
- You can easily customize Customer Data Service analytics dashboards to meet your information requirements.  Look for these buttons in the upper-right corner of the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] screen.  
+## Customize your Customer Data Service Analytics dashboard  
+ You can easily customize Customer Data Service Analytics dashboards to meet your information requirements.  Look for these buttons in the upper-right corner of the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] screen.  
 
 |Control|Description|  
 |-------------|-----------------|  
 |Edit<br /><br /> ![Organizations Insights Edit button](./media/organizations-insights-edit-button.png "Organizations Insights Edit button")|Click to edit the dashboard. Once in edit mode, you can add, remove, resize, and reposition charts in the Home dashboard.<br /><br /> In other dashboards, you can reposition and resize charts. You cannot add or remove charts.|  
 |Save<br /><br /> ![Organizations Insights Save button](./media/organizations-insights-save-button.png "Organizations Insights Save button")|Click **Save** to record all your dashboard changes.|  
 |Add<br /><br /> ![Organizations Insights Add button](./media/organizations-insights-add-button.png "Organizations Insights Add button")|Click for a list of charts you can add to the dashboard. You cannot add multiple copies of the same chart in the Home dashboard.|  
-|Chart menu<br /><br /> ![Add an Customer Data Service analytics chart](./media/organization-insights-add-chart-menu.png "Add an Customer Data Service analytics chart")|Charts you can add to a dashboard.|  
+|Chart menu<br /><br /> ![Add an Customer Data Service Analytics chart](./media/organization-insights-add-chart-menu.png "Add an Customer Data Service Analytics chart")|Charts you can add to a dashboard.|  
 |Close<br /><br /> ![Organizations Insights Close button](./media/organizations-insights-close-button.png "Organizations Insights Close button")|Click to close the Chart menu.|  
 |Feedback<br /><br /> ![Organizations Insights Feedback button](./media/organizations-insights-feedback-button.png "Organizations Insights Feedback button")|We want your feedback! Click **Feedback** to let us know how we're doing.|  
 |More options<br /><br /> ![Organizations Insights More button](./media/organizations-insights-more-button.png "Organizations Insights More button")|Click **More options** > **Reset to default dashboard**  to revert all your dashboard changes.  This will reset all changes you've made to any dashboard to default values.|  
-|Remove and Resize<br /><br /> ![Customer Data Service analytics Custom Controls](./media/organization-insights-custom-controls.png "Customer Data Service analytics Custom Controls")|When you click **Edit**, you can remove, resize, and move charts in the Home dashboard. In other dashboards, you can resize and move the charts but not remove them.|  
-|Export<br /><br /> ![Customer Data Service analytics Export Data to Excel](./media/organization-insights-export-dataexcel.PNG "Customer Data Service analytics Export Data to Excel")|Click to export chart data to Excel. Not all charts can be exported.|  
+|Remove and Resize<br /><br /> ![Customer Data Service Analytics Custom Controls](./media/organization-insights-custom-controls.png "Customer Data Service Analytics Custom Controls")|When you click **Edit**, you can remove, resize, and move charts in the Home dashboard. In other dashboards, you can resize and move the charts but not remove them.|  
+|Export<br /><br /> ![Customer Data Service Analytics Export Data to Excel](./media/organization-insights-export-dataexcel.PNG "Customer Data Service Analytics Export Data to Excel")|Click to export chart data to Excel. Not all charts can be exported.|  
 
 <a name="BKMK_GrantAccess"></a>   
 
-## Granting access to the Customer Data Service analytics dashboard  
- By default, the dashboard is  available to System Administrator and System Customizer security roles. Access can be granted to other security roles, by providing **Read** privilege to **Saved Customer Data Service analytics Configuration**.  
+## Granting access to the Customer Data Service Analytics dashboard  
+ By default, the dashboard is  available to System Administrator and System Customizer security roles. Access can be granted to other security roles, by providing **Read** privilege to **Saved Customer Data Service Analytics Configuration**.  
 
 1. Click **Settings** > **Security** > **Security Roles**.  
 
 2. Select a security role, and then click the **Core Records** tab.  
 
-3. Scroll down to **Saved Customer Data Service analytics Configuration** and click the **Read** privilege.  
+3. Scroll down to **Saved Customer Data Service Analytics Configuration** and click the **Read** privilege.  
 
 4. Click **Save and Close**.  
 
@@ -461,16 +461,16 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 
 8. Click **Save and Close**.  
 
-   ![Customer Data Service analytics Custom entity](./media/organization-insights-custom-entity.PNG "Customer Data Service analytics Custom entity")  
+   ![Customer Data Service Analytics Custom entity](./media/organization-insights-custom-entity.PNG "Customer Data Service Analytics Custom entity")  
 
 <a name="BKMK_ViewData"></a>   
 
 ## View data for different time ranges  
- You can adjust the time range for the data presented in the dashboards charts. After selecting the From and To range, click the **Play** button (![Customer Data Service analytics Calendar Play button](./media/organization-insights-calendar-play-button.png "Customer Data Service analytics Calendar Play button")) to refresh your data.  
+ You can adjust the time range for the data presented in the dashboards charts. After selecting the From and To range, click the **Play** button (![Customer Data Service Analytics Calendar Play button](./media/organization-insights-calendar-play-button.png "Customer Data Service Analytics Calendar Play button")) to refresh your data.  
 
  ![Select the date range for your data](./media/organization-insights-calendar-control.png "Select the date range for your data")  
 
- Consider the following about the Customer Data Service analytics calendar:  
+ Consider the following about the Customer Data Service Analytics calendar:  
 
 - The Calendar control is not available for the  Storage dashboard and not applicable to any storage related chart as only the latest information is shown for those charts.  
 
@@ -484,12 +484,12 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 
 - The data shown for a hourly aggregation interval represents the whole hour. For example, if the number of active users at 2:00 PM is 5, there were 5 active users between 1:00 and 2:00 PM.  
 
-  ![Customer Data Service analytics active users chart](./media/organization-insights-active-users-chart.PNG "Customer Data Service analytics active users chart") 
+  ![Customer Data Service Analytics active users chart](./media/organization-insights-active-users-chart.PNG "Customer Data Service Analytics active users chart") 
 
 <a name="BKMK_ODataSupport"></a>   
 
 ## OData Support
-Customer Data Service analytics supports retrieving chart data through the Web API OData v4 web service. <!-- For information about the Web API, see [Use the Microsoft Dynamics 365 Web API](../developer/use-microsoft-dynamics-365-web-api.md). -->
+Customer Data Service Analytics supports retrieving chart data through the Web API OData v4 web service. <!-- For information about the Web API, see [Use the Microsoft Dynamics 365 Web API](../developer/use-microsoft-dynamics-365-web-api.md). -->
 
 The entity set name for the `SavedOrgInsightsConfiguration` entity is `savedorginsightsconfigurations` which needs the `SavedOrgInsightsConfigurationId`, `JSONDataStartTime` and `JSONDataEndTime` to return data in the given time range. The data can then be used to render custom charts or do further post-processing as required.
 
