@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 Customer Engagement analytics | MicrosoftDocs"
+title: "Common Data Service analytics | MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/15/2018
 ms.reviewer: ""
@@ -15,7 +15,7 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: kvivek
 ---
-# Dynamics 365 Customer Engagement analytics
+# Common Data Service analytics
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Administer CDS for Apps environments | MicrosoftDocs"
+title: "Administer Common Data Service for Apps environments | MicrosoftDocs"
 ms.custom: ""
 ms.date: 06/30/2018
 ms.reviewer: ""
@@ -15,7 +15,7 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: kvivek
 ---
-# Administer CDS for Apps environments 
+# Administer Common Data Service for Apps environments 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
