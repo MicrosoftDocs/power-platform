@@ -126,7 +126,9 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
  ![Customer Data Service Analytics Active Usage Section](./media/organization-insights-users-access-mode.png "Customer Data Service Analytics Active Usage Section")  
 
 ### About this dashboard  
- Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
+[JimHoltz: this is a cut and paste of Active Users section and needs review.]
+
+Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
 
 ### What's included in this dashboard  
 
@@ -181,35 +183,15 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
  ![Customer Data Service Analytics Active Usage Section](./media/organization-insights-content-usage.png "Customer Data Service Analytics Active Usage Section")  
 
 ### About this dashboard  
- Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
+[JimHoltz: this is a cut and paste of Active Users section and needs review.]
+
+Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
 
 ### What's included in this dashboard  
 
 |Chart element  | Description  |ChartID|
 |----|-----|-----|
-|             Total Active Users              |                            Total number of active users (unique users) who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                            | 4555801D-0EAF-4100-891C-DB34400AB102 |
-|             Most Used  Entities             |                                                            Ten Entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                                                             | F6F2B9FD-FCA8-427A-9A0D-CAC619A3EE74 |
-|             Total Page Requests             | The number of page load requests for forms, dashboards, and reports. This is the count of requests received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages that are cached while browsing won't be counted. | D0401D82-6E7F-4B84-8D86-825D72C68EE6 |
-|              Total Operations               |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the Customer Data Service environment for the selected time period.                         | B13D7ED8-06BE-4B0E-B314-A16A84099F1E |
-| Active Users Performing Specific Operations |                       Total number of active users (unique users) over time who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                       | 35699BD6-6E49-463D-9DC0-4E968750778F |
-|                Active Users                 |                 Number of active users (unique users) in your instance who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update` over time.                  | 9725801D-0EAF-4100-891C-DB34400AB102 |
-|   Most Active Users Performing Operations   |                        List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                        | B173E5EC-195E-4803-B79A-2B1C2704BCB7 |
-|          Most Used Custom Entities          |                                                       List of custom entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                                                       | 5FD1EF3F-64C4-429C-83BC-95F0AD44B761 |
-|           Most Used OOB Entities            |                                                     List of out-of-box entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                                                     | 46A47AF1-325D-4A00-9F7E-6059D5AAB722 |
-|          Usage Active Users by OS           |                                                                                           The number of active users by operating system.                                                                                           | F37D4DEC-28E2-438A-977F-DD3F96203559 |
-|         Active Users by Device Type         |                                                                                             The number of active users by device type.                                                                                              | 43771A31-6350-489C-AABD-F7EBB93320C4 |
-|           Active Users by Browser           |                                                                                               The number of active users by browser.                                                                                                | 1259D071-A06D-4B3F-8D32-DCD39670F6FD |
-|       Active Users by Security Roles        |                                                                                            The number of active users by security roles.                                                                                            | 09062EF4-4195-4256-B84B-68E9CA3C737D |
-|           Users by Business Unit            |                                                                                            The number of active users by business unit.                                                                                             | 8B701B71-092E-4FCF-A9E3-A005EE865921 |
-|         Number of Creates by Entity         |                                    How many create operations are performed by the selected user in the Customer Data Service environment for the selected time period.                                    | 3AC63F0D-4661-4F19-9B31-DB5616187A88 |
-|         Number of Updates by Entity         |                         How many update operations are performed on different entities by the selected user in the Customer Data Service environment for the selected time period.                         | C215FC98-BF5D-4AAB-BB0A-24E9F2A4F939 |
-|          Number of Reads by Entity          |                          How many read operations are performed on different entities by the selected user in the Customer Data Service environment for the selected time period.                          | 3DE3E899-4BCF-482B-8896-657D0C8FCAE7 |
-|         Number of Deletes by Entity         |                         How many delete operations are performed on different entities by the selected user in the Customer Data Service environment for the selected time period.                         | 8F92215B-C55D-451F-A546-48E1456E7056 |
-|         Total Operations Over Time          |                                        The total operations performed by the selected user in the Customer Data Service environment over the selected time period.                                         | 9AD78421-6D33-4463-8C17-B9C4DF52592D |
-|         Total Operations by Entity          |                              The total operations performed on different entities by the selected user in the Customer Data Service environment for the selected time period.                              | 045F5B81-CF47-4819-A4F9-AE366565C591 |
-|          Active Users by Entities           |                                                                            Show the active users distributed over different entities (refreshed hourly)                                                                             | 2C569F70-7FA8-4C2E-AFCE-E6126ED2CC52 |
-|           Active Users by Client            |                                                                                   The active users distributed by client type (refreshed hourly)                                                                                    | 4D6F71A8-1710-4B0B-9D7A-9590BECE611C |
-|   Active Users Using More than One Client   |                                                      The number of active users using more than one client, distributed over different client combinations (refreshed hourly)                                                       | 149EFCC8-D336-4F51-A293-E173728EC587 |
+| [need info]    | [need info]  | [need info] |
 
 > [!NOTE]
 > **Retrieve** and **RetrieveMultiple** SDK calls are reported as **Reads**.  
@@ -328,6 +310,7 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
  ![Customer Data Service Analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Customer Data Service Analytics Mailbox Usage Section")  
 
 ### About this dashboard  
+
  Use this dashboard to monitor email mailbox usage.  
 
 ### What's included in this dashboard  
