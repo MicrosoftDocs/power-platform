@@ -57,10 +57,10 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 
 |Chart element |Description |
 |-----------|------------|
-|           Total Active Users            |                         Total number of active users (unique users) who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                          |
-|             Total API Calls             |                                            Total number of API calls that were made by the Customer Data Service environment for the selected time period.                                            |
-|            API Success Rate             |                        This chart shows the API success rate as percentage of total API calls that were made in the Customer Data Service environment over the specified time.                        |
-|           Plug-in Executions            |                                        This chart shows how many plug-ins have been executed in the Customer Data Service environment over the specified time.                                        |
+|           Active Users            |                         Number of active users (unique users) who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                          |
+|             API Calls             |                                            Number of API calls that were made by the Customer Data Service environment for the selected time period.                                            |
+|            API Pass Rate             |                        This chart shows the API pass rate as percentage of total API calls that were made in the Customer Data Service environment over the specified time.                        |
+|           Executions            |                                        This chart shows how many plug-ins have been executed in the Customer Data Service environment over the specified time.                                        |
 |            Total Operations             |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the Customer Data Service environment over the specified time.                         |
 | Most Active Users Performing Operations | List of most active users who performed an operation that caused a `Create`, `Update`, `Read`, or `Delete` SDK call in the [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] instance over the selected time period. |
 |        Top Plug-ins by Failures         |                                            This chart shows top 10 most failing plug-in in the Customer Data Service environment over the specified time.                                             |
