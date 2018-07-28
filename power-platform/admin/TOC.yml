@@ -13,3 +13,6 @@
 #      href: pa-analytics.md
   - name: Manage environments
     href: manage-environments.md
+    items:
+    - name: Manage settings
+      href: admin-settings.md

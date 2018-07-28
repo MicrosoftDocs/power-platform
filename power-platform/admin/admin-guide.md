@@ -70,19 +70,6 @@ Let's go through the various parts of the new admin center.
 |10: PowerBI platform  |PowerBI licensed apps.        |
 -->
 
-## Dynamics 365 Admin Settings
-We're working on moving admin settings from the Dynamics 365 Customer Engagement product to the Power platform Admin center. 
-
-Many of these settings...
-
-![Dynamics 365 Settings](./media/old-settings.png)
-
-...will be moving here.
-
-![Dynamics 365 settings](./media/new-admin-center-settings.png)
-
-Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 and accessed through the app settings. 
-
 ## Consolidating admin centers - a work in progress
 
 We're working to consolidate the various admin centers you use to manage and monitor your environments. It's going to be messy for a while but the payoff will be worth it! Here's a look at the various admin centers and future plans.
