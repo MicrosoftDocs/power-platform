@@ -7,9 +7,9 @@
     items:
     - name: Dynamics 365 Customer Engagement analytics
       href: ce-analytics.md
-    - name: Microsoft Flow analytics
-      href: flow-analytics.md
-    - name: PowerApps analytics
-      href: pa-analytics.md
+#    - name: Microsoft Flow analytics
+#      href: flow-analytics.md
+#    - name: PowerApps analytics
+#      href: pa-analytics.md
   - name: Manage environments
     href: manage-environments.md

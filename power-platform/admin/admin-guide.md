@@ -45,7 +45,7 @@ Benefits of the Power platform Admin center include:
 > - **PowerApps and Flow usage reports**: Admins now have more visibility over the PowerApps and Microsoft Flow activity and usage within their organization. From the admin center, admins can review tenant-wide and environment-level reports detailing active users, app usage, and flow usage across their organization.
 > - **Unified gateway management**: Have full visibility over all the gateways that have been setup by makers within their organization that could be providing access to sensitive company data. Global admins can view and manage all gateways in their organization from the admin center. 
 > - **Migrate Flow and DLP management**: Admins and partners can create data-loss prevention (DLP) policies and manage flows within their organization from the admin center.
-> - **Migrate Dynamics 365 Customer Engagement App Management**: Install, configure, and uninstall Dynamics 365 Customer Engagement apps from the admin center.
+> - **Migrate Dynamics 365 Customer Engagement App Management**: Install, configure, and uninstall Dynamics 365 Customer Engagement apps (now called Common Data Service apps) from the admin center.
 > - **Migrate PowerApps management**: Manage custom canvas and model-drive PowerApps within their organization from the admin center.
 > - **Dynamics 365 Trial sign-up**: Users can sign up for a Dynamics 365 trial.
 > - **AppSource installation**: Acquire and install first and third-party applications from AppSource via the admin center.
@@ -75,17 +75,37 @@ Let's go through the various parts of the new admin center.
 |10: PowerBI platform  |PowerBI licensed apps.        |
 
 ## Dynamics 365 Admin Settings
-We're moving Admin settings from the Dynamics 365 Customer Engagement product to the Power platform Admin center. 
+We're working on moving admin settings from the Dynamics 365 Customer Engagement product to the Power platform Admin center. 
 
 Many of these settings...
 
 ![Dynamics 365 Settings](./media/old-settings.png)
 
-...are moving here.
+...will be moving here.
 
 ![Dynamics 365 settings](./media/new-admin-center-settings.png)
 
-Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 based on your licensing. 
+Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 and accessed through the app settings. 
+
+## Consolidating admin centers - a work in progress
+
+We're working to consolidate the various admin centers you use to manage and monitor your environments. It's going to be messy for a while and we're sorry about that, but the payoff will be worth it! Here's a look at the various admin centers and future plans.
+
+
+|Admin Center  |Common Tasks  |
+|---------|---------|
+|Power platform Admin center <br/>[https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com )     |The new unified administrative portal for Power platform admins.  Currently this portal can be used for CDS environment management, to submit CDS for Apps and Flow support tickets, and to view PowerApps and Flow admin analytics.  Over time the following admin experience will be migrated to and replaced by the Power platform Admin center: <br/>1. PowerApps Admin center<br/>2. Microsoft Flow Admin center<br/>3. Business platform Admin center<br/>4. Dynamics 365 Admin center       |
+|Row2     |         |
+|Row3     |         |
+|Row4     |         |
+|Row5     |         |
+|Row6     |         |
+|Row7     |         |
+|Row8     |         |
+|Row9     |         |
+|Row10     |         |
+|Row11     |         |
+
 
 ## What about the Office 365 admin center?
 
@@ -97,9 +117,3 @@ You'll continue to use the Office 365 admin center to manage settings like:
 > - usage and security reports
 
 ![Office 365 admin center](./media/o365-admin-center.png)
-
-## Consolidating admin centers - a work in progress
-
-We're working to consolidate the various admin centers you use to manage your admin settings. It's going to be messy for a while and we're sorry about that, but the payoff will be worth it! Check back here for updates and announcements.
-
-[roadmap?]
