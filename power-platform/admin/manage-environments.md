@@ -1,5 +1,5 @@
 ---
-title: "Manage CDS for Apps environments| MicrosoftDocs"
+title: "Manage Common Data Service for Apps environments| MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/30/2018
 ms.reviewer: ""
@@ -15,11 +15,10 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: "kvivek"
 ---
-# Manage CDS for Apps environments
+# Manage Common Data Service for Apps environments
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!NOTE]
 > ![This page is under construction. Check back soon!](media/under_construction.png "Coming soon")  [!INCLUDE[cc-under-construction](../includes/cc-under-construction.md)]
 
-Stub topic.
