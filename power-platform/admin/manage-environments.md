@@ -28,19 +28,19 @@ You can view and manage your environments on the **Environments** page.
 
 You can sort and search the list of environments - useful for those of you with a large number of environments to manage.
 
-## Consolidating environment management - a work in progress
-
-We're working to consolidate the various admin centers you use to manage and monitor your environments. For now, there'll be some hopping around but the payoff will be worth it! 
-
 ## Environment details
 
-You can see some the details of your environments by selecting an environment. Select **See all** to see and edit all environment details.
+You can see some the details of your environments by selecting an environment. Select **See all** to see more environment details.
 
 ![Environment details](media/environment-details-see-all.png "Environment details")
 
-Select **See all** to see and edit all environment details.
+Select **Edit** to review and edit all your environment details.
 
 ![More environment details](media/environment-details-more.png "More environment details")
+
+## Consolidating environment management - a work in progress
+
+We're working to consolidate the various admin centers you use to manage and monitor your environments. For now, there'll be some hopping around but the payoff will be worth it! 
 
 ### See also
 [Environments Overview](https://docs.microsoft.com/powerapps/administrator/environments-overview)
