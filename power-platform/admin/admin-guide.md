@@ -94,19 +94,19 @@ We're working to consolidate the various admin centers you use to manage and mon
 
 |Admin Center  |Common Tasks  |
 |---------|---------|
-|Power platform Admin center <br/>[https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com )     |The new unified administrative portal for Power platform admins.  Currently this portal can be used for CDS environment management, to submit CDS for Apps and Flow support tickets, and to view PowerApps and Flow admin analytics.  Over time the following admin experience will be migrated to and replaced by the Power platform Admin center: <br/>1. PowerApps Admin center<br/>2. Microsoft Flow Admin center<br/>3. Business platform Admin center<br/>4. Dynamics 365 Admin center       |
-|Row2     |         |
-|Row3     |         |
-|Row4     |         |
-|Row5     |         |
-|Row6     |         |
-|Row7     |         |
-|Row8     |         |
-|Row9     |         |
-|Row10     |         |
-|Row11     |         |
+|Power platform Admin center <br/>[https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)     |The new unified administrative portal for Power platform admins.  Currently this portal can be used for CDS environment management, to submit CDS for Apps and Flow support tickets, and to view PowerApps and Flow admin analytics.  **Over time, the following admin experience will be migrated to and replaced by the Power platform Admin center**: <br/>1. PowerApps Admin center<br/>2. Microsoft Flow Admin center<br/>3. Business platform Admin center<br/>4. Dynamics 365 Admin center       |
+|PowerApps Admin center <br/>[https://admin.powerapps.com](https://admin.powerapps.com)    |Creating and managing environments including security starts here. Within each environment you can manage the apps and flows.  Monitor who is licensed and building things. Create and manage Data Loss Prevention policies. Manage CDS Data Integration projects. **Over time, this will migrated to and replaced by the Power platform Admin center**.      |
+|PowerApps Maker Portal<br/>[https://web.powerapps.com](https://web.powerapps.com)      |This portal is focused on building PowerApps but can also view and manage CDS components, manage connectors and gateways.  You can also see application statistics from details on apps here.         |
+|Microsoft Flow Admin Portal<br/>
+[https://admin.flow.microsoft.com](https://admin.flow.microsoft.com)   | This points to the same site as admin.powerapps.com. **Over time, this will migrated to replaced by the Power platform Admin center.**         |
+|Business platform admin center<br/>[https://admin.businessplatform.microsoft.com](https://admin.businessplatform.microsoft.com)      |This points to the same site as admin.powerapps.com.  **Over time, this will migrated to and replaced by the Power platform Admin center.**        |
+|Dynamics 365 Admin center<br/>[https://port.crm.dynamics.com/G/manage/index.aspx](https://port.crm.dynamics.com/G/manage/index.aspx)     |The Dynamics 365 Admin Center, that can be leveraged to perform certain CDS environment management like renaming, deleting, and resetting. **Over time, this will migrated to replaced by the Power platform Admin center.**        |
+|Dynamics 365 Instance Management<br/>[https://port.crm<N>.dynamics.com/G/Instances/InstancePicker.aspx](https://port.crm<N>.dynamics.com/G/Instances/InstancePicker.aspx) | This instance management portal is reached from admin.powerapps.com when managing the CDS database or from the Dynamics 365 Admin center. Here you will see a list of all the CDS databases and can perform actions such as backup, as well as other actions on a per instance basis. **Over time, this will migrated to replaced by the Power platform Admin center.**    |
+|Office 365 Admin center<br/>[https://portal.office.com/adminportal](https://portal.office.com/adminportal)      |Here you manage users and their license assignment as well as launch into many of the individual admin centers.         |
+|Microsoft Azure<br/>h[ttps://portal.azure.com](https://portal.azure.com)      |Advanced Azure AD management tasks like conditional access and support for developer application registration is done here. This is also where you start setup of your on-premises gateways.         |
+|Security and Compliance Center<br/>[https://protection.office.com](https://protection.office.com)     |In addition to the general compliance tasks, administrators can come here to search the Audit log to see Flow audit events.         |
 
-
+<!--
 ## What about the Office 365 admin center?
 
 You'll continue to use the Office 365 admin center to manage settings like:
@@ -117,3 +117,4 @@ You'll continue to use the Office 365 admin center to manage settings like:
 > - usage and security reports
 
 ![Office 365 admin center](./media/o365-admin-center.png)
+-->
