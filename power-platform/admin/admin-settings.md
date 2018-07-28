@@ -39,7 +39,7 @@ Many of these settings...
 
 ...will be moving here.
 
-![Dynamics 365 settings](./media/new-admin-center-settings.png)
+![Environment settings](media/environment-settings-mini.png)
 
 Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 and accessed through the app settings. 
 
