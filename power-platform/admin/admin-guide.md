@@ -26,10 +26,6 @@ manager: "kvivek"
 > - [!INCLUDE[cc_preview_features_expect_changes](../includes/cc-preview-features-expect-changes.md)]  
 > - [!INCLUDE[cc_preview_features_no_MS_support](../includes/cc-preview-features-no-ms-support.md)]  
 
-> [!NOTE]
-> ![This page is under construction. Check back soon!](media/under_construction.png "Coming soon")  [!INCLUDE[cc-under-construction](../includes/cc-under-construction.md)]
-
-
 If you've managed Dynamics 365 (online) tenants and instances, you've used the Dynamics 365 admin center.
 
 ![Dynamics 365 admin center](./media/old-admin-center50.png)
@@ -40,7 +36,7 @@ With the merge of Common Data Service and the Dynamics 365 platform, we're launc
 
 Benefits of the Power platform Admin center include:
 
-> - **Accessible Admin settings**: Configure all environment settings from the admin center through a single experience designed with accessibility in mind. 
+> - **Accessible admin settings**: Configure all environment settings from the admin center through a single experience designed with accessibility in mind. 
 > - **Unified environment management**: Admins no longer need to switch between the Dynamics 365 Admin Center and the Admin Settings experience to properly setup their environment. Admins now have a single view of all environments deployed on the Common Data Service for apps across their organization.
 > - **PowerApps and Flow usage reports**: Admins now have more visibility over the PowerApps and Microsoft Flow activity and usage within their organization. From the admin center, admins can review tenant-wide and environment-level reports detailing active users, app usage, and flow usage across their organization.
 > - **Unified gateway management**: Have full visibility over all the gateways that have been setup by makers within their organization that could be providing access to sensitive company data. Global admins can view and manage all gateways in their organization from the admin center. 
@@ -49,13 +45,12 @@ Benefits of the Power platform Admin center include:
 > - **Migrate PowerApps management**: Manage custom canvas and model-drive PowerApps within their organization from the admin center.
 > - **Dynamics 365 Trial sign-up**: Users can sign up for a Dynamics 365 trial.
 > - **AppSource installation**: Acquire and install first and third-party applications from AppSource via the admin center.
-> - **Org Insights reports**: Admins no longer need to install the Org Insights solution into their environment. All of the org insights reports are available by default from the admin center.
-
-See blog - for more information about the new admin center.
+> - **Organization Insights reports**: Admins no longer need to install the Organization Insights solution into their environment as all the reports are available by default from the admin center as Common Data Service Analytics.
 
 > [!NOTE]
-> We're rolling out the Power platform Admin center in phases to ensure a stable and high performance environment. Check back here for documentation updates on new features as they become available.
+> We're rolling out the Power platform Admin center in phases to ensure a stable and high performance environment. Not all of the above benefits are in the Admin center at this time. Check back here for updates on new features as they become available.
 
+<!--
 ## A tour of the interface
 Let's go through the various parts of the new admin center.
 
@@ -73,6 +68,7 @@ Let's go through the various parts of the new admin center.
 |8: Data policies     |Need information.         |
 |9: Applications     |PowerApps licensed apps.         |
 |10: PowerBI platform  |PowerBI licensed apps.        |
+-->
 
 ## Dynamics 365 Admin Settings
 We're working on moving admin settings from the Dynamics 365 Customer Engagement product to the Power platform Admin center. 
@@ -89,7 +85,7 @@ Use the links on this page to manage organization-wide settings. App-specific se
 
 ## Consolidating admin centers - a work in progress
 
-We're working to consolidate the various admin centers you use to manage and monitor your environments. It's going to be messy for a while and we're sorry about that, but the payoff will be worth it! Here's a look at the various admin centers and future plans.
+We're working to consolidate the various admin centers you use to manage and monitor your environments. It's going to be messy for a while but the payoff will be worth it! Here's a look at the various admin centers and future plans.
 
 
 |Admin Center  |Common Tasks  |
