@@ -1,5 +1,6 @@
 ---
 title: "Get Help + Support | MicrosoftDocs"
+description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 (online) to get resolution for your issue.
 ms.custom: ""
 ms.date: 07/30/2018
 ms.reviewer: ""
@@ -19,9 +20,6 @@ manager: kvivek
 # Get Help + Support
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!NOTE]
-> We'd love your [feedback](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u)!
 
 ## New Dynamics 365 support center 
 
@@ -70,3 +68,5 @@ For now, we're rolling out a new Preview feature to a limited set of customers t
 Fill out the pages and then submit to have your support request receive an expedited review.
 
 ![Fill in outage info](media/report-outage-page-one.png "Fill in outage info")
+
+We'd love to know your thoughts on the new outage reporting process. Please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).

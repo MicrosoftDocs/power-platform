@@ -19,9 +19,6 @@ manager: kvivek
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-> [!NOTE]
-> ![This page is under construction. Check back soon!](media/under_construction.png "Coming soon")  [!INCLUDE[cc-under-construction](../includes/cc-under-construction.md)]
-
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service Analytics right from the Power platform Admin center to view adoption ad user metrics for your organization. And we've worked on performance so the reports should generate more quickly.
 
  **Key highlights**  

@@ -1,5 +1,6 @@
 ---
 title: "Manage Common Data Service for Apps settings| MicrosoftDocs"
+description: View and manage Common Data Service for Apps settings.
 ms.custom: ""
 ms.date: 07/30/2018
 ms.reviewer: ""
@@ -18,9 +19,6 @@ manager: "kvivek"
 # Manage Common Data Service for Apps settings
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!NOTE]
-> ![This page is under construction. Check back soon!](media/under_construction.png "Coming soon")  [!INCLUDE[cc-under-construction](../includes/cc-under-construction.md)]
 
 You can view and manage the settings for your environments by going to the **Environments** page, selecting an environment, and then selecting **Settings**.
 

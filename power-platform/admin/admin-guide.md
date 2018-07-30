@@ -1,6 +1,6 @@
 ---
 title: "Preview: Administer Power platform | MicrosoftDocs"
-description: The Power platform Admin center is the new site to manage CDS for Apps and other apps.
+description: The Power platform Admin center is the new site to manage Common Data Service for Apps and other apps.
 ms.custom: ""
 ms.date: 07/30/2018
 ms.reviewer: ""
