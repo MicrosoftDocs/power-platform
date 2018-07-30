@@ -1,5 +1,5 @@
 ---
-title: "Administer Common Data Service for Apps environments (Power platform Admin center)| MicrosoftDocs"
+title: "Administer Common Data Service for Apps environments - Power platform Admin center| MicrosoftDocs"
 description:
 ms.custom: ""
 ms.date: 07/30/2018

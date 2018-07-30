@@ -5,7 +5,7 @@
     href: contact-technical-support.md
   - name: View analytics
     items:
-    - name: Dynamics 365 Customer Engagement analytics
+    - name: Common Data Service Analytics
       href: common-data-service-analytics.md
 #    - name: Microsoft Flow analytics
 #      href: flow-analytics.md

@@ -1,5 +1,5 @@
 ---
-title: "Manage environments (Power platform Admin center)| MicrosoftDocs"
+title: "Manage environments - Power platform Admin center| MicrosoftDocs"
 description: View and manage your environments on the Environments page. 
 ms.custom: ""
 ms.date: 07/30/2018

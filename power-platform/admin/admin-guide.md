@@ -1,5 +1,5 @@
 ---
-title: "Preview: Administer Power platform (Power platform Admin center)| MicrosoftDocs"
+title: "Preview: Administer Power platform - Power platform Admin center| MicrosoftDocs"
 description: The Power platform Admin center is the new site to manage Common Data Service for Apps and other apps.
 ms.custom: ""
 ms.date: 07/30/2018
