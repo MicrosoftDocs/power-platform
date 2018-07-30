@@ -1,5 +1,5 @@
 ---
-title: "Common Data Service Analytics | MicrosoftDocs"
+title: "Common Data Service Analytics (Power platform Admin center)| MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/15/2018
 ms.reviewer: ""

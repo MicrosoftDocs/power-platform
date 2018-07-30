@@ -6,7 +6,7 @@
   - name: View analytics
     items:
     - name: Dynamics 365 Customer Engagement analytics
-      href: commond-data-service-analytics.md
+      href: common-data-service-analytics.md
 #    - name: Microsoft Flow analytics
 #      href: flow-analytics.md
 #    - name: PowerApps analytics

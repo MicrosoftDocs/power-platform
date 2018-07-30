@@ -1,5 +1,5 @@
 ---
-title: "Manage Common Data Service for Apps settings| MicrosoftDocs"
+title: "Manage Common Data Service for Apps settings (Power platform Admin center)| MicrosoftDocs"
 description: View and manage Common Data Service for Apps settings.
 ms.custom: ""
 ms.date: 07/30/2018
