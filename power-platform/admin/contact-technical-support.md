@@ -1,5 +1,5 @@
 ---
-title: "Get Help + Support (Power platform Admin center)| MicrosoftDocs"
+title: "Get Help + Support - Power platform Admin center| MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 (online) to get resolution for your issue.
 ms.custom: ""
 ms.date: 07/30/2018

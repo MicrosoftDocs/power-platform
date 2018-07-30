@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Flow analytics (Power platform Admin center)| MicrosoftDocs"
+title: "Microsoft Flow analytics - Power platform Admin center| MicrosoftDocs"
 description:
 ms.custom: ""
 ms.date: 07/30/2018
