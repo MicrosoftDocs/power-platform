@@ -50,30 +50,21 @@ Benefits of the Power platform Admin center include:
 > [!NOTE]
 > We're rolling out the Power platform Admin center in phases to ensure a stable and high performance environment. Not all of the above benefits are in the Admin center at this time. Check back here for updates on new features as they become available.
 
+
+## Admin center interface
 <!--
-## A tour of the interface
-Let's go through the various parts of the new admin center.
-
 ![Walkthrough of the new admin center](./media/new-admin-center-menu75.png)
-
+-->
 |Element  |Description  |
 |---------|---------|
-|1: Help + support     |Create a support ticket for technical support.         |
-|2: Analytics     |Need information.         |
-|3: Privacy     |Need information.         |
-|4: Data integration     |Need information.         |
-|5: Common Data Service     |         |
-|6: Environments     |Create, configure, and manage environments (previously called instances).         |
-|7: Usage     |Need information.         |
-|8: Data policies     |Need information.         |
-|9: Applications     |PowerApps licensed apps.         |
-|10: PowerBI platform  |PowerBI licensed apps.        |
--->
+|Help + support     |Create a support ticket for technical support.         |
+|Analytics     |Get a detailed view of key Common Data Service for Apps metrics such as the number of active users and page requests.       |
+|Data policies     |Create and manage [data loss prevention policies](https://docs.microsoft.com/powerapps/administrator/create-dlp-policy) (DLP).       |
+|Admin portals    |Links to other admin centers.        |
 
 ## Using the various admin centers
 
 For now, there are multiple admin centers you use to manage and monitor your environments. Here's some guidance on the basic role of each.
-
 
 |Admin Center  |Common Tasks  |
 |---------|---------|
