@@ -58,7 +58,7 @@ Let's go through the various parts of the new admin center.
 
 |Element  |Description  |
 |---------|---------|
-|1: Help + support     |Product documentation and information on contacting technical support.         |
+|1: Help + support     |Create a support ticket for technical support.         |
 |2: Analytics     |Need information.         |
 |3: Privacy     |Need information.         |
 |4: Data integration     |Need information.         |
