@@ -28,14 +28,14 @@ Settings for the selected environment can be managed here.
 
 ![Environment settings](media/environment-settings.png)
 
-## Environment settings - a work in progress
-We're working on moving admin settings from the Dynamics 365 Customer Engagement app to the Power platform Admin center. 
+## Environment settings are moving
+Across organization admin settings are moving from the Dynamics 365 Customer Engagement web client to the Power platform Admin center. 
 
 Many of these settings...
 
 ![Dynamics 365 Settings](./media/old-settings.png)
 
-...will be moving here.
+...are moving here.
 
 ![Environment settings](media/environment-settings-mini.png)
 

@@ -36,9 +36,5 @@ Select **Edit** to review and edit all your environment details.
 
 ![More environment details](media/environment-details-more.png "More environment details")
 
-## Consolidating environment management - a work in progress
-
-We're working to consolidate the various admin centers you use to manage and monitor your environments. For now, there'll be some hopping around but the payoff will be worth it! 
-
 ### See also
 [Environments Overview](https://docs.microsoft.com/powerapps/administrator/environments-overview)

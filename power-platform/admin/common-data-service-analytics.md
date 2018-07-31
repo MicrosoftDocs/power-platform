@@ -1,5 +1,5 @@
 ---
-title: "Common Data Service Analytics - Power platform Admin center| MicrosoftDocs"
+title: "Common Data Service analytics - Power platform Admin center| MicrosoftDocs"
 ms.custom: ""
 ms.date: 07/15/2018
 ms.reviewer: ""
@@ -15,7 +15,7 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: kvivek
 ---
-# Common Data Service Analytics
+# Common Data Service analytics
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
