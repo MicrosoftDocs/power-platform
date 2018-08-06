@@ -1,5 +1,5 @@
 ---
-title: "PowerApps analytics - Power platform Admin center| MicrosoftDocs"
+title: "PowerApps analytics | MicrosoftDocs"
 description:
 ms.custom: ""
 ms.date: 07/30/2018
