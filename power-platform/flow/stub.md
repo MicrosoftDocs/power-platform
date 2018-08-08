@@ -14,6 +14,7 @@ caps.latest.revision: 31
 author: "MSFTMan"
 ms.author: "deonhe"
 manager: "kvivek"
+robots: noindex,nofollow
 ---
 # Preview: Administer Microsoft Flow
 

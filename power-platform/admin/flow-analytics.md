@@ -15,6 +15,7 @@ caps.latest.revision: 31
 author: "MSFTMan"
 ms.author: "deonhe"
 manager: "kvivek"
+robots: noindex,nofollow
 ---
 # Microsoft Flow analytics
 

@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "jimholtz"
 ms.author: "jimholtz"
 manager: kvivek
+robots: noindex,nofollow
 ---
 # Common Data Service analytics
 
