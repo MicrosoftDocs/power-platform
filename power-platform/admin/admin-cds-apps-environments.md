@@ -15,6 +15,7 @@ caps.latest.revision: 63
 author: "jimholtz"
 ms.author: "jimholtz"
 manager: kvivek
+robots: noindex,nofollow
 ---
 # Administer Common Data Service for Apps environments 
 
