@@ -6,11 +6,11 @@
   - name: View analytics
     items:
     - name: Common Data Service analytics
-      href: common-data-service-analytics.md
+      href: analytics-common-data-service.md
     - name: Microsoft Flow analytics
-      href: flow-analytics.md
+      href: analytics-flow.md
     - name: PowerApps analytics
-      href: powerapps-analytics.md
+      href: analytics-powerapps.md
   - name: Manage environments
     href: manage-environments.md
     items:
