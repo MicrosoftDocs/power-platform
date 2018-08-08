@@ -2,7 +2,7 @@
 title: "Manage environments | MicrosoftDocs"
 description: View and manage your environments on the Environments page. 
 ms.custom: ""
-ms.date: 07/30/2018
+ms.date: 08/08/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""

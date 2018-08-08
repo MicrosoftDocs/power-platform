@@ -2,7 +2,7 @@
 title: "Preview: Administer Power platform | MicrosoftDocs"
 description: The Power platform Admin center is the new site to manage Common Data Service for Apps and other apps.
 ms.custom: ""
-ms.date: 07/30/2018
+ms.date: 08/08/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -22,6 +22,7 @@ manager: "kvivek"
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!IMPORTANT]
+> - This feature currently has limited availability.
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]  
 > - [!INCLUDE[cc_preview_features_expect_changes](../includes/cc-preview-features-expect-changes.md)]  
 > - [!INCLUDE[cc_preview_features_no_MS_support](../includes/cc-preview-features-no-ms-support.md)]  

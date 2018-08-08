@@ -1,7 +1,7 @@
 ---
 title: "Common Data Service analytics | MicrosoftDocs"
 ms.custom: ""
-ms.date: 07/15/2018
+ms.date: 08/08/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -119,6 +119,7 @@ It's simple. In the Power platform Admin center, select **analytics** > **Common
 |Most Used Custom Entities|1 hour|  
 |Most Used OOB Entities|1 hour|  
 
+<!--
 ## Users - Mode of Access
  ![Customer Data Service analytics Active Usage Section](./media/organization-insights-users-access-mode.png "Customer Data Service analytics Active Usage Section")  
 
@@ -175,7 +176,8 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 |Most Active Users Performing Operations|1 hour|  
 |Most Used Custom Entities|1 hour|  
 |Most Used OOB Entities|1 hour|  
-
+-->
+<!--
 ## Content Usage
  ![Customer Data Service analytics Active Usage Section](./media/organization-insights-content-usage.png "Customer Data Service analytics Active Usage Section")  
 
@@ -210,7 +212,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 |Most Active Users Performing Operations|1 hour|  
 |Most Used Custom Entities|1 hour|  
 |Most Used OOB Entities|1 hour|  
-
+-->
 
 <a name="BKMK_SystemJobs"></a>   
 
