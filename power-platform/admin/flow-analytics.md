@@ -1,8 +1,8 @@
 ---
-title: "Microsoft Flow analytics - Power platform Admin center| MicrosoftDocs"
+title: "Microsoft Flow analytics | MicrosoftDocs"
 description:
 ms.custom: ""
-ms.date: 07/30/2018
+ms.date: 08/08/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""

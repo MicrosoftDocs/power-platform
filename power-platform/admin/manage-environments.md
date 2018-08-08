@@ -1,8 +1,8 @@
 ---
-title: "Manage environments - Power platform Admin center| MicrosoftDocs"
+title: "Manage environments | MicrosoftDocs"
 description: View and manage your environments on the Environments page. 
 ms.custom: ""
-ms.date: 07/30/2018
+ms.date: 08/08/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -35,10 +35,6 @@ You can see some the details of your environments by selecting an environment. S
 Select **Edit** to review and edit all your environment details.
 
 ![More environment details](media/environment-details-more.png "More environment details")
-
-## Consolidating environment management - a work in progress
-
-We're working to consolidate the various admin centers you use to manage and monitor your environments. For now, there'll be some hopping around but the payoff will be worth it! 
 
 ### See also
 [Environments Overview](https://docs.microsoft.com/powerapps/administrator/environments-overview)

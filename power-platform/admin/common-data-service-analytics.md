@@ -1,7 +1,7 @@
 ---
-title: "Common Data Service Analytics - Power platform Admin center| MicrosoftDocs"
+title: "Common Data Service analytics | MicrosoftDocs"
 ms.custom: ""
-ms.date: 07/15/2018
+ms.date: 08/08/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -15,11 +15,11 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: kvivek
 ---
-# Common Data Service Analytics
+# Common Data Service analytics
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service Analytics right from the Power platform Admin center to view adoption ad user metrics for your organization. And we've worked on performance so the reports should generate more quickly.
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power platform Admin center to quickly view adoption ad user metrics for your organization. 
 
  **Key highlights**  
 
@@ -39,13 +39,13 @@ We've improved how you view metrics for your organization. You no longer need to
 
 <a name="BKMK_InstallSolution"></a>   
 
-## View Common Data Service Analytics  
-It's simple. In the Power platform Admin center, select **Analytics** > **Common Data Service**.
+## View Common Data Service analytics  
+It's simple. In the Power platform Admin center, select **analytics** > **Common Data Service**.
 
 <a name="BKMK_Home"></a>   
 
 ## Home (default)  
- ![Customer Data Service Analytics Home Section](./media/organization-insights-home-section.png "Customer Data Service Analytics Home Section")  
+ ![Customer Data Service analytics Home Section](./media/organization-insights-home-section.png "Customer Data Service analytics Home Section")  
 
 ### About this dashboard  
  This is the default dashboard that provides information on the number of active Common Data Service users, storage usage, the most active workflows, and more.  
@@ -65,7 +65,7 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 <a name="BKMK_ActiveUsage"></a>   
 
 ## Active Users  
- ![Customer Data Service Analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Customer Data Service Analytics Active Usage Section")  
+ ![Customer Data Service analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Customer Data Service analytics Active Usage Section")  
 
 ### About this dashboard  
  Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
@@ -119,8 +119,9 @@ It's simple. In the Power platform Admin center, select **Analytics** > **Common
 |Most Used Custom Entities|1 hour|  
 |Most Used OOB Entities|1 hour|  
 
+<!--
 ## Users - Mode of Access
- ![Customer Data Service Analytics Active Usage Section](./media/organization-insights-users-access-mode.png "Customer Data Service Analytics Active Usage Section")  
+ ![Customer Data Service analytics Active Usage Section](./media/organization-insights-users-access-mode.png "Customer Data Service analytics Active Usage Section")  
 
 ### About this dashboard  
 [JimHoltz: this is a cut and paste of Active Users section and needs review.]
@@ -175,9 +176,10 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 |Most Active Users Performing Operations|1 hour|  
 |Most Used Custom Entities|1 hour|  
 |Most Used OOB Entities|1 hour|  
-
+-->
+<!--
 ## Content Usage
- ![Customer Data Service Analytics Active Usage Section](./media/organization-insights-content-usage.png "Customer Data Service Analytics Active Usage Section")  
+ ![Customer Data Service analytics Active Usage Section](./media/organization-insights-content-usage.png "Customer Data Service analytics Active Usage Section")  
 
 ### About this dashboard  
 [JimHoltz: this is a cut and paste of Active Users section and needs review.]
@@ -210,12 +212,12 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 |Most Active Users Performing Operations|1 hour|  
 |Most Used Custom Entities|1 hour|  
 |Most Used OOB Entities|1 hour|  
-
+-->
 
 <a name="BKMK_SystemJobs"></a>   
 
 ## System Jobs  
- ![Customer Data Service Analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Customer Data Service Analytics System Jobs Section")  
+ ![Customer Data Service analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Customer Data Service analytics System Jobs Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot workflows.  
@@ -246,7 +248,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Plugins"></a>   
 
 ## Plug-ins  
- ![Customer Data Service Analytics Plugins Section](./media/organization-insights-plugins-section.png "Customer Data Service Analytics Plugins Section")  
+ ![Customer Data Service analytics Plugins Section](./media/organization-insights-plugins-section.png "Customer Data Service analytics Plugins Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot plug-ins.  
@@ -275,7 +277,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_APICallStats"></a>   
 
 ## API Call Statistics  
- ![Customer Data Service Analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Customer Data Service Analytics API Call Statistics Section")  
+ ![Customer Data Service analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Customer Data Service analytics API Call Statistics Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot API calls.  
@@ -304,7 +306,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_MailboxUsage"></a>   
 
 ## Mailbox Usage  
- ![Customer Data Service Analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Customer Data Service Analytics Mailbox Usage Section")  
+ ![Customer Data Service analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Customer Data Service analytics Mailbox Usage Section")  
 
 ### About this dashboard  
 
@@ -340,7 +342,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Storage"></a>   
 
 ## Storage  
- ![Customer Data Service Analytics Storage Section](./media/organization-insights-storage-section.png "Customer Data Service Analytics Storage Section")  
+ ![Customer Data Service analytics Storage Section](./media/organization-insights-storage-section.png "Customer Data Service analytics Storage Section")  
 
 ### About this dashboard  
  This dashboard provides a look at storage used by your tenant and instances.
@@ -372,7 +374,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Download"></a>   
 
 ## Download  
- ![Customer Data Service Analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service Analytics Download Section")  
+ ![Customer Data Service analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service analytics Download Section")  
 
 ### About this dashboard  
  Use this dashboard to download the data selected for the date range selected as an Excel spreadsheet.  
@@ -401,31 +403,31 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 <a name="BKMK_CustomizeDashboard"></a>   
 
-## Customize your Customer Data Service Analytics dashboard  
- You can easily customize Customer Data Service Analytics dashboards to meet your information requirements.  Look for these buttons in the upper-right corner of the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] screen.  
+## Customize your Customer Data Service analytics dashboard  
+ You can easily customize Customer Data Service analytics dashboards to meet your information requirements.  Look for these buttons in the upper-right corner of the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] screen.  
 
 |Control|Description|  
 |-------------|-----------------|  
 |Edit<br /><br /> ![Organizations Insights Edit button](./media/organizations-insights-edit-button.png "Organizations Insights Edit button")|Click to edit the dashboard. Once in edit mode, you can add, remove, resize, and reposition charts in the Home dashboard.<br /><br /> In other dashboards, you can reposition and resize charts. You cannot add or remove charts.|  
 |Save<br /><br /> ![Organizations Insights Save button](./media/organizations-insights-save-button.png "Organizations Insights Save button")|Click **Save** to record all your dashboard changes.|  
 |Add<br /><br /> ![Organizations Insights Add button](./media/organizations-insights-add-button.png "Organizations Insights Add button")|Click for a list of charts you can add to the dashboard. You cannot add multiple copies of the same chart in the Home dashboard.|  
-|Chart menu<br /><br /> ![Add an Customer Data Service Analytics chart](./media/organization-insights-add-chart-menu.png "Add an Customer Data Service Analytics chart")|Charts you can add to a dashboard.|  
+|Chart menu<br /><br /> ![Add an Customer Data Service analytics chart](./media/organization-insights-add-chart-menu.png "Add an Customer Data Service analytics chart")|Charts you can add to a dashboard.|  
 |Close<br /><br /> ![Organizations Insights Close button](./media/organizations-insights-close-button.png "Organizations Insights Close button")|Click to close the Chart menu.|  
 |Feedback<br /><br /> ![Organizations Insights Feedback button](./media/organizations-insights-feedback-button.png "Organizations Insights Feedback button")|We want your feedback! Click **Feedback** to let us know how we're doing.|  
 |More options<br /><br /> ![Organizations Insights More button](./media/organizations-insights-more-button.png "Organizations Insights More button")|Click **More options** > **Reset to default dashboard**  to revert all your dashboard changes.  This will reset all changes you've made to any dashboard to default values.|  
-|Remove and Resize<br /><br /> ![Customer Data Service Analytics Custom Controls](./media/organization-insights-custom-controls.png "Customer Data Service Analytics Custom Controls")|When you click **Edit**, you can remove, resize, and move charts in the Home dashboard. In other dashboards, you can resize and move the charts but not remove them.|  
-|Export<br /><br /> ![Customer Data Service Analytics Export Data to Excel](./media/organization-insights-export-dataexcel.PNG "Customer Data Service Analytics Export Data to Excel")|Click to export chart data to Excel. Not all charts can be exported.|  
+|Remove and Resize<br /><br /> ![Customer Data Service analytics Custom Controls](./media/organization-insights-custom-controls.png "Customer Data Service analytics Custom Controls")|When you click **Edit**, you can remove, resize, and move charts in the Home dashboard. In other dashboards, you can resize and move the charts but not remove them.|  
+|Export<br /><br /> ![Customer Data Service analytics Export Data to Excel](./media/organization-insights-export-dataexcel.PNG "Customer Data Service analytics Export Data to Excel")|Click to export chart data to Excel. Not all charts can be exported.|  
 
 <a name="BKMK_GrantAccess"></a>   
 
-## Granting access to the Customer Data Service Analytics dashboard  
- By default, the dashboard is  available to System Administrator and System Customizer security roles. Access can be granted to other security roles, by providing **Read** privilege to **Saved Customer Data Service Analytics Configuration**.  
+## Granting access to the Customer Data Service analytics dashboard  
+ By default, the dashboard is  available to System Administrator and System Customizer security roles. Access can be granted to other security roles, by providing **Read** privilege to **Saved Customer Data Service analytics Configuration**.  
 
 1. Click **Settings** > **Security** > **Security Roles**.  
 
 2. Select a security role, and then click the **Core Records** tab.  
 
-3. Scroll down to **Saved Customer Data Service Analytics Configuration** and click the **Read** privilege.  
+3. Scroll down to **Saved Customer Data Service analytics Configuration** and click the **Read** privilege.  
 
 4. Click **Save and Close**.  
 
@@ -441,16 +443,16 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 8. Click **Save and Close**.  
 
-   ![Customer Data Service Analytics Custom entity](./media/organization-insights-custom-entity.PNG "Customer Data Service Analytics Custom entity")  
+   ![Customer Data Service analytics Custom entity](./media/organization-insights-custom-entity.PNG "Customer Data Service analytics Custom entity")  
 
 <a name="BKMK_ViewData"></a>   
 
 ## View data for different time ranges  
- You can adjust the time range for the data presented in the dashboards charts. After selecting the From and To range, click the **Play** button (![Customer Data Service Analytics Calendar Play button](./media/organization-insights-calendar-play-button.png "Customer Data Service Analytics Calendar Play button")) to refresh your data.  
+ You can adjust the time range for the data presented in the dashboards charts. After selecting the From and To range, click the **Play** button (![Customer Data Service analytics Calendar Play button](./media/organization-insights-calendar-play-button.png "Customer Data Service analytics Calendar Play button")) to refresh your data.  
 
  ![Select the date range for your data](./media/organization-insights-calendar-control.png "Select the date range for your data")  
 
- Consider the following about the Customer Data Service Analytics calendar:  
+ Consider the following about the Customer Data Service analytics calendar:  
 
 - The Calendar control is not available for the  Storage dashboard and not applicable to any storage related chart as only the latest information is shown for those charts.  
 
@@ -464,12 +466,12 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 - The data shown for a hourly aggregation interval represents the whole hour. For example, if the number of active users at 2:00 PM is 5, there were 5 active users between 1:00 and 2:00 PM.  
 
-  ![Customer Data Service Analytics active users chart](./media/organization-insights-active-users-chart.PNG "Customer Data Service Analytics active users chart") 
+  ![Customer Data Service analytics active users chart](./media/organization-insights-active-users-chart.PNG "Customer Data Service analytics active users chart") 
 
 <a name="BKMK_ODataSupport"></a>   
 
 ## OData Support
-Customer Data Service Analytics supports retrieving chart data through the Web API OData v4 web service. <!-- For information about the Web API, see [Use the Microsoft Dynamics 365 Web API](../developer/use-microsoft-dynamics-365-web-api.md). -->
+Customer Data Service analytics supports retrieving chart data through the Web API OData v4 web service. <!-- For information about the Web API, see [Use the Microsoft Dynamics 365 Web API](../developer/use-microsoft-dynamics-365-web-api.md). -->
 
 The entity set name for the `SavedOrgInsightsConfiguration` entity is `savedorginsightsconfigurations` which needs the `SavedOrgInsightsConfigurationId`, `JSONDataStartTime` and `JSONDataEndTime` to return data in the given time range. The data can then be used to render custom charts or do further post-processing as required.
 

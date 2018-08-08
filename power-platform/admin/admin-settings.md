@@ -1,8 +1,8 @@
 ---
-title: "Manage Common Data Service for Apps settings - Power platform Admin center| MicrosoftDocs"
+title: "Manage Common Data Service for Apps settings | MicrosoftDocs"
 description: View and manage Common Data Service for Apps settings.
 ms.custom: ""
-ms.date: 07/30/2018
+ms.date: 08/08/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -28,14 +28,14 @@ Settings for the selected environment can be managed here.
 
 ![Environment settings](media/environment-settings.png)
 
-## Environment settings - a work in progress
-We're working on moving admin settings from the Dynamics 365 Customer Engagement app to the Power platform Admin center. 
+## Environment settings are moving
+Across organization admin settings are moving from the Dynamics 365 Customer Engagement web client to the Power platform Admin center. 
 
 Many of these settings...
 
 ![Dynamics 365 Settings](./media/old-settings.png)
 
-...will be moving here.
+...are moving here.
 
 ![Environment settings](media/environment-settings-mini.png)
 
