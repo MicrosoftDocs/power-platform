@@ -17,3 +17,6 @@ ms.author: "jimholtz"
 manager: "kvivek"
 ---
 # Manage email settings
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
