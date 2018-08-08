@@ -1,0 +1,18 @@
+- name: "Preview: Administer Power platform"
+  href: admin-guide.md 
+  items:
+  - name: Get Help + Support
+    href: contact-technical-support.md
+  - name: View analytics
+    items:
+    - name: Common Data Service analytics
+      href: common-data-service-analytics.md
+#    - name: Microsoft Flow analytics
+#      href: flow-analytics.md
+#    - name: PowerApps analytics
+#      href: powerapps-analytics.md
+  - name: Manage environments
+    href: manage-environments.md
+    items:
+    - name: Manage settings
+      href: admin-settings.md
