@@ -15,6 +15,7 @@ caps.latest.revision: 31
 author: "jimholtz"
 ms.author: "jimholtz"
 manager: "kvivek"
+robots: noindex,nofollow
 ---
 # Manage privacy and security settings
 

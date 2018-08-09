@@ -15,6 +15,7 @@ caps.latest.revision: 31
 author: "jimholtz"
 ms.author: "jimholtz"
 manager: "kvivek"
+robots: noindex,nofollow
 ---
 # Manage email tracking settings
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
@@ -42,7 +43,7 @@ Make sure you have the System Administrator or System Customizer security role o
 |**Number of digits for incremental message counter|Default: 3.|
 |**Use smart matching**|Default: Off.|
 |**Folder-level tracking**||  
-|**Use folder-level tracking for Exchange folders (server-side synchronization must be enabled)**|Users can set up [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] tracking folders, and then move messages to those folders to track them automatically on virtually any device. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Track Outlook email by moving it to a tracked Exchange folder](https://docs.microsoft.com/dynamics365/customer-engagement/admin/track-outlook-email-by-moving-it-tracked-exchange-folder)<br /><br /> Folder-level tracking provides 100% tracking accuracy. To use folder-level tracking:<br /><br /> -   You must select this check box.<br />-   Your organization must synchronize email through server-side synchronization. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)|  
+|**Use folder-level tracking for Exchange folders (server-side synchronization must be enabled)**|Users can set up [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] tracking folders, and then move messages to those folders to track them automatically on virtually any device. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Track Outlook email by moving it to a tracked Exchange folder](https://docs.microsoft.com/dynamics365/customer-engagement/admin/track-outlook-email-by-moving-it-tracked-exchange-folder)<br /><br /> Folder-level tracking provides 100% tracking accuracy. To use folder-level tracking:<br /><br /> -   You must select this check box.<br />-   Your organization must synchronize email through server-side synchronization. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up server-side synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks)|  
 |**Tracking items**| |
 |**Use Outlook categories to track Outlook items**|Default: Not selected. Off.|
 |**Allow auto-tracking from sent items**|Default: Not selected. Off.|
