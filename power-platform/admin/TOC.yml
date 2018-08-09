@@ -27,8 +27,8 @@
           href: settings-privacy-security.md
       - name: Business
         items:
-        - name: Users + permissions
-          items:
+      - name: Users + permissions
+        items:
       - name: Email
         items:
         - name: Manage email settings
