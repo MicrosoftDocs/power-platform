@@ -36,18 +36,19 @@ Make sure you have the System Administrator or System Customizer security role o
 |Settings|Description|  
 |--------------|-----------------|  
 |**Privacy preferences**|More information: [Set privacy preferences for an organization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-privacy-preferences-organization)|  
-|**Default app name**|Default: xx. xxxxx|  
-|**Privacy statement URL**|Provide users with a link to your organization's privacy statement. The link will be added to the **Settings** menu.|  
+|**Show privacy statement link for this organization**|Default: Off. xxxxx|  
+|**Privacy statement URL**|Provide users with a link to your organization's privacy statement. The link will be added to the **Settings** menu.| 
 |**Default action to take when an error occurs**| |
-|**Ask the user for permission to send an error report to Microsoft**|Default: Selected.|  
-|**Automatically send an error report to Microsoft without user interaction**||  
-|**Never send an error report to Microsoft**||  
-|**Session expiration**|More information: [Security enhancements: User session and access management](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management)|  
-|**Maximum session duration (minutes)**|Default: 1440. After the time you set is reached, users must re-authenticate to Dynamics 365 (online).|  
-|**Show warning before expiration? (minutes prior)**|Default: 20. After the time you set is reached, users receive an expiration warning.|  
+|**Ask the user for permission to send an error report to Microsoft**|Default: Not selected.|  
+|**Automatically send an error report to Microsoft without asking me for permission**|Default: Not selected.|  
+|**Never send an error report to Microsoft**|Default: Not selected.|  
+|**Blocked Attachments**| |
+|**Set blocked file extensions for attachments (semi-colon separated)**|Prevent upload or download of certain attachment types that are considered dangerous. Separate file extensions with a semi-colon.|
+|**Session Expiration**|More information: [Security enhancements: User session and access management](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management)|  
+|**Set custom session timeout**|Default: Off.|
+|**Enter maximum session length (minutes)**|Default: 1440. After the time you set is reached, users must re-authenticate to Dynamics 365 (online).|  
+|**How long before the session expires do you want to show a timeout warning? (minutes prior)**|Default: 20. After the time you set is reached, users receive an expiration warning.|  
 |**Inactivity timeout**|More information: [Inactivity timeout](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management#inactivity-timeout) |  
-|**End inactive sessions**|Default: xx. Enable to automatically sign out a user after a specified time period.|  
-|**Maximum length of inactive sessions**|Default: 120. If the user is inactive for the time you set, they are logged out.|  
-|**Timing of session end warning**|Default 20. If the user is inactive for the time you set, they receive a warning.|  
-|**Blocked attachments**||  
-|**Block these file extensions (colon separated)**|Prevent upload or download of certain attachment types that are considered dangerous. Separate file extensions with a colon.|  
+|**Set inactivity timeout**|Default: Off. Enable to automatically sign out a user after xxxxx.|  
+
+
