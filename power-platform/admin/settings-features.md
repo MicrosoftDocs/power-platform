@@ -20,3 +20,44 @@ manager: "kvivek"
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
+Use Feature settings to adjust how Dynamics 365 (online) features appear and function.
+
+These settings can be found in the Business Application Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Behavior**.
+
+Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
+
+**Check your security role**
+
+- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Don’t have the correct permissions? Contact your system administrator.
+
+## Settings
+
+|Settings|Description|  
+|--------------|-----------------|  
+|**Embedded content**||  
+|**Power BI visualization embedding**|Default: xx.|  
+|**Bing Maps**|Default: xx. |  
+|**Social data in Dynamics**|Default: xx.|  
+|**Communications**| |
+|**Skype presence**|Default: xx.|  
+|**Country/region code prefixing**|Default: xx.|  
+|**Telephony provider**|xxxxxxx|  
+|**Search customization**||  
+|**Relevance Search**|Default: xx.|  
+|**Quick Find record limits**|xxxxxxxx|  
+|**Categorized search**|xxxxxxxx|  
+|**Help features**||  
+|**Custom help for customizable entries**|Default: xx.|  
+|**Global custom help URL**|xxxxxx|  
+|**Append parameters to URL**|Default: not selected. xxxxxx|  
+|**Learning Path authoring**|Default: xx.|  
+|**Auditing**| |
+|**Start auditing**|Default: xx.|  
+|**Entity types to audit**| |
+|**Common entities**|Default: not selected. xxxxxx|  
+|**Sales entities**|Default: not selected. xxxxxx|  
+|**Marketing entities**|Default: not selected. xxxxxx|  
+|**Customer Service entities**|Default: not selected. xxxxxx|  
+|**Audit user access**|Default: xx.| 
+|**Start read auditing**|Default: xx.| 
