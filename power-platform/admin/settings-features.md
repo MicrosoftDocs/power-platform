@@ -36,28 +36,23 @@ Make sure you have the System Administrator or System Customizer security role o
 |Settings|Description|  
 |--------------|-----------------|  
 |**Embedded content**||  
-|**Power BI visualization embedding**|Default: xx.|  
-|**Bing Maps**|Default: xx. |  
-|**Social data in Dynamics**|Default: xx.|  
+|**Allow Power BI visualization embedding**|Default: Off.|  
+|**Enable Bing Maps**|Default: Off. |  
+|**Social data in Dynamics**|Default: Off.|  
 |**Communications**| |
-|**Skype presence**|Default: xx.|  
-|**Country/region code prefixing**|Default: xx.|  
-|**Telephony provider**|xxxxxxx|  
+|**Skype presence**|Default: On.|  
+|**Enable country/region code prefixing**|Default: On.|  
+|**Set the telephony provider**|Default: On.|  
 |**Search customization**||  
-|**Relevance Search**|Default: xx.|  
-|**Quick Find record limits**|xxxxxxxx|  
-|**Categorized search**|xxxxxxxx|  
+|**Relevance Search**|Default: Off.|  
+|**Enable Quick Find record limits**|Default: On.|  
 |**Help features**||  
-|**Custom help for customizable entries**|Default: xx.|  
+|**Use custom help for customizable entities**|Default: Off.|  
 |**Global custom help URL**|xxxxxx|  
 |**Append parameters to URL**|Default: not selected. xxxxxx|  
-|**Learning Path authoring**|Default: xx.|  
+|**Learning Path**|Default: Off.|  
+|**Learning Path Authoring**|Default: Off.|
 |**Auditing**| |
-|**Start auditing**|Default: xx.|  
-|**Entity types to audit**| |
-|**Common entities**|Default: not selected. xxxxxx|  
-|**Sales entities**|Default: not selected. xxxxxx|  
-|**Marketing entities**|Default: not selected. xxxxxx|  
-|**Customer Service entities**|Default: not selected. xxxxxx|  
-|**Audit user access**|Default: xx.| 
-|**Start read auditing**|Default: xx.| 
+|**Start auditing**|Default: Off.|  
+|**Audit user access**|Default: Off.| 
+|**Start read auditing**|Default: Off.| 
