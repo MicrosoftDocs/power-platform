@@ -60,9 +60,25 @@
         - name: Mailboxes
           href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-forward-mailboxes-edit-mailboxes
         - name: Server profiles
-          href: 
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-email-service-configurations-server-side-synchronization
       - name: Services settings
         items:
+        - name: Microsoft Social Engagement
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/administer-microsoft-social-engagement
       - name: Data management settings
         items:
+        - name: Announcements
+          href:
+        - name: 
+          href:
+        - name: 
+          href:
+        - name: 
+          href:
+        - name: 
+          href:
+        - name: 
+          href:
+        - name: 
+          href:                                              
 
