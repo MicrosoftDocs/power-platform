@@ -17,14 +17,26 @@
     - name: Manage settings
       href: admin-settings.md
       items:
-      - name: Manage behavior settings
-        href: settings-behavior.md
-      - name: Manage feature settings
-        href: settings-features.md
-      - name: Manage privacy and security settings
-        href: settings-privacy-security.md
-      - name: Manage email settings
-        href: settings-email.md
-      - name: Manage email tracking settings
-        href: settings-email-tracking.md
+      - name: Product
+        items:
+        - name: Manage behavior settings
+          href: settings-behavior.md
+        - name: Manage feature settings
+          href: settings-features.md
+        - name: Manage privacy and security settings
+          href: settings-privacy-security.md
+      - name: Business
+        items:
+      - name: Users + permissions
+        items:
+      - name: Email
+        items:
+        - name: Manage email settings
+          href: settings-email.md
+        - name: Manage email tracking settings
+          href: settings-email-tracking.md
+      - name: Services
+        items:
+      - name: Data management
+        items:
 
