@@ -37,23 +37,23 @@ Make sure you have the System Administrator or System Customizer security role o
 |Settings|Description|  
 |--------------|-----------------|  
 |**Embedded content**||  
-|**Allow Power BI visualization embedding**|Default: Off. Content coming.|  
-|**Enable Bing Maps**|Default: Off. Content coming. |  
-|**Social data in Dynamics**|Default: Off. Content coming.|  
+|Allow Power BI visualization embedding|Default: Off. Content coming.|  
+|Enable Bing Maps|Default: Off. Content coming. |  
+|Social data in Dynamics|Default: Off. Content coming.|  
 |**Communications**| |
-|**Skype presence**|Default: On. Content coming.|  
-|**Enable country/region code prefixing**|Default: On. Content coming.|  
-|**Set the telephony provider**|Default: On. Content coming.|  
+|Skype presence|Default: On. Content coming.|  
+|Enable country/region code prefixing|Default: On. Content coming.|  
+|Set the telephony provider|Default: On. Content coming.|  
 |**Search customization**||  
-|**Relevance Search**|Default: Off. Content coming.|  
-|**Enable Quick Find record limits**|Default: On. Content coming.|  
+|Relevance Search|Default: Off. Content coming.|  
+|Enable Quick Find record limits|Default: On. Content coming.|  
 |**Help features**||  
-|**Use custom help for customizable entities**|Default: Off. Content coming.|  
-|**Global custom help URL**| Content coming.|  
-|**Append parameters to URL**|Default: Not selected.  Content coming.|  
-|**Learning Path**|Default: Off. Content coming.|  
-|**Learning Path Authoring**|Default: Off. Content coming.|
+|Use custom help for customizable entities|Default: Off. Content coming.|  
+|Global custom help URL| Content coming.|  
+|Append parameters to URL|Default: Not selected.  Content coming.|  
+|Learning Path|Default: Off. Content coming.|  
+|Learning Path Authoring|Default: Off. Content coming.|
 |**Auditing**| |
-|**Start auditing**|Default: Off. Content coming.|  
-|**Audit user access**|Default: Off. Content coming.| 
-|**Start read auditing**|Default: Off. Content coming.| 
+|Start auditing|Default: Off. Content coming.|  
+|Audit user access|Default: Off. Content coming.| 
+|Start read auditing|Default: Off. Content coming.| 
