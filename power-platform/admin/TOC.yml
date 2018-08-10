@@ -78,7 +78,10 @@
         - name: Data import wizard
           href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/import-data-all-record-types
         - name: Data maps
-          href: 
-        - name: 
-          href:                                              
-
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map
+        - name: Duplicate detection
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/turn-duplicate-detection-rules-off-whole-organization                                             
+        - name: Encryption
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/data-encryption
+        - name: Templates
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/download-template-data-import
