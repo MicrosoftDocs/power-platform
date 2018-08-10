@@ -19,11 +19,13 @@
       items:
       - name: Product
         items:
-        - name: Manage behavior settings
+        - name: Behavior settings
           href: settings-behavior.md
-        - name: Manage feature settings
+        - name: Feature settings
           href: settings-features.md
-        - name: Manage privacy and security settings
+        - name: Languages settings
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages
+        - name: Privacy and security settings
           href: settings-privacy-security.md
       - name: Business
         items:
@@ -31,9 +33,9 @@
         items:
       - name: Email
         items:
-        - name: Manage email settings
+        - name: Email settings
           href: settings-email.md
-        - name: Manage email tracking settings
+        - name: Email tracking settings
           href: settings-email-tracking.md
       - name: Services
         items:
