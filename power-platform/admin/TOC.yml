@@ -6,13 +6,37 @@
   - name: View analytics
     items:
     - name: Common Data Service analytics
-      href: common-data-service-analytics.md
-#    - name: Microsoft Flow analytics
-#      href: flow-analytics.md
-#    - name: PowerApps analytics
-#      href: powerapps-analytics.md
+      href: analytics-common-data-service.md
+    - name: Microsoft Flow analytics
+      href: analytics-flow.md
+    - name: PowerApps analytics
+      href: analytics-powerapps.md
   - name: Manage environments
     href: manage-environments.md
     items:
     - name: Manage settings
       href: admin-settings.md
+      items:
+      - name: Product
+        items:
+        - name: Manage behavior settings
+          href: settings-behavior.md
+        - name: Manage feature settings
+          href: settings-features.md
+        - name: Manage privacy and security settings
+          href: settings-privacy-security.md
+      - name: Business
+        items:
+      - name: Users + permissions
+        items:
+      - name: Email
+        items:
+        - name: Manage email settings
+          href: settings-email.md
+        - name: Manage email tracking settings
+          href: settings-email-tracking.md
+      - name: Services
+        items:
+      - name: Data management
+        items:
+
