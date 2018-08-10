@@ -68,17 +68,17 @@
       - name: Data management settings
         items:
         - name: Announcements
-          href:
-        - name: 
-          href:
-        - name: 
-          href:
-        - name: 
-          href:
-        - name: 
-          href:
-        - name: 
-          href:
+          href: https://technet.microsoft.com/library/mt826650.aspx
+        - name: Auto numbering
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles
+        - name: Automatic record creation policies
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
+        - name: Bulk deletion
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/delete-bulk-records
+        - name: Data import wizard
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/import-data-all-record-types
+        - name: Data maps
+          href: 
         - name: 
           href:                                              
 
