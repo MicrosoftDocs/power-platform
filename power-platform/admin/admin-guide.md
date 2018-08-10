@@ -36,6 +36,7 @@ With the merge of Common Data Service and the Dynamics 365 platform, we're launc
 
 ![Power platform Admin center](./media/new-admin-center-environments.png)
 
+<!--
 Benefits of the Power platform Admin center include:
 
 > - **Accessible admin settings**: Configure all environment settings from the admin center through a single experience designed with accessibility in mind. 
@@ -51,7 +52,7 @@ Benefits of the Power platform Admin center include:
 
 > [!NOTE]
 > We're rolling out the Power platform Admin center in phases to ensure a stable and high performance environment. Not all of the above benefits are in the Admin center at this time. Check back here for updates on new features as they become available.
-
+-->
 
 ## Admin center interface
 <!--
@@ -62,7 +63,7 @@ Benefits of the Power platform Admin center include:
 |Help + support     | Create a support ticket for technical support.         |
 |Environments | A list of your environments. Select an environment to see details.|
 |Analytics     | Get a detailed view of key metrics for Power platform apps.       |
-|Data policies     | Create and manage [data loss prevention policies](https://docs.microsoft.com/powerapps/administrator/create-dlp-policy) (DLP).       |
+|Data policies     | Create and manage [data loss prevention policies](https://docs.microsoft.com/powerapps/administrator/create-dlp-policy).       |
 |Admin portals    |Links to other admin centers.        |
 
 ## Using the various admin centers
