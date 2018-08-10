@@ -44,19 +44,23 @@
         - name: Hierarchy security
           href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
         - name: Positions
-          href:
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
         - name: Security roles
-          href:
+          href: https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/security-roles-privileges
         - name: Teams
-          href:
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-team-template-add-entity-form
         - name: Users
-          href: 
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles
       - name: Email settings
         items:
         - name: Email settings
           href: settings-email.md
         - name: Email tracking settings
           href: settings-email-tracking.md
+        - name: Mailboxes
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-forward-mailboxes-edit-mailboxes
+        - name: Server profiles
+          href: 
       - name: Services settings
         items:
       - name: Data management settings
