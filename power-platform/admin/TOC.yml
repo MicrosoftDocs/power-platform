@@ -17,28 +17,48 @@
     - name: Manage settings
       href: admin-settings.md
       items:
-      - name: Product
+      - name: Product settings
         items:
-        - name: Behavior settings
+        - name: Behavior 
           href: settings-behavior.md
-        - name: Feature settings
+        - name: Feature 
           href: settings-features.md
-        - name: Languages settings
+        - name: Languages 
           href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages
-        - name: Privacy and security settings
+        - name: Privacy and security 
           href: settings-privacy-security.md
-      - name: Business
+      - name: Business Settings
         items:
-      - name: Users + permissions
+        - name: Business closures 
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-when-business-closed
+        - name: Calendar
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/work-fiscal-year-settings
+        - name: Currencies
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-transactions-with-multiple-currencies
+        - name: Regional formatting
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/regional-other-business-management-settings
+      - name: Users + permissions settings
         items:
-      - name: Email
+        - name: Business units
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-business-unit-control-access-records
+        - name: Hierarchy security
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
+        - name: Positions
+          href:
+        - name: Security roles
+          href:
+        - name: Teams
+          href:
+        - name: Users
+          href: 
+      - name: Email settings
         items:
         - name: Email settings
           href: settings-email.md
         - name: Email tracking settings
           href: settings-email-tracking.md
-      - name: Services
+      - name: Services settings
         items:
-      - name: Data management
+      - name: Data management settings
         items:
 
