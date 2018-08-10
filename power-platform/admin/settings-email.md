@@ -35,15 +35,15 @@ Make sure you have the System Administrator or System Customizer security role o
 |Settings|Description|  
 |--------------|-----------------|  
 |**Security and permissions**| Select these check boxes if you want to allow email processing only for users and queues whose email addresses have been approved by the system administrator.|
-|**Process emails only for approved users**|Default: On.|
-|**Process emails only for approved queues**|Default: On.|
-|**Allow sync to CRM emails that have information rights management (IRM) set**|Default: Not selected. Off.|
-|**Allow to delete appointments if system auto detects changes that will result in change in ownership**|Default: Not selected. Off.| 
+|**Process emails only for approved users**|Default: On. Content coming.|
+|**Process emails only for approved queues**|Default: On. Content coming.|
+|**Allow sync to CRM emails that have information rights management (IRM) set**|Default: Not selected. Off. Content coming.|
+|**Allow to delete appointments if system auto detects changes that will result in change in ownership**|Default: Not selected. Off. Content coming.| 
 |**Notifications**||
 |**Select the alerts to send to Microsoft Dynamics 365 users.**||
-|**Error**|Default: Enabled.|
+|**Error**|Default: Enabled. Content coming.|
 |**Warning**|Default: Enabled. **Tip:**  Select **Warning** if you’re troubleshooting or testing or want to get more detailed messages on the alert wall.|
-|**Information**|Default: Enabled.|
+|**Information**|Default: Enabled. Content coming.|
 |**Notify mailbox owner**|Default: Off. By default, the system administrator is notified of any error that occurs for an email server profile.<br /><br /> Select this check box if you also want to notify the mailbox owner.|  
 |**Attachments**| |
 |**Maximum file size (in kilobytes)**|Default: 5 MB (5120 KB). Maximum file size (in Kilobytes)|Increase or decrease the maximum file size for attached files. The maximum size is 128 MB (131,072 KB).|
