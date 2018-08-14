@@ -3,85 +3,85 @@
   items:
   - name: Get Help + Support
     href: contact-technical-support.md
-  - name: View analytics
-    items:
-    - name: Common Data Service analytics
-      href: analytics-common-data-service.md
-    - name: Microsoft Flow analytics
-      href: analytics-flow.md
-    - name: PowerApps analytics
-      href: analytics-powerapps.md
+#   - name: View analytics
+#     items:
+#     - name: Common Data Service analytics
+#       href: analytics-common-data-service.md
+#     - name: Microsoft Flow analytics
+#       href: analytics-flow.md
+#     - name: PowerApps analytics
+#       href: analytics-powerapps.md
   - name: Manage environments
     href: manage-environments.md
-    items:
-    - name: Manage settings
-      href: admin-settings.md
-      items:
-      - name: Product settings
-        items:
-        - name: Behavior 
-          href: settings-behavior.md
-        - name: Feature 
-          href: settings-features.md
-        - name: Languages 
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages
-        - name: Privacy and security 
-          href: settings-privacy-security.md
-      - name: Business Settings
-        items:
-        - name: Business closures 
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-when-business-closed
-        - name: Calendar
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/work-fiscal-year-settings
-        - name: Currencies
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-transactions-with-multiple-currencies
-        - name: Regional formatting
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/regional-other-business-management-settings
-      - name: Users + permissions settings
-        items:
-        - name: Business units
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-business-unit-control-access-records
-        - name: Hierarchy security
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
-        - name: Positions
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
-        - name: Security roles
-          href: https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/security-roles-privileges
-        - name: Teams
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-team-template-add-entity-form
-        - name: Users
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles
-      - name: Email settings
-        items:
-        - name: Email settings
-          href: settings-email.md
-        - name: Email tracking settings
-          href: settings-email-tracking.md
-        - name: Mailboxes
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-forward-mailboxes-edit-mailboxes
-        - name: Server profiles
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-email-service-configurations-server-side-synchronization
-      - name: Services settings
-        items:
-        - name: Microsoft Social Engagement
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/administer-microsoft-social-engagement
-      - name: Data management settings
-        items:
-        - name: Announcements
-          href: https://technet.microsoft.com/library/mt826650.aspx
-        - name: Auto numbering
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles
-        - name: Automatic record creation policies
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
-        - name: Bulk deletion
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/delete-bulk-records
-        - name: Data import wizard
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/import-data-all-record-types
-        - name: Data maps
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map
-        - name: Duplicate detection
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/turn-duplicate-detection-rules-off-whole-organization                                             
-        - name: Encryption
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/data-encryption
-        - name: Templates
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/download-template-data-import
+    # items:
+    # - name: Manage settings
+    #   href: admin-settings.md
+    #   items:
+    #   - name: Product settings
+    #     items:
+    #     - name: Behavior 
+    #       href: settings-behavior.md
+    #     - name: Feature 
+    #       href: settings-features.md
+    #     - name: Languages 
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages
+    #     - name: Privacy and security 
+    #       href: settings-privacy-security.md
+    #   - name: Business Settings
+    #     items:
+    #     - name: Business closures 
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-when-business-closed
+    #     - name: Calendar
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/work-fiscal-year-settings
+    #     - name: Currencies
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-transactions-with-multiple-currencies
+    #     - name: Regional formatting
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/regional-other-business-management-settings
+    #   - name: Users + permissions settings
+    #     items:
+    #     - name: Business units
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-business-unit-control-access-records
+    #     - name: Hierarchy security
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
+    #     - name: Positions
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
+    #     - name: Security roles
+    #       href: https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/security-roles-privileges
+    #     - name: Teams
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-team-template-add-entity-form
+    #     - name: Users
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles
+    #   - name: Email settings
+    #     items:
+    #     - name: Email settings
+    #       href: settings-email.md
+    #     - name: Email tracking settings
+    #       href: settings-email-tracking.md
+    #     - name: Mailboxes
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-forward-mailboxes-edit-mailboxes
+    #     - name: Server profiles
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-email-service-configurations-server-side-synchronization
+    #   - name: Services settings
+    #     items:
+    #     - name: Microsoft Social Engagement
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/administer-microsoft-social-engagement
+    #   - name: Data management settings
+    #     items:
+    #     - name: Announcements
+    #       href: https://technet.microsoft.com/library/mt826650.aspx
+    #     - name: Auto numbering
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles
+    #     - name: Automatic record creation policies
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
+    #     - name: Bulk deletion
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/delete-bulk-records
+    #     - name: Data import wizard
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/import-data-all-record-types
+    #     - name: Data maps
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map
+    #     - name: Duplicate detection
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/turn-duplicate-detection-rules-off-whole-organization                                             
+    #     - name: Encryption
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/data-encryption
+    #     - name: Templates
+    #       href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/download-template-data-import
