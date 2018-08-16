@@ -2,7 +2,7 @@
   href: admin-guide.md 
   items:
   - name: Get Help + Support
-    href: contact-technical-support.md
+    href: get-help-support.md
   - name: View analytics
     items:
     - name: Common Data Service analytics
