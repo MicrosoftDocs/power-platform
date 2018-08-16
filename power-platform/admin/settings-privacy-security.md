@@ -46,7 +46,7 @@ Make sure you have the System Administrator or System Customizer security role o
 |**Blocked Attachments**| |
 |Set blocked file extensions for attachments (semicolon separated)|Prevent upload or download of certain attachment types that are considered dangerous. Separate file extensions with a semicolon.|
 |**Session Expiration**|More information: [Security enhancements: User session and access management](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management)|  
-|Set custom session timeout|Default: Off. Content coming.|
+|Set custom session timeout|Default: Off. Select **On** to specify values different from default values.|
 |Enter maximum session length (minutes)|Default: 1440. After the time you set is reached, users must re-authenticate to Dynamics 365 (online).|  
 |How long before the session expires do you want to show a timeout warning? (minutes prior)|Default: 20. After the time you set is reached, users receive an expiration warning.|  
 |**Inactivity timeout**|More information: [Inactivity timeout](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management#inactivity-timeout) |  
