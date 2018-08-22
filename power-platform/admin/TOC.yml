@@ -1,7 +1,7 @@
 - name: "Private Preview: Administer Power platform"
   href: admin-guide.md 
   items:
-  - name: Get Help + Support
+  - name: Get Help + Support 
     href: get-help-support.md
   - name: View analytics
     items:
