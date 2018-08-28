@@ -1,7 +1,7 @@
 ---
-title: "Common Data Service analytics | MicrosoftDocs"
+title: "Common Data Service for Apps analytics | MicrosoftDocs"
 ms.custom: ""
-ms.date: 08/08/2018
+ms.date: 08/27/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -16,17 +16,17 @@ ms.author: "jimholtz"
 manager: kvivek
 robots: noindex,nofollow
 ---
-# Common Data Service analytics
+# Common Data Service for Apps analytics
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power platform Admin center to quickly view adoption ad user metrics for your organization. 
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service for Apps analytics right from the Power platform Admin center to quickly view adoption ad user metrics for your organization. 
 
  **Key highlights**  
 
 - **Deprecating the solution**: Organization Insights, available as a preferred solution from [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.04931187-431c-415d-8777-f7f482ba8095?tab=Overview), will no longer be supported or available for use in future releases.  
 
-- **Deprecating Organization Insights dashboard**: This dashboard will be removed from CDS for Apps in future releases. 
+- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Common Data Service for Apps in future releases. 
 
 - **Customizable dashboards**: Set up your organization’s dashboard to provide a rich user experience and snapshots of your organization’s most important data.  
 
@@ -40,8 +40,8 @@ We've improved how you view metrics for your organization. You no longer need to
 
 <a name="BKMK_InstallSolution"></a>   
 
-## View Common Data Service analytics  
-It's simple. In the Power platform Admin center, select **analytics** > **Common Data Service**.
+## View Common Data Service for Apps analytics  
+It's simple. In the Power platform Admin center, select **analytics** > **Common Data Service for Apps**.
 
 <a name="BKMK_Home"></a>   
 
@@ -49,7 +49,7 @@ It's simple. In the Power platform Admin center, select **analytics** > **Common
  ![Customer Data Service analytics Home Section](./media/organization-insights-home-section.png "Customer Data Service analytics Home Section")  
 
 ### About this dashboard  
- This is the default dashboard that provides information on the number of active Common Data Service users, storage usage, the most active workflows, and more.  
+ This is the default dashboard that provides information on the number of active Common Data Service for Apps users, storage usage, the most active workflows, and more.  
 
 ### What's included in this dashboard  
 
@@ -66,7 +66,7 @@ It's simple. In the Power platform Admin center, select **analytics** > **Common
 <a name="BKMK_ActiveUsage"></a>   
 
 ## Active Users  
- ![Customer Data Service analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Customer Data Service analytics Active Usage Section")  
+ ![Customer Data Service for Apps analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Customer Data Service for Apps analytics Active Usage Section")  
 
 ### About this dashboard  
  Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
@@ -218,7 +218,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_SystemJobs"></a>   
 
 ## System Jobs  
- ![Customer Data Service analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Customer Data Service analytics System Jobs Section")  
+ ![Customer Data Service for Apps analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Customer Data Service for Apps analytics System Jobs Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot workflows.  
@@ -249,7 +249,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Plugins"></a>   
 
 ## Plug-ins  
- ![Customer Data Service analytics Plugins Section](./media/organization-insights-plugins-section.png "Customer Data Service analytics Plugins Section")  
+ ![Customer Data Service for Apps analytics Plugins Section](./media/organization-insights-plugins-section.png "Customer Data Service for Apps analytics Plugins Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot plug-ins.  
@@ -278,7 +278,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_APICallStats"></a>   
 
 ## API Call Statistics  
- ![Customer Data Service analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Customer Data Service analytics API Call Statistics Section")  
+ ![Customer Data Service for Apps analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Customer Data Service for Apps analytics API Call Statistics Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot API calls.  
@@ -307,7 +307,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_MailboxUsage"></a>   
 
 ## Mailbox Usage  
- ![Customer Data Service analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Customer Data Service analytics Mailbox Usage Section")  
+ ![Customer Data Service for Apps analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Customer Data Service for Apps analytics Mailbox Usage Section")  
 
 ### About this dashboard  
 
@@ -343,7 +343,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Storage"></a>   
 
 ## Storage  
- ![Customer Data Service analytics Storage Section](./media/organization-insights-storage-section.png "Customer Data Service analytics Storage Section")  
+ ![Customer Data Service for Apps analytics Storage Section](./media/organization-insights-storage-section.png "Customer Data Service for Apps analytics Storage Section")  
 
 ### About this dashboard  
  This dashboard provides a look at storage used by your tenant and instances.
@@ -375,7 +375,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Download"></a>   
 
 ## Download  
- ![Customer Data Service analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service analytics Download Section")  
+ ![Customer Data Service for Apps analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service for Apps analytics Download Section")  
 
 ### About this dashboard  
  Use this dashboard to download the data selected for the date range selected as an Excel spreadsheet.  
@@ -444,7 +444,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 8. Click **Save and Close**.  
 
-   ![Customer Data Service analytics Custom entity](./media/organization-insights-custom-entity.PNG "Customer Data Service analytics Custom entity")  
+   ![Customer Data Service for Apps analytics Custom entity](./media/organization-insights-custom-entity.PNG "Customer Data Service for Apps analytics Custom entity")  
 
 <a name="BKMK_ViewData"></a>   
 
@@ -467,7 +467,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 - The data shown for a hourly aggregation interval represents the whole hour. For example, if the number of active users at 2:00 PM is 5, there were 5 active users between 1:00 and 2:00 PM.  
 
-  ![Customer Data Service analytics active users chart](./media/organization-insights-active-users-chart.PNG "Customer Data Service analytics active users chart") 
+  ![Customer Data Service for Apps analytics active users chart](./media/organization-insights-active-users-chart.PNG "Customer Data Service for Apps analytics active users chart") 
 
 <a name="BKMK_ODataSupport"></a>   
 
