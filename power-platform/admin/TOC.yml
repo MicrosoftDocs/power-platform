@@ -5,7 +5,7 @@
     href: get-help-support.md
   - name: View analytics
     items:
-    - name: Common Data Service analytics
+    - name: Common Data Service for Apps analytics
       href: analytics-common-data-service.md
     - name: Microsoft Flow analytics
       href: analytics-flow.md
