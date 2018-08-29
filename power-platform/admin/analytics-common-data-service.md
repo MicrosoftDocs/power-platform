@@ -1,7 +1,7 @@
 ---
 title: "Common Data Service for Apps analytics | MicrosoftDocs"
 ms.custom: ""
-ms.date: 08/27/2018
+ms.date: 08/29/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -27,8 +27,6 @@ We've improved how you view metrics for your organization. You no longer need to
 - **Deprecating the solution**: Organization Insights, available as a preferred solution from [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.04931187-431c-415d-8777-f7f482ba8095?tab=Overview), will no longer be supported or available for use in future releases.  
 
 - **Deprecating Organization Insights dashboard**: This dashboard will be removed from Common Data Service for Apps in future releases. 
-
-- **Customizable dashboards**: Set up your organization’s dashboard to provide a rich user experience and snapshots of your organization’s most important data.  
 
 - **Monitor adoption and use**: Identify your most active users, the number and types of operations they’re performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
 
