@@ -15,7 +15,10 @@ caps.latest.revision: 63
 author: "jimholtz"
 ms.author: "jimholtz"
 manager: kvivek
-robots: noindex,nofollow
+search.audienceType: 
+  - admin
+search.app: 
+  - Powerplatform
 ---
 # Administer Common Data Service for Apps environments 
 

@@ -1,4 +1,4 @@
-- name: "Private Preview: Administer Power platform"
+- name: "Preview: Administer Power platform"
   href: admin-guide.md 
   items:
   - name: Get Help + Support 
@@ -7,10 +7,10 @@
     items:
     - name: Common Data Service for Apps analytics
       href: analytics-common-data-service.md
-    - name: Microsoft Flow analytics
-      href: analytics-flow.md
-    - name: PowerApps analytics
-      href: analytics-powerapps.md
+##    - name: Microsoft Flow analytics
+##      href: analytics-flow.md
+##    - name: PowerApps analytics
+##      href: analytics-powerapps.md
   - name: Manage environments
     href: manage-environments.md
     items:

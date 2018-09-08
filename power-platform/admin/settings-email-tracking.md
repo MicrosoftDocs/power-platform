@@ -15,7 +15,10 @@ caps.latest.revision: 31
 author: "jimholtz"
 ms.author: "jimholtz"
 manager: "kvivek"
-robots: noindex,nofollow
+search.audienceType: 
+  - admin
+search.app: 
+  - Powerplatform
 ---
 # Manage email tracking settings
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]

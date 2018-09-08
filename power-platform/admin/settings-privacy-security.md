@@ -15,7 +15,10 @@ caps.latest.revision: 31
 author: "jimholtz"
 ms.author: "jimholtz"
 manager: "kvivek"
-robots: noindex,nofollow
+search.audienceType: 
+  - admin
+search.app: 
+  - Powerplatform
 ---
 # Manage privacy and security settings
 
