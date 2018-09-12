@@ -1,7 +1,7 @@
 ---
 title: "Common Data Service for Apps analytics | MicrosoftDocs"
 ms.custom: ""
-ms.date: 08/29/2018
+ms.date: 09/11/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -42,7 +42,7 @@ We've improved how you view metrics for your organization. You no longer need to
 <a name="BKMK_InstallSolution"></a>   
 
 ## View Common Data Service for Apps analytics  
-It's simple. In the Power platform Admin center, select **analytics** > **Common Data Service for Apps**.
+It's simple. In the [Power platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service for Apps**.
 
 <a name="BKMK_Home"></a>   
 
