@@ -21,7 +21,7 @@
         items:
         - name: Behavior 
           href: settings-behavior.md
-        - name: Feature 
+        - name: Features 
           href: settings-features.md
         - name: Languages 
           href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages
