@@ -2,7 +2,7 @@
 title: "Manage behavior settings | MicrosoftDocs"
 description: View and manage behavior settings for Common Data Service for Apps.
 ms.custom: ""
-ms.date: 08/10/2018
+ms.date: 09/14/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -54,5 +54,5 @@ Make sure you have the System Administrator or System Customizer security role o
 |Show app download message|Default: On. If **On**, users will see a message regarding downloading the Dynamics 365 for tablets app.|  
 |Show default app on landing page and in app switcher|Default: On. Change to No to prevent the default app from appearing on the Dynamics 365 home page and in the app selector menu. More information: For admins and end users: [Introducing the Dynamics 365 home page](https://docs.microsoft.com/dynamics365/customer-engagement/admin/quickly-navigate-office-365-app-launcher)|  
 |Display welcome screen on sign in|Default: On. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
-|Show Microsoft Flow on forms and in the site map|Default: On. Select **On** to enable embedded Microsoft Flows in your organization. More information: [Enable embedded Flow to automate processes](enable-embedded-flow-in-your-organization.md)|  
+|Show Microsoft Flow on forms and in the site map|Default: On. Select **On** to enable embedded Microsoft Flows in your organization. More information: [Enable embedded Flow to automate processes](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-embedded-flow-in-your-organization)|  
 |Show dashboard cards in expanded state|Default: Off. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
