@@ -20,7 +20,7 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Manage feature settings
+# Manage feature settings 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
