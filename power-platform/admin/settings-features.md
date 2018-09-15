@@ -61,4 +61,4 @@ Make sure you have the System Administrator or System Customizer security role o
 |**Auditing**| |
 |Audit entities|Default: Off. Start or stop auditing.|  
 |Audit user access|Default: Off. If enabled, Dynamics 365 tracks when the user started accessing Dynamics 365 and whether or not the user accessed the application by using the web application or Dynamics 365 for Outlook.| 
-|Audit read access|Default: Off. Content coming.| 
+|Audit read access|Default: Off. | 

@@ -40,8 +40,8 @@ Make sure you have the System Administrator or System Customizer security role o
 |**Security and permissions**| Select these check boxes if you want to allow email processing only for users and queues whose email addresses have been approved by the system administrator.|
 |Process emails only for approved users|Default: On. |
 |Process emails only for approved queues|Default: On. |
-|Sync information rights management-enabled emails to the server|Default: Not selected. Off. Content coming.|
-|Allow to delete appointments if system auto detects changes that will result in change in ownership|Default: Not selected. Off. Content coming.| 
+|Sync information rights management-enabled emails to the server|Default: Not selected. Off. Select **On** to sync Dynamics 365 emails that have information rights property.|
+|Allow to delete appointments if system auto detects changes that will result in change in ownership|Default: Not selected. Off.| 
 |**Notifications**||
 |When these occur, send details to the mailbox's notifications area||
 |Errors|Default: Enabled.|
