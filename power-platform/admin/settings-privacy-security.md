@@ -53,6 +53,6 @@ Make sure you have the System Administrator or System Customizer security role o
 |Enter maximum session length|Default: 1440. After the time you set is reached, users must re-authenticate to Dynamics 365 (online).|  
 |How long before the session expires do you want to show a timeout warning?|Default: 20. After the time you set is reached, users receive an expiration warning.|  
 |**Inactivity timeout**|More information: [Inactivity timeout](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management#inactivity-timeout) |  
-|Set inactivity timeout|Default: Off. Enable to automatically sign out a user. Content coming.|  
+|Set inactivity timeout|Default: Off. Enable to automatically sign out a user. |  
 
 
