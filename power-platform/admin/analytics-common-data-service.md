@@ -1,7 +1,7 @@
 ---
 title: "Common Data Service for Apps analytics | MicrosoftDocs"
 ms.custom: ""
-ms.date: 09/11/2018
+ms.date: 09/19/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -36,8 +36,6 @@ We've improved how you view metrics for your organization. You no longer need to
 - **Manage storage and performance**: Monitor storage quotas, storage use, and top tables by size to optimize performance.  
 
 - **Troubleshoot effectively**: Drill down into the details of your top failing workflows and API calls to quickly diagnose and troubleshoot errors.
-
-- **OData support**: Expose Organization Insights entities through OData for extension by independent software vendors.  
 
 <a name="BKMK_InstallSolution"></a>   
 
@@ -403,50 +401,6 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 |Most Used Custom Entities|1 hour|  
 |Most Used OOB Entities|1 hour|  
 
-<a name="BKMK_CustomizeDashboard"></a>   
-
-## Customize your Customer Data Service analytics dashboard  
- You can easily customize Customer Data Service analytics dashboards to meet your information requirements.  Look for these buttons in the upper-right corner of the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] screen.  
-
-|Control|Description|  
-|-------------|-----------------|  
-|Edit<br /><br /> ![Organizations Insights Edit button](./media/organizations-insights-edit-button.png "Organizations Insights Edit button")|Click to edit the dashboard. Once in edit mode, you can add, remove, resize, and reposition charts in the Home dashboard.<br /><br /> In other dashboards, you can reposition and resize charts. You cannot add or remove charts.|  
-|Save<br /><br /> ![Organizations Insights Save button](./media/organizations-insights-save-button.png "Organizations Insights Save button")|Click **Save** to record all your dashboard changes.|  
-|Add<br /><br /> ![Organizations Insights Add button](./media/organizations-insights-add-button.png "Organizations Insights Add button")|Click for a list of charts you can add to the dashboard. You cannot add multiple copies of the same chart in the Home dashboard.|  
-|Chart menu<br /><br /> ![Add an Customer Data Service analytics chart](./media/organization-insights-add-chart-menu.png "Add an Customer Data Service analytics chart")|Charts you can add to a dashboard.|  
-|Close<br /><br /> ![Organizations Insights Close button](./media/organizations-insights-close-button.png "Organizations Insights Close button")|Click to close the Chart menu.|  
-|Feedback<br /><br /> ![Organizations Insights Feedback button](./media/organizations-insights-feedback-button.png "Organizations Insights Feedback button")|We want your feedback! Click **Feedback** to let us know how we're doing.|  
-|More options<br /><br /> ![Organizations Insights More button](./media/organizations-insights-more-button.png "Organizations Insights More button")|Click **More options** > **Reset to default dashboard**  to revert all your dashboard changes.  This will reset all changes you've made to any dashboard to default values.|  
-|Remove and Resize<br /><br /> ![Customer Data Service analytics Custom Controls](./media/organization-insights-custom-controls.png "Customer Data Service analytics Custom Controls")|When you click **Edit**, you can remove, resize, and move charts in the Home dashboard. In other dashboards, you can resize and move the charts but not remove them.|  
-|Export<br /><br /> ![Customer Data Service analytics Export Data to Excel](./media/organization-insights-export-dataexcel.PNG "Customer Data Service analytics Export Data to Excel")|Click to export chart data to Excel. Not all charts can be exported.|  
-
-<a name="BKMK_GrantAccess"></a>   
-
-## Granting access to the Customer Data Service analytics dashboard  
- By default, the dashboard is  available to System Administrator and System Customizer security roles. Access can be granted to other security roles, by providing **Read** privilege to **Saved Customer Data Service analytics Configuration**.  
-
-1. Click **Settings** > **Security** > **Security Roles**.  
-
-2. Select a security role, and then click the **Core Records** tab.  
-
-3. Scroll down to **Saved Customer Data Service analytics Configuration** and click the **Read** privilege.  
-
-4. Click **Save and Close**.  
-
-   ![Grant Read privilege to Salesperson security role](./media/organization-insights-grant-read-privilege-sales-person-security-role.png "Grant Read privilege to Salesperson security role")  
-
-   To let other users make modifications to their dashboard layout, grant **Create**, **Read**, **Write**, and **Delete** privileges for the **OrgInsights User Dashboard Definition** custom entity.  
-
-5. Click **Settings** > **Security** > **Security Roles**.  
-
-6. Select a security role, and then click the **Custom Entities** tab.  
-
-7. For **OrgInsights User Dashboard Definition**, and click the **Create**, **Read**, **Write**, and **Delete** privileges .  
-
-8. Click **Save and Close**.  
-
-   ![Customer Data Service for Apps analytics Custom entity](./media/organization-insights-custom-entity.PNG "Customer Data Service for Apps analytics Custom entity")  
-
 <a name="BKMK_ViewData"></a>   
 
 ## View data for different time ranges  
@@ -469,34 +423,3 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 - The data shown for a hourly aggregation interval represents the whole hour. For example, if the number of active users at 2:00 PM is 5, there were 5 active users between 1:00 and 2:00 PM.  
 
   ![Customer Data Service for Apps analytics active users chart](./media/organization-insights-active-users-chart.PNG "Customer Data Service for Apps analytics active users chart") 
-
-<a name="BKMK_ODataSupport"></a>   
-
-## OData Support
-Customer Data Service analytics supports retrieving chart data through the Web API OData v4 web service. <!-- For information about the Web API, see [Use the Microsoft Dynamics 365 Web API](../developer/use-microsoft-dynamics-365-web-api.md). -->
-
-The entity set name for the `SavedOrgInsightsConfiguration` entity is `savedorginsightsconfigurations` which needs the `SavedOrgInsightsConfigurationId`, `JSONDataStartTime` and `JSONDataEndTime` to return data in the given time range. The data can then be used to render custom charts or do further post-processing as required.
-
-The following is the format by which data can be retrieved, using the ChartID GUID value for the charts listed above.
-
-```  
-[ClientUrl]/api/data/v8.1/savedorginsightsconfigurations?$filter=savedorginsightsconfigurationid eq [ChartID] and jsondatastarttime eq [StartTime] and jsondataendtime eq [EndTime]&$select=jsondata
-```  
-
-A sample query with GUID and time ranges populated would look something like the following:
-
-```
-[ClientUrl]/api/data/v8.1/savedorginsightsconfigurations?$filter=savedorginsightsconfigurationid eq 5187781c-da7c-4762-aeb3-85f908a2777c and jsondatastarttime eq 2017-07-11T18:30:00.000Z and jsondataendtime eq 2017-07-12T18:30:00.000Z&$select=jsondata
-```
-
-The following is a sample result for the query:
-
-```
-{
-  "@odata.context":"https://[ClientUrl]/api/data/v8.1/$metadata#savedorginsightsconfigurations(jsondata)","value":[
-    {
-      "jsondata":"{\"RequestId\":\"101fa8c3-1221-4f3c-9cf7-1eb35cf2eeba\",\"Results\":[{\"Dates\":[\"7/10/2017 2:00 PM\",\"7/10/2017 3:00 PM\",\"7/10/2017 4:00 PM\",\"7/10/2017 5:00 PM\",\"7/10/2017 6:00 PM\",\"7/10/2017 7:00 PM\",\"7/10/2017 8:00 PM\",\"7/10/2017 9:00 PM\",\"7/10/2017 10:00 PM\",\"7/10/2017 11:00 PM\",\"7/11/2017 12:00 AM\",\"7/11/2017 1:00 AM\",\"7/11/2017 2:00 AM\",\"7/11/2017 3:00 AM\",\"7/11/2017 4:00 AM\",\"7/11/2017 5:00 AM\",\"7/11/2017 6:00 AM\",\"7/11/2017 7:00 AM\",\"7/11/2017 8:00 AM\",\"7/11/2017 9:00 AM\",\"7/11/2017 10:00 AM\",\"7/11/2017 11:00 AM\",\"7/11/2017 12:00 PM\",\"7/11/2017 1:00 PM\",\"7/11/2017 2:00 PM\",\"7/11/2017 3:00 PM\",\"7/11/2017 4:00 PM\",\"7/11/2017 5:00 PM\",\"7/11/2017 6:00 PM\",\"7/11/2017 7:00 PM\",\"7/11/2017 8:00 PM\",\"7/11/2017 9:00 PM\",\"7/11/2017 10:00 PM\",\"7/11/2017 11:00 PM\",\"7/12/2017 12:00 AM\",\"7/12/2017 1:00 AM\",\"7/12/2017 2:00 AM\",\"7/12/2017 3:00 AM\",\"7/12/2017 4:00 AM\",\"7/12/2017 5:00 AM\",\"7/12/2017 6:00 AM\",\"7/12/2017 7:00 AM\",\"7/12/2017 8:00 AM\",\"7/12/2017 9:00 AM\",\"7/12/2017 10:00 AM\",\"7/12/2017 11:00 AM\",\"7/12/2017 12:00 PM\",\"7/12/2017 1:00 PM\"],\"Rollup\":\"PT1H\",\"Metrics\":[{\"Name\":\"activeusers\",\"Values\":[728.0,645.0,531.0,473.0,528.0,542.0,526.0,498.0,461.0,497.0,557.0,578.0,580.0,585.0,569.0,635.0,786.0,819.0,877.0,855.0,783.0,708.0,690.0,678.0,638.0,540.0,452.0,437.0,452.0,492.0,496.0,434.0,452.0,454.0,503.0,545.0,541.0,526.0,520.0,576.0,742.0,840.0,872.0,806.0,753.0,692.0,671.0,0.0]}]}]}","_modifiedby_value":"42d582c5-4091-446c-a9ba-90e7f0a9bb9d","description":"Active Users","lookback":2,"isdefault":true,"isdrilldown":false,"_modifiedonbehalfby_value":"00000000-0000-0000-0000-000000000000","name":"Active Users","metrictype":1,"parameters":"<Parameters><MetricIds><MetricId>C1BCC999-D150-4591-B0A5-0684A6A0F618</MetricId></MetricIds><DisplayOptions><ColorOptions><Colors>['#A83D1E']</Colors></ColorOptions></DisplayOptions></Parameters>","_createdby_value":"42d582c5-4091-446c-a9ba-90e7f0a9bb9d","_createdonbehalfby_value":"00000000-0000-0000-0000-000000000000","plotoption":2,"savedorginsightsconfigurationid":"9725801d-0eaf-4100-891c-db34400ab102"
-    }
-  ]
-}
-```
