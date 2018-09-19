@@ -376,13 +376,13 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 ## Download  
  ![Customer Data Service for Apps analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service for Apps analytics Download Section")  
 
-### About this dashboard  
- Use this dashboard to download the data selected for the date range selected as an Excel spreadsheet.  
+### About this command  
+ Use this command to download the data selected for the date range selected as an Excel spreadsheet.  
 
-### What's included in this dashboard  
+### What's included  
 
-|Chart element  | Description  |ChartID|
-|----|-----|-----|
+|Download | Description  |
+|----|-----|
 | Most Active Users Performing Operations | List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`. |
 |        Most Used Custom Entities        |                                List of custom entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                                |
 |         Most Used OOB Entities          |                              List of out-of-box entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                              |
