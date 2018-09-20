@@ -2,7 +2,7 @@
 title: "Get Help + Support | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 (online) to get resolution for your issue.
 ms.custom: ""
-ms.date: 09/21/2018
+ms.date: 09/20/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -25,9 +25,9 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-## New Dynamics 365 support center 
+## New Dynamics 365 (online) support center 
 
-Admins, use the Help + support experience to see recommended solutions for your issue and, if the issue can't be resolved, contact a Microsoft support representative for Dynamics 365 (online) to get resolution. 
+Admins, use the Help + support experience in the [Power platform Admin center](https://docs.microsoft.com/power-platform/admin/admin-guide) to see recommended solutions for your issue and, if the issue can't be resolved, contact a Microsoft support representative for Dynamics 365 (online) to get resolution. 
 
 ### Prerequisites
 
@@ -46,16 +46,23 @@ Admins, use the Help + support experience to see recommended solutions for your 
    - Professional Direct Support
    - Premier Support
 
-   Unified Support plan members can go to [My Premier Online](https://support.microsoft.com/en-us/premier). <br />
+   We're adding Unified Support plan support soon. For now, you can go to [My Premier Online](https://support.microsoft.com/en-us/premier). <br />
    Microsoft Partners or delegated admins can go to [Partner Center](https://partnercenter.microsoft.com/en-us/partner/home).
 
-### Enter a support request through the new support center
+### View solutions or enter a support request through the new support center
 
-1. In the Power platform Admin center, choose **Help + Support** > **New support request**.
+1. Sign in to the [Power platform Admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
+
+2. Select **Help + Support** > **New support request**.
 
    ![New support request](media/new-support-request.png "New support request")
 
-2. Fill in the information on the page, and then select **See solutions**.
+3. Select the product with the issue.
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/suport-which-product.png "See solutions")
+
+4. For a list of solutions, fill in the information on the page, and then select **See solutions**.
 
    > [!div class="mx-imgBorder"] 
    > ![](media/create-support-ticket.png "See solutions")
@@ -67,7 +74,7 @@ If the guidance doesn't resolve your issue, select **Create a support request** 
 > [!div class="mx-imgBorder"] 
 > ![](media/support-request-page2.png "Create a new support request")
 
-**Note**: If you have a Premier support plan and  don't know some or all of the information required, please contact your service admin or Technical Account Manager (TAM).
+**Note**: If you have a Premier support plan, select **Yes** for **File as a Premiers support request?** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Technical Account Manager (TAM).
 
 > [!div class="mx-imgBorder"] 
 > ![](media/premier-support.png "Premier support info")
