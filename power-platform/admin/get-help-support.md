@@ -29,6 +29,9 @@ search.app:
 
 Admins, use the Help + support experience in the [Power platform Admin center](https://docs.microsoft.com/power-platform/admin/admin-guide) to see recommended solutions for your issue and, if the issue can't be resolved, contact a Microsoft support representative for Dynamics 365 (online) to get resolution. 
 
+> [!div class="mx-imgBorder"] 
+> ![](media/support-solutions-list.png "List of possible solutions")
+
 ### Prerequisites
 
 -  You have one of the following Office 365 admin roles to enter support requests:
@@ -62,7 +65,7 @@ Admins, use the Help + support experience in the [Power platform Admin center](h
    > [!div class="mx-imgBorder"] 
    > ![](media/support-which-product.png "Select product")
 
-4. For a list of solutions, fill in the information on the page, and then select **See solutions**.
+4. For a list of self-help solutions, fill in the information on the page, and then select **See solutions**.
 
    > [!div class="mx-imgBorder"] 
    > ![](media/create-support-ticket.png "See solutions")
