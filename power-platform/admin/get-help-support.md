@@ -27,7 +27,7 @@ search.app:
 
 ## New Dynamics 365 (online) support center 
 
-Admins, you can use the **Help + support experience** in the [Power platform Admin center](https://docs.microsoft.com/power-platform/admin/admin-guide) to get self-help solutions in ***real-time*** for your issue. If the issue can't be resolved through self-help, you can use the same **Help + support experience** to contact a Microsoft support representative. 
+Admins, you can use the **Help + support** experience in the [Power platform Admin center](https://docs.microsoft.com/power-platform/admin/admin-guide) to get self-help solutions in ***real-time*** for your issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
 
 An example of solutions provided for Dynamics 365 for Outlook issues:
 
@@ -51,14 +51,14 @@ An example of solutions provided for Dynamics 365 for Outlook issues:
    - Professional Direct Support
    - Premier Support
 
-   We're working to add the Unified Support plan to the **Help + Support experience**. For now, you can go to [My Premier Online](https://support.microsoft.com/en-us/premier). <br />
+   We're working to add the Unified Support plan to the **Help + Support** experience. For now, you can go to [My Premier Online](https://support.microsoft.com/en-us/premier). <br />
    Microsoft Partners or delegated admins can go to [Partner Center](https://partnercenter.microsoft.com/en-us/partner/home).
 
 ### View solutions or enter a support request through the new support center
 
 1. Sign in to the [Power platform Admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
 
-2. Select **Help + Support** > **New support request**.
+2. Select **Help + support** > **New support request**.
 
    ![New support request](media/new-support-request.png "New support request")
 
@@ -72,14 +72,14 @@ An example of solutions provided for Dynamics 365 for Outlook issues:
    > [!div class="mx-imgBorder"] 
    > ![](media/create-support-ticket.png "See solutions")
 
-Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
+   Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
 
 5. If the guidance doesn't resolve your issue, select **Create a support request** and fill in the fields in the form pages.
 
    > [!div class="mx-imgBorder"] 
    > ![](media/support-request-page2.png "Create a new support request")
 
-6. If you have a Premier support plan, select **Yes** for **File as a Premier support request?** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Technical Account Manager (TAM).
+6. If you have a **Premier** support plan, select **Yes** for **File as a Premier support request?** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Technical Account Manager (TAM).
 
    > [!div class="mx-imgBorder"] 
    > ![](media/premier-support.png "Premier support info")
