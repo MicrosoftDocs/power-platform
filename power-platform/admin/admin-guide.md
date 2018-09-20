@@ -63,7 +63,7 @@ Benefits of the Power platform Admin center include:
 -->
 |Element  |Description  |
 |---------|---------|
-|Help + support     | Create a support ticket for technical support.         |
+|Help + support     | Get a list of self-help solutions or create a support ticket for technical support.         |
 |Environments | A list of your environments. Select an environment to see details.|
 |Analytics     | Get a detailed view of key metrics for Power platform apps.       |
 |Data policies     | Create and manage [data loss prevention policies](https://docs.microsoft.com/powerapps/administrator/create-dlp-policy).       |
