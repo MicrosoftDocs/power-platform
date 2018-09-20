@@ -60,7 +60,7 @@ Admins, use the Help + support experience in the [Power platform Admin center](h
 3. Select the product with the issue.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/suport-which-product.png "See solutions")
+   > ![](media/support-which-product.png "Select product")
 
 4. For a list of solutions, fill in the information on the page, and then select **See solutions**.
 
