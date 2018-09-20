@@ -51,7 +51,7 @@ An example of solutions provided for Dynamics 365 for Outlook issues:
    - Professional Direct Support
    - Premier Support
 
-   We're working to add the Unified Support plan to the **Help + Support** experience. For now, you can go to [My Premier Online](https://support.microsoft.com/en-us/premier). <br />
+   We're working to add the Unified Support plan to the **Help + support** experience. For now, you can go to [My Premier Online](https://support.microsoft.com/en-us/premier). <br />
    Microsoft Partners or delegated admins can go to [Partner Center](https://partnercenter.microsoft.com/en-us/partner/home).
 
 ### View solutions or enter a support request through the new support center
@@ -67,7 +67,7 @@ An example of solutions provided for Dynamics 365 for Outlook issues:
    > [!div class="mx-imgBorder"] 
    > ![](media/support-which-product.png "Select product")
 
-4. To get immediate help with your issue, fill in the information on the page, and then select **See solutions**.
+4. To get immediate help with your issue, fill in the rest of the information on the page, and then select **See solutions**.
 
    > [!div class="mx-imgBorder"] 
    > ![](media/create-support-ticket.png "See solutions")
