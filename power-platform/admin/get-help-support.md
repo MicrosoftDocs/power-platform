@@ -2,7 +2,7 @@
 title: "Get Help + Support | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 (online) to get resolution for your issue.
 ms.custom: ""
-ms.date: 08/08/2018
+ms.date: 09/20/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -25,9 +25,14 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-## New Dynamics 365 support center 
+## New Dynamics 365 (online) support center 
 
-Admins, use the Help + support experience to contact a Microsoft support representative for Dynamics 365 (online) to get resolution for your issue. 
+Admins, you can use the **Help + support** experience in the [Power platform Admin center](https://docs.microsoft.com/power-platform/admin/admin-guide) to get self-help solutions in ***real-time*** for your issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
+
+An example of solutions provided for Dynamics 365 for Outlook issues:
+
+> [!div class="mx-imgBorder"] 
+> ![](media/support-solutions-list.png "List of possible solutions")
 
 ### Prerequisites
 
@@ -44,28 +49,49 @@ Admins, use the Help + support experience to contact a Microsoft support represe
    - Subscription Support
    - Enhanced Support
    - Professional Direct Support
+   - Premier Support
 
-   Premier Support plan members can go to [My Premier Online](https://support.microsoft.com/en-us/premier). </br>
+   We're working to add the Unified Support plan to the **Help + support** experience. For now, you can go to [My Premier Online](https://support.microsoft.com/en-us/premier). <br />
    Microsoft Partners or delegated admins can go to [Partner Center](https://partnercenter.microsoft.com/en-us/partner/home).
 
-### Enter a support request through the new support center
+### View solutions or enter a support request through the new support center
 
-1. In the Power platform Admin center, choose **Help + Support** > **New support request**.
+1. Sign in to the [Power platform Admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
+
+2. Select **Help + support** > **New support request**.
 
    ![New support request](media/new-support-request.png "New support request")
 
-3. Fill in the information on the pages, and then select **Submit**.
+3. Select the product with the issue.
 
-   ![Create a new support request](media/create-support-ticket.png "Create a new support request")
+   > [!div class="mx-imgBorder"] 
+   > ![](media/support-which-product.png "Select product")
 
-Your request will appear in the list of support requests.
+4. To get immediate help with your issue, fill in the rest of the information on the page, and then select **See solutions**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/create-support-ticket.png "See solutions")
+
+   Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
+
+5. If the guidance doesn't resolve your issue, select **Create a support request** and fill in the fields in the form pages.
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/support-request-page2.png "Create a new support request")
+
+6. If you have a **Premier** support plan, select **Yes** for **File as a Premier support request?** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Technical Account Manager (TAM).
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/premier-support.png "Premier support info")
+
+Once you submit your request it will appear in the list of support requests.
 
 ![List of support requests](media/support-ticket-list.png "List of support requests")
 
 You can check the status and edit your request on this page.
   
 ## Limited Preview: Report outage
-For now, we're rolling out a new Preview feature to a limited set of customers to try out. If you're experiencing a service outage, we want your support request to get more timely review and action. Select the **Report outage** link to report the outage. If you don't see this link, don't worry! We'll be bringing this feature to all customers in the future.
+We're rolling out a new Preview feature to a limited set of customers to try out. If you're experiencing a service outage, we want your support request to get more timely review and action. Select the **Report outage** link to report the outage. If you don't see this link, don't worry! We'll be bringing this feature to all customers in the future.
 
 ![Report outage](media/new-report-outage.png "Report outage")
 
