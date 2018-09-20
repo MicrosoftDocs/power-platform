@@ -67,11 +67,10 @@ If the guidance doesn't resolve your issue, select **Create a support request** 
 > [!div class="mx-imgBorder"] 
 > ![](media/support-request-page2.png "Create a new support request")
 
-> [!TIP]
-> If you don't know some or all of the Premier support info required, please contact your service admin or Technical Account Manager (TAM).
->
-> [!div class="mx-imgBorder"] 
-> ![](media/premier-support.png "Premier support info")
+**Note**: If you have a Premier support plan and  don't know some or all of the information required, please contact your service admin or Technical Account Manager (TAM).
+
+[!div class="mx-imgBorder"] 
+![](media/premier-support.png "Premier support info")
 
 Once you submit your request it will appear in the list of support requests.
 
