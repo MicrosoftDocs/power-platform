@@ -86,7 +86,7 @@ An example of solutions provided for Dynamics 365 for Outlook issues:
 
 > [!NOTE]
 > - For **Contract ID/Password**, please enter your Premier contract ID. 
-> - The **Contract ID/Password** defaults to the Premier contract ID. If you have changed the password when registering online in the Premier portal, you should use the updated password instead of the the contract ID.
+> - The **Contract ID/Password** defaults to the Premier contract ID. If you have changed the password when registering online in the Premier portal, you should use the updated password instead of the contract ID.
 
 Once you submit your request it will appear in the list of support requests.
 
