@@ -45,6 +45,10 @@ Make sure you have the System Administrator or System Customizer security role o
 |Number of digits for personal numbers|Default: 3. |
 |Number of digits for email activity counter|Default: 3. |
 |Use smart matching|Default: Off. Select **On** to use smart matching to correlate email based on the similarity between email messages. Smart matching isn’t as accurate as tracking tokens or folder-level tracking. More information: [Email message filtering and correlation](https://docs.microsoft.com/dynamics365/customer-engagement/admin/email-message-filtering-correlation)|
+|Ignore these subject line keywords|Appears when **Use smart matching** is enabled. Content coming.|
+|Maximum number of subject keywords or recipients to analyze|Appears when **Use smart matching** is enabled. Content coming.|
+|Maximum difference allowed between subject keywords|Appears when **Use smart matching** is enabled. Content coming.|
+|Maximum number of recipients required for a match|Appears when **Use smart matching** is enabled. Content coming.|
 |**Folder-level tracking**||  
 |Use folder-level tracking for Exchange folders (server-side synchronization must be enabled)|Default: Off. Users can set up [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] tracking folders, and then move messages to those folders to track them automatically on virtually any device. More information: [Track Outlook email by moving it to a tracked Exchange folder](https://docs.microsoft.com/dynamics365/customer-engagement/admin/track-outlook-email-by-moving-it-tracked-exchange-folder)<br /><br /> Folder-level tracking provides 100% tracking accuracy. To use folder-level tracking:<br /><br /> -   Select **On**.<br />-   Your organization must synchronize email through server-side synchronization. More information: [Set up server-side synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks)|  
 |**Tracking items**| |
