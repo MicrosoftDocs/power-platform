@@ -1,7 +1,7 @@
 ---
 title: "Common Data Service for Apps analytics | MicrosoftDocs"
 ms.custom: ""
-ms.date: 09/19/2018
+ms.date: 09/27/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
