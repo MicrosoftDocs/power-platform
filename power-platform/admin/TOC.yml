@@ -27,7 +27,7 @@
           href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages
         - name: Privacy and security 
           href: settings-privacy-security.md
-      - name: Business Settings
+      - name: Business settings
         items:
         - name: Business closures 
           href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-when-business-closed
