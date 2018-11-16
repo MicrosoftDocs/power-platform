@@ -55,26 +55,6 @@ Make sure you have the System Administrator or System Customizer security role o
 |**Inactivity timeout**|More information: [Inactivity timeout](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management#inactivity-timeout) |  
 |Set inactivity timeout|Default: Off. Enable to automatically sign out a user. |  
 
-## Set error reporting preferences for the organization 
- When errors occur in the product, data about the problem is sent to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. This data – an error report - allows Dynamics 365 (online) to track and address errors relating to [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)]. You can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] improve products and services when you allow the system to send these error reports.  
-  
- By default, individual users in Dynamics 365 (online) have a measure of control over whether to send error reports to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. But you, as an administrator, can override their preferences and set up the error reporting preferences for the entire organization.  
-  
-1. Go to **Environments** > [select an environment] > **Settings** > **Privacy + Security**
-  
-2. Under **Privacy Preferences**, **Default action to take when an error occurs**, select an action to take when an error occurs. 
-  
-   > [!div class="mx-imgBorder"] 
-   > ![Select error notification preferences for users](media/privacy-preference-error-notifications75.png "Select error notification preferences for users")
- 
-3. Select **Save**. 
-
-When you use this setting, you can control error reporting for the entire organization by:  
-  
--   Not allowing users to make changes in how error reporting occurs.  
-  
--   Changing the default behavior for how error reporting happens.  
-  
 ## Replace the privacy statement for the organization  
  By default, the [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] privacy statement is always shown to users with an administrator role only, and not to other (business) users. As an administrator, you can add a link to specify your organization's privacy statement, which is then shown to other users in your organization.  
   
@@ -91,3 +71,25 @@ When you use this setting, you can control error reporting for the entire organi
   
 > [!NOTE]
 >  Any user with the System Administrator security role will always see the [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] privacy statement and not the organization’s privacy statement.
+
+
+## Set error reporting preferences for the organization 
+ When errors occur in the product, data about the problem is sent to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. This data – an error report - allows Dynamics 365 (online) to track and address errors relating to [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)]. You can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] improve products and services when you allow the system to send these error reports.  
+  
+ By default, individual users in Dynamics 365 (online) have a measure of control over whether to send error reports to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. But you, as an administrator, can override their preferences and set up the error reporting preferences for the entire organization.  
+  
+1. Go to **Environments** > [select an environment] > **Settings** > **Privacy + Security**
+  
+2. Under **Privacy Preferences**, **Default action to take when an error occurs**, select an action to take. 
+  
+   > [!div class="mx-imgBorder"] 
+   > ![Select error notification preferences for users](media/privacy-preference-error-notifications75.png "Select error notification preferences for users")
+ 
+3. Select **Save**. 
+
+When you use this setting, you can control error reporting for the entire organization by:  
+  
+-   Not allowing users to make changes in how error reporting occurs.  
+  
+-   Changing the default behavior for how error reporting happens.  
+  
