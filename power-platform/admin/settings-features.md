@@ -2,7 +2,7 @@
 title: "Manage email feature settings | MicrosoftDocs"
 description: View and manage feature settings for Common Data Service for Apps.
 ms.custom: ""
-ms.date: 09/14/2018
+ms.date: 11/16/2018
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -26,7 +26,7 @@ search.app:
 
 Use Feature settings to adjust how Dynamics 365 (online) features appear and function.
 
-These settings can be found in the Power platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Behavior**.
+These settings can be found in the Power platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Features**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 
