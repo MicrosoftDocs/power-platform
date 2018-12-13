@@ -23,7 +23,7 @@ search.app:
 # Manage email tracking settings
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use Email settings to adjust how Dynamics 365 (online) features appear and function.
+Use Email settings to adjust how Dynamics 365 for Customer Engagement apps features appear and function.
 
 These settings can be found in the Power platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Email Tracking**.
 
@@ -51,4 +51,4 @@ Make sure you have the System Administrator or System Customizer security role o
 |People can use categories to track emails and appointments|Default: Off. Content coming.|
 |Allow auto-tracking on outgoing email|Default: Off. Content coming.|
 |**Tracking between Dynamics 365 users**| |
-|Track emails sent between Dynamics 365 users as two activities|Default: On. Select this option to create two email activities between [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] users, one for the sender and one for the recipient.| 
+|Track emails sent between Customer Engagement apps users as two activities|Default: On. Select this option to create two email activities between [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] users, one for the sender and one for the recipient.| 

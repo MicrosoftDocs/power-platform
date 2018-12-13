@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use these settings to adjust Dynamics 365 (online) privacy and security.
+Use these settings to adjust Dynamics 365 for Customer Engagement apps privacy and security.
 
 These settings can be found in the Power platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Privacy + Security**.
 
@@ -50,7 +50,7 @@ Make sure you have the System Administrator or System Customizer security role o
 |Set blocked file extensions for attachments (semicolon separated)|Prevent upload or download of certain attachment types that are considered dangerous. Separate file extensions with a semicolon.|
 |**Session expiration**|More information: [Security enhancements: User session and access management](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management)|  
 |Set custom session timeout|Default: Off. Select **On** to specify values different from default values.|
-|Enter maximum session length|Default: 1440. After the time you set is reached, users must re-authenticate to Dynamics 365 (online).|  
+|Enter maximum session length|Default: 1440. After the time you set is reached, users must re-authenticate to Customer Engagement apps.|  
 |How long before the session expires do you want to show a timeout warning?|Default: 20. After the time you set is reached, users receive an expiration warning.|  
 |**Inactivity timeout**|More information: [Inactivity timeout](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management#inactivity-timeout) |  
 |Set inactivity timeout|Default: Off. Enable to automatically sign out a user. |  
@@ -74,9 +74,9 @@ Make sure you have the System Administrator or System Customizer security role o
 
 
 ## Set error reporting preferences for the organization 
- When errors occur in the product, data about the problem is sent to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. This data – an error report - allows Dynamics 365 (online) to track and address errors relating to [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)]. You can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] improve products and services when you allow the system to send these error reports.  
+ When errors occur in the product, data about the problem is sent to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. This data – an error report - allows Customer Engagement apps to track and address errors relating to [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)]. You can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] improve products and services when you allow the system to send these error reports.  
   
- By default, individual users in Dynamics 365 (online) have a measure of control over whether to send error reports to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. But you, as an administrator, can override their preferences and set up the error reporting preferences for the entire organization.  
+ By default, individual users in Customer Engagement apps have a measure of control over whether to send error reports to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. But you, as an administrator, can override their preferences and set up the error reporting preferences for the entire organization.  
   
 1. Go to **Environments** > [select an environment] > **Settings** > **Privacy + Security**
   
