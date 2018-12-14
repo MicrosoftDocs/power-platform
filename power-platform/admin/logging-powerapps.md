@@ -20,9 +20,7 @@ manager: "kvivek"
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Log PowerApps activities to track and view user and administrator activity from within the [Office 365 Security & Compliance Center](https://go.microsoft.com/fwlink/?LinkID=824876). 
-
-Office 365 tenant administrators reach the Security & Compliance Center by navigating to [https://protection.office.com](https://protection.office.com). From there, the **Audit log search** is found under the **Search and investigation** dropdown.
+Log PowerApps activities to track and view user and administrator activity from within the [Office 365 Security & Compliance Center](https://go.microsoft.com/fwlink/?LinkID=824876). Office 365 tenant administrators reach the Security & Compliance Center by navigating to [https://protection.office.com](https://protection.office.com). From there, the **Audit log search** is found under the **Search and investigation** dropdown.
 
 ![Audit log search](media/audit-log-search-menu.png "Audit log search")
 
@@ -140,7 +138,7 @@ The Dynamics 365 for Customer Engagement apps schema contains fields specific to
 |UserId     |Edm.Guid          |No         |The unique id of the Dynamics system user associated with this activity          |
 |UserUpn     |Edm.String         |No         |User principal name of the user associated with this activity          |
 -->
-
+<!--
 ## Enable auditing in Dynamics 365 for Customer Engagement
 
 1. In Dynamics 365 for Customer Engagement apps (online), choose **Settings** > **Administration** > **System Settings** > **Auditing tab**.
@@ -291,8 +289,7 @@ When audit log search in the Office 365 Security and Compliance Center is turned
 - In the Office 365 Security and Compliance Center (protection.office.com), the Activities drop-down has a section called Dynamics 365 for Customer Engagement apps activities, with nine activities listed. However, the audit logs currently only use the Accessed other entity type activity. Selecting any of the others alone will filter out all results. The simplest option for now is to click on the Dynamics 365 for Customer Engagement apps activities header, which will select all activities.
 - In future releases, logging will disabled for operations that are determined to not be useful based on a review of the logs. For example, some operations result from automated system activity, not user activity.
 - The new flags for enabling Read Auditing in the Organization settings and Entity Settings are not solution aware in version 8.2. Exporting a solution from an 8.2 instance to any other instance will not export these flags. 
-
+-->
 ### See also
- [Audit data and user activity for security and compliance](audit-data-user-activity.md)<br />
- [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6)
+ [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6)<br/>
  [Office 365 Management APIs overview](https://msdn.microsoft.com/office-365/office-365-managment-apis-overview)
