@@ -28,8 +28,6 @@ Within the **Audit log search** screen, tenant administrators can search audit l
 
 Once the Audit log search screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown. By scrolling down the list, a section dedicated to Microsoft PowerApps activities can be found. 
 
-This topic covers how you can set [!INCLUDE [pn-ms-dyn-365](../includes/pn-ms-dyn-365.md)] to audit a broad range of data processing activities and use the Office 365 Security & Compliance Center to review the data in activity reports.
-
 ## Requirements
 - An Office 365 Enterprise [E3](https://products.office.com/business/office-365-enterprise-e3-business-software) or [E5] (https://products.office.com/business/office-365-enterprise-e5-business-software) subscription is required to view the logs; not required to generate the logs.
 
@@ -138,7 +136,6 @@ The Dynamics 365 for Customer Engagement apps schema contains fields specific to
 |UserId     |Edm.Guid          |No         |The unique id of the Dynamics system user associated with this activity          |
 |UserUpn     |Edm.String         |No         |User principal name of the user associated with this activity          |
 -->
-<!--
 ## Enable auditing in Dynamics 365 for Customer Engagement
 
 1. In Dynamics 365 for Customer Engagement apps (online), choose **Settings** > **Administration** > **System Settings** > **Auditing tab**.
@@ -289,7 +286,7 @@ When audit log search in the Office 365 Security and Compliance Center is turned
 - In the Office 365 Security and Compliance Center (protection.office.com), the Activities drop-down has a section called Dynamics 365 for Customer Engagement apps activities, with nine activities listed. However, the audit logs currently only use the Accessed other entity type activity. Selecting any of the others alone will filter out all results. The simplest option for now is to click on the Dynamics 365 for Customer Engagement apps activities header, which will select all activities.
 - In future releases, logging will disabled for operations that are determined to not be useful based on a review of the logs. For example, some operations result from automated system activity, not user activity.
 - The new flags for enabling Read Auditing in the Organization settings and Entity Settings are not solution aware in version 8.2. Exporting a solution from an 8.2 instance to any other instance will not export these flags. 
--->
+
 ### See also
  [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6)<br/>
  [Office 365 Management APIs overview](https://msdn.microsoft.com/office-365/office-365-managment-apis-overview)
