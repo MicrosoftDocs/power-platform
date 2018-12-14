@@ -38,6 +38,7 @@ This topic covers how you can set [!INCLUDE [pn-ms-dyn-365](../includes/pn-ms-dy
 ## What events are audited
 Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit.
 
+<!--
 ### Admin-related events
 
 |Event  |Description  |
@@ -47,23 +48,23 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Team, user management     |Who was added, who was deleted, what access rights a user/team had is important for analyzing impact.|
 |Configure instance     |Adding solutions to an instance.|
 |Backup and restore     |Backup and restore actions at the tenant.|
-|Manage applications     |New instance added, existing instance deleted, trials converted to paid, etc.|
-
-### User and support-related events 
+|Manage applications     |New instance added, existing instance deleted, trials converted to paid, etc.| 
+-->
 
 |Event  |Description  |
 |---------|---------|
-|Create, read, update, delete (CRUD)     |Logging all CRUD activities essential for understanding the impact of a problem and being compliant with data protection impact assessments (DPIA). |
-|Multiple record view     |Users of Dynamics view information in bulk, like grid views, Advanced Find search, etc. Critical customer content information is part of these views.|
-|Export to Excel     |Exporting data to Excel moves the data outside of the secure environment and is vulnerable to threats.|
-|SDK calls via surround or custom apps    |Actions taken via the core platform or surround apps calling into the SDK to perform an action needs to be logged.|
-|All support CRUD activities     |Microsoft support engineer activities on customer environment.|
-|Admin activities     |Admin activities on customer tenant.|
-|Backend commands     |Microsoft support engineer activities on customer tenant and environment.|
-|Report Viewed  |Logging when a report is viewed. Critical customer content information might be displayed on the report.  |
-|Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and is vulnerable to threats.  |
-|Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
+|Created app   |When the app gets created for the first time by a maker |
+|Launched app    |When the app gets launched |
+|Marked app as Featured   |Every time the app is marked as Featured|
+|Restored app version   |The version of the app when restored|
+|Edited app    |Any updates made to the app by the maker|
+|Published app     |When the app is published and is now made available to others in the environment|
+|Edited app permission  |Every time a user's permissions to the app is changed|
+|Deleted app |When the app is deleted  |
+|Marked app as Hero |Every time the app is marked as Hero  |
+|Deleted app permission |Every time a user's permissions to the app is removed  |
 
+<!--
 ### Microsoft Social Engagement logging   
 
 The following Microsoft Social Engagement (MSE) entities and actions are logged.
@@ -94,6 +95,7 @@ The following Microsoft Social Engagement (MSE) entities and actions are logged.
 |Search Language   |Add, Delete   |
 |Adaptive Sentiment   |Enable, Disable, Reset   |
 |Other Global Settings   |Update   |
+-->
 
 ## Base schema
 Schemas define which Dynamics 365 for Customer Engagement apps fields are sent to the Office 365 Security and Compliance Center.  Some fields are common to all applications that send audit data to Office 365, while others are specific to Dynamics 365 for Customer Engagement. The Base schema contains the common fields. 
@@ -101,18 +103,17 @@ Schemas define which Dynamics 365 for Customer Engagement apps fields are sent t
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
 |Date     |Edm.Date|No         |Date and time of when the log was generated in UTC          |
-|IP address     |Edm.String         |No         |IP address of the user or corporate gateway          |
+|App Name   |Edm.String         |No         |Unique Identifier of the PowerApp        |
 |Id     |Edm.Guid         |No         |Unique GUID for every row logged          |
-|Result Status     |Edm.String         |No         |Status of the row logged. Success in most cases          |
-|Organization Id     |Edm.Guid         |Yes        |Unique identifier of the organization from which the log was generated. You can find this ID under Dynamics Developer Resources.          |
-|ClientIP     |Edm.String         |No         |IP Address of the user or corporate gateway          |
-|CorrelationId     |Edm.Guid         |No         |A unique value used to associate related rows (e.g., when a large row is split)          |
+|Result Status     |Edm.String         |No         |Status of the row logged. Success in most cases.          |
+|Organization Id     |Edm.Guid         |Yes        |Unique identifier of the organization from which the log was generated.       |
 |CreationTime     |Edm.Date         |No         |Date and time of when the log was generated in UTC          |
-|Operation     |Edm.Date         |No         |Name of the message called in Dynamics 365 for Customer Engagement apps apps SDK          |
-|UserKey     |Edm.String         |No         |Unique Identifier of the User in AAD. AKA User PUID          |
-|UserType     |Self.UserType         |No         |The Office 365 audit type (Admin, Regular, System)          |
-|User     |Edm.String        |No         |UPN of the user          |
+|Operation     |Edm.Date         |No         |Name of operation         |
+|UserKey     |Edm.String         |No         |Unique Identifier of the User in AAD       |
+|UserType     |Self.UserType         |No         |The audit type (Admin, Regular, System)         |
+|Additional Info     |Edm.String        |No         |Additional information if any (e.g. the environment name)       |
 
+<!--
 ## Dynamics 365 for Customer Engagement apps schema
 The Dynamics 365 for Customer Engagement apps schema contains fields specific to Dynamics 365 for Customer Engagement apps and partner teams. 
 
@@ -138,6 +139,7 @@ The Dynamics 365 for Customer Engagement apps schema contains fields specific to
 |UserAgent     |Edm.Guid          |No        |Browser used to execute the request          |
 |UserId     |Edm.Guid          |No         |The unique id of the Dynamics system user associated with this activity          |
 |UserUpn     |Edm.String         |No         |User principal name of the user associated with this activity          |
+-->
 
 ## Enable auditing in Dynamics 365 for Customer Engagement
 
