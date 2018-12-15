@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use Feature settings to adjust how Dynamics 365 (online) features appear and function.
+Use Feature settings to adjust how Dynamics 365 for Customer Engagement apps features appear and function.
 
 These settings can be found in the Power platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Features**.
 
@@ -41,11 +41,11 @@ Make sure you have the System Administrator or System Customizer security role o
 |--------------|-----------------|  
 |**Embedded content**||  
 |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)|  
-|Bing Maps|Default: Off. If **On**, Dynamics 365 on-premises users will need to enter a Bing Maps key. Dynamics 365 (online) users don’t need to enter a key. |  
+|Bing Maps|Default: Off. If **On**, Dynamics 365 for Customer Engagement apps (on-premises) users will need to enter a Bing Maps key. Customer Engagement apps users don’t need to enter a key. |  
 |Prevent social data in Dynamics|Default: Off. If you don’t want to receive social data in Dynamics 365, select **Off**. If you disable social engagement, your organization will not be able to receive social data in Dynamics 365. Users can continue to work with existing social data, however.|  
 |**Communications**| |
 |Skype presence|Default: On. If **On**, instant messaging will display the current status for users, contacts, opportunities, or leads. This only applies to lists and sub-lists for entities with an updated user interface.|  
-|Enable country/region code prefixing for numbers|Default: On. If **On**, Dynamics 365 will prefix the country/region code to numbers that users are trying to call.|  
+|Enable country/region code prefixing for numbers|Default: On. If **On**, Customer Engagement apps will prefix the country/region code to numbers that users are trying to call.|  
 |Set the telephony provider|Default: On. Choose which provider to enable outbound calls from within Dynamics 365. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.|  
 |Use Skype| Default: enabled. [More information: Set up Dynamics 365 (online) to use Skype or Skype for Business](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-skype-or-skype-for-business)|
 |Use Skype for Business| Default: not enabled. |
@@ -60,5 +60,5 @@ Make sure you have the System Administrator or System Customizer security role o
 |Learning path authoring|Default: Off. Set to **On** if you want enable users to author Learning Path content. More information: [Create your own guided help (Learning Path) for your customers](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-guided-help-learning-path)|
 |**Auditing**| |
 |Audit entities|Default: Off. Start or stop auditing.|  
-|Audit user access|Default: Off. If enabled, Dynamics 365 tracks when the user started accessing Dynamics 365 and whether or not the user accessed the application by using the web application or Dynamics 365 for Outlook.| 
+|Audit user access|Default: Off. If enabled, Customer Engagement apps tracks when the user started accessing Customer Engagement apps and whether or not the user accessed the application by using the web application or Dynamics 365 for Outlook.| 
 |Audit read access|Default: Off. | 
