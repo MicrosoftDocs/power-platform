@@ -25,7 +25,7 @@ search.app:
 
 Use Email settings to adjust how Dynamics 365 for Customer Engagement apps features appear and function.
 
-These settings can be found in the Power platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Email Tracking**.
+These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Email Tracking**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 
