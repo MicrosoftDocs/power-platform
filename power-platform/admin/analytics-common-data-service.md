@@ -23,7 +23,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service for Apps analytics right from the Power platform Admin center to quickly view adoption ad user metrics for your organization. 
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service for Apps analytics right from the Power Platform Admin center to quickly view adoption ad user metrics for your organization. 
 
  **Key highlights**  
 
@@ -40,7 +40,7 @@ We've improved how you view metrics for your organization. You no longer need to
 <a name="BKMK_InstallSolution"></a>   
 
 ## View Common Data Service for Apps analytics  
-It's simple. In the [Power platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service for Apps**.
+It's simple. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service for Apps**.
 
 <a name="BKMK_Home"></a>   
 

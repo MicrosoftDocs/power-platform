@@ -1,6 +1,6 @@
 ---
-title: "Preview: Administer Power platform | MicrosoftDocs"
-description: The Power platform Admin center is the new site to manage Common Data Service for Apps and other apps.
+title: "Preview: Administer Power Platform | MicrosoftDocs"
+description: The Power Platform Admin center is the new site to manage Common Data Service for Apps and other apps.
 ms.custom: ""
 ms.date: 09/27/2018
 ms.reviewer: ""
@@ -21,7 +21,7 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Preview: Introducing the Power platform Admin center
+# Preview: Introducing the Power Platform Admin center
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -35,11 +35,11 @@ If you've managed Dynamics 365 (online) tenants and instances, you've used the D
 
 ![Dynamics 365 admin center](./media/old-admin-center50.png)
 
-With the merge of Common Data Service (CDS) for Apps and the Dynamics 365 platform, we're launching a new admin center experience bringing PowerApps, Flow, and Dynamics 365 administration management together in a single site - the [Power platform Admin center](https://admin.dynamics.com).
+With the merge of Common Data Service (CDS) for Apps and the Dynamics 365 platform, we're launching a new admin center experience bringing PowerApps, Flow, and Dynamics 365 administration management together in a single site - the [Power Platform Admin center](https://admin.dynamics.com).
 
-![Power platform Admin center](./media/new-admin-center-environments.png)
+![Power Platform Admin center](./media/new-admin-center-environments.png)
 
-Check out the following blog: [Introducing the Power platform admin center](https://blogs.msdn.microsoft.com/crm/2018/09/25/introducing-the-power-platform-admin-center/).
+Check out the following blog: [Introducing the Power Platform admin center](https://blogs.msdn.microsoft.com/crm/2018/09/25/introducing-the-power-platform-admin-center/).
 
 ## Admin center interface
 
@@ -47,7 +47,7 @@ Check out the following blog: [Introducing the Power platform admin center](http
 |---------|---------|
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support.         |
 |Environments | A list of your environments. Select an environment to see details.|
-|Analytics     | Get a detailed view of key metrics for Power platform apps.       |
+|Analytics     | Get a detailed view of key metrics for Power Platform apps.       |
 |Data policies     | Create and manage [data loss prevention policies](https://docs.microsoft.com/powerapps/administrator/create-dlp-policy).       |
 |Admin portals    |Links to other admin centers.        |
 
@@ -57,11 +57,11 @@ For now, there are multiple admin centers you use to manage and monitor your env
 
 |Admin Center  |Common Tasks  |
 |---------|---------|
-|Power platform Admin center <br/>[https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)     |The new unified administrative portal for Power platform admins.  Currently this portal can be used for CDS for Apps environment management, to submit CDS for Apps and Flow support tickets, and to view PowerApps and Flow admin analytics.   |
+|Power Platform Admin center <br/>[https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)     |The new unified administrative portal for Power Platform admins.  Currently this portal can be used for CDS for Apps environment management, to submit CDS for Apps and Flow support tickets, and to view PowerApps and Flow admin analytics.   |
 |PowerApps Admin center <br/>[https://admin.powerapps.com](https://admin.powerapps.com)    |Creating and managing environments including security starts here. Within each environment you can manage the apps and flows.  Monitor who is licensed and building things. Create and manage Data Loss Prevention policies. Manage CDS for Apps Data Integration projects.    |
 |PowerApps Maker Portal<br/>[https://web.powerapps.com](https://web.powerapps.com)      |This portal is focused on building PowerApps but can also view and manage CDS for Apps components, manage connectors and gateways.  You can also see application statistics from details on apps here.         |
 |Microsoft Flow Admin Portal<br/>[https://admin.flow.microsoft.com](https://admin.flow.microsoft.com)   | This points to the same site as admin.powerapps.com.    |
-|Business platform admin center<br/>[https://admin.businessplatform.microsoft.com](https://admin.businessplatform.microsoft.com)      |This points to the same site as admin.powerapps.com.  **Over time, this will migrated to and replaced by the Power platform Admin center.**        |
+|Business platform admin center<br/>[https://admin.businessplatform.microsoft.com](https://admin.businessplatform.microsoft.com)      |This points to the same site as admin.powerapps.com.  **Over time, this will migrated to and replaced by the Power Platform Admin center.**        |
 |Dynamics 365 Admin center<br/>[https://port.crm.dynamics.com/G/manage/index.aspx](https://port.crm.dynamics.com/G/manage/index.aspx)     |The Dynamics 365 Admin Center, that can be leveraged to perform certain CDS environment management like renaming, deleting, and resetting.    |
 |Dynamics 365 Instance Management<br/>[https://port.crm<N>.dynamics.com/G/Instances/InstancePicker.aspx](https://port.crm<N>.dynamics.com/G/Instances/InstancePicker.aspx) | This instance management portal is reached from admin.powerapps.com when managing the CDS for Apps database or from the Dynamics 365 Admin center. Here you will see a list of all the CDS for Apps databases and can perform actions such as backup, as well as other actions on a per instance basis.   |
 |Office 365 Admin center<br/>[https://portal.office.com/adminportal](https://portal.office.com/adminportal)      |Here you manage users and their license assignment as well as launch into many of the individual admin centers.         |
