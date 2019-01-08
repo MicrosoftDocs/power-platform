@@ -32,9 +32,14 @@ This offline experience uses Azure services to periodically synchronize entities
 
 Create one or more offline profiles to specify how much of an entity's data (and related entities' data) will be available to users while offline.
 
-Enter a profile name and description.
+1. Sign in to [https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com/) as an admin. 
+2. Go to **Environments** > [select an environment] > **Settings** > **Offline access profiles**
+3. Enter a profile name and description.
 
 <insert image>
+
+> [!NOTE]
+> You can add more than one profile for an app module.
 
 ## Step 2: Select entity data to sync
 
@@ -56,7 +61,7 @@ Filter the number of records enabled for offline use by selecting a date range f
 
 ## Step 4: Choose users to receive data
 
-Add users to the profile who will receive selected records when offline. Users can only be listed in one offline profile.
+Add users to the profile so they receive selected records when offline. Users can only be listed in one offline profile.
 
 <need info on difference between +New and Search>
 
@@ -68,6 +73,7 @@ Here are a few things to keep in mind about offline synchronization:
 - Changes to a user’s security privileges are updated during the next synchronization cycle. Until that time, users can still continue accessing data according to their previous security privileges, but any changes they make will be validated during the synchronization to the Customer Engagement server. If they no longer have privileges to make changes for a record, they will receive an error and the record won’t be created, updated, or deleted.
 - Any changes to a user’s privilege to view a record won’t take effect on the mobile device until the next synchronization cycle.
 
-
+> [!NOTE]
+> Once you’ve enabled offline synchronization, metadata changes are pushed to the mobile apps when the changes are published, not just on app start-up. To keep offline synchronization up-to-date, users should always accept the prompt to download metadata changes.
 
 ### See also
