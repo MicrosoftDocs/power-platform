@@ -26,7 +26,7 @@ search.app:
 
 Use Behavior settings to adjust how Dynamics 365 for Customer Engagement apps appears and functions.
 
-These settings can be found in the Power platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Behavior**.
+These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Behavior**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 

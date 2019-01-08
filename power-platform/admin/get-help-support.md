@@ -27,7 +27,7 @@ search.app:
 
 ## New Dynamics 365 (online) support center 
 
-Admins, you can use the **Help + support** experience in the [Power platform Admin center](https://docs.microsoft.com/power-platform/admin/admin-guide) to get self-help solutions in ***real-time*** for your issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
+Admins, you can use the **Help + support** experience in the [Power Platform Admin center](https://docs.microsoft.com/power-platform/admin/admin-guide) to get self-help solutions in ***real-time*** for your issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
 
 An example of solutions provided for Dynamics 365 for Outlook issues:
 
@@ -56,7 +56,7 @@ An example of solutions provided for Dynamics 365 for Outlook issues:
 
 ### View solutions or enter a support request through the new support center
 
-1. Sign in to the [Power platform Admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
 
 2. Select **Help + support** > **New support request**.
 
