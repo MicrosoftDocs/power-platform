@@ -1,6 +1,6 @@
 ---
 title: "Preview: On-premises data gateway management | MicrosoftDocs"
-description: View and manage your environments on the Environments page. 
+description: View and manage on-premises gateways. 
 ms.custom: ""
 ms.date: 01/11/2019
 ms.reviewer: ""
