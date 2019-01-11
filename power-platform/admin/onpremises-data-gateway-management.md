@@ -54,7 +54,7 @@ Select the **People** icon (![People](media/people.png)) next to the gateway clu
 
 ## Search
 
-Use **Search** to find gateway clusters and see their details.
+Use **Search** to find gateway clusters and see their details. You can search for gateway cluster names and contact info, but not administrators.
 
 > [!div class="mx-imgBorder"] 
 > ![Search](media/manage-search.png "Search")
