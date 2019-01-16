@@ -11,7 +11,7 @@
 ##    href: analytics-flow.md
 ##  - name: PowerApps analytics
 ##    href: analytics-powerapps.md
-  - name: Activate logging for PowerApps
+  - name: Activity logging for PowerApps
     href: logging-powerapps.md
   - name: On-premises data gateway management
     href: onpremises-data-gateway-management.md

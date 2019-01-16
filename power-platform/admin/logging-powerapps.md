@@ -1,5 +1,5 @@
 ---
-title: "Activate logging for PowerApps | MicrosoftDocs"
+title: "Activity logging for PowerApps | MicrosoftDocs"
 description:
 ms.custom: ""
 ms.date: 12/14/2018
@@ -16,7 +16,7 @@ author: "jimholtz"
 ms.author: "jimholtz"
 manager: "kvivek"
 ---
-# Activate logging for PowerApps
+# Activity logging for PowerApps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
