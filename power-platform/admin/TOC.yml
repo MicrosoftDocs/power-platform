@@ -7,14 +7,14 @@
     items:
     - name: Common Data Service for Apps analytics
       href: analytics-common-data-service.md
-##  - name: Microsoft Flow analytics
-##    href: analytics-flow.md
-##  - name: PowerApps analytics
-##    href: analytics-powerapps.md
+    # - name: Microsoft Flow analytics
+    #   href: analytics-flow.md
+    # - name: PowerApps analytics
+    #   href: analytics-powerapps.md
   - name: Activity logging for PowerApps
     href: logging-powerapps.md
-  - name: On-premises data gateway management
-    href: onpremises-data-gateway-management.md
+  # - name: On-premises data gateway management
+  #   href: onpremises-data-gateway-management.md
   - name: Manage environments
     href: manage-environments.md
     items:
