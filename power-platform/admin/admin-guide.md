@@ -31,11 +31,11 @@ search.app:
 > - [!INCLUDE[cc_preview_features_expect_changes](../includes/cc-preview-features-expect-changes.md)]  
 > - [!INCLUDE[cc_preview_features_no_MS_support](../includes/cc-preview-features-no-ms-support.md)]  
 
-If you've managed Dynamics 365 (online) tenants and instances, you've used the Dynamics 365 admin center.
+If you've managed Dynamics 365 for Customer Engagement tenants and instances, you've used the Dynamics 365 admin center.
 
 ![Dynamics 365 admin center](./media/old-admin-center50.png)
 
-With the merge of Common Data Service (CDS) for Apps and the Dynamics 365 platform, we're launching a new admin center experience bringing PowerApps, Flow, and Dynamics 365 administration management together in a single site - the [Power Platform Admin center](https://admin.dynamics.com).
+With the merge of Common Data Service (CDS) for Apps and the Dynamics 365 for Customer Engagement platform, we're launching a new admin center experience bringing PowerApps, Flow, and Dynamics 365 administration management together in a single site - the [Power Platform Admin center](https://admin.dynamics.com).
 
 ![Power Platform Admin center](./media/new-admin-center-environments.png)
 

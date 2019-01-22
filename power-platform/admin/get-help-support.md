@@ -1,6 +1,6 @@
 ---
 title: "Get Help + Support | MicrosoftDocs"
-description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 (online) to get resolution for your issue.
+description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 for Customer Engagement to get resolution for your issue.
 ms.custom: ""
 ms.date: 09/20/2018
 ms.reviewer: ""
@@ -25,7 +25,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-## New Dynamics 365 (online) support center 
+## New Dynamics 365 for Customer Engagement support center 
 
 Admins, you can use the **Help + support** experience in the [Power Platform Admin center](https://docs.microsoft.com/power-platform/admin/admin-guide) to get self-help solutions in ***real-time*** for your issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
 
