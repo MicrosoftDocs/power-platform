@@ -24,7 +24,7 @@ PowerApps activities are now tracked from the [Office 365 Security & Compliance 
 
 ![Audit log search](media/audit-log-search-menu.png "Audit log search")
 
-Within the **Audit log search** screen, tenant administrators can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, Dynamics 365 and now Microsoft PowerApps.
+Within the **Audit log search** screen, tenant administrators can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, Dynamics 365 for Customer Engagement apps, and now Microsoft PowerApps.
 
 Once the Audit log search screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown. By scrolling down the list, a section dedicated to Microsoft PowerApps activities can be found. 
 
