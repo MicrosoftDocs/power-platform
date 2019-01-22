@@ -23,9 +23,9 @@ search.app:
 ---
 # Preview: Introducing the Power Platform Admin center
 
-[!INCLUDE [cc-customer-engagement-apps-note](../includes/cc-customer-engagement-apps-note.md)]
-
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+[!INCLUDE [cc-customer-engagement-apps-note](../includes/cc-customer-engagement-apps-note.md)]
 
 > [!IMPORTANT]
 > - This feature currently has limited availability.
