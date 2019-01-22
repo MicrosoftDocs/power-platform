@@ -25,6 +25,8 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
+[!INCLUDE [cc-customer-engagement-apps-note](../includes/cc-customer-engagement-apps-note.md)]
+
 > [!IMPORTANT]
 > - This feature currently has limited availability.
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]  
