@@ -42,11 +42,11 @@ Make sure you have the System Administrator or System Customizer security role o
 |**Embedded content**||  
 |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)|  
 |Bing Maps|Default: Off. If **On**, Dynamics 365 for Customer Engagement apps (on-premises) users will need to enter a Bing Maps key. Customer Engagement apps users don’t need to enter a key. |  
-|Prevent social data in Dynamics|Default: Off. If you don’t want to receive social data in Dynamics 365, select **Off**. If you disable social engagement, your organization will not be able to receive social data in Dynamics 365. Users can continue to work with existing social data, however.|  
+|Prevent social data in Dynamics|Default: Off. If you don’t want to receive social data in Dynamics 365 for Customer Engagement apps, select **Off**. If you disable social engagement, your organization will not be able to receive social data in Dynamics 365 for Customer Engagement apps. Users can continue to work with existing social data, however.|  
 |**Communications**| |
 |Skype presence|Default: On. If **On**, instant messaging will display the current status for users, contacts, opportunities, or leads. This only applies to lists and sub-lists for entities with an updated user interface.|  
 |Enable country/region code prefixing for numbers|Default: On. If **On**, Customer Engagement apps will prefix the country/region code to numbers that users are trying to call.|  
-|Set the telephony provider|Default: On. Choose which provider to enable outbound calls from within Dynamics 365. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.|  
+|Set the telephony provider|Default: On. Choose which provider to enable outbound calls from within Dynamics 365 for Customer Engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.|  
 |Use Skype| Default: enabled. [More information: Set up Dynamics 365 (online) to use Skype or Skype for Business](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-skype-or-skype-for-business)|
 |Use Skype for Business| Default: not enabled. |
 |**Search**||  
