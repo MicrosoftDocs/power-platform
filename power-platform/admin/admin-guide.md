@@ -50,10 +50,10 @@ Check out the following blog: [Introducing the Power Platform admin center](http
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support.         |
 |Analytics     | Get a detailed view of key metrics for Power Platform apps.       |
 |Environments | A list of your environments. Select an environment to see details.|
-|Data integration|   |
-|Data Gateway|   |
+|Data integration| [Integrate data into Common Data Service for Apps ](https://docs.microsoft.com/powerapps/administrator/data-integrator)  |
+|Data Gateway| [Set up data transfer between on-premises data and cloud services ](onpremises-data-gateway-management.md) |
 |Data policies     | Create and manage [data loss prevention policies](https://docs.microsoft.com/powerapps/administrator/create-dlp-policy).       |
-|Admin portals    |Links to other admin centers.        |
+|Admin centers    |Links to other admin centers.        |
 
 ## Using the various admin centers
 
