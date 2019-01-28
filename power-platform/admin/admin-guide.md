@@ -2,7 +2,7 @@
 title: "Preview: Administer Power Platform | MicrosoftDocs"
 description: The Power Platform Admin center is the new site to manage Common Data Service for Apps and other apps.
 ms.custom: ""
-ms.date: 09/27/2018
+ms.date: 01/28/2019
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -48,10 +48,12 @@ Check out the following blog: [Introducing the Power Platform admin center](http
 |Element  |Description  |
 |---------|---------|
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support.         |
-|Environments | A list of your environments. Select an environment to see details.|
 |Analytics     | Get a detailed view of key metrics for Power Platform apps.       |
+|Environments | A list of your environments. Select an environment to see details.|
+|Data integration| [Integrate data into Common Data Service for Apps ](https://docs.microsoft.com/powerapps/administrator/data-integrator)  |
+|Data Gateway| [Set up data transfer between on-premises data and cloud services ](onpremises-data-gateway-management.md) |
 |Data policies     | Create and manage [data loss prevention policies](https://docs.microsoft.com/powerapps/administrator/create-dlp-policy).       |
-|Admin portals    |Links to other admin centers.        |
+|Admin centers    |Links to other admin centers.        |
 
 ## Using the various admin centers
 
