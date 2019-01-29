@@ -26,8 +26,7 @@ search.app:
 
 You can enable the features coming in the April 2019 update by opting-in to the updates in the Power platform Admin center. Opting-in will enable all the disruptive updates for Dynamics 365 for Customer Engagement, which will be enabled by default to everyone starting April 2019.
 
-> [!div class="mx-imgBorder"] 
-> ![Previewing April 2019 updates](media/preview-schedule.png "Previewing April 2019 updates")
+![Previewing April 2019 updates](media/preview-schedule.png "Previewing April 2019 updates")
 
 ## Which environment can be used for previewing April 2019 updates?
 
