@@ -54,35 +54,35 @@ Select **Activate now** to activate the April 2019 updates.
 
 The April 2019 update is activated for the Dynamics 365 platform and Dynamics 365 for Sales.
 
-See what all is included in the April 2019 updates for platform and Sales app.
+<!-- See what all is included in the April 2019 updates for platform and Sales app.-->
 
 For enabling the April 2019 updates for Marketing app, visit Dynamics 365 Admin center and upgrade the Marketing app as shown below
 
 Manas to add the image
 
-See what all is included in the April 2019 updates for Marketing
+<!-- See what all is included in the April 2019 updates for Marketing -->
+
+See the following section for other update information.
 
 ## What features and experiences are available in April 2019?  
 
 ### Updates in Dynamics 365 – CE Platform
-
-You can find more details over here: https://go.microsoft.com/fwlink/p/?linkid=2038571
+See [Announcing UI updates in October for sitemap and command bar ](https://blogs.msdn.microsoft.com/crm/2018/10/01/announcing-ui-updates-in-october-for-sitemap-and-command-bar%E2%80%AF/).
 
 ### Updates in Dynamics 365 for Sales app
-@Arul to add the details on Sitemap updates
+Check back for information.
 
 ### Updates in Dynamics 365 for Services(s) app
 There are no disruptive updates releasing with Service(s) for April 2019. 
 
 ### Updates in Dynamics 365 for Marketing app
-You can find more details over here: https://go.microsoft.com/fwlink/p/?linkid=2065942
+See [Activate and use preview features](https://go.microsoft.com/fwlink/p/?linkid=2065942).
 
 ## How will the April 2019 features be enabled for customers who did not opt-in to the preview?
-Starting on April 5, 2019, we will begin to use our gradual region-by-region deployment cadence to enable the April 2019 features across our global customer base. This update will be like the Minor Service Update experience we are delivering today and won’t require you to schedule downtime to perform the update. The updates will be applied over the entire month of April. If you want to enable the April 2019 features before the update reaches your region, you can “enable” the updates yourself by opting in to the preview between February 1, 2019, and the date your region will be scheduled to have the features turned on. In coming months, we will publish the specific schedule for when the April 2019 features will be enabled for each region.
+Starting on April 5, 2019, we will begin to use our gradual region-by-region deployment cadence to enable the April 2019 features across our global customer base. This update will be like the Minor Service Update experience we are delivering today and won’t require you to schedule downtime to perform the update. The updates will be applied over the entire month of April. If you want to enable the April 2019 features before the update reaches your region, you can enable the updates yourself by opting in to the preview between February 1, 2019, and the date your region will be scheduled to have the features turned on. In coming months, we will publish the specific schedule for when the April 2019 features will be enabled for each region.
 
 ## How do I prepare for the April 2019 update?
 The flow chart below shows the steps needed to enable the April 2019 release to your Production environment prior to it being enabled by default in April 2019. The table below the flow chart provides information about the steps.
-
 
 > [!div class="mx-imgBorder"] 
 > ![Steps needed to enable the April 2019 release](media/previewapril2019-flow-90e.png "Steps needed to enable the April 2019 release")
