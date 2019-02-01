@@ -1,8 +1,8 @@
 ---
-title: "Preview April 2019 updates | MicrosoftDocs"
-description: Preview April 2019 updates for the Dynamics 365 for Customer Engagement platform.
+title: "Opt in to April 2019 updates | MicrosoftDocs"
+description: Opt in to April 2019 updates for the Dynamics 365 for Customer Engagement platform.
 ms.custom: ""
-ms.date: 01/29/2019
+ms.date: 02/01/2019
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -19,13 +19,12 @@ search.audienceType:
   - admin
 search.app: 
   - Powerplatform
-robots: noindex,nofollow
 ---
-# Preview April 2019 updates
+# Opt in to April 2019 updates
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can enable the features coming in the April 2019 update by opting-in to the updates in the Power platform Admin center. Opting-in will enable all the potentially disruptive updates for Dynamics 365 for Customer Engagement, which will be enabled by default to everyone starting April 2019.
+You can enable the features coming in the April 2019 update by opting in to the updates in the Power platform Admin center. Opting in will enable all relevant updates for Dynamics 365 for Customer Engagement, which will be enabled by default to everyone starting April 2019.
 
 ![Previewing April 2019 updates](media/preview-schedule.png "Previewing April 2019 updates")
 
@@ -36,7 +35,10 @@ The environments (instances) that are eligible for enabling April 2019 release a
 > [!IMPORTANT]
 > We highly recommend that you create a copy of your Production environment as a Sandbox environment to try out the April 2019 updates. Once enabling the April 2019 update, it can’t be turned off. Hence, it’s necessary to first test out the updates in Sandbox environment, prior to enabling it in Production environment which could impact your users in the organization.
 >
-> Read the section [How do I prepare for the April 2019 Update?](#how-do-i-prepare-for-the-april-2019-update) to see the update steps as a flow chart.
+> Be sure to:
+> - Understand [How do I prepare for the April 2019 update?](#how-do-i-prepare-for-the-april-2019-update) to see the update steps as a flow chart.
+> - Learn [what features are updated](#what-features-and-experiences-are-available-in-april-2019-update) in the April 2019 update.
+> - Test the updates before rolling out to production.
 
 ## How do I enable the April 2019 updates
 
@@ -65,19 +67,19 @@ For enabling the April 2019 updates for Marketing app, visit the [Dynamics 365 A
 
 See the following section for other update information.
 
-## What features and experiences are available in April 2019?  
+## What features and experiences are available in April 2019 update?  
 
-### Updates in Dynamics 365 – CE Platform
-See [Announcing UI updates in October for sitemap and command bar ](https://blogs.msdn.microsoft.com/crm/2018/10/01/announcing-ui-updates-in-october-for-sitemap-and-command-bar%E2%80%AF/).
-
-### Updates in Dynamics 365 for Sales app
-Check back for information.
-
-### Updates in Dynamics 365 for Services(s) app
-There are no potentially disruptive updates releasing with Service(s) for April 2019. 
+### Updates in Dynamics 365 for Customer Engagement Platform
+See [Updates in sitemap and command bar](https://blogs.msdn.microsoft.com/crm/2018/10/01/announcing-ui-updates-in-october-for-sitemap-and-command-bar%E2%80%AF/).
 
 ### Updates in Dynamics 365 for Marketing app
-See [Activate and use preview features](https://go.microsoft.com/fwlink/p/?linkid=2065942).
+Updates for the Marketing app are available. See [Activate and use Marketing app preview features](https://go.microsoft.com/fwlink/p/?linkid=2065942).
+
+### Updates in Dynamics 365 for Sales app
+Updates will come later. Check back for information.
+
+<!-- ### Updates in Dynamics 365 for Services(s) app
+There are no relevant updates releasing with Service(s) for April 2019. -->
 
 ## How will the April 2019 features be enabled for customers who did not opt-in to the preview?
 Starting on April 5, 2019, we will begin to use our gradual region-by-region deployment cadence to enable the April 2019 features across our global customer base. This update will be like the Minor Service Update experience we are delivering today and won’t require you to schedule downtime to perform the update. The updates will be applied over the entire month of April. If you want to enable the April 2019 features before the update reaches your region, you can enable the updates yourself by opting in to the preview between February 1, 2019, and the date your region will be scheduled to have the features turned on. In coming months, we will publish the specific schedule for when the April 2019 features will be enabled for each region.
