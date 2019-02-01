@@ -36,7 +36,7 @@ The environments (instances) that are eligible for enabling April 2019 release a
 > We highly recommend that you create a copy of your Production environment as a Sandbox environment to try out the April 2019 updates. Once enabling the April 2019 update, it can’t be turned off. Hence, it’s necessary to first test out the updates in Sandbox environment, prior to enabling it in Production environment which could impact your users in the organization.
 >
 > Be sure to:
-> - Understand [How do I prepare for the April 2019 update?](#how-do-i-prepare-for-the-april-2019-update) to see the update steps as a flow chart.
+> - Understand [How do I prepare for the April 2019 update?](#how-do-i-prepare-for-the-april-2019-update)
 > - Learn [what features are updated](#what-features-and-experiences-are-available-in-april-2019-update) in the April 2019 update.
 > - Test the updates before rolling out to production.
 
