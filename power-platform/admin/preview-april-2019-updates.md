@@ -37,7 +37,7 @@ The environments (instances) that are eligible for enabling April 2019 release a
 >
 > Be sure to:
 > - Understand [How do I prepare for the April 2019 update?](#how-do-i-prepare-for-the-april-2019-update)
-> - Learn [what features are updated](#what-features-and-experiences-are-available-in-april-2019-update) in the April 2019 update.
+> - Learn [what features are updated](#what-features-and-experiences-are-available-in-april-2019-update-) in the April 2019 update.
 > - Test the updates before rolling out to production.
 
 ## How do I enable the April 2019 updates
