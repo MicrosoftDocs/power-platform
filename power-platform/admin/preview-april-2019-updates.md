@@ -37,7 +37,7 @@ The environments (instances) that are eligible for enabling April 2019 release a
 >
 > Be sure to:
 > - Understand [How do I prepare for the April 2019 update?](#how-do-i-prepare-for-the-april-2019-update)
-> - Learn [what features are updated](#what-features-and-experiences-are-available-in-april-2019-update-) in the April 2019 update.
+> - Learn [what features are updated](#what-features-and-experiences-are-available-in-the-april-2019-update-) in the April 2019 update.
 > - Test the updates before rolling out to production.
 
 ## How do I enable the April 2019 updates
@@ -67,13 +67,13 @@ For enabling the April 2019 updates for Marketing app, visit the [Dynamics 365 A
 
 See the following section for other update information.
 
-## What features and experiences are available in April 2019 update?  
+## What features and experiences are available in the April 2019 update?  
 
 ### Updates in Dynamics 365 for Customer Engagement Platform
-See [Updates in sitemap and command bar](https://blogs.msdn.microsoft.com/crm/2018/10/01/announcing-ui-updates-in-october-for-sitemap-and-command-bar%E2%80%AF/).
+Updates are available now. See [Updates in sitemap and command bar](https://blogs.msdn.microsoft.com/crm/2018/10/01/announcing-ui-updates-in-october-for-sitemap-and-command-bar%E2%80%AF/).
 
 ### Updates in Dynamics 365 for Marketing app
-Updates for the Marketing app are available. See [Activate and use Marketing app preview features](https://go.microsoft.com/fwlink/p/?linkid=2065942).
+Updates for the Marketing app are available now. See [Activate and use Marketing app preview features](https://go.microsoft.com/fwlink/p/?linkid=2065942).
 
 ### Updates in Dynamics 365 for Sales app
 Updates will come later. Check back for information.
