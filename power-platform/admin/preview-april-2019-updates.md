@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can enable the features coming in the April 2019 update by opting in to the updates in the Power platform Admin center. Opting in will enable all relevant updates for Dynamics 365 for Customer Engagement, which will be enabled by default to everyone starting April 2019.
+You can enable the features coming in the April 2019 update by opting in to the updates in the Power platform Admin center. Opting in will enable all changed user experience updates for Dynamics 365 for Customer Engagement, which will be enabled by default to everyone starting April 2019.
 
 ![Previewing April 2019 updates](media/preview-schedule.png "Previewing April 2019 updates")
 
@@ -39,6 +39,8 @@ The environments (instances) that are eligible for enabling April 2019 release a
 > - Understand [How do I prepare for the April 2019 update?](#how-do-i-prepare-for-the-april-2019-update)
 > - Learn [what features are updated](#what-features-and-experiences-are-available-in-the-april-2019-update-) in the April 2019 update.
 > - Test the updates before rolling out to production.
+>
+> By activating the April 2019 updates opt-in, you will get changed user experience updates only.
 
 ## How do I enable the April 2019 updates
 
@@ -69,13 +71,17 @@ See the following section for other update information.
 
 ## What features and experiences are available in the April 2019 update?  
 
-### Updates in Dynamics 365 for Customer Engagement Platform
+A list of all features and updates in the April 2019 release are available in the [release notes](http://aka.ms/businessappsreleasenotes).
+
+By activating the April 2019 updates opt-in, you will get changed user experience updates only. Below is the list of those features:
+
+### Changed user experience updates in Dynamics 365 for Customer Engagement Platform
 Updates are available now. See [Updates in sitemap and command bar](https://blogs.msdn.microsoft.com/crm/2018/10/01/announcing-ui-updates-in-october-for-sitemap-and-command-bar%E2%80%AF/).
 
-### Updates in Dynamics 365 for Marketing app
+### Changed user experience updates in Dynamics 365 for Marketing app
 Updates for the Marketing app are available now. See [Activate and use Marketing app preview features](https://go.microsoft.com/fwlink/p/?linkid=2065942).
 
-### Updates in Dynamics 365 for Sales app
+### Changed user experience updates in Dynamics 365 for Sales app
 Updates will come later. Check back for information.
 
 ## How will the April 2019 features be enabled for customers who did not opt-in to the preview?
