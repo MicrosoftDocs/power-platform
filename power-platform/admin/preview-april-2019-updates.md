@@ -59,7 +59,7 @@ Select **Activate now** to activate the April 2019 updates.
 
 The April 2019 update is activated for the Dynamics 365 platform and Dynamics 365 for Sales.
 
-<!-- See what all is included in the April 2019 updates for platform and Sales app.-->
+<!-- See what all is included in the April 2019 updates for platform and Sales app.--> 
 
 For enabling the April 2019 updates for Marketing app, visit the [Dynamics 365 Admin center](https://port.crm.dynamics.com/G/manage/index.aspx) and upgrade the Marketing app.
 
