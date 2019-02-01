@@ -1,6 +1,8 @@
 - name: "Preview: Administer Power Platform"
   href: admin-guide.md 
   items:
+  - name: Preview April 2019 updates
+    href: preview-april-2019-updates.md
   - name: Get Help + Support 
     href: get-help-support.md
   - name: View analytics
