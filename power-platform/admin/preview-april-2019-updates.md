@@ -78,9 +78,6 @@ Updates for the Marketing app are available now. See [Activate and use Marketing
 ### Updates in Dynamics 365 for Sales app
 Updates will come later. Check back for information.
 
-<!-- ### Updates in Dynamics 365 for Services(s) app
-There are no relevant updates releasing with Service(s) for April 2019. -->
-
 ## How will the April 2019 features be enabled for customers who did not opt-in to the preview?
 Starting on April 5, 2019, we will begin to use our gradual region-by-region deployment cadence to enable the April 2019 features across our global customer base. This update will be like the Minor Service Update experience we are delivering today and won’t require you to schedule downtime to perform the update. The updates will be applied over the entire month of April. If you want to enable the April 2019 features before the update reaches your region, you can enable the updates yourself by opting in to the preview between February 1, 2019, and the date your region will be scheduled to have the features turned on. In coming months, we will publish the specific schedule for when the April 2019 features will be enabled for each region.
 
