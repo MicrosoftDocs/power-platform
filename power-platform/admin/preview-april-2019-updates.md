@@ -55,7 +55,7 @@ On selecting, it will take you to the environment’s hub where you can select t
 Select **Activate now** to activate the April 2019 updates.
 
 > [!div class="mx-imgBorder"] 
-> ![Select Activate now](media/preview-activate.png "Select Activate now")
+> ![Select Activate now](media/preview-activate.png "Select Activate now") 
 
 The April 2019 update is activated for the Dynamics 365 platform and Dynamics 365 for Sales.
 
