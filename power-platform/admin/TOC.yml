@@ -16,7 +16,7 @@
     - name: Manage environments and settings
       items:
       - name: Opt in to April 2019 updates
-        href: preview-april-2019-updates
+        href: preview-april-2019-updates.md
       - name: Get Help + Support 
         href: get-help-support.md
       - name: View analytics
