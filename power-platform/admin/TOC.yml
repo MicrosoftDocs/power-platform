@@ -151,14 +151,14 @@
       - name: Configure environment security
         href: database-security.md
         items: 
-        name: Introduction to data groups
+      - name: Introduction to data groups
         href: introduction-to-data-groups.md
-        name: Create a DLP policy
+      - name: Data loss prevention policies
+        href: wp-data-loss-prevention.md
+      - name: Create a DLP policy
         href: create-dlp-policy.md
-        name: Manage DLP policies
+      - name: Manage DLP policies
         href: prevent-data-loss.md
-    - name: Data loss prevention policies
-      href: wp-data-loss-prevention.md
     - name: Management and monitoring
       href: wp-management-monitoring.md
       items: 
