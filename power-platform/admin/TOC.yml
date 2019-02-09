@@ -27,6 +27,21 @@
           href: analytics-flow.md
         - name: PowerApps analytics
           href: analytics-powerapps.md
+      - name: Administer environments
+        href: https://docs.microsoft.com/en-us/powerapps/administrator/environments-administration
+        items:
+        - name: Environments overview
+          href: https://docs.microsoft.com/en-us/powerapps/administrator/environments-overview
+        - name: Regions overview
+          href: https://docs.microsoft.com/en-us/powerapps/administrator/regions-overview
+        - name: Create an environment
+          href: https://docs.microsoft.com/en-us/powerapps/administrator/create-environment
+        - name: Create a database
+          href: https://docs.microsoft.com/en-us/powerapps/administrator/create-database
+        - name: PowerApps Preview Program
+          href: https://docs.microsoft.com/en-us/powerapps/administrator/preview-environments
+        - name: About Trial environments
+          href: https://docs.microsoft.com/en-us/powerapps/administrator/trial-environments     
       - name: Manage settings
         href: admin-settings.md
         items:
