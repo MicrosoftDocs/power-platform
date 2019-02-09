@@ -37,7 +37,7 @@ When a user in your organization signs up for PowerApps, that user is assigned a
 > [!NOTE]
 > Users who sign up for a trial license from within PowerApps don't appear in the Office 365 admin portal as PowerApps Plan 2 trial users (unless they have another license to Office 365, Dynamics 365, or PowerApps).
 
-See [Self-service sign up for PowerApps](../maker/signup-for-powerapps.md) for more details.
+See [Self-service sign up for PowerApps](/powerapps/maker/signup-for-powerapps) for more details.
 
 ### How can users in my organization gain access to PowerApps?
 Users within your organization can gain access to PowerApps in three different ways:

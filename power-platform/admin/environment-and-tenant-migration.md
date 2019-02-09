@@ -84,7 +84,7 @@ A  user must have a PowerApps Plan 2 or PowerApps Plan 2 trial license in order 
 ## Exporting CDS customizations and model-driven apps
 Exporting any entity or option set customizations or any model-driven apps that you have built in https://web.powerapps.com is supported by exporting the default environment solution as follows:
 > [!NOTE]
->  If you would like to learn more about solutions in PowerApps, please see [Introduction to solutions](../developer/common-data-service/introduction-solutions.md).
+>  If you would like to learn more about solutions in PowerApps, please see [Introduction to solutions](/powerapps/developer/common-data-service/introduction-solutions).
 >
 >
 

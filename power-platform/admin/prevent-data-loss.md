@@ -52,4 +52,4 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
 
 ## Next steps
 * [Learn more about environments](environments-administration.md)
-* [Learn more about Microsoft PowerApps](../maker/canvas-apps/getting-started.md)
+* [Learn more about Microsoft PowerApps](/powerapps/maker/canvas-apps/getting-started)

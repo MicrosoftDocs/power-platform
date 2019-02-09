@@ -76,13 +76,13 @@ PowerApps is included with Office 365 Enterprise F1, with which users can run ap
 |Data storage and management in the Common Data Service for Apps|-|
 
 ### PowerApps standalone Plan 1 and Plan 2
-Standalone PowerApps plans provide users the ability to create and run apps across data sources that extend beyond Office 365, such as Salesforce, on-premises and custom data sources. These plans also include access to the Common Data Service for Apps to store and manage data. Learn more about the Common Data Service for Apps [here](../maker/common-data-service/data-platform-intro.md).  
+Standalone PowerApps plans provide users the ability to create and run apps across data sources that extend beyond Office 365, such as Salesforce, on-premises and custom data sources. These plans also include access to the Common Data Service for Apps to store and manage data. Learn more about the Common Data Service for Apps [here](/powerapps/maker/common-data-service/data-platform-intro).  
 
 - Microsoft PowerApps Plan 1 subscriptions are for users who need to run canvas apps and access on-premises data, data in custom applications and cloud services using premium connectors.
 - Microsoft PowerApps Plan 2 subscriptions are for users and administrators who need access to more capabilities. These users can run model-driven apps that can include custom code plug-ins and real-time workflows. These users have access to important management capabilities like viewing usage and setting policy. 
 
 ### PowerApps Plan 2 free trial
-Users can try PowerApps Plan 2 for free for 30 days. During the trial, users have access to all of the features in PowerApps Plan 2. For information about how to sign up, see [Self-service signup for PowerApps](../maker/signup-for-powerapps.md). 
+Users can try PowerApps Plan 2 for free for 30 days. During the trial, users have access to all of the features in PowerApps Plan 2. For information about how to sign up, see [Self-service signup for PowerApps](/powerapps/maker/signup-for-powerapps). 
 
 When the trial expires, users have these options:
 

@@ -88,7 +88,7 @@ These are not supported yet.
 
 ### See also
 [PowerApps in your organization Q&A](signup-question-and-answer.md)  
-[Self-service sign up for PowerApps](../maker/signup-for-powerapps.md)  
+[Self-service sign up for PowerApps](/powerapps/maker/signup-for-powerapps)  
 
 <!--Reference links in article-->
 [1]: http://go.microsoft.com/fwlink/p/?LinkId=715583

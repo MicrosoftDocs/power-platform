@@ -160,7 +160,7 @@ Get-AdminApp -Owner $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.j
 ~~~~
 
 ## Step 4: Export the user’s permissions to canvas apps
-Whenever an app is shared with a user, PowerApps stores a record called a *role assignment* that describes the user’s permissions (CanEdit or CanUser) to the application. For more information, see [Share an app](../maker/canvas-apps/share-app.md#share-an-app).
+Whenever an app is shared with a user, PowerApps stores a record called a *role assignment* that describes the user’s permissions (CanEdit or CanUser) to the application. For more information, see [Share an app](/powerapps/maker/canvas-apps/share-app.md#share-an-app).
 
 ### PowerShell cmdlets for app creators
 Users can export the app role assignments for all apps that they have access to by using the **Get-RoleAssignment** function in the [PowerApps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
