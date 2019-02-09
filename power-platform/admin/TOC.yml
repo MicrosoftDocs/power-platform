@@ -19,7 +19,7 @@
       - name: PowerApps Platform overview
         href: wp-powerapps-platform-overview.md
       - name: What's the role of a PowerApps administrator? (ext)
-        href: https://docs.microsoft.com/powerapps/administrator/overview-role-powerapps-admin
+        href: overview-role-powerapps-admin.md
     - name: Manage environments
       items:
       - name: Opt in to April 2019 updates
@@ -35,20 +35,20 @@
         - name: PowerApps analytics
           href: analytics-powerapps.md
       - name: Administer environments
-        href: https://docs.microsoft.com/en-us/powerapps/administrator/environments-administration
+        href: environments-administration.md
         items:
         - name: Environments overview
-          href: https://docs.microsoft.com/en-us/powerapps/administrator/environments-overview
+          href: environments-overview.md
         - name: Regions overview
-          href: https://docs.microsoft.com/en-us/powerapps/administrator/regions-overview
+          href: regions-overview.md
         - name: Create an environment
-          href: https://docs.microsoft.com/en-us/powerapps/administrator/create-environment
+          href: create-environment.md
         - name: Create a database
-          href: https://docs.microsoft.com/en-us/powerapps/administrator/create-database
+          href: create-database.md
         - name: PowerApps Preview Program
-          href: https://docs.microsoft.com/en-us/powerapps/administrator/preview-environments
+          href: preview-environments.md
         - name: About Trial environments
-          href: https://docs.microsoft.com/en-us/powerapps/administrator/trial-environments     
+          href: trial-environments.md     
       - name: Manage settings
         href: admin-settings.md
         items:
@@ -103,7 +103,7 @@
         - name: Data management settings
           items:
           - name: Announcements
-            href: https://technet.microsoft.com/library/mt826650.aspx
+            href: https://docs.microsoft.com/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826650(v=crm.8)
           - name: Auto numbering
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles
           - name: Automatic record creation policies
@@ -161,46 +161,46 @@
       - name: Automation of tasks with PowerShell (wp)
         href: wp-task-automation-powershell.md
       - name: PowerShell support for PowerApps (preview) (ext)
-        href: https://docs.microsoft.com/powerapps/administrator/powerapps-powershell        
+        href: powerapps-powershell.md        
       - name: Automation of tasks with Microsoft Flow (wp)
         href: wp-task-automation-flow.md
       - name: View apps in your environments (ext)
-        href: https://docs.microsoft.com/powerapps/administrator/admin-view-apps
+        href: admin-view-apps.md
       - name: Manage apps in your org (ext)
-        href: https://docs.microsoft.com/powerapps/administrator/admin-manage-apps
+        href: admin-manage-apps.md
       - name: Move an app between tenants or environments (ext)
-        href: https://docs.microsoft.com/powerapps/administrator/environment-and-tenant-migration
+        href: environment-and-tenant-migration.md
       - name: Manage environments
-        href: https://docs.microsoft.com/powerapps/administrator/environments-administration
+        href: environments-administration.md
       - name: View active users in your tenant
-        href: https://docs.microsoft.com/powerapps/administrator/admin-view-user-licenses
+        href: admin-view-user-licenses.md
     - name: Deployment scenarios
       href: wp-deployment-scenarios.md
     - name: Application Lifecycle Management
       href: wp-application-lifecycle-management.md
       items:
       - name: Activity logging for PowerApps
-        href: https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps
+        href: logging-powerapps.md
     - name: Data integration
       items:
       - name: Integrate data into CDS for Apps (ext)
-        href: https://docs.microsoft.com/powerapps/administrator/data-integrator
+        href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting (ext)
-        href: https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management
+        href: data-integrator-error-management.md
       - name: Responding to DSR requests
         items:
         - name: System-generated logs (ext)
-          href: https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs
+          href: powerapps-gdpr-dsr-guide-systemlogs.md
         - name: Data integrations for CDS for Apps (ext)
-          href: https://docs.microsoft.com/powerapps/administrator/data-integration-gdpr-dsr-guide
+          href: data-integration-gdpr-dsr-guide.md
         - name: PowerApps customer data (ext)
-          href: https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide
+          href: powerapps-gdpr-dsr-guide.md
           items:
           - name: Export data (ext)
-            href: https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-export-dsr
+            href: powerapps-gdpr-export-dsr.md
           - name: Delete data (ext)
-            href: https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-delete-dsr
+            href: powerapps-gdpr-delete-dsr.md
         - name: CDS for Apps customer data (ext)
-          href: https://docs.microsoft.com/powerapps/administrator/common-data-service-gdpr-dsr-guide
+          href: common-data-service-gdpr-dsr-guide.md
     - name: Compliance and data privacy
       href: wp-compliance-data-privacy.md
