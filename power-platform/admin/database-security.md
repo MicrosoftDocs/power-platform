@@ -67,7 +67,7 @@ The PowerApps environment includes predefined security roles that reflect common
 
 *Privilege is global scope unless specified otherwise.
 
-- The Environment Maker role can not only create resources within an environment, but can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users. For more information, see [Share an app in PowerApps](../powerapps/maker/canvas-apps/share-app.md). 
+- The Environment Maker role can not only create resources within an environment, but can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users. For more information, see [Share an app in PowerApps](/powerapps/maker/canvas-apps/share-app). 
 
 - For the users making apps which are connecting to the database and needs to create or update entities and security roles, should be assigned System Customizer role as well, along with the Environment Maker as Environment Maker role, has no privileges on the database.
 
