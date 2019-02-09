@@ -13,7 +13,6 @@
   - name: "Administer PowerApps"
     href: admin-guide.md 
     items:
-
     - name: Getting started
       items:
       - name: PowerApps Platform overview
@@ -121,8 +120,6 @@
           - name: Templates
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/download-template-data-import
 
-
-
     - name: Platform architecture
       items: 
       - name: About environments (wp)
@@ -151,6 +148,15 @@
         href: wp-controlling-access.md
       - name: Common Data Service (wp)
         href: wp-security-cds.md
+      - name: Configure environment security
+        href: database-security
+        items: 
+        name: Introduction to data groups
+        href: introduction-to-data-groups
+        name: Create a DLP policy
+        href: create-dlp-policy
+        name: Manage DLP policies
+        href: prevent-data-loss
     - name: Data loss prevention policies
       href: wp-data-loss-prevention.md
     - name: Management and monitoring
