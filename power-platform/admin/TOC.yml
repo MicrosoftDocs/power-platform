@@ -151,7 +151,7 @@
       - name: Configure environment security
         href: database-security.md
         items: 
-        - name: Data loss prevention policies
+        - name: Data loss prevention policies (wp)
           href: wp-data-loss-prevention.md
         - name: Create a DLP policy
           href: create-dlp-policy.md
