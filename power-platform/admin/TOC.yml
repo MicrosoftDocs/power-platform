@@ -182,16 +182,14 @@
         href: admin-manage-apps.md
       - name: Move an app between tenants or environments (ext)
         href: environment-and-tenant-migration.md
-      - name: Manage environments
-        href: environments-administration.md
       - name: View active users in your tenant
         href: admin-view-user-licenses.md
-    - name: Deployment scenarios
+    - name: Deployment scenarios (wp)
       href: wp-deployment-scenarios.md
-    - name: Application Lifecycle Management
+    - name: Application Lifecycle Management (wp)
       href: wp-application-lifecycle-management.md
       items:
-      - name: Activity logging for PowerApps
+      - name: Activity logging for PowerApps (wp)
         href: logging-powerapps.md
     - name: Data integration
       items:
@@ -214,5 +212,5 @@
             href: powerapps-gdpr-delete-dsr.md
         - name: CDS for Apps customer data (ext)
           href: common-data-service-gdpr-dsr-guide.md
-    - name: Compliance and data privacy
+    - name: Compliance and data privacy (wp)
       href: wp-compliance-data-privacy.md
