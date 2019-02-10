@@ -136,7 +136,7 @@
         href: wp-onpremises-gateway.md
       - name: Solution Packages (wp)
         href: wp-solution-packages.md
-    - name: Licensing and license management
+    - name: Licensing and license management (wp)
       href: wp-license-management.md
       items:
       - name: Licensing overview
