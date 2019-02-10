@@ -42,6 +42,8 @@ From the PowerApps Admin Center (admin.powerapps.com) you can see the current po
 
 When you create a new DLP policy you first decide on the scope. If you are only an environment administrator, you will see a selection to choose one of your environments to associate with the DLP policy. If you are a tenant administrator you will have the ability to apply to All Environments, Selected Environments or All Environments EXCEPT.
 
+For the process to create a DLP policy, see [Create a data loss prevention (DLP) policy](create-dlp-policy.md).
+
 > [!div class="mx-imgBorder"] 
 > ![](media/new-dlp-policy.png "New DLP policy")
 
