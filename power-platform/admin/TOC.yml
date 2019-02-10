@@ -144,7 +144,7 @@
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Purchase PowerApps
-        href: singup-for-powerapps-admin.md
+        href: signup-for-powerapps-admin.md
       - name:	FAQs and more information (wp)
         href: wp-licensing-faq.md
     - name: Security
