@@ -41,4 +41,4 @@ Select **Edit** to review and edit all your environment details.
 ![More environment details](media/environment-details-more.png "More environment details")
 
 ### See also
-[Environments Overview](https://docs.microsoft.com/powerapps/administrator/environments-overview)
+[Environments Overview](environments-overview)

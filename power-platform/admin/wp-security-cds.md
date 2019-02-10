@@ -87,7 +87,7 @@ Security roles and Field Security Profiles can be packaged up and moved from one
 
 Once roles, teams and business units are created in an environment it is time to assign the users their security configurations. First, when you create a user you will associate the user with a business unit. By default, this is the root business unit in the organization. They are also added to the default team of that business unit.
 
-In addition, you would assign any security roles that user needs. You would also add them as members of any teams. Remember teams can also have security roles, so the effective rights of the user is the combination of directly assigned security roles combined with those of any teams they are members of. Security is always additive offering the least restrictive permission of any of their entitlements. The following is a good walkthrough of configuring environment security https://docs.microsoft.com/en-us/powerapps/administrator/database-security
+In addition, you would assign any security roles that user needs. You would also add them as members of any teams. Remember teams can also have security roles, so the effective rights of the user is the combination of directly assigned security roles combined with those of any teams they are members of. Security is always additive offering the least restrictive permission of any of their entitlements. The following is a good walkthrough of [configuring environment security](database-security.md).
 
 If you have used Field Level security, you would need to associate the user or a team of the user to one of the Field Security Profiles you created.
 

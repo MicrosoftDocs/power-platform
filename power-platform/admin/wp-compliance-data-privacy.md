@@ -71,11 +71,11 @@ The following links point to detailed information to help you respond to DSR req
 
 |Platform Feature Area  |Link to detailed response steps  |
 |---------|---------|
-|PowerApps     |https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-export-dsr         |
-|CDS for Apps     | https://docs.microsoft.com/en-us/powerapps/administrator/common-data-service-gdpr-dsr-guide        |
-|Microsoft Flow     | https://docs.microsoft.com/en-us/flow/gdpr-dsr-summary        |
-|Microsoft Accounts (MSAs)     | https://docs.microsoft.com/en-us/flow/gdpr-dsr-summary-msa        |
-|Dynamics 365     |https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-dynamics365         |
+|PowerApps  |  [Responding to Data Subject Rights (DSR) requests to export PowerApps customer data](powerapps-gdpr-export-dsr.md)      |
+|CDS for Apps     |  [Responding to Data Subject Rights (DSR) requests for Common Data Service for Apps customer data](common-data-service-gdpr-dsr-guide.md)     |
+|Microsoft Flow     | https://docs.microsoft.com/flow/gdpr-dsr-summary        |
+|Microsoft Accounts (MSAs)     | https://docs.microsoft.com/flow/gdpr-dsr-summary-msa        |
+|Dynamics 365     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
 
 ## Office 365 Security and Compliance Center
 

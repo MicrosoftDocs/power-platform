@@ -25,7 +25,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-We have found some common questions on licensing and plan options. We’ve included several here with their answers. However, if you find you need more details, you can find that on PowerApps plans here https://powerapps.microsoft.com/en-us/pricing/ and Microsoft Flow plans here https://flow.microsoft.com/en-us/pricing/. For additional information on the mechanics of managing users, please refer to: https://docs.microsoft.com/en-us/powerapps/administrator/signup-question-and-answer.
+We have found some common questions on licensing and plan options. We’ve included several here with their answers. However, if you find you need more details, you can find that on PowerApps plans here https://powerapps.microsoft.com/en-us/pricing/ and Microsoft Flow plans here https://flow.microsoft.com/en-us/pricing/. For additional information on the mechanics of managing users, please refer to: [Manage PowerApps licenses in your organization](signup-question-and-answer.md).
 
 ## PowerApps Pricing FAQ
 
@@ -33,7 +33,7 @@ We have found some common questions on licensing and plan options. We’ve inclu
 See the PowerApps Licensing overview page for the list of Office 365 plans that include PowerApps capabilities.
 
 ### Which Microsoft Dynamics 365 apps and plans include PowerApps? 
-See the [PowerApps Licensing overview page](https://docs.microsoft.com/en-us/powerapps/administrator/pricing-billing-skus#licenses) for the list of Dynamics 365 apps and plans that include PowerApps capabilities.
+See the [Licenses](pricing-billing-skus.md#licenses) for the list of Dynamics 365 apps and plans that include PowerApps capabilities.
 
 ### Can I connect to Microsoft Dynamics for Finance and Operations? 
 Yes, you can use the Dynamics 365 for Finance and Operations connector to build canvas apps using this data.
