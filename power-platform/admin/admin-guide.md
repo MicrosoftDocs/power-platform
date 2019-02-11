@@ -53,6 +53,7 @@ Check out the following blog: [Introducing the Power Platform admin center](http
 |Data integration| [Integrate data into Common Data Service for Apps ](data-integrator.md)  |
 |Data Gateway| [Set up data transfer between on-premises data and cloud services ](onpremises-data-gateway-management.md) |
 |Data policies     | Create and manage [data loss prevention policies](create-dlp-policy.md).       |
+
 |Admin centers    |Links to other admin centers.        |
 
 ## Using the various admin centers
