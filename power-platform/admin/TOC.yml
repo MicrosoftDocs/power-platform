@@ -17,7 +17,7 @@
       items:
       - name: PowerApps Platform overview
         href: wp-powerapps-platform-overview.md
-      - name: What's the role of a PowerApps administrator? (ext)
+      - name: What's the role of a PowerApps administrator? 
         href: overview-role-powerapps-admin.md
       - name: PowerApps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
@@ -124,21 +124,21 @@
 
     - name: Platform architecture
       items: 
-      - name: About environments (wp)
+      - name: About environments 
         href: wp-environments.md
-      - name: Common Data Service for Apps (wp)
+      - name: Common Data Service for Apps 
         href: wp-cds-for-apps.md
-      - name: Types of PowerApps (wp)
+      - name: Types of PowerApps 
         href: wp-types-powerapps.md
-      - name: Microsoft Flow (wp)
+      - name: Microsoft Flow 
         href: wp-about-flows.md
-      - name: Connectors (wp)
+      - name: Connectors 
         href: wp-connectors.md
-      - name: On-premises Gateways (wp)
+      - name: On-premises Gateways 
         href: wp-onpremises-gateway.md
-      - name: Solution Packages (wp)
+      - name: Solution Packages 
         href: wp-solution-packages.md
-    - name: Licensing and license management (wp)
+    - name: Licensing and license management 
       href: wp-license-management.md
       items:
       - name: Licensing overview
@@ -147,19 +147,19 @@
         href: signup-question-and-answer.md
       - name: Purchase PowerApps
         href: signup-for-powerapps-admin.md
-      - name:	FAQs and more information (wp)
+      - name:	FAQs and more information 
         href: wp-licensing-faq.md
     - name: Security
       href: wp-security.md
       items:
-      - name: Controlling access to PowerApps (wp)
+      - name: Controlling access to PowerApps 
         href: wp-controlling-access.md
-      - name: Common Data Service (wp)
+      - name: Common Data Service 
         href: wp-security-cds.md
       - name: Configure environment security
         href: database-security.md
         items: 
-        - name: Data loss prevention policies (wp)
+        - name: Data loss prevention policies 
           href: wp-data-loss-prevention.md
         - name: Create a DLP policy
           href: create-dlp-policy.md
@@ -170,49 +170,49 @@
     - name: Management and monitoring
       href: wp-management-monitoring.md
       items: 
-      - name: Working with the Admin Portals (wp)
+      - name: Working with the Admin Portals 
         href: wp-work-with-admin-portals.md
-      - name: Automation of tasks with PowerShell (wp)
+      - name: Automation of tasks with PowerShell 
         href: wp-task-automation-powershell.md
-      - name: PowerShell support for PowerApps (preview) (ext)
+      - name: PowerShell support for PowerApps (preview) 
         href: powerapps-powershell.md        
-      - name: Automation of tasks with Microsoft Flow (wp)
+      - name: Automation of tasks with Microsoft Flow 
         href: wp-task-automation-flow.md
-      - name: View apps in your environments (ext)
+      - name: View apps in your environments 
         href: admin-view-apps.md
-      - name: Manage apps in your org (ext)
+      - name: Manage apps in your org 
         href: admin-manage-apps.md
-      - name: Move an app between tenants or environments (ext)
+      - name: Move an app between tenants or environments 
         href: environment-and-tenant-migration.md
       - name: View active users in your tenant
         href: admin-view-user-licenses.md
-    - name: Deployment scenarios (wp)
+    - name: Deployment scenarios 
       href: wp-deployment-scenarios.md
-    - name: Application Lifecycle Management (wp)
+    - name: Application Lifecycle Management 
       href: wp-application-lifecycle-management.md
       items:
-      - name: Activity logging for PowerApps (wp)
+      - name: Activity logging for PowerApps 
         href: logging-powerapps.md
     - name: Data integration
       items:
-      - name: Integrate data into CDS for Apps (ext)
+      - name: Integrate data into CDS for Apps 
         href: data-integrator.md
-      - name: Data Integrator Error management and troubleshooting (ext)
+      - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
       - name: Responding to DSR requests
         items:
-        - name: System-generated logs (ext)
+        - name: System-generated logs 
           href: powerapps-gdpr-dsr-guide-systemlogs.md
-        - name: Data integrations for CDS for Apps (ext)
+        - name: Data integrations for CDS for Apps 
           href: data-integration-gdpr-dsr-guide.md
-        - name: PowerApps customer data (ext)
+        - name: PowerApps customer data 
           href: powerapps-gdpr-dsr-guide.md
           items:
-          - name: Export data (ext)
+          - name: Export data 
             href: powerapps-gdpr-export-dsr.md
-          - name: Delete data (ext)
+          - name: Delete data 
             href: powerapps-gdpr-delete-dsr.md
-        - name: CDS for Apps customer data (ext)
+        - name: CDS for Apps customer data 
           href: common-data-service-gdpr-dsr-guide.md
-    - name: Compliance and data privacy (wp)
+    - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
