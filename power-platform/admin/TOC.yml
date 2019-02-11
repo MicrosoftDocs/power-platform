@@ -19,6 +19,8 @@
         href: wp-powerapps-platform-overview.md
       - name: What's the role of a PowerApps administrator? (ext)
         href: overview-role-powerapps-admin.md
+      - name: PowerApps enterprise deployment whitepaper
+        href: admin-powerapps-enterprise-deployment.md
     - name: Manage environments
       items:
       - name: Opt in to April 2019 updates
