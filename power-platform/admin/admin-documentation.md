@@ -1,5 +1,5 @@
 ---
-title: "Administrator Documentation | MicrosoftDocs"
+title: "Administer Power Platform | MicrosoftDocs"
 description: Administrator documentation.
 ms.custom: ""
 ms.date: 09/27/2018
@@ -21,6 +21,8 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Administrator Documentation
+# Administer Power Platform 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+Implementers and administrators for Power Platform will find the resources and topics provided in this guide to help you manage and configure Power Platform applications and services.
