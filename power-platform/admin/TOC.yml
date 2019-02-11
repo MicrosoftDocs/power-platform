@@ -31,10 +31,10 @@
         items:
         - name: Common Data Service for Apps analytics 
           href: analytics-common-data-service.md
-        - name: Microsoft Flow analytics
-          href: analytics-flow.md
-        - name: PowerApps analytics
-          href: analytics-powerapps.md
+        # - name: Microsoft Flow analytics
+        #   href: analytics-flow.md
+        # - name: PowerApps analytics
+        #   href: analytics-powerapps.md
       - name: Administer environments
         href: environments-administration.md
         items:
