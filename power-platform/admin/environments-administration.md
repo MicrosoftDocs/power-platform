@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/15/2018
+ms.date: 02/18/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -155,11 +155,8 @@ To assign a user or a security group to an environment role, an Environment Admi
 
     d. Select **OK** to update the assignments to the environment role.
 
-
 > [!NOTE]
 > Users or groups assigned to these environment roles are not automatically given access to the environment’s database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).  
->
->
 
 ### Database security
 The ability to create and modify a database schema and to connect to the data stored within a database that is provisioned in your environment is controlled by the database's user roles and permission sets. You can manage the user roles and permission sets for your environment's database from the **User roles** and **Permission sets** section of the **Security** tab. For more information, see [Configure database security](database-security.md).
@@ -188,14 +185,6 @@ If you want, you can delete an existing environment of that specific type and cr
 2. You do not have a quota to create that specific type of the environment. Check what type of environment you can create [here](environments-overview.md#creating-an-environment).
 
 If you are getting any other error message or have more questions, please connect with us [here][5].
-
-### While trying to create a database in an environment, I am getting an error. How should I resolve it?
-In following scenarios, you can get an error while trying to create a database:
-
-**Default environment**: Creating a database is currently not supported in a default environment of the tenant. 
-  
-We are working on enabling all of the above scenarios.
-If you are getting any other error message or have more questions, please connect with us [here][5]
 
 ### When will my Trial environment expire?   
 Trial environment expires after 30 days of its creation. If you don't want your environment to expire, there will be ways to convert it into a Production environment. This functionality, will be coming soon and we will not expire Trial environments till then.
