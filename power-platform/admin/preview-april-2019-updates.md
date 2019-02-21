@@ -61,7 +61,7 @@ Select **Activate now** to activate the April 2019 updates.
 
 The April 2019 update is activated for the Dynamics 365 platform and Dynamics 365 for Sales.
 
-You can verify activation by going to **Settings** (![Settings button](media/settings-button-nav-bar.png))> **About** where you'll a screen like the following:
+You can verify activation by going to **Settings** (![Settings button](media/settings-button-nav-bar.png))> **About** where you'll see a screen like the following:
 
 ![Opt-in status](media/preview-activate-status.png "Preview activation status")
 
