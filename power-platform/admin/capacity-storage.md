@@ -24,4 +24,18 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Text goes here.
+We're introducing a new business model for Common Data Service for Apps storage.
+
+To cover:
+
+1. Review of current storage model
+2. Overview of new storage model
+   - Enterprise data architectures are evolving with rapid growth of newer formats (unstructured, streaming, file etc.)​
+   - Dynamics 365 platforms will provide flexible data management optimized for enterprise application types and corresponding business value​
+3. Data in Org DB will be shown as split into three types of storage:
+   - Database
+   - Logs
+   - Files
+4. Timeline
+5. Important considerations
+
