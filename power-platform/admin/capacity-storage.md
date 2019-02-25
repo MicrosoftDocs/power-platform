@@ -36,6 +36,7 @@ To cover:
    - Database
    - Logs
    - Files
-4. Timeline
-5. Important considerations
+4. Updated storage reports
+5. Timeline
+6. Important considerations
 
