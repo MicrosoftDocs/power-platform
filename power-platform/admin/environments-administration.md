@@ -1,6 +1,6 @@
 ---
-title: Administer environments | Microsoft Docs
-description: Learn how to administer environments in PowerApps, including creation, renaming, deletion, and security
+title: Manage environments | Microsoft Docs
+description: Learn how to mamange environments in PowerApps, including creation, renaming, deletion, and security
 author: manasmams
 manager: kvivek
 ms.service: powerapps
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
 ---
 
-# Administer environments in PowerApps
+# Manage environments in PowerApps
 In the [PowerApps admin center][1], manage environments that you've created and those for which you have been added to the Environment Admin or System Administrator role. From the admin center, you can perform these administrative actions:
 
 * Create environments.
