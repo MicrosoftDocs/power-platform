@@ -21,7 +21,7 @@
         href: overview-role-powerapps-admin.md
       - name: PowerApps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
-    - name: Manage environments
+    - name: Environments
       items:
       - name: Opt in to April 2019 updates
         href: preview-april-2019-updates.md
@@ -35,11 +35,13 @@
         #   href: analytics-flow.md
         # - name: PowerApps analytics
         #   href: analytics-powerapps.md
-      - name: Administer environments
+      - name: Manage environments
         href: environments-administration.md
         items:
         - name: Environments overview
           href: environments-overview.md
+#        - name: Capacity
+#          href: capacity-storage.md
         - name: Regions overview
           href: regions-overview.md
         - name: Create an environment
