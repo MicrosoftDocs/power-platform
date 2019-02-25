@@ -1,6 +1,6 @@
 ---
 title: "Capacity and storage  | MicrosoftDocs"
-description: Opt in to April 2019 updates for the Dynamics 365 for Customer Engagement platform.
+description: Introducing a new storage model for Common Data Service for Apps.
 ms.custom: ""
 ms.date: 03/15/2019
 ms.reviewer: ""
@@ -32,11 +32,10 @@ To cover:
 2. Overview of new storage model
    - Enterprise data architectures are evolving with rapid growth of newer formats (unstructured, streaming, file etc.)​
    - Dynamics 365 platforms will provide flexible data management optimized for enterprise application types and corresponding business value​
-3. Data in Org DB will be shown as split into three types of storage:
-   - Database
-   - Logs
-   - Files
+3. View and manage storage
+   - Three ways to manage storage
 4. Updated storage reports
-5. Timeline
-6. Important considerations
+5. A walkthrough of the UI
+6. Timeline
+7. Important considerations
 
