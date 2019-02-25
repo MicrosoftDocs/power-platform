@@ -21,12 +21,14 @@
         href: overview-role-powerapps-admin.md
       - name: PowerApps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
-    - name: Manage environments
+    - name: Environments
       items:
       - name: Opt in to April 2019 updates
         href: preview-april-2019-updates.md
       - name: Get Help + Support 
         href: get-help-support.md
+      - name: Capacity
+        href: capacity-storage.md
       - name: View analytics
         items:
         - name: Common Data Service for Apps analytics 
