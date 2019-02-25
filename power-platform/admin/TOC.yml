@@ -27,8 +27,6 @@
         href: preview-april-2019-updates.md
       - name: Get Help + Support 
         href: get-help-support.md
-      - name: Capacity
-        href: capacity-storage.md
       - name: View analytics
         items:
         - name: Common Data Service for Apps analytics 
@@ -37,11 +35,13 @@
         #   href: analytics-flow.md
         # - name: PowerApps analytics
         #   href: analytics-powerapps.md
-      - name: Administer environments
+      - name: Manage environments
         href: environments-administration.md
         items:
         - name: Environments overview
           href: environments-overview.md
+        - name: Capacity
+          href: capacity-storage.md
         - name: Regions overview
           href: regions-overview.md
         - name: Create an environment
