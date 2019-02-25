@@ -2,7 +2,7 @@
 title: "Opt in to April 2019 updates | MicrosoftDocs"
 description: Opt in to April 2019 updates for the Dynamics 365 for Customer Engagement platform.
 ms.custom: ""
-ms.date: 02/01/2019
+ms.date: 02/25/2019
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -61,6 +61,15 @@ Select **Activate now** to activate the April 2019 updates.
 
 The April 2019 update is activated for the Dynamics 365 platform and Dynamics 365 for Sales.
 
+You can verify activation by going to **Settings** (![Settings button](media/settings-button-nav-bar.png))> **About** where you'll see a screen like the following:
+
+![Opt-in status](media/preview-activate-status.png "Preview activation status")
+
+> [!NOTE]
+> You need to select **About** from a Customer Engagement app page that's displayed in the [Unified Interface](https://docs.microsoft.com/dynamics365/customer-engagement/admin/about-unified-interface) such as Sales Hub or Customer Service Hub pages.
+>
+> The server version will not be updated to the next version after activation.
+
 <!-- See what all is included in the April 2019 updates for platform and Sales app.--> 
 
 For enabling the April 2019 updates for Marketing app, visit the [Dynamics 365 Admin center](https://port.crm.dynamics.com/G/manage/index.aspx) and upgrade the Marketing app.
@@ -71,9 +80,9 @@ See the following section for other update information.
 
 ## What features and experiences are available in the April 2019 update?  
 
-A list of all features and updates in the April 2019 release are available in the [release notes](http://aka.ms/businessappsreleasenotes).
+A list of all features and updates in the April 2019 release are available in the [Release Notes](http://aka.ms/businessappsreleasenotes).
 
-By activating the April 2019 updates opt-in, you will get changed user experience updates only. Below is the list of those features:
+By activating the April 2019 updates opt-in, you will get changed user experience updates only. Below is the list of those features. Other features will be made available from Feb 2019 to Oct 2019 as mentioned in the [Release Notes](http://aka.ms/businessappsreleasenotes).
 
 ### Changed user experience updates in Dynamics 365 for Customer Engagement Platform
 Updates are available now. See [Updates in sitemap and command bar](https://blogs.msdn.microsoft.com/crm/2018/10/01/announcing-ui-updates-in-october-for-sitemap-and-command-bar%E2%80%AF/).
@@ -82,10 +91,29 @@ Updates are available now. See [Updates in sitemap and command bar](https://blog
 Updates for the Marketing app are available now. See [Activate and use Marketing app preview features](https://go.microsoft.com/fwlink/p/?linkid=2065942).
 
 ### Changed user experience updates in Dynamics 365 for Sales app
+
 Updates will come later. Check back for information.
 
-## How will the April 2019 features be enabled for customers who did not opt-in to the preview?
+## FAQ
+
+### How will the April 2019 features be enabled for customers who did not opt-in to the preview?
 Starting on April 5, 2019, we will begin to use our gradual region-by-region deployment cadence to enable the April 2019 features across our global customer base. This update will be like the Minor Service Update experience we are delivering today and won’t require you to schedule downtime to perform the update. The updates will be applied over the entire month of April. If you want to enable the April 2019 features before the update reaches your region, you can enable the updates yourself by opting in to the preview between February 1, 2019, and the date your region will be scheduled to have the features turned on. In coming months, we will publish the specific schedule for when the April 2019 features will be enabled for each region.
+
+### Will the version number get updated with the April 2019 update?
+No, the version number will not get changed with the April 2019 update.
+
+### Will Microsoft provide a free Sandbox environment at no charge for testing updates? 
+You will need to create a Sandbox environment (a copy of the Production environment) which is not provided for free.
+
+### When will the updates be available for testing in the Sandbox environment?
+The updates are available now. All you need to do is to activate the April 2019 update as described above.
+
+### Which updates will have an opt-in switch and which ones will be provided by default? 
+
+Only the existing user experience changes are provided with the April 2019 update opt-in; the rest will be available later. Existing user experiences will not get impacted with the update, unless the updates are not made to the existing solutions. Here are [all the features and updates provided](https://docs.microsoft.com/en-us/power-platform/admin/preview-april-2019-updates#what-features-and-experiences-are-available-in-the-april-2019-update-).
+
+### What is the process for reporting issues with the update?
+Create a [support ticket](get-help-support.md).
 
 ## How do I prepare for the April 2019 update?
 The flow chart below shows the steps needed to enable the April 2019 release to your Production environment prior to it being enabled by default in April 2019. The table below the flow chart provides information about the steps.
@@ -103,3 +131,5 @@ The flow chart below shows the steps needed to enable the April 2019 release to 
 |(6) and (7)     |**Report any issues found** <br/><br/>As you verify the experience in your preview environment, if you find any regressions, functional, or performance issues related to the April 2019 updates that could impact your business, report them to Microsoft by opening a [support ticket](https://dynamics.microsoft.com/support/) or through the [Dynamics 365 forum](https://community.dynamics.com/f). |
 |(8)     | **Enable the April 2019 updates in your Sandbox environment**<br/><br/>You should:<br/><ol><li>Update customizations to leverage or respond to new capabilities.</li><li>Update internal readiness materials based on new features or user experiences.</li><li>Prepare internal change management to run in April (training, communications, etc.)</li></ol>   |
 |(9)     | **Enable the April 2019 updates in your Production environment**<br/><br/>We recommend enabling these updates during business downtime after you have validated your key scenarios are working as expected. Please note, once the April 2019 update is enabled this cannot be reversed. However, you can restore to a prior backup version of the updated environment if needed.  |
+
+
