@@ -94,8 +94,26 @@ Updates for the Marketing app are available now. See [Activate and use Marketing
 
 Updates will come later. Check back for information.
 
-## How will the April 2019 features be enabled for customers who did not opt-in to the preview?
+## FAQ
+
+### How will the April 2019 features be enabled for customers who did not opt-in to the preview?
 Starting on April 5, 2019, we will begin to use our gradual region-by-region deployment cadence to enable the April 2019 features across our global customer base. This update will be like the Minor Service Update experience we are delivering today and won’t require you to schedule downtime to perform the update. The updates will be applied over the entire month of April. If you want to enable the April 2019 features before the update reaches your region, you can enable the updates yourself by opting in to the preview between February 1, 2019, and the date your region will be scheduled to have the features turned on. In coming months, we will publish the specific schedule for when the April 2019 features will be enabled for each region.
+
+### Will the version number get updated with the April 2019 update?
+No, the version number will not get changed with the April 2019 update.
+
+### Will Microsoft provide a free Sandbox environment at no charge for testing updates? 
+You will need to create a Sandbox environment (a copy of the Production environment) which is not provided for free.
+
+### When will the updates be available for testing in the Sandbox environment?
+The updates are available now. All you need to do is to activate the April 2019 update as described above.
+
+### Which updates will have an opt-in switch and which ones will be provided by default? 
+
+Only the existing user experience changes are provided with the April 2019 update opt-in; the rest will be available later. Existing user experiences will not get impacted with the update, unless the updates are not made to the existing solutions. Here are [all the features and updates provided](https://docs.microsoft.com/en-us/power-platform/admin/preview-april-2019-updates#what-features-and-experiences-are-available-in-the-april-2019-update-).
+
+### What is the process for reporting issues with the update?
+Create a [support ticket](get-help-support.md).
 
 ## How do I prepare for the April 2019 update?
 The flow chart below shows the steps needed to enable the April 2019 release to your Production environment prior to it being enabled by default in April 2019. The table below the flow chart provides information about the steps.
@@ -114,24 +132,4 @@ The flow chart below shows the steps needed to enable the April 2019 release to 
 |(8)     | **Enable the April 2019 updates in your Sandbox environment**<br/><br/>You should:<br/><ol><li>Update customizations to leverage or respond to new capabilities.</li><li>Update internal readiness materials based on new features or user experiences.</li><li>Prepare internal change management to run in April (training, communications, etc.)</li></ol>   |
 |(9)     | **Enable the April 2019 updates in your Production environment**<br/><br/>We recommend enabling these updates during business downtime after you have validated your key scenarios are working as expected. Please note, once the April 2019 update is enabled this cannot be reversed. However, you can restore to a prior backup version of the updated environment if needed.  |
 
-## FAQ
-
-### Will the version number get updated with the April 2019 update?
-No, the version number will not get changed with the April 2019 update.
-
-### Will Microsoft provide a free Sandbox environment at no charge for testing updates? 
-You will need to create a Sandbox environment (a copy of the Production environment) which is not provided for free.
-
-### When will the updates be available for testing in the Sandbox environment?
-The updates are available now. All you need to do is to activate the April 2019 update as described above.
-
-### Which updates will have an opt-in switch and which ones will be provided by default? 
-
-Only the existing user experience changes are provided with the April 2019 update opt-in; the rest will be available later. Existing user experiences will not get impacted with the update, unless the updates are not made to the existing solutions. Here are [all the features and updates provided](https://docs.microsoft.com/en-us/power-platform/admin/preview-april-2019-updates#what-features-and-experiences-are-available-in-the-april-2019-update-).
-
-### What is the process for reporting issues with the update?
-Create a [support ticket](get-help-support.md).
-
-### Will my Production environments updates be postponed until defects are resolved? 
-We will attempt to fix the critical issues before updating the Production environments.
 
