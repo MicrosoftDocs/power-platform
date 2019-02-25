@@ -2,7 +2,7 @@
 title: "Opt in to April 2019 updates | MicrosoftDocs"
 description: Opt in to April 2019 updates for the Dynamics 365 for Customer Engagement platform.
 ms.custom: ""
-ms.date: 02/01/2019
+ms.date: 02/25/2019
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
