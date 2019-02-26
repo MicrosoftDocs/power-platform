@@ -24,7 +24,14 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-We're introducing a new business model for Common Data Service for Apps storage.
+We're introducing a new business model for Common Data Service storage.
+
+
+
+
+
+
+
 
 To cover:
 
