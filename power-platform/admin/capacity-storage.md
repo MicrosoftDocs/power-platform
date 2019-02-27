@@ -31,7 +31,7 @@ The new storage model provides a single place to view your capacity data.
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-page.png "Capacity hub")
 
-The current storage model had you view information in multiple places.
+In the current storage model, you view information in multiple places.
 
 |  |  |
 |---------|---------|
@@ -85,9 +85,9 @@ Let's do a walkthrough of what's on the **Capacity** page. To see this page, sel
 
 |  |Description |
 |---------|---------|
-|(1)   |**Current usage**<br />**Database**: text<br />**File**: text<br />**Log**: text<br />         |
-|(2)    |**Capacity types and sources**<br />**Organization base**: text<br />**User licenses**: text<br />**Additional off-the-shelf**: text<br />**Total**: text         |
-|(3)    |**What's new**<br />Text         |
+|(1)   |**Current usage**<br /><ul><li>**Database**: text</li><br /><li>**File**: text</li><br /><li>**Log**: text</li></ul>         |
+|(2)    |**Capacity types and sources**<br /><li>**Organization base**: text</li><br /><li>**User licenses**: text</li><br /><li>**Additional off-the-shelf**: text</li><br /><li>**Total**: text </li></ul>      |
+|(3)    |**What's new**<br />Announcing the new storage model.         |
 |(4)     |**Top capacity usage, by environment**<br />Text         |
 
 ### Capacity from licenses
@@ -126,8 +126,6 @@ The following describes the items on this page.
 Select **Applied filters** at the the top of the page to filter data for different time spans.
 
 ## FAQ
-
-Here are some important considerations about the new storage model.
 
 - Pricing changes: link to marketing doc?
 - Additional instances: When 1GB of relational database storage is available, no separate license is needed when creating Production and Sandbox instances.
