@@ -66,6 +66,22 @@ Communication and feature deployment are planned as follows.
 |Provisioning     |No change – still based on current model   |Provisioning changes, minimum 1GB available capacity required to provision |
 |Hosting + Application Lifecycle Management    |Relational database  |Relational database, File, and Log storage |
 
+## Capacity page details
+
+Let's do a walkthrough of what's on the **Capacity** page. To see this page, select **Capacity** > **Overall** tab in the left-side menu.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
+
+|  |Description |
+|---------|---------|
+|(1)   |**Current usage**<br />         |
+|(2)    |**Capacity types and storage**<br />         |
+|(3)    |**What's new**<br />         |
+|(4)     |**Top capacity usage by environment**<br />         |
+
+
+
 
 
 
