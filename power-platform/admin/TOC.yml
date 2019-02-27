@@ -156,7 +156,7 @@
       items:
       - name: Controlling access to PowerApps 
         href: wp-controlling-access.md
-      - name: Common Data Service 
+      - name: Common Data Service for Apps 
         href: wp-security-cds.md
       - name: Configure environment security
         href: database-security.md
