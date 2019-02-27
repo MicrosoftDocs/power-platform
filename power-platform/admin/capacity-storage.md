@@ -24,7 +24,17 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-We're introducing a new business model for Common Data Service storage.
+We're introducing a new business model for Common Data Service storage which we think you're going to love. But first, let's do a quick review of current storage.
+
+## Current storage
+
+Storage can be viewed in the following pages.
+
+|  |  |
+|---------|---------|
+|Dynamics 365 Administration Center     | ![Storage data](media/storage-data-365-admin-center500.png)       |
+|Common Data Service for Apps analytics     | ![Storage data](media/storage-data-ppac-analytics500.png)       |
+|Organization Insights Dashboard |![Storage data](media/storage-data-org-insights500.png) |
 
 
 
