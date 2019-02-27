@@ -25,7 +25,7 @@ One of the key features of the Common Data Service (CDS) for Apps is its rich se
 
 ## Role based security
 
-CDS for Apps uses role-based security to group together a collection of privileges. These security roles can be associated directly to users, or they can be associated with CDS teams and business units. Users can then be associated with the team, and therefore all users associated with the team will benefit from the role. A key concept of CDS for Apps security to understand is all privilege grants are accumulative with the greatest amount of access prevailing. Simply put, if you gave broad organization level read access to all contact records, you can’t go back and hide a single record.
+CDS for Apps uses role-based security to group together a collection of privileges. These security roles can be associated directly to users, or they can be associated with CDS for Apps teams and business units. Users can then be associated with the team, and therefore all users associated with the team will benefit from the role. A key concept of CDS for Apps security to understand is all privilege grants are accumulative with the greatest amount of access prevailing. Simply put, if you gave broad organization level read access to all contact records, you can’t go back and hide a single record.
 
 ## Business Units
 
