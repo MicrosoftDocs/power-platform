@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-We're introducing a new business model for Common Data Service storage which we think you're going to love. 
+We're introducing a new business model for Common Data Service storage - an evolution of the Common Data Service storage capacity.
 
 While storage was once viewed in multiple places...
 
@@ -85,7 +85,7 @@ Let's do a walkthrough of what's on the **Capacity** page. To see this page, sel
 Text
 
 > [!div class="mx-imgBorder"] 
-> ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
+> ![](media/storage-data-capacity-from-licenses2.png "Capacity hub walkthrough")
 
 ### Per environment tab
 
