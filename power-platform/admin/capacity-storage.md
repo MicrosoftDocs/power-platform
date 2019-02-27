@@ -39,6 +39,22 @@ While storage was once viewed in multiple places...
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-page.png "Capacity hub")
 
+## About the new storage model
+
+We're optimizing data management for database storage, attachments, and audit logs.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-model-evolution.png "Evolution of data management")
+
+Some of the benefits of this change: 
+
+- Scalability with purpose-built storage management solutions
+- Ability to enable new business scenarios
+- Reduced need to free up storage
+- Support for variety of data types
+- Additional default and full user entitlements
+- Flexibility to create new environments/instances 
+
 
 
 
@@ -56,3 +72,4 @@ To cover:
 6. Timeline
 7. Important considerations
 
+Evolution of the Common Data Service for Apps storage capacity 
