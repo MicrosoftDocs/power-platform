@@ -1,5 +1,5 @@
 ---
-title: "Capacity and storage  | MicrosoftDocs"
+title: "Preview: Capacity and storage  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service for Apps.
 ms.custom: ""
 ms.date: 03/15/2019
@@ -20,7 +20,7 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Capacity and storage
+# Preview: Capacity and storage
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -68,6 +68,8 @@ Communication and feature deployment are planned as follows.
 
 ## Capacity page details
 
+This page provides a tenant-level view of where your organization is using storage capacity.
+
 Let's do a walkthrough of what's on the **Capacity** page. To see this page, select **Capacity** > **Overall** tab in the left-side menu.
 
 > [!div class="mx-imgBorder"] 
@@ -82,14 +84,14 @@ Let's do a walkthrough of what's on the **Capacity** page. To see this page, sel
 
 ### Capacity from licenses
 
-Text
+This panel... text 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-from-licenses2.png "Capacity hub walkthrough")
 
 ### Per environment tab
 
-Text
+This page provides an environment-level view of where your organization is using storage capacity.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
@@ -100,6 +102,8 @@ Text
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
+
+The following describes the items on this page.
 
 |Item  |Description  |
 |---------|---------|
@@ -114,4 +118,15 @@ Text
 Select **Applied filters** at the the top of the page to filter data for different time spans.
 
 ## Things to know about the new storage model
+
+Here are some important considerations about the new storage model.
+
+- Pricing changes: link to marketing doc?
+- Additional instances: When 1GB of database capacity is available, no separate license for Production and other instances.
+- Increased storage: File and Log capacity frees up database capacity. The 4TB size limit does not apply to File and Log capacity.
+- Transition to new platform capacity: No action is required. There is no change to existing forms, views, and other UI elements. Existing APIs are backwards compatible.
+- 
+
+
+
 
