@@ -36,8 +36,7 @@ While storage was once viewed in multiple places...
 
 ...the new storage model provides a single place to view your data.
 
-> [!div class="mx-imgBorder"] 
-> ![](media/storage-data-capacity-page.png "Capacity hub")
+![](media/storage-data-capacity-page.png "Capacity hub")
 
 ## About the new storage model
 
