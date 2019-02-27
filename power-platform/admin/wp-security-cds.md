@@ -78,7 +78,7 @@ Field level security is enabled on a field by field basis. Access is then manage
 
 ### Managing Security Across Multiple Environments
 
-Security roles and Field Security Profiles can be packaged up and moved from one environment to the next using CDS solutions. Business Units and Teams must be created and managed in each CDS environment along with the assignment of users to the necessary security components.
+Security roles and Field Security Profiles can be packaged up and moved from one environment to the next using CDS for Apps solutions. Business Units and Teams must be created and managed in each CDS for Apps environment along with the assignment of users to the necessary security components.
 
 ### Configuring Users Environment Security
 
