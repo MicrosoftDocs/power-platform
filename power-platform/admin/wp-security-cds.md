@@ -1,6 +1,6 @@
 ---
 title: "Common Data Service for Apps | MicrosoftDocs"
-description: Provides detailed information aboiut the security model in Common Data Service (CDS) for Apps.
+description: Provides detailed information about the security model in Common Data Service (CDS) for Apps.
 ms.custom: ""
 ms.date: 02/26/2019
 ms.reviewer: ""
