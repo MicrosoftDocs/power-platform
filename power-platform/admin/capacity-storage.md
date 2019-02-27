@@ -26,7 +26,7 @@ search.app:
 
 We're introducing a new business model for Common Data Service storage - an evolution of the Common Data Service storage capacity.
 
-While storage was once viewed in multiple places...
+While storage is now viewed in multiple places...
 
 |  |  |
 |---------|---------|
