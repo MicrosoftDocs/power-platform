@@ -122,10 +122,10 @@ Select **Applied filters** at the the top of the page to filter data for differe
 Here are some important considerations about the new storage model.
 
 - Pricing changes: link to marketing doc?
-- Additional instances: When 1GB of database capacity is available, no separate license for Production and other instances.
-- Increased storage: File and Log capacity frees up database capacity. The 4TB size limit does not apply to File and Log capacity.
+- Additional instances: When 1GB of relational database storage is available, no separate license is needed when creating Production and Sandbox instances.
+- Increased storage: File and Log capacity frees up database capacity. The 4TB size limit does not apply to File and Log storage.
 - Transition to new platform capacity: No action is required. There is no change to existing forms, views, and other UI elements. Existing APIs are backwards compatible.
-- 
+- Anything from Guiding Principles?
 
 
 
