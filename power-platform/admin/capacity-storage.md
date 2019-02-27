@@ -41,7 +41,7 @@ While storage is now viewed in multiple places...
 
 ## About the new storage model
 
-We're optimizing data management for database storage, attachments, and audit logs.
+We're optimizing data management for database storage, attachments, and audit logs. There will now be three types of storage: database, file, and log.
 
 ![](media/storage-model-evolution.png "Evolution of data management")
 
@@ -60,11 +60,11 @@ Communication and feature deployment are planned as follows.
 
 |  | April 1, 2019 | After April 1, 2019  |
 |---------|---------|---------|
-|Communication     | A blog will be posted and Admins will receive emails about how to start planning for File and Log storage. | You can purchase File and Log storage. |
+|Communication     | A blog will be posted and Admins will receive emails about how to start planning for file and log storage. | You can purchase file and log storage. |
 |Reporting     | <ul><li>Capacity reporting introduced</li><br /><li>Existing customers get new types of storage but are not impacted by the change until renewal</li><br /><li>Data stored in the organization databases is split and counted in three storage types</li><br /><li>1GB (minimum) per environment reflected in reporting</li></ul> |<ul><li>Reporting to include data from organization databases and new services</li><br /><li>Recommendations provided for managing storage</li></ul> |
-|Notification     |<ul><li>First four weeks email sent to Admins for awareness </li><br /><li>Email notifications sent at 80% and 100% database limits</li><br /><li>No email notifications sent on Log and File storage over limits</li></ul> |<ul><li>Customized notifications sent with Microsoft Flow integration</li><br /><li>Email notifications sent at 80% and 100% database limits on Log and File storage</li></ul>  |
+|Notification     |<ul><li>First four weeks email sent to Admins for awareness </li><br /><li>Email notifications sent at 80% and 100% database limits</li><br /><li>No email notifications sent on log and file storage over limits</li></ul> |<ul><li>Customized notifications sent with Microsoft Flow integration</li><br /><li>Email notifications sent at 80% and 100% database limits on log and file storage</li></ul>  |
 |Provisioning     |No change – still based on current model   |Provisioning changes, minimum 1GB available capacity required to provision |
-|Hosting + Application Lifecycle Management    |Relational database  |Relational database, File, and Log storage |
+|Hosting + Application Lifecycle Management    |Relational database  |Relational database, file, and log storage |
 
 ## Capacity page details
 
@@ -123,8 +123,8 @@ Here are some important considerations about the new storage model.
 
 - Pricing changes: link to marketing doc?
 - Additional instances: When 1GB of relational database storage is available, no separate license is needed when creating Production and Sandbox instances.
-- Increased storage: File and Log capacity frees up database capacity. The 4TB size limit does not apply to File and Log storage.
-- Transition to new platform capacity: No action is required. There is no change to existing forms, views, and other UI elements. Existing APIs are backwards compatible.
+- Increased storage: file and log capacity frees up database capacity. The 4TB size limit does not apply to file and log storage.
+- Transition to new platform capacity: No action is required. There is no change to existing forms, views, and other user interface elements. Existing APIs are backwards compatible.
 - Anything from Guiding Principles?
 
 
