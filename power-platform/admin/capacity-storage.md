@@ -115,22 +115,3 @@ Select **Applied filters** at the the top of the page to filter data for differe
 
 ## Things to know about the new storage model
 
-
-
-
-
-
-To cover:
-
-1. Review of current storage model
-2. Overview of new storage model
-   - Enterprise data architectures are evolving with rapid growth of newer formats (unstructured, streaming, file etc.)​
-   - Dynamics 365 platforms will provide flexible data management optimized for enterprise application types and corresponding business value​
-3. View and manage storage
-   - Three ways to manage storage
-4. Updated storage reports
-5. A walkthrough of the UI
-6. Timeline
-7. Important considerations
-
-Evolution of the Common Data Service for Apps storage capacity 
