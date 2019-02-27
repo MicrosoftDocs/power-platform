@@ -36,14 +36,14 @@ While storage was once viewed in multiple places...
 
 ...the new storage model provides a single place to view your data.
 
-![](media/storage-data-capacity-page.png "Capacity hub")
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-capacity-page.png "Capacity hub")
 
 ## About the new storage model
 
 We're optimizing data management for database storage, attachments, and audit logs.
 
-> [!div class="mx-imgBorder"] 
-> ![](media/storage-model-evolution.png "Evolution of data management")
+![](media/storage-model-evolution.png "Evolution of data management")
 
 Some of the benefits of this change: 
 
