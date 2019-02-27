@@ -75,10 +75,43 @@ Let's do a walkthrough of what's on the **Capacity** page. To see this page, sel
 
 |  |Description |
 |---------|---------|
-|(1)   |**Current usage**<br />         |
-|(2)    |**Capacity types and storage**<br />         |
-|(3)    |**What's new**<br />         |
-|(4)     |**Top capacity usage by environment**<br />         |
+|(1)   |**Current usage**<br />**Database**: text<br />**File**: text<br />**Log**: text<br />         |
+|(2)    |**Capacity types and sources**<br />**Organization base**: text<br />**User licenses**: text<br />**Additional off-the-shelf**: text<br />**Total**: text         |
+|(3)    |**What's new**<br />Text         |
+|(4)     |**Top capacity usage, by environment**<br />Text         |
+
+### Capacity from licenses
+
+Text
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
+
+### Per environment tab
+
+Text
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
+
+### CDS 2.0 Production environment
+
+Text
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
+
+|Item  |Description  |
+|---------|---------|
+|**Database usage**     | Text        |
+|**File usage**    | Text         |
+|**Log usage**     | Text        |
+|**Top database capacity use, by table** | Text |
+|**Top file capacity by use, by table** | Text |
+|**Log usage** | Text    |
+|**Top log capacity use, by table** | Text  |
+
+Select **Applied filters** at the the top of the page to filter data for different time spans.
 
 ## Things to know about the new storage model
 
