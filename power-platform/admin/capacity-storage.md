@@ -58,16 +58,17 @@ Some of the benefits of this change:
 
 Communication and feature deployment are planned as follows.
 
-
 |  | April 1, 2019 | After April 1, 2019  |
 |---------|---------|---------|
 |Communication     | A blog will be posted and Admins will receive emails about how to start planning for File and Log storage. | You can purchase File and Log storage. |
-|Reporting     | <ul><li>Capacity reporting introduced</li><br /><li>Existing customers get new types of storage but are not impacted by the change until renewal</li><br /><li>Data stored in the organization databases is split and counted in three storage types</li><br /><li>1GB (min) per Environment reflected in reporting</li></ul> |<ul><li>Reporting to include data from organization databases and new services</li><br /><li>Recommendations provided for managing storage</li></ul> |
-|Notification     |<ul><li>First four weeks email sent to Admins for Awareness </li><br /><li>Email notifications sent at 80% and 100% database limits</li><br /><li>No email notifications sent on Log and File storage over limits</li></ul> |<ul><li>Customized notifications sent with Microsoft Flow integration</li><br /><li>Email notifications sent at 80% and 100% database limits on Log and File storage</li></ul>  |
+|Reporting     | <ul><li>Capacity reporting introduced</li><br /><li>Existing customers get new types of storage but are not impacted by the change until renewal</li><br /><li>Data stored in the organization databases is split and counted in three storage types</li><br /><li>1GB (minimum) per environment reflected in reporting</li></ul> |<ul><li>Reporting to include data from organization databases and new services</li><br /><li>Recommendations provided for managing storage</li></ul> |
+|Notification     |<ul><li>First four weeks email sent to Admins for awareness </li><br /><li>Email notifications sent at 80% and 100% database limits</li><br /><li>No email notifications sent on Log and File storage over limits</li></ul> |<ul><li>Customized notifications sent with Microsoft Flow integration</li><br /><li>Email notifications sent at 80% and 100% database limits on Log and File storage</li></ul>  |
 |Provisioning     |No change – still based on current model   |Provisioning changes, minimum 1GB available capacity required to provision |
-|Hosting + <sup>*</sup>ALM     |Relational database  |Relational database, File, and Log storage |
+|Hosting + Application Lifecycle Management    |Relational database  |Relational database, File, and Log storage |
 
-<sup>*</sup>Application Lifecycle Management
+
+
+
 
 To cover:
 
