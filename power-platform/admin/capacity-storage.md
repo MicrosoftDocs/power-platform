@@ -24,20 +24,20 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-We're introducing a new business model for Common Data Service storage - an evolution of the Common Data Service storage capacity.
+We're introducing a new business model for Common Data Service storage - an evolution of the Common Data Service storage.
 
-While storage is now viewed in multiple places...
+The new storage model provides a single place to view your capacity data.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-capacity-page.png "Capacity hub")
+
+The current storage model had you view information in multiple places.
 
 |  |  |
 |---------|---------|
 |Dynamics 365 Administration Center     | ![](media/storage-data-365-admin-center500.png "storage data")       |
 |Common Data Service for Apps analytics     | ![](media/storage-data-ppac-analytics500.png "storage data")       |
 |Organization Insights Dashboard |![](media/storage-data-org-insights500.png "storage data") |
-
-...the new storage model provides a single place to view your data.
-
-> [!div class="mx-imgBorder"] 
-> ![](media/storage-data-capacity-page.png "Capacity hub")
 
 ## About the new storage model
 
@@ -56,8 +56,14 @@ Some of the benefits of this change:
 
 ## Timeline
 
-Communication and feature deployment are planned as follows.
+On April 1, 2019:
 
+- Capacity reporting introduced
+- Existing customers get new types of storage but are not impacted by the change until renewal
+- Data stored in the organization databases is split and counted in three storage types
+- 1GB (minimum) per environment reflected in reporting
+
+<!-- 
 |  | April 1, 2019 | After April 1, 2019  |
 |---------|---------|---------|
 |Communication     | A blog will be posted and Admins will receive emails about how to start planning for file and log storage. | You can purchase file and log storage. |
@@ -65,6 +71,8 @@ Communication and feature deployment are planned as follows.
 |Notification     |<ul><li>First four weeks email sent to Admins for awareness </li><br /><li>Email notifications sent at 80% and 100% database limits</li><br /><li>No email notifications sent on log and file storage over limits</li></ul> |<ul><li>Customized notifications sent with Microsoft Flow integration</li><br /><li>Email notifications sent at 80% and 100% database limits on log and file storage</li></ul>  |
 |Provisioning     |No change – still based on current model   |Provisioning changes, minimum 1GB available capacity required to provision |
 |Hosting + Application Lifecycle Management    |Relational database  |Relational database, file, and log storage |
+
+-->
 
 ## Capacity page details
 
@@ -117,7 +125,7 @@ The following describes the items on this page.
 
 Select **Applied filters** at the the top of the page to filter data for different time spans.
 
-## Things to know about the new storage model
+## FAQ
 
 Here are some important considerations about the new storage model.
 
