@@ -80,6 +80,7 @@ Let's do a walkthrough of what's on the **Capacity** page. To see this page, sel
 |(3)    |**What's new**<br />         |
 |(4)     |**Top capacity usage by environment**<br />         |
 
+## Things to know about the new storage model
 
 
 
