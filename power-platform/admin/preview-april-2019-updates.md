@@ -80,7 +80,13 @@ See the following section for other update information.
 
 ## What features and experiences are available in the April 2019 update?  
 
-By activating the April 2019 updates opt-in, you will get changed user experience updates only. Other features will be made available from Feb 2019 to Oct 2019 as mentioned in the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=2056743).
+The April 2019 update has two kind of functionalities (as with any other update):
+- Updates to existing user experience
+- New functionality or updates to maker and admin functionality
+
+By activating the April 2019 updates opt-in, you will get updates to existing user experience only. The exact list of features which are updates to existing user experiences are listed [here](https://go.microsoft.com/fwlink/p/?linkid=2056743). 
+ 
+The Release Notes lists other features across Dynamics 365 – Sales, Service, Marketing and PowerApps (and platform). Features which are not updates to the existing user experience will not be part of the April 2019 updates opt-in. They can either be new functionalities or additions to maker and admin functionality.
 
 ## FAQ
 
