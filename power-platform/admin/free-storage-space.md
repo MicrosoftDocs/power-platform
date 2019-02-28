@@ -24,7 +24,7 @@ search.app:
 ---
 # Free storage space
 
-[!INCLUDE[cc-applies-to-update-9-0-0](../includes/cc_applies_to_update_9_0_0.md)]<br/>[!INCLUDE[cc_applies_to_on-prem-9_0_0](../includes/cc_applies_to_on-prem-9_0_0.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 These are ways to reduce the amount of storage space used by removing or deleting different types of information from [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. Use one or more of these methods to control your total data storage usage with [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
   
@@ -341,7 +341,3 @@ These are ways to reduce the amount of storage space used by removing or deletin
 > [!NOTE]
 >  You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.  
   
-### See also  
- [Manage your data](../admin/manage-your-data.md)   
- [Data Encryption](../admin/data-encryption.md)   
- [Manage Microsoft Dynamics 365 for Customer Engagement apps online) instances](manage-online-instances.md)
