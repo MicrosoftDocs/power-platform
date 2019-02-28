@@ -46,7 +46,7 @@ In the current storage model, you view information in multiple places.
 
 ## About the new storage model
 
-We're optimizing data management for database storage, attachments, and audit Logs. There will now be three types of storage: database, File, and Log.
+We're optimizing data management for database storage, attachments, and audit Logs. There will now be three types of storage: Database, File, and Log.
 
 ![](media/storage-model-evolution.png "Evolution of data management")
 
@@ -66,7 +66,7 @@ On April 1, 2019:
 - Capacity reporting introduced
 - Existing customers get new types of storage but are not impacted by the change until renewal
 - Data stored in the organization databases is split and counted in three storage types
-- 1GB (minimum) per environment reflected in reporting
+- 1GB (minimum) per environment is reflected in reporting
 
 <!-- 
 |  | April 1, 2019 | After April 1, 2019  |
