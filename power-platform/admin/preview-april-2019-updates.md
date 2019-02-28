@@ -80,19 +80,7 @@ See the following section for other update information.
 
 ## What features and experiences are available in the April 2019 update?  
 
-A list of all features and updates in the April 2019 release are available in the [Release Notes](http://aka.ms/businessappsreleasenotes).
-
-By activating the April 2019 updates opt-in, you will get changed user experience updates only. Below is the list of those features. Other features will be made available from Feb 2019 to Oct 2019 as mentioned in the [Release Notes](http://aka.ms/businessappsreleasenotes).
-
-### Changed user experience updates in Dynamics 365 for Customer Engagement Platform
-Updates are available now. See [Updates in sitemap and command bar](https://blogs.msdn.microsoft.com/crm/2018/10/01/announcing-ui-updates-in-october-for-sitemap-and-command-bar%E2%80%AF/).
-
-### Changed user experience updates in Dynamics 365 for Marketing app
-Updates for the Marketing app are available now. See [Activate and use Marketing app preview features](https://go.microsoft.com/fwlink/p/?linkid=2065942).
-
-### Changed user experience updates in Dynamics 365 for Sales app
-
-Updates will come later. Check back for information.
+By activating the April 2019 updates opt-in, you will get changed user experience updates only. Other features will be made available from Feb 2019 to Oct 2019 as mentioned in the [Release Notes](https://go.microsoft.com/fwlink/p/?linkid=2056743).
 
 ## FAQ
 
