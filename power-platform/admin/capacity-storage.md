@@ -107,9 +107,10 @@ This is a further drill down. Refer to point#2 above.
 This page lists all environments in the tenant and how much capacity they are consuming. 
 
 - Environments that do not count against capacity show as 0GB
-  - Trial environments
-  - Developer environments
-  - others
+  - Trial 
+  - Preview
+  - Support
+  - Developer
 - Admins can select environments showing 0GB to go to the **Environment Analytics** page and see the actual consumption.
 
 > [!div class="mx-imgBorder"] 
@@ -137,9 +138,8 @@ The following describes the items on this page.
 |**File usage**    | Text         |
 |**Log usage**     | Text        |
 |**Top database capacity use, by table** | Text |
-|**Top File capacity by use, by table** | Text |
-|**Log usage** | Text    |
-|**Top Log capacity use, by table** | Text  |
+|**Top File capacity by use, by table** | The following tables are used: <br /><ul><li>AuditBase</li><br /><li>PlugInTraceLogBase</li></ul> |
+|**Top Log capacity use, by table** | The following tables are used: <br /><ul><li>Attachment</li><br /><li>AttachmentBase</li><br /><li>AttachmentMIMEAttachement</li></ul>  |
 
 Select **Applied filters** at the the top of the page to filter data for different time spans.
 
