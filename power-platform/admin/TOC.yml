@@ -33,6 +33,8 @@
           href: analytics-common-data-service.md
         - name: Capacity
           href: capacity-storage.md
+        - name: Free storage space
+          href: free-storage-space.md
         # - name: Microsoft Flow analytics
         #   href: analytics-flow.md
         # - name: PowerApps analytics
