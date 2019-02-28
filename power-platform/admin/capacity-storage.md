@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-To align with the new business model changes announced here, we have updated our current Storage Analytics to provide further clarity to our customers. Here is a summary of changes in our Storage Analytics.
+To align with the new business model changes announced here, we have updated our current storage analytics to provide further clarity to our customers. Here is a summary of changes in storage analytics.
 
 - A brand new Capacity Analytics is launched in Power Platform Admin center Analytics.
 -	Admins can visualize the data stored in Database, Files, and Logs. 
@@ -149,16 +149,19 @@ Select **Applied filters** at the the top of the page to filter data for differe
 If you have an existing agreement, you are not impacted with the current change. We have added Log and File capacity to your current entitlement which reduces your Database capacity. Until renewal, you can continue with the current plan.
 
 ### I'm an existing customer and my renewal is coming up. Will I be impacted?
-At renewal, you are expected to move to the new model and purchase the Database, File, and Log capacity as appropriate. You can use the current report to determine how much you should buy?
+At renewal, you are expected to move to the new model and purchase the Database, File, and Log capacity as appropriate. You can use the current report to determine how much you should buy.
 
 ### Will the Storage tab in Common Data Service continue to work?
 The **Storage** tab will be deprecated as we move to the new updated Capacity Analytics.
 
 ### I have a PowerApps environment with Database, will this environment count against capacity?
-Yes. All Common Data Service environments are counted
+Yes. All Common Data Service environments are counted.
 
 ### How do I buy more capacity?
 A) ??
+
+### How can I reduce consumed storage space?
+See the following: [Free storage space](free-storage-space.md).
 
 
 
