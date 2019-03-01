@@ -2,7 +2,7 @@
 title: "Opt in to April 2019 updates | MicrosoftDocs"
 description: Opt in to April 2019 updates for the Dynamics 365 for Customer Engagement platform.
 ms.custom: ""
-ms.date: 02/25/2019
+ms.date: 03/01/2019
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -80,19 +80,13 @@ See the following section for other update information.
 
 ## What features and experiences are available in the April 2019 update?  
 
-A list of all features and updates in the April 2019 release are available in the [Release Notes](http://aka.ms/businessappsreleasenotes).
+The April 2019 update has two kind of functionalities (as with any other update):
+- Updates to existing user experience
+- New functionality or updates to maker and admin functionality
 
-By activating the April 2019 updates opt-in, you will get changed user experience updates only. Below is the list of those features. Other features will be made available from Feb 2019 to Oct 2019 as mentioned in the [Release Notes](http://aka.ms/businessappsreleasenotes).
-
-### Changed user experience updates in Dynamics 365 for Customer Engagement Platform
-Updates are available now. See [Updates in sitemap and command bar](https://blogs.msdn.microsoft.com/crm/2018/10/01/announcing-ui-updates-in-october-for-sitemap-and-command-bar%E2%80%AF/).
-
-### Changed user experience updates in Dynamics 365 for Marketing app
-Updates for the Marketing app are available now. See [Activate and use Marketing app preview features](https://go.microsoft.com/fwlink/p/?linkid=2065942).
-
-### Changed user experience updates in Dynamics 365 for Sales app
-
-Updates will come later. Check back for information.
+By activating the April 2019 updates opt-in, you will get updates to existing user experience only. The exact list of features which are updates to existing user experiences are listed [here](https://go.microsoft.com/fwlink/p/?linkid=2056743). 
+ 
+The Release Notes lists other features across Dynamics 365 – Sales, Service, Marketing and PowerApps (and platform). Features which are not updates to the existing user experience will not be part of the April 2019 updates opt-in. They can either be new functionalities or additions to maker and admin functionality.
 
 ## FAQ
 
