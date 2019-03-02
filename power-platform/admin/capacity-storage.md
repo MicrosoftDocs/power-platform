@@ -47,29 +47,33 @@ You can choose to renew using the current offers and licensing policies or trans
 
 [Below not yet revised for above content]
 
-To align with the new business model changes announced here, we have updated our current storage analytics to provide further clarity to our customers. Here is a summary of changes in storage analytics.
+> [!NOTE]
+> For introductory information on the new capacity analytics model, see [need link].
 
-- A brand new Capacity Analytics is launched in Power Platform Admin center Analytics.
+Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
+
+We have updated our capacity analytics reporting to provide important benefits to our customers. Here is a summary of changes in capacity analytics.
+
+- New **Capacity** page is available in Power the Platform Admin center.
 -	Admins can visualize the data stored in Database, Files, and Logs. 
--	Entitlement information is added to clearly understand what is your tenant available capacity.  
+-	Entitlement information is added to clearly understand what is the tenant available capacity.  
 -	Existing customers get new types of capacity (File and Log) but are not impacted by the change until renewal. 
 
-The new storage model provides a single place to view your capacity data.
+The new capacity analytics reporting provides a single place to view your capacity data.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-page.png "Capacity hub")
 
-In the current storage model, you view information in multiple places.
+In the previous storage model, you viewed information in multiple places.
 
 |  |  |
 |---------|---------|
 |Dynamics 365 Administration Center     | ![](media/storage-data-365-admin-center500.png "storage data")       |
 |Common Data Service for Apps analytics     | ![](media/storage-data-ppac-analytics500.png "storage data")       |
-|Organization Insights Dashboard |![](media/storage-data-org-insights500.png "storage data") |
 
-## About the new storage model
+## About the new capacity analytics reporting
 
-We're optimizing data management for database storage, attachments, and audit Logs. There will now be three types of storage: Database, File, and Log.
+We're optimizing data management for database storage, attachments, and audit Logs. There are now three types of storage: Database, File, and Log.
 
 ![](media/storage-model-evolution.png "Evolution of data management")
 
@@ -77,43 +81,23 @@ Some of the benefits of this change:
 
 - Scalability with purpose-built storage management solutions
 - Ability to enable new business scenarios
-- Reduced need to free up storage
+- Reduced need to [free storage space](free-storage-space.md)
 - Support for variety of data types
 - Additional default and full user entitlements
 - Flexibility to create new environments/instances 
-
-## Timeline
-
-On April 1, 2019:
-
-- Capacity reporting introduced
-- Existing customers get new types of storage but are not impacted by the change until renewal
-- Data stored in the organization databases is split and counted in three storage types
-- 1GB (minimum) per environment is reflected in reporting
-
-<!-- 
-|  | April 1, 2019 | After April 1, 2019  |
-|---------|---------|---------|
-|Communication     | A bLog will be posted and Admins will receive emails about how to start planning for File and Log storage. | You can purchase File and Log storage. |
-|Reporting     | <ul><li>Capacity reporting introduced</li><br /><li>Existing customers get new types of storage but are not impacted by the change until renewal</li><br /><li>Data stored in the organization databases is split and counted in three storage types</li><br /><li>1GB (minimum) per environment reflected in reporting</li></ul> |<ul><li>Reporting to include data from organization databases and new services</li><br /><li>Recommendations provided for managing storage</li></ul> |
-|Notification     |<ul><li>First four weeks email sent to Admins for awareness </li><br /><li>Email notifications sent at 80% and 100% database limits</li><br /><li>No email notifications sent on Log and File storage over limits</li></ul> |<ul><li>Customized notifications sent with Microsoft Flow integration</li><br /><li>Email notifications sent at 80% and 100% database limits on Log and File storage</li></ul>  |
-|Provisioning     |No change – still based on current model   |Provisioning changes, minimum 1GB available capacity required to provision |
-|Hosting + Application Lifecycle Management    |Relational database  |Relational database, File, and Log storage |
-
--->
 
 ## Capacity page details
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
-Let's do a walkthrough of what's on the **Capacity** page. To see this page, select **Capacity** > **Overall** tab in the left-side menu.
+Let's do a walkthrough of what's on the **Capacity** page. To see this page, select **Analytics** > **Capacity** > **Overall** tab in the left-side menu.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
 
 |  |Description |
 |---------|---------|
-|(1)   |**Current usage**<br /><ul><li>**Database**: How much Database, File, and Log space your tenant is consuming</li><br /><li>**File**: How much your tenant is entitled to Expand the User Licenses to further drill down</li><br /><li>**Log**: text needed</li></ul>         |
+|(1)   |**Current usage**<br /><ul><br /><li>**File**: The following entities are used: <br /><ul><li>AuditBase</li><br /><li>PlugInTraceLogBase</li></ul><br /><li>**Log**: The following entities are used: <br /><ul><li>Attachment</li><br /><li>AttachmentBase</li><br /><li>AttachmentMIMEAttachement</li></ul></li><li>**Database**: All other entities are counted for your database</li></ul> |
 |(2)    |**Capacity types and sources**<br /><li>**Organization base**: The default capacity given at the time of sign-up </li><br /><li>**User licenses**: Additional capacity added for every User License purchased</li><br /><li>**Additional storage**: Any additional storage you bought </li><br /><li>**Total**: Total storage available </li></ul>      |
 |(3)    |**What's new**<br />Announcing the new storage model         |
 |(4)     |**Top capacity usage, by environment**<br />Top environments that consume the most capacity        |
@@ -139,7 +123,7 @@ This page lists all environments in the tenant and how much capacity they are co
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
 
-### CDS 2.0 Production environment
+### Environment capacity analytics
 
 This page provides an environment-level detailed view of where your organization is using storage capacity.
 
