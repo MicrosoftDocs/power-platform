@@ -88,12 +88,14 @@ Some of the benefits of this change:
 
 ## Capacity page details
 
-This page provides a tenant-level view of where your organization is using storage capacity.
+### Overall tab
 
-Let's do a walkthrough of what's on the **Capacity** page. To see this page, select **Analytics** > **Capacity** > **Overall** tab in the left-side menu.
+This page provides a tenant-level view of where your organization is using storage capacity.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
+
+To view the **Capacity** page, select **Analytics** > **Capacity** > **Overall** tab in the left-side menu.
 
 |  |Description |
 |---------|---------|
@@ -109,25 +111,30 @@ This is a further drill down. Refer to point#2 above.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-from-licenses2.png "Capacity hub walkthrough")
+-->
 
 ### Per environment tab
 
-This page lists all environments in the tenant and how much capacity they are consuming. 
+This page provides similar information as the **Overall** tab but with an environment-level view of where your organization is using capacity.
 
-- Environments that do not count against capacity show as 0GB
-  - Trial 
-  - Preview
-  - Support
-  - Developer
-- Admins can select environments showing 0GB to go to the **Environment Analytics** page and see the actual consumption.
+Select an environment to see more detailed information on actual consumption.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
--->
+
+> [!NOTE]
+> - The following environments do not count against capacity and show as 0GB:
+>  - Trial 
+>  - Preview
+>  - Support
+>  - Developer
+> - Admins can select environments showing 0GB to go to the **Environment Analytics** page and see the actual consumption.
 
 ### Environment capacity analytics
 
-This page provides an environment-level detailed view of where your organization is using storage capacity.
+This page provides an environment-level detailed view of where your organization is using capacity as well as the three capacity types consumption.
+
+Details provided:
 
 -	Actual Database usage
 -	Top Database tables and their growth over time
@@ -136,23 +143,10 @@ This page provides an environment-level detailed view of where your organization
 -	Actual Log usage
 -	Top tables and their growth over time
 
-Select **Applied filters** at the the top of the page to filter data for different time spans.
+Select **Applied filters** at the the top of the page to filter data for different time spans. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
-
-The following describes the items on this page.
-
-|Item  |Description  |
-|---------|---------|
-|**Database usage**     | Text        |
-|**File usage**    | Text         |
-|**Log usage**     | Text        |
-|**Top database capacity use, by table** | Text |
-|**Top File capacity by use, by table** | The following tables are used: <br /><ul><li>AuditBase</li><br /><li>PlugInTraceLogBase</li></ul> |
-|**Top Log capacity use, by table** | The following tables are used: <br /><ul><li>Attachment</li><br /><li>AttachmentBase</li><br /><li>AttachmentMIMEAttachement</li></ul>  |
-
-
 
 ## FAQ
 
