@@ -102,6 +102,7 @@ Let's do a walkthrough of what's on the **Capacity** page. To see this page, sel
 |(3)    |**What's new**: Used for announcements and notifications  |
 |(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
 
+<!-- 
 ### Capacity from licenses
 
 This is a further drill down. Refer to point#2 above.
@@ -122,6 +123,7 @@ This page lists all environments in the tenant and how much capacity they are co
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
+-->
 
 ### Environment capacity analytics
 
@@ -133,6 +135,8 @@ This page provides an environment-level detailed view of where your organization
 -	Top Files tables and their growth over time
 -	Actual Log usage
 -	Top tables and their growth over time
+
+Select **Applied filters** at the the top of the page to filter data for different time spans.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
@@ -148,7 +152,7 @@ The following describes the items on this page.
 |**Top File capacity by use, by table** | The following tables are used: <br /><ul><li>AuditBase</li><br /><li>PlugInTraceLogBase</li></ul> |
 |**Top Log capacity use, by table** | The following tables are used: <br /><ul><li>Attachment</li><br /><li>AttachmentBase</li><br /><li>AttachmentMIMEAttachement</li></ul>  |
 
-Select **Applied filters** at the the top of the page to filter data for different time spans.
+
 
 ## FAQ
 
