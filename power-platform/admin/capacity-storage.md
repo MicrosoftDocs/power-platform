@@ -24,29 +24,6 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The Common Data Service for Apps is a powerful, data service built into Dynamics 365 and PowerApps, that helps organizations store, manage, and secure data that is used by Dynamics 365 and other business applications. Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. 
-
-Effective April 1, 2019, the Common Data Service for Apps will offer platform storage capacity optimized for relational data, attachments, and audit logs. These will be referred to as: 
-
-- Common Data Service for Apps Database Capacity 
-- Common Data Service for Apps File Capacity  
-- Common Data Service for Apps Log Capacity  
-
-Certain Dynamics 365 for Customer Engagement apps and PowerApps plans provide tenant-wide default entitlement for each of these storage types and additional accrued capacity entitlements per qualifying user subscription license. Organizations can purchase add-on capacity licenses, which are priced per 1 GB of additional database, file, or log capacity. As part of this change, organizations that transition to the new storage capacity licenses will no longer be required to purchase additional production or non-production instances. An additional instance can be created when at least 1 GB of database capacity is available. Note: each instance uses at least 1 GB of database storage. 
-
-## How does this affect me?
-
-Your organization will not be affected until the expiration of your current PowerApps or Dynamics 365 subscription. Organizations that renew their current web direct subscription for Dynamics 365 between April 1, 2019 and December 31, 2019 and also purchase either:  
-
-- additional database storage or  
-- additional production or non-production instances  
-
-You can choose to renew using the current offers and licensing policies or transition to the new storage capacity offers and licensing policies.  
-
-
-
-[Below not yet revised for above content]
-
 > [!NOTE]
 > For introductory information on the new capacity analytics model, see [need link].
 
@@ -124,10 +101,10 @@ Select an environment to see more detailed information on actual consumption.
 
 > [!NOTE]
 > - The following environments do not count against capacity and show as 0GB:
->  - Trial 
->  - Preview
->  - Support
->  - Developer
+>   - Trial 
+>   - Preview
+>   - Support
+>   - Developer
 > - Admins can select environments showing 0GB to go to the **Environment Analytics** page and see the actual consumption.
 
 ### Environment capacity analytics
