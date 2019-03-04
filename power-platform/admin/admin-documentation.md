@@ -1,12 +1,11 @@
 ---
-title: "Administer Power Platform | MicrosoftDocs"
-description: Administrator documentation.
+title: "Preview: Administer Power Platform | MicrosoftDocs"
+description: The Power Platform Admin center a unified portal for administrators to manage environments and settings for Dynamics 365 for Customer Engagement, PowerApps, and Flow.
 ms.custom: ""
 ms.date: 09/27/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: "power-platform"
 ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
 applies_to: 
   - "Dynamics 365 (online)"
@@ -21,11 +20,11 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Administer Power Platform 
+# Preview: Administer Power Platform 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Power Platform Admin center** provides a unified portal for administrators to manage environments and settings for Dynamics 365 for Customer Engagement, PowerApps, and Flow. More information in this blog post: [Introducing the Power Platform admin center](https://blogs.msdn.microsoft.com/crm/2018/09/25/introducing-the-power-platform-admin-center/).
+The **Power Platform Admin center** provides a unified portal for administrators to manage environments and settings for Dynamics 365 for Customer Engagement, PowerApps, and Microsoft Flow. More information in this blog post: [Introducing the Power Platform admin center](https://blogs.msdn.microsoft.com/crm/2018/09/25/introducing-the-power-platform-admin-center/).
 
 > [!IMPORTANT]
 > The Power Platform admin center is a *preview* feature, and we will continue to add functionality from other admin centers until it becomes the only admin center to accomplish all admin tasks related to Power Platform.<br/><br/>A *preview* feature may have limited availability and restricted functionality. A preview feature is available before an official release so that customers can get early access and provide feedback
