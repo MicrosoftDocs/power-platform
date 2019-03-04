@@ -23,6 +23,16 @@ search.app:
 ---
 # Administer Dynamics 365 for Customer Engagement
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+The [Administrator Guide for Dynamics 365 for Customer Engagement apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/admin-guide) is the original content for managing admin settings and features for Customer Engagement. 
 
-The [Administrator Guide for Dynamics 365 for Customer Engagement apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/admin-guide) is the original content for managing admin settings and features for Customer Engagement. The content there is transitioning to the PowerApps content as settings and features migrate to the Power Platform Admin center. 
+The content from the Customer Engagement admin guide is transitioning to the Power Platform admin guide as settings and features migrate to the Power Platform Admin center. Until the move to the Power Platform Admin center is complete, you’ll still be able to manage settings in Customer Engagement as usual.
+
+For example, many of these admin settings in the Dynamics 365 for Customer Engagement web client...
+
+![Dynamics 365 Settings](./media/old-settings.png)
+
+...are moving here.
+
+![Environment settings](media/environment-settings-mini.png)
+
+<br/>Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 for Customer Engagement apps, and will be accessed through the app settings. 
