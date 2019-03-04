@@ -27,14 +27,13 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 - [Maker](https://www.powershellgallery.com/packages/Microsoft.PowerApps.PowerShell/1.0.1) 
 
 > [!NOTE]
-> Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:
+> **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
 > 
 > The default endpoint is “prod”. If a user wants to run a PowerShell script on the USGOV endpoint, the -Endpoint parameter needs to be changed to “usgov”. GCC level 4 and level 5 are not yet supported.
 > 
 > ```
-> For example: >Add-PowerAppsAccount -Endpoint "usgov" 
+> Add-PowerAppsAccount -Endpoint "usgov" 
 > ```
-
 
 ## Installation
 To run the PowerShell cmdlets for app creators, do the following:
