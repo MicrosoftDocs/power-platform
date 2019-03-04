@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/01/2019
+ms.date: 03/04/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -21,8 +21,11 @@ You can create a database and build apps by using Common Data Service (CDS) for 
 
 There are various ways to create a database:
 
-* In the PowerApps admin center
-* In the **Entities** pane of powerapps.com
+- In the PowerApps admin center
+- In the **Entities** pane of powerapps.com
+
+> [!NOTE]
+> For security reasons, we do not support creating a copy of the database for local use.
 
 ## Create a database in the admin center
 1. In the [admin center](https://admin.powerapps.com), in the left navigation pane, click **Environments**.
