@@ -1,6 +1,6 @@
 ---
-title: "Preview: Administer Power Platform | MicrosoftDocs"
-description: The Power Platform Admin center is the new site to manage Common Data Service for Apps and other apps.
+title: "Administer PowerApps | MicrosoftDocs"
+description: PowerApps administrators can use the PowerApps admin center to manage environments and settings for PowerApps.
 ms.custom: ""
 ms.date: 01/28/2019
 ms.reviewer: ""
@@ -19,11 +19,14 @@ search.app:
 ---
 # Administer PowerApps
 
-PowerApps administrator can use the PowerApps admin center ([admin.powerapps.com](https://admin.powerapps.com)) to manage environments and settings for PowerApps.
+PowerApps administrators can use the PowerApps admin center ([admin.powerapps.com](https://admin.powerapps.com)) to manage environments and settings for PowerApps.
 
-Features from the PowerApps admin center are being moved to the Power Platform admin center. Until the move to the Power Platform Admin center is complete, you’ll still be able to manage settings in Customer Engagement as usual.
+Features from the PowerApps admin center are being moved to the Power Platform admin center. Until the move to the Power Platform Admin center is complete, you’ll still be able to manage environments and settings in PowerApps admin center as usual.
 
 **Start here:**
 
 - [PowerApps Platform overview](wp-powerapps-platform-overview.md)
 - [What's the role of a PowerApps administrator?](overview-role-powerapps-admin.md)
+
+### See also
+[Reference: Use the various admin centers](admin-centers.md)

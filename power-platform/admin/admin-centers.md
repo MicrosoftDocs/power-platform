@@ -22,7 +22,7 @@ search.app:
   - Powerplatform
 ---
 
-## Using the various admin centers
+# Use the various admin centers
 
 Curently, there are multiple admin centers you use to manage and monitor your environments and setting. This topic provides guidance on the basic role of each admin center.
 
