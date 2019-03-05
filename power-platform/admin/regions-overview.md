@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 03/05/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -22,21 +22,23 @@ Your app is deployed in the region that hosts the environment. For example, if y
 
 If you're an administrator, you can determine the region of each environment in the PowerApps admin center.
 
-* Go to the [admin center](https://admin.powerapps.com), and sign in with your work account.
+- Go to the [admin center](https://admin.powerapps.com), and sign in with your work account.
   
-    In the admin center, all existing environments are listed on the **Environments** tab. This list shows the **Region** where your app is deployed:
+    In the admin center, all existing environments are listed on the **Environments*- tab. This list shows the **Region*- where your app is deployed:
   
    ![Environments tab](./media/regions-overview/environment-list.png)
 
 ## What regions are available?
-* United States
-* Canada
-* Europe
-* Asia
-* Australia
-* India
-* Japan
-* United Kingdom
+
+- Asia
+- Australia
+- Canada
+- Europe
+- India
+- Japan
+- South America
+- United Kingdom
+- United States
 
 ## What features are specific to a given region?
 Environments can be created in different regions, and are bound to that geographic location. When you create an app in an environment, that app is deployed in datacenters in that geographic location. This applies to any items you create in that environment, including  databases in the Common Data Service, apps, connections, gateways, and custom connectors.
