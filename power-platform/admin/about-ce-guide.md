@@ -23,7 +23,7 @@ search.app:
 ---
 # Administer Dynamics 365 for Customer Engagement
 
-Dynamics 365 for Customer Engagement administrators can use the Dynamics 365 admin center (<https://port.crm.dynamics.com/G/manage/index.aspx>) to manage the environment and settings. Dynamics 365 Customer Engagement admin content is available at [Administrator Guide for Dynamics 365 for Customer Engagement apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/admin-guide).
+Dynamics 365 for Customer Engagement administrators can use the Dynamics 365 admin center (<https://port.crm.dynamics.com/G/manage/index.aspx>) to manage the environment and settings. Dynamics 365 for Customer Engagement admin content is available at [Administrator Guide for Dynamics 365 for Customer Engagement apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/admin-guide).
 
 > [!NOTE]
 > In some documentation, we previously referred to Dynamics 365 (online) when we were talking more specifically about Dynamics 365 for Customer Engagement applications (apps). We have changed this in our current documentation so that it’s clear when we are referring to the collection of apps that include Sales, Customer Service, Marketing, Field Service, Project Service Automation, and their related services rather than the whole Dynamics 365 product family of applications and services, which includes Finance and Operations, Talent, Retail, and Business Central. You may still see “Dynamics 365 (online)” in some user interfaces (UI). Those strings refer to Dynamics 365 for Customer Engagement apps. 
