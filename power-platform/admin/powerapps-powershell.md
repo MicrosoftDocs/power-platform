@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 01/18/2019
+ms.date: 03/05/2019
 ms.author: jamesol
 search.audienceType: 
   - admin
@@ -25,6 +25,15 @@ With the preview launch of the PowerShell cmdlets for app creators and administr
 Cmdlets are available on the PowerShell gallery as two separate modules: 
 - [Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1)
 - [Maker](https://www.powershellgallery.com/packages/Microsoft.PowerApps.PowerShell/1.0.1) 
+
+> [!NOTE]
+> **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
+> 
+> The default endpoint is “prod”. If a user wants to run a PowerShell script on the USGOV endpoint, the -Endpoint parameter needs to be changed to “usgov”. GCC level 4 and level 5 are not yet supported.
+> 
+> ```
+> Add-PowerAppsAccount -Endpoint "usgov" 
+> ```
 
 ## Installation
 To run the PowerShell cmdlets for app creators, do the following:
@@ -92,7 +101,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 
 | Purpose | Cmdlets
 | --- | ---
-| Read, update, and delete environments & Common Data Service for Apps databases | New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> Get-AdminPowerAppEnvironment *(previously Get-AdminEnvironment)* <br> Remove-AdminPowerAppEnvironment *(previously Remove-AdminEnvironment)* <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations |
+| Read, update, and delete environments and Common Data Service for Apps databases | New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> Get-AdminPowerAppEnvironment *(previously Get-AdminEnvironment)* <br> Remove-AdminPowerAppEnvironment *(previously Remove-AdminEnvironment)* <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations |
 | Delete CDS database | Remove-LegacyCDSDatabase **\*New\*** | 
 | Read, update, and delete environment permissions <br><br> *These cmdlets only work today for environments that do not have a Common Data Service (CDS) for Apps database.* | Get-AdminPowerAppEnvironmentRoleAssignment *(previously Get-AdminEnvironmentRoleAssignment)* <br> Set-AdminPowerAppEnvironmentRoleAssignment *(previously Set-AdminEnvironmentRoleAssignment)* <br> Remove-AdminPowerAppEnvironmentRoleAssignment *(previously Remove-AdminEnvironmentRoleAssignment)* |
 | Read, update, and remove canvas apps | Get-AdminPowerApp *(previously Get-AdminApp)* <br> Remove-AdminPowerApp *(previously Remove-AdminApp)* <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent |
@@ -104,8 +113,9 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read and delete custom connectors | Get-AdminPowerAppConnector *(previously Get-AdminConnector)* <br> Remove-AdminPowerAppConnector *(previously Remove-AdminConnector)* |
 | Read, update, and delete custom connector permissions | Get-AdminPowerAppConnectorRoleAssignment *(previously Get-AdminConnectorRoleAssignment)*<br> Set-AdminPowerAppConnectorRoleAssignment *(previously Set-AdminConnectorRoleAssignment)* <br> Remove-AdminPowerAppConnectorRoleAssignment *(previously Remove-AdminConnectorRoleAssignment)* |
 | Read a user's PowerApps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
-| Read & delete a user's Microsoft Flow settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
-| Create, read, update & delete data loss prevention policies for your organization | Get-AdminDlpPolicy *(previously Get-AdminApiPolicy)* <br> New-AdminDlpPolicy *(previously Add-AdminApiPolicy)* <br> Remove-AdminDlpPolicy *(previously Remove-AdminApiPolicy)* <br> Set-AdminDlpPolicy *(previously Set-AdminApiPolicy)* <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup <br/>Add-CustomConnectorToPolicy<br/> Remove-CustomConnectorFromPolicy|
+| Read and delete a user's Microsoft Flow settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
+| Create, read, update and delete data loss prevention policies for your organization | Get-AdminDlpPolicy *(previously Get-AdminApiPolicy)* <br> New-AdminDlpPolicy *(previously Add-AdminApiPolicy)* <br> Remove-AdminDlpPolicy *(previously Remove-AdminApiPolicy)* <br> Set-AdminDlpPolicy *(previously Set-AdminApiPolicy)* <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup <br/>Add-CustomConnectorToPolicy<br/> Remove-CustomConnectorFromPolicy|
+| Read and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> |
 
 ## Tips
 
