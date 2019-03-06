@@ -45,20 +45,23 @@ Use the following methods to free storage for each of the capacity types.
 
 |  |  |
 |---------|---------|
-|**File**     |        |
+|**File**<sup>1</sup>     |        |
 |     | **Method 3**: Remove email attachments using Advanced Find         |
 |     | **Method 4**: Remove email messages with attachments using a bulk deletion job        |
 |     | **Method 5**: Remove notes with attachments using Advanced Find        |
 |     | **Method 6**: Remove notes with attachments using a bulk deletion job        |
 |**Log**     |         |
 |     | **Method 10**: Delete audit logs        |
-|     | **
+|     | Delete plug-in trace logs [text needed, how is this done? Couldn't find: https://www.powerobjects.com/blog/2016/07/05/debugging-your-plug-ins-with-the-plug-in-trace-log/] |
 |**Database**     |         |
 |     | **Method 1**: Delete bulk email and workflow instances using a bulk deletion job        |
 |     | **Method 2**: Evaluate and delete suspended workflows        |
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
 |     | **Method 8**: Delete bulk import instances using a bulk deletion job        |
 |     | **Method 9**: Delete bulk deletion job instances using a bulk deletion job        |
+
+> [!NOTE]
+> <sup>1</sup>The size of file does not directly correspond to the size of storage as consumption includes additional storage for metadata and encryption. For example, reducing a file by 10 MB of storage does not mean the file size is reduced by 10MB.
 
 <a name="BKMK_Method1"></a>   
 
