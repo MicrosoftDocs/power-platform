@@ -25,7 +25,7 @@
         items:
         - name: Common Data Service for Apps analytics 
           href: analytics-common-data-service.md
-        - name: Capacity
+        - name: Storage capacity
           href: capacity-storage.md
         - name: Free storage space
           href: free-storage-space.md
