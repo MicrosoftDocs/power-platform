@@ -52,7 +52,7 @@ Use the following methods to free storage for each of the capacity types.
 |     | **Method 6**: Remove notes with attachments using a bulk deletion job        |
 |**Log**     |         |
 |     | **Method 10**: Delete audit logs        |
-|     | Delete plug-in trace logs [text needed, how is this done? Couldn't find: https://www.powerobjects.com/blog/2016/07/05/debugging-your-plug-ins-with-the-plug-in-trace-log/] |
+|     | Delete plug-in trace logs using a [bulk deletion job](https://docs.microsoft.com/dynamics365/customer-engagement/admin/delete-bulk-records) |
 |**Database**     |         |
 |     | **Method 1**: Delete bulk email and workflow instances using a bulk deletion job        |
 |     | **Method 2**: Evaluate and delete suspended workflows        |
