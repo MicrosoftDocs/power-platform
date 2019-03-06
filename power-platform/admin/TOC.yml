@@ -1,12 +1,6 @@
 - name: Administer Power Platform
   href: admin-documentation.md
   items:
-  - name: Administer Microsoft Flow
-    href: about-flow-guide.md
-
-  - name: Administer Power BI
-    href: about-powerbi-guide.md
-
   - name: Administer Dynamics 365 for Customer Engagement
     href: about-ce-guide.md
 
@@ -31,6 +25,10 @@
         items:
         - name: Common Data Service for Apps analytics 
           href: analytics-common-data-service.md
+        - name: Capacity
+          href: capacity-storage.md
+        - name: Free storage space
+          href: free-storage-space.md
         # - name: Microsoft Flow analytics
         #   href: analytics-flow.md
         # - name: PowerApps analytics
@@ -218,3 +216,9 @@
           href: common-data-service-gdpr-dsr-guide.md
     - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
+  - name: Administer Microsoft Flow
+    href: about-flow-guide.md
+  - name: Administer Power BI
+    href: about-powerbi-guide.md
+  - name: "Reference: Use the various admin centers"
+    href: admin-centers.md
