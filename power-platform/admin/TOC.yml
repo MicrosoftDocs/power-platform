@@ -1,12 +1,6 @@
 - name: Administer Power Platform
   href: admin-documentation.md
   items:
-  - name: Administer Microsoft Flow
-    href: about-flow-guide.md
-
-  - name: Administer Power BI
-    href: about-powerbi-guide.md
-
   - name: Administer Dynamics 365 for Customer Engagement
     href: about-ce-guide.md
 
@@ -222,3 +216,9 @@
           href: common-data-service-gdpr-dsr-guide.md
     - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
+  - name: Administer Microsoft Flow
+    href: about-flow-guide.md
+  - name: Administer Power BI
+    href: about-powerbi-guide.md
+  - name: "Reference: Use the various admin centers"
+    href: admin-centers.md
