@@ -25,10 +25,10 @@
         items:
         - name: Common Data Service for Apps analytics 
           href: analytics-common-data-service.md
-        - name: Capacity
-          href: capacity-storage.md
-        - name: Free storage space
-          href: free-storage-space.md
+        # - name: Capacity
+        #   href: capacity-storage.md
+        # - name: Free storage space
+        #   href: free-storage-space.md
         # - name: Microsoft Flow analytics
         #   href: analytics-flow.md
         # - name: PowerApps analytics
@@ -38,8 +38,6 @@
         items:
         - name: Environments overview
           href: environments-overview.md
-#        - name: Capacity
-#          href: capacity-storage.md
         - name: Regions overview
           href: regions-overview.md
         - name: Create an environment
