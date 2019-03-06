@@ -45,7 +45,7 @@ Use the following methods to free storage for each of the capacity types.
 
 |  |  |
 |---------|---------|
-|**File**<sup>1</sup>     |        |
+|**File**     |        |
 |     | **Method 3**: Remove email attachments using Advanced Find         |
 |     | **Method 4**: Remove email messages with attachments using a bulk deletion job        |
 |     | **Method 5**: Remove notes with attachments using Advanced Find        |
@@ -61,7 +61,7 @@ Use the following methods to free storage for each of the capacity types.
 |     | **Method 9**: Delete bulk deletion job instances using a bulk deletion job        |
 
 > [!NOTE]
-> <sup>1</sup>The size of file does not directly correspond to the size of storage as consumption includes additional storage for metadata and encryption. For example, reducing a file by 10 MB of storage does not mean the file size is reduced by 10MB.
+> Storage consumed does not directly correspond to the size reported in Common Data Services for Apps; consumption includes additional storage for metadata and encryption. For example, removing 10MB of storage from a file does not mean the file size is reduced by 10MB.
 
 <a name="BKMK_Method1"></a>   
 
