@@ -2,7 +2,7 @@
 title: Integrate data into Common Data Service for Apps
 description: Integrate data from multiple sources into Common Data Service for Apps
 author: sabinn-msft
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
 ms.date: 1/31/2019

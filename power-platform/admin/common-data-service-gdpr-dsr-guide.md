@@ -4,7 +4,7 @@ description: Walkthrough of how to respond to DSR requests for Common Data Servi
 author: jamesol-msft
 ms.reviewer: paulliew
 manager: kvivek
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018

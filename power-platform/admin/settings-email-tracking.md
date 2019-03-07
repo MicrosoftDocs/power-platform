@@ -4,7 +4,7 @@ description: View and manage email tracking settings for Common Data Service for
 ms.custom: ""
 ms.date: 08/10/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
