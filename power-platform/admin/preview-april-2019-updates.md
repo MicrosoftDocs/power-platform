@@ -90,7 +90,7 @@ The Release Notes lists other features across Dynamics 365 – Sales, Service, M
 
 ## FAQ
 
-### How will the April 2019 features be enabled for customers who did not opt-in to the preview?
+### How will the April 2019 features be enabled for customers who did not opt in to the preview?
 
 Starting April 5, 2019, we will enable the April 2019 features (end user impacting only) across our global customer base. Your environment/org will be updated based on the region they are located. Here is the current schedule.
 
