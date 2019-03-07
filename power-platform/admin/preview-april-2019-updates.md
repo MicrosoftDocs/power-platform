@@ -104,7 +104,7 @@ For Dynamics 365 Marketing, you need to explicitly upgrade your app in the Dynam
 
 If you want to enable the April 2019 features (end user impacting only) before the update reaches your region, you can enable the updates yourself by opting in to the April 2019 update between February 1, 2019, and the date your region will be scheduled to have the features turned on. 
 
-To know the list of end user impacting features, check our [Dynamics 365 features for early access](https://aka.ms/April2019Opt-ins). Note: the April 2019, end user impacting features are targeting the Unified Interface only. Web client environments/orgs will not be impacted by these updates.
+To know the list of end user impacting features, check our [Dynamics 365 features for early access](https://aka.ms/April2019Opt-ins). Note: End user impacting features for April 2019 release are targeting the Unified Interface only. Web client environments/orgs will not be impacted by these updates.
 
 ### Will the version number get updated with the April 2019 update?
 No, the version number will not get changed with the April 2019 update.
