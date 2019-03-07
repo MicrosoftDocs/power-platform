@@ -100,7 +100,7 @@ Shown earlier, the import feature allows the maker to update an existing app in 
 - Custom connectors updates must be performed first, as your app may rely on new data definitions.
 - Custom connector updates may take a few minutes to be reflected in the portal. During that time, new operations may return a 404 error when invoked.
 - If extensive changes are being made, consider creating a new custom connector and leaving the old connector intact. This can also be beneficial in the event the maker needs to roll back, as the previous version of the app will use the old (existing) connector.
-- PowerApps uses caching for the web and mobile clients, so changes may not be imme. For the web client, be sure to clear your cache to see the new changes. On the mobile client, swipe down to refresh app metadata.
+- PowerApps uses caching for the web and mobile clients, so changes may not be immediate. For the web client, be sure to clear your cache to see the new changes. On the mobile client, swipe down to refresh app metadata.
 
 ## Ongoing application maintenance
 

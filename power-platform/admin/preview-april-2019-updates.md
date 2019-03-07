@@ -2,7 +2,7 @@
 title: "Opt in to April 2019 updates | MicrosoftDocs"
 description: Opt in to April 2019 updates for the Dynamics 365 for Customer Engagement platform.
 ms.custom: ""
-ms.date: 03/04/2019
+ms.date: 03/07/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -90,8 +90,21 @@ The Release Notes lists other features across Dynamics 365 – Sales, Service, M
 
 ## FAQ
 
-### How will the April 2019 features be enabled for customers who did not opt-in to the preview?
-Starting on April 5, 2019, we will begin to use our gradual region-by-region deployment cadence to enable the April 2019 features across our global customer base. This update will be like the Minor Service Update experience we are delivering today and won’t require you to schedule downtime to perform the update. The updates will be applied over the entire month of April. If you want to enable the April 2019 features before the update reaches your region, you can enable the updates yourself by opting in to the preview between February 1, 2019, and the date your region will be scheduled to have the features turned on. In coming months, we will publish the specific schedule for when the April 2019 features will be enabled for each region.
+### How will the April 2019 features be enabled for customers who did not opt in to the preview?
+
+Starting April 5, 2019, we will enable the April 2019 features (end user impacting only) across our global customer base. Your environment/org will be updated based on the region they are located. Here is the current schedule.
+
+|Japan  |South America  |Canada  |India  |Asia  |Great Britain  |Australia  |Europe  |North America|
+|---------|---------|---------|---------|---------|---------|---------|---------|--------|
+|Fri 4/5  | Fri 4/5  | Fri 4/5 |Fri 4/5 | Fri 4/12 | Fri 4/12 | Fri 4/12 | Fri 4/19 |Fri 4/26 |
+
+On the above dates, your environments will have the April 2019 updates automatically applied for the Dynamics 365 platform and the Sales app. It will not require any action from you.
+
+For Dynamics 365 Marketing, you need to explicitly upgrade your app in the Dynamics 365 Admin Center.
+
+If you want to enable the April 2019 features (end user impacting only) before the update reaches your region, you can enable the updates yourself by opting in to the April 2019 update between February 1, 2019, and the date your region will be scheduled to have the features turned on. 
+
+To know the list of end user impacting features, check our [Dynamics 365 features for early access](https://aka.ms/April2019Opt-ins). Note: the April 2019, end user impacting features are targeting the Unified Interface only. Web client environments/orgs will not be impacted by these updates.
 
 ### Will the version number get updated with the April 2019 update?
 No, the version number will not get changed with the April 2019 update.
