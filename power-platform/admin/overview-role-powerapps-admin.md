@@ -2,7 +2,7 @@
 title: Overview of the role of a PowerApps administrator | Microsoft Docs
 description: Overview of the PowerApps adoption journey and the role of a PowerApps administrator
 author: jimholtz
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 06/30/2018

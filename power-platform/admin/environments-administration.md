@@ -3,7 +3,7 @@ title: Manage environments | Microsoft Docs
 description: Learn how to mamange environments in PowerApps, including creation, renaming, deletion, and security
 author: manasmams
 manager: kvivek
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/18/2019

@@ -4,7 +4,7 @@ description: Provides detailed information about the security model in Common Da
 ms.custom: ""
 ms.date: 02/26/2019
 ms.reviewer: ""
-ms.service: "powerapps"
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"

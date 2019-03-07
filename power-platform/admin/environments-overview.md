@@ -3,7 +3,7 @@ title: Environments overview | Microsoft Docs
 description: Learn about environments in PowerApps and how to use them
 author: manasmams
 manager: kvivek
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/29/2018

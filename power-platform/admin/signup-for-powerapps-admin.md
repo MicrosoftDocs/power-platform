@@ -3,7 +3,7 @@ title: Purchase PowerApps for your organization | Microsoft Docs
 description: Walkthrough of how to sign up for PowerApps as an administrator.
 author: manasmams
 manager: kvivek
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018

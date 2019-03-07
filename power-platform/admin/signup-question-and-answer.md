@@ -3,7 +3,7 @@ title: Manage licenses in your organization | Microsoft Docs
 description: Common questions and answers about licenses, administration, and users signing up for PowerApps in your Office 365 tenant
 author: jamesol-msft
 manager: kvivek
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
