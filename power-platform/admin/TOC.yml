@@ -3,7 +3,6 @@
   items:
   - name: Administer Dynamics 365 for Customer Engagement
     href: about-ce-guide.md
-
   - name: "Administer PowerApps"
     href: admin-guide.md 
     items:
