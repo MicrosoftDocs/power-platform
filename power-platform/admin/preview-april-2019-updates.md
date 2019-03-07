@@ -91,7 +91,6 @@ The Release Notes lists other features across Dynamics 365 – Sales, Service, M
 ## FAQ
 
 ### How will the April 2019 features be enabled for customers who did not opt-in to the preview?
-<!-- Starting on April 5, 2019, we will begin to use our gradual region-by-region deployment cadence to enable the April 2019 features across our global customer base. This update will be like the Minor Service Update experience we are delivering today and won’t require you to schedule downtime to perform the update. The updates will be applied over the entire month of April. If you want to enable the April 2019 features before the update reaches your region, you can enable the updates yourself by opting in to the preview between February 1, 2019, and the date your region will be scheduled to have the features turned on. In coming months, we will publish the specific schedule for when the April 2019 features will be enabled for each region.-->
 
 Starting April 5, 2019, we will enable the April 2019 features (end user impacting only) across our global customer base. Your environment/org will be updated based on the region they are located. Here is the current schedule.
 
@@ -101,7 +100,7 @@ Starting April 5, 2019, we will enable the April 2019 features (end user impacti
 
 If you want to enable the April 2019 features (end user impacting only) before the update reaches your region, you can enable the updates yourself by opting in to the April 2019 update between February 1, 2019, and the date your region will be scheduled to have the features turned on. 
 
-To know the list of end user impacting features, check our [Dynamics 365 features for early access](https://aka.ms/April2019Opt-ins). Note: the April 2019, end user impacting features are targeting the Unified Interface only. The Web clients orgs will not have these updates.
+To know the list of end user impacting features, check our [Dynamics 365 features for early access](https://aka.ms/April2019Opt-ins). Note: the April 2019, end user impacting features are targeting the Unified Interface only. Web client environments/orgs will not be impacted by these updates.
 
 ### Will the version number get updated with the April 2019 update?
 No, the version number will not get changed with the April 2019 update.
