@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/09/2019
+ms.date: 03/07/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -78,10 +78,6 @@ You can also purchase a PowerApps Plan.
 ### Can every Office 365 Global admin or Azure AD tenant admin convert a Trial environment to a Production environment?
 
 No. Global admins and Azure AD tenant admins need to have available quota for Production environments to be able to convert a Trial environment to a Production environment.
-
-### Is there a way to recover a deleted Trial environment?
-
-We cannot guarantee recovery of a deleted Trial environment, but we will make our best effort to recover it within 7 days of deletion. We cannot recover the environment's database but can recover the apps (created with PowerApps) and flows.
 
 ### How can I retain my data and resources if I don’t have a way to convert the Trial environment to a Production environment?
 
