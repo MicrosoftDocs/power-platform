@@ -32,12 +32,10 @@ These are ways to reduce the amount of storage space used by removing or deletin
 >  The suggestions in this topic include deleting notes, attachments, import history, and other data. Before you delete data, be sure that the data is no longer needed because you cannot retrieve deleted data. There is no “undo” to restore your data once it has been deleted. This means it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
 > 
 > [!NOTE]
->  Except for methods 3 and 5, all these methods require that you have an administrator [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps scurity role, such as System Administrator. This gives you permission to delete records in bulk and to delete system jobs.  
->
->  After performing actions to free up storage, the system can take up to 24 hours to update storage information. We recommend waiting up to 24 hours and monitoring your storage.  
-  
-> [!NOTE]
-> Some platform operations require you to wait 24-36 hours to confirm data size changes. Such operations include but are not limited to upgrades to new versions and introduction of new workflows. Such operations require system adjustments that might result in a momentary size increase report.
+>  - Except for methods 3 and 5, all these methods require that you have an administrator [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps scurity role, such as System Administrator. This gives you permission to delete records in bulk and to delete system jobs.  
+>  - After performing actions to free up storage, the system can take up to 24 hours to update storage information. We recommend waiting up to 24 hours and monitoring your storage.  
+>  - Storage consumed does not directly correspond to the size reported in Common Data Services for Apps; consumption includes additional storage for metadata and encryption. For example, removing 10MB of storage from a file does not mean the file size is reduced by 10MB.
+>  - Some platform operations require you to wait 24-36 hours to confirm data size changes. Such operations include but are not limited to upgrades to new versions and introduction of new workflows. Such operations require system adjustments that might result in a momentary size increase report.
 
 ## Freeing storage for Common Data Service for Apps
 
@@ -59,9 +57,6 @@ Use the following methods to free storage for each of the capacity types.
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
 |     | **Method 8**: Delete bulk import instances using a bulk deletion job        |
 |     | **Method 9**: Delete bulk deletion job instances using a bulk deletion job        |
-
-> [!NOTE]
-> Storage consumed does not directly correspond to the size reported in Common Data Services for Apps; consumption includes additional storage for metadata and encryption. For example, removing 10MB of storage from a file does not mean the file size is reduced by 10MB.
 
 <a name="BKMK_Method1"></a>   
 
