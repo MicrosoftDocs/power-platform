@@ -98,10 +98,11 @@ Starting April 5, 2019, we will enable the April 2019 features (end user impacti
 |---------|---------|---------|---------|---------|---------|---------|---------|--------|
 |Fri 4/5  | Fri 4/5  | Fri 4/5 |Fri 4/5 | Fri 4/12 | Fri 4/12 | Fri 4/12 | Fri 4/19 |Fri 4/26 |
 
-**Please note:**
-The April 2019 update will enable features (impacting end user experience changes) across the Dynamics 365 platform, Sales app, and Marketing app.
-- Your environment will have the April 2019 updates automatically applied for the Dynamics 365 platform and the Sales app based on the above schedule. It will not require any action from you.
-- For Dynamics 365 Marketing, you need to explicitly upgrade your app in the Dynamics 365 Admin Center.
+On the above dates, your environments will have the April 2019 updates automatically applied for the Dynamics 365 platform and the Sales app. It will not require any action from you.
+
+For Dynamics 365 Marketing, you need to explicitly upgrade your app in the Dynamics 365 Admin Center.
+
+<!-- The April 2019 update will enable features (impacting end user experience changes) across the Dynamics 365 platform, Sales app, and Marketing app. -->
 
 If you want to enable the April 2019 features (end user impacting only) before the update reaches your region, you can enable the updates yourself by opting in to the April 2019 update between February 1, 2019, and the date your region will be scheduled to have the features turned on. 
 
