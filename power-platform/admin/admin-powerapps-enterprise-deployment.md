@@ -4,7 +4,7 @@ description: Check out the whitepaper on administering a PowerApps enterprise de
 ms.custom: ""
 ms.date: 08/09/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"

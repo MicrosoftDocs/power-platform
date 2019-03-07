@@ -3,7 +3,7 @@ title: Regions overview | Microsoft Docs
 description: Learn about regions in PowerApps
 author: manasmams
 manager: kvivek
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/05/2019

@@ -4,7 +4,7 @@ description: Walkthrough of how to migrate PowerApps apps between environments a
 author: jamesol-msft
 manager: kvivek
 ms-topic: conceptual
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.author: jamesol

@@ -4,7 +4,7 @@ description: Walkthrough of how to create a Common Data Service (CDS) for Apps d
 services: powerapps
 author: manasmams
 manager: kvivek
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/04/2019

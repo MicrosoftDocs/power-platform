@@ -3,7 +3,7 @@ title: "Common Data Service for Apps analytics | MicrosoftDocs"
 ms.custom: ""
 ms.date: 09/27/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

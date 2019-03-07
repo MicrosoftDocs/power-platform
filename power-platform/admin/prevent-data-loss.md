@@ -3,7 +3,7 @@ title: Manage data loss prevention (DLP) policies | Microsoft Docs
 description: Walkthrough of how to manage data loss prevention policies for PowerApps.
 author: manasmams
 manager: kvivek
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018

@@ -4,7 +4,7 @@ description: View and manage behavior settings for Common Data Service for Apps.
 ms.custom: ""
 ms.date: 09/14/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"

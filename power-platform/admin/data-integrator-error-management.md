@@ -2,7 +2,7 @@
 title: Data Integrator error management and troubleshooting
 description: Integrate data from multiple sources into Common Data Service for Apps
 author: sabinn-msft
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
 ms.date: 12/07/2018

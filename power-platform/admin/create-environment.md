@@ -2,7 +2,7 @@
 title: Create an environment | Microsoft Docs
 description: In this quickstart, you learn how to create an environment
 author: jimholtz
-ms.service: powerapps
+ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 08/29/2018
