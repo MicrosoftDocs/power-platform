@@ -3,7 +3,6 @@
   items:
   - name: Administer Dynamics 365 for Customer Engagement
     href: about-ce-guide.md
-
   - name: "Administer PowerApps"
     href: admin-guide.md 
     items:
@@ -25,10 +24,10 @@
         items:
         - name: Common Data Service for Apps analytics 
           href: analytics-common-data-service.md
-        - name: Storage capacity
-          href: capacity-storage.md
-        - name: Free storage space
-          href: free-storage-space.md
+        # - name: Capacity
+        #   href: capacity-storage.md
+        # - name: Free storage space
+        #   href: free-storage-space.md
         # - name: Microsoft Flow analytics
         #   href: analytics-flow.md
         # - name: PowerApps analytics

@@ -4,7 +4,7 @@ description: The Power Platform Admin center is the new site to manage Common Da
 ms.custom: ""
 ms.date: 01/28/2019
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"

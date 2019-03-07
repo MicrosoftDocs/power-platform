@@ -4,7 +4,7 @@ description: Use the Help + support experience to contact a Microsoft support re
 ms.custom: ""
 ms.date: 09/20/2018
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

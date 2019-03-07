@@ -4,7 +4,7 @@ description: View and manage on-premises gateways.
 ms.custom: ""
 ms.date: 01/25/2019
 ms.reviewer: ""
-ms.service: "crm-online"
+ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
