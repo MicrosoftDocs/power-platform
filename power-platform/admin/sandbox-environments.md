@@ -1,5 +1,5 @@
 ---
-title: "Sandbox environments | MicrosoftDocs"
+title: "About Sandbox environments | MicrosoftDocs"
 description: Learn about the usage and management of Sandbox environments. 
 ms.custom: ""
 ms.date: 03/15/2019
@@ -20,7 +20,7 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Sandbox environments
+# About Sandbox environments
 
 A Sandbox environment is any non-production environment of Common Data Service for apps. Isolated from production, a Sandbox environment is the place to safely develop and test application changes with low risk.
 
