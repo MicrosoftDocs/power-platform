@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/05/2019
+ms.date: 03/07/2019
 ms.author: jamesol
 search.audienceType: 
   - admin
@@ -77,6 +77,7 @@ Users with a valid PowerApps license can perform the operations in these cmdlets
 
 | Purpose | Cmdlet |
 | --- | --- |
+| Add a canvas app to a Common Data Service solution | SetPowerAppAsSolutionAware |
 | Read environments | Get-PowerAppEnvironment *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment |
 | Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)* <br> Set-AppDisplayName *(previously Set-PowerAppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> Restore-PowerAppVersion *(previously Restore-AppVersion)* |
 | Read, update, and delete canvas app permissions | Get-PowerAppRoleAssignment *(previously Get-AppRoleAssignment)* <br> Set-PowerAppRoleAssignment *(previously Set-AppRoleAssignment)* <br> Remove-PowerAppRoleAssignment *(previously Remove-AppRoleAssignment)* |
