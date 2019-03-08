@@ -96,7 +96,7 @@ Starting April 5, 2019, we will enable the April 2019 features (end user impacti
 
 |Japan  |South America  |Canada  |India  |Asia  |Great Britain  |Australia  |Europe  |North America|
 |---------|---------|---------|---------|---------|---------|---------|---------|--------|
-|Fri 4/5  | Fri 4/5  | Fri 4/5 |Fri 4/5 | Fri 4/12 | Fri 4/12 | Fri 4/12 | Fri 4/19 |Fri 4/26 |
+|Fri, April 5 | Fri, April 5  | Fri, April 5  |Fri, April 5  | Fri, April 12 | Fri, April 12 | Fri, April 12 | Fri, April 19 |Fri, April 26 |
 
 On the above dates, your environments will have the April 2019 updates automatically applied for the Dynamics 365 platform and the Sales app. It will not require any action from you.
 
