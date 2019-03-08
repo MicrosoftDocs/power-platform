@@ -45,6 +45,8 @@
           href: create-database.md
         - name: PowerApps Preview Program
           href: preview-environments.md
+        - name: About Sandbox environments
+          href: sandbox-environments.md
         - name: About Trial environments
           href: trial-environments.md     
       - name: Manage settings
