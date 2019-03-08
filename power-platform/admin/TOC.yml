@@ -169,6 +169,8 @@
     - name: Management and monitoring
       href: wp-management-monitoring.md
       items: 
+      # - name: Governance considerations
+      #   href: governance-considerations.md
       - name: Working with the Admin Portals 
         href: wp-work-with-admin-portals.md
       - name: Automation of tasks with PowerShell 
