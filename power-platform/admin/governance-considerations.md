@@ -31,5 +31,82 @@ Many customers wonder: How can PowerApps and Microsoft Flow be made available to
 ## Architecture
 It’s best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a PowerApps, Microsoft Flow and Common Data Service for Apps. [Environments Overview](environments-overview.md) is a good primer which should be followed by [Common Data Service for Apps](wp-cds-for-apps.md), [Types of PowerApps](wp-types-powerapps.md), [Microsoft Flow](wp-about-flows.md), [Connectors](wp-connectors.md),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
+## Security 
+This section outlines mechanisms that exist to control who can access PowerApps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Flow. 
+
+### Licensing 
+Access to PowerApps and Flow starts with having a license, the type of license a user has determines the assets and data a user can access. The following table outlines differences in resources available to a user based on their plan type, from a high-level. Granular licensing details can be found in the [Licensing overview](pricing-billing-skus.md).
+
+
+|Plan  |Description  |
+|---------|---------|
+|Office 365 Included     | This allows users to extend SharePoint and other Office assets they already have.        |
+|Dynamics 365 Included     | This allows users to customize and extend Dynamics 365 apps they already have.        |
+|PowerApps P1     | This allows makes enterprise connectors and Common Data Service for Apps accessible for use.        |
+|PowerApps P2     | This allows users to use robust business logic across application types and administration capabilities.        |
+
+### Environments
+After users have licenses, environments exist as containers for all resources utilized by PowerApps, Microsoft Flow and Common Data Service for Apps. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
+
+#### FAQ –  Who can provision an environment?
+a. The default environment is created automatically when the first PowerApps or Microsoft Flow user signs-in. 
+b. Developer environment is created whenever a user signs-up for the PowerApps community plan – [http://aka.ms/powerappcommunityplan ](http://aka.ms/powerappcommunityplan )
+c. Up to 2 trial environments can be created by any user who signs-up for a PowerApps Plan 2 or Microsoft Flow Plan 2 30-day trial license.
+d. Production environments can be created by any user who has a PowerApps Plan 2 or Microsoft Plan 2 license.
+e. Production environments are pooled at the tenant level - every Plan 2 license grants an entitlement to provision 2 additional environments
+
+### Secure your data and network
+a. PowerApps and Flow *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
+b. Network Access control policies can also apply to PowerApps and Flow. For instance, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps & Flow. 
+c. In an environment, access is controlled at three levels: [Environment roles](database-security.md), [Resource permissions for PowerApps](wp-controlling-access.md), Microsoft Flows, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
+d. When Common Data Service for Apps is created in an environment the Common Data Service for Apps roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
+
+The following principals are supported for each role type.
+
+|Environment type  |Role  |Principal Type (AAD)  |
+|---------|---------|---------|
+|Environment without Common Data Service for Apps     | Environment role        | User, group, tenant         |
+|     | Resource permission: Canvas app        | User, group, tenant        |
+|     | Resource permission: Flow, Custom Connector, Gateways, Connections<sup>1</sup>        | User, group        |
+|Environment with Common Data Service for Apps      | Environment role        | User        |
+|     |Resource permission: Canvas app         |User, group, tenant         |
+|     | Resource permission: Flow, Custom Connector, Gateways, Connections<sup>1</sup>          |User, group         |
+|     |CDS role (applies to all model-driven apps & components)         |User         |
+
+<sup>1</sup>Only certain connection (like SQL) can be shared.
+
+> [!NOTE]
+> - In the Default environment, all users in a tenant are granted access to the Environment Maker role. 
+> - Azure AD tenant Global Administrators have admin access to all environments.
+
+#### FAQ - What permissions exist at an Azure AD tenant level? 
+
+**Without a PowerApps Plan 2 license** 
+
+1. [Download the PowerApps and Microsoft Flow license report](admin-view-user-licenses.md).
+2. [Create DLP policy scoped only to ‘All Environments’](create-dlp-policy.md).
+3. [Manage and assign licenses via Office admin center](signup-question-and-answer.md).
+
+**With a PowerApps Plan 2 license**
+
+1. [Download the PowerApps and Microsoft Flow license report](admin-view-user-licenses.md).
+2. [Create DLP policy scoped only to ‘All Environments’](create-dlp-policy.md) or scoped to include/exclude specific environments.
+3. [Manage and assign licenses via Office admin center](signup-question-and-answer.md).
+4. Full access to all the environment, app, and flow management capabilities for all environments in the tenant available via:
+   a. [PowerApps Admin center](https://admin.powerapps.com/)
+   b. [PowerApps Admin PowerShell cmdlets](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell)
+   c. [PowerApps management connectors](https://aka.ms/adminconnectorreference)
+5. Full access the PowerApps and Microsoft Flow admin analytics for all environments in the tenant:
+   a. [https://aka.ms/paadminanalytics  ](https://aka.ms/paadminanalytics)
+   b. [https://aka.ms/flowadminanalytics](https://aka.ms/flowadminanalytics) 
+
+
+
+
+
+
+
+
+
 
 
