@@ -180,5 +180,58 @@ The following principals are supported for each role type.
          1. https://YourOrgID.crm.dynamics.com/api/data/v9.0/roles(d58407f2-48d5-e711-a82c-000d3a37c848) 
          2. These roleid’s will be unique to each environment.
 
+### Consider location-based conditional access
 
+For customers with Azure AD Premium, conditional access policies can be defined in Azure for PowerApps and Microsoft Flow. This allows granting or blocking access based upon: user/group, device, location. 
 
+#### Creating a Conditional Access Policy
+
+1. Sign-in to http://portal.azure.com 
+2. Select Azure Active Directory
+3. Select Conditional Access.
+4. Select + New Policy
+5. Select user and groups
+6. Select the cloud apps
+7. Apply conditions (user/group, device, location) 
+
+### Prevent data leakage with data loss prevent policies
+
+Data loss prevention policies (DLP) enforce rules for which connectors can be used together by classifying connectors as either Business Data only or No Business Data allowed. Simply, if you put a connector in the business data only group, it can only be used with other connectors from that group in the same application. Tenant admins can define policies that apply to all environments.
+
+#### FAQ
+
+Q: Can I control, on the tenant level, which connector is at all available, e.g. No to Dropbox or Twitter but Yes to SharePoint)?
+
+A: This is not possible. Customers can subscribe to Audit events to perform corrective action if there are flows that have been built that create concerns for customers. In fact, a very large PowerApps customer has leveraged this approach to apply another level of governance.
+ 
+Q: What about Sharing connectors between users? E.g. the connector for Teams is a general one that can be shared (?)
+
+A: Connectors are available to all users. With the exception of premium or custom connectors which need either an additional license (premium connectors) or have to be explicitly shared (custom connectors)
+
+## Monitor
+
+It’s well understood that monitoring as a critical aspect of managing software at scale, this section highlights a couple of means to get insight in PowerApps and Flow development and usage.  
+
+### Review the audit trail
+
+Activity logging for PowerApps is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dynamics 365 and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting
+
+### Download the PowerApps & Microsoft Flow license report
+
+1. https://admin.powerapps.com/tenant/userLicenses 
+2. View PowerApps & Microsoft Flow admin analytics
+
+   1. Available now in preview from the new Power Platform admin center. 
+   2. One can get information along the following lines: 
+
+     1. Active User and App usage  - how many users are using an app and how often? 
+     2. Location – where is the usage? 
+     3. Service Performance of connectors
+     4. Error reporting – which are the most error prone apps
+     5. Flows in use by type and date
+     6. Flows created by type and date
+     7. Application-level auditing 
+     8. Service Health
+     9. Connectors used
+
+## Alert and action
