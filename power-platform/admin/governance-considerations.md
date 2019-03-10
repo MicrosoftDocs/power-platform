@@ -103,7 +103,6 @@ The following principals are supported for each role type.
 ### Manage environment role assignments using Microsoft Flow
 
 1. For environments *without* a Common Data Service for Apps database, the [Power Platform for Admins connector](https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/) provides the ability to manage environment role assignments. 
-
 2. For environments *with* a Common Data Service for Apps database, the built-in Common Data Service for Apps connector doesn’t have support for managing roles, but you can use a Microsoft Flow to do it through the web API via the following steps: 
 
    1. Create your Azure AD App. 
@@ -123,7 +122,6 @@ The following principals are supported for each role type.
       8. Be sure to **Save**.
 
    2. Create your custom connector
-
       1. Navigate to https://web.powerapps.com and sign-in with an ID that has administrative permission for both Active Directory and for CRM.
       2. If you have multiple environments, select the environment in which you want the custom connector to be created.
       3. Download the Open API file here: https://procsi.blob.core.windows.net/docs/CDS-Permissions.swagger.json 
@@ -145,7 +143,6 @@ The following principals are supported for each role type.
       13. If you refresh the page you should see the Redirect URL. Copy this. Go back to the Azure AD app in the Azure portal and select Reply URLs. Paste in this redirect URL you copied and click Save. 
 
    3. Build a sample flow that does a one-time copy from Group to a Role
-
       1. Through flow it is easy to build this by using an Office365 Group or an Azure AD Group.
       2. For Office 365 groups:
 
@@ -157,7 +154,6 @@ The following principals are supported for each role type.
          3. When using Office 365 groups you have to list users based on whether the “internalemailaddress” field from the “List users” action in the custom connector is equal to the “User Principal Name” field (which is normally the email address) in the Office 365 Group. (Notice the single quotes around “User Principal Name” since it’s a string.)
         
       3. For Azure AD groups: 
-
          1.	Azure AD Security Groups are typically created by AD Administrators rather than business users.  AD Security Groups can be used in other systems to create group hierarchies. 
          2. In cases where the User Principal Name may not be the same as the Email address you will have to use an Azure AD Group as it can do a comparison with the actual AD User GUID in CDS rather than relying on the email address.  
          3. Rather than using the “List Group Member” action of the Office 365 Groups connector, the flow should use the “Get Group Members” action of the Azure AD Connector.  This action requires the ID of the group which a network administrator can obtain from the Azure AD Portal.  
@@ -169,14 +165,12 @@ The following principals are supported for each role type.
       4. Once you’ve identified the user(s) that you want to assign to the role, the next step is to search for that user in the Common Data Service for Apps (to get the CDS id). 
       5. Then, based on that result we set the user role. The second foreach isn’t needed, because List users should always return one user.
       6. To assign the correct role, you should first query the REST Endpoint of your instance, for example:
-
          1.	https://orga2e7dd43.crm.dynamics.com/api/data/v9.0/roles?$select=name,roleid 
          2.	This will return a list of names and ID’s for all the available roles, for example:
  
             image
        
       7. If you want to add the users to the “Environment Maker” Role then the “Role ODataID” parameter would be set to:
-
          1. https://YourOrgID.crm.dynamics.com/api/data/v9.0/roles(d58407f2-48d5-e711-a82c-000d3a37c848) 
          2. These roleid’s will be unique to each environment.
 
@@ -220,10 +214,8 @@ Activity logging for PowerApps is integrated with Office Security and Compliance
 
 1. https://admin.powerapps.com/tenant/userLicenses 
 2. View PowerApps & Microsoft Flow admin analytics
-
    1. Available now in preview from the new Power Platform admin center. 
    2. One can get information along the following lines: 
-
      1. Active User and App usage  - how many users are using an app and how often? 
      2. Location – where is the usage? 
      3. Service Performance of connectors
@@ -255,12 +247,10 @@ In addition to monitoring, many customers want to subscribe to software creation
 1.	These PowerShell cmdlets place full control in the hands of admins to automate the governance policies necessary. 
 2.	The Management connectors provide the same level of control but with added extensibility and ease-of-uses by leveraging PowerApps and Flow. 
 3.	The following Microsoft Flow templates for administration connectors exist for ramping up quickly:
-
    1.	List new Microsoft Flow Connectors
    2.	List new PowerApps, Flows and Connectors
    3.	Email me a weekly summary of Office 365 Message Center notices
    4.	Access Office 365 Security and Compliance Logs from Microsoft Flow
-
 4.	This blog and app template exist to help ramping up quickly on the administration connectors. 
 
 ### FAQ
