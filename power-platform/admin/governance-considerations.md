@@ -145,14 +145,12 @@ The following principals are supported for each role type.
    3. Build a sample flow that does a one-time copy from Group to a Role
       1. Through flow it is easy to build this by using an Office365 Group or an Azure AD Group.
       2. For Office 365 groups:
-
          1. The Office 365 Groups connector contains an action for “List Group Members” that will return all the users in the selected Office 365 group. 
       
             image
 
          2. Using an Office 365 group as your source for role updates allows your users to update group members through the Office 365 UI and then run the flow to apply the changes.  This allows the business to control who they want to be makers and administrators in their environments. 
          3. When using Office 365 groups you have to list users based on whether the “internalemailaddress” field from the “List users” action in the custom connector is equal to the “User Principal Name” field (which is normally the email address) in the Office 365 Group. (Notice the single quotes around “User Principal Name” since it’s a string.)
-        
       3. For Azure AD groups: 
          1.	Azure AD Security Groups are typically created by AD Administrators rather than business users.  AD Security Groups can be used in other systems to create group hierarchies. 
          2. In cases where the User Principal Name may not be the same as the Email address you will have to use an Azure AD Group as it can do a comparison with the actual AD User GUID in CDS rather than relying on the email address.  
@@ -161,7 +159,6 @@ The following principals are supported for each role type.
             image
          
          4. Notice that the List Users query now looks for records where “azureactivedirectoryobjectid” equals the Id from the AD Group. (No quotes are required around the Id because it’s a GUID.  Adding quotes will make this $filter fail.)
-
       4. Once you’ve identified the user(s) that you want to assign to the role, the next step is to search for that user in the Common Data Service for Apps (to get the CDS id). 
       5. Then, based on that result we set the user role. The second foreach isn’t needed, because List users should always return one user.
       6. To assign the correct role, you should first query the REST Endpoint of your instance, for example:
@@ -263,14 +260,14 @@ The PowerShell cmdlets and Management connectors provide full flexibility and co
 
 Here are three samples: 
 
-1.	Download a report of activity w/ PowerShell. 
+1. Download a report of activity w/ PowerShell. 
 This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  NOTE: the calling user or user account must be a global admin & have a PowerApps Plan 2 (or P2 trial) license.
 	
-Q: Where should we host .zip files in the following deck? (Governance.pptx slide 48)
+   Q: Where should we host .zip files in the following deck? (Governance.pptx slide 48)
 
-2.	Notify un-authorized app creators and share their app w/ administrators (automated with Flow)This is a daily flow that identified ‘authorized’ creators via a security group(s) check and sends a notification to un-authorized app creators AND a summary report to administrators.  The flow also shares the app w/ administrators for auditing.
+2. Notify un-authorized app creators and share their app w/ administrators (automated with Flow)This is a daily flow that identified ‘authorized’ creators via a security group(s) check and sends a notification to un-authorized app creators AND a summary report to administrators.  The flow also shares the app w/ administrators for auditing.
 
-3.	Find and disable flows that leverage certain connectors
+3. Find and disable flows that leverage certain connectors
 This is a flow that runs every 30 minutes and automatically disables flows that include certain connectors. In this flow I identified flows from the following connectors – but the flow can be extended to identify any connector.
 
 ## Deploy
