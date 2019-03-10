@@ -122,9 +122,9 @@ The following principals are supported for each role type.
       8. Be sure to **Save**.
 
    2. Create your custom connector
-      1. Navigate to https://web.powerapps.com and sign-in with an ID that has administrative permission for both Active Directory and for CRM.
+      1. Navigate to [https://web.powerapps.com](https://web.powerapps.com) and sign-in with an ID that has administrative permission for both Active Directory and for CRM.
       2. If you have multiple environments, select the environment in which you want the custom connector to be created.
-      3. Download the Open API file here: https://procsi.blob.core.windows.net/docs/CDS-Permissions.swagger.json 
+      3. Download the Open API file here: [https://procsi.blob.core.windows.net/docs/CDS-Permissions.swagger.json](https://procsi.blob.core.windows.net/docs/CDS-Permissions.swagger.json) 
       4. Go to the settings gear at the top of the portal and select Custom Connectors
       5. Select Create custom connector >Import from an Open API file
       6. Give the custom connector a meaningful name, e.g. “CDS Permissions” and select the CDS-Permissions Swagger file that you downloaded.
@@ -177,7 +177,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 #### Creating a Conditional Access Policy
 
-1. Sign-in to http://portal.azure.com 
+1. Sign-in to [http://portal.azure.com](http://portal.azure.com) 
 2. Select Azure Active Directory
 3. Select Conditional Access.
 4. Select + New Policy
@@ -187,7 +187,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 ### Prevent data leakage with data loss prevent policies
 
-Data loss prevention policies (DLP) enforce rules for which connectors can be used together by classifying connectors as either Business Data only or No Business Data allowed. Simply, if you put a connector in the business data only group, it can only be used with other connectors from that group in the same application. Tenant admins can define policies that apply to all environments.
+[Data loss prevention policies (DLP)](wp-data-loss-prevention.md) enforce rules for which connectors can be used together by classifying connectors as either Business Data only or No Business Data allowed. Simply, if you put a connector in the business data only group, it can only be used with other connectors from that group in the same application. Tenant admins can define policies that apply to all environments.
 
 #### FAQ
 
@@ -205,13 +205,13 @@ It’s well understood that monitoring as a critical aspect of managing software
 
 ### Review the audit trail
 
-Activity logging for PowerApps is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dynamics 365 and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting
+[Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dynamics 365 and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting
 
 ### Download the PowerApps & Microsoft Flow license report
 
-1. https://admin.powerapps.com/tenant/userLicenses 
+1. [https://admin.powerapps.com/tenant/userLicenses](https://admin.powerapps.com/tenant/userLicenses) 
 2. View PowerApps & Microsoft Flow admin analytics
-   1. Available now in preview from the new Power Platform admin center. 
+   1. Available now in preview from the new [Power Platform admin center](https://aka.ms/ppac). 
    2. One can get information along the following lines: 
      1. Active User and App usage  - how many users are using an app and how often? 
      2. Location – where is the usage? 
@@ -227,7 +227,7 @@ Activity logging for PowerApps is integrated with Office Security and Compliance
 
 In addition to monitoring, many customers want to subscribe to software creation, usage or health events so they know when to perform an action. This section outlines a few means to observe events (manually and programmatically) and perform actions triggered by an event occurrence. 
 
-### Leverage the PowerApps and Microsoft Flow admin center.
+### Leverage the [PowerApps and Microsoft Flow admin center](wp-work-with-admin-portals.md)
 
 1.	View and manage environments
 2.	View and manage all apps and flows within an environment
@@ -237,18 +237,18 @@ In addition to monitoring, many customers want to subscribe to software creation
 ### Build Microsoft Flows to alert on key audit events
 
 1.	An example of alerting that can be implemented is subscribing to Office 365 Security and Compliance Audit Logs. 
-2.	This can be achieved through either a webhook subscription or polling approach. However, by attaching Flow to these alerts, we can provide administrators with more than just email alerts.
+2.	This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Flow to these alerts, we can provide administrators with more than just email alerts.
 
-### Build the policies you need with PowerApps, Microsoft Flow and Powershell
+### Build the policies you need with PowerApps, Microsoft Flow and PowerShell
 
-1.	These PowerShell cmdlets place full control in the hands of admins to automate the governance policies necessary. 
-2.	The Management connectors provide the same level of control but with added extensibility and ease-of-uses by leveraging PowerApps and Flow. 
+1.	These [PowerShell cmdlets](powerapps-powershell.md) place full control in the hands of admins to automate the governance policies necessary. 
+2.	The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by leveraging PowerApps and Flow. 
 3.	The following Microsoft Flow templates for administration connectors exist for ramping up quickly:
-   1.	List new Microsoft Flow Connectors
-   2.	List new PowerApps, Flows and Connectors
-   3.	Email me a weekly summary of Office 365 Message Center notices
-   4.	Access Office 365 Security and Compliance Logs from Microsoft Flow
-4.	This blog and app template exist to help ramping up quickly on the administration connectors. 
+   1.	[List new Microsoft Flow Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
+   2.	[List new PowerApps, Flows and Connectors](https://preview.flow.microsoft.com/en-us/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
+   3.	[Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
+   4.	[Access Office 365 Security and Compliance Logs from Microsoft Flow](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
+4.	This [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) exist to help ramping up quickly on the administration connectors. 
 
 ### FAQ
 
@@ -256,7 +256,7 @@ In addition to monitoring, many customers want to subscribe to software creation
 Currently, all users with Office E3 licenses can create apps in the Default environment. How can we enable Environment Maker rights to a select group e.g. 10 persons to create apps? 
 
 **Recommendation**
-The PowerShell cmdlets and Management connectors provide full flexibility and control to administrators to build the policies they want for their organization.
+The [PowerShell cmdlets](https://powerapps.microsoft.com/blog/gdpr-admin-powershell-cmdlets/) and [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide full flexibility and control to administrators to build the policies they want for their organization.
 
 Here are three samples: 
 
@@ -301,9 +301,9 @@ The means by which software is developed, validated and deployed to a production
 
 ### How does Microsoft prepare for disaster recovery?
 
-1.	For canvas apps, versioning is built-in the service and any maker can restore an app to a preview version. https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app 
+1.	For canvas apps, versioning is built-in the service and any maker can restore an app to a preview version. See [https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app](https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app).
 2.	For Microsoft Flows, we use the export feature to download the flow as a .zip package and archive the package.
-3.	For all Common Data Service for Apps components, which use the same platform that powers Dynamics 365 apps, it benefits from the built-in daily backup and restore capabilities.
+3.	For all Common Data Service for Apps components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](https://docs.microsoft.com/dynamics365/customer-engagement/admin/backup-restore-instances).
 
 
 
