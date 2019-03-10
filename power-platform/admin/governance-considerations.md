@@ -235,3 +235,89 @@ Activity logging for PowerApps is integrated with Office Security and Compliance
      9. Connectors used
 
 ## Alert and action
+
+In addition to monitoring, many customers want to subscribe to software creation, usage or health events so they know when to perform an action. This section outlines a few means to observe events (manually and programmatically) and perform actions triggered by an event occurrence. 
+
+### Leverage the PowerApps and Microsoft Flow admin center.
+
+1.	View and manage environments
+2.	View and manage all apps and flows within an environment
+3.	View and manage your CDS 
+4.	Environment and app management requires a PowerApps Plan 2 or Microsoft Flow plan 2 
+
+### Build Microsoft Flows to alert on key audit events
+
+1.	An example of alerting that can be implemented is subscribing to Office 365 Security and Compliance Audit Logs. 
+2.	This can be achieved through either a webhook subscription or polling approach. However, by attaching Flow to these alerts, we can provide administrators with more than just email alerts.
+
+### Build the policies you need with PowerApps, Microsoft Flow and Powershell
+
+1.	These PowerShell cmdlets place full control in the hands of admins to automate the governance policies necessary. 
+2.	The Management connectors provide the same level of control but with added extensibility and ease-of-uses by leveraging PowerApps and Flow. 
+3.	The following Microsoft Flow templates for administration connectors exist for ramping up quickly:
+
+   1.	List new Microsoft Flow Connectors
+   2.	List new PowerApps, Flows and Connectors
+   3.	Email me a weekly summary of Office 365 Message Center notices
+   4.	Access Office 365 Security and Compliance Logs from Microsoft Flow
+
+4.	This blog and app template exist to help ramping up quickly on the administration connectors. 
+
+### FAQ
+
+**Problem**
+Currently, all users with Office E3 licenses can create apps in the Default environment. How can we enable Environment Maker rights to a select group e.g. 10 persons to create apps? 
+
+**Recommendation**
+The PowerShell cmdlets and Management connectors provide full flexibility and control to administrators to build the policies they want for their organization.
+
+Here are three samples: 
+
+1.	Download a report of activity w/ PowerShell. 
+This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  NOTE: the calling user or user account must be a global admin & have a PowerApps Plan 2 (or P2 trial) license.
+	
+Q: Where should we host .zip files in the following deck? (Governance.pptx slide 48)
+
+2.	Notify un-authorized app creators and share their app w/ administrators (automated with Flow)This is a daily flow that identified ‘authorized’ creators via a security group(s) check and sends a notification to un-authorized app creators AND a summary report to administrators.  The flow also shares the app w/ administrators for auditing.
+
+3.	Find and disable flows that leverage certain connectors
+This is a flow that runs every 30 minutes and automatically disables flows that include certain connectors. In this flow I identified flows from the following connectors – but the flow can be extended to identify any connector.
+
+## Deploy
+
+The means by which software is developed, validated and deployed to a production environment is an important topic for each organization and happens to vary greatly from one organization to the next. As a reference, this section outlines how Microsoft’s central IT organization manages and deploys PowerApps.
+
+### How does Microsoft manage environments, maker roles, DLP policies? 
+
+1.	Microsoft IT maintains at least 2 environments. 
+2.	Admin and maker roles are assigned only to security groups, not individuals. 
+3.	Environments are *not* geo-redundant. 
+4.	The region for an environment is selected based on proximity to the users it will serve.
+5.	Microsoft created an app services API that exposes app URLs by SG membership so we can support geo-redundancy (but don’t do so currently).
+6.	For development, there exists a sandbox environment where Makers can create apps here under their own user identity.
+7.	For User Acceptance Testing, there exists an environment to test integration with other applications, deployment procedures, single-sign-on, etc… Apps are authored by an official AAD security group account. 
+8.	For production, there is a unique AAD security group for makers than for development and UAT. Apps are authored by the official AAD SG account. Deployment to this environment is locked down to avoid disruption and ensure the environment telemetry is accurate.
+9.	Default DLP policies exist for the entire tenant that limit access to business data.
+
+### How does Microsoft share apps and connectors? 
+
+1.	Apps and connectors are shared to security groups only.
+2.	Apps are directly authored in the studio for the development environment. Apps are then exported and imported into other environments. 
+3.	Custom Connectors are shared to the entire org. 
+4.	Since we restrict makers by access-control-lists, non-authorized users cannot enumerate environments in the powerapps studio nor can they re-use our connection objects to create unsponsored apps
+5.	For development, connectors are shared as ‘Can Edit’ with the same SG used for the environment maker role and we allow the makers to create Custom Connectors.
+6.	In UAT and Production, Custom Connectors are created under a service account and shared as ‘can use’ to the entire org and ‘Can Edit’ to our maker SG.
+7.	Custom Connectors are patched for single-sign-on. 
+8.	AAD app registrations are admin consented.
+9.	The connection object is patched to use aadcertificate auth under the context of the PowerApps API Hub
+10.	SQL connectors and push notification connectors show up in the Connections view as they are a shared instance. Makes must be educated to not delete these, as they are *not* a personal connection instance of a custom connector and deleting them will delete it for all users.
+
+### How does Microsoft prepare for disaster recovery?
+
+1.	For canvas apps, versioning is built-in the service and any maker can restore an app to a preview version. https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app 
+2.	For Microsoft Flows, we use the export feature to download the flow as a .zip package and archive the package.
+3.	For all Common Data Service for Apps components, which use the same platform that powers Dynamics 365 apps, it benefits from the built-in daily backup and restore capabilities.
+
+
+
+
