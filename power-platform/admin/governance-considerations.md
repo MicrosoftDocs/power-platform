@@ -22,11 +22,10 @@ Many customers wonder: How can PowerApps and Microsoft Flow be made available to
 
 |Theme  |Common questions related to each theme for which this content answers  |
 |---------|---------|
-|Architecture     | <ul><li>What are the basic constructs & concepts of PowerApps, Microsoft Flow, and Common Data Service for Apps?</li> <br /><li>How do these constructs fit together at design time & runtime?</li></ul> |
+|Architecture     | <ul><li>What are the basic constructs and concepts of PowerApps, Microsoft Flow, and Common Data Service for Apps?</li> <br /><li>How do these constructs fit together at design time and runtime?</li></ul> |
 |Security     | <ul><li>What are the best practices for security design considerations?</li> <br /><li>How do I leverage our existing user and group management solutions to manage access and security roles in PowerApps?</li></ul>     |
-|Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul>        |
 |Alert and Action     | <ul><li>How do I define the governance model between citizen developers and managed IT services?</li> <br /><li>How do I define the governance model between central IT and the business unit admins?</li> <br /><li>How should I approach support for non-default instances in my organization? </li></ul>        |
-|Deploy     | <ul><li>How do I stand up my platform so that I can efficiently maintain my environments?</li> <br /><li>I want a backup plan and solution that provides business continuity and resiliency for my end users.</li> <br /><li>How do I define how DevOps and modern software engineering practices apply to APaaS? </li></ul>     |
+|Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
 It’s best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a PowerApps, Microsoft Flow and Common Data Service for Apps. [Environments Overview](environments-overview.md) is a good primer which should be followed by [Common Data Service for Apps](wp-cds-for-apps.md), [Types of PowerApps](wp-types-powerapps.md), [Microsoft Flow](wp-about-flows.md), [Connectors](wp-connectors.md),  and [On-premises Gateways](wp-onpremises-gateway.md). 
@@ -40,24 +39,30 @@ Access to PowerApps and Flow starts with having a license, the type of license a
 
 |Plan  |Description  |
 |---------|---------|
-|Office 365 Included     | This allows users to extend SharePoint and other Office assets they already have.        |
-|Dynamics 365 Included     | This allows users to customize and extend Dynamics 365 apps they already have.        |
-|PowerApps P1     | This allows makes enterprise connectors and Common Data Service for Apps accessible for use.        |
-|PowerApps P2     | This allows users to use robust business logic across application types and administration capabilities.        |
+|Office 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
+|Dynamics 365 Included     | This allows users to customize and extend Dynamics 365 apps they already have.  |
+|PowerApps P1     | This allows makes enterprise connectors and Common Data Service for Apps accessible for use. |
+|PowerApps P2     | This allows users to use robust business logic across application types and administration capabilities.  |
+|PowerApps Community | This allows a user to use PowerApps, Flow, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
+|Flow Free | This allows users to create unlimited flows and perform 750 runs. |
+|Flow P1 | This allows users to create unlimited flows, use premium connectors and perform 4,500 runs.|
+|Flow P2 | This allows users to create unlimited flows, use premium connectors and perform 15,000 runs. |
 
 ### Environments
 After users have licenses, environments exist as containers for all resources utilized by PowerApps, Microsoft Flow and Common Data Service for Apps. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
 
+<!-- 
 #### FAQ –  Who can provision an environment?
 - The default environment is created automatically when the first PowerApps or Microsoft Flow user signs-in. 
 - Developer environment is created whenever a user signs-up for the PowerApps community plan – [http://aka.ms/powerappcommunityplan ](http://aka.ms/powerappcommunityplan )
 - Up to 2 trial environments can be created by any user who signs-up for a PowerApps Plan 2 or Microsoft Flow Plan 2 30-day trial license.
 - Production environments can be created by any user who has a PowerApps Plan 2 or Microsoft Plan 2 license.
 - Production environments are pooled at the tenant level - every Plan 2 license grants an entitlement to provision 2 additional environments
+-->
 
 ### Secure your data and network
 - PowerApps and Flow *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
-- Network Access control policies can also apply to PowerApps and Flow. For instance, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps & Flow. 
+- Network Access control policies can also apply to PowerApps and Flow. For instance, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps and Flow. 
 - In an environment, access is controlled at three levels: [Environment roles](database-security.md), [Resource permissions for PowerApps](wp-controlling-access.md), Microsoft Flows, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
 - When Common Data Service for Apps is created in an environment the Common Data Service for Apps roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
 
@@ -71,7 +76,7 @@ The following principals are supported for each role type.
 |Environment with Common Data Service for Apps      | Environment role        | User        |
 |     |Resource permission: Canvas app         |User, group, tenant         |
 |     | Resource permission: Flow, Custom Connector, Gateways, Connections<sup>1</sup>          |User, group         |
-|     |CDS role (applies to all model-driven apps & components)         |User         |
+|     |CDS role (applies to all model-driven apps and components)         |User         |
 
 <sup>1</sup>Only certain connection (like SQL) can be shared.
 
@@ -80,6 +85,25 @@ The following principals are supported for each role type.
 > - Azure AD tenant Global Administrators have admin access to all environments.
 
 #### FAQ - What permissions exist at an Azure AD tenant level? 
+
+Today, Azure AD global tenant admins can perform the following: 
+
+1.	Download the PowerApps & Microsoft Flow license report
+2.	Create DLP policy scoped only to ‘All Environments’ or scoped to include/exclude specific environments
+3.	Manage and assign licenses via Office admin center
+4.	Access all environment, app, and flow management capabilities for all environments in the tenant available via
+   1. PowerApps Admin center
+   2. PowerApps Admin PowerShell cmdlets
+   3. PowerApps management connectors
+5.	Access the PowerApps and Microsoft Flow admin analytics for all environments in the tenant:
+   1.	aka.ms/paadminanalytics  
+   2.	aka.ms/flowadminanalytics 
+
+### Consider Microsoft Intune
+
+Customers with Microsoft Intune can set mobile application protection policies for both PowerApps and Microsoft Flow apps on Android and iOS. This walkthrough highlights setting a policy via Intune for Microsoft Flow. 
+
+<!-- 
 
 **Without a PowerApps Plan 2 license** 
 
@@ -170,6 +194,7 @@ The following principals are supported for each role type.
       7. If you want to add the users to the “Environment Maker” Role then the “Role ODataID” parameter would be set to:
          1. https://YourOrgID.crm.dynamics.com/api/data/v9.0/roles(d58407f2-48d5-e711-a82c-000d3a37c848) 
          2. These roleid’s will be unique to each environment.
+-->
 
 ### Consider location-based conditional access
 
@@ -199,30 +224,6 @@ Q: What about Sharing connectors between users? E.g. the connector for Teams is 
 
 A: Connectors are available to all users. With the exception of premium or custom connectors which need either an additional license (premium connectors) or have to be explicitly shared (custom connectors)
 
-## Monitor
-
-It’s well understood that monitoring as a critical aspect of managing software at scale, this section highlights a couple of means to get insight in PowerApps and Flow development and usage.  
-
-### Review the audit trail
-
-[Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dynamics 365 and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting
-
-### Download the PowerApps & Microsoft Flow license report
-
-1. [https://admin.powerapps.com/tenant/userLicenses](https://admin.powerapps.com/tenant/userLicenses) 
-2. View PowerApps & Microsoft Flow admin analytics
-   1. Available now in preview from the new [Power Platform admin center](https://aka.ms/ppac). 
-   2. One can get information along the following lines: 
-     1. Active User and App usage  - how many users are using an app and how often? 
-     2. Location – where is the usage? 
-     3. Service Performance of connectors
-     4. Error reporting – which are the most error prone apps
-     5. Flows in use by type and date
-     6. Flows created by type and date
-     7. Application-level auditing 
-     8. Service Health
-     9. Connectors used
-
 ## Alert and action
 
 In addition to monitoring, many customers want to subscribe to software creation, usage or health events so they know when to perform an action. This section outlines a few means to observe events (manually and programmatically) and perform actions triggered by an event occurrence. 
@@ -249,6 +250,7 @@ In addition to monitoring, many customers want to subscribe to software creation
    3.	[Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
    4.	[Access Office 365 Security and Compliance Logs from Microsoft Flow](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
 4.	This [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) exist to help ramping up quickly on the administration connectors. 
+5. Additionally, it’s worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here’s another example of an administrative experience built using PowerApps and admin connectors.
 
 ### FAQ
 
@@ -261,7 +263,7 @@ The [PowerShell cmdlets](https://powerapps.microsoft.com/blog/gdpr-admin-powersh
 Here are three samples: 
 
 1. Download a report of activity w/ PowerShell. 
-This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  NOTE: the calling user or user account must be a global admin & have a PowerApps Plan 2 (or P2 trial) license.
+This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  NOTE: the calling user or user account must be a global admin and have a PowerApps Plan 2 (or P2 trial) license.
 	
    Q: Where should we host .zip files in the following deck? (Governance.pptx slide 48)
 
@@ -270,6 +272,37 @@ This scripts downloads 4 files, which capture all apps, app permission, flows, a
 3. Find and disable flows that leverage certain connectors
 This is a flow that runs every 30 minutes and automatically disables flows that include certain connectors. In this flow I identified flows from the following connectors – but the flow can be extended to identify any connector.
 
+## Monitor
+
+It’s well understood that monitoring as a critical aspect of managing software at scale, this section highlights a couple of means to get insight in PowerApps and Flow development and usage.  
+
+### Review the audit trail
+
+[Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dynamics 365 and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
+
+### Download the PowerApps and Microsoft Flow license report
+
+1. [https://admin.powerapps.com/tenant/userLicenses](https://admin.powerapps.com/tenant/userLicenses) 
+2. View PowerApps and Microsoft Flow admin analytics
+   1. Available now in preview from the new [Power Platform admin center](https://aka.ms/ppac). 
+   2. One can get information along the following lines: 
+     1. Active User and App usage  - how many users are using an app and how often? 
+     2. Location – where is the usage? 
+     3. Service Performance of connectors
+     4. Error reporting – which are the most error prone apps
+     5. Flows in use by type and date
+     6. Flows created by type and date
+     7. Application-level auditing 
+     8. Service Health
+     9. Connectors used
+
+### View app resources used in an Environment
+
+1.	In the PowerApps admin center, select Environments in the navigation menu. 
+2.	Select an Environment.
+3. Optionally, the list of resources used in an Environment may be downloaded as a .csv.
+
+<!--
 ## Deploy
 
 The means by which software is developed, validated and deployed to a production environment is an important topic for each organization and happens to vary greatly from one organization to the next. As a reference, this section outlines how Microsoft’s central IT organization manages and deploys PowerApps.
@@ -304,7 +337,6 @@ The means by which software is developed, validated and deployed to a production
 1.	For canvas apps, versioning is built-in the service and any maker can restore an app to a preview version. See [https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app](https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app).
 2.	For Microsoft Flows, we use the export feature to download the flow as a .zip package and archive the package.
 3.	For all Common Data Service for Apps components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](https://docs.microsoft.com/dynamics365/customer-engagement/admin/backup-restore-instances).
-
-
+-->
 
 
