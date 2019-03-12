@@ -31,15 +31,17 @@ Data volume continues to grow exponentially, as businesses advance their digital
 
 We have updated our capacity analytics reporting to provide important benefits to our customers. Here is a summary of changes in capacity analytics.
 
-- New **Capacity** page is available in Power the Platform Admin center.
+- New **Capacity** page is available in the Power the Platform Admin center.
 -	Admins can visualize the data stored in Database, Files, and Logs. 
--	Entitlement information is added to clearly understand what is the tenant available capacity.  
--	Existing customers get new types of capacity (File and Log) but are not impacted by the change until renewal. 
+-	Entitlement information is added to the report to help customers understand available capacity of the tenant level.
+-	Existing customers get entitlements for new types of capacity (File and Log) but are not impacted by the licensing change until renewal.
 
 The new capacity analytics reporting provides a single place to view your capacity data.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-page.png "Capacity hub")
+
+## What has changed
 
 In the previous storage model, you viewed information in multiple places.
 
@@ -127,17 +129,20 @@ Select **Applied filters** at the the top of the page to filter data for differe
 
 ## FAQ
 
+### I am an existing customer, will I be immediately impacted by this change?
+No, there is no immediate change for existing customers as your current term will be honored for the duration of your agreement. 
+
 ### I'm an existing customer with an EA agreement. Should I go buy Log and File capacity?
 If you have an existing agreement, you are not impacted with the current change. We have added Log and File capacity to your current entitlement which reduces your Database capacity. Until renewal, you can continue with the current plan.
 
 ### I'm an existing customer and my renewal is coming up. Will I be impacted?
-At renewal, you are expected to move to the new model and purchase the Database, File, and Log capacity as appropriate. You can use the current report to determine how much you should buy.
+Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
 
 ### Will the Storage tab in Common Data Service continue to work?
 The **Storage** tab will be deprecated as we move to the new updated Capacity Analytics.
 
 ### I have a PowerApps environment with Database, will this environment count against capacity?
-Yes. All Common Data Service environments are counted.
+Yes. All Common Data Service for Apps environments are counted.
 
 ### How do I buy more capacity?
 Text needed.
