@@ -25,6 +25,12 @@
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "master",
@@ -43,7 +49,7 @@
   },
   "need_generate_pdf_url_template": true,
   "targets": {
-    "pdf": {
+    "Pdf": {
       "template_folder": "_themes.pdf"
     }
   }
