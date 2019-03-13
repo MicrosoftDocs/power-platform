@@ -18,13 +18,9 @@ search.app:
 
 # Microsoft PowerApps US Government
 
-In response to the unique and evolving requirements of the United States public
-sector, Microsoft has created Microsoft PowerApps US Government plans (or
-"PowerApps US Government"). This section provides an overview of features that
-are specific to PowerApps US Government. It is recommended that you read this
-supplementary section alongside the [PowerApps Service
-Description](https://docs.microsoft.com/en-us/powerapps/powerapps-overview). For
-brevity, this service is commonly referred to as “PowerApps GCC”.
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft PowerApps US Government plans (or "PowerApps US Government"). This  section provides an overview of features that are specific to PowerApps US Government. It is recommended that you read this supplementary section alongside the [PowerApps Service Description](https://docs.microsoft.com/powerapps/powerapps-overview). For brevity, this service is commonly referred to as “PowerApps GCC”.
+
+
 
 The PowerApps US Government Service Description is designed to serve as an
 overlay to the general PowerApps Service Description. It defines the unique
@@ -88,44 +84,22 @@ unlimited number of users:
     include. Please note that this licensing will automatically show up and be
     available in customer tenants on or around the first week of May, 2019.
 
-Additional information regarding the differences in functionality between these
-groups of licenses are described in more detail on the [PowerAppps licensing
-information](https://powerapps.microsoft.com/en-us/pricing/). PowerApps US
-Government is available through the Volume Licensing and Cloud Solution Provider
-purchasing channels.
+Additional information regarding the differences in functionality between these groups of licenses are described in more detail on the [PowerApps licensing information](https://powerapps.microsoft.com/pricing/). PowerApps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
 
 ## What is “customer data” and “customer content?”
 
-Customer data, as defined in the Online Service Terms, means all data, including
-all text, sound, video, or image files, and software, that are provided to
-Microsoft by, or on behalf of, Customer through use of the Online Service.
-Customer content refers to a specific subset of customer data that has been
-directly created by users, such as content stored in databases through entries
-in the [Common Data
-Service](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)
-entities (e.g. contact information). Content is generally considered
-confidential information, and in normal service operation, is not sent over the
-Internet without encryption.
+Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (e.g. contact information). Content is generally considered
+confidential information, and in normal service operation, is not sent over the Internet without encryption.
 
-For more information on the PowerApps protection of customer data, see the
-[Microsoft Online Services Trust
-Center](https://www.microsoft.com/en-us/trustcenter/cloudservices/business-application-platform/default.aspx).
+For more information on the PowerApps protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
 ## Data segregation for Government Community Cloud
 
-When provisioned as part of PowerApps Government, the PowerApps service is
-offered in accordance with the National Institute of Standards and Technology
-(NIST) Special Publication 800-145.
+When provisioned as part of PowerApps Government, the PowerApps service is offered in accordance with the National Institute of Standards and Technology (NIST) Special Publication 800-145.
 
 Microsoft refers to this offer as the Government Community Cloud (“GCC”).
 
-In addition to the logical separation of customer content at the application
-layer, the PowerApps Government service provides your organization with a
-secondary layer of physical segregation for customer content by using
-infrastructure that is separate from the infrastructure used for commercial
-PowerApps customers. This includes using Azure services in Azure’s Government
-Cloud. To learn more, see [Azure
-Government](https://azure.microsoft.com/en-us/global-infrastructure/government/).
+In addition to the logical separation of customer content at the application layer, the PowerApps Government service provides your organization with a secondary layer of physical segregation for customer content by using infrastructure that is separate from the infrastructure used for commercial PowerApps customers. This includes using Azure services in Azure’s Government Cloud. To learn more, see [Azure Government](https://azure.microsoft.com/global-infrastructure/government/).
 
 ## Customer content located within the United States
 
@@ -146,32 +120,24 @@ first have passed the following background checks.
 
 | **Microsoft Personnel Screening and Background Checks** <sup>1</sup>     | **Description** |
 |---------|----------------------------------------------------------------------------------|
-| U.S. Citizenship                                              | Verification of U.S. citizenship                                                                                                                                       |
-| Employment History Check                                      | Verification of seven (7) year employment history                                                                                                                      |
-| Education Verification                                        | Verification of highest degree attained                                                                                                                                |
-| Social Security Number (SSN) Search                           | Verification that the provided SSN is valid                                                                                                                            |
-| Criminal History Check                                        | A seven (7) year criminal record check for felony and misdemeanor offenses at the state, county, and local level and at the federal level                              |
-| Office of Foreign Assets Control List (OFAC)                  | Validation against the Department of Treasury list of groups with whom U.S. persons are not allowed to engage in trade or financial transactions                       |
-| Bureau of Industry and Security List (BIS)                    | Validation against the Department of Commerce list of individuals and entities barred from engaging in export activities                                               |
-| Office of Defense Trade Controls Debarred Persons List (DDTC) | Validation against the Department of State list of individuals and entities barred from engaging in export activities related to the defense industry                  |
-| Fingerprinting Check                                          | Fingerprint background check against FBI databases                                                                                                                     |
-| CJIS Background Screening                                     | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program |
+| U.S. Citizenship  | Verification of U.S. citizenship   |
+| Employment History Check  | Verification of seven (7) year employment history   |
+| Education Verification | Verification of highest degree attained  |
+| Social Security Number (SSN) Search   | Verification that the provided SSN is valid      |
+| Criminal History Check  | A seven (7) year criminal record check for felony and misdemeanor offenses at the state, county, and local level and at the federal level  |
+| Office of Foreign Assets Control List (OFAC) | Validation against the Department of Treasury list of groups with whom U.S. persons are not allowed to engage in trade or financial transactions|
+| Bureau of Industry and Security List (BIS) | Validation against the Department of Commerce list of individuals and entities barred from engaging in export activities   |
+| Office of Defense Trade Controls Debarred Persons List (DDTC) | Validation against the Department of State list of individuals and entities barred from engaging in export activities related to the defense industry  |
+| Fingerprinting Check | Fingerprint background check against FBI databases  |
+| CJIS Background Screening | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program |
 
 <sup>1</sup> applies only to personnel with temporary or standing access to customer
 content hosted in PowerApps US Government (GCC)
 
 ## Certifications and accreditations
 
-PowerApps US Government is designed to support the Federal Risk and
-Authorization Management Program (FedRAMP) accreditation at a High Impact level.
-This infers alignment to DoD DISA IL2. FedRAMP artifacts are available for
-review by federal customers who are required to comply with FedRAMP. Federal
-agencies can review these artifacts in support of their review to grant an
-Authority to Operate (ATO). It is important to note that, at the present time,
-the PowerApps US Government services are under review with FedRAMP, but have
-been granted an Security Assessment Report (SAR) by a qualified
-[3PAO](https://www.fedramp.gov/3pao-requirements-update/). As Microsoft moves to
-refresh FedRAMP artifacts as part of the standard audit cycles, content will be
+PowerApps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an
+Authority to Operate (ATO). It is important to note that, at the present time, the PowerApps US Government services are under review with FedRAMP, but have been granted an Security Assessment Report (SAR) by a qualified [3PAO](https://www.fedramp.gov/3pao-requirements-update/). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be
 updated accordingly.
 
 PowerApps US Government has features designed to support customer’s CJIS Policy
@@ -206,14 +172,7 @@ U.S.A.
 
 ## PowerApps US Government and third-party services
 
-PowerApps US Government provides the ability to integrate third-party
-applications into the service through
-[Connectors](https://docs.microsoft.com/en-us/connectors/index). These
-third-party applications and services might involve storing, transmitting, and
-processing your organization’s customer data on third-party systems that are
-outside of the PowerApps US Government infrastructure and therefore are not
-covered by the PowerApps US Government compliance and data protection
-commitments.
+PowerApps US Government provides the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the PowerApps US Government infrastructure and therefore are not covered by the PowerApps US Government compliance and data protection commitments.
 
 We recommend that you review the privacy and compliance statements provided by
 the third parties when assessing the appropriate use of these services for your
@@ -221,11 +180,7 @@ organization.
 
 ## PowerApps US Government and Azure Services
 
-The PowerApps US Government services are deployed to Microsoft Azure Government.
-Azure Active Directory (Azure AD) is not part of the PowerApps US Government
-accreditation boundary, but takes a reliance on a customer’s [Azure
-AD](https://azure.microsoft.com/en-us/services/active-directory/) tenant for
-customer tenant and identity functions, including authentication, federated
+The PowerApps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the PowerApps US Government accreditation boundary, but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated
 authentication, and licensing.
 
 When a user of an organization employing ADFS attempts to access PowerApps US
@@ -254,9 +209,9 @@ refer to the following table for a cross reference:
 
 | **Commercial version URL**     | **US Government version URL**         |
 |--------------------------------|---------------------------------------|
-| <https://web.powerapps.com>    | <https://gov.web.powerapps.us>        |
-| <https://create.powerapps.com> | <https://gov.create.web.powerapps.us> |
-| <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us>      |
+| <[https://web.powerapps.com](https://web.powerapps.com)>    | <[https://gov.web.powerapps.us](https://gov.web.powerapps.us)>        |
+| <[https://create.powerapps.com](https://create.powerapps.com)> | <[https://gov.create.web.powerapps.us](https://gov.create.web.powerapps.us)> |
+| <[https://admin.powerapps.com](https://admin.powerapps.com)>  | <[https://gov.admin.powerapps.us](https://gov.admin.powerapps.us)>      |
 
 ## Connectivity between PowerApps US Government and Public Azure Cloud services
 
@@ -279,11 +234,8 @@ order for your end-users to have access to the service URLs.
 
 ## On-Premise Data Gateway Configuration
 
-Install an [On-Premises Data
-Gateway](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/gateway-management)
-to transfer data quickly and securely between a canvas app that's built in
-PowerApps and a data source that isn't in the cloud, such as an on-premises SQL
-Server database or an on-premises SharePoint site.
+Install an [On-Premises Data Gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in
+PowerApps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
 If your organization (Tenant) has already configured and successfully connected
 the On-Premise Data Gateway for PowerBI US Government, then the process and
@@ -301,33 +253,19 @@ available in PowerApps US Government customers. The PowerApps team is actively
 working on making these features available to US Government customers, and will
 update this article when these features become available.
 
-- Embed in [SharePoint
-    Online](https://powerapps.microsoft.com/en-us/blog/embed-powerapps-on-sharepoint-pages/),
-    [Microsoft
-    Teams](https://powerapps.microsoft.com/en-us/blog/powerapps-teams/), and
-    other products
+- Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and     other products
 
-- Creating PowerApps US Government apps from [SharePoint
-    Lists](https://support.office.com/en-us/article/Create-a-PowerApp-for-a-list-in-SharePoint-Online-9338b2d2-67ac-4b81-8e67-97da27e5e9ab)
+- Creating PowerApps US Government apps from [SharePoint Lists](https://support.office.com/article/Create-a-PowerApp-for-a-list-in-SharePoint-Online-9338b2d2-67ac-4b81-8e67-97da27e5e9ab)
 
-- [Data Integration &
-    PowerQuery](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
+- [Data Integration and PowerQuery](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
 
-- [Usage
-    Analytics](https://docs.microsoft.com/en-us/powerapps/administrator/app-analytics)
+- [Common Data Service for Apps analytics](analytics-common-data-service.md)
 
-- [Mobile Push
-    notifications](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-notifications)
+- [Mobile Push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications)
 
-- [Connectors](https://docs.microsoft.com/en-us/connectors/index) – The most
-    popular connectors in use in our commercial service (based on usage
-    telemetry) have been published; if there is a Connector available in the
-    commercial offering that you do not see deployed, please contact support and
-    we will review your request
+- [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
 
-- [Unified Power Platform Admin
-    Center](https://docs.microsoft.com/en-us/power-platform/admin/wp-work-with-admin-portals)
-    – Please note that this can be used to open Support Tickets, but other
-    functionality is currently not available in US Government Tenants.
+- [Working with the admin portals](wp-work-with-admin-portals.md)
+  - Please note that this can be used to open Support Tickets, but other functionality is currently not available in US Government Tenants.
 
 
