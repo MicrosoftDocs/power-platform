@@ -40,7 +40,7 @@ Your organization's customer content is physically segregated from customer cont
 
 ## Customer eligibility
 
-PowerApps US Government is available to (1) US federal, state, local, tribal, and territorial government entities, and (2) other entities which handle data that is subject to government regulations and requirements and where use of PowerApps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft will include confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation may require sponsorship by a government entity with specific requirements for the handling of data. Entities with questions about eligibility for PowerApps US Government should consult their account team. Upon renewal of a customer's contract for PowerApps US Government, re-validation of eligibility is required.
+PowerApps US Government is available to (1) US federal, state, local, tribal, and territorial government entities, and (2) other entities which handle data that is subject to government regulations and requirements and where use of PowerApps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft will include confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation might require sponsorship by a government entity with specific requirements for the handling of data. Entities with questions about eligibility for PowerApps US Government should consult their account team. Upon renewal of a customer's contract for PowerApps US Government, re-validation of eligibility is required.
 
 ## PowerApps US Government Plans
 
@@ -50,7 +50,7 @@ Access to PowerApps Government plans is restricted to the offerings described be
 
 - PowerApps / Flow Plan 2 US Government
 
-- In addition to the standalone plans, PowerApps and Flow capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans allowing customers to extend and customize Office 365 and Dynamics 365 with PowerApps and Flow capabilities that these offerings include. Please note that this licensing will automatically show up and be available in customer tenants on or around the first week of May, 2019.
+- In addition to the standalone plans, PowerApps and Flow capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans allowing customers to extend and customize Office 365 and Dynamics 365 with PowerApps and Flow capabilities that these offerings include. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
 
 Additional information regarding the differences in functionality between these groups of licenses are described in more detail on the [PowerApps licensing information](https://powerapps.microsoft.com/pricing/). PowerApps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
 
@@ -146,14 +146,14 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 
 - USGov Texas
 
-Please refer to the Azure IP Ranges and Service Tags – US Government Cloud document, focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also note that these are the IP ranges required in order for your end-users to have access to the service URLs.
+Please refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
 
 ## On-Premise Data Gateway Configuration
 
 Install an [On-Premises Data Gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in
 PowerApps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
-If your organization (Tenant) has already configured and successfully connected the On-Premise Data Gateway for PowerBI US Government, then the process and configuration your organization executed to enable that will also enable on-premise connectivity for PowerApps. However, if you are unable to connect to your tenant, then you may need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
+If your organization (Tenant) has already configured and successfully connected the On-Premise Data Gateway for PowerBI US Government, then the process and configuration your organization executed to enable that will also enable on-premise connectivity for PowerApps. However, if you are unable to connect to your tenant, then you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
 
 ## PowerApps US Government Feature Limitations
 
@@ -171,7 +171,6 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
 
-- [Working with the admin portals](wp-work-with-admin-portals.md)
-  - Please note that this can be used to open Support Tickets, but other functionality is currently not available in US Government Tenants.
+- [Working with the admin portals](wp-work-with-admin-portals.md) - Please note that this can be used to open support tickets, but other functionality is currently not available in US Government tenants.
 
 
