@@ -217,8 +217,8 @@
           href: common-data-service-gdpr-dsr-guide.md
     - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
-  - name: Microsoft PowerApps US Government
-    href: powerapps-us-government.md
+  # - name: Microsoft PowerApps US Government
+  #   href: powerapps-us-government.md
   - name: Administer Microsoft Flow
     href: about-flow-guide.md
   - name: Administer Power BI
