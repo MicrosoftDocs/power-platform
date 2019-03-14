@@ -45,9 +45,11 @@
           href: create-database.md
         - name: PowerApps Preview Program
           href: preview-environments.md
+        - name: About Sandbox environments
+          href: sandbox-environments.md
         - name: About Trial environments
           href: trial-environments.md     
-      - name: Manage settings
+      - name: Manage settings 
         href: admin-settings.md
         items:
         - name: Product settings
@@ -167,6 +169,8 @@
     - name: Management and monitoring
       href: wp-management-monitoring.md
       items: 
+      # - name: Governance considerations
+      #   href: governance-considerations.md
       - name: Working with the Admin Portals 
         href: wp-work-with-admin-portals.md
       - name: Automation of tasks with PowerShell 
@@ -213,6 +217,8 @@
           href: common-data-service-gdpr-dsr-guide.md
     - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
+  # - name: Microsoft PowerApps US Government
+  #   href: powerapps-us-government.md
   - name: Administer Microsoft Flow
     href: about-flow-guide.md
   - name: Administer Power BI
