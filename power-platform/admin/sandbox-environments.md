@@ -2,7 +2,7 @@
 title: "About Sandbox environments | MicrosoftDocs"
 description: Learn about the usage and management of Sandbox environments. 
 ms.custom: ""
-ms.date: 03/15/2019
+ms.date: 03/13/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -22,7 +22,7 @@ search.app:
 ---
 # About Sandbox environments
 
-A Sandbox environment is any non-production environment of Common Data Service for apps. Isolated from production, a Sandbox environment is the place to safely develop and test application changes with low risk.
+A Sandbox environment is any non-production environment of Common Data Service. Isolated from production, a Sandbox environment is the place to safely develop and test application changes with low risk.
 
 ## View your Sandbox environments  
 
@@ -39,7 +39,7 @@ Manage your Sandbox environments from the Power Platform Admin center.
 
 Reset a Sandbox environment to delete and re-provision it. Consider a reset when you want to:  
   
-- Change to a different version of Common Data Service for apps  
+- Change to a different version of Common Data Service
   
 - Create a new project  
   

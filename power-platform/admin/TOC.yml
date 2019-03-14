@@ -49,7 +49,7 @@
           href: sandbox-environments.md
         - name: About Trial environments
           href: trial-environments.md     
-      - name: Manage settings
+      - name: Manage settings 
         href: admin-settings.md
         items:
         - name: Product settings
