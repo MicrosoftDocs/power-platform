@@ -56,8 +56,7 @@ Additional information regarding the differences in functionality between these 
 
 ## What is customer data and customer content?
 
-Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (e.g. contact information). Content is generally considered
-confidential information, and in normal service operation, is not sent over the Internet without encryption.
+Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (e.g. contact information). Content is generally considered confidential information, and in normal service operation, is not sent over the Internet without encryption.
 
 For more information on the PowerApps protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
@@ -96,19 +95,15 @@ PowerApps support and service engineering staff do not have standing access to c
 
 ## Certifications and accreditations
 
-PowerApps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an
-Authority to Operate (ATO). It is important to note that, at the present time, the PowerApps US Government services are under review with FedRAMP, but have been granted an Security Assessment Report (SAR) by a qualified [3PAO](https://www.fedramp.gov/3pao-requirements-update/). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be
-updated accordingly.
+PowerApps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an Authority to Operate (ATO). It is important to note that, at the present time, the PowerApps US Government services are under review with FedRAMP, but have been granted an Security Assessment Report (SAR) by a qualified [3PAO](https://www.fedramp.gov/3pao-requirements-update/). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
 
 PowerApps US Government has features designed to support customer’s CJIS Policy requirements for law enforcement agencies. Please visit the PowerApps US Government products page in Trust Center for more detailed information related to certifications and accreditations.
 
 ## PowerApps US Government and other Microsoft services
 
-PowerApps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Flow US Government. PowerApps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, PowerApps mobile applications any third-party client application that connects to PowerApps US Government are
-not part of PowerApps US Government's accreditation boundary and government customers are responsible for managing them.
+PowerApps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Flow US Government. PowerApps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, PowerApps mobile applications any third-party client application that connects to PowerApps US Government are not part of PowerApps US Government's accreditation boundary and government customers are responsible for managing them.
 
-PowerApps US Government leverages the Office 365 customer administrator UI for customer administration and billing – PowerApps US Government maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO
-inheritance, PowerApps US Government leverages Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
+PowerApps US Government leverages the Office 365 customer administrator UI for customer administration and billing – PowerApps US Government maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, PowerApps US Government leverages Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
 
 If you adopt the use of Active Directory Federation Services (ADFS) 2.0 and set up policies to help ensure your users connect to the services through single sign-on, any customer content that is temporarily cached will be located in the U.S.A.
 
@@ -120,13 +115,9 @@ We recommend that you review the privacy and compliance statements provided by t
 
 ## PowerApps US Government and Azure Services
 
-The PowerApps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the PowerApps US Government accreditation boundary, but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated
-authentication, and licensing.
+The PowerApps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the PowerApps US Government accreditation boundary, but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
-When a user of an organization employing ADFS attempts to access PowerApps US Government, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides his or her credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are
-authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. The customer’s ADFS server signs this ticket using one half of an asymmetric key pair and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited
-user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP. The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by
-Azure. Users do not interact directly with Azure AD.
+When a user of an organization employing ADFS attempts to access PowerApps US Government, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides his or her credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. The customer’s ADFS server signs this ticket using one half of an asymmetric key pair and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP. The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
 
 ## PowerApps US Government Service URLs
 
@@ -159,7 +150,7 @@ If your organization (Tenant) has already configured and successfully connected 
 
 Some of the features available in the commercial version of PowerApps are not available in PowerApps US Government customers. The PowerApps team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
-- Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and     other products
+- Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products
 
 - Creating PowerApps US Government apps from [SharePoint Lists](https://support.office.com/article/Create-a-PowerApp-for-a-list-in-SharePoint-Online-9338b2d2-67ac-4b81-8e67-97da27e5e9ab)
 
@@ -173,4 +164,4 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Working with the admin portals](wp-work-with-admin-portals.md) - Please note that this can be used to open support tickets, but other functionality is currently not available in US Government tenants.
 
-
+- PowerApps Admin link from the Office 365 Admin Center:  use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps Admin Center.
