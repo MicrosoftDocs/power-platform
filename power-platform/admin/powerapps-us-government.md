@@ -2,7 +2,6 @@
 title: Microsoft PowerApps US Government | Microsoft Docs
 description: Provides information about PowerApps US Government service description, plans, and limitations.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -40,7 +39,9 @@ In addition to the features and capabilities of PowerApps, the organizations tha
 
 ## Customer eligibility
 
-PowerApps US Government is available to (1) US federal, state, local, tribal, and territorial government entities, and (2) other entities which handle data that is subject to government regulations and requirements and where use of PowerApps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft will include confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation might require sponsorship by a government entity with specific requirements for the handling of data. Entities with questions about eligibility for PowerApps US Government should consult their account team. Upon renewal of a customer's contract for PowerApps US Government, re-validation of eligibility is required.
+PowerApps US Government is available to (1) US federal, state, local, tribal, and territorial government entities, and (2) other entities which handle data that is subject to government regulations and requirements and where use of PowerApps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft will include confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation might require sponsorship by a government entity with specific requirements for the handling of data. 
+
+Entities with questions about eligibility for PowerApps US Government should consult their account team. Upon renewal of a customer's contract for PowerApps US Government, re-validation of eligibility is required.
 
 ## PowerApps US Government Plans
 
