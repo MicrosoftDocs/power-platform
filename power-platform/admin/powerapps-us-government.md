@@ -18,11 +18,11 @@ search.app:
 
 # Microsoft PowerApps US Government
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft PowerApps US Government plans (or PowerApps US Government). This  section provides an overview of features that are specific to PowerApps US Government. It is recommended that you read this supplementary section alongside the [PowerApps Service Description](https://docs.microsoft.com/powerapps/powerapps-overview). For brevity, this service is commonly referred to as PowerApps GCC.
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft PowerApps US Government plans (or PowerApps US Government). This  section provides an overview of features that are specific to PowerApps US Government. It is recommended that you read this supplementary section alongside the PowerApps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview) that covers information about the general PowerApps service description. For brevity, this service is commonly referred to as *PowerApps GCC*.
 
-The PowerApps US Government Service Description is designed to serve as an overlay to the general PowerApps Service Description. It defines the unique commitments and differences compared to PowerApps offerings that have been available to our customers since Fall, 2016.
+The PowerApps US Government service description is designed to serve as an overlay to the general PowerApps service description. It defines the unique commitments and differences compared to PowerApps offerings that have been available to our customers since October, 2016.
 
-## About PowerApps US Government environments and Plans
+## About PowerApps US Government environments and plans
 
 PowerApps US Government plans are monthly subscriptions and can be licensed to an unlimited number of users.
 
@@ -30,7 +30,7 @@ The PowerApps GCC environment provides compliance with Federal requirements for 
 
 In addition to the features and capabilities of PowerApps, the organizations that use PowerApps US Government benefit from the following features unique to PowerApps US Government:
 
-Your organization's customer content is physically segregated from customer content in Microsoft's commercial PowerApps Services.
+- Your organization's customer content is physically segregated from customer content in Microsoft's commercial PowerApps Services.
 
 - Your organization's customer content is stored within the United States.
 
@@ -46,17 +46,17 @@ PowerApps US Government is available to (1) US federal, state, local, tribal, an
 
 Access to PowerApps Government plans is restricted to the offerings described below; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- PowerApps / Flow Plan 1 US Government
+- PowerApps/Flow Plan 1 US Government
 
-- PowerApps / Flow Plan 2 US Government
+- PowerApps/Flow Plan 2 US Government
 
-- In addition to the standalone plans, PowerApps and Flow capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans allowing customers to extend and customize Office 365 and Dynamics 365 with PowerApps and Flow capabilities that these offerings include. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
+- In addition to the standalone plans, PowerApps and Microsoft Flow capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans allowing customers to extend and customize Office 365 and Dynamics 365 with PowerApps and Microsoft Flow capabilities that these offerings include. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
 
 Additional information regarding the differences in functionality between these groups of licenses are described in more detail on the [PowerApps licensing information](https://powerapps.microsoft.com/pricing/). PowerApps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
 
 ## What is customer data and customer content?
 
-Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (e.g. contact information). Content is generally considered confidential information, and in normal service operation, is not sent over the Internet without encryption.
+Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information, and in normal service operation, is not sent over the Internet without encryption.
 
 For more information on the PowerApps protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
@@ -91,7 +91,7 @@ PowerApps support and service engineering staff do not have standing access to c
 | Fingerprinting Check | Fingerprint background check against FBI databases  |
 | CJIS Background Screening | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program |
 
-<sup>1</sup> applies only to personnel with temporary or standing access to customer content hosted in PowerApps US Government (GCC)
+<sup>1</sup> Applies only to personnel with temporary or standing access to customer content hosted in PowerApps US Government (GCC)
 
 ## Certifications and accreditations
 
@@ -119,15 +119,15 @@ The PowerApps US Government services are deployed to Microsoft Azure Government.
 
 When a user of an organization employing ADFS attempts to access PowerApps US Government, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides his or her credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. The customer’s ADFS server signs this ticket using one half of an asymmetric key pair and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP. The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
 
-## PowerApps US Government Service URLs
+## PowerApps US Government service URLs
 
 There are a different set of URLs to access PowerApps US Government. Please refer to the following table for a cross reference:
 
 | **Commercial version URL**     | **US Government version URL**         |
 |--------------------------------|---------------------------------------|
-| <[https://web.powerapps.com](https://web.powerapps.com)>    | <[https://gov.web.powerapps.us](https://gov.web.powerapps.us)>        |
-| <[https://create.powerapps.com](https://create.powerapps.com)> | <[https://gov.create.web.powerapps.us](https://gov.create.web.powerapps.us)> |
-| <[https://admin.powerapps.com](https://admin.powerapps.com)>  | <[https://gov.admin.powerapps.us](https://gov.admin.powerapps.us)>      |
+| <https://web.powerapps.com)>    | <https://gov.web.powerapps.us>        |
+| <https://create.powerapps.com> | <https://gov.create.web.powerapps.us> |
+| <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us>      |
 
 ## Connectivity between PowerApps US Government and Public Azure Cloud services
 
@@ -139,16 +139,16 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 
 Please refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
 
-## On-Premise Data Gateway Configuration
+## On-premises Data Gateway configuration
 
 Install an [On-Premises Data Gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in
 PowerApps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
 If your organization (Tenant) has already configured and successfully connected the On-Premise Data Gateway for PowerBI US Government, then the process and configuration your organization executed to enable that will also enable on-premise connectivity for PowerApps. However, if you are unable to connect to your tenant, then you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
 
-## PowerApps US Government Feature Limitations
+## PowerApps US Government feature limitations
 
-Some of the features available in the commercial version of PowerApps are not available in PowerApps US Government customers. The PowerApps team is actively working on making these features available to US Government customers, and will update this article when these features become available.
+Some of the features available in the commercial version of PowerApps are not available to PowerApps US Government customers. The PowerApps team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
 - Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products
 
@@ -160,8 +160,12 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Mobile Push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications)
 
-- [Connectors](https://docs.microsoft.com/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
+- [Connectors](https://docs.microsoft.com/connectors/index): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
 
-- [Working with the admin portals](wp-work-with-admin-portals.md) - Please note that this can be used to open support tickets, but other functionality is currently not available in US Government tenants.
+- [Power Platform admin center](admin-documentation.md): The admin center can be used to [open support tickets](get-help-support.md), but other functionality is currently not available in US Government tenants.
 
-- PowerApps Admin link from the Office 365 Admin Center:  use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps Admin Center.
+- PowerApps Admin link from the Office 365 Admin Center: Use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps Admin Center.
+
+### See also
+
+[Microsoft Flow US GOvernment](https://docs.microsoft.com/en-us/flow/us-govt)
