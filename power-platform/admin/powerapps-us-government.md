@@ -1,6 +1,6 @@
 ---
 title: Microsoft PowerApps US Government | Microsoft Docs
-description: About Microsoft PowerApps US Government plans.
+description: Provides information about PowerApps US Goverment service descripption, plans, and limitations.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -168,4 +168,4 @@ Some of the features available in the commercial version of PowerApps are not av
 
 ### See also
 
-[Microsoft Flow US GOvernment](https://docs.microsoft.com/en-us/flow/us-govt)
+[Microsoft Flow US Government](https://docs.microsoft.com/en-us/flow/us-govt)
