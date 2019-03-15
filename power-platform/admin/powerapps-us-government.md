@@ -1,6 +1,6 @@
 ---
 title: Microsoft PowerApps US Government | Microsoft Docs
-description: Provides information about PowerApps US Goverment service descripption, plans, and limitations.
+description: Provides information about PowerApps US Government service description, plans, and limitations.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
