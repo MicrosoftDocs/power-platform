@@ -61,3 +61,6 @@ Updates are not auto-installed for the On-premises data gateway. It is highly en
 ## Gateway Disaster Recovery
 
 A recovery key is assigned (i.e., not auto-generated) by the administrator at the time the On-Premises Data Gateway is installed. The recovery key is required if the gateway is to be relocated to another machine, or if the gateway is to be restored. Therefore, the key should be retained where other system administrators can locate it if necessary.
+
+### See also
+[On-premises data gateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem)

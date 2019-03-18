@@ -6,6 +6,8 @@
   - name: "Administer PowerApps"
     href: admin-guide.md 
     items:
+    - name: Get Help + Support 
+      href: get-help-support.md
     - name: Getting started
       items:
       - name: PowerApps Platform overview
@@ -18,8 +20,6 @@
       items:
       - name: Opt in to April 2019 updates
         href: preview-april-2019-updates.md
-      - name: Get Help + Support 
-        href: get-help-support.md
       - name: View analytics
         items:
         - name: Common Data Service for Apps analytics 
