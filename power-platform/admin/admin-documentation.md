@@ -4,7 +4,7 @@ description: The Power Platform Admin center a unified portal for administrators
 ms.custom: ""
 ms.date: 03/14/2019
 ms.reviewer: ""
-ms.service: "power-platform"
+ms.service: power-platform
 ms.suite: ""
 ms.topic: "get-started-article"
 applies_to: 
