@@ -2,7 +2,7 @@
 title: "Opt in to April 2019 updates | MicrosoftDocs"
 description: Opt in to April 2019 updates for the Dynamics 365 for Customer Engagement platform.
 ms.custom: ""
-ms.date: 03/07/2019
+ms.date: 03/18/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -70,11 +70,7 @@ You can verify activation by going to **Settings** (![Settings button](media/set
 >
 > The server version will not be updated to the next version after activation.
 
-<!-- See what all is included in the April 2019 updates for platform and Sales app.--> 
-
 For enabling the April 2019 updates for Marketing app, visit the [Dynamics 365 Admin center](https://port.crm.dynamics.com/G/manage/index.aspx) and update the Marketing app.
-
-<!-- See what all is included in the April 2019 updates for Marketing -->
 
 See the following section for other update information.
 
@@ -92,7 +88,7 @@ The Release Notes lists other features across Dynamics 365 – Sales, Service, M
 
 ### When will the April 2019 features be enabled for customers who did not opt in to the preview?
 
-Starting April 5, 2019, we will enable the April 2019 features (end user impacting only) across our global customer base. Your environment/org will be updated based on the region they are located. Here is the current schedule.
+Starting April 5, 2019, we will enable the April 2019 features (end user impacting only) following our [Safe Deployment Process (SPP)](https://docs.microsoft.com/dynamics365/get-started/release-schedule#how-will-the-april-2019-release-be-deployed-to-all-customers) across our global customer base. Your environment/org will be updated based on the region they are located. Here is the current schedule.
 
 |Japan  |South America  |Canada  |India  |Asia  |Great Britain  |Australia  |Europe  |North America|
 |---------|---------|---------|---------|---------|---------|---------|---------|--------|
