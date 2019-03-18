@@ -88,7 +88,7 @@ The Release Notes lists other features across Dynamics 365 – Sales, Service, M
 
 ### When will the April 2019 features be enabled for customers who did not opt in to the preview?
 
-Starting April 5, 2019, we will enable the April 2019 features (end user impacting only) following our [Safe Deployment Process (SPP)](https://docs.microsoft.com/dynamics365/get-started/release-schedule#how-will-the-april-2019-release-be-deployed-to-all-customers) across our global customer base. Your environment/org will be updated based on the region they are located. Here is the current schedule.
+Starting April 5, 2019, we will enable the April 2019 features (end user impacting only) following our [Safe Deployment Process (SDP)](https://docs.microsoft.com/dynamics365/get-started/release-schedule#how-will-the-april-2019-release-be-deployed-to-all-customers) across our global customer base. Your environment/org will be updated based on the region they are located. Here is the current schedule.
 
 |Japan  |South America  |Canada  |India  |Asia  |Great Britain  |Australia  |Europe  |North America|
 |---------|---------|---------|---------|---------|---------|---------|---------|--------|
