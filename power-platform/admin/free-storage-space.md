@@ -2,7 +2,7 @@
 title: "Free storage space |  MicrosoftDocs"
 description: Methods for reducing storage space consumed.
 ms.custom: 
-ms.date: 03/15/2019
+ms.date: 03/19/2019
 ms.reviewer: 
 ms.service: crm-online
 ms.suite: 
@@ -405,3 +405,5 @@ Use the following methods to free storage for each of the capacity types.
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
+### See also
+[Preview: Common Data Service for Apps storage capacity](capacity-storage.md)

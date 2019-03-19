@@ -2,7 +2,7 @@
 title: "Preview: Common Data Service for Apps storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service for Apps.
 ms.custom: ""
-ms.date: 03/15/2019
+ms.date: 03/19/2019
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -144,8 +144,10 @@ The **Storage** tab will be deprecated as we move to the new updated Capacity An
 ### I have a PowerApps environment with Database, will this environment count against capacity?
 Yes. All Common Data Service for Apps environments are counted.
 
+<!-- 
 ### How do I buy more capacity?
 Text needed.
+-->
 
 ### How can I reduce consumed storage space?
 See the following: [Free storage space](free-storage-space.md).
