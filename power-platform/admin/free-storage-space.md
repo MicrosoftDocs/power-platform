@@ -133,13 +133,22 @@ Use the following methods to free storage for each of the capacity types.
 3. In the search criteria area, add criteria similar to the following:  
   
    **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1048576.  
+
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method5a.png "Free storage method 5")
   
 4. Choose **Results**.  
   
 5. You will now have a list of attachments that are larger than the size you specified.  
   
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method5b.png "Free storage method 5")
+
 6. Select individual or a multiple attachments, and then choose **Delete** (X).  
   
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method5c.png "Free storage method 5")
+
 ### Method 6: Remove notes with attachments using a bulk deletion job  
   
 > [!WARNING]
@@ -164,6 +173,9 @@ Use the following methods to free storage for each of the capacity types.
    1.  Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
    2.  With all three rows selected, choose **Group AND**.  
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/free-storage-method6a.png "Free storage method 6")  
   
 7. Choose **Next**.  
   
@@ -174,6 +186,9 @@ Use the following methods to free storage for each of the capacity types.
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
+  
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method6b.png "Free storage method 6")  
   
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
@@ -191,7 +206,10 @@ Use the following methods to free storage for each of the capacity types.
 2. In the **Audit** area choose **Audit Log Management**.  
   
 3. Select the oldest audit log, then choose **Delete Logs**.  
-  
+ 
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method10a.png "Free storage method 10")  
+ 
 4. In the confirmation message choose **OK**.  
   
 > [!NOTE]
@@ -226,6 +244,9 @@ Use the following methods to free storage for each of the capacity types.
    1.  Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
    2.  With all three rows selected, choose **Group AND**.  
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/free-storage-method1b.png "Free storage method 10")  
   
 7. Choose **Next**.  
   
@@ -236,7 +257,10 @@ Use the following methods to free storage for each of the capacity types.
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
 11. If you want a notification e-mail sent, select the **Send an e-mail to me (email@domain.com) when this job is finished** check box.  
-  
+ 
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method6b.png "Free storage method 10")  
+ 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
 ### Method 2: Evaluate and delete suspended workflows  
@@ -262,7 +286,10 @@ Use the following methods to free storage for each of the capacity types.
   
    2.  With all three rows selected, choose **Group AND**.  
   
-5. Choose **Find**.  
+   > [!div class="mx-imgBorder"] 
+   > ![](media/free-storage-method2b.png "Free storage method 2")  
+
+5. Choose **Results**.  
   
 6. In the results window, you can open each item to determine whether the workflow can be deleted.  
   
@@ -277,6 +304,9 @@ Use the following methods to free storage for each of the capacity types.
 3. Select the duplicate detection job instances you want to delete and then choose **Delete** (X).  
   
    To avoid wasting storage space, make sure duplicates are resolved promptly so that they are not reported in multiple duplicate detection jobs.  
+
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method7a.png "Free storage method 7")  
   
 ### Method 8: Delete bulk import instances using a bulk deletion job  
 
@@ -306,7 +336,10 @@ Use the following methods to free storage for each of the capacity types.
    1.  Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
    2.  With all three rows selected, choose **Group AND**.  
-  
+ 
+   > [!div class="mx-imgBorder"] 
+   > ![](media/free-storage-method8a.png "Free storage method 8")  
+ 
 7. Choose **Next**.  
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
@@ -317,6 +350,9 @@ Use the following methods to free storage for each of the capacity types.
   
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method6b.png "Free storage method 8")  
+
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
 ### Method 9: Delete bulk deletion job instances using a bulk deletion job  
@@ -350,6 +386,9 @@ Use the following methods to free storage for each of the capacity types.
    1.  Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
    2.  With all three rows selected, choose **Group AND**.  
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/free-storage-method9a.png "Free storage method 9")  
   
 7. Choose **Next**.  
   
@@ -361,5 +400,8 @@ Use the following methods to free storage for each of the capacity types.
   
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method6b.png "Free storage method 9")  
+
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
