@@ -66,20 +66,26 @@ Use the following methods to free storage for each of the capacity types.
 > [!WARNING]
 >  If you delete this data, the attachments will no longer be available in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
-1. Choose **Advanced Find**.  
+1. Choose **Advanced Find** (![Advanced find button](media/advanced-find-button2.png)).  
   
 2. In the **Look for** list, select **Email Messages**.  
   
 3. In the search criteria area, add criteria similar to the following:  
   
-   **Email Attachments (Item)**  
+   **Attachments (Item)**  
   
-   **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 25000.  
-  
+   **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (1MB in binary).  
+ 
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method3a.png "Free storage method 3")  
+ 
 4. Choose **Results**.  
   
-5. Under **Activities**, you will now have a list of email messages that have attachments that are larger than ‘X’ bytes. Review the emails and delete the attachments as needed.  
+5. You will now have a list of email messages that have attachments that are larger than ‘X’ bytes. Review the emails and delete the attachments as needed.  
   
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method3b.png "Free storage method 3")  
+
 ### Method 4: Remove email messages with attachments using a bulk deletion job  
   
 > [!WARNING]
@@ -99,9 +105,9 @@ Use the following methods to free storage for each of the capacity types.
   
    **Actual End** – **Older Than X Months** – 1  
   
-   **Email Attachments (Item)**  
+   **Attachments (Item)**  
   
-   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 25000.  
+   **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1,048,576 (1MB in binary).  
   
 6. Group the first two criteria rows:  
   
@@ -109,6 +115,9 @@ Use the following methods to free storage for each of the capacity types.
   
    2.  With both rows selected, choose **Group AND**.  
   
+   > [!div class="mx-imgBorder"] 
+   > ![](media/free-storage-method4a.png "Free storage method 4")  
+
 7. Choose **Next**.  
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
@@ -119,6 +128,9 @@ Use the following methods to free storage for each of the capacity types.
   
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
+> [!div class="mx-imgBorder"] 
+> ![](media/free-storage-method6b.png "Free storage method 4")  
+
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
 ### Method 5: Remove notes with attachments using Advanced Find  
