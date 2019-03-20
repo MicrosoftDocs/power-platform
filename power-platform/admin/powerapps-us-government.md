@@ -82,7 +82,7 @@ Access to PowerApps Government customer content by Microsoft administrators is r
 
 PowerApps support and service engineering staff do not have standing access to customer content hosted in PowerApps US Government. Any staff who request temporary permission elevation which would grant access to customer content must first have passed the following background checks.
 
-| **Microsoft Personnel Screening and Background Checks** <sup>1</sup>     | **Description** |
+| **Microsoft personnel screening and background checks** <sup>1</sup>     | **Description** |
 |---------|----------------------------------------------------------------------------------|
 | U.S. Citizenship  | Verification of U.S. citizenship   |
 | Employment History Check  | Verification of seven (7) year employment history   |
@@ -152,7 +152,9 @@ If your organization (Tenant) has already configured and successfully connected 
 
 ## PowerApps US Government feature limitations
 
-Some of the features available in the commercial version of PowerApps are not available to PowerApps US Government customers. The PowerApps team is actively working on making these features available to US Government customers, and will update this article when these features become available.
+Some of the features available in the commercial version of PowerApps are not available to PowerApps US Government customers. The PowerApps team is actively working on making these features available to US Government customers and will update this article when these features become available.
+
+<!--note from editor: Are the bulleted list items the features not yet available? To make clear, suggest changing the 2nd sentence in above list intro to "The PowerApps team is actively working on making the following features available to US Government customers and will update this article when these features become available:"   -->
 
 - Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products
 
@@ -164,11 +166,11 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Mobile Push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications)
 
-- [Connectors](https://docs.microsoft.com/connectors/index): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support and we will review your request
+- [Connectors](https://docs.microsoft.com/connectors/index): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
 
 - [Power Platform admin center](admin-documentation.md): The admin center can be used to [open support tickets](get-help-support.md), but other functionality is currently not available in US Government tenants.
 
-- PowerApps Admin link from the Office 365 Admin Center: Use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps Admin Center.
+- PowerApps admin link from the Office 365 Admin Center: Use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps admin center.
 
 ### See also
 
