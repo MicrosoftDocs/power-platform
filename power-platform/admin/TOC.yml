@@ -173,10 +173,11 @@
       #   href: governance-considerations.md
       - name: Working with the Admin Portals 
         href: wp-work-with-admin-portals.md
-      - name: Automation of tasks with PowerShell 
-        href: wp-task-automation-powershell.md
       - name: PowerShell support for PowerApps (preview) 
-        href: powerapps-powershell.md        
+        href: powerapps-powershell.md   
+        items:
+        - name: Automation of tasks with PowerShell 
+          href: wp-task-automation-powershell.md
       - name: Automation of tasks with Microsoft Flow 
         href: wp-task-automation-flow.md
       - name: View apps in your environments 
