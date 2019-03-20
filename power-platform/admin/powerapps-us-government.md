@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/15/2019
+ms.date: 03/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -124,15 +124,21 @@ PowerApps US Government provides the ability to integrate third-party applicatio
 
 We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
-## PowerApps US Government and Azure Services
+## PowerApps US Government and Azure services
 
 The PowerApps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the PowerApps US Government accreditation boundary but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
-When a user of an organization employing ADFS attempts to access PowerApps US Government, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides his or her credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. The customer’s ADFS server signs this ticket using one half of an asymmetric key pair and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP. The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
+<!--note from editor: In below para, is "ADFS" the acronym for "Active Directory Federation Services"? If so, spell out on first occurrence, followed by acronym in parens: "Active Directory Federation Services (AD FS)". Note that there is a space between the "AD" and "FS", per Cloud Style Guide.-->
+
+When a user of an organization employing ADFS attempts to access PowerApps US Government, the user is redirected to a sign-in page hosted on the organization’s ADFS server. The user provides his or her credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. 
+
+<!--note from editor:  In below para, what does "TLS" stand for, and what does "SSP" in "Azure SSP" stand for?  -->
+
+The customer’s ADFS server signs this ticket using one-half of an asymmetric key pair, and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP. The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
 
 ## PowerApps US Government service URLs
 
-There are a different set of URLs to access PowerApps US Government. Please refer to the following table for a cross reference:
+You use a different set of URLs to access PowerApps US Government, as shown in the following table.
 
 | **Commercial version URL**     | **US Government version URL**         |
 |--------------------------------|---------------------------------------|
@@ -140,9 +146,9 @@ There are a different set of URLs to access PowerApps US Government. Please refe
 | <https://create.powerapps.com> | <https://gov.create.web.powerapps.us> |
 | <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us>      |
 
-## Connectivity between PowerApps US Government and Public Azure Cloud services
+## Connectivity between PowerApps US Government and public Azure Cloud Services
 
-Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a PowerApps customer and you have existing SQL instances in azure public cloud which you need to access, you must open specific firewall rules in SQL to the Azure Government Cloud IP space, for the following datacenters:
+Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a PowerApps customer, and you have existing SQL instances in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government Cloud IP space, for the following datacenters:
 
 - USGov Virginia
 
