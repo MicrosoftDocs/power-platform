@@ -17,19 +17,22 @@ search.app:
 
 # Microsoft PowerApps US Government
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft PowerApps US Government plans (or PowerApps US Government). This  section provides an overview of features that are specific to PowerApps US Government. It is recommended that you read this supplementary section alongside the PowerApps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview) that covers information about the general PowerApps service description. For brevity, this service is commonly referred to as *PowerApps GCC*.
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft PowerApps US Government plans (or PowerApps US Government). This section provides an overview of features that are specific to PowerApps US Government. It is recommended that you read this supplementary section alongside the PowerApps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview) that covers information about the general PowerApps service description. For brevity, this service is commonly referred to as PowerApps GCC.
 
-The PowerApps US Government service description is designed to serve as an overlay to the general PowerApps service description. It defines the unique commitments and differences compared to PowerApps offerings that have been available to our customers since October, 2016.
+<!--note from editor: In sentence above, include what "GCC" stands for (Government Community Cloud?). Is PowerApps GCC the same thing as PowerApps US Government?-->
+
+
+The PowerApps US Government service description is designed to serve as an overlay to the general PowerApps service description. It defines the unique commitments and differences compared to PowerApps offerings that have been available to our customers since October 2016.
 
 ## About PowerApps US Government environments and plans
 
 PowerApps US Government plans are monthly subscriptions and can be licensed to an unlimited number of users.
 
-The PowerApps GCC environment provides compliance with Federal requirements for cloud services, including FedRAMP High, DoD DISA IL2, and requirements for criminal justice systems (CJI data types).
+The PowerApps GCC environment provides compliance with federal requirements for cloud services, including FedRAMP High, DoD DISA IL2, and requirements for criminal justice systems (CJI data types).
 
-In addition to the features and capabilities of PowerApps, the organizations that use PowerApps US Government benefit from the following features unique to PowerApps US Government:
+In addition to the features and capabilities of PowerApps, organizations that use PowerApps US Government benefit from the following features unique to PowerApps US Government:
 
-- Your organization's customer content is physically segregated from customer content in Microsoft's commercial PowerApps Services.
+- Your organization's customer content is physically segregated from customer content in Microsoft's commercial PowerApps services.
 
 - Your organization's customer content is stored within the United States.
 
@@ -39,13 +42,13 @@ In addition to the features and capabilities of PowerApps, the organizations tha
 
 ## Customer eligibility
 
-PowerApps US Government is available to (1) US federal, state, local, tribal, and territorial government entities, and (2) other entities which handle data that is subject to government regulations and requirements and where use of PowerApps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft will include confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation might require sponsorship by a government entity with specific requirements for the handling of data. 
+PowerApps US Government is available to (1) US federal, state, local, tribal, and territorial government entities and (2) other entities that handle data that is subject to government regulations and requirements and where use of PowerApps US Government is appropriate to meet these requirements, subject to validation of eligibility. Validation of eligibility by Microsoft will include confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) policy, or other government-regulated or controlled data. Validation might require sponsorship by a government entity with specific requirements for the handling of data. 
 
 Entities with questions about eligibility for PowerApps US Government should consult their account team. Upon renewal of a customer's contract for PowerApps US Government, re-validation of eligibility is required.
 
-## PowerApps US Government Plans
+## PowerApps US Government plans
 
-Access to PowerApps Government plans is restricted to the offerings described below; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
+Access to PowerApps US Government plans is restricted to the following offerings; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
 - PowerApps/Flow Plan 1 US Government
 
@@ -53,11 +56,11 @@ Access to PowerApps Government plans is restricted to the offerings described be
 
 - In addition to the standalone plans, PowerApps and Microsoft Flow capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans allowing customers to extend and customize Office 365 and Dynamics 365 with PowerApps and Microsoft Flow capabilities that these offerings include. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
 
-Additional information regarding the differences in functionality between these groups of licenses are described in more detail on the [PowerApps licensing information](https://powerapps.microsoft.com/pricing/). PowerApps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
+Additional information regarding the differences in functionality between these groups of licenses is described in more detail on the [PowerApps licensing information](https://powerapps.microsoft.com/pricing/). PowerApps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
 
 ## What is customer data and customer content?
 
-Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video, or image files, and software, that are provided to Microsoft by, or on behalf of, customer through use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information, and in normal service operation, is not sent over the Internet without encryption.
+Customer data, as defined in the Online Service Terms, means all data, including all text, sound, video or image files, and software that is provided to Microsoft by, or on behalf of, customers through the use of the Online Service. Customer content refers to a specific subset of customer data that has been directly created by users, such as content stored in databases through entries in the [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information and in normal service operation is not sent over the internet without encryption.
 
 For more information on the PowerApps protection of customer data, see the [Microsoft Online Services Trust Center](https://www.microsoft.com/trustcenter/cloudservices/business-application-platform/default.aspx).
 
