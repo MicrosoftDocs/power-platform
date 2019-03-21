@@ -35,7 +35,7 @@ The list of users is downloaded into a .csv file. This process could take severa
 ## View the list
 After the .csv file is created, open it in Excel. The list contains each user’s name, email address, license type, and other information.
 
-A user who's accessed a product at least once is considered an *active user*. Since this is a list of active users, it does not contain users who have licenses for PowerApps and Microsoft Flow but have never accessed them. You can view all user licenses from the [Office 365 admin center](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+A user who's accessed a product at least once is considered an *active user*. Since this is a list of active users, it does not contain users who have licenses for PowerApps and Microsoft Flow but have never accessed them. You can view all user licenses from the [Microsoft 365 admin center](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 The following example shows two users who have licenses to both PowerApps and Microsoft Flow. Jane Doe has access through a subscription to Office 365, and John Doe has a trial license for each product.
 
@@ -43,7 +43,7 @@ The following example shows two users who have licenses to both PowerApps and Mi
 
 If a user has left the organization, the list will show **Unknown** in the **User name** and **Email address** columns. If the list shows **Unknown** but nobody has left the organization, wait several minutes, and then download the list again.
 
-To add user licenses, open the [Office 365 admin center](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+To add user licenses, open the [Microsoft 365 admin center](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 ## Next steps
 In this topic, you learned how to download and view a list of active users in your tenant. To learn how to download and view a list of apps created in your environments, continue to the next topic.

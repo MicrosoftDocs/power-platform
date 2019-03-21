@@ -165,7 +165,7 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Power Platform admin center](admin-documentation.md): The admin center can be used to [open support tickets](get-help-support.md), but other functionality is currently not available in US Government tenants.
 
-- PowerApps Admin link from the Office 365 Admin Center: Use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps Admin Center.
+- PowerApps Admin link from the Microsoft 365 admin center: Use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps Admin Center.
 
 ### See also
 

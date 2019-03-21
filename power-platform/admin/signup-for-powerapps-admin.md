@@ -17,7 +17,7 @@ search.app:
 ---
 
 # Purchase PowerApps for your organization
-This article shows you how to purchase PowerApps for your organization as an administrator. You can purchase PowerApps through the PowerApps website directly, through the Office 365 admin center, or through your Microsoft representative or partner. This article will discuss the trial options available for PowerApps Plan 1 or Plan 2 and then explain how to purchase PowerApps Plan 1 or Plan 2 as an organization. For more information, see [PowerApps in your organization Q&A](signup-question-and-answer.md).
+This article shows you how to purchase PowerApps for your organization as an administrator. You can purchase PowerApps through the PowerApps website directly, through the Microsoft 365 admin center, or through your Microsoft representative or partner. This article will discuss the trial options available for PowerApps Plan 1 or Plan 2 and then explain how to purchase PowerApps Plan 1 or Plan 2 as an organization. For more information, see [PowerApps in your organization Q&A](signup-question-and-answer.md).
 
 > [!NOTE]
 >   To purchase PowerApps for an organization, you must already be an Office 365 Global or Billing Admin of a tenant, or you must create a tenant.
@@ -34,10 +34,10 @@ You can purchase PowerApps subscriptions for your organization from [powerapps.m
 
     ![](./media/signup-for-powerapps-admin/buy-now.png)
 
-3. Provide information to make the purchase, and then navigate to the [Office 365 admin center][6] to assign PowerApps licenses to your users.
+3. Provide information to make the purchase, and then navigate to the [Microsoft 365 admin center][6] to assign PowerApps licenses to your users.
 
 ## Get PowerApps through Office 365
-You can purchase PowerApps subscriptions for your organization from the [Office 365 admin center][6] and then assign PowerApps licenses to your users. [Learn more][5].
+You can purchase PowerApps subscriptions for your organization from the [Microsoft 365 admin center][6] and then assign PowerApps licenses to your users. [Learn more][5].
 
 > [!NOTE]
 > PowerApps will be added to existing and new Office 365 subscriptions in November 2016.
@@ -48,7 +48,7 @@ You can purchase PowerApps subscriptions for your organization from the [Office 
 
 
 ### Purchase a subscription trial
-1. Browse to the [Office 365 admin center][6].
+1. Browse to the [Microsoft 365 admin center][6].
 
 2. On the left navigation pane, select **Billing -> Subscriptions**.
 
@@ -63,7 +63,7 @@ You can purchase PowerApps subscriptions for your organization from the [Office 
     Under **Billing -> Subscriptions**, you will see **Microsoft PowerApps Plan 1 Trial** or **Microsoft PowerApps Plan 2 Trial** listed with 100 licenses available. Your free trial will cover 90 days.
 
 ### Purchase a subscription
-1. Browse to the [Office 365 admin center][6].
+1. Browse to the [Microsoft 365 admin center][6].
 
 2. On the left navigation pane, select **Billing -> Subscriptions**.
 
@@ -95,4 +95,4 @@ These are not supported yet.
 [2]: http://go.microsoft.com/fwlink/p/?LinkId=708209
 [4]: https://go.microsoft.com/fwlink/?linkid=832551
 [5]: https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc
-[6]: https://portal.office.com/admin/default.aspx
+[6]: https://admin.microsoft.com/admin/default.aspx

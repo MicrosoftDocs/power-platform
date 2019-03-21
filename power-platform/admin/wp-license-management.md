@@ -83,7 +83,7 @@ In addition to the trial plans, there is also a free PowerApps Community Plan. T
 
 ## What users are licensed
 
-You can always look at individual user licensing in the Office 365 admin center by drilling into specific users. From the PowerApps administration center you can also produce a report focused on PowerApps licenses. This is one of the steps we recommend you do right away as a new administrator trying to understand your current licensing. 
+You can always look at individual user licensing in the Microsoft 365 admin center by drilling into specific users. From the PowerApps administration center you can also produce a report focused on PowerApps licenses. This is one of the steps we recommend you do right away as a new administrator trying to understand your current licensing. 
 
 You can download the report from admin.powerapps.com -> **Tenant** -> **User Licensing**
 

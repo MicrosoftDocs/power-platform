@@ -34,19 +34,19 @@ Curently, there are multiple admin centers you use to manage and monitor your en
 |Business platform admin center<br/>[https://admin.businessplatform.microsoft.com](https://admin.businessplatform.microsoft.com)      |This points to the same site as admin.powerapps.com.  **Over time, this will be migrated to and replaced by the Power Platform Admin center.**        |
 |Dynamics 365 Admin center<br/>[https://port.crm.dynamics.com/G/manage/index.aspx](https://port.crm.dynamics.com/G/manage/index.aspx)     |The Dynamics 365 Admin Center, that can be leveraged to perform certain Common Data Service environment management like renaming, deleting, and resetting.    |
 |Dynamics 365 Instance Management<br/>[https://port.crm<N>.dynamics.com/G/Instances/InstancePicker.aspx](https://port.crm<N>.dynamics.com/G/Instances/InstancePicker.aspx) | This instance management portal is reached from admin.powerapps.com when managing the Common Data Service database or from the Dynamics 365 Admin center. Here you will see a list of all the Common Data Service databases and can perform actions such as backup, as well as other actions on a per instance basis.   |
-|Office 365 Admin center<br/>[https://portal.office.com/adminportal](https://portal.office.com/adminportal)      |Here you manage users and their license assignment as well as launch into many of the individual admin centers.         |
+|Microsoft 365 admin center<br/>[https://admin.microsoft.com/adminportal](https://admin.microsoft.com/adminportal)      |Here you manage users and their license assignment as well as launch into many of the individual admin centers.         |
 |Microsoft Azure<br/>[https://portal.azure.com](https://portal.azure.com)      |Advanced Azure AD management tasks like conditional access and support for developer application registration is done here. This is also where you start setup of your on-premises gateways.         |
 |Security and Compliance Center<br/>[https://protection.office.com](https://protection.office.com)     |In addition to the general compliance tasks, administrators can come here to search the Audit log to see Flow audit events.         |
 
 <!--
-## What about the Office 365 admin center?
+## What about the Microsoft 365 admin center?
 
-You'll continue to use the Office 365 admin center to manage settings like:
+You'll continue to use the Microsoft 365 admin center to manage settings like:
 
 > - users, licenses, roles, passwords
 > - subscriptions, billing, purchase services
 > - service health
 > - usage and security reports
 
-![Office 365 admin center](./media/o365-admin-center.png)
+![Microsoft 365 admin center](./media/o365-admin-center.png)
 -->
