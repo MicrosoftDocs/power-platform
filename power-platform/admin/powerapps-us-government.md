@@ -137,7 +137,7 @@ You use a different set of URLs to access PowerApps US Government, as shown in t
 
 | **Commercial version URL**     | **US Government version URL**         |
 |--------------------------------|---------------------------------------|
-| <https://web.powerapps.com)>    | <https://gov.web.powerapps.us>        |
+| <https://web.powerapps.com>    | <https://gov.web.powerapps.us>        |
 | <https://create.powerapps.com> | <https://gov.create.web.powerapps.us> |
 | <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us>      |
 
