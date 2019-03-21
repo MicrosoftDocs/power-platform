@@ -40,7 +40,7 @@ We've improved how you view metrics for your organization. You no longer need to
 <a name="BKMK_InstallSolution"></a>   
 
 ## View Common Data Service analytics  
-It's simple. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service**.
+It's simple. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service for Apps**.
 
 <a name="BKMK_Home"></a>   
 
