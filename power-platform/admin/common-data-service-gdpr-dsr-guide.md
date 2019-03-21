@@ -74,16 +74,16 @@ After you determine which type of CDS environment you have, follow the steps in 
 ## User personal data in CDS for Apps
 
 ### Prerequisites
-You must create users in the Office 365 Admin Center and assign them an appropriate user license and security role before they can access and use CDS for Apps.
+You must create users in the Microsoft 365 admin center and assign them an appropriate user license and security role before they can access and use CDS for Apps.
 
-Standard user personal data (for example, UserName, UserID, Phone, Email, and Address) is kept and maintained in the Office 365 Admin Center. System administrators can update this personal data only in the Office 365 Admin Center, and the data is then automatically synced to the CDS for Apps system User entity in all environments. System administrators can also create custom attributes to capture additional user personal data within the CDS for Apps system User entity, and then manually maintain and manage these attributes.
+Standard user personal data (for example, UserName, UserID, Phone, Email, and Address) is kept and maintained in the Microsoft 365 admin center. System administrators can update this personal data only in the Microsoft 365 admin center, and the data is then automatically synced to the CDS for Apps system User entity in all environments. System administrators can also create custom attributes to capture additional user personal data within the CDS for Apps system User entity, and then manually maintain and manage these attributes.
 
-To avoid interruption to business applications that may be critical to your organization’s operations, a user's records are not automatically removed from the CDS for Apps system User entity when that user is deleted from within the Office 365 Admin Center. The user’s status is set to Disabled in CDS for Apps, but a CDS for Apps System Administrator must locate and remove the user's personal data from CDS for Apps within the application.
+To avoid interruption to business applications that may be critical to your organization’s operations, a user's records are not automatically removed from the CDS for Apps system User entity when that user is deleted from within the Microsoft 365 admin center. The user’s status is set to Disabled in CDS for Apps, but a CDS for Apps System Administrator must locate and remove the user's personal data from CDS for Apps within the application.
 
 Only Office 365 Global Administrators and CDS System Administrators can perform the discover, rectify, export, and delete actions listed below.
 
 ### Discover
-System Administrators can create multiple CDS for Apps instances. These instances can be used for trial, development, or production purposes. Each of these instances has a copy of the system User entity with any custom attributes that may have been added by the system administrator, as well as the user personal data synced from the Office 365 Admin Center.
+System Administrators can create multiple CDS for Apps instances. These instances can be used for trial, development, or production purposes. Each of these instances has a copy of the system User entity with any custom attributes that may have been added by the system administrator, as well as the user personal data synced from the Microsoft 365 admin center.
 
 System administrators can find a list of all the CDS for Apps instances by navigating to the Dynamics 365 Administration Center from the PowerApps Admin center.
 
@@ -170,7 +170,7 @@ From the [PowerApps Admin center](https://admin.powerapps.com/), do the followin
 ### Delete
 
 #### User
-To avoid interruption to business applications that may be critical to your organization’s operations, a user's records are not automatically removed from the CDS for Apps system User entity when that user is deleted from within the Office 365 Admin Center. The user’s status is set to Disabled in CDS for Apps, but a CDS for Apps System Administrator must locate and remove the user's personal data from CDS for Apps within the application.
+To avoid interruption to business applications that may be critical to your organization’s operations, a user's records are not automatically removed from the CDS for Apps system User entity when that user is deleted from within the Microsoft 365 admin center. The user’s status is set to Disabled in CDS for Apps, but a CDS for Apps System Administrator must locate and remove the user's personal data from CDS for Apps within the application.
 
 #### Remove a user's personal data from the user's Summary page
 When a user record is deleted from the Azure Active Directory, the following message is displayed on the user's Summary page:
