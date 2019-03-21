@@ -116,15 +116,18 @@ IL2: Impact Level 2 -->
 
 PowerApps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an Authority to Operate (ATO). 
 
-Note that, at the present time, the PowerApps US Government services are under review with FedRAMP but have been granted a Security Assessment Report (SAR) by a qualified Third Party Assessment Organization [3PAO](https://www.fedramp.gov/3pao-requirements-update/). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
+Note that, at the present time, the PowerApps US Government services are under review with FedRAMP but have been granted a Security Assessment Report (SAR) by a qualified Third Party Assessment Organization ([3PAO](https://www.fedramp.gov/3pao-requirements-update/)). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
 
 PowerApps US Government has features designed to support customer’s CJIS Policy requirements for law enforcement agencies. Please visit the PowerApps US Government products page in Trust Center for more detailed information related to certifications and accreditations.
 
 ## PowerApps US Government and other Microsoft services
 
-PowerApps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Flow US Government. PowerApps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, PowerApps mobile applications any third-party client application that connects to PowerApps US Government are not part of PowerApps US Government's accreditation boundary and government customers are responsible for managing them.
+<!--note from editor: 
+RE: mention of "Dynamics 365 US Government" in para below--the current topic refers to it as "Dynamics 365 Government"--no "US"-->
 
-PowerApps US Government leverages the Office 365 customer administrator UI for customer administration and billing – PowerApps US Government maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, PowerApps US Government leverages Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
+PowerApps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Microsoft Flow US Government. PowerApps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, PowerApps mobile applications any third-party client application that connects to PowerApps US Government are not part of PowerApps US Government's accreditation boundary and government customers are responsible for managing them.
+
+PowerApps US Government leverages the Office 365 customer administrator UI for customer administration and billing—PowerApps US Government maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, PowerApps US Government leverages Azure (including Azure Government) ATOs for infrastructure and platform services, respectively.
 
 <!--note from editor: 
 RE: "Active Directory Federation Services (AD FS)". Note that there is a space between the "AD" and "FS" in the acronym, per Cloud Style Guide.-->
@@ -197,21 +200,23 @@ Some of the features available in the commercial version of PowerApps are not av
 
 <!--note from editor: Are the bulleted list items the features not yet available? To make clear, suggest changing the 2nd sentence in above list intro to "The PowerApps team is actively working on making the following features available to US Government customers and will update this article when these features become available:"   -->
 
-- Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products
+- Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products.
 
-- Creating PowerApps US Government apps from [SharePoint Lists](https://support.office.com/article/Create-a-PowerApp-for-a-list-in-SharePoint-Online-9338b2d2-67ac-4b81-8e67-97da27e5e9ab)
+- Creating PowerApps US Government apps from [SharePoint lists](https://support.office.com/article/Create-a-PowerApp-for-a-list-in-SharePoint-Online-9338b2d2-67ac-4b81-8e67-97da27e5e9ab).
 
-- [Data Integration and PowerQuery](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
+- [Data integration and Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 
-- [Common Data Service for Apps analytics](analytics-common-data-service.md)
+- [Common Data Service for Apps analytics](analytics-common-data-service.md).
 
-- [Mobile Push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications)
+- [Mobile push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications).
 
-- [Connectors](https://docs.microsoft.com/connectors/index): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a Connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
+- [Connectors](https://docs.microsoft.com/connectors/index): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
 
 - [Power Platform admin center](admin-documentation.md): The admin center can be used to [open support tickets](get-help-support.md), but other functionality is currently not available in US Government tenants.
 
 - PowerApps admin link from the Office 365 Admin Center: Use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps admin center.
+
+<!--note from editor:    RE: "Common Data Service for Apps analytics" bullet item above: My understanding is that the "for Apps" should be removed in instances of "Common Data Service"  -->
 
 ### See also
 
