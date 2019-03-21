@@ -19,9 +19,9 @@ search.app:
 
 <!--note from editor: In sentence below, change "Microsoft has created Microsoft PowerApps US Government plans (or PowerApps US Government)" to "Microsoft has created PowerApps US Government, which consists of several plans for US government organizations.-->
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft PowerApps US Government plans (or PowerApps US Government). This section provides an overview of features that are specific to PowerApps US Government. It is recommended that you read this supplementary section alongside the PowerApps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview), which covers information about the general PowerApps service description. For brevity, this service is commonly referred to as PowerApps GCC.
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft PowerApps US Government plans (or PowerApps US Government). This section provides an overview of features that are specific to PowerApps US Government. It is recommended that you read this supplementary section alongside the PowerApps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview), which covers information about the general PowerApps service description. For brevity, this service is commonly referred to as PowerApps Government Community Cloud (GCC).
 
-<!--note from editor: In sentence above, include what "GCC" stands for (Government Community Cloud?). Is PowerApps GCC the exact same thing as PowerApps US Government?-->
+<!--note from editor: Is PowerApps GCC the exact same thing as PowerApps US Government, or is it a feature or service of it? See section "Data segregation for Government Community Cloud" at Line 75.-->
 
 
 The PowerApps US Government service description is designed to serve as an overlay to the general PowerApps service description. It defines the unique commitments and differences compared to PowerApps offerings that have been available to our customers since October 2016.
@@ -61,6 +61,8 @@ Access to PowerApps US Government plans is restricted to the following offerings
 - In addition to the standalone plans, PowerApps and Microsoft Flow capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Office 365 and Dynamics 365. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
 
 <!--note from editor: Is there a more exact phrase to replace "show up"--"will be distributed through an update" or something along those lines ? -->
+
+<!--note from editor: In existing docs published online, I see products referred to as Microsoft Flow US Government, Dynamics 365 Government, and Office 365 US Government. Is it intentional that "US" is left off of "Dynamics 365 Government"? -->
 
 
 Additional information about the differences in functionality between these groups of licenses is described in more detail on the [PowerApps licensing information](https://powerapps.microsoft.com/pricing/) page. PowerApps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
@@ -106,7 +108,15 @@ PowerApps support and service engineering staff do not have standing access to c
 
 ## Certifications and accreditations
 
-PowerApps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an Authority to Operate (ATO). It is important to note that, at the present time, the PowerApps US Government services are under review with FedRAMP, but have been granted an Security Assessment Report (SAR) by a qualified [3PAO](https://www.fedramp.gov/3pao-requirements-update/). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
+<!--note from editor: In para below, spell out "DoD DISA IL2"?
+DoD: Department of Defense
+DISA: Defense Information Systems Agency
+IL2: Impact Level 2 -->
+
+
+PowerApps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an Authority to Operate (ATO). 
+
+Note that, at the present time, the PowerApps US Government services are under review with FedRAMP but have been granted a Security Assessment Report (SAR) by a qualified Third Party Assessment Organization [3PAO](https://www.fedramp.gov/3pao-requirements-update/). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
 
 PowerApps US Government has features designed to support customer’s CJIS Policy requirements for law enforcement agencies. Please visit the PowerApps US Government products page in Trust Center for more detailed information related to certifications and accreditations.
 
@@ -116,7 +126,10 @@ PowerApps US Government includes several features that allow users to connect to
 
 PowerApps US Government leverages the Office 365 customer administrator UI for customer administration and billing – PowerApps US Government maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, PowerApps US Government leverages Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
 
-If you adopt the use of Active Directory Federation Services (ADFS) 2.0 and set up policies to help ensure your users connect to the services through single sign-on, any customer content that is temporarily cached will be located in the U.S.A.
+<!--note from editor: 
+RE: "Active Directory Federation Services (AD FS)". Note that there is a space between the "AD" and "FS" in the acronym, per Cloud Style Guide.-->
+
+If you adopt the use of Active Directory Federation Services (AD FS) 2.0 and set up policies to help ensure your users connect to the services through single sign-on, any customer content that is temporarily cached will be located in the United States.
 
 ## PowerApps US Government and third-party services
 
@@ -128,13 +141,20 @@ We recommend that you review the privacy and compliance statements provided by t
 
 The PowerApps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the PowerApps US Government accreditation boundary but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
-<!--note from editor: In below para, is "ADFS" the acronym for "Active Directory Federation Services"? If so, spell out on first occurrence, followed by acronym in parens: "Active Directory Federation Services (AD FS)". Note that there is a space between the "AD" and "FS", per Cloud Style Guide.-->
 
-When a user of an organization employing ADFS attempts to access PowerApps US Government, the user is redirected to a sign-in page hosted on the organization’s ADFS server. The user provides his or her credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. 
+
+When a user of an organization employing ADFS attempts to access PowerApps US Government, the user is redirected to a sign-in page hosted on the organization’s AD FS server. The user provides his or her credentials to their organization's AD FS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s AD FS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. 
 
 <!--note from editor:  In below para, what does "TLS" stand for, and what does "SSP" in "Azure SSP" stand for?  -->
 
-The customer’s ADFS server signs this ticket using one-half of an asymmetric key pair, and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP. The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
+The customer’s AD FS server signs this ticket using one-half of an asymmetric key pair, and it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. 
+
+Full details of the Azure AD security architecture and control implementation can be found in the Azure SSP. The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
+
+<!--note from editor: RE: mention of "Microsoft Global Foundations Services" and "GFS" above--I couldn't find mention of this in style guides or find info about it in Microsoft docs. I did a web search, found a mention of
+"Global Foundation Services" that had a link; the link (http://www.globalfoundationservices.com/) led  me to this page: 
+https://azure.microsoft.com/en-us/?ocid=cloudplat_hp. Wanted to confirm that the term is still current.-->
+
 
 ## PowerApps US Government service URLs
 
@@ -148,7 +168,7 @@ You use a different set of URLs to access PowerApps US Government, as shown in t
 
 ## Connectivity between PowerApps US Government and public Azure Cloud Services
 
-Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a PowerApps customer, and you have existing SQL instances in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government Cloud IP space, for the following datacenters:
+Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a PowerApps customer, and you have existing SQL instances in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government cloud IP space, for the following datacenters:
 
 - USGov Virginia
 
@@ -156,12 +176,20 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 
 Please refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
 
-## On-premises Data Gateway configuration
+## On-premises data gateway configuration
 
-Install an [On-Premises Data Gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in
+Install an [on-premises data gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in
 PowerApps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
-If your organization (Tenant) has already configured and successfully connected the On-Premise Data Gateway for PowerBI US Government, then the process and configuration your organization executed to enable that will also enable on-premise connectivity for PowerApps. However, if you are unable to connect to your tenant, then you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
+If your organization (tenant) has already configured and successfully connected the on-premises data gateway for PowerBI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for PowerApps. However, if you are unable to connect to your tenant, you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
+
+<!--note from editor:    
+RE: the use of term "whitelisting" above:
+Microsoft Writing Style Guide guidance is to consider alternatives where possible.
+Examples
+Safe Recipients list 
+blocked or safe programs -->
+
 
 ## PowerApps US Government feature limitations
 
