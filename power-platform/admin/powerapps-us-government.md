@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/20/2019
+ms.date: 03/21/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -97,13 +97,7 @@ PowerApps support and service engineering staff do not have standing access to c
 
 ## Certifications and accreditations
 
-<!--note from editor: In para below, spell out "DoD DISA IL2"?
-DoD: Department of Defense
-DISA: Defense Information Systems Agency
-IL2: Impact Level 2 -->
-
-
-PowerApps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an Authority to Operate (ATO). 
+PowerApps US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This infers alignment to [DoD DISA IL2](https://iase.disa.mil/cloud_security/cloudsrg/Pages/ImpactLevels.aspx). FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can review these artifacts in support of their review to grant an Authority to Operate (ATO). 
 
 Note that, at the present time, the PowerApps US Government services are under review with FedRAMP but have been granted a Security Assessment Report (SAR) by a qualified Third Party Assessment Organization ([3PAO](https://www.fedramp.gov/3pao-requirements-update/)). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
 
@@ -125,18 +119,17 @@ We recommend that you review the privacy and compliance statements provided by t
 
 ## PowerApps US Government and Azure services
 
-The PowerApps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the PowerApps US Government accreditation boundary but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
+The Dynamics 365 US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Microsoft Dynamics 365 US Government accreditation boundary, but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
-When a user of an organization employing ADFS attempts to access PowerApps US Government, the user is redirected to a sign-in page hosted on the organization’s AD FS server. The user provides his or her credentials to their organization's AD FS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s AD FS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. 
+When a user of an organization employing AD FS attempts to access Microsoft Dynamics 365 US Government, the user is redirected to a login page hosted on the organization’s AD FS server.
+The user provides his or her credentials to their organization's AD FS server. The organization's AD FS server attempts to authenticate the credentials using the organization’s Active Directory infrastructure.
 
-The customer’s AD FS server signs this ticket using one-half of an asymmetric key pair, and it sends the ticket to Azure AD via encrypted Transport Layer Security (TLS). Azure AD validates the signature using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain in an encrypted fashion in Azure AD; in other words, limited user-identifiable information is stored in Azure AD. 
+If authentication is successful, the organization’s AD FS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user’s identity and group membership.
 
-Full details of the Azure AD security architecture and control implementation can be found in the Azure System Security Plan (SSP). The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
+The customer’s AD FS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Azure AD via encrypted Transport Layer Security (TLS). Azure AD validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
 
-<!--note from editor: RE: mention of "Microsoft Global Foundations Services" and "GFS" above--I couldn't find mention of this in style guides or find info about it in Microsoft docs. I did a web search, found a mention of
-"Global Foundation Services" that had a link; the link (http://www.globalfoundationservices.com/) led  me to this page: 
-https://azure.microsoft.com/en-us/?ocid=cloudplat_hp. Wanted to confirm that the term is still current.-->
-
+The user's identity and group membership information remain encrypted in Azure AD. In other words, only limited user-identifiable information is stored in Azure AD.
+You can find full details of the Azure AD security architecture and control implementation in the Azure SSP.  End-users do not interact directly with Azure AD.
 
 ## PowerApps US Government service URLs
 
