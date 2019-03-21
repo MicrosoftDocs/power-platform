@@ -184,7 +184,7 @@ Please refer to the Azure IP Ranges and [Service Tags – US Government Cloud do
 Install an [on-premises data gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in
 PowerApps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
-If your organization (tenant) has already configured and successfully connected the on-premises data gateway for PowerBI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for PowerApps. However, if you are unable to connect to your tenant, you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
+If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for PowerApps. However, if you are unable to connect to your tenant, you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
 
 <!--note from editor:    
 RE: the use of term "whitelisting" above:
