@@ -27,7 +27,7 @@ Microsoft PowerApps enables users to create applications for Windows, iOS, and A
 The only sign-up option for individual users in your organization is the PowerApps Plan 2 trial, which they can sign up for through the PowerApps website:
 
 ##### Option 1
-Users can sign up by going to [powerapps.microsoft.com](https://powerapps.microsoft.com), selecting **Sign up free**, and then completing the sign-up process for PowerApps through [portal.office.com](https://portal.office.com/Start?sku=powerapps).
+Users can sign up by going to [powerapps.microsoft.com](https://powerapps.microsoft.com), selecting **Sign up free**, and then completing the sign-up process for PowerApps through [admin.microsoft.com](https://admin.microsoft.com/Start?sku=powerapps).
 
 ##### Option 2
 Users can sign up by going to [powerapps.microsoft.com](https://powerapps.microsoft.com), selecting **Sign in**, signing in with their work or school accounts, and sign up for the PowerApps Plan 2 trial by accepting the PowerApps terms of use.    
@@ -131,7 +131,7 @@ If a tenant was created by Microsoft, you can claim and manage that tenant using
 
 1. Join the tenant by signing up for PowerApps using an email address domain that matches the tenant domain you want to manage. For example, if Microsoft created the contoso.com tenant, then join the tenant with an email address ending with @contoso.com.
 2. Claim admin control by verifying domain ownership: once you are in the tenant, you can promote yourself to the admin role by verifying domain ownership. To do so, follow these steps:
-3. Go to [https://portal.office.com](https://portal.office.com/Start?sku=powerapps).
+3. Go to [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=powerapps).
 4. Select the app-launcher icon in the upper-left corner, and then choose Admin.
 5. Read the instructions on the **Become the admin** page, and then choose **Yes, I want to be the admin**.  
 
