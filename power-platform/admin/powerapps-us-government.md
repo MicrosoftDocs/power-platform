@@ -21,7 +21,7 @@ search.app:
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft PowerApps US Government plans (or PowerApps US Government). This section provides an overview of features that are specific to PowerApps US Government. It is recommended that you read this supplementary section alongside the PowerApps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview), which covers information about the general PowerApps service description. For brevity, this service is commonly referred to as PowerApps Government Community Cloud (GCC).
 
-<!--note from editor: Is PowerApps GCC the exact same thing as PowerApps US Government, or is it a feature or service of it? See section "Data segregation for Government Community Cloud" at Line 75.-->
+<!--note from editor: Is PowerApps GCC the exact same thing as PowerApps US Government, or is it a feature or service or component of it? See section "Data segregation for Government Community Cloud" at Line 75.-->
 
 
 The PowerApps US Government service description is designed to serve as an overlay to the general PowerApps service description. It defines the unique commitments and differences compared to PowerApps offerings that have been available to our customers since October 2016.
@@ -198,7 +198,7 @@ blocked or safe programs -->
 
 Some of the features available in the commercial version of PowerApps are not available to PowerApps US Government customers. The PowerApps team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
-<!--note from editor: Are the bulleted list items the features not yet available? To make clear, suggest changing the 2nd sentence in above list intro to "The PowerApps team is actively working on making the following features available to US Government customers and will update this article when these features become available:"   -->
+<!--note from editor: Are the bulleted list items the features not yet available? If that's the case, to make clear, suggest changing the 2nd sentence in above list intro to "The PowerApps team is actively working on making the following features available to US Government customers and will update this article when these features become available:" Or, if they are features that are available, make that clear.  -->
 
 - Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products.
 
@@ -217,6 +217,10 @@ Some of the features available in the commercial version of PowerApps are not av
 - PowerApps admin link from the Office 365 Admin Center: Use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps admin center.
 
 <!--note from editor:    RE: "Common Data Service for Apps analytics" bullet item above: My understanding is that the "for Apps" should be removed in instances of "Common Data Service"  -->
+
+<!-- note from editor: last bullet item in above list. The link given gives me this message:
+"The email address you provided is not associated with a U.S. Government subscription.
+Please talk to your organization’s administrator if you’d like to request permission to access Microsoft PowerApps in U.S. Government cloud environment. Sign out" -->
 
 ### See also
 
