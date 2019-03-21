@@ -25,7 +25,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-In the overview we hinted that there are two distinct types of applications PowerApps Canvas apps and PowerApps Model-driven apps and in this section, we will drill deeper into what you should be concerned with as an administrator. First, model-driven apps require a CDS database and are built on top of the data modeled in that database instance. Model-driven apps materialize views and detail screens based on the data structure. Because of this, they offer users a more consistent look and feel from one screen to the next without much effort by the creator. Canvas apps on the other hand can be built with or without a CDS database. They use connectors to access data and services. Canvas apps start with a blank screen like an artist’s canvas and the creator manually lays out each screen. This allows the creator to have complete control of placements of controls on the canvas. Regardless of the two types, apps will be built in the context of a PowerApps environment.
+In the overview we hinted that there are two distinct types of applications PowerApps Canvas apps and PowerApps Model-driven apps and in this section, we will drill deeper into what you should be concerned with as an administrator. First, model-driven apps require a Common Data Service database and are built on top of the data modeled in that database instance. Model-driven apps materialize views and detail screens based on the data structure. Because of this, they offer users a more consistent look and feel from one screen to the next without much effort by the creator. Canvas apps on the other hand can be built with or without a Common Data Service database. They use connectors to access data and services. Canvas apps start with a blank screen like an artist’s canvas and the creator manually lays out each screen. This allows the creator to have complete control of placements of controls on the canvas. Regardless of the two types, apps will be built in the context of a PowerApps environment.
 
 ![Types of PowerApps](media/types-of-powerapps.png "Types of PowerApps")
 
@@ -33,7 +33,7 @@ It is also possible as the scenarios get more complex that your solution contain
 
 ## User access to apps
 
-Users obtain access to apps by having them shared with them. The technical specifics of how that sharing works is different between canvas apps and model-driven apps. For canvas apps they are shared with users, Azure AD Security Groups or with the whole organization. Model-driven apps you share by adding a user to a CDS security role that is associated with the application. We will cover more on CDS security roles in the Security section of this paper. The following is an example of sharing an app, where you can choose to also allow them access to edit in addition to using the app.
+Users obtain access to apps by having them shared with them. The technical specifics of how that sharing works is different between canvas apps and model-driven apps. For canvas apps they are shared with users, Azure AD Security Groups or with the whole organization. Model-driven apps you share by adding a user to a Common Data Service security role that is associated with the application. We will cover more on Common Data Service security roles in the Security section of this paper. The following is an example of sharing an app, where you can choose to also allow them access to edit in addition to using the app.
 
 ![Set app permission](media/app-permissions.png "Set app permission")
 
@@ -55,13 +55,13 @@ For model-driven applications there is also a concept of publish that happens af
 
 ## Exporting and importing apps
 
-Both types of applications can be exported and then re-imported into other environments, both in the same tenant and in different tenants. Both export into a zip file, however the organization of the apps are different in their respective packaging. Canvas apps export standalone and model-driven will export along with any related CDS components. In the future, canvas app export functionality will be included in the CDS solution framework allowing you to have one solution package that represents all the components in your application. Exporting and Importing would allow a more complete application lifecycle management (ALM) than the light weight ALM versioning we described previously.
+Both types of applications can be exported and then re-imported into other environments, both in the same tenant and in different tenants. Both export into a zip file, however the organization of the apps are different in their respective packaging. Canvas apps export standalone and model-driven will export along with any related Common Data Service components. In the future, canvas app export functionality will be included in the Common Data Service solution framework allowing you to have one solution package that represents all the components in your application. Exporting and Importing would allow a more complete application lifecycle management (ALM) than the light weight ALM versioning we described previously.
 
 Today, when you export a canvas app, you will choose the action that will be taken in the target environment. You can also choose to add a comment on each resource.
 
 ![Export app](media/export-app.png "Export app")
 
-On import, prior to completion of the import the related resources will need to be configured to have the proper connections established in the target environment. Custom Connectors and CDS customizations will need to be established prior to the import. If the Update action is chosen on import, the new version will be saved as a draft and will need to be “Published” before users will be able to use it. This allows an opportunity to test the application in the environment without impacting existing users.
+On import, prior to completion of the import the related resources will need to be configured to have the proper connections established in the target environment. Custom Connectors and Common Data Service customizations will need to be established prior to the import. If the Update action is chosen on import, the new version will be saved as a draft and will need to be “Published” before users will be able to use it. This allows an opportunity to test the application in the environment without impacting existing users.
 
 ## What apps already exist?
 

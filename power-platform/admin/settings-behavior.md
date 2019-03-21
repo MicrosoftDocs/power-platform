@@ -1,6 +1,6 @@
 ---
 title: "Manage behavior settings | MicrosoftDocs"
-description: View and manage behavior settings for Common Data Service for Apps.
+description: View and manage behavior settings for Common Data Service.
 ms.custom: ""
 ms.date: 09/14/2018
 ms.reviewer: ""

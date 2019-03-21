@@ -1,4 +1,4 @@
 <!--
-# [Administer CDS for Apps](admin/admin-guide-bap.md)
+# [Administer Common Data Service](admin/admin-guide-bap.md)
 # [Administer Microsoft Flow](flow/stub.md)
 -->

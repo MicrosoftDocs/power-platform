@@ -1,6 +1,6 @@
 ---
-title: Integrate data into Common Data Service for Apps
-description: Integrate data from multiple sources into Common Data Service for Apps
+title: Integrate data into Common Data Service
+description: Integrate data from multiple sources into Common Data Service
 author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
@@ -14,11 +14,11 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Integrate data into Common Data Service for Apps
+# Integrate data into Common Data Service
 
-<!--note from editor: the style guide says not to use "the" in front of Common Data Service for Apps, so I'm removing that.-->
+<!--note from editor: the style guide says not to use "the" in front of Common Data Service, so I'm removing that.-->
 
-The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Common Data Service for Apps. It supports integrating data from multiple sources—for example, Dynamics 365 for Finance and Operations, Dynamics 365 for Sales and SalesForce (Preview), SQL (Preview)—into Common Data Service for Apps. It also supports integrating data into Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. This service has been generally available since July 2017.  
+The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Common Data Service. It supports integrating data from multiple sources—for example, Dynamics 365 for Finance and Operations, Dynamics 365 for Sales and SalesForce (Preview), SQL (Preview)—into Common Data Service. It also supports integrating data into Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. This service has been generally available since July 2017.  
 
 We started with first-party apps—for example, Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. With the help of Power Query or M-based connectors, we are now able to support additional sources like SalesForce (Preview) and SQL (Preview) and will extend this to 20+ sources in the near future. 
 
@@ -302,7 +302,7 @@ You can customize projects and templates in these ways:
     > [!div class="mx-imgBorder"] 
     > ![Customize template add task](media/data-integrator/CustomizeTemplateAddtask175.png "Customize template add task")
 
-    In this case, a new task was created to sync User entity from SalesForce to Users entity in Common Data Service for Apps.
+    In this case, a new task was created to sync User entity from SalesForce to Users entity in Common Data Service.
 
     > [!div class="mx-imgBorder"] 
     > ![Customize template add task](media/data-integrator/CustomizeTemplateAddtask275.png "Customize template add task")

@@ -29,7 +29,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 
 A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
 
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using PowerApps, Microsoft Flow, and Common Data Service (CDS) for Apps. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using PowerApps, Microsoft Flow, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
 The following actions are covered in this article:
 
@@ -62,10 +62,10 @@ Connection permissions	| Certain types of connections can be shared with users w
 Custom connector	| Custom connectors that a user has created to provide access to a data source not offered through one of the PowerApps standard connectors. [Learn more](https://go.microsoft.com/fwlink/?linkid=872245)
 Custom-connector permissions	| Custom connectors can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872246)
 PowerApps user and user-app settings	| PowerApps stores several user preferences and settings that are used to deliver the PowerApps runtime and portal experiences.
-PowerApps notifications	| PowerApps sends several types of notifications to users including when an app is shared with them and when a CDS for Apps export operation has completed.
+PowerApps notifications	| PowerApps sends several types of notifications to users including when an app is shared with them and when a Common Data Service export operation has completed.
 Gateway	| Gateways are on-premises data gateways that can be installed by a user to transfer data quickly and securely between PowerApps and a data source that isn’t in the cloud. [Learn more](https://go.microsoft.com/fwlink/?linkid=872247)
 Gateway permissions	| Gateways can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872249)
-Model-driven apps and model-driven app permissions	| Model-driven app design is a component-focused approach to app development. Model-driven apps and their user access permissions are stored as data within the CDS for Apps database.  [Learn more](https://go.microsoft.com/fwlink/?linkid=872248)
+Model-driven apps and model-driven app permissions	| Model-driven app design is a component-focused approach to app development. Model-driven apps and their user access permissions are stored as data within the Common Data Service database.  [Learn more](https://go.microsoft.com/fwlink/?linkid=872248)
 
 PowerApps offers the following experiences to find personal data for a specific user:
 
@@ -84,10 +84,10 @@ For guidance on how to discover personal data stored by the Microsoft Flow servi
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a PowerApps user
 
-### Step 3: Find personal data for the user in instances of CDS for Apps
-Certain PowerApps licenses, including the PowerApps Community Plan, give the ability for users within your organization to create instances of CDS for Apps and to create and build apps on CDS for Apps. The PowerApps Community Plan is a free license that allows users to try out CDS for Apps in an individual environment. See the [PowerApps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each PowerApps license.
+### Step 3: Find personal data for the user in instances of Common Data Service
+Certain PowerApps licenses, including the PowerApps Community Plan, give the ability for users within your organization to create instances of Common Data Service and to create and build apps on Common Data Service. The PowerApps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the [PowerApps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each PowerApps license.
 
-For guidance on how to discover personal data stored by CDS for Apps, see [Responding to Data Subject Rights (DSR) requests for customer data in Common Data Service for Apps](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to discover personal data stored by Common Data Service, see [Responding to Data Subject Rights (DSR) requests for customer data in Common Data Service](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a PowerApps user.

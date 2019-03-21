@@ -25,20 +25,20 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Application Lifecycle Management (ALM) is important as the applications your organization builds becomes more complex and as more of your company depends on their stability. In other parts of the paper we discussed some of the ALM building blocks that just happen such as versioning of PowerApps canvas apps. We also covered some of the self-service actions that makers can do such as exporting and importing their CDS solutions. In this section we are going to have a more cohesive discussion about ALM bringing together some of these individual concepts and using them to handle more complex scenarios.
+Application Lifecycle Management (ALM) is important as the applications your organization builds becomes more complex and as more of your company depends on their stability. In other parts of the paper we discussed some of the ALM building blocks that just happen such as versioning of PowerApps canvas apps. We also covered some of the self-service actions that makers can do such as exporting and importing their Common Data Service solutions. In this section we are going to have a more cohesive discussion about ALM bringing together some of these individual concepts and using them to handle more complex scenarios.
 
-Let’s look first at things you should consider as an administrator to consider to help guide the application through its lifecycles from new to production and then ongoing maintenance and enhancements. For purposes of this section, application refers to the whole set of components form PowerApps canvas or model-driven apps, flows and any CDS customizations.
+Let’s look first at things you should consider as an administrator to consider to help guide the application through its lifecycles from new to production and then ongoing maintenance and enhancements. For purposes of this section, application refers to the whole set of components form PowerApps canvas or model-driven apps, flows and any Common Data Service customizations.
 
 |New Applications  |Existing Applications being upgraded  |
 |---------|---------|
 |Who is the application owner, and who is involved in maintaining it?     | Are any new connectors being used by the application?        |
 |Who are the users of the apps? Are they already licensed?     | Is there any new reference data to update?        |
-|What environment did you build the app in?     | Are there any new Canvas, Flows or CDS solutions added in this update?        |
+|What environment did you build the app in?     | Are there any new Canvas, Flows or Common Data Service solutions added in this update?        |
 |Are there any PowerApps canvas or model-driven apps as part of the application?     | Any changes to how users are assigned security roles?        |
-|Are there any flows?     | Any impact on existing CDS data?        |
+|Are there any flows?     | Any impact on existing Common Data Service data?        |
 |What connectors are the apps using?     |Any changes in the required licenses?         |
 |Does anything require an on-premises gateway?     | Potentially any of the considerations from the New Application column, if it was not a consideration at the time.       |
-|Does the application use CDS entities?     |         |
+|Does the application use Common Data Service entities?     |         |
 |Is the application dependent on any other existing applications or external services?     |         |
 |Are there different security roles for different types of users?     |         |
 |Is there any existing data that must be migrated into the new production system?     |         |
@@ -65,8 +65,8 @@ Depending on the complexity of the application, anything from using a SharePoint
 https://visualstudio.microsoft.com/team-services/. The following are some of those features:
 
 - Work item planning and tracking
-- Version control – offers a way to store exported assets – using Dynamics 365 SDK tools like Solution Packager allows this to scale up to larger teams working on CDS Solution package customizations.
-- Build and release automation – This can be helpful for automating everything from exporting of CDS solutions for backup, to compiling developer-built components. The release automation can take solutions and developer assets and coordinate deploying to test and production environments. These deployments can also leverage approval checkpoints as appropriate. Using community tools like Xrm.CI.Framework https://marketplace.visualstudio.com/items?itemName=WaelHamze.xrm-ci-framework-build-tasks you can deploy CDS solution packages from the release tasks.
+- Version control – offers a way to store exported assets – using Dynamics 365 SDK tools like Solution Packager allows this to scale up to larger teams working on Common Data Service Solution package customizations.
+- Build and release automation – This can be helpful for automating everything from exporting of Common Data Service solutions for backup, to compiling developer-built components. The release automation can take solutions and developer assets and coordinate deploying to test and production environments. These deployments can also leverage approval checkpoints as appropriate. Using community tools like Xrm.CI.Framework https://marketplace.visualstudio.com/items?itemName=WaelHamze.xrm-ci-framework-build-tasks you can deploy Common Data Service solution packages from the release tasks.
 
 The following is an example of the Team Status Dashboards that gives the team an all up view of their progress.
 
@@ -75,11 +75,11 @@ The following is an example of the Team Status Dashboards that gives the team an
 
 ## Exporting from the source environment
 
-We’ve already covered the concept of exporting from PowerApps, Flow and CDS earlier in the document. Let’s look at some additional things to consider when exporting as part of an application lifecycle management process.
+We’ve already covered the concept of exporting from PowerApps, Flow and Common Data Service earlier in the document. Let’s look at some additional things to consider when exporting as part of an application lifecycle management process.
 
-- Always save a copy of the exported PowerApp, Microsoft Flow or CDS solution file.
-- For CDS Solutions make sure if you are publishing a managed solution, that you also export an unmanaged solution as well. If you are not familiar with the differences, we cover that in the Platform Architecture section.
-- For CDS solution export you should always perform a publish on the solution or publish all for all solutions prior to export to ensure all changes are exported as expected.
+- Always save a copy of the exported PowerApp, Microsoft Flow or Common Data Service solution file.
+- For Common Data Service Solutions make sure if you are publishing a managed solution, that you also export an unmanaged solution as well. If you are not familiar with the differences, we cover that in the Platform Architecture section.
+- For Common Data Service solution export you should always perform a publish on the solution or publish all for all solutions prior to export to ensure all changes are exported as expected.
 - For Flows and canvas apps review the connectors that are used. Any custom connectors will need to be re-created prior to import in the target environment.
 
 ## Importing into the target environment
@@ -88,10 +88,10 @@ We also covered import, but let’s look at a few more things to consider.
 
 - Always evaluate what is already in the target environment.
 - Create any necessary custom connectors prior to import
-- If you are importing a CDS solution that is dependent on other CDS solutions make sure those are already imported into the CDS instance
-- If you import an unmanaged CDS solution make sure you publish all after import has completed
+- If you are importing a Common Data Service solution that is dependent on other Common Data Service solutions make sure those are already imported into the Common Data Service instance
+- If you import an unmanaged Common Data Service solution make sure you publish all after import has completed
 - Remember when you import an update to a PowerApps canvas application you must publish the new version before others will see it
-- If you are importing CDS changes that remove any entities and data, consider a proactive on demand backup prior to the import.
+- If you are importing Common Data Service changes that remove any entities and data, consider a proactive on demand backup prior to the import.
 
 ## Updating existing applications
 
@@ -107,7 +107,7 @@ Shown earlier, the import feature allows the maker to update an existing app in 
 Once your application has been deployed you can mostly go into maintenance mode responding to user inquires as needed. Here are a few things to consider while you are between updates.
 
 - PowerApps canvas applications need to be periodically republished for best performance and stability. About every six months you should re-publish your deployed PowerApps canvas applications even if they haven’t changed. This ensures the application picks up the latest runtime changes in the environments.
-- Keep an eye on your CDS instance storage usage as well as your Flow quotas and adjust resources and licensing as needed.
+- Keep an eye on your Common Data Service instance storage usage as well as your Flow quotas and adjust resources and licensing as needed.
 
 ## Retiring and removing an application
 
@@ -115,16 +115,16 @@ As your organization evolves it’s likely one or more of the applications deplo
 
 - Confirm that if there are users they understand the shutdown. Consider shutdown notifications in advance to ensure business continuity and minimize impact
 - Removing access to the application components is often a good first step. Leaving it in this state for a period of time also helps to ensure users know and have a chance to argue their case or save any data needed.
-- Deleting an environment will remove all associated PowerApps, Flows and CDS data. This is not the approach to take if you have multiple applications sharing the environment and you are just retiring a single application.
+- Deleting an environment will remove all associated PowerApps, Flows and Common Data Service data. This is not the approach to take if you have multiple applications sharing the environment and you are just retiring a single application.
 - PowerApps canvas apps and Flows can usually be removed without lots of dependency considerations. Currently it is necessary to remove these one at a time even if you imported both a PowerApp canvas app and a Flow at the same time. The connections for these will not be removed automatically.
 - When removing connections, you need to first consider the PowerApps canvas apps and Flows that might still be using them. This can be checked by looking at what is associated with the connection prior to deleting.
 - Custom connections are sometimes better to be left if they might be reused later as they would require extra effort to re-establish in the future.
-- To remove a PowerApps model-driven app depends if the CDS solution containing it was installed as managed or unmanaged. If it was installed as unmanaged you can delete the application module to remove it from users. Removing unmanaged CDS solution components requires manually removing one item at a time from the environment. Removing the CDS solution itself in this situation only removes the container and not the components. This is one of the key benefits of managed solution is the ability to uninstall them as a unit.
-- If the solution installed is managed, you would uninstall/remove the CDS solution containing it from the instance. When you remove the CDS solution that contains that application it’s important to note that also removes any other components and data as well. If only desiring to remove the application best approach would be to remove the application in the development environment for that CDS solution and then import the update in using the Stage for Upgrade option on import. This will cause only that component to be removed leaving all other components and data intact.
+- To remove a PowerApps model-driven app depends if the Common Data Service solution containing it was installed as managed or unmanaged. If it was installed as unmanaged you can delete the application module to remove it from users. Removing unmanaged Common Data Service solution components requires manually removing one item at a time from the environment. Removing the Common Data Service solution itself in this situation only removes the container and not the components. This is one of the key benefits of managed solution is the ability to uninstall them as a unit.
+- If the solution installed is managed, you would uninstall/remove the Common Data Service solution containing it from the instance. When you remove the Common Data Service solution that contains that application it’s important to note that also removes any other components and data as well. If only desiring to remove the application best approach would be to remove the application in the development environment for that Common Data Service solution and then import the update in using the Stage for Upgrade option on import. This will cause only that component to be removed leaving all other components and data intact.
 
 ## Moving reference data to another environment
 
-Often applications have data that is configuration, or reference data. This could be, for example, a list of territories, product lists, or other data that configures and makes the app work. Often components in the application take dependencies on the IDs of this data. The Configuration Migration Tool is designed to move this type of data from one CDS instance to another. The key features of the tool are:
+Often applications have data that is configuration, or reference data. This could be, for example, a list of territories, product lists, or other data that configures and makes the app work. Often components in the application take dependencies on the IDs of this data. The Configuration Migration Tool is designed to move this type of data from one Common Data Service instance to another. The key features of the tool are:
 
 - Select only the entities and fields you for which you want to move data
 - Maintain unique IDs of the records as they are moved
@@ -137,11 +137,11 @@ The following outlines the basic process for using the tool.
 > [!div class="mx-imgBorder"] 
 > ![](media/moving-reference-data.png "Moving reference data")
 
-The output from the tool is a zip file containing the data and the schema file. The same tool can be used to import the data into the target CDS instance. You can also package the data with a Solution Deployer package that we will discuss shortly allowing it to be deployed alongside one or more CDS solutions. You can read more about how to use the tool here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-configuration-data.
+The output from the tool is a zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service instance. You can also package the data with a Solution Deployer package that we will discuss shortly allowing it to be deployed alongside one or more Common Data Service solutions. You can read more about how to use the tool here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-configuration-data.
 
 ## Using the Dynamics 365 Package Deployer
 
-So far, we’ve only talked about importing CDS solutions manually via the user interface. The Dynamics 365 package deployer also works for CDS solutions. The package deployer allows building a package that contains one or more CDS solutions as well as one or more data files to import after the solutions are imported. It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. You can read more about package deployer here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-packages-package-deployer.
+So far, we’ve only talked about importing Common Data Service solutions manually via the user interface. The Dynamics 365 package deployer also works for Common Data Service solutions. The package deployer allows building a package that contains one or more Common Data Service solutions as well as one or more data files to import after the solutions are imported. It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. You can read more about package deployer here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-packages-package-deployer.
 
 
 

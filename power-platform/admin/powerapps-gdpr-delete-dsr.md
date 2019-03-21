@@ -37,7 +37,7 @@ Custom-connector permissions |
 
 \** Each of these resources contains “Created By” and “Modified By” records that include personal data. For security reasons, these records will be retained until the resource is deleted.
 
-\*** For environments that include a Common Data Service (CDS) for Apps database, environment permissions (that is, which users are assigned to the Environment Maker and Admin roles) are stored as records in that database. For guidance on how to respond to DSRs for users of CDS for Apps, see [Responding to Data Subject Rights (DSR) requests for Common Data Service for Apps customer data](common-data-service-gdpr-dsr-guide.md).
+\*** For environments that include a Common Data Service database, environment permissions (that is, which users are assigned to the Environment Maker and Admin roles) are stored as records in that database. For guidance on how to respond to DSRs for users of Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
 For the data and resources that require manual review, PowerApps offers the following experiences to reassign (if necessary) or delete personal data for a specific user:
 
@@ -58,7 +58,7 @@ Connection permissions | | App creator: Available <br> Admin: Available
 Custom connector | | App creator: Available <br> Admin: Available
 Custom-connector permissions | | App creator: Available <br> Admin: Available
 
-\** With the introduction of CDS for Apps, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the instance of that database. For guidance on how to respond to DSRs for users of CDS for Apps, see [Responding to Data Subject Rights (DSR) requests for Common Data Service for Apps customer data](common-data-service-gdpr-dsr-guide.md).
+\** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the instance of that database. For guidance on how to respond to DSRs for users of Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
 ## Prerequisites
 
@@ -140,7 +140,7 @@ Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Get-AdminEnvironmentRoleAssig
 ```
 
 > [!IMPORTANT]
-> This function works only in environments that do not have an instance of a database in CDS for Apps.
+> This function works only in environments that do not have an instance of a database in Common Data Service.
 
 ### Delete environments created by a user using PowerShell
  An administrator can delete all environments created by a user by using the **Remove-AdminEnvironment** function in the [PowerShell cmdlets for PowerApps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
@@ -155,10 +155,10 @@ Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Remove-AdminEnvironment
 
 ## Step 2: Delete the user’s permissions to all other environments
 Users can be assigned permissions (such as Environment Admin and Environment Maker) in an environment, which are stored in the PowerApps service as a “role assignment.”
-With the introduction of CDS for Apps, if a database is created within the environment, these “role assignments” are stored as records within the instance of that database.
+With the introduction of Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within the instance of that database.
 For more information, see [Administer environments](environments-administration.md).
 
-### For environments without a CDS for Apps database
+### For environments without a Common Data Service database
 
 #### PowerApps Admin center
 An administrator can delete a user’s environment permissions starting from the [PowerApps Admin center](https://admin.powerapps.com/) by following these steps:
@@ -171,7 +171,7 @@ An administrator can delete a user’s environment permissions starting from the
 
 2. Select **Security**.
 
-    If your environment does not have a CDS for Apps database, you will see a section for **Environment Roles.**
+    If your environment does not have a Common Data Service database, you will see a section for **Environment Roles.**
 
 3. Within **Environment Roles**, select both **Environment Admin** and **Environment Maker** separately and, using the search bar, search for the user’s name.
 
@@ -180,21 +180,21 @@ An administrator can delete a user’s environment permissions starting from the
 5.	If the user has access to either role, from within the **Users** screen, remove their permission, and select **Save**.
 
 #### PowerShell
-An administrator can delete all environment role assignments for a user across all environments without a CDS for Apps database by using the **Remove-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for PowerApps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
+An administrator can delete all environment role assignments for a user across all environments without a Common Data Service database by using the **Remove-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for PowerApps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
 
 ```
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
-#find all environment role assignments for the user for environments without a CDS for Apps instance and delete them
+#find all environment role assignments for the user for environments without a Common Data Service instance and delete them
 Get-AdminEnvironmentRoleAssignment -UserId $deleteDsrUserId | Remove-AdminEnvironmentRoleAssignment
 ```
 
 > [!IMPORTANT]
-> This function works only for environments that do not have an instance of a CDS for Apps database.
+> This function works only for environments that do not have an instance of a Common Data Service database.
 
-### For environments WITH a CDS for Apps database
-With the introduction of the CDS for Apps, if a database is created within the environment, these “role assignments” are stored as records within the instance of that database. Please refer to the following documentation on how to remove personal data from an instance of a database in CDS for Apps: Common Data Service User personal data removal
+### For environments WITH a Common Data Service database
+With the introduction of the Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within the instance of that database. Please refer to the following documentation on how to remove personal data from an instance of a database in Common Data Service: Common Data Service User personal data removal
 
 ## Step 3: Delete or reassign all canvas apps owned by a user
 
@@ -389,10 +389,10 @@ PowerApps licenses always include Microsoft Flow capabilities. In addition to be
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a PowerApps user.
 
-## Step 10: Delete the user’s personal data in instances of CDS for Apps
-Certain PowerApps licenses, including the PowerApps Community Plan, give the ability for users within your organization to create instances of CDS for Apps and to create and build apps on CDS for Apps. The PowerApps Community Plan is a free license that allows users to try out CDS for Apps in an individual environment. See the PowerApps pricing page for which capabilities are included in each PowerApps license.
+## Step 10: Delete the user’s personal data in instances of Common Data Service
+Certain PowerApps licenses, including the PowerApps Community Plan, give the ability for users within your organization to create instances of Common Data Service and to create and build apps on Common Data Service. The PowerApps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the PowerApps pricing page for which capabilities are included in each PowerApps license.
 
-For guidance on how to respond to DSRs for users who use CDS for Apps, see [Responding to Data Subject Rights (DSR) requests for Common Data Service for Apps customer data](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to respond to DSRs for users who use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a PowerApps user.

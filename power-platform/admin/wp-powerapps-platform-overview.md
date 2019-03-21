@@ -25,7 +25,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The PowerApps platform is part of the larger Microsoft Power Platform that also includes PowerBI and Microsoft Flow, leveraging the common infrastructure of the Common Data Service for Apps and Data Connectors. These capabilities are built on and leverage Microsoft Azure cloud services. Applications built on the PowerApps platform can also include Azure cloud services to scale from individual productivity to enterprise mission critical line of business applications.
+The PowerApps platform is part of the larger Microsoft Power Platform that also includes PowerBI and Microsoft Flow, leveraging the common infrastructure of the Common Data Service and Data Connectors. These capabilities are built on and leverage Microsoft Azure cloud services. Applications built on the PowerApps platform can also include Azure cloud services to scale from individual productivity to enterprise mission critical line of business applications.
 
 ![PowerApps Platform overview](media/ms-power-platform.png "PowerApps Platform overview")
 
@@ -35,8 +35,8 @@ PowerApps includes several key concepts/components:
 |---------|---------|
 |PowerApps applications     |These are the applications that users interact with on their desktop or mobile devices. There are two styles of applications; Canvas and Model-driven. PowerApps Canvas applications can also be embedded into SharePoint, Teams, Power BI and Dynamics 365 applications.         |
 |Microsoft Flow     | Automated workflows that orchestrate across services using connectors. Flows can be triggered to run when events occur in other systems and services or scheduled to run at a specific time. Users can also interact with Flows in the mobile app by pressing virtual buttons.        |
-|Common Data Service for Apps (CDS)     |A cloud scale datastore to manage data used by business applications. Data is stored within a set of entities. An initial schema is defined by the Common Data Model. CDS provides built-in capabilities for business rules, workflows, calculated and rollup fields and more.         |
-|Common Data Model     | An open-sourced definition of standard entities that represent commonly used concepts and activities. Every CDS database starts with the entities defined as “core”. Application builders can add their own custom entities to support specific business scenarios.        |
+|Common Data Service (Common Data Service)     |A cloud scale datastore to manage data used by business applications. Data is stored within a set of entities. An initial schema is defined by the Common Data Model. Common Data Service provides built-in capabilities for business rules, workflows, calculated and rollup fields and more.         |
+|Common Data Model     | An open-sourced definition of standard entities that represent commonly used concepts and activities. Every Common Data Service database starts with the entities defined as “core”. Application builders can add their own custom entities to support specific business scenarios.        |
 |Connectors     | There are 200+ connectors that make it easy for application builders to connect to both Microsoft and 3rd party services, from Dynamics 365 to Dropbox. The connectors allow Canvas Apps and Flows to easily use API (application programming interfaces) services without any developer knowledge. Custom connectors can also be configured to allow use of APIs that aren’t covered by the public connectors.        |
 |On-premises Gateways     | On-premises gateway allows PowerApps and Flow to reach back to on-premise resources to support hybrid integration scenarios. The gateway leverages Azure Service Bus relay technology to security allow access to on-premise resources.        |
 
@@ -50,7 +50,7 @@ With self-service scenarios, users are empowered to take their own ideas of how 
 
 ### Dynamics 365 Applications
 
-These 1st party Microsoft applications are built on and therefore deployed into PowerApps environments and utilize the Common Data Service for Apps (CDS) for data storage and core platform services. These applications are the quickest way to tackle common business scenarios like customer engagement, while still allowing tailoring to your company’s individual requirements. Custom PowerApps apps and Flows can be built to embed into or extend Dynamics 365 applications even further.
+These 1st party Microsoft applications are built on and therefore deployed into PowerApps environments and utilize the Common Data Service (Common Data Service) for data storage and core platform services. These applications are the quickest way to tackle common business scenarios like customer engagement, while still allowing tailoring to your company’s individual requirements. Custom PowerApps apps and Flows can be built to embed into or extend Dynamics 365 applications even further.
 
 ### Apps from AppSource
 

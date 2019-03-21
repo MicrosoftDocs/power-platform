@@ -1,5 +1,5 @@
 ---
-title: "Common Data Service for Apps analytics | MicrosoftDocs"
+title: "Common Data Service analytics | MicrosoftDocs"
 ms.custom: ""
 ms.date: 09/27/2018
 ms.reviewer: ""
@@ -19,7 +19,7 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Common Data Service for Apps analytics
+# Common Data Service analytics
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -29,7 +29,7 @@ We've improved how you view metrics for your organization. You no longer need to
 
 - **Deprecating the solution**: Organization Insights, available as a preferred solution from [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.04931187-431c-415d-8777-f7f482ba8095?tab=Overview), will no longer be supported or available for use in future releases.  
 
-- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Common Data Service for Apps in future releases. 
+- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Common Data Service in future releases. 
 
 - **Monitor adoption and use**: Identify your most active users, the number and types of operations they’re performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
 
@@ -39,8 +39,8 @@ We've improved how you view metrics for your organization. You no longer need to
 
 <a name="BKMK_InstallSolution"></a>   
 
-## View Common Data Service for Apps analytics  
-It's simple. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service for Apps**.
+## View Common Data Service analytics  
+It's simple. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service**.
 
 <a name="BKMK_Home"></a>   
 
@@ -48,7 +48,7 @@ It's simple. In the [Power Platform Admin center](https://admin.powerplatform.mi
  ![Customer Data Service analytics Home Section](./media/organization-insights-home-section.png "Customer Data Service analytics Home Section")  
 
 ### About this dashboard  
- This is the default dashboard that provides information on the number of active Common Data Service for Apps users, storage usage, the most active workflows, and more.  
+ This is the default dashboard that provides information on the number of active Common Data Service users, storage usage, the most active workflows, and more.  
 
 ### What's included in this dashboard  
 

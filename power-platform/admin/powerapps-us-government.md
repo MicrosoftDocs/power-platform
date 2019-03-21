@@ -157,7 +157,7 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Data Integration and PowerQuery](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
 
-- [Common Data Service for Apps analytics](analytics-common-data-service.md)
+- [Common Data Service analytics](analytics-common-data-service.md)
 
 - [Mobile Push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications)
 
