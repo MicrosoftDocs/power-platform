@@ -37,7 +37,7 @@ By default, only the owner of the flow can execute the flow. The owner can invit
 
 ## Microsoft Flow vs Logic Apps
 
-Microsoft Flow is built on top of Logic Apps. Logic Apps is an orchestration engine and part of the Microsoft Azure cloud service. Both services can be used to automate tasks and perform integration across systems. Using Logic Apps directly is more Pro Developer/Integrator focused and whereas Microsoft Flow is more focused on individual and team productivity. As flows start being able to be packaged with the CDS solution framework (coming soon) and moved between environments together with other CDS customizations expect to see more enterprise line of business applications relying on Flow in places where Logic Apps might have been the previously preferred solution.
+Microsoft Flow is built on top of Logic Apps. Logic Apps is an orchestration engine and part of the Microsoft Azure cloud service. Both services can be used to automate tasks and perform integration across systems. Using Logic Apps directly is more Pro Developer/Integrator focused and whereas Microsoft Flow is more focused on individual and team productivity. As flows start being able to be packaged with the Common Data Service solution framework (coming soon) and moved between environments together with other Common Data Service customizations expect to see more enterprise line of business applications relying on Flow in places where Logic Apps might have been the previously preferred solution.
 
 A key advantage of Microsoft Flow is that it shares the same environments and connectors as PowerApps. This allows for easy interoperability between PowerApps and Flow. A PowerApp can directly invoke a Flow: for example, a scheduling app could call a Flow that asynchronously sends calendar invites to attendees. Or a Flow could use the push notification connector to send notifications to users’ mobile devices.
 
@@ -45,7 +45,7 @@ When used directly Logic Apps run in the context of an Azure subscription and yo
 
 ## Exporting and Importing Flows
 
-Flows can be exported and then re-imported into other environments, both in the same tenant and in different tenants. Today, flows export into their own zip file, separate from applications and CDS other components. In the future, flow export functionality will be included in the CDS solution framework allowing you to have one solution package that represents all the components in your application.
+Flows can be exported and then re-imported into other environments, both in the same tenant and in different tenants. Today, flows export into their own zip file, separate from applications and Common Data Service other components. In the future, flow export functionality will be included in the Common Data Service solution framework allowing you to have one solution package that represents all the components in your application.
 
 Flows can also be exported in a Logic App format, allowing conversion of the flow to a Logic App. This capability allows you to move from the flow execution model to the Logic App execution model as well as take advantage of some of Logic Apps more advanced features.
 

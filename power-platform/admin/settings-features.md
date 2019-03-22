@@ -1,6 +1,6 @@
 ---
 title: "Manage email feature settings | MicrosoftDocs"
-description: View and manage feature settings for Common Data Service for Apps.
+description: View and manage feature settings for Common Data Service.
 ms.custom: ""
 ms.date: 11/16/2018
 ms.reviewer: ""

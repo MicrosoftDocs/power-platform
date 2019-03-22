@@ -1,6 +1,6 @@
 ---
-title: "Manage Common Data Service for Apps settings | MicrosoftDocs"
-description: View and manage Common Data Service for Apps settings.
+title: "Manage Common Data Service settings | MicrosoftDocs"
+description: View and manage Common Data Service settings.
 ms.custom: ""
 ms.date: 09/27/2018
 ms.reviewer: ""
@@ -20,7 +20,7 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Manage Common Data Service for Apps settings
+# Manage Common Data Service settings
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

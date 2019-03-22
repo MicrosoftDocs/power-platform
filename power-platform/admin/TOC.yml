@@ -22,7 +22,7 @@
         href: preview-april-2019-updates.md
       - name: View analytics
         items:
-        - name: Common Data Service for Apps analytics 
+        - name: Common Data Service analytics 
           href: analytics-common-data-service.md
         # - name: Capacity
         #   href: capacity-storage.md
@@ -125,7 +125,7 @@
       items: 
       - name: About environments 
         href: wp-environments.md
-      - name: Common Data Service for Apps 
+      - name: Common Data Service 
         href: wp-cds-for-apps.md
       - name: Types of PowerApps 
         href: wp-types-powerapps.md
@@ -153,7 +153,7 @@
       items:
       - name: Controlling access to PowerApps 
         href: wp-controlling-access.md
-      - name: Common Data Service for Apps 
+      - name: Common Data Service 
         href: wp-security-cds.md
       - name: Configure environment security
         href: database-security.md
@@ -197,7 +197,7 @@
         href: logging-powerapps.md
     - name: Data integration
       items:
-      - name: Integrate data into CDS for Apps 
+      - name: Integrate data into Common Data Service 
         href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
@@ -205,7 +205,7 @@
         items:
         - name: System-generated logs 
           href: powerapps-gdpr-dsr-guide-systemlogs.md
-        - name: Data integrations for CDS for Apps 
+        - name: Data integrations for Common Data Service 
           href: data-integration-gdpr-dsr-guide.md
         - name: PowerApps customer data 
           href: powerapps-gdpr-dsr-guide.md
@@ -214,7 +214,7 @@
             href: powerapps-gdpr-export-dsr.md
           - name: Delete data 
             href: powerapps-gdpr-delete-dsr.md
-        - name: CDS for Apps customer data 
+        - name: Common Data Service customer data 
           href: common-data-service-gdpr-dsr-guide.md
     - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
