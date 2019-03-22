@@ -129,6 +129,7 @@ If authentication is successful, the organization’s AD FS server issues a SAML
 The customer’s AD FS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Azure AD via encrypted Transport Layer Security (TLS). Azure AD validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
 
 The user's identity and group membership information remain encrypted in Azure AD. In other words, only limited user-identifiable information is stored in Azure AD.
+
 You can find full details of the Azure AD security architecture and control implementation in the Azure SSP.  End-users do not interact directly with Azure AD.
 
 ## PowerApps US Government service URLs
@@ -169,7 +170,6 @@ Some of the features available in the commercial version of PowerApps are not av
 - [Data integration and Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 
 - [Common Data Service analytics](analytics-common-data-service.md)
-
 
 - [Mobile push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications).
 
