@@ -119,9 +119,9 @@ We recommend that you review the privacy and compliance statements provided by t
 
 ## PowerApps US Government and Azure services
 
-The Dynamics 365 US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Microsoft Dynamics 365 US Government accreditation boundary, but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
+The PowerApps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the PowerApps US Government accreditation boundary, but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
-When a user of an organization employing AD FS attempts to access Microsoft Dynamics 365 US Government, the user is redirected to a login page hosted on the organization’s AD FS server.
+When a user of an organization employing AD FS attempts to access PowerApps US Government, the user is redirected to a login page hosted on the organization’s AD FS server.
 The user provides his or her credentials to their organization's AD FS server. The organization's AD FS server attempts to authenticate the credentials using the organization’s Active Directory infrastructure.
 
 If authentication is successful, the organization’s AD FS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user’s identity and group membership.
@@ -129,6 +129,7 @@ If authentication is successful, the organization’s AD FS server issues a SAML
 The customer’s AD FS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Azure AD via encrypted Transport Layer Security (TLS). Azure AD validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
 
 The user's identity and group membership information remain encrypted in Azure AD. In other words, only limited user-identifiable information is stored in Azure AD.
+
 You can find full details of the Azure AD security architecture and control implementation in the Azure SSP.  End-users do not interact directly with Azure AD.
 
 ## PowerApps US Government service URLs
@@ -169,7 +170,6 @@ Some of the features available in the commercial version of PowerApps are not av
 - [Data integration and Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 
 - [Common Data Service analytics](analytics-common-data-service.md)
-
 
 - [Mobile push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications).
 
