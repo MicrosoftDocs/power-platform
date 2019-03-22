@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 03/22/2019
 ms.author: jamesol
 search.audienceType: 
   - admin
@@ -59,7 +59,7 @@ PowerApps capabilities for Office 365 enable users to extend and customize the O
 || Which Microsoft Office 365 plans include PowerApps? |These plans include PowerApps for Office 365:<br/><br/>Office 365 Business Essentials<br/>Office 365 Business Premium<br/>Office 365 A1 for Faculty<br/>Office 365 A1 for Students<br/>Office 365 A1 Plus for Faculty<br/>Office 365 A1 Plus for Students<br/>Office 365 A3 for Faculty<br/>Office 365 A3 for Students<br/>Office 365 A3 for Student Use Benefit<br/>Office 365 A5 for Student Use Benefit<br/>Office 365 A5<br/>Office 365 A5 for Faculty<br/>Office 365 A5 for Students<br/>Office 365 Education E3 for Faculty<br/>Office 365 Education E3 for Students<br/>Office 365 Education for Homeschool for Faculty<br/>Office 365 Education for Homeschool for Students<br/>Office 365 Enterprise E1<br/>Office 365 Enterprise E2<br/>Office 365 Enterprise E3<br/>Office 365 Enterprise E3 Developer<br/>Office 365 Enterprise E3 without ProPlus<br/>Office 365 Enterprise E5<br/>Office 365 Enterprise F1 includes PowerApps for Office 365 Enterprise F1|
 
 ### PowerApps for Office 365 Enterprise F1
-PowerApps is included with Office 365 Enterprise F1, with which users can run apps and automate workflows. Users can't create apps with this plan (as they can with other Office plans listed above). This table contains specifics about what users can do with PowerApps for Office 365 Enterprise F1:
+PowerApps is included with Office 365 Enterprise F1, with which users can run apps and automate workflows. This table contains specifics about what users can do with PowerApps for Office 365 Enterprise F1:
 
 | **Functionality** | **PowerApps for Office 365 Enterprise F1** |
 | --- | --- |
@@ -71,7 +71,7 @@ PowerApps is included with Office 365 Enterprise F1, with which users can run ap
 |Run apps in a browser or PowerApps mobile for iOS and Android|Yes|
 |Run Canvas apps offline|Yes|
 |Support for data policies established by the Office 365 administrator|Yes|
-|Create and share apps|-|
+|Create and share apps|Yes|
 |Access on-premises data or use premium or custom connectors| - |
 |Data storage and management in the Common Data Service|-|
 
