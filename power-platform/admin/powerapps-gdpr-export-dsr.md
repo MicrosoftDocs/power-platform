@@ -39,7 +39,7 @@ Connection | | App creator: Available <br> Admin: Available
 Connection permissions	| | App creator: Available <br> Admin: Available
 PowerApps user settings, user-app settings, and notifications | | App creator: Available <br> Admin: Available
 
-> ** With the introduction of Common Data Service (CDS) for Apps, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the CDS for Apps database instance. For guidance on how to respond to DSR requests for users that use CDS for Apps, see [Responding to Data Subject Rights (DSR) requests for Common Data Service for Apps customer data](common-data-service-gdpr-dsr-guide.md).
+> ** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service database instance. For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
 > *** An administrator can access these resources from the [PowerApps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) only if the owner of the resource has explicitly granted him or her access. If the administrator has not been granted access, he or she will need to leverage the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
@@ -86,9 +86,9 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
 ~~~~
  
 ## Step 2: Export the user’s environment permissions
-Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in PowerApps as a *role assignment*. With the introduction of CDS for Apps, if a database is created within the environment, the role assignments are stored as records within the CDS for Apps database instance. For more information, see [Administer environments within PowerApps](environments-administration.md).
+Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in PowerApps as a *role assignment*. With the introduction of Common Data Service, if a database is created within the environment, the role assignments are stored as records within the Common Data Service database instance. For more information, see [Administer environments within PowerApps](environments-administration.md).
 
-### For environments without a CDS for Apps database
+### For environments without a Common Data Service database
 
 #### PowerApps Admin center
 Administrators can export a user’s environment permissions from the [PowerApps Admin center](https://admin.powerapps.com/) by following these steps:
@@ -99,7 +99,7 @@ Administrators can export a user’s environment permissions from the [PowerApps
 
 2. Select **Security**.
 
-    If your environment does not have a CDS For Apps database, you'll see a section for **Environment Roles.**
+    If your environment does not have a Common Data Service database, you'll see a section for **Environment Roles.**
 
 3. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user’s name.
 
@@ -108,7 +108,7 @@ Administrators can export a user’s environment permissions from the [PowerApps
 4. If the user has access to either role, go to the **Users** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
 #### PowerShell cmdlets for admins
-Administrators can export all environment role assignments for a user across all environments without a CDS for Apps database by using the **Get-AdminEnvironmentRoleAssignment** function in the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
+Administrators can export all environment role assignments for a user across all environments without a Common Data Service database by using the **Get-AdminEnvironmentRoleAssignment** function in the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
 ~~~~
 Add-PowerAppsAccount
@@ -117,12 +117,12 @@ Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -
 ~~~~
 
 > [!IMPORTANT]
->  This function only works for environments that do not have a CDS for Apps database instance.
+>  This function only works for environments that do not have a Common Data Service database instance.
 >
 >
 
-### For environments with a CDS for Apps database
-With the introduction of the CDS for Apps, if a database is created within the environment, role assignments are stored as records within the CDS for Apps database instance. For information on how to remove personal data from a CDS for Apps database instance, see [Common Data Service User personal data removal](https://go.microsoft.com/fwlink/?linkid=871886).
+### For environments with a Common Data Service database
+With the introduction of the Common Data Service, if a database is created within the environment, role assignments are stored as records within the Common Data Service database instance. For information on how to remove personal data from a Common Data Service database instance, see [Common Data Service User personal data removal](https://go.microsoft.com/fwlink/?linkid=871886).
  
 ## Step 3: Export personal data contained within canvas apps created by the user
 
@@ -275,7 +275,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 ~~~~
  
 ## Step 9: Export PowerApps Notifications, User Settings, and User-App Settings
-PowerApps sends several types of notifications to users, including when an app is shared with them and when a CDS for Apps export operation has completed. A user’s notification history is visible to them within the [PowerApps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+PowerApps sends several types of notifications to users, including when an app is shared with them and when a Common Data Service export operation has completed. A user’s notification history is visible to them within the [PowerApps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 PowerApps also stores several different user preferences and settings that are used to deliver the PowerApps runtime and portal experiences, including when a user last opened an application, pinned an app, etc.
 
@@ -327,10 +327,10 @@ PowerApps licenses always include Microsoft Flow capabilities. In addition to be
 >
 >
 
-## Step 12: Export the user’s personal data in CDS for Apps instances
-Certain PowerApps licenses allow users within your organization to create CDS for Apps instances and create and build apps on CDS for Apps, including the PowerApps Community Plan, which is a free license that allows users to try out CDS for Apps in an individual environment. To see which CDS for Apps capabilities are included in each PowerApps license, see the [PowerApps Pricing page](https://powerapps.microsoft.com/pricing).
+## Step 12: Export the user’s personal data in Common Data Service instances
+Certain PowerApps licenses allow users within your organization to create Common Data Service instances and create and build apps on Common Data Service, including the PowerApps Community Plan, which is a free license that allows users to try out Common Data Service in an individual environment. To see which Common Data Service capabilities are included in each PowerApps license, see the [PowerApps Pricing page](https://powerapps.microsoft.com/pricing).
 
-For guidance on how to respond to DSR requests for users that use CDS for Apps, see [Responding to Data Subject Rights (DSR) requests for Common Data Service for Apps customer data](common-data-service-gdpr-dsr-guide.md).
+For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for PowerApps users.

@@ -23,7 +23,7 @@ search.app:
 - User licenses are assigned on a named user basis, each user needs a separate license to run apps. 
 - PowerApps licenses do not limit the creation of apps.
 - PowerApps is available with two standalone plans—PowerApps Plan 1 and PowerApps Plan 2. 
-- PowerApps Plan 1 provides access to the Common Data Service for Apps to store and manage data. Users can run canvas apps that are built on the Common Data Service for Apps, use premium connectors, access data in custom applications or on-premises data. 
+- PowerApps Plan 1 provides access to the Common Data Service to store and manage data. Users can run canvas apps that are built on the Common Data Service, use premium connectors, access data in custom applications or on-premises data. 
 - PowerApps Plan 2 allows users to run model-driven apps with code plug-ins and real-time workflows. For details please visit the [PowerApps pricing page](https://powerapps.microsoft.com/pricing/).  
 - In addition to the standalone plans PowerApps capabilities are also included in certain Office 365 and Dynamics 365 plans allowing customers to extend and customize Office 365 and Dynamics 365 with PowerApps and Microsoft Flow capabilities that these offerings include. Select Dynamics 365 apps and plans include a full PowerApps P2 license, learn more [here](#powerapps-for-dynamics-365).
 
@@ -48,7 +48,7 @@ PowerApps capabilities for Office 365 enable users to extend and customize the O
 |Support for data policies established by the Office 365 administrator     |  Yes       |
 |Flow runs per user/month (includes Flow for Office 365)     |  2,000       |
 |Access on-premises data or use premium or custom connectors     |  -       |
-|Data storage and management in the Common Data Service for Apps     |   -      |
+|Data storage and management in the Common Data Service     |   -      |
 
 <sup>1</sup>For PowerApps for Office 365 Enterprise F1 please refer to the section below.
 
@@ -73,10 +73,10 @@ PowerApps is included with Office 365 Enterprise F1, with which users can run ap
 |Support for data policies established by the Office 365 administrator|Yes|
 |Create and share apps|-|
 |Access on-premises data or use premium or custom connectors| - |
-|Data storage and management in the Common Data Service for Apps|-|
+|Data storage and management in the Common Data Service|-|
 
 ### PowerApps standalone Plan 1 and Plan 2
-Standalone PowerApps plans provide users the ability to create and run apps across data sources that extend beyond Office 365, such as Salesforce, on-premises and custom data sources. These plans also include access to the Common Data Service for Apps to store and manage data. Learn more about the Common Data Service for Apps [here](/powerapps/maker/common-data-service/data-platform-intro).  
+Standalone PowerApps plans provide users the ability to create and run apps across data sources that extend beyond Office 365, such as Salesforce, on-premises and custom data sources. These plans also include access to the Common Data Service to store and manage data. Learn more about the Common Data Service [here](/powerapps/maker/common-data-service/data-platform-intro).  
 
 - Microsoft PowerApps Plan 1 subscriptions are for users who need to run canvas apps and access on-premises data, data in custom applications and cloud services using premium connectors.
 - Microsoft PowerApps Plan 2 subscriptions are for users and administrators who need access to more capabilities. These users can run model-driven apps that can include custom code plug-ins and real-time workflows. These users have access to important management capabilities like viewing usage and setting policy. 

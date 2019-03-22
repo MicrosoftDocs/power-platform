@@ -1,6 +1,6 @@
 ---
 title: "Enable offline synchronization | MicrosoftDocs"
-description: Enable offline synchronization for Common Data Service for Apps.
+description: Enable offline synchronization for Common Data Service.
 ms.custom: ""
 ms.date: 08/10/2018
 ms.reviewer: ""

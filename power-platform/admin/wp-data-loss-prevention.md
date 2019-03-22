@@ -49,7 +49,7 @@ For the process to create a DLP policy, see [Create a data loss prevention (DLP)
 
 Environment only admins do have the ability to view policies created by tenant admins to understand what might apply to their environment.
 
-One thing to consider is that environment specific policies can’t override tenant-wide DLP policies. For example, if you only allow use of CDS connectors in an environment, an individual user that is only an environmental admin can’t override that policy to allow social network connectors to be used.
+One thing to consider is that environment specific policies can’t override tenant-wide DLP policies. For example, if you only allow use of Common Data Service connectors in an environment, an individual user that is only an environmental admin can’t override that policy to allow social network connectors to be used.
 
 ## Configuring connectors for a DLP policy
 

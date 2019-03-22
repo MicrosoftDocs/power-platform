@@ -1,6 +1,6 @@
 ---
 title: "Manage email tracking settings | MicrosoftDocs"
-description: View and manage email tracking settings for Common Data Service for Apps.
+description: View and manage email tracking settings for Common Data Service.
 ms.custom: ""
 ms.date: 08/10/2018
 ms.reviewer: ""

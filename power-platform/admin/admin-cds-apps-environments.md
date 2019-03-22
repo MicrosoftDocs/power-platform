@@ -1,5 +1,5 @@
 ---
-title: "Administer Common Data Service for Apps environments | MicrosoftDocs"
+title: "Administer Common Data Service environments | MicrosoftDocs"
 description:
 ms.custom: ""
 ms.date: 08/08/2018
@@ -20,7 +20,7 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Administer Common Data Service for Apps environments 
+# Administer Common Data Service environments 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

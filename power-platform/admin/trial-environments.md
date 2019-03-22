@@ -18,7 +18,7 @@ search.app:
 
 # About Trial environments
 
-Currently, you can create two types of Common Data Service (CDS) for Apps environments: Trial or Production. A Trial environment is useful for trying out Dynamics 365 for Customer Engagement apps at no cost. Trial environments expire after 30 days.
+Currently, you can create two types of Common Data Service environments: Trial or Production. A Trial environment is useful for trying out Dynamics 365 for Customer Engagement apps at no cost. Trial environments expire after 30 days.
 
 Open the **Environments** page to see the environment types you have and the upcoming expiration date for Trial environments:
 
@@ -88,7 +88,7 @@ Here are some guidelines for exporting resources.
 |Type of resource in the environment  |How do I export it?  |
 |---------|---------|
 |Apps (canvas and model-driven) and flows     |You can use [packaging](environment-and-tenant-migration.md) to export apps and flows from one environment.         |
-|Data in the database (Common Data Service (CDS) for Apps environment)     |You have multiple options:<br/><ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can [import the data](/powerapps/user/import-data) into another environment.</li><br/><li>You can use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
+|Data in the database (Common Data Service environment)     |You have multiple options:<br/><ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can [import the data](/powerapps/user/import-data) into another environment.</li><br/><li>You can use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
 
 We delete Trial environments that haven’t had any activity in the environment databases for 30 days.
 
