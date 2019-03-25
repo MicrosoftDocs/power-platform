@@ -2,7 +2,7 @@
 title: "Opt in to April 2019 updates | MicrosoftDocs"
 description: Opt in to April 2019 updates for the Dynamics 365 for Customer Engagement platform.
 ms.custom: ""
-ms.date: 03/18/2019
+ms.date: 03/25/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -88,11 +88,13 @@ The Release Notes lists other features across Dynamics 365 – Sales, Service, M
 
 ### When will the April 2019 features be enabled for customers who did not opt in to the preview?
 
-Starting April 5, 2019, we will enable the April 2019 features (end user impacting only) following our [Safe Deployment Process (SDP)](https://docs.microsoft.com/dynamics365/get-started/release-schedule#how-will-the-april-2019-release-be-deployed-to-all-customers) across our global customer base. Your environment/org will be updated based on the region they are located. Here is the current schedule.
+Starting April 5, 2019, we will enable the April 2019 features (end user impacting only) across our global customer base. Your environment/org will be updated during one of the [maintenance windows](https://docs.microsoft.com/dynamics365/customer-engagement/admin/policies-communications#maintenance-timeline) over a weekend, starting on the dates listed below. The specific dates that the update will occur will be published in the [Message Center](https://docs.microsoft.com/dynamics365/customer-engagement/admin/policies-communications#maintenance-timeline), and each post will include the date, maintenance window, and a link to the Weekly Release Notes that contain the list of optimizations, fixes, and enhancements. Each environment/org should see the new features and build numbers by Monday morning, local time.
 
-|Japan  |South America  |Canada  |India  |Asia  |Great Britain  |Australia  |Europe  |North America|
+Here is the current schedule.
+
+|Japan  |South <br/>America  |Canada  |India  |Asia  |Great <br/>Britain  |Australia  |Europe  |North <br/>America|
 |---------|---------|---------|---------|---------|---------|---------|---------|--------|
-|Fri, Apr 5 | Fri, Apr 5  | Fri, Apr 5  |Fri, Apr 5  | Fri, Apr 12 | Fri, Apr 12 | Fri, Apr 12 | Fri, Apr 19 |Fri, Apr 26 |
+|Fri, Apr 5<br/>to<br/>Sun, Apr 7 | Fri, Apr 5<br/>to<br/>Sun, Apr 7  | Fri, Apr 5<br/>to<br/>Sun, Apr 7  |Fri, Apr 5<br/>to<br/>Sun, Apr 7  | Fri, Apr 12<br/>to<br/>Sun, Apr 14 | Fri, Apr 12<br/>to<br/>Sun, Apr 14 | Fri, Apr 12<br/>to<br/>Sun, Apr 14 | Fri, Apr 19<br/>to<br/>Sun, Apr 21 |Fri, Apr 26<br/>to<br/>Sun, Apr 28 |
 
 On the above dates, your environments will have the April 2019 updates automatically applied for the Dynamics 365 platform and the Sales app. It will not require any action from you.
 
