@@ -2,7 +2,7 @@
 title: "Get Help + Support | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 for Customer Engagement to get resolution for your issue.
 ms.custom: ""
-ms.date: 09/20/2018
+ms.date: 03/26/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -48,9 +48,7 @@ An example of solutions provided for Dynamics 365 for Outlook issues:
    - Enhanced Support
    - Professional Direct Support
    - Premier Support
-
-   We're working to add the Unified Support plan to the **Help + support** experience. For now, you can go to [My Premier Online](https://support.microsoft.com/en-us/premier). <br />
-   Microsoft Partners or delegated admins can go to [Partner Center](https://partnercenter.microsoft.com/en-us/partner/home).
+   - Unified Support
 
 ### View solutions or enter a support request through the new support center
 
