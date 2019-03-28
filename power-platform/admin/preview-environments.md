@@ -79,7 +79,7 @@ You can provide feedback on the [PowerApps forum][8] and/or contact [support][9]
 [2]: https://web.powerapps.com
 [3]: https://preview.web.powerapps.com
 [4]: https://preview.web.powerapps.com/webplayer
-[5]: https://docs.microsoft.com/powerapps/maker/canvas-apps/release-notes
+[5]: https://docs.microsoft.com/powerapps/whats-new
 [7]: https://preview.create.powerapps.com
 [8]: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1
 [9]: https://powerapps.microsoft.com/support/
