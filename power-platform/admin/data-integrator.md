@@ -144,7 +144,7 @@ Projects enable the flow of data between systems. A project contains mappings fo
 
 4. Provide a name for your integration project.
 
-5. Select one of the available templates (or [create your own template](#how-to-customize-or-create-your-own-template)). In this case, we are moving the Products entity from Finance and Operations to Sales.
+5. Select one of the available templates (or [create your own template](#how-to-create-your-own-template)). In this case, we are moving the Products entity from Finance and Operations to Sales.
 
     > [!div class="mx-imgBorder"] 
     > ![Select template to create new project](media/data-integrator/CreateNewProjectSelectTemplate780.png "Select template to create new project")
