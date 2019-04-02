@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/22/2019
+ms.date: 04/01/2019
 ms.author: jamesol
 search.audienceType: 
   - admin
@@ -22,9 +22,11 @@ search.app:
 - PowerApps is licensed on a per-user basis. 
 - User licenses are assigned on a named user basis, each user needs a separate license to run apps. 
 - PowerApps licenses do not limit the creation of apps.
+- Any PowerApps license is eligible to administer apps. 
 - PowerApps is available with two standalone plans—PowerApps Plan 1 and PowerApps Plan 2. 
-- PowerApps Plan 1 provides access to the Common Data Service to store and manage data. Users can run canvas apps that are built on the Common Data Service, use premium connectors, access data in custom applications or on-premises data. 
+- PowerApps Plan 1 provides access to Common Data Service to store and manage data. Users can run canvas apps that are built on Common Data Service, use premium connectors, access data in custom applications or on-premises data. 
 - PowerApps Plan 2 allows users to run model-driven apps with code plug-ins and real-time workflows. For details please visit the [PowerApps pricing page](https://powerapps.microsoft.com/pricing/).  
+- For details please visit the [PowerApps pricing page](https://powerapps.microsoft.com/pricing/) or download the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 - In addition to the standalone plans PowerApps capabilities are also included in certain Office 365 and Dynamics 365 plans allowing customers to extend and customize Office 365 and Dynamics 365 with PowerApps and Microsoft Flow capabilities that these offerings include. Select Dynamics 365 apps and plans include a full PowerApps P2 license, learn more [here](#powerapps-for-dynamics-365).
 
 The differences in functionality between these groups of licenses are described in more detail below.
@@ -33,9 +35,9 @@ The differences in functionality between these groups of licenses are described 
 Please see the [PowerApps pricing page](https://powerapps.microsoft.com/pricing/) with the latest pricing information for each PowerApps license (Plan 1 and Plan 2). Please see [Microsoft Flow pricing page](https://preview.flow.microsoft.com/pricing/) with the latest pricing information for each Microsoft Flow license.
 
 ## Licenses
+
 ### PowerApps for Office 365
 PowerApps capabilities for Office 365 enable users to extend and customize the Office experience with PowerApps and Microsoft Flow.  Users can create Canvas applications based on Office 365 data. These productivity apps can also utilize data outside of Office 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors.  
-
 
 |**Functionalities**  |**PowerApps for Office 365**  |
 |---------|---------|
@@ -48,7 +50,7 @@ PowerApps capabilities for Office 365 enable users to extend and customize the O
 |Support for data policies established by the Office 365 administrator     |  Yes       |
 |Flow runs per user/month (includes Flow for Office 365)     |  2,000       |
 |Access on-premises data or use premium or custom connectors     |  -       |
-|Data storage and management in the Common Data Service     |   -      |
+|Data storage and management in Common Data Service     |   -      |
 
 <sup>1</sup>For PowerApps for Office 365 Enterprise F1 please refer to the section below.
 
@@ -73,13 +75,13 @@ PowerApps is included with Office 365 Enterprise F1, with which users can run ap
 |Support for data policies established by the Office 365 administrator|Yes|
 |Create and share apps|Yes|
 |Access on-premises data or use premium or custom connectors| - |
-|Data storage and management in the Common Data Service|-|
+|Data storage and management in Common Data Service|-|
 
 ### PowerApps standalone Plan 1 and Plan 2
-Standalone PowerApps plans provide users the ability to create and run apps across data sources that extend beyond Office 365, such as Salesforce, on-premises and custom data sources. These plans also include access to the Common Data Service to store and manage data. Learn more about the Common Data Service [here](/powerapps/maker/common-data-service/data-platform-intro).  
+Standalone PowerApps plans provide users the ability to create and run apps across data sources that extend beyond Office 365, such as Salesforce, on-premises and custom data sources. These plans also include access to Common Data Service to store and manage data. Learn more about Common Data Service [here](/powerapps/maker/common-data-service/data-platform-intro).  
 
 - Microsoft PowerApps Plan 1 subscriptions are for users who need to run canvas apps and access on-premises data, data in custom applications and cloud services using premium connectors.
-- Microsoft PowerApps Plan 2 subscriptions are for users and administrators who need access to more capabilities. These users can run model-driven apps that can include custom code plug-ins and real-time workflows. These users have access to important management capabilities like viewing usage and setting policy. 
+- Microsoft PowerApps Plan 2 subscriptions are for users and administrators who need access to more capabilities. These users can run model-driven apps that can include custom code plug-ins and real-time workflows. 
 
 ### PowerApps Plan 2 free trial
 Users can try PowerApps Plan 2 for free for 30 days. During the trial, users have access to all of the features in PowerApps Plan 2. For information about how to sign up, see [Self-service signup for PowerApps](/powerapps/maker/signup-for-powerapps). 
@@ -93,13 +95,44 @@ When the trial expires, users have these options:
 >  To purchase PowerApps for an organization, you must be an Office 365 Global or Billing Admin of a tenant, or you must create a tenant.
 
 ### PowerApps Community Plan
-If you want to build skills and learn more about PowerApps, Microsoft Flow, and the Common Data Service, the PowerApps Community Plan is the right plan for you. The PowerApps Community Plan gives you a free development environment for individual use to learn with full functionality of PowerApps. See [here](https://go.microsoft.com/fwlink/p/?LinkId=866544) for PowerApps Community Plan.
+If you want to build skills and learn more about PowerApps, Microsoft Flow, and Common Data Service, the PowerApps Community Plan is the right plan for you. The PowerApps Community Plan gives you a free development environment for individual use to learn with full functionality of PowerApps. See [here](https://go.microsoft.com/fwlink/p/?LinkId=866544) for PowerApps Community Plan.
 
 ## Resource capacity is included with each license
-Per-user licenses come with included capacity for resources used when an app or flow is executed. These resources include data storage management and flow runs. The capacities included in the per-user licenses are pooled at the tenant level and, when the tenant’s capacity is exhausted, customers may purchase additional capacity through add-on licenses. See the [PowerApps pricing page](https://powerapps.microsoft.com/pricing) for details.
+
+### Default subscription capacity  
+
+PowerApps Plan 1 and Plan 2 licenses include capacities of one of more of these resources. PowerApps and Microsoft Flow subscription capacity leverages the same tenant and infrastructure and accrue across one tenant. 
+
+|Default capacity per tenant   |PowerApps Plan 1   |PowerApps Plan 2   |
+|---------|---------|---------|
+|Common Data Service Database capacity      | 1 GB         | 10 GB         |
+|Common Data Service File capacity      | 20 GB         | 20 GB         |
+|Common Data Service Log capacity      | 2 GB         | 2 GB         |
+
+Per-user licenses come with included capacity for resources used when an app or flow is executed. These resources include data storage management and flow runs. The capacities included in the per-user licenses are pooled at the tenant level and, when the tenant’s capacity is exhausted, customers may purchase additional capacity through add-on licenses. For every increment of PowerApps or Flow user subscription licenses, the included database and file capacity increases, see table. The cap on the amount of database capacity that may be earned or purchased per tenant is subject to the technical limit of 4TB/instance, no maximum on file or log capacity.
+
+### Accrued entitlements per user subscription license 
+
+|Default capacity per tenant   |PowerApps Plan 1   |PowerApps Plan 2   |
+|---------|---------|---------|
+|Common Data Service Database capacity      | 20 MB         | 250 MB         |
+|Common Data Service File capacity      | n/a          | 2 GB          |
+|Common Data Service Log capacity      | n/a          | n/a         |
+|Flow Runs per user/month     | 4,500      | 15,000      |
 
 > [!NOTE]
-> We've removed the 10 GB per instance (database) maximum capacity for the Common Data Service. You can buy up to 30 TB capacity which will be consumed across instances in the tenant.
+> We’ve removed the requirement to purchase additional production or non-production environments for Common Data Service. New environments can be created when at least 1 GB of database capacity is available. To learn how to create new production or non-production instances, see [Add an additional environment](provision-environment.md#add-an-additional-environment). 
+
+### Capacity add-ons 
+
+When the tenant’s capacity is exhausted, customers may purchase additional capacity through add-on licenses. Subscription add-ons apply across tenant and are not tied to a specific user. Subscription add-ons can be purchased at any time and remain a part of the subscription for the remainder of the subscription term.    
+
+|Add-on capacity per tenant/month   |  |Maximum per tenant    |
+|---------|---------|---------|
+|Common Data Service Database capacity      | $40/GB        | 4TB/environment        |
+|Common Data Service File capacity      | $2/GB        | n/a         |
+|Common Data Service Log capacity      | $10/GB          | n/a         |
+|Flow Runs per user/month     | $40/50K Runs     | n/a      |
 
 ### PowerApps for Dynamics 365
 
@@ -118,7 +151,7 @@ Select Dynamics 365 Enterprise Applications and Enterprise Plans include PowerAp
 | Access to restricted Dynamics 365 entities within the context of Dynamics 365 application use rights| Create, read, update and delete| Create, read, update and delete|
 |Access to Dynamics 365 app APIs| Yes<sup>1</sup> |Yes|
 |Run standalone PowerApps (canvas and model-driven)|-|Yes|
-|Included Flow Capacity (Pooled across tenant)|2,000 Flow runs per user/month|15,000 Flow runs per user/month Flow Plan 2 included|
+|Included Flow capacity (Pooled across tenant)|2,000 Flow runs per user/month|15,000 Flow runs per user/month Flow Plan 2 included|
 
 <sup>1</sup>Team member license does not provide access to Dynamics 365 app APIs
 
@@ -144,24 +177,3 @@ Dynamics 365 for Retail <br/>
 Dynamics 365 Customer Engagement Plan<br/>
 Dynamics 365 Unified Operations Plan<br/>
 Dynamics 365 Plan
-
-
-## PowerApps licensing examples
-Let’s take a look at an example. ABC Inc. has 1,000 employees, of which 700 employees are licensed with Office 365 Enterprise 3. Early on, a power user creates a line-of-business application that simplifies how customer orders are tracked. Later, the HR department works with IT to roll out an app for reporting time off and absences, and the app is built on the Common Data Service.
-
-### Order-tracking app
-ABC Inc. starts by developing an app for its Office 365 licensed users. The app brings together customer and product configuration data stored in Office 365 SharePoint lists with customer-order documents, which they store in Box.com. Because this app only accesses data stored in Office 365 and a common cloud service covered with a standard connector, the Office 365 licenses they already have cover both creation and usage of this app.
-
-**Licenses required**:  The 700 Office 365 Enterprise 3 licenses they already have are sufficient.
-
-### Time and absence app
-Based on how quickly and easily the order-tracking app was launched, ABC’s Human Resources group enlists the help of IT to create a time and absence reporting app that will be rolled out across the entire company. All employees will be required to use this app to report their hours, vacations, and sick days.
-
-For this app, IT selects the Common Data Service as the system in which to store time and absence data. The Common Data Service provides the security and data-policy capabilities that IT requires for information related to employees. They assign two IT employees to the project to create the database and model the time and absence app data in the Common Data Service. These employees are also responsible for tracking app usage and establishing the policy applied to this data.
-
-**Licenses required**:
-
-- **PowerApps Plan 2 – 10 licenses**: The 10 IT administrators who will set up the environments for the company to test and deploy their application, and establish data-security policies will each require PowerApps Plan 2 to perform these functions.
-- **PowerApps Plan 1 – 990 licenses**: The 700 Office 365 users will need to be licensed with PowerApps Plan 1 because this app relies on data stored outside Office 365 (that is, in the Common Data Service). The other 290 users who don’t have Office 365 or the PowerApps Plan 2 license will need this license to run the app.
-
-
