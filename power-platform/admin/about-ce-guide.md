@@ -38,7 +38,7 @@ For example, many of these admin settings in the Dynamics 365 for Customer Engag
 
 ![Environment settings](media/environment-settings-mini.png)
 
-Use links on this page to manage organization-wide settings. App-specific settings will remain in the Dynamics 365 for Customer Engagement apps, and will be accessed through the respective app settings. More information about managing environment settings in the Power Platform admin center: [Manage environment settings](admin-settings.md) 
+Use links on this page to manage organization-wide settings. App-specific settings will remain in the Dynamics 365 for Customer Engagement apps, and will be accessed through the respective app settings. More information about managing environment settings in the Power Platform Admin center: [Manage environment settings](admin-settings.md) 
 
 ### See also
 [Reference: Use the various admin centers](admin-centers.md)
