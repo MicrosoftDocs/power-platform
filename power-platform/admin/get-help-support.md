@@ -2,7 +2,7 @@
 title: "Get Help + Support | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 for Customer Engagement to get resolution for your issue.
 ms.custom: ""
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""

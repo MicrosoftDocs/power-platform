@@ -28,10 +28,10 @@
         #   href: analytics-flow.md
         - name: PowerApps analytics
           href: analytics-powerapps.md
-        ## - name: Capacity
-        ##   href: capacity-storage.md
-        ## - name: Free storage space
-        ##   href: free-storage-space.md
+        - name: Capacity
+          href: capacity-storage.md
+        - name: Free storage space
+          href: free-storage-space.md
       - name: Manage environments
         href: environments-administration.md
         items:
