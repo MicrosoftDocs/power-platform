@@ -39,8 +39,8 @@
           href: environments-overview.md
         - name: Regions overview
           href: regions-overview.md
-        - name: Provision an environment
-          href: provision-environment.md
+        ## - name: Provision an environment
+        ##   href: provision-environment.md
         - name: Create an environment
           href: create-environment.md
         - name: Create a database
