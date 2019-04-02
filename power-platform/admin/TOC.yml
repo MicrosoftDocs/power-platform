@@ -24,14 +24,14 @@
         items:
         - name: Common Data Service analytics 
           href: analytics-common-data-service.md
-        # - name: Capacity
-        #   href: capacity-storage.md
-        # - name: Free storage space
-        #   href: free-storage-space.md
         # - name: Microsoft Flow analytics
         #   href: analytics-flow.md
-        # - name: PowerApps analytics
-        #   href: analytics-powerapps.md
+        - name: PowerApps analytics
+          href: analytics-powerapps.md
+        ## - name: Capacity
+        ##   href: capacity-storage.md
+        ## - name: Free storage space
+        ##   href: free-storage-space.md
       - name: Manage environments
         href: environments-administration.md
         items:
@@ -39,6 +39,8 @@
           href: environments-overview.md
         - name: Regions overview
           href: regions-overview.md
+        ## - name: Provision an environment
+        ##   href: provision-environment.md
         - name: Create an environment
           href: create-environment.md
         - name: Create a database
@@ -186,6 +188,8 @@
         href: admin-manage-apps.md
       - name: Move an app between tenants or environments 
         href: environment-and-tenant-migration.md
+      ## - name: Share an app in Teams
+      ##   href: share-app-teams.md
       - name: View active users in your tenant
         href: admin-view-user-licenses.md
     - name: Deployment scenarios 
