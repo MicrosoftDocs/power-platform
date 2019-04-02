@@ -175,7 +175,7 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Connectors](https://docs.microsoft.com/connectors/index): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
 
-- [Power Platform admin center](admin-documentation.md): The admin center can be used to [open support tickets](get-help-support.md), but other functionality is currently not available in US Government tenants.
+- [Power Platform Admin center](admin-documentation.md): The admin center can be used to [open support tickets](get-help-support.md), but other functionality is currently not available in US Government tenants.
 
 - PowerApps admin link from the Office 365 Admin Center: Use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps admin center.
 
