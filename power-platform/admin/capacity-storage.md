@@ -2,7 +2,7 @@
 title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
 ms.custom: ""
-ms.date: 04/02/2019
+ms.date: 04/03/2019
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -78,7 +78,7 @@ To view the **Capacity** page, select **Analytics** > **Capacity** > **Overall**
 
 |  |Description |
 |---------|---------|
-|(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AttachmentBase</li><li>AttachmentMIMEAttachement</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
+|(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
 |(2)    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every User License purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li></ul>      |
 |(3)    |**What's new**: Used for announcements and notifications  |
 |(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
@@ -128,6 +128,9 @@ If you have an existing agreement, you are not impacted with the current change.
 
 ### I'm an existing customer and my renewal is coming up. Will I be impacted?
 Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
+
+### I'm an existing customer. Should I expect my Log and File usage to change?
+Log and Files data usage is not expected to be exactly the same size as when the same data is stored using Database due to different storage and indexing technologies. The current set of out-of-box (OOB) entities stored in File and Log might change in the future.
 
 ### Will the Storage tab in Common Data Service continue to work?
 The **Storage** tab will be deprecated as we move to the new updated Capacity Analytics.
