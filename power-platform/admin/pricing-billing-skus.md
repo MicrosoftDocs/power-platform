@@ -121,7 +121,7 @@ Per-user licenses come with included capacity for resources used when an app or 
 |Flow Runs per user/month     | 4,500      | 15,000      |
 
 > [!NOTE]
-> We’ve removed the requirement to purchase additional production or non-production environments for Common Data Service. New environments can be created when at least 1 GB of database capacity is available. To learn how to create new production or non-production instances, see [Provision an environment for Dynamics 365 for Customer Engagement](provision-environment.md#provision-an-environment-for-dynamics-365-for-customer-engagement).
+> We’ve removed the requirement to purchase additional production or non-production environments for Common Data Service. New environments can be created when at least 1 GB of database capacity is available. To learn how to create new production or non-production instances, see [Provision an environment](provision-environment.md).
 
 ### Capacity add-ons 
 
