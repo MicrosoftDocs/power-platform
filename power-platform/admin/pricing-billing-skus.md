@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/01/2019
+ms.date: 04/04/2019
 ms.author: jamesol
 search.audienceType: 
   - admin
@@ -29,7 +29,7 @@ search.app:
 - For details please visit the [PowerApps pricing page](https://powerapps.microsoft.com/pricing/) or download the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 - In addition to the standalone plans PowerApps capabilities are also included in certain Office 365 and Dynamics 365 plans allowing customers to extend and customize Office 365 and Dynamics 365 with PowerApps and Microsoft Flow capabilities that these offerings include. Select Dynamics 365 apps and plans include a full PowerApps P2 license, learn more [here](#powerapps-for-dynamics-365).
 
-The differences in functionality between these groups of licenses are described in more detail below.
+The differences in functionality between these groups of licenses are described in more detail below. 
 
 ## Pricing
 Please see the [PowerApps pricing page](https://powerapps.microsoft.com/pricing/) with the latest pricing information for each PowerApps license (Plan 1 and Plan 2). Please see [Microsoft Flow pricing page](https://preview.flow.microsoft.com/pricing/) with the latest pricing information for each Microsoft Flow license.
@@ -121,7 +121,7 @@ Per-user licenses come with included capacity for resources used when an app or 
 |Flow Runs per user/month     | 4,500      | 15,000      |
 
 > [!NOTE]
-> We’ve removed the requirement to purchase additional production or non-production environments for Common Data Service. New environments can be created when at least 1 GB of database capacity is available. To learn how to create new production or non-production instances, see [Add an additional environment](provision-environment.md#add-an-additional-environment). 
+> We’ve removed the requirement to purchase additional production or non-production environments for Common Data Service. New environments can be created when at least 1 GB of database capacity is available. To learn how to create new production or non-production instances, see [Provision an environment for Dynamics 365 for Customer Engagement](provision-environment.md#provision-an-environment-for-dynamics-365-for-customer-engagement).
 
 ### Capacity add-ons 
 
