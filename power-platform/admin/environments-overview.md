@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 04/11/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -95,12 +95,13 @@ Your license determines whether you can create environments.
 | --- | --- |
 | PowerApps P2 |√ (Two Production and Two Trial environments)|
 | PowerApps P2 Trial |√ (Two Trial environments)|
-| PowerApps P1 |x |
-| PowerApps P1 Trial |x |
-| Dynamics 365 Plans |x |
+| PowerApps P1 |X |
+| PowerApps P1 Trial |X |
+| Dynamics 365 Plans |√ (Two Production and Two Trial environments) |
 | Office 365 Plans |x |
-| Dynamics 365 Apps and Teams Plans |x |
-
+| Dynamics 365 Apps Plans |√ (Two Production and Two Trial environments)|
+| Dynamics 365 Teams Plans   |X  | 
+| PowerApps Community Plan   |√ (A single Developer environment is created automatically)    | 
 
 ### Where can environments be created?
 You will be able to create new environments from [PowerApps.com][2] and from the [PowerApps admin center][1]. If you create an environment, you will automatically be added to the Environment Admin role for that environment. There is not be a limit on the number of environments that you can participate in as a member of the Environment Admin or Environment Maker role. For more information about environments, see [Administer environments in PowerApps](environments-administration.md). For instructions on how to create an environment, see [Create an environment](create-environment.md).
