@@ -188,8 +188,8 @@
         href: admin-manage-apps.md
       - name: Move an app between tenants or environments 
         href: environment-and-tenant-migration.md
-      - name: Embed an app in Teams
-        href: embed-app-teams.md
+      # - name: Embed an app in Teams
+      #   href: embed-app-teams.md
       - name: View active users in your tenant
         href: admin-view-user-licenses.md
     - name: Deployment scenarios 
