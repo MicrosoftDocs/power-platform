@@ -102,10 +102,10 @@ As an administrator, you have two decisions to make when processing a DSR delete
 > [!IMPORTANT]
 > Deleting an environment will permanently delete all resources within the environment, including all apps, flows, connections, etc. So please review the contents of an environment before deletion.
 
-### Give access to a user’s environments from the PowerApps admin center
-An admin can grant administrative access to an environment created by a specific user from the [PowerApps admin center](https://admin.powerapps.com/) by following these steps:
+### Give access to a user’s environments from the PowerApps Admin center
+An admin can grant administrative access to an environment created by a specific user from the [PowerApps Admin center](https://admin.powerapps.com/) by following these steps:
 
-1. From the [PowerApps admin center](https://admin.powerapps.com/), select each environment in your organization.
+1. From the [PowerApps Admin center](https://admin.powerapps.com/), select each environment in your organization.
 
     ![Admin center landing page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
@@ -113,10 +113,10 @@ An admin can grant administrative access to an environment created by a specific
 
     ![Environment security](./media/powerapps-gdpr-delete-dsr/share-environment.png)
 
-### Delete environments created by a user from the PowerApps admin center
-An admin can review and delete environments created by a specific user from the [PowerApps admin center](https://admin.powerapps.com/) by following these steps:
+### Delete environments created by a user from the PowerApps Admin center
+An admin can review and delete environments created by a specific user from the [PowerApps Admin center](https://admin.powerapps.com/) by following these steps:
 
-1. From the [PowerApps admin center](https://admin.powerapps.com/), select each environment in your organization.
+1. From the [PowerApps Admin center](https://admin.powerapps.com/), select each environment in your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 

@@ -57,7 +57,7 @@ Environment Makers can also distribute the apps they build in an environment to 
 
 Users or groups assigned to these environment roles are not automatically given access to the environment’s database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).
 
-Users or security groups can be assigned to either of these two roles by an Environment Admin from the [PowerApps admin center][1]. For more information, see [Administer environments in PowerApps](environments-administration.md).
+Users or security groups can be assigned to either of these two roles by an Environment Admin from the [PowerApps Admin center][1]. For more information, see [Administer environments in PowerApps](environments-administration.md).
 
 ![](./media/environments-overview/EnvironmentRoles.png)
 
@@ -104,19 +104,19 @@ Your license determines whether you can create environments.
 | PowerApps Community Plan   |√ (A single Developer environment is created automatically)    | 
 
 ### Where can environments be created?
-You will be able to create new environments from [PowerApps.com][2] and from the [PowerApps admin center][1]. If you create an environment, you will automatically be added to the Environment Admin role for that environment. There is not be a limit on the number of environments that you can participate in as a member of the Environment Admin or Environment Maker role. For more information about environments, see [Administer environments in PowerApps](environments-administration.md). For instructions on how to create an environment, see [Create an environment](create-environment.md).
+You will be able to create new environments from [PowerApps.com][2] and from the [PowerApps Admin center][1]. If you create an environment, you will automatically be added to the Environment Admin role for that environment. There is not be a limit on the number of environments that you can participate in as a member of the Environment Admin or Environment Maker role. For more information about environments, see [Administer environments in PowerApps](environments-administration.md). For instructions on how to create an environment, see [Create an environment](create-environment.md).
 
 ![](./media/environments-overview/CreateEnvironmentDialog-New.png)
 
 
 ## Managing environments for your organization
-In PowerApps admin center,  you can manage all of the environments that you have created or to which you have been added to the Environment Admin role. From the Admin center, you can perform all administrative actions on an environment, including the following:
+In PowerApps Admin center,  you can manage all of the environments that you have created or to which you have been added to the Environment Admin role. From the Admin center, you can perform all administrative actions on an environment, including the following:
 
 * Add or remove a user or group from either the Environment Admin or Environment Maker role.  For more information, see [Administer environments in PowerApps](environments-administration.md).
 * Provision a Common Data Service database for the environment. For more information, see [Create a Common Data Service database](create-database.md).
 * Set Data Loss Prevention policies. For more information, see [Data loss prevention policies](prevent-data-loss.md).
 * Set database security policies (as open or restricted by database roles). For more information, see [Configure database security](database-security.md).
-* Members of the Azure AD tenant Global administrator role (includes Office 365 Global admins) can also manage all environments that have been created in their tenant and set tenant-wide policies from the PowerApps admin center.
+* Members of the Azure AD tenant Global administrator role (includes Office 365 Global admins) can also manage all environments that have been created in their tenant and set tenant-wide policies from the PowerApps Admin center.
 
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com

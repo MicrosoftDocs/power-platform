@@ -22,7 +22,7 @@ Common Data Service uses a role-based security model to help secure access to th
 ## Assign security roles to users
 Security roles control a user’s access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user’s view of data and on the user’s interactions with that data.
 
-To assign a user or a security group to an environment role, an Environment Admin can take these steps in the [PowerApps admin center][1]:
+To assign a user or a security group to an environment role, an Environment Admin can take these steps in the [PowerApps Admin center][1]:
 
 1. Select the environment in the environments table.
 
@@ -34,7 +34,7 @@ To assign a user or a security group to an environment role, an Environment Admi
     
     ![](./media/database-security/security-viewuser.png)
 
-4. In case user doesn’t exist, you can add the user from PowerApps admin center 
+4. In case user doesn’t exist, you can add the user from PowerApps Admin center 
 	Add the user by mentioning the email address of the user, in your organization, and selecting **Add user**.
 
     ![](./media/database-security/security-adduser.png)
@@ -83,7 +83,7 @@ The environment might maintain the records which can be used by multiple apps, y
 
 For more information about access and scope privileges, see [Security roles](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles).
 
-1. In [PowerApps admin center][1] select the environment where you want to update a security role.
+1. In [PowerApps Admin center][1] select the environment where you want to update a security role.
 
     ![](./media/environment-admin/choose-environment-updated.png)
 
