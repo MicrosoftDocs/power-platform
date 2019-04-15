@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/26/2019
+ms.date: 04/05/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -22,11 +22,11 @@ search.app:
 
 Your app is deployed in the region that hosts the environment. For example, if your environment is created in the Europe region, then your app is deployed in Europe data centers.
 
-If you're an administrator, you can determine the region of each environment in the PowerApps admin center.
+If you're an administrator, you can determine the region of each environment in the PowerApps Admin center.
 
 - Go to the [admin center](https://admin.powerapps.com), and sign in with your work account.
   
-    In the admin center, all existing environments are listed on the **Environments*- tab. This list shows the **Region*- where your app is deployed:
+    In the admin center, all existing environments are listed on the **Environments** tab. This list shows the **Region** where your app is deployed:
   
    ![Environments tab](./media/regions-overview/environment-list.png)
 
@@ -42,6 +42,26 @@ If you're an administrator, you can determine the region of each environment in 
 - United Kingdom
 - United States
 - US Government (GCC)
+
+## Who can create environments in these regions?
+
+With PowerApps, you can create environments in various regions across the globe, which benefits your business in these ways:
+
+- Store your data closer to your users
+- Maintain the compliance requirement of your geography
+
+You can create a database for an environment in one region (for example, United States) even if the Azure Active Directory (AAD) tenant is in another region (for example, Canada or Europe). Note the following:
+
+- Tax laws prevent you from creating a database for an environment in India and Australia, if your AAD tenant is not in India and Australia respectively. You can get an exception for Australia.
+- You can create an environment in the Preview (United States) region, regardless of where the AAD tenant is, but you can’t provision a database in that region.
+- Only a US Government associated organization can create an environment in US Government (GCC).
+
+|Your AAD tenant's home location  |Regions where you can create a database  |
+|---------|---------|
+|India     | Any region except Australia and Preview (United States)        |
+|Australia     | Any region except India and Preview (United States)           |
+|Any other location     | Any region except India, Australia, and Preview (United States)           |
+
 
 ## What features are specific to a given region?
 

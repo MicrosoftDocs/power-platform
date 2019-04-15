@@ -21,7 +21,7 @@ You can create a database and build apps by using Common Data Service as a data 
 
 There are various ways to create a database:
 
-- In the PowerApps admin center
+- In the PowerApps Admin center
 - In the **Entities** pane of powerapps.com
 
 > [!NOTE]

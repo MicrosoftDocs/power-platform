@@ -29,7 +29,7 @@ Currently we will be rolling out preview for the following scenarios across Powe
 1. **Creating apps**: You can create canvas-based apps using the next version of PowerApps. This can be done by creating apps in a preview environment. Current limitations include - model-driven apps can’t be built in the preview program - we're working on it.
 2. **Managing apps**: You can manage and share apps using [PowerApps web portal][2]. To access the preview functionalities, all you need to do is to be in a preview environment; it will take you to the preview version of [PowerApps web portal][3].
 3. **Playing apps**: You need to play the apps in a preview environment using the web player. When you do that, you will be automatically taken to [preview version of web player][4]. Apps will play with the vNext version of the PowerApps web player. Current limitations include - PowerApps Mobile for iOS, Android, and Windows are currently not available for preview. Playing the apps created in the First Release environment might not work - we're working on it.
-4. **Administrating PowerApps**: Admin experiences are available for preview using the [preview version of PowerApps admin center][1]
+4. **Administrating PowerApps**: Admin experiences are available for preview using the [preview version of PowerApps Admin center][1]
 
 ## How to get early access to the upcoming updates?
 For PowerApps, all the apps and related resources are stored in an environment. Early access to all preview functionalities are also available with an environment created in a region where the vNext (preview) is deployed. For now, there is only one region, **Preview (United States)**, as shown in the image below:
