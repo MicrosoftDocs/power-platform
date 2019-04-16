@@ -66,8 +66,6 @@ A single default environment is automatically created by PowerApps for each tena
 
 > [!NOTE]
 > No users will be added to the Environment Admin role of the default environment automatically. For more informaton, see [Administer environments in PowerApps](environments-administration.md).
->
->
 
 The default environment is named as follows: “{Azure AD tenant name} (default)”
 
