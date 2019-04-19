@@ -33,4 +33,4 @@ In this section of the paper we are going to look at how the PowerApps platform 
 - A user’s ability to see and use PowerApps is controlled by sharing the application with the user. Sharing of PowerApps canvas apps is done directly with the user or AAD group. Sharing of PowerApps model-drive apps is done via Common Data Service security roles
 - Environments act as security boundaries allowing different security needs to be implemented in each environment
 - Flows and Canvas apps use connectors, the specific connections credentials and associated service entitlements determine permissions when apps use the connectors
-- Environments with a Common Data Service (Common Data Service) instance add support for more advanced security models that are specific to controlling access to data and services in that Common Data Service instance.
+- Environments with a Common Data Service instance add support for more advanced security models that are specific to controlling access to data and services in that Common Data Service instance.
