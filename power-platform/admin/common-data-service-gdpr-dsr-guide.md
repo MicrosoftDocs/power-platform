@@ -51,7 +51,7 @@ The following actions are covered in this article:
 > [!IMPORTANT]
 > Applies to both Common Data Service and the previous version of Common Data Service
 
-Common Data Service and the previous version of Common Data Service (Common Data Service) have separate processes for interacting with personal data.
+Common Data Service and the previous version of Common Data Service have separate processes for interacting with personal data.
 
 You can identify which type of Common Data Service environment you have by logging into [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and following these steps:
 

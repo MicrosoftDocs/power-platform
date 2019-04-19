@@ -82,7 +82,7 @@ Flow for Dynamics 365 is also included in existing CRM Online Enterprise, Profes
 Free trials are 90 days long.
 
 ### Is there a way to develop my Microsoft Flow skills for more than 90 days? 
-Yes, with the PowerApps Community Plan you get a free environment for individual use with functionality including the Common Data Service (Common Data Service). In this environment you can explore and learn everything about Microsoft Flow and PowerApps for free, but the PowerApps Community Plan is not intended for production use.
+Yes, with the PowerApps Community Plan you get a free environment for individual use with functionality including the Common Data Service. In this environment you can explore and learn everything about Microsoft Flow and PowerApps for free, but the PowerApps Community Plan is not intended for production use.
 
 [Learn more](https://powerapps.microsoft.com/pricing/)
 

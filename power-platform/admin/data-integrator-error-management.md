@@ -16,7 +16,7 @@ search.app:
 ---
 # Data Integrator error management and troubleshooting
 
-The Data Integrator is a point-to-point integration service used to integrate data from multiple sources--for example, Dynamics 365 for Finance and Operations, Dynamics 365 for Sales, Salesforce, and Microsoft SQL (Preview)--into Common Data Service (Common Data Service). It also supports integrating data into Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. The [Integrate data into Common Data Service](data-integrator.md) topic provides detailed step-by-step instructions to help you set up projects for process-based integration scenarios like Prospect to Cash, Field Service, and Project Service integrations. 
+The Data Integrator is a point-to-point integration service used to integrate data from multiple sources--for example, Dynamics 365 for Finance and Operations, Dynamics 365 for Sales, Salesforce, and Microsoft SQL (Preview)--into Common Data Service. It also supports integrating data into Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. The [Integrate data into Common Data Service](data-integrator.md) topic provides detailed step-by-step instructions to help you set up projects for process-based integration scenarios like Prospect to Cash, Field Service, and Project Service integrations. 
 
 While we are constantly evolving and driving fixes into the platform based on customer feedback, we understand there is a need to provide guidance when you run into issues. This topic walks you through error management and troubleshooting some of these issues.
 
