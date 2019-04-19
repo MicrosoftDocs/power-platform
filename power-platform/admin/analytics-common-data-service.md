@@ -23,7 +23,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service for Apps analytics right from the Power Platform Admin center to quickly view adoption ad user metrics for your organization. 
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power Platform Admin center to quickly view adoption ad user metrics for your organization. 
 
  **Key highlights**  
 
@@ -40,7 +40,7 @@ We've improved how you view metrics for your organization. You no longer need to
 <a name="BKMK_InstallSolution"></a>   
 
 ## View Common Data Service analytics  
-It's simple. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service for Apps**.
+It's simple. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service**.
 
 <a name="BKMK_Home"></a>   
 
@@ -65,7 +65,7 @@ It's simple. In the [Power Platform Admin center](https://admin.powerplatform.mi
 <a name="BKMK_ActiveUsage"></a>   
 
 ## Active Users  
- ![Customer Data Service for Apps analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Customer Data Service for Apps analytics Active Usage Section")  
+ ![Customer Data Service analytics Active Usage Section](./media/organization-insights-active-usage-section.png "Customer Data Service analytics Active Usage Section")  
 
 ### About this dashboard  
  Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] users there are, how many licenses are in use, what custom entities are used most frequently, and more.  
@@ -217,7 +217,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_SystemJobs"></a>   
 
 ## System Jobs  
- ![Customer Data Service for Apps analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Customer Data Service for Apps analytics System Jobs Section")  
+ ![Customer Data Service analytics System Jobs Section](./media/organization-insights-system-jobs-section.png "Customer Data Service analytics System Jobs Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot workflows.  
@@ -248,7 +248,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Plugins"></a>   
 
 ## Plug-ins  
- ![Customer Data Service for Apps analytics Plugins Section](./media/organization-insights-plugins-section.png "Customer Data Service for Apps analytics Plugins Section")  
+ ![Customer Data Service analytics Plugins Section](./media/organization-insights-plugins-section.png "Customer Data Service analytics Plugins Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot plug-ins.  
@@ -277,7 +277,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_APICallStats"></a>   
 
 ## API Call Statistics  
- ![Customer Data Service for Apps analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Customer Data Service for Apps analytics API Call Statistics Section")  
+ ![Customer Data Service analytics API Call Statistics Section](./media/organization-insights-api-call-statistics-section.png "Customer Data Service analytics API Call Statistics Section")  
 
 ### About this dashboard  
  Use this dashboard to monitor and troubleshoot API calls.  
@@ -306,7 +306,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_MailboxUsage"></a>   
 
 ## Mailbox Usage  
- ![Customer Data Service for Apps analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Customer Data Service for Apps analytics Mailbox Usage Section")  
+ ![Customer Data Service analytics Mailbox Usage Section](./media/organization-insights-mailbox-usage-section.png "Customer Data Service analytics Mailbox Usage Section")  
 
 ### About this dashboard  
 
@@ -342,7 +342,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Storage"></a>   
 
 ## Storage  
- ![Customer Data Service for Apps analytics Storage Section](./media/organization-insights-storage-section.png "Customer Data Service for Apps analytics Storage Section")  
+ ![Customer Data Service analytics Storage Section](./media/organization-insights-storage-section.png "Customer Data Service analytics Storage Section")  
 
 ### About this dashboard  
  This dashboard provides a look at storage used by your tenant and instances.
@@ -374,7 +374,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Download"></a>   
 
 ## Download  
- ![Customer Data Service for Apps analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service for Apps analytics Download Section")  
+ ![Customer Data Service analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service analytics Download Section")  
 
 ### About this command  
  Use this command to download the data selected for the date range selected as an Excel spreadsheet.  
@@ -422,4 +422,4 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 - The data shown for a hourly aggregation interval represents the whole hour. For example, if the number of active users at 2:00 PM is 5, there were 5 active users between 1:00 and 2:00 PM.  
 
-  ![Customer Data Service for Apps analytics active users chart](./media/organization-insights-active-users-chart.PNG "Customer Data Service for Apps analytics active users chart") 
+  ![Customer Data Service analytics active users chart](./media/organization-insights-active-users-chart.PNG "Customer Data Service analytics active users chart") 
