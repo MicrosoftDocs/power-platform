@@ -1,6 +1,7 @@
-- name: Administer Power Platform
-  href: admin-documentation.md
-  items:
+- name: Power Platform
+  items: 
+  - name: Administer Power Platform
+    href: admin-documentation.md
   - name: Administer Dynamics 365 for Customer Engagement
     href: about-ce-guide.md
   - name: "Administer PowerApps"
@@ -45,6 +46,8 @@
           href: create-environment.md
         - name: Create a database
           href: create-database.md
+        - name: Manage encryption key
+          href: manage-encryption-key.md
         - name: PowerApps Preview Program
           href: preview-environments.md
         - name: About Sandbox environments
@@ -125,6 +128,10 @@
 
     - name: Platform architecture
       items: 
+      - name: About on-premises gateway 
+        href: wp-onpremises-gateway.md
+      - name: On-premises data gateway management
+        href: onpremises-data-gateway-management.md
       - name: About environments 
         href: wp-environments.md
       - name: Common Data Service 
@@ -135,8 +142,7 @@
         href: wp-about-flows.md
       - name: Connectors 
         href: wp-connectors.md
-      - name: On-premises Gateways 
-        href: wp-onpremises-gateway.md
+
       - name: Solution Packages 
         href: wp-solution-packages.md
     - name: Licensing and license management 
