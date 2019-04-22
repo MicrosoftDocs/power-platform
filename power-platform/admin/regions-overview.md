@@ -50,13 +50,13 @@ With PowerApps, you can create environments in various regions across the globe,
 - Store your data closer to your users
 - Maintain the compliance requirement of your geography
 
-You can create a database for an environment in one region (for example, United States) even if the Azure Active Directory (AAD) tenant is in another region (for example, Canada or Europe). Note the following:
+You can create a database for an environment in one region (for example, United States) even if the Azure Active Directory (Azure AD) tenant is in another region (for example, Canada or Europe). Note the following:
 
-- Tax laws prevent you from creating a database for an environment in India and Australia, if your AAD tenant is not in India and Australia respectively. You can get an exception for Australia.
-- You can create an environment in the Preview (United States) region, regardless of where the AAD tenant is, but you can’t provision a database in that region.
+- Tax laws prevent you from creating a database for an environment in India and Australia, if your Azure AD tenant is not in India and Australia respectively. You can get an exception for Australia.
+- You can create an environment in the Preview (United States) region, regardless of where the Azure AD tenant is, but you can’t provision a database in that region.
 - Only a US Government associated organization can create an environment in US Government (GCC).
 
-|Your AAD tenant's home location  |Regions where you can create a database  |
+|Your Azure AD tenant's home location  |Regions where you can create a database  |
 |---------|---------|
 |India     | Any region except Australia and Preview (United States)        |
 |Australia     | Any region except India and Preview (United States)           |

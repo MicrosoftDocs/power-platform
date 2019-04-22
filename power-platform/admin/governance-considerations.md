@@ -68,7 +68,7 @@ After users have licenses, environments exist as containers for all resources ut
 
 The following principals are supported for each role type.
 
-|Environment type  |Role  |Principal Type (AAD)  |
+|Environment type  |Role  |Principal Type (Azure AD)  |
 |---------|---------|---------|
 |Environment without Common Data Service     | Environment role        | User, group, tenant         |
 |     | Resource permission: Canvas app        | User, group, tenant        |

@@ -57,7 +57,7 @@ When a database is created, the users who have environment roles assigned to the
 You can assign additional users to pre-defined roles or even create [custom roles][1]. See [Database Security](database-security.md) for more details.
 
 > [!NOTE]
-> On creating the database, any security group assigned to Environment Admin or Environment Maker role will not be honored any more. Currently, assigning permissions in database, do not support AAD security group.
+> On creating the database, any security group assigned to Environment Admin or Environment Maker role will not be honored any more. Currently, assigning permissions in database, do not support Azure AD security group.
 
 
 ## License and security permissions

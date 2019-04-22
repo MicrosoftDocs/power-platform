@@ -62,7 +62,7 @@ Users or security groups can be assigned to either of these two roles by an Envi
 ![](./media/environments-overview/EnvironmentRoles.png)
 
 ## The default environment
-A single default environment is automatically created by PowerApps for each tenant and shared by all users in that tenant. Whenever a new user signs up for PowerApps, they are automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of the AAD tenant.
+A single default environment is automatically created by PowerApps for each tenant and shared by all users in that tenant. Whenever a new user signs up for PowerApps, they are automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of the Azure AD tenant.
 
 > [!NOTE]
 > No users will be added to the Environment Admin role of the default environment automatically. For more informaton, see [Administer environments in PowerApps](environments-administration.md).
