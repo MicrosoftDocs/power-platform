@@ -5,7 +5,7 @@
   - name: Administer Dynamics 365 for Customer Engagement
     href: about-ce-guide.md
   - name: "Administer PowerApps"
-    href: admin-guide.md 
+    href: admin-guide.md
     items:
     - name: Get Help + Support 
       href: get-help-support.md
@@ -142,7 +142,6 @@
         href: wp-about-flows.md
       - name: Connectors 
         href: wp-connectors.md
-
       - name: Solution Packages 
         href: wp-solution-packages.md
     - name: Licensing and license management 
