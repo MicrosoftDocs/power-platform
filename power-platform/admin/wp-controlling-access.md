@@ -25,6 +25,6 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-PowerApps relies on Azure Active Directory (AAD) for authentication. This means that you can leverage the full functionality of AAD to manage and restrict access to users. This includes using Conditional Access Policies and other premium features of AAD. Developers can also register applications with AAD and use the oAuth2 authorization framework to allow their code to access the platform APIs.
+PowerApps relies on Azure Active Directory (Azure AD) for authentication. This means that you can leverage the full functionality of Azure AD to manage and restrict access to users. This includes using Conditional Access Policies and other premium features of Azure AD. Developers can also register applications with Azure AD and use the oAuth2 authorization framework to allow their code to access the platform APIs.
 
-External users from other AAD tenants can be added as Business Guests in your AAD. They can be configured to work with some limitations with PowerApps model-driven apps. Business Guests are not supported currently for PowerApps canvas apps and Microsoft Flow. Other external users beyond the capability of Business Guests, including Azure B2C is not currently supported.
+External users from other Azure AD tenants can be added as Business Guests in your Azure AD. They can be configured to work with some limitations with PowerApps model-driven apps. Business Guests are not supported currently for PowerApps canvas apps and Microsoft Flow. Other external users beyond the capability of Business Guests, including Azure B2C is not currently supported.

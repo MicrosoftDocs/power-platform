@@ -61,7 +61,7 @@ Schemas define which PowerApps fields are sent to the Office 365 Security and Co
 |Organization Id     |Edm.Guid         |Yes        |Unique identifier of the organization from which the log was generated.       |
 |CreationTime     |Edm.Date         |No         |Date and time of when the log was generated in UTC          |
 |Operation     |Edm.Date         |No         |Name of operation         |
-|UserKey     |Edm.String         |No         |Unique Identifier of the User in AAD       |
+|UserKey     |Edm.String         |No         |Unique Identifier of the User in Azure AD       |
 |UserType     |Self.UserType         |No         |The audit type (Admin, Regular, System)         |
 |Additional Info     |Edm.String        |No         |Additional information if any (e.g. the environment name)       |
 
