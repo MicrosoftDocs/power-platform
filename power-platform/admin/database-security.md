@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/26/2018
+ms.date: 04/24/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -22,7 +22,10 @@ Common Data Service uses a role-based security model to help secure access to th
 ## Assign security roles to users
 Security roles control a user’s access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user’s view of data and on the user’s interactions with that data.
 
-To assign a user or a security group to an environment role, an Environment Admin can take these steps in the [PowerApps Admin center][1]:
+To assign a user to an environment role, an Environment Admin can take these steps in the [PowerApps Admin center][1]:
+
+> [!NOTE]
+> Currently, roles can only be assigned to users. Please check back for when assigning a role to a security group is available.
 
 1. Select the environment in the environments table.
 
@@ -48,9 +51,6 @@ To assign a user or a security group to an environment role, an Environment Admi
 6. Assign the role to the user.
 
     ![](./media/environment-admin/D365-Assign-Role.png)
-
-    > [!NOTE]
-    > Currently, roles can only be assigned to the users. Assigning a role to a security group is in our backlog.
 
 7. Select **OK** to update the assignments to the environment role.
 
