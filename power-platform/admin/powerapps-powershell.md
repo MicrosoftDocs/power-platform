@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/07/2019
+ms.date: 04/29/2019
 ms.author: jamesol
 search.audienceType: 
   - admin
@@ -29,7 +29,7 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 > [!NOTE]
 > **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
 > 
-> The default endpoint is “prod”. If a user wants to run a PowerShell script on the USGOV endpoint, the -Endpoint parameter needs to be changed to “usgov”. GCC level 4 and level 5 are not yet supported.
+> The default endpoint is “prod”. If a user wants to run a PowerShell script on the GCC environment, the -Endpoint parameter needs to be changed to “usgov”. GCC High and DOD are not yet supported.
 > 
 > ```
 > Add-PowerAppsAccount -Endpoint "usgov" 
