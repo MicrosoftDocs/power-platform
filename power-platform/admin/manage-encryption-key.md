@@ -107,7 +107,7 @@ For more information about generating and transferring an HSM-protected key over
 
 ## Key management tasks  
  To simplify the key management tasks, the tasks are broken down into three areas:
-1.	[Genearate or upload the encryption key for a tenant](#generate-or-upload-the-encryption-key-for-a-tenant)
+1.	[Generate or upload the encryption key for a tenant](#generate-or-upload-the-encryption-key-for-a-tenant)
 2.  [Activate an encryption key for a tenant](#activate-an-encryption-key-for-a-tenant) 
 3.	[Manage encryption for an environment](#manage-encryption-for-an-environment) 
 
