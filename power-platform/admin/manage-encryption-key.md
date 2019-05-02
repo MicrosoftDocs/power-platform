@@ -29,9 +29,9 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-All environments of PowerApps and [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
+All environments of Common Data Service and [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
   
- By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don’t have to.  The manage keys feature in the Power Platform Admin Center (preview) gives administrators the ability to self-manage the database encryption key that is associated with the PowerApps and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps tenant. 
+ By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don’t have to.  The manage keys feature in the Power Platform Admin Center (preview) gives administrators the ability to self-manage the database encryption key that is associated with Common Data Service and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps tenant. 
 
 <!--  [!IMPORTANT]
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
@@ -40,7 +40,7 @@ All environments of PowerApps and [!INCLUDE[pn_CRM_Online](../includes/pn-crm-on
 > Self-managed database encryption keys are only available for customers who have more than one-thousand licensed user seats and who have opted in to the feature.  To opt-in to this program, contact your account or sales representative and send your request to 
 CDSCMKOnboarding@microsoft.com.
 >
-> Encryption key management is only applicable to Azure SQL environment databases. The encryption key can't be used to protect the following data:
+> Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can’t be encrypted with the self-managed encryption key:
 > - Relevance Search
 > - Mobile Offline
 > - Activity Log (Office 365 portal)
@@ -53,7 +53,7 @@ CDSCMKOnboarding@microsoft.com.
   
  The key management feature supports both PFX and BYOK encryption key files, such as those stored in a hardware security module (HSM). To use the upload encryption key option you need both the public and private encryption key.  
   
- The key management feature takes the complexity out of encryption key management by using [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] to securely store encryption keys. [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] helps safeguard cryptographic keys and secrets used by cloud applications and services. The key management feature doesn’t require that you have an [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] subscription and for most situations there is no need to access encryption keys used for PowerApps and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps within the vault.  
+ The key management feature takes the complexity out of encryption key management by using [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] to securely store encryption keys. [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] helps safeguard cryptographic keys and secrets used by cloud applications and services. The key management feature doesn’t require that you have an [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] subscription and for most situations there is no need to access encryption keys used for Common Data Service and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps within the vault.  
   
  The manage keys feature lets you perform the following tasks.  
   
@@ -167,12 +167,12 @@ Once an encryption key is generated or uploaded for the tenant, it can be activa
 When you activate a key for the tenant, it takes a while for the key management service to activate the key. The status of the **Key state** displays the key as **Installing** when the new or uploaded key is activated. 
 Once the key is activated, the following occurs: 
 - All encrypted environments automatically get encrypted with the active key (there is no downtime with this action).
-- When activated, new encryption key managed environments are encrypted with the active key. Notice that this action takes time and the environment will be offline until completed.
+- When activated, the encryption key will be applied to all environments that are changed from Microsoft-provided to self-managed encryption key.
 
 To perform this task using PowerShell, see [Set-CrmProtectWithTenantKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmprotectwithtenantkey?view=dynamics365ce-ps).
 
 > [!IMPORTANT]
-> To streamline the key management feature so that all environments are managed by the same key, the active key can't be updated when there are locked environments.  All locked environments must be unlocked before a new key can be uploaded. If there are locked environments that don't need to be unlocked, they must be deleted. 
+> To streamline the key management process so that all environments are managed by the same key, the active key can't be updated when there are locked environments.  All locked environments must be unlocked before a new key can be activated. If there are locked environments that don't need to be unlocked, they must be deleted. 
 
 > [!NOTE]
 > After an encryption key is activated, you can’t activate another key for 24 hours.
@@ -189,17 +189,6 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 6.	Select **Confirm** to acknowledge the manage key risk.
 7.  Select **Apply this key** to accept changing the encryption to use the activated key. 
 8.  Select **Confirm** to acknowledge that you are managing the key directly and that there is downtime for this action.
-9.  Email notification is sent to all administrators. More information: [Encryption key change notification](#encryption-key-change-notification)
-
-<!-- 
-#### Apply encryption key to an environment
-1.	Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.com)..
-2.	Select the **Environments** tab, and then select an environment that is encrypted with the Microsoft encryption key.
-3.	Select **See all** on the ribbon.
-4.	In the **Encryption** section, select **Manage**.
-5.	Select **Apply this key** to accept changing the encryption to use the activated key.
-6.	Email notification is sent to all administrators. More information: Encryption key change notification
-To perform this task using PowerShell, see Set-CrmProtectWithTenantKey.  -->
 
 #### Return a managed encryption key back to Microsoft-provided encryption key
  Returning to the Microsoft-provided encryption key configures the environment back to the default behavior where [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] manages the encryption key for you.  
@@ -210,7 +199,7 @@ To perform this task using PowerShell, see Set-CrmProtectWithTenantKey.  -->
 4.  In the **Environment Encryption** section, select **Manage**, and then select **Confirm**. 
 5.	Select **Return** under **Return to standard encryption management**.
 6.  For Production environments, confirm the environment by entering the environment's name.
-7.  Click **Confirm** to return to standard encryption key management.
+7.  Select **Confirm** to return to standard encryption key management.
 
 To perform this task using PowerShell, see [Set-CrmProtectWithMicrosoftKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmprotectwithmicrosoftkey?view=dynamics365ce-ps).
   
@@ -227,7 +216,7 @@ Since there is only one active key per tenant, locking the encryption for the te
 
 Tenant locking is currently unavailable from the Power Platform Admin Center (preview). To lock a tenant using the PowerShell cmdlet, see [Set-CrmLockTenantProtectedInstances](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmlocktenantprotectedinstances?view=dynamics365ce-ps).
   
-#### Unlock locked tenant environments
+#### Unlock locked environments
 To unlock environments you must first [upload](#upload-a-key-pfx-or-byok) and then [activate](#activate-an-encryption-key-for-a-tenant) the tenant encryption key with the same key that was used to [lock the tenant](#lock-the-tenant). Please note that locked environments do not get unlocked automatically once the key has been activated. Each locked environment has to be unlocked individually. 
 
 Environment unlocking is currently unavailable from the Power Platform Admin Center (preview). To unlock an environment using the PowerShell cmdlet, see [Set-CrmUnlockTenantProtectedInstance](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmunlocktenantprotectedinstance?view=dynamics365ce-ps).
@@ -235,7 +224,7 @@ Environment unlocking is currently unavailable from the Power Platform Admin Cen
   
 ## Encryption key change notification
 > [!IMPORTANT]
-> When an encryption key is set or changed, all Dynamics 365 for Customer Engagement apps (online) administrators receive an email message alerting them of the change. This provides a means to allow other administrators to verify and confirm that the key was updated by an authorized administrator.  Since it takes time to activate the key and to encrypt all the environments, and to send out the email notification, an encryption key can only be updated once every 24 hours.
+> When an encryption key is activated or changed, all Dynamics 365 for Customer Engagement apps (online) administrators receive an email message alerting them of the change. This provides a means to allow other administrators to verify and confirm that the key was updated by an authorized administrator.  Since it takes time to activate the key and to encrypt all the environments, and to send out the email notification, an encryption key can only be updated once every 24 hours.
 
 ### See also  
  [SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
