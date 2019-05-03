@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 1/31/2019
+ms.date: 05/03/2019
 ms.author: sabinn
 search.audienceType: 
   - admin
@@ -15,8 +15,6 @@ search.app:
   - Powerplatform
 ---
 # Integrate data into Common Data Service
-
-<!--note from editor: the style guide says not to use "the" in front of Common Data Service, so I'm removing that.-->
 
 The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Common Data Service. It supports integrating data from multiple sources—for example, Dynamics 365 for Finance and Operations, Dynamics 365 for Sales and SalesForce (Preview), SQL (Preview)—into Common Data Service. It also supports integrating data into Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. This service has been generally available since July 2017.  
 
@@ -239,6 +237,7 @@ Also note that under Notifications, you can opt in for email-based alert notific
 For trial tenants, we have an additional limitation that a scheduled project would only run for first 50 executions.
 > - While we support scheduling projects to run every minute, please bear in mind that this may put a lot of stress on your apps and in turn impact overall performance. We highly encourage users to test project executions under true load conditions and optimize for performance with less frequent refreshes.
 In production environments, we do not recommend running more than 5 projects per minute per tenant.
+> - To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project.
 > - Anytime you execute a project, manually or schedule based, it generates a detailed log which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it is automatically purged.
 
 ## Customizing projects, templates, and mappings 
