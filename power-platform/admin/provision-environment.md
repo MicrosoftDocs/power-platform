@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 05/03/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -22,6 +22,8 @@ How you provision an environment depends on the platform you're working in.
 
 > [!IMPORTANT]
 > We are working to enable provisioning environments within the Power Platform Admin center. Check back for updated information.
+>
+> If you purchased the new capacity-based license, until provisioning environments is available through the Power Platform Admin center, you can provision environments through the PowerApps/Flow/Dynamics 365 Admin center. If you still need more environments, you can contact [Support](get-help-support.md).
 
 ## Provision an environment for PowerApps
 
