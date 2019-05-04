@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2019
+ms.date: 05/03/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -165,20 +165,16 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products.
 
-- Creating PowerApps US Government apps from [SharePoint lists](https://support.office.com/article/Create-a-PowerApp-for-a-list-in-SharePoint-Online-9338b2d2-67ac-4b81-8e67-97da27e5e9ab).
-
 - [Data integration and Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 
 - [Common Data Service analytics](analytics-common-data-service.md)
 
 - [Mobile push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications).
 
-- [Connectors](https://docs.microsoft.com/connectors/index): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
+- [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
 
 - [Power Platform Admin center](admin-documentation.md): The admin center can be used to [open support tickets](get-help-support.md), but other functionality is currently not available in US Government tenants.
 
-- PowerApps admin link from the Office 365 Admin Center: Use [https://gov.admin.powerapps.us](https://gov.admin.powerapps.us) to reach the PowerApps Admin center.
-
 ### See also
-
 [Microsoft Flow US Government](https://docs.microsoft.com/en-us/flow/us-govt)
+
