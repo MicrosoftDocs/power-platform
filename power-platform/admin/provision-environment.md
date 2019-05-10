@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/03/2019
+ms.date: 05/10/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -44,3 +44,28 @@ You can get to this center in multiple ways.
 - **Select Dynamics 365 (Microsoft 365)**: In the [Microsoft 365 admin center](https://admin.microsoft.com), in the left-side menu, expand **Admin centers** and select **Dynamics 365**. You might need to select **All admin centers** to display the **Dynamics 365** tile. 
 
 For information on how to provision an environment (instance) in the Dynamics 365 Administration Center, see [Add an instance to your subscription](https://docs.microsoft.com/dynamics365/customer-engagement/admin/add-instance-subscription).
+
+## FAQ
+
+### I’m a Customer Engagement customer and recently bought/renewed to the new Capacity offers. Am I eligible to provision an environment using the 1GB database capacity?
+Yes. However, the feature to provision using the 1GB rules is coming soon. Please stay tuned for more updates
+
+### I’m a PowerApps/Flow customer. Am I eligible to provision an environment using the 1GB database capacity?
+Yes. However, the feature to provision using the 1GB rules is coming soon. Please stay tuned for more updates.
+
+### I’m an existing Customer Engagement customer and I have not transitioned to the new Capacity offers yet. Can I provision using the 1GB available database capacity rules?
+No. You should continue using the [Dynamics 365 Admin center](https://docs.microsoft.com/dynamics365/customer-engagement/admin/sign-in-office-365-apps#direct-sign-in-to-the-dynamics-365-administration-center) for provisioning. 
+
+### In the new capacity-based offers, is there any limit on how many environments I can provision?
+Provisioning environments is based on available capacity. At least 1GB available database capacity is required to provision. Check your storage capacity [here](https://admin.powerplatform.microsoft.com/analytics/capacity).
+
+### There are multiple admin centers to manage environments. Which should I use?
+We are working to consolidate the centers. Until this is completed, please use the admin center where your environment resides. See [Use the various admin centers](admin-centers.md)
+
+<!-- 
+### What is the licensing/role requirement to provision and administer Environments?
+You can find more details here. 
+-->
+
+### See also 
+[Preview: Common Data Service storage capacity](capacity-storage.md)
