@@ -2,7 +2,7 @@
 title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
 ms.custom: ""
-ms.date: 05/03/2019
+ms.date: 05/10/2019
 ms.reviewer: ""
 ms.service: "crm-online"
 ms.suite: ""
@@ -146,13 +146,11 @@ Customers who renew existing subscriptions can choose to continue to transact us
 ### I’m a PowerApps/Flow customer and have environments with and without Database. Will they consume storage capacity? 
 Currently, only the environments with Database consume capacity; environments without Database do not. However, once the Power Platform Admin center has the ability to create environments, all environments will consume 1GB. 
 
+### Why am I no longer getting storage notifications?
+We have disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity )** page to monitor usage.
+
 ### How can I reduce consumed storage space?
 See the following: [Free storage space](free-storage-space.md).
-
-<!--
-### My Database capacity just dropped suddenly in the new report, why?
-It is expected that for some customers the Database storage will drop, as we are now counting the data stored in Files, attachments under File Capacity, and data storage in Audit, Plugin trace logs under Log capacity. Your data is not deleted. 
--->
 
 ### I'm an existing customer. Should I expect my File and Log usage to change?
 Log and Files data usage is not expected to be exactly the same size as when the same data is stored using Database due to different storage and indexing technologies. The current set of out-of-box (OOB) entities stored in File and Log might change in the future.
@@ -165,8 +163,4 @@ Check back for availability. In addition to top tables, we will also show the ta
 
 ### Which environments are counted in the capacity report?
 Default, Production, and Sandbox environments are counted for consumption. Trial, Preview, Support, and Developer environments are not counted.
-
-
-
-
 
