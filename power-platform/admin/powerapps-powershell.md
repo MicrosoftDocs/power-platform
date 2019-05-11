@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/29/2019
+ms.date: 05/10/2019
 ms.author: jamesol
 search.audienceType: 
   - admin
@@ -23,8 +23,8 @@ With the preview launch of the PowerShell cmdlets for app creators and administr
 [Cmdlets](https://docs.microsoft.com/powershell/developer/cmdlet/writing-a-windows-powershell-cmdlet) are functions written in PowerShell script language that execute commands in the Windows PowerShell environment. Running these PowerApps cmdlets will allow you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. Note that you can still use the cmdlets if you’re not an admin on the tenant, but you will be limited to the resources you own. Cmdlets that start with the word ‘Admin’ are designed to be used by an administrative user account.
 
 Cmdlets are available on the PowerShell gallery as two separate modules: 
-- [Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1)
-- [Maker](https://www.powershellgallery.com/packages/Microsoft.PowerApps.PowerShell/1.0.1) 
+- [Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell)
+- [Maker](https://www.powershellgallery.com/packages/Microsoft.PowerApps.PowerShell) 
 
 > [!NOTE]
 > **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
