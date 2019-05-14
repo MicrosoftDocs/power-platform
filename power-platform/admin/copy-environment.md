@@ -30,7 +30,7 @@ You can use Copy environment in the Power Platform Admin center to copy the Dyna
 
 > [!NOTE]
 > - You can only copy an environment to a Sandbox environment.
-> - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, connections) will not be copied to the target environment.
+> - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) will not be copied to the target environment.
 
 
   
