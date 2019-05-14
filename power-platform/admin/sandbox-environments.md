@@ -2,7 +2,7 @@
 title: "View and reset Sandbox environments | MicrosoftDocs"
 description: Learn about Sandbox environments ann how to reset them. 
 ms.custom: ""
-ms.date: 05/03/2019
+ms.date: 05/14/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -43,8 +43,9 @@ Reset a Sandbox environment to delete and re-provision it. Consider a reset when
 - Free up storage space  
 - Remove an environment containing Personally Identifiable Information (PII) data  
   
-> [!NOTE]
-> You can only reset Sandbox environments.  
+> [!IMPORTANT]
+> - You can only reset Sandbox environments. 
+> - A reset will permanently delete environment components such as canvass apps, flows, custom connectors, and connections.
 
  **An example scenario**  
   

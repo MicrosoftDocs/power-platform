@@ -2,7 +2,7 @@
 title: "Copy an environment to a Sandbox environment | MicrosoftDocs"
 description: Learn how to copy a Sandbox environment.
 ms.custom: ""
-ms.date: 05/03/2019
+ms.date: 05/14/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -29,7 +29,10 @@ You can use Copy environment in the Power Platform Admin center to copy the Dyna
 > ![](media/copy-menu.png "Copy menu")
 
 > [!NOTE]
-> You can only copy an environment to a Sandbox environment.
+> - You can only copy an environment to a Sandbox environment.
+> - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) will not be copied to the target environment.
+
+
   
 ## Copy over everything
  An Everything copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  
