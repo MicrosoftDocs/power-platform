@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 05/03/2019
+ms.date: 05/15/2019
 ms.author: sabinn
 search.audienceType: 
   - admin
@@ -198,7 +198,6 @@ Execution history shows the history of all project executions with project name,
 > [!NOTE]
 > Anytime you execute a project, manually or schedule based, it generates a detailed log which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it is automatically purged.
 
-
 ### How to set up a schedule-based refresh
 
 We support two types of executions/writes today:
@@ -279,8 +278,6 @@ You can customize projects and templates in these ways:
 2. Identify source and destination and direction of flow for your new template.
 
 3. Create a project by choosing an existing template that matches your choice of source and destination and direction of flow.
-
-<!--note from editor: Didn't we create the project in step 3? Step 4 tells us to create the project.-->
 
 4. Create the project after choosing the appropriate connection.
 
@@ -430,8 +427,6 @@ With Power Query support, we now provide advanced filtering and data transformat
     > [!div class="mx-imgBorder"] 
     > ![Fix the each clause](media/data-integrator/EnablePQDefaultValueTransforms5780.png "Fix the each clause")
 
-<!--note from editor: The sentence that starts with "Additionally" is confusing - not sure where the "same steps" fit in.-->
-
 12. Each time you make a change, you apply a step. You can see the applied steps on the right-hand pane (scroll to the bottom to see the latest step). You can undo a step in case you need to edit. Additionally, you can go to the Advanced editor by right-clicking the **QrySourceData** on the left pane, at the top to view the M language that gets executed behind the scenes, with the same steps.
 
     > [!div class="mx-imgBorder"] 
@@ -443,3 +438,43 @@ With Power Query support, we now provide advanced filtering and data transformat
     > ![Pick new column](media/data-integrator/EnablePQDefaultValueTransforms6780.png "Pick new column")
 
 For more information on Power Query, see [Power Query documentation](https://docs.microsoft.com/power-query/).
+
+## Performance tuning
+
+There are several factors that impact the performance of an integration scenario. Performance is highly dependent on: 
+
+- Which applications you are integrating: Dynamics 365 for Finance and Operations and Common Data Service
+
+- Which entities are used: the entities' shape, validation, and business logic (standard and customizations)
+
+The Data Integrator takes the data from the source application and pushes it into the target application. The main performance considerations are on how source and target applications scale with the concerned entities. It leverages the best available technologies to pull/push data in a performant manner.
+
+Dynamics 365 for Finance and Operations uses the data management framework which provides a way to pull/push data in the most performant fashion. The data management framework is used to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations. 
+
+Dynamics 365 for Common Data Service uses OData APIs along with parallelism to maximize the performance. 
+
+You can use the following settings to tune the performance of Dynamics 365 for Finance and Operations based on load, entity, and resources.
+
+### Exporting data from Dynamics 365 for Finance and Operations:
+
+- Direct export (**skip Staging On**)
+  Make sure the entities used for integration support direct export (**skip Staging On**). This allows export to run in bulk fashion and the staging table is bypassed. If you run with **skip Staging Off**, then it falls back to row by row calls and data is inserted in the staging table. 
+
+- Enable change tracking for entities
+  Change tracking enables incremental export of data from Microsoft Dynamics 365 for Finance and Operations by using data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. Without change tracking, you will do full exports which may affect performance. For complex scenarios, use custom query for change tracking.
+
+### Importing data to Dynamics 365 for Finance and Operations:
+
+- Make sure the entity itself is performant. If possible, create set-based entities.
+
+- If the number of rows to be imported are high and entity does not support set operations: 
+  Data management can be configured to import the entity with parallel tasks. This can be configured in data management (parameters), by configuring the entity execution parameters. This would use batch framework to create parallel tasks, which is based on resource availability to run in parallel.  
+
+- Turning off validations (optional): 
+  While the Data Integrator does not bypass any business logic and validations, you may optionally turn off the ones that are not required to improve performance.
+
+Consider the following tips to ensure performance while importing or exporting data from Dynamics 365 for Customer Engagement environments.
+
+### Importing/Exporting data to/from Dynamics 365 for Customer Engagement
+
+- Ensure indexes are defined for integration keys.
