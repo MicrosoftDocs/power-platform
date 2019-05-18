@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Flow analytics | MicrosoftDocs"
-description:
+description: The admin reports provide a view into environment level usage, errors, service performance.
 ms.custom: ""
-ms.date: 08/08/2018
+ms.date: 05/17/2018
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
