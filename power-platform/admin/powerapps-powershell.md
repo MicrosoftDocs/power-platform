@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 05/10/2019
+ms.date: 05/21/2019
 ms.author: jamesol
 search.audienceType: 
   - admin
@@ -371,6 +371,7 @@ Adds a connector to the ‘Business data only’ group in a given DLP policy. Se
 | 03/07/2019 | Added a cmdlet: Add a canvas app to a Common Data Service solution - SetPowerAppAsSolutionAware  |
 | 04/29/2019 | Revised GCC terminology. |
 | 05/10/2019 | Revised links for Cmdlets available on the PowerShell gallery to remove preset version. |
+| 05/20/2019 | Added support for environment-specific Data Loss Prevention (DLP) policies.  |
 
 ## Questions?
 
