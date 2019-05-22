@@ -1,7 +1,7 @@
 ---
 title: "Common Data Service analytics | MicrosoftDocs"
 ms.custom: ""
-ms.date: 09/27/2018
+ms.date: 05/22/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -342,36 +342,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Storage"></a>   
 
 ## Storage  
- ![Customer Data Service analytics Storage Section](./media/organization-insights-storage-section.png "Customer Data Service analytics Storage Section")  
-
-### About this dashboard  
- This dashboard provides a look at storage used by your tenant and instances.
-
-### What's included in this dashboard  
-
-|Chart element  | Description  |ChartID|
-|----|-----|-----|
-|          [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] Tenant Storage Utilization           | This chart shows the storage used by all the Customer Data Service environments of your tenant out of the total storage allocated to the tenant. | 1C7B6699-9C07-478C-9C17-AF0D17160734 |
-|           Storage by Customer Data Service Environments (MB)           |                   This chart shows the breakdown of the storage used by the Customer Data Service environments of your tenant.                   | 66BF5239-56EB-4979-AC92-177D98C5077B |
-|     Top Tables by Size - Current Customer Data Service Environment     |              This chart shows top 10 largest tables by size and their row count in the Customer Data Service environment database.               | D37D16D2-C616-4F00-9E56-19E6AE218613 |
-|  Top Tables by Row Count - Current Customer Data Service Environment   |                   This chart shows top 10 largest tables by their row count in the Customer Data Service environment database.                   | BE23542E-2E03-42A5-BDF4-70A53DFCB519 |
-|   Common Tables by Size - Current Customer Data Service Environment    |                   This chart shows the size of some common tasks of tables in the Customer Data Service environment database.                    | 8614E00B-28D8-4C41-92E3-9F27AFD28AE7 |
-| Row Count of Common Tables - Current Customer Data Service Environment |              This chart shows the number of rows of some common tasks of tables in the Customer Data Service environment database.               | BE5127CC-1919-4AB4-A582-C5C3B601D456 |
-|                                       Storage by Instance                                       |                                     Storage used by each Customer Data Service environment (refreshed daily)                                     | 5BE3A49A-90EF-43EB-8FFB-FD0FD449F196 |
-|                                        Storage by Tenant                                        |                                                               Storage used by the tenant (refreshed daily)                                                                | AEEE328E-8E4F-4E98-B5A5-1509E7A610A4 |
-
-### Update frequency  
- Storage chart data is updated as follows.  
-
-
-|                                           Chart                                            | Update frequency |
-|--------------------------------------------------------------------------------------------|------------------|
-|        [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] Tenant Storage Utilization        |      1 day       |
-|      Storage Used by Customer Data Service Environments (MB)      |      1 day       |
-|  Top Tables by Size - Current Customer Data Service Environment   |      1 day       |
-| Size of Common Tables - Current Customer Data Service Environment |      1 day       |
-
-<a name="BKMK_Download"></a>   
+For storage information, see [Preview: Common Data Service storage capacity](capacity-storage.md).
 
 ## Download  
  ![Customer Data Service analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service analytics Download Section")  
