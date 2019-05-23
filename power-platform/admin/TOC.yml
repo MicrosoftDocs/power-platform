@@ -127,7 +127,8 @@
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/data-encryption
           - name: Templates
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/download-template-data-import
-
+          - name: Cascading transaction processing
+            href: async-cascading.md
     - name: Platform architecture
       items: 
       - name: About on-premises gateway 
@@ -167,6 +168,8 @@
       - name: Configure environment security
         href: database-security.md
         items: 
+        # - name: Administer without a license
+        #   href: administer-without-license.md
         - name: Data loss prevention policies 
           href: wp-data-loss-prevention.md
         - name: Create a DLP policy
