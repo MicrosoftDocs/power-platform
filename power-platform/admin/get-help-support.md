@@ -2,7 +2,7 @@
 title: "Get Help + Support | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 for Customer Engagement to get resolution for your issue.
 ms.custom: ""
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -42,13 +42,23 @@ An example of solutions provided for Dynamics 365 for Outlook issues:
    - Support
    - Billing
 
--  For the following [support plans](https://www.microsoft.com/en-us/dynamics365/support).
+-  For the following [support plans](https://www.microsoft.com/en-us/dynamics365/support):
    
    - Subscription Support
    - Enhanced Support
    - Professional Direct Support
    - Premier Support
    - Unified Support
+
+> [!NOTE]
+> In the following cases, you might not be able to create a support request or we can't provide relevant solutions:
+> 
+> - There is an issue with your Premier Support contract. Please contact your Technical Account Manager (TAM).
+> - Your Support subscription has expired. Please renew.
+> - We couldn't find your Support plan. 
+>   - If you have a Premier Support plan, please contact your Technical Account Manager (TAM).
+>   - If you have a non-Premier Support plan, please verify the plan is active. For support information, see [Dynamics 365 Community Forums](https://community.dynamics.com/f).
+
 
 ### View solutions or enter a support request through the new support center
 
