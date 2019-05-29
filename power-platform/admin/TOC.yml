@@ -181,8 +181,6 @@
     - name: Management and monitoring
       href: wp-management-monitoring.md
       items: 
-      # - name: Governance considerations
-      #   href: governance-considerations.md
       - name: Working with the Admin Portals 
         href: wp-work-with-admin-portals.md
       - name: PowerShell support for PowerApps (preview) 
@@ -198,8 +196,10 @@
         href: admin-manage-apps.md
       - name: Move an app between tenants or environments 
         href: environment-and-tenant-migration.md
-      # - name: Embed an app in Teams
-      #   href: embed-app-teams.md
+      - name: Embed an app in Teams
+        href: embed-app-teams.md
+      # - name: Audit data and user Activity
+      #  href: audit-data-user-activity.md
       - name: View active users in your tenant
         href: admin-view-user-licenses.md
     - name: Deployment scenarios 
