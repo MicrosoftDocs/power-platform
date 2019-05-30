@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/03/2019
+ms.date: 05/30/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -167,13 +167,15 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Data integration and Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 
-- [Common Data Service analytics](analytics-common-data-service.md)
+- [Common Data Service analytics](analytics-common-data-service.md).
 
 - [Mobile push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications).
 
 - [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
 
 - [Power Platform Admin center](admin-documentation.md): The admin center can be used to [open support tickets](get-help-support.md), but other functionality is currently not available in US Government tenants.
+
+- [Customize a SharePoint list form by using PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form).
 
 ### See also
 [Microsoft Flow US Government](https://docs.microsoft.com/en-us/flow/us-govt)
