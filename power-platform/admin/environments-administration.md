@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2019
+ms.date: 05/30/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -75,7 +75,6 @@ If you are a member of the Global Administrator role of your Azure AD or Office 
 
     ![](./media/environment-admin/Delete-D365AdminCenter.png)
 
-
 ## Delete your environment
 1. In the [PowerApps Admin center][1], click or tap the environment that you want to delete.
 
@@ -87,7 +86,6 @@ If you are a member of the Global Administrator role of your Azure AD or Office 
 
     ![](./media/environment-admin/delete-environment-2.png)
 
-
 ## Create a Common Data Service database for an environment
 If an environment doesn't already have a database, an Environment Admin can create one in the [PowerApps Admin center][1] by following these steps. Only users with a PowerApps Plan 2 license can create Common Data Service databases.
 
@@ -98,7 +96,6 @@ If an environment doesn't already have a database, an Environment Admin can crea
 3. Select **Create a database**.
 
     ![](./media/environment-admin/Create-DB-From-Details.png)
-
 
 After you create a database, choose a security model. For more information, see [Configure database security](database-security.md).
 
@@ -169,6 +166,7 @@ An organization's data must be protected so that it isn't shared with audiences 
 ![](./media/environment-admin/data-policies.png)
 
 ## Frequently asked questions
+
 ### How many environments and databases can I create?
 You can create up to two Trial environments and two Production environments, depending on their license. [Read here](environments-overview.md#creating-an-environment) for more details. 
 Each user can provision databases in two Trial environments and two Production environments, depending on their license. 
@@ -187,7 +185,7 @@ If you want, you can delete an existing environment of that specific type and cr
 If you are getting any other error message or have more questions, please connect with us [here][5].
 
 ### When will my Trial environment expire?   
-Trial environment expires after 30 days of its creation. If you don't want your environment to expire, there will be ways to convert it into a Production environment. This functionality, will be coming soon and we will not expire Trial environments till then.
+Trial environments expire after 30 days from their creation. If you don't want your Trial environments to expire, you can [convert them to Production environments](trial-environments.md#convert-a-trial-environment-to-production). 
 
 ### Does my current database (created with previous version of the Common Data Service) also gets counted in the quota?
 If you had a database (created with previous version of the Common Data Service), they will also get counted with your Production environment quota. If you now create a database in an environment (created prior to March 15, 2018) then it will also get counted as Production environment.
