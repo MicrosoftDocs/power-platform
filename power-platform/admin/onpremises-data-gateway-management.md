@@ -73,6 +73,9 @@ Use **Search** to find gateway clusters and see their details. You can search fo
 
 As a global admin, use **Manage Gateway installers** to manage who can install the On-premises data gateway in your enterprise. 
 
+> [!NOTE]
+> This feature does not apply for On-premises data gateways (personal mode).
+
 1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Data Gateways** from the left-side menu.
