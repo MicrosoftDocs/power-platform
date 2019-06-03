@@ -4,9 +4,10 @@
     href: admin-documentation.md
   - name: Administer Dynamics 365 for Customer Engagement
     href: about-ce-guide.md
-  - name: "Administer PowerApps"
-    href: admin-guide.md
+  - name: Administer PowerApps
     items:
+    - name: Overview
+      href: admin-guide.md
     - name: Get Help + Support 
       href: get-help-support.md
     - name: Getting started
@@ -34,8 +35,9 @@
         - name: Free storage space
           href: free-storage-space.md
       - name: Manage environments
-        href: environments-administration.md
         items:
+        - name: Manage environments in PowerApps
+          href: environments-administration.md
         - name: Environments overview
           href: environments-overview.md
         - name: Regions overview
@@ -57,8 +59,9 @@
         - name: About Trial environments
           href: trial-environments.md     
       - name: Manage settings 
-        href: admin-settings.md
         items:
+        - name: Common Data Service settings
+          href: admin-settings.md        
         - name: Product settings
           items:
           - name: Behavior 
@@ -95,7 +98,7 @@
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles
         - name: Email settings
           items:
-          - name: Email settings
+          - name: Manage email settings
             href: settings-email.md
           - name: Email tracking settings
             href: settings-email-tracking.md
@@ -148,19 +151,21 @@
       - name: Solution Packages 
         href: wp-solution-packages.md
     - name: Licensing and license management 
-      href: wp-license-management.md
       items:
+      - name: About licensing and license management
+        href: wp-license-management.md      
       - name: Licensing overview
         href: pricing-billing-skus.md
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Purchase PowerApps
         href: signup-for-powerapps-admin.md
-      - name:	FAQs and more information 
+      - name: FAQs and more information 
         href: wp-licensing-faq.md
     - name: Security
-      href: wp-security.md
       items:
+      - name: Overview
+        href: wp-security.md     
       - name: Controlling access to PowerApps 
         href: wp-controlling-access.md
       - name: Common Data Service 
@@ -179,13 +184,15 @@
         - name: Introduction to data groups
           href: introduction-to-data-groups.md
     - name: Management and monitoring
-      href: wp-management-monitoring.md
       items: 
+      - name: Overview
+        href: wp-management-monitoring.md      
       - name: Working with the Admin Portals 
         href: wp-work-with-admin-portals.md
       - name: PowerShell support for PowerApps (preview) 
-        href: powerapps-powershell.md   
         items:
+        - name: About PowerShell support
+          href: powerapps-powershell.md           
         - name: Automation of tasks with PowerShell 
           href: wp-task-automation-powershell.md
       - name: Automation of tasks with Microsoft Flow 
@@ -205,8 +212,9 @@
     - name: Deployment scenarios 
       href: wp-deployment-scenarios.md
     - name: Application Lifecycle Management 
-      href: wp-application-lifecycle-management.md
       items:
+      - name: About Application Lifecycle Management 
+        href: wp-application-lifecycle-management.md
       - name: Activity logging for PowerApps 
         href: logging-powerapps.md
     - name: Data integration
@@ -215,19 +223,20 @@
         href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
-      - name: Responding to DSR requests
+    - name: GDPR - Responding to DSR requests
+      items:
+      - name: System-generated logs 
+        href: powerapps-gdpr-dsr-guide-systemlogs.md
+      - name: Data integrations for Common Data Service 
+        href: data-integration-gdpr-dsr-guide.md
+      - name: PowerApps customer data 
         items:
-        - name: System-generated logs 
-          href: powerapps-gdpr-dsr-guide-systemlogs.md
-        - name: Data integrations for Common Data Service 
-          href: data-integration-gdpr-dsr-guide.md
-        - name: PowerApps customer data 
-          href: powerapps-gdpr-dsr-guide.md
-          items:
-          - name: Export data 
-            href: powerapps-gdpr-export-dsr.md
-          - name: Delete data 
-            href: powerapps-gdpr-delete-dsr.md
+        - name: Overview
+          href: powerapps-gdpr-dsr-guide.md        
+        - name: Export data 
+          href: powerapps-gdpr-export-dsr.md
+        - name: Delete data 
+          href: powerapps-gdpr-delete-dsr.md
         - name: Common Data Service customer data 
           href: common-data-service-gdpr-dsr-guide.md
     - name: Compliance and data privacy 
