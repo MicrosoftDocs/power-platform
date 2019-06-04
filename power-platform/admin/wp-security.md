@@ -25,7 +25,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-In this section of the paper we are going to look at how the PowerApps platform handles security from user authentication to authorization which allows users perform actions with data and services. Conceptually, security in the platform is there to ensure users can do the work they need to do with the least amount of friction, while still protecting the data and services. Security in the platform can be implemented as a simple security model with broad access all the way to highly complex security models where users have specific record and field level access. The following is a high-level look at how a security model is implemented in PowerApps.
+In this section we are going to look at how the PowerApps platform handles security from user authentication to authorization which allows users perform actions with data and services. Conceptually, security in the platform is there to ensure users can do the work they need to do with the least amount of friction, while still protecting the data and services. Security in the platform can be implemented as a simple security model with broad access all the way to highly complex security models where users have specific record and field level access. The following is a high-level look at how a security model is implemented in PowerApps.
 
 - Users are authenticated by Azure Active Directory (Azure AD)
 - Licensing is the first control-gate to allowing access to PowerApps components

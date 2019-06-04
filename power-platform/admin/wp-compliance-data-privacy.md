@@ -31,7 +31,7 @@ To help your organization comply with national, regional, and industry-specific 
 
 ## Trust Center
 
-The Microsoft Trust Center (https://www.microsoft.com/en-us/trustcenter) is a centralized resource for obtaining information on Microsoft’s portfolio of products. This includes information on security, privacy, compliance, and transparency. While this paper may contain some subset of this information for PowerApps, it is important to always refer to the Microsoft Trust Center for the most up to date authoritative information.
+The Microsoft Trust Center (https://www.microsoft.com/en-us/trustcenter) is a centralized resource for obtaining information on Microsoft’s portfolio of products. This includes information on security, privacy, compliance, and transparency. While this content may contain some subset of this information for PowerApps, it is important to always refer to the Microsoft Trust Center for the most up to date authoritative information.
 
 For quick reference, you can find the Trust Center Information for the Microsoft Power Platform here https://www.microsoft.com/en-us/TrustCenter/CloudServices/business-application-platform/default.aspx This will include information on PowerApps, Microsoft Flow and Power BI.
 
@@ -54,7 +54,7 @@ By default, Microsoft stores and manages the database encryption keys for your i
 
 ## Resources to manage GDPR Compliance
 
-The European Union General Data Protection Regulation (GDPR) is one of the newest privacy regulations enacted that gives rights to people to manage their personal data. In this section we will look at some of the tools and resources available for the Microsoft Power Platform to assist administrators in their efforts to comply with GDPR. Some of these resources and tools may also helpful to assist you in other data privacy related tasks not directly related to GDPR. A complete discussion of GDPR is beyond the scope of this paper, however in this section we will focus on the tools and resources to support your efforts. Additionally, Microsoft has a section on the trust center dedicated to GDPR resources and information that can be helpful. You can find that here https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx
+The European Union General Data Protection Regulation (GDPR) is one of the newest privacy regulations enacted that gives rights to people to manage their personal data. In this section we will look at some of the tools and resources available for the Microsoft Power Platform to assist administrators in their efforts to comply with GDPR. Some of these resources and tools may also helpful to assist you in other data privacy related tasks not directly related to GDPR. A complete discussion of GDPR is beyond the scope of this content, however in this section we will focus on the tools and resources to support your efforts. Additionally, Microsoft has a section on the trust center dedicated to GDPR resources and information that can be helpful. You can find that here https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx
 
 First, let’s review at some of GDPR’s terminology that matters in this context:
 

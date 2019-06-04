@@ -27,7 +27,7 @@ search.app:
 
 Organizations can obtain licenses by either licensing Microsoft PowerApps or Flow specifically or by it being included in the license of another Microsoft cloud service offering. For example, both Office 365 and Dynamics 365 provide entitlements for PowerApps and Microsoft Flow. As with most Microsoft licensing, you can mix and match for users as appropriate giving some additional entitlements.
 
-Regardless of how obtained all licenses are user based. In the rest of this section we will highlight some of the key points of licensing, but it is not the product licensing documentation, you should consult that for any of the latest details. Links for pricing and specific plan details can be found later in this section of the paper.
+Regardless of how obtained all licenses are user based. In the rest of this section we will highlight some of the key points of licensing, but it is not the product licensing documentation, you should consult that for any of the latest details. Links for pricing and specific plan details can be found later in this section.
 
 First, let’s look at what you, as the administrator, will need to have the best administrator experience. While you can do basic administration with any of the licenses with PowerApps entitlements, the best experience is with PowerApps P2 and that is what Microsoft recommends for administrators. This provides the ability to create additional environments as well as Common Data Service. It also provides the best experience in the administration centers for controlling the environments.
 
