@@ -25,7 +25,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Environments are containers that administrators can use to manage apps, flows, connections, and other assets; along with permissions to allow organization users to use the resources. Environments are tied to a geographic location that is configured at the time the environment is created. Environments can be used to target different audiences and/or for different purposes such as dev, test and production. The actual number and purpose of environments in your tenant is up to you as an administrator. In the ALM section of this paper we will cover some potential scenarios to help you choose what is best for you.
+Environments are containers that administrators can use to manage apps, flows, connections, and other assets; along with permissions to allow organization users to use the resources. Environments are tied to a geographic location that is configured at the time the environment is created. Environments can be used to target different audiences and/or for different purposes such as dev, test and production. The actual number and purpose of environments in your tenant is up to you as an administrator. In the ALM section we will cover some potential scenarios to help you choose what is best for you.
 
 Common Data Service databases are created in the context of environments. Each environment, if you are licensed for Common Data Service, can have at most one database. If your organization signs up one of the Dynamics 365 Customer Engagement apps an environment with a Common Data Service database will be created to support that application.
 

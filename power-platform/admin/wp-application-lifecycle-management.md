@@ -25,7 +25,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Application Lifecycle Management (ALM) is important as the applications your organization builds becomes more complex and as more of your company depends on their stability. In other parts of the paper we discussed some of the ALM building blocks that just happen such as versioning of PowerApps canvas apps. We also covered some of the self-service actions that makers can do such as exporting and importing their Common Data Service solutions. In this section we are going to have a more cohesive discussion about ALM bringing together some of these individual concepts and using them to handle more complex scenarios.
+Application Lifecycle Management (ALM) is important as the applications your organization builds becomes more complex and as more of your company depends on their stability. In other sections we discussed some of the ALM building blocks that just happen such as versioning of PowerApps canvas apps. We also covered some of the self-service actions that makers can do such as exporting and importing their Common Data Service solutions. In this section we are going to have a more cohesive discussion about ALM bringing together some of these individual concepts and using them to handle more complex scenarios.
 
 Let’s look first at things you should consider as an administrator to consider to help guide the application through its lifecycles from new to production and then ongoing maintenance and enhancements. For purposes of this section, application refers to the whole set of components form PowerApps canvas or model-driven apps, flows and any Common Data Service customizations.
 

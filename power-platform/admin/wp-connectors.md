@@ -57,7 +57,7 @@ One of the more recent additions is the ability to share a flow with a SharePoin
 
 ## Restricting Use of Connectors
 
-Within each environment using data loss prevention policies you can limit what connectors can be used together in a single application or flow. More on this in the section where we cover Data Loss Prevention (DLP) policies in this paper.
+Within each environment using data loss prevention policies you can limit what connectors can be used together in a single application or flow. More on this in the section where we cover Data Loss Prevention (DLP) policies.
 
 ## Connector Authentication Patterns
 
