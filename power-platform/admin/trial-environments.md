@@ -100,7 +100,7 @@ You can create an individual environment by signing up for the [PowerApps Commun
 
 ### How do I identify my plan(s)?
 
-To determine your plan(s), select the **Gear** icon in the upper-right corner of the PowerApps site, and then select **Plan(s)**.
+To determine your plan(s), select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the PowerApps site, and then select **Plan(s)**.
 
 > [!div class="mx-imgBorder"] 
 > ![Select Plans](media/powerapps-plans.png "Select Plans")
