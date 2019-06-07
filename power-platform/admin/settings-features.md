@@ -2,7 +2,7 @@
 title: "Manage email feature settings | MicrosoftDocs"
 description: View and manage feature settings for Common Data Service.
 ms.custom: ""
-ms.date: 11/16/2018
+ms.date: 06/07/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -40,6 +40,8 @@ Make sure you have the System Administrator or System Customizer security role o
 > [!div class="mx-tableFixed"]
 > |Settings|Description|  
 > |--------------|-----------------|  
+> |**AI Builder (preview)**  |   |
+> |Create AI models in PowerApps  | Default: On. If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](https://docs.microsoft.com/ai-builder/administer)  |
 > |**Embedded content**||  
 > |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)|  
 > |Bing Maps|Default: Off. If **On**, Dynamics 365 for Customer Engagement apps (on-premises) users will need to enter a Bing Maps key. Customer Engagement apps users don’t need to enter a key. |  
