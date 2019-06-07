@@ -2,11 +2,12 @@
 title: Configure environment security | Microsoft Docs
 description: This topic explains how to configure environment security.
 author: manasmams
+ms.reviewer: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 06/07/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -87,29 +88,31 @@ For more information about access and scope privileges, see [Security roles](htt
 
     ![](./media/environment-admin/choose-environment-updated.png)
 
-2. Click on the link in **Details** tab to manage the environment in Dynamics 365 admin center.
+2. Click on the **Dynamics 365 Administration Center** link in the **Details** tab to manage the environment in the Dynamics 365 admin center.
 
-3. Select the instance (with the same name of environment) and click on Open
+3. Select the instance (with the same name of environment) and select **Open**.
 
     ![](./media/database-security/glados-instance-list.png)
 
-4. In the header, click on the **Settings** and select **Security**
+4. If you see published apps and tiles, look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
+
+5. In the menu bar, select **Settings** > **Security**. 
 
     ![](./media/database-security/dyn365-settings-security.png)
 
-5. Select **Security roles**
+6. Select **Security roles**.
 
     ![](./media/database-security/dyn365-securityroles.png)
 
-6. Click on **New**
+7. Select **New**.
 
-7. From the security role designer, you select the actions, such as read, write, or delete, and the scope for performing that action.
+8. From the security role designer, enter a role name in the **Details** tab. From the other tabs, you'll select the actions and the scope for performing that action.
 
-8. Select the tab and search for your entity e.g. **Custom Entities** tab, for setting permissions on a custom entity.
+9. Select a tab and search for your entity; for example - **Custom Entities** tab, for setting permissions on a custom entity.
 
-9. Select the privileges **Read, Write, Append**
+10. Select the privileges **Read, Write, Append**.
 
-10. Select **Save and Close**.
+11. Select **Save and Close**.
 
 ## Minimum privileges to run app
 When you create a custom security role, you need to include a set of minimum privileges into the security role in order for a user to run an app. We've created a solution you can import that provides a security role with the required minimum privileges.  
