@@ -241,8 +241,8 @@
       href: wp-compliance-data-privacy.md
     - name: PowerApps US Government
       href: powerapps-us-government.md
-    - name: Building a Center of Excellence
-      href: build-center-of-excellence.md
+  #  - name: Building a Center of Excellence
+  #    href: build-center-of-excellence.md
   - name: Administer Microsoft Flow
     href: about-flow-guide.md
   - name: Administer Power BI
