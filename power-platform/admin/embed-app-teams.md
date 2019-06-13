@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 06/13/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -142,22 +142,27 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
    > [!div class="mx-imgBorder"] 
    > ![Add valid domains](./media/add-valid-domains.png "Add valid domains")
 
-9. Under **Finish**, select **Test and distribute**, and then select **Download**.
+9. To set device permissions for your app, under **Device permissions** select **Set up**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Download app package](./media/download-app-package.png "Download app package")
+   > ![Device permissions](./media/device-permissions.png "Device permissions")
 
-10. Go to **Store** > **Upload a custom app** > **Upload for** [your tenant name].
+10. Under **Finish**, select **Test and distribute**, and then select **Download**.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Download app package](./media/download-app-package.png "Download app package")
+
+11. Go to **Store** > **Upload a custom app** > **Upload for** [your tenant name].
 
     > [!div class="mx-imgBorder"] 
     > ![Upload for tenant](./media/upload-for-tenant.png "Upload for tenant")
 
-11. Locate your app file and select it. Then, navigate to your team and select **+**.
+12. Locate your app file and select it. Then, navigate to your team and select **+**.
 
     > [!div class="mx-imgBorder"] 
     > ![Add app](./media/add-app-all-tabs.png "Add app")
 
-12. You app will appear as a tile under **All Tabs**. Search for your app, select it, and then select **Save**.
+13. You app will appear as a tile under **All Tabs**. Search for your app, select it, and then select **Save**.
 
     > [!div class="mx-imgBorder"] 
     > ![Add app as tab](./media/add-app-as-tab.png "Add app as tab")
