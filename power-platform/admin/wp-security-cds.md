@@ -17,7 +17,7 @@ search.app:
 ---
 # Security concepts in Common Data Service
 
-One of the key features of the Common Data Service is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Common Data Service database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration as well as troubleshooting security access related issues.
+One of the key features of [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Common Data Service database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration as well as troubleshooting security access related issues.
 
 ## Role based security
 
