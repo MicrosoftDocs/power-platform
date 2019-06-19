@@ -21,7 +21,7 @@ search.app:
 
 This section provides information on how Common Data Service, the underlying data platform for PowerApps, handles security from user authentication to authorization which allows users to perform actions with data and services. Conceptually, security in Common Data Service is there to ensure users can do the work they need to do with the least amount of friction, while still protecting the data and services. Security in Common Data Service can be implemented as a simple security model with broad access all the way to highly complex security models where users have specific record and field level access. 
 
-The following is a high-level look at how a security model is implemented in Common Data Service.
+The following is a high-level overview at how a security model is implemented in Common Data Service.
 
 - Users are authenticated by Azure Active Directory (Azure AD).
 - Licensing is the first control-gate to allowing access to PowerApps components.
