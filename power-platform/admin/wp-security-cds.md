@@ -1,13 +1,11 @@
 ---
-title: "Common Data Service | MicrosoftDocs"
-description: Provides detailed information about the security model in Common Data Service.
+title: "Security concepts in Common Data Service | MicrosoftDocs"
+description: Provides detailed information about the security model and concepts in Common Data Service.
 ms.custom: ""
-ms.date: 02/26/2019
-ms.reviewer: ""
+ms.date: 06/18/2019
+ms.reviewer: "jimholtz"
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.topic: "article"
 ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
 author: "jimholtz"
 ms.author: "jimholtz"
@@ -17,11 +15,9 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Common Data Service
+# Security concepts in Common Data Service
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-One of the key features of the Common Data Service is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Common Data Service database in the environment. As an administrator you likely will not be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration as well as troubleshooting security access related issues.
+One of the key features of [Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Common Data Service database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration as well as troubleshooting security access related issues.
 
 ## Role based security
 
@@ -89,3 +85,6 @@ In addition, you would assign any security roles that user needs. You would also
 If you have used Field Level security, you would need to associate the user or a team of the user to one of the Field Security Profiles you created.
 
 Security is a complex topic and is best accomplished as a joint effort between the application makers and the team administering the users permissions. Any major changes should be coordinated well in advance of deploying the changes into the environment.
+
+### Related topics
+[Configure environment security](database-security.md)

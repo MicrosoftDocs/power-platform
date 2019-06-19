@@ -164,9 +164,9 @@
       items:
       - name: Overview
         href: wp-security.md     
-      - name: Controlling access to PowerApps 
+      - name: Controlling access 
         href: wp-controlling-access.md
-      - name: Common Data Service 
+      - name: Security concepts 
         href: wp-security-cds.md
       - name: Configure environment security
         href: database-security.md
