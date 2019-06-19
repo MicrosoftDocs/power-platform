@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/30/2019
+ms.date: 06/19/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -141,6 +141,7 @@ You use a different set of URLs to access PowerApps US Government, as shown in t
 | <https://web.powerapps.com>    | <https://gov.web.powerapps.us>        |
 | <https://create.powerapps.com> | <https://gov.create.powerapps.us>     |
 | <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us>      |
+| <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors>  |
 
 ## Connectivity between PowerApps US Government and public Azure Cloud Services
 
