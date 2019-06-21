@@ -10,6 +10,8 @@
       href: admin-guide.md
     - name: Get Help + Support 
       href: get-help-support.md
+    - name: Support overview
+      href: support-overview.md
     - name: Getting started
       items:
       - name: PowerApps Platform overview
