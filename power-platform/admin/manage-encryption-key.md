@@ -110,7 +110,7 @@ For more information about generating and transferring an HSM-protected key over
 2.  [Activate an encryption key for a tenant](#activate-an-encryption-key-for-a-tenant) 
 3.	[Manage encryption for an environment](#manage-encryption-for-an-environment) 
 
-Administrators can use the [Power Platform Admin Center (preview)](https://admin.powerplatform.com) or the Dynamics 365 for Customer Engagement [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/en-us/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
+Administrators can use the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments) or the Dynamics 365 for Customer Engagement [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/en-us/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
   
 ### Generate or upload the encryption key for a tenant  
 All encryption keys are stored in the Azure Key Vault, and there can only be one active key at any time. Since the active key is used to encrypt all the environments in the tenant, managing the encryption is operated at the tenant level. Once the key is activated, each individual environment can then be selected to use the key for encryption. 
@@ -119,7 +119,7 @@ Use this procedure to set the manage key feature the first time for an environme
 
 > [!WARNING]
 > When you perform the steps described here for the first time you are opting in to self-managing your encryption keys. More information: [Understand the potential risk when you manage your keys](#understand-the-potential-risk-when-you-manage-your-keys)  
-1. Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.com).  
+1. Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments).  
   
 2. Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar. 
 
@@ -156,7 +156,7 @@ To perform this task using PowerShell, see [New-CRMImportProtectionKey](/powersh
 ### Activate an encryption key for a tenant
 Once an encryption key is generated or uploaded for the tenant, it can be activated. 
 
-1.	Sign in to the [Power Platform Admin Center (preview)](https://admin.powerapps.com).  
+1.	Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments).  
 2.	Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar.
 3.  Select **Confirm** to acknowledge the manage key risk.
 4.  Select a key that has an **Available** state and then select **Activate key** on the toolbar.
@@ -180,7 +180,7 @@ To perform this task using PowerShell, see [Set-CrmProtectWithTenantKey](/powers
 By default, each environment is encrypted with the Microsoft-provided encryption key. Once an encryption key is activated for the tenant, administrators can elect to change the default encryption to use the activated encryption key. To use the activated key, follow these steps.
 
 #### Apply encryption key to an environment
-1.  Sign in to the [Power Platform Admin Center (preview)](https://admin.powerapps.com).  
+1.  Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments).  
 2.	Select the **Environments** tab.
 3.  Open a **Microsoft-provided** encrypted environment. 
 4.  Select **See all**. 
@@ -192,7 +192,7 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 #### Return a managed encryption key back to Microsoft-provided encryption key
  Returning to the Microsoft-provided encryption key configures the environment back to the default behavior where [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] manages the encryption key for you.  
   
-1.	Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.com).
+1.	Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments).
 2.	Select the **Environments** tab, and then select an environment that is encrypted with a self-managed key.
 3.	Select **See all**.
 4.  In the **Environment Encryption** section, select **Manage**, and then select **Confirm**. 
