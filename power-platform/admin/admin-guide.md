@@ -2,7 +2,7 @@
 title: "Administer PowerApps | MicrosoftDocs"
 description: PowerApps administrators can use the PowerApps Admin center to manage environments and settings for PowerApps.
 ms.custom: ""
-ms.date: 01/28/2019
+ms.date: 06/26/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -29,4 +29,5 @@ Features from the PowerApps Admin center are being moved to the Power Platform A
 - [What's the role of a PowerApps administrator?](overview-role-powerapps-admin.md)
 
 ### See also
-[Reference: Use the various admin centers](admin-centers.md)
+[Reference: Use the various admin centers](admin-centers.md)<br />
+[Reference: Videos and PowerPoint presentations](videos.md)
