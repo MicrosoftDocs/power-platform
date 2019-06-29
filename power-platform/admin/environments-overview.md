@@ -116,6 +116,9 @@ In PowerApps Admin center,  you can manage all of the environments that you have
 * Set database security policies (as open or restricted by database roles). For more information, see [Configure database security](database-security.md).
 * Members of the Azure AD tenant Global administrator role (includes Office 365 Global admins) can also manage all environments that have been created in their tenant and set tenant-wide policies from the PowerApps Admin center.
 
+### See also
+[Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/power-platform/create-manage-environments)
+
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com
 [2]: https://web.powerapps.com
