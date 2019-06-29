@@ -56,3 +56,5 @@ You do however have the option to manually take a backup. A great use for this i
 
 Once the manual backup is completed it will show in the list of other backups allowing you to select it as the restore point.
 
+### See also
+[Microsoft Learn: Introduction to Common Data Service](https://docs.microsoft.com/learn/power-platform/intro-common-data-service/)

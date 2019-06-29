@@ -100,3 +100,6 @@ Applications that use the Common Data Service connector currently only can commu
 ## Impact of multiple environments on Common Data Service
 
 When thinking about how to organize your environments you should consider where your data lives. Having a single production environment with your Common Data Service is the simplest configuration as it makes accessing data from apps the easiest. Having multiple environments, each with their own Common Data Service database, might make sense in a few different scenarios. First, users have data that is geographically separated, and they don’t share across those boundaries. Second, data from different applications that have conflicting incompatible use of Common Data Service. Third, where users are building personal or team productivity applications that need Common Data Service data but as an organization you aren’t ready to mix that with the rest of your enterprise data.
+
+### See also
+[Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/power-platform/create-manage-environments)
