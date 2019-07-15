@@ -1,13 +1,13 @@
 ---
 title: Licensing overview | Microsoft Docs
 description: Overview of licensing in PowerApps.
-author: jamesol-msft
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/04/2019
-ms.author: jamesol
+ms.date: 07/15/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -181,7 +181,7 @@ Per-user licenses come with included capacity for resources used when an app or 
 
 When the tenant’s capacity is exhausted, customers may purchase additional capacity through add-on licenses. Subscription add-ons apply across tenant and are not tied to a specific user. Subscription add-ons can be purchased at any time and remain a part of the subscription for the remainder of the subscription term.    
 
-|Add-on capacity per tenant/month   |  |Maximum per tenant    |
+|PowerApps   |Add-on capacity per tenant/month  |Maximum per tenant    |
 |---------|---------|---------|
 |Common Data Service Database capacity      | $40/GB        | 4TB/environment        |
 |Common Data Service File capacity      | $2/GB        | n/a         |
