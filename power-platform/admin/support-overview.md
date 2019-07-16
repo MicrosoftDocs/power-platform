@@ -2,7 +2,7 @@
 title: "Dynamics 365 Support Overview | MicrosoftDocs"
 description: Information on support for Dynamics 365
 ms.custom: ""
-ms.date: 06/21/2019
+ms.date: 07/15/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -23,35 +23,37 @@ search.app:
 
 # Dynamics 365 support overview
 
+## About Dynamics 365 Support
+
 ### Where is Dynamics 365 support available? 
 
-Support is available in markets where Dynamics 365 Online services are offered. Some specific services might not be covered in all regions immediately after General Availability (GA).
+Support is available in markets where Dynamics 365 Online services are offered. Some specific services might not be covered in all regions immediately after general availability (GA).
 
 ### For which languages does Microsoft provide support? 
 
-Microsoft provides support in English globally and provides additional languages within certain regions. These additional languages include: Spanish, French, German, Italian, Portuguese, Traditional Chinese, Simplified Chinese, and Japanese.
-
+Microsoft provides support in English globally and provides additional languages within certain regions. These additional languages include: Japanese, Spanish, French, German, Italian, Portuguese, Traditional Chinese, and Simplified Chinese.
 
 |English  |Japanese  |Spanish, French, German, Italian, Portuguese  |Traditional Chinese, Simplified Chinese  |
 |---------|---------|---------|---------|
-|<sup>*</sup> Provided globally all day, every day   |<sup>*</sup> Provided to customers in Japan all day, every day        |Available to customers in Europe/Middle East/Africa region during that region’s business hours <br />Spanish/Portuguese available to customers in South America during that region’s business hours   | Available to customers in Asia/Pacific region during that region’s business hours        |
+|<sup>*</sup>Provided globally all day, every day   |<sup>*</sup>Provided to customers in Japan all day, every day        |Available to customers in Europe/Middle East/Africa regions during those regions' business hours <br />Spanish/Portuguese available to customers in South America during that region’s business hours   | Available to customers in Asia/Pacific region during that region’s business hours        |
 
 <sup>*</sup>24/7 (all day, every day) support is available based on issue severity and your support offering.
 
-**Note**: Translation Services may be available to assist with additional languages outside normal business hours.
+> [!NOTE]
+> Translation services might be available to assist with additional languages outside normal business hours.
 
 ### Do I get 24/7 support? 
 
-- Microsoft provides 24/7 support for all Severity A issues and may provide 24/7 assistance for issues of other severity based on your support offering. 
-- For those issues that do not qualify for 24/7 support, Microsoft provides assistance during local business hours only.
+- Microsoft provides all day, every day support for all Severity A issues and might provide all day, every day assistance for issues of other severity based on your support offering. 
+- For those issues that do not qualify for all day, every day support, Microsoft provides assistance during local business hours only.
 
 ### What hours are considered local business hours for support? 
 
-For most countries, business hours are from 9:00 AM to 5:00 PM during weekdays (weekends and holidays excluded). For North America, business hours are defined as 6:00 AM to 6:00 PM Pacific Time, Monday through Friday, excluding holidays. In Japan, business hours are from 9:00 AM to 5:30 PM weekdays. 
+For most countries, business hours are from 9 AM to 5 PM weekdays (weekends and holidays excluded). For North America, business hours are defined as 6 AM to 6 PM Pacific Time, Monday through Friday, excluding holidays. In Japan, business hours are from 9 AM to 5:30 PM weekdays. 
 
 ### Do I need a support plan if I need assistance with a technical issue experienced with Dynamics 365? 
 
-Yes, you need a support plan to receive one-on-one technical support. Some Dynamics 365 Online subscriptions include subscription support plans. More information about the existing support plans can be found at the [Dynamics 365 Support Plans](https://dynamics.microsoft.com/support/plans/) page. The following table outlines the best way to submit a new support request based on your product/service and customer support plan. Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the Premier support path listed in the table, as applicable.
+Yes, you need a support plan to receive one-on-one technical support. Some Dynamics 365 Online subscriptions include subscription support plans. You can find more information about the existing support plans at [Dynamics 365 Support Plans](https://dynamics.microsoft.com/support/plans/). The following table outlines the best way to submit a new support request based on your product or service and customer support plan. Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the Premier support path listed in the table, as applicable.
 
 <table style="width:100%">
   <tr>
@@ -62,7 +64,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some Dynam
     <th></th>
   </tr>
   <tr> 
-    <td width="30%">Customer Engagement and AI apps including Mixed reality apps and Insights apps</td>
+    <td width="30%">Customer Engagement and AI apps including mixed reality apps and Insights apps</td>
     <td width="70%" colspan="4"><a href="https://admin.powerplatform.microsoft.com">Power Platform Admin center</a></td>
   </tr>
   <tr>
@@ -89,7 +91,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some Dynam
 
 ### What support is included with a Dynamics 365 support plan? 
 
-- We have designed our Dynamics 365 support plans to meet different business needs. All support plans provide access to Technical Support for break-fix issues. Higher tiers of support plans offer Technical Support on a 24/7 basis, faster initial response times and access to Advisory Support, and other benefits. More information about the existing support plans can be found at the [Dynamics 365 Support Plans](https://dynamics.microsoft.com/support/plans/) page.
+- We have designed our Dynamics 365 support plans to meet different business needs. All support plans provide access to Technical Support for break-fix issues. Higher tiers of support plans offer Technical Support on an all day, every day basis, faster initial response times and access to Advisory Support, and other benefits. You can find more information about the existing support plans at [Dynamics 365 Support Plans](https://dynamics.microsoft.com/support/plans/).
 - Dynamics 365 is covered by the Subscription, Professional Direct, Premier, and Unified support plans.
 
 ### What is a break-fix issue? 
@@ -99,7 +101,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some Dynam
 
 ### How does Professional Direct Limited Advisory support compare to Premier Advisory support? 
 
-Professional Direct (ProDirect) Advisory support provides you access to Dynamics 365 Support guidance based on (1) publicly available, best practices documentation regarding Dynamics 365 and (2) information from the Dynamics 365 Forums. ProDirect advisors offer you support based on their access to Microsoft documentation, to the Dynamics 365 support engineers, and also to the Dynamics 365 product group. Best practices guidance might include:
+Professional Direct (ProDirect) Limited Advisory support provides you access to Dynamics 365 Support guidance based on (1) publicly available, best practices documentation regarding Dynamics 365 and (2) information from the Dynamics 365 Forums. ProDirect advisors offer you support based on their access to Microsoft documentation, to the Dynamics 365 support engineers, and also to the Dynamics 365 product group. Best practices guidance might include:
 
 - Planning for deployments and migrations.
 - Boosting performance.
@@ -108,15 +110,15 @@ Professional Direct (ProDirect) Advisory support provides you access to Dynamics
 
 ProDirect, however, is more limited than Premier Advisory Support. ProDirect advisors do not provide detailed advisory assistance specific to an individual customer, such as design, architecture, or code reviews; detailed instructions for application or configuration tuning (for example, performance tuning); or the verification of specifications. ProDirect does not provide onsite support or engage in implementation activities such as, but not limited to, coding or configuration for customer development or deployment on Dynamics 365.
 
-### What is a Preview (beta) service or feature? 
+### What is a preview (beta) service or feature? 
 
 Microsoft may provide access to Dynamics 365 preview, beta, or other prerelease features, services, software, or regions, to obtain feedback and for evaluation purposes. There are many different kinds of preview services and features for Dynamics 365, with service availability and program access being the biggest differentiators:
 
-- Public Preview: Made available to Dynamics 365 subscribers through the Dynamics 365 admin center, these services are intended to give subscribers an early look into what is coming and a chance to test upcoming services and features.
-- Private Preview: Provided only to a small subset of customers, in direct contact with the Dynamics 365 engineering teams, focused on direct and constant feedback during the development phase of a service.
-- Limited Preview: A fixed and limited number of customers can have access to this preview program, and once a maximum threshold is met, no more users are allowed into the program.
+- **Public Preview**: Made available to Dynamics 365 subscribers through the Dynamics 365 admin center, these services are intended to give subscribers an early look into what is coming and a chance to test upcoming services and features.
+- **Private Preview**: Provided only to a small subset of customers, in direct contact with the Dynamics 365 engineering teams, focused on direct and constant feedback during the development phase of a service.
+- **Limited Preview**: A fixed and limited number of customers can have access to this preview program, and once a maximum threshold is met, no more users are allowed into the program.
 
-When Microsoft offers you early access to Dynamics 365 preview services and features, they are subject to reduced or different service terms as set forth in your service agreement and the preview supplemental terms. Preview services and features are provided “as-is,” “with all faults,” and “as available,” and are excluded from the Service SLAs or any Limited Warranties provided by Microsoft for Dynamics 365 Services released to general availability (GA), and are made available to you on the condition that you agree to these terms of use, which supplement your agreement governing use of Dynamics 365.
+When Microsoft offers you early access to Dynamics 365 preview services and features, these preview services and features are subject to reduced or different service terms as set forth in your service agreement and the preview supplemental terms. Preview services and features are provided “as-is,” “with all faults,” and “as available,” and are excluded from the Service SLAs or any Limited Warranties provided by Microsoft for Dynamics 365 Services released to general availability (GA), and are made available to you on the condition that you agree to these terms of use, which supplement your agreement governing use of Dynamics 365.
 
 ### Do Dynamics 365 support plans cover preview (beta) services or features? 
 
@@ -132,7 +134,7 @@ Public preview and/or beta services may be supported through our [forums](https:
 
 |Service  |Support portal  |
 |---------|---------|
-|Customer Engagement and AI apps including Mixed reality apps and Insights apps   |<a href="https://admin.powerplatform.microsoft.com">Power Platform Admin center</a>       |
+|Customer Engagement and AI apps including mixed reality apps and Insights apps   |[Power Platform Admin center](https://admin.powerplatform.microsoft.com)         |
 |Dynamics 365 for Finance and Operations (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
 |Dynamics 365 Business Central      | Support is provided through partners only. Contact your Cloud Solution Provider (CSP) for assistance.        |
 |**Product**    |     |
@@ -161,7 +163,7 @@ If you cannot submit a support request online, you can find a local support phon
 
 ### How do I get support if I don’t have a Dynamics 365 subscription yet, and I get an error message while creating one? 
 
-You can open a Subscription Management support request through the [Microsoft 365 Admin Portal](https://portal.office.com/), as long as you have a tenant administrator login to the portal. To open a Subscription Management support request, sign in to the [Microsoft 365 Admin Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane, and provide the additional information needed to submit the support request.
+You can open a Subscription Management support request through the [Microsoft 365 Admin Portal](https://portal.office.com/), as long as you have a tenant administrator sign-in credentials to the portal. To open a Subscription Management support request, sign in to the [Microsoft 365 Admin Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane, and provide the additional information needed to submit the support request.
 
 ### Who can submit a support request? 
 
@@ -175,7 +177,7 @@ To grant permission, you must have a tenant administrator role on the tenant tha
 
 You can get support from Dynamics 365 in two ways:
 
-- Being an Administrator of your customer’s tenant, you can use or purchase a Dynamics 365 Support plan for that account, as any subscription you own under the same account is covered by the same support plan. You can also use your Partner benefits (for example, Advanced Support for Partners or Microsoft Partner Network Support) to submit a support request.
+- Being an administrator of your customer’s tenant, you can use or purchase a Dynamics 365 Support plan for that account, as any subscription you own under the same account is covered by the same support plan. You can also use your Partner benefits (for example, Advanced Support for Partners or Microsoft Partner Network Support) to submit a support request.
 - Get support using your customer’s account. To do so, the Partner (you) must have administrator or owner privileges to the customer’s subscription, most often through being a [Delegated Administrator](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/partners#provide-delegated-administration) on the tenant. The Partner can then use the customer’s subscription, or the Partner can use their Dynamics 365 Support Benefits (for example, Advanced Support for Partners or Microsoft Partner Network Support) to submit a support request.
 
 ### What is Initial Response Time, and how quickly can I expect to hear back from someone after submitting my support request? 
@@ -199,22 +201,22 @@ Microsoft is committed to assist you in resolving your issue as soon as possible
 - Microsoft offers customers the ability to run non-Microsoft technologies along with Dynamics 365. For all scenarios that are eligible for support through a Dynamics 365 Support plan, Microsoft Support will help in isolating the issue between the Dynamics 365 instance and your custom application.
 - Full technical support will be provided if the issue is determined to be caused by a Dynamics 365 service or platform. Commercially reasonable support will be provided to all other scenarios. When an adequate solution to your issue is not achieved, you might be referred to other support channels that are available for the non-Microsoft software.
 
-### How do I get support during an Outage or Service Interruption Event (SIE)? 
+### How do I get support during an outage or Service Interruption Event (SIE)? 
 
 - View the service health in Office 365 at a glance. You can also check out more details and the service health history. 
 - Use Message center in Office 365 to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for changes and understand how they might affect users.
-- Finally, if Service health and Message center do not show any active or recent service issues, contact support using your technical support plan.
+- Finally, if service health and Message center do not show any active or recent service issues, contact support using your technical support plan.
 
 ### Which support plan do I need in order to request a Root-Cause Analysis (RCA)? 
 
-Dynamics 365 technical support does not conduct RCAs as part of any support experience. If any RCA is conducted, the Dynamics 365 engineering team will conduct the RCA. RCAs are only provided to published service-related incidents when multiple customers or services are not available. Any RCA created will be published through the M365 Message Center and will not be emailed directly to tenant admins. These published RCAs are only available in English. Any other request for an RCA to a specific scenario impacting your tenant will not be honored by the engineering team.   
+Dynamics 365 technical support does not conduct RCAs as part of any support experience. If any RCA is conducted, the Dynamics 365 engineering team will conduct the RCA. RCAs are only provided to published service-related incidents when multiple customers or services are not available. Any RCA created will be published through the Microsoft 365 Message center and will not be emailed directly to tenant admins. These published RCAs are only available in English. Any other request for an RCA to a specific scenario impacting your tenant will not be honored by the engineering team.   
 
 ## Purchasing and billing
 
 ### How do I purchase Dynamics 365 Support? 
 
-- Dynamics 365 Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct Support plan is available online through the [Microsoft 365 Admin Center](https://portal.office.com/). You must be the Dynamics 365 tenant administrator or owner to purchase a support plan.
-- If you purchase Dynamics 365 through an Enterprise Agreement (EA), you can add a Professional Direct support plan to your Enterprise Agreement by contacting your Large Account Reseller (LAR). 
+- Dynamics 365 Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct  support plan is available online through the [Microsoft 365 Admin Center](https://portal.office.com/). You must be the Dynamics 365 tenant administrator or owner to purchase a support plan.
+- If you purchase Dynamics 365 through an Enterprise Agreement (EA), you can add a Professional Direct  support plan to your Enterprise Agreement by contacting your Large Account Reseller (LAR). 
 
 ### When will I be billed for Dynamics 365 Support? 
 
@@ -233,7 +235,7 @@ Manage your support plan subscriptions through the [Microsoft 365 Admin Portal](
 
 If you still have questions, open a new support request with the Billing team in the [Microsoft 365 Admin Portal](https://portal.office.com/). 
 
-Dynamics 365 Support requires commitment for the duration of the subscription term. Cancelation will not result in a prorated refund.
+Dynamics 365 Support requires commitment for the duration of the subscription term. Cancellation will not result in a prorated refund.
 
 ## Dynamics 365 Support for Enterprise Agreement (EA)
 
@@ -253,11 +255,12 @@ Yes, each EA enrollment requires a separate support plan. If you have one Dynami
 
 ### How do I submit a Dynamics 365 support request using my Premier contract? 
 
-Lifecycle Services (LCS) and the Power Platform Admin center (PPAC) are designed to recognize and entitle Premier and Unified Access IDs.
+Power Platform Admin center (PPAC) and the Lifecycle Services (LCS) are designed to recognize and entitle Premier and Unified Access IDs.
 
 In **PPAC**: You can link your Premier contract to your Dynamics 365 account by entering your Premier Access ID and Contract ID information in the Power Platform Admin center, which you can do by selecting **Help + Support** and turning on the Premier support toggle in the new incident submission experience. This is a one-time process, and your Premier contract information will be saved with your Dynamics 365 account, being accessible from all subscriptions where you have Owner/Administrator privileges. 
 
 In **LCS**: You can link your Premier contract to your Dynamics 365 account by selecting a project within LCS. Select the **Support** option from the drop-down menu, and then select **Manage Contracts**. This is a one-time process, and your Premier contract information will be saved for use with any support incident you create in LCS.
+
 Contact your Technical Account Manager (TAM) if you don’t have your access ID and contract ID information.
 
 Although Premier customers can continue to use the [Microsoft Premier Online](https://support.microsoft.com/premier) portal or phone channels to submit a support request, using the Power Platform Admin center or Lifecycle Services has a number of significant advantages, including:
@@ -273,7 +276,7 @@ To purchase Premier support, you should contact your Microsoft Account Manager. 
 
 ### What if I already have a Premier contract, and I want to learn more about how to get the most from it? 
 
-Contact your Technical Account Manager (TAM) to discuss options for best utilizing your existing Premier support agreement or rightsizing your Premier agreement to better suit your Dynamics 365 needs. You can find your TAM’s name and contact information on the [Microsoft Premier Online](https://support.microsoft.com/premier) portal.
+Contact your Technical Account Manager (TAM) to discuss options for best using your existing Premier support agreement or rightsizing your Premier agreement to better suit your Dynamics 365 needs. You can find your TAM’s name and contact information on the [Microsoft Premier Online](https://support.microsoft.com/premier) portal.
 
 ### Can Partners use the Premier Support for Partner (PSfP) contract for Dynamics 365 Support? 
 
