@@ -2,7 +2,7 @@
 title: "Preview: On-premises data gateway management | MicrosoftDocs"
 description: View and manage on-premises gateways. 
 ms.custom: ""
-ms.date: 05/31/2019
+ms.date: 07/15/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -28,11 +28,12 @@ The On-premises data gateway acts as a bridge, providing quick and secure data t
 
 You can use the Power Platform Admin center to get visibility into all on-premises data gateways in a tenant. To do so, sign in as a tenant admin and select the **Data Gateway** option.
 
-> [!NOTE]
-> Only users who are part of the Azure AD Global administrator role (which includes Office 365 Global admins) and Power BI service administrators can use the **Data Gateway** management feature.
+Users who are part of the Azure AD Global administrator role (which includes Office 365 Global admins), Power BI service administrators, and Gateway administrators will have access to Data Gateway management on the Power Platform Admin center. There may however be differences in the features available and the operations which can be performed by each of these roles.
+
+The Azure AD Global administrator role (which includes Office 365 Global admins) and Power BI service administrators will be able to see all gateways in their organizations in addition to the gateways they manage. You can switch between these two views using this toggle in the upper-right corner of the page:
 
 > [!div class="mx-imgBorder"] 
-> ![On-premises gateway page](media/onprem-gateway-manage780.png "On-premises gateway page")
+> ![](media/tenant-administration.png "Tenant administration")
 
 The Gateways page lists all on-premises data gateway clusters installed on the tenant. In addition, you can review the following information about these clusters:
 
@@ -41,7 +42,10 @@ The Gateways page lists all on-premises data gateway clusters installed on the t
 - **Administrators**: The list of gateway administrators.
 - **Gateways**: The number of gateway members in the gateway cluster.
 
-The gateway cluster list includes both On-premises data gateways and On-premises data gateways(personal mode).
+The gateway cluster list includes both On-premises data gateways and On-premises data gateways (personal mode).
+
+> [!div class="mx-imgBorder"] 
+> ![On-premises gateway page](media/onprem-gateway-manage780.png "On-premises gateway page")
 
 > [!NOTE]
 > On-premises data gateways in non-default environments/regions are currently not included. 
@@ -71,7 +75,7 @@ Use **Search** to find gateway clusters and see their details. You can search fo
 
 ## Manage installers
 
-As a global admin, use **Manage Gateway installers** to manage who can install the On-premises data gateway in your enterprise. 
+As either an Azure AD Global administrator (which includes Office 365 Global admins) or a Power BI service administrator, use Manage Gateway installers to manage who can install the On-premises data gateway in your enterprise. This operation isn’t available for gateway admins.
 
 > [!NOTE]
 > This feature does not apply for On-premises data gateways (personal mode).
