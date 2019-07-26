@@ -62,6 +62,6 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Learning path|Default: Off. Changes access to Learning Path for an entire organization. More information: [On/off switch for Learning Path (guided help)](https://docs.microsoft.com/dynamics365/customer-engagement/admin/on-off-switch-for-learning-path-guided-help).|  
 > |Learning path authoring|Default: Off. Set to **On** if you want enable users to author Learning Path content. More information: [Create your own guided help (Learning Path) for your customers](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-guided-help-learning-path)|
 > |**Auditing**| |
-> |Audit entities|Default: Off. Start or stop auditing.|  
-> |Audit user access|Default: Off. If enabled, Customer Engagement apps tracks when the user started accessing Customer Engagement apps and whether or not the user accessed the application by using the web application or Dynamics 365 for Outlook.| 
-> |Audit read access|Default: Off. | 
+> |Start Auditing|Default: Off. Start or stop auditing.|  
+> |Log access|Default: Off. If enabled, Customer Engagement apps tracks when the user started accessing Customer Engagement apps and whether or not the user accessed the application by using the web application or Dynamics 365 for Outlook.| 
+> |Read logs |Default: Off. | 
