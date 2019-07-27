@@ -24,6 +24,8 @@
       items:
       - name: Opt in to April 2019 updates
         href: preview-april-2019-updates.md
+    #  - name: Early opt in to 2019 release wave 2
+    #    href: preview-october-2019-updates.md
       - name: View analytics
         items:
         - name: Common Data Service analytics 
@@ -38,26 +40,32 @@
           href: free-storage-space.md
       - name: Manage environments
         items:
-        - name: Manage environments in PowerApps
-          href: environments-administration.md
         - name: Environments overview
           href: environments-overview.md
-        - name: Regions overview
-          href: regions-overview.md
-        - name: Create an environment
+      #  - name: Provision new environments
+      #    href: provision-new-environment.md
+        - name: Create environments
           href: create-environment.md
-        - name: Create a database
+      #  - name: Control environment creation
+      #    href: control-environment-creation.md
+        - name: Create a database in PowerApps
           href: create-database.md
         - name: Copy an environment
           href: copy-environment.md
-        - name: Manage encryption key
-          href: manage-encryption-key.md
-        - name: PowerApps Preview Program
-          href: preview-environments.md
         - name: View and reset Sandbox environments
           href: sandbox-environments.md
         - name: About Trial environments
           href: trial-environments.md     
+      #  - name: Manage environments in Power Platform
+      #    href: manage-environments.md
+        - name: Manage environments in PowerApps
+          href: environments-administration.md
+        - name: Regions overview in PowerApps
+          href: regions-overview.md
+        - name: Manage encryption key
+          href: manage-encryption-key.md
+        - name: PowerApps Preview Program
+          href: preview-environments.md
       - name: Manage settings 
         items:
         - name: Common Data Service settings
@@ -170,6 +178,8 @@
         href: wp-controlling-access.md
       - name: Security concepts 
         href: wp-security-cds.md
+      - name: System and application users
+        href: system-application-users.md
       - name: Configure environment security
         href: database-security.md
         items: 
