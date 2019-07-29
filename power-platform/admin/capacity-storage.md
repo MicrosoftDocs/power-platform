@@ -1,23 +1,18 @@
 ---
 title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.custom: ""
 ms.date: 05/10/2019
 ms.reviewer: ""
-ms.service: "crm-online"
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
+ms.service: "power-platform"
+ms.topic: "quickstart"
 author: "jimholtz"
 ms.author: "jimholtz"
 manager: "kvivek"
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Preview: Common Data Service storage capacity 
