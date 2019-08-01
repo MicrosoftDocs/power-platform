@@ -2,7 +2,7 @@
 title: "Early opt in to 2019 release wave 2 | MicrosoftDocs"
 description: Opt in to 2019 release wave 2  for the Dynamics 365 for Customer Engagement platform
 ms.custom: ""
-ms.date: 07/30/2019
+ms.date: 08/01/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -132,16 +132,13 @@ Use the following table to check the status of the 2019 release wave 2 update an
 To enable 2019 release wave 2 early access features for Dynamics 365 for Marketing:
 
 1.	Opt in for early access on the environment where your Marketing instance is running, as described in [How do I enable the 2019 release wave 2 updates](#how-do-i-enable-the-2019-release-wave-2-updates).
-2.	Run the Marketing setup wizard to update your instance to the August 2019 release. This will install both the August 2019 production update and the early-access features when you run it on an environment where early access is already enabled. For instructions, see [Re-run the Marketing setup wizard](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/re-run-setup).
-
-> [!NOTE]
-> If you update your Marketing app to the August 2019 release _before_ opting in for early access, then you must re-run the Marketing setup wizard after opting-in to install and enable the early-access features.
+2.	Run the Marketing setup wizard to update your instance to the August 2019 release. This will install both the August 2019 production update and the early-access features when you run it on an environment where early access is enabled. For instructions, see [Re-run the Marketing setup wizard](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/re-run-setup).
 
 For an overview of early access features being offered for Marketing, plus links to detailed documentation, see the August 2019 release announcement for Marketing.
 
 ## FAQ
 
-### When will the 2019 release wave 2 features be enabled for customers who did not opt in to the preview?
+### When will the 2019 release wave 2 features be enabled?
 
 Starting October 5, 2019, we will enable the 2019 release wave 2 features (end user impacting only) across our global customer base. Your environment/org will be updated during one of the [maintenance windows](https://docs.microsoft.com/dynamics365/customer-engagement/admin/policies-communications#maintenance-timeline) over a weekend, starting on the dates listed below. The specific dates that the update will occur will be published in the [Message Center](https://docs.microsoft.com/dynamics365/customer-engagement/admin/policies-communications#maintenance-timeline), and each post will include the date, maintenance window, and a link to the Weekly Release Notes that contain the list of optimizations, fixes, and enhancements. Each environment/org should see the new features and build numbers by Monday morning, local time.
 
@@ -149,7 +146,7 @@ Here are the current schedules.
 
 **Regions**
 
-|Japan  |South <br/>America  |Canada  |India  |Asia  |
+|Japan  |South <br/>America  |Canada  |India  |Asia  | 
 |---------|---------|---------|---------|---------|
 |Fri, Oct 11<br/>to<br/>Sun, Oct 13 | Fri, Oct 4<br/>to<br/>Sun, Oct 6  | Fri, Oct 4<br/>to<br/>Sun, Oct 6  |Fri, Oct 4<br/>to<br/>Sun, Oct 6  | Fri, Oct 11<br/>to<br/>Sun, Oct 13 | 
 
@@ -163,7 +160,7 @@ Here are the current schedules.
 
 |GCC  |GCC High  |DOD  |
 |---------|---------|---------|
-|Fri, Oct 1<br/>to<br/>Sun, Oct 3| Fri, Oct 1<br/>to<br/>Sun, Oct 3 | Fri, Oct 1<br/>to<br/>Sun, Oct 3 |
+|Fri, Nov 1<br/>to<br/>Sun, Nov 3| Fri, Nov 1<br/>to<br/>Sun, Nov 3 | Fri, Nov 1<br/>to<br/>Sun, Nov 3 |
 
 <sup>1</sup>See: [Dynamics 365 US Government](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government).
 
