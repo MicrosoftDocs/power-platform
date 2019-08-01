@@ -2,7 +2,7 @@
 title: "Early opt in to 2019 release wave 2 | MicrosoftDocs"
 description: Opt in to 2019 release wave 2  for the Dynamics 365 for Customer Engagement platform
 ms.custom: ""
-ms.date: 07/30/2019
+ms.date: 08/01/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -138,7 +138,7 @@ For an overview of early access features being offered for Marketing, plus links
 
 ## FAQ
 
-### When will the 2019 release wave 2 features be enabled for customers who did not opt in to the preview?
+### When will the 2019 release wave 2 features be enabled?
 
 Starting October 5, 2019, we will enable the 2019 release wave 2 features (end user impacting only) across our global customer base. Your environment/org will be updated during one of the [maintenance windows](https://docs.microsoft.com/dynamics365/customer-engagement/admin/policies-communications#maintenance-timeline) over a weekend, starting on the dates listed below. The specific dates that the update will occur will be published in the [Message Center](https://docs.microsoft.com/dynamics365/customer-engagement/admin/policies-communications#maintenance-timeline), and each post will include the date, maintenance window, and a link to the Weekly Release Notes that contain the list of optimizations, fixes, and enhancements. Each environment/org should see the new features and build numbers by Monday morning, local time.
 
@@ -146,7 +146,7 @@ Here are the current schedules.
 
 **Regions**
 
-|Japan  |South <br/>America  |Canada  |India  |Asia  |
+|Japan  |South <br/>America  |Canada  |India  |Asia  | 
 |---------|---------|---------|---------|---------|
 |Fri, Oct 11<br/>to<br/>Sun, Oct 13 | Fri, Oct 4<br/>to<br/>Sun, Oct 6  | Fri, Oct 4<br/>to<br/>Sun, Oct 6  |Fri, Oct 4<br/>to<br/>Sun, Oct 6  | Fri, Oct 11<br/>to<br/>Sun, Oct 13 | 
 
@@ -160,7 +160,7 @@ Here are the current schedules.
 
 |GCC  |GCC High  |DOD  |
 |---------|---------|---------|
-|Fri, Oct 1<br/>to<br/>Sun, Oct 3| Fri, Oct 1<br/>to<br/>Sun, Oct 3 | Fri, Oct 1<br/>to<br/>Sun, Oct 3 |
+|Fri, Nov 1<br/>to<br/>Sun, Nov 3| Fri, Nov 1<br/>to<br/>Sun, Nov 3 | Fri, Nov 1<br/>to<br/>Sun, Nov 3 |
 
 <sup>1</sup>See: [Dynamics 365 US Government](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government).
 
