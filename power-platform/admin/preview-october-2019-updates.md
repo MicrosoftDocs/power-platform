@@ -115,7 +115,8 @@ Use the following table to check the status of the 2019 release wave 2 update an
 |Dynamics 365 for Sales     |<sup>2</sup>**Internal Solution History** page        |Updating the application might take few hours. Wait up to 24 hours before creating a [support ticket](https://dynamics.microsoft.com/support/).   |
 |Dynamics 365 for Customer Service     | <sup>1</sup>**About** page <br />Look for *2019 release wave 2 enabled*            | Create a [support ticket](https://dynamics.microsoft.com/support/).   |
 |Knowledge Management     | <sup>2</sup>**Internal Solution History** page / **Application** tab         | Updating the application might take few hours. Wait up to 24 hours before creating a [support ticket](https://dynamics.microsoft.com/support/).        |
-|Marketing     | <sup>1</sup>**Internal Solution History** page / **Application** tab         | Updating the application might take few hours. Wait up to 24 hours before creating a [support ticket](https://dynamics.microsoft.com/support/).        |
+|Field Service  | <sup>2</sup>**Internal Solution History** page / **Application** tab |  Updating the application might take few hours. Wait up to 24 hours before creating a [support ticket](https://dynamics.microsoft.com/support/). | 
+|Marketing     | <sup>1</sup>**Internal Solution History** page / **Application** tab         | Updating the application might take few hours. Wait up to 24 hours before creating a [support ticket](https://dynamics.microsoft.com/support/).  |
 
 <sup>1</sup>Select **Settings** (![Settings button](media/settings-button-nav-bar.png))> **About**. 
 
@@ -124,7 +125,8 @@ Use the following table to check the status of the 2019 release wave 2 update an
 |Display name  |Version number |
 |---------|---------|
 |Dynamics 365 Sales Application    | 9.0.1907.4Yxx, Y is greater than or equal to 5   |
-|Knowledge Management Features    | 9.0.1.8Yx,  Y is greater than or equal to 5 |
+|Knowledge Management Features    | 9.0.1.8Yx, Y is greater than or equal to 5 |
+|Field Service  | 8.8.5.1Y, Y is greater than or equal to 0  
 |Dynamics 365 for Marketing     | Check back for information        |
 
 ## Enable the 2019 release wave 2 updates for Dynamics 365 for Marketing
