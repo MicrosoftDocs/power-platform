@@ -22,10 +22,10 @@
         href: admin-powerapps-enterprise-deployment.md
     - name: Environments
       items:
-      - name: Opt in to April 2019 updates
-        href: preview-april-2019-updates.md
-    #  - name: Early opt in to 2019 release wave 2
-    #    href: preview-october-2019-updates.md
+    #  - name: Opt in to April 2019 updates
+    #    href: preview-april-2019-updates.md
+      - name: Early opt in to 2019 release wave 2
+        href: preview-october-2019-updates.md
       - name: View analytics
         items:
         - name: Common Data Service analytics 
