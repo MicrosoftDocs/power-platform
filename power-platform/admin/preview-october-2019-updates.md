@@ -2,7 +2,7 @@
 title: "Early opt in to 2019 release wave 2 | MicrosoftDocs"
 description: Opt in to 2019 release wave 2  for the Dynamics 365 for Customer Engagement platform
 ms.custom: ""
-ms.date: 08/01/2019
+ms.date: 08/02/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -23,9 +23,6 @@ search.app:
 # Early opt in to 2019 release wave 2 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!IMPORTANT]
-> Early opt in is not yet enabled for public release. Check back for availability.
 
 You can enable the features coming in the 2019 release wave 2 update by opting in to the updates in the Power Platform Admin center. Opting in will enable all changed user experience updates for Dynamics 365 for Customer Engagement, which will be enabled by default to everyone starting 2019 release wave 2.
 
