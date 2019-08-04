@@ -134,7 +134,10 @@ To enable 2019 release wave 2 early access features for Dynamics 365 for Marketi
 1.	Opt in for early access on the environment where your Marketing instance is running, as described in [How do I enable the 2019 release wave 2 updates](#how-do-i-enable-the-2019-release-wave-2-updates).
 2.	Run the Marketing setup wizard to update your instance to the August 2019 release. This will install both the August 2019 production update and the early-access features when you run it on an environment where early access is enabled. For instructions, see [Re-run the Marketing setup wizard](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/re-run-setup).
 
-For an overview of early access features being offered for Marketing, plus links to detailed documentation, see the August 2019 release announcement for Marketing.
+> [!NOTE]
+> If you update your Marketing app to the August 2019 release _before_ opting in for early access, then you must re-run the Marketing setup wizard after opting in to install and enable the early-access features.
+
+For an overview of early access features being offered for Marketing, plus links to detailed documentation, see the [August 2019 release announcement for Marketing](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/03/dynamics-365-for-marketing-august-update-and-early-access-are-rolling-out-now/).
 
 ## FAQ
 
