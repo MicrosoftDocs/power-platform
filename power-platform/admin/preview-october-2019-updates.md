@@ -32,7 +32,7 @@ You can enable the features coming in the 2019 release wave 2 update by opting i
 Check out the new features releasing from October 2019 through March 2020 for Dynamics 365. See [Dynamics 365 release schedule and early access](https://aka.ms/EarlyAccessFAQ).
 
 > [!NOTE]
-> Most of the early opt in features are end user impacting changes. Check out the "Enabled for" column in the [early access features](https://aka.ms/EarlyAccessFeatures) table to know the features that will roll out to the end users automaticaly in October 2019. 
+> Most of the early opt in features are end user impacting changes. Check out the "Enabled for" column in the [early access features](https://aka.ms/EarlyAccessFeatures) table to know the features that will roll out to the end users automatically in October 2019. 
 
 
 ## Which environment can be used for early opt in to 2019 release wave 2 updates?
@@ -45,7 +45,7 @@ You can enable Trial and Sandbox environments for the 2019 release wave 2 releas
 > Be sure to:
 > - Understand [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/).
 > - Learn [what features are included in the 2019 release wave 2 plan](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features).
-> - Review [How do I prepare for the 2019 release wave 2 update?](#how-do-i-prepare-for-the-2019-release-wave-2-update).
+> - Review [How do I prepare for the 2019 release wave 2 update?](#how-do-i-prepare-for-the-2019-release-wave-2-update)
 > - Test the updates before rolling out to production.
 >
 > By activating the 2019 release wave 2 updates opt-in, you will get features and updates that are end user impacting only. These and other changes will be enabled automatically for everyone in October 2019.
