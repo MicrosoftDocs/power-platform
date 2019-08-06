@@ -185,8 +185,8 @@
       - name: Configure environment security
         href: database-security.md
         items: 
-    #    - name: Control user access to environments
-    #      href: control-user-access.md     
+        - name: Control user access to environments
+          href: control-user-access.md     
         - name: Data loss prevention policies 
           href: wp-data-loss-prevention.md
         - name: Create a DLP policy

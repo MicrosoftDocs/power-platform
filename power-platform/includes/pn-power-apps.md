@@ -1,1 +1,1 @@
-Power Apps
+PowerApps
