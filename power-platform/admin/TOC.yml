@@ -22,7 +22,7 @@
         href: admin-powerapps-enterprise-deployment.md
     - name: Environments
       items:
-      - name: Early opt in to 2019 release wave 2
+      - name: Early opt-in to 2019 release wave 2
         href: preview-october-2019-updates.md
       - name: View analytics
         items:
