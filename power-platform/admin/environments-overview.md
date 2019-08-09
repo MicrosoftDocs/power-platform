@@ -1,13 +1,13 @@
 ---
 title: Environments overview | Microsoft Docs
 description: Learn about environments in PowerApps and how to use them
-author: manasmams
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/11/2019
-ms.author: manasma
+ms.date: 08/08/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -57,7 +57,7 @@ Environment Makers can also distribute the apps they build in an environment to 
 
 Users or groups assigned to these environment roles are not automatically given access to the environment’s database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).
 
-Users or security groups can be assigned to either of these two roles by an Environment Admin from the [PowerApps Admin center][1]. For more information, see [Administer environments in PowerApps](environments-administration.md).
+Users or security groups can be assigned to either of these two roles by an Environment Admin from the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) or [PowerApps Admin center](https://admin.powerapps.com). For more information, see [Administer environments in PowerApps](environments-administration.md).
 
 ![](./media/environments-overview/EnvironmentRoles.png)
 
@@ -65,7 +65,7 @@ Users or security groups can be assigned to either of these two roles by an Envi
 A single default environment is automatically created by PowerApps for each tenant and shared by all users in that tenant. Whenever a new user signs up for PowerApps, they are automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of the Azure AD tenant.
 
 > [!NOTE]
-> No users will be added to the Environment Admin role of the default environment automatically. For more informaton, see [Administer environments in PowerApps](environments-administration.md).
+> No users will be added to the Environment Admin role of the default environment automatically. For more information, see [Administer environments in PowerApps](environments-administration.md).
 
 The default environment is named as follows: “{Azure AD tenant name} (default)”
 
@@ -85,41 +85,6 @@ An environment will show up in your picker if you meet one of the following cond
 
 ![](./media/environments-overview/EnvironmentPicker.png)
 
-## Creating an environment
-### Who can create environments?
-Your license determines whether you can create environments.
-
-| License | Environment creation is allowed |
-| --- | --- |
-| PowerApps P2 |√ (Two Production and Two Trial environments)|
-| PowerApps P2 Trial |√ (Two Trial environments)|
-| PowerApps P1 |X |
-| PowerApps P1 Trial |X |
-| Dynamics 365 Plans |√ (Two Production and Two Trial environments) |
-| Office 365 Plans |x |
-| Dynamics 365 Apps Plans |√ (Two Production and Two Trial environments)|
-| Dynamics 365 Teams Plans   |X  | 
-| PowerApps Community Plan   |√ (A single Developer environment is created automatically)    | 
-
-### Where can environments be created?
-You will be able to create new environments from [PowerApps.com][2] and from the [PowerApps Admin center][1]. If you create an environment, you will automatically be added to the Environment Admin role for that environment. There is not be a limit on the number of environments that you can participate in as a member of the Environment Admin or Environment Maker role. For more information about environments, see [Administer environments in PowerApps](environments-administration.md). For instructions on how to create an environment, see [Create an environment](create-environment.md).
-
-![](./media/environments-overview/CreateEnvironmentDialog-New.png)
-
-
-## Managing environments for your organization
-In PowerApps Admin center,  you can manage all of the environments that you have created or to which you have been added to the Environment Admin role. From the Admin center, you can perform all administrative actions on an environment, including the following:
-
-* Add or remove a user or group from either the Environment Admin or Environment Maker role.  For more information, see [Administer environments in PowerApps](environments-administration.md).
-* Provision a Common Data Service database for the environment. For more information, see [Create a Common Data Service database](create-database.md).
-* Set Data Loss Prevention policies. For more information, see [Data loss prevention policies](prevent-data-loss.md).
-* Set database security policies (as open or restricted by database roles). For more information, see [Configure database security](database-security.md).
-* Members of the Azure AD tenant Global administrator role (includes Office 365 Global admins) can also manage all environments that have been created in their tenant and set tenant-wide policies from the PowerApps Admin center.
 
 ### See also
 [Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/power-platform/create-manage-environments)
-
-<!--Reference links in article-->
-[1]: https://admin.powerapps.com
-[2]: https://web.powerapps.com
-[3]: https://aka.ms/cdspreviewtoga

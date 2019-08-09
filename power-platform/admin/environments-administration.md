@@ -1,13 +1,13 @@
 ---
-title: Manage environments | Microsoft Docs
-description: Learn how to mamange environments in PowerApps, including creation, renaming, deletion, and security
-author: manasmams
+title: Manage environments in the PowerApps Admin center| Microsoft Docs
+description: Learn how to manage environments in PowerApps, including creation, renaming, deletion, and security
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/30/2019
-ms.author: manasma
+ms.date: 08/08/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -16,7 +16,11 @@ search.app:
   - Powerplatform
 ---
 
-# Manage environments in PowerApps
+# Manage environments in the PowerApps Admin center
+
+> [!NOTE]
+> We are moving environment management from other admin centers to the Power Platform Admin center. Until this is completed, some management can be or must be done in other admin centers such as the PowerApps Admin center.
+
 In the [PowerApps Admin center][1], manage environments that you've created and those for which you have been added to the Environment Admin or System Administrator role. From the admin center, you can perform these administrative actions:
 
 * Create environments.
@@ -50,7 +54,7 @@ You also need either a PowerApps Plan 2 or Microsoft Flow Plan 2 license to acce
 > Any changes that you make in PowerApps Admin center affect the [Microsoft Flow admin center][4] and vice versa.
 
 ## Create an environment
-For instructions on how to create an environment, see [Create an environment](create-environment.md).
+For instructions on how to create an environment, see [Create an environment](create-environment-powerapps.md).
 
 ## View your environments
 When you open the admin center, the Environments tab appears by default and lists all the environments for which you are an Environment Admin (as shown below):
@@ -168,8 +172,7 @@ An organization's data must be protected so that it isn't shared with audiences 
 ## Frequently asked questions
 
 ### How many environments and databases can I create?
-You can create up to two Trial environments and two Production environments, depending on their license. [Read here](environments-overview.md#creating-an-environment) for more details. 
-Each user can provision databases in two Trial environments and two Production environments, depending on their license. 
+Provisioning environments is based on the available storage in your organization. You need at least 1GB minimum database storage to create an environment.For more information, see [Environments overview](environments-overview.md). 
 
 ### Which license includes Common Data Service?
 PowerApps Plan 2.  See [PowerApps pricing page][3] for details on all the plans that include this license.
@@ -180,7 +183,7 @@ If you are getting the following error message: "Either your plan doesn’t supp
 1. You have already utilized your quota to create a specific type of environments. Say you were creating  a Trial environment and you get this error message. That means, that you have already provisioned two Trial environments. You can view all the environments in [PowerApps Admin center][1].
 If you want, you can delete an existing environment of that specific type and create a new one. But, please make sure that you don't lose your data, apps, flows and other resources which you want to retain.
 
-2. You do not have a quota to create that specific type of the environment. Check what type of environment you can create [here](environments-overview.md#creating-an-environment).
+2. You do not have a quota to create that specific type of the environment. <!-- Check what type of environment you can create [here](environments-overview.md#creating-an-environment). -->
 
 If you are getting any other error message or have more questions, please connect with us [here][5].
 

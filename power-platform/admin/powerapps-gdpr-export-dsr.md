@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2018
+ms.date: 08/07/2019
 ms.author: jamesol
 search.audienceType: 
   - admin
@@ -324,15 +324,12 @@ PowerApps licenses always include Microsoft Flow capabilities. In addition to be
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for PowerApps users.
->
->
+
 
 ## Step 12: Export the user’s personal data in Common Data Service instances
-Certain PowerApps licenses allow users within your organization to create Common Data Service instances and create and build apps on Common Data Service, including the PowerApps Community Plan, which is a free license that allows users to try out Common Data Service in an individual environment. To see which Common Data Service capabilities are included in each PowerApps license, see the [PowerApps Pricing page](https://powerapps.microsoft.com/pricing).
+Anyone with a PowerApps license, provided there is 1GB available database capacity, can create Common Data Service environments and create and build apps on Common Data Service; this includes the PowerApps Community Plan, which is a free license that allows users to try out Common Data Service in an individual environment. To see which Common Data Service capabilities are included in each PowerApps license, see the [PowerApps Pricing page](https://powerapps.microsoft.com/pricing).
 
 For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for PowerApps users.
->
->

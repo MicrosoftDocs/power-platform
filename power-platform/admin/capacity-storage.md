@@ -1,7 +1,7 @@
 ---
 title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 05/10/2019
+ms.date: 08/08/2019
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -125,6 +125,9 @@ Until provisioning environments is available through the Power Platform Admin ce
 If Database, you should not exceed the available Database capacity. Please consider [freeing storage space](free-storage-space.md) or purchase more storage capacity. 
 
 If File and Log, then there is no immediate action required. At renewal, you can use this report to get the right amount of capacity for Database, File, and Log.
+
+### I’m a new customer and I recently purchased with the new offers. My usage of Database/Log/File is showing red. What should I do?  
+Consider buying additional capacity using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
 
 ### Where can I read more about the new capacity offers?
 Download the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) to learn more.

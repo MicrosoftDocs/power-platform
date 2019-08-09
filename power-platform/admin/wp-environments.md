@@ -2,7 +2,7 @@
 title: "About environments | MicrosoftDocs"
 description: About environments.
 ms.custom: ""
-ms.date: 09/27/2018
+ms.date: 08/07/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -57,7 +57,7 @@ There are multiple types of environments. The type of environment indicates the 
 
 |Type  |Description  |
 |---------|---------|
-|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone licensed with a PowerApps P2 license. These environments are also created for each existing Dynamics 365 Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
+|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a PowerApps license, provided there is 1GB available database capacity. These environments are also created for each existing Dynamics 365 Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
 |Default     | These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail.        |
 |Sandbox     | These are non-production environments and when associated with a Common Data Service database instance offer features like reset.        |
 |Trial     | Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time.        |
@@ -79,7 +79,7 @@ When you create an environment, you will pick a geographic location. Application
 
 ## Who can create environments
 
-As a global administrator in the admin portal you will be able to see a list of all environments created by users in your tenant. Administrators and users that have paid P2 or trial P2 licenses will be able to create new environments. Also users with the Community plan license can also create one Developer environment.
+As a global administrator in the admin portal you will be able to see a list of all environments created by users in your tenant. Any administrators and users will be able to create new environments, provided there is 1GB available database capacity. Also users with the Community plan license can also create one Developer environment.
 
 ## Impact of multiple environments on users
 
