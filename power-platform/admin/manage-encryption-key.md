@@ -2,13 +2,13 @@
 title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 keywords: encrypt
-ms.date: 05/01/2019
-ms.service: crm-online
+ms.date: 08/09/2019
+ms.service: power-platform
 ms.custom: 
 ms.topic: article
 applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 8.2
+  - "Dynamics 365 (online)"
+  - "Dynamics 365 Version 9.x"
 ms.assetid: 47bbbe8f-7839-475d-a844-632aa33fae51
 author: Mattp123
 ms.author: matp
@@ -37,8 +37,7 @@ All environments of Common Data Service and Dynamics 365 for Customer Engagement
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
 
 > [!IMPORTANT]
-> Self-managed database encryption keys are only available for customers who have more than one-thousand P1/P2 licensed user seats and who have opted in to the feature.  To opt-in to this program, contact your account or sales representative and send your request to 
-CDSCMKOnboarding@microsoft.com.
+> Self-managed database encryption keys are only available for customers who have more than 1000 P1/P2 licensed user seats and who have opted in to the feature.  To opt in to this program, contact your account or sales representative.
 >
 > Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can’t be encrypted with the self-managed encryption key:
 > - Relevance Search
