@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 08/07/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -29,10 +29,7 @@ Open the **Environments** page to see the environment types you have and the upc
 
 While using the Trial environment, if you created resources you want to retain longer than 30 days, convert the Trial to a Production environment.
 
-To convert to a Production environment, these criteria must be met:
-
-**A suitable PowerApps plan**. A plan that enables you to create Production environments, for example, PowerApps Plan 2. See [Choose the right plans for your team](https://powerapps.microsoft.com/pricing/) for information on PowerApps plans that include Production environments. See [How do I identify my plan(s)](#how-do-i-identify-my-plans) to determine your PowerApps plan(s).
-**Available Production quota**. There are a fixed number of Production environments you can create with your plan. For example, with PowerApps Plan 2, you can create two Production environments. If you've already created two Production environments, you can’t create any more until you delete an existing one. For more information, see [Creating an environment](environments-overview.md#creating-an-environment).
+If you have 1GB of available database capacity, you can convert a Trial environment to Production. You might need to free up or purchase additional capacity if the Trial database exceeds 1GB. To determine the size of the Trial database see: [Common Data Service storage capacity](capacity-storage.md).
 
 Follow these steps to convert a Trial environment to a Production environment:
 
@@ -62,10 +59,7 @@ If your environment has a database, it might take several hours to convert to a 
 
 ### Who can convert a Trial environment to a Production environment?
 
-You need to meet the following criteria to convert a Trial environment to a Production environment:
-
-**Have a suitable PowerApps plan**. You need a plan that enables you to create Production environments—for example, PowerApps Plan 2. See [Choose the right plans for your team](https://powerapps.microsoft.com/pricing/) for information on PowerApps plans that include Production environments. See [How do I identify my plan(s)](#how-do-i-identify-my-plans) to determine your PowerApps plan(s).
-**Have available Production quota**. There are a fixed number of Production environments you can create with your plan. For example, with PowerApps Plan 2, you can create two Production environments. If you've already created two, you can’t create any more until you delete an existing one.
+If you have 1GB of available database capacity, you can convert a Trial environment to Production. You might need to free up or purchase additional capacity if the Trial database exceeds 1GB. To determine the size of the Trial database see: [Common Data Service storage capacity](capacity-storage.md).
 
 ### What if I don’t have available quota for Production environments?
 
@@ -94,7 +88,7 @@ We delete Trial environments that haven’t had any activity in the environment 
 
 ### How can I create a Production or an individual environment?
 
-You need to have a PowerApps plan that provides Production environment creation. For more information, see [Creating an environment](environments-overview.md#creating-an-environment).
+You need to have a PowerApps plan that provides Production environment creation. <!-- For more information, see [Creating an environment](environments-overview.md#creating-an-environment). -->
 
 You can create an individual environment by signing up for the [PowerApps Community Plan](https://powerapps.microsoft.com/communityplan/). Note that there are restrictions on sharing apps in individual environments—these environments are meant for personal use only.
 

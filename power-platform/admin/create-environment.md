@@ -1,72 +1,175 @@
 ---
-title: Create an environment | Microsoft Docs
-description: In this quickstart, you learn how to create an environment
+title: Create and manage environments in the Power Platform Admin center | Microsoft Docs
+description: Create and manage environments in the Power Platform Admin center
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 06/11/2019
+ms.date: 08/09/2019
 ms.author: jimholtz
 search.audienceType: 
-  - admin
+  - admin 
 search.app: 
   - D365CE
   - PowerApps
   - Powerplatform
 ---
-
-# Create an environment
+# Create and manage environments in the Power Platform Admin center
 An environment is a space to store, manage, and share your organization’s business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. PowerApps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
 
+## Provisioning a new environment
+You have a choice when provisioning a new environment. You can:
+
+- Provision based on [buying an instance](https://docs.microsoft.com/dynamics365/customer-engagement/admin/add-instance-subscription#add-an-additional-instance) using the Dynamics 365 Admin center<br />
+or <br />
+- Provision based on [available capacity](capacity-storage.md#about-the-new-capacity-analytics-reporting). See the below section: [Create an environment in the Power Platform Admin center](#create-an-environment-in-the-power-platform-admin-center).
+
+For information on making this choice, see the blog (please check back for link). 
+
+### What's new in provisioning environments
+We're consolidating how you view, create, and manage environments. 
+
+- **Environments can now be provisioned in the Power Platform Admin center**: You can create environments in the Power Platform Admin center. Previously, environments could only be created in the Dynamics 365 Admin center and the PowerApps Admin center. 
+- **Admins can govern environment creation**: To limit environment creation to admins (Dynamics 365 Service admins, Office 365 Global admins, or Delegated admins), see [Control who can create environments in the Power Platform Admin center](control-environment-creation.md). Previously, limiting was done by controlling who had PowerApps P2 licenses.  
+- **Admins can see all environments**: Admins can see all environments (environments with and without a database, and environments with apps) in the Power Platform Admin center. Previously, admins could not see environments created without a database.
+- **Trial environment provisioning**: You can create one Trial environment per user. Previously, you could create two per user.
+
+### Who can create environments?
+Your license determines whether you can create environments.
+
+| License | Trial | Production |
+| --- | --- | --- |
+| PowerApps P2 |Yes (one)| Yes |
+| PowerApps P2 Trial |Yes (one)| Yes |
+| PowerApps P1 |Yes (one)| Yes |
+| PowerApps P1 Trial |Yes (one)| No |
+| Dynamics 365 Plans |Yes (one)| Yes |
+| Office 365 Plans |No | No |
+| Dynamics 365 Apps Plans |Yes (one)| Yes |
+| Dynamics 365 Teams Plans   |No | No |
+| PowerApps Community Plan   |No | No |
+
+## Create an environment in the Power Platform Admin center
 Every environment can have zero or one Common Data Service database, which provides storage for apps. When users create an app in an environment, that app can connect to any data source, including connections, gateways, and flows. However, the app is only permitted to connect to the Common Data Service databases in that same environment. How you choose to leverage environments depends on your organization and the apps you're trying to build. For more information, see [Environments overview](environments-overview.md).
 
-We are working to provide environment creation within the Power Platform Admin center. Until that is enabled, you can create environments in:
+You have multiple options when creating an environment:
 
-1. The Dynamics 365 Admin center. See [Add an instance to your subscription](https://docs.microsoft.com/dynamics365/customer-engagement/admin/add-instance-subscription).
+1. [Create an environment with a Common Data Service database](#create-an-environment-with-a-database)
+2. [Create an environment with Customer Engagement apps](#create-an-environment-with-customer-engagement-apps)
+3. [Create an environment without a Common Data Service database](#create-an-environment-without-a-database)
 
-2. The Microsoft Flow admin center. See [Create an environment](https://docs.microsoft.com/flow/environments-overview-admin#create-an-environment).
+## Create an environment with a database
+You create a database to use Common Data Service as a data store. The Common Data Service is a cloud scale database used to securely store data for business applications built on PowerApps. Common Data Service provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
 
-3. The PowerApps Admin center. See below.
+### Prerequisites
+To create an environment with a database, you need 1GB available database capacity.
 
-Choose the platform that matches where you'll be doing your work. <!-- We need a better explanation -->
+### Steps
 
-> [!IMPORTANT]
-> If you purchased the new capacity-based license, until creating environments is available through the Power Platform Admin center, you can create environments through the Dynamics 365 Admin/Flow/PowerApps centers. If you still need more environments, you can contact [Support](get-help-support.md).
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 Service admin, Office 365 Global admin, or Delegated admin).
+2. In the navigation pane, select **Environments**, and then select **New**.
 
-## Create an environment in the PowerApps Admin center
-Follow these steps to create a PowerApps environment and a database for that environment.
+   > [!div class="mx-imgBorder"] 
+   > ![](./media/new-environment.png "Create new environment")
 
-## Prerequisites
- To follow this topic, the following items are required:
- - Either a PowerApps Plan 2 or Microsoft Flow Plan 2 license. Alternatively, you can sign up for a [free PowerApps Plan 2 trial](https://web.powerapps.com/signup?redirect=marketing&email=).
- - PowerApps Environment Admin, Office 365 Global Admin, or Azure Active Directory Tenant Admin permissions. For more information, see [Environments administration in PowerApps](environments-administration.md).
+3. Enter the following, and then select **Next**.
+   
+   |Setting  |Description  |
+   |---------|---------|
+   |Name     | The name of your environment.        |
+   |Type     | You can choose Production or Trial.        |
+   |Region     | Choose a region for the environment.        |
+   |Purpose     | A description of the environment.         |
+   |Create a database for this environment? | Select **Yes**. |
 
-## Sign in to the PowerApps Admin center
-Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
+   > [!div class="mx-imgBorder"] 
+   > ![](./media/new-environment-page1.png "Create new environment settings")
 
-## Create an environment and database
-1. In the navigation pane, click or tap **Environments**, and then click or tap **New environment**.
+4. Enter the following, and then select **Save**.
 
-    ![File and Share](./media/create-environment/new-environment.png)
-2. In the **New environment** dialog box, enter a name for the environment, and then select a region and environment type from the drop-down lists. The region  defaults to the Azure Active Directory Tenant home region, but you may select any region from the drop-down list. You cannot change the region once the environment is created. When you're done, click or tap **Create environment**.
+   |Setting  |Description  |
+   |---------|---------|
+   |Language     | The default language for this environment.        |
+   |Currency     | The base currency used for reporting.         |
+   |Enable Dynamics 365 apps     | Select **Yes** and make a selection to automatically deploy apps such as Sales and Customer Service.      |
+   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for Enable Dynamics 365 apps for this setting to appear.        |
+   |Security group | Select a security group to restrict access to this environment. |
 
-    ![File and Share](./media/create-environment/new-environment-dialog.png)
+   > [!div class="mx-imgBorder"] 
+   > ![](./media/new-environment-page2.png "Create new environment settings")
 
-    Select **Preview(United States)** to get early access to the upcoming PowerApps functionalities. Learn more about the [PowerApps Preview Program](preview-environments.md).
-3. Once the environment is created, you'll receive a confirmation message in the dialog box and you'll be prompted to create a database. Click or tap **Create database** to enable access to the Common Data Service.
+## Create an environment with Customer Engagement apps
+When you create an environment with a database, you can add Customer Engagement apps such as Sales and Field Service.
 
-    **Note:** At this time, you can only create a database in the Azure Active Directory Tenant home region.
+> [!NOTE]
+> Currently, apps can only be enabled for Production environments. You can create trials at [https://trials.dynamics.com](https://trials.dynamics.com/).
 
-    ![File and Share](./media/create-environment/create-database-dialog.png)
-4. Select the currency and language for the data stored in the database. You cannot change the currency or language once the database is created. When you're done, click or tap **Create database**.
+### Prerequisites
+To create an environment with a database, you need 1GB available database capacity.
 
-    ![File and Share](./media/create-environment/create-database-dialog2.png)
+### Steps
 
-    It may take several minutes to create the database on the Common Data Service. Once the database is created, the new environment appears in the list of environments on the **Environments** page.
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 Service admin, Office 365 Global admin, or Delegated admin).
+2. In the navigation pane, select **Environments**, and then select **New**.
 
-    ![File and Share](./media/create-environment/new-environment-created.png)
+   > [!div class="mx-imgBorder"] 
+   > ![](./media/new-environment.png "Create new environment")
 
-    Click or tap the environment to view the environment details.
+3. Enter the following, and then select **Next**.
+   
+   |Setting  |Description  |
+   |---------|---------|
+   |Name     | The name of your environment.        |
+   |Type     | You can choose Production or Trial.        |
+   |Region     | Choose a region for the environment.        |
+   |Purpose     | A description of the environment.         |
+   |Create a database for this environment? | Select **Yes**. |
+
+   > [!div class="mx-imgBorder"] 
+   > ![](./media/new-environment-page1.png "Create new environment settings")
+
+4. Enter the language and currency settings.
+
+5. Set **Enable Dynamics 365 apps** to **Yes**, and then select apps to include from the **Automatically deploy these apps** drop-down list.
+
+6. Select **Save**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![](./media/new-environment-page2-enable-apps.png "Create new environment settings")
+
+## Create an environment without a database 
+You can create an environment without a database and use your own data store.
+
+### Prerequisites
+You need 1GB available database capacity.
+
+### Steps
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 Service admin, Office 365 Global admin, or Delegated admin).
+2. In the navigation pane, select **Environments**, and then select **New**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![](./media/new-environment.png "Create new environment")
+
+3. Enter the following, and then select **Save**.
+   
+   |Setting  |Description  |
+   |---------|---------|
+   |Name     | The name of your environment.        |
+   |Type     | You can choose Production or Trial.        |
+   |Region     | Choose a region for the environment.        |
+   |Purpose     | A description of the environment.         |
+   |Create a database for this environment? | Select **No**. |
+
+   > [!div class="mx-imgBorder"] 
+   > ![](./media/new-environment-page1-nodb.png "Create new environment settings")
+
+
+
+<!--
+
+## Troubleshooting
+[content coming]
+
 
 ## FAQ
 
@@ -85,12 +188,8 @@ Provisioning environments is based on available capacity. At least 1GB available
 ### There are multiple admin centers to manage environments. Which should I use?
 We are working to consolidate the centers. Until this is completed, please use the admin center where your environment resides. See [Use the various admin centers](admin-centers.md)
 
-<!-- 
-### What is the licensing/role requirement to provision and administer Environments?
-You can find more details here. 
--->
-
 ### See also 
 [Manage environments in PowerApps](environments-administration.md) <br />
 [Preview: Common Data Service storage capacity](capacity-storage.md)
 
+-->

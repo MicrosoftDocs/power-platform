@@ -2,7 +2,7 @@
 title: "Preview: Administer Power Platform | MicrosoftDocs"
 description: The Power Platform Admin center a unified portal for administrators to manage environments and settings for Dynamics 365 for Customer Engagement, PowerApps, and Flow.
 ms.custom: ""
-ms.date: 03/14/2019
+ms.date: 08/08/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -37,7 +37,7 @@ Currently, the admin center provides the following capabilities.
 |---------|---------|
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support. More information: [Get Help + Support](/power-platform/admin/get-help-support)       |
 |Analytics     | Get a detailed view of key metrics for Power Platform apps. More information: [Common Data Service analytics](/power-platform/admin/analytics-common-data-service)      |
-|Environments | A list of your environments. Select an environment to see details and manage its setting. More information: [Manage environment settings](/power-platform/admin/admin-settings)|
+|Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. More information: [Manage environment settings](/power-platform/admin/admin-settings)|
 |Data integration| More information: [Integrate data into Common Data Service ](data-integrator.md)  |
 |Data Gateway| More information: [Set up data transfer between on-premises data and cloud services ](onpremises-data-gateway-management.md) |
 |Data policies     | More information: [Create and manage data loss prevention policies](create-dlp-policy.md).       |
