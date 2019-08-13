@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 08/13/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -152,6 +152,19 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 - USGov Texas
 
 Please refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
+
+## Configure mobile clients
+
+<!-- When GCC High is enabled, instructions need to be modified for drop down in the dialog -->
+
+To sign in with the PowerApps mobile client requires a few extra configuration steps. 
+
+1. On the sign-in page, select the gear icon in the lower-left corner.
+2. Select **Enable GCC mode**.
+3. Select **Enable**.
+4. On the sign-in page, select **Sign in**.
+
+The mobile application will now use the US Government Cloud domain to look up users. 
 
 ## On-premises data gateway configuration
 
