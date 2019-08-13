@@ -102,11 +102,15 @@
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-team-template-add-entity-form
           - name: Users
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles
+        - name: Encryption
+          items:
+          - name: Encryption
+            href: data-encryption.md
         - name: Email settings
           items:
-          - name: Manage email settings
+          - name: Email settings
             href: settings-email.md
-          - name: Email tracking settings
+          - name: Email tracking 
             href: settings-email-tracking.md
           - name: Mailboxes
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-forward-mailboxes-edit-mailboxes
@@ -119,23 +123,21 @@
         - name: Data management settings
           items:
           - name: Announcements
-            href: https://docs.microsoft.com/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826650(v=crm.8)
+            href: settings-announcements.md
           - name: Auto numbering
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles
+            href: change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles.md
           - name: Automatic record creation policies
             href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-up-rules-to-automatically-create-or-update-records
           - name: Bulk deletion
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/delete-bulk-records
+            href: delete-bulk-records.md
           - name: Data import wizard
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/import-data-all-record-types
+            href: import-data-all-record-types.md
           - name: Data maps
             href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map
           - name: Duplicate detection
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/turn-duplicate-detection-rules-off-whole-organization                                             
-          - name: Encryption
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/data-encryption
+            href: turn-duplicate-detection-rules-off-whole-organization.md                                             
           - name: Templates
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/download-template-data-import
+            href: download-template-data-import.md
           - name: Cascading transaction processing
             href: async-cascading.md
     - name: Platform architecture
