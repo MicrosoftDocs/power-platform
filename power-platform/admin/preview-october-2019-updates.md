@@ -34,6 +34,8 @@ Check out the new features releasing from October 2019 through March 2020 for Dy
 > [!NOTE]
 > Most of the early opt-in features are end user impacting changes. Check out the "Enabled for" column in the [early access features](https://aka.ms/EarlyAccessFeatures) table to know the features that will roll out to the end users automatically in October 2019. 
 
+> [!TIP]
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [How to enable early access to 2019 release wave 2 for Dynamics 365 Customer Engagement](https://youtu.be/q0jYSpsvRbI).  
 
 ## Which environment can be used for early opt-in to 2019 release wave 2 updates?
 
