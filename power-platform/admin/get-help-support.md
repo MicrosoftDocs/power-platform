@@ -25,9 +25,9 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Admins you can use the **Help + support** experience in the [Power Platform Admin center](admin-documentation.md) to get self-help solutions in ***real-time*** for your issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
+Admins you can use the **Help + support** experience in the [Power Platform Admin center](admin-documentation.md) to get self-help solutions in ***real-time*** for their issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
 
-An example of solutions provided for Dynamics 365 for Outlook issues:
+An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 > [!div class="mx-imgBorder"] 
 > ![](media/support-solutions-list.png "List of possible solutions")
