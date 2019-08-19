@@ -93,7 +93,7 @@
         - name: Users + permissions settings
           items:
           - name: Business units
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-business-unit-control-access-records
+            href: create-edit-business-units.md
           - name: Hierarchy security
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
           - name: Positions
