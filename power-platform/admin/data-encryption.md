@@ -1,7 +1,7 @@
 ---
 title: "Data encryption for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
 ms.custom: 
-ms.date: 08/13/2019
+ms.date: 08/19/2019
 ms.reviewer: 
 ms.service: power-platform
 ms.component: pa-admin
@@ -39,8 +39,6 @@ Make sure you have the System Administrator or System Customizer security role o
 
 - Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
-
-**Check your security role**
 
 1. Select an environment and go to **Settings** > **Encryption** > **Data encryption**.
   

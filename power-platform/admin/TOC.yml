@@ -14,7 +14,9 @@
       href: support-overview.md
     - name: Getting started
       items:
-      - name: PowerApps Platform overview
+#      - name: What is the Power Platform?
+#        href: what-is-power-platform.md
+      - name: PowerApps overview
         href: wp-powerapps-platform-overview.md
       - name: What's the role of a PowerApps administrator? 
         href: overview-role-powerapps-admin.md
@@ -75,7 +77,7 @@
           - name: Features 
             href: settings-features.md
           - name: Languages 
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages
+            href: enable-languages.md
           - name: Privacy and security 
             href: settings-privacy-security.md
         - name: Business settings
