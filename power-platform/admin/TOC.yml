@@ -89,7 +89,7 @@
           - name: Currencies
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-transactions-with-multiple-currencies
           - name: Regional formatting
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/regional-other-business-management-settings
+            href: customize-regional-options-admins.md
         - name: Users + permissions settings
           items:
           - name: Business units
