@@ -40,7 +40,7 @@ The following admins will be able to create new environments in the Power Platfo
 
 Download and install the admin PowerShell cmdlets as described [here](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1). For more information about our cmdlets, see [PowerShell support for PowerApps (preview)](powerapps-powershell.md).
 
-Use the following commands to restrict environment creation to Global admins.
+Use the following commands to restrict environment creation to Global admin, Dynamics 365 service admin, and Delegated admin. 
 
 ```
 $settings = @{ DisableEnvironmentCreationByNonAdminUsers = $true }
@@ -53,7 +53,7 @@ Set-TenantSettings $settings
 Yes. Use the following PowerShell commands to restrict Trial environment creation.
 
 ```
-$settings = @{ DisableTrialEnvironmentCreationByNonAdminUsers = $true = $true }
+$settings = @{ DisableTrialEnvironmentCreationByNonAdminUsers = $true }
 Set-TenantSettings $settings
 ```
 
