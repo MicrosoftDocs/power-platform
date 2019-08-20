@@ -95,9 +95,9 @@
           - name: Business units
             href: create-edit-business-units.md
           - name: Hierarchy security
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
+            href: hierarchy-security.md
           - name: Positions
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/hierarchy-security
+            href: hierarchy-security.md#position-hierarchy
           - name: Security roles
             href: https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/security-roles-privileges
           - name: Teams
