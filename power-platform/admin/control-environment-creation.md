@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/08/2019
+ms.date: 08/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
 ---
 
-# Control who can create and manage environments in the Power Platform Admin center
+# Control who can create and manage environments in the Power Platform Admin center 
 
 With the new provisioning model, those with the correct licenses can create an environment as long as 1GB of capacity is available. To restrict environment creation and management to admins, do the following:
 
@@ -46,4 +46,17 @@ Use the following commands to restrict environment creation to Global admins.
 $settings = @{ DisableEnvironmentCreationByNonAdminUsers = $true }
 Set-TenantSettings $settings
 ```
+
+## FAQ
+
+### Can I disable Trial environment creation for users in the tenant?
+Yes. Use the following PowerShell commands to restrict Trial environment creation.
+
+```
+$settings = @{ DisableTrialEnvironmentCreationByNonAdminUsers = $true = $true }
+Set-TenantSettings $settings
+```
+
+Download and install the admin PowerShell cmdlets as described [here](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1). For more information about our cmdlets, see [PowerShell support for PowerApps (preview)](powerapps-powershell.md).
+
 
