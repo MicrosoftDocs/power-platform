@@ -90,7 +90,7 @@ Make sure you have the System Administrator or System Customizer security role o
  After you have enabled the hierarchy modeling, choose the specific model by selecting the **Manager Hierarchy** or **Custom Position Hierarchy**. All system entities are enabled for hierarchy security out-of-the-box, but, you can exclude selective entities from the hierarchy. The **Hierarchy Security** window shown below:  
   
 > [!div class="mx-imgBorder"] 
-> ![](../admin/media/hierarchy-security-setup.png "Set up hierarchy security in Dynamics 365 for Customer Engagement")
+> ![](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security in Dynamics 365 for Customer Engagement")
 
   
  Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access his or her accounts and the accounts of the reports two levels deep. In our example, if you log in into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
@@ -113,12 +113,12 @@ Make sure you have the System Administrator or System Customizer security role o
 >  To add a user to a position or change the user’s position, you must have the **Assign position for a user** privilege.  
 
 > [!div class="mx-imgBorder"] 
-> ![](../admin/media/hierarchy-security-add-position.png "Add user to position in Hierarchy Security in Dynamics 365 for Customer Engagement")
+> ![](../admin/media/hierarchy-security-add-position2.png "Add user to position in Hierarchy Security in Dynamics 365 for Customer Engagement")
   
  To change the position on the user record’s form, on the nav bar, choose **More** (…) and choose a different position, as shown below:  
   
 > [!div class="mx-imgBorder"] 
-> ![](../admin/media/cust-hs-change-position.png "Change position in hierarchy security in Dynamics 365 for Customer Engagement")
+> ![](../admin/media/cust-hs-change-position2.png "Change position in hierarchy security in Dynamics 365 for Customer Engagement")
   
  To create a Position hierarchy:  
   
