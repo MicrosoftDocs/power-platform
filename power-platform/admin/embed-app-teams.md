@@ -1,12 +1,12 @@
 ---
 title: Embed an app in Microsoft Teams | Microsoft Docs
-description: Embed PowerApps apps to your tenant users through Microsoft Teams.
+description: Embed apps to your tenant users through Microsoft Teams.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/13/2019
+ms.date: 08/21/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,9 +31,9 @@ Individuals can share an app they've created in PowerApps in a Team they are a m
 - Be a tenant administrator 
 - Created a canvas app
 
-## Locate your PowerApp's GUID
+## Locate your app's GUID
 
-Find and make note of your PowerApp's GUID to use in a later step.
+Find and make note of your app's GUID to use in a later step.
 
 1. Sign in to [https://web.powerapps.com](https://web.powerapps.com), and then select **Apps** in the menu.
 
@@ -71,7 +71,7 @@ You can skip these steps if App Studio is already installed.
    > [!div class="mx-imgBorder"] 
    > ![Open App Studio](./media/open-app-studio.png "Open App Studio")
 
-## Create a Teams app for your PowerApp
+## Create a Teams app
 
 1. In Teams, open App Studio.
 
@@ -83,7 +83,7 @@ You can skip these steps if App Studio is already installed.
    > [!div class="mx-imgBorder"] 
    > ![Create new app](./media/create-new-app.png "Create new app")
 
-3. Fill in information about your app in the **App Details** page.  For the App ID GUID, you should use your PowerApp's App ID GUID you recorded above.  This will avoid duplication of Teams apps for a particular PowerApp.
+3. Fill in information about your app in the **App Details** page.  For the App ID GUID, you should use your app's ID GUID you recorded above.  This will avoid duplication of Teams apps for a particular app.
  
    > [!div class="mx-imgBorder"] 
    > ![Fill in information](./media/fill-in-info-about-app.png "Fill in information")
@@ -121,48 +121,67 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
 
 5. Under **Capabilities**, select **Tabs**.
 
+**Add a Team tab (Steps 6 and 7) or a Personal tab (Steps 8 and 9)**
+
 6. Under **Team tab** select **Add**.
 
    > [!div class="mx-imgBorder"] 
    > ![Team tab Add](./media/team-tab-add.png "Team tab Add")
 
-7. Add your app's configuration URL in the "Configuration URL" input field, using the following format: `https://web.powerapps.com/webplayer/teamsapptabsettings?appid=<PowerApp ID>`
+7. Add your app's configuration URL in the "Configuration URL" input field, using the following format: `https://web.powerapps.com/webplayer/teamsapptabsettings?appid=<your App ID>`
 
-   Replace `<PowerApp ID>` with the App ID GUID you recorded above.
+   Replace `<App ID>` with the App ID GUID you recorded above.
 
-   Select the [scope](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope) for your app to appear in. Ensure **Can update configuration** is checked, and then select **Save**.
+   Select the [scope](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope) for your app to appear in. Ensure **Can update configuration** is checked, select **Save**, and then skip to Step 10.
 
    > [!div class="mx-imgBorder"] 
    > ![Configuration URL](./media/configuration-url.png "Configuration URL")
 
+**--OR--**
+
+8. To configure the Teams manifest, under **Add a personal tab** select **Add**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Team tab Add](./media/personal-tab-add.png "Team tab Add")
+
+9. Fill in the following fields, and then select **Save**.
+
+   **Name**: your app name<br />
+   **Entity ID**: your app ID <br />
+   **Content URL**: `https://web.powerapps.com/webplayer/iframeapp?appId=<your app ID>&source=teamstab` <br />
+   **Website URL**: `https://web.powerapps.com/webplayer/app?appId=<your app ID>&source=teamsopenwebsite`
+
+   > [!div class="mx-imgBorder"] 
+   > ![Configuration URL](./media/personal-configuration-url.png "Configuration URL")
+
 **Add the app to all teams in your tenant**
 
-8. Under **Finish**, select **Valid domains**. Add **apps.powerapps.com** and **apps.preview.powerapps.com** as valid domains for the Teams application.
+10. Under **Finish**, select **Valid domains**. Add **apps.powerapps.com** and **apps.preview.powerapps.com** as valid domains for the Teams application.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Add valid domains](./media/add-valid-domains.png "Add valid domains")
+    > [!div class="mx-imgBorder"] 
+    > ![Add valid domains](./media/add-valid-domains.png "Add valid domains")
 
-9. To set device permissions for your app, under **Device permissions** select **Set up**.
+11. To set device permissions for your app, under **Device permissions** select **Set up**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Device permissions](./media/device-permissions.png "Device permissions")
+    > [!div class="mx-imgBorder"] 
+    > ![Device permissions](./media/device-permissions.png "Device permissions")
 
-10. Under **Finish**, select **Test and distribute**, and then select **Download**.
+12. Under **Finish**, select **Test and distribute**, and then select **Download**.
 
     > [!div class="mx-imgBorder"] 
     > ![Download app package](./media/download-app-package.png "Download app package")
 
-11. Go to **Store** > **Upload a custom app** > **Upload for** [your tenant name].
+13. Go to **Store** > **Upload a custom app** > **Upload for** [your tenant name].
 
     > [!div class="mx-imgBorder"] 
     > ![Upload for tenant](./media/upload-for-tenant.png "Upload for tenant")
 
-12. Locate your app file and select it. Then, navigate to your team and select **+**.
+14. Locate your app file and select it. Then, navigate to your team and select **+**.
 
     > [!div class="mx-imgBorder"] 
     > ![Add app](./media/add-app-all-tabs.png "Add app")
 
-13. You app will appear as a tile under **All Tabs**. Search for your app, select it, and then select **Save**.
+15. You app will appear as a tile under **All Tabs**. Search for your app, select it, and then select **Save**.
 
     > [!div class="mx-imgBorder"] 
     > ![Add app as tab](./media/add-app-as-tab.png "Add app as tab")
