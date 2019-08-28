@@ -2,7 +2,7 @@
 title: "Early opt-in to 2019 release wave 2 | MicrosoftDocs"
 description: Opt in to 2019 release wave 2  for the Dynamics 365 for Customer Engagement platform
 ms.custom: ""
-ms.date: 08/13/2019
+ms.date: 08/28/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -125,7 +125,7 @@ Use the following table to check the status of the 2019 release wave 2 update an
 |Display name  |Version number |
 |---------|---------|
 |Dynamics 365 Sales Application    | 9.0.1907.4Yxx, Y is greater than or equal to 5   |
-|Knowledge Management Features    | 9.0.1.8Yx, Y is greater than or equal to 5 |
+|Knowledge Management Features    | 9.0.1.8xx or 9.0.1.9xx |
 |Field Service  | 8.8.5.1Y, Y is greater than or equal to 0  
 |Dynamics 365 for Marketing     | Check back for information        |
 
