@@ -2,7 +2,7 @@
 title: "FAQs and more information| MicrosoftDocs"
 description: Licensing frequently asked questions.
 ms.custom: ""
-ms.date: 09/27/2018
+ms.date: 08/29/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -24,6 +24,9 @@ search.app:
 # FAQs and more information
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!NOTE]
+> For information about licensing changes coming to PowerApps and Microsoft Flow in October 2019, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md).
 
 We have found some common questions on licensing and plan options. We’ve included several here with their answers. However, if you find you need more details, you can find that on PowerApps plans here https://powerapps.microsoft.com/en-us/pricing/ and Microsoft Flow plans here https://flow.microsoft.com/en-us/pricing/. For additional information on the mechanics of managing users, please refer to: [Manage PowerApps licenses in your organization](signup-question-and-answer.md).
 

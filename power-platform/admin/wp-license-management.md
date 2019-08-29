@@ -2,7 +2,7 @@
 title: "Licensing and license management | MicrosoftDocs"
 description: About licensing and license management.
 ms.custom: ""
-ms.date: 09/27/2018
+ms.date: 08/29/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -24,6 +24,9 @@ search.app:
 # About licensing and license management
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!NOTE]
+> For information about licensing changes coming to PowerApps and Microsoft Flow in October 2019, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md).
 
 Organizations can obtain licenses by either licensing Microsoft PowerApps or Flow specifically or by it being included in the license of another Microsoft cloud service offering. For example, both Office 365 and Dynamics 365 provide entitlements for PowerApps and Microsoft Flow. As with most Microsoft licensing, you can mix and match for users as appropriate giving some additional entitlements.
 
