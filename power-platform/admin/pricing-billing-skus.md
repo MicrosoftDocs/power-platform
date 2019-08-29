@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 08/29/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,59 +17,8 @@ search.app:
 ---
 # Licensing overview
 
-<!--
-## Administering Power Platform
-
-We have updated how you administer PowerApps and Microsoft Flow with the following changes:
-
-1. You can use the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) to create and manage environments.
-2. You do not need a PowerApps or Microsoft Flow P2 license to administer environments.
-3. Office 365 Global admins and Dynamics 365 Service admins can administer PowerApps and Microsoft Flow environments.
-4. Any user can create an environment provided there is database capacity (1GB minimum). To restrict environment creation, see below.
-
-**Restrict environment creation to Power Platform Service admins**
-
-Use the following PowerShell script to restrict the creation of environments to Power Platform Service admins.
-
-    ```powershell  
-    need commands 
-    ```  
-For information on the Power Platform Service admin role, see [Use the Service admin role to administer without a license](administer-without-license.md).
-
-The following table describes what those with the following license or role can do:
-- **User with any license**: Users with a PowerApps, Customer Engagement, or Office 365 license
-- **Service/Global admin**: Users with the Power Platform Service admin, Dynamics 365 Service admin, or Office 365 Global admin roles
-
-|Feature  |User with any license  |Service/Global admin  |
-|---------|---------|---------|
-|View environments     |<sup>*</sup>Yes      |Yes         |
-|Create environments   |<sup>*</sup>Yes      |Yes         |
-|Edit environments     |<sup>*</sup>Yes      |Yes         |
-|Delete environments     |<sup>**</sup>Yes       |<sup>**</sup>Yes         |
-|Backup     |<sup>**</sup>Yes        |<sup>**</sup>Yes       |
-|Restore    |<sup>**</sup>Yes      |<sup>**</sup>Yes      |
-|Reset      |<sup>*</sup>Yes      |Yes         |
-|Copy     |<sup>*</sup>Yes      |Yes         |
-|Resource/apps/solution     |<sup>**</sup>Yes         |<sup>**</sup>Yes       |
-|Analytics - Common Data Service     |<sup>*</sup>Yes      |Yes         |
-|Analytics - PowerApps    |<sup>*</sup>Yes      |Yes         |
-|Analytics - Flow    |<sup>*</sup>Yes      |Yes         |
-|Analytics - Capacity    |<sup>*</sup>Yes      |Yes         |
-|View Help + Support tickets    |Yes   |Yes    |
-|Create Help + Support tickets    |Yes   |Yes    |
-|View data integration    |Yes   |Yes    |
-|Create data integration    |Yes   |Yes    |
-|View data loss prevention    |Yes   |Yes    |
-|Create data loss prevention    |Yes   |Yes    |
-
-<sup>*</sup>For environments created or managed by the user <br />
-<sup>**</sup>Not yet available in Power Platform Admin center
-
-
-
--->
-
-
+> [!NOTE]
+> For information about licensing changes coming to PowerApps and Microsoft Flow in October 2019, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md).
 
 ## About PowerApps licenses
 
