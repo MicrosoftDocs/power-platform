@@ -2,6 +2,13 @@
   items: 
   - name: Administer Power Platform
     href: admin-documentation.md
+    items:
+    - name: Licensing changes in October 2019
+      items:
+      - name: PowerApps and Flow licensing FAQs
+        href: powerapps-flow-licensing-faq.md
+      - name: Requests limits and allocations
+        href: api-request-limits-allocations.md
   - name: Administer Dynamics 365 for Customer Engagement
     href: about-ce-guide.md
   - name: Administer PowerApps
@@ -259,8 +266,6 @@
       href: wp-compliance-data-privacy.md
     - name: PowerApps US Government
       href: powerapps-us-government.md
-  #  - name: Building a Center of Excellence
-  #    href: build-center-of-excellence.md
   - name: Administer Microsoft Flow
     href: about-flow-guide.md
   - name: Administer Power BI
