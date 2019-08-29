@@ -37,7 +37,7 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | Office licenses (that include PowerApps/Microsoft Flow)  | 2,000                                                     |
 | Application user / Non-interactive users       | [See section below](#non-licensed-usersapplication-users) |
 
-<sup>*</sup>Dynamics 365 Enterprise applications include Dynamics 365 for Sales Enterprise, Dynamics 365 for Marketing, Dynamics 365 for Customer Service Enterprise, Dynamics 365 for Field Service, Dynamics 365 for Project Service Automation, Dynamics 365 for Retail, Dynamics 365 for Talent. 
+<sup>*</sup>Dynamics 365 Enterprise applications include Dynamics 365 for Sales Enterprise, Dynamics 365 for Customer Service Enterprise, Dynamics 365 for Field Service, Dynamics 365 for Project Service Automation, Dynamics 365 for Retail, Dynamics 365 for Talent. 
 
 <sup>**</sup>Dynamics 365 Professional includes Dynamics 365 for Sales Professional, Dynamics 365 for Customer Service Professional.
 
