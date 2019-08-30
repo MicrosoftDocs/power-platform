@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,7 +19,6 @@ search.app:
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created PowerApps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to PowerApps US Government. It is recommended that you read this supplementary section alongside the PowerApps [documentation](https://docs.microsoft.com/powerapps/powerapps-overview), which covers information about the general PowerApps service description. For brevity, this service is commonly referred to as PowerApps Government Community Cloud (GCC).
 
-
 The PowerApps US Government service description is designed to serve as an overlay to the general PowerApps service description. It defines the unique commitments of this service and the differences from PowerApps offerings that have been available to our customers since October 2016.
 
 ## About PowerApps US Government environments and plans
@@ -31,12 +30,11 @@ The PowerApps GCC environment provides compliance with federal requirements for 
 In addition to the features and capabilities of PowerApps, organizations that use PowerApps US Government benefit from the following features unique to PowerApps US Government:
 
 - Your organization's customer content is physically segregated from customer content in Microsoft's commercial PowerApps services.
-
 - Your organization's customer content is stored within the United States.
-
 - Access to your organization's customer content is restricted to screened Microsoft personnel.
-
 - PowerApps US Government complies with certifications and accreditations that are required for US public sector customers.
+
+Beginning September, 2019, eligible customers may now choose to deploy PowerApps US Government to the “GCC High” environment, which enables single sign-on and seamless integration with Office 365 GCC High deployments. Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the PowerApps US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
 
 ## Customer eligibility
 
@@ -49,9 +47,7 @@ Entities with questions about eligibility for PowerApps US Government should con
 Access to PowerApps US Government plans is restricted to the following offerings; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
 - PowerApps/Flow Plan 1 US Government
-
 - PowerApps/Flow Plan 2 US Government
-
 - In addition to the standalone plans, PowerApps and Microsoft Flow capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Office 365 and Dynamics 365. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
 
 Additional information about the differences in functionality between these groups of licenses is described in more detail on the [PowerApps licensing information](https://powerapps.microsoft.com/pricing/) page. PowerApps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
@@ -103,6 +99,8 @@ Note that, at the present time, the PowerApps US Government services are under r
 
 PowerApps US Government has features designed to support customer’s CJIS Policy requirements for law enforcement agencies. Please visit the PowerApps US Government products page in Trust Center for more detailed information related to certifications and accreditations.
 
+Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the PowerApps US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations.
+
 ## PowerApps US Government and other Microsoft services
 
 PowerApps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Microsoft Flow US Government. PowerApps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, PowerApps mobile applications any third-party client application that connects to PowerApps US Government are not part of PowerApps US Government's accreditation boundary and government customers are responsible for managing them.
@@ -134,21 +132,58 @@ You can find full details of the Azure AD security architecture and control impl
 
 ## PowerApps US Government service URLs
 
-You use a different set of URLs to access PowerApps US Government, as shown in the following table.
+You use a different set of URLs to access PowerApps US Government environments, as shown in the following table (the commercial URLs are also shown for contextual reference, in case they are more readily familiar to you).
 
 | **Commercial version URL**     | **US Government version URL**         |
 |--------------------------------|---------------------------------------|
-| <https://web.powerapps.com>    | <https://gov.web.powerapps.us>        |
-| <https://create.powerapps.com> | <https://gov.create.powerapps.us>     |
-| <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us>      |
-| <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors>  |
+| <https://web.powerapps.com>    | <https://gov.web.powerapps.us> (GCC) <br/><https://gov.make.powerapps.us> (GCC)<br/><https://high.make.powerapps.us> (GCC High)   |
+| <https://create.powerapps.com> | <https://gov.create.powerapps.us> (GCC)<br /><https://high.make.powerapps.us> (GCC High)    |
+| <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us> (GCC)<br /><https://high.admin.powerapps.us> (GCC High)     |
+| <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors><br /><https://high.flow.microsoft.us/connectors> (GCC High)  |
+
+For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users’ access points:
+
+**GCC Customers:**
+
+*.microsoft.us<br/>
+*.powerapps.us<br/>
+*.azure-apihub.us<br/>
+*.azure.us<br/>
+*. usgovcloudapi.net<br/>
+*.microsoftonline.com<br/>
+*. microsoft.com<br/>
+*.windows.net<br/>
+*. azureedge.net<br/>
+*. azure.net<br/>
+*.crm9.dynamics.com<br/>
+*.dynamics365portals.us
+
+Please also refer to the Required IP Ranges to enable access to Common Data Service Instances that users and administrators may create within your tenant:
+
+[https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
+
+**GCC High Customers:**
+
+*.microsoft.us<br/>
+*.powerapps.us<br/>
+*.azure-apihub.us<br/>
+*.azure.us<br/>
+*. usgovcloudapi.net<br/>
+*.microsoftonline.us<br/>
+*. azureedge.net<br/>
+*. azure.net<br/>
+*.crm.microsoftdynamics.us<br/>
+*.high.dynamics365portals.us
+
+Please also refer to the Required IP Ranges to enable access to Common Data Service Instances that users and administrators may create within your tenant:
+
+[https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 
 ## Connectivity between PowerApps US Government and public Azure Cloud Services
 
 Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a PowerApps customer, and you have existing SQL instances in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government cloud IP space, for the following datacenters:
 
 - USGov Virginia
-
 - USGov Texas
 
 Please refer to the Azure IP Ranges and [Service Tags – US Government Cloud document](https://www.microsoft.com/download/confirmation.aspx?id=57063), focusing attention on AzureCloud.usgovtexas and AzureCloud.usgovvirginia. Also note that these are the IP ranges required in order for your end users to have access to the service URLs.
@@ -168,8 +203,7 @@ The mobile application will now use the US Government Cloud domain to look up us
 
 ## On-premises data gateway configuration
 
-Install an [on-premises data gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in
-PowerApps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
+Install an [on-premises data gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in PowerApps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
 If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for PowerApps. However, if you are unable to connect to your tenant, you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
 
