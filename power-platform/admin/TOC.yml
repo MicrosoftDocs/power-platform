@@ -89,11 +89,11 @@
             href: settings-privacy-security.md
         - name: Business settings
           items:
-          - name: Business closures 
+          - name: Business closures  #Don't move to PPAC, Customer Service setting
             href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-when-business-closed-csh
-          - name: Calendar
+          - name: Calendar #Don't move to PPAC, Busn Mgmt setting
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/work-fiscal-year-settings
-          - name: Currencies
+          - name: Currencies #Don't move to PPAC, Busn Mgmt setting
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-transactions-with-multiple-currencies
           - name: Regional formatting
             href: customize-regional-options-admins.md
@@ -106,10 +106,10 @@
           - name: Positions
             href: hierarchy-security.md#position-hierarchy
           - name: Security roles
-            href: https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/security-roles-privileges
-          - name: Teams
+            href: security-roles-privileges.md
+          - name: Teams #this should be moved to PPAC
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-team-template-add-entity-form
-          - name: Users
+          - name: Users #this should be moved to PPAC
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles
         - name: Encryption
           items:
@@ -121,9 +121,9 @@
             href: settings-email.md
           - name: Email tracking 
             href: settings-email-tracking.md
-          - name: Mailboxes
+          - name: Mailboxes #this should be moved to PPAC
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-forward-mailboxes-edit-mailboxes
-          - name: Server profiles
+          - name: Server profiles #this should be moved to PPAC
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-email-service-configurations-server-side-synchronization
         - name: Services settings
           items:
