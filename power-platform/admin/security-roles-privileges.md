@@ -85,23 +85,15 @@ These settings can be found in the Power Platform Admin center by going to **Env
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
-
 Check your security role:
 - Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
+- Don’t have the correct permissions? Contact your system administrator.<br />
 
 1. Select an environment and go to **Settings** > **User's + permissions** > **Security roles**.
-
 2. On the command bar, select **New**.
-
 3. Enter a role name.
-
 4. Select the **Member’s privilege inheritance** drop-down list.
-
 5. Select **Direct User/Basic access level and Team privileges**.
-
 6. Go to each tab and set the appropriate privileges on each entity.
 
    To change the access level for a privilege, select the access-level symbol until you see the symbol you want. The access levels available depend on whether the record type is organization-owned or user-owned.
