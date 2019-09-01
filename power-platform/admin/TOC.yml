@@ -121,10 +121,10 @@
             href: settings-email.md
           - name: Email tracking 
             href: settings-email-tracking.md
-          - name: Mailboxes #this should be moved to PPAC
+          - name: Mailboxes 
             href: create-forward-mailboxes-edit-mailboxes.md
-          - name: Server profiles #this should be moved to PPAC
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-email-service-configurations-server-side-synchronization
+          - name: Server profiles 
+            href: supported-email-service-configurations-server-side-synchronization.md
         - name: Services settings
           items:
           - name: Microsoft Social Engagement
