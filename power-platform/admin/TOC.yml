@@ -107,8 +107,8 @@
             href: hierarchy-security.md#position-hierarchy
           - name: Security roles
             href: security-roles-privileges.md
-          - name: Teams #this should be moved to PPAC
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-team-template-add-entity-form
+          - name: Teams 
+            href: create-team-template-add-entity-form.md
           - name: Users #this should be moved to PPAC
             href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles
         - name: Encryption
