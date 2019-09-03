@@ -2,8 +2,8 @@
 title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 keywords: encrypt
-ms.date: 08/09/2019
-ms.service: power-platform
+ms.date: 08/16/2019
+ms.service: crm-online
 ms.custom: 
 ms.topic: article
 applies_to: 
@@ -26,9 +26,6 @@ search.app:
 ---
 
 # Manage the encryption key
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 All environments of Common Data Service and Dynamics 365 for Customer Engagement apps use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
   
  By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don’t have to.  The manage keys feature in the Power Platform Admin Center (preview) gives administrators the ability to self-manage the database encryption key that is associated with Common Data Service and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps tenant. 
@@ -140,7 +137,7 @@ Use this procedure to set the manage key feature the first time for an environme
 #### Generate a new key (.pfx)   
 1.	Enter a password, and then re-enter the password to confirm.
 2.	Select **Create**, and then select the created file notification on your browser.
-3.	Download and save the file in a secure location (we recommend that this key is backed up along with its password). 
+3.	The encryption key .PFX file is downloaded to your web browser's default download folder. Save the file in a secure location (we recommend that this key is backed up along with its password). 
   
 To perform this task using PowerShell, see [Get-CRMGenerateProtectionkey](/powershell/module/microsoft.xrm.onlinemanagementapi/Get-CrmGenerateProtectionKey?view=dynamics365ce-ps) and [Set-CrmTenantProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmtenantprotectionkey?view=dynamics365ce-ps).
 
@@ -185,8 +182,8 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 4.  Select **See all**. 
 5.  In the **Environment Encryption** section, select **Manage**. 
 6.	Select **Confirm** to acknowledge the manage key risk.
-1.  Select **Apply this key** to accept changing the encryption to use the activated key. 
-2.  Select **Confirm** to acknowledge that you are managing the key directly and that there is downtime for this action.
+7.  Select **Apply this key** to accept changing the encryption to use the activated key. 
+8.  Select **Confirm** to acknowledge that you are managing the key directly and that there is downtime for this action.
 
 #### Return a managed encryption key back to Microsoft-provided encryption key
  Returning to the Microsoft-provided encryption key configures the environment back to the default behavior where [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] manages the encryption key for you.  
@@ -210,14 +207,57 @@ Since there is only one active key per tenant, locking the encryption for the te
 > - Locked environments can’t be restored from backup.  
 > - Locked environments are deleted if not unlocked after 28 days.
 > -	You can’t lock environments for 72 hours after an encryption key change. 
-> - Locking a tenant *locks all environments* within the tenant. 
+> - Locking a tenant *locks all active environments* within the tenant. 
 
-Tenant locking is currently unavailable from the Power Platform Admin Center (preview). To lock a tenant using the PowerShell cmdlet, see [Set-CrmLockTenantProtectedInstances](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmlocktenantprotectedinstances?view=dynamics365ce-ps).
+> [!IMPORTANT]
+> - You must wait at least one hour after you lock active environments before you can unlock them. 
+> - Once the lock process begins, all encryption keys with either an Active or Available state are deleted. The lock process can take up to an hour and during this time unlocking locked environments is not allowed. 
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. Select the **Environments** tab and then on the command bar select **Manage encryption keys**. 
+3. Select the **Active** key and then select **Lock active environments**. 
+4. On the right pane select **Upload active key**, browse to and select the key, enter the password, and then select **Lock**. 
+5. When prompted, enter the text that is displayed on your screen to confirm that you want to lock all environments in the region, and then select **Confirm**.
+
+To lock a tenant using the PowerShell cmdlet, see [Set-CrmLockTenantProtectedInstances](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmlocktenantprotectedinstances?view=dynamics365ce-ps).
   
 #### Unlock locked environments
 To unlock environments you must first [upload](#upload-a-key-pfx-or-byok) and then [activate](#activate-an-encryption-key-for-a-tenant) the tenant encryption key with the same key that was used to [lock the tenant](#lock-the-tenant). Please note that locked environments do not get unlocked automatically once the key has been activated. Each locked environment has to be unlocked individually. 
 
-Environment unlocking is currently unavailable from the Power Platform Admin Center (preview). To unlock an environment using the PowerShell cmdlet, see [Set-CrmUnlockTenantProtectedInstance](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmunlocktenantprotectedinstance?view=dynamics365ce-ps).
+> [!IMPORTANT]
+> - You must wait at least one hour after you lock active environments before you can unlock them. 
+> - The unlock process can take up to an hour. Once the key is unlocked, you can use the key to [Manage encryption for an environment](#manage-encryption-for-an-environment). 
+> - You can't generate a new or upload an existing key until all locked environments are unlocked. 
+
+##### Unlock encryption key
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. Select the **Environments** tab and then select **Manage encryption keys**.  
+3. Select the key that has a **Locked** state, and then on the command bar select **Unlock key**. 
+4. Select **Upload locked key**, browse to and select the key that was used to lock the tenant, enter the password, and then select **Unlock**. 
+   The key goes into an **Installing** state. You must wait until the key is in an **Active** state before you can unlock locked environments. 
+5. To unlock an environment, see the next section. 
+
+##### Unlock environments
+1. Select the **Environments** tab, and then select the locked environment name. 
+    > [!TIP]
+    > Don't select the row. Select the environment name. 
+    ![Open environment to view settings](media/open-environment-settings.png)
+
+2. In the **Details** section, select **See all** to display the **Details** pane on the right. 
+3. In the **Environment** encryption section on the **Details** pane select **Manage**. 
+
+     > [!div class="mx-imgBorder"] 
+     > ![Environment-details-pane](media/details-pane.png "Environment details pane")
+
+4. On the **Environment encryption** page select **Unlock**. 
+
+     > [!div class="mx-imgBorder"] 
+     > ![Unlock environment](media/unlock-environment.png "Unlock environment")
+
+5. Select **Confirm** to confirm that you want to unlock the environment. 
+6. Repeat the previous steps to unlock additional environments. 
+
+To unlock an environment using the PowerShell cmdlet, see [Set-CrmUnlockTenantProtectedInstance](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmunlocktenantprotectedinstance?view=dynamics365ce-ps).
 
   
 ## Encryption key change notification
