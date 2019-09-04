@@ -1,8 +1,8 @@
 ---
 title: "Early opt-in to 2019 release wave 2 | MicrosoftDocs"
-description: Opt in to 2019 release wave 2  for the Dynamics 365 for Customer Engagement platform
+description: Opt in to 2019 release wave 2 for the Dynamics 365 for Customer Engagement platform
 ms.custom: ""
-ms.date: 08/28/2019
+ms.date: 09/04/2019
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -51,6 +51,8 @@ You can enable trial and Sandbox environments for the 2019 release wave 2 releas
 > - Test the updates before rolling out to Production.
 >
 > By activating the 2019 release wave 2 updates opt-in, you will get features and updates that are end user impacting only. These and other changes will be enabled automatically for everyone in October 2019.
+> 
+> [Tenant to tenant migration](https://docs.microsoft.com/dynamics365/customer-engagement/admin/move-instance-tenant) is not supported for early opt-in.
 
 ## How do I enable the 2019 release wave 2 updates
 
