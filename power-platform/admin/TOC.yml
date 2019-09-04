@@ -109,8 +109,8 @@
             href: security-roles-privileges.md
           - name: Teams 
             href: create-team-template-add-entity-form.md
-          - name: Users #this should be moved to PPAC
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles
+          - name: Users 
+            href: create-users-assign-online-security-roles.md
         - name: Encryption
           items:
           - name: Encryption
