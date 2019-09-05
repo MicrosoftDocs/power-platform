@@ -1,2 +1,66 @@
-- name: Index
-  href: index.md
+- name: Overview
+  href: overview.md
+- name: Quickstart
+  href: quickstart.md
+- name: Videos
+  href: virtual-agent-videos.md
+- name: Frequently asked questions
+  href: faq.md
+- name: Introduction
+  items:
+   - name: Create a bot
+     href: getting-started-create-bot.md
+   - name: Create a PowerApps environment
+     href: getting-started-new-environment.md
+   - name: Overview of Virtual Agent pages
+     href: getting-started-bot-designer.md
+   - name: Create a custom greeting for your bot
+     href: getting-started-create-greeting.md
+   - name: Create custom topics for your bot
+     href: getting-started-create-topics.md
+   - name: Work with the authoring canvas
+     href: expanding-design-canvas.md
+   - name: Validate a topic with Topic Checker
+     href: topic-checker.md
+   - name: Use analytics to improve your bot
+     href: getting-started-analytics.md
+   - name: Deploy your bot
+     href: getting-started-deploy.md
+   - name: Delete your bot
+     href: getting-started-delete-bot.md
+- name: How-to
+  items:
+   - name: Work with built-in topics
+     href: how-to-templates.md
+   - name: Work with the Test bot pane
+     href: how-to-test-bot.md
+   - name: Work with variables
+     href: how-to-variables.md
+   - name: Hand off a bot conversation to a live agent
+     href: how-to-handoff.md
+   - name: Add actions to your bot using Microsoft Flow
+     href: how-to-flow.md
+   - name: Use a Microsoft Bot Framework bot with a Dynamics 365 bot
+     href: how-to-use-dispatcher.md
+- name: Analytics
+  items:
+   - name: Analytics overview
+     href: analytics-overview.md
+   - name: Summary page
+     href: analytics-summary.md
+   - name: Customer satisfaction page
+     href: analytics-csat.md
+   - name: Topic details page
+     href: analytics-topic-details.md
+   - name: Sessions page
+     href: analytics-sessions.md
+- name: Data Subject Rights (DSR) requests under GDPR
+  items:
+   - name: Overview of GDPR compliance
+     href: gdpr-summary.md
+   - name: Requests to export data
+     href: gdpr-export.md
+   - name: Requests to delete data
+     href: gdpr-delete.md
+   - name: Requests to discover data
+     href: gdpr-discovery.md
