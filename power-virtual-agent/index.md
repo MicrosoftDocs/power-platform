@@ -1,1 +1,0 @@
-# Welcome to power-virtual-agent!
