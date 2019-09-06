@@ -91,7 +91,7 @@ When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Un
 
 When Unified Interface Only mode is enabled, environment settings can be accessed via a menu on the navigation bar. Follow these steps to navigate to **Advanced Settings**:
 
-1. Select **Settings** (![Gear button](../admin/media/selection-rule-gear.gif "Gear button")) on the navigation bar.
+1. Select **Settings** (![Gear button](media/selection-rule-gear.gif "Gear button")) on the navigation bar. 
 2. Select **Advanced Settings**.
 
    > [!div class="mx-imgBorder"] 
