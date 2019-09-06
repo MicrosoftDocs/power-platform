@@ -204,6 +204,14 @@
           href: prevent-data-loss.md
         - name: Introduction to data groups
           href: introduction-to-data-groups.md
+      - name: Teams and team templates
+        items: 
+        - name: Manage teams
+          href:
+        - name: Team templates
+          href:
+        - name: Team templates for access rights
+          href: 
     - name: Management and monitoring
       items: 
       - name: Overview
