@@ -17,6 +17,8 @@ search.app:
 ---
 # Manage teams
 
+[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+
 Using teams in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. While a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team.  
   
  You can use three types of teams:  
@@ -71,8 +73,6 @@ If an owner team doesn’t own records and doesn’t have security roles assigne
 For more information, see [Assign a record to a user or team](../basics/assign-record-user-team.md).
 
 ## Create an owner team
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)]
 
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
    
