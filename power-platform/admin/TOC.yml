@@ -29,6 +29,16 @@
         href: overview-role-powerapps-admin.md
       - name: PowerApps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
+    - name: Unified Interface
+      items:
+      - name: About Unified Interface
+        href: about-unified-interface.md
+      - name: Enable Unified Interface Only
+        href: enable-unified-interface-only.md
+      - name: Update apps to Unified Interface
+        href: update-apps-to-unified-interface.md
+      - name: Enable the hybrid experience
+        href: enable-hybrid-experience.md
     - name: Environments
       items:
       - name: Early opt-in to 2019 release wave 2
