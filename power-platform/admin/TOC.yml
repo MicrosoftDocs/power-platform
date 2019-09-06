@@ -207,11 +207,11 @@
       - name: Teams and team templates
         items: 
         - name: Manage teams
-          href:
+          href: manage-teams.md
         - name: Team templates
-          href:
+          href: about-team-templates.md
         - name: Team templates for access rights
-          href: 
+          href: create-team-template-add-entity-form.md
     - name: Management and monitoring
       items: 
       - name: Overview
