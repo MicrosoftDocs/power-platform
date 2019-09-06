@@ -4,6 +4,11 @@
       "source_path": "power-platform/admin/provision-environment.md",
       "redirect_url": "create-environment",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agent/index.md",
+      "redirect_url": "overview",
+      "redirect_document_id": "false"
     }
   ]
 }
