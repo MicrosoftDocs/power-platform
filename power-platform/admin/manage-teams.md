@@ -52,7 +52,7 @@ The type of team you choose depends on the goals, nature of the project, and eve
 Anyone who has Create, Read, Update (Write), Delete (CRUD) privileges on the Team entity, can create any of the team types.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/create-teams-security-roles.png "Privileges for creating teams")
+> ![](media/create-teams-security-roles.png "Privileges for creating teams") 
 
 ### Add a Team administrator
 When you create a team, you need to add a Team administrator with a security role that has Read privilege to the Team entity. Go to **Settings** > **Security** > **Teams** and select a team to enter the Team administrator.
