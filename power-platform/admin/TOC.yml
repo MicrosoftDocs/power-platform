@@ -21,8 +21,8 @@
       href: support-overview.md
     - name: Getting started
       items:
-#      - name: What is the Power Platform?
-#        href: what-is-power-platform.md
+#     - name: What is the Power Platform?
+#       href: what-is-power-platform.md
       - name: PowerApps overview
         href: wp-powerapps-platform-overview.md
       - name: What's the role of a PowerApps administrator? 
