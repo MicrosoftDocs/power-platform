@@ -37,6 +37,8 @@
         href: sign-in-office-365-apps.md
       - name: Manage subscription with Office 365 admin center
         href: use-office-365-admin-center-manage-subscription.md
+      - name: Enabling preview features
+        href: what-are-preview-features-how-do-i-enable-them
       - name: Unified Interface
         items:
         - name: About Unified Interface
