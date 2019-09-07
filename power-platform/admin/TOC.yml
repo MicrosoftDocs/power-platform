@@ -276,9 +276,6 @@
         href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
-    - name: Extend apps
-      items:
-      - name: 
     - name: GDPR - Responding to DSR requests
       items:
       - name: System-generated logs 
