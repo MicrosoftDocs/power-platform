@@ -19,7 +19,7 @@ search.app:
 
 As we evolve apps to the Common Data Service platform, where feature settings are located and how you access them is changing. Here's what you need to know.
 
-## Settings in non-Unified Interface web clients prior to xyz
+## Settings legacy web client apps
 
 Legacy web clients might look like the following:
 
@@ -27,11 +27,7 @@ Legacy web clients might look like the following:
 
 To view settings, go to **Settings** and then pick the feature setting to configure.
 
-## Settings in apps after xyz
-
-
-
-## Settings in model-driven apps
+## Settings in Unified Interface apps
 
 
 

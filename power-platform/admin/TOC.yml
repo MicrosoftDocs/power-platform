@@ -29,16 +29,24 @@
         href: overview-role-powerapps-admin.md
       - name: PowerApps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
-    - name: Unified Interface
-      items:
-      - name: About Unified Interface
-        href: about-unified-interface.md
-      - name: Enable Unified Interface Only
-        href: enable-unified-interface-only.md
-      - name: Update apps to Unified Interface
-        href: update-apps-to-unified-interface.md
-      - name: Enable the hybrid experience
-        href: enable-hybrid-experience.md
+      - name: Try Dynamics 365 apps
+        href: try-dynamics-365-online.md
+      - name: Move between apps
+        href: quickly-navigate-office-365-app-launcher.md
+      - name: Sign in to apps
+        href: sign-in-office-365-apps.md
+      - name: Manage subscription with Office 365 admin center
+        href: use-office-365-admin-center-manage-subscription.md
+      - name: Unified Interface
+        items:
+        - name: About Unified Interface
+          href: about-unified-interface.md
+        - name: Enable Unified Interface Only
+          href: enable-unified-interface-only.md
+        - name: Update apps to Unified Interface
+          href: update-apps-to-unified-interface.md
+        - name: Enable the hybrid experience
+          href: enable-hybrid-experience.md
     - name: Environments
       items:
       - name: Early opt-in to 2019 release wave 2
@@ -266,6 +274,9 @@
         href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
+    - name: Extend apps
+      items:
+      - name: 
     - name: GDPR - Responding to DSR requests
       items:
       - name: System-generated logs 
