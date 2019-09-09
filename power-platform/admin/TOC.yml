@@ -95,8 +95,6 @@
           href: preview-environments.md
       - name: Manage settings 
         items:
-        - name: About settings
-          href: about-settings.md
         - name: Common Data Service settings
           href: admin-settings.md        
         - name: Product settings
@@ -172,7 +170,7 @@
           - name: Cascading transaction processing
             href: async-cascading.md
     - name: Requirements/supported configurations
-      href: online-requirments.md
+      href: online-requirements.md
       items: 
       - name: Online requirements
         href: 
