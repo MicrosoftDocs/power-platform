@@ -58,7 +58,7 @@ To open settings for apps that use [Unified Interface](https://docs.microsoft.co
 
 ### Settings in legacy web client apps
 
-To open settings for apps that use [Unified Interface](https://docs.microsoft.com/dynamics365/customer-engagement/admin/about-unified-interface), look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**.
+To open settings for legacy client apps, select the arrow next to the app name, and then select **Settings**. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/legacy-settings.png "Legacy settings")
