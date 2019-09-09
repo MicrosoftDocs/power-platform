@@ -171,6 +171,17 @@
             href: download-template-data-import.md
           - name: Cascading transaction processing
             href: async-cascading.md
+    - name: Requirements/supported configurations
+      href: online-requirments.md
+      items: 
+      - name: Online requirements
+        href: 
+      - name: Plan for online deployment and administration
+        href: 
+      - name: Supported web browsers and mobile devices
+        href:
+      - name: Web application requirements
+        href: 
     - name: Platform architecture
       items: 
       - name: About on-premises gateway 

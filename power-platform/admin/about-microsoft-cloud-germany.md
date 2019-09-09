@@ -38,7 +38,7 @@ search.app:
   
 - All security and compliance capabilities of [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] are included.  
   
-  ![Dynamics 365 for Customer Engagement apps Germany data residence](../../admin/media/germany-data-residence.png "Dynamics 365 for Customer Engagement apps Germany data residence")  
+  ![Dynamics 365 for Customer Engagement apps Germany data residence](media/germany-data-residence.png "Dynamics 365 for Customer Engagement apps Germany data residence")  
   <a name="BKMK_DataTrustee"></a>   
 
 ## German Data Trustee  
@@ -46,7 +46,7 @@ search.app:
   
  The German Data Trustee may also perform non-data specific tasks related to day-to-day datacenter operations.  
   
- ![Dynamics 365 for Customer Engagement apps Germany data trustee](../../admin/media/germany-data-trustee.png "Dynamics 365 for Customer Engagement apps Germany data trustee")  
+ ![Dynamics 365 for Customer Engagement apps Germany data trustee](media/germany-data-trustee.png "Dynamics 365 for Customer Engagement apps Germany data trustee")  
   
 <a name="BKMK_ServiceDelivery"></a>   
 ## Germany Service Delivery  
