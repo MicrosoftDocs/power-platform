@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 09/09/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -97,9 +97,9 @@ assurance for users and alleviate the risk of one user exhausting the tenant wid
 
 ### How does the change to PowerApps and Microsoft Flow use rights for Office 365 applications affect me? Will my existing PowerApps applications and Microsoft Flow workflows continue to work? 
 
-Yes, existing PowerApps and Flows will continue to work. Customers who have been using PowerApps or Flows with Office 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Office 365 subscription term, whichever is longer. During the transition period customers can continue to create additional PowerApps applications and flows using these connectors.  
+Yes, existing apps and flows will continue to work. Customers who have been using PowerApps or Microsoft Flow with Office 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Office 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.  
 
-In addition, apps and flows created prior to October 1, 2019 which are using these connectors will receive an extended transition period until October 1, 2024―during this time these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors. 
+In addition, apps and flows created prior to October 1, 2019 which are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors. 
 
 ### Does the change to PowerApps use rights for Office 365 applications impact the number of PowerApps applications that I can run? 
 
