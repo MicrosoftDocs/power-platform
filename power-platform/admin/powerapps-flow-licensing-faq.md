@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 09/09/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -95,6 +95,16 @@ Microsoft Flow plan-based limits on trigger frequency and the number of runs all
 PowerApps and Microsoft Flow usage will be subject to service limits described [here](http://aka.ms/platformlimits). Per user service limits provide capacity
 assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
 
+### How does the change to PowerApps and Microsoft Flow use rights for Office 365 applications affect me? Will my existing PowerApps applications and Microsoft Flow workflows continue to work? 
+
+Yes, existing apps and flows will continue to work. Customers who have been using PowerApps or Microsoft Flow with Office 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Office 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.  
+
+In addition, apps and flows created prior to October 1, 2019 which are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors. 
+
+### Does the change to PowerApps use rights for Office 365 applications impact the number of PowerApps applications that I can run? 
+
+No, customers can continue to run standalone PowerApps applications to extend and customize Office 365 using standard connectors.  
+
 ### The PowerApps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
 The PowerApps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to two apps (canvas and/or model-driven) as well as one PowerApps Portal, all within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple solutions targeted at various business scenarios, without requiring a per-user license. In other words, the “per app” license is stackable.
@@ -132,9 +142,9 @@ Every tenant with a PowerApps license gets default capacity. In addition, for ea
 
 | PowerApps capacity Limits             | Per license entitlement (PowerApps per app plan) | Per license entitlement (PowerApps per user plan) |
 |---------------------------------------|--------------------------------------------------|---------------------------------------------------|
-| Common Data Service Database Capacity | + 50 MB                                         | + 50 MB                                          |
+| Common Data Service Database Capacity | + 50 MB                                         | + 250 MB                                          |
 | Common Data Service Log Capacity      | + 0                                             | + 0                                              |
-| Common Data Service File Capacity     | + 400 MB                                        | + 400 MB                                         |
+| Common Data Service File Capacity     | + 400 MB                                        | + 2 GB                                         |
 
 Since flows, as well as certain Microsoft Flow features like approvals, run inside of the Common Data Service, every tenant with a Microsoft Flow license gets default capacity. In addition, for each per-user or per-flow license there is additional capacity added to the tenant.
 
@@ -204,6 +214,10 @@ Example: If you have 3 portals and bought 4 login packs (400 logins). You can as
 - Portal 3: 129 (min 100)
 
 Page views: Minimum 50,000 per portal, after that you can assign 1 at a minimum.
+
+### Do unused PowerApps Portals logins carry forward to the next month? 
+
+Portals are licensed at a monthly rate that is based on a customer’s anticipated login volume. Logins are not accumulated as individual assets that would carry forward month to month.
 
 ### Are there limits on the number of API requests PowerApps and Microsoft Flow users can make?
 
