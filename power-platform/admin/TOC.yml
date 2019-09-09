@@ -19,6 +19,8 @@
       href: get-help-support.md
     - name: Support overview
       href: support-overview.md
+    - name: Determine your organization ID and name
+      href: determine-org-id-name.md
     - name: Getting started
       items:
 #     - name: What is the Power Platform?
