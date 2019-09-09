@@ -296,6 +296,29 @@
       href: wp-compliance-data-privacy.md
     - name: PowerApps US Government
       href: powerapps-us-government.md
+    - name: Datacenter regions
+      href: new-datacenter-regions.md
+      items: 
+      - name: Australia
+        href: about-microsoft-cloud-australia.md
+      - name: Canada
+        href: about-microsoft-cloud-canada.md
+      - name: China
+        items:
+        - name: About China datacenter
+          href: about-microsoft-cloud-china.md
+        - name: 21 Vianet support
+          href: 21vianet-support.md
+      - name: France
+        href: about-microsoft-cloud-france.md
+      - name: Germany
+        href: about-microsoft-cloud-germany.md
+      - name: India
+        href: about-microsoft-cloud-india.md
+      - name: Japan
+        href: about-microsoft-cloud-japan.md
+      - name: Geo to geo migrations
+        href: geo-to-geo-migrations.md     
   - name: Administer Microsoft Flow
     href: about-flow-guide.md
   - name: Administer Power BI
