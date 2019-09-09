@@ -1,6 +1,4 @@
 > [!NOTE]
-> We are transitioning settings management to model-driven apps and the Power Platform Admin center.
+> Getting to app feature settings can vary based on the type of Dynamics 365 app you're using. You might need to adjust the procedural steps in this topic to reflect your app type. See [Settings in Dynamics 365 apps](../admin/admin-settings.md#settings-in-dynamics-365-apps).
 >
-> For model-driven apps such as the Sales app and Customer Service app, look in the upper-right corner of the app and select the **Gear** icon (![Gear icon](../admin/media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
->
-> In the Power Platform Admin center, select an environment and then select **Settings**.
+> Also, we are moving some settings from Dynamics 365 apps and the Dynamics 365 Admin center to the Power Platform Admin center. See [Environment settings are moving](../admin/admin-settings.md#environment-settings-are-moving).
