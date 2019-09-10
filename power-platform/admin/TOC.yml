@@ -208,8 +208,8 @@
         href: pricing-billing-skus.md
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
-        # - name: Administer without a license
-        #   href: administer-without-license.md
+      - name: Administer without a license
+        href: administer-without-license.md
       - name: Purchase PowerApps
         href: signup-for-powerapps-admin.md
       - name: FAQs and more information 
