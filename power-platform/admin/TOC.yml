@@ -330,6 +330,14 @@
         href: about-microsoft-cloud-japan.md
       - name: Geo to geo migrations
         href: geo-to-geo-migrations.md     
+    - name: Partners
+      items:
+      - name: Add a Partner of Record
+        href: add-partner-record-subscription.md
+      - name: "For partners: get credit when customers subscribe"
+        href: partners-credit-when-customers-subscribe-dynamics-365.md
+      - name: "For partners: Delegated Administrator"
+        href: for-partners-delegated-administrator.md
   - name: Administer Microsoft Flow
     href: about-flow-guide.md
   - name: Administer Power BI
