@@ -43,7 +43,7 @@ The existing P1 and P2 plans for PowerApps and Microsoft Flow will transition to
 ### Will full Microsoft Flow capabilities still be included with the new PowerApps licenses?
 
 
-<!-note from editor: When it says "Consuming standalone Microsoft Flows unrelated to ...," does this mean instances of Microsoft Flow? If so, it should just be "flows." https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=38027  -->
+<!-- note from editor: When it says "Consuming standalone Microsoft Flows unrelated to ...," does this mean instances of Microsoft Flow? If so, it should just be "flows." https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=38027  -->
 
 
 PowerApps licenses will continue to include Microsoft Flow capabilities. However, flows will need to run within the context of the PowerApps application, which refers to using the same data sources for triggers or actions as the PowerApps application. Consuming standalone Microsoft Flows unrelated to the PowerApps applications will require purchase of a standalone Microsoft Flow license.
@@ -190,7 +190,7 @@ Logins are specific to a single portal. So if you access multiple portals belong
 |--------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Provisioning a portal instance**         | **Purchase** Dynamics 365 Additional Portal SKU at \$500 per month  | **Provision** a portal—no need to purchase portal add-ons to provision a portal.                                                                         |
 | **Qualifying base offers**                 | Dynamics 365 licenses only                                          | Customers can add on portal external login or page view capacity to Dynamics 365, **PowerApps and Microsoft Flow licenses**.                                      |
-| **Internal use rights**                    | Dynamics 365 enterprise licenses, Dynamics 365 team member license | Internal users can now access portals with a **PowerApps per-app/per-user license**. For a **Dynamics license**, it is the same as custom PowerApps use rights**. |
+| **Internal use rights**                    | Dynamics 365 enterprise licenses, Dynamics 365 team member license | Internal users can now access portals with a **PowerApps per-app/per-user license**. For a **Dynamics license**, it is the same as custom PowerApps use rights. |
 | **Monetization**                           | Per portal instance Per page view                                   | **Per log in** Per page view.                                                                                                                           |
 | **Entitlement for Dynamics 365 customers** | 1 portal instance for the first 10 full Dynamics 365 USLs           | Not applicable―PowerApps Portals instances can be provisioned.                                                                                          |
 
