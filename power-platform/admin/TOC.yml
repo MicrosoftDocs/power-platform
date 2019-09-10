@@ -250,6 +250,16 @@
       - name: Overview
         href: wp-management-monitoring.md      
       - name: Working with the Admin Portals 
+      - name: Manage users
+        items:
+        - name: Reset a user's password
+          href: reset-users-password.md
+        - name: Manage user account synchronization
+          href: manage-user-account-synchronization.md
+        - name: Grant users access
+          href: grant-users-access.md
+        - name: Azure Active Directory B2B collaboration
+          href: invite-users-azure-active-directory-b2b-collaboration.md
         href: wp-work-with-admin-portals.md
       - name: PowerShell support for PowerApps (preview) 
         items:
