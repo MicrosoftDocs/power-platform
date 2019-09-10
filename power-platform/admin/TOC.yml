@@ -237,6 +237,8 @@
           href: prevent-data-loss.md
         - name: Introduction to data groups
           href: introduction-to-data-groups.md
+        - name: Restrict access with trusted IP rules
+          href: restrict-access-online-trusted-ip-rules.md
       - name: Teams and team templates
         items: 
         - name: Manage teams
@@ -253,6 +255,8 @@
         href: wp-work-with-admin-portals.md
       - name: Manage users
         items:
+        - name: View active users in your tenant
+          href: admin-view-user-licenses.md
         - name: Reset a user's password
           href: reset-users-password.md
         - name: Manage user account synchronization
@@ -271,6 +275,8 @@
         href: automate-alm.md
       - name: Automation of tasks with Microsoft Flow 
         href: wp-task-automation-flow.md
+      - name: Manage email notifications to admins
+        href: manage-email-notifications.md
       - name: View apps in your environments 
         href: admin-view-apps.md
       - name: Manage apps in your org 
@@ -281,8 +287,6 @@
         href: embed-app-teams.md
       # - name: Audit data and user Activity
       #  href: audit-data-user-activity.md
-      - name: View active users in your tenant
-        href: admin-view-user-licenses.md
     - name: Deployment scenarios 
       href: wp-deployment-scenarios.md
     - name: Application Lifecycle Management 
