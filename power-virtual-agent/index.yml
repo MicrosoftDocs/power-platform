@@ -109,12 +109,12 @@ conceptualContent:
         - url: hand-off-omnichannel.md
           itemType: how-to-guide
           text: Integrate with Omnichannel for hand off
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: end-user-authentication.md
           itemType: how-to-guide
           text: Configure end-user authentication
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: skills-integrate.md
           itemType: how-to-guide
-          text: Enable and integrate Skills into your bot
+          text: Enable and integrate Microsoft Bot Framework Skills
 
 
        # Card
