@@ -24,41 +24,42 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: cardtitle1
-      itemType: architecture
+    - title: Fundamentals
+      itemType: quickstart
       url: file1.md OR https://docs.microsoft.com/file1
     # Card
-    - title: cardtitle2
-      itemType: concept
+    - title: PowerVirtualAgent blog
+      itemType: whats-new
+      url:  https://cloudblogs.microsoft.com/dynamics365/it/product/virtual-agent-for-customer-service/
+          # Card
+    - title: Community forum
+      itemType: whats-new
+      url: https://community.dynamics.com/365/virtual-agent-for-customer-service/
+          # Card
+    - title: What is PowerVirtualAgent?
+      itemType: video
+      url: file3.md OR https://docs.microsoft.com/file3
+          # Card
+    - title: Whitepaper: AI in PowerVirtualAGent
+      itemType: download
+      url: file3.md OR https://docs.microsoft.com/file3
+         # Card
+    - title: Authoring fundamentals
+      itemType: quickstart
       url: file2.md OR https://docs.microsoft.com/file2
-    # Card
-    - title: cardtitle3
+          # Card
+    - title: Publish your bot
       itemType: deploy
       url: file3.md OR https://docs.microsoft.com/file3
           # Card
-    - title: cardtitle4
-      itemType: download
-      url: file3.md OR https://docs.microsoft.com/file3
-          # Card
-    - title: cardtitle5
-      itemType: get-started
-      url: file3.md OR https://docs.microsoft.com/file3
-          # Card
-    - title: cardtitle6
+    - title: Report on usage and bot performance
       itemType: how-to-guide
       url: file3.md OR https://docs.microsoft.com/file3
-          # Card
-    - title: cardtitle7
-      itemType: learn
-      url: file3.md OR https://docs.microsoft.com/file3
-          # Card
-    - title: cardtitle8
-      itemType: overview
-      url: file3.md OR https://docs.microsoft.com/file3
+ 
 
 # productDirectory section (optional)
 productDirectory:
-  title: Product licencing # < 60 chars (optional)
+  title: Product licensing # < 60 chars (optional)
   summary: Purchase or upgrade existing services to recieve PowerVirtualAgent # < 160 chars (optional)
   items:
     # Card
