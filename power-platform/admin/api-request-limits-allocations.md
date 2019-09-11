@@ -18,14 +18,19 @@ search.app:
 ---
 # Requests limits and allocations
 
-Starting October 2019, to help ensure service levels, availability and quality, there are limits to the number of requests users can make across Dynamics 365 for Customer Engagement apps, PowerApps, and Microsoft Flow. These limits are based on various parameters like the number of requests, throughput, and concurrency, and
-help prevent users running applications that could interfere with each other based on resource constraints.
 
-This document will describe the common requests limits as well as the allocation which a user gets based on the type of license assigned to the user.
+<!-- from editor: Because it's not October yet, I suggest changing "there are" to "there will be". 
+Do you want to remove "for Customer Engagement" to be in compliance with the updated naming? 
+-->
+
+
+Starting in October 2019, to help ensure service levels, availability, and quality, there are limits to the number of requests users can make across Dynamics 365 for Customer Engagement apps, PowerApps, and Microsoft Flow. These limits are based on various parameters like the number of requests, throughput, and concurrency, and help prevent users running applications that could interfere with each other based on resource constraints.
+
+This document describes the common requests limits as well as the allocations that users get based on the types of license assigned to them.
 
 ## Microsoft Power Platform requests allocations based on licenses 
 
-All the users of Microsoft Power Platform can use a certain number of requests based on the license they are assigned. The below table defines the number of requests a user can make in a 24-hour period:
+All the users of Microsoft Power Platform can use a certain number of requests based on the license they are assigned. The following table defines the number of requests a user can make in a 24-hour period:
 
 | User licenses                              | Number of API requests / 24 hours                              |
 |------------------------------------------------|-----------------------------------------------------------|
