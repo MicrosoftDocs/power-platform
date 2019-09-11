@@ -109,3 +109,5 @@ The security group is associated with the environment.
    > [!div class="mx-imgBorder"] 
    > ![Security group added](media/security-group-added.png "Security group added")
 
+### See also
+[Create users and assign security roles](create-users-assign-online-security-roles.md)
