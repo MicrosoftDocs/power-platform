@@ -96,21 +96,128 @@ conceptualContent:
       links:
         - url: file1.md OR https://docs.microsoft.com/file1
           itemType: overview
-          text: Fundamentals: Environments and onboarding best practices
+          text: Fundamentals - Environments and onboarding best practices
         - url: file2.md OR https://docs.microsoft.com/file2
           itemType: overview
           text: First-run experience
-       
+       # Card
+    - title: Configuration
+      links:
+        - url: file1.md OR https://docs.microsoft.com/file1
+          itemType: how-to-guide
+          text: Integrate with Omnichannel for hand off
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Configure end-user authentication
+                  - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Enable and integrate Skills into your bot
+
+
        # Card
     - title: Authoring
       links:
         - url: file1.md OR https://docs.microsoft.com/file1
           itemType: overview
-          text: Fundamentals: Environments and onboarding best practices
+          text: Fundamentals - Bots and topics recommendations and best practices
         - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: overview
-          text: First-run experience
+          itemType: how-to-guide
+          text: Create and edit topics
+                  - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Use variables
+                  - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Work with existing template topics and system topics
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Topic management
+                  - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Test your bot
 
+       # Card
+    - title: Advanced authoring
+      links:
+        - url: file1.md OR https://docs.microsoft.com/file1
+          itemType: overview
+          text: Fundamentals - Enhancing AI intelligence
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Use entities and utilize greedy slot filling
+                  - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Create topics from existing support content on the web
+                  - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Create topics from Customer Service Insights
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: concept
+          text: Multi-user authoring
+                  - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Use end-user authentication
+                            - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Use Microsoft Flow
+                            - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Use Microsoft Bot Framework Skills
+                            - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Use hand-off
+
+
+                 # Card
+    - title: Publish your bot
+      links:
+        - url: file1.md OR https://docs.microsoft.com/file1
+          itemType: overview
+          text: Fundamentals - Publish and test your bot
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: deploy
+          text: Deploy to a website
+ - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: deploy
+          text: Deploy to a Microsoft Bot Framework channels
+          - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: deploy
+          text: Deploy to a3rd part web apps
+
+
+                     # Card
+    - title: Report on usage and bot performance
+      links:
+        - url: file1.md OR https://docs.microsoft.com/file1
+          itemType: overview
+          text: Fundamentals - Analysis
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: how-to-guide
+          text: Analyze bot performance and usage
+ - 
+                      # Card
+    - title: Troubleshoot issues
+      links:
+        - url: file1.md OR https://docs.microsoft.com/file1
+          itemType: reference
+          text: Troubleshoot issues
+        - 
+
+                               # Card
+    - title: Data Subject Rights (DSR) requests under GDPR
+      links:
+        - url: gdpr-summary.md
+          itemType: overview
+          text: Overview of GDPR compliance
+        - url: gdpr-export.md
+          itemType: concept
+          text: Requests to export data
+                  - url: gdpr-delete.md
+          itemType: concept
+          text: Requests to delete data
+                  - url: gdpr-discovery.md
+          itemType: concept
+          text: Requests to discover data
 # productDirectory section (optional)
 productDirectory:
   title: Product licensing # < 60 chars (optional)
