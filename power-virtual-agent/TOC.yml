@@ -16,8 +16,14 @@
      href: licensing.md
 - name: Onboard and set up
   items:
-   - name: Fundamentals: Environments and onboarding best practices
+   - name: Fundamentals - Environments and onboarding best practices
      href: environments-fundamentals.md
+   - name: First-run experience
+     href: first-run-experience.md
+- name: Configuration
+  items:
+   - name: Integrate with Omnichannel for hand off
+     href: hand-off-omnichannel.md
 
 
 

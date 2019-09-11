@@ -97,16 +97,16 @@ conceptualContent:
      # Card
     - title: Onboard and set up
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: Environments-fundamentals.md
           itemType: overview
           text: Fundamentals - Environments and onboarding best practices
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: first-run-experience.md
           itemType: overview
           text: First-run experience
        # Card
     - title: Configuration
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: hand-off-omnichannel.md
           itemType: how-to-guide
           text: Integrate with Omnichannel for hand off
         - url: file2.md OR https://docs.microsoft.com/file2
