@@ -70,13 +70,13 @@ conceptualContent:
     # Card
     - title: Fundamentals
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: what-is-pva.md
           itemType: overview
           text: What is PowerVirtualAgent?
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: get-started-pva.md
           itemType: quickstart
           text: Get started quickly
-          url: file.md
+          url: ai-models.md
           itemType: concept
           text: Artificial intelligence models in PowerVirtualAgent
         
@@ -84,12 +84,15 @@ conceptualContent:
     # Card
     - title: Licensing and technical requirements
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: geographic-reqs.md
           itemType: reference
           text: Geographical requirements and locations
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: sla-pva.md
           itemType: reference
           text: Service-level agreement
+        - url: licensing.md
+          itemType: reference
+          text: Licensing requirements
         
      # Card
     - title: Onboard and set up

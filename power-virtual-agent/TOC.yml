@@ -4,17 +4,19 @@
      href: what-is-pva.md
    - name: Get started quickly with PowerVirtualAgent
      href: get-started-pva.md
+   - name: Artificial intelligence models in PowerVirtualAgent
+     href: ai-models.md
 - name: Licensing and technical requirements
   items:
-    - name: Geographic requirements
+   - name: Geographic requirements
      href: geographic-reqs.md
-     - name: Service-level agreement
+   - name: Service-level agreement
      href: sla-pva.md
-     - name: Licensing requirements
+   - name: Licensing requirements
      href: licensing.md
 - name: Onboard and set up
   items:
-    -name: Fundamentals: Environments and onboarding best practices
+   - name: Fundamentals: Environments and onboarding best practices
      href: environments-fundamentals.md
 
 
