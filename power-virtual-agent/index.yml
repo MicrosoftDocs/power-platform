@@ -87,13 +87,13 @@ conceptualContent:
     - title: cardtitle1
       links:
         - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
+          itemType: quickstart
           text: linktext1
         - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
+          itemType: reference
           text: linktext2
         - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
+          itemType: tutorial
           text: linktext3
       # footerLink (optional)
       footerLink:
@@ -103,34 +103,19 @@ conceptualContent:
     - title: cardtitle2
       links:
         - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
+          itemType: video
           text: linktext1
         - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
+          itemType: whats-new
           text: linktext2
         - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
+          itemType: whats-new
           text: linktext3
       # footerLink (optional)
       footerLink:
         url: filefooter.md OR https://docs.microsoft.com/filefooter
         text: See more
-    # Card
-    - title: cardtitle3
-      links:
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
-          text: linktext1
-        - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
-          text: linktext2
-        - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
-          text: linktext3
-      # footerLink (optional)
-      footerLink:
-        url: filefooter.md OR https://docs.microsoft.com/filefooter
-        text: See more
+    
 
 # tools section (optional)
 tools:
