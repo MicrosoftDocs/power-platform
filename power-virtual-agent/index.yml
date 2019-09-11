@@ -26,11 +26,11 @@ highlightedContent:
         # Card
     - title: What is PowerVirtualAgent?
       itemType: video
-      url: file3.md OR https://docs.microsoft.com/file3
+      url: what-is-pva.md
       # Card
     - title: Get started with PowerVirtualAgent
       itemType: quickstart
-      url: file1.md OR https://docs.microsoft.com/file1
+      url: get-started-with-pva
     
    # Card
     - title: PowerVirtualAgent blog
