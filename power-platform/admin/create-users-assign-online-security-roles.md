@@ -15,6 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
+# Create users and assign security roles
 
 You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to Dynamics 365 apps. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. In addition to registration with the online service, the user account must be assigned a license in order for the user to have access to the service. Note that when you assign a user the global administrator or the service administrator role in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], it automatically assigns the user the System Administrator security role in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps . [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Differences between the Microsoft Online services environment administrative roles and Dynamics 365 for Customer Engagement apps (online) security roles](https://docs.microsoft.com/dynamics365/customer-engagement/admin/grant-users-access#BKMK_O365CRMroles)  
 
