@@ -115,7 +115,22 @@ conceptualContent:
       footerLink:
         url: filefooter.md OR https://docs.microsoft.com/filefooter
         text: See more
-    
+     # Card
+    - title: cardtitle3
+      links:
+        - url: file1.md OR https://docs.microsoft.com/file1
+          itemType: video
+          text: linktext1
+        - url: file2.md OR https://docs.microsoft.com/file2
+          itemType: whats-new
+          text: linktext2
+        - url: file3.md OR https://docs.microsoft.com/file3
+          itemType: whats-new
+          text: linktext3
+      # footerLink (optional)
+      footerLink:
+        url: filefooter.md OR https://docs.microsoft.com/filefooter
+        text: See more   
 
 # tools section (optional)
 tools:
