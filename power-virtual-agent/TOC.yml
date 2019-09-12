@@ -1,5 +1,4 @@
 - name: Fundamentals
-  href: what-is-pva.md
   items:
    - name: What is PowerVirtualAgent?
      href: what-is-pva.md
@@ -29,9 +28,60 @@
      href: end-user-authentication.md
    - name: Enable and integrate Microsoft Bot Framework Skills
      href: skills-integrate.md
-
-
-
+- name: Authoring
+  items:
+   - name: Fundamentals - Bots and topics recommendations and best practices
+     href: 
+   - name: Create and edit topics
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+- name: Advanced Authoring
+  items:
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+- name: Bot publication
+  items:
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+   - name: 
+     href: 
+- name: Report on usage and bot performance
+  items:
+   - name: 
+     href: 
+   - name: 
+     href: 
+- name: Troubleshoot issues
+  items:
+   - name: 
+     href: 
 - name: Data Subject Rights (DSR) requests under GDPR
   items:
    - name: Overview of GDPR compliance

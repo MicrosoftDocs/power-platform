@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: PowerVirtualAgent documentation # < 60 chars
-summary: PowerVirtualAgent is a bot-building framework that can be used to automate customer service. # < 160 chars
+summary: Build chat bots easily with PowerVirtualAgent. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: power-platform
 
@@ -50,11 +50,11 @@ highlightedContent:
       itemType: concept
       url: file2.md OR https://docs.microsoft.com/file2
           # Card
-    - title: Publish your bot
+    - title: Publication and deployment
       itemType: concept
       url: file3.md OR https://docs.microsoft.com/file3
           # Card
-    - title: Report on usage and bot performance
+    - title: Analytics
       itemType: concept
       url: file3.md OR https://docs.microsoft.com/file3
  
@@ -172,7 +172,7 @@ conceptualContent:
 
 
                  # Card
-    - title: Publish your bot
+    - title: Bot publication
       links:
         - url: file1.md OR https://docs.microsoft.com/file1
           itemType: overview
