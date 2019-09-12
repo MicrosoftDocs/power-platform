@@ -26,11 +26,11 @@ highlightedContent:
         # Card
     - title: What is PowerVirtualAgent?
       itemType: video
-      url: what-is-pva.md
+      url: fundamentals-what-is-power-virtual-agent.md
       # Card
     - title: Get started with PowerVirtualAgent
       itemType: quickstart
-      url: get-started-with-pva
+      url: fundamentals-get-started-power-virtual-agent.md
     
    # Card
     - title: PowerVirtualAgent blog
@@ -48,15 +48,15 @@ highlightedContent:
  # Card
     - title: Authoring
       itemType: concept
-      url: file2.md OR https://docs.microsoft.com/file2
+      url: authoring-fundamentals-virtual-agent.md
           # Card
     - title: Publication and deployment
       itemType: concept
-      url: file3.md OR https://docs.microsoft.com/file3
+      url: publication-fundamentals-virtual-agent.md
           # Card
     - title: Analytics
       itemType: concept
-      url: file3.md OR https://docs.microsoft.com/file3
+      url: analysis-fundamentals-virtual-agent.md
  
 
 
@@ -70,13 +70,13 @@ conceptualContent:
     # Card
     - title: Fundamentals
       links:
-        - url: what-is-pva.md
+        - url: fundamentals-what-is-power-virtual-agent.md
           itemType: overview
           text: What is PowerVirtualAgent?
-        - url: get-started-pva.md
+        - url: fundamentals-get-started-power-virtual-agent.md
           itemType: quickstart
           text: Get started quickly
-          url: ai-models.md
+          url: fundamentals-ai-models-virtual-agent.md
           itemType: concept
           text: Artificial intelligence models in PowerVirtualAgent
         
@@ -84,35 +84,35 @@ conceptualContent:
     # Card
     - title: Licensing and technical requirements
       links:
-        - url: geographic-reqs.md
+        - url: requirements-geographic-virtual-agent.md
           itemType: reference
           text: Geographical requirements and locations
-        - url: sla-pva.md
+        - url: requirements-sla-virtual-agent.md
           itemType: reference
           text: Service-level agreement
-        - url: licensing.md
+        - url: requirements-licensing-virtual-agent.md
           itemType: reference
           text: Licensing requirements
         
      # Card
     - title: Onboard and set up
       links:
-        - url: Environments-fundamentals.md
+        - url: environments-fundamentals.md
           itemType: overview
           text: Fundamentals - Environments and onboarding best practices
-        - url: first-run-experience.md
+        - url: environments-first-run-experience.md
           itemType: overview
           text: First-run experience
        # Card
     - title: Configuration
       links:
-        - url: hand-off-omnichannel.md
+        - url: configuration-hand-off-omnichannel.md
           itemType: how-to-guide
           text: Integrate with Omnichannel for hand off
-        - url: end-user-authentication.md
+        - url: configuration-end-user-authentication.md
           itemType: how-to-guide
           text: Configure end-user authentication
-        - url: skills-integrate.md
+        - url: configuration-skills-integrate.md
           itemType: how-to-guide
           text: Enable and integrate Microsoft Bot Framework Skills
 
@@ -120,53 +120,53 @@ conceptualContent:
        # Card
     - title: Authoring
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: authoring-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Bots and topics recommendations and best practices
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: authoring-create-edit-topics-virtual-agent.md
           itemType: how-to-guide
           text: Create and edit topics
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: authoring-variables-virtual-agent.md
           itemType: how-to-guide
           text: Use variables
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: authoring-template-topics-virtual-agent.md
           itemType: how-to-guide
           text: Work with existing template topics and system topics
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: authoring-topic-management-virtual-agent
           itemType: how-to-guide
           text: Topic management
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: authoring-test-bot-virtual-agent.md
           itemType: how-to-guide
           text: Test your bot
 
        # Card
     - title: Advanced authoring
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: advanced-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Enhancing AI intelligence
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: advanced-entities-greedy-slot-filling-virtual-agent.md
           itemType: how-to-guide
           text: Use entities and utilize greedy slot filling
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: advanced-create-topics-from-web-virtual-agent.md
           itemType: how-to-guide
           text: Create topics from existing support content on the web
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: advanced-create-topics-from-csi-virtual-agent.md
           itemType: how-to-guide
           text: Create topics from Customer Service Insights
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: advanced-multi-user-authoring-virtual-agent.md
           itemType: concept
           text: Multi-user authoring
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: advanced-end-user-authentication-virtual-agent.md
           itemType: how-to-guide
           text: Use end-user authentication
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: advanced-flow-virtual-agent.md
           itemType: how-to-guide
           text: Use Microsoft Flow
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: advanced-bot-framework-skills-virtual-agent.md
           itemType: how-to-guide
           text: Use Microsoft Bot Framework Skills
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: advanced-hand-off-virtual-agent.md
           itemType: how-to-guide
           text: Use hand-off
 
@@ -174,34 +174,34 @@ conceptualContent:
                  # Card
     - title: Bot publication
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: publication-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Publish and test your bot
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: publication-deploy-web-virtual-agent.md
           itemType: deploy
           text: Deploy to a website
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: publication-deploy-channels-virtual-agent.md
           itemType: deploy
-          text: Deploy to a Microsoft Bot Framework channels
-        - url: file2.md OR https://docs.microsoft.com/file2
+          text: Deploy to Microsoft Bot Framework channels
+        - url: publication-deploy-3rd-party-app-virtual-agent.md
           itemType: deploy
-          text: Deploy to a3rd part web apps
+          text: Deploy to a 3rd party web app
 
 
                      # Card
     - title: Report on usage and bot performance
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: analysis-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Analysis
-        - url: file2.md OR https://docs.microsoft.com/file2
+        - url: analysis-analyze-bot-performance-virtual-agent.md
           itemType: how-to-guide
           text: Analyze bot performance and usage
  
                       # Card
     - title: Troubleshoot issues
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
+        - url: troubleshoot-issues-virtual-agent.md
           itemType: reference
           text: Troubleshoot issues
         
