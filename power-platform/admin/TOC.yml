@@ -238,6 +238,24 @@
           href: assign-security-roles-form.md
         - name: View user profile
           href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile
+        - name: User session and access management
+          href: user-session-management.md
+        - name: Field level security
+          href: field-level-security.md
+        - name: Set permissions for a field
+          href: set-up-security-permissions-field.md
+        - name: Enable or disable field security
+          href: enable-disable-security-field.md
+        - name: Hierarchy security
+          href: hierarchy-security.md
+        - name: Add teams or users to field security profile
+          href: add-teams-users-field-security-profile.md
+        - name: Synchronize user information with Active Directory
+          href: synchronize-user-information-active-directory.md
+        - name: Add or remove sales territory members
+          href: add-remove-territory-members.md
+        - name: "Troubleshooting: Read-write access"
+          href: troubleshooting-user-needs-read-write-access-organization.md
       - name: Configure environment security
         href: database-security.md
         items: 
