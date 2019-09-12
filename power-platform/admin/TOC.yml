@@ -175,13 +175,13 @@
       href: online-requirements.md
       items: 
       - name: Online requirements
-        href: 
+        href: online-requirements.md
       - name: Plan for online deployment and administration
-        href: 
+        href: plan-for-deployment-and-administration.md
       - name: Supported web browsers and mobile devices
-        href:
+        href: supported-web-browsers-and-mobile-devices.md
       - name: Web application requirements
-        href: 
+        href: web-application-requirements.md
     - name: Platform architecture
       items: 
       - name: About on-premises gateway 
@@ -224,6 +224,20 @@
         href: wp-security-cds.md
       - name: System and application users
         href: system-application-users.md
+      - name: Security roles and privileges
+        items:
+        - name: About security roles and privileges
+          href: security-roles-privileges.md
+        - name: Create or edit a security role
+          href: create-edit-security-role.md
+        - name: Copy a security role
+          href: copy-security-role.md
+        - name: Create an administrative user
+          href: prevent-elevation-security-role-privilege.md
+        - name: Assign security roles to a form
+          href: assign-security-roles-form.md
+        - name: View user profile
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile
       - name: Configure environment security
         href: database-security.md
         items: 
