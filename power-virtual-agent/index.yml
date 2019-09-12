@@ -27,24 +27,18 @@ highlightedContent:
     - title: What is PowerVirtualAgent?
       itemType: video
       url: fundamentals-what-is-power-virtual-agent.md
-      # Card
-    - title: Get started with PowerVirtualAgent
-      itemType: quickstart
-      url: fundamentals-get-started-power-virtual-agent.md
+
     
    # Card
     - title: PowerVirtualAgent blog
       itemType: whats-new
       url:  https://cloudblogs.microsoft.com/dynamics365/it/product/virtual-agent-for-customer-service/
           # Card
-    - title: Community forum
+    - title: What's new and planned
       itemType: whats-new
-      url: https://community.dynamics.com/365/virtual-agent-for-customer-service/
+      url: https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/artificial-intelligence/dynamics365-virtual-agent-for-customer-service/planned-features
      
-          # Card
-    - title: Whitepaper - AI in PowerVirtualAgent
-      itemType: download
-      url: file3.md OR https://docs.microsoft.com/file3
+
  # Card
     - title: Authoring
       itemType: concept
@@ -222,24 +216,4 @@ conceptualContent:
           itemType: concept
           text: Requests to discover data
 
-
-# productDirectory section (optional)
-productDirectory:
-  title: Product licensing # < 60 chars (optional)
-  summary: Purchase or upgrade existing services to recieve PowerVirtualAgent # < 160 chars (optional)
-  items:
-    # Card
-    - title: PowerPlatform
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/va.png
-      links:
-        - url: https://powervirtualagent.microsoft.com
-          text: Purchase individual licence
-
-    # Card
-    - title: Dynamics 365
-      imageSrc: ./media/predict.png
-      links:
-        - url: https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/licensing-case-capacity
-          text: Upgrade with a Dynamics 365 Customer Service Insights licence
 
