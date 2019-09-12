@@ -1,6 +1,6 @@
 ---
-title: "Add or remove territory members  | MicrosoftDocs"
-description: Add or remove territory members
+title: "Add or remove sales territory members  | MicrosoftDocs"
+description: Add or remove sales territory members
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Add or remove territory members
+# Add or remove sales territory members
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
