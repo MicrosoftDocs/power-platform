@@ -83,149 +83,35 @@ conceptualContent:
       links:
         - url: requirements-fundamentals-virtual-agent.md
           itemType: overview
-          text: Fundamentals - Requirements for Power VirtualAgent        
+          text: Requirements for Power VirtualAgent        
         - url: environments-fundamentals.md
           itemType: overview
-          text: Fundamentals - Environments and onboarding best practices
+          text: Environments and onboarding best practices
 
     # Card
     - title: Configure and author bots
       links:
         - url: authoring-fundamentals-virtual-agent.md
           itemType: overview
-          text: Fundamentals - Bots and topics recommendations and best practices
+          text: Bots and topics recommendations and best practices
         - url: advanced-fundamentals-virtual-agent.md
           itemType: overview
-          text: Fundamentals - Enhancing AI intelligence
+          text: Enhancing AI intelligence
 
     # Card
     - title: Publish, test, analyze and troubleshoot
       links:
         - url: publication-fundamentals-virtual-agent.md
           itemType: overview
-          text: Fundamentals - Publish and test your bot
+          text: Publish and test your bot
         - url: analysis-fundamentals-virtual-agent.md
           itemType: overview
-          text: Fundamentals - Analysis
+          text: Analysis
         - url: troubleshoot-issues-virtual-agent.md
           itemType: reference
           text: Troubleshoot issues
 
 
-
-    # Card
-    - title: Licensing and technical requirements
-      links:
-        - url: requirements-fundamentals-virtual-agent.md
-          itemType: overview
-          text: Fundamentals - Requirements for Power VirtualAgent
-        - url: requirements-geographic-virtual-agent.md
-          itemType: reference
-          text: Geographical requirements and locations
-        - url: requirements-sla-virtual-agent.md
-          itemType: reference
-          text: Service-level agreement
-        - url: requirements-licensing-virtual-agent.md
-          itemType: reference
-          text: Licensing requirements
-        
-    # Card
-    - title: Onboard and set up
-      links:
-        - url: environments-fundamentals.md
-          itemType: overview
-          text: Fundamentals - Environments and onboarding best practices
-        - url: environments-first-run-experience.md
-          itemType: overview
-          text: First-run experience
-
-
-
-
-    # Card
-    - title: Authoring
-      links:
-        - url: authoring-fundamentals-virtual-agent.md
-          itemType: overview
-          text: Fundamentals - Bots and topics recommendations and best practices
-        - url: authoring-create-edit-topics-virtual-agent.md
-          itemType: how-to-guide
-          text: Create and edit topics
-        - url: authoring-variables-virtual-agent.md
-          itemType: how-to-guide
-          text: Use variables
-        - url: authoring-template-topics-virtual-agent.md
-          itemType: how-to-guide
-          text: Work with existing template topics and system topics
-        - url: authoring-topic-management-virtual-agent
-          itemType: how-to-guide
-          text: Topic management
-        - url: authoring-test-bot-virtual-agent.md
-          itemType: how-to-guide
-          text: Test your bot
-
-    # Card
-    - title: Advanced authoring
-      links:
-        - url: advanced-fundamentals-virtual-agent.md
-          itemType: overview
-          text: Fundamentals - Enhancing AI intelligence
-        - url: advanced-entities-greedy-slot-filling-virtual-agent.md
-          itemType: how-to-guide
-          text: Use entities and utilize greedy slot filling
-        - url: advanced-create-topics-from-web-virtual-agent.md
-          itemType: how-to-guide
-          text: Create topics from existing support content on the web
-        - url: advanced-create-topics-from-csi-virtual-agent.md
-          itemType: how-to-guide
-          text: Create topics from Customer Service Insights
-        - url: advanced-multi-user-authoring-virtual-agent.md
-          itemType: concept
-          text: Multi-user authoring
-        - url: advanced-end-user-authentication-virtual-agent.md
-          itemType: how-to-guide
-          text: Use end-user authentication
-        - url: advanced-flow-virtual-agent.md
-          itemType: how-to-guide
-          text: Use Microsoft Flow
-        - url: advanced-bot-framework-skills-virtual-agent.md
-          itemType: how-to-guide
-          text: Use Microsoft Bot Framework Skills
-        - url: advanced-hand-off-virtual-agent.md
-          itemType: how-to-guide
-          text: Use hand-off
-
-
-    # Card
-    - title: Bot publication
-      links:
-        - url: publication-fundamentals-virtual-agent.md
-          itemType: overview
-          text: Fundamentals - Publish and test your bot
-        - url: publication-deploy-web-virtual-agent.md
-          itemType: deploy
-          text: Deploy to a website
-        - url: publication-deploy-channels-virtual-agent.md
-          itemType: deploy
-          text: Deploy to Microsoft Bot Framework channels
-        - url: publication-deploy-3rd-party-app-virtual-agent.md
-          itemType: deploy
-          text: Deploy to a 3rd party web app
-
-
-    # Card
-    - title: Report on usage and bot performance
-      links:
-        - url: analysis-fundamentals-virtual-agent.md
-          itemType: overview
-          text: Fundamentals - Analysis
-        - url: analysis-analyze-bot-performance-virtual-agent.md
-          itemType: how-to-guide
-          text: Analyze bot performance and usage
- 
-
-
-        
 
     # Card
     - title: Data Subject Rights (DSR) requests under GDPR
