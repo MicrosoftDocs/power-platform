@@ -58,8 +58,8 @@ highlightedContent:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
- # title:  # < 60 chars (optional)
- # summary:  # < 160 chars (optional)
+  # title:  # < 60 chars (optional)
+  # summary:  # < 160 chars (optional)
   items:
     # Card
     - title: Get started
