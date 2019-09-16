@@ -84,7 +84,7 @@ conceptualContent:
        - url: requirements-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Requirements for Power VirtualAgent        
-        - url: environments-fundamentals.md
+        - url: environments-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Environments and onboarding best practices
 
@@ -135,10 +135,10 @@ conceptualContent:
     # Card
     - title: Onboard and set up
       links:
-        - url: environments-fundamentals.md
+        - url: environments-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Environments and onboarding best practices
-        - url: environments-first-run-experience.md
+        - url: environments-first-run-experience-virtual-agent.md
           itemType: overview
           text: First-run experience
     # Card
@@ -147,13 +147,13 @@ conceptualContent:
         - url: configuration-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Configuration
-        - url: configuration-hand-off-omnichannel.md
+        - url: configuration-hand-off-omnichannel-virtual-agent.md
           itemType: how-to-guide
           text: Integrate with Omnichannel for hand off
-        - url: configuration-end-user-authentication.md
+        - url: configuration-end-user-authentication-virtual-agent.md
           itemType: how-to-guide
           text: Configure end-user authentication
-        - url: configuration-skills-integrate.md
+        - url: configuration-skills-integrate-virtual-agent.md
           itemType: how-to-guide
           text: Enable and integrate Microsoft Bot Framework Skills
 
