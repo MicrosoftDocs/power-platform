@@ -7,7 +7,7 @@ brand: power-platform
 
 metadata:
   title: PowerVirtualAgent documentation and guidance # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: See how PowerVirtualAgent can be used to automate your customer service with powerful AI-driven chat bots # Required; article description that is displayed in search results. < 160 chars.
+  description: See how PowerVirtualAgent can be used to automate your customer service with powerful AI-driven chat bots. Discover how to configure, use, and deploy PowerVirtualAgent. # Required; article description that is displayed in search results. < 160 chars.
   services: service
   ms.service:   
     - "dynamics-365-ai" #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -26,7 +26,7 @@ highlightedContent:
         # Card
     - title: What is PowerVirtualAgent?
       itemType: video
-      url: fundamentals-what-is-power-virtual-agent.md
+      url: https://youtu.be/Pk-AVqQPUg8
 
     
    # Card
@@ -40,7 +40,7 @@ highlightedContent:
      
 
  # Card
-    - title: Authoring
+    - title: Get started quickly
       itemType: concept
       url: authoring-fundamentals-virtual-agent.md
           # Card
@@ -58,11 +58,11 @@ highlightedContent:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: PowerVirtualAgent documentation # < 60 chars (optional)
-  summary: Discover how to configure, use, and deploy PowerVirtualAgent # < 160 chars (optional)
+  title:  # < 60 chars (optional)
+  summary:  # < 160 chars (optional)
   items:
     # Card
-    - title: Fundamentals
+    - title: Get started
       links:
         - url: fundamentals-what-is-power-virtual-agent.md
           itemType: overview
@@ -70,14 +70,58 @@ conceptualContent:
         - url: fundamentals-get-started-power-virtual-agent.md
           itemType: quickstart
           text: Get started quickly
-          url: fundamentals-ai-models-virtual-agent.md
+
+    # Card        
+    - title: AI in Power virtualagent
+      links:
+        - url: fundamentals-ai-models-virtual-agent.md
           itemType: concept
           text: Artificial intelligence models in PowerVirtualAgent
-        
+
+    # Card       
+    - title: 
+      links:
+       - url: requirements-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Requirements for Power VirtualAgent        
+        - url: environments-fundamentals.md
+          itemType: overview
+          text: Fundamentals - Environments and onboarding best practices
+
+      # Card
+    - title: Configure and author bots
+      links:
+        - url: configuration-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Configuration
+        - url: authoring-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Bots and topics recommendations and best practices
+        - url: advanced-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Enhancing AI intelligence
+
+    # Card
+    - title: Publish, test, analyze and troubleshoot
+      links:
+        - url: publication-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Publish and test your bot
+        - url: analysis-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Analysis
+        - url: troubleshoot-issues-virtual-agent.md
+          itemType: reference
+          text: Troubleshoot issues
+
+
 
     # Card
     - title: Licensing and technical requirements
       links:
+        - url: requirements-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Requirements for Power VirtualAgent
         - url: requirements-geographic-virtual-agent.md
           itemType: reference
           text: Geographical requirements and locations
@@ -100,6 +144,9 @@ conceptualContent:
        # Card
     - title: Configuration
       links:
+        - url: configuration-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Configuration
         - url: configuration-hand-off-omnichannel.md
           itemType: how-to-guide
           text: Integrate with Omnichannel for hand off
@@ -192,12 +239,8 @@ conceptualContent:
           itemType: how-to-guide
           text: Analyze bot performance and usage
  
-                      # Card
-    - title: Troubleshoot issues
-      links:
-        - url: troubleshoot-issues-virtual-agent.md
-          itemType: reference
-          text: Troubleshoot issues
+
+
         
 
                                # Card
