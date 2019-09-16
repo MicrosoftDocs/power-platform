@@ -58,8 +58,8 @@ highlightedContent:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title:  # < 60 chars (optional)
-  summary:  # < 160 chars (optional)
+  # title:  # < 60 chars (optional)
+  # summary:  # < 160 chars (optional)
   items:
     # Card
     - title: Welcome to Power Virtual Agent
@@ -88,7 +88,7 @@ conceptualContent:
           itemType: overview
           text: Fundamentals - Environments and onboarding best practices
 
-      # Card
+    # Card
     - title: Configure and author bots
       links:
         - url: authoring-fundamentals-virtual-agent.md
@@ -129,7 +129,7 @@ conceptualContent:
           itemType: reference
           text: Licensing requirements
         
-     # Card
+    # Card
     - title: Onboard and set up
       links:
         - url: environments-fundamentals.md
@@ -142,7 +142,7 @@ conceptualContent:
 
 
 
-       # Card
+    # Card
     - title: Authoring
       links:
         - url: authoring-fundamentals-virtual-agent.md
@@ -164,7 +164,7 @@ conceptualContent:
           itemType: how-to-guide
           text: Test your bot
 
-       # Card
+    # Card
     - title: Advanced authoring
       links:
         - url: advanced-fundamentals-virtual-agent.md
@@ -196,7 +196,7 @@ conceptualContent:
           text: Use hand-off
 
 
-                 # Card
+    # Card
     - title: Bot publication
       links:
         - url: publication-fundamentals-virtual-agent.md
@@ -213,7 +213,7 @@ conceptualContent:
           text: Deploy to a 3rd party web app
 
 
-                     # Card
+    # Card
     - title: Report on usage and bot performance
       links:
         - url: analysis-fundamentals-virtual-agent.md
@@ -227,7 +227,7 @@ conceptualContent:
 
         
 
-                               # Card
+    # Card
     - title: Data Subject Rights (DSR) requests under GDPR
       links:
         - url: gdpr-summary.md
@@ -242,5 +242,3 @@ conceptualContent:
         - url: gdpr-discovery.md
           itemType: concept
           text: Requests to discover data
-
-
