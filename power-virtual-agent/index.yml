@@ -81,7 +81,7 @@ conceptualContent:
     # Card       
     - title: 
       links:
-       - url: requirements-fundamentals-virtual-agent.md
+        - url: requirements-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Requirements for Power VirtualAgent        
         - url: environments-fundamentals-virtual-agent.md
