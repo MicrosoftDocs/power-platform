@@ -302,33 +302,32 @@
         - name: Manage your documents using SharePoint
           href: manage-documents-using-sharepoint.md
           items: 
-          - name: SharePoint document management software requirements
-            href: sharepoint-document-management-software-requirements.md
+        - name: SharePoint document management software requirements
+          href: sharepoint-document-management-software-requirements.md
+        - name: Setup
+          href: set-up-sharepoint-integration.md 
+          items: 
+          - name: Set up Dynamics 365 online to use SharePoint online
+            href: set-up-dynamics-365-online-to-use-sharepoint-online.md
+          - name: Configure server-based authentication with SharePoint on-premises
+            href: configure-server-based-authentication-sharepoint-on-premises.md  
             items: 
-            - name: Setup
-              href: set-up-sharepoint-integration.md 
-              items: 
-              - name: Set up Dynamics 365 online to use SharePoint online
-                href: set-up-dynamics-365-online-to-use-sharepoint-online.md
-              - name: Configure server-based authentication with SharePoint on-premises
-                href: configure-server-based-authentication-sharepoint-on-premises.md  
-              items: 
-              - name: Configure
-                items: 
-                - name: Enable SharePoint document management for specific  entities
-                  href: enable-sharepoint-document-management-specific-entities.md
-                - name: Edit existing SharePoint site records
-                  href: edit-existing-sharepoint-site-records.md
-                - name: Create and edit document location records
-                  href: create-edit-document-location-records.md
-                - name: Permissions required for document management tasks
-                  href: permissions-required-document-management-tasks.md
-              - name: Troubleshoot 
-                items: 
-                - name: Troubleshooting server-based authentication
-                  href: troubleshooting-server-based-authentication.md
-                - name: Troubleshoot set up with SharePoint online
-                  href: troubleshoot-set-up-sharepoint-online.md
+        - name: Configure
+          items: 
+            - name: Enable SharePoint document management for specific  entities
+              href: enable-sharepoint-document-management-specific-entities.md
+            - name: Edit existing SharePoint site records
+              href: edit-existing-sharepoint-site-records.md
+            - name: Create and edit document location records
+              href: create-edit-document-location-records.md
+            - name: Permissions required for document management tasks
+              href: permissions-required-document-management-tasks.md
+        - name: Troubleshoot 
+          items: 
+           - name: Troubleshooting server-based authentication
+             href: troubleshooting-server-based-authentication.md
+           - name: Troubleshoot set up with SharePoint online
+             href: troubleshoot-set-up-sharepoint-online.md
       - name: PowerShell support for PowerApps (preview) 
         items:
         - name: About PowerShell support
