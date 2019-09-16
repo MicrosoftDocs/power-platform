@@ -297,6 +297,20 @@
           href: grant-users-access.md
         - name: Azure Active Directory B2B collaboration
           href: invite-users-azure-active-directory-b2b-collaboration.md
+      - name: Manage documents
+        items:
+        - name: Manage your documents using SharePoint
+          href: manage-documents-using-sharepoint.md
+          items: 
+          - name: SharePoint document management software requirements
+            href: sharepoint-document-management-software-requirements.md
+            items: 
+            - name: Setup
+              items: 
+              - name: Setup SharePoint integration 
+                href: set-up-sharepoint-integration.md
+              - name: Set up Dynamics 365 online to use SharePoint online
+                href: set-up-dynamics-365-online-to-use-sharepoint-online.md  
       - name: PowerShell support for PowerApps (preview) 
         items:
         - name: About PowerShell support
