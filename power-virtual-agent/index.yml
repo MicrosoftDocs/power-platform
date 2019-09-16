@@ -42,15 +42,15 @@ highlightedContent:
  # Card
     - title: Get started quickly
       itemType: concept
-      url: authoring-fundamentals-virtual-agent.md
+      url: fundamentals-get-started-power-virtual-agent.md
           # Card
-    - title: Publication and deployment
+    - title: Integrate Power VirtualAgent with Flow
       itemType: concept
-      url: publication-fundamentals-virtual-agent.md
+      url: advanced-flow-virtual-agent.md
           # Card
-    - title: Analytics
+    - title: Hand off chat sessions to a human agent
       itemType: concept
-      url: analysis-fundamentals-virtual-agent.md
+      url: advanced-hand-off-virtual-agent.md
  
 
 
@@ -62,7 +62,7 @@ conceptualContent:
   summary:  # < 160 chars (optional)
   items:
     # Card
-    - title: Get started
+    - title: Welcome to Power Virtual Agent
       links:
         - url: fundamentals-what-is-power-virtual-agent.md
           itemType: overview
@@ -79,7 +79,7 @@ conceptualContent:
           text: Artificial intelligence models in PowerVirtualAgent
 
     # Card       
-    - title: 
+    - title: Get started
       links:
        - url: requirements-fundamentals-virtual-agent.md
           itemType: overview
@@ -91,9 +91,6 @@ conceptualContent:
       # Card
     - title: Configure and author bots
       links:
-        - url: configuration-fundamentals-virtual-agent.md
-          itemType: overview
-          text: Fundamentals - Configuration
         - url: authoring-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Bots and topics recommendations and best practices
@@ -141,21 +138,8 @@ conceptualContent:
         - url: environments-first-run-experience.md
           itemType: overview
           text: First-run experience
-       # Card
-    - title: Configuration
-      links:
-        - url: configuration-fundamentals-virtual-agent.md
-          itemType: overview
-          text: Fundamentals - Configuration
-        - url: configuration-hand-off-omnichannel.md
-          itemType: how-to-guide
-          text: Integrate with Omnichannel for hand off
-        - url: configuration-end-user-authentication.md
-          itemType: how-to-guide
-          text: Configure end-user authentication
-        - url: configuration-skills-integrate.md
-          itemType: how-to-guide
-          text: Enable and integrate Microsoft Bot Framework Skills
+
+
 
 
        # Card
