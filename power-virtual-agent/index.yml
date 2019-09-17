@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: PowerVirtualAgent documentation # < 60 chars
-summary: Build chat bots easily with PowerVirtualAgent. Discover how to configure, use, and deploy PowerVirtualAgent. # < 160 chars
+summary: Build chat bots easily with PowerVirtualAgent.  # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: power-platform
 
