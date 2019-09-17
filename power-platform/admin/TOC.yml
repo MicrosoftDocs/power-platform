@@ -350,7 +350,9 @@
         href: embed-app-teams.md
       # - name: Audit data and user Activity
       #  href: audit-data-user-activity.md
-    - name: Deployment scenarios 
+      - name: Deploy packages using Package Deployer and Windows PowerShell
+        href: deploy-packages-using-package-deployer-windows-powershell.md  
+      - name: Deployment scenarios 
       href: wp-deployment-scenarios.md
     - name: Application Lifecycle Management 
       items:
