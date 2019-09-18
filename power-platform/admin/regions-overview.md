@@ -1,13 +1,13 @@
 ---
-title: Regions overview | Microsoft Docs
+title: Regions overview in PowerApps Admin center| Microsoft Docs
 description: Learn about regions in PowerApps
-author: manasmams
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/05/2019
-ms.author: manasma
+ms.date: 09/18/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
 ---
 
-# Regions overview in PowerApps
+# Regions overview in PowerApps Admin center
 
 ## How do I find out where my app is deployed?
 
@@ -36,6 +36,7 @@ If you're an administrator, you can determine the region of each environment in 
 - Australia
 - Canada
 - Europe
+- France
 - India
 - Japan
 - South America
@@ -72,3 +73,6 @@ For optimal performance, if your users are in Europe, create and use the environ
 > [!NOTE]
 > On-premises data gateways aren't available in the India region or in custom environments. You must create gateways in the default environment.
 
+## Can I create an environment outside of my tenant region?
+
+Currently, there are limits to creating an environment for a region that differs from your tenant region. Please contact your account manager or [Technical Support](get-help-support.md).
