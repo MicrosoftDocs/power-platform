@@ -36,7 +36,7 @@ If you're an administrator, you can determine the region of each environment in 
 - Australia
 - Canada
 - Europe
-- France
+<!-- - France -->
 - India
 - Japan
 - South America
