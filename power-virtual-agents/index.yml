@@ -102,11 +102,11 @@ conceptualContent:
           text: Fundamentals - Enhancing AI intelligence
 
     # Card
-    - title: Publish, test, analyze and troubleshoot
+    - title: Publish and analyze
       links:
         - url: publication-fundamentals-virtual-agent.md
           itemType: overview
-          text: Fundamentals - Publish and test your bot
+          text: Fundamentals - Publish your bot
         - url: analysis-fundamentals-virtual-agent.md
           itemType: overview
           text: Fundamentals - Analysis
