@@ -18,8 +18,8 @@
     },
     {
       "docset_name": "power-virtual-agent",
-      "build_source_folder": "power-virtual-agent",
-      "build_output_subfolder": "power-virtual-agent",
+      "build_source_folder": "power-virtual-agents",
+      "build_output_subfolder": "power-virtual-agents",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
