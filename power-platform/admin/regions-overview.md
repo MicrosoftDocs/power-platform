@@ -1,13 +1,13 @@
 ---
 title: Regions overview | Microsoft Docs
 description: Learn about regions in PowerApps
-author: manasmams
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/05/2019
-ms.author: manasma
+ms.date: 10/01/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -36,6 +36,7 @@ If you're an administrator, you can determine the region of each environment in 
 - Australia
 - Canada
 - Europe
+- France
 - India
 - Japan
 - South America
