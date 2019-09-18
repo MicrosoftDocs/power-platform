@@ -79,7 +79,7 @@ conceptualContent:
           text: Artificial intelligence models in PowerVirtualAgent
 
     # Card       
-    - title: 
+    - title: Technical requirements and onboarding
       links:
         - url: requirements-fundamentals-virtual-agent.md
           itemType: overview
