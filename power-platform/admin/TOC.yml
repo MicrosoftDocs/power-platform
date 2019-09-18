@@ -460,8 +460,39 @@
           href: best-practices-server-side-synchronization.md
         - name: Create forward mailboxes or edit mailboxes
           href: create-forward-mailboxes-edit-mailboxes.md
-        - name: 
-
+      - name: Configure Outlook or Exchange folder-level tracking
+        href: configure-outlook-exchange-folder-level-tracking.md
+      - name: Use Outlook category to track appointments and emails
+        href: use-outlook-category-track-appointments-emails.md 
+      - name: Track Outlook email by moving it to a tracked Exchange folder
+        href: track-outlook-email-by-moving-it-tracked-exchange-folder.md
+      - name: Set incoming and outgoing email synchronization
+        href: set-incoming-outgoing-email-synchronization.md
+      - name: Choose records to synchronize with Exchange
+        href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+      - name: Control field synchronization with Outlook
+        href: control-field-synchronization-outlook.md 
+      - name: How field security affects synchronization with Outlook
+        href: how-field-security-affects-synchronization-between-outlook.md 
+      - name: What fields can be synchronized with Outlook?
+        href: what-fields-synchronized-outlook.md
+      - name: View the fields that are synchronized with Outlook
+        href: view-fields-synchronized-dynamics-365-outlook.md
+      - name: Frequently asked questions about synchronizing records
+        href: frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md 
+      - name: Set personal options that affect tracking and synchronization
+        href: set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md
+      - name: Monitor email processing errors
+        href: monitor-email-processing-errors.md 
+      - name: Why does the email sent have a "Pending Send" status?
+        href: why-email-message-sent-have-pending-send-status.md 
+      - name: Email message filtering and correlation
+        href: email-message-filtering-correlation.md 
+      - name: Forward mailbox vs. individual mailboxes
+        href: forward-mailbox-vs-individual-mailboxes.md 
+      - name: Recover from Exchange Server failure
+        href: recover-from-exchange-server-failure.md 
+      - name: 
 
          
 
