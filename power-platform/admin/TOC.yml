@@ -494,38 +494,6 @@
         href: recover-from-exchange-server-failure.md 
     - name: Extend with integration and solutions
       items:
-      - name: Manage your documents using SharePoint
-        items: 
-        - name: Overview
-          href: manage-documents-using-sharepoint.md 
-        - name: Software requirements
-          href: sharepoint-document-management-software-requirements.md 
-        - name: Set up
-          items: 
-          - name: Overview
-            href: set-up-sharepoint-integration.md 
-          - name: Set up to use SharePoint Online
-            href: set-up-dynamics-365-online-to-use-sharepoint-online.md 
-          - name: Set up to use SharePoint on-premises
-            href: configure-server-based-authentication-sharepoint-on-premises.md 
-          - name: Switching from the list component
-            href: switching-list-component-changing-deployment.md 
-        - name: Configure
-          items:
-          - name: Enable document management for entities
-            href: enable-sharepoint-document-management-specific-entities.md 
-          - name: Edit existing SharePoint site records
-            href: edit-existing-sharepoint-site-records.md 
-          - name: Create or edit document location records
-            href: create-edit-document-location-records.md 
-          - name: Permissions required
-            href: permissions-required-document-management-tasks.md 
-        - name: Troubleshoot
-          items: 
-          - name: Troubleshooting server-based authentication 
-            href: troubleshooting-server-based-authentication.md 
-          - name: Troubleshoot SharePoint integration
-            href: troubleshoot-set-up-sharepoint-online.md 
       - name: Connect to Microsoft Social Engagement
         items:
         - name: Connect, assign licenses, and reset
