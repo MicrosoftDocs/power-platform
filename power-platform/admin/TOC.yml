@@ -422,18 +422,12 @@
         href: create-templates-articles.md 
       - name: Email
         href: create-templates-email.md
-      - name: Knowledge article
-        href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/create-templates-knowledge-article
       - name: Work with mail merge templates
         href: work-mail-merge-templates.md
-      - name: Campaign
-        href: create-edit-campaign-template-using-app-marketing-sales.md
-      - name: Entitlements
-        href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-up-entitlements-templates
       - name: Excel
         href: analyze-your-data-with-excel-templates.md
       - name: Word
-        href: using-word-templates-dynamics-365.md
+        href: using-word-templates.md
     - name: Integrate (synchronize) your email system
       items: 
       - name: Overview
