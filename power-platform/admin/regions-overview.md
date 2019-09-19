@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 09/19/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -36,6 +36,7 @@ If you're an administrator, you can determine the region of each environment in 
 - Australia
 - Canada
 - Europe
+- France
 - India
 - Japan
 - South America
