@@ -614,7 +614,45 @@
       - name: Japan
         href: about-microsoft-cloud-japan.md
       - name: Geo to geo migrations
-        href: geo-to-geo-migrations.md     
+        href: geo-to-geo-migrations.md    
+    - name: Set up an organization
+      items: 
+      - name: Overview
+        items: 
+        - name: Customize regional options
+          href: customize-regional-options-admins.md 
+        - name: Manage transactions with multiple currencies
+          href: manage-transactions-with-multiple-currencies.md 
+        - name: Enable languages
+          href: enable-languages.md
+        - name: Fiscal year
+          href: work-fiscal-year-settings.md
+        - name: Privacy preferences
+          href: settings-privacy-security.md
+        - name: Sales territories
+          href: set-up-sales-territories-organize-business-markets-geographical-area.md 
+        - name: Auto-numbering prefixes
+          href: change-auto-number-prefix-contract-case-article-quote-order-invoice-campaign-category-knowledge-articles.md 
+        - name: Define subjects to categorize cases, products, and articles
+          href: define-subjects-categorize-cases-products-articles.md
+      - name: Create or edit business unit
+        href: create-edit-business-units.md
+      - name: Delete business unit
+        href: delete-business-unit.md 
+      - name: Assign business unit a different parent business
+        href: assign-business-unit-different-parent.md 
+      - name: Create or edit a site
+        href: create-edit-site.md
+      - name: Add resources to a site
+        href: add-resources-site.md 
+      - name: Enhanced service level agreements
+        href: enhanced-service-level-agreements.md 
+      - name: Configure Relevance Search
+        href: configure-relevance-search-organization.md 
+      - name: Manage product catalog configuration
+        href: manage-product-catalog-configuration.md 
+      - name: Rich text experience for appointment activities
+        href: enable-rich-text-experience.md
     - name: Partners
       items:
       - name: Add a Partner of Record
