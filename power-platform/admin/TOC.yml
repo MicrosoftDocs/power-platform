@@ -534,13 +534,18 @@
           href: install-social-selling-assistant.md 
         - name: Control receiving social data
           href: control-social-data.md 
-
-
-
-         
-
-
-
+      - name: Manage Bing Maps
+        href: manage-bing-maps-organization.md 
+      - name: Enable Flow integration
+        href: enable-embedded-flow-in-your-organization.md 
+      - name: Preview feature: LIve Assist powered by Café X
+        href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
+      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
+        href: deploy-packages-using-package-deployer-windows-powershell.md 
+      - name: Use Power BI
+        href: use-power-bi.md 
+      - name: Install, update, or remove a preferred solution
+        href: install-remove-preferred-solution.md 
     - name: GDPR - Responding to DSR requests
       items:
       - name: System-generated logs 

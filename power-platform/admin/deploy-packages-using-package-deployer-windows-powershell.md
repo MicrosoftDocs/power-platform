@@ -1,29 +1,23 @@
 ---
-title: "Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell (Dynamics 365 for Customer Engagement) | MicrosoftDocs"
-ms.custom: 
-ms.date: 06/10/2019
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 27676d3a-d35c-4452-9ff3-bcdadd943bef
-caps.latest.revision: 36
+title: "Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell | MicrosoftDocs"
+description: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
 author: Mattp123
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 06/10/2019
 ms.author: matp
-manager: brycho
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
 
-*This content also applies to the on-premises version.*
+[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 [!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on a Dynamics 365 for Customer Engagement apps (on-premises) or [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance. A “package” can consist of any or all of the following:  
   
