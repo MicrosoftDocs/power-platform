@@ -1,29 +1,23 @@
 ---
-title: "Edit existing SharePoint site records for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 09/30/2017
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 2b0f8bb9-548f-498a-83b8-d7fbf3c05884
-caps.latest.revision: 19
+title: "Edit existing SharePoint site records   | MicrosoftDocs"
+description: Edit existing SharePoint site records
 author: Mattp123
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/30/2017
 ms.author: matp
-manager: brycho
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Edit existing SharePoint site records
 
-*This content also applies to the on-premises version.*
+[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 Store documents related to your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] folders and manage the folders and documents from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. Integrating [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document management with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps makes it easy to access and share documents associated with your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps records.  
   

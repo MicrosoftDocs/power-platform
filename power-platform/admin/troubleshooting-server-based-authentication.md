@@ -1,29 +1,21 @@
 ---
-title: "Troubleshooting server-based authentication for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 08/02/2019
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 8c9c8c01-b9d2-4bff-b7c7-dc5c8fec201f
-caps.latest.revision: 29
+title: "Troubleshooting server-based authentication   | MicrosoftDocs"
+description: Troubleshooting server-based authentication
 author: Mattp123
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/02/2019
 ms.author: matp
-manager: brycho
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Troubleshooting server-based authentication
-
-*This content also applies to the on-premises version.*
 
 <a name="BKMK_tshoot_wizard"></a>   
 ## Troubleshooting the Enable server-based SharePoint Integration wizard  

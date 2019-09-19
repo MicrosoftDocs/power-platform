@@ -1,27 +1,23 @@
 ---
-title: "Configure server-based authentication with Dynamics 365 for Customer Engagement apps (online) and SharePoint on-premises | MicrosoftDocs"
-ms.custom: 
-ms.date: 07/11/2019
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: d3fed784-942b-470d-b01a-ce3f2be3aa04
-caps.latest.revision: 42
+title: "Configure server-based authentication with SharePoint on-premises | MicrosoftDocs"
+description: Configure server-based authentication with SharePoint on-premises
 author: Mattp123
-ms.author: matp
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 07/11/2019
+ms.author: matp
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
-# Configure server-based authentication with Dynamics 365 for Customer Engagement apps (online) and SharePoint on-premises
+# Configure server-based authentication with SharePoint on-premises
+
+[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] integration for document management can  be used to connect [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. When using server-based authentication, [Azure AD Domain Services](https://azure.microsoft.com/documentation/articles/active-directory-ds-overview/) is used as the trust broker and users do not need to sign in to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   

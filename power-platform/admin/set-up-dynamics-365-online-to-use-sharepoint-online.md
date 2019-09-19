@@ -1,27 +1,23 @@
 ---
-title: "Set up Dynamics 365 for Customer Engagement apps to use SharePoint Online | MicrosoftDocs"
-ms.custom: 
-ms.date: 06/10/2019
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: c0219d78-f2e2-4fdd-9d54-2d7e1468fc0c
-caps.latest.revision: 11
-author: jimholtz
-ms.author: jimholtz
+title: "Set up Dynamics 365 apps to use SharePoint Online  | MicrosoftDocs"
+description: Set up Dynamics 365 apps to use SharePoint Online
+author: Mattp123
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 06/10/2019
+ms.author: matp
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Set up Dynamics 365 for Customer Engagement to use SharePoint Online
+
+[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)] with [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, you can:  
   

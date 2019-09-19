@@ -1,29 +1,21 @@
 ---
-title: "SharePoint Document Management software requirements for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 05/29/2019
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 736cf9ab-6a7f-4dc8-940a-d7302e09e858
-caps.latest.revision: 55
+title: "SharePoint Document Management software requirements  | MicrosoftDocs"
+description: SharePoint Document Management software requirements
 author: Mattp123
-ms.author: matp
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 05/29/2019
+ms.author: matp
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # SharePoint Document Management software requirements
-
-*This content also applies to the on-premises version.*
 
 If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] document management functionality with [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, you must meet the requirements listed in this topic.  
 

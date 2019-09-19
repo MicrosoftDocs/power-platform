@@ -1,29 +1,21 @@
 ---
-title: "Permissions required for document management tasks for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 09/30/2017
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: ffa19af1-251f-4feb-b427-1cf8e1bb9e93
-caps.latest.revision: 16
+title: "Permissions required for document management tasks   | MicrosoftDocs"
+description: Permissions required for document management tasks
 author: Mattp123
-ms.author: matp
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/30/2017
+ms.author: matp
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Permissions required for document management tasks
-
-*This content also applies to the on-premises version.*
 
 The following table shows the default security roles or other permissions that are needed to perform each document management with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] task.  
   

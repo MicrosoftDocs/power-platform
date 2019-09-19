@@ -1,29 +1,23 @@
 ---
-title: "Enable SharePoint document management for specific entities for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 08/01/2018
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: ac5a3303-206b-43b0-b0a4-d7346a001ba5
-caps.latest.revision: 51
+title: "Enable SharePoint document management for specific entities   | MicrosoftDocs"
+description: Enable SharePoint document management for specific entities
 author: Mattp123
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/01/2018
 ms.author: matp
-manager: brycho
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Enable SharePoint document management for specific entities
 
-*This content also applies to the on-premises version.*
+[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 Store the documents related to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps entity records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] and quickly access, share, and manage these documents from [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps by enabling document management on the specific entities.  
   

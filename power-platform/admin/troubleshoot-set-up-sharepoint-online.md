@@ -1,28 +1,23 @@
 ---
-title: "Troubleshoot SharePoint integration with Customer Engagement | MicrosoftDocs"
-ms.custom: 
-ms.date: 08/02/2019
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
-ms.assetid: 28ba29c2-a661-4d6e-b72a-47c69a94de98
-caps.latest.revision: 7
-author: jimholtz
-ms.author: jimholtz
+title: "Troubleshoot SharePoint integration   | MicrosoftDocs"
+description: Troubleshoot SharePoint integration
+author: Mattp123
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/02/2019
+ms.author: matp
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Troubleshoot SharePoint integration
 
-*This content also applies to the on-premises version.*
+[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 This topic explains how to fix common issues that may occur with SharePoint document management.
 
