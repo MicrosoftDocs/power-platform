@@ -92,7 +92,7 @@
   items:
    - name: Overview of GDPR compliance
      href: gdpr-summary.md
-   - name: Requests to export data
+   - name: Requests to export and dowload data
      href: gdpr-export.md
    - name: Requests to delete data
      href: gdpr-delete.md
