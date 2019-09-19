@@ -538,7 +538,7 @@
         href: manage-bing-maps-organization.md 
       - name: Enable Flow integration
         href: enable-embedded-flow-in-your-organization.md 
-      - name: Preview feature: LIve Assist powered by Café X
+      - name: "Preview feature: LIve Assist powered by Café X"
         href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
       - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
         href: deploy-packages-using-package-deployer-windows-powershell.md 
