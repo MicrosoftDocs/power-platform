@@ -546,6 +546,32 @@
         href: use-power-bi.md 
       - name: Install, update, or remove a preferred solution
         href: install-remove-preferred-solution.md 
+      - name: Add Office 365 Online services
+        item: 
+        - name: Overview
+          href: add-office-365-online-services.md
+        - name: Connect to Exchange Online
+          href: connect-exchange-online.md
+        - name: Connect to SharePoint Online
+          href: set-up-dynamics-365-online-to-use-sharepoint-online.md 
+        - name: Set up Microsoft Teams integration
+          href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/teams-integration
+        - name: Skype for Business and Skype integration
+          href: skype-business-integration.md 
+        - name: Set up Skype or Skype for Business
+          href: set-up-skype-or-skype-for-business.md 
+        - name: Deploy Office 365 Groups
+          href: deploy-office-365-groups.md 
+        - name: Enable viewing profile cards
+          href: enable-profile-card.md
+        - name: Set up OneNote integration
+          href: set-up-onenote-integration-in-dynamics-365.md 
+        - name: Enable OneDrive for Business (online)
+          href: enable-onedrive-for-business.md 
+        - name: Enable OneDrive for Business (on-premises)
+          href: connect-onedrive-business.md 
+        - name: Connect to Yammer
+          href: connect-yammer.md 
     - name: GDPR - Responding to DSR requests
       items:
       - name: System-generated logs 
