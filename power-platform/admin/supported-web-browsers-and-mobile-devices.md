@@ -38,7 +38,7 @@ For a mobile device, such as an iPad or smartphone, the following apps are avail
   
 - [!INCLUDE[pn_crm_for_windows_8](../includes/pn-crm-for-windows-8.md)]  
   
-For more detailed information about supported phones and tablets, see [Microsoft Dynamics 365 for Customer Engagement apps mobile and tablet device support](../mobile-app/support-phones-tablets.md).  
+For more detailed information about supported phones and tablets, see [Microsoft Dynamics 365 for Customer Engagement apps mobile and tablet device support](/dynamics365/customer-engagement/mobile-app/support-phones-tablets.md).  
   
 > [!NOTE]
 > - Users who try to view [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps on an unsupported browser may be redirected to a mobile experience. 

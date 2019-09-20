@@ -242,7 +242,6 @@ For example, you can create a team template for the Account entity with the Read
  The maximum number of team templates that you can create for an entity is specified in the `MaxAutoCreatedAccessTeamsPerEntity` deployment setting. The default value is 2. The maximum number of entities that you can enable for auto-created access teams is specified in the `MaxEntitiesEnabledForAutoCreatedAccessTeams` deployment setting. The default value is 5. You can use the `Set-CrmSetting`[!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] command to update this value.   
   
 ### See also  
- [Manage security, users and teams](../admin/manage-security-users-and-teams.md)<br /> 
  [Create a team template and add to an entity form](create-team-template-add-entity-form.md)   
  [About team templates](../admin/about-team-templates.md)   
  [Print leads, quotes, and other records](/dynamics365/customer-engagement/basics/print-leads-quotes-other-records.md)  

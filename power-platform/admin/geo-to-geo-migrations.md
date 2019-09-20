@@ -51,7 +51,7 @@ We continue to open new datacenter regions for [!INCLUDE[pn_crm_online_shortest]
 
 -   United Kingdom (UK) = *.crm11.dynamics.com  
 
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in to Dynamics 365 apps](sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Organization Service](../../developer/org-service/discover-url-organization-organization-service.md)
+ [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in to Dynamics 365 apps](sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Organization Service](/dynamics365/customer-engagement/developer/org-service/discover-url-organization-organization-service.md)
 
  For example, if your existing organization URL is https://myorg.crm<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be https://myorg.crm<strong>6</strong>.dynamics.com.  
 

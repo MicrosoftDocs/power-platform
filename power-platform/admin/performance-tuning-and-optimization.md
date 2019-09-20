@@ -30,5 +30,5 @@ Operations that require intensive database transactions examples:
 
 ### See also
 [Verify network capacity and throughput for clients](verify-network-capacity-throughput-clients.md) <br />
-[Key preparation and configuration tasks](key-preparation-and-configuration-tasks.md) <br />
+
 

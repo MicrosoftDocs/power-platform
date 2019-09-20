@@ -55,12 +55,10 @@ To have users up and running in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-onli
  Sign in to Customer Engagement apps and add business units (if your organization needs more than one business unit), and assign security roles and business units to users. The users you registered with the online service in step one are automatically added to Customer Engagement apps. After you assign at least one security role to a user, that user can click the link in the email invitation, enter credentials, and begin using Customer Engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign a security role to a user](create-users-assign-online-security-roles.md#assign-a-security-role-to-a-user).  
   
 > [!IMPORTANT]
-> Before you start adding information to Customer Engagement apps, we recommend that you turn off or disable your browser’s pop-up blocker. Pop-up blockers can block data-entry dialog boxes in Customer Engagement apps. For more information about browser and other settings for improved product performance, see [Key preparation and configuration tasks](../admin/key-preparation-and-configuration-tasks.md).  
+> Before you start adding information to Customer Engagement apps, we recommend that you turn off or disable your browser’s pop-up blocker. Pop-up blockers can block data-entry dialog boxes in Customer Engagement apps. 
   
  You might have [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data located in other systems. In your planning phase, you considered how you’ll import this data. Before you invite users into Customer Engagement apps, ensure that you have completed the data migration process. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Import data (all record types)](../admin/import-data-all-record-types.md).  
   
 ### See also  
- [Get started administering Microsoft Dynamics 365 apps](getting-started.md)   
  [Plan for Microsoft Dynamics 365 apps deployment and administration](../admin/plan-for-deployment-and-administration.md)   
- [Manage subscriptions, licenses, and user accounts](../admin/manage-subscriptions-licenses-user-accounts.md)   
  [Import data (all record types)](../admin/import-data-all-record-types.md)   

@@ -78,10 +78,10 @@ Notice that the suggested network requirements include the metadata download nee
 - [!INCLUDE[tn_Mozilla_Firefox](../includes/tn-mozilla-firefox.md)] (latest publicly-released version) running on [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)], [!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)], [!INCLUDE[pn_windows8](../includes/pn-windows8.md)], or [!INCLUDE[pn_Windows_7](../includes/pn-windows-7.md)]  
 
 - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)]
-  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)], [!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)], [!INCLUDE[pn_windows8](../includes/pn-windows8.md)], [!INCLUDE[pn_Windows_7](../includes/pn-windows-7.md)], or [Google Nexus](../mobile-app/support-phones-tablets.md#BKMK_Nexus) tablet 
+  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)], [!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)], [!INCLUDE[pn_windows8](../includes/pn-windows8.md)], [!INCLUDE[pn_Windows_7](../includes/pn-windows-7.md)], or [Google Nexus](/dynamics365/customer-engagement/mobile-app/support-phones-tablets.md#BKMK_Nexus) tablet 
   - Google Chrome (latest publicly-released version) running on [!INCLUDE[tn_Mac_OS_X](../includes/tn-mac-os-x.md)] 10.8 (Mountain Lion), 10.9 (Mavericks), or 10.10 (Yosemite) 
 
-- [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] (latest publicly-released version) running on [!INCLUDE[tn_Mac_OS_X](../includes/tn-mac-os-x.md)] 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), or [Apple iPad](../mobile-app/support-phones-tablets.md#BKMK_iPad)  
+- [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] (latest publicly-released version) running on [!INCLUDE[tn_Mac_OS_X](../includes/tn-mac-os-x.md)] 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), or [Apple iPad](/dynamics365/customer-engagement/mobile-app/support-phones-tablets.md#BKMK_iPad)  
 
 To find the latest release for these web browsers, visit the software manufacturer’s website.  
 

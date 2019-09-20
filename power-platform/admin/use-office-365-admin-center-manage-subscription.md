@@ -55,7 +55,7 @@ search.app:
 ## Check your service health  
  You can quickly get real-time status of your Customer Engagement apps and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services. The Service health page on the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] provides a comprehensive view of the service health of your online services. If users are having trouble signing in to Customer Engagement apps, check this page to see if there is a service outage.  
   
-For more information, see [How do I check my online service health?](check-online-service-health.md)
+For more information, see [Check your service health](use-office-365-admin-center-manage-subscription.md#check-your-service-health).
   
 <a name="BKMK_ServiceMessages"></a>   
 

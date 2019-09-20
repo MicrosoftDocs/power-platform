@@ -47,4 +47,4 @@ To give these administrators access to additional areas, such as the Sales, Mark
 6. Enter an alternate email address, and then click **Save**.  
   
 ### See also  
- [Manage subscriptions, licenses, and user accounts](../admin/manage-subscriptions-licenses-user-accounts.md)
+

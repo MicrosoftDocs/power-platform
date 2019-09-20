@@ -153,7 +153,7 @@ Check the [Service health dashboard](https://docs.microsoft.com/office365/enterp
 
 If the Service health dashboard is not available, the status of Dynamics 365 Customer Engagement can be reviewed at the [backup status site](https://status.office.com/).
 
-If the service incident breaches your *Service Level Agreement*, you can claim a billing credit according to the conditions of your [Online Service Terms outlined in our Product licensing](https://www.microsoft.com/licensing/product-licensing/products). If you need help with this, see [Billing FAQs for Customer Engagement](billing-faqs-dynamics-365-online.md).
+If the service incident breaches your *Service Level Agreement*, you can claim a billing credit according to the conditions of your [Online Service Terms outlined in our Product licensing](https://www.microsoft.com/licensing/product-licensing/products). 
 
 <a name="BKMK_ServiceRestored"></a>  
  
