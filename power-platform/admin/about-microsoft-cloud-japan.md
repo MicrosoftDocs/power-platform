@@ -73,7 +73,7 @@ A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] supp
  Once you have been scheduled for migration, a member of the [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] team will work directly with you to discuss scheduling and any other issues that may come up during the migration.  
   
 ### If I am scheduled for an update to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)], will Microsoft apply the update at the same time as their migration to the Japan datacenter?  
- You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later before migrating to the Japan datacenter.  Customers can schedule their update. For more information, see [Manage Microsoft Dynamics 365 apps Updates](../../admin/manage-updates.md).  
+ You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later before migrating to the Japan datacenter.  Customers can schedule their update.  
   
 ### If I have both Office 365 services and [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], how will migration be handled?  
  The move of each service will be handled separately and customers will be fully supported even if one service has been moved and the other has not. For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], customers will be able to choose their move date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with the customer to schedule the move. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], customers will be notified through the message center about the move timeline, but the large number of existing customers means that individual scheduling is not possible. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  
@@ -84,7 +84,7 @@ A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] supp
 ### Will multi-geo instances be available to customers in Japan?  
  Multi-geo instances will be supported for Japan. Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers upon request, and we’ll continue to expand over time.  
   
- For additional guidance regarding multiple tenants and multiple instances, see [Multiple online instances or tenants](../../admin/multiple-online-instances-tenants.md). This link will be updated with the [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] launch.  
+ For additional guidance regarding multiple tenants and multiple instances, see [Multiple online instances or tenants](/dynamics365/customer-engagement/admin/multiple-online-instances-tenants.md). This link will be updated with the [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] launch.  
   
 ### How will this affect [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] users or partners?  
  Regardless of where [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] is provisioned, you’ll have the ability to determine which of your users will have access to those services based on how you configure [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)].  

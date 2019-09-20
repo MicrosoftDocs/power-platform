@@ -47,7 +47,7 @@ search.app:
 ## Dynamics 365 apps service overview  
   
 ### Will multi-geo instances be available to customers in Canada?  
- Yes, multi-geo instances will be supported for Canada. Multi-geo instances are designed for companies with offices in multiple countries or regions who want to keep core customer data within those countries or regions. Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo instances](../../admin/add-edit-multiregional-instances.md).  
+ Yes, multi-geo instances will be supported for Canada. Multi-geo instances are designed for companies with offices in multiple countries or regions who want to keep core customer data within those countries or regions. Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo instances](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md).  
   
 ### Will the standard Dynamics 365 for Customer Engagement apps Online service level agreements be offered?  
  Yes, the standard [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] service level agreements (SLAs) will apply to the Canada regions, just as they do in our other regions around the world.  
@@ -88,7 +88,7 @@ search.app:
  Once you have been scheduled for migration, a member of the [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] team will work directly with you to discuss scheduling and any other issues that may come up during the migration.  
   
 ### If I am scheduled for an update to CRM Online 2015 Update or CRM Online 2015 Update 1, will Microsoft apply the update at the same time as their migration to the Canada datacenter?  
- You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the Canada datacenter.  Customers can schedule their update. For more information, see [Manage Dynamics 365 apps updates](../../admin/manage-updates.md).  
+ You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the Canada datacenter.  Customers can schedule their update. 
   
 ### If I have both Office 365 services and Dynamics 365 apps, how will migration be handled?  
  The migration of each service will be handled separately. For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  

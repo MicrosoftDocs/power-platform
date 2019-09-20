@@ -54,7 +54,7 @@ Due to certain technological dependencies, the following features listed will no
 - [Online Management API](../../developer/online-management-api.md) (Admin API) enables customers to create and manage the Customer Engagement environments using REST API will be unavailable.
 - [Company News Timeline](../../company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets.md) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
 - [Global Discovery Service API](../../developer/webapi/discover-url-organization-web-api.md) which programmatically enables customer applications to discover user organization (also known as instance) and find instances across regions will not be available.
-- The service health [Organization Insights](../../admin/use-organization-insights-solution-view-instance-metrics.md) feature will be unavailable.
+- The service health [Organization Insights](/dynamics365/customer-engagement/admin/use-organization-insights-solution-view-instance-metrics.md) feature will be unavailable.
 - [Portals](../../portals/administer-manage-portal-dynamics-365.md) for the Dynamics 365 Customer Engagement services will be unavailable.
 - [Dynamics 365 for phones and tablets](../../mobile-app/overview.md) will be unavailable.
 - The following Microsoft AppSource hosted solutions for the Dynamics 365 Customer Engagement services will not be available:
