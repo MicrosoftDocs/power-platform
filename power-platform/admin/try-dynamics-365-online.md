@@ -103,7 +103,7 @@ The following table shows what’s installed for each choice, what you see in th
 
 |                                      Installation options                                       |           App modules installed/shown in app switcher            |                                                            Description                                                             | Available for  |
 |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|----------------|
-|                Sales<br />See: [Sales Overview](../sales-enterprise/overview.md)                |                              Sales                               |                                      Full-featured desktop-optimized app for sales scenarios                                       |      Web       |
+|                Sales<br />See: [Sales Overview](/dynamics365/customer-engagement/sales-enterprise/overview.md)                |                              Sales                               |                                      Full-featured desktop-optimized app for sales scenarios                                       |      Web       |
 |                                                                                                 |                            Sales Hub                             |                                    Mobile-optimized app for sales scenarios (Unified Interface)                                    | Web and Mobile |
 |                                                                                                 | Dynamics 365 - custom |  Full suite of [!INCLUDE[pn-crm-online](../includes/pn-crm-online.md)] capabilities, including administration  |      Web       |
 |     Customer Service<br />See: [Customer Service Overview](../customer-service/overview.md)     |                         Customer Service                         |           Full-featured desktop-optimized app for service scenarios (does not include knowledge management capabilities)           |      Web       |
@@ -188,6 +188,6 @@ The trial owner will receive an email with your request. Once approved, you'll r
 
 ### See also  
  [Onboard your organization and users to Dynamics 365 apps](onboard-your-organization-and-users-to-dynamics-365-online.md)   
- [Business apps in Dynamics 365 for Customer Engagement](../basics/business-apps-dynamics-365.md)<br />
+ [Business apps in Dynamics 365 for Customer Engagement](/dynamics365/customer-engagement/basics/business-apps-dynamics-365.md)<br />
  [Manage Microsoft Dynamics 365 apps instances](../admin/manage-online-instances.md)   
  [Manage subscriptions, licenses, and user accounts](../admin/manage-subscriptions-licenses-user-accounts.md)

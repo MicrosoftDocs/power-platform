@@ -70,14 +70,14 @@ While teams provide access to a group of users, you must still associate individ
 
 If an owner team doesn’t own records and doesn’t have security roles assigned to the team, it can be converted to an access team. It is a one-way conversion. You can’t convert the access team back to the owner team. During conversion, all queues and mailboxes associated with the team are deleted. When you create a team in the web application, you have to choose the team type **Owner**.
 
-For more information, see [Assign a record to a user or team](../basics/assign-record-user-team.md).
+For more information, see [Assign a record to a user or team](/dynamics365/customer-engagement/basics/assign-record-user-team.md).
 
 ## Create an owner team
 
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
    
    Check your security role:
-   - Follow the steps in [View your user profile](../basics/view-your-user-profile.md).
+   - Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
    - Don’t have the correct permissions? Contact your system administrator.
 
 2. Go to **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
@@ -103,7 +103,7 @@ For more information, see [Assign a record to a user or team](../basics/assign-r
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
    
    Check your security role:
-   - Follow the steps in [View your user profile](../basics/view-your-user-profile.md).
+   - Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
    - Don’t have the correct permissions? Contact your system administrator.
 
 2. Go to **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
@@ -158,14 +158,14 @@ A group team can own one or more records. To make a team an owner of the record,
 
 While teams provide access to a group of users, you must still associate individual users with security roles that grant the privileges that they need to create, update, or delete user-owned records. These privileges can’t be applied by assigning a nonmember’s privilege inherited security role to a team and then adding the user to that team. If you need to provide your team members the team privileges directly, without their own security role, you can assign the team a security role that has [member’s privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
 
-For more information, see [Assign a record to a user or team](../basics/assign-record-user-team.md).
+For more information, see [Assign a record to a user or team](/dynamics365/customer-engagement/basics/assign-record-user-team.md).
 
 ## Create a group team
 
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
 
    Check your security role:
-   - Follow the steps in [View your user profile](../basics/view-your-user-profile.md).
+   - Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
    - Don’t have the correct permissions? Contact your system administrator.
 
    Prerequisites:
@@ -200,7 +200,7 @@ For more information, see [Assign a record to a user or team](../basics/assign-r
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
    
    Check your security role:
-   - Follow the steps in [View your user profile](../basics/view-your-user-profile.md).
+   - Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
    - Don’t have the correct permissions? Contact your system administrator.
 
 2. Go to **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
@@ -245,7 +245,7 @@ For example, you can create a team template for the Account entity with the Read
  [Manage security, users and teams](../admin/manage-security-users-and-teams.md)<br /> 
  [Create a team template and add to an entity form](create-team-template-add-entity-form.md)   
  [About team templates](../admin/about-team-templates.md)   
- [Print leads, quotes, and other records](../basics/print-leads-quotes-other-records.md)  
+ [Print leads, quotes, and other records](/dynamics365/customer-engagement/basics/print-leads-quotes-other-records.md)  
  [Add teams or users to a field security profile](../admin/add-teams-users-field-security-profile.md)   
  <!-- [Update deployment configuration settings](Update%20deployment%20configuration%20settings.md)   -->
  [About team templates](about-team-templates.md)   

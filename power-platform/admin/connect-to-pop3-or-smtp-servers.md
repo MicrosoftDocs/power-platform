@@ -1,6 +1,7 @@
 ---
 title: "Connect Dynamics 365 apps to POP3 or SMTP servers  | MicrosoftDocs"
 description: Connect Dynamics 365 apps to POP3 or SMTP servers 
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
@@ -182,5 +183,4 @@ Customizations or email configurations in PowerApps US Government can only use t
 ### See also  
  [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
  [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
- [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
  [Microsoft PowerApps US Government](../admin/government/microsoft-dynamics-365-government.md)

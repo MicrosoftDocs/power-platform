@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-If you create an email message in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  If the status of the email appears as "Pending Send" and is not sent, contact your [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] administrator. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find your Dynamics 365 for Customer Engagement administrator or support person](../basics/find-administrator-support.md)  
+If you create an email message in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  If the status of the email appears as "Pending Send" and is not sent, contact your [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] administrator. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find your Dynamics 365 for Customer Engagement administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md)  
   
  If you are the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrator, verify that the user who sent the email is enabled for sending email. To do this:  
   

@@ -66,7 +66,7 @@ Write-Host "Appointment RTE updated value: " $organizationEntity.appointmentrich
 
 
 ## See also
-[Create or edit an appointment](../basics/create-edit-appointment.md)
+[Create or edit an appointment](/dynamics365/customer-engagement/basics/create-edit-appointment.md)
 
 
 

@@ -21,7 +21,7 @@ search.app:
 
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   
- If you need to back up your security role changes, or export security roles for use in a different implementation of [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)], you can export them as part of exporting customizations. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Export your customizations as a solution](../customize/use-solutions-for-your-customizations.md)  
+ If you need to back up your security role changes, or export security roles for use in a different implementation of [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)], you can export them as part of exporting customizations. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md)  
   
 ## Create a security role  
   
@@ -116,7 +116,7 @@ You can create new security roles to accommodate changes in your business requir
 
 Start by downloading the solution from the Download Center: [Common Data Service minimum privilege security role](http://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip).
 
-Then, follow the directions to import the solution: [Import, update, and export solutions](../customize/import-update-upgrade-solution.md).
+Then, follow the directions to import the solution: [Import, update, and export solutions](/dynamics365/customer-engagement/customize/import-update-upgrade-solution.md).
 
 When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
 
