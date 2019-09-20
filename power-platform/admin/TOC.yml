@@ -93,6 +93,8 @@
           href: regions-overview.md
         - name: Manage encryption key
           href: manage-encryption-key.md
+        - name: "Troubleshooting: Unblock required URLs"
+          href: troubleshooting-unblock-urls-required.md
         - name: PowerApps Preview Program
           href: preview-environments.md
       - name: Manage settings 
@@ -210,6 +212,8 @@
         href: signup-question-and-answer.md
       - name: Administer without a license
         href: global-service-administrators-can-administer-without-license.md
+      - name: Use the service admin role to manage your tenant
+        href: use-service-admin-role-manage-tenant.md
       - name: Purchase PowerApps
         href: signup-for-powerapps-admin.md
       - name: FAQs and more information 
@@ -237,7 +241,7 @@
         - name: Assign security roles to a form
           href: assign-security-roles-form.md
         - name: View user profile
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile
+          href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
         - name: User session and access management
           href: user-session-management.md
         - name: Field level security
@@ -340,6 +344,10 @@
         href: wp-task-automation-flow.md
       - name: Manage email notifications to admins
         href: manage-email-notifications.md
+      - name: Policies and communications
+        href: policies-communications.md
+      - name: Notifications explained
+        href: notifications-explained.md 
       - name: View apps in your environments 
         href: admin-view-apps.md
       - name: Manage apps in your org 
@@ -348,8 +356,6 @@
         href: environment-and-tenant-migration.md
       - name: Embed an app in Teams
         href: embed-app-teams.md
-      # - name: Audit data and user Activity
-      #  href: audit-data-user-activity.md
       - name: Deploy packages using Package Deployer and Windows PowerShell
         href: deploy-packages-using-package-deployer-windows-powershell.md  
       - name: Deployment scenarios 
@@ -388,6 +394,8 @@
         href: view-take-action-bulk-deletion-jobs.md
       - name: Monitor and manage system jobs
         href: monitor-manage-system-jobs.md
+      - name: Audit data and user Activity
+        href: audit-data-user-activity.md
       - name: Remove user personal data
         href: remove-user-personal-data.md
       - name: Recover database space by deleting audit logs
@@ -400,6 +408,8 @@
         items:
         - name: About moving configuration data
           href: manage-configuration-data.md 
+        - name: Create a schema to export configuration data
+          href: create-schema-export-configuration-data.md
         - name: Configure date settings for demo data
           href: configure-date-settings-for-demo-data.md 
         - name: Modify a configuration data schema
@@ -408,22 +418,16 @@
           href: import-configuration-data.md 
     - name: Work with templates
       items: 
-      - name: Articles
+      - name: Article templates
         href: create-templates-articles.md 
-      - name: Email
+      - name: Email templates
         href: create-templates-email.md
-      - name: Knowledge article
-        href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/create-templates-knowledge-article
-      - name: Work with mail merge templates
+      - name: Mail merge templates
         href: work-mail-merge-templates.md
-      - name: Campaign
-        href: create-edit-campaign-template-using-app-marketing-sales.md
-      - name: Entitlements
-        href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-up-entitlements-templates
-      - name: Excel
+      - name: Excel templates
         href: analyze-your-data-with-excel-templates.md
-      - name: Word
-        href: using-word-templates-dynamics-365.md
+      - name: Word templates
+        href: using-word-templates.md
     - name: Integrate (synchronize) your email system
       items: 
       - name: Overview
@@ -540,6 +544,14 @@
           href: connect-onedrive-business.md 
         - name: Connect to Yammer
           href: connect-yammer.md 
+    - name: Performance tuning and optimization
+      items:
+      - name: Overview
+        href: performance-tuning-and-optimization.md 
+      - name: Verify network capacity and throughput for clients
+        href: verify-network-capacity-throughput-clients.md
+      - name: Data query performance
+        href: analyze-improve-data-query-performance.md
     - name: GDPR - Responding to DSR requests
       items:
       - name: System-generated logs 
