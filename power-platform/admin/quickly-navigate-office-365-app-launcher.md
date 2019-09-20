@@ -74,7 +74,7 @@ search.app:
 > [!TIP]
 >  If you've just started a trial or upgraded to [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)], you might need to refresh or open a new browser session to see your apps. There might be a delay for your instance to fully provision.  
   
- ![Two instances of Dynamics 365 for Customer Engagement apps (online) on the home page](../admin/media/two-instances-of-dynamics-365-online-in-the-home-page.png "Two instances of Dynamics 365 for Customer Engagement apps (online) on the home page")  
+ ![Two instances of Dynamics 365 apps on the home page](../admin/media/two-instances-of-dynamics-365-online-in-the-home-page.png "Two instances of Dynamics 365 apps on the home page")  
   
 > [!NOTE]
 > **What is "Dynamics 365 - custom"?**  
@@ -92,7 +92,7 @@ search.app:
 > **Where do I get more information about upgrading to Dynamics 365 for Customer Engagement?**  
 > 
 > -   [Important information for CRM Online customers](../admin/important-information-customers.md)  
-> -   [Switch from Dynamics CRM Online to Dynamics 365 for Customer Engagement apps (online)](../admin/switch-dynamics-crm-online-dynamics-365.md)  
+> -   [Switch from Dynamics CRM Online to Dynamics 365 apps](../admin/switch-dynamics-crm-online-dynamics-365.md)  
   
 <a name="BKMK_PinApps"></a>   
 ### Pin your frequently-used apps 
@@ -133,5 +133,5 @@ search.app:
  [Sign in to Dynamics and Office 365 apps](../admin/sign-in-office-365-apps.md)
  [My Apps on Home.Dynamics.com ](https://blogs.msdn.microsoft.com/crm/2017/03/30/my-apps-on-home-dynamics-com/)  
  [Important information for CRM Online customers](../admin/important-information-customers.md)   
- [Switch from Dynamics CRM Online to Dynamics 365 for Customer Engagement apps (online)](../admin/switch-dynamics-crm-online-dynamics-365.md)   
+ [Switch from Dynamics CRM Online to Dynamics 365 apps](../admin/switch-dynamics-crm-online-dynamics-365.md)   
  [Meet the Office 365 app launcher](https://support.office.com/article/Meet-the-Office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a)   

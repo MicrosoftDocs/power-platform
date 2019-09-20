@@ -37,6 +37,6 @@ search.app:
  [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]  
   
 ### See also  
- [Get started administering Microsoft Dynamics 365 for Customer Engagement apps (online)](getting-started.md) <br />
- [Plan for Microsoft Dynamics 365 for Customer Engagement apps (online) Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
+ [Get started administering Microsoft Dynamics 365 apps](getting-started.md) <br />
+ [Plan for Microsoft Dynamics 365 apps Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
  [Microsoft Dynamics CRM Online IP Address Ranges](https://support.microsoft.com/help/2728473/microsoft-dynamics-crm-online-ip-address-ranges)

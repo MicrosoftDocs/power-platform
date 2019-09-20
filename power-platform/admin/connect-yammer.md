@@ -104,7 +104,7 @@ search.app:
 6. Use the temporary user name and password to complete the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] connection configuration.  
   
 ### Add Yammer sites to the browser as trusted  
- Add your Yammer sites to your browser as trusted. For example, for Dynamics 365 for Customer Engagement apps (online), add the following:  
+ Add your Yammer sites to your browser as trusted. For example, for Dynamics 365 apps, add the following:  
   
 - https://*.crm.dynamics.com  
   

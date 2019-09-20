@@ -30,9 +30,9 @@ You can use [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)
   
  Choose one of the following scenarios to configure [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] for your organization:  
   
--   [Connect Dynamics 365 for Customer Engagement apps (online) to Exchange Online](connect-exchange-online.md)  
+-   [Connect Dynamics 365 apps to Exchange Online](connect-exchange-online.md)  
   
--   [Connect Dynamics 365 for Customer Engagement apps (online) to Exchange Server on-premises](connect-exchange-server-on-premises.md)  
+-   [Connect Dynamics 365 apps to Exchange Server on-premises](connect-exchange-server-on-premises.md)  
   
 -   [Connect to a POP3 or SMTP server](../admin/connect-to-pop3-or-smtp-servers.md)
 

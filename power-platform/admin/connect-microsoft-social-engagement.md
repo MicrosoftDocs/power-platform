@@ -27,7 +27,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
 >  Before you can set up the Social Insights controls in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, you have to add search topic categories and visuals for your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]. You can add search topics in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] directly from within [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. See the [Microsoft Social Engagement Help Center](http://go.microsoft.com/fwlink/p/?LinkID=394325)  
   
 <a name="BKMK_Connect"></a>   
-## Connect Dynamics 365 for Customer Engagement apps (online) to Social Engagement for Social Insights  
+## Connect Dynamics 365 apps to Social Engagement for Social Insights  
  To configure the connection, you need to have a subscription to [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)], be an authorized [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] user and have a [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] instance provisioned for this [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance.  
   
 > [!NOTE]

@@ -77,7 +77,7 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
  For information on the [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page, see: [For admins and end users: Introducing the Dynamics 365 for Customer Engagement apps home page](../admin/quickly-navigate-office-365-app-launcher.md#BKMK_IntroD365HomePage).  
   
 <a name="BKMK_directsignin"></a>   
-## Direct sign in to Dynamics 365 for Customer Engagement apps (online)  
+## Direct sign in to Dynamics 365 apps  
  To directly sign in to the Customer Engagement apps service, use:  
   
  https://\<organization>.crm.dynamics.com  
@@ -117,5 +117,5 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
 ### See also  
  [Quickly navigate with the Office 365 app launcher and the Dynamics 365 for Customer Engagement apps home page](../admin/quickly-navigate-office-365-app-launcher.md)   
  [Important information for CRM Online customers](../admin/important-information-customers.md)   
- [Switch from Dynamics CRM Online to Dynamics 365 for Customer Engagement apps (online)](../admin/switch-dynamics-crm-online-dynamics-365.md)   
+ [Switch from Dynamics CRM Online to Dynamics 365 apps](../admin/switch-dynamics-crm-online-dynamics-365.md)   
  [Troubleshoot sign-in problems](troubleshoot-sign-in-problems.md)<br />

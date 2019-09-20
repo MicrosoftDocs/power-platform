@@ -39,7 +39,7 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
   
 <a name="setups2s"></a>   
 
-## Set up server-to-server authentication with Dynamics 365 for Customer Engagement apps (online) and SharePoint on-premises  
+## Set up server-to-server authentication with Dynamics 365 apps and SharePoint on-premises  
  Follow the steps in the order provided to set up Customer Engagement apps with [!INCLUDE[pn_sharepoint_2013](../includes/pn-sharepoint-2013.md)] on-premises.  
   
 > [!IMPORTANT]

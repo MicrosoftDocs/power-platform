@@ -31,12 +31,12 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
  This marks an important step for customers and partners on our cloud journey to serve our customers in Australia, New Zealand, and Oceania (Australia GEO). By bringing [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] to the local region, we’ll be able to serve our customers more effectively and with better performance while also ensuring compliance with local requirements.  
   
-### What prompted Microsoft to undertake this geographic expansion of Dynamics 365 for Customer Engagement apps (online)?  
+### What prompted Microsoft to undertake this geographic expansion of Dynamics 365 apps?  
  In order to better serve customer needs for data residency and reduced latency, we continually evaluate where we should expand availability around the world. We are committed to long-term investment in [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] and expansion over time.  
   
  This global expansion will enable us to deliver on the promise of increasing sales productivity while allowing our customers to sell effectively, market smarter, and provide care everywhere to offer amazing experiences to their customers.  
   
-### What are the future geographic expansion plans for Dynamics 365 for Customer Engagement apps (online)?  
+### What are the future geographic expansion plans for Dynamics 365 apps?  
  Geographic expansion of [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] is a high priority and we’re constantly evaluating market needs. While we have no additional information or specifics on future plans to announce at this time, we will update if and when we have something to share.  
   
 <a name="BKMK_Overview"></a>   
@@ -88,7 +88,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
 <a name="BKMK_ServiceOverview"></a>   
 
-## Dynamics 365 for Customer Engagement apps (online) service overview  
+## Dynamics 365 apps service overview  
   
 ### Will multi-geo instances be available to customers in Australia?  
   
@@ -108,16 +108,16 @@ You may request migration to the Australia datacenter upon datacenter availabili
 ### Will Dynamics 365 for Customer Engagement apps be available on Azure Infrastructure as a Service (IaaS) in Australia?  
  At this time, [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] is only available for Dev/Test scenarios and isn’t supported for production use cases. Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we’re dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability in each geography. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe.  
   
-### Where can I find more about Dynamics 365 for Customer Engagement apps (online) security, data privacy, and compliance?  
+### Where can I find more about Dynamics 365 apps security, data privacy, and compliance?  
  The [Microsoft Dynamics 365 for Customer Engagement apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409) will be updated as needed when the Australia Datacenters launch into general availability.  
   
-### What data for Dynamics 365 for Customer Engagement apps (online) will be in Australia datacenters at general availability?  
+### What data for Dynamics 365 apps will be in Australia datacenters at general availability?  
  For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], we’ll store all customer data, including backups, within the Australia Datacenter. For any [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services that are running in conjunction with [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] those services will follow the data storage rules for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
   
-### Will Dynamics 365 for Customer Engagement apps (online) be Information Security Registered Assessors Program (IRAP) certified when the datacenters are live in Australia?  
+### Will Dynamics 365 apps be Information Security Registered Assessors Program (IRAP) certified when the datacenters are live in Australia?  
  We’re actively investigating [IRAP](http://www.asd.gov.au/infosec/irap/index.htm) requirements and how they relate specifically to [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] and we’ll share more information at a later date.  
   
-### Where can I find out more about the physical infrastructure for Dynamics 365 for Customer Engagement apps (online)?  
+### Where can I find out more about the physical infrastructure for Dynamics 365 apps?  
  [Microsoft Cloud Infrastructure and Operations (MCIO)](http://go.microsoft.com/fwlink/p/?LinkID=528551) powers the Microsoft cloud services. MCIO focuses on smart growth, high reliability, operational excellence, cost-effectiveness, environmental sustainability, and a trustworthy online experience for customers and partners worldwide.  
   
  MCIO delivers the core infrastructure and foundational technologies for Microsoft's 200+ online businesses including [!INCLUDE[pn_bing](../includes/pn-bing.md)], [!INCLUDE[pn_outlook_com](../includes/pn-outlook-com.md)], [!INCLUDE[pn_msn](../includes/pn-msn.md)], [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], [!INCLUDE[pn_xbox_live](../includes/pn-xbox-live.md)], and [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)]. The infrastructure is comprised of a large global portfolio of datacenters, servers, content distribution networks, edge computing nodes, and fiber optic networks.  
@@ -126,7 +126,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
 
 ## Migration  
   
-### I have applications and data in an existing Microsoft Dynamics 365 for Customer Engagement apps (online) datacenter. Will I be able to move those resources to the Australia datacenters?  
+### I have applications and data in an existing Microsoft Dynamics 365 apps datacenter. Will I be able to move those resources to the Australia datacenters?  
  For Web direct customers, if the account country/region is Australia, New Zealand, or Fiji, the customer will be eligible to have their instances moved to the Australia East and Southeast region datacenters.  
   
 - The account country/region can be found in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
@@ -172,12 +172,12 @@ You may request migration to the Australia datacenter upon datacenter availabili
  Once you have been scheduled for migration, a member of the [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] team will work directly with you to discuss scheduling and any other issues that may come up during the migration.  
   
 ### If I am scheduled for an update to CRM Online 2015 Update or CRM Online 2015 Update 1, will Microsoft apply the update at the same time as their migration to the Australia datacenter?  
- You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the Australia datacenter. Customers can schedule their update. For more information, see [Manage Dynamics 365 for Customer Engagement apps (online) updates](../../admin/manage-updates.md).  
+ You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the Australia datacenter. Customers can schedule their update. For more information, see [Manage Dynamics 365 apps updates](../../admin/manage-updates.md).  
   
-### If I have both Office 365 services and Dynamics 365 for Customer Engagement apps (online), how will migration be handled?  
+### If I have both Office 365 services and Dynamics 365 apps, how will migration be handled?  
  The migration of each service will be handled separately. For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  
   
-### Can I move Office 365 and Dynamics 365 for Customer Engagement apps (online) at the same time?  
+### Can I move Office 365 and Dynamics 365 apps at the same time?  
  The move process for each service is handled separately but the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] move can be scheduled to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move if requested.  
   
 <a name="BKMK_Pricing"></a>   
@@ -225,4 +225,4 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
 ### See also  
  [Office 365 and Dynamics CRM Online now available from datacenters in Australia](https://blogs.office.com/2015/03/30/office-365-and-dynamics-crm-online-now-available-from-datacenters-in-australia/)    
- [New datacenter regions for Dynamics 365 for Customer Engagement apps (online)](new-datacenter-regions.md)
+ [New datacenter regions for Dynamics 365 apps](new-datacenter-regions.md)

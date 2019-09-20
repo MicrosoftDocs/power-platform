@@ -86,5 +86,5 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
  Additionally, [!INCLUDE[pn_skype](../includes/pn-skype.md)] click-to-call is supported with [!INCLUDE[pn_crm_for_windows_8](../includes/pn-crm-for-windows-8.md)], [!INCLUDE[pn_moca_CRM_Windows_8_1](../includes/pn-moca-crm-windows-8-1.md)], and [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)].  
   
 ### See also  
- [Set up Dynamics 365 for Customer Engagement apps (online) to use Skype or Skype for Business](../admin/set-up-skype-or-skype-for-business.md)   
- [Microsoft Dynamics 365 for Customer Engagement apps (online) requirements](online-requirements.md)
+ [Set up Dynamics 365 apps to use Skype or Skype for Business](../admin/set-up-skype-or-skype-for-business.md)   
+ [Microsoft Dynamics 365 apps requirements](online-requirements.md)

@@ -214,7 +214,7 @@ For information about the programmatic interface for managing configuration and 
 ## Modify an existing Export Profile  
  You can add or remove the entities and relationships in an existing Export Profile that you want to replicate.  
   
-1. In Dynamics 365 for Customer Engagement apps (online), go to **Settings** > **Data Export**.  
+1. In Dynamics 365 apps, go to **Settings** > **Data Export**.  
   
 2. In the All Data Export Profile view, select the Export Profile that you want to change.  
   

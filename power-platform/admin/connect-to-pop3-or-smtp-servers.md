@@ -166,8 +166,8 @@ Follow these steps to connect [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)
 
 <a name="BKMK_NetworkPorts"></a>   
 
-## Network ports for Dynamics 365 for Customer Engagement apps (online) Government  
- The following ports are open for outbound connections between Dynamics 365 for Customer Engagement apps (online) Government and internet services.  
+## Network ports for Dynamics 365 apps Government  
+ The following ports are open for outbound connections between Dynamics 365 apps Government and internet services.  
 
 -   80 HTTP  
 
@@ -177,10 +177,10 @@ Follow these steps to connect [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)
 
 -   995 Secure POP3  
 
-Customizations or email configurations in Dynamics 365 for Customer Engagement apps (online) Government can only use these ports.  
+Customizations or email configurations in Dynamics 365 apps Government can only use these ports.  
 
 ### See also  
  [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
  [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
  [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
- [Microsoft Dynamics 365 for Customer Engagement apps (online) Government](../admin/government/microsoft-dynamics-365-government.md)
+ [Microsoft Dynamics 365 apps Government](../admin/government/microsoft-dynamics-365-government.md)

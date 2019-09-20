@@ -62,7 +62,7 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
   
 <a name="BKMK_ConfigureDocManage"></a>  
  
-## Configure Dynamics 365 for Customer Engagement apps (online) for SharePoint document management  
+## Configure Dynamics 365 apps for SharePoint document management  
  If you are a new organization and have not yet deployed document management, see [Configure a new organization](../admin/set-up-dynamics-365-online-to-use-sharepoint-online.md#BKMK_ConfigNewOrg).  
   
  If your organization is already using document management with [!INCLUDE[pn_list_component_short](../includes/pn-list-component-short.md)], you must switch to server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Switching from the list component or changing the deployment](switching-list-component-changing-deployment.md)  
@@ -170,7 +170,7 @@ As a workaround, you can set the unmanaged devices policy to “Allow full acces
 
 <a name="BKMK_info_trans_CRMtoSP"></a>   
 
-## Information transmitted between Dynamics 365 for Customer Engagement apps (online) and SharePoint when you use server-based SharePoint integration  
+## Information transmitted between Dynamics 365 apps and SharePoint when you use server-based SharePoint integration  
  When you use the document management feature in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps by using server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, the following information is transmitted between [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]:  
   
 - Entity name for the entity that is used to create folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], such as Account, Article, or Lead. To configure the entities that are integrated, go to **Settings** > **Document Management** > **Document Management Settings**.

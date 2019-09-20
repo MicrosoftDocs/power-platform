@@ -28,7 +28,7 @@ Admins for Customer Engagement apps can use their [!INCLUDE[pn_Office_365](../in
 > 
 >  Your revision should be 2040 or above for both numbers highlighted.  
   
- ![Dynamics 365 for Customer Engagement apps (online) revision version](../admin/media/revision-version.png "Dynamics 365 for Customer Engagement apps (online) revision version")  
+ ![Dynamics 365 apps revision version](../admin/media/revision-version.png "Dynamics 365 apps revision version")  
   
  To create a simple custom view to see the delegated admin user:  
   
