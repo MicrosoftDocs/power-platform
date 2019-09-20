@@ -173,8 +173,8 @@ Set server-side synchronization to be the default configuration method.
 
 <a name="BKMK_NetworkPorts"></a>   
 
-## Network ports for Dynamics 365 apps Government  
- The following ports are open for outbound connections between Dynamics 365 apps Government and internet services.  
+## Network ports for PowerApps US Government  
+ The following ports are open for outbound connections between PowerApps US Government and internet services.  
 
 - 80 HTTP  
 - 443 HTTPS 
@@ -182,10 +182,10 @@ Set server-side synchronization to be the default configuration method.
 - 587 Secure SMTP  
 - 993 Secure IMAP  
 
-Customizations or email configurations in Dynamics 365 apps Government can only use these ports.  
+Customizations or email configurations in PowerApps US Government can only use these ports.  
 
 ### See also  
  [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
  [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
  [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
- [Microsoft Dynamics 365 apps Government](../admin/government/microsoft-dynamics-365-government.md)
+ [Microsoft PowerApps US Government](../admin/government/microsoft-dynamics-365-government.md)
