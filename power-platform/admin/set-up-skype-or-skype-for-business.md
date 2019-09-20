@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up Dynamics 365 for Customer Engagement apps (online) to use Skype or Skype for Business
+# Set up Dynamics 365 apps to use Skype or Skype for Business
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
@@ -29,7 +29,7 @@ When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.
   
   ![Call a contact with Skype](../admin/media/crm-itpro-crmo365tg2-kimpresence.png "Call a contact with Skype")  
   
-## Set up Skype in Microsoft Dynamics 365 for Customer Engagement apps (online)  
+## Set up Skype in Microsoft Dynamics 365 apps  
   
 1. Verify that IM presence is enabled in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. Go to **Settings** > **Administration** > **System Settings** > **General tab**.  
   

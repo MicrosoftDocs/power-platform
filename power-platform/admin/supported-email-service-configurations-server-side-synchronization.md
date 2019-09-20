@@ -36,7 +36,7 @@ Depending on your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] ap
   
  <sup>1</sup> May be unsupported for FIPS-compliancy. See the following section for more information.  
   
-## Using Exchange Online with Dynamics 365 for Customer Engagement apps (online)  
+## Using Exchange Online with Dynamics 365 apps  
  If your company is using [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with Customer Engagement apps, note the following:  
   
  Customer Engagement apps supports server-side synchronization with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in the same tenant in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] with Server to Server Authentication. Other authentication methods or settings are not recommended or supported, including:  
@@ -74,7 +74,7 @@ Depending on your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] ap
   
 - Server-side synchronization in Customer Engagement apps, or in a [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps (on premises) deployment that is configured for FIPS 140-2 compliancy, requires a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail.  
 
-- Multi-factor authentication isn’t supported for Dynamics 365 for Customer Engagement apps (online) to Exchange Server (on-premises), and Dynamics 365 for Customer Engagement apps (on-premises) to Exchange Online.
+- Multi-factor authentication isn’t supported for Dynamics 365 apps to Exchange Server (on-premises), and Dynamics 365 for Customer Engagement apps (on-premises) to Exchange Online.
   
 For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 for Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/admin/integrate-synchronize-your-email-system)  
   

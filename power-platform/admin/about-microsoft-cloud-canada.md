@@ -44,7 +44,7 @@ search.app:
 3. On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
 <a name="BKMK_Overview"></a>   
-## Dynamics 365 for Customer Engagement apps (online) service overview  
+## Dynamics 365 apps service overview  
   
 ### Will multi-geo instances be available to customers in Canada?  
  Yes, multi-geo instances will be supported for Canada. Multi-geo instances are designed for companies with offices in multiple countries or regions who want to keep core customer data within those countries or regions. Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo instances](../../admin/add-edit-multiregional-instances.md).  
@@ -64,10 +64,10 @@ search.app:
 ### When will ExpressRoute be available in Canada for Dynamics 365 for Customer Engagement apps Online customers, and through which partners?  
  [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] is currently available in Canada. [View a current list of ExpressRoute locations and partners](https://azure.microsoft.com/documentation/articles/expressroute-locations). [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is currently working to enable customers to use [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] with [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] from the Canada regions.  
   
-### Where can I find more about Microsoft Dynamics 365 for Customer Engagement apps (online) security, data privacy, and compliance?  
+### Where can I find more about Microsoft Dynamics 365 apps security, data privacy, and compliance?  
  You can find more information at the  [Microsoft Dynamics 365 for Customer Engagement apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
   
-### Where can I find out more about the physical infrastructure for Dynamics 365 for Customer Engagement apps (online)?  
+### Where can I find out more about the physical infrastructure for Dynamics 365 apps?  
  These services are hosted in the Microsoft cloud infrastructure comprising more than 100 globally distributed datacenters, edge computing nodes, and service operations centers. This infrastructure is supported by one of the world’s largest multi-terabit global networks, with an extensive dark fiber footprint that connects them all.  
   
  [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] provides cloud services to customers 24x7x365, and the [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] Infrastructure and Operations team designs, builds, operates and helps secure every facet of the infrastructure. Since opening our first datacenter in 1989, we’ve invested more than $15 billion on our infrastructure and remain focused on delivering reliable, scalable, and secure online services.  
@@ -88,12 +88,12 @@ search.app:
  Once you have been scheduled for migration, a member of the [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] team will work directly with you to discuss scheduling and any other issues that may come up during the migration.  
   
 ### If I am scheduled for an update to CRM Online 2015 Update or CRM Online 2015 Update 1, will Microsoft apply the update at the same time as their migration to the Canada datacenter?  
- You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the Canada datacenter.  Customers can schedule their update. For more information, see [Manage Dynamics 365 for Customer Engagement apps (online) updates](../../admin/manage-updates.md).  
+ You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the Canada datacenter.  Customers can schedule their update. For more information, see [Manage Dynamics 365 apps updates](../../admin/manage-updates.md).  
   
-### If I have both Office 365 services and Dynamics 365 for Customer Engagement apps (online), how will migration be handled?  
+### If I have both Office 365 services and Dynamics 365 apps, how will migration be handled?  
  The migration of each service will be handled separately. For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  
   
-### Can I move Office 365 and Dynamics 365 for Customer Engagement apps (online) at the same time?  
+### Can I move Office 365 and Dynamics 365 apps at the same time?  
  The move process for each service is handled separately. The [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] move can be requested to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move.  
   
 ### If my content is stored in the Canada datacenters, can I access my content for work from locations outside of Canada?  
@@ -102,7 +102,7 @@ search.app:
 <a name="BKMK_Licensing"></a>   
 ## Licensing and pricing  
   
-### Will all versions of Dynamics 365 for Customer Engagement apps (online) be available?  
+### Will all versions of Dynamics 365 apps be available?  
  Customers will be able to purchase all licenses that are currently available in the market today. Please see local availability at [Microsoft Dynamics CRM Solutions](https://www.microsoft.com/en-au/dynamics/crm-purchase-online.aspx). Global pricing can be found at [Microsoft Dynamics Pricing List](http://go.microsoft.com/fwlink/p/?LinkID=401462).  
   
 ### How will a customer who has an existing volume license agreement outside of Canada be billed if they add a new tenant to their agreement that resides in Canada?  
@@ -119,4 +119,4 @@ search.app:
   
 ### See also  
  [Office 365 datacenters now available in Canada](https://blogs.office.com/2016/05/10/office-365-datacenters-now-available-in-canada/)<br />
- [New datacenter regions for Dynamics 365 for Customer Engagement apps (online)](new-datacenter-regions.md)  
+ [New datacenter regions for Dynamics 365 apps](new-datacenter-regions.md)  

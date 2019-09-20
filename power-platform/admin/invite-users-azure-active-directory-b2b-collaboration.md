@@ -112,7 +112,7 @@ You can invite other users to access your [!INCLUDE[pn_dyn_365_online](../includ
   
 6. Click **Select**, and then click **Assign**.  
   
-   Next, assign the invited users with appropriate security roles for the [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] instance so they can access it. See [Create users and assign Dynamics 365 for Customer Engagement apps (online) security roles](../admin/create-users-assign-online-security-roles.md).  
+   Next, assign the invited users with appropriate security roles for the [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] instance so they can access it. See [Create users and assign Dynamics 365 apps security roles](../admin/create-users-assign-online-security-roles.md).  
   
 <a name="BKMK_UpdateEmail"></a>   
 ## Update invited user’s email address in the invited-to Dynamics 365 for Customer Engagement instance  

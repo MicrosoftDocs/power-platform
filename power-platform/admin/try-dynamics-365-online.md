@@ -15,18 +15,16 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Try Dynamics 365 for Customer Engagement apps (online)
+# Try Dynamics 365 apps
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
-[!INCLUDE[cc-customer-engagement-apps-note](../includes/cc-customer-engagement-apps-note.md)] 
 
 We're excited about the release of [!INCLUDE [pn-crm-9-0-0-online](../includes/pn-crm-9-0-0-online.md)] and hope you're eager to try it out. New and existing customers have different options to take a look at [!INCLUDE [pn-crm-online](../includes/pn-crm-online.md)].  
 
 ## Partners and Customizers
 If you are a partner signing up on behalf of a customer, or are using this trial for development purposes, go to [https://trials.dynamics.com/Dynamics365/Signup/#](https://trials.dynamics.com/Dynamics365/Signup/#). You'll have the choice to add your trial to an existing tenant. You will also need to decide which apps to install when you start your trial. For more information on which scenario is right for you, see [Installation options](#installation-options) below. 
 
-## New Dynamics 365 for Customer Engagement apps (online) customers  
+## New Dynamics 365 apps customers  
  If you're a new customer, we've made onboarding quick and easy. See the following for information on these applications available with [!INCLUDE[pn-crm-online](../includes/pn-crm-online.md)].  
 
 -   [Dynamics 365 for Customer Engagement apps for Sales](https://www.microsoft.com/dynamics365/sales)  
@@ -36,7 +34,7 @@ If you are a partner signing up on behalf of a customer, or are using this trial
 
 On any of the above pages, scroll down and click **Get Started** to start a 30-day trial. For more information on which scenario is right for you, see the [Installation options](#installation-options) section below.
 
-## Current Dynamics 365 for Customer Engagement apps (online) customers  
+## Current Dynamics 365 apps customers  
  If you already have a [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] subscription, there are a couple ways to see the latest version in action.  
 
 ### Start a trial  
@@ -189,7 +187,7 @@ The user should:
 The trial owner will receive an email with your request. Once approved, you'll receive an email with access instructions.
 
 ### See also  
- [Onboard your organization and users to Dynamics 365 for Customer Engagement apps (online)](onboard-your-organization-and-users-to-dynamics-365-online.md)   
+ [Onboard your organization and users to Dynamics 365 apps](onboard-your-organization-and-users-to-dynamics-365-online.md)   
  [Business apps in Dynamics 365 for Customer Engagement](../basics/business-apps-dynamics-365.md)<br />
- [Manage Microsoft Dynamics 365 for Customer Engagement apps (online) instances](../admin/manage-online-instances.md)   
+ [Manage Microsoft Dynamics 365 apps instances](../admin/manage-online-instances.md)   
  [Manage subscriptions, licenses, and user accounts](../admin/manage-subscriptions-licenses-user-accounts.md)

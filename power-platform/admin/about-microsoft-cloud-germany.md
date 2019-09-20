@@ -117,4 +117,4 @@ Data centers undergo audits like any other expansion.
   
 ### See also  
  [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/)   
- [New datacenter regions for Dynamics 365 for Customer Engagement apps (online)](new-datacenter-regions.md)
+ [New datacenter regions for Dynamics 365 apps](new-datacenter-regions.md)

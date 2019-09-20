@@ -73,7 +73,7 @@ A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] supp
  Once you have been scheduled for migration, a member of the [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] team will work directly with you to discuss scheduling and any other issues that may come up during the migration.  
   
 ### If I am scheduled for an update to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)], will Microsoft apply the update at the same time as their migration to the Japan datacenter?  
- You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later before migrating to the Japan datacenter.  Customers can schedule their update. For more information, see [Manage Microsoft Dynamics 365 for Customer Engagement apps (online) Updates](../../admin/manage-updates.md).  
+ You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later before migrating to the Japan datacenter.  Customers can schedule their update. For more information, see [Manage Microsoft Dynamics 365 apps Updates](../../admin/manage-updates.md).  
   
 ### If I have both Office 365 services and [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], how will migration be handled?  
  The move of each service will be handled separately and customers will be fully supported even if one service has been moved and the other has not. For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], customers will be able to choose their move date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with the customer to schedule the move. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], customers will be notified through the message center about the move timeline, but the large number of existing customers means that individual scheduling is not possible. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  
@@ -119,4 +119,4 @@ A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] supp
 ### See also  
  [Office 365 now available from datacenters in Japan](https://blogs.office.com/2014/12/15/office-365-now-available-datacenters-japan/)   
  [Japan datacenter - Office 365 FAQ](https://technet.microsoft.com/library/dn879430.aspx)   
- [New datacenter regions for Dynamics 365 for Customer Engagement apps (online)](new-datacenter-regions.md)
+ [New datacenter regions for Dynamics 365 apps](new-datacenter-regions.md)

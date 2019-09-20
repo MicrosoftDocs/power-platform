@@ -20,7 +20,7 @@ search.app:
 If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] document management functionality with [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, you must meet the requirements listed in this topic.  
 
 <a name="docman_online"></a>   
-## Use document management in Dynamics 365 for Customer Engagement apps (online)  
+## Use document management in Dynamics 365 apps  
  If you are using server-based integration with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], you can use any of the following SharePoint versions. 
 -  [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)] 
 - SharePoint 2016 on-premises

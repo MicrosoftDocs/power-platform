@@ -44,7 +44,7 @@ search.app:
 3. On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
 <a name="BKMK_Overview"></a>   
-## Dynamics 365 for Customer Engagement apps (online) service overview  
+## Dynamics 365 apps service overview  
   
 ### Will multi-geo instances be available to customers in India?  
  Yes, multi-geo instances will be supported for India as long as the tenant is provisioned in India. For customers not located in India who want to provision an instance of [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] within the India datacenter, they must first purchase a tenant for an organization located in India and then the tenant can be provisioned in India.  
@@ -66,10 +66,10 @@ search.app:
 ### When will ExpressRoute be available in India for Dynamics 365 for Customer Engagement apps Online customers, and through which partners?  
  [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] is currently available in India. [View a current list of ExpressRoute locations and partners](https://azure.microsoft.com/documentation/articles/expressroute-locations/). [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is currently working to enable customers to use [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] with [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] from the India regions.  
   
-### Where can I find more about Microsoft Dynamics 365 for Customer Engagement apps (online) security, data privacy, and compliance?  
+### Where can I find more about Microsoft Dynamics 365 apps security, data privacy, and compliance?  
  You can find more information at the  [Microsoft Dynamics 365 for Customer Engagement apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
   
-### Where can I find out more about the physical infrastructure for Dynamics 365 for Customer Engagement apps (online)?  
+### Where can I find out more about the physical infrastructure for Dynamics 365 apps?  
  These services are hosted in the Microsoft cloud infrastructure comprising more than 100 globally distributed datacenters, edge computing nodes, and service operations centers. This infrastructure is supported by one of the world’s largest multi-terabit global networks, with an extensive dark fiber footprint that connects them all.  
   
  [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] provides cloud services to customers 24x7x365, and the [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] Infrastructure and Operations team designs, builds, operates and helps secure every facet of the infrastructure. Since opening our first datacenter in 1989, we’ve invested more than $15 billion on our infrastructure and remain focused on delivering reliable, scalable, and secure online services.  
@@ -92,10 +92,10 @@ search.app:
 ### If I am scheduled for an update to CRM Online 2015 Update or CRM Online 2015 Update 1, will Microsoft apply the update at the same time as their migration to the India datacenter?  
  You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the India datacenter.  Customers can schedule their update. For more information, see [Manage Microsoft Dynamics CRM Online Updates](../../admin/manage-updates.md).  
   
-### If I have both Office 365 services and Dynamics 365 for Customer Engagement apps (online), how will migration be handled?  
+### If I have both Office 365 services and Dynamics 365 apps, how will migration be handled?  
  The migration of each service will be handled separately. For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  
   
-### Can I move Office 365 and Dynamics 365 for Customer Engagement apps (online) at the same time?  
+### Can I move Office 365 and Dynamics 365 apps at the same time?  
  The move process for each service is handled separately. The [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] move can be requested to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move.  
   
 ### If my content is stored in the India datacenters, can I access my content for work from locations outside of India?  
@@ -104,7 +104,7 @@ search.app:
 <a name="BKMK_Licensing"></a>   
 ## Licensing and pricing  
   
-### Will all versions of Dynamics 365 for Customer Engagement apps (online) be available?  
+### Will all versions of Dynamics 365 apps be available?  
  Customers will be able to purchase all licenses that are currently available in the market today. Please see local availability at [Microsoft Dynamics CRM Solutions](https://www.microsoft.com/en-au/dynamics/crm-purchase-online.aspx). Global pricing can be found at [Microsoft Dynamics Pricing List](http://go.microsoft.com/fwlink/p/?LinkID=401462).  
   
 ### How will a customer who has an existing volume license agreement outside of India be billed if they add a new tenant to their agreement that resides in India?  
@@ -121,4 +121,4 @@ search.app:
   
 ### See also  
  [Announcing the availability of Office 365 from local datacenters in India](https://blogs.office.com/2015/10/11/announcing-the-availability-of-office-365-from-local-datacenters-in-india/)   
- [New datacenter regions for Dynamics 365 for Customer Engagement apps (online)](new-datacenter-regions.md)
+ [New datacenter regions for Dynamics 365 apps](new-datacenter-regions.md)

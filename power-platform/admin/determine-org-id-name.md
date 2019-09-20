@@ -17,6 +17,8 @@ search.app:
 ---
 # Determine your environment's organization ID and name
 
+[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+
 Follow these steps to determine your organization name and ID.
 
 1. Go to **Settings** > **Customizations** > **Developer Resources**.

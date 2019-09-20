@@ -38,7 +38,7 @@ You can unblock these URLs on your computer by adding them to a list of approved
   
 2.  Click or tap the **Security** tab > **Trusted sites** > **Sites**.  
   
-3.  In **Add this website to the zone**, type the URL for your Dynamics 365 for Customer Engagement apps (online) organization. For example, https://contoso.crm.dynamics.com  
+3.  In **Add this website to the zone**, type the URL for your Dynamics 365 apps organization. For example, https://contoso.crm.dynamics.com  
   
 4.  Click or tap **Add** > **Close** > **OK**.  
   

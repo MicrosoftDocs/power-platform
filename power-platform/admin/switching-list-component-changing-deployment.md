@@ -30,8 +30,8 @@ This topic provides an overview about how to switch from the list component to s
 
 |Environment  |Topic  |
 |---------|---------|
-|Dynamics 365 for Customer Engagement apps (online) and SharePoint Online  |   [Set up Dynamics 365 for Customer Engagement to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)        |
-|Dynamics 365 for Customer Engagement apps (online) and SharePoint on-premises     |   [Configure server-based authentication with Dynamics 365 for Customer Engagement apps (online) and SharePoint on-premises](../admin/configure-server-based-authentication-sharepoint-on-premises.md)      |
+|Dynamics 365 apps and SharePoint Online  |   [Set up Dynamics 365 for Customer Engagement to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)        |
+|Dynamics 365 apps and SharePoint on-premises     |   [Configure server-based authentication with Dynamics 365 apps and SharePoint on-premises](../admin/configure-server-based-authentication-sharepoint-on-premises.md)      |
   
    > [!NOTE]
    >  If you've made changes to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], such as new [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] servers, new site collections, or migrated from [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises to [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)], consider deactivating outdated [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site records. When you run the Enable Server-Based SharePoint Integration wizard, the wizard will attempt to validate all active [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deactivate a site](../admin/switching-list-component-changing-deployment.md#BKMK_deact_site)  

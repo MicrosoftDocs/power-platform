@@ -53,4 +53,4 @@ You can choose to work with a designated Microsoft partner who can provide the s
   
 ### See also  
  [Add, change, or delete a subscription advisor partner](https://support.office.com/article/Add-change-or-delete-a-subscription-advisor-partner-f86e8177-936e-491e-9024-44dea2b296ff)   
- [Purchase and assign Dynamics 365 for Customer Engagement apps (online) licenses](../admin/purchase-assign-online-licenses.md)
+ [Purchase and assign Dynamics 365 apps licenses](../admin/purchase-assign-online-licenses.md)

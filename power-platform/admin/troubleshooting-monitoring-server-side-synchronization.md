@@ -187,7 +187,7 @@ For more information, see this [kb article](https://support.microsoft.com/kb/318
   
 <a name="BKMK_ExchangeOnline"></a>   
 
-### Using Dynamics 365 for Customer Engagement apps (online) with Exchange Online  
+### Using Dynamics 365 apps with Exchange Online  
  If your company is using [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with Customer Engagement apps, note the following:  
   
  Customer Engagement apps supports server-side synchronization with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in the same tenant with Server to Server Authentication. Other authentication methods or settings are not recommended or supported, including:  
