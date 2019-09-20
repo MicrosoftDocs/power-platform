@@ -37,7 +37,7 @@ The following table lists the newest datacenter regions. Checkout the interactiv
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
   
- ![Migration Process](../../admin/media/migration-process.png "Migration Process")  
+ ![Migration Process](media/migration-process.png "Migration Process")  
   
  Depending on the type of transition, you may be required to go through more steps.  
   

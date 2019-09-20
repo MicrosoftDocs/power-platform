@@ -82,7 +82,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
 2. In the upper-right corner of [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], choose your organization.  
   
-   ![Choose your organization](../../admin/media/data-center-choose-organization.png "Choose your organization")  
+   ![Choose your organization](media/data-center-choose-organization.png "Choose your organization")  
   
 3. On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
@@ -135,7 +135,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
   2. In the upper-right corner of [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], choose your organization.  
   
-  ![Choose your organization](../../admin/media/data-center-choose-organization.png "Choose your organization")  
+  ![Choose your organization](media/data-center-choose-organization.png "Choose your organization")  
   
   3.  On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
