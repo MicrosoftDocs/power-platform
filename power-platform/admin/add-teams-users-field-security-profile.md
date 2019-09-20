@@ -39,6 +39,4 @@ Role-based security controls access to a specific entity type, record-based secu
   
 ### See also  
  [Control data access](../admin/security-roles-privileges.md)   
- [Security concepts for Microsoft Dynamics 365 for Customer Engagement](../admin/security-concepts.md)   
- [Manage security, users and teams](../admin/manage-security-users-and-teams.md)   
  [Synchronize user information between Microsoft Dynamics 365 for Customer Engagement apps and Active Directory](../admin/synchronize-user-information-active-directory.md)

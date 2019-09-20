@@ -152,6 +152,6 @@ When you import the solution, it creates the **min prv apps use** role which you
  [!INCLUDE[cc_privacy_crm_print](../includes/cc-privacy-crm-print.md)]
   
 ### See also  
- [Security concepts for Dynamics 365 for Customer Engagement](../admin/security-concepts.md)   
+ [Security concepts for Dynamics 365 for Customer Engagement](../admin/wp-security-cds)   
  [Manage security, users and teams](../admin/manage-security-users-and-teams.md)   
  [Copy a security role](../admin/copy-security-role.md)

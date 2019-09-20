@@ -23,7 +23,7 @@ Use the information below to automatically keep your demo environment data curre
 
 **Before you begin** <br />
 
-Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](../developer/download-tools-nuget.md). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
+Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](/dynamics365/customer-engagement/developer/download-tools-nuget.md). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
 
 You can set the values of datetime fields to automatically move forward by a specified duration. This allows you to keep your demo data recent without the need to make manual updates. It will also work when using Configuration Migration Utility files with the Dynamics 365 for Customer Engagement apps Package Deployer tool. 
 
@@ -82,7 +82,7 @@ You can set the values of datetime fields to automatically move forward by a spe
 > **Example**: To move dates forward by 3 months, and import the data on 10/1/2017: change the **timestamp** in the data.xml file to 7/1/2017.
 
 ### See also  
- [Download tools from NuGet](../developer/download-tools-nuget.md)<br />
+ [Download tools from NuGet](/dynamics365/customer-engagement/developer/download-tools-nuget.md)<br />
  [Modify a schema](modify-configuration-data-schema.md)   
  [Manage your configuration data](manage-configuration-data.md)   
  [Import configuration data](import-configuration-data.md)

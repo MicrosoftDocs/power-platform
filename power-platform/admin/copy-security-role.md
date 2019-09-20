@@ -46,7 +46,7 @@ If you want to create a security role that is similar to another security role, 
 7. Click **OK**.  
   
 ### See also  
- [Security concepts for Microsoft Dynamics 365 for Customer Engagement](../admin/security-concepts.md)   
+ [Security concepts for Microsoft Dynamics 365 for Customer Engagement](../admin/wp-security-cds)   
  [Security roles](../admin/security-roles-privileges.md)   
  [Field level security](../admin/field-level-security.md)
  [Prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md)

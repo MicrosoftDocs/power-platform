@@ -27,7 +27,7 @@ The following features are not yet present in the Unified Interface but can be e
 - [Bulk edit](manage-your-data.md)
 - [Merge records](../basics/merge-duplicate-records-accounts-contacts-leads.md)
 - [Record sharing](../basics/assign-record-user-team.md)
-- [Audit History](../developer/auditing-overview.md)
+- [Audit History](/dynamics365/customer-engagement/developer/auditing-overview.md)
 - All options under **Set Personal Options** (![Settings gear](media/settings-gear-icon.png "Settings gear"))
 
  > [!NOTE]
