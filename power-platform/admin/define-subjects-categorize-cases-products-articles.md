@@ -34,7 +34,7 @@ search.app:
    - Select a subject from the tree and select **Edit subject** to edit a subject
    - Select a subject from the tree and select **Remove subject** to delete a subject
 
-   ![subjects-csh](../customer-service/media/subjects-csh.png)
+   ![subjects-csh](media/subjects-csh.png)
 
 
 ## Create or edit a subject  (Customer Service app) 
@@ -64,5 +64,3 @@ search.app:
 4. Select **OK**.  
   
 ### See also 
-
-[Service Manager Guide (Customer Service Hub and Customer Service app)](../customer-service/service-manager-guide.md)

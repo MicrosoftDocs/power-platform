@@ -72,4 +72,4 @@ Store documents related to your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynami
   
 ### See also  
  [Set up SharePoint integration with Microsoft Dynamics 365 for Customer Engagement](set-up-sharepoint-integration.md)   
- [Switching from the list component or changing the deployment](switch-dynamics-crm-online-dynamics-365.md)
+

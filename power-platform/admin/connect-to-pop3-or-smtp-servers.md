@@ -183,4 +183,4 @@ Customizations or email configurations in PowerApps US Government can only use t
 ### See also  
  [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
  [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
- [Microsoft PowerApps US Government](../admin/government/microsoft-dynamics-365-government.md)
+ [Microsoft PowerApps US Government](powerapps-us-government.md)

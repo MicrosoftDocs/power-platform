@@ -83,4 +83,4 @@ An email template is attached to an email activity after the activity is created
 > - If you need to back up your templates, or export them for use in a different implementation of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md).  
   
 ### See also  
-[Work with templates](work-with-templates.md)
+
