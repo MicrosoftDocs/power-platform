@@ -241,7 +241,7 @@
         - name: Assign security roles to a form
           href: assign-security-roles-form.md
         - name: View user profile
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile
+          href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
         - name: User session and access management
           href: user-session-management.md
         - name: Field level security
@@ -418,15 +418,15 @@
           href: import-configuration-data.md 
     - name: Work with templates
       items: 
-      - name: Articles
+      - name: Article templates
         href: create-templates-articles.md 
-      - name: Email
+      - name: Email templates
         href: create-templates-email.md
-      - name: Work with mail merge templates
+      - name: Mail merge templates
         href: work-mail-merge-templates.md
-      - name: Excel
+      - name: Excel templates
         href: analyze-your-data-with-excel-templates.md
-      - name: Word
+      - name: Word templates
         href: using-word-templates.md
     - name: Integrate (synchronize) your email system
       items: 
