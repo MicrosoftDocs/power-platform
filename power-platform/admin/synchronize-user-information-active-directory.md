@@ -56,5 +56,4 @@ Before you start, be sure to record the value of the **User SamAccountName logon
 6. Choose **Save and Close**.  
   
 ### See also  
- [Manage security, users and teams](../admin/manage-security-users-and-teams.md)   
  [Add or remove territory members](../admin/add-remove-territory-members.md)

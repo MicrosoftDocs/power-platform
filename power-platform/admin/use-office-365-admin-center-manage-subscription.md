@@ -42,11 +42,11 @@ search.app:
   
  ![Dynamics 365 for Customer Engagement apps option on the Microsoft 365 admin center menu](../admin/media/o365-admin-center-crm.png "Dynamics 365 for Customer Engagement apps option on the Microsoft 365 admin center menu")  
   
- Choose the **Instances** tab to edit, copy, and reset, existing instances, configure new instances, manage preferred solutions, and more. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps instances](../admin/manage-online-instances.md)  
+ Choose the **Instances** tab to edit, copy, and reset, existing instances, configure new instances, manage preferred solutions, and more. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps instances](/dynamics365/customer-engagement/admin/manage-online-instances.md)  
   
  ![Dynamics 365 Administration Center Instances tab](../admin/media/crm-admin-center-instances.png "Dynamics 365 Administration Center Instances tab")  
   
- Choose the **Updates** tab to approve and schedule updates, change the update target version, and open Customer Engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps updates](../admin/manage-updates.md)  
+ Choose the **Updates** tab to approve and schedule updates, change the update target version, and open Customer Engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps updates](/dynamics365/customer-engagement/admin/manage-updates.md)  
   
  ![Dynamics 365 Administration Center - Updates tab](../admin/media/crm-admin-center-updates.png "Dynamics 365 Administration Center - Updates tab")  
   
@@ -71,7 +71,7 @@ For more information, see [Check your service health](use-office-365-admin-cente
 ## Request support  
  Having a problem with your Customer Engagement apps service? You can create a support request to get the issue resolved.  
   
-More information: [Contact Technical Support](contact-technical-support.md)
+More information: [Contact Technical Support](get-help-support.md)
 
 <a name="BKMK_ManageUsers"></a>   
 

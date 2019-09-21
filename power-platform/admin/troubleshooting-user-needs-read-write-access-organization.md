@@ -47,4 +47,4 @@ You don’t have sufficient permissions to access [!INCLUDE[pn_microsoftcrm](../
 >  If you have multiple security roles assigned, confirm that at least one assigned role has the User Entity UI Settings privilege set to the User level.  
   
 ### See also  
- [Manage security, users and teams](../admin/manage-security-users-and-teams.md)
+

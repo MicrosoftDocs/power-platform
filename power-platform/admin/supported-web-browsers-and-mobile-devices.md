@@ -57,5 +57,4 @@ For more detailed information about supported phones and tablets, see [Microsoft
  If you export an [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] worksheet as a Dynamic Worksheet while using [!INCLUDE[tn_Safari](../includes/tn-safari.md)], you may receive an error when trying to open the file. To remedy this, right-click the file, click **Get Info**, and, under **Open With**, select [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)].  
   
 ### See Also  
- [Key preparation and configuration tasks](../admin/key-preparation-and-configuration-tasks.md)
  [Supported web browsers and mobile devices - earlier versions](https://technet.microsoft.com/library/dn531055.aspx)

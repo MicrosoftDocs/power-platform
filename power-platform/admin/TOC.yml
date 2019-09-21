@@ -431,7 +431,7 @@
     - name: Integrate (synchronize) your email system
       items: 
       - name: Overview
-        href: admin/integrate-synchronize-your-email-system.md 
+        href: integrate-synchronize-your-email-system.md 
       - name: Deploy Dynamics 365 App for Outlook
         href: https://docs.microsoft.com/dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook
       - name: Enable accessible email flow
@@ -453,7 +453,7 @@
         - name: Connect to POP3 or SMTP servers
           href: connect-to-pop3-or-smtp-servers.md
         - name: Connect to IMAP or SMTP servers
-          href: admin/connect-to-imap-servers.md 
+          href: connect-to-imap-servers.md 
         - name: Troubleshooting and monitoring server-side synchronization
           href: troubleshooting-monitoring-server-side-synchronization.md
         - name: When would I want to use this check box?

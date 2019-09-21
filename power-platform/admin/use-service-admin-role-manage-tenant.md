@@ -47,5 +47,4 @@ A [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] service admin cann
 > For information on email approval, see [Approve email](connect-exchange-online.md#approve-email).
 
 ### See also  
- [Manage Microsoft Dynamics 365 apps instances](../admin/manage-online-instances.md)   
- [Manage subscriptions, licenses, and user accounts](../admin/manage-subscriptions-licenses-user-accounts.md)
+

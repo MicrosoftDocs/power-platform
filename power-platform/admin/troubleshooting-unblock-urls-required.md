@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting: Unblock required URLs  | MicrosoftDocs"
-description: Troubleshooting: Unblock required URLs
+description: "Troubleshooting: Unblock required URLs"
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
