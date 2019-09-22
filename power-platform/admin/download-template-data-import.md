@@ -1,21 +1,13 @@
 ---
-title: "Download a template for data import for Dynamics 365 apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 08/13/2019
-ms.reviewer: 
+title: "Download a template for data import for Dynamics 365 apps  | MicrosoftDocs"
+description: Download a template for data import for Dynamics 365 apps
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
-ms.suite: 
-ms.tgt_pltfrm: 
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 8a8f0648-22fd-434b-9b1a-1ded448dacb0
-caps.latest.revision: 30
-author: jimholtz
+ms.topic: conceptual
+ms.date: 08/13/2019
 ms.author: jimholtz
-manager: kvivek
 search.audienceType: 
   - admin
 search.app: 
