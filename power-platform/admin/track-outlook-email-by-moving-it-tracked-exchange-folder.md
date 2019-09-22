@@ -21,7 +21,7 @@ search.app:
 
  Track customer interactions wherever you are, and from virtually any device by using folder tracking. After you set up a tracked folder, you can drag or move email to that folder to track it automatically in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. Additionally, if you set a regarding record (such as a specific account or opportunity record) for the folder, [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps automatically links all email in that folder to that specific record. Tracked folders work in [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], [!INCLUDE[pn_outlook_web_app](../includes/pn-outlook-web-app.md)], or any other mobile app that supports [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].  
 
- ![Exchange email folder tracking in Dynamics 365 for Customer Engagement](../outlook-app/media/exchange-folder-tracking-dynamics-crm.png "Exchange email folder tracking in Dynamics 365 for Customer Engagement")  
+ ![Exchange email folder tracking in Dynamics 365 for Customer Engagement](media/exchange-folder-tracking-dynamics-crm.png "Exchange email folder tracking in Dynamics 365 for Customer Engagement")  
 
 > [!TIP]
 >  Tracked folders work with [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] Inbox rules. This makes it easy to automatically route email messages to a particular folder. For example, set up an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] rule that automatically routes email from a Contoso contact to a tracked Contoso folder, which is linked to a specific Contoso opportunity. [Tell me more about setting up rules](http://go.microsoft.com/fwlink/p/?LinkID=528086).  
