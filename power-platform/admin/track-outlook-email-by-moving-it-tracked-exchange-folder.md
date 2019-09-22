@@ -46,12 +46,12 @@ To see folder tracking in action, see the video [Folder Level Tracking in CRM On
 
 3. In the **Folder-Level Tracking** dialog box, under **Exchange Folder**, click **+ New Folder Mapping**, click the down arrow in the box that appears, and then select the folder you want to track.  
 
-   ![Folder Tracking Rules dialog box in Dynamics 365 for Customer Engagement](../outlook-app/media/outlook-folder-tracking.png "Folder Tracking Rules dialog box in Dynamics 365 for Customer Engagement")  
+   ![Folder Tracking Rules dialog box in Dynamics 365 for Customer Engagement](media/outlook-folder-tracking.png "Folder Tracking Rules dialog box in Dynamics 365 for Customer Engagement")  
 
    > [!NOTE]
    >  You can only track folders or subfolders inside your Exchange Inbox. Only the folder you select will be tracked. For example, if you select a folder that includes subfolders, the subfolders aren’t tracked unless you specifically select them in this dialog box. The maximum number of folders you can track is 25.  
 
-4. If you want to link the folder to a specific record—for example, an account or opportunity—under **Regarding Record in Dynamics 365 for Customer Engagement**, click the **Lookup** button ![Lookup button graphic](../outlook-app/media/lookup-button-dynamics-crm.png "Lookup button graphic"), and then search for the record.  
+4. If you want to link the folder to a specific record—for example, an account or opportunity—under **Regarding Record in Dynamics 365 for Customer Engagement**, click the **Lookup** button ![Lookup button graphic](media/lookup-button-dynamics-crm.png "Lookup button graphic"), and then search for the record.  
 
 5. Repeat steps 3 and 4 for any additional folders you want to track and (optionally) link to regarding records.  
 

@@ -33,7 +33,7 @@ search.app:
   
    [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps displays the **Synchronization Settings for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]** dialog box with the **User Filters** tab selected. You can use this tab to create or edit a filter, or to delete, activate, or deactivate a filter.  
   
-   ![Online synchronization filters](../outlook-app/media/online-sync-filters-dialog-box2.png "Online synchronization filters")  
+   ![Online synchronization filters](media/online-sync-filters-dialog-box2.png "Online synchronization filters")  
   
    > [!NOTE]
    > If you’re a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](/dynamics365/customer-engagement/developer/outlook-client/offline-outlook-filters-templates.md) 
