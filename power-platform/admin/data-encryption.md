@@ -1,6 +1,7 @@
 ---
 title: "Data encryption for Dynamics 365 apps  | MicrosoftDocs"
 description: Data encryption for Dynamics 365 apps
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin

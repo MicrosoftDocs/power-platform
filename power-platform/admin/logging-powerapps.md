@@ -1,20 +1,19 @@
 ---
 title: "Activity logging for PowerApps | MicrosoftDocs"
-description:
-ms.custom: ""
-ms.date: 12/14/2018
-ms.reviewer: ""
+description: Activity logging for PowerApps 
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 12/14/2018
+ms.author: jimholtz 
+search.audienceType: 
+  - admin
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
 ---
 # Activity logging for PowerApps
 

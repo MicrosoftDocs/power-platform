@@ -1,21 +1,13 @@
 ---
 title: "Turn duplicate detection rules on or off for the whole organization for Dynamics 365 apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 08/13/2019
-ms.reviewer: 
+description: Turn duplicate detection rules on or off for the whole organization for Dynamics 365 apps
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
-ms.suite: 
-ms.tgt_pltfrm: 
-applies_to: 
-  - Dynamics 365 for Customer Engagement (online)
-  - Dynamics 365 for Customer Engagement Version 9.x
-ms.assetid: 8c34ccb0-333f-4e03-8faa-e241dbadbbba
-caps.latest.revision: 40
-author: jimholtz
-ms.author: jimholtz
-manager: kvivek
+ms.topic: conceptual
+ms.date: 08/13/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 

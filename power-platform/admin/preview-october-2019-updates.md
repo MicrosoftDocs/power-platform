@@ -1,23 +1,18 @@
 ---
-title: "Early opt-in to 2019 release wave 2 | MicrosoftDocs"
+title: "Early opt-in to 2019 release wave 2   | MicrosoftDocs"
 description: Opt in to 2019 release wave 2 for the Dynamics 365 for Customer Engagement platform
-ms.custom: ""
-ms.date: 09/04/2019
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/04/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Early opt-in to 2019 release wave 2 

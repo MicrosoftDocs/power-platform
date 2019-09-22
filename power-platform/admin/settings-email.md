@@ -1,23 +1,18 @@
 ---
-title: "Manage email settings | MicrosoftDocs"
+title: "Manage email settings  | MicrosoftDocs"
 description: View and manage email settings for Common Data Service.
-ms.custom: ""
-ms.date: 08/10/2018
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/10/2018
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Manage email settings

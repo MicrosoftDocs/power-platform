@@ -1,21 +1,13 @@
 ---
 title: "Import data (all record types) for Dynamics 365 apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 05/09/2019
-ms.reviewer: 
+description: Import data (all record types) for Dynamics 365 apps
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
-ms.suite: 
-ms.tgt_pltfrm: 
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-author: jimholtz
-ms.assetid: 4483edc9-999d-4761-a9d1-d18fc130b615
-caps.latest.revision: 19
-ms.author: jimholtz
-manager: kvivek
+ms.topic: conceptual
+ms.date: 05/09/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 

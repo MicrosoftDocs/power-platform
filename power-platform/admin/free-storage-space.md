@@ -1,25 +1,18 @@
 ---
-title: "Free storage space |  MicrosoftDocs"
+title: "Free storage space  | MicrosoftDocs"
 description: Methods for reducing storage space consumed.
-ms.custom: 
-ms.date: 04/02/2019
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 46c0d35c-5edd-4087-980d-035ec76ab211
-caps.latest.revision: 32
 author: jimholtz
-ms.author: jimholtz
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 04/02/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Free storage space
