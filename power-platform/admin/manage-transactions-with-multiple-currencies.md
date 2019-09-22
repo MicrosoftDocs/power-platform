@@ -71,4 +71,4 @@ Currencies determine the prices for products in the product catalog and the cost
 >  You can’t delete currencies that are in use by other records; you can only deactivate them. Deactivating currency records doesn’t remove the currency information stored in existing records, such as opportunities or orders. However, you won’t be able to select the deactivated currency for new transactions.  
 
 ### See also  
- [System Settings dialog box - General tab](../admin/system-settings-dialog-box-general-tab.md)   
+ [System Settings dialog box - General tab](/dynamics365/customer-engagement/admin/system-settings-dialog-box-general-tab.md)   
