@@ -49,7 +49,7 @@ They will have familiar capabilities on Unified Interface and will also discover
 
 **Business process enhancement** - The business process flow has been improved by the docking mechanism. You can dock the business process stage on your screen to help you stay focused on the task at hand in your business process flow. This is especially useful when the stage of the process has complex steps to complete. 
 
-**Reference panel** - Use the reference panel for apps built on Unified Interface like Dynamics 365 for Customer Engagement apps for Customer Service. The reference panel is a great way to get work done without clicking away from the screen you are on. You can look up other things like knowledge base articles within the context of the record you are viewing. 
+**Reference panel** - Use the reference panel for apps built on Unified Interface like Dynamics 365 apps for Customer Service. The reference panel is a great way to get work done without clicking away from the screen you are on. You can look up other things like knowledge base articles within the context of the record you are viewing. 
 
 **Navigation** - The new menu options let you swiftly navigate the different apps in the system. It provides quick access to recently viewed records and pinned favorites. 
 
@@ -64,7 +64,7 @@ Unified interface experiences are based on [model-driven apps](https://docs.micr
 Unified interface is a metadata driven experience. All controls experiences are built on the control framework that is extensible and provides a uniform experience across clients. The app display reflows to the viewport size the user is working in. 
 
 ## Getting started with Unified Interface experience
-When you are provisioning a new Dynamics 365 for Customer Engagement apps org, depending on whether you are provisioning for Sales, Customer service, Field service, Project service automation, all the options, or an org with no customization, you will see the following Unified Interface apps:
+When you are provisioning a new Dynamics 365 apps org, depending on whether you are provisioning for Sales, Customer service, Field service, Project service automation, all the options, or an org with no customization, you will see the following Unified Interface apps:
 
 |Choice while provisioning  |Unified Interface apps |
 |---------|---------|
@@ -72,8 +72,8 @@ When you are provisioning a new Dynamics 365 for Customer Engagement apps org, d
 |Customer service     |Customer Service Hub         |
 |Field service     |Field Resource Hub         |
 |Project service automation     |Project Resource Hub          |
-|None     |Dynamics 365 for Customer Engagement apps Hub         |
-|All      |All the above except Dynamics 365 for Customer Engagement apps Hub         |
+|None     |Dynamics 365 apps Hub         |
+|All      |All the above except Dynamics 365 apps Hub         |
 
 ![Unified Interface apps](media/uci-apps.png "Unified Interface apps")
 
@@ -85,7 +85,7 @@ Once provisioned, you can access the installed Unified Interface and web apps fr
 
 1. In [https://home.dynamics.com/](https://home.dynamics.com/)
 
-   ![Dynamics 365 for Customer Engagement apps Home page](media/uci-home-dynamics.png "Dynamics 365 for Customer Engagement apps Home page")
+   ![Dynamics 365 apps Home page](media/uci-home-dynamics.png "Dynamics 365 apps Home page")
 
 2. In app navigation
 

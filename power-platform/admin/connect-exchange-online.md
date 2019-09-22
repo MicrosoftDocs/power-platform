@@ -122,7 +122,7 @@ All new users will have these settings applied to their mailbox.
 
 You only need to approve the email address for a user when their email address has changed in Dynamics 365 for Customer Engagement.
 
-To approve emails for Dynamics 365 for Customer Engagement apps, a Dynamics 365 user requires:
+To approve emails for Dynamics 365 apps, a Dynamics 365 user requires:
 
 1. The **Approve Email Addresses for Users or Queues** privilege. 
 2. The permissions as described in the table below.
@@ -207,7 +207,7 @@ Follow these steps to approve email addresses for users and queues. By default, 
 
 #### Add Approve Email Addresses for Users or Queues privilege
 
-To approve emails for Dynamics 365 for Customer Engagement apps, a Dynamics user requires the **Approve Email Addresses for Users or Queues** privilege.  A system admin can assign the **Approve Email Addresses for Users or Queues** privilege to any security role and assign the security role to any user. 
+To approve emails for Dynamics 365 apps, a Dynamics user requires the **Approve Email Addresses for Users or Queues** privilege.  A system admin can assign the **Approve Email Addresses for Users or Queues** privilege to any security role and assign the security role to any user. 
 
 To manually assign the **Approve Email Addresses for Users or Queues** privilege to a security role: 
 1. In Dynamics 365 for Customer Engagement, go to **Settings** > **Security** > **Security Roles**. 
@@ -264,7 +264,7 @@ Admins, as described in the Permission model table, can change the settings so m
    Make sure you’ve got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] by running the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
   
 > [!TIP]
->  If you’re unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this Dynamics 365 for Customer Engagement apps org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
+>  If you’re unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this Dynamics 365 apps org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
   
 <a name="BKMK_TestEmailConfig"></a>   
 
@@ -277,7 +277,7 @@ Admins, as described in the Permission model table, can change the settings so m
     When you test the email configuration, an asynchronous job runs in the background. It may take a few minutes for the test to be completed. [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps tests the email configuration of all the mailboxes associated with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they’re configured properly.  
   
 > [!TIP]
->  If you’re unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this Dynamics 365 for Customer Engagement apps org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
+>  If you’re unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this Dynamics 365 apps org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
   
 ### See also  
  [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   

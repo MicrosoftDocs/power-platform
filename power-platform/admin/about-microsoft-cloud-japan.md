@@ -93,7 +93,7 @@ A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] supp
  At this time [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] is only available for dev/test scenarios and isn’t supported for production use cases.  Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we are dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability being available in each geographic region. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe. We do not have any additional information regarding other geos or general availability at this time.  
   
 ### Where can I find more about [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] security, data privacy, and compliance?  
- The [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] Trust Center will be updated as needed when the Japan datacenters launch into general availability. To see the current version of the Trust Center, see: [Microsoft Dynamics 365 for Customer Engagement apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
+ The [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] Trust Center will be updated as needed when the Japan datacenters launch into general availability. To see the current version of the Trust Center, see: [Microsoft Dynamics 365 apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
   
 <!-- Out-of-date
 ### Where can I find out more about the physical infrastructure for [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)]?  
@@ -114,7 +114,7 @@ A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] supp
  Billing is related to the country/region where the customer signs up for the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] service, not where the service is deployed.  
   
 ### Will all versions of [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] be available?  
- You’ll be able to purchase all licenses that are currently available in the market today. For more information, see: [Microsoft Dynamics 365 for Customer Engagement apps Pricing List](http://go.microsoft.com/fwlink/p/?LinkID=401462).  
+ You’ll be able to purchase all licenses that are currently available in the market today. For more information, see: [Microsoft Dynamics 365 apps Pricing List](http://go.microsoft.com/fwlink/p/?LinkID=401462).  
   
 ### See also  
  [Office 365 now available from datacenters in Japan](https://blogs.office.com/2014/12/15/office-365-now-available-datacenters-japan/)   

@@ -1,5 +1,5 @@
 ---
-title: "Data encryption for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
+title: "Data encryption for Dynamics 365 apps | MicrosoftDocs"
 ms.custom: 
 ms.date: 08/19/2019
 ms.reviewer: 

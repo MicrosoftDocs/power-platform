@@ -46,7 +46,7 @@ Go to the [Bing Maps licensing page](http://go.microsoft.com/fwlink/p/?linkid=39
 
 4.  Choose **OK**.
   
-## Languages supported in Dynamics 365 for Customer Engagement apps for viewing Bing Maps  
+## Languages supported in Dynamics 365 apps for viewing Bing Maps  
 
  The following table contains a list of all languages supported in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps for viewing [!INCLUDE[pn_bing](../includes/pn-bing.md)] maps. If the language is listed, the [!INCLUDE[pn_bing](../includes/pn-bing.md)] map is shown on the form, such as account, contact or lead, in your language. If the language is not listed, the map is not shown on the form. Instead, the link **Click here to view the map** is provided on the form. When you choose this link, you are taken directly to [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)]. [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] are not available in all countries, regions, or languages. You may not be able to see the map in your language, if it is not supported by [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)]. For a list of supported languages, countries and regions, see [Bing Maps documentation](https://docs.microsoft.com/bingmaps/).  
   

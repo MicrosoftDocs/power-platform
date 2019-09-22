@@ -43,7 +43,7 @@ Many of these settings...
 
 ![Environment settings](media/environment-settings-mini.png)
 
-Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 for Customer Engagement apps and accessed through the app settings. 
+Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 apps and accessed through the app settings. 
 
 ## Settings in Dynamics 365 apps
 

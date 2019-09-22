@@ -32,17 +32,17 @@ As of Dynamics 365 for Customer Engagement version 9.1.0.4039 or higher, categor
 Once the **Tracked to Dynamics 365** category is available in Outlook, you can use it to track the following Outlook items.
 
 ## Email
-Track an email by assigning it the **Tracked to Dynamics 365** category. The category assignment can be seen immediately in Outlook. At this time, the email is marked for tracking. server-side synchronization will sync the email to Dynamics 365 for Customer Engagement apps within 15 minutes, based on the email synchronization setting.
+Track an email by assigning it the **Tracked to Dynamics 365** category. The category assignment can be seen immediately in Outlook. At this time, the email is marked for tracking. server-side synchronization will sync the email to Dynamics 365 apps within 15 minutes, based on the email synchronization setting.
 
-If an email is tracked and is categorized as **Tracked to Dynamics**, removing the category will untrack the email. However, the corresponding Dynamics 365 for Customer Engagement apps email activity record is not deleted.
+If an email is tracked and is categorized as **Tracked to Dynamics**, removing the category will untrack the email. However, the corresponding Dynamics 365 apps email activity record is not deleted.
 
 > [!NOTE]
 > You can set up a rule in Outlook to assign or remove a category. See [Manage email messages by using rules](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59?ui=en-US&rs=en-US&ad=US).
 
 ## Appointment
-You can track an appointment by assigning it the **Tracked to Dynamics 365** category. The appointment will be tracked and synced to Dynamics 365 for Customer Engagement apps based on server-side synchronization rules.
+You can track an appointment by assigning it the **Tracked to Dynamics 365** category. The appointment will be tracked and synced to Dynamics 365 apps based on server-side synchronization rules.
 
-If an appointment is tracked and is categorized as **Tracked to Dynamics**, removing the category will untrack the appointment. However, the corresponding Dynamics 365 for Customer Engagement apps appointment activity record is not deleted.
+If an appointment is tracked and is categorized as **Tracked to Dynamics**, removing the category will untrack the appointment. However, the corresponding Dynamics 365 apps appointment activity record is not deleted.
 
 ## Task
 > [!NOTE]
@@ -104,7 +104,7 @@ By default, failed auto tracked emails will be retried in a new synchronization 
 After 5 retries, if the failure to promote the email was due to a plugin error, try fixing the plugin. Then, assign the **Track to Dynamics 365** category to manually track the undelivered emails to get them tracked in Customer Engagement. 
 
 **How do I remove category-based tracking through OrgDBOrgSetting?** <br/>
-To disable the special **Tracked to Dynamics 365** Outlook category, you need to enable the OrgDBOrgSetting in your Dynamics 365 for Customer Engagement apps organization. Dynamics 365 for Customer Engagement apps provides the OrgDBOrgSettings tool that gives administrators the ability to implement specific updates that were previously reserved for registry implementations.
+To disable the special **Tracked to Dynamics 365** Outlook category, you need to enable the OrgDBOrgSetting in your Dynamics 365 apps organization. Dynamics 365 apps provides the OrgDBOrgSettings tool that gives administrators the ability to implement specific updates that were previously reserved for registry implementations.
 
 1. Follow the instructions [in this article](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm) for steps to extract the tool.
 2. After extracting the tool, disable the OrgDBOrgSetting **TrackCategorizedItems**.

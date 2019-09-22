@@ -168,7 +168,7 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
   
  **Solution:**  
   
- To change the primary synchronization organization and overwrite the setting stored in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)], click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > **Test & Enable Mailbox** > select **Sync items with Exchange from this Dynamics 365 for Customer Engagement apps Organization only, even if Exchanges was set to sync with a different Organization**. This will allow server-side synchronization to work for this [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance but the other instance would no longer work for synching that mailbox through server-side synchronization. To change the synchronization method for Appointments, Contacts, and Tasks, click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > select **None** for **Appointments, Contacts, and Tasks**.  
+ To change the primary synchronization organization and overwrite the setting stored in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)], click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > **Test & Enable Mailbox** > select **Sync items with Exchange from this Dynamics 365 apps Organization only, even if Exchanges was set to sync with a different Organization**. This will allow server-side synchronization to work for this [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance but the other instance would no longer work for synching that mailbox through server-side synchronization. To change the synchronization method for Appointments, Contacts, and Tasks, click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > select **None** for **Appointments, Contacts, and Tasks**.  
   
  For more information, see: [When would I want to use this check box?](when-would-want-use-check-box.md)  
   
@@ -241,7 +241,7 @@ For most situations not supported by server-side synchronization, you can use th
 > [!NOTE]
 >  We recommend that you don’t use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data not synchronizing to all attendees.  
   
-### Appointment record is not created in Dynamics 365 for Customer Engagement apps when tracked by invitee  
+### Appointment record is not created in Dynamics 365 apps when tracked by invitee  
  Consider the following scenario regarding tracking an event in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps:  
   
 1. An event organizer uses [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] for the synchronization method.  
@@ -258,7 +258,7 @@ Result: the appointment is not created in [!INCLUDE [pn-crm-shortest](../include
   
 This is a known issue and is not supported. If the organizer is someone outside of the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization, a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps user who is an invitee can still track the appointment and have the record created in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
    
-### Service Appointments and Activities don’t synchronize from Outlook to Dynamics 365 for Customer Engagement apps 
+### Service Appointments and Activities don’t synchronize from Outlook to Dynamics 365 apps 
  Changes made to Service Appointments and Activities in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps will update in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] when you synchronize but the reverse is not true. When you make changes to Service Appointments or Activities in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the changes are not synchronized to [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. Service appointments are scheduled by an agent and need free/busy information for resources available only in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
   
 ### Be aware of Exchange Online receiving and sending limits  

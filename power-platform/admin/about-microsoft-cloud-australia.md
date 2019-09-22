@@ -96,7 +96,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
 - Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers upon request, and we will continue to expand over time.  
   
-### Will the standard Dynamics 365 for Customer Engagement apps Online SLA be offered at general availability launch?  
+### Will the standard Dynamics 365 apps SLA be offered at general availability launch?  
  Yes, on the date of general availability, the standard 99.9 % financially backed service level agreement (SLA) for [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] will apply, just as it does in our other regions around the world. Note: the SLA for [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] doesn’t cover [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)].  
   
 ### What rules govern New Zealand or Oceania customers who want to license affiliates located in Australia?  
@@ -105,11 +105,11 @@ You may request migration to the Australia datacenter upon datacenter availabili
 ### Will Microsoft Dynamics Marketing, Social Engagement, and Parature be available in the Australia datacenters?  
  These services will be available for purchase in the local market but will be delivered outside of the Australia Datacenters at this time. Note: [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] leverages [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)] and Multi-Factor Authentication, which don’t offer a region choice to customers.  
   
-### Will Dynamics 365 for Customer Engagement apps be available on Azure Infrastructure as a Service (IaaS) in Australia?  
+### Will Dynamics 365 apps be available on Azure Infrastructure as a Service (IaaS) in Australia?  
  At this time, [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] is only available for Dev/Test scenarios and isn’t supported for production use cases. Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we’re dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability in each geography. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe.  
   
 ### Where can I find more about Dynamics 365 apps security, data privacy, and compliance?  
- The [Microsoft Dynamics 365 for Customer Engagement apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409) will be updated as needed when the Australia Datacenters launch into general availability.  
+ The [Microsoft Dynamics 365 apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409) will be updated as needed when the Australia Datacenters launch into general availability.  
   
 ### What data for Dynamics 365 apps will be in Australia datacenters at general availability?  
  For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], we’ll store all customer data, including backups, within the Australia Datacenter. For any [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services that are running in conjunction with [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] those services will follow the data storage rules for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
@@ -184,7 +184,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
 
 ## Pricing and licensing  
   
-### Will all versions of Dynamics 365 for Customer Engagement apps Online be available?  
+### Will all versions of Dynamics 365 apps be available?  
  Customers will be able to purchase all licenses that are currently available in market today. Please see local availability at [Microsoft Dynamics CRM Solutions](http://www.microsoft.com/en-au/dynamics/crm-purchase-online.aspx). Global pricing can be found at [Microsoft Dynamics Pricing List](http://go.microsoft.com/fwlink/p/?LinkID=401462)  
   
 ### How will a customer who has an existing volume license (VL) agreement outside of Australia be billed if they add a new tenant to their agreement that resides in Australia?  

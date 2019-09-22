@@ -27,7 +27,7 @@ With [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, you can u
   
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] documents will display in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps lists.  
   
-- Users can perform [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] actions from the Dynamics 365 for Customer Engagement apps command bar.  
+- Users can perform [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] actions from the Dynamics 365 apps command bar.  
   
 ### See also 
  [Manage your documents](../admin/manage-documents-using-sharepoint.md)  <br /> 

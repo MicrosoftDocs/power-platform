@@ -23,7 +23,7 @@ search.app:
 ---
 # Copy an environment
 
-You can use Copy environment in the Power Platform Admin center to copy the Dynamics 365 for Customer Engagement apps and all data from any environment to a Sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use Copy environment in the Power Platform Admin center to copy the Dynamics 365 apps and all data from any environment to a Sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![](media/copy-menu.png "Copy menu")

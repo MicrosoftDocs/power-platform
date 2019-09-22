@@ -26,7 +26,7 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
 > [!TIP]
 > ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Configurability in Synchronizing Data with Outlook or Exchange in Microsoft Dynamics CRM 2015](http://youtu.be/BMZsVUuaklo?list=PLC3591A8FE4ADBE07)  
   
-## Set field synchronization between Dynamics 365 for Customer Engagement apps and Outlook  
+## Set field synchronization between Dynamics 365 apps and Outlook  
   
 1. Sign in as a Customer Engagement admin. 
 
@@ -45,7 +45,7 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
   
 5. Select **OK** > **OK** to close the open dialog boxes.  
   
-   Let your users know they can view (not change) the synchronization settings. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [What fields can be synchronized between Dynamics 365 for Customer Engagement apps and Outlook?](what-fields-synchronized-outlook.md)  
+   Let your users know they can view (not change) the synchronization settings. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [What fields can be synchronized between Dynamics 365 apps and Outlook?](what-fields-synchronized-outlook.md)  
   
 ## Performance and synchronization  
  Configuring synchronization might have an impact on the time it takes to sync between [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] and [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. You should test your configuration before deploying to ensure satisfactory sync times.  
@@ -59,6 +59,6 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
   
 -   Securing fields: [Add or remove security from a field](enable-disable-security-field.md)  
   
-[!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How field security affects synchronization between Dynamics 365 for Customer Engagement apps and Outlook](../admin/how-field-security-affects-synchronization-between-outlook.md) and [Security concepts for Microsoft Dynamics 365 for Customer Engagement](../admin/wp-security-cds.md)  
+[!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How field security affects synchronization between Dynamics 365 apps and Outlook](../admin/how-field-security-affects-synchronization-between-outlook.md) and [Security concepts for Microsoft Dynamics 365 for Customer Engagement](../admin/wp-security-cds.md)  
   
 ### See also  

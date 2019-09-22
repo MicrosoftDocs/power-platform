@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use Email settings to adjust how Dynamics 365 for Customer Engagement apps features appear and function.
+Use Email settings to adjust how Dynamics 365 apps features appear and function.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Email settings**.
 

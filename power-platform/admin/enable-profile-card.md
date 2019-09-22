@@ -36,7 +36,7 @@ Microsoft’s people experience is centered around profile cards that have been 
 
 ## Prerequisites
 
-The following settings/environment are required for profile cards to be enabled in Dynamics 365 for Customer Engagement apps.
+The following settings/environment are required for profile cards to be enabled in Dynamics 365 apps.
 
 1. Office 365 (Exchange Online)
 2. Dynamics 365 Unified Interface Build 9.1.0.4626 or higher

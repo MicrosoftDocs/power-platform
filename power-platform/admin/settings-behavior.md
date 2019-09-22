@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use Behavior settings to adjust how Dynamics 365 for Customer Engagement apps appears and functions.
+Use Behavior settings to adjust how Dynamics 365 apps appears and functions.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Behavior**.
 
@@ -54,7 +54,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Display behavior**||  
 > |Show app download message|Default: On. If **On**, users will see a message regarding downloading the Dynamics 365 for tablets app.|  
 > |Show legacy app to everyone, not just admin|Default: On. The legacy web app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. It is always visible to those with System Administrator and System Customizer roles, and to other custom roles with similar privileges.  More information: [Dynamics 365 - custom](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-unified-interface-only#dynamics-365---custom).|  
-> |Legacy app name|Enter the label to use for the legacy app. This appears on the Dynamics 365 for Customer Engagement apps home page. The legacy label is *Dynamics 365 - custom*. More information: [Dynamics 365 - custom](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-unified-interface-only#dynamics-365---custom).|
+> |Legacy app name|Enter the label to use for the legacy app. This appears on the Dynamics 365 apps home page. The legacy label is *Dynamics 365 - custom*. More information: [Dynamics 365 - custom](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-unified-interface-only#dynamics-365---custom).|
 > |Show welcome screen on sign in|Default: On. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  
 > |Show Microsoft Flow on forms and in the site map|Default: On. Select **On** to enable embedded Microsoft Flows in your organization. More information: [Enable embedded Flow to automate processes](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-embedded-flow-in-your-organization).|  
 > |Show dashboard cards in expanded state|Default: Off. Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  

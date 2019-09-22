@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use these settings to adjust Dynamics 365 for Customer Engagement apps privacy and security.
+Use these settings to adjust Dynamics 365 apps privacy and security.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Privacy + Security**.
 

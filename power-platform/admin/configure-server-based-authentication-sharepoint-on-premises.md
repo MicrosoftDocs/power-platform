@@ -105,7 +105,7 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
   > [!IMPORTANT]
   >  At the time of this writing, there is an issue with the RTW version of Microsoft Online Services Sign-In Assistant for IT Professionals. Until the issue is resolved, we recommend that you use the Beta version. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Microsoft Azure Forums: Cannot install Azure Active Directory Module for Windows PowerShell. MOSSIA is not installed](https://social.msdn.microsoft.com/Forums/azure/en-US/46a38822-28a4-4abb-b747-96f7db2a2676/cannot-install-azure-active-directory-module-for-windows-powershell-mossia-is-not-installed?forum=WindowsAzureAD).  
   
-- A suitable claims-based authentication mapping type to use for mapping identities between [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Grant Microsoft Dynamics 365 for Customer Engagement apps permission to access SharePoint and configure the claims-based authentication mapping](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_grantperm)  
+- A suitable claims-based authentication mapping type to use for mapping identities between [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Grant Microsoft Dynamics 365 apps permission to access SharePoint and configure the claims-based authentication mapping](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_grantperm)  
   
 ### Update the SharePoint Server SPN in Azure Active Directory Domain Services  
  On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
@@ -222,7 +222,7 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
    ```  
   
 <a name="BKMK_grantperm"></a>   
-### Grant Dynamics 365 for Customer Engagement apps permission to access SharePoint and configure the claims-based authentication mapping  
+### Grant Dynamics 365 apps permission to access SharePoint and configure the claims-based authentication mapping  
  On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
   
  The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection administration membership.  

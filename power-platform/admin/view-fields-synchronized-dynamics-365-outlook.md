@@ -58,7 +58,7 @@ In [!INCLUDE[pn_crm_2015_outlook](../includes/pn-crm-2015-outlook.md)] or later,
    >  Field synchronization direction can be impacted by security settings configured by your system administrator. For example, if you don’t have read privileges for a field, it won’t be synchronized in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] even if the field is configured for two-way synchronization. To determine whether you have read privileges for a field, click the **View in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps** button to open the record in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. If you see the **Lock** icon, you can’t access the field.  
 
 ### See also  
- [Frequently asked questions about synchronizing records between Microsoft Dynamics 365 for Customer Engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
- [What fields can be synchronized between Dynamics 365 for Customer Engagement apps and Outlook or Exchange?](what-fields-synchronized-outlook.md)   
- [Control field synchronization between Dynamics 365 for Customer Engagement apps and Outlook or Exchange (admins)](control-field-synchronization-outlook.md)   
- [How security affects synchronization between Dynamics 365 for Customer Engagement apps and Outlook or Exchange](how-field-security-affects-synchronization-between-outlook.md)
+ [Frequently asked questions about synchronizing records between Microsoft Dynamics 365 apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
+ [What fields can be synchronized between Dynamics 365 apps and Outlook or Exchange?](what-fields-synchronized-outlook.md)   
+ [Control field synchronization between Dynamics 365 apps and Outlook or Exchange (admins)](control-field-synchronization-outlook.md)   
+ [How security affects synchronization between Dynamics 365 apps and Outlook or Exchange](how-field-security-affects-synchronization-between-outlook.md)

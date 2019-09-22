@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use Feature settings to adjust how Dynamics 365 for Customer Engagement apps features appear and function.
+Use Feature settings to adjust how Dynamics 365 apps features appear and function.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Features**.
 
@@ -44,12 +44,12 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Create AI models in PowerApps  | Default: On. If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](https://docs.microsoft.com/ai-builder/administer)  |
 > |**Embedded content**||  
 > |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)|  
-> |Bing Maps|Default: Off. If **On**, Dynamics 365 for Customer Engagement apps (on-premises) users will need to enter a Bing Maps key. Customer Engagement apps users don’t need to enter a key. |  
-> |Prevent social data in Dynamics|Default: Off. If you don’t want to receive social data in Dynamics 365 for Customer Engagement apps, select **Off**. If you disable social engagement, your organization will not be able to receive social data in Dynamics 365 for Customer Engagement apps. Users can continue to work with existing social data, however.|  
+> |Bing Maps|Default: Off. If **On**, Dynamics 365 apps (on-premises) users will need to enter a Bing Maps key. Customer Engagement apps users don’t need to enter a key. |  
+> |Prevent social data in Dynamics|Default: Off. If you don’t want to receive social data in Dynamics 365 apps, select **Off**. If you disable social engagement, your organization will not be able to receive social data in Dynamics 365 apps. Users can continue to work with existing social data, however.|  
 > |**Communications**| |
 > |Skype presence|Default: On. If **On**, instant messaging will display the current status for users, contacts, opportunities, or leads. This only applies to lists and sub-lists for entities with an updated user interface.|  
 > |Country/region code prefixing for numbers|Default: On. If **On**, Customer Engagement apps will prefix the country/region code to numbers that users are trying to call.|  
-> |Set the telephony provider|Default: On. Choose which provider to enable outbound calls from within Dynamics 365 for Customer Engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.|  
+> |Set the telephony provider|Default: On. Choose which provider to enable outbound calls from within Dynamics 365 apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.|  
 > |Use Skype| Default: enabled. [More information: Set up Dynamics 365 (online) to use Skype or Skype for Business](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-skype-or-skype-for-business)|
 > |Use Skype for Business| Default: not enabled. |
 > |**Search**||  

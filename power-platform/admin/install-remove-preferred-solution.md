@@ -23,7 +23,7 @@ Install preferred solutions to gain added features and functionality for [!INCLU
   
  ![List of preferred solutions](media/PreferredSolutions65.png "List of preferred solutions")
   
- The list of available solutions varies. Some solutions like Office 365 groups for Dynamics 365 for Customer Engagement apps are freely available and visible by default. Trials for some solutions are gated and will only be visible if you go through **Settings** > **Dynamics Marketplace** or [appsource.microsoft.com](https://appsource.microsoft.com/marketplace?product=dynamics-crm) and sign up for the solutions. If you buy a new service subscription through Office Commerce, any associated solution installer  also becomes visible in the **Solutions** tab after that purchase is recognized by the provisioning system.  
+ The list of available solutions varies. Some solutions like Office 365 groups for Dynamics 365 apps are freely available and visible by default. Trials for some solutions are gated and will only be visible if you go through **Settings** > **Dynamics Marketplace** or [appsource.microsoft.com](https://appsource.microsoft.com/marketplace?product=dynamics-crm) and sign up for the solutions. If you buy a new service subscription through Office Commerce, any associated solution installer  also becomes visible in the **Solutions** tab after that purchase is recognized by the provisioning system.  
   
 <a name="BKMK_InstallInsights"></a>   
 ## Install a preferred solution  

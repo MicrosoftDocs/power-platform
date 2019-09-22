@@ -29,7 +29,7 @@ search.app:
 >  You must have the Global admin role to fully access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
 <a name="BKMK_AppLauncher"></a>   
-## Open Dynamics 365 for Customer Engagement apps and other services with the app launcher  
+## Open Dynamics 365 apps and other services with the app launcher  
  You can open Customer Engagement apps and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Office 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher)  
   
  ![Office 365 app launcher](../admin/media/admin-center-app-launcher.png "Office 365 app launcher")  
@@ -40,7 +40,7 @@ search.app:
   
  You access the portal by choosing [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps from the left-side menu in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
- ![Dynamics 365 for Customer Engagement apps option on the Microsoft 365 admin center menu](../admin/media/o365-admin-center-crm.png "Dynamics 365 for Customer Engagement apps option on the Microsoft 365 admin center menu")  
+ ![Dynamics 365 apps option on the Microsoft 365 admin center menu](../admin/media/o365-admin-center-crm.png "Dynamics 365 apps option on the Microsoft 365 admin center menu")  
   
  Choose the **Instances** tab to edit, copy, and reset, existing instances, configure new instances, manage preferred solutions, and more. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps instances](/dynamics365/customer-engagement/admin/manage-online-instances.md)  
   

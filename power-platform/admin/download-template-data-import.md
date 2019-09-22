@@ -1,5 +1,5 @@
 ---
-title: "Download a template for data import for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
+title: "Download a template for data import for Dynamics 365 apps | MicrosoftDocs"
 ms.custom: 
 ms.date: 08/13/2019
 ms.reviewer: 

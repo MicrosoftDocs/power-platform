@@ -25,7 +25,7 @@ Securing a field in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] 
 >  We do not recommend securing a field in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps when the field is set to sync. Best practice is to NOT secure any sync fields. If you do decide to secure sync fields, you’ll need to do the following:  
 > 
 > 1. Secure the field using field level security. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] see “Set field level security” below.  
-> 2. Change the sync direction so that sync does not attempt to update or write the field during synchronization. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Control field synchronization between Dynamics 365 for Customer Engagement apps and Outlook or Exchange](control-field-synchronization-outlook.md)  
+> 2. Change the sync direction so that sync does not attempt to update or write the field during synchronization. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Control field synchronization between Dynamics 365 apps and Outlook or Exchange](control-field-synchronization-outlook.md)  
   
 ## Scenario: Restrict users from changing Job Title  
  The Contoso company wants to promote consistent data entry. While sales personnel are out in the field, it’s easy for them to create different data entries to describe the same thing. For example, the same job title could be entered as “Construction Manager”, “Foreman”, or “Site Manager”. To prevent this, the Job Title field is secured. This has consequences for synchronization.  

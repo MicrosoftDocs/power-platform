@@ -52,7 +52,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
 > [!NOTE]
 >  In [!INCLUDE[pn_v6_online_ur1](../includes/pn-v6-online-ur1.md)], only one [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] instance is provided for connection to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance.  
   
-## Assign Social Engagement licenses to Dynamics 365 for Customer Engagement apps users  
+## Assign Social Engagement licenses to Dynamics 365 apps users  
  [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps customers automatically have access to [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] as part of their subscription at no additional charge. .  
   
  Use the [!INCLUDE[pn_MS_Online_Services_Portal](../includes/pn-ms-online-services-portal.md)] to assign and verify [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] licenses.  
@@ -86,7 +86,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
   
 <a name="BKMK_Add"></a>   
 
-## Add the Social Insights control to a Dynamics 365 for Customer Engagement apps entity form  
+## Add the Social Insights control to a Dynamics 365 apps entity form  
  To add [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls to an entity (record type) form, you have to use the form editor provided in the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps **Customization** area. You can position the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] control anywhere on the form and resize it, just like you would do with the **iFrame** controls. You can make the control bigger by increasing the number of rows and spanning the control over several columns. This is important if you want to make a graph or a chart in the control appear larger and be more readable. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use the Form Editor](/dynamics365/customer-engagement/customize/use-the-form-editor-legacy.md).  
   
 1. Click **Settings** > **Customizations** > **Customize the System**.  

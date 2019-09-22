@@ -113,7 +113,7 @@ search.app:
  Use the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Connectors for Groups to connect new or existing [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] with Customer Engagement apps so the group is notified when new activities are posted. To set it up, follow these steps:  
   
 > [!TIP]
->  Check out the following Dynamics 365 for Customer Engagement apps Blog: [Dynamics CRM Online connector for Office 365 Groups](http://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)  
+>  Check out the following Dynamics 365 apps Blog: [Dynamics CRM Online connector for Office 365 Groups](http://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)  
   
 1. Sign in to your [Office 365 Outlook](https://outlook.office365.com).  
   
@@ -148,18 +148,18 @@ search.app:
 > - The activity appears as a new conversation in a card format in the Group.  
 > - The fields in the card shown in the Group conversation are not customizable.  
 > - Nothing is required in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to make the connector work.  
-> - For sensitive information, you should connect your Dynamics 365 for Customer Engagement apps record to a private group where only approved members can view contents. For public groups, everyone in the org has access to view contents. See "Public and private Office 365 groups" in [Learn more about groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).  
+> - For sensitive information, you should connect your Dynamics 365 apps record to a private group where only approved members can view contents. For public groups, everyone in the org has access to view contents. See "Public and private Office 365 groups" in [Learn more about groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).  
   
 <a name="BKMK_KnownIssues"></a>   
 ## Known issues  
  You need to have Customer Engagement apps version [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)] or later, to install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. If [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] appears as an available solution in the [!INCLUDE[pn_crm_online_admin_center](../includes/pn-crm-online-admin-center.md)], but you receive the following error when trying to install: "Solution install failed. Please try again later. If the problem persists, contact customer support," you’ll need to update your instance of Customer Engagement apps before you can install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)].  
   
 ## Privacy notice  
- When a user leverages the Office 365 Groups for Dynamics 365 for Customer Engagement apps feature to connect an Office Group to Microsoft Dynamics 365 apps, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized Dynamics 365 for Customer Engagement apps users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  
+ When a user leverages the Office 365 Groups for Dynamics 365 apps feature to connect an Office Group to Microsoft Dynamics 365 apps, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized Dynamics 365 apps users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  
   
 ### See also  
  [Collaborate with your colleagues using Office 365 Groups](/dynamics365/customer-engagement/basics/collaborate-with-colleagues-using-office-365-groups.md)   
  [CRM Blog: Dynamics CRM Online connector for Office 365 Groups](http://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)   
  [Set up Dynamics 365 apps to use Exchange Online](connect-exchange-online.md)   
  [Blog: It's here - Office 365 Groups in CRM Online](http://blogs.technet.com/b/lystavlen/archive/2015/05/08/office-groups.aspx)   
- [Office 365 Groups in Dynamics 365 for Customer Engagement apps FAQs](/dynamics365/customer-engagement/basics/office-365-groups-dynamics-365-faqs.md)
+ [Office 365 Groups in Dynamics 365 apps FAQs](/dynamics365/customer-engagement/basics/office-365-groups-dynamics-365-faqs.md)

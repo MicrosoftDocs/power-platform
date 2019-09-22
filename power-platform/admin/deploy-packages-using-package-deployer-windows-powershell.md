@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on a Dynamics 365 for Customer Engagement apps (on-premises) or [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance. A “package” can consist of any or all of the following:  
+[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on a Dynamics 365 apps (on-premises) or [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance. A “package” can consist of any or all of the following:  
   
 - One or more [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps solution files.  
   
@@ -29,7 +29,7 @@ search.app:
   
 - HTML content specific to the package that can display at the beginning and end of the package deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
   
-  Developers create packages by using the package deployment template in [!INCLUDE[pn_Visual_Studio](../includes/pn-visual-studio.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create packages for the Dynamics 365 for Customer Engagement apps Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer.md)
+  Developers create packages by using the package deployment template in [!INCLUDE[pn_Visual_Studio](../includes/pn-visual-studio.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create packages for the Dynamics 365 apps Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer.md)
   
   After a package is created, you can deploy it either by running [!INCLUDE[pn_package_deployer_short](../includes/pn-package-deployer-short.md)] or by using [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] cmdlets for the tool.  
   
@@ -210,15 +210,15 @@ Get-Help “Crm”
  
 ### Use the cmdlet to connect to your Dynamics 365 for Customer Engagement instance  
   
-1. Provide your credentials to connect to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps or Dynamics 365 for Customer Engagement apps (on-premises) instance. Running the following command will prompt you to type your user name and password to connect to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance, and we will store it in the `$Cred` variable, and use it later for connecting to your Dynamics 365 for Customer Engagement server.  
+1. Provide your credentials to connect to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps or Dynamics 365 apps (on-premises) instance. Running the following command will prompt you to type your user name and password to connect to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance, and we will store it in the `$Cred` variable, and use it later for connecting to your Dynamics 365 for Customer Engagement server.  
   
    ```  
    $Cred = Get-Credential  
    ```  
   
-2. Use the following command to get a connection to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps or Dynamics 365 for Customer Engagement apps (on-premises) instance. We will store the connection information in the `$CRMConn` variable:  
+2. Use the following command to get a connection to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps or Dynamics 365 apps (on-premises) instance. We will store the connection information in the `$CRMConn` variable:  
   
-   - If you are connecting to the Dynamics 365 for Customer Engagement apps (on-premises) instance:  
+   - If you are connecting to the Dynamics 365 apps (on-premises) instance:  
   
      ```  
      $CRMConn = Get-CrmConnection -ServerUrl http://<your_CRM_Server> -OrganizationName <your_Org_Name> -Credential $Cred  
@@ -257,7 +257,7 @@ Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools
 > - The folder that you specify when you use the `LogWriteDirectory` parameter must already exist, and the user who is running the Import-CrmPackage cmdlet must have write permission to the folder. Additionally, the -Verbose parameter is required  when you use the LogWriteDirectory parameter.  
 > 
 >    The LogWriteDirectory parameter was first introduced with [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)]. 
->   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Dynamics 365 for Customer Engagement apps Developer Guide](/dynamics365/customer-engagement/developer/developer-guide.md) 
+>   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Dynamics 365 apps Developer Guide](/dynamics365/customer-engagement/developer/developer-guide.md) 
   
  The following example command imports a package named *SampleCRMPackage* and specifies English-United States (1033) as the language to import the package.  
   
@@ -274,7 +274,7 @@ Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools
 Get-Help Import-CrmPackage -full  
 ```  
   
- To view the online help for the cmdlets, see [Dynamics 365 for Customer Engagement apps PowerShell Reference](https://technet.microsoft.com/library/dn756318.aspx).  
+ To view the online help for the cmdlets, see [Dynamics 365 apps PowerShell Reference](https://technet.microsoft.com/library/dn756318.aspx).  
   
 <a name="Logfiles"></a>   
 ## Troubleshoot package deployment issues by using log files  

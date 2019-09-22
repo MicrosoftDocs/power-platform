@@ -1,5 +1,5 @@
 ---
-title: "Turn duplicate detection rules on or off for the whole organization for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
+title: "Turn duplicate detection rules on or off for the whole organization for Dynamics 365 apps | MicrosoftDocs"
 ms.custom: 
 ms.date: 08/13/2019
 ms.reviewer: 
@@ -63,5 +63,5 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
   
 ### See also  
  [Set up duplicate detection rules to keep your data clean](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean)   
- [Frequently asked questions about synchronizing records between Microsoft Dynamics 365 for Customer Engagement apps and Microsoft Outlook](https://docs.microsoft.com/dynamics365/customer-engagement/admin/frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook)   
+ [Frequently asked questions about synchronizing records between Microsoft Dynamics 365 apps and Microsoft Outlook](https://docs.microsoft.com/dynamics365/customer-engagement/admin/frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook)   
  [Run bulk system jobs to detect duplicate records](https://docs.microsoft.com/dynamics365/customer-engagement/admin/run-bulk-system-jobs-detect-duplicate-records)

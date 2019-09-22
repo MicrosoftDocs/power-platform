@@ -1,5 +1,5 @@
 ---
-title: "Import data (all record types) for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
+title: "Import data (all record types) for Dynamics 365 apps | MicrosoftDocs"
 ms.custom: 
 ms.date: 05/09/2019
 ms.reviewer: 

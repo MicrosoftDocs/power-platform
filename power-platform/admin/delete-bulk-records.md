@@ -1,5 +1,5 @@
 ---
-title: "Delete bulk records for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
+title: "Delete bulk records for Dynamics 365 apps | MicrosoftDocs"
 ms.custom: 
 ms.date: 08/13/2019
 ms.reviewer: 

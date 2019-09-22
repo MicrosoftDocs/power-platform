@@ -24,9 +24,9 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Provide an enhanced offline experience for mobile users using Dynamics 365 for Customer Engagement apps. Once offline synchronization is turned on, mobile users can seamlessly work in offline mode on their mobile device when they don't have an internet connection.
+Provide an enhanced offline experience for mobile users using Dynamics 365 apps. Once offline synchronization is turned on, mobile users can seamlessly work in offline mode on their mobile device when they don't have an internet connection.
 
-This offline experience uses Azure services to periodically synchronize entities with Dynamics 365 for Customer Engagement apps so synchronized records are available when users’ mobile devices are disconnected. To enable offline synchronization, follow the steps below.
+This offline experience uses Azure services to periodically synchronize entities with Dynamics 365 apps so synchronized records are available when users’ mobile devices are disconnected. To enable offline synchronization, follow the steps below.
 
 ## Step 1: Create a profile
 

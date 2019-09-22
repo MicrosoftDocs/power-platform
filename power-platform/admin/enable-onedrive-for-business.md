@@ -47,7 +47,7 @@ This feature was introduced in [!INCLUDE[pn_crm_online_2016_update_shortest](../
   
 2.  Click **Enable OneDrive for Business** to enable it, and then choose **OK**.  
   
-## Controlling access to OneDrive for Business in Dynamics 365 for Customer Engagement apps 
+## Controlling access to OneDrive for Business in Dynamics 365 apps 
  You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)] in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps for end users through the **OneDrive for Business** privilege.  
   
 1. Click **Settings** > **Security** > **Security Roles**.  

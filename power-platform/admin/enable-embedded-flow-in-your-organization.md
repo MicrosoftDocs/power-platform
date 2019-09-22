@@ -26,7 +26,7 @@ Microsoft Flow lets you create automated processes between your favorite apps an
 [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] instances use the same environment in which the instance resides. For more information about Flow environments, see [Using environments within Microsoft Flow](https://flow.microsoft.com/documentation/environments-overview-admin/)
   
 The Flow integration feature is not available in the following service or geographic regions.
-- Microsoft Dynamics 365 for Customer Engagement apps Government
+- Microsoft Dynamics 365 apps Government
 - Germany
 
 Once the Flow integration feature is enabled, the following privileges are added in the **Miscellaneous** section of the **Customization** tab for security roles.  
@@ -41,7 +41,7 @@ Once the Flow integration feature is enabled, the following privileges are added
   
 - One or more flows created in the Flow environment to use with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using Dynamics 365 apps](https://flow.microsoft.com/documentation/connection-dynamics365/)  
   
-## Enable or disable Flow in your Dynamics 365 for Customer Engagement apps organization  
+## Enable or disable Flow in your Dynamics 365 apps organization  
  By default, all security roles allow users to run flows on the records that they have access to.  
   
  To enable or disable Flow integration in your organization, follow these steps.  

@@ -27,10 +27,10 @@ If you are a partner signing up on behalf of a customer, or are using this trial
 ## New Dynamics 365 apps customers  
  If you're a new customer, we've made onboarding quick and easy. See the following for information on these applications available with [!INCLUDE[pn-crm-online](../includes/pn-crm-online.md)].  
 
--   [Dynamics 365 for Customer Engagement apps for Sales](https://www.microsoft.com/dynamics365/sales)  
--   [Dynamics 365 for Customer Engagement apps for Customer Service](https://www.microsoft.com/dynamics365/customer-service)  
--   [Dynamics 365 for Customer Engagement apps for Field Service](https://www.microsoft.com/dynamics365/field-service)    
--   [Dynamics 365 for Customer Engagement apps for Project Service Automation](https://www.microsoft.com/dynamics365/project-service-automation)  
+-   [Dynamics 365 apps for Sales](https://www.microsoft.com/dynamics365/sales)  
+-   [Dynamics 365 apps for Customer Service](https://www.microsoft.com/dynamics365/customer-service)  
+-   [Dynamics 365 apps for Field Service](https://www.microsoft.com/dynamics365/field-service)    
+-   [Dynamics 365 apps for Project Service Automation](https://www.microsoft.com/dynamics365/project-service-automation)  
 
 On any of the above pages, scroll down and click **Get Started** to start a 30-day trial. For more information on which scenario is right for you, see the [Installation options](#installation-options) section below.
 
@@ -65,7 +65,7 @@ For more information about the scenario choices, see the [Installation options](
 > [!TIP]
 > ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following videos:  
 >   
-> -   [Get the most out of your free 30-day Dynamics 365 for Customer Engagement apps trial](https://go.microsoft.com/fwlink/p/?linkid=835893).  
+> -   [Get the most out of your free 30-day Dynamics 365 apps trial](https://go.microsoft.com/fwlink/p/?linkid=835893).  
 > -   [How to buy Dynamics 365 for Customer Engagement](https://go.microsoft.com/fwlink/p/?linkid=835890).  
 
 
@@ -96,7 +96,7 @@ For more information about the scenario choices, see the [Installation options](
 ## Installation options
 You can choose to start a trial for all Customer Engagement offerings, a mix of offerings, or none. Each choice installs a different set of apps, which are displayed in the app switcher.
 
-![Dynamics 365 for Customer Engagement apps switcher](../admin/media/app-switcher75.png "Dynamics 365 for Customer Engagement apps switcher")  
+![Dynamics 365 apps switcher](../admin/media/app-switcher75.png "Dynamics 365 apps switcher")  
 
 The following table shows what’s installed for each choice, what you see in the app switcher, and where you can use it.
 

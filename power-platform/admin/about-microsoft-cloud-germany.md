@@ -20,7 +20,7 @@ search.app:
 [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] address the needs of the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA). The German datacenter delivers services that bring together the best of Microsoft in productivity, collaboration, intelligence and platform to grow, evolve and transform your business.  
   
 > [!NOTE]
-> Due to the unique nature of [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)], there are some features that have not yet been enabled. The key sales, marketing, and service features for Dynamics 365 for Customer Engagement apps will be the same as in other regions. However, there may be external factors that are made available in other clouds, but will not be available to German cloud customers at this time.  
+> Due to the unique nature of [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)], there are some features that have not yet been enabled. The key sales, marketing, and service features for Dynamics 365 apps will be the same as in other regions. However, there may be external factors that are made available in other clouds, but will not be available to German cloud customers at this time.  
 > 
 >  Please check back for the latest information.  
   
@@ -38,7 +38,7 @@ search.app:
   
 - All security and compliance capabilities of [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] are included.  
   
-  ![Dynamics 365 for Customer Engagement apps Germany data residence](media/germany-data-residence.png "Dynamics 365 for Customer Engagement apps Germany data residence")  
+  ![Dynamics 365 apps Germany data residence](media/germany-data-residence.png "Dynamics 365 apps Germany data residence")  
   <a name="BKMK_DataTrustee"></a>   
 
 ## German Data Trustee  
@@ -46,19 +46,19 @@ search.app:
   
  The German Data Trustee may also perform non-data specific tasks related to day-to-day datacenter operations.  
   
- ![Dynamics 365 for Customer Engagement apps Germany data trustee](media/germany-data-trustee.png "Dynamics 365 for Customer Engagement apps Germany data trustee")  
+ ![Dynamics 365 apps Germany data trustee](media/germany-data-trustee.png "Dynamics 365 apps Germany data trustee")  
   
 <a name="BKMK_ServiceDelivery"></a>   
 ## Germany Service Delivery  
  The following describe current and planned service availability. We will continue to add more services as they become available.  
   
-### Dynamics 365 for Customer Engagement apps Germany offers the following online services:  
+### Dynamics 365 apps Germany offers the following online services:  
   
 - [!INCLUDE[pn_ms_dyn_365_for_sales](../includes/pn-ms-dyn-365-for-sales.md)]  
   
 - [!INCLUDE[pn_ms_dyn_365_for_customer_service](../includes/pn-ms-dyn-365-for-customer-service.md)]  
   
-- Dynamics 365 for Customer Engagement apps Plan
+- Dynamics 365 apps Plan
   
 Customer Engagement Plan is a user subscription that includes [!INCLUDE[pn_ms_dyn_365_for_sales](../includes/pn-ms-dyn-365-for-sales.md)], [!INCLUDE[pn_ms_dyn_365_for_customer_service](../includes/pn-ms-dyn-365-for-customer-service.md)], [!INCLUDE[pn_field_service](../includes/pn-field-service.md)], [!INCLUDE[pn_project_service_auto](../includes/pn-project-service-auto.md)], and Team Members. Please note that [!INCLUDE[pn_dyn_365_field_service](../includes/pn-dyn-365-field-service.md)] and [!INCLUDE[pn_dyn_365_project_service_auto](../includes/pn-dyn-365-project-service-auto.md)] cause location data to be transmitted to [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] outside of Germany.  
   
