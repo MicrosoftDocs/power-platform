@@ -126,7 +126,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
   
 4. On the dashboard form, enter the name of the dashboard in the **Name** text box and choose **Save**.  
   
-5. To add the control, choose **Insert Social Insights** icon in the center of the section on the dashboard form, or choose **More Commands** (![More commands button](../admin/media/not-available.gif "More commands button")) on the command bar and then choose **[!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** in the dropdown list. **Set Up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** wizard appears.  
+5. To add the control, choose **Insert Social Insights** icon in the center of the section on the dashboard form, or choose **More Commands** (![More commands button](../admin/media/not-available.png "More commands button")) on the command bar and then choose **[!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** in the dropdown list. **Set Up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** wizard appears.  
   
    ![Set up Social Insights in Dynamics 365 for Customer Engagement](../admin/media/social-engagement-setup.png "Set up Social Insights in Dynamics 365 for Customer Engagement")  
   

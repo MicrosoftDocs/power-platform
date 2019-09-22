@@ -63,7 +63,7 @@ Currencies determine the prices for products in the product catalog and the cost
 
 3.  From the list of currencies displayed, select the currency to delete.  
 
-4.  Click **Delete**  ![Delete button](media/crm_ua_delete.gif "Delete button").  
+4.  Click **Delete**  ![Delete button](media/crm_ua_delete.png "Delete button").  
 
 5.  Confirm the deletion.  
 
