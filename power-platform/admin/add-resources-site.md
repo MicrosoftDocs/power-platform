@@ -38,5 +38,4 @@ After you create a site, you can add resources such as users, equipment, or faci
 8. Close the site record.  
   
 ### See also  
- [Set up a Dynamics 365 for Customer Engagement apps organization](../admin/set-up-a-dynamics-365-organization.md)   
  [Regional and language options for your organization](enable-languages.md)

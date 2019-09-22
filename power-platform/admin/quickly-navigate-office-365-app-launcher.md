@@ -88,11 +88,7 @@ search.app:
 > **Admins: You have options for displaying and naming Dynamics 365 - custom.**  
 > 
 >  Once you update to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)], you have options.  Go to **Settings** > **Administration** > **System Setting** > **General** tab. Scroll down to **Set options for the default app: Dynamics 365 - custom**.  
-> 
-> **Where do I get more information about upgrading to Dynamics 365 for Customer Engagement?**  
-> 
-> -   [Important information for CRM Online customers](../admin/important-information-customers.md)  
-> -   [Switch from Dynamics CRM Online to Dynamics 365 apps](../admin/switch-dynamics-crm-online-dynamics-365.md)  
+
   
 <a name="BKMK_PinApps"></a>   
 ### Pin your frequently-used apps 
@@ -132,6 +128,4 @@ search.app:
  [Blog: Meet the all new Dynamics 365 for Customer Engagement apps Home page](https://dynamics365.wordpress.com/tag/dynamics-365-home-page/)   
  [Sign in to Dynamics and Office 365 apps](../admin/sign-in-office-365-apps.md)
  [My Apps on Home.Dynamics.com ](https://blogs.msdn.microsoft.com/crm/2017/03/30/my-apps-on-home-dynamics-com/)  
- [Important information for CRM Online customers](../admin/important-information-customers.md)   
- [Switch from Dynamics CRM Online to Dynamics 365 apps](../admin/switch-dynamics-crm-online-dynamics-365.md)   
  [Meet the Office 365 app launcher](https://support.office.com/article/Meet-the-Office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a)   

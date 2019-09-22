@@ -40,5 +40,4 @@ You can view the status of, pause, postpone, and resume a system job that you cr
    |Modify recurrence of a bulk-delete job|1.  Select the bulk-deletion job, and then on the Actions menu, choose **Modify Recurrence**.<br />2.  If you select the **Run this job after every** check box, specify the interval after which you want the bulk-deletion job to run, and then choose **OK**.<br /><br /> If you select the **Run this job after every** check box when you create a bulk-deletion job, the job becomes recurring and is moved to the **Recurring Bulk Deletion System Jobs** view. You can only change the recurrence for these recurring bulk-deletion jobs.|  
   
 ### See also  
- [Manage your data (for admins)](../admin/manage-your-data.md)   
  [Delete bulk records](delete-bulk-records.md)

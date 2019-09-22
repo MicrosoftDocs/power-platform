@@ -38,7 +38,7 @@ For a mobile device, such as an iPad or smartphone, the following apps are avail
   
 - [!INCLUDE[pn_crm_for_windows_8](../includes/pn-crm-for-windows-8.md)]  
   
-For more detailed information about supported phones and tablets, see [Microsoft Dynamics 365 for Customer Engagement apps mobile and tablet device support](../mobile-app/support-phones-tablets.md).  
+For more detailed information about supported phones and tablets, see [Microsoft Dynamics 365 for Customer Engagement apps mobile and tablet device support](/dynamics365/customer-engagement/mobile-app/support-phones-tablets.md).  
   
 > [!NOTE]
 > - Users who try to view [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps on an unsupported browser may be redirected to a mobile experience. 
@@ -57,5 +57,4 @@ For more detailed information about supported phones and tablets, see [Microsoft
  If you export an [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] worksheet as a Dynamic Worksheet while using [!INCLUDE[tn_Safari](../includes/tn-safari.md)], you may receive an error when trying to open the file. To remedy this, right-click the file, click **Get Info**, and, under **Open With**, select [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)].  
   
 ### See Also  
- [Key preparation and configuration tasks](../admin/key-preparation-and-configuration-tasks.md)
  [Supported web browsers and mobile devices - earlier versions](https://technet.microsoft.com/library/dn531055.aspx)

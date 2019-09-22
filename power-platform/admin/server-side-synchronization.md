@@ -51,7 +51,7 @@ Server-side synchronization is the preferred option for organizations with users
   
 - **Connection throttling.** server-side synchronization provides a way to control the number of parallel connections opened against an email server to prevent overloading the mail server.  
   
-- **Data migration.** server-side synchronization supports migrating configuration data from Email Router to server-side synchronization by using the migration wizard. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Migrate settings from the Email Router to server-side synchronization](../admin/migrate-settings-email-router-server-side-synchronization.md).  
+- **Data migration.** server-side synchronization supports migrating configuration data from Email Router to server-side synchronization by using the migration wizard. 
   
 - **Service isolation.** server-side synchronization has separate queue-management and configuration settings for asynchronous operations, outgoing activities, and mailboxes. It is based off asynchronous service architecture and may share the same process. In all cases, it manages server resources while maintaining isolation with the asynchronous service.  
   

@@ -27,7 +27,7 @@ The [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps -[!INCLUDE[
 > - [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps  
 > - [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)]  
   
-For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](../developer/data-export-service.md).
+For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](/dynamics365/customer-engagement/developer/data-export-service.md).
   
 <a name="Prereq_DES"></a>   
 ## Prerequisites for using [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]  
@@ -121,7 +121,7 @@ For information about the programmatic interface for managing configuration and 
 
   To do this, delete the Export Profile in the EXPORT PROFILES view, then delete the tables and stored procedures, and then create a new profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to delete all Data Export Profile tables and stored procedures](#Delete_DEP)  
   
-- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn’t work for [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps sandbox instances that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](manage-sandbox-instances.md#administration-mode)  
+- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn’t work for [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps sandbox instances that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](/dynamics365/customer-engagement/admin/manage-sandbox-instances.md#administration-mode)  
 
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] does not drop (delete) the associated tables, columns, or stored procedure objects in the destination Azure SQL database when the following actions occur.
   - An entity is deleted in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.
@@ -653,7 +653,5 @@ If your error logs show "String length in source longer than destination schema 
   
 ### See also  
  [AppSource: Dynamics 365 for Customer Engagement apps - Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)   
- [What's new with Microsoft Dynamics 365 for Customer Engagement apps ‒ Data Export Service?](../admin/whats-new-with-data-export-service.md) 
- [Manage your data](../admin/manage-your-data.md)  
- [Data Export Service](../developer/data-export-service.md)
-[Team Blog: Introduction to Dynamics 365 for Customer Engagement apps – Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)
+ [Data Export Service](/dynamics365/customer-engagement/developer/data-export-service.md)
+ [Team Blog: Introduction to Dynamics 365 for Customer Engagement apps – Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)

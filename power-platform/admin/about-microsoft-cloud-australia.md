@@ -82,7 +82,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
 2. In the upper-right corner of [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], choose your organization.  
   
-   ![Choose your organization](../../admin/media/data-center-choose-organization.png "Choose your organization")  
+   ![Choose your organization](media/data-center-choose-organization.png "Choose your organization")  
   
 3. On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
@@ -135,7 +135,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
   2. In the upper-right corner of [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], choose your organization.  
   
-  ![Choose your organization](../../admin/media/data-center-choose-organization.png "Choose your organization")  
+  ![Choose your organization](media/data-center-choose-organization.png "Choose your organization")  
   
   3.  On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
@@ -149,7 +149,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
 - To move your tenants, instances, and data to the Australia regions, you should contact [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] Support for additional information regarding migrating your instances. For more information, see [How do I request my instance to be moved to the Australia datacenter?](about-microsoft-cloud-australia.md#BKMK_RequestMove) [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions.  
   
-  For additional guidance regarding multiple tenants and multiple instances, see [Multiple online instances or tenants](../../admin/multiple-online-instances-tenants.md). This link will be updated with the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] 2015 launch.  
+  For additional guidance regarding multiple tenants and multiple instances, see [Multiple online instances or tenants](/dynamics365/customer-engagement/admin/multiple-online-instances-tenants.md). This link will be updated with the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] 2015 launch.  
   
 <a name="BKMK_RequestMove"></a> 
   
@@ -172,7 +172,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
  Once you have been scheduled for migration, a member of the [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] team will work directly with you to discuss scheduling and any other issues that may come up during the migration.  
   
 ### If I am scheduled for an update to CRM Online 2015 Update or CRM Online 2015 Update 1, will Microsoft apply the update at the same time as their migration to the Australia datacenter?  
- You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the Australia datacenter. Customers can schedule their update. For more information, see [Manage Dynamics 365 apps updates](../../admin/manage-updates.md).  
+ You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the Australia datacenter. Customers can schedule their update.  
   
 ### If I have both Office 365 services and Dynamics 365 apps, how will migration be handled?  
  The migration of each service will be handled separately. For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  

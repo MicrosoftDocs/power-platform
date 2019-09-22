@@ -26,7 +26,7 @@ We continue to open new datacenter regions for [!INCLUDE[pn_crm_online_shortest]
 >
 >  For versions prior to Customer Engagement version 9.0, you can move individual [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] instances from one geographical region to another. When you do so, your tenant becomes a multiregional tenant. Regional features are enabled in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
 > 
->  To request a regional migration, please contact your account manager or  see [Technical Support](../../admin/contact-technical-support.md).  
+>  To request a regional migration, please contact your account manager or  see [Technical Support](get-help-support.md).  
 > 
 >  Customer Engagement version 9.0 does not currently support regional migration. Check back later for availability. 
 
@@ -51,7 +51,7 @@ We continue to open new datacenter regions for [!INCLUDE[pn_crm_online_shortest]
 
 -   United Kingdom (UK) = *.crm11.dynamics.com  
 
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in to Dynamics 365 apps](../../admin/sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Organization Service](../../developer/org-service/discover-url-organization-organization-service.md)
+ [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in to Dynamics 365 apps](sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Organization Service](/dynamics365/customer-engagement/developer/org-service/discover-url-organization-organization-service.md)
 
  For example, if your existing organization URL is https://myorg.crm<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be https://myorg.crm<strong>6</strong>.dynamics.com.  
 
@@ -87,6 +87,5 @@ We continue to open new datacenter regions for [!INCLUDE[pn_crm_online_shortest]
  We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](http://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 
 ### See also  
- [Dynamics 365 for Customer Engagement (online) terminology](../../admin/online-terminology.md)   
- [Add and edit multiregional instances](../../admin/add-edit-multiregional-instances.md)   
- [Manage Microsoft Dynamics 365 for Customer Engagement (online) instances](../../admin/manage-online-instances.md)
+ [Add and edit multiregional instances](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md)   
+ [Manage Microsoft Dynamics 365 for Customer Engagement (online) instances](/dynamics365/customer-engagement/admin/manage-online-instances.md)

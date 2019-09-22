@@ -45,4 +45,4 @@ When you enable auditing, [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm
   
 ### See also  
 [Audit data and user activity](audit-data-user-activity.md)<br />
-[Retrieve and delete the history of audited data changes](../developer/retrieve-and-delete-the-history-of-audited-data-changes.md)
+[Retrieve and delete the history of audited data changes](/dynamics365/customer-engagement/developer/retrieve-and-delete-the-history-of-audited-data-changes.md)

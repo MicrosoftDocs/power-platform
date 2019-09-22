@@ -87,7 +87,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
 <a name="BKMK_Add"></a>   
 
 ## Add the Social Insights control to a Dynamics 365 for Customer Engagement apps entity form  
- To add [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls to an entity (record type) form, you have to use the form editor provided in the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps **Customization** area. You can position the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] control anywhere on the form and resize it, just like you would do with the **iFrame** controls. You can make the control bigger by increasing the number of rows and spanning the control over several columns. This is important if you want to make a graph or a chart in the control appear larger and be more readable. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use the Form Editor](../customize/use-the-form-editor-legacy.md).  
+ To add [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls to an entity (record type) form, you have to use the form editor provided in the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps **Customization** area. You can position the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] control anywhere on the form and resize it, just like you would do with the **iFrame** controls. You can make the control bigger by increasing the number of rows and spanning the control over several columns. This is important if you want to make a graph or a chart in the control appear larger and be more readable. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use the Form Editor](/dynamics365/customer-engagement/customize/use-the-form-editor-legacy.md).  
   
 1. Click **Settings** > **Customizations** > **Customize the System**.  
   
@@ -126,7 +126,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
   
 4. On the dashboard form, enter the name of the dashboard in the **Name** text box and choose **Save**.  
   
-5. To add the control, choose **Insert Social Insights** icon in the center of the section on the dashboard form, or choose **More Commands** (![More commands button](../admin/media/not-available.gif "More commands button")) on the command bar and then choose **[!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** in the dropdown list. **Set Up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** wizard appears.  
+5. To add the control, choose **Insert Social Insights** icon in the center of the section on the dashboard form, or choose **More Commands** (![More commands button](../admin/media/not-available.png "More commands button")) on the command bar and then choose **[!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** in the dropdown list. **Set Up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** wizard appears.  
   
    ![Set up Social Insights in Dynamics 365 for Customer Engagement](../admin/media/social-engagement-setup.png "Set up Social Insights in Dynamics 365 for Customer Engagement")  
   

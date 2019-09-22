@@ -78,7 +78,7 @@ When you are provisioning a new Dynamics 365 for Customer Engagement apps org, d
 ![Unified Interface apps](media/uci-apps.png "Unified Interface apps")
 
 > [!NOTE]
-> [!INCLUDE[pn-marketing-business-app-module-name](../includes/pn-marketing-business-app-module-name.md)] always uses the Unified Interface and is  [provisioned separately](../marketing/trial-signup.md).
+> [!INCLUDE[pn-marketing-business-app-module-name](../includes/pn-marketing-business-app-module-name.md)] always uses the Unified Interface and is  [provisioned separately](/dynamics365/customer-engagement/marketing/trial-signup.md).
 
 ### Accessing Unified Interface apps on browsers
 Once provisioned, you can access the installed Unified Interface and web apps from multiple interfaces. On browsers you can see all the apps both Unified Interface and web: 

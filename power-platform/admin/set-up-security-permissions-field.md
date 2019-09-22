@@ -21,7 +21,7 @@ search.app:
 
 You can restrict access to a field by creating a field security profile. After you create the profile, you assign users and or teams to that profile, and set up specific read, create, or write permissions for the field.  
   
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Security concepts for Dynamics 365 for Customer Engagement](security-concepts.md)  
+ [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Security concepts for Dynamics 365 for Customer Engagement](wp-security-cds.md)  
   
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   

@@ -50,4 +50,4 @@ To accommodate changes in sales territories or the representatives that are assi
   
 ### See also  
  [Manage users](../admin/create-users-assign-online-security-roles.md)   
- [Manage security, users and teams](../admin/manage-security-users-and-teams.md)
+

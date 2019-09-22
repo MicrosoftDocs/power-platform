@@ -29,7 +29,7 @@ search.app:
  You use a common web browser, such as [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)], [!INCLUDE[tn_Mozilla_Firefox](../includes/tn-mozilla-firefox.md)], [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] or [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] to view, add, or edit information stored in your organization’s Customer Engagement apps database. For more information about the supported web browsers and hardware requirements, see [Web application requirements for Microsoft Dynamics 365 for Customer Engagement](web-application-requirements.md).  
 
 ## Mobile device requirements  
- Users can work in Customer Engagement apps by using a supported browser on a mobile device, or by using [!INCLUDE[pn_Mobile_Express_long](../includes/pn-mobile-express-long.md)]. For more information about the mobile experience in Customer Engagement apps, see [Set up Dynamics 365 for Customer Engagement apps for phones and Dynamics 365 for Customer Engagement apps for tablets](../mobile-app/set-up-dynamics-365-for-phones-and-dynamics-365-for-tablets.md).  
+ Users can work in Customer Engagement apps by using a supported browser on a mobile device, or by using [!INCLUDE[pn_Mobile_Express_long](../includes/pn-mobile-express-long.md)]. For more information about the mobile experience in Customer Engagement apps, see [Set up Dynamics 365 for Customer Engagement apps for phones and Dynamics 365 for Customer Engagement apps for tablets](/dynamics365/customer-engagement/mobile-app/set-up-dynamics-365-for-phones-and-dynamics-365-for-tablets.md).  
 
 ## Microsoft Office requirements  
  [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps leverages the capabilities of on-premises versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] or [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] and integrates with [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] and [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)]. For more information about the supported versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)], see [Supported versions of Office](web-application-requirements.md#supported-versions-of-office).  
@@ -37,6 +37,5 @@ search.app:
  [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]  
   
 ### See also  
- [Get started administering Microsoft Dynamics 365 apps](getting-started.md) <br />
  [Plan for Microsoft Dynamics 365 apps Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
  [Microsoft Dynamics CRM Online IP Address Ranges](https://support.microsoft.com/help/2728473/microsoft-dynamics-crm-online-ip-address-ranges)

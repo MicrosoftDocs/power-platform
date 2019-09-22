@@ -32,7 +32,7 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
 
 2. In the web app, select **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
   
-   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button](../admin/media/selection-rule-gear.gif "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
   
 3. Under **Synchronize Microsoft Dynamics 365 items with Outlook or Exchange**, select **synchronized fields**.  
   
@@ -59,6 +59,6 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
   
 -   Securing fields: [Add or remove security from a field](enable-disable-security-field.md)  
   
-[!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How field security affects synchronization between Dynamics 365 for Customer Engagement apps and Outlook](../admin/how-field-security-affects-synchronization-between-outlook.md) and [Security concepts for Microsoft Dynamics 365 for Customer Engagement](../admin/security-concepts.md)  
+[!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How field security affects synchronization between Dynamics 365 for Customer Engagement apps and Outlook](../admin/how-field-security-affects-synchronization-between-outlook.md) and [Security concepts for Microsoft Dynamics 365 for Customer Engagement](../admin/wp-security-cds.md)  
   
 ### See also  

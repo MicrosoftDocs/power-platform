@@ -25,7 +25,7 @@ search.app:
   
 ## Create or modify online synchronization filters  
   
-1. In the web app, in the upper-right corner of the screen, click the **Settings** button ![User profile Settings button](../outlook-app/media/priv-user.gif "User profile Settings button") > **Options**.  
+1. In the web app, in the upper-right corner of the screen, click the **Settings** button ![User profile Settings button](media/privileges-user.png "User profile Settings button") > **Options**.  
   
 2. In the **Set Personal Options** dialog box, click the **Synchronization** tab.  
   
@@ -33,10 +33,10 @@ search.app:
   
    [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps displays the **Synchronization Settings for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]** dialog box with the **User Filters** tab selected. You can use this tab to create or edit a filter, or to delete, activate, or deactivate a filter.  
   
-   ![Online synchronization filters](../outlook-app/media/online-sync-filters-dialog-box.PNG "Online synchronization filters")  
+   ![Online synchronization filters](media/online-sync-filters-dialog-box2.png "Online synchronization filters")  
   
    > [!NOTE]
-   > If you’re a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](../developer/outlook-client/offline-outlook-filters-templates.md) 
+   > If you’re a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](/dynamics365/customer-engagement/developer/outlook-client/offline-outlook-filters-templates.md) 
   
 4. Do one of the following:  
   
@@ -47,7 +47,7 @@ search.app:
 ## Create or modify filter criteria  
  You use a criteria row to create or modify criteria in an offline synchronization filter. Each criteria row contains three values: the field to use in the filter (for example, **City**), an operator (for example, **Equals** or **Contains**), and the value to filter on (for example, **WA**).  
   
- ![Sync or offline filters criteria grid in Dynamics 365 for Customer Engagement](../outlook-app/media/sync-filters-criteria-row.png "Sync or offline filters criteria grid in Dynamics 365 for Customer Engagement")  
+ ![Sync or offline filters criteria grid in Dynamics 365 for Customer Engagement](media/sync-filters-criteria-row.png "Sync or offline filters criteria grid in Dynamics 365 for Customer Engagement")  
   
 #### Add a criteria row  
   
@@ -69,7 +69,7 @@ search.app:
   
    After creating a group, you can click the down arrow next to the **And** or **Or** to select from different options. You can select a group, ungroup the group, change a Group AND to a Group OR or vice versa, add a clause, or delete a group.  
   
-   ![Sync filters dialog box showing grouped criteria](../outlook-app/media/sync-filters-group-criteria.png "Sync filters dialog box showing grouped criteria")  
+   ![Sync filters dialog box showing grouped criteria](media/sync-filters-group-criteria.png "Sync filters dialog box showing grouped criteria")  
   
 ### See also  
  [Frequently asked questions about synchronizing records between Microsoft Dynamics 365 for Customer Engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md) 

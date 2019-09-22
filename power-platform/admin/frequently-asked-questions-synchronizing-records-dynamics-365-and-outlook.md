@@ -51,6 +51,6 @@ However, when you use Dynamics 365 App for Outlook to track or set the regarding
   
 ### See also 
  [Integrate your email system with Dynamics 365 for Customer Engagement](../admin/integrate-synchronize-your-email-system.md)   
- [Dynamics 365 App for Outlook User's Guide](../outlook-app/dynamics-365-app-outlook-user-s-guide.md)   
+ [Dynamics 365 App for Outlook User's Guide](/dynamics365/customer-engagement/outlook-app/dynamics-365-app-outlook-user-s-guide.md)   
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
  [Set personal options that affect tracking and synchronization between Dynamics 365 for Customer Engagement apps and Outlook or Exchange](set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md)

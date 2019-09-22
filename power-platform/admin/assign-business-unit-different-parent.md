@@ -29,7 +29,7 @@ You can assign a different parent business to a business unit to accommodate cha
   
 4. On the Actions toolbar, choose **More Actions** > **Change Parent Business**.  
   
-5. In the **Change Parent Business** dialog box, in the New parent business text box, type part or all of the name of the parent business you want to assign the business unit to, and then choose the **Click to select a value for New parent business** icon  ![Lookup button](media/lookup-4.gif "Lookup button").  
+5. In the **Change Parent Business** dialog box, in the New parent business text box, type part or all of the name of the parent business you want to assign the business unit to, and then choose the **Click to select a value for New parent business** icon  ![Lookup button](media/lookup-4.png "Lookup button").
   
 6. Select the record for the parent business you want to assign the business unit to, and then click **OK**.  
   

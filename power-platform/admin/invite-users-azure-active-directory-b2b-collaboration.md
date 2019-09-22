@@ -55,7 +55,7 @@ You can invite other users to access your [!INCLUDE[pn_dyn_365_online](../includ
   
    - See [Admins adding guest users to a group](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-admin-add-users).  
   
-   - See [Control user access to instances: security groups and licenses](add-instance-subscription.md#control-user-access-to-instances-security-groups-and-licenses) on how to use security groups for your [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] instances.  
+   - See [Control user access to instances: security groups and licenses](/dynamics365/customer-engagement/admin/add-instance-subscription.md#control-user-access-to-instances-security-groups-and-licenses) on how to use security groups for your [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] instances.  
   
 2. Invite users to your [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] instance that does not have a security group.  
   

@@ -27,7 +27,7 @@ You don’t have sufficient permissions to access [!INCLUDE[pn_microsoftcrm](../
   
 3. Open the user record.  
   
-4. Choose **More Commands** (![More commands button](../admin/media/not-available.gif "More commands button")) > **Manage Roles**.  
+4. Choose **More Commands** (![More commands button](../admin/media/not-available.png "More commands button")) > **Manage Roles**.  
   
 5. Make note of the role assigned to the user. If appropriate, select a different security role. Close the Manage User Roles dialog box.  
   
@@ -47,4 +47,4 @@ You don’t have sufficient permissions to access [!INCLUDE[pn_microsoftcrm](../
 >  If you have multiple security roles assigned, confirm that at least one assigned role has the User Entity UI Settings privilege set to the User level.  
   
 ### See also  
- [Manage security, users and teams](../admin/manage-security-users-and-teams.md)
+

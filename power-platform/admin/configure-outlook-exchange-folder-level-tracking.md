@@ -36,7 +36,7 @@ You can enable folder-level tracking for [!INCLUDE[pn_Microsoft_Exchange](../inc
   
 5. Configure other tracking options on this page, and then click **OK**.  
   
-Once you’ve enabled folder-level tracking, users will need to configure folder-tracking rules in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps with Settings (![Gear button](../admin/media/selection-rule-gear.gif "Gear button")) > **Options** > **Email** > **Configure Folder Tracking Rules**.  
+Once you’ve enabled folder-level tracking, users will need to configure folder-tracking rules in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps with Settings (![Gear button](../admin/media/selection-rule-gear.png "Gear button")) > **Options** > **Email** > **Configure Folder Tracking Rules**.  
   
 ## Some important points about folder-level tracking  
   
@@ -51,4 +51,4 @@ Once you’ve enabled folder-level tracking, users will need to configure folder
 - Folder-level tracking for queue mailboxes is not supported.  
   
 ### See also  
- [System Settings dialog box - Email tab](system-settings-dialog-box-email-tab.md)   
+ [System Settings dialog box - Email tab](/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab.md)   

@@ -217,4 +217,4 @@ By default, some out-of-the-box system entities are included in Relevance Search
 [!INCLUDE[cc_privacy_crm_relevance_search](../includes/cc-privacy-crm-relevance-search.md)]
 
 ### See also  
- [Use Relevance Search for faster comprehensive results](../basics/relevance-search-results.md)
+ [Use Relevance Search for faster comprehensive results](/dynamics365/customer-engagement/basics/relevance-search-results.md)

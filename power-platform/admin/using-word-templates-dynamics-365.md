@@ -73,7 +73,7 @@ search.app:
  ![Select entities for the Word template](../admin/media/word-template-select-entities.png "Select entities for the Word template")  
 
 ### What are 1:N, N:1, and N:N relationships?  
- This screen requires an understanding of your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data structure. Your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrator or customizer can provide information about entity relationships. For admin content, see: [Create and edit entity relationships](../customize/create-edit-entity-relationships.md).  
+ This screen requires an understanding of your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data structure. Your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrator or customizer can provide information about entity relationships. For admin content, see: [Create and edit entity relationships](/dynamics365/customer-engagement/customize/create-edit-entity-relationships.md).  
 
  Here are some example relationships for the Account entity.  
 

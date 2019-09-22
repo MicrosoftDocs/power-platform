@@ -89,5 +89,5 @@ To maintain the integrity of your data, it’s a good idea to have rules in plac
 ### See also  
  [Turn duplicate detection rules on or off for the whole organization](../admin/turn-duplicate-detection-rules-off-whole-organization.md)<br />
  [Run bulk system jobs to detect duplicate records](../admin/run-bulk-system-jobs-detect-duplicate-records.md)<br />
- [Merge duplicate records for accounts, contacts, or leads](../basics/merge-duplicate-records-accounts-contacts-leads.md)<br />
-[Developer's Guide: Duplicate Rule entities](../developer/duplicaterule-entities.md)
+ [Merge duplicate records for accounts, contacts, or leads](/dynamics365/customer-engagement/basics/merge-duplicate-records-accounts-contacts-leads.md)<br />
+[Developer's Guide: Duplicate Rule entities](/dynamics365/customer-engagement/developer/duplicaterule-entities.md)

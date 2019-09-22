@@ -62,7 +62,7 @@ The [!INCLUDE[pn_power_bi_for_office_365_long](../includes/pn-power-bi-for-offic
   
 - [Download the Power BI Report Template for Connected Field Service for Dynamics 365 for Customer Engagement](http://download.microsoft.com/download/E/B/5/EB5ED97A-A36A-4CAE-8C04-333A1E463B4F/PowerBI%20Report%20Template%20for%20Connected%20Field%20Service%20for%20Microsoft%20Dynamics%20365.pbix)  
   
-  For information about how to customize the content packs, see [Customize Dynamics 365 for Customer Engagement apps Power BI content packs](../analytics/customize-power-bi-content-packs.md).  
+  For information about how to customize the content packs, see [Customize Dynamics 365 for Customer Engagement apps Power BI content packs](/dynamics365/customer-engagement/analytics/customize-power-bi-content-packs.md).  
   
 <a name="BPI_embed"></a>   
 ## Embed [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] visualizations on personal dashboards  
@@ -83,9 +83,9 @@ The [!INCLUDE[pn_power_bi_for_office_365_long](../includes/pn-power-bi-for-offic
   
 4. Click **OK**.  
   
-To learn more about how to add [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] tiles to personal dashboards in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, see [Embed  Power BI tiles on your personal dashboard  ](../basics/add-edit-power-bi-visualizations-dashboard.md#embed--power-bi-tiles-on-your-personal-dashboard).  
+To learn more about how to add [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] tiles to personal dashboards in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, see [Embed  Power BI tiles on your personal dashboard  ](/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard.md#embed--power-bi-tiles-on-your-personal-dashboard).  
   
-To learn more about how to add [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] dashboards to personal dashboards in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, see [Add a Power BI dashboard on your personal dashboard](../basics/add-edit-power-bi-visualizations-dashboard.md).  
+To learn more about how to add [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] dashboards to personal dashboards in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, see [Add a Power BI dashboard on your personal dashboard](/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard.md).  
   
 <a name="CRMOnline_PBIDesktop"></a>   
 ## Use Power BI Desktop to connect directly to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance  

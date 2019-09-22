@@ -39,16 +39,16 @@ Save time when creating multiple campaigns by creating a campaign template. Camp
   
 - Open the campaign that you want to copy. Click **Copy as Template**, type a name for the template, and click **Save**.  
   
-  If you need to back up your templates, or use them in a different implementation of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](../customize/use-solutions-for-your-customizations.md)  
+  If you need to back up your templates, or use them in a different implementation of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md)  
   
 > [!NOTE]
 > [!INCLUDE[cc_CRM_Marketing_and_MDM](../includes/cc-crm-marketing-and-mdm.md)] 
   
 ### See also  
- [Get started with in-app marketing (Sales)](../sales-enterprise/get-started-app-marketing-sales.md)   
- [Create a marketing list using in-app marketing (Sales)](../sales-enterprise/create-marketing-list-using-app-marketing-sales.md)   
- [Create or edit a campaign using in-app marketing (Sales)](../sales-enterprise/create-edit-campaign-using-app-marketing-sales.md)   
- [Create a quick campaign using in-app marketing (Sales)](../sales-enterprise/create-quick-campaign-using-app-marketing-sales.md)   
- [Add an activity to a campaign using in-app marketing (Sales)](../sales-enterprise/add-activity-campaign-using-app-marketing-sales.md)   
- [Add a marketing list, sales literature, or product to a campaign using in-app marketing (Sales)](../sales-enterprise/add-marketing-list-sales-literature-product-campaign-using-app-marketing-sales.md)   
- [Track a marketing campaign response using in-app marketing (Sales)](../sales-enterprise/track-marketing-campaign-response-using-app-marketing-sales.md)   
+ [Get started with in-app marketing (Sales)](/dynamics365/customer-engagement/sales-enterprise/get-started-app-marketing-sales.md)   
+ [Create a marketing list using in-app marketing (Sales)](/dynamics365/customer-engagement/sales-enterprise/create-marketing-list-using-app-marketing-sales.md)   
+ [Create or edit a campaign using in-app marketing (Sales)](/dynamics365/customer-engagement/sales-enterprise/create-edit-campaign-using-app-marketing-sales.md)   
+ [Create a quick campaign using in-app marketing (Sales)](/dynamics365/customer-engagement/sales-enterprise/create-quick-campaign-using-app-marketing-sales.md)   
+ [Add an activity to a campaign using in-app marketing (Sales)](/dynamics365/customer-engagement/sales-enterprise/add-activity-campaign-using-app-marketing-sales.md)   
+ [Add a marketing list, sales literature, or product to a campaign using in-app marketing (Sales)](/dynamics365/customer-engagement/sales-enterprise/add-marketing-list-sales-literature-product-campaign-using-app-marketing-sales.md)   
+ [Track a marketing campaign response using in-app marketing (Sales)](/dynamics365/customer-engagement/sales-enterprise/track-marketing-campaign-response-using-app-marketing-sales.md)   
