@@ -199,7 +199,7 @@ The following table describes the permissions required to approve emails.
 <sup>2</sup> We are updating for Customer Engagement Online/Exchange Online, for Customer Engagement version 9.1.0.5805 or later.  <br />
 <sup>3</sup> We will be updating for Customer Engagement Online/Exchange On-premises. Check back for version information.
 
- To determine your version, sign in to Customer Engagement apps, and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.gif)) > **About**.  
+ To determine your version, sign in to Customer Engagement apps, and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**.  
 
 ### Require and configure mailbox approval 
 

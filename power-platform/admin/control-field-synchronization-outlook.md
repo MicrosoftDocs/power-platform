@@ -32,7 +32,7 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
 
 2. In the web app, select **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
   
-   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button](../admin/media/selection-rule-gear.gif "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button](../admin/media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
   
 3. Under **Synchronize Microsoft Dynamics 365 items with Outlook or Exchange**, select **synchronized fields**.  
   

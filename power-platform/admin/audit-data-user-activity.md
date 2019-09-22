@@ -97,7 +97,7 @@ System administrators and customizers can start or stop auditing for an organiza
   
    -   Choose an **Event** to view specific details about the activity, such as field changes that were made during an update to a record and who performed the update.  
   
-   -   Click the **Refresh** button  ![Refresh button](media/html-viewer-grid-refresh.gif "Refresh button") to view the most recent activity. 
+   -   Click the **Refresh** button  ![Refresh button](media/html-viewer-grid-refresh.png "Refresh button") to view the most recent activity. 
 
 <a name="BKMK_enable_ent_aud"></a>   
 ## Enable or disable entities and fields for auditing  
