@@ -31,7 +31,7 @@ In [!INCLUDE[pn_crm_2015_outlook](../includes/pn-crm-2015-outlook.md)] or later,
 
 ## View the synchronized fields  
 
-1. In the web app, in the upper-right corner of the screen, click the **Settings** button ![User profile Settings button](../outlook-app/media/privileges-user.giv "User profile Settings button") > **Options**.  
+1. In the web app, in the upper-right corner of the screen, click the **Settings** button ![User profile Settings button](../outlook-app/media/privileges-user.gif "User profile Settings button") > **Options**.  
 
 2. In the **Set Personal Options** dialog box, choose the **Synchronization** tab.    
 
