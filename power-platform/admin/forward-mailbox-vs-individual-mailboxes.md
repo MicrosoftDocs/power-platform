@@ -40,6 +40,6 @@ By using a forward mailbox, you shift the administrative effort to the task of d
   
 2. A rule in the user's mailbox sends a copy of the message, as an attachment, to the forward mailbox.  
   
-3. [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps (by using server-side synchronization or Email Router) retrieves the message from the forward mailbox and creates the appropriate records.  
+3. [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps (by using server-side synchronization or Email Router) retrieve the message from the forward mailbox and creates the appropriate records.  
   
 ### See also  

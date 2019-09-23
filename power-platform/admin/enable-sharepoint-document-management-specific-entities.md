@@ -72,7 +72,7 @@ Store the documents related to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamic
   
 7. Click **Next**.  
   
-   [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps creates document libraries for the selected entities on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps also creates the corresponding document location records that contain the links to these document libraries. The **Document Management Settings** wizard shows the creation status of the document libraries.  -->
+   [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps create document libraries for the selected entities on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps also create the corresponding document location records that contain the links to these document libraries. The **Document Management Settings** wizard shows the creation status of the document libraries.  -->
   
 ### See also  
  [Edit existing SharePoint site records](../admin/edit-existing-sharepoint-site-records.md)   

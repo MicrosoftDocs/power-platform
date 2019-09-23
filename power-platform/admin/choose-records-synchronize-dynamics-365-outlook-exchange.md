@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps uses online synchronization filters to determine which records to synchronize between [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] (using [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)]). You can modify the existing online synchronization filters or create new filters to synchronize certain types of records. You can also delete, deactivate, or activate filters.  
+[!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps use online synchronization filters to determine which records to synchronize between [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] (using [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)]). You can modify the existing online synchronization filters or create new filters to synchronize certain types of records. You can also delete, deactivate, or activate filters.  
   
  Email is not included in the synchronization filters because email is controlled by when the email is created in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, whether the user is on the recipient list or not.   
   

@@ -201,7 +201,7 @@ Use the following methods to free storage for each of the capacity types.
 
 ### Method 10: Delete audit logs  
 
- When you enable auditing, [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps creates audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
+ When you enable auditing, [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
   
 > [!WARNING]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  

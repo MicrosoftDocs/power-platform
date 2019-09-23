@@ -17,7 +17,7 @@ search.app:
 ---
 # Enhance security by encrypting your data
 
-[!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps uses standard [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] cell level encryption for a set of default entity attributes that contain sensitive information, such as user names and email passwords. This feature can help organizations meet FIPS 140-2 compliance.  
+[!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps use standard [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] cell level encryption for a set of default entity attributes that contain sensitive information, such as user names and email passwords. This feature can help organizations meet FIPS 140-2 compliance.  
   
  For [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, all new and upgraded organizations use data encryption by default. Data encryption can’t be turned off.  
   
@@ -53,7 +53,7 @@ Make sure you have the System Administrator or System Customizer security role o
 4. Paste the encryption key into a text editor such as Notepad.  
   
    > [!WARNING]
-   >  By default, [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps generates a passphrase that is a random collection of Unicode characters. Therefore, you must save the system-generated passphrase by using an application and file that supports Unicode characters. Some text editors, such as Notepad use ANSI coding by default. Before you save the passphrase using Notepad, select **Save As**, and then in the **Encoding** list, select **Unicode**.  
+   >  By default, [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps generate a passphrase that is a random collection of Unicode characters. Therefore, you must save the system-generated passphrase by using an application and file that supports Unicode characters. Some text editors, such as Notepad use ANSI coding by default. Before you save the passphrase using Notepad, select **Save As**, and then in the **Encoding** list, select **Unicode**.  
   
 5. As a best practice, save the text file that contains the encryption key on a computer in a secure location on an encrypted hard drive.  
   
