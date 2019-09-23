@@ -23,8 +23,6 @@
       href: determine-org-id-name.md
     - name: Getting started
       items:
-#     - name: What is the Power Platform?
-#       href: what-is-power-platform.md
       - name: PowerApps overview
         href: wp-powerapps-platform-overview.md
       - name: What's the role of a PowerApps administrator? 
@@ -173,6 +171,42 @@
             href: download-template-data-import.md
           - name: Cascading transaction processing
             href: async-cascading.md
+        - name: System Settings Dialog Box Reference
+          items: 
+          - name: Overview (System Settings)
+            href: system-settings-dialog.md
+          - name: General tab
+            href: system-settings-dialog-box-general-tab.md
+          - name: Calendar tab
+            href: system-settings-dialog-box-calendar-tab.md
+          - name: Formats tab
+            href: system-settings-dialog-box-formats-tab.md
+          - name: Auditing tab
+            href: system-settings-dialog-box-auditing-tab.md
+          - name: Email tab
+            href: system-settings-dialog-box-email-tab.md
+          - name: Marketing tab
+            href: system-settings-dialog-box-marketing-tab.md
+          - name: Customization tab
+            href: system-settings-dialog-box-customization-tab.md
+          - name: Outlook tab
+            href: system-settings-dialog-box-outlook-tab.md
+          - name: Reporting tab
+            href: system-settings-dialog-box-reporting-tab.md
+          - name: Goals tab
+            href: system-settings-dialog-box-goals-tab.md
+          - name: Sales tab
+            href: system-settings-dialog-box-sales-tab.md
+          - name: Service tab
+            href: system-settings-dialog-box-service-tab.md
+          - name: Synchronization tab
+            href: system-settings-dialog-box-synchronization-tab.md
+          - name: Mobile Client tab
+            href: system-settings-dialog-box-mobile-client-tab.md
+          - name: Previews tab
+            href: system-settings-dialog-box-previews-tab.md
+          - name: On-off switch for Learning Path (guided help)
+            href: on-off-switch-for-learning-path-guided-help.md            
     - name: Requirements/supported configurations
       href: online-requirements.md
       items: 
