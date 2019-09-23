@@ -33,7 +33,7 @@ When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-
 > [!TIP]
 > ![Video symbol](../admin/media/video-thumbnail-4-crm.png "Video symbol") Check out the following video: [Connect Dynamics 365 apps to SharePoint Online](https://go.microsoft.com/fwlink/p/?linkid=837790)  
   
- To set up Customer Engagement apps to use [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], complete the following steps.  
+ To set up Dynamics 365 apps to use [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], complete the following steps.  
   
 <a name="BKMK_AssignPermission"></a>   
 

@@ -40,7 +40,7 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
 <a name="setups2s"></a>   
 
 ## Set up server-to-server authentication with Dynamics 365 apps and SharePoint on-premises  
- Follow the steps in the order provided to set up Customer Engagement apps with [!INCLUDE[pn_sharepoint_2013](../includes/pn-sharepoint-2013.md)] on-premises.  
+ Follow the steps in the order provided to set up Dynamics 365 apps with [!INCLUDE[pn_sharepoint_2013](../includes/pn-sharepoint-2013.md)] on-premises.  
   
 > [!IMPORTANT]
 > The steps described here must be completed in the order provided. If a task is not completed, such as a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command that returns an error message, the issue must be resolved before you continue to the next command, task, or step.  

@@ -54,7 +54,7 @@ Use the settings on this page to enable preview features in model-driven apps in
 |**Organization Insights Preview**||
 |Enable Organization Insights Preview|More information: [Preview feature: Use the Organization Insights dashboard to view metrics about your instance](use-organization-insights-dashboard-view-instance-metrics.md)|
 |**Text Analytics Preview for Case Topic analysis, Suggest Similar Cases and Suggest Knowledge Articles**||
-|Enable the Dynamics 365 for Customer Engagement apps Text Analytics Preview|More information: [Public Preview: Topic analysis](https://technet.microsoft.com/library/mt752501.aspx)|
+|Enable the Dynamics 365 for Dynamics 365 apps Text Analytics Preview|More information: [Public Preview: Topic analysis](https://technet.microsoft.com/library/mt752501.aspx)|
 |**Sales Insights**||
 |Install Relationship Analytics to enable it for preview|More information: [Preview feature: Get insights on opportunities, activities, and leads of customers](https://docs.microsoft.com/dynamics365/customer-engagement/sales-enterprise/sales-insights-addon)|
 

@@ -30,7 +30,7 @@ With both [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INC
 <a name="BKMK_GetExchangeReady"></a>   
 
 ## Get Exchange ready  
- To use [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with Customer Engagement apps, you must have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription that comes as part of an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription or that can be subscribed to separately. For information on [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], see:  
+ To use [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with Dynamics 365 apps, you must have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription that comes as part of an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription or that can be subscribed to separately. For information on [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], see:  
   
 -   [Exchange Online](https://technet.microsoft.com/library/jj200580\(v=exchg.150\).aspx)  
   
@@ -44,7 +44,7 @@ With both [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INC
 <a name="BKMK_VerifyProfile"></a>   
 
 ## Verify you have the profile: Microsoft Exchange Online  
- If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your Customer Engagement apps subscription, Customer Engagement apps creates a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
+ If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your Dynamics 365 apps subscription, Dynamics 365 apps creates a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
   
 1. Go to **Settings** > **Email Configuration** > **Email Server Profiles**.  
   
@@ -52,7 +52,7 @@ With both [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INC
   
    ![Verify the Microsoft Exchange Online profile](../admin/media/exchange-online-profile.png "Verify the Microsoft Exchange Online profile")  
   
-    If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your Customer Engagement apps subscription.  
+    If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your Dynamics 365 apps subscription.  
   
 3. If there are multiple profiles, select the **Microsoft Exchange Online** profile and set it as default.  
   
@@ -199,7 +199,7 @@ The following table describes the permissions required to approve emails.
 <sup>2</sup> We are updating for Customer Engagement Online/Exchange Online, for Customer Engagement version 9.1.0.5805 or later.  <br />
 <sup>3</sup> We will be updating for Customer Engagement Online/Exchange On-premises. Check back for version information.
 
- To determine your version, sign in to Customer Engagement apps, and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**.  
+ To determine your version, sign in to Dynamics 365 apps, and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**.  
 
 ### Require and configure mailbox approval 
 

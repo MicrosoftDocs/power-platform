@@ -28,7 +28,7 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
   
 <a name="BKMK_PortalSignIn"></a>   
 ## Signing in to https://admin.microsoft.com  
- For admins and end users, when you sign in to https://admin.microsoft.com, you will go to the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Welcome page. The tiles that appear on the Welcome page depend on what licenses you have. For example, if you have licenses for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] and Customer Engagement apps, you'll see tiles for [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] apps like [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)], [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)], and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], as well as a tile for [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+ For admins and end users, when you sign in to https://admin.microsoft.com, you will go to the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Welcome page. The tiles that appear on the Welcome page depend on what licenses you have. For example, if you have licenses for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] and Dynamics 365 apps, you'll see tiles for [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] apps like [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)], [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)], and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], as well as a tile for [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
   
  ![Office 365 welcome page](../admin/media/office-365-welcome-page.png "Office 365 welcome page")  
   
@@ -68,7 +68,7 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
   
     For Germany (DEU), use the following: https://port.crm.microsoftdynamics.de/g/instances.instancepicker.aspx.  
   
-2. Sign in with your Customer Engagement apps admin credentials.  
+2. Sign in with your Dynamics 365 apps admin credentials.  
   
 <a name="BKMK_DirectHomePage"></a>   
 ## Direct sign in to the Dynamics 365 apps home page  
@@ -78,7 +78,7 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
   
 <a name="BKMK_directsignin"></a>   
 ## Direct sign in to Dynamics 365 apps  
- To directly sign in to the Customer Engagement apps service, use:  
+ To directly sign in to the Dynamics 365 apps service, use:  
   
  https://\<organization>.crm.dynamics.com  
   

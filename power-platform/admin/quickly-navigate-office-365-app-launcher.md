@@ -21,7 +21,7 @@ search.app:
 
 [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] introduces a new app model for [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] apps and makes accessing these and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps fast and easy.  
   
- If you're a Customer Engagement apps user with an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription, you're just two clicks away from accessing the family of online apps that are available to you, like [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] and Excel Online.  
+ If you're a Dynamics 365 apps user with an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription, you're just two clicks away from accessing the family of online apps that are available to you, like [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] and Excel Online.  
   
  [Watch a short video (3:35) about the Dynamics 365 apps business apps](https://go.microsoft.com/fwlink/p/?linkid=837700).  
   
@@ -33,7 +33,7 @@ search.app:
   
  ![Office 365 app launcher](../admin/media/new-office-365-app-launcher.png "Office 365 app launcher")  
   
- Check your email.  Create  a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] doc. Get files from your [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)].  All while staying just two clicks away from getting back to Customer Engagement apps.  
+ Check your email.  Create  a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] doc. Get files from your [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)].  All while staying just two clicks away from getting back to Dynamics 365 apps.  
   
 > [!NOTE]
 > **TIP**: If you've just started a trial or upgraded to [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)], you might need to refresh or open a new browser session to see your apps. There might be a delay for your instance to fully provision.  
