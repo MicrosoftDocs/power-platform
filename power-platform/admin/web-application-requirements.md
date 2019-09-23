@@ -33,7 +33,7 @@ search.app:
 
  **Network requirements**  
 
- [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps is designed to work best over networks that have the following elements:  
+ [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps are designed to work best over networks that have the following elements:  
 
 -   Bandwidth greater than 50 KBps (400 kbps)  
 

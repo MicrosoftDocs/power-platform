@@ -284,9 +284,9 @@ A default security role is automatically assigned to these imported users. The *
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 
 
-## Manage users in Microsoft Dynamics 365 (on-premises)
+## Manage users in Microsoft Customer Engagement (on-premises)
 
-With Microsoft Dynamics 365 (on-premises), you can add users to your organization one at a time, or add multiple users at the same time by using the **Add Users** wizard.
+With Microsoft Customer Engagement (on-premises), you can add users to your organization one at a time, or add multiple users at the same time by using the **Add Users** wizard.
 
 ### Add a user
 
@@ -384,7 +384,7 @@ After you create users, you must assign security roles for them to use Microsoft
 
 ### Update a user record to reflect changes in Active Directory
 
-When you create a new user or update an existing user in Microsoft Dynamics 365 (on-premises), some fields in the Dynamics 365 user records, such as the name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created in Dynamics 365, there is no further synchronization between Active Directory user accounts and Dynamics 365 user records. If you make changes to the Active Directory user account, you must manually edit the Dynamics 365 user record to reflect the changes.
+When you create a new user or update an existing user in Microsoft Customer Engagement (on-premises), some fields in the Dynamics 365 user records, such as the name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created in Dynamics 365, there is no further synchronization between Active Directory user accounts and Dynamics 365 user records. If you make changes to the Active Directory user account, you must manually edit the Dynamics 365 user record to reflect the changes.
 
 1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
 

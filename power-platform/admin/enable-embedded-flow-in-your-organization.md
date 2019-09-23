@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Microsoft Flow lets you create automated processes between your favorite apps and services. The ability to run flows from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps makes it simple for users to combine a broad spectrum of services that can be initiated from within [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, such as messaging, social engagement, and document routing services.  
+Microsoft Flow lets you create automated processes between your favorite apps and services. The ability to run flows from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps make it simple for users to combine a broad spectrum of services that can be initiated from within [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, such as messaging, social engagement, and document routing services.  
 
 ![Lead record with Flow integration](media/flow-integration.png)
 

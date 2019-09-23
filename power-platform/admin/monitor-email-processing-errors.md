@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps generates alerts if errors occur while email is being processed. An error can be classified based on the nature of the error and on whether the error is for an email, a mailbox, or an email server profile.  
+[!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps generate alerts if errors occur while email is being processed. An error can be classified based on the nature of the error and on whether the error is for an email, a mailbox, or an email server profile.  
 
  The following table lists the distinction between permanent and transient errors.  
 
