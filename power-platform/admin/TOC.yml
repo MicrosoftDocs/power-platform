@@ -171,9 +171,9 @@
             href: download-template-data-import.md
           - name: Cascading transaction processing
             href: async-cascading.md
-        - name: System Settings Dialog Box Reference
+        - name: System Settings
           items: 
-          - name: Overview (System Settings)
+          - name: Overview
             href: system-settings-dialog.md
           - name: General tab
             href: system-settings-dialog-box-general-tab.md
