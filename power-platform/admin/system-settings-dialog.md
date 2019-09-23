@@ -25,4 +25,4 @@ Use the **System Settings** dialog box to specify system-level settings for your
 >
 > Also, we are moving some settings from Dynamics 365 apps and the Dynamics 365 Admin center to the Power Platform Admin center. See [Environment settings are moving](../admin/admin-settings.md#environment-settings-are-moving).
 
-Help for the **System Settings** dialog box for Dynamics 365 Customer Engagement (on-premises) users is available here: [System Settings dialog box](/dynamics365/customer-engagement/on-premises/admin/system-settings-dialog-box-general-tab)
+Help for the **System Settings** dialog box for Customer Engagement (on-premises) users is available here: [System Settings dialog box](/dynamics365/customer-engagement/on-premises/admin/system-settings-dialog-box-general-tab)

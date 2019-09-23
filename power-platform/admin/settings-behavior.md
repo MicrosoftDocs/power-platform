@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use Behavior settings to adjust how Dynamics 365 apps appears and functions.
+Use Behavior settings to adjust how Dynamics 365 apps appear and functions.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Behavior**.
 
