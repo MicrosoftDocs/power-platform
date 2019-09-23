@@ -44,7 +44,7 @@ Server-side synchronization is the preferred option for organizations with users
   
 3. **Support for [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)].** You can track incoming email with the new [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)]. [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] works with [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] on the web. So all you need is a browser to track incoming email.  
   
-## Features available with server-side synchronization in both Microsoft Dynamics 365 apps and Microsoft Dynamics 365 apps (on-premises)
+## Features available with server-side synchronization in both Microsoft Dynamics 365 apps and Customer Engagement (on-premises)
  Some features offered by server-side synchronization include the following:  
   
 - **Efficient resource utilization.** server-side synchronization provides integrated mailbox management. You can disable inactive mailboxes that have permanent errors. It prevents resource hogging by applying an upper limit on the allocated capacity and time-out requests.  

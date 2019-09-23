@@ -27,7 +27,7 @@ You can use security enhancements to better secure the [!INCLUDE[pn_CRM_Online](
 The maximum user session timeout of 24 hours is removed.  This means that a user is not forced to login with their credentials to use the Dynamics 365 apps and other Microsoft service apps like Outlook that were opened in the same browser session every 24 hours. 
 
 ### Honor Azure AD session policy 
-By default, the Dynamics 365 apps leverage the Azure Active Directory (Azure AD) [session policy](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout.  Dynamics 365 apps uses the Azure AD ID Token with a Policy Check Interval (PCI) claims.  Every hour a new Azure AD ID Token is fetched silently in the background and the Azure AD instant policy is enforced (by Azure AD). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Azure AD session policy is enforced. 
+By default, the Dynamics 365 apps leverage the Azure Active Directory (Azure AD) [session policy](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout.  Dynamics 365 apps use the Azure AD ID Token with a Policy Check Interval (PCI) claims.  Every hour a new Azure AD ID Token is fetched silently in the background and the Azure AD instant policy is enforced (by Azure AD). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Azure AD session policy is enforced. 
 
 This Azure AD ID token refresh cycle continues in the background based on the Azure AD token lifetime policy configurations.  Users continue to access the Dynamics 365 for Customer Engagement/Common Data Service data without the needs to re-authenticate until the Azure AD token lifetime policy expires. 
 
@@ -72,7 +72,7 @@ For environments that require different session timeout values, administrators c
 
 ## Inactivity timeout
 
-By default, [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps does not enforce an inactivity session timeout.  A user can remain logged in the application until the session timeout expires.  You can change this behavior.
+By default, [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps do not enforce an inactivity session timeout.  A user can remain logged in the application until the session timeout expires.  You can change this behavior.
 
 - To enforce users to automatically signed out after a pre-determined period of inactivity, admins can set an inactivity timeout period for each of their [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instances. The application signs out the user when the inactivity session expires.
 
@@ -99,7 +99,7 @@ The [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps portal has its 
 
 ## Access management
 
-[!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps uses Azure Active Directory as the identity provider.  To secure the user’s access to [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, the following were implemented:
+[!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps use Azure Active Directory as the identity provider.  To secure the user’s access to [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, the following were implemented:
 
 - To enforce users to re-authenticate, users are required to sign in with their credentials after they signed out within the application. 
 - To prevent users from sharing credentials to access [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, the user access token is validated to ensure that the user who was given access by the identity provider is the same user who is accessing [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.

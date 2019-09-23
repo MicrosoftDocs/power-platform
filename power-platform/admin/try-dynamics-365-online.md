@@ -174,7 +174,7 @@ The user should:
    > [!NOTE]
    > This page shows the number of users available to join the organization. Only five users can join a trial organization and a maximum of five trial organizations can be added to the same tenant.
 
-10. Choose the Customer Engagement apps to include in the trial organization, and then select **Continue**.
+10. Choose the Dynamics 365 apps to include in the trial organization, and then select **Continue**.
 
     > [!div class="mx-imgBorder"] 
     > ![](media/trial-select-apps.png "Select apps")

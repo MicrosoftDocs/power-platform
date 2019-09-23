@@ -23,7 +23,7 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
   
  When you turn on [!INCLUDE[pn_microsoft_onenote](../includes/pn-microsoft-onenote.md)] integration in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, you have the benefits of using [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] to take or review customer notes from within your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records.  
   
- You can configure [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in Customer Engagement apps when you're also using [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)]. You must have a subscription to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] to use [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in Customer Engagement apps.  
+ You can configure [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in Dynamics 365 apps when you're also using [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)]. You must have a subscription to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] to use [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in Dynamics 365 apps.  
   
 <a name="BKMK_EnableSharePointInt"></a>   
 ## Step 1: Turn on server-based SharePoint integration  

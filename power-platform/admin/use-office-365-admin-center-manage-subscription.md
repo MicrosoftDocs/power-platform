@@ -19,18 +19,18 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps takes advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
+[The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
   
  ![Microsoft 365 admin center](../admin/media/o365-admin-center.png "Microsoft 365 admin center")  
   
- Review the information in this topic to learn how to do common Customer Engagement apps administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
+ Review the information in this topic to learn how to do common Dynamics 365 apps administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
 > [!NOTE]
 >  You must have the Global admin role to fully access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
 <a name="BKMK_AppLauncher"></a>   
 ## Open Dynamics 365 apps and other services with the app launcher  
- You can open Customer Engagement apps and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Office 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher)  
+ You can open Dynamics 365 apps and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Office 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher)  
   
  ![Office 365 app launcher](../admin/media/admin-center-app-launcher.png "Office 365 app launcher")  
   
@@ -46,14 +46,14 @@ search.app:
   
  ![Dynamics 365 Administration Center Instances tab](../admin/media/crm-admin-center-instances.png "Dynamics 365 Administration Center Instances tab")  
   
- Choose the **Updates** tab to approve and schedule updates, change the update target version, and open Customer Engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps updates](/dynamics365/customer-engagement/admin/manage-updates.md)  
+ Choose the **Updates** tab to approve and schedule updates, change the update target version, and open Dynamics 365 apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps updates](/dynamics365/customer-engagement/admin/manage-updates.md)  
   
  ![Dynamics 365 Administration Center - Updates tab](../admin/media/crm-admin-center-updates.png "Dynamics 365 Administration Center - Updates tab")  
   
 <a name="BKMK_ServiceHealth"></a>   
 
 ## Check your service health  
- You can quickly get real-time status of your Customer Engagement apps and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services. The Service health page on the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] provides a comprehensive view of the service health of your online services. If users are having trouble signing in to Customer Engagement apps, check this page to see if there is a service outage.  
+ You can quickly get real-time status of your Dynamics 365 apps and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services. The Service health page on the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] provides a comprehensive view of the service health of your online services. If users are having trouble signing in to Dynamics 365 apps, check this page to see if there is a service outage.  
   
 For more information, see [Check your service health](use-office-365-admin-center-manage-subscription.md#check-your-service-health).
   
@@ -69,21 +69,21 @@ For more information, see [Check your service health](use-office-365-admin-cente
 <a name="BKMK_ServiceRequest"></a>   
 
 ## Request support  
- Having a problem with your Customer Engagement apps service? You can create a support request to get the issue resolved.  
+ Having a problem with your Dynamics 365 apps service? You can create a support request to get the issue resolved.  
   
 More information: [Contact Technical Support](get-help-support.md)
 
 <a name="BKMK_ManageUsers"></a>   
 
 ## Manage users  
- Each user signs in to Customer Engagement apps with an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID (more precisely, an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID, see the following Note). Access to Customer Engagement apps is controlled through the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID.  
+ Each user signs in to Dynamics 365 apps with an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID (more precisely, an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID, see the following Note). Access to Dynamics 365 apps is controlled through the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID.  
   
- You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to add, edit, and delete Customer Engagement apps users and to reset passwords.  
+ You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to add, edit, and delete Dynamics 365 apps users and to reset passwords.  
   
  ![Microsoft 365 admin center active users](../admin/media/o365-admin-center-manage-users.png "Microsoft 365 admin center active users")  
   
 > [!NOTE]
-> Customer Engagement apps uses [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) as its identity provider. You access Customer Engagement apps through an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID that is created and managed in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. For simplicity, we’ll refer to the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID as the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID in this documentation.  
+> Dynamics 365 apps uses [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) as its identity provider. You access Dynamics 365 apps through an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID that is created and managed in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. For simplicity, we’ll refer to the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID as the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID in this documentation.  
   
  If your company uses on-premises [!INCLUDE[pn_Active_Directory](../includes/pn-active-directory.md)] for user identity, you have options that can simplify user management such as providing a single sign-on experience for your users. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage user account synchronization](../admin/manage-user-account-synchronization.md)  
   

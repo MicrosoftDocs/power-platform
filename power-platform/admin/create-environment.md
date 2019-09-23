@@ -57,7 +57,7 @@ Every environment can have zero or one Common Data Service database, which provi
 You have multiple options when creating an environment:
 
 1. [Create an environment with a Common Data Service database](#create-an-environment-with-a-database)
-2. [Create an environment with Customer Engagement apps](#create-an-environment-with-customer-engagement-apps)
+2. [Create an environment with Dynamics 365 apps](#create-an-environment-with-customer-engagement-apps)
 3. [Create an environment without a Common Data Service database](#create-an-environment-without-a-database)
 
 ## Create an environment with a database
@@ -100,8 +100,8 @@ To create an environment with a database, you need 1GB available database capaci
    > [!div class="mx-imgBorder"] 
    > ![](./media/new-environment-page2.png "Create new environment settings")
 
-## Create an environment with Customer Engagement apps
-When you create an environment with a database, you can add Customer Engagement apps such as Sales and Field Service.
+## Create an environment with Dynamics 365 apps
+When you create an environment with a database, you can add Dynamics 365 apps such as Sales and Field Service.
 
 > [!NOTE]
 > Currently, apps can only be enabled for Production environments. You can create trials at [https://trials.dynamics.com](https://trials.dynamics.com/).

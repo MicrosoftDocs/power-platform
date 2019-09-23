@@ -81,7 +81,7 @@ Planned maintenance includes updates and changes to the Customer Engagement serv
 - Hardware or infrastructure updates  
 - Integrated services, such as a new version of [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] or [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]  
 - Customer Engagement service changes and software updates  
-- Minor service updates to Customer Engagement apps that occur several times per year. See [Service updates](https://support.microsoft.com/help/2925359/microsoft-dynamics-crm-online-releases).  
+- Minor service updates to Dynamics 365 apps that occur several times per year. See [Service updates](https://support.microsoft.com/help/2925359/microsoft-dynamics-crm-online-releases).  
  
 ### Maintenance timeline
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
@@ -139,10 +139,10 @@ When this happens, your organization receives an “Unplanned Maintenance” ema
 ## Minor Service incidents  
 A service incident occurs when your organization is inaccessible or you’re unable to use the service or one of its components. Examples include:  
   
-- Page not found or 404 error when trying to access Customer Engagement apps
+- Page not found or 404 error when trying to access Dynamics 365 apps
 - Unable to sign into your organization
-- Slow performance for Customer Engagement apps
-- Any Customer Engagement apps are unavailable or produce errors when accessing
+- Slow performance for Dynamics 365 apps
+- Any Dynamics 365 apps are unavailable or produce errors when accessing
   
 ### Major service incidents  
 A major service incident occurs when multiple organizations can’t access the service, there is significant degradation, or Microsoft Azure is experiencing degraded functionality. 

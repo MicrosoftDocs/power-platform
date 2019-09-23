@@ -40,7 +40,7 @@ search.app:
 ## Requirements  
  The following are required to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps:  
   
-- Customer Engagement apps  
+- Dynamics 365 apps  
   
 - [!INCLUDE[cc_feature_requires_office_365](../includes/cc-feature-requires-office-365.md)]  
   
@@ -75,7 +75,7 @@ search.app:
    Once installation of the solution has completed, you can configure [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)].  
   
 > [!NOTE]
->  When you install a solution, your Customer Engagement apps site is taken offline in maintenance mode for a short time. We recommend you install the solution when it’s least disruptive to users.  
+>  When you install a solution, your Dynamics 365 apps site is taken offline in maintenance mode for a short time. We recommend you install the solution when it’s least disruptive to users.  
   
 <a name="BKMK_privileges"></a>   
 ## Check required privileges  
@@ -94,9 +94,9 @@ search.app:
 <a name="BKMK_ConfigureOfficeGroups"></a>   
 
 ## Configure Office 365 Groups  
- Once you provision [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)], you can enable them for any entity. Security group membership is associated with the entity. You configure [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] in Customer Engagement apps.  
+ Once you provision [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)], you can enable them for any entity. Security group membership is associated with the entity. You configure [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] in Dynamics 365 apps.  
   
-1. In Customer Engagement apps, click **Settings** > **Office 365 Groups**.  
+1. In Dynamics 365 apps, click **Settings** > **Office 365 Groups**.  
   
 2. On the **Office 365 Groups Settings** page, click ![Add properties button](../admin/media/add-properties-button.png "Add properties button")**Add entity** and choose an entity from the drop-down list. Repeat this step for each entity you want to enable, including custom entities.  
   
@@ -110,7 +110,7 @@ search.app:
   
 <a name="BKMK_Connectors"></a>   
 ## Use the Office 365 Connectors for Groups  
- Use the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Connectors for Groups to connect new or existing [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] with Customer Engagement apps so the group is notified when new activities are posted. To set it up, follow these steps:  
+ Use the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Connectors for Groups to connect new or existing [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] with Dynamics 365 apps so the group is notified when new activities are posted. To set it up, follow these steps:  
   
 > [!TIP]
 >  Check out the following Dynamics 365 apps Blog: [Dynamics CRM Online connector for Office 365 Groups](http://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)  
@@ -152,7 +152,7 @@ search.app:
   
 <a name="BKMK_KnownIssues"></a>   
 ## Known issues  
- You need to have Customer Engagement apps version [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)] or later, to install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. If [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] appears as an available solution in the [!INCLUDE[pn_crm_online_admin_center](../includes/pn-crm-online-admin-center.md)], but you receive the following error when trying to install: "Solution install failed. Please try again later. If the problem persists, contact customer support," you’ll need to update your instance of Customer Engagement apps before you can install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)].  
+ You need to have Dynamics 365 apps version [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)] or later, to install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. If [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] appears as an available solution in the [!INCLUDE[pn_crm_online_admin_center](../includes/pn-crm-online-admin-center.md)], but you receive the following error when trying to install: "Solution install failed. Please try again later. If the problem persists, contact customer support," you’ll need to update your instance of Dynamics 365 apps before you can install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)].  
   
 ## Privacy notice  
  When a user leverages the Office 365 Groups for Dynamics 365 apps feature to connect an Office Group to Microsoft Dynamics 365 apps, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized Dynamics 365 apps users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  

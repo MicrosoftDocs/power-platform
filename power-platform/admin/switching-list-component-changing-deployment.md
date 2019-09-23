@@ -83,7 +83,3 @@ If the **Enable Server-Based SharePoint Integration** icon doesn't appear in the
 ### See also
 [Set up SharePoint integration with Microsoft Dynamics 365 for Customer Engagement](../admin/set-up-sharepoint-integration.md) 
   
-<!-- 
-[Configure server-based authentication with Microsoft Dynamics 365 apps (on-premises) and SharePoint Online](Configure%20server-based%20authentication%20with%20Microsoft%20Dynamics%20365%20\(on-premises\)%20and%20SharePoint%20Online.md)   
- [Configure server-based authentication with Microsoft Dynamics 365 apps (on-premises) and SharePoint on-premises](Configure%20server-based%20authentication%20with%20Microsoft%20Dynamics%20365%20\(on-premises\)%20and%20SharePoint%20on-premises.md)   
---> 
