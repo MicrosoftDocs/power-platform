@@ -36,7 +36,7 @@ Use the settings on this page to configure system-level settings for the sales a
 
    OR
 
-   If you are using the Sales Hub App, select the Site map icon ![Site map icon](../sales-enterprise/media/site-map-icon.png "Site map icon"), then select ellipsis ![Ellipsis to open more options](../sales-enterprise/media/ellipsis-more-options.png "Ellipsis to open more options") , then select **App Settings**, and then select **Product Catalog Settings**.
+   If you are using the Sales Hub App, select the Site map icon ![Site map icon](/dynamics365/customer-engagement/sales-enterprise/media/site-map-icon.png "Site map icon"), then select ellipsis ![Ellipsis to open more options](/dynamics365/customer-engagement/sales-enterprise/media/ellipsis-more-options.png "Ellipsis to open more options") , then select **App Settings**, and then select **Product Catalog Settings**.
 
   
   |                                            Settings                                             |                                                                                                                                                                                             Description                                                                                                                                                                                              |
@@ -67,9 +67,9 @@ Use the settings on this page to configure system-level settings for the sales a
 
   
 ### See also  
- [Set up a product catalog: Walkthrough](../sales-enterprise/set-up-product-catalog-walkthrough.md)   
- [Create price lists and price list items to define pricing of products](../sales-enterprise/create-price-lists-price-list-items-define-pricing-products.md)   
- [Set up a discount list](../sales-enterprise/set-up-discount-list.md)   
- [Create product bundles to sell multiple items together](../sales-enterprise/create-product-bundles-sell-multiple-items-together.md)   
- [Use properties to describe a product](../sales-enterprise/use-properties-describe-product.md)  
- [Administrator and Sales Manager Guide](../sales-enterprise/admin-guide.md)  
+ [Set up a product catalog: Walkthrough](/dynamics365/customer-engagement/sales-enterprise/set-up-product-catalog-walkthrough.md)   
+ [Create price lists and price list items to define pricing of products](/dynamics365/customer-engagement/sales-enterprise/create-price-lists-price-list-items-define-pricing-products.md)   
+ [Set up a discount list](/dynamics365/customer-engagement/sales-enterprise/set-up-discount-list.md)   
+ [Create product bundles to sell multiple items together](/dynamics365/customer-engagement/sales-enterprise/create-product-bundles-sell-multiple-items-together.md)   
+ [Use properties to describe a product](/dynamics365/customer-engagement/sales-enterprise/use-properties-describe-product.md)  
+ [Administrator and Sales Manager Guide](/dynamics365/customer-engagement/sales-enterprise/admin-guide.md)  
