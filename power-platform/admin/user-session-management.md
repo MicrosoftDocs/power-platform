@@ -72,7 +72,7 @@ For environments that require different session timeout values, administrators c
 
 ## Inactivity timeout
 
-By default, [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps does not enforce an inactivity session timeout.  A user can remain logged in the application until the session timeout expires.  You can change this behavior.
+By default, [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps do not enforce an inactivity session timeout.  A user can remain logged in the application until the session timeout expires.  You can change this behavior.
 
 - To enforce users to automatically signed out after a pre-determined period of inactivity, admins can set an inactivity timeout period for each of their [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instances. The application signs out the user when the inactivity session expires.
 
@@ -99,7 +99,7 @@ The [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps portal has its 
 
 ## Access management
 
-[!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps uses Azure Active Directory as the identity provider.  To secure the user’s access to [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, the following were implemented:
+[!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps use Azure Active Directory as the identity provider.  To secure the user’s access to [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, the following were implemented:
 
 - To enforce users to re-authenticate, users are required to sign in with their credentials after they signed out within the application. 
 - To prevent users from sharing credentials to access [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, the user access token is validated to ensure that the user who was given access by the identity provider is the same user who is accessing [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.

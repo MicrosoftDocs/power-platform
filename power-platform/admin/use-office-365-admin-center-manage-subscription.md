@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps takes advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
+[The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
   
  ![Microsoft 365 admin center](../admin/media/o365-admin-center.png "Microsoft 365 admin center")  
   

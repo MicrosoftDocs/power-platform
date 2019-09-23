@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
 ---
 # Add Office 365 Online services
-Integrating [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] with [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps is a great way to enhance your customer relationship management with the power of cloud services: easier maintenance, broader availability, and better coordination across multiple devices.  
+Integrating [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] with [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps are a great way to enhance your customer relationship management with the power of cloud services: easier maintenance, broader availability, and better coordination across multiple devices.  
   
  ![Office 365 Services](../admin/media/office365services.png "Office 365 Services")  
   
