@@ -36,13 +36,13 @@ The type of team you choose depends on the goals, nature of the project, and eve
 ### When to use owner or group teams 
 
 - Your organization’s policies require the ability for records to be owned by entities other than users, such as the team entity. 
-- The number of teams is known at the design time of your Dynamics 365 for Customer Engagement apps system. 
+- The number of teams is known at the design time of your Dynamics 365 apps system. 
 - Daily reporting on progress by owning teams is required. 
 
 ### When to use access teams 
 
 - The teams are dynamically formed and dissolved. This typically happens if clear criteria for defining the teams, such as established territory, product, or volume are not provided. 
-- The number of teams is not known at the design time of your Dynamics 365 for Customer Engagement apps system. 
+- The number of teams is not known at the design time of your Dynamics 365 apps system. 
 - The team members require different access rights on the records. You can share a record with several access teams, each team providing different access rights on the record. For example, one team is granted the Read access right on the account and another team, the Read, Write, and Share access rights on the same account. 
 - A unique set of users requires access to a single record without having ownership of the record. 
 

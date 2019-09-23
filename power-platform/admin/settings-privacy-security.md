@@ -1,30 +1,25 @@
 ---
-title: "Manage privacy and security settings | MicrosoftDocs"
+title: "Manage privacy and security settings   | MicrosoftDocs"
 description: View and manage privacy and security settings for Common Data Service.
-ms.custom: ""
-ms.date: 11/15/2018
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 11/15/2018
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Manage privacy and security settings
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use these settings to adjust Dynamics 365 for Customer Engagement apps privacy and security.
+Use these settings to adjust Dynamics 365 apps privacy and security.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Privacy + Security**.
 

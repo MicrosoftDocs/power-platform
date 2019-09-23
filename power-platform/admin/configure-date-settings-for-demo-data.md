@@ -25,7 +25,7 @@ Use the information below to automatically keep your demo environment data curre
 
 Download the Configuration Migration Tool. The Configuration Migration tool is available as a [NuGet package](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To download the tool, see [Download tools from NuGet](/dynamics365/customer-engagement/developer/download-tools-nuget.md). Follow the steps on this page to extract the **DataMigrationUtility.exe** tool. 
 
-You can set the values of datetime fields to automatically move forward by a specified duration. This allows you to keep your demo data recent without the need to make manual updates. It will also work when using Configuration Migration Utility files with the Dynamics 365 for Customer Engagement apps Package Deployer tool. 
+You can set the values of datetime fields to automatically move forward by a specified duration. This allows you to keep your demo data recent without the need to make manual updates. It will also work when using Configuration Migration Utility files with the Dynamics 365 apps Package Deployer tool. 
 
 > [!NOTE]
 > This option is to keep data recent in your demo environments. It is not intended for production use. 

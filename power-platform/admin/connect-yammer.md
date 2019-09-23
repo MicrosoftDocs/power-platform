@@ -39,7 +39,7 @@ search.app:
   
 - Meet [browser and system requirements](https://support.office.com/article/Yammer-admin-guide-a9c206d4-fb18-4250-bec6-e783b926e4f6).  
   
-### Connect Dynamics 365 for Customer Engagement apps to Yammer  
+### Connect Dynamics 365 apps to Yammer  
   
 1. Sign up for a [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] Enterprise account, and note the name of the network you receive. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Visit the Yammer website](http://go.microsoft.com/fwlink/p/?LinkID=272440)  
   
@@ -70,7 +70,7 @@ search.app:
   
 4. If desired, select which record types trigger automatic posts to the [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] newsfeed.  
   
-## Enable Dynamics 365 for Customer Engagement apps entities for Yammer  
+## Enable Dynamics 365 apps entities for Yammer  
  Once you’ve connected [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], you need to specify which [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps entities are enabled for use with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]. Enabled entities can be followed by users  
   
 1. [!INCLUDE[proc_settings_system](../includes/proc-settings-system.md)]  
@@ -88,7 +88,7 @@ search.app:
 
 ## Additional considerations  
   
-### When connecting Dynamics 365 for Customer Engagement apps with a federated Yammer  
+### When connecting Dynamics 365 apps with a federated Yammer  
  If you have configured [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] to use single sign-on, you’ll need to generate and use a temporary password to connect [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)].  
   
 1. Sign in to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] with the single sign-on credentials.  

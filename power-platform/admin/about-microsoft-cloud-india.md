@@ -28,7 +28,7 @@ search.app:
 ### What is the benefit to customers?  
  The new local [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] enables data residency for customers in India, bringing enterprise-grade reliability and performance to regulated industries and other businesses. This includes data replication in multiple regions within India for business continuity, reduced network distance, and the option of a private connection to the cloud with [!INCLUDE[pn_azure_expressroute](../includes/pn-azure-expressroute.md)]. The [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] in India comes with the same deep commitment to high availability as our other regions, including a financially backed service level agreement of 99.9%.  
   
- For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], data residency means that most customer data will be kept within India, except for [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] data. For the definition of customer data and details on our data flow maps in Geo, see the [Microsoft Dynamics 365 for Customer Engagement apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
+ For [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)], data residency means that most customer data will be kept within India, except for [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] data. For the definition of customer data and details on our data flow maps in Geo, see the [Microsoft Dynamics 365 apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
   
 ### Where are the Microsoft Cloud India regions?  
  The [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] India Geo will consist of datacenters in Central India (Pune) and South India (Chennai).  
@@ -51,7 +51,7 @@ search.app:
   
  Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo instances](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md).  
   
-### Will the standard Dynamics 365 for Customer Engagement apps Online service level agreements be offered?  
+### Will the standard Dynamics 365 apps service level agreements be offered?  
  Yes, the standard [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] service level agreements (SLAs) will apply to the India regions, just as they do in our other regions around the world.  
   
 > [!NOTE]
@@ -63,11 +63,11 @@ search.app:
 ### What is the customer experience if I use both Dynamics CRM Online from the India regions while using Microsoft Dynamics Marketing, Microsoft Social Engagement, and Parature from other regions?  
  The customer experience will be unchanged, the workloads for the other services will simply be provisioned from other regions.  
   
-### When will ExpressRoute be available in India for Dynamics 365 for Customer Engagement apps Online customers, and through which partners?  
+### When will ExpressRoute be available in India for Dynamics 365 apps customers, and through which partners?  
  [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] is currently available in India. [View a current list of ExpressRoute locations and partners](https://azure.microsoft.com/documentation/articles/expressroute-locations/). [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is currently working to enable customers to use [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] with [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] from the India regions.  
   
 ### Where can I find more about Microsoft Dynamics 365 apps security, data privacy, and compliance?  
- You can find more information at the  [Microsoft Dynamics 365 for Customer Engagement apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
+ You can find more information at the  [Microsoft Dynamics 365 apps Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
   
 ### Where can I find out more about the physical infrastructure for Dynamics 365 apps?  
  These services are hosted in the Microsoft cloud infrastructure comprising more than 100 globally distributed datacenters, edge computing nodes, and service operations centers. This infrastructure is supported by one of the world’s largest multi-terabit global networks, with an extensive dark fiber footprint that connects them all.  

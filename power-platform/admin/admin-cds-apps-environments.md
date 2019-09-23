@@ -1,23 +1,18 @@
 ---
 title: "Administer Common Data Service environments | MicrosoftDocs"
-description:
-ms.custom: ""
-ms.date: 08/08/2018
-ms.reviewer: ""
-ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 63
-author: "jimholtz"
-ms.author: "jimholtz"
+description: Administer Common Data Service environments
+author: jimholtz
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/08/2018
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Administer Common Data Service environments 

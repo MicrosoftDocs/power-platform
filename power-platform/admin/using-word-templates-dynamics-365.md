@@ -54,7 +54,7 @@ search.app:
 
 - **From a list of records**. For example, go to **Sales** > **Client_Accounts** > **My Active Accounts**. Select a single account, and then click **More** (**…**) > **Word Templates** > **Create Word Template**.  
 
-  ![Create a Word template from a Dynamics 365 for Customer Engagement apps entity](../admin/media/word-template-create-from-entity.png "Create a Word template from a Dynamics 365 for Customer Engagement apps entity")  
+  ![Create a Word template from a Dynamics 365 apps entity](../admin/media/word-template-create-from-entity.png "Create a Word template from a Dynamics 365 apps entity")  
 
 > [!TIP]
 >  To delete personal document templates, do the following:  
@@ -130,7 +130,7 @@ search.app:
 
 1. You use the XML Mapping Pane to add [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps entity fields to your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Be sure to only add fields as **Plain Text** or **Picture**.  
 
-   ![Insert the Dynamics 365 for Customer Engagement apps field as Plain Text](../admin/media/word-template-insertfield-plain-text.png "Insert the Dynamics 365 for Customer Engagement apps field as Plain Text")  
+   ![Insert the Dynamics 365 apps field as Plain Text](../admin/media/word-template-insertfield-plain-text.png "Insert the Dynamics 365 apps field as Plain Text")  
 
 #### Do not make any textual changes to the added content control  
 
@@ -171,18 +171,18 @@ search.app:
 
 2. Select the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps XML schema. It will begin with “urn:microsoft-crm/document-template/”.  
 
-   ![Select the Dynamics 365 for Customer Engagement apps XML schema](../admin/media/word-template-select-xml-schema.png "Select the Dynamics 365 for Customer Engagement apps XML schema")  
+   ![Select the Dynamics 365 apps XML schema](../admin/media/word-template-select-xml-schema.png "Select the Dynamics 365 apps XML schema")  
 
    > [!IMPORTANT]
    >  If you have frequent accidental edits that cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze or have performance degradation, be sure to turn off the AutoCorrect options according to the section: “A known issue and how to avoid it”.  
 
 3. Expand the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps entity, right-click the entity field, and then click **Insert Content Control** > **Plain Text**.  
 
-   ![Insert the Dynamics 365 for Customer Engagement apps field as Plain Text](../admin/media/word-template-insertfield-plain-text.png "Insert the Dynamics 365 for Customer Engagement apps field as Plain Text")  
+   ![Insert the Dynamics 365 apps field as Plain Text](../admin/media/word-template-insertfield-plain-text.png "Insert the Dynamics 365 apps field as Plain Text")  
 
    The [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps entity field is added to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 
-   ![The Dynamics 365 for Customer Engagement apps field is inserted into the Word template](../admin/media/word-template-insert-field.png "The Dynamics 365 for Customer Engagement apps field is inserted into the Word template")  
+   ![The Dynamics 365 apps field is inserted into the Word template](../admin/media/word-template-insert-field.png "The Dynamics 365 apps field is inserted into the Word template")  
 
    Add additional entity fields, add descriptive labels and text, and format the document.  
 
@@ -210,14 +210,14 @@ search.app:
 
 <a name="BKMK_Upload"></a>  
 
-## Step 4: Upload the Word template back into Dynamics 365 for Customer Engagement apps 
+## Step 4: Upload the Word template back into Dynamics 365 apps 
 When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template built the way you want, save it so you can upload it into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
 
  Access to the newly created Word template depends on how you uploaded it and to the access granted to the security role. Be sure to check out [Use Security Roles to control access to templates](../admin/using-word-templates-dynamics-365.md#BKMK_SecurityRoles).  
 
  [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrators can use the Settings page to upload the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. A template uploaded in Settings is available to all users in your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization.  
 
-### For admins: Upload the Word template into Dynamics 365 for Customer Engagement apps 
+### For admins: Upload the Word template into Dynamics 365 apps 
 
 1. In [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, go to **Settings** > **Templates** > **Document Templates**.  
 
@@ -231,7 +231,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
    Non-admin users can upload a template for their own use from a list of records.  
 
-### For non-admins or admins wanting to create a personal template: Upload the Word template into Dynamics 365 for Customer Engagement apps 
+### For non-admins or admins wanting to create a personal template: Upload the Word template into Dynamics 365 apps 
 
 1. In [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, open a page with a list of records, for example, the list of customer accounts in Sales.  
 

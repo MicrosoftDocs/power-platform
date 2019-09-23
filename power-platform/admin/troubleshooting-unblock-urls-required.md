@@ -32,7 +32,7 @@ You can unblock these URLs on your computer by adding them to a list of approved
 > [!IMPORTANT]
 >  If the following procedure doesn’t unblock the URLs required for [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, ask your system administrator to unblock the URLs on the organization’s network.  
    
-### Unblock Dynamics 365 for Customer Engagement apps URLs in Internet Explorer  
+### Unblock Dynamics 365 apps URLs in Internet Explorer  
   
 1.  On the Explorer bar, click or tap the **Tools** icon (the white gear shape), and then click or tap **Internet options**.  
   

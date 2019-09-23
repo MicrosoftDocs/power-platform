@@ -40,7 +40,7 @@ Some user profile information is maintained and managed in the [!INCLUDE [pn-off
 
 The following table shows the fields that are managed in the **Users** section of the [!INCLUDE [pn-office-365-admin-center](../includes/pn-office-365-admin-center.md)].
 
-|Dynamics 365 for Customer Engagement apps user form  |Office 365 / Azure Active Directory user  |
+|Dynamics 365 apps user form  |Office 365 / Azure Active Directory user  |
 |---------|---------|
 |User Name     |Username         |
 |Full Name     |First name + Last name         |
@@ -206,7 +206,7 @@ By default all licensed users are created with an access mode of **Read-Write**.
 ## Create an Administrative user account
 An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the customer engagement functionality.  It is used to allow customers to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, etc).  Since the administrative user does not have access to customer data and any of the customer engagement functionalities, it does not require a Dynamics 365 apps license (after setup).
 
-You need to have the System Administrator security role or equivalent permissions in Dynamics 365 for Customer Engagement apps to create an administrative user. First, you’ll create a user account in Office 365 and then in Dynamics 365 apps, select the **Administrative** access mode for the account.
+You need to have the System Administrator security role or equivalent permissions in Dynamics 365 apps to create an administrative user. First, you’ll create a user account in Office 365 and then in Dynamics 365 apps, select the **Administrative** access mode for the account.
 
 > [!NOTE]
 > See [Create an administrative user and prevent elevation of security role privilege](https://docs.microsoft.com/dynamics365/customer-engagement/admin/prevent-elevation-security-role-privilege) for an example of how an Administrative user account can be used.
@@ -243,9 +243,9 @@ You need to have the System Administrator security role or equivalent permission
 12. Uncheck the Dynamics 365 apps license box(es),  and then select **Save changes**.
 
 ## Create a non-interactive user account  
- The non-interactive user is not a ‘user’ in the typical sense – it is not a person but an access mode that is created with a user account. It is used for programmatic access to and from Dynamics 365 for Customer Engagement apps between applications. A non-interactive user account lets these applications or tools, such as a Dynamics 365 for Customer Engagement apps to ERP connector, authenticate and access Dynamics 365 apps, without requiring a Dynamics 365 apps license. For each environment of Dynamics 365 apps, you can create up to seven non-interactive user accounts.  
+ The non-interactive user is not a ‘user’ in the typical sense – it is not a person but an access mode that is created with a user account. It is used for programmatic access to and from Dynamics 365 apps between applications. A non-interactive user account lets these applications or tools, such as a Dynamics 365 apps to ERP connector, authenticate and access Dynamics 365 apps, without requiring a Dynamics 365 apps license. For each environment of Dynamics 365 apps, you can create up to seven non-interactive user accounts.  
   
- You need to have the System Administrator security role or equivalent permissions in Dynamics 365 for Customer Engagement apps to create a non-interactive user. First, you’ll create a user account in Office 365 and then in Dynamics 365 apps, select the non-interactive access mode for the account.  
+ You need to have the System Administrator security role or equivalent permissions in Dynamics 365 apps to create a non-interactive user. First, you’ll create a user account in Office 365 and then in Dynamics 365 apps, select the non-interactive access mode for the account.  
   
 1. [Create a user account](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles#BKMK_create_users) in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   

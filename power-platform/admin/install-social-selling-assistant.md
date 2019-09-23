@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Set up the Social Selling Assistant  and onboard your users in just a few minutes. First, a [!INCLUDE[pn_ms_dyn_365](../includes/pn-ms-dyn-365.md)] admin needs to install the Social Selling Assistant in Dynamics 365 for Customer Engagement apps and connect it with [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]. Then, a [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] admin refines the configuration in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] to enable the best possible experience when users are working with the Social Selling Assistant.  
+Set up the Social Selling Assistant  and onboard your users in just a few minutes. First, a [!INCLUDE[pn_ms_dyn_365](../includes/pn-ms-dyn-365.md)] admin needs to install the Social Selling Assistant in Dynamics 365 apps and connect it with [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]. Then, a [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] admin refines the configuration in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] to enable the best possible experience when users are working with the Social Selling Assistant.  
   
 <a name="prerequisites"></a>   
 ## Prerequisites  

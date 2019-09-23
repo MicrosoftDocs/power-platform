@@ -23,7 +23,7 @@ search.app:
   
  If you're a Customer Engagement apps user with an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription, you're just two clicks away from accessing the family of online apps that are available to you, like [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] and Excel Online.  
   
- [Watch a short video (3:35) about the Dynamics 365 for Customer Engagement apps business apps](https://go.microsoft.com/fwlink/p/?linkid=837700).  
+ [Watch a short video (3:35) about the Dynamics 365 apps business apps](https://go.microsoft.com/fwlink/p/?linkid=837700).  
   
 <a name="BKMK_AppLauncher"></a>   
 ## For admins and end users: Quickly move between apps with the new Office 365 app launcher  
@@ -51,14 +51,14 @@ search.app:
  ![Microsoft 365 admin center in Dynamics 365 for Customer Engagement](../admin/media/office-365-admin-center.png "Microsoft 365 admin center in Dynamics 365 for Customer Engagement")  
   
 <a name="BKMK_IntroD365HomePage"></a>   
-## For admins and end users: Introducing the Dynamics 365 for Customer Engagement apps home page  
+## For admins and end users: Introducing the Dynamics 365 apps home page  
  If you've transitioned to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)], we have a new page for you to manage and open [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] apps. Click <strong>[!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)]</strong>from the app launcher, to go to the [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page ([home.dynamics.com](http://home.dynamics.com)).  
   
- ![Dynamics 365 for Customer Engagement apps tile on the Office 365 app launcher](../admin/media/select-dynamics-365-app-launcher.png "Dynamics 365 for Customer Engagement apps tile on the Office 365 app launcher")  
+ ![Dynamics 365 apps tile on the Office 365 app launcher](../admin/media/select-dynamics-365-app-launcher.png "Dynamics 365 apps tile on the Office 365 app launcher")  
   
  The new [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page.  
   
- ![Dynamics 365 for Customer Engagement apps home page](../admin/media/dynamics-365-home-page.png "Dynamics 365 for Customer Engagement apps home page")  
+ ![Dynamics 365 apps home page](../admin/media/dynamics-365-home-page.png "Dynamics 365 apps home page")  
   
 > [!NOTE]
 >  The [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page is not part of the [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscription. Clicking [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] takes [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] users to your instance of [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] or to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
@@ -102,7 +102,7 @@ search.app:
   
    The app will appear at the top of the home page and in the task pane.  
   
-   ![Dynamics 365 for Customer Engagement apps pinned to the home page](../admin/media/dynamics-365-app-pinned-onhome-page.png "Dynamics 365 for Customer Engagement apps pinned to the home page")  
+   ![Dynamics 365 apps pinned to the home page](../admin/media/dynamics-365-app-pinned-onhome-page.png "Dynamics 365 apps pinned to the home page")  
   
    Pinned in the home page.  
   
@@ -114,18 +114,18 @@ search.app:
 ### Search your apps 
  If you have a lot of apps, you can search for specific ones.  
   
- ![Search for Dynamics 365 for Customer Engagement apps](../admin/media/search-dynamics-365-apps.png "Search for Dynamics 365 for Customer Engagement apps")  
+ ![Search for Dynamics 365 apps](../admin/media/search-dynamics-365-apps.png "Search for Dynamics 365 apps")  
   
 <a name="BKMK_Dyn365AppSwitcher"></a>   
-## For admins and end users: Select a Dynamics 365 for Customer Engagement apps from the new app switcher  
+## For admins and end users: Select a Dynamics 365 apps from the new app switcher  
  For customers who have upgraded to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)] or later, you can use the app switcher in [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] to quickly select other [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] apps for which you're licensed.  
   
- ![Dynamics 365 for Customer Engagement apps switcher](../admin/media/useapp-switchergoother-dynamics-365-apps.png "Dynamics 365 for Customer Engagement apps switcher")  
+ ![Dynamics 365 apps switcher](../admin/media/useapp-switchergoother-dynamics-365-apps.png "Dynamics 365 apps switcher")  
   
  You can pin apps using the ellipses on this menu, which will pin to the menu and to the home page.  
   
 ### See also  
- [Blog: Meet the all new Dynamics 365 for Customer Engagement apps Home page](https://dynamics365.wordpress.com/tag/dynamics-365-home-page/)   
+ [Blog: Meet the all new Dynamics 365 apps Home page](https://dynamics365.wordpress.com/tag/dynamics-365-home-page/)   
  [Sign in to Dynamics and Office 365 apps](../admin/sign-in-office-365-apps.md)
  [My Apps on Home.Dynamics.com ](https://blogs.msdn.microsoft.com/crm/2017/03/30/my-apps-on-home-dynamics-com/)  
  [Meet the Office 365 app launcher](https://support.office.com/article/Meet-the-Office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a)   

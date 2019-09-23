@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Starting October 2019, to help ensure service levels, availability and quality, there are limits to the number of requests users can make across Dynamics 365 for Customer Engagement apps, PowerApps, and Microsoft Flow. These limits are based on various parameters like the number of requests, throughput, and concurrency, and
+Starting October 2019, to help ensure service levels, availability and quality, there are limits to the number of requests users can make across Dynamics 365 apps, PowerApps, and Microsoft Flow. These limits are based on various parameters like the number of requests, throughput, and concurrency, and
 help prevent users running applications that could interfere with each other based on resource constraints.
 
 This document will describe the common requests limits as well as the allocation which a user gets based on the type of license assigned to the user.
@@ -80,7 +80,7 @@ Apart from the new daily API request limit, there are other service protections 
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for Dynamics 365 for Customer Engagement apps, PowerApps, and Microsoft Flow connecting to Common Data Service/Dynamics 365
+- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for Dynamics 365 apps, PowerApps, and Microsoft Flow connecting to Common Data Service/Dynamics 365
 - [Microsoft Flow limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Microsoft Flow
 - [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Microsoft Flow and PowerApps
 

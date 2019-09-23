@@ -57,7 +57,7 @@ The following operations can be audited:
 System administrators and customizers can start or stop auditing for an organization.  
   
 > [!IMPORTANT]
->  For Dynamics 365 for Customer Engagement apps (on-premises), you may notice that auditing can significantly increase the size of the organization database over time. You can delete audit logs by going to **Settings** > **Auditing** > **Audit Log Management**. Additionally, you may want to stop auditing for maintenance purposes. Stopping auditing stops tracking for the organization during the period until auditing is started again. When you start auditing again, the same auditing selection is maintained that was previously used.  
+>  For Dynamics 365 apps (on-premises), you may notice that auditing can significantly increase the size of the organization database over time. You can delete audit logs by going to **Settings** > **Auditing** > **Audit Log Management**. Additionally, you may want to stop auditing for maintenance purposes. Stopping auditing stops tracking for the organization during the period until auditing is started again. When you start auditing again, the same auditing selection is maintained that was previously used.  
   
 <a name="BKMK_startAudit"></a>   
 ## Start or stop auditing for an organization  

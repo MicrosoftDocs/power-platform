@@ -44,7 +44,7 @@ If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint
 
 - User interface that is consistent with the newly-updated [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps user interface.  
 
-- Users can create and view folders when using document management within Dynamics 365 for Customer Engagement apps.
+- Users can create and view folders when using document management within Dynamics 365 apps.
 
 - To configure and use document management, you do not need to be signed in to both [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
 

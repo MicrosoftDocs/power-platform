@@ -1,20 +1,19 @@
 ---
 title: "Activity logging for PowerApps | MicrosoftDocs"
-description:
-ms.custom: ""
-ms.date: 12/14/2018
-ms.reviewer: ""
+description: Activity logging for PowerApps 
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 12/14/2018
+ms.author: jimholtz 
+search.audienceType: 
+  - admin
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
 ---
 # Activity logging for PowerApps
 
@@ -24,7 +23,7 @@ PowerApps activities are now tracked from the [Office 365 Security & Compliance 
 
 ![Audit log search](media/audit-log-search-menu.png "Audit log search")
 
-Within the **Audit log search** screen, tenant administrators can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, Dynamics 365 for Customer Engagement apps, and now Microsoft PowerApps.
+Within the **Audit log search** screen, tenant administrators can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, Dynamics 365 apps, and now Microsoft PowerApps.
 
 Once the Audit log search screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown. By scrolling down the list, a section dedicated to Microsoft PowerApps activities can be found. 
 

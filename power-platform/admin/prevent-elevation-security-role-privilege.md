@@ -60,7 +60,7 @@ The following steps describe a method to create a new custom security role with 
 5. Choose **OK**.
 
 > [!NOTE]
-> Dynamics 365 for Customer Engagement apps is designed to prevent any elevation of security role privileges. Therefore, the administrative user **cannot** assign System Administrator, System Customizer, or any security roles that have a higher privilege.
+> Dynamics 365 apps is designed to prevent any elevation of security role privileges. Therefore, the administrative user **cannot** assign System Administrator, System Customizer, or any security roles that have a higher privilege.
 
 ### See also
 [Global and Service administrators can administer without a license](global-service-administrators-can-administer-without-license.md)

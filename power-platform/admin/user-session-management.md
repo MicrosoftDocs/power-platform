@@ -24,10 +24,10 @@ You can use security enhancements to better secure the [!INCLUDE[pn_CRM_Online](
 ## User session timeout management
 
 
-The maximum user session timeout of 24 hours is removed.  This means that a user is not forced to login with their credentials to use the Dynamics 365 for Customer Engagement apps and other Microsoft service apps like Outlook that were opened in the same browser session every 24 hours. 
+The maximum user session timeout of 24 hours is removed.  This means that a user is not forced to login with their credentials to use the Dynamics 365 apps and other Microsoft service apps like Outlook that were opened in the same browser session every 24 hours. 
 
 ### Honor Azure AD session policy 
-By default, the Dynamics 365 for Customer Engagement apps leverage the Azure Active Directory (Azure AD) [session policy](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout.  Dynamics 365 for Customer Engagement apps uses the Azure AD ID Token with a Policy Check Interval (PCI) claims.  Every hour a new Azure AD ID Token is fetched silently in the background and the Azure AD instant policy is enforced (by Azure AD). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Azure AD session policy is enforced. 
+By default, the Dynamics 365 apps leverage the Azure Active Directory (Azure AD) [session policy](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes) to manage the user session timeout.  Dynamics 365 apps uses the Azure AD ID Token with a Policy Check Interval (PCI) claims.  Every hour a new Azure AD ID Token is fetched silently in the background and the Azure AD instant policy is enforced (by Azure AD). For example, if an administrator disables or deletes a user account, blocks the user from signing in, and an administrator or user revokes the refresh token, the Azure AD session policy is enforced. 
 
 This Azure AD ID token refresh cycle continues in the background based on the Azure AD token lifetime policy configurations.  Users continue to access the Dynamics 365 for Customer Engagement/Common Data Service data without the needs to re-authenticate until the Azure AD token lifetime policy expires. 
 

@@ -41,7 +41,7 @@ The [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps service team re
   
 <a name="BKMK_SendEmailNotifications"></a>   
 ## Send email notifications to multiple recipients  
- By default, Dynamics 365 for Customer Engagement apps admins will receive update notifications. You can add others to receive update notifications.  
+ By default, Dynamics 365 apps admins will receive update notifications. You can add others to receive update notifications.  
   
 1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
   

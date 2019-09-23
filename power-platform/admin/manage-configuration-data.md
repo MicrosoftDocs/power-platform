@@ -36,7 +36,7 @@ The Configuration Migration tool enables you to move configuration data across [
 
 - Automatically move DateTime fields forward at import for demo environments.
   
-- Embed the exported modules created from this tool (schema and data files) in other programs. For example, you can use the exported data in Dynamics 365 for Customer Engagement apps Package Deployer along with other solutions files and data to create and deploy packages on a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy packages using Dynamics 365 for Customer Engagement apps Package Deployer and Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md)  
+- Embed the exported modules created from this tool (schema and data files) in other programs. For example, you can use the exported data in Dynamics 365 apps Package Deployer along with other solutions files and data to create and deploy packages on a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy packages using Dynamics 365 apps Package Deployer and Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md)  
   
 > [!IMPORTANT]
 > The Configuration Migration tool does not support filtering of records in an entity. By default, all the records in the selected entity will be exported.  

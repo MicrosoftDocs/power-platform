@@ -1,24 +1,18 @@
 ---
-title: "Get Help + Support | MicrosoftDocs"
+title: "Get Help + Support   | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 for Customer Engagement to get resolution for your issue.
-ms.custom: ""
-ms.date: 05/28/2019
-ms.reviewer: ""
-ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-author: "jimholtz"
-ms.assetid: a852882d-8672-4ade-87d5-dc0262c45fa9
-caps.latest.revision: 63
-ms.author: "jimholtz"
+author: jimholtz
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 05/28/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Get Help + Support 

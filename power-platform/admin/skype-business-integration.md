@@ -22,7 +22,7 @@ search.app:
 If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] (formerly known as [!INCLUDE[pn_Microsoft_Lync](../includes/pn-microsoft-lync.md)]) or [!INCLUDE[pn_skype](../includes/pn-skype.md)], you can take advantage of connectivity features like click-to-call or checking user availability from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
   
 <a name="BKMK_UseLync"></a>   
-## Using Skype for Business with Dynamics 365 for Customer Engagement apps 
+## Using Skype for Business with Dynamics 365 apps 
 
  When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps together, you can use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)]) presence and click-to-call from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
   
@@ -46,7 +46,7 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
   
 - For [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] presence, [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps users must have `https://*.dynamics.com` added to their web browsers trusted sites list in Internet options in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)].  
   
-### Supported devices and web browsers when you use Skype for Business with Microsoft Dynamics 365 for Customer Engagement apps 
+### Supported devices and web browsers when you use Skype for Business with Microsoft Dynamics 365 apps 
   
 |                             Mobile app or web browser                             | Skype for Business click-to-call | Skype for Business presence |
 |-----------------------------------------------------------------------------------|----------------------------------|-----------------------------|
@@ -60,7 +60,7 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
   
 <a name="BKMK_UseSkype"></a>   
 
-## Using Skype with Dynamics 365 for Customer Engagement apps 
+## Using Skype with Dynamics 365 apps 
  When you use [!INCLUDE[pn_skype](../includes/pn-skype.md)] and [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps together, you can use [!INCLUDE[pn_skype](../includes/pn-skype.md)] click-to-call from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
   
 **Client requirements and [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps configuration**  
@@ -69,7 +69,7 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
   
 - **Skype** must be selected as the telephony provider in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. You can set this on the **General** tab at **Settings** > **Administration** > **System Settings**.  
   
-### Supported devices and web browsers when you use Skype with Dynamics 365 for Customer Engagement apps 
+### Supported devices and web browsers when you use Skype with Dynamics 365 apps 
   
 |                                                    Mobile app or web browser                                                     | Skype click-to-call |
 |----------------------------------------------------------------------------------------------------------------------------------|---------------------|

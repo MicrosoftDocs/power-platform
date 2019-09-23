@@ -1,20 +1,13 @@
 ---
-title: "Broadcast announcements to an entire organization | MicrosoftDocs"
+title: "Broadcast announcements to an entire organization  | MicrosoftDocs"
 description: View and manage behavior settings for Common Data Service.
-ms.custom: ""
-ms.date: 08/13/2019
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/13/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 

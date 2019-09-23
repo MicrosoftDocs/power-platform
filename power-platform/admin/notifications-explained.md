@@ -73,7 +73,7 @@ Power BI will display with the following yellow banner:
 Action requested notifications are sent when we detect that a configuration or a setting for your instance is causing the service to perform below expectations. The notification will include details on the situation as well as guidance on how to return performance to normal.
 
 ## Post-purchase customer lifecycle communications
-Once a customer has purchased Customer Engagement apps, we send a series of email communications to Customer Engagement administrators during the first year. These communications direct customers to a number of resources that will assist both administrators and users to successfully adopt and expand their use of Dynamics 365 for Customer Engagement apps.
+Once a customer has purchased Customer Engagement apps, we send a series of email communications to Customer Engagement administrators during the first year. These communications direct customers to a number of resources that will assist both administrators and users to successfully adopt and expand their use of Dynamics 365 apps.
 You can easily identify these communications by the dark-blue banner.
 
 ![Post-purchase email banner](../admin/media/post-purchase-banner.png "Post-purchase email banner")  

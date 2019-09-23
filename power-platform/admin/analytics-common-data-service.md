@@ -1,22 +1,18 @@
 ---
-title: "Common Data Service analytics | MicrosoftDocs"
-ms.custom: ""
-ms.date: 05/22/2019
-ms.reviewer: ""
-ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 15
-author: "jimholtz"
-ms.author: "jimholtz"
+title: "Common Data Service analytics   | MicrosoftDocs"
+description: Common Data Service analytics 
+author: jimholtz
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 05/22/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Common Data Service analytics

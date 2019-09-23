@@ -1,32 +1,22 @@
 ---
 title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
-keywords: encrypt
-ms.date: 08/16/2019
-ms.service: crm-online
-ms.custom: 
-ms.topic: article
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 47bbbe8f-7839-475d-a844-632aa33fae51
 author: Mattp123
-ms.author: matp
 manager: kvivek
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-caps.latest.revision: 4
-topic-status: Drafting
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/16/2019
+ms.author: matp 
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
-
 # Manage the encryption key
-All environments of Common Data Service and Dynamics 365 for Customer Engagement apps use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
+All environments of Common Data Service and Dynamics 365 apps use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
   
  By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don’t have to.  The manage keys feature in the Power Platform Admin Center (preview) gives administrators the ability to self-manage the database encryption key that is associated with Common Data Service and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps tenant. 
 

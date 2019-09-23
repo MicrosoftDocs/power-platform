@@ -1,27 +1,20 @@
 ---
 title: "Using the various admin centers (Power Platform) | MicrosoftDocs"
 description: The Power Platform Admin center is the new site to manage Common Data Service and other apps.
-ms.custom: ""
-ms.date: 01/28/2019
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 01/28/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
-
 # Use the various admin centers
 
 Curently, there are multiple admin centers you use to manage and monitor your environments and setting. This topic provides guidance on the basic role of each admin center.

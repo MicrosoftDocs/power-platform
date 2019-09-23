@@ -1,22 +1,13 @@
 ---
-title: "Hierarchy security | MicrosoftDocs"
+title: "Hierarchy security  | MicrosoftDocs"
 description: Learn how to use hierarchy security to control access
-ms.custom: 
-ms.date: 08/19/2019
-ms.reviewer: 
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
-ms.suite: 
-ms.tgt_pltfrm: 
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: f88f7c87-2ee2-42f3-8101-7271f6731cf9
-caps.latest.revision: 28
-author: jimholtz
-ms.author: jimholtz
-manager: kvivek
+ms.topic: conceptual
+ms.date: 08/19/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 

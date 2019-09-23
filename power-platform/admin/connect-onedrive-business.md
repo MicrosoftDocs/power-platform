@@ -43,7 +43,7 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
    **If you’re running [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] on-premises**, on the Windows Server where [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] is running, open the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Management Shell and run the following commands to set up permissions between [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] and [!INCLUDE[pn_microsoft_dynamics_crm_2016_server](../includes/pn-microsoft-dynamics-crm-2016-server.md)].  
   
 > [!NOTE]
->  You might have already set up permissions and can skip the following if you completed the steps in [Configure server-based authentication with Dynamics 365 for Customer Engagement apps Online and SharePoint on-premises](../admin/configure-server-based-authentication-sharepoint-on-premises.md).  
+>  You might have already set up permissions and can skip the following if you completed the steps in [Configure server-based authentication with Dynamics 365 apps and SharePoint on-premises](../admin/configure-server-based-authentication-sharepoint-on-premises.md).  
   
 ```  
 Add-Pssnapin *  
@@ -60,7 +60,7 @@ $wellKnownApp.Update()
   
 ```  
   
-## Controlling access to OneDrive for Business in Dynamics 365 for Customer Engagement apps 
+## Controlling access to OneDrive for Business in Dynamics 365 apps 
  You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)] in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps for end users through the **OneDrive for Business** privilege.  
   
 1. Click **Settings** > **Security** > **Security Roles**  

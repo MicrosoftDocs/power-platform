@@ -93,7 +93,7 @@ You can invite other users to access your [!INCLUDE[pn_dyn_365_online](../includ
 4. Click **Save**, and then close the Profile blade.  
   
 <a name="BKMK_AssignLicense"></a>   
-## Assign invited users a Dynamics 365 for Customer Engagement apps license and security role  
+## Assign invited users a Dynamics 365 apps license and security role  
  Assign your invited users a [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] license and security role so the user can use [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)].  
   
 1. Go  to **Azure Active Directory** > **Users and groups** > **All users**. If you don't see the newly created user, refresh the page.  

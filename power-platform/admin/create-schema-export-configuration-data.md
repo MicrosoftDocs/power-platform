@@ -61,7 +61,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
    -   If you want to remove all the items in the **Selected Fields and Entities** and start over, click **Clear Selection**.  
   
-   ![Remove a relationship in a Dynamics 365 for Customer Engagement apps schema](../admin/media/config-migration-create-schema-2.png "Remove a relationship in a Dynamics 365 for Customer Engagement apps schema")  
+   ![Remove a relationship in a Dynamics 365 apps schema](../admin/media/config-migration-create-schema-2.png "Remove a relationship in a Dynamics 365 apps schema")  
   
 9. To validate the selected data to be exported, click **Tools** > **Validate Schema**.  
   
