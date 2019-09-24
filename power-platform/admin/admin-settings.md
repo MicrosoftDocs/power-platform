@@ -1,23 +1,18 @@
 ---
-title: "Manage Common Data Service settings | MicrosoftDocs"
+title: "Manage Common Data Service settings  | MicrosoftDocs"
 description: View and manage Common Data Service settings.
-ms.custom: ""
-ms.date: 09/27/2018
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/01/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Manage Common Data Service settings
@@ -43,5 +38,24 @@ Many of these settings...
 
 ![Environment settings](media/environment-settings-mini.png)
 
-Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 for Customer Engagement apps and accessed through the app settings. 
+Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 apps and accessed through the app settings. 
+
+## Settings in Dynamics 365 apps
+
+Getting to app feature settings can vary based on the type of app you're using.
+
+### Settings in Unified Interface apps
+
+To open settings for apps that use [Unified Interface](https://docs.microsoft.com/dynamics365/customer-engagement/admin/about-unified-interface), look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/advanced-settings.png "Advanced settings")
+
+### Settings in legacy web client apps
+
+To open settings for legacy client apps, select the arrow next to the app name, and then select **Settings**. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/legacy-settings.png "Legacy settings")
+
 

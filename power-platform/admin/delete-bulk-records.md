@@ -1,21 +1,13 @@
 ---
-title: "Delete bulk records for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 08/13/2019
-ms.reviewer: 
+title: "Delete bulk records for Dynamics 365 apps  | MicrosoftDocs"
+description: Delete bulk records for Dynamics 365 apps
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
-ms.suite: 
-ms.tgt_pltfrm: 
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-author: jimholtz
-ms.assetid: 6c1edaef-d2d0-4e94-bb3d-819b208966c1
-caps.latest.revision: 15
+ms.topic: conceptual
+ms.date: 08/13/2019
 ms.author: jimholtz
-manager: kvivek
 search.audienceType: 
   - admin
 search.app: 

@@ -1,30 +1,25 @@
 ---
-title: "Manage email settings | MicrosoftDocs"
+title: "Manage email settings  | MicrosoftDocs"
 description: View and manage email settings for Common Data Service.
-ms.custom: ""
-ms.date: 08/10/2018
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/10/2018
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Manage email settings
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use Email settings to adjust how Dynamics 365 for Customer Engagement apps features appear and function.
+Use Email settings to adjust how Dynamics 365 apps features appear and function.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Email settings**.
 
@@ -40,7 +35,7 @@ Make sure you have the System Administrator or System Customizer security role o
 |**Security and permissions**| Select these check boxes if you want to allow email processing only for users and queues whose email addresses have been approved by the system administrator.|
 |Process emails only for approved users|Default: On. |
 |Process emails only for approved queues|Default: On. |
-|Sync information rights management-enabled emails to the server|Default: Not selected. Off. Select **On** to sync Customer Engagement apps emails that have information rights property.|
+|Sync information rights management-enabled emails to the server|Default: Not selected. Off. Select **On** to sync Dynamics 365 apps emails that have information rights property.|
 |Allow to delete appointments if system auto detects changes that will result in change in ownership|Default: Not selected. Off.| 
 |**Notifications**||
 |When these occur, send details to the mailbox's notifications area||

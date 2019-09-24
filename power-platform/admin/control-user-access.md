@@ -43,7 +43,7 @@ In this example, four security groups provide controlled access to a specific en
   
 - If a security group is associated with an environment, only users with Common Data Service licenses that are members of the environment security group will be created as users in the Common Data Service environment.  
   
-<!-- When you remove a security group that is associated with a Common Data Service environment, either by editing the environment and removing the security group or by deleting the security group, Common Data Service licensed users who were members of the security group will have the same access to Customer Engagement apps.  -->
+<!-- When you remove a security group that is associated with a Common Data Service environment, either by editing the environment and removing the security group or by deleting the security group, Common Data Service licensed users who were members of the security group will have the same access to Dynamics 365 apps.  -->
 
 - Removing a security group from an environment is currently not supported.
   
@@ -109,3 +109,5 @@ The security group is associated with the environment.
    > [!div class="mx-imgBorder"] 
    > ![Security group added](media/security-group-added.png "Security group added")
 
+### See also
+[Create users and assign security roles](create-users-assign-online-security-roles.md)

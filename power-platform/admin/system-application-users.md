@@ -39,7 +39,7 @@ Most of these users are hidden from user views but they can be found by using th
 - Records created/updated by this user account are audited. 
 
 **Technical details on the security?**
-- This user account cannot sign in to Customer Engagement apps.  
+- This user account cannot sign in to Dynamics 365 apps.  
 - Administrators have the option to use this user account when registering their plug-ins. 
 - This user account does not have a mailbox, so they cannot be used to send or receive emails. 
 - The details of this user account cannot be modified from the User Form interface. 

@@ -1,32 +1,27 @@
 ---
-title: "Enable offline synchronization | MicrosoftDocs"
+title: "Enable offline synchronization  | MicrosoftDocs"
 description: Enable offline synchronization for Common Data Service.
-ms.custom: ""
-ms.date: 08/10/2018
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/10/2018
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Enable offline synchronization
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Provide an enhanced offline experience for mobile users using Dynamics 365 for Customer Engagement apps. Once offline synchronization is turned on, mobile users can seamlessly work in offline mode on their mobile device when they don't have an internet connection.
+Provide an enhanced offline experience for mobile users using Dynamics 365 apps. Once offline synchronization is turned on, mobile users can seamlessly work in offline mode on their mobile device when they don't have an internet connection.
 
-This offline experience uses Azure services to periodically synchronize entities with Dynamics 365 for Customer Engagement apps so synchronized records are available when users’ mobile devices are disconnected. To enable offline synchronization, follow the steps below.
+This offline experience uses Azure services to periodically synchronize entities with Dynamics 365 apps so synchronized records are available when users’ mobile devices are disconnected. To enable offline synchronization, follow the steps below.
 
 ## Step 1: Create a profile
 

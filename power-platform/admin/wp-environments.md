@@ -1,24 +1,18 @@
 ---
-title: "About environments | MicrosoftDocs"
-description: About environments.
-ms.custom: ""
-ms.date: 08/07/2019
-ms.reviewer: ""
+title: "About environments   | MicrosoftDocs"
+description: About environments 
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/07/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # About environments
@@ -27,7 +21,7 @@ search.app:
 
 Environments are containers that administrators can use to manage apps, flows, connections, and other assets; along with permissions to allow organization users to use the resources. Environments are tied to a geographic location that is configured at the time the environment is created. Environments can be used to target different audiences and/or for different purposes such as dev, test and production. The actual number and purpose of environments in your tenant is up to you as an administrator. In the ALM section we will cover some potential scenarios to help you choose what is best for you.
 
-Common Data Service databases are created in the context of environments. Each environment, if you are licensed for Common Data Service, can have at most one database. If your organization signs up one of the Dynamics 365 Customer Engagement apps an environment with a Common Data Service database will be created to support that application.
+Common Data Service databases are created in the context of environments. Each environment, if you are licensed for Common Data Service, can have at most one database. If your organization signs up one of the Dynamics 365 Dynamics 365 apps an environment with a Common Data Service database will be created to support that application.
 
 ![Environments](media/Environments780.png "Environments")
 

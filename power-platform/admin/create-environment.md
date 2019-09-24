@@ -57,8 +57,7 @@ Every environment can have zero or one Common Data Service database, which provi
 You have multiple options when creating an environment:
 
 1. [Create an environment with a Common Data Service database](#create-an-environment-with-a-database)
-2. [Create an environment with Customer Engagement apps](#create-an-environment-with-customer-engagement-apps)
-3. [Create an environment without a Common Data Service database](#create-an-environment-without-a-database)
+2. [Create an environment without a Common Data Service database](#create-an-environment-without-a-database)
 
 ## Create an environment with a database
 You create a database to use Common Data Service as a data store. The Common Data Service is a cloud scale database used to securely store data for business applications built on PowerApps. Common Data Service provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
@@ -100,8 +99,8 @@ To create an environment with a database, you need 1GB available database capaci
    > [!div class="mx-imgBorder"] 
    > ![](./media/new-environment-page2.png "Create new environment settings")
 
-## Create an environment with Customer Engagement apps
-When you create an environment with a database, you can add Customer Engagement apps such as Sales and Field Service.
+## Create an environment with Dynamics 365 apps
+When you create an environment with a database, you can add Dynamics 365 apps such as Sales and Field Service.
 
 > [!NOTE]
 > Currently, apps can only be enabled for Production environments. You can create trials at [https://trials.dynamics.com](https://trials.dynamics.com/).

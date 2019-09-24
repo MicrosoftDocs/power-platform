@@ -1,32 +1,22 @@
 ---
 title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
-keywords: encrypt
-ms.date: 08/16/2019
-ms.service: crm-online
-ms.custom: 
-ms.topic: article
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 47bbbe8f-7839-475d-a844-632aa33fae51
 author: Mattp123
-ms.author: matp
 manager: kvivek
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-caps.latest.revision: 4
-topic-status: Drafting
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/16/2019
+ms.author: matp 
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
-
 # Manage the encryption key
-All environments of Common Data Service and Dynamics 365 for Customer Engagement apps use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
+All environments of Common Data Service and Dynamics 365 apps use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
   
  By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don’t have to.  The manage keys feature in the Power Platform Admin Center (preview) gives administrators the ability to self-manage the database encryption key that is associated with Common Data Service and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps tenant. 
 
@@ -72,7 +62,7 @@ The malicious administrator signs in to the Power Platform Admin Center (preview
 These actions will result in disabling all the environments within the tenant from online access and make all database backups un-restorable.
   
 > [!IMPORTANT]
-> To prevent the malicious administrator from interrupting the business operations by locking the database, the managed keys feature doesn't allow tenant environments to be locked for 72 hours after the encryption key has changed or activated. Additionally, anytime an encryption key is changed for a tenant, all Dynamics 365 for Customer Engagement apps (online) administrators receive an email message alerting them of the key change. This provides up to 72 hours for other administrators to roll back any unauthorized key changes. 
+> To prevent the malicious administrator from interrupting the business operations by locking the database, the managed keys feature doesn't allow tenant environments to be locked for 72 hours after the encryption key has changed or activated. Additionally, anytime an encryption key is changed for a tenant, all Dynamics 365 apps administrators receive an email message alerting them of the key change. This provides up to 72 hours for other administrators to roll back any unauthorized key changes. 
   
 <a name="KM_details"></a>   
 
@@ -262,7 +252,7 @@ To unlock an environment using the PowerShell cmdlet, see [Set-CrmUnlockTenantPr
   
 ## Encryption key change notification
 > [!IMPORTANT]
-> When an encryption key is activated or changed, all Dynamics 365 for Customer Engagement apps (online) administrators receive an email message alerting them of the change. This provides a means to allow other administrators to verify and confirm that the key was updated by an authorized administrator.  Since it takes time to activate the key and to encrypt all the environments, and to send out the email notification, an encryption key can only be updated once every 24 hours.
+> When an encryption key is activated or changed, all Dynamics 365 apps administrators receive an email message alerting them of the change. This provides a means to allow other administrators to verify and confirm that the key was updated by an authorized administrator.  Since it takes time to activate the key and to encrypt all the environments, and to send out the email notification, an encryption key can only be updated once every 24 hours.
 
 ### See also  
 [Microsoft.Xrm.OnlineManagementAPI PowerShell reference](/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) <br />

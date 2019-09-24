@@ -86,5 +86,5 @@ If you have used Field Level security, you would need to associate the user or a
 
 Security is a complex topic and is best accomplished as a joint effort between the application makers and the team administering the users permissions. Any major changes should be coordinated well in advance of deploying the changes into the environment.
 
-### Related topics
+### See also
 [Configure environment security](database-security.md)

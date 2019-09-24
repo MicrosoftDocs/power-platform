@@ -21,7 +21,8 @@ Common Data Service relies on Azure Active Directory (Azure AD) for authenticati
 
 External users from other Azure AD tenants can be added as Business Guests in your Azure AD. They can be configured to work with some limitations with model-driven apps. Business Guests are not supported currently for canvas apps and Microsoft Flow. Other external users beyond the capability of Business Guests, including Azure B2C is not currently supported.
 
-### Related topics
+### See also
 [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)<br/>
 [Security concepts in Common Data Service](wp-security-cds.md)<br/>
 [Developers: Authentication with Common Data Service web services](/powerapps/developer/common-data-service/authentication)
+[Create users and assign security roles](create-users-assign-online-security-roles.md)
