@@ -50,9 +50,9 @@ Use the settings on this page to enable preview features in model-driven apps in
 |These preview features are intended to be used for development and testing purposes only.||
 |I have read and agree to the license terms|After agreeing to the license terms, check this box to allow you to enable preview features.|
 |**Action Step Support for Business Process Flows Preview**||
-|Enable Action Step Support for Business Process Flows Preview|More information: [Business process flows overview](../customize/business-process-flows-overview.md)|
+|Enable Action Step Support for Business Process Flows Preview|More information: [Business process flows overview](/dynamics365/customer-engagement/customize/business-process-flows-overview.md)|
 |**Organization Insights Preview**||
-|Enable Organization Insights Preview|More information: [Preview feature: Use the Organization Insights dashboard to view metrics about your instance](use-organization-insights-dashboard-view-instance-metrics.md)|
+|Enable Organization Insights Preview|More information: [Preview feature: Use the Organization Insights dashboard to view metrics about your instance](/dynamics365/customer-engagement/admin/use-organization-insights-dashboard-view-instance-metrics.md)|
 |**Text Analytics Preview for Case Topic analysis, Suggest Similar Cases and Suggest Knowledge Articles**||
 |Enable the Dynamics 365 for Dynamics 365 apps Text Analytics Preview|More information: [Public Preview: Topic analysis](https://technet.microsoft.com/library/mt752501.aspx)|
 |**Sales Insights**||

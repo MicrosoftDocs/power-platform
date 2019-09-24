@@ -47,4 +47,4 @@ Use the settings on this page to configure calendar settings for model-driven ap
 | Maximum duration of an appointment in days | [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps users can create appointments to meet or talk to customers. Users create these appointments on the Service Calendar or in the Activities area.<br /><br /> You can use this setting to control the maximum number of days that your users can schedule an appointment for. The default is 10 days. |
   
 ### See also  
- [Create or edit an appointment](../basics/create-edit-appointment.md)
+ [Create or edit an appointment](/dynamics365/customer-engagement/basics/create-edit-appointment.md)

@@ -37,7 +37,7 @@ Set the duration and frequency of the automatic rollup of goals. These settings 
 
    OR
 
-   If you are using the Sales Hub App, select the Site map icon ![Site map icon](../sales-enterprise/media/site-map-icon.png "Site map icon"), then select ellipsis ![Ellipsis to open more options](../sales-enterprise/media/ellipsis-more-options.png "Ellipsis to open more options") , then select **App Settings**, and then select **Goals Settings**.
+   If you are using the Sales Hub App, select the Site map icon ![Site map icon](/dynamics365/customer-engagement/sales-enterprise/media/site-map-icon.png "Site map icon"), then select ellipsis ![Ellipsis to open more options](/dynamics365/customer-engagement/sales-enterprise/media/ellipsis-more-options.png "Ellipsis to open more options") , then select **App Settings**, and then select **Goals Settings**.
   
   
 |                            Settings                            |                                                                                  Description                                                                                   |
@@ -47,5 +47,5 @@ Set the duration and frequency of the automatic rollup of goals. These settings 
 |                  Roll-up recurrence frequency                  |                                                      Default: 24 hours. Set the number of hours between each goal rollup.                                                      |
   
 ### See also  
- [Administrator and Sales Manager Guide](../sales-enterprise/admin-guide.md)  
- [Progress Against Goals report](../basics/sales-insights-reports.md#BKMK_ProgressGoals)
+ [Administrator and Sales Manager Guide](/dynamics365/customer-engagement/sales-enterprise/admin-guide.md)  
+ [Progress Against Goals report](/dynamics365/customer-engagement/basics/sales-insights-reports.md#BKMK_ProgressGoals)
