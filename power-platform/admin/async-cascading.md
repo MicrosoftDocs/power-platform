@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2019
+ms.date: 09/06/2019
 ms.author: matp
 search.audienceType: 
   - admin
@@ -74,10 +74,10 @@ Opening a cascading operation displays:
     > ![](media/cascade-operation-record.png "Cascade operation record")
  
 ## Which cascading transactions can be processed asynchronously?
-Assign cascading transactions can be processed asynchronously. 
+Assign and Delete cascading transactions can be processed asynchronously. 
 
 > [!NOTE]
-> Other transactions, such as delete, merge, share/unshare, rollup view, and re-parent are are currently under review for asynchronous processing. 
+> Other transactions, such as merge, share/unshare, rollup view, and re-parent are are currently under review for asynchronous processing. 
 
 ## Enable asynchronous processing of cascading transactions
 At this time, changing the processing of cascading transactions to asynchronous mode is a backend change that must be made by Microsoft. 
