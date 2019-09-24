@@ -123,6 +123,9 @@ The most common cause for the Documents associated grid not loading is the corru
     </fetch>
      ```  
 
+> [!IMPORTANT]
+>  All the attributes configured in the layout xml require their corresponding respective attributes to be present in the Fetch XML. Grid will result in error when this configuration is incorrect.  
+
 14. Save the file.
 15. Zip the folder.
 16. Open Dynamics 365 for Customer Engagement.
