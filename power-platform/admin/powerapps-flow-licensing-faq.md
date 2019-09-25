@@ -185,31 +185,31 @@ PowerApps Portals can be provisioned without requiring a specific license. User 
     <th>Comments</th>
   </tr>
   <tr>
-    <td rowspan="3">External user<br>(authenticated)</td>
-    <td rowspan="3">Per log in</td>
-    <td colspan="2">PowerApps portals<br>login capacity add-on</td>
-    <td>100 logins</td>
+    <td rowspan="3">External user (authenticated)</td>
+    <td rowspan="3">Per sign-in</td>
+    <td colspan="2">PowerApps portals sign-in capacity add-on</td>
+    <td>100 sign-ins</td>
     <td>$200</td>
     <td>All</td>
-    <td rowspan="3">- A login provides the authenticated user with<br>access to a single portal for up to 24 hours<br>- Multiple logins during the 24-hour period<br>count as one billable login</td>
+    <td rowspan="3">- A sign-in provides the authenticated user with access to a single portal for up to 24 hours- Multiple sign-ins during the 24-hour period count as one billable sign-in</td>
   </tr>
   <tr>
-    <td colspan="2">PowerApps portals<br>login capacity add-on<br>Tier 2</td>
-    <td>1000 logins</td>
+    <td colspan="2">PowerApps portals sign-in capacity add-on Tier 2</td>
+    <td>1000 sign-ins</td>
     <td>$1000</td>
     <td>All</td>
   </tr>
   <tr>
-    <td colspan="2">PowerApps portals<br>login capacity add-on<br>Tier 2</td>
-    <td>5000 logins</td>
+    <td colspan="2">PowerApps portals login capacity add-on Tier 2</td>
+    <td>5000 sign-ins</td>
     <td>$3500</td>
     <td>CSP only</td>
   </tr>
   <tr>
-    <td>External user<br>(authenticated)</td>
+    <td>External user (authenticated)</td>
     <td>Per page view</td>
-    <td colspan="2">PowerApps portals<br>page view capacity<br>add-on</td>
-    <td>100,000 page<br>views</td>
+    <td colspan="2">PowerApps portals page view capacity add-on</td>
+    <td>100,000 page views</td>
     <td>$100</td>
     <td>All</td>
     <td></td>
@@ -217,11 +217,11 @@ PowerApps Portals can be provisioned without requiring a specific license. User 
   <tr>
     <td>Internal user</td>
     <td>Via license</td>
-    <td colspan="2">Dynamics 365 (various)<br>PowerApps per app plan<br>PowerApps per user plan</td>
+    <td colspan="2">Dynamics 365 (various) PowerApps per app plan PowerApps per user plan</td>
     <td>n/a</td>
     <td>n/a</td>
     <td>n/a</td>
-    <td>- Custom portal use rights are aligned with<br>custom app use rights</td>
+    <td>- Custom portal use rights are aligned with custom app use rights</td>
   </tr>
 </table>
 
