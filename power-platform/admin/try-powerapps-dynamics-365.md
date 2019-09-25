@@ -26,8 +26,6 @@ You can try PowerApps for free by signing up either for a 30 day trial or commun
 - [Sign up for Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
 - Sign up for trial while [purchasing PowerApps](signup-for-powerapps-admin)
 
-We're excited about the release of [!INCLUDE [pn-crm-9-0-0-online](../includes/pn-crm-9-0-0-online.md)] and hope you're eager to try it out. New and existing customers have different options to take a look at [!INCLUDE [pn-crm-online](../includes/pn-crm-online.md)].  
-
 ## Dynamics 365 apps trial
 
 Visit <https://trials.dynamics.com> and select the required app to sign up for a 30-day trial.
