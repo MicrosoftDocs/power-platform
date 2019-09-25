@@ -28,7 +28,7 @@ If your organization has purchased capacity add-ons, you have to allocate that c
 
 If your organization has purchased capacity add-ons, an **Add-ons** tile appears on the **Capacity** screen in the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/). Sign into the Admin center, and select **Analytics > Capacity** in the left-side navigation pane.
 
-The **Add-ons** tile shows summary information about the capacity add-ons that your organization has. 
+The **Add-ons** tile shows summary information about the capacity add-ons that your organization has.
 
 ![add-on-tile.png](media/add-on-tile.png)
 
@@ -40,12 +40,12 @@ To allocate capacity to an environment:
 
 1. Sign into the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/). 
 1. Select **Analytics > Capacity** in the left-side navigation pane.
-1. On the Capacity screen, do one of the following things to open the **Manage add-ons** screen:
+1. On the **Capacity** screen, do one of the following things to open the **Manage add-ons** screen:
     - Select **Manage** on the top-right area of the **Add-ons** tile.
-    - At the top area of the **Capacity** screen, select **Add-ons**, and then select **+Add to an environment** at the top of the screen. 
-4. Select the environment where you want to add capacity from the Environment drop-down menu, and then allocate the capacity from 
+    - At the top area of the **Capacity** screen, select **Add-ons**, and then select **+Add to an environment** at the top of the screen.
+4. Select the environment where you want to add capacity from the **Environment** drop-down menu, and then allocate from your available capacity.
 ![Manage add-ons screen](media/manage-add-ons.png)
 
 ## Permissions
 
-In order for a user to have access to allocated capacity, an administrator for your organization has to assign that user to the environment with the correct permissions. 
+In order for a user to have access to allocated capacity, an administrator for your organization has to assign that user to the environment with the correct permissions.
