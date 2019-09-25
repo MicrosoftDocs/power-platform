@@ -29,13 +29,13 @@
         href: overview-role-powerapps-admin.md
       - name: PowerApps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
-      - name: Try Dynamics 365 apps
-        href: try-dynamics-365-online.md
-      - name: Move between apps
+      - name: Try PowerApps and Dynamics 365 apps
+        href: try-powerapps-dynamics-365.md
+      - name: Move between your apps
         href: quickly-navigate-office-365-app-launcher.md
-      - name: Sign in to apps
+      - name: Sign in to your apps
         href: sign-in-office-365-apps.md
-      - name: Manage subscription with Office 365 admin center
+      - name: Manage subscription with Microsoft 365 admin center
         href: use-office-365-admin-center-manage-subscription.md
       - name: Enabling preview features
         href: what-are-preview-features-how-do-i-enable-them.md
