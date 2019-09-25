@@ -170,10 +170,6 @@ A list of add-ons applicable to all standalone PowerApps and Microsoft Flow plan
 
 PowerApps Portals can be provisioned without requiring a specific license. User access licensing is based on persona type and details are as below.
 
-![Licensing table](media/licensing-table.png)
-
-
-
 <table>
   <tr>
     <th>User type</th>
