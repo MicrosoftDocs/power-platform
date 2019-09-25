@@ -217,18 +217,13 @@ PowerApps Portals can be provisioned without requiring a specific license. User 
   <tr>
     <td>Internal user</td>
     <td>Via license</td>
-    <td colspan="2">Dynamics 365 (various) PowerApps per app plan PowerApps per user plan</td>
+    <td colspan="2">Dynamics 365 (various)<br /> PowerApps per app plan <br />PowerApps per user plan</td>
     <td>n/a</td>
     <td>n/a</td>
     <td>n/a</td>
     <td><ul><li>Custom portal use rights are aligned with custom app use rights</li></ul></td>
   </tr>
 </table>
-
-
-
-
-
 
 ### What exactly is a considered a “login” as part of the PowerApps Portals add-on?
 
