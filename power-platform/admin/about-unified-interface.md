@@ -17,10 +17,19 @@ search.app:
 ---
 # About Unified Interface for model-driven apps in PowerApps 
 
-The Unified Interface uses responsive web design principles to provide an optimal viewing and interaction experience for any screen size, device, or orientation. It brings all the rich experiences to any client that you are using. Whether you are on a browser, tablet, or phone, you will be able to consume similar experiences. More information: [Enhanced user experience with the Unified Interface for model-driven apps](https://docs.microsoft.com/powerapps/user/unified-interface) 
+The Unified Interface uses responsive web design principles to provide an optimal viewing and interaction experience for any screen size, device, or orientation. It brings all the rich experiences to any client that you are using. Whether you are on a browser, tablet, or phone, you will be able to consume similar experiences.
+
+More information: [Enhanced user experience with the Unified Interface for model-driven apps](https://docs.microsoft.com/powerapps/user/unified-interface) 
 
 ## Accessing Unified Interface apps on browsers
-Once provisioned, you can access the installed Unified Interface and web apps from multiple interfaces. On browsers you can see all the apps both Unified Interface and web: 
+
+Once provisioned, you can access the installed Unified Interface and legacy web apps on browser.
+
+> [!NOTE]
+> The legacy web client is deprecated; you should plan to convert your legacy web apps to use the new Unified Interface. More information: [Legacy web client is deprecated](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#legacy-web-client-is-deprecated)
+
+
+You can access Unified Interface apps from the following locations on a browser: 
 
 1. In [https://home.dynamics.com/](https://home.dynamics.com/):
 
@@ -30,23 +39,16 @@ Once provisioned, you can access the installed Unified Interface and web apps fr
 
    ![In app navigation](media/uci-in-app-navigation.png "In app navigation")
 
-3. In **My Apps** page under **Settings**
+3. In **My Apps** page under **Settings**:
 
    ![Unified Interface apps on My Apps page](media/uci-my-apps-page.png "Unified Interface apps on My Apps page")
 
-### Accessing Unified Interface apps on phone and tablets
-Unified interface apps are the only apps supported on phones and tablets for Dynamics 365 for Customer Engagement, version 9.0. When a user logs into the above org, they will only see the Unified Interface apps on their apps landing page. 
+## Accessing Unified Interface apps on phone and tablets
+Unified interface apps are the only apps supported on phones and tablets. When users sign into their environment, they will only see the Unified Interface apps on their apps landing page. 
 
 |  | |  |
 |---------|---------|---------|
 |On phone <br/>![Unified Interface phone app](media/uci-app-phone.png "Unified Interface phone app")     |    |On tablet <br/>![Unified Interface tablet app](media/uci-app-tablet.png "Unified Interface tablet app")    |
-
-### Creating a new Unified Interface app
-In case you have requirements to create your own experience on Unified Interface, you can create a model-driven app using the app designer. See [Overview of building model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview).
-
-![Create new Unified Interface app](media/uci-model-driven-app.png "Create new Unified Interface app")
-
-![Unified Interface custom hub](media/uci-custom-hub.png "Unified Interface custom hub")
 
 ## Capabilities not yet on Unified Interface
 
