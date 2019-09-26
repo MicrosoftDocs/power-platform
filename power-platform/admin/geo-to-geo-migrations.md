@@ -24,11 +24,11 @@ We continue to open new datacenter regions for [!INCLUDE[pn_crm_online_shortest]
 > [!IMPORTANT]
 > Support for geo migration is limited and generally not available.
 >
->  For versions prior to Customer Engagement version 9.0, you can move individual [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] instances from one geographical region to another. When you do so, your tenant becomes a multiregional tenant. Regional features are enabled in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
+>  For versions prior to Dynamics 365 apps version 9.0, you can move individual [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] instances from one geographical region to another. When you do so, your tenant becomes a multiregional tenant. Regional features are enabled in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
 > 
 >  To request a regional migration, please contact your account manager or  see [Technical Support](get-help-support.md).  
 > 
->  Customer Engagement version 9.0 does not currently support regional migration. Check back later for availability. 
+>  Dynamics 365 apps version 9.0 does not currently support regional migration. Check back later for availability. 
 
 ## Impact of migrating  
  Moving an instance to a different region changes your tenant to be multiregional - enabling regional features in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  

@@ -93,7 +93,7 @@ After modifying and enabling some of the plug-ins, the developer Sandbox environ
 1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
    > [!NOTE]
-   > Environment Admins or System Administrators can copy all available environments. Customer Engagement System administrators can copy environments for which they have the Environment Admin or System Administrator role.  
+   > Environment Admins or System Administrators can copy all available environments. Dynamics 365 apps System administrators can copy environments for which they have the Environment Admin or System Administrator role.  
   
 2. From the left-side menu, select **Environments**, and then select an environment to copy.
 
@@ -130,7 +130,7 @@ Once the copy process is complete, the target environment is placed in [Administ
 ### Next steps after copying an environment  
  To ensure the newly created copy (target) environment does not impact your Production environment, once the copy operation is complete, two things happen:  
   
-1. The newly created copy environment is placed in administration mode. Only those with System Administrator or System Customizer security roles can sign in and manage the copy environment. Regular Customer Engagement users cannot sign in and use the copy environment.  
+1. The newly created copy environment is placed in administration mode. Only those with System Administrator or System Customizer security roles can sign in and manage the copy environment. Regular Dynamics 365 apps users cannot sign in and use the copy environment.  
   
 2. Background operations are disabled in the copy environment. Disabled operations include workflows and synchronization with Microsoft Exchange.  
   

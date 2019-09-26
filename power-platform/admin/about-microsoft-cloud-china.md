@@ -50,8 +50,8 @@ For information on provisioning environments, see [Create and manage environment
 Due to certain technological dependencies, the following features listed will not be available for general availability of Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release notes](https://go.microsoft.com/fwlink/p/?linkid=2010158).
 
 - [Relevance Search]/dynamics365/customer-engagement/basics/relevance-search-results.md) or **Categorized Search** used for searching records across multiple entities will be unavailable.
-- [Office 365 Groups]/dynamics365/customer-engagement/basics/collaborate-with-colleagues-using-office-365-groups.md) feature used for shared workspace for emails, conversations, files, and events in Customer Engagement services will be unavailable.
-- [Online Management API]/dynamics365/customer-engagement/developer/online-management-api.md) (Admin API) enables customers to create and manage the Customer Engagement environments using REST API will be unavailable.
+- [Office 365 Groups]/dynamics365/customer-engagement/basics/collaborate-with-colleagues-using-office-365-groups.md) feature used for shared workspace for emails, conversations, files, and events in Dynamics 365 apps services will be unavailable.
+- [Online Management API]/dynamics365/customer-engagement/developer/online-management-api.md) (Admin API) enables customers to create and manage the Common Data Service environments using REST API will be unavailable.
 - [Company News Timeline]/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets.md) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
 - [Global Discovery Service API]/dynamics365/customer-engagement/developer/webapi/discover-url-organization-web-api.md) which programmatically enables customer applications to discover user organization (also known as instance) and find instances across regions will not be available.
 - The service health [Organization Insights](/dynamics365/customer-engagement/admin/use-organization-insights-solution-view-instance-metrics.md) feature will be unavailable.
@@ -63,7 +63,7 @@ Due to certain technological dependencies, the following features listed will no
   - [Microsoft Dynamics 365 - Gamification](https://appsource.microsoft.com/product/dynamics-365/mscrm.f6d23ec7-255c-4bd8-8c99-dc041d5cb8b3)
   - [DXC Health360 Care Coordination](https://appsource.microsoft.com/product/dynamics-365/tribridge_health360.2ca8cb47-4e93-4e1c-af86-784041b4d8a9)
 - [Voice of the Customer]/dynamics365/customer-engagement/voice-of-customer/help-hub.md) solution used for sending surveys to customers and get their valuable feedback will not be available.
-- [Live Assist for Microsoft Dynamics 365]/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x.md) Powered by [CaféX](https://www.cafex.com/products/live-assist-365/) is an integrated omnichannel solution for Customer Engagement services that will not be available.
+- [Live Assist for Microsoft Dynamics 365]/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x.md) Powered by [CaféX](https://www.cafex.com/products/live-assist-365/) is an integrated omnichannel solution for Dynamics 365 apps services that will not be available.
 - The following [Customer Service]/dynamics365/customer-engagement/customer-service/help-hub.md) features will be unavailable: 
   - Knowledge Base Search
   - Similar Cases Search

@@ -20,7 +20,7 @@ search.app:
 Dynamics 365 apps document management with SharePoint lets users manage common document types, such as Word, Excel, PowerPoint, OneNote, and create folders to save and manage those documents in Dynamics 365 apps that are seamlessly stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/sp-ce-doc-management.png "Document management in customer engagement and SharePoint")
+> ![](media/sp-ce-doc-management.png "Document management in Dynamics 365 apps and SharePoint")
 
 Depending on your environment, there are several Dynamics 365 apps and SharePoint configurations possible. 
 

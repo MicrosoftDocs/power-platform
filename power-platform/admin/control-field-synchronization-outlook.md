@@ -28,7 +28,7 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
   
 ## Set field synchronization between Dynamics 365 apps and Outlook  
   
-1. Sign in as a Customer Engagement admin. 
+1. Sign in as a Dynamics 365 apps admin. 
 
 2. In the web app, select **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
   

@@ -67,7 +67,7 @@ You can verify activation by going to **Settings** (![Settings button](media/set
 ![Opt-in status](media/preview-activate-status.png "Preview activation status")
 
 > [!NOTE]
-> You need to select **About** from a Customer Engagement app page that's displayed in the [Unified Interface](https://docs.microsoft.com/dynamics365/customer-engagement/admin/about-unified-interface) such as Sales Hub or Customer Service Hub pages.
+> You need to select **About** from a Dynamics 365 app page that's displayed in the [Unified Interface](https://docs.microsoft.com/dynamics365/customer-engagement/admin/about-unified-interface) such as Sales Hub or Customer Service Hub pages.
 >
 > The server version will not be updated to the next version after activation.
 

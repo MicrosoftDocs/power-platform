@@ -122,25 +122,25 @@ Applies to Common Data Service
 
 ### Using Azure Active Directory groups to manage a user’s app and data access 
 
-The administration of app and data access for Microsoft Dynamics 365 apps and Common Data Service has been extended to allow administrators to use their organization’s Azure Active Directory (Azure AD) groups to manage access rights for licensed Customer Engagement and Common Data Service users.
+The administration of app and data access for Microsoft Dynamics 365 apps and Common Data Service has been extended to allow administrators to use their organization’s Azure Active Directory (Azure AD) groups to manage access rights for licensed Dynamics 365 apps and Common Data Service users.
 
 Both types of Azure AD groups—Office and Security—can be used to secure user-access rights. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
-The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the Customer Engagement and Common Data Service environments and assign a security role to these group teams. When members of these group teams access these environments, their access rights are automatically granted based on the group team’s security role.
+The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the Dynamics 365 apps and Common Data Service environments and assign a security role to these group teams. When members of these group teams access these environments, their access rights are automatically granted based on the group team’s security role.
 
 #### Provision and deprovision users 
 
-Once the group team and its security role is established in an environment, user access to the environment is based on the user membership of the Azure AD groups. When a new user is created in the tenant, all the administrator needs to do is assign the user to the appropriate Azure AD group, and assign Customer Engagement and Common Data Service licenses. The user can immediately access the environment without the need to wait for the administrator to assign a security role.
+Once the group team and its security role is established in an environment, user access to the environment is based on the user membership of the Azure AD groups. When a new user is created in the tenant, all the administrator needs to do is assign the user to the appropriate Azure AD group, and assign Dynamics 365 apps and Common Data Service licenses. The user can immediately access the environment without the need to wait for the administrator to assign a security role.
 
 When users are deleted/disabled in Azure AD or removed from the Azure AD groups, they lose their group membership and won’t be able to access the environment when they try to sign in.  
 
 #### Remove user access at run time 
 
-When a user is removed from the Azure AD groups by an administrator, the user is removed from the group team, and they lose their access rights the next time they access the environment. The memberships for the user’s Azure AD groups and Customer Engagement group teams are synchronized, and the user’s access rights are dynamically derived at run time.
+When a user is removed from the Azure AD groups by an administrator, the user is removed from the group team, and they lose their access rights the next time they access the environment. The memberships for the user’s Azure AD groups and Dynamics 365 apps group teams are synchronized, and the user’s access rights are dynamically derived at run time.
 
 #### Administer user security role 
 
-Administrators no longer have to wait for the user to sync to the environment and then to assign a security role to the user individually by using Azure AD group teams. Once a group team is established and created in an environment with a security role, any licensed Customer Engagement and Common Data Service users who are added to the Azure AD group can immediately access the environment. 
+Administrators no longer have to wait for the user to sync to the environment and then to assign a security role to the user individually by using Azure AD group teams. Once a group team is established and created in an environment with a security role, any licensed Dynamics 365 apps and Common Data Service users who are added to the Azure AD group can immediately access the environment. 
 
 #### Lock down user access to environments 
 

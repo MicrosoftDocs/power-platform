@@ -204,7 +204,7 @@ By default all licensed users are created with an access mode of **Read-Write**.
 4. Select the **Save** icon
 
 ## Create an Administrative user account
-An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the customer engagement functionality.  It is used to allow customers to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, etc).  Since the administrative user does not have access to customer data and any of the customer engagement functionalities, it does not require a Dynamics 365 apps license (after setup).
+An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the  functionality.  It is used to allow customers to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, etc).  Since the administrative user does not have access to customer data and any of the Dynamics 365 apps functionalities, it does not require a Dynamics 365 apps license (after setup).
 
 You need to have the System Administrator security role or equivalent permissions in Dynamics 365 apps to create an administrative user. First, you’ll create a user account in Office 365 and then in Dynamics 365 apps, select the **Administrative** access mode for the account.
 

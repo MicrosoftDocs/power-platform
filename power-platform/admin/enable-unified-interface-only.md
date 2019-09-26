@@ -98,7 +98,7 @@ When Unified Interface Only mode is enabled, environment settings can be accesse
    > ![Advanced Settings](media/uci-advanced-settings.png "Advanced Settings")
 
 > [!NOTE]
-> You need to select Advanced Settings from a Customer Engagement app page that's displayed in the Unified Interface such as Sales Hub or Customer Service Hub pages.
+> You need to select Advanced Settings from a Dynamics 365 apps page that's displayed in the Unified Interface such as Sales Hub or Customer Service Hub pages.
 
 ## How to enable Unified Interface Only mode
 

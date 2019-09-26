@@ -20,7 +20,7 @@ search.app:
 ## Introduction
 Microsoft regularly communicates work done to maintain and update Dynamics 365 apps  to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted instance. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
   
-If you’re not sure who your Customer Engagement admin is, see [Find your Dynamics 365 apps administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
+If you’re not sure who your Dynamics 365 apps admin is, see [Find your Dynamics 365 apps administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
   
  If you want to add additional recipients who receive email communications, see [Manage email notifications to admins](manage-email-notifications.md).  
   
@@ -33,19 +33,19 @@ The Dynamics 365 apps team regularly performs security updates and minor service
 <a name="bkmk_SecurityUpdates"></a>   
 
 ### Security updates  
-The Customer Engagement team regularly performs the following to ensure the security of the system:  
+The Dynamics 365 apps team regularly performs the following to ensure the security of the system:  
   
 - Scans of the service to identify possible security vulnerabilities  
 - Assessments of the service to ensure that key security controls are operating effectively  
 - Evaluations of the service to determine exposure to any vulnerabilities identified by the Microsoft Security Response Center (MSRC), which regularly monitors external vulnerability awareness sites  
   
-The Customer Engagement team identifies and tracks any identified issues, and takes swift action to mitigate risks when necessary.  
+The Dynamics 365 apps team identifies and tracks any identified issues, and takes swift action to mitigate risks when necessary.  
   
 **How do I find out about security updates?**  
   
-Because the Customer Engagement team strives to apply risk mitigations in a way that doesn’t require service downtime, Customer Engagement administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it is considered planned maintenance, and will be posted with the estimated impact duration, and the window when the work will occur.
+Because the Dynamics 365 apps team strives to apply risk mitigations in a way that doesn’t require service downtime, Dynamics 365 apps administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it is considered planned maintenance, and will be posted with the estimated impact duration, and the window when the work will occur.
   
- For more information about Customer Engagement security, see [Dynamics 365 apps Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
+ For more information about Dynamics 365 apps security, see [Dynamics 365 apps Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
  
  <a name="bkmk_ServiceUpdates"></a>   
 
@@ -76,11 +76,11 @@ Minor service updates contain customization changes to support new features, pro
 <a name="bkmk_PlannedMaintenance"></a>
 
 ### Planned maintenance  
-Planned maintenance includes updates and changes to the Customer Engagement service to provide increased stability, reliability, and performance. These changes can include:  
+Planned maintenance includes updates and changes to the Dynamics 365 apps service to provide increased stability, reliability, and performance. These changes can include:  
   
 - Hardware or infrastructure updates  
 - Integrated services, such as a new version of [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] or [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]  
-- Customer Engagement service changes and software updates  
+- Dynamics 365 apps service changes and software updates  
 - Minor service updates to Dynamics 365 apps that occur several times per year. See [Service updates](https://support.microsoft.com/help/2925359/microsoft-dynamics-crm-online-releases).  
  
 ### Maintenance timeline
@@ -132,9 +132,9 @@ To receive communications regarding incidents, updates, or features, reach out t
 <a name="bkmk_UnplannedMaintenance"></a>  
 
 ### Unplanned maintenance  
-Customer Engagement inevitably encounters unplanned issues that require changes to ensure availability. Microsoft strives to provide as much notification as possible during these events. Because these events can’t be predicted, they are not considered planned maintenance.
+Dynamics 365 apps inevitably encounters unplanned issues that require changes to ensure availability. Microsoft strives to provide as much notification as possible during these events. Because these events can’t be predicted, they are not considered planned maintenance.
 
-When this happens, your organization receives an “Unplanned Maintenance” email. These emails go out to all Customer Engagement System Administrators in every Customer Engagement instance that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities on the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see  [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
+When this happens, your organization receives an “Unplanned Maintenance” email. These emails go out to all Dynamics 365 apps System Administrators in every Dynamics 365 apps instance that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities on the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see  [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
 
 ## Minor Service incidents  
 A service incident occurs when your organization is inaccessible or you’re unable to use the service or one of its components. Examples include:  
@@ -164,7 +164,7 @@ You can see the Service incident marked as Service restored in your Microsoft 36
 
 **Post-Incident Report**
 
-When there is a major service incident that impacts multiple customers, the Customer Engagement  team publishes a post-incident report (PIR) after 5 business days to the Microsoft 365 Service health dashboard. This report summarizes the following details about the incident: 
+When there is a major service incident that impacts multiple customers, the Dynamics 365 apps  team publishes a post-incident report (PIR) after 5 business days to the Microsoft 365 Service health dashboard. This report summarizes the following details about the incident: 
   
 - Summary  
 - User Experience  
@@ -174,12 +174,12 @@ When there is a major service incident that impacts multiple customers, the Cust
 - Next steps  
 
 ### Communications for releases, package deployments, and awareness
-The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display information specific to managing the Dynamics 365 apps service, including changes with the service and releases or feature offerings. The messaging can be informational in nature, drive specific actions, or both. The target audience for these communications are Customer Engagement System Administrators or individuals designated to run the service. 
+The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display information specific to managing the Dynamics 365 apps service, including changes with the service and releases or feature offerings. The messaging can be informational in nature, drive specific actions, or both. The target audience for these communications are Dynamics 365 apps System Administrators or individuals designated to run the service. 
  
  <a name="BKMK_PostPurchase"></a>   
 
 ### Post-purchase customer lifecycle communications  
-Once a customer has purchased Customer Engagement, we send a series of email communications to Customer Engagement administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of Customer Engagement.  This information can be found in the [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) as well.
+Once a customer has purchased Dynamics 365 apps, we send a series of email communications to Dynamics 365 apps administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of Dynamics 365 apps.  This information can be found in the [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) as well.
   
 ### Notice about Online Policies
 Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/en-us/legal/intellectualproperty/onlinedisclaimer.aspx).

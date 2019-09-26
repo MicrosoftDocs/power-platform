@@ -1,6 +1,6 @@
 ---
-title: "Connect Customer Engagement to Yammer  | MicrosoftDocs"
-description: Connect Customer Engagement to Yammer
+title: "Connect Dynamics 365 apps to Yammer  | MicrosoftDocs"
+description: Connect Dynamics 365 apps to Yammer
 author: jimholtz
 manager: kvivek
 ms.service: power-platform

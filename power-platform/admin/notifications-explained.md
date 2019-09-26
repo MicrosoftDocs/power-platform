@@ -52,7 +52,7 @@ Microsoft will send you an email when normal system services have been restored.
 ![Service restored email banner](../admin/media/service-restored-banner.png "Service restored email banner")  
  
 ## Maintenance communications 
-Planned maintenance includes updates and changes to the Customer Engagement service to provide increased stability, reliability, and performance. Planned and unplanned maintenance emails can be identified by the light-orange banner.
+Planned maintenance includes updates and changes to the Dynamics 365 apps service to provide increased stability, reliability, and performance. Planned and unplanned maintenance emails can be identified by the light-orange banner.
 
 ![Planned and unplanned maintenance banner](../admin/media/maintenance-banner.png "Planned and unplanned maintenance banner")
 
@@ -73,7 +73,7 @@ Power BI will display with the following yellow banner:
 Action requested notifications are sent when we detect that a configuration or a setting for your instance is causing the service to perform below expectations. The notification will include details on the situation as well as guidance on how to return performance to normal.
 
 ## Post-purchase customer lifecycle communications
-Once a customer has purchased Dynamics 365 apps, we send a series of email communications to Customer Engagement administrators during the first year. These communications direct customers to a number of resources that will assist both administrators and users to successfully adopt and expand their use of Dynamics 365 apps.
+Once a customer has purchased Dynamics 365 apps, we send a series of email communications to Dynamics 365 apps administrators during the first year. These communications direct customers to a number of resources that will assist both administrators and users to successfully adopt and expand their use of Dynamics 365 apps.
 You can easily identify these communications by the dark-blue banner.
 
 ![Post-purchase email banner](../admin/media/post-purchase-banner.png "Post-purchase email banner")  

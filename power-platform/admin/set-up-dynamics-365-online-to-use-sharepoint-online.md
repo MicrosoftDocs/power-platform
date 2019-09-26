@@ -148,7 +148,7 @@ For “Block Access” level, only devices that satisfy the AD trust policy defi
 
 ### Impact on Dynamics 365 apps and SharePoint Online integration
 
-When SharePoint Online is configured for “Block Access”, Customer Engagement receives a 401 UnAuthorized response from SharePoint Online for all operations triggered using server-to-server integration. This is because SharePoint Online rejects the AppAssertedUser token (the claims-based token which is used for server-to-server authentication between Customer Engagement and SharePoint Online).
+When SharePoint Online is configured for “Block Access”, Dynamics 365 apps receives a 401 UnAuthorized response from SharePoint Online for all operations triggered using server-to-server integration. This is because SharePoint Online rejects the AppAssertedUser token (the claims-based token which is used for server-to-server authentication between Dynamics 365 apps and SharePoint Online).
 
 ### Work around
 

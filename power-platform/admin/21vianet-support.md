@@ -28,7 +28,7 @@ Dynamics 365 apps provide many self-service support options and support through 
 
 Presales support telephone number: +86 400-886-6134
 
-Pre-sales support for Customer Engagement provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. Pre-sales support can be accessed using the same phone number for technical support. 
+Pre-sales support for Dynamics 365 apps provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. Pre-sales support can be accessed using the same phone number for technical support. 
 
 ## Billing and subscription management support through 21Vianet
 
@@ -45,7 +45,7 @@ Here are some examples of billing and subscription management issues:
 
 ## Assisted technical support through 21Vianet
 
-If you experience a technical issue with your Customer Engagement deployment, report it to 21Vianet through the [O365 Portal](https://portal.partner.microsoftonline.cn/) or by calling the support hotline at +86 400-089-0365. Technical support hours of operations are Monday through Friday during local business hours, 9:00 to 18:00 China Standard Time (CST).
+If you experience a technical issue with your Dynamics 365 apps deployment, report it to 21Vianet through the [O365 Portal](https://portal.partner.microsoftonline.cn/) or by calling the support hotline at +86 400-089-0365. Technical support hours of operations are Monday through Friday during local business hours, 9:00 to 18:00 China Standard Time (CST).
 
 A *service request* (SR) is handled within hours depending on the severity of its impact to your business:
 
@@ -54,7 +54,7 @@ A *service request* (SR) is handled within hours depending on the severity of it
 
 ## Get Premier support
 
-If you run mission-critical solutions on Customer Engagement, Premier support offers additional value:
+If you run mission-critical solutions on Dynamics 365 apps, Premier support offers additional value:
 
 - Proven advisory services designed to maximize your Dynamics 365 investment.
 - A designated service delivery manager committed to improving your Dynamics 365 experience.

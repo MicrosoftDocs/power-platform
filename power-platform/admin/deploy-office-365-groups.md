@@ -125,7 +125,7 @@ search.app:
   
 4. Scroll down to **Dynamics 365 Online**, and then click **Add**.  
   
-5. If you have access to more than one Customer Engagement instance, choose which instance to connect to this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group. If you only have access to one Customer Engagement instance, this step will be skipped and you will advance to the next step.  
+5. If you have access to more than one Dynamics 365 apps instance, choose which instance to connect to this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group. If you only have access to one Dynamics 365 apps instance, this step will be skipped and you will advance to the next step.  
   
 6. Choose the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps record you want to connect this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group to, and then click **Save**.  
   
