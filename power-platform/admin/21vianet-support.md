@@ -17,7 +17,7 @@ search.app:
 ---
 # Support for Dynamics 365 apps - operated by 21Vianet in China
 
-Dynamics 365 apps provides many self-service support options and support through 21Vianet in China.
+Dynamics 365 apps provide many self-service support options and support through 21Vianet in China.
 
 ## Self-help resources
 
