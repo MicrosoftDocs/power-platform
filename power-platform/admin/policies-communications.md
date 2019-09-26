@@ -18,7 +18,7 @@ search.app:
 # Policies and Communications for service incidents
 
 ## Introduction
-Microsoft regularly communicates work done to maintain and update Dynamics 365 apps  to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted instance. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
+Microsoft regularly communicates work done to maintain and update Dynamics 365 apps  to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
   
 If you’re not sure who your Dynamics 365 apps admin is, see [Find your Dynamics 365 apps administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
   
@@ -112,7 +112,7 @@ To limit the impact on users, the maintenance window is planned according to the
 The following stakeholders will be notified about upcoming maintenance when there is expected to be downtime or user impact:
 
 - Organization admins
-- Email addresses set in the Dynamics 365 Admin center notification option for each instance
+- Email addresses set in the Dynamics 365 Admin center notification option for each environment
 - Users that are assigned the System Admin user role
   
 ### During the update
@@ -134,7 +134,7 @@ To receive communications regarding incidents, updates, or features, reach out t
 ### Unplanned maintenance  
 Dynamics 365 apps inevitably encounters unplanned issues that require changes to ensure availability. Microsoft strives to provide as much notification as possible during these events. Because these events can’t be predicted, they are not considered planned maintenance.
 
-When this happens, your organization receives an “Unplanned Maintenance” email. These emails go out to all Dynamics 365 apps System Administrators in every Dynamics 365 apps instance that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities on the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see  [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
+When this happens, your organization receives an “Unplanned Maintenance” email. These emails go out to all Dynamics 365 apps System Administrators in every Dynamics 365 apps environment that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities on the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see  [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
 
 ## Minor Service incidents  
 A service incident occurs when your organization is inaccessible or you’re unable to use the service or one of its components. Examples include:  

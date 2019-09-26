@@ -35,7 +35,7 @@ This Azure AD ID token refresh cycle continues in the background based on the Az
 > - The default Azure AD refresh token expiration is 90 days.  This token lifetime properties can be configured. For detailed information, see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties).
 > - The Azure AD session policy is bypassed and the maximum user session duration is reverted back to 24 hours in the following scenarios:
 >   - In a browser session, you went to the **Dynamics 365 Administration Center** and opened an environment by manually keying in the environment URL (either on the same browser tab or a new browser tab).<br/> 
->     **To workaround** the policy bypass and maximum 24 hour user session, open the environment from the Dynamics 365 Administration Center **Instances** tab by selecting the **Open** link.
+>     **To workaround** the policy bypass and maximum 24 hour user session, open the environment from the Dynamics 365 Administration Center **environments** tab by selecting the **Open** link.
 >   - In the same browser session, open a version 9.1.0.3647 or higher environment and then open a version earlier 9.1.0.3647. <br/>
 >     **To workaround** the policy bypass and user duration change, open the second environment in a separate browser session.
 >
@@ -50,7 +50,7 @@ For environments that require different session timeout values, administrators c
 
 ### To change this behavior
 
-- To enforce users to re-authenticate after a pre-determined period of time, admins can set a session timeout for their individual [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instances.  Users can only remain signed in the application for the duration of session.  The application signs out the user when the session expires.  Users need to sign-in with their credentials to return to [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.
+- To enforce users to re-authenticate after a pre-determined period of time, admins can set a session timeout for their individual [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environments.  Users can only remain signed in the application for the duration of session.  The application signs out the user when the session expires.  Users need to sign-in with their credentials to return to [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.
 
 > [!NOTE]
 > User session timeout is not enforced in the following:
@@ -74,7 +74,7 @@ For environments that require different session timeout values, administrators c
 
 By default, [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps do not enforce an inactivity session timeout.  A user can remain logged in the application until the session timeout expires.  You can change this behavior.
 
-- To enforce users to automatically signed out after a pre-determined period of inactivity, admins can set an inactivity timeout period for each of their [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instances. The application signs out the user when the inactivity session expires.
+- To enforce users to automatically signed out after a pre-determined period of inactivity, admins can set an inactivity timeout period for each of their [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environments. The application signs out the user when the inactivity session expires.
 
 > [!NOTE]
 > Inactivity session timeout is not enforced in the following:

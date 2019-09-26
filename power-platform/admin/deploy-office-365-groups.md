@@ -64,9 +64,9 @@ search.app:
   
 2. [!INCLUDE[proc_office365_choose_admin_crm](../includes/proc-office365-choose-admin-crm.md)]  
   
-3. Click the **Instances** tab.  
+3. Click the **environments** tab.  
   
-4. Choose your instance, and then click **Solutions**.  
+4. Choose your environment, and then click **Solutions**.  
   
 5. Select **Office 365 Groups** and then click **Install**.  
   
@@ -125,7 +125,7 @@ search.app:
   
 4. Scroll down to **Dynamics 365 Online**, and then click **Add**.  
   
-5. If you have access to more than one Dynamics 365 apps instance, choose which instance to connect to this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group. If you only have access to one Dynamics 365 apps instance, this step will be skipped and you will advance to the next step.  
+5. If you have access to more than one Dynamics 365 apps environment, choose which environment to connect to this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group. If you only have access to one Dynamics 365 apps environment, this step will be skipped and you will advance to the next step.  
   
 6. Choose the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps record you want to connect this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group to, and then click **Save**.  
   
@@ -152,7 +152,7 @@ search.app:
   
 <a name="BKMK_KnownIssues"></a>   
 ## Known issues  
- You need to have Dynamics 365 apps version [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)] or later, to install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. If [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] appears as an available solution in the [!INCLUDE[pn_crm_online_admin_center](../includes/pn-crm-online-admin-center.md)], but you receive the following error when trying to install: "Solution install failed. Please try again later. If the problem persists, contact customer support," you’ll need to update your instance of Dynamics 365 apps before you can install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)].  
+ You need to have Dynamics 365 apps version [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)] or later, to install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. If [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] appears as an available solution in the [!INCLUDE[pn_crm_online_admin_center](../includes/pn-crm-online-admin-center.md)], but you receive the following error when trying to install: "Solution install failed. Please try again later. If the problem persists, contact customer support," you’ll need to update your environment of Dynamics 365 apps before you can install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)].  
   
 ## Privacy notice  
  When a user leverages the Office 365 Groups for Dynamics 365 apps feature to connect an Office Group to Microsoft Dynamics 365 apps, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized Dynamics 365 apps users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  

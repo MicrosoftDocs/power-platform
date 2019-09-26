@@ -31,7 +31,7 @@ You can enable the features coming in the April 2019 update by opting in to the 
 
 ## Which environment can be used for previewing April 2019 updates?
 
-The environments (instances) that are eligible for enabling April 2019 release are Production, Trial, and Sandbox. This will allow you the flexibility to explore the preview features, and then adopt them across your environments at a rate that suits your business.
+The environments (environments) that are eligible for enabling April 2019 release are Production, Trial, and Sandbox. This will allow you the flexibility to explore the preview features, and then adopt them across your environments at a rate that suits your business.
 
 > [!IMPORTANT]
 > We highly recommend that you create a copy of your Production environment as a Sandbox environment to try out the April 2019 updates. After enabling the April 2019 update, it can’t be turned off. Hence, it’s necessary to first test out the updates in Sandbox environment, prior to enabling it in Production environment which could impact your users in the organization.

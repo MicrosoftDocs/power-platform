@@ -83,7 +83,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some Dynam
     <td>Unified Support</td>
   </tr>
   <tr>
-    <td>Dynamics 365 on-premises (Customer Engagement, Dynamics GP)</td>
+    <td>Customer Engagement on-premises (Customer Engagement, Dynamics GP)</td>
     <td colspan="2"><a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a></td>
     <td colspan="2"><a href="https://serviceshub.microsoft.com/">Services Hub</a></td>
   </tr>
@@ -138,7 +138,7 @@ Public preview and/or beta services may be supported through our [forums](https:
 |Dynamics 365 Finance and Operations (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
 |Dynamics 365 Business Central      | Support is provided through partners only. Contact your Cloud Solution Provider (CSP) for assistance.        |
 |**Product**    |     |
-|Dynamics 365 on-premises (Customer Engagement, Dynamics GP)     |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |
+|Customer Engagement (Customer Engagement, Dynamics GP)     |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |
 
 ### Why is submitting a request online the preferred method of contacting Dynamics 365 Support? 
 
@@ -198,7 +198,7 @@ Microsoft is committed to assist you in resolving your issue as soon as possible
 
 ### I’m running a non-Microsoft technology with Dynamics 365 or a custom application built using Open Source Software (OSS). Does my plan support it? 
 
-- Microsoft offers customers the ability to run non-Microsoft technologies along with Dynamics 365. For all scenarios that are eligible for support through a Dynamics 365 Support plan, Microsoft Support will help in isolating the issue between the Dynamics 365 instance and your custom application.
+- Microsoft offers customers the ability to run non-Microsoft technologies along with Dynamics 365. For all scenarios that are eligible for support through a Dynamics 365 Support plan, Microsoft Support will help in isolating the issue between the Dynamics 365 environment and your custom application.
 - Full technical support will be provided if the issue is determined to be caused by a Dynamics 365 service or platform. Commercially reasonable support will be provided to all other scenarios. When an adequate solution to your issue is not achieved, you might be referred to other support channels that are available for the non-Microsoft software.
 
 ### How do I get support during an outage or Service Interruption Event (SIE)? 

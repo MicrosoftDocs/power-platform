@@ -82,7 +82,7 @@ We also covered import, but let’s look at a few more things to consider.
 
 - Always evaluate what is already in the target environment.
 - Create any necessary custom connectors prior to import
-- If you are importing a Common Data Service solution that is dependent on other Common Data Service solutions make sure those are already imported into the Common Data Service instance
+- If you are importing a Common Data Service solution that is dependent on other Common Data Service solutions make sure those are already imported into the Common Data Service environment
 - If you import an unmanaged Common Data Service solution make sure you publish all after import has completed
 - Remember when you import an update to a PowerApps canvas application you must publish the new version before others will see it
 - If you are importing Common Data Service changes that remove any entities and data, consider a proactive on demand backup prior to the import.
@@ -101,7 +101,7 @@ Shown earlier, the import feature allows the maker to update an existing app in 
 Once your application has been deployed you can mostly go into maintenance mode responding to user inquires as needed. Here are a few things to consider while you are between updates.
 
 - PowerApps canvas applications need to be periodically republished for best performance and stability. About every six months you should re-publish your deployed PowerApps canvas applications even if they haven’t changed. This ensures the application picks up the latest runtime changes in the environments.
-- Keep an eye on your Common Data Service instance storage usage as well as your Flow quotas and adjust resources and licensing as needed.
+- Keep an eye on your Common Data Service environment storage usage as well as your Flow quotas and adjust resources and licensing as needed.
 
 ## Retiring and removing an application
 
@@ -114,11 +114,11 @@ As your organization evolves it’s likely one or more of the applications deplo
 - When removing connections, you need to first consider the PowerApps canvas apps and Flows that might still be using them. This can be checked by looking at what is associated with the connection prior to deleting.
 - Custom connections are sometimes better to be left if they might be reused later as they would require extra effort to re-establish in the future.
 - To remove a PowerApps model-driven app depends if the Common Data Service solution containing it was installed as managed or unmanaged. If it was installed as unmanaged you can delete the application module to remove it from users. Removing unmanaged Common Data Service solution components requires manually removing one item at a time from the environment. Removing the Common Data Service solution itself in this situation only removes the container and not the components. This is one of the key benefits of managed solution is the ability to uninstall them as a unit.
-- If the solution installed is managed, you would uninstall/remove the Common Data Service solution containing it from the instance. When you remove the Common Data Service solution that contains that application it’s important to note that also removes any other components and data as well. If only desiring to remove the application best approach would be to remove the application in the development environment for that Common Data Service solution and then import the update in using the Stage for Upgrade option on import. This will cause only that component to be removed leaving all other components and data intact.
+- If the solution installed is managed, you would uninstall/remove the Common Data Service solution containing it from the environment. When you remove the Common Data Service solution that contains that application it’s important to note that also removes any other components and data as well. If only desiring to remove the application best approach would be to remove the application in the development environment for that Common Data Service solution and then import the update in using the Stage for Upgrade option on import. This will cause only that component to be removed leaving all other components and data intact.
 
 ## Moving reference data to another environment
 
-Often applications have data that is configuration, or reference data. This could be, for example, a list of territories, product lists, or other data that configures and makes the app work. Often components in the application take dependencies on the IDs of this data. The Configuration Migration Tool is designed to move this type of data from one Common Data Service instance to another. The key features of the tool are:
+Often applications have data that is configuration, or reference data. This could be, for example, a list of territories, product lists, or other data that configures and makes the app work. Often components in the application take dependencies on the IDs of this data. The Configuration Migration Tool is designed to move this type of data from one Common Data Service environment to another. The key features of the tool are:
 
 - Select only the entities and fields you for which you want to move data
 - Maintain unique IDs of the records as they are moved
@@ -131,7 +131,7 @@ The following outlines the basic process for using the tool.
 > [!div class="mx-imgBorder"] 
 > ![](media/moving-reference-data.png "Moving reference data")
 
-The output from the tool is a zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service instance. You can also package the data with a Solution Deployer package that we will discuss shortly allowing it to be deployed alongside one or more Common Data Service solutions. You can read more about how to use the tool here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-configuration-data.
+The output from the tool is a zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service environment. You can also package the data with a Solution Deployer package that we will discuss shortly allowing it to be deployed alongside one or more Common Data Service solutions. You can read more about how to use the tool here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-configuration-data.
 
 ## Using the Dynamics 365 Package Deployer
 

@@ -158,7 +158,7 @@ For those customers that implement network restrictions, please ensure access to
 *.crm9.dynamics.com<br/>
 *.dynamics365portals.us
 
-Please also refer to the Required IP Ranges to enable access to Common Data Service Instances that users and administrators may create within your tenant:
+Please also refer to the Required IP Ranges to enable access to Common Data Service environments that users and administrators may create within your tenant:
 
 [https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 
@@ -175,13 +175,13 @@ Please also refer to the Required IP Ranges to enable access to Common Data Serv
 *.crm.microsoftdynamics.us<br/>
 *.high.dynamics365portals.us
 
-Please also refer to the Required IP Ranges to enable access to Common Data Service Instances that users and administrators may create within your tenant:
+Please also refer to the Required IP Ranges to enable access to Common Data Service environments that users and administrators may create within your tenant:
 
 [https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 
 ## Connectivity between PowerApps US Government and public Azure Cloud Services
 
-Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a PowerApps customer, and you have existing SQL instances in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government cloud IP space, for the following datacenters:
+Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific environment, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a PowerApps customer, and you have existing SQL environments in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government cloud IP space, for the following datacenters:
 
 - USGov Virginia
 - USGov Texas

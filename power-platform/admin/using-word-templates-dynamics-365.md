@@ -93,7 +93,7 @@ search.app:
 
 
 > [!IMPORTANT]
-> Document template downloaded from one instance can only be used within that instance. Instance to instance migration for Word or Excel templates isn't currently supported.
+> Document template downloaded from one environment can only be used within that environment. environment to environment migration for Word or Excel templates isn't currently supported.
 
 
 <a name="BKMK_EnableDeveloper"></a>   

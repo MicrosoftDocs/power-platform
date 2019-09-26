@@ -92,7 +92,7 @@ No, server-side synchronization will not go back in time to assign the category 
 If you categorize a conversation thread as **Tracked to Dynamics 365**, all the emails in that thread are assigned the category and hence will be tracked.
 
 **Can I assign Tracked to Dynamics 365 category to recurring appointments?**<br />
-If you categorize a recurring appointment as **Tracked to Dynamics 365**, all the individual instances of the appointment are assigned the category and will be tracked.
+If you categorize a recurring appointment as **Tracked to Dynamics 365**, all the individual environments of the appointment are assigned the category and will be tracked.
 
 **What happens when a Track of email fails?**<br/>
 By default, failed auto tracked emails will be retried in a new synchronization cycle – approximately every 15 minutes. Retries will be done up to 5 times. If the retries fail after 5 attempts, the email will be assigned the category **Tracked to Dynamics 365 (Undeliverable)** and no further retries will occur. Auto tracked emails which fail with the following errors will be retried:

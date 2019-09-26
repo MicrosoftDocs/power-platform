@@ -45,15 +45,15 @@ The [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps service team re
   
 1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
   
-2. On the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] menu bar, click **Admin centers** > **Dynamics 365** > **Instances** tab.  
+2. On the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] menu bar, click **Admin centers** > **Dynamics 365** > **environments** tab.  
   
-3. Choose an instance that has notifications you want to change.  
+3. Choose an environment that has notifications you want to change.  
   
 4. Click **Notifications**.  
   
    ![Notifications button in Dynamics 365 apps](../admin/media/customer-driven-update-notifications.png "Notifications button in Dynamics 365 apps")  
   
-5. Enter the email addresses of people to receive update notifications for the selected instance and click **Save**.  
+5. Enter the email addresses of people to receive update notifications for the selected environment and click **Save**.  
   
    ![Send Email Notifications in Dynamics 365 apps](../admin/media/customer-driven-updatesendemailnotifications.PNG "Send Email Notifications in Dynamics 365 apps")  
   

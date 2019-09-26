@@ -35,16 +35,16 @@ search.app:
  ![Office 365 app launcher](../admin/media/admin-center-app-launcher.png "Office 365 app launcher")  
   
 <a name="BKMK_CRMAdminCenter"></a>   
-## Manage instances and updates in the Dynamics 365 Administration Center  
- The [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] is your portal site to manage Dynamics 365 apps instances and updates.  
+## Manage environments and updates in the Dynamics 365 Administration Center  
+ The [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] is your portal site to manage Dynamics 365 apps environments and updates.  
   
  You access the portal by choosing [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps from the left-side menu in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
  ![Dynamics 365 apps option on the Microsoft 365 admin center menu](../admin/media/o365-admin-center-crm.png "Dynamics 365 apps option on the Microsoft 365 admin center menu")  
   
- Choose the **Instances** tab to edit, copy, and reset, existing instances, configure new instances, manage preferred solutions, and more. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps instances](/dynamics365/customer-engagement/admin/manage-online-instances.md)  
+ Choose the **environments** tab to edit, copy, and reset, existing environments, configure new environments, manage preferred solutions, and more. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps environments](/dynamics365/customer-engagement/admin/manage-online-instances.md)  
   
- ![Dynamics 365 Administration Center Instances tab](../admin/media/crm-admin-center-instances.png "Dynamics 365 Administration Center Instances tab")  
+ ![Dynamics 365 Administration Center environments tab](../admin/media/crm-admin-center-instances.png "Dynamics 365 Administration Center environments tab")  
   
  Choose the **Updates** tab to approve and schedule updates, change the update target version, and open Dynamics 365 apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage Dynamics 365 apps updates](/dynamics365/customer-engagement/admin/manage-updates.md)  
   

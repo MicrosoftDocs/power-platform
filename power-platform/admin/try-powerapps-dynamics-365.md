@@ -24,7 +24,7 @@ You can explore all PowerApps and Dynamics 365 apps capabilities for free by sig
 You can try PowerApps for free by signing up either for a 30 day trial or community plan. 
 - [Sign up for 30 day trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)
 - [Sign up for Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
-- Sign up for trial while [purchasing PowerApps](signup-for-powerapps-admin)
+- Sign up for trial while [purchasing PowerApps](signup-for-powerapps-admin.md) 
 
 ## Dynamics 365 apps trial
 

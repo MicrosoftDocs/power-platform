@@ -132,10 +132,10 @@ If you are unable to see your connections or environments in the drop-down while
       > [!div class="mx-imgBorder"] 
       > ![](media/ConnectionstestFlow3.png "Connections create record")
 
-  4. Select the drop-down under **Instance** to show all the Dynamics 365 Finance and Operations environments. This is a good step to verify that your account (from the previous step) has access to the environments. 
+  4. Select the drop-down under **environment** to show all the Dynamics 365 Finance and Operations environments. This is a good step to verify that your account (from the previous step) has access to the environments. 
 
       > [!div class="mx-imgBorder"] 
-      > ![](media/ConnectionstestFlow4.png "Connections instances")
+      > ![](media/ConnectionstestFlow4.png "Connections environments")
 
   5. Once you have picked your environment, confirm that you have access to all the entities under it.
 

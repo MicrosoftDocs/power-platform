@@ -54,7 +54,7 @@ You may request migration to the Japan datacenter upon datacenter availability (
  Existing [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] customers will remain in the datacenters where they are currently deployed unless they request to be moved. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions. All new customers purchasing [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] in Japan will be provisioned within the Japan datacenter.  
   
 <a name="BKMK_RequestMove"></a>   
-### How do I request my instance to be moved to the Japan datacenter?  
+### How do I request my environment to be moved to the Japan datacenter?  
  You can request a move to the new Japan datacenter by submitting a technical support incident through the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
 1.  Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
@@ -81,10 +81,10 @@ A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] supp
 ### Can I move Office 365 and [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] at the same time?  
  The move process for each service is handled separately, but the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] move can be scheduled to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move if requested.  
   
-### Will multi-geo instances be available to customers in Japan?  
- Multi-geo instances will be supported for Japan. Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers upon request, and we’ll continue to expand over time.  
+### Will multi-geo environments be available to customers in Japan?  
+ Multi-geo environments will be supported for Japan. Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers upon request, and we’ll continue to expand over time.  
   
- For additional guidance regarding multiple tenants and multiple instances, see [Multiple online instances or tenants](/dynamics365/customer-engagement/admin/multiple-online-instances-tenants.md). This link will be updated with the [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] launch.  
+ For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/customer-engagement/admin/multiple-online-environments-tenants.md). This link will be updated with the [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] launch.  
   
 ### How will this affect [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] users or partners?  
  Regardless of where [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] is provisioned, you’ll have the ability to determine which of your users will have access to those services based on how you configure [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)].  
@@ -110,7 +110,7 @@ A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] supp
 <a name="BKMK_Pricing"></a>   
 ## Pricing  
   
-### How will billing be handled for customers whose instances are moved from an existing tenant located outside of Japan to a new tenant in Japan?  
+### How will billing be handled for customers whose environments are moved from an existing tenant located outside of Japan to a new tenant in Japan?  
  Billing is related to the country/region where the customer signs up for the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] service, not where the service is deployed.  
   
 ### Will all versions of [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] be available?  

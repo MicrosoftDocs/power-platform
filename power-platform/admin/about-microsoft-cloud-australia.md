@@ -74,7 +74,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
   - VL customers can also create a secondary deployment in Australia, New Zealand, or Fiji under an existing VL agreement by either signing an enrollment in Australia, New Zealand, or Fiji or by applying for a multitenant amendment through the local Licensing Specialist.  
   
-- Web direct and VL customers in Australia will still have the ability to deploy instances in datacenters outside of Australia – however, you must have a tenant already provisioned in Australia. Under this multitenant/multi-geo scenario, AU GST will still be applied to instances deployed in other regions.  
+- Web direct and VL customers in Australia will still have the ability to deploy environments in datacenters outside of Australia – however, you must have a tenant already provisioned in Australia. Under this multitenant/multi-geo scenario, AU GST will still be applied to environments deployed in other regions.  
   
 ### How do I find what country or region my account is under?  
   
@@ -90,11 +90,11 @@ You may request migration to the Australia datacenter upon datacenter availabili
 
 ## Dynamics 365 apps service overview  
   
-### Will multi-geo instances be available to customers in Australia?  
+### Will multi-geo environments be available to customers in Australia?  
   
-- Multi-geo instances will be supported for Australian customers as long as the tenant is first provisioned in Australia.  For customers who aren’t located in Australia but want to provision an instance of [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] within the Australia datacenter, they must first purchase a tenant for an organization located in Australia and then the tenant will be able to get provisioned in Australia.  
+- Multi-geo environments will be supported for Australian customers as long as the tenant is first provisioned in Australia.  For customers who aren’t located in Australia but want to provision an environment of [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] within the Australia datacenter, they must first purchase a tenant for an organization located in Australia and then the tenant will be able to get provisioned in Australia.  
   
-- Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers upon request, and we will continue to expand over time.  
+- Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers upon request, and we will continue to expand over time.  
   
 ### Will the standard Dynamics 365 apps SLA be offered at general availability launch?  
  Yes, on the date of general availability, the standard 99.9 % financially backed service level agreement (SLA) for [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] will apply, just as it does in our other regions around the world. Note: the SLA for [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] doesn’t cover [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)].  
@@ -127,7 +127,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
 ## Migration  
   
 ### I have applications and data in an existing Microsoft Dynamics 365 apps datacenter. Will I be able to move those resources to the Australia datacenters?  
- For Web direct customers, if the account country/region is Australia, New Zealand, or Fiji, the customer will be eligible to have their instances moved to the Australia East and Southeast region datacenters.  
+ For Web direct customers, if the account country/region is Australia, New Zealand, or Fiji, the customer will be eligible to have their environments moved to the Australia East and Southeast region datacenters.  
   
 - The account country/region can be found in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
@@ -139,21 +139,21 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
   3.  On the **Company profile** page, your account country/region is listed under **Country or region**.  
   
-- If the account country/region is outside Australia, New Zealand, or Fiji, you’ll need to create another Web direct account with a billing address in Australia, New Zealand, or Oceania. Once the new account and tenant are created, you can then request the move of their [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] instance and data from other regions into the Australia region by contacting [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] Support. For more information, see [How do I request my instance to be moved to the Australia datacenter?](about-microsoft-cloud-australia.md#BKMK_RequestMove) [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions.  
+- If the account country/region is outside Australia, New Zealand, or Fiji, you’ll need to create another Web direct account with a billing address in Australia, New Zealand, or Oceania. Once the new account and tenant are created, you can then request the move of their [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] environment and data from other regions into the Australia region by contacting [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] Support. For more information, see [How do I request my environment to be moved to the Australia datacenter?](about-microsoft-cloud-australia.md#BKMK_RequestMove) [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions.  
   
   If you’re a volume license customer and the volume license agreement was signed in Australia, New Zealand, or Oceania, you’ll be eligible to move applications and data to the Australia East and Southeast region datacenters and deploy services there.  
   
 - Accounts added to the volume license agreement are eligible to move applications and data to the Australia East and Southeast region datacenters and deploy services there.  
   
-- To provision a tenant in the Australia datacenter, if you have a volume license enrollment outside the Australia datacenter you will need to sign an enrollment in Australia, New Zealand, or Oceania and then migrate existing instances to the Australia datacenter.  
+- To provision a tenant in the Australia datacenter, if you have a volume license enrollment outside the Australia datacenter you will need to sign an enrollment in Australia, New Zealand, or Oceania and then migrate existing environments to the Australia datacenter.  
   
-- To move your tenants, instances, and data to the Australia regions, you should contact [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] Support for additional information regarding migrating your instances. For more information, see [How do I request my instance to be moved to the Australia datacenter?](about-microsoft-cloud-australia.md#BKMK_RequestMove) [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions.  
+- To move your tenants, environments, and data to the Australia regions, you should contact [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] Support for additional information regarding migrating your environments. For more information, see [How do I request my environment to be moved to the Australia datacenter?](about-microsoft-cloud-australia.md#BKMK_RequestMove) [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions.  
   
-  For additional guidance regarding multiple tenants and multiple instances, see [Multiple online instances or tenants](/dynamics365/customer-engagement/admin/multiple-online-instances-tenants.md). This link will be updated with the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] 2015 launch.  
+  For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/customer-engagement/admin/multiple-online-environments-tenants.md). This link will be updated with the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] 2015 launch.  
   
 <a name="BKMK_RequestMove"></a> 
   
-### How do I request my instance to be moved to the Australia datacenter?  
+### How do I request my environment to be moved to the Australia datacenter?  
  You can request a move to the new Australian datacenter by submitting a technical support incident through the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
 1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
@@ -210,18 +210,18 @@ You may request migration to the Australia datacenter upon datacenter availabili
 ### If I started a trial outside of Australia and before general availability, will I be moved to the Australia datacenter after general availability?  
  No. Trials will remain in the geography where they were initiated. You may choose to start a new trial that would be provisioned in the Australia datacenter.  
   
-### If I choose to convert a trial to a paid subscription, where the trial was created in a geographic region outside of Australia prior to general availability, will my subscription tenant and instance be moved to the Australia datacenter?  
+### If I choose to convert a trial to a paid subscription, where the trial was created in a geographic region outside of Australia prior to general availability, will my subscription tenant and environment be moved to the Australia datacenter?  
  No. If you choose to convert a trial that was created in a geographic region outside of Australia before general availability, your trial will be converted and billed in the geography where it was initiated. Australia GST does not apply.  
   
  If the trial was originally deployed in Australia and converted to a paid subscription, you’ll charged Australia GST.  
   
- If you decide you want your instance to be in the Australia datacenter, you’ll need to follow the migration steps outlined previously. Once you’re moved to Australia, the appropriate billing and tax will be applied.  
+ If you decide you want your environment to be in the Australia datacenter, you’ll need to follow the migration steps outlined previously. Once you’re moved to Australia, the appropriate billing and tax will be applied.  
   
 ### If a customer creates a trial in the Australia datacenter after general availability, will they be taxed for the trial?  
  No. Trials are free for 30 days.  
   
 ### Can I create a trial in the Australia datacenter before general availability?  
- No. You can’t create a trial or move a Production instance before general availability.  
+ No. You can’t create a trial or move a Production environment before general availability.  
   
 ### See also  
  [Office 365 and Dynamics CRM Online now available from datacenters in Australia](https://blogs.office.com/2015/03/30/office-365-and-dynamics-crm-online-now-available-from-datacenters-in-australia/)    

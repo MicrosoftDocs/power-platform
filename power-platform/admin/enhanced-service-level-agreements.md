@@ -29,7 +29,7 @@ Service level agreements (SLAs) are a formalized method to help organizations me
   
 -   Support for success actions  
   
--   Creation of dashboards or reports based on the SLA KPI Instance entity  
+-   Creation of dashboards or reports based on the SLA KPI environment entity  
   
 ## Case-on-hold support  
  One feature of SLA tracking is the ability to control the case-on-hold status. For example, this functionality lets you pause a case for a time when the case is on hold waiting for a response from the customer. Once the response is received, the case is resumed.  
@@ -45,12 +45,12 @@ Service level agreements (SLAs) are a formalized method to help organizations me
   
 -   Because standard and enhanced SLAs exist as separate entities with separate forms, views, and fields, the following behaviors exist.  
   
-    -   Case views cannot be sorted by enhanced SLA fields. To display enhanced SLA fields in Case views, you can modify any of the Case views to display the fields from the enhanced SLA (which has the entity name SLA KPI Instance).  Although you can sort on the fields that are part of the Case entity, because the enhanced SLA fields are on a related entity, you cannot sort on columns that are associated with the enhanced SLA fields.  
+    -   Case views cannot be sorted by enhanced SLA fields. To display enhanced SLA fields in Case views, you can modify any of the Case views to display the fields from the enhanced SLA (which has the entity name SLA KPI environment).  Although you can sort on the fields that are part of the Case entity, because the enhanced SLA fields are on a related entity, you cannot sort on columns that are associated with the enhanced SLA fields.  
   
-    -   Queue Item views do not display enhanced SLA fields. Although, Queue Item views display the standard fields SLA (First Response By and Resolve By), because the enhanced SLA (SLA KPI Instance entity) is not directly related to the Queue Item entity, the columns associated with enhanced SLAs cannot be displayed.  
+    -   Queue Item views do not display enhanced SLA fields. Although, Queue Item views display the standard fields SLA (First Response By and Resolve By), because the enhanced SLA (SLA KPI environment entity) is not directly related to the Queue Item entity, the columns associated with enhanced SLAs cannot be displayed.  
   
 > [!TIP]
->  To monitor enhanced SLA details, consider creating custom dashboards based on the SLA KPI Instance entity or custom views using the Regarding (Case) relationship.  
+>  To monitor enhanced SLA details, consider creating custom dashboards based on the SLA KPI environment entity or custom views using the Regarding (Case) relationship.  
   
 ### See also  
  [Video: SLA Enhancements in Microsoft Dynamics CRM 2015](http://youtu.be/rgmPqLsG8WI)   

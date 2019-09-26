@@ -31,7 +31,7 @@ Follow these steps to deploy the solution and enable users to use the accessible
   
 2. Select **Admin centers** > **Dynamics 365**.  
 
-3. Select the **Instances** tab, select the instance to add the app to, and then select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").
+3. Select the **environments** tab, select the environment to add the app to, and then select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").
 
 4. Select the **Email in Unified Interface** app, and then select **Install**.  
 

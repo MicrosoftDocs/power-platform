@@ -146,7 +146,7 @@ To assign a user or a security group to an environment role, an Environment Admi
 
     ![](./media/database-security/security-adduser.png)
 
-    b. Select the user from the list of users in the environment / instance.
+    b. Select the user from the list of users in the environment / environment.
 
     ![](./media/environment-admin/D365-Select-User.png)
 

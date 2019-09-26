@@ -47,7 +47,7 @@ Store the documents related to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamic
       If you don't want folders automatically created, clear the **Based on entity** check box.  
    
      > [!IMPORTANT]
-     >  If you have [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instances.  
+     >  If you have [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environments.  
       
    - Click **Finish**.  
   

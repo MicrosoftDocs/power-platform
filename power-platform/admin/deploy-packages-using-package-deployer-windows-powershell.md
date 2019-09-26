@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on  Customer Engagement (on-premises) or [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance. A “package” can consist of any or all of the following:  
+[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on  Customer Engagement (on-premises) or [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment. A “package” can consist of any or all of the following:  
   
 - One or more [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps solution files.  
   
@@ -121,7 +121,7 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
   
  [Use the cmdlet to retrieve packages](../admin/deploy-packages-using-package-deployer-windows-powershell.md#retrieve)  
   
- [Use the cmdlet to connect to your Dynamics 365 apps server](../admin/deploy-packages-using-package-deployer-windows-powershell.md#connect)  
+ [Use the cmdlet to connect to your Customer Engagement server](../admin/deploy-packages-using-package-deployer-windows-powershell.md#connect)  
   
  [Use the cmdlet to deploy packages](../admin/deploy-packages-using-package-deployer-windows-powershell.md#deploy)  
   
@@ -208,9 +208,9 @@ Get-Help “Crm”
   
 <a name="connect"></a>  
  
-### Use the cmdlet to connect to your Dynamics 365 apps instance  
+### Use the cmdlet to connect to your Dynamics 365 apps environment  
   
-1. Provide your credentials to connect to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps. Running the following command will prompt you to type your user name and password to connect to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance, and we will store it in the `$Cred` variable, and use it later for connecting to your Dynamics 365 apps server.  
+1. Provide your credentials to connect to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps. Running the following command will prompt you to type your user name and password to connect to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment, and we will store it in the `$Cred` variable, and use it later for connecting to your Customer Engagement server.  
   
    ```  
    $Cred = Get-Credential  
@@ -232,7 +232,7 @@ Get-Help “Crm”
 <a name="deploy"></a>   
 
 ### Use the cmdlet to deploy packages  
- Next, use the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps connection information stored in the `$CRMConn` variable to deploy packages to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance.  The following command deploys a package, disassembles the package in the *c:\UnpackedFiles* folder, and records  information to a log file in the *c:\MyLogFiles* folder.  
+ Next, use the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps connection information stored in the `$CRMConn` variable to deploy packages to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment.  The following command deploys a package, disassembles the package in the *c:\UnpackedFiles* folder, and records  information to a log file in the *c:\MyLogFiles* folder.  
   
 ```  
 Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools\PackageDeployer –PackageName SampleCRMPackage.dll –UnpackFilesDirectory c:\UnpackedFiles -LogWriteDirectory C:\MyLogFiles -Verbose  
@@ -272,9 +272,9 @@ Get-Help Import-CrmPackage -full
   
 <a name="Logfiles"></a>   
 ## Troubleshoot package deployment issues by using log files  
- The Package Deployer tool provides logging support to get detailed information about errors that can occur when someone signs in to the Microsoft Dynamics 365 apps instance using the tool and deploying packages. By default, the tool generates three log files that are available at the following location on the computer where you run the tool: c:\Users\\*\<UserName>*\AppData\Roaming\Microsoft\Microsoft Dynamics CRM Package Deployer\\*\<Version>*. To specify a different folder, use the -LogWriteDirectory [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlet parameter. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use the cmdlet to retrieve packages](#retrieve)  
+ The Package Deployer tool provides logging support to get detailed information about errors that can occur when someone signs in to the Microsoft Dynamics 365 apps environment using the tool and deploying packages. By default, the tool generates three log files that are available at the following location on the computer where you run the tool: c:\Users\\*\<UserName>*\AppData\Roaming\Microsoft\Microsoft Dynamics CRM Package Deployer\\*\<Version>*. To specify a different folder, use the -LogWriteDirectory [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlet parameter. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use the cmdlet to retrieve packages](#retrieve)  
   
-- `Login_ErrorLog.log`: Provides information about the issues that occurred when you use the tool to sign in to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance. If there are any issues during sign in, a message appears on the tool’s login screen with a link to this log file. The message states that an error occurred while processing the login request and the user can view the error log. You can click the link in the message to view this log file. The log file is created the first time you encounter any sign-in issues in the tool. Thereafter, the log file is used to log information about a sign-in issue, whenever it occurs.  
+- `Login_ErrorLog.log`: Provides information about the issues that occurred when you use the tool to sign in to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment. If there are any issues during sign in, a message appears on the tool’s login screen with a link to this log file. The message states that an error occurred while processing the login request and the user can view the error log. You can click the link in the message to view this log file. The log file is created the first time you encounter any sign-in issues in the tool. Thereafter, the log file is used to log information about a sign-in issue, whenever it occurs.  
   
 - `PackageDeployer.log`: Provides detailed information about each task performed in the tool during the deployment of the packages. You can view the log file from the tool by clicking the **View Log File** link at the bottom of the screen.  
   
@@ -286,9 +286,9 @@ Get-Help Import-CrmPackage -full
   
 -   Insist on a signed package assembly so that they can track an assembly back to its source.  
   
--   Test the package on a pre-production instance (preferably a mirror image of the Production instance) before running it on a production server.  
+-   Test the package on a pre-production environment (preferably a mirror image of the Production environment) before running it on a production server.  
   
--   Back up the Production instance before deploying a package.  
+-   Back up the Production environment before deploying a package.  
  
 ### See also  
  [Create packages for the CRM Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer.md)

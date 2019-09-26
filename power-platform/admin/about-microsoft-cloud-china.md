@@ -17,7 +17,7 @@ search.app:
 ---
 # Dynamics 365 apps - operated by 21Vianet in China
 
-Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated instance of cloud services operated and transacted currently by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
+Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services operated and transacted currently by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
 Microsoft strives to maintain functional parity between our commercially available service and Dynamics 365 apps - operated by 21Vianet in China. However, there are notable exceptions to this affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
 
@@ -53,7 +53,7 @@ Due to certain technological dependencies, the following features listed will no
 - [Office 365 Groups]/dynamics365/customer-engagement/basics/collaborate-with-colleagues-using-office-365-groups.md) feature used for shared workspace for emails, conversations, files, and events in Dynamics 365 apps services will be unavailable.
 - [Online Management API]/dynamics365/customer-engagement/developer/online-management-api.md) (Admin API) enables customers to create and manage the Common Data Service environments using REST API will be unavailable.
 - [Company News Timeline]/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets.md) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
-- [Global Discovery Service API]/dynamics365/customer-engagement/developer/webapi/discover-url-organization-web-api.md) which programmatically enables customer applications to discover user organization (also known as instance) and find instances across regions will not be available.
+- [Global Discovery Service API]/dynamics365/customer-engagement/developer/webapi/discover-url-organization-web-api.md) which programmatically enables customer applications to discover user organization (also known as environment) and find environments across regions will not be available.
 - The service health [Organization Insights](/dynamics365/customer-engagement/admin/use-organization-insights-solution-view-instance-metrics.md) feature will be unavailable.
 - [Portals]/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365.md) for the Dynamics 365 apps services will be unavailable.
 - [Dynamics 365 for phones and tablets]/dynamics365/customer-engagement/mobile-app/overview.md) will be unavailable.

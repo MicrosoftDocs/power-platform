@@ -90,7 +90,7 @@ For more information about access and scope privileges, see [Security roles](htt
 
 2. Click on the **Dynamics 365 Administration Center** link in the **Details** tab to manage the environment in the Dynamics 365 admin center.
 
-3. Select the instance (with the same name of environment) and select **Open**.
+3. Select the environment (with the same name of environment) and select **Open**.
 
     ![](./media/database-security/glados-instance-list.png)
 

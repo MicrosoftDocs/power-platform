@@ -32,7 +32,7 @@ The notifications sent from the Business Application Group communications team w
 | ------------- | -------------| 
 | Dynamics 365 apps   | msdynamics365@microsoft.com  | 
 | Dynamics 365 Business Central | msdynamics365@microsoft.com |
-| Dynamics 365  Marketing | msdynamics365@microsoft.com |
+| Dynamics 365 Marketing | msdynamics365@microsoft.com |
 | Dynamics 365 Market Insights | marketinsights@microsoft.com|
 | Dynamics 365 Finance & Operations    | msdyn365finops@microsoft.com| 
 | Microsoft Flow  | msflow@microsoft.com| 
@@ -40,7 +40,7 @@ The notifications sent from the Business Application Group communications team w
 | Microsoft Power BI  | mspowerbi@microsoft.com| 
 
 
-Email notifications are sent to Common Data Service users who have the System Administrator role in an impacted instance.  If you want to change who receives email communications, see [Manage email notifications](../admin/manage-email-notifications.md).
+Email notifications are sent to Common Data Service users who have the System Administrator role in an impacted environment.  If you want to change who receives email communications, see [Manage email notifications](../admin/manage-email-notifications.md).
 
 ## Incident Communications
 Major service incident emails can easily be identified by the red banner.
@@ -70,7 +70,7 @@ Power BI will display with the following yellow banner:
 ![PowerApps](../admin/media/PowerApps-Banner.png "PowerApps") 
 
 ## Action requested communications 
-Action requested notifications are sent when we detect that a configuration or a setting for your instance is causing the service to perform below expectations. The notification will include details on the situation as well as guidance on how to return performance to normal.
+Action requested notifications are sent when we detect that a configuration or a setting for your environment is causing the service to perform below expectations. The notification will include details on the situation as well as guidance on how to return performance to normal.
 
 ## Post-purchase customer lifecycle communications
 Once a customer has purchased Dynamics 365 apps, we send a series of email communications to Dynamics 365 apps administrators during the first year. These communications direct customers to a number of resources that will assist both administrators and users to successfully adopt and expand their use of Dynamics 365 apps.

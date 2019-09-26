@@ -25,15 +25,15 @@ In 2018, we introduced [Unified Interface](https://docs.microsoft.com/powerapps/
 
 ### New environments
 
-All new Common Data Service environments (instances) and Common Data Service environments, including those created in existing tenants, will be provisioned in Unified Interface Only mode per the schedule below. 
+All new Common Data Service environments (environments) and Common Data Service environments, including those created in existing tenants, will be provisioned in Unified Interface Only mode per the schedule below. 
 
 **Note**: Some geographical regions will get the changes ahead of schedule by as much as 2-3 weeks. 
 
-|Environment (instance) types  |Release date  |
+|Environment (environment) types  |Release date  |
 |---------|---------|
-|New Trial Dynamics 365 apps instances     | December 12, 2018         |
+|New Trial Dynamics 365 apps environments     | December 12, 2018         |
 |New Trial and Production Common Data Service environments     | February 2, 2019        |
-|New Production and Sandbox Dynamics 365 apps instances     | June 8, 2019       |
+|New Production and Sandbox Dynamics 365 apps environments     | June 8, 2019       |
 
 ### Existing environments
 
