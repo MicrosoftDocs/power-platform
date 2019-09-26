@@ -122,7 +122,7 @@ Applies to Common Data Service
 
 ### Using Azure Active Directory groups to manage a user’s app and data access 
 
-The administration of app and data access for Microsoft Dynamics 365 for Customer Engagement and Common Data Service has been extended to allow administrators to use their organization’s Azure Active Directory (Azure AD) groups to manage access rights for licensed Customer Engagement and Common Data Service users.
+The administration of app and data access for Microsoft Dynamics 365 apps and Common Data Service has been extended to allow administrators to use their organization’s Azure Active Directory (Azure AD) groups to manage access rights for licensed Customer Engagement and Common Data Service users.
 
 Both types of Azure AD groups—Office and Security—can be used to secure user-access rights. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 

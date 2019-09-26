@@ -47,7 +47,7 @@ search.app:
 ## Create or modify filter criteria  
  You use a criteria row to create or modify criteria in an offline synchronization filter. Each criteria row contains three values: the field to use in the filter (for example, **City**), an operator (for example, **Equals** or **Contains**), and the value to filter on (for example, **WA**).  
   
- ![Sync or offline filters criteria grid in Dynamics 365 for Customer Engagement](media/sync-filters-criteria-row.png "Sync or offline filters criteria grid in Dynamics 365 for Customer Engagement")  
+ ![Sync or offline filters criteria grid in Dynamics 365 apps](media/sync-filters-criteria-row.png "Sync or offline filters criteria grid in Dynamics 365 apps")  
   
 #### Add a criteria row  
   

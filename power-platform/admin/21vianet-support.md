@@ -1,6 +1,6 @@
 ---
-title: "Support for Dynamics 365 for Customer Engagement - operated by 21Vianet in China  | MicrosoftDocs"
-description: Support for Dynamics 365 for Customer Engagement - operated by 21Vianet in China 
+title: "Support for Dynamics 365 apps - operated by 21Vianet in China  | MicrosoftDocs"
+description: Support for Dynamics 365 apps - operated by 21Vianet in China 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,14 +15,14 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Support for Dynamics 365 for Customer Engagement - operated by 21Vianet in China
+# Support for Dynamics 365 apps - operated by 21Vianet in China
 
-Dynamics 365 for Customer Engagement provides many self-service support options and support through 21Vianet in China.
+Dynamics 365 apps provides many self-service support options and support through 21Vianet in China.
 
 ## Self-help resources
 
-- [Dynamics 365 for Customer Engagement documentation](https://docs.microsoft.com/dynamics365/customer-engagement)
-- [Dynamics 365 for Customer Engagement operated by 21Vianet in China](about-microsoft-cloud-china.md)
+- [Dynamics 365 apps documentation](https://docs.microsoft.com/dynamics365/customer-engagement)
+- [Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md)
 
 ## Presales support
 
@@ -63,7 +63,7 @@ If you run mission-critical solutions on Customer Engagement, Premier support of
 For details about purchasing Premier support, contact your Microsoft Account team. If you have a Premier support plan you can contact support via [My Premier Online](https://support.microsoft.com/premier).
 
 ## Additional resources
-- [Dynamics 365 for Customer Engagement operated by 21Vianet in China](about-microsoft-cloud-china.md)
+- [Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md)
 - [Dynamics 365 for Finance and Operations operated by 21Vianet](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 - [Dynamics 365 support site for 21Vianet (in Chinese)](https://www.21vbluecloud.com/Dynamics365/)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)

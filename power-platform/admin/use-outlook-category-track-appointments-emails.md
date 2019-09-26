@@ -17,13 +17,13 @@ search.app:
 ---
 # Use Outlook category to track appointments and emails
 
-Server-side synchronization now allows tracking of emails, appointments and tasks in Outlook with a [special category](https://support.office.com/article/video-set-an-email-flag-reminder-or-color-a894348d-b308-4185-840f-aff63063d076?ui=en-US&rs=en-US&ad=US) **Tracked to Dynamics 365**. Assigning this category to an email, appointment or a task in Outlook syncs the item to Dynamics 365 for Customer Engagement. Similarly, removing the category from a tracked email, appointment or task untracks it from Dynamics 365 for Customer Engagement.
+Server-side synchronization now allows tracking of emails, appointments and tasks in Outlook with a [special category](https://support.office.com/article/video-set-an-email-flag-reminder-or-color-a894348d-b308-4185-840f-aff63063d076?ui=en-US&rs=en-US&ad=US) **Tracked to Dynamics 365**. Assigning this category to an email, appointment or a task in Outlook syncs the item to Dynamics 365 apps. Similarly, removing the category from a tracked email, appointment or task untracks it from Dynamics 365 apps.
 
-You can also select multiple items and assign the **Tracked to Dynamics 365** Outlook category to them thereby tracking all of them to Dynamics 365 for Customer Engagement. Quickly identify tracked items by observing the presence of this category in your Inbox and other folders.
+You can also select multiple items and assign the **Tracked to Dynamics 365** Outlook category to them thereby tracking all of them to Dynamics 365 apps. Quickly identify tracked items by observing the presence of this category in your Inbox and other folders.
 
 ## Configure category-based tracking through an OrgDBOrgSetting
 
-As of Dynamics 365 for Customer Engagement version 9.1.0.4039 or higher, category tracking is on by default.
+As of Dynamics 365 apps version 9.1.0.4039 or higher, category tracking is on by default.
 
 > [!TIP]
 > To determine your version, sign in to [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, and in the upper-right side of the screen, select the **Settings** button ![User profile Settings button](media/user-profile-settings-button.png) > **About**.  
@@ -46,7 +46,7 @@ If an appointment is tracked and is categorized as **Tracked to Dynamics**, remo
 
 ## Task
 > [!NOTE]
-> Assignment of tasks to people that is captured in Outlook will not be synced to Dynamics 365 for Customer Engagement.
+> Assignment of tasks to people that is captured in Outlook will not be synced to Dynamics 365 apps.
 
 ## Use category-based tracking with App for Outlook
 If you have Dynamics 365 App for Outlook, you can use category-based tracking with App for Outlook.
@@ -58,7 +58,7 @@ The following table lists different scenarios of tracking.
 |---------|---------|
 |Assign the **Tracked to Dynamics 365** category to an email/appointment     |Server-side synchronization will sync email/appointment within 15 minutes. Loading App for Outlook on that item will display the tracked status.         |
 |Track an email/appointment using App for Outlook     |Email/Appointment is tracked. The **Tracked to Dynamics 365** category is assigned immediately.         |
-|Removal of the **Tracked to Dynamics 365** category on an email/appointment     |Server-side synchronization will untrack the item in about 15 minutes. Loading App for Outlook on that email will display the tracked status. The activity record is not deleted from Dynamics 365 for Customer Engagement.         |
+|Removal of the **Tracked to Dynamics 365** category on an email/appointment     |Server-side synchronization will untrack the item in about 15 minutes. Loading App for Outlook on that email will display the tracked status. The activity record is not deleted from Dynamics 365 apps.         |
 |Untrack an email/appointment using App for Outlook     |Email/Appointment is untracked and **Tracked to Dynamics 365** category is removed.         |
 
 ## Delegate users
@@ -67,10 +67,10 @@ If you [allow someone else to manage your email and calendar](https://support.of
 If your mailbox has the **Tracked to Dynamics 365** category, the delegate can track your emails and appointments by assigning the **Tracked to Dynamics 365** category.
 
 ## Category-based tracking with Dynamics 365 for Outlook
-Category-based tracking is not supported with Dynamics 365 for Outlook. We recommend that you do not enable OrgDBOrgSetting **TrackCategorizedItems** on a Dynamics 365 for Customer Engagement organization set up to use Dynamics 365 for Outlook.
+Category-based tracking is not supported with Dynamics 365 for Outlook. We recommend that you do not enable OrgDBOrgSetting **TrackCategorizedItems** on a Dynamics 365 apps organization set up to use Dynamics 365 for Outlook.
 
 ## Disable category-based tracking
-You can disable category-based tracking for the Dynamics 365 for Customer Engagement organization by disabling OrgDBOrgSetting **TrackCategorizedItems**.
+You can disable category-based tracking for the Dynamics 365 apps organization by disabling OrgDBOrgSetting **TrackCategorizedItems**.
 
 > [!NOTE]
 > If you disable OrgDBOrgSetting **TrackCategorizedItems**, the **Tracked to Dynamics 365** category is soft-deleted, with the category assignment retained in Outlook. If you delete the category from the master list, it will be deleted permanently.
@@ -108,6 +108,6 @@ To disable the special **Tracked to Dynamics 365** Outlook category, you need to
 
 1. Follow the instructions [in this article](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm) for steps to extract the tool.
 2. After extracting the tool, disable the OrgDBOrgSetting **TrackCategorizedItems**.
-3. Disabling the OrgDBOrgSetting will remove the category **Tracked to Dynamics 365** on all Exchange mailboxes of the Dynamics 365 for Customer Engagement organization which have server-side synchronization enabled in about 15 minutes.
+3. Disabling the OrgDBOrgSetting will remove the category **Tracked to Dynamics 365** on all Exchange mailboxes of the Dynamics 365 apps organization which have server-side synchronization enabled in about 15 minutes.
 
 You can also use [this tool](https://github.com/seanmcne/OrgDbOrgSettings/releases/) to edit the OrgDBOrgSetting **TrackCategorizedItems**.

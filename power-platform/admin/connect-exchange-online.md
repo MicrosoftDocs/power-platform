@@ -120,7 +120,7 @@ All new users will have these settings applied to their mailbox.
 
 ## Approve email  
 
-You only need to approve the email address for a user when their email address has changed in Dynamics 365 for Customer Engagement.
+You only need to approve the email address for a user when their email address has changed in Dynamics 365 apps.
 
 To approve emails for Dynamics 365 apps, a Dynamics 365 user requires:
 
@@ -210,7 +210,7 @@ Follow these steps to approve email addresses for users and queues. By default, 
 To approve emails for Dynamics 365 apps, a Dynamics user requires the **Approve Email Addresses for Users or Queues** privilege.  A system admin can assign the **Approve Email Addresses for Users or Queues** privilege to any security role and assign the security role to any user. 
 
 To manually assign the **Approve Email Addresses for Users or Queues** privilege to a security role: 
-1. In Dynamics 365 for Customer Engagement, go to **Settings** > **Security** > **Security Roles**. 
+1. In Dynamics 365 apps, go to **Settings** > **Security** > **Security Roles**. 
 2. Select a security role, and then select the **Business Management** tab. 
 3. Under **Miscellaneous Privileges**, set the privilege level for **Approve Email Addresses for Users or Queues**.
   

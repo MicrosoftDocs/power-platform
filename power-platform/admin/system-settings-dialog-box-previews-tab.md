@@ -1,30 +1,20 @@
 ---
-title: "System Settings dialog box - Previews tab for Dynamics 365 apps | MicrosoftDocs"
-description: ""
-keywords: 
-ms.date: 06/04/2018
-ms.service: crm-online
-ms.custom: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 85cbd3ee-6a08-4ee2-876f-b4a5039dbbde
+title: "System Settings dialog box - Previews tab for Dynamics 365 apps  | MicrosoftDocs"
+description: System Settings dialog box - Previews tab for Dynamics 365 apps
 author: jimholtz
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 06/04/2018
 ms.author: jimholtz
-manager: brycho
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-caps.latest.revision: 1
-topic-status: Drafting
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
-
 # System Settings dialog box - Previews tab
 
 Use the settings on this page to enable preview features in model-driven apps in Dynamics 365.

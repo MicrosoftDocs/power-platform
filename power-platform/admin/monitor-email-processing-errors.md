@@ -26,7 +26,7 @@ search.app:
 |Permanent Errors|Transient Errors|  
 |----------------------|----------------------|  
 |These are of permanent nature and can occur when the transient errors aren’t fixed after a few attempts.|These are of temporary nature and may get fixed automatically after a few attempts.|  
-|When these errors occur, email processing for the affected mailboxes is stopped. These require a corrective action by the mailbox owner or a Dynamics 365 for Customer Engagement administrator.|These errors don’t necessarily require a corrective action by a Dynamics 365 apps user, but we recommend that you look at these.|  
+|When these errors occur, email processing for the affected mailboxes is stopped. These require a corrective action by the mailbox owner or a Dynamics 365 apps administrator.|These errors don’t necessarily require a corrective action by a Dynamics 365 apps user, but we recommend that you look at these.|  
 |The administrators and users are alerted on their alert walls to take action and start email processing.|The administrators and users are notified on the alerts wall about these errors but no action is required for these errors.|  
 
  The following table will help you distinguish between email-level, mailbox-level, and email server profile-level errors and whether a corrective action is needed.  

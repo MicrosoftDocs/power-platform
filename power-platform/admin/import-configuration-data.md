@@ -31,7 +31,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 2. On the main screen, click **Import data**, and click **Continue**.  
   
-3. On the **Login** screen, provide authentication details to connect to your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance from where you want to import data. If you have multiple organizations on the Dynamics 365 for Customer Engagement server, and want to select the organization where to import the configuration data, select the **Always display list of available orgs** check box. Click **Login**.  
+3. On the **Login** screen, provide authentication details to connect to your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance from where you want to import data. If you have multiple organizations on the Dynamics 365 apps server, and want to select the organization where to import the configuration data, select the **Always display list of available orgs** check box. Click **Login**.  
   
 4. If you have multiple organizations, and you selected the **Always display list of available orgs** check box, the next screen lets you choose the organization that you want to connect to. Select a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization to connect to.  
   

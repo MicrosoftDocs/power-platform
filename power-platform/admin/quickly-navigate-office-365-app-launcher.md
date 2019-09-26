@@ -48,7 +48,7 @@ search.app:
   
  Click the **Admin** tile to go to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], where you can add users and change passwords.  
   
- ![Microsoft 365 admin center in Dynamics 365 for Customer Engagement](../admin/media/office-365-admin-center.png "Microsoft 365 admin center in Dynamics 365 for Customer Engagement")  
+ ![Microsoft 365 admin center in Dynamics 365 apps](../admin/media/office-365-admin-center.png "Microsoft 365 admin center in Dynamics 365 apps")  
   
 <a name="BKMK_IntroD365HomePage"></a>   
 ## For admins and end users: Introducing the Dynamics 365 apps home page  
@@ -98,7 +98,7 @@ search.app:
   
 2. Click the **ellipses** (...), and then click **Pin this app**.  
   
-   ![Pin This App button in Dynamics 365 for Customer Engagement](../admin/media/pin-dynamics-365-app.png "Pin This App button in Dynamics 365 for Customer Engagement")  
+   ![Pin This App button in Dynamics 365 apps](../admin/media/pin-dynamics-365-app.png "Pin This App button in Dynamics 365 apps")  
   
    The app will appear at the top of the home page and in the task pane.  
   

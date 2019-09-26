@@ -29,7 +29,7 @@ search.app:
   
 <a name="BKMK_failAuthen"></a>   
 ### Failed Authentication  
- This failure can occur when one or more of the server-based authentication configuration steps were not completed or did not complete successfully. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up SharePoint integration with Dynamics 365 for Customer Engagement](../admin/set-up-sharepoint-integration.md)  
+ This failure can occur when one or more of the server-based authentication configuration steps were not completed or did not complete successfully. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up SharePoint integration with Dynamics 365 apps](../admin/set-up-sharepoint-integration.md)  
   
  This failure can also occur if an incorrect URL is entered in the Enable Server-Based SharePoint Integration wizard or if there is a problem with the digital certificate used for server authentication. Similarly, this failure can occur as a result of a SharePoint site rename when the URL is not updated in the corresponding SharePoint Site record. More information: [Users receive "You don't have permissions to view files in this location" message](troubleshoot-set-up-sharepoint-online.md#users-receive-you-dont-have-permissions-to-view-files-in-this-location-message)
   
@@ -69,7 +69,7 @@ search.app:
  To resolve this issue, remove the certificates with the same subject name that you don’t need using the Certificate Manager MMC snap-in and note the following.  
   
 > [!IMPORTANT]
->  It can take up to 24 hours before the SharePoint cache will begin using the new certificate. To use the certificate now, follow the steps here to replace the certificate information in Dynamics 365 for Customer Engagement.  
+>  It can take up to 24 hours before the SharePoint cache will begin using the new certificate. To use the certificate now, follow the steps here to replace the certificate information in Dynamics 365 apps.  
 >   
 >  To resolve this issue by following the steps in this article, the existing certificate cannot be expired.  
   
@@ -77,7 +77,7 @@ search.app:
   
 1. Use an existing or create a new and self-signed certificate. The subject name must be unique to any certificate subject names that are registered in the local certificate store.  
   
-2. Run the following [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] script against the existing certificate, or the certificate that you created in the previous step. This script will add a new certificate in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, which will then be replaced in a later step. <!-- For more information about the CertificateReconfiguration.ps1[!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] script see, [Prepare Microsoft Dynamics 365 for Customer Engagement server for server-based authentication](Configure%20server-based%20authentication%20with%20Microsoft%20Dynamics%20365%20\(on-premises\)%20and%20SharePoint%20on-premises.md#BKMK_prepare_CRM).  -->
+2. Run the following [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] script against the existing certificate, or the certificate that you created in the previous step. This script will add a new certificate in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, which will then be replaced in a later step. <!-- For more information about the CertificateReconfiguration.ps1[!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] script see, [Prepare Microsoft Dynamics 365 apps server for server-based authentication](Configure%20server-based%20authentication%20with%20Microsoft%20Dynamics%20365%20\(on-premises\)%20and%20SharePoint%20on-premises.md#BKMK_prepare_CRM).  -->
   
    ```  
    CertificateReconfiguration.ps1 -certificateFile <Private certificate file (.pfx)> -password <private-certificate-password> -updateCrm -certificateType AlternativeS2STokenIssuer -serviceAccount <serviceAccount> -storeFindType FindBySubjectDistinguishedName  

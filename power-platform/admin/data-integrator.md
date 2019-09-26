@@ -473,8 +473,8 @@ You can use the following settings to tune the performance of Dynamics 365 for F
 - Turning off validations (optional): 
   While the Data Integrator does not bypass any business logic and validations, you may optionally turn off the ones that are not required to improve performance.
 
-Consider the following tips to ensure performance while importing or exporting data from Dynamics 365 for Customer Engagement environments.
+Consider the following tips to ensure performance while importing or exporting data from Dynamics 365 apps environments.
 
-### Importing/Exporting data to/from Dynamics 365 for Customer Engagement
+### Importing/Exporting data to/from Dynamics 365 apps
 
 - Ensure indexes are defined for integration keys.

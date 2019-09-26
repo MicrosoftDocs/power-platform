@@ -1,24 +1,18 @@
 ---
 title: "System Settings dialog box - Email tab for Dynamics 365 apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 05/31/2019
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 7ffc3f15-6624-4718-ab77-5bcb5360943a
-caps.latest.revision: 63
+description: System Settings dialog box - Email tab for Dynamics 365 apps
 author: jimholtz
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 05/31/2019
 ms.author: jimholtz
-manager: brycho
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # System Settings dialog box - Email tab
@@ -44,7 +38,7 @@ Use the settings on this page to set up email processing in model-driven apps in
 |   Settings    |   Description     |
 |---------|--------------|
 |    **Configure email processing**    |      |
-|   Process Email Using  |  Select whether you want to process email by using server-side synchronization or the Email Router. server-side synchronization is the preferred synchronization method.<br /><br /> [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 for Customer Engagement](integrate-synchronize-your-email-system.md)   |
+|   Process Email Using  |  Select whether you want to process email by using server-side synchronization or the Email Router. server-side synchronization is the preferred synchronization method.<br /><br /> [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 apps](integrate-synchronize-your-email-system.md)   |
 |  **Configure default synchronization method**  |  For any mailbox that is automatically created in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps when a user or queue is created, the default email settings as defined in this section will be applied.  |  
 | Server Profile   | For server-side synchronization, select the email server profile that you want to use. The email server profile holds the configuration data that enables [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to connect to [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. If you’re connecting Dynamics 365 apps with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], the email server profile is automatically created for you.  |
 | Incoming Email  |   Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the Email Router, server-side synchronization, or a forward mailbox for processing incoming email. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create forward mailboxes or edit mailboxes](create-forward-mailboxes-edit-mailboxes.md)  |     

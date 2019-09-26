@@ -236,7 +236,7 @@ Review the troubleshooting steps in this topic and if the issue is successfully 
   
 - Server-side synchronization in Dynamics 365 apps requires a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail.  
   
-For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 for Customer Engagement](../admin/integrate-synchronize-your-email-system.md)  
+For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 apps](../admin/integrate-synchronize-your-email-system.md)  
   
 > [!NOTE]
 >  We recommend that you don’t use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data not synchronizing to all attendees.  

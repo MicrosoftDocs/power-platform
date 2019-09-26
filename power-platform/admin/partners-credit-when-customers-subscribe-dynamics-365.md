@@ -33,7 +33,7 @@ As a [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps partner, y
 > -    If the customer doesn’t have a billing address in the country/region you select, their account can’t be activated later.  
 > -   When you accept the terms of service, you're accepting it on behalf of your customer and representing their agreement to our terms.  
   
-1. Go to [Dynamics 365 for Customer Engagement](http://go.microsoft.com/fwlink/p/?LinkId=204374).  
+1. Go to [Dynamics 365 apps](http://go.microsoft.com/fwlink/p/?LinkId=204374).  
   
     – OR -  
   

@@ -138,7 +138,7 @@ search.app:
   
 3. Click **Excel Template** > **Upload**.  
   
-   ![Click Upload to add the Excel template to Dynamics 365 for Customer Engagement](../admin/media/excel-template-upload.png "Click Upload to add the Excel template to Dynamics 365 for Customer Engagement")  
+   ![Click Upload to add the Excel template to Dynamics 365 apps](../admin/media/excel-template-upload.png "Click Upload to add the Excel template to Dynamics 365 apps")  
   
 4. Drag the file into the dialog box or browse to find and upload the file.  
   
@@ -178,7 +178,7 @@ search.app:
   
 <a name="BKMK_UseSelectEntity"></a>   
 ### Step 1: Select an entity to analyze  
- In Dynamics 365 for Customer Engagement, select an entity (record type) to analyze with the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template you created. For example, go to **Sales** > **Opportunities** > **My Open Opportunities**. Two new opportunities were added since the template was created.  
+ In Dynamics 365 apps, select an entity (record type) to analyze with the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template you created. For example, go to **Sales** > **Opportunities** > **My Open Opportunities**. Two new opportunities were added since the template was created.  
   
  ![List of Open Opportunities](../admin/media/excel-template-list-open-opportunities.png "List of Open Opportunities")  
   
@@ -208,7 +208,7 @@ search.app:
 ## Try out the sample Excel templates  
  There are four [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)].  
   
- ![Try out the Excel templates included with Dynamics 365 for Customer Engagement](../admin/media/excel-template-included.png "Try out the Excel templates included with Dynamics 365 for Customer Engagement")  
+ ![Try out the Excel templates included with Dynamics 365 apps](../admin/media/excel-template-included.png "Try out the Excel templates included with Dynamics 365 apps")  
   
  The sample [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates were created with a specific record type (entity). You’ll only be able to apply the template to records of the same record type.  
   
@@ -306,4 +306,4 @@ search.app:
   
 ### See also  
  [Download a template for data import](../admin/download-template-data-import.md)   
- [Using Word templates in Dynamics 365 for Customer Engagement](../admin/using-word-templates-dynamics-365.md)
+ [Using Word templates in Dynamics 365 apps](../admin/using-word-templates-dynamics-365.md)

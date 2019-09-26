@@ -57,7 +57,7 @@ Planned maintenance includes updates and changes to the Customer Engagement serv
 ![Planned and unplanned maintenance banner](../admin/media/maintenance-banner.png "Planned and unplanned maintenance banner")
 
 ## Communications for releases, package deployments, and awareness
-Communications can be informational in nature, drive specific actions, or both. The target audience for these communications are Dynamics 365 for Customer Engagement System Administrators or individuals designated to run the service. You can easily identify these by the light-blue banner.
+Communications can be informational in nature, drive specific actions, or both. The target audience for these communications are Dynamics 365 apps System Administrators or individuals designated to run the service. You can easily identify these by the light-blue banner.
 
 ![General awareness email banner](../admin/media/scheduling-banner.png "General awareness email banner") 
  

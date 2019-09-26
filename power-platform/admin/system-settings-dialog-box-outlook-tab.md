@@ -1,24 +1,18 @@
 ---
 title: "System Settings dialog box - Outlook tab for Dynamics 365 apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 09/30/2017
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: f9b49c8f-c434-41d3-aa4c-365a4498b4f7
-caps.latest.revision: 13
+description: System Settings dialog box - Outlook tab for Dynamics 365 apps
 author: jimholtz
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/30/2017
 ms.author: jimholtz
-manager: brycho
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # System Settings dialog box - Outlook tab

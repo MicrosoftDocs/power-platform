@@ -117,5 +117,5 @@ For more information, see these blog posts:
 
 ### See also  
  [Supported web browsers and mobile devices](../admin/supported-web-browsers-and-mobile-devices.md)   
- <!-- [64-bit supported configurations for Microsoft Dynamics 365 for Customer Engagement](../admin/64-bit-supported-configurations-for-microsoft-dynamics-365.md) 
+ <!-- [64-bit supported configurations for Microsoft Dynamics 365 apps](../admin/64-bit-supported-configurations-for-microsoft-dynamics-365.md) 
  [Microsoft Dynamics 365 apps system requirements and required technologies](Microsoft%20Dynamics%20365%20system%20requirements%20and%20required%20technologies.md) -->  

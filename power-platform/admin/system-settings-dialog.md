@@ -1,19 +1,18 @@
 ---
-title: "System Settings dialog box (Common Data Service) | MicrosoftDocs"
-ms.custom: 
-ms.date: 09/30/2017
-ms.reviewer: 
-ms.service: crm-online
-ms.topic: article
-ms.assetid: a12f2c14-467f-4c7d-8238-a9102594a7c4
-caps.latest.revision: 21
+title: "System Settings dialog box (Common Data Service)  | MicrosoftDocs"
+description: System Settings dialog box (Common Data Service) 
 author: jimholtz
-ms.author: jimholtz
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/30/2017
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # System Settings dialog box 

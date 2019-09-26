@@ -22,7 +22,7 @@ search.app:
 Microsoft’s people experience is centered around profile cards that have been around in Microsoft Outlook and other Office apps and services on the web. When you select someone’s name or picture in Outlook or other Office apps, you can find information related to them on their profile card. The profile card is also sometimes referred to as contact card or people card. Profile cards are available on contacts and users in any Unified Interface app.
 
 > [!NOTE]
-> If multi-factor authentication has been enabled for Office 365 services and not enabled for Dynamics 365 for Customer Engagement, profile cards will not be rendered for users in Unified Interface.
+> If multi-factor authentication has been enabled for Office 365 services and not enabled for Dynamics 365 apps, profile cards will not be rendered for users in Unified Interface.
 >
 > The profile card feature involves a network call to the Office 365 service to display the card. Please make sure that following endpoints are reachable, by configuring and updating network perimeter devices such as firewalls and proxy servers.
 > 

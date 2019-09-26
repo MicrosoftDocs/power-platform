@@ -20,7 +20,7 @@ search.app:
 The process to restore a [!INCLUDE[pn_Exchange_Server_full](../includes/pn-exchange-server-full.md)] computer that is used by [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps depends on how that instance of [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] is being used. The only time [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps -related data exists on [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] occurs when you use a forward mailbox with the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)] or server-side synchronization. [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps don’t directly use [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] mailboxes.  
 
 > [!NOTE]
-> This topic applies to Email Router which has been deprecated and was removed in version 9.0 of Dynamics 365 for Customer Engagement. We strongly recommend that you migrate all email routing functionality to use the server-side synchronization feature.
+> This topic applies to Email Router which has been deprecated and was removed in version 9.0 of Dynamics 365 apps. We strongly recommend that you migrate all email routing functionality to use the server-side synchronization feature.
   
 ## Restore Exchange Server in a Dynamics 365 apps environment  
   

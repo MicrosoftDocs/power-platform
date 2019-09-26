@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-If you create an email message in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  If the status of the email appears as "Pending Send" and is not sent, contact your [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] administrator. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find your Dynamics 365 for Customer Engagement administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md)  
+If you create an email message in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  If the status of the email appears as "Pending Send" and is not sent, contact your [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] administrator. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find your Dynamics 365 apps administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md)  
   
  If you are the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrator, verify that the user who sent the email is enabled for sending email. To do this:  
   
@@ -34,4 +34,4 @@ If you create an email message in [!INCLUDE [pn-crm-shortest](../includes/pn-crm
    - If the user’s [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps mailbox record is configured to use server-side synchronization for outgoing email, verify the user’s email address is approved and is also tested and enabled.  For more information about configuring server-side synchronization, see [set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md).  
   
 ### See also  
- [Integrate your email system with Microsoft Dynamics 365 for Customer Engagement](../admin/integrate-synchronize-your-email-system.md)
+ [Integrate your email system with Microsoft Dynamics 365 apps](../admin/integrate-synchronize-your-email-system.md)

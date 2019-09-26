@@ -30,7 +30,7 @@ Users can access the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)]
 - [!INCLUDE[tn_Safari](../includes/tn-safari.md)]   
     
   
-For more detailed information about supported browsers, see [Web application requirements for Dynamics 365 for Customer Engagement](web-application-requirements.md).  
+For more detailed information about supported browsers, see [Web application requirements for Dynamics 365 apps](web-application-requirements.md).  
   
 For a mobile device, such as an iPad or smartphone, the following apps are available:  
   

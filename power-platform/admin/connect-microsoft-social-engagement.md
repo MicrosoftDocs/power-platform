@@ -128,7 +128,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
   
 5. To add the control, choose **Insert Social Insights** icon in the center of the section on the dashboard form, or choose **More Commands** (![More commands button](../admin/media/not-available.png "More commands button")) on the command bar and then choose **[!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** in the dropdown list. **Set Up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** wizard appears.  
   
-   ![Set up Social Insights in Dynamics 365 for Customer Engagement](../admin/media/social-engagement-setup.png "Set up Social Insights in Dynamics 365 for Customer Engagement")  
+   ![Set up Social Insights in Dynamics 365 apps](../admin/media/social-engagement-setup.png "Set up Social Insights in Dynamics 365 apps")  
   
 6. In the **Set Up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** wizard, choose **Advanced**. The **Add [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** dialog appears. Fill in the required fields and choose **OK**. You can also use the default values and choose **OK** or **Cancel** to close the dialog box.  
   
@@ -151,7 +151,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
   
 11. To publish the customizations, choose **Publish All Customizations** on the command bar. After the customizations are published, you can see the social insights on your dashboard.  
   
-    ![Social Insights in dashboard in Dynamics 365 for Customer Engagement](../admin/media/social-engagement-visual-in-dashboard.png "Social Insights in dashboard in Dynamics 365 for Customer Engagement")  
+    ![Social Insights in dashboard in Dynamics 365 apps](../admin/media/social-engagement-visual-in-dashboard.png "Social Insights in dashboard in Dynamics 365 apps")  
   
 ## Privacy notice  
 [!INCLUDE[cc_privacy_crm_gcc_social_listening_configuration](../includes/cc-privacy-crm-gcc-social-listening-configuration.md)]

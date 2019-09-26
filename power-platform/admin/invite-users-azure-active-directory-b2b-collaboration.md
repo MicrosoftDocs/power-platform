@@ -71,7 +71,7 @@ You can invite other users to access your [!INCLUDE[pn_dyn_365_online](../includ
   
    When your user accepts the invitation by clicking on the **Get Started** link on the invitation email, they will be prompted to accept the invitation.  
   
-   ![Accept the invitation to Dynamics 365 for Customer Engagement](../admin/media/accept-invitation-dynamics-365.png "Accept the invitation to Dynamics 365 for Customer Engagement")  
+   ![Accept the invitation to Dynamics 365 apps](../admin/media/accept-invitation-dynamics-365.png "Accept the invitation to Dynamics 365 apps")  
   
 > [!NOTE]
 >  Until you add a license to the user account, the user will not have access to [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)]. Follow the steps below to add a [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
@@ -115,7 +115,7 @@ You can invite other users to access your [!INCLUDE[pn_dyn_365_online](../includ
    Next, assign the invited users with appropriate security roles for the [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] instance so they can access it. See [Create users and assign Dynamics 365 apps security roles](../admin/create-users-assign-online-security-roles.md).  
   
 <a name="BKMK_UpdateEmail"></a>   
-## Update invited user’s email address in the invited-to Dynamics 365 for Customer Engagement instance  
+## Update invited user’s email address in the invited-to Dynamics 365 apps instance  
  If you're using a version prior to [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)], you need to update the invited user’s email address. In Dynamics CRM, go to **Settings** > **Security** > **Users**. Select a user, and then update the invited user’s email address.  
   
 <a name="BKMK_ApproveEmail"></a>   

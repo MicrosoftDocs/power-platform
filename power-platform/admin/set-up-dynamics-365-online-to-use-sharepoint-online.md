@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up Dynamics 365 for Customer Engagement to use SharePoint Online
+# Set up Dynamics 365 apps to use SharePoint Online
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
@@ -146,7 +146,7 @@ You can set access at three levels:
 
 For “Block Access” level, only devices that satisfy the AD trust policy defined by the SharePoint or global admin can open SharePoint site and perform operations.
 
-### Impact on Dynamics 365 for Customer Engagement and SharePoint Online integration
+### Impact on Dynamics 365 apps and SharePoint Online integration
 
 When SharePoint Online is configured for “Block Access”, Customer Engagement receives a 401 UnAuthorized response from SharePoint Online for all operations triggered using server-to-server integration. This is because SharePoint Online rejects the AppAssertedUser token (the claims-based token which is used for server-to-server authentication between Customer Engagement and SharePoint Online).
 

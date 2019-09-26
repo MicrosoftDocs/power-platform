@@ -51,7 +51,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
    2.  To export all the entities, click **Add All** next to the **Select Entity** list.  
   
-   ![Create schema of the data to be exported in Dynamics 365 for Customer Engagement](../admin/media/configure-migration-create-schema.PNG "Create schema of the data to be exported in Dynamics 365 for Customer Engagement")  
+   ![Create schema of the data to be exported in Dynamics 365 apps](../admin/media/configure-migration-create-schema.PNG "Create schema of the data to be exported in Dynamics 365 apps")  
   
 7. You can select the **Show the relationships of the selected entity** to view the related entities for the selected entity so that you can export them as well.  
   
@@ -69,7 +69,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 10. A message is displayed if there are any missing dependencies. To close the message, click **OK**.  
   
-    ![Validation results message in Dynamics 365 for Customer Engagement](../admin/media/config-migration-create-schema-3.PNG "Validation results message in Dynamics 365 for Customer Engagement")  
+    ![Validation results message in Dynamics 365 apps](../admin/media/config-migration-create-schema-3.PNG "Validation results message in Dynamics 365 apps")  
   
 11. Add the missing entities, and then perform step 9 again to validate the data. A confirmation message is displayed if there are no validation errors.  
   
@@ -78,7 +78,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 12. Define the uniqueness condition for your data to be exported. To open a new screen, click **Tools** > **Configure Import Settings**. For each entity that you have selected to export, add the field or fields on which you want the records to be compared with existing records on the target system during the import. Select a field, and click **Add Field**.  
   
-    ![Configure import settings in Dynamics 365 for Customer Engagement](../admin/media/config-migration-create-schema-4.PNG "Configure import settings in Dynamics 365 for Customer Engagement")  
+    ![Configure import settings in Dynamics 365 apps](../admin/media/config-migration-create-schema-4.PNG "Configure import settings in Dynamics 365 apps")  
   
 13. To disable plug-ins for all the entities before the data is imported on to the target system, select the **Disable plug-ins on all entities for import** check box. The tool will disable all the plug-ins while importing data on to the target server, and re-enable them after the import process.  
   
@@ -97,7 +97,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 16. On the next screen, specify the location of the data file to be exported in the **Save to data file** box, and then click **Export Data**. The screen displays the export progress status and the location of the exported file at the bottom of the screen once the export is complete.  
   
-    ![Screenshot of export data in Dynamics 365 for Customer Engagement](../admin/media/config-migration-create-schema-5.PNG "Screenshot of export data in Dynamics 365 for Customer Engagement")  
+    ![Screenshot of export data in Dynamics 365 apps](../admin/media/config-migration-create-schema-5.PNG "Screenshot of export data in Dynamics 365 apps")  
   
 17. Click **Exit** to close the tool.  
   

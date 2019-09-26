@@ -318,4 +318,4 @@ $wellKnownApp.Update()
   
 ### See also  
  [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md)   
- [Set up SharePoint integration with Microsoft Dynamics 365 for Customer Engagement](../admin/set-up-sharepoint-integration.md)
+ [Set up SharePoint integration with Microsoft Dynamics 365 apps](../admin/set-up-sharepoint-integration.md)

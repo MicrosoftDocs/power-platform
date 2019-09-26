@@ -576,7 +576,7 @@ PRINT @sql
 EXEC SP_EXECUTESQL @sql;
 ```
 
-## Find the Azure Active Directory tenant Id for your Dynamics 365 for Customer Engagement instances
+## Find the Azure Active Directory tenant Id for your Dynamics 365 apps instances
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 2. On the left navigation pane select **All services**. 

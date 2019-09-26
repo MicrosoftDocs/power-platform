@@ -18,9 +18,9 @@ search.app:
 # Policies and Communications for service incidents
 
 ## Introduction
-Microsoft regularly communicates work done to maintain and update Dynamics 365 for Customer Engagement  to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted instance. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
+Microsoft regularly communicates work done to maintain and update Dynamics 365 apps  to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted instance. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
   
-If you’re not sure who your Customer Engagement admin is, see [Find your Dynamics 365 for Customer Engagement administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
+If you’re not sure who your Customer Engagement admin is, see [Find your Dynamics 365 apps administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
   
  If you want to add additional recipients who receive email communications, see [Manage email notifications to admins](manage-email-notifications.md).  
   
@@ -28,7 +28,7 @@ If you’re not sure who your Customer Engagement admin is, see [Find your Dynam
   
 ## Scheduled system updates
 
-The Dynamics 365 for Customer Engagement team regularly performs security updates and minor service updates on a weekly basis.  There are also two major events in April and October that are delivered through the weekly update mechanism, and details can be found in the [Business Applications Release Notes](https://docs.microsoft.com/dynamics365/release-plans/). 
+The Dynamics 365 apps team regularly performs security updates and minor service updates on a weekly basis.  There are also two major events in April and October that are delivered through the weekly update mechanism, and details can be found in the [Business Applications Release Notes](https://docs.microsoft.com/dynamics365/release-plans/). 
 
 <a name="bkmk_SecurityUpdates"></a>   
 
@@ -45,12 +45,12 @@ The Customer Engagement team identifies and tracks any identified issues, and ta
   
 Because the Customer Engagement team strives to apply risk mitigations in a way that doesn’t require service downtime, Customer Engagement administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it is considered planned maintenance, and will be posted with the estimated impact duration, and the window when the work will occur.
   
- For more information about Customer Engagement security, see [Dynamics 365 for Customer Engagement Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
+ For more information about Customer Engagement security, see [Dynamics 365 apps Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
  
  <a name="bkmk_ServiceUpdates"></a>   
 
 ### Major release events
-We are transforming how we do service updates for Dynamics 365 for Customer Engagement. We will deliver two major release events per year (April and October), offering new capabilities and functionality. These updates will be backward compatible, so your apps and customizations will continue to work post update. New features with major, disruptive changes to the user experience are off by default. This means administrators will be able to first test then enable these features for their organization.
+We are transforming how we do service updates for Dynamics 365 apps. We will deliver two major release events per year (April and October), offering new capabilities and functionality. These updates will be backward compatible, so your apps and customizations will continue to work post update. New features with major, disruptive changes to the user experience are off by default. This means administrators will be able to first test then enable these features for their organization.
 
 In addition to the two major updates, we will continue to deploy regular performance and reliability improvement updates throughout the year. We are phasing deployments over several weeks following safe deployment practices and monitoring updates closely for any issues.  Notifications about when the major release events are enabled in each geographic region are published in the Message Center.
 
@@ -174,7 +174,7 @@ When there is a major service incident that impacts multiple customers, the Cust
 - Next steps  
 
 ### Communications for releases, package deployments, and awareness
-The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display information specific to managing the Dynamics 365 for Customer Engagement service, including changes with the service and releases or feature offerings. The messaging can be informational in nature, drive specific actions, or both. The target audience for these communications are Customer Engagement System Administrators or individuals designated to run the service. 
+The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display information specific to managing the Dynamics 365 apps service, including changes with the service and releases or feature offerings. The messaging can be informational in nature, drive specific actions, or both. The target audience for these communications are Customer Engagement System Administrators or individuals designated to run the service. 
  
  <a name="BKMK_PostPurchase"></a>   
 

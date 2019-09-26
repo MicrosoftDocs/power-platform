@@ -27,7 +27,7 @@ If **Documents** is missing from entities such as account, use the following to 
 
 ![Documents](media/crm-itpro-crmo365tg-seldoc.png "Documents")
 
-1. Make sure you have the System Administrator security role or equivalent permissions in Dynamics 365 for Customer Engagement.
+1. Make sure you have the System Administrator security role or equivalent permissions in Dynamics 365 apps.
     Check your security role:
     1. Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
     2. Don’t have the correct permissions? Contact your system administrator.
@@ -50,7 +50,7 @@ If the Documents associated grid is missing, use the following to restore.
 
 The most common cause for the Documents associated grid not loading is the corrupted FetchXML and LayoutXML. These sections could be corrupted due to many reasons. The most common of them is through customizing the entity/grid view, adding/removing columns, and other similar customizations.
 
-1. Make sure you have the System Administrator security role or equivalent permissions in Dynamics 365 for Customer Engagement.
+1. Make sure you have the System Administrator security role or equivalent permissions in Dynamics 365 apps.
     Check your security role:
     1. Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
     2. Don’t have the correct permissions? Contact your system administrator.
@@ -128,7 +128,7 @@ The most common cause for the Documents associated grid not loading is the corru
 
 14. Save the file.
 15. Zip the folder.
-16. Open Dynamics 365 for Customer Engagement.
+16. Open Dynamics 365 apps.
 17. Navigate to **Settings** > **Solutions**
 18. Import the solution (zipped file in Step 8).
 19. Publish all customizations.

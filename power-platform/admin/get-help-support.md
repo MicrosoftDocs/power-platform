@@ -1,6 +1,6 @@
 ---
 title: "Get Help + Support   | MicrosoftDocs"
-description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 for Customer Engagement to get resolution for your issue.
+description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 apps to get resolution for your issue.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform

@@ -239,7 +239,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
 3. Click **Word Template** > **Upload**.  
 
-   ![Click Upload to bring the template into Dynamics 365 for Customer Engagement](../admin/media/word-template-upload-button.png "Click Upload to bring the template into Dynamics 365 for Customer Engagement")  
+   ![Click Upload to bring the template into Dynamics 365 apps](../admin/media/word-template-upload-button.png "Click Upload to bring the template into Dynamics 365 apps")  
 
 4. Drag the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file in the dialog box or browse to the file.  
 
@@ -267,7 +267,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 ### Try out the sample [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates  
  There are five [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates included with [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)].  
 
- ![These templates are included with Dynamics 365 for Customer Engagement](../admin/media/template-bundled.png "These templates are included with Dynamics 365 for Customer Engagement")  
+ ![These templates are included with Dynamics 365 apps](../admin/media/template-bundled.png "These templates are included with Dynamics 365 apps")  
 
  The sample [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates were created with a particular record type (entity). You’ll only be able to apply the template to records of the same record type.  
 
@@ -295,9 +295,9 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 <a name="BKMK_SecurityRoles"></a> 
 
 ### Use Security Roles to control access to templates  
- Dynamics 365 for Customer Engagement administrators can control access to Word templates with some granularity. For example, you can give salespeople Read but not Write access to a Word template.  
+ Dynamics 365 apps administrators can control access to Word templates with some granularity. For example, you can give salespeople Read but not Write access to a Word template.  
 
-1. In Dynamics 365 for Customer Engagement, click **Settings** > **Security** > **Security Roles**.  
+1. In Dynamics 365 apps, click **Settings** > **Security** > **Security Roles**.  
 
 2. Select a role, and then click the Business Management tab.  
 

@@ -1,24 +1,18 @@
 ---
-title: "System Settings dialog box - Calendar tab for Dynamics 365 apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 09/30/2017
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: e7e20147-aef3-41d8-b290-1e6108611b1b
-caps.latest.revision: 15
+title: "System Settings dialog box - Calendar tab for Dynamics 365 apps  | MicrosoftDocs"
+description: System Settings dialog box - Calendar tab for Dynamics 365 apps
 author: jimholtz
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/30/2017
 ms.author: jimholtz
-manager: brycho
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # System Settings dialog box - Calendar tab
