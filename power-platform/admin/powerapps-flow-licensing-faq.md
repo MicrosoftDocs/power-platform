@@ -170,7 +170,56 @@ A list of add-ons applicable to all standalone PowerApps and Microsoft Flow plan
 
 PowerApps Portals can be provisioned without requiring a specific license. User access licensing is based on persona type and details are as below.
 
-![Licensing table](media/licensing-table.png)
+<table>
+  <tr>
+    <th>User type</th>
+    <th>Model</th>
+    <th colspan="2">SKU names</th>
+    <th>Unit capacity</th>
+    <th>Price/month</th>
+    <th>Channel</th>
+    <th>Comments</th>
+  </tr>
+  <tr>
+    <td rowspan="3">External user (authenticated)</td>
+    <td rowspan="3">Per login</td>
+    <td colspan="2">PowerApps portals login capacity add-on</td>
+    <td>100 logins</td>
+    <td>$200</td>
+    <td>All</td>
+    <td rowspan="3"><ul><li>A login provides the authenticated user with access to a single portal for up to 24 hours</li><br /><li>Multiple logins during the 24-hour period count as one billable login</li></ul></td>
+  </tr>
+  <tr>
+    <td colspan="2">PowerApps portals login capacity add-on Tier 2</td>
+    <td>1000 logins</td>
+    <td>$1000</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td colspan="2">PowerApps portals login capacity add-on Tier 2</td>
+    <td>5000 logins</td>
+    <td>$3500</td>
+    <td>CSP only</td>
+  </tr>
+  <tr>
+    <td>External user (authenticated)</td>
+    <td>Per page view</td>
+    <td colspan="2">PowerApps portals page view capacity add-on</td>
+    <td>100,000 page views</td>
+    <td>$100</td>
+    <td>All</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Internal user</td>
+    <td>Via license</td>
+    <td colspan="2">Dynamics 365 (various)<br /> PowerApps per app plan <br />PowerApps per user plan</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td><ul><li>Custom portal use rights are aligned with custom app use rights</li></ul></td>
+  </tr>
+</table>
 
 ### What exactly is a considered a “login” as part of the PowerApps Portals add-on?
 

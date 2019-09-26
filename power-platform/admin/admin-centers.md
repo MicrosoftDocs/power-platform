@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/28/2019
+ms.date: 09/26/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,6 +25,7 @@ Curently, there are multiple admin centers you use to manage and monitor your en
 |PowerApps Admin center <br/>[https://admin.powerapps.com](https://admin.powerapps.com)    |Creating and managing environments including security starts here. Within each environment you can manage the apps and flows.  Monitor who is licensed and building things. Create and manage Data Loss Prevention policies. Manage Common Data Service Data Integration projects.    |
 |Microsoft Flow Admin Portal<br/>[https://admin.flow.microsoft.com](https://admin.flow.microsoft.com)   | This points to the same site as admin.powerapps.com.    |
 |Business platform admin center<br/>[https://admin.businessplatform.microsoft.com](https://admin.businessplatform.microsoft.com)      |This points to the same site as admin.powerapps.com.  **Over time, this will be migrated to and replaced by the Power Platform Admin center.**        |
+|Dynamics 365 Business Central admin center<br/>[https://businesscentral.dynamics.com/[TENANT_ID]/admin](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center)      |This admin center is used by internal and delegated administators to manage Dynamics 365 Business Central tenants, including managing technical support and upgrade schedules.        |
 |Dynamics 365 Admin center<br/>[https://port.crm.dynamics.com/G/manage/index.aspx](https://port.crm.dynamics.com/G/manage/index.aspx)     |The Dynamics 365 Admin Center, that can be leveraged to perform certain Common Data Service environment management like renaming, deleting, and resetting.    |
 |Dynamics 365 environment Management<br/>[https://port.crm<N>.dynamics.com/G/Instances/InstancePicker.aspx](https://port.crm<N>.dynamics.com/G/Instances/InstancePicker.aspx) | This environment management portal is reached from admin.powerapps.com when managing the Common Data Service database or from the Dynamics 365 Admin center. Here you will see a list of all the Common Data Service databases and can perform actions such as backup, as well as other actions on a per environment basis.   |
 |Microsoft 365 admin center<br/>[https://admin.microsoft.com/adminportal](https://admin.microsoft.com/adminportal)      |Here you manage users and their license assignment as well as launch into many of the individual admin centers.         |
