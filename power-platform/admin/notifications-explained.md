@@ -30,9 +30,9 @@ The notifications sent from the Business Application Group communications team w
 
 |Service | Notification Email | 
 | ------------- | -------------| 
-| Dynamics 365 Customer Engagement   | msdynamics365@microsoft.com  | 
+| Dynamics 365 apps   | msdynamics365@microsoft.com  | 
 | Dynamics 365 Business Central | msdynamics365@microsoft.com |
-| Dynamics 365 for Marketing | msdynamics365@microsoft.com |
+| Dynamics 365  Marketing | msdynamics365@microsoft.com |
 | Dynamics 365 Market Insights | marketinsights@microsoft.com|
 | Dynamics 365 Finance & Operations    | msdyn365finops@microsoft.com| 
 | Microsoft Flow  | msflow@microsoft.com| 

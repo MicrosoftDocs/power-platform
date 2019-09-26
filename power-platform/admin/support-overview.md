@@ -68,7 +68,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some Dynam
     <td width="70%" colspan="4"><a href="https://admin.powerplatform.microsoft.com">Power Platform Admin center</a></td>
   </tr>
   <tr>
-    <td width="30%">Dynamics 365 for Finance and Operations (online and on-premises)</td>
+    <td width="30%">Dynamics 365 Finance and Operations (online and on-premises)</td>
     <td width="70%" colspan="4"><a href="https://lcs.dynamics.com">Lifecycle Services</a></td>
   </tr>
   <tr>
@@ -135,7 +135,7 @@ Public preview and/or beta services may be supported through our [forums](https:
 |Service  |Support portal  |
 |---------|---------|
 |Customer Engagement and AI apps including mixed reality apps and Insights apps   |[Power Platform Admin center](https://admin.powerplatform.microsoft.com)         |
-|Dynamics 365 for Finance and Operations (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
+|Dynamics 365 Finance and Operations (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
 |Dynamics 365 Business Central      | Support is provided through partners only. Contact your Cloud Solution Provider (CSP) for assistance.        |
 |**Product**    |     |
 |Dynamics 365 on-premises (Customer Engagement, Dynamics GP)     |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |

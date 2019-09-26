@@ -151,7 +151,7 @@ A major service incident occurs when multiple organizations can’t access the s
 
 Check the [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) to view the status of the service.  If you are experiencing an issue that is not displayed in the Service health dashboard you can open a ticket [here](https://admin.powerplatform.microsoft.com/).
 
-If the Service health dashboard is not available, the status of Dynamics 365 Customer Engagement can be reviewed at the [backup status site](https://status.office.com/).
+If the Service health dashboard is not available, the status of Dynamics 365 apps can be reviewed at the [backup status site](https://status.office.com/).
 
 If the service incident breaches your *Service Level Agreement*, you can claim a billing credit according to the conditions of your [Online Service Terms outlined in our Product licensing](https://www.microsoft.com/licensing/product-licensing/products). 
 

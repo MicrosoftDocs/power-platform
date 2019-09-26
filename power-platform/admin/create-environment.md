@@ -43,7 +43,7 @@ Your license determines whether you can create environments.
 | Office 365 Plans |No | No |
 | Dynamics 365 Teams Plans   |No | No |
 | PowerApps Community Plan   |No | No |
-| Dynamics 365 Customer Engagement Trial | Yes (one) | Yes|
+| Dynamics 365 Trial | Yes (one) | Yes|
 | Dynamics 365 Plans |Yes (one)| Yes |
 | Dynamics 365 Apps Plans |Yes (one)| Yes |
 | PowerApps P2 |Yes (one)| Yes |

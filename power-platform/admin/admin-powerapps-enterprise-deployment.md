@@ -17,7 +17,7 @@ search.app:
 ---
 # Administering a PowerApps enterprise deployment
 
-PowerApps is a high-productivity application development platform from Microsoft.  The platform is used by Microsoft to build their own 1st party applications Dynamics 365 for Sales, Service, Field Service, Marketing and Talent.  This means these applications are built natively on the platform.   Enterprise customers can also build their own custom line of business applications using the same technology.  Individual users and teams within your organization can also build personal or team productivity applications with no-code or low-code. 
+PowerApps is a high-productivity application development platform from Microsoft.  The platform is used by Microsoft to build their own 1st party applications Dynamics 365 Sales, Service, Field Service, Marketing and Talent.  This means these applications are built natively on the platform.   Enterprise customers can also build their own custom line of business applications using the same technology.  Individual users and teams within your organization can also build personal or team productivity applications with no-code or low-code. 
 
 Check out the following downloadable whitepaper: [Administering a PowerApps enterprise deployment](https://aka.ms/powerappsadminwhitepaper)
 

@@ -17,7 +17,7 @@ search.app:
 ---
 # About Microsoft Cloud France  
 
-As of July 2019, Dynamics 365 Customer Engagement, Dynamics 365 Finance and Operations, PowerApps, and Microsoft Flow are available in France’s datacenters. This new deployment option serves customers in regulated industry and commercial organizations that do business with entities in France that require local data residency. Power BI has been available since March 2019.
+As of July 2019, Dynamics 365 apps, Dynamics 365 Finance and Operations, PowerApps, and Microsoft Flow are available in France’s datacenters. This new deployment option serves customers in regulated industry and commercial organizations that do business with entities in France that require local data residency. Power BI has been available since March 2019.
 
 The deployment of the Dynamics 365 services in France, are built upon the foundational principles of security, privacy, compliance, transparency, and reliability, offering French organizations a complete cloud infrastructure and platform, as well as familiar productivity and business application tools. All of this means that customer data stays resident within France.
 

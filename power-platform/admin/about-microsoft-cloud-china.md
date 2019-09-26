@@ -19,13 +19,13 @@ search.app:
 
 Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated instance of cloud services operated and transacted currently by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
-Microsoft strives to maintain functional parity between our commercially available service and Dynamics 365 Customer Engagement -  operated by 21Vianet in China. However, there are notable exceptions to this affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
+Microsoft strives to maintain functional parity between our commercially available service and Dynamics 365 apps - operated by 21Vianet in China. However, there are notable exceptions to this affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
 
 ## Provisioning
 
 Customers in China have two options from which to select how they want to access Dynamics 365 apps.
 
-- Services operated by 21Vianet in China - 21Vianet operates and offers Dynamics 365 apps services in China. This option provides a consistent Dynamics 365 Customer Engagement experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
+- Services operated by 21Vianet in China - 21Vianet operates and offers Dynamics 365 apps services in China. This option provides a consistent Dynamics 365 apps experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
 - Services operated by Microsoft – This option is for Dynamics 365 apps customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Office 365 and/or Dynamics 365 can co-exist on the tenant. 
 
@@ -55,9 +55,9 @@ Due to certain technological dependencies, the following features listed will no
 - [Company News Timeline]/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets.md) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
 - [Global Discovery Service API]/dynamics365/customer-engagement/developer/webapi/discover-url-organization-web-api.md) which programmatically enables customer applications to discover user organization (also known as instance) and find instances across regions will not be available.
 - The service health [Organization Insights](/dynamics365/customer-engagement/admin/use-organization-insights-solution-view-instance-metrics.md) feature will be unavailable.
-- [Portals]/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365.md) for the Dynamics 365 Customer Engagement services will be unavailable.
+- [Portals]/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365.md) for the Dynamics 365 apps services will be unavailable.
 - [Dynamics 365 for phones and tablets]/dynamics365/customer-engagement/mobile-app/overview.md) will be unavailable.
-- The following Microsoft AppSource hosted solutions for the Dynamics 365 Customer Engagement services will not be available:
+- The following Microsoft AppSource hosted solutions for the Dynamics 365 apps services will not be available:
   - [Microsoft Dynamics 365 - Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)
   - [Dynamics 365 Connector for LinkedIn Lead Gen Forms](https://appsource.microsoft.com/product/dynamics-365/mscrm.dd228afa-64e7-4c9f-92ad-77e7f1334547?tab=overview)
   - [Microsoft Dynamics 365 - Gamification](https://appsource.microsoft.com/product/dynamics-365/mscrm.f6d23ec7-255c-4bd8-8c99-dc041d5cb8b3)
@@ -81,7 +81,7 @@ Due to certain technological dependencies, the following features listed will no
   - [Embedded intelligence for Sales]/dynamics365/customer-engagement/sales-enterprise/embedded-intelligence.md)
   - [Dynamics 365 AI for Sales]/dynamics365/customer-engagement/sales-enterprise/dynamics365-ai-sales.md)
 
-- The following components of Dynamics 365 Customer Engagement Plan are unavailable.
+- The following components of Dynamics 365 Plan are unavailable.
   - [Project Service Automation](https://dynamics.microsoft.com/en-us/project-service-automation/overview/)
   - [Marketing (for >10 users)](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/help-hub)
   - [Microsoft Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/integrate-social-engagement-dynamics-365)
@@ -91,7 +91,7 @@ Due to certain technological dependencies, the following features listed will no
 
 ## Additional resources
 - [Dynamics 365 apps Operated by 21Vianet Support](21vianet-support.md)
-- [Dynamics 365 for Finance and Operations operated by 21Vianet](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+- [Dynamics 365 Finance and Operations operated by 21Vianet](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 - [Dynamics 365 support site for 21Vianet (in Chinese)](https://www.21vbluecloud.com/Dynamics365/)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement(世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)

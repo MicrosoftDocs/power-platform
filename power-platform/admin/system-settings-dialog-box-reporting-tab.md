@@ -1,6 +1,6 @@
 ---
-title: "System Settings dialog box - Reporting tab for Dynamics 365 for Dynamics 365 apps  | MicrosoftDocs"
-description: System Settings dialog box - Reporting tab for Dynamics 365 for Dynamics 365 apps
+title: "System Settings dialog box - Reporting tab for Dynamics 365 apps  | MicrosoftDocs"
+description: System Settings dialog box - Reporting tab for Dynamics 365 apps
 author: jimholtz
 manager: kvivek
 ms.service: power-platform

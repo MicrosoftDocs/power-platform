@@ -162,21 +162,20 @@ Download the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/p/?L
 
 #### These Dynamics 365 apps can be customized using PowerApps and Microsoft Flow capabilities
 
-Dynamics 365 for Sales Professional<br/>
-Dynamics 365 for Customer Service Professional<br/>
-Dynamics 365 for Talent: Attract<br/>
-Dynamics 365 for Talent: Onboard<br/>
+Dynamics 365 Sales Professional<br/>
+Dynamics 365 Customer Service Professional<br/>
+Dynamics 365 Talent: Attract<br/>
+Dynamics 365 Talent: Onboard<br/>
 Dynamics 365 Team Member
 
 #### These Dynamics 365 apps and plans include PowerApps P2
 
 Dynamics 365 Business Central<br/>
-Dynamics 365 for Sales Enterprise<br/>
-Dynamics 365 for Customer Service<br/>
-Dynamics 365 for Field Service<br/>
-Dynamics 365 for Project Service Automation<br/>
-Dynamics 365 for Talent<br/>
-Dynamics 365 for Retail <br/>
-Dynamics 365 Customer Engagement Plan<br/>
+Dynamics 365 Sales Enterprise<br/>
+Dynamics 365 Customer Service<br/>
+Dynamics 365 Field Service<br/>
+Dynamics 365 Project Service Automation<br/>
+Dynamics 365 Talent<br/>
+Dynamics 365 Retail <br/>
 Dynamics 365 Unified Operations Plan<br/>
 Dynamics 365 Plan

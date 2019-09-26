@@ -64,7 +64,7 @@ For details about purchasing Premier support, contact your Microsoft Account tea
 
 ## Additional resources
 - [Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md)
-- [Dynamics 365 for Finance and Operations operated by 21Vianet](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+- [Dynamics 365 Finance and Operations operated by 21Vianet](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 - [Dynamics 365 support site for 21Vianet (in Chinese)](https://www.21vbluecloud.com/Dynamics365/)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)

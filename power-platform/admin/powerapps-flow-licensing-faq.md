@@ -81,7 +81,7 @@ Azure SQL Data Warehouse <br />
 Azure Table Storage <br />
 Dynamics 365 <br />
 Dynamics 365 Customer Insights <br />
-Dynamics 365 for Finance & Operations <br />
+Dynamics 365 Finance & Operations <br />
 Dynamics 365 Sales Insights <br />
 Dynamics 365 Business Central <br />
 Dynamics 365 Business Central (on-premises) <br />
