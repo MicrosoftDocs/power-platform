@@ -17,7 +17,7 @@ search.app:
 ---
 # Administer Microsoft Flow
 
-Microsoft Flow administrators can use the Flow admin portal ([admin.flow.microsoft.com](https://admin.flow.microsoft.com)) to manage an organization’s data policies and environments. Microsoft Flow admin content is available at [Microsoft Flow documentation](https://docs.microsoft.com/en-us/flow/admin-center-introduction).
+Microsoft Flow administrators can use the Flow admin portal ([admin.flow.microsoft.com](https://admin.flow.microsoft.com)) to manage an organization’s data policies and environments. Microsoft Flow admin content is available at [Microsoft Flow documentation](https://docs.microsoft.com/flow/admin-center-introduction).
 
 ### See also
 [Reference: Use the various admin centers](admin-centers.md)

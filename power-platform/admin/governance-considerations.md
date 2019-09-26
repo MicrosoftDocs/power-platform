@@ -126,7 +126,7 @@ Customers with Microsoft Intune can set mobile application protection policies f
 
 ### Manage environment role assignments using Microsoft Flow
 
-1. For environments *without* a Common Data Service database, the [Power Platform for Admins connector](https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/) provides the ability to manage environment role assignments. 
+1. For environments *without* a Common Data Service database, the [Power Platform for Admins connector](https://docs.microsoft.com/connectors/powerplatformforadmins/) provides the ability to manage environment role assignments. 
 2. For environments *with* a Common Data Service database, the built-in Common Data Service connector doesn’t have support for managing roles, but you can use a Microsoft Flow to do it through the web API via the following steps: 
 
    1. Create your Azure AD App. 
@@ -246,7 +246,7 @@ In addition to monitoring, many customers want to subscribe to software creation
 2.	The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by leveraging PowerApps and Flow. 
 3.	The following Microsoft Flow templates for administration connectors exist for ramping up quickly:
    1.	[List new Microsoft Flow Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
-   2.	[List new PowerApps, Flows and Connectors](https://preview.flow.microsoft.com/en-us/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
+   2.	[List new PowerApps, Flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
    3.	[Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
    4.	[Access Office 365 Security and Compliance Logs from Microsoft Flow](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
 4.	This [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) exist to help ramping up quickly on the administration connectors. 

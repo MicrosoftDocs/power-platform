@@ -37,7 +37,7 @@ The Prospect to Cash integration enables sellers to handle and monitor their sal
 
 See the video: [Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg)
 
-For more information about the Prospect to Cash integration, see the documentation on the [Prospect to Cash solution](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
+For more information about the Prospect to Cash integration, see the documentation on the [Prospect to Cash solution](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
 
 We also support [Field Service integration](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
 and [PSA (Project Service Automation) integration](https://docs.microsoft.com/dynamics365/unified-operations/financials/project-management/psa-integration?toc=/fin-and-ops/toc.json) to Dynamics 365 Finance and Operations.

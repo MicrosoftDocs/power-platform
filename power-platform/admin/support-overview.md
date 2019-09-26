@@ -286,7 +286,7 @@ Yes, Partners with Premier Support for Partners (PSfP) contracts are able to use
 
 ### I have a Microsoft plan (such as MSDN, BizSpark or TechNet) that includes as a benefit a number of technical support requests. Can I use those for Dynamics 365 on-premises technical support? 
 
-Yes, if you are eligible for these benefits and have activated your support access on the [Visual Studio subscription](https://my.visualstudio.com/) portal. If you have these benefits, then from [New support request](https://support.microsoft.com/en-us/supportforbusiness/productselection), select **Add contract** under the **Support Plan – Add or purchase a support plan** step, and enter your access ID and contract ID information to proceed.
+Yes, if you are eligible for these benefits and have activated your support access on the [Visual Studio subscription](https://my.visualstudio.com/) portal. If you have these benefits, then from [New support request](https://support.microsoft.com/supportforbusiness/productselection), select **Add contract** under the **Support Plan – Add or purchase a support plan** step, and enter your access ID and contract ID information to proceed.
 
 
 

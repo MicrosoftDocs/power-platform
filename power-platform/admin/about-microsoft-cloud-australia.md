@@ -55,7 +55,7 @@ You may request migration to the Australia datacenter upon datacenter availabili
   
 - Our expansion in the Australia Geo also provides customers with the same level of high availability and redundancy as with our datacenters in other countries/regions. Customers in Australia, New Zealand, and Oceania will enjoy the benefit of a financially backed 99.9% service level agreement (SLA) and redundancy both inside of the primary datacenter where they are deployed as well as to the secondary datacenter in the Australia geography to help ensure ongoing uptime and protect against a major disaster in a single region.  
   
-*The Australia Geo will be considered a separate Geo subject to the same data location commitments we make for other Geos. For the definition of customer data and details on our data flow maps in Geo, see the [Dynamics Trust Center](http://www.microsoft.com/en-us/dynamics/crm-trust-center.aspx).  
+*The Australia Geo will be considered a separate Geo subject to the same data location commitments we make for other Geos. For the definition of customer data and details on our data flow maps in Geo, see the [Dynamics Trust Center](http://www.microsoft.com/dynamics/crm-trust-center.aspx).  
   
 ### What region will be used for replication of data for the Australia Geo?  
  [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] services deployed in the Australia East Region will replicate data to the Australia Southeast Region and vice-versa.  

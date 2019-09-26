@@ -182,4 +182,4 @@ The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/ma
 Once a customer has purchased Dynamics 365 apps, we send a series of email communications to Dynamics 365 apps administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of Dynamics 365 apps.  This information can be found in the [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) as well.
   
 ### Notice about Online Policies
-Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/en-us/legal/intellectualproperty/onlinedisclaimer.aspx).
+Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/legal/intellectualproperty/onlinedisclaimer.aspx).

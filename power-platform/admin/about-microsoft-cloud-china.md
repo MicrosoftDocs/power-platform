@@ -68,7 +68,7 @@ Due to certain technological dependencies, the following features listed will no
   - Knowledge Base Search
   - Similar Cases Search
 - The following [Field Service]/dynamics365/customer-engagement/field-service/overview.md) features will be unavailable:
-  - Remote Assist
+  - Dynamics 365 Remote Assist
   - Push Notifications
   - Geofencing
   - Resource Scheduling Optimization (RSO)
@@ -82,7 +82,7 @@ Due to certain technological dependencies, the following features listed will no
   - [Dynamics 365 AI for Sales]/dynamics365/customer-engagement/sales-enterprise/dynamics365-ai-sales.md)
 
 - The following components of Dynamics 365 Plan are unavailable.
-  - [Project Service Automation](https://dynamics.microsoft.com/en-us/project-service-automation/overview/)
+  - [Project Service Automation](https://dynamics.microsoft.com/project-service-automation/overview/)
   - [Marketing (for >10 users)](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/help-hub)
   - [Microsoft Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/integrate-social-engagement-dynamics-365)
   - [PowerApps for Dynamics 365](https://powerapps.microsoft.com/)

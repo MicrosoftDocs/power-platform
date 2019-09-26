@@ -96,7 +96,7 @@ For more information about generating and transferring an HSM-protected key over
 2.  [Activate an encryption key for a tenant](#activate-an-encryption-key-for-a-tenant) 
 3.	[Manage encryption for an environment](#manage-encryption-for-an-environment) 
 
-Administrators can use the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments) or the Dynamics 365 apps [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/en-us/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
+Administrators can use the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments) or the Dynamics 365 apps [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
   
 ### Generate or upload the encryption key for a tenant  
 All encryption keys are stored in the Azure Key Vault, and there can only be one active key at any time. Since the active key is used to encrypt all the environments in the tenant, managing the encryption is operated at the tenant level. Once the key is activated, each individual environment can then be selected to use the key for encryption. 
