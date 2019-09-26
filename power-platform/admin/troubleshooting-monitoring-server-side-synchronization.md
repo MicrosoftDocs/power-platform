@@ -168,7 +168,7 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
   
  **Solution:**  
   
- To change the primary synchronization organization and overwrite the setting stored in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)], click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > **Test & Enable Mailbox** > select **Sync items with Exchange from this Dynamics 365 apps Organization only, even if Exchanges was set to sync with a different Organization**. This will allow server-side synchronization to work for this [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance but the other instance would no longer work for synching that mailbox through server-side synchronization. To change the synchronization method for Appointments, Contacts, and Tasks, click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > select **None** for **Appointments, Contacts, and Tasks**.  
+ To change the primary synchronization organization and overwrite the setting stored in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)], click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > **Test & Enable Mailbox** > select **Sync items with Exchange from this Dynamics 365 apps Organization only, even if Exchanges was set to sync with a different Organization**. This will allow server-side synchronization to work for this [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment but the other environment would no longer work for synching that mailbox through server-side synchronization. To change the synchronization method for Appointments, Contacts, and Tasks, click: **Settings** > **Email Configuration** > **Mailbox** > open a mailbox > select **None** for **Appointments, Contacts, and Tasks**.  
   
  For more information, see: [When would I want to use this check box?](when-would-want-use-check-box.md)  
   
@@ -236,7 +236,7 @@ Review the troubleshooting steps in this topic and if the issue is successfully 
   
 - Server-side synchronization in Dynamics 365 apps requires a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail.  
   
-For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 for Customer Engagement](../admin/integrate-synchronize-your-email-system.md)  
+For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 apps](../admin/integrate-synchronize-your-email-system.md)  
   
 > [!NOTE]
 >  We recommend that you don’t use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data not synchronizing to all attendees.  

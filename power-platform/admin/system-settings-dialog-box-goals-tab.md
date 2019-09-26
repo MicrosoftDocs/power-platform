@@ -1,24 +1,20 @@
 ---
-title: "System Settings dialog box - Goals tab for Dynamics 365 apps | MicrosoftDocs"
-description: ""
-keywords: 
-ms.date: 10/09/2018
-ms.service:
-  - crm-online
-ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 14c34660-19df-40cb-bf84-3878dcfa3787
+title: "System Settings dialog box - Goals tab for Dynamics 365 apps  | MicrosoftDocs"
+description: System Settings dialog box - Goals tab for Dynamics 365 apps
 author: jimholtz
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/09/2018
 ms.author: jimholtz
-manager: annbe
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-caps.latest.revision: 12
+search.audienceType: 
+  - admin
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
 ---
-
 # System Settings dialog box - Goals tab
 
 Set the duration and frequency of the automatic rollup of goals. These settings only affect the automatic handling of all goals set in Dynamics 365. You can always perform a manual rollup for any goal at any time.  

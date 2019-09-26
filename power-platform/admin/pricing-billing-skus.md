@@ -112,7 +112,7 @@ PowerApps Plan 1 and Plan 2 licenses include capacities of one of more of these 
 |Common Data Service File capacity      | 20 GB         | 20 GB         |
 |Common Data Service Log capacity      | 2 GB         | 2 GB         |
 
-Per-user licenses come with included capacity for resources used when an app or flow is executed. These resources include data storage management and flow runs. The capacities included in the per-user licenses are pooled at the tenant level and, when the tenant’s capacity is exhausted, customers may purchase additional capacity through add-on licenses. For every increment of PowerApps or Flow user subscription licenses, the included database and file capacity increases, see table. The cap on the amount of database capacity that may be earned or purchased per tenant is subject to the technical limit of 4TB/instance, no maximum on file or log capacity.
+Per-user licenses come with included capacity for resources used when an app or flow is executed. These resources include data storage management and flow runs. The capacities included in the per-user licenses are pooled at the tenant level and, when the tenant’s capacity is exhausted, customers may purchase additional capacity through add-on licenses. For every increment of PowerApps or Flow user subscription licenses, the included database and file capacity increases, see table. The cap on the amount of database capacity that may be earned or purchased per tenant is subject to the technical limit of 4TB/environment, no maximum on file or log capacity.
 
 ### Accrued entitlements per user subscription license 
 
@@ -124,7 +124,7 @@ Per-user licenses come with included capacity for resources used when an app or 
 |Flow Runs per user/month     | 4,500      | 15,000      |
 
 > [!NOTE]
-> We’ve removed the requirement to purchase additional production or non-production environments for Common Data Service. New environments can be created when at least 1 GB of database capacity is available. To learn how to create new production or non-production instances, see [Create an environment](create-environment.md).
+> We’ve removed the requirement to purchase additional production or non-production environments for Common Data Service. New environments can be created when at least 1 GB of database capacity is available. To learn how to create new production or non-production environments, see [Create an environment](create-environment.md).
 
 ### Capacity add-ons 
 
@@ -162,21 +162,20 @@ Download the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/p/?L
 
 #### These Dynamics 365 apps can be customized using PowerApps and Microsoft Flow capabilities
 
-Dynamics 365 for Sales Professional<br/>
-Dynamics 365 for Customer Service Professional<br/>
-Dynamics 365 for Talent: Attract<br/>
-Dynamics 365 for Talent: Onboard<br/>
+Dynamics 365 Sales Professional<br/>
+Dynamics 365 Customer Service Professional<br/>
+Dynamics 365 Talent: Attract<br/>
+Dynamics 365 Talent: Onboard<br/>
 Dynamics 365 Team Member
 
 #### These Dynamics 365 apps and plans include PowerApps P2
 
 Dynamics 365 Business Central<br/>
-Dynamics 365 for Sales Enterprise<br/>
-Dynamics 365 for Customer Service<br/>
-Dynamics 365 for Field Service<br/>
-Dynamics 365 for Project Service Automation<br/>
-Dynamics 365 for Talent<br/>
-Dynamics 365 for Retail <br/>
-Dynamics 365 Customer Engagement Plan<br/>
+Dynamics 365 Sales Enterprise<br/>
+Dynamics 365 Customer Service<br/>
+Dynamics 365 Field Service<br/>
+Dynamics 365 Project Service Automation<br/>
+Dynamics 365 Talent<br/>
+Dynamics 365 Retail <br/>
 Dynamics 365 Unified Operations Plan<br/>
 Dynamics 365 Plan

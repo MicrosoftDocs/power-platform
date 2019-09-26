@@ -34,7 +34,7 @@ You can set the synchronization method for individual mailboxes:
   
 2.  Click **Mailboxes** > select a mailbox.  
   
-For information on picking a synchronization method, see [Integrate your email system with Dynamics 365 for Customer Engagement](../admin/integrate-synchronize-your-email-system.md).  
+For information on picking a synchronization method, see [Integrate your email system with Dynamics 365 apps](../admin/integrate-synchronize-your-email-system.md).  
   
 ## Incoming email messaging options  
  The available incoming email configurations that you can use when a user or a queue receives [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps email messages are as follows:  

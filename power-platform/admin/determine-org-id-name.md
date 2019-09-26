@@ -22,7 +22,7 @@ search.app:
 Follow these steps to determine your organization name and ID.
 
 1. Go to **Settings** > **Customizations** > **Developer Resources**.
-2. Under **Instance Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
+2. Under **environment Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/org-id-name.png "Determine org ID and name")

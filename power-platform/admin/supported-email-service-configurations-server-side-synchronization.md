@@ -76,7 +76,7 @@ Depending on your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] ap
 
 - Multi-factor authentication isn’t supported for Dynamics 365 apps to Exchange Server (on-premises), and Customer Engagement (on-premises) to Exchange Online.
   
-For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 for Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/admin/integrate-synchronize-your-email-system)  
+For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/integrate-synchronize-your-email-system)  
   
 > [!NOTE]
 >  We recommend that you don’t use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data not synchronizing to all attendees.  

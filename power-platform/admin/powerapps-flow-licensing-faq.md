@@ -81,7 +81,7 @@ Azure SQL Data Warehouse <br />
 Azure Table Storage <br />
 Dynamics 365 <br />
 Dynamics 365 Customer Insights <br />
-Dynamics 365 for Finance & Operations <br />
+Dynamics 365 Finance & Operations <br />
 Dynamics 365 Sales Insights <br />
 Dynamics 365 Business Central <br />
 Dynamics 365 Business Central (on-premises) <br />
@@ -134,7 +134,7 @@ Any end user running a flow will need to be licensed either by the per user or p
 ### Do users who use Microsoft Flow features built on the Common Data Service like approvals or business process flows need to be licensed?
 
 There are features in Microsoft Flow that are not running a flow directly – such as responding to an approval request or advancing a stage in a business process.
-These features are built on the Common Data Service. Normally, any use of these features requires either a standalone Microsoft Flow per user plan, or, that the flow that creates these business process instances or approval requests to be licensed under the per flow plan.
+These features are built on the Common Data Service. Normally, any use of these features requires either a standalone Microsoft Flow per user plan, or, that the flow that creates these business process environments or approval requests to be licensed under the per flow plan.
 
 ### What Common Data Service capacity is included with the PowerApps and Microsoft Flow plans?
 
@@ -235,11 +235,11 @@ Logins are specific to a single portal. So if you access multiple portals belong
 
 | **Parameter**                              | **Dynamics 365 Portals**                                            | **New PowerApps Portals**                                                                                                                              |
 |--------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Provisioning a portal instance**         | **Purchase** Dynamics 365 Additional Portal SKU at \$500 per month  | **Provision** a portal—no need to purchase portal addons to provision a portal                                                                         |
+| **Provisioning a portal environment**         | **Purchase** Dynamics 365 Additional Portal SKU at \$500 per month  | **Provision** a portal—no need to purchase portal addons to provision a portal                                                                         |
 | **Qualifying base offers**                 | Dynamics 365 licenses only                                          | Customers can add on portal external login or page view capacity to Dynamics 365, **PowerApps and Microsoft Flow licenses**                                      |
 | **Internal use rights**                    | Dynamics 365 enterprise licenses, Dynamics 365 team member license. | Internal users can now access portals with a **PowerApps per-app/per-user license. For a Dynamics license it is same as custom PowerApps use rights.** |
-| **Monetization**                           | Per portal instance Per page view                                   | **Per log in** Per page view                                                                                                                           |
-| **Entitlement for Dynamics 365 customers** | 1 portal instance for the first 10 full Dynamics 365 USLs           | Not applicable―PowerApps Portals instances can be provisioned                                                                                          |
+| **Monetization**                           | Per portal environment Per page view                                   | **Per log in** Per page view                                                                                                                           |
+| **Entitlement for Dynamics 365 customers** | 1 portal environment for the first 10 full Dynamics 365 USLs           | Not applicable―PowerApps Portals environments can be provisioned                                                                                          |
 
 ### Can I purchase PowerApps Portals add-on licenses with my existing PowerApps P1 or P2 plans or do I have to upgrade to the new plans to benefit from the new portal capability?
 

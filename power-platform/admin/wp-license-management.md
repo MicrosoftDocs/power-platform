@@ -33,7 +33,7 @@ The following summarizes the access based on various administrator role and lice
 
 |License type  |User/license management |PowerApps Admin Portal  |Manage environments  |Data loss policies  |Dynamics 365 Admin Center  |
 |---------|---------|---------|---------|---------|---------|
-|Global Admin without PowerApps P2     |Yes      |Sees only DLP policies and Tenant level user reports and statistics         |No         |Can create but only for all environments         |Can view Common Data Service instances         |
+|Global Admin without PowerApps P2     |Yes      |Sees only DLP policies and Tenant level user reports and statistics         |No         |Can create but only for all environments         |Can view Common Data Service environments         |
 |Global Admin with PowerApps P2      | Yes        | Full access        | Yes - all environments        | Full ability to view, create, modify and remove        | Full access        |
 |User Management Role      | Yes        | No access         |  No       |   No access      | No access        |
 |User Management role with PowerApps P2     |Yes         | No tenant level info, only own environments        | Only own        |Only own         | No access        |

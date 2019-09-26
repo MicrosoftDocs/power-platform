@@ -36,7 +36,7 @@ With rich text enabled you get the following benefits:
 > Although the rich text editor can be used with appointment activities, it can’t be used with recurring appointments. When an appointment that contains rich text is converted to a recurring appointment, the description field for the activity is converted to a plain-text field containing rich text content.
 
 ## Enable the rich text editor for appointments
-To enable the rich text editor on appointments, you need to configure the AppointmentRichEditorExperience organization setting for your Dynamics 365 apps instance by running the PowerShell sample below. 
+To enable the rich text editor on appointments, you need to configure the AppointmentRichEditorExperience organization setting for your Dynamics 365 apps environment by running the PowerShell sample below. 
 
 The PowerShell cmdlets require the Dynamics 365 apps Microsoft.Xrm.Data.PowerShell module. The sample below includes the cmdlet to install the module. 
 

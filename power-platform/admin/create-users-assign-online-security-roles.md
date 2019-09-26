@@ -81,7 +81,7 @@ The following are Office 365 user contact fields.
 - Each user license requires a unique Microsoft account, and every user who logs on to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps needs a license. Most [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps subscriptions include a specific number of user licenses.  
 
 > [!NOTE]
-> There is a set of default security roles that are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Customer Engagement Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. There is no data access permission granted to this role. The administrator is still required to assign the appropriate security role to the user in order for the user to view and interact with the data. 
+> There is a set of default security roles that are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. There is no data access permission granted to this role. The administrator is still required to assign the appropriate security role to the user in order for the user to view and interact with the data. 
 
 ## Assign a security role to a user  
  Security roles control a user’s access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user’s view of data and on the user’s interactions with that data.  
@@ -204,7 +204,7 @@ By default all licensed users are created with an access mode of **Read-Write**.
 4. Select the **Save** icon
 
 ## Create an Administrative user account
-An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the customer engagement functionality.  It is used to allow customers to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, etc).  Since the administrative user does not have access to customer data and any of the customer engagement functionalities, it does not require a Dynamics 365 apps license (after setup).
+An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the  functionality.  It is used to allow customers to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, etc).  Since the administrative user does not have access to customer data and any of the Dynamics 365 apps functionalities, it does not require a Dynamics 365 apps license (after setup).
 
 You need to have the System Administrator security role or equivalent permissions in Dynamics 365 apps to create an administrative user. First, you’ll create a user account in Office 365 and then in Dynamics 365 apps, select the **Administrative** access mode for the account.
 
@@ -279,7 +279,7 @@ All application users are created with a non-interactive user account, however t
 ## How stub users are created
 A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user does not exist in Dynamics 365 apps. This user cannot log in, cannot be enabled, and cannot be synchronized to Office 365. This type of user can only be created through data import. 
 
-A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in a Dynamics 365 for Customer Engagement environment and the **Common Data Service User** security role is assigned in a PowerApps environment.
+A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in a Dynamics 365 apps environment and the **Common Data Service User** security role is assigned in a PowerApps environment.
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 

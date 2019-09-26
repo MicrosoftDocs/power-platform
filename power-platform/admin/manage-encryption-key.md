@@ -96,7 +96,7 @@ For more information about generating and transferring an HSM-protected key over
 2.  [Activate an encryption key for a tenant](#activate-an-encryption-key-for-a-tenant) 
 3.	[Manage encryption for an environment](#manage-encryption-for-an-environment) 
 
-Administrators can use the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments) or the Dynamics 365 for Customer Engagement [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/en-us/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
+Administrators can use the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments) or the Dynamics 365 apps [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/en-us/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
   
 ### Generate or upload the encryption key for a tenant  
 All encryption keys are stored in the Azure Key Vault, and there can only be one active key at any time. Since the active key is used to encrypt all the environments in the tenant, managing the encryption is operated at the tenant level. Once the key is activated, each individual environment can then be selected to use the key for encryption. 
@@ -192,7 +192,7 @@ To perform this task using PowerShell, see [Set-CrmProtectWithMicrosoftKey](/pow
 Since there is only one active key per tenant, locking the encryption for the tenant *disables all the environments* that are in the tenant. All locked environments remain inaccessible to everyone, including [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)], until a tenant administrator in your organization unlocks it by using the key that was used to lock it.  
   
 > [!CAUTION]
->  You should never lock the tenant environments as part of your normal business process. When you lock a Common Data Service or Dynamics 365 for Customer Engagement tenant, all the environments will be taken completely offline and they can't be accessed by anyone, including Microsoft. Additionally, services such as synchronization and maintenance are all stopped. If you decide to leave the service, locking the tenant can ensure that your online data is never accessed again by anyone.  
+>  You should never lock the tenant environments as part of your normal business process. When you lock a Common Data Service or Dynamics 365 apps tenant, all the environments will be taken completely offline and they can't be accessed by anyone, including Microsoft. Additionally, services such as synchronization and maintenance are all stopped. If you decide to leave the service, locking the tenant can ensure that your online data is never accessed again by anyone.  
 > Note the following about tenant environments locking: 
 > - Locked environments can’t be restored from backup.  
 > - Locked environments are deleted if not unlocked after 28 days.

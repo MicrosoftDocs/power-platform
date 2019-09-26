@@ -80,7 +80,7 @@ For information about the programmatic interface for managing configuration and 
   
 ### [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps  
   
-- A [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)] or later version instance.  
+- A [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)] or later version environment.  
   
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution must be installed.  
     - In [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, go to **Settings** > **Microsoft Appsource** > search or browse to **Microsoft Dynamics 365 - Data Export Service**, and then select **Get it now**. 
@@ -88,7 +88,7 @@ For information about the programmatic interface for managing configuration and 
   
 - The entities that will be added to the Export Profile must be enabled with change tracking. To ensure a standard or custom entity can be synchronized go to **Customization** > **Customize the System**, and then click the entity. On the **General** tab make sure the **Change Tracking** option under the **Data Services** section is enabled.  
   
-- You must have the System Administrator security role in the instance of [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.  
+- You must have the System Administrator security role in the environment of [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.  
   
 ### Web browser  
  Enable pop-ups for the domain https://discovery.crmreplication.azure.net/ in your web browser. This is required for auto-sign in when you navigate to Settings > Data Export.  
@@ -113,15 +113,15 @@ For information about the programmatic interface for managing configuration and 
 <a name="shouldknowDES"></a>   
 ## What you should know before using the Data Export Service  
   
-- Export Profiles must be deleted and then re-created whenever you perform any of the following actions on a [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance. 
-  - Restore an instance.
-  - Copy (either full or minimal) an instance.
-  - Reset an instance.
-  - Move an instance to a different country or region.
+- Export Profiles must be deleted and then re-created whenever you perform any of the following actions on a [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment. 
+  - Restore an environment.
+  - Copy (either full or minimal) an environment.
+  - Reset an environment.
+  - Move an environment to a different country or region.
 
   To do this, delete the Export Profile in the EXPORT PROFILES view, then delete the tables and stored procedures, and then create a new profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to delete all Data Export Profile tables and stored procedures](#Delete_DEP)  
   
-- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn’t work for [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps sandbox instances that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](/dynamics365/customer-engagement/admin/manage-sandbox-instances.md#administration-mode)  
+- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn’t work for [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps sandbox environments that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](/dynamics365/customer-engagement/admin/manage-sandbox-environments.md#administration-mode)  
 
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] does not drop (delete) the associated tables, columns, or stored procedure objects in the destination Azure SQL database when the following actions occur.
   - An entity is deleted in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.
@@ -161,7 +161,7 @@ For information about the programmatic interface for managing configuration and 
 ## Create an Export Profile  
  Ensure that following requirements are met before creating an Export Profile.  
   
-- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution is installed in your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance.  
+- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution is installed in your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment.  
   
 - Maintain the [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database connection string in the Key Vault and copy the Key Vault URL to provide in the Export Profile. More information: [Azure: Get started with Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)  
   
@@ -169,7 +169,7 @@ For information about the programmatic interface for managing configuration and 
   
 - Your [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database service has enough storage space to store the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps data.  
   
-- You are a System Administrator in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance.  
+- You are a System Administrator in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment.  
   
 1. In [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, go to **Settings** > **Data Export**.  
   
@@ -268,7 +268,7 @@ For information about the programmatic interface for managing configuration and 
    >   - [!INCLUDE[cc_preview_features_expect_changes](../includes/cc-preview-features-expect-changes.md)]  
    >   - [!INCLUDE[cc_preview_features_no_MS_support](../includes/cc-preview-features-no-ms-support.md)]  
   
-   1. Sign in to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance and go to **Settings** > **Data Export**.  
+   1. Sign in to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment and go to **Settings** > **Data Export**.  
   
    2. Open the Export Profile that includes record synch failures.  
   
@@ -435,12 +435,12 @@ When the above conditions are met, 15 minutes is a typical synchronization laten
   
 - $connectionString. The connection string to the [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)]. You can use the ADO.NET connection string as it is displayed in your [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] dashboard.  
   
-- $organizationIdList = Comma separated list of allowed [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps organizations, listed by organization Id (organizationId), to enable for [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)].  To find an organization's Id, in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps go to **Settings** > **Customizations** > **Developer Resources**. The organization Id is under **Instance Reference Information**.  
+- $organizationIdList = Comma separated list of allowed [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps organizations, listed by organization Id (organizationId), to enable for [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)].  To find an organization's Id, in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps go to **Settings** > **Customizations** > **Developer Resources**. The organization Id is under **environment Reference Information**.  
   
 - $tenantId.  Specifies the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Id to which the Key Vault subscription.  
   
 > [!IMPORTANT]
->  An [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] subscription can have multiple [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Ids. Make sure that you select the correct [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Id that is associated with the instance of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps that you will use for data export.  
+>  An [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] subscription can have multiple [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Ids. Make sure that you select the correct [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Id that is associated with the environment of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps that you will use for data export.  
 
 ```powershell
 # -------------------------------------------------------------------------------- #
@@ -576,7 +576,7 @@ PRINT @sql
 EXEC SP_EXECUTESQL @sql;
 ```
 
-## Find the Azure Active Directory tenant Id for your Dynamics 365 for Customer Engagement instances
+## Find the Azure Active Directory tenant Id for your Dynamics 365 apps environments
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 2. On the left navigation pane select **All services**. 
@@ -620,7 +620,7 @@ EXEC SP_EXECUTESQL @sql;
   
 2. Create and execute a SQL query for the Azure SQL destination database that searches for records in the DeleteLog table. If one or more records are found it indicates the presence of deleted records.  
   
-3. If one or more records exist in the DeleteLog table, create and run a SQL query that detects instances where the record Id for a record found in the DeleteLog table matches the record Id for a record in an *EntityName* table and the versionNumber in the deleteLog is greater than the versionNumber on the record in the *EntityName* table. When a record Id match occurs, delete the record from the *EntityName* table. For example, if a record Id in the AccountId column of the DeleteLog table matches a record Id in the AccountId column of the AccountBase entity table and the versionNumber in the DeleteLog is greater than the versionNumber in the Account table, delete the record from the AccountBase entity table.  
+3. If one or more records exist in the DeleteLog table, create and run a SQL query that detects environments where the record Id for a record found in the DeleteLog table matches the record Id for a record in an *EntityName* table and the versionNumber in the deleteLog is greater than the versionNumber on the record in the *EntityName* table. When a record Id match occurs, delete the record from the *EntityName* table. For example, if a record Id in the AccountId column of the DeleteLog table matches a record Id in the AccountId column of the AccountBase entity table and the versionNumber in the DeleteLog is greater than the versionNumber in the Account table, delete the record from the AccountBase entity table.  
   
    > [!IMPORTANT]
    >  Depending on your business needs and requirements, we recommend that you execute the SQL queries for record deletion frequently, but during non-operational hours.

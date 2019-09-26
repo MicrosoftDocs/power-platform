@@ -42,9 +42,9 @@ Data as it is in transit between user devices and the Microsoft datacenters are 
 
 Data transferred through the on-premises data gateway is also encrypted. Data that users upload is typically sent to Azure Blob storage, and all metadata and artifacts for the system itself are stored in an Azure SQL database and Azure Table storage.
 
-All instances of the Common Data Service database use SQL Server Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.
+All environments of the Common Data Service database use SQL Server Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.
 
-By default, Microsoft stores and manages the database encryption keys for your instances so you don’t have to. The manage keys feature in the Dynamics 365 admin center gives administrators the ability to self-manage the database encryption keys that are associated with instances of Dynamics 365 (online). You can read more about managing your own keys here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-encryption-keys-instance but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
+By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Dynamics 365 admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-encryption-keys-environment but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
 
 ## Resources to manage GDPR Compliance
 

@@ -109,7 +109,7 @@ To find the latest release for these web browsers, visit the software manufactur
 
 <a name="BKMK_TLS"></a> 
 ## Transport Layer Security (TLS) requirement
-With the [!INCLUDE [pn-crm-9-0-0-online](../includes/pn-crm-9-0-0-online.md)], web browsers and other client applications that only use Transport Layer Security (TLS) versions earlier than TLS 1.2 will be unable to connect to their [!INCLUDE [pn-crm-online-shortest](../includes/pn-crm-online-shortest.md)] instances and the [!INCLUDE [pn-dyn-365-admin-center](../includes/pn-dyn-365-admin-center.md)]. 
+With the [!INCLUDE [pn-crm-9-0-0-online](../includes/pn-crm-9-0-0-online.md)], web browsers and other client applications that only use Transport Layer Security (TLS) versions earlier than TLS 1.2 will be unable to connect to their [!INCLUDE [pn-crm-online-shortest](../includes/pn-crm-online-shortest.md)] environments and the [!INCLUDE [pn-dyn-365-admin-center](../includes/pn-dyn-365-admin-center.md)]. 
 
 For more information, see these blog posts: 
 - [Updates coming to Dynamics 365 apps connection security](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
@@ -117,5 +117,5 @@ For more information, see these blog posts:
 
 ### See also  
  [Supported web browsers and mobile devices](../admin/supported-web-browsers-and-mobile-devices.md)   
- <!-- [64-bit supported configurations for Microsoft Dynamics 365 for Customer Engagement](../admin/64-bit-supported-configurations-for-microsoft-dynamics-365.md) 
+ <!-- [64-bit supported configurations for Microsoft Dynamics 365 apps](../admin/64-bit-supported-configurations-for-microsoft-dynamics-365.md) 
  [Microsoft Dynamics 365 apps system requirements and required technologies](Microsoft%20Dynamics%20365%20system%20requirements%20and%20required%20technologies.md) -->  

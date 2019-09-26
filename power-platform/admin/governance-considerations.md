@@ -24,7 +24,7 @@ Many customers wonder: How can PowerApps and Microsoft Flow be made available to
 |---------|---------|
 |Architecture     | <ul><li>What are the basic constructs and concepts of PowerApps, Microsoft Flow, and Common Data Service?</li> <br /><li>How do these constructs fit together at design time and runtime?</li></ul> |
 |Security     | <ul><li>What are the best practices for security design considerations?</li> <br /><li>How do I leverage our existing user and group management solutions to manage access and security roles in PowerApps?</li></ul>     |
-|Alert and Action     | <ul><li>How do I define the governance model between citizen developers and managed IT services?</li> <br /><li>How do I define the governance model between central IT and the business unit admins?</li> <br /><li>How should I approach support for non-default instances in my organization? </li></ul>        |
+|Alert and Action     | <ul><li>How do I define the governance model between citizen developers and managed IT services?</li> <br /><li>How do I define the governance model between central IT and the business unit admins?</li> <br /><li>How should I approach support for non-default environments in my organization? </li></ul>        |
 |Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
@@ -62,7 +62,7 @@ After users have licenses, environments exist as containers for all resources ut
 
 ### Secure your data and network
 - PowerApps and Flow *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
-- Network Access control policies can also apply to PowerApps and Flow. For instance, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps and Flow. 
+- Network Access control policies can also apply to PowerApps and Flow. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps and Flow. 
 - In an environment, access is controlled at three levels: [Environment roles](database-security.md), [Resource permissions for PowerApps](wp-controlling-access.md), Microsoft Flows, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
 - When Common Data Service is created in an environment the Common Data Service roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
 
@@ -152,14 +152,14 @@ Customers with Microsoft Intune can set mobile application protection policies f
       4. Go to the settings gear at the top of the portal and select Custom Connectors
       5. Select Create custom connector >Import from an Open API file
       6. Give the custom connector a meaningful name, e.g. “CDS Permissions” and select the CDS-Permissions Swagger file that you downloaded.
-      7. On the General tab, enter the host of your CDS instance:
+      7. On the General tab, enter the host of your CDS environment:
 
          image
 
       8. Select Security -> to go to the next tab. Here, select Azure Active Directory as your authentication provider
       9. You will now fill in the Client ID field  - copy it from the Properties of your Azure AD app in the Azure Portal. The field is called Application ID
       10. Next, you’ll fill in the Client secret. From the Azure portal, select the Keys screen and in the Passwords section enter a new description and duration. Select Save. You’ll be able to copy the Value – put that in the Client secret field. (NOTE:  Make sure you copy and save this key somewhere secure.  You won’t be able to retrieve it later.)
-      11. In the Resource URL field enter the full URL of your CDS instance host (unlike the first screen, include https://).The screen should now look like:
+      11. In the Resource URL field enter the full URL of your CDS environment host (unlike the first screen, include https://).The screen should now look like:
 
           image
 
@@ -185,7 +185,7 @@ Customers with Microsoft Intune can set mobile application protection policies f
          4. Notice that the List Users query now looks for records where “azureactivedirectoryobjectid” equals the Id from the AD Group. (No quotes are required around the Id because it’s a GUID.  Adding quotes will make this $filter fail.)
       4. Once you’ve identified the user(s) that you want to assign to the role, the next step is to search for that user in the Common Data Service (to get the CDS id). 
       5. Then, based on that result we set the user role. The second foreach isn’t needed, because List users should always return one user.
-      6. To assign the correct role, you should first query the REST Endpoint of your instance, for example:
+      6. To assign the correct role, you should first query the REST Endpoint of your environment, for example:
          1.	https://orga2e7dd43.crm.dynamics.com/api/data/v9.0/roles?$select=name,roleid 
          2.	This will return a list of names and ID’s for all the available roles, for example:
  
@@ -330,13 +330,13 @@ The means by which software is developed, validated and deployed to a production
 7.	Custom Connectors are patched for single-sign-on. 
 8.	AAD app registrations are admin consented.
 9.	The connection object is patched to use aadcertificate auth under the context of the PowerApps API Hub
-10.	SQL connectors and push notification connectors show up in the Connections view as they are a shared instance. Makes must be educated to not delete these, as they are *not* a personal connection instance of a custom connector and deleting them will delete it for all users.
+10.	SQL connectors and push notification connectors show up in the Connections view as they are a shared environment. Makes must be educated to not delete these, as they are *not* a personal connection environment of a custom connector and deleting them will delete it for all users.
 
 ### How does Microsoft prepare for disaster recovery?
 
 1.	For canvas apps, versioning is built-in the service and any maker can restore an app to a preview version. See [https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app](https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app).
 2.	For Microsoft Flows, we use the export feature to download the flow as a .zip package and archive the package.
-3.	For all Common Data Service components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](https://docs.microsoft.com/dynamics365/customer-engagement/admin/backup-restore-instances).
+3.	For all Common Data Service components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](https://docs.microsoft.com/dynamics365/customer-engagement/admin/backup-restore-environments).
 -->
 
 

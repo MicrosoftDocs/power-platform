@@ -1,18 +1,18 @@
 ---
-title: "System Settings dialog box - Formats tab for Dynamics 365 apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 09/30/2017
-ms.reviewer: 
-ms.service: crm-online
-ms.topic: article
-caps.latest.revision: 10
+title: "System Settings dialog box - Formats tab for Dynamics 365 apps  | MicrosoftDocs"
+description: System Settings dialog box - Formats tab for Dynamics 365 apps 
 author: jimholtz
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/30/2017
 ms.author: jimholtz
-manager: brycho
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # System Settings dialog box - Formats tab

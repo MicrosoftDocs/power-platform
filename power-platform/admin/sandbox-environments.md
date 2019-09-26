@@ -72,7 +72,7 @@ The reset process starts.
 > ![](media/reset-environment-status.png "Reset environment status")
   
 ## Administration mode  
- When you place a Sandbox environment in administration mode only users with Customer Engagement System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
+ When you place a Sandbox environment in administration mode only users with Dynamics 365 apps System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
   
 > [!NOTE]
 > - You can only place Sandbox environments in administration mode.  

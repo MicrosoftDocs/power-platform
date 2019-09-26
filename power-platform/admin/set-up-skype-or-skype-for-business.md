@@ -65,5 +65,5 @@ When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.
  ![Lync calls tracked as activities](../admin/media/crm-itpro-crmo365tg2-lynctrack.png "Lync calls tracked as activities")  
   
 ### See also 
- [Skype for Business and Skype integration with Microsoft Dynamics 365 for Customer Engagement](skype-business-integration.md)   
+ [Skype for Business and Skype integration with Microsoft Dynamics 365 apps](skype-business-integration.md)   
  [Skype for Business help](https://support.office.com/skype-for-business)

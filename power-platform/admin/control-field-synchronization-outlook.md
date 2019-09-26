@@ -28,7 +28,7 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
   
 ## Set field synchronization between Dynamics 365 apps and Outlook  
   
-1. Sign in as a Customer Engagement admin. 
+1. Sign in as a Dynamics 365 apps admin. 
 
 2. In the web app, select **Settings** > **Administration** > **System Settings** > **Synchronization** tab.
   
@@ -59,6 +59,6 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
   
 -   Securing fields: [Add or remove security from a field](enable-disable-security-field.md)  
   
-[!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How field security affects synchronization between Dynamics 365 apps and Outlook](../admin/how-field-security-affects-synchronization-between-outlook.md) and [Security concepts for Microsoft Dynamics 365 for Customer Engagement](../admin/wp-security-cds.md)  
+[!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How field security affects synchronization between Dynamics 365 apps and Outlook](../admin/how-field-security-affects-synchronization-between-outlook.md) and [Security concepts for Microsoft Dynamics 365 apps](../admin/wp-security-cds.md)  
   
 ### See also  

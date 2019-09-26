@@ -46,8 +46,8 @@ search.app:
 <a name="BKMK_Overview"></a>   
 ## Dynamics 365 apps service overview  
   
-### Will multi-geo instances be available to customers in Canada?  
- Yes, multi-geo instances will be supported for Canada. Multi-geo instances are designed for companies with offices in multiple countries or regions who want to keep core customer data within those countries or regions. Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo instances](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md).  
+### Will multi-geo environments be available to customers in Canada?  
+ Yes, multi-geo environments will be supported for Canada. Multi-geo environments are designed for companies with offices in multiple countries or regions who want to keep core customer data within those countries or regions. Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo environments](/dynamics365/customer-engagement/admin/add-edit-multiregional-environments.md).  
   
 ### Will the standard Dynamics 365 apps service level agreements be offered?  
  Yes, the standard [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] service level agreements (SLAs) will apply to the Canada regions, just as they do in our other regions around the world.  
@@ -77,7 +77,7 @@ search.app:
  You may request migration to the Canada datacenter by submitting a technical support request.  If you’re an existing [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] customer with a billing address mapping to Canada, review the information in this topic to understand the move process.  
   
 <a name="BKMK_RequestMove"></a>   
-### How do I request my instance to be moved to Canada?  
+### How do I request my environment to be moved to Canada?  
  You can request a move to the new Canada datacenter by submitting a technical support request through the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] or by calling [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)]. Please select the Data Management topic and Data Center Migration Request sub-topic to ensure your request receives the best possible routing.  A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] support engineer will assist you in verifying required prerequisites and provide guidance throughout the move process.  
   
  ![Migration Process](media/migration-process.png "Migration Process")  
@@ -111,7 +111,7 @@ search.app:
 ### If I started a trial outside of Canada and before general availability, will I be moved to the Canada datacenter after general availability?  
  No. Trials will remain in the geography where they were initiated. You may choose to start a new trial that will provision in the Canada datacenter.  
   
-### If I choose to convert a trial to a paid subscription, where the trial was created in a geographic region outside of Canada prior to general availability, will my subscription tenant and instance be moved to the Canada datacenter?  
+### If I choose to convert a trial to a paid subscription, where the trial was created in a geographic region outside of Canada prior to general availability, will my subscription tenant and environment be moved to the Canada datacenter?  
  No. If you choose to convert a trial that was created in a geographic region outside of Canada before general availability, your trial will be converted and billed in the geography where it was initiated. If the trial was originally deployed in Canada and converted to a paid subscription, it will continue to be deployed in Canada.  
   
 ### If a customer creates a trial in the Canada datacenter after general availability, will they be taxed for the trial?  

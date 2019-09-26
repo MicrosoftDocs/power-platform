@@ -23,7 +23,7 @@ An environment is a space to store, manage, and share your organization’s busi
 ## Provisioning a new environment
 You have a choice when provisioning a new environment. You can:
 
-- Provision based on [buying an instance](https://docs.microsoft.com/dynamics365/customer-engagement/admin/add-instance-subscription#add-an-additional-instance) using the Dynamics 365 Admin center.<br />
+- Provision based on [buying an environment](https://docs.microsoft.com/dynamics365/customer-engagement/admin/add-instance-subscription#add-an-additional-instance) using the Dynamics 365 Admin center.<br />
 or <br />
 - Provision based on [available capacity](capacity-storage.md#about-the-new-capacity-analytics-reporting). See the section [Create an environment in the Power Platform Admin center](#create-an-environment-in-the-power-platform-admin-center).
 
@@ -43,7 +43,7 @@ Your license determines whether you can create environments.
 | Office 365 Plans |No | No |
 | Dynamics 365 Teams Plans   |No | No |
 | PowerApps Community Plan   |No | No |
-| Dynamics 365 Customer Engagement Trial | Yes (one) | Yes|
+| Dynamics 365 Trial | Yes (one) | Yes|
 | Dynamics 365 Plans |Yes (one)| Yes |
 | Dynamics 365 Apps Plans |Yes (one)| Yes |
 | PowerApps P2 |Yes (one)| Yes |

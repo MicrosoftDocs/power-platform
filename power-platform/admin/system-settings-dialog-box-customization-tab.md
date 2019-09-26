@@ -1,24 +1,18 @@
 ---
 title: "System Settings dialog box - Customization tab for Dynamics 365 apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 10/30/2017
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
+description: System Settings dialog box - Customization tab for Dynamics 365 apps
 author: jimholtz
-ms.assetid: d1d78ba3-58a9-4608-acfc-eb1da235fe1b
-caps.latest.revision: 25
-ms.author: jimholtz
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/30/2017
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # System Settings dialog box - Customization tab 

@@ -1,21 +1,18 @@
 ---
 title: "System Settings dialog box - Auditing tab for Dynamics 365 apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 10/30/2017
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 97b968aa-18d0-4ada-8c80-0975d61f844a
-caps.latest.revision: 21
+description: System Settings dialog box - Auditing tab for Dynamics 365 apps
 author: jimholtz
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/30/2017
 ms.author: jimholtz
-manager: brycho
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # System Settings dialog box - Auditing tab

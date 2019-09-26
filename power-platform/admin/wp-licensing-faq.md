@@ -33,7 +33,7 @@ See the PowerApps Licensing overview page for the list of Office 365 plans that 
 See the [Licenses](pricing-billing-skus.md#licenses) for the list of Dynamics 365 apps and plans that include PowerApps capabilities.
 
 ### Can I connect to Microsoft Dynamics for Finance and Operations? 
-Yes, you can use the Dynamics 365 for Finance and Operations connector to build canvas apps using this data.
+Yes, you can use the Dynamics 365 Finance and Operations connector to build canvas apps using this data.
 
 ### How long is the free trial period? 
 Free trials last 30 days.

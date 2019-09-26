@@ -22,7 +22,7 @@ search.app:
 Store the documents related to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps entity records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] and quickly access, share, and manage these documents from [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps by enabling document management on the specific entities.  
   
 > [!TIP]
->  If you haven’t set up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, you may want to do that before enabling document management for specific entities. For more information, see [Set up SharePoint integration with Microsoft Dynamics 365 for Customer Engagement](set-up-sharepoint-integration.md).  
+>  If you haven’t set up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, you may want to do that before enabling document management for specific entities. For more information, see [Set up SharePoint integration with Microsoft Dynamics 365 apps](set-up-sharepoint-integration.md).  
   
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)] Or verify that you have Read and Write privileges on all record types that are customizable.  
   
@@ -47,11 +47,11 @@ Store the documents related to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamic
       If you don't want folders automatically created, clear the **Based on entity** check box.  
    
      > [!IMPORTANT]
-     >  If you have [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instances.  
+     >  If you have [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environments.  
       
    - Click **Finish**.  
   
-      For more information on server-based integration, see [Set up SharePoint integration with Microsoft Dynamics 365 for Customer Engagement](set-up-sharepoint-integration.md).  
+      For more information on server-based integration, see [Set up SharePoint integration with Microsoft Dynamics 365 apps](set-up-sharepoint-integration.md).  
   
 <!--    If you don't use server-based integration  
   
@@ -76,4 +76,4 @@ Store the documents related to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamic
   
 ### See also  
  [Edit existing SharePoint site records](../admin/edit-existing-sharepoint-site-records.md)   
- [Set up SharePoint integration with Microsoft Dynamics 365 for Customer Engagement](set-up-sharepoint-integration.md)
+ [Set up SharePoint integration with Microsoft Dynamics 365 apps](set-up-sharepoint-integration.md)

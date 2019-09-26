@@ -1,30 +1,20 @@
 ---
-title: "System Settings dialog box - Previews tab for Dynamics 365 apps | MicrosoftDocs"
-description: ""
-keywords: 
-ms.date: 06/04/2018
-ms.service: crm-online
-ms.custom: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 85cbd3ee-6a08-4ee2-876f-b4a5039dbbde
+title: "System Settings dialog box - Previews tab for Dynamics 365 apps  | MicrosoftDocs"
+description: System Settings dialog box - Previews tab for Dynamics 365 apps
 author: jimholtz
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 06/04/2018
 ms.author: jimholtz
-manager: brycho
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-caps.latest.revision: 1
-topic-status: Drafting
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
-
 # System Settings dialog box - Previews tab
 
 Use the settings on this page to enable preview features in model-driven apps in Dynamics 365.
@@ -52,9 +42,9 @@ Use the settings on this page to enable preview features in model-driven apps in
 |**Action Step Support for Business Process Flows Preview**||
 |Enable Action Step Support for Business Process Flows Preview|More information: [Business process flows overview](/dynamics365/customer-engagement/customize/business-process-flows-overview.md)|
 |**Organization Insights Preview**||
-|Enable Organization Insights Preview|More information: [Preview feature: Use the Organization Insights dashboard to view metrics about your instance](/dynamics365/customer-engagement/admin/use-organization-insights-dashboard-view-instance-metrics.md)|
+|Enable Organization Insights Preview|More information: [Preview feature: Use the Organization Insights dashboard to view metrics about your environment](/dynamics365/customer-engagement/admin/use-organization-insights-dashboard-view-instance-metrics.md)|
 |**Text Analytics Preview for Case Topic analysis, Suggest Similar Cases and Suggest Knowledge Articles**||
-|Enable the Dynamics 365 for Dynamics 365 apps Text Analytics Preview|More information: [Public Preview: Topic analysis](https://technet.microsoft.com/library/mt752501.aspx)|
+|Enable the Dynamics 365 apps Text Analytics Preview|More information: [Public Preview: Topic analysis](https://technet.microsoft.com/library/mt752501.aspx)|
 |**Sales Insights**||
 |Install Relationship Analytics to enable it for preview|More information: [Preview feature: Get insights on opportunities, activities, and leads of customers](https://docs.microsoft.com/dynamics365/customer-engagement/sales-enterprise/sales-insights-addon)|
 

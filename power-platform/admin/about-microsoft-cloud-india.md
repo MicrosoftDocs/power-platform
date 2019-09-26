@@ -46,10 +46,10 @@ search.app:
 <a name="BKMK_Overview"></a>   
 ## Dynamics 365 apps service overview  
   
-### Will multi-geo instances be available to customers in India?  
- Yes, multi-geo instances will be supported for India as long as the tenant is provisioned in India. For customers not located in India who want to provision an instance of [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] within the India datacenter, they must first purchase a tenant for an organization located in India and then the tenant can be provisioned in India.  
+### Will multi-geo environments be available to customers in India?  
+ Yes, multi-geo environments will be supported for India as long as the tenant is provisioned in India. For customers not located in India who want to provision an environment of [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] within the India datacenter, they must first purchase a tenant for an organization located in India and then the tenant can be provisioned in India.  
   
- Availability of multi-geo instance support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo instances](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md).  
+ Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo environments](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md).  
   
 ### Will the standard Dynamics 365 apps service level agreements be offered?  
  Yes, the standard [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] service level agreements (SLAs) will apply to the India regions, just as they do in our other regions around the world.  
@@ -79,7 +79,7 @@ search.app:
  You may request migration to the India datacenter by submitting a technical support request.  If you’re an existing [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] customer with a billing address mapping to India, review the information in this topic to understand the move process.  
   
 <a name="BKMK_RequestMove"></a>   
-### How do I request my instance to be moved to India?  
+### How do I request my environment to be moved to India?  
  You can request a move to the new India datacenter by submitting a technical support request through the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] or by calling [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)]. Please select the Data Management topic and Data Center Migration Request sub-topic to ensure your request receives the best possible routing.  A [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] support engineer will assist you in verifying required prerequisites and provide guidance throughout the move process.  
   
  ![Migration Process](media/migration-process.png "Migration Process")  
@@ -113,7 +113,7 @@ search.app:
 ### If I started a trial outside of India and before general availability, will I be moved to the India datacenter after general availability?  
  No. Trials will remain in the geography where they were initiated. You may choose to start a new trial that will provision in the India datacenter.  
   
-### If I choose to convert a trial to a paid subscription, where the trial was created in a geographic region outside of India prior to general availability, will my subscription tenant and instance be moved to the India datacenter?  
+### If I choose to convert a trial to a paid subscription, where the trial was created in a geographic region outside of India prior to general availability, will my subscription tenant and environment be moved to the India datacenter?  
  No. If you choose to convert a trial that was created in a geographic region outside of India before general availability, your trial will be converted and billed in the geography where it was initiated. If the trial was originally deployed in India and converted to a paid subscription, it will continue to be deployed in India.  
   
 ### If a customer creates a trial in the India datacenter after general availability, will they be taxed for the trial?  

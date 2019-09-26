@@ -37,9 +37,9 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | Office licenses (that include PowerApps/Microsoft Flow)  | 2,000                                                     |
 | Application user / Non-interactive users       | [See section below](#non-licensed-usersapplication-users) |
 
-<sup>*</sup>Dynamics 365 Enterprise applications include Dynamics 365 for Sales Enterprise, Dynamics 365 for Customer Service Enterprise, Dynamics 365 for Field Service, Dynamics 365 for Project Service Automation, Dynamics 365 for Retail, Dynamics 365 for Talent. 
+<sup>*</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent. 
 
-<sup>**</sup>Dynamics 365 Professional includes Dynamics 365 for Sales Professional, Dynamics 365 for Customer Service Professional.
+<sup>**</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
 Users who are running apps and flows without a user license through the PowerApps per app plan or the Microsoft Flow per flow plan are granted the following
 per-user API request entitlement.
@@ -50,10 +50,10 @@ per-user API request entitlement.
 | Microsoft Flow per flow plan      | 15,000 per flow     |
 
 If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated
-to each license type. For example, if a user has both a Dynamics 365 for Customer Service Enterprise plan as well as a PowerApps per app plan, then that
+to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise plan as well as a PowerApps per app plan, then that
 user will have a total of 20000 + 1000 = 21000 requests available per 24 hours.
 
-If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 for Customer Service Enterprise license as the base license and a Dynamics 365 for Sales Enterprise license attached, the total number of requests would be what is provided by the base license - Dynamics 365
+If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 Customer Service Enterprise license as the base license and a Dynamics 365 Sales Enterprise license attached, the total number of requests would be what is provided by the base license - Dynamics 365
 for Customer Service.
 
 ### PowerApps and Microsoft Flow capacity add-on

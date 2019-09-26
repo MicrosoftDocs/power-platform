@@ -27,7 +27,7 @@ Organizations can create a model and visualize their sales territories in a hier
 
 > [!IMPORTANT]
 > - Territory hierarchical relationship (or territory hierarchy) is a preview feature. To learn more about preview features, see [What are Preview features and how do I enable them?](../admin/what-are-preview-features-how-do-i-enable-them.md).
-> - For a new organization that provisions Dynamics 365 for Sales, the territory hierarchical relationship will be available and enabled by default.
+> - For a new organization that provisions Dynamics 365 Sales, the territory hierarchical relationship will be available and enabled by default.
 > - For existing customers upgrading to the latest release, if the organization doesn’t already have a hierarchical relationship created for the Territory entity, the hierarchical relationship will be available and enabled. If the organization has a hierarchical relationship created for territory, the new out-of-the-box territory hierarchical relationship will be available but not enabled.
 
 ## Create a sales territory (Sales Hub app)

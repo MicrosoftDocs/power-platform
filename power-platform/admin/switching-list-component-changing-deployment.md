@@ -30,7 +30,7 @@ This topic provides an overview about how to switch from the list component to s
 
 |Environment  |Topic  |
 |---------|---------|
-|Dynamics 365 apps and SharePoint Online  |   [Set up Dynamics 365 for Customer Engagement to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)        |
+|Dynamics 365 apps and SharePoint Online  |   [Set up Dynamics 365 apps to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)        |
 |Dynamics 365 apps and SharePoint on-premises     |   [Configure server-based authentication with Dynamics 365 apps and SharePoint on-premises](../admin/configure-server-based-authentication-sharepoint-on-premises.md)      |
   
    > [!NOTE]
@@ -81,5 +81,5 @@ If the **Enable Server-Based SharePoint Integration** icon doesn't appear in the
 
 
 ### See also
-[Set up SharePoint integration with Microsoft Dynamics 365 for Customer Engagement](../admin/set-up-sharepoint-integration.md) 
+[Set up SharePoint integration with Microsoft Dynamics 365 apps](../admin/set-up-sharepoint-integration.md) 
   

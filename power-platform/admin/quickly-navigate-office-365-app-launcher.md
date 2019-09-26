@@ -36,7 +36,7 @@ search.app:
  Check your email.  Create  a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] doc. Get files from your [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)].  All while staying just two clicks away from getting back to Dynamics 365 apps.  
   
 > [!NOTE]
-> **TIP**: If you've just started a trial or upgraded to [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)], you might need to refresh or open a new browser session to see your apps. There might be a delay for your instance to fully provision.  
+> **TIP**: If you've just started a trial or upgraded to [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)], you might need to refresh or open a new browser session to see your apps. There might be a delay for your environment to fully provision.  
 > 
 >  For [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscriptions, the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher will take users to either [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps or the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)]. Admins will go to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
   
@@ -48,7 +48,7 @@ search.app:
   
  Click the **Admin** tile to go to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], where you can add users and change passwords.  
   
- ![Microsoft 365 admin center in Dynamics 365 for Customer Engagement](../admin/media/office-365-admin-center.png "Microsoft 365 admin center in Dynamics 365 for Customer Engagement")  
+ ![Microsoft 365 admin center in Dynamics 365 apps](../admin/media/office-365-admin-center.png "Microsoft 365 admin center in Dynamics 365 apps")  
   
 <a name="BKMK_IntroD365HomePage"></a>   
 ## For admins and end users: Introducing the Dynamics 365 apps home page  
@@ -61,20 +61,20 @@ search.app:
  ![Dynamics 365 apps home page](../admin/media/dynamics-365-home-page.png "Dynamics 365 apps home page")  
   
 > [!NOTE]
->  The [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page is not part of the [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscription. Clicking [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] takes [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] users to your instance of [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] or to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
+>  The [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page is not part of the [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscription. Clicking [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] takes [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] users to your environment of [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] or to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
   
  See the next section to see what you can do with the home page.  
   
 <a name="BKMK_ViewApps"></a>   
 ### View your apps 
- Any [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] app for which you have a license appears as an app module tile on this page. If you have multiple instances of an app, select the tile for the instance you want to open.  
+ Any [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] app for which you have a license appears as an app module tile on this page. If you have multiple environments of an app, select the tile for the environment you want to open.  
   
- In this example, there are two instances of [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] displayed.  
+ In this example, there are two environments of [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] displayed.  
   
 > [!TIP]
->  If you've just started a trial or upgraded to [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)], you might need to refresh or open a new browser session to see your apps. There might be a delay for your instance to fully provision.  
+>  If you've just started a trial or upgraded to [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)], you might need to refresh or open a new browser session to see your apps. There might be a delay for your environment to fully provision.  
   
- ![Two instances of Dynamics 365 apps on the home page](../admin/media/two-instances-of-dynamics-365-online-in-the-home-page.png "Two instances of Dynamics 365 apps on the home page")  
+ ![Two environments of Dynamics 365 apps on the home page](../admin/media/two-instances-of-dynamics-365-online-in-the-home-page.png "Two environments of Dynamics 365 apps on the home page")  
   
 > [!NOTE]
 > **What is "Dynamics 365 - custom"?**  
@@ -98,7 +98,7 @@ search.app:
   
 2. Click the **ellipses** (...), and then click **Pin this app**.  
   
-   ![Pin This App button in Dynamics 365 for Customer Engagement](../admin/media/pin-dynamics-365-app.png "Pin This App button in Dynamics 365 for Customer Engagement")  
+   ![Pin This App button in Dynamics 365 apps](../admin/media/pin-dynamics-365-app.png "Pin This App button in Dynamics 365 apps")  
   
    The app will appear at the top of the home page and in the task pane.  
   

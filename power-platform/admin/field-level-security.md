@@ -109,7 +109,7 @@ Configure the security profiles.
   
 3. Click **Save and Close**.  
   
-Any Dynamics 365 apps users not defined in the previously created field security profiles will not have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon for Dynamics 365 for Customer Engagement](../admin/media/admin-field-level-security-lock.png "Lock icon for Dynamics 365 for Customer Engagement") ********, indicating that the field is secured.  
+Any Dynamics 365 apps users not defined in the previously created field security profiles will not have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon for Dynamics 365 apps](../admin/media/admin-field-level-security-lock.png "Lock icon for Dynamics 365 apps") ********, indicating that the field is secured.  
   
 <a name="BKMK_FLS_fields"></a>   
 ## Which fields can be secured?  

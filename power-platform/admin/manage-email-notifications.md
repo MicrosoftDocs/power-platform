@@ -35,7 +35,7 @@ The [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps service team re
   
 - Email deployments other than [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]  
   
-  If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps admin. If you’re not sure who your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps admin is, see: [Find your Dynamics 365 for Customer Engagement administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
+  If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps admin. If you’re not sure who your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps admin is, see: [Find your Dynamics 365 apps administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
   
   For more information, download the white paper: [Create your Mailbox rule](http://download.microsoft.com/download/D/1/A/D1A64A1D-FD55-43E4-AD71-9D32D16E5F9E/Create%20your%20Mailbox%20rule.docx)  
   
@@ -45,17 +45,17 @@ The [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps service team re
   
 1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
   
-2. On the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] menu bar, click **Admin centers** > **Dynamics 365** > **Instances** tab.  
+2. On the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] menu bar, click **Admin centers** > **Dynamics 365** > **environments** tab.  
   
-3. Choose an instance that has notifications you want to change.  
+3. Choose an environment that has notifications you want to change.  
   
 4. Click **Notifications**.  
   
-   ![Notifications button in Dynamics 365 for Customer Engagement](../admin/media/customer-driven-update-notifications.png "Notifications button in Dynamics 365 for Customer Engagement")  
+   ![Notifications button in Dynamics 365 apps](../admin/media/customer-driven-update-notifications.png "Notifications button in Dynamics 365 apps")  
   
-5. Enter the email addresses of people to receive update notifications for the selected instance and click **Save**.  
+5. Enter the email addresses of people to receive update notifications for the selected environment and click **Save**.  
   
-   ![Send Email Notifications in Dynamics 365 for Customer Engagement](../admin/media/customer-driven-updatesendemailnotifications.PNG "Send Email Notifications in Dynamics 365 for Customer Engagement")  
+   ![Send Email Notifications in Dynamics 365 apps](../admin/media/customer-driven-updatesendemailnotifications.PNG "Send Email Notifications in Dynamics 365 apps")  
   
 ### See also   
  [Blog: Managing Email notifications in Microsoft Dynamics CRM Online](http://blogs.msdn.com/b/crm/archive/2014/05/27/how-do-i-start-receiving-notification.aspx)   

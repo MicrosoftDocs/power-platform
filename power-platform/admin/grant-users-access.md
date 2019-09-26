@@ -26,7 +26,7 @@ To have users up and running in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-onli
  In Dynamics 365 apps, populate the service with your organization’s data, including users and their security roles, business units, and any existing [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data that you want to import from other applications or services. If your organization uses business units, assign users to the appropriate business unit, and then assign a security role to each user. Dynamics 365 apps includes predefined security roles that aggregate a set of user permissions to simplify user security management. An organization can define additional roles or edit predefined security roles to meet its unique security needs. For more information about security roles in Dynamics 365 apps, see [Security roles and privileges](../admin/security-roles-privileges.md).  
   
 > [!IMPORTANT]
->  When you assigned any of the Customer Engagement licenses or the Microsoft Flow license to a user,  the user is automatically added to all your environments, however users can’t access any Dynamics 365 apps until they’ve been assigned at least one security role. See [Step Two: Assign security roles in Dynamics 365 apps](../admin/grant-users-access.md#BKMK_StepTwo).  
+>  When you assigned any of the Dynamics 365 apps licenses or the Microsoft Flow license to a user,  the user is automatically added to all your environments, however users can’t access any Dynamics 365 apps until they’ve been assigned at least one security role. See [Step Two: Assign security roles in Dynamics 365 apps](../admin/grant-users-access.md#BKMK_StepTwo).  
   
 <a name="BKMK_O365CRMroles"></a>   
 

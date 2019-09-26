@@ -34,7 +34,7 @@ You can set the values of datetime fields to automatically move forward by a spe
   
 2. On the main screen, click **Create schema**, and click **Continue**.  
   
-3. On the **Login** screen, provide authentication details to connect to your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance from where you want to export data. If you have multiple organizations on the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] server, and want to select the organization from where to export the data, select the **Always display list of available orgs** check box. Click **Login**.  
+3. On the **Login** screen, provide authentication details to connect to your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment from where you want to export data. If you have multiple organizations on the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] server, and want to select the organization from where to export the data, select the **Always display list of available orgs** check box. Click **Login**.  
   
 4. If you have multiple organizations, and you selected the **Always display list of available orgs** check box, the next screen lets you choose the organization that you want to connect to. Select a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization to connect to.  
 

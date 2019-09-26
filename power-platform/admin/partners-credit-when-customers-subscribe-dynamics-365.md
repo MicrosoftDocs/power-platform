@@ -33,7 +33,7 @@ As a [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps partner, y
 > -    If the customer doesn’t have a billing address in the country/region you select, their account can’t be activated later.  
 > -   When you accept the terms of service, you're accepting it on behalf of your customer and representing their agreement to our terms.  
   
-1. Go to [Dynamics 365 for Customer Engagement](http://go.microsoft.com/fwlink/p/?LinkId=204374).  
+1. Go to [Dynamics 365 apps](http://go.microsoft.com/fwlink/p/?LinkId=204374).  
   
     – OR -  
   
@@ -65,7 +65,7 @@ As a [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps partner, y
 <a name="BKMK_ThreeTransferownership"></a>   
 
 ## Transfer ownership after completing the trial  
- After the trial period is complete and your customer is ready to start their subscription, there are a few steps you need to complete in order to transfer ownership of the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] instance. If you signed up for the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] on behalf of the customer by using a [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] other than your customer’s, call [Dynamics 365 apps Customer Service and support](support-overview.md) to request a transfer of ownership of the subscription to your customer and designate him or her as the billing administrator of the customer’s [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps organization. The billing administrator can take actions that have financial implications to the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)], such as:  
+ After the trial period is complete and your customer is ready to start their subscription, there are a few steps you need to complete in order to transfer ownership of the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] environment. If you signed up for the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] on behalf of the customer by using a [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] other than your customer’s, call [Dynamics 365 apps Customer Service and support](support-overview.md) to request a transfer of ownership of the subscription to your customer and designate him or her as the billing administrator of the customer’s [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps organization. The billing administrator can take actions that have financial implications to the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)], such as:  
   
 - Upgrading to a different subscription  
   

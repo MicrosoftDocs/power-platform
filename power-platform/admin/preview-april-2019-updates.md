@@ -1,7 +1,7 @@
 ---
 redirect_url: preview-october-2019-updates
 title: "Opt in to April 2019 updates | MicrosoftDocs"
-description: Opt in to April 2019 updates for the Dynamics 365 for Customer Engagement platform.
+description: Opt in to April 2019 updates for the Dynamics 365 apps platform.
 ms.custom: ""
 ms.date: 08/02/2019
 ms.reviewer: ""
@@ -25,13 +25,13 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can enable the features coming in the April 2019 update by opting in to the updates in the Power Platform Admin center. Opting in will enable all changed user experience updates for Dynamics 365 for Customer Engagement, which will be enabled by default to everyone starting April 2019.
+You can enable the features coming in the April 2019 update by opting in to the updates in the Power Platform Admin center. Opting in will enable all changed user experience updates for Dynamics 365 apps, which will be enabled by default to everyone starting April 2019.
 
 ![Previewing April 2019 updates](media/preview-schedule.png "Previewing April 2019 updates")
 
 ## Which environment can be used for previewing April 2019 updates?
 
-The environments (instances) that are eligible for enabling April 2019 release are Production, Trial, and Sandbox. This will allow you the flexibility to explore the preview features, and then adopt them across your environments at a rate that suits your business.
+The environments (environments) that are eligible for enabling April 2019 release are Production, Trial, and Sandbox. This will allow you the flexibility to explore the preview features, and then adopt them across your environments at a rate that suits your business.
 
 > [!IMPORTANT]
 > We highly recommend that you create a copy of your Production environment as a Sandbox environment to try out the April 2019 updates. After enabling the April 2019 update, it can’t be turned off. Hence, it’s necessary to first test out the updates in Sandbox environment, prior to enabling it in Production environment which could impact your users in the organization.
@@ -60,14 +60,14 @@ Select **Activate now** to activate the April 2019 updates.
 > [!div class="mx-imgBorder"] 
 > ![Select Activate now](media/preview-activate.png "Select Activate now") 
 
-The April 2019 update is activated for the Dynamics 365 platform and Dynamics 365 for Sales.
+The April 2019 update is activated for the Dynamics 365 platform and Dynamics 365 Sales.
 
 You can verify activation by going to **Settings** (![Settings button](media/settings-button-nav-bar.png))> **About** where you'll see a screen like the following:
 
 ![Opt-in status](media/preview-activate-status.png "Preview activation status")
 
 > [!NOTE]
-> You need to select **About** from a Customer Engagement app page that's displayed in the [Unified Interface](https://docs.microsoft.com/dynamics365/customer-engagement/admin/about-unified-interface) such as Sales Hub or Customer Service Hub pages.
+> You need to select **About** from a Dynamics 365 app page that's displayed in the [Unified Interface](https://docs.microsoft.com/dynamics365/customer-engagement/admin/about-unified-interface) such as Sales Hub or Customer Service Hub pages.
 >
 > The server version will not be updated to the next version after activation.
 
@@ -132,7 +132,7 @@ The flow chart below shows the steps needed to enable the April 2019 release to 
 |(1)    | **Have a Sandbox environment as a copy for the Production environment** <br/><br/>We strongly recommend enabling the April 2019 release first in a Sandbox environment which is a replica or copy of the existing Production environment. This is to make sure that a customer has validated the updates in another environment prior to impacting the current Production apps and environment.<br/> <br/> Also, once April 2019 updates are enabled for an environment, they cannot be turned off like any other setting. Learn more about it in (3) below.<br/><br/>**Create a copy of the Production environment into a Sandbox environment**<br/><br/>If you don’t have a Sandbox copy of your Production environment, you can create a [copy](https://docs.microsoft.com/dynamics365/customer-engagement/admin/copy-instance) in the Dynamics 365 admin center.<br/><br/>**Create a backup of the Production environment**<br/> <br/> For restoration, if needed.   |
 |(2)     | **Enable the April 2019 opt-in from the Power Platform Admin center**<br/><br/>Starting February 1, 2019,  you will be able to enable the April 2019 release for the environment. This option will be available in **Environment** > **Settings** > **Previews and updates**. Once enabled for an environment, you cannot turn this off for the environment. To remove the April 2019 updates for your environment, you will have to either reset the environment or restore the environment to a previously backed up version. We do not recommend doing any of those options unless necessary. It's important to try the April 2019 updates in your Sandbox environment first prior to enabling it in your Production environment.        |
 |(3)     |**Any Dynamics 365 apps installed on the environment?**<br/><br/>If you have any Dynamics 365 apps on your environment like Sales, Service and Marketing, they need to be explicitly updated to the April 2019 version.  |
-|(4)     | **Update the applications from Dynamics 365 admin center**<br/><br/>Once you have enabled the April 2019 updates for your environment, you can update your apps from Dynamics 365 admin center > Applications. For example, if you have the Dynamics 365 for Sales application installed on your environment, then the option to update will be visible in the admin center. Please note that upgrading the app might take a few hours and you might see a downtime for your applications going through the update process.  |
+|(4)     | **Update the applications from Dynamics 365 admin center**<br/><br/>Once you have enabled the April 2019 updates for your environment, you can update your apps from Dynamics 365 admin center > Applications. For example, if you have the Dynamics 365 Sales application installed on your environment, then the option to update will be visible in the admin center. Please note that upgrading the app might take a few hours and you might see a downtime for your applications going through the update process.  |
 |(5)     | **We recommend testing out all the scenarios exhaustively in this step** <br/><br/>As recommended in Step 3, if you have any Dynamics 365 apps in your environment like Sales, Service and Marketing, they need to be explicitly updated to the April 2019 version.  |
 |(6) and (7)     |**Report any issues found** <br/><br/>As you verify the experience in your preview environment, if you find any regressions, functional, or performance issues related to the April 2019 updates that could impact your business, report them to Microsoft by opening a [support ticket](https://dynamics.microsoft.com/support/) or through the [Dynamics 365 forum](https://community.dynamics.com/f). |
 |(8)     | **Enable the April 2019 updates in your Sandbox environment**<br/><br/>You should:<br/><ol><li>Update customizations to leverage or respond to new capabilities.</li><li>Update internal readiness materials based on new features or user experiences.</li><li>Prepare internal change management to run in April (training, communications, etc.)</li></ol>   |

@@ -1,24 +1,20 @@
 ---
 title: "System Settings dialog box - Sales tab for Dynamics 365 apps | MicrosoftDocs"
-description: ""
-keywords: 
-ms.date: 10/09/2018
-ms.service:
-  - crm-online
-ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 08b3057d-03ad-41d0-a6b3-4770add682b2
+description: System Settings dialog box - Sales tab for Dynamics 365 apps
 author: jimholtz
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/09/2018
 ms.author: jimholtz
-manager: brycho
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-caps.latest.revision: 14
+search.audienceType: 
+  - admin
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
 ---
-
 # System Settings dialog box - Sales tab
 
 Use the settings on this page to configure system-level settings for the sales area of model-driven apps in Dynamics 365.  
