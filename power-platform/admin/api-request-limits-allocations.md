@@ -54,7 +54,7 @@ to each license type. For example, if a user has both a Dynamics 365 Customer Se
 user will have a total of 20000 + 1000 = 21000 requests available per 24 hours.
 
 If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 Customer Service Enterprise license as the base license and a Dynamics 365 Sales Enterprise license attached, the total number of requests would be what is provided by the base license - Dynamics 365
-for Customer Service.
+ Customer Service.
 
 ### PowerApps and Microsoft Flow capacity add-on
 
@@ -80,7 +80,7 @@ Apart from the new daily API request limit, there are other service protections 
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for Dynamics 365 apps, PowerApps, and Microsoft Flow connecting to Common Data Service/Dynamics 365
+- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, PowerApps, and Microsoft Flow connecting to Common Data Service/model-driven apps in Dynamics 365
 - [Microsoft Flow limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Microsoft Flow
 - [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Microsoft Flow and PowerApps
 

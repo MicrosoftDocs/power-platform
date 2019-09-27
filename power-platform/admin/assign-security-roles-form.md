@@ -21,7 +21,7 @@ search.app:
 
 Control form and field access by assigning different security roles to different forms you create.  
   
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Security concepts for Microsoft Dynamics 365 apps](wp-security-cds.md)  
+ [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Security concepts](wp-security-cds.md)  
   
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   

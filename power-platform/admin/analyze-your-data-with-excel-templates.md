@@ -56,9 +56,9 @@ search.app:
   
   ![Create Excel Template menu option](../admin/media/excel-template-create-menu.png "Create Excel Template menu option")  
   
-  The **Create template from Dynamics 365 apps data** page appears.  
+  The **Create template** page appears.  
   
-  ![Create Excel Template from Dynamics 365 apps Data page](../admin/media/excel-template-create-from-data-page.png "Create Excel Template from Dynamics 365 apps Data page")  
+  ![Create Excel Template page](../admin/media/excel-template-create-from-data-page.png "Create Excel Template page")  
   
 #### Select the data to include in the template  
   
@@ -116,7 +116,7 @@ search.app:
   
  [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrators can use the Settings page to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. A template uploaded in Settings is available to all users in your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization.  
   
-#### For admins: Upload the Excel template into Dynamics 365 apps 
+#### For admins: Upload the Excel template
   
 1. In [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, go to **Settings** > **Templates** > **Document Templates**.  
   
@@ -130,7 +130,7 @@ search.app:
   
    Non-admin users can upload a template for their own use from a list of records.  
   
-#### For non-admins or admins wanting to create a personal template: Upload the Excel template into Dynamics 365 apps 
+#### For non-admins or admins wanting to create a personal template: Upload the Excel template
   
 1. In [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, open a page with a list of records, for example, the list of Sales Opportunities. Go to **Sales** > **Opportunities** > **My Open Opportunities**.  
   
@@ -138,7 +138,7 @@ search.app:
   
 3. Click **Excel Template** > **Upload**.  
   
-   ![Click Upload to add the Excel template to Dynamics 365 apps](../admin/media/excel-template-upload.png "Click Upload to add the Excel template to Dynamics 365 apps")  
+   ![Click Upload to add the Excel template](../admin/media/excel-template-upload.png "Click Upload to add the Excel template")  
   
 4. Drag the file into the dialog box or browse to find and upload the file.  
   
@@ -178,12 +178,12 @@ search.app:
   
 <a name="BKMK_UseSelectEntity"></a>   
 ### Step 1: Select an entity to analyze  
- In Dynamics 365 apps, select an entity (record type) to analyze with the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template you created. For example, go to **Sales** > **Opportunities** > **My Open Opportunities**. Two new opportunities were added since the template was created.  
+ Select an entity (record type) to analyze with the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template you created. For example, go to **Sales** > **Opportunities** > **My Open Opportunities**. Two new opportunities were added since the template was created.  
   
  ![List of Open Opportunities](../admin/media/excel-template-list-open-opportunities.png "List of Open Opportunities")  
   
 <a name="BKMK_UseExport"></a>   
-### Step 2: Export Dynamics 365 apps data using your new Excel template  
+### Step 2: Export data using your new Excel template  
  Choose the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template you created.  
   
  ![Choose the template you created](../admin/media/excel-template-choose-template.png "Choose the template you created")  
@@ -193,10 +193,10 @@ search.app:
  If you have [!INCLUDE[pn_microsoft_excel_online](../includes/pn-microsoft-excel-online.md)], you can see the data in place in an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] window in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. If not, or if you’d rather create the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file, click **Download \<template name>**.  
   
 <a name="BKMK_UseAnalyze"></a>   
-### Step 3: Analyze your Dynamics 365 apps data in Excel  
+### Step 3: Analyze your data in Excel  
  What you see in the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] spreadsheet is based on two things:  
   
-- **Dynamics 365 apps records**. The view you choose to export from determines what [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records you see in the exported [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file. For example, if you selected Closed Opportunities, you’ll see those records even if you used the template created with My Open Opportunities.  
+- **Records**. The view you choose to export from determines what [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records you see in the exported [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file. For example, if you selected Closed Opportunities, you’ll see those records even if you used the template created with My Open Opportunities.  
   
 - **Columns**. The template you used determines what columns appear in the table in the exported [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file. For example, the Closed Opportunities view has these columns: Potential Customer, Status, Actual Revenue, and Actual Close Date. But if the template you used was based on My Open Opportunities, you’d see columns associated with that view and any column filtering done when you created the template.  
   
@@ -208,7 +208,7 @@ search.app:
 ## Try out the sample Excel templates  
  There are four [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)].  
   
- ![Try out the Excel templates included with Dynamics 365 apps](../admin/media/excel-template-included.png "Try out the Excel templates included with Dynamics 365 apps")  
+ ![Try out the included Excel templates](../admin/media/excel-template-included.png "Try out the included Excel templates")  
   
  The sample [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates were created with a specific record type (entity). You’ll only be able to apply the template to records of the same record type.  
   
@@ -306,4 +306,4 @@ search.app:
   
 ### See also  
  [Download a template for data import](../admin/download-template-data-import.md)   
- [Using Word templates in Dynamics 365 apps](../admin/using-word-templates-dynamics-365.md)
+ [Using Word templates](../admin/using-word-templates-dynamics-365.md)
