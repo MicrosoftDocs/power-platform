@@ -24,8 +24,7 @@ The Dynamics 365 apps -[!INCLUDE[cc_Data_Export_Service](../includes/cc-data-exp
 > [!NOTE]
 >  You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with:  
 > 
-> - Dynamics 365 apps  
-> - [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)]  
+> - Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.
   
 For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](/dynamics365/customer-engagement/developer/data-export-service.md).
   
@@ -80,7 +79,7 @@ For information about the programmatic interface for managing configuration and 
   
 ### Dynamics 365 apps  
   
-- A [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)] or later version environment.  
+- A Dynamics 365 (online), version 9.0.  or later version environment.  
   
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution must be installed.  
     - In Dynamics 365 apps, go to **Settings** > **Microsoft Appsource** > search or browse to **Microsoft Dynamics 365 - Data Export Service**, and then select **Get it now**. 

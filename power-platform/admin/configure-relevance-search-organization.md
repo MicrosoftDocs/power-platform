@@ -19,9 +19,9 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. It uses a dedicated search service external to Dynamics 365 apps powered by [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] Search to improve your Dynamics 365 apps search experience. As an administrator or customizer, you'll be able to enable and configure Relevance Search in the Dynamics 365 apps user interface without writing code. Many of the configuration steps will look familiar to you, as they use the same user interface as the Quick Find configuration.  
+Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. It uses a dedicated search service external to model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, powered by [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] Search to improve your Dynamics 365 apps search experience. As an administrator or customizer, you'll be able to enable and configure Relevance Search in the model-driven apps in Dynamics 365 user interface without writing code. Many of the configuration steps will look familiar to you, as they use the same user interface as the Quick Find configuration.  
 
- Relevance Search is available in addition to other Dynamics 365 apps search experience you’re already familiar with. You can still use single-entity Quick Find on the entity grid. You can also use multi-entity Quick Find (now called Categorized Search) from the **Search Dynamics 365 apps data** search box on the navigation bar.  
+ Relevance Search is available in addition to other model-driven apps in Dynamics 365 search experience you’re already familiar with. You can still use single-entity Quick Find on the entity grid. You can also use multi-entity Quick Find (now called Categorized Search) from the **Search Dynamics 365 apps data** search box on the navigation bar.  
 
  Relevance Search brings the following enhancements and benefits:  
 
@@ -33,10 +33,10 @@ Relevance Search delivers fast and comprehensive search results in a single list
 
 - Matches in the result list are highlighted.  
 
-- Includes the ability to search documents found in Notes and Attachments on Emails and Appointments tracked in Dynamics 365 apps.
+- Includes the ability to search documents found in Notes and Attachments on Emails and Appointments tracked in model-driven apps in Dynamics 365.
 
 <a name="BKMK_CompareCRMSearches"></a>   
-## Compare Dynamics 365 apps searches  
+## Compare model-driven apps in Dynamics 365 searches  
  There are three kinds of search in [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)]:  
 
 -   Relevance Search  
@@ -50,7 +50,7 @@ The following table provides a brief comparison of the three available searches.
 
 |       Functionality        |                                                                                                                             Relevance Search                                                                                                                              |                                                                            Full-Text Quick Find                                                                             |                                                                                            Quick Find                                                                                             |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|        Availability        | Available for Dynamics 365 apps organizations that have installed [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)]. Not available for Customer Engagement (on-premises) organizations. | Available for Customer Engagement (on-premises) organizations, starting with [!INCLUDE[pn_crm_2015](../includes/pn-crm-2015.md)] Update Rollup 1. |                Available for Dynamics 365 apps organizations and Customer Engagement (on-premises) organizations.                 |
+|        Availability        | Available for model-driven apps in Dynamics 365 that have installed version 9.0. Not available for Customer Engagement (on-premises) organizations. | Available for Customer Engagement (on-premises) organizations, starting with [!INCLUDE[pn_crm_2015](../includes/pn-crm-2015.md)] Update Rollup 1. |                Available for model-driven apps in Dynamics 365 organizations and Customer Engagement (on-premises) organizations.                 |
 |    Enabled by default?     |                                                                                                               No. An administrator must manually enable it.                                                                                                               |                                                                No. An administrator must manually enable it.                                                                |                                                                                                Yes                                                                                                |
 | Single-entity search scope |                                                                                   Not available in an entity grid. You can filter the search results by an entity on the results page.                                                                                    |                                                                        Available in an entity grid.                                                                         |                                                                                   Available in an entity grid.                                                                                    |
 | Multi-entity search scope  |                               There is no maximum limit on the number of entities you can search. **Note:**  While there is no maximum limit on the number of entities you can search, the Record Type filter shows data for only 10 entities.                                |                                                              Searches up to 10 entities, grouped by an entity.                                                              |                                                                         Searches up to 10 entities, grouped by an entity.                                                                         |
@@ -68,7 +68,7 @@ You'll see hit highlights when your search term matches a term in your applicati
 
 <a name="BKMK_Architecture"></a>   
 ## Relevance Search architecture  
- Relevance Search is hosted on the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] cloud computing platform and infrastructure that uses [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Search, which provides the search results. Changes made in Dynamics 365 apps may take up to 15 minutes to appear in the search service. It may take up to up to an hour or more to complete a full sync for average to large size organizations.  
+ Relevance Search is hosted on the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] cloud computing platform and infrastructure that uses [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Search, which provides the search results. Changes made may take up to 15 minutes to appear in the search service. It may take up to up to an hour or more to complete a full sync for average to large size organizations.  
 
  The following diagram shows the high level Relevance Search architecture.  
 
@@ -78,9 +78,9 @@ You'll see hit highlights when your search term matches a term in your applicati
 ## Enable Relevance Search  
 
 > [!IMPORTANT]
->  Data in your application  begins syncing to the external search index immediately after you enable Relevance Search.  We strongly recommend that you configure the entities and entity fields participating in Relevance Search before you enable the search, to prevent sensitive data from being indexed in a service external to Dynamics 365 apps.  For more information about configuring Relevance Search, see            [Select entities for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SelectEntities),            [Configure searchable fields for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_ConfigureFields), and            [Set managed property for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SetPropertiy).  
+> Data in your application  begins syncing to the external search index immediately after you enable Relevance Search.  We strongly recommend that you configure the entities and entity fields participating in Relevance Search before you enable the search, to prevent sensitive data from being indexed in a service external to model-driven apps in Dynamics 365.  For more information about configuring Relevance Search, see            [Select entities for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SelectEntities),            [Configure searchable fields for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_ConfigureFields), and            [Set managed property for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SetPropertiy).  
 
- Because you’ll be sharing your Dynamics 365 apps data with the external system, Relevance Search is disabled by default. To enable it, you must accept the consent terms. Depending on the size of your organization, it may take up to an hour or more for the data to become available in the external search index after you enable the search. Enabling Relevance Search makes this search option available to all members of your organization.
+ Because you’ll be sharing your data with the external system, Relevance Search is disabled by default. To enable it, you must accept the consent terms. Depending on the size of your organization, it may take up to an hour or more for the data to become available in the external search index after you enable the search. Enabling Relevance Search makes this search option available to all members of your organization.
   
  By default, Relevance Search is disabled. To enable Relevance Search, do the following:  
 
@@ -165,13 +165,13 @@ By default, some out-of-the-box system entities are included in Relevance Search
 7. Click **Publish All Customizations** for your changes to take effect.  
 
 > [!NOTE]
->  The changes you make in **Quick Find** view also apply to single-entity and multi-entity (Categorized Search) Quick Find configurations. This is why we don't prevent you from including the fields that aren't supported for Relevance Search when you configure **Quick Find** view. However, unsupported fields aren't synced to the external index and don’t appear in the Relevance Search results.  
+> The changes you make in **Quick Find** view also apply to single-entity and multi-entity (Categorized Search) Quick Find configurations. This is why we don't prevent you from including the fields that aren't supported for Relevance Search when you configure **Quick Find** view. However, unsupported fields aren't synced to the external index and don’t appear in the Relevance Search results.  
 
  For Relevance Search, fields on a related entity are not supported as Find, View, or Filter fields.  
 
  The following table contains the **Quick Find Filter** operators that aren’t supported for Relevance Search:  
 
-|Dynamics 365 apps Operator|  
+|Operator|  
 |---------------------------|  
 |**Like**|  
 |**NotLike**|  
