@@ -40,7 +40,7 @@ Many of these settings...
 
 Use the links on this page to manage organization-wide settings. App-specific settings will remain in model-driven apps in Dynamics 365 and accessed through the app settings. 
 
-## Settings 
+## App settings 
 
 Getting to app feature settings can vary based on the type of app you're using.
 

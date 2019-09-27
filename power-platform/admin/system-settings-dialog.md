@@ -15,12 +15,12 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# System Settings dialog box 
+# System Settings dialog box  
 
 Use the **System Settings** dialog box to specify system-level settings for your Common Data Service environment and model-driven apps.
 
 > [!NOTE]
-> Getting to the **System Settings** dialog box can vary based on the type of app you're using (Unified Interface or the legacy web client). You might need to adjust the procedural steps in this section to reflect your app type. See [Settings in Dynamics 365 apps](../admin/admin-settings.md#settings-in-dynamics-365-apps).
+> Getting to the **System Settings** dialog box can vary based on the type of app you're using (Unified Interface or the legacy web client). You might need to adjust the procedural steps in this section to reflect your app type. See [Settings](../admin/admin-settings.md#app-settings).
 >
 > Also, we are moving some settings from Dynamics 365 apps and the Dynamics 365 Admin center to the Power Platform Admin center. See [Environment settings are moving](../admin/admin-settings.md#environment-settings-are-moving).
 
