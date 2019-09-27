@@ -38,7 +38,7 @@ search.app:
 > [!NOTE]
 > **TIP**: If you've just started a trial or upgraded to [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)], you might need to refresh or open a new browser session to see your apps. There might be a delay for your environment to fully provision.  
 > 
->  For [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscriptions, the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher will take users to either [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps or the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)]. Admins will go to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
+>  For [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscriptions, the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher will take users to either Dynamics 365 apps or the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)]. Admins will go to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
   
 <a name="BKMK_SelectAdminFromAppLaunch"></a>   
 ## For admins: Get to the admin center through the Office 365 app launcher  

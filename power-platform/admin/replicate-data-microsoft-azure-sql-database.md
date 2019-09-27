@@ -19,12 +19,12 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-The [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps -[!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is an add-on service made available on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] that adds the ability to replicate [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps data to a [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] store in a customer-owned [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription. The supported target destinations are [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] and [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] virtual machines.  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] intelligently synchronizes the entire [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data initially and thereafter synchronizes on a continuous basis as changes occur (delta changes) in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps system. This helps enable several analytics and reporting scenarios on top of [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] data and analytics services and opens up new possibilities for customers and partners to build custom solutions.  
+The [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps -[!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is an add-on service made available on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] that adds the ability to replicate Dynamics 365 apps data to a [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] store in a customer-owned [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription. The supported target destinations are [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] and [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] virtual machines.  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] intelligently synchronizes the entire [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data initially and thereafter synchronizes on a continuous basis as changes occur (delta changes) in the Dynamics 365 apps system. This helps enable several analytics and reporting scenarios on top of [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] data and analytics services and opens up new possibilities for customers and partners to build custom solutions.  
   
 > [!NOTE]
 >  You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with:  
 > 
-> - [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps  
+> - Dynamics 365 apps  
 > - [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)]  
   
 For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](/dynamics365/customer-engagement/developer/data-export-service.md).
@@ -78,17 +78,17 @@ For information about the programmatic interface for managing configuration and 
   
 - The Key Vault should be tagged with the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps organization (OrgId) and tenant ids (TenantId).  This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
   
-### [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps  
+### Dynamics 365 apps  
   
 - A [!INCLUDE[pn_crm_9_0_0_online](../includes/pn-crm-9-0-0-online.md)] or later version environment.  
   
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution must be installed.  
-    - In [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, go to **Settings** > **Microsoft Appsource** > search or browse to **Microsoft Dynamics 365 - Data Export Service**, and then select **Get it now**. 
+    - In Dynamics 365 apps, go to **Settings** > **Microsoft Appsource** > search or browse to **Microsoft Dynamics 365 - Data Export Service**, and then select **Get it now**. 
     - Or, find it on [Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448).  
   
 - The entities that will be added to the Export Profile must be enabled with change tracking. To ensure a standard or custom entity can be synchronized go to **Customization** > **Customize the System**, and then click the entity. On the **General** tab make sure the **Change Tracking** option under the **Data Services** section is enabled.  
   
-- You must have the System Administrator security role in the environment of [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.  
+- You must have the System Administrator security role in the environment of Dynamics 365 apps.  
   
 ### Web browser  
  Enable pop-ups for the domain https://discovery.crmreplication.azure.net/ in your web browser. This is required for auto-sign in when you navigate to Settings > Data Export.  
@@ -97,7 +97,7 @@ For information about the programmatic interface for managing configuration and 
 ## Services, credentials, and privileges required  
  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] feature, you must have the following services, credentials, and privileges.  
   
-- A [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps subscription. Only users that are assigned the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps System Administrator security role can set up or make changes to an Export Profile.  
+- A Dynamics 365 apps subscription. Only users that are assigned the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps System Administrator security role can set up or make changes to an Export Profile.  
   
 - [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription that includes the following services.  
   
@@ -106,14 +106,14 @@ For information about the programmatic interface for managing configuration and 
   - [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
   
 > [!IMPORTANT]
->  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] services must operate under the same tenant and within the same [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure integration with Office 365](https://support.office.com/article/Azure-integration-with-Office-365-a5efce5d-9c9c-4190-b61b-fd273c1d425f)  
+>  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] the Dynamics 365 apps and [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] services must operate under the same tenant and within the same [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure integration with Office 365](https://support.office.com/article/Azure-integration-with-Office-365-a5efce5d-9c9c-4190-b61b-fd273c1d425f)  
 > 
->  The [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] service can be in the same or a different tenant from the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps service.  
+>  The [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] service can be in the same or a different tenant from the Dynamics 365 apps service.  
   
 <a name="shouldknowDES"></a>   
 ## What you should know before using the Data Export Service  
   
-- Export Profiles must be deleted and then re-created whenever you perform any of the following actions on a [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment. 
+- Export Profiles must be deleted and then re-created whenever you perform any of the following actions on a Dynamics 365 environment. 
   - Restore an environment.
   - Copy (either full or minimal) an environment.
   - Reset an environment.
@@ -121,11 +121,11 @@ For information about the programmatic interface for managing configuration and 
 
   To do this, delete the Export Profile in the EXPORT PROFILES view, then delete the tables and stored procedures, and then create a new profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to delete all Data Export Profile tables and stored procedures](#Delete_DEP)  
   
-- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn’t work for [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps sandbox environments that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](/dynamics365/customer-engagement/admin/manage-sandbox-environments.md#administration-mode)  
+- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn’t work for Dynamics 365 apps sandbox environments that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](/dynamics365/customer-engagement/admin/manage-sandbox-environments.md#administration-mode)  
 
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] does not drop (delete) the associated tables, columns, or stored procedure objects in the destination Azure SQL database when the following actions occur.
-  - An entity is deleted in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.
-  - A field is deleted in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.
+  - An entity is deleted in Dynamics 365 apps.
+  - A field is deleted in Dynamics 365 apps.
   - An entity is removed from an Export Profile.
    
     These items must be dropped manually.  [How to delete Data Export Profile tables and stored procedures for a specific entity](#drop_entity)
@@ -133,9 +133,9 @@ For information about the programmatic interface for managing configuration and 
   
 <a name="dataexportprofile"></a>   
 ## Export Profile  
- To export data from [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] administrator creates an Export Profile.  Multiple profiles can be created and activated to synchronize data to different destination databases simultaneously.  
+ To export data from Dynamics 365 apps, the Dynamics 365 administrator creates an Export Profile.  Multiple profiles can be created and activated to synchronize data to different destination databases simultaneously.  
   
- The Export Profile is the core concept of  the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. The Export Profile gathers set up and configuration information to synchronize data with the destination database. As part of the Export Profile, the administrator provides a list of entities to be exported to the destination database. Once activated, the Export Profile starts the automatic synchronization of data. Initially, all data that corresponds to each selected entity is exported. Thereafter, only the changes to data as they occur to the entity records or metadata in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps are synchronized continuously using a push mechanism in near real time. Therefore, you don’t need to set up a schedule to retrieve data from [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.  
+ The Export Profile is the core concept of  the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. The Export Profile gathers set up and configuration information to synchronize data with the destination database. As part of the Export Profile, the administrator provides a list of entities to be exported to the destination database. Once activated, the Export Profile starts the automatic synchronization of data. Initially, all data that corresponds to each selected entity is exported. Thereafter, only the changes to data as they occur to the entity records or metadata in Dynamics 365 apps are synchronized continuously using a push mechanism in near real time. Therefore, you don’t need to set up a schedule to retrieve data from Dynamics 365 apps.  
   
  Only entities that have change tracking enabled can be added to the Export Profile. Notice that, most of the standard [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps entities which capture data are change tracking enabled. Custom entities must be explicitly enabled for change tracking before you can add them to an Export Profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable change tracking to control data synchronization](../admin/enable-change-tracking-control-data-synchronization.md)  
   
@@ -161,7 +161,7 @@ For information about the programmatic interface for managing configuration and 
 ## Create an Export Profile  
  Ensure that following requirements are met before creating an Export Profile.  
   
-- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution is installed in your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment.  
+- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution is installed in your Dynamics 365 environment.  
   
 - Maintain the [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database connection string in the Key Vault and copy the Key Vault URL to provide in the Export Profile. More information: [Azure: Get started with Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)  
   
@@ -169,9 +169,9 @@ For information about the programmatic interface for managing configuration and 
   
 - Your [!INCLUDE[pn-sql](../includes/pn-sql.md)] Database service has enough storage space to store the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps data.  
   
-- You are a System Administrator in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment.  
+- You are a System Administrator in the Dynamics 365 environment.  
   
-1. In [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, go to **Settings** > **Data Export**.  
+1. In Dynamics 365 apps, go to **Settings** > **Data Export**.  
   
 2. Review the notice, and click **Continue** or **Cancel** if you don't want to export data.  
   
@@ -268,7 +268,7 @@ For information about the programmatic interface for managing configuration and 
    >   - [!INCLUDE[cc_preview_features_expect_changes](../includes/cc-preview-features-expect-changes.md)]  
    >   - [!INCLUDE[cc_preview_features_no_MS_support](../includes/cc-preview-features-no-ms-support.md)]  
   
-   1. Sign in to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment and go to **Settings** > **Data Export**.  
+   1. Sign in to your Dynamics 365 environment and go to **Settings** > **Data Export**.  
   
    2. Open the Export Profile that includes record synch failures.  
   

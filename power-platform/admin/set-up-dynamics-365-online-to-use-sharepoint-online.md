@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)] with [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, you can:  
+When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)] with Dynamics 365 apps, you can:  
   
 - Create, upload, view, and delete documents stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
   
@@ -38,7 +38,7 @@ When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-
 <a name="BKMK_AssignPermission"></a>   
 
 ## Assign user permissions to the Team SharePoint site  
- Your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] users are not automatically allowed access to your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites. You must work within the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site to assign specific permission levels to individual users or groups.  
+ Your Dynamics 365 apps and [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] users are not automatically allowed access to your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites. You must work within the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site to assign specific permission levels to individual users or groups.  
   
 #### Assign users to the Team site  
   
@@ -92,7 +92,7 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
   
    ![Select Online as the SharePoint sites location](../admin/media/crmandsharepointonlineenablestep2.png "Select Online as the SharePoint sites location")  
   
-4. If your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps are not connected to a [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site, enter the URL (for example <https://contoso.sharepoint.com>) of your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site that you will use for auto folder creation, and then choose **Next**.  
+4. If your Dynamics 365 apps are not connected to a [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site, enter the URL (for example <https://contoso.sharepoint.com>) of your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site that you will use for auto folder creation, and then choose **Next**.  
   
    > [!TIP]
    >  To see your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collections, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], click **Admin centers** > **SharePoint**, and then click **site collections**.  
@@ -111,7 +111,7 @@ Once server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short
 ## Using Document Management  
  You are now ready to add document storage locations to the entities you enabled above and start managing documents. Begin by opening a document management-enabled record (for example, Contact).  
   
-1. Browse to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps web application.  
+1. Browse to your Dynamics 365 apps web application.  
   
 2. Choose an account, such as the **Adventure Works** sample account.  
   
@@ -171,7 +171,7 @@ As a workaround, you can set the unmanaged devices policy to “Allow full acces
 <a name="BKMK_info_trans_CRMtoSP"></a>   
 
 ## Information transmitted between Dynamics 365 apps and SharePoint when you use server-based SharePoint integration  
- When you use the document management feature in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps by using server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, the following information is transmitted between [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]:  
+ When you use the document management feature in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps by using server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, the following information is transmitted between Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]:  
   
 - Entity name for the entity that is used to create folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], such as Account, Article, or Lead. To configure the entities that are integrated, go to **Settings** > **Document Management** > **Document Management Settings**.
 

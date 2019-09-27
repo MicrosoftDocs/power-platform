@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, your organization can benefit from these capabilities:  
+When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and Dynamics 365 apps, your organization can benefit from these capabilities:  
   
 - Real-time communications with customers, colleagues, and team members without leaving [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. Click or tap a person’s phone number to call them.  
   

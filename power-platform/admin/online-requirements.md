@@ -17,7 +17,7 @@ search.app:
 ---
 # Requirements/supported configurations  
 
-[!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps give you the following options to access [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data:  
+Dynamics 365 apps give you the following options to access [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data:  
   
 - Web browser. No need to install anything to run Dynamics 365 apps from a computer running a supported web browser.  
 

@@ -29,7 +29,7 @@ search.app:
   
 - Before your organization can use [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, your organization needs to buy [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] enterprise licenses.  
 
-- [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] integration is only available for [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.
+- [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] integration is only available for Dynamics 365 apps.
   
 - [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   
@@ -49,7 +49,7 @@ search.app:
   
 4. Read the disclaimer, and then choose **Continue**.  
   
-5. Choose **Authorize [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps (or [!INCLUDE[pn_crm_2016_shortest](../includes/pn-crm-2016-shortest.md)]) to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]**.  
+5. Choose **Authorize Dynamics 365 apps (or [!INCLUDE[pn_crm_2016_shortest](../includes/pn-crm-2016-shortest.md)]) to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]**.  
   
 6. Sign in to your enterprise [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account using your administrator credentials.  
   

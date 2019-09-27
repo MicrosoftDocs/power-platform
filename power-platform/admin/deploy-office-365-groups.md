@@ -56,7 +56,7 @@ search.app:
  [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] is a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps solution you provision from your [!INCLUDE[pn_MS_Online_Services_Portal](../includes/pn-ms-online-services-portal.md)].  
   
 > [!NOTE]
->  Users must have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] mailbox set up to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] is already properly configured for [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps organizations as a part of [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]. You also need to enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration to see documents in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group; you don't have to use [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, only set up the connection to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)].  Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration is also required to enable the group [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook.  
+>  Users must have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] mailbox set up to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] is already properly configured for Dynamics 365 apps organizations as a part of [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]. You also need to enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration to see documents in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group; you don't have to use [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, only set up the connection to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)].  Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration is also required to enable the group [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook.  
 > 
 > [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up Dynamics 365 apps to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)  
   
@@ -131,7 +131,7 @@ search.app:
   
    ![Add Office 365 Groups records to connect](../admin/media/add-office-365-groups-records-to-connect.png "Add Office 365 Groups records to connect")  
   
-   Once connected, the [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps connector shows up at the top of the connection list with a summary of connected records.  
+   Once connected, the Dynamics 365 (online) apps connector shows up at the top of the connection list with a summary of connected records.  
   
    ![Office 365 Groups records in connector](../admin/media/office-365-groups-records-in-connector.png "Office 365 Groups records in connector")  
   

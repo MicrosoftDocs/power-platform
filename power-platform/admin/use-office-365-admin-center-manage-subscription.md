@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
+[The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. Dynamics 365 apps take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
   
  ![Microsoft 365 admin center](../admin/media/o365-admin-center.png "Microsoft 365 admin center")  
   
@@ -30,7 +30,7 @@ search.app:
   
 <a name="BKMK_AppLauncher"></a>   
 ## Open Dynamics 365 apps and other services with the app launcher  
- You can open Dynamics 365 apps and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Office 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher)  
+ You can open Dynamics 365 apps and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open Dynamics 365 (online) apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Office 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher)  
   
  ![Office 365 app launcher](../admin/media/admin-center-app-launcher.png "Office 365 app launcher")  
   

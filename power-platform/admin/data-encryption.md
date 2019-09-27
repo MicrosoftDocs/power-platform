@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps use standard [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] cell level encryption for a set of default entity attributes that contain sensitive information, such as user names and email passwords. This feature can help organizations meet FIPS 140-2 compliance.  
   
- For [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, all new and upgraded organizations use data encryption by default. Data encryption can’t be turned off.  
+ For Dynamics 365 apps, all new and upgraded organizations use data encryption by default. Data encryption can’t be turned off.  
   
  [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps users who have the system administrator security role can change the encryption key at any time. 
 

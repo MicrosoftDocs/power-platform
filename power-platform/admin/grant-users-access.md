@@ -17,7 +17,7 @@ search.app:
 ---
 # Grant users access
 
-To have users up and running in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks in Dynamics 365 apps.  
+To have users up and running in Dynamics 365 apps, you complete some administrative tasks in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]—which you generally do only once—followed by administrative tasks in Dynamics 365 apps.  
   
  Dynamics 365 apps is an online service subscription. When you signed up for this service, you received a set of licenses with your subscription, one license for each user. You can purchase additional licenses if you need them.  
   

@@ -17,7 +17,7 @@ search.app:
 ---
 # Web application requirements
 
-<a name="CRMappandMobileReqs"></a> This section lists the hardware and software requirements for the Customer Engagement (on-premises) and [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps web and mobile device client applications.  
+<a name="CRMappandMobileReqs"></a> This section lists the hardware and software requirements for the Customer Engagement (on-premises) and Dynamics 365 apps web and mobile device client applications.  
 
 <a name="webapp_hw_req"></a>   
 ## Dynamics 365 apps web application hardware requirements  

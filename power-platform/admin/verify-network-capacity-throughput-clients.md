@@ -36,7 +36,7 @@ Networks with high bandwidth don’t guarantee low latency. For example, a netwo
   
 1. On the user’s computer or device, start a web browser, and sign in to a [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps organization.  
   
-2. Enter the following URL, *<https://myorg.crm.dynamics.com/tools/diagnostics/diag.aspx>*, where *myorg.crm.dynamics.com* is the URL of your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps organization.  
+2. Enter the following URL, *<https://myorg.crm.dynamics.com/tools/diagnostics/diag.aspx>*, where *myorg.crm.dynamics.com* is the URL of your Dynamics 365 apps organization.  
   
 3. Click **Run**.  
   

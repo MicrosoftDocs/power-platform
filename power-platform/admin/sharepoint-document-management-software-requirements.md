@@ -17,7 +17,7 @@ search.app:
 ---
 # SharePoint Document Management software requirements
 
-If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] document management functionality with [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, you must meet the requirements listed in this topic.  
+If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] document management functionality with Dynamics 365 apps, you must meet the requirements listed in this topic.  
 
 <a name="docman_online"></a>   
 ## Use document management in Dynamics 365 apps  
@@ -31,7 +31,7 @@ If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint
 **Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration**  must be enabled.  
 
 > [!IMPORTANT]
->  The document management feature requires that [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] subscriptions be under the same tenant.  
+>  The document management feature requires that Dynamics 365 apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] subscriptions be under the same tenant.  
 > 
 > [!INCLUDE[pn_sharepoint_foundation](../includes/pn-sharepoint-foundation.md)] versions aren’t compatible with [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps document management.  
 
@@ -55,7 +55,7 @@ If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint
 
 |                                                    [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] version                                                     | List component support |                                   Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration support                                    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] or [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] SP1 |          Yes           | Yes with [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] SP1 when used with [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps |
+| [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] or [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] SP1 |          Yes           | Yes with [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] SP1 when used with Dynamics 365 apps |
 |                                          [!INCLUDE[pn_Microsoft_SharePoint_2010](../includes/pn-microsoft-sharepoint-2010.md)] SP1 or SP2                                          |          Yes           |                                                                                    No                                                                                     |
 |                                             [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)]                                              |          Yes           |                                                                                    Yes                                                                                    |
 

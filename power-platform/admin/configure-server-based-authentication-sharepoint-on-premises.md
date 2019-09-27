@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] integration for document management can  be used to connect [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. When using server-based authentication, [Azure AD Domain Services](https://azure.microsoft.com/documentation/articles/active-directory-ds-overview/) is used as the trust broker and users do not need to sign in to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] integration for document management can  be used to connect Dynamics 365 apps with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. When using server-based authentication, [Azure AD Domain Services](https://azure.microsoft.com/documentation/articles/active-directory-ds-overview/) is used as the trust broker and users do not need to sign in to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
 <a name="perms"></a>   
 ## Permissions required  
@@ -27,7 +27,7 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
   
 - Office 365 Global Administrators membership - this is required for administrative-level access to the [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] subscription and to run the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets.  
   
-[!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps 
+Dynamics 365 apps 
   
 - **Run SharePoint Integration Wizard** privilege. This is required to run the Enable Server-based Authentication wizard in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
   
@@ -47,7 +47,7 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
   
   
 ### Verify prerequisites  
- Before you configure [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises for server-based authentication, the following prerequisites must be met:  
+ Before you configure Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises for server-based authentication, the following prerequisites must be met:  
   
 <a name="BKMK_SP_prereq"></a>   
 
@@ -86,7 +86,7 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
  
 #### Other prerequisites  
   
-- [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license. [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server-based authentication must have the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] service principal name (SPN) registered in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)]. To achieve this, at least one [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] user license is required. The [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license can derive from a single user license and typically comes from one of the following:  
+- [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license. Dynamics 365 apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server-based authentication must have the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] service principal name (SPN) registered in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)]. To achieve this, at least one [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] user license is required. The [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license can derive from a single user license and typically comes from one of the following:  
   
   - A [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] subscription. Any [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] plan is sufficient even if the license isn’t assigned to a user.  
   
@@ -105,7 +105,7 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
   > [!IMPORTANT]
   >  At the time of this writing, there is an issue with the RTW version of Microsoft Online Services Sign-In Assistant for IT Professionals. Until the issue is resolved, we recommend that you use the Beta version. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Microsoft Azure Forums: Cannot install Azure Active Directory Module for Windows PowerShell. MOSSIA is not installed](https://social.msdn.microsoft.com/Forums/azure/en-US/46a38822-28a4-4abb-b747-96f7db2a2676/cannot-install-azure-active-directory-module-for-windows-powershell-mossia-is-not-installed?forum=WindowsAzureAD).  
   
-- A suitable claims-based authentication mapping type to use for mapping identities between [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Grant Microsoft Dynamics 365 apps permission to access SharePoint and configure the claims-based authentication mapping](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_grantperm)  
+- A suitable claims-based authentication mapping type to use for mapping identities between Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Grant Microsoft Dynamics 365 apps permission to access SharePoint and configure the claims-based authentication mapping](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_grantperm)  
   
 ### Update the SharePoint Server SPN in Azure Active Directory Domain Services  
  On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
@@ -311,7 +311,7 @@ $wellKnownApp.Update()
 <a name="BKMK_selectclmmap"></a>   
 
 ## Selecting a claims-based authentication mapping type  
- By default, the claims-based authentication mapping will use the user’s [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user’s [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises work email address for mapping. Note that whatever claims-based authentication type you use, the values, such as email addresses, **must match** between [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] directory synchronization can help with this. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure](https://technet.microsoft.com/library/dn635310.aspx). To use a different type of claims-based authentication mapping, see [Define custom claim mapping for SharePoint server-based integration](/dynamics365/customer-engagement/developer/integration-dev/define-custom-claim-mapping-sharepoint-server-based-integration.md).
+ By default, the claims-based authentication mapping will use the user’s [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user’s [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises work email address for mapping. Note that whatever claims-based authentication type you use, the values, such as email addresses, **must match** between Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] directory synchronization can help with this. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure](https://technet.microsoft.com/library/dn635310.aspx). To use a different type of claims-based authentication mapping, see [Define custom claim mapping for SharePoint server-based integration](/dynamics365/customer-engagement/developer/integration-dev/define-custom-claim-mapping-sharepoint-server-based-integration.md).
   
 > [!IMPORTANT]
 >  To enable the Work email property, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises must have a User Profile Service Application configured and started. To enable a User Profile Service Application in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], see [Create, edit, or delete User Profile service applications in SharePoint Server 2013](https://technet.microsoft.com/library/ee721052.aspx). To make changes to a user property, such as Work email, see [Edit a user profile property](https://technet.microsoft.com/library/cc262327.aspx). For more information about the User Profile Service Application, see [Overview of the User Profile service application in SharePoint Server 2013](https://technet.microsoft.com/library/ee662538.aspx).  

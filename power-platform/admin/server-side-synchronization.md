@@ -35,7 +35,7 @@ Server-side synchronization is the preferred option for organizations with users
 ## Server-side synchronization frequency  
  When synchronization by using server-side synchronization occurs, the process is dynamic and unique for each user’s mailbox. The synchronization algorithm ensures that mailboxes are synced according to dynamic parameters such as the number of email messages and the activity within the mailbox. Normally, email synchronization occurs every 5 minutes. When a mailbox has many email messages, the interval can be reduced dynamically to 2 minutes. If the mailbox is less active, the interval can be increased up to 12 minutes. Generally speaking, you can assume that a mailbox will be synced at least once every 12 minutes. Note that you can’t manually synchronize records through server-side synchronization and when you track email (**Track** button), this occurs immediately.  
   
-## Features available with server-side synchronization in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps  
+## Features available with server-side synchronization in Dynamics 365 apps  
  Some features offered by server-side synchronization include the following:  
   
 1. **Email folder tracking.** You can simply drag email to a folder to track it. Folder tracking works on any mobile device that supports [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)], which means you can track email from just about any device.  

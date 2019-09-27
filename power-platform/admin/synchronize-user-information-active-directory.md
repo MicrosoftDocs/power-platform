@@ -36,7 +36,7 @@ To ensure that the user can successfully log on to [!INCLUDE [pn-crm-shortest](.
 Before you start, be sure to record the value of the **User SamAccountName logon** attribute for the affected user before updating the corresponding user record in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
   
 > [!NOTE]
->  For information about synchronizing [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps with [!INCLUDE[pn_Active_Directory](../includes/pn-active-directory.md)], see the blog post [How to Synchronize CRM Online with your Active Directory](http://blogs.msdn.com/b/crm/archive/2013/07/18/how-to-synchronize-crm-online-with-your-active-directory.aspx).  
+>  For information about synchronizing Dynamics 365 apps with [!INCLUDE[pn_Active_Directory](../includes/pn-active-directory.md)], see the blog post [How to Synchronize CRM Online with your Active Directory](http://blogs.msdn.com/b/crm/archive/2013/07/18/how-to-synchronize-crm-online-with-your-active-directory.aspx).  
   
 1. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
   

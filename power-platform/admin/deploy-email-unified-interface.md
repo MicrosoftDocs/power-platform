@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-To improve accessibility when reading and editing email in [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps, we're introducing an app that provides an accessible email flow. This topic explains how admins can enable this flow and how end users can access it.
+To improve accessibility when reading and editing email in Dynamics 365 apps, we're introducing an app that provides an accessible email flow. This topic explains how admins can enable this flow and how end users can access it.
 
 ## For admins: Install the app
 

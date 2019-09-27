@@ -18,7 +18,7 @@ search.app:
 # Manage the encryption key
 All environments of Common Data Service and Dynamics 365 apps use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
   
- By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don’t have to.  The manage keys feature in the Power Platform Admin Center (preview) gives administrators the ability to self-manage the database encryption key that is associated with Common Data Service and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps tenant. 
+ By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don’t have to.  The manage keys feature in the Power Platform Admin Center (preview) gives administrators the ability to self-manage the database encryption key that is associated with Common Data Service and Dynamics 365 (online) apps tenant. 
 
 <!--  [!IMPORTANT]
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
@@ -38,11 +38,11 @@ All environments of Common Data Service and Dynamics 365 apps use [!INCLUDE[pn_M
   
  The key management feature supports both PFX and BYOK encryption key files, such as those stored in a hardware security module (HSM). To use the upload encryption key option you need both the public and private encryption key.  
   
- The key management feature takes the complexity out of encryption key management by using [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] to securely store encryption keys. [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] helps safeguard cryptographic keys and secrets used by cloud applications and services. The key management feature doesn’t require that you have an [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] subscription and for most situations there is no need to access encryption keys used for Common Data Service and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps within the vault.  
+ The key management feature takes the complexity out of encryption key management by using [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] to securely store encryption keys. [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] helps safeguard cryptographic keys and secrets used by cloud applications and services. The key management feature doesn’t require that you have an [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] subscription and for most situations there is no need to access encryption keys used for Common Data Service and Dynamics 365 (online) apps within the vault.  
   
  The manage keys feature lets you perform the following tasks.  
   
-- Enable the ability to self-manage database encryption keys that are associated with Common Data Service and [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] environments.  
+- Enable the ability to self-manage database encryption keys that are associated with Common Data Service and Dynamics 365 (online) environments.  
   
 - Generate new encryption keys or upload existing .PFX or .BYOK encryption key files.  
   
@@ -53,7 +53,7 @@ All environments of Common Data Service and Dynamics 365 apps use [!INCLUDE[pn_M
 <a name="KM_risk"></a>  
  
 ## Understand the potential risk when you manage your keys  
- As with any business critical application, personnel within your organization who have administrative-level access must be trusted. Before you use the key management feature, you should understand the risk when you manage your database encryption keys. It is conceivable that a malicious administrator (a person who is granted or has gained administrator-level access with intent to harm an organization's security or business processes) working within your organization might use the manage keys feature to create a key and use it to lock all [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] environments in the tenant. 
+ As with any business critical application, personnel within your organization who have administrative-level access must be trusted. Before you use the key management feature, you should understand the risk when you manage your database encryption keys. It is conceivable that a malicious administrator (a person who is granted or has gained administrator-level access with intent to harm an organization's security or business processes) working within your organization might use the manage keys feature to create a key and use it to lock all Dynamics 365 (online) environments in the tenant. 
 
 Consider the following sequence of events.  
   
@@ -75,7 +75,7 @@ These actions will result in disabling all the environments within the tenant fr
   
 - Office 365 Service administrators group membership.  
   
-- System administrator security role for the environment of [!INCLUDE[pn_dynamics_crm_online](../includes/pn-dynamics-crm-online.md)] apps that you want to manage the encryption key.  
+- System administrator security role for the environment of Dynamics 365 (online) apps that you want to manage the encryption key.  
   
 ### Encryption key requirements  
  If you provide your own encryption key, your key must meet  these  requirements that are accepted by [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  

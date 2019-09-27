@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on  Customer Engagement (on-premises) or [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] environment. A “package” can consist of any or all of the following:  
+[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on  Customer Engagement (on-premises) or Dynamics 365 environment. A “package” can consist of any or all of the following:  
   
 - One or more [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps solution files.  
   
@@ -210,15 +210,15 @@ Get-Help “Crm”
  
 ### Use the cmdlet to connect to your Dynamics 365 apps environment  
   
-1. Provide your credentials to connect to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps. Running the following command will prompt you to type your user name and password to connect to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment, and we will store it in the `$Cred` variable, and use it later for connecting to your Customer Engagement server.  
+1. Provide your credentials to connect to your Dynamics 365 apps. Running the following command will prompt you to type your user name and password to connect to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment, and we will store it in the `$Cred` variable, and use it later for connecting to your Customer Engagement server.  
   
    ```  
    $Cred = Get-Credential  
    ```  
   
-2. Use the following command to get a connection to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps. We will store the connection information in the `$CRMConn` variable:  
+2. Use the following command to get a connection to your Dynamics 365 apps. We will store the connection information in the `$CRMConn` variable:  
   
-   - If you are connecting to the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] server:  
+   - If you are connecting to the Dynamics 365 server:  
   
      ```  
      $CRMConn = Get-CrmConnection -DeploymentRegion NorthAmerica –OnlineType Office365 –OrganizationName <your_Org_Name> -Credential $Cred  

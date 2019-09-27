@@ -44,7 +44,7 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
   
 - Each user must have the [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] client installed and running on their PC.  
   
-- For [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] presence, [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps users must have `https://*.dynamics.com` added to their web browsers trusted sites list in Internet options in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)].  
+- For [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] presence, Dynamics 365 apps users must have `https://*.dynamics.com` added to their web browsers trusted sites list in Internet options in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)].  
   
 ### Supported devices and web browsers when you use Skype for Business with Microsoft Dynamics 365 apps 
   

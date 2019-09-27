@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Install preferred solutions to gain added features and functionality for [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps.  
+Install preferred solutions to gain added features and functionality for Dynamics 365 apps.  
   
  ![List of preferred solutions](media/PreferredSolutions65.png "List of preferred solutions")
   

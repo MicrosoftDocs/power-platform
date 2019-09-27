@@ -35,7 +35,7 @@ search.app:
   
 <a name="BKMK_fail_Author"></a>   
 ### Failed authorization or 401 unauthorized error
- This failure can occur when the claims-based authentication types do not match. For example, in a hybrid deployment such as [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises, when you use the default claims-based authentication mapping, the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address used by the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps user must match the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] user’s **Work email**. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [About claims-based authentication mapping](/dynamics365/customer-engagement/admin/on-prem-server-based-sharepoint-on-prem.md#about-claims-based-authentication-mapping) 
+ This failure can occur when the claims-based authentication types do not match. For example, in a hybrid deployment such as Dynamics 365 apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises, when you use the default claims-based authentication mapping, the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address used by the Dynamics 365 apps user must match the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] user’s **Work email**. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [About claims-based authentication mapping](/dynamics365/customer-engagement/admin/on-prem-server-based-sharepoint-on-prem.md#about-claims-based-authentication-mapping) 
   
 <a name="BKMK_SP_nosupp"></a>   
 ### SharePoint Version Not Supported  
@@ -51,13 +51,13 @@ search.app:
  This section describes the known issues that may occur when you set up or use [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server-based authentication.  
   
 ### Failed authentication is returned when validating a SharePoint site even though you have appropriate permission  
- Applies to: [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps with [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)], [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] on-premises  
+ Applies to: Dynamics 365 apps with [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)], Dynamics 365 apps with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] on-premises  
   
  This issue can occur when the claims-based authentication mapping that is used provides a situation where the claims type values don’t match between [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. For example, this issue can occur when the following items are true:  
   
-- You use the default claims-based authentication mapping type, which for [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] server-based authentication uses the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] unique identifier.  
+- You use the default claims-based authentication mapping type, which for Dynamics 365 apps to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] server-based authentication uses the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] unique identifier.  
   
-- The identities used for [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)], [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] administrator, or [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] administrator don’t use the same [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)], therefore the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] unique identifiers don’t match.  
+- The identities used for [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)], Dynamics 365 administrator, or [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] administrator don’t use the same [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)], therefore the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] unique identifiers don’t match.  
   
 ### “Private key not found” error message returned when you run the CertificateReconfiguration.ps1 Windows PowerShell script  
  *This content also applies to the on-premises version.*

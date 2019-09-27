@@ -53,7 +53,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
 >  In [!INCLUDE[pn_v6_online_ur1](../includes/pn-v6-online-ur1.md)], only one [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] environment is provided for connection to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment.  
   
 ## Assign Social Engagement licenses to Dynamics 365 apps users  
- [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps customers automatically have access to [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] as part of their subscription at no additional charge. .  
+ Dynamics 365 apps customers automatically have access to [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] as part of their subscription at no additional charge. .  
   
  Use the [!INCLUDE[pn_MS_Online_Services_Portal](../includes/pn-ms-online-services-portal.md)] to assign and verify [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] licenses.  
   
@@ -65,7 +65,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
   
    ![Choose Edit to assign a user license](../admin/media/social-engagement-add-license.png "Choose Edit to assign a user license")  
   
-4. Expand [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps. Select the check box for [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] and choose **Save**.  
+4. Expand Dynamics 365 apps. Select the check box for [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] and choose **Save**.  
   
    ![Choose the Microsoft Social Engagement check box](../admin/media/social-engagement-check-license.png "Choose the Microsoft Social Engagement check box")  
   
