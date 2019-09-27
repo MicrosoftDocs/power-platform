@@ -29,7 +29,7 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
   
 Dynamics 365 apps 
   
-- **Run SharePoint Integration Wizard** privilege. This is required to run the Enable Server-based Authentication wizard in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+- **Run SharePoint Integration Wizard** privilege. This is required to run the Enable Server-based Authentication wizard in Dynamics 365 apps.  
   
      By default, the System Administrator security role has this permission.  
   
@@ -56,7 +56,7 @@ Dynamics 365 apps
 - [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] (on-premises) with Service Pack 1 (SP1) or later version  
   
   > [!IMPORTANT]
-  >  SharePoint Foundation 2013 versions aren’t supported for use with [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps document management.  
+  >  SharePoint Foundation 2013 versions aren’t supported for use with Dynamics 365 apps document management.  
   
 - Hotfix KB2883081 for SharePoint Foundation 2013 August 12, 2014 (Sts-x-none.msp). This hotfix is included with the [Office 2013 cumulative update for August 2014](https://support.microsoft.com/help/2989078/office-2013-cumulative-update-for-august-2014).  
   
@@ -69,17 +69,17 @@ Dynamics 365 apps
   
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration  
   
-  - If you use [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)], for each [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, only one [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps can be configured for server-based integration.  
+  - If you use [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)], for each [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, only one Dynamics 365 apps can be configured for server-based integration.  
   
   - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be accessible via the Internet. A reverse proxy may also be required for [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] authentication. More information: [Configure a reverse proxy device for SharePoint Server 2013 hybrid](https://technet.microsoft.com/library/dn607304.aspx)  
   
   - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website must be configured to use SSL (HTTPS) on TCP port 443 (no custom ports are supported) and the certificate must be issued by a public root Certificate Authority. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [SharePoint: About Secure Channel SSL certificates](https://technet.microsoft.com/library/b291ea58-cfda-48ec-92d7-5180cb7e9469#AboutSecureChannel)  
   
-  - A reliable user property to use for claims-based authentication mapping between [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] and [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Selecting a claims mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap)  
+  - A reliable user property to use for claims-based authentication mapping between [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] and Dynamics 365 apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Selecting a claims mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap)  
   
   - For document sharing, the SharePoint search service must be enabled. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create and configure a Search service application in SharePoint Server](https://technet.microsoft.com/library/gg502597.aspx)  
   
-  - For document management functionality when using the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps mobile apps, the on-premises [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server must be available through the Internet.  
+  - For document management functionality when using the Dynamics 365 apps mobile apps, the on-premises [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server must be available through the Internet.  
   
   
 <a name="BKMK_otherPreq"></a>  
@@ -227,7 +227,7 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
   
  The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection administration membership.  
   
-1. Register [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps with the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection.  
+1. Register Dynamics 365 apps with the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection.  
   
     Enter the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises site collection URL. In this example, *<https://sharepoint.contoso.com/sites/crm/>* is used.  
   
@@ -241,14 +241,14 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
   
    ```  
   
-2. Grant [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps access to the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. Replace *<https://sharepoint.contoso.com/sites/crm/>* with your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site URL.  
+2. Grant Dynamics 365 apps access to the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. Replace *<https://sharepoint.contoso.com/sites/crm/>* with your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site URL.  
   
    > [!NOTE]
-   >  In the following example, the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps is granted permission to the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection by using the –Scope site collection parameter. The Scope parameter accepts the following options. Choose the scope that is most appropriate for your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration.  
+   >  In the following example, the Dynamics 365 apps is granted permission to the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection by using the –Scope site collection parameter. The Scope parameter accepts the following options. Choose the scope that is most appropriate for your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration.  
    > 
-   > - `site`. Grants the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps permission to the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website only. It doesn’t grant permission to any subsites under the named site.  
-   >   - `sitecollection`. Grants the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps permission to all websites and subsites within the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection.  
-   >   - `sitesubscription`. Grants the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps permission to all websites in the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, including all site collections, websites, and subsites.  
+   > - `site`. Grants the Dynamics 365 apps permission to the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] website only. It doesn’t grant permission to any subsites under the named site.  
+   >   - `sitecollection`. Grants the Dynamics 365 apps permission to all websites and subsites within the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection.  
+   >   - `sitesubscription`. Grants the Dynamics 365 apps permission to all websites in the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, including all site collections, websites, and subsites.  
   
    ```  
    $app = Get-SPAppPrincipal -NameIdentifier $issuer -Site "https://sharepoint.contoso.com/sites/crm/"  
@@ -266,7 +266,7 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
    ```  
   
 ### Run the Enable server-based SharePoint integration wizard  
- In the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, follow these steps:  
+ In the Dynamics 365 apps, follow these steps:  
   
 1. [!INCLUDE[proc_settings_doc_management](../includes/proc-settings-doc-management.md)]  
   
@@ -283,12 +283,12 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
 7. The validate sites section appears. If all sites are determined valid, click **Enable**. If one or more sites are determined invalid, see [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md).  
   
 ### Select the entities that you want to include in document management  
- By default, Account, Article, Lead, Product, Quote, and Sales Literature entities are included. You can add or remove the entities that will be used for document management with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] in **Document Management Settings** in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. [!INCLUDE[proc_settings_doc_management](../includes/proc-settings-doc-management.md)][!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)  
+ By default, Account, Article, Lead, Product, Quote, and Sales Literature entities are included. You can add or remove the entities that will be used for document management with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] in **Document Management Settings** in Dynamics 365 apps. [!INCLUDE[proc_settings_doc_management](../includes/proc-settings-doc-management.md)][!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)  
   
 <a name="addOneDrive"></a>   
 
 ## Add OneDrive for Business integration  
- After you complete [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server-based authentication configuration, you can also integrate [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. With [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps and [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] integration, [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps users can create and manage private documents using [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. Those documents can be accessed in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps once the system administrator has enabled [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
+ After you complete Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server-based authentication configuration, you can also integrate [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. With Dynamics 365 apps and [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] integration, Dynamics 365 apps users can create and manage private documents using [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. Those documents can be accessed in Dynamics 365 apps once the system administrator has enabled [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
   
 ### Enable OneDrive for Business  
  On the Windows Server where [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] on-premises is running, open the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Management Shell and run the following commands:  

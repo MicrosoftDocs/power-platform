@@ -17,7 +17,7 @@ search.app:
 ---
 # Supported email service configurations for server-side synchronization
 
-Depending on your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps installation, you may be deciding whether to use server-side synchronization or the Email Router/[!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization. This following table lists what is supported by server-side synchronization for each type of installation. Later in this topic, you can read about the scenarios that aren’t supported by server-side synchronization.  
+Depending on your Dynamics 365 apps installation, you may be deciding whether to use server-side synchronization or the Email Router/[!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization. This following table lists what is supported by server-side synchronization for each type of installation. Later in this topic, you can read about the scenarios that aren’t supported by server-side synchronization.  
   
 > [!IMPORTANT]
 > - The information here includes the POP3/SMTP and IMAP/SMTP systems supported by [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. Although other POP3/SMTP and IMAP/SMTP systems might work with Customer Engagement (on-premises), those systems were not tested by [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] and are not supported.  
@@ -31,8 +31,8 @@ Depending on your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] ap
 |---------|------|----------|-----------|------------|  
 | Dynamics 365 apps   |- [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]<br />- [!INCLUDE[pn_ms_Exchange_Server_2010_short](../includes/pn-ms-exchange-server-2010-short.md)] SP3<br />- [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)] SP1<br />- Exchange Server 2016<br />-Exchange Server 2019|  Yes |  Yes  | [!INCLUDE[pn_Exchange_Web_Services](../includes/pn-exchange-web-services.md)] | 
 | Dynamics 365 apps |  - Gmail<br />- Yahoo! Mail | Yes  |  No  |         POP3/SMTP <br />IMAP/SMTP | 
-| [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps (on-premises) |  - [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]<br />- [!INCLUDE[pn_ms_Exchange_Server_2010_short](../includes/pn-ms-exchange-server-2010-short.md)]<br />- [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)]<br />- Exchange Server 2016   |  Yes  |  Yes  | [!INCLUDE[pn_Exchange_Web_Services](../includes/pn-exchange-web-services.md)] | 
-| [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps (on-premises) | - Gmail<br />- Yahoo! Mail<br />- MSN<sup>1</sup><br />- Outlook.com<sup>1</sup><br />- Windows Live Mail<sup>1</sup>   |  Yes |  No  | POP3/SMTP <br />IMAP/SMTP |
+| Dynamics 365 apps (on-premises) |  - [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]<br />- [!INCLUDE[pn_ms_Exchange_Server_2010_short](../includes/pn-ms-exchange-server-2010-short.md)]<br />- [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)]<br />- Exchange Server 2016   |  Yes  |  Yes  | [!INCLUDE[pn_Exchange_Web_Services](../includes/pn-exchange-web-services.md)] | 
+| Dynamics 365 apps (on-premises) | - Gmail<br />- Yahoo! Mail<br />- MSN<sup>1</sup><br />- Outlook.com<sup>1</sup><br />- Windows Live Mail<sup>1</sup>   |  Yes |  No  | POP3/SMTP <br />IMAP/SMTP |
   
  <sup>1</sup> May be unsupported for FIPS-compliancy. See the following section for more information.  
   
@@ -79,7 +79,7 @@ Depending on your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] ap
 For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system with Dynamics 365 apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/integrate-synchronize-your-email-system)  
   
 > [!NOTE]
->  We recommend that you don’t use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data not synchronizing to all attendees.  
+>  We recommend that you don’t use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated Dynamics 365 apps data not synchronizing to all attendees.  
   
 ### See also  
  [Server-side synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/server-side-synchronization)   

@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-You don’t have sufficient permissions to access [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. A [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps system administrator will need to do the following in the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps:  
+You don’t have sufficient permissions to access Dynamics 365 apps. A Dynamics 365 apps system administrator will need to do the following in the Dynamics 365 apps:  
   
 1. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
   

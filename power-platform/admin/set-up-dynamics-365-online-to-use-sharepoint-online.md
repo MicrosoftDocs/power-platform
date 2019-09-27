@@ -21,11 +21,11 @@ search.app:
 
 When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)] with Dynamics 365 apps, you can:  
   
-- Create, upload, view, and delete documents stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+- Create, upload, view, and delete documents stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] from within Dynamics 365 apps.  
   
-- Use the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document management abilities within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, such as checking the document in and out and changing document properties.  
+- Use the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document management abilities within Dynamics 365 apps, such as checking the document in and out and changing document properties.  
   
-- Enable non-[!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps users, such as customers who want to review a bid, to directly access the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] documents, provided they have the appropriate permissions.  
+- Enable non-Dynamics 365 apps users, such as customers who want to review a bid, to directly access the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] documents, provided they have the appropriate permissions.  
   
 > [!IMPORTANT]
 >  This topic is for organizations who wish to deploy for the first time or upgrade to server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration. After you enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, you can’t revert to the previous client-based authentication method.  
@@ -68,7 +68,7 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
  If your organization is already using document management with [!INCLUDE[pn_list_component_short](../includes/pn-list-component-short.md)], you must switch to server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Switching from the list component or changing the deployment](switching-list-component-changing-deployment.md)  
   
 > [!IMPORTANT]
->  Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration uses the entity display name to build the SharePoint library. When you upgrade to server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, be sure to check that the display names in your document library on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] match the entity display names in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] ["Validation Error" when you try to configure server-based SharePoint integration for Microsoft Dynamics CRM Online and SharePoint Online](http://go.microsoft.com/fwlink/p/?LinkID=402112).  
+>  Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration uses the entity display name to build the SharePoint library. When you upgrade to server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, be sure to check that the display names in your document library on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] match the entity display names in Dynamics 365 apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] ["Validation Error" when you try to configure server-based SharePoint integration for Microsoft Dynamics CRM Online and SharePoint Online](http://go.microsoft.com/fwlink/p/?LinkID=402112).  
   
  ![SharePoint library name and entity display name](../admin/media/crm-itpro-crmo365tg-sharepointname.png "SharePoint library name and entity display name")  
   
@@ -77,12 +77,12 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
 <a name="BKMK_ConfigNewOrg"></a>   
 
 ### Configure a new organization  
- If your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization has not deployed document management, when a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps System Administrator logs in an alert message will be displayed to enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration.  
+ If your Dynamics 365 apps organization has not deployed document management, when a Dynamics 365 apps System Administrator logs in an alert message will be displayed to enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration.  
   
  ![Enable Server-Based SharePoint Integration alert](../admin/media/crm-and-sharepoint-online-enable-now.png "Enable Server-Based SharePoint Integration alert")  
   
 > [!NOTE]
->  If you don’t see the alert and have not previously enabled server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, clear your browser cache or open [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps using [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] with InPrivate browsing to have the alert display again. Once you configure server-based integration, the alert will no longer appear.  
+>  If you don’t see the alert and have not previously enabled server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, clear your browser cache or open Dynamics 365 apps using [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] with InPrivate browsing to have the alert display again. Once you configure server-based integration, the alert will no longer appear.  
   
 1. Go to **Settings** > **Document Management**, and then select **Enable server-based SharePoint** integration.
 
@@ -99,7 +99,7 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
   
    ![Enter the URL of the SharePoint site](../admin/media/crmandsharepointonlineenablestep3.png "Enter the URL of the SharePoint site")  
   
-5. The URL will be checked for being a valid [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization. After enabling server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration you can’t go back to the previous client-side integration. Choose **Enable**.  
+5. The URL will be checked for being a valid [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your Dynamics 365 apps organization. After enabling server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration you can’t go back to the previous client-side integration. Choose **Enable**.  
 
 ### Next steps  
 Once server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration is enabled you will need to enable the entities you want available for document management integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)    
@@ -171,7 +171,7 @@ As a workaround, you can set the unmanaged devices policy to “Allow full acces
 <a name="BKMK_info_trans_CRMtoSP"></a>   
 
 ## Information transmitted between Dynamics 365 apps and SharePoint when you use server-based SharePoint integration  
- When you use the document management feature in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps by using server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, the following information is transmitted between Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]:  
+ When you use the document management feature in Dynamics 365 apps by using server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, the following information is transmitted between Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]:  
   
 - Entity name for the entity that is used to create folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], such as Account, Article, or Lead. To configure the entities that are integrated, go to **Settings** > **Document Management** > **Document Management Settings**.
 

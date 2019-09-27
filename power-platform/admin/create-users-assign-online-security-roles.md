@@ -17,7 +17,7 @@ search.app:
 ---
 # Create users and assign security roles
 
-You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to Dynamics 365 apps. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. In addition to registration with the online service, the user account must be assigned a license in order for the user to have access to the service. Note that when you assign a user the global administrator or the service administrator role in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], it automatically assigns the user the System Administrator security role in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps . [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Differences between the Microsoft Online services environment administrative roles and Dynamics 365 apps security roles](https://docs.microsoft.com/dynamics365/customer-engagement/admin/grant-users-access#BKMK_O365CRMroles)  
+You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to Dynamics 365 apps. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. In addition to registration with the online service, the user account must be assigned a license in order for the user to have access to the service. Note that when you assign a user the global administrator or the service administrator role in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], it automatically assigns the user the System Administrator security role in Dynamics 365 apps . [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Differences between the Microsoft Online services environment administrative roles and Dynamics 365 apps security roles](https://docs.microsoft.com/dynamics365/customer-engagement/admin/grant-users-access#BKMK_O365CRMroles)  
 
 ## Create a user account  
  When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You have the option to let the service send an email message to the user as clear text. Although the password is temporary, you may consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] user account, see [Create or edit users in Office 365](http://go.microsoft.com/fwlink/p/?LinkId=255286).  
@@ -66,7 +66,7 @@ The following are Office 365 user contact fields.
  For step-by-step instructions, see [Assign, reassign, or remove licenses](http://go.microsoft.com/fwlink/p/?LinkId=255449).  
   
 > [!IMPORTANT]
->  Licensed users must be assigned at least one [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps security role to access Dynamics 365 apps.  
+>  Licensed users must be assigned at least one Dynamics 365 apps security role to access Dynamics 365 apps.  
   
  **About user licenses**  
   
@@ -78,7 +78,7 @@ The following are Office 365 user contact fields.
   
 - If you have more user licenses than you are using, contact support to reduce the number of licenses. You cannot reduce the number of licenses to less than you are currently using or less than your offer allows. Any changes are reflected in your next billing cycle.  
   
-- Each user license requires a unique Microsoft account, and every user who logs on to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps needs a license. Most [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps subscriptions include a specific number of user licenses.  
+- Each user license requires a unique Microsoft account, and every user who logs on to Dynamics 365 apps needs a license. Most Dynamics 365 apps subscriptions include a specific number of user licenses.  
 
 > [!NOTE]
 > There is a set of default security roles that are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. There is no data access permission granted to this role. The administrator is still required to assign the appropriate security role to the user in order for the user to view and interact with the data. 
@@ -181,9 +181,9 @@ Check your security role:
 5. Select **Save** > **Close** multiple times.  
   
 > [!NOTE]
-> You can also delete users in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. When you remove a user from your subscription, the license assigned to that user automatically becomes available to be assigned to a different user. If you want the user to still have access to other applications you manage through [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], for example [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] or [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)], don't delete them as a user. Instead, simply remove the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps license you've assigned to them.  
+> You can also delete users in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. When you remove a user from your subscription, the license assigned to that user automatically becomes available to be assigned to a different user. If you want the user to still have access to other applications you manage through [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], for example [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] or [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)], don't delete them as a user. Instead, simply remove the Dynamics 365 apps license you've assigned to them.  
 > 
-> When you sign out of the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], you aren’t signing out of [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. You have to do that separately.  
+> When you sign out of the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], you aren’t signing out of Dynamics 365 apps. You have to do that separately.  
 
 > [!TIP]
 > To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and Dynamics 365 apps, do the following:  

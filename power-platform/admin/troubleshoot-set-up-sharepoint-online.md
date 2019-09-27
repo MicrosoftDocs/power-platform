@@ -136,9 +136,9 @@ The most common cause for the Documents associated grid not loading is the corru
 
 ## Validate and fix SharePoint site URLs
 
-In [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site and document location records contain links to site collections, site, document libraries, and folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. These site and document location records are associated with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records so that the documents for [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records can be stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+In Dynamics 365 apps, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site and document location records contain links to site collections, site, document libraries, and folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. These site and document location records are associated with Dynamics 365 apps records so that the documents for Dynamics 365 apps records can be stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
- When the links between [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] break, you must validate and fix the links so that the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records continue to point to the correct document libraries and folders for managing the documents.  
+ When the links between Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] break, you must validate and fix the links so that the Dynamics 365 apps records continue to point to the correct document libraries and folders for managing the documents.  
   
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   
@@ -156,7 +156,7 @@ In [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, [!INCLUDE[p
   
    3. Select the site URLs that you want to validate, and then click or tap **Validate**.  
   
-3. [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps validates all the selected site URLs and their immediate subordinate site and document library URLs. It then displays the results in **Validating Sites**.  
+3. Dynamics 365 apps validates all the selected site URLs and their immediate subordinate site and document library URLs. It then displays the results in **Validating Sites**.  
   
 4. To fix a URL, open the site record, and enter the correct URL. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit site records](edit-existing-sharepoint-site-records.md).  
   

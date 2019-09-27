@@ -19,9 +19,9 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. It uses a dedicated search service external to Dynamics 365 apps powered by [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] Search to improve your Dynamics 365 apps search experience. As an administrator or customizer, you'll be able to enable and configure Relevance Search in the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps user interface without writing code. Many of the configuration steps will look familiar to you, as they use the same user interface as the Quick Find configuration.  
+Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. It uses a dedicated search service external to Dynamics 365 apps powered by [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] Search to improve your Dynamics 365 apps search experience. As an administrator or customizer, you'll be able to enable and configure Relevance Search in the Dynamics 365 apps user interface without writing code. Many of the configuration steps will look familiar to you, as they use the same user interface as the Quick Find configuration.  
 
- Relevance Search is available in addition to other [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps search experience you’re already familiar with. You can still use single-entity Quick Find on the entity grid. You can also use multi-entity Quick Find (now called Categorized Search) from the **Search Dynamics 365 apps data** search box on the navigation bar.  
+ Relevance Search is available in addition to other Dynamics 365 apps search experience you’re already familiar with. You can still use single-entity Quick Find on the entity grid. You can also use multi-entity Quick Find (now called Categorized Search) from the **Search Dynamics 365 apps data** search box on the navigation bar.  
 
  Relevance Search brings the following enhancements and benefits:  
 
@@ -33,7 +33,7 @@ Relevance Search delivers fast and comprehensive search results in a single list
 
 - Matches in the result list are highlighted.  
 
-- Includes the ability to search documents found in Notes and Attachments on Emails and Appointments tracked in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.
+- Includes the ability to search documents found in Notes and Attachments on Emails and Appointments tracked in Dynamics 365 apps.
 
 <a name="BKMK_CompareCRMSearches"></a>   
 ## Compare Dynamics 365 apps searches  
@@ -68,7 +68,7 @@ You'll see hit highlights when your search term matches a term in your applicati
 
 <a name="BKMK_Architecture"></a>   
 ## Relevance Search architecture  
- Relevance Search is hosted on the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] cloud computing platform and infrastructure that uses [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Search, which provides the search results. Changes made in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps may take up to 15 minutes to appear in the search service. It may take up to up to an hour or more to complete a full sync for average to large size organizations.  
+ Relevance Search is hosted on the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] cloud computing platform and infrastructure that uses [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Search, which provides the search results. Changes made in Dynamics 365 apps may take up to 15 minutes to appear in the search service. It may take up to up to an hour or more to complete a full sync for average to large size organizations.  
 
  The following diagram shows the high level Relevance Search architecture.  
 
@@ -80,7 +80,7 @@ You'll see hit highlights when your search term matches a term in your applicati
 > [!IMPORTANT]
 >  Data in your application  begins syncing to the external search index immediately after you enable Relevance Search.  We strongly recommend that you configure the entities and entity fields participating in Relevance Search before you enable the search, to prevent sensitive data from being indexed in a service external to Dynamics 365 apps.  For more information about configuring Relevance Search, see            [Select entities for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SelectEntities),            [Configure searchable fields for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_ConfigureFields), and            [Set managed property for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SetPropertiy).  
 
- Because you’ll be sharing your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data with the external system, Relevance Search is disabled by default. To enable it, you must accept the consent terms. Depending on the size of your organization, it may take up to an hour or more for the data to become available in the external search index after you enable the search. Enabling Relevance Search makes this search option available to all members of your organization.
+ Because you’ll be sharing your Dynamics 365 apps data with the external system, Relevance Search is disabled by default. To enable it, you must accept the consent terms. Depending on the size of your organization, it may take up to an hour or more for the data to become available in the external search index after you enable the search. Enabling Relevance Search makes this search option available to all members of your organization.
   
  By default, Relevance Search is disabled. To enable Relevance Search, do the following:  
 

@@ -19,9 +19,9 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Gather your thoughts, ideas, plans and research in one single place with [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+Gather your thoughts, ideas, plans and research in one single place with [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in Dynamics 365 apps.  
   
- When you turn on [!INCLUDE[pn_microsoft_onenote](../includes/pn-microsoft-onenote.md)] integration in Dynamics 365 apps, you have the benefits of using [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] to take or review customer notes from within your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records.  
+ When you turn on [!INCLUDE[pn_microsoft_onenote](../includes/pn-microsoft-onenote.md)] integration in Dynamics 365 apps, you have the benefits of using [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] to take or review customer notes from within your Dynamics 365 apps records.  
   
  You can configure [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in Dynamics 365 apps when you're also using [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)]. You must have a subscription to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] to use [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in Dynamics 365 apps.  
   
@@ -59,7 +59,7 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
   
    ![Select OneNote integration for an entity](../admin/media/onenote-select-entity.png "Select OneNote integration for an entity")  
   
-5. A [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is automatically created for a record the first time you select the **OneNote** tab in the activities area in Dynamics 365 apps. After the dedicated [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is created for that [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps record, you can view and navigate to that notebook from any [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps client.  
+5. A [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is automatically created for a record the first time you select the **OneNote** tab in the activities area in Dynamics 365 apps. After the dedicated [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is created for that Dynamics 365 apps record, you can view and navigate to that notebook from any Dynamics 365 apps client.  
   
 [!INCLUDE[proc-more-information](../includes/proc-more-information.md)]  [Use OneNote in Dynamics 365 apps](/dynamics365/customer-engagement/basics/use-onenote.md)
   

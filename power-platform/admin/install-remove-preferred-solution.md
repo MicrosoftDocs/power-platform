@@ -28,7 +28,7 @@ Install preferred solutions to gain added features and functionality for Dynamic
 <a name="BKMK_InstallInsights"></a>   
 ## Install a preferred solution  
   
-1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com) with your Global administrator or [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps System Administrator credentials.  
+1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com) with your Global administrator or Dynamics 365 apps System Administrator credentials.  
   
 2. Select **Admin centers** > **Dynamics 365**  
   
@@ -46,7 +46,7 @@ Install preferred solutions to gain added features and functionality for Dynamic
 
 ## Update a preferred solution
 
-1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com) with your Global administrator or [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps System Administrator credentials.  
+1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com) with your Global administrator or Dynamics 365 apps System Administrator credentials.  
   
 2. Select **Admin centers** > **Dynamics 365**  
   
@@ -67,7 +67,7 @@ Install preferred solutions to gain added features and functionality for Dynamic
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
-2. Sign in to [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+2. Sign in to Dynamics 365 apps.  
   
 3. Select **Settings** > **Solutions**.  
   

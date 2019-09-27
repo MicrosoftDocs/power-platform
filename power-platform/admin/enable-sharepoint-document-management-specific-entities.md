@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Store the documents related to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps entity records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] and quickly access, share, and manage these documents from [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps by enabling document management on the specific entities.  
+Store the documents related to Dynamics 365 apps entity records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] and quickly access, share, and manage these documents from Dynamics 365 apps by enabling document management on the specific entities.  
   
 > [!TIP]
 >  If you haven’t set up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, you may want to do that before enabling document management for specific entities. For more information, see [Set up SharePoint integration with Microsoft Dynamics 365 apps](set-up-sharepoint-integration.md).  
@@ -47,7 +47,7 @@ Store the documents related to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamic
       If you don't want folders automatically created, clear the **Based on entity** check box.  
    
      > [!IMPORTANT]
-     >  If you have Dynamics 365 apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environments.  
+     >  If you have Dynamics 365 apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your Dynamics 365 environments.  
       
    - Click **Finish**.  
   
@@ -72,7 +72,7 @@ Store the documents related to [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamic
   
 7. Click **Next**.  
   
-   [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps create document libraries for the selected entities on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps also create the corresponding document location records that contain the links to these document libraries. The **Document Management Settings** wizard shows the creation status of the document libraries.  -->
+   Dynamics 365 apps create document libraries for the selected entities on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. Dynamics 365 apps also create the corresponding document location records that contain the links to these document libraries. The **Document Management Settings** wizard shows the creation status of the document libraries.  -->
   
 ### See also  
  [Edit existing SharePoint site records](../admin/edit-existing-sharepoint-site-records.md)   

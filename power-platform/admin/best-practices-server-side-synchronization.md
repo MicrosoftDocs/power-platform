@@ -24,8 +24,9 @@ Consider the following when planning and deploying server-side synchronization.
 ## Best practices for configuring server-side synchronization  
   
 <a name="BKMK_CRMEXOnline"></a>   
-### If you use Dynamics 365 apps and Exchange Online  
- By default, the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile is created for Dynamics 365 apps organizations and should be your first choice. If you want to use your own profile, you use Dynamics 365 apps, and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], and both services are on the same tenant, use the following settings in your email server profile (**Settings** > **Email Configuration** > **Email Server Profiles**).  
+
+### If you use model-driven apps in Dynamics 365 and Exchange Online  
+ By default, the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile is created for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and should be your first choice. If you want to use your own profile, you use model-driven apps in Dynamics 365, and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], and both services are on the same tenant, use the following settings in your email server profile (**Settings** > **Email Configuration** > **Email Server Profiles**).  
   
 |Settings|Recommendation|  
 |--------------|--------------------|  

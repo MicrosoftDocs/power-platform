@@ -21,13 +21,13 @@ search.app:
 
 [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] gives colleagues at your organization a central place to have conversations, create and edit documents, and share information without sending a single email or attending any meetings.  
   
- After you set up your organization to work with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], employees will see posts in a newsfeed on their [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps dashboard whenever people update customer info, and they’ll be able to join in the conversation with their own posts.  
+ After you set up your organization to work with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], employees will see posts in a newsfeed on their Dynamics 365 apps dashboard whenever people update customer info, and they’ll be able to join in the conversation with their own posts.  
   
 ## Connect your organization to Yammer  
   
 ### Prerequisites  
   
-- Before your organization can use [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, your organization needs to buy [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] enterprise licenses.  
+- Before your organization can use [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] in Dynamics 365 apps, your organization needs to buy [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] enterprise licenses.  
 
 - [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] integration is only available for Dynamics 365 apps.
   
@@ -35,7 +35,7 @@ search.app:
   
 - You’ll also need to have verified system administrator privileges for your organization’s [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account.  
   
-- Install the most recent product updates for [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+- Install the most recent product updates for Dynamics 365 apps.  
   
 - Meet [browser and system requirements](https://support.office.com/article/Yammer-admin-guide-a9c206d4-fb18-4250-bec6-e783b926e4f6).  
   
@@ -56,7 +56,7 @@ search.app:
 7. Follow the on-screen instructions to accept the [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] terms of service, note which [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] network has been set up for you, and connect your organization to it. After your organization is connected, you’ll see a confirmation message at the bottom of the screen.  
   
    > [!NOTE]
-   > [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps only supports connecting to the primary [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] network. Connecting to External Networks in [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] is not supported.  
+   > Dynamics 365 apps only supports connecting to the primary [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] network. Connecting to External Networks in [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] is not supported.  
   
 8. If desired, stay signed in to your [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account and set your organization’s preferences for [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts.  
   
@@ -64,14 +64,14 @@ search.app:
   
 1. Make sure you’re signed in to your enterprise [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account using your administrator credentials.  
   
-2. If desired, select whether [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts are **public** (everyone sees [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps posts in the newsfeed, or **private** (people must “follow” a record to see posts about that record in the newsfeed).  
+2. If desired, select whether [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts are **public** (everyone sees Dynamics 365 apps posts in the newsfeed, or **private** (people must “follow” a record to see posts about that record in the newsfeed).  
   
-3. If desired, select the default group where you would like [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps posts to appear.  
+3. If desired, select the default group where you would like Dynamics 365 apps posts to appear.  
   
 4. If desired, select which record types trigger automatic posts to the [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] newsfeed.  
   
 ## Enable Dynamics 365 apps entities for Yammer  
- Once you’ve connected [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], you need to specify which [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps entities are enabled for use with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]. Enabled entities can be followed by users  
+ Once you’ve connected Dynamics 365 apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], you need to specify which Dynamics 365 apps entities are enabled for use with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]. Enabled entities can be followed by users  
   
 1. [!INCLUDE[proc_settings_system](../includes/proc-settings-system.md)]  
   
@@ -89,7 +89,7 @@ search.app:
 ## Additional considerations  
   
 ### When connecting Dynamics 365 apps with a federated Yammer  
- If you have configured [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] to use single sign-on, you’ll need to generate and use a temporary password to connect [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)].  
+ If you have configured [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] to use single sign-on, you’ll need to generate and use a temporary password to connect Dynamics 365 apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)].  
   
 1. Sign in to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] with the single sign-on credentials.  
   
@@ -101,7 +101,7 @@ search.app:
   
 5. Complete the process to obtain a temporary user name and password.  
   
-6. Use the temporary user name and password to complete the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] connection configuration.  
+6. Use the temporary user name and password to complete the Dynamics 365 apps to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] connection configuration.  
   
 ### Add Yammer sites to the browser as trusted  
  Add your Yammer sites to your browser as trusted. For example, for Dynamics 365 apps, add the following:  

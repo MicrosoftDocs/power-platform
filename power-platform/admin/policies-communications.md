@@ -24,7 +24,7 @@ If you’re not sure who your Dynamics 365 apps admin is, see [Find your Dynamic
   
  If you want to add additional recipients who receive email communications, see [Manage email notifications to admins](manage-email-notifications.md).  
   
- If you’re a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps admin, you can also see the latest status of updates and incidents in the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
+ If you’re a Dynamics 365 apps admin, you can also see the latest status of updates and incidents in the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
   
 ## Scheduled system updates
 

@@ -17,7 +17,7 @@ search.app:
 ---
 # Change auto-numbering prefixes for contracts, cases, articles, quotes, orders, invoices, campaigns, categories, and knowledge articles
 
-Contracts, cases, articles, quotes, orders, invoices, marketing campaigns, categories, and knowledge articles are automatically numbered by [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. If your organization has standard numbering formats, you can change the default three-character prefixes and number format to match your organization.  
+Contracts, cases, articles, quotes, orders, invoices, marketing campaigns, categories, and knowledge articles are automatically numbered. If your organization has standard numbering formats, you can change the default three-character prefixes and number format to match your organization.  
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Announcements**.
 

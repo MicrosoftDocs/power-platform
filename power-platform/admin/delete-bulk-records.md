@@ -17,7 +17,7 @@ search.app:
 ---
 # Remove a large amount of specific, targeted data with bulk deletion 
 
-The *bulk deletion* feature helps you to maintain data quality and manage the consumption of system storage in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps by deleting data that you no longer need.  
+The *bulk deletion* feature helps you to maintain data quality and manage the consumption of system storage in Dynamics 365 apps by deleting data that you no longer need.  
   
  For example, you can delete the following data in bulk:  
   

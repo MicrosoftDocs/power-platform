@@ -23,7 +23,7 @@ This topic provides an overview about how to switch from the list component to s
   
 <a name="BKMK_switchlistcomp"></a> 
 ## Switch from list component to server-based authentication  
- If your organization is already using the list component with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] for document management with [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, you can switch to server-based authentication by following these steps.  
+ If your organization is already using the list component with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] for document management with Dynamics 365 apps, you can switch to server-based authentication by following these steps.  
   
 1. Follow the steps to set up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration that best fits your deployment type. For more information, see the appropriate topic for your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] deployment below.  
 

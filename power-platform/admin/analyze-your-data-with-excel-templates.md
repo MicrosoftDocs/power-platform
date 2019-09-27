@@ -48,7 +48,7 @@ search.app:
   
 <a name="BKMK_CreateStep1"></a>   
 ### Step 1: Create a new template from existing data  
- There are two places in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps where you can create an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template:  
+ There are two places where you can create an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template:  
   
 - **From the Settings page**. Go to **Settings** > **Templates** > **Document Templates** > **New** (![New or Add button](../admin/media/nb-ua-r1-plus.png "New or Add button")). You must have sufficient permissions to access to the Settings page, such as System Administrator or System Customizer.  
   
@@ -64,7 +64,7 @@ search.app:
   
 1. Click **Excel Template**.  
   
-2. Select an entity (record type) to include that entity’s [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data. The views you can select in the next field depend on the entity you select.  
+2. Select an entity (record type) to include that entity’s data. The views you can select in the next field depend on the entity you select.  
   
 3. Select a view.  
   
@@ -86,7 +86,7 @@ search.app:
   
  ![New Excel Template](../admin/media/excel-template-new.png "New Excel Template")  
   
- Let’s walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template using [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps sample data.  
+ Let’s walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template using  sample data.  
   
 #### Example customization of Opportunities data  
   
@@ -102,23 +102,23 @@ search.app:
   
 4. Create a pivot table and chart. These and other demo steps will be explained in a future update to this topic.  
   
-    Place user-added content above or to the right of the existing data table. This prevents the content from being overwritten if you add new data in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps later and you create a new [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template. For more information, see: [Best practices and considerations for using Excel templates](../admin/analyze-your-data-with-excel-templates.md#BKMK_BestPractices).  
+    Place user-added content above or to the right of the existing data table. This prevents the content from being overwritten if you add new data later and you create a new [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template. For more information, see: [Best practices and considerations for using Excel templates](../admin/analyze-your-data-with-excel-templates.md#BKMK_BestPractices).  
   
    ![Excel template with Pivot Chart](../admin/media/excel-template-pivot-chart.png "Excel template with Pivot Chart")  
   
 5. Save the spreadsheet.  
   
-   You’re now ready to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+   You’re now ready to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  
   
 <a name="BKMK_CreateUpload"></a>   
 ### Step 3: Upload the template and share with others  
- When you have your [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template customized the way you want, you can upload it into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. Where you upload the template determines its availability.  
+ When you have your [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template customized the way you want, you can upload it. Where you upload the template determines its availability.  
   
- [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrators can use the Settings page to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. A template uploaded in Settings is available to all users in your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization.  
+ Administrators can use the Settings page to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template. A template uploaded in Settings is available to all users.  
   
 #### For admins: Upload the Excel template
   
-1. In [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, go to **Settings** > **Templates** > **Document Templates**.  
+1. Go to **Settings** > **Templates** > **Document Templates**.  
   
 2. Click **Upload Template**.  
   
@@ -132,7 +132,7 @@ search.app:
   
 #### For non-admins or admins wanting to create a personal template: Upload the Excel template
   
-1. In [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, open a page with a list of records, for example, the list of Sales Opportunities. Go to **Sales** > **Opportunities** > **My Open Opportunities**.  
+1. Open a page with a list of records, for example, the list of Sales Opportunities. Go to **Sales** > **Opportunities** > **My Open Opportunities**.  
   
 2. On the menu bar, click **Excel Templates** > **Create Excel Template**.  
   
@@ -154,7 +154,7 @@ search.app:
   
  ![Excel template uploaded from Settings page](../admin/media/excel-template-uploaded-from-settings-page.png "Excel template uploaded from Settings page")  
   
- Templates uploaded from the Settings page are available to all users in your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization. You don’t need to take any further action.  
+ Templates uploaded from the Settings page are available to all users. You don’t need to take any further action.  
   
  **If you uploaded the template from a list of records**  
   
@@ -190,13 +190,13 @@ search.app:
   
  This template was created from the Settings page so it will appear on the menu under **Excel Templates**. If it had been created from a records list, it would appear under **Personal Excel Templates**.  
   
- If you have [!INCLUDE[pn_microsoft_excel_online](../includes/pn-microsoft-excel-online.md)], you can see the data in place in an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] window in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. If not, or if you’d rather create the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file, click **Download \<template name>**.  
+ If you have [!INCLUDE[pn_microsoft_excel_online](../includes/pn-microsoft-excel-online.md)], you can see the data in place in an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] window in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service,. If not, or if you’d rather create the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file, click **Download \<template name>**.  
   
 <a name="BKMK_UseAnalyze"></a>   
 ### Step 3: Analyze your data in Excel  
  What you see in the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] spreadsheet is based on two things:  
   
-- **Records**. The view you choose to export from determines what [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records you see in the exported [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file. For example, if you selected Closed Opportunities, you’ll see those records even if you used the template created with My Open Opportunities.  
+- **Records**. The view you choose to export from determines what records you see in the exported [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file. For example, if you selected Closed Opportunities, you’ll see those records even if you used the template created with My Open Opportunities.  
   
 - **Columns**. The template you used determines what columns appear in the table in the exported [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file. For example, the Closed Opportunities view has these columns: Potential Customer, Status, Actual Revenue, and Actual Close Date. But if the template you used was based on My Open Opportunities, you’d see columns associated with that view and any column filtering done when you created the template.  
   
@@ -232,7 +232,7 @@ search.app:
   
 <a name="BKMK_BestPractices"></a>   
 ## Best practices and considerations for using Excel templates  
- Here are some things you need to be aware of to create and make best use of [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+ Here are some things you need to be aware of to create and make best use of [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates.  
   
 ### Test your Excel templates  
  [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] has lots of features. It’s a good idea to test your customizations to see that all [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] features work as expected in your templates.  
@@ -242,11 +242,11 @@ search.app:
   
  **Consider the following scenario:**  
   
-- A [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrator creates a template with sensitive data in pivot charts and uploads the template into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+- An administrator creates a template with sensitive data in pivot charts and uploads the template.  
   
 - A salesperson who should not have access to the sensitive data in the pivot charts uses the template to create an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file to do some data analysis.  
   
-  **The outcome.** The salesperson might be able to see the pivot chart data as uploaded by the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrator including access to views the salesperson does not have permissions for.  
+  **The outcome.** The salesperson might be able to see the pivot chart data as uploaded by the administrator including access to views the salesperson does not have permissions for.  
   
   **In addition.** iOS does not support updating pivot data and pivot charts when using the [!INCLUDE[pn_microsoft_excel](../includes/pn-microsoft-excel.md)] app on iOS devices.  
   
@@ -263,7 +263,7 @@ search.app:
  If you want to add content to the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template, place your data above or to the right of the existing data. A second option is to place your new content on a second sheet.  
   
 ### Excel templates with images may cause an error  
- If you try to analyze [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data with an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template that has an image saved in it, you may see the following error: “An error occurred while attempting to save your workbook. As a result, the workbook was not saved.” Try removing the image from the template and reloading it into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+ If you try to analyze data with an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template that has an image saved in it, you may see the following error: “An error occurred while attempting to save your workbook. As a result, the workbook was not saved.” Try removing the image from the template and reloading it.  
   
 ### Excel templates and Office Mobile app in Windows 8.1  
  [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates will not open in [!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)] devices with Office Mobile app. You’ll get the following error message: “We’ve recovered as much of your document as we could, but you can’t edit it. Try to open and repair the document on your PC to fix the problem.”  
@@ -275,9 +275,9 @@ search.app:
   
 <a name="BKMK_SecurityRole"></a>   
 ## Use security roles to control access to templates  
- [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrators can control access to [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates with some granularity. For example, you can give salespeople Read but not Write access to an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  
+ Administrators can control access to [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates with some granularity. For example, you can give salespeople Read but not Write access to an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  
   
-1. In [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, click **Settings** > **Security** > **Security Roles**.  
+1. Click **Settings** > **Security** > **Security Roles**.  
   
 2. Select a role, and then click the Business Management tab.  
   
@@ -299,7 +299,7 @@ search.app:
 4.  Select the personal document template to delete, and then click Delete (![Delete button](../admin/media/nb-ua-r1-trashbin.png "Delete button")).  
   
 ### Excel template does not upload in Microsoft Edge  
- If your [!INCLUDE[pn_microsoft_excel](../includes/pn-microsoft-excel.md)] template does not upload in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps when using [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] as your browser, update [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] and try again.  
+ If your [!INCLUDE[pn_microsoft_excel](../includes/pn-microsoft-excel.md)] template does not upload when using [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] as your browser, update [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] and try again.  
   
 ## Privacy notice  
 [!INCLUDE[cc_privacy_export_to_excel](../includes/cc-privacy-export-to-excel.md)]

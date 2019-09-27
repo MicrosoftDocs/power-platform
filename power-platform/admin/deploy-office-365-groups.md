@@ -19,11 +19,11 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)], available with [!INCLUDE [pn-dynamics-crm-online](../includes/pn-dynamics-crm-online.md)] apps, provides a new environment for collaboration with [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] users who don’t use [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. For example, use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] when a sales team has a major opportunity requiring input from several people who don’t have access to [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] provides a single location to share documents, conversations, meetings, and notes. You can enable [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] for any entity.  
+[!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)], available with [!INCLUDE [pn-dynamics-crm-online](../includes/pn-dynamics-crm-online.md)] apps, provides a new environment for collaboration with [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] users who don’t use Dynamics 365 apps. For example, use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] when a sales team has a major opportunity requiring input from several people who don’t have access to Dynamics 365 apps. [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] provides a single location to share documents, conversations, meetings, and notes. You can enable [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] for any entity.  
   
  ![Use Office 365 Groups to collaborate with others](../admin/media/office-groups-venn.png "Use Office 365 Groups to collaborate with others")  
   
- Collaborate with people inside and outside of your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization.  
+ Collaborate with people inside and outside of your Dynamics 365 apps organization.  
   
  ![Use Office 365 Groups to collaborate](../admin/media/crm-itpro-officegroups1.png "Use Office 365 Groups to collaborate")  
   
@@ -38,7 +38,7 @@ search.app:
 <a name="BKMK_Requirements"></a>   
 
 ## Requirements  
- The following are required to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps:  
+ The following are required to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] with Dynamics 365 apps:  
   
 - Dynamics 365 apps  
   
@@ -53,7 +53,7 @@ search.app:
 <a name="BKMK_EnableOfficeGroups"></a>   
 
 ## Provision Office 365 Groups  
- [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] is a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps solution you provision from your [!INCLUDE[pn_MS_Online_Services_Portal](../includes/pn-ms-online-services-portal.md)].  
+ [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] is a Dynamics 365 apps solution you provision from your [!INCLUDE[pn_MS_Online_Services_Portal](../includes/pn-ms-online-services-portal.md)].  
   
 > [!NOTE]
 >  Users must have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] mailbox set up to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] is already properly configured for Dynamics 365 apps organizations as a part of [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]. You also need to enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration to see documents in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group; you don't have to use [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, only set up the connection to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)].  Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration is also required to enable the group [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook.  
@@ -127,7 +127,7 @@ search.app:
   
 5. If you have access to more than one Dynamics 365 apps environment, choose which environment to connect to this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group. If you only have access to one Dynamics 365 apps environment, this step will be skipped and you will advance to the next step.  
   
-6. Choose the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps record you want to connect this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group to, and then click **Save**.  
+6. Choose the Dynamics 365 apps record you want to connect this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group to, and then click **Save**.  
   
    ![Add Office 365 Groups records to connect](../admin/media/add-office-365-groups-records-to-connect.png "Add Office 365 Groups records to connect")  
   
@@ -147,7 +147,7 @@ search.app:
 > - Only task type activities are sent to the group as connector cards.  
 > - The activity appears as a new conversation in a card format in the Group.  
 > - The fields in the card shown in the Group conversation are not customizable.  
-> - Nothing is required in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to make the connector work.  
+> - Nothing is required in Dynamics 365 apps to make the connector work.  
 > - For sensitive information, you should connect your Dynamics 365 apps record to a private group where only approved members can view contents. For public groups, everyone in the org has access to view contents. See "Public and private Office 365 groups" in [Learn more about groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).  
   
 <a name="BKMK_KnownIssues"></a>   

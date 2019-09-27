@@ -19,19 +19,19 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-You can enable or disable your ability to receive social data in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+You can enable or disable your ability to receive social data in Dynamics 365 apps.  
   
 ## Enable or disable social engagement  
  By default, social engagement is enabled and social data is received.  
   
 > [!NOTE]
->  If you disable social engagement, you can no longer create or update social data in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. If you try to convert a social activity to a case while social engagement is disabled, you’ll get an error message. The error occurs because the **Convert To Case** action tries to update the social activity **Regarding** field. The same error occurs if you try to assign a social activity record or a social profile record to another user.  
+>  If you disable social engagement, you can no longer create or update social data in Dynamics 365 apps. If you try to convert a social activity to a case while social engagement is disabled, you’ll get an error message. The error occurs because the **Convert To Case** action tries to update the social activity **Regarding** field. The same error occurs if you try to assign a social activity record or a social profile record to another user.  
   
 1. [!INCLUDE[proc_settings_administration](../includes/proc-settings-administration.md)]  
   
 2. Choose **System Settings**.  
   
-3. Under **Disable Social Engagement**, select **Yes** to stop receiving social data in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. To receive data, select **No**.  
+3. Under **Disable Social Engagement**, select **Yes** to stop receiving social data in Dynamics 365 apps. To receive data, select **No**.  
   
 4. Choose **OK**.  
   

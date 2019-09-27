@@ -17,9 +17,9 @@ search.app:
 ---
 # Integrate (synchronize) your email system
 
-One of the main reasons people use [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps is to store all customer communications in one place, so anyone with the appropriate permissions can see all relevant customer records. For example, view all email associated with a particular contact, account, opportunity, or case.  
+One of the main reasons people use Dynamics 365 apps is to store all customer communications in one place, so anyone with the appropriate permissions can see all relevant customer records. For example, view all email associated with a particular contact, account, opportunity, or case.  
   
- To store email and other messaging records in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, you need to synchronize your email system with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. You can do this with server-side synchronization. 
+ To store email and other messaging records in Dynamics 365 apps, you need to synchronize your email system with Dynamics 365 apps. You can do this with server-side synchronization. 
    
   
 > [!IMPORTANT]
@@ -33,9 +33,9 @@ One of the main reasons people use [!INCLUDE[pn_microsoftcrm](../includes/pn-dyn
 
  Server-side synchronization has these benefits:  
   
-- **Enables [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)]**. With [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)], [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps information appears  next to a user’s [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] email messages or appointments. They can view information about contacts and leads stored in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and add [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps contacts directly from an email message. They can also link email, appointment, and contact records  to new or existing [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records, such as opportunity, account, or case records. [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] is very simple to deploy and it works with [!INCLUDE[pn-outlook-short](../includes/pn-outlook-short.md)] on the web (included in [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)])  the [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] desktop client, and [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] mobile. [Learn more about Dynamics 365 App for Outlook](/dynamics365/customer-engagement/outlook-app/dynamics-365-app-outlook-user-s-guide.md).  
+- **Enables [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)]**. With [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)], Dynamics 365 apps information appears  next to a user’s [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] email messages or appointments. They can view information about contacts and leads stored in Dynamics 365 apps and add Dynamics 365 apps contacts directly from an email message. They can also link email, appointment, and contact records  to new or existing Dynamics 365 apps records, such as opportunity, account, or case records. [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] is very simple to deploy and it works with [!INCLUDE[pn-outlook-short](../includes/pn-outlook-short.md)] on the web (included in [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)])  the [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] desktop client, and [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] mobile. [Learn more about Dynamics 365 App for Outlook](/dynamics365/customer-engagement/outlook-app/dynamics-365-app-outlook-user-s-guide.md).  
   
-- **Enables [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] folder tracking**. With folder tracking, users can simply drag email to an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] folder to track it automatically in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. Folder tracking works on any mobile device that supports [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)], which means users can track email from just about any device. [Learn more about folder tracking](track-outlook-email-by-moving-it-tracked-exchange-folder.md).  
+- **Enables [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] folder tracking**. With folder tracking, users can simply drag email to an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] folder to track it automatically in Dynamics 365 apps. Folder tracking works on any mobile device that supports [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)], which means users can track email from just about any device. [Learn more about folder tracking](track-outlook-email-by-moving-it-tracked-exchange-folder.md).  
   
 - **Automatic synchronization**. When you synchronize records with server-side synchronization, the synchronization happens automatically at the server level.  
   
@@ -45,13 +45,13 @@ One of the main reasons people use [!INCLUDE[pn_microsoftcrm](../includes/pn-dyn
   
   - Dynamics 365 apps to [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] (on-premises)  
   
-  - [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] server (on-premises) to [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] (on-premises)  
+  - Dynamics 365 server (on-premises) to [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] (on-premises)  
   
-  - [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] server (on-premises) to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]  
+  - Dynamics 365 server (on-premises) to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]  
   
 - **Synchronize appointments, contacts, and tasks**. In addition to email, you can synchronize [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] appointments, contacts, and tasks.  
   
-- **Synchronize with [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email servers**. You can use server-side synchronization to synchronize [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps with Gmail, [!INCLUDE[pn_outlook_com](../includes/pn-outlook-com.md)], Yahoo, and other [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email servers. Note, however, that you can’t synchronize appointments, contacts, and tasks with [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email servers.  
+- **Synchronize with [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email servers**. You can use server-side synchronization to synchronize Dynamics 365 apps with Gmail, [!INCLUDE[pn_outlook_com](../includes/pn-outlook-com.md)], Yahoo, and other [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email servers. Note, however, that you can’t synchronize appointments, contacts, and tasks with [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email servers.  
   
 - **Integrated mailbox management and resource utilization**. You can use the server-side synchronization performance dashboard to quickly monitor mailbox performance across the organization. You can also troubleshoot errors through error logging and reporting.  
   

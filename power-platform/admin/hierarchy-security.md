@@ -17,7 +17,7 @@ search.app:
 ---
 # Hierarchy security to control access
 
-The hierarchy security model is an extension to the existing [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps security models that use business units, security roles, sharing, and teams. It can be used in conjunction with all other existing security models. The hierarchy security offers a more granular access to records for an organization and helps to bring the maintenance costs down. For example, in complex scenarios, you can start with creating several business units and then add the hierarchy security. This will achieve a more granular access to data with far less maintenance costs that a large number of business units may require.  
+The hierarchy security model is an extension to the existing Dynamics 365 apps security models that use business units, security roles, sharing, and teams. It can be used in conjunction with all other existing security models. The hierarchy security offers a more granular access to records for an organization and helps to bring the maintenance costs down. For example, in complex scenarios, you can start with creating several business units and then add the hierarchy security. This will achieve a more granular access to data with far less maintenance costs that a large number of business units may require.  
   
 ## Manager hierarchy and Position hierarchy security models  
  Two security models can be used for hierarchies, the Manager hierarchy and the Position hierarchy. With the Manager hierarchy, a manager must be within the same business unit as the report, or in the parent business unit of the report’s business unit, to have access to the report’s data. The Position hierarchy allows data access across business units. If you are a financial organization, you may prefer the Manager hierarchy model, to prevent managers’ accessing data outside of their business units. However, if you are a part of a customer service organization and want the managers to access service cases handled in different business units, the Position hierarchy may work better for you.  
@@ -84,7 +84,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > ![](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security in Dynamics 365 apps")
 
   
- Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access his or her accounts and the accounts of the reports two levels deep. In our example, if you log in into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
+ Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access his or her accounts and the accounts of the reports two levels deep. In our example, if you log in into Dynamics 365 apps not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
 
 > [!div class="mx-imgBorder"] 
 > ![](../admin/media/sales-vp-access.png "Read access for VP of Sales in Dynamics 365 apps")

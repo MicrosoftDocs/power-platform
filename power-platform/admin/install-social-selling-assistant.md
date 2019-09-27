@@ -44,11 +44,11 @@ Set up the Social Selling Assistant  and onboard your users in just a few minute
 <a name="installFromAppSource"></a>   
 
 ## Install the Social Selling Assistant app from AppSource  
- Before users can start working with the app, you need to install it from [AppSource](https://appsource.microsoft.com/marketplace?product=dynamics-365-for-sales%3Bdynamics-365-for-field-services%3Bdynamics-365-for-project-services-automation%3Bdynamics-365-for-customer-services) in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+ Before users can start working with the app, you need to install it from [AppSource](https://appsource.microsoft.com/marketplace?product=dynamics-365-for-sales%3Bdynamics-365-for-field-services%3Bdynamics-365-for-project-services-automation%3Bdynamics-365-for-customer-services) in Dynamics 365 apps.  
   
 ### Get it from Microsoft AppSource  
   
-1. As a system administrator in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, go to **Settings** > **Dynamics Marketplace**.  
+1. As a system administrator in Dynamics 365 apps, go to **Settings** > **Dynamics Marketplace**.  
   
 2. In the [AppSource](https://appsource.microsoft.com/marketplace?product=dynamics-365-for-sales%3Bdynamics-365-for-field-services%3Bdynamics-365-for-project-services-automation%3Bdynamics-365-for-customer-services) dialog, search for **Social Selling Assistant**.  
   
@@ -56,24 +56,24 @@ Set up the Social Selling Assistant  and onboard your users in just a few minute
   
 <a name="accessSocialSellingAssistant"></a>   
 ## Access the Social Selling Assistant  
- When you install the app, the system configures a new mobile-friendly dashboard in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+ When you install the app, the system configures a new mobile-friendly dashboard in Dynamics 365 apps.  
   
 ### Get to the Social Selling Assistant dashboard  
   
-1. As a system administrator in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, go to **Sales** > **Dashboards**.  
+1. As a system administrator in Dynamics 365 apps, go to **Sales** > **Dashboards**.  
   
 2. In the drop-down list under **System Dashboards**, select **Social Selling assistant dashboard**.  
   
 3. Configure the dashboard according to your user's needs.   
   
-   Alternatively, you can access the Social Selling Assistant using the app module in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps or using the main navigation in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)].  
+   Alternatively, you can access the Social Selling Assistant using the app module in Dynamics 365 apps or using the main navigation in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)].  
   
 <a name="establishConnection"></a>   
-## Establish the connection between [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]  
- The data in the Social Selling Assistant comes from [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]. To access this data from within [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, you need to connect the two services. You can skip this step if you already connected [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from another integration scenario.  
+## Establish the connection between Dynamics 365 apps and [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]  
+ The data in the Social Selling Assistant comes from [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]. To access this data from within Dynamics 365 apps, you need to connect the two services. You can skip this step if you already connected Dynamics 365 apps and [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from another integration scenario.  
   
 > [!NOTE]
->  You must ensure that your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps domain is added to the list of allowed domains in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)].  
+>  You must ensure that your Dynamics 365 apps domain is added to the list of allowed domains in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)].  
 > 
 > [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Connect Social Engagement to other domains](https://go.microsoft.com/fwlink/p/?linkid=403288)  
   

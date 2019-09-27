@@ -26,27 +26,27 @@ If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint
 - SharePoint 2016 on-premises
 - [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] SP1 on-premises (or a later version).  
 
-**A SharePoint site collection**. You also need to have at least one site collection configured and available for [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+**A SharePoint site collection**. You also need to have at least one site collection configured and available for Dynamics 365 apps.  
 
 **Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration**  must be enabled.  
 
 > [!IMPORTANT]
 >  The document management feature requires that Dynamics 365 apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] subscriptions be under the same tenant.  
 > 
-> [!INCLUDE[pn_sharepoint_foundation](../includes/pn-sharepoint-foundation.md)] versions aren’t compatible with [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps document management.  
+> [!INCLUDE[pn_sharepoint_foundation](../includes/pn-sharepoint-foundation.md)] versions aren’t compatible with Dynamics 365 apps document management.  
 
- Users who access [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] from [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps must have appropriate permissions on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection where the document management components are installed. For more information about how to grant membership on a site collection, see the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Help.  
+ Users who access [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] from Dynamics 365 apps must have appropriate permissions on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection where the document management components are installed. For more information about how to grant membership on a site collection, see the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Help.  
 
 <a name="BKMK_enable_servertoserver"></a>   
 
 ## Server-based SharePoint integration  
- Earlier versions of [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps document management use a client-to-server strategy to authenticate and transmit data from [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. Server-based (using server-to-server authentication) [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration provides the following benefits:  
+ Earlier versions of Dynamics 365 apps document management use a client-to-server strategy to authenticate and transmit data from Dynamics 365 apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. Server-based (using server-to-server authentication) [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration provides the following benefits:  
 
-- User interface that is consistent with the newly-updated [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps user interface.  
+- User interface that is consistent with the newly-updated Dynamics 365 apps user interface.  
 
 - Users can create and view folders when using document management within Dynamics 365 apps.
 
-- To configure and use document management, you do not need to be signed in to both [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+- To configure and use document management, you do not need to be signed in to both Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
 
 
 <!-- 
@@ -67,11 +67,11 @@ If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint
 
 <a name="BKMK_listComp"></a>   
 ## Dynamics CRM List Component for SharePoint  
- The [!INCLUDE[pn_list_component_short](../includes/pn-list-component-short.md)] makes [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps documents that are stored on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] available to you in a format that has the look and feel of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. This feature also lets [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps automatically create folders that will be used to store documents related to [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps records on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+ The [!INCLUDE[pn_list_component_short](../includes/pn-list-component-short.md)] makes Dynamics 365 apps documents that are stored on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] available to you in a format that has the look and feel of Dynamics 365 apps. This feature also lets Dynamics 365 apps automatically create folders that will be used to store documents related to Dynamics 365 apps records on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
 
  The [!INCLUDE[pn_list_component_short](../includes/pn-list-component-short.md)] has the following benefits:  
 
-- Users can create and view folders when using document management within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+- Users can create and view folders when using document management within Dynamics 365 apps.  
 
 - Users can create [custom content types](http://go.microsoft.com/fwlink/p/?LinkID=396378) such as a Sales Contract content type.  
 

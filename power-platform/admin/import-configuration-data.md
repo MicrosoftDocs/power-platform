@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-After exporting your configuration data from the source [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment, you are now ready to import it to the target [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment.  
+After exporting your configuration data from the source Dynamics 365 environment, you are now ready to import it to the target Dynamics 365 environment.  
   
 ## Before you begin 
 
@@ -31,9 +31,9 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 2. On the main screen, click **Import data**, and click **Continue**.  
   
-3. On the **Login** screen, provide authentication details to connect to your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] environment from where you want to import data. If you have multiple organizations on the Customer Engagement server, and want to select the organization where to import the configuration data, select the **Always display list of available orgs** check box. Click **Login**.  
+3. On the **Login** screen, provide authentication details to connect to your Dynamics 365 environment from where you want to import data. If you have multiple organizations on the Customer Engagement server, and want to select the organization where to import the configuration data, select the **Always display list of available orgs** check box. Click **Login**.  
   
-4. If you have multiple organizations, and you selected the **Always display list of available orgs** check box, the next screen lets you choose the organization that you want to connect to. Select a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization to connect to.  
+4. If you have multiple organizations, and you selected the **Always display list of available orgs** check box, the next screen lets you choose the organization that you want to connect to. Select a Dynamics 365 apps organization to connect to.  
   
 5. Provide the data file. (.zip) to be imported. Browse to the data file, and select it. Click **Import Data**.  
   

@@ -17,11 +17,11 @@ search.app:
 ---
 # Requirements/supported configurations  
 
-Dynamics 365 apps give you the following options to access [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data:  
+Dynamics 365 apps give you the following options to access Dynamics 365 apps data:  
   
 - Web browser. No need to install anything to run Dynamics 365 apps from a computer running a supported web browser.  
 
-- [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)]. An [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] add-in that provides you with a complete set of [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps capabilities right within [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)].  
+- [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)]. An [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] add-in that provides you with a complete set of Dynamics 365 apps capabilities right within [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)].  
   
 - [!INCLUDE[pn_Mobile_Express_long](../includes/pn-mobile-express-long.md)] and [!INCLUDE[pn_moca_short](../includes/pn-moca-short.md)]. Lightweight applications that let you access Dynamics 365 apps data on almost any web browser running on a tablet, smartphone, or non-Windows computer.  
   
@@ -32,7 +32,7 @@ Dynamics 365 apps give you the following options to access [!INCLUDE [pn-crm-sho
  Users can work in Dynamics 365 apps by using a supported browser on a mobile device, or by using [!INCLUDE[pn_Mobile_Express_long](../includes/pn-mobile-express-long.md)]. For more information about the mobile experience in Dynamics 365 apps, see [Set up Dynamics 365 apps for phones and Dynamics 365 apps for tablets](/dynamics365/customer-engagement/mobile-app/set-up-dynamics-365-for-phones-and-dynamics-365-for-tablets.md).  
 
 ## Microsoft Office requirements  
- [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps leverage the capabilities of on-premises versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] or [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] and integrates with [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] and [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)]. For more information about the supported versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)], see [Supported versions of Office](web-application-requirements.md#supported-versions-of-office).  
+ Dynamics 365 apps leverage the capabilities of on-premises versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] or [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] and integrates with [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] and [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)]. For more information about the supported versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)], see [Supported versions of Office](web-application-requirements.md#supported-versions-of-office).  
   
  [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]  
   

@@ -32,7 +32,7 @@ Preview features are features that aren’t complete, but are made available on 
 - May be available only in selected geographic areas.  
   
 ## How do I enable a Preview feature?  
- To enable a Preview feature, you must be a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrator.  
+ To enable a Preview feature, you must be a Dynamics 365 administrator.  
   
 1. [!INCLUDE[proc_settings_administration](../includes/proc-settings-administration.md)]  
   

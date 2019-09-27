@@ -23,9 +23,9 @@ By default, all Office 365 Global administrators and Dynamics 365 Service admini
   
 -   Administrative access mode  
   
-The System administrator security role is typically granted to Dynamics 365 apps administrators giving them unrestricted access to the administrative (Settings) areas, which are used for managing and configuring features of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+The System administrator security role is typically granted to Dynamics 365 apps administrators giving them unrestricted access to the administrative (Settings) areas, which are used for managing and configuring features of Dynamics 365 apps.  
   
-Administrative access mode limits access to those areas of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps used to configure or customize the system.  
+Administrative access mode limits access to those areas of Dynamics 365 apps used to configure or customize the system.  
   
 To give these administrators access to additional areas, such as the Sales, Marketing, and Service areas, a Dynamics 365 apps license must be added to the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Global administrator or Dynamics 365 Service administrator user account, by using the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. Note that Administrative access mode cannot be changed on the user form in the Dynamics 365 (online) application.  
   

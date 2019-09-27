@@ -53,7 +53,7 @@ To improve query performance, index management is executed automatically using A
   
 3. Select the entity that you want to create an optimization for, and then click **OPTIMIZE**.  To remove an applied optimization, click **REMOVE OPTIMIZATION**.  
   
-   Optimizations take effect immediately after they are applied. However, for entities that have large tables, it can take two or more hours before the optimization fully takes effect. Optimizations are processed as an asynchronous process and can be viewed in the **Settings** > **System Jobs** area of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. Notice that an optimization may not be completely applied even after the system job is completed because the actual index must be built in the back-end storage engine.  -->
+   Optimizations take effect immediately after they are applied. However, for entities that have large tables, it can take two or more hours before the optimization fully takes effect. Optimizations are processed as an asynchronous process and can be viewed in the **Settings** > **System Jobs** area of Dynamics 365 apps. Notice that an optimization may not be completely applied even after the system job is completed because the actual index must be built in the back-end storage engine.  -->
   
 ### See also  
  [Performance tuning and optimization](../admin/performance-tuning-and-optimization.md)   

@@ -30,7 +30,7 @@ Dynamics 365 apps use several Microsoft URLs to help provide security, services,
 You can unblock these URLs on your computer by adding them to a list of approved sites in your browser.  
   
 > [!IMPORTANT]
->  If the following procedure doesn’t unblock the URLs required for [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, ask your system administrator to unblock the URLs on the organization’s network.  
+>  If the following procedure doesn’t unblock the URLs required for Dynamics 365 apps, ask your system administrator to unblock the URLs on the organization’s network.  
    
 ### Unblock Dynamics 365 apps URLs in Internet Explorer  
   

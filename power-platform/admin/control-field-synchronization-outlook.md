@@ -19,9 +19,9 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-With field synchronization, admins can set the sync direction between [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)] fields. You can control synchronization when using either [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization or server-side synchronization ([!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]).  
+With field synchronization, admins can set the sync direction between Dynamics 365 apps and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)] fields. You can control synchronization when using either [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization or server-side synchronization ([!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]).  
   
- For example, a salesperson may want to take personal notes about a contact and not want the notes to synchronize with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data available to all users. An admin can set the Personal Notes field for contacts in Outlook to not [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps so the salesperson’s notes will remain private.  
+ For example, a salesperson may want to take personal notes about a contact and not want the notes to synchronize with Dynamics 365 apps data available to all users. An admin can set the Personal Notes field for contacts in Outlook to not [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] with Dynamics 365 apps so the salesperson’s notes will remain private.  
   
 > [!TIP]
 > ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Configurability in Synchronizing Data with Outlook or Exchange in Microsoft Dynamics CRM 2015](http://youtu.be/BMZsVUuaklo?list=PLC3591A8FE4ADBE07)  
@@ -48,10 +48,10 @@ With field synchronization, admins can set the sync direction between [!INCLUDE[
    Let your users know they can view (not change) the synchronization settings. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [What fields can be synchronized between Dynamics 365 apps and Outlook?](what-fields-synchronized-outlook.md)  
   
 ## Performance and synchronization  
- Configuring synchronization might have an impact on the time it takes to sync between [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] and [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. You should test your configuration before deploying to ensure satisfactory sync times.  
+ Configuring synchronization might have an impact on the time it takes to sync between [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] and Dynamics 365 apps. You should test your configuration before deploying to ensure satisfactory sync times.  
   
 ## Permissions and synchronization  
- Role-based security controls access to a specific entity type, record-based security controls access to individual records, and field-level security controls access to specific fields. All these can impact what is synchronized between [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps and [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].  
+ Role-based security controls access to a specific entity type, record-based security controls access to individual records, and field-level security controls access to specific fields. All these can impact what is synchronized between Dynamics 365 apps and [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].  
   
  Best practice is to review the security settings for these security methods to ensure field synchronization is processes as desired. For more information see:  
   
