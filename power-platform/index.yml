@@ -1,7 +1,6 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Learn how to deploy, customize, manage and use Microsoft Power Platform services and applications. Get documentation, sample code, tutorials, and more. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
@@ -21,7 +20,7 @@ productDirectory:
     # Card
     - title: Power BI
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: images/PowerBI_Mark_Yellow.svg
+      imageSrc: /dynamics365/images/PowerBI_Mark_Yellow.svg
       links:
         - url: https://docs.microsoft.com/power-bi/
           text: Documentation
@@ -29,7 +28,7 @@ productDirectory:
           text: Learn Power BI
     # Card
     - title: PowerApps
-      imageSrc: images/PowerApps_Mark.svg
+      imageSrc: /dynamics365/images/PowerApps_Mark.svg
       links:
         - url: https://docs.microsoft.com/powerapps
           text: Documentation
@@ -37,7 +36,7 @@ productDirectory:
           text: Learn PowerApps
     # Card
     - title: Microsoft Flow
-      imageSrc: images/Flow_Mark.svg
+      imageSrc: /dynamics365/images/Flow_Mark.svg
       links:
         - url: https://docs.microsoft.com/flow/
           text: Documentation
