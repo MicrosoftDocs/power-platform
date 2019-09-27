@@ -17,9 +17,9 @@ search.app:
 ---
 # Create or edit document location records
 
-[!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document locations are records in Dynamics 365 apps that point to a [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document library or folder.  
+[!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document locations are records in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, that point to a [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document library or folder.  
   
- To store documents for Dynamics 365 apps records, the document libraries or folders must be in place. If Dynamics 365 apps are unable to create the document libraries and folders automatically, you can manually create these in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. After you create the document libraries and folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], you must create document location records in Dynamics 365 apps to point to these [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document libraries and folders.  
+ To store documents for records, the document libraries or folders must be in place. If model-driven apps in Dynamics 365are unable to create the document libraries and folders automatically, you can manually create these in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. After you create the document libraries and folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], you must create document location records in model-driven apps in Dynamics 365 to point to these [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document libraries and folders.  
   
 1. [!INCLUDE[proc_settings_doc_mgmt](../includes/proc-settings-doc-mgmt.md)]  
   
@@ -43,7 +43,7 @@ search.app:
   
      - Select **Relative URL**. In **Relative URL**, to create a relative document location to the existing site or document location record, select the existing [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site or document location record. In the second box, enter the name of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] folder.  
   
-   - **Regarding**. Choose the **Lookup** button ![Lookup button](../admin/media/lookup-button-4.png "Lookup button"). In the **Look Up Record** dialog box, in the **Look for** list, select the type of records you want to find. search and select the record for which you want to create the location record in Dynamics 365 apps, and choose **OK**.  
+   - **Regarding**. Choose the **Lookup** button ![Lookup button](../admin/media/lookup-button-4.png "Lookup button"). In the **Look Up Record** dialog box, in the **Look for** list, select the type of records you want to find. search and select the record for which you want to create the location record and choose **OK**.  
   
 5. Choose **Save and Close**.  
   

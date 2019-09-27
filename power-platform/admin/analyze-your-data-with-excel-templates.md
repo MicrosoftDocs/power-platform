@@ -190,7 +190,7 @@ search.app:
   
  This template was created from the Settings page so it will appear on the menu under **Excel Templates**. If it had been created from a records list, it would appear under **Personal Excel Templates**.  
   
- If you have [!INCLUDE[pn_microsoft_excel_online](../includes/pn-microsoft-excel-online.md)], you can see the data in place in an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] window in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service,. If not, or if you’d rather create the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file, click **Download \<template name>**.  
+ If you have [!INCLUDE[pn_microsoft_excel_online](../includes/pn-microsoft-excel-online.md)], you can see the data in place in an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] window in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. If not, or if you’d rather create the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file, click **Download \<template name>**.  
   
 <a name="BKMK_UseAnalyze"></a>   
 ### Step 3: Analyze your data in Excel  

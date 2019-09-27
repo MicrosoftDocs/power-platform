@@ -37,7 +37,7 @@ There are a few technical limitations during the provisioning of services that n
 |**Purchased Azure via OSPA first and then purchased Office 365 via OSPA. Now purchased model-driven apps in Dynamics 365 via OSPA.**   | Customer already has two tenants, one for Azure and another for Office 365. model-driven apps in Dynamics 365 can be added to the tenant containing Office 365 OSPA.        |
 |**Purchase Office 365 via OSPA and then purchased Azure via OSPA. Now purchased Dynamics 365, such as Dynamics 365 Sales and Customer Service, via OSPA.**     | Customer started with Office 365 and then added Azure. Model-driven apps in Dynamics 365 can be provisioned on the same tenant.        |
 |**Purchased Office 365 via OSPA and plans to add model-driven apps in Dynamics 365.**   |If Office 365 is already provisioned, customer will be able to provision model-driven apps in Dynamics 365 on the same tenant.         |
-|**Purchased Office 365 via OSSA or CSP and purchased model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service,.**    |model-driven apps in Dynamics 365 needs to be provisioned on a separate tenant.          |
+|**Purchased Office 365 via OSSA or CSP and purchased model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.**    |model-driven apps in Dynamics 365 needs to be provisioned on a separate tenant.          |
 
 OSPA = Online Services Premium Agreement<br />
 OSSA = Online Services Standard Agreement<br />
