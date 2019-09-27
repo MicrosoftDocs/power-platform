@@ -57,11 +57,11 @@ Users with multiple apps see the list of apps available to them, and can navigat
 > ![Unified interface apps](media/uci-apps-home-page.png "Unified interface apps")
 
 > [!NOTE]
-> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn’t affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Signing in and signing out (for iOS users)](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/mobile-app/dynamics-365-phones-tablets-users-guide#signing-in-and-signing-out-for-ios-users) and [Signing in and signing out (for Android users)](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/mobile-app/dynamics-365-phones-tablets-users-guide#signing-in-and-signing-out-for-android-users).
+> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn’t affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Signing in and signing out (for iOS users)](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/dynamics-365-phones-tablets-users-guide#signing-in-and-signing-out-for-ios-users) and [Signing in and signing out (for Android users)](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/dynamics-365-phones-tablets-users-guide#signing-in-and-signing-out-for-android-users).
 
 ### Run all apps in Unified Interface Only mode
 
-Unified Interface is centered around the concept of modular applications known as [model-driven apps](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/model-driven-app-overview). These apps allow developers and admins to streamline the data and functionality to provide exactly what end users need. 
+Unified Interface is centered around the concept of modular applications known as [model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview). These apps allow developers and admins to streamline the data and functionality to provide exactly what end users need. 
 
 In Unified Interface Only mode, all model-driven apps, including those created for the legacy web client, run in Unified Interface to provide superior performance and usability. 
 
@@ -123,7 +123,7 @@ This setting is preset to Off for your environment, and you are unaffected by th
 
 ### I want to use Unified Interface for all the apps, but still want *Dynamics 365 – custom* to open in the legacy web client. Is that possible?
 
-You can achieve this by [setting all apps to be Unified Interface apps](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/update-apps-to-unified-interface). Note that this won't change the home page experience to Unified Interface. Unified Interface Only mode is a prerequisite to get the [new home page experience](#new-immersive-home-page-experience-on-web).
+You can achieve this by [setting all apps to be Unified Interface apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/update-apps-to-unified-interface). Note that this won't change the home page experience to Unified Interface. Unified Interface Only mode is a prerequisite to get the [new home page experience](#new-immersive-home-page-experience-on-web).
 
 ### How do I resolve errors seen while using a *Dynamics 365 - custom* legacy app in Unified Interface?
 If there are issues with Unified Interface, [please let us know](https://docs.microsoft.com/power-platform/admin/get-help-support).
