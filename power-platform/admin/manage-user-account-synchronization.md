@@ -17,7 +17,7 @@ search.app:
 ---
 # Manage user account synchronization 
 
-Because Dynamics 365 apps user identities are provisioned through [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)], you have multiple options for managing user synchronization between your online and on-premises environments.  
+Because user identities are provisioned through [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)], you have multiple options for managing user synchronization between your online and on-premises environments.  
   
 ## Decide on a user management approach  
  You can choose from three main identity models in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] when you set up and manage user accounts:
@@ -45,7 +45,7 @@ Review the following resources to equip you to make the right decision for your 
   
  https://\<*yourCRMOrganizationName*>.crm.dynamics.com?whr=\<*yourFederationServiceIdentifier*>  
   
- You can get the \<*yourCRMOrganizationName*> by looking at the URL you use to access Dynamics 365 apps. For example, in https://contoso.crm.dynamics.com, *contoso* is \<*yourCRMOrganizationName*>.  
+ You can get the \<*yourCRMOrganizationName*> by looking at the URL you use to access environments. For example, in https://contoso.crm.dynamics.com, *contoso* is \<*yourCRMOrganizationName*>.  
   
 > [!IMPORTANT]
 > The following URLs would be used for subscriptions hosted in these locations.  
@@ -74,4 +74,4 @@ Review the following resources to equip you to make the right decision for your 
   
    Your URL should look like: https://<em>contoso</em>.crm.dynamics.com?whr=*<http://sts1.fabrikam.com/adfs/services/trust>*  
   
-   Send this URL to your Dynamics 365 apps users and encourage them to bookmark it.
+   Send this URL to your users and encourage them to bookmark it.

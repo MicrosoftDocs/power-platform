@@ -17,13 +17,13 @@ search.app:
 ---
 # Manage email notifications to admins
 
-The Dynamics 365 apps service team regularly sends email notifications to the administrators in your Dynamics 365 apps organization. Now, with a simple approach of mailbox rules, you have complete control over who should receive these email communications. As an administrator, you can set up mailbox rules to automatically redirect email communications from Dynamics 365 apps (crmoln@microsoft.com) to additional recipients that you choose. For example, you can add to the list of recipients:  
+The service team regularly sends email notifications to the administrators in your  organization. Now, with a simple approach of mailbox rules, you have complete control over who should receive these email communications. As an administrator, you can set up mailbox rules to automatically redirect email communications from model-driven apps in Dynamics 365, (crmoln@microsoft.com) to additional recipients that you choose. For example, you can add to the list of recipients:  
   
-- People outside of your Dynamics 365 apps organization, such as your partners.  
+- People outside of your organization, such as your partners.  
   
 - People inside and outside of your company.  
   
-  All redirected emails retain the original sender context, such as Dynamics 365 apps (crmoln@microsoft.com).  
+  All redirected emails retain the original sender context, such as model-driven apps in Dynamics 365 (crmoln@microsoft.com).  
   
   You can automatically redirect the email notifications in [!INCLUDE[pn_ms_Exchange_Server_2010_short](../includes/pn-ms-exchange-server-2010-short.md)] or later versions. You can also set up automatic email redirection in the following deployments:  
   
@@ -35,13 +35,13 @@ The Dynamics 365 apps service team regularly sends email notifications to the ad
   
 - Email deployments other than [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]  
   
-  If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your Dynamics 365 apps admin. If you’re not sure who your Dynamics 365 apps admin is, see: [Find your Dynamics 365 apps administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
+  If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your admin. If you’re not sure who your  admin is, see: [Find your administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
   
   For more information, download the white paper: [Create your Mailbox rule](http://download.microsoft.com/download/D/1/A/D1A64A1D-FD55-43E4-AD71-9D32D16E5F9E/Create%20your%20Mailbox%20rule.docx)  
   
 <a name="BKMK_SendEmailNotifications"></a>   
 ## Send email notifications to multiple recipients  
- By default, Dynamics 365 apps admins will receive update notifications. You can add others to receive update notifications.  
+ By default, admins will receive update notifications. You can add others to receive update notifications.  
   
 1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
   
@@ -51,11 +51,11 @@ The Dynamics 365 apps service team regularly sends email notifications to the ad
   
 4. Click **Notifications**.  
   
-   ![Notifications button in Dynamics 365 apps](../admin/media/customer-driven-update-notifications.png "Notifications button in Dynamics 365 apps")  
+   ![Notifications button](../admin/media/customer-driven-update-notifications.png "Notifications button")  
   
 5. Enter the email addresses of people to receive update notifications for the selected environment and click **Save**.  
   
-   ![Send Email Notifications in Dynamics 365 apps](../admin/media/customer-driven-updatesendemailnotifications.PNG "Send Email Notifications in Dynamics 365 apps")  
+   ![Send Email Notifications](../admin/media/customer-driven-updatesendemailnotifications.PNG "Send Email Notifications")  
   
 ### See also   
  [Blog: Managing Email notifications in Microsoft Dynamics CRM Online](http://blogs.msdn.com/b/crm/archive/2014/05/27/how-do-i-start-receiving-notification.aspx)   
