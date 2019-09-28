@@ -19,13 +19,13 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-These are ways to reduce the amount of storage space used by removing or deleting different types of information from Dynamics 365 apps. Use one or more of these methods to control your total data storage usage with Dynamics 365 apps. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
+These are ways to reduce the amount of storage space used by removing or deleting different types of information from model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Use one or more of these methods to control your total data storage usage. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
   
 > [!WARNING]
 >  The suggestions in this topic include deleting notes, attachments, import history, and other data. Before you delete data, be sure that the data is no longer needed because you cannot retrieve deleted data. There is no “undo” to restore your data once it has been deleted. This means it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
 > 
 > [!NOTE]
->  - Except for methods 3 and 5, all these methods require that you have an administrator Dynamics 365 apps scurity role, such as System Administrator. This gives you permission to delete records in bulk and to delete system jobs.  
+>  - Except for methods 3 and 5, all these methods require that you have an administrator scurity role, such as System Administrator. This gives you permission to delete records in bulk and to delete system jobs.  
 >  - After performing actions to free up storage, the system can take up to 24 hours to update storage information. We recommend waiting up to 24 hours and monitoring your storage.  
 >  - Storage consumed does not directly correspond to the size reported in Common Data Services for Apps; consumption includes additional storage for metadata and encryption. For example, removing 10MB of storage from a file does not mean the file size is reduced by 10MB.
 >  - Some platform operations require you to wait 24-36 hours to confirm data size changes. Such operations include but are not limited to upgrades to new versions and introduction of new workflows. Such operations require system adjustments that might result in a momentary size increase report.
@@ -57,7 +57,7 @@ Use the following methods to free storage for each of the capacity types.
 ### Method 3: Remove email attachments using Advanced Find  
   
 > [!WARNING]
->  If you delete this data, the attachments will no longer be available in Dynamics 365 apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
+>  If you delete this data, the attachments will no longer be available in model-driven apps in Dynamics 365. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
 1. Choose **Advanced Find** (![Advanced find button](media/advanced-find-button2.png)).  
   
@@ -82,7 +82,7 @@ Use the following methods to free storage for each of the capacity types.
 ### Method 4: Remove email messages with attachments using a bulk deletion job  
   
 > [!WARNING]
->  If you delete this data, the email messages and their associated attachments will no longer be available in Dynamics 365 apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
+>  If you delete this data, the email messages and their associated attachments will no longer be available in model-driven apps in Dynamics 365. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
 1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
   
@@ -115,7 +115,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in Dynamics 365 apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -129,7 +129,7 @@ Use the following methods to free storage for each of the capacity types.
 ### Method 5: Remove notes with attachments using Advanced Find  
   
 > [!WARNING]
->  If you delete this data, notes and their associated attachments will no longer be available in Dynamics 365 apps.  
+>  If you delete this data, notes and their associated attachments will no longer be available in model-driven apps in Dynamics 365.  
   
 1. Choose **Advanced Find**.  
   
@@ -157,7 +157,7 @@ Use the following methods to free storage for each of the capacity types.
 ### Method 6: Remove notes with attachments using a bulk deletion job  
   
 > [!WARNING]
->  If you delete this data, notes and their associated attachments will no longer be available in Dynamics 365 apps.  
+>  If you delete this data, notes and their associated attachments will no longer be available in model-driven apps in Dynamics 365.  
   
 1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
   
@@ -186,7 +186,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in Dynamics 365 apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -201,7 +201,7 @@ Use the following methods to free storage for each of the capacity types.
 
 ### Method 10: Delete audit logs  
 
- When you enable auditing, Dynamics 365 apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
+ When you enable auditing, model-driven apps in Dynamics 365 create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
   
 > [!WARNING]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
@@ -257,7 +257,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in Dynamics 365 apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -349,7 +349,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in Dynamics 365 apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -399,7 +399,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in Dynamics 365 apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   

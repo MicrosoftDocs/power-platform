@@ -1,6 +1,6 @@
 ---
 title: "Get Help + Support   | MicrosoftDocs"
-description: Use the Help + support experience to contact a Microsoft support representative for Dynamics 365 apps to get resolution for your issue.
+description: Use the Help + support experience to contact a Microsoft support representative to get resolution for your issue.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -51,7 +51,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 > - Your Support subscription has expired. Please renew.
 > - We couldn't find your Support plan. 
 >   - If you have a Premier Support plan, please contact your Technical Account Manager (TAM).
->   - If you have a non-Premier Support plan, please verify the plan is active. For support information, see [Dynamics 365 Community Forums](https://community.dynamics.com/f).
+>   - If you have a non-Premier Support plan, please verify the plan is active. For support information, see [Community Forums](https://community.dynamics.com/f).
 
 
 ### View solutions or enter a support request through the new support center

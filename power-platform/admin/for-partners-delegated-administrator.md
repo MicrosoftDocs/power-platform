@@ -1,5 +1,5 @@
 ---
-title: "For partners: the Delegated Administrator for Dynamics 365  | MicrosoftDocs"
+title: "For partners: the Delegated Administrator | MicrosoftDocs"
 description: Use this role to delegate admins to manage users, licenses, permissions, and domains.
 author: jimholtz
 manager: kvivek
@@ -19,16 +19,16 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Admins for Dynamics 365 apps can use their [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator role to create and edit users, reset user passwords, manage user licenses, manage domains, and assign admin permissions to other users in their organization, among other things. However, if admins want someone else to do these administrative tasks, they can delegate this role to an authorized Dynamics 365 apps partner. When admins authorize a partner to take on this role, the partner is referred to as a delegated admin. A delegated admin can perform routine tasks such as adding users and resetting passwords, or more complex tasks such as adding a domain. A delegated admin can have access to multiple tenants, which can simplify and consolidate tenant management.  
+Admins can use their [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator role to create and edit users, reset user passwords, manage user licenses, manage domains, and assign admin permissions to other users in their organization, among other things. However, if admins want someone else to do these administrative tasks, they can delegate this role to an authorized partner. When admins authorize a partner to take on this role, the partner is referred to as a delegated admin. A delegated admin can perform routine tasks such as adding users and resetting passwords, or more complex tasks such as adding a domain. A delegated admin can have access to multiple tenants, which can simplify and consolidate tenant management.  
   
- You can see the new Delegated Admin user in Dynamics 365 apps revisions 2040 or greater or in [!INCLUDE[pn_crm_2015_update_0_2](../includes/pn-crm-2015-update-0-2.md)]. This user won’t appear in standard provided views. You must create a custom view to see it.  
+ You can see the new Delegated Admin user in revisions 2040 or greater or in [!INCLUDE[pn_crm_2015_update_0_2](../includes/pn-crm-2015-update-0-2.md)]. This user won’t appear in standard provided views. You must create a custom view to see it.  
   
 > [!TIP]
->  To determine your revision of Dynamics 365 apps, in the upper-right corner of your Dynamics 365 apps screen, choose the **Settings** gear (![User settings button](../admin/media/user-settings-button.png "User settings button")) > **About**.  
+>  To determine your revision, in the upper-right corner of your screen, choose the **Settings** gear (![User settings button](../admin/media/user-settings-button.png "User settings button")) > **About**.  
 > 
 >  Your revision should be 2040 or above for both numbers highlighted.  
   
- ![Dynamics 365 apps revision version](../admin/media/revision-version.png "Dynamics 365 apps revision version")  
+ ![Revision version](../admin/media/revision-version.png "Revision version")  
   
  To create a simple custom view to see the delegated admin user:  
   
@@ -47,13 +47,13 @@ Admins for Dynamics 365 apps can use their [!INCLUDE[pn_Office_365](../includes/
    ![Delegated admin appears in user list](../admin/media/delegated-admin-user.png "Delegated admin appears in user list")  
   
 ## How to get authorized as a delegated admin  
- Dynamics 365 apps partners can be authorized to be delegated admins for a company in several ways:  
+ Partners can be authorized to be delegated admins for a company in several ways:  
   
-1. A partner can offer the customer to become a delegated admin for their account by sending a link to the delegated admin offer. The customer will need to accept and sign in with their [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]/Dynamics 365 apps credentials.  
+1. A partner can offer the customer to become a delegated admin for their account by sending a link to the delegated admin offer. The customer will need to accept and sign in with their [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]/model-driven apps in Dynamics 365 credentials.  
   
 2. A partner can send the customer a purchase offer link with delegated admin selected as part of the offer. The customer will need to sign up for the offer and accept the delegated admin offer.  
   
-3. A partner can create a trial invitation link to Dynamics 365 apps and invite the customer to the trial via a link in email or a link on the partner’s website. The trial invitation can include delegated admin if the prospect chooses to accept.  
+3. A partner can create a trial invitation link and invite the customer to the trial via a link in email or a link on the partner’s website. The trial invitation can include delegated admin if the prospect chooses to accept.  
   
 ## Related information  
  Review the following for more information on partners and delegated admins.  

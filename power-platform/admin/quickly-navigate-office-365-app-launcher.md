@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] introduces a new app model for [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] apps and makes accessing these and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps fast and easy.  
+Dynamics 365 introduces a new app model for [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] apps and makes accessing these and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps fast and easy.  
   
  If you're a Dynamics 365 apps user with an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription, you're just two clicks away from accessing the family of online apps that are available to you, like [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] and Excel Online.  
   
@@ -61,7 +61,7 @@ search.app:
  ![Dynamics 365 apps home page](../admin/media/dynamics-365-home-page.png "Dynamics 365 apps home page")  
   
 > [!NOTE]
->  The [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page is not part of the [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscription. Clicking [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] takes [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] users to your environment of [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] or to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
+>  The [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page is not part of the [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscription. Clicking [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] takes [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] users to your environment of Dynamics 365 or to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
   
  See the next section to see what you can do with the home page.  
   
@@ -69,7 +69,7 @@ search.app:
 ### View your apps 
  Any [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] app for which you have a license appears as an app module tile on this page. If you have multiple environments of an app, select the tile for the environment you want to open.  
   
- In this example, there are two environments of [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] displayed.  
+ In this example, there are two environments of Dynamics 365 displayed.  
   
 > [!TIP]
 >  If you've just started a trial or upgraded to [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)], you might need to refresh or open a new browser session to see your apps. There might be a delay for your environment to fully provision.  
@@ -83,7 +83,7 @@ search.app:
 > 
 > **What are the tiles on the home page?**  
 > 
-> [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] is introducing a new app model and what you're seeing are [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] apps for which you're licensed once you've upgraded to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)].  
+> [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] is introducing a new app model and what you're seeing are Dynamics 365 apps for which you're licensed once you've upgraded to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)].  
 > 
 > **Admins: You have options for displaying and naming Dynamics 365 - custom.**  
 > 
@@ -118,7 +118,7 @@ search.app:
   
 <a name="BKMK_Dyn365AppSwitcher"></a>   
 ## For admins and end users: Select a Dynamics 365 apps from the new app switcher  
- For customers who have upgraded to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)] or later, you can use the app switcher in [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] to quickly select other [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] apps for which you're licensed.  
+ For customers who have upgraded to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)] or later, you can use the app switcher in Dynamics 365 to quickly select other [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] apps for which you're licensed.  
   
  ![Dynamics 365 apps switcher](../admin/media/useapp-switchergoother-dynamics-365-apps.png "Dynamics 365 apps switcher")  
   
