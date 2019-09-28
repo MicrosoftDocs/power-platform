@@ -62,7 +62,7 @@ Article templates help you create new articles for your organization's knowledge
      After you save the template, it is immediately available for use. If the template is not complete and you want to finish it later, you can save the template, deactivate it (make it ready-only), and then complete it later. When the template is complete, you can reactivate it.  
   
 > [!NOTE]
->  If you need to back up your templates, or export them for use in a different implementation of Dynamics 365 apps, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md).  
+>  If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md).  
   
 ### See also  
  [eBook: Use KB articles to help your customers](http://go.microsoft.com/fwlink/p/?LinkId=394983)

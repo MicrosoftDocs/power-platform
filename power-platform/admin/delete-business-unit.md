@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-You can delete a business unit to completely remove it from Dynamics 365 apps.  
+You can delete a business unit to completely remove it.  
   
 > [!IMPORTANT]
 >  Before deleting a business unit, be sure to consider the following:  

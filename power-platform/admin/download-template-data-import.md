@@ -1,6 +1,6 @@
 ---
-title: "Download a template for data import for Dynamics 365 apps  | MicrosoftDocs"
-description: Download a template for data import for Dynamics 365 apps
+title: "Download a template for data import | MicrosoftDocs"
+description: Download a template for data import
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -17,7 +17,7 @@ search.app:
 ---
 # Download a template for data import
 
-Whether your data is stored in spreadsheets, databases, or other systems, you'll want to import the data into Dynamics 365 apps so you can keep track of all your customer information in one place. You use templates for importing many types of records, such as accounts, leads or cases. There is a complete list in the Templates for Data Import wizard.  
+Whether your data is stored in spreadsheets, databases, or other systems, you'll want to import the data into model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, so you can keep track of all your customer information in one place. You use templates for importing many types of records, such as accounts, leads or cases. There is a complete list in the Templates for Data Import wizard.  
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Templates**.
 
