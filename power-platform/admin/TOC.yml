@@ -683,3 +683,5 @@
     href: admin-centers.md
   - name: "Reference: Videos and PowerPoint presentations"
     href: videos.md
+  - name: Important changes (deprecations) coming
+    href: ../important-changes-coming.md
