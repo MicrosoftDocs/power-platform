@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
   
- [!INCLUDE[pn_microsoft_excel](../includes/pn-microsoft-excel.md)] provides powerful ways to analyze and present your [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] data. With [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates, you can easily create and share your customized analysis with others in your organization.  
+ [!INCLUDE[pn_microsoft_excel](../includes/pn-microsoft-excel.md)] provides powerful ways to analyze and present your data. With [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates, you can easily create and share your customized analysis with others in your organization.  
   
  Use [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates for:  
   
@@ -33,7 +33,7 @@ search.app:
   
 - And much more…  
   
-  You can try out the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)] to get a quick view of what kind of analysis is possible.  
+  You can try out the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, to get a quick view of what kind of analysis is possible.  
   
   ![Example of a pipeline analysis Excel template](../admin/media/excel-template-example-pipeline-analysis.png "Example of a pipeline analysis Excel template")  
   
@@ -206,7 +206,7 @@ search.app:
   
 <a name="BKMK_SampleTemplates"></a>   
 ## Try out the sample Excel templates  
- There are four [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)].  
+ There are four [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with model-driven apps in Dynamics 365.  
   
  ![Try out the included Excel templates](../admin/media/excel-template-included.png "Try out the included Excel templates")  
   
@@ -228,7 +228,7 @@ search.app:
 3. Download the template or open it in place in [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)].  
   
 > [!TIP]
->  You can export the templates that are included in [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)], modify them, and then reimport them as new templates. This can give you a running start on creating your own custom [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates.  
+>  You can export the templates that are included in model-driven apps in Dynamics 365, modify them, and then reimport them as new templates. This can give you a running start on creating your own custom [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates.  
   
 <a name="BKMK_BestPractices"></a>   
 ## Best practices and considerations for using Excel templates  

@@ -25,7 +25,7 @@ search.app:
   
 - Flat files or exported data files from the Configuration Migration tool. For information about the Configuration Migration tool, see [Manage your configuration data](manage-configuration-data.md).  
   
-- Custom code that can run during or after the package is deployed to [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)].  
+- Custom code that can run during or after the package is deployed to model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
   
 - HTML content specific to the package that can display at the beginning and end of the package deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
   

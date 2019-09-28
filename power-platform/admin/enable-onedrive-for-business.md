@@ -21,16 +21,16 @@ search.app:
 
 This feature was introduced in [!INCLUDE[pn_crm_online_2016_update_shortest](../includes/pn-crm-online-2016-update-shortest.md)].  
   
- Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. Those documents can be accessed in Dynamics 365 apps after the system administrator has enabled [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
+ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. Those documents can be accessed in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, after the system administrator has enabled [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
   
 ## Requirements  
 
 > [!NOTE]
->  This topic applies to organizations deploying online versions of [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] and Dynamics 365 apps. For information on integrating [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] on-premises with Dynamics 365 apps, or an online/on-premises mix of these products, see: [Enable OneDrive for Business (on-premises)](../admin/connect-onedrive-business.md).  
+>  This topic applies to organizations deploying online versions of [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] and model-driven apps in Dynamics 365. For information on integrating [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] on-premises with Dynamics 365 apps, or an online/on-premises mix of these products, see: [Enable OneDrive for Business (on-premises)](../admin/connect-onedrive-business.md).  
 
- The following are required to use [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] with Dynamics 365 apps:  
+ The following are required to use [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] with model-driven apps in Dynamics 365:  
   
-- [Set up Dynamics 365 apps to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md).  
+- [Set up model-driven apps in Dynamics 365 to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md).  
   
 - A [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] license for each user. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)  
   
@@ -38,7 +38,7 @@ This feature was introduced in [!INCLUDE[pn_crm_online_2016_update_shortest](../
   
 - [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]  
   
-- Before using [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] in Dynamics 365 apps, the Dynamics 365 administrator and end users should access [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] through the web interface. For example, if you’re using [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], go to **<https://admin.microsoft.com>** > **app launcher**![Office 365 app launcher](../admin/media/crm-itpro-officeapplauncher.png "Office 365 app launcher") > **OneDrive**. The site and other information required by Dynamics 365 apps to enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] integration gets created only when the site is accessed.  
+- Before using [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] in model-driven apps in Dynamics 365, the administrator and end users should access [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] through the web interface. For example, if you’re using [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], go to **<https://admin.microsoft.com>** > **app launcher**![Office 365 app launcher](../admin/media/crm-itpro-officeapplauncher.png "Office 365 app launcher") > **OneDrive**. The site and other information required by model-driven apps in Dynamics 365 to enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] integration gets created only when the site is accessed.  
   
 ## Enable OneDrive for Business  
  You can enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] as follows.  
@@ -47,8 +47,8 @@ This feature was introduced in [!INCLUDE[pn_crm_online_2016_update_shortest](../
   
 2.  Click **Enable OneDrive for Business** to enable it, and then choose **OK**.  
   
-## Controlling access to OneDrive for Business in Dynamics 365 apps 
- You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)] in Dynamics 365 apps for end users through the **OneDrive for Business** privilege.  
+## Controlling access to OneDrive for Business
+ You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)] in model-driven apps in Dynamics 365 for end users through the **OneDrive for Business** privilege.  
   
 1. Click **Settings** > **Security** > **Security Roles**.  
   

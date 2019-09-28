@@ -17,13 +17,13 @@ search.app:
 ---
 # Use the service admin role to manage your tenant 
 
-To help you administer [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)], you can assign users to manage [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] at the tenant level without having to assign the more powerful [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global admin privileges.  
+To help you administer [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)], you can assign users to manage Dynamics 365 at the tenant level without having to assign the more powerful [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global admin privileges.  
   
  Users with the [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] service admin role can:  
   
 - Sign in to and manage  multiple [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] environments. If an environment uses a security group, a service administrator would need to be added to the security group in order to manage that environment.  
   
-- Perform admin functions in [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] because they have the [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] system admin role. The service admin must be assigned a [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] license.  
+- Perform admin functions in Dynamics 365 because they have the Dynamics 365 system admin role. The service admin must be assigned a Dynamics 365 license.  
   
 A [!INCLUDE[pn_dyn_365_online](../includes/pn-crm-online.md)] service admin cannot do functions restricted to the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global admin such as manage user accounts, manage subscriptions, access settings for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps like [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   

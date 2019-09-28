@@ -265,7 +265,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 <a name="BKMK_SampleTemplates"></a>  
 
 ### Try out the sample [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates  
- There are five [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates included with [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)].  
+ There are five [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates included with model-driven apps in Dynamics 365.  
 
  ![These templates are included with Dynamics 365 apps](../admin/media/template-bundled.png "These templates are included with Dynamics 365 apps")  
 
@@ -288,7 +288,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
    Open the newly-created [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template and give it a look.  
 
 > [!NOTE]
->  You can review but not edit templates that are included in [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)].  
+>  You can review but not edit templates that are included in model-driven apps in Dynamics 365.  
 
 ## Additional considerations  
 

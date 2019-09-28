@@ -21,7 +21,7 @@ search.app:
 
 Service level agreements (SLAs) are a formalized method to help organizations meet service levels when they provide customer service and support. For example, an organization can have an SLA to complete the first customer response within 48 business hours after a case is created. Another example is to escalate an unresolved case after a specified duration, such as five business days. SLAs are used to define these different aspects of service.  
   
- Dynamics 365 apps include two kinds of SLAs, standard and enhanced. Enhanced SLAs include the following features not available in standard SLAs:  
+Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, include two kinds of SLAs, standard and enhanced. Enhanced SLAs include the following features not available in standard SLAs:  
   
 -   Case-on-hold support  
   

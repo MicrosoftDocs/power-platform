@@ -28,7 +28,7 @@ search.app:
 ## German Data Residency  
  Customer Data will be stored at rest in two independent, geographically dispersed datacenter locations in Germany. Replication of  Customer Data across these German datacenters ensures data remains in Germany even in backup, business continuity, and disaster recovery scenarios.  
   
- Customer Data means all data that are provided to Microsoft by, or on behalf of the customer through the use of [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)].  
+ Customer Data means all data that are provided to Microsoft by, or on behalf of the customer through the use of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service,.  
   
  Note the following:  
   
@@ -36,7 +36,7 @@ search.app:
   
 - Access control is through  a German Data Trustee.  
   
-- All security and compliance capabilities of [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] are included.  
+- All security and compliance capabilities of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, are included.  
   
   ![Germany data residence](media/germany-data-residence.png "Germany data residence")  
   <a name="BKMK_DataTrustee"></a>   
@@ -95,7 +95,7 @@ Dynamics 365 Plan is a user subscription that includes [!INCLUDE[pn_ms_dyn_365_f
   
 <a name="BKMK_CompliancyCerts"></a>   
 ## Compliancy and certifications  
- [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] is built in adherence to the cloud security and compliance standards and commitments of [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)].  
+ [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] is built in adherence to the cloud security and compliance standards and commitments of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
   
  [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] is planned to be covered under existing audits.  
   

@@ -20,7 +20,7 @@ search.app:
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 
-Follow these steps to connect [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)] with IMAP email servers such as used for Gmail and Yahoo! Mail.  
+Follow these steps to connect model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, with IMAP email servers such as used for Gmail and Yahoo! Mail.  
 
 > [!NOTE]
 > - Only emails in the Inbox folder are synchronized.

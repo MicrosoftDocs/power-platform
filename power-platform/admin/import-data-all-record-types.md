@@ -17,7 +17,7 @@ search.app:
 ---
 # Import data (all record types) from multiple sources
 
-Importing data is often the first important task that you need to perform after you have installed Dynamics 365 apps. You can import data from various Dynamics 365 apps systems and data sources into standard and customized fields of most business and custom entities in [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)]. You can include related data, such as notes and attachments. To assure data integrity, you can enable duplicate detection that prevents importing duplicate records. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Detect duplicate data](https://docs.microsoft.com/dynamics365/customer-engagement/admin/detect-duplicate-data). For more complex data import scenarios, you can write code using the data import web service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Import data using web services](https://docs.microsoft.com/dynamics365/customer-engagement/developer/import-data).
+Importing data is often the first important task that you need to perform after you have installed Dynamics 365 apps. You can import data from various Dynamics 365 apps systems and data sources into standard and customized fields of most business and custom entities in Dynamics 365. You can include related data, such as notes and attachments. To assure data integrity, you can enable duplicate detection that prevents importing duplicate records. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Detect duplicate data](https://docs.microsoft.com/dynamics365/customer-engagement/admin/detect-duplicate-data). For more complex data import scenarios, you can write code using the data import web service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Import data using web services](https://docs.microsoft.com/dynamics365/customer-engagement/developer/import-data).
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Data import wizard**.
   
@@ -39,7 +39,7 @@ There are several ways to import data into Dynamics 365 apps:
    > [!NOTE]
    >  For the Import Data Wizard, the maximum file size for .zip files is 32 MB; for the other file formats, it’s 8 MB.  
    > 
-   >  With the Import Data Wizard, you can specify the “Map Automatically” option. The wizard automatically maps all the files and the column headings with [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] record types and fields if:  
+   >  With the Import Data Wizard, you can specify the “Map Automatically” option. The wizard automatically maps all the files and the column headings with Dynamics 365 record types and fields if:  
    > 
    > - The file names exactly match the display name of the record type.  
    >   -   The column headings of the file you are importing exactly match the display names of the fields in the record.  

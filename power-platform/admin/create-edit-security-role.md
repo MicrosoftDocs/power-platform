@@ -21,7 +21,7 @@ search.app:
 
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   
- If you need to back up your security role changes, or export security roles for use in a different implementation of [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)], you can export them as part of exporting customizations. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md)  
+ If you need to back up your security role changes, or export security roles for use in a different implementation, you can export them as part of exporting customizations. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md)  
   
 ## Create a security role  
   
@@ -123,7 +123,7 @@ When you import the solution, it creates the **min prv apps use** role which you
 > [!IMPORTANT]
 > You should try out the solution in a development environment before importing into a production environment. 
   
-- When logging in to [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)]:  
+- When logging in to model-driven apps in Dynamics 365:  
   
   -   Assign the min prv apps use security role or a copy of this security role to your user.
   
@@ -132,7 +132,7 @@ When you import the solution, it creates the **min prv apps use** role which you
 
 - When logging in to [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]:
 
-   - To render navigation for [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] and all [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] buttons: assign the min prv apps use security role or a copy of this security role to your user   
+   - To render navigation for model-driven apps in Dynamics 365 and all buttons: assign the min prv apps use security role or a copy of this security role to your user   
   
   - To render an entity grid: assign Read privilege on the entity  
   
