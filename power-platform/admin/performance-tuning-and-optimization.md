@@ -17,7 +17,7 @@ search.app:
 ---
 # Performance tuning and optimization
 
-Use this information to help you plan and optimize application performance with Dynamics 365 apps.  
+Use this information to help you plan and optimize application performance with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
 We recommend that you not run operations that require intensive database transactions concurrently. Similarly, don’t run operations that require intensive database transactions during normal business hours when users are most likely to access the system. 
 
