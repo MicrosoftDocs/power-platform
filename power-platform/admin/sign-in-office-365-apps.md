@@ -24,7 +24,7 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
 > [!TIP]
 >  Admins: Be sure to share this information with your end users.  
 > 
->  You can troubleshoot issues with signing in to [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] using the Support and Recovery Assistant for Office 365. For more information, see the blog [New diagnostic scenario for web sign-in](https://community.dynamics.com/crm/b/dynamicscrmsupportblog/archive/2016/11/15/new-diagnostic-scenario-for-web-sign-in).  
+>  You can troubleshoot issues with signing in to Dynamics 365 using the Support and Recovery Assistant for Office 365. For more information, see the blog [New diagnostic scenario for web sign-in](https://community.dynamics.com/crm/b/dynamicscrmsupportblog/archive/2016/11/15/new-diagnostic-scenario-for-web-sign-in).  
   
 <a name="BKMK_PortalSignIn"></a>   
 ## Signing in to https://admin.microsoft.com  
@@ -32,7 +32,7 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
   
  ![Office 365 welcome page](../admin/media/office-365-welcome-page.png "Office 365 welcome page")  
   
- Click the Dynamics 365 apps tile to go to the Dynamics 365 apps Home page. See [For admins and end users: Introducing the Dynamics 365 apps home page](../admin/quickly-navigate-office-365-app-launcher.md#BKMK_IntroD365HomePage).  
+ Click the Dynamics 365 apps tile to go to the Dynamics 365 home page. See [For admins and end users: Introducing the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md#BKMK_IntroD365HomePage).  
   
  If you're a Dynamics 365 apps system administrator, you'll see an **Admin** tile. Click this tile to get to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], where you can see your service health, manage users, manage licenses, and more for all the online services associated with your account.  
   
@@ -42,12 +42,12 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
   
  ![Dynamics 365 apps option in the Admin center drop-down list](../admin/media/click-admin-centers-dynamics-365.png "Dynamics 365 apps option in the Admin center drop-down list")  
   
- For other ways to access Dynamics and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps, see [Quickly navigate with the Office 365 app launcher and the Dynamics 365 apps home page](../admin/quickly-navigate-office-365-app-launcher.md).  
+ For other ways to access Dynamics and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps, see [Quickly navigate with the Office 365 app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md).  
   
 <a name="BKMK_DirectAdminCenter"></a>   
 
 ## Direct sign in to the Dynamics 365 Administration Center  
- Some [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] admin or Office 365 admin roles might be unable to access the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] after signing in to https://admin.microsoft.com. Use the following steps to directly navigate to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] and manage your Dynamics 365 apps environment.  
+ Some Dynamics 365 admin or Office 365 admin roles might be unable to access the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] after signing in to https://admin.microsoft.com. Use the following steps to directly navigate to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] and manage your Dynamics 365 apps environment.  
   
 1. Go to https://port.\<region>.dynamics.com/G/environments/environmentPicker.aspx  
   
@@ -71,10 +71,10 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
 2. Sign in with your Dynamics 365 apps admin credentials.  
   
 <a name="BKMK_DirectHomePage"></a>   
-## Direct sign in to the Dynamics 365 apps home page  
- We have a new [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page for you to use  to manage and open [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] apps. You can sign in to this page directly using your [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] (or Active Directory) credentials with this URL: <https://home.dynamics.com>  
+## Direct sign in to the Dynamics 365 home page  
+ We have a new Dynamics 365 home page for you to use  to manage and open Dynamics 365 apps. You can sign in to this page directly using your [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] (or Active Directory) credentials with this URL: <https://home.dynamics.com>  
   
- For information on the [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] home page, see: [For admins and end users: Introducing the Dynamics 365 apps home page](../admin/quickly-navigate-office-365-app-launcher.md#BKMK_IntroD365HomePage).  
+ For information on the Dynamics 365 home page, see: [For admins and end users: Introducing the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md#BKMK_IntroD365HomePage).  
   
 <a name="BKMK_directsignin"></a>   
 ## Direct sign in to Dynamics 365 apps  
@@ -115,4 +115,4 @@ There are multiple ways to sign in and access your Dynamics and [!INCLUDE[pn_Off
  Dynamics 365 administrators can provide the URL and sign-in information.  
   
 ### See also  
- [Quickly navigate with the Office 365 app launcher and the Dynamics 365 apps home page](../admin/quickly-navigate-office-365-app-launcher.md)   
+ [Quickly navigate with the Office 365 app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   

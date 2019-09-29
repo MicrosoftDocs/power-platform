@@ -123,7 +123,7 @@ Once server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short
   
    ![Add a document](../admin/media/crm-itpro-crmo365tg-crmadddoc.png "Add a document")  
   
-5. Select a [!INCLUDE[pn_dyn_365](../includes/pn-crm-shortest.md)] folder location, and then click **Ok**.  
+5. Select a Dynamics 365 folder location, and then click **Ok**.  
   
 6. To see the document in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)][!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] Team site, click to the left of the document name (you’ll see a check mark), and then click **Open Location**.  
   
