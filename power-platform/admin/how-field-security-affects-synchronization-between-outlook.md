@@ -96,7 +96,7 @@ Securing a field with field level security can impact synchronization between mo
   
  Nancy’s manager, with update rights to the Job Title field, fills in the field with the correct job title: Construction Manager.  
   
- Nancy synchronizes again with model-driven apps in Dynamics 365and now the Job Title field is in the contact with the correct title.  
+ Nancy synchronizes again with model-driven apps in Dynamics 365 and now the Job Title field is in the contact with the correct title.  
   
  ![Contact with Job Title form](../admin/media/contact-job-title.png "Contact with Job Title form")  
   

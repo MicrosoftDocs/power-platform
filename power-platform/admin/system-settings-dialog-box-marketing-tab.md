@@ -1,6 +1,6 @@
 ---
-title: "System Settings dialog box - Marketing tab for Dynamics 365 apps | MicrosoftDocs"
-description: System Settings dialog box - Marketing tab for Dynamics 365 apps
+title: "System Settings Marketing tab  | MicrosoftDocs"
+description: System Settings Marketing tab 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# System Settings dialog box - Marketing tab
+# System Settings Marketing tab
 
-Use the settings on this page to configure marketing settings for model-driven apps in Dynamics 365.  
+Use the settings on this page to configure marketing settings for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service,.  
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
@@ -40,7 +40,7 @@ Use the settings on this page to configure marketing settings for model-driven a
 |                              **Set whether direct email through mail merge is enabled in campaigns**                              |                                                                                                                                                                                                                                                          |
 |                                                Enable Direct Email via Mail Merge                                                 | Default: Yes. If Yes, users can send email as a campaign activity using the mail merge feature. **Note:**  To enable this option, the security role assigned to users for whom you want to enable mail merge must also include the Mail Merge privilege. |
 | **Set whether campaign responses are created for incoming campaign activity email (Available only if Email tracking is enabled)** |                                                                                                                                                                                                                                                          |
-|                                           Create campaign responses for incoming email                                            |                     Default: Yes. If Yes, Dynamics 365 apps create campaign response records automatically when email messages are received in response to a specific marketing campaign.                     |
+|                                           Create campaign responses for incoming email                                            |                     Default: Yes. If Yes, model-driven apps in Dynamics 365 create campaign response records automatically when email messages are received in response to a specific marketing campaign.                     |
 |                        **Set the auto-unsubscribe options (Available only if Email tracking is enabled)**                         |                                                                                                                                                                                                                                                          |
 |                          Set "Do Not Send Marketing Material" option when unsubscribe email is received                           |                         Default: No. If Yes, when an unsubscribe email is received, the preference setting for the account, contact, or lead from the marketing list gets updated automatically to not send marketing materials.                         |
 |                                      Send acknowledgement to customers when they unsubscribe                                      |                                                 If the previous setting **Set “Do Not Send Marketing Material”** is Yes, you can use this setting to send a response to customers when they unsubscribe.                                                 |

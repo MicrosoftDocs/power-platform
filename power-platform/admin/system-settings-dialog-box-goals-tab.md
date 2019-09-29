@@ -1,6 +1,6 @@
 ---
-title: "System Settings dialog box - Goals tab for Dynamics 365 apps  | MicrosoftDocs"
-description: System Settings dialog box - Goals tab for Dynamics 365 apps
+title: "System Settings Goals tab   | MicrosoftDocs"
+description: System Settings Goals tab 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# System Settings dialog box - Goals tab
+# System Settings Goals tab
 
-Set the duration and frequency of the automatic rollup of goals. These settings only affect the automatic handling of all goals set in Dynamics 365. You can always perform a manual rollup for any goal at any time.  
+Set the duration and frequency of the automatic rollup of goals. These settings only affect the automatic handling of all goals set in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. You can always perform a manual rollup for any goal at any time.  
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
   
@@ -39,7 +39,7 @@ Set the duration and frequency of the automatic rollup of goals. These settings 
 |                            Settings                            |                                                                                  Description                                                                                   |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Set the roll-up expiration time and the roll-up frequency.** |                                                                                                                                                                                |
-|     Days after the goal end date when the rollup will stop     | Default: 30 days. Set the number of days after the ending date of a goal for Dynamics 365 to stop including a goal in a rollup. |
+|     Days after the goal end date when the rollup will stop     | Default: 30 days. Set the number of days after the ending date of a goal for model-driven apps in Dynamics 365 to stop including a goal in a rollup. |
 |                  Roll-up recurrence frequency                  |                                                      Default: 24 hours. Set the number of hours between each goal rollup.                                                      |
   
 ### See also  

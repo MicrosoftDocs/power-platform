@@ -17,17 +17,17 @@ search.app:
 ---
 # Set up SharePoint integration
 
-With Dynamics 365 apps, you can use the document management capabilities of [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] from within Dynamics 365. You can store and manage documents in the context of a Dynamics 365 record on a [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)], and leverage the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] infrastructure to share, manage, and collaborate efficiently. Because the documents are stored on a [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)], non-Dynamics 365 apps users can directly access the documents on the [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)], provided they have the appropriate permissions.  
+You can use the document management capabilities of [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] from within model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. You can store and manage documents in the context of a record on a [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)], and leverage the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] infrastructure to share, manage, and collaborate efficiently. Because the documents are stored on a [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)], non-model-driven apps in Dynamics 365 users can directly access the documents on the [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)], provided they have the appropriate permissions.  
   
  For document management functionality, you enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration (recommended) on a site collection in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] provides the following benefits.  
   
-- Users sign-in once and do not have to sign-in to both Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+- Users sign-in once and do not have to sign-in to both model-driven apps in Dynamics 365 and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
 - No additional software is required to install on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
-- [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] documents will display in Dynamics 365 apps lists.  
+- [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] documents will display in lists.  
   
-- Users can perform [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] actions from the Dynamics 365 apps command bar.  
+- Users can perform [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] actions from the command bar.  
   
 ### See also 
  [Manage your documents](../admin/manage-documents-using-sharepoint.md)  <br /> 

@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use Email settings to adjust how Dynamics 365 apps features appear and function.
+Use Email settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, features appear and function.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Email settings**.
 
@@ -35,7 +35,7 @@ Make sure you have the System Administrator or System Customizer security role o
 |**Security and permissions**| Select these check boxes if you want to allow email processing only for users and queues whose email addresses have been approved by the system administrator.|
 |Process emails only for approved users|Default: On. |
 |Process emails only for approved queues|Default: On. |
-|Sync information rights management-enabled emails to the server|Default: Not selected. Off. Select **On** to sync Dynamics 365 apps emails that have information rights property.|
+|Sync information rights management-enabled emails to the server|Default: Not selected. Off. Select **On** to sync emails that have information rights property.|
 |Allow to delete appointments if system auto detects changes that will result in change in ownership|Default: Not selected. Off.| 
 |**Notifications**||
 |When these occur, send details to the mailbox's notifications area||
@@ -47,7 +47,7 @@ Make sure you have the System Administrator or System Customizer security role o
 |Maximum file size attachments|Default: 5 MB (5120 KB). Maximum file size (in Kilobytes)|Increase or decrease the maximum file size for attached files. The maximum size is 128 MB (131,072 KB).|
 |**Synchronization methods**|For any mailbox that is automatically created in [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] when a user or queue is created, the default email settings as defined in this section will be applied.|  
 |The selected settings will be applied to mailboxes of all newly created users and queues | |
-|Server profile|For server-side synchronization, select the email server profile that you want to use. The email server profile holds the configuration data that enables [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] to connect to [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. If you’re connecting Dynamics 365 (online) with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], the email server profile is automatically created for you.|  
+|Server profile|For server-side synchronization, select the email server profile that you want to use. The email server profile holds the configuration data that enables [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] to connect to [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. If you’re connecting model-driven apps in Dynamics 365 with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], the email server profile is automatically created for you.|  
 |Incoming email|Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the Email Router, server-side synchronization, or a forward mailbox for processing incoming email. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create forward mailboxes or edit mailboxes](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-forward-mailboxes-edit-mailboxes)|  
 |Outgoing email|Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the Email Router, or server-side synchronization for processing outgoing email.|  
 |Appointments, contacts, and tasks|Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or server-side synchronization to synchronize appointments, contacts, and tasks between [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] and [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)]. **Note:**  You can’t synchronize appointments, contacts, and tasks if you’re synchronizing with a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email server.|  
@@ -60,5 +60,5 @@ Make sure you have the System Administrator or System Customizer security role o
   
 ### See also  
  [Track Outlook email by moving it to a tracked Exchange folder](https://docs.microsoft.com/dynamics365/customer-engagement/admin/track-outlook-email-by-moving-it-tracked-exchange-folder)   
- [Frequently asked questions about synchronizing records between Microsoft Dynamics 365 and Outlook](https://docs.microsoft.com/dynamics365/customer-engagement/admin/frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook)   
+ [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Outlook](https://docs.microsoft.com/dynamics365/customer-engagement/admin/frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook)   
  [Set up email through server-side synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks)   

@@ -15,23 +15,23 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up Dynamics 365 apps to use Skype or Skype for Business
+# Set up model-driven apps in Dynamics 365 to use Skype or Skype for Business
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and Dynamics 365 apps, your organization can benefit from these capabilities:  
+When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, your organization can benefit from these capabilities:  
   
-- Real-time communications with customers, colleagues, and team members without leaving Dynamics 365 apps. Click or tap a person’s phone number to call them.  
+- Real-time communications with customers, colleagues, and team members without leaving model-driven apps in Dynamics 365. Click or tap a person’s phone number to call them.  
   
-- Track meetings as Activities in Dynamics 365 apps.  
+- Track meetings as Activities.  
   
 - Get Presence information for members of the same email domain you are signed in with in [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)].  
   
   ![Call a contact with Skype](../admin/media/crm-itpro-crmo365tg2-kimpresence.png "Call a contact with Skype")  
   
-## Set up Skype in Microsoft Dynamics 365 apps  
+## Set up Skype in model-driven apps in Dynamics 365
   
-1. Verify that IM presence is enabled in Dynamics 365 apps. Go to **Settings** > **Administration** > **System Settings** > **General tab**.  
+1. Verify that IM presence is enabled. Go to **Settings** > **Administration** > **System Settings** > **General tab**.  
   
    ![Set the IM presence option](../admin/media/crm-itpro-crmo365tg2-presencesetting.png "Set the IM presence option")  
   
@@ -65,5 +65,5 @@ When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.
  ![Lync calls tracked as activities](../admin/media/crm-itpro-crmo365tg2-lynctrack.png "Lync calls tracked as activities")  
   
 ### See also 
- [Skype for Business and Skype integration with Microsoft Dynamics 365 apps](skype-business-integration.md)   
+ [Skype for Business and Skype integration](skype-business-integration.md)   
  [Skype for Business help](https://support.office.com/skype-for-business)

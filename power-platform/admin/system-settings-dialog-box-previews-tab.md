@@ -1,6 +1,6 @@
 ---
-title: "System Settings dialog box - Previews tab for Dynamics 365 apps  | MicrosoftDocs"
-description: System Settings dialog box - Previews tab for Dynamics 365 apps
+title: "System Settings Previews tab  | MicrosoftDocs"
+description: System Settings Previews tab 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# System Settings dialog box - Previews tab
+# System Settings Previews tab
 
-Use the settings on this page to enable preview features in model-driven apps in Dynamics 365.
+Use the settings on this page to enable preview features in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
   
@@ -44,7 +44,7 @@ Use the settings on this page to enable preview features in model-driven apps in
 |**Organization Insights Preview**||
 |Enable Organization Insights Preview|More information: [Preview feature: Use the Organization Insights dashboard to view metrics about your environment](/dynamics365/customer-engagement/admin/use-organization-insights-dashboard-view-instance-metrics.md)|
 |**Text Analytics Preview for Case Topic analysis, Suggest Similar Cases and Suggest Knowledge Articles**||
-|Enable the Dynamics 365 apps Text Analytics Preview|More information: [Public Preview: Topic analysis](https://technet.microsoft.com/library/mt752501.aspx)|
+|Enable the Text Analytics Preview|More information: [Public Preview: Topic analysis](https://technet.microsoft.com/library/mt752501.aspx)|
 |**Sales Insights**||
 |Install Relationship Analytics to enable it for preview|More information: [Preview feature: Get insights on opportunities, activities, and leads of customers](https://docs.microsoft.com/dynamics365/customer-engagement/sales-enterprise/sales-insights-addon)|
 

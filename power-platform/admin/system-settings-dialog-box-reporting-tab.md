@@ -1,6 +1,6 @@
 ---
-title: "System Settings dialog box - Reporting tab for Dynamics 365 apps  | MicrosoftDocs"
-description: System Settings dialog box - Reporting tab for Dynamics 365 apps
+title: "System Settings Reporting tab  | MicrosoftDocs"
+description: System Settings Reporting tab 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# System Settings dialog box - Reporting tab
+# System Settings Reporting tab
 
-Use the settings on this page to configure reporting settings for model-driven apps in Dynamics 365. 
+Use the settings on this page to configure reporting settings for model-driven apps in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. 
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)]  
 
@@ -43,5 +43,5 @@ Use the settings on this page to configure reporting settings for model-driven a
 |      Allow Power BI visualization embedding      | Lets users embed [!INCLUDE[pn_power_bi_for_office_365_long](../includes/pn-power-bi-for-office-365-long.md)] visualizations on their personal dashboards.  A [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] visualization is a snapshot of the user's data, such as a chart, map, or aggregate number. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add or edit Power BI visualizations on your dashboard](/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard.md). <br /><br />Default value: No. Users cannot embed [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] visualizations on their personal dashboards. |
 
 ### See also  
- [Use Power BI with Microsoft Dynamics 365 apps](/dynamics365/customer-engagement/basics/find-administrator-support.md)   
+ [Use Power BI](/dynamics365/customer-engagement/basics/find-administrator-support.md)   
  [System Settings dialog box - General tab](../admin/system-settings-dialog-box-general-tab.md)

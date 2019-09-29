@@ -1,6 +1,6 @@
 ---
-title: "System Settings dialog box - Auditing tab for Dynamics 365 apps | MicrosoftDocs"
-description: System Settings dialog box - Auditing tab for Dynamics 365 apps
+title: "System Settings Auditing tab  | MicrosoftDocs"
+description: System Settings Auditing tab 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# System Settings dialog box - Auditing tab
+# System Settings Auditing tab
 
 Enable auditing to track changes to your organization’s data and maintain a log of changes. 
 
@@ -39,7 +39,7 @@ Enable auditing to track changes to your organization’s data and maintain a lo
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Audit Settings** |                                                                                                                                                                                                                                                                                                                                                |
 |   Start Auditing   |                                                                                                                                                            Start or stop auditing.                                                                                                                                                             |
-| Audit user access  | If enabled, Dynamics 365 apps tracks when the user started accessing Dynamics 365 apps and whether or not the user accessed the application by using the web application or [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]. |
+| Audit user access  | If enabled, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, tracks when the user started accessing model-driven apps in Dynamics 365 and whether or not the user accessed the application by using the web application or [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]. |
   
 Specify to audit specific areas of the product, as described in the following table.  
   

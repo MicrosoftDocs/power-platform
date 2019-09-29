@@ -1,6 +1,6 @@
 ---
-title: "System Settings dialog box - Mobile Client tab for Dynamics 365 apps  | MicrosoftDocs"
-description: System Settings dialog box - Mobile Client tab for Dynamics 365 apps 
+title: "System Settings Mobile Client tab  | MicrosoftDocs"
+description: System Settings Mobile Client tab 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# System Settings dialog box - Mobile Client tab
+# System Settings Mobile Client tab
 
 Use the settings on this page to manage mobile settings.
 
@@ -39,5 +39,5 @@ Use the settings on this page to manage mobile settings.
 |                           Settings                            |                                                                                                                                                                                                                                         Description                                                                                                                                                                                                                                          |
 |---------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Set conflict detection for mobile offline synchronization** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|      Enable conflict for mobile offline synchronization       | If Yes, sync conflict detection will be enabled during the play back of actions after an offline device comes back online. If No, the default, no conflict detection is done while playing back actions after an offline device comes back online. The changes done offline will overwrite any changes done in Dynamics 365 apps.<br/>For more information, see "Sync conflict resolution" in [Work offline with Dynamics 365 apps for phones and tablets](/dynamics365/customer-engagement/mobile-app/v8/go-mobile/work-offline.md) |
+|      Enable conflict for mobile offline synchronization       | If Yes, sync conflict detection will be enabled during the play back of actions after an offline device comes back online. If No, the default, no conflict detection is done while playing back actions after an offline device comes back online. The changes done offline will overwrite any changes done in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.<br/>For more information, see "Sync conflict resolution" in [Work offline with Dynamics 365 for phones and tablets](/dynamics365/customer-engagement/mobile-app/v8/go-mobile/work-offline.md) |
 

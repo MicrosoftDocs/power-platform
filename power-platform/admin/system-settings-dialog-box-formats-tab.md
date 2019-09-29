@@ -1,6 +1,6 @@
 ---
-title: "System Settings dialog box - Formats tab for Dynamics 365 apps  | MicrosoftDocs"
-description: System Settings dialog box - Formats tab for Dynamics 365 apps 
+title: "System Settings Formats tab   | MicrosoftDocs"
+description: System Settings Formats tab 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# System Settings dialog box - Formats tab
+# System Settings Formats tab
 
-You can control how model-driven apps in Dynamics 365 displays numbers, currencies, times, and dates for your organization. 
+You can control how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, display numbers, currencies, times, and dates for your organization. 
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)]  
   

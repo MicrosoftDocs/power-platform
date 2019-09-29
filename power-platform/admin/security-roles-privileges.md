@@ -20,7 +20,7 @@ search.app:
 To control data access, you must set up an organizational structure that both protects sensitive data and enables collaboration. You do this by setting up business units, security roles, and field security profiles.  
 
 > [!TIP]
-> Check out the following video: [How to set up security roles in Dynamics 365 apps](https://go.microsoft.com/fwlink/p/?linkid=2020433).
+> Check out the following video: [How to set up security roles](https://go.microsoft.com/fwlink/p/?linkid=2020433).
   
 ## Security roles  
 A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles.  
@@ -47,7 +47,7 @@ The colored circles on the security role settings page define the access level f
 > To ensure that users can view and access all areas of the web application, such as entity forms, the nav bar, or the command bar, all security roles in the organization must include the Read privilege on the `Web Resource` entity. For example, without read permissions, a user won’t be able to open a form that contains a web resource and will see an error message similar to this: “Missing `prvReadWebResource` privilege.” [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit a security role](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-security-role)  
 
 ### Record-level privileges  
- [!INCLUDE [pn-powerapps](../includes/pn-powerapps.md)] and Dynamics 365 use eight different record-level privileges that determine the level of access a user has to a specific record or record type.  
+ [!INCLUDE [pn-powerapps](../includes/pn-powerapps.md)] and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, use eight different record-level privileges that determine the level of access a user has to a specific record or record type.  
   
 |Privilege|Description|  
 |---------------|-----------------|  

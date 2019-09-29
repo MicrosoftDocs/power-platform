@@ -17,36 +17,36 @@ search.app:
 ---
 # SharePoint Document Management software requirements
 
-If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] document management functionality with Dynamics 365 apps, you must meet the requirements listed in this topic.  
+If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] document management functionality with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, you must meet the requirements listed in this topic.  
 
 <a name="docman_online"></a>   
-## Use document management in Dynamics 365 apps  
+## Use document management 
  If you are using server-based integration with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], you can use any of the following SharePoint versions. 
 -  [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)] 
 - SharePoint 2016 on-premises
 - [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] SP1 on-premises (or a later version).  
 
-**A SharePoint site collection**. You also need to have at least one site collection configured and available for Dynamics 365 apps.  
+**A SharePoint site collection**. You also need to have at least one site collection configured and available for model-driven apps in Dynamics 365.  
 
 **Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration**  must be enabled.  
 
 > [!IMPORTANT]
->  The document management feature requires that Dynamics 365 apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] subscriptions be under the same tenant.  
+>  The document management feature requires that model-driven apps in Dynamics 365 and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] subscriptions be under the same tenant.  
 > 
-> [!INCLUDE[pn_sharepoint_foundation](../includes/pn-sharepoint-foundation.md)] versions aren’t compatible with Dynamics 365 apps document management.  
+> [!INCLUDE[pn_sharepoint_foundation](../includes/pn-sharepoint-foundation.md)] versions aren’t compatible with model-driven apps in Dynamics 365 document management.  
 
- Users who access [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] from Dynamics 365 apps must have appropriate permissions on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection where the document management components are installed. For more information about how to grant membership on a site collection, see the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Help.  
+ Users who access [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] from model-driven apps in Dynamics 365 must have appropriate permissions on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection where the document management components are installed. For more information about how to grant membership on a site collection, see the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Help.  
 
 <a name="BKMK_enable_servertoserver"></a>   
 
 ## Server-based SharePoint integration  
- Earlier versions of Dynamics 365 apps document management use a client-to-server strategy to authenticate and transmit data from Dynamics 365 apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. Server-based (using server-to-server authentication) [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration provides the following benefits:  
+ Earlier versions of model-driven apps in Dynamics 365 document management use a client-to-server strategy to authenticate and transmit data from model-driven apps in Dynamics 365 to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. Server-based (using server-to-server authentication) [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration provides the following benefits:  
 
-- User interface that is consistent with the newly-updated Dynamics 365 apps user interface.  
+- User interface that is consistent with the newly-updated user interface.  
 
-- Users can create and view folders when using document management within Dynamics 365 apps.
+- Users can create and view folders when using document management.
 
-- To configure and use document management, you do not need to be signed in to both Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+- To configure and use document management, you do not need to be signed in to both model-driven apps in Dynamics 365 and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
 
 
 <!-- 
