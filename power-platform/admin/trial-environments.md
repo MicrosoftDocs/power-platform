@@ -18,7 +18,7 @@ search.app:
 
 # About Trial environments
 
-Currently, you can create two types of Common Data Service environments: Trial or Production. A Trial environment is useful for trying out Dynamics 365 apps at no cost. Trial environments expire after 30 days.
+Currently, you can create two types of Common Data Service environments: Trial or Production. A Trial environment is useful for trying out model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, at no cost. Trial environments expire after 30 days.
 
 Open the **Environments** page to see the environment types you have and the upcoming expiration date for Trial environments:
 

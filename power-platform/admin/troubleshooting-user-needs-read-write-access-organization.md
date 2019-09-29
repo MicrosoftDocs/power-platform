@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-You don’t have sufficient permissions to access Dynamics 365 apps. A Dynamics 365 apps system administrator will need to do the following in the Dynamics 365 apps:  
+You don’t have sufficient permissions to access model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. A system administrator will need to do the following:  
   
 1. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
   

@@ -27,10 +27,10 @@ If **Documents** is missing from entities such as account, use the following to 
 
 ![Documents](media/crm-itpro-crmo365tg-seldoc.png "Documents")
 
-1. Make sure you have the System Administrator security role or equivalent permissions in Dynamics 365 apps.
+1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
-    1. Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
-    2. Don’t have the correct permissions? Contact your system administrator.
+    a. Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
+    b. Don’t have the correct permissions? Contact your system administrator.
 
 2. Fix the missing **Documents** button. Follow these steps:
 
@@ -50,10 +50,10 @@ If the Documents associated grid is missing, use the following to restore.
 
 The most common cause for the Documents associated grid not loading is the corrupted FetchXML and LayoutXML. These sections could be corrupted due to many reasons. The most common of them is through customizing the entity/grid view, adding/removing columns, and other similar customizations.
 
-1. Make sure you have the System Administrator security role or equivalent permissions in Dynamics 365 apps.
+1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
-    1. Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
-    2. Don’t have the correct permissions? Contact your system administrator.
+    a. Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
+    b. Don’t have the correct permissions? Contact your system administrator.
 2. Go to **Settings** > **Customizations** > **Solutions**. 
 3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](/dynamics365/customer-engagement/customize/create-solution.md).
 4. Choose **Entities** > **Add Existing** > **Entity** > find and add **SharePoint Document** entity  (select all fields, forms, views). 
@@ -128,7 +128,7 @@ The most common cause for the Documents associated grid not loading is the corru
 
 14. Save the file.
 15. Zip the folder.
-16. Open Dynamics 365 apps.
+16. Open model-driven app in Dynamics 365.
 17. Navigate to **Settings** > **Solutions**
 18. Import the solution (zipped file in Step 8).
 19. Publish all customizations.
@@ -136,9 +136,9 @@ The most common cause for the Documents associated grid not loading is the corru
 
 ## Validate and fix SharePoint site URLs
 
-In Dynamics 365 apps, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site and document location records contain links to site collections, site, document libraries, and folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. These site and document location records are associated with Dynamics 365 apps records so that the documents for Dynamics 365 apps records can be stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
+In model-driven apps in Dynamics 365, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site and document location records contain links to site collections, site, document libraries, and folders in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. These site and document location records are associated with records so that the documents for records can be stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
- When the links between Dynamics 365 apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] break, you must validate and fix the links so that the Dynamics 365 apps records continue to point to the correct document libraries and folders for managing the documents.  
+ When the links between model-driven apps in Dynamics 365 and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] break, you must validate and fix the links so that the records continue to point to the correct document libraries and folders for managing the documents.  
   
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   
@@ -156,7 +156,7 @@ In Dynamics 365 apps, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-s
   
    3. Select the site URLs that you want to validate, and then click or tap **Validate**.  
   
-3. Dynamics 365 apps validates all the selected site URLs and their immediate subordinate site and document library URLs. It then displays the results in **Validating Sites**.  
+3. Model-driven apps in Dynamics 365 validate all the selected site URLs and their immediate subordinate site and document library URLs. It then displays the results in **Validating Sites**.  
   
 4. To fix a URL, open the site record, and enter the correct URL. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit site records](edit-existing-sharepoint-site-records.md).  
   
