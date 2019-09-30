@@ -54,7 +54,7 @@ A security profile determines the following:
 A combination of these three permissions can be configured to determine the user privileges for a specific data field.  
   
 > [!IMPORTANT]
->  Unless one or more security profiles are assigned to a security enabled field, only Dynamics 365 apps users with the system administrator security role will have access to the field.  
+>  Unless one or more security profiles are assigned to a security enabled field, only users with the system administrator security role will have access to the field.  
   
 <a name="BKMK_FLSexample"></a>   
 ## Example for restricting the mobile phone field for the Contact entity  
@@ -64,7 +64,7 @@ A combination of these three permissions can be configured to determine the user
 |------------------|------------|  
 |Vice presidents|Full. Can create, update, and view mobile phone numbers for contacts.|  
 |Sales Managers|Read-only. Can only view mobile phone numbers for contacts.|  
-|Salespersons and all other Dynamics 365 apps users|None. Cannot create, update or view mobile phone numbers for contacts.|  
+|Salespersons and all other users|None. Cannot create, update or view mobile phone numbers for contacts.|  
   
  To restrict this field, you would perform the following tasks.  
   
@@ -109,7 +109,7 @@ Configure the security profiles.
   
 3. Click **Save and Close**.  
   
-Any Dynamics 365 apps users not defined in the previously created field security profiles will not have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon for Dynamics 365 apps](../admin/media/admin-field-level-security-lock.png "Lock icon for Dynamics 365 apps") ********, indicating that the field is secured.  
+Any users not defined in the previously created field security profiles will not have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the field is secured.  
   
 <a name="BKMK_FLS_fields"></a>   
 ## Which fields can be secured?  
@@ -124,7 +124,7 @@ Although most attributes can be secured, there are system attributes, such as ID
 - createdon, EntityImage_Timestamp, modifiedon, OnHoldTime, overriddencreatedon
 -	statecode, statuscode
 
-You can view the entity metadata for your organization including which fields can be enabled for field security, by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/dynamics365/customer-engagement/developer/browse-your-metadata.md). You can also view the metadata for an uncustomized organization in the [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] file called EntityMetadata.xlsx included in the top-level folder of the SDK. [Download the Microsoft Dynamics 365 apps SDK](http://go.microsoft.com/fwlink/p/?LinkId=691153)  
+You can view the entity metadata for your organization including which fields can be enabled for field security, by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/dynamics365/customer-engagement/developer/browse-your-metadata.md). You can also view the metadata for an uncustomized organization in the [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] file called EntityMetadata.xlsx included in the top-level folder of the SDK. [Download the SDK](http://go.microsoft.com/fwlink/p/?LinkId=691153)  
    
 <a name="BKMK_FLSbestprac"></a>   
 ## Best practices when you use field security  

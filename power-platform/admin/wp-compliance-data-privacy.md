@@ -69,7 +69,7 @@ The following links point to detailed information to help you respond to DSR req
 |Common Data Service     |  [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md)     |
 |Microsoft Flow     | https://docs.microsoft.com/flow/gdpr-dsr-summary        |
 |Microsoft Accounts (MSAs)     | https://docs.microsoft.com/flow/gdpr-dsr-summary-msa        |
-|Dynamics 365     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
+|Model-driven apps in Dynamics 365     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
 
 ## Office 365 Security and Compliance Center
 

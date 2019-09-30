@@ -31,7 +31,7 @@ or <br />
 We're consolidating how you view, create, and manage environments. 
 
 - **Environments can now be provisioned in the Power Platform Admin center**: You can create environments in the Power Platform Admin center. Previously, environments could only be created in the Dynamics 365 Admin center and the PowerApps Admin center. 
-- **Admins can govern environment creation**: To limit environment creation to admins (Dynamics 365 Service admins, Office 365 Global admins, or Delegated admins), see [Control who can create environments in the Power Platform Admin center](control-environment-creation.md). Previously, limiting was done by controlling who had PowerApps P2 licenses.  
+- **Admins can govern environment creation**: To limit environment creation to admins (Service admins, Office 365 Global admins, or Delegated admins), see [Control who can create environments in the Power Platform Admin center](control-environment-creation.md). Previously, limiting was done by controlling who had PowerApps P2 licenses.  
 - **Admins can see all environments**: Admins can see all environments (environments with and without a database, and environments with apps) in the Power Platform Admin center. Previously, admins could not see environments created without a database.
 - **Trial environment provisioning**: You can create one Trial environment per user. Previously, you could create two per user.
 
@@ -67,7 +67,7 @@ To create an environment with a database, you need 1GB available database capaci
 
 ### Steps
 
-1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 Service admin, Office 365 Global admin, or Delegated admin).
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
@@ -92,15 +92,15 @@ To create an environment with a database, you need 1GB available database capaci
    |---------|---------|
    |Language     | The default language for this environment.        |
    |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps     | Select **Yes** and make a selection to automatically deploy apps such as Sales and Customer Service.      |
-   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for Enable Dynamics 365 apps for this setting to appear.        |
+   |Enable model-driven apps in Dynamics 365    | Select **Yes** and make a selection to automatically deploy apps such as Sales and Customer Service.      |
+   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for Enable model-driven apps in Dynamics 365 for this setting to appear.        |
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
    > ![](./media/new-environment-page2.png "Create new environment settings")
 
-## Create an environment with Dynamics 365 apps
-When you create an environment with a database, you can add Dynamics 365 apps such as Sales and Field Service.
+## Create an environment
+When you create an environment with a database, you can add model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.
 
 > [!NOTE]
 > Currently, apps can only be enabled for Production environments. You can create trials at [https://trials.dynamics.com](https://trials.dynamics.com/).
@@ -110,7 +110,7 @@ To create an environment with a database, you need 1GB available database capaci
 
 ### Steps
 
-1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 Service admin, Office 365 Global admin, or Delegated admin).
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
@@ -131,7 +131,7 @@ To create an environment with a database, you need 1GB available database capaci
 
 4. Enter the language and currency settings.
 
-5. Set **Enable Dynamics 365 apps** to **Yes**, and then select apps to include from the **Automatically deploy these apps** drop-down list.
+5. Set **model-driven apps in Dynamics 365** to **Yes**, and then select apps to include from the **Automatically deploy these apps** drop-down list.
 
 6. Select **Save**.
 
@@ -145,7 +145,7 @@ You can create an environment without a database and use your own data store.
 You need 1GB available database capacity.
 
 ### Steps
-1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 Service admin, Office 365 Global admin, or Delegated admin).
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 

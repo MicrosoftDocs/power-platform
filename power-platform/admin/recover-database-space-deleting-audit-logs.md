@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-When you enable auditing, [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps store the change history for transactions in the form of audit logs in the database. You can delete the old or unwanted logs to clean up the database space.  
+When you enable auditing, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, store the change history for transactions in the form of audit logs in the database. You can delete the old or unwanted logs to clean up the database space.  
   
 > [!CAUTION]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  

@@ -27,7 +27,7 @@ After a user is deleted by the global admin from the Microsoft 365 admin center,
 
 2. The user requests their personal data be deleted. The user record is deleted immediately.
 
-Once the user record is deleted from Active Directory, Dynamics 365 apps system admins can remove the user's personal data from all environments.
+Once the user record is deleted from Active Directory, system admins can remove the user's personal data from all environments.
 
 ## Remove user personal data via User form
 

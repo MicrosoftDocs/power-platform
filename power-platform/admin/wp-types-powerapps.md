@@ -35,7 +35,7 @@ When you share an app the user will need access to the resources the app depends
 
 ## Application players
 
-Both types of applications can be used as web applications from mainstream web browsers. Both types of applications can be discovered from web.powerapps.com. Dynamics 365 users can also discover them from home.dynamics.com application list as well as in the common application navigation list. Mobile users can run the application in a device installed player app on both phones and tablet devices. Currently, the player application for canvas apps
+Both types of applications can be used as web applications from mainstream web browsers. Both types of applications can be discovered from web.powerapps.com. Users can also discover them from home.dynamics.com application list as well as in the common application navigation list. Mobile users can run the application in a device installed player app on both phones and tablet devices. Currently, the player application for canvas apps
 
 ## Versions of the application
 

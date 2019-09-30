@@ -19,14 +19,14 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Microsoft Flow lets you create automated processes between your favorite apps and services. The ability to run flows from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps make it simple for users to combine a broad spectrum of services that can be initiated from within [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, such as messaging, social engagement, and document routing services.  
+Microsoft Flow lets you create automated processes between your favorite apps and services. The ability to run flows from within model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, make it simple for users to combine a broad spectrum of services that can be initiated from within Dynamics 365 apps, such as messaging, social engagement, and document routing services.  
 
 ![Lead record with Flow integration](media/flow-integration.png)
 
-[!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] environments use the same environment in which the environment resides. For more information about Flow environments, see [Using environments within Microsoft Flow](https://flow.microsoft.com/documentation/environments-overview-admin/)
+Environments use the same environment in which the environment resides. For more information about Flow environments, see [Using environments within Microsoft Flow](https://flow.microsoft.com/documentation/environments-overview-admin/)
   
 The Flow integration feature is not available in the following service or geographic regions.
-- Microsoft Dynamics 365 Government
+- Microsoft PowerApps US Government
 - Germany
 
 Once the Flow integration feature is enabled, the following privileges are added in the **Miscellaneous** section of the **Customization** tab for security roles.  
@@ -37,11 +37,11 @@ Once the Flow integration feature is enabled, the following privileges are added
   
 ## Prerequisites  
   
-- A Flow connection for [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps (recommended). [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Connectors](https://docs.microsoft.com/connectors/)  
+- A Flow connection for model-driven apps in Dynamics 365 (recommended). [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Connectors](https://docs.microsoft.com/connectors/)  
   
-- One or more flows created in the Flow environment to use with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using Dynamics 365 apps](https://flow.microsoft.com/documentation/connection-dynamics365/)  
+- One or more flows created in the Flow environment to use with model-driven apps in Dynamics 365. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using model-driven apps in Dynamics 365](https://flow.microsoft.com/documentation/connection-dynamics365/)  
   
-## Enable or disable Flow in your Dynamics 365 apps organization  
+## Enable or disable Flow in your organization  
  By default, all security roles allow users to run flows on the records that they have access to.  
   
  To enable or disable Flow integration in your organization, follow these steps.  

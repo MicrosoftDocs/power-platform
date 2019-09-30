@@ -41,7 +41,7 @@ To maintain the integrity of system data, you should check for duplicates regula
    > [!NOTE]
    >  What you see in this list depends on which duplicate detection rules are published. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up duplicate detection rules to keep your data clean](../admin/set-up-duplicate-detection-rules-keep-data-clean.md)  
   
-6. In the **Use Saved View** drop-down list, select a view if you want to limit the records searched to records in that view. For example, select Active Accounts. When you select a view, Dynamics 365 apps add the criteria to search on.  
+6. In the **Use Saved View** drop-down list, select a view if you want to limit the records searched to records in that view. For example, select Active Accounts. When you select a view, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, add the criteria to search on.  
   
 7. To further limit the records searched, click **Select** and then enter the criteria you want.  
   

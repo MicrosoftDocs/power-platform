@@ -28,19 +28,19 @@ Settings for the selected environment can be managed here.
 ![Environment settings](media/environment-settings.png)
 
 ## Environment settings are moving
-Across organization admin settings are gradually moving from the Dynamics 365 apps web client to the Power Platform Admin center. Until the move to the Power Platform Admin center is complete, you’ll still be able to manage settings in Dynamics 365 apps as usual.
+Across organization admin settings are gradually moving from the web client to the Power Platform Admin center. Until the move to the Power Platform Admin center is complete, you’ll still be able to manage settings in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, as usual.
 
 Many of these settings...
 
-![Dynamics 365 Settings](./media/old-settings.png)
+![Settings](./media/old-settings.png)
 
 ...are moving here.
 
 ![Environment settings](media/environment-settings-mini.png)
 
-Use the links on this page to manage organization-wide settings. App-specific settings will remain in Dynamics 365 apps and accessed through the app settings. 
+Use the links on this page to manage organization-wide settings. App-specific settings will remain in model-driven apps in Dynamics 365 and accessed through the app settings. 
 
-## Settings in Dynamics 365 apps
+## App settings 
 
 Getting to app feature settings can vary based on the type of app you're using.
 

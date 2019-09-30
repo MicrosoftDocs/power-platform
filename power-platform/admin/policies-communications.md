@@ -18,39 +18,39 @@ search.app:
 # Policies and Communications for service incidents
 
 ## Introduction
-Microsoft regularly communicates work done to maintain and update Dynamics 365 apps  to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
+Microsoft regularly communicates work done to maintain and update Dmodel-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
   
-If you’re not sure who your Dynamics 365 apps admin is, see [Find your Dynamics 365 apps administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
+If you’re not sure who your admin is, see [Find your administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
   
  If you want to add additional recipients who receive email communications, see [Manage email notifications to admins](manage-email-notifications.md).  
   
- If you’re a [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps admin, you can also see the latest status of updates and incidents in the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
+ If you’re an admin, you can also see the latest status of updates and incidents in the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
   
 ## Scheduled system updates
 
-The Dynamics 365 apps team regularly performs security updates and minor service updates on a weekly basis.  There are also two major events in April and October that are delivered through the weekly update mechanism, and details can be found in the [Business Applications Release Notes](https://docs.microsoft.com/dynamics365/release-plans/). 
+The Dynamics 365 team regularly performs security updates and minor service updates on a weekly basis.  There are also two major events in April and October that are delivered through the weekly update mechanism, and details can be found in the [Business Applications Release Notes](https://docs.microsoft.com/dynamics365/release-plans/). 
 
 <a name="bkmk_SecurityUpdates"></a>   
 
 ### Security updates  
-The Dynamics 365 apps team regularly performs the following to ensure the security of the system:  
+The Dynamics 365 team regularly performs the following to ensure the security of the system:  
   
 - Scans of the service to identify possible security vulnerabilities  
 - Assessments of the service to ensure that key security controls are operating effectively  
 - Evaluations of the service to determine exposure to any vulnerabilities identified by the Microsoft Security Response Center (MSRC), which regularly monitors external vulnerability awareness sites  
   
-The Dynamics 365 apps team identifies and tracks any identified issues, and takes swift action to mitigate risks when necessary.  
+The Dynamics 365 team identifies and tracks any identified issues, and takes swift action to mitigate risks when necessary.  
   
 **How do I find out about security updates?**  
   
-Because the Dynamics 365 apps team strives to apply risk mitigations in a way that doesn’t require service downtime, Dynamics 365 apps administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it is considered planned maintenance, and will be posted with the estimated impact duration, and the window when the work will occur.
+Because the Dynamics 365 team strives to apply risk mitigations in a way that doesn’t require service downtime, administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it is considered planned maintenance, and will be posted with the estimated impact duration, and the window when the work will occur.
   
- For more information about Dynamics 365 apps security, see [Dynamics 365 apps Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
+ For more information about security, see [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
  
  <a name="bkmk_ServiceUpdates"></a>   
 
 ### Major release events
-We are transforming how we do service updates for Dynamics 365 apps. We will deliver two major release events per year (April and October), offering new capabilities and functionality. These updates will be backward compatible, so your apps and customizations will continue to work post update. New features with major, disruptive changes to the user experience are off by default. This means administrators will be able to first test then enable these features for their organization.
+We are transforming how we do service updates. We will deliver two major release events per year (April and October), offering new capabilities and functionality. These updates will be backward compatible, so your apps and customizations will continue to work post update. New features with major, disruptive changes to the user experience are off by default. This means administrators will be able to first test then enable these features for their organization.
 
 In addition to the two major updates, we will continue to deploy regular performance and reliability improvement updates throughout the year. We are phasing deployments over several weeks following safe deployment practices and monitoring updates closely for any issues.  Notifications about when the major release events are enabled in each geographic region are published in the Message Center.
 
@@ -76,12 +76,12 @@ Minor service updates contain customization changes to support new features, pro
 <a name="bkmk_PlannedMaintenance"></a>
 
 ### Planned maintenance  
-Planned maintenance includes updates and changes to the Dynamics 365 apps service to provide increased stability, reliability, and performance. These changes can include:  
+Planned maintenance includes updates and changes to the service to provide increased stability, reliability, and performance. These changes can include:  
   
 - Hardware or infrastructure updates  
 - Integrated services, such as a new version of [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] or [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]  
-- Dynamics 365 apps service changes and software updates  
-- Minor service updates to Dynamics 365 apps that occur several times per year. See [Service updates](https://support.microsoft.com/help/2925359/microsoft-dynamics-crm-online-releases).  
+- Service changes and software updates  
+- Minor service updates that occur several times per year. See [Service updates](https://support.microsoft.com/help/2925359/microsoft-dynamics-crm-online-releases).  
  
 ### Maintenance timeline
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
@@ -132,17 +132,17 @@ To receive communications regarding incidents, updates, or features, reach out t
 <a name="bkmk_UnplannedMaintenance"></a>  
 
 ### Unplanned maintenance  
-Dynamics 365 apps inevitably encounters unplanned issues that require changes to ensure availability. Microsoft strives to provide as much notification as possible during these events. Because these events can’t be predicted, they are not considered planned maintenance.
+Model-driven apps in Dynamics 365 inevitably encounters unplanned issues that require changes to ensure availability. Microsoft strives to provide as much notification as possible during these events. Because these events can’t be predicted, they are not considered planned maintenance.
 
-When this happens, your organization receives an “Unplanned Maintenance” email. These emails go out to all Dynamics 365 apps System Administrators in every Dynamics 365 apps environment that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities on the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see  [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
+When this happens, your organization receives an “Unplanned Maintenance” email. These emails go out to all System Administrators in every environment that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities on the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see  [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).  
 
 ## Minor Service incidents  
 A service incident occurs when your organization is inaccessible or you’re unable to use the service or one of its components. Examples include:  
   
-- Page not found or 404 error when trying to access Dynamics 365 apps
+- Page not found or 404 error when trying to access model-driven apps in Dynamics 365
 - Unable to sign into your organization
-- Slow performance for Dynamics 365 apps
-- Any Dynamics 365 apps are unavailable or produce errors when accessing
+- Slow performance for model-driven apps in Dynamics 365
+- Any model-driven apps in Dynamics 365 are unavailable or produce errors when accessing
   
 ### Major service incidents  
 A major service incident occurs when multiple organizations can’t access the service, there is significant degradation, or Microsoft Azure is experiencing degraded functionality. 
@@ -151,7 +151,7 @@ A major service incident occurs when multiple organizations can’t access the s
 
 Check the [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) to view the status of the service.  If you are experiencing an issue that is not displayed in the Service health dashboard you can open a ticket [here](https://admin.powerplatform.microsoft.com/).
 
-If the Service health dashboard is not available, the status of Dynamics 365 apps can be reviewed at the [backup status site](https://status.office.com/).
+If the Service health dashboard is not available, the status of model-driven apps in Dynamics 365 can be reviewed at the [backup status site](https://status.office.com/).
 
 If the service incident breaches your *Service Level Agreement*, you can claim a billing credit according to the conditions of your [Online Service Terms outlined in our Product licensing](https://www.microsoft.com/licensing/product-licensing/products). 
 
@@ -164,7 +164,7 @@ You can see the Service incident marked as Service restored in your Microsoft 36
 
 **Post-Incident Report**
 
-When there is a major service incident that impacts multiple customers, the Dynamics 365 apps  team publishes a post-incident report (PIR) after 5 business days to the Microsoft 365 Service health dashboard. This report summarizes the following details about the incident: 
+When there is a major service incident that impacts multiple customers, the Dynamics 365 team publishes a post-incident report (PIR) after 5 business days to the Microsoft 365 Service health dashboard. This report summarizes the following details about the incident: 
   
 - Summary  
 - User Experience  
@@ -174,12 +174,12 @@ When there is a major service incident that impacts multiple customers, the Dyna
 - Next steps  
 
 ### Communications for releases, package deployments, and awareness
-The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display information specific to managing the Dynamics 365 apps service, including changes with the service and releases or feature offerings. The messaging can be informational in nature, drive specific actions, or both. The target audience for these communications are Dynamics 365 apps System Administrators or individuals designated to run the service. 
+The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display information specific to managing the service, including changes with the service and releases or feature offerings. The messaging can be informational in nature, drive specific actions, or both. The target audience for these communications are System Administrators or individuals designated to run the service. 
  
  <a name="BKMK_PostPurchase"></a>   
 
 ### Post-purchase customer lifecycle communications  
-Once a customer has purchased Dynamics 365 apps, we send a series of email communications to Dynamics 365 apps administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of Dynamics 365 apps.  This information can be found in the [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) as well.
+Once a customer has purchased model-driven apps in Dynamics 365, we send a series of email communications to administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of model-driven apps in Dynamics 365.  This information can be found in the [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) as well.
   
 ### Notice about Online Policies
 Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/legal/intellectualproperty/onlinedisclaimer.aspx).

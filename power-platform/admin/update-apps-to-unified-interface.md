@@ -17,7 +17,7 @@ search.app:
 ---
 # Update your apps to Unified Interface
 
-When you enable Unified Interface Only, all your apps, including those designed for the legacy web client, run in Unified Interface all the time. Environments with legacy web client apps will show a notification on the Apps home page, prompting System Administrators to update those apps to Unified Interface, as shown below:
+When you enable Unified Interface Only, all your apps, including those designed for the legacy web client, run in Unified Interface all the time. Environments with legacy web client apps will show a notification on the home page, prompting System Administrators to update those apps to Unified Interface, as shown below:
 
 "You are using apps designed for the legacy web client. For best results, update your apps to Unified Interface."
 

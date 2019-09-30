@@ -17,23 +17,23 @@ search.app:
 ---
 # Geo to geo migrations
 
-We continue to open new datacenter regions for [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] for business services, and to add datacenters to existing regions.  
+We continue to open new datacenter regions for business services, and to add datacenters to existing regions.  
 
- The Geo Migration feature for [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] will allow customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of a [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] environment doesn’t move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they are separate services. Your [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] environment will still appear in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
+ The Geo Migration feature will allow customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of an environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the Common Data Service environment doesn’t move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they are separate services. Your environment will still appear in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
 
 > [!IMPORTANT]
 > Support for geo migration is limited and generally not available.
 >
->  For versions prior to Dynamics 365 apps version 9.0, you can move individual [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] environments from one geographical region to another. When you do so, your tenant becomes a multiregional tenant. Regional features are enabled in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
+>  For versions prior to version 9.0, you can move individual environments from one geographical region to another. When you do so, your tenant becomes a multiregional tenant. Regional features are enabled in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
 > 
 >  To request a regional migration, please contact your account manager or  see [Technical Support](get-help-support.md).  
 > 
->  Dynamics 365 apps version 9.0 does not currently support regional migration. Check back later for availability. 
+>  Version 9.0 does not currently support regional migration. Check back later for availability. 
 
 ## Impact of migrating  
  Moving an environment to a different region changes your tenant to be multiregional - enabling regional features in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
 
- The other significant change is to your organization URL. Each of the [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] regional datacenters has a unique identifier in the URL. When your organization is moved from one regional datacenter to another this identifier will change. For example:  
+ The other significant change is to your organization URL. Each of the regional datacenters has a unique identifier in the URL. When your organization is moved from one regional datacenter to another this identifier will change. For example:  
 
 -   South America (LATAM/SAM) = .crm2.dynamics.com  
 
@@ -51,11 +51,11 @@ We continue to open new datacenter regions for [!INCLUDE[pn_crm_online_shortest]
 
 -   United Kingdom (UK) = *.crm11.dynamics.com  
 
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in to Dynamics 365 apps](sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Organization Service](/dynamics365/customer-engagement/developer/org-service/discover-url-organization-organization-service.md)
+ [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in](sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Organization Service](/dynamics365/customer-engagement/developer/org-service/discover-url-organization-organization-service.md)
 
  For example, if your existing organization URL is https://myorg.crm<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be https://myorg.crm<strong>6</strong>.dynamics.com.  
 
- You’ll need to update any direct references to your [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)] organization URL.  
+ You’ll need to update any direct references to your organization URL.  
 
 > [!NOTE]
 >  Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won’t be available. In the unlikely event this happens, we will work with you to decide how to proceed.  
@@ -64,7 +64,7 @@ We continue to open new datacenter regions for [!INCLUDE[pn_crm_online_shortest]
 
  The following topics have information that could be helpful to understand the move process:  
 
--   [New datacenter regions for Dynamics 365 apps](new-datacenter-regions.md)  
+-   [New datacenter regions](new-datacenter-regions.md)  
 
 -   [About Microsoft Cloud Australia](about-microsoft-cloud-australia.md)  
 
@@ -82,10 +82,10 @@ We continue to open new datacenter regions for [!INCLUDE[pn_crm_online_shortest]
 
 |                         |                                                         Before the move                                                          |                                                                                                                                                                                                                                                  During the move                                                                                                                                                                                                                                                  |                                                                                                                                                   After the move                                                                                                                                                   |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **What Microsoft does** | **Notification**<br /><br /> Your support representative or Account Manager will work with you to request a move and scheduling. | **Cut-over**<br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend.<br /><br /> There is a step that will require your involvement, which is to re-enter the encryption key in [!INCLUDE[pn_crm_online_shortest](../includes/pn-crm-online-shortest.md)]. This can happen at a time that suits you but the migration process will be on hold until you complete this action. | **Notification and support**<br /><br /> You will be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your geo has migrated you can perform the post requisite steps - primarily changing your new URLs with any associated Dynamics 365 apps plugins or services. |
+| **What Microsoft does** | **Notification**<br /><br /> Your support representative or Account Manager will work with you to request a move and scheduling. | **Cut-over**<br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend.<br /><br /> There is a step that will require your involvement, which is to re-enter the encryption key. This can happen at a time that suits you but the migration process will be on hold until you complete this action. | **Notification and support**<br /><br /> You will be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your geo has migrated you can perform the post requisite steps - primarily changing your new URLs with any associated plugins or services. |
 
  We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](http://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 
 ### See also  
- [Add and edit multiregional environments](/dynamics365/customer-engagement/admin/add-edit-multiregional-environments.md)   
- [Manage Microsoft Dynamics 365 apps (online) environments](/dynamics365/customer-engagement/admin/manage-online-environments.md)
+ [Add and edit multiregional environments](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md)   
+ [Manage environments](/dynamics365/customer-engagement/admin/manage-online-instances.md)

@@ -49,7 +49,7 @@ An email template is attached to an email activity after the activity is created
 8. Type the text you want to send in this message. Use the Formatting toolbar to edit the text.  
   
    > [!TIP]
-   > - Although you cannot insert images or HTML directly into [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps email messages or email templates, you can use the copy feature in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] to copy an image from a website and paste it into the email message or email template.  The image is available as long as the website is accessible.  
+   > - Although you cannot insert images or HTML directly into email messages or email templates, you can use the copy feature in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] to copy an image from a website and paste it into the email message or email template.  The image is available as long as the website is accessible.  
    > - To include a hyperlink in an email template, type the URL including the http://, for example, http://contoso.com. Do not include a period or comma or a space after the URL or the link will break. Select the link text and select **Make this a Hyperlink** (![Make this a Hyperlink](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
    > 
    >    A link is automatically added to the  URL and the text is underlined and changed to blue.  
@@ -61,10 +61,10 @@ An email template is attached to an email activity after the activity is created
    >      The text and data fields will be converted to a hyperlink. For example: \<a href="http://contoso.com/q?{!User : City;}">http://contoso.com/q?{!User : City;}\</a>.  
    > 
    >      The hyperlink text will appear as a link when the template is used in an email.  
-   > - There is no spell check built into [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. There might be third-party solutions available. For more information, visit [Microsoft Dynamics Solution Finder](https://www.microsoft.com/dynamics365/partners).  
+   > - There is no spell check built into model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. There might be third-party solutions available. For more information, visit [Microsoft Dynamics Solution Finder](https://www.microsoft.com/dynamics365/partners).  
    > - The Formatting toolbar has limited fonts and font sizes. However, you can copy and paste content from [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. This allows you to take advantage of features such as spell checking and some advanced text formatting. To single-space a line of text, at the end of the line press **Shift+Enter**.  
   
-9. To insert data fields to display information such as a customer's name or data from a quote, from a [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps record, select **Insert/Update**, and then in the **Data Field Values** dialog box, select **Add**.  
+9. To insert data fields to display information such as a customer's name or data from a quote, from a model-driven apps in Dynamics 365 record, select **Insert/Update**, and then in the **Data Field Values** dialog box, select **Add**.  
   
 10. In the **Add Data Value** dialog box, select the **Record type** and **Field**, and then select **OK**.  
   
@@ -80,7 +80,7 @@ An email template is attached to an email activity after the activity is created
 > [!NOTE]
 > - To change a shared template to a personal one or a personal template to a shared one, on the template form, on the **Actions**![action](../admin/media/action-button.png "action") menu, select **Revert to Personal Template**, or select **Make Template Available to Organization**.  
 > - If you use an email template as a signature in another template, insert the signature template first. Otherwise, the Subject line will be overwritten.  
-> - If you need to back up your templates, or export them for use in a different implementation of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md).  
+> - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md).  
   
 ### See also  
 

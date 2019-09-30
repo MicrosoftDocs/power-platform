@@ -1,6 +1,6 @@
 ---
-title: "Turn duplicate detection rules on or off for the whole organization for Dynamics 365 apps | MicrosoftDocs"
-description: Turn duplicate detection rules on or off for the whole organization for Dynamics 365 apps
+title: "Turn duplicate detection rules on or off for the whole organization  | MicrosoftDocs"
+description: Turn duplicate detection rules on or off for the whole organization 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -43,9 +43,9 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
        > [!IMPORTANT]
        >  Duplicates aren’t detected when a user merges two records, activates or deactivates a record, or saves a completed activity.  
   
-   - **When [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] goes from offline to online**  
+   - **When Dynamics 365 for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] goes from offline to online**  
   
-        For users of [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)], the system detects duplicates when the user synchronizes their data after working offline, as long as users have enabled duplicate detection in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)]. To enable duplicate detection in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)], select **File** > **Dynamics 365**  > **Options**. Choose the **Local Data** tab, and then select the **Enable duplicate detection during offline to online synchronization** check box.  
+       For users of Dynamics 365 for [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)], the system detects duplicates when the user synchronizes their data after working offline, as long as users have enabled duplicate detection in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)]. To enable duplicate detection in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)], select **File** > **Dynamics 365**  > **Options**. Choose the **Local Data** tab, and then select the **Enable duplicate detection during offline to online synchronization** check box.  
   
    - **During data import**  
   
@@ -55,5 +55,5 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
   
 ### See also  
  [Set up duplicate detection rules to keep your data clean](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean)   
- [Frequently asked questions about synchronizing records between Microsoft Dynamics 365 apps and Microsoft Outlook](https://docs.microsoft.com/dynamics365/customer-engagement/admin/frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook)   
+ [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Microsoft Outlook](https://docs.microsoft.com/dynamics365/customer-engagement/admin/frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook)   
  [Run bulk system jobs to detect duplicate records](https://docs.microsoft.com/dynamics365/customer-engagement/admin/run-bulk-system-jobs-detect-duplicate-records)

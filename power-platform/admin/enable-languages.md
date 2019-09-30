@@ -23,9 +23,9 @@ The following table shows tasks that are associated with changing regional and l
 
 |Task |  Description   |
 |--------|---------|
-|  **Set the base language**  |  The base language determines default settings for regional and language options in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. After the base language is set, you can’t change it. |
+|  **Set the base language**  |  The base language determines default settings for regional and language options in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. After the base language is set, you can’t change it. |
 | **Enable or disable languages** | You can enable or disable available languages in the **Settings** area. |
-|  **Add and remove currencies**  | Similar to setting the base language, you select your organization's base currency during the purchasing process for a subscription to [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. After the base currency is set, you can’t change it.<br /><br /> However, if your organization uses more than one currency to track financial transactions, you can add currencies. |
+|  **Add and remove currencies**  | Similar to setting the base language, you select your organization's base currency during the purchasing process for a subscription. After the base currency is set, you can’t change it.<br /><br /> However, if your organization uses more than one currency to track financial transactions, you can add currencies. |
 | **Deactivate or activate currency records** |   You can’t delete currency records that are being used by other records, such as opportunities or invoices. However, you can deactivate currency records so they won’t be available for future transactions. |
 
 ## Enable the language  
@@ -37,7 +37,7 @@ Make sure you have the System Administrator or System Customizer security role o
 - Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
- Before users can start using a Language Pack to display a language, the Language Pack must be enabled in your [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps organization.  
+ Before users can start using a Language Pack to display a language, the Language Pack must be enabled in your organization.  
 
 1. Sign in to the Power Platform Admin center. 
 

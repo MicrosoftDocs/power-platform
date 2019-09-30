@@ -40,7 +40,7 @@ Access to PowerApps and Flow starts with having a license, the type of license a
 |Plan  |Description  |
 |---------|---------|
 |Office 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
-|Dynamics 365 Included     | This allows users to customize and extend Dynamics 365 apps they already have.  |
+|Dynamics 365 Included     | This allows users to customize and extend model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, they already have.  |
 |PowerApps P1     | This allows makes enterprise connectors and Common Data Service accessible for use. |
 |PowerApps P2     | This allows users to use robust business logic across application types and administration capabilities.  |
 |PowerApps Community | This allows a user to use PowerApps, Flow, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
@@ -278,7 +278,7 @@ It’s well understood that monitoring as a critical aspect of managing software
 
 ### Review the audit trail
 
-[Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dynamics 365 and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
+[Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
 ### Download the PowerApps and Microsoft Flow license report
 

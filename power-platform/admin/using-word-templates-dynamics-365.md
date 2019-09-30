@@ -20,7 +20,7 @@ search.app:
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 
- After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, with one click users can generate standardized documents automatically populated with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data. This feature has some special considerations you should know about to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.  
+ After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, with one click users can generate standardized documents automatically populated with data. This feature has some special considerations you should know about to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.  
 
 > [!TIP]
 > [![Video symbol](../admin/media/video-thumbnail-4-crm.png "Video symbol")](http://go.microsoft.com/fwlink/p/?LinkId=404225) Check out the following video: [Create documents directly from Dynamics CRM by using Word and Excel templates (2:38)](http://go.microsoft.com/fwlink/p/?LinkID=723604)  
@@ -34,19 +34,19 @@ search.app:
 |                                                                          Area                                                                           | [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Version |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 |                                    Creating a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template                                    |                              2013, 2016                               |
-| Using a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] document generated in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps |                           2010, 2013, 2016                            |
+| Using a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] document generated in model-driven apps in Dynamics 365 |                           2010, 2013, 2016                            |
 
 > [!NOTE]
 > Macro-enabled Word documents (.docm) are not supported.
 
- Follow the steps in this topic to successfully create and use [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+ Follow the steps in this topic to successfully create and use [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates in model-driven apps in Dynamics 365.  
 
 <a name="BKMK_AboutSelectEntity"></a>   
 
 ## Step 1: Create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
 
 ### Where you can create a template  
- There are three places in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps where you can create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template:  
+ There are three places in model-driven apps in Dynamics 365 where you can create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template:  
 
 - **From the Settings page**. Go to **Settings** > **Templates** > **Document Templates** > **New**(![New or Add button](../admin/media/nb-ua-r1-plus.png "New or Add button")). You’ll need sufficient permissions to access to the Settings page, such as System Administrator or System Customizer.  
 
@@ -54,7 +54,7 @@ search.app:
 
 - **From a list of records**. For example, go to **Sales** > **Client_Accounts** > **My Active Accounts**. Select a single account, and then click **More** (**…**) > **Word Templates** > **Create Word Template**.  
 
-  ![Create a Word template from a Dynamics 365 apps entity](../admin/media/word-template-create-from-entity.png "Create a Word template from a Dynamics 365 apps entity")  
+  ![Create a Word template from an entity](../admin/media/word-template-create-from-entity.png "Create a Word template from an entity")  
 
 > [!TIP]
 >  To delete personal document templates, do the following:  
@@ -73,7 +73,7 @@ search.app:
  ![Select entities for the Word template](../admin/media/word-template-select-entities.png "Select entities for the Word template")  
 
 ### What are 1:N, N:1, and N:N relationships?  
- This screen requires an understanding of your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data structure. Your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrator or customizer can provide information about entity relationships. For admin content, see: [Create and edit entity relationships](/dynamics365/customer-engagement/customize/create-edit-entity-relationships.md).  
+ This screen requires an understanding of your model-driven apps in Dynamics 365 data structure. Your administrator or customizer can provide information about entity relationships. For admin content, see: [Create and edit entity relationships](/dynamics365/customer-engagement/customize/create-edit-entity-relationships.md).  
 
  Here are some example relationships for the Account entity.  
 
@@ -83,7 +83,7 @@ search.app:
 |![An N:1 entity relationship](../admin/media/word-template-n-1-entity-relationship.png "An N:1 entity relationship")|A lead, account, or contact can have multiple accounts.|  
 |![An N:N entity relationship](../admin/media/word-template-n-n-entity-relationship.png "An N:N entity relationship")|An account can have multiple marketing lists.<br /><br /> A marketing list can have multiple accounts.|  
 
- The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Only select relationships you need to add [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
+ The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Only select relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 
 > [!NOTE]
 >  To ensure documents download in a timely matter, there is an upper limit of 100 for the number of related records returned for each relationship. For example, if you’re exporting a template for an account, and you want to include a list of its contacts, the document will return at most 100 of the account’s contacts.  
@@ -102,7 +102,7 @@ search.app:
 
  ![The Word template when first opened](../admin/media/word-template-first-open.png "The Word template when first opened")  
 
- To see and add [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps XML data, you need to enable the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Developer tab.  
+ To see and add model-driven apps in Dynamics 365 XML data, you need to enable the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] Developer tab.  
 
 1. Go to **File** > **Options** > **Customize Ribbon**, and then enable **Developer**.  
 
@@ -116,7 +116,7 @@ search.app:
 
 <a name="BKMK_Important"></a>   
 ## Important! A known issue and how to avoid it  
- There’s a known issue with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. In the next section, you’ll be adding XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
+ There’s a known issue with model-driven apps in Dynamics 365 apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. In the next section, you’ll be adding XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 
 > [!WARNING]
 >  A few things  can cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze, requiring you to use [!INCLUDE[pn_ms_TaskManager_short](../includes/pn-ms-taskmanager-short.md)] to stop [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]:  
@@ -128,9 +128,9 @@ search.app:
 
 #### Only add fields as Plain Text or Picture  
 
-1. You use the XML Mapping Pane to add [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps entity fields to your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Be sure to only add fields as **Plain Text** or **Picture**.  
+1. You use the XML Mapping Pane to add entity fields to your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Be sure to only add fields as **Plain Text** or **Picture**.  
 
-   ![Insert the Dynamics 365 apps field as Plain Text](../admin/media/word-template-insertfield-plain-text.png "Insert the Dynamics 365 apps field as Plain Text")  
+   ![Insert the field as Plain Text](../admin/media/word-template-insertfield-plain-text.png "Insert the field as Plain Text")  
 
 #### Do not make any textual changes to the added content control  
 
@@ -159,7 +159,7 @@ search.app:
 <a name="BKMK_DefineTemplate"></a>  
 
 ## Step 3: Define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
- Use the XML Mapping Pane to define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template with [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps entity fields.  
+ Use the XML Mapping Pane to define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template with entity fields.  
 
 1. In your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template, click **Developer** > **XML Mapping Pane**.  
 
@@ -169,20 +169,20 @@ search.app:
 
    ![The default XML Mapping schema](../admin/media/word-template-upload-dynamics-365.png "The default XML Mapping schema")  
 
-2. Select the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps XML schema. It will begin with “urn:microsoft-crm/document-template/”.  
+2. Select the XML schema. It will begin with “urn:microsoft-crm/document-template/”.  
 
-   ![Select the Dynamics 365 apps XML schema](../admin/media/word-template-select-xml-schema.png "Select the Dynamics 365 apps XML schema")  
+   ![Select the XML schema](../admin/media/word-template-select-xml-schema.png "Select the XML schema")  
 
    > [!IMPORTANT]
    >  If you have frequent accidental edits that cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze or have performance degradation, be sure to turn off the AutoCorrect options according to the section: “A known issue and how to avoid it”.  
 
-3. Expand the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps entity, right-click the entity field, and then click **Insert Content Control** > **Plain Text**.  
+3. Expand the entity, right-click the entity field, and then click **Insert Content Control** > **Plain Text**.  
 
-   ![Insert the Dynamics 365 apps field as Plain Text](../admin/media/word-template-insertfield-plain-text.png "Insert the Dynamics 365 apps field as Plain Text")  
+   ![Insert the field as Plain Text](../admin/media/word-template-insertfield-plain-text.png "Insert the field as Plain Text")  
 
-   The [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps entity field is added to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
+   The entity field is added to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 
-   ![The Dynamics 365 apps field is inserted into the Word template](../admin/media/word-template-insert-field.png "The Dynamics 365 apps field is inserted into the Word template")  
+   ![The field is inserted into the Word template](../admin/media/word-template-insert-field.png "The apps field is inserted into the Word template")  
 
    Add additional entity fields, add descriptive labels and text, and format the document.  
 
@@ -204,22 +204,22 @@ search.app:
 
    ![Set the table row to repeating](../admin/media/word-template-set-table-row-repeating.png "Set the table row to repeating")  
 
-   When you use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to create a document, the table will populate with multiple rows of data.  
+   When you use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template in model-driven apps in Dynamics 365 to create a document, the table will populate with multiple rows of data.  
 
-   When the template has the fields and formatting you want, save it and upload it into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+   When the template has the fields and formatting you want, save it and upload it into model-driven apps in Dynamics 365.  
 
 <a name="BKMK_Upload"></a>  
 
-## Step 4: Upload the Word template back into Dynamics 365 apps 
-When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template built the way you want, save it so you can upload it into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+## Step 4: Upload the Word template back into model-driven apps in Dynamics 365 
+When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template built the way you want, save it so you can upload it into model-driven apps in Dynamics 365.  
 
  Access to the newly created Word template depends on how you uploaded it and to the access granted to the security role. Be sure to check out [Use Security Roles to control access to templates](../admin/using-word-templates-dynamics-365.md#BKMK_SecurityRoles).  
 
- [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrators can use the Settings page to upload the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template into [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. A template uploaded in Settings is available to all users in your [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps organization.  
+ Administrators can use the Settings page to upload the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template into model-driven apps in Dynamics 365. A template uploaded in Settings is available to all users in your organization.  
 
-### For admins: Upload the Word template into Dynamics 365 apps 
+### For admins: Upload the Word template into model-driven apps in Dynamics 365
 
-1. In [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, go to **Settings** > **Templates** > **Document Templates**.  
+1. Go to **Settings** > **Templates** > **Document Templates**.  
 
 2. Click **Upload Template**.  
 
@@ -231,15 +231,15 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
    Non-admin users can upload a template for their own use from a list of records.  
 
-### For non-admins or admins wanting to create a personal template: Upload the Word template into Dynamics 365 apps 
+### For non-admins or admins wanting to create a personal template: Upload the Word template into model-driven apps in Dynamics 365
 
-1. In [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps, open a page with a list of records, for example, the list of customer accounts in Sales.  
+1. Open a page with a list of records, for example, the list of customer accounts in Sales.  
 
 2. Select a single item such as an account, click **More** (**…**) > **Word Templates** > **Create Word Template**.  
 
 3. Click **Word Template** > **Upload**.  
 
-   ![Click Upload to bring the template into Dynamics 365 apps](../admin/media/word-template-upload-button.png "Click Upload to bring the template into Dynamics 365 apps")  
+   ![Click Upload to bring the template into model-driven apps in Dynamics 365](../admin/media/word-template-upload-button.png "Click Upload to bring the template into model-driven apps in Dynamics 365")  
 
 4. Drag the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file in the dialog box or browse to the file.  
 
@@ -258,16 +258,16 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
    1. Only templates built for the selected record type (entity) will be displayed. For example, if you open an opportunity record, you will not see a template you created with the Account entity.  
 
-   2. You need to refresh [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps to see the template. Either refresh your browser or close and reopen [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps.  
+   2. You need to refresh model-driven apps in Dynamics 365 to see the template. Either refresh your browser or close and reopen model-driven apps in Dynamics 365.  
 
-   After you select your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template, [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps creates a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] document from the record you selected.  
+   After you select your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template, model-driven apps in Dynamics 365 create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] document from the record you selected.  
 
 <a name="BKMK_SampleTemplates"></a>  
 
 ### Try out the sample [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates  
- There are five [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates included with [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)].  
+ There are five [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates included with model-driven apps in Dynamics 365.  
 
- ![These templates are included with Dynamics 365 apps](../admin/media/template-bundled.png "These templates are included with Dynamics 365 apps")  
+ ![These templates are included with model-driven apps in Dynamics 365](../admin/media/template-bundled.png "These templates are included with model-driven apps in Dynamics 365")  
 
  The sample [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates were created with a particular record type (entity). You’ll only be able to apply the template to records of the same record type.  
 
@@ -288,16 +288,16 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
    Open the newly-created [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template and give it a look.  
 
 > [!NOTE]
->  You can review but not edit templates that are included in [!INCLUDE[pn_crm_2016](../includes/pn-crm-2016.md)].  
+>  You can review but not edit templates that are included in model-driven apps in Dynamics 365.  
 
 ## Additional considerations  
 
 <a name="BKMK_SecurityRoles"></a> 
 
 ### Use Security Roles to control access to templates  
- Dynamics 365 apps administrators can control access to Word templates with some granularity. For example, you can give salespeople Read but not Write access to a Word template.  
+ Administrators can control access to Word templates with some granularity. For example, you can give salespeople Read but not Write access to a Word template.  
 
-1. In Dynamics 365 apps, click **Settings** > **Security** > **Security Roles**.  
+1. Click **Settings** > **Security** > **Security Roles**.  
 
 2. Select a role, and then click the Business Management tab.  
 
@@ -308,7 +308,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
    ![Adjust access using the security role](../admin/media/excel-template-restrict-access-using-security-role.png "Adjust access using the security role")  
 
 ### Lists in created documents are not in the same order as records  
- Lists of records created from a custom template may not appear in the same order in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] documents as the order in [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. Records are listed in the order of the time and date they were created.  
+ Lists of records created from a custom template may not appear in the same order in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] documents as the order in model-driven apps in Dynamics 365. Records are listed in the order of the time and date they were created.  
 
 ### See also  
  [Analyze your data with Excel templates](../admin/analyze-your-data-with-excel-templates.md)

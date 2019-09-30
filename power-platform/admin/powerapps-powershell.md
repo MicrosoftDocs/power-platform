@@ -72,7 +72,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 ### Prerequisite
 Users with a valid PowerApps license can perform the operations in these cmdlets, but they will only have access to the resources (for example, apps, flows, etc.) that have been created or shared with them.
 
-Check back for the availability of operation and access permissions for Dynamics 365 and upcoming Power Platform admin roles.
+Check back for the availability of operation and access permissions for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and upcoming Power Platform admin roles.
 
 
 ### Cmdlet list - Maker Cmdlets
@@ -102,7 +102,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 
 - [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user’s resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
-- Check back for the availability of operation and access permissions for Dynamics 365 admin and the upcoming Power Platform admin role.
+- Check back for the availability of operation and access permissions for admin and the upcoming Power Platform admin role.
 
 ### Cmdlet list - Admin Cmdlets
 

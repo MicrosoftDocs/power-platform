@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-To accommodate changes in sales territories or the representatives that are assigned to each territory, you can add or remove territory members in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+To accommodate changes in sales territories or the representatives that are assigned to each territory, you can add or remove territory members.  
   
 1. [!INCLUDE[proc_settings_bus_management](../includes/proc-settings-bus-management.md)]  
   

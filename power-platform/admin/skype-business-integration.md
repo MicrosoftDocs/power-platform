@@ -19,12 +19,12 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] (formerly known as [!INCLUDE[pn_Microsoft_Lync](../includes/pn-microsoft-lync.md)]) or [!INCLUDE[pn_skype](../includes/pn-skype.md)], you can take advantage of connectivity features like click-to-call or checking user availability from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
+If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] (formerly known as [!INCLUDE[pn_Microsoft_Lync](../includes/pn-microsoft-lync.md)]) or [!INCLUDE[pn_skype](../includes/pn-skype.md)], you can take advantage of connectivity features like click-to-call or checking user availability from within model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
   
 <a name="BKMK_UseLync"></a>   
-## Using Skype for Business with Dynamics 365 apps 
+## Using Skype for Business with model-driven apps in Dynamics 365
 
- When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps together, you can use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)]) presence and click-to-call from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+ When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and Dynamics 365 apps together, you can use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)]) presence and click-to-call from within Dynamics 365 apps.  
   
  Your organization must have one of the following products or subscriptions:  
   
@@ -36,17 +36,17 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
   
 - [!INCLUDE[pn_MS_Lync_Server_2010](../includes/pn-ms-lync-server-2010.md)]  
   
-  **Client requirements and [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps configuration**  
+  **Client requirements and configuration**  
   
-- To use click-to-call, [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] must be selected as the telephony provider in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. You can set this on the General tab at Settings > Administration > System Settings.  
+- To use click-to-call, [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] must be selected as the telephony provider. You can set this on the **General** tab at **Settings** > **Administration** > **System Settings**.  
   
-- By default, [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] presence is enabled in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. System administrators can enable or disable presence in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. To do this, click **Settings** > **Administration** > **System Settings** and on the **General** tab, **Set the IM presence option** to **Yes** or **No**.  
+- By default, [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] presence is enabled in model-driven apps in Dynamics 365. System administrators can enable or disable presence in model-driven apps in Dynamics 365. To do this, click **Settings** > **Administration** > **System Settings** and on the **General** tab, **Set the IM presence option** to **Yes** or **No**.  
   
 - Each user must have the [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] client installed and running on their PC.  
   
-- For [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] presence, [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps users must have `https://*.dynamics.com` added to their web browsers trusted sites list in Internet options in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)].  
+- For [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] presence, users must have `https://*.dynamics.com` added to their web browsers trusted sites list in Internet options in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)].  
   
-### Supported devices and web browsers when you use Skype for Business with Microsoft Dynamics 365 apps 
+### Supported devices and web browsers when you use Skype for Business with model-driven apps in Dynamics 365
   
 |                             Mobile app or web browser                             | Skype for Business click-to-call | Skype for Business presence |
 |-----------------------------------------------------------------------------------|----------------------------------|-----------------------------|
@@ -60,16 +60,16 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
   
 <a name="BKMK_UseSkype"></a>   
 
-## Using Skype with Dynamics 365 apps 
- When you use [!INCLUDE[pn_skype](../includes/pn-skype.md)] and [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps together, you can use [!INCLUDE[pn_skype](../includes/pn-skype.md)] click-to-call from within [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+## Using Skype with model-driven apps in Dynamics 365 
+ When you use [!INCLUDE[pn_skype](../includes/pn-skype.md)] and model-driven apps in Dynamics 365 together, you can use [!INCLUDE[pn_skype](../includes/pn-skype.md)] click-to-call from within model-driven apps in Dynamics 365.  
   
-**Client requirements and [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps configuration**  
+**Client requirements and configuration**  
   
 - Each user must have the [!INCLUDE[pn_skype_for_windows](../includes/pn-skype-for-windows.md)] desktop client or the [!INCLUDE[pn_skype_for_windows_8](../includes/pn-skype-for-windows-8.md)] app installed and running on their PC or [!INCLUDE[pn_windows8](../includes/pn-windows8.md)] device.  
   
-- **Skype** must be selected as the telephony provider in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. You can set this on the **General** tab at **Settings** > **Administration** > **System Settings**.  
+- **Skype** must be selected as the telephony provider. You can set this on the **General** tab at **Settings** > **Administration** > **System Settings**.  
   
-### Supported devices and web browsers when you use Skype with Dynamics 365 apps 
+### Supported devices and web browsers when you use Skype with model-driven apps in Dynamics 365
   
 |                                                    Mobile app or web browser                                                     | Skype click-to-call |
 |----------------------------------------------------------------------------------------------------------------------------------|---------------------|
@@ -86,5 +86,5 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
  Additionally, [!INCLUDE[pn_skype](../includes/pn-skype.md)] click-to-call is supported with [!INCLUDE[pn_crm_for_windows_8](../includes/pn-crm-for-windows-8.md)], [!INCLUDE[pn_moca_CRM_Windows_8_1](../includes/pn-moca-crm-windows-8-1.md)], and [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)].  
   
 ### See also  
- [Set up Dynamics 365 apps to use Skype or Skype for Business](../admin/set-up-skype-or-skype-for-business.md)   
- [Microsoft Dynamics 365 apps requirements](online-requirements.md)
+ [Set up model-driven apps in Dynamics 365 to use Skype or Skype for Business](../admin/set-up-skype-or-skype-for-business.md)   
+ [Requirements](online-requirements.md)

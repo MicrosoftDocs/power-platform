@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Several [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps features use system jobs to perform tasks automatically, including workflows, import, and duplicate detection, running independently or in the background.  
+Several features use system jobs to perform tasks automatically, including workflows, import, and duplicate detection, running independently or in the background.  
   
  You can monitor them to ensure that they run smoothly or have completed successfully. Go to **Settings** > **System Jobs** to see a grid view of system jobs.
   

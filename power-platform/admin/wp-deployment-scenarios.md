@@ -39,7 +39,7 @@ If you decide to allow an exception in a special environment, this could be a sh
 
 A user or team wants to build an application that leverages data that already exists in Common Data Service. They do not plan to make any schema changes to Common Data Service.
 
-For this scenario the Common Data Service database would exist in an environment other than default (since you can’t currently create a Common Data Service environment in default). The canvas apps or flows can’t therefore be built in the default environment using the Common Data Service connectors but could if they use the Dynamics 365 connector which allows you to select the Common Data Service environment from a separate environment.
+For this scenario the Common Data Service database would exist in an environment other than default (since you can’t currently create a Common Data Service environment in default). The canvas apps or flows can’t therefore be built in the default environment using the Common Data Service connectors but could if they use the connector which allows you to select the Common Data Service environment from a separate environment.
 
 The next decision comes down to if there is need for test data. If there is, then building the app in the test environment with the Common Data Service connector would allow the app to be promoted to the production Common Data Service environment once development and testing was completed. Since the app used the Common Data Service connector it would be able to be simply exported and re-imported into the production environment without having to change the references to test. This assumes that test and production Common Data Service environments have the same schema.
 
@@ -54,6 +54,6 @@ If a team depended on other teams’ schema or other Common Data Service assets,
 By having each team do their development work in their own environment allows each application to develop independently of the other applications in your organizations. While at the same time keeping a centralized data repository that all apps could interact across the enterprise data.
 
 Some governance is needed in this type of environment to ensure applications coming into the shared environment do not make conflicting design decisions. For a simple example, some of the shared common entities like Account or Contact, you wouldn’t want individual applications trying to rename those entities differently.
-With this setup, the Common Data Service environment could also contain Dynamics 365 applications co-existing with your internally built applications.
+With this setup, the Common Data Service environment could also contain model-driven apps in Dynamics 365 co-existing with your internally built applications.
 
 

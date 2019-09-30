@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-[!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps use several Microsoft URLs to help provide security, services, and features. However, your computer or your organization’s computer network may block access to some of these URLs. Blocking any of the required URLs will cause [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps to operate incorrectly or not at all.  
+Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, use several Microsoft URLs to help provide security, services, and features. However, your computer or your organization’s computer network may block access to some of these URLs. Blocking any of the required URLs will cause model-driven apps in Dynamics 365 to operate incorrectly or not at all.  
   
  You may see a network or server error message if your computer or your organization's network blocks the URLs you need. The error message might look like one of these:  
   
@@ -30,15 +30,15 @@ search.app:
 You can unblock these URLs on your computer by adding them to a list of approved sites in your browser.  
   
 > [!IMPORTANT]
->  If the following procedure doesn’t unblock the URLs required for [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps, ask your system administrator to unblock the URLs on the organization’s network.  
+>  If the following procedure doesn’t unblock the URLs required for model-driven apps in Dynamics 365, ask your system administrator to unblock the URLs on the organization’s network.  
    
-### Unblock Dynamics 365 apps URLs in Internet Explorer  
+### Unblock model-driven apps in Dynamics 365 URLs in Internet Explorer  
   
 1.  On the Explorer bar, click or tap the **Tools** icon (the white gear shape), and then click or tap **Internet options**.  
   
 2.  Click or tap the **Security** tab > **Trusted sites** > **Sites**.  
   
-3.  In **Add this website to the zone**, type the URL for your Dynamics 365 apps organization. For example, https://contoso.crm.dynamics.com  
+3.  In **Add this website to the zone**, type the URL for your organization. For example, https://contoso.crm.dynamics.com  
   
 4.  Click or tap **Add** > **Close** > **OK**.  
   
