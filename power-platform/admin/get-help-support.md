@@ -36,7 +36,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
    - Support
    - Billing
 
--  For the following [support plans](https://www.microsoft.com/en-us/dynamics365/support):
+-  For the following [support plans](https://www.microsoft.com/dynamics365/support):
    
    - Subscription Support
    - Enhanced Support

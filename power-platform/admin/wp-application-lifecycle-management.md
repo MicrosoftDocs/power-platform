@@ -131,11 +131,12 @@ The following outlines the basic process for using the tool.
 > [!div class="mx-imgBorder"] 
 > ![](media/moving-reference-data.png "Moving reference data")
 
-The output from the tool is a zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service environment. You can also package the data with a Solution Deployer package that we will discuss shortly allowing it to be deployed alongside one or more Common Data Service solutions. You can read more about how to use the tool here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-configuration-data.
+The output from the tool is a zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service environment. You can also package the data with a Solution Deployer package that we will discuss shortly allowing it to be deployed alongside one or more Common Data Service solutions. You can read more about how to use the tool here https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-configuration-data.
 
 ## Using the Package Deployer
 
 So far, we’ve only talked about importing Common Data Service solutions manually via the user interface. The package deployer also works for Common Data Service solutions. The package deployer allows building a package that contains one or more Common Data Service solutions as well as one or more data files to import after the solutions are imported. It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. You can read more about package deployer here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-packages-package-deployer.
+
 
 
 

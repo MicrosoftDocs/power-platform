@@ -22,7 +22,7 @@ search.app:
 > [!NOTE]
 > For information about licensing changes coming to PowerApps and Microsoft Flow in October 2019, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md).
 
-We have found some common questions on licensing and plan options. We’ve included several here with their answers. However, if you find you need more details, you can find that on PowerApps plans here https://powerapps.microsoft.com/en-us/pricing/ and Microsoft Flow plans here https://flow.microsoft.com/en-us/pricing/. For additional information on the mechanics of managing users, please refer to: [Manage PowerApps licenses in your organization](signup-question-and-answer.md).
+We have found some common questions on licensing and plan options. We’ve included several here with their answers. However, if you find you need more details, you can find that on PowerApps plans here https://powerapps.microsoft.com/pricing/ and Microsoft Flow plans here https://flow.microsoft.com/pricing/. For additional information on the mechanics of managing users, please refer to: [Manage PowerApps licenses in your organization](signup-question-and-answer.md).
 
 ## PowerApps Pricing FAQ
 
@@ -39,7 +39,7 @@ Yes, you can use the Dynamics 365 Finance and Operations connector to build canv
 Free trials last 30 days.
 
 ### Is there a plan for developers? 
-Yes, we have a free Community Plan to learn and build skills on PowerApps, Microsoft Flow and Common Data Service. [Learn more](https://powerapps.microsoft.com/en-us/communityplan/).
+Yes, we have a free Community Plan to learn and build skills on PowerApps, Microsoft Flow and Common Data Service. [Learn more](https://powerapps.microsoft.com/communityplan/).
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses? 
 You can buy additional data storage, file storage and flow runs. See the PowerApps Licensing overview page for more information.
