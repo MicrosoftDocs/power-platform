@@ -28,7 +28,7 @@ search.app:
 ## German Data Residency  
  Customer Data will be stored at rest in two independent, geographically dispersed datacenter locations in Germany. Replication of  Customer Data across these German datacenters ensures data remains in Germany even in backup, business continuity, and disaster recovery scenarios.  
   
- Customer Data means all data that are provided to Microsoft by, or on behalf of the customer through the use of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service,.  
+ Customer Data means all data that are provided to Microsoft by, or on behalf of the customer through the use of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
   
  Note the following:  
   

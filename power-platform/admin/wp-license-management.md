@@ -40,7 +40,7 @@ The following summarizes the access based on various administrator role and lice
 |Dynamics Admin role     | View only        | No access        | No        | No access        |No access        |
 |Dynamics Admin role with PowerApps P2     |View only         | No tenant level info, only own environments        |Only own         |Only own        |  Full access       |
 
-PowerApps has two primary standalone licensing tiers. PowerApps P1 which is best suited for business users who need to use basic PowerApps applications. PowerApps P2 is more focused towards Makers and Administrators who want to create data models in the Common Data Service. Each PowerApps P2 user is entitled to create two Production environments each having a Common Data Service database. Users of the apps built on the Common Data Service only require PowerApps P1 unless they use advanced features like plug-ins and real-time workflows or work with Dynamics 365 restricted entities ( a list of these can be found here https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-restricted-entities).
+PowerApps has two primary standalone licensing tiers. PowerApps P1 which is best suited for business users who need to use basic PowerApps applications. PowerApps P2 is more focused towards Makers and Administrators who want to create data models in the Common Data Service. Each PowerApps P2 user is entitled to create two Production environments each having a Common Data Service database. Users of the apps built on the Common Data Service only require PowerApps P1 unless they use advanced features like plug-ins and real-time workflows or work with restricted entities ( a list of these can be found here https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-restricted-entities).
 
 For example, John could create a PowerApps Canvas application that stores data in the Contact entity and two custom entities in a Common Data Service environment he created. For this, he would need a PowerApps P1 or P2 license to build the application and customize Common Data Service. Mary and Henry are users of the application John built. John had shared the application with them, so they could use it. Mary and Henry would be ok with just a PowerApps P1 license or a license that came with Dynamics 365. If either of them had only PowerApps that came with Office 365 they would however need to upgrade their license to at least a PowerApps P1.
 
@@ -52,7 +52,7 @@ PowerApps licenses include an equivalent Microsoft Flow license. It is also poss
 |Flow plan |Number of runs |Check for new work  |
 |---------|---------|---------|
 |Free     |750         |Every 15 minutes         |
-|Office and Dynamics 365     | 2,000        |Every 5 minutes             |
+|Office and Common Data Service    | 2,000        |Every 5 minutes             |
 |P1     | 4,500       |Every 3 minutes             |
 |P2     |  15,000       |Every 1 minute             |
 

@@ -21,7 +21,7 @@ search.app:
 
 Environments are containers that administrators can use to manage apps, flows, connections, and other assets; along with permissions to allow organization users to use the resources. Environments are tied to a geographic location that is configured at the time the environment is created. Environments can be used to target different audiences and/or for different purposes such as dev, test and production. The actual number and purpose of environments in your tenant is up to you as an administrator. In the ALM section we will cover some potential scenarios to help you choose what is best for you.
 
-Common Data Service databases are created in the context of environments. Each environment, if you are licensed for Common Data Service, can have at most one database. If your organization signs up one of the Dynamics 365 Dynamics 365 apps an environment with a Common Data Service database will be created to support that application.
+Common Data Service databases are created in the context of environments. Each environment, if you are licensed for Common Data Service, can have at most one database. If your organization signs up one of the environments with a Common Data Service database will be created to support that application.
 
 ![Environments](media/Environments780.png "Environments")
 
@@ -42,7 +42,7 @@ Once a Common Data Service database has been created in an environment all users
 |Common Data Service User     |This is a basic user role, with ability to run apps and perform common tasks but no ability to customize the system. The data access is focused on Read access to most Common Data Model core entities with full access to records owned by the user. This is a good role to consider copying to make a custom security role for users.         |
 |Delegate     |This is a special role really design to give a user permission to Act on behalf of another user. For more information, see [Impersonate another user](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user).        |
 
-In addition to these default roles, you can also create custom security roles. Custom security roles should be created to support applications built in your organization. Custom security roles can also come with applications you install from App Source or if your users sign up for Dynamics 365.
+In addition to these default roles, you can also create custom security roles. Custom security roles should be created to support applications built in your organization. Custom security roles can also come with applications you install from App Source or if your users sign up for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.
 
 ## Types of environments
 
@@ -51,7 +51,7 @@ There are multiple types of environments. The type of environment indicates the 
 
 |Type  |Description  |
 |---------|---------|
-|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a PowerApps license, provided there is 1GB available database capacity. These environments are also created for each existing Dynamics 365 Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
+|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a PowerApps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
 |Default     | These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail.        |
 |Sandbox     | These are non-production environments and when associated with a Common Data Service database environment offer features like reset.        |
 |Trial     | Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time.        |
@@ -89,7 +89,7 @@ In the mobile applications the user is presented with a consolidated list of app
 
 When an application uses a public connector (available for all tenants), the connector is configured for use within the context of an environment. Custom connectors are also configured in the context of an environment. If an app is moved to another environment the public connector references will be recreated upon import. Custom connectors must be re-configured manually in that target environment.
 
-Applications that use the Common Data Service connector currently only can communicate with Common Data Service databases in the same environment. This works well for apps that need to move between a dev, test and production environment because it adjusts automatically when imported into the next environment. Where this can be challenging is if you have two environments; one named Team Apps and another named CRM Data (which held your Dynamics 365 environment) an application using the Common Data Service connector in the Team Apps environment would not be able to access data in the CRM Data environment. A current work around for this is to use the Dynamics 365 connector instead of the Common Data Service connector since it can connect to multiple environments. That flexibility does result in more complexity if the application is moved from a dev, test to production and the environment needs to change as it is promoted, this must be done manually in the app once imported.
+Applications that use the Common Data Service connector currently only can communicate with Common Data Service databases in the same environment. This works well for apps that need to move between a dev, test and production environment because it adjusts automatically when imported into the next environment. Where this can be challenging is if you have two environments; one named Team Apps and another named CRM Data (which held your environment) an application using the Common Data Service connector in the Team Apps environment would not be able to access data in the CRM Data environment. A current work around for this is to use the connector instead of the Common Data Service connector since it can connect to multiple environments. That flexibility does result in more complexity if the application is moved from a dev, test to production and the environment needs to change as it is promoted, this must be done manually in the app once imported.
 
 ## Impact of multiple environments on Common Data Service
 

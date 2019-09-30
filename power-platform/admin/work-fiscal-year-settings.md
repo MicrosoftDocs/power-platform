@@ -22,7 +22,7 @@ search.app:
 You can set the fiscal year period, and how it’s displayed, for your organization.  
   
 > [!IMPORTANT]
->  After you set the fiscal year options, you can’t change them. Fiscal year options affect the way in which your organization's data is stored in Dynamics 365 apps.  
+>  After you set the fiscal year options, you can’t change them. Fiscal year options affect the way in which your organization's data is stored in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
   
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   

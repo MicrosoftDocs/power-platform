@@ -32,7 +32,7 @@ Preview features are features that aren’t complete, but are made available on 
 - May be available only in selected geographic areas.  
   
 ## How do I enable a Preview feature?  
- To enable a Preview feature, you must be a Dynamics 365 administrator.  
+ To enable a Preview feature, you must be an administrator.  
   
 1. [!INCLUDE[proc_settings_administration](../includes/proc-settings-administration.md)]  
   
@@ -45,4 +45,4 @@ Preview features are features that aren’t complete, but are made available on 
 ![System settings preview](media/system-settings-previews75.png "System settings preview")
 
 ## How do I report an issue or provide other feedback?  
-If you’d like to provide feedback, offer suggestions, or report issues for a Preview feature, please go to [Dynamics 365 Application Ideas](https://experience.dynamics.com/ideas/). This website provides a collaboration platform for gathering actionable feedback to build and improve products and services.
+If you’d like to provide feedback, offer suggestions, or report issues for a Preview feature, please go to [Application Ideas](https://experience.dynamics.com/ideas/). This website provides a collaboration platform for gathering actionable feedback to build and improve products and services.

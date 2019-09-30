@@ -17,7 +17,7 @@ search.app:
 ---
 # System Settings Marketing tab
 
-Use the settings on this page to configure marketing settings for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service,.  
+Use the settings on this page to configure marketing settings for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
