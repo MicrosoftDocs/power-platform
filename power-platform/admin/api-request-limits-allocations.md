@@ -46,7 +46,7 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | PowerApps per user plan                                  | 5,000                                                                                                                                         |
 | Microsoft Flow per user plan                             | 5,000                                                                                                                                         |
 | Office licenses (that include PowerApps/Microsoft Flow)  | 2,000                                                                                                                                         |
-| Application user / Non-interactive users                 | [See section below](https://docs.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users) |
+| Application user / Non-interactive users                 | [See section below](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users) |
 
 <sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent.
 
@@ -80,7 +80,7 @@ these users:
 
 -   [Administrative users](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles#create-an-administrative-user-account).
 
-Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
+Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 
 For these users, every tenant will get base request capacity per tenant which can only be used by these users and not by users with standard licenses.
 
@@ -104,7 +104,7 @@ Apart from the new daily API request limit, there are other service protections 
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for Dynamics 365 Customer Engagement apps, PowerApps, and Microsoft Flow connecting to Common Data Service/model-driven apps in Dynamics 365
+- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, PowerApps, and Microsoft Flow connecting to Common Data Service/model-driven apps in Dynamics 365
 
 - [Microsoft Flow limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Microsoft Flow
 
@@ -122,9 +122,9 @@ End users will not be blocked from using the app for occasional and reasonable o
 
 Integrations will not be stopped for occasional and reasonable overages at this point of time. Administrators would be notified about overages and will be able to add PowerApps and Microsoft Flow request capacity to be compliant.
 
-### Will there be a transition period for existing Dynamics 365 customers?
+### Will there be a transition period for existing customers?
 
-Yes, all existing Dynamics 365 customers will have a transition period until October 1, 2020 or the expiration of their current Dynamics 365 subscription term, whichever is longer.
+Yes, all existing customers will have a transition period until October 1, 2020 or the expiration of their current subscription term, whichever is longer.
 
 During this transition period reporting would be made available to customers which shows the API consumption.
 
