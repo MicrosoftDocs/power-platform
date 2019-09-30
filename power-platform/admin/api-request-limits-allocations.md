@@ -30,7 +30,7 @@ Requests in Microsoft Power Platform consist of various actions which a user mak
 
 - **Common Data Service** – all CRUD operations, as well as special operations like “share” or “assign”. These can be from any client or application and using any endpoint SOAP or REST. These include but are not limited to plug-ins, async workflows, and custom controls making the above mentioned operations.
 
-Note that for Common Data Service, there will be a small set of system internal operations that are excluded, like login, logout and system metadata operations like getClientMetadata.
+Note that for Common Data Service, there will be a small set of system internal operations that are excluded, like login, logout, and system metadata operations like getClientMetadata.
 
 This table below will describe the common requests limits as well as the allocation which a user gets based on the type of license assigned to the user.
 
@@ -59,7 +59,7 @@ Users who are running apps and flows without a user license through the PowerApp
 | PowerApps per app plan       | 1,000 per user pass                   |
 | Microsoft Flow per flow plan | 15,000 per flow                       |
 
-If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license as well as a PowerApps per user license , then that user will have a total of 20000 + 5000= 25000 requests available per 24 hours.
+If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license as well as a PowerApps per user license , then that user will have a total of 20000 + 5000 = 25000 requests available per 24 hours.
 
 If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 Customer Service Enterprise license as the base license and a Dynamics 365 Sales Enterprise license attached, the total number of requests would be what is provided by the base license - Dynamics 365 Customer Service.
 
@@ -80,22 +80,21 @@ these users:
 
 -   [Administrative users](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles#create-an-administrative-user-account).
 
-Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing (more details here 
-<https://docs.microsoft.com/en-us/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed>).
+Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 
 For these users, every tenant will get base request capacity per tenant which can only be used by these users and not by users with standard licenses.
 
 This base request capacity would be based on the type of subscription and would be as follows:
 
-1. If a tenant has at least 1 Dynamics 365 enterprise subscription, they will get 100,000 requests per 24 hours
+1. If a tenant has at least one Dynamics 365 enterprise subscription, they will get 100,000 requests per 24 hours
 
-2. If a tenant has at least 1 Dynamics 365 professional subscription, they will get 50,000 requests per 24 hours
+2. If a tenant has at least one Dynamics 365 professional subscription, they will get 50,000 requests per 24 hours
 
-3. If a tenant has at least 1 Microsoft PowerApps or Flow subscription, they will get 25,000 requests per 24 hours.
+3. If a tenant has at least one Microsoft PowerApps or Flow subscription, they will get 25,000 requests per 24 hours.
 
 If a tenant has multiple type of subscriptions, their base request capacity would be max of two subscriptions. For example, if a customer has both Dynamics 365 Customer Service and PowerApps per user subscription, their base request capacity would be 100,000 Requests per 24 hours.
 
-Base Request Capacity would be at tenant level and can only be used by Non-Licensed Users, Application Users and users which has free (\$0) licenses).
+Base Request Capacity would be at tenant level and can only be used by non-licensed users, application users and users which has free ($0) licenses.
 
 Once the Base Request capacity is exhausted, customers can increase this capacity by purchasing PowerApps and Microsoft Flow capacity add-on.
 
@@ -117,7 +116,7 @@ Review the following resources for information about *current* service protectio
 
 If any user exceeds request capacity, admin for the tenant/environment would be notified and would be able to assign PowerApps and Microsoft Flow request capacity to that user.
 
-End users will not be blocked from using the App for occasional and reasonable overages at this point of time.
+End users will not be blocked from using the app for occasional and reasonable overages at this point of time.
 
 ### Will my Integrations stop working if application users exceeds Base Request capacity?
 
