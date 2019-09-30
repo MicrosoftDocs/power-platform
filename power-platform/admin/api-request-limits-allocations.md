@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Starting October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, PowerApps, and Microsoft Flow.
+Starting October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) PowerApps, and Microsoft Flow.
 
 ## What is a Microsoft Power Platform request?
 
