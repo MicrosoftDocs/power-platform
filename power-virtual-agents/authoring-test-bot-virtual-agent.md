@@ -53,7 +53,7 @@ As you fine-tune your bot, it can be useful to enable tracking to take you throu
 
 3. As you move through the conversation in the **Test bot** pane, the authoring canvas highlights the current place in the conversation path. The authoring canvas displays highlighted nodes in green.
 
-<<INCLUDE IMAGE OF HIGHLIGHTED NODE IN CANVAS >>>
+<<< INCLUDE IMAGE OF HIGHLIGHTED NODE IN CANVAS >>>
 
 4. To navigate to an earlier place in the conversation path in the authoring canvas, select it in the **Test bot** pane.
 
