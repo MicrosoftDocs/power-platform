@@ -13,9 +13,9 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
-# Work with the Test bot pane
+# Test your bot
 
-As you design your bot in Power Virtual Agents for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the conversation path. To help you find and fix unexpected behavior, you can enable tracing to take you through the conversation path step by step, and go to the corresponding node in the authoring canvas.
+As you design your bot in Power Virtual Agents for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the conversation path. To help you find and fix unexpected behavior, you can enable tracking to take you through the conversation path step by step, and go to the corresponding node in the authoring canvas.
 
 ## To test a topic in the Test bot pane
 
