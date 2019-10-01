@@ -9,8 +9,6 @@
         href: powerapps-flow-licensing-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
-  - name: Administer model-driven apps in Dynamics 365
-    href: about-ce-guide.md
   - name: Administer PowerApps
     items:
     - name: Overview
@@ -679,6 +677,8 @@
     href: about-flow-guide.md
   - name: Administer Power BI
     href: about-powerbi-guide.md
+  - name: Administer model-driven apps in Dynamics 365
+    href: about-ce-guide.md
   - name: "Reference: Use the various admin centers"
     href: admin-centers.md
   - name: "Reference: Videos and PowerPoint presentations"
