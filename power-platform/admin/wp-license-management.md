@@ -1,24 +1,18 @@
 ---
-title: "Licensing and license management | MicrosoftDocs"
+title: "Licensing and license management  | MicrosoftDocs"
 description: About licensing and license management.
-ms.custom: ""
-ms.date: 08/29/2019
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/29/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # About licensing and license management
@@ -39,18 +33,18 @@ The following summarizes the access based on various administrator role and lice
 
 |License type  |User/license management |PowerApps Admin Portal  |Manage environments  |Data loss policies  |Dynamics 365 Admin Center  |
 |---------|---------|---------|---------|---------|---------|
-|Global Admin without PowerApps P2     |Yes      |Sees only DLP policies and Tenant level user reports and statistics         |No         |Can create but only for all environments         |Can view Common Data Service instances         |
+|Global Admin without PowerApps P2     |Yes      |Sees only DLP policies and Tenant level user reports and statistics         |No         |Can create but only for all environments         |Can view Common Data Service environments         |
 |Global Admin with PowerApps P2      | Yes        | Full access        | Yes - all environments        | Full ability to view, create, modify and remove        | Full access        |
 |User Management Role      | Yes        | No access         |  No       |   No access      | No access        |
 |User Management role with PowerApps P2     |Yes         | No tenant level info, only own environments        | Only own        |Only own         | No access        |
 |Dynamics Admin role     | View only        | No access        | No        | No access        |No access        |
 |Dynamics Admin role with PowerApps P2     |View only         | No tenant level info, only own environments        |Only own         |Only own        |  Full access       |
 
-PowerApps has two primary standalone licensing tiers. PowerApps P1 which is best suited for business users who need to use basic PowerApps applications. PowerApps P2 is more focused towards Makers and Administrators who want to create data models in the Common Data Service. Each PowerApps P2 user is entitled to create two Production environments each having a Common Data Service database. Users of the apps built on the Common Data Service only require PowerApps P1 unless they use advanced features like plug-ins and real-time workflows or work with Dynamics 365 restricted entities ( a list of these can be found here https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-restricted-entities).
+PowerApps has two primary standalone licensing tiers. PowerApps P1 which is best suited for business users who need to use basic PowerApps applications. PowerApps P2 is more focused towards Makers and Administrators who want to create data models in the Common Data Service. Each PowerApps P2 user is entitled to create two Production environments each having a Common Data Service database. Users of the apps built on the Common Data Service only require PowerApps P1 unless they use advanced features like plug-ins and real-time workflows or work with restricted entities ( a list of these can be found here https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-restricted-entities).
 
 For example, John could create a PowerApps Canvas application that stores data in the Contact entity and two custom entities in a Common Data Service environment he created. For this, he would need a PowerApps P1 or P2 license to build the application and customize Common Data Service. Mary and Henry are users of the application John built. John had shared the application with them, so they could use it. Mary and Henry would be ok with just a PowerApps P1 license or a license that came with Dynamics 365. If either of them had only PowerApps that came with Office 365 they would however need to upgrade their license to at least a PowerApps P1.
 
-Building on that example, John asked George, a developer at the company to create a plug-in on one of the custom entities. The business logic would do some automated processing every time the data was updated. This advanced business logic usage would require now for all users that wanted to use the canvas app to be upgraded to a PowerApps P2 license. You can find additional Entity Licensing examples here https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-entity-licenses.
+Building on that example, John asked George, a developer at the company to create a plug-in on one of the custom entities. The business logic would do some automated processing every time the data was updated. This advanced business logic usage would require now for all users that wanted to use the canvas app to be upgraded to a PowerApps P2 license. You can find additional Entity Licensing examples here https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-entity-licenses.
 
 PowerApps licenses include an equivalent Microsoft Flow license. It is also possible however to license flow by itself. Flow also has a free plan. All Flow plans offer unlimited creation of Flows but vary based on number of runs included and the time delay for checking for new work to perform. In addition to the key differences documented in the chart below, it is important to note that with the free plan the runs are per person where runs for other licenses aggregate at the tenant level.
 
@@ -58,7 +52,7 @@ PowerApps licenses include an equivalent Microsoft Flow license. It is also poss
 |Flow plan |Number of runs |Check for new work  |
 |---------|---------|---------|
 |Free     |750         |Every 15 minutes         |
-|Office and Dynamics 365     | 2,000        |Every 5 minutes             |
+|Office and Common Data Service    | 2,000        |Every 5 minutes             |
 |P1     | 4,500       |Every 3 minutes             |
 |P2     |  15,000       |Every 1 minute             |
 
@@ -82,7 +76,7 @@ As the administrator, you will likely be assisting users that had started in a t
 
 ## PowerApps Community Plan
 
-In addition to the trial plans, there is also a free PowerApps Community Plan. This is a special plan that allows individual self-service sign up and it provides an individual environment that the user can use to build apps and flows. These environments will show up on the administrator’s list of environments and will list the type of environment as “Developer”. The environments are for individual use, so there is no ability to share with other users. Users in your organization can self-service signup for this plan even if they have PowerApps and Flow license entitlements via another licensing plan. Signup for the community plan can be found here https://powerapps.microsoft.com/en-us/communityplan/ and more details on its features here https://docs.microsoft.com/en-us/powerapps/maker/dev-community-plan 
+In addition to the trial plans, there is also a free PowerApps Community Plan. This is a special plan that allows individual self-service sign up and it provides an individual environment that the user can use to build apps and flows. These environments will show up on the administrator’s list of environments and will list the type of environment as “Developer”. The environments are for individual use, so there is no ability to share with other users. Users in your organization can self-service signup for this plan even if they have PowerApps and Flow license entitlements via another licensing plan. Signup for the community plan can be found here https://powerapps.microsoft.com/communityplan/ and more details on its features here https://docs.microsoft.com/powerapps/maker/dev-community-plan 
 
 ## What users are licensed
 

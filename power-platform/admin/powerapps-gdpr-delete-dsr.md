@@ -58,7 +58,7 @@ Connection permissions | | App creator: Available <br> Admin: Available
 Custom connector | | App creator: Available <br> Admin: Available
 Custom-connector permissions | | App creator: Available <br> Admin: Available
 
-\** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the instance of that database. For guidance on how to respond to DSRs for users of Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
+\** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the environment of that database. For guidance on how to respond to DSRs for users of Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
 ## Prerequisites
 
@@ -140,7 +140,7 @@ Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Get-AdminEnvironmentRoleAssig
 ```
 
 > [!IMPORTANT]
-> This function works only in environments that do not have an instance of a database in Common Data Service.
+> This function works only in environments that do not have an environment of a database in Common Data Service.
 
 ### Delete environments created by a user using PowerShell
  An administrator can delete all environments created by a user by using the **Remove-AdminEnvironment** function in the [PowerShell cmdlets for PowerApps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
@@ -155,7 +155,7 @@ Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Remove-AdminEnvironment
 
 ## Step 2: Delete the user’s permissions to all other environments
 Users can be assigned permissions (such as Environment Admin and Environment Maker) in an environment, which are stored in the PowerApps service as a “role assignment.”
-With the introduction of Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within the instance of that database.
+With the introduction of Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within the environment of that database.
 For more information, see [Administer environments](environments-administration.md).
 
 ### For environments without a Common Data Service database
@@ -186,15 +186,15 @@ An administrator can delete all environment role assignments for a user across a
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
-#find all environment role assignments for the user for environments without a Common Data Service instance and delete them
+#find all environment role assignments for the user for environments without a Common Data Service environment and delete them
 Get-AdminEnvironmentRoleAssignment -UserId $deleteDsrUserId | Remove-AdminEnvironmentRoleAssignment
 ```
 
 > [!IMPORTANT]
-> This function works only for environments that do not have an instance of a Common Data Service database.
+> This function works only for environments that do not have an environment of a Common Data Service database.
 
 ### For environments WITH a Common Data Service database
-With the introduction of the Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within the instance of that database. Please refer to the following documentation on how to remove personal data from an instance of a database in Common Data Service: Common Data Service User personal data removal
+With the introduction of the Common Data Service, if a database is created within the environment, these “role assignments” are stored as records within the environment of that database. Please refer to the following documentation on how to remove personal data from an environment of a database in Common Data Service: Common Data Service User personal data removal
 
 ## Step 3: Delete or reassign all canvas apps owned by a user
 
@@ -389,8 +389,8 @@ PowerApps licenses always include Microsoft Flow capabilities. In addition to be
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a PowerApps user.
 
-## Step 10: Delete the user’s personal data in instances of Common Data Service
-Certain PowerApps licenses, including the PowerApps Community Plan, give the ability for users within your organization to create instances of Common Data Service and to create and build apps on Common Data Service. The PowerApps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the PowerApps pricing page for which capabilities are included in each PowerApps license.
+## Step 10: Delete the user’s personal data in environments of Common Data Service
+Certain PowerApps licenses, including the PowerApps Community Plan, give the ability for users within your organization to create environments of Common Data Service and to create and build apps on Common Data Service. The PowerApps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the PowerApps pricing page for which capabilities are included in each PowerApps license.
 
 For guidance on how to respond to DSRs for users who use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 

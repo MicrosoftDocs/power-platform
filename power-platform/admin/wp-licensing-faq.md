@@ -1,24 +1,18 @@
 ---
-title: "FAQs and more information| MicrosoftDocs"
+title: "FAQs and more information| | MicrosoftDocs"
 description: Licensing frequently asked questions.
-ms.custom: ""
-ms.date: 08/29/2019
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/29/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # FAQs and more information
@@ -28,7 +22,7 @@ search.app:
 > [!NOTE]
 > For information about licensing changes coming to PowerApps and Microsoft Flow in October 2019, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md).
 
-We have found some common questions on licensing and plan options. We’ve included several here with their answers. However, if you find you need more details, you can find that on PowerApps plans here https://powerapps.microsoft.com/en-us/pricing/ and Microsoft Flow plans here https://flow.microsoft.com/en-us/pricing/. For additional information on the mechanics of managing users, please refer to: [Manage PowerApps licenses in your organization](signup-question-and-answer.md).
+We have found some common questions on licensing and plan options. We’ve included several here with their answers. However, if you find you need more details, you can find that on PowerApps plans here https://powerapps.microsoft.com/pricing/ and Microsoft Flow plans here https://flow.microsoft.com/pricing/. For additional information on the mechanics of managing users, please refer to: [Manage PowerApps licenses in your organization](signup-question-and-answer.md).
 
 ## PowerApps Pricing FAQ
 
@@ -39,13 +33,13 @@ See the PowerApps Licensing overview page for the list of Office 365 plans that 
 See the [Licenses](pricing-billing-skus.md#licenses) for the list of Dynamics 365 apps and plans that include PowerApps capabilities.
 
 ### Can I connect to Microsoft Dynamics for Finance and Operations? 
-Yes, you can use the Dynamics 365 for Finance and Operations connector to build canvas apps using this data.
+Yes, you can use the Dynamics 365 Finance and Operations connector to build canvas apps using this data.
 
 ### How long is the free trial period? 
 Free trials last 30 days.
 
 ### Is there a plan for developers? 
-Yes, we have a free Community Plan to learn and build skills on PowerApps, Microsoft Flow and Common Data Service. [Learn more](https://powerapps.microsoft.com/en-us/communityplan/).
+Yes, we have a free Community Plan to learn and build skills on PowerApps, Microsoft Flow and Common Data Service. [Learn more](https://powerapps.microsoft.com/communityplan/).
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses? 
 You can buy additional data storage, file storage and flow runs. See the PowerApps Licensing overview page for more information.

@@ -24,7 +24,7 @@ Many customers wonder: How can PowerApps and Microsoft Flow be made available to
 |---------|---------|
 |Architecture     | <ul><li>What are the basic constructs and concepts of PowerApps, Microsoft Flow, and Common Data Service?</li> <br /><li>How do these constructs fit together at design time and runtime?</li></ul> |
 |Security     | <ul><li>What are the best practices for security design considerations?</li> <br /><li>How do I leverage our existing user and group management solutions to manage access and security roles in PowerApps?</li></ul>     |
-|Alert and Action     | <ul><li>How do I define the governance model between citizen developers and managed IT services?</li> <br /><li>How do I define the governance model between central IT and the business unit admins?</li> <br /><li>How should I approach support for non-default instances in my organization? </li></ul>        |
+|Alert and Action     | <ul><li>How do I define the governance model between citizen developers and managed IT services?</li> <br /><li>How do I define the governance model between central IT and the business unit admins?</li> <br /><li>How should I approach support for non-default environments in my organization? </li></ul>        |
 |Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
@@ -40,7 +40,7 @@ Access to PowerApps and Flow starts with having a license, the type of license a
 |Plan  |Description  |
 |---------|---------|
 |Office 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
-|Dynamics 365 Included     | This allows users to customize and extend Dynamics 365 apps they already have.  |
+|Dynamics 365 Included     | This allows users to customize and extend model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, they already have.  |
 |PowerApps P1     | This allows makes enterprise connectors and Common Data Service accessible for use. |
 |PowerApps P2     | This allows users to use robust business logic across application types and administration capabilities.  |
 |PowerApps Community | This allows a user to use PowerApps, Flow, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
@@ -62,7 +62,7 @@ After users have licenses, environments exist as containers for all resources ut
 
 ### Secure your data and network
 - PowerApps and Flow *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
-- Network Access control policies can also apply to PowerApps and Flow. For instance, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps and Flow. 
+- Network Access control policies can also apply to PowerApps and Flow. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps and Flow. 
 - In an environment, access is controlled at three levels: [Environment roles](database-security.md), [Resource permissions for PowerApps](wp-controlling-access.md), Microsoft Flows, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
 - When Common Data Service is created in an environment the Common Data Service roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
 
@@ -126,7 +126,7 @@ Customers with Microsoft Intune can set mobile application protection policies f
 
 ### Manage environment role assignments using Microsoft Flow
 
-1. For environments *without* a Common Data Service database, the [Power Platform for Admins connector](https://docs.microsoft.com/en-us/connectors/powerplatformforadmins/) provides the ability to manage environment role assignments. 
+1. For environments *without* a Common Data Service database, the [Power Platform for Admins connector](https://docs.microsoft.com/connectors/powerplatformforadmins/) provides the ability to manage environment role assignments. 
 2. For environments *with* a Common Data Service database, the built-in Common Data Service connector doesn’t have support for managing roles, but you can use a Microsoft Flow to do it through the web API via the following steps: 
 
    1. Create your Azure AD App. 
@@ -152,14 +152,14 @@ Customers with Microsoft Intune can set mobile application protection policies f
       4. Go to the settings gear at the top of the portal and select Custom Connectors
       5. Select Create custom connector >Import from an Open API file
       6. Give the custom connector a meaningful name, e.g. “CDS Permissions” and select the CDS-Permissions Swagger file that you downloaded.
-      7. On the General tab, enter the host of your CDS instance:
+      7. On the General tab, enter the host of your CDS environment:
 
          image
 
       8. Select Security -> to go to the next tab. Here, select Azure Active Directory as your authentication provider
       9. You will now fill in the Client ID field  - copy it from the Properties of your Azure AD app in the Azure Portal. The field is called Application ID
       10. Next, you’ll fill in the Client secret. From the Azure portal, select the Keys screen and in the Passwords section enter a new description and duration. Select Save. You’ll be able to copy the Value – put that in the Client secret field. (NOTE:  Make sure you copy and save this key somewhere secure.  You won’t be able to retrieve it later.)
-      11. In the Resource URL field enter the full URL of your CDS instance host (unlike the first screen, include https://).The screen should now look like:
+      11. In the Resource URL field enter the full URL of your CDS environment host (unlike the first screen, include https://).The screen should now look like:
 
           image
 
@@ -185,7 +185,7 @@ Customers with Microsoft Intune can set mobile application protection policies f
          4. Notice that the List Users query now looks for records where “azureactivedirectoryobjectid” equals the Id from the AD Group. (No quotes are required around the Id because it’s a GUID.  Adding quotes will make this $filter fail.)
       4. Once you’ve identified the user(s) that you want to assign to the role, the next step is to search for that user in the Common Data Service (to get the CDS id). 
       5. Then, based on that result we set the user role. The second foreach isn’t needed, because List users should always return one user.
-      6. To assign the correct role, you should first query the REST Endpoint of your instance, for example:
+      6. To assign the correct role, you should first query the REST Endpoint of your environment, for example:
          1.	https://orga2e7dd43.crm.dynamics.com/api/data/v9.0/roles?$select=name,roleid 
          2.	This will return a list of names and ID’s for all the available roles, for example:
  
@@ -246,7 +246,7 @@ In addition to monitoring, many customers want to subscribe to software creation
 2.	The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by leveraging PowerApps and Flow. 
 3.	The following Microsoft Flow templates for administration connectors exist for ramping up quickly:
    1.	[List new Microsoft Flow Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
-   2.	[List new PowerApps, Flows and Connectors](https://preview.flow.microsoft.com/en-us/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
+   2.	[List new PowerApps, Flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
    3.	[Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
    4.	[Access Office 365 Security and Compliance Logs from Microsoft Flow](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
 4.	This [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) exist to help ramping up quickly on the administration connectors. 
@@ -278,7 +278,7 @@ It’s well understood that monitoring as a critical aspect of managing software
 
 ### Review the audit trail
 
-[Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dynamics 365 and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
+[Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
 ### Download the PowerApps and Microsoft Flow license report
 
@@ -330,13 +330,13 @@ The means by which software is developed, validated and deployed to a production
 7.	Custom Connectors are patched for single-sign-on. 
 8.	AAD app registrations are admin consented.
 9.	The connection object is patched to use aadcertificate auth under the context of the PowerApps API Hub
-10.	SQL connectors and push notification connectors show up in the Connections view as they are a shared instance. Makes must be educated to not delete these, as they are *not* a personal connection instance of a custom connector and deleting them will delete it for all users.
+10.	SQL connectors and push notification connectors show up in the Connections view as they are a shared environment. Makes must be educated to not delete these, as they are *not* a personal connection environment of a custom connector and deleting them will delete it for all users.
 
 ### How does Microsoft prepare for disaster recovery?
 
 1.	For canvas apps, versioning is built-in the service and any maker can restore an app to a preview version. See [https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app](https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app).
 2.	For Microsoft Flows, we use the export feature to download the flow as a .zip package and archive the package.
-3.	For all Common Data Service components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](https://docs.microsoft.com/dynamics365/customer-engagement/admin/backup-restore-instances).
+3.	For all Common Data Service components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](https://docs.microsoft.com/dynamics365/customer-engagement/admin/backup-restore-environments).
 -->
 
 

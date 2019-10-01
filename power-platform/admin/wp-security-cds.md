@@ -27,9 +27,9 @@ Common Data Service uses role-based security to group together a collection of p
 
 Business units work in conjunction with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Common Data Service database has a single root business unit.
 
-You can create child business units to help further segment your users and data. Every user assigned to a Common Data Service instance will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
+You can create child business units to help further segment your users and data. Every user assigned to a Common Data Service environment will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
 
-To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We have created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this Common Data Service instance, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. By having that association allows us to tailor a security role to allow the user to see all records in that business unit.
+To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We have created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this Common Data Service environment, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. By having that association allows us to tailor a security role to allow the user to see all records in that business unit.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/example-business-unit.png "Example business units")
@@ -64,7 +64,7 @@ Individual records can be shared on a one by one basis with another user. This i
 
 ### Record level security in Common Data Service
 
-You might be wondering – what determines access to a record? That sounds like a simple question but for any given user it is the combination of all their security roles, the business unit they are associated with, the teams they are members of and the records that are shared with them. The key thing to remember is all access is accumulative across all those concepts in the scope of a Common Data Service database instance. These entitlements are only granted within a single database and are individual tracked in each Common Data Service database. This all of course requires they have an appropriate license to access Common Data Service.
+You might be wondering – what determines access to a record? That sounds like a simple question but for any given user it is the combination of all their security roles, the business unit they are associated with, the teams they are members of and the records that are shared with them. The key thing to remember is all access is accumulative across all those concepts in the scope of a Common Data Service database environment. These entitlements are only granted within a single database and are individual tracked in each Common Data Service database. This all of course requires they have an appropriate license to access Common Data Service.
 
 ### Field Level Security in Common Data Service
 
@@ -86,5 +86,5 @@ If you have used Field Level security, you would need to associate the user or a
 
 Security is a complex topic and is best accomplished as a joint effort between the application makers and the team administering the users permissions. Any major changes should be coordinated well in advance of deploying the changes into the environment.
 
-### Related topics
+### See also
 [Configure environment security](database-security.md)

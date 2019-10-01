@@ -1,24 +1,18 @@
 ---
-title: "Data loss prevention policies | MicrosoftDocs"
+title: "Data loss prevention policies  | MicrosoftDocs"
 description: About Data loss prevention policies.
-ms.custom: ""
-ms.date: 09/27/2018
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/27/2018
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Data loss prevention policies
@@ -83,7 +77,7 @@ Users accessing a PowerApp or Flow impacted by the DLP policy will see a message
 > [!div class="mx-imgBorder"] 
 > ![](media/dlp-policy-conflict.png "DLP policy conflict")
 
-One thing to keep in mind, DLP policies created for a connector do not understand that that connector could be configured to talk to Dev, Test and Production, etc. When you configure a DLP policy it is all or nothing. So, if you want to allow Dynamics 365 connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won’t help you restrict that. Another way to say the same thing, is DLP policies are Connector aware, but do not control the connections that are made using the connector.
+One thing to keep in mind, DLP policies created for a connector do not understand that that connector could be configured to talk to Dev, Test and Production, etc. When you configure a DLP policy it is all or nothing. So, if you want to allow the connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won’t help you restrict that. Another way to say the same thing, is DLP policies are Connector aware, but do not control the connections that are made using the connector.
 
 ## Strategies for creating DLP policies
 
