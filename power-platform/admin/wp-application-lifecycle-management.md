@@ -135,7 +135,7 @@ The output from the tool is a zip file containing the data and the schema file. 
 
 ## Using the Package Deployer
 
-So far, we’ve only talked about importing Common Data Service solutions manually via the user interface. The package deployer also works for Common Data Service solutions. The package deployer allows building a package that contains one or more Common Data Service solutions as well as one or more data files to import after the solutions are imported. It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. You can read more about package deployer here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-packages-package-deployer.
+So far, we’ve only talked about importing Common Data Service solutions manually via the user interface. The package deployer also works for Common Data Service solutions. The package deployer allows building a package that contains one or more Common Data Service solutions as well as one or more data files to import after the solutions are imported. It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. You can read more about package deployer here https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-packages-package-deployer.
 
 
 
