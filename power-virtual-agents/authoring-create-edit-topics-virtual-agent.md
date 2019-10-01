@@ -53,11 +53,11 @@ Power Virtual Agents opens the topic in the authoring canvas and displays the to
 
  <<< INCLUDE IMAGE OF AUTHORING CANVAS >>>
  
-  As you define the topic's conversation path, you might want to expand the authoring canvas. 
-  ....
-  ....
-  ....
+  As you define the topic's conversation path, you might want to expand the authoring canvas by hiding the test bot pane and left pane. 
+Zoom in and out of the design canvas by using the conversation editor's Zoom in and Zoom out buttons. Orient the current view of the conversation path within the conversation path as a whole by using the conversation editor's Mini-map button.
 
+<<< INCLUDE SCREENSHOT OF THE CONTROLS ON BOTTOM LEFT OF THE AUTHORING CANVAS, HIGHLIGHT MINI MAP BUTTON >>>
+ 
 2. Enter the bot's response to the trigger phrase in the **Message** box.
 
 <<<< INCLUDE IMAGE OF MESSAGE NODE HIGHLIGHTED >>>>
