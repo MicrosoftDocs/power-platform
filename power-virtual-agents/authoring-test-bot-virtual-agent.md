@@ -41,7 +41,7 @@ As you design your bot in Power Virtual Agents for Customer Service, you can use
 
 You can return to the conversation editor at any time to revise the topic's conversation path.
 
-As you fine-tune your bot, it can be useful to enable tracing to take you through the conversation path step by step.
+As you fine-tune your bot, it can be useful to enable tracking to take you through the conversation path step by step.
 
 ## To track through the topic's conversation path
 
