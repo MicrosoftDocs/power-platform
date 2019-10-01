@@ -3,6 +3,8 @@
   - name: Administer Power Platform
     href: admin-documentation.md
     items:
+    - name: Use the service admin role to manage your tenant
+      href: use-service-admin-role-manage-tenant.md
     - name: Licensing and license management
       items:
       - name: About licensing and license management
@@ -12,9 +14,7 @@
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Administer without a license
-        href: global-service-administrators-can-administer-without-license.md
-      - name: Use the service admin role to manage your tenant
-        href: use-service-admin-role-manage-tenant.md
+        href: global-service-administrators-can-administer-without-license.md      
       - name: Purchase Power BI, PowerApps, and Microsoft Flow 
         href: signup-for-powerapps-admin.md
       - name: PowerApps and Flow licensing FAQs
