@@ -84,9 +84,11 @@ Power Virtual Agents opens the topic in the authoring canvas and displays the to
 
 <<< INCLUDE IMAGE OF MULTIPLE CHOICE OPTIONS ADDED >>>
 
-    The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response.
-
+  The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response.
+  
 <<< INCLUDE IMAGE OF THE FORKED TREE >>>
+
+  You can save the user response in a variable to be used later. For more information on using variables, see [Use variables](authoring-variables-virtual-agent.md)
 
 5. Add additional message nodes and user responses to complete the conversation path.
 
