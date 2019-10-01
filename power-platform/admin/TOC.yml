@@ -8,9 +8,7 @@
       - name: About licensing and license management
         href: wp-license-management.md
       - name: Licensing overview
-        href: pricing-billing-skus.md
-      - name: PowerApps and Flow licensing FAQs
-        href: powerapps-flow-licensing-faq.md
+        href: pricing-billing-skus.md      
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Administer without a license
@@ -19,6 +17,8 @@
         href: use-service-admin-role-manage-tenant.md
       - name: Purchase Power BI, PowerApps, and Microsoft Flow 
         href: signup-for-powerapps-admin.md
+      - name: PowerApps and Flow licensing FAQs
+        href: powerapps-flow-licensing-faq.md
       - name: FAQs and more information 
         href: wp-licensing-faq.md
       - name: Requests limits and allocations
