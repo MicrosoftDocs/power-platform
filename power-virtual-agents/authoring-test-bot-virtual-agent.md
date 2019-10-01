@@ -13,53 +13,51 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
-# H1 - Should be same as your title. There should only ever be one H1.
+# Work with the Test bot pane
 
-Why would anyone want to do this thing or use this feature?
+As you design your bot in Power Virtual Agents for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the conversation path. To help you find and fix unexpected behavior, you can enable tracing to take you through the conversation path step by step, and go to the corresponding node in the authoring canvas.
 
-## H2
+## To test a topic in the Test bot pane
 
-Describe what this procedure will do and why someone would want to do it.
+1. To make sure you are using the most current bot content, select **Reset** at the top of the **Test bot** pane. This will also clear any previous conversation in the test pane.
 
+<<< INCLUDE IMAGE OF TEST PANE WITH RESET BUTTON HIGHLIGHTED >>>
 
-### Use H3 underneath H2.
-  
+2. At the **Type your message** prompt at the bottom of the **Test bot** pane, enter a trigger phrase for the topic.
 
-For standards, go to the [OPS guide](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
+<<< INCLUDE IMAGE OF ENTERING SOMETHING IN THE TYPE YOUR MESSAGE BOX >>>
 
-Here are some quick references so you can copy and paste:
-
-![IMAGE ALT TEXT](media/IMAGENAME.png)
-
-[Link text](url/filename.md)
-
-[Link text](https://microsoft.com/filename)
-
->[!NOTE]
->Use a > on a new line for each line break. Notes are purple
-
->[!WARNING]
->Use a > on a new line for each line break. These are red.
-
->[!TIP]
->Use a > on a new line for each line break. These are green.
-
->[!IMPORTANT]
->Use a > on a new line for each line break. These are blue
-
->[!CAUTION]
->I dont know if this still exists.
-
-**Bold text**
-
-*Italic text*
- 
- <!-- comment -->
+   The trigger phrase starts the topic's conversation, and the **Test bot** pane displays the bot responses and user response choices you specified.
 
 
- Table head row | Second col | Third col
- ---|---|---
- Row text | Row text | Row text
+<<< INCLUDE IMAGE OF CONVERSATION STARTED IN THE TEST BOT PANE >>>
+
+
+3. Continue the conversation path until you complete the conversation.
+
+<<< INCLUDE IMAGE OF END OF CONVERSATION WITH SURVEY >>>
+
+   If the conversation editor is open, you can select a response in the **Test bot** pane, which will take you to the response in the conversation editor.
+
+You can return to the conversation editor at any time to revise the topic's conversation path.
+
+As you fine-tune your bot, it can be useful to enable tracing to take you through the conversation path step by step.
+
+## To track through the topic's conversation path
+
+1. In the upper-left corner of the **Test bot** pane, select the **Track between topics** toggle button to enable tracking.
+
+<< INCLUDE IMAGE TO SHOW TOGGLE HIGHLIGHTED >>>
+
+2. Follow the steps discussed above to test your topic. 
+
+3. As you move through the conversation in the **Test bot** pane, the authoring canvas highlights the current place in the conversation path. The authoring canvas displays highlighted nodes in green.
+
+<<INCLUDE IMAGE OF HIGHLIGHTED NODE IN CANVAS >>>
+
+4. To navigate to an earlier place in the conversation path in the authoring canvas, select it in the **Test bot** pane.
+
+If the conversation path in the **Test your bot** pane moves from one topic to another topic, the authoring canvas refreshes and moves between topics to the appropriate highlighted nodes.
 
 
 
