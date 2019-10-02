@@ -207,12 +207,11 @@
             href: system-settings-dialog-box-previews-tab.md
           - name: On-off switch for Learning Path (guided help)
             href: on-off-switch-for-learning-path-guided-help.md            
-    - name: Requirements/supported configurations
-      href: online-requirements.md
+    - name: Requirements/supported configurations for model-driven apps     
       items: 
-      - name: Online requirements
+      - name: Requirements
         href: online-requirements.md
-      - name: Plan for online deployment and administration
+      - name: Plan for deployment and administration
         href: plan-for-deployment-and-administration.md
       - name: Supported web browsers and mobile devices
         href: supported-web-browsers-and-mobile-devices.md
