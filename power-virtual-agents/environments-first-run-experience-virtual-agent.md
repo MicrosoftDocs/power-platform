@@ -13,53 +13,67 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
-# H1 - Should be same as your title. There should only ever be one H1.
+# First run experience
 
-Why would anyone want to do this thing or use this feature?
+You can use Power Virtual Agents to create a powerful custom bot.
 
-## H2
+To help get you started and tailor the bot to your specific needs, Virtual Agent lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored conversation paths. These built-in topics can also be useful as a model for building your own conversations for similar customer-support issues. For more information, see [Work with built-in topics](how-to-templates.md).
 
-Describe what this procedure will do and why someone would want to do it.
+## To create your first bot
 
+If you encounter an issue while creating your bot, see [Known issues with creating a bot](#known-issues-with-creating-a-bot).
 
-### Use H3 underneath H2.
+1. Go to [aka.ms/virtual-agent](http://aka.ms/virtual-agent) and select **Get Started**. Sign in using your work account.
+
+   ![Sign up screen](media/sign-up-screen.png)
+    
+   You are then presented with several license agreements and terms-of-service screens. When you agree to these terms, you are assigned licenses that allow you to access the product.
+    
+2. In the **Create a new bot** dialog box, you’ll name your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
+
+   ![Create a new bot](media/create-new-bot.PNG)
+
+   Your virtual agent is created in the default PowerApps environment that was created for you in the prior step. For most users, this is sufficient. However, if you want to specify a custom PowerApps environment for your virtual agent, you can do so by expanding the **More options** menu and selecting a different environment.
   
+3. Once you select **Create**, the process for creating the first bot within a new environment can take up to 15 minutes. 
 
-For standards, go to the [OPS guide](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
+   ![Creating new bot screen](media/creating-bot-animation.png) 
 
-Here are some quick references so you can copy and paste:
+   > [!NOTE]
+   >
+   > Explore some features of Power Virtual Agents while you are waiting:
+   > - [Chat with a test bot](how-to-test-bot.md#work-with-the-test-bot-pane)
+   > - [Trace your conversation in the authoring canvas](how-to-test-bot.md#to-trace-through-the-topics-conversation-path)
+   > - [View and edit topics](getting-started-bot-designer.md#topics-page) (but not save them)
+   > - [Watch product videos](virtual-agent-videos.md)
+   
+ 4.	When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify topics, test your changes, or deploy your bot.
 
-![IMAGE ALT TEXT](media/IMAGENAME.png)
+## Creating additional bots
 
-[Link text](url/filename.md)
+If you have already created a bot, you can create a new bot by selecting the icon on the title bar to open the **Bots** pane and then selecting **New bot**.
 
-[Link text](https://microsoft.com/filename)
+   ![New bot icon in title bar](media/new-bot-icon.PNG)
 
->[!NOTE]
->Use a > on a new line for each line break. Notes are purple
+## Known issues with creating a bot
 
->[!WARNING]
->Use a > on a new line for each line break. These are red.
+When you are creating your bot, you might encounter the following issues.
 
->[!TIP]
->Use a > on a new line for each line break. These are green.
+### No read/write access to any environment
 
->[!IMPORTANT]
->Use a > on a new line for each line break. These are blue
+In this case, you see this error: “You do not have permissions to any environments. Please get access from an administrator.”
 
->[!CAUTION]
->I dont know if this still exists.
-
-**Bold text**
-
-*Italic text*
- 
- <!-- comment -->
+To resolve this issue, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md). Use that environment to create your bot.
 
 
- Table head row | Second col | Third col
- ---|---|---
- Row text | Row text | Row text
+### Insufficient permissions for the selected environment
 
+If an user selects an environment that they have insufficient access to, they get the following error: “An unexpected server error occurred. Please retry creating your bot.”
 
+To resolve this issue, create a new environemnt. To learn how follow the steps in [the environment overview article](environments-fundamentals-virtual-agent.md). Use that environment to create your bot.
 
+### The PowerApps environment I created does not show up in the drop-down menu of Virtual Agent
+
+Your environment might not show up in the drop-down menu due to one of the following:
+ - The environment doesn't have a database created. To resolve this, go to [admin.powerapps.com](https://admin.powerapps.com) to create a database in your environment.
+ - The environment is created in an unsopported region. See the list of [supported regions](requirements-geographic-virtual-agent.md).
