@@ -61,6 +61,8 @@
           href: analytics-powerapps.md
         - name: Capacity
           href: capacity-storage.md
+        - name: Capacity add-on
+          href: capacity-add-on.md
         - name: Free storage space
           href: free-storage-space.md
       - name: Manage environments
