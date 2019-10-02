@@ -17,7 +17,7 @@ search.app:
 ---
 # Supported web browsers and mobile devices
 
-Users can access the Web application with the most recent versions of these popular browsers:  
+Users can access the model-driven apps with the most recent versions of these popular browsers:  
   
 - [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)]   
   
