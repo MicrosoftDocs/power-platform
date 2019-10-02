@@ -17,7 +17,7 @@ search.app:
 ---
 # Requirements/supported configurations  
 
-model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, give you the following options to access data:  
+Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, give you the following options to access data:  
   
 - Web browser. No need to install anything to run model-driven apps in Dynamics 365 from a computer running a supported web browser.  
 
