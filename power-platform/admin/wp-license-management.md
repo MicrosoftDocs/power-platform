@@ -29,16 +29,16 @@ entitlements.
 In the rest of this section we will highlight some of the key implications and
 scenarios related to licensing, but it is not the product licensing
 documentation, you should consult that for any of the latest details. Pricing
-and specific plan details for PowerApps and Flow can be found
-[here](https://go.microsoft.com/fwlink/?linkid=2085130).
+and specific plan details for PowerApps and Flow can be found in the 
+[licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-**Use of connectors**
+## Use of connectors
 
-PowerApps and Flows use connectors to interact with services. Connectors can be
+PowerApps and Microsoft Flow use connectors to interact with services. Connectors can be
 standard, premium or custom. To use premium connectors users must be licensed
 with Standalone PowerApps or Microsoft Flow licenses.
 
-**Trial Plans**
+## Trial Plans
 
 Trial plans are available for both PowerApps and Microsoft Flow. Free trials
 last 30 days for PowerApps and 90 days for Microsoft Flow plans. Users can
@@ -68,7 +68,7 @@ but want to keep experimenting you could help them get setup on the community
 plan and help them move their application and flow assets into their new
 developer environment.
 
-**PowerApps Community Plan**
+## PowerApps Community Plan
 
 In addition to the trial plans, there is also a free PowerApps Community Plan.
 This is a special plan that allows individual self-service sign up and it
@@ -82,7 +82,7 @@ Signup for the community plan can be found
 here <https://powerapps.microsoft.com/communityplan/> and more details on its
 features here <https://docs.microsoft.com/powerapps/maker/dev-community-plan>
 
-**What users are licensed**
+## What users are licensed
 
 You can always look at individual user licensing in the Microsoft 365 admin
 center by drilling into specific users. From the PowerApps administration center
@@ -90,7 +90,7 @@ you can also produce a report focused on PowerApps licenses. This is one of the
 steps we recommend you do right away as a new administrator trying to understand
 your current licensing.
 
-You can download the report from admin.powerapps.com -\> **Tenant** -\> **User
+You can download the report from [admin.powerapps.com](https://admin.powerapps.com) -\> **Tenant** -\> **User
 Licensing**
 
 > [!div class="mx-imgBorder"] 
