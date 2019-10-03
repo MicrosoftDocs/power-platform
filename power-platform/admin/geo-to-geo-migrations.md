@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/05/2019
+ms.date: 10/02/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -77,7 +77,7 @@ We continue to open new datacenter regions for business services, and to add dat
 -   [About Microsoft Cloud India](about-microsoft-cloud-india.md)  
 
 ## How the move works  
- You’ll be provided with a list of prerequisites and post-requisites for your migration. For more information, download [Geo to geo migration information for CRM Online](http://go.microsoft.com/fwlink/p/?LinkID=619083). The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move.  
+ You’ll be provided with a list of prerequisites and post-requisites for your migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move.  
 
 
 |                         |                                                         Before the move                                                          |                                                                                                                                                                                                                                                  During the move                                                                                                                                                                                                                                                  |                                                                                                                                                   After the move                                                                                                                                                   |

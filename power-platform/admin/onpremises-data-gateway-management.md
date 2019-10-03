@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 10/02/2019
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -122,6 +122,12 @@ If a person who doesn’t have access to install gateways tries to install one, 
 
 > [!div class="mx-imgBorder"] 
 > ![Error message](media/manage-gateway-error-message.png "Error message")
+
+## Get Help
+For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform Admin center.
+
+> [!div class="mx-imgBorder"] 
+> ![Get help](media/get-help.png "Get help")
 
 ### See also
  [On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem)<br/>
