@@ -173,7 +173,7 @@ Project Service Finder app is deprecated
 ----------------------------------------
 
 The Project Service Finder App, available for use with Dynamics 365 Project Service Automation, is deprecated. The legacy application will be supported for
-associated legacy Project Service Automation(../../../includes/pn-project-service-auto.md)] releases in accordance with
+associated legacy Project Service Automation releases in accordance with
 Microsoft’s [Modern Lifecycle
 Policy](https://support.microsoft.com/help/30881). The functionality
 available through this app will be available in a future release of Dynamics 365 Project Service Automation application.
