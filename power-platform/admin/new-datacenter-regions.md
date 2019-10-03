@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 10/03/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,6 +32,7 @@ The following table lists the newest datacenter regions. Checkout the interactiv
 |**India**|India|[About Microsoft Cloud India](about-microsoft-cloud-india.md)|  
 |**Japan**|Japan|[About Microsoft Cloud Japan](about-microsoft-cloud-japan.md)|  
 |**Oceania**|Australia, New Zealand, Fiji|[About Microsoft Cloud Australia](about-microsoft-cloud-australia.md)|  
+|**US GCC/United States**<br />**US GCC High/United States**  | United States |[Dynamics 365 US Government](microsoft-dynamics-365-government.md) |
   
 <a name="BKMK_Process"></a>   
 ## Migration process  
