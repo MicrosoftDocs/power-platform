@@ -18,7 +18,7 @@ search.app:
 # Web application requirements
 
 <a name="CRMappandMobileReqs"></a> 
-This section lists the hardware and software requirements for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and mobile device client applications.  
+This section lists the hardware and software requirements for model-driven apps and mobile device client applications.  
 
 <a name="webapp_hw_req"></a>   
 ## Web application hardware requirements  
@@ -30,26 +30,17 @@ This section lists the hardware and software requirements for model-driven apps 
 |Memory|2-GB RAM|4-GB RAM or more|  
 |Display|Super VGA with a resolution of 1024 x 768|Super VGA with a resolution of 1024 x 768|  
 
- Running model-driven apps in Dynamics 365 on a computer that has less than the recommended requirements may result in inadequate performance. Additionally, satisfactory performance may be experienced running systems that use a different hardware configuration than those published here—for example, a system with a modern quad-core processor, lower clock speed, and more RAM.  
+Running model-driven apps on a computer that has less than the recommended requirements may result in inadequate performance. Additionally, satisfactory performance may be experienced running systems that use a different hardware configuration than those published here—for example, a system with a modern quad-core processor, lower clock speed, and more RAM.  
 
  **Network requirements**  
 
- Model-driven apps in Dynamics 365 are designed to work best over networks that have the following elements:  
+ Model-driven apps are designed to work best over networks that have the following elements:  
 
 -   Bandwidth greater than 50 KBps (400 kbps)  
 
 -   Latency under 150 ms  
 
 Notice that these values are recommendations and don’t guarantee satisfactory performance. The recommended values are based on systems using out-of-the box forms that aren’t customized. If you significantly customize the out-of-box forms, we recommend that you test the form response to understand bandwidth needs. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Verify network capacity and throughput for clients](verify-network-capacity-throughput-clients.md)  
-
-### Network requirements when you use interactive service hub experience  
- The interactive service hub experience is designed to work best over networks that have the following elements:  
-
--   Bandwidth greater than 1Megabit per second (125 KBps/Kilobyte per second)  
-
--   Latency under 150 ms  
-
-Notice that the suggested network requirements include the metadata download needed for first run or newly published customizations. The interactive service hub typically requires more bandwidth when metadata has to be downloaded. These values are recommendations and don’t guarantee satisfactory performance. The values are based on systems using uncustomized, out-of-the box forms. If you significantly customize the out-of-box forms, we recommend that you test the form response to understand bandwidth needs.  
 
 <a name="SupportedOS"></a>   
 ## Supported versions of Internet Explorer and Microsoft Edge  
@@ -65,7 +56,7 @@ Notice that the suggested network requirements include the metadata download nee
 
  <sup>1</sup> This version of [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] doesn’t support the version of [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Internet Explorer 11 – FAQ for IT Pros](https://technet.microsoft.com/library/dn268945.aspx)  <br/>
 <sup>2</sup> Supported with the classic web application. Not supported with Unified Interface apps. <br/>
-<sup>3</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/customer-service-hub-user-guide-basics). <br/>
+<sup>3</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics). <br/>
 
 > [!IMPORTANT]
 >  Although you may be able to use [!INCLUDE[pn_IE_8](../includes/pn-ie-8.md)], [!INCLUDE[pn_IE_9](../includes/pn-ie-9.md)], or an [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] and [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] combination that is not supported in the previous table, those web browsers are not recommended and are not supported with this version of model-driven apps in Dynamics 365.  
@@ -110,7 +101,7 @@ To find the latest release for these web browsers, visit the software manufactur
 
 <a name="BKMK_TLS"></a> 
 ## Transport Layer Security (TLS) requirement
-With the [!INCLUDE [pn-crm-9-0-0-online](../includes/pn-crm-9-0-0-online.md)], web browsers and other client applications that only use Transport Layer Security (TLS) versions earlier than TLS 1.2 will be unable to connect to their [!INCLUDE [pn-crm-online-shortest](../includes/pn-crm-online-shortest.md)] environments and the [!INCLUDE [pn-dyn-365-admin-center](../includes/pn-dyn-365-admin-center.md)]. 
+Web browsers and other client applications that use Transport Layer Security (TLS) versions earlier than TLS 1.2 won't be able to connect to their [!INCLUDE [pn-crm-online-shortest](../includes/pn-crm-online-shortest.md)] environments and the admin center. 
 
 For more information, see these blog posts: 
 - [Updates coming to connection security](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)

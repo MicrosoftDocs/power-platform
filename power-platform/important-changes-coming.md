@@ -146,25 +146,6 @@ Microsoft will continue to provide security and other critical updates to the Dy
 
 If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft’s ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
 
-Dynamics 365 for Outlook (Outlook add-in) is deprecated
--------------------------------------------------------
-
-> [!IMPORTANT]
-> As of 1/29/2018, based on overwhelming customer feedback and our desire to continue supporting our customers, we have **decided not to deprecate Dynamics 365 for Outlook (Outlook add-in). Read [this blog post](https://blogs.msdn.microsoft.com/crm/2018/01/29/continued-support-for-outlook-add-in-dynamics-365-for-outlook/) for more details.
-
-Dynamics 365 App for Outlook, introduced with Dynamics CRM 2016 (version 8.0),
-is our most up-to-date offering for pairing Dynamics 365 with Microsoft Outlook.
-With Dynamics 365 App for Outlook, you can see contextual information from
-Common Data Service right inside your Outlook Inbox. With a single click, you can link
-an Outlook email message or appointment to a specific Common Data Service record.
-Dynamics 365 App for Outlook works together with server-side sync.
-
-As such, the legacy Outlook add-in—Dynamics 365 for Outlook—is deprecated with
-version 9.x and will be removed in a future major
-release. This deprecation includes Offline mode and synchronization in Dynamics 365 for Outlook.
-
-More information: [Help & Training: [Dynamics 365 App for Outlook User’s Guide](/dynamics365/customer-engagement/outlook-app/dynamics-365-app-outlook-user-s-guide)
-
 
 Service scheduling in Dynamics 365 Customer Service is deprecated
 ---------------------------------------------------------------------
@@ -192,7 +173,7 @@ Project Service Finder app is deprecated
 ----------------------------------------
 
 The Project Service Finder App, available for use with Dynamics 365 Project Service Automation, is deprecated. The legacy application will be supported for
-associated legacy Project Service Automation(../../../includes/pn-project-service-auto.md)] releases in accordance with
+associated legacy Project Service Automation releases in accordance with
 Microsoft’s [Modern Lifecycle
 Policy](https://support.microsoft.com/help/30881). The functionality
 available through this app will be available in a future release of Dynamics 365 Project Service Automation application.
