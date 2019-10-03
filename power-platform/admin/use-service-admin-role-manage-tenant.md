@@ -17,7 +17,7 @@ search.app:
 ---
 # Use the service admin role to manage your tenant 
 
-To help you administer model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, you can assign users to manage model-driven apps in Dynamics 365 at the tenant level without having to assign the more powerful [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global admin privileges.  
+To help you administer model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Dynamics 365 Customer Service, you can assign users to manage model-driven apps in Dynamics 365 at the tenant level without having to assign the more powerful [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global admin privileges.  
   
  Users with the service admin role can:  
   
