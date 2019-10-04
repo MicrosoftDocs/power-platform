@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/04/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,8 +17,8 @@ search.app:
 ---
 # Licensing overview
 
-> [!NOTE]
-> For information about licensing changes coming to PowerApps and Microsoft Flow in October 2019, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md).
+> [!IMPORTANT]
+> This topic is out-of-date and will be updated soon to reflect the latest licensing changes that are applicable starting October 1, 2019. For the latest information on licensing, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md) and [PowerApps licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## About PowerApps licenses
 
