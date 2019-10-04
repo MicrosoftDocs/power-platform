@@ -13,7 +13,7 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
-# First run experience
+# Creating the first bot
 
 When you successfully [obtain a license](requirements-licensing-virtual-agent.md), you will need to create a bot to start using Power Virtual Agents.
 
