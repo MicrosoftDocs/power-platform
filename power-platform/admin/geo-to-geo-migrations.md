@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/05/2019
+ms.date: 10/03/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -22,13 +22,11 @@ We continue to open new datacenter regions for business services, and to add dat
  The Geo Migration feature will allow customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of an environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the Common Data Service environment doesn’t move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they are separate services. Your environment will still appear in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
 
 > [!IMPORTANT]
-> Support for geo migration is limited and generally not available.
->
->  For versions prior to version 9.0, you can move individual environments from one geographical region to another. When you do so, your tenant becomes a multiregional tenant. Regional features are enabled in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
-> 
->  To request a regional migration, please contact your account manager or  see [Technical Support](get-help-support.md).  
-> 
->  Version 9.0 does not currently support regional migration. Check back later for availability. 
+> - Support for geo migration is limited and generally not available.
+> - For versions prior to version 9.0, you can move individual environments from one geographical region to another. When you do so, your tenant becomes a multiregional tenant. Regional features are enabled in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
+> - To request a regional migration, please contact your account manager or  see [Technical Support](get-help-support.md).  
+> - Version 9.0 does not currently support regional migration. Check back later for availability. 
+> - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
 
 ## Impact of migrating  
  Moving an environment to a different region changes your tenant to be multiregional - enabling regional features in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
@@ -77,7 +75,7 @@ We continue to open new datacenter regions for business services, and to add dat
 -   [About Microsoft Cloud India](about-microsoft-cloud-india.md)  
 
 ## How the move works  
- You’ll be provided with a list of prerequisites and post-requisites for your migration. For more information, download [Geo to geo migration information for CRM Online](http://go.microsoft.com/fwlink/p/?LinkID=619083). The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move.  
+ You’ll be provided with a list of prerequisites and post-requisites for your migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move.  
 
 
 |                         |                                                         Before the move                                                          |                                                                                                                                                                                                                                                  During the move                                                                                                                                                                                                                                                  |                                                                                                                                                   After the move                                                                                                                                                   |

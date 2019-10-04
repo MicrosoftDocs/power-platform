@@ -17,8 +17,6 @@ search.app:
 ---
 # About licensing and license management
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 Organizations can obtain licenses by either licensing Microsoft PowerApps or
 Flow specifically or by it being included in the license of another Microsoft
 cloud service offering. For example, both Office 365 and Dynamics 365 provide

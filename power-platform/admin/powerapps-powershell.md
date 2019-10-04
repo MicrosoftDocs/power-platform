@@ -1,14 +1,14 @@
 ---
 title: PowerShell support (preview) | Microsoft Docs
 description: Description of the different PowerShell cmdlets and a walkthrough of how to install and run them.
-author: jamesol-msft
+author: jimholtz
 manager: kvivek
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/01/2019
-ms.author: jamesol
+ms.date: 10/04/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -98,11 +98,11 @@ Check back for the availability of operation and access permissions for model-dr
 ### Prerequisite
 To perform the administration operations in the admin cmdlets, you'll need the following:
 
-- Office 365 Global admins or Azure Active Directory Global admins no longer require a P2 license for administrative access to the PowerApps admin PowerShell cmdlets. However, these administrators need to sign in to the [PowerApps Admin Center](https://admin.powerapps.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
+- A user with any of these roles, Office 365 Global admins, Azure Active Directory Global admins, or Dynamics 365 Service administrator, can access the PowerApps admin PowerShell cmdlets. These roles no longer require a P2 license for administrative access to the PowerApps admin PowerShell cmdlets. However, these administrators need to sign in to the [PowerApps Admin Center](https://admin.powerapps.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
-- [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user’s resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+- [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504), [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 Service administrator](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user’s resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
 
-- Check back for the availability of operation and access permissions for admin and the upcoming Power Platform admin role.
+- Check back for availability of operation and access permissions for the upcoming Power Platform admin role.
 
 ### Cmdlet list - Admin Cmdlets
 
@@ -378,6 +378,7 @@ Adds a connector to the ‘Business data only’ group in a given DLP policy. Se
 | 04/29/2019 | Revised GCC terminology. |
 | 05/10/2019 | Revised links for Cmdlets available on the PowerShell gallery to remove preset version. |
 | 05/20/2019 | Added support for environment-specific Data Loss Prevention (DLP) policies.  |
+| 08/30/2019 | <ol><li>Added BlockNonBusinessDataGroup to New-AdminDlpPolicy that can block all the connectors in Non business data group (LBI).</li><li>Added SetNonBusinessDataGroupState('Block' and 'Unblock') parameter to Set-AdminDlpPolicy to block or unblock all the connectors in Non business data group (LBI).</li></ol>   |
 
 ## Questions?
 

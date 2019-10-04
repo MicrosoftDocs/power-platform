@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/12/2019
+ms.date: 10/04/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -136,8 +136,8 @@ You use a different set of URLs to access PowerApps US Government environments, 
 
 | **Commercial version URL**     | **US Government version URL**         |
 |--------------------------------|---------------------------------------|
-| <https://web.powerapps.com>    | <https://gov.web.powerapps.us> (GCC) <br/><https://gov.make.powerapps.us> (GCC)<br/><https://high.make.powerapps.us> (GCC High)   |
-| <https://create.powerapps.com> | <https://gov.create.powerapps.us> (GCC)<br /><https://high.make.powerapps.us> (GCC High)    |
+| <https://web.powerapps.com>    | <https://make.gov.powerapps.us> (GCC)<br/><https://make.high.powerapps.us> (GCC High)   |
+| <https://create.powerapps.com> | <https://make.gov.powerapps.us> (GCC)<br /><https://make.high.powerapps.us> (GCC High)    |
 | <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us> (GCC)<br /><https://high.admin.powerapps.us> (GCC High)     |
 | <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors><br /><https://high.flow.microsoft.us/connectors> (GCC High)  |
 

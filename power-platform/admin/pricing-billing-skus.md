@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/04/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,7 +15,12 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-**Overview**
+
+# Licensing overview for Power Platform
+
+The topics in this section provide detailed information about PowerApps and Microsoft Flow licensing.
+
+For information about Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
 
 **PowerApps/Microsoft Flow for Office 365**
 
@@ -73,3 +78,4 @@ capabilities.
 
 More details are present in [Dynamics 365 Licensing
 guide ](https://go.microsoft.com/fwlink/p/?LinkId=866544)
+
