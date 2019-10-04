@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/02/2019
+ms.date: 10/04/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -378,6 +378,7 @@ Adds a connector to the ‘Business data only’ group in a given DLP policy. Se
 | 04/29/2019 | Revised GCC terminology. |
 | 05/10/2019 | Revised links for Cmdlets available on the PowerShell gallery to remove preset version. |
 | 05/20/2019 | Added support for environment-specific Data Loss Prevention (DLP) policies.  |
+| 08/30/2019 | <ol><li>Added BlockNonBusinessDataGroup to New-AdminDlpPolicy that can block all the connectors in Non business data group (LBI).</li><li>Added SetNonBusinessDataGroupState('Block' and 'Unblock') parameter to Set-AdminDlpPolicy to block or unblock all the connectors in Non business data group (LBI).</li></ol>   |
 
 ## Questions?
 
