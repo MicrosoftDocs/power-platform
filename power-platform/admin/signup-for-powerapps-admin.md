@@ -19,7 +19,7 @@ search.app:
 # Purchase PowerApps for your organization
 
 > [!IMPORTANT]
-> This topic is out-of-date and will be updated soon to reflect the latest licensing changes that are applicable starting October 1, 2019. For the latest information on licensing requirements for entities, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md) and [PowerApps licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+> This topic is out-of-date and will be updated soon to reflect the latest licensing changes that are applicable starting October 1, 2019. For the latest information on licensing, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md) and [PowerApps licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 This topic shows you how to purchase PowerApps for your organization as an administrator. You can purchase PowerApps through the PowerApps website directly, through the Microsoft 365 admin center, or through your Microsoft representative or partner. This article will discuss the trial options available for PowerApps Plan 1 or Plan 2 and then explain how to purchase PowerApps Plan 1 or Plan 2 as an organization. For more information, see [PowerApps in your organization Q&A](signup-question-and-answer.md).
 
