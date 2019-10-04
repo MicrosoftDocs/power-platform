@@ -28,7 +28,7 @@ For a walkthrough of how to connect to your customer service data to gain insigh
 The AI-driven technology empowers informed decision making about how to improve resolution rates, reduce wait times, and decrease customer service costs. You can use case resolution insights, backlog trends, and historical comparisons to evaluate agent performance and business impact, and address inefficiencies in your system.
 
 
-## Identifying popular and emerging topics in the CSI dashboard
+## Popular and emerging topics in the CSI dashboard
 
 Looking at the **New Cases** tab in Customer Service Insights, you can see cases with similar intent that are grouped through AI learning into: 
 
@@ -56,7 +56,7 @@ Topics that have:
 2. High average resolution time, could mean that customers are either waiting in queue for a long time to connect to agents
 3. High resolution rate, meaning, agents are able to resolve the issue
 
-are good candidates to optimize and automate in your bot in Power Virtual Agents.
+Such topics are good candidates to optimize and automate in your bot in Power Virtual Agents.
 
 You can also explore the Cases that are contained in this topic by clicking on the **Cases** tab. 
 
@@ -69,61 +69,21 @@ The Cases tab shows all the cases that Go through the case titles to determine t
 
 Once you have identified a topic to automate in your bot, click the **Automate** button on the command bar. 
 
-<<< INCLUDE IMAGE OF AUTOMATE BUTTON HIGHLIGHTED >>>
+<<< INCLUDE IMAGE OF AUTOMATE BUTTON HIGHLIGHTED ON CASES TAB  >>>
 
-This button is available on the Analytics tab of the topic and on the Cases tab of the topic.
+This button is available on the **Analytics** tab of the topic and on the **Cases** tab of the topic.
 
 
 ## New topic in Power Virtual Agents
+
+Discuss license needs and having a bot created. Discuss experience when you don't have these setup. Discuss experience of successful automation.
 
 
 > [!NOTE]
 >  
 > Watch this video to learn more about creating topic suggestions from CSI 
+>
 > <<<< INCLUDE VIDEO  >>>
-
-
-
-
-
-### Use H3 underneath H2.
-  
-
-For standards, go to the [OPS guide](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
-
-Here are some quick references so you can copy and paste:
-
-![IMAGE ALT TEXT](media/IMAGENAME.png)
-
-[Link text](url/filename.md)
-
-[Link text](https://microsoft.com/filename)
-
->[!NOTE]
->Use a > on a new line for each line break. Notes are purple
-
->[!WARNING]
->Use a > on a new line for each line break. These are red.
-
->[!TIP]
->Use a > on a new line for each line break. These are green.
-
->[!IMPORTANT]
->Use a > on a new line for each line break. These are blue
-
->[!CAUTION]
->I dont know if this still exists.
-
-**Bold text**
-
-*Italic text*
- 
- <!-- comment -->
-
-
- Table head row | Second col | Third col
- ---|---|---
- Row text | Row text | Row text
 
 
 
