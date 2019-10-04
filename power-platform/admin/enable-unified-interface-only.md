@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 10/04/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -102,14 +102,7 @@ When Unified Interface Only mode is enabled, environment settings can be accesse
 
 ## How to enable Unified Interface Only mode
 
-Unified Interface Only can be turned on and off in one of two ways:
-
-- Go to **Settings** > **Administration** > **System Settings** > **General** tab. Under **Use the new Unified Interface only (recommended)**, select **Yes** for **Enable only the Unified Interface**.
-
-> [!div class="mx-imgBorder"] 
-> ![](media/d365ce-system-settings-uci-only.png "System Settings for Unified Interface Only")
-
-- In the Power Platform Admin center, go to **Environments** and select an environment. Go to **Settings** > **Behavior** > **Interface settings** and then turn on **Use Unified Interface only**.
+In the Power Platform Admin center, go to **Environments** and select an environment. Go to **Settings** > **Behavior** > **Interface settings** and then turn on **Use Unified Interface only**.
 
 ## FAQs
 
