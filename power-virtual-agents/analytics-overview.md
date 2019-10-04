@@ -13,7 +13,7 @@ manager: mahesha
 # Analytics overview
 
 
-Dynamics 365 Virtual Agent for Customer Service analytics pages contain a variety of charts that show you key performance indicators for your bot, give you graphical views of the trends and breakdowns in your bot's support topics, and use artificial intelligence technology to highlight support topics that are having the greatest impact on your bot's performance.
+Power Virtual Agents analytics pages contain a variety of charts that show you key performance indicators for your bot, give you graphical views of the trends and breakdowns in your bot's support topics, and use artificial intelligence technology to highlight support topics that are having the greatest impact on your bot's performance.
 
 You can display [Summary](analytics-summary.md) and [Customer satisfaction](analytics-CSAT.md) pages by selecting the appropriate tab at the top of the page. The Summary page is displayed by default.
 
