@@ -35,16 +35,10 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
    > [!NOTE]
    >
-   > Explore some features of Power Virtual Agents while you are waiting:
-   > - [Chat with a test bot](how-to-test-bot.md#work-with-the-test-bot-pane)
-   > - [Trace your conversation in the authoring canvas](how-to-test-bot.md#to-trace-through-the-topics-conversation-path)
-   > - [View and edit topics](getting-started-bot-designer.md#topics-page) (but not save them)
-   > - [Watch product videos](virtual-agent-videos.md)
+   > Creating a bot can take up to 15 minutes.
    
  4.	When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify topics, test your changes, or deploy your bot.
  
- 
-If you encounter an issue while creating your bot, see [Known issues with creating a bot](#known-issues-with-creating-a-bot).
 
 ## Creating additional bots
 
