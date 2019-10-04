@@ -17,10 +17,8 @@ search.app:
 ---
 # FAQs and more information
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!NOTE]
-> For information about licensing changes coming to PowerApps and Microsoft Flow in October 2019, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md).
+> [!IMPORTANT]
+> This topic is out-of-date and will be updated soon to reflect the latest licensing changes that are applicable starting October 1, 2019. For the latest FAQs on licensing, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md).
 
 We have found some common questions on licensing and plan options. We’ve included several here with their answers. However, if you find you need more details, you can find that on PowerApps plans here https://powerapps.microsoft.com/pricing/ and Microsoft Flow plans here https://flow.microsoft.com/pricing/. For additional information on the mechanics of managing users, please refer to: [Manage PowerApps licenses in your organization](signup-question-and-answer.md).
 
