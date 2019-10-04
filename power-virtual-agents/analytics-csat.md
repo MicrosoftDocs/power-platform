@@ -34,7 +34,7 @@ The Customer Satisfaction Drivers chart uses artificial intelligence technology 
 
 Description | Details
 ----------- | -------
-Topic | A Dynamics 365 Virtual Agent for Customer Service topic.
+Topic | A Power Virtual Agents topic.
 Engaged sessions | The number of engaged sessions for the topic within the specified time period.
 Resolution rate | The percentage of engaged sessions for the topic that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey and either does not respond or responds *Yes*.
 Abandon rate | The percentage of engaged sessions for the topic that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.
