@@ -29,7 +29,7 @@ An environment is a space to store, manage and share your organization's busines
 
 2. Select **+ New** to open the **New environment** creation experience.
 
-   ![Create environment](media/environment-create-1.png)
+   ![Create environment](media/environments-create-1.png)
   
    - Specify a unique name for the environment
    - Select the environment type
@@ -37,7 +37,7 @@ An environment is a space to store, manage and share your organization's busines
    - Set Create a new database to Yes
    - Then select **Next**.
    
-   ![Create environment](media/environment-create-2.png)
+   ![Create environment](media/environments-create-2.png)
    
    > [!NOTE]
    > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a bot.
