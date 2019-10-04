@@ -12,7 +12,6 @@ manager: mahesha
 
 # Sessions page
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ![Sessions page](media/sessions-page.png)
 
