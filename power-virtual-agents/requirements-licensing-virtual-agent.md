@@ -54,3 +54,9 @@ You can pruchase Power Virtual Agents licenses for your organization from the [M
 ## Trial plans
 Users in your organization can trial Power Virtual Agents for 60 days.
 You can choose to disable or enable the ability for users in your organization to sign up for a trial by modifying the **AllowAdHocSubscriptions** flag in your organization settings. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-self-service-signup). 
+
+## Why don't I see total number of conversations in the product?
+Currently, we only report number of total and engaged sessions in the product. We're working on adding a report for the total number of conversations so that you can learn how much of paid units have your bot used.
+
+## Licensing Terms
+Visit [Microsoft Volume Licensing](http://www.microsoftvolumelicensing.com/Default.aspx) to quickly access licensing terms, conditions, and supplemental information relevant to the use of Power Virtual Agents
