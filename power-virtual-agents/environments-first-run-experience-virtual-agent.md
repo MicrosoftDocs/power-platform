@@ -60,7 +60,7 @@ When you are creating your bot, you might encounter the following issues.
 
 In this case, you see this error: “You do not have permissions to any environments. Please get access from an administrator.”
 
-To resolve this issue, follow the steps in the article [To create a new environment](fundamentals-create-new-environment.md). Use that environment to create your bot.
+You will need to create a new environment (read article on [working with environments](environments.md)). Use that environment to create your bot.
 
 ### The environment I created does not show up in the drop-down menu of Virtual Agent
 
