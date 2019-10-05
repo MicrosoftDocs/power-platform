@@ -18,9 +18,6 @@ search.app:
 
 # Manage PowerApps licenses in your organization
 
-> [!IMPORTANT]
-> This topic is out-of-date and will be updated soon to reflect the latest licensing changes that are applicable starting October 1, 2019. For the latest information on licensing, see [PowerApps and Microsoft Flow licensing FAQs for October 2019](powerapps-flow-licensing-faq.md) and [PowerApps licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
-
 This topic describes how users in your organization can get access to use PowerApps, and how you can control access to the PowerApps service.
 
 ## Sign up for PowerApps
