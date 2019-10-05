@@ -2,9 +2,19 @@
   items: 
   - name: Administer Power Platform
     href: admin-documentation.md
-    items:
-    - name: Licensing changes in October 2019
+    items:    
+    - name: Licensing and license management
       items:
+      - name: Licensing overview
+        href: pricing-billing-skus.md
+      - name: About licensing and license management
+        href: wp-license-management.md            
+      - name: Manage licenses in your org
+        href: signup-question-and-answer.md
+      - name: Administer without a license
+        href: global-service-administrators-can-administer-without-license.md      
+      - name: Purchase PowerApps 
+        href: signup-for-powerapps-admin.md
       - name: PowerApps and Flow licensing FAQs
         href: powerapps-flow-licensing-faq.md
       - name: Requests limits and allocations
@@ -235,23 +245,7 @@
       - name: Connectors 
         href: wp-connectors.md
       - name: Solution Packages 
-        href: wp-solution-packages.md
-    - name: Licensing and license management 
-      items:
-      - name: About licensing and license management
-        href: wp-license-management.md      
-      - name: Licensing overview
-        href: pricing-billing-skus.md
-      - name: Manage licenses in your org
-        href: signup-question-and-answer.md
-      - name: Administer without a license
-        href: global-service-administrators-can-administer-without-license.md
-      - name: Use the service admin role to manage your tenant
-        href: use-service-admin-role-manage-tenant.md
-      - name: Purchase PowerApps
-        href: signup-for-powerapps-admin.md
-      - name: FAQs and more information 
-        href: wp-licensing-faq.md
+        href: wp-solution-packages.md          
     - name: Security
       items:
       - name: Overview
@@ -684,8 +678,12 @@
     href: about-flow-guide.md
   - name: Administer Power BI
     href: about-powerbi-guide.md
-  - name: Administer model-driven apps in Dynamics 365
-    href: about-ce-guide.md
+  - name: Administer model-driven apps in Dynamics 365    
+    items:
+      - name: Overview
+        href: about-ce-guide.md
+      - name: Use the service admin role to manage your tenant
+        href: use-service-admin-role-manage-tenant.md
   - name: "Reference: Use the various admin centers"
     href: admin-centers.md
   - name: "Reference: Videos and PowerPoint presentations"
