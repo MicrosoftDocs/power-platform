@@ -51,7 +51,7 @@ Microsoft Flow Plans:
 More details can be found in [Microsoft PowerApps and Flow Licensing
 Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
-### Is non-profit, government, and academic pricing available?**
+### Is non-profit, government, and academic pricing available?
 
 Yes, Non-Profit, Government and Academic pricing is available in respective
 program channels.
@@ -152,10 +152,8 @@ described [here](http://aka.ms/platformlimits). Per user service limits provide
 capacity assurance for users and alleviate the risk of one user exhausting the
 tenant wide quota.
 
-**How does the change to PowerApps and Microsoft Flow use rights for Office 365
-applications affect me if I purchased the subscriptions prior to Oct 1st 2019?
-Will my existing PowerApps applications and Microsoft Flow workflows continue to
-work?**
+### How does the change to PowerApps and Microsoft Flow use rights for Office 365 applications affect me if I purchased the subscriptions prior to Oct 1st 2019? Will my existing PowerApps applications and Microsoft Flow workflows continue to
+work?
 
 Yes, existing apps and flows will continue to work. Customers who have been
 using PowerApps or Microsoft Flow with Office 365 using one or more of the
@@ -393,12 +391,12 @@ Yes, we have a free Community Plan to learn and build skills on PowerApps,
 Microsoft Flow and Common Data Service. [Learn
 more](https://powerapps.microsoft.com/communityplan/).
 
-### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?**
+### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
 You can buy additional data storage, file storage and flow runs. See the
 PowerApps Licensing overview page for more information.
 
-### Who can buy Microsoft PowerApps and Flow Plans?**
+### Who can buy Microsoft PowerApps and Flow Plans?
 
 Any customer can sign up for a free trial. Office 365 admins can buy PowerApps
 plans for their teams or organization. Contact your Office 365 admin when you’re
