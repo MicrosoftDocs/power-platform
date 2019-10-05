@@ -223,6 +223,12 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Customize a SharePoint list form by using PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form).
 
+## Requesting support
+
+Having a problem with your service? You can create a support request to get the issue resolved.  
+  
+More information: [Contact Technical Support](get-help-support.md)
+
 ### See also
 [Microsoft Flow US Government](https://docs.microsoft.com/flow/us-govt)
 
