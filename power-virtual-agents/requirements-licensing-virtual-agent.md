@@ -28,8 +28,9 @@ When you purchase Virtual Agents license, you also get entitlements for Microsof
 | Add on SKU**  | 1,000                    |                      N/A |                            N/A |
 | Viral trial   | N/A                      |                Flow free |           2 trial environments |
 
-* Users need to have both licenses to access Power Virtual Agents
-** Entitlements are pooled across the entire organization. Any user who has a USL can use the entitlements
+'* Users need to have both licenses to access Power Virtual Agents
+
+'** Entitlements are pooled across the entire organization. Any user who has a USL can use the entitlements
 
 
 ## Managing liceneses using Microsoft Admin Portal
@@ -49,7 +50,8 @@ You can pruchase Power Virtual Agents licenses for your organization from the [M
 3. Select users you would like to give access to and select **Manage product licenses**
 4. Select **Power Virtual Agents User License** and click **Save changes**
 
-!NOTE To simplify User License management you can assign licenses to an AAD security group. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/licensing-groups-assign)
+  > [!NOTE]
+  > To simplify User License management you can assign licenses to an AAD security group. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
 ## Trial plans
 Users in your organization can trial Power Virtual Agents for 60 days.
