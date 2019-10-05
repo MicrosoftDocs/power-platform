@@ -2,9 +2,7 @@
   items: 
   - name: Administer Power Platform
     href: admin-documentation.md
-    items:
-    - name: Use the service admin role to manage your tenant
-      href: use-service-admin-role-manage-tenant.md
+    items:    
     - name: Licensing and license management
       items:
       - name: Licensing overview
@@ -680,8 +678,12 @@
     href: about-flow-guide.md
   - name: Administer Power BI
     href: about-powerbi-guide.md
-  - name: Administer model-driven apps in Dynamics 365
-    href: about-ce-guide.md
+  - name: Administer model-driven apps in Dynamics 365    
+    items:
+      - name: Overview
+        href: about-ce-guide.md
+      - name: Use the service admin role to manage your tenant
+        href: use-service-admin-role-manage-tenant.md
   - name: "Reference: Use the various admin centers"
     href: admin-centers.md
   - name: "Reference: Videos and PowerPoint presentations"
