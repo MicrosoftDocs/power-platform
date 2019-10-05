@@ -35,7 +35,8 @@ plan. More details around what Office plans includes these capabilities can be
 found in [Microsoft PowerApps and Microsoft Flow Licensing
 Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
-| **Functionalities**                                                   | **PowerApps for Office 365** |
+
+| Functionalities                                                   | PowerApps for Office 365 |
 |-----------------------------------------------------------------------|------------------------------|
 | Create, run and share apps                                            | Yes                          |
 | Run canvas apps in context of Office 365                              | Yes                          |
