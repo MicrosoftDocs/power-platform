@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/26/2018
+ms.date: 10/05/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,7 +31,7 @@ The following features are not yet present in the Unified Interface but can be e
 - All options under **Set Personal Options** (![Settings gear](media/settings-gear-icon.png "Settings gear"))
 
  > [!NOTE]
-   >  Hybrid experience is not available on mobile.  
+   > The hybrid experience is not available for on-premises versions or on mobile.  
 
 These features are enabled through a setting in System Settings.
 
