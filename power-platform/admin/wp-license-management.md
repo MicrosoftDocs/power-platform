@@ -1,13 +1,14 @@
 ---
 title: "Licensing and license management  | MicrosoftDocs"
 description: About licensing and license management.
-author: jimholtz
+author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2019
-ms.author: jimholtz
+ms.date: 10/04/2019
+ms.author: dileeps
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app: 

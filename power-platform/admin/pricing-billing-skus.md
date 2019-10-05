@@ -1,13 +1,14 @@
 ---
 title: Licensing overview | Microsoft Docs
 description: Overview of licensing in PowerApps.
-author: jimholtz
+author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/04/2019
-ms.author: jimholtz
+ms.author: dileeps
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app: 
