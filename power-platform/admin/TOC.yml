@@ -19,8 +19,6 @@
         href: signup-for-powerapps-admin.md
       - name: PowerApps and Flow licensing FAQs
         href: powerapps-flow-licensing-faq.md
-      - name: FAQs and more information 
-        href: wp-licensing-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
   - name: Administer PowerApps
