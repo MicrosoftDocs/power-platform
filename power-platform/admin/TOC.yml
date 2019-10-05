@@ -7,10 +7,10 @@
       href: use-service-admin-role-manage-tenant.md
     - name: Licensing and license management
       items:
-      - name: About licensing and license management
-        href: wp-license-management.md
       - name: Licensing overview
-        href: pricing-billing-skus.md      
+        href: pricing-billing-skus.md
+      - name: About licensing and license management
+        href: wp-license-management.md            
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Administer without a license
