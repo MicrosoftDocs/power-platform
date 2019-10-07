@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 10/07/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -207,7 +207,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 3. Select Conditional Access.
 4. Select + New Policy
 5. Select user and groups
-6. Select the cloud apps
+6. Select the cloud apps - select **Common Data Service** to control access to model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service)
 7. Apply conditions (user/group, device, location) 
 
 ### Prevent data leakage with data loss prevent policies

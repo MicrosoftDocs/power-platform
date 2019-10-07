@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/24/2019
+ms.date: 10/07/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -44,7 +44,7 @@ For information, see: [Create a basic group and add members using Azure Active D
 <a name="BKMK_CreateTrustedIPRule"></a>   
 
 ## Create a location based restriction
-Access restriction is set using Azure Active Directory (AD) Conditional Access and the Trusted IPs feature of Azure Multi-Factor Authentication. 
+Access restriction is set using Azure Active Directory (AD) Conditional Access and the Trusted IPs feature of Azure Multi-Factor Authentication. For the cloud app, select **Common Data Service** to control access to model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).
 
 See:
 - [Getting started with conditional access to Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-azuread-connected-apps/)
