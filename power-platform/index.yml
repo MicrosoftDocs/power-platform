@@ -24,7 +24,7 @@ productDirectory:
       links:
         - url: https://docs.microsoft.com/power-bi/
           text: Documentation
-        - url: https://docs.microsoft.com/en-us/learn/browse/?resource_type=learning%20path&products=power-bi
+        - url: https://docs.microsoft.com/en-us/learn/browse/?products=power-bi
           text: Learn Power BI
     # Card
     - title: PowerApps
@@ -32,7 +32,7 @@ productDirectory:
       links:
         - url: https://docs.microsoft.com/powerapps
           text: Documentation
-        - url: https://docs.microsoft.com/en-us/learn/browse/?resource_type=learning%20path&products=powerapps
+        - url: https://docs.microsoft.com/en-us/learn/browse/?products=powerapps
           text: Learn PowerApps
     # Card
     - title: Microsoft Flow
