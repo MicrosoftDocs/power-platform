@@ -55,7 +55,7 @@ Standalone PowerApps and Microsoft flow plans provide users the ability to
 create and run apps across data sources that extend beyond Office 365, such as
 Salesforce, on-premises and custom data sources. These plans also include access
 to Common Data Service to store and manage data. Learn more: [What is Common Data
-Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
+Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 
 More details around pricing and capabilities of standalone plans can be found in
 [Microsoft PowerApps and Microsoft Flow Licensing
