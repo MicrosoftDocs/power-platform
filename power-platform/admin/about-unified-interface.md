@@ -58,6 +58,7 @@ There are certain capabilities that continue to be unavailable in the Unified In
 
 -	Custom styling of advanced chart properties (excluding colors and basic formatting)
 -	Composite address control
+- Composite fullname control
 -	Global notifications
 -	Admin experiences
 -	Editable grids on phones
