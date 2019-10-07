@@ -72,7 +72,6 @@ There are certain entities that are currently read-only on Unified Interface. Us
 
 The following are entities that are currently read-only in Unified Interface:
 
-- Connection Role
 - KnowledgeArticleViews
 - KnowledgeBaseRecord
 - SharePointDocument
