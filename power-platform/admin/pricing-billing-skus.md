@@ -78,6 +78,6 @@ such as Dynamics 365 Sales and Customer Service, in context of the use rights.
 Dynamics 365 Applications can be customized using PowerApps and Microsoft Flow
 capabilities.
 
-More details are present in [Dynamics 365 Licensing
-guide ](https://go.microsoft.com/fwlink/p/?LinkId=866544).
+More information: [Dynamics 365 Licensing
+guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
