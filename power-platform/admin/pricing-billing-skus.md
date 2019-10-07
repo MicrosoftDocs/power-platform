@@ -61,14 +61,12 @@ More details around pricing and capabilities of standalone plans can be found in
 [Microsoft PowerApps and Microsoft Flow Licensing
 Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-## Community Plans
+## Community Plan
 
 If you want to build skills and learn more about PowerApps, Microsoft Flow, and
 Common Data Service, the PowerApps Community Plan is the right plan for you. The
 PowerApps Community Plan gives you a free development environment for individual
-use to learn with full functionality of PowerApps.
-See [here](https://go.microsoft.com/fwlink/p/?LinkId=866544) for PowerApps
-Community Plan.
+use to learn with full functionality of PowerApps. More information: [PowerApps Community Plan](https://powerapps.microsoft.com/communityplan/).
 
 ## PowerApps and Microsoft Flow for Dynamics 365
 
@@ -79,5 +77,5 @@ Dynamics 365 Applications can be customized using PowerApps and Microsoft Flow
 capabilities.
 
 More information: [Dynamics 365 Licensing
-guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
+Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
