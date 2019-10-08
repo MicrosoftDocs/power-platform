@@ -6,8 +6,9 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/15/2018
-ms.author: mkaur
+ms.date: 10/08/2019
+author: jimholtz
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -58,6 +59,7 @@ There are certain capabilities that continue to be unavailable in the Unified In
 
 -	Custom styling of advanced chart properties (excluding colors and basic formatting)
 -	Composite address control
+- Composite fullname control
 -	Global notifications
 -	Admin experiences
 -	Editable grids on phones
@@ -72,7 +74,6 @@ There are certain entities that are currently read-only on Unified Interface. Us
 
 The following are entities that are currently read-only in Unified Interface:
 
-- Connection Role
 - KnowledgeArticleViews
 - KnowledgeBaseRecord
 - SharePointDocument
