@@ -34,7 +34,7 @@ The following admins will be able to create new environments in the Power Platfo
 - Delegated admins
 
 > [!NOTE]
-> Environments created prior to restriction can still managed after restriction by those who created the environment. Restriction will prevent any new environments being created and managed. 
+> Environments created prior to restriction can still be managed after restriction by those who created the environment. Restriction will prevent any new environments being created and managed. 
 
 ## Control environment creation through PowerShell
 
