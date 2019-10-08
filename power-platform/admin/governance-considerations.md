@@ -1,5 +1,5 @@
 ---
-title: Governance consideration | Microsoft Docs
+title: Governance considerations | Microsoft Docs
 description: Explains how PowerApps and Microsoft Flow be made widely available to their business and be supported by IT.
 author: jimholtz
 manager: kvivek
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
 ---
 
-# Governance consideration 
+# Governance considerations 
 
 Many customers wonder: How can PowerApps and Microsoft Flow be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing PowerApps and Microsoft Flow. 
 
