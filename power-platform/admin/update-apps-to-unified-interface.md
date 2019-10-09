@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2019
+ms.date: 10/09/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,6 +30,9 @@ A similar notification will be visible to System Administrators whenever they us
 
 > [!div class="mx-imgBorder"] 
 > ![Message: using apps designed for legacy web client](media/message-app-designed-legacy-web-client.png "Message: using apps designed for legacy web client")
+
+> [!TIP]
+> For information on enabling Unified Interface only mode, see [Enable Unified Interface Only](enable-unified-interface-only.md).
 
 The following are recommended ways to update to Unified Interface based on how the apps were installed in the environment.
 

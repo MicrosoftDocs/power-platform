@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/04/2019
+ms.date: 10/09/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,7 +29,7 @@ All new Common Data Service environments (environments) and Common Data Service 
 
 **Note**: Some geographical regions will get the changes ahead of schedule by as much as 2-3 weeks. 
 
-|Environment (environment) types  |Release date  |
+|Environment types  |Release date  |
 |---------|---------|
 |New Trial environments     | December 12, 2018         |
 |New Trial and Production Common Data Service environments     | February 2, 2019        |
@@ -80,12 +80,13 @@ The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from
 
 When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Unified Interface and not in the legacy web client. If users only have access to the Dynamics 365 – custom app and no other model-driven apps, they won’t be redirected automatically when signing in using the environment URL (for example, https://contoso.crm.dynamics.com/). Access to this app can be enabled in one of two ways:
 
-- In model-driven apps in Dynamics 365, go to **Settings** > **Administration** > **System Settings** > **General** tab. Under **Show legacy Dynamics 365 - custom app**, select **Yes** for **Show this app to all users, not just administrators**.
+- In the Power Platform Admin center, go to **Environments** and select an environment. Go to **Settings** > **Behavior** and then turn on **Use Unified Interface only**.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/d365ce-system-settings-legacy-app.png "System Settings for legacy app")
+> ![](media/use-unified-interface-only.png "Use Unified Interface only")
 
-- In the Power Platform Admin center, go to **Environments** and select an environment. Go to **Settings** > **Behavior** > **Interface settings** and then turn on **Show legacy app to everyone, not just admins**.
+
+- In model-driven apps in Dynamics 365, go to **Settings** > **Administration** > **System Settings** > **General** tab. Under **Show legacy Dynamics 365 - custom app**, select **Yes** for **Show this app to all users, not just administrators**.
 
 ### Advanced settings
 
