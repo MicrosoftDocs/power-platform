@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/20/2019
+ms.date: 10/09/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin

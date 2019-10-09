@@ -1,12 +1,12 @@
 ---
-title: PowerApps and Microsoft Flow licensing FAQs for October 2019| Microsoft Docs
+title: PowerApps and Microsoft Flow licensing FAQs| Microsoft Docs
 description: FAQs for licensing PowerApps and Microsoft Flow for October 2019
 author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 10/09/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -16,11 +16,12 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
+
 # PowerApps and Microsoft Flow licensing FAQs
 
 We have found some common questions on licensing and plan options. We’ve
 included several here with their answers. For more details about Microsoft
-PowerApps and Microsoft Flow licensing, please refer to [Licensing
+PowerApps and Microsoft Flow licensing, see [Licensing
 Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 ### How is Microsoft PowerApps and Microsoft Flow Licensed?
@@ -184,7 +185,8 @@ licenses to allow the user to use multiple solutions targeted at various
 business scenarios, without requiring a per-user license. In other words, the
 “per app” license is stackable.
 
-### Do embedded canvas apps in model-driven apps count towards the two apps limits?
+
+### Do embedded canvas apps in model-driven apps count toward the two-apps limits?
 
 No. Embedded canvas components within the model-driven app will not count
 towards the two apps limit in the per app licensing model.
@@ -197,25 +199,25 @@ unlimited number of flows, within service limits. The per flow plan provides an
 organization with the flexibility to license by the number of flows, instead of
 licensing each user accessing the flows individually with the per user plan.
 
+
 ### Which flows count in the Microsoft Flow per flow plan?**
 
-All types of enabled flows count – scheduled flows, automated flows, instant
+All types of enabled flows count: scheduled flows, automated flows, instant
 flows and business process flows. Flows that are triggered by another flow
 (child flows) or that are disabled will not count against the plan.
 
-### Do flows always have to be purchased in units of 5 as part of the Microsoft Flow per flow plan?
+### Do flows always have to be purchased in units of five as part of the Microsoft Flow per flow plan?
 
 No. After the minimum purchase of 5 flows, additional flows can be licensed
 individually at \$100/month per flow.
 
-### Do users who run Flows need to be licensed, or do only users who create flows need to be licensed?
+
+### Do users who run flows need to be licensed, or do only users who create flows need to be licensed?
 
 Any end user running a flow will need to be licensed either by the per user or
 per Microsoft Flow plans.
 
-### Do users who use Microsoft Flow features built on the Common Data Service like approvals or business process flows need to be licensed?
-
-There are features in Microsoft Flow that are not running a flow directly – such
+There are features in Microsoft Flow that are not running a flow directly, such
 as responding to an approval request or advancing a stage in a business process.
 These features are built on the Common Data Service. Normally, any use of these
 features requires either a standalone Microsoft Flow per user plan, or, that the
@@ -227,6 +229,7 @@ licensed under the per flow plan.
 Every tenant with a PowerApps license gets default capacity. In addition, for
 each license there is additional capacity (pooled) added to the tenant.
 
+
 | **PowerApps capacity Limits**         | **Per license entitlement (PowerApps per app plan)** | **Per license entitlement (PowerApps per user plan)** |
 |---------------------------------------|------------------------------------------------------|-------------------------------------------------------|
 | Common Data Service Database Capacity | \+ 50 MB                                             | \+ 250 MB                                             |
@@ -237,6 +240,7 @@ Since flows, as well as certain Microsoft Flow features like approvals, run
 inside of the Common Data Service, every tenant with a Microsoft Flow license
 gets default capacity. In addition, for each per-user or per-flow license there
 is additional capacity added to the tenant.
+
 
 | **Microsoft Flow capacity Limits**    | **+ Per user** | **+ Per flow** |
 |---------------------------------------|----------------|----------------|
@@ -269,6 +273,7 @@ plans are listed below:
 
 -   Common Data Service Log Capacity (1GB) \$10 per month
 
+
 ### Can you share more details regarding the new PowerApps Portals licensing?
 
 PowerApps Portals can be provisioned without requiring a specific license. User
@@ -286,16 +291,15 @@ access licensing is based on persona type and details are as below.
 
 -   Multiple logins during the 24-hour period count as one billable login
 
-### What exactly is a considered a “login” as part of the PowerApps Portals add-on?**
+### What exactly is considered a “login” as part of the PowerApps Portals add-on?
 
-Think of a login as a “day pass” to a portal. Once logged in to a portal,
-subsequent logins (potentially from different devices) during the 24-hour period
-will not be billable.
+Think of a login as a “day pass” to a portal. Once logged in to a portal, subsequent logins (potentially from different devices) during the 24-hour period will not be billable.
 
 ### Does a single login provide access to multiple PowerApps Portals during the 24-hour period?**
 
-Logins are specific to a single portal. So if you access multiple portals
-belonging to same tenant, it will be counted one login per portal.
+
+Logins are specific to a single portal. So if you access multiple portals belonging to the same tenant, it will be counted as one login per portal.
+
 
 ### What is the difference between PowerApps Portals and Dynamics 365 Portals in terms of licensing?**
 
@@ -315,10 +319,8 @@ are a Dynamics 365 customer.
 
 ### Can you clarify the use rights to Portals for internal users?
 
-Custom PowerApps Portals use rights:
-
-For internal users, use rights to a “custom” portal are aligned with their
-“custom” PowerApps use rights. For example,
+Custom PowerApps Portals use rights: For internal users, use rights to a “custom” portal are aligned with their
+“custom” PowerApps use rights. For example:
 
 -   A Dynamics 365 enterprise application license gets use rights to custom
     PowerApps applications within the same environment as the Dynamics 365
@@ -337,13 +339,12 @@ have assigned 100 logins, you can assign them in units of 1.
 Example: If you have 3 portals and bought 4 login packs (400 logins). You can
 assign them in the following way:
 
--   Portal 1: 120 (min 100)
+For example, if you have 3 portals and bought 4 login packs (400 logins), you can assign them in the following ways:
+- Portal 1: 120 (min 100)
+- Portal 2: 151 (min 100)
+- Portal 3: 129 (min 100)
 
--   Portal 2: 151 (min 100)
-
--   Portal 3: 129 (min 100)
-
-Page views: Minimum 50,000 per portal, after that you can assign 1 at a minimum.
+Page views: Minimum 50,000 per portal. After that you can assign 1 at a minimum.
 
 ### Do unused PowerApps Portals logins carry forward to the next month?
 

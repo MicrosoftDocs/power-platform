@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Starting October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) PowerApps, and Microsoft Flow.
+Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) PowerApps, and Microsoft Flow.
 
 ## What is a Microsoft Power Platform request?
 
@@ -36,7 +36,7 @@ This table below will describe the common requests limits as well as the allocat
 
 ## Microsoft Power Platform requests allocations based on licenses
 
-All the users of Microsoft Power Platform can use a certain number of requests based on the license they are assigned. The below table defines the number of requests a user can make in a 24-hour period:
+All the users of Microsoft Power Platform can use a certain number of requests based on the license they are assigned. The following table defines the number of requests a user can make in a 24-hour period:
 
 | **User licenses**                                        | **Number of API requests / 24 hours**                                                                                                         |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,20 +48,25 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | Office licenses (that include PowerApps/Microsoft Flow)  | 2,000                                                                                                                                         |
 | Application user / Non-interactive users                 | [See section below](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users) |
 
+
 <sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent.
 
 <sup>2</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
+
 Users who are running apps and flows without a user license through the PowerApps per app plan or flows licensed through the Microsoft Flow per flow plan are granted the following API request entitlement.
+
 
 | **Non User Licenses **       | **Number of API requests / 24 hours** |
 |------------------------------|---------------------------------------|
 | PowerApps per app plan       | 1,000 per user pass                   |
 | Microsoft Flow per flow plan | 15,000 per flow                       |
 
+
 If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license as well as a PowerApps per user license , then that user will have a total of 20000 + 5000 = 25000 requests available per 24 hours.
 
 If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 Customer Service Enterprise license as the base license and a Dynamics 365 Sales Enterprise license attached, the total number of requests would be what is provided by the base license - Dynamics 365 Customer Service.
+
 
 ## PowerApps and Microsoft Flow capacity add-on
 
@@ -71,7 +76,7 @@ Each capacity add-on provides an additional 10,000 requests/24 hours which can b
 
 ## Non-licensed users/application users/Users with special free licenses
 
-The Common Data Service also provides the ability to have identities that do not require any user license to interact with the service. There are three types of
+Common Data Service also provides the ability to have identities that do not require any user license to interact with the service. There are three types of
 these users:
 
 -   [Application users](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles#create-an-application-user)
@@ -100,15 +105,16 @@ Once the Base Request capacity is exhausted, customers can increase this capacit
 
 ## Service protection limits currently applicable
 
-Apart from the new daily API request limit, there are other service protections limits specific to various services which exist currently. These limits are usually much higher when compared to the daily per user entitlements for a 24-hour period. Limits help maintain the quality of service by protecting the service from malicious or noisy behavior that would otherwise disrupt service for all customers.
+Apart from the new daily API request limit, there are other service protection limits specific to various services that exist currently. These limits are usually much higher when compared to the daily per user entitlements for a 24-hour period. Limits help maintain the quality of service by protecting the service from malicious or noisy behavior that would otherwise disrupt service for all customers.
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, PowerApps, and Microsoft Flow connecting to Common Data Service/model-driven apps in Dynamics 365
+- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), PowerApps, and Microsoft Flow connecting to Common Data Service/model-driven apps in Dynamics 365
 
 - [Microsoft Flow limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Microsoft Flow
 
 - [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Microsoft Flow and PowerApps
+
 
 ## Frequently asked questions
 
