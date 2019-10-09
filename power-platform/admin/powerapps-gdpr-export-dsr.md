@@ -39,7 +39,7 @@ Connection | | App creator: Available <br> Admin: Available
 Connection permissions	| | App creator: Available <br> Admin: Available
 PowerApps user settings, user-app settings, and notifications | | App creator: Available <br> Admin: Available
 
-> ** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service database instance. For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
+> ** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service database environment. For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
 > *** An administrator can access these resources from the [PowerApps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) only if the owner of the resource has explicitly granted him or her access. If the administrator has not been granted access, he or she will need to leverage the [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
@@ -86,7 +86,7 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
 ~~~~
  
 ## Step 2: Export the user’s environment permissions
-Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in PowerApps as a *role assignment*. With the introduction of Common Data Service, if a database is created within the environment, the role assignments are stored as records within the Common Data Service database instance. For more information, see [Administer environments within PowerApps](environments-administration.md).
+Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in PowerApps as a *role assignment*. With the introduction of Common Data Service, if a database is created within the environment, the role assignments are stored as records within the Common Data Service database environment. For more information, see [Administer environments within PowerApps](environments-administration.md).
 
 ### For environments without a Common Data Service database
 
@@ -117,12 +117,12 @@ Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -
 ~~~~
 
 > [!IMPORTANT]
->  This function only works for environments that do not have a Common Data Service database instance.
+>  This function only works for environments that do not have a Common Data Service database environment.
 >
 >
 
 ### For environments with a Common Data Service database
-With the introduction of the Common Data Service, if a database is created within the environment, role assignments are stored as records within the Common Data Service database instance. For information on how to remove personal data from a Common Data Service database instance, see [Common Data Service User personal data removal](https://go.microsoft.com/fwlink/?linkid=871886).
+With the introduction of the Common Data Service, if a database is created within the environment, role assignments are stored as records within the Common Data Service database environment. For information on how to remove personal data from a Common Data Service database environment, see [Common Data Service User personal data removal](https://go.microsoft.com/fwlink/?linkid=871886).
  
 ## Step 3: Export personal data contained within canvas apps created by the user
 
@@ -326,7 +326,7 @@ PowerApps licenses always include Microsoft Flow capabilities. In addition to be
 >  We recommend that administrators complete this step for PowerApps users.
 
 
-## Step 12: Export the user’s personal data in Common Data Service instances
+## Step 12: Export the user’s personal data in Common Data Service environments
 Anyone with a PowerApps license, provided there is 1GB available database capacity, can create Common Data Service environments and create and build apps on Common Data Service; this includes the PowerApps Community Plan, which is a free license that allows users to try out Common Data Service in an individual environment. To see which Common Data Service capabilities are included in each PowerApps license, see the [PowerApps Pricing page](https://powerapps.microsoft.com/pricing).
 
 For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).

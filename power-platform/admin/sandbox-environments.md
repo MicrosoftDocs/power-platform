@@ -1,23 +1,18 @@
 ---
-title: "View and reset Sandbox environments | MicrosoftDocs"
+title: "View and reset Sandbox environments  | MicrosoftDocs"
 description: Learn about Sandbox environments ann how to reset them. 
-ms.custom: ""
-ms.date: 05/14/2019
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 05/14/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # View and reset Sandbox environments
@@ -77,7 +72,7 @@ The reset process starts.
 > ![](media/reset-environment-status.png "Reset environment status")
   
 ## Administration mode  
- When you place a Sandbox environment in administration mode only users with Customer Engagement System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
+ When you place a Sandbox environment in administration mode only users with System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
   
 > [!NOTE]
 > - You can only place Sandbox environments in administration mode.  
