@@ -1,6 +1,6 @@
 ---
-title: "TITLE"
-description: "DESCRIPTION"
+title: "Extend your bot's capability using conversational Skills"
+description: "Skills allows users to extend and reuse advanced conversational capabilities in your bots. Add Skills to your bot"
 keywords: "KEYWORDS"
 ms.date: 09/04/2019
 ms.service:
