@@ -32,7 +32,7 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 > 
 > The default endpoint is “prod”. If a user wants to run a PowerShell script on the GCC environment, the -Endpoint parameter needs to be changed to “usgov”. GCC High and DOD are not yet supported.
 > 
-> ```
+> ```powershell
 > Add-PowerAppsAccount -Endpoint "usgov" 
 > ```
 
@@ -46,7 +46,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 
 2. Import the necessary modules using the following commands:
 
-    ```
+    ```powershell
     Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
     Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
     ```
@@ -56,12 +56,12 @@ To run the PowerShell cmdlets for app creators, do the following:
 
 4. Before accessing any of the commands, you have the option to provide your credentials using the following command. These credentials are refreshed for up to ~8 hours before you’re required to sign in again to continue using the cmdlets.
 
-    ```
+    ```powershell
     # This call opens prompt to collect credentials (Azure Active Directory account and password) used by the commands 
     Add-PowerAppsAccount
     ```
 
-    ```
+    ```powershell
     # Here is how you can pass in credentials (avoiding opening a prompt)
     $pass = ConvertTo-SecureString "password" -AsPlainText -Force
     Add-PowerAppsAccount -Username foo@bar.com -Password $pass
@@ -134,7 +134,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 
 Example commands:
 
-```
+```powershell
 Get-Help Get-AdminPowerAppEnvironment
 Get-Help Get-AdminPowerAppEnvironment -Examples
 Get-Help Get-AdminPowerAppEnvironment -Detailed
@@ -156,7 +156,7 @@ Use these commands to get details on and update environments in your tenant.
 
 #### Display a list of all environments
 
-```
+```powershell
 Get-AdminPowerAppEnvironment
 ```
 
@@ -164,7 +164,7 @@ Returns a list of each environment across your tenant, with details of each (e.g
 
 #### Display details of your default environment
 
-```
+```powershell
 Get-AdminPowerAppEnvironment –Default
 ```
 
@@ -172,7 +172,7 @@ Returns the details for only the default environment of the tenant.
 
 #### Display details of a specific environment
 
-```
+```powershell
 Get-AdminPowerAppEnvironment –EnvironmentName ‘EnvironmentName’
 ```
 
@@ -186,7 +186,7 @@ These operations are used to read and modify PowerApps data in your tenant.
 
 #### Display a list of all PowerApps
 
-```
+```powershell
 Get-AdminPowerApp
 ```
 
@@ -194,7 +194,7 @@ Returns a list of all PowerApps across the tenant, with details of each (e.g., a
 
 #### Display a list of all PowerApps that match the input display name
 
-```
+```powershell
 Get-AdminPowerApp 'DisplayName'
 ```
 
@@ -204,7 +204,7 @@ Returns a list of all the PowerApps in your tenant that match the display name.
 
 #### Feature an application
 
-```
+```powershell
 Set-AdminPowerAppAsFeatured –AppName 'AppName'
 ```
 
@@ -214,7 +214,7 @@ Featured applications are grouped and pushed to the top of the list in the Power
 
 #### Make an application a Hero app, using the pipeline
 
-```
+```powershell
 Get-AdminPowerApp 'DisplayName' | Set-AdminPowerAppAsHero
 ```
 
@@ -226,7 +226,7 @@ The pipeline (represented as the ‘|’ character between two cmdlets) takes th
 
 #### Display the number of apps each user owns
 
-```
+```powershell
 Get-AdminPowerApp | Select –ExpandProperty Owner | Select –ExpandProperty displayname | Group
 ```
 
@@ -236,7 +236,7 @@ You can combine native PowerShell functions with the PowerApps cmdlets to manipu
 
 #### Display the number of apps in each environment
 
-```
+```powershell
 Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Object -TypeName PSObject -Property @{ DisplayName = (Get-AdminPowerAppEnvironment -EnvironmentName $_.Name | Select -ExpandProperty displayName); Count = $_.Count } }
 ```
 
@@ -244,7 +244,7 @@ Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Obje
 
 #### Download PowerApps user details
 
-```
+```powershell
 Get-AdminPowerAppsUserDetails -OutputFilePath '.\adminUserDetails.txt' –UserPrincipalName ‘admin@bappartners.onmicrosoft.com’
 ```
 
@@ -252,7 +252,7 @@ The above command will store the PowerApps user details (basic usage information
 
 #### Set logged in user as the owner of a PowerApp
 
-```
+```powershell
 Set-AdminPowerAppOwner –AppName 'AppName' -AppOwner $Global:currentSession.userId –EnvironmentName 'EnvironmentName'
 ```
 
@@ -266,7 +266,7 @@ Use these commands to view and modify data related to Microsoft Flow.
 
 #### Display all flows
 
-```
+```powershell
 Get-AdminFlow
 ```
 
@@ -274,7 +274,7 @@ Returns a list of all flows in the tenant.
 
 #### Display flow owner role details
 
-```
+```powershell
 Get-AdminFlowOwnerRole –EnvironmentName 'EnvironmentName' –FlowName ‘FlowName’
 ```
 
@@ -284,7 +284,7 @@ Returns the owner details of the specified flow.
 
 #### Display flow user details
 
-```
+```powershell
 Get-AdminFlowUserDetails –UserId $Global:currentSession.userId
 ```
 
@@ -292,7 +292,7 @@ Returns the user details regarding flow usage. In this example we’re using the
 
 #### Remove flow user details
 
-```
+```powershell
 Remove-AdminFlowUserDetails –UserId 'UserId'
 ```
 
@@ -302,7 +302,7 @@ Deletes the details on a flow user completely from the Microsoft database. All f
 
 #### Export all flows to a CSV file
 
-```
+```powershell
 Get-AdminFlow | Export-Csv -Path '.\FlowExport.csv'
 ```
 
@@ -314,7 +314,7 @@ View and manage API connections in your tenant.
 
 #### Display all native Connections in your default environment
 
-```
+```powershell
 Get-AdminPowerAppEnvironment -Default | Get-AdminConnection
 ```
 
@@ -322,7 +322,7 @@ Displays a list of all API connections you have in the default environment. Nati
 
 #### Display all custom connectors in the tenant
 
-```
+```powershell
 Get-AdminPowerAppConnector
 ```
 
@@ -334,7 +334,7 @@ These cmdlets will control the DLP policies on your tenant.
 
 #### Display all policies
 
-```
+```powershell
 Get-AdminDlpPolicy
 ```
 
@@ -342,7 +342,7 @@ Returns a list of all the policies.
 
 #### Display a filtered list of policies
 
-```
+```powershell
 Get-AdminDlpPolicy 'DisplayName'
 ```
 
@@ -350,7 +350,7 @@ Uses the display name to filter the policies
 
 #### Display all ‘Business data only’ API connectors in a policy
 
-```
+```powershell
 Get-AdminDlpPolicy 'PolicyName' | Select –ExpandProperty BusinessDataGroup
 ```
 
@@ -358,7 +358,7 @@ Lists the API connections that are in the *Business data only*(or *BusinessDataG
 
 #### Add a connector to the ‘Business data only’ group
 
-```
+```powershell
 Add-ConnectorToBusinessDataGroup -PolicyName 'PolicyName' –ConnectorName 'ConnectorName'
 ```
 
