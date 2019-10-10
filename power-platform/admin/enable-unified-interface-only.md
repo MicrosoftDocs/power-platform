@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/09/2019
+ms.date: 10/10/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -86,7 +86,7 @@ When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Un
 > ![](media/use-unified-interface-only.png "Use Unified Interface only")
 
 
-- In model-driven apps in Dynamics 365, go to **Settings** > **Administration** > **System Settings** > **General** tab. Under **Show legacy Dynamics 365 - custom app**, select **Yes** for **Show this app to all users, not just administrators**.
+- In model-driven apps in Dynamics 365, go to **Settings** > **Administration** > **System Settings** > **General** tab. Under **Use the new Unified Interface only (recommended)**, select **Yes** for **Enable only the Unified interface**.
 
 ### Advanced settings
 
