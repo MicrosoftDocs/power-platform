@@ -25,7 +25,7 @@ In 2018, we introduced [Unified Interface](https://docs.microsoft.com/powerapps/
 
 ### New environments
 
-All new Common Data Service environments (environments) and Common Data Service environments, including those created in existing tenants, will be provisioned in Unified Interface Only mode per the schedule below. 
+All new Common Data Service environments and Common Data Service environments, including those created in existing tenants, will be provisioned in Unified Interface Only mode per the schedule below. 
 
 **Note**: Some geographical regions will get the changes ahead of schedule by as much as 2-3 weeks. 
 
