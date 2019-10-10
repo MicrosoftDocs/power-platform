@@ -153,8 +153,7 @@ described [here](http://aka.ms/platformlimits). Per user service limits provide
 capacity assurance for users and alleviate the risk of one user exhausting the
 tenant wide quota.
 
-### How does the change to PowerApps and Microsoft Flow use rights for Office 365 applications affect me if I purchased the subscriptions prior to Oct 1st 2019? Will my existing PowerApps applications and Microsoft Flow workflows continue to
-work?
+### How does the change to PowerApps and Microsoft Flow use rights for Office 365 applications affect me if I purchased the subscriptions prior to Oct 1st 2019? Will my existing PowerApps applications and Microsoft Flow workflows continue to work?
 
 Yes, existing apps and flows will continue to work. Customers who have been
 using PowerApps or Microsoft Flow with Office 365 using one or more of the
