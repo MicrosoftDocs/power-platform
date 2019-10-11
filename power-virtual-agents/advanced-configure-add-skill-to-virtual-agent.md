@@ -44,5 +44,11 @@ Please be aware that your virtual agent may send customer information to a Skill
 ## Sample skills
 You can start using some sample Skills provided by Microsoft Bot Framework - [click here](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0#bot-framework-skills).
 
+## Troubleshooting
+
+### Validation performed during registering a Skill
+
+(IAAN - please add table from aka.ms/cci/skillchecks - Thanks!)
+
 ## References
 * [No-cliff development with Skills](link to Pawan's blog post)
