@@ -1,7 +1,7 @@
 ---
 title: "Preview: Capacity add-ons for PowerApps and Flow  | MicrosoftDocs"
-description: Introducing a new way to add capacity to your environments.
-ms.date: 08/08/2019
+description: This topic covers the Per app, Flow per business process, AI builder, Portal logins, and Portal views. 
+ms.date: 10/11/2019
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -21,8 +21,11 @@ search.app:
 
 If your organization has purchased capacity add-ons, you have to allocate that capacity to any environment where you want to use it. You also have to make sure that your users have access to those environments and have the correct permissions before they can use the products for which you've purchased a capacity add-on.
 
-> [!IMPORTANT]
-> Capacity is allocated to environments, not to individual users. To provide capacity to a specific user, you have to allocate capacity to an environment where that user has access.
+There are three stages for using capacity add-ons:
+
+1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [PowerApps and Flow Licensing Guide Oct 2019](https://go.microsoft.com/fwlink/?linkid=2085130).
+2. Allocate: assign the purchased add-ons to an environment.
+3. Consume: once allocated, you can consume the capacity add-ons.
 
 ## View capacity add-ons in Power Platform Admin center
 
@@ -39,13 +42,69 @@ Each capacity has a usage gauge that shows how many units have been assigned com
 To allocate capacity to an environment:
 
 1. Sign into the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/). 
-1. Select **Analytics > Capacity** in the left-side navigation pane.
-1. On the **Capacity** screen, do one of the following things to open the **Manage add-ons** screen:
-    - Select **Manage** on the top-right area of the **Add-ons** tile.
-    - At the top area of the **Capacity** screen, select **Add-ons**, and then select **+Add to an environment** at the top of the screen.
+
+2. Select **Analytics > Capacity** in the left-side navigation pane.
+
+3. On the **Capacity** screen, do **one** of the following to open the **Manage add-ons** screen:
+
+   - Scroll down to the Add-ons tile, and then select **Manage** on the top-right corner of the Add-ons tile.
+   - Select the **Add-ons** tab. Select **Assign to an environment** in the upper-left menu bar.    
+   - Select the **Add-ons** tab. Select an environment, and then select **Manage add-ons** in the upper-left menu bar.
+
 4. Select the environment where you want to add capacity from the **Environment** drop-down menu, and then allocate from your available capacity.
-![Manage add-ons](media/manage-add-ons.png "Manage add-ons")
 
-## Permissions
+   > [!div class="mx-imgBorder"] 
+   > ![Manage add-ons](./media/manage-add-ons.png "Manage add-ons")
 
-In order for a user to have access to allocated capacity, an administrator for your organization has to assign that user to the environment with the correct permissions.
+## Control who can allocate add-on capacity
+
+As an admin, you can restrict who can allocate add-on capacity to environments.
+
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).
+2. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Power Platform site.
+3. Under **Who can allocated add-on capacity to environments**, select **Only specific admins**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![](./media/add-on-governance.png "Control add-on capacity allocation")
+
+The following admins will be able to allocate add-on capacity in the Power Platform Admin center:
+
+- Office 365 Global admins
+- Service admins
+- Delegated admins
+<!--
+## Control add-on capacity allocation through PowerShell
+
+Download and install the admin PowerShell cmdlets as described [here](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1). For more information about our cmdlets, see [PowerShell support for PowerApps (preview)](powerapps-powershell.md).
+
+Use the following commands to restrict environment creation to Global admin, service admin, and Delegated admin. 
+
+```
+$settings = @{ DisableEnvironmentCreationByNonAdminUsers = $true }
+Set-TenantSettings $settings
+```
+-->
+## FAQ
+
+### Can I use model-driven apps by consuming app passes? 
+Yes. Please use the following steps.
+
+1. Create a group in Azure Active Directory, see [Create a group and add members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+   1. Go to: [https://portal.azure.com](https://portal.azure.com) > **Azure Active Directory** > **Groups** > **+ New Group**
+
+2. Assign the group licenses in portal.azure.com. 
+   1. Go to: [https://portal.azure.com](https://portal.azure.com)  > **Azure Active Directory** > **Groups** > search for the group created in Step #1.  
+   2. See [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups). Assign the license **PowerApps per app plan baseline access**.  
+
+3. Add users to the group, see [Add or remove group members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).  
+
+4. [Generate a canvas app from Common Data Service in PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app). 
+   1.	Use Common Data Service from an environment you plan to share the model-driven app. 
+   2.	Assign the security role to the group that you plan to use to make the model-driven app accessible to end-users.  
+
+5. Share the canvas app with the group created in Step #1. See [Assign a group to a role](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal). 
+
+6. Proceed with sharing the model-driven app, and assign the security role from Step #4b to the users expected to access the app.  
+
+### When can I see how many capacity add-ons are consumed? 
+Check back later for availability. 
