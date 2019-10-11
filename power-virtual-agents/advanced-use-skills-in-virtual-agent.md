@@ -1,7 +1,7 @@
 ---
-title: "Extend your virtual agent using Bot Framework Skills"
-description: "Extend your virtual agent by leveraging conversational skills. Skills extend your bots's conversational capabilities by automating a series of actions within a topic. They enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
-keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities"
+title: "Author dialogs with conversational Skills"
+description: "Author complex dialogs by leveraging conversational skills. Skills extend your bots's conversational capabilities by automating a series of actions within a topic. They enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
+keywords: "authoring, extensibility, integration, extend bot, bot framework, skills, custom capabilities"
 ms.date: 09/04/2019
 ms.service:
   - dynamics-365-ai
