@@ -1,14 +1,14 @@
 ---
 title: Responding to DSR requests for Common Data Service customer data | Microsoft Docs
 description: Walkthrough of how to respond to DSR requests for Common Data Service customer data
-author: jamesol-msft
+author: jimholtz
 ms.reviewer: paulliew
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
-ms.author: jamesol
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
