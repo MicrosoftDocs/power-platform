@@ -71,7 +71,7 @@
           href: analytics-powerapps.md
         - name: Capacity
           href: capacity-storage.md
-        - name: Capacity add-on
+        - name: Add-on capacity management
           href: capacity-add-on.md
         - name: Free storage space
           href: free-storage-space.md
@@ -83,12 +83,16 @@
           href: create-environment.md
         - name: Control environment creation
           href: control-environment-creation.md
+        - name: Backup and restore environments
+          href: backup-restore-environments.md
         - name: Create a database in PowerApps
           href: create-database.md
         - name: Create an environment in PowerApps
           href: create-environment-powerapps.md
         - name: Copy an environment
           href: copy-environment.md
+        - name: Switch an environment
+          href: switch-environment.md
         - name: View and reset Sandbox environments
           href: sandbox-environments.md
         - name: About Trial environments
