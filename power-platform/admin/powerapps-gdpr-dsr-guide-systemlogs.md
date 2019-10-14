@@ -1,13 +1,14 @@
 ---
 title: Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service  | Microsoft Docs
 description: Walkthrough of how to respond to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service
-author: jamesol-msft
+author: jimholtz
+ms.reviewer: paulliew
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
-ms.author: jamesol
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 

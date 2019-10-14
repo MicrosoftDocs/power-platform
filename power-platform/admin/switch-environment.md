@@ -1,6 +1,6 @@
 ---
-title: "Switch an environment | MicrosoftDocs"
-description: Switch an environment
+title: "Change environment type | MicrosoftDocs"
+description: Change the environment type
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,25 +15,25 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Switch an environment
+# Change the environment type
 
-You may decide that your customization work developed and tested on a Sandbox instance is now ready to go live. If you’ve placed your Sandbox instance in administration mode, only users with System Administrator or System Customizer security roles are able to sign in to that instance. Once you switch the instance type to Production, all your users can access your organization. When you configure or edit an instance, you can switch the instance from:
+You may decide that your customization work developed and tested on a sandbox environment is now ready to go live. If you’ve placed your sandbox environment in administration mode, only users with System Administrator or System Customizer security roles are able to sign in to that environment. Once you change the environment type to production, all your users can access your organization. When you configure or edit an environment, you can change the environment from:
 
-- Production to Sandbox
-- Sandbox to Production
+- Production to sandbox
+- Sandbox to production
 
-**To switch an environment**: 
+**To change the environment type**: 
 
 1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
 
-2. From the left-side menu, select **Environments**, and then select an environment to switch.
+2. From the left-side menu, select **Environments**, and then select an environment to change.
 
 3. Select **Edit**
 
    > [!div class="mx-imgBorder"] 
    > ![](media/select-edit.png "Select Edit")
 
-4. Under **Type**, choose the environment type to switch to. 
+4. Under **Type**, choose the environment type to change to. 
 
 5. Select **Save**.
 

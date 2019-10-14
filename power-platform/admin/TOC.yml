@@ -91,7 +91,7 @@
           href: create-environment-powerapps.md
         - name: Copy an environment
           href: copy-environment.md
-        - name: Switch an environment
+        - name: Change environment type
           href: switch-environment.md
         - name: View and reset Sandbox environments
           href: sandbox-environments.md

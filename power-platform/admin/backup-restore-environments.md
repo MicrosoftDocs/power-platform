@@ -89,7 +89,7 @@ About **manual backups**:
 3. Fill in the information, and then select **Create**.
   
 ### Restore a manual backup  
-You can only restore to sandbox environments. To restore to a production environment, first switch it to a sandbox environment, restore to it, and then switch it back to a production environment. See [Switch an environment](switch-environment.md). 
+You can only restore to sandbox environments. To restore to a production environment, first change it to a sandbox environment, restore to it, and then change it back to a production environment. See [Change the environment type](switch-environment.md). 
   
 1. Browse to the Power Platform Admin center and sign in using administrator credentials.
   
@@ -165,7 +165,7 @@ Obtaining a copy of your database backup isn't available. Moving your online dat
 We do not have any restriction on database size to take a backup or restore an organization through UI or API. So please use the UI or API to do self-service. Open a support ticket if the operation fails.
 
 ### Can I restore to a production environment?
-In order to prevent accidental overwrites, we don't allow users to restore to a production environment directly. To restore to a production environment, first switch it to a sandbox environment. Please see [Switch an environment](switch-environment.md).   
+In order to prevent accidental overwrites, we don't allow users to restore to a production environment directly. To restore to a production environment, first change it to a sandbox environment. Please see [Change the environment type](switch-environment.md).   
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
 The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](sandbox-environments.md#set-administration-mode).  
