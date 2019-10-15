@@ -16,7 +16,7 @@ ms.collection: virtualagent
 
 With Power Virtual Agents, you can create bots in different environments and easily switch among them.
 
-An environment is a space to store, manage and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences. Each environment is created in a separate location. Learn more about region support LINK to MULTIGEO
+An environment is a space to store, manage and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences. Each environment is created in a separate location. Learn more about [supported data locations](https://go.microsoft.com/fwlink/?linkid=2106441).
 
 ## How to leverage environments
 - You may choose to build all your bots in a single environment
@@ -41,7 +41,7 @@ An environment is a space to store, manage and share your organization's busines
    
    > [!NOTE]
    > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a bot.
-   > See the list of supported regions [here](requirements-geographic-virtual-agent.md)
+   > Learn more about [supported data locations](https://go.microsoft.com/fwlink/?linkid=2106441).
 
 3. Specify the details of the database **Create database** and click **Save**
 
