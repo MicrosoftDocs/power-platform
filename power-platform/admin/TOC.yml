@@ -222,11 +222,10 @@
           - name: On-off switch for Learning Path (guided help)
             href: on-off-switch-for-learning-path-guided-help.md            
     - name: Requirements/supported configurations
-      href: online-requirements.md
-      items: 
-      - name: Online requirements
+      items:
+      - name: Overview
         href: online-requirements.md
-      - name: Plan for online deployment and administration
+      - name: Plan for deployment and administration
         href: plan-for-deployment-and-administration.md
       - name: Supported web browsers and mobile devices
         href: supported-web-browsers-and-mobile-devices.md
@@ -366,8 +365,6 @@
              href: troubleshooting-server-based-authentication.md
            - name: Troubleshoot set up with SharePoint online
              href: troubleshoot-set-up-sharepoint-online.md
-           - name: Known issues with documentation management
-             href: doc-management-known-issues.md             
       - name: PowerShell support for PowerApps (preview) 
         items:
         - name: About PowerShell support
