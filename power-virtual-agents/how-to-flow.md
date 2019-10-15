@@ -33,10 +33,14 @@ Text box 2 (for copy and paste by the reader)
 
 
 
-## Use a bot flow template to create your flow
-This template provides a fully functional flow that would work with Virtual Agents. Press Save button to save your new flow:
+## Modify the bot flow template for your scenarios
+This template provides an example flow that would accept input parameters from a bot and also return outputs to the bot. You can modify this flow to suit your needs and create a variety of flows for your bot. For example, you could create a simple flow that takes an email address as an input parameter, sends an email message to that address, and returns a message that the email was successfully sent to a bot as output.
 
-By default, your new flow is created in My Flows tab on Microsoft Automate portal by default. To be able to use it with the bots, you must import your new flow from My Flows tab into a Solution. 
+Press Save button to save your new flow:
+
+By default, this new flow is created in My Flows tab on Microsoft Automate portal. Howveer, to use it with the bots, you must import your new flow from My Flows tab into a Solution. 
+
+
 
 ## Import your new flow into a Solution
 Go to Solutions tab on Microsoft Automate portal to see what Solutions are available to you:
@@ -87,22 +91,6 @@ Picture 9 (Create bot converstaion that calls a flow)
  Picture 10 (Test bot converstaion that calls a flow)
     
 
-## To create a PowerApps environment
-
-1. If you have not already created a PowerApps environment, create one. You must select an environment when you create your bot.
-
-    For more information, see [Creating a PowerApps environment](getting-started-new-environment.md).
-
-2. If you do not already have a Microsoft Flow environment, sign in to the admin portal by entering [https://flow.microsoft.com]( https://flow.microsoft.com) in your browser. Select the icon for your account in the upper-right corner of the screen, and then select your PowerApps environment from the list.
-
-3. Verify that the PowerApps environment database was created correctly. Select **Solutions** in the left pane to display the **Solutions** page, and then verify that the Solutions list includes **Common Data Service Default Solution**.
-
-   ![Verify database](media/verify-database.png)
-   
-   > [!NOTE]
-   > Since creating a new environment can take some time, the new solution might not immediately appear in the list. Sign out and check again in 30 to 60 minutes.
-
-   Once you have created your environment, return to the Microsoft Flow portal, and switch to the newly created environment to create your flow.
 
 ## To create a flow
 
