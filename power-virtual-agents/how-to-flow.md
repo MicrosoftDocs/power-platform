@@ -56,8 +56,20 @@ This flow is now ready to be used in a bot.
 
 ## Use your flow in a bot
 
+You can use you new flow in any Topic in a bot; you can pass variables to this as inputs flow and receive outputs that can be used in the dialog. Select Topics in the left pane to open the Topics page, and then select New topic.
 
+Picture 8 (Create a new Topic)
 
+Specify a name, description, and trigger phrases for the topic. A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
+For example, for a Daily Deals topic, you could specify the following trigger phrases:
+daily deals
+deal of the day
+current deals
+today’s deals
+current offers
+today’s specials
+
+Once you have created the topic, you can create a conversation path that uses your flow. Select Edit to open the conversation editor.
 
 
 ## To create a PowerApps environment
