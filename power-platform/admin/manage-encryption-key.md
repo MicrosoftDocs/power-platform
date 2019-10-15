@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/15/2019
 ms.author: matp 
 search.audienceType: 
   - admin
@@ -24,7 +24,7 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
 
 > [!IMPORTANT]
-> Self-managed database encryption keys are only available for customers who have more than 1000 P1/P2 licensed user seats and who have opted in to the feature.  To opt in to this program, contact your account or sales representative.
+> Self-managed database encryption keys are only available for customers who have more than 1000 PowerApps plan licensed user seats and who have opted in to the feature.  To opt in to this program, contact your account or sales representative.
 >
 > Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can’t be encrypted with the self-managed encryption key:
 > - Relevance Search
