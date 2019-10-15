@@ -71,6 +71,21 @@ today’s specials
 
 Once you have created the topic, you can create a conversation path that uses your flow. Select Edit to open the conversation editor.
 
+In the conversation editor, enter a bot response in the Bot Says node, and then select User Says to display the User Responses node.
+
+Picture 9 (Create bot converstaion that calls a flow)
+
+## To test the flow
+1. In the **Test bot** pane, select **Start over with latest conversation**. Then specify a trigger phrase for the topic that contains the flow.
+
+2. Enter your email address at the prompt.
+
+    The bot displays the email address to the customer to confirm that it will send a message to that address and stores the message specified in the flow in the **(x) message** variable.
+
+    The flow then sends the message to the customer.
+    
+ Picture 10 (Test bot converstaion that calls a flow)
+    
 
 ## To create a PowerApps environment
 
