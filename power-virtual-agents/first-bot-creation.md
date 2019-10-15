@@ -27,7 +27,7 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
     
 2. In the **Create a new bot** dialog box, you’ll name your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
-   ![New bot dialog](media/create_new_bot.png)
+   ![New bot dialog](media/create_new_bot.jpg)
 
    Your virtual agent is created in the default PowerApps environment. For most users, this is sufficient. However, if you want to specify a custom PowerApps environment for your virtual agent, you can do so by expanding the **More options** menu and selecting a different environment. To learn more about environments read the [PowerApps environment overview](https://docs.microsoft.com/en-us/power-platform/admin/environments-overview) documentation.
   
