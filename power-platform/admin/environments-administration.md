@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 10/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -48,7 +48,7 @@ To manage an environment in the PowerApps Admin center, you must have one of the
 
 * The Global Administrator role of your Azure AD or Office 365 tenant.
 
-You also need either a PowerApps Plan 2 or Microsoft Flow Plan 2 license to access the admin center. For more information, see the [PowerApps pricing page][3].
+You also need either a PowerApps plan or Microsoft Flow plan to access the admin center. For more information, see the [PowerApps pricing page][3].
 
 > [!IMPORTANT]
 > Any changes that you make in PowerApps Admin center affect the [Microsoft Flow admin center][4] and vice versa.
@@ -91,7 +91,7 @@ If you are a member of the Global Administrator role of your Azure AD or Office 
     ![](./media/environment-admin/delete-environment-2.png)
 
 ## Create a Common Data Service database for an environment
-If an environment doesn't already have a database, an Environment Admin can create one in the [PowerApps Admin center][1] by following these steps. Only users with a PowerApps Plan 2 license can create Common Data Service databases.
+If an environment doesn't already have a database, an Environment Admin can create one in the [PowerApps Admin center][1] by following these steps. Only users with a PowerApps plan  can create Common Data Service databases.
 
 1. Select an environment in the environments table.
 
@@ -175,7 +175,7 @@ An organization's data must be protected so that it isn't shared with audiences 
 Provisioning environments is based on the available storage in your organization. You need at least 1GB minimum database storage to create an environment.For more information, see [Environments overview](environments-overview.md). 
 
 ### Which license includes Common Data Service?
-PowerApps Plan 2.  See [PowerApps pricing page][3] for details on all the plans that include this license.
+PowerApps plan.  See [PowerApps pricing page][3] for details on all the plans that include this license.
 
 ### While trying to create a new environment, I am getting an error. How should I resolve it?
 If you are getting the following error message: "Either your plan doesn’t support the environment type selected or you’ve reached the limit for that type of environment.", it can mean one of the two things:

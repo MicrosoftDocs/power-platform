@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -36,7 +36,7 @@ In a perfect world as an administrator you would only visit a single portal to p
 |Security & Compliance Center<br/>https://protection.office.com     |In addition to the general compliance tasks, administrators can come here to search the Audit log to see Flow audit events         |
 
 Over the near-term future we will see consolidation of the PowerApps, Flow and the Dynamics 365 administration portals into a more unified administrative portal experience.
-For partners helping their customers manage their cloud services using delegated administration capabilities you will not be able to use delegated access to the PowerApps and Flow portals. Currently, you would need to have a user in the customers tenant and assign that user a P2 license.
+For partners helping their customers manage their cloud services using delegated administration capabilities you will not be able to use delegated access to the PowerApps and Flow portals. Currently, you would need to have a user in the customers tenant and assign that user a PowerApps plan.
 
 ## Common portal tasks
 

@@ -51,15 +51,6 @@ Access to PowerApps and Flow starts with having a license, the type of license a
 ### Environments
 After users have licenses, environments exist as containers for all resources utilized by PowerApps, Microsoft Flow and Common Data Service. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
 
-<!-- 
-#### FAQ –  Who can provision an environment?
-- The default environment is created automatically when the first PowerApps or Microsoft Flow user signs-in. 
-- Developer environment is created whenever a user signs-up for the PowerApps community plan – [http://aka.ms/powerappcommunityplan ](http://aka.ms/powerappcommunityplan )
-- Up to 2 trial environments can be created by any user who signs-up for a PowerApps Plan 2 or Microsoft Flow Plan 2 30-day trial license.
-- Production environments can be created by any user who has a PowerApps Plan 2 or Microsoft Plan 2 license.
-- Production environments are pooled at the tenant level - every Plan 2 license grants an entitlement to provision 2 additional environments
--->
-
 ### Secure your data and network
 - PowerApps and Flow *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
 - Network Access control policies can also apply to PowerApps and Flow. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps and Flow. 
@@ -103,99 +94,6 @@ Today, Azure AD global tenant admins can perform the following:
 
 Customers with Microsoft Intune can set mobile application protection policies for both PowerApps and Microsoft Flow apps on Android and iOS. This walkthrough highlights setting a policy via Intune for Microsoft Flow. 
 
-<!-- 
-
-**Without a PowerApps Plan 2 license** 
-
-1. [Download the PowerApps and Microsoft Flow license report](admin-view-user-licenses.md).
-2. [Create DLP policy scoped only to ‘All Environments’](create-dlp-policy.md).
-3. [Manage and assign licenses via Office admin center](signup-question-and-answer.md).
-
-**With a PowerApps Plan 2 license**
-
-1. [Download the PowerApps and Microsoft Flow license report](admin-view-user-licenses.md).
-2. [Create DLP policy scoped only to ‘All Environments’](create-dlp-policy.md) or scoped to include/exclude specific environments.
-3. [Manage and assign licenses via Office admin center](signup-question-and-answer.md).
-4. Full access to all the environment, app, and flow management capabilities for all environments in the tenant available via:
-   - [PowerApps Admin center](https://admin.powerapps.com/)
-   - [PowerApps Admin PowerShell cmdlets](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell)
-   - [PowerApps management connectors](https://aka.ms/adminconnectorreference)
-5. Full access the PowerApps and Microsoft Flow admin analytics for all environments in the tenant:
-   - [https://aka.ms/paadminanalytics  ](https://aka.ms/paadminanalytics)
-   - [https://aka.ms/flowadminanalytics](https://aka.ms/flowadminanalytics) 
-
-### Manage environment role assignments using Microsoft Flow
-
-1. For environments *without* a Common Data Service database, the [Power Platform for Admins connector](https://docs.microsoft.com/connectors/powerplatformforadmins/) provides the ability to manage environment role assignments. 
-2. For environments *with* a Common Data Service database, the built-in Common Data Service connector doesn’t have support for managing roles, but you can use a Microsoft Flow to do it through the web API via the following steps: 
-
-   1. Create your Azure AD App. 
-      1. Go to the Azure Portal ([https://portal.azure.com](https://portal.azure.com)) and select **Azure Active Directory**.
-      2. Select **App Registrations**.
-      3. Select **+ New App Registration**.
-
-      image
-
-      4. Give your App any name and URL (the URL doesn’t matter, just make it unique URL value). Leave the default Application type.
-      5. Once created, you will need to give the App permissions to sign-in to Dynamics. Select **Settings** > **Required permissions** > **Add**.
-
-      image
-
-      6. Under **Select API** select **Dynamics CRM Online**.
-      7. Under **Select permissions** select **Access Dynamics 365 as organization users**.
-      8. Be sure to **Save**.
-
-   2. Create your custom connector
-      1. Navigate to [https://web.powerapps.com](https://web.powerapps.com) and sign-in with an ID that has administrative permission for both Active Directory and for CRM.
-      2. If you have multiple environments, select the environment in which you want the custom connector to be created.
-      3. Download the Open API file here: [https://procsi.blob.core.windows.net/docs/CDS-Permissions.swagger.json](https://procsi.blob.core.windows.net/docs/CDS-Permissions.swagger.json) 
-      4. Go to the settings gear at the top of the portal and select Custom Connectors
-      5. Select Create custom connector >Import from an Open API file
-      6. Give the custom connector a meaningful name, e.g. “CDS Permissions” and select the CDS-Permissions Swagger file that you downloaded.
-      7. On the General tab, enter the host of your CDS environment:
-
-         image
-
-      8. Select Security -> to go to the next tab. Here, select Azure Active Directory as your authentication provider
-      9. You will now fill in the Client ID field  - copy it from the Properties of your Azure AD app in the Azure Portal. The field is called Application ID
-      10. Next, you’ll fill in the Client secret. From the Azure portal, select the Keys screen and in the Passwords section enter a new description and duration. Select Save. You’ll be able to copy the Value – put that in the Client secret field. (NOTE:  Make sure you copy and save this key somewhere secure.  You won’t be able to retrieve it later.)
-      11. In the Resource URL field enter the full URL of your CDS environment host (unlike the first screen, include https://).The screen should now look like:
-
-          image
-
-      12. You can now save your connector in the top bar. 
-      13. If you refresh the page you should see the Redirect URL. Copy this. Go back to the Azure AD app in the Azure portal and select Reply URLs. Paste in this redirect URL you copied and click Save. 
-
-   3. Build a sample flow that does a one-time copy from Group to a Role
-      1. Through flow it is easy to build this by using an Office365 Group or an Azure AD Group.
-      2. For Office 365 groups:
-         1. The Office 365 Groups connector contains an action for “List Group Members” that will return all the users in the selected Office 365 group. 
-      
-            image
-
-         2. Using an Office 365 group as your source for role updates allows your users to update group members through the Office 365 UI and then run the flow to apply the changes.  This allows the business to control who they want to be makers and administrators in their environments. 
-         3. When using Office 365 groups you have to list users based on whether the “internalemailaddress” field from the “List users” action in the custom connector is equal to the “User Principal Name” field (which is normally the email address) in the Office 365 Group. (Notice the single quotes around “User Principal Name” since it’s a string.)
-      3. For Azure AD groups: 
-         1.	Azure AD Security Groups are typically created by AD Administrators rather than business users.  AD Security Groups can be used in other systems to create group hierarchies. 
-         2. In cases where the User Principal Name may not be the same as the Email address you will have to use an Azure AD Group as it can do a comparison with the actual AD User GUID in CDS rather than relying on the email address.  
-         3. Rather than using the “List Group Member” action of the Office 365 Groups connector, the flow should use the “Get Group Members” action of the Azure AD Connector.  This action requires the ID of the group which a network administrator can obtain from the Azure AD Portal.  
- 
-            image
-         
-         4. Notice that the List Users query now looks for records where “azureactivedirectoryobjectid” equals the Id from the AD Group. (No quotes are required around the Id because it’s a GUID.  Adding quotes will make this $filter fail.)
-      4. Once you’ve identified the user(s) that you want to assign to the role, the next step is to search for that user in the Common Data Service (to get the CDS id). 
-      5. Then, based on that result we set the user role. The second foreach isn’t needed, because List users should always return one user.
-      6. To assign the correct role, you should first query the REST Endpoint of your environment, for example:
-         1.	https://orga2e7dd43.crm.dynamics.com/api/data/v9.0/roles?$select=name,roleid 
-         2.	This will return a list of names and ID’s for all the available roles, for example:
- 
-            image
-       
-      7. If you want to add the users to the “Environment Maker” Role then the “Role ODataID” parameter would be set to:
-         1. https://YourOrgID.crm.dynamics.com/api/data/v9.0/roles(d58407f2-48d5-e711-a82c-000d3a37c848) 
-         2. These roleid’s will be unique to each environment.
--->
-
 ### Consider location-based conditional access
 
 For customers with Azure AD Premium, conditional access policies can be defined in Azure for PowerApps and Microsoft Flow. This allows granting or blocking access based upon: user/group, device, location. 
@@ -233,7 +131,7 @@ In addition to monitoring, many customers want to subscribe to software creation
 1.	View and manage environments
 2.	View and manage all apps and flows within an environment
 3.	View and manage your CDS 
-4.	Environment and app management requires a PowerApps Plan 2 or Microsoft Flow plan 2 
+4.	Environment and app management requires a PowerApps plan or a Microsoft Flow plan 
 
 ### Build Microsoft Flows to alert on key audit events
 
@@ -263,7 +161,7 @@ The [PowerShell cmdlets](https://powerapps.microsoft.com/blog/gdpr-admin-powersh
 Here are three samples: 
 
 1. Download a report of activity w/ PowerShell. 
-This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  NOTE: the calling user or user account must be a global admin and have a PowerApps Plan 2 (or P2 trial) license.
+This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  NOTE: the calling user or user account must be a global admin and have a PowerApps plan or a PowerApps trial.
 	
    Q: Where should we host .zip files in the following deck? (Governance.pptx slide 48)
 

@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/04/2019
+ms.date: 10/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -98,7 +98,7 @@ Check back for the availability of operation and access permissions for model-dr
 ### Prerequisite
 To perform the administration operations in the admin cmdlets, you'll need the following:
 
-- A user with any of these roles, Office 365 Global admins, Azure Active Directory Global admins, or Dynamics 365 Service administrator, can access the PowerApps admin PowerShell cmdlets. These roles no longer require a P2 license for administrative access to the PowerApps admin PowerShell cmdlets. However, these administrators need to sign in to the [PowerApps Admin Center](https://admin.powerapps.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
+- A user with any of these roles, Office 365 Global admins, Azure Active Directory Global admins, or Dynamics 365 Service administrator, can access the PowerApps admin PowerShell cmdlets. These roles no longer require a PowerApps plan for administrative access to the PowerApps admin PowerShell cmdlets. However, these administrators need to sign in to the [PowerApps Admin Center](https://admin.powerapps.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
 - [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504), [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 Service administrator](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user’s resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
 
