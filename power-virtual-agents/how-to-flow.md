@@ -9,7 +9,7 @@ description: "Learn how to add actions to your bot using Microsoft Flow."
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
-## To create a new flow from a Virtual Agent
+## To create a new flow from a Virtual Agent using a template
 You can enable your bot to perform an action by calling a Microsoft Automate flow. The flow you want to use must share the same Common Data Service environment as your bot.  You can create a flow from with your Virtual Agent authpring experince by selecting an Action node in Dialog Authoring and using Create new flow button:
 
 (Pic 1 placeholder)
@@ -18,19 +18,17 @@ This will open flow template in Microsoft Automate portal in a separate tab. The
 
 (Pic 2 placeholder)
 
-A Virtual Agent bot can only invoke flows that have HTTP request and Reponse interfaces. The starte flow created from bot takes 2 input parameters, a String and Number as specified in HTTP Request interface in the flow:
+A Virtual Agent bot can only invoke flows that have HTTP Request and HHTP Reponse interfaces. This starter flow in this template takes 2 input parameters, a String and Number, as specified in HTTP Request interface in the flow. The input parameters (String and Number) are described in the JSON snippet in HTTP Code:
 
-(Pic 3 placeholder)
-
-The input parameters (String and Number) are described in the JSON snippet in HTTP Code
 
 Text box 1 (to be used for copy and paste by the reader)
+(Pic 3 placeholder)
 
-An HTTP Response is requited to return outputs to the bot. This flow example returns 2 output parameters to the bot a String and Number, as specified in HTTP Response:
+
+An HTTP Response is required to return outputs to the bot. This flow example returns 2 output parameters to the bot a String and Number, as specified in HTTP Response:
 
 Text box 2 (for copy and paste by the reader)
 (Pic 4 placeholder)
-
 
 
 ## Modify the bot flow template for your scenarios
