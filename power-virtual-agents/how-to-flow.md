@@ -36,7 +36,10 @@ Text box 2 (for copy and paste by the reader)
 ## Use a bot flow template to create your flow
 This template provides a fully functional flow that would work with Virtual Agents. Press Save button to save your new flow:
 
-Your new flow is created in My Flows tab on Microsoft Automate portal by default. To be able to use it with the bots, you must import your new flow from My Flows tab into a Solution. Go to Solutions tab on Microsoft Automate portal to see what Solutions are available to you:
+By default, your new flow is created in My Flows tab on Microsoft Automate portal by default. To be able to use it with the bots, you must import your new flow from My Flows tab into a Solution. 
+
+## Import your new flow into a Solution
+Go to Solutions tab on Microsoft Automate portal to see what Solutions are available to you:
 
 Pic 5 (Solutions Tab)
 
@@ -51,7 +54,7 @@ Pic 7 (import a flow into a solution)
 This flow is now ready to be used in a bot. 
 
 
-
+## Use your flow in a bot
 
 
 
