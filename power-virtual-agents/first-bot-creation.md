@@ -60,4 +60,4 @@ You will need to create a new environment (read article on [working with environ
 
 Your environment might not show up in the drop-down menu due to one of the following:
  - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to create a database in your environment.
- - The environment is created in an unsopported region. See the list of [supported regions](requirements-geographic-virtual-agent.md).
+ - The environment is created in an unsopported region. Learn more about [supported data locations](https://go.microsoft.com/fwlink/?linkid=2106441).
