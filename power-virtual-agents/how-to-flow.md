@@ -1,20 +1,61 @@
 ---
 title: "Add actions to your bot using Microsoft Flow"
 description: "Learn how to add actions to your bot using Microsoft Flow."
-ms.date: 05/29/2019
-ms.service:
-  - "dynamics-365-ai"
-ms.topic: article
-author: m-hartmann
-ms.author: mhart
-manager: shellyha
+
 ---
 
-# Add actions to your bot using Microsoft Flow
+# Add actions to your bot using Microsoft Power Automate 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can enable your bot to perform an action by invoking a flow. Use a flow that shares the same Common Data Service environment as the bot. First, create a Microsoft PowerApps environment, and then create your flow. Once you have created the flow, you can create a bot that uses an action to invoke the flow.
+
+## To create a new flow from a Virtual Agent
+You can enable your bot to perform an action by calling a Microsoft Automate flow. The flow you want to use must share the same Common Data Service environment as your bot.  You can create a flow from with your Virtual Agent authpring experince by selecting an Action node in Dialog Authoring and using Create new flow button:
+
+(Pic 1 placeholder)
+
+This will open flow template in Microsoft Automate portal in a separate tab. The portal will automatically open in the same environment as the bot and will use the credentials used in Virtual Agent. Bots are only able to call flows that are equipped with HTTP triggers and HTTP responses, and this flow template presents an example of such flow:
+
+(Pic 2 placeholder)
+
+A Virtual Agent bot can only invoke flows that have HTTP request and Reponse interfaces. The starte flow created from bot takes 2 input parameters, a String and Number as specified in HTTP Request interface in the flow:
+
+(Pic 3 placeholder)
+
+The input parameters (String and Number) are described in the JSON snippet in HTTP Code
+
+Text box 1 (to be used for copy and paste by the reader)
+
+An HTTP Response is requited to return outputs to the bot. This flow example returns 2 output parameters to the bot a String and Number, as specified in HTTP Response:
+
+Text box 2 (for copy and paste by the reader)
+(Pic 4 placeholder)
+
+
+
+## Use a bot flow template to create your flow
+This template provides a fully functional flow that would work with Virtual Agents. Press Save button to save your new flow:
+
+Your new flow is created in My Flows tab on Microsoft Automate portal by default. To be able to use it with the bots, you must import your new flow from My Flows tab into a Solution. Go to Solutions tab on Microsoft Automate portal to see what Solutions are available to you:
+
+Pic 5 (Solutions Tab)
+
+You can use any of existing Solutions for your flow, or you can create a new Solution. To create a new Solution, click on New button. Give you solution a name, select CDS as Publisher, and give it a version. 
+
+Pic 6 (Create a new solution)
+
+Use “Import button to import your new flow into a solution. Select Option Outside of Solutions and select you new flow. Once it is in a Solution, it can be used by a bot.
+
+Pic 7 (import a flow into a solution)
+
+This flow is now ready to be used in a bot. 
+
+
+
+
+
+
+
 
 ## To create a PowerApps environment
 
