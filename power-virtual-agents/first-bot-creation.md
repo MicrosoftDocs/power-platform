@@ -44,7 +44,7 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 If you have already created a bot, you can create a new bot by selecting the icon on the title bar to open the **Bots** pane and then selecting **New bot**.
 
-   ![New bot icon in title bar](media/new-bot-icon.PNG)
+   ![New bot icon in title bar](media/new-bot-icon.png)
 
 ## Known issues with creating a bot
 
