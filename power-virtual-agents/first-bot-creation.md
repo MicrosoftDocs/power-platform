@@ -21,13 +21,13 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 ## To create your first bot
 
-1. Go to [aka.ms/virtual-agent](http://aka.ms/virtual-agent) and select **Get Started**. Sign in using your work account.
+1. Go to [aka.ms/virtual-agent](http://aka.ms/TryPVA) and select **Get Started**. Sign in using your work account.
 
    If you don't have a license, you will sign up for one using the guided wizzard like experience.
     
 2. In the **Create a new bot** dialog box, you’ll name your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
-   ADD and IMAGE after visiuals in the app updated
+   ![New bot dialog](media/create_new_bot.png)
 
    Your virtual agent is created in the default PowerApps environment. For most users, this is sufficient. However, if you want to specify a custom PowerApps environment for your virtual agent, you can do so by expanding the **More options** menu and selecting a different environment. To learn more about environments read the [PowerApps environment overview](https://docs.microsoft.com/en-us/power-platform/admin/environments-overview) documentation.
   
