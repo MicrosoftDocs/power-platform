@@ -17,7 +17,7 @@ The topic details page provides a view into the performance of individual topics
 
 ![Topic details page](media/topic-details-page.png)
 
-You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-CSAT.md) pages:
+You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-csat.md) pages:
 
 * [Escalation rate drivers (Summary page)](analytics-summary.md#escalation-rate-drivers-chart)
 * [Abandon rate drivers (Summary page)](analytics-summary.md#abandon-rate-drivers-chart)
