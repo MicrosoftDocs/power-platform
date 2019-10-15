@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 10/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -36,7 +36,7 @@ Users can sign up by going to [powerapps.microsoft.com](https://powerapps.micros
 When a user in your organization signs up for PowerApps, that user is assigned a PowerApps license automatically.
 
 > [!NOTE]
-> Users who sign up for a trial license from within PowerApps don't appear in the Office 365 admin portal as PowerApps Plan 2 trial users (unless they have another license to Office 365, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or PowerApps).
+> Users who sign up for a trial license from within PowerApps don't appear in the Office 365 admin portal as PowerApps trial users (unless they have another license to Office 365, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or PowerApps).
 
 See [Self-service sign up for PowerApps](/powerapps/maker/signup-for-powerapps) for more details.
 
@@ -71,7 +71,7 @@ If a user was assigned a PowerApps license then you can take the following steps
 
 4. On the user details pane, in the **Product licenses** section select **Edit**.
 
-5. Find the license called **Microsoft PowerApps Plan 1** or **Microsoft PowerApps Plan 2** or **Microsoft PowerApps per user** set the toggle to **Off** and then select **Save**.
+5. Find the PowerApps license, set the toggle to **Off**, and then select **Save**.
 
     ![](./media/signup-question-and-answer/remove-license.png)
 
@@ -85,7 +85,7 @@ If a user has access to PowerApps through their Office 365 and Dynamics 365 plan
 
 4. On the user details pane, in the **Product licenses** section select **Edit**.
 
-5. Expand the user's Office 365 or Dynamics 365 license, disable access to the service called **PowerApps for Office 365** or **PowerApps for Dynamics 365** and then select **Save**.
+5. Expand the user's Office 365 or Dynamics 365 license, disable access to the service, and then select **Save**.
 
     ![](./media/signup-question-and-answer/remove-service-plan.png)
 

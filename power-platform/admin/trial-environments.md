@@ -1,13 +1,14 @@
 ---
 title: Trial environments | Microsoft Docs
 description: Get early access to functionalities with PowerApps Preview Program
-author: manasmams
+author: jimholtz
+ms.reviewer: manasmams
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/07/2019
-ms.author: manasma
+ms.date: 10/15/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -64,10 +65,10 @@ If you have 1GB of available database capacity, you can convert a Trial environm
 ### What if I don’t have available quota for Production environments?
 
 Contact your Office 365 Global admin or Azure Active Directory (Azure AD) tenant admin to:
-- Assign PowerApps Plan 2 to you. 
+- Assign a PowerApps plan to you. 
 - Locate another user who has available Production environment quota.
 
-You can also purchase a PowerApps Plan.
+You can also purchase a PowerApps plan.
 
 ### Can every Office 365 Global admin or Azure AD tenant admin convert a Trial environment to a Production environment?
 
