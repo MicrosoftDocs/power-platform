@@ -45,4 +45,4 @@ These topics demonstrate how you can name a topic, set its description and set u
 When a bot is created the template is automatically applied and contains the topics noted above. While the topics work as they are, you will want to either update to meet your specific requirements and likely integrate them through Microsoft Flows to your own Line of Business applications.
 
 ### Leveraging the topics
-To learn from or use these topics, click on any particular one. Review the title and description. Next click on edit the canvas and you can see the virtual agent flow including bot comments, expected user comments, decision points and entity references.
+To learn from or use these topics, click on any particular one. Review the title and description. Next click on edit the canvas and you can see the virtual agent flow including bot comments, expected user comments, decision points and entity references. 
