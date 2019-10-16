@@ -13,6 +13,21 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
+---
+title: "TITLE"
+description: "DESCRIPTION"
+keywords: "KEYWORDS"
+ms.date: 09/04/2019
+ms.service:
+  - dynamics-365-ai
+ms.topic: article
+author: iaanw
+ms.author: iawilt
+manager: shellyha
+ms.custom: "VA"
+ms.collection: virtualagent
+---
+
 # Learn with Power Virtual Agent Bot Customer Service template
 The Power Virtual Agent includes the templates from which you can learn how a topic can be used as well as a starting point for Customer Service. There are serveral topics within this template:
 
