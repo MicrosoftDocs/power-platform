@@ -1,7 +1,7 @@
 ---
 title: "Preview: Capacity add-ons for PowerApps and Flow  | MicrosoftDocs"
 description: This topic covers the Per app, Flow per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 10/11/2019
+ms.date: 10/16/2019
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -94,7 +94,7 @@ Yes. Please use the following steps.
 
 2. Assign the group licenses in portal.azure.com. 
    1. Go to: [https://portal.azure.com](https://portal.azure.com)  > **Azure Active Directory** > **Groups** > search for the group created in Step #1.  
-   2. See [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups). Assign the license **PowerApps per app plan baseline access**.  
+   2. For now, sign up for the [Per app baseline access plan](https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2), and then assign the license **PowerApps per app plan baseline access**. See [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups).  
 
 3. Add users to the group, see [Add or remove group members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).  
 
