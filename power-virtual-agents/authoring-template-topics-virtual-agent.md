@@ -13,53 +13,21 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
-# H1 - Should be same as your title. There should only ever be one H1.
+# Learn with Power Virtual Agent Bot Customer Service template
+The Power Virtual Agent includes the templates from which you can learn how a topic can be used as well as a starting point for Customer Service. There are serveral topics within this template:
 
-Why would anyone want to do this thing or use this feature?
+* STORE INFORMATION: Company store locations
+* ORDER: BUY: How to buy an item
+* ORDER: CANCEL: How to cancel an order
+* ORDER: RETURNS: Returns, exchange, and refund order policy
+* ORDER: PAYING: Options for paying bill
+* STORE INFORMATION: Company store hours
+* PROFILE: Manage my account
 
-## H2
+These topics demonstrate how you can name a topic, set its description and set up basic topic flows including variables, decision points and entities and slots.
 
-Describe what this procedure will do and why someone would want to do it.
+## Customer Service templates for new Bots
+When a bot is created the template is automatically applied and contains the topics noted above. While the topics work as they are, you will want to either update to meet your specific requirements and likely integrate them through Microsoft Flows to your own Line of Business applications.
 
-
-### Use H3 underneath H2.
-  
-
-For standards, go to the [OPS guide](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
-
-Here are some quick references so you can copy and paste:
-
-![IMAGE ALT TEXT](media/IMAGENAME.png)
-
-[Link text](url/filename.md)
-
-[Link text](https://microsoft.com/filename)
-
->[!NOTE]
->Use a > on a new line for each line break. Notes are purple
-
->[!WARNING]
->Use a > on a new line for each line break. These are red.
-
->[!TIP]
->Use a > on a new line for each line break. These are green.
-
->[!IMPORTANT]
->Use a > on a new line for each line break. These are blue
-
->[!CAUTION]
->I dont know if this still exists.
-
-**Bold text**
-
-*Italic text*
- 
- <!-- comment -->
-
-
- Table head row | Second col | Third col
- ---|---|---
- Row text | Row text | Row text
-
-
-
+### Leveraging the topics
+To learn from or use these topics, click on any particular one. Review the title and description. Next click on edit the canvas and you can see the virtual agent flow including bot comments, expected user comments, decision points and entity references.
