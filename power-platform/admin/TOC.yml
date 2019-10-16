@@ -365,6 +365,8 @@
              href: troubleshooting-server-based-authentication.md
            - name: Troubleshoot set up with SharePoint online
              href: troubleshoot-set-up-sharepoint-online.md
+           - name: Known issues with documentation management
+             href: doc-management-known-issues.md             
       - name: PowerShell support for PowerApps (preview) 
         items:
         - name: About PowerShell support
