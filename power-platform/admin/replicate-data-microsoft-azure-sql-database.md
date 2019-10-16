@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 10/16/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -609,6 +609,9 @@ EXEC SP_EXECUTESQL @sql;
 |United Kingdom South|51.140.71.166|  
 |United Kingdom West|51.141.44.218|  
   
+> [!NOTE]
+> North America customers should whitelist IP addresses for both East US and West US.
+
 <a name="DES_knownissues"></a>   
 ## Known issues  
   
