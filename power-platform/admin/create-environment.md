@@ -97,7 +97,7 @@ To create an environment with a database, you need 1GB available database capaci
    > [!div class="mx-imgBorder"] 
    > ![](./media/new-environment-page2.png "Create new environment settings")
 
-## Create an environment
+## Create an environment and add model-driven apps
 When you create an environment with a database, you can add model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.
 
 > [!NOTE]
@@ -144,6 +144,7 @@ You need 1GB available database capacity.
 
 ### Steps
 1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
+
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
@@ -161,6 +162,25 @@ You need 1GB available database capacity.
 
    > [!div class="mx-imgBorder"] 
    > ![](./media/new-environment-page1-nodb.png "Create new environment settings")
+
+## Provision a Sandbox environment
+To provision a Sandbox environment, you change a Production environment to Sandbox.
+
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
+
+2. From the left-side menu, select **Environments**, and then select a Production environment.
+
+3. Select **Edit**
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/select-edit.png "Select Edit")
+
+4. Under **Type**, choose the Sandbox environment type. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/select-sandbox.png "Select Sandbox environment")
+
+5. Select **Save**.
 
 ## FAQ
 
