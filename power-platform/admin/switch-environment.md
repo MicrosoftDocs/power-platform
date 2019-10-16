@@ -35,7 +35,7 @@ You may decide that your customization work developed and tested on a sandbox en
 
 4. Under **Type**, choose the environment type to change to. 
 
-5. Select **Save**.
-
    > [!div class="mx-imgBorder"] 
    > ![](media/switch-environment.png "Select environment type")
+
+5. Select **Save**.
