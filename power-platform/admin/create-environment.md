@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/20/2019
+ms.date: 10/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -46,10 +46,8 @@ Your license determines whether you can create environments.
 | Dynamics 365 Trial | Yes (one) | Yes|
 | Dynamics 365 Plans |Yes (one)| Yes |
 | Dynamics 365 Apps Plans |Yes (one)| Yes |
-| PowerApps P2 |Yes (one)| Yes |
-| PowerApps P2 Trial |Yes (one)| Yes |
-| PowerApps P1 |Yes (one)| Yes |
-| PowerApps P1 Trial |Yes (one)| No |
+| PowerApps plan |Yes (one)| Yes |
+| PowerApps Trial |Yes (one)| Yes |
 
 ## Create an environment in the Power Platform Admin center
 Every environment can have zero or one Common Data Service database, which provides storage for apps. When users create an app in an environment, that app can connect to any data source, including connections, gateways, and flows. However, the app is only permitted to connect to the Common Data Service databases in that same environment. How you choose to leverage environments depends on your organization and the apps you're trying to build. For more information, see [Environments overview](environments-overview.md).
