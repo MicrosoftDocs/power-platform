@@ -1,5 +1,4 @@
 ---
-redirect_url: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/synchronize-user-information-active-directory
 title: "Synchronize user information with Active Directory  | MicrosoftDocs"
 description: Synchronize user information with Active Directory
 author: jimholtz
