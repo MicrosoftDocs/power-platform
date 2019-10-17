@@ -53,7 +53,7 @@ After users have licenses, environments exist as containers for all resources ut
 ### Secure your data and network
 - PowerApps and Flow *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
 - Network Access control policies can also apply to PowerApps and Flow. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps and Flow. 
-- In an environment, access is controlled at three levels: [Environment roles](database-security.md), [Resource permissions for PowerApps](wp-controlling-access.md), Microsoft Flows, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
+- In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for PowerApps, Microsoft Flows, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
 - When Common Data Service is created in an environment the Common Data Service roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
 
 The following principals are supported for each role type.
