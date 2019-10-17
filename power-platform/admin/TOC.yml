@@ -83,7 +83,7 @@
           href: create-environment.md
         - name: Control environment creation
           href: control-environment-creation.md
-        - name: Backup and restore environments
+        - name: Back up and restore environments
           href: backup-restore-environments.md
         - name: Create a database in PowerApps
           href: create-database.md
