@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -41,12 +41,11 @@ Access to PowerApps and Flow starts with having a license, the type of license a
 |---------|---------|
 |Office 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
 |Dynamics 365 Included     | This allows users to customize and extend model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, they already have.  |
-|PowerApps P1     | This allows makes enterprise connectors and Common Data Service accessible for use. |
-|PowerApps P2     | This allows users to use robust business logic across application types and administration capabilities.  |
+|PowerApps plan  | This allows: <ul><li>making enterprise connectors and Common Data Service accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
 |PowerApps Community | This allows a user to use PowerApps, Flow, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
 |Flow Free | This allows users to create unlimited flows and perform 750 runs. |
-|Flow P1 | This allows users to create unlimited flows, use premium connectors and perform 4,500 runs.|
-|Flow P2 | This allows users to create unlimited flows, use premium connectors and perform 15,000 runs. |
+|Flow plan| See [Microsoft PowerApps and Microsoft Flow Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).|
+
 
 ### Environments
 After users have licenses, environments exist as containers for all resources utilized by PowerApps, Microsoft Flow and Common Data Service. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
