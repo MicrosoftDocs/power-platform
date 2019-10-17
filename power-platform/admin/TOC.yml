@@ -253,8 +253,6 @@
       items:
       - name: Overview
         href: wp-security.md     
-      - name: Controlling access 
-        href: wp-controlling-access.md
       - name: Governance considerations
         href: governance-considerations.md
       - name: Security concepts 
