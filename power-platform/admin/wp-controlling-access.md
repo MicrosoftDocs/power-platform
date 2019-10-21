@@ -1,4 +1,5 @@
 ---
+redirect_url: wp-security
 title: "Controlling access to Common Data Service | MicrosoftDocs"
 description: Provides information about how you can control access to Common Data Service using Azure AD.
 ms.custom: ""
