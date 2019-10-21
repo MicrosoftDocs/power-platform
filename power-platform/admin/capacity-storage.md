@@ -1,7 +1,7 @@
 ---
 title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 08/08/2019
+ms.date: 10/21/2019
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -19,10 +19,12 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
+Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
+
 > [!NOTE]
 > For introductory licensing information on the new capacity analytics model, see [PowerApps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
-
-Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
+>
+> Common Data Service storage capacity is not available for Dynamics 365 US Government – GCC and GCC High, DOD, and Microsoft Dynamics 365 online services operated by 21Vianet.
 
 We have updated our capacity analytics reporting to provide important benefits to our customers. Here is a summary of changes in capacity analytics.
 
@@ -62,14 +64,14 @@ Some of the benefits of this change:
 
 ## Capacity page details
 
-### Overall tab
+### Summary tab
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
+To view the **Summary** page, select **Analytics** > **Capacity** > **Summary** tab.
+
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
-
-To view the **Capacity** page, select **Analytics** > **Capacity** > **Overall** tab in the left-side menu.
 
 |  |Description |
 |---------|---------|
@@ -78,14 +80,15 @@ To view the **Capacity** page, select **Analytics** > **Capacity** > **Overall**
 |(3)    |**What's new**: Used for announcements and notifications  |
 |(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
 
-### Per environment tab
+### Storage capacity tab
 
-This page provides similar information as the **Overall** tab but with an environment-level view of where your organization is using capacity.
+This page provides similar information as the **Summary** tab but with an environment-level view of where your organization is using capacity.
 
-Select an environment to see more detailed information on actual consumption.
+To view the **Storage capacity** page, select **Analytics** > **Capacity** > **Storage capacity** tab. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
+
 
 > [!NOTE]
 > - The following environments do not count against capacity and show as 0GB:
@@ -97,7 +100,17 @@ Select an environment to see more detailed information on actual consumption.
 
 ### Environment capacity analytics
 
-This page provides an environment-level detailed view of where your organization is using capacity as well as the three capacity types consumption.
+This page provides an environment-level detailed view of where your organization is using capacity as well as the three capacity types consumption. 
+
+To view environment-level capacity analytics:
+
+1. Select **Analytics** > **Capacity** > **Overall** tab.
+2. Select the **Storage capacity** tab.
+3. Select an environment.
+4. Select the **Details** button (![Details button](media/storage-data-details-button.png "Details button"))
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-capacity-details.png "Environment capacity analytics")
 
 Details provided:
 
@@ -108,11 +121,12 @@ Details provided:
 -	Actual Log usage
 -	Top tables and their growth over time
 
+<!--
 Select **Applied filters** at the the top of the page to filter data for different time spans. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
-
+-->
 ## FAQ
 
 ### I see the new Capacity Report, but I have not purchased the new capacity offers. How do I interpret the report?
