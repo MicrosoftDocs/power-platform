@@ -19,18 +19,18 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-Securing a field with field level security can impact synchronization between model-driven apps in Dynamics 365 and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)]. Consider the following scenario.  
+Securing a field with field-level security can impact synchronization between model-driven apps in Dynamics 365 and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)]. Consider the following scenario.  
   
 > [!NOTE]
 >  We do not recommend securing a field when the field is set to sync. Best practice is to NOT secure any sync fields. If you do decide to secure sync fields, you’ll need to do the following:  
 > 
-> 1. Secure the field using field level security. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] see “Set field level security” below.  
+> 1. Secure the field using field-level security. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] see “Set field-level security” below.  
 > 2. Change the sync direction so that sync does not attempt to update or write the field during synchronization. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Control field synchronization between model-driven apps in Dynamics 365 and Outlook or Exchange](control-field-synchronization-outlook.md)  
   
 ## Scenario: Restrict users from changing Job Title  
  The Contoso company wants to promote consistent data entry. While sales personnel are out in the field, it’s easy for them to create different data entries to describe the same thing. For example, the same job title could be entered as “Construction Manager”, “Foreman”, or “Site Manager”. To prevent this, the Job Title field is secured. This has consequences for synchronization.  
   
-### Set field level security  
+### Set field-level security  
  John, the admin for Contoso, sets security on several fields.  
   
  ![Job Title field](../admin/media/job-title-field.png "Job Title field")  
@@ -101,4 +101,4 @@ Securing a field with field level security can impact synchronization between mo
  ![Contact with Job Title form](../admin/media/contact-job-title.png "Contact with Job Title form")  
   
 ### See also  
- [Field level security](../admin/field-level-security.md)
+ [Field-level security](../admin/field-level-security.md)

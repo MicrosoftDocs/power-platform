@@ -25,7 +25,7 @@ The hierarchy security model is an extension to the existing security models tha
 > [!NOTE]
 >  While the hierarchy security model provides a certain level of access to data, additional access can be obtained by using other forms of security, such as security roles.  
   
-### Manager hierarchy  
+## Manager hierarchy  
  The Manager hierarchy security model is based on the management chain or direct reporting structure, where the manager’s and the report’s relationship is established by using the Manager field on the system user entity. With this security model, the managers are able to access the data that their reports have access to. They are able to perform work on behalf of their direct reports or access information that needs approval.  
   
 > [!NOTE]
@@ -49,7 +49,7 @@ The hierarchy security model is an extension to the existing security models tha
   
 -   User 1, as a direct manager of User 2, has access to the accounts owned by or shared with User 2, and any accounts that are shared with or owned by a team that User 2 is a member of. However, User 1 doesn’t have access to the accounts of User 3, even though his or her direct report may have access to User 3 accounts.  
   
-### Position hierarchy  
+## Position hierarchy  
  The Position hierarchy is not based on the direct reporting structure, like the Manager hierarchy. A user doesn’t have to be an actual manager of another user to access user’s data. As an administrator, you will define various job positions in the organization and arrange them in the Position hierarchy. Then, you add users to any given position, or, as we also say, “tag” a user with a particular position. A user can be tagged only with one position in a given hierarchy, however, a position can be used for multiple users. Users at the higher positions in the hierarchy have access to the data of the users at the lower positions, in the direct ancestor path. The direct higher positions have Read, Write, Update, Append, AppendTo access to the lower positions’ data in the direct ancestor path. The non-direct higher positions, have Read-only access to the lower positions’ data in the direct ancestor path.  
   
  To illustrate the concept of the direct ancestor path, let’s look at the diagram below. The Sales Manager position has access to the Sales data, however, it doesn’t have access to the Support data, which is in the different ancestor path. The same is true for the Service Manager position. It doesn’t have access to the Sales data, which is in the Sales path. Like in the Manager hierarchy, you can limit the amount of data accessible by higher positions with “Depth”. The depth will limit how many levels deep a higher position has a Read-only access, to the data of the lower positions in the direct ancestor path. For example, if the depth is set to 3, the CEO position can see the data all the way down from the VP of Sales and VP of Service positions, to the Sales and Support positions.  
