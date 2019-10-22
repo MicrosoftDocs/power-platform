@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 10/22/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -58,7 +58,8 @@ About **system backups**:
    > ![Enter backup details](media/restore-backup.png "Enter backup details")
 
    > [!NOTE]
-   > Only Sandbox environments can be restored to.
+   > - Only Sandbox environments can be restored to.
+   > - Under **Edit details**, you can change the environment name.
 
 7. Confirm overwrite of the environment. 
 
