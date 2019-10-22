@@ -7,7 +7,7 @@ ms-topic: conceptual
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/05/2019
+ms.date: 10/22/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -117,7 +117,7 @@ Importing a Common Data Service solution package unfortunately requires a manual
         ![Edit url](./media/environment-and-tenant-migration/edit-url.png)
 
     * New URL structure:
-  `https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx`
+  `https://{orguniquename}.crm.dynamics.com/tools/solution/import/SolutionImportWizard.aspx`
 
         ![Select package](./media/environment-and-tenant-migration/select-package.png)
 
