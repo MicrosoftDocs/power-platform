@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/09/2019
+ms.date: 10/22/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -170,8 +170,8 @@ Premium connector licensing requirements for the reclassified connectors.
 
 ### How many PowerApps applications I can run with Office 365 plans?
 
-No, customers can continue to run standalone PowerApps applications to extend
-and customize Office 365 using standard connectors.
+There is no limit on the number of applications. Customers can continue to run standalone PowerApps applications to extend
+and customize Office 365 using standard connectors. 
 
 ### The PowerApps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
