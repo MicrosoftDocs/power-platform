@@ -40,7 +40,7 @@ By default, this new flow is created in My Flows tab on Microsoft Automate porta
 
 
 
-## Import your new flow into a Solution
+## Add your flow to a Solution
 Go to Solutions tab on Microsoft Automate portal to see what Solutions are available to you:
 
 Pic 5 (Solutions Tab)
