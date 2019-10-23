@@ -239,6 +239,11 @@ supported on the Unified Interface. Instead of Silverlight web resources, you mu
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
+Rules in canvas apps is deprecated
+-
+
+Effective October 14, 2019, the rules feature in canvas apps in PowerApps is deprecated. Few people have made use of rules in their canvas apps. From feedback collected through research and discussions with makers of PowerApps, the rules feature was confusing, and expressions were easier to learn, use, and debug. For more information about the rules feature deprecation, see [Blog: Canvas Rules feature deprecation](https://powerapps.microsoft.com/en-us/blog/canvas-rules-feature-deprecation/).
+
 ## Past deprecations
 
 For information on *past* deprecations, see:
