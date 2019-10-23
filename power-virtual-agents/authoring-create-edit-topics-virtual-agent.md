@@ -90,7 +90,7 @@ Zoom in and out of the design canvas by using the conversation editor's Zoom in 
 
   You can save the user response in a variable to be used later. For more information on using variables, see [Use variables](authoring-variables-virtual-agent.md)
 
-5. Add additional message nodes and user responses to complete the conversation path.
+5. Add additional message nodes and user responses to complete the conversation path. Hover on the line between two nodes, and click on the **+** to add a new node.
 
 
 6. To add a customer satisfaction survey at the end of a response that resolves the customer issue, select **End the conversation**, then select **End with survey**.
