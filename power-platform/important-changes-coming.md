@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in PowerApps, Microsoft Flow and model-driven apps in Dynamics 365"
-ms.date: "09/30/2019"
+ms.date: "10/23/2019"
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -24,6 +24,10 @@ Administrators and IT professionals should use this information to prepare for f
 > “Deprecated” means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
+Rules feature in canvas apps is deprecated
+----------------------------------
+
+Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-with-rules) feature in canvas apps in PowerApps is deprecated. Few people have made use of rules in their canvas apps. From feedback collected through research and discussions with makers of PowerApps, the rules feature was confusing, and expressions were easier to learn, use, and debug. For more information about the rules feature deprecation, see [Blog: Canvas Rules feature deprecation](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/).
 
 
 Legacy web client is deprecated
@@ -238,6 +242,8 @@ The Silverlight (XAP) web resource is deprecated on the web client, and is not
 supported on the Unified Interface. Instead of Silverlight web resources, you must use custom
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
+
+
 
 ## Past deprecations
 
