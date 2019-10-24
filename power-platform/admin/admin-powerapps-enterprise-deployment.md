@@ -1,21 +1,13 @@
 ---
-title: "Administering a PowerApps enterprise deployment| MicrosoftDocs"
+title: "Administering a PowerApps enterprise deployment  | MicrosoftDocs"
 description: Check out the whitepaper on administering a PowerApps enterprise deployment.
-ms.custom: ""
-ms.date: 08/09/2018
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/09/2018
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -25,7 +17,7 @@ search.app:
 ---
 # Administering a PowerApps enterprise deployment
 
-PowerApps is a high-productivity application development platform from Microsoft.  The platform is used by Microsoft to build their own 1st party applications Dynamics 365 for Sales, Service, Field Service, Marketing and Talent.  This means these applications are built natively on the platform.   Enterprise customers can also build their own custom line of business applications using the same technology.  Individual users and teams within your organization can also build personal or team productivity applications with no-code or low-code. 
+PowerApps is a high-productivity application development platform from Microsoft.  The platform is used by Microsoft to build their own 1st party applications Dynamics 365 Sales, Service, Field Service, Marketing and Talent.  This means these applications are built natively on the platform.   Enterprise customers can also build their own custom line of business applications using the same technology.  Individual users and teams within your organization can also build personal or team productivity applications with no-code or low-code. 
 
 Check out the following downloadable whitepaper: [Administering a PowerApps enterprise deployment](https://aka.ms/powerappsadminwhitepaper)
 

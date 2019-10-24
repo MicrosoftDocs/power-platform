@@ -1,13 +1,14 @@
 ---
 title: Responding to Data Subject Rights (DSR) requests for PowerApps customer data  | Microsoft Docs
 description: Walkthough of how to respond to Data Subject Rights (DSR) requests for PowerApps customer data
-author: jamesol-msft
+author: jimholtz
+ms.reviewer: paulliew
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
-ms.author: jamesol
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -84,8 +85,8 @@ For guidance on how to discover personal data stored by the Microsoft Flow servi
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a PowerApps user
 
-### Step 3: Find personal data for the user in instances of Common Data Service
-Certain PowerApps licenses, including the PowerApps Community Plan, give the ability for users within your organization to create instances of Common Data Service and to create and build apps on Common Data Service. The PowerApps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the [PowerApps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each PowerApps license.
+### Step 3: Find personal data for the user in environments of Common Data Service
+Certain PowerApps licenses, including the PowerApps Community Plan, give the ability for users within your organization to create environments of Common Data Service and to create and build apps on Common Data Service. The PowerApps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the [PowerApps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each PowerApps license.
 
 For guidance on how to discover personal data stored by Common Data Service, see [Responding to Data Subject Rights (DSR) requests for customer data in Common Data Service](common-data-service-gdpr-dsr-guide.md).
 

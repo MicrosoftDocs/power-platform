@@ -1,24 +1,18 @@
 ---
 title: "About Connectors | MicrosoftDocs"
-description: About Connectors.
-ms.custom: ""
-ms.date: 09/27/2018
-ms.reviewer: ""
+description: About Connectors
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/27/2018
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # About Connectors
@@ -61,7 +55,7 @@ Within each environment using data loss prevention policies you can limit what c
 
 ## Connector Authentication Patterns
 
-PowerApps and Flow authenticate with connectors to create a connection instance. It is that instance that contains the specific configuration information necessary for the app or flow to talk to the connector API that is used in each interaction. Connectors could choose to use no authentication, basic authentication, API key authentication or OAuth 2.0. The most common are OAuth and API Key.
+PowerApps and Flow authenticate with connectors to create a connection environment. It is that environment that contains the specific configuration information necessary for the app or flow to talk to the connector API that is used in each interaction. Connectors could choose to use no authentication, basic authentication, API key authentication or OAuth 2.0. The most common are OAuth and API Key.
 
 OAuth if you aren’t familiar with it is an authorization framework that allows external applications to obtain controlled access to a target service. Many APIs support it including Common Data Service, Facebook and Twitter to name a few. The goal of authentication is to allow the user to sign in to a familiar login dialog, consent to the application using the service, and then setup to allow tokens to be acquired. It is the tokens that are used on each request to prove who the user is and their right to use the API. In the PowerApps and Flow usage, a Consent Server is involved that helps manage the tokens and their lifecycle including storing the renewal token in the Consent Server and handling the refresh cycle. The following is a step by step look at what happens when you authenticate a connection using OAuth.
 

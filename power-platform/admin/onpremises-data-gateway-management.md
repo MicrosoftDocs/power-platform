@@ -1,23 +1,18 @@
 ---
-title: "Preview: On-premises data gateway management | MicrosoftDocs"
+title: "On-premises data gateway management  | MicrosoftDocs"
 description: View and manage on-premises gateways. 
-ms.custom: ""
-ms.date: 08/08/2019
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/02/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # On-premises data gateway management
@@ -127,6 +122,12 @@ If a person who doesn’t have access to install gateways tries to install one, 
 
 > [!div class="mx-imgBorder"] 
 > ![Error message](media/manage-gateway-error-message.png "Error message")
+
+## Get Help
+For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform Admin center.
+
+> [!div class="mx-imgBorder"] 
+> ![Get help](media/get-help.png "Get help")
 
 ### See also
  [On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem)<br/>
