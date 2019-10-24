@@ -2,7 +2,7 @@
 title: "Controlling access to Common Data Service | MicrosoftDocs"
 description: Provides information about how you can control access to Common Data Service using Azure AD.
 ms.custom: ""
-ms.date: 06/18/2019
+ms.date: 10/07/2019
 ms.reviewer: "jimholtz"
 ms.service: power-platform
 ms.topic: "article"
@@ -21,7 +21,9 @@ Common Data Service relies on Azure Active Directory (Azure AD) for authenticati
 
 External users from other Azure AD tenants can be added as Business Guests in your Azure AD. They can be configured to work with some limitations with model-driven apps. Business Guests are not supported currently for canvas apps and Microsoft Flow. Other external users beyond the capability of Business Guests, including Azure B2C is not currently supported.
 
-### Related topics
+### See also
+[Governance consideration](governance-considerations.md)<br/>
 [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)<br/>
 [Security concepts in Common Data Service](wp-security-cds.md)<br/>
-[Developers: Authentication with Common Data Service web services](/powerapps/developer/common-data-service/authentication)
+[Developers: Authentication with Common Data Service web services](/powerapps/developer/common-data-service/authentication)<br/>
+[Create users and assign security roles](create-users-assign-online-security-roles.md)

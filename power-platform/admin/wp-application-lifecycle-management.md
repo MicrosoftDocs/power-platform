@@ -1,24 +1,18 @@
 ---
-title: "Application Lifecycle Management | MicrosoftDocs"
+title: "Application Lifecycle Management  | MicrosoftDocs"
 description: Application Lifecycle Management.
-ms.custom: ""
-ms.date: 09/27/2018
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/27/2018
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Application Lifecycle Management
@@ -65,7 +59,7 @@ Depending on the complexity of the application, anything from using a SharePoint
 https://visualstudio.microsoft.com/team-services/. The following are some of those features:
 
 - Work item planning and tracking
-- Version control – offers a way to store exported assets – using Dynamics 365 SDK tools like Solution Packager allows this to scale up to larger teams working on Common Data Service Solution package customizations.
+- Version control – offers a way to store exported assets – using SDK tools like Solution Packager allows this to scale up to larger teams working on Common Data Service Solution package customizations.
 - Build and release automation – This can be helpful for automating everything from exporting of Common Data Service solutions for backup, to compiling developer-built components. The release automation can take solutions and developer assets and coordinate deploying to test and production environments. These deployments can also leverage approval checkpoints as appropriate. Using community tools like Xrm.CI.Framework https://marketplace.visualstudio.com/items?itemName=WaelHamze.xrm-ci-framework-build-tasks you can deploy Common Data Service solution packages from the release tasks.
 
 The following is an example of the Team Status Dashboards that gives the team an all up view of their progress.
@@ -88,7 +82,7 @@ We also covered import, but let’s look at a few more things to consider.
 
 - Always evaluate what is already in the target environment.
 - Create any necessary custom connectors prior to import
-- If you are importing a Common Data Service solution that is dependent on other Common Data Service solutions make sure those are already imported into the Common Data Service instance
+- If you are importing a Common Data Service solution that is dependent on other Common Data Service solutions make sure those are already imported into the Common Data Service environment
 - If you import an unmanaged Common Data Service solution make sure you publish all after import has completed
 - Remember when you import an update to a PowerApps canvas application you must publish the new version before others will see it
 - If you are importing Common Data Service changes that remove any entities and data, consider a proactive on demand backup prior to the import.
@@ -107,7 +101,7 @@ Shown earlier, the import feature allows the maker to update an existing app in 
 Once your application has been deployed you can mostly go into maintenance mode responding to user inquires as needed. Here are a few things to consider while you are between updates.
 
 - PowerApps canvas applications need to be periodically republished for best performance and stability. About every six months you should re-publish your deployed PowerApps canvas applications even if they haven’t changed. This ensures the application picks up the latest runtime changes in the environments.
-- Keep an eye on your Common Data Service instance storage usage as well as your Flow quotas and adjust resources and licensing as needed.
+- Keep an eye on your Common Data Service environment storage usage as well as your Flow quotas and adjust resources and licensing as needed.
 
 ## Retiring and removing an application
 
@@ -120,11 +114,11 @@ As your organization evolves it’s likely one or more of the applications deplo
 - When removing connections, you need to first consider the PowerApps canvas apps and Flows that might still be using them. This can be checked by looking at what is associated with the connection prior to deleting.
 - Custom connections are sometimes better to be left if they might be reused later as they would require extra effort to re-establish in the future.
 - To remove a PowerApps model-driven app depends if the Common Data Service solution containing it was installed as managed or unmanaged. If it was installed as unmanaged you can delete the application module to remove it from users. Removing unmanaged Common Data Service solution components requires manually removing one item at a time from the environment. Removing the Common Data Service solution itself in this situation only removes the container and not the components. This is one of the key benefits of managed solution is the ability to uninstall them as a unit.
-- If the solution installed is managed, you would uninstall/remove the Common Data Service solution containing it from the instance. When you remove the Common Data Service solution that contains that application it’s important to note that also removes any other components and data as well. If only desiring to remove the application best approach would be to remove the application in the development environment for that Common Data Service solution and then import the update in using the Stage for Upgrade option on import. This will cause only that component to be removed leaving all other components and data intact.
+- If the solution installed is managed, you would uninstall/remove the Common Data Service solution containing it from the environment. When you remove the Common Data Service solution that contains that application it’s important to note that also removes any other components and data as well. If only desiring to remove the application best approach would be to remove the application in the development environment for that Common Data Service solution and then import the update in using the Stage for Upgrade option on import. This will cause only that component to be removed leaving all other components and data intact.
 
 ## Moving reference data to another environment
 
-Often applications have data that is configuration, or reference data. This could be, for example, a list of territories, product lists, or other data that configures and makes the app work. Often components in the application take dependencies on the IDs of this data. The Configuration Migration Tool is designed to move this type of data from one Common Data Service instance to another. The key features of the tool are:
+Often applications have data that is configuration, or reference data. This could be, for example, a list of territories, product lists, or other data that configures and makes the app work. Often components in the application take dependencies on the IDs of this data. The Configuration Migration Tool is designed to move this type of data from one Common Data Service environment to another. The key features of the tool are:
 
 - Select only the entities and fields you for which you want to move data
 - Maintain unique IDs of the records as they are moved
@@ -137,11 +131,12 @@ The following outlines the basic process for using the tool.
 > [!div class="mx-imgBorder"] 
 > ![](media/moving-reference-data.png "Moving reference data")
 
-The output from the tool is a zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service instance. You can also package the data with a Solution Deployer package that we will discuss shortly allowing it to be deployed alongside one or more Common Data Service solutions. You can read more about how to use the tool here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-configuration-data.
+The output from the tool is a zip file containing the data and the schema file. The same tool can be used to import the data into the target Common Data Service environment. You can also package the data with a Solution Deployer package that we will discuss shortly allowing it to be deployed alongside one or more Common Data Service solutions. You can read more about how to use the tool here https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-configuration-data.
 
-## Using the Dynamics 365 Package Deployer
+## Using the Package Deployer
 
-So far, we’ve only talked about importing Common Data Service solutions manually via the user interface. The Dynamics 365 package deployer also works for Common Data Service solutions. The package deployer allows building a package that contains one or more Common Data Service solutions as well as one or more data files to import after the solutions are imported. It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. You can read more about package deployer here https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-packages-package-deployer.
+So far, we’ve only talked about importing Common Data Service solutions manually via the user interface. The package deployer also works for Common Data Service solutions. The package deployer allows building a package that contains one or more Common Data Service solutions as well as one or more data files to import after the solutions are imported. It is also possible for developers to build custom code that reacts to events from the package deployment process. This code can be used to handle updates to the target environment. Once the package is built, the package can be deployed interactively via the tool, or by command line using PowerShell. You can read more about package deployer here https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-packages-package-deployer.
+
 
 
 
