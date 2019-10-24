@@ -1,8 +1,19 @@
 ---
 title: "Add actions to your bot using Microsoft Flow"
 description: "Learn how to add actions to your bot using Microsoft Flow."
-
+keywords: "KEYWORDS"
+ms.date: 09/04/2019
+ms.service:
+  - dynamics-365-ai
+ms.topic: article
+author: iaanw
+ms.author: iawilt
+manager: shellyha
+ms.custom: "VA"
+ms.collection: virtualagent
 ---
+
+
 
 # Add actions to your bot using Microsoft Power Automate 
 
@@ -87,3 +98,4 @@ Picture 9 (Create bot converstaion that calls a flow)
     The flow then sends the message to the customer.
     
  Picture 10 (Test bot converstaion that calls a flow)
+
