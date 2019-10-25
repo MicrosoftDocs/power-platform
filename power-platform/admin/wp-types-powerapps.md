@@ -1,31 +1,25 @@
 ---
-title: "Types of PowerApps | MicrosoftDocs"
-description: Types of PowerApps.
-ms.custom: ""
-ms.date: 09/27/2018
-ms.reviewer: ""
+title: "Types of PowerApps  | MicrosoftDocs"
+description: Types of PowerApps 
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/27/2018
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Types of PowerApps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-In the overview we hinted that there are two distinct types of applications PowerApps Canvas apps and PowerApps Model-driven apps and in this section, we will drill deeper into what you should be concerned with as an administrator. First, model-driven apps require a Common Data Service database and are built on top of the data modeled in that database instance. Model-driven apps materialize views and detail screens based on the data structure. Because of this, they offer users a more consistent look and feel from one screen to the next without much effort by the creator. Canvas apps on the other hand can be built with or without a Common Data Service database. They use connectors to access data and services. Canvas apps start with a blank screen like an artist’s canvas and the creator manually lays out each screen. This allows the creator to have complete control of placements of controls on the canvas. Regardless of the two types, apps will be built in the context of a PowerApps environment.
+In the overview we hinted that there are two distinct types of applications PowerApps Canvas apps and PowerApps Model-driven apps and in this section, we will drill deeper into what you should be concerned with as an administrator. First, model-driven apps require a Common Data Service database and are built on top of the data modeled in that database environment. Model-driven apps materialize views and detail screens based on the data structure. Because of this, they offer users a more consistent look and feel from one screen to the next without much effort by the creator. Canvas apps on the other hand can be built with or without a Common Data Service database. They use connectors to access data and services. Canvas apps start with a blank screen like an artist’s canvas and the creator manually lays out each screen. This allows the creator to have complete control of placements of controls on the canvas. Regardless of the two types, apps will be built in the context of a PowerApps environment.
 
 ![Types of PowerApps](media/types-of-powerapps.png "Types of PowerApps")
 
@@ -41,7 +35,7 @@ When you share an app the user will need access to the resources the app depends
 
 ## Application players
 
-Both types of applications can be used as web applications from mainstream web browsers. Both types of applications can be discovered from web.powerapps.com. Dynamics 365 users can also discover them from home.dynamics.com application list as well as in the common application navigation list. Mobile users can run the application in a device installed player app on both phones and tablet devices. Currently, the player application for canvas apps
+Both types of applications can be used as web applications from mainstream web browsers. Both types of applications can be discovered from web.powerapps.com. Users can also discover them from home.dynamics.com application list as well as in the common application navigation list. Mobile users can run the application in a device installed player app on both phones and tablet devices. Currently, the player application for canvas apps
 
 ## Versions of the application
 

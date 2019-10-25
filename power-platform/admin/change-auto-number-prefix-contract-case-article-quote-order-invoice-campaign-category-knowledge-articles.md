@@ -1,21 +1,13 @@
 ---
-title: "Change auto-numbering prefixes in Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 08/13/2019
-ms.reviewer: 
+title: "Change auto-numbering prefixes for contracts, cases, articles, quotes, orders, invoices, campaigns, categories, and knowledge articles  | MicrosoftDocs"
+description: Change auto-numbering prefixes for contracts, cases, articles, quotes, orders, invoices, campaigns, categories, and knowledge articles
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
-ms.suite: 
-ms.tgt_pltfrm: 
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 13aa0eb0-537f-432e-ac26-706ebd511dbd
-caps.latest.revision: 39
-author: jimholtz
+ms.topic: conceptual
+ms.date: 08/13/2019
 ms.author: jimholtz
-manager: kvivek
 search.audienceType: 
   - admin
 search.app: 
@@ -25,7 +17,7 @@ search.app:
 ---
 # Change auto-numbering prefixes for contracts, cases, articles, quotes, orders, invoices, campaigns, categories, and knowledge articles
 
-Contracts, cases, articles, quotes, orders, invoices, marketing campaigns, categories, and knowledge articles are automatically numbered by [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. If your organization has standard numbering formats, you can change the default three-character prefixes and number format to match your organization.  
+Contracts, cases, articles, quotes, orders, invoices, marketing campaigns, categories, and knowledge articles are automatically numbered. If your organization has standard numbering formats, you can change the default three-character prefixes and number format to match your organization.  
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Announcements**.
 

@@ -1,20 +1,19 @@
 ---
-title: "Microsoft Flow analytics | MicrosoftDocs"
+title: "Microsoft Flow analytics  | MicrosoftDocs"
 description: The admin reports provide a view into environment level usage, errors, service performance.
-ms.custom: ""
-ms.date: 05/17/2018
-ms.reviewer: ""
-ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
 author: "MSFTMan"
-ms.author: "deonhe"
-manager: "kvivek"
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 05/17/2018
+ms.author: deonhe
+search.audienceType: 
+  - admin
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
 ---
 # Admin Analytics for Microsoft Flow
 
