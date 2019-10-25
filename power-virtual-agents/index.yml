@@ -1,15 +1,16 @@
 ### YamlMime:Hub
 
 title: PowerVirtualAgent documentation # < 60 chars
-summary: PowerVirtualAgent is a bot-building framework that can be used to automate customer service. # < 160 chars
+summary: Build chat bots easily with PowerVirtualAgent.  # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: power-platform
 
 metadata:
   title: PowerVirtualAgent documentation and guidance # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: See how PowerVirtualAgent can be used to automate your customer service with powerful AI-driven chat bots # Required; article description that is displayed in search results. < 160 chars.
+  description: See how PowerVirtualAgent can be used to automate your customer service with powerful AI-driven chat bots.  # Required; article description that is displayed in search results. < 160 chars.
   services: service
-  ms.service: "dynamics-365-ai" #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service:   
+    - "dynamics-365-ai" #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: hub-page # Required
   ms.collection: virtualagent
@@ -22,185 +23,241 @@ metadata:
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    # Card
-    - title: cardtitle1
-      itemType: architecture
-      url: file1.md OR https://docs.microsoft.com/file1
-    # Card
-    - title: cardtitle2
+        # Card
+    - title: What is PowerVirtualAgent?
+      itemType: video
+      url: https://youtu.be/Pk-AVqQPUg8
+
+    
+   # Card
+    - title: PowerVirtualAgent blog
+      itemType: whats-new
+      url:  https://cloudblogs.microsoft.com/dynamics365/it/product/virtual-agent-for-customer-service/
+          # Card
+    - title: What's new and planned
+      itemType: whats-new
+      url: https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/artificial-intelligence/dynamics365-virtual-agent-for-customer-service/planned-features
+     
+
+ # Card
+    - title: Authoring
       itemType: concept
-      url: file2.md OR https://docs.microsoft.com/file2
-    # Card
-    - title: cardtitle3
-      itemType: deploy
-      url: file3.md OR https://docs.microsoft.com/file3
+      url: authoring-fundamentals-virtual-agent.md
           # Card
-    - title: cardtitle4
-      itemType: download
-      url: file3.md OR https://docs.microsoft.com/file3
+    - title: Publication and deployment
+      itemType: concept
+      url: publication-fundamentals-virtual-agent.md
           # Card
-    - title: cardtitle5
-      itemType: get-started
-      url: file3.md OR https://docs.microsoft.com/file3
-          # Card
-    - title: cardtitle6
-      itemType: how-to-guide
-      url: file3.md OR https://docs.microsoft.com/file3
-          # Card
-    - title: cardtitle7
-      itemType: learn
-      url: file3.md OR https://docs.microsoft.com/file3
-          # Card
-    - title: cardtitle8
-      itemType: overview
-      url: file3.md OR https://docs.microsoft.com/file3
+    - title: Analytics
+      itemType: concept
+      url: analysis-fundamentals-virtual-agent.md
+ 
 
-# productDirectory section (optional)
-productDirectory:
-  title: Product licencing # < 60 chars (optional)
-  summary: Purchase or upgrade existing services to recieve PowerVirtualAgent # < 160 chars (optional)
-  items:
-    # Card
-    - title: PowerPlatform
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./arc/va.png
-      links:
-        - url: https://powervirtualagent.microsoft.com
-          text: Purchase individual licence
-
-    # Card
-    - title: Dynamics 365
-      imageSrc: ./arc/predict.png
-      links:
-        - url: https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/licensing-case-capacity
-          text: Upgrade with a Dynamics 365 Customer Service Insights licence
 
 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: sectiontitle # < 60 chars (optional)
-  summary: sectionsummary # < 160 chars (optional)
+  # title:  Title # < 60 chars (optional)
+  # summary:  Summary # < 160 chars (optional)
   items:
     # Card
-    - title: cardtitle1
+    - title: Get started
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
-          text: linktext1
-        - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
-          text: linktext2
-        - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
-          text: linktext3
-      # footerLink (optional)
-      footerLink:
-        url: filefooter.md OR https://docs.microsoft.com/filefooter
-        text: See more
-    # Card
-    - title: cardtitle2
+        - url: fundamentals-what-is-power-virtual-agent.md
+          itemType: overview
+          text: What is PowerVirtualAgent?
+        - url: fundamentals-get-started-power-virtual-agent.md
+          itemType: quickstart
+          text: Get started quickly
+
+    # Card        
+    - title: AI in Power virtualagent
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
-          text: linktext1
-        - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
-          text: linktext2
-        - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
-          text: linktext3
-      # footerLink (optional)
-      footerLink:
-        url: filefooter.md OR https://docs.microsoft.com/filefooter
-        text: See more
-    # Card
-    - title: cardtitle3
+        - url: fundamentals-ai-models-virtual-agent.md
+          itemType: concept
+          text: Artificial intelligence models in PowerVirtualAgent
+
+    # Card       
+    - title: Technical requirements and onboarding
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
-          text: linktext1
-        - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
-          text: linktext2
-        - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
-          text: linktext3
-      # footerLink (optional)
-      footerLink:
-        url: filefooter.md OR https://docs.microsoft.com/filefooter
-        text: See more
+        - url: requirements-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Requirements for Power VirtualAgent        
+        - url: environments-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Environments and onboarding best practices
 
-# tools section (optional)
-tools:
-  title: sectiontitle # < 60 chars (optional)
-  summary: sectionsummary # < 160 chars (optional)
-  items:
     # Card
-    - title: cardtitle1
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/index/image1.svg OR https://docs.microsoft.com/media/logos/image1.svg
-      url: file1.md
-    # Card
-    - title: cardtitle2
-      imageSrc: ./media/index/image2.svg OR https://docs.microsoft.com/media/logos/image2.svg
-      url: file2.md
-    # Card
-    - title: cardtitle3
-      imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image3.svg
-      url: file3.md
+    - title: Configure and author bots
+      links:
+        - url: configuration-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Configuration
+        - url: authoring-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Bots and topics recommendations and best practices
+        - url: advanced-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Enhancing AI intelligence
 
-# additionalContent section (optional)
-# Card with summary style
-additionalContent:
-  # Supports up to 3 sections
-  sections:
-    - title: sectiontitle # < 60 chars (optional)
-      summary: sectionsummary # < 160 chars (optional)
-      items:
-        # Card
-        - title: cardtitle1
-          summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
-        # Card
-        - title: cardtitle2
-          summary: cardsummary2
-          url: file1.md OR https://docs.microsoft.com/file2
-        # Card
-        - title: cardtitle3
-          summary: cardsummary3
-          url: file1.md OR https://docs.microsoft.com/file3
-  # footer (optional)
-  footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
+    # Card
+    - title: Publish and analyze
+      links:
+        - url: publication-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Publish your bot
+        - url: analysis-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Analysis
+        - url: troubleshoot-issues-virtual-agent.md
+          itemType: reference
+          text: Troubleshoot issues
 
-# additionalContent section (optional)
-# Card with links style
-additionalContent:
-  # Supports up to 3 sections
-  sections:
-    - title: sectiontitle # < 60 chars (optional)
-      summary: sectionsummary # < 160 chars (optional)
-      items:
-        # Card
-        - title: cardtitle1
-          links:
-            - text: link1a
-              url: file1a.md OR https://docs.microsoft.com/file1a
-            - text: link1b
-              url: file1b.md OR https://docs.microsoft.com/file1b
-        # Card
-        - title: cardtitle2
-          links:
-            - text: link2a
-              url: file2a.md OR https://docs.microsoft.com/file2a
-            - text: link2b
-              url: file2b.md OR https://docs.microsoft.com/file2b
-        # Card
-        - title: cardtitle3
-          links:
-            - text: link3a
-              url: file3a.md OR https://docs.microsoft.com/file3a
-            - text: link3b
-              url: file3b.md OR https://docs.microsoft.com/file3b
-  # footer (optional)
-  footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
+
+
+    # Card
+    - title: Licensing and technical requirements
+      links:
+        - url: requirements-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Requirements for Power VirtualAgent
+        - url: requirements-geographic-virtual-agent.md
+          itemType: reference
+          text: Geographical requirements and locations
+        - url: requirements-sla-virtual-agent.md
+          itemType: reference
+          text: Service-level agreement
+        - url: requirements-licensing-virtual-agent.md
+          itemType: reference
+          text: Licensing requirements
+        
+    # Card
+    - title: Onboard and set up
+      links:
+        - url: environments-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Environments and onboarding best practices
+        - url: environments-first-run-experience-virtual-agent.md
+          itemType: overview
+          text: First-run experience
+
+    # Card
+    - title: Configuration
+      links:
+        - url: configuration-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Configuration
+        - url: configuration-hand-off-omnichannel-virtual-agent.md
+          itemType: how-to-guide
+          text: Integrate with Omnichannel for hand off
+        - url: configuration-end-user-authentication-virtual-agent.md
+          itemType: how-to-guide
+          text: Configure end-user authentication
+        - url: configuration-skills-integrate-virtual-agent.md
+          itemType: how-to-guide
+          text: Enable and integrate Microsoft Bot Framework Skills
+
+
+    # Card
+    - title: Authoring
+      links:
+        - url: authoring-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Bots and topics recommendations and best practices
+        - url: authoring-create-edit-topics-virtual-agent.md
+          itemType: how-to-guide
+          text: Create and edit topics
+        - url: authoring-variables-virtual-agent.md
+          itemType: how-to-guide
+          text: Use variables
+        - url: authoring-template-topics-virtual-agent.md
+          itemType: how-to-guide
+          text: Work with existing template topics and system topics
+        - url: authoring-topic-management-virtual-agent
+          itemType: how-to-guide
+          text: Topic management
+        - url: authoring-test-bot-virtual-agent.md
+          itemType: how-to-guide
+          text: Test your bot
+
+    # Card
+    - title: Advanced authoring
+      links:
+        - url: advanced-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Enhancing AI intelligence
+        - url: advanced-entities-greedy-slot-filling-virtual-agent.md
+          itemType: how-to-guide
+          text: Use entities and utilize greedy slot filling
+        - url: advanced-create-topics-from-web-virtual-agent.md
+          itemType: how-to-guide
+          text: Create topics from existing support content on the web
+        - url: advanced-create-topics-from-csi-virtual-agent.md
+          itemType: how-to-guide
+          text: Create topics from Customer Service Insights
+        - url: advanced-multi-user-authoring-virtual-agent.md
+          itemType: concept
+          text: Multi-user authoring
+        - url: advanced-end-user-authentication-virtual-agent.md
+          itemType: how-to-guide
+          text: Use end-user authentication
+        - url: advanced-flow-virtual-agent.md
+          itemType: how-to-guide
+          text: Use Microsoft Flow
+        - url: advanced-bot-framework-skills-virtual-agent.md
+          itemType: how-to-guide
+          text: Use Microsoft Bot Framework Skills
+        - url: advanced-hand-off-virtual-agent.md
+          itemType: how-to-guide
+          text: Use hand-off
+
+
+    # Card
+    - title: Bot publication
+      links:
+        - url: publication-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Publish and test your bot
+        - url: publication-deploy-web-virtual-agent.md
+          itemType: deploy
+          text: Deploy to a website
+        - url: publication-deploy-channels-virtual-agent.md
+          itemType: deploy
+          text: Deploy to Microsoft Bot Framework channels
+        - url: publication-deploy-3rd-party-app-virtual-agent.md
+          itemType: deploy
+          text: Deploy to a 3rd party web app
+
+
+    # Card
+    - title: Report on usage and bot performance
+      links:
+        - url: analysis-fundamentals-virtual-agent.md
+          itemType: overview
+          text: Fundamentals - Analysis
+        - url: analysis-analyze-bot-performance-virtual-agent.md
+          itemType: how-to-guide
+          text: Analyze bot performance and usage
+ 
+
+
+        
+
+    # Card
+    - title: Data Subject Rights (DSR) requests under GDPR
+      links:
+        - url: gdpr-summary.md
+          itemType: overview
+          text: Overview of GDPR compliance
+        - url: gdpr-export.md
+          itemType: concept
+          text: Requests to export data
+        - url: gdpr-delete.md
+          itemType: concept
+          text: Requests to delete data
+        - url: gdpr-discovery.md
+          itemType: concept
+          text: Requests to discover data
+
+
