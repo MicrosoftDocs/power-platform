@@ -1,7 +1,7 @@
 ---
-title: "Preview: Capacity add-ons for PowerApps and Flow  | MicrosoftDocs"
+title: "Capacity add-ons for PowerApps and Flow  | MicrosoftDocs"
 description: This topic covers the Per app, Flow per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 10/16/2019
+ms.date: 10/25/2019
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Preview: Capacity add-ons
+# Capacity add-ons
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
