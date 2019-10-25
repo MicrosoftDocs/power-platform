@@ -64,8 +64,8 @@ Model-driven apps in Dynamics 365
   >  The following updates are prerequisites to KB2883081 and may also be required.  
   >   
   > -   [http://support2.microsoft.com/kb/2768000](http://support2.microsoft.com/kb/2768000)  
-  > -   [http://support.microsoft.com/kb/2767999](http://support.microsoft.com/kb/2767999)  
-  > -   [http://support.microsoft.com/kb/2880963](http://support.microsoft.com/kb/2880963)  
+  > -   [https://support.microsoft.com/kb/2767999](https://support.microsoft.com/kb/2767999)  
+  > -   [https://support.microsoft.com/kb/2880963](https://support.microsoft.com/kb/2880963)  
   
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration  
   
@@ -96,7 +96,7 @@ Model-driven apps in Dynamics 365
   
 - The following software features are required to run the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets described in this topic.  
   
-  -   [Microsoft Online Services Sign-In Assistant for IT Professionals Beta](http://www.microsoft.com/download/details.aspx?id=39267)  
+  -   [Microsoft Online Services Sign-In Assistant for IT Professionals Beta](https://www.microsoft.com/download/details.aspx?id=39267)  
   
   -   [MSOnlineExt](https://www.powershellgallery.com/packages/MSOnlineExt/)  
      -   To install the MSOnlineExt module, enter the following command from an administrator PowerShell session.

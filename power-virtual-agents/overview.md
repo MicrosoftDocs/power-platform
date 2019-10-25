@@ -30,7 +30,7 @@ Using Virtual Agent for Customer Service, you can:
 - **Improve customer satisfaction** by allowing customers to self-help and resolve issues quickly 24/7 using rich personalized bot conversations. 
 
 > [!div class="nextstepaction"]
-> [Get started now](http://aka.ms/virtual-agent)
+> [Get started now](https://aka.ms/virtual-agent)
 
 ## Highlights of Dynamics 365 Virtual Agent for Customer Service
 

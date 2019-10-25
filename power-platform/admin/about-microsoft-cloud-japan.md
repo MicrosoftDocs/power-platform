@@ -91,7 +91,7 @@ A support engineer will assist you in verifying required prerequisites and provi
  At this time model-driven apps in Dynamics 365 is only available for dev/test scenarios and isn’t supported for production use cases.  Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support model-driven apps in Dynamics 365 on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we are dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability being available in each geographic region. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe. We do not have any additional information regarding other geos or general availability at this time.  
   
 ### Where can I find more about security, data privacy, and compliance?  
- The Trust Center will be updated as needed when the Japan datacenters launch into general availability. To see the current version of the Trust Center, see: [Microsoft Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
+ The Trust Center will be updated as needed when the Japan datacenters launch into general availability. To see the current version of the Trust Center, see: [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409).  
 
 ### Will Microsoft Dynamics Marketing, Social Engagement, and Parature, from Microsoft be available in the Japan datacenters?  
  These services will be available for purchase in the local market but will be delivered outside of the Japan datacenters at this time. Note: model-driven apps in Dynamics 365 leverages [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)] and Multi-Factor Authentication, which don’t offer a region choice to customers.  
@@ -103,7 +103,7 @@ A support engineer will assist you in verifying required prerequisites and provi
  Billing is related to the country/region where the customer signs up for the Common Data Service service, not where the service is deployed.  
   
 ### Will all versions be available?  
- You’ll be able to purchase all licenses that are currently available in the market today. For more information, see: [Pricing List](http://go.microsoft.com/fwlink/p/?LinkID=401462).  
+ You’ll be able to purchase all licenses that are currently available in the market today. For more information, see: [Pricing List](https://go.microsoft.com/fwlink/p/?LinkID=401462).  
   
 ### See also  
  [Office 365 now available from datacenters in Japan](https://blogs.office.com/2014/12/15/office-365-now-available-datacenters-japan/)   

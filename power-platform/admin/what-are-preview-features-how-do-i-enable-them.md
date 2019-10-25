@@ -21,7 +21,7 @@ search.app:
 
 Preview features are features that aren’t complete, but are made available on a “preview” basis so customers can get early access and provide feedback. Preview features:  
   
-- Are subject to separate [Supplemental Terms of Use](http://go.microsoft.com/fwlink/p/?LinkId=511446).  
+- Are subject to separate [Supplemental Terms of Use](https://go.microsoft.com/fwlink/p/?LinkId=511446).  
   
 - **Are not supported by [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)]**.  
   
@@ -38,7 +38,7 @@ Preview features are features that aren’t complete, but are made available on 
   
 2. Select **System Settings**, and then select the **Previews** tab.  
   
-3. Read the [Supplemental Terms of Use](http://go.microsoft.com/fwlink/p/?LinkId=511446), and if you agree, select the **I’ve read and agree to the license terms** check box.  
+3. Read the [Supplemental Terms of Use](https://go.microsoft.com/fwlink/p/?LinkId=511446), and if you agree, select the **I’ve read and agree to the license terms** check box.  
   
 4. For each Preview feature you want to enable, select **Yes**.  
   
