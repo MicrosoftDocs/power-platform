@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 ms.custom: handoff
 ---
 
-# Configure seamless & contextual hand-off to Omnichannel
+# Configure seamless and contextual hand-off to Omnichannel
 With Power Virtual Agents, you can seamlessly and contextually hand off escalated virtual agent conversations to live agents using [Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-customer-service-guide). 
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This allows Omnichannel to route incoming escalations to the right live agent queue and enables engaging live agents to review context from the prior conversation and resume the conversation.
