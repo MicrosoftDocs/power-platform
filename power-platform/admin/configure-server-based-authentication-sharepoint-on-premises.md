@@ -63,7 +63,7 @@ Model-driven apps in Dynamics 365
   > [!IMPORTANT]
   >  The following updates are prerequisites to KB2883081 and may also be required.  
   >   
-  > -   [http://support2.microsoft.com/kb/2768000](http://support2.microsoft.com/kb/2768000)  
+  > -   [https://support2.microsoft.com/kb/2768000](https://support2.microsoft.com/kb/2768000)  
   > -   [https://support.microsoft.com/kb/2767999](https://support.microsoft.com/kb/2767999)  
   > -   [https://support.microsoft.com/kb/2880963](https://support.microsoft.com/kb/2880963)  
   

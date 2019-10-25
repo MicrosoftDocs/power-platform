@@ -1,1 +1,0 @@
-Valid locale ID values can be found at [Locale ID (LCID) Chart](https://go.microsoft.com/fwlink/?LinkId=122128).
