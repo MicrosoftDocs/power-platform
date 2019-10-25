@@ -76,8 +76,8 @@ These are not supported yet.
 [Self-service sign up for PowerApps](/powerapps/maker/signup-for-powerapps)  
 
 <!--Reference links in article-->
-[1]: http://go.microsoft.com/fwlink/p/?LinkId=715583
-[2]: http://go.microsoft.com/fwlink/p/?LinkId=708209
+[1]: https://go.microsoft.com/fwlink/p/?LinkId=715583
+[2]: https://go.microsoft.com/fwlink/p/?LinkId=708209
 [4]: https://powerapps.microsoft.com/pricing/
 [5]: https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide
 [6]: https://admin.microsoft.com/admin/default.aspx

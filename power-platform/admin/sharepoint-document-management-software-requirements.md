@@ -73,7 +73,7 @@ If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint
 
 - Users can create and view folders when using document management within Dynamics 365 apps.  
 
-- Users can create [custom content types](http://go.microsoft.com/fwlink/p/?LinkID=396378) such as a Sales Contract content type.  
+- Users can create [custom content types](https://go.microsoft.com/fwlink/p/?LinkID=396378) such as a Sales Contract content type.  
 
 > [!IMPORTANT]
 > - Notice that the [!INCLUDE[pn_list_component_short](../includes/pn-list-component-short.md)] isn’t required when you use server-based integration with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Server-based SharePoint integration](../admin/sharepoint-document-management-software-requirements.md#BKMK_enable_servertoserver)  

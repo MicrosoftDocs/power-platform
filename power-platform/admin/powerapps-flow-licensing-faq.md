@@ -149,7 +149,7 @@ Microsoft Flow plan-based limits on trigger frequency and the number of runs
 allocated to a tenant per month are being removed.
 
 PowerApps and Microsoft Flow usage will be subject to service limits
-described [here](http://aka.ms/platformlimits). Per user service limits provide
+described [here](https://aka.ms/platformlimits). Per user service limits provide
 capacity assurance for users and alleviate the risk of one user exhausting the
 tenant wide quota.
 
@@ -364,7 +364,7 @@ the daily limits cannot be pooled at any other level.
 API limits are also applicable to application users, non-interactive users and
 administrative users in Common Data Service platform.
 
-More information is available [here](http://aka.ms/platformlimits).
+More information is available [here](https://aka.ms/platformlimits).
 
 ### Can I connect to Microsoft Dynamics for Finance and Operations?
 
