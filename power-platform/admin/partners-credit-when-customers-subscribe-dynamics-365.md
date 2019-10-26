@@ -39,11 +39,11 @@ Soon after you complete the sign up, you’ll be notified by email that the tria
   
 <a name="BKMK_TwoDesignateyourself"></a>   
 ## Designate yourself as the partner of record  
- After completing the trial sign up, designate your company as the partner of record who is responsible for the customer. As the partner of record, you can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] provide our partners and customers with the best service and support. After the trial subscription becomes a paid subscription, your partner company can also claim the Software Advisor (CSA) fee for the subscription. For information about the CSA fee program, visit the [Microsoft Partner Network](http://go.microsoft.com/fwlink/p/?LinkId=532917) site. <!--, where you can download the [Dynamics 365 apps Software Advisor Operations Guide and FAQ](http://go.microsoft.com/fwlink/p/?LinkId=204192), which provides detailed instructions for the fee claim process.  -->
+ After completing the trial sign up, designate your company as the partner of record who is responsible for the customer. As the partner of record, you can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] provide our partners and customers with the best service and support. After the trial subscription becomes a paid subscription, your partner company can also claim the Software Advisor (CSA) fee for the subscription. For information about the CSA fee program, visit the [Microsoft Partner Network](https://go.microsoft.com/fwlink/p/?LinkId=532917) site. <!--, where you can download the [Dynamics 365 apps Software Advisor Operations Guide and FAQ](https://go.microsoft.com/fwlink/p/?LinkId=204192), which provides detailed instructions for the fee claim process.  -->
   
  If your customer has already signed up for a [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)], or prefers to sign up for the trial subscription themselves, they can still designate your company as the partner of record.  
   
-1. Go to the [Partner of Record Designation](http://go.microsoft.com/fwlink/p/?LinkId=204179) page in CustomerSource.  
+1. Go to the [Partner of Record Designation](https://go.microsoft.com/fwlink/p/?LinkId=204179) page in CustomerSource.  
   
 2. Sign in with the same [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that you used to sign up for the trial subscription.  
   
@@ -83,7 +83,7 @@ Soon after you complete the sign up, you’ll be notified by email that the tria
   
 - The name of the company used to create the trial subscription.  
   
-   You’ll need this name to identify your customer's company if there is more than one account registered at the [Microsoft Billing and Account Management](http://go.microsoft.com/fwlink/p/?LinkId=204182) site.  
+   You’ll need this name to identify your customer's company if there is more than one account registered at the [Microsoft Billing and Account Management](https://go.microsoft.com/fwlink/p/?LinkId=204182) site.  
   
 - If the free trial subscription has already been activated to a paying subscription, you’ll also need the credit card number used to pay for the subscription.  
   
@@ -97,7 +97,7 @@ Soon after you complete the sign up, you’ll be notified by email that the tria
   
 ### Add an account delegate  
   
-1. Go to the [Microsoft Billing and Account Management](http://go.microsoft.com/fwlink/p/?LinkId=204182) site.  
+1. Go to the [Microsoft Billing and Account Management](https://go.microsoft.com/fwlink/p/?LinkId=204182) site.  
   
 2. Sign in with the same [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that you used to sign up your customer for the trial subscription.  
   
@@ -115,7 +115,7 @@ Soon after you complete the sign up, you’ll be notified by email that the tria
   
 ### Request an ownership transfer  
   
-1. Contact [Customer Service and support](http://go.microsoft.com/fwlink/p/?LinkId=204189).  
+1. Contact [Customer Service and support](https://go.microsoft.com/fwlink/p/?LinkId=204189).  
   
 2. Give the customer service representative the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that was used to sign up for the subscription and the account ID number.  
   
@@ -137,7 +137,7 @@ Soon after you complete the sign up, you’ll be notified by email that the tria
   
 ### Remove partner access to the billing account  
   
-1. Go to the [Microsoft Billing and Account Management](http://go.microsoft.com/fwlink/p/?LinkId=204182) site.  
+1. Go to the [Microsoft Billing and Account Management](https://go.microsoft.com/fwlink/p/?LinkId=204182) site.  
   
 2. Sign in with the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] you use for the billing administrator at your company.  
   

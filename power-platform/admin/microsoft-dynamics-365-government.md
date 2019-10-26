@@ -103,7 +103,7 @@ Orders placed for GCC High must be followed-up with a request to the Microsoft G
   
  Microsoft refers to this offer as the Government Community Cloud.  
   
- In addition to the logical separation of customer content at the application layer, the [!INCLUDE[pn_CRM_Online_Government_shortest](../includes/pn-crm-online-government-shortest.md)] service provides your organization with a secondary layer of physical segregation for customer content by using infrastructure that is separate from the infrastructure used for commercial [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] customers. This includes using Azure services in Azure’s Government Cloud. To learn more, see [Azure Government](http://azure.microsoft.com/features/gov/).  
+ In addition to the logical separation of customer content at the application layer, the [!INCLUDE[pn_CRM_Online_Government_shortest](../includes/pn-crm-online-government-shortest.md)] service provides your organization with a secondary layer of physical segregation for customer content by using infrastructure that is separate from the infrastructure used for commercial [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] customers. This includes using Azure services in Azure’s Government Cloud. To learn more, see [Azure Government](https://azure.microsoft.com/features/gov/).  
   
 ## Customer content located within the United States  
 Dynamics 365 US Government services are provided from datacenters physically located in the United States. Dynamics 365 for Customer Engagement customer content is stored at rest in datacenters physically located only in the US.

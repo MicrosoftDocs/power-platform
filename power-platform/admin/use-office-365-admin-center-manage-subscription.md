@@ -113,7 +113,7 @@ More information: [Contact Technical Support](get-help-support.md)
   
 <a name="BKMK_AddDomain"></a>   
 ## Add your domain  
- Use the Manage domains page to add your domain to your subscription. When you add your own domain, user sign-ins can match your company’s URL. For example, instead of user@contoso.onmicrosoft.com, it could be user@contoso.com. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Verify your domain in Office 365](http://support.office.com/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)  
+ Use the Manage domains page to add your domain to your subscription. When you add your own domain, user sign-ins can match your company’s URL. For example, instead of user@contoso.onmicrosoft.com, it could be user@contoso.com. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Verify your domain in Office 365](https://support.office.com/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)  
   
  ![Microsoft 365 admin center add your domain](../admin/media/o365-admin-center-add0domain.png "Microsoft 365 admin center add your domain")  
   

@@ -76,7 +76,7 @@ The ability to import an app is available to any user with "Environment Maker" p
     ![Review import results](./media/environment-and-tenant-migration/import-results.png)
 
 > [!NOTE]
->  If you are importing an app and chose to **Update** an existing app, the new changes will be saved as a draft of the applications.  You will need to [publish](http://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app) those changes in order for them to be available all other users of the applications.
+>  If you are importing an app and chose to **Update** an existing app, the new changes will be saved as a draft of the applications.  You will need to [publish](https://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app) those changes in order for them to be available all other users of the applications.
 >
 >
 

@@ -62,7 +62,7 @@ Admins can use their [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] glo
   
 -   [Learn how to do common partner tasks](https://partnercenter.microsoft.com/partner/howto)  
   
--   [Learn about the Microsoft Cloud Solution Provider (CSP) program](http://go.microsoft.com/fwlink/p/?LinkID=617116)  
+-   [Learn about the Microsoft Cloud Solution Provider (CSP) program](https://go.microsoft.com/fwlink/p/?LinkID=617116)  
   
 ### See also  
  [Introducing the new Office 365 Partner admin center](https://blogs.office.com/2014/01/28/introducing-the-new-office-365-partner-admin-center/)   

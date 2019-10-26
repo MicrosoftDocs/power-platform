@@ -99,7 +99,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 #### Creating a Conditional Access Policy
 
-1. Sign-in to [http://portal.azure.com](http://portal.azure.com) 
+1. Sign-in to [https://portal.azure.com](https://portal.azure.com) 
 2. Select Azure Active Directory
 3. Select Conditional Access.
 4. Select + New Policy

@@ -32,7 +32,7 @@ It’s important to carefully consider which identity model to use to get up and
   
 Review the following resources to equip you to make the right decision for your company:  
   
--   [Understanding Office 365 identity and Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkID=534820)  
+-   [Understanding Office 365 identity and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=534820)  
   
 -   [What is Azure AD Connect?](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)  
   

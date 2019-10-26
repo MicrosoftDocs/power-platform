@@ -77,4 +77,4 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
  [Use OneNote](/dynamics365/customer-engagement/basics/use-onenote.md)   
  [OneNote FAQs](/dynamics365/customer-engagement/basics/onenote-dynamics-365-faqs.md)   
  [Turn on server-based SharePoint integration](set-up-sharepoint-integration.md)   
- [Blog: OneNote in CRM](http://blogs.technet.com/b/lystavlen/archive/2015/03/31/make-a-note-of-this.aspx)
+ [Blog: OneNote in CRM](https://blogs.technet.com/b/lystavlen/archive/2015/03/31/make-a-note-of-this.aspx)

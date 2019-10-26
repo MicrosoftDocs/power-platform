@@ -24,7 +24,7 @@ To help get you started and tailor the bot to your specific needs, Virtual Agent
 
 If you encounter an issue while creating your bot, see [Known issues with creating a bot](#known-issues-with-creating-a-bot).
 
-1. Go to [aka.ms/virtual-agent](http://aka.ms/virtual-agent) and select **Try Preview**. Sign in using your work account.
+1. Go to [aka.ms/virtual-agent](https://aka.ms/virtual-agent) and select **Try Preview**. Sign in using your work account.
 
    ![Sign up screen](media/sign-up-screen.png)
     
