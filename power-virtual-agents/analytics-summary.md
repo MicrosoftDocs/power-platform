@@ -1,6 +1,6 @@
 ---
 title: "Summary page"
-description: "Learn about the Dynamics 365 Virtual Agent for Customer Service Summary page."
+description: "Learn about the Power Virtual Agents Summary page."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
@@ -73,7 +73,7 @@ The Resolution Rate Drivers chart displays topics in order of their impact on th
 
 Description | Details
 ----------- | -------
-Topic | A Dynamics 365 Virtual Agent for Customer Service topic.
+Topic | A Power Virtual Agents topic.
 Rate | The percentage of engaged sessions for the topic that are resolved. A resolved session is an engaged session in which a customer receives an end-of-conversation survey and either does not respond to the survey or responds with *Yes*.
 Impact | The topic's resolution rate impact score. The resolution rate impact score is the overall resolution rate including the topic minus the overall resolution rate excluding the topic.
 
@@ -89,7 +89,7 @@ The Escalation Rate Drivers chart displays topics in order of their impact on th
 
 Description | Details
 ----------- | -------
-Topic | A Dynamics 365 Virtual Agent for Customer Service topic.
+Topic | A Power Virtual Agents topic.
 Rate | The percentage of engaged sessions for the topic that are escalated. An escalated session is an engaged session that is escalated to a human agent.
 Impact | The topic's escalation rate impact score. The escalation rate impact score is the overall escalation rate including the topic minus the overall escalation rate excluding the topic.
 
@@ -105,7 +105,7 @@ The Abandon Rate Drivers chart displays topics in order of their impact on the a
 
 Description | Details
 ----------- | -------
-Topic | A Dynamics 365 Virtual Agent for Customer Service topic.
+Topic | A Power Virtual Agents topic.
 Rate | The percentage of engaged sessions for the topic that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the interaction.
 Impact | The topic's abandon rate impact score. The abandon rate impact score is the overall abandon rate including the topic minus the overall abandon rate excluding the topic.
 

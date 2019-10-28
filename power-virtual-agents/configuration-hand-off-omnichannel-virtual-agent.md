@@ -1,6 +1,6 @@
 ---
-title: "Configure Virtual Agent with Omnichannel for Customer Service"
-description: "Have human agents intercede in bot conversations by connecting Virtual Agent to Omnichannel."
+title: "Configure Power Virtual Agents with Omnichannel for Customer Service"
+description: "Have human agents intercede in bot conversations by connecting Power Virtual Agents to Omnichannel."
 ms.date: 10/30/2019
 ms.service:
   - "dynamics-365-ai"
@@ -14,21 +14,21 @@ ms.custom: handoff
 ---
 
 # Configure seamless and contextual hand-off to Omnichannel
-With Power Virtual Agents, you can seamlessly and contextually hand off escalated virtual agent conversations to live agents using [Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-customer-service-guide). 
+With Power Virtual Agents, you can seamlessly and contextually hand off escalated Power Virtual Agents conversations to live agents using [Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-customer-service-guide). 
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This allows Omnichannel to route incoming escalations to the right live agent queue and enables engaging live agents to review context from the prior conversation and resume the conversation.
 
 For more information about hand off, and how to use hand-off within a bot conversation, see the [Using Transfer to agent node](how-to-handoff.md) topic.
 
 ## Pre-requisites
-* Product license: You need [product licenses for both Virtual Agent](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and [Omnichannel for Customer service](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
+* Product license: You need [product licenses for both Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and [Omnichannel for Customer service](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 * Role: You must be an [Omnichannel Administrator](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/administrator/add-users-assign-roles) in Omnichannel.
 * Azure Application ID: You will need an [application registered in Azure](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) prior to connecting to Omnichannel.
 
 
-## Configure hand-off in the Virtual Agent app
+## Configure hand-off in the Power Virtual Agents app
 
-Sign in to the Virtual Agent instance you want to connect to Omnichannel.
+Sign in to the Power Virtual Agents instance you want to connect to Omnichannel.
 
 
 1. Select **Settings** then **Transfer to agent**.
@@ -47,7 +47,7 @@ Sign in to the Virtual Agent instance you want to connect to Omnichannel.
 
 1. Follow the steps to create or reuse an existing Azure application ID. Copy the *Application (client) ID* and paste it in the text box provided.
 
-1. Virtual Agent uses a [Teams channel](getting-started-deploy.md) to communicate with Omnichannel. If a Teams channel is not enabled, a Teams channel will be enabled when you select **Next**. 
+1. Power Virtual Agents uses a [Teams channel](getting-started-deploy.md) to communicate with Omnichannel. If a Teams channel is not enabled, a Teams channel will be enabled when you select **Next**. 
 
 1. Select the environment where your Omnichannel instance is provisioned.
 

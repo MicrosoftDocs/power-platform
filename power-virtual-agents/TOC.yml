@@ -12,7 +12,7 @@
      href: getting-started-create-bot.md
    - name: Create a PowerApps environment
      href: getting-started-new-environment.md
-   - name: Overview of Virtual Agent pages
+   - name: Overview of Power Virtual Agents pages
      href: getting-started-bot-designer.md
    - name: Create a custom greeting for your bot
      href: getting-started-create-greeting.md
@@ -40,9 +40,9 @@
      href: how-to-handoff.md
    - name: Configure hand off with Omnichannel
      href: configuration-hand-off-omnichannel-virtual-agent.md
-   - name: Add actions to your bot using Microsoft Flow
+   - name: Add actions to your bot using Power Automate
      href: how-to-flow.md
-   - name: Use a Microsoft Bot Framework bot with a Dynamics 365 bot
+   - name: Use a Microsoft Bot Framework bot with a Power Virtual Agents bot
      href: how-to-use-dispatcher.md
 - name: Analytics
   items:
@@ -66,5 +66,5 @@
      href: gdpr-delete.md
    - name: Requests to discover data
      href: gdpr-discovery.md
-   - name: Where an organization's Virtual Agent data is located
+   - name: Where an organization's Power Virtual Agents data is located
      href: data-location.md

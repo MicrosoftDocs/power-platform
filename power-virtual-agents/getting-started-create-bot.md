@@ -1,6 +1,6 @@
 ---
 title: "Create a bot"
-description: "Learn how to use the Dynamics 365 Virtual Agent for Customer Service to create a bot."
+description: "Learn how to use the Power Virtual Agents to create a bot."
 ms.date: 06/19/2019
 ms.service:
   - "dynamics-365-ai"
@@ -14,11 +14,11 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can use Dynamics 365 Virtual Agent for Customer Service to create a powerful custom bot. Virtual Agent makes it easy to create bots that address common support issues. You can design a conversation path that leads each customer to a resolution.
+You can use Power Virtual Agents to create a powerful custom bot. Power Virtual Agents makes it easy to create bots that address common support issues. You can design a conversation path that leads each customer to a resolution.
     
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eM-hs7maZko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-To help get you started and tailor the bot to your specific needs, Virtual Agent lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored conversation paths. These built-in topics can also be useful as a model for building your own conversations for similar customer-support issues. For more information, see [Work with built-in topics](how-to-templates.md).
+To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored conversation paths. These built-in topics can also be useful as a model for building your own conversations for similar customer-support issues. For more information, see [Work with built-in topics](how-to-templates.md).
 
 ## To create your first bot
 
@@ -34,10 +34,10 @@ If you encounter an issue while creating your bot, see [Known issues with creati
 
    ![Create a new bot](media/create-new-bot.PNG)
 
-   Your virtual agent is created in the default PowerApps environment that was created for you in the prior step. For most users, this is sufficient. However, if you want to specify a custom PowerApps environment for your virtual agent, you can do so by expanding the **More options** menu and selecting a different environment.
+   Your bot is created in the default PowerApps environment that was created for you in the prior step. For most users, this is sufficient. However, if you want to specify a custom PowerApps environment for your bot, you can do so by expanding the **More options** menu and selecting a different environment.
 
    >[!NOTE]
-     >Preview is currently supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment, with **Region** set to a supported data location, before you can create your virtual agent. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
+     >Preview is currently supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment, with **Region** set to a supported data location, before you can create your bot. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
 
   
 3. Once you select **Create**, the process for creating the first bot within a new environment can take up to 15 minutes. 
@@ -46,7 +46,7 @@ If you encounter an issue while creating your bot, see [Known issues with creati
 
    > [!NOTE]
    >
-   > Explore some features of Virtual Agent while you are waiting:
+   > Explore some features of Power Virtual Agents while you are waiting:
    > - [Chat with a test bot](how-to-test-bot.md#work-with-the-test-bot-pane)
    > - [Trace your conversation in the authoring canvas](how-to-test-bot.md#to-trace-through-the-topics-conversation-path)
    > - [View and edit topics](getting-started-bot-designer.md#topics-page) (but not save them)
@@ -77,7 +77,7 @@ If an user selects an environment that they have insufficient access to, they ge
 
 To resolve this issue, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md). Use that environment to create your bot.
 
-### The PowerApps environment I created does not show up in the drop-down menu of Virtual Agent
+### The PowerApps environment I created does not show up in the drop-down menu of Power Virtual Agents
 
 Your environment might not show up in the drop-down menu due to one of the following:
  - The environment doesn't have a database created. To resolve this, go to [admin.powerapps.com](https://admin.powerapps.com) to create a database in your environment.

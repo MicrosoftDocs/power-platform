@@ -1,6 +1,6 @@
 ---
 title: "Topic details page"
-description: "Learn about the Dynamics 365 Virtual Agent for Customer Service Topic details page."
+description: "Learn about the Power Virtual Agents Topic details page."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"

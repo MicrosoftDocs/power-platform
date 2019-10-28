@@ -1,6 +1,6 @@
 ---
-title: "Virtual Agent videos"
-description: "Virtual Agent videos"
+title: "Power Virtual Agents videos"
+description: "Power Virtual Agents videos"
 ms.date: 06/19/2019
 ms.service:
   - "dynamics-365-ai"
@@ -14,9 +14,9 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-## Dynamics 365 Virtual Agent for Customer Service demo
+## Power Virtual Agents demo
 
-Take a look at the Virtual Agent for Customer Service capabilities that can help you engage customers, empower employees, optimize operations, and transform products. 
+Take a look at the Power Virtual Agents for Customer Service capabilities that can help you engage customers, empower employees, optimize operations, and transform products. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pk-AVqQPUg8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -44,16 +44,16 @@ This short feature video shows you how to use variables to remember user respons
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dO88tvhvfDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
    
-### Enhance bot capabilities with Microsoft Flow
+### Enhance bot capabilities with Power Automate
 
-This feature video shows you how to use Microsoft Flow to extend the capabilities of your bot, including connecting to your custom back-end systems, your Dynamics 365 for Customer Engagement instance, or anything else supported by Microsoft Flow connectors. 
+This feature video shows you how to use Power Automate to extend the capabilities of your bot, including connecting to your custom back-end systems, instances in your Dynamics 365 Admin Center, or anything else supported by Power Automate connectors. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/joXCzvi38Fo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
    
 ### Use analytics and chat transcripts to improve bot performance
 
-This feature video shows you how to use the analytics capabilities and chat transcripts in Virtual Agent to further improve the performance of your bot. 
+This feature video shows you how to use the analytics capabilities and chat transcripts in Power Virtual Agents to further improve the performance of your bot. 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6gNsmjF6hJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

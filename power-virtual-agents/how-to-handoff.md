@@ -1,5 +1,5 @@
 ---
-title: "Trigger Virtual Agent contextual hand-off to a human agent"
+title: "Trigger Power Virtual Agents contextual hand-off to a human agent"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
 ms.date: 10/19/2019
 ms.service:
@@ -23,13 +23,13 @@ For more information about how to configure handoff with [Omnichannel for Custom
 
 ## Pre-requisites
 
-- You need a bot built with Dynamics 365 Virtual Agent for Customer Service (you can [try the preview version of Virtual Agent to get started](https://dynamics.microsoft.com/ai/virtual-agent-for-customer-service/))
+- You need a bot built with Power Virtual Agents (you can [try the preview version of Power Virtual Agents to get started](https://dynamics.microsoft.com/ai/virtual-agent-for-customer-service/))
 - You need to have an engagement hub that is being used by human agents, such as [Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/introduction-omnichannel), and you need to configure the connection, as described in [Configure hand-off with Omnichannel](configuration-hand-off-omnichannel-virtual-agent.md).
 
 ## Triggering hand-off to human agent
 Customers engaging with the bot can ask for a human agent at any point in the conversation. This can happen in two ways, with an implicit trigger or an explicit trigger.
 
-Upon triggering the hand-off topic, Virtual Agent initiates the hand-off to the configured engagement hub and sends through all conversation context. This includes the conversation history and a number of variables.
+Upon triggering the hand-off topic, Power Virtual Agents initiates the hand-off to the configured engagement hub and sends through all conversation context. This includes the conversation history and a number of variables.
 
 ### Implicit triggers
 In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there is no [topic](getting-started-create-topics.md), or there is no matching option within a topic. 
@@ -86,9 +86,9 @@ The following table lists the context variables available by default.
 | `va_Language` | Helps route escalation to a human agent | `"en-us"` |
 | All [user-defined topic variables](how-to-variables.md) | Helps ramp-up human agent | `@StoreLocation = "Bellevue"` |
 
-A customer may go through several topics prior to escalating. The Virtual Agent gathers all contextual variables across topics and merges them before sending to the engagement hub. 
+A customer may go through several topics prior to escalating. The Power Virtual Agents gathers all contextual variables across topics and merges them before sending to the engagement hub. 
 
-If there are topics with similarly named context variables, Virtual Agent promotes the most recently defined topic variable.
+If there are topics with similarly named context variables, Power Virtual Agents promotes the most recently defined topic variable.
 
 ## Known limitations
 | Limitation | Mitigation |
