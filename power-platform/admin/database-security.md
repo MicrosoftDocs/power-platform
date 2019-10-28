@@ -90,7 +90,7 @@ For more information about access and scope privileges, see [Security roles](htt
 
 2. Click on the **Dynamics 365 Administration Center** link in the **Details** tab to manage the environment in the Dynamics 365 admin center.
 
-3. Select the instance (with the same name of environment) and select **Open**.
+3. Select the environment (with the same name of environment) and select **Open**.
 
     ![](./media/database-security/glados-instance-list.png)
 
@@ -117,11 +117,11 @@ For more information about access and scope privileges, see [Security roles](htt
 ## Minimum privileges to run app
 When you create a custom security role, you need to include a set of minimum privileges into the security role in order for a user to run an app. We've created a solution you can import that provides a security role with the required minimum privileges.  
 
-Start by downloading the solution from the Download Center: [Common Data Service minimum privilege security role](http://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip).
+Start by downloading the solution from the Download Center: [Common Data Service minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip).
 
 Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 
-When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/create-edit-security-role#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
+When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-security-role#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
 
 > [!IMPORTANT]
 > You should try out the solution in a development environment before importing into a production environment. 

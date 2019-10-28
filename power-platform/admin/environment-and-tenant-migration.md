@@ -1,13 +1,14 @@
 ---
 title: Migrate apps between environments and tenants | Microsoft Docs
 description: Walkthrough of how to migrate PowerApps apps between environments and tenants
-author: jamesol-msft
+author: jimholtz
 manager: kvivek
 ms-topic: conceptual
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.author: jamesol
+ms.date: 10/22/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -40,8 +41,6 @@ When you export an app, the dependent resources for your app will also get expor
 The ability to export an app is available to any user with "Can edit" permission to the app.
 
 The ability to import an app is available to any user with "Environment Maker" permission in the destination environment.
-
-A  user must have a PowerApps Plan 2 or PowerApps Plan 2 trial license in order to export or import any app.
 
 > [!NOTE]
 > While packaging is in preview, any user with a valid PowerApps license will be able to try out packaging for their apps and environments.
@@ -77,7 +76,7 @@ A  user must have a PowerApps Plan 2 or PowerApps Plan 2 trial license in order 
     ![Review import results](./media/environment-and-tenant-migration/import-results.png)
 
 > [!NOTE]
->  If you are importing an app and chose to **Update** an existing app, the new changes will be saved as a draft of the applications.  You will need to [publish](http://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app) those changes in order for them to be available all other users of the applications.
+>  If you are importing an app and chose to **Update** an existing app, the new changes will be saved as a draft of the applications.  You will need to [publish](https://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app) those changes in order for them to be available all other users of the applications.
 >
 >
 
@@ -118,7 +117,7 @@ Importing a Common Data Service solution package unfortunately requires a manual
         ![Edit url](./media/environment-and-tenant-migration/edit-url.png)
 
     * New URL structure:
-  `https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx`
+  `https://{orguniquename}.crm.dynamics.com/tools/solution/import/SolutionImportWizard.aspx`
 
         ![Select package](./media/environment-and-tenant-migration/select-package.png)
 
