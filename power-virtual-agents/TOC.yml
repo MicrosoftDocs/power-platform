@@ -3,7 +3,7 @@
 - name: Quickstart
   href: quickstart.md
 - name: Videos
-  href: virtual-agent-videos.md
+  href: videos.md
 - name: Frequently asked questions
   href: faq.md
 - name: Introduction
@@ -39,7 +39,7 @@
    - name: Hand off a bot conversation to a live agent
      href: how-to-handoff.md
    - name: Configure hand off with Omnichannel
-     href: configuration-hand-off-omnichannel-virtual-agent.md
+     href: configuration-hand-off-omnichannel.md
    - name: Add actions to your bot using Power Automate
      href: how-to-flow.md
    - name: Use a Microsoft Bot Framework bot with a Power Virtual Agents bot

@@ -50,7 +50,7 @@ If you encounter an issue while creating your bot, see [Known issues with creati
    > - [Chat with a test bot](how-to-test-bot.md#work-with-the-test-bot-pane)
    > - [Trace your conversation in the authoring canvas](how-to-test-bot.md#to-trace-through-the-topics-conversation-path)
    > - [View and edit topics](getting-started-bot-designer.md#topics-page) (but not save them)
-   > - [Watch product videos](virtual-agent-videos.md)
+   > - [Watch product videos](videos.md)
    
  4.	When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify topics, test your changes, or deploy your bot.
 

@@ -1,5 +1,5 @@
 ---
-title: "Use a Microsoft Bot Framework bot with Power Virtual Agents"
+title: "Connect with a Microsoft Bot Framework bot"
 description: "Step-by-step guide to using and extending an existing Microsoft Bot Framework bot to work with Power Virtual Agents."
 keywords: "extensibility, integration, extend bot, bot framework"
 ms.date: 07/03/2019

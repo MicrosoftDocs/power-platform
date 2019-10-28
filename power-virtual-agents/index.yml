@@ -35,7 +35,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Videos
-            url: virtual-agent-videos.md
+            url: videos.md
           - text: Frequently asked questions
             url: faq.md
           - text: PowerVirtualAgent blog

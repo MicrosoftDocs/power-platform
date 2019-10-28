@@ -1,5 +1,5 @@
 ---
-title: "Configure Power Virtual Agents with Omnichannel for Customer Service"
+title: "Configure handoff with Omnichannel for Customer Service"
 description: "Have human agents intercede in bot conversations by connecting Power Virtual Agents to Omnichannel."
 ms.date: 10/30/2019
 ms.service:

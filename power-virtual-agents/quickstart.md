@@ -36,7 +36,7 @@ Your bot is created in the default PowerApps environment that was created for yo
 
 3.	Once you select **Create**, the process of creating the first bot within a new environment can take up to 15 minutes. Subsequent bots will be created much faster. 
 
-4. After a few minutes, you’ll land on the home page and have an opportunity to play around with the bot in read-only mode. You can't save any edits during this time, but you can explore the overall user interface, look at the topics, experiment with the preloaded User Topics and System Topics, and interact with your bot using the Test Canvas. During this time, you can also [watch product videos](virtual-agent-videos.md) to learn how to complete tasks such as creating a branching dialog tree using variables and expressions, or [creating a Flow and embedding Flows](how-to-flow.md) within your dialog tree.
+4. After a few minutes, you’ll land on the home page and have an opportunity to play around with the bot in read-only mode. You can't save any edits during this time, but you can explore the overall user interface, look at the topics, experiment with the preloaded User Topics and System Topics, and interact with your bot using the Test Canvas. During this time, you can also [watch product videos](videos.md) to learn how to complete tasks such as creating a branching dialog tree using variables and expressions, or [creating a Flow and embedding Flows](how-to-flow.md) within your dialog tree.
     
    ![Read-only mode](media/create-bot-banner-blue.png)
 

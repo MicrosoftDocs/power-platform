@@ -1,5 +1,5 @@
 ---
-title: "Responding to GDPR Data Subject Delete Requests for Power Virtual Agents"
+title: "Responding to GDPR Data Subject Delete Requests"
 description: "Learn how to respond​ to GDPR Data Subject Delete Requests for Power Virtual Agents."
 ms.date: 05/29/2019
 ms.service:
