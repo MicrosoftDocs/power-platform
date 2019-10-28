@@ -28,7 +28,7 @@ landingContent:
         links:
           - text: What is Power Virtual Agents?
             url: overview.md
-	  - linkListTYpe: quickstart
+	  - linkListType: quickstart
 	    links:
           - text: Quickstart
             url: quickstart.md
