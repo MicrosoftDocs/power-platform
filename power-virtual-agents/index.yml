@@ -28,8 +28,8 @@ landingContent:
         links:
           - text: What is Power Virtual Agents?
             url: overview.md
-	  - linkListType: quickstart
-	    links:
+      - linkListType: quickstart
+        links:
           - text: Quickstart
             url: quickstart.md
       - linkListType: reference
@@ -42,10 +42,10 @@ landingContent:
             url: https://cloudblogs.microsoft.com/dynamics365/it/product/virtual-agent-for-customer-service/
           - text: What's new and planned
             url: https://docs.microsoft.com/dynamics365-release-plan/2019wave2/artificial-intelligence/dynamics365-virtual-agent-for-customer-service/planned-features
-		  - text: Forums and community
-		    url: https://community.dynamics.com/365/virtual-agent-for-customer-service/
-		  - text: Submit ideas
-		    url: https://experience.dynamics.com/ideas/categories/?forum=f970b8b7-1378-e911-a965-000d3a4f33c1&forumName=Dynamics%20365%20Virtual%20Agent%20for%20Customer%20Service
+          - text: Forums and community
+            url: https://community.dynamics.com/365/virtual-agent-for-customer-service/
+          - text: Submit ideas
+            url: https://experience.dynamics.com/ideas/categories/?forum=f970b8b7-1378-e911-a965-000d3a4f33c1&forumName=Dynamics%20365%20Virtual%20Agent%20for%20Customer%20Service
 
 
   # Card (optional)

@@ -21,9 +21,9 @@ When you hand off a conversation, you share the full history of the conversation
 For more information about hand off, and how to use hand-off within a bot conversation, see the [Using Transfer to agent node](how-to-handoff.md) topic.
 
 ## Pre-requisites
-* Product license: You need [product licenses for both Virtual Agent](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and [Omnichannel for Customer service](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
-* Role: You must be an [Omnichannel Administrator](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/omnichannel/administrator/add-users-assign-roles) in Omnichannel.
-* Azure Application ID: You will need an [application registered in Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) prior to connecting to Omnichannel.
+* Product license: You need [product licenses for both Virtual Agent](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and [Omnichannel for Customer service](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
+* Role: You must be an [Omnichannel Administrator](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/administrator/add-users-assign-roles) in Omnichannel.
+* Azure Application ID: You will need an [application registered in Azure](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) prior to connecting to Omnichannel.
 
 
 ## Configure hand-off in the Virtual Agent app
@@ -51,7 +51,7 @@ Sign in to the Virtual Agent instance you want to connect to Omnichannel.
 
 1. Select the environment where your Omnichannel instance is provisioned.
 
-1. Select the **Go to Omnichannel** link to [continue configuring the bot connection in Omnichannel](https://docs.microsoft.com/en-us/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
+1. Select the **Go to Omnichannel** link to [continue configuring the bot connection in Omnichannel](https://docs.microsoft.com/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
 
 
 >[!NOTE]
@@ -66,7 +66,7 @@ Sign in to the Virtual Agent instance you want to connect to Omnichannel.
 Once your bot has been connected to Omnichannel, you cannot remove the connection setting at this time. If you erroneously connected to the wrong Omnichannel instance or environment, you will need to create a new bot and try connecting to Omnichannel again.
 
 ### Specific content doesn't appear in Omnichannel
-Some content may not show, such as emojis and certain types of notes or variables. If you encounter problems with the display of content, see the [Omnichannel documentation library for more details](https://docs.microsoft.com/en-us/dynamics365/omnichannel/omnichannel-readme).
+Some content may not show, such as emojis and certain types of notes or variables. If you encounter problems with the display of content, see the [Omnichannel documentation library for more details](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-readme).
 
 
 

@@ -23,8 +23,8 @@ For more information about how to configure handoff with [Omnichannel for Custom
 
 ## Pre-requisites
 
-- You need a bot built with Dynamics 365 Virtual Agent for Customer Service (you can [try the preview version of Virtual Agent to get started](https://dynamics.microsoft.com/en-us/ai/virtual-agent-for-customer-service/))
-- You need to have an engagement hub that is being used by human agents, such as [Omnichannel for Customer Service](https://docs.microsoft.com/en-us/dynamics365/omnichannel/introduction-omnichannel), and you need to configure the connection, as described in [Configure hand-off with Omnichannel](configuration-hand-off-omnichannel-virtual-agent.md).
+- You need a bot built with Dynamics 365 Virtual Agent for Customer Service (you can [try the preview version of Virtual Agent to get started](https://dynamics.microsoft.com/ai/virtual-agent-for-customer-service/))
+- You need to have an engagement hub that is being used by human agents, such as [Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/introduction-omnichannel), and you need to configure the connection, as described in [Configure hand-off with Omnichannel](configuration-hand-off-omnichannel-virtual-agent.md).
 
 ## Triggering hand-off to human agent
 Customers engaging with the bot can ask for a human agent at any point in the conversation. This can happen in two ways, with an implicit trigger or an explicit trigger.
