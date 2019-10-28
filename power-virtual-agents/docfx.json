@@ -37,13 +37,13 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/power-virtual-agent/breadcrumb/toc.json",
+      "breadcrumb_path": "/power-virtual-agents/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "power-virtual-agent",
+    "dest": "power-virtual-agents",
     "markdownEngineName": "markdig"
   }
 }
