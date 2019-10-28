@@ -425,6 +425,8 @@
         href: import-data-all-record-types.md 
       - name: Template for data import
         href: download-template-data-import.md
+      - name: Merge data
+        href: merge-data.md
       - name: Detect duplicate data
         href: detect-duplicate-data.md 
       - name: Duplicate detection rules
@@ -441,6 +443,8 @@
         href: monitor-manage-system-jobs.md
       - name: Audit data and user Activity
         href: audit-data-user-activity.md
+      - name: Enable and use Activity Logging
+        href: enable-use-comprehensive-auditing.md
       - name: Remove user personal data
         href: remove-user-personal-data.md
       - name: Recover database space by deleting audit logs
