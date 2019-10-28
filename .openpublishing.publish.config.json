@@ -56,7 +56,15 @@
       "Publish",
       "Pdf"
     ],
+    "master": [
+      "Publish",
+      "Pdf"
+    ],
     "JimHoltzWorkBranch": [
+      "Publish",
+      "Pdf"
+    ],
+    "iawilt-ho": [
       "Publish",
       "Pdf"
     ]
