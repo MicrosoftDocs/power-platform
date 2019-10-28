@@ -425,8 +425,8 @@
         href: import-data-all-record-types.md 
       - name: Template for data import
         href: download-template-data-import.md
-      - name: Merge data
-        href: merge-data.md
+      #- name: Merge data
+      #  href: merge-data.md
       - name: Detect duplicate data
         href: detect-duplicate-data.md 
       - name: Duplicate detection rules
