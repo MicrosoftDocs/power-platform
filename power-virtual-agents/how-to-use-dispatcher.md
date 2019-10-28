@@ -75,13 +75,13 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 2. Use the following command to compile and run this code sample.
 
-    ```
+    ```console
     dotnet run -p ContentConverter.csproj -c Release -- -i <path to msdynce_botcontents.csv> -c <path to annotations.csv> -b <your bot id>
     ```
 
 3. Convert the `Content.lu` file to LUIS JSON file format.
 
-    ```
+    ```console
     ludown parse ToLuis --in Content.lu
     ```
 
@@ -91,13 +91,13 @@ Train and recreate the dispatcher app and add your exported topics and utterance
 
 1.  Install the dispatch tool using the NuGet package manager.
 
-    ```
+    ```console
     CMD> npm install -g botdispatch
     ```
 
 2.  Add topics and utterances that you exported earlier using the Dispatch tool.
 
-    ```
+    ```console
     CMD> dispatch add -type file -name l_dynamicsbot -f luis.json
     Please enter required field(s) below.
     
@@ -114,7 +114,7 @@ Train and recreate the dispatcher app and add your exported topics and utterance
     > [!NOTE] 
     > You'll need to re-train your dispatch model when more topics are added.
 
-    ```
+    ```console
     CMD> dispatch create
     
     Exporting services for dispatch...

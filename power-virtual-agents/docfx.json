@@ -37,6 +37,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "titleSuffix": "Power Virtual Agents",
       "breadcrumb_path": "/power-virtual-agents/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None"
