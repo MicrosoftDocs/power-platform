@@ -30,7 +30,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 2. Next, you’ll choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 Your bot is created in the default PowerApps environment that was created for you when you signed up. For most users, this is sufficient. However, if you want to specify a custom PowerApps environment for your virtual agent, you can do so by expanding the **More options** menu and selecting a different environment.
    > [!NOTE] 
-   > Preview is currently supported only in the United States, with data stored in US data centers. If your company is located outside of the United States, you need to create a custom environment with **Region** set to “United States” before you can create your virtual agent. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
+   > Preview is currently supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with **Region** set to a supported data location before you can create your bot. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
 
    ![Name the new bot](media/create-new-bot-screen.png)
 

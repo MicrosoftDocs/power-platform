@@ -66,3 +66,5 @@
      href: gdpr-delete.md
    - name: Requests to discover data
      href: gdpr-discovery.md
+   - name: Where an organization's Virtual Agent data is located
+     href: data-location.md

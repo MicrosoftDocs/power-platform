@@ -18,9 +18,8 @@ manager: shellyha
 
 ### Customers from outside of the United States signing up for Virtual Agent
 
-Preview is currently only supported in the United States, with data stored in US data centers. If your company is located outside of the United States, you need to create a custom environment with the region set to “United States” before you can create your bot. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
+Preview is currently only supported in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with the region set to a supported data location before you can create your bot. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
 
-![Error when outside of the United States](media/error-outside-US.png)
 
 ### Issues with Microsoft Flow solutions tab
 
@@ -102,7 +101,7 @@ This error indicates an issue with your current environment. If refreshing your 
 
 Your environment might not show up in the drop-down menu due to the following reasons:
  - The environment doesn't have a database created. To resolve this, go to [admin.powerapps.com](https://admin.powerapps.com), and create a database in your environment.
- - The environment's region is set to something other than "United States." To resolve this, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md), and create an environment in the United States region.
+ - The environment's region is set to something other than a [supported region](data-location.md). To resolve this, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md), and create an environment in a supported region.
  - The environment didn't finish setting up. To resolve this, retry in a few minutes
 
 ### Why am I getting a message or email about an environment that is going to expire?

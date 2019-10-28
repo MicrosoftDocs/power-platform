@@ -25,10 +25,10 @@ When you create a bot, you must select a PowerApps environment for the bot. You 
 
 2. Select **New environment** to open the **New environment** dialog box.
 
-    Specify a unique name for the environment, select **United States** as the region, and the environment type. Then select **Create environment**.
+    Specify a unique name for the environment, select a supported region, and the environment type. Then select **Create environment**.
 
     > [!NOTE]
-    > The environment needs to be created with the region set to **United States**, otherwise you won't be able to use it when creating a bot.
+    > The environment needs to be created with a region listed in the [supported data locations](data-location.md) topic, otherwise you won't be able to use it when creating a bot.
     > Trial environments expire after 30 days. You'll lose all bots created in the trial environment when it expires.
 
    ![Create environment](media/create-environment-2.png)

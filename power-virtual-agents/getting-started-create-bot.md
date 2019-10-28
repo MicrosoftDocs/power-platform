@@ -37,7 +37,8 @@ If you encounter an issue while creating your bot, see [Known issues with creati
    Your virtual agent is created in the default PowerApps environment that was created for you in the prior step. For most users, this is sufficient. However, if you want to specify a custom PowerApps environment for your virtual agent, you can do so by expanding the **More options** menu and selecting a different environment.
 
    >[!NOTE]
-   >Preview is currently supported only in the United States, with data stored in US data centers. If your company is located outside of the United States, you need to create a custom environment, with **Region** set to **United States**, before you can create your virtual agent. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
+     >Preview is currently supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment, with **Region** set to a supported data location, before you can create your virtual agent. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
+
   
 3. Once you select **Create**, the process for creating the first bot within a new environment can take up to 15 minutes. 
 
@@ -80,5 +81,5 @@ To resolve this issue, follow the steps in [To create a new PowerApps environmen
 
 Your environment might not show up in the drop-down menu due to one of the following:
  - The environment doesn't have a database created. To resolve this, go to [admin.powerapps.com](https://admin.powerapps.com) to create a database in your environment.
- - The environment's region is set to something other than United States. To resolve this, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md).
+ - The environment's region is set to something other than a region in the [supported data locations](data-location.md). To resolve this, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md).
  - The environment didn't finish setting up. To resolve this, retry in a few minutes.
