@@ -207,7 +207,7 @@ For triggering specific topics, you could have multiple bots, and have the Topic
 
 Variables store customer responses to bot questions. Variables can be used in expressions evaluating a customer response or passed to a flow. Variables can also be used to confirm a customer response. 
 
-## Flow integration 
+## Power Automate integration 
 
 ### How do I create a Power Automate action in Power Virtual Agents?
 
@@ -218,7 +218,7 @@ Have a look at the article about [Add actions to your bot using Power Automate](
 
 ### What license do I need to use Power Automate in Power Virtual Agents?
 
-Every bot author is automatically licensed to use Power Automate. No extra steps are needed. Bot authors are assigned a P2 Plan Flow license as part of their Power Virtual Agents license. For details, please refer to [Power Automate Plans documentation](https://flow.microsoft.com/pricing/).
+Every bot author is automatically licensed to use Power Automate. No extra steps are needed. Bot authors are assigned a P2 Plan Power Automate license as part of their Power Virtual Agents license. For details, please refer to [Power Automate Plans documentation](https://flow.microsoft.com/pricing/).
 
 ### I created some new flows for actions using Power Automate, but they are not visible in Power Virtual Agents. Why?
 
@@ -277,8 +277,8 @@ You can export and import solutions containing your flows to move them between e
 - [Import a Solution](https://docs.microsoft.com/flow/import-flow-solution)
 
 ### Where can I find out more about Power Automate?
-You can find out more about the capabilities of Power Automate on the [Frequently asked quetsions](https://docs.microsoft.com/flow/frequently-asked-questions) page or by reading [Flow documentation](https://docs.microsoft.com/flow/getting-started).
-You can also learn new skills and discover the power of Power Automate with step-by-step [Flow training modules](https://docs.microsoft.com/learn/browse/?products=flow).
+You can find out more about the capabilities of Power Automate on the [Frequently asked quetsions](https://docs.microsoft.com/flow/frequently-asked-questions) page or by reading [Power Automate documentation](https://docs.microsoft.com/flow/getting-started).
+You can also learn new skills and discover the power of Power Automate with step-by-step [Power Automate training modules](https://docs.microsoft.com/learn/browse/?products=flow).
 
 ## Deployment 
 
