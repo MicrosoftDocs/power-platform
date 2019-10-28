@@ -1,6 +1,6 @@
 ---
-title: "Overview of Virtual Agent pages"
-description: "Learn about the Virtual Agent tools that build your own bot."
+title: "Overview of Power Virtual Agents pages"
+description: "Learn about the Power Virtual Agents tools that build your own bot."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
@@ -10,13 +10,13 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Overview of Virtual Agent pages
+# Overview of Power Virtual Agents pages
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Virtual Agent for Customer Service provides a variety of tools to create powerful custom bots. You can add topics to your bots to design conversations to resolve customer support issues, and then deploy the bots to a web channel. You can also view analytics to help you improve the bot and the overall customer experience.
+Power Virtual Agents provides a variety of tools to create powerful custom bots. You can add topics to your bots to design conversations to resolve customer support issues, and then deploy the bots to a web channel. You can also view analytics to help you improve the bot and the overall customer experience.
 
-Virtual Agent is composed of several pages designed for different tasks. You can access the pages through the navigation pane.
+Power Virtual Agents is composed of several pages designed for different tasks. You can access the pages through the navigation pane.
 
 ![Left pane](media/nav-pane.png)
 
@@ -24,13 +24,13 @@ Virtual Agent is composed of several pages designed for different tasks. You can
 
 ![Home page](media/open-bot.png)
 
-The home page provides links to the Topics, Analytics, and Deploy pages.  A **Customize your greeting** button lets you revise the built-in bot greeting topic. The home page also includes a **Learn more** section with links to documentation and a **Tell us what you think** section with links to the Virtual Agent community forum and the Virtual Agent idea forum.
+The home page provides links to the Topics, Analytics, and Deploy pages.  A **Customize your greeting** button lets you revise the built-in bot greeting topic. The home page also includes a **Learn more** section with links to documentation and a **Tell us what you think** section with links to the Power Virtual Agents community forum and the Power Virtual Agents idea forum.
 
 ## Topics page
 
 ![Topics page](media/topics-page.png)
 
-The Topics page is the central location for creating and managing Virtual Agent topics. Virtual Agent includes several built-in system topics.
+The Topics page is the central location for creating and managing Power Virtual Agents topics. Power Virtual Agents includes several built-in system topics.
 
 You can revise the built-in topics and also create your own custom topics to design a conversation path that leads each customer to a resolution of the customer's support issue. You can then test the bot in the **Test bot** pane and refine it as necessary.
 
@@ -58,7 +58,7 @@ For more information about using the Deploy page to deploy your bot, see [Deploy
 
 ## Test the bot
 
-Virtual Agent includes a **Test bot** pane, where you can test how the conversation with the bot works in practice. You can hide the **Test bot** pane by selecting **Hide bot** in the lower-left corner of Virtual Agent.
+Power Virtual Agents includes a **Test bot** pane, where you can test how the conversation with the bot works in practice. You can hide the **Test bot** pane by selecting **Hide bot** in the lower-left corner of Power Virtual Agents.
 
 ![Hide bot](media/hide-test-va.png)
 

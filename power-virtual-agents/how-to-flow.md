@@ -1,6 +1,6 @@
 ---
-title: "Add actions to your bot using Microsoft Flow"
-description: "Learn how to add actions to your bot using Microsoft Flow."
+title: "Add actions to your bot using Power Automate"
+description: "Learn how to add actions to your bot using Power Automate."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
@@ -10,7 +10,7 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Add actions to your bot using Microsoft Flow
+# Add actions to your bot using Power Automate
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -22,7 +22,7 @@ You can enable your bot to perform an action by invoking a flow. Use a flow that
 
     For more information, see [Creating a PowerApps environment](getting-started-new-environment.md).
 
-2. If you do not already have a Microsoft Flow environment, sign in to the admin portal by entering [https://flow.microsoft.com]( https://flow.microsoft.com) in your browser. Select the icon for your account in the upper-right corner of the screen, and then select your PowerApps environment from the list.
+2. If you do not already have a Power Automate environment, sign in to the admin portal by entering [https://flow.microsoft.com]( https://flow.microsoft.com) in your browser. Select the icon for your account in the upper-right corner of the screen, and then select your PowerApps environment from the list.
 
 3. Verify that the PowerApps environment database was created correctly. Select **Solutions** in the left pane to display the **Solutions** page, and then verify that the Solutions list includes **Common Data Service Default Solution**.
 
@@ -31,7 +31,7 @@ You can enable your bot to perform an action by invoking a flow. Use a flow that
    > [!NOTE]
    > Since creating a new environment can take some time, the new solution might not immediately appear in the list. Sign out and check again in 30 to 60 minutes.
 
-   Once you have created your environment, return to the Microsoft Flow portal, and switch to the newly created environment to create your flow.
+   Once you have created your environment, return to the Power Automate portal, and switch to the newly created environment to create your flow.
 
 ## To create a flow
 
@@ -43,7 +43,7 @@ You can enable your bot to perform an action by invoking a flow. Use a flow that
 
     You can create a variety of flows for your solution. For example, you could create a simple flow that takes an email address as an input parameter, sends an email message to that address, and returns a message that the email was successfully sent to a bot as output.
 
-3. Select a trigger for your flow. A Virtual Agent bot can only invoke flows that have HTTP request interfaces. Enter **HTTP** in the search box, and select **When a HTTP request is received** to create a flow with an HTTP request trigger.
+3. Select a trigger for your flow. A Power Virtual Agents bot can only invoke flows that have HTTP request interfaces. Enter **HTTP** in the search box, and select **When a HTTP request is received** to create a flow with an HTTP request trigger.
 
    ![Select trigger](media/select-trigger.png)
 
@@ -66,13 +66,13 @@ You can enable your bot to perform an action by invoking a flow. Use a flow that
 
    ![Send email](media/send-email.png)
 
-    Microsoft Flow displays the **Send an email** window.
+    Power Automate displays the **Send an email** window.
 
 6. To use dynamic content as the recipient address, place your cursor in the **To** field to display the **Dynamic content** tab, and then select **See more**.
 
    ![See more](media/see-more.png)
 
-    To use the Microsoft Flow input variable **to** as the recipient address, select **to**.
+    To use the Power Automate input variable **to** as the recipient address, select **to**.
 
    ![Create message](media/select-to.png)
 
@@ -105,7 +105,7 @@ You can enable your bot to perform an action by invoking a flow. Use a flow that
 
 ## To create a bot that invokes a flow
 
-1. Go to [https://va.ai.dynamics.com](https://va.ai.dynamics.com) in your browser to open the Virtual Agent environment, and then create a new bot in the same environment as your flow. To create a new bot, select the **New Bot** icon on the title bar. Then select **New bot**.
+1. Go to [https://va.ai.dynamics.com](https://va.ai.dynamics.com) in your browser to open the Power Virtual Agents environment, and then create a new bot in the same environment as your flow. To create a new bot, select the **New Bot** icon on the title bar. Then select **New bot**.
 
    ![New bot icon](media/new-bot-icon.png)
 
@@ -161,7 +161,7 @@ You can enable your bot to perform an action by invoking a flow. Use a flow that
 
    ![Save variable](media/create-flow-variable.png)
 
-    Virtual Agent adds the variable to the **User Responses** node, and creates an **Expression** node. You can delete this node if you do not want to do any validation.
+    Power Virtual Agents adds the variable to the **User Responses** node, and creates an **Expression** node. You can delete this node if you do not want to do any validation.
 
    ![Delete expression](media/delete-expression.png)
 
@@ -180,7 +180,7 @@ You can enable your bot to perform an action by invoking a flow. Use a flow that
     > [!NOTE]
     > The flows and bot must be created in the same environment. Otherwise, the flow action does not appear in the list of available actions.
 
-    Virtual Agent creates an **Action** node indicating that the action has one required input and one output. Select the variable you created from the drop-down list to pass it as input.
+    Power Virtual Agents creates an **Action** node indicating that the action has one required input and one output. Select the variable you created from the drop-down list to pass it as input.
 
    ![Create action](media/create-action.png)
 

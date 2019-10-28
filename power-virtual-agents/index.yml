@@ -1,0 +1,74 @@
+### YamlMime:Landing
+
+title: Power Virtual Agents documentation # < 60 chars
+summary: Build chat bots easily with Power Virtual Agents.  # < 160 chars
+
+metadata:
+  title: Power Virtual Agents documentation and guidance # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: See how Power Virtual Agents can be used to automate your customer service with powerful AI-driven chat bots.  # Required; article description that is displayed in search results. < 160 chars.
+  services: service
+  ms.service:   
+    - "dynamics-365-ai" #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: virtual-agent
+  author: iaanw #Required; your GitHub user alias, with correct capitalization.
+  ms.author: iawilt #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/25/2019 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Power Virtual Agents
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Power Virtual Agents?
+            url: overview.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart
+            url: quickstart.md
+      - linkListType: reference
+        links:
+          - text: Videos
+            url: videos.md
+          - text: Frequently asked questions
+            url: faq.md
+          - text: PowerVirtualAgent blog
+            url: https://cloudblogs.microsoft.com/dynamics365/it/product/virtual-agent-for-customer-service/
+          - text: What's new and planned
+            url: https://docs.microsoft.com/dynamics365-release-plan/2019wave2/artificial-intelligence/dynamics365-virtual-agent-for-customer-service/planned-features
+          - text: Forums and community
+            url: https://community.dynamics.com/365/virtual-agent-for-customer-service/
+          - text: Submit ideas
+            url: https://experience.dynamics.com/ideas/categories/?forum=f970b8b7-1378-e911-a965-000d3a4f33c1&forumName=Dynamics%20365%20Virtual%20Agent%20for%20Customer%20Service
+
+
+  # Card (optional)
+  - title: Create and deploy bots
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Create a bot
+            url: getting-started-create-bot.md
+          - text: Create custom greetings
+            url: getting-started-create-greeting.md
+          - text: Create custom topics
+            url: getting-started-create-topics.md
+          - text: Deploy your bot
+            url: getting-started-deploy.md
+
+  # Card
+  - title: Analyze bot performance
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Analytics overview
+            url: analytics-overview.md
+          - text: Use analytics to improve your bot
+            url: getting-started-analytics.md
+

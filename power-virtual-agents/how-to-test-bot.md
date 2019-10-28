@@ -1,6 +1,6 @@
 ---
 title: "Work with the Test bot pane"
-description: "Learn how to work with the Dynamics 365 Virtual Agent for Customer Service Test bot pane."
+description: "Learn how to work with the Power Virtual Agents Test bot pane."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-As you design your bot in Dynamics 365 Virtual Agent for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the conversation path. To help you find and fix unexpected behavior, you can enable tracing to take you through the conversation path step by step, and go to the corresponding node in the conversation editor.
+As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the conversation path. To help you find and fix unexpected behavior, you can enable tracing to take you through the conversation path step by step, and go to the corresponding node in the conversation editor.
 
 ## To test a topic in the Test bot pane
 

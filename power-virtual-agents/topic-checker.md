@@ -1,6 +1,6 @@
 ---
-title: "Virtual Agent Topic Checker"
-description: "Learn how to validate Virtual Agent topics with Topic Checker."
+title: "Power Virtual Agents Topic Checker"
+description: "Learn how to validate Power Virtual Agents topics with Topic Checker."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
