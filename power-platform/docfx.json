@@ -43,8 +43,8 @@
     },
     "fileMetadata": {
       "searchScope": {
-        "**.*": ["PowerApps","Flow","Power Platform"],
-        "admin/**.*": ["PowerApps","Flow","Power Platform"]
+        "**.*":["PowerApps","Flow","Power Platform"],
+        "admin/**.*":["PowerApps","Flow","Power Platform"]
       },
     "template": [],
     "dest": "power-platform",
