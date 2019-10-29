@@ -148,13 +148,13 @@ You can now see this flow on the list of available actions when you use Call an 
 
 You can rename and modify your flow on Microosft Automate Portal. For example, the flow we have just created using the template can be updated to provide a weather forecast when called from a bot.
 
-To modify a flow, go to Solutions tab on Microsoft Automate portal to open your flow solution. Then use a flow’s Edit menu option:
+To modify a flow, go to Solutions tab on Microsoft Automate portal and open your flow's solution. Use your flow’s Edit menu option to open this flow in Editing experience:
 
 ![Open your flow for Editing](media/EditFlow.jpg)
 
 
 
-This flow will open in editing experience where you can rename and update it. Rename your flow to Get weather forecast and add the following flow input parameters to HTTP Request trigger as shown below:
+Rename your flow to Get weather forecast and add the following flow input parameters to HTTP Request trigger, as shown below:
 
 
 •	City (String)
@@ -196,10 +196,7 @@ Type in MSN weather in the search box and choose Get forecast for today action f
 
 
 
-Once the action is selected, an MSN Weather Connector is added. Add flow inputs City and Zipcode as parameters for Location field in MSN Weather Connector. 
-
-
-Use Add dynamic content option and select City and Zipcode from the list:
+An MSN Weather Connector is added to the flow. Add flow inputs City and Zipcode as parameters for Location field in MSN Weather Connector. Use Add dynamic content option and select City and Zipcode from the list:
 
 
 ![Pass flow's input parameters to MSN Weather connector as location](media/AddLocationForMSN.jpg)
@@ -223,13 +220,16 @@ In HTTP Response Body, add parameters that you want to return to the bot. Using 
 ![Add Dynamic variables to flow's reponse](media/AddDynamicVariables.jpg)
 
 
-You must also add the following JSON code to Response Body JSON Schema and Save your changes:
+
+Add the following JSON code to Response Body JSON Schema and Save your changes:
+
 
 ![Add Dynamic variables to flow's reponse](media/GetWeatherFlowSave.jpg)
 
 
 
 HTTP Response Body JSON Schema (under advanced options):
+
 
 {
     "type": "object",
@@ -246,28 +246,46 @@ HTTP Response Body JSON Schema (under advanced options):
     }
 }
 
+This flow is you ready to be used in with the bots.
 
 
-## Use your flow in a bot
+## Call your flow as an Action from a bot Topic
 
-You can use you new flow in any Topic in a bot; you can pass variables to this as inputs flow and receive outputs that can be used in the dialog. Select Topics in the left pane to open the Topics page, and then select New topic.
+You can call this Micrsosft Automate flow from any bot Topic. You can pass bot Topic's variables to this flow and receive flow outputs that can be used in a Dialog.
+To create a new Topic that will call Get weather foreacts flow as an Action, go your Virtual Agent Editor. Select Topics in the left panel to open the Topics page, and then select New topic. Create a new Topic called Get weather and add a few trigger phrases:
 
-Picture 8 (Create a new Topic)
+•	will it rain
+•	today’s forecast
+•	get weather
+•	what’s the weather
 
-Specify a name, description, and trigger phrases for the topic. A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
-For example, for a Daily Deals topic, you could specify the following trigger phrases:
-daily deals
-deal of the day
-current deals
-today’s deals
-current offers
-today’s specials
 
-Once you have created the topic, you can create a conversation path that uses your flow. Select Edit to open the conversation editor.
+![Create a new Topic](media/CreateTopic.jpg)
 
-In the conversation editor, enter a bot response in the Bot Says node, and then select User Says to display the User Responses node.
 
-Picture 9 (Create bot converstaion that calls a flow)
+
+Click on Go to authoring canvas and use Ask a question node to have the bot ask the user for the City (String) and Zipcode (Number) inputs:
+
+
+![Add Topic Dialog questions](media/TopicDialogQuestions.jpg)
+
+
+
+Next, use Call an action option to call Get weather forecast Microsoft Automate flow:
+
+![Call action](media/TopicCallActionWeather.jpg)
+
+
+Use City (Var1) and Zipcode (Var2) parameters as inputs for this flow, then add Show a message node to display weather forecast data using flow’s outputs:
+
+
+![Call action](media/TopicDisplayWeather.jpg)
+
+
+Press a Save button and your new Topic that calls Microsoft Automate flow is now ready for testing.
+
+
+
 
 ## To test the flow
 1. In the **Test bot** pane, select **Start over with latest conversation**. Then specify a trigger phrase for the topic that contains the flow.
