@@ -1,6 +1,6 @@
 ---
 title: PowerApps and Microsoft Flow licensing FAQs| Microsoft Docs
-description: "FAQs for licensing PowerApps, Microsoft Flow, Common Data Service, PowerApps Portals, and AI Builder"
+description: "FAQs for licensing PowerApps, Microsoft Flow, Common Data Service, portals, and AI Builder"
 author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
@@ -350,7 +350,7 @@ plans are listed below:
 
 -   Common Data Service Log Capacity (1GB) \$10 per month
 
-## PowerApps Portals
+## Portals
 
 ### Can you share more details regarding the new PowerApps Portals licensing?
 
@@ -456,7 +456,7 @@ AI Builder includes several model types, including custom and prebuilt – a ful
 
 ### Which AI models are available for free in public preview and which are in paid GA status?
 
-The release status for AI Builder features is available here.
+The release status for AI Builder features is available [here](https://go.microsoft.com/fwlink/?linkid=2102828).
 
 AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](/ai-builder/model-types#list-of-ai-model-types).
 
