@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 10/28/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -23,6 +23,8 @@ We have found some common questions on licensing and plan options. We’ve
 included several here with their answers. For more details about Microsoft
 PowerApps and Microsoft Flow licensing, see [Licensing
 Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+
+## General licensing questions
 
 ### How is Microsoft PowerApps and Microsoft Flow Licensed?
 
@@ -49,7 +51,7 @@ Microsoft Flow Plans:
     organization without having to license each end user. This plan starts at
     \$500/month for 5 flows.
 
-More details can be found in [Microsoft PowerApps and Flow Licensing
+More details can be found in [Microsoft PowerApps and Microsoft Flow Licensing
 Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 ### Is non-profit, government, and academic pricing available?
@@ -78,35 +80,74 @@ PowerApps application. Consuming standalone Microsoft Flows unrelated to the
 PowerApps application(s) will require purchase of a standalone Microsoft Flow
 license.
 
-### What are Microsoft PowerApps and Microsoft Flow use rights for Dynamics 365 applications?
+### Is there a plan for developers?
 
-Refer to [Licensing
-guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft PowerApps
-and Flow use rights for Office 365 applications.
+Yes, we have a free Community Plan to learn and build skills on PowerApps,
+Microsoft Flow and Common Data Service. [Learn
+more](https://powerapps.microsoft.com/communityplan/).
 
-Effective October 1st 2019, there are certain changes made to use rights which
-are listed below:
+### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
-PowerApps use rights with Dynamics 365 licenses: Dynamics
-365 *Enterprise* licenses will no longer include general purpose PowerApps
-capabilities. Dynamics 365 Enterprise users will continue to be able to run apps
-and portals that extend and customize the licensed Dynamics 365 application, as
-long as those apps and portals are located in the same environment as their
-licensed Dynamics 365 application. Custom apps or portals outside of the
-Dynamics 365 environment will require a standalone PowerApps license.
+You can buy additional data storage, file storage and flow runs. See the
+PowerApps Licensing overview page for more information.
 
-Microsoft Flow use rights with Dynamics 365 licenses: Dynamics 365 licenses will
-no longer include general purpose Microsoft Flow capabilities. Microsoft Flows
-will need to map to licensed Dynamics 365 application context - Microsoft Flows
-should trigger from OR connect to data sources within use rights of licensed
-Dynamics 365 application(s). Use of standalone flows will require a Microsoft
-Flow license.
+### Who can buy Microsoft PowerApps and Microsoft  Flow plans?
+
+Any customer can sign up for a free trial. Office 365 admins can buy PowerApps
+plans for their teams or organization. Contact your Office 365 admin when you’re
+ready to buy.
+
+### Do all my users need to be licensed with the same PowerApps plan, or can I mix plans?
+
+You can mix and match PowerApps licenses, and licenses that include PowerApps
+capabilities, across the users in your organization.
+
+### Are there limits on the number of API requests PowerApps and Microsoft Flow users can make?
+
+Yes. To help ensure service levels, availability and quality, there are limits
+to the number of API requests users can make across PowerApps and Microsoft
+Flow. Service limits are set against normal usage patterns in both 5-minute and
+per 24-hour intervals, and most customers will not reach them.
+
+API capacity is tracked based on consumption at an individual user level, and
+the daily limits cannot be pooled at any other level.
+
+API limits are also applicable to application users, non-interactive users and
+administrative users in Common Data Service platform.
+
+More information is available [here](https://aka.ms/platformlimits).
+
+## Trial Licenses
+
+### How long is the free trial period?
+
+Free trials for Microsoft PowerApps last 30 days. For Microsoft Flow, they are
+available for 90 days.
+
+### Is there a way to develop my Microsoft PowerApps and Microsoft Flow skills for more than 90 days?
+
+Yes, with the PowerApps Community Plan you get a free environment for individual
+use with functionality including the Common Data Service. In this environment
+you can explore and learn everything about Microsoft Flow and PowerApps for
+free, but the PowerApps Community Plan is not intended for production use.
+
+[Learn more](https://powerapps.microsoft.com/pricing/)
+
+### How do I convert my trial environment to a production environment?
+
+More information is available [here](/power-platform/admin/trial-environments)
+
+### Where can I find more information about trial environments?
+
+For more information about trial environments in PowerApps read this [topic](/power-platform/admin/trial-environments
+
+## Office 365 
 
 ### What are Microsoft PowerApps and Microsoft Flow use rights for Office 365 applications?
 
 Please refer to [Licensing
 guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft PowerApps
-and Flow use rights for Office 365 applications.
+and Microsoft Flow use rights for Office 365 applications.
 
 Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed
 below will be reclassified from Standard to Premium. Non-Microsoft connectors
@@ -190,6 +231,39 @@ business scenarios, without requiring a per-user license. In other words, the
 No. Embedded canvas components within the model-driven app will not count
 towards the two apps limit in the per app licensing model.
 
+## Dynamics 365
+
+### What are Microsoft PowerApps and Microsoft Flow use rights for Dynamics 365 applications?
+
+Refer to [Licensing
+guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft PowerApps
+and Microsoft Flow use rights for Office 365 applications.
+
+Effective October 1st 2019, there are certain changes made to use rights which
+are listed below:
+
+PowerApps use rights with Dynamics 365 licenses: Dynamics
+365 *Enterprise* licenses will no longer include general purpose PowerApps
+capabilities. Dynamics 365 Enterprise users will continue to be able to run apps
+and portals that extend and customize the licensed Dynamics 365 application, as
+long as those apps and portals are located in the same environment as their
+licensed Dynamics 365 application. Custom apps or portals outside of the
+Dynamics 365 environment will require a standalone PowerApps license.
+
+Microsoft Flow use rights with Dynamics 365 licenses: Dynamics 365 licenses will
+no longer include general purpose Microsoft Flow capabilities. Microsoft Flows
+will need to map to licensed Dynamics 365 application context - Microsoft Flows
+should trigger from OR connect to data sources within use rights of licensed
+Dynamics 365 application(s). Use of standalone flows will require a Microsoft
+Flow license.
+
+### Can I connect to Microsoft Dynamics for Finance and Operations?
+
+Yes, you can use the Dynamics 365 Finance and Operations connector to build
+canvas apps using this data.
+
+## Microsoft Flow
+
 ### When would I use the Microsoft Flow per user plan versus the Microsoft Flow per flow plan?
 
 The per user plan is intended to support the broad adoption of an automation
@@ -223,6 +297,8 @@ features requires either a standalone Microsoft Flow per user plan, or, that the
 flow that creates these business process environments or approval requests to be
 licensed under the per flow plan.
 
+## Common Data Service
+
 ### What Common Data Service capacity is included with the PowerApps and Microsoft Flow plans?
 
 Every tenant with a PowerApps license gets default capacity. In addition, for
@@ -246,6 +322,8 @@ is additional capacity added to the tenant.
 | Common Data Service Database Capacity | \+ 50 MB       | \+ 50 MB       |
 | Common Data Service Log Capacity      | \+ 0           | \+ 0           |
 | Common Data Service File Capacity     | \+ 200 MB      | \+ 200 MB      |
+
+## Add-ons
 
 ### What add-ons are available to the PowerApps and Microsoft Flow plans?
 
@@ -272,6 +350,7 @@ plans are listed below:
 
 -   Common Data Service Log Capacity (1GB) \$10 per month
 
+## PowerApps Portals
 
 ### Can you share more details regarding the new PowerApps Portals licensing?
 
@@ -295,7 +374,6 @@ access licensing is based on persona type and details are as below.
 Think of a login as a “day pass” to a portal. Once logged in to a portal, subsequent logins (potentially from different devices) during the 24-hour period will not be billable.
 
 ### Does a single login provide access to multiple PowerApps Portals during the 24-hour period?**
-
 
 Logins are specific to a single portal. So if you access multiple portals belonging to the same tenant, it will be counted as one login per portal.
 
@@ -351,58 +429,36 @@ Portals are licensed at a monthly rate that is based on a customer’s anticipat
 login volume. Logins are not accumulated as individual assets that would carry
 forward month to month.
 
-### Are there limits on the number of API requests PowerApps and Microsoft Flow users can make?
+## AI Builder
 
-Yes. To help ensure service levels, availability and quality, there are limits
-to the number of API requests users can make across PowerApps and Microsoft
-Flow. Service limits are set against normal usage patterns in both 5-minute and
-per 24-hour intervals, and most customers will not reach them.
+### How is AI Builder licensed?
 
-API capacity is tracked based on consumption at an individual user level, and
-the daily limits cannot be pooled at any other level.
+AI Builder is a capacity add-on to paid, standalone PowerApps, Microsoft Flow and Dynamics 365 licenses. Each $500 subscription includes 1 million AI Builder service credits applied at the tenant level. To use your AI Builder capacity, an administrator has to allocate AI Builder capacity to the environment where you want to use AI Builder.  
 
-API limits are also applicable to application users, non-interactive users and
-administrative users in Common Data Service platform.
+- More details about licensing can be found in the Microsoft PowerApps and Flow Licensing Guide. 
+- Information about how to allocate capacity in the Power Platform admin center can be found [here](/power-platform/admin/capacity-add-on).
 
-More information is available [here](https://aka.ms/platformlimits).
+### How is AI Builder capacity enforced?
 
-### Can I connect to Microsoft Dynamics for Finance and Operations?
+The AI Builder capacity add-on is an annual subscription, and capacity is enforced on a monthly basis. Capacity should be purchased for the peak utilization monthly period.
 
-Yes, you can use the Dynamics 365 Finance and Operations connector to build
-canvas apps using this data.
+Information about how to allocate AI Builder capacity to your environment is available [here](/power-platform/admin/capacity-add-on).
 
-### How long is the free trial period?
+### Can AI Builder capacity be added to the P1 and P2 plans for PowerApps and Flow that are being retired?
 
-Free trials for Microsoft PowerApps last 30 days. For Microsoft Flow, they are
-available for 90 days.
+Yes. AI Builder capacity can be added to the P1 and P2 plans for PowerApps and Microsoft  Flow for customers who haven’t yet transitioned to the new PowerApps and Microsoft Flow plans.
 
-### Is there a way to develop my Microsoft PowerApps and Flow skills for more than 90 days?
+### What is a "service credit" and how does it work? 
 
-Yes, with the PowerApps Community Plan you get a free environment for individual
-use with functionality including the Common Data Service. In this environment
-you can explore and learn everything about Microsoft Flow and PowerApps for
-free, but the PowerApps Community Plan is not intended for production use.
+AI Builder includes several model types, including custom and prebuilt – a full list is available [here](/ai-builder/model-types#list-of-ai-model-types)
 
-[Learn more](https://powerapps.microsoft.com/pricing/)
+ AI models consume service credits when they are trained, used in an app or flow, or scheduled to periodically run. The amount of capacity consumed varies based the AI model, as well as the size and complexity of the data set.
 
-### Is there a plan for developers?
+### Which AI models are available for free in public preview and which are in paid GA status?
 
-Yes, we have a free Community Plan to learn and build skills on PowerApps,
-Microsoft Flow and Common Data Service. [Learn
-more](https://powerapps.microsoft.com/communityplan/).
+The release status for AI Builder features is available here.
 
-### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
+AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](/ai-builder/model-types#list-of-ai-model-types).
 
-You can buy additional data storage, file storage and flow runs. See the
-PowerApps Licensing overview page for more information.
-
-### Who can buy Microsoft PowerApps and Flow Plans?
-
-Any customer can sign up for a free trial. Office 365 admins can buy PowerApps
-plans for their teams or organization. Contact your Office 365 admin when you’re
-ready to buy.
-
-### Do all my users need to be licensed with the same PowerApps plan, or can I mix plans?
-
-You can mix and match PowerApps licenses, and licenses that include PowerApps
-capabilities, across the users in your organization.
+### Is a trial available for AI Builder?
+Users without an existing PowerApps or Microsoft Flow license can access AI Builder trial capacity for 30 days by signing up for either a PowerApps or Microsoft Flow trial. Existing PowerApps and Microsoft Flow users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane.  
