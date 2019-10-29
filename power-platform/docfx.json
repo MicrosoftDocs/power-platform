@@ -39,13 +39,12 @@
       "extendBreadcrumb": true,
       "titleSuffix": "Power Platform Admin center",
       "feedback_system": "None"
-      }
     },
     "fileMetadata": {
       "searchScope": {
-        "**.*":["PowerApps","Flow","Power Platform"],
-        "admin/**.*":["PowerApps","Flow","Power Platform"]
-      },
+        "**.*": [ "PowerApps", "Flow", "Power Platform" ]
+      }
+    },
     "template": [],
     "dest": "power-platform",
     "markdownEngineName": "markdig"
