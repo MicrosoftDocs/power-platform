@@ -135,13 +135,13 @@ free, but the PowerApps Community Plan is not intended for production use.
 
 ### How do I convert my trial environment to a production environment?
 
-More information is available [here](/power-platform/admin/trial-environments)
+More information is available [here](/power-platform/admin/trial-environments).
 
 ### Where can I find more information about trial environments?
 
-For more information about trial environments in PowerApps read this [topic](/power-platform/admin/trial-environments
+For more information about trial environments in PowerApps read this [topic](/power-platform/admin/trial-environments).
 
-## Office 365 
+## Office 365
 
 ### What are Microsoft PowerApps and Microsoft Flow use rights for Office 365 applications?
 
