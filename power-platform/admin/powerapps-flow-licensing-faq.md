@@ -1,12 +1,12 @@
 ---
 title: PowerApps and Microsoft Flow licensing FAQs| Microsoft Docs
-description: "FAQs for licensing PowerApps, Microsoft Flow, Common Data Service, portals, and AI Builder"
+description: "FAQs for licensing PowerApps, Microsoft Flow, Common Data Service, PowerApps Portals, and AI Builder"
 author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 10/29/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
