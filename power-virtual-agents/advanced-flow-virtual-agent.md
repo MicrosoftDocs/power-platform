@@ -202,7 +202,7 @@ Once the action is selected, an MSN Weather Connector is added. Add flow inputs 
 Use Add dynamic content option and select City and Zipcode from the list:
 
 
-![Add Dynamic variables](media/AddDynamicVariables.jpg)
+![Pass flow's input parameters to MSN Weather connector as location](media/AddLocationForMSN.jpg)
 
 
 Delete both Initialize Variable nodes using Delete option – they are not needed for Get weather forecast flow:
