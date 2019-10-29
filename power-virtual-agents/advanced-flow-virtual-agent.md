@@ -109,27 +109,31 @@ Your flow will be saved to My flows tab on Microsoft Automate portal:
 
 
 
-## Add your flow to a solution to use with bots
 
-To ensure your flow can be used with bots, it must be moved from My Flows tab into a Solution tab pn Microsoft Automate portal. 
 
-Go to Solutions tab on Microsoft Automate portal to see what solutions are available to you. You can use any of the existing solutions for your flow, or you can create a new solution.
+## Add your flow to a Solutions tab on Microsoft Automate portal
+
+To ensure your flow can be used with bots, it must be moved from My Flows tab into a Solution tab on Microsoft Automate portal. 
+
+Go to Solutions tab on Microsoft Automate portal to see what solutions are already available to you. You can use any of the existing solutions for your flow, or you can create a new solution for your flows.
+
 
 To create a new solution, click on New solution button:
 
 ![Create a solution](media/NewSolution.jpg)
 
 
-Give your new solution a name, select CDS Default Publisher in Publisher field, give it a version number, and press Create button: 
+Give your new solution a name, then select CDS Default Publisher in Publisher field, give it a version number, and press Create button: 
 
 ![Save a new solution](media/NewSolution_details.jpg)
 
 
-Open your new solution and use Add existing menu to add a flow to your solution: 
+Go to your new solution and use Add existing menu to add a flow: 
 
 ![Add existing menu](media/AddExistingFlow.jpg)
 
-In Add existing flow screen, select Outside of solutions tab and select your flow, and then press Add button to add your flow to this solution:
+
+In Add existing flow screen, select Outside of solutions tab and select your flow. Then press Add button to add your flow to this solution:
 
 ![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
 
