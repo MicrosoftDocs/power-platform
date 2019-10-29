@@ -251,8 +251,9 @@ This flow is you ready to be used in with the bots.
 
 ## Call your flow as an Action from a bot Topic
 
-You can call this Micrsosft Automate flow from any bot Topic. You can pass bot Topic's variables to this flow and receive flow outputs that can be used in a Dialog.
-To create a new Topic that will call Get weather foreacts flow as an Action, go your Virtual Agent Editor. Select Topics in the left panel to open the Topics page, and then select New topic. Create a new Topic called Get weather and add a few trigger phrases:
+You can call this Micrsosft Automate flow from a bot Topic. You can pass variables to this flow and receive flow outputs that can be used in a bot Topic Dialog.
+
+To create a new Topic, go your Virtual Agent Editor and select Topics tab. Then, select New topic options and name your new Topic Get weathee. Add a few trigger phrases for your new Topic:
 
 •	will it rain
 •	today’s forecast
@@ -264,14 +265,14 @@ To create a new Topic that will call Get weather foreacts flow as an Action, go 
 
 
 
-Click on Go to authoring canvas and use Ask a question node to have the bot ask the user for the City (String) and Zipcode (Number) inputs:
+To create a Dialog for your Topic, click on Go to authoring canvas and use Ask a question node to have the bot ask users for the City (String) and Zipcode (Number) inputs:
 
 
 ![Add Topic Dialog questions](media/TopicDialogQuestions.jpg)
 
 
 
-Next, use Call an action option to call Get weather forecast Microsoft Automate flow:
+Next, use Call an action option to call Get weather forecast flow you have created in the previous steps:
 
 ![Call action](media/TopicCallActionWeather.jpg)
 
