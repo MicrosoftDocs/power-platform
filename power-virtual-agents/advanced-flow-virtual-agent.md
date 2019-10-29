@@ -1,16 +1,16 @@
 ---
 title: "Add actions to your bot using Microsoft Flow"
-description: "Learn how to add actions to your bot using Microsoft Flow."
+description: "Learn how to add actions to your bot using Microsoft Automate flows."
 keywords: "KEYWORDS"
-ms.date: 09/04/2019
+ms.date: 10/29/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "VA"
-ms.collection: virtualagent
+ms.custom: "PVA"
+ms.collection: powervirtualagents
 ---
 
 
@@ -20,35 +20,77 @@ ms.collection: virtualagent
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
-## To create a new flow from a Virtual Agent using a template
-You can enable your bot to perform an action by calling a Microsoft Automate flow. The flow you want to use must share the same Common Data Service environment as your bot.  You can create a flow from with your Virtual Agent authpring experince by selecting an Action node in Dialog Authoring and using Create new flow button:
+## To create a new flow from Power Virtual Agents 
+You can enable your bot to perform an action by calling a Microsoft Automate. The flow that can be called from a Dialog must be in the same Common Data Service environment as your bot. To create a flow for the bot, select Call an action node and use Create a flow option:
 
 (Pic 1 placeholder)
 
-This will open flow template in Microsoft Automate portal in a separate tab. The portal will automatically open in the same environment as the bot and will use the credentials used in Virtual Agent. Bots are only able to call flows that are equipped with HTTP triggers and HTTP responses, and this flow template presents an example of such flow:
+Using Create a flow option will open a starter flow template in Microsoft Automate portal in a separate tab. The Microsoft Automate portal will automatically open in the same environment as the bot using the same user credentials.
+
+This template is an example of a flow that can be used by bots. To be suitable for bots, a Microsoft Automate flow requires a special kind of trigger and response actions: 
+•	Trigger: HHTP Request
+•	Response: HTTP Response
+
 
 (Pic 2 placeholder)
 
-A Virtual Agent bot can only invoke flows that have HTTP Request and HHTP Reponse interfaces. This starter flow in this template takes 2 input parameters, a String and Number, as specified in HTTP Request interface in the flow. The input parameters (String and Number) are described in the JSON snippet in HTTP Code:
+Bots can use the following types of inputs and outputs with Microsoft Automate flows:
+•	Number
+•	String
+•	Boolean
+
+This example shows how to setup a flow to accept 2 input parameters from a bot, a String and a Number, as specified in HTTP Request Body JSON Schema by this JSON snippet:
 
 
-Text box 1 (to be used for copy and paste by the reader)
 (Pic 3 placeholder)
 
+Request Body JSON Schema:
 
-An HTTP Response is required to return outputs to the bot. This flow example returns 2 output parameters to the bot a String and Number, as specified in HTTP Response:
+{
+    "type": "object",
+    "properties": {
+        "flow_input_string": {
+            "type": "string"
+        },
+        "flow_input_number": {
+            "type": "number"
+        }
+    }
+}
+
+
+
+An HTTP Response action must be used to return outputs to the bot. This template provides an example on how to returns 2 output parameters to the bot, a String and Number:
 
 Text box 2 (for copy and paste by the reader)
 (Pic 4 placeholder)
 
+Note that both Body and Response Body JSON Schema sections must be filled out in HTTP Response action:
 
-## Modify the bot flow template for your scenarios
-This template provides an example flow that would accept input parameters from a bot and also return outputs to the bot. You can modify this flow to suit your needs and create a variety of flows for your bot. For example, you could create a simple flow that takes an email address as an input parameter, sends an email message to that address, and returns a message that the email was successfully sent to a bot as output.
+Pic1 
 
-Press Save button to save your new flow:
+HTTP Response Body JSON Schema (under advanced options)
+Pic 2
 
-By default, this new flow is created in My Flows tab on Microsoft Automate portal. Howveer, to use it with the bots, you must import your new flow from My Flows tab into a Solution. 
+{
+    "type": "object",
+    "properties": {
+        "flow_output_string": {
+            "type": "string"
+        },
+        "flow_output_number": {
+            "type": "number"
+        }
+    }
+}
 
+This template provides a fully functional flow that would work with bots. Press Save button to save your new flow:
+
+Pic 3 (Save Flow)
+
+Your flow will be saved to My flows tab on Microsoft Automate portal:
+
+Pic 4 (My Flows tab)
 
 
 ## Add your flow to a Solution
