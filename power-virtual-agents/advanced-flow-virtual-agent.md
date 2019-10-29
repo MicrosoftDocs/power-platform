@@ -113,9 +113,9 @@ Your flow will be saved to My flows tab on Microsoft Automate portal:
 
 ## Add your flow to a Solutions tab on Microsoft Automate portal
 
-To ensure your flow can be used with bots, it must be moved from My Flows tab into a Solution tab on Microsoft Automate portal. 
+To ensure your flow can be used with bots, it must be moved from My Flows tab into Solutions tab on Microsoft Automate portal. 
 
-Go to Solutions tab on Microsoft Automate portal to see what solutions are already available to you. You can use any of the existing solutions for your flow, or you can create a new solution for your flows.
+Go to Solutions tab on Microsoft Automate portal to see what solutions are already available to you. You can use any of the existing solutions, or you can create a new solution for your flows.
 
 
 To create a new solution, click on New solution button:
