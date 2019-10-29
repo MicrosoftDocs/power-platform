@@ -75,6 +75,10 @@ That's great—we'd love to hear your thoughts. [Submit your ideas and feedback 
 
 Power Virtual Agents is built on Microsoft Bot Framework. Organizations with existing bots can follow [step-by-step guidance to setting up Microsoft Bot Framework dispatcher with bot built using Power Virtual Agents](how-to-use-dispatcher.md). We will provide developers with a streamlined bot building experience by seamlessly integrating into [Microsoft Bot Framework’s Skill platform](https://docs.microsoft.com/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) in an upcoming release.
 
+### When should I build a bot using Bot Framework platform v/s Power Virtual Agents?
+
+### What is the difference between Bot Framework Skills and Microsoft Power Automate? Which one should I use when?
+
 ### Is Power Virtual Agents available in government environments?
 No. At this time, Power Virtual Agents is not available in the Government Community Cloud.
 
