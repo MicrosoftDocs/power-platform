@@ -20,7 +20,7 @@ ms.collection: powervirtualagents
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
-## Create a new flow from Power Virtual Agents 
+## Create a new flow from Power Virtual Agents Dialog Editor
 You can enable your bot to perform an action by calling a Microsoft Automate. The flow that can be called from a Dialog must be in the same Common Data Service environment as your bot. To create a flow for the bot, select Call an action node and use Create a flow option:
 
 ![Create a new Microsoft Automate flow](media/UseCreateFlowOption.jpg)
