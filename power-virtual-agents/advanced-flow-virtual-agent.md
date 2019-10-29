@@ -283,7 +283,7 @@ Use City (Var1) and Zipcode (Var2) parameters as inputs for this flow, then add 
 ![Call action](media/TopicDisplayWeather.jpg)
 
 
-Press a Save button and your new Topic that calls Microsoft Automate flow is now ready for testing.
+Press a Save button to save your Dialog. You new Topic that calls Microsoft Automate flow is now ready for testing.
 
 
 
