@@ -38,7 +38,14 @@
       "breadcrumb_path": "/power-platform/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "titleSuffix": "Power Platform Admin center",
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "searchScope": {
+        "**.*": [
+          "PowerApps",
+          "Flow",
+          "Power Platform"
+        ]
+      }
     },
     "fileMetadata": {},
     "template": [],
