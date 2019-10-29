@@ -40,11 +40,7 @@
       "titleSuffix": "Power Platform Admin center",
       "feedback_system": "None",
       "searchScope": {
-        "**.*": [
-          "PowerApps",
-          "Flow",
-          "Power Platform"
-        ]
+        "**.*": ["PowerApps","Flow","Power Platform"]
       }
     },
     "fileMetadata": {},
