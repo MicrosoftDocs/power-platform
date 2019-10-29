@@ -23,7 +23,7 @@ ms.collection: powervirtualagents
 ## Create a new flow from Power Virtual Agents 
 You can enable your bot to perform an action by calling a Microsoft Automate. The flow that can be called from a Dialog must be in the same Common Data Service environment as your bot. To create a flow for the bot, select Call an action node and use Create a flow option:
 
- ![Create a new Microsoft Automate flow](media/UseCreateFlowOption.jpg)
+![Create a new Microsoft Automate flow](media/UseCreateFlowOption.jpg)
 
 
 Using Create a flow option will open a starter flow template in Microsoft Automate portal in a separate tab. The Microsoft Automate portal will automatically open in the same environment as the bot using the same user credentials:
@@ -51,6 +51,7 @@ This example in the template shows how to specify a flow to accept 2 input param
 
 ![Microsoft Automate flow template inputs](media/FlowHttpRequestInputs.jpg)
 
+
 HTTP Request Body JSON Schema:
 
 {
@@ -68,16 +69,19 @@ HTTP Request Body JSON Schema:
 
 An HTTP Response action must be used to return outputs to the bot. This template provides an example on how to return 2 output parameters to the bot, a String and a Number:
 
+
 ![Microsoft Automate flow template outputs](media/FlowHttpResponseOutputs.jpg)
 
 
 Note that both Body and Response Body JSON Schema sections must be filled out in HTTP Response action:
 
 HTTP Response Body:
+
 ![Microsoft Automate flow template outputs - Body](media/Body.jpg)
 
 
-HTTP Response Body JSON Schema (under advanced options)
+HTTP Response Body JSON Schema (under advanced options):
+
 ![Microsoft Automate flow template outputs - Body Schema](media/HttpResponseBodySchema.jpg)
 
 {
@@ -92,31 +96,49 @@ HTTP Response Body JSON Schema (under advanced options)
     }
 }
 
-This template provides a fully functional flow that would work with bots. Press Save button to save your new flow:
+
+This template provides a fully functional flow that would accept 2 parameters, a Sring and a Number, and retun them to a bot as outputs. Press Save button to save your new flow:
 
 ![Microsoft Automate flow template - Save](media/SaveFlowTemplate.jpg)
 
 
 Your flow will be saved to My flows tab on Microsoft Automate portal:
 
+
 ![Microsoft Automate flow template - Save](media/MyFlows.jpg)
 
 
 
-## Add your flow to a Solution
-Go to Solutions tab on Microsoft Automate portal to see what Solutions are available to you:
+## Add your flow to a solution to use with bots
+To ensure your flow is usable with bots, it must be moved from My Flows tab into a solution. 
 
-Pic 5 (Solutions Tab)
+Go to Solutions tab on Microsoft Automate portal to see what solutions are available to you. You can use any of the existing solutions for your flow, or you can create a new solution.
 
-You can use any of existing Solutions for your flow, or you can create a new Solution. To create a new Solution, click on New button. Give you solution a name, select CDS as Publisher, and give it a version. 
+To create a new solution, click on New solution button:
 
-Pic 6 (Create a new solution)
+![Create a solution](media/MyFlows.jpg)
 
-Use “Import button to import your new flow into a solution. Select Option Outside of Solutions and select you new flow. Once it is in a Solution, it can be used by a bot.
 
-Pic 7 (import a flow into a solution)
+Give your new solution a name, select CDS Default Publisher in Publisher field, give it a version number, and press Create button: 
 
-This flow is now ready to be used in a bot. 
+![Save a new solution](media/MyFlows.jpg)
+
+
+Open your new solution and use Add existing menu to add a flow to your solution: 
+
+![Add existing menu](media/MyFlows.jpg)
+
+In Add existing flow screen, select Outside of solutions tab and select your flow, and then press Add button to add your flow to this solution:
+
+![Add flow from outside solutions](media/MyFlows.jpg)
+
+
+This flow will be moved from My Flows into a solution and is now ready to be used in a bot. 
+
+You can now see this flow on the list of available actions when you use Call an action node in the Dialog editor:
+
+![New flow shows up in Action picker](media/FlowInActionPicker.jpg)
+
 
 
 ## Use your flow in a bot
