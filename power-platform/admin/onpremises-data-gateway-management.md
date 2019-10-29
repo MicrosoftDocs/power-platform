@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/02/2019
+ms.date: 10/29/2019
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -41,9 +41,6 @@ The gateway cluster list includes both On-premises data gateways and On-premises
 
 > [!div class="mx-imgBorder"] 
 > ![On-premises gateway page](media/onprem-gateway-manage780.png "On-premises gateway page")
-
-> [!NOTE]
-> On-premises data gateways in non-default environments/regions are currently not included. 
 
 ## Display gateway members
 
@@ -80,6 +77,20 @@ Use **Search** to find gateway clusters and see their details. You can search fo
 
 > [!div class="mx-imgBorder"] 
 > ![Search](media/manage-search.png "Search")
+
+## Manage gateways by region
+
+Select the region drop-down to see the list of gateway regions. When you select one of the regions, you'll see a list of gateways installed in that region. You can manage users or view gateway members for these gateways. By default, you'll see gateways within your tenant’s default region.
+
+> [!div class="mx-imgBorder"] 
+> ![Manage by gateway region](media/manage-gateway-by-region.png "Manage by gateway region")
+
+## Filter by gateway type
+
+Select the gateway type drop-down to filter by gateway type. By default, you'll see all data gateways running in standard mode. Use the filter to see data gateways in personal mode or all gateways. For more information, see [Types of gateways](https://docs.microsoft.com/power-bi/service-gateway-onprem#types-of-gateways).
+
+> [!div class="mx-imgBorder"] 
+> ![Filter by type](media/filter-by-type.png "Filter by type")
 
 ## Manage installers
 
