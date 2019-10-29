@@ -15,7 +15,7 @@ ms.collection: powervirtualagents
 
 
 
-# Add actions to your bot using Microsoft Power Automate 
+# Add actions to a bot using Microsoft Power Automate 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -111,7 +111,7 @@ Your flow will be saved to My flows tab on Microsoft Automate portal:
 
 
 
-## Add your flow to Solutions tab on Microsoft Automate portal
+## Add a flow to Solutions tab on Microsoft Automate portal
 
 To ensure your flow can be used with bots, it must be moved from My Flows tab into Solutions tab on Microsoft Automate portal. 
 
@@ -144,7 +144,7 @@ You can now see this flow on the list of available actions when you use Call an 
 ![New flow shows up in Action picker](media/FlowInActionPicker.jpg)
 
 
-## Modify your flow on Microsoft Automate portal
+## Modify a flow on Microsoft Automate portal
 
 You can rename and modify your flow on Microosft Automate Portal. For example, the flow we have just created using the template can be updated to provide a weather forecast when called from a bot.
 
@@ -235,8 +235,7 @@ HTTP Response Body JSON Schema (under advanced options):
     "type": "object",
     "properties": {
         "day_summary": {
-            "type": "string"
-        },
+            "type": "string"        },
         "location": {
             "type": "string"
         },
@@ -249,20 +248,22 @@ HTTP Response Body JSON Schema (under advanced options):
 This flow is you ready to be used in with the bots.
 
 
-## Call your flow as an Action from a bot Topic
+## Call Microsoft Automate flow as an Action from a bot Topic
 
-You can call this Micrsosft Automate flow from a bot Topic. You can pass variables to this flow and receive flow outputs that can be used in a bot Topic Dialog.
+You can call this Micrsosft Automate flow from a bot Topic using Call an action node. You can pass variables to this flow and receive flow outputs that can be used in a Dialog.
 
-To create a new Topic, go your Virtual Agent Editor and select Topics tab. Then, select New topic options and name your new Topic Get weathee. Add a few trigger phrases for your new Topic:
+To create a new Topic, go your Virtual Agent Editor and select Topics tab. Create a new Topic and give it name Get weather. Add a few trigger phrases for your new Topic:
 
 •	will it rain
+
 •	today’s forecast
+
 •	get weather
+
 •	what’s the weather
 
 
 ![Create a new Topic](media/CreateTopic.jpg)
-
 
 
 To create a Dialog for your Topic, click on Go to authoring canvas and use Ask a question node to have the bot ask users for the City (String) and Zipcode (Number) inputs:
@@ -272,26 +273,30 @@ To create a Dialog for your Topic, click on Go to authoring canvas and use Ask a
 
 
 
-Next, use Call an action option to call Get weather forecast flow you have created in the previous steps:
+Next, use Call an action option to create an Action node to call Get weather forecast flow:
 
 ![Call action](media/TopicCallActionWeather.jpg)
 
 
-Use City (Var1) and Zipcode (Var2) parameters as inputs for this flow, then add Show a message node to display weather forecast data using flow’s outputs:
+Use City (Var1) and Zipcode (Var2) parameters as inputs for this flow, and add Show a message node to display weather forecast data using flow’s outputs:
 
 
 ![Call action](media/TopicDisplayWeather.jpg)
 
 
-Press a Save button to save your Dialog. You new Topic that calls Microsoft Automate flow is now ready for testing.
+Press a Save button to save your Dialog. You new Topic that uses a Microsoft Automate flow to lookup a weaher forecast for a user is now ready for testing.
 
 
 
 
-## To test the flow
-1. In the **Test bot** pane, select **Start over with latest conversation**. Then specify a trigger phrase for the topic that contains the flow.
+## Test your Dailog
 
-2. Enter your email address at the prompt.
+In the **Test bot** pane, start a conversation with the bot by  typing in a trigger phrase for the topic that contains the flow.
+
+Enter your City and Zipcpde at the prompt and todays' weather foreast from MSN weather:
+
+![Test Dialog](media/TopicTestDialog.jpg)
+
 
     The bot displays the email address to the customer to confirm that it will send a message to that address and stores the message specified in the flow in the **(x) message** variable.
 
