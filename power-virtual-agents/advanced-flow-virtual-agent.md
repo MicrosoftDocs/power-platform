@@ -23,7 +23,7 @@ ms.collection: powervirtualagents
 ## Create a new flow from Power Virtual Agents 
 You can enable your bot to perform an action by calling a Microsoft Automate. The flow that can be called from a Dialog must be in the same Common Data Service environment as your bot. To create a flow for the bot, select Call an action node and use Create a flow option:
 
- ![Create a new Microsoft Automate flow](media/FlowInActionPicker.jpg)
+ ![Create a new Microsoft Automate flow](media/UseCreateFlowOption.jpg)
 
 
 Using Create a flow option will open a starter flow template in Microsoft Automate portal in a separate tab. The Microsoft Automate portal will automatically open in the same environment as the bot using the same user credentials:
@@ -53,7 +53,6 @@ This example in the template shows how to specify a flow to accept 2 input param
 
 HTTP Request Body JSON Schema:
 
-
 {
     "type": "object",
     "properties": {
@@ -67,7 +66,7 @@ HTTP Request Body JSON Schema:
 }
 
 
-An HTTP Response action must be used to return outputs to the bot. This template provides an example on how to returns 2 output parameters to the bot, a String and a Number:
+An HTTP Response action must be used to return outputs to the bot. This template provides an example on how to return 2 output parameters to the bot, a String and a Number:
 
 ![Microsoft Automate flow template outputs](media/FlowHttpResponseOutputs.jpg)
 
@@ -76,6 +75,7 @@ Note that both Body and Response Body JSON Schema sections must be filled out in
 
 HTTP Response Body:
 ![Microsoft Automate flow template outputs - Body](media/Body.jpg)
+
 
 HTTP Response Body JSON Schema (under advanced options)
 ![Microsoft Automate flow template outputs - Body Schema](media/HttpResponseBodySchema.jpg)
