@@ -117,7 +117,6 @@ To ensure your flow can be used with bots, it must be moved from My Flows tab in
 
 Go to Solutions tab on Microsoft Automate portal to see what solutions are already available to you. You can use any of the existing solutions, or you can create a new solution for your flows.
 
-
 To create a new solution, click on New solution button:
 
 ![Create a solution](media/NewSolution.jpg)
@@ -137,7 +136,7 @@ In Add existing flow screen, select Outside of solutions tab and select your flo
 
 ![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
 
-
+## Update your Microsoft Automate flow
 This flow will be moved from My Flows into a solution and is now ready to be used in a bot. 
 
 You can now see this flow on the list of available actions when you use Call an action node in the Dialog editor:
@@ -145,6 +144,60 @@ You can now see this flow on the list of available actions when you use Call an 
 ![New flow shows up in Action picker](media/FlowInActionPicker.jpg)
 
 
+## Update your Microsoft Automate flow
+
+You can update this flow according to your scenarios. For example, we can update the flow we have just created using the template to provide a weather forecast when called from a bot.
+
+To update a flow, go to Solutions tab on Microsoft Automate portal to oipen your flow solution and use the select this flow’s Edit menu option:
+
+![Open your flow for Editing](media/EditFlow.jpg)
+
+
+The flow will open in editing experience where you can rename and update a flow. Rename your flow to Get weather forecast and add the following flow input parameters to HTTP Request trigger:
+
+•	City (String)
+
+•	Zipcode (Number)
+
+
+![Open your flow for Editing](media/RenameFlow.jpg)
+
+
+Request Body JSON Schema:
+
+{
+    "type": "object",
+    "properties": {
+        "City": {
+            "type": "string"
+        },
+        "Zipcode": {
+            "type": "number"
+        }
+    }
+}
+
+
+Choose Add an action to create a new action below HTTP Request:
+
+![Add flow action](media/AddAction.jpg)
+
+
+Type in MSN weather in the search box and choose Get forecast for today action from the list:
+
+![Add Get forecast action](media/AddMSNWeather.jpg)
+
+
+Once the action is selected, an MSN Weather Connector is added. Add flow inputs City and Zipcode as parameters for Location field in MSN Weather Connector. 
+
+Use Add dynamic content option and select City and Zipcode from the list:
+
+![Add Dynamic variables](media/AddDynamicVariables.jpg)
+
+
+Delete both Initialize Variable nodes using Delete option – they are not needed for Get weather forecast flow:
+
+![Add Dynamic variables](media/DeleteVariables.jpg)
 
 ## Use your flow in a bot
 
