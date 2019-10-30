@@ -82,3 +82,5 @@ Here are some known errors.
 
 For errors not shown here, please reach out to your dedicated Microsoft support contact.
 -->
+
+[!INCLUDE [handoff-known-limitations](includes/handoff-known-limitations.md)]

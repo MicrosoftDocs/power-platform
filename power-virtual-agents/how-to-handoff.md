@@ -90,8 +90,5 @@ A customer may go through several topics prior to escalating. Power Virtual Agen
 
 If there are topics with similarly named context variables, Power Virtual Agents promotes the most recently defined topic variable.
 
-## Known limitations
-| Limitation | Mitigation |
-| :--------- | :--------- |
-| Support for hand-off to a live agent across multiple channels | Each publication channel (Teams, Facebook, web, and so on) handles hand-off in their own unique way. The Omnichannel for Customer Service hand-off experience must leverage an engagement hub that supports Omnichannel for Customer Service. |
+
 
