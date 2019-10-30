@@ -20,7 +20,7 @@ productDirectory:
     # Card
     - title: Power BI
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: /dynamics365/images/PowerBI_Mark_Yellow.svg
+      imageSrc: media/PowerBI_Mark_Yellow.svg
       links:
         - url: https://docs.microsoft.com/power-bi/
           text: Documentation
@@ -28,7 +28,7 @@ productDirectory:
           text: Learn Power BI
     # Card
     - title: PowerApps
-      imageSrc: /dynamics365/images/PowerApps_Mark.svg
+      imageSrc: media/PowerApps_Mark.svg
       links:
         - url: https://docs.microsoft.com/powerapps
           text: Documentation
@@ -36,7 +36,7 @@ productDirectory:
           text: Learn PowerApps
     # Card
     - title: Microsoft Flow
-      imageSrc: /dynamics365/images/Flow_Mark.svg
+      imageSrc: media/Flow_Mark.svg
       links:
         - url: https://docs.microsoft.com/flow/
           text: Documentation
