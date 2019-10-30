@@ -50,8 +50,8 @@ additionalContent:
       items:
         # Card
         - title: Common Data Service
-          summary: "Powerful data service and app platform, built into PowerApps, to quickly create enterprise-grade apps"
-          url: /dynamics365/index
+          summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
+          url: https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro
         # Card
         - title: AI Builder
           summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
@@ -60,6 +60,8 @@ additionalContent:
         - title: Common Data Model
           summary: "Unify data across all your business processes and enable interoperability among apps"
           url: https://docs.microsoft.com/common-data-model/
+    - title: See also
+      items:
         # Card
         - title: Dynamics 365
           summary: "The next generation of CRM and ERP applications"
