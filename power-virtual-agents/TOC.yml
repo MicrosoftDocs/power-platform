@@ -36,9 +36,9 @@
      href: how-to-test-bot.md
    - name: Work with variables
      href: how-to-variables.md
-   - name: Hand off a bot conversation to a live agent
+   - name: Trigger hand off to a live human agent
      href: how-to-handoff.md
-   - name: Configure hand off with Omnichannel
+   - name: Configure hand off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
    - name: Add actions to your bot using Power Automate
      href: how-to-flow.md
