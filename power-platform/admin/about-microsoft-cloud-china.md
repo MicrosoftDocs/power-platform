@@ -55,7 +55,7 @@ Due to certain technological dependencies, the following features listed will no
 - [Company News Timeline]/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets.md) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
 - [Global Discovery Service API]/dynamics365/customer-engagement/developer/webapi/discover-url-organization-web-api.md) which programmatically enables customer applications to discover user organization (also known as environment) and find environments across regions will not be available.
 - The service health [Organization Insights](/dynamics365/customer-engagement/admin/use-organization-insights-solution-view-instance-metrics.md) feature will be unavailable.
-- [Portals]/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365.md) for the Common Data Services services will be unavailable.
+- [Portals]/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365.md) for the Common Data Service services will be unavailable.
 - [Dynamics 365 for phones and tablets]/dynamics365/customer-engagement/mobile-app/overview.md) will be unavailable.
 - The following Microsoft AppSource hosted solutions for the Common Data Service services will not be available:
   - [Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)
