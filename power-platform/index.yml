@@ -50,7 +50,7 @@ additionalContent:
       items:
         # Card
         - title: Common Data Service
-          summary: "Compliant and scalable data service and app platform that’s integrated into PowerApps"
+          summary: "Powerful data service and app platform, built into PowerApps, to quickly create enterprise-grade apps"
           url: /dynamics365/index
         # Card
         - title: AI Builder
