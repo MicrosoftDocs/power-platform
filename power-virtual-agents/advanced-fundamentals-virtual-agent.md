@@ -13,53 +13,24 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
-# H1 - Should be same as your title. There should only ever be one H1.
+# H1 - Fundamentals - Bots and topics recommendations and best practices
 
-Why would anyone want to do this thing or use this feature?
+Fundamentals - Bots and topics recommendations and best practices
 
-## H2
+## Accessibility
 
-Describe what this procedure will do and why someone would want to do it.
+Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot authoring canvas is built to be accessible from the get-go. 
 
+In general, using the authoring canvas follows standard navigation patterns. But for complex scenarios, we've build keyboard shortcuts specifically tailored to help users authoring content using keyboard navigation.
 
-### Use H3 underneath H2.
-  
+###  Routing anchors
+Press enter or space on a route anchor and to go into editing mode for that route. Once in the editing mode, you can tab to other node anchors. Once the desired anchor is selected, you can:
 
-For standards, go to the [OPS guide](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
+- Press ```Delete``` to delete the route, and make the target node of the route an orphan node if this route is the only route leading to that node
+- Press ```Escape``` to take the user out of tab mode and resume normal tabbing
+- Press ```Enter``` or ```Space``` on a different node to reconnect the route to the new node (same source node, new target node)
+- Press ```Tab``` to take you to the next viable location to drop this route
 
-Here are some quick references so you can copy and paste:
-
-![IMAGE ALT TEXT](media/IMAGENAME.png)
-
-[Link text](url/filename.md)
-
-[Link text](https://microsoft.com/filename)
-
->[!NOTE]
->Use a > on a new line for each line break. Notes are purple
-
->[!WARNING]
->Use a > on a new line for each line break. These are red.
-
->[!TIP]
->Use a > on a new line for each line break. These are green.
-
->[!IMPORTANT]
->Use a > on a new line for each line break. These are blue
-
->[!CAUTION]
->I dont know if this still exists.
-
-**Bold text**
-
-*Italic text*
- 
- <!-- comment -->
-
-
- Table head row | Second col | Third col
- ---|---|---
- Row text | Row text | Row text
-
-
-
+At any time, pressing these hotkeys on a route anchor will read out the properties of the route:
+- ```Alt + Shift + A``` will read out the source node
+- ```Alt + Shift + B``` will read out the target node
