@@ -1,12 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
+summary: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Microsoft Flow.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to deploy, customize, manage and use Microsoft Power Platform services and applications, which includes Power BI, PowerApps, and Microsoft Flow. Get documentation, sample code, tutorials, and more. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Microsoft Flow. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: dynamics-365-crossapp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: buck1ey #Required; your GitHub user alias, with correct capitalization.
