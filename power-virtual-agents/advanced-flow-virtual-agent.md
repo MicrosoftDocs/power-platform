@@ -20,7 +20,8 @@ ms.collection: powervirtualagents
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
-## Create a new flow from Power Virtual Agents Dialog Editor
+## Create a new flow from Power Virtual Agents Dialog Editor 
+
 You can enable your bot to perform an action by calling a Microsoft Automate. The flow that can be called from a Dialog must be in the same **Common Data Service environment** as your bot. To create a flow for the bot, select **Call an action** node and use **Create a flow** option:
 
 ![Create a new Microsoft Automate flow](media/UseCreateFlowOption.jpg)
@@ -55,6 +56,7 @@ This example in the template shows how to specify a flow to accept 2 input param
 
 **HTTP Request Body JSON Schema**:
 
+   ``` JSON
 {
     "type": "object",
     "properties": {
@@ -66,7 +68,7 @@ This example in the template shows how to specify a flow to accept 2 input param
         }
     }
 }
-
+ ```
 
 An **HTTP Response** action must be used to return outputs to the bot. This template provides an example on how to return 2 output parameters to the bot, a String and a Number:
 
@@ -85,6 +87,9 @@ Note that both **Body** and **Response Body JSON Schema** sections must be fille
 
 ![Microsoft Automate flow template outputs - Body Schema](media/HttpResponseBodySchema.jpg)
 
+
+   ``` JSON
+
 {
     "type": "object",
     "properties": {
@@ -96,7 +101,7 @@ Note that both **Body** and **Response Body JSON Schema** sections must be fille
         }
     }
 }
-
+```
 
 This template provides a fully functional Microsoft Automae flow that would accept 2 parameters, a Sring and a Number, and retun them to a bot as outputs. Press **Save** button to save your new flow:
 
@@ -170,6 +175,9 @@ Rename your flow to **Get weather forecast** and add the following flow input pa
 
 **Request Body JSON Schema**:
 
+
+   ``` JSON
+
 {
     "type": "object",
     "properties": {
@@ -182,7 +190,7 @@ Rename your flow to **Get weather forecast** and add the following flow input pa
     }
 }
 
-
+   ``` 
 
 Next, choose **Add an action** to create a new action below **HTTP Request**:
 
@@ -231,6 +239,7 @@ Add the following JSON code to **Response Body JSON Schema** and **Save** your c
 
 **HTTP Response Body JSON Schema** (under advanced options):
 
+   ``` JSON
 
 {
     "type": "object",
@@ -246,6 +255,8 @@ Add the following JSON code to **Response Body JSON Schema** and **Save** your c
     }
 }
 
+   ``` 
+   
 This flow is you ready to be used in with the bots.
 
 
