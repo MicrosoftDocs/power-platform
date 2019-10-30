@@ -210,7 +210,7 @@ A new **MSN Weather Connector** is added to the flow. Add flow inputs **City** a
 
 ![Pass flow's input parameters to MSN Weather connector as location](media/AddLocationForMSN.jpg)
 
-**
+
 Delete both **Initialize Variable** nodes using **Delete** option – they are not needed for **Get weather forecast** flow:
 
 
