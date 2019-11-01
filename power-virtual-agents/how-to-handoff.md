@@ -13,10 +13,8 @@ ms.collection: virtual-agent
 ms.custom: handoff
 ---
 
-# Trigger hand-off to a live human agent
+# Trigger hand-off to a live agent
 With Power Virtual Agents, you can hand off conversations to live agents seamlessly and contextually.
-<!--note from editor: Adding "human" to the title seems unnecessary and reads as somewhat distracting. Did you get feedback to add "human"?-->
-
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
