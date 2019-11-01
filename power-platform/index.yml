@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Microsoft Flow.
+summary: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Power Automate.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Microsoft Flow. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Power Automate. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: dynamics-365-crossapp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: buck1ey #Required; your GitHub user alias, with correct capitalization.
@@ -36,13 +36,13 @@ productDirectory:
         - url: https://docs.microsoft.com/en-us/learn/browse/?products=powerapps
           text: Learn PowerApps
     # Card
-    - title: Microsoft Flow
+    - title: Power Automate
       imageSrc: media/Flow_Mark.svg
       links:
         - url: https://docs.microsoft.com/flow/
           text: Documentation
         - url: https://docs.microsoft.com/en-us/learn/browse/?products=flow
-          text: Learn Microsoft Flow
+          text: Learn Power Automate
 
 additionalContent:
   # Supports up to 3 sections
