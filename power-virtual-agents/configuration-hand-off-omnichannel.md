@@ -21,7 +21,7 @@ When you hand off a conversation, you share the full history of the conversation
 For more information about hand off, and how to use hand-off within a bot conversation, see the [Using Transfer to agent node](how-to-handoff.md) topic.
 
 ## Pre-requisites
-* Product license: You need a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and [a product license Omnichannel for Customer service](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
+* Product license: You need a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and [a product license for Omnichannel for Customer service](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 * Role: You must be an [Omnichannel for Customer Service Administrator](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/administrator/add-users-assign-roles) in Omnichannel for Customer Service.
 * Azure Application ID: You will need an [application registered in Azure](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) prior to connecting to Omnichannel for Customer Service.
 
@@ -31,7 +31,7 @@ For more information about hand off, and how to use hand-off within a bot conver
 Sign in to the Power Virtual Agents instance you want to connect to Omnichannel for Customer Service.
 
 
-1. Select **Settings** then **Transfer to agent**.
+1. Select **Settings**, and then **Transfer to agent**.
     
     ![IMAGE SHOWING SETTINGS PANEL OPENED](media/handoff-settings.png)
 
@@ -41,9 +41,9 @@ Sign in to the Power Virtual Agents instance you want to connect to Omnichannel 
     ![IMAGE SHOWING OC TILE IN SETTINGS](media/handoff-oc-tile.png)
 
 
-1. Select **Next** to acknowledge the privacy policy. 
+1. To acknowledge the privacy policy, select **Next**. 
     >[!CAUTION]
-    >Ensure that you are adhere to [data sovereignty](data-location.md) laws when configuring this integration as your bot will store and send user information to your Omnichannel for Customer Service instance.
+    >Ensure that you adhere to [data sovereignty](data-location.md) laws when you configure this integration as your bot will store and send user information to your Omnichannel for Customer Service instance.
 
 1. Follow the steps to create or reuse an existing Azure application ID. Copy the *Application (client) ID* and paste it in the text box provided.
 
@@ -63,12 +63,15 @@ Sign in to the Power Virtual Agents instance you want to connect to Omnichannel 
 >Your bot must be in a published state for end-to-end capabilities to work as expected. Ensure that you have [published your bot](getting-started-deploy.md) prior to validating the integrated experience.
 
 ## Mitigations for known issues
+If you experience issues, see below for possible mitigations.
+<!--note from editor: We don't have headings without content underneath them, so I added a sentence. Feel free to make it better. 
+It's also worth asking if the info should go in a KB instead of product documentation. What you have below looks like it should go in a readme, but I'm not aware of one being done where you could add this. -->
 
-## Remove Omnichannel for Customer Service connection
-Once your bot has been connected to Omnichannel for Customer Service, you cannot remove the connection setting at this time. If you erroneously connected to the wrong instance or environment, you will need to create a new bot and try connecting to Omnichannel for Customer Service again.
+### Remove Omnichannel for Customer Service connection
+Once your bot has been connected to Omnichannel for Customer Service, you cannot remove the connection setting. If you erroneously connected to the wrong instance or environment, you will need to create a new bot and try connecting to Omnichannel for Customer Service again.
 
 ### Specific content doesn't appear in Omnichannel for Customer Service
-Some content may not show, such as emojis and certain types of notes or variables. If you encounter problems with the display of content, see the [Omnichannel for Customer Service documentation library for more details](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-readme).
+Some content may not show, such as emojis and certain types of notes or variables. If you encounter problems with the display of content, see the [Omnichannel for Customer Service documentation library](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-readme).
 
 
 <!--
