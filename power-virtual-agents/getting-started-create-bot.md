@@ -1,6 +1,6 @@
 ---
 title: "Create a bot"
-description: "Learn how to use the Power Virtual Agents to create a bot."
+description: "Learn how to use Power Virtual Agents to create a bot."
 ms.date: 06/19/2019
 ms.service:
   - "dynamics-365-ai"

@@ -34,7 +34,7 @@ Using Power Virtual Agents, you can:
 
 ## Highlights of Power Virtual Agents
 
-- **Get started in seconds**. Power Virtual Agents for Customer Service is a software-as-a-service (SaaS) offering. It allows you to easily sign up, create your bot, and embed it into your website with just a few clicks. There’s no infrastructure to maintain or complex systems to deploy. 
+- **Get started in seconds**. Power Virtual Agents is a software-as-a-service (SaaS) offering. It allows you to easily sign up, create your bot, and embed it into your website with just a few clicks. There’s no infrastructure to maintain or complex systems to deploy. 
 
 - **Empower your subject matter experts**. Using Power Virtual Agents, your customer service teams are in the driver's seat. Your SMEs can create bots quickly and easily using a **novel, intuitive, code-free graphical interface**, eliminating the need for AI expertise or teams of developers.
 

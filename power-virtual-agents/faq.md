@@ -232,13 +232,13 @@ Every bot author is automatically licensed to use Power Automate. No extra steps
 
 Make sure the flow is turned on (enabled) on the Power Automate portal. Flows that are turned off (disabled) on the Power Automate portal are visible when editing a bot and can be incorporated into actions. However, they will fail at run time until they are turned on in the Power Automate portal.
 
-### What are the response formats that the Power Virtual Agents accepts, especially in the message response provided by the Power Automate action?
+### What are the response formats that Power Virtual Agents accepts, especially in the message response provided by the Power Automate action?
 
 The Power Virtual Agents designer accepts only JSON object format in the message response. The JSON object can contain strings and numbers only. In the coming months, we will release a custom Power Automate connector that will make it easier to create flows using key/value pairs rather than requiring the use of JSON format. We do not support arrays as flow output for bots yet, but this feature is on the roadmap. 
 
 ### Can we call a third-party API from a flow?
 
-Yes, an existing API or another application can be called from a flow, and the results can be passed back to the Power Virtual Agents as flow output. Power Automate provides hundreds of connectors to enable you to connect to apps, data, and devices in the cloud. 
+Yes, an existing API or another application can be called from a flow, and the results can be passed back to Power Virtual Agents as flow output. Power Automate provides hundreds of connectors to enable you to connect to apps, data, and devices in the cloud. 
 
 Examples of popular connectors include Microsoft Common Data Service (CDS), Dynamics 365, Salesforce, Zendesk, ServiceNow, Office 365, Microsoft Teams, Slack, Facebook, Twitter, Dropbox, Mailchimp, Google services, and many more. Please refer to [Power Automate Connector documentation](https://docs.microsoft.com/connectors/) to see the full list of available Power Automate connectors.
 

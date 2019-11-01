@@ -30,15 +30,15 @@ landingContent:
             url: overview.md
       - linkListType: quickstart
         links:
-          - text: Quickstart
+          - text: Get up and running with Power Virtual Agents
             url: quickstart.md
       - linkListType: reference
         links:
           - text: Videos
             url: videos.md
-          - text: Frequently asked questions
+          - text: FAQ
             url: faq.md
-          - text: PowerVirtualAgent blog
+          - text: Power Virtual Agents blog
             url: https://cloudblogs.microsoft.com/dynamics365/it/product/virtual-agent-for-customer-service/
           - text: What's new and planned
             url: https://docs.microsoft.com/dynamics365-release-plan/2019wave2/artificial-intelligence/dynamics365-virtual-agent-for-customer-service/planned-features
