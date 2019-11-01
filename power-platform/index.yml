@@ -1,17 +1,18 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
+summary: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Power Automate.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to deploy, customize, manage and use Microsoft Power Platform services and applications. Get documentation, sample code, tutorials, and more. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Power Automate. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: dynamics-365-crossapp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: buck1ey #Required; your GitHub user alias, with correct capitalization.
   ms.author: buckg #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/01/2019 #Required; mm/dd/yyyy format.
+  ms.date: 10/29/2019 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 # productDirectory section (optional)
@@ -20,7 +21,7 @@ productDirectory:
     # Card
     - title: Power BI
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: /dynamics365/images/PowerBI_Mark_Yellow.svg
+      imageSrc: media/PowerBI_Mark_Yellow.svg
       links:
         - url: https://docs.microsoft.com/power-bi/
           text: Documentation
@@ -28,26 +29,30 @@ productDirectory:
           text: Learn Power BI
     # Card
     - title: PowerApps
-      imageSrc: /dynamics365/images/PowerApps_Mark.svg
+      imageSrc: media/PowerApps_Mark.svg
       links:
         - url: https://docs.microsoft.com/powerapps
           text: Documentation
         - url: https://docs.microsoft.com/en-us/learn/browse/?products=powerapps
           text: Learn PowerApps
     # Card
-    - title: Microsoft Flow
-      imageSrc: /dynamics365/images/Flow_Mark.svg
+    - title: Power Automate
+      imageSrc: media/Flow_Mark.svg
       links:
         - url: https://docs.microsoft.com/flow/
           text: Documentation
         - url: https://docs.microsoft.com/en-us/learn/browse/?products=flow
-          text: Learn Microsoft Flow
+          text: Learn Power Automate
 
 additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Related features
       items:
+        # Card
+        - title: Common Data Service
+          summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
+          url: https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro
         # Card
         - title: AI Builder
           summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
@@ -56,7 +61,13 @@ additionalContent:
         - title: Common Data Model
           summary: "Unify data across all your business processes and enable interoperability among apps"
           url: https://docs.microsoft.com/common-data-model/
+    - title: See also
+      items:
         # Card
         - title: Dynamics 365
           summary: "The next generation of CRM and ERP applications"
           url: /dynamics365/index
+        # Card
+        - title: Microsoft Azure
+          summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
+          url: https://docs.microsoft.com/en-us/azure
