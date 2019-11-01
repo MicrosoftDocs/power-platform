@@ -1,7 +1,7 @@
 ---
 title: "Trigger contextual hand-off to a human agent"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
-ms.date: 10/19/2019
+ms.date: 11/04/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -15,8 +15,10 @@ ms.custom: handoff
 
 # Trigger hand-off to a live human agent
 With Power Virtual Agents, you can hand off conversations to live agents seamlessly and contextually.
+<!--note from editor: Adding "human" to the title seems unnecessary and reads as somewhat distracting. Did you get feedback to add "human"?-->
 
-When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, can see the context of the prior conversation, and resume the conversation.
+
+When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
 For more information about how to configure hand-off with [Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-customer-service-guide), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
 
