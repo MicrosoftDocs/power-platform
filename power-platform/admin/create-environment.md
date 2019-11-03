@@ -132,7 +132,7 @@ To create an environment with a database, you need 1GB available database capaci
 
 4. Enter the language and currency settings.
 
-5. Set **model-driven apps in Dynamics 365** to **Yes**, and then select apps to include from the **Automatically deploy these apps** drop-down list.
+5. Set **Enable Dynamics 365 apps** to **Yes**, and then select apps to include from the **Automatically deploy these apps** list.
 
 6. Select **Save**.
 
