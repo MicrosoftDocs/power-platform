@@ -93,18 +93,18 @@ To create an environment with a database, you need 1GB available database capaci
    |---------|---------|
    |Language     | The default language for this environment.        |
    |Currency     | The base currency used for reporting.         |
-   |Enable model-driven apps in Dynamics 365    | Select **Yes** and make a selection to automatically deploy apps such as Sales and Customer Service.      |
-   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for Enable model-driven apps in Dynamics 365 for this setting to appear.        |
+   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. See the next section, **Create an environment and add model-driven apps**.    |
+   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
    > ![](./media/new-environment-page2.png "Create new environment settings")
 
 ## Create an environment and add model-driven apps
-When you create an environment with a database, you can add model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.
+When you create an environment with a database, you can add model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) to your environment.
 
 > [!NOTE]
-> Currently, apps can only be enabled for Production environments. You can create trials at [https://trials.dynamics.com](https://trials.dynamics.com/).
+> Currently, Dynamics 365 apps can only be enabled for Production environments. You can create Dynamics 365 app trials at <https://trials.dynamics.com>.
 
 ### Prerequisites
 To create an environment with a database, you need 1GB available database capacity.
