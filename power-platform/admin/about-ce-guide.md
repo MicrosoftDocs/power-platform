@@ -21,7 +21,7 @@ Administrators can use the Dynamics 365 admin center (<https://port.crm.dynamics
 
 These model-driven apps were previously referred to as Dynamics 365 for Customer Engagement apps. However, effective October 2019, the *Dynamics 365 for Customer Engagement* SKU/license plan is no longer available for "online" customers. More information: [Dynamics 365 Licensing Update](https://docs.microsoft.com/dynamics365/licensing/update)
 
-The admin content is available at [Administer model-driven apps in Dynamics 365](https://docs.microsoft.com/dynamics365/admin/admin-guide).
+The help content for Dynamics 365 admin center is available at [Administer model-driven apps in Dynamics 365](https://docs.microsoft.com/dynamics365/admin/admin-guide).
 
 The content from the old admin guide is transitioning to the Power Platform admin guide as settings and features migrate to the Power Platform Admin center. Until the move to the Power Platform Admin center is complete, you’ll still be able to manage settings through your apps as usual.
 

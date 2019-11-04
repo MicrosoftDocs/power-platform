@@ -1,6 +1,6 @@
 ---
 title: "Create custom topics for your bot"
-description: "Learn how to use Dynamics 365 Virtual Agent for Customer Service to create custom topics for your bot."
+description: "Learn how to use Power Virtual Agents to create custom topics for your bot."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-In Dynamics 365 Virtual Agent for Customer Service, a topic defines a conversation path with the bot for a specific customer intent. You specify a trigger phrase that prompts the bot to start the conversation. Then create a conversation path in Virtual Agent's conversation editor to lead customers to a resolution of their support issue.
+In Power Virtual Agents, a topic defines a conversation path with the bot for a specific customer intent. You specify a trigger phrase that prompts the bot to start the conversation. Then create a conversation path in Power Virtual Agents's conversation editor to lead customers to a resolution of their support issue.
 
 You can see how the conversation path works in practice by testing it in the **Test bot** pane and continue to fine-tune the topic until you are ready to deploy it.
 
@@ -25,11 +25,11 @@ You can see how the conversation path works in practice by testing it in the **T
 
    ![Open Topics page](media/open-topics.png)
 
-    The Topics page displays a list of your bot's current topics. Virtual Agent includes some built-in topics to get you started.
+    The Topics page displays a list of your bot's current topics. Power Virtual Agents includes some built-in topics to get you started.
 
    ![Built-in topics](media/template-topics.png)
 
-    Virtual Agent also includes several system topics that help you address common situations—a customer greeting, escalation to a live agent, the end of the conversation, a confirmed success, or a confirmed failure.
+    Power Virtual Agents also includes several system topics that help you address common situations—a customer greeting, escalation to a live agent, the end of the conversation, a confirmed success, or a confirmed failure.
 
 2. On the Topics page, select **New topic**.
 
@@ -50,7 +50,7 @@ You can see how the conversation path works in practice by testing it in the **T
 
    ![Edit conversation](media/edit-conversation.png)
 
-    Virtual Agent opens the topic in the conversation editor and displays the topic's trigger phrases. The conversation editor is where you define the conversation path between a customer and the bot.
+    Power Virtual Agents opens the topic in the conversation editor and displays the topic's trigger phrases. The conversation editor is where you define the conversation path between a customer and the bot.
 
    ![Open conversation](media/open-conversation.png)
 

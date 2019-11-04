@@ -1,6 +1,6 @@
 ---
 title: "Use analytics to improve your bot"
-description: "Learn how to use analytics to improve your virtual agent"
+description: "Learn how to use analytics to improve your Power Virtual Agents"
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-As you create and deploy your bot, you can use analytics to see how your bot is performing. Dynamics 365 Virtual Agent for Customer Service includes built-in dashboards, interactive charts, and visual filters that give you actionable insights into critical performance metrics, operational data, and emerging trends.
+As you create and deploy your bot, you can use analytics to see how your bot is performing. Power Virtual Agents includes built-in dashboards, interactive charts, and visual filters that give you actionable insights into critical performance metrics, operational data, and emerging trends.
 
 To view the analytics dashboards, select **Analytics** in the left pane to open the Analytics page.
 
@@ -68,7 +68,7 @@ Impact charts show you the topics that are having the greatest impact, both posi
 
 
 
-For details on Dynamics 365 Virtual Agent for Customer Service analytics, see the following topics:
+For details on Power Virtual Agents analytics, see the following topics:
 
 * [Analytics overview](analytics-overview.md)
 * [Summary page](analytics-summary.md)

@@ -12,7 +12,7 @@ manager: shellyha
 
 # Create a custom greeting for your bot
 
-A customer can start a conversation with a bot by entering any trigger phrase that starts a conversation defined by a topic. Sometimes the customer starts a conversation with a simple greeting, such as *Hello* or *Good morning*. To help you handle this common situation, Dynamics 365 Virtual Agent for Customer Service automatically includes a built-in Greeting system topic when you create a bot, which you can customize.
+A customer can start a conversation with a bot by entering any trigger phrase that starts a conversation defined by a topic. Sometimes the customer starts a conversation with a simple greeting, such as *Hello* or *Good morning*. To help you handle this common situation, Power Virtual Agents automatically includes a built-in Greeting system topic when you create a bot, which you can customize.
 
 Customizing your greeting gives you an opportunity to tell the customer that they are interacting with a bot rather than a human agent and to tailor the bot to reflect your organization's personality.
 

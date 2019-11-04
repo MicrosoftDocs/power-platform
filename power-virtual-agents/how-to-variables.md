@@ -1,6 +1,6 @@
 ---
 title: "Work with variables"
-description: "Learn how to work with Dynamics 365 Virtual Agent for Customer Service variables."
+description: "Learn how to work with Power Virtual Agents variables."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
@@ -18,7 +18,7 @@ Variables let you save responses from your customers in a conversation with a bo
 
 You can use variables to create logical expressions that dynamically route the customer down different conversation paths.
 
-Dynamics 365 Virtual Agent for Customer Service supports four types of variables:
+Power Virtual Agents supports four types of variables:
 
 * String – A string of text that the customer enters.
 * Age – A positive number within the range of standard age.
@@ -39,4 +39,4 @@ Dynamics 365 Virtual Agent for Customer Service supports four types of variables
 
    ![Save variable](media/save-variable.png)
 
-Virtual Agent adds the variable to a customer's response and uses expressions to dynamically route the conversation path, letting you tailor the bot's response.
+Power Virtual Agents adds the variable to a customer's response and uses expressions to dynamically route the conversation path, letting you tailor the bot's response.
