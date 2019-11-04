@@ -112,7 +112,9 @@
       - name: Manage settings 
         items:
         - name: Common Data Service settings
-          href: admin-settings.md        
+          href: admin-settings.md      
+        - name: Environment database settings
+          href: environment-database-settings.md     
         - name: Product settings
           items:
           - name: Behavior 
@@ -303,7 +305,7 @@
         href: database-security.md
         items: 
         - name: Control user access to environments
-          href: control-user-access.md     
+          href: control-user-access.md  
         - name: Data loss prevention policies 
           href: wp-data-loss-prevention.md
         - name: Create a DLP policy
@@ -425,8 +427,8 @@
         href: import-data-all-record-types.md 
       - name: Template for data import
         href: download-template-data-import.md
-      #- name: Merge data
-      #  href: merge-data.md
+      - name: Merge data
+        href: merge-data.md
       - name: Detect duplicate data
         href: detect-duplicate-data.md 
       - name: Duplicate detection rules
