@@ -16,7 +16,7 @@ manager: shellyha
 
 ## Power Virtual Agents demo
 
-Take a look at the Power Virtual Agents for Customer Service capabilities that can help you engage customers, empower employees, optimize operations, and transform products. 
+Take a look at the Power Virtual Agents capabilities that can help you engage customers, empower employees, optimize operations, and transform products. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pk-AVqQPUg8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
