@@ -10,7 +10,7 @@
   items:
    - name: Create a bot
      href: getting-started-create-bot.md
-   - name: Create a PowerApps environment
+   - name: Create a Power Apps environment
      href: getting-started-new-environment.md
    - name: Overview of Power Virtual Agents pages
      href: getting-started-bot-designer.md
@@ -40,7 +40,7 @@
      href: how-to-handoff.md
    - name: Configure hand off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
-   - name: Add actions to your bot using Power Automate
+   - name: Add actions (flows) to your bot using Power Automate
      href: how-to-flow.md
    - name: Use a Microsoft Bot Framework bot with a Power Virtual Agents bot
      href: how-to-use-dispatcher.md

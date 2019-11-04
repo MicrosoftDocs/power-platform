@@ -27,9 +27,9 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
    ![Sign in to powerapps.com](media/export-1.png)
 
-2. After signing in, you are redirected to the PowerApps portal.
+2. After signing in, you are redirected to the Power Apps portal.
 
-   ![PowerApps portal](media/export-2.png)
+   ![Power Apps portal](media/export-2.png)
 
 3. In the left pane, expand the **Data** node. Select **Entities** and select **Export data**.
 
