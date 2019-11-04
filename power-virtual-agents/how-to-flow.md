@@ -1,6 +1,6 @@
 ---
 title: "Add actions to your bot using Power Automate"
-description: "Learn how to add actions to your bot using Power Automate."
+description: "Learn how to add actions (flows) to your bot using Power Automate."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
@@ -14,17 +14,17 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can enable your bot to perform an action by invoking a flow. Use a flow that shares the same Common Data Service environment as the bot. First, create a Microsoft PowerApps environment, and then create your flow. Once you have created the flow, you can create a bot that uses an action to invoke the flow.
+You can enable your bot to perform an action by invoking a flow. Use a flow that shares the same Common Data Service environment as the bot. First, create a Microsoft Power Apps environment, and then create your flow. Once you have created the flow, you can create a bot that uses an action to invoke the flow.
 
-## To create a PowerApps environment
+## To create a Power Apps environment
 
-1. If you have not already created a PowerApps environment, create one. You must select an environment when you create your bot.
+1. If you have not already created a Power Apps environment, create one. You must select an environment when you create your bot.
 
-    For more information, see [Creating a PowerApps environment](getting-started-new-environment.md).
+    For more information, see [Creating a Power Apps environment](getting-started-new-environment.md).
 
-2. If you do not already have a Power Automate environment, sign in to the admin portal by entering [https://flow.microsoft.com]( https://flow.microsoft.com) in your browser. Select the icon for your account in the upper-right corner of the screen, and then select your PowerApps environment from the list.
+2. If you do not already have a Power Automate environment, sign in to the admin portal by entering [https://flow.microsoft.com]( https://flow.microsoft.com) in your browser. Select the icon for your account in the upper-right corner of the screen, and then select your Power Apps environment from the list.
 
-3. Verify that the PowerApps environment database was created correctly. Select **Solutions** in the left pane to display the **Solutions** page, and then verify that the Solutions list includes **Common Data Service Default Solution**.
+3. Verify that the Power Apps environment database was created correctly. Select **Solutions** in the left pane to display the **Solutions** page, and then verify that the Solutions list includes **Common Data Service Default Solution**.
 
    ![Verify database](media/verify-database.png)
    

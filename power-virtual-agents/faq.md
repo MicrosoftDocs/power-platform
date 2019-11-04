@@ -18,7 +18,7 @@ manager: shellyha
 
 ### Customers from outside of the United States signing up for Power Virtual Agents
 
-Preview is currently only supported in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with the region set to a supported data location before you can create your bot. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
+Preview is currently only supported in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with the region set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Creating a Power Apps environment](getting-started-new-environment.md).
 
 
 ### Issues with Power Automate solutions tab
@@ -91,17 +91,17 @@ It may take up to 15 minutes to create the first bot within a tenant. While the 
 ### Why do I get an error that I do not have permissions to any environments?
 
 It is possible that you do not have read/write access to any environments. In this case, you will see the error: “You do not have permissions to any environments. Please get access from an administrator.” 
-To resolve this issue, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md) to create a new environment. Use that environment to create your bot.
+To resolve this issue, follow the steps in [To create a new Power Apps environment](getting-started-new-environment.md) to create a new environment. Use that environment to create your bot.
 
 ### Why do I get "An unexpected server error occurred"?
 
-This error indicates an issue with your current environment. If refreshing your browser doesn't resolve the issue, follow the link to [create a new PowerApps environment](getting-started-new-environment.md). Use that environment to create your bot.
+This error indicates an issue with your current environment. If refreshing your browser doesn't resolve the issue, follow the link to [create a new Power Apps environment](getting-started-new-environment.md). Use that environment to create your bot.
 
-### The PowerApps environment I created does not show up in the drop-down menu of Power Virtual Agents. Why?
+### The Power Apps environment I created does not show up in the drop-down menu of Power Virtual Agents. Why?
 
 Your environment might not show up in the drop-down menu due to the following reasons:
  - The environment doesn't have a database created. To resolve this, go to [admin.powerapps.com](https://admin.powerapps.com), and create a database in your environment.
- - The environment's region is set to something other than a [supported region](data-location.md). To resolve this, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md), and create an environment in a supported region.
+ - The environment's region is set to something other than a [supported region](data-location.md). To resolve this, follow the steps in [To create a new Power Apps environment](getting-started-new-environment.md), and create an environment in a supported region.
  - The environment didn't finish setting up. To resolve this, retry in a few minutes
 
 ### Why am I getting a message or email about an environment that is going to expire?
@@ -111,7 +111,7 @@ If you have created your own environment and selected **Trial** as the environme
 When using a trial environment and you want to retain the bots longer than 30 days, convert the trial environment to a production environment. [Learn how to convert a trial environment to a production environment](https://go.microsoft.com/fwlink/?linkid=2048531).
 
 To convert to a production environment, the following criteria must be met:
-1. You are eligible to use a suitable PowerApps plan that enables you to create production environments.
+1. You are eligible to use a suitable Power Apps plan that enables you to create production environments.
 2. You need to have available production quota. There is a fixed number of production environments you can create with your plan.
 
 ## Authoring
@@ -223,7 +223,7 @@ Every bot author is automatically licensed to use Power Automate. No extra steps
 ### I created some new flows for actions using Power Automate, but they are not visible in Power Virtual Agents. Why?
 
 - The environment you are using to create your flows must be the same as the environment you are using for the bot.   
-- Make sure to [create your flows in Solutions](https://docs.microsoft.com/flow/overview-solution-flows). The bot can't see the flows created in the **My Flows** tab. 
+- Make sure to [create your flows in Solutions](https://docs.microsoft.com/flow/overview-solution-flows). The bot can't see the flows created in the **My flows** tab. 
 - Bots can only invoke flows that have HTTP Request interfaces, so you need to select the right trigger for your flow. Select **When Http Request is received** from the trigger list in Power Automate, and make sure you are using the **POST** method under advanced options in the trigger (or leave the method field empty, which is how it is by default):
 ![POST method in HTTP Request](media/flow-http-post-method.png)
 

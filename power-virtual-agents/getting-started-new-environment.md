@@ -1,6 +1,6 @@
 ---
-title: "Create a PowerApps environment"
-description: "Learn how to create a PowerApps environment for Power Virtual Agents."
+title: "Create a Power Apps environment"
+description: "Learn how to create a Power Apps environment for Power Virtual Agents."
 ms.date: 07/01/2019
 ms.service:
   - "dynamics-365-ai"
@@ -10,16 +10,16 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Create a PowerApps environment
+# Create a Power Apps environment
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-When you create a bot, you must select a PowerApps environment for the bot. You can use an existing environment or create one.
+When you create a bot, you must select a Power Apps environment for the bot. You can use an existing environment or create one.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YL14y3jQbBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## To create a new PowerApps environment
+## To create a new Power Apps environment
 
 1. Go to [https://admin.powerapps.com](https://admin.powerapps.com) and sign in using your work or school account.
 
@@ -33,7 +33,7 @@ When you create a bot, you must select a PowerApps environment for the bot. You 
 
    ![Create environment](media/create-environment-2.png)
 
-   PowerApps creates the environment and displays a prompt asking if you want to create a database.
+   Power Apps creates the environment and displays a prompt asking if you want to create a database.
 
 3. Select **Create database** to display the **Create a database for this environment** screen.
 
@@ -62,5 +62,5 @@ When using a trial environment and you want to retain the bots longer than 30 da
 
 To convert to a production environment, the following criteria must be met:
 
-1. You are eligible to use a suitable PowerApps plan that enables you to create production environments.
+1. You are eligible to use a suitable Power Apps plan that enables you to create production environments.
 2. You need to have available production quota. There is a fixed number of production environments you can create with your plan.
