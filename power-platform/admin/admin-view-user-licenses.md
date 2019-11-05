@@ -16,7 +16,7 @@ search.app:
 ---
 
 # Download a list of active users in your tenant
-If you're a 365 Global admin or Azure Active Directory Tenant admin, you can download a list of active users in your tenant, so you can see not only who's accessed PowerApps, Microsoft Power Automate, or both, but also the licenses assigned to those users.
+If you're a 365 Global admin or Azure Active Directory Tenant admin, you can download a list of active users in your tenant, so you can see not only who's accessed PowerApps, Power Automate, or both, but also the licenses assigned to those users.
 
 In this topics, you'll learn how to download a list of active users to a .csv file, and then view that list in Excel.
 

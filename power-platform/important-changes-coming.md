@@ -1,5 +1,5 @@
 ---
-title: "Important changes (deprecations) coming in PowerApps, Microsoft Power Automate and model-driven apps in Dynamics 365"
+title: "Important changes (deprecations) coming in PowerApps, Power Automate and model-driven apps in Dynamics 365"
 ms.date: "10/23/2019"
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
@@ -13,7 +13,7 @@ ms.author: kvivek
 manager: annbe
 ---
 
-Important changes (deprecations) coming in PowerApps, Microsoft Power Automate, and model-driven apps in Dynamics 365
+Important changes (deprecations) coming in PowerApps, Power Automate, and model-driven apps in Dynamics 365
 ============================================================
 
 The announcements and deprecations described in this topic apply to PowerApps, Power Automate, and model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).

@@ -1,6 +1,6 @@
 ---
-title: "Enable Microsoft Power Automate integration to automate processes  | MicrosoftDocs"
-description: Enable Microsoft Power Automate integration to automate processes
+title: "Enable Power Automate integration to automate processes  | MicrosoftDocs"
+description: Enable Power Automate integration to automate processes
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -23,7 +23,7 @@ Microsoft Power Automate lets you create automated processes between your favori
 
 ![Lead record with Power Automate integration](media/flow-integration.png)
 
-Environments use the same environment in which the environment resides. For more information about Power Automate environments, see [Using environments within Microsoft Power Automate](https://flow.microsoft.com/documentation/environments-overview-admin/)
+Environments use the same environment in which the environment resides. For more information about Power Automate environments, see [Using environments within Power Automate](https://flow.microsoft.com/documentation/environments-overview-admin/)
   
 The Power Automate integration feature is not available in the following service or geographic regions.
 - Microsoft PowerApps US Government

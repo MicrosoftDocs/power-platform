@@ -48,10 +48,10 @@ To manage an environment in the PowerApps Admin center, you must have one of the
 
 * The Global Administrator role of your Azure AD or Office 365 tenant.
 
-You also need either a PowerApps plan or Microsoft Power Automate plan to access the admin center. For more information, see the [PowerApps pricing page][3].
+You also need either a PowerApps plan or Power Automate plan to access the admin center. For more information, see the [PowerApps pricing page][3].
 
 > [!IMPORTANT]
-> Any changes that you make in PowerApps Admin center affect the [Microsoft Power Automate admin center][4] and vice versa.
+> Any changes that you make in PowerApps Admin center affect the [Power Automate admin center][4] and vice versa.
 
 ## Create an environment
 For instructions on how to create an environment, see [Create an environment](create-environment-powerapps.md).
