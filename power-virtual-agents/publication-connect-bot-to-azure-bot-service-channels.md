@@ -32,7 +32,7 @@ If your goal is to connect to a custom web-based or native app, your developers 
 
 ## Prerequisites
 
-- An [Azure Bot Service subscription](https://azure.microsoft.com/en-us/services/bot-service/)
+- An [Azure Bot Service subscription](https://azure.microsoft.com/services/bot-service/)
 - An Azure Bot Service bot using V4 SDK.
 - [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1
 - Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine)
@@ -47,8 +47,8 @@ Code snippets used in this document are from:
 ### References
 The instructions in this document reference the following:
 - [Deploy your bot to Azure](https://aka.ms/azuredeployment) for instructions to deploy the Azure Bot Service bot
-- [Azure Bot Service Channels](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) to connect to any Azure Bot Service-supported channels
-- [Azure Bot Service debug with the emulator](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0&tabs=csharp) for instructions to debug the Azure Bot Service bot
+- [Azure Bot Service Channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) to connect to any Azure Bot Service-supported channels
+- [Azure Bot Service debug with the emulator](/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0&tabs=csharp) for instructions to debug the Azure Bot Service bot
 
 ## Create or utilize an existing Azure Bot Service bot
 You need to have an Azure Bot Service bot that can relay conversations between your Power Virtual Agents bot and the Azure Bot Service channels.
@@ -153,7 +153,7 @@ The following example uses samples from the [Relay bot sample code](https://gith
 
 4. To continue on an existing conversation, upon a new external Azure Bot Service channel message received, retrieve the existing conversation from the mapping table, relay the external conversation activity to your Power Virtual Agents bot and get a response.
 
-    The following sample shows relaying conversation by overriding [ActivityHandler.OnMessageActivityAsync((ITurnContext<IMessageActivity>, CancellationToken) method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.activityhandler.onmessageactivityasync?view=botbuilder-dotnet-stable)
+    The following sample shows relaying conversation by overriding [ActivityHandler.OnMessageActivityAsync((ITurnContext<IMessageActivity>, CancellationToken) method](/dotnet/api/microsoft.bot.builder.activityhandler.onmessageactivityasync?view=botbuilder-dotnet-stable)
 
     ```C#
     // Invoked when a message activity is received from the user

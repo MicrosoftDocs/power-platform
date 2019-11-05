@@ -75,7 +75,7 @@ Different channels have different end-user experiences. The following table show
  Experience | Website | Microsoft Teams | Facebook
  ---|---|---|---
  Customer satisfaction survey | Adaptive card | Text-only | Text-only
- Suggested actions | Supported | Supported up to 6, learn more at [Microsoft Teams hero card](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | Supported up to 13, learn more at [Facebook quick replies](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/)
+ Suggested actions | Supported | Supported up to 6, learn more at [Microsoft Teams hero card](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | Supported up to 13, learn more at [Facebook quick replies](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/)
  Markdown | Supported | Supported | Partially supported, learn more at [Facebook markdown documentation](https://www.facebook.com/help/147348452522644?helpref=related)
  Welcome message | Supported | Supported | Not supported
 

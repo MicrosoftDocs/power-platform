@@ -22,7 +22,7 @@ You can also delete the bot from Teams when you no longer want people to interac
 
 >[!NOTE]
 >By adding the bot to Teams, some of your data, such as bot content and end user chat content, will be shared with Teams (meaning that your data will flow outside of your [organization’s compliance and geographic or regional boundaries](data-location.md).
->For more information, see the [Microsoft Teams app privacy policy](https://docs.microsoft.com/en-us/MicrosoftTeams/app-permissions).
+>For more information, see the [Microsoft Teams app privacy policy](/MicrosoftTeams/app-permissions).
 
 **Add your bot to Teams:**
 
@@ -77,7 +77,7 @@ In addition to directly installing the Microsoft Teams app package, you can use 
 
 
 ## Known limitation
-- The icon and name of your bot on Teams is not customizable by Microsoft Teams App Studio when sideloaded and published through the Microsoft Teams Tenant Apps Catalog. The Microsoft Teams App Studio bot icon and name customization will be applied to bots that are published through AppSource. Learn more at [Publishing checklist](https://docs.microsoft.com/en-us/microsoftteams/platform/publishing/office-store-checklist).
-- Teams has [rate limiting](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you may want to keep your bot content concise for bots that are added to Teams.
-- Currently, if your bot supports end-user authentication, the user will not be able to explicitly sign out. This will fail the Microsoft Teams Appsource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/publishing/apps-publish) and [Appsource Validation Policy](https://docs.microsoft.com/en-us/office/dev/store/validation-policies).
+- The icon and name of your bot on Teams is not customizable by Microsoft Teams App Studio when sideloaded and published through the Microsoft Teams Tenant Apps Catalog. The Microsoft Teams App Studio bot icon and name customization will be applied to bots that are published through AppSource. Learn more at [Publishing checklist](/microsoftteams/platform/publishing/office-store-checklist).
+- Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you may want to keep your bot content concise for bots that are added to Teams.
+- Currently, if your bot supports end-user authentication, the user will not be able to explicitly sign out. This will fail the Microsoft Teams Appsource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](/microsoftteams/platform/publishing/apps-publish) and [Appsource Validation Policy](/office/dev/store/validation-policies).
 - Removing the Teams publication channel may take a few minutes before the bot becomes unreachable by users on Teams.

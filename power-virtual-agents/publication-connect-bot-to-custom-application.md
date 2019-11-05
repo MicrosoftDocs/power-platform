@@ -58,8 +58,8 @@ Code snippets used in this document are from:
 
 ### References
 The instructions in this document reference the following:
-- [Bot Framework Direct Line API](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0)
-- [Direct Line Authentication](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens)
+- [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0)
+- [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens)
 - [Contextual variables available upon hand-off](advanced-hand-off-virtual-agent.md#contextual-variables-available-upon-hand-off)
 - [Microsfot Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
 
@@ -137,7 +137,7 @@ The response will be:
 
 
 ## Use Direct Line to communicate with the bot
-After retrieving the *Direct Line* token, you are ready to have a conversation with your Power Virtual Agents bot with Direct Line. Follow the instructions at [Bot Framework Direct Line API](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) to start a conversation and send and receive messages.
+After retrieving the *Direct Line* token, you are ready to have a conversation with your Power Virtual Agents bot with Direct Line. Follow the instructions at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) to start a conversation and send and receive messages.
 
 ### Sample code example
 The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to start a conversation and send and receive messages from a Power Virtual Agents bot.
@@ -186,7 +186,7 @@ The following example uses samples from the [Connector sample code](https://gith
     {
         // To get the first response set string watermark = null
         // More information about watermark is available at
-        // https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages?view=azure-bot-service-4.0
+        // https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages?view=azure-bot-service-4.0
         
         // response from bot is of type Microsoft.Bot.Connector.DirectLine.ActivitySet
         ActivitySet response = await directLineClient.Conversations.GetActivitiesAsync(conversationtId, watermark);
@@ -205,7 +205,7 @@ The following example uses samples from the [Connector sample code](https://gith
   ```
 
 ## Refresh Direct Line token
-You may need to add code to refresh the *Direct Line* token if your application has a lengthy conversation with the bot. The token expires but can be refreshed before it expires; learn more at [Direct Line Authentication](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens).
+You may need to add code to refresh the *Direct Line* token if your application has a lengthy conversation with the bot. The token expires but can be refreshed before it expires; learn more at [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens).
 
 ### Sample code example
 The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to refresh the token for an existing Power Virtual Agents conversation:
@@ -221,7 +221,7 @@ The following example uses samples from the [Connector sample code](https://gith
 
 
 ## Parse conversation payload from the bot
-After starting a conversation with the bot, the conversation JSON payload uses standard Microsoft Bot Framework Direct Line activity. You can learn more at [Bot Framework Direct Line API](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0).
+After starting a conversation with the bot, the conversation JSON payload uses standard Microsoft Bot Framework Direct Line activity. You can learn more at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0).
 
 ## Handle handoff activity
 If your application needs to hand off to a live agent provider, you will need to handle the handoff activity. Handoff Activity is sent when the "Transfer to agent" node is hit. In the Directline Channel, an activity with `Type=Handoff` will be sent to the client. You can learn more on the payload of the Handoff Acitvity at [Contextual variables available upon hand-off](advanced-hand-off-virtual-agent.md#contextual-variables-available-upon-hand-off)

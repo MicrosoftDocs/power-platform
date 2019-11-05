@@ -18,13 +18,13 @@ With Power Virtual Agents, you can hand off conversations to live agents seamles
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
-For more information about how to configure hand-off with [Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-customer-service-guide), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
+For more information about how to configure hand-off with [Omnichannel for Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
 
 
 ## Pre-requisites
 
 - You need a bot built with Power Virtual Agents (you can [try the preview version of Power Virtual Agents to get started](https://aka.ms/TryPVA))
-- You need to have an engagement hub that is being used by human agents, such as [Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/introduction-omnichannel), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
+- You need to have an engagement hub that is being used by human agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/introduction-omnichannel), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Triggering hand-off to a live agent
 Customers engaging with the bot can ask for a live agent at any point in the conversation. This can happen in two ways, with an implicit trigger or an explicit trigger.
