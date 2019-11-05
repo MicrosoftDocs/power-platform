@@ -1,6 +1,6 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
-description: FAQ for licensing PowerApps and Microsoft Power Automate
+description: FAQ for licensing PowerApps and Power Automate
 author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) PowerApps, and Microsoft Power Automate.
+Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) PowerApps, and Power Automate.
 
 ## What is a Microsoft Power Platform request?
 
@@ -44,7 +44,7 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | Dynamics 365 Professional <sup>2</sup>                          | 10,000                                                                                                                                        |
 | Dynamics 365 Team Member                                 | 5,000                                                                                                                                         |
 | PowerApps per user plan                                  | 5,000                                                                                                                                         |
-| Microsoft Power Automate per user plan                             | 5,000                                                                                                                                         |
+| Power Automate per user plan                             | 5,000                                                                                                                                         |
 | Office licenses (that include PowerApps/Power Automate)  | 2,000                                                                                                                                         |
 | Application user / Non-interactive users                 | [See section below](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users) |
 

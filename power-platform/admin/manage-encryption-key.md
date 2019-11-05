@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 11/05/2019
 ms.author: matp 
 search.audienceType: 
   - admin
@@ -31,6 +31,7 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
 > - Mobile Offline
 > - Activity Log (Office 365 portal)
 > - Exchange (Server-side sync)
+> - Data stored in File and Image fields. See [Types of fields](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-fields#image-fields).
   
 <a name="KM_tasks"></a>   
 ## Introduction to key management  

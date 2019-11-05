@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Power Automate analytics  | MicrosoftDocs"
+title: "Power Automate analytics  | MicrosoftDocs"
 description: The admin reports provide a view into environment level usage, errors, service performance.
 author: "MSFTMan"
 manager: kvivek

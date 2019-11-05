@@ -1,5 +1,5 @@
 ---
-title: "Capacity add-ons for PowerApps and Microsoft Power Automate  | MicrosoftDocs"
+title: "Capacity add-ons for PowerApps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
 ms.date: 10/25/2019
 ms.reviewer: 

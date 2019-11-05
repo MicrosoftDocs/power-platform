@@ -1,6 +1,6 @@
 ---
-title: PowerApps and Microsoft Power Automate licensing FAQs| Microsoft Docs
-description: "FAQs for licensing PowerApps, Microsoft Power Automate, Common Data Service, and AI Builder"
+title: PowerApps and Power Automate licensing FAQs| Microsoft Docs
+description: "FAQs for licensing PowerApps, Power Automate, Common Data Service, and AI Builder"
 author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# PowerApps and Microsoft Power Automate licensing FAQs
+# PowerApps and Power Automate licensing FAQs
 
 We have found some common questions on licensing and plan options. We’ve
 included several here with their answers. For more details about Microsoft
@@ -42,11 +42,11 @@ PowerApps plans:
 
 Power Automate Plans:
 
--   **Microsoft Power Automate per user plan** which equips a user to run unlimited flows
+-   **Power Automate per user plan** which equips a user to run unlimited flows
     (within service limits) with the full capabilities of Power Automate based
     on their unique needs for \$15/user/month.
 
--   **Microsoft Power Automate per flow plan** which enables organizations to implement
+-   **Power Automate per flow plan** which enables organizations to implement
     flows with reserved capacity that serve teams, department, or the entire
     organization without having to license each end user. This plan starts at
     \$500/month for 5 flows.
@@ -59,7 +59,7 @@ Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 Yes, Non-Profit, Government and Academic pricing is available in respective
 program channels.
 
-### What will happen to the PowerApps P1/P2 and Microsoft Power Automate Plan 1 and Plan 2 plans on October 1, 2019?
+### What will happen to the PowerApps P1/P2 and Power Automate Plan 1 and Plan 2 plans on October 1, 2019?
 
 The existing P1 and P2 plans for PowerApps and Power Automate will be
 transitioning to the new PowerApps per app and per user plans, as well as the
@@ -83,7 +83,7 @@ license.
 ### Is there a plan for developers?
 
 Yes, we have a free Community Plan to learn and build skills on PowerApps,
-Power Automate and Common Data Service. [Learn
+Power Automate, and Common Data Service. [Learn
 more](https://powerapps.microsoft.com/communityplan/).
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
@@ -338,7 +338,7 @@ plans are listed below:
         views for \$100 per month)
 
 -   New **PowerApps and Power Automate capacity add-on** increases daily API
-    request limits for PowerApps, Power Automate and Dynamics 365 workloads for
+    request limits for PowerApps, Power Automate, and Dynamics 365 workloads for
     users that exceed their usage entitlement (10,000 daily API requests for
     \$50 per month).
 
@@ -431,7 +431,7 @@ forward month to month.
 
 ### How is AI Builder licensed?
 
-AI Builder is a capacity add-on to paid, standalone PowerApps, Power Automate and Dynamics 365 licenses. Each $500 subscription includes 1 million AI Builder service credits applied at the tenant level. To use your AI Builder capacity, an administrator has to allocate AI Builder capacity to the environment where you want to use AI Builder.  
+AI Builder is a capacity add-on to paid, standalone PowerApps, Power Automate, and Dynamics 365 licenses. Each $500 subscription includes 1 million AI Builder service credits applied at the tenant level. To use your AI Builder capacity, an administrator has to allocate AI Builder capacity to the environment where you want to use AI Builder.  
 
 - More details about licensing can be found in the Microsoft PowerApps and Power Automate Licensing Guide. 
 - Information about how to allocate capacity in the Power Platform admin center can be found [here](/power-platform/admin/capacity-add-on).

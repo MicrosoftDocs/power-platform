@@ -113,7 +113,7 @@ If you are unable to see your connections or environments in the drop-down while
    > [!div class="mx-imgBorder"] 
    > ![](media/ConnectionsIssue.png "Connections issue")
 
-* **Environment**: If you don’t see your environments in the drop-down, ensure that the account you used to create the connections has the appropriate access to the entity. A good way to test this is by creating a *flow* (using Microsoft Flow). 
+* **Environment**: If you don’t see your environments in the drop-down, ensure that the account you used to create the connections has the appropriate access to the entity. A good way to test this is by creating a *flow* (using Microsoft Power Automate). 
 
   Here is an example of creating a simple flow to test your connection to Dynamics 365 Finance and Operations:
 
