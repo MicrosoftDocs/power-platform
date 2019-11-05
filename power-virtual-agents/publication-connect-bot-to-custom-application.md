@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Connect your bot to mobile and custom apps
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 You can connect your bot to a custom app so that the app users can interact with the bot directly within your app.
 
 In most cases, your custom app will be a mobile-device app that is either web-based or a native app or adapter to other services that your business requires. 

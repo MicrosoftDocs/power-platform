@@ -1,8 +1,8 @@
 ---
 title: "TITLE"
 description: "DESCRIPTION"
-keywords: "KEYWORDS"
-ms.date: 11/4/2019
+keywords: ""
+ms.date: 11/5/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -13,11 +13,13 @@ ms.custom: authoring
 ms.collection: virtual-agent
 ---
 
-# Entities
+# Use entities to streamline bot conversations
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 One fundamental part of Natural language understanding is to identify entities in a user dialog. An entity can be viewed as an information unit that represents a certain type of real world subject, like a phone number, a zip code, a city, or even a person's name. 
 
-## Prebuilt entity
+## Prebuilt entities
 Out of box, Power Virtual Agents comes with a set of pre-built entities, which represents the most commonly used stereotype information in real world dialogs, such as age, colors, numbers, and names. 
 
 ![Image.1 Entities pane](media/entities-1(draft).png)
@@ -28,7 +30,7 @@ To help you understand that notion, let's use Money entity as an example. When y
 
 With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use. 
 
-## Custom Entity
+## Custom Entities
 The pre-built entities cover commonly used information types, but in some occasions, when building a bot that serves for a specific domain, you’ll need to teach the bot's language understanding model some domain-specific knowledge. For instance, let's say you want to build a bot for an outdoor store, in this case, you’ll need to teach the bot to acknowledge the outdoor gears product category in a dialog. 
  
 What you need to do is to simply create a custom entity. In this case, you can create an entity that gives the bot the knowledge of all outdoor product categories. After clicking "New custom entity" on top of the entity pane, you’ll see this entity creation UI lets you provide more details to it.
@@ -63,7 +65,7 @@ Optionally, you can also select items to show as buttons. For example, if you’
 ![Image.8 Add condition nodes](media/entities-8(draft).png)
 ![Image.9 More condition nodes](media/entities-9(draft).png)
 
-## Understand slot filling
+## Slot filling
 Slot filling is a natural language understanding concept that means saving an extracted entity to an object. In Virtual Agents, slot filling essentially means landing the extracted entity value into a variable. Let’s continue using the above dialog as an example to explain how this works in the Virtual Agents. 
 
 Let’s bring up the testing bot. You can trigger this topic by typing “I want to buy something” and hit enter. Then you’ll see the topic has been successfully triggered and the bot comes back asking you for the product category with a few button choices you just specified. In the dialog tree, the tracing also shows the bot is running to the question node you just edited. 

@@ -15,6 +15,7 @@ ms.collection: virtual-agent
 
 # Publish your bot to Facebook
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can publish your bot to your Facebook app so that it uses the Facebook Messenger experience on Facebook pages that you specify.
 

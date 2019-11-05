@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Configure publication for the demo and your live website
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 When publishing the bot to the web, you can publish to a pre-built demo website, which you can use to share the bot with your teammates and stakeholders, and to your own live website.
 
 >[!TIP]

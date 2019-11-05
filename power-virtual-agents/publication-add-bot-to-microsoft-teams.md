@@ -15,6 +15,7 @@ ms.collection: virtual-agent
 
 # Publish your bot to Microsoft Teams
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can publish your bot to Teams so other members of your organization can interact with your bot. You will need to [publish the bot at least once](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content) before users can interact with the bot on Teams.
 

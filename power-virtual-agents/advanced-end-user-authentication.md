@@ -1,19 +1,21 @@
 ---
-title: "Using User Authentication on bot topics"
-description: "How to author a topic using user authenticatoin"
+title: "Add user authentication to bot topics"
+description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider"
-ms.date: 10/24/2019
+ms.date: 11/5/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "VA"
-ms.collection: virtualagent
+ms.custom: authentication
+ms.collection: virtual-agent
 ---
 
-# Add user Authentication to a Power Virtual Agents bot
+# Add user authentication to a Power Virtual Agents bot
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can enable user authenticiation directly within a Power Virtual Agents bot conversation. This means you can prompt a user to sign in using single sign-on, retrieve a user token for that user, and then use that token to retrieve the user's information from a backend system.
 

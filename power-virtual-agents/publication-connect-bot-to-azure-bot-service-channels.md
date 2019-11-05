@@ -16,6 +16,7 @@ ms.collection: virtualagent
 
 # Connect your bot to Azure Bot Service channels
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can connect your bot to existing [Azure Bot Service channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0). This can be useful if you are already using Aure Bot Service channels and want to connect your Power Virtual Agents bot into those channels. 
 
