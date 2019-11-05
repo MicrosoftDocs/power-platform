@@ -30,7 +30,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 
 A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
 
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using PowerApps, Microsoft Power Automate, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using PowerApps, Power Automate, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
 The following actions are covered in this article:
 
@@ -77,10 +77,10 @@ For detailed steps on how you can use these experiences to find personal data fo
 
 After you find the data, you can then perform the specific action to satisfy the request by the data subject.
 
-### Step 2: Find personal data for the user in Microsoft Power Automate
+### Step 2: Find personal data for the user in Power Automate
 PowerApps licenses always include Power Automate capabilities. In addition to being included in PowerApps licenses, Power Automate is also available as a standalone service.
 
-For guidance on how to discover personal data stored by the Power Automate service, see [Responding to GDPR Data Subject Requests for Microsoft Power Automate](https://go.microsoft.com/fwlink/?linkid=872250).
+For guidance on how to discover personal data stored by the Power Automate service, see [Responding to GDPR Data Subject Requests for Power Automate](https://go.microsoft.com/fwlink/?linkid=872250).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a PowerApps user

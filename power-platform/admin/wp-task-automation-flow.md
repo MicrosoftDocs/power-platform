@@ -23,7 +23,7 @@ One of the unique things about Power Automate is you can use it to manage itself
 
 |Connector  |Possible uses  |
 |---------|---------|
-|Power Automate management connector <br/>https://docs.microsoft.com/connectors/flowmanagement/     |Can be used to automate working with Flows including getting lists of new flows or connectors in your environments.         |
+|Power Automate management connector <br/>https://docs.microsoft.com/connectors/flowmanagement/     |Can be used to automate working with flows including getting lists of new flows or connectors in your environments.         |
 |Office 365 Users connector<br/> https://docs.microsoft.com/connectors/office365users/     |Useful for automating actions around users. For example, you could use the connector to get the manager of a user that owns an environment to be able to send them an e-mail for approval.         |
 |Approval connector<br/> https://docs.microsoft.com/connectors/approvals/     | Often administrators need to get approvals and Power Automate offers a rich approval set of tasks you can automate this process.        |
 |Microsoft Forms <br/>https://docs.microsoft.com/connectors/microsoftforms/     | Forms is an easy way to collect information to start an admin task. This can be combined with the Approval connector to get manager approval.        |

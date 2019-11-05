@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/07/2019
+ms.date: 11/05/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -283,91 +283,6 @@ A default security role is automatically assigned to these imported users. The *
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 
-
-## Manage users in Microsoft Customer Engagement (on-premises)
-
-With Microsoft Customer Engagement (on-premises), you can add users to your organization one at a time, or add multiple users at the same time by using the **Add Users** wizard.
-
-### Add a user
-
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
-
-2.  On the toolbar, choose **New**.
-
-3.  On the **New User** page, in the **Account Information** section, specify the **User Name** for the user.
-
-4.  In the **User Information** section, specify the **Full Name** for the user.
-
-5.  In the **Organization Information** section, verify the **Business Unit** for the user.
-
-6.  Follow the step for the task you’re doing:
-    
-      - To save the information for the new user, choose **Save**.
-    
-      - To save the information for the user and add another user, choose **Save & New**.
-    
-      - To add another user without saving the information you entered for the user, choose **New**, and then in the **Message from webpage** dialog box, choose **OK**.
-    
-    Next, you’ll need to assign a security role to the newly added user. See “Assign a security role to a user” later in this topic.
-
-### Add multiple users
-
-You can add multiple user records for the same set of security roles by using the Add Users wizard. Any users you add must be in the Active Directory directory service.
-
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
-
-2.  On the toolbar, choose **New Multiple Users**.
-    
-    The **Add Users** wizard opens.
-
-3.  On the **Select Security Roles** page, select one or more security roles, and then choose **Next**.
-
-4.  On the **Select Access and License Type** page, under **Access Type**, select the appropriate access type for this set of users.
-
-5.  Under **License Type**, specify the license type for this set of users.
-
-6.  Under **Email Access Configuration**, specify how this set of users will access incoming and outgoing email messages, and then choose **Next**.
-
-7.  On the **Select Domain or Group** page, specify to select users from all trusted domains and groups or users from a particular domain or group, and then choose **Next**.
-
-8.  On the **Select Users** page, type a part of the name of user you want to add. Use semi-colons between names.
-    
-9. Choose **Create New Users**.
-
-10. On the **Summary** page, review the information about the user additions, and then follow the step for the task you are performing:
-    
-      - To close the Add Users wizard, choose **Close**.
-    
-      - If you need to add more users, for example with a different set of security roles, choose **Add More Users** to begin the wizard again.
-    
-
-    > [!NOTE]
-    > To edit a specific user record, close the wizard, and then open the user record from the list.
-
-### Assign a security role to a user
-
-After you create users, you must assign security roles. Even if a user is a member of a team with its own security privileges, the user won’t be able to see some data and may experience other problems when trying to use the system. More information: [Security roles and privileges](security-roles-privileges.md)
-
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
-
-2.  In the list, select the user or users that you want to assign a security role to.
-
-3.  Choose **More Commands** (***...***) > **Manage Roles**.
-    
-    Only the security roles available for that user's business unit are displayed.
-
-4.  In the **Manage User Roles** dialog box, select the security role or roles you want for the user or users, and then choose **OK**.
-
-
-### Enable a user
-
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
-
-2.  Select the down arrow next to **Enabled Users**, and then choose **Disabled Users**.
-
-3.  Select the checkmark next to the user you want to enable, and on the Actions toolbar, select **Enable**.
-
-4.  In the **Confirm User Activation** message, select **Activate**.
 
 ## Disable a user
 

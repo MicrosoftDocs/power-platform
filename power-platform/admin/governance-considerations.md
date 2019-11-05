@@ -1,6 +1,6 @@
 ---
 title: Governance considerations | Microsoft Docs
-description: Explains how PowerApps and Microsoft Power Automate be made widely available to their business and be supported by IT.
+description: Explains how PowerApps and Power Automate be made widely available to their business and be supported by IT.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -18,7 +18,7 @@ search.app:
 
 # Governance considerations 
 
-Many customers wonder: How can PowerApps and Microsoft Power Automate be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing PowerApps and Power Automate. 
+Many customers wonder: How can PowerApps and Power Automate be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing PowerApps and Power Automate. 
 
 |Theme  |Common questions related to each theme for which this content answers  |
 |---------|---------|
@@ -78,14 +78,14 @@ The following principals are supported for each role type.
 
 Today, Azure AD global tenant admins can perform the following: 
 
-1.	Download the PowerApps & Microsoft Power Automate license report
+1.	Download the PowerApps & Power Automate license report
 2.	Create DLP policy scoped only to ‘All Environments’ or scoped to include/exclude specific environments
 3.	Manage and assign licenses via Office admin center
 4.	Access all environment, app, and flow management capabilities for all environments in the tenant available via
    1. PowerApps Admin center
    2. PowerApps Admin PowerShell cmdlets
    3. PowerApps management connectors
-5.	Access the PowerApps and Microsoft Power Automate admin analytics for all environments in the tenant:
+5.	Access the PowerApps and Power Automate admin analytics for all environments in the tenant:
    1.	aka.ms/paadminanalytics  
    2.	aka.ms/flowadminanalytics 
 
@@ -132,20 +132,20 @@ In addition to monitoring, many customers want to subscribe to software creation
 3.	View and manage your CDS 
 4.	Environment and app management requires a PowerApps plan or a Power Automate plan 
 
-### Build Microsoft Power Automate flows to alert on key audit events
+### Build Power Automate flows to alert on key audit events
 
 1.	An example of alerting that can be implemented is subscribing to Office 365 Security and Compliance Audit Logs. 
 2.	This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
 
-### Build the policies you need with PowerApps, Power Automate and PowerShell
+### Build the policies you need with PowerApps, Power Automate, and PowerShell
 
 1.	These [PowerShell cmdlets](powerapps-powershell.md) place full control in the hands of admins to automate the governance policies necessary. 
 2.	The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by leveraging PowerApps and Power Automate. 
-3.	The following Microsoft Power Automate templates for administration connectors exist for ramping up quickly:
-   1.	[List new Microsoft Power Automate Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
+3.	The following Power Automate templates for administration connectors exist for ramping up quickly:
+   1.	[List new Power Automate Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
    2.	[List new PowerApps, Power Automate flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
    3.	[Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
-   4.	[Access Office 365 Security and Compliance Logs from Microsoft Power Automate](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
+   4.	[Access Office 365 Security and Compliance Logs from Power Automate](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
 4.	This [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) exist to help ramping up quickly on the administration connectors. 
 5. Additionally, it’s worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here’s another example of an administrative experience built using PowerApps and admin connectors.
 
@@ -177,10 +177,10 @@ It’s well understood that monitoring as a critical aspect of managing software
 
 [Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
-### Download the PowerApps and Microsoft Power Automate license report
+### Download the PowerApps and Power Automate license report
 
 1. [https://admin.powerapps.com/tenant/userLicenses](https://admin.powerapps.com/tenant/userLicenses) 
-2. View PowerApps and Microsoft Power Automate admin analytics
+2. View PowerApps and Power Automate admin analytics
    1. Available now in preview from the new [Power Platform Admin center](https://aka.ms/ppac). 
    2. One can get information along the following lines: 
      1. Active User and App usage  - how many users are using an app and how often? 

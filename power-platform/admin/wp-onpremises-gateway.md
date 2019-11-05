@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The on-premises gateway allows PowerApps and Microsoft Power Automate to reach back to on-premise resources to support hybrid integration scenarios. The gateway leverages Azure Service Bus relay technology to security allow access to on-premise resources.
+The on-premises gateway allows PowerApps and Power Automate to reach back to on-premise resources to support hybrid integration scenarios. The gateway leverages Azure Service Bus relay technology to security allow access to on-premise resources.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/onpremises-data-gateway.png "On-premises data gateway")

@@ -26,7 +26,7 @@ An environment is a space to store, manage, and share your organization’s busi
 * Get early access to the upcoming PowerApps functionalities by joining [PowerApps Preview Program](preview-environments.md).
 
 ## Environment scope
-Each environment is created under an Azure AD tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the US. When you create an app in an environment, that app is routed to only datacenters in that geographic location. Any items that you create in that environment (including connections, gateways, flows using Microsoft Flow, and more) are also bound to their environment’s location.
+Each environment is created under an Azure AD tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the US. When you create an app in an environment, that app is routed to only datacenters in that geographic location. Any items that you create in that environment (including connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment’s location.
 
 Every environment can have zero or one Common Data Service databases, which provides storage for your apps. The ability to create a database for your environment will depend on the license you purchase for PowerApps and your permission within that environment. For more information, see [Pricing info](pricing-billing-skus.md).
 
@@ -51,7 +51,7 @@ Environments have two built-in roles that provide access to permissions within a
 
     After creating the database in the environment, you can use System Administrator role instead of Environment Admin role.
 
-* The Environment Maker role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Microsoft Flow.
+* The Environment Maker role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate.
 
 Environment Makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or to all users in the organization. For more information, see [Share an app in PowerApps](/powerapps/maker/canvas-apps/share-app).
 

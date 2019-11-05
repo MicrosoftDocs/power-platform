@@ -86,7 +86,7 @@ Due to certain technological dependencies, the following features listed will no
   - [Marketing (for >10 users)](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/help-hub)
   - [Microsoft Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/integrate-social-engagement-dynamics-365)
   - [PowerApps](https://powerapps.microsoft.com/)
-  - [Flow](https://flow.microsoft.com/)
+  - [Power Automate](https://flow.microsoft.com/)
 
 
 ## Additional resources
