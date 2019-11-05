@@ -17,53 +17,100 @@ ms.collection: virtual-agent
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-One fundamental part of Natural language understanding is to identify entities in a user dialog. An entity can be viewed as an information unit that represents a certain type of real world subject, like a phone number, a zip code, a city, or even a person's name. 
+A big part of bot conversations in Power Virtual Agents is around natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say 'I tried to use my gift card but it doesn't work' and the bot is able to route the user to the topic related to gift cards not working - even if that exact phrase isn't listed as a trigger phrase.
+
+One fundamental part of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real world subject, like a phone number, zip code, city, or even a person's name. 
 
 ## Prebuilt entities
-Out of box, Power Virtual Agents comes with a set of pre-built entities, which represents the most commonly used stereotype information in real world dialogs, such as age, colors, numbers, and names. 
-
-![Image.1 Entities pane](media/entities-1(draft).png)
-
-To help you understand that notion, let's use Money entity as an example. When you click on it and bring up the description panel, you see the explanation of this entity and the ways it can be used to look for money type of information from a user input.  For example, when a user inputs "It costs 1000 dollars", using this money entity, the bot knows the "1000 dollars" represents the money type of information. When the bot extracts this entity and saves it to a variable, it will save a hundred as a number.
-
-![Image.2 Money entity description](media/entities-2(draft).png)
+Out of the box, Power Virtual Agents comes with a set of pre-built entities, which represents the most commonly used stereotype information in real world dialogs, such as age, colors, numbers, and names. 
 
 With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use. 
 
+To help understand that notion, the money entity can be used as an example. 
+
+1. In Power Virtual Agents, go to the **Entities** tab on the side navigation
+
+    ![](media/entities-menu.png)
+
+1. You'll see a list of the pre-built entities available. 
+
+    ![Image.1 Entities pane](media/entities-1(draft).png)
+
+1. Select the **Money** entity, which will open the details panel for the entity.
+
+![Image.2 Money entity description](media/entities-2(draft).png)
+
+Here you can an explanation of this entity and the ways it can be used to look for information related to money or currency from a user's input.
+
+For example, when a user inputs "It costs 1000 dollars", using this money entity the bot knows the "1000 dollars" represents the **money type** of information. When the bot extracts this entity and saves it to a variable, it will save "1000" as a number even though the surrounding information was text.
+
+
+
 ## Custom Entities
-The pre-built entities cover commonly used information types, but in some occasions, when building a bot that serves for a specific domain, you’ll need to teach the bot's language understanding model some domain-specific knowledge. For instance, let's say you want to build a bot for an outdoor store, in this case, you’ll need to teach the bot to acknowledge the outdoor gears product category in a dialog. 
+The pre-built entities cover commonly used information types, but in some occasions, such as when building a bot that serves a specific purpose, you’ll need to teach the bot's language understanding model some domain-specific knowledge. 
+
+For instance, let's say you want to build a bot for an outdoor store. In this case, you’ll need to teach the bot to acknowledge the "outdoor gears product" category in a dialog. 
  
-What you need to do is to simply create a custom entity. In this case, you can create an entity that gives the bot the knowledge of all outdoor product categories. After clicking "New custom entity" on top of the entity pane, you’ll see this entity creation UI lets you provide more details to it.
+To do this, you need to create a custom entity. In this case, you can create an entity that gives the bot the knowledge of all outdoor product categories. 
+
+1. In Power Virtual Agents, go to the **Entities** tab on the side navigation
+
+    ![](media/entities-menu.png)
+
+2. Select **New entity** on the main menu.
+
+    ![](media/entities-new.png)
 
 ![Image.3 Outdoor Store Categories entity](media/entities-3(draft).png)
 
-Basically, you can provide a "list" that enumerates all product categories, which essentially is a list of outdoor product categories names. You can do this by enter one item at a time in the “Enter item” input box to build out the full list. 
+3. This opens the entity creation window. Enter a name for the entity.
+
+4. Provide the items that you want to be included in the entity; in this example this is a list of outdoor product categories names. You can do this by entering one item at a time in the **Enter item** input box to build out the full list. 
 
 This pane also gives you a few other options. 
 
-**"Smart match"** option is part of the intelligence supported by the bot's language understanding model. Essentially, it provides the flexibility to let the bot take in user input in a fuzzy way based on the list items given to the entity. Specifically, when this toggle is on, it lets the bot autocorrect misspellings and expands the matching logic semantically, like automatically matching "softball" to "baseball". 
+### Smart match
+
+This option is part of the intelligence supported by the bot's language understanding model. It provides the flexibility to let the bot take in user input in a fuzzy way based on the list items given to the entity. 
+
+Specifically, when this toggle is on, it lets the bot autocorrect misspellings and expands the matching logic semantically, such as automatically matching "softball" to "baseball". 
 
 ![Image.4 Smart match](media/entities-4(draft).png)
 
-**“Synonyms”** allows you to manually expand the matching logic by adding synonyms,  for example, for the "hiking" product category, you can add "trekking", "mountaineering" as synonyms. For "Yoga", you can add "Pilates" as synonyms.
+
+### Synonyms
+This option allows you to manually expand the matching logic by adding synonyms.  
+
+For example, for the "hiking" product category, you can add "trekking" and "mountaineering" as synonyms. For "Yoga", you can add "Pilates" as a synonym.
 
 ![Image.5 Synonyms](media/entities-5(draft).png)
 
 ## Use enities in a dialog
 Now that you’ve done the work giving the bot the knowledge about outdoor gears by creating that product category entity and a few other custom entities, you can start to use them when constructing a dialog. 
- 
-Let's go back to the topic list, from there I can create a "Product purchasing" topic. Going into the dialog tree, you can start the dialog by creating a question node, asking what product category the user would like to explore. In order to let the bot understand the user input and smartly pick out product category information, I just need to pick "product category" entity for the things to listen for. In the entity list flyout, you can pick the entity you just created. And then give this variable a name, like "Product Category”. This variable is going to be used to save the extracted entity from the user response. 
+
 
 ![Image.6 Question node with entity selection](media/entities-6(draft).png)
 
 ![Image.7 Variable renaming](media/entities-7(draft).png)
 
-And that's it. That's all you need to do to let the bot look for a certain type of information from a user input at this point of the dialog. 
+1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
 
-Optionally, you can also select items to show as buttons. For example, if you’d like to show some categories as buttons for users to conveniently choose from as their input, you can simply click "select user options", pick them from this list which essentially are the items you put there when you created this custom entity. Like, I can choose Basketball, Baseball, hiking, etc. showing as buttons. 
+1. Open the authoring canvas for the topic you want to add an entity to.
+
+1. Click the plus (+) icon and select **Ask a question**. 
+
+    ![Screenshot of adding a node](media/handoff-add-node.png)
+
+1. Under **Identify**, select the entity you created in [Custom entities](#custom-entities).
+
+    ![Image.1 Create a variable](media/Automatically_created_variable_(draft).PNG)
+
+1. You can also optionally select items to show as buttons. For example, if you’d like to show some categories as buttons for users to conveniently choose from as their input, you can simply select **Select user options** and then pick them from the list that contains the items you added when you created the custom entity.
 
 ![Image.8 Add condition nodes](media/entities-8(draft).png)
 ![Image.9 More condition nodes](media/entities-9(draft).png)
+
+1. Name the variable for the output of the user's response, if necessary.
 
 ## Slot filling
 Slot filling is a natural language understanding concept that means saving an extracted entity to an object. In Virtual Agents, slot filling essentially means landing the extracted entity value into a variable. Let’s continue using the above dialog as an example to explain how this works in the Virtual Agents. 
