@@ -1,0 +1,101 @@
+---
+title: "TITLE"
+description: "DESCRIPTION"
+keywords: "KEYWORDS"
+ms.date: 11/4/2019
+ms.service:
+  - dynamics-365-ai
+ms.topic: article
+author: iaanw
+ms.author: iawilt
+manager: shellyha
+ms.custom: authoring
+ms.collection: virtual-agent
+---
+
+# Entities
+
+One fundamental part of Natural language understanding is to identify entities in a user dialog. An entity can be viewed as an information unit that represents a certain type of real world subject, like a phone number, a zip code, a city, or even a person's name. 
+
+## Prebuilt entity
+Out of box, Power Virtual Agents comes with a set of pre-built entities, which represents the most commonly used stereotype information in real world dialogs, such as age, colors, numbers, and names. 
+
+![Image.1 Entities pane](media/entities-1(draft).png)
+
+To help you understand that notion, let's use Money entity as an example. When you click on it and bring up the description panel, you see the explanation of this entity and the ways it can be used to look for money type of information from a user input.  For example, when a user inputs "It costs 1000 dollars", using this money entity, the bot knows the "1000 dollars" represents the money type of information. When the bot extracts this entity and saves it to a variable, it will save a hundred as a number.
+
+![Image.2 Money entity description](media/entities-2(draft).png)
+
+With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use. 
+
+## Custom Entity
+The pre-built entities cover commonly used information types, but in some occasions, when building a bot that serves for a specific domain, you’ll need to teach the bot's language understanding model some domain-specific knowledge. For instance, let's say you want to build a bot for an outdoor store, in this case, you’ll need to teach the bot to acknowledge the outdoor gears product category in a dialog. 
+ 
+What you need to do is to simply create a custom entity. In this case, you can create an entity that gives the bot the knowledge of all outdoor product categories. After clicking "New custom entity" on top of the entity pane, you’ll see this entity creation UI lets you provide more details to it.
+
+![Image.3 Outdoor Store Categories entity](media/entities-3(draft).png)
+
+Basically, you can provide a "list" that enumerates all product categories, which essentially is a list of outdoor product categories names. You can do this by enter one item at a time in the “Enter item” input box to build out the full list. 
+
+This pane also gives you a few other options. 
+
+**"Smart match"** option is part of the intelligence supported by the bot's language understanding model. Essentially, it provides the flexibility to let the bot take in user input in a fuzzy way based on the list items given to the entity. Specifically, when this toggle is on, it lets the bot autocorrect misspellings and expands the matching logic semantically, like automatically matching "softball" to "baseball". 
+
+![Image.4 Smart match](media/entities-4(draft).png)
+
+**“Synonyms”** allows you to manually expand the matching logic by adding synonyms,  for example, for the "hiking" product category, you can add "trekking", "mountaineering" as synonyms. For "Yoga", you can add "Pilates" as synonyms.
+
+![Image.5 Synonyms](media/entities-5(draft).png)
+
+## Use enities in a dialog
+Now that you’ve done the work giving the bot the knowledge about outdoor gears by creating that product category entity and a few other custom entities, you can start to use them when constructing a dialog. 
+ 
+Let's go back to the topic list, from there I can create a "Product purchasing" topic. Going into the dialog tree, you can start the dialog by creating a question node, asking what product category the user would like to explore. In order to let the bot understand the user input and smartly pick out product category information, I just need to pick "product category" entity for the things to listen for. In the entity list flyout, you can pick the entity you just created. And then give this variable a name, like "Product Category”. This variable is going to be used to save the extracted entity from the user response. 
+
+![Image.6 Question node with entity selection](media/entities-6(draft).png)
+
+![Image.7 Variable renaming](media/entities-7(draft).png)
+
+And that's it. That's all you need to do to let the bot look for a certain type of information from a user input at this point of the dialog. 
+
+Optionally, you can also select items to show as buttons. For example, if you’d like to show some categories as buttons for users to conveniently choose from as their input, you can simply click "select user options", pick them from this list which essentially are the items you put there when you created this custom entity. Like, I can choose Basketball, Baseball, hiking, etc. showing as buttons. 
+
+![Image.8 Add condition nodes](media/entities-8(draft).png)
+![Image.9 More condition nodes](media/entities-9(draft).png)
+
+## Understand slot filling
+Slot filling is a natural language understanding concept that means saving an extracted entity to an object. In Virtual Agents, slot filling essentially means landing the extracted entity value into a variable. Let’s continue using the above dialog as an example to explain how this works in the Virtual Agents. 
+
+Let’s bring up the testing bot. You can trigger this topic by typing “I want to buy something” and hit enter. Then you’ll see the topic has been successfully triggered and the bot comes back asking you for the product category with a few button choices you just specified. In the dialog tree, the tracing also shows the bot is running to the question node you just edited. 
+
+![Image.10 Tracing](media/entities-10(draft).png)
+
+You can totally test the button choices by clicking on one of them. Alternatively, you can also type in something like "trekking" and see what will happen. If you remember, when you defined the product category entity, you’ve added "trekking" as a synonym to "hiking", so theoretically, the bot should be able to understand this user input and translate "trekking" to "hiking" when proceeding the dialog. 
+
+![Image.11 Tracing 2](media/entities-11(draft).png)
+
+In tracing, it shows the dialog is correctly routed to the path in which the product category value is "Hiking". You can inspect the variable value from the variable watch window here. In the watch window, it shows the variable value is indeed "hiking". Essentially, slot filling has happened by landing the extracted entity “Hiking” to the variable VarProductCategory. 
+
+![Image.12 Variable watch window](media/entities-12(draft).png)
+
+Let's restart and try another scenario.  Instead of triggering the topic by saying "I want to buy something", this time you can give it a little bit more information all together from the beginning, saying something like "I want to buy some trekking gears". Notice that I not only tell the bot my intent of buying something, but also include the type of outdoor gear I want. This is a natural way a customer would communicate with a human agent. If a human agent can understand this phrase, we would expect the virtual agent to be able to handle it as well. 
+
+![Image.13 Variable watch window](media/entities-13(draft).png)
+
+In tracing, you can see the bot takes in this user input, intelligently skipped the question node asking for product category. **The bot is always actively listening to the user input and try to remember the information upfront and skip the unnecessary steps as appropriate. **
+
+Let’s restart the testing again and try another case. In this round you can add a couple of more question nodes asking for things like type of hiking gear, as well as the price range (using the Money entity). This time when the product category question is presented, instead of telling the bot only the product category, you can say "I want to buy a pair of hiking boots under $100". As you can see from tracing, the bot is not only able to route to the correct hiking product category path, but also actively fill the slots asking for the type of hiking gear and the target price range information accordingly. 
+
+![Image.14 Tracing 3](media/entities-14(draft).png)
+
+To recap:  
+
+To identify entities in a user dialog is an important part of Natural language understanding. Microsoft power virtual agents comes with a set of prebuilt entities which help the bot to understand most commonly used information types from a user input. You can also create custom entities to grant the bot domain specific knowledges. 
+
+By specifying what type of entity to identify in a question node, the bot can extract and remember a specific type of information and save it to a variable.  
+
+
+
+
+
+
