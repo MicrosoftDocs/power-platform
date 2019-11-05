@@ -13,7 +13,7 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
-# How to configure User Authentication
+# How to configure User Authentication in Power Virtual Agents
 
 You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with any OAuth2 identity providers, such as Azure Active Directory (AAD), Microsoft Account (MSA), and Facebook. 
 
@@ -62,7 +62,7 @@ Scopes | List of scopes you want the authenticated users to have once logged in.
 
 ## Test your configuration
 
-Once the setup steps above are complete, save your configuration and test it by [creating a new topic using authentication](advanced-end-user-authentication.md). Use these steps to create a test topic:
+Once the setup steps above are complete, save your configuration and test it by [creating a new topic using authentication](advanced-end-user-authentication.md).
 
 
 ## Remove the authentication configuration

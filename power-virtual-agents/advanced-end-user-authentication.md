@@ -13,7 +13,7 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
-# User Authentication on bot topics
+# Add user Authentication to a Power Virtual Agents bot
 
 You can enable user authenticiation directly within a Power Virtual Agents bot conversation. This means you can prompt a user to sign in using single sign-on, retrieve a user token for that user, and then use that token to retrieve the user's information from a backend system.
 
