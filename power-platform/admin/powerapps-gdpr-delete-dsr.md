@@ -87,7 +87,7 @@ In order to determine if you are a member of an unmanaged tenant please follow t
 3. Otherwise, you belong to a **managed tenant**.
 
 ### For administrators
-To perform the administrative operations outlined in this document using the [PowerApps Admin center](https://admin.powerapps.com/), Microsoft Power Automate admin center, or [PowerShell cmdlets for PowerApps administrators](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
+To perform the administrative operations outlined in this document using the [PowerApps Admin center](https://admin.powerapps.com/), Power Automate admin center, or [PowerShell cmdlets for PowerApps administrators](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
 * A paid PowerApps plan or a PowerApps plan trial. You can sign-up for a 30-day trial at [http://web.powerapps.com/trial](http://web.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
@@ -384,8 +384,8 @@ $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectorRoleAssignment
 ```
 
-## Step 9: Delete the user’s personal data in Microsoft Power Automate
-PowerApps licenses always include Power Automate capabilities. In addition to being included in PowerApps licenses, Power Automate is also available as a standalone service. For guidance on how to respond to DSRs for users who use the Power Automate service, see [Responding to GDPR Data Subject Requests for Microsoft Power Automate](https://go.microsoft.com/fwlink/?linkid=872250).
+## Step 9: Delete the user’s personal data in Power Automate
+PowerApps licenses always include Power Automate capabilities. In addition to being included in PowerApps licenses, Power Automate is also available as a standalone service. For guidance on how to respond to DSRs for users who use the Power Automate service, see [Responding to GDPR Data Subject Requests for Power Automate](https://go.microsoft.com/fwlink/?linkid=872250).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a PowerApps user.

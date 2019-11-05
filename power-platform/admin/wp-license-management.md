@@ -47,7 +47,7 @@ action in the apps that require additional licensing.
 
 For Power Automate, an unlicensed user that signs in to flow.microsoft.com will
 be setup with the free Power Automate plan. If later they try to perform an action like
-sharing a Flow, they will be prompted to sign up for a trial. In this example,
+sharing a flow, they will be prompted to sign up for a trial. In this example,
 if the user accepted the offer for trial they would be signed up for a Power Automate
 trial. This trial would not show up under the user licenses in the Office 365
 Portal, however you would be able to see it in the PowerApps license report
