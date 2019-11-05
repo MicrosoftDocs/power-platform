@@ -15,7 +15,7 @@
         href: global-service-administrators-can-administer-without-license.md      
       - name: Purchase PowerApps 
         href: signup-for-powerapps-admin.md
-      - name: PowerApps and Flow licensing FAQs
+      - name: PowerApps and Power Automate licensing FAQs
         href: powerapps-flow-licensing-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
@@ -65,7 +65,7 @@
         items:
         - name: Common Data Service analytics 
           href: analytics-common-data-service.md
-        - name: Microsoft Flow analytics
+        - name: Power Automate analytics
           href: analytics-flow.md
         - name: PowerApps analytics
           href: analytics-powerapps.md
@@ -247,7 +247,7 @@
         href: wp-cds-for-apps.md
       - name: Types of PowerApps 
         href: wp-types-powerapps.md
-      - name: Microsoft Flow 
+      - name: Microsoft Power Automate
         href: wp-about-flows.md
       - name: Connectors 
         href: wp-connectors.md
@@ -387,7 +387,7 @@
           href: wp-task-automation-powershell.md
       - name: Automate application lifecycle management
         href: automate-alm.md
-      - name: Automation of tasks with Microsoft Flow 
+      - name: Automation of tasks with Power Automate
         href: wp-task-automation-flow.md
       - name: Manage email notifications to admins
         href: manage-email-notifications.md
@@ -559,7 +559,7 @@
           href: control-social-data.md 
       - name: Manage Bing Maps
         href: manage-bing-maps-organization.md 
-      - name: Enable Flow integration
+      - name: Enable Power Automate integration
         href: enable-embedded-flow-in-your-organization.md 
       - name: "Preview feature: LIve Assist powered by Café X"
         href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
@@ -697,7 +697,7 @@
         href: partners-credit-when-customers-subscribe-dynamics-365.md
       - name: "For partners: Delegated Administrator"
         href: for-partners-delegated-administrator.md
-  - name: Administer Microsoft Flow
+  - name: Administer Microsoft Power Automate
     href: about-flow-guide.md
   - name: Administer Power BI
     href: about-powerbi-guide.md

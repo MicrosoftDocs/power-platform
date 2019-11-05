@@ -26,7 +26,7 @@ To have users up and running in model-driven apps in Dynamics 365, such as Dynam
  In model-driven apps in Dynamics 365, populate the service with your organization’s data, including users and their security roles, business units, and any existing data that you want to import from other applications or services. If your organization uses business units, assign users to the appropriate business unit, and then assign a security role to each user. model-driven apps in Dynamics 365 includes predefined security roles that aggregate a set of user permissions to simplify user security management. An organization can define additional roles or edit predefined security roles to meet its unique security needs. For more information about security roles, see [Security roles and privileges](../admin/security-roles-privileges.md).  
   
 > [!IMPORTANT]
->  When you assigned any of the licenses or the Microsoft Flow license to a user,  the user is automatically added to all your environments, however users can’t access any model-driven apps in Dynamics 365 until they’ve been assigned at least one security role. See [Step Two: Assign security roles](../admin/grant-users-access.md#BKMK_StepTwo).  
+>  When you assigned any of the licenses or the Microsoft Power Automate license to a user,  the user is automatically added to all your environments, however users can’t access any model-driven apps in Dynamics 365 until they’ve been assigned at least one security role. See [Step Two: Assign security roles](../admin/grant-users-access.md#BKMK_StepTwo).  
   
 <a name="BKMK_O365CRMroles"></a>   
 

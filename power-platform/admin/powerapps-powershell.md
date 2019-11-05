@@ -120,7 +120,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read and delete custom connectors | Get-AdminPowerAppConnector *(previously Get-AdminConnector)* <br> Remove-AdminPowerAppConnector *(previously Remove-AdminConnector)* |
 | Read, update, and delete custom connector permissions | Get-AdminPowerAppConnectorRoleAssignment *(previously Get-AdminConnectorRoleAssignment)*<br> Set-AdminPowerAppConnectorRoleAssignment *(previously Set-AdminConnectorRoleAssignment)* <br> Remove-AdminPowerAppConnectorRoleAssignment *(previously Remove-AdminConnectorRoleAssignment)* |
 | Read a user's PowerApps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
-| Read and delete a user's Microsoft Flow settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
+| Read and delete a user's Microsoft Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
 | Create, read, update and delete data loss prevention policies for your organization | Get-AdminDlpPolicy *(previously Get-AdminApiPolicy)* <br> New-AdminDlpPolicy *(previously Add-AdminApiPolicy)* <br> Remove-AdminDlpPolicy *(previously Remove-AdminApiPolicy)* <br> Set-AdminDlpPolicy *(previously Set-AdminApiPolicy)* <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup <br/>Add-CustomConnectorToPolicy<br/> Remove-CustomConnectorFromPolicy|
 | Read and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> |
 
@@ -146,7 +146,7 @@ Below are some common scenarios that show how to use new and existing PowerApps 
 
 - [Environments Commands](#environments-commands)
 - [PowerApps Commands](#powerapps-commands)
-- [Flow commands](#flow-commands)
+- [Power Automate commands](#power-automate-commands)
 - [API connection commands](#api-connection-commands)
 - [Data Loss Prevention (DLP) policy commands](#data-loss-prevention-dlp-policy-commands)
 
@@ -260,9 +260,9 @@ Changes the owner role of a PowerApp to the current user, and replaces the origi
 
 **Note**: The AppName and EnvironmentName fields are the unique identifiers (guids), not the display names.
 
-### Flow commands
+### Power Automate commands
 
-Use these commands to view and modify data related to Microsoft Flow.
+Use these commands to view and modify data related to Power Automate.
 
 #### Display all flows
 
@@ -367,11 +367,11 @@ Adds a connector to the ‘Business data only’ group in a given DLP policy. Se
 ## Version History
 | Date | Updates |
 | --- | --- |
-| 04/23/2018 | <ol> <li> Initial launch of the PowerApps cmdlets for app creators (preview) including management cmdlets for Environments, Apps, Flows, Flow approvals, Connections, and Custom Connectors </li> <li> Initial launch of the PowerApps cmdlets for administrators (preview) including administrative cmdlets for Environments, Apps, and Flows </li></ol>|
+| 04/23/2018 | <ol> <li> Initial launch of the PowerApps cmdlets for app creators (preview) including management cmdlets for Environments, Apps, Flows, Power Automate approvals, Connections, and Custom Connectors </li> <li> Initial launch of the PowerApps cmdlets for administrators (preview) including administrative cmdlets for Environments, Apps, and Flows </li></ol>|
 | 05/24/2018 | <ol> <li> Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the following new administrative cmdlets: <br> Get-AdminConnection <br> Remove-AdminConnection <br> Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br>Remove-AdminConnectionRoleAssignment <br>Get-AdminConnector  <br>Remove-AdminConnector <br>Set-AdminConnectorRoleAssignment  <br>Get-AdminConnectorRoleAssignment  <br>Remove-AdminConnectorRoleAssignment <br>Get-AdminPowerAppsUserDetails <br>Get-AdminFlowUserDetails <br>Remove-AdminFlowUserDetails <br>Get-AdminApiPolicy  <br>Add-AdminApiPolicy <br>Remove-AdminApiPolicy <br>Set-AdminApiPolicy <br>Add-ConnectorToBusinessDataGroup  <br>Remove-ConnectorFromBusinessDataGroup </li> </ol>
 | 07/30/2018 | <ol> <li> Added the ability to pass-in credentials to the Add-PowerAppsAccount (to enable recurring scripting) </li> <li>  Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the "PowerApp" or "Flow" prefix to each cmdlet for app creators </li> <li>  Added the "AdminPowerApp" or "AdminFlow" prefix to each cmdlet for administrators </li> <li> Added the following new administrative cmdlets: <br> New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Remove-AdminFlowApprovals </li></ol>
 | 08/15/2018 | Added an optional parameter to the New-AdminPowerAppCdsDatabase to make the function synchronous, by default (i.e. it will not return until the database is successfully provisioned)
-| 08/24/2018 | Fixed an issue where the Flow admin cdmlets where not returning data for some using based on their security settings
+| 08/24/2018 | Fixed an issue where the Power Automate admin cdmlets where not returning data for some using based on their security settings
 | 01/09/2019 | <ol><li>Cmdlets are now available on the PowerShell gallery as two separate modules: Administrator and Maker.</li> <li>Added administrative cmdlet: Remove-LegacyCDSDatabase</li><li> Added operation examples</li><li>Added the ability to manage HTTP and custom connectors in data loss prevention (DLP)</li></ol>|
 | 03/05/2019 | Added content for Government Community Cloud (GCC) level 2 support.  |
 | 03/07/2019 | Added a cmdlet: Add a canvas app to a Common Data Service solution - SetPowerAppAsSolutionAware  |

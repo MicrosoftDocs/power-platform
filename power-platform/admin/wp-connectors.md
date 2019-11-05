@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Connectors are essentially proxy wrappers around the APIs provided by services that allow Microsoft Flow, PowerApps and Logic Apps to easily interact with the service. Connectors can be either public or custom. There are currently over 200+ public connectors that can be used by all organizations. Examples of public connectors are Office 365, Common Data Service, Twitter, Dropbox and more. Custom connectors are defined in the context of an environment and are only available to apps and flows within that environment. Connectors make triggers and actions available that can be used by the apps and flows. Triggers are used by flow or Logic Apps to start the execution of the workflow. Actions are used by apps and flows to perform a defined set of actions during execution.
+Connectors are essentially proxy wrappers around the APIs provided by services that allow Microsoft Power Automate, PowerApps and Logic Apps to easily interact with the service. Connectors can be either public or custom. There are currently over 200+ public connectors that can be used by all organizations. Examples of public connectors are Office 365, Common Data Service, Twitter, Dropbox and more. Custom connectors are defined in the context of an environment and are only available to apps and flows within that environment. Connectors make triggers and actions available that can be used by the apps and flows. Triggers are used by flow or Logic Apps to start the execution of the workflow. Actions are used by apps and flows to perform a defined set of actions during execution.
 Sharing of canvas apps that use Connectors
 
 Some connectors are shared automatically when you share the app. Others require that the user the app is shared with create their own connections. From web.powerapps.com you can check the connection and see if the share tab is present, if it is then the connection will be shared automatically. Otherwise, the user will need to create their own connection. Custom connectors are shared, but users must create their own connection to it. This means that the user shared with needs to have credentials or key if required by the custom connector.
@@ -47,7 +47,7 @@ From here you will see a dialog to specify the user or group as well as a list o
 One of the more recent additions is the ability to share a flow with a SharePoint List or an Office 365 Group. In this scenario, the Flow is available to all members of the group in the case of Office 365 groups. For SharePoint Lists, anyone with edit access to the list would have access to the flow. The flow would then show up with the ability to execute it from the application navigation.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/sharepoint-flow-menu.png "SharePoint Flow menu")
+> ![](media/sharepoint-flow-menu.png "SharePoint Power Automate menu")
 
 ## Restricting Use of Connectors
 
@@ -55,9 +55,9 @@ Within each environment using data loss prevention policies you can limit what c
 
 ## Connector Authentication Patterns
 
-PowerApps and Flow authenticate with connectors to create a connection environment. It is that environment that contains the specific configuration information necessary for the app or flow to talk to the connector API that is used in each interaction. Connectors could choose to use no authentication, basic authentication, API key authentication or OAuth 2.0. The most common are OAuth and API Key.
+PowerApps and Power Automate authenticate with connectors to create a connection environment. It is that environment that contains the specific configuration information necessary for the app or flow to talk to the connector API that is used in each interaction. Connectors could choose to use no authentication, basic authentication, API key authentication or OAuth 2.0. The most common are OAuth and API Key.
 
-OAuth if you aren’t familiar with it is an authorization framework that allows external applications to obtain controlled access to a target service. Many APIs support it including Common Data Service, Facebook and Twitter to name a few. The goal of authentication is to allow the user to sign in to a familiar login dialog, consent to the application using the service, and then setup to allow tokens to be acquired. It is the tokens that are used on each request to prove who the user is and their right to use the API. In the PowerApps and Flow usage, a Consent Server is involved that helps manage the tokens and their lifecycle including storing the renewal token in the Consent Server and handling the refresh cycle. The following is a step by step look at what happens when you authenticate a connection using OAuth.
+OAuth if you aren’t familiar with it is an authorization framework that allows external applications to obtain controlled access to a target service. Many APIs support it including Common Data Service, Facebook and Twitter to name a few. The goal of authentication is to allow the user to sign in to a familiar login dialog, consent to the application using the service, and then setup to allow tokens to be acquired. It is the tokens that are used on each request to prove who the user is and their right to use the API. In the PowerApps and Power Automate usage, a Consent Server is involved that helps manage the tokens and their lifecycle including storing the renewal token in the Consent Server and handling the refresh cycle. The following is a step by step look at what happens when you authenticate a connection using OAuth.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/oauth-consent-flow.png "OAUTH Consent flow")
