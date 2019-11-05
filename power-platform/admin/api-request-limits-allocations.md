@@ -1,6 +1,6 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
-description: FAQ for licensing PowerApps and Microsoft Flow
+description: FAQ for licensing PowerApps and Microsoft Power Automate
 author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
@@ -18,15 +18,15 @@ search.app:
 ---
 # Requests limits and allocations
 
-Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) PowerApps, and Microsoft Flow.
+Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) PowerApps, and Microsoft Power Automate.
 
 ## What is a Microsoft Power Platform request?
 
 Requests in Microsoft Power Platform consist of various actions which a user makes across various products. At a high level, below is what constitute an API call:
 
-- **Connectors** – all API requests to connectors from PowerApps or Microsoft Flow
+- **Connectors** – all API requests to connectors from PowerApps or Power Automate
 
-- **Microsoft Flow** – all Microsoft Flow step actions
+- **Microsoft Power Automate** – all Power Automate step actions
 
 - **Common Data Service** – all CRUD operations, as well as special operations like “share” or “assign”. These can be from any client or application and using any endpoint SOAP or REST. These include but are not limited to plug-ins, async workflows, and custom controls making the above mentioned operations.
 
@@ -44,8 +44,8 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | Dynamics 365 Professional <sup>2</sup>                          | 10,000                                                                                                                                        |
 | Dynamics 365 Team Member                                 | 5,000                                                                                                                                         |
 | PowerApps per user plan                                  | 5,000                                                                                                                                         |
-| Microsoft Flow per user plan                             | 5,000                                                                                                                                         |
-| Office licenses (that include PowerApps/Microsoft Flow)  | 2,000                                                                                                                                         |
+| Microsoft Power Automate per user plan                             | 5,000                                                                                                                                         |
+| Office licenses (that include PowerApps/Power Automate)  | 2,000                                                                                                                                         |
 | Application user / Non-interactive users                 | [See section below](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users) |
 
 
@@ -54,13 +54,13 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 <sup>2</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
 
-Users who are running apps and flows without a user license through the PowerApps per app plan or flows licensed through the Microsoft Flow per flow plan are granted the following API request entitlement.
+Users who are running apps and flows without a user license through the PowerApps per app plan or flows licensed through the Power Automate per flow plan are granted the following API request entitlement.
 
 
 | **Non User Licenses **       | **Number of API requests / 24 hours** |
 |------------------------------|---------------------------------------|
 | PowerApps per app plan       | 1,000 per user pass                   |
-| Microsoft Flow per flow plan | 15,000 per flow                       |
+| Power Automate per flow plan | 15,000 per flow                       |
 
 
 If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license as well as a PowerApps per user license , then that user will have a total of 20000 + 5000 = 25000 requests available per 24 hours.
@@ -68,9 +68,9 @@ If a user has multiple plans assigned from different product lines, the total nu
 If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 Customer Service Enterprise license as the base license and a Dynamics 365 Sales Enterprise license attached, the total number of requests would be what is provided by the base license - Dynamics 365 Customer Service.
 
 
-## PowerApps and Microsoft Flow capacity add-on
+## PowerApps and Power Automate capacity add-on
 
-PowerApps and Microsoft Flow capacity add-on allows customers to purchase additional requests which can be assigned to any user who has a PowerApps/Microsoft Flow license as well as Dynamics 365 license. These can be assigned to an application, and administrative and non-interactive users.
+PowerApps and Power Automate capacity add-on allows customers to purchase additional requests which can be assigned to any user who has a PowerApps/Power Automate license as well as Dynamics 365 license. These can be assigned to an application, and administrative and non-interactive users.
 
 Each capacity add-on provides an additional 10,000 requests/24 hours which can be assigned to any user. Multiple capacity add-ons can also be assigned to the same user.
 
@@ -95,13 +95,13 @@ This base request capacity would be based on the type of subscription and would 
 
 2. If a tenant has at least one Dynamics 365 professional subscription, they will get 50,000 requests per 24 hours
 
-3. If a tenant has at least one Microsoft PowerApps or Flow subscription, they will get 25,000 requests per 24 hours.
+3. If a tenant has at least one Microsoft PowerApps or Power Automate subscription, they will get 25,000 requests per 24 hours.
 
 If a tenant has multiple type of subscriptions, their base request capacity would be max of two subscriptions. For example, if a customer has both Dynamics 365 Customer Service and PowerApps per user subscription, their base request capacity would be 100,000 Requests per 24 hours.
 
 Base Request Capacity would be at tenant level and can only be used by non-licensed users, application users and users which has free ($0) licenses.
 
-Once the Base Request capacity is exhausted, customers can increase this capacity by purchasing PowerApps and Microsoft Flow capacity add-on.
+Once the Base Request capacity is exhausted, customers can increase this capacity by purchasing PowerApps and Power Automate capacity add-on.
 
 ## Service protection limits currently applicable
 
@@ -109,24 +109,24 @@ Apart from the new daily API request limit, there are other service protection l
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), PowerApps, and Microsoft Flow connecting to Common Data Service/model-driven apps in Dynamics 365
+- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), PowerApps, and Power Automate connecting to Common Data Service/model-driven apps in Dynamics 365
 
-- [Microsoft Flow limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Microsoft Flow
+- [Microsoft Power Automate limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Power Automate
 
-- [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Microsoft Flow and PowerApps
+- [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Power Automate and PowerApps
 
 
 ## Frequently asked questions
 
 ### What happens if any user exceeds Request capacity?
 
-If any user exceeds request capacity, admin for the tenant/environment would be notified and would be able to assign PowerApps and Microsoft Flow request capacity to that user.
+If any user exceeds request capacity, admin for the tenant/environment would be notified and would be able to assign PowerApps and Power Automate request capacity to that user.
 
 End users will not be blocked from using the app for occasional and reasonable overages at this point of time.
 
 ### Will my Integrations stop working if application users exceeds Base Request capacity?
 
-Integrations will not be stopped for occasional and reasonable overages at this point of time. Administrators would be notified about overages and will be able to add PowerApps and Microsoft Flow request capacity to be compliant.
+Integrations will not be stopped for occasional and reasonable overages at this point of time. Administrators would be notified about overages and will be able to add PowerApps and Power Automate request capacity to be compliant.
 
 ### Will there be a transition period for existing customers?
 

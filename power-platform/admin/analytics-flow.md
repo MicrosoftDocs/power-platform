@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Flow analytics  | MicrosoftDocs"
+title: "Microsoft Power Automate analytics  | MicrosoftDocs"
 description: The admin reports provide a view into environment level usage, errors, service performance.
 author: "MSFTMan"
 manager: kvivek
@@ -15,17 +15,17 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Admin Analytics for Microsoft Flow
+# Admin Analytics for Microsoft Power Automate
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Environment admins can access analytics for Microsoft Flow in the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with flows. 
+Environment admins can access analytics for Power Automate in the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with flows. 
 
 To access these reports:
 
 1. Go to the navigation bar on the left side.
 1. Select **Analytics**.
-1. Select **Microsoft Flow**.
+1. Select **Microsoft Power Automate**.
 1. View the reports on the right side.
 
 ## Data storage

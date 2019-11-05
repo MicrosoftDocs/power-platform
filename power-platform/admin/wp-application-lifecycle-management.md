@@ -69,9 +69,9 @@ The following is an example of the Team Status Dashboards that gives the team an
 
 ## Exporting from the source environment
 
-We’ve already covered the concept of exporting from PowerApps, Flow and Common Data Service earlier in the document. Let’s look at some additional things to consider when exporting as part of an application lifecycle management process.
+We’ve already covered the concept of exporting from PowerApps, Microsoft Power Automate and Common Data Service earlier in the document. Let’s look at some additional things to consider when exporting as part of an application lifecycle management process.
 
-- Always save a copy of the exported PowerApp, Microsoft Flow or Common Data Service solution file.
+- Always save a copy of the exported PowerApp, Power Automate or Common Data Service solution file.
 - For Common Data Service Solutions make sure if you are publishing a managed solution, that you also export an unmanaged solution as well. If you are not familiar with the differences, we cover that in the Platform Architecture section.
 - For Common Data Service solution export you should always perform a publish on the solution or publish all for all solutions prior to export to ensure all changes are exported as expected.
 - For Flows and canvas apps review the connectors that are used. Any custom connectors will need to be re-created prior to import in the target environment.
@@ -101,7 +101,7 @@ Shown earlier, the import feature allows the maker to update an existing app in 
 Once your application has been deployed you can mostly go into maintenance mode responding to user inquires as needed. Here are a few things to consider while you are between updates.
 
 - PowerApps canvas applications need to be periodically republished for best performance and stability. About every six months you should re-publish your deployed PowerApps canvas applications even if they haven’t changed. This ensures the application picks up the latest runtime changes in the environments.
-- Keep an eye on your Common Data Service environment storage usage as well as your Flow quotas and adjust resources and licensing as needed.
+- Keep an eye on your Common Data Service environment storage usage as well as your Power Automate quotas and adjust resources and licensing as needed.
 
 ## Retiring and removing an application
 
@@ -109,7 +109,7 @@ As your organization evolves it’s likely one or more of the applications deplo
 
 - Confirm that if there are users they understand the shutdown. Consider shutdown notifications in advance to ensure business continuity and minimize impact
 - Removing access to the application components is often a good first step. Leaving it in this state for a period of time also helps to ensure users know and have a chance to argue their case or save any data needed.
-- Deleting an environment will remove all associated PowerApps, Flows and Common Data Service data. This is not the approach to take if you have multiple applications sharing the environment and you are just retiring a single application.
+- Deleting an environment will remove all associated PowerApps, Power Automate and Common Data Service data. This is not the approach to take if you have multiple applications sharing the environment and you are just retiring a single application.
 - PowerApps canvas apps and Flows can usually be removed without lots of dependency considerations. Currently it is necessary to remove these one at a time even if you imported both a PowerApp canvas app and a Flow at the same time. The connections for these will not be removed automatically.
 - When removing connections, you need to first consider the PowerApps canvas apps and Flows that might still be using them. This can be checked by looking at what is associated with the connection prior to deleting.
 - Custom connections are sometimes better to be left if they might be reused later as they would require extra effort to re-establish in the future.
