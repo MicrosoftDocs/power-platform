@@ -39,7 +39,9 @@
       "breadcrumb_path": "/power-platform/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "titleSuffix": "Power Platform Admin center",
-      "feedback_system": "None"
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/power-platform",
+      "feedback_product_url": "https://powerusers.microsoft.com/"
     },
     "fileMetadata": {
       "searchScope": {
