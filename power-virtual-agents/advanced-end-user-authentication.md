@@ -15,14 +15,24 @@ ms.collection: virtualagent
 
 # User Authentication on bot topics
 
-To get your user's information from a backend system, you first need to have your users sign in and get a User Token. You can then pass this token to a Flow, which in turn fetches the information from a backend API back to the bot. This document will guide you on how to obtain the token, and call a Power Automate flow to complete your scenario.
+You can enable user authenticiation directly within a Power Virtual Agents bot conversation. This means you can prompt a user to sign in using single sign-on, retrieve a user token for that user, and then use that token to retrieve the user's information from a backend system.
+
 
 > [!IMPORTANT] 
-> Before using this feature, you must follow the configuration instructions on [How to configure User Authentication](configuration-end-user-authentication-virtual-agent.md).
+> Before using this feature, you must follow the [end-user authentication configuration instructions](configuration-end-user-authentication-virtual-agent.md).
 
-## Adding user authentication via "Call an action" menu
 
-In a topic, select "Call an action" menu entry under the "Add a node" menu, and then select "Authentication". Once selected, you will get a number of new nodes added for Authentication.
+## Adding user authentication with the **Call an action** menu
+
+**Insert the authentication node template:**
+
+In a [topic](getting-started-create-topics.md), select the plus icon (+) to add a new node.
+
+Select **Call an action** and then select **Authenticate**. 
+
+![](media/auth-call-action.png)
+
+Once selected, a number of new nodes will be added automatically.
 
 > [!WARNING] 
 > Add image for Authentication in the Action picker
