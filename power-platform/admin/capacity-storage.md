@@ -1,7 +1,7 @@
 ---
 title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 10/21/2019
+ms.date: 11/06/2019
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -60,7 +60,7 @@ Some of the benefits of this change:
 - Reduced need to [free storage space](free-storage-space.md)
 - Support for variety of data types
 - Additional default and full user entitlements
-- Flexibility to create new environments/instances 
+- Flexibility to create new environments
 
 ## Capacity page details
 
@@ -133,7 +133,7 @@ Select **Applied filters** at the the top of the page to filter data for differe
 As an existing customer, we have added File and Log capacity to your tenant automatically based on your existing licenses. Because you are currently in an agreement under the old offers, you are not impacted. Make sure your Database consumption is per the entitlement. You are not expected to take any action for File and Log. At renewal, you can use this report to get the right amount of capacity for Database, File, and Log.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment using this model?
-Until provisioning environments is available through the Power Platform Admin center, you can provision environments through the PowerApps/Power Automate/Dynamics 365 Admin center. If you still need more environments, you can contact [Support](get-help-support.md). For details, check [Create an environment](create-environment.md).
+You can provision environments through the Power Platform Admin center. For details, see [Create and manage environments in the Power Platform Admin center](create-environment.md).
 
 ### I’m an existing customer and have not purchased the new offers. The capacity report indicates I’m overusing the Database/File/Log, what should I do?
 If Database, you should not exceed the available Database capacity. Please consider [freeing storage space](free-storage-space.md) or purchase more storage capacity. 
