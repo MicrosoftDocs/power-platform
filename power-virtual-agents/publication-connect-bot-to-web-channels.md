@@ -13,7 +13,7 @@ ms.custom: "publication, authoring"
 ms.collection: virtual-agent
 ---
 
-# Configure publication for the demo and your live website
+# Configure the demo website and add the bot to your live website
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

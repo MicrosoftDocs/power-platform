@@ -13,13 +13,15 @@ ms.custom: "publication, authoring"
 ms.collection: virtual-agent
 ---
 
-# Publish your bot to Facebook
+# Add Facebook channel
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can publish your bot to your Facebook app so that it uses the Facebook Messenger experience on Facebook pages that you specify.
 
 You need a Facebook app, and an associated developer account, to connect your Power Virtual Agents bot to Facebook. 
+
+## Configure Facebook and Power Virtual Agents
 
 There are a number of steps involved in this process:
 
@@ -38,14 +40,8 @@ You will then need to submit your app for Facebook review before you can publish
 
 Facebook Messenger, Facebook Workplace, and related services are subject to Facebook's own terms and conditions.  For support related to Facebook Messenger and Facebook Workplace, please contact Facebook directly.
 
->[!WARNING]
->How to contact FB?
 
-
->[!WARNING]
->Is it a Facebook app, page, or messenger?
-
-## Configure Facebook app settings
+### Configure Facebook app settings
 
 **Retrieve Facebook app information:**
 
@@ -87,7 +83,7 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 
 ![Get pages ID and token](media/channel-fb-get-page-id-token.png)
 
-## Configure the Facebook channel
+### Configure the Facebook channel
 
 **Configure the Facebook publication channel in Power Virtual Agents:**
 
@@ -106,7 +102,7 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 4. Click **Add** and wait for the success confirmation message. Once successful, copy the *Callback URL* and *Verify Token*. You will need these when you [connect your Facebook app to Power Virtual Agents](#connect-your-facebook-app-to-power-virtual-agents).
 ![Get callback information for Facebook](media/channel-fb-get-callback-info.png)
 
-## Connect your Facebook app to Power Virtual Agents 
+### Connect your Facebook app to Power Virtual Agents 
 
 **Connect your Facebook app to Power Virtual Agents:**
 
@@ -136,7 +132,7 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 ![Add webhook subscription fields](media/channel-fb-subscription-fields.png)
 
 
-## Submit for Facebook review
+### Submit for Facebook review
 
 You need to submit your app for Facebook review before you can make your Facebook app public.  Facebook requires a Privacy Policy URL and Terms of Service URL.  You need to provide those on the Facebook basic app settings page (after logging into your app at [Facebook for Developers](https://developers.facebook.com/), select **Basic** under **Settings** on the side menu panel).
 
@@ -144,7 +140,7 @@ The [Code of Conduct](https://investor.fb.com/corporate-governance/code-of-condu
 
 Facebook has its own [review process](https://developers.facebook.com/docs/messenger-platform/app-review) for apps that are published to Messenger. You can learn more about it at [Sample submissions](https://developers.facebook.com/docs/apps/review/sample-submissions/) and [Common rejection reasons](https://developers.facebook.com/docs/apps/review/common-rejection-reasons/). Your bot will be tested to ensure it is compliant with [Facebook's Platform Policies](https://developers.facebook.com/docs/messenger-platform/policy-overview) before approved by Facebook to become public. 
 
-## Make the app public and publish the page
+### Make the app public and publish the page
 Until the app is published, it is in [Development Mode](https://developers.facebook.com/docs/apps/managing-development-cycle). The bot will not be public and only work for admins, developers, and testers.
 
 After the review is successful, in the App Dashboard under App Review, set the app to **Public**. Ensure that the Facebook Page associated with this bot is published. The status appears in **Pages** settings.
@@ -174,7 +170,7 @@ To add your bot to Facebook Workplace you will need information from your Facebo
 **Set up webhooks for Facebook Workplace custom integration:**
 1. Return to your Facebook Workplace custom integration settings by selecting **Admin Panel** on the side menu panel and select the custom integration you created.
 
-2. Under the **Configure Webhooks** section, provide the **Callback URL** and **Verify Token** from previous section [Configure the Facebook channel](#cconfigure-the-facebook-channel).  Select the **messages**, **messaging_postbacks** and **message_deliveries** fields. 
+2. Under the **Configure Webhooks** section, provide the **Callback URL** and **Verify Token** from previous section [Configure the Facebook channel](#configure-the-facebook-channel).  Select the **messages**, **messaging_postbacks** and **message_deliveries** fields. 
 ![Set Facebook Workplace custom integration webhook](media/channel-fb-wp-webhooks.png)
 
 3. Save your custom integration by clicking **Save**.
@@ -191,6 +187,6 @@ When you do not want the bot to be reachable via Facebook Messenger or Facebook 
 
 ## Known limitation
 - It may take a few minutes before the bot becomes reachable by a user on Facebook pages added after the Facebook channel is added.
-- After removing the Facebook channel, tt may take a few minutes before the bot is removed fully and becomes unreachable on Facebook Messenger and Facebook Workplace.
+- After removing the Facebook channel, it may take a few minutes before the bot is removed fully and becomes unreachable on Facebook Messenger and Facebook Workplace.
 - After removing a Facebook page, it may take a few minutes before the bot becomes unreachable by visitors to the removed page through Facebook Messenger.
 

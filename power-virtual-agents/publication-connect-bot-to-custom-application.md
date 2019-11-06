@@ -13,7 +13,7 @@ ms.custom: "publication"
 ms.collection: virtual-agent
 ---
 
-# Connect your bot to mobile and custom apps
+# Add your bot to mobile and custom apps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -48,7 +48,7 @@ If your goal is to connect to Azure Bot Service channels, besides following the 
 >[!WARNING]
 >Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
 
-## Prerequisites
+### Prerequisites
 
 - [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1
 - Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine)
@@ -65,7 +65,7 @@ The instructions in this document reference the following:
 - [Contextual variables available upon hand-off](advanced-hand-off-virtual-agent.md#contextual-variables-available-upon-hand-off)
 - [Microsfot Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
 
-## Get your Power Virtual Agent bot parameters
+### Get your Power Virtual Agent bot parameters
 To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
 
 1. Copy your bot's name in Power Virtual Agents.
@@ -79,7 +79,7 @@ To connect to the bot you have built with Power Virtual Agents, you will need to
 3. Copy and save the *bot ID* and *tenant ID* value by clicking **Copy**. You will need these in the [Get Direct Line token](#get-direct-line-token) step.
 ![Get bot parameters](media/channel-get-bot-parameters.png)
 
-## Get Direct Line token
+### Get Direct Line token
 To start a conversation with your Power Virtual Agents bot, you need a *Direct Line* token. You need to add code that retrieves a *Direct Line* token with the *bot ID* and *tenant ID* from the previous section to your application. 
 
 To request a *Direct Line* token, issue a GET request to the endpoint below:
@@ -100,7 +100,7 @@ GET https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoke
 ```
 If the request is successful, a *Direct Line* token will be returned for the requested bot.
 
-### Sample code example
+#### Sample code example
 
 The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to get a *Direct Line** token for a Power Virtual Agents bot.
 
@@ -138,10 +138,10 @@ The response will be:
   ```
 
 
-## Use Direct Line to communicate with the bot
+### Use Direct Line to communicate with the bot
 After retrieving the *Direct Line* token, you are ready to have a conversation with your Power Virtual Agents bot with Direct Line. Follow the instructions at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0) to start a conversation and send and receive messages.
 
-### Sample code example
+#### Sample code example
 The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to start a conversation and send and receive messages from a Power Virtual Agents bot.
 
 1. Initialize DirectLineClient instance with *Direct Line* token and start a conversation:
@@ -206,10 +206,10 @@ The following example uses samples from the [Connector sample code](https://gith
     }
   ```
 
-## Refresh Direct Line token
+### Refresh Direct Line token
 You may need to add code to refresh the *Direct Line* token if your application has a lengthy conversation with the bot. The token expires but can be refreshed before it expires; learn more at [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens).
 
-### Sample code example
+#### Sample code example
 The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to refresh the token for an existing Power Virtual Agents conversation:
 
 ```C#
@@ -222,13 +222,13 @@ The following example uses samples from the [Connector sample code](https://gith
 ```
 
 
-## Parse conversation payload from the bot
+### Parse conversation payload from the bot
 After starting a conversation with the bot, the conversation JSON payload uses standard Microsoft Bot Framework Direct Line activity. You can learn more at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0).
 
-## Handle handoff activity
-If your application needs to hand off to a live agent provider, you will need to handle the handoff activity. Handoff Activity is sent when the "Transfer to agent" node is hit. In the Directline Channel, an activity with `Type=Handoff` will be sent to the client. You can learn more on the payload of the Handoff Acitvity at [Contextual variables available upon hand-off](advanced-hand-off-virtual-agent.md#contextual-variables-available-upon-hand-off)
+### Handle handoff activity
+If your application needs to hand off to a live agent provider, you will need to handle the handoff activity. Handoff Activity is sent when the "Transfer to agent" node is hit. In the Directline Channel, an activity with `Type=Handoff` will be sent to the client. You can learn more on the payload of the Handoff Acitvity at [Contextual variables available upon hand-off](how-to-handoff.md#contextual-variables-available-upon-hand-off)
 
-## Trigger a welcome message
+### Trigger a welcome message
 If you want your bot to send the Greeting system topic automatically when a user starts a conversation, you can send an activity with `Type=event` and `Name=startsConversation`.
 
 
