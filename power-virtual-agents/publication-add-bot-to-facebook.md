@@ -1,6 +1,6 @@
 ---
-title: "Publish to Facebook"
-description: "Publish your bot on a Facebook page so Facebook users can interact with it."
+title: "Add to Facebook"
+description: "Add your bot to a Facebook page so Facebook users can interact with it."
 keywords: "Channel, publish, Facebook"
 ms.date: 10/31/2019
 ms.service:

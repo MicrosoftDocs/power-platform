@@ -1,5 +1,5 @@
 ---
-title: "Publish to Azure bot service channels"
+title: "Add your bot to Azure bot service channels"
 description: "Publish your bot to existing Azure bot service framework channels (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/1/2019

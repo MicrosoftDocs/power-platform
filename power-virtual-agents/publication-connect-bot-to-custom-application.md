@@ -1,5 +1,5 @@
 ---
-title: "Publish to mobile and web apps"
+title: "Add bots to mobile and web apps"
 description: "Publish your bot to mobile (native and web) apps, or to other types of apps (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/1/2019
