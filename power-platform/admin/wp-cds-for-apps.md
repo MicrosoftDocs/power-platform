@@ -1,6 +1,6 @@
 ---
-title: "bout Common Data Service   | MicrosoftDocs"
-description: bout Common Data Service 
+title: "About Common Data Service   | MicrosoftDocs"
+description: About Common Data Service 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -37,18 +37,7 @@ On the other hand, if you don’t see the Create my Database link then the Commo
 
 From the Dynamics 365 Admin center you can open the environment as well as manage and view some of the environment details. The actions you can take on each environment depends currently on if it started as an environment for model-driven apps in Dynamics 365 or if you started it with just the core Common Data Service entities. For core Common Data Service environments, you can only copy or set notifications. On Common Data Service environments you also have the ability to reset the environment if it is of type sandbox, and potentially convert an environment to a sandbox to then test or reset.
 
-## Common Data Service backups and restore
-
-From here you can also see the database backups. As you can see from the following image, backups run automatically every day. No action is required by you, or any administrator to ensure daily backups.
-
-![Dynamics 365 Administration center](media/d365-admin-center.png "Dynamics 365 Administration center")
-
-You do however have the option to manually take a backup. A great use for this is before doing big data imports or changes or deploying new releases of applications.
-
-> [!div class="mx-imgBorder"] 
-> ![](media/manual-backup.png "Manual backup")
-
-Once the manual backup is completed it will show in the list of other backups allowing you to select it as the restore point.
-
 ### See also
-[Microsoft Learn: Introduction to Common Data Service](https://docs.microsoft.com/learn/power-platform/intro-common-data-service/)
+[Microsoft Learn: Introduction to Common Data Service](https://docs.microsoft.com/learn/power-platform/intro-common-data-service/)<br />
+[Environments overview](environments-overview.md)<br />
+[Create and manage environments in the PowerApps Admin center](create-environment-powerapps.md)
