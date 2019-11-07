@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 03/30/2018
+ms.date: 10/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -24,7 +24,7 @@ In this topic, you'll learn how to create a DLP policy for a single environment 
 To follow the steps, **one** of the following items is required:
 * Azure Active Directory Tenant Admin permissions
 * Office 365 Global Admin permissions
-* PowerApps Environment Admin permissions plus a PowerApps Plan 2, Microsoft Flow Plan 2, or a [PowerApps Plan 2 trial](https://web.powerapps.com/signup?redirect=marketing&email=) license
+* PowerApps Environment Admin permissions plus a PowerApps plan, Power Automate plan, or a [free PowerApps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) license
 
 For more information, see [Environments administration in PowerApps](environments-administration.md).
 

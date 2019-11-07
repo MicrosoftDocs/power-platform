@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 11/06/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -46,9 +46,8 @@ Entities with questions about eligibility for PowerApps US Government should con
 
 Access to PowerApps US Government plans is restricted to the following offerings; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- PowerApps/Flow Plan 1 US Government
-- PowerApps/Flow Plan 2 US Government
-- In addition to the standalone plans, PowerApps and Microsoft Flow capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Office 365 and Dynamics 365. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
+- PowerApps/Power Automate Plan US Government
+- In addition to the standalone plans, PowerApps and Power Automate capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Office 365 and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
 
 Additional information about the differences in functionality between these groups of licenses is described in more detail on the [PowerApps licensing information](https://powerapps.microsoft.com/pricing/) page. PowerApps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
 
@@ -103,7 +102,7 @@ Microsoft has designed the platform and our operational procedures to meet the r
 
 ## PowerApps US Government and other Microsoft services
 
-PowerApps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Microsoft Flow US Government. PowerApps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, PowerApps mobile applications any third-party client application that connects to PowerApps US Government are not part of PowerApps US Government's accreditation boundary and government customers are responsible for managing them.
+PowerApps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Microsoft Power Automate US Government. PowerApps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, PowerApps mobile applications any third-party client application that connects to PowerApps US Government are not part of PowerApps US Government's accreditation boundary and government customers are responsible for managing them.
 
 PowerApps US Government leverages the Office 365 customer administrator UI for customer administration and billing—PowerApps US Government maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, PowerApps US Government leverages Azure (including Azure Government) ATOs for infrastructure and platform services, respectively.
 
@@ -136,8 +135,8 @@ You use a different set of URLs to access PowerApps US Government environments, 
 
 | **Commercial version URL**     | **US Government version URL**         |
 |--------------------------------|---------------------------------------|
-| <https://web.powerapps.com>    | <https://gov.web.powerapps.us> (GCC) <br/><https://gov.make.powerapps.us> (GCC)<br/><https://high.make.powerapps.us> (GCC High)   |
-| <https://create.powerapps.com> | <https://gov.create.powerapps.us> (GCC)<br /><https://high.make.powerapps.us> (GCC High)    |
+| <https://web.powerapps.com>    | <https://make.gov.powerapps.us> (GCC)<br/><https://make.high.powerapps.us> (GCC High)   |
+| <https://create.powerapps.com> | <https://make.gov.powerapps.us> (GCC)<br /><https://make.high.powerapps.us> (GCC High)    |
 | <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us> (GCC)<br /><https://high.admin.powerapps.us> (GCC High)     |
 | <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors><br /><https://high.flow.microsoft.us/connectors> (GCC High)  |
 
@@ -158,7 +157,7 @@ For those customers that implement network restrictions, please ensure access to
 *.crm9.dynamics.com<br/>
 *.dynamics365portals.us
 
-Please also refer to the Required IP Ranges to enable access to Common Data Service Instances that users and administrators may create within your tenant:
+Please also refer to the Required IP Ranges to enable access to Common Data Service environments that users and administrators may create within your tenant:
 
 [https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 
@@ -175,13 +174,13 @@ Please also refer to the Required IP Ranges to enable access to Common Data Serv
 *.crm.microsoftdynamics.us<br/>
 *.high.dynamics365portals.us
 
-Please also refer to the Required IP Ranges to enable access to Common Data Service Instances that users and administrators may create within your tenant:
+Please also refer to the Required IP Ranges to enable access to Common Data Service environments that users and administrators may create within your tenant:
 
 [https://www.microsoft.com/download/confirmation.aspx?id=57063](https://www.microsoft.com/download/confirmation.aspx?id=57063)  (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 
 ## Connectivity between PowerApps US Government and public Azure Cloud Services
 
-Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a PowerApps customer, and you have existing SQL instances in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government cloud IP space, for the following datacenters:
+Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific environment, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a PowerApps customer, and you have existing SQL environments in the Azure public cloud that you need to access, you must open specific firewall rules in SQL to the Azure Government cloud IP space, for the following datacenters:
 
 - USGov Virginia
 - USGov Texas
@@ -213,7 +212,9 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products.
 
-- [Data integration and Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
+- [Integrate data into Common Data Service](data-integrator.md).
+
+- [Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 
 - [Common Data Service analytics](analytics-common-data-service.md).
 
@@ -221,10 +222,14 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
 
-- [Power Platform Admin center](admin-documentation.md): The admin center can be used to [open support tickets](get-help-support.md), but other functionality is currently not available in US Government tenants.
-
 - [Customize a SharePoint list form by using PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form).
 
+## Requesting support
+
+Having a problem with your service? You can create a support request to get the issue resolved.  
+  
+More information: [Contact Technical Support](get-help-support.md)
+
 ### See also
-[Microsoft Flow US Government](https://docs.microsoft.com/en-us/flow/us-govt)
+[Microsoft Power Automate US Government](https://docs.microsoft.com/flow/us-govt)
 

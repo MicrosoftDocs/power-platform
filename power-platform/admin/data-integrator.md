@@ -16,9 +16,9 @@ search.app:
 ---
 # Integrate data into Common Data Service
 
-The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Common Data Service. It supports integrating data from multiple sources—for example, Dynamics 365 for Finance and Operations, Dynamics 365 for Sales and SalesForce (Preview), SQL (Preview)—into Common Data Service. It also supports integrating data into Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. This service has been generally available since July 2017.  
+The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Common Data Service. It supports integrating data from multiple sources—for example, Dynamics 365 Finance and Operations, Dynamics 365 Sales and SalesForce (Preview), SQL (Preview)—into Common Data Service. It also supports integrating data into Dynamics 365 Finance and Operations and Dynamics 365 Sales. This service has been generally available since July 2017.  
 
-We started with first-party apps—for example, Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. With the help of Power Query or M-based connectors, we are now able to support additional sources like SalesForce (Preview) and SQL (Preview) and will extend this to 20+ sources in the near future. 
+We started with first-party apps—for example, Dynamics 365 Finance and Operations and Dynamics 365 Sales. With the help of Power Query or M-based connectors, we are now able to support additional sources like SalesForce (Preview) and SQL (Preview) and will extend this to 20+ sources in the near future. 
 
 > [!div class="mx-imgBorder"]
 > ![Data source to destination](media/data-integrator/DataIntegratorP2P-new.PNG "Data source to destination")
@@ -28,23 +28,23 @@ We started with first-party apps—for example, Dynamics 365 for Finance and Ope
 
 ## How can you use the Data Integrator for your business?
 
-The Data Integrator (for Admins) also supports process-based integration scenarios like Prospect to Cash that provide direct synchronization between Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. The Prospect to Cash templates that are available with the data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. While data is flowing between Finance and Operations and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in Finance and Operations. 
+The Data Integrator (for Admins) also supports process-based integration scenarios like Prospect to Cash that provide direct synchronization between Dynamics 365 Finance and Operations and Dynamics 365 Sales. The Prospect to Cash templates that are available with the data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. While data is flowing between Finance and Operations and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in Finance and Operations. 
 
 > [!div class="mx-imgBorder"]
 > ![Prospect to Cash](media/data-integrator/ProspectToCash631.png "Prospect to Cash")
 
-The Prospect to Cash integration enables sellers to handle and monitor their sales processes with the strengths from Dynamics 365 for Sales, while all aspects of fulfillment and invoicing happen using the rich functionality in Finance and Operations. With Microsoft Dynamics 365 Prospect to Cash integration, you get the combined power from both systems. 
+The Prospect to Cash integration enables sellers to handle and monitor their sales processes with the strengths from Dynamics 365 Sales, while all aspects of fulfillment and invoicing happen using the rich functionality in Finance and Operations. With Microsoft Dynamics 365 Prospect to Cash integration, you get the combined power from both systems. 
 
 See the video: [Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg)
 
-For more information about the Prospect to Cash integration, see the documentation on the [Prospect to Cash solution](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
+For more information about the Prospect to Cash integration, see the documentation on the [Prospect to Cash solution](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
 
 We also support [Field Service integration](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
-and [PSA (Project Service Automation) integration](https://docs.microsoft.com/dynamics365/unified-operations/financials/project-management/psa-integration?toc=/fin-and-ops/toc.json) to Dynamics 365 for Finance and Operations.
+and [PSA (Project Service Automation) integration](https://docs.microsoft.com/dynamics365/unified-operations/financials/project-management/psa-integration?toc=/fin-and-ops/toc.json) to Dynamics 365 Finance and Operations.
 
 ## Data Integrator Platform
 
-The Data Integrator (for Admins) consists of the Data Integration platform, out-of-the-box templates provided by our application teams (for example, Dynamics 365 for Finance and Operations and Dynamics 365 for Sales) and custom templates created by our customers and partners. We have built an application-agnostic platform that can scale across various sources. At the very core of it, you create connections (to integration end points), choose one of the customizable templates with predefined mappings (that you can further customize), and create and execute the data integration project.  
+The Data Integrator (for Admins) consists of the Data Integration platform, out-of-the-box templates provided by our application teams (for example, Dynamics 365 Finance and Operations and Dynamics 365 Sales) and custom templates created by our customers and partners. We have built an application-agnostic platform that can scale across various sources. At the very core of it, you create connections (to integration end points), choose one of the customizable templates with predefined mappings (that you can further customize), and create and execute the data integration project.  
 
 Integration templates serve as a blueprint with predefined entities and field mappings to enable flow of data from source to destination. It also provides the ability to transform the data before importing it. Many times, the schema between the source and destinations apps can be very different and a template with predefined entities and field mappings serves as a great starting point for an integration project.  
 
@@ -90,7 +90,7 @@ Before you can create a data integration project, you must provision a connectio
 
 ### How to create a connection set
 
-Connection sets are a collection of two connections, environments for the connections, organization mapping information, and integration keys that can be reused among projects. You can start using a connection set for development and then switch to a different one for production. One key piece of information that is stored with a connection set is organization unit mappings—for example, mappings between the Finance and Operations legal entity (or company) and Dynamics 365 for Sales organization or business units. You can store multiple organization mappings in a connection set.
+Connection sets are a collection of two connections, environments for the connections, organization mapping information, and integration keys that can be reused among projects. You can start using a connection set for development and then switch to a different one for production. One key piece of information that is stored with a connection set is organization unit mappings—for example, mappings between the Finance and Operations legal entity (or company) and Dynamics 365 Sales organization or business units. You can store multiple organization mappings in a connection set.
 
 **To create a connection set**
 
@@ -326,7 +326,7 @@ You can customize projects and templates in these ways:
 2. Create a data integration project. Select the **Data integration** tab in the left navigation pane.
 3. Select **New project** and provide a name for your project. For example, "Demo_CreateYourOwnTemplate project".
 4. In the **Select a template** list page, pick a generic blank template. 
-   For this example, choose the **Sales to Fin and Ops** template since we want to move data from Dynamics 365 for Finance and Operations to Dynamics 365 for Sales.
+   For this example, choose the **Sales to Fin and Ops** template since we want to move data from Dynamics 365 Finance and Operations to Dynamics 365 Sales.
     
     > [!div class="mx-imgBorder"] 
     > ![](media/create-data-integration-project.png "Create data integration project")
@@ -334,7 +334,7 @@ You can customize projects and templates in these ways:
 4. Follow the steps 6 through 9 <a href="#CreateProject">here</a> to finish creating a data integration project. Select **Save**.
 
 5. You’ll see the Tasks page which is empty since it’s a blank template, without any tasks. Select **Add task** to pick an entity from the drop-down list and add a new task.
-   In this case, for demo purposes, we will create an **Activities Sales to Fin and Ops** task by picking **Activities** entity for Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. Select **Create**.
+   In this case, for demo purposes, we will create an **Activities Sales to Fin and Ops** task by picking **Activities** entity for Dynamics 365 Finance and Operations and Dynamics 365 Sales. Select **Create**.
 
     > [!div class="mx-imgBorder"] 
     > ![](media/activities-sales-fin-opps-task.png "ActivitiesSales to Fin and Ops task")
@@ -443,27 +443,27 @@ For more information on Power Query, see [Power Query documentation](https://doc
 
 There are several factors that impact the performance of an integration scenario. Performance is highly dependent on: 
 
-- Which applications you are integrating: Dynamics 365 for Finance and Operations and Common Data Service
+- Which applications you are integrating: Dynamics 365 Finance and Operations and Common Data Service
 
 - Which entities are used: the entities' shape, validation, and business logic (standard and customizations)
 
 The Data Integrator takes the data from the source application and pushes it into the target application. The main performance considerations are on how source and target applications scale with the concerned entities. It leverages the best available technologies to pull/push data in a performant manner.
 
-Dynamics 365 for Finance and Operations uses the data management framework which provides a way to pull/push data in the most performant fashion. The data management framework is used to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations. 
+Dynamics 365 Finance and Operations uses the data management framework which provides a way to pull/push data in the most performant fashion. The data management framework is used to manage data entities and data entity packages in Microsoft Dynamics 365 Finance and Operations. 
 
 Dynamics 365 for Common Data Service uses OData APIs along with parallelism to maximize the performance. 
 
-You can use the following settings to tune the performance of Dynamics 365 for Finance and Operations based on load, entity, and resources.
+You can use the following settings to tune the performance of Dynamics 365 Finance and Operations based on load, entity, and resources.
 
-### Exporting data from Dynamics 365 for Finance and Operations:
+### Exporting data from Dynamics 365 Finance and Operations:
 
 - Direct export (**skip Staging On**)
   Make sure the entities used for integration support direct export (**skip Staging On**). This allows export to run in bulk fashion and the staging table is bypassed. If you run with **skip Staging Off**, then it falls back to row by row calls and data is inserted in the staging table. 
 
 - Enable change tracking for entities
-  Change tracking enables incremental export of data from Microsoft Dynamics 365 for Finance and Operations by using data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. Without change tracking, you will do full exports which may affect performance. For complex scenarios, use custom query for change tracking.
+  Change tracking enables incremental export of data from Microsoft Dynamics 365 Finance and Operations by using data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. Without change tracking, you will do full exports which may affect performance. For complex scenarios, use custom query for change tracking.
 
-### Importing data to Dynamics 365 for Finance and Operations:
+### Importing data to Dynamics 365 Finance and Operations:
 
 - Make sure the entity itself is performant. If possible, create set-based entities.
 
@@ -473,8 +473,8 @@ You can use the following settings to tune the performance of Dynamics 365 for F
 - Turning off validations (optional): 
   While the Data Integrator does not bypass any business logic and validations, you may optionally turn off the ones that are not required to improve performance.
 
-Consider the following tips to ensure performance while importing or exporting data from Dynamics 365 for Customer Engagement environments.
+Consider the following tips to ensure performance while importing or exporting data from Common Data Service environments.
 
-### Importing/Exporting data to/from Dynamics 365 for Customer Engagement
+### Importing/Exporting data to/from model-driven apps in Dynamics 365
 
 - Ensure indexes are defined for integration keys.

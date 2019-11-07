@@ -62,7 +62,7 @@ The PowerApps environment includes predefined security roles that reflect common
 |---------|---------|---------|
 |System Administrator     |  Create, Read, Write, Delete, Customizations, Security Roles       | Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment. More information: [Privileges required for customization](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |System Customizer     | Create (self), Read (self), Write (self), Delete (self), Customizations         | Has full permission to customize the environment. However, can only view records for environment entities that they create. More information: [Privileges required for customization](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
-|Environment Maker     |  Customizations       | Can create new resources associated with an environment including apps, connections, custom APIs, gateways, and flows using Microsoft Flow. However, does not have any privileges to access data within an environment. More information: [Environments overview](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
+|Environment Maker     |  Customizations       | Can create new resources associated with an environment including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, does not have any privileges to access data within an environment. More information: [Environments overview](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
 |Common Data Service User     |  Read (self), Create (self), write (self), delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note: this only applies to non-custom entities. See [Create or configure a custom security role](#create-or-configure-a-custom-security-role).    |
 |Delegate     | Act on behalf of another user        | Allows code to run as another user or impersonate.  Typically used with another security role to allow access to records. More information: [Impersonate another user](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user)        |
 
@@ -90,7 +90,7 @@ For more information about access and scope privileges, see [Security roles](htt
 
 2. Click on the **Dynamics 365 Administration Center** link in the **Details** tab to manage the environment in the Dynamics 365 admin center.
 
-3. Select the instance (with the same name of environment) and select **Open**.
+3. Select the environment (with the same name of environment) and select **Open**.
 
     ![](./media/database-security/glados-instance-list.png)
 
@@ -117,11 +117,11 @@ For more information about access and scope privileges, see [Security roles](htt
 ## Minimum privileges to run app
 When you create a custom security role, you need to include a set of minimum privileges into the security role in order for a user to run an app. We've created a solution you can import that provides a security role with the required minimum privileges.  
 
-Start by downloading the solution from the Download Center: [Common Data Service minimum privilege security role](http://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip).
+Start by downloading the solution from the Download Center: [Common Data Service minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip).
 
 Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 
-When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/create-edit-security-role#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
+When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-security-role#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
 
 > [!IMPORTANT]
 > You should try out the solution in a development environment before importing into a production environment. 

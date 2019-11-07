@@ -1,31 +1,25 @@
 ---
-title: "About On-premises gateway | MicrosoftDocs"
-description: About On-premises gateway.
-ms.custom: ""
-ms.date: 09/27/2018
-ms.reviewer: ""
+title: "About On-premises gateways  | MicrosoftDocs"
+description: About On-premises gateway
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 09/27/2018
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # About On-premises gateway
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The on-premises gateway allows PowerApps and Flow to reach back to on-premise resources to support hybrid integration scenarios. The gateway leverages Azure Service Bus relay technology to security allow access to on-premise resources.
+The on-premises gateway allows PowerApps and Power Automate to reach back to on-premise resources to support hybrid integration scenarios. The gateway leverages Azure Service Bus relay technology to security allow access to on-premise resources.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/onpremises-data-gateway.png "On-premises data gateway")
@@ -48,11 +42,11 @@ When you setup a data source on the gateway you will need to provide credentials
 
 The gateway service creates an outbound connection to Azure Service Bus so there are no inbound ports required to be open. The outbound connection communicates on ports: TCP 443(default), 5671, 5672 9350 through 9354.
 
-It is recommended that you whitelist the IP addresses for the data region in your firewall. You can download the latest list here https://www.microsoft.com/en-us/download/details.aspx?id=41653 These IP addresses are used for outbound communication with Azure Service Bus.
+It is recommended that you whitelist the IP addresses for the data region in your firewall. You can download the latest list here https://www.microsoft.com/download/details.aspx?id=41653 These IP addresses are used for outbound communication with Azure Service Bus.
 
 ## Gateway Access
 
-Most of the PowerApps and Flow licenses have access to use the gateway with the exception of some of the lower end Office 365 licenses (Business and Office Enterprise E1 SKUs).
+Most of the PowerApps and Power Automate licenses have access to use the gateway with the exception of some of the lower end Office 365 licenses (Business and Office Enterprise E1 SKUs).
 
 ## Updates to the Data Gateway
 
@@ -63,4 +57,4 @@ Updates are not auto-installed for the On-premises data gateway. It is highly en
 A recovery key is assigned (i.e., not auto-generated) by the administrator at the time the On-Premises Data Gateway is installed. The recovery key is required if the gateway is to be relocated to another machine, or if the gateway is to be restored. Therefore, the key should be retained where other system administrators can locate it if necessary.
 
 ### See also
-[On-premises data gateway](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem)
+[On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem)

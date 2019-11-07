@@ -1,20 +1,13 @@
 ---
-title: "Broadcast announcements to an entire organization | MicrosoftDocs"
+title: "Broadcast announcements to an entire organization  | MicrosoftDocs"
 description: View and manage behavior settings for Common Data Service.
-ms.custom: ""
-ms.date: 08/13/2019
-ms.reviewer: ""
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/13/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
@@ -24,7 +17,7 @@ search.app:
 ---
 # Broadcast announcements to an entire organization 
 
-Circulate information quickly to a wide set of users at one go by using Announcements in Microsoft Dynamics 365. Announcements can also serve as message boards, where you can post topics of your interest that you wish to share, or get answers to.
+Circulate information quickly to a wide set of users at one go by using Announcements in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Announcements can also serve as message boards, where you can post topics of your interest that you wish to share, or get answers to.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Announcements**.
 
@@ -55,7 +48,7 @@ Make sure you have the System Administrator or System Customizer security role o
    - Expiration Date (optional) - Type the date on which you want to stop the broadcast and the announcement should expire.
 
    > [!NOTE]
-   > You can’t edit/extend this date after expiry. Microsoft Dynamics 365 deletes the announcement after the expiration date.
+   > You can’t edit/extend this date after expiry. Model-driven apps in Dynamics 365 deletes the announcement after the expiration date.
 
 4. When you’re done, on the command bar, choose **Save** or **Save and Close** to begin the broadcast.
 
@@ -75,7 +68,7 @@ Make the announcements available to other users in your organization by using we
     </html>
     ```  
 
-2. In Dynamics 365, go to **Settings** > **Customizations** > **Customize the System**.
+2. Go to **Settings** > **Customizations** > **Customize the System**.
 
 3. Under **Components**, select **Web Resources** > **New**.
 

@@ -16,7 +16,7 @@ search.app:
 ---
 # Data Integrator error management and troubleshooting
 
-The Data Integrator is a point-to-point integration service used to integrate data from multiple sources--for example, Dynamics 365 for Finance and Operations, Dynamics 365 for Sales, Salesforce, and Microsoft SQL (Preview)--into Common Data Service. It also supports integrating data into Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. The [Integrate data into Common Data Service](data-integrator.md) topic provides detailed step-by-step instructions to help you set up projects for process-based integration scenarios like Prospect to Cash, Field Service, and Project Service integrations. 
+The Data Integrator is a point-to-point integration service used to integrate data from multiple sources--for example, Dynamics 365 Finance and Operations, Dynamics 365 Sales, Salesforce, and Microsoft SQL (Preview)--into Common Data Service. It also supports integrating data into Dynamics 365 Finance and Operations and Dynamics 365 Sales. The [Integrate data into Common Data Service](data-integrator.md) topic provides detailed step-by-step instructions to help you set up projects for process-based integration scenarios like Prospect to Cash, Field Service, and Project Service integrations. 
 
 While we are constantly evolving and driving fixes into the platform based on customer feedback, we understand there is a need to provide guidance when you run into issues. This topic walks you through error management and troubleshooting some of these issues.
 
@@ -113,16 +113,16 @@ If you are unable to see your connections or environments in the drop-down while
    > [!div class="mx-imgBorder"] 
    > ![](media/ConnectionsIssue.png "Connections issue")
 
-* **Environment**: If you don’t see your environments in the drop-down, ensure that the account you used to create the connections has the appropriate access to the entity. A good way to test this is by creating a *flow* (using Microsoft Flow). 
+* **Environment**: If you don’t see your environments in the drop-down, ensure that the account you used to create the connections has the appropriate access to the entity. A good way to test this is by creating a *flow* (using Microsoft Power Automate). 
 
-  Here is an example of creating a simple flow to test your connection to Dynamics 365 for Finance and Operations:
+  Here is an example of creating a simple flow to test your connection to Dynamics 365 Finance and Operations:
 
   1. Create a new flow (choose **Create from blank**) under **Business logic/Flow** from [https://web.powerapps.com](https://web.powerapps.com).
 
       > [!div class="mx-imgBorder"] 
       > ![](media/ConnectionstestFlow1.png "Connections new flow")
 
-  2. Select a **Recurrence** trigger. Under **New Step**, search for and select **Dynamics 365 for Finance and Operations connector**.
+  2. Select a **Recurrence** trigger. Under **New Step**, search for and select **Dynamics 365 Finance and Operations connector**.
 
       > [!div class="mx-imgBorder"] 
       > ![](media/ConnectionstestFlow2.png "Connections recurrence trigger")
@@ -132,17 +132,17 @@ If you are unable to see your connections or environments in the drop-down while
       > [!div class="mx-imgBorder"] 
       > ![](media/ConnectionstestFlow3.png "Connections create record")
 
-  4. Select the drop-down under **Instance** to show all the Dynamics 365 Finance and Operations environments. This is a good step to verify that your account (from the previous step) has access to the environments. 
+  4. Select the drop-down under **environment** to show all the Dynamics 365 Finance and Operations environments. This is a good step to verify that your account (from the previous step) has access to the environments. 
 
       > [!div class="mx-imgBorder"] 
-      > ![](media/ConnectionstestFlow4.png "Connections instances")
+      > ![](media/ConnectionstestFlow4.png "Connections environments")
 
   5. Once you have picked your environment, confirm that you have access to all the entities under it.
 
       > [!div class="mx-imgBorder"] 
       > ![](media/ConnectionstestFlow5.png "Connections confirm access to entities")
 
-* **Organizations**: This is where you would specify the legal entity (for example, USMF) for Dynamics 365 for Finance and Operations, the business unit for Dynamics 365 for Sales, or the Common Data Service organization name. If you miss this step, you get a message that contains valid names corresponding to your application that you then need to plug in under Organizations.
+* **Organizations**: This is where you would specify the legal entity (for example, USMF) for Dynamics 365 Finance and Operations, the business unit for Dynamics 365 Sales, or the Common Data Service organization name. If you miss this step, you get a message that contains valid names corresponding to your application that you then need to plug in under Organizations.
 
 ### Project validation errors 
 
@@ -180,7 +180,7 @@ If you are notified of a project execution that completed with a warning or is i
 > [!div class="mx-imgBorder"] 
 > ![](media/Tshoot-WarningError1.png "Troubleshooting error")
 
-If this is an integration project where Dynamics 365 for Finance and Operations is the source, go to the Data Management workspace in Dynamics 365 Finance and Operations. Then filter projects based on your data integration project name, or specifically choose the type of import or export job.
+If this is an integration project where Dynamics 365 Finance and Operations is the source, go to the Data Management workspace in Dynamics 365 Finance and Operations. Then filter projects based on your data integration project name, or specifically choose the type of import or export job.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/Tshoot-WarningError2.png "Data Management workspace")
