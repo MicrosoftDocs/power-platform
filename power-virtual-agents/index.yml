@@ -34,7 +34,7 @@ landingContent:
             url: quickstart.md
       - linkListType: reference
         links:
-          - text: Power Virtual Agents Videos
+          - text: Videos
             url: videos.md
           - text: FAQ
             url: faq.md
@@ -71,3 +71,4 @@ landingContent:
             url: analytics-overview.md
           - text: Use analytics to improve your bot
             url: getting-started-analytics.md
+
