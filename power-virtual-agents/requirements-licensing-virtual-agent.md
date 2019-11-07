@@ -1,65 +1,48 @@
 ---
-title: "TITLE"
-description: "DESCRIPTION"
-keywords: "KEYWORDS"
-ms.date: 09/04/2019
+title: "Licensing for Power Virtual Agents"
+description: "Learn the various license types for Power Virtual Agents and learn how to manage access to Power Virtual Agents in your organization"
+keywords: "Administration, licensing"
+ms.date: 12/02/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
-author: iaanw
-ms.author: iawilt
-manager: shellyha
+author: mivakoc
+ms.author: mivakoc
+manager: mahesha
 ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
-# H1 - Should be same as your title. There should only ever be one H1.
+# Licensing for Power Virtual Agents
 
-Why would anyone want to do this thing or use this feature?
+To see the available subscriptions for Power Virtual Agents see the [pricing page](https://go.microsoft.com/fwlink/?linkid=2099502). This documentation focuses on how to purchase the available subscriptions and assign licenses for Power Virtual Agents to your users.
 
-## H2
+## Managing liceneses using Microsoft Admin Portal
+You can pruchase Power Virtual Agents licenses for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
 
-Describe what this procedure will do and why someone would want to do it.
+### Purchasing Base and USL SKUs
+1. Navigate to [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
+2. On the left navigation pane, select **Billing -> Purchase services**
+3. Search for Power Virtual Agents
+4. Select Power Virtual Agents and Power Virtual Agents user license
+5. On the confirmation screen, select the number of licenses you would like to purchase
+6. Complete the check out process
 
+### Give indidvidual users access
+1. Navigate to [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
+2. On the left navigation pane, select **Users -> Active users**
+3. Select users to whom you would like to give access and select **Manage product licenses**
+4. Select **Power Virtual Agents user license** and click **Save changes**
 
-### Use H3 underneath H2.
-  
+  > [!NOTE]
+  > To simplify User License management you can assign licenses to an AAD security group. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
-For standards, go to the [OPS guide](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
+## Trial plans
+Users in your organization can trial Power Virtual Agents for limited time period.
+You can choose to disable or enable the ability for users in your organization to sign up for a trial by modifying the **AllowAdHocSubscriptions** flag in your organization settings. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-self-service-signup). 
 
-Here are some quick references so you can copy and paste:
+## Billing unit explanation
+Currently, we only report the total number of sessions in the product. We do not report the number of billed sessions. The number of billed sessions will be always lower than the number of sessions. We are working on bringing the number of billed sessions into the product soon.
 
-![IMAGE ALT TEXT](media/IMAGENAME.png)
-
-[Link text](url/filename.md)
-
-[Link text](https://microsoft.com/filename)
-
->[!NOTE]
->Use a > on a new line for each line break. Notes are purple
-
->[!WARNING]
->Use a > on a new line for each line break. These are red.
-
->[!TIP]
->Use a > on a new line for each line break. These are green.
-
->[!IMPORTANT]
->Use a > on a new line for each line break. These are blue
-
->[!CAUTION]
->I dont know if this still exists.
-
-**Bold text**
-
-*Italic text*
- 
- <!-- comment -->
-
-
- Table head row | Second col | Third col
- ---|---|---
- Row text | Row text | Row text
-
-
-
+## Licensing Terms
+Visit [Microsoft Volume Licensing](http://www.microsoftvolumelicensing.com/Default.aspx) to quickly access licensing terms, conditions, and supplemental information relevant to the use of Power Virtual Agents

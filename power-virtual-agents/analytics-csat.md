@@ -1,18 +1,20 @@
 ---
 title: "Customer satisfaction rate page"
 description: "Learn about the Power Virtual Agents Customer Satisfaction page."
-ms.date: 05/29/2019
+ms.date: 12/02/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: m-hartmann
-ms.author: mhart
-manager: shellyha
+author: mivakoc
+ms.author: mivakoc
+manager: mahesha
 ---
 
 # Customer Satisfaction page
 
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score.
 

@@ -1,18 +1,22 @@
 ---
 title: "Analytics overview"
-description: "Learn about the Power Virtual Agents pages."
-ms.date: 05/29/2019
+
+description: "Learn about the Power Virtual Agents for Customer Service pages."
+ms.date: 12/2/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: m-hartmann
-ms.author: mhart
-manager: shellyha
+author: mivakoc
+ms.author: mivakoc
+manager: mahesha
+
 ---
 
 # Analytics overview
 
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Power Virtual Agents analytics pages contain a variety of charts that show you key performance indicators for your bot, give you graphical views of the trends and breakdowns in your bot's support topics, and use artificial intelligence technology to highlight support topics that are having the greatest impact on your bot's performance.
 
