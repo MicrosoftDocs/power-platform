@@ -1,154 +1,319 @@
 ---
 
 title: "Add actions to your bot using Microsoft Flow"
-description: "Learn how to add actions to your bot using Microsoft Flow."
+description: "Learn how to add actions to your bot using Microsoft Automate flows."
 keywords: "KEYWORDS"
-ms.date: 09/04/2019
+ms.date: 10/29/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "VA"
-ms.collection: virtualagent
+ms.custom: "PVA"
+ms.collection: powervirtualagents
 ---
 
 
 
 
-# Add actions to your bot using Microsoft Power Automate 
+# Add actions to a bot using Microsoft Power Automate 
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
-## To create a new flow from a Virtual Agent using a template
-You can enable your bot to perform an action by calling a Microsoft Automate flow. The flow you want to use must share the same Common Data Service environment as your bot.  You can create a flow from with your Virtual Agent authpring experince by selecting an Action node in Dialog Authoring and using Create new flow button:
+## Create a new flow from Power Virtual Agents Dialog Editor 
 
-(Pic 1 placeholder)
+You can enable your bot to perform an action by calling a Microsoft Automate. The flow that can be called from a Dialog must be in the same **Common Data Service environment** as your bot. To create a flow for the bot, select **Call an action** node and use **Create a flow** option:
 
-This will open flow template in Microsoft Automate portal in a separate tab. The portal will automatically open in the same environment as the bot and will use the credentials used in Virtual Agent. Bots are only able to call flows that are equipped with HTTP triggers and HTTP responses, and this flow template presents an example of such flow:
-
-(Pic 2 placeholder)
-
-A Virtual Agent bot can only invoke flows that have HTTP Request and HHTP Reponse interfaces. This starter flow in this template takes 2 input parameters, a String and Number, as specified in HTTP Request interface in the flow. The input parameters (String and Number) are described in the JSON snippet in HTTP Code:
+![Create a new Microsoft Automate flow](media/UseCreateFlowOption.jpg)
 
 
-Text box 1 (to be used for copy and paste by the reader)
-(Pic 3 placeholder)
+Using **Create a flow** option will open a starter flow template in Microsoft Automate portal in a separate tab. The Microsoft Automate portal will automatically open in the same environment as the bot using the same user credentials:
+
+![Microsoft Automate flow template](media/FlowTemplate.jpg)
 
 
-An HTTP Response is required to return outputs to the bot. This flow example returns 2 output parameters to the bot a String and Number, as specified in HTTP Response:
+This template is an example of a flow that can be used by bots. To be suitable for bots, a Microsoft Automate flow requires a special kind of trigger and response actions: 
 
-Text box 2 (for copy and paste by the reader)
-(Pic 4 placeholder)
+•	Trigger:  **HTTP Request**
 
-
-## Modify the bot flow template for your scenarios
-This template provides an example flow that would accept input parameters from a bot and also return outputs to the bot. You can modify this flow to suit your needs and create a variety of flows for your bot. For example, you could create a simple flow that takes an email address as an input parameter, sends an email message to that address, and returns a message that the email was successfully sent to a bot as output.
-
-Press Save button to save your new flow:
-
-By default, this new flow is created in My Flows tab on Microsoft Automate portal. Howveer, to use it with the bots, you must import your new flow from My Flows tab into a Solution. 
+•	Response Action:  **HTTP Response**
 
 
+Bots can use the following types of inputs and outputs with Microsoft Automate flows:
 
-## Add your flow to a Solution
-Go to Solutions tab on Microsoft Automate portal to see what Solutions are available to you:
+•	Number
 
-Pic 5 (Solutions Tab)
+•	String
 
-You can use any of existing Solutions for your flow, or you can create a new Solution. To create a new Solution, click on New button. Give you solution a name, select CDS as Publisher, and give it a version. 
-
-Pic 6 (Create a new solution)
-
-Use “Import button to import your new flow into a solution. Select Option Outside of Solutions and select you new flow. Once it is in a Solution, it can be used by a bot.
-
-Pic 7 (import a flow into a solution)
-
-This flow is now ready to be used in a bot. 
+•	Boolean
 
 
-## Use your flow in a bot
+This example in the template shows how to specify a flow to accept 2 input parameters from a bot, a String and a Number, as specified in **HTTP Request Body JSON Schema** by this JSON snippet:
 
-You can use you new flow in any Topic in a bot; you can pass variables to this as inputs flow and receive outputs that can be used in the dialog. Select Topics in the left pane to open the Topics page, and then select New topic.
 
-Picture 8 (Create a new Topic)
+![Microsoft Automate flow template inputs](media/FlowHttpRequestInputs.jpg)
 
-Specify a name, description, and trigger phrases for the topic. A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
-For example, for a Daily Deals topic, you could specify the following trigger phrases:
-daily deals
-deal of the day
-current deals
-today’s deals
-current offers
-today’s specials
 
-Once you have created the topic, you can create a conversation path that uses your flow. Select Edit to open the conversation editor.
+**HTTP Request Body JSON Schema**:
 
-In the conversation editor, enter a bot response in the Bot Says node, and then select User Says to display the User Responses node.
+   ``` JSON
+{
+    "type": "object",
+    "properties": {
+        "flow_input_string": {
+            "type": "string"
+        },
+        "flow_input_number": {
+            "type": "number"
+        }
+    }
+}
+ ```
 
-Picture 9 (Create bot converstaion that calls a flow)
+An **HTTP Response** action must be used to return outputs to the bot. This template provides an example on how to return 2 output parameters to the bot, a String and a Number:
 
-## To test the flow
-1. In the **Test bot** pane, select **Start over with latest conversation**. Then specify a trigger phrase for the topic that contains the flow.
 
-2. Enter your email address at the prompt.
+![Microsoft Automate flow template outputs](media/FlowHttpResponseOutputs.jpg)
 
-    The bot displays the email address to the customer to confirm that it will send a message to that address and stores the message specified in the flow in the **(x) message** variable.
 
-    The flow then sends the message to the customer.
+Note that both **Body** and **Response Body JSON Schema** sections must be filled out in **HTTP Response** action:
+
+**HTTP Response Body**:
+
+![Microsoft Automate flow template outputs - Body](media/Body.jpg)
+
+
+**HTTP Response Body JSON Schema** (under advanced options):
+
+![Microsoft Automate flow template outputs - Body Schema](media/HttpResponseBodySchema.jpg)
+
+
+   ``` JSON
+
+{
+    "type": "object",
+    "properties": {
+        "flow_output_string": {
+            "type": "string"
+        },
+        "flow_output_number": {
+            "type": "number"
+        }
+    }
+}
+```
+
+This template provides a fully functional Microsoft Automae flow that would accept 2 parameters, a Sring and a Number, and retun them to a bot as outputs. Press **Save** button to save your new flow:
+
+![Microsoft Automate flow template - Save](media/SaveFlowTemplate.jpg)
+
+
+Your flow will be saved to **My flows** tab on Microsoft Automate portal:
+
+
+![Microsoft Automate flow template - Save](media/MyFlows.jpg)
+
+
+
+
+
+## Move a flow to Solutions tab on Microsoft Automate portal
+
+To ensure your flow can be used with bots, it must be moved from **My Flows** tab into **Solutions** tab on Microsoft Automate portal. 
+
+Go to **Solutions** tab on Microsoft Automate portal to see what solutions are already available to you. You can use any of the existing solutions, or you can create a new solution for your flows.
+
+To create a new solution, click on **New solution** button:
+
+![Create a solution](media/NewSolution.jpg)
+
+
+Give your new solution a name, then select **CDS Default Publisher** in **Publisher** field, give it a **version number**, and press **Create** button: 
+
+![Save a new solution](media/NewSolution_details.jpg)
+
+
+Go to your new solution and use **Add existing** menu to add a flow: 
+
+![Add existing menu](media/AddExistingFlow.jpg)
+
+
+In **Add existing flow** screen, select **Outside of solutions** tab and select your flow. Then press **Add** button to add your flow to this solution:
+
+![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
+
+
+This flow will be moved from **My Flows** tab and into a solution. It is now ready to be used in a bot. 
+
+You can now see this flow on the list of available actions when you use **Call an action node** in the Dialog editor:
+
+![New flow shows up in Action picker](media/FlowInActionPicker.jpg)
+
+
+## Modify a flow on Microsoft Automate portal
+
+You can rename and modify your flow on Microosft Automate Portal. For example, the flow we have just created using the template can be updated to provide a weather forecast when called from a bot.
+
+To modify a flow, go to **Solutions** tab on Microsoft Automate portal and open your flow's solution. Use your flow’s **Edit menu** option to open this flow in editing experience:
+
+![Open your flow for Editing](media/EditFlow.jpg)
+
+
+
+Rename your flow to **Get weather forecast** and add the following flow input parameters to **HTTP Request trigger**, as shown below:
+
+
+•	City (String)
+
+•	Zipcode (Number)
+
+
+
+![Open your flow for Editing](media/RenameFlow.jpg)
+
+
+
+**Request Body JSON Schema**:
+
+
+   ``` JSON
+
+{
+    "type": "object",
+    "properties": {
+        "City": {
+            "type": "string"
+        },
+        "Zipcode": {
+            "type": "number"
+        }
+    }
+}
+
+   ``` 
+
+Next, choose **Add an action** to create a new action below **HTTP Request**:
+
+![Add flow action](media/AddAction.jpg)
+
+
+
+Type in **MSN weather** in the search box and choose **Get forecast for today** action from the list:
+
+
+![Add Get forecast action](media/AddMSNWeather.jpg)
+
+
+
+
+A new **MSN Weather Connector** is added to the flow. Add flow inputs **City** and **Zipcode** as parameters for **Location** field in MSN Weather Connector. Use **Add dynamic content** option and select **City** and **Zipcode** from the list:
+
+
+![Pass flow's input parameters to MSN Weather connector as location](media/AddLocationForMSN.jpg)
+
+
+Delete both **Initialize Variable** nodes using **Delete** option – they are not needed for **Get weather forecast** flow:
+
+
+![Add Dynamic variables](media/DeleteVariables.jpg)
+
+
+In **HTTP Response Body**, add output parameters that you want to return to the bot. Using **Add dynamic content** option, add the following outputs to the flow’s HTTP **Response** node:
+
+•	day_summary (String)
+
+•	location (String)
+
+• chance_of_rain (Number)
+
+
+![Add Dynamic variables to flow's reponse](media/AddDynamicVariables.jpg)
+
+
+
+Add the following JSON code to **Response Body JSON Schema** and **Save** your changes:
+
+
+![Add Dynamic variables to flow's reponse](media/GetWeatherFlowSave.jpg)
+
+
+
+**HTTP Response Body JSON Schema** (under advanced options):
+
+   ``` JSON
+
+{
+    "type": "object",
+    "properties": {
+        "day_summary": {
+            "type": "string"        },
+        "location": {
+            "type": "string"
+        },
+        "chance_of_rain": {
+            "type": "number"
+        }
+    }
+}
+
+   ``` 
+   
+This flow is you ready to be used in with the bots.
+
+
+## Call Microsoft Automate flow as an Action from a bot 
+
+You can call this Micrsosft Automate flow from a bot Topic using **Call an action** node. You can pass variables to this flow and receive flow outputs that can be used in a **Dialog**.
+
+To create a new **Topic**, go your **Virtual Agent Editor** and select **Topics** tab. Create a new **Topic** and name it as **Get weather**. Add a few **trigger phrases** for your new **Topic**:
+
+•	will it rain
+
+•	today’s forecast
+
+•	get weather
+
+•	what’s the weather
+
+
+To create a **Dialog** for your **Topic**, click on **Go to authoring canvas**:
+
+![Create a new Topic](media/CreateTopic.jpg)
+
+
+Use **Ask a question** nodes to have the bot ask users for the **City (String)** and **Zipcode (Number)** inputs:
+
+
+![Add Topic Dialog questions](media/TopicDialogQuestions.jpg)
+
+
+
+Next, use **Call an action** option to create an **Action** node to call **Get weather forecast** flow:
+
+![Call action](media/TopicCallActionWeather.jpg)
+
+
+Use **City (Var1)** and **Zipcode (Var2)** parameters as inputs for this flow, and add **Show a message** node to display weather forecast data using flow’s outputs:
+
+
+![Call action](media/TopicDisplayWeather.jpg)
+
+
+Press a **Save button** to save your Dialog. You new Topic that uses a Microsoft Automate flow to lookup a weaher forecast for a user is now ready for testing.
+
+
+
+
+## Test your Dailog
+
+In the **Test bot** pane, start a conversation with the bot by typing in a trigger phrase for the topic that contains the flow.
+
+Enter your City and Zipcpde at the prompt and get todays' weather foreast from the bot:
+
+![Test Dialog](media/TopicTestDialog.jpg)
+
     
- Picture 10 (Test bot converstaion that calls a flow)
-
-# H1 - Should be same as your title. There should only ever be one H1.
-
-Why would anyone want to do this thing or use this feature?
-
-## H2
-
-Describe what this procedure will do and why someone would want to do it.
-
-
-### Use H3 underneath H2.
-  
-
-For standards, go to the [OPS guide](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
-
-Here are some quick references so you can copy and paste:
-
-![IMAGE ALT TEXT](media/IMAGENAME.png)
-
-[Link text](url/filename.md)
-
-[Link text](https://microsoft.com/filename)
-
->[!NOTE]
->Use a > on a new line for each line break. Notes are purple
-
->[!WARNING]
->Use a > on a new line for each line break. These are red.
-
->[!TIP]
->Use a > on a new line for each line break. These are green.
-
->[!IMPORTANT]
->Use a > on a new line for each line break. These are blue
-
->[!CAUTION]
->I dont know if this still exists.
-
-**Bold text**
-
-*Italic text*
- 
- <!-- comment -->
-
-
- Table head row | Second col | Third col
- ---|---|---
- Row text | Row text | Row text
-
-
-
 
