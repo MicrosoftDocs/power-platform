@@ -1,6 +1,6 @@
 ---
 title: "Create and use entities in Power Virtual Agents"
-description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and greedy slot filling."
+description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: ""
 ms.date: 11/5/2019
 ms.service:
@@ -19,14 +19,14 @@ ms.collection: virtual-agent
 
 A big part of bot conversations in Power Virtual Agents is around natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say 'I tried to use my gift card but it doesn't work' and the bot is able to route the user to the topic related to gift cards not working - even if that exact phrase isn't listed as a trigger phrase.
 
-One fundamental part of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real world subject, like a phone number, zip code, city, or even a person's name. 
+One fundamental aspect of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real world subject, like a phone number, zip code, city, or even a person's name. 
 
 ## Prebuilt entities
 Out of the box, Power Virtual Agents comes with a set of pre-built entities, which represents the most commonly used stereotype information in real world dialogs, such as age, colors, numbers, and names. 
 
 With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use. 
 
-To help understand that notion, the money entity can be used as an example. 
+To help understand that notion, the **Money** entity can be used as an example. 
 
 1. In Power Virtual Agents, go to the **Entities** tab on the side navigation
 
@@ -40,7 +40,7 @@ To help understand that notion, the money entity can be used as an example.
 
 ![Image.2 Money entity description](media/entities-2(draft).png)
 
-Here you can an explanation of this entity and the ways it can be used to look for information related to money or currency from a user's input.
+Here you can see an explanation of this entity and the ways it can be used to look for information related to money or currency from a user's input.
 
 For example, when a user inputs "It costs 1000 dollars", using this money entity the bot knows the "1000 dollars" represents the **money type** of information. When the bot extracts this entity and saves it to a variable, it will save "1000" as a number even though the surrounding information was text.
 
@@ -57,7 +57,7 @@ To do this, you need to create a custom entity. In this case, you can create an 
 
     ![](media/entities-menu.png)
 
-2. Select **New entity** on the main menu.
+2. Select **New custom entity** on the main menu.
 
     ![](media/entities-new.png)
 
@@ -79,13 +79,15 @@ Specifically, when this toggle is on, it lets the bot autocorrect misspellings a
 
 
 ### Synonyms
-This option allows you to manually expand the matching logic by adding synonyms.  
+This option allows you to manually expand the matching logic by adding synonyms. Smart match and synonyms seamlessly work together to make your bot even smarter. 
 
 For example, for the "hiking" product category, you can add "trekking" and "mountaineering" as synonyms. For "Yoga", you can add "Pilates" as a synonym.
 
 ![Image.5 Synonyms](media/entities-5(draft).png)
 
-## Use enities in a dialog
+
+
+## Use entities in a dialog
 Now that you’ve done the work giving the bot the knowledge about outdoor gears by creating that product category entity and a few other custom entities, you can start to use them when constructing a dialog. 
 
 1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
@@ -100,7 +102,7 @@ Now that you’ve done the work giving the bot the knowledge about outdoor gears
 
     ![Image.6 Question node with entity selection](media/entities-6(draft).png)
 
-1. You can also optionally select items to show as buttons. For example, if you’d like to show some categories as buttons for users to conveniently choose from as their input, you can simply select **Select user options** and then pick them from the list that contains the items you added when you created the custom entity.
+1. You can also optionally select items to show as buttons. For example, if you’d like to show some categories as buttons for users to conveniently choose from as their input, you can simply choose **Select user options** and then pick them from the list that contains the items you added when you created the custom entity.
 
     ![Image.8 Add condition nodes](media/entities-8(draft).png)
     
@@ -111,7 +113,7 @@ Now that you’ve done the work giving the bot the knowledge about outdoor gears
 ## Slot filling
 Slot filling is a natural language understanding concept that means saving an extracted entity to an object. In Virtual Agents, slot filling means landing the extracted entity value into a variable.
 
-We will continue to use the outdoor geat topic as an example, which is triggered by typing “I want to buy something” in the test bot. 
+We will continue to use the outdoor gear topic as an example, which is triggered by typing “I want to buy something” in the test bot. 
 
 The topic is successfully triggered and the bot asks for the product category, also showing the button choices specified when authoring the **Ask a question** node. In the dialog tree, tracing also shows the bot is running to the question node you just edited. 
 
@@ -121,13 +123,13 @@ A user can use the pre-defined choices by selecting one of the buttons. Alternat
 
 ![Image.11 Tracing 2](media/entities-11(draft).png)
 
-In tracing, it shows the dialog is correctly routed to the path in which the product category value is "Hiking". You can inspect the variable value from the variable watch window at the bottom of the authoring canvas. In the watch window, it shows the variable value is "hiking". 
+In tracing, it shows the dialog is correctly routed to the path in which the product category value is "Hiking". You can inspect the variable value from the variable watch window at the bottom of the authoring canvas. In the watch window, it shows the variable value is "Hiking". 
 
 Essentially, slot filling has happened by inserting the extracted entity “Hiking” into the variable `VarProductCategory`. 
 
 ![Image.12 Variable watch window](media/entities-12(draft).png)
 
-You can also utilize what is known as "greedy slot filling" where the user can specify multiple pieces of information that map to multiple entities. The bot is able to understand what information belongs to which entity automatically. In cases where it is unsure of the intended mapping, it will prompt the user to be more specific by providing choices.
+You can also utilize what is known as "proactive slot filling" where the user can specify multiple pieces of information that map to multiple entities. The bot is able to understand what information belongs to which entity automatically. In cases where it is unsure of the intended mapping, it will prompt the user to be more specific by providing choices.
 
 In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the use wants to buy gear, and also provides a second piece of information - the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
 
@@ -143,7 +145,9 @@ This time when the product category question is presented, instead of telling th
 
 ![Image.14 Tracing 3](media/entities-14(draft).png)
 
+Proactive slot filling can be manually controlled at the node level. If you'd like to always prompt for the question within a specific node, regardless of whether the slot has been filled from previous user responses, you can disable the **Skip question** option for that question node.
 
+![](media/entities-skip-node.png)
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Publish to Teams"
-description: "Publish your bot to a Microsoft Teams channel so people in your organization can interact with it."
+title: "Connect to Teams"
+description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
 ms.date: 10/31/2019
 ms.service:
@@ -70,7 +70,7 @@ After installing the app package, you will automatically start a chat with the b
 >You cannot remove your bot from Teams if you have set up Dynamics 365 Omnichannel for Customer Service with your bot. 
 >You must [remove the Omnichannel for Customer Service configuration](configuration-hand-off-omnichannel.md#remove-omnichannel-connection) before you can remove the Teams publication channel. 
 
-## Distribute your Teams bot##
+## Distribute your Teams bot
 
 In addition to directly installing the Microsoft Teams app package, you can use Teams to [distribute the app within your tenant](/microsoftteams/tenant-apps-catalog-teams) and [disitrbute the app publicly](/microsoftteams/platform/publishing/apps-publish). 
 

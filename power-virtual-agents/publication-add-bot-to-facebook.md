@@ -1,6 +1,6 @@
 ---
-title: "Publish to Facebook"
-description: "Publish your bot on a Facebook page so Facebook users can interact with it."
+title: "Connect your bot to Facebook"
+description: "Connect your bot to Facebook Messenger so Facebook users can interact with it."
 keywords: "Channel, publish, Facebook"
 ms.date: 10/31/2019
 ms.service:
@@ -13,7 +13,7 @@ ms.custom: "publication, authoring"
 ms.collection: virtual-agent
 ---
 
-# Add Facebook channel
+# Add bot to Facebook Messenger
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -83,7 +83,7 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 
 ![Get pages ID and token](media/channel-fb-get-page-id-token.png)
 
-### Configure the Facebook channel
+### Configure the Facebook channel in Power Virtual Agents
 
 **Configure the Facebook publication channel in Power Virtual Agents:**
 

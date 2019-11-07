@@ -23,12 +23,12 @@ For example, you can save a customer's name in a variable called `UserName`. The
 
 You can use variables to create logical expressions that dynamically route the customer down different conversation paths. You can also feed variables to [Power Automate](how-to-flow.md) and [Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) as input parameters, and save the output results from those actions.  
 
-## Entity and variable types
-Power Virtual Agents uses *[entities](advanced-entities-greedy-slot-filling.md)* to understand and identify a specific type of information from a user's responses. When saving the identified information to a variable, a *variable type** will be associated with it. The variable type is essentially analogous with the *entity*. 
+## Entity and variable type
+Power Virtual Agents uses *[entities](advanced-entities-greedy-slot-filling.md)* to understand and identify a specific type of information from a user's responses. When saving the identified information to a variable, a *variable type* will be associated with it. The variable type is essentially analogous with the *entity*. 
 
 Each entity or variable type maps to a base type, these are listed in the following table. 
 
-The base type defines the operators that can be used for the corresponding variable when constructing a logical expression. It also defines whether a variable can be used to feed to a [flow](how-to-flow.md) or Azure Bot Framework Skill action node as an input parameter. 
+The base type defines the operators that can be used for the corresponding variable when constructing a logical expression. It also defines whether a variable can be used to feed to an input paramater in a [flow](how-to-flow.md) or Azure Bot Framework Skill action node as an input parameter. 
 
 For example, a **boolean** base type maps to an operator "is equal to" with possible values being true or false, while a **number** base type will give you a series numeric operators such as "is equal to", "is greater than", or "is greater than or equal to", and so on.
 
@@ -80,7 +80,7 @@ In the bot authoring canvas, add a question node by choosing "Ask a question", t
     ![Image.1 Create a variable](media/Automatically_created_variable_(draft).PNG)
 
 ## Pick an entity to use
-By default the question node will be created using the *Multiple choice options* entity, but you can also pick a different prebuilt entity, or custom pick by choosing what to identify from the node. For example, you can choose **Person name** to use that entity. 
+By default the question node will be created using *Multiple choice options*, but you can also pick a different prebuilt or custom entity by choosing what to identify from the node. For example, you can choose **Person name** to use that entity. 
 
 ![Image.2 Select an entity](media/Pick_an_entity_(draft).PNG)
 

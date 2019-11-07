@@ -1,6 +1,6 @@
 ---
-title: "Publish to mobile and web apps"
-description: "Publish your bot to mobile (native and web) apps, or to other types of apps (with additional code dev work)."
+title: "Connect to mobile and web apps"
+description: "Connect your bot to mobile (native and web) apps, or to other types of apps (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/1/2019
 ms.service:
@@ -102,7 +102,7 @@ If the request is successful, a *Direct Line* token will be returned for the req
 
 #### Sample code example
 
-The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to get a *Direct Line** token for a Power Virtual Agents bot.
+The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to get a *Direct Line* token for a Power Virtual Agents bot.
 
   ```C#
   using (var httpRequest = new HttpRequestMessage())

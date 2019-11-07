@@ -1,6 +1,6 @@
 ---
-title: "Publish to Azure bot service channels"
-description: "Publish your bot to existing Azure bot service framework channels (with additional code dev work)."
+title: "Connect to Azure bot service channels"
+description: "Connect your bot to existing Azure bot service framework channels (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/1/2019
 ms.service:
@@ -18,7 +18,7 @@ ms.collection: virtualagent
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can connect your bot to existing [Azure Bot Service channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0). This can be useful if you're already using Aure Bot Service channels and want to connect your Power Virtual Agents bot into those channels. 
+You can connect your bot to existing [Azure Bot Service channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0). This can be helpful if you want to connect your bot to end users on Azure Bot Service channels. 
 
 Adding your bot to Azure Bot Service channels require considerable developer expertise. This topic is written for IT admins or developers who have experience developing and writing code.
 
@@ -64,14 +64,14 @@ If you already have an Azure Bot Service bot, you need to add a Power Virtual Ag
 To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
 
 1. Copy your bot's name in Power Virtual Agents.
-![Get bot name](media/channel-get-bot-name.png)
+    ![Get bot name](media/channel-get-bot-name.png)
 
 3. Select **Manage** on the side navigation pane, and then go to the **Channels** tab.
 2. Select the channel you want to connect to. This topic uses Slack as an example.
-![Slack channel](media/channel-slack.png)
+    ![Slack channel](media/channel-slack.png)
 
 3. Copy and save the *bot ID* and *tenant ID* value by clicking **Copy**. You will need these when connecting your bot to the Azure Bot Service channel.
-![Get bot parameters](media/channel-get-bot-parameters-slack.png)
+    ![Get bot parameters](media/channel-get-bot-parameters-slack.png)
 
 
 
@@ -86,37 +86,37 @@ The following example uses samples from the [Relay bot sample code](https://gith
 
 1. On every new external Azure Bot Service channel conversation start, start a Power Virtual Agents conversation. Refer to [Get Direct Line token](publication-connect-bot-to-custom-application.md#get-direct-line-token) and [Use Direct Line to communicate with the bot](publication-connect-bot-to-custom-application.md#use-direct-line-to-communicate-with-the-bot) for instructions on starting a new conversation with the bot.
 
-  ```C#
-  using (var httpRequest = new HttpRequestMessage())
-  {   
-      httpRequest.Method = HttpMethod.Get;
-      UriBuilder uriBuilder = new UriBuilder(TokenEndPoint);
-      uriBuilder.Query = $"botId={BotId}&tenantId={TenantId}";
-      httpRequest.RequestUri = uriBuilder.Uri;
-      using (var response = await s_httpClient.SendAsync(httpRequest))
-      {
-          var responseString = await response.Content.ReadAsStringAsync();
-          string token = SafeJsonConvert.DeserializeObject<DirectLineToken>(responseString).Token;
-      }
-  }
+   ```C#
+   using (var httpRequest = new HttpRequestMessage())
+   {   
+       httpRequest.Method = HttpMethod.Get;
+       UriBuilder uriBuilder = new UriBuilder(TokenEndPoint);
+       uriBuilder.Query = $"botId={BotId}&tenantId={TenantId}";
+       httpRequest.RequestUri = uriBuilder.Uri;
+       using (var response = await s_httpClient.SendAsync(httpRequest))
+       {
+           var responseString = await response.Content.ReadAsStringAsync();
+           string token = SafeJsonConvert.DeserializeObject<DirectLineToken>(responseString).Token;
+       }
+   }
 
-  /// <summary>
-  /// class for serialization/deserialization DirectLineToken
-  /// </summary>
-  public class DirectLineToken
-  {
-      public string Token { get; set; }
-  }
-  ```
+   /// <summary>
+   /// class for serialization/deserialization DirectLineToken
+   /// </summary>
+   public class DirectLineToken
+   {
+       public string Token { get; set; }
+   }
+   ```
 
-  ```C#
+   ```C#
     // Use the retrieved token to create a DirectLineClient instance
     using (var directLineClient = new DirectLineClient(token))
     {
         var conversation = await directLineClient.Conversations.StartConversationAsync();
         string conversationtId = conversation.ConversationId;
     }
-  ```
+   ```
 
 
 2. To manage multiple sessions, you need to maintain a mapping of external Azure Bot Service channel conversations to corresponding Power Virtual Agents conversations. A Power Virtual Agents conversation can be identified with and connected with 2 properties: `ConversationtId` and `Token`.

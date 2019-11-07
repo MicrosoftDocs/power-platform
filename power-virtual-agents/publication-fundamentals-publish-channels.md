@@ -71,13 +71,13 @@ Each channel requires different steps and configurations, which can be found in 
 
 
 
-## Channel end-user experience reference
-Different channels have different end-user experiences. The following table shows the experiences for each channel.
+## Channel experience reference table
+Different channels have different end-user experiences. The following table shows the experiences for each channel. You can take the channel experiences into account when optimizing your bot content for specific channels.
 
  Experience | Website | Microsoft Teams | Facebook
  ---|---|---|---
  Customer satisfaction survey | Adaptive card | Text-only | Text-only
- Suggested actions | Supported | Supported up to 6, learn more at [Microsoft Teams hero card](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | Supported up to 13, learn more at [Facebook quick replies](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/)
+ Multiple-choice options | Supported | Supported up to 6, learn more at [Microsoft Teams hero card](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | Supported up to 13, learn more at [Facebook quick replies](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/)
  Markdown | Supported | Supported | Partially supported, learn more at [Facebook markdown documentation](https://www.facebook.com/help/147348452522644?helpref=related)
  Welcome message | Supported | Supported | Not supported
 
