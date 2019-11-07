@@ -84,5 +84,5 @@ Check your security role:
 13. On the **Actions** toolbar, select **Save**, and then select **Publish**.  
   
 > [!NOTE]
-> The Access Team template does not get exported with its entity in a Solution.  Administrators will need to recreate the template when exporting the entity into another instance.
+> The Access Team template does not get exported with its entity in a Solution.  Administrators will need to recreate the template when exporting the entity into another environment.
 
