@@ -47,7 +47,7 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 
 1. Log into the Facebook App at [Facebook for Developers](https://developers.facebook.com/) that you want to add your bot to.
 1. Select **Basic** under **Settings** on the side menu panel. 
-3. Copy the *App ID* and *App Secret*. You will need these when [configuring the Facebook channel](#configure-the-facebook-channel).
+3. Copy the *App ID* and *App Secret*. You will need these when [configuring the Facebook channel](#configure-the-facebook-channel-in-power-virtual-agents).
 
 ![Get Facebook App ID and secret](media/channel-fb-get-app-id-secret.png)
 
@@ -79,7 +79,7 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 
 ![Messenger permission for page](media/channel-fb-page-messenger-capability.png)
 
-6. Copy the *page ID* and *token* pair for the pages that you want to add the bot to.  You will need to select **Generate Token** for each page. You will need these when [configuring the Facebook channel](#configure-the-facebook-channel)
+6. Copy the *page ID* and *token* pair for the pages that you want to add the bot to.  You will need to select **Generate Token** for each page. You will need these when [configuring the Facebook channel](#configure-the-facebook-channel-in-power-virtual-agents)
 
 ![Get pages ID and token](media/channel-fb-get-page-id-token.png)
 
@@ -113,7 +113,7 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 
 ![Setup webhooks for Facebook app](media/channel-fb-add-callbackurl.png)
 
-2. Provide the *Callback URL* and *Verify Token* from the [Configure the Facebook channel](#configure-the-facebook-channel) step and select **Verify and Save**.
+2. Provide the *Callback URL* and *Verify Token* from the [Configure the Facebook channel](#configure-the-facebook-channel-in-power-virtual-agents) step and select **Verify and Save**.
 
 ![Add Callback URL and verify token](media/channel-fb-webhook-setting.png)
 
@@ -165,12 +165,12 @@ To add your bot to Facebook Workplace you will need information from your Facebo
 
 ![Get Facebook Workplace custom integration page ID](media/channel-fb-wp-get-page-id.png)
 
-5. Follow the steps under [Configure the Facebook channel](#cconfigure-the-facebook-channel) to provide the custom integration information.
+5. Follow the steps under [Configure the Facebook channel](#configure-the-facebook-channel-in-power-virtual-agents) to provide the custom integration information.
 
 **Set up webhooks for Facebook Workplace custom integration:**
 1. Return to your Facebook Workplace custom integration settings by selecting **Admin Panel** on the side menu panel and select the custom integration you created.
 
-2. Under the **Configure Webhooks** section, provide the **Callback URL** and **Verify Token** from previous section [Configure the Facebook channel](#configure-the-facebook-channel).  Select the **messages**, **messaging_postbacks** and **message_deliveries** fields. 
+2. Under the **Configure Webhooks** section, provide the **Callback URL** and **Verify Token** from previous section [Configure the Facebook channel](#configure-the-facebook-channel-in-power-virtual-agents).  Select the **messages**, **messaging_postbacks** and **message_deliveries** fields. 
 ![Set Facebook Workplace custom integration webhook](media/channel-fb-wp-webhooks.png)
 
 3. Save your custom integration by clicking **Save**.

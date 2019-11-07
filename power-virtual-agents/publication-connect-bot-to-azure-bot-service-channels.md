@@ -24,7 +24,7 @@ Adding your bot to Azure Bot Service channels require considerable developer exp
 
 
 >[!TIP]
->You do not need to follow this document to add your Power Virtual Agents bot to your [website, Facebook, or Microsoft Teams](publication-fundamentals-publish-channels-virtual-agent.md)
+>You do not need to follow this document to add your Power Virtual Agents bot to your [website, Facebook, or Microsoft Teams](publication-fundamentals-publish-channels.md)
 
 If your goal is to connect to a custom web-based or native app, your developers can learn more at [Connect your bot to mobile and custom apps](publication-connect-bot-to-custom-application.md).
 

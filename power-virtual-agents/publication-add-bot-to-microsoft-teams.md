@@ -68,7 +68,7 @@ After installing the app package, you will automatically start a chat with the b
 
 >[!NOTE]
 >You cannot remove your bot from Teams if you have set up Dynamics 365 Omnichannel for Customer Service with your bot. 
->You must [remove the Omnichannel for Customer Service configuration](configuration-hand-off-omnichannel.md#remove-omnichannel-connection) before you can remove the Teams publication channel. 
+>You must [remove the Omnichannel for Customer Service configuration](configuration-hand-off-omnichannel.md#remove-omnichannel-for-customer-service-connection) before you can remove the Teams publication channel. 
 
 ## Distribute your Teams bot
 
