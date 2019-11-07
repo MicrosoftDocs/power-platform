@@ -87,17 +87,26 @@ The following example uses samples from the [Relay bot sample code](https://gith
 1. On every new external Azure Bot Service channel conversation start, start a Power Virtual Agents conversation. Refer to [Get Direct Line token](publication-connect-bot-to-custom-application.md#get-direct-line-token) and [Use Direct Line to communicate with the bot](publication-connect-bot-to-custom-application.md#use-direct-line-to-communicate-with-the-bot) for instructions on starting a new conversation with the bot.
 
   ```C#
-    // Retrieve DirectLine token from your Power Virtual Agent bot
-    public async Task<string> GetTokenAsync()
-    {
-        HttpClient httpClient = new HttpClient();
-        var httpRequest = new HttpRequestMessage();
-        httpRequest.Method = HttpMethod.Get;
-        httpRequest.RequestUri = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId={BotId}&tenantId={BotTenantId}";
-        var response = await httpClient.SendAsync(httpRequest);
-        var responseString = await response.Content.ReadAsStringAsync();
-        return SafeJsonConvert.DeserializeObject<DirectLineToken>(responseString).Token;
-    }
+  using (var httpRequest = new HttpRequestMessage())
+  {   
+      httpRequest.Method = HttpMethod.Get;
+      UriBuilder uriBuilder = new UriBuilder(TokenEndPoint);
+      uriBuilder.Query = $"botId={BotId}&tenantId={TenantId}";
+      httpRequest.RequestUri = uriBuilder.Uri;
+      using (var response = await s_httpClient.SendAsync(httpRequest))
+      {
+          var responseString = await response.Content.ReadAsStringAsync();
+          string token = SafeJsonConvert.DeserializeObject<DirectLineToken>(responseString).Token;
+      }
+  }
+
+  /// <summary>
+  /// class for serialization/deserialization DirectLineToken
+  /// </summary>
+  public class DirectLineToken
+  {
+      public string Token { get; set; }
+  }
   ```
 
   ```C#
