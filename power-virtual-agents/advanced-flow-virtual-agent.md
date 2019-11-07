@@ -1,4 +1,5 @@
 ---
+
 title: "Add actions to your bot using Microsoft Flow"
 description: "Learn how to add actions to your bot using Microsoft Automate flows."
 keywords: "KEYWORDS"
@@ -15,7 +16,9 @@ ms.collection: powervirtualagents
 
 
 
+
 # Add actions to a bot using Microsoft Power Automate 
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -205,6 +208,7 @@ Type in **MSN weather** in the search box and choose **Get forecast for today** 
 
 
 
+
 A new **MSN Weather Connector** is added to the flow. Add flow inputs **City** and **Zipcode** as parameters for **Location** field in MSN Weather Connector. Use **Add dynamic content** option and select **City** and **Zipcode** from the list:
 
 
@@ -312,3 +316,4 @@ Enter your City and Zipcpde at the prompt and get todays' weather foreast from t
 ![Test Dialog](media/TopicTestDialog.jpg)
 
     
+

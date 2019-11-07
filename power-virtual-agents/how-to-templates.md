@@ -1,6 +1,6 @@
 ---
 title: "Work with built-in topics"
-description: "Learn how to work with Dynamics 365 Virtual Agent for Customer Service built-in topics."
+description: "Learn how to work with Power Virtual Agents built-in topics."
 ms.date: 05/29/2019
 ms.service:
   - "dynamics-365-ai"
@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-To help you create your custom bot, Dynamics 365 Virtual Agent for Customer Service includes built-in topics to be used as building blocks for developing the bot's conversation path. The built-in topics can give you a head start on developing your bot. 
+To help you create your custom bot, Power Virtual Agents includes built-in topics to be used as building blocks for developing the bot's conversation path. The built-in topics can give you a head start on developing your bot. 
 
 For example, there are several system topics that you need to handle some key scenarios within the bot. These include:
 
@@ -35,7 +35,7 @@ For more information about creating your bot, see [Creating a bot](getting-start
 
 ## Using built-in topics as a model for building your conversation path
 
-A good starting point for creating a bot and designing its conversation path is to view the built-in topics that come with Virtual Agent.
+A good starting point for creating a bot and designing its conversation path is to view the built-in topics that come with Power Virtual Agents.
 
 For example, to see how you might build a conversation path for helping customers find specific store information, view the Store Hours topic that is included.
 

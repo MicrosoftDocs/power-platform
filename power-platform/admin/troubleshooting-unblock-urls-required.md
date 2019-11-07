@@ -42,4 +42,4 @@ You can unblock these URLs on your computer by adding them to a list of approved
   
 4.  Click or tap **Add** > **Close** > **OK**.  
   
-For a list of other URLs you may need to add to unblock, see [Internet accessible URLs required for Microsoft Dynamics CRM Online](http://support.microsoft.com/kb/2655102)
+For a list of other URLs you may need to add to unblock, see [Internet accessible URLs required for Microsoft Dynamics CRM Online](https://support.microsoft.com/kb/2655102)

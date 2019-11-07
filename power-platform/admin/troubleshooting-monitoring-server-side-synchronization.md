@@ -22,7 +22,7 @@ search.app:
 This page is your source for issues and resolutions for troubleshooting server-side synchronization. Check back for updated information as issues are discovered and resolutions recorded.  
   
 > [!TIP]
->  Check out the following: [Blog: Test and Enable Mailboxes in Dynamics CRM 2015](http://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx)  
+>  Check out the following: [Blog: Test and Enable Mailboxes in Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx)  
  
 ## The Server-Side Snychronization Failures dashboard
 
@@ -57,12 +57,12 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 ### Mailbox disabled for synchronization  
  **Alert:** The mailbox has been disabled for synchronizing appointments, contacts, and tasks for the mailbox because an error occurred while establishing a secure connection to the Exchange server. The owner of the email server profile has been notified.  
   
- **Solution:**  [http://support.microsoft.com/kb/2993502](http://support.microsoft.com/kb/2993502)  
+ **Solution:**  [https://support.microsoft.com/kb/2993502](https://support.microsoft.com/kb/2993502)  
   
 ### Error while establishing a secure connection  
  **Alert:** Email cannot be received for the mailbox because an error occurred while establishing a secure connection to the email server. The mailbox has been disabled for receiving email and the owner of the email server profile has been notified.  
   
- **Solution:**  [http://support.microsoft.com/kb/2993502](http://support.microsoft.com/kb/2993502)  
+ **Solution:**  [https://support.microsoft.com/kb/2993502](https://support.microsoft.com/kb/2993502)  
   
 ### Email message has "Pending Send" status  
  If you create an email message in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from model-driven apps in Dynamics 365.  

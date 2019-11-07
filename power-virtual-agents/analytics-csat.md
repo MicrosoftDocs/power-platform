@@ -1,18 +1,20 @@
 ---
 title: "Customer satisfaction rate page"
-description: "Learn about the Dynamics 365 Virtual Agent for Customer Service Customer Satisfaction page."
-ms.date: 05/29/2019
+description: "Learn about the Power Virtual Agents Customer Satisfaction page."
+ms.date: 12/02/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: m-hartmann
-ms.author: mhart
-manager: shellyha
+author: mivakoc
+ms.author: mivakoc
+manager: mahesha
 ---
 
 # Customer Satisfaction page
 
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score.
 
@@ -35,7 +37,7 @@ The Customer Satisfaction Drivers chart uses artificial intelligence technology 
 
 Description | Details
 ----------- | -------
-Topic | A Dynamics 365 Virtual Agent for Customer Service topic.
+Topic | A Power Virtual Agents topic.
 Engaged sessions | The number of engaged sessions for the topic within the specified time period.
 Resolution rate | The percentage of engaged sessions for the topic that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey and either does not respond or responds *Yes*.
 Abandon rate | The percentage of engaged sessions for the topic that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.

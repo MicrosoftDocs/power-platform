@@ -1,7 +1,7 @@
 ---
 title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 08/08/2019
+ms.date: 11/06/2019
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -19,10 +19,12 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
+Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
+
 > [!NOTE]
 > For introductory licensing information on the new capacity analytics model, see [PowerApps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
-
-Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
+>
+> Common Data Service storage capacity is not available for Dynamics 365 US Government – GCC and GCC High, DOD, and Microsoft Dynamics 365 online services operated by 21Vianet.
 
 We have updated our capacity analytics reporting to provide important benefits to our customers. Here is a summary of changes in capacity analytics.
 
@@ -58,18 +60,18 @@ Some of the benefits of this change:
 - Reduced need to [free storage space](free-storage-space.md)
 - Support for variety of data types
 - Additional default and full user entitlements
-- Flexibility to create new environments/instances 
+- Flexibility to create new environments
 
 ## Capacity page details
 
-### Overall tab
+### Summary tab
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
+To view the **Summary** page, select **Analytics** > **Capacity** > **Summary** tab.
+
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
-
-To view the **Capacity** page, select **Analytics** > **Capacity** > **Overall** tab in the left-side menu.
 
 |  |Description |
 |---------|---------|
@@ -78,14 +80,15 @@ To view the **Capacity** page, select **Analytics** > **Capacity** > **Overall**
 |(3)    |**What's new**: Used for announcements and notifications  |
 |(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
 
-### Per environment tab
+### Storage capacity tab
 
-This page provides similar information as the **Overall** tab but with an environment-level view of where your organization is using capacity.
+This page provides similar information as the **Summary** tab but with an environment-level view of where your organization is using capacity.
 
-Select an environment to see more detailed information on actual consumption.
+To view the **Storage capacity** page, select **Analytics** > **Capacity** > **Storage capacity** tab. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
+
 
 > [!NOTE]
 > - The following environments do not count against capacity and show as 0GB:
@@ -97,7 +100,17 @@ Select an environment to see more detailed information on actual consumption.
 
 ### Environment capacity analytics
 
-This page provides an environment-level detailed view of where your organization is using capacity as well as the three capacity types consumption.
+This page provides an environment-level detailed view of where your organization is using capacity as well as the three capacity types consumption. 
+
+To view environment-level capacity analytics:
+
+1. Select **Analytics** > **Capacity** > **Overall** tab.
+2. Select the **Storage capacity** tab.
+3. Select an environment.
+4. Select the **Details** button (![Details button](media/storage-data-details-button.png "Details button"))
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-capacity-details.png "Environment capacity analytics")
 
 Details provided:
 
@@ -108,18 +121,19 @@ Details provided:
 -	Actual Log usage
 -	Top tables and their growth over time
 
+<!--
 Select **Applied filters** at the the top of the page to filter data for different time spans. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
-
+-->
 ## FAQ
 
 ### I see the new Capacity Report, but I have not purchased the new capacity offers. How do I interpret the report?
 As an existing customer, we have added File and Log capacity to your tenant automatically based on your existing licenses. Because you are currently in an agreement under the old offers, you are not impacted. Make sure your Database consumption is per the entitlement. You are not expected to take any action for File and Log. At renewal, you can use this report to get the right amount of capacity for Database, File, and Log.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment using this model?
-Until provisioning environments is available through the Power Platform Admin center, you can provision environments through the PowerApps/Flow/Dynamics 365 Admin center. If you still need more environments, you can contact [Support](get-help-support.md). For details, check [Create an environment](create-environment.md).
+You can provision environments through the Power Platform Admin center. For details, see [Create and manage environments in the Power Platform Admin center](create-environment.md).
 
 ### I’m an existing customer and have not purchased the new offers. The capacity report indicates I’m overusing the Database/File/Log, what should I do?
 If Database, you should not exceed the available Database capacity. Please consider [freeing storage space](free-storage-space.md) or purchase more storage capacity. 
@@ -141,7 +155,7 @@ If you have an existing agreement, you are not impacted with the current change.
 ### I'm an existing customer and my renewal is coming up. Will I be impacted?
 Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
 
-### I’m a PowerApps/Flow customer and have environments with and without Database. Will they consume storage capacity? 
+### I’m a PowerApps/Power Automate customer and have environments with and without Database. Will they consume storage capacity? 
 Currently, only the environments with Database consume capacity; environments without Database do not. However, once the Power Platform Admin center has the ability to create environments, all environments will consume 1GB. 
 
 ### Why am I no longer getting storage notifications?

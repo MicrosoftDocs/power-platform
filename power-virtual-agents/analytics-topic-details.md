@@ -1,24 +1,31 @@
 ---
 title: "Topic details page"
-description: "Learn about the Dynamics 365 Virtual Agent for Customer Service Topic details page."
-ms.date: 05/29/2019
+description: "Learn about the Power Virtual Agents Topic details page."
+
+ms.date: 12/02/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: m-hartmann
-ms.author: mhart
-manager: shellyha
+author: mivakoc
+ms.author: mivakoc
+manager: mahesha
+
 ---
 
 # Topic details page
 
+
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 
 The topic details page provides a view into the performance of individual topics and how they can be improved.
 
 ![Topic details page](media/topic-details-page.png)
 
+
 You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-CSAT.md) pages:
+
 
 * [Escalation rate drivers (Summary page)](analytics-summary.md#escalation-rate-drivers-chart)
 * [Abandon rate drivers (Summary page)](analytics-summary.md#abandon-rate-drivers-chart)

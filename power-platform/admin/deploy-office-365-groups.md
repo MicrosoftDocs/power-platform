@@ -113,7 +113,7 @@ search.app:
  Use the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Connectors for Groups to connect new or existing [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] with model-driven apps in Dynamics 365 so the group is notified when new activities are posted. To set it up, follow these steps:  
   
 > [!TIP]
->  Check out the following Blog: [Dynamics CRM Online connector for Office 365 Groups](http://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)  
+>  Check out the following Blog: [Dynamics CRM Online connector for Office 365 Groups](https://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)  
   
 1. Sign in to your [Office 365 Outlook](https://outlook.office365.com).  
   
@@ -159,7 +159,7 @@ search.app:
   
 ### See also  
  [Collaborate with your colleagues using Office 365 Groups](/dynamics365/customer-engagement/basics/collaborate-with-colleagues-using-office-365-groups.md)   
- [CRM Blog: Dynamics CRM Online connector for Office 365 Groups](http://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)   
+ [CRM Blog: Dynamics CRM Online connector for Office 365 Groups](https://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)   
  [Set up model-driven apps in Dynamics 365 to use Exchange Online](connect-exchange-online.md)   
- [Blog: It's here - Office 365 Groups in CRM Online](http://blogs.technet.com/b/lystavlen/archive/2015/05/08/office-groups.aspx)   
+ [Blog: It's here - Office 365 Groups in CRM Online](https://blogs.technet.com/b/lystavlen/archive/2015/05/08/office-groups.aspx)   
  [Office 365 Groups FAQs](/dynamics365/customer-engagement/basics/office-365-groups-dynamics-365-faqs.md)

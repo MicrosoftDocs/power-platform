@@ -1,6 +1,6 @@
 ---
 title: "Frequently asked questions"
-description: "Frequently asked questions about Dynamics 365 Virtual Agent for Customer Service."
+description: "Frequently asked questions about Power Virtual Agents."
 ms.date: 07/01/2019
 ms.service:
   - "dynamics-365-ai"
@@ -16,13 +16,12 @@ manager: shellyha
 
 ## Known issues
 
-### Customers from outside of the United States signing up for Virtual Agent
+### Customers from outside of the United States signing up for Power Virtual Agents
 
-Preview is currently only supported in the United States, with data stored in US data centers. If your company is located outside of the United States, you need to create a custom environment with the region set to “United States” before you can create your bot. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
+Preview is currently only supported in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with the region set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Creating a Power Apps environment](getting-started-new-environment.md).
 
-![Error when outside of the United States](media/error-outside-US.png)
 
-### Issues with Microsoft Flow solutions tab
+### Issues with Power Automate solutions tab
 
 If you are a new customer and you visit flow.microsoft.com shortly after you create your first bot, you might encounter two issues:
 - Missing **Solutions** tab on the left rail of flow.microsoft.com. The **Solutions** tab should appear within 24 hours. You can try refreshing the page to resolve the issue earlier.
@@ -40,11 +39,11 @@ See [Creating a bot](getting-started-create-bot.md) if you have any issues while
 
 ## General 
 
-### What browsers are supported by Virtual Agent?
+### What browsers are supported by Power Virtual Agents?
 
-Virtual Agent is supported in the latest versions of Microsoft Edge, Chrome, and Firefox. It is not supported in Internet Explorer.
+Power Virtual Agents is supported in the latest versions of Microsoft Edge, Chrome, and Firefox. It is not supported in Internet Explorer.
  
-### Can Virtual Agent be styled and branded for an organization? What can be customized and how?
+### Can Power Virtual Agents be styled and branded for an organization? What can be customized and how?
 
 Currently we don't have any styling or brand customization for the bot (for example, changing the default image). This capability is on the roadmap for a future release.
 
@@ -56,9 +55,9 @@ We don’t have multi-author support currently. For now, it is one bot per autho
 
 No, you can sign in only by using your work or school Microsoft account.
 
-### Virtual Agent does not seem to allow us to store the user utterance that triggered the topic as a variable. Is that by design?
+### Power Virtual Agents does not seem to allow us to store the user utterance that triggered the topic as a variable. Is that by design?
 
-Yes, Virtual Agent currently doesn't allow storing the user utterance that triggered the topic as a variable. This capability is on the roadmap for a future release.
+Yes, Power Virtual Agents currently doesn't allow storing the user utterance that triggered the topic as a variable. This capability is on the roadmap for a future release.
 
 ### How do I configure my bot to escalate to a human agent? 
 
@@ -72,16 +71,16 @@ You can file bugs in the in the [community forum](https://go.microsoft.com/fwlin
 
 That's great—we'd love to hear your thoughts. [Submit your ideas and feedback in our Idea forum](https://go.microsoft.com/fwlink/?linkid=2064961).
 
-### I have an existing bot built on Microsoft Bot Framework and Azure Cognitive Services. How do I leverage Dynamics 365 Virtual Agent for Customer Service?
+### I have an existing bot built on Microsoft Bot Framework and Azure Cognitive Services. How do I leverage Power Virtual Agents?
 
-Dynamics 365 Virtual Agent for Customer Service is built on Microsoft Bot Framework. Organizations with existing bots can follow [step-by-step guidance to setting up Microsoft Bot Framework dispatcher with bot built using Dynamics 365 Virtual Agent for Customer Service](how-to-use-dispatcher.md). We will provide developers with a streamlined bot building experience by seamlessly integrating into [Microsoft Bot Framework’s Skill platform](https://docs.microsoft.com/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) in an upcoming release.
+Power Virtual Agents is built on Microsoft Bot Framework. Organizations with existing bots can follow [step-by-step guidance to setting up Microsoft Bot Framework dispatcher with bot built using Power Virtual Agents](how-to-use-dispatcher.md). We will provide developers with a streamlined bot building experience by seamlessly integrating into [Microsoft Bot Framework’s Skill platform](https://docs.microsoft.com/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) in an upcoming release.
 
-### Is Dynamics 365 Virtual Agent for Customer Service available in government environments?
-No. At this time, Virtual Agent is not available in the Government Community Cloud.
+### Is Power Virtual Agents available in government environments?
+No. At this time, Power Virtual Agents is not available in the Government Community Cloud.
 
-### Does Virtual Agent support preview releases of Common Data Service (CDS)?
+### Does Power Virtual Agents support preview releases of Common Data Service (CDS)?
 
-Virtual Agent uses the Common Data Service (CDS) to store your bot's content. Preview releases of CDS may be incompatible with Virtual Agent and may result in an error when creating a bot or when saving topics or conversations. If you encounter an error, and retrying does not resolve the issue, you can [file a bug in the community forum](https://go.microsoft.com/fwlink/?linkid=2058639).
+Power Virtual Agents uses the Common Data Service (CDS) to store your bot's content. Preview releases of CDS may be incompatible with Power Virtual Agents and may result in an error when creating a bot or when saving topics or conversations. If you encounter an error, and retrying does not resolve the issue, you can [file a bug in the community forum](https://go.microsoft.com/fwlink/?linkid=2058639).
 
 ## Bot creation and environments
 
@@ -92,27 +91,27 @@ It may take up to 15 minutes to create the first bot within a tenant. While the 
 ### Why do I get an error that I do not have permissions to any environments?
 
 It is possible that you do not have read/write access to any environments. In this case, you will see the error: “You do not have permissions to any environments. Please get access from an administrator.” 
-To resolve this issue, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md) to create a new environment. Use that environment to create your bot.
+To resolve this issue, follow the steps in [To create a new Power Apps environment](getting-started-new-environment.md) to create a new environment. Use that environment to create your bot.
 
 ### Why do I get "An unexpected server error occurred"?
 
-This error indicates an issue with your current environment. If refreshing your browser doesn't resolve the issue, follow the link to [create a new PowerApps environment](getting-started-new-environment.md). Use that environment to create your bot.
+This error indicates an issue with your current environment. If refreshing your browser doesn't resolve the issue, follow the link to [create a new Power Apps environment](getting-started-new-environment.md). Use that environment to create your bot.
 
-### The PowerApps environment I created does not show up in the drop-down menu of Virtual Agent. Why?
+### The Power Apps environment I created does not show up in the drop-down menu of Power Virtual Agents. Why?
 
 Your environment might not show up in the drop-down menu due to the following reasons:
  - The environment doesn't have a database created. To resolve this, go to [admin.powerapps.com](https://admin.powerapps.com), and create a database in your environment.
- - The environment's region is set to something other than "United States." To resolve this, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md), and create an environment in the United States region.
+ - The environment's region is set to something other than a [supported region](data-location.md). To resolve this, follow the steps in [To create a new Power Apps environment](getting-started-new-environment.md), and create an environment in a supported region.
  - The environment didn't finish setting up. To resolve this, retry in a few minutes
 
 ### Why am I getting a message or email about an environment that is going to expire?
 
-If you have created your own environment and selected **Trial** as the environment type, you'll receive emails shortly before it expires. Trial environments expire after 30 days. When the environment expires, all the bots in the environment will be deleted and the data associated with it, the flows, and resources you have been using will be lost. In the Virtual Agent Designer, you'll see a message if you have bots created in a trial environment that is going to expire in 14 days or less. The message will show the name of the environment that is going to expire, the days remaining to expiration, and the names of the bots affected. This pertains only to trial environments that you have created yourself or been granted access to.
+If you have created your own environment and selected **Trial** as the environment type, you'll receive emails shortly before it expires. Trial environments expire after 30 days. When the environment expires, all the bots in the environment will be deleted and the data associated with it, the flows, and resources you have been using will be lost. In the Power Virtual Agents Designer, you'll see a message if you have bots created in a trial environment that is going to expire in 14 days or less. The message will show the name of the environment that is going to expire, the days remaining to expiration, and the names of the bots affected. This pertains only to trial environments that you have created yourself or been granted access to.
 
 When using a trial environment and you want to retain the bots longer than 30 days, convert the trial environment to a production environment. [Learn how to convert a trial environment to a production environment](https://go.microsoft.com/fwlink/?linkid=2048531).
 
 To convert to a production environment, the following criteria must be met:
-1. You are eligible to use a suitable PowerApps plan that enables you to create production environments.
+1. You are eligible to use a suitable Power Apps plan that enables you to create production environments.
 2. You need to have available production quota. There is a fixed number of production environments you can create with your plan.
 
 ## Authoring
@@ -169,7 +168,7 @@ A topic defines a conversation path with the bot for a specific customer intent.
 
 ### What is the difference between a system topic and a provided template user topic? 
 
-A system topic is linked to predefined features like a customer survey, escalation to a live agent, or the bot greeting. Some areas of the system topics can be modified. User topics can be modified or deleted. They are for your customization to fulfill the needs of your Virtual Agent bot. 
+A system topic is linked to predefined features like a customer survey, escalation to a live agent, or the bot greeting. Some areas of the system topics can be modified. User topics can be modified or deleted. They are for your customization to fulfill the needs of your Power Virtual Agents bot. 
 
 ### How do I create my own custom topic?  
 
@@ -208,50 +207,50 @@ For triggering specific topics, you could have multiple bots, and have the Topic
 
 Variables store customer responses to bot questions. Variables can be used in expressions evaluating a customer response or passed to a flow. Variables can also be used to confirm a customer response. 
 
-## Flow integration 
+## Power Automate integration 
 
-### How do I create a Microsoft Flow action in Virtual Agent?
+### How do I create a Power Automate action in Power Virtual Agents?
 
-Have a look at the article about [Add actions to your bot using Microsoft Flow](how-to-flow.md) and the [video on how to create a Microsoft Flow action that can be executed from Virtual Agent](https://go.microsoft.com/fwlink/?linkid=2079323).
+Have a look at the article about [Add actions to your bot using Power Automate](how-to-flow.md) and the [video on how to create a Power Automate action that can be executed from Power Virtual Agents](https://go.microsoft.com/fwlink/?linkid=2079323).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/joXCzvi38Fo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### What license do I need to use Microsoft Flow in Virtual Agent?
+### What license do I need to use Power Automate in Power Virtual Agents?
 
-Every bot author is automatically licensed to use Microsoft Flow. No extra steps are needed. Bot authors are assigned a P2 Plan Flow license as part of their Virtual Agent license. For details, please refer to [Microsoft Flow Plans documentation](https://flow.microsoft.com/pricing/).
+Every bot author is automatically licensed to use Power Automate. No extra steps are needed. Bot authors are assigned a P2 Plan Power Automate license as part of their Power Virtual Agents license. For details, please refer to [Power Automate Plans documentation](https://flow.microsoft.com/pricing/).
 
-### I created some new flows for actions using Microsoft Flow, but they are not visible in Virtual Agent. Why?
+### I created some new flows for actions using Power Automate, but they are not visible in Power Virtual Agents. Why?
 
 - The environment you are using to create your flows must be the same as the environment you are using for the bot.   
-- Make sure to [create your flows in Solutions](https://docs.microsoft.com/flow/overview-solution-flows). The bot can't see the flows created in the **My Flows** tab. 
-- Bots can only invoke flows that have HTTP Request interfaces, so you need to select the right trigger for your flow. Select **When Http Request is received** from the trigger list in Microsoft Flow, and make sure you are using the **POST** method under advanced options in the trigger (or leave the method field empty, which is how it is by default):
+- Make sure to [create your flows in Solutions](https://docs.microsoft.com/flow/overview-solution-flows). The bot can't see the flows created in the **My flows** tab. 
+- Bots can only invoke flows that have HTTP Request interfaces, so you need to select the right trigger for your flow. Select **When Http Request is received** from the trigger list in Power Automate, and make sure you are using the **POST** method under advanced options in the trigger (or leave the method field empty, which is how it is by default):
 ![POST method in HTTP Request](media/flow-http-post-method.png)
 
 
 ### I created a flow with an HTTP Request trigger, and it's visible in my bot, but when I test my topic, it fails. Why?
 
-Make sure the flow is turned on (enabled) on the Microsoft Flow portal. Flows that are turned off (disabled) on the Microsoft Flow portal are visible when editing a bot and can be incorporated into actions. However, they will fail at run time until they are turned on in the Microsoft Flow portal.
+Make sure the flow is turned on (enabled) on the Power Automate portal. Flows that are turned off (disabled) on the Power Automate portal are visible when editing a bot and can be incorporated into actions. However, they will fail at run time until they are turned on in the Power Automate portal.
 
-### What are the response formats that the Virtual Agent accepts, especially in the message response provided by the Microsoft Flow action?
+### What are the response formats that Power Virtual Agents accepts, especially in the message response provided by the Power Automate action?
 
-The Virtual Agent designer accepts only JSON object format in the message response. The JSON object can contain strings and numbers only. In the coming months, we will release a custom Microsoft Flow connector that will make it easier to create flows using key/value pairs rather than requiring the use of JSON format. We do not support arrays as flow output for bots yet, but this feature is on the roadmap. 
+The Power Virtual Agents designer accepts only JSON object format in the message response. The JSON object can contain strings and numbers only. In the coming months, we will release a custom Power Automate connector that will make it easier to create flows using key/value pairs rather than requiring the use of JSON format. We do not support arrays as flow output for bots yet, but this feature is on the roadmap. 
 
 ### Can we call a third-party API from a flow?
 
-Yes, an existing API or another application can be called from a flow, and the results can be passed back to the Virtual Agent as flow output. Microsoft Flow provides hundreds of connectors to enable you to connect to apps, data, and devices in the cloud. 
+Yes, an existing API or another application can be called from a flow, and the results can be passed back to Power Virtual Agents as flow output. Power Automate provides hundreds of connectors to enable you to connect to apps, data, and devices in the cloud. 
 
-Examples of popular connectors include Microsoft Common Data Service (CDS), Dynamics 365, Salesforce, Zendesk, ServiceNow, Office 365, Microsoft Teams, Slack, Facebook, Twitter, Dropbox, Mailchimp, Google services, and many more. Please refer to [Microsoft Flow Connector documentation](https://docs.microsoft.com/connectors/) to see the full list of available Microsoft Flow connectors.
+Examples of popular connectors include Microsoft Common Data Service (CDS), Dynamics 365, Salesforce, Zendesk, ServiceNow, Office 365, Microsoft Teams, Slack, Facebook, Twitter, Dropbox, Mailchimp, Google services, and many more. Please refer to [Power Automate Connector documentation](https://docs.microsoft.com/connectors/) to see the full list of available Power Automate connectors.
 
-If there is no suitable connector that you can use out of the box in Microsoft Flow, you can use an HTTP call inside a flow to connect to a custom third-party API, like in the following example:
+If there is no suitable connector that you can use out of the box in Power Automate, you can use an HTTP call inside a flow to connect to a custom third-party API, like in the following example:
 ![Connect to 3rd party API](media/connect-API-flow.png)
 
-### Can we call a third-party API directly from the Virtual Agent action, without going through a flow?
+### Can we call a third-party API directly from the Power Virtual Agents action, without going through a flow?
 
-This capability is not currently available directly from the Virtual Agent experience, but you can call any third-party API by wrapping the call in a flow. If this feature is critical to your business, please [submit your ideas and feedback in our Idea forum](https://go.microsoft.com/fwlink/?linkid=2064961).
+This capability is not currently available directly from the Power Virtual Agents experience, but you can call any third-party API by wrapping the call in a flow. If this feature is critical to your business, please [submit your ideas and feedback in our Idea forum](https://go.microsoft.com/fwlink/?linkid=2064961).
 
-### How to work with your data in Microsoft Flow?
-Microsoft Flow provides [hundreds of data connectors](https://docs.microsoft.com/connectors/) and offers many ways to manipulate your data. Refer to the following Microsoft Flow documentation for more information on how to:
+### How to work with your data in Power Automate?
+Power Automate provides [hundreds of data connectors](https://docs.microsoft.com/connectors/) and offers many ways to manipulate your data. Refer to the following Power Automate documentation for more information on how to:
 - [Use Common Data Service (CDS)](https://docs.microsoft.com/flow/connection-cds)
 - [Create a flow that uses the Common Data Service](https://docs.microsoft.com/flow/common-data-model-intro)
 - [Create multi-step flows](https://docs.microsoft.com/flow/multi-step-logic-flow)
@@ -265,7 +264,7 @@ Microsoft Flow provides [hundreds of data connectors](https://docs.microsoft.com
 
 ### If we have authentication for the user, can we pass user authentication info to a flow?
 
-Currently, passing end-user authentication to a flow is not supported in Virtual Agent, but we have this feature on the roadmap, and it will be enabled over the coming months. We will start with token-based authentication. If you have specific authentication requirements that you would like us to be aware of, please [submit your ideas and feedback in our Idea forum](https://go.microsoft.com/fwlink/?linkid=2064961).
+Currently, passing end-user authentication to a flow is not supported in Power Virtual Agents, but we have this feature on the roadmap, and it will be enabled over the coming months. We will start with token-based authentication. If you have specific authentication requirements that you would like us to be aware of, please [submit your ideas and feedback in our Idea forum](https://go.microsoft.com/fwlink/?linkid=2064961).
 
 ### Can I share the flows I created with other users?
 You can add other users in you organization as owners of the flows you have created. Select the flow to open its Details page, and select the **Add another owner** option in the Owners section:
@@ -273,13 +272,13 @@ You can add other users in you organization as owners of the flows you have crea
 
 ### How do I move or copy my flows between different environments?
 
-You can export and import solutions containing your flows to move them between environments. Note that there is currently no way to export or import a single flow. For more information on how to import and export solutions, refer to the Microsoft Flow documentation:
+You can export and import solutions containing your flows to move them between environments. Note that there is currently no way to export or import a single flow. For more information on how to import and export solutions, refer to the Power Automate documentation:
 - [Export a Solution](https://docs.microsoft.com/flow/export-flow-solution)
 - [Import a Solution](https://docs.microsoft.com/flow/import-flow-solution)
 
-### Where can I find out more about Microsoft Flow?
-You can find out more about the capabilities of Microsoft Flow on the [Frequently asked quetsions](https://docs.microsoft.com/flow/frequently-asked-questions) page or by reading [Flow documentation](https://docs.microsoft.com/flow/getting-started).
-You can also learn new skills and discover the power of Microsoft Flow with step-by-step [Flow training modules](https://docs.microsoft.com/learn/browse/?products=flow).
+### Where can I find out more about Power Automate?
+You can find out more about the capabilities of Power Automate on the [Frequently asked quetsions](https://docs.microsoft.com/flow/frequently-asked-questions) page or by reading [Power Automate documentation](https://docs.microsoft.com/flow/getting-started).
+You can also learn new skills and discover the power of Power Automate with step-by-step [Power Automate training modules](https://docs.microsoft.com/learn/browse/?products=flow).
 
 ## Deployment 
 
@@ -289,7 +288,7 @@ You can find the details in this article: [To share your bot on the demo website
 
 ### How do I install the bot in a modern SharePoint site? Is there any additional work that will be required if the given modern SharePoint restricts embedding code from external sites?
 
-If the modern SharePoint site allows embedding an iframe, it should be able to embed the bot. We have an iframe code snippet that you can get for your respective bot by going to the **Deploy** page. That snippet can be pasted into any HTML webpage, and from there you should see your bot appear. You can get this code to embed in your SharePoint site from **Deploy** > **Custom Website** in Virtual Agent.
+If the modern SharePoint site allows embedding an iframe, it should be able to embed the bot. We have an iframe code snippet that you can get for your respective bot by going to the **Deploy** page. That snippet can be pasted into any HTML webpage, and from there you should see your bot appear. You can get this code to embed in your SharePoint site from **Deploy** > **Custom Website** in Power Virtual Agents.
 
 ### Why are the changes I made to my topic not reflected on the demo website page, or custom website? 
 

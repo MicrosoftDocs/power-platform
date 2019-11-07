@@ -146,7 +146,7 @@ Submitting support requests online allows us to deliver fast and deep technical 
 
 ### Is there a phone number I can call to contact Support? 
 
-Contacting Support over the phone will not speed up the processing of your request, and you will get a much better and faster experience by contacting support via the correct support portals listed earlier in this topic. If you cannot submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](http://go.microsoft.com/fwlink/p/?LinkID=616794).
+Contacting Support over the phone will not speed up the processing of your request, and you will get a much better and faster experience by contacting support via the correct support portals listed earlier in this topic. If you cannot submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](https://go.microsoft.com/fwlink/p/?LinkID=616794).
 
 ### How do I submit a support request? 
 
@@ -159,7 +159,7 @@ Contacting Support over the phone will not speed up the processing of your reque
 
 ### How do I submit a support request if I cannot sign in to the support portal for my product or service? 
  
-If you cannot submit a support request online, you can find a local support phone number from our list of regional [Global Customer Service Centers](http://go.microsoft.com/fwlink/p/?LinkID=616794).
+If you cannot submit a support request online, you can find a local support phone number from our list of regional [Global Customer Service Centers](https://go.microsoft.com/fwlink/p/?LinkID=616794).
 
 ### How do I get support if I don’t have a subscription yet, and I get an error message while creating one? 
 

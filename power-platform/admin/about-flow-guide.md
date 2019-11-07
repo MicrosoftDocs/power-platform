@@ -1,6 +1,6 @@
 ---
-title: "Administer Microsoft Flow  | MicrosoftDocs"
-description: Administer Microsoft Flow
+title: "Administer Power Automate  | MicrosoftDocs"
+description: Administer Power Automate
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Administer Microsoft Flow
+# Administer Microsoft Power Automate
 
-Microsoft Flow administrators can use the Flow admin portal ([admin.flow.microsoft.com](https://admin.flow.microsoft.com)) to manage an organization’s data policies and environments. Microsoft Flow admin content is available at [Microsoft Flow documentation](https://docs.microsoft.com/flow/admin-center-introduction).
+Microsoft Power Automate administrators can use the Power Automate admin portal ([admin.flow.microsoft.com](https://admin.flow.microsoft.com)) to manage an organization’s data policies and environments. Power Automate admin content is available at [Microsoft Power Automate documentation](https://docs.microsoft.com/flow/admin-center-introduction).
 
 ### See also
 [Reference: Use the various admin centers](admin-centers.md)

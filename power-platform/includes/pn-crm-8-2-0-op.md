@@ -1,1 +1,0 @@
-December 2016 Service Pack for Microsoft Customer Engagement (on-premises)

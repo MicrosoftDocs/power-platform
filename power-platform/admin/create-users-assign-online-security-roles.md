@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/07/2019
+ms.date: 11/05/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. In addition to registration with the online service, the user account must be assigned a license in order for the user to have access to the service. Note that when you assign a user the global administrator or the service administrator role in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], it automatically assigns the user the System Administrator security role. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Differences between the Microsoft Online services environment administrative roles and security roles](https://docs.microsoft.com/dynamics365/customer-engagement/admin/grant-users-access#BKMK_O365CRMroles)  
 
 ## Create a user account  
- When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You have the option to let the service send an email message to the user as clear text. Although the password is temporary, you may consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] user account, see [Create or edit users in Office 365](http://go.microsoft.com/fwlink/p/?LinkId=255286).  
+ When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You have the option to let the service send an email message to the user as clear text. Although the password is temporary, you may consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] user account, see [Create or edit users in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=255286).  
   
 > [!NOTE]
 >  When you create a user and assign a license in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the user is also created in model-driven apps in Dynamics 365. The synchronization process between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and model-driven apps in Dynamics 365 can take a few minutes to complete.  
@@ -63,7 +63,7 @@ The following are Office 365 user contact fields.
 ## Add a license to a user account  
  You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service.  
   
- For step-by-step instructions, see [Assign, reassign, or remove licenses](http://go.microsoft.com/fwlink/p/?LinkId=255449).  
+ For step-by-step instructions, see [Assign, reassign, or remove licenses](https://go.microsoft.com/fwlink/p/?LinkId=255449).  
   
 > [!IMPORTANT]
 >  Licensed users must be assigned at least one security role to access model-driven apps in Dynamics 365.  
@@ -121,7 +121,7 @@ Check your security role:
 ## (Optional) Assign an administrator role  
  You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. You might decide to assign the global administrator role to a second person in your organization for times when you are not available.  
   
- There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles with varying levels of permissions. For example, the password reset administrator role can reset user passwords only; the user management administrator role can reset user passwords as well as add, edit, or delete user accounts; and the global administrator role can add online service subscriptions for the organization and can manage all aspects of subscriptions. For detailed information about [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles, see [Assigning Admin Roles](http://go.microsoft.com/fwlink/p/?LinkId=255444).  
+ There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles with varying levels of permissions. For example, the password reset administrator role can reset user passwords only; the user management administrator role can reset user passwords as well as add, edit, or delete user accounts; and the global administrator role can add online service subscriptions for the organization and can manage all aspects of subscriptions. For detailed information about [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles, see [Assigning Admin Roles](https://go.microsoft.com/fwlink/p/?LinkId=255444).  
   
 > [!NOTE]
 > [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles are valid only for managing aspects of the online service subscription. These roles don’t affect permissions within the service.  
@@ -138,7 +138,7 @@ Check your security role:
 >
 > You can [assign records](https://docs.microsoft.com/dynamics365/customer-engagement/basics/assign-record-user-team) to a disabled user and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
- You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assigning Admin Roles](http://go.microsoft.com/fwlink/p/?LinkId=255444)  
+ You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assigning Admin Roles](https://go.microsoft.com/fwlink/p/?LinkId=255444)  
   
 ### Enable a user by assigning a license to the user and adding a user to the security group  
   
@@ -158,7 +158,7 @@ Check your security role:
   
 8. Select the users to add to the security group, and then select **Save** > **Close** multiple times.  
   
-   To add multiple users, see: [bulk add users to Office365 groups](http://go.microsoft.com/fwlink/p/?LinkID=615203).  
+   To add multiple users, see: [bulk add users to Office365 groups](https://go.microsoft.com/fwlink/p/?LinkID=615203).  
   
 ### Disable a user by removing a license from the user  
   
@@ -283,91 +283,6 @@ A default security role is automatically assigned to these imported users. The *
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 
-
-## Manage users in Microsoft Customer Engagement (on-premises)
-
-With Microsoft Customer Engagement (on-premises), you can add users to your organization one at a time, or add multiple users at the same time by using the **Add Users** wizard.
-
-### Add a user
-
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
-
-2.  On the toolbar, choose **New**.
-
-3.  On the **New User** page, in the **Account Information** section, specify the **User Name** for the user.
-
-4.  In the **User Information** section, specify the **Full Name** for the user.
-
-5.  In the **Organization Information** section, verify the **Business Unit** for the user.
-
-6.  Follow the step for the task you’re doing:
-    
-      - To save the information for the new user, choose **Save**.
-    
-      - To save the information for the user and add another user, choose **Save & New**.
-    
-      - To add another user without saving the information you entered for the user, choose **New**, and then in the **Message from webpage** dialog box, choose **OK**.
-    
-    Next, you’ll need to assign a security role to the newly added user. See “Assign a security role to a user” later in this topic.
-
-### Add multiple users
-
-You can add multiple user records for the same set of security roles by using the Add Users wizard. Any users you add must be in the Active Directory directory service.
-
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
-
-2.  On the toolbar, choose **New Multiple Users**.
-    
-    The **Add Users** wizard opens.
-
-3.  On the **Select Security Roles** page, select one or more security roles, and then choose **Next**.
-
-4.  On the **Select Access and License Type** page, under **Access Type**, select the appropriate access type for this set of users.
-
-5.  Under **License Type**, specify the license type for this set of users.
-
-6.  Under **Email Access Configuration**, specify how this set of users will access incoming and outgoing email messages, and then choose **Next**.
-
-7.  On the **Select Domain or Group** page, specify to select users from all trusted domains and groups or users from a particular domain or group, and then choose **Next**.
-
-8.  On the **Select Users** page, type a part of the name of user you want to add. Use semi-colons between names.
-    
-9. Choose **Create New Users**.
-
-10. On the **Summary** page, review the information about the user additions, and then follow the step for the task you are performing:
-    
-      - To close the Add Users wizard, choose **Close**.
-    
-      - If you need to add more users, for example with a different set of security roles, choose **Add More Users** to begin the wizard again.
-    
-
-    > [!NOTE]
-    > To edit a specific user record, close the wizard, and then open the user record from the list.
-
-### Assign a security role to a user
-
-After you create users, you must assign security roles. Even if a user is a member of a team with its own security privileges, the user won’t be able to see some data and may experience other problems when trying to use the system. More information: [Security roles and privileges](security-roles-privileges.md)
-
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
-
-2.  In the list, select the user or users that you want to assign a security role to.
-
-3.  Choose **More Commands** (***...***) > **Manage Roles**.
-    
-    Only the security roles available for that user's business unit are displayed.
-
-4.  In the **Manage User Roles** dialog box, select the security role or roles you want for the user or users, and then choose **OK**.
-
-
-### Enable a user
-
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
-
-2.  Select the down arrow next to **Enabled Users**, and then choose **Disabled Users**.
-
-3.  Select the checkmark next to the user you want to enable, and on the Actions toolbar, select **Enable**.
-
-4.  In the **Confirm User Activation** message, select **Activate**.
 
 ## Disable a user
 

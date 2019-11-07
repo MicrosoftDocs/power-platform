@@ -23,7 +23,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 - For existing organizations, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will soon accommodate migrations to datacenters in the new region when requested by the customer as long as the organization meets certain business requirements.  
   
-The following table lists the newest datacenter regions. Checkout the interactive data map: [Where is my data?](http://go.microsoft.com/fwlink/p/?LinkID=401277)  
+The following table lists the newest datacenter regions. Checkout the interactive data map: [Where is my data?](https://go.microsoft.com/fwlink/p/?LinkID=401277)  
   
 |Datacenter regions|Service area|Information|  
 |------------------------|------------------|-----------------|  

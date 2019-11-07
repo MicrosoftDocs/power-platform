@@ -77,7 +77,7 @@ As a global administrator in the admin portal you will be able to see a list of 
 
 ## Impact of multiple environments on users
 
-While it might be tempting to have users partitioned off into smaller environments it is important to consider the impact on the users in that decision. When users access the PowerApps Canvas App Player or the Flow application from the Web Browser or Windows Store the user will select and work within a single environment. By default, that environment will be set to the tenant default environment. Users can change their environment in the players and portals using the environment selector.
+While it might be tempting to have users partitioned off into smaller environments it is important to consider the impact on the users in that decision. When users access the PowerApps Canvas App Player or the Power Automate application from the Web Browser or Windows Store the user will select and work within a single environment. By default, that environment will be set to the tenant default environment. Users can change their environment in the players and portals using the environment selector.
 
 ![Default environment](media/DefaultEnvironment780.png "Default environment")
 

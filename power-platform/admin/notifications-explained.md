@@ -35,7 +35,7 @@ The notifications sent from the Business Application Group communications team w
 | Dynamics 365 Marketing | msdynamics365@microsoft.com |
 | Dynamics 365 Market Insights | marketinsights@microsoft.com|
 | Dynamics 365 Finance & Operations    | msdyn365finops@microsoft.com| 
-| Microsoft Flow  | msflow@microsoft.com| 
+| Microsoft Power Automate  | msflow@microsoft.com| 
 | Microsoft PowerApps | mspowerapps@microsoft.com| 
 | Microsoft Power BI  | mspowerbi@microsoft.com| 
 
@@ -65,7 +65,7 @@ Power BI will display with the following yellow banner:
  
 ![Power BI](../admin/media/PowerBI-banner.png "Power BI") 
  
- PowerApps/Flow will display with the following purple banner:
+ PowerApps/Power Automate will display with the following purple banner:
  
 ![PowerApps](../admin/media/PowerApps-Banner.png "PowerApps") 
 

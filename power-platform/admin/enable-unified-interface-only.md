@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 11/04/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -105,6 +105,10 @@ When Unified Interface Only mode is enabled, environment settings can be accesse
 In the Power Platform Admin center, go to **Environments** and select an environment. Go to **Settings** > **Behavior** > **Interface settings** and then turn on **Use Unified Interface only**.
 
 ## FAQs
+
+### Why is the Unified Interface setting disabled?
+
+The **Unified Interface only** setting may be disabled for some organizations that have made the transition to the Unified Interface Only experience. If you wish to make a change to this setting prior to October 1, 2020, please raise a [support request](get-help-support.md). 
 
 ### Is there any downtime while applying this change?
 
