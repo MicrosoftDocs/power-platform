@@ -17,7 +17,7 @@ search.app:
 ---
 # Delete an environment
 
-You can delete a Sandbox environment recover storage space and to remove Personally Identifiable Information (PII) data. In order to delete a Production environment, you must first change it to a Sandbox environment and then delete the Sandbox environment. 
+You can delete a Sandbox environment to recover storage space and to remove Personally Identifiable Information (PII) data. In order to delete a Production environment, you must first change it to a Sandbox environment and then delete the Sandbox environment. You can delete a Support environment directly.
 
 
 ## Delete an environment
