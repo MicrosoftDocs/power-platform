@@ -24,6 +24,18 @@
      href: topic-checker.md
    - name: Use analytics to improve your bot
      href: getting-started-analytics.md
+   - name: Fundamentals - publish your bot
+     href: publication-fundamentals-publish-channels.md
+   - name: Publish to web
+     href: publication-connect-bot-to-web-channels.md
+   - name: Connect to Microsoft Teams
+     href: publication-add-bot-to-microsoft-teams.md
+   - name: Connect to Facebook
+     href: publication-add-bot-to-facebook.md
+   - name: Connect bot to mobile and custom apps
+     href: publication-connect-bot-to-custom-application.md
+   - name: Connect bot to Azure Bot Service channels
+     href: publication-connect-bot-to-azure-bot-service-channels.md
    - name: Deploy your bot
      href: getting-started-deploy.md
    - name: Delete your bot
@@ -36,6 +48,10 @@
      href: how-to-test-bot.md
    - name: Work with variables
      href: how-to-variables.md
+   - name: Use variables
+     href: authoring-variables.md
+   - name: Use entities and slot filling
+     href: advanced-entities-greedy-slot-filling.md
    - name: Trigger hand-off to a live human agent
      href: how-to-handoff.md
    - name: Configure hand off to Omnichannel for Customer Service
@@ -44,6 +60,10 @@
      href: how-to-flow.md
    - name: Use a Microsoft Bot Framework bot with a Power Virtual Agents bot
      href: how-to-use-dispatcher.md
+   - name: Configure end-user authentication
+     href: configuration-end-user-authentication.md
+   - name: Use end-user authentication
+     href: advanced-end-user-authentication.md
 - name: Analytics
   items:
    - name: Analytics overview
