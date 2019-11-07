@@ -34,7 +34,7 @@ landingContent:
             url: quickstart.md
       - linkListType: reference
         links:
-          - text: Videos
+          - text: Power Virtual Agents Videos
             url: videos.md
           - text: FAQ
             url: faq.md
