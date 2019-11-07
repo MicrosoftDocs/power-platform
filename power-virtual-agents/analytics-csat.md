@@ -13,6 +13,9 @@ manager: mahesha
 # Customer Satisfaction page
 
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
+
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score.
 
 ![Customer Satisfaction page](media/customer-satisfaction-dashboard.png)

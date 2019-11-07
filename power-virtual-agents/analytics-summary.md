@@ -1,4 +1,5 @@
 ---
+
 title: "Analytics Summary page"
 description: "Learn about the Power Virtual Agents Analytics Summary page."
 ms.date: 12/2/2019
@@ -7,10 +8,14 @@ ms.service:
 ms.topic: article
 author: mivakoc
 ms.author: mivakoc
+
 manager: shellyha
 ---
 
 # Summary page
+
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 ![Summary page](media/analytics-pane.png)
 

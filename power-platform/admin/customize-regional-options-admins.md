@@ -1,22 +1,13 @@
 ---
-title: "Customize regional options | MicrosoftDocs"
-description: Learn how to customize regional options
-ms.custom: 
-ms.date: 08/19/2019
-ms.reviewer: 
+title: "Customize regional options  | MicrosoftDocs"
+description: Customize regional options
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
-ms.suite: 
-ms.tgt_pltfrm: 
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: f88f7c87-2ee2-42f3-8101-7271f6731cf9
-caps.latest.revision: 28
-author: jimholtz
+ms.topic: conceptual
+ms.date: 08/19/2019
 ms.author: jimholtz
-manager: kvivek
 search.audienceType: 
   - admin
 search.app: 
@@ -25,6 +16,8 @@ search.app:
   - Powerplatform
 ---
 # Customize regional options 
+
+[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 You can customize how numbers, currencies, times, and dates appear to everyone in your organization.  
   

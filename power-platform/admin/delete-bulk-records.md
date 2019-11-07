@@ -1,21 +1,13 @@
 ---
-title: "Delete bulk records for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
-ms.custom: 
-ms.date: 08/13/2019
-ms.reviewer: 
+title: "Delete bulk records  | MicrosoftDocs"
+description: Delete bulk records 
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
-ms.suite: 
-ms.tgt_pltfrm: 
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-author: jimholtz
-ms.assetid: 6c1edaef-d2d0-4e94-bb3d-819b208966c1
-caps.latest.revision: 15
+ms.topic: conceptual
+ms.date: 08/13/2019
 ms.author: jimholtz
-manager: kvivek
 search.audienceType: 
   - admin
 search.app: 
@@ -25,7 +17,7 @@ search.app:
 ---
 # Remove a large amount of specific, targeted data with bulk deletion 
 
-The *bulk deletion* feature helps you to maintain data quality and manage the consumption of system storage in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps by deleting data that you no longer need.  
+The *bulk deletion* feature helps you to maintain data quality and manage the consumption of system storage by deleting data that you no longer need.  
   
  For example, you can delete the following data in bulk:  
   

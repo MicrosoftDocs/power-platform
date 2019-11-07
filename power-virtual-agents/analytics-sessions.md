@@ -1,6 +1,7 @@
 ---
 title: "Sessions page"
 description: "Learn about the Power Virtual Agents Sessions page."
+
 ms.date: 12/02/2019
 ms.service:
   - "dynamics-365-ai"
@@ -8,9 +9,12 @@ ms.topic: article
 author: mivakoc
 ms.author: mivakoc
 manager: mahesha
+
 ---
 
 # Sessions page
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
 ![Sessions page](media/sessions-page.png)

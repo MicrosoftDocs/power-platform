@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/08/2019
+ms.date: 10/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,7 +23,7 @@ Follow these steps to create a PowerApps environment and a database for that env
 
 ### Prerequisites
  To follow this topic, the following items are required:
- - Either a PowerApps Plan 2 or Microsoft Flow Plan 2 license. Alternatively, you can sign up for a [free PowerApps Plan 2 trial](https://web.powerapps.com/signup?redirect=marketing&email=).
+ - A PowerApps plan. Alternatively, you can sign up for a [free PowerApps trial](https://web.powerapps.com/signup?redirect=marketing&email=).
  - PowerApps Environment Admin, Office 365 Global Admin, or Azure Active Directory Tenant Admin permissions. For more information, see [Environments administration in PowerApps](environments-administration.md).
 
 ### Sign in to the PowerApps Admin center
@@ -60,10 +60,8 @@ Your license determines whether you can create environments.
 
 | License | Trial | Production |
 | --- | --- | --- |
-| PowerApps P2 |Yes (one)| Yes |
-| PowerApps P2 Trial |Yes (one)| Yes |
-| PowerApps P1 |Yes (one)| Yes |
-| PowerApps P1 Trial |Yes (one)| No |
+| PowerApps Plan |Yes (one)| Yes |
+| PowerApps Trial |Yes (one)| Yes |
 | Dynamics 365 Plans |Yes (one)| Yes |
 | Office 365 Plans |No | No |
 | Dynamics 365 Apps Plans |Yes (one)| Yes |
@@ -71,7 +69,7 @@ Your license determines whether you can create environments.
 | PowerApps Community Plan   |No | No |
 
 ### Where can environments be created?
-You will be able to create new environments from [https://web.powerapps.com][https://web.powerapps.com] and from the [PowerApps Admin center](https://admin.powerapps.com). If you create an environment, you will automatically be added to the Environment Admin role for that environment. There is not be a limit on the number of environments that you can participate in as a member of the Environment Admin or Environment Maker role. For more information about environments, see [Administer environments in PowerApps](environments-administration.md). For instructions on how to create an environment, see [Create an environment](create-environment.md).
+You will be able to create new environments from [https://web.powerapps.com](https://web.powerapps.com) and from the [PowerApps Admin center](https://admin.powerapps.com). If you create an environment, you will automatically be added to the Environment Admin role for that environment. There is not be a limit on the number of environments that you can participate in as a member of the Environment Admin or Environment Maker role. For more information about environments, see [Administer environments in PowerApps](environments-administration.md). For instructions on how to create an environment, see [Create an environment](create-environment.md).
 
 ![](./media/environments-overview/CreateEnvironmentDialog-New.png)
 

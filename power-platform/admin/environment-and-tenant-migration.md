@@ -1,13 +1,14 @@
 ---
 title: Migrate apps between environments and tenants | Microsoft Docs
 description: Walkthrough of how to migrate PowerApps apps between environments and tenants
-author: jamesol-msft
+author: jimholtz
 manager: kvivek
 ms-topic: conceptual
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.author: jamesol
+ms.date: 10/22/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -30,7 +31,7 @@ When you export an app, the dependent resources for your app will also get expor
 | Resource type | Supported | Import options |
 | --- | --- | --- |
 | App |Yes |There are two options to import an app into an environment: <ol><li><b>Create new</b> – The app will be created as a new app in the environment where the package is imported.</li> <li><b>Update</b> - the app already exists in the environment and will be updated when this package is imported.</li></ol> |
-| Flow |Yes |There are two options to import a flow into an environment: <ol><li><b>Create new</b> – The flow will be created as a new flow in the environment where the package is imported.</li> <li><b>Update</b> - The flow already exists in the environment and will be updated when this package is imported.</li></ol> <b>Note: </b>All resources that the flow depends on will also be included within the app package that is exported and will need to be configured with the package is imported. |
+| Power Automate |Yes |There are two options to import a flow into an environment: <ol><li><b>Create new</b> – The flow will be created as a new flow in the environment where the package is imported.</li> <li><b>Update</b> - The flow already exists in the environment and will be updated when this package is imported.</li></ol> <b>Note: </b>All resources that the flow depends on will also be included within the app package that is exported and will need to be configured with the package is imported. |
 | Custom Connectors |No |If an app depends on a custom connector <b>we do not</b> currently support exporting the connector as a part of the package. <p></p> If you have an app that relies on a custom connector, your only current option is to manually re-create or update the connector in your target environment and select that connector when you import the package. |
 | Connections |No |If an app depends on a connection (such as a SQL connection w/ credentials), we do not currently support exporting the connection or credentials as a part of the package. <p></p> If you have an app that relies on a shared connection (like SQL), your only current option is to manually re-create that connection with the appropriate credentials in your target environment and select that connection when you import the package. |
 | Common Data Service Customizations |No |Exporting Common Data Service customizations is no longer supported as a part of packaging. This is now supported through export and importing the environment default solution as outlined in the article below. |
@@ -40,8 +41,6 @@ When you export an app, the dependent resources for your app will also get expor
 The ability to export an app is available to any user with "Can edit" permission to the app.
 
 The ability to import an app is available to any user with "Environment Maker" permission in the destination environment.
-
-A  user must have a PowerApps Plan 2 or PowerApps Plan 2 trial license in order to export or import any app.
 
 > [!NOTE]
 > While packaging is in preview, any user with a valid PowerApps license will be able to try out packaging for their apps and environments.
@@ -77,7 +76,7 @@ A  user must have a PowerApps Plan 2 or PowerApps Plan 2 trial license in order 
     ![Review import results](./media/environment-and-tenant-migration/import-results.png)
 
 > [!NOTE]
->  If you are importing an app and chose to **Update** an existing app, the new changes will be saved as a draft of the applications.  You will need to [publish](http://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app) those changes in order for them to be available all other users of the applications.
+>  If you are importing an app and chose to **Update** an existing app, the new changes will be saved as a draft of the applications.  You will need to [publish](https://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app) those changes in order for them to be available all other users of the applications.
 >
 >
 
@@ -118,7 +117,7 @@ Importing a Common Data Service solution package unfortunately requires a manual
         ![Edit url](./media/environment-and-tenant-migration/edit-url.png)
 
     * New URL structure:
-  `https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx`
+  `https://{orguniquename}.crm.dynamics.com/tools/solution/import/SolutionImportWizard.aspx`
 
         ![Select package](./media/environment-and-tenant-migration/select-package.png)
 

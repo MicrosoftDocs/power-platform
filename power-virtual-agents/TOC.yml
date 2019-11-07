@@ -73,7 +73,9 @@
    - name: Fundamentals - Configuration
      href: configuration-fundamentals-virtual-agent.md
    - name: Configure the appearance of your bot
-     href: configuration-appearace-chat-canvas-virtual-agent.md
+     href: extend-custom-canvas-connect-virtual-agent.md
+   - name: Upload a custom canvas
+     href: extend-custom-canvas-upload-virtual-agent.md
    - name: Configure hand-off with Omnichannel
      href: configuration-hand-off-omnichannel-virtual-agent.md
    - name: Configure end-user authentication
