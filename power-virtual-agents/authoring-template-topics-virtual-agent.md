@@ -18,6 +18,7 @@ ms.collection: virtualagent
 # Learn with Power Virtual Agent Bot Customer Service template
 The Power Virtual Agent includes the templates from which you can learn how a topic can be used as well as a starting point for Customer Service. There are serveral topics within this template:
 
+
 * STORE INFORMATION: Company store locations
 * ORDER: BUY: How to buy an item
 * ORDER: CANCEL: How to cancel an order
@@ -26,7 +27,19 @@ The Power Virtual Agent includes the templates from which you can learn how a to
 * STORE INFORMATION: Company store hours
 * PROFILE: Manage my account
 
+
 These topics demonstrate how you can name a topic, set its description and set up basic topic flows including variables, decision points and entities and slots.
+
+## H2 Customer Service templates for new Bots
+
+When a bot is created the template is automatically applied and contains the topics noted above.  While the topics work as they are, you will want to either update to meet your specific requirements and likely integrate them through Microsoft Flows to your own Line of Business applications.
+
+
+These topics demonstrate how you can name a topic, set its description and set up basic topic flows including variables, decision points and entities and slots.
+
+### Leveraging the topics
+
+To learn from or use these topics, click on any particular one.  Review the title and description.  Next click on edit the canvas and you can see the virtual agent flow including bot comments, expected user comments, decision points and entity references.
 
 ## Customer Service templates for new Bots
 When a bot is created the template is automatically applied and contains the topics noted above. While the topics work as they are, you will want to either update to meet your specific requirements and likely integrate them through Microsoft Flows to your own Line of Business applications.
