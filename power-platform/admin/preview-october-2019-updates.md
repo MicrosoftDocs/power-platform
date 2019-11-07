@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/07/2019
+ms.date: 10/29/2019
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -106,7 +106,7 @@ Select **Update now** to activate the 2019 release wave 2 updates and proceed th
 The 2019 release wave 2 update is activated for the Dynamics 365 platform, Dynamics 365 Sales, Customer Service, Sales Hub, Customer Service Hub, and Marketing.
 
 > [!NOTE]
-> You will need to take additional steps to enable the 2019 release wave 2 updates for the Marketing app. See [Enable the 2019 release wave 2 updates for Dynamics 365 Marketing](#enable-the-2019-release-wave-2-updates-for-dynamics-365-marketing).
+> You will need to take additional steps to enable the 2019 release wave 2 updates for Field Service and the Marketing app. For Field Service, go to the Admin Center and apply the update for the Field Service app. For the Marketing app, see [Trials and upgrades](https://docs.microsoft.com/dynamics365/field-service/version-history#trials-and-upgrades).
 >
 > Current apps for which you have licenses are updated; new apps are not installed.
 

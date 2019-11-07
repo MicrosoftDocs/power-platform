@@ -1,6 +1,6 @@
 ---
 title: "Quickstart: Create and deploy a customer service bot"
-description: "Learn how to quickly create a customer service bot using Virtual Agent."
+description: "Learn how to quickly create a customer service bot using Power Virtual Agents."
 ms.date: 06/19/2019
 ms.service:
   - "dynamics-365-ai"
@@ -14,7 +14,7 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Dynamics 365 Virtual Agent for Customer Service empowers customer teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
+Power Virtual Agents empowers customer teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
 
 This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding custom topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it’s been deployed. 
 
@@ -23,20 +23,20 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 
 ## Create your first bot
 
-1.	Go to [http://aka.ms/virtual-agent](http://aka.ms/virtual-agent) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Try preview**, and then sign in with your work email address. Note that personal Microsoft accounts aren't supported currently.
+1.	Go to [https://aka.ms/virtual-agent](https://aka.ms/virtual-agent) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Try preview**, and then sign in with your work email address. Note that personal Microsoft accounts aren't supported currently.
 
     ![Sign up page](media/sign-up-screen.png)
 
 2. Next, you’ll choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
-Your bot is created in the default PowerApps environment that was created for you when you signed up. For most users, this is sufficient. However, if you want to specify a custom PowerApps environment for your virtual agent, you can do so by expanding the **More options** menu and selecting a different environment.
+Your bot is created in the default Power Apps environment that was created for you when you signed up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, you can do so by expanding the **More options** menu and selecting a different environment.
    > [!NOTE] 
-   > Preview is currently supported only in the United States, with data stored in US data centers. If your company is located outside of the United States, you need to create a custom environment with **Region** set to “United States” before you can create your virtual agent. For more information on how to create a custom PowerApps environment, see [Creating a PowerApps environment](getting-started-new-environment.md).
+   > Preview is currently supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with **Region** set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Creating a Power Apps environment](getting-started-new-environment.md).
 
    ![Name the new bot](media/create-new-bot-screen.png)
 
 3.	Once you select **Create**, the process of creating the first bot within a new environment can take up to 15 minutes. Subsequent bots will be created much faster. 
 
-4. After a few minutes, you’ll land on the home page and have an opportunity to play around with the bot in read-only mode. You can't save any edits during this time, but you can explore the overall user interface, look at the topics, experiment with the preloaded User Topics and System Topics, and interact with your bot using the Test Canvas. During this time, you can also [watch product videos](virtual-agent-videos.md) to learn how to complete tasks such as creating a branching dialog tree using variables and expressions, or [creating a Flow and embedding Flows](how-to-flow.md) within your dialog tree.
+4. After a few minutes, you’ll land on the home page and have an opportunity to play around with the bot in read-only mode. You can't save any edits during this time, but you can explore the overall user interface, look at the topics, experiment with the preloaded User Topics and System Topics, and interact with your bot using the Test Canvas. During this time, you can also [watch product videos](videos.md) to learn how to complete tasks such as creating a branching dialog tree using variables and expressions, or [creating a flow and embedding flows](how-to-flow.md) within your dialog tree.
     
    ![Read-only mode](media/create-bot-banner-blue.png)
 
@@ -66,15 +66,15 @@ Your bot is created in the default PowerApps environment that was created for yo
 6. For the two “User Says” responses, enter “Seattle” and “Bellevue” in the User Responses node. Now, enter “Hello Seattle!” in the Seattle branch on the left and “Hello Bellevue!” in the Bellevue branch on the right. Select **Save** in the upper-right corner.
     ![Complete conversation](media/quickstart-create-topic-03.png)
 
-You now have a very simple branching dialogue tree—congratulations! You can begin to create more complex versions of this tree by incorporating variables, expressions, and Microsoft Flow.
+You now have a very simple branching dialogue tree—congratulations! You can begin to create more complex versions of this tree by incorporating variables, expressions, and Power Automate.
 
 > [!NOTE]
 >  
 > Have a look at these related videos: 
 >
-> [Using variables and expressions to create dynamic dialogues](http://go.microsoft.com/fwlink/?linkid=2063539)  
+> [Using variables and expressions to create dynamic dialogues](https://go.microsoft.com/fwlink/?linkid=2063539)  
 > 
-> [Creating and using Flows for extensible dialogues](http://go.microsoft.com/fwlink/?linkid=2079323).
+> [Creating and using flows for extensible dialogues](https://go.microsoft.com/fwlink/?linkid=2079323).
  
 ## Test your content in real time
 
@@ -146,6 +146,6 @@ For now, enter “This is a demonstration of my first bot that I built by myself
 
 You’ve now created a bot, created your own custom topic, tested it out, deployed it to a demo website, and learned how to analyze your bot’s performance. Congratulations! Your bot has many capabilities beyond this, so please try it out and play with the advanced features
 
-For questions not covered in the product documentation or for feature ideas, please [visit our community](http://go.microsoft.com/fwlink/?linkid=2058639) and post questions or ideas.
+For questions not covered in the product documentation or for feature ideas, please [visit our community](https://go.microsoft.com/fwlink/?linkid=2058639) and post questions or ideas.
 
 For more guidance on how to connect to your existing case logs and automatically discover new topics, please try out [Dynamics 365 Customer Service Insights](https://dynamics.microsoft.com/ai/customer-service-insights/).

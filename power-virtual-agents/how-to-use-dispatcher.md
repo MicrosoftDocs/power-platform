@@ -1,6 +1,6 @@
 ---
-title: "Use a Microsoft Bot Framework bot with Dynamics 365 Virtual Agent for Customer Service"
-description: "Step-by-step guide to using and extending an existing Microsoft Bot Framework bot to work with Dynamics 365 Virtual Agent for Customer Service."
+title: "Connect with a Microsoft Bot Framework bot"
+description: "Step-by-step guide to using and extending an existing Microsoft Bot Framework bot to work with Power Virtual Agents."
 keywords: "extensibility, integration, extend bot, bot framework"
 ms.date: 07/03/2019
 ms.service:
@@ -12,12 +12,12 @@ ms.reviewer: m-hartmann
 manager: shellyha
 ---
 
-# Use a Microsoft Bot Framework bot with Dynamics 365 Virtual Agent for Customer Service
+# Use a Microsoft Bot Framework bot with Power Virtual Agents
 
-This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with your Dynamics 365 Virtual Agent for Customer Service bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs. 
+This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with your Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs. 
 
-* [Retrieve topics, utterances and secrets from your Virtual Agent tenant](#retrieve-topics-and-utterances-from-your-virtual-agent-tenant)
-* [Train the dispatcher custom model with your Virtual Agent topics](#train-the-dispatcher-custom-model-with-your-virtual-agent-topics)
+* [Retrieve topics, utterances and secrets from your Power Virtual Agents tenant](#retrieve-topics-and-utterances-from-your-power-virtual-agents-tenant)
+* [Train the dispatcher custom model with your Power Virtual Agents topics](#train-the-dispatcher-custom-model-with-your-power-virtual-agents-topics)
 * [Register and trigger your new dispatch endpoint in code](#register-and-trigger-your-new-dispatch-endpoint-in-code)
 * [Deploy your bot and test the dispatcher](#deploy-your-bot-and-test-the-dispatcher)
 
@@ -32,20 +32,20 @@ This article covers how to use the Microsoft Bot Framework dispatcher tool to in
 Code snippets used in this document are available in these articles:
 
   * [Bot Framework dispatch tool app sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/14.nlp-with-dispatch)
-  * [Dynamics 365 Virtual Agent Content Converter](https://go.microsoft.com/fwlink/?linkid=2097857)
+  * [Power Virtual Agents Content Converter](https://go.microsoft.com/fwlink/?linkid=2097857)
   * [Microsoft Bot Framework LUDown utility](https://github.com/microsoft/botbuilder-tools/tree/master/packages/Ludown)
   * [NuGet Package manager](https://www.nuget.org/downloads)
   * .NET Core 2.2 runtime: [x86](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.300-windows-x86-installer) | [x64](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.300-windows-x64-installer)
 
-## Retrieve topics and utterances from your Virtual Agent tenant
+## Retrieve topics and utterances from your Power Virtual Agents tenant
 
-You'll need to retrieve your Virtual Agent bot's content (topics and utterances), your tenant’s endpoint, and the direct line secret.
+You'll need to retrieve your Power Virtual Agents bot's content (topics and utterances), your tenant’s endpoint, and the direct line secret.
 
 ### Retrieve bot ID and tenant ID from your bot
 
 1.	In Microsoft Edge, select F12 to open DevTools. (Note: For other browsers, use comparable commands and functionality.)
 
-2.	[Sign in to your Virtual Agent tenant](https://va.ai.dynamics.com) using your Azure Active Directory (Azure AD) credentials. 
+2.	[Sign in to your Power Virtual Agents tenant](https://va.ai.dynamics.com) using your Azure Active Directory (Azure AD) credentials. 
 
 3.	Go to the **Network** tab.
     ![DevTools in Microsoft Edge browser showing the Network tab](media/devtools-network-preview.png)
@@ -62,7 +62,7 @@ You'll need to retrieve your Virtual Agent bot's content (topics and utterances)
 
 ### Retrieve topics and utterances from your bot
 
-  1.	Export `BotContent` and `Annotations` from Common Data Service. [Review how to export data from Virtual Agent](https://docs.microsoft.com/dynamics365/ai/customer-service-virtual-agent/gdpr-export).
+  1.	Export `BotContent` and `Annotations` from Common Data Service. [Review how to export data from Power Virtual Agents](https://docs.microsoft.com/dynamics365/ai/customer-service-virtual-agent/gdpr-export).
   
   2.  Download the zip file and unzip it to find two CSV files: `annotations.csv` and `msdynce_botcontents.csv`
   
@@ -75,29 +75,29 @@ You'll need to retrieve your Virtual Agent bot's content (topics and utterances)
 
 2. Use the following command to compile and run this code sample.
 
-    ```
+    ```console
     dotnet run -p ContentConverter.csproj -c Release -- -i <path to msdynce_botcontents.csv> -c <path to annotations.csv> -b <your bot id>
     ```
 
 3. Convert the `Content.lu` file to LUIS JSON file format.
 
-    ```
+    ```console
     ludown parse ToLuis --in Content.lu
     ```
 
-## Train the dispatcher custom model with your Virtual Agent topics
+## Train the dispatcher custom model with your Power Virtual Agents topics
 
 Train and recreate the dispatcher app and add your exported topics and utterances with your existing Cognitive Service intents (eg. LUIS and/or QnA maker) using the Dispatch tool. For more information, [follow the guidance in the dispatch tool tutorial](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=cs).
 
 1.  Install the dispatch tool using the NuGet package manager.
 
-    ```
+    ```console
     CMD> npm install -g botdispatch
     ```
 
 2.  Add topics and utterances that you exported earlier using the Dispatch tool.
 
-    ```
+    ```console
     CMD> dispatch add -type file -name l_dynamicsbot -f luis.json
     Please enter required field(s) below.
     
@@ -114,7 +114,7 @@ Train and recreate the dispatcher app and add your exported topics and utterance
     > [!NOTE] 
     > You'll need to re-train your dispatch model when more topics are added.
 
-    ```
+    ```console
     CMD> dispatch create
     
     Exporting services for dispatch...
@@ -157,7 +157,7 @@ Train and recreate the dispatcher app and add your exported topics and utterance
 
 The following steps require you to add code that registers your new dispatch endpoint and trigger it whenever a user's utterance matches intent. We are using the [sample provided by the Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/14.nlp-with-dispatch).
 
-1.  Update `appsettings.json` in your dispatcher app to include the new endpoint for Virtual Agent.
+1.  Update `appsettings.json` in your dispatcher app to include the new endpoint for Power Virtual Agents.
   
     ```csharp
     {
@@ -240,7 +240,7 @@ The following steps require you to add code that registers your new dispatch end
     }
     ```
 
-3.  Add a reference to the Virtual Agent bot in the `IBotServices.cs` file.
+3.  Add a reference to the Power Virtual Agents bot in the `IBotServices.cs` file.
   
     ```csharp
     public interface IBotService
@@ -262,7 +262,7 @@ The following steps require you to add code that registers your new dispatch end
     );
     ```
   
-5.  Update `DispatchBot.cs` to add a trigger for the Virtual Agent bot on intent match.
+5.  Update `DispatchBot.cs` to add a trigger for the Power Virtual Agents bot on intent match.
   
     ```csharp
     private async Task ProcessDynamicsBotAsync(ITurnContext<Microsoft.Bot.Schema.IMessageActivity> turnContext, CancellationToken     cancellationToken)
@@ -344,7 +344,7 @@ The following steps require you to add code that registers your new dispatch end
     }
     ```
 
-6.  If you want your Virtual Agent bot to handle unmatched intents for a single fallback, update the method `DispatchToTopIntentAsync`.
+6.  If you want your Power Virtual Agents bot to handle unmatched intents for a single fallback, update the method `DispatchToTopIntentAsync`.
   
     ```csharp
     case "l_dynamicsbot":

@@ -39,4 +39,3 @@ Role-based security controls access to a specific entity type, record-based secu
   
 ### See also  
  [Control data access](../admin/security-roles-privileges.md)   
- [Synchronize user information between model-driven apps in Dynamics 365 and Active Directory](../admin/synchronize-user-information-active-directory.md)

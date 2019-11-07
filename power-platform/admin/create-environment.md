@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/20/2019
+ms.date: 10/21/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -18,7 +18,7 @@ search.app:
 An environment is a space to store, manage, and share your organization’s business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. PowerApps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
 
 > [!TIP]
-> For the blog announcing the latest changes to environment creation, see [Provisioning and administration updates are now live in the Power Platform Admin center](https://powerapps.microsoft.com/blog/5105). 
+> For the blog announcing the latest changes to environment creation, see [Provisioning and administration updates are now live in the Power Platform Admin center](https://powerapps.microsoft.com/blog/provisioning-and-administration-updates-are-now-live-in-the-power-platform-admin-center/). 
 
 ## Provisioning a new environment
 You have a choice when provisioning a new environment. You can:
@@ -46,10 +46,11 @@ Your license determines whether you can create environments.
 | Dynamics 365 Trial | Yes (one) | Yes|
 | Dynamics 365 Plans |Yes (one)| Yes |
 | Dynamics 365 Apps Plans |Yes (one)| Yes |
-| PowerApps P2 |Yes (one)| Yes |
-| PowerApps P2 Trial |Yes (one)| Yes |
-| PowerApps P1 |Yes (one)| Yes |
-| PowerApps P1 Trial |Yes (one)| No |
+| PowerApps plan |Yes (one)| Yes |
+| PowerApps Trial |Yes (one)| Yes |
+
+> [!NOTE]
+> Office 365 Global admins and Common Data Service Service admins can create environments without a license. See [Administer without a license](global-service-administrators-can-administer-without-license.md).
 
 ## Create an environment in the Power Platform Admin center
 Every environment can have zero or one Common Data Service database, which provides storage for apps. When users create an app in an environment, that app can connect to any data source, including connections, gateways, and flows. However, the app is only permitted to connect to the Common Data Service databases in that same environment. How you choose to leverage environments depends on your organization and the apps you're trying to build. For more information, see [Environments overview](environments-overview.md).
@@ -92,18 +93,18 @@ To create an environment with a database, you need 1GB available database capaci
    |---------|---------|
    |Language     | The default language for this environment.        |
    |Currency     | The base currency used for reporting.         |
-   |Enable model-driven apps in Dynamics 365    | Select **Yes** and make a selection to automatically deploy apps such as Sales and Customer Service.      |
-   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for Enable model-driven apps in Dynamics 365 for this setting to appear.        |
+   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. See the next section, **Create an environment and add model-driven apps**.    |
+   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
    > ![](./media/new-environment-page2.png "Create new environment settings")
 
-## Create an environment
-When you create an environment with a database, you can add model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.
+## Create an environment and add model-driven apps
+When you create an environment with a database, you can add model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) to your environment.
 
 > [!NOTE]
-> Currently, apps can only be enabled for Production environments. You can create trials at [https://trials.dynamics.com](https://trials.dynamics.com/).
+> Currently, Dynamics 365 apps can only be enabled for Production environments. You can create Dynamics 365 app trials at <https://trials.dynamics.com>.
 
 ### Prerequisites
 To create an environment with a database, you need 1GB available database capacity.
@@ -131,7 +132,7 @@ To create an environment with a database, you need 1GB available database capaci
 
 4. Enter the language and currency settings.
 
-5. Set **model-driven apps in Dynamics 365** to **Yes**, and then select apps to include from the **Automatically deploy these apps** drop-down list.
+5. Set **Enable Dynamics 365 apps** to **Yes**, and then select apps to include from the **Automatically deploy these apps** list.
 
 6. Select **Save**.
 
@@ -146,6 +147,7 @@ You need 1GB available database capacity.
 
 ### Steps
 1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
+
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
@@ -163,6 +165,25 @@ You need 1GB available database capacity.
 
    > [!div class="mx-imgBorder"] 
    > ![](./media/new-environment-page1-nodb.png "Create new environment settings")
+
+## Provision a Sandbox environment
+To provision a Sandbox environment, you change a Production environment to Sandbox.
+
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
+
+2. From the left-side menu, select **Environments**, and then select a Production environment.
+
+3. Select **Edit**
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/select-edit.png "Select Edit")
+
+4. Under **Type**, choose the Sandbox environment type. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/select-sandbox.png "Select Sandbox environment")
+
+5. Select **Save**.
 
 ## FAQ
 

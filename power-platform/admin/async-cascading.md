@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 10/25/2019
 ms.author: matp
 search.audienceType: 
   - admin
@@ -18,8 +18,6 @@ search.app:
 ---
 
 # Asynchronous processing of cascading transactions
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Certain transactions can be configured to cascade across all related records. This means the change on a parent record will be transacted upon (cascade down through) all the child records. Cascading relationships are configured at the entity level. For more information about cascading relationships, see [Entity relationship behavior](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-behavior).
 

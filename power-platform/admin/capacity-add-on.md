@@ -1,7 +1,7 @@
 ---
-title: "Preview: Capacity add-ons for PowerApps and Flow  | MicrosoftDocs"
-description: This topic covers the Per app, Flow per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 10/11/2019
+title: "Capacity add-ons for PowerApps and Power Automate  | MicrosoftDocs"
+description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
+ms.date: 10/25/2019
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Preview: Capacity add-ons
+# Capacity add-ons
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -23,7 +23,7 @@ If your organization has purchased capacity add-ons, you have to allocate that c
 
 There are three stages for using capacity add-ons:
 
-1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [PowerApps and Flow Licensing Guide Oct 2019](https://go.microsoft.com/fwlink/?linkid=2085130).
+1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [PowerApps and Power Automate Licensing Guide Oct 2019](https://go.microsoft.com/fwlink/?linkid=2085130).
 2. Allocate: assign the purchased add-ons to an environment.
 3. Consume: once allocated, you can consume the capacity add-ons.
 
@@ -94,7 +94,7 @@ Yes. Please use the following steps.
 
 2. Assign the group licenses in portal.azure.com. 
    1. Go to: [https://portal.azure.com](https://portal.azure.com)  > **Azure Active Directory** > **Groups** > search for the group created in Step #1.  
-   2. See [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups). Assign the license **PowerApps per app plan baseline access**.  
+   2. For now, sign up for the [Per app baseline access plan](https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2), and then assign the license **PowerApps per app plan baseline access**. See [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups).  
 
 3. Add users to the group, see [Add or remove group members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).  
 

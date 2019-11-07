@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 11/06/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -46,8 +46,8 @@ Entities with questions about eligibility for PowerApps US Government should con
 
 Access to PowerApps US Government plans is restricted to the following offerings; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- PowerApps/Flow Plan US Government
-- In addition to the standalone plans, PowerApps and Microsoft Flow capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Office 365 and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
+- PowerApps/Power Automate Plan US Government
+- In addition to the standalone plans, PowerApps and Power Automate capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Office 365 and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
 
 Additional information about the differences in functionality between these groups of licenses is described in more detail on the [PowerApps licensing information](https://powerapps.microsoft.com/pricing/) page. PowerApps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
 
@@ -102,7 +102,7 @@ Microsoft has designed the platform and our operational procedures to meet the r
 
 ## PowerApps US Government and other Microsoft services
 
-PowerApps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Microsoft Flow US Government. PowerApps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, PowerApps mobile applications any third-party client application that connects to PowerApps US Government are not part of PowerApps US Government's accreditation boundary and government customers are responsible for managing them.
+PowerApps US Government includes several features that allow users to connect to and integrate with other Microsoft enterprise service offerings such as Office 365 US Government, Dynamics 365 US Government, and Microsoft Power Automate US Government. PowerApps US Government is deployed within Microsoft datacenters in a manner consistent with a multi-tenant, public cloud deployment model; however, client applications including but not limited to the web-user client, PowerApps mobile applications any third-party client application that connects to PowerApps US Government are not part of PowerApps US Government's accreditation boundary and government customers are responsible for managing them.
 
 PowerApps US Government leverages the Office 365 customer administrator UI for customer administration and billing—PowerApps US Government maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, PowerApps US Government leverages Azure (including Azure Government) ATOs for infrastructure and platform services, respectively.
 
@@ -212,7 +212,9 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products.
 
-- [Data integration and Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
+- [Integrate data into Common Data Service](data-integrator.md).
+
+- [Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 
 - [Common Data Service analytics](analytics-common-data-service.md).
 
@@ -229,5 +231,5 @@ Having a problem with your service? You can create a support request to get the 
 More information: [Contact Technical Support](get-help-support.md)
 
 ### See also
-[Microsoft Flow US Government](https://docs.microsoft.com/flow/us-govt)
+[Microsoft Power Automate US Government](https://docs.microsoft.com/flow/us-govt)
 

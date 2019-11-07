@@ -38,7 +38,7 @@ search.app:
   ![Example of a pipeline analysis Excel template](../admin/media/excel-template-example-pipeline-analysis.png "Example of a pipeline analysis Excel template")  
   
 > [!TIP]
-> [![Video symbol](../admin/media/video-thumbnail-4-crm.png "Video symbol")](http://go.microsoft.com/fwlink/p/?LinkId=404225) Check out the following video: [Create documents directly from Dynamics CRM by using Word and Excel templates (2:38)](http://go.microsoft.com/fwlink/p/?LinkID=723604)  
+> [![Video symbol](../admin/media/video-thumbnail-4-crm.png "Video symbol")](https://go.microsoft.com/fwlink/p/?LinkId=404225) Check out the following video: [Create documents directly from Dynamics CRM by using Word and Excel templates (2:38)](https://go.microsoft.com/fwlink/p/?LinkID=723604)  
   
 <a name="BKMK_CreateTemplate"></a>   
 ## Create a new Excel template  

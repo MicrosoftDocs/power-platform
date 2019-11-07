@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/02/2019
+ms.date: 10/29/2019
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.
+The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and PowerApps services.
 
 You can use the Power Platform Admin center to get visibility into all on-premises data gateways in a tenant. To do so, sign in as a tenant admin and select the **Data Gateway** option.
 
@@ -42,9 +42,6 @@ The gateway cluster list includes both On-premises data gateways and On-premises
 > [!div class="mx-imgBorder"] 
 > ![On-premises gateway page](media/onprem-gateway-manage780.png "On-premises gateway page")
 
-> [!NOTE]
-> On-premises data gateways in non-default environments/regions are currently not included. 
-
 ## Display gateway members
 
 Select the **Open in new window** icon (![Open in new window](media/open-in-new-window.png)) next to the gateway cluster name to see the gateway members, device name, and version in each gateway cluster.
@@ -62,13 +59,13 @@ For On-premises data gateway in standard mode, users can be added in any of the 
  
 - **Admin**: 
   - **Power BI**: Administrators have full control of the gateway, including adding other admins, creating data sources, managing data source users, and deleting the gateway. 
-  - **PowerApps and Flow**: Administrators have full control of the gateway, including adding other admins, creating connections, additionally sharing gateways in **Can use** and **Can use + share** permission levels and deleting the gateway.
+  - **PowerApps and Power Automate**: Administrators have full control of the gateway, including adding other admins, creating connections, additionally sharing gateways in **Can use** and **Can use + share** permission levels and deleting the gateway.
   - **Others**: Administrators have full control of the gateway, including adding other admins and deleting the gateway.
-- **Can use**: Users who can create connections on the gateway to use for apps and flows but cannot share the gateway. Use this permission for users who will run apps but not share them. Applies only to PowerApps and Microsoft Flow. 
-- **Can use + share**: Users who can create a connection on the gateway to use for apps and flows, and automatically share the gateway when sharing an app. Use this permission for users who need to share apps with other users or with the organization. Applies only to PowerApps and Microsoft Flow. 
+- **Can use**: Users who can create connections on the gateway to use for apps and flows but cannot share the gateway. Use this permission for users who will run apps but not share them. Applies only to PowerApps and Power Automate. 
+- **Can use + share**: Users who can create a connection on the gateway to use for apps and flows, and automatically share the gateway when sharing an app. Use this permission for users who need to share apps with other users or with the organization. Applies only to PowerApps and Power Automate. 
 
 > [!NOTE]
-> - **Can Use** and **Can use + share** apply only to PowerApps and Microsoft Flow. 
+> - **Can Use** and **Can use + share** apply only to PowerApps and Power Automate. 
 > - While sharing gateways for **Can use** and **Can use + share** permission levels, you can restrict the data source type that the user can connect over the gateway. At least one data source type should be selected for the user to be successfully added.
 
 > [!div class="mx-imgBorder"] 
@@ -80,6 +77,20 @@ Use **Search** to find gateway clusters and see their details. You can search fo
 
 > [!div class="mx-imgBorder"] 
 > ![Search](media/manage-search.png "Search")
+
+## Manage gateways by region
+
+Select the region drop-down to see the list of gateway regions. When you select one of the regions, you'll see a list of gateways installed in that region. You can manage users or view gateway members for these gateways. By default, you'll see gateways within your tenant’s default region.
+
+> [!div class="mx-imgBorder"] 
+> ![Manage by gateway region](media/manage-gateway-by-region.png "Manage by gateway region")
+
+## Filter by gateway type
+
+Select the gateway type drop-down to filter by gateway type. By default, you'll see all data gateways running in standard mode. Use the filter to see data gateways in personal mode or all gateways. For more information, see [Types of gateways](https://docs.microsoft.com/power-bi/service-gateway-onprem#types-of-gateways).
+
+> [!div class="mx-imgBorder"] 
+> ![Filter by type](media/filter-by-type.png "Filter by type")
 
 ## Manage installers
 

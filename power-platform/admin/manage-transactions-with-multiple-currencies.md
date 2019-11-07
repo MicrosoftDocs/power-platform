@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 11/04/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -21,6 +21,9 @@ search.app:
 
 Currencies determine the prices for products in the product catalog and the cost of transactions, such as sales orders. If your customers are spread across geographies, add their currencies to manage your transactions. Add the currencies that are most appropriate for your current and future business needs.  
 
+> [!NOTE]
+> If your environment is a [Common Data Service environment](wp-cds-for-apps.md), you are in the Power Platform Admin center, and you select the **Currencies** page (**Environments** > [select environment] > **Settings** > **Currencies**), the page will be blank. This is because setting a currency is not supported in Common Data Service environments.
+
 ## Add a currency  
 
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
@@ -31,7 +34,7 @@ Currencies determine the prices for products in the product catalog and the cost
 
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
 
-2. [!INCLUDE[proc_settings_bus_management](../includes/proc-settings-bus-management.md)]  
+2. Go to **Settings** > **Business Management**.
 
 3. Click **Currencies**.  
 

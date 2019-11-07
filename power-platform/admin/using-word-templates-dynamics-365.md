@@ -23,7 +23,7 @@ search.app:
  After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, with one click users can generate standardized documents automatically populated with data. This feature has some special considerations you should know about to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.  
 
 > [!TIP]
-> [![Video symbol](../admin/media/video-thumbnail-4-crm.png "Video symbol")](http://go.microsoft.com/fwlink/p/?LinkId=404225) Check out the following video: [Create documents directly from Dynamics CRM by using Word and Excel templates (2:38)](http://go.microsoft.com/fwlink/p/?LinkID=723604)  
+> [![Video symbol](../admin/media/video-thumbnail-4-crm.png "Video symbol")](https://go.microsoft.com/fwlink/p/?LinkId=404225) Check out the following video: [Create documents directly from Dynamics CRM by using Word and Excel templates (2:38)](https://go.microsoft.com/fwlink/p/?LinkID=723604)  
 
 > [!WARNING]
 >  There is a known issue when creating templates in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. This topic contains information on how to prevent interactions that could potentially destabilize [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]. See: [Important! A known issue and how to avoid it](../admin/using-word-templates-dynamics-365.md#BKMK_Important)  

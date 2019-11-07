@@ -50,7 +50,7 @@ PowerApps user settings, user-app settings, and notifications | | App creator: A
 Any user with a valid PowerApps license can perform the user operations outlined in this document using the [PowerApps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448).
 
 ### For admins
-To perform the administration operations outlined in this document using the PowerApps Admin center, Microsoft Flow Admin Center, or [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
+To perform the administration operations outlined in this document using the PowerApps Admin center, Power Automate Admin Center, or [PowerApps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
 * A paid PowerApps plan or a PowerApps trial. You can sign-up for a 30-day trial at [http://web.powerapps.com/trial](http://web.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
@@ -320,8 +320,8 @@ There are also PowerShell cmdlets that allow you to retrieve, manage, and delete
 ### Administrators
 Please refer to the **Tenant Administration** section in the [Understand on-premises data gateways for Microsoft PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-reference#tenant-level-administration) article for guidance around managing gateways for your organization.
 
-## Step 11: Export the user’s personal data in Microsoft Flow
-PowerApps licenses always include Microsoft Flow capabilities. In addition to being included in PowerApps licenses, Microsoft Flow is also available as a standalone service. For guidance on how to respond to DSR requests for users that use the Microsoft Flow service, see [Responding to GDPR Data Subject Requests for Microsoft Flow](https://go.microsoft.com/fwlink/?linkid=872250).
+## Step 11: Export the user’s personal data in Power Automate
+PowerApps licenses always include Power Automate capabilities. In addition to being included in PowerApps licenses, Power Automate is also available as a standalone service. For guidance on how to respond to DSR requests for users that use the Power Automate service, see [Responding to GDPR Data Subject Requests for Power Automate](https://go.microsoft.com/fwlink/?linkid=872250).
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for PowerApps users.
