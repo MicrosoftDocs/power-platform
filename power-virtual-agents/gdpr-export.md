@@ -14,14 +14,8 @@ manager: shellyha
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-The right of data portability  allows a data subject to request a copy of their personal data in an electronic format (defined as a “structured, commonly used, machine readable, and interoperable format”) that may be transmitted to another data controller.
 
-Power Virtual Agents offers the following capabilities to find or export personal data for a specific user:
-
-1. Export customer data – Bot content (tenant admin)
-2. Export customer data – Bot sessions (tenant admin)
-
-## Export customer data – Bot content (tenant admin)
+## Export the bot content
 
 1. Go to [https://www.powerapps.com](https://www.powerapps.com) and sign in with your credentials.
 
@@ -43,14 +37,3 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
    ![Download exported data](media/export-6.png)
 
-   ## Export customer data – Bot sessions (tenant admin)
- 
-If you are a tenant administrator, you should follow these steps to request an export of the data:
-
-1. Send email to powervaadmins@microsoft.com specifying the user’s Azure Active Directory (Azure AD) objectId in the request.
-
-   An administrator from the Power Virtual Agents team will send an email to the address registered in the Azure AD user account, asking for confirmation to export the data.
-
-2. Acknowledge the confirmation to export the data
-
-Upon acknowledgement, the data will be made available to the requestor.
