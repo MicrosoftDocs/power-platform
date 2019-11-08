@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 10/21/2019
+ms.date: 11/07/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -48,6 +48,8 @@ Your license determines whether you can create environments.
 | Dynamics 365 Apps Plans |Yes (one)| Yes |
 | PowerApps plan |Yes (one)| Yes |
 | PowerApps Trial |Yes (one)| Yes |
+
+To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
 > [!NOTE]
 > Office 365 Global admins and Common Data Service Service admins can create environments without a license. See [Administer without a license](global-service-administrators-can-administer-without-license.md).
