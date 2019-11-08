@@ -15,17 +15,17 @@ ms.collection: virtualagent
 
 
 # How to use Skills to extend your virtual agent
-Power Virtual Agents offers a no-cliff bot building experience to users. Using Skills, we allow customers and partners to extend a bot's existing conversational capabilities by adding conversational actions within any topic. Using skills, you can embed re-usable converational multi-turn actions to perform complex tasks like book an appointment, manage tasks, and more.
+Power Virtual Agents offers a no-cliff bot building experience to customers. Customers will be able to use pro-code tools and build Skills and embed those into any topic within Power Virtual Agent. Existing Bot Framework customers can convert their bot to a Skill and empower their subject matter experts to use them. Most customers use Skills to embed re-usable converational multi-turn actions to perform complex tasks like book an appointment, manage tasks, and more.
 
 ## Pre-requisites
-* [Create a virtual agent](link to trial or homepage)
-* [Create a new Skill](link to Bot Fx. create a skill page)
+* [Create a bot in Power Virtual Agents](https://aka.ms/TryPVA)
+* [Create a new Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533)
 
 ## Steps
-Once you've created your virtual agent and built a Skill you are now ready to register that Skill in Power Virtual Agents.
+Once a bot has been created in Power Virtual Agents and developers have build and deployed the Skill you want to add, you need to  register that Skill.
 
 ### Add your bot to Skill's allowlist
-You will need provide your virtual agent's ID to your Skill developer prior to being authorized to add a new Skill.
+You will need provide your bots ID to your Skill developer prior to being authorized to add a new Skill.
 
 * Go to **Skills** --> **Provide ID for allow listing**
 (IMAGE TO SHOW MODAL POPUP)
@@ -45,10 +45,16 @@ Please be aware that your virtual agent may send customer information to a Skill
 You can start using some sample Skills provided by Microsoft Bot Framework - [click here](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0#bot-framework-skills).
 
 ## Troubleshooting
+| Error name | Error code | Description / Mitigation |
+| --- | :--: | -- |
+| Skill manifest URL is invalid | URL_MALFORMED(100), URL_NOT_HTTPS(101) | Skill manifest entered is invalid. Please check the URL and try again |
+| Network errors while getting the manifest | MANIFEST_FETCH_FAILED(200) | Network timed out. Please check if the Skill manifest URL is valid | 
+| Skill manifest can't be read | MANIFEST_TOO_LARGE(201), MANIFEST_MALFORMED(202)	| Skill manifest either does not contain all required properties or properties has syntax error or is great than 500 KB |
+| Skill manifest does not have a Skill version | MANIFEST_UNVERSIONED(203) | Skill manifest must contain a Skill version |
+| Skill already added to your bot | MANIFEST_ALREADY_IMPORTED(204) | Skill you are trying to add is already registered with the bot |
+
+(please update this table from aka.ms/cci/skillchecks)
 
 ### Validation performed during registering a Skill
 
-(IAAN - please add table from aka.ms/cci/skillchecks - Thanks!)
 
-## References
-* [No-cliff development with Skills](link to Pawan's blog post)
