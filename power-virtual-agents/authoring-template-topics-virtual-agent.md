@@ -19,9 +19,25 @@ ms.collection: virtualagent
 The Power Virtual Agent includes a set of four lessons from which you can learn how a topic can be created, conditions used, and out-of-the-box pre-built entity as well as a custom entity.
 
 * Lesson 1 - A simple topic
+** This lesson will show you how you can create a simple topic with one conditional branch.
+
 * Lesson 2 - A simple topic with a condition and variable
+** This lesson will show you how you can create a simple topic with one conditional branch and a variable.
+
+A variable is a name for an item which will be used later in the topic flow.  In this example, "pva_StoreLocation" is the name for the variable when you ask the user for their preferred Store Location.
+
 * Lesson 3 - A topic with a conditions, variables and a pre-built entity
+** This lesson will show you how you can create a simple topic with one conditional branch, variable, and entity.
+
+When you use entities in your topic, the bot can identify key information in what the user types and proactively fill in that information in your variables. For example, if the customer says "I want to buy a red car," you don't need to ask them which color car, because the bot recognizes the Color entity in what they typed. The bot will then skip the question where you asked for color. 
+
+You can also use entities to recognize a specific list of options. In this lesson, we identify State as the entity, and the bot will recognize any US state the user types.
+
 * Lesson 4 - A topic with a conditions, variables and custom entity
+** This lesson continues to show you how you can create a topic with a conditional branch, variable, and custom entity.  
+
+In particular it will allow an entity to bypass a follow up question. For instance, try testing with "I want a business laptop."
+
 
 These topics demonstrate how you can name a topic, set its description and create up basic topic flows including variables, decision points and entities and slots.
 
