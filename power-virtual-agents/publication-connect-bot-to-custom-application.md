@@ -1,6 +1,6 @@
 ---
-title: "Add bots to mobile and web apps"
-description: "Publish your bot to mobile (native and web) apps, or to other types of apps (with additional code dev work)."
+title: "Connect to mobile and web apps"
+description: "Connect your bot to mobile (native and web) apps, or to other types of apps (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/1/2019
 ms.service:
@@ -62,7 +62,7 @@ Code snippets used in this document are from:
 The instructions in this document reference the following:
 - [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0)
 - [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens)
-- [Contextual variables available upon hand-off](advanced-hand-off-virtual-agent.md#contextual-variables-available-upon-hand-off)
+- [Contextual variables available upon hand-off](how-to-handoff.md#contextual-variables-available-upon-hand-off)
 - [Microsfot Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
 
 ### Get your Power Virtual Agent bot parameters
@@ -102,7 +102,7 @@ If the request is successful, a *Direct Line* token will be returned for the req
 
 #### Sample code example
 
-The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to get a *Direct Line** token for a Power Virtual Agents bot.
+The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to get a *Direct Line* token for a Power Virtual Agents bot.
 
   ```C#
   using (var httpRequest = new HttpRequestMessage())
