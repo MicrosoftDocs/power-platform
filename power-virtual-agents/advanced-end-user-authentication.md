@@ -2,7 +2,7 @@
 title: "Add user authentication to bot topics"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider"
-ms.date: 11/5/2019
+ms.date: 11/9/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -40,7 +40,7 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 
     ![Select Authenticate](media/auth-call-action-2.png)
 
-1. Once selected, a number of new nodes will be added automatically. These nodes include a parent **Authenticate** node, followed by a success and a failure path. 
+1. Once selected, a number of new nodes will be added automatically. These nodes include a parent **Authenticate** node, followed by nodes for bot a success and a failure path. 
 
     ![New nodes](media/auth-template.png)
 
@@ -53,31 +53,26 @@ The **Authenticate** node is where the user, if not already signed in, will be p
 
 Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code, depending on the [channel](publication-fundamentals-publish-channels.md). Some channels, such as Microsoft Teams, do not require the user to enter a validation code.
 
-The **Authenticate** node outputs two variables, `IsLoggedIn` and `AuthToken`. 
+The **Authenticate** node outputs two variables: `IsLoggedIn` and `AuthToken`. 
 
 #### IsLoggedIn variable
 
 The `IsLoggedIn` variable indicates whether the user is signed in (either as a result of signing in or already being signed in—this is the log-in success path) or not signed in (which would result in the log-in failure path).
 
-```IsLoggedIn``` is a Boolean-type variable containing the signed-in status of the user. You can test this variable to create branching logic in your topics to check for successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
+```IsLoggedIn``` is a Boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
 
 #### AuthToken variable
 
 The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](how-to-flow.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
 
 > [!WARNING] 
-> Make sure you're passing the AuthToken variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
+> Make sure you're passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
 
-Do not use AuthToken inside Message nodes, or on flows that you don't trust. 
+Do not use `AuthToken` inside **Message** nodes, or on flows that you don't trust. 
 
-## AuthToken usage without Authentication node
+## AuthToken usage without an Authenticate node
 
-
-<!--from editor: Should it be "Authenticate node" instead of "Authentication node" in the heading above? -->
-
-
-
-You will notice that both ```IsLoggedIn``` and ```AuthToken``` variables are available even if you don't use the template provided by the **Call an action** menu entry. If you pass the `AuthToken` variable without first having the user go through the **Authenticate** node, the user will be prompted to sign in at that step. 
+The ```IsLoggedIn``` and ```AuthToken``` variables are available even if you don't use the template provided by the **Call an action** menu entry. If you pass the `AuthToken` variable without first having the user go through the **Authenticate** node, the user will be prompted to sign in at that step. 
 
 This can be useful if you always expect the user to be signed in, or if your user is being redirected from a different topic. We suggest you use the template provided by the **Call an action** entry to treat cases where the user fails to sign in.
 
@@ -92,11 +87,11 @@ The success path equates to where ```IsLoggedIn = True``` and accounts for when 
 If you have logic that uses the `AuthToken` variable (for example, to connect to a back-end system using a flow to retrieve a user's information), it should go under this path.
 
 ### Failure path
-The failure path equates to any condition other than `IsLoggedIn = True`. In most cases this is because the user failed to sign in, used the wrong password, or canceled the sign-in experience as provided by the identity provider.
+The failure path equates to any condition other than `IsLoggedIn = True`. In most cases this is because the user failed to sign in, used the wrong password, or canceled the sign-in experience.
 
 You should add any logic you might want to treat this case. As an example, we have provided options for retrying or to [escalate to a live agent](how-to-handoff.md). You should customize this for your particular scenario and usage.
 
 
 ## Testing your topic
 
-You should test your topic using a real user configured in your identity provider. Ensure both the sign-in success and failure paths are exercised, so there are no surprises if your user fails to sign in or there is an error with the identity provider's sign-in experience.
+You should [test your topic](getting-started-create-topics.md) using a real user configured in your identity provider. Ensure both the sign-in success and failure paths are exercised, so there are no surprises if your user fails to sign in or there is an error with the identity provider's sign-in experience.

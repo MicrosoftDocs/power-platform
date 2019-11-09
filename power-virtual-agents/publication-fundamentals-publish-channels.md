@@ -44,7 +44,7 @@ The publishing process will check for errors in the latest bot content.
 
 ![Validate latest bot content for publish](media/channel-publish-validation.png)
 
-If publication is successful, you can view the bot in action and share it with your team by selecting the *demo website* link. This is useful to gather feedback from stakeholders involved in the bot. The link will open a new tab and display a pre-built demo website where you and your team can interact with the bot.
+If publication is successful, you can view the bot in action and share it with your team by selecting the *demo website* link. This is useful to gather feedback from stakeholders involved in the bot. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot.
 
 ![Go to demo website](media/channel-go-to-demo-website.png)
 

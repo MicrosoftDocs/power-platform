@@ -13,7 +13,7 @@ ms.custom: authentication
 ms.collection: virtual-agent
 ---
 
-# How to configure user authentication in Power Virtual Agents
+# Configure user authentication in Power Virtual Agents
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -37,7 +37,7 @@ Make sure to configure the redirect URL to be *https://token.botframework.com/.a
 
 1. In Power Virtual Agents, select **Manage** on the side navigation pane, and then go to the **Authentication** tab.
 
-   ![Go to Manage and then Authentication](media/auth-manage.png)
+   ![Go to Manage and then Authentication](media/auth-manage-sm.png)
 
 2. Enter the information as described for each of the fields defined in the following table. The information required depends on your specific setup and provider. For questions about the required information, contact your administrator or identity provider.
 

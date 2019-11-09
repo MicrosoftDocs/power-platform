@@ -54,7 +54,7 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
 1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
 
-1. Open the authoring canvas for the topic you want to add the **Transfer to agent** node.
+1. Open the authoring canvas for the topic you want to add the **Transfer to agent** node to.
 
 1. Click the plus (+) icon to add a message node. Enter what the bot should say to indicate that transferal to a live agent is about to occur.
 
