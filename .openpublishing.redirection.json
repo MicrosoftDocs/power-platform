@@ -1,10 +1,19 @@
 {
   "redirections": [
-     {
+    {
       "source_path": "power-platform/admin/provision-environment.md",
       "redirect_url": "create-environment",
       "redirect_document_id": "false"
 
+    },
+    {
+      "source_path": "power-virtual-agents/how-to-handoff.md",
+      "redirect_url": "advanced-hand-off",
+      "redirect_document_id": "false"
+
     }
+    
+   
+
   ]
 }
