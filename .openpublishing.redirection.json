@@ -14,6 +14,11 @@
       "source_path": "power-virtual-agent/index.md",
       "redirect_url": "overview",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-deploy.md",
+      "redirect_url": "publication-fundamentals-publish-channels",
+      "redirect_document_id": "true"
     }
   ]
 }
