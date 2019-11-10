@@ -73,7 +73,7 @@ That's great—we'd love to hear your thoughts. [Submit your ideas and feedback 
 
 ### I have an existing bot built on Microsoft Bot Framework and Azure Cognitive Services. How do I leverage Power Virtual Agents?
 
-Power Virtual Agents is built on Microsoft Bot Framework. Organizations with existing bots can follow [step-by-step guidance to setting up Microsoft Bot Framework dispatcher with bot built using Power Virtual Agents](how-to-use-dispatcher.md). We will provide developers with a streamlined bot building experience by seamlessly integrating into [Microsoft Bot Framework’s Skill platform](https://docs.microsoft.com/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) in an upcoming release.
+Power Virtual Agents is built on Microsoft Bot Framework. Organizations with existing bots can follow [step-by-step guidance to setting up Microsoft Bot Framework dispatcher with bot built using Power Virtual Agents](how-to-use-dispatcher.md). We will provide developers with a streamlined bot building experience by seamlessly integrating into [Microsoft Bot Framework’s Skill platform](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) in an upcoming release.
 
 ### Is Power Virtual Agents available in government environments?
 No. At this time, Power Virtual Agents is not available in the Government Community Cloud.
@@ -223,7 +223,7 @@ Every bot author is automatically licensed to use Power Automate. No extra steps
 ### I created some new flows for actions using Power Automate, but they are not visible in Power Virtual Agents. Why?
 
 - The environment you are using to create your flows must be the same as the environment you are using for the bot.   
-- Make sure to [create your flows in Solutions](https://docs.microsoft.com/flow/overview-solution-flows). The bot can't see the flows created in the **My flows** tab. 
+- Make sure to [create your flows in Solutions](/flow/overview-solution-flows). The bot can't see the flows created in the **My flows** tab. 
 - Bots can only invoke flows that have HTTP Request interfaces, so you need to select the right trigger for your flow. Select **When Http Request is received** from the trigger list in Power Automate, and make sure you are using the **POST** method under advanced options in the trigger (or leave the method field empty, which is how it is by default):
 ![POST method in HTTP Request](media/flow-http-post-method.png)
 
@@ -240,7 +240,7 @@ The Power Virtual Agents designer accepts only JSON object format in the message
 
 Yes, an existing API or another application can be called from a flow, and the results can be passed back to Power Virtual Agents as flow output. Power Automate provides hundreds of connectors to enable you to connect to apps, data, and devices in the cloud. 
 
-Examples of popular connectors include Microsoft Common Data Service (CDS), Dynamics 365, Salesforce, Zendesk, ServiceNow, Office 365, Microsoft Teams, Slack, Facebook, Twitter, Dropbox, Mailchimp, Google services, and many more. Please refer to [Power Automate Connector documentation](https://docs.microsoft.com/connectors/) to see the full list of available Power Automate connectors.
+Examples of popular connectors include Microsoft Common Data Service (CDS), Dynamics 365, Salesforce, Zendesk, ServiceNow, Office 365, Microsoft Teams, Slack, Facebook, Twitter, Dropbox, Mailchimp, Google services, and many more. Please refer to [Power Automate Connector documentation](/connectors/) to see the full list of available Power Automate connectors.
 
 If there is no suitable connector that you can use out of the box in Power Automate, you can use an HTTP call inside a flow to connect to a custom third-party API, like in the following example:
 ![Connect to 3rd party API](media/connect-API-flow.png)
@@ -250,17 +250,17 @@ If there is no suitable connector that you can use out of the box in Power Autom
 This capability is not currently available directly from the Power Virtual Agents experience, but you can call any third-party API by wrapping the call in a flow. If this feature is critical to your business, please [submit your ideas and feedback in our Idea forum](https://go.microsoft.com/fwlink/?linkid=2064961).
 
 ### How to work with your data in Power Automate?
-Power Automate provides [hundreds of data connectors](https://docs.microsoft.com/connectors/) and offers many ways to manipulate your data. Refer to the following Power Automate documentation for more information on how to:
-- [Use Common Data Service (CDS)](https://docs.microsoft.com/flow/connection-cds)
-- [Create a flow that uses the Common Data Service](https://docs.microsoft.com/flow/common-data-model-intro)
-- [Create multi-step flows](https://docs.microsoft.com/flow/multi-step-logic-flow)
-- [Add conditions in a flow](https://docs.microsoft.com/flow/add-condition)
-- [Use expressions with conditions](https://docs.microsoft.com/flow/use-expressions-in-conditions)
-- [Use functions in expressions](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
-- [Perform data operations](https://docs.microsoft.com/flow/data-operations)
-- [Loop through your data](https://docs.microsoft.com/flow/apply-to-each)
-- [Filter and copy data](https://docs.microsoft.com/flow/odata-filters)
-- [Troubleshoot your flow](https://docs.microsoft.com/flow/fix-flow-failures)
+Power Automate provides [hundreds of data connectors](/connectors/) and offers many ways to manipulate your data. Refer to the following Power Automate documentation for more information on how to:
+- [Use Common Data Service (CDS)](/flow/connection-cds)
+- [Create a flow that uses the Common Data Service](/flow/common-data-model-intro)
+- [Create multi-step flows](/flow/multi-step-logic-flow)
+- [Add conditions in a flow](/flow/add-condition)
+- [Use expressions with conditions](/flow/use-expressions-in-conditions)
+- [Use functions in expressions](/azure/logic-apps/workflow-definition-language-functions-reference)
+- [Perform data operations](/flow/data-operations)
+- [Loop through your data](/flow/apply-to-each)
+- [Filter and copy data](/flow/odata-filters)
+- [Troubleshoot your flow](/flow/fix-flow-failures)
 
 ### If we have authentication for the user, can we pass user authentication info to a flow?
 
@@ -273,18 +273,16 @@ You can add other users in you organization as owners of the flows you have crea
 ### How do I move or copy my flows between different environments?
 
 You can export and import solutions containing your flows to move them between environments. Note that there is currently no way to export or import a single flow. For more information on how to import and export solutions, refer to the Power Automate documentation:
-- [Export a Solution](https://docs.microsoft.com/flow/export-flow-solution)
-- [Import a Solution](https://docs.microsoft.com/flow/import-flow-solution)
+- [Export a Solution](/flow/export-flow-solution)
+- [Import a Solution](/flow/import-flow-solution)
 
 ### Where can I find out more about Power Automate?
-You can find out more about the capabilities of Power Automate on the [Frequently asked quetsions](https://docs.microsoft.com/flow/frequently-asked-questions) page or by reading [Power Automate documentation](https://docs.microsoft.com/flow/getting-started).
-You can also learn new skills and discover the power of Power Automate with step-by-step [Power Automate training modules](https://docs.microsoft.com/learn/browse/?products=flow).
+You can find out more about the capabilities of Power Automate on the [Frequently asked quetsions](/flow/frequently-asked-questions) page or by reading [Power Automate documentation](/flow/getting-started).
+You can also learn new skills and discover the power of Power Automate with step-by-step [Power Automate training modules](/learn/browse/?products=flow).
 
 ## Deployment 
 
-### How do I share my bot with others?
 
-You can find the details in this article: [To share your bot on the demo website](getting-started-deploy.md#to-share-your-bot-on-the-demo-website)
 
 ### How do I install the bot in a modern SharePoint site? Is there any additional work that will be required if the given modern SharePoint restricts embedding code from external sites?
 
