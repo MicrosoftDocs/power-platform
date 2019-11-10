@@ -1,65 +1,25 @@
----
-title: "TITLE"
-description: "DESCRIPTION"
-keywords: "KEYWORDS"
-ms.date: 09/04/2019
-ms.service:
-  - dynamics-365-ai
-ms.topic: article
-author: iaanw
-ms.author: iawilt
-manager: shellyha
-ms.custom: "VA"
-ms.collection: virtualagent
----
+This feature enables bot authors to efficiently leverage existing content when creating a chatbot. Bot authors often have assets such as FAQ pages or supports sites that are relevant to include. Rather than copying the content manually, you can benefit from AI-assisted authoring to extract the relevant content automatically and insert it into the bot experience.
 
-# H1 - Should be same as your title. There should only ever be one H1.
+## Referencing existing assets
+When you go into your Topics, you’ll see that there’s an area for suggestions. If you click **Get started**, you’ll be prompted to enter one or more website links (URLs) which point to your existing content.
 
-Why would anyone want to do this thing or use this feature?
+The feature expects the websites to be in the form of FAQ pages or support sites.
 
-## H2
+You can add multiple websites but we recommend that you don’t include more than a few at a time to keep it manageable.
 
-Describe what this procedure will do and why someone would want to do it.
+Sometimes it may be impossible to extract content from a linked website. This can happen if e.g. the website you’re referencing is down. The tool provides explicit feedback about errors so that you can understand and address the issue.
 
+## Adding suggested topics to existing bot
+Once the extraction process has completed, you’ll see the successfully extracted topic suggestions show up in the **Suggested** area. You can then review them and decide which ones you want to include in your bot.
 
-### Use H3 underneath H2.
-  
+If you feel confident that you want to add a specific suggested topic, you can simply hover over the name and click the **Add to Existing Topics** option.
 
-For standards, go to the [OPS guide](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
+We generally recommend that you look at the extracted content so that you know what you’re adding to your bot. You do this by clicking on the name. This brings you to a preview where you can see how the extracted trigger phrase (corresponding to e.g. a question on an FAQ page) and the bot response (corresponding to e.g. the answer on an FAQ page) are both automatically inserted into the appropriate nodes in the dialog tree.
 
-Here are some quick references so you can copy and paste:
+If you’re happy with what you see there, you can simply click **Add to topics** – or if you want to edit the content, e.g. to add more trigger phrases, click **Add to topics and edit**.
 
-![IMAGE ALT TEXT](media/IMAGENAME.png)
+Note that topic suggestions are added to the bot in the **Off** state for safety. So if you want to see the new topic working in your bot, you need go into the **Existing** view and set it to **On**.
 
-[Link text](url/filename.md)
+If there’s a specific suggested topic you don’t want to include in your bot, you can simply delete it and move on to the next one.
 
-[Link text](https://microsoft.com/filename)
-
->[!NOTE]
->Use a > on a new line for each line break. Notes are purple
-
->[!WARNING]
->Use a > on a new line for each line break. These are red.
-
->[!TIP]
->Use a > on a new line for each line break. These are green.
-
->[!IMPORTANT]
->Use a > on a new line for each line break. These are blue
-
->[!CAUTION]
->I dont know if this still exists.
-
-**Bold text**
-
-*Italic text*
- 
- <!-- comment -->
-
-
- Table head row | Second col | Third col
- ---|---|---
- Row text | Row text | Row text
-
-
-
+As you can see, it’s easy to leverage the power of AI to quickly integrate existing content into your bot. For more information about this feature, be sure to check out the documentation at [aka.ms/va/websuggestions](https://go.microsoft.com/fwlink/?linkid=2104207)
