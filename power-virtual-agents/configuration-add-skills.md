@@ -15,6 +15,7 @@ ms.collection: virtualagent
 
 
 # How to use Skills to extend your virtual agent
+
 Power Virtual Agents offers a no-cliff bot building experience to customers. Customers will be able to use pro-code tools and build Skills and embed those into any topic within Power Virtual Agent. Existing Bot Framework customers can convert their bot to a Skill and empower their subject matter experts to use them. Most customers use Skills to embed re-usable converational multi-turn actions to perform complex tasks like book an appointment, manage tasks, and more.
 
 ## Pre-requisites
@@ -45,6 +46,7 @@ Please be aware that your virtual agent may send customer information to a Skill
 You can start using some sample Skills provided by Microsoft Bot Framework - [click here](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0#bot-framework-skills).
 
 ## Troubleshooting
+
 | Error name | Error code | Description / Mitigation |
 | --- | :--: | -- |
 | Skill manifest URL is invalid | URL_MALFORMED(100), URL_NOT_HTTPS(101) | Skill manifest entered is invalid. Please check the URL and try again |
@@ -57,4 +59,9 @@ You can start using some sample Skills provided by Microsoft Bot Framework - [cl
 
 ### Validation performed during registering a Skill
 
+
+(IAAN - please add table from aka.ms/cci/skillchecks - Thanks!)
+
+## References
+* [No-cliff development with Skills](link to Pawan's blog post)
 
