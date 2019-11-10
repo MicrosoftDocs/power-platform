@@ -59,7 +59,7 @@ The **Authenticate** node outputs two variables: `IsLoggedIn` and `AuthToken`.
 
 The `IsLoggedIn` variable indicates whether the user is signed in (either as a result of signing in or already being signed in—this is the log-in success path) or not signed in (which would result in the log-in failure path).
 
-```IsLoggedIn``` is a Boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
+```IsLoggedIn``` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
 
 #### AuthToken variable
 

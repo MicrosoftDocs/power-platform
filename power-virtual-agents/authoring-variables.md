@@ -34,38 +34,40 @@ For example, a **boolean** base type maps to an operator "is equal to" with poss
 
  Entity | Variable Base Type
  ---|---
- Multiple choice options | text
- User's entire response | text
+ Multiple choice options | string
+ User's entire response | string
  Age | number
  Boolean | boolean
- City | text
- Color | text
- Continent | text
- Country or region | text
- Date and time | text
- Duration | text
- Email | text
- Event | text
- Language | text
- Money | text
- Number | text
- Ordinal | text
- Organization | text
+ City | string
+ Color | string
+ Continent | string
+ Country or region | string
+ Date and time | string
+ Duration | string
+ Email | string
+ Event | string
+ Language | string
+ Money | string
+ Number | string
+ Ordinal | string
+ Organization | string
  Percentage | number
- Person name | text
- Phone number | text
- Point of interest | text
+ Person name | string
+ Phone number | string
+ Point of interest | string
  Speed | number
- State | text
- Street address | text
+ State | string
+ Street address | string
  Temperature | number
- URL | text
+ URL | string
  Weight | number
- Zip code | text
- Custom entity | text
+ Zip code | string
+ Custom entity | string
 
 ## Create a variable
-In the bot authoring canvas, add a question node by choosing "Ask a question", then a variable will be automatically created. 
+In the bot authoring canvas, add a question node by choosing "Ask a question". A variable will be automatically created within the node.
+
+**Create a variable:**
 
 1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
 

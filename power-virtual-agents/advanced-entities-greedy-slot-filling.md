@@ -73,7 +73,7 @@ I'm curious about "greedy" in the file name. Will this be visible as the file na
 
 4. Provide the items that you want to be included in the entity; in this example, this is a list of outdoor product category names. You can do this by entering one item at a time in the **Enter item** input box to build out the full list. 
 
-This pane also gives you a few other options. 
+This panel also gives you a few other options. 
 
 ### Smart match
 
@@ -117,22 +117,22 @@ Now that you’ve done the work of giving the bot the knowledge about outdoor ge
 
 ## Slot filling
 
-<!--from editor: In second sentence below, should it be "Power Virtual Agents" instead of "Virtual Agents"? -->
 
 
-Slot filling is a natural language understanding concept that means saving an extracted entity to an object. In Virtual Agents, slot filling means landing the extracted entity value into a variable.
 
-We will continue to use the outdoor gear topic as an example, which is triggered by typing “I want to buy something” in the test bot. 
+Slot filling is a natural language understanding concept that means saving an extracted entity to an object. In Power Virtual Agents, slot filling means landing the extracted entity value into a variable.
 
-The topic is successfully triggered and the bot asks for the product category, also showing the button choices specified when authoring the **Ask a question** node. In the dialog tree, tracing also shows the bot is running to the question node you just edited. 
+We will continue to use the outdoor gear topic as an example, which is triggered by typing “I want to buy something” in the test chat. 
 
-![Tracing](media/entities-10(draft).png)
+The topic is successfully triggered and the bot asks for the product category, also showing the button choices specified when authoring the **Ask a question** node. In the dialog tree, tracking between topics also shows the bot is running to the question node you just edited. 
+
+![tracking between topics](media/entities-10(draft).png)
 
 A user can use the predefined choices by selecting one of the buttons. Alternatively, they can also type in something like "trekking" and see that it maps to "hiking", because those words were defined as synonyms. 
 
-![Additional tracing](media/entities-11(draft).png)
+![Additional tracking between topics](media/entities-11(draft).png)
 
-In tracing, it shows the dialog is correctly routed to the path in which the product category value is "Hiking". You can inspect the variable value from the variable watch window at the bottom of the authoring canvas. In the watch window, it shows the variable value is "Hiking". 
+In tracking between topics, it shows the dialog is correctly routed to the path in which the product category value is "Hiking". You can inspect the variable value from the variable watch window at the bottom of the authoring canvas. In the watch window, it shows the variable value is "Hiking". 
 
 Essentially, slot filling has happened by inserting the extracted entity “Hiking” into the variable `VarProductCategory`. 
 
@@ -144,15 +144,15 @@ In this example, the user wrote "I want to buy some trekking gears". This includ
 
 ![Variable watch window](media/entities-13(draft).png)
 
-In tracing, you can see the bot takes in this user input, and intelligently skips the question node asking for the product category. 
+In tracking between topics, you can see the bot takes in this user input, and intelligently skips the question node asking for the product category. 
 
 The bot is always actively listening to the user input, remembering information upfront so it can skip unnecessary steps as appropriate.
 
-Let’s restart the testing again and try another case. In this round you can add a couple more question nodes asking for things like type of hiking gear as well as the price range (using the money entity). 
+Let’s restart the testing again and try another case. In this round you can add a couple more question nodes asking for things like the type of hiking gear as well as the price range (using the **Money** entity). 
 
 This time when the product category question is presented, instead of telling the bot only the product category, the user can say "I want to buy a pair of hiking boots under $100". In this example, the bot is not only able to route to the correct hiking product category path, but also actively fill the slots asking for the type of hiking gear and the target price range information. 
 
-![Tracing for product and price categories](media/entities-14(draft).png)
+![tracking between topics for product and price categories](media/entities-14(draft).png)
 
 Proactive slot filling can be manually controlled at the node level. If you'd like to always prompt for the question within a specific node, regardless of whether the slot has been filled from previous user responses, you can disable the **Skip question** option for that question node.
 

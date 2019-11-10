@@ -73,6 +73,8 @@ Once the setup steps are complete, save your configuration and test it by [creat
 1. Select **Manage** on the side navigation pane, and then go to the **Authentication** tab.
 2. Select **Delete connection**.
 
+If authentication is being used in a topic, you will receive a warning that the connection cannot be deleted until references to it are removed from the affected topics. A list of the affected topics will be provided in the warning note.
+
 ### Permanently remove the authentication configuration
 
 > [!Note]
