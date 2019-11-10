@@ -26,18 +26,16 @@
      href: getting-started-analytics.md
    - name: Fundamentals - publish your bot
      href: publication-fundamentals-publish-channels.md
-   - name: Publish to web
+   - name: Configure publication to demo and live websites
      href: publication-connect-bot-to-web-channels.md
-   - name: Connect to Microsoft Teams
+   - name: Add bot to Microsoft Teams
      href: publication-add-bot-to-microsoft-teams.md
-   - name: Connect to Facebook
+   - name: Add bot to Facebook Messenger
      href: publication-add-bot-to-facebook.md
-   - name: Connect bot to mobile and custom apps
+   - name: Add bot to mobile and custom apps
      href: publication-connect-bot-to-custom-application.md
-   - name: Connect bot to Azure Bot Service channels
+   - name: Add bot to Azure Bot Service channels
      href: publication-connect-bot-to-azure-bot-service-channels.md
-   - name: Deploy your bot
-     href: getting-started-deploy.md
    - name: Delete your bot
      href: getting-started-delete-bot.md
 - name: How-to

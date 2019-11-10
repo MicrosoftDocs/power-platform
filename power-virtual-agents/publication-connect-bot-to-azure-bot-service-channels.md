@@ -14,7 +14,7 @@ ms.collection: virtualagent
 ---
 
 
-# Add Azure Bot Service channels
+# Add bot to Azure Bot Service channels
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

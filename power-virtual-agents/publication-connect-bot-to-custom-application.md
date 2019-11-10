@@ -13,7 +13,7 @@ ms.custom: "publication"
 ms.collection: virtual-agent
 ---
 
-# Add your bot to mobile and custom apps
+# Add bot to mobile and custom apps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
