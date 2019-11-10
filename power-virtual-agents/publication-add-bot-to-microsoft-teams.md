@@ -2,7 +2,7 @@
 title: "Connect to Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
-ms.date: 10/31/2019
+ms.date: 11/9/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article

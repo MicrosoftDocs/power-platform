@@ -2,7 +2,7 @@
 title: "Fundamentals - Publish your bot to channels"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels"
-ms.date: 10/31/2019
+ms.date: 11/9/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article

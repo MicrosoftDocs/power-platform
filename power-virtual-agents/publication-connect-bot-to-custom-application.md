@@ -2,7 +2,7 @@
 title: "Connect to mobile and web apps"
 description: "Connect your bot to mobile (native and web) apps, or to other types of apps (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
-ms.date: 11/1/2019
+ms.date: 11/9/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article

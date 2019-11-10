@@ -2,7 +2,7 @@
 title: "Connect your bot to Facebook"
 description: "Connect your bot to Facebook Messenger so Facebook users can interact with it."
 keywords: "Channel, publish, Facebook"
-ms.date: 10/31/2019
+ms.date: 11/9/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article

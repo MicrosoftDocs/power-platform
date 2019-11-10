@@ -2,7 +2,7 @@
 title: "Connect to Azure Bot Service channels"
 description: "Connect your bot to existing Azure Bot Service framework channels (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
-ms.date: 11/1/2019
+ms.date: 11/9/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
