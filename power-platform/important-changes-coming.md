@@ -24,6 +24,11 @@ Administrators and IT professionals should use this information to prepare for f
 > “Deprecated” means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
+All regional Discovery endpoints and the Discovery APIs in the Organization SDK are deprecated
+----------------------------------------------------------------------------------------------
+
+Effective December 1, 2019, the [Discovery APIs](/powerapps/developer/common-data-service/org-service/discovery-service) in the Organization SDK are deprecated along with the regional discovery Web API endpoints. Moving forward customers should transition to using the global [Discovery Web API](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) endpoint. Microsoft will continue to provide support, security and other critical updates to the Organization SDK Discovery APIs and regions Discovery endpoints until December 1, 2020 but won't release any additional functionality beyond what has already been announced.
+
 Rules feature in canvas apps is deprecated
 ----------------------------------
 
@@ -244,10 +249,7 @@ controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
 
-All regional Discovery endpoints and the Discovery APIs in the Organization SDK are deprecated
-----------------------------------
 
-Effective December 1, 2019, the [Discovery APIs](powerapps/developer/common-data-service/org-service/discovery-service) in the Organization SDK are deprecated along with the regional discovery Web API endpoints. Moving forward customers should transition to using the global [Discovery Web API](powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) endpoint. Microsoft will continue to provide support, security and other critical updates to the Organization SDK Discovery APIs and regions Discovery endpoints until December 1, 2020 but won't release any additional functionality beyond what has already been announced.
 
 
 ## Past deprecations
