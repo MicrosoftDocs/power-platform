@@ -46,11 +46,11 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
 **Export customer data – Bot sessions (bot author):**
  
-1. Select **Analytics** on the side navigation pane, and then go to the **Sessions** tab.
-2. Select the sessions you wish to download.
+You can download session data from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents.
 
 **Export system-generated logs (tenant admin)**
 
 
-1. Go to [https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr)
+1. Go to [https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr).
+
 2. Select the **Learn more about the Data Log Export** link under the **Microsoft Data Log Export** section. This will open a new tab or window and go to the [User Privacy blade in the Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/UserPrivacyMenuBlade/Overview). Here you can request an export of data.
