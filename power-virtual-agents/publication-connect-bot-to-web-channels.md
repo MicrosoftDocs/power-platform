@@ -1,5 +1,5 @@
 ---
-title: "Configure your bot for a live or demo website"
+title: "Configure your Power Virtual Agents bot for a live or demo website"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an iFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/9/2019
@@ -44,7 +44,7 @@ You can edit the welcome message and suggested trigger phrases for the demo webs
 
 To share the demo website link, simply copy the demo website URL and share it with your teammates directly. 
 
-### Custom website
+## Custom website
 
 You can add your bot to a live website as an iFrame. 
 

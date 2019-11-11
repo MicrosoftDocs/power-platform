@@ -1,5 +1,5 @@
 ---
-title: "Connect to Teams"
+title: "Add your Power Virtual Agents bot to Microsoft Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
 ms.date: 11/9/2019

@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals - Publish your bot to channels"
+title: "Fundamentals - Publish your Power Virtual Agents bot to channels"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels"
 ms.date: 11/9/2019
