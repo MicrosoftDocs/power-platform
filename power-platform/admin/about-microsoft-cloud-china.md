@@ -51,9 +51,9 @@ Due to certain technological dependencies, the following features listed will no
 
 - [Search for records in an app](https://docs.microsoft.com/powerapps/user/search-records) or **Categorized Search** used for searching records across multiple entities will be unavailable.
 - [Office 365 Groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups) feature used for shared workspace for emails, conversations, files, and events in Common Data Service services will be unavailable.
-- [Online Management API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/online-management-api) (Admin API) enables customers to create and manage the Common Data Service environments using REST API will be unavailable.
+- [Online Management API](https://docs.microsoft.com/powerapps/developer/common-data-service/online-management-api) (Admin API) enables customers to create and manage the Common Data Service environments using REST API will be unavailable.
 - [Company News Timeline](https://docs.microsoft.com/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
-- [Global Discovery Service API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/discover-url-organization-web-api) which programmatically enables customer applications to discover user organization (also known as environment) and find environments across regions will not be available.
+- [Global Discovery Service API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) which programmatically enables customer applications to discover user organization (also known as environment) and find environments across regions will not be available.
 - The service health Organization Insights feature will be unavailable.
 - [Portals](https://docs.microsoft.com/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365) for the Common Data Service services will be unavailable.
 - [Dynamics 365 for phones and tablets](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/overview) will be unavailable.

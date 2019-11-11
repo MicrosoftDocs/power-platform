@@ -41,7 +41,7 @@ The Configuration Migration tool enables you to move configuration data across e
 > [!IMPORTANT]
 > The Configuration Migration tool does not support filtering of records in an entity. By default, all the records in the selected entity will be exported.  
 > 
-> For information on downloading the Configuration Migration tool, see [Download tools from NuGet](/dynamics365/customer-engagement/developer/download-tools-nuget.md).
+> For information on downloading the Configuration Migration tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget).
 
 <a name="HowItWorks"></a>   
 

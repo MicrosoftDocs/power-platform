@@ -49,7 +49,7 @@ Make sure you have the System Administrator or System Customizer security role o
   
 2. Select **New** to run the **Bulk Deletion Wizard** to create a bulk deletion job with the records you want to delete.  
   
-For information about how to implement bulk delete in code, see [Delete data in bulk](https://docs.microsoft.com/dynamics365/customer-engagement/developer/delete-data-bulk). 
+For information about how to implement bulk delete in code, see [Delete data in bulk](https://docs.microsoft.com/powerapps/developer/common-data-service/delete-data-bulk). 
   
 ### See also  
  [Manage your data](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-your-data)   
