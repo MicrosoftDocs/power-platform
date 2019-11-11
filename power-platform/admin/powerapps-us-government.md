@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 11/06/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -212,7 +212,9 @@ Some of the features available in the commercial version of PowerApps are not av
 
 - Embed in [SharePoint Online](https://powerapps.microsoft.com/blog/embed-powerapps-on-sharepoint-pages/), [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/), and other products.
 
-- [Data integration and Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
+- [Integrate data into Common Data Service](data-integrator.md).
+
+- [Power Query](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 
 - [Common Data Service analytics](analytics-common-data-service.md).
 

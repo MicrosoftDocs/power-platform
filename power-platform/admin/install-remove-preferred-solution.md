@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 11/08/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -28,11 +28,11 @@ Install preferred solutions to gain added features and functionality.
 <a name="BKMK_InstallInsights"></a>   
 ## Install a preferred solution  
   
-1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com) with your Global administrator or System Administrator credentials.  
+1. Browse to the Power Platform Admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
   
-2. Select **Admin centers** > **Dynamics 365**  
+2. Go to **Environments** > [select an environment] > **Manage Solutions**.
   
-3. Select the **environments** tab, and then select the environment to add the solution to.  
+3. Select the **Instances** tab, and then select the environment to add the solution to.  
   
 4. Select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").  
   
@@ -46,11 +46,11 @@ Install preferred solutions to gain added features and functionality.
 
 ## Update a preferred solution
 
-1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com) with your Global administrator or System Administrator credentials.  
+1. Browse to the Power Platform Admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
   
-2. Select **Admin centers** > **Dynamics 365**  
+2. Go to **Environments** > [select an environment] > **Manage Solutions**.
   
-3. Select the **environments** tab.  
+3. Select the **Instances** tab.  
   
 4. Select the environment with the solution to update, and then select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").  
   

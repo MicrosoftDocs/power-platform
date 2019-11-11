@@ -366,3 +366,5 @@ The following table shows the fields that are populated on the user form (user r
 
 * The Address field is comprised of the values from the City and State/province fields in Active Directory.
 
+### See also
+[Get started with security roles in Common Data Service](https://docs.microsoft.com/learn/modules/get-started-security-roles/)
