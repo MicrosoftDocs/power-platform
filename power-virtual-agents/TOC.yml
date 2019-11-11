@@ -44,8 +44,6 @@
      href: how-to-templates.md
    - name: Work with the Test bot pane
      href: how-to-test-bot.md
-   - name: Work with variables_del
-     href: how-to-variables.md
    - name: Work with variables
      href: authoring-variables.md
    - name: Use entities and slot filling
