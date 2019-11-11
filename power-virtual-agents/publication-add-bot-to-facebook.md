@@ -1,5 +1,5 @@
 ---
-title: "Add your Power Virtual Agents bot to Facebook"
+title: "Add a Power Virtual Agents bot to Facebook"
 description: "Add your bot to Facebook so Facebook users can interact with it."
 keywords: "Channel, publish, Facebook"
 ms.date: 11/9/2019

@@ -1,5 +1,5 @@
 ---
-title: "Add your Power Virtual Agents bot to mobile and web apps"
+title: "Add a Power Virtual Agents bot to mobile and web apps"
 description: "Connect your bot to mobile (native and web) apps, or to other types of apps (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/9/2019
