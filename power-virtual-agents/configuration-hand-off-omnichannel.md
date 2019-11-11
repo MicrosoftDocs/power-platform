@@ -1,5 +1,5 @@
 ---
-title: "Configure hand-off to Omnichannel for Customer Service"
+title: "Configure Power Virtual Agents hand-off to Omnichannel for Customer Service"
 description: "Have human agents intercede in bot conversations by connecting Power Virtual Agents to Omnichannel."
 ms.date: 10/30/2019
 ms.service:
@@ -14,16 +14,19 @@ ms.custom: handoff
 ---
 
 # Configure seamless and contextual hand-off to Omnichannel for Customer Service
-With Power Virtual Agents, you can seamlessly and contextually hand off escalated Power Virtual Agents conversations to live (human) agents using [Omnichannel for Dynamics 365 Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-customer-service-guide). 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
+With Power Virtual Agents, you can seamlessly and contextually hand off escalated Power Virtual Agents conversations to live (human) agents using [Omnichannel for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide). 
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This allows Omnichannel for Customer Service to route incoming escalations to the right live agent queue and enables engaging live agents to review context from the prior conversation and resume the conversation.
 
 For more information about hand off, and how to use hand-off within a bot conversation, see the [Using Transfer to agent node](how-to-handoff.md) topic.
 
 ## Pre-requisites
-* Product license: You need a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and [a product license for Omnichannel for Customer service](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
-* Role: You must be an [Omnichannel for Customer Service Administrator](https://docs.microsoft.com/dynamics365/customer-engagement/omnichannel/administrator/add-users-assign-roles) in Omnichannel for Customer Service.
-* Azure Application ID: You will need an [application registered in Azure](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) prior to connecting to Omnichannel for Customer Service.
+* Product license: You need a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and [a product license for Omnichannel for Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
+* Role: You must be an [Omnichannel for Customer Service Administrator](/dynamics365/customer-engagement/omnichannel/administrator/add-users-assign-roles) in Omnichannel for Customer Service.
+* Azure Application ID: You will need an [application registered in Azure](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) prior to connecting to Omnichannel for Customer Service.
 
 
 ## Configure hand-off in the Power Virtual Agents app
@@ -51,7 +54,7 @@ Sign in to the Power Virtual Agents instance you want to connect to Omnichannel 
 
 1. Select the environment where your Omnichannel for Customer Service instance is provisioned.
 
-1. Select the **Go to Omnichannel** link to [continue configuring the bot connection in Omnichannel for Customer Service](https://docs.microsoft.com/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
+1. Select the **Go to Omnichannel** link to [continue configuring the bot connection in Omnichannel for Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
 
 <!--
 >[!NOTE]
@@ -71,7 +74,7 @@ It's also worth asking if the info should go in a KB instead of product document
 Once your bot has been connected to Omnichannel for Customer Service, you cannot remove the connection setting. If you erroneously connected to the wrong instance or environment, you will need to create a new bot and try connecting to Omnichannel for Customer Service again.
 
 ### Specific content doesn't appear in Omnichannel for Customer Service
-Some content may not show, such as emojis and certain types of notes or variables. If you encounter problems with the display of content, see the [Omnichannel for Customer Service documentation library](https://docs.microsoft.com/dynamics365/omnichannel/omnichannel-readme).
+Some content may not show, such as emojis and certain types of notes or variables. If you encounter problems with the display of content, see the [Omnichannel for Customer Service documentation library](/dynamics365/omnichannel/omnichannel-readme).
 
 
 <!--
