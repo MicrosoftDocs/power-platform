@@ -16,7 +16,7 @@ manager: shellyha
 
 ## Known issues
 
-### Customers from outside of the United States signing up for Power Virtual Agents
+### Customers from outside of supported data locations signing up for Power Virtual Agents
 
 Preview is currently only supported in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with the region set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Creating a Power Apps environment](getting-started-new-environment.md).
 
