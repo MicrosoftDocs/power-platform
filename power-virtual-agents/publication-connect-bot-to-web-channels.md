@@ -46,7 +46,7 @@ To share the demo website link, simply copy the demo website URL and share it wi
 
 ## Custom website
 
-You can add your bot to a live website as an iFrame. 
+You can add your bot to a live website as an iFrame. Your live website can be a customer-facing external website or an internal site, like a Sharepoint or Yammer site.
 
 **Get iFrame snippet:**
 
