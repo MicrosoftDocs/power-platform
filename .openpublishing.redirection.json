@@ -1,6 +1,6 @@
 {
   "redirections": [
-     {
+    {
       "source_path": "power-platform/admin/provision-environment.md",
       "redirect_url": "create-environment",
       "redirect_document_id": "false"
@@ -14,6 +14,16 @@
       "source_path": "power-virtual-agent/index.md",
       "redirect_url": "overview",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/getting-started-deploy.md",
+      "redirect_url": "publication-fundamentals-publish-channels",
+      "redirect_document_id": "true"
+    },
+    {
+      "source_path": "power-virtual-agents/how-to-variables.md",
+      "redirect_url": "authoring-variables",
+      "redirect_document_id": "true"
     }
   ]
 }

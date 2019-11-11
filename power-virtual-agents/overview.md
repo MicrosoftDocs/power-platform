@@ -43,7 +43,7 @@ Using Power Virtual Agents, you can:
 3. **Enable rich, natural conversations.** Microsoft’s powerful conversational AI capabilities enable your end users to have rich multi-turn conversations that quickly guide them to the right solution. And, unlike most products on the market, there’s no need to retrain AI models. All you need is to provide a few examples of what topic you want the bot to handle and you’re ready to go.
    ![Natural conversation with a bot](media/overview-conversation.png)
  
-4. **Enable bots to take action.** Bots that can chat with your users are great, but bots that can act on their behalf are even better. With Power Virtual Agents, you can easily integrate with services and backend systems out-of-the-box or through hundreds of easy-to-add custom connectors using Power Automate. This makes it simple to create a bot that not only responds to the user, but also takes action to resolve their issues.
+4. **Enable bots to take action.** Bots that can chat with your users are great, but bots that can act on their behalf are even better. With Power Virtual Agents, you can easily integrate with services and back-end systems out-of-the-box or through hundreds of easy-to-add custom connectors using Power Automate. This makes it simple to create a bot that not only responds to the user, but also takes action to resolve their issues.
  
     ![Bot actions](media/bot-action-overview.png)
 
@@ -51,7 +51,7 @@ Using Power Virtual Agents, you can:
 
     ![Analytics page](media/analytics-pane.png)
 
-6. **Better together.** Power Virtual Agents works hand-in-hand with [Dynamics 365 for Customer Service Insights](https://dynamics.microsoft.com/en-us/ai/customer-service-insights) to provide a holistic view of your customer service operations. You can use Customer Service Insights and Power Virtual Agents together to determine which topics are trending or consuming support resources, and then easily automate them.
+6. **Better together.** Power Virtual Agents works hand-in-hand with [Dynamics 365 for Customer Service Insights](https://dynamics.microsoft.com/ai/customer-service-insights) to provide a holistic view of your customer service operations. You can use Customer Service Insights and Power Virtual Agents together to determine which topics are trending or consuming support resources, and then easily automate them.
 
 ## Helpful links
 
