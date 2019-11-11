@@ -1,5 +1,5 @@
 ---
-title: "Import suggestions for topics from support webpages"
+title: "Get Power Virtual Agents topic suggestions from support pages"
 description: "Use existing help and support pages to quickly generate new topics for your Power Virtual Agents bot."
 keywords: ""
 ms.date: 11/10/2019
