@@ -35,7 +35,7 @@ The service team regularly sends email notifications to the administrators in yo
   
 - Email deployments other than [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]  
   
-  If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your admin. If you’re not sure who your  admin is, see: [Find your administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md).  
+  If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your admin. If you’re not sure who your  admin is, see: [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
   
   For more information, download the white paper: [Create your Mailbox rule](https://download.microsoft.com/download/D/1/A/D1A64A1D-FD55-43E4-AD71-9D32D16E5F9E/Create%20your%20Mailbox%20rule.docx)  
   

@@ -27,7 +27,7 @@ Make sure you have the System Administrator or System Customizer security role o
 
 **Check your security role**
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
 ## Settings
@@ -38,7 +38,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**AI Builder (preview)**  |   |
 > |Create AI models in PowerApps  | Default: On. If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](https://docs.microsoft.com/ai-builder/administer)  |
 > |**Embedded content**||  
-> |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)|  
+> |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](https://docs.microsoft.com/powerapps/user/add-powerbi-dashboards)|  
 > |Bing Maps|Default: Off. If **On**, Customer Engagement (on-premises) users will need to enter a Bing Maps key. Users don’t need to enter a key. |  
 > |Prevent social data in Dynamics|Default: Off. If you don’t want to receive social data in model-driven apps in Dynamics 365, select **Off**. If you disable social engagement, your organization will not be able to receive social data in model-driven apps in Dynamics 365. Users can continue to work with existing social data, however.|  
 > |**Communications**| |

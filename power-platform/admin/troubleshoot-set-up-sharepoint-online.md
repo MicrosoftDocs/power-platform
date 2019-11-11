@@ -29,7 +29,7 @@ If **Documents** is missing from entities such as account, use the following to 
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
-    a. Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
+    a. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
     b. Don’t have the correct permissions? Contact your system administrator.
 
 2. Fix the missing **Documents** button. Follow these steps:
@@ -46,13 +46,13 @@ For more information, see [Enable SharePoint document management for specific en
 
 If the Documents associated grid is missing, use the following to restore.
 
-![Documents associated grid](/dynamics365/customer-engagement/basics/media/list-of-documents-in-onedrive.png "Documents associated grid")
+![Documents associated grid](media/list-of-documents-in-onedrive.png "Documents associated grid")
 
 The most common cause for the Documents associated grid not loading is the corrupted FetchXML and LayoutXML. These sections could be corrupted due to many reasons. The most common of them is through customizing the entity/grid view, adding/removing columns, and other similar customizations.
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
-    a. Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
+    a. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
     b. Don’t have the correct permissions? Contact your system administrator.
 2. Go to **Settings** > **Customizations** > **Solutions**. 
 3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](/dynamics365/customer-engagement/customize/create-solution.md).
