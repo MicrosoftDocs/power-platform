@@ -33,7 +33,9 @@ You need a Facebook app, and an associated developer account, to connect your Po
 These are the steps involved in this process:
 
 1. Configure Facebook app settings: retrieve your Facebook app information, enable API access, add Facebook Messenger to your app, and configure the Facebook pages your app should appear on.
+
 2. Configure the Facebook publication channel in Power Virtual Agents.
+
 3. Connect your Facebook app to Power Virtual Agents (by using webhooks).
 
 You will then need to submit your app for Facebook review before you can publish your app and make it public. If you have a Facebook Workplace account (the business-to-employee version of Facebook), you can deploy your bot there. 
@@ -45,7 +47,9 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 **Retrieve Facebook app information:**
 
 1. Sign in to the Facebook app that you want to add your bot to at [Facebook for Developers](https://developers.facebook.com/).
+
 1. Under **Settings** on the side menu panel, select **Basic** . 
+
 3. Copy the *App ID* and *App Secret*. You will need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
 
    ![Get Facebook App ID and secret](media/channel-fb-get-app-id-secret.png)
@@ -53,8 +57,11 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 **Enable API access for your Facebook app:**
 
 1. Sign in to the Facebook app that you want to add your bot to at [Facebook for Developers](https://developers.facebook.com/).
+
 1. Under **Settings** on the side menu panel, select **Advanced**. 
+
 2. Make sure **Allow API Access to App Settings** is set to **Yes**.  
+
 4. Select **Save Changes** to confirm your changes.
 
    ![Allow API Access to App Settings](media/channel-fb-allow-api-access.png)
@@ -62,6 +69,7 @@ Facebook Messenger, Facebook Workplace, and related services are subject to Face
 **Add Facebook Messenger to your app:**
 
 1. Sign in to the Facebook app that you want to add your bot to at [Facebook for Developers](https://developers.facebook.com/).
+
 2. Go to the **Dashboard**. Under the **Add a Product** section, select **Set Up** on the **Messenger** tile.
 
    ![Add Messenger product](media/channel-fb-add-messenger.png)
@@ -191,6 +199,7 @@ Learn more at [What are the differences between Workplace Standard and Workplace
 When you do not want the bot to be reachable in Facebook Messenger or Facebook Workplace, you can remove the bot from Facebook. 
 
 1. In Power Virtual Agents, select **Manage** on the side navigation panel, and then go to the **Channels** tab. 
+
 1. Select the **Facebook** tile and then **Delete**.
 
    ![Delete Facebook channel](media/channel-fb-delete-channel.png)

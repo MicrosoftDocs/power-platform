@@ -47,7 +47,7 @@
    - name: Work with variables
      href: authoring-variables.md
    - name: Use entities and slot filling
-     href: advanced-entities-greedy-slot-filling.md
+     href: advanced-entities-slot-filling.md
    - name: Trigger hand-off to a live human agent
      href: how-to-handoff.md
    - name: Configure hand off to Omnichannel for Customer Service
