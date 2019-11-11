@@ -36,6 +36,15 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "contributors_to_exclude": [
+        "buck1ey",
+        "bishalgoswami",
+        "kathleenmcgrath",
+        "marycc",
+        "tinaburden",
+        "almostdunh",
+        "AshleyWoodruff"
+      ],
       "breadcrumb_path": "/power-platform/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "titleSuffix": "Power Platform Admin center",
@@ -45,7 +54,7 @@
     },
     "fileMetadata": {
       "searchScope": {
-        "**.*": [ "PowerApps", "Flow", "Power Platform" ]
+        "**.*": [ "PowerApps", "Power Automate", "Power Platform" ]
       }
     },
     "template": [],
