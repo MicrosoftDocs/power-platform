@@ -34,7 +34,7 @@ There are several ways to import data:
   
 1. To import large volumes of data, we recommend a programmatic way, as most efficient. When you import data programmatically, you gain additional capabilities that are not available when you use other methods of importing data. These advanced capabilities include viewing stored source data, accessing error logs and creating data maps that include complex transformation mapping, such as concatenation, split, and replace. See [Import data](https://docs.microsoft.com/powerapps/developer/common-data-service/import-data).
   
-2. For smaller import jobs, you can use the Import Data Wizard tool included in the web application. For information about the Import Data Wizard or how to import specific record types, see [Import accounts, leads, or other data](https://docs.microsoft.com/dynamics365/customer-engagement/basics/import-accounts-leads-other-data).  
+2. For smaller import jobs, you can use the Import Data Wizard tool included in the web application. For information about the Import Data Wizard or how to import specific record types, see [Import data (all record types) from multiple sources](import-data-all-record-types.md).
   
    > [!NOTE]
    >  For the Import Data Wizard, the maximum file size for .zip files is 32 MB; for the other file formats, it’s 8 MB.  

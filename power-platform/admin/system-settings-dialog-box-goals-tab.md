@@ -44,4 +44,4 @@ Set the duration and frequency of the automatic rollup of goals. These settings 
   
 ### See also  
  [Administrator and Sales Manager Guide](/dynamics365/customer-engagement/sales-enterprise/admin-guide.md)  
- [Progress Against Goals report](/dynamics365/customer-engagement/basics/sales-insights-reports.md#BKMK_ProgressGoals)
+ [Progress Against Goals report](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/sales-insights-reports#progress-against-goals-report)

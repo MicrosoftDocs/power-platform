@@ -23,10 +23,10 @@ Most of the core functionalities of sales and customer service have moved to the
 
 The following features are not yet present in the Unified Interface but can be enabled for display as legacy dialogs in the Unified Interface through the hybrid experience.
 
-- [Advanced Find](/dynamics365/customer-engagement/basics/save-advanced-find-search.md) 
+- [Advanced Find](https://docs.microsoft.com/powerapps/user/create-edit-or-save-advanced-find-search) 
 - Bulk edit
-- [Merge records](/dynamics365/customer-engagement/basics/merge-duplicate-records-accounts-contacts-leads.md)
-- [Record sharing](/dynamics365/customer-engagement/basics/assign-record-user-team.md)
+- [Merge records](https://docs.microsoft.com/powerapps/user/merge-duplicate-records)
+- [Record sharing](https://docs.microsoft.com/powerapps/user/assign-or-share-records)
 - [Audit History](https://docs.microsoft.com/powerapps/developer/common-data-service/auditing-overview)
 - All options under **Set Personal Options** (![Settings gear](media/settings-gear-icon.png "Settings gear"))
 

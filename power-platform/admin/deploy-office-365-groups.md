@@ -162,4 +162,4 @@ search.app:
  [CRM Blog: Dynamics CRM Online connector for Office 365 Groups](https://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)   
  [Set up model-driven apps in Dynamics 365 to use Exchange Online](connect-exchange-online.md)   
  [Blog: It's here - Office 365 Groups in CRM Online](https://blogs.technet.com/b/lystavlen/archive/2015/05/08/office-groups.aspx)   
- [Office 365 Groups FAQs](/dynamics365/customer-engagement/basics/office-365-groups-dynamics-365-faqs.md)
+

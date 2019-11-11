@@ -105,7 +105,7 @@ These settings can be found in the Power Platform Admin center by going to **Env
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
 Check your security role:
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Follow the steps in [View your user profile](hhttps://docs.microsoft.com/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.<br />
   
 1.  Select an environment and go to **Settings** > **User's + permissions** > **Users**.
@@ -136,7 +136,7 @@ Check your security role:
 >
 > When using a security group to manage enabling or disabling users or provisioning access to an org, nested security groups within a selected security group are not supported and ignored.
 >
-> You can [assign records](https://docs.microsoft.com/dynamics365/customer-engagement/basics/assign-record-user-team) to a disabled user and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+> You can [assign records](https://docs.microsoft.com/powerapps/user/assign-or-share-records) to a disabled user and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
  You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assigning Admin Roles](https://go.microsoft.com/fwlink/p/?LinkId=255444)  
   
@@ -287,7 +287,7 @@ A default security role is automatically assigned to these imported users. The *
 ## Disable a user
 
 > [!NOTE]
-> You can [assign records](https://docs.microsoft.com/dynamics365/customer-engagement/basics/assign-record-user-team) to a disabled user and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+> You can [assign records](https://docs.microsoft.com/powerapps/user/assign-or-share-records) to a disabled user and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
 1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
 

@@ -578,7 +578,7 @@
         - name: Connect to SharePoint Online
           href: set-up-dynamics-365-online-to-use-sharepoint-online.md 
         - name: Set up Microsoft Teams integration
-          href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/teams-integration
+          href: https://docs.microsoft.com/dynamics365/teams-integration/teams-install-app
         - name: Skype for Business and Skype integration
           href: skype-business-integration.md 
         - name: Set up Skype or Skype for Business
