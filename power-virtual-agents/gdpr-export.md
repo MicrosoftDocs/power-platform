@@ -19,9 +19,10 @@ The right of data portability  allows a data subject to request a copy of th
 Power Virtual Agents offers the following capabilities to find or export personal data for a specific user:
 
 1. Export customer data – Bot content (tenant admin)
-2. Export customer data – Bot sessions (tenant admin)
+2. Export customer data – Bot sessions (bot author)
+3. Export system-generated logs (tenant admin) 
 
-## Export customer data – Bot content (tenant admin)
+**Export customer data – Bot content (tenant admin):**
 
 1. Go to [https://www.powerapps.com](https://www.powerapps.com) and sign in with your credentials.
 
@@ -43,14 +44,13 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
    ![Download exported data](media/export-6.png)
 
-   ## Export customer data – Bot sessions (tenant admin)
+**Export customer data – Bot sessions (bot author):**
  
-If you are a tenant administrator, you should follow these steps to request an export of the data:
+1. Select **Analytics** on the side navigation pane, and then go to the **Sessions** tab.
+2. Select the sessions you wish to download.
 
-1. Send email to powervaadmins@microsoft.com specifying the user’s Azure Active Directory (Azure AD) objectId in the request.
+**Export system-generated logs (tenant admin)**
 
-   An administrator from the Power Virtual Agents team will send an email to the address registered in the Azure AD user account, asking for confirmation to export the data.
 
-2. Acknowledge the confirmation to export the data
-
-Upon acknowledgement, the data will be made available to the requestor.
+1. Go to [https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr)
+2. Select the **Learn more about the Data Log Export** link under the **Microsoft Data Log Export** section. This will open a new tab or window and go to the [User Privacy blade in the Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/UserPrivacyMenuBlade/Overview). Here you can request an export of data.
