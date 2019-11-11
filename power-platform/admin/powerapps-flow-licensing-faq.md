@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 11/11/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -38,6 +38,15 @@ Power Automate Plans:
 - **Power Automate per flow plan** which enables organizations to implement flows with reserved capacity that serve teams, department, or the entire organization without having to license each end user. This plan starts at $500/month for 5 flows.
 
 More details can be found in [Microsoft PowerApps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+### What license must be assigned to a guest so they can run a canvas app shared with them?
+
+The guest user must have a PowerApps license assigned through one of the following tenants:
+
+- The tenant hosting the app being shared
+- The home tenant of the guest user
+
+Also, the guest must have the same license that’s required for non-guests to run an app. A collection of examples is available [here](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/share-app#what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them). 
 
 ### Is non-profit, government, and academic pricing available?
 
