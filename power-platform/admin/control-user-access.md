@@ -53,7 +53,7 @@ In this example, four security groups provide controlled access to a specific en
 
 - If you do not specify a security group, all users who have a Common Data Service license, (model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, Power Automate, PowerApps, etc.) will be added to the new environment.
   
-- You cannot yet make security groups members of other security groups. Check back for availability of support for nested security groups.
+- You cannot make security groups members of other security groups.
 
 > [!NOTE]
 > All licensed users, whether or not they are members of the security groups, must be assigned security roles to access environments. You assign the security roles in the web application. Users can’t access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
