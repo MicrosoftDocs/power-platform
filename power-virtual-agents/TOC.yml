@@ -4,18 +4,14 @@
      href: fundamentals-what-is-power-virtual-agent.md
    - name: Get started quickly with Power Virtual Agents
      href: fundamentals-get-started.md
-   - name: Artificial intelligence models (REM)
-     href: fundamentals-ai-models.md
 - name: Licensing and technical requirements
   items:
    - name: Fundamentals - requirements for Power VirtualAgent
      href: requirements-fundamentals.md
    - name: Geographic requirements
      href: requirements-geographic.md
-   - name: Service-level agreement (REM)
-     href: requirements-sla.md
-   - name: Licensing requirements (REM)
-     href: requirements-licensing.md
+
+
 - name: Onboard and set up
   items:
    - name: Fundamentals - Environments and onboarding best practices
