@@ -51,14 +51,6 @@ For instance, let's say you want to build a bot for an outdoor store. In this ca
  
 To do this, you need to create a custom entity. In this case, you can create an entity that gives the bot the knowledge of all outdoor product categories. 
 
-
-<!--From editor: 
-I removed the numbering that was in the alt-text of most images. I couldn't see any reason for it to be there.
-Many of the images show a bot saying "I can help you with outdoor stuff purchasing. Which product department you're looking for?" This is poorly written. If possible, this should be reworded.
-I'm curious about "greedy" in the file name. Will this be visible as the file name to the public? It has a negative connotation. 
--->
-
-
 1. In Power Virtual Agents, go to the **Entities** tab on the side navigation.
 
    ![Go to Entities tab](media/entities-menu.png)

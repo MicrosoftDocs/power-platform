@@ -52,4 +52,4 @@ Specify to audit specific areas of the product, as described in the following ta
 |Customer Service Entities|Article, Case, Client Feedback, Contract, and Service|  
   
 ### See also  
- [Audit data and user activity](/dynamics365/customer-engagement/developer/audit-user-access.md)
+ [Audit data and user activity](https://docs.microsoft.com/powerapps/developer/common-data-service/audit-user-access)

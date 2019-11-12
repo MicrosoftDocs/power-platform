@@ -17,7 +17,7 @@ search.app:
 ---
 # Environment database settings
 
-There is a set of database settings for each environment that provides default option behavior.  You can update these default options through a special OrgDBSettings tool. This tool allows the system admin to override the default database settings. You can find the list of database settings in the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/en-us/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 
+There is a set of database settings for each environment that provides default option behavior.  You can update these default options through a special OrgDBSettings tool. This tool allows the system admin to override the default database settings. You can find the list of database settings in the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 
 
 ## Install the OrganizationSettingsEditor tool 
 

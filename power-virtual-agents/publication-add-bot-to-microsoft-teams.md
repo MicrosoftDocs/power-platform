@@ -1,5 +1,5 @@
 ---
-title: "Connect to Teams"
+title: "Add a Power Virtual Agents bot to Microsoft Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
 ms.date: 11/9/2019
@@ -73,8 +73,8 @@ After installing the app package, you will automatically start a chat with the b
 **Remove bot from Microsoft Teams:**
 
 1. Select **Manage** on the side navigation pane, and then go to the **Channels** tab.
-2. Select **Microsoft Teams** and then select **Delete**.
 
+2. Select **Microsoft Teams** and then select **Delete**.
 
    ![Delete Microsoft Teams channel](media/channel-teams-delete-channel.png)
 

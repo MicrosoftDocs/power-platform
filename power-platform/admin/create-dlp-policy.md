@@ -29,7 +29,7 @@ To follow the steps, **one** of the following items is required:
 For more information, see [Environments administration in PowerApps](environments-administration.md).
 
 ## Sign in to the PowerApps Admin center
-Sign in to the Admin center at [https://admin.powerapps.com]([https://admin.powerapps.com).
+Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
 
 ## Create a DLP policy
 1. In the navigation pane, click or tap **Data policies**, and then click or tap **New policy**.

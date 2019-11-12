@@ -1,5 +1,5 @@
 ---
-title: "Connect to mobile and web apps"
+title: "Add a Power Virtual Agents bot to mobile and web apps"
 description: "Connect your bot to mobile (native and web) apps, or to other types of apps (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/9/2019
@@ -30,10 +30,12 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 
 1. In Power Virtual Agents, select **Manage** on the side navigation panel, and then go to the **Channels** tab. 
+
 1. Select the **Mobile app** tile to open the configuration window.
+
 3. Copy the code under the **Web-based apps** section and provide it to your app developers to add to your web-based app.
 
-![Add bot to web-based application](media/channel-web-based-application.png)
+    ![Add bot to web-based application](media/channel-web-based-application.png)
 
 
 
@@ -69,15 +71,18 @@ The instructions in this document reference the following:
 To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
 
 1. Copy your bot's name in Power Virtual Agents.
-![Get bot name](media/channel-get-bot-name.png)
 
-3. Select **Manage** on the side navigation pane, and then go to the **Channels** tab.
-2. Select **Mobile app**.
+    ![Get bot name](media/channel-get-bot-name.png)
 
-![Mobile app channel](media/channel-mobile-app.png)
+1. Select **Manage** on the side navigation pane, and then go to the **Channels** tab.
 
-3. Copy and save the *Bot ID* and *Tenant ID* value by clicking **Copy**. You will need these in the [Get Direct Line token](#get-direct-line-token) step.
-![Get bot parameters](media/channel-get-bot-parameters.png)
+1. Select **Mobile app**.
+
+    ![Mobile app channel](media/channel-mobile-app.png)
+
+1. Copy and save the *Bot ID* and *Tenant ID* value by clicking **Copy**. You will need these in the [Get Direct Line token](#get-direct-line-token) step.
+
+    ![Get bot parameters](media/channel-get-bot-parameters.png)
 
 ### Get Direct Line token
 To start a conversation with your Power Virtual Agents bot, you need a *Direct Line* token. You need to add code that retrieves a *Direct Line* token with the *Bot ID* and *Tenant ID* from the previous section to your app. 
@@ -147,64 +152,64 @@ The following example uses samples from the [Connector sample code](https://gith
 1. Initialize a DirectLineClient instance with the *Direct Line* token and start a conversation:
 
 
-  ```C#
-    // Use the retrieved token to create a DirectLineClient instance
-    using (var directLineClient = new DirectLineClient(token))
-    {
-        var conversation = await directLineClient.Conversations.StartConversationAsync();
-        string conversationtId = conversation.ConversationId;
-    }
-  ```
+    ```C#
+      // Use the retrieved token to create a DirectLineClient instance
+      using (var directLineClient = new DirectLineClient(token))
+      {
+          var conversation = await directLineClient.Conversations.StartConversationAsync();
+          string conversationtId = conversation.ConversationId;
+      }
+    ```
 
 2. Once started, each conversation can be identified and connected using the combination of `token` and `conversationtId`. Send a user message to an existing conversation:
 
-  ```C#
-    // Use the retrieved token to create a DirectLineClient instance
-    // Use the conversationId from above step
-    // endConversationMessage is your predefined message indicating that user wants to quit the chat
-    while (!string.Equals(inputMessage = /*Get_User_Input()*/, endConversationMessage, StringComparison.OrdinalIgnoreCase))
-    {
-        using (var directLineClient = new DirectLineClient(token))
-        {
-            // Send user message using directlineClient
-            // Payload is a Microsoft.Bot.Connector.DirectLine.Activity
-            await directLineClient.Conversations.PostActivityAsync(conversationtId, new Activity()
-            {
-                Type = ActivityTypes.Message,
-                From = new ChannelAccount { Id = "userId", Name = "userName" },
-                Text = inputMessage,
-                TextFormat = "plain",
-                Locale = "en-Us",
-            });
-        }
-    }
-  ```
+    ```C#
+      // Use the retrieved token to create a DirectLineClient instance
+      // Use the conversationId from above step
+      // endConversationMessage is your predefined message indicating that user wants to quit the chat
+      while (!string.Equals(inputMessage = /*Get_User_Input()*/, endConversationMessage, StringComparison.OrdinalIgnoreCase))
+      {
+          using (var directLineClient = new DirectLineClient(token))
+          {
+              // Send user message using directlineClient
+              // Payload is a Microsoft.Bot.Connector.DirectLine.Activity
+              await directLineClient.Conversations.PostActivityAsync(conversationtId, new Activity()
+              {
+                  Type = ActivityTypes.Message,
+                  From = new ChannelAccount { Id = "userId", Name = "userName" },
+                  Text = inputMessage,
+                  TextFormat = "plain",
+                  Locale = "en-Us",
+              });
+          }
+      }
+    ```
 
 3. Retrieve the bot's response using the same `token` and `converstaionId`. The retrived Direct Line response activities contains both the user's and bot's messages. You can filter response activites by your bot's name to get only the bot's response message.  
 
-  ```C#
-    // Use the same token to create a directLineClinet
-    using (var directLineClient = new DirectLineClient(token))
-    {
-        // To get the first response set string watermark = null
-        // More information about watermark is available at
-        // https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages?view=azure-bot-service-4.0
-        
-        // response from bot is of type Microsoft.Bot.Connector.DirectLine.ActivitySet
-        ActivitySet response = await directLineClient.Conversations.GetActivitiesAsync(conversationtId, watermark);
-        
-        // update watermark from response
-        watermark = response?.Watermark;
-        
-        // response contains set of Activity from both user and bot
-        // To display bot response only, filter Activity.From.Name equals to your bot name
-        List<Activity> botResponses = response?.Activities?.Where(x =>
-                  x.Type == ActivityTypes.Message &&
-                    string.Equals(x.From.Name, /*Bot_Name*/, StringComparison.Ordinal)).ToList();
-        
-        // Display botResponses
-    }
-  ```
+    ```C#
+      // Use the same token to create a directLineClinet
+      using (var directLineClient = new DirectLineClient(token))
+      {
+          // To get the first response set string watermark = null
+          // More information about watermark is available at
+          // https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages?view=azure-bot-service-4.0
+          
+          // response from bot is of type Microsoft.Bot.Connector.DirectLine.ActivitySet
+          ActivitySet response = await directLineClient.Conversations.GetActivitiesAsync(conversationtId, watermark);
+          
+          // update watermark from response
+          watermark = response?.Watermark;
+          
+          // response contains set of Activity from both user and bot
+          // To display bot response only, filter Activity.From.Name equals to your bot name
+          List<Activity> botResponses = response?.Activities?.Where(x =>
+                    x.Type == ActivityTypes.Message &&
+                      string.Equals(x.From.Name, /*Bot_Name*/, StringComparison.Ordinal)).ToList();
+          
+          // Display botResponses
+      }
+    ```
 
 ### Refresh Direct Line token
 You may need to add code to refresh the *Direct Line* token if your application has a lengthy conversation with the bot. The token expires but can be refreshed before it expires; learn more at [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens).

@@ -83,9 +83,9 @@ The [!INCLUDE[pn_power_bi_for_office_365_long](../includes/pn-power-bi-for-offic
   
 4. Click **OK**.  
   
-To learn more about how to add [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] tiles to personal dashboards, see [Embed  Power BI tiles on your personal dashboard  ](/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard.md#embed--power-bi-tiles-on-your-personal-dashboard).  
+To learn more about how to add [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] tiles to personal dashboards, see [Embed Power BI tiles on your personal dashboard  ](https://docs.microsoft.com/powerapps/user/add-powerbi-dashboards#embed--power-bi-tiles-on-your-personal-dashboard).  
   
-To learn more about how to add [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] dashboards to personal dashboards, see [Add a Power BI dashboard on your personal dashboard](/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard.md).  
+To learn more about how to add [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] dashboards to personal dashboards, see [Add a Power BI dashboard on your personal dashboard](https://docs.microsoft.com/powerapps/user/add-powerbi-dashboards).  
   
 <a name="CRMOnline_PBIDesktop"></a>   
 ## Use Power BI Desktop to connect directly to your Dynamics 365 environment  

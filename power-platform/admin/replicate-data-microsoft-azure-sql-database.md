@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 11/11/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -26,7 +26,7 @@ The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is
 > 
 > - Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.
   
-For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](/dynamics365/customer-engagement/developer/data-export-service.md).
+For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service).
   
 <a name="Prereq_DES"></a>   
 ## Prerequisites for using [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]  
@@ -201,7 +201,7 @@ For information about the programmatic interface for managing configuration and 
   
    ![Select Entities tab in Create Export Profile dialog box](../admin/media/data-export-profile-2.PNG "Select Entities tab in Create Export Profile dialog box")  
   
-6. In the **Select Relationships** step, you can synchronize  the M:N (many-to-many) relationships that exist with the entities you selected in the previous step. Click **Next**.  
+6. In the **Select Relationships** step, you can synchronize  the M:N (many-to-many) [relationships](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entity-relationships) that exist with the entities you selected in the previous step. Click **Next**.  
   
    ![Create Export Profile - Manage Relationships - Select Relationships](../admin/media/data-export-profile-3.PNG "Create Export Profile - Manage Relationships - Select Relationships")  
   
@@ -654,6 +654,7 @@ If your error logs show "String length in source longer than destination schema 
 [!INCLUDE[cc_privacy_data_export](../includes/cc-privacy-data-export.md)]
   
 ### See also  
- [AppSource: Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)   
- [Data Export Service](/dynamics365/customer-engagement/developer/data-export-service.md)
+ [Entity relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-entity-relationships)<br />
+ [AppSource: Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)   <br />
+ [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) <br />
  [Team Blog: Introduction to Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)

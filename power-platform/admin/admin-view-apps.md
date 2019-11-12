@@ -26,7 +26,7 @@ In this topic, you'll learn how to download a list of apps created in a single e
  * PowerApps Environment Admin, Office 365 Global Admin, or Azure Active Directory Tenant Admin permissions. For more information, see [Environments administration in PowerApps](environments-administration.md).
 
 ## Sign in to the PowerApps Admin center
-Sign in to the Admin center at [https://admin.powerapps.com]([https://admin.powerapps.com).
+Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
 
 ## Download the list of apps
 1. In the navigation pane, click or tap **Environments**, and then click or tap the environment for which you want to download the list of apps.

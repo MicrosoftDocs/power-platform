@@ -1,5 +1,5 @@
 ---
-title: "Add user authentication to bot topics"
+title: "Add user authentication to bot topics in Power Virtual Agents"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider"
 ms.date: 11/9/2019

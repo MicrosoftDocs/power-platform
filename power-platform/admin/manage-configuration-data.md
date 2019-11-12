@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2019
+ms.date: 11/08/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -41,7 +41,7 @@ The Configuration Migration tool enables you to move configuration data across e
 > [!IMPORTANT]
 > The Configuration Migration tool does not support filtering of records in an entity. By default, all the records in the selected entity will be exported.  
 > 
-> For information on downloading the Configuration Migration tool, see [Download tools from NuGet](/dynamics365/customer-engagement/developer/download-tools-nuget.md).
+> For information on downloading the Configuration Migration tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget).
 
 <a name="HowItWorks"></a>   
 
@@ -79,7 +79,7 @@ The Configuration Migration tool enables you to move configuration data across e
 -   Back up your production environment before importing the data.  
   
 ### See also  
-[Download tools from NuGet](/dynamics365/customer-engagement/developer/download-tools-nuget.md)<br />
+[Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget)<br />
 [Create a schema to export configuration data](create-schema-export-configuration-data.md)<br />
 [Modify a configuration data schema](modify-configuration-data-schema.md)<br /> 
 [Import configuration data](import-configuration-data.md)<br /> 
