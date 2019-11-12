@@ -1,3 +1,11 @@
-- name: Power Virtual Agents
-  tocHref: /power-virtual-agents
-  topicHref: /power-virtual-agents
+- name: Docs
+  href: /
+  topicHref: /
+  items:
+  - name: Power Platform
+    href: /power-platform/
+    topicHref: /power-platform/
+    items:
+    - name: Power Virtual Agents
+      tocHref: /power-virtual-agents/
+      topicHref: /power-virtual-agents/
