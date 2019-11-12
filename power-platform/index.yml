@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Power Automate.
+summary: Learn how to analyze data for insights using Power BI, quickly and easily build custom apps using PowerApps, automate workflows to improve business productivity using Power Automate, and built intelligent bots with a no-code interface using Power Virtual Agents.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
@@ -21,7 +21,7 @@ productDirectory:
     # Card
     - title: Power BI
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: media/PowerBI_Mark_Yellow.svg
+      imageSrc: ''
       links:
         - url: https://docs.microsoft.com/power-bi/
           text: Documentation
@@ -29,7 +29,7 @@ productDirectory:
           text: Learn Power BI
     # Card
     - title: PowerApps
-      imageSrc: media/PowerApps_Mark.svg
+      imageSrc: ''
       links:
         - url: https://docs.microsoft.com/powerapps
           text: Documentation
@@ -37,15 +37,15 @@ productDirectory:
           text: Learn PowerApps
     # Card
     - title: Power Automate
-      imageSrc: media/Flow_Mark.svg
+      imageSrc: ''
       links:
         - url: https://docs.microsoft.com/power-automate/
           text: Documentation
         - url: https://docs.microsoft.com/en-us/learn/browse/?products=flow
           text: Learn Power Automate
      # Card
-    - title: Power Virtual Agent
-      imageSrc: media/VirtualAgent_color.svg
+    - title: Power Virtual Agents
+      imageSrc: ''
       links:
         - url: https://docs.microsoft.com/power-virtual-agents/
           text: Documentation
