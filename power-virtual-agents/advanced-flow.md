@@ -1,17 +1,17 @@
 ---
 
-title: "Add actions to your bot using Microsoft Flow"
-description: "Learn how to add actions to your bot using Microsoft Automate flows."
-keywords: "KEYWORDS"
-ms.date: 10/29/2019
+title: "Automate Power Virtual Agents bot activities with flows"
+description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
+keywords: ""
+ms.date: 11/11/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "PVA"
-ms.collection: powervirtualagents
+ms.custom: flow
+ms.collection: virtual-agent
 ---
 
 
@@ -22,10 +22,20 @@ ms.collection: powervirtualagents
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
+You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows in conjunction with [end-user authentication](advanced-end-user-authentication.md) to retrieve information about a specific user after they've signed in.
 
-## Create a new flow from Power Virtual Agents Dialog Editor 
+You call flows from within topics, as a discrete **Call an action** node. You can utilize existing flows that have been created in your [Power Apps environment](environments-fundamentals.md) or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
-You can enable your bot to perform an action by calling a Microsoft Automate. The flow that can be called from a Dialog must be in the same **Common Data Service environment** as your bot. To create a flow for the bot, select **Call an action** node and use **Create a flow** option:
+Flow typically use variables to take in and output information. The variables can then be used in other nodes within the topic.
+
+## Create a new flow from the Power Virtual Agents authoring canvas 
+
+
+The flow that can be called from a topic must be in the same **Common Data Service environment** as your bot. 
+
+**Create a new flow for an existing bot:**
+
+, select **Call an action** node and use **Create a flow** option:
 
 ![Create a new Microsoft Automate flow](media/UseCreateFlowOption.jpg)
 
