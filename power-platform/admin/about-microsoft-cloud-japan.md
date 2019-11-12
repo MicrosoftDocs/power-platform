@@ -82,7 +82,7 @@ A support engineer will assist you in verifying required prerequisites and provi
 ### Will multi-geo environments be available to customers in Japan?  
  Multi-geo environments will be supported for Japan. Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers upon request, and we’ll continue to expand over time.  
   
- For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/customer-engagement/admin/multiple-online-environments-tenants.md). This link will be updated with the [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] launch.  
+ For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/customer-engagement/admin/multiple-online-environments-instances.md). This link will be updated with the [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] launch.  
   
 ### How will this affect users or partners?  
  Regardless of where model-driven apps in Dynamics 365 are provisioned, you’ll have the ability to determine which of your users will have access to those services based on how you configure model-driven apps in Dynamics 365.  
