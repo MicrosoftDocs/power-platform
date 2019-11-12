@@ -64,7 +64,7 @@ Each channel requires different steps and configurations, which can be found in 
 
 - [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md)
 - [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
-- [Add bot to Facebook Messenger](publication-add-bot-to-facebook.md)
+- [Add bot to Facebook](publication-add-bot-to-facebook.md)
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)
 - [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
 
