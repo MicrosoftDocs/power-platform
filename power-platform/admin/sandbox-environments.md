@@ -102,7 +102,7 @@ The reset process starts.
 |Setting|Description|  
 |-------------|-----------------|  
 |Administration mode | Select to enable administration mode for the selected Sandbox environment. Only System Administrators or System Customizers will be able to sign in to the selected Sandbox environment.|  
-|Background operations | Select to disable all asynchronous operations (see [Asynchronous service architecture](https://docs.microsoft.com/dynamics365/customer-engagement/developer/asynchronous-service-architecture)) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. **Note:**  Administration mode must be enabled to disable background operations.|  
+|Background operations | Select to disable all asynchronous operations (see [Asynchronous service](https://docs.microsoft.com/powerapps/developer/common-data-service/asynchronous-service)) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. **Note:**  Administration mode must be enabled to disable background operations.|  
 |Custom message | Enter a message that will be displayed to all users when they attempt to sign in.|  
   
 ### Set administration mode  

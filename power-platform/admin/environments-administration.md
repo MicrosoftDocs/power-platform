@@ -48,10 +48,10 @@ To manage an environment in the PowerApps Admin center, you must have one of the
 
 * The Global Administrator role of your Azure AD or Office 365 tenant.
 
-You also need either a PowerApps plan or Microsoft Flow plan to access the admin center. For more information, see the [PowerApps pricing page][3].
+You also need either a PowerApps plan or Power Automate plan to access the admin center. For more information, see the [PowerApps pricing page][3].
 
 > [!IMPORTANT]
-> Any changes that you make in PowerApps Admin center affect the [Microsoft Flow admin center][4] and vice versa.
+> Any changes that you make in PowerApps Admin center affect the [Power Automate admin center][4] and vice versa.
 
 ## Create an environment
 For instructions on how to create an environment, see [Create an environment](create-environment-powerapps.md).
@@ -120,7 +120,7 @@ In an environment, all the users in the Azure AD tenant are users of that enviro
   > [!NOTE]
   > If the environment has the database, then you need to assign users the **System Administrator** role, instead of the **Environment Admin** role.
 
-* The **Environment Maker** role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Microsoft Flow. Environment Makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. For more information, see [Share an app in PowerApps](/platform/maker/canvas-apps/share-app).
+* The **Environment Maker** role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate. Environment Makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. For more information, see [Share an app in PowerApps](/platform/maker/canvas-apps/share-app).
 
 To assign a user or a security group to an environment role, an Environment Admin can take these steps in the [PowerApps Admin center][1]:
 

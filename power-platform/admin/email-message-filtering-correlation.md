@@ -109,7 +109,7 @@ When the matching process is complete, the system selects the owner and the obje
 By default, smart matching is turned on.  
 
 > [!NOTE]
->  You can disable, enable, and tune smart-matching settings in the [System Settings dialog box – Email tab](/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab.md).  
+>  You can disable, enable, and tune smart-matching settings in the [System Settings dialog box – Email tab](system-settings-dialog-box-email-tab.md).  
 
 ### See also  
  [Forward mailbox vs. individual mailboxes](../admin/forward-mailbox-vs-individual-mailboxes.md)

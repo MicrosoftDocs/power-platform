@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The on-premises gateway allows PowerApps and Flow to reach back to on-premise resources to support hybrid integration scenarios. The gateway leverages Azure Service Bus relay technology to security allow access to on-premise resources.
+The on-premises gateway allows PowerApps and Power Automate to reach back to on-premise resources to support hybrid integration scenarios. The gateway leverages Azure Service Bus relay technology to security allow access to on-premise resources.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/onpremises-data-gateway.png "On-premises data gateway")
@@ -46,7 +46,7 @@ It is recommended that you whitelist the IP addresses for the data region in you
 
 ## Gateway Access
 
-Most of the PowerApps and Flow licenses have access to use the gateway with the exception of some of the lower end Office 365 licenses (Business and Office Enterprise E1 SKUs).
+Most of the PowerApps and Power Automate licenses have access to use the gateway with the exception of some of the lower end Office 365 licenses (Business and Office Enterprise E1 SKUs).
 
 ## Updates to the Data Gateway
 

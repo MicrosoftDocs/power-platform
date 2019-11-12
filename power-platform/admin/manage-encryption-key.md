@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 11/05/2019
 ms.author: matp 
 search.audienceType: 
   - admin
@@ -31,6 +31,7 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
 > - Mobile Offline
 > - Activity Log (Office 365 portal)
 > - Exchange (Server-side sync)
+> - Data stored in [File](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-fields#file-fields) and [Image](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-fields#image-fields) fields
   
 <a name="KM_tasks"></a>   
 ## Introduction to key management  
@@ -48,7 +49,7 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
   
 - Lock and unlock tenant environments.   
     > [!WARNING]
-    > While a tenant is locked, all environments within the tenant can't be accessed by anyone. More information: [Lock the tenant](#lock-the-tenant)    
+    > While a tenant is locked, all environments within the tenant can't be accessed by anyone. More information: [Lock the tenant](#lock-the-tenant).    
   
 <a name="KM_risk"></a>  
  
@@ -105,7 +106,7 @@ All encryption keys are stored in the Azure Key Vault, and there can only be one
 Use this procedure to set the manage key feature the first time for an environment or to change (or roll-over) an encryption key for an already self-managed tenant.  
 
 > [!WARNING]
-> When you perform the steps described here for the first time you are opting in to self-managing your encryption keys. More information: [Understand the potential risk when you manage your keys](#understand-the-potential-risk-when-you-manage-your-keys)  
+> When you perform the steps described here for the first time you are opting in to self-managing your encryption keys. More information: [Understand the potential risk when you manage your keys](#understand-the-potential-risk-when-you-manage-your-keys).  
 1. Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments).  
   
 2. Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar. 
@@ -118,12 +119,12 @@ Use this procedure to set the manage key feature the first time for an environme
      - Select a **Region**. This option is only shown if your tenant has multiple regions.
      - Enter a **Key name**.  
      - Choose from the following options: 
-         - To create a new key, select **Generate new (.pfx)**. More information: [Generate a new key (.pfx)](#generate-a-new-key-pfx)
-         - To use your own generated key, select **Upload (.pfx or .byok)**. More information: [Upload a key (.pfx or .byok)](#upload-a-key-pfx-or-byok)
+         - To create a new key, select **Generate new (.pfx)**. More information: [Generate a new key (.pfx)](#generate-a-new-key-pfx).
+         - To use your own generated key, select **Upload (.pfx or .byok)**. More information: [Upload a key (.pfx or .byok)](#upload-a-key-pfx-or-byok).
 
 6. Select **Next**. 
 
-7. Email notification is sent to all administrators. More information: [Encryption key change notification](#encryption-key-change-notification)
+7. Email notification is sent to all administrators. More information: [Encryption key change notification](#encryption-key-change-notification).
 
 #### Generate a new key (.pfx)   
 1.	Enter a password, and then re-enter the password to confirm.
@@ -136,7 +137,7 @@ To perform this task using PowerShell, see [Get-CRMGenerateProtectionkey](/power
 1.	Select **Upload the Key**, select the .pfx or .byok<sup>1</sup> file, and then select **Open**. 
 2.	Enter the password for the key, and then select **Create**.
 
-<sup>1</sup> For .byok encryption key files, make sure you use the subscription id as shown on the screen when you export the encryption key from your local HSM. More information: [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys) 
+<sup>1</sup> For .byok encryption key files, make sure you use the subscription id as shown on the screen when you export the encryption key from your local HSM. More information: [How to generate and transfer HSM-protected keys for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys). 
 
 To perform this task using PowerShell, see [New-CRMImportProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/new-crmimportprotectionkey?view=dynamics365ce-ps) and [Set-CrmTenantProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmtenantprotectionkey?view=dynamics365ce-ps).
 
@@ -257,4 +258,4 @@ To unlock an environment using the PowerShell cmdlet, see [Set-CrmUnlockTenantPr
 
 ### See also  
 [Microsoft.Xrm.OnlineManagementAPI PowerShell reference](/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) <br />
- [SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
+[SQL Server: Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)

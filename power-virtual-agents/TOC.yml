@@ -1,70 +1,114 @@
-- name: Overview
-  href: overview.md
-- name: Quickstart
-  href: quickstart.md
-- name: Videos
-  href: videos.md
-- name: Frequently asked questions
-  href: faq.md
-- name: Introduction
+- name: Fundamentals
   items:
-   - name: Create a bot
-     href: getting-started-create-bot.md
-   - name: Create a PowerApps environment
-     href: getting-started-new-environment.md
-   - name: Overview of Power Virtual Agents pages
-     href: getting-started-bot-designer.md
-   - name: Create a custom greeting for your bot
-     href: getting-started-create-greeting.md
-   - name: Create custom topics for your bot
-     href: getting-started-create-topics.md
-   - name: Work with the authoring canvas
-     href: expanding-design-canvas.md
-   - name: Validate a topic with Topic Checker
-     href: topic-checker.md
-   - name: Use analytics to improve your bot
-     href: getting-started-analytics.md
-   - name: Deploy your bot
-     href: getting-started-deploy.md
-   - name: Delete your bot
-     href: getting-started-delete-bot.md
-- name: How-to
+   - name: What is Power Virtual Agents?
+     href: fundamentals-what-is-power-virtual-agent.md
+   - name: Get started quickly with Power Virtual Agents
+     href: fundamentals-get-started.md
+   - name: Artificial intelligence models (REM)
+     href: fundamentals-ai-models.md
+- name: Licensing and technical requirements
   items:
-   - name: Work with built-in topics
-     href: how-to-templates.md
-   - name: Work with the Test bot pane
-     href: how-to-test-bot.md
-   - name: Work with variables
-     href: how-to-variables.md
-   - name: Hand off a bot conversation to a live agent
-     href: how-to-handoff.md
-   - name: Configure hand off with Omnichannel
-     href: configuration-hand-off-omnichannel.md
-   - name: Add actions to your bot using Power Automate
-     href: how-to-flow.md
-   - name: Use a Microsoft Bot Framework bot with a Power Virtual Agents bot
-     href: how-to-use-dispatcher.md
-- name: Analytics
+   - name: Fundamentals - requirements for Power VirtualAgent
+     href: requirements-fundamentals.md
+   - name: Geographic requirements
+     href: requirements-geographic.md
+   - name: Service-level agreement (REM)
+     href: requirements-sla.md
+   - name: Licensing requirements (REM)
+     href: requirements-licensing.md
+- name: Onboard and set up
   items:
-   - name: Analytics overview
+   - name: Fundamentals - Environments and onboarding best practices
+     href: environments-fundamentals.md
+   - name: First-run experience
+     href: environments-first-run-experience.md
+- name: Authoring
+  items:
+   - name: Fundamentals - Bots and topics recommendations and best practices
+     href: authoring-fundamentals.md
+   - name: Create your first bot
+     href: authoring-first-bot.md
+   - name: Create and edit topics
+     href: authoring-create-edit-topics.md
+   - name: Work with existing template topics and system topics
+     href: authoring-template-topics.md
+   - name: Topic management
+     href: authoring-topic-management.md
+   - name: Test your bot
+     href: authoring-test-bot.md
+- name: Advanced authoring
+  items:
+   - name: Fundamentals - Enhancing AI intelligenc
+     href: advanced-fundamentals.md
+   - name: Use entities and utilize slot filling
+     href: advanced-entities-slot-filling.md
+   - name: Use variables
+     href: authoring-variables.md
+   - name: Allow multiple users to edit simultaneously (REM)
+     href: advanced-multi-user-authoring.md
+   - name: Create topics from existing support content on the web
+     href: advanced-create-topics-from-web.md
+   - name: Create topics from Customer Service Insights (REM)
+     href: advanced-create-topics-from-csi.md
+   - name: Use end-user authentication
+     href: advanced-end-user-authentication.md
+   - name: Use Microsoft Flow
+     href: advanced-flow.md
+   - name: Use Microsoft Bot Framework Skills
+     href: advanced-use-skills.md
+   - name: Use hand-off
+     href: advanced-hand-off.md
+- name: Bot publication
+  items:
+   - name: Fundamentals - Publish your bot
+     href: publication-fundamentals-publish-channels.md
+   - name: Configure demo and live website publication
+     href: publication-connect-bot-to-web-channels.md
+   - name: Add bot to Microsoft Teams
+     href: publication-add-bot-to-microsoft-teams.md
+   - name: Add bot to Facebook
+     href: publication-add-bot-to-facebook.md
+   - name: Add bot to mobile and custom apps
+     href: publication-connect-bot-to-custom-application.md
+   - name: Add bot to Azure Bot Service Channels
+     href: publication-connect-bot-to-azure-bot-service-channels.md
+- name: Report on usage and bot performance
+  items:
+   - name: Fundamentals - Analysis
      href: analytics-overview.md
-   - name: Summary page
+   - name: Analyze bot performance and usage
      href: analytics-summary.md
-   - name: Customer satisfaction page
+   - name: Analyze customer satisfaction
      href: analytics-csat.md
-   - name: Topic details page
-     href: analytics-topic-details.md
-   - name: Sessions page
+   - name: Analyze session information
      href: analytics-sessions.md
+   - name: Analyze topic usage
+     href: analytics-topic-details.md
+- name: Configuration
+  items:
+   - name: Fundamentals - Configuration
+     href: configuration-fundamentals.md
+   - name: Configure the appearance of your bot with Microsoft Bot Framework
+     href: extend-custom-canvas-connect.md
+   - name: Upload a custom canvas with Microsoft Bot Framework
+     href: extend-custom-canvas-upload.md
+   - name: Configure hand-off with Omnichannel
+     href: configuration-hand-off-omnichannel.md
+   - name: Configure end-user authentication
+     href: configuration-end-user-authentication.md
+   - name: Configure Microsoft Bot Framework dispatcher
+     href: configuration-dispatcher.md
+   - name: Enable and configure Microsoft Bot Framework Skills
+     href: configuration-add-skills.md
 - name: Data Subject Rights (DSR) requests under GDPR
   items:
    - name: Overview of GDPR compliance
      href: gdpr-summary.md
-   - name: Requests to export data
+   - name: Requests to export and dowload data
      href: gdpr-export.md
    - name: Requests to delete data
      href: gdpr-delete.md
    - name: Requests to discover data
      href: gdpr-discovery.md
-   - name: Where an organization's Power Virtual Agents data is located
+   - name: Where an organization's data is located
      href: data-location.md

@@ -27,11 +27,11 @@ To help your organization comply with national, regional, and industry-specific 
 
 The Microsoft Trust Center (https://www.microsoft.com/trustcenter) is a centralized resource for obtaining information on Microsoft’s portfolio of products. This includes information on security, privacy, compliance, and transparency. While this content may contain some subset of this information for PowerApps, it is important to always refer to the Microsoft Trust Center for the most up to date authoritative information.
 
-For quick reference, you can find the Trust Center Information for the Microsoft Power Platform here https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx This will include information on PowerApps, Microsoft Flow and Power BI.
+For quick reference, you can find the Trust Center Information for the Microsoft Power Platform here https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx This will include information on PowerApps, Microsoft Power Automate and Power BI.
 
 ## Data Location
 
-Microsoft operates multiple data centers world-wide that support the Microsoft Power platfrom applications. When your organization establishes a tenant, it establishes the default geographical (geo) location. In addition, when creating environments to support applications and contain Common Data Service data the environments can be targeted for a specific geo. A current list of the geos for the Microsoft Power Platform can be found here https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location
+Microsoft operates multiple data centers world-wide that support the Microsoft Power platform applications. When your organization establishes a tenant, it establishes the default geographical (geo) location. In addition, when creating environments to support applications and contain Common Data Service data the environments can be targeted for a specific geo. A current list of the geos for the Microsoft Power Platform can be found here https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location
 
 To support continuity of operations, Microsoft may replicate data to other regions within a geo, but the data will not move outside the geo to support data resiliency. This supports the ability to fail over or recover more rapidly in the event of a severe outage. There are some reasonable exceptions to keeping data in the specific geo that are listed on the above site primary focused on legal and support. It’s also important to note, that you or your users can take actions that expose data outside of the geo. Other
 services can also be configured to access the data and expose it outside of the geo. By default, authorized users can access the platform and your applications and data from anywhere in the world where there is connectivity.
@@ -44,7 +44,7 @@ Data transferred through the on-premises data gateway is also encrypted. Data th
 
 All environments of the Common Data Service database use SQL Server Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.
 
-By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Dynamics 365 admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys here https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-encryption-keys-environment but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
+By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Dynamics 365 admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys [here](manage-encryption-key.md) but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
 
 ## Resources to manage GDPR Compliance
 
@@ -67,7 +67,7 @@ The following links point to detailed information to help you respond to DSR req
 |---------|---------|
 |PowerApps  |  [Responding to Data Subject Rights (DSR) requests to export PowerApps customer data](powerapps-gdpr-export-dsr.md)      |
 |Common Data Service     |  [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md)     |
-|Microsoft Flow     | https://docs.microsoft.com/flow/gdpr-dsr-summary        |
+|Power Automate    | https://docs.microsoft.com/flow/gdpr-dsr-summary        |
 |Microsoft Accounts (MSAs)     | https://docs.microsoft.com/flow/gdpr-dsr-summary-msa        |
 |Model-driven apps in Dynamics 365     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
 
@@ -75,21 +75,21 @@ The following links point to detailed information to help you respond to DSR req
 
 You may also find Microsoft Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More details about Compliance Manager can be found here https://aka.ms/compliancemanager .
 
-## Microsoft Flow Audit Log Events
+## Power Automate Audit Log Events
 
-In the compliance center Audit Log Search administrators can now search and view Microsoft Flow events. Events include Created flow, Edited flow, Deleted flow, Edited Permissions, Deleted Permissions, Started a paid trial, Renewed a paid trial. Using the portal you can choose what you want to search and a time window.
+In the compliance center Audit Log Search administrators can now search and view Power Automate events. Events include Created flow, Edited flow, Deleted flow, Edited Permissions, Deleted Permissions, Started a paid trial, Renewed a paid trial. Using the portal you can choose what you want to search and a time window.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/flow-audit-log-events.png "Flow audit log events")
+> ![](media/flow-audit-log-events.png "Power Automate audit log events")
 
 From the resulting query results when you drill down into an item you get a details page with the following type of information.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/flow-audit-log-events-detail.png "Flow audit log events details")
+> ![](media/flow-audit-log-events-detail.png "Power Automate audit log events details")
 
 The real good information comes from clicking on the More Information and drilling down into the real detail page:
 
 > [!div class="mx-imgBorder"] 
-> ![](media/flow-audit-log-events-detail-information.png "Flow audit log events details more information")
+> ![](media/flow-audit-log-events-detail-information.png "Power Automate audit log events details more information")
 
 Audit data is retained for 90 days. You can do CDSV exports of the data allowing you to move it into Excel or PowerBI for further analysis. You can find a complete walkthrough of using the audit information here https://flow.microsoft.com/blog/security-and-compliance-center/

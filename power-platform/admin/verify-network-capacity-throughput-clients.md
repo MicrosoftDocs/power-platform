@@ -46,8 +46,7 @@ The report displays a table with test and benchmark information. Of particular i
   
 - Maximize how quickly your forms load. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Optimize form performance](/dynamics365/customer-engagement/customize/optimize-form-performance.md)  
   
-- Make sure you aren’t using legacy form rendering, which can make forms take significantly longer to load. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [System Settings dialog box - General tab](/dynamics365/customer-engagement/admin/system-settings-dialog-box-general-tab.md)  
+- Make sure you aren’t using legacy form rendering, which can make forms take significantly longer to load. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [System Settings dialog box - General tab](system-settings-dialog-box-general-tab.md)  
   
 ### See also  
  [Performance tuning and optimization](../admin/performance-tuning-and-optimization.md)   
-

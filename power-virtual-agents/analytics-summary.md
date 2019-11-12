@@ -1,16 +1,19 @@
 ---
-title: "Summary page"
-description: "Learn about the Power Virtual Agents Summary page."
-ms.date: 05/29/2019
+
+title: "Analytics Summary page"
+description: "Learn about the Power Virtual Agents Analytics Summary page."
+ms.date: 12/2/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: m-hartmann
-ms.author: mhart
+author: mivakoc
+ms.author: mivakoc
+
 manager: shellyha
 ---
 
 # Summary page
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

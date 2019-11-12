@@ -1,6 +1,6 @@
 ---
-title: "Capacity add-ons for PowerApps and Flow  | MicrosoftDocs"
-description: This topic covers the Per app, Flow per business process, AI builder, Portal logins, and Portal views. 
+title: "Capacity add-ons for PowerApps and Power Automate  | MicrosoftDocs"
+description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
 ms.date: 10/25/2019
 ms.reviewer: 
 ms.service: "power-platform"
@@ -23,7 +23,7 @@ If your organization has purchased capacity add-ons, you have to allocate that c
 
 There are three stages for using capacity add-ons:
 
-1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [PowerApps and Flow Licensing Guide Oct 2019](https://go.microsoft.com/fwlink/?linkid=2085130).
+1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [PowerApps and Power Automate Licensing Guide Oct 2019](https://go.microsoft.com/fwlink/?linkid=2085130).
 2. Allocate: assign the purchased add-ons to an environment.
 3. Consume: once allocated, you can consume the capacity add-ons.
 

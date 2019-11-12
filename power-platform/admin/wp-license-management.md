@@ -19,36 +19,36 @@ search.app:
 # About licensing and license management
 
 Organizations can obtain licenses by either licensing Microsoft PowerApps or
-Flow specifically or by it being included in the license of another Microsoft
+Microsoft Power Automate specifically or by it being included in the license of another Microsoft
 cloud service offering. For example, both Office 365 and Dynamics 365 provide
-entitlements for PowerApps and Microsoft Flow. As with most Microsoft licensing,
+entitlements for PowerApps and Power Automate. As with most Microsoft licensing,
 you can mix and match for users as appropriate giving some additional
 entitlements.
 
 In the rest of this section we will highlight some of the key implications and
 scenarios related to licensing, but it is not the product licensing
 documentation, you should consult that for any of the latest details. Pricing
-and specific plan details for PowerApps and Flow can be found in the 
+and specific plan details for PowerApps and Power Automate can be found in the 
 [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## Use of connectors
 
-PowerApps and Microsoft Flow use connectors to interact with services. Connectors can be
+PowerApps and Power Automate use connectors to interact with services. Connectors can be
 standard, premium or custom. To use premium connectors users must be licensed
-with Standalone PowerApps or Microsoft Flow licenses.
+with Standalone PowerApps or Power Automate licenses.
 
 ## Trial Plans
 
-Trial plans are available for both PowerApps and Microsoft Flow. Free trials
-last 30 days for PowerApps and 90 days for Microsoft Flow plans. Users can
+Trial plans are available for both PowerApps and Power Automate. Free trials
+last 30 days for PowerApps and 90 days for Power Automate plans. Users can
 self-service sign up for these trials in your organization. This can be done by
 explicitly visiting the pricing pages or by being prompted when they attempt an
 action in the apps that require additional licensing.
 
-For Microsoft Flow, an unlicensed user that signs in to flow.microsoft.com will
-be setup with the free Flow plan. If later they try to perform an action like
-sharing a Flow, they will be prompted to sign up for a trial. In this example,
-if the user accepted the offer for trial they would be signed up for a Flow
+For Power Automate, an unlicensed user that signs in to flow.microsoft.com will
+be setup with the free Power Automate plan. If later they try to perform an action like
+sharing a flow, they will be prompted to sign up for a trial. In this example,
+if the user accepted the offer for trial they would be signed up for a Power Automate
 trial. This trial would not show up under the user licenses in the Office 365
 Portal, however you would be able to see it in the PowerApps license report
 discussed later in this security section.
@@ -76,7 +76,7 @@ flows. These environments will show up on the administrator’s list of
 environments and will list the type of environment as “Developer”. The
 environments are for individual use, so there is no ability to share with other
 users. Users in your organization can self-service signup for this plan even if
-they have PowerApps and Flow license entitlements via another licensing plan.
+they have PowerApps and Power Automate license entitlements via another licensing plan.
 Signup for the community plan can be found
 here <https://powerapps.microsoft.com/communityplan/> and more details on its
 features here <https://docs.microsoft.com/powerapps/maker/dev-community-plan>

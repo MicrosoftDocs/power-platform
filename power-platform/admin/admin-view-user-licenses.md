@@ -16,14 +16,14 @@ search.app:
 ---
 
 # Download a list of active users in your tenant
-If you're a 365 Global admin or Azure Active Directory Tenant admin, you can download a list of active users in your tenant, so you can see not only who's accessed PowerApps, Microsoft Flow, or both, but also the licenses assigned to those users.
+If you're a 365 Global admin or Azure Active Directory Tenant admin, you can download a list of active users in your tenant, so you can see not only who's accessed PowerApps, Power Automate, or both, but also the licenses assigned to those users.
 
 In this topics, you'll learn how to download a list of active users to a .csv file, and then view that list in Excel.
 
 To follow the steps, you need Office 365 Global Admin or Azure Active Directory Tenant Admin permissions.
 
 ## Sign in to the PowerApps Admin center
-Sign in to the Admin center at [https://admin.powerapps.com]([https://admin.powerapps.com).
+Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
 
 ## Download the list of users
 In the navigation pane, click or tap **User licenses**, and then click or tap **Download a list of active user licenses**.
@@ -35,9 +35,9 @@ The list of users is downloaded into a .csv file. This process could take severa
 ## View the list
 After the .csv file is created, open it in Excel. The list contains each user’s name, email address, license type, and other information.
 
-A user who's accessed a product at least once is considered an *active user*. Since this is a list of active users, it does not contain users who have licenses for PowerApps and Microsoft Flow but have never accessed them. You can view all user licenses from the [Microsoft 365 admin center](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+A user who's accessed a product at least once is considered an *active user*. Since this is a list of active users, it does not contain users who have licenses for PowerApps and Power Automate but have never accessed them. You can view all user licenses from the [Microsoft 365 admin center](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-The following example shows two users who have licenses to both PowerApps and Microsoft Flow. Jane Doe has access through a subscription to Office 365, and John Doe has a trial license for each product.
+The following example shows two users who have licenses to both PowerApps and Power Automate. Jane Doe has access through a subscription to Office 365, and John Doe has a trial license for each product.
 
 ![File and Share](./media/admin-view-user-licenses/table2.png)
 

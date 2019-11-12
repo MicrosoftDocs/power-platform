@@ -23,7 +23,7 @@ These settings can be found in the Power Platform Admin center by going to **Env
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
   
 1. Select an environment and go to **Settings** > **Data management** > **Templates**.
@@ -35,6 +35,6 @@ Make sure you have the System Administrator or System Customizer security role o
 4. Select **Close**.  
   
 ### See also  
- [Import accounts, leads, or other data](https://docs.microsoft.com/dynamics365/customer-engagement/basics/import-accounts-leads-other-data)   
- [Import contacts](https://docs.microsoft.com/dynamics365/customer-engagement/basics/import-contacts)   
+[Import data (all record types) from multiple sources](import-data-all-record-types.md) <br />
+[Import data](https://docs.microsoft.com/powerapps/developer/common-data-service/import-data)
  
