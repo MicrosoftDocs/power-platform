@@ -16,7 +16,7 @@ ms.collection: virtualagent
 
 
 # Learn with Power Virtual Agent Bot through lessons
-The Power Virtual Agent includes a set of four lessons from which you can learn how a topic can be created, conditions used, and out-of-the-box pre-built entity as well as a custom entity.
+The Power Virtual Agent includes a set of four lessons from which you can learn how a topic can be created, conditionals used, and leverage an out-of-the-box pre-built entity as well as a custom entity.
 
 * Lesson 1 - A simple topic</br>
 This lesson will show you how you can create a simple topic with one conditional branch.
@@ -39,7 +39,7 @@ This lesson continues to show you how you can create a topic with a conditional 
     In particular it will allow an entity to bypass a follow up question. For instance, try testing with "I want a business laptop."
 
 
-These topics demonstrate how you can name a topic, set its description and create up basic topic flows including variables, decision points and entities and slots.
+These topics demonstrate how you can name a topic, set its description and create basic topic flows including variables, decision points and entities and slots.
 
 ## Power Virtual Agent lessons for new Bots
 
