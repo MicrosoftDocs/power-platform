@@ -106,7 +106,7 @@ search.app:
   
     All of your pending system customizations will be published, including those you may have saved but not published in another area.  
   
-   You’re now ready to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. See [Collaborate with your colleagues using Office 365 Groups](/dynamics365/customer-engagement/basics/collaborate-with-colleagues-using-office-365-groups.md).  
+   You’re now ready to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. See [Collaborate with your colleagues using Office 365 Groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups).  
   
 <a name="BKMK_Connectors"></a>   
 ## Use the Office 365 Connectors for Groups  
@@ -158,8 +158,8 @@ search.app:
  When a user leverages the Office 365 Groups feature to connect an Office Group to model-driven apps in Dynamics 365, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  
   
 ### See also  
- [Collaborate with your colleagues using Office 365 Groups](/dynamics365/customer-engagement/basics/collaborate-with-colleagues-using-office-365-groups.md)   
+ [Collaborate with your colleagues using Office 365 Groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups)   
  [CRM Blog: Dynamics CRM Online connector for Office 365 Groups](https://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)   
  [Set up model-driven apps in Dynamics 365 to use Exchange Online](connect-exchange-online.md)   
  [Blog: It's here - Office 365 Groups in CRM Online](https://blogs.technet.com/b/lystavlen/archive/2015/05/08/office-groups.aspx)   
- [Office 365 Groups FAQs](/dynamics365/customer-engagement/basics/office-365-groups-dynamics-365-faqs.md)
+

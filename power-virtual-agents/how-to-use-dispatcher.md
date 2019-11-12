@@ -14,6 +14,8 @@ manager: shellyha
 
 # Use a Microsoft Bot Framework bot with Power Virtual Agents
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with your Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs. 
 
 * [Retrieve topics, utterances and secrets from your Power Virtual Agents tenant](#retrieve-topics-and-utterances-from-your-power-virtual-agents-tenant)

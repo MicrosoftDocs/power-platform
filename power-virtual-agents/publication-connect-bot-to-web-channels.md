@@ -1,5 +1,5 @@
 ---
-title: "Configure your bot for a live or demo website"
+title: "Configure a Power Virtual Agents bot for a live or demo website"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an iFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/9/2019
@@ -33,25 +33,28 @@ You can edit the welcome message and suggested trigger phrases for the demo webs
 **Update the demo website:**
 
 1. Select **Manage** on the side navigation pane and then go to the **Channels** tab.
+
 2. Select the **Demo website** tile.
+
 3. Enter whatever welcome message you'd like to be displayed alongside the bot in the **Welcome message** text field.
+
 4. Enter a list of suggested trigger phrases in the **Conversation starters** text field. Trigger phrases are what initiate specific topics, so you could customize these to specific topics that you want your teammates to try out.
 
-![Share demo website](media/channel-share-demo-website.png)
+    ![Share demo website](media/channel-share-demo-website.png)
 
 To share the demo website link, simply copy the demo website URL and share it with your teammates directly. 
 
-### Custom website
+## Custom website
 
-You can add your bot to a live website as an iFrame. 
+You can add your bot to a live website as an iFrame. Your live website can be a customer-facing external website or an internal site, like a Sharepoint or Yammer site.
 
 **Get iFrame snippet:**
 
 1. Select **Manage** on the side navigation pane, and then go to the **Channels** tab.
+
 2. Select **Custom website** and then select **Copy** to copy it directly to the clipboard, or **Share to email** to open a new email message with the snippet included, in your default email app.
 
-
-![Add bot to custom website](media/channel-custom-website.png)
+    ![Add bot to custom website](media/channel-custom-website.png)
 
 
 

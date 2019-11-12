@@ -71,6 +71,7 @@ Once the setup steps are complete, save your configuration and test it by [creat
 ## Remove the authentication configuration
 
 1. Select **Manage** on the side navigation pane, and then go to the **Authentication** tab.
+
 2. Select **Delete connection**.
 
 If authentication is being used in a topic, you will receive a warning that the connection cannot be deleted until references to it are removed from the affected topics. A list of the affected topics will be provided in the warning note.
@@ -81,7 +82,10 @@ If authentication is being used in a topic, you will receive a warning that the 
 > Deleting the authentication information from the bot does not remove it from Azure Bot Service. If you want to clear the configuration from Azure Bot Service, you will need to contact your subscription owner, who will need to follow these steps. If these steps can't be followed, contact your Microsoft Support manager to have the issue resolved.
 
 1. Sign in to the [Azure Portal](https://portal.azure.com).
+
 1. Go to **Bot Services**.
+
 1. Select the connection to be deleted.
+
 1. Delete the connection.
 
