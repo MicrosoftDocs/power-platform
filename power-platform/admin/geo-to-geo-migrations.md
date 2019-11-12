@@ -85,5 +85,4 @@ We continue to open new datacenter regions for business services, and to add dat
  We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 
 ### See also  
- [Add and edit multiregional environments](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md)   
- [Manage environments](/dynamics365/customer-engagement/admin/manage-online-instances.md)
+
