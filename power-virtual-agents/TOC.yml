@@ -4,12 +4,7 @@
      href: fundamentals-what-is-power-virtual-agent.md
    - name: Get started quickly with Power Virtual Agents
      href: fundamentals-get-started.md
-- name: Licensing and technical requirements
-  items:
-   - name: Fundamentals - requirements for Power VirtualAgent
-     href: requirements-fundamentals.md
-   - name: Geographic requirements
-     href: requirements-geographic.md
+
 
 
 - name: Onboard and set up
