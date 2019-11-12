@@ -23,7 +23,7 @@ In this topics, you'll learn how to download a list of active users to a .csv fi
 To follow the steps, you need Office 365 Global Admin or Azure Active Directory Tenant Admin permissions.
 
 ## Sign in to the PowerApps Admin center
-Sign in to the Admin center at [https://admin.powerapps.com]([https://admin.powerapps.com).
+Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
 
 ## Download the list of users
 In the navigation pane, click or tap **User licenses**, and then click or tap **Download a list of active user licenses**.
