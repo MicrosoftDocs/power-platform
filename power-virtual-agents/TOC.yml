@@ -4,9 +4,6 @@
      href: fundamentals-what-is-power-virtual-agent.md
    - name: Get started quickly with Power Virtual Agents
      href: fundamentals-get-started.md
-
-
-
 - name: Onboard and set up
   items:
    - name: Fundamentals - Environments and onboarding best practices
@@ -89,7 +86,7 @@
      href: configuration-add-skills.md
 - name: Data Subject Rights (DSR) requests under GDPR
   items:
-   - name: Overview of GDPR compliance
+   - name: Fundamentals - GDPR compliance
      href: gdpr-summary.md
    - name: Requests to export and dowload data
      href: gdpr-export.md
