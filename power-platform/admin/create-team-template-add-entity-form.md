@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/24/2019
+ms.date: 10/28/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -26,20 +26,22 @@ These settings can be found in the Power Platform Admin center by going to **Env
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
 Check your security role:
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
 1. Select an environment and go to **Settings** > **User's + permissions** > **Teams**.
 
-2. On the command bar, select **More Commands** (...).
+2. Select the check box for a team.
 
-3. Select **Customize Entity**. 
+3. On the command bar, select **More Commands** (...).
 
-4. In the navigation pane, expand **Entities**, and then choose the entity you want to use in the team template.  
+4. Select **Customize Entity**. 
 
-5. On the **Entity Definition** form, in the **Communication & Collaboration** section, select the **Access Teams** checkbox.  
+5. In the navigation pane, expand **Entities**, and then choose the entity you want to use in the team template.  
 
-6. On the **Actions** toolbar, select **Save**.  
+6. On the **Entity Definition** form, in the **Communication & Collaboration** section, select the **Access Teams** checkbox.  
+
+7. On the **Actions** toolbar, select **Save**.  
   
 <!--
 ## Create a team template  
@@ -84,5 +86,5 @@ Check your security role:
 13. On the **Actions** toolbar, select **Save**, and then select **Publish**.  
   
 > [!NOTE]
-> The Access Team template does not get exported with its entity in a Solution.  Administrators will need to recreate the template when exporting the entity into another instance.
+> The Access Team template does not get exported with its entity in a Solution.  Administrators will need to recreate the template when exporting the entity into another environment.
 

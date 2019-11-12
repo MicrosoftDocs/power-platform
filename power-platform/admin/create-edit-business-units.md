@@ -1,22 +1,13 @@
 ---
-title: "Create or edit business units | MicrosoftDocs"
-description: Learn how to create or edit business units
-ms.custom: 
-ms.date: 08/19/2019
-ms.reviewer: 
+title: "Create or edit business units  | MicrosoftDocs"
+description: Learn how to create or edit business units 
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
-ms.suite: 
-ms.tgt_pltfrm: 
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: f88f7c87-2ee2-42f3-8101-7271f6731cf9
-caps.latest.revision: 28
-author: jimholtz
+ms.topic: conceptual
+ms.date: 08/19/2019
 ms.author: jimholtz
-manager: kvivek
 search.audienceType: 
   - admin
 search.app: 
@@ -26,21 +17,21 @@ search.app:
 ---
 # Create or edit business units 
 
-In Dynamics 365 apps, a business unit is a logical grouping of related business activities.  
+A business unit is a logical grouping of related business activities.  
   
- If your Dynamics 365 apps organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization’s departments or divisions. Users can securely access data in their own business unit, but they can’t access data in other business units.  
+ If your organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization’s departments or divisions. Users can securely access data in their own business unit, but they can’t access data in other business units.  
   
- Business units, security roles, and users are linked together in a way that conforms to the [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps role-based security model. Use business units together with security roles to control data access so people see just the information they need to do their jobs.   
+ Business units, security roles, and users are linked together in a way that conforms to the role-based security model. Use business units together with security roles to control data access so people see just the information they need to do their jobs.   
   
  Keep the following in mind when creating business units:  
   
-- The organization (also known as the root business unit) is the top level of a [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps business unit hierarchy. [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps automatically creates the organization when you install or provision [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps. You can’t change or delete the organization name.  
+- The organization (also known as the root business unit) is the top level of a business unit hierarchy. Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, automatically creates the organization when you install or provision model-driven apps in Dynamics 365. You can’t change or delete the organization name.  
   
 - Each business unit can have just one parent business unit.  
   
 - Each business unit can have multiple child business units.  
   
-- [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit.  
+- Security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit.  
   
 - You can assign a team to just one business unit, but a team can consist of users from one or many business units. Consider using a team if you have a situation where users from different business units need to work together on a shared set of records.  
   
@@ -50,14 +41,14 @@ These settings can be found in the Power Platform Admin center by going to **Env
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator. 
  
 1. Select an environment and go to **Settings** > **Users + permissions** > **Business units**.
  
 2. On the Actions bar, select **New**.  
   
-3. In the **Business Unit** dialog box, type a name for the new business unit. [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps automatically fills in the **Parent Business** field with the name of the root business unit.  
+3. In the **Business Unit** dialog box, type a name for the new business unit. Model-driven apps in Dynamics 365 automatically fills in the **Parent Business** field with the name of the root business unit.  
   
 4. If you want to change the parent business unit, select the **Lookup** button (![Lookup button](media/lookup-4.png)), **Look Up More Records**, and then do one of the following:  
   

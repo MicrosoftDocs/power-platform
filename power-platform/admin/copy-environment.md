@@ -1,29 +1,23 @@
 ---
-title: "Copy an environment to a Sandbox environment | MicrosoftDocs"
-description: Learn how to copy a Sandbox environment.
-ms.custom: ""
-ms.date: 08/30/2019
-ms.reviewer: ""
+title: "Copy an environment to a Sandbox environment  | MicrosoftDocs"
+description: Learn how to copy a Sandbox environment. 
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 08/30/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Copy an environment
 
-You can use Copy environment in the Power Platform Admin center to copy the Dynamics 365 for Customer Engagement apps and all data from any environment to a Sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use Copy environment in the Power Platform Admin center to copy the model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and all data from any environment to a Sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![](media/copy-menu.png "Copy menu")
@@ -99,7 +93,7 @@ After modifying and enabling some of the plug-ins, the developer Sandbox environ
 1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
    > [!NOTE]
-   > Environment Admins or System Administrators can copy all available environments. Customer Engagement System administrators can copy environments for which they have the Environment Admin or System Administrator role.  
+   > Environment Admins or System Administrators can copy all available environments. System administrators can copy environments for which they have the Environment Admin or System Administrator role.  
   
 2. From the left-side menu, select **Environments**, and then select an environment to copy.
 
@@ -136,7 +130,7 @@ Once the copy process is complete, the target environment is placed in [Administ
 ### Next steps after copying an environment  
  To ensure the newly created copy (target) environment does not impact your Production environment, once the copy operation is complete, two things happen:  
   
-1. The newly created copy environment is placed in administration mode. Only those with System Administrator or System Customizer security roles can sign in and manage the copy environment. Regular Customer Engagement users cannot sign in and use the copy environment.  
+1. The newly created copy environment is placed in administration mode. Only those with System Administrator or System Customizer security roles can sign in and manage the copy environment. Regular users cannot sign in and use the copy environment.  
   
 2. Background operations are disabled in the copy environment. Disabled operations include workflows and synchronization with Microsoft Exchange.  
   
@@ -160,11 +154,11 @@ Once the copy process is complete, the target environment is placed in [Administ
   
   More information: [Set the delivery method for incoming and outgoing email](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks)  
   
-- **SharePoint**. Deactivate or redirect SharePoint to a sandbox SharePoint environment to prevent impacting documents in Customer Engagement apps managed by SharePoint. In Customer Engagement apps, go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then click **Deactivate**.  
+- **SharePoint**. Deactivate or redirect SharePoint to a sandbox SharePoint environment to prevent impacting documents managed by SharePoint. Go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then click **Deactivate**.  
   
-- **Yammer**. Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the Production environment. In Customer Engagement apps, go to **Settings** > **Administration** > **Yammer Configuration**.  
+- **Yammer**. Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the Production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
   
-     After creating a new Sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you have connected Yammer to Customer Engagement apps there will be Yammer activity streams posted from Customer Engagement apps to Yammer asynchronously. These activity streams are not visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the Sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your Sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
+     After creating a new Sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you have connected Yammer to model-driven apps in Dynamics 365 there will be Yammer activity streams posted from model-driven apps in Dynamics 365 to Yammer asynchronously. These activity streams are not visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the Sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your Sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
   
 - **Platform extensibility**. Consider disabling the following that could be running in the copy environment and impacting external service components.  
   

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/31/2019
+ms.date: 10/07/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 To control data access, you must set up an organizational structure that both protects sensitive data and enables collaboration. You do this by setting up business units, security roles, and field security profiles.  
 
 > [!TIP]
-> Check out the following video: [How to set up security roles in Dynamics 365 for Customer Engagement](https://go.microsoft.com/fwlink/p/?linkid=2020433).
+> Check out the following video: [How to set up security roles](https://go.microsoft.com/fwlink/p/?linkid=2020433).
   
 ## Security roles  
 A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles.  
@@ -37,7 +37,7 @@ The colored circles on the security role settings page define the access level f
   
 |||  
 |-|-|  
-|![Access level global](../admin/media/access-level-global.png "Access level global")|**Global**. This access level gives a user access to all records in the organization, regardless of the business unit hierarchical level that the instance or the user belongs to. Users who have Global access automatically have Deep, Local, and Basic access, also.<br /><br /> Because this access level gives access to information throughout the organization, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the organization.<br /><br /> The application refers to this access level as **Organization**.|  
+|![Access level global](../admin/media/access-level-global.png "Access level global")|**Global**. This access level gives a user access to all records in the organization, regardless of the business unit hierarchical level that the environment or the user belongs to. Users who have Global access automatically have Deep, Local, and Basic access, also.<br /><br /> Because this access level gives access to information throughout the organization, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the organization.<br /><br /> The application refers to this access level as **Organization**.|  
 |![Access level deep](../admin/media/access-deep.png "Access level deep")|**Deep**. This access level gives a user access to records in the user's business unit and all business units subordinate to the user's business unit.<br /><br /> Users who have Deep access automatically have Local and Basic access, also.<br /><br /> Because this access level gives access to information throughout the business unit and subordinate business units, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the business units.<br /><br /> The application refers to this access level as **Parent: Child Business Units**.|  
 |![Access level local](../admin/media/access-local.png "Access level local")|**Local**. This access level gives a user access to records in the user's business unit.<br /><br /> Users who have Local access automatically have Basic access, also.<br /><br /> Because this access level gives access to information throughout the business unit, it should be restricted to match the organization's data security plan. This level of access is usually reserved for managers with authority over the business unit.<br /><br /> The application refers to this access level as **Business Unit**.|  
 |![Access level basic](../admin/media/access-level-basic.png "Access level basic")|**Basic**. This access level gives a user access to records that the user owns, objects that are shared with the user, and objects that are shared with a team that the user is a member of.<br /><br /> This is the typical level of access for sales and service representatives.<br /><br /> The application refers to this access level as **User**.|  
@@ -47,7 +47,7 @@ The colored circles on the security role settings page define the access level f
 > To ensure that users can view and access all areas of the web application, such as entity forms, the nav bar, or the command bar, all security roles in the organization must include the Read privilege on the `Web Resource` entity. For example, without read permissions, a user won’t be able to open a form that contains a web resource and will see an error message similar to this: “Missing `prvReadWebResource` privilege.” [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit a security role](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-security-role)  
 
 ### Record-level privileges  
- [!INCLUDE [pn-powerapps](../includes/pn-powerapps.md)] and [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)] use eight different record-level privileges that determine the level of access a user has to a specific record or record type.  
+ [!INCLUDE [pn-powerapps](../includes/pn-powerapps.md)] and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, use eight different record-level privileges that determine the level of access a user has to a specific record or record type.  
   
 |Privilege|Description|  
 |---------------|-----------------|  
@@ -55,8 +55,8 @@ The colored circles on the security role settings page define the access level f
 |**Read**|Required to open a record to view the contents. Which records can be read depends on the access level of the permission defined in your security role.|  
 |**Write**|Required to make changes to a record. Which records can be changed depends on the access level of the permission defined in your security role.|  
 |**Delete**|Required to permanently remove a record. Which records can be deleted depends on the access level of the permission defined in your security role.|  
-|**Append**|Required to associate a record with the current record. For example, if a user has Append rights on an opportunity, the user can add a note to an opportunity. Which records can be appended depends on the access level of the permission defined in your security role.|  
-|**Append To**|Required to associate the current record with another record. For example, a note can be attached to an opportunity if the user has Append To rights on the note. Which records can be appended to depends on the access level of the permission defined in your security role.|  
+|**Append**|Required to associate the current record with another record. For example, a note can be attached to an opportunity if the user has Append rights on the note. The records that can be appended depend on the access level of the permission defined in your security role.<br /> In case of many-to-many relationships, you must have Append privilege for both entities being associated or disassociated.|  
+|**Append To**|Required to associate a record with the current record. For example, if a user has Append To rights on an opportunity, the user can add a note to the opportunity. The records that can be appended to depend on the access level of the permission defined in your security role.|  
 |**Assign**|Required to give ownership of a record to another user. Which records can be assigned depends on the access level of the permission defined in your security role.|  
 |**Share**|Required to give access to a record to another user while keeping your own access. Which records can be shared depends on the access level of the permission defined in your security role.|  
   
@@ -86,7 +86,7 @@ These settings can be found in the Power Platform Admin center by going to **Env
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
 Check your security role:
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.<br />
 
 1. Select an environment and go to **Settings** > **User's + permissions** > **Security roles**.

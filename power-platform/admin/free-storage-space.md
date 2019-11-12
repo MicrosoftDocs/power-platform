@@ -1,40 +1,33 @@
 ---
-title: "Free storage space |  MicrosoftDocs"
+title: "Free storage space  | MicrosoftDocs"
 description: Methods for reducing storage space consumed.
-ms.custom: 
-ms.date: 04/02/2019
-ms.reviewer: 
-ms.service: crm-online
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: 
-  - Dynamics 365 for Customer Engagement  (online)
-  - Dynamics 365 for Customer Engagement  Version 9.x
-ms.assetid: 46c0d35c-5edd-4087-980d-035ec76ab211
-caps.latest.revision: 32
 author: jimholtz
-ms.author: jimholtz
 manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 04/02/2019
+ms.author: jimholtz 
 search.audienceType: 
   - admin
 search.app: 
   - D365CE
+  - PowerApps
   - Powerplatform
 ---
 # Free storage space
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-These are ways to reduce the amount of storage space used by removing or deleting different types of information from [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. Use one or more of these methods to control your total data storage usage with [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
+These are ways to reduce the amount of storage space used by removing or deleting different types of information from model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Use one or more of these methods to control your total data storage usage. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
   
 > [!WARNING]
 >  The suggestions in this topic include deleting notes, attachments, import history, and other data. Before you delete data, be sure that the data is no longer needed because you cannot retrieve deleted data. There is no “undo” to restore your data once it has been deleted. This means it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
 > 
 > [!NOTE]
->  - Except for methods 3 and 5, all these methods require that you have an administrator [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps scurity role, such as System Administrator. This gives you permission to delete records in bulk and to delete system jobs.  
+>  - Except for methods 3 and 5, all these methods require that you have an administrator scurity role, such as System Administrator. This gives you permission to delete records in bulk and to delete system jobs.  
 >  - After performing actions to free up storage, the system can take up to 24 hours to update storage information. We recommend waiting up to 24 hours and monitoring your storage.  
->  - Storage consumed does not directly correspond to the size reported in Common Data Services for Apps; consumption includes additional storage for metadata and encryption. For example, removing 10MB of storage from a file does not mean the file size is reduced by 10MB.
+>  - Storage consumed does not directly correspond to the size reported in Common Data Service for Apps; consumption includes additional storage for metadata and encryption. For example, removing 10MB of storage from a file does not mean the file size is reduced by 10MB.
 >  - Some platform operations require you to wait 24-36 hours to confirm data size changes. Such operations include but are not limited to upgrades to new versions and introduction of new workflows. Such operations require system adjustments that might result in a momentary size increase report.
 
 ## Freeing storage for Common Data Service
@@ -52,11 +45,11 @@ Use the following methods to free storage for each of the capacity types.
 |     | **Method 10**: Delete audit logs        |
 |     | Delete plug-in trace logs using a [bulk deletion job](https://docs.microsoft.com/dynamics365/customer-engagement/admin/delete-bulk-records) |
 |**Database**     |         |
-|     | **Method 1**: Delete bulk email and workflow instances using a bulk deletion job        |
+|     | **Method 1**: Delete bulk email and workflow environments using a bulk deletion job        |
 |     | **Method 2**: Evaluate and delete suspended workflows        |
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
-|     | **Method 8**: Delete bulk import instances using a bulk deletion job        |
-|     | **Method 9**: Delete bulk deletion job instances using a bulk deletion job        |
+|     | **Method 8**: Delete bulk import environments using a bulk deletion job        |
+|     | **Method 9**: Delete bulk deletion job environments using a bulk deletion job        |
 
 
 ## Reduce file storage
@@ -64,7 +57,7 @@ Use the following methods to free storage for each of the capacity types.
 ### Method 3: Remove email attachments using Advanced Find  
   
 > [!WARNING]
->  If you delete this data, the attachments will no longer be available in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
+>  If you delete this data, the attachments will no longer be available in model-driven apps in Dynamics 365. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
 1. Choose **Advanced Find** (![Advanced find button](media/advanced-find-button2.png)).  
   
@@ -89,7 +82,7 @@ Use the following methods to free storage for each of the capacity types.
 ### Method 4: Remove email messages with attachments using a bulk deletion job  
   
 > [!WARNING]
->  If you delete this data, the email messages and their associated attachments will no longer be available in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
+>  If you delete this data, the email messages and their associated attachments will no longer be available in model-driven apps in Dynamics 365. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
 1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
   
@@ -122,7 +115,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -136,7 +129,7 @@ Use the following methods to free storage for each of the capacity types.
 ### Method 5: Remove notes with attachments using Advanced Find  
   
 > [!WARNING]
->  If you delete this data, notes and their associated attachments will no longer be available in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+>  If you delete this data, notes and their associated attachments will no longer be available in model-driven apps in Dynamics 365.  
   
 1. Choose **Advanced Find**.  
   
@@ -164,7 +157,7 @@ Use the following methods to free storage for each of the capacity types.
 ### Method 6: Remove notes with attachments using a bulk deletion job  
   
 > [!WARNING]
->  If you delete this data, notes and their associated attachments will no longer be available in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+>  If you delete this data, notes and their associated attachments will no longer be available in model-driven apps in Dynamics 365.  
   
 1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
   
@@ -193,7 +186,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -208,7 +201,7 @@ Use the following methods to free storage for each of the capacity types.
 
 ### Method 10: Delete audit logs  
 
- When you enable auditing, [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps creates audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
+ When you enable auditing, model-driven apps in Dynamics 365 create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
   
 > [!WARNING]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
@@ -230,7 +223,7 @@ Use the following methods to free storage for each of the capacity types.
 
 ## Reduce database storage
 
-### Method 1: Delete bulk email and workflow instances using a bulk deletion job  
+### Method 1: Delete bulk email and workflow environments using a bulk deletion job  
   
 > [!WARNING]
 >  If you delete this data, you will no longer be able to tell if an email was sent through bulk email or if a workflow rule ran against a record. The emails that were sent and the actions that ran against the record in the workflow will remain.  
@@ -264,7 +257,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -307,20 +300,20 @@ Use the following methods to free storage for each of the capacity types.
   
 ### Method 7: Remove bulk duplicate detection jobs and associated copies of duplicate records  
 
- Every time that a duplicate detection job runs, a copy of each duplicate record is stored in the database as part of the duplicate detection job. For example, if you have 100 duplicate records, every time that you run a duplicate detection job that finds these duplicates, whether it is manual or reoccurring, those 100 duplicate records will be stored in the database under that instance of that duplicate job until the duplicates are merged or deleted, or until the instance of that duplicate detection job is deleted.  
+ Every time that a duplicate detection job runs, a copy of each duplicate record is stored in the database as part of the duplicate detection job. For example, if you have 100 duplicate records, every time that you run a duplicate detection job that finds these duplicates, whether it is manual or reoccurring, those 100 duplicate records will be stored in the database under that environment of that duplicate job until the duplicates are merged or deleted, or until the environment of that duplicate detection job is deleted.  
   
 1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
   
 2. Choose **Duplicate Detection Jobs**.  
   
-3. Select the duplicate detection job instances you want to delete and then choose **Delete** (X).  
+3. Select the duplicate detection job environments you want to delete and then choose **Delete** (X).  
   
    To avoid wasting storage space, make sure duplicates are resolved promptly so that they are not reported in multiple duplicate detection jobs.  
 
 > [!div class="mx-imgBorder"] 
 > ![](media/free-storage-method7a.png "Free storage method 7")  
   
-### Method 8: Delete bulk import instances using a bulk deletion job  
+### Method 8: Delete bulk import environments using a bulk deletion job  
 
  Every time you perform a bulk import, there is a system job associated with that import. The system job details show which records imported successfully and which records failed.  
   
@@ -356,7 +349,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -367,7 +360,7 @@ Use the following methods to free storage for each of the capacity types.
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
-### Method 9: Delete bulk deletion job instances using a bulk deletion job  
+### Method 9: Delete bulk deletion job environments using a bulk deletion job  
 
  When you are bulk deleting data, such as in many of the methods described in this article, a bulk deletion system job is created and can be deleted.  
   
@@ -406,7 +399,7 @@ Use the following methods to free storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in [!INCLUDE[pn_microsoftcrm](../includes/pn-dynamics-crm.md)] apps.  
+9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   

@@ -1,36 +1,31 @@
 ---
-title: "Administer Dynamics 365 for Customer Engagement | MicrosoftDocs"
-description: Administer Dynamics 365 for Customer Engagement.
-ms.custom: ""
-ms.date: 09/27/2018
-ms.reviewer: ""
+title: "Administer model-driven apps in Dynamics 365  | MicrosoftDocs"
+description: Administer model-driven apps in Dynamics 365 
+author: jimholtz
+manager: kvivek
 ms.service: power-platform
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
-caps.latest.revision: 31
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 10/01/2019
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
+  - D365CE
+  - PowerApps
   - Powerplatform
 ---
-# Administer Dynamics 365 for Customer Engagement
+# Administer model-driven apps in Dynamics 365 
 
-Dynamics 365 for Customer Engagement administrators can use the Dynamics 365 admin center (<https://port.crm.dynamics.com/G/manage/index.aspx>) to manage the environment and settings. Dynamics 365 for Customer Engagement admin content is available at [Administrator Guide for Dynamics 365 for Customer Engagement apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/admin-guide).
+Administrators can use the Dynamics 365 admin center (<https://port.crm.dynamics.com/G/manage/index.aspx>) to manage certain settings for their environments (earlier called instances) that also have model-driven apps from Dynamics 365 installed, such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, Dynamics 365 Project Service Automation.  
 
-> [!NOTE]
-> In some documentation, we previously referred to Dynamics 365 (online) when we were talking more specifically about Dynamics 365 for Customer Engagement applications (apps). We have changed this in our current documentation so that it’s clear when we are referring to the collection of apps that include Sales, Customer Service, Marketing, Field Service, Project Service Automation, and their related services rather than the whole Dynamics 365 product family of applications and services, which includes Finance and Operations, Talent, Retail, and Business Central. You may still see “Dynamics 365 (online)” in some user interfaces (UI). Those strings refer to Dynamics 365 for Customer Engagement apps. 
+These model-driven apps were previously referred to as Dynamics 365 for Customer Engagement apps. However, effective October 2019, the *Dynamics 365 for Customer Engagement* SKU/license plan is no longer available for "online" customers. More information: [Dynamics 365 Licensing Update](https://docs.microsoft.com/dynamics365/licensing/update)
 
-The content from the Customer Engagement admin guide is transitioning to the Power Platform admin guide as settings and features migrate to the Power Platform Admin center. Until the move to the Power Platform Admin center is complete, you’ll still be able to manage settings in Customer Engagement as usual.
+The help content for Dynamics 365 admin center is available at [Administer model-driven apps in Dynamics 365](https://docs.microsoft.com/dynamics365/admin/admin-guide).
 
-For example, many of these admin settings in the Dynamics 365 for Customer Engagement web client...
+The content from the old admin guide is transitioning to the Power Platform admin guide as settings and features migrate to the Power Platform Admin center. Until the move to the Power Platform Admin center is complete, you’ll still be able to manage settings through your apps as usual.
+
+For example, many of these admin settings in the legacy web client...
 
 ![Dynamics 365 Settings](./media/old-settings.png)
 
@@ -38,7 +33,7 @@ For example, many of these admin settings in the Dynamics 365 for Customer Engag
 
 ![Environment settings](media/environment-settings-mini.png)
 
-Use links on this page to manage organization-wide settings. App-specific settings will remain in the Dynamics 365 for Customer Engagement apps, and will be accessed through the respective app settings. More information about managing environment settings in the Power Platform Admin center: [Manage environment settings](admin-settings.md) 
+Use links on this page to manage organization-wide settings. App-specific settings will remain in the model-driven apps, and will be accessed through the respective app settings. More information about managing environment settings in the Power Platform Admin center: [Manage environment settings](admin-settings.md) 
 
 ### See also
 [Reference: Use the various admin centers](admin-centers.md)

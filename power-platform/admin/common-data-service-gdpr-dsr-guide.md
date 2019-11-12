@@ -1,14 +1,14 @@
 ---
 title: Responding to DSR requests for Common Data Service customer data | Microsoft Docs
 description: Walkthrough of how to respond to DSR requests for Common Data Service customer data
-author: jamesol-msft
+author: jimholtz
 ms.reviewer: paulliew
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
-ms.author: jamesol
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -30,7 +30,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 
 A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
 
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using PowerApps, Microsoft Flow, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using PowerApps, Power Automate, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
 The following actions are covered in this article:
 
@@ -84,9 +84,9 @@ To avoid interruption to business applications that may be critical to your orga
 Only Office 365 Global Administrators and Common Data Service System Administrators can perform the discover, rectify, export, and delete actions listed below.
 
 ### Discover
-System Administrators can create multiple Common Data Service instances. These instances can be used for trial, development, or production purposes. Each of these instances has a copy of the system User entity with any custom attributes that may have been added by the system administrator, as well as the user personal data synced from the Microsoft 365 admin center.
+System Administrators can create multiple Common Data Service environments. These environments can be used for trial, development, or production purposes. Each of these environments has a copy of the system User entity with any custom attributes that may have been added by the system administrator, as well as the user personal data synced from the Microsoft 365 admin center.
 
-System administrators can find a list of all the Common Data Service instances by navigating to the Dynamics 365 Administration Center from the PowerApps Admin center.
+System administrators can find a list of all the Common Data Service environments by navigating to the Dynamics 365 Administration Center from the PowerApps Admin center.
 
 From the [PowerApps Admin center](https://admin.powerapps.com/), do the following:
 
@@ -96,16 +96,16 @@ From the [PowerApps Admin center](https://admin.powerapps.com/), do the followin
 
     ![PowerApps Environment Details](./media/common-data-service-gdpr-dsr-guide/powerapps-environment-details.png)
 
-    A list of all the instances displays.
+    A list of all the environments displays.
 
-    ![PowerApps Instance Picker](./media/common-data-service-gdpr-dsr-guide/powerapps-instance-picker.png)
+    ![PowerApps environment Picker](./media/common-data-service-gdpr-dsr-guide/powerapps-instance-picker.png)
 
 You can find personal data from Common Data Service users within the following resources:
 
 |Resource | Purpose | Website access | Programmatic access
 | --- | --- | --- | ---
-| Entity record | Known as the system User entity, it stores a user's personal data. | [PowerApps Admin center](https://admin.powerapps.com) | Through the [Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
-| Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at an entity level. | [PowerApps Admin center](https://admin.powerapps.com) | Through the [Web API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Entity record | Known as the system User entity, it stores a user's personal data. | [PowerApps Admin center](https://admin.powerapps.com) | Through the [Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)
+| Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at an entity level. | [PowerApps Admin center](https://admin.powerapps.com) | Through the [Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### User
 User personal data is stored in the Azure Active Directory and is automatically synced to all Common Data Service environments. System administrators cannot update this personal data directly in Common Data Service while the user is active&mdash;they must update the data from within the Office 365 Administration Center. System administrators can add personal data (for example, custom attributes) directly to Common Data Service, but they must manually manage this data.
@@ -132,7 +132,7 @@ If a data subject asks you to rectify the personal data that resides in your org
 
 You can use Azure Active Directory to manage the identities (personal data) of your users within Common Data Service. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services. See [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) for details.
 
-Once a user record is deleted from Azure Active Directory, System Administrators can then remove any remaining personal data related to that user (such as custom attributes) from all the instances.  
+Once a user record is deleted from Azure Active Directory, System Administrators can then remove any remaining personal data related to that user (such as custom attributes) from all the environments.  
 
 ### Export
 
@@ -201,7 +201,7 @@ From the [PowerApps Admin center](https://admin.powerapps.com/), do the followin
 
 3. Go to **Settings** > **Security** > **Users**, and then select **Disabled Users View**.
 
-4. Create and download an Excel template file from the user's personal data. For step-by-step instructions, see [Create a new Excel template](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template).
+4. Create and download an Excel template file from the user's personal data. For step-by-step instructions, see [Create a new Excel template](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template).
 
 8. Open the downloaded Excel template file, remove the user's personal data, and then save the file.
 
@@ -232,7 +232,7 @@ Common Data Service System Administrators are responsible for maintaining an inv
 Personal data can then be exported, rectified, or deleted in an entity using the in-product functionality.  
 
 ### Discover
-When Common Data Service System Administrators receive a DSR request from an individual, they must identify which environments/Common Data Service instances contain personal data for that individual. Personal data is typically stored in key entities (for example, Account, Contact, Lead, Opportunity, etc.), but it’s your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
+When Common Data Service System Administrators receive a DSR request from an individual, they must identify which environments/Common Data Service environments contain personal data for that individual. Personal data is typically stored in key entities (for example, Account, Contact, Lead, Opportunity, etc.), but it’s your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
 
 Using an inventory, Common Data Service System Administrators can configure the search entities and fields and then access the Common Data Service environment to discover personal data. For more information, see [Configure Relevance Search](https://go.microsoft.com/fwlink/?linkid=872506).
 
@@ -304,7 +304,7 @@ Common Data Service System Administrators are responsible for maintaining an inv
 Personal data can then be exported, rectified, or deleted in an entity using the in-product functionality.  
 
 ### Discover
-When Common Data Service System Administrators receives a DSR request from an individual, they must identify which environments/Common Data Service instances contain personal data from that individual. Personal data is typically stored in key entities (for example, Account, Contact, Lead, Opportunity, etc.), but it’s your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
+When Common Data Service System Administrators receives a DSR request from an individual, they must identify which environments/Common Data Service environments contain personal data from that individual. Personal data is typically stored in key entities (for example, Account, Contact, Lead, Opportunity, etc.), but it’s your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
 
 You can find personal data from users of the previous version of Common Data Service within the following resources:
 
