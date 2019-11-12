@@ -40,12 +40,8 @@
      href: advanced-entities-slot-filling.md
    - name: Use variables
      href: authoring-variables.md
-   - name: Allow multiple users to edit simultaneously (REM)
-     href: advanced-multi-user-authoring.md
    - name: Create topics from existing support content on the web
      href: advanced-create-topics-from-web.md
-   - name: Create topics from Customer Service Insights (REM)
-     href: advanced-create-topics-from-csi.md
    - name: Use end-user authentication
      href: advanced-end-user-authentication.md
    - name: Use Microsoft Flow
