@@ -40,7 +40,14 @@
       "titleSuffix": "Power Virtual Agents",
       "breadcrumb_path": "/power-virtual-agents/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "search.app": [
+        "capaedac-pva"
+      ],
+      "search.audienceType": [
+        "maker"
+      ],
+      "search.appverid": "met150"
     },
     "fileMetadata": {},
     "template": [],
