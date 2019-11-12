@@ -47,7 +47,7 @@ search.app:
   
  ![Dynamics 365 Administration Center environments tab](../admin/media/crm-admin-center-instances.png "Dynamics 365 Administration Center environments tab")  
   
- Choose the **Updates** tab to approve and schedule updates, change the update target version, and open model-driven apps in Dynamics 365 apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage updates](/dynamics365/customer-engagement/admin/manage-updates.md)  
+ Choose the **Updates** tab to approve and schedule updates, change the update target version, and open model-driven apps in Dynamics 365 apps.  
   
  ![Dynamics 365 Administration Center - Updates tab](../admin/media/crm-admin-center-updates.png "Dynamics 365 Administration Center - Updates tab")  
   

@@ -36,7 +36,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
    ![Online synchronization filters](media/online-sync-filters-dialog-box2.png "Online synchronization filters")  
   
    > [!NOTE]
-   > If you’re a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](/dynamics365/customer-engagement/developer/outlook-client/offline-outlook-filters-templates.md) 
+   > If you’re a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](https://docs.microsoft.com/powerapps/developer/common-data-service/outlook-client/offline-outlook-filters-templates) 
   
 4. Do one of the following:  
   

@@ -63,9 +63,9 @@ Use the settings on this page to configure system-level settings for the sales a
 
   
 ### See also  
- [Set up a product catalog: Walkthrough](/dynamics365/customer-engagement/sales-enterprise/set-up-product-catalog-walkthrough.md)   
- [Create price lists and price list items to define pricing of products](/dynamics365/customer-engagement/sales-enterprise/create-price-lists-price-list-items-define-pricing-products.md)   
- [Set up a discount list](/dynamics365/customer-engagement/sales-enterprise/set-up-discount-list.md)   
- [Create product bundles to sell multiple items together](/dynamics365/customer-engagement/sales-enterprise/create-product-bundles-sell-multiple-items-together.md)   
- [Use properties to describe a product](/dynamics365/customer-engagement/sales-enterprise/use-properties-describe-product.md)  
- [Administrator and Sales Manager Guide](/dynamics365/customer-engagement/sales-enterprise/admin-guide.md)  
+ [Set up a product catalog: Walkthrough](https://docs.microsoft.com/dynamics365/sales-enterprise/set-up-product-catalog-walkthrough)   
+ [Define product pricing with price lists and price list items](https://docs.microsoft.com/dynamics365/sales-enterprise/create-price-lists-price-list-items-define-pricing-products)   
+ [Set up a discount list](https://docs.microsoft.com/dynamics365/sales-enterprise/set-up-discount-list)   
+ [Set up product bundles to sell multiple items together](https://docs.microsoft.com/dynamics365/sales-enterprise/create-product-bundles-sell-multiple-items-together)   
+ [Use properties to describe a product](https://docs.microsoft.com/dynamics365/sales-enterprise/use-properties-describe-product)  
+ [Administrator and Sales Manager Guide](https://docs.microsoft.com/dynamics365/sales-enterprise/admin-guide)  

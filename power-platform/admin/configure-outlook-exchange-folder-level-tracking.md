@@ -51,4 +51,4 @@ Once you’ve enabled folder-level tracking, users will need to configure folder
 - Folder-level tracking for queue mailboxes is not supported.  
   
 ### See also  
- [System Settings dialog box - Email tab](/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab.md)   
+ [System Settings dialog box - Email tab](system-settings-dialog-box-email-tab.md)   

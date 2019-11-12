@@ -34,7 +34,7 @@ Follow these steps to merge data.
    > [!NOTE]
    > The master record will inherit all of the subordinate record's child records. The subordinate record will be deactivated.
 
-For more information, see [Merge duplicate records for accounts, contacts, or leads](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/merge-duplicate-records-accounts-contacts-leads).
+For more information, see [Merge duplicate records for accounts, contacts, or leads](https://docs.microsoft.com/powerapps/user/merge-duplicate-records).
 
 ## Security considerations
 
