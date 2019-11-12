@@ -144,7 +144,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
   
 - To move your tenants, environments, and data to the Australia regions, you should contact Support for additional information regarding migrating your environments. For more information, see [How do I request my environment to be moved to the Australia datacenter?](about-microsoft-cloud-australia.md#BKMK_RequestMove) [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions.  
   
-  For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/customer-engagement/admin/multiple-online-environments-tenants.md). 
+  For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/customer-engagement/admin/multiple-online-instances-tenants.md). 
   
 <a name="BKMK_RequestMove"></a> 
   
