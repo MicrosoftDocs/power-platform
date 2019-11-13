@@ -211,7 +211,7 @@ You need to have the System Administrator security role or equivalent permission
 > [!NOTE]
 > See [Create an administrative user and prevent elevation of security role privilege](https://docs.microsoft.com/dynamics365/customer-engagement/admin/prevent-elevation-security-role-privilege) for an example of how an Administrative user account can be used.
 
-1. [Create a user account](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles#BKMK_create_users) in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
+1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
     Be sure to assign a license to the account. You'll remove the license (step 6) once you've assigned the **Administrative** access mode.
   
@@ -247,7 +247,7 @@ You need to have the System Administrator security role or equivalent permission
   
  You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you’ll create a user account in Office 365 and then in model-driven apps in Dynamics 365, select the non-interactive access mode for the account.  
   
-1. [Create a user account](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles#BKMK_create_users) in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
+1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
     Be sure to assign a license to the account.  
   

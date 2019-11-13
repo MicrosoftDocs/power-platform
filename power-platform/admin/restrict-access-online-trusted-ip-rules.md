@@ -23,7 +23,7 @@ You can limit access to users with trusted IP addresses to reduce unauthorized a
   
 - A subscription to [Azure Active Directory Premium](https://www.microsoft.com/cloud-platform/azure-active-directory).  
   
-- A federated [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] tenant. See [Azure AD conditional access and federated authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/overview#azure-ad-conditional-access-and-federated-authentication).
+- A federated [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] tenant. See [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
   
 - Federated tenants require that multi-factor authentication (MFA) be enabled.  
   

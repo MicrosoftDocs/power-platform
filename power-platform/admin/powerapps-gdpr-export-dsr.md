@@ -318,7 +318,7 @@ Users can export the personal data stored within the gateway service from the [P
 There are also PowerShell cmdlets that allow you to retrieve, manage, and delete your personal gateways. For more information, see [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238).
 
 ### Administrators
-Please refer to the **Tenant Administration** section in the [Understand on-premises data gateways for Microsoft PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-reference#tenant-level-administration) article for guidance around managing gateways for your organization.
+See [What is an on-premises data gateway?](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-reference) for guidance around managing gateways for your organization.
 
 ## Step 11: Export the user’s personal data in Power Automate
 PowerApps licenses always include Power Automate capabilities. In addition to being included in PowerApps licenses, Power Automate is also available as a standalone service. For guidance on how to respond to DSR requests for users that use the Power Automate service, see [Responding to GDPR Data Subject Requests for Power Automate](https://go.microsoft.com/fwlink/?linkid=872250).
