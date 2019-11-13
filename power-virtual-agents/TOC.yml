@@ -34,9 +34,9 @@
      href: advanced-end-user-authentication.md
    - name: Use Microsoft Power Automate
      href: advanced-flow.md
-   - name: Use Azure Bot Framework Skills (REM)
+   - name: Use Bot Framework Skills (REM)
      href: advanced-use-skills.md
-   - name: Use hand-off
+   - name: Use hand-off to live agent
      href: advanced-hand-off.md
 - name: Publish your bot
   items:
@@ -72,14 +72,13 @@
      href: configuration-end-user-authentication.md
    - name: Configure hand-off with Omnichannel
      href: configuration-hand-off-omnichannel.md
-   - name: Configure the appearance of your bot with Microsoft Bot Framework
+   - name: Configure the appearance of your bot
      href: extend-custom-canvas-connect.md
-   - name: Upload a custom canvas with Microsoft Bot Framework
+   - name: Configure your own chat canvas
      href: extend-custom-canvas-upload.md
-
-   - name: Configure Microsoft Bot Framework dispatcher
+   - name: Configure your existing Bot Framework dispatcher (REM)
      href: configuration-dispatcher.md
-   - name: Enable and configure Microsoft Bot Framework Skills (REM)
+   - name: Configure Bot Framework Skills (REM)
      href: configuration-add-skills.md
 - name: Data Subject Rights (DSR) requests under GDPR
   items:
