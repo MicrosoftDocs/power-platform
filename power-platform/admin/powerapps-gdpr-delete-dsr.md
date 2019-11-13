@@ -410,7 +410,7 @@ If you are a member of an unmanaged tenant then you will need to follow these st
 > [!NOTE]
 > Please see the [Unmanaged tenant section](#unmanaged-tenant) above to see how to detect if you are a member of an unmanaged or managed tenant.
 
-1. Navigate to the [Work and School privacy page](https://go.microsoft.com/fwlink/?linkid=87312) and sign-in with your Azure AD account.
+1. Sign in with your Azure AD account.
 
 2. Select **Close account** and follow the instructions to delete your account from your Azure AD tenant.
 
