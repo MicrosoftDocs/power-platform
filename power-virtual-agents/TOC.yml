@@ -4,15 +4,11 @@
      href: fundamentals-what-is-power-virtual-agent.md
    - name: Get started quickly with Power Virtual Agents
      href: fundamentals-get-started.md
-- name: Onboard and set up
-  items:
-   - name: Fundamentals - Environments and onboarding best practices
-     href: environments-fundamentals.md
-   - name: First-run experience
+   - name: Working with environments
      href: environments-first-run-experience.md
-- name: Authoring
+- name: Author bots and topics
   items:
-   - name: Fundamentals - Bots and topics recommendations and best practices
+   - name: Fundamentals - Authoring
      href: authoring-fundamentals.md
    - name: Create your first bot
      href: authoring-first-bot.md
@@ -24,9 +20,9 @@
      href: authoring-topic-management.md
    - name: Test your bot
      href: authoring-test-bot.md
-- name: Advanced authoring
+- name: Utilize advanced bot features
   items:
-   - name: Fundamentals - Enhancing AI intelligenc
+   - name: Fundamentals - Advanced authoring
      href: advanced-fundamentals.md
    - name: Use entities and utilize slot filling
      href: advanced-entities-slot-filling.md
@@ -42,7 +38,7 @@
      href: advanced-use-skills.md
    - name: Use hand-off
      href: advanced-hand-off.md
-- name: Bot publication
+- name: Publish your bot
   items:
    - name: Fundamentals - Publish your bot
      href: publication-fundamentals-publish-channels.md
@@ -68,7 +64,7 @@
      href: analytics-sessions.md
    - name: Analyze topic usage
      href: analytics-topic-details.md
-- name: Configuration
+- name: Configure bot features
   items:
    - name: Fundamentals - Configuration
      href: configuration-fundamentals.md
