@@ -37,6 +37,8 @@ You can display the topic details page by selecting the **Detail** link in one o
 
 >[!WARNING]
 >Need an updated image
+
+
 The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page. 
 
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:

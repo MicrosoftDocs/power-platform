@@ -23,7 +23,7 @@ Power Virtual Agents has a comprehensive set of analytics that show you the key 
 Multiple charts give you graphical views of the trends and breakdowns in your bot's topics, while AI technology highlights the topics that are having the greatest impact on your bot's performance.
 
 >[!NOTE]
-     >Please note that while your transcripts are available immediately, the analytics dashboards are updated every hour so there will be some delay before you see all data.
+>While transcripts are available immediately, the analytics dashboards are updated every hour so there will be some delay before you see all data.
 
 ## Analytics in Power Virtual Agents
 
