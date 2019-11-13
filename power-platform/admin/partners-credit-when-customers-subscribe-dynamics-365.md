@@ -115,7 +115,7 @@ Soon after you complete the sign up, you’ll be notified by email that the tria
   
 ### Request an ownership transfer  
   
-1. Contact [Customer Service and support](https://go.microsoft.com/fwlink/p/?LinkId=204189).  
+1. Contact [Support](get-help-support.md). 
   
 2. Give the customer service representative the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that was used to sign up for the subscription and the account ID number.  
   
