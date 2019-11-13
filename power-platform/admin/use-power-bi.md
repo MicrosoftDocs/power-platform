@@ -62,7 +62,7 @@ The [!INCLUDE[pn_power_bi_for_office_365_long](../includes/pn-power-bi-for-offic
   
 - [Download the Power BI Report Template for Connected Field Service](https://download.microsoft.com/download/E/B/5/EB5ED97A-A36A-4CAE-8C04-333A1E463B4F/PowerBI%20Report%20Template%20for%20Connected%20Field%20Service%20for%20Microsoft%20Dynamics%20365.pbix)  
   
-  For information about how to customize the content packs, see [Customize Power BI content packs](/dynamics365/customer-engagement/analytics/customize-power-bi-content-packs.md).  
+  For information about how to customize the content packs, see [Customize Power BI content packs](https://docs.microsoft.com/powerapps/maker/model-driven-apps/customize-power-bi-content-packs).  
   
 <a name="BPI_embed"></a>   
 ## Embed [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] visualizations on personal dashboards  

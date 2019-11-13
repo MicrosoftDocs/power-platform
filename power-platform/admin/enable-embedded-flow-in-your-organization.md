@@ -63,4 +63,4 @@ Once the Power Automate integration feature is enabled, the following privileges
    >  
  
 ### See also  
- [Create and edit web resources](/dynamics365/customer-engagement/customize/create-edit-web-resources.md)
+ [Create and edit web resources](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-web-resources)
