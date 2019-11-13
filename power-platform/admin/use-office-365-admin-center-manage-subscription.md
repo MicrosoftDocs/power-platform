@@ -101,7 +101,7 @@ More information: [Contact Technical Support](get-help-support.md)
  ![Microsoft 365 admin center manage password expiration](../admin/media/o365-admin-center-password-expiration.png "Microsoft 365 admin center manage password expiration")  
   
 > [!TIP]
->  Note the information on this page about users doing their own password reset. To enable your users to be able to reset their passwords themselves, you’ll need to purchase an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] subscription and configure it for password self-service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Self-service password reset in Azure AD: how to enable, configure, and test self-service password reset](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started#enable-users-to-reset-their-azure-ad-passwords)  
+>  Note the information on this page about users doing their own password reset. To enable your users to be able to reset their passwords themselves, you’ll need to purchase an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] subscription and configure it for password self-service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Self-service password reset in Azure AD: how to enable, configure, and test self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset)  
   
 <a name="BKMK_PasswordSelfSet"></a>   
 ## Configure self-service password reset and other settings in Azure  

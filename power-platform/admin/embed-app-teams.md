@@ -132,7 +132,7 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
 
    Replace `<App ID>` with the App ID GUID you recorded above.
 
-   Select the [scope](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope) for your app to appear in. Ensure **Can update configuration** is checked, select **Save**, and then skip to Step 10.
+   Select the [scope](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) for your app to appear in. Ensure **Can update configuration** is checked, select **Save**, and then skip to Step 10.
 
    > [!div class="mx-imgBorder"] 
    > ![Configuration URL](./media/configuration-url.png "Configuration URL")
