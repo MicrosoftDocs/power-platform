@@ -1,4 +1,4 @@
-- name: Fundamentals
+- name: Overview
   items:
    - name: What is Power Virtual Agents?
      href: fundamentals-what-is-power-virtual-agent.md
@@ -6,7 +6,7 @@
      href: fundamentals-get-started.md
    - name: Working with environments
      href: environments-first-run-experience.md
-- name: Author bots and topics
+- name: Author basic bots
   items:
    - name: Fundamentals - Authoring
      href: authoring-fundamentals.md
@@ -14,17 +14,17 @@
      href: authoring-first-bot.md
    - name: Create and edit topics
      href: authoring-create-edit-topics.md
-   - name: Work with existing template topics and system topics
+   - name: Use template topics and system topics
      href: authoring-template-topics.md
-   - name: Topic management
+   - name: Manage topics
      href: authoring-topic-management.md
    - name: Test your bot
      href: authoring-test-bot.md
-- name: Use advanced bot features
+- name: Enhance and improve your bots
   items:
    - name: Fundamentals - Advanced authoring
      href: advanced-fundamentals.md
-   - name: Use entities and utilize slot filling
+   - name: Use entities and slot filling
      href: advanced-entities-slot-filling.md
    - name: Use variables
      href: authoring-variables.md
@@ -36,23 +36,23 @@
      href: advanced-flow.md
    - name: Use Azure Bot Framework Skills (REM)
      href: advanced-use-skills.md
-   - name: Use hand-off
+   - name: Hand off to a human agent
      href: advanced-hand-off.md
-- name: Publish your bot
+- name: Publish and integrate your bots
   items:
    - name: Fundamentals - Publish your bot
      href: publication-fundamentals-publish-channels.md
    - name: Configure demo and live website publication
      href: publication-connect-bot-to-web-channels.md
-   - name: Add bot to Microsoft Teams
+   - name: Publish to Microsoft Teams
      href: publication-add-bot-to-microsoft-teams.md
-   - name: Add bot to Facebook
+   - name: Publish to Facebook
      href: publication-add-bot-to-facebook.md
-   - name: Add bot to mobile and custom apps
+   - name: Publish to mobile or custom apps
      href: publication-connect-bot-to-custom-application.md
-   - name: Add bot to Azure Bot Service Channels
+   - name: Publish to Azure Bot Service Channels
      href: publication-connect-bot-to-azure-bot-service-channels.md
-- name: Report on usage and bot performance
+- name: Monitor and diagnose bot performance
   items:
    - name: Fundamentals - Analysis
      href: analytics-overview.md
@@ -64,7 +64,7 @@
      href: analytics-sessions.md
    - name: Analyze topic usage
      href: analytics-topic-details.md
-- name: Configure bot features
+- name: Configure and customize your bots
   items:
    - name: Fundamentals - Configuration
      href: configuration-fundamentals.md
@@ -72,7 +72,7 @@
      href: configuration-end-user-authentication.md
    - name: Configure hand-off with Omnichannel
      href: configuration-hand-off-omnichannel.md
-   - name: Configure the appearance of your bot with Microsoft Bot Framework
+   - name: Customize the appearance of your bot with Microsoft Bot Framework
      href: extend-custom-canvas-connect.md
    - name: Upload a custom canvas with Microsoft Bot Framework
      href: extend-custom-canvas-upload.md
@@ -81,11 +81,11 @@
      href: configuration-dispatcher.md
    - name: Enable and configure Microsoft Bot Framework Skills (REM)
      href: configuration-add-skills.md
-- name: Data Subject Rights (DSR) requests under GDPR
+- name: Respond to GDPR Data Subject Rights (DSR) requests
   items:
    - name: Fundamentals - GDPR compliance
      href: gdpr-summary.md
-   - name: Requests to export and dowload data
+   - name: Requests to export and download data
      href: gdpr-export.md
    - name: Requests to delete data
      href: gdpr-delete.md
