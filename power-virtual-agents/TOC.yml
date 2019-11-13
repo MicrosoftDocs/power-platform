@@ -8,21 +8,21 @@
      href: environments-first-run-experience.md
 - name: Author bots and topics
   items:
-   - name: Fundamentals - Authoring
+   - name: Key concepts - Authoring
      href: authoring-fundamentals.md
    - name: Create your first bot
      href: authoring-first-bot.md
+   - name: Use topic lessons
+     href: authoring-template-topics.md
    - name: Create and edit topics
      href: authoring-create-edit-topics.md
-   - name: Work with existing template topics and system topics
-     href: authoring-template-topics.md
    - name: Topic management
      href: authoring-topic-management.md
    - name: Test your bot
      href: authoring-test-bot.md
-- name: Use advanced bot features
+- name: Use rich bot authoring features
   items:
-   - name: Fundamentals - Advanced authoring
+   - name: Key concepts - Rich authoring
      href: advanced-fundamentals.md
    - name: Use entities and utilize slot filling
      href: advanced-entities-slot-filling.md
@@ -36,11 +36,11 @@
      href: advanced-flow.md
    - name: Use Azure Bot Framework Skills (REM)
      href: advanced-use-skills.md
-   - name: Use hand-off
+   - name: Trigger hand off to a live human agent
      href: advanced-hand-off.md
 - name: Publish your bot
   items:
-   - name: Fundamentals - Publish your bot
+   - name: Key concepts - Publish your bot
      href: publication-fundamentals-publish-channels.md
    - name: Configure demo and live website publication
      href: publication-connect-bot-to-web-channels.md
@@ -54,7 +54,7 @@
      href: publication-connect-bot-to-azure-bot-service-channels.md
 - name: Report on usage and bot performance
   items:
-   - name: Fundamentals - Analysis
+   - name: Key concepts - Analysis
      href: analytics-overview.md
    - name: Analyze bot performance and usage
      href: analytics-summary.md
@@ -66,24 +66,23 @@
      href: analytics-topic-details.md
 - name: Configure bot features
   items:
-   - name: Fundamentals - Configuration
+   - name: Key concepts - Configuration
      href: configuration-fundamentals.md
    - name: Configure end-user authentication
      href: configuration-end-user-authentication.md
-   - name: Configure hand-off with Omnichannel
+   - name: Configure hand-off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
    - name: Configure the appearance of your bot with Microsoft Bot Framework
      href: extend-custom-canvas-connect.md
    - name: Upload a custom canvas with Microsoft Bot Framework
      href: extend-custom-canvas-upload.md
-
    - name: Configure Microsoft Bot Framework dispatcher
      href: configuration-dispatcher.md
    - name: Enable and configure Microsoft Bot Framework Skills (REM)
      href: configuration-add-skills.md
 - name: Data Subject Rights (DSR) requests under GDPR
   items:
-   - name: Fundamentals - GDPR compliance
+   - name: Key concepts - GDPR compliance
      href: gdpr-summary.md
    - name: Requests to export and dowload data
      href: gdpr-export.md
