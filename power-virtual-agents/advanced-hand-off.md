@@ -1,5 +1,5 @@
 ---
-title: "Trigger contextual hand-off to a human agent"
+title: "Use hand-off to live agent"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
 ms.date: 11/04/2019
 ms.service:
@@ -13,11 +13,11 @@ ms.collection: virtual-agent
 ms.custom: handoff
 ---
 
-# Trigger hand-off to a live agent
+# Use hand-off to live agent
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-With Power Virtual Agents, you can hand off conversations to live agents seamlessly and contextually.
+With Power Virtual Agents, you can hand-off conversations to live agents seamlessly and contextually.
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
@@ -50,7 +50,7 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 >Conversations that reach this node will be marked as **Escalated** sessions in [reporting analytics](getting-started-analytics.md).
 
 
-**Add a **Transfer to agent** node into the topic:**
+**Add a **Transfer to agent** node into a topic:**
 
 1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
 
@@ -83,9 +83,9 @@ The following table lists the context variables available by default.
 | `va_Topics` | Helps ramp-up a live agent | `[ "Greetings", "Store Hours", "Return Item" ]` |
 | `va_LastPhrases` | Helps route escalation to a live agent and helps ramp-up a live agent | `"Can I return my item"` |
 | `va_Phrases` | Helps ramp-up a live agent | `["Hi", "When does store open", "Can I return my item" ] ` |
-| `va_ConversationId` | None | GUID |
+| `va_ConversationId` | None | `GUID` |
 | `va_AgentMessage` | Helps ramp-up a live agent | `"Got a gift from: HandoffTest"` |
-| `va_BotId` | None | GUID |
+| `va_BotId` | None | `GUID` |
 | `va_Language` | Helps route escalation to a live agent | `"en-us"` |
 | All [user-defined topic variables](how-to-variables.md) | Helps ramp-up a live agent | `@StoreLocation = "Bellevue"` |
 
