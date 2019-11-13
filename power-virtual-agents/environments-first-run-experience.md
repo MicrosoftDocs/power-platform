@@ -45,6 +45,16 @@ An environment is a space to store, manage and share your organization's busines
 
 3. Specify the details of the database **Create database** and click **Save**
 
+## Create a bot in an existing environment
+To create a bot in an existing environments, select it from the drop-down when creating a bot.
+
+![Select environment](media/select_environment_onboarding.png)
+
+### Creating a bot in an existing environment to which user doesn't have access
+In order to create a bot in an existing environment (let's call it Environemnt A) to which you don't have access, you need to follow the below steps.
+1. Ask a system administrator of Environment A to create a bot in the environment (this will install the Power Virtual Agents solutions)
+2. The system administrator of Environment A needs to assign a CDS role of "bot author" to you in the environment. Learn how to [assign a role](https://docs.microsoft.com/en-us/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user)
+3. Visit Power Virtual Agents app, select Environment A and create a bot
 
 ## Trial environments
 
