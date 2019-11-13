@@ -36,9 +36,9 @@
      href: advanced-create-topics-from-web.md
    - name: Use end-user authentication
      href: advanced-end-user-authentication.md
-   - name: Use Microsoft Flow
+   - name: Use Microsoft Power Automate
      href: advanced-flow.md
-   - name: Use Microsoft Bot Framework Skills
+   - name: Use Azure Bot Framework Skills
      href: advanced-use-skills.md
    - name: Use hand-off
      href: advanced-hand-off.md

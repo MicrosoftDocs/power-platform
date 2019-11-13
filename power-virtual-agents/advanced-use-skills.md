@@ -1,59 +1,55 @@
 ---
-title: "Author dialogs with conversational Skills"
-description: "Author complex dialogs by leveraging conversational skills. Skills extend your bots's conversational capabilities by automating a series of actions within a topic. They enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
+title: "Add Skills to Power Virtual Agents bot conversations"
+description: "Author complex bot conversations with Azure Bot Framework Skills that enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "authoring, extensibility, integration, extend bot, bot framework, skills, custom capabilities"
-ms.date: 09/04/2019
+ms.date: 11/12/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "VA"
+ms.custom: 
 ms.collection: virtualagent
 ---
 
 
-# How to use Skills to extend your virtual agent
-Power Virtual Agents offers a no-cliff bot building experience to users. Using Skills, we allow customers and partners to extend a bot's existing conversational capabilities by adding conversational actions within any topic. Using skills, you can embed re-usable converational multi-turn actions to perform complex tasks like book an appointment, manage tasks, and more.
+# Use Azure Bot Framework Skills in Power Virtual Agents
 
-## Pre-requisites
-* [Create a virtual agent](link to trial or homepage)
-* [Create a new Skill](link to Bot Fx. create a skill page)
-* [Add a new skill to your bot](#link to configuration page)
+Azure Bot Framework Skills can be used in your Power Virtual Agents bots to add conversational actions within any topic. For example, you can embed re-usable converational multi-turn actions to perform complex tasks like booking appointments, managing tasks, and more.
+
+To use Skills, you'll need to [create them with the Azure Bot Builder](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0), and you'll need to [configure and add the Skill in Power Virtual Agents](configuration-add-skills.md)
 
 ## Steps
-Once you've created your virtual agent, built a Skill and added the Skill to your bot, you are ready to use Skill actions as part of your conversation dialog.
+Once you've created your virtual agent, built a Skill and added the Skill to your bot, you are ready to use Skill actions as part of your bot conversation.
 
 ### Add Skill into a conversation
-* Open a new or existing topic that you would like to use your added Skill for
 
-* In the topic's authoring canvas, add the Skill node by click on (+) --> **Call an action** and click on the Skill action that you would like to add
+
+1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
+
+1. Open the authoring canvas for the topic you want to call a flow from.
+
+1. Select the plus (**+**) icon underneath an existing node to add a new node. 
+
+    ![Screenshot of adding a node](media/handoff-add-node.png)
+
+1. In the node selection window, select **Call an action**, and then select the Skill you want to add. 
 
 (IMAGE SHOWING ACTION PICKER)
+>[!WARNING]
+>Please provide image
 
-* If your Skill has inputs, assign variables to those inputs.
+1. If your Skill has inputs, assign variables to those inputs. Also, if your Skill emits outputs to variables, you can use those variables in any nodes that follow. 
 
-* If your Skill emits output, you can use those variables in nodes that follow.
+1. Select **Save** to persist your changes to the topic.
 
-* Click on **Save** to persist your changes to the topic.
+>[!NOTE]
+>Skills can accept simple data types (integer, boolean, string) and complex data types (as JSON strings). 
+>If you need to extract variables from complex data types, you must [use Power Automate](advanced-flow.md) to further parse and break down complex JSON strings into key value pairs for use in your bot.
 
-See note below for [supported simple and complex data types](#href to section below).
+1. You should [test your bot](authoring-test-bot.md) to make sure it's using the Skill properly.
 
-### Test dialog with Skill
-Once you have saved your Skill, you can test Skills using the test canvas.
 
-* Open the test canvas and trigger the topic using a trigger phrase for the topic you added the Skill in.
 
-* Test if the Skill is performing as it should.
-
-(IMAGE SHOWING TESTING SKILLS WITH TRACING)
-
-## Troubleshooting steps
-
-### Support for simple and complex data types
-Skills can accept simple types (integer, boolean, string) and complex data types as JSON strings. If you need to extract variables from complex, you must use Flow to further parse and break down complex JSON strings into key value pairs for use in your bot.
-
-## References
-* [No-cliff development with Skills](link to Pawan's blog post)
 
