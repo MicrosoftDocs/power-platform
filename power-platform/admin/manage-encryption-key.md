@@ -141,6 +141,10 @@ To perform this task using PowerShell, see [Get-CRMGenerateProtectionkey](/power
 
 To perform this task using PowerShell, see [New-CRMImportProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/new-crmimportprotectionkey?view=dynamics365ce-ps) and [Set-CrmTenantProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmtenantprotectionkey?view=dynamics365ce-ps).
 
+> [!NOTE]
+> To reduce the number of steps for the administrator to manage the key process, the key is automatically activated when it is uploaded the first time. All subsequent key uploads require an additional step to activate the key.
+
+
 ### Activate an encryption key for a tenant
 Once an encryption key is generated or uploaded for the tenant, it can be activated. 
 
