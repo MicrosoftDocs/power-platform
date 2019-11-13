@@ -87,4 +87,4 @@ An environment will show up in your picker if you meet one of the following cond
 
 
 ### See also
-[Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/power-platform/create-manage-environments)
+[Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/modules/create-manage-environments/)

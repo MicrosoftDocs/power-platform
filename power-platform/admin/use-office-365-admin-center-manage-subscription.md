@@ -43,7 +43,7 @@ search.app:
   
  ![Dynamics 365 option on the Microsoft 365 admin center menu](../admin/media/o365-admin-center-crm.png "Dynamics 365 option on the Microsoft 365 admin center menu")  
   
- Choose the **environments** tab to edit, copy, and reset, existing environments, configure new environments, manage preferred solutions, and more. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage environments](/dynamics365/customer-engagement/admin/manage-online-instances.md)  
+ Choose the **environments** tab to edit, copy, and reset, existing environments, configure new environments, manage preferred solutions, and more. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Environments overview](environments-overview.md)
   
  ![Dynamics 365 Administration Center environments tab](../admin/media/crm-admin-center-instances.png "Dynamics 365 Administration Center environments tab")  
   
