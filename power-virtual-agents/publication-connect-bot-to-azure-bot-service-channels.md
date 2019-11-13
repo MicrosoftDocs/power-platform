@@ -9,7 +9,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication"
+ms.custom: "publication, azure"
 ms.collection: virtualagent
 ---
 
