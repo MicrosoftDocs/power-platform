@@ -6,7 +6,7 @@
      href: fundamentals-get-started.md
    - name: Working with environments
      href: environments-first-run-experience.md
-- name: Author basic bots
+- name: Author and edit
   items:
    - name: Fundamentals - Authoring
      href: authoring-fundamentals.md
@@ -20,7 +20,7 @@
      href: authoring-topic-management.md
    - name: Test your bot
      href: authoring-test-bot.md
-- name: Enhance and improve your bots
+- name: Enhance and improve
   items:
    - name: Fundamentals - Advanced authoring
      href: advanced-fundamentals.md
@@ -38,12 +38,12 @@
      href: advanced-use-skills.md
    - name: Hand off to a human agent
      href: advanced-hand-off.md
-- name: Publish and integrate your bots
+- name: Publish and integrate
   items:
    - name: Fundamentals - Publish your bot
      href: publication-fundamentals-publish-channels.md
-   - name: Configure demo and live website publication
-     href: publication-connect-bot-to-web-channels.md
+   - name: Configure publishing for demos and live websites 
+   - href: publication-connect-bot-to-web-channels.md
    - name: Publish to Microsoft Teams
      href: publication-add-bot-to-microsoft-teams.md
    - name: Publish to Facebook
@@ -52,9 +52,9 @@
      href: publication-connect-bot-to-custom-application.md
    - name: Publish to Azure Bot Service Channels
      href: publication-connect-bot-to-azure-bot-service-channels.md
-- name: Monitor and diagnose bot performance
+- name: Monitor and diagnose
   items:
-   - name: Fundamentals - Analysis
+   - name: Fundamentals - Analytics
      href: analytics-overview.md
    - name: Analyze bot performance and usage
      href: analytics-summary.md
@@ -64,7 +64,7 @@
      href: analytics-sessions.md
    - name: Analyze topic usage
      href: analytics-topic-details.md
-- name: Configure and customize your bots
+- name: Configure and customize 
   items:
    - name: Fundamentals - Configuration
      href: configuration-fundamentals.md
