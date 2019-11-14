@@ -19,10 +19,7 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 **Create your first bot:**
 
-1. Go to [https://aka.ms/virtual-agent](https://aka.ms/TryPVA) and select **Try Preview**. Sign in using your work account.
-
->[!WARNING]
->Can we get a fwlink? Better for SEO and loc apparently.
+1. Go to [Power Vrtual Agents marketing page](https://go.microsoft.com/fwlink/?linkid=2106332) and select **Try Preview**. Sign in using your work account.
 
    If you don't have a license, you can sign up for one by following the prompts.
     
@@ -59,8 +56,8 @@ In this case, you see this error: "You do not have permissions to any environmen
 
 You will need to [create a new environment](environments-first-run-experience.md). Use that environment to create your bot.
 
-### The environment I created does not show up in the drop-down menu of Virtual Agent
+### The environment I created does not show up in the drop-down menu of Power Virtual Agents
 
 Your environment might not show up in the drop-down menu due to one of the following:
- - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](environments-first-run-experience#create-an-environment).
+ - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](environments-first-run-experience.md#create-an-environment).
  - The environment is created in an unsupported region. Learn more about [supported data locations](data-location.md).
