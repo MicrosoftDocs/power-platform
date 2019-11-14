@@ -152,7 +152,7 @@ Once the copy process is complete, the target environment is placed in [Administ
     - Outgoing Email  
     - Appointments, Contacts, Tasks  
   
-  More information: [Set the delivery method for incoming and outgoing email](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks)  
+  More information: [Set the delivery method for incoming and outgoing email](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)  
   
 - **SharePoint**. Deactivate or redirect SharePoint to a sandbox SharePoint environment to prevent impacting documents managed by SharePoint. Go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then click **Deactivate**.  
   

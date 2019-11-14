@@ -74,16 +74,16 @@ PowerApps and Power Automate capacity add-on allows customers to purchase additi
 
 Each capacity add-on provides an additional 10,000 requests/24 hours which can be assigned to any user. Multiple capacity add-ons can also be assigned to the same user.
 
-## Non-licensed users/application users/Users with special free licenses
+## Non-licensed users/application users/Users with special free licenses 
 
 Common Data Service also provides the ability to have identities that do not require any user license to interact with the service. There are three types of
 these users:
 
--   [Application users](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles#create-an-application-user)
+-   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
 
--   [Non-interactive users](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles#create-a-non-interactive-user-account)
+-   [Non-interactive users](create-users-assign-online-security-roles.md#create-a-non-interactive-user-account)
 
--   [Administrative users](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles#create-an-administrative-user-account).
+-   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account). 
 
 Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 

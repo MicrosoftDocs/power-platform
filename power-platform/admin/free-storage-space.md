@@ -43,7 +43,7 @@ Use the following methods to free storage for each of the capacity types.
 |     | **Method 6**: Remove notes with attachments using a bulk deletion job        |
 |**Log**     |         |
 |     | **Method 10**: Delete audit logs        |
-|     | Delete plug-in trace logs using a [bulk deletion job](https://docs.microsoft.com/dynamics365/customer-engagement/admin/delete-bulk-records) |
+|     | Delete plug-in trace logs using a [bulk deletion job](delete-bulk-records.md) |
 |**Database**     |         |
 |     | **Method 1**: Delete bulk email and workflow environments using a bulk deletion job        |
 |     | **Method 2**: Evaluate and delete suspended workflows        |

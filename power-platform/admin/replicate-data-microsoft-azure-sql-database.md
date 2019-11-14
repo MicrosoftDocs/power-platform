@@ -281,7 +281,7 @@ For information about the programmatic interface for managing configuration and 
   
    ![Zero records failed  indication](../admin/media/data-export-failed-records-zero.PNG "Zero records failed  indication")  
   
-4.  If the record synchronization failures persist after you've tried resynchronizing by following the previous steps, contact [Microsoft Customer Support Services](https://docs.microsoft.com/dynamics365/customer-engagement/admin/contact-technical-support).  
+4.  If the record synchronization failures persist after you've tried resynchronizing by following the previous steps, contact [Microsoft Customer Support Services](get-help-support.md).  
   
 <a name="error_handling"></a>   
 ## Error handling and monitoring  
