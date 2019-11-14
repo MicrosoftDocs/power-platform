@@ -10,7 +10,14 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Power Virtual Agents overview
+
+
+# PLACEHOLDER
+
+This page will have Omar's blog content once it is finalized.
+
+## Power Virtual Agents Preview overview
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -60,6 +67,7 @@ Using Power Virtual Agents, you can:
 [Creating custom topics for your bot](getting-started-create-topics.md)
 
 [Deploying your bot](getting-started-deploy.md)
+
 
 [Using analytics to improve your bot](getting-started-analytics.md)
 

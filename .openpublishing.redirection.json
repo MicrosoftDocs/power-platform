@@ -122,7 +122,7 @@
     },
     {
       "source_path": "power-virtual-agents/how-to-use-dispatcher.md",
-      "redirect_url": "configuration-dispatcher",
+      "redirect_url": "index",
       "redirect_document_id": "true"
 
     }

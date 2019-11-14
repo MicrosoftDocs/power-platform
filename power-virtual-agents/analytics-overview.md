@@ -12,7 +12,7 @@ ms.cusom: analysis
 ms.collection: virtual-agent
 ---
 
-# Fundamentals - Analysis in Power Virtual Agents
+# Analysis in Power Virtual Agents
 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
@@ -21,6 +21,9 @@ ms.collection: virtual-agent
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 
 Multiple charts give you graphical views of the trends and breakdowns in your bot's topics, while AI technology highlights the topics that are having the greatest impact on your bot's performance.
+
+>[!NOTE]
+>While transcripts are available immediately, the analytics dashboards are updated every hour so there will be some delay before you see all data.
 
 ## Analytics in Power Virtual Agents
 

@@ -13,7 +13,7 @@ ms.custom: "publication, fundamentals"
 ms.collection: virtual-agent
 ---
 
-# Fundamentals - Publish your bot
+# Publish your bot
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
