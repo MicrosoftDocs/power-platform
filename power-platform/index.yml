@@ -18,7 +18,7 @@ metadata:
 additionalContent:
   # Supports up to 3 sections
   sections:
-      items:
+    - items:
         - title: Power BI
           links:
           - url: https://docs.microsoft.com/power-bi/
