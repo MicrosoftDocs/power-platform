@@ -15,44 +15,32 @@ metadata:
   ms.date: 10/29/2019 #Required; mm/dd/yyyy format.
   hide_bc: false
 
-# productDirectory section (optional)
-productDirectory:
-  items:
-    # Card
-    - title: Power BI
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ''
-      links:
-        - url: https://docs.microsoft.com/power-bi/
-          text: Documentation
-        - url: https://docs.microsoft.com/en-us/learn/browse/?products=power-bi
-          text: Learn Power BI
-    # Card
-    - title: PowerApps
-      imageSrc: ''
-      links:
-        - url: https://docs.microsoft.com/powerapps
-          text: Documentation
-        - url: https://docs.microsoft.com/en-us/learn/browse/?products=powerapps
-          text: Learn PowerApps
-    # Card
-    - title: Power Automate
-      imageSrc: ''
-      links:
-        - url: https://docs.microsoft.com/power-automate/
-          text: Documentation
-        - url: https://docs.microsoft.com/en-us/learn/browse/?products=flow
-          text: Learn Power Automate
-     # Card
-    - title: Power Virtual Agents
-      imageSrc: ''
-      links:
-        - url: https://docs.microsoft.com/power-virtual-agents/
-          text: Documentation
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Related features
+      items:
+        - title: Power BI
+          links:
+          - url: https://docs.microsoft.com/power-bi/
+            text: Documentation
+          - url: https://docs.microsoft.com/en-us/learn/browse/?products=power-bi
+            text: Learn Power BI
+        - title: PowerApps
+          links:
+          - url: https://docs.microsoft.com/powerapps
+            text: Documentation
+          - url: https://docs.microsoft.com/en-us/learn/browse/?products=powerapps
+            text: Learn PowerApps
+        - title: Power Automate
+          links:
+          - url: https://docs.microsoft.com/power-automate/
+            text: Documentation
+          - url: https://docs.microsoft.com/en-us/learn/browse/?products=flow
+            text: Learn Power Automate
+        - title: Power Virtual Agents
+          links:
+          - url: https://docs.microsoft.com/power-virtual-agents/
+            text: Documentation    - title: Related features
       items:
         # Card
         - title: Common Data Service
