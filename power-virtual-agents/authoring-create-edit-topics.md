@@ -36,19 +36,21 @@ You can see how the bot conversation works in practice by testing it in the **Te
 
    ![Select Topics on the side navigation menu](media/topics-menu.png)
 
-2. On the Topics page, select **New topic**.
+1. On the Topics page, select **New topic**.
 
    ![Select New topic at the top of the Topics page](media/topics-new.png)
 
    ![Select New topic at the top of the Topics page](media/topics-new-2.png)
 
-3. Specify a name, description, and one or more trigger phrases for the topic.
+1. Specify a name, description, and one or more trigger phrases for the topic.
 
-    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
+   A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
 
-    Select **Save topic** to add the topic to the topics list.
+   ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers.png)
 
-<<< INCLUDE IMAGE OF TOPIC DETAILS PAGE WITH SAVE HIGHLIGHTED >>>
+1. Select **Save topic** to add the topic to the topics list.
+
+   ![The Save topic button is at the top of the Topic details page](media/topics-details-save.png)
 
 
 ## To design the topic's conversation path
