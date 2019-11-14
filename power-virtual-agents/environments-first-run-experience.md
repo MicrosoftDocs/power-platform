@@ -28,7 +28,7 @@ You can use environments for a number of different scenarios, such as :
 
 ## Create an environment
 
-1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work or school account.
+1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work account.
 
 1. Go to the **Environments** tab and select **+ New** to open the **New environment** panel.
 
