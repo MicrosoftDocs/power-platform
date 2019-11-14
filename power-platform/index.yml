@@ -40,7 +40,8 @@ additionalContent:
         - title: Power Virtual Agents
           links:
           - url: https://docs.microsoft.com/power-virtual-agents/
-            text: Documentation    - title: Related features
+            text: Documentation
+    - title: Related features
       items:
         # Card
         - title: Common Data Service
