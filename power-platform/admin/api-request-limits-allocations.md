@@ -46,7 +46,7 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | PowerApps per user plan                                  | 5,000                                                                                                                                         |
 | Power Automate per user plan                             | 5,000                                                                                                                                         |
 | Office licenses (that include PowerApps/Power Automate)  | 2,000                                                                                                                                         |
-| Application user / Non-interactive users                 | [See section below](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users) |
+| Application user / Non-interactive users                 | See *Non-licensed user* section below |
 
 
 <sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent.

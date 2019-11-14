@@ -61,7 +61,7 @@ One of the main reasons people use model-driven apps in Dynamics 365, such as Dy
  [Microsoft Dynamics CRM: How it works documentation ](https://www.microsoft.com/download/details.aspx?id=48718) 
  [Integrate your email system using server-side synchronization](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
  [Troubleshooting and monitoring server-side synchronization issues](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
- [Deploy Dynamics 365 App for Outlook](/dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook.md)   
+ [Deploy Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook)   
 
  
  
