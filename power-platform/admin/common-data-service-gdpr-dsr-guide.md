@@ -125,7 +125,7 @@ To find a user and his or her personal data, go to the [PowerApps Admin center](
     ![PowerApps User Form](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
 
 #### Audit history
-When [audit tracking](https://docs.microsoft.com/dynamics365/customer-engagement/admin/audit-data-user-activity) is enabled for an entity in Common Data Service, a user's personal data is logged in the audit history along with the actions that the user performs.
+When [audit tracking](audit-data-user-activity.md) is enabled for an entity in Common Data Service, a user's personal data is logged in the audit history along with the actions that the user performs.
 
 ### Rectify
 If a data subject asks you to rectify the personal data that resides in your organization’s data, you and your organization must determine whether it’s appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
@@ -201,7 +201,7 @@ From the [PowerApps Admin center](https://admin.powerapps.com/), do the followin
 
 3. Go to **Settings** > **Security** > **Users**, and then select **Disabled Users View**.
 
-4. Create and download an Excel template file from the user's personal data. For step-by-step instructions, see [Create a new Excel template](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template).
+4. Create and download an Excel template file from the user's personal data. For step-by-step instructions, see [Create a new Excel template](analyze-your-data-with-excel-templates.md#create-a-new-excel-template).
 
 8. Open the downloaded Excel template file, remove the user's personal data, and then save the file.
 

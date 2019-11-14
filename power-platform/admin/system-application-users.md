@@ -25,7 +25,7 @@ Most of these users are hidden from user views but they can be found by using th
 |---------|---------|---------|---------|---------|
 |System     | SYSTEM  | n/a        | See below         | n/a |
 |     | Support user     |crmoln@microsoft.com          |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support  |Support user (does not have privilege to customer data)    |
-|    | Delegated admin        |crmoln2@microsoft.com          |See [For partners: the Delegated admin](https://docs.microsoft.com/dynamics365/customer-engagement/admin/for-partners-delegated-administrator)        |System admin |
+|    | Delegated admin        |crmoln2@microsoft.com          |See [For partners: the Delegated admin](for-partners-delegated-administrator.md)        |System admin |
 |Application     | Business Application Platform Service account |bap_sa@microsoft.com   |To setup PowerApps system and configurations |System admin   |
 |    | PowerApps Checker Application        | Pacheckerapp@microsoft.com         |To perform static analysis of PowerApps solutions to assist in identifying performance and stability risks |Export customization and Solution checker   |
 

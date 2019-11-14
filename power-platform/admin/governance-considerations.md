@@ -233,7 +233,7 @@ The means by which software is developed, validated and deployed to a production
 
 1.	For canvas apps, versioning is built-in the service and any maker can restore an app to a preview version. See [https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app](https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app).
 2.	For Microsoft Flows, we use the export feature to download the flow as a .zip package and archive the package.
-3.	For all Common Data Service components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](https://docs.microsoft.com/dynamics365/customer-engagement/admin/backup-restore-environments).
+3.	For all Common Data Service components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](backup-restore-environments.md).
 -->
 
 

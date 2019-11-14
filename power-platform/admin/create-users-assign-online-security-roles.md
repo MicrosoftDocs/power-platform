@@ -17,7 +17,7 @@ search.app:
 ---
 # Create users and assign security roles
 
-You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. In addition to registration with the online service, the user account must be assigned a license in order for the user to have access to the service. Note that when you assign a user the global administrator or the service administrator role in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], it automatically assigns the user the System Administrator security role. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Differences between the Microsoft Online services environment administrative roles and security roles](https://docs.microsoft.com/dynamics365/customer-engagement/admin/grant-users-access#BKMK_O365CRMroles)  
+You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. In addition to registration with the online service, the user account must be assigned a license in order for the user to have access to the service. Note that when you assign a user the global administrator or the service administrator role in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], it automatically assigns the user the System Administrator security role. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Differences between the Microsoft Online services environment administrative roles and security roles](grant-users-access.md#BKMK_O365CRMroles)  
 
 ## Create a user account  
  When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You have the option to let the service send an email message to the user as clear text. Although the password is temporary, you may consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] user account, see [Create or edit users in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=255286).  
@@ -92,7 +92,7 @@ The following are Office 365 user contact fields.
   
  Security roles are associated with business units. If you have created business units, only those security roles associated with the business unit are available for the users in the business unit. You can use this feature to limit data access to only data owned by the business unit.  
   
- For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](https://docs.microsoft.com/dynamics365/customer-engagement/admin/grant-users-access).  
+ For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
   
 > [!IMPORTANT]
 >  You must assign at least one security role to every user. The service does not allow access to users who do not have at least one security role. Even if a user is a member of a team with its own security privileges, the user won’t be able to see some data and may experience other problems when trying to use the system.  
@@ -209,7 +209,7 @@ An Administrative user is a user who has access to the Settings and Administrati
 You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you’ll create a user account in Office 365 and then in model-driven apps in Dynamics 365, select the **Administrative** access mode for the account.
 
 > [!NOTE]
-> See [Create an administrative user and prevent elevation of security role privilege](https://docs.microsoft.com/dynamics365/customer-engagement/admin/prevent-elevation-security-role-privilege) for an example of how an Administrative user account can be used.
+> See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md) for an example of how an Administrative user account can be used.
 
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   

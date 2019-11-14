@@ -54,6 +54,6 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
 4. Select **OK**.  
   
 ### See also  
- [Set up duplicate detection rules to keep your data clean](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean)   
- [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Microsoft Outlook](https://docs.microsoft.com/dynamics365/customer-engagement/admin/frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook)   
- [Run bulk system jobs to detect duplicate records](https://docs.microsoft.com/dynamics365/customer-engagement/admin/run-bulk-system-jobs-detect-duplicate-records)
+ [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md)   
+ [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
+ [Run bulk system jobs to detect duplicate records](run-bulk-system-jobs-detect-duplicate-records.md)

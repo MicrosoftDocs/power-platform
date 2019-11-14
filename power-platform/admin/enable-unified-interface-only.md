@@ -120,7 +120,7 @@ This setting is preset to Off for your environment, and you are unaffected by th
 
 ### I want to use Unified Interface for all the apps, but still want *Dynamics 365 – custom* to open in the legacy web client. Is that possible?
 
-You can achieve this by [setting all apps to be Unified Interface apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/update-apps-to-unified-interface). Note that this won't change the home page experience to Unified Interface. Unified Interface Only mode is a prerequisite to get the [new home page experience](#new-immersive-home-page-experience-on-web).
+You can achieve this by [setting all apps to be Unified Interface apps](update-apps-to-unified-interface.md). Note that this won't change the home page experience to Unified Interface. Unified Interface Only mode is a prerequisite to get the [new home page experience](#new-immersive-home-page-experience-on-web).
 
 ### How do I resolve errors seen while using a *Dynamics 365 - custom* legacy app in Unified Interface?
 If there are issues with Unified Interface, [please let us know](https://docs.microsoft.com/power-platform/admin/get-help-support).

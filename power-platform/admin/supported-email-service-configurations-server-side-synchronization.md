@@ -58,11 +58,11 @@ Depending on your model-driven apps in Dynamics 365, such as Dynamics 365 Sales 
 - Server-side synchronization in model-driven apps in Dynamics 365 requires a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail.  
 - Multi-factor authentication isn’t supported for model-driven apps in Dynamics 365 to Exchange Server (on-premises), and Customer Engagement (on-premises) to Exchange Online.
   
-For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](https://docs.microsoft.com/dynamics365/customer-engagement/admin/integrate-synchronize-your-email-system)  
+For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](integrate-synchronize-your-email-system.md)  
   
 > [!NOTE]
 >  We recommend that you don’t use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated data not synchronizing to all attendees.  
   
 ### See also  
- [Server-side synchronization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/server-side-synchronization)   
- [Set up server-side synchronization of email, appointments, contacts, and tasks](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks)
+ [Server-side synchronization](server-side-synchronization.md)   
+ [Set up server-side synchronization of email, appointments, contacts, and tasks](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)

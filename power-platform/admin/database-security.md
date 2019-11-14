@@ -82,7 +82,7 @@ The environment might maintain the records which can be used by multiple apps, y
 - Some of the users (Type A) might only need to read, update, and attach other records so their security role will have read, write, and append privileges.
 - Other users might need all the privileges that users of Type A has, plus the ability to create, append to, delete, and share, so their security role will have create, read, write, append, delete, assign, append to, and share privileges.
 
-For more information about access and scope privileges, see [Security roles](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles).
+For more information about access and scope privileges, see [Security roles](security-roles-privileges.md#security-roles).
 
 1. In [PowerApps Admin center][1] select the environment where you want to update a security role.
 
@@ -121,7 +121,7 @@ Start by downloading the solution from the Download Center: [Common Data Service
 
 Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 
-When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-security-role#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
+When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](create-edit-security-role.md#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
 
 > [!IMPORTANT]
 > You should try out the solution in a development environment before importing into a production environment. 
