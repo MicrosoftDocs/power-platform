@@ -19,7 +19,7 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 **Create your first bot:**
 
-1. Go to [aka.ms/virtual-agent](https://aka.ms/TryPVA) and select **Try Preview**. Sign in using your work account.
+1. Go to [https://aka.ms/virtual-agent](https://aka.ms/TryPVA) and select **Try Preview**. Sign in using your work account.
 
 >[!WARNING]
 >Can we get a fwlink? Better for SEO and loc apparently.
@@ -47,7 +47,7 @@ You can navigate to some tabs during this period, after which the banner will ch
 
 If you have already created a bot, you can create a new bot by selecting the icon on the title bar to open the **Bots** pane and then selecting **New bot**.
 
-   ![New bot icon in title bar](media/first-bot-new.png)
+   ![New bot icon in title bar](media/new-bot-icon.png)
 
 ## Known issues with creating a bot
 
