@@ -62,15 +62,15 @@ Teams are another important security building block. Teams are owned by a Busine
 
 Individual records can be shared on a one by one basis with another user. This is a powerful way of handling exceptions that don’t fall into the record ownership or member of a business unit access model. It should be an exception though because it is a less performant way of controlling access. Sharing tougher to troubleshoot because it is not a consistently implemented access control. Sharing can be done at both the user and team level. Sharing with a team is a more efficient way of sharing. A more advanced concept of sharing is with Access Teams which provides auto creation of a team and sharing of record access with the team based on an Access Team Template (template of permissions) which is applied. Access teams can also be used without the templates, with just manual add/remove of it’s members. Access teams are more performant because they don’t allow owning records by the team or having security roles assigned to the team. Users get access because the record is shared with the team and the user is a member.
 
-### Record level security in Common Data Service
+### Record-level security in Common Data Service
 
 You might be wondering – what determines access to a record? That sounds like a simple question but for any given user it is the combination of all their security roles, the business unit they are associated with, the teams they are members of and the records that are shared with them. The key thing to remember is all access is accumulative across all those concepts in the scope of a Common Data Service database environment. These entitlements are only granted within a single database and are individual tracked in each Common Data Service database. This all of course requires they have an appropriate license to access Common Data Service.
 
-### Field Level Security in Common Data Service
+### Field-level security in Common Data Service
 
-Sometimes record level control of access is not adequate for some business scenarios. Common Data Service has a field level security feature to allow more granular control of security at the field level. Field level security can be enabled on all custom fields and most system fields. Most system fields that include personal identifiable information (PII) are capable of being individually secured. Each field’s metadata defines if that is an available option for the system field.
+Sometimes record-level control of access is not adequate for some business scenarios. Common Data Service has a field-level security feature to allow more granular control of security at the field level. Field-level security can be enabled on all custom fields and most system fields. Most system fields that include personal identifiable information (PII) are capable of being individually secured. Each field’s metadata defines if that is an available option for the system field.
 
-Field level security is enabled on a field by field basis. Access is then managed by creating a Field Security Profile. The profile contains all fields that have field level security enabled and the access granted by that specific profile. Each field can be controlled within the profile for Create, Update and Read access. Field Security Profiles are then associated with a user or Teams to grant those privileges to the users to the records they already have access to. It’s important to note that Field Level Security has nothing to do with Record Level security, a user must already have access to the record for the Field Security Profile to grant them any access to the fields. Field level security should be used as needed and not excessively as it can add overhead that is detrimental if over used.
+Field-level security is enabled on a field by field basis. Access is then managed by creating a Field Security Profile. The profile contains all fields that have field-level security enabled and the access granted by that specific profile. Each field can be controlled within the profile for Create, Update and Read access. Field Security Profiles are then associated with a user or Teams to grant those privileges to the users to the records they already have access to. It’s important to note that field-level security has nothing to do with record-level security, a user must already have access to the record for the Field Security Profile to grant them any access to the fields. Field-level security should be used as needed and not excessively as it can add overhead that is detrimental if over used.
 
 ### Managing Security Across Multiple Environments
 
@@ -82,7 +82,7 @@ Once roles, teams and business units are created in an environment it is time to
 
 In addition, you would assign any security roles that user needs. You would also add them as members of any teams. Remember teams can also have security roles, so the effective rights of the user is the combination of directly assigned security roles combined with those of any teams they are members of. Security is always additive offering the least restrictive permission of any of their entitlements. The following is a good walkthrough of [configuring environment security](database-security.md).
 
-If you have used Field Level security, you would need to associate the user or a team of the user to one of the Field Security Profiles you created.
+If you have used field-level security, you would need to associate the user or a team of the user to one of the Field Security Profiles you created.
 
 Security is a complex topic and is best accomplished as a joint effort between the application makers and the team administering the users permissions. Any major changes should be coordinated well in advance of deploying the changes into the environment.
 

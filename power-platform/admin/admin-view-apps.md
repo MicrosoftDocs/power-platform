@@ -22,11 +22,11 @@ In this topic, you'll learn how to download a list of apps created in a single e
 
 ## Prerequisites
  To follow the steps, the following items are required:
- * Either a PowerApps plan or Microsoft Flow plan. Alternatively, you can sign up for a [free PowerApps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
+ * Either a PowerApps plan or Power Automate plan. Alternatively, you can sign up for a [free PowerApps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
  * PowerApps Environment Admin, Office 365 Global Admin, or Azure Active Directory Tenant Admin permissions. For more information, see [Environments administration in PowerApps](environments-administration.md).
 
 ## Sign in to the PowerApps Admin center
-Sign in to the Admin center at [https://admin.powerapps.com]([https://admin.powerapps.com).
+Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
 
 ## Download the list of apps
 1. In the navigation pane, click or tap **Environments**, and then click or tap the environment for which you want to download the list of apps.

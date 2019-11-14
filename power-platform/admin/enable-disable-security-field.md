@@ -45,5 +45,5 @@ Field-level security lets you set which fields users can see or edit. For exampl
    -   To publish customizations for all unpublished entities at one time, in the navigation pane, click **Entities**, and then on the command toolbar, click **Publish All Customizations**.  
   
 ### See also  
- [Field level security](field-level-security.md)   
+ [Field-level security](field-level-security.md)   
  [Set up security permissions for a field](../admin/set-up-security-permissions-field.md)

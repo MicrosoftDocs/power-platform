@@ -1,12 +1,12 @@
 ---
-title: "View and reset Sandbox environments  | MicrosoftDocs"
-description: Learn about Sandbox environments ann how to reset them. 
+title: "Sandbox environments  | MicrosoftDocs"
+description: Manage Sandbox environments.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 10/19/2019
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# View and reset Sandbox environments
+# Manage Sandbox environments
 
 A Sandbox environment is any non-production environment of Common Data Service. Isolated from production, a Sandbox environment is the place to safely develop and test application changes with low risk.
 
@@ -29,6 +29,25 @@ Manage your Sandbox environments from the Power Platform Admin center.
   
    > [!div class="mx-imgBorder"] 
    > ![](media/sandbox-environments.png "Environments page")
+
+## Provision a Sandbox environment
+To provision a Sandbox environment, you change a Production environment to Sandbox.
+
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
+
+2. From the left-side menu, select **Environments**, and then select a Production environment.
+
+3. Select **Edit**
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/select-edit.png "Select Edit")
+
+4. Under **Type**, choose the Sandbox environment type. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/select-sandbox.png "Select Sandbox environment")
+
+5. Select **Save**.
 
 ## Reset a Sandbox environment  
 
@@ -83,7 +102,7 @@ The reset process starts.
 |Setting|Description|  
 |-------------|-----------------|  
 |Administration mode | Select to enable administration mode for the selected Sandbox environment. Only System Administrators or System Customizers will be able to sign in to the selected Sandbox environment.|  
-|Background operations | Select to disable all asynchronous operations (see [Asynchronous service architecture](https://docs.microsoft.com/dynamics365/customer-engagement/developer/asynchronous-service-architecture)) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. **Note:**  Administration mode must be enabled to disable background operations.|  
+|Background operations | Select to disable all asynchronous operations (see [Asynchronous service](https://docs.microsoft.com/powerapps/developer/common-data-service/asynchronous-service)) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. **Note:**  Administration mode must be enabled to disable background operations.|  
 |Custom message | Enter a message that will be displayed to all users when they attempt to sign in.|  
   
 ### Set administration mode  

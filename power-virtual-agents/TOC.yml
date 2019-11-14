@@ -1,96 +1,84 @@
 - name: Fundamentals
   items:
-   - name: What is PowerVirtualAgent?
+   - name: What is Power Virtual Agents?
      href: fundamentals-what-is-power-virtual-agent.md
-   - name: Get started quickly with PowerVirtualAgent
-     href: fundamentals-get-started-power-virtual-agent.md
-   - name: Artificial intelligence models in PowerVirtualAgent
-     href: fundamentals-ai-models-virtual-agent.md
-- name: Licensing and technical requirements
+   - name: Get started quickly with Power Virtual Agents
+     href: fundamentals-get-started.md
+   - name: Working with environments
+     href: environments-first-run-experience.md
+- name: Author bots and topics
   items:
-   - name: Fundamentals - requirements for Power VirtualAgent
-     href: requirements-fundamentals-virtual-agent.md
-   - name: Geographic requirements
-     href: requirements-geographic-virtual-agent.md
-   - name: Service-level agreement
-     href: requirements-sla-virtual-agent.md
-   - name: Licensing requirements
-     href: requirements-licensing-virtual-agent.md
-- name: Onboard and set up
-  items:
-   - name: Fundamentals - Environments and onboarding best practices
-     href: environments-fundamentals-virtual-agent.md
-   - name: First-run experience
-     href: environments-first-run-experience-virtual-agent.md
-- name: Authoring
-  items:
-   - name: Fundamentals - Bots and topics recommendations and best practices
-     href: authoring-fundamentals-virtual-agent.md
+   - name: Key concepts - Authoring
+     href: authoring-fundamentals.md
+   - name: Create your first bot
+     href: authoring-first-bot.md
+   - name: Use topic lessons
+     href: authoring-template-topics.md
    - name: Create and edit topics
-     href: authoring-create-edit-topics-virtual-agent.md
-   - name: Use variables
-     href: authoring-variables-virtual-agent.md
-   - name: Work with existing template topics and system topics
-     href: authoring-template-topics-virtual-agent.md
+     href: authoring-create-edit-topics.md
    - name: Topic management
-     href: authoring-topic-management-virtual-agent.md
+     href: authoring-topic-management.md
    - name: Test your bot
-     href: authoring-test-bot-virtual-agent.md
-- name: Advanced Authoring
+     href: authoring-test-bot.md
+- name: Use rich bot authoring features
   items:
-   - name: Fundamentals - Enhancing AI intelligenc
-     href: advanced-fundamentals-virtual-agent.md
-   - name: Use entities and utilize greedy slot filling
-     href: advanced-entities-greedy-slot-filling-virtual-agent.md
+   - name: Key concepts - Rich authoring
+     href: advanced-fundamentals.md
+   - name: Use entities and utilize slot filling
+     href: advanced-entities-slot-filling.md
+   - name: Use variables
+     href: authoring-variables.md
    - name: Create topics from existing support content on the web
-     href: advanced-create-topics-from-web-virtual-agent.md
-   - name: Create topics from Customer Service Insights
-     href: advanced-create-topics-from-csi-virtual-agent.md
+     href: advanced-create-topics-from-web.md
    - name: Use end-user authentication
-     href: advanced-end-user-authentication-virtual-agent.md
-   - name: Use Microsoft Flow
-     href: advanced-flow-virtual-agent.md
-   - name: Use Microsoft Bot Framework Skills
-     href: advanced-bot-framework-skills-virtual-agent.md
-   - name: Use hand-off
-     href: advanced-hand-off-virtual-agent.md
-- name: Bot publication
+     href: advanced-end-user-authentication.md
+   - name: Use Microsoft Power Automate
+     href: advanced-flow.md
+   - name: Use Azure Bot Framework Skills (REM)
+     href: advanced-use-skills.md
+   - name: Trigger hand off to a live human agent
+     href: advanced-hand-off.md
+- name: Publish your bot
   items:
-   - name: Fundamentals - Publish your bot
-     href: publication-fundamentals-virtual-agent.md
-   - name: Deploy to a website
-     href: publication-deploy-web-virtual-agent.md
-   - name: Deploy to Microsoft Bot Framework channels
-     href: publication-deploy-channels-virtual-agent.md
+   - name: Key concepts - Publish your bot
+     href: publication-fundamentals-publish-channels.md
+   - name: Configure demo and live website publication
+     href: publication-connect-bot-to-web-channels.md
+   - name: Add bot to Microsoft Teams
+     href: publication-add-bot-to-microsoft-teams.md
+   - name: Add bot to Facebook
+     href: publication-add-bot-to-facebook.md
+   - name: Add bot to mobile and custom apps
+     href: publication-connect-bot-to-custom-application.md
+   - name: Add bot to Azure Bot Service Channels
+     href: publication-connect-bot-to-azure-bot-service-channels.md
 - name: Report on usage and bot performance
   items:
-   - name: Fundamentals - Analysis
-     href: analysis-fundamentals-virtual-agent.md
+   - name: Key concepts - Analysis
+     href: analytics-overview.md
    - name: Analyze bot performance and usage
-     href: analysis-analyze-bot-performance-virtual-agent.md
-- name: Configuration
+     href: analytics-summary.md
+   - name: Analyze customer satisfaction
+     href: analytics-csat.md
+   - name: Analyze session information
+     href: analytics-sessions.md
+   - name: Analyze topic usage
+     href: analytics-topic-details.md
+- name: Configure bot features
   items:
-   - name: Fundamentals - Configuration
-     href: configuration-fundamentals-virtual-agent.md
-   - name: Configure the appearance of your bot
-     href: configuration-appearace-chat-canvas-virtual-agent.md
-   - name: Configure hand-off with Omnichannel
-     href: configuration-hand-off-omnichannel-virtual-agent.md
+   - name: Key concepts - Configuration
+     href: configuration-fundamentals.md
    - name: Configure end-user authentication
-     href: configuration-end-user-authentication-virtual-agent.md
-   - name: Configure integration with Microsoft Bot Framework
-     href: configuration-bot-framework-virtual-agent.md
-   - name: Configure Microsoft Bot Framework dispatcher
-     href: configuration-dispatcher-virtual-agent.md
-   - name: Enable and configure Microsoft Bot Framework Skills
-     href: configuration-skills-integrate-virtual-agent.md
-- name: Troubleshoot issues
-  items:
-   - name: Troubleshoot issues
-     href: troubleshoot-issues-virtual-agent.md
+     href: configuration-end-user-authentication.md
+   - name: Configure hand-off to Omnichannel for Customer Service
+     href: configuration-hand-off-omnichannel.md
+   - name: Configure the appearance of your bot with Microsoft Bot Framework
+     href: extend-custom-canvas-connect.md
+   - name: Upload a custom canvas with Microsoft Bot Framework
+     href: extend-custom-canvas-upload.md
 - name: Data Subject Rights (DSR) requests under GDPR
   items:
-   - name: Overview of GDPR compliance
+   - name: Key concepts - GDPR compliance
      href: gdpr-summary.md
    - name: Requests to export and dowload data
      href: gdpr-export.md
@@ -98,3 +86,5 @@
      href: gdpr-delete.md
    - name: Requests to discover data
      href: gdpr-discovery.md
+   - name: Where an organization's data is located
+     href: data-location.md

@@ -28,7 +28,7 @@ search.app:
 ### What is the benefit to customers?  
  The new local [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] enables data residency for customers in India, bringing enterprise-grade reliability and performance to regulated industries and other businesses. This includes data replication in multiple regions within India for business continuity, reduced network distance, and the option of a private connection to the cloud with [!INCLUDE[pn_azure_expressroute](../includes/pn-azure-expressroute.md)]. The [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] in India comes with the same deep commitment to high availability as our other regions, including a financially backed service level agreement of 99.9%.  
   
- For model-driven apps in Dynamics 365, data residency means that most customer data will be kept within India, except for [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] data. For the definition of customer data and details on our data flow maps in Geo, see the [Microsoft Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
+ For model-driven apps in Dynamics 365, data residency means that most customer data will be kept within India, except for [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] data. For the definition of customer data and details on our data flow maps in Geo, see the [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409).  
   
 ### Where are the Microsoft Cloud India regions?  
  The India Geo will consist of datacenters in Central India (Pune) and South India (Chennai).  
@@ -49,7 +49,7 @@ search.app:
 ### Will multi-geo environments be available to customers in India?  
  Yes, multi-geo environments will be supported for India as long as the tenant is provisioned in India. For customers not located in India who want to provision an environment within the India datacenter, they must first purchase a tenant for an organization located in India and then the tenant can be provisioned in India.  
   
- Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo environments](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md).  
+ Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo environments](https://docs.microsoft.com/dynamics365/admin/add-edit-multiregional-instances).  
   
 ### Will the standard service level agreements be offered?  
  Yes, the standard service level agreements (SLAs) will apply to the India regions, just as they do in our other regions around the world.  
@@ -67,7 +67,7 @@ search.app:
  [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] is currently available in India. [View a current list of ExpressRoute locations and partners](https://azure.microsoft.com/documentation/articles/expressroute-locations/). [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is currently working to enable customers to use [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] with model-driven apps in Dynamics 365 from the India regions.  
   
 ### Where can I find more about security, data privacy, and compliance?  
- You can find more information at the  [Microsoft Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409).  
+ You can find more information at the  [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409).  
   
 ### Where can I find out more about the physical infrastructure?  
  These services are hosted in the Microsoft cloud infrastructure comprising more than 100 globally distributed datacenters, edge computing nodes, and service operations centers. This infrastructure is supported by one of the world’s largest multi-terabit global networks, with an extensive dark fiber footprint that connects them all.  
@@ -105,7 +105,7 @@ search.app:
 ## Licensing and pricing  
   
 ### Will all versions of model-driven apps in Dynamics 365 be available?  
- Customers will be able to purchase all licenses that are currently available in the market today. Please see local availability at [Microsoft Dynamics CRM Solutions](https://www.microsoft.com/en-au/dynamics/crm-purchase-online.aspx). Global pricing can be found at [Microsoft Dynamics Pricing List](http://go.microsoft.com/fwlink/p/?LinkID=401462).  
+ Customers will be able to purchase all licenses that are currently available in the market today. Please see local availability at [Microsoft Dynamics CRM Solutions](https://www.microsoft.com/en-au/dynamics/crm-purchase-online.aspx). Global pricing can be found at [Microsoft Dynamics Pricing List](https://go.microsoft.com/fwlink/p/?LinkID=401462).  
   
 ### How will a customer who has an existing volume license agreement outside of India be billed if they add a new tenant to their agreement that resides in India?  
  The additional seats will be invoiced at the same rate on the customer’s invoice. The business desk will need to provide a multi-tenant amendment to provide an additional tenant in India.  

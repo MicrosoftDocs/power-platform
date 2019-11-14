@@ -40,7 +40,7 @@ Once a Common Data Service database has been created in an environment all users
 |System Customizer     |This role has full permission to customize the environment. The role’s data access is focused only on data owned by the user. This role can be modified but it is not recommended to modify.         |
 |Environment Maker     |Can create new resources associated with the environment including apps, connections, gateways and flows. There is no default privileges to data included. This role can be modified but it is not recommended to modify.         |
 |Common Data Service User     |This is a basic user role, with ability to run apps and perform common tasks but no ability to customize the system. The data access is focused on Read access to most Common Data Model core entities with full access to records owned by the user. This is a good role to consider copying to make a custom security role for users.         |
-|Delegate     |This is a special role really design to give a user permission to Act on behalf of another user. For more information, see [Impersonate another user](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user).        |
+|Delegate     |This is a special role really design to give a user permission to Act on behalf of another user. For more information, see [Impersonate another user](https://docs.microsoft.com/powerapps/developer/common-data-service/impersonate-another-user).        |
 
 In addition to these default roles, you can also create custom security roles. Custom security roles should be created to support applications built in your organization. Custom security roles can also come with applications you install from App Source or if your users sign up for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.
 
@@ -77,7 +77,7 @@ As a global administrator in the admin portal you will be able to see a list of 
 
 ## Impact of multiple environments on users
 
-While it might be tempting to have users partitioned off into smaller environments it is important to consider the impact on the users in that decision. When users access the PowerApps Canvas App Player or the Flow application from the Web Browser or Windows Store the user will select and work within a single environment. By default, that environment will be set to the tenant default environment. Users can change their environment in the players and portals using the environment selector.
+While it might be tempting to have users partitioned off into smaller environments it is important to consider the impact on the users in that decision. When users access the PowerApps Canvas App Player or the Power Automate application from the Web Browser or Windows Store the user will select and work within a single environment. By default, that environment will be set to the tenant default environment. Users can change their environment in the players and portals using the environment selector.
 
 ![Default environment](media/DefaultEnvironment780.png "Default environment")
 

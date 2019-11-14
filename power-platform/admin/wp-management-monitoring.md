@@ -24,4 +24,4 @@ Portals offer an interactive experience for performing administrative tasks. Thi
 
 PowerShell cmdlets offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multi-step administrative actions.
 
-Connectors offer the ability to use the platform’s own tools to manage and monitor itself. The Flow Management connector is specifically designed to help with administrative management and monitoring. But you can also use any of the other 200+ connectors and approval process capabilities to automate your own admin work.
+Connectors offer the ability to use the platform’s own tools to manage and monitor itself. The Microsoft Power Automate Management connector is specifically designed to help with administrative management and monitoring. But you can also use any of the other 200+ connectors and approval process capabilities to automate your own admin work.

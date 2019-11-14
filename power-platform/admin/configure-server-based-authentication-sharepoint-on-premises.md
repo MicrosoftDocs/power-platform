@@ -63,9 +63,9 @@ Model-driven apps in Dynamics 365
   > [!IMPORTANT]
   >  The following updates are prerequisites to KB2883081 and may also be required.  
   >   
-  > -   [http://support2.microsoft.com/kb/2768000](http://support2.microsoft.com/kb/2768000)  
-  > -   [http://support.microsoft.com/kb/2767999](http://support.microsoft.com/kb/2767999)  
-  > -   [http://support.microsoft.com/kb/2880963](http://support.microsoft.com/kb/2880963)  
+  > -   [https://support2.microsoft.com/kb/2768000](https://support2.microsoft.com/kb/2768000)  
+  > -   [https://support.microsoft.com/kb/2767999](https://support.microsoft.com/kb/2767999)  
+  > -   [https://support.microsoft.com/kb/2880963](https://support.microsoft.com/kb/2880963)  
   
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration  
   
@@ -96,7 +96,7 @@ Model-driven apps in Dynamics 365
   
 - The following software features are required to run the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets described in this topic.  
   
-  -   [Microsoft Online Services Sign-In Assistant for IT Professionals Beta](http://www.microsoft.com/download/details.aspx?id=39267)  
+  -   [Microsoft Online Services Sign-In Assistant for IT Professionals Beta](https://www.microsoft.com/download/details.aspx?id=39267)  
   
   -   [MSOnlineExt](https://www.powershellgallery.com/packages/MSOnlineExt/)  
      -   To install the MSOnlineExt module, enter the following command from an administrator PowerShell session.
@@ -311,7 +311,7 @@ $wellKnownApp.Update()
 <a name="BKMK_selectclmmap"></a>   
 
 ## Selecting a claims-based authentication mapping type  
- By default, the claims-based authentication mapping will use the user’s [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user’s [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises work email address for mapping. Note that whatever claims-based authentication type you use, the values, such as email addresses, **must match** between model-driven apps in Dynamics 365 and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] directory synchronization can help with this. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure](https://technet.microsoft.com/library/dn635310.aspx). To use a different type of claims-based authentication mapping, see [Define custom claim mapping for SharePoint server-based integration](/dynamics365/customer-engagement/developer/integration-dev/define-custom-claim-mapping-sharepoint-server-based-integration.md).
+ By default, the claims-based authentication mapping will use the user’s [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user’s [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises work email address for mapping. Note that whatever claims-based authentication type you use, the values, such as email addresses, **must match** between model-driven apps in Dynamics 365 and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] directory synchronization can help with this. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure](https://technet.microsoft.com/library/dn635310.aspx). To use a different type of claims-based authentication mapping, see [Define custom claim mapping for SharePoint server-based integration](https://docs.microsoft.com/power-platform/admin/configure-server-based-authentication-sharepoint-on-premises).
   
 > [!IMPORTANT]
 >  To enable the Work email property, [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises must have a User Profile Service Application configured and started. To enable a User Profile Service Application in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], see [Create, edit, or delete User Profile service applications in SharePoint Server 2013](https://technet.microsoft.com/library/ee721052.aspx). To make changes to a user property, such as Work email, see [Edit a user profile property](https://technet.microsoft.com/library/cc262327.aspx). For more information about the User Profile Service Application, see [Overview of the User Profile service application in SharePoint Server 2013](https://technet.microsoft.com/library/ee662538.aspx).  

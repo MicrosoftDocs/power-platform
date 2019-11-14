@@ -61,7 +61,7 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
   
 5. A [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is automatically created for a record the first time you select the **OneNote** tab in the activities area in model-driven apps in Dynamics 365. After the dedicated [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is created for that record, you can view and navigate to that notebook from any Dynamics 365 apps client.  
   
-[!INCLUDE[proc-more-information](../includes/proc-more-information.md)]  [Use OneNote](/dynamics365/customer-engagement/basics/use-onenote.md)
+[!INCLUDE[proc-more-information](../includes/proc-more-information.md)]  [Use OneNote](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/use-onenote)
   
 ## To turn off OneNote integration  
   
@@ -74,7 +74,7 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
 3. In the **OneNote Integration Setting** dialog box, clear the check boxes for all entities, and then select **Finish**.  
   
 ### See also  
- [Use OneNote](/dynamics365/customer-engagement/basics/use-onenote.md)   
- [OneNote FAQs](/dynamics365/customer-engagement/basics/onenote-dynamics-365-faqs.md)   
+ [Use OneNote](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/use-onenote)   
+ [OneNote FAQs](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/onenote-dynamics-365-faqs)   
  [Turn on server-based SharePoint integration](set-up-sharepoint-integration.md)   
- [Blog: OneNote in CRM](http://blogs.technet.com/b/lystavlen/archive/2015/03/31/make-a-note-of-this.aspx)
+ [Blog: OneNote in CRM](https://blogs.technet.com/b/lystavlen/archive/2015/03/31/make-a-note-of-this.aspx)

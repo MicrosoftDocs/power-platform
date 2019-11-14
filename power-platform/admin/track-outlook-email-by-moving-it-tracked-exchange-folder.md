@@ -24,7 +24,7 @@ search.app:
  ![Exchange email folder tracking](media/exchange-folder-tracking-dynamics-crm.png "Exchange email folder tracking")  
 
 > [!TIP]
->  Tracked folders work with [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] Inbox rules. This makes it easy to automatically route email messages to a particular folder. For example, set up an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] rule that automatically routes email from a Contoso contact to a tracked Contoso folder, which is linked to a specific Contoso opportunity. [Tell me more about setting up rules](http://go.microsoft.com/fwlink/p/?LinkID=528086).  
+>  Tracked folders work with [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] Inbox rules. This makes it easy to automatically route email messages to a particular folder. For example, set up an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] rule that automatically routes email from a Contoso contact to a tracked Contoso folder, which is linked to a specific Contoso opportunity. [Tell me more about setting up rules](https://go.microsoft.com/fwlink/p/?LinkID=528086).  
 
 To see folder tracking in action, see the video [Folder Level Tracking in CRM Online ](https://youtu.be/HiNpINvFKq8).
 

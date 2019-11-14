@@ -39,7 +39,7 @@ In this example, four security groups provide controlled access to a specific en
   
 - When a security group is associated with an existing environment with users, all users in the environment that are not members of the group will be disabled.  
   
-- If a Common Data Service environment does not have an associated security group, all users with a Common Data Service license (model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, Microsoft Flow, PowerApps, etc.) will be created as users and enabled in the environment.  
+- If a Common Data Service environment does not have an associated security group, all users with a Common Data Service license (model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, Power Automate, PowerApps, etc.) will be created as users and enabled in the environment.  
   
 - If a security group is associated with an environment, only users with Common Data Service licenses that are members of the environment security group will be created as users in the Common Data Service environment.  
   
@@ -51,7 +51,7 @@ In this example, four security groups provide controlled access to a specific en
   
 - If you do not assign a security group to an environment, the environment will show up in [home.dynamics.com](https://home.dynamics.com) even for those who have not been assigned a security role in that Common Data Service environment.  
 
-- If you do not specify a security group, all users who have a Common Data Service license, (model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, Flow, PowerApps, etc.) will be added to the new environment.
+- If you do not specify a security group, all users who have a Common Data Service license, (model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, Power Automate, PowerApps, etc.) will be added to the new environment.
   
 - You cannot yet make security groups members of other security groups. Check back for availability of support for nested security groups.
 
@@ -77,13 +77,13 @@ In this example, four security groups provide controlled access to a specific en
 > [!NOTE]
 > If the users you want to add to the security group are not created, create the users and assign to them the Common Data Service licenses.  
 > 
-> To add multiple users, see: [bulk add users to Office365 groups](http://go.microsoft.com/fwlink/p/?LinkID=615203).  
+> To add multiple users, see: [bulk add users to Office365 groups](https://go.microsoft.com/fwlink/p/?LinkID=615203).  
   
 ### Create a user and assign license  
   
 1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Users** > **Active users** > **+ Add a user**. Enter the user information, select licenses, and then select **Add**.  
   
-   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add users individually to Office 365 - Admin Help](http://go.microsoft.com/fwlink/p/?LinkID=615205)  
+   [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add users individually to Office 365 - Admin Help](https://go.microsoft.com/fwlink/p/?LinkID=615205)  
   
 ### Associate a security group with a Common Data Service environment  
   

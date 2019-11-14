@@ -50,7 +50,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 - Our expansion in the Australia Geo also provides customers with the same level of high availability and redundancy as with our datacenters in other countries/regions. Customers in Australia, New Zealand, and Oceania will enjoy the benefit of a financially backed 99.9% service level agreement (SLA) and redundancy both inside of the primary datacenter where they are deployed as well as to the secondary datacenter in the Australia geography to help ensure ongoing uptime and protect against a major disaster in a single region.  
   
-*The Australia Geo will be considered a separate Geo subject to the same data location commitments we make for other Geos. For the definition of customer data and details on our data flow maps in Geo, see the [Dynamics Trust Center](http://www.microsoft.com/dynamics/crm-trust-center.aspx).  
+*The Australia Geo will be considered a separate Geo subject to the same data location commitments we make for other Geos. For the definition of customer data and details on our data flow maps in Geo, see the [Dynamics Trust Center](https://www.microsoft.com/dynamics/crm-trust-center.aspx).  
   
 ### What region will be used for replication of data for the Australia Geo?  
 Services deployed in the Australia East Region will replicate data to the Australia Southeast Region and vice-versa.  
@@ -104,7 +104,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
  At this time, model-driven apps in Dynamics 365 are only available for Dev/Test scenarios and isn’t supported for production use cases. Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support model-driven apps in Dynamics 365 on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we’re dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability in each geography. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe.  
   
 ### Where can I find more about security, data privacy, and compliance?  
- The [Microsoft Dynamics 365 Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=393409) will be updated as needed when the Australia Datacenters launch into general availability.  
+ The [Microsoft Dynamics 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409) will be updated as needed when the Australia Datacenters launch into general availability.  
   
 ### What app data be in Australia datacenters at general availability?  
  We’ll store all customer data, including backups, within the Australia Datacenter. For any [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services that are running in conjunction with model-driven apps in Dynamics 365 those services will follow the data storage rules for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
@@ -113,7 +113,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
  We’re actively investigating [IRAP](http://www.asd.gov.au/infosec/irap/index.htm) requirements and how they relate specifically to model-driven apps in Dynamics 365 and we’ll share more information at a later date.  
   
 ### Where can I find out more about the physical infrastructure for model-driven apps in Dynamics 365?  
- [Microsoft Cloud Infrastructure and Operations (MCIO)](http://go.microsoft.com/fwlink/p/?LinkID=528551) powers the Microsoft cloud services. MCIO focuses on smart growth, high reliability, operational excellence, cost-effectiveness, environmental sustainability, and a trustworthy online experience for customers and partners worldwide.  
+ [Microsoft Cloud Infrastructure and Operations (MCIO)](https://go.microsoft.com/fwlink/p/?LinkID=528551) powers the Microsoft cloud services. MCIO focuses on smart growth, high reliability, operational excellence, cost-effectiveness, environmental sustainability, and a trustworthy online experience for customers and partners worldwide.  
   
  MCIO delivers the core infrastructure and foundational technologies for Microsoft's 200+ online businesses including [!INCLUDE[pn_bing](../includes/pn-bing.md)], [!INCLUDE[pn_outlook_com](../includes/pn-outlook-com.md)], [!INCLUDE[pn_msn](../includes/pn-msn.md)], [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], [!INCLUDE[pn_xbox_live](../includes/pn-xbox-live.md)], and model-driven apps in Dynamics 365. The infrastructure is comprised of a large global portfolio of datacenters, servers, content distribution networks, edge computing nodes, and fiber optic networks.  
   
@@ -144,7 +144,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
   
 - To move your tenants, environments, and data to the Australia regions, you should contact Support for additional information regarding migrating your environments. For more information, see [How do I request my environment to be moved to the Australia datacenter?](about-microsoft-cloud-australia.md#BKMK_RequestMove) [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions.  
   
-  For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/customer-engagement/admin/multiple-online-environments-tenants.md). 
+  For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](https://docs.microsoft.com/dynamics365/admin/multiple-online-instances-tenants). 
   
 <a name="BKMK_RequestMove"></a> 
   
@@ -177,7 +177,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
 ## Pricing and licensing  
   
 ### Will all versions of model-driven apps in Dynamics 365 be available?  
- Customers will be able to purchase all licenses that are currently available in market today. Please see local availability at [Microsoft Dynamics CRM Solutions](http://www.microsoft.com/en-au/dynamics/crm-purchase-online.aspx). Global pricing can be found at [Microsoft Dynamics Pricing List](http://go.microsoft.com/fwlink/p/?LinkID=401462)  
+ Customers will be able to purchase all licenses that are currently available in market today. Please see local availability at [Microsoft Dynamics CRM Solutions](https://www.microsoft.com/en-au/dynamics/crm-purchase-online.aspx). Global pricing can be found at [Microsoft Dynamics Pricing List](https://go.microsoft.com/fwlink/p/?LinkID=401462)  
   
 ### How will a customer who has an existing volume license (VL) agreement outside of Australia be billed if they add a new tenant to their agreement that resides in Australia?  
  The additional seats will be invoiced at the same rate on the customer’s invoice. The business desk will need to provide a multi-tenant amendment to provide an additional tenant in Australia.  

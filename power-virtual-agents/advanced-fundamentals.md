@@ -13,6 +13,7 @@ ms.custom: "VA"
 ms.collection: virtualagent
 ---
 
+
 # H1 - Fundamentals - Bots and topics recommendations and best practices
 
 Fundamentals - Bots and topics recommendations and best practices

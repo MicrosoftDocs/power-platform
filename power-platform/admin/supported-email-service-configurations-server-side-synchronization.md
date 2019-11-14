@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/23/2019
+ms.date: 10/17/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -38,38 +38,24 @@ Depending on your model-driven apps in Dynamics 365, such as Dynamics 365 Sales 
  Model-driven apps in Dynamics 365 support server-side synchronization with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in the same tenant in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] with Server to Server Authentication. Other authentication methods or settings are not recommended or supported, including:  
   
 - Using credentials specified by a user or queue  
-  
 - Using credentials specified in an email server profile  
-  
 - Using Impersonation  
-  
 - Setting Auto Discover Server Location to No  
-  
 - Using an email server profile other than Exchange Online  
 
-<!--  
--   Using non-default [network ports](https://technet.microsoft.com/library/hh699823.aspx)  
--->
-
-- Connecting model-driven apps in Dynamics 365 with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in different tenant is supported by setting up hybrid profile connections to the separate tenant infrastructure.  
+> [!NOTE]
+> Connecting model-driven apps in Dynamics 365 with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in a different tenant is supported by setting up hybrid profile connections to the separate tenant infrastructure.  
   
 ## Unsupported email service configurations  
  Server-side synchronization doesn’t support the following scenarios:  
   
 - Mix of [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]/SMTP and POP3/[!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]  
-
 - Exchange Online profile mailbox with Exchange on-premises user. Use the Exchange Server (Hybrid) profile, associate the mailbox to it, then test and enable.
-  
 - Exchange Online profile mailbox with an Exchange mailbox that points to an external email server. Use the POP3/SMTP Server profile, associate the mailbox to it, then test and enable.
-
 - Creation of mass email marketing campaigns  
-  
 - Extensibility scenarios like extending EWS/POP3/SMTP protocols and creating custom email providers  
-  
 - [!INCLUDE[pn_ms_Exchange_Server_2003_short](../includes/pn-ms-exchange-server-2003-short.md)] and [!INCLUDE[pn_ms_Exchange_Server_2007_short](../includes/pn-ms-exchange-server-2007-short.md)]  
-  
 - Server-side synchronization in model-driven apps in Dynamics 365 requires a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail.  
-
 - Multi-factor authentication isn’t supported for model-driven apps in Dynamics 365 to Exchange Server (on-premises), and Customer Engagement (on-premises) to Exchange Online.
   
 For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](https://docs.microsoft.com/dynamics365/customer-engagement/admin/integrate-synchronize-your-email-system)  

@@ -1,1 +1,1 @@
-Follow the steps in [View your user profile](/dynamics365/customer-engagement/basics/view-your-user-profile.md).
+Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
