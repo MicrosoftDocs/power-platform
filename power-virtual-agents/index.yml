@@ -26,7 +26,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Power Virtual Agents?
+          - text: Power Virtual Agents overview?
             url: fundamentals-what-is-power-virtual-agent.md
           - text: Get started quickly with Power Virtual Agents
             url: fundamentals-get-started.md

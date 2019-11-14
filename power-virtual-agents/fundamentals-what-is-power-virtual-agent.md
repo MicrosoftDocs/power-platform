@@ -12,11 +12,8 @@ manager: shellyha
 
 
 
-# PLACEHOLDER
 
-This page will have Omar's blog content once it is finalized.
-
-## Power Virtual Agents Preview overview
+# Power Virtual Agents overview
 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
