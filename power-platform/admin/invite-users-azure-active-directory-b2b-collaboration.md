@@ -55,15 +55,15 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
    - See [Admins adding guest users to a group](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-admin-add-users).  
   
-   - See [Control user access to environments: security groups and licenses](/dynamics365/customer-engagement/admin/add-environment-subscription.md#control-user-access-to-environments-security-groups-and-licenses) on how to use security groups for your environments.  
-  
+   - See [Control user access to environments: security groups and licenses](control-user-access.md) on how to use security groups for your environments.  
+
 2. Invite users to your environment that does not have a security group.  
   
    -   See [Admins adding guest users to the directory](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-admin-add-users).  
   
 3. Bulk-invite guest users using a .csv file.  
   
-   -   See [PowerShell example](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-code-samples).  
+   -   See [PowerShell example](https://docs.microsoft.com/azure/active-directory/b2b/code-samples).  
   
    Your invited user will receive an email invitation to get started with B2B user collaboration.  
   
@@ -124,7 +124,7 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
 ### See also  
  [Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)   
- [Azure Active Directory B2B collaboration code and PowerShell samples](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-code-samples)   
+ [Azure Active Directory B2B collaboration code and PowerShell samples](https://docs.microsoft.com/azure/active-directory/b2b/code-samples)   
  [Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-faq)   
  [Azure Active Directory B2B Collaboration](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   
  [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/)

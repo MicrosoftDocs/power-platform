@@ -5,7 +5,7 @@ summary: Build chat bots easily with Power Virtual Agents.  # < 160 chars
 
 metadata:
   title: Power Virtual Agents documentation and guidance # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: See how Power Virtual Agents can be used to automate your customer service with powerful AI-driven chat bots.  # Required; article description that is displayed in search results. < 160 chars.
+  description: See how Power Virtual Agents can be used to build powerful AI-driven chat bots.  # Required; article description that is displayed in search results. < 160 chars.
   services: service
   ms.service:   
     - "dynamics-365-ai" #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -27,49 +27,68 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Power Virtual Agents?
-            url: overview.md
-      - linkListType: quickstart
-        links:
-          - text: Get up and running with Power Virtual Agents
-            url: quickstart.md
+            url: fundamentals-what-is-power-virtual-agent.md
+          - text: Get started quickly with Power Virtual Agents
+            url: fundamentals-get-started.md
       - linkListType: reference
         links:
-          - text: Videos
-            url: videos.md
-          - text: FAQ
-            url: faq.md
-          - text: Power Virtual Agents blog
-            url: https://cloudblogs.microsoft.com/dynamics365/it/product/virtual-agent-for-customer-service/
           - text: What's new and planned
             url: https://docs.microsoft.com/dynamics365-release-plan/2019wave2/artificial-intelligence/dynamics365-virtual-agent-for-customer-service/planned-features
           - text: Forums and community
-            url: https://community.dynamics.com/365/virtual-agent-for-customer-service/
+            url: http://aka.ms/PowerVirtualAgentsForum
           - text: Submit ideas
-            url: https://experience.dynamics.com/ideas/categories/?forum=f970b8b7-1378-e911-a965-000d3a4f33c1&forumName=Dynamics%20365%20Virtual%20Agent%20for%20Customer%20Service
-
+            url: http://aka.ms/PowerVirtualAgentsIdeas
+            
+  # Card (optional)
+  - title: Create bots and topics
+    linkLists:
+      - linkListType: author and edit
+        links:
+          - text: Create your first bot
+            url: authoring-first-bot.md
+          - text: Use topic lessons
+            url: authoring-template-topics.md
+          - text: Create and edit topics
+            url: authoring-create-edit-topics.md
 
   # Card (optional)
-  - title: Create and deploy bots
+  - title: Enhance bot topics
     linkLists:
-      - linkListType: deploy
+      - linkListType: enhance and improve
         links:
-          - text: Create a bot
-            url: getting-started-create-bot.md
-          - text: Create custom greetings
-            url: getting-started-create-greeting.md
-          - text: Create custom topics
-            url: getting-started-create-topics.md
-          - text: Deploy your bot
-            url: getting-started-deploy.md
-
+          - text: Use Entities
+            url: advanced-entities-slot-filling.md
+          - text: Create topics from existing web content
+            url: advanced-create-topics-from-web.md
+          - text: Use end-user authentication
+            url: advanced-end-user-authentication.md
+          - text: Use Microsoft Power Automate
+            url: advanced-flow.md
+          - text: Use hand-off to a human agent
+            url: advanced-hand-off.md
+  
+  
+    # Card (optional)
+  - title: Publish and integrate
+    linkLists:
+      - linkListType: publish
+        links:
+          - text: Configure demo and live websites
+            url: publication-connect-bot-to-web-channels.md
+          - text: Publish to Microsoft Teams
+            url: publication-add-bot-to-microsoft-teams.md
+          - text: Publish to Facebook
+            url: publication-add-bot-to-facebook.md            
+            
+  
   # Card
-  - title: Analyze bot performance
+  - title: Monitor and diagnose
     linkLists:
-      - linkListType: concept
+      - linkListType: 
         links:
-          - text: Analytics overview
-            url: analytics-overview.md
           - text: Use analytics to improve your bot
-            url: getting-started-analytics.md
+            url: analytics-overview.md
+          - text: Analyze bot performance and usage
+            url: analytics-summary.md
 
 

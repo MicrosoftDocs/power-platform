@@ -1,5 +1,5 @@
 ---
-title: "Trigger contextual hand-off to a human agent"
+title: "Trigger hand-off to live agents in Power Virtual Agents"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
 ms.date: 11/04/2019
 ms.service:

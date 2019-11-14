@@ -49,7 +49,7 @@ search.app:
 ### Will multi-geo environments be available to customers in India?  
  Yes, multi-geo environments will be supported for India as long as the tenant is provisioned in India. For customers not located in India who want to provision an environment within the India datacenter, they must first purchase a tenant for an organization located in India and then the tenant can be provisioned in India.  
   
- Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo environments](/dynamics365/customer-engagement/admin/add-edit-multiregional-instances.md).  
+ Availability of multi-geo environment support will be limited in the initial rollout to a fixed number of eligible customers. We'll continue to expand this capacity over time.  [Read more on how to create and edit multi-geo environments](https://docs.microsoft.com/dynamics365/admin/add-edit-multiregional-instances).  
   
 ### Will the standard service level agreements be offered?  
  Yes, the standard service level agreements (SLAs) will apply to the India regions, just as they do in our other regions around the world.  

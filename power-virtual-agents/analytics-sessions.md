@@ -1,25 +1,31 @@
 ---
-title: "Sessions page"
-description: "Learn about the Power Virtual Agents Sessions page."
-
-ms.date: 12/02/2019
+title: "Download Power Virtual Agents bot sessions"
+description: "Download sessions from the last 30 days for your bot conversations."
+ms.date: 11/12/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: mivakoc
-ms.author: mivakoc
-manager: mahesha
-
+author: iaanw
+ms.author: iawilt
+manager: shellyha
+ms.cusom: analysis
+ms.collection: virtual-agent
 ---
 
-# Sessions page
+# Analyze session information in Power Virtual Agents
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
 ![Sessions page](media/sessions-page.png)
 
-The Sessions page lets you download information from your customer service sessions from the last 30 days. You can download information from up to 1,000 sessions.
+>[!WARNING]
+>Need an updated image
+
+You can download information from your bot conversations for the last 30 days. You can download information from up to 1,000 sessions.
+
+>[!WARNING]
+>I think this has changed.
 
 The downloaded file contains the following information: 
 

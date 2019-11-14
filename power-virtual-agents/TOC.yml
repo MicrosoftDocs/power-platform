@@ -4,69 +4,49 @@
      href: fundamentals-what-is-power-virtual-agent.md
    - name: Get started quickly with Power Virtual Agents
      href: fundamentals-get-started.md
-   - name: Artificial intelligence models (REM)
-     href: fundamentals-ai-models.md
-- name: Licensing and technical requirements
-  items:
-   - name: Fundamentals - requirements for Power VirtualAgent
-     href: requirements-fundamentals.md
-   - name: Geographic requirements
-     href: requirements-geographic.md
-   - name: Service-level agreement (REM)
-     href: requirements-sla.md
-   - name: Licensing requirements (REM)
-     href: requirements-licensing.md
-- name: Onboard and set up
-  items:
-   - name: Fundamentals - Environments and onboarding best practices
-     href: environments-fundamentals.md
-   - name: First-run experience
+   - name: Working with environments
      href: environments-first-run-experience.md
-- name: Authoring
+- name: Author bots and topics
   items:
-   - name: Fundamentals - Bots and topics recommendations and best practices
+   - name: Key concepts - Authoring
      href: authoring-fundamentals.md
    - name: Create your first bot
      href: authoring-first-bot.md
+   - name: Use topic lessons
+     href: authoring-template-topics.md
    - name: Create and edit topics
      href: authoring-create-edit-topics.md
-   - name: Work with existing template topics and system topics
-     href: authoring-template-topics.md
    - name: Topic management
      href: authoring-topic-management.md
    - name: Test your bot
      href: authoring-test-bot.md
-- name: Advanced authoring
+- name: Use rich bot authoring features
   items:
-   - name: Fundamentals - Enhancing AI intelligenc
+   - name: Key concepts - Rich authoring
      href: advanced-fundamentals.md
    - name: Use entities and utilize slot filling
      href: advanced-entities-slot-filling.md
    - name: Use variables
      href: authoring-variables.md
-   - name: Allow multiple users to edit simultaneously (REM)
-     href: advanced-multi-user-authoring.md
    - name: Create topics from existing support content on the web
      href: advanced-create-topics-from-web.md
-   - name: Create topics from Customer Service Insights (REM)
-     href: advanced-create-topics-from-csi.md
    - name: Use end-user authentication
      href: advanced-end-user-authentication.md
-   - name: Use Microsoft Flow
+   - name: Use Microsoft Power Automate
      href: advanced-flow.md
-   - name: Use Microsoft Bot Framework Skills
+   - name: Use Azure Bot Framework Skills (REM)
      href: advanced-use-skills.md
-   - name: Use hand-off
+   - name: Trigger hand off to a live human agent
      href: advanced-hand-off.md
-- name: Bot publication
+- name: Publish your bot
   items:
-   - name: Fundamentals - Publish your bot
+   - name: Key concepts - Publish your bot
      href: publication-fundamentals-publish-channels.md
    - name: Configure demo and live website publication
      href: publication-connect-bot-to-web-channels.md
    - name: Add bot to Microsoft Teams
      href: publication-add-bot-to-microsoft-teams.md
-   - name: Add bot to Facebook Messenger
+   - name: Add bot to Facebook
      href: publication-add-bot-to-facebook.md
    - name: Add bot to mobile and custom apps
      href: publication-connect-bot-to-custom-application.md
@@ -74,7 +54,7 @@
      href: publication-connect-bot-to-azure-bot-service-channels.md
 - name: Report on usage and bot performance
   items:
-   - name: Fundamentals - Analysis
+   - name: Key concepts - Analysis
      href: analytics-overview.md
    - name: Analyze bot performance and usage
      href: analytics-summary.md
@@ -84,25 +64,21 @@
      href: analytics-sessions.md
    - name: Analyze topic usage
      href: analytics-topic-details.md
-- name: Configuration
+- name: Configure bot features
   items:
-   - name: Fundamentals - Configuration
+   - name: Key concepts - Configuration
      href: configuration-fundamentals.md
+   - name: Configure end-user authentication
+     href: configuration-end-user-authentication.md
+   - name: Configure hand-off to Omnichannel for Customer Service
+     href: configuration-hand-off-omnichannel.md
    - name: Configure the appearance of your bot with Microsoft Bot Framework
      href: extend-custom-canvas-connect.md
    - name: Upload a custom canvas with Microsoft Bot Framework
      href: extend-custom-canvas-upload.md
-   - name: Configure hand-off with Omnichannel
-     href: configuration-hand-off-omnichannel.md
-   - name: Configure end-user authentication
-     href: configuration-end-user-authentication.md
-   - name: Configure Microsoft Bot Framework dispatcher
-     href: configuration-dispatcher.md
-   - name: Enable and configure Microsoft Bot Framework Skills
-     href: configuration-add-skills.md
 - name: Data Subject Rights (DSR) requests under GDPR
   items:
-   - name: Overview of GDPR compliance
+   - name: Key concepts - GDPR compliance
      href: gdpr-summary.md
    - name: Requests to export and dowload data
      href: gdpr-export.md

@@ -1,5 +1,5 @@
 ---
-title: "Add user authentication to bot topics"
+title: "Add user authentication to bot topics in Power Virtual Agents"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider"
 ms.date: 11/9/2019
@@ -28,7 +28,7 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 
 **Insert the authentication node template:**
 
-1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
+1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add the authentication template to.
 

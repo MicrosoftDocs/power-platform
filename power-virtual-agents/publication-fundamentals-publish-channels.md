@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals - Publish your bot to channels"
+title: "Fundamentals - Publish a Power Virtual Agents bot to channels"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels"
 ms.date: 11/9/2019
@@ -13,7 +13,7 @@ ms.custom: "publication, fundamentals"
 ms.collection: virtual-agent
 ---
 
-# Fundamentals - Publish your bot
+# Publish your bot
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -64,7 +64,7 @@ Each channel requires different steps and configurations, which can be found in 
 
 - [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md)
 - [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
-- [Add bot to Facebook Messenger](publication-add-bot-to-facebook.md)
+- [Add bot to Facebook](publication-add-bot-to-facebook.md)
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)
 - [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
 

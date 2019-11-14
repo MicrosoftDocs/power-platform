@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-If you create an email message in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from model-driven apps in Dynamics 365.  If the status of the email appears as "Pending Send" and is not sent, contact your administrator. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find your administrator or support person](/dynamics365/customer-engagement/basics/find-administrator-support.md)  
+If you create an email message in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from model-driven apps in Dynamics 365.  If the status of the email appears as "Pending Send" and is not sent, contact your administrator. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin)  
   
  If you are the administrator, verify that the user who sent the email is enabled for sending email. To do this:  
   

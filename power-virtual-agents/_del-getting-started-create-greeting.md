@@ -12,6 +12,8 @@ manager: shellyha
 
 # Create a custom greeting for your bot
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 A customer can start a conversation with a bot by entering any trigger phrase that starts a conversation defined by a topic. Sometimes the customer starts a conversation with a simple greeting, such as *Hello* or *Good morning*. To help you handle this common situation, Power Virtual Agents automatically includes a built-in Greeting system topic when you create a bot, which you can customize.
 
 Customizing your greeting gives you an opportunity to tell the customer that they are interacting with a bot rather than a human agent and to tailor the bot to reflect your organization's personality.

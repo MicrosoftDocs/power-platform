@@ -27,7 +27,7 @@ Make sure you have the System Administrator or System Customizer security role o
 
 **Check your security role**
 
-- Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
+- Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
 ## Settings
@@ -38,7 +38,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**AI Builder (preview)**  |   |
 > |Create AI models in PowerApps  | Default: On. If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](https://docs.microsoft.com/ai-builder/administer)  |
 > |**Embedded content**||  
-> |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)|  
+> |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](https://docs.microsoft.com/powerapps/user/add-powerbi-dashboards)|  
 > |Bing Maps|Default: Off. If **On**, Customer Engagement (on-premises) users will need to enter a Bing Maps key. Users don’t need to enter a key. |  
 > |Prevent social data in Dynamics|Default: Off. If you don’t want to receive social data in model-driven apps in Dynamics 365, select **Off**. If you disable social engagement, your organization will not be able to receive social data in model-driven apps in Dynamics 365. Users can continue to work with existing social data, however.|  
 > |**Communications**| |
@@ -52,11 +52,12 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Quick Find record limits|Default: On. If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Relevance search for the organization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/configure-relevance-search-organization)| 
 > |**Help features**||  
 > |Custom help for customizable entities|Default: Off. Select **On** to replace the default Help content with custom Help designed for your users. After you enable custom Help, you can enter a Global Custom Help URL.|  
-> |Global custom help URL| To replace the default Help with a single URL for all customizable record types (entities), enter the URL here. You also have the option of entering override URLs for each record type (entity) for customizable record types. More information: [Create your own guided help](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-guided-help-learning-path)|  
-> |Append parameters to URL|Default: Not selected.  Select **On** to append parameters to the URL, you can make your Help content more dynamic. For example, you can access parameters for User Language Code, Entity Name, Entry Point, and Form ID. More information: [Create your own guided help](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-guided-help-learning-path)|  
-> |Learning path|Default: Off. Changes access to Learning Path for an entire organization. More information: [On/off switch for Learning Path (guided help)](https://docs.microsoft.com/dynamics365/customer-engagement/admin/on-off-switch-for-learning-path-guided-help).|  
-> |Learning path authoring|Default: Off. Set to **On** if you want enable users to author Learning Path content. More information: [Create your own guided help (Learning Path) for your customers](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-guided-help-learning-path)|
+> |Global custom help URL| To replace the default Help with a single URL for all customizable record types (entities), enter the URL here. You also have the option of entering override URLs for each record type (entity) for customizable record types. More information: [Create your own guided help](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-guided-help-learning-path)|  
+> |Append parameters to URL|Default: Not selected.  Select **On** to append parameters to the URL, you can make your Help content more dynamic. For example, you can access parameters for User Language Code, Entity Name, Entry Point, and Form ID. More information: [Create your own guided help](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-guided-help-learning-path)|  
+> |Learning path|Default: Off. Changes access to Learning Path for an entire organization. More information: [On-off switch for Learning Path (guided help)](on-off-switch-for-learning-path-guided-help.md).|  
+> |Learning path authoring|Default: Off. Set to **On** if you want enable users to author Learning Path content. More information: [Create your own guided help (Learning Path) for your customers](https://docs.microsoft.com/powerapps/maker/common-data-service/create-custom-help-pages)|
 > |**Auditing**| |
 > |Start Auditing|Default: Off. Start or stop auditing.|  
 > |Log access|Default: Off. If enabled, model-driven apps in Dynamics 365 track when the user started accessing model-driven apps in Dynamics 365 and whether or not the user accessed the application by using the web application or Dynamics 365 for Outlook.| 
 > |Read logs |Default: Off. | 
+

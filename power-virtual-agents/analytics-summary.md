@@ -1,18 +1,18 @@
 ---
-
-title: "Analytics Summary page"
-description: "Learn about the Power Virtual Agents Analytics Summary page."
-ms.date: 12/2/2019
+title: "Report analytics, performance, and usage in Power Virtual Agents"
+description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
+ms.date: 11/12/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: mivakoc
-ms.author: mivakoc
-
+author: iaanw
+ms.author: iawilt
 manager: shellyha
+ms.cusom: analysis
+ms.collection: virtual-agent
 ---
 
-# Summary page
+# Analyze bot performance and usage in Power Virtual Agents
 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]

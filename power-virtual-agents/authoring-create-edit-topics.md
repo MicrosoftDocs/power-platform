@@ -16,7 +16,8 @@ ms.collection: virtualagent
 
 # Create and edit topics in your bot
 
-In Power Virtual Agents, a topic defines a conversation path with the bot for a specific customer intent. You specify one or more trigger phrases that prompt the bot to start the conversation. Then create a conversation path in Power Virtual Agents' conversation editor to lead customers to a resolution of their support issue.
+In Power Virtual Agents, a topic defines a conversation path with the bot for a specific customer intent. You can author topics by customizing provided templates or creating new topics from scratch. You specify one or more trigger phrases that prompt the bot to start the conversation. Then create a conversation path in Power Virtual Agents' conversation editor to lead customers to a resolution of their support issue.
+
 
 You can see how the conversation path works in practice by testing it in the **Test bot** pane and continue to fine-tune the topic until you are ready to deploy it.
 
@@ -102,6 +103,9 @@ Zoom in and out of the design canvas by using the conversation editor's Zoom in 
 
 As you design your topic's conversation path, you can use the **Test your bot** pane to see how the bot leads the customer through a conversation.
 
+
+Note, you can have upto 1000 topics in a bot.
+
 ## To test the topic in the Test bot pane
 
 1. To make sure you are using the most current bot content, select **Reset** at the top of the **Test bot** pane.
@@ -125,6 +129,4 @@ As you design your topic's conversation path, you can use the **Test your bot** 
 You can return to the conversation editor at any time to revise the topic's conversation path and continue to fine-tune the bot until you are ready to deploy it. For more information, see [Fundamentals - Publish your bot](publication-fundamentals-virtual-agent.md).
 
 For more information on using the **Test bot** pane, see [Test your bot](authoring-test-bot-virtual-agent.md).
-
-
 

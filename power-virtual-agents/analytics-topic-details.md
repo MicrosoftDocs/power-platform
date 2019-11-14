@@ -1,18 +1,18 @@
 ---
-title: "Topic details page"
-description: "Learn about the Power Virtual Agents Topic details page."
-
-ms.date: 12/02/2019
+title: "Analyze topic performance in Power Virtual Agents"
+description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
+ms.date: 11/12/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: mivakoc
-ms.author: mivakoc
-manager: mahesha
-
+author: iaanw
+ms.author: iawilt
+manager: shellyha
+ms.cusom: analysis
+ms.collection: virtual-agent
 ---
 
-# Topic details page
+# Analyze topic usage in Power Virtual Agents
 
 
 
@@ -22,7 +22,8 @@ manager: mahesha
 The topic details page provides a view into the performance of individual topics and how they can be improved.
 
 ![Topic details page](media/topic-details-page.png)
-
+>[!WARNING]
+>Need an updated image
 
 You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-CSAT.md) pages:
 
@@ -33,6 +34,10 @@ You can display the topic details page by selecting the **Detail** link in one o
 * [Customer satisfaction drivers (Customer Satisfaction page)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
 
 ![Topic details link](media/topic-details-link.png)
+
+>[!WARNING]
+>Need an updated image
+
 
 The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page. 
 

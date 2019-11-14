@@ -45,4 +45,4 @@ When you enable auditing, model-driven apps in Dynamics 365, such as Dynamics 36
   
 ### See also  
 [Audit data and user activity](audit-data-user-activity.md)<br />
-[Retrieve and delete the history of audited data changes](/dynamics365/customer-engagement/developer/retrieve-and-delete-the-history-of-audited-data-changes.md)
+[Retrieve and delete the history of audited data changes](https://docs.microsoft.com/powerapps/developer/common-data-service/retrieve-and-delete-the-history-of-audited-data-changes)
