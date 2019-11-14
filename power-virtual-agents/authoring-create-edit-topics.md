@@ -1,20 +1,20 @@
 ---
-title: "TITLE"
-description: "DESCRIPTION"
-keywords: "KEYWORDS"
-ms.date: 09/04/2019
+title: "Use topics to design a Power Virtual Agents bot conversation"
+description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, performa actions, and solve issues."
+keywords: ""
+ms.date: 11/14/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "VA"
-ms.collection: virtualagent
+ms.custom: authoring
+ms.collection: virtual-agent
 ---
 
 
-# Create and edit topics in your bot
+# Create and edit topics in your Power Virtual Agents bot
 
 In Power Virtual Agents, a topic defines a how a bot conversation plays out. 
 
@@ -30,6 +30,9 @@ There are two parts to designing a topic: the topic's details, including its nam
 
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you are ready to deploy it without having to exit the Power Virtual Agents portal.
 
+>[!Note]
+>You can have upto 1000 topics in a bot.
+
 ## Create a topic
 
 1. Go to the **Topics** tab on the side navigation pane to open the Topics page.
@@ -39,8 +42,6 @@ You can see how the bot conversation works in practice by testing it in the **Te
 1. On the Topics page, select **New topic**.
 
    ![Select New topic at the top of the Topics page](media/topics-new.png)
-
-   ![Select New topic at the top of the Topics page](media/topics-new-2.png)
 
 1. Specify a name, description, and one or more trigger phrases for the topic.
 
@@ -53,88 +54,133 @@ You can see how the bot conversation works in practice by testing it in the **Te
    ![The Save topic button is at the top of the Topic details page](media/topics-details-save.png)
 
 
-## To design the topic's conversation path
+## Design the topic's conversation path
 
-1. Select **Go to authoring canvas** to open the conversation editor.
+1. In the Topic details for the topic you want to edit, select **Go to authoring canvas**.
 
-<<< INCLUDE IMAGE OF TOPIC DETAILS PAGE HIGHLIGHTING THE BUTTON  >>>
+   ![The Go to authoring canvas is to the side of the trigger phrases](media/topics-details-canvas.png)
 
-Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
+1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
- <<< INCLUDE IMAGE OF AUTHORING CANVAS >>>
+   ![](media/topics-canvas.png)
  
-  As you define the topic's conversation path, you might want to expand the authoring canvas by hiding the test bot pane and side navigation pane. 
-Zoom in and out of the design canvas by using the conversation editor's Zoom in and Zoom out buttons. Orient the current view of the conversation path within the conversation path as a whole by using the conversation editor's Mini-map button.
+1. For existing or system topics, a number of nodes will automatically be created. You can edit these nodes. For more information on working with nodes, including variables, making conditional or branching logic, and using entities, see the [Use lesson topics in Power Virtual Agents article](authoring-template-topics.md).
 
-<<< INCLUDE SCREENSHOT OF THE CONTROLS ON BOTTOM LEFT OF THE AUTHORING CANVAS, HIGHLIGHT MINI MAP BUTTON >>>
+1. When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you. 
+
+1. You can add additional nodes by selecting the plus (**+**) icon on the line or branch between or after a node.
+
+    ![Screenshot of adding a node](media/handoff-add-node.png)
+
+### Insert nodes
+
+When adding a node, you can choose from five options. Each option has a specific node or nodes that will be inserted into the conversation path.
+
+You can:
+
+- **Ask a question**
+- **Call an action**
+- **Show a message**
+- **Go to another topic**
+- **End the conversation**
+
+  ![](media/topics-nodes.png)
  
-2. Enter the bot's response to the trigger phrase in the **Message** box.
+Additionally, you can **Branch based on a condition** when inserting a node between existing nodes:
 
-<<<< INCLUDE IMAGE OF MESSAGE NODE HIGHLIGHTED >>>>
+![](media/topics-nodes-branch.png)
 
-3. To specify an additional response by the bot, select **+** to add a node, select **Show a message** to add a new Message node.
+**Ask a question:**
 
-<<< INCLUDE IMAGE OF + CLICKED WITH OPTIONS EXPANDED >>>
+1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-   Then enter the additional response in the **Message** box.
+   ![](media/topics-question.png)
 
-4. To ask a question and get a response from the customer, select **Ask a question** in the options under the **+** to add a new node.    Enter the question text in the **Ask a question** box. 
+1. Enter the question phrase in the first text box **Ask a question**.
 
-<<< INCLUDE IMAGE OF ASK A QUESTION NODE ADDED >>>
+1. You can choose from several options for the user’s response in the **Identify** field. 
+   
+   These options determine what sort of information the bot should be listening for in the user's response. 
+   
+   For example, they could be multiple choice options, a number, or a specific string. 
+   
+   To understand more about the different options in this flyout, see [Using entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
 
-   You can provide several options for the user’s response from the **Listen for** flyout. To understand more about the different options in this flyout, see [Using Entities](advanced-entities-greedy-slot-filling-virtual-agent.md).
+1. Depending on what you choose in the **Identify** field, you can enter what options the user should have. 
+   
+   For example, if you select **Multiple choice options**, you can then enter the options the user can specify in the **Options for user** field. Each option is presented as a multiple choice button to the user, but users can also type in their answer in the bot.
 
-<<< INCLUDE IMAGE OF THE LISTEN FOR FLYOUT EXPANDED >>>
+   The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response. You can add additional nodes to create branching logic, and specify what the bot should respond with for each variable.
 
-   To give the customer a choice between different responses, select **Multiple choice options**.
+1. You can [save the user response in a variable](authoring-variables.md) to be used later. 
 
-  <<< INCLUDE IMAGE OF MULTIPLE CHOICE OPTIONS SELECTED >>>
+>[!TIP]
+>You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.
+>1. Select the menu icon on the top of the **Question** node, and then select **Options for user.
+>
+>    ![](media/topics-question-options.png)
+>
+>1. Select the **Synonyms** icon for the option you want to add additional keywords to. 
+>
+>    ![](media/topics-question-synonyms.png)
+>
+>1. Add the keywords individually, and then once you're done adding keywords, select **Done** to return to the **Authoring canvas**.
 
-   Then specify the options under **User options**. Add a couple options for the user to select from by clicking **+ New option** and entering the text of the option. Each option is presented as a multiple choice button to the user.
+**Call an action:**
 
-<<< INCLUDE IMAGE OF MULTIPLE CHOICE OPTIONS ADDED >>>
-
-  The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response.
-  
-<<< INCLUDE IMAGE OF THE FORKED TREE >>>
-
-  You can save the user response in a variable to be used later. For more information on using variables, see [Use variables](authoring-variables-virtual-agent.md)
-
-5. Add additional message nodes and user responses to complete the conversation path. Hover on the line between two nodes, and click on the **+** to add a new node.
-
-
-6. To add a customer satisfaction survey at the end of a response that resolves the customer issue, select **End the conversation**, then select **End with survey**.
-
-<<< INCLUDE IMAGE OF ENDING WITH SURVEY >>>
-
-   Then select **Save** to save the conversation path.
-
-As you design your topic's conversation path, you can use the **Test your bot** pane to see how the bot leads the customer through a conversation.
-
-
-Note, you can have upto 1000 topics in a bot.
-
-## To test the topic in the Test bot pane
-
-1. To make sure you are using the most current bot content, select **Reset** at the top of the **Test bot** pane.
-
- <<< INCLUDE IMAGE OF THE TEST BOT PANE >>>
-
-2. At the **Type your message** prompt at the bottom of the **Test bot** pane, enter a trigger phrase for the topic.
-
-<<< INCLUDE IMAGE OF TYPE A MESSAGE BOX >>>
-
-   The trigger phrase starts the topic's conversation. The **Test bot** pane displays the bot and user responses that you specified in the conversation editor.
-
- <<< INCLUDE IMAGE OF CONVERSATION IN PROGRESS IN TEST BOT PANE >>>
+You can [call Power Automate Flows](advanced-flow.md) by selecting **Call an action**.
  
-3. Continue the conversation path until you complete the conversation.
 
-<< INCLUDE IMAGE OF SURVEY SHOWING AT THE END OF CONVERSATION IN TEST BOT PANE >>>
+**Show a message:**
 
-   If the conversation editor is open, you can select a response in the **Test bot** pane to navigate to the response in the conversation editor.
+1. To specify a response from the bot, select **+** to add a node, and then **Show a message** to add a new **Message** node.
 
-You can return to the conversation editor at any time to revise the topic's conversation path and continue to fine-tune the bot until you are ready to deploy it. For more information, see [Fundamentals - Publish your bot](publication-fundamentals-virtual-agent.md).
+1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, and numbering. 
+   
+   You can also [use variables that you have defined elsewhere](authoring-variables.md) in your bot conversation.
 
-For more information on using the **Test bot** pane, see [Test your bot](authoring-test-bot-virtual-agent.md).
+
+**Go to another topic:**
+
+1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Go to another topic**.
+
+1. In the flyout menu, select the topic the bot should divert to. For example, you may wish to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
+
+    ![](media/topics-nodes-other-topic.png)
+
+**End the conversation:**
+
+When you end the conversation, you can have a survey appear that asks the user if their question or issue was answered or resolved correctly. This information is collected under the [customer satisfaction analytics page](analytics-csat.md).
+
+You can also have the conversation [handed over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service.
+
+1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
+
+    ![](media/topics-nodes-end.png)
+
+1. To end with a customer satisfaction survey, select **End with survey**.
+    
+    ![](media/topics-nodes-survey.png)
+
+1. Select **Transfer to agent** to insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel.md). You can also enter a private message to the agent.
+
+    ![](media/topics-nodes-handoff.png)
+
+
+**Branch based on a condition:**
+
+1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, and then **Add a condition** and **Branch based on a condition**.
+
+1. Choose the variable you want to use to determine if the bot conversation should branch at this point. For example, if you have set up [end-user authentication](advanced-end-user-authentication.md) then you might want to specify a different message if the user is signed on (which may have happened earlier in the conversation).
+
+    ![](media/topics-branch.png)
+
+
+
+## Test and publish your bot
+
+You should [test your bot](authoring-test-bot.md) when you make changes to your topics, to ensure everything is working as expected.
+
+Once you've finished designing and testing your bot, you can consider [publishing it to the web, mobile or native apps, or Azure Bot Framework channels](publication-fundamentals-publish-channels.md).
+
 

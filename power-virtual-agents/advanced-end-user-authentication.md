@@ -30,7 +30,7 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 
 1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
 
-1. Open the authoring canvas for the topic you want to add the authentication template to.
+1. Open the **Authoring canvas** for the topic you want to add the authentication template to.
 
 1. Select the plus (**+**) icon to add a message node. Enter what the bot should say to indicate that a sign-on experience is about to occur.
 
