@@ -16,27 +16,31 @@ ms.collection: virtualagent
 
 # Create and edit topics in your bot
 
-In Power Virtual Agents, a topic defines a conversation path with the bot for a specific customer intent. You can author topics by customizing provided templates or creating new topics from scratch. You specify one or more trigger phrases that prompt the bot to start the conversation. Then create a conversation path in Power Virtual Agents' conversation editor to lead customers to a resolution of their support issue.
+In Power Virtual Agents, a topic defines a how a bot conversation plays out. 
 
+You can author topics by customizing provided templates, create new topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md). 
 
-You can see how the conversation path works in practice by testing it in the **Test bot** pane and continue to fine-tune the topic until you are ready to deploy it.
+A topic has trigger phrases - these are phrases, keywords, or questions that a user is likely to type that is related to a specific issue. 
 
-## To create a topic
+The AI uses natural language understanding to parse what a customer actually types and find the most appropriate trigger phrase. 
+
+For example, a user might type *Open hours* into your bot - the AI will be able to match that to the **Store hours** topic and begin a conversation that asks which store the customer is interested in, and then display the hours the store is open.
+
+There are two parts to designing a topic: the topic's details, including its name and trigger phrases, and the bot conversation, which is defined by a series of nodes that you insert in the **Authoring canvas** for that topic.
+
+You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you are ready to deploy it without having to exit the Power Virtual Agents portal.
+
+## Create a topic
 
 1. Go to the **Topics** tab on the side navigation pane to open the Topics page.
 
-In Power Virtual Agents, select **Manage** on the side navigation pane, and then go to the **Channels** tab. 
-
-   ![](media/topics-menu.png)
-
- The Topics page displays a list of your bot's current topics. Power Virtual Agents includes some built-in topics to get you started.
-
-  Power Virtual Agents also includes several system topics that help you address common situations — a customer greeting, escalation to a live agent, the end of the conversation, a confirmed success, or a confirmed failure.
- 
+   ![Select Topics on the side navigation menu](media/topics-menu.png)
 
 2. On the Topics page, select **New topic**.
 
-<<< INCLUDE IMAGE OF NEW TOPIC BUTTON HIGHLIGHTED >>>>
+   ![Select New topic at the top of the Topics page](media/topics-new.png)
+
+   ![Select New topic at the top of the Topics page](media/topics-new-2.png)
 
 3. Specify a name, description, and one or more trigger phrases for the topic.
 
