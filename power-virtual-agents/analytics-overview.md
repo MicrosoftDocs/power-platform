@@ -12,7 +12,7 @@ ms.cusom: analysis
 ms.collection: virtual-agent
 ---
 
-# Fundamentals - Analysis in Power Virtual Agents
+# Analysis in Power Virtual Agents
 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]

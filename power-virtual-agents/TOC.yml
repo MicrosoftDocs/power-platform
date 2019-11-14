@@ -76,10 +76,6 @@
      href: extend-custom-canvas-connect.md
    - name: Upload a custom canvas with Microsoft Bot Framework
      href: extend-custom-canvas-upload.md
-   - name: Configure your Bot Framework dispatcher (REM)
-     href: configuration-dispatcher.md
-   - name: configure Microsoft Bot Framework Skills (REM)
-     href: configuration-add-skills.md
 - name: Data Subject Rights (DSR) requests under GDPR
   items:
    - name: Key concepts - GDPR compliance
