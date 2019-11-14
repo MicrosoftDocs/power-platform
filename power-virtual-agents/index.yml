@@ -71,7 +71,7 @@ landingContent:
     # Card (optional)
   - title: Publish and integrate
     linkLists:
-      - linkListType: deploy
+      - linkListType: reference
         links:
           - text: Configure demo and live websites
             url: publication-connect-bot-to-web-channels.md
