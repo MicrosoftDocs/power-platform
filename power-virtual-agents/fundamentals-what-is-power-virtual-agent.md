@@ -1,5 +1,5 @@
 ---
-title: "Power Virtual Agents Preview overview"
+title: "Power Virtual Agents overview"
 description: "Learn the basics of Power Virtual Agents."
 ms.date: 08/21/2019
 ms.service:
@@ -11,11 +11,13 @@ manager: shellyha
 ---
 
 
+
 # PLACEHOLDER
 
 This page will have Omar's blog content once it is finalized.
 
 ## Power Virtual Agents Preview overview
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
