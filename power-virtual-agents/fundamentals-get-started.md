@@ -58,7 +58,7 @@ Your bot is created in the default Power Apps environment that was created for y
 
 1.	Now that you have full functionality within your bot, you can create your own custom topic—or, in other words, a dialogue tree specifying how your bot responds to a user’s question.
 
-2.	Start by selecting **Topics** in the left pane, and then select **New topic** at the top of the page.
+2.	Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page.
 
     ![New topic](media/create-new-topic.png)
     
@@ -96,7 +96,7 @@ The authoring canvas creates separate paths in the conversation, depending on th
 <<<< IMAGE SHOWING THE Condition nodes filled out >>>>
 
 
-8. Finally, click the **+** below each of the Condition nodes to add a **Message** node in each branch. Add a simple message like 'Hello Seattle!' in the Seattle branch, and 'Hello Bellevue!' in the Bellevue branch. Select **Save** in the upper-right corner.
+8. Finally, click the **+** below each of the Condition nodes to add a **Message** node in each branch. Add a simple message like 'Hello Seattle!' in the Seattle branch, and 'Hello Bellevue!' in the Bellevue branch. Select **Save** at the top.
 
     ![Complete conversation](media/quickstart-create-topic-03.png)
     
@@ -114,7 +114,7 @@ You now have a very simple branching dialog tree, congratulations! You can begin
       << IMAGE UPDATE NEEDED >>>>>
       
       
-    If the test bot is not showing on your screen, select **Test your bot** in the lower-left corner of your screen.
+    If the test bot is not showing on your screen, select **Test your bot** at the bottom of the side navigation pane.
 
     ![Test bot control](media/quickstart-test-bot-01.png)
 
@@ -146,7 +146,7 @@ The bot is now waiting for you to respond and has provided suggestions on how to
 
 ## Publish your bot
 
-1.	Once you are fine with the content authored in your bot, you can publish your bot to a website. Start by selecting the **Publish** tab in the left pane.
+1.	Once you are fine with the content authored in your bot, you can publish your bot to a website. Start by selecting the **Publish** tab in the side navigation pane.
 
     ![Deploy bot to demo website](media/quickstart-deploy-demo.png)
     
@@ -159,7 +159,7 @@ The bot is now waiting for you to respond and has provided suggestions on how to
     
       << IMAGE UPDATE NEEDED >>>>>
  
-3. Then click on the demo website link under 'Share your bot' to see it in action on a demo website. A new window opens in your browser. If this doesn't happen automatically, check whether a pop-up blocker has been activated and, if so, allow the window to be opened. Usually, you can allow pop-ups from the URL field directly. This is a webpage that demonstrates what your bot looks like to an end-user who comes to your webpage. The bot canvas is in the lower-right corner. You can interact with it by typing into the window or by selecting a starter phrase from the options on the left. This is your bot in action. 
+3. Then click on the demo website link under 'Share your bot' to see it in action on a demo website. A new window opens in your browser. If this doesn't happen automatically, check whether a pop-up blocker has been activated and, if so, allow the window to be opened. Usually, you can allow pop-ups from the URL field directly. This is a webpage that demonstrates what your bot looks like to an end-user who comes to your webpage. The bot canvas is at the bottom. You can interact with it by typing into the window or by selecting a starter phrase from the provided options. This is your bot in action. 
 
     ![Share your bot](media/quickstart-deploy-02.png)
     
@@ -170,7 +170,7 @@ For more information on publishing your bot to other channels, reference the doc
 
 ## Analyze the performance of your bot
 
-1.	Once your bot has completed interactions with users, the statistics are available via the **Analytics** tab in the left pane. Here, you can find key performance indicators (KPIs) showing the volume of sessions your bot has handled, how effectively your bot was able to engage end-users and resolve issues, escalation rates to human agents, and abandonment rates during conversations. You will also find customer satisfaction information at the KPI level as well as in the **Customer Satisfaction** tab.
+1.	Once your bot has completed interactions with users, the statistics are available via the **Analytics** tab in the side navigation pane. Here, you can find key performance indicators (KPIs) showing the volume of sessions your bot has handled, how effectively your bot was able to engage end-users and resolve issues, escalation rates to human agents, and abandonment rates during conversations. You will also find customer satisfaction information at the KPI level as well as in the **Customer Satisfaction** tab.
 
     > [!NOTE]
     > There is up to a 1-hour delay between when the conversations occur and when the statistics for those conversations appear in the analytics views. Also, all interactions with the bot are logged in analytics, including interactions from your demo website, custom website, or test bot.

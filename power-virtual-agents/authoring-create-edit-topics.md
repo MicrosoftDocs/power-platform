@@ -23,9 +23,11 @@ You can see how the conversation path works in practice by testing it in the **T
 
 ## To create a topic
 
-1. Select **Topics** in the left pane to open the Topics page.
+1. Go to the **Topics** tab on the side navigation pane to open the Topics page.
 
-<<< INCLUDE IMAGE OF LEFT NAV WITH TOPICS HIGHLIGHTED >>>
+In Power Virtual Agents, select **Manage** on the side navigation pane, and then go to the **Channels** tab. 
+
+   ![](media/topics-menu.png)
 
  The Topics page displays a list of your bot's current topics. Power Virtual Agents includes some built-in topics to get you started.
 
@@ -55,7 +57,7 @@ Power Virtual Agents opens the topic in the authoring canvas and displays the to
 
  <<< INCLUDE IMAGE OF AUTHORING CANVAS >>>
  
-  As you define the topic's conversation path, you might want to expand the authoring canvas by hiding the test bot pane and left pane. 
+  As you define the topic's conversation path, you might want to expand the authoring canvas by hiding the test bot pane and side navigation pane. 
 Zoom in and out of the design canvas by using the conversation editor's Zoom in and Zoom out buttons. Orient the current view of the conversation path within the conversation path as a whole by using the conversation editor's Mini-map button.
 
 <<< INCLUDE SCREENSHOT OF THE CONTROLS ON BOTTOM LEFT OF THE AUTHORING CANVAS, HIGHLIGHT MINI MAP BUTTON >>>

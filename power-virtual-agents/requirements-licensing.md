@@ -22,7 +22,7 @@ You can pruchase Power Virtual Agents licenses for your organization from the [M
 
 ### Purchasing Base and USL SKUs
 1. Navigate to [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
-2. On the left navigation pane, select **Billing -> Purchase services**
+2. On the side navigation pane, select **Billing -> Purchase services**
 3. Search for Power Virtual Agents
 4. Select Power Virtual Agents and Power Virtual Agents user license
 5. On the confirmation screen, select the number of licenses you would like to purchase
@@ -30,7 +30,7 @@ You can pruchase Power Virtual Agents licenses for your organization from the [M
 
 ### Give indidvidual users access
 1. Navigate to [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
-2. On the left navigation pane, select **Users -> Active users**
+2. On the side navigation pane, select **Users -> Active users**
 3. Select users to whom you would like to give access and select **Manage product licenses**
 4. Select **Power Virtual Agents user license** and click **Save changes**
 

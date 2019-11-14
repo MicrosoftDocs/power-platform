@@ -1,61 +1,66 @@
 ---
-title: "TITLE"
-description: "DESCRIPTION"
-keywords: "KEYWORDS"
-ms.date: 09/04/2019
+title: "Check your Power Virtual Agents bot with the Test bot"
+description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
+keywords: ""
+ms.date: 11/13/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "VA"
-ms.collection: virtualagent
+ms.custom: authoring
+ms.collection: virtual-agent
 ---
 
-# Test your bot
+# Test your Power Virtual Agents bot
 
-As you design your bot in Power Virtual Agents for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the conversation path. To help you find and fix unexpected behavior, you can enable tracking to take you through the conversation path step by step, and go to the corresponding node in the authoring canvas.
+As you design your bot in Power Virtual Agents for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation. 
 
-## To test a topic in the Test bot pane
+To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.
 
-1. To make sure you are using the most current bot content, select **Reset** at the top of the **Test bot** pane. This will also clear any previous conversation in the test pane.
+## Test a topic in the Test bot pane
 
-<<< INCLUDE IMAGE OF TEST PANE WITH RESET BUTTON HIGHLIGHTED >>>
+1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
 
-2. At the **Type your message** prompt at the bottom of the **Test bot** pane, enter a trigger phrase for the topic.
+   ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu.png)
 
-<<< INCLUDE IMAGE OF ENTERING SOMETHING IN THE TYPE YOUR MESSAGE BOX >>>
+1. To make sure you're using the most current bot content, select **Reset** at the top of the **Test bot** pane. This will load any changes you've made to topics, and will clear any previous conversation in the test pane.
+
+   ![Click Reset at the top of the Test bot pane to clear conversation history](media/test-bot-reset.png)
+
+1. At the **Type your message** prompt at the bottom of the **Test bot** pane, enter a trigger phrase for the topic.
 
    The trigger phrase starts the topic's conversation, and the **Test bot** pane displays the bot responses and user response choices you specified.
 
+1. Continue the conversation, testing that it flows in the intended as [designed in the topic](authoring-create-edit-topics.md).
 
-<<< INCLUDE IMAGE OF CONVERSATION STARTED IN THE TEST BOT PANE >>>
+1. Select a response in the **Test bot** pane, which will take you to the response in the conversation editor for that topic. The authoring canvas displays highlighted nodes in green.
+
+  ![Select any response in the conversation to see the authoring canvas highlighted to that response](media/test-bot-response.png)
+
+You can return to the authoring canvas for the topic  at any time to revise it's conversation path. The **Test chat** pane will automatically refresh itself when you save changes to a toic.
 
 
-3. Continue the conversation path until you complete the conversation.
 
-<<< INCLUDE IMAGE OF END OF CONVERSATION WITH SURVEY >>>
+## Track through the topic's conversation path
 
-   If the conversation editor is open, you can select a response in the **Test bot** pane, which will take you to the response in the conversation editor.
+As you fine-tune your bot, it can be useful to enable tracking between topics so you can follow through the conversation path step by step.
 
-You can return to the conversation editor at any time to revise the topic's conversation path.
+1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
 
-As you fine-tune your bot, it can be useful to enable tracking to take you through the conversation path step by step.
+   ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu.png)
 
-## To track through the topic's conversation path
 
-1. In the upper-left corner of the **Test bot** pane, select the **Track between topics** toggle button to enable tracking.
+1. At the top of the **Test bot** pane, set **Track between topics** to **On**.
 
-<< INCLUDE IMAGE TO SHOW TOGGLE HIGHLIGHTED >>>
+   ![Switch the track bettern topics toggle at the top of th test bot pan](media/test-bot-track.png)
 
-2. Follow the steps discussed above to test your topic. 
+1. Enter a trigger phrase for the topic you want to check, and then continue testing the conversation.
 
-3. As you move through the conversation in the **Test bot** pane, the authoring canvas highlights the current place in the conversation path. The authoring canvas displays highlighted nodes in green.
+1. As you move through the conversation in the **Test bot** pane, the authoring canvas highlights the current place in the conversation path. The authoring canvas displays highlighted nodes in green.
 
-<<< INCLUDE IMAGE OF HIGHLIGHTED NODE IN CANVAS >>>
-
-4. To navigate to an earlier place in the conversation path in the authoring canvas, select it in the **Test bot** pane.
+1. To navigate to an earlier place in the conversation path in the authoring canvas, select it in the **Test bot** pane.
 
 If the conversation path in the **Test your bot** pane moves from one topic to another topic, the authoring canvas refreshes and moves between topics to the appropriate highlighted nodes.
 

@@ -93,7 +93,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 ### Configure the Facebook channel in Power Virtual Agents
 
-1. In Power Virtual Agents, select **Manage** on the side navigation panel, and then go to the **Channels** tab. 
+1. In Power Virtual Agents, select **Manage** on the side navigation pane, and then go to the **Channels** tab. 
 
 2. Select the **Facebook** tile to open the configuration window.
 
@@ -193,7 +193,7 @@ Learn more at [What are the differences between Workplace Standard and Workplace
 ## Remove your bot from Facebook Messenger or Facebook Workplace
 When you do not want the bot to be reachable in Facebook Messenger or Facebook Workplace, you can remove the bot from Facebook. 
 
-1. In Power Virtual Agents, select **Manage** on the side navigation panel, and then go to the **Channels** tab. 
+1. In Power Virtual Agents, select **Manage** on the side navigation pane, and then go to the **Channels** tab. 
 
 1. Select the **Facebook** tile and then **Delete**.
 

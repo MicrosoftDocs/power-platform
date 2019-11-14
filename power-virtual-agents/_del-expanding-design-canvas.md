@@ -18,7 +18,7 @@ As you design the conversation path for your bot in the conversation editor, you
 
 To help you work with a complex conversation path, Power Virtual Agents provides a variety of tools to expand the size of the design canvas, adjust the position of the conversation path, zoom in and out of the canvas, and orient the current view of the conversation path. You can:
 
-* [Expand the size of the design canvas](#expand-the-size-of-the-design-canvas) by hiding the test bot and left pane.
+* [Expand the size of the design canvas](#expand-the-size-of-the-design-canvas) by hiding the test bot and side navigation pane.
 * [Adjust the position of the conversation path](#adjust-the-position-of-the-conversation-path) in the design canvas by using the horizontal scroll bar.
 * [Zoom in and out of the design canvas](#zoom-in-and-out-of-the-design-canvas) by using the conversation editor's **Zoom in** and **Zoom out** buttons.
 * [Orient the current view of the conversation path](#orient-the-current-view-of-the-conversation-path) within the conversation path as a whole by using the conversation editor's **Mini-map** button.
@@ -31,7 +31,7 @@ When you open a topic in the conversation editor, Power Virtual Agents by defaul
 
 To expand the size of the conversation editor design canvas, you can hide the test bot and navigation.
 
-To hide the test bot pane, select **Hide bot** in the lower-left corner of Power Virtual Agents.
+To hide the test bot pane, select **Hide bot** at the bottom of the side navigation pane.
 
 ![Hide Test bot](media/hide-test-va.png)
 
