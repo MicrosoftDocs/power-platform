@@ -16,8 +16,6 @@
      href: authoring-template-topics.md
    - name: Create and edit topics
      href: authoring-create-edit-topics.md
-   - name: Use template topics and system topics
-     href: authoring-template-topics.md
    - name: Manage topics
      href: authoring-topic-management.md
    - name: Test your bot
