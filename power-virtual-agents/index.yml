@@ -42,7 +42,7 @@ landingContent:
   # Card (optional)
   - title: Create bots and topics
     linkLists:
-      - linkListType: author and edit
+      - linkListType: get-started
         links:
           - text: Create your first bot
             url: authoring-first-bot.md
@@ -54,7 +54,7 @@ landingContent:
   # Card (optional)
   - title: Enhance bot topics
     linkLists:
-      - linkListType: enhance and improve
+      - linkListType: reference
         links:
           - text: Use Entities
             url: advanced-entities-slot-filling.md
@@ -71,7 +71,7 @@ landingContent:
     # Card (optional)
   - title: Publish and integrate
     linkLists:
-      - linkListType: publish
+      - linkListType: deploy
         links:
           - text: Configure demo and live websites
             url: publication-connect-bot-to-web-channels.md
@@ -84,7 +84,7 @@ landingContent:
   # Card
   - title: Monitor and diagnose
     linkLists:
-      - linkListType: 
+      - linkListType: reference
         links:
           - text: Use analytics to improve your bot
             url: analytics-overview.md
