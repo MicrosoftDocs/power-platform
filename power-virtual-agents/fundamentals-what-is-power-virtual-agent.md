@@ -10,7 +10,12 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Power Virtual Agents Preview overview
+
+# PLACEHOLDER
+
+This page will have Omar's blog content once it is finalized.
+
+## Power Virtual Agents Preview overview
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -34,13 +39,13 @@ Using Power Virtual Agents, you can:
 
 ## Highlights of Power Virtual Agents
 
-- **Get started in seconds**. Power Virtual Agents is a software-as-a-service (SaaS) offering. It allows you to easily sign up, create your bot, and embed it into your website with just a few clicks. There’s no infrastructure to maintain or complex systems to deploy. 
+- **Get started in seconds**. Power Virtual Agents is a software-as-a-service (SaaS) offering. It allows you to easily sign up, create your bot, and embed it into your website with just a few clicks. Thereâ€™s no infrastructure to maintain or complex systems to deploy. 
 
 - **Empower your subject matter experts**. Using Power Virtual Agents, your customer service teams are in the driver's seat. Your SMEs can create bots quickly and easily using a **novel, intuitive, code-free graphical interface**, eliminating the need for AI expertise or teams of developers.
 
     ![No-code interface](media/overview-no-code.png)
 
-3. **Enable rich, natural conversations.** Microsoft’s powerful conversational AI capabilities enable your end users to have rich multi-turn conversations that quickly guide them to the right solution. And, unlike most products on the market, there’s no need to retrain AI models. All you need is to provide a few examples of what topic you want the bot to handle and you’re ready to go.
+3. **Enable rich, natural conversations.** Microsoftâ€™s powerful conversational AI capabilities enable your end users to have rich multi-turn conversations that quickly guide them to the right solution. And, unlike most products on the market, thereâ€™s no need to retrain AI models. All you need is to provide a few examples of what topic you want the bot to handle and youâ€™re ready to go.
    ![Natural conversation with a bot](media/overview-conversation.png)
  
 4. **Enable bots to take action.** Bots that can chat with your users are great, but bots that can act on their behalf are even better. With Power Virtual Agents, you can easily integrate with services and back-end systems out-of-the-box or through hundreds of easy-to-add custom connectors using Power Automate. This makes it simple to create a bot that not only responds to the user, but also takes action to resolve their issues.
@@ -60,6 +65,7 @@ Using Power Virtual Agents, you can:
 [Creating custom topics for your bot](getting-started-create-topics.md)
 
 [Deploying your bot](getting-started-deploy.md)
+
 
 [Using analytics to improve your bot](getting-started-analytics.md)
 
