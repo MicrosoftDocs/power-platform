@@ -26,9 +26,11 @@ This article describes how to set up a demo to test and configure this functiona
 
 [Direct Line](https://docs.microsoft.com/azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0) provides a temporary storage of user attachments, up to 4 MB per attachment for about 24 hours. If the user needs to upload more than 4 MB, you should use your own storage rather than Direct Line.
 
-> IMPORTANT: When handling user input such as attachments, please verify that the attachment is free of inappropriate content and is what your bot expected to receive.
+>[!IMPORTANT]
+>When handling user input such as attachments, please verify that the attachment is free of inappropriate content and is what your bot expected to receive.
 
-> IMPORTANT: When dealing with personal data, please respect user privacy. Follow platform guidelines and post your privacy statement online.
+>[!IMPORTANT]
+>When dealing with personal data, please respect user privacy. Follow platform guidelines and post your privacy statement online.
 
 
 # How to run locally
@@ -115,9 +117,9 @@ During development, you will run your bot locally. Azure Bot Services will send 
 
 1. Select **Manage** and then go to the **Channels** tab on the side navigation panel.
 
-1. Select **Demo Website** and copy the bot's Url to your clipboard.
+1. Select **Demo Website** and copy the bot's URL to your clipboard.
 
-1. Retreive the `botid` and `bottenentid` from the url, you will need to place these within `/bot/.env`
+1. Retreive the `botid` and `bottenentid` from the URL, you will need to place these within `/bot/.env`
       -  `BOT_ID=8ef39aa5-81a8-460e-8a15-2ebc338ce456`  
       -  `BOT_TENANT_ID=816d751c-c4fd-48b0-bc7d-898eed92e911`
 
@@ -167,7 +169,7 @@ After all attachments are uploaded to Azure Storage, we will send an event activ
 >[!Note]
 >The SAS token allows the user to upload huge files that may incur unexpected charges to your system. 
 >You should take countermeasures against abuse. 
->>For example, using reverse-proxy, removing files more frequently, or capping the size that your system can handle per hour based on certain demographic data.
+>For example, using reverse-proxy, removing files more frequently, or capping the size that your system can handle per hour based on certain demographic data.
 
 
 #### Using an event activity for uploaded files
@@ -185,7 +187,7 @@ Since revoking the URL created through `createObjectURL` is not trivial, there i
 >[!IMPORTANT]
 >It is critical that you verify the uploaded files before continuing to process them in your system.
 
-When the bot receives event activity named `upload`, it will start validating the content of the file, and respond to the userwith the result of the validation.
+When the bot receives event activity named `upload`, it will start validating the content of the file, and respond to the user with the result of the validation.
 
 In our sample, we will only read metadata and properties from each blob, and respond with a thumbnail card.
 
@@ -195,7 +197,7 @@ In your production system, you should always verify if the uploaded file is vali
 
 We use the [Lifecycle Management](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts) feature from Azure Storage. 
 
-## Content of the `.env` files
+## Content of the .env files
 
 The `.env` files hold the environment variables critical to run the service. This is usually security-sensitive information and must not be committed to version control. 
 

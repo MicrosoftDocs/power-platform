@@ -74,9 +74,9 @@ During development, you will run your bot locally. Azure Bot Services will send 
 
 1. Select **Manage** and then go to the **Channels** tab on the side navigation panel.
 
-1. Select **Demo Website** and copy the bot's Url to your clipboard.
+1. Select **Demo Website** and copy the bot's URL to your clipboard.
 
-1. Retreive the `botid` and `bottenentid` from the url, you will need to place these within `/bot/.env`
+1. Retreive the `botid` and `bottenentid` from the URL, you will need to place these within `/bot/.env`
       -  `BOT_ID=8ef39aa5-81a8-460e-8a15-2ebc338ce456`  
       -  `BOT_TENANT_ID=816d751c-c4fd-48b0-bc7d-898eed92e911`    
 
