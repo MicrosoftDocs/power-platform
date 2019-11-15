@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/02/2019
+ms.date: 11/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -93,7 +93,7 @@ To limit the impact on users, the maintenance window is planned according to the
 | SAM           | crm2.dynamics.com | 12 AM to 10 AM |
 | CAN           | crm3.dynamics.com | 1 AM to 10 AM |
 | EUR           | crm4.dynamics.com | 6 PM to 3 AM |
-| FRA           | crm4.dynamics.com | 6 PM to 3 AM | 
+| FRA           | crm12.dynamics.com | 6 PM to 3 AM | 
 | APJ           | crm5.dynamics.com | 3 PM to 8 PM |
 | OCE           | crm6.dynamics.com | 11AM to 9PM |
 | JPN           | crm7.dynamics.com | 10 AM to 7 PM |
