@@ -15,11 +15,16 @@ ms.collection: virtualagent
 
 # Description
 
-In this demo, we will show how to connect a custom canvas to directly upload file(s) to Azure Storage, and then send the blob URL to the bot for validation and further processing.
+You can connect your Power Virtual Agents bot to a custom canvas so you can directly upload file(s) to an Azure Storage blob, and then send the blob URL to the bot for validation and further processing.
 
-## Background
+This article describes how to set up a demo to test and configure this functionality.
 
-Direct Line provides a temporary storage of user attachments, up to 4 MB per attachment for about 24 hours. If the end-user needs to upload more than 4 MB, it is always advised that the developer use their own storage.
+>[!WARNING]
+>Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
+
+## Direct Line storage considerations
+
+[Direct Line](https://docs.microsoft.com/azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0) provides a temporary storage of user attachments, up to 4 MB per attachment for about 24 hours. If the user needs to upload more than 4 MB, you should use your own storage rather than Direct Line.
 
 > IMPORTANT: When handling user input such as attachments, please verify that the attachment is free of inappropriate content and is what your bot expected to receive.
 
@@ -28,7 +33,7 @@ Direct Line provides a temporary storage of user attachments, up to 4 MB per att
 
 # How to run locally
 
-This demo integrates with multiple services. There are multiple services you need to setup in order to host the demo.
+This demo integrates with multiple services that you need to set up to host the demo.
 
 1. [Clone the code](#clone-the-code)
 1. [Setup Azure Storage](#setup-azure-storage)
@@ -206,6 +211,6 @@ Since revoking the URL created through `createObjectURL` is not trivial, there i
 -  [Generating a Direct Line token](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
 -  [Enhanced Direct Line Authentication feature](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/)
 -  [Azure Storage: Setting up storage lifecycle management](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts)
-
+-  [Add Power Virtual Agent bot to Azure Bot Service channels](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-azure-bot-service-channels)
 
 

@@ -81,15 +81,15 @@ By default a new topic created will be 'on'.
 
 Once you have created a few topics, you may want to use a previous topic as a baseline when creating new topics.
 
-On the topic list page, hover on a topic, select the menu icon tand then **Make a copy**. 
+On the topic list page, hover on a topic, select the menu icon and then **Make a copy**. 
 
 ![](media/topics-menu-icon.png)
 
 As the name suggests, this option creates a duplicate of the selected topic with (Copy) appended to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
 
-The new topic appears on either the top or bottom of the **User topics** list, depenending on the page sort (ascending or descending). 
+The new topic appears on either the top or bottom of the **User topics** list, depending on the page sort (ascending or descending). 
 
-A copied topic topic has a status of **Off** by default when it is copied to avoid confusion on which topic will trigger, since the trigger phrases are the same as the original topic. 
+A copied topic has a status of **Off** by default when it is copied to avoid confusion on which topic will trigger, since the trigger phrases are the same as the original topic. 
 
 Once you are done editing the new topic, you can turn it on to [test it in the Test bot](authoring-test-bot.md) and, when ready, publish the new topic.
 
