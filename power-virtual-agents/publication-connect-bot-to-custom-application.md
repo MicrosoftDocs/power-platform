@@ -64,7 +64,7 @@ Code snippets used in this document are from:
 The instructions in this document reference the following:
 - [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0)
 - [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens)
-- [Contextual variables available upon hand-off](advanced-hand-off#contextual-variables-available-upon-hand-off)
+- [Contextual variables available upon hand-off](advanced-hand-off.md#contextual-variables-available-upon-hand-off)
 - [Microsfot Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
 
 ### Retrieve your Power Virtual Agent bot parameters

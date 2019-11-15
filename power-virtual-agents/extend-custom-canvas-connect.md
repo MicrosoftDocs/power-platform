@@ -30,8 +30,8 @@ This article describes how to set up a demo to test and configure this functiona
 This demo integrates with multiple services that you need to set up to host the demo.
 
 1. [Clone the code](#clone-the-code)
-1. [Setup Azure Bot Services](#setup-azure-bot-services)
-1. [Setup bot And Direct Line](#setup-bot-and-direct-line)
+1. [Setup Azure Bot Services](#set-up-azure-bot-services)
+1. [Setup bot And Direct Line](#set-up-bot-and-direct-line)
 1. [Prepare and run the code](#prepare-and-run-the-code)
 
 ## Clone the code
@@ -41,7 +41,7 @@ To host this demo, you will need to clone the code and run it locally.
 1. Clone this repository (https://github.com/microsoft/dynamics365-virtualagent-samples/tree/master/Utilities/ContentConverter)
 1. Create two empty files for environment variables, `/bot/.env` and `/web/.env`
 
-## Setup Azure Bot Services
+## Set-up Azure Bot Services
 
 >[!TIP]
 > We suggest you use [Bot Channel Registration](https://ms.portal.azure.com/#create/Microsoft.BotServiceConnectivityGalleryPackage) during development. This will help you diagnose problems locally without deploying to the server, and speed up development.
@@ -69,7 +69,7 @@ During development, you will run your bot locally. Azure Bot Services will send 
       -  Select **Settings**
       -  In the **Configuration** section, set **Messaging Endpoint** to `https://a1b2c3d4.ngrok.io/api/messages`
 
-## Set up bot and Direct Line
+## Set-up bot and Direct Line
 1. Create your bot at the [Power Virtual Agents portal](https://powerva.microsft.com)
 
 1. Select **Manage** and then go to the **Channels** tab on the side navigation panel.
