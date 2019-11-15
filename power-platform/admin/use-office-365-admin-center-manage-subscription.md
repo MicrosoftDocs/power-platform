@@ -56,7 +56,7 @@ search.app:
 ## Check your service health  
  You can quickly get real-time status of your model-driven apps in Dynamics 365 and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services. The Service health page on the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] provides a comprehensive view of the service health of your online services. If users are having trouble signing in to model-driven apps in Dynamics 365, check this page to see if there is a service outage.  
   
-For more information, see [Check your service health](use-office-365-admin-center-manage-subscription.md#check-your-service-health).
+For more information, see [Check your service health](check-online-service-health.md).
   
 <a name="BKMK_ServiceMessages"></a>   
 
