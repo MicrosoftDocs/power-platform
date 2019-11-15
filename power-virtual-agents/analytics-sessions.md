@@ -22,7 +22,7 @@ ms.collection: virtual-agent
 >[!WARNING]
 >Need an updated image
 
-You can download information from your bot conversations for the last 30 days. You can download information from up to 1,000 sessions.
+You can download a maximum of seven days of sessions from the past 30 days. If your bot had a high number of sessions, they will be broken down into multiple rows. Click on each row to download the sessions for the specified timeframe.
 
 >[!WARNING]
 >I think this has changed.
