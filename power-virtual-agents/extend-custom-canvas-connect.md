@@ -25,7 +25,7 @@ This article describes how to set up a demo to test and configure this functiona
 >[!WARNING]
 >Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
 
-# How to run locally
+## How to run locally
 
 This demo integrates with multiple services that you need to set up to host the demo.
 
@@ -112,7 +112,7 @@ This sample includes multiple parts:
 
 The `.env` files hold the environment variables critical to run the service. This is usually security-sensitive information and must not be committed to version control. 
 
-Although we recommend to keep them in [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/), for simplicity in this demo, we keep them in the `.env` files.
+Although we recommend to keep them in [Azure Key Vault](https://azure.microsoft.com/services/key-vault/), for simplicity in this demo, we keep them in the `.env` files.
 
 To ease the setup of this sample, the following is the template of the `.env` files.
 

@@ -64,7 +64,7 @@ Code snippets used in this document are from:
 The instructions in this document reference the following:
 - [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0)
 - [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens)
-- [Contextual variables available upon hand-off](how-to-handoff.md#contextual-variables-available-upon-hand-off)
+- [Contextual variables available upon hand-off](advanced-hand-off#contextual-variables-available-upon-hand-off)
 - [Microsfot Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
 
 ### Retrieve your Power Virtual Agent bot parameters
@@ -231,7 +231,7 @@ The following example uses samples from the [Connector sample code](https://gith
 After starting a conversation with the bot, the conversation JSON payload uses the standard Microsoft Bot Framework Direct Line activity. You can learn more at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0).
 
 ### Handle hand-off activity
-If your application needs to hand off to a live agent provider, you will need to handle the hand-off activity. Hand-off activity is sent when the "Transfer to agent" node is hit. In the Direct Line Channel, an activity with `Type=Handoff` will be sent to the client. You can learn more on the payload of the hand-off `activity at [Contextual variables available upon hand-off](how-to-handoff.md#contextual-variables-available-upon-hand-off)
+If your application needs to hand off to a live agent provider, you will need to handle the hand-off activity. Hand-off activity is sent when the "Transfer to agent" node is hit. In the Direct Line Channel, an activity with `Type=Handoff` will be sent to the client. You can learn more on the payload of the hand-off `activity at [Contextual variables available upon hand-off](advanced-hand-off.md#contextual-variables-available-upon-hand-off)
 
 ### Trigger a welcome message
 If you want your bot to send the Greeting system topic automatically when a user starts a conversation, you can send an activity with `Type=event` and `Name=startsConversation`.

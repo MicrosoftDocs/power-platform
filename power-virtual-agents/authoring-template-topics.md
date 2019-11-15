@@ -63,7 +63,7 @@ You can also use entities to recognize a specific list of options. In this lesso
 
 ### Lesson 4 - A topic with conditions, variables and a custom entity
 
-This lesson continues to show you how you can create a topic with a conditional branch, [a variable](authoring-variables.md#prebuilt-entities), and [a custom entity](advanced-entities-slot-filling.md#custom-entities)
+This lesson continues to show you how you can create a topic with a conditional branch, [a variable](authoring-variables.md), and [a custom entity](advanced-entities-slot-filling.md#custom-entities)
 
 In particular it will allow an entity to bypass a follow-up question. For example, try testing with "I want a business laptop."
 

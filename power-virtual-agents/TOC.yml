@@ -34,8 +34,6 @@
      href: advanced-end-user-authentication.md
    - name: Use Microsoft Power Automate
      href: advanced-flow.md
-   - name: Use Azure Bot Framework Skills (REM)
-     href: advanced-use-skills.md
    - name: Trigger hand off to a live human agent
      href: advanced-hand-off.md
 - name: Publish and integrate
@@ -43,7 +41,7 @@
    - name: Key concepts - Publish your bot
      href: publication-fundamentals-publish-channels.md
    - name: Configure publishing for demos and live websites 
-   - href: publication-connect-bot-to-web-channels.md
+     href: publication-connect-bot-to-web-channels.md
    - name: Publish to Microsoft Teams
      href: publication-add-bot-to-microsoft-teams.md
    - name: Publish to Facebook

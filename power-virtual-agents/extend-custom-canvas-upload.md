@@ -33,7 +33,7 @@ This article describes how to set up a demo to test and configure this functiona
 >When dealing with personal data, please respect user privacy. Follow platform guidelines and post your privacy statement online.
 
 
-# How to run locally
+## How to run locally
 
 This demo integrates with multiple services that you need to set up to host the demo.
 
@@ -195,13 +195,13 @@ In your production system, you should always verify if the uploaded file is vali
 
 ### Automatic clean up of temporary storage
 
-We use the [Lifecycle Management](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts) feature from Azure Storage. 
+We use the [Lifecycle Management](https://docs.microsoft.com/azure/storage/blobs/storage-lifecycle-management-concepts) feature from Azure Storage. 
 
 ## Content of the .env files
 
 The `.env` files hold the environment variables critical to run the service. This is usually security-sensitive information and must not be committed to version control. 
 
-Although we recommend to keep them in [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/), for simplicity in this demo, we keep them in the `.env` files.
+Although we recommend to keep them in [Azure Key Vault](https://azure.microsoft.com/services/key-vault/), for simplicity in this demo, we keep them in the `.env` files.
 
 To ease the setup of this sample, the following is the template of the `.env` files.
 
@@ -225,12 +225,12 @@ BOT_TENANT_ID=816d751c-c4fd-48b0-bc7d-898eed92e911
 
 
 
-# Further reading
+## Further reading
 
--  [Setting up a new Bot Channel Registration](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0)
--  [Generating a Direct Line token](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
+-  [Setting up a new Bot Channel Registration](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0)
+-  [Generating a Direct Line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
 -  [Enhanced Direct Line Authentication feature](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/)
--  [Azure Storage: Setting up storage lifecycle management](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts)
+-  [Azure Storage: Setting up storage lifecycle management](https://docs.microsoft.com/azure/storage/blobs/storage-lifecycle-management-concepts)
 -  [Add Power Virtual Agent bot to Azure Bot Service channels](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-azure-bot-service-channels)
 
 
