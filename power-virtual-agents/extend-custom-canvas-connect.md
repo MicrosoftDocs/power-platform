@@ -1,19 +1,19 @@
 ---
-title: "TITLE"
-description: "DESCRIPTION"
-keywords: "KEYWORDS"
-ms.date: 09/04/2019
+title: "Connect Power Virtual Agents to a custom canvas"
+description: "Use an advanced custom canvas to change the display and functionality of your bot (dev coding required)."
+keywords: ""
+ms.date: 11/15/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "VA"
+ms.custom: "extend, azure, byoc"
 ms.collection: virtualagent
 ---
 
-# Description
+# Connect your Power Virtual Agents bot to a custom canvas
 
 You can connect your Power Virtual Agents bot to a custom canvas so that you can directly send messages and receive dynamic responses (such as Adaptive Cards and Carousels) and then custom render them directly from the bot engine. 
 
@@ -69,7 +69,7 @@ During development, you will run your bot locally. Azure Bot Services will send 
       -  Select **Settings**
       -  In the **Configuration** section, set **Messaging Endpoint** to `https://a1b2c3d4.ngrok.io/api/messages`
 
-## Setup bot and Direct Line
+## Set up bot and Direct Line
 1. Create your bot at the [Power Virtual Agents portal](https://powerva.microsft.com)
 
 1. Select **Manage** and then go to the **Channels** tab on the side navigation panel.
@@ -108,7 +108,7 @@ This sample includes multiple parts:
 -  Connection to the V2 bot engine allowing for dynamic responses based off configuration.
 
 
-### Content of the .env files
+## Content of the .env files
 
 The `.env` files hold the environment variables critical to run the service. This is usually security-sensitive information and must not be committed to version control. 
 
@@ -116,14 +116,14 @@ Although we recommend to keep them in [Azure Key Vault](https://azure.microsoft.
 
 To ease the setup of this sample, the following is the template of the `.env` files.
 
-#### `/bot/.env`
+### `/bot/.env`
 
 ```
 MICROSOFT_APP_ID=12345678-1234-5678-abcd-12345678abcd
 MICROSOFT_APP_PASSWORD=a1b2c3d4e5f6
 ```
 
-#### `/web/.env`
+### `/web/.env`
 
 ```
 BOT_ID=8ef39aa5-81a8-460e-8a15-2ebc338ce456
