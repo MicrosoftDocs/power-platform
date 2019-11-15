@@ -9,7 +9,7 @@
     {
       "source_path": "power-virtual-agents/expanding-design-canvas.md",
       "redirect_url": "authoring-create-edit-topics",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
 
     },
     {
@@ -123,7 +123,7 @@
     {
       "source_path": "power-virtual-agents/how-to-use-dispatcher.md",
       "redirect_url": "index",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
 
     }
 

@@ -192,6 +192,6 @@ For more information on publishing your bot to other channels, reference the doc
 
 You’ve now created a bot, created your own custom topic, tested it out, published it to a demo website, and learned how to analyze your bot’s performance. Congratulations! Your bot has many capabilities beyond this, so please try it out and play with the advanced features.
 
-For questions not covered in the product documentation or for feature ideas, please [visit our community](http://aka.ms/PowerVirtualAgentsForum) and post questions.
+For questions not covered in the product documentation or for feature ideas, please [visit our community](https://aka.ms/PowerVirtualAgentsForum) and post questions.
 
-We would also like to hear your ideas on Power Virtual Agents. Please [visit our Ideas board](http://aka.ms/PowerVirtualAgentsIdeas) and post your ideas.
+We would also like to hear your ideas on Power Virtual Agents. Please [visit our Ideas board](https://aka.ms/PowerVirtualAgentsIdeas) and post your ideas.
