@@ -27,7 +27,9 @@ notification can span a few years. After removal, the feature or capability will
 All regional Discovery endpoints and the Discovery APIs in the Organization SDK are deprecated
 ----------------------------------------------------------------------------------------------
 
-Effective December 1, 2019, the [Discovery APIs](/powerapps/developer/common-data-service/org-service/discovery-service) in the Organization SDK are deprecated along with the regional discovery Web API endpoints. Moving forward customers should transition to using the global [Discovery Web API](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) endpoint. Microsoft will continue to provide support, security and other critical updates to the Organization SDK Discovery APIs and regions Discovery endpoints until December 1, 2020 but won't release any additional functionality beyond what has already been announced.
+Effective December 1, 2019, the [Discovery APIs](/powerapps/developer/common-data-service/org-service/discovery-service) in the Common Data Service Organization service (SOAP endpoint) are deprecated along with the *regional* discovery Web API (REST endpoint). Going forward, customers should transition to using the *global* [Discovery Web API](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) endpoint. 
+
+Until December 1, 2020, Microsoft will continue to provide support, security, and other critical updates to the Organization service Discovery APIs and *regional* discovery Web API, but won't release any additional functionality beyond what has already been announced.
 
 Rules feature in canvas apps is deprecated
 ----------------------------------
