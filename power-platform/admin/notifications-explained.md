@@ -23,7 +23,7 @@ Microsoft regularly sends communications regarding service incidents, service ch
 The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) will display any maintenance notifications, service changes, release information, or customer action requests.
 
 ## Service health dashboard
-The [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) will show the latest status of updates and incidents regarding your service. To learn how to get to the Microsoft 365 Service health dashboard, see [Check your service health](use-office-365-admin-center-manage-subscription.md#check-your-service-health).
+The [Service health dashboard](https://docs.microsoft.com/office365/enterprise/view-service-health) will show the latest status of updates and incidents regarding your service. To learn how to get to the Microsoft 365 Service health dashboard, see [Check your service health](check-online-service-health.md). 
 
 ## Email notifications
 The notifications sent from the Business Application Group communications team will be for the following services and email addresses.  Please be sure to check your spam folder for these messages.
