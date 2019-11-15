@@ -15,7 +15,7 @@ ms.collection: virtualagent
 
 # Description
 
-You can connect your Power Virtual Agents bot to a custom canvas so that you can directly send messages and recieve dynamic responses (such as Adaptive Cards and Carousels) and then custom render them directly from the bot engine. 
+You can connect your Power Virtual Agents bot to a custom canvas so that you can directly send messages and receive dynamic responses (such as Adaptive Cards and Carousels) and then custom render them directly from the bot engine. 
 
 This article describes how to set up a demo to test and configure this functionality.
 
@@ -27,7 +27,7 @@ This article describes how to set up a demo to test and configure this functiona
 
 # How to run locally
 
-This demo integrates with multiple services you need to set up to host the demo.
+This demo integrates with multiple services that you need to set up to host the demo.
 
 1. [Clone the code](#clone-the-code)
 1. [Setup Azure Bot Services](#setup-azure-bot-services)
@@ -36,13 +36,14 @@ This demo integrates with multiple services you need to set up to host the demo.
 
 ## Clone the code
 
-To host this demo, you will need to clone the code and run locally.
+To host this demo, you will need to clone the code and run it locally.
 
 1. Clone this repository (https://github.com/microsoft/dynamics365-virtualagent-samples/tree/master/Utilities/ContentConverter)
 1. Create two empty files for environment variables, `/bot/.env` and `/web/.env`
 
 ## Setup Azure Bot Services
 
+>[!TIP]
 > We suggest you use [Bot Channel Registration](https://ms.portal.azure.com/#create/Microsoft.BotServiceConnectivityGalleryPackage) during development. This will help you diagnose problems locally without deploying to the server, and speed up development.
 
 You can follow our instructions at [Setup a new Bot Channel Registration](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0).
@@ -51,7 +52,10 @@ You can follow our instructions at [Setup a new Bot Channel Registration](https:
    -  `MICROSOFT_APP_ID=12345678-1234-5678-abcd-12345678abcd`
    -  `MICROSOFT_APP_PASSWORD=a1b2c3d4e5f6`
 
-> When you are building your production bot, never expose your Web Chat or Direct Line secret to the client. Instead, you should use the secret to generate a limited token and send it to the client. For more information, refer to the documentation on [Direct Line token generation](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token) and the [Enhanced Direct Line Authentication feature](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/).
+>[!IMPORTANT]
+>When you are building your production bot, never expose your Web Chat or Direct Line secret to the client. 
+>Instead, you should use the secret to generate a limited token and send it to the client. 
+>For more information, refer to the documentation on [Direct Line token generation](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token) and the [Enhanced Direct Line Authentication feature](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/).
 
 During development, you will run your bot locally. Azure Bot Services will send activities to your bot through a public URL. You can use [ngrok](https://ngrok.com/) to expose your bot server on a public URL.
 
@@ -60,13 +64,13 @@ During development, you will run your bot locally. Azure Bot Services will send 
 1. Update your Bot Channel Registration. You can use [Azure CLI](https://aka.ms/az-cli) or [Azure Portal](https://portal.azure.com)
    -  With Azure CLI
       -  Run `az bot update --resource-group <your-bot-rg> --name <your-bot-name> --subscription <your-subscription-id> --endpoint "https://a1b2c3d4.ngrok.io/api/messages"`
-   -  With the [Azure Portal](https://portal.azure.com)
+   -  With the Azure Portal
       -  Browse to Bot Channel Registration
       -  Select **Settings**
       -  In the **Configuration** section, set **Messaging Endpoint** to `https://a1b2c3d4.ngrok.io/api/messages`
 
-## Setup V2 bot and Direct Line
-1. Create your V2 bot at the [Power Virtual Agents portal](https://powerva.microsft.com)
+## Setup bot and Direct Line
+1. Create your bot at the [Power Virtual Agents portal](https://powerva.microsft.com)
 
 1. Select **Manage** and then go to the **Channels** tab on the side navigation panel.
 
@@ -79,7 +83,7 @@ During development, you will run your bot locally. Azure Bot Services will send 
 
 ## Prepare and run the code
 
-1. Under each of the `bot`, and `web` folders, run the following
+1. Under each of the `bot` and `web` folders, run the following
    1. `npm install`
    1. `npm start`
 
@@ -104,7 +108,7 @@ This sample includes multiple parts:
 -  Connection to the V2 bot engine allowing for dynamic responses based off configuration.
 
 
-### Content of the `.env` files
+### Content of the .env files
 
 The `.env` files hold the environment variables critical to run the service. This is usually security-sensitive information and must not be committed to version control. 
 
