@@ -33,17 +33,17 @@ The downloaded file contains the following information:
 
 - StartDateTime: Time at which the session started. Entries are sorted by this column in descending order. 
 
-- Initial Message: First message typed by the user.
+- InitialUserMessage: First message typed by the user.
 
-- Topic Name: Name of the last authored topic that was triggered in this session. 
+- TopicName: Name of the last authored topic that was triggered in this session. 
 
-- Chat Transcript: Transcript of the session in the following format:
+- ChatTranscript: Transcript of the session in the following format:
     - “User says”/“Bot says” structure
     - Conversation turns separated by semicolons</br>
    Note that **Bot says** does not include the options presented to the user.
     
     Example: “User says: store hours; Bot says: Which store are you asking about?; User says: Bellevue; Bot says: Bellevue store is open from 10am to 7pm every day.;”
 
-- Session Outcome: Outcome of the session (Resolved, Escalated, Abandoned, Unengaged).
+- SessionOutcome: Outcome of the session (Resolved, Escalated, Abandoned, Unengaged).
 
-- TopicID: A unique identifier of the last authored topic triggered in this session. 
+- TopicId: A unique identifier of the last authored topic triggered in this session. 
