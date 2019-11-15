@@ -45,6 +45,8 @@
         href: sign-in-office-365-apps.md
       - name: Manage subscription with Microsoft 365 admin center
         href: use-office-365-admin-center-manage-subscription.md
+      - name: How do I check my online service health?
+        href: check-online-service-health.md
       - name: Enabling preview features
         href: what-are-preview-features-how-do-i-enable-them.md
       - name: Unified Interface
