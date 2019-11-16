@@ -13,7 +13,7 @@ ms.custom: "publication, fundamentals"
 ms.collection: virtual-agent
 ---
 
-# Publish your bot
+# Key Concepts - Publish your bot
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -75,10 +75,16 @@ Different channels have different end-user experiences. The following table show
 
  Experience | Website | Microsoft Teams | Facebook
  ---|---|---|---
- [Customer satisfaction survey](getting-started-create-topics.md) | Adaptive card | Text-only | Text-only
- [Multiple-choice options](getting-started-create-topics.md) | Supported | Supported up to 6; learn more at [Microsoft Teams hero card](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | Supported up to 13; learn more at [Facebook quick replies](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/)
+ [Customer satisfaction survey](authoring-create-edit-topics.md#insert-nodes) | Adaptive card | Text-only | Text-only
+ [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported up to 6; learn more at [Microsoft Teams hero card](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | Supported up to 13; learn more at [Facebook quick replies](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/)
  [Markdown](https://daringfireball.net/projects/markdown/) | Supported | Supported | Partially supported; learn more at [Facebook markdown documentation](https://www.facebook.com/help/147348452522644?helpref=related)
- [Welcome message](getting-started-create-greeting.md) | Supported | Supported | Not supported
+ [Welcome message](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported | Not supported
+
+ ## In this section
 
 
-
+- [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md) | Publish your bot on your live website, or use a demo website to share internally.
+- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md) | USe Teams to distribute your bot.
+- [Add bot to Facebook](publication-add-bot-to-facebook.md) | Add your bot to Facebook Messenger and Facebook Workplace.
+- [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md) | Add your bot to mobile or custom native apps (developer coding required).
+- [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md) | Add your bot to Azure Bot Service channels (developer coding required).

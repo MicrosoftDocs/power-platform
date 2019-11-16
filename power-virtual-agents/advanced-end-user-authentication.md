@@ -13,7 +13,7 @@ ms.custom: authentication
 ms.collection: virtual-agent
 ---
 
-# Add user authentication to a Power Virtual Agents bot
+# Add end-user authentication to a Power Virtual Agents bot
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

@@ -23,35 +23,24 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 
 1.	Go to [https://aka.ms/TryPVA](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Try preview**, and then sign in with your work email address. Note that personal Microsoft accounts aren't supported currently.
 
-    ![Sign up page](media/sign-up-screen.png)
-    
-    <<<< UPDATE SIGN UP PAGE IMAGE >>>>
     
 
 2. Next, you’ll choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
-Your bot is created in the default Power Apps environment that was created for you when you signed up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, you can do so by expanding the **More options** menu and selecting a different environment.
+
+    Your bot is created in the default Power Apps environment that was created for you when you signed up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, you can do so by expanding the **More options** menu and selecting a different environment.
+
    > [!NOTE] 
    > Preview is currently supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with **Region** set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
    ![Name the new bot](media/create-new-bot-screen.png)
    
-   <<< UPDATE IMAGE >>>
 
 3.	Once you select **Create**, the process of creating the first bot within a new environment can take up to 15 minutes. Subsequent bots will be created much faster. 
 
 4. After a few minutes, you’ll land on the home page and have an opportunity to play around with the bot in read-only mode. You can't save any edits during this time, but you can explore the overall user interface, look at the topics, experiment with the preloaded User Topics and System Topics, and interact with your bot using the Test Canvas. During this time, you can review additional documentation on authoring topics in your bot. See [Authoring key concepts](authoring-fundamentals.md).
-    
-   ![Read-only mode](media/create-bot-banner-blue.png)
-   
-   <<< IMAGE UPDATE NEEDED >>>>
    
 
 5. When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify any User or System topic, test out your content changes, or deploy your bot.
-
-   ![Green banner after creating bot](media/create-bot-banner-green.png)
-   
-   << IMAGE UPDATE NEEDED >>>>
-
 
 
 ## Create a custom topic
@@ -60,110 +49,96 @@ Your bot is created in the default Power Apps environment that was created for y
 
 2.	Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page.
 
-    ![New topic](media/create-new-topic.png)
+    ![New topic](media/topics-new.png)
     
-    << IMAGE UPDATE NEEDED >>>
+
 
 3. You can now name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog. As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase. Select **Save topic** to add the topic to the topics list.
-    ![Create topic and trigger phrase](media/quickstart-create-topic-00.png)
+    ![Create topic and trigger phrase](media/topics-details-triggers.png)
     
-    <<< IMAGE UPDATED NEEDED >>>>>
+
 
 4. After saving your topic, select **Go to authoring canvas** to open the authoring canvas. This is the graphical dialog tree editor that allows you to define bot responses and the overall conversation flow.
 
    Start by entering 'Hello! I’ll create a personalized greeting for you.' into the first **Message** node. 
    
     
-    ![Add node](media/quickstart-create-topic-01.png)
+    ![Add node](media/quickstart-add-node.png)
     
-    << IMAGE UPDATE NEEDED >>>>>
+
     
 
 5.   Then, click on the **+** below the node, and add an **Ask a question** node by selecting it in the menu. Enter the question text, 'Where do you live?', in the Ask a question box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
 
-    ![Bot answer](media/quickstart-create-topic-02.png)
-    
-      << IMAGE UPDATE NEEDED >>>>>
+   ![Bot answer](media/quickstart-create-topic-02.png)
 
-6. Add two options for the user, by selecting **+ New option**. Enter 'Seattle' and 'Bellevue' in the text boxes above called 'Options for user'. Each option is presented as a multiple choice button to the user.
+
+6. Add two options for the user, by selecting **+ New option**. Enter 'Seattle' and 'Bellevue' in the text boxes called 'Options for user'. Each option is presented as a multiple choice button to the user.
 
 The authoring canvas creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response.
 
-<< IMAGE SHOWING THE OPTIONS ADDED, SEATTLE AND BELLEVUE IN THE ASK A QN NODE >>>
+   ![Branching options are created automatically](media/quickstart-options.png)
 
-7. In the forked conversation path, you can check for 'Seattle' in one path, and 'Bellevue' in the other path to take the appropriate next step. Enter Condition equals Seattle in one branch and Condition equals Bellevue in the other branch. 
+7. In the forked conversation path, each node has automatically checked for 'Seattle' in one path, and 'Bellevue' in the other path to take the appropriate next step.
 
-<<<< IMAGE SHOWING THE Condition nodes filled out >>>>
 
 
 8. Finally, click the **+** below each of the Condition nodes to add a **Message** node in each branch. Add a simple message like 'Hello Seattle!' in the Seattle branch, and 'Hello Bellevue!' in the Bellevue branch. Select **Save** at the top.
 
     ![Complete conversation](media/quickstart-create-topic-03.png)
     
-      << IMAGE UPDATE NEEDED >>>>>
 
 You now have a very simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating expressions, entities, and Power Automate.
 
  
 ## Test your content in real time
 
-1.	Now that you have some content authored into a dialogue tree, it’s time to test this out in real time to see if it’s working as you expected. For this, you’ll use the Test bot panel.
+1. Now that you have some content authored into a dialogue tree, it’s time to test this out in real time to see if it’s working as you expected. For this, you’ll use the Test bot panel.
 
-    ![Start bot with latest content](media/quickstart-test-bot-00.png)
+    ![Start bot with latest content](media/test-bot-panel.png)
     
-      << IMAGE UPDATE NEEDED >>>>>
       
       
     If the test bot is not showing on your screen, select **Test your bot** at the bottom of the side navigation pane.
 
-    ![Test bot control](media/quickstart-test-bot-01.png)
+    ![Test bot control](media/test-bot-menu.png)
 
 
-  << IMAGE UPDATE NEEDED >>>>>
   
-  2.	You can try out your newly authored dialog tree by typing into the test bot window. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You’ll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
+2. You can try out your newly authored dialog tree by typing into the test bot window. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You’ll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
 
-    ![Start conversation](media/quickstart-test-bot-02.png)
-    
-      << IMAGE UPDATE NEEDED >>>>>
+    ![Start conversation](media/test-bot-track.png)
+   
 
-3.	Type "hello world" in the chat window, and send the message to the bot. You’ll see the top portion of your dialog tree highlighted in green, and you’ll see “Seattle” and “Bellevue” presented as user options in the test bot window.
+
+
+3. Type "hello world" in the chat window, and send the message to the bot. You’ll see the top portion of your dialog tree highlighted in green, and you’ll see “Seattle” and “Bellevue” presented as user options in the test bot window.
 The bot is now waiting for you to respond and has provided suggestions on how to respond. These suggestion buttons reflect what you authored within your dialog tree in the 'Ask a question' node. In the test bot, you can either select these suggestion buttons to continue, or you can enter your response into the chat window. 
 
     ![Tracing conversation](media/quickstart-test-bot-03.png)
     
-      << IMAGE UPDATE NEEDED >>>>>
 	 
 
-4.	You can continue the dialog by selecting the Seattle branch. You’ll see the dialogue stop once you’ve reached the bottom of this branch. If you author more content, the dialog will continue, but since we’ve only created a very simple and small dialog tree, we can reach the end of the content very quickly.
+4. You can continue the dialog by selecting the Seattle branch. You’ll see the dialogue stop once you’ve reached the bottom of this branch. If you author more content, the dialog will continue, but since we’ve only created a very simple and small dialog tree, we can reach the end of the content very quickly.
 
     This test experience empowers you to quickly create and test a conversation to ensure that the conversation will flow as anticipated. If the dialog does not reflect your intention, you can change the dialog, and save it. The latest content will be pushed into the test bot, and you can try it out again. None of this changes the published version of the bot, so feel free to play around with your content until you are happy with it.
  
-    ![Traced conversation](media/quickstart-test-bot-04.png)
-    
-    
-      << IMAGE UPDATE NEEDED >>>>>
+
 
 ## Publish your bot
 
-1.	Once you are fine with the content authored in your bot, you can publish your bot to a website. Start by selecting the **Publish** tab in the side navigation pane.
+1. Once you are fine with the content authored in your bot, you can publish your bot to a website. Start by selecting the **Publish** tab in the side navigation pane.
 
-    ![Deploy bot to demo website](media/quickstart-deploy-demo.png)
+    ![Deploy bot to demo website](media/channel-publish-latest-content.png)
     
-      << IMAGE UPDATE NEEDED >>>>>
  
 2. Select **Publish** to activate your bot with a single click. If the publish is successful, a green banner on the top of the page will indicate so.
 
-    ![Set welcome message and conversation starters](media/quickstart-deploy-00.png)
-    
-    
-      << IMAGE UPDATE NEEDED >>>>>
  
 3. Then click on the demo website link under 'Share your bot' to see it in action on a demo website. A new window opens in your browser. If this doesn't happen automatically, check whether a pop-up blocker has been activated and, if so, allow the window to be opened. Usually, you can allow pop-ups from the URL field directly. This is a webpage that demonstrates what your bot looks like to an end-user who comes to your webpage. The bot canvas is at the bottom. You can interact with it by typing into the window or by selecting a starter phrase from the provided options. This is your bot in action. 
 
-    ![Share your bot](media/quickstart-deploy-02.png)
+    ![Share your bot](media/channel-go-to-demo-website.png)
     
-      << IMAGE UPDATE NEEDED >>>>>
 
 For more information on publishing your bot to other channels, reference the documentation under [Publication key concepts](publication-fundamentals-publish-channels.md). 
 
@@ -175,16 +150,13 @@ For more information on publishing your bot to other channels, reference the doc
     > [!NOTE]
     > There is up to a 1-hour delay between when the conversations occur and when the statistics for those conversations appear in the analytics views. Also, all interactions with the bot are logged in analytics, including interactions from your demo website, custom website, or test bot.
 
-    ![Analytics pages](media/analytics-pane.png)
-    
-    
-      << IMAGE UPDATE NEEDED >>>>>
+
+
 
 2.	You can also view detailed session history and transcripts by selecting **Sessions** from the **Analytics** tab. This enables you to download a CSV file with the full session transcript. This can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot’s efficiency.
 
-    ![Download sessions](media/sessions-page.png)
+    ![Download sessions](media/analytics-sessions.png)
     
-      << IMAGE UPDATE NEEDED >>>>>
 
     For more information, see [Analytics key concepts](analytics-overview.md).
     

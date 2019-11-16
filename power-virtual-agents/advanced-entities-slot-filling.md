@@ -13,7 +13,7 @@ ms.custom: authoring
 ms.collection: virtual-agent
 ---
 
-# Use entities to streamline bot conversations
+# Use entities and slot filling in Power Virtual Agents bots
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

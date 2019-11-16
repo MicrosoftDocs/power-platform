@@ -21,9 +21,7 @@ ms.collection: virtual-agent
 
 The topic details page provides a view into the performance of individual topics and how they can be improved.
 
-![Topic details page](media/topic-details-page.png)
->[!WARNING]
->Need an updated image
+
 
 You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-CSAT.md) pages:
 
@@ -35,8 +33,7 @@ You can display the topic details page by selecting the **Detail** link in one o
 
 ![Topic details link](media/topic-details-link.png)
 
->[!WARNING]
->Need an updated image
+
 
 
 The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page. 

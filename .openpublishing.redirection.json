@@ -98,8 +98,8 @@
     },
     {
       "source_path": "power-virtual-agents/overview.md",
-      "redirect_url": "index",
-      "redirect_document_id": "false"
+      "redirect_url": "fundamentals-what-is-power-virtual-agents",
+      "redirect_document_id": "true"
 
     },
     {

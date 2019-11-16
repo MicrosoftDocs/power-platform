@@ -13,7 +13,7 @@ ms.custom: authoring
 ms.collection: virtual-agent
 ---
 
-# Work with variables
+# Use variables
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

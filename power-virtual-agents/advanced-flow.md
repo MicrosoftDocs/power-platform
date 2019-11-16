@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 
 
-# Add actions to a bot using Microsoft Power Automate 
+# Add actions to a bot using Power Automate 
 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]

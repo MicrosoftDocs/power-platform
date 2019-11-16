@@ -35,10 +35,12 @@ Analytics are broken down into a number of pages to give you multiple ways to un
 
 ![](media/analytics-open.png)
 
+## In this section
 
-See the following topics in this section for details on how to use analytics in Power Virtual Agents:
 
-- [Analyze bot performance and usage in Power Virtual Agents](analytics-summary.md)
-- [Analyze customer satisfaction for Power Virtual Agents bots](analytics-CSAT.md)
-- [Analyze topic usage in Power Virtual Agents](analytics-topic-details.md)
-- [Analyze session information in Power Virtual Agents](analytics-sessions.md)
+Topic | Description
+- | -
+[Analyze bot performance and usage](analytics-summary.md) | Review overall analytics for your bots.
+[Analyze customer satisfaction](analytics-csat.md) | Identify overall trends in customer satisfaction, and where satisfaction is falling behind.
+[Analyze topic usage](analytics-topic-details.md) | See how individual topics are performing and how well they are working at resolving issues.
+[Analyze session information](analytics-sessions.md) | Review and monitor how sessions are performing, including analytics from the topics encountered during a session.

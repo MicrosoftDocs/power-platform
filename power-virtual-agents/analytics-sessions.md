@@ -17,15 +17,12 @@ ms.collection: virtual-agent
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
-![Sessions page](media/sessions-page.png)
 
->[!WARNING]
->Need an updated image
+You can download a maximum of seven days of sessions from the past 30 days. If your bot had a high number of sessions, they will be broken down into multiple rows, each containing 2500 sessions. 
 
-You can download a maximum of seven days of sessions from the past 30 days. If your bot had a high number of sessions, they will be broken down into multiple rows. Click on each row to download the sessions for the specified timeframe.
+Click on each row to download the sessions for the specified timeframe.
 
->[!WARNING]
->I think this has changed.
+![Sessions page](media/analytics-sessions.png)
 
 The downloaded file contains the following information: 
 

@@ -20,10 +20,7 @@ ms.collection: virtual-agent
 
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score.
 
-![Customer Satisfaction page](media/customer-satisfaction-dashboard.png)
 
->[!WARNING]
->Need an updated image
 
 The Customer Satisfaction page includes a variety of charts with graphical views of your bot's customer satisfaction indicators. For information about each chart, select the link for the chart in the following list, or scroll to find the section about the chart later in this topic:
 
@@ -60,19 +57,13 @@ To see additional information about each topic, select the **Detail** link to di
 
 The Scores over Time chart provides a graphical view of the average CSAT score over the specified time period.
 
->[!WARNING]
->Can we get an image of this?
+
 
 ## Average CSAT Score chart
 
 The Average CSAT Score chart provides a graphical view of the average of CSAT scores for sessions in which customers respond to an end-of-session request to take the survey. The CSAT survey asks customers to rate their experience on a scale of "terrible" to "excellent," where "terrible" is given a value of 1 and "excellent" is given a value of 5.
 
->[!WARNING]
->Can we get an image of this?
 
 ## CSAT Survey Response Rate chart
 
 The Survey Response Rate chart shows the number of CSAT surveys that were presented and the percentage of surveys that were completed.
-
->[!WARNING]
->Can we get an image of this?

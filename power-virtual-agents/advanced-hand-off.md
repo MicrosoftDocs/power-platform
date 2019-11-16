@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 ms.custom: handoff
 ---
 
-# Use hand-off to live agent
+# Trigger hand-off to a live agent
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
