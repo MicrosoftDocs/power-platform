@@ -17,14 +17,17 @@ ms.collection: virtual-agent
 
 # Use lesson topics in Power Virtual Agents
 
-Power Virtual Agents includes a set of four lessons from which you can learn how a topic can be created, conditionals used, and leverage an out-of-the-box pre-built entity as well as a custom entity.
+Power Virtual Agents includes a set of four lessons from which you can see examples of topics ranging from a very simple topic to powerful topics that leverage the use conditionals and custom entities.
+
+These topics demonstrate how topics can be named, configured with multiple trigger phrases, basic topic flows and how to use variables, decision points and entities and slots.
+
 
 
 ## Access and use lesson topics for new bots
 
 When a bot is created, a number of lessons are automatically created as topics. 
 
-While the topics work as they are, they are examples for the purposes of learning how to create and use bots and are not designed for production use.
+While the topics are functional, they are examples for the purposes of learning how to create content for your bots and are not designed for production use.
 
 **Use lesson topics to understand how topics work:**
 
@@ -34,8 +37,10 @@ While the topics work as they are, they are examples for the purposes of learnin
 
 1. Select **Authoring canvas** to see the bot's flow, including the bot's comments, expected user responses, decision points, and entity references.
 
->[!WARNING]
->Where can I test these lessons?
+   ![List of lesson topics](media/template-list.png)
+
+>[!IMPORTANT]
+>You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.s
 
 ## Available lesson topics
 
@@ -51,22 +56,25 @@ This lesson shows you how to create a simple topic with one conditional branch.
 
 This lesson shows you how you can create a simple topic with one conditional branch and [a variable](authoring-variables.md).
 
-A variable is a name for an item which will be used later in the topic flow.  In this example, `pva_StoreLocation` is the name for the variable when you ask the user for their preferred store location.
+A variable is a name for an item which will be used later in the topic flow. I this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
 
 ### Lesson 3 - A topic with a conditions, variables and a pre-built entity
 
 This lesson shows you how you can create a simple topic with one conditional branch, [a variable](authoring-variables.md), and [an entity](advanced-entities-slot-filling.md).
 
-When you use entities in your topic, the bot can identify key information in what the user types and proactively fill in that information in your variables. For example, if you type "I want to buy a red car," the bot doesn't need to ask which color car, because the bot recognizes the **Color** entity in what you typed. The bot will then skip the question where you asked for color. 
+When you use entities in your topic, the bot can identify key information from what the user types and automatically fill in that information into your variables. 
 
-You can also use entities to recognize a specific list of options. In this lesson, we identify **State** as the entity, and the bot will recognize any US state the user types.
+For example, if you type "I want to buy a red car," the bot doesn't need to ask which color car, because the bot recognizes the Color entity in what you typed. The bot will then skip the question where you asked for color.
+ 
+In this lesson, the bot uses the State entity and will recognize any US state the user enters.
+
 
 ### Lesson 4 - A topic with conditions, variables and a custom entity
 
-This lesson continues to show you how you can create a topic with a conditional branch, [a variable](authoring-variables.md), and [a custom entity](advanced-entities-slot-filling.md#custom-entities)
+This lesson shows a topic with a conditional branch, [a variable](authoring-variables.md), and [a custom entity](advanced-entities-slot-filling.md#custom-entities). 
 
-In particular it will allow an entity to bypass a follow-up question. For example, try testing with "I want a business laptop."
+You can see the bot bypass a follow-up question. For example, try testing with "I want a business laptop."
 
-These topics demonstrate how you can name a topic, set its description and create basic topic flows including variables, decision points and entities and slots.
+
 
 
