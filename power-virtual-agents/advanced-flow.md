@@ -25,7 +25,7 @@ You can enable your bot to perform an action by calling a Microsoft Power Automa
 
 You call flows from within topics, as a discrete **Call an action** node. You can utilize existing flows that have been created in your [Power Apps environment](environments-first-run-experience.md) or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
->[IMPORTANT]
+>[!IMPORTANT]
 >The flow that can be called from a topic must be in the same [Common Data Service environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
 >Flows must also be in a solution in Microsoft Power Automate. You can [move flows into solutions](#move-a-flow-to-the-solutions-tab-on-the-microsoft-automate-portal) so they appear in the authoring canvas.
 
@@ -192,7 +192,7 @@ In Power Virtual Agents, you can now see this flow on the list of available acti
 
 ## Modify a flow on Microsoft Automate portal
 
-You can rename and modify your flow on the Microosft Automate Portal. For example, the flow you just created using the template can be updated to provide a weather forecast when called from a bot.
+You can rename and modify your flow on the Microsoft Automate Portal. For example, the flow you just created using the template can be updated to provide a weather forecast when called from a bot.
 
 **Modify a flow:**
 
@@ -274,7 +274,7 @@ This flow is now ready to be used in your bots.
 
 ## Call Microsoft Automate flow as an Action from a bot 
 
-You can call a Micrsosft Automate flow from a bot topic using the **Call an action** node. You can then pass variables to the flow and receive flow outputs that can be used in a bot conversation.
+You can call a Microsoft Automate flow from a bot topic using the **Call an action** node. You can then pass variables to the flow and receive flow outputs that can be used in a bot conversation.
 
 These instructions use the examples described above to add weather information to a flow.
 
@@ -305,7 +305,7 @@ These instructions use the examples described above to add weather information t
     ![Add Topic Dialog questions](media/TopicDialogQuestions.jpg)
 
 
-1. Select the plus (**+**) icon underneath the question nodes to add a new node.In the node selection window, select **Call an action**, and then select the flow you created earlier **Get weather forecast**. 
+1. Select the plus (**+**) icon underneath the question nodes to add a new node. In the node selection window, select **Call an action**, and then select the flow you created earlier **Get weather forecast**. 
 
     ![Call action](media/TopicCallActionWeather.jpg)
 
@@ -328,7 +328,7 @@ Press **Save** to save your topic.
 
 In the **Test chat** pane, start a conversation with the bot by typing in a trigger phrase for the topic that contains the flow.
 
-Enter your city and zipcpde at the prompt to get today's weather foreast from the bot
+Enter your city and zipcode at the prompt to get today's weather forecast from the bot
 
 ![Test Dialog](media/TopicTestDialog.jpg)
 

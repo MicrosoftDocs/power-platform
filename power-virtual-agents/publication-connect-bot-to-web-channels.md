@@ -1,6 +1,6 @@
 ---
 title: "Configure a Power Virtual Agents bot for a live or demo website"
-description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an iFrame code snippet."
+description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 11/9/2019
 ms.service:
@@ -46,9 +46,9 @@ To share the demo website link, simply copy the demo website URL and share it wi
 
 ## Custom website
 
-You can add your bot to a live website as an iFrame. Your live website can be a customer-facing external website or an internal site, like a Sharepoint or Yammer site.
+You can add your bot to a live website as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint or Yammer site.
 
-**Get iFrame snippet:**
+**Get IFrame snippet:**
 
 1. Select **Manage** on the side navigation pane, and then go to the **Channels** tab.
 

@@ -69,7 +69,7 @@ You can then return to the [Power Virtual Agents portal](https://powerva.microso
 
 Resources to learn more:
 - [Environments overview](/power-platform/admin/environments-overview)
-- [Configure environment securiy](/power-platform/admin/database-security)
+- [Configure environment security](/power-platform/admin/database-security)
 
 ## Trial environments
 

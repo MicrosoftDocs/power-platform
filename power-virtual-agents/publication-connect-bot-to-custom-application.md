@@ -65,7 +65,7 @@ The instructions in this document reference the following:
 - [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0)
 - [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens)
 - [Contextual variables available upon hand-off](advanced-hand-off.md#contextual-variables-available-upon-hand-off)
-- [Microsfot Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
+- [Microsoft Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
 
 ### Retrieve your Power Virtual Agent bot parameters
 To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
@@ -185,7 +185,7 @@ The following example uses samples from the [Connector sample code](https://gith
       }
     ```
 
-3. Retrieve the bot's response using the same `token` and `converstaionId`. The retrieved Direct Line response activities contains both the user's and bot's messages. You can filter response activites by your bot's name to get only the bot's response message.  
+3. Retrieve the bot's response using the same `token` and `converstaionId`. The retrieved Direct Line response activities contains both the user's and bot's messages. You can filter response activities by your bot's name to get only the bot's response message.  
 
     ```C#
       // Use the same token to create a directLineClinet

@@ -39,7 +39,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
   ![Select any response in the conversation to see the authoring canvas highlighted to that response](media/test-bot-response.png)
 
-You can return to the authoring canvas for the topic  at any time to revise it's conversation path. The **Test chat** pane will automatically refresh itself when you save changes to a toic.
+You can return to the authoring canvas for the topic  at any time to revise it's conversation path. The **Test chat** pane will automatically refresh itself when you save changes to a topic.
 
 
 

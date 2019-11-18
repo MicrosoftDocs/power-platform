@@ -43,7 +43,7 @@ The publishing process will check for errors in the latest bot content.
 
 ![Validate latest bot content for publish](media/channel-publish-validation.png)
 
-Publication should take less than a few minutes and, when succesful, you can view the bot in action and share it with your team by selecting the **demo website** link. This is useful to gather feedback from stakeholders involved in the bot. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot.
+Publication should take less than a few minutes and, when successful, you can view the bot in action and share it with your team by selecting the **demo website** link. This is useful to gather feedback from stakeholders involved in the bot. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot.
 
 ![Go to demo website](media/channel-go-to-demo-website.png)
 
@@ -84,7 +84,7 @@ Different channels have different end-user experiences. The following table show
 
 
 - [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md) | Publish your bot on your live website, or use a demo website to share internally.
-- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md) | USe Teams to distribute your bot.
+- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md) | Use Teams to distribute your bot.
 - [Add bot to Facebook](publication-add-bot-to-facebook.md) | Add your bot to Facebook Messenger and Facebook Workplace.
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md) | Add your bot to mobile or custom native apps (developer coding required).
 - [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md) | Add your bot to Azure Bot Service channels (developer coding required).

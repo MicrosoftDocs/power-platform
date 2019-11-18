@@ -19,7 +19,7 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 **Create your first bot:**
 
-1. Go to [Power Vrtual Agents marketing page](https://go.microsoft.com/fwlink/?linkid=2106332) and select **Try Preview**. Sign in using your work account.
+1. Go to [Power Virtual Agents marketing page](https://go.microsoft.com/fwlink/?linkid=2106332) and select **Try Preview**. Sign in using your work account.
 
    If you don't have a license, you can sign up for one by following the prompts.
     

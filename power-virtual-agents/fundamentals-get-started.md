@@ -68,16 +68,16 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 
     
 
-5.   Then, click on the **+** below the node, and add an **Ask a question** node by selecting it in the menu. Enter the question text, 'Where do you live?', in the Ask a question box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
-
-   ![Bot answer](media/quickstart-create-topic-02.png)
+5. Then, click on the **+** below the node, and add an **Ask a question** node by selecting it in the menu. Enter the question text, 'Where do you live?', in the Ask a question box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
+    e
+    ![Bot answer](media/quickstart-create-topic-02.png)
 
 
 6. Add two options for the user, by selecting **+ New option**. Enter 'Seattle' and 'Bellevue' in the text boxes called 'Options for user'. Each option is presented as a multiple choice button to the user.
 
-The authoring canvas creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response.
+    The authoring canvas creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response.
 
-   ![Branching options are created automatically](media/quickstart-options.png)
+    ![Branching options are created automatically](media/quickstart-options.png)
 
 7. In the forked conversation path, each node has automatically checked for 'Seattle' in one path, and 'Bellevue' in the other path to take the appropriate next step.
 

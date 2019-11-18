@@ -103,7 +103,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    ![Provide Facebook app and page information](media/channel-fb-add-channel.png)
 
-4. At least one page is required, but you can select **Add Page** to add addiitional pages.
+4. At least one page is required, but you can select **Add Page** to add additional pages.
 
    ![Provide multiple Facebook pages' information](media/channel-fb-add-pages.png)
 
@@ -121,7 +121,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    ![Set up webhooks for Facebook app](media/channel-fb-add-callbackurl.png)
 
-1. Provide the *Callback URL* and *Verify token* from the [Configure the Facebook channel in Power Vitual Agents](#configure-the-facebook-channel-in-power-virtual-agents) section and select **Verify and Save**.
+1. Provide the *Callback URL* and *Verify token* from the [Configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents) section and select **Verify and Save**.
 
    ![Add Callback URL and Verify Token](media/channel-fb-webhook-setting.png)
 

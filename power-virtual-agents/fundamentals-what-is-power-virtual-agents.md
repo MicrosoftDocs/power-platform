@@ -5,9 +5,11 @@ ms.date: 08/21/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: m-hartmann
-ms.author: mhart
+author: iaanw
+ms.author: iawilt
 manager: shellyha
+ms.custom: fundamentals
+ms.collection: virtual-agent
 ---
 
 

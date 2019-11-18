@@ -33,7 +33,7 @@ You can see the error state of a topic on the Topics list page by clicking on th
 
 ![](media/topics-errors.png)
 
-You can click on the error count to see details about the errors. This will open the authoring canvas with the topic checker opened to the firt error in the topic. As you fix the errors, they will dissapear from the topic checker, either automatically or after saving the topic. 
+You can click on the error count to see details about the errors. This will open the authoring canvas with the topic checker opened to the first error in the topic. As you fix the errors, they will disappear from the topic checker, either automatically or after saving the topic. 
 
 ![](media/topics-checker.png)
 
@@ -60,7 +60,7 @@ When a topic is **On**, it will trigger as expected, either as a result of its t
 
 When a topic is **Off**, it will *not* trigger at all. This means that if its trigger phrases are used in a bot conversation, it will not trigger, just as if the topic doesn't exist. An **Off** topic will also not be redirected to, even if another topic has specified that it should be.
 
-When a bot is published, all topics (**On** or **Off**) will be published, but the **Off** topics will not trigger. The topics will also not trigger on the channels that the bot is publised to, and the topics will not trigger in the test bot. 
+When a bot is published, all topics (**On** or **Off**) will be published, but the **Off** topics will not trigger. The topics will also not trigger on the channels that the bot is published to, and the topics will not trigger in the test bot. 
 
 >[!TIP]
 >Turning a topic to **Off** allows you to work on a particular topic and leave it in a draft state while publishing changes to other topics that are ready to go live. 
