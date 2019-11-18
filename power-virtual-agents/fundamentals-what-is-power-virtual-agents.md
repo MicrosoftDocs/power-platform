@@ -51,11 +51,11 @@ Using Power Virtual Agents, you can:
  
 4. **Enable bots to take action.** Bots that can chat with your users are great, but bots that can act on their behalf are even better. With Power Virtual Agents, you can easily integrate with services and back-end systems out-of-the-box or through hundreds of easy-to-add custom connectors using Power Automate. This makes it simple to create a bot that not only responds to the user, but also takes action to resolve their issues.
  
-    ![Bot actions](media/bot-action-overview.png)
+    ![Bot actions](media/overview-actions.png)
 
 5. **Monitor and improve bot performance.** Power Virtual Agents lets you keep an eye on how your bots are performing using powerful metrics and AI-driven dashboards. Easily see which topics are doing well and where the bot can improve, and quickly make adjustments to improve performance.  
 
-    ![Analytics page](media/analytics-pane.png)
+    ![Analytics page](media/overview-analytics.png)
 
 6. **Better together.** Power Virtual Agents works hand-in-hand with [Dynamics 365 for Customer Service Insights](https://dynamics.microsoft.com/ai/customer-service-insights) to provide a holistic view of your customer service operations. You can use Customer Service Insights and Power Virtual Agents together to determine which topics are trending or consuming support resources, and then easily automate them.
 
