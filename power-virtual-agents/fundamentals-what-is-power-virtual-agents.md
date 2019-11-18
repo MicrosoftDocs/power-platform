@@ -1,7 +1,7 @@
 ---
 title: "Power Virtual Agents overview"
-description: "Learn the basics of Power Virtual Agents."
-ms.date: 08/21/2019
+description: "It's easy to use Power Virtual Agents and start solving problems with its AI-driven natural language processing - without needing to know or deploy any code."
+ms.date: 11/18/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
