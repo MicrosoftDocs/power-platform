@@ -93,7 +93,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
     ![Complete conversation](media/quickstart-create-topic-03.png)
     
 
-You now have a very simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating [variables](authoring-variables.md), [entities](advanced-entities-slot-filling), and [Power Automate flows](advanced-flow.md).
+You now have a very simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating [variables](authoring-variables.md), [entities](advanced-entities-slot-filling.md), and [Power Automate flows](advanced-flow.md).
 
  
 ## Test your content in real time

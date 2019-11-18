@@ -22,7 +22,7 @@ Topics are discrete conversation paths that, when used together within a single 
 
 Creating a bot with Power Virtual Agents is easy to do with the [no-code authoring canvas](authoring-create-edit-topics.md), and there are a number of ways you can [manage how topics interact](authoring-topic-management.md), how you want the conversation to flow, and what it should feel like. It's also easy to [test the bot on the fly](authoring-test-bot.md) without having to fully deploy the bot whenever you make a small change that requires testing.
 
-There are a number of [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, in addition to [system topics](authoring-create-edit-topics.md#use-existing-and-sample-topics)
+There are a number of [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, in addition to [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics)
 
 ## Accessibility
 
