@@ -24,18 +24,18 @@ The Customer Satisfaction page provides a detailed view of customer satisfaction
 
 The Customer Satisfaction page includes a variety of charts with graphical views of your bot's customer satisfaction indicators. For information about each chart, select the link for the chart in the following list, or scroll to find the section about the chart later in this topic:
 
-- [Customer Satisfaction Drivers chart](#customer-satisfaction-drivers-chart)
-- [Scores over Time chart](#scores-over-time-chart)
+- [Customer satisfaction drivers chart](#customer-satisfaction-drivers-chart)
+- [Scores over time chart](#scores-over-time-chart)
 - [Average CSAT score](#average-csat-score-chart)
 - [CSAT survey response rate](#csat-survey-response-rate-chart)
 
-The Customer Satisfaction Drivers chart shows you the topics that are having the most impact on customer satisfaction.
+The Customer satisfaction drivers chart shows you the topics that are having the most impact on customer satisfaction.
 
 By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
-## Customer Satisfaction Drivers chart
+## Customer satisfaction drivers chart
 
-The Customer Satisfaction Drivers chart uses AI to group related support cases as topics. This chart then displays topics in order of their impact on customer satisfaction over the specified time period.
+The Customer satisfaction drivers chart uses AI to group related support cases as topics. This chart then displays topics in order of their impact on customer satisfaction over the specified time period.
 
 Description | Details
 ----------- | -------
@@ -53,17 +53,17 @@ Improving the average CSAT survey score for the top customer-satisfaction impact
 
 To see additional information about each topic, select the **Detail** link to display the Topic details page. For more information, see the [Topic details page](analytics-topic-details.md).
 
-## Scores over Time chart
+## Scores over time chart
 
-The Scores over Time chart provides a graphical view of the average CSAT score over the specified time period.
-
-
-
-## Average CSAT Score chart
-
-The Average CSAT Score chart provides a graphical view of the average of CSAT scores for sessions in which customers respond to an end-of-session request to take the survey. The CSAT survey asks customers to rate their experience on a scale of "terrible" to "excellent," where "terrible" is given a value of 1 and "excellent" is given a value of 5.
+The CSAT scores over Time chart provides a graphical view of the average CSAT score over the specified time period.
 
 
-## CSAT Survey Response Rate chart
 
-The Survey Response Rate chart shows the number of CSAT surveys that were presented and the percentage of surveys that were completed.
+## Average CSAT score chart
+
+The Average CSAT score chart provides a graphical view of the average of CSAT scores for sessions in which customers respond to an end-of-session request to take the survey. The CSAT survey asks customers to rate their experience on a scale of "terrible" to "excellent," where "terrible" is given a value of 1 and "excellent" is given a value of 5.
+
+
+## CSAT survey response rate chart
+
+The CSAT survey response rate chart shows the number of CSAT surveys that were presented and the percentage of surveys that were completed.

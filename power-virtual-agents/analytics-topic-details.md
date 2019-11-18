@@ -44,9 +44,9 @@ The topic details page includes a variety of charts with graphical views of a to
 * [Impact Summary charts](#impact-summary-charts)
 * [Topic Volume by Day chart](#topic-volume-by-day-chart)
 
-## Topic Summary charts
+## Topic summary charts
 
-The Topic Summary charts summarize the topic's performance indicators for the specified time period and the percent change over the period.
+The Topic summary charts summarize the topic's performance indicators for the specified time period and the percent change over the period.
 
 Description | Details
 ----------- | -------
@@ -60,7 +60,7 @@ A blue up-and-down indicator below the value indicates the percent change in a p
 
 ## Impact summary charts
 
-The Impact Summary charts summarize the impact of the topic on key performance indicators for the specified time period.
+The Impact summary charts summarize the impact of the topic on key performance indicators for the specified time period.
 
 Description | Details
 ----------- | -------
@@ -71,4 +71,4 @@ Abandon rate impact | The topic's abandon-rate impact score. The abandon-rate im
 
 ## Topic Volume by Day chart
 
-The Topic Volume by Day chart provides a graphical view of the number of sessions for the topic over the specified time period.
+The Topic volume by day chart provides a graphical view of the number of sessions for the topic over the specified time period.
