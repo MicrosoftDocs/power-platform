@@ -6,6 +6,16 @@
       "redirect_document_id": "false"
 
     },
+    
+    {
+
+      "source_path": "power-platform/admin/wp-licensing-faq.md",
+
+      "redirect_url": "/power-platform/admin/powerapps-flow-licensing-faq",
+
+      "redirect_document_id": "false"
+
+    },
     {
       "source_path": "power-virtual-agents/expanding-design-canvas.md",
       "redirect_url": "authoring-create-edit-topics",
