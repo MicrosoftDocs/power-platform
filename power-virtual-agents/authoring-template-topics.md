@@ -1,6 +1,6 @@
 ---
 title: "Use lesson topics to understand capabilities in Power Virtual Agents"
-description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots"
+description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
 keywords: ""
 ms.date: 11/13/2019
 ms.service:
@@ -17,10 +17,7 @@ ms.collection: virtual-agent
 
 # Use lesson topics in Power Virtual Agents
 
-Power Virtual Agents includes a set of four lessons from which you can see examples of topics ranging from a very simple topic to powerful topics that leverage the use conditionals and custom entities.
-
-These topics demonstrate how topics can be named, configured with multiple trigger phrases, basic topic flows and how to use variables, decision points and entities and slots.
-
+Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that leverage the use of [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
 
 
 ## Access and use lesson topics for new bots
@@ -35,7 +32,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. Select **Lesson 1** and work through to **Lesson 4**.  Review the title and description, and see what trigger phrases are being used.  
 
-1. Select **Authoring canvas** to see the bot's flow, including the bot's comments, expected user responses, decision points, and entity references.
+1. Select **Go to authoring canvas** on each topic's details page to see the bot's flow; including the bot's comments, expected user responses, decision points, and entity references.
 
    ![List of lesson topics](media/template-list.png)
 
@@ -44,7 +41,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 ## Available lesson topics
 
-Each lesson is designed to teach you how to use the **Authoring canvas** to create basic and advanced bot conversations.
+Each lesson is designed to teach you how to use the authoring canvas to create basic and advanced bot conversations.
 
 You should start with **Lesson 1** and work through each lesson in order.
 
@@ -56,7 +53,7 @@ This lesson shows you how to create a simple topic with one conditional branch.
 
 This lesson shows you how you can create a simple topic with one conditional branch and [a variable](authoring-variables.md).
 
-A variable is a name for an item which will be used later in the topic flow. I this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
+A variable is a name for an item which will be used later in the topic flow. In this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
 
 ### Lesson 3 - A topic with a conditions, variables and a pre-built entity
 

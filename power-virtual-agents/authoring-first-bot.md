@@ -25,16 +25,13 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
     
 1. In the **Create a new bot** dialog box, enter a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
-   ![New bot dialog](media/create_new_bot.jpg)
+   ![New bot dialog](media/create-new-bot-screen.png)
 
 1. Your virtual agent is created in the [default Power Apps environment for your organization or tenant](environments-first-run-experience.md). Usually this is sufficient, but if necessary you can choose a different environment by selecting **More options** to see a list of available environments.
   
-1. Select **Create** to begin the bot-building process, which can take up to 15 minutes. 
+1. Select **Create** to begin the bot-building process, which can take up to 15 minutes for the first bot you create in an environment. Subsequent bots take less than a few minutes to create.
 
-   > [!NOTE]
-   >
-   > If you are the first user in an environment creating a bot, it can take up to 15 minutes to finish the creation.
-   
+
 During the building process, you'll see a notification at the top of the Power Virtual Agents portal indicating that the bot is still being built.
 
 You can navigate to some tabs during this period, after which the banner will change and you'll have full access to the Power Virtual Agents portal. 
@@ -44,7 +41,7 @@ You can navigate to some tabs during this period, after which the banner will ch
 
 If you have already created a bot, you can create a new bot by selecting the icon on the title bar to open the **Bots** pane and then selecting **New bot**.
 
-   ![New bot icon in title bar](media/new-bot-icon.png)
+   ![New bot icon in title bar](media/first-bot-new.png)
 
 ## Known issues with creating a bot
 
@@ -59,5 +56,5 @@ You will need to [create a new environment](environments-first-run-experience.md
 ### The environment I created does not show up in the drop-down menu of Power Virtual Agents
 
 Your environment might not show up in the drop-down menu due to one of the following:
- - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](environments-first-run-experience.md).
+ - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
  - The environment is created in an unsupported region. Learn more about [supported data locations](data-location.md).

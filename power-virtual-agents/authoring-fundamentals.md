@@ -16,11 +16,13 @@ ms.collection: virtual-agent
 # Key concepts - Authoring Power Virtual Agents bots
 
 
-When you create bots with Power Virtual Agents, you need to be able to author and edit topics. 
+When you create bots with Power Virtual Agents, you author and edit topics. 
 
 Topics are discrete conversation paths that, when used together within a single bot, allow for users to have a conversation with a bot that feels natural and flows appropriately.
 
-Creating a bot with Power Virtual Agents is easy to do with the no-code **Authoring canvas**, and there are a number of ways you can manage how topics interact, how you want the conversation to flow, and what it should feel like. It's also easy to test the bot on the fly without having to fully deploy the bot whenever you make a small change that requires testing.
+Creating a bot with Power Virtual Agents is easy to do with the [no-code authoring canvas](authoring-create-edit-topics.md), and there are a number of ways you can [manage how topics interact](authoring-topic-management.md), how you want the conversation to flow, and what it should feel like. It's also easy to [test the bot on the fly](authoring-test-bot.md) without having to fully deploy the bot whenever you make a small change that requires testing.
+
+There are a number of [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, in addition to [system topics](authoring-create-edit-topics.md#use-existing-and-sample-topics)
 
 ## Accessibility
 
@@ -31,14 +33,14 @@ In general, using the authoring canvas follows standard navigation patterns. But
 ###  Routing anchors
 Press enter or space on a route anchor to go into editing mode for that route. Once in the editing mode, you can tab to other node anchors. Once the desired anchor is selected, you can:
 
-- Press ```Delete``` to delete the route, and make the target node of the route an orphan node if this route is the only route leading to that node
-- Press ```Escape``` to take the user out of tab mode and resume normal tabbing
-- Press ```Enter``` or ```Space``` on a different node to reconnect the route to the new node (same source node, new target node)
-- Press ```Tab``` to take you to the next viable location to drop this route
+- Press ```Delete``` to delete the route, and make the target node of the route an orphan node if this route is the only route leading to that node.
+- Press ```Escape``` to take the user out of tab mode and resume normal tabbing.
+- Press ```Enter``` or ```Space``` on a different node to reconnect the route to the new node (same source node, new target node).
+- Press ```Tab``` to take you to the next viable location to drop this route.
 
 At any time, pressing these hotkeys on a route anchor will read out the properties of the route:
-- ```Alt + Shift + A``` will read out the source node
-- ```Alt + Shift + B``` will read out the target node
+- ```Alt + Shift + A``` will read out the source node.
+- ```Alt + Shift + B``` will read out the target node.
 
 ## In this section
 
@@ -46,6 +48,6 @@ Topic | Description
 - | -
 [Create your first bot](authoring-first-bot.md) | Create your first bot in less than thirty minutes.
 [Use lesson topics](authoring-template-topics.md) | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.
-[Create and edit topics](authoring-create-edit-topics.md) | Create and edit topics using the no-code **Authoring canvas**.
+[Create and edit topics](authoring-create-edit-topics.md) | Create and edit topics using the no-code authoring canvas.
 [Manage topics](authoring-topic-management.md) | Copy, edit, and manage which topics should be available in your bot.
 [Test your bot](authoring-test-bot.md) | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.

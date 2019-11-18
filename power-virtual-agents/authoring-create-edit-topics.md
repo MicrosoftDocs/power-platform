@@ -18,15 +18,14 @@ ms.collection: virtual-agent
 
 In Power Virtual Agents, a topic defines a how a bot conversation plays out. 
 
-You can author topics by customizing provided templates, create new topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md). 
+You can author topics by [customizing provided templates](authoring-template-topics.md), create new topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md). 
 
-A topic has trigger phrases - these are phrases, keywords, or questions that a user is likely to type that is related to a specific issue. 
+A topic has trigger phrases - these are phrases, keywords, or questions that a user is likely to type that is related to a specific issue - and conversation nodes - these are what you use to define how a bot should respond and what it should do.
 
-The AI uses natural language understanding to parse what a customer actually types and find the most appropriate trigger phrase. 
+The AI uses natural language understanding to parse what a customer actually types and find the most appropriate trigger phrase or node. 
 
-For example, a user might type *Open hours* into your bot - the AI will be able to match that to the **Store hours** topic and begin a conversation that asks which store the customer is interested in, and then display the hours the store is open.
+For example, a user might type "Open hours" into your bot - the AI will be able to match that to the **Store hours** topic and begin a conversation that asks which store the customer is interested in, and then display the hours the store is open.
 
-There are two parts to designing a topic: the topic's details, including its name and trigger phrases, and the bot conversation, which is defined by a series of nodes that you insert in the **Authoring canvas** for that topic.
 
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you are ready to deploy it without having to exit the Power Virtual Agents portal.
 
@@ -34,7 +33,7 @@ You can see how the bot conversation works in practice by testing it in the **Te
 >You can have up to 1000 topics in a bot.
 
 
-## Use existing and sample topics
+## Use system and sample topics
 
 When you create bot, a number of topics will be automatically created for you.
 
@@ -50,11 +49,11 @@ You can edit bot of these topic types in the same manner as for topics you creat
 
 ## Create a topic
 
-1. Go to the **Topics** tab on the side navigation pane to open the Topics page.
+1. Go to the **Topics** tab on the side navigation pane to open the topics page.
 
    ![Select Topics on the side navigation menu](media/topics-menu.png)
 
-1. On the Topics page, select **New topic**.
+1. On the topics page, select **New topic**.
 
    ![Select New topic at the top of the Topics page](media/topics-new.png)
 
@@ -71,15 +70,14 @@ You can edit bot of these topic types in the same manner as for topics you creat
 
 ## Design the topic's conversation path
 
-1. In the Topic details for the topic you want to edit, select **Go to authoring canvas**.
+1. In the topic details for the topic you want to edit, select **Go to authoring canvas**.
 
    ![The Go to authoring canvas is to the side of the trigger phrases](media/topics-details-canvas.png)
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
-   ![](media/topics-canvas.png)
  
-1. For existing or system topics, a number of nodes will automatically be created. You can edit these nodes. For more information on working with nodes, including variables, making conditional or branching logic, and using entities, see the [Use lesson topics in Power Virtual Agents article](authoring-template-topics.md).
+1. For existing or system topics, a number of nodes will automatically be created. You can edit these nodes just as you can for other nodes.
 
 1. When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you. 
 
@@ -87,7 +85,7 @@ You can edit bot of these topic types in the same manner as for topics you creat
 
     ![Screenshot of adding a node](media/handoff-add-node.png)
 
-### Insert and delete nodes
+### Insert nodes
 
 When adding a node, you can choose from five options. Each option has a specific node or nodes that will be inserted into the conversation path.
 
@@ -105,7 +103,7 @@ Additionally, you can **Branch based on a condition** when inserting a node betw
 
 ![](media/topics-nodes-branch.png)
 
-**Ask a question:**
+#### Ask a question:
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
@@ -141,12 +139,12 @@ Additionally, you can **Branch based on a condition** when inserting a node betw
 >
 >1. Add the keywords individually, and then once you're done adding keywords, select **Done** to return to the **Authoring canvas**.
 
-**Call an action:**
+#### Call an action
 
 You can [call Power Automate Flows](advanced-flow.md) by selecting **Call an action**.
  
 
-**Show a message:**
+#### Show a message
 
 1. To specify a response from the bot, select **+** to add a node, and then **Show a message** to add a new **Message** node.
 
@@ -155,7 +153,7 @@ You can [call Power Automate Flows](advanced-flow.md) by selecting **Call an act
    You can also [use variables that you have defined elsewhere](authoring-variables.md) in your bot conversation.
 
 
-**Go to another topic:**
+#### Go to another topic
 
 1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Go to another topic**.
 
@@ -163,7 +161,7 @@ You can [call Power Automate Flows](advanced-flow.md) by selecting **Call an act
 
     ![](media/topics-nodes-other-topic.png)
 
-**End the conversation:**
+#### End the conversation
 
 When you end the conversation, you can have a survey appear that asks the user if their question or issue was answered or resolved correctly. This information is collected under the [customer satisfaction analytics page](analytics-csat.md).
 
@@ -182,7 +180,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
     ![](media/topics-nodes-handoff.png)
 
 
-**Branch based on a condition:**
+#### Branch based on a condition
 
 1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, and then **Add a condition** and **Branch based on a condition**.
 
@@ -190,7 +188,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
     ![](media/topics-branch.png)
 
-**Delete a node:**
+### Delete nodes
 
 1. Select the menu icon on the top of the node's title.
 

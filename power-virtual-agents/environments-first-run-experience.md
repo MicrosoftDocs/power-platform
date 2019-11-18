@@ -16,29 +16,36 @@ ms.collection: virtual-agent
 
 With Power Virtual Agents, you can create bots in different environments and easily switch among them.
 
-An environment is a space to store, manage and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences. Each environment is created in a separate location. Learn more about [supported data locations](data-location.md).
+An environment is a space to store, manage and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. Learn more about [supported data locations](data-location.md).
 
 ## Leverage environments
 
-You can use environments for a number of different scenarios, such as :
+You can use different environments in a number of different ways, depending on your business needs:
 
-  - You can build all your bots in a single environment.
   - You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and bots for each audience.
   - You might also create separate environments for different global branches of your company.
 
+You can also build all your bots in a single environment if you don't need or want to use different ones.
+
 ## Create a new environment for your bots
 
-1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work account.
+When you first sign in and create a new bot, an default environment is created for you. 
+
+You can, however, create additional environments by [using the Power Platform Admin Center](/power-platform/admin/create-environment).
+
+**Create a new environment:**
+
+1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work account. You should use the same tenant as you use for Power Virtual Agents.
 
 2. Go to the **Environments** tab and select **+ New** to open the **New environment** panel.
 
    ![Create environment](media/environments-create-1.png)
   
-   - Specify a unique name for the environment
-   - Select the environment type
-   - Select a region where you want the environment to be created
-   - Set **Create a new database** to **Yes**
-   - Select **Next**.
+   1. Under **Name**, specify a unique name for the environment.
+   1. Under **Environment** select the environment type. A **Production** environment is intended for production scenarios and won't be subject to the same restrictions as a [**Trial** environment](#trial-environments).
+   1. Under **Region** select a [support data region](data-location.md) where you want the environment to be created.
+   1. Set **Create a database for this environment?** to **Yes**
+   1. Select **Next**.
    
    ![Create environment](media/environments-create-2.png)
    
@@ -48,18 +55,18 @@ You can use environments for a number of different scenarios, such as :
 
 3. Specify the details of the database, such as the language and currency type, then select **Save**.
 
-4. You'll be returned to the Environments tab. Click **Refresh** to see the environment you just created. You'll also see a notice explaining that it may take a few minutes to fully create the environment.
+4. You'll be returned to the **Environments** tab. Click **Refresh** to see the environment you just created. You'll also see a notice explaining that it may take a few minutes to fully create the environment.
 
 5. Once the environment is created you can now return to the [Power Virtual Agents portal](https://go.microsoft.com/fwlink/?linkid=2093067) and use the environment to create a new bot.
 
 ## Create a bot in an existing environment
-To create a bot in an existing environments, select the environment in the [bot creation window](authoring-first-bot.md).
+To create a bot in an existing environment, select the environment in the [bot creation window](authoring-first-bot.md).
 
 ![Select environment](media/select_environment_onboarding.png)
 
 ### Create a bot in an existing environment to which the user doesn't have access
 
-In order to create a bot in an existing environment to which you don't have access. You will need to be a **system administrator** or contact your **system administrator** of the environment to complete the following.
+In order to create a bot in an existing environment to which you don't have access, you'll need to be a system administrator or contacthe system administrator of the environment to complete the following.
 
 1. Create a bot in the environment (this will install the necessary Power Virtual Agents solutions).
 
@@ -68,8 +75,8 @@ In order to create a bot in an existing environment to which you don't have acce
 You can then return to the [Power Virtual Agents portal](https://powerva.microsoft.com) and create a bot in the environment.
 
 Resources to learn more:
-- [Environments overview](/power-platform/admin/environments-overview)
-- [Configure environment security](/power-platform/admin/database-security)
+- [Power Platform - Environments overview](/power-platform/admin/environments-overview)
+- [Power Platform - Configure environment security](/power-platform/admin/database-security)
 
 ## Trial environments
 
@@ -80,3 +87,19 @@ If you have created your own environment and selected **Trial** as the environme
 ## Converting a trial environment to a production environment
 
 When using a trial environment and you want to retain the bots for longer than 30 days, you must [convert the trial environment to a production environment](/power-platform/admin/trial-environments#convert-a-trial-environment-to-production).
+
+## Known issues with creating a bot
+
+When you are creating your bot, you might encounter the following issues.
+
+### Insufficient permissions for the selected environment
+
+In this case, you see this error: "You do not have permissions to any environments. Please get access from an administrator."
+
+You will need to [create a new environment](environments-first-run-experience.md). Use that environment to create your bot.
+
+### The environment I created does not show up in the drop-down menu of Power Virtual Agents
+
+Your environment might not show up in the drop-down menu due to one of the following:
+ - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
+ - The environment is created in an unsupported region. Learn more about [supported data locations](data-location.md).
