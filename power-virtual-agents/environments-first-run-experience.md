@@ -68,8 +68,8 @@ In order to create a bot in an existing environment to which you don't have acce
 You can then return to the [Power Virtual Agents portal](https://powerva.microsoft.com) and create a bot in the environment.
 
 Resources to learn more:
-- [Environments overview](https://docs.microsoft.com/en-us/power-platform/admin/environments-overview)
-- [Configure environment securiy](https://docs.microsoft.com/en-us/power-platform/admin/database-security)
+- [Environments overview](/power-platform/admin/environments-overview)
+- [Configure environment securiy](/power-platform/admin/database-security)
 
 ## Trial environments
 

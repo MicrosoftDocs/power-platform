@@ -22,7 +22,7 @@ Topics are discrete conversation paths that, when used together within a single 
 
 Creating a bot with Power Virtual Agents is easy to do with the no-code **Authoring canvas**, and there are a number of ways you can manage how topics interact, how you want the conversation to flow, and what it should feel like. It's also easy to test the bot on the fly without having to fully deploy the bot whenever you make a small change that requires testing.
 
-# Accessibility
+## Accessibility
 
 Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot **Authoring canvas** is built to be accessible from the get-go. 
 
