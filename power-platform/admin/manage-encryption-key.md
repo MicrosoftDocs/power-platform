@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/05/2019
+ms.date: 11/18/2019
 ms.author: matp 
 search.audienceType: 
   - admin
@@ -255,7 +255,28 @@ To unlock environments you must first [upload](#upload-a-key-pfx-or-byok) and th
 
 To unlock an environment using the PowerShell cmdlet, see [Set-CrmUnlockTenantProtectedInstance](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmunlocktenantprotectedinstance?view=dynamics365ce-ps).
 
-  
+
+## Environment database operations 
+A customer tenant can have environments that are encrypted using the Microsoft managed key and environments that are encrypted with the customer managed key. To maintain data integrity and data protection, the following controls are available when managing environment database operations.
+
+1. [Restore](backup-restore-environments.md) 
+   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer managed key. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Restore backup](media/cmk-restore-backup.png "Restore backup")
+
+2. [Copy](copy-environment.md)
+   The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer managed key. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Copy environment](media/cmk-copy-environment.png "Copy environment")
+
+   > [!NOTE]
+   > If a Support Investigation environment was created to resolve support issue in a customer managed environment, the encryption key for the Support Investigation environment must be changed to customer managed key before the Copy environment operation can be performed. 
+
+3. [Reset](sandbox-environments.md#reset-a-sandbox-environment)
+   The environment’s encrypted data will be deleted including backups. After the environment is reset, the environment encryption will revert back to the Microsoft managed key. 
+
 ## Encryption key change notification
 > [!IMPORTANT]
 > When an encryption key is activated or changed, all administrators receive an email message alerting them of the change. This provides a means to allow other administrators to verify and confirm that the key was updated by an authorized administrator.  Since it takes time to activate the key and to encrypt all the environments, and to send out the email notification, an encryption key can only be updated once every 24 hours.
