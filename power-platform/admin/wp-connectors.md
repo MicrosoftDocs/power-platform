@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 11/18/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -73,3 +73,6 @@ When on-premise gateways are involved the process is even a little more complex.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/architecture-connections.png "Connection architecture")
+
+### See also
+[Custom Connectors](https://docs.microsoft.com/connectors/custom-connectors/)
