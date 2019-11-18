@@ -132,7 +132,7 @@ Essentially, slot filling has happened by inserting the extracted entity “Hiki
 
 You can also use what is known as "proactive slot filling" where the user can specify multiple pieces of information that map to multiple entities. The bot is able to understand what information belongs to which entity automatically. In cases where it is unsure of the intended mapping, it will prompt the user to be more specific by providing choices.
 
-In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear, and also provides a second piece of information—the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
+In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear and also provides a second piece of information—the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
 
 ![Variable watch window](media/entities-13(draft).png)
 
@@ -140,7 +140,7 @@ In tracking between topics, you can see the bot takes in this user input, and in
 
 The bot is always actively listening to the user input, remembering information upfront so it can skip unnecessary steps as appropriate.
 
-Let’s restart the testing again and try another case. In this round you can add a couple more question nodes asking for things like the type of hiking gear as well as the price range (using the **Money** entity). 
+Let’s restart the testing again and try another case. In this round, you can add a couple more question nodes asking for things like the type of hiking gear as well as the price range (using the **Money** entity). 
 
 This time when the product category question is presented, instead of telling the bot only the product category, the user can say "I want to buy a pair of hiking boots under $100". In this example, the bot is not only able to route to the correct hiking product category path, but also actively fill the slots asking for the type of hiking gear and the target price range information. 
 

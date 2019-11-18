@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 
-The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on support case escalation rate, abandon rate, and resolution rate.
+The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
 The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
@@ -29,7 +29,7 @@ The Summary page includes a variety of charts with graphical views of your bot's
 * [Escalation Rate Drivers chart](#escalation-rate-drivers-chart)
 * [Abandon Rate Drivers chart](#abandon-rate-drivers-chart)
 
-The Engagement Rate Drivers, Abandon Rate Drivers, and Resolution Rate Drivers charts use natural language understanding to group support cases as topics. These charts show you the topics that are having the most impact on the performance of your bot.
+The Engagement Rate Drivers, Abandon Rate Drivers, and Resolution Rate Drivers charts use natural language understanding to group issues as topics. These charts show you the topics that are having the most impact on the performance of your bot.
  
 By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
@@ -85,7 +85,7 @@ Improving the resolution rate for the top resolution-rate topics in red has the 
 
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details.md).
 
-## Escalation rate drivers chart
+## Escalation Rate Drivers chart
 
 The Escalation Rate Drivers chart displays topics in order of their impact on the escalation rate over the specified time period.
 

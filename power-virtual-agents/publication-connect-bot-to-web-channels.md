@@ -21,14 +21,14 @@ When publishing the bot to the web, you can publish to a prebuilt demo website (
 
 > [!TIP]
 > **When should I use the demo website and when should I use my own website?** <br/>
-> You should use the demo website only to try out the bot and share it with your teammates or other stakeholders who want to try out the bot. It's not intended for production uses (for example, you shouldn't use it directly with customers). <br/>
+> You should use the demo website only to try out the bot and share it with your teammates or other stakeholders who want to try out the bot. It's not intended for production uses, for example, you shouldn't use it directly with customers. <br/>
 > You should publish and use the bot on your live website for production scenarios, such as a help bot on your help webpage for customers to interact with.
 
 ## Demo website
 You can edit the welcome message and suggested trigger phrases for the demo website. This helps prompt your teammates for what they should ask the bot about. 
 
 > [!TIP]
-> You can change the welcome message to explain the intent or purpose for the testing, and you can change this as often as you like. So you could create a welcome message asking to test out conversations related to store hours and then, after making updates to the bot, change the welcome message to ask testers to try conversations related to gift cards.
+> You can change the welcome message to explain the intent or purpose of the testing, and you can change this as often as you like. So you could create a welcome message asking to test out conversations related to store hours and then, after making updates to the bot, change the welcome message to ask testers to try conversations related to gift cards.
 
 **Update the demo website:**
 
@@ -36,7 +36,7 @@ You can edit the welcome message and suggested trigger phrases for the demo webs
 
 2. Select the **Demo website** tile.
 
-3. Enter whatever welcome message you'd like to be displayed alongside the bot in the **Welcome message** text field.
+3. Enter the welcome message you'd like to see alongside the bot in the **Welcome message** text field.
 
 4. Enter a list of suggested trigger phrases in the **Conversation starters** text field. Trigger phrases are what initiate specific topics, so you could customize these to specific topics that you want your teammates to try out.
 

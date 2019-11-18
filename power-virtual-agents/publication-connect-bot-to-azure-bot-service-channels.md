@@ -25,10 +25,9 @@ Adding your bot to Azure Bot Service channels requires considerable developer ex
 
 > [!TIP]
 > You do not need to follow this document to add your Power Virtual Agents bot to your [website, Facebook, or Microsoft Teams](publication-fundamentals-publish-channels.md).
+>If your goal is to connect to a custom web-based or native app, your developers can learn more at [Add bot to mobile and custom apps](publication-connect-bot-to-custom-application.md).
 
-If your goal is to connect to a custom web-based or native app, your developers can learn more at [Add bot to mobile and custom apps](publication-connect-bot-to-custom-application.md).
-
-> [!WARNING]
+> [!IMPORTANT]
 > Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
 
 ## Prerequisites
@@ -42,7 +41,7 @@ If your goal is to connect to a custom web-based or native app, your developers 
 You should also read [Connect your bot to mobile and custom apps](publication-connect-bot-to-custom-application.md) before following the instructions in this topic.
 
 ### Code samples
-Code snippets used in this document are from [Relay bot sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/RelayBotSample).  
+Code snippets used in this document are from [relay bot sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/RelayBotSample).  
 
 ### References
 The instructions in this document reference the following:
@@ -195,7 +194,7 @@ The following example uses samples from the [relay bot sample code](https://gith
     }  
     ```
 
-5. Refer to [Use Direct Line to communicate with the bot](publication-connect-bot-to-custom-application.md#use-direct-line-to-communicate-with-the-bot) for how to get the Power Virtual Agents bot's response. When the Power Virtual Agents bot response is received, refer to [Parse conversation payload from the bot](publication-connect-bot-to-custom-application.md#parse-conversation-payload-from-the-bot) for how to parse the response to the external Azure Bot Service channel response.
+5. Refer to [Use Direct Line to communicate with the bot](publication-connect-bot-to-custom-application.md#use-direct-line-to-communicate-with-the-bot) for how to get the Power Virtual Agents bot's response. When the Power Virtual Agents bot's response is received, refer to [Parse conversation payload from the bot](publication-connect-bot-to-custom-application.md#parse-conversation-payload-from-the-bot) for how to parse the response to the external Azure Bot Service channel response.
 
 An example of response parsing can be found in the [relay bot sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/RelayBotSample) ResponseConverter.cs.
 
