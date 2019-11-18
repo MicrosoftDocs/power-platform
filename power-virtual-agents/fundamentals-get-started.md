@@ -21,7 +21,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 
 ## Create your first bot
 
-1.	Go to [https://aka.ms/TryPVA](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Try preview**, and then sign in with your work email address. Note that personal Microsoft accounts aren't supported currently.
+1.	Go to [https://aka.ms/TryPVA](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Try preview**, and then sign in with your work email address. Note that personal Microsoft accounts aren't currently supported.
 
     
 
@@ -53,23 +53,26 @@ This quickstart guide takes you through the end-to-end experience of creating a 
     
 
 
-3. You can now name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog. As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase. Select **Save topic** to add the topic to the topics list.
+3. You can now name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog. The following image shows the trigger phrases for a topic about a store's opening hours:
+    
     ![Create topic and trigger phrase](media/topics-details-triggers.png)
+
+   As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase. Select **Save topic** to add the topic to the topics list.
+    
     
 
 
-4. After saving your topic, select **Go to authoring canvas** to open the authoring canvas. This is the graphical dialog tree editor that allows you to define bot responses and the overall conversation flow.
+4. After saving your topic, select **Go to authoring canvas**. This is the graphical dialog tree editor that allows you to define bot responses and the overall bot conversation.
 
    Start by entering 'Hello! I’ll create a personalized greeting for you.' into the first **Message** node. 
    
-    
     ![Add node](media/quickstart-add-node.png)
     
 
     
 
-5. Then, click on the **+** below the node, and add an **Ask a question** node by selecting it in the menu. Enter the question text, 'Where do you live?', in the Ask a question box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
-    e
+5. Then, click on the **+** below the node, and add an **Ask a question** node by selecting it in the menu. Enter the question text, 'Where do you live?', in the **Ask a question** box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
+    
     ![Bot answer](media/quickstart-create-topic-02.png)
 
 
@@ -88,12 +91,12 @@ This quickstart guide takes you through the end-to-end experience of creating a 
     ![Complete conversation](media/quickstart-create-topic-03.png)
     
 
-You now have a very simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating expressions, entities, and Power Automate.
+You now have a very simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating [variables](authoring-variables.md), [entities](advanced-entities-slot-filling), and [Power Automate flows](advanced-flow.md).
 
  
 ## Test your content in real time
 
-1. Now that you have some content authored into a dialogue tree, it’s time to test this out in real time to see if it’s working as you expected. For this, you’ll use the Test bot panel.
+1. Now that you have some content authored into a dialogue tree, it’s time to test this out in real time to see if it’s working as you expected. For this, you’ll use the test bot panel.
 
     ![Start bot with latest content](media/test-bot-panel.png)
     
@@ -112,7 +115,7 @@ You now have a very simple branching dialog tree, congratulations! You can begin
 
 
 
-3. Type "hello world" in the chat window, and send the message to the bot. You’ll see the top portion of your dialog tree highlighted in green, and you’ll see “Seattle” and “Bellevue” presented as user options in the test bot window.
+3. Type "hello world" in the chat window, and send the message to the bot. You’ll see the top portion of your dialog tree highlighted in green, and you’ll see **Seattle** and **Bellevue** presented as user options in the test bot window.
 The bot is now waiting for you to respond and has provided suggestions on how to respond. These suggestion buttons reflect what you authored within your dialog tree in the 'Ask a question' node. In the test bot, you can either select these suggestion buttons to continue, or you can enter your response into the chat window. 
 
     ![Tracing conversation](media/quickstart-test-bot-03.png)
@@ -135,17 +138,17 @@ The bot is now waiting for you to respond and has provided suggestions on how to
 2. Select **Publish** to activate your bot with a single click. If the publish is successful, a green banner on the top of the page will indicate so.
 
  
-3. Then click on the demo website link under 'Share your bot' to see it in action on a demo website. A new window opens in your browser. If this doesn't happen automatically, check whether a pop-up blocker has been activated and, if so, allow the window to be opened. Usually, you can allow pop-ups from the URL field directly. This is a webpage that demonstrates what your bot looks like to an end-user who comes to your webpage. The bot canvas is at the bottom. You can interact with it by typing into the window or by selecting a starter phrase from the provided options. This is your bot in action. 
+3. Then click on the demo website link under **Share your bot** to see it in action on a demo website. A new window opens in your browser. If this doesn't happen automatically, check whether a pop-up blocker has been activated and, if so, allow the window to be opened. Usually, you can allow pop-ups from the URL field directly. This is a webpage that demonstrates what your bot looks like to an end-user who comes to your webpage. The bot canvas is at the bottom. You can interact with it by typing into the window or by selecting a starter phrase from the provided options. This is your bot in action. 
 
     ![Share your bot](media/channel-go-to-demo-website.png)
     
 
-For more information on publishing your bot to other channels, reference the documentation under [Publication key concepts](publication-fundamentals-publish-channels.md). 
+For more information on publishing your bot to other channels, see the documentation under [Publication key concepts](publication-fundamentals-publish-channels.md). 
 
 
 ## Analyze the performance of your bot
 
-1.	Once your bot has completed interactions with users, the statistics are available via the **Analytics** tab in the side navigation pane. Here, you can find key performance indicators (KPIs) showing the volume of sessions your bot has handled, how effectively your bot was able to engage end-users and resolve issues, escalation rates to human agents, and abandonment rates during conversations. You will also find customer satisfaction information at the KPI level as well as in the **Customer Satisfaction** tab.
+1.	Once your bot has completed interactions with users, the statistics are available on the **Analytics** tab in the side navigation pane. Here, you can find key performance indicators (KPIs) showing the volume of sessions your bot has handled, how effectively your bot was able to engage end-users and resolve issues, escalation rates to human agents, and abandonment rates during conversations. You will also find customer satisfaction information at the KPI level as well as in the **Customer Satisfaction** tab.
 
     > [!NOTE]
     > There is up to a 1-hour delay between when the conversations occur and when the statistics for those conversations appear in the analytics views. Also, all interactions with the bot are logged in analytics, including interactions from your demo website, custom website, or test bot.
@@ -160,7 +163,7 @@ For more information on publishing your bot to other channels, reference the doc
 
     For more information, see [Analytics key concepts](analytics-overview.md).
     
-   
+## Conclusion
 
 You’ve now created a bot, created your own custom topic, tested it out, published it to a demo website, and learned how to analyze your bot’s performance. Congratulations! Your bot has many capabilities beyond this, so please try it out and play with the advanced features.
 

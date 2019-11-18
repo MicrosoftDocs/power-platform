@@ -33,6 +33,21 @@ You can see how the bot conversation works in practice by testing it in the **Te
 >[!Note]
 >You can have up to 1000 topics in a bot.
 
+
+## Use existing and sample topics
+
+When you create bot, a number of topics will be automatically created for you.
+
+![Four lesson topics and a number of system topics are in the Topics list](media/topics-system.png)
+
+These are:
+  
+  - Four pre-populated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics.md) can be used to help understand simple to complex ways of using nodes to create bot conversations.
+  - A number of **System Topics**. These are pre-populated topics that you are likely to need during a bot conversation. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
+
+You can edit bot of these topic types in the same manner as for topics you create, however you cannot delete them.
+
+
 ## Create a topic
 
 1. Go to the **Topics** tab on the side navigation pane to open the Topics page.
@@ -72,7 +87,7 @@ You can see how the bot conversation works in practice by testing it in the **Te
 
     ![Screenshot of adding a node](media/handoff-add-node.png)
 
-### Insert nodes
+### Insert and delete nodes
 
 When adding a node, you can choose from five options. Each option has a specific node or nodes that will be inserted into the conversation path.
 
@@ -175,7 +190,13 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
     ![](media/topics-branch.png)
 
+**Delete a node:**
 
+1. Select the menu icon on the top of the node's title.
+
+1. Select **Delete**.
+
+    ![Select the menu icon and then the delete button](media/topics-delete.png)
 
 ## Test and publish your bot
 

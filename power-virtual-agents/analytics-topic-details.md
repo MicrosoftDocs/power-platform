@@ -37,7 +37,13 @@ You can display the topic details page by selecting the **Detail** link in one o
 >You need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.
 
 
-The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page. 
+The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page.
+
+![From the Topic details page, select the Analytics tab](media/analytics-topics-details.png)
+
+You can also hover over each topic in the Topics page and select the **Go to analytics** icon. 
+
+![Hovering shows the Go to analytics icon](media/analytics-topics.png)
 
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:
 
