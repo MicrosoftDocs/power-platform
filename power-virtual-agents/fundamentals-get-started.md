@@ -10,11 +10,11 @@ ms.author: mhart
 manager: shellyha
 ---
 
-# Quickstart: Create and deploy a customer service bot
+# Quickstart: Create and deploy a Power Virtual Agents bot
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Power Virtual Agents empowers customer teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
+Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
 
 This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding custom topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it’s been deployed. 
 
