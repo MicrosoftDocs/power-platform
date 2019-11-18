@@ -1,5 +1,7 @@
 - name: Overview
   items:
+   - name: Power Virtual Agents Overview
+     href: fundamentals-what-is-power-virtual-agents.md
    - name: Get started quickly with Power Virtual Agents
      href: fundamentals-get-started.md
    - name: Working with environments
