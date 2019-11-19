@@ -27,19 +27,19 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 ## Pre-requisites
 
 - You need a bot built with [Power Virtual Agents](https://aka.ms/TryPVA)
-- You need to have an engagement hub that is being used by human agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
+- You need to have an engagement hub that is being used by live agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Triggering hand-off to a live agent
 Customers engaging with the bot can ask for a live agent at any point in the conversation. This can happen in two ways, with an implicit trigger or an explicit trigger.
 
-Upon triggering the hand-off topic, Power Virtual Agents initiates hand-off to the configured engagement hub and sends over all conversation context to find the next best live agent and ramp them to resume the conversation.
+Upon triggering the hand-off topic, Power Virtual Agents initiates hand-off to the configured engagement hub and sends over all conversation context to find the next best live agent to ramp them up so they can resume the conversation.
 
 ### Implicit triggers
 In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there is no [topic](getting-started-create-topics.md), or there is no matching option within a topic. 
 
-In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid way into a conversation.
+In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
-When the bot detects this, it will automatically redirect the user to the [**Escalate** system topic](how-to-templates.md). This is known as *implicit triggering*.
+When the bot detects this, it will automatically redirect the user to the [**Escalate** system topic](authoring-create-edit-topics.md). This is known as *implicit triggering*.
 
 ### Explicit triggers
 When creating topics for your bot, you may determine that some topics require interaction with a human. This is known as *explicit triggering*. 
@@ -71,7 +71,7 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 The topic will initiate a transfer to a live agent when this node is reached. You can test the hand-off by triggering the topic in the test canvas.
 
 >[!NOTE]
->Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website suggesting the need to [customize your chat canvas](extend-custom-canvas-connect.md) to implement custom client-side code that seamlessly brings in a human agent from your engagement hub into the conversation.
+>Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website. This suggests the need to [customize your chat canvas](extend-custom-canvas-connect.md) to implement custom client-side code that brings in a human agent from your engagement hub into the conversation.
 
 
 ## Contextual variables available upon hand-off
@@ -90,7 +90,7 @@ The following table lists the context variables available by default.
 | `va_Phrases` | Helps ramp-up a live agent | `["Hi", "When does store open", "Can I return my item" ] ` |
 | `va_ConversationId` | Helps uniquely identify a bot conversation | `GUID` |
 | `va_AgentMessage` | Helps ramp-up a live agent | `"Got a gift from: HandoffTest"` |
-| `va_BotId` | Helps identify the bot that is hand-off a conversation | `GUID` |
+| `va_BotId` | Helps identify the bot that is handing off a conversation | `GUID` |
 | `va_Language` | Helps route escalation to a live agent | `"en-us"` |
 | All [user-defined topic variables](how-to-variables.md) | Helps ramp-up a live agent | `@StoreLocation = "Bellevue"` |
 
