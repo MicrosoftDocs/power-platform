@@ -27,7 +27,7 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 ## Pre-requisites
 
 - You need a bot built with [Power Virtual Agents](https://aka.ms/TryPVA)
-- You need to have an engagement hub that is being used by human agents, such as [Omnichannel for Customer Service](https://docs.microsoft.com/en-us/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
+- You need to have an engagement hub that is being used by human agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Triggering hand-off to a live agent
 Customers engaging with the bot can ask for a live agent at any point in the conversation. This can happen in two ways, with an implicit trigger or an explicit trigger.
