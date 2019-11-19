@@ -29,7 +29,7 @@ For a walkthrough of how to connect to your customer service data to gain insigh
 
 ## Identifying CSI topics to automate to Power Virtual Agents
 
-Looking at the [**New Cases** dashboard](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-incoming-cases) in Customer Service Insights, you can see cases with similar intent that are grouped through AI learning into 
+Looking at the [**New Cases** dashboard](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-incoming-cases) in Customer Service Insights, you can see cases with similar intent that are grouped through AI learning into:
 
 1. Popular topics. The Popular topics chart uses artificial intelligence technology to group related incoming support cases as support topics and then display topics in order of volume over the specified time period.
 
@@ -44,7 +44,7 @@ You can consider topics as good candidates for automation, if they are:
 
 1. Straightforward to resolve, and hence the bot is more likely to be able to handle it. You can tell that if a topic has lower average resolution time, higher resolution rate, and/or fewer escalations.
 
-2. Have high volume, so the automation can bring you more business benefit and impact. You can tell that from [case volume drivers](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-kpi-summary#case-volume-drivers-chart) and [emerging topics](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-kpi-summary#emerging-topics-chart) in Customer Service Insights.
+2. High volume, so the automation can bring you more business benefit and impact. You can tell that from [case volume drivers](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-kpi-summary#case-volume-drivers-chart) and [emerging topics](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-kpi-summary#emerging-topics-chart) in Customer Service Insights.
 
 Customer Service Insights also calculates resolution time impact for each topic, which has already taken into account both average resolution time and case volume. See the [Resolution time drivers chart](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-case-resolutions#resolution-time-drivers-chart) for more details how resolution time impact is calculated.
 
