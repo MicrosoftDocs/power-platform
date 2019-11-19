@@ -81,7 +81,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose Production or Trial.        |
+   |Type     | You can choose production or Trial.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
@@ -106,7 +106,7 @@ To create an environment with a database, you need 1GB available database capaci
 When you create an environment with a database, you can add model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) to your environment.
 
 > [!NOTE]
-> Currently, Dynamics 365 apps can only be enabled for Production environments. You can create Dynamics 365 app trials at <https://trials.dynamics.com>.
+> Currently, Dynamics 365 apps can only be enabled for production environments. You can create Dynamics 365 app trials at <https://trials.dynamics.com>.
 
 ### Prerequisites
 To create an environment with a database, you need 1GB available database capacity.
@@ -124,7 +124,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose Production or Trial.        |
+   |Type     | You can choose production or Trial.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
@@ -160,7 +160,7 @@ You need 1GB available database capacity.
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose Production or Trial.        |
+   |Type     | You can choose production or Trial.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **No**. |
@@ -169,11 +169,11 @@ You need 1GB available database capacity.
    > ![](./media/new-environment-page1-nodb.png "Create new environment settings")
 
 ## Provision a Sandbox environment
-To provision a Sandbox environment, you change a Production environment to Sandbox.
+To provision a Sandbox environment, you change a production environment to Sandbox.
 
 1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
 
-2. From the left-side menu, select **Environments**, and then select a Production environment.
+2. From the left-side menu, select **Environments**, and then select a production environment.
 
 3. Select **Edit**
 
@@ -201,7 +201,7 @@ No, Office 365 licensed users will not be able to manage environments.
 ### If I create an environment in the Dynamics 365 Admin center, will it appear in the Power Platform Admin center?
 Yes it will appear in both admin centers.
 
-### What is the PowerApps Production environment limit?
+### What is the PowerApps production environment limit?
 Provisioning environments is based on database capacity. Previously, it was two environments per PowerApps Plan 2 license. Now all you need is 1GB of available capacity to provision. All environments with or without Common Data Service will consume at least 1GB capacity.
 
 ### See also 

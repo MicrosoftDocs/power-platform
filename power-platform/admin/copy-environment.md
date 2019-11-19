@@ -106,7 +106,7 @@ After modifying and enabling some of the plug-ins, the developer Sandbox environ
 
 5. Select a Sandbox environment.
   
-    A target environment can be a Sandbox or Preview environment; not a Production environment.  
+    A target environment can be a Sandbox or Preview environment; not a production environment.  
   
    > [!WARNING]
    >  The target environment will be deleted and replaced with a copy of the data and customizations from the source environment. You won’t be able to recover any deleted data.  
@@ -128,7 +128,7 @@ The overwrite process starts.
 Once the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
  
 ### Next steps after copying an environment  
- To ensure the newly created copy (target) environment does not impact your Production environment, once the copy operation is complete, two things happen:  
+ To ensure the newly created copy (target) environment does not impact your production environment, once the copy operation is complete, two things happen:  
   
 1. The newly created copy environment is placed in administration mode. Only those with System Administrator or System Customizer security roles can sign in and manage the copy environment. Regular users cannot sign in and use the copy environment.  
   
@@ -142,9 +142,9 @@ Once the copy process is complete, the target environment is placed in [Administ
   
 2. Redirect the component to another service environment such as one running Exchange or SharePoint.  
   
-3. Do nothing – leave the component as is in the copy environment. For example, you might decide to allow Yammer posting to both the copy and Production environments.  
+3. Do nothing – leave the component as is in the copy environment. For example, you might decide to allow Yammer posting to both the copy and production environments.  
   
-   Here are some possible application components in the copy environment that could have external connections and therefore could impact services with the same connections in your Production environment.  
+   Here are some possible application components in the copy environment that could have external connections and therefore could impact services with the same connections in your production environment.  
   
 - **Email**. A mailbox cannot be synced with two different environments. For an Everything copy environment, the user mailboxes in the copy environment must be disabled so the mailboxes do not attempt to send or receive email, or track appointments, contacts, or tasks. Set synchronization for the following to None.  
   
@@ -156,7 +156,7 @@ Once the copy process is complete, the target environment is placed in [Administ
   
 - **SharePoint**. Deactivate or redirect SharePoint to a sandbox SharePoint environment to prevent impacting documents managed by SharePoint. Go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then click **Deactivate**.  
   
-- **Yammer**. Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the Production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
+- **Yammer**. Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
   
      After creating a new Sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you have connected Yammer to model-driven apps in Dynamics 365 there will be Yammer activity streams posted from model-driven apps in Dynamics 365 to Yammer asynchronously. These activity streams are not visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the Sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your Sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
   
@@ -166,4 +166,4 @@ Once the copy process is complete, the target environment is placed in [Administ
     - **Workflow custom activity**.  
 - **Client extensibility**. Review the following.  
     - **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
-    - **IFRAMES**. Determine if the target of an IFRAME is a Production environment.  
+    - **IFRAMES**. Determine if the target of an IFRAME is a production environment.  

@@ -77,7 +77,7 @@ Users accessing a PowerApp or Power Automate impacted by the DLP policy will see
 > [!div class="mx-imgBorder"] 
 > ![](media/dlp-policy-conflict.png "DLP policy conflict")
 
-One thing to keep in mind, DLP policies created for a connector do not understand that that connector could be configured to talk to Dev, Test and Production, etc. When you configure a DLP policy it is all or nothing. So, if you want to allow the connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won’t help you restrict that. Another way to say the same thing, is DLP policies are Connector aware, but do not control the connections that are made using the connector.
+One thing to keep in mind, DLP policies created for a connector do not understand that that connector could be configured to talk to Dev, Test and production, etc. When you configure a DLP policy it is all or nothing. So, if you want to allow the connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won’t help you restrict that. Another way to say the same thing, is DLP policies are Connector aware, but do not control the connections that are made using the connector.
 
 ## Strategies for creating DLP policies
 
@@ -92,9 +92,9 @@ First, let’s look at our environment setup and assumptions. The following are 
 |Environment  |Expected Use / Policy  |
 |---------|---------|
 |Contoso – Default     | This is the default environment, and anyone can create apps and flows in it        |
-|Contoso Enterprise Apps     |This is a Production environment with applications managed with formal review before being promoted here. This could also be more business unit aligned e.g. Marketing, Finance etc.         |
+|Contoso Enterprise Apps     |This is a production environment with applications managed with formal review before being promoted here. This could also be more business unit aligned e.g. Marketing, Finance etc.         |
 |Community Plan Environments (0…N)     |These will be automatically created by any users in our org that sign up for the free Community Plan         |
-|User Owned Environments (0…N)     |These are Production or Trial Environments created by users with a PowerApps plan or PowerApps Trial         |
+|User Owned Environments (0…N)     |These are production or Trial Environments created by users with a PowerApps plan or PowerApps Trial         |
 
 We now are going to design a tenant wide default DLP policy. Our goal is to ensure that as people create their own environments and test and explore they minimize mix of core business data without us first working with them.
 

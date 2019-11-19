@@ -286,9 +286,9 @@ Get-Help Import-CrmPackage -full
   
 -   Insist on a signed package assembly so that they can track an assembly back to its source.  
   
--   Test the package on a pre-production environment (preferably a mirror image of the Production environment) before running it on a production server.  
+-   Test the package on a pre-production environment (preferably a mirror image of the production environment) before running it on a production server.  
   
--   Back up the Production environment before deploying a package.  
+-   Back up the production environment before deploying a package.  
  
 ### See also  
  [Create packages for the Package Deployer](https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)

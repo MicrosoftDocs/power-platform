@@ -20,7 +20,7 @@ search.app:
 An environment is a space to store, manage, and share your organization’s business data, apps, and flows. They also serve as containers to separate apps that may have different roles, security requirements, or target audiences. How you choose to leverage environments depends on your organization and the apps you are trying to build. For example:
 
 * You may choose to only build your apps in a single environment.
-* You might create separate environments that group the Test and Production versions of your apps.
+* You might create separate environments that group the Test and production versions of your apps.
 * You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and apps for each audience.
 * You might also create separate environments for different global branches of your company.  
 * Get early access to the upcoming PowerApps functionalities by joining [PowerApps Preview Program](preview-environments.md).
