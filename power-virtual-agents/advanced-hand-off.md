@@ -68,7 +68,7 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
 1. Enter an optional private message to the live agent in the **Transfer to agent** node. This can be useful if you have multiple topics with **Transfer to agent** nodes as the information is stored in the `va_AgentMessage` [context variable](#contextual-variables-available-upon-hand-off).
 
-The topic will now initiate a transfer to a live agent when it's triggered. You can test the hand-off by triggering the topic in the test canvas.
+The topic will initiate a transfer to a live agent when this node is reached. You can test the hand-off by triggering the topic in the test canvas.
 
 >[!NOTE]
 >Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website suggesting the need to [customize your chat canvas](extend-custom-canvas-connect.md) to implement custom client-side code that seamlessly brings in a human agent from your engagement hub into the conversation.
