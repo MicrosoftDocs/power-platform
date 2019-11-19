@@ -131,20 +131,28 @@
             href: settings-privacy-security.md
         - name: Business settings
           items:
-          - name: Business closures  #Don't move to PPAC, Customer Service setting
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-when-business-closed-csh
-          - name: Calendar #Don't move to PPAC, Busn Mgmt setting
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/work-fiscal-year-settings
-          - name: Currencies #Don't move to PPAC, Busn Mgmt setting
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-transactions-with-multiple-currencies
+          - name: Business closures 
+            href: https://docs.microsoft.com/dynamics365/customer-service/set-when-business-closed-csh
+          - name: Calendar 
+            href: work-fiscal-year-settings.md
+          - name: Connection roles
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
+          - name: Currencies 
+            href: manage-transactions-with-multiple-currencies.md
+          - name: Queues
+            href: https://docs.microsoft.com/dynamics365/customer-service/set-up-queues-manage-activities-cases
           - name: Regional formatting
             href: customize-regional-options-admins.md
+          - name: Relationship roles
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
         - name: Users + permissions settings
           items:
           - name: Business units
             href: create-edit-business-units.md
           - name: Hierarchy security
             href: hierarchy-security.md
+          - name: Mobile configuration
+            href: https://docs.microsoft.com/dynamics365/mobile-app/setup-mobile-offline-for-admin
           - name: Positions
             href: hierarchy-security.md#position-hierarchy
           - name: Security roles
@@ -153,13 +161,37 @@
             href: create-team-template-add-entity-form.md
           - name: Users 
             href: create-users-assign-online-security-roles.md
-        - name: Encryption
+        - name: Audit and logs
+          items: 
+          - name: Audit log management
+            href: audit-data-user-activity.md
+          - name: Audit settings
+            href: system-settings-dialog-box-auditing-tab.md
+          - name: Audit summary view
+            href: audit-data-user-activity.md
+          - name: Entity and field audit settings
+            href: audit-data-user-activity.md
+          - name: System jobs
+            href: monitor-manage-system-jobs.md
+        - name: Templates
           items:
-          - name: Encryption
-            href: data-encryption.md
-          - name: Manage encryption key
-            href: manage-encryption-key.md 
-        - name: Email settings
+          - name: Access team templates
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/about-team-templates
+          - name: Article templates
+            href: create-templates-articles.md
+          - name: Contract templates
+            href: https://docs.microsoft.com/dynamics365/customer-service/create-entitlement-define-support-terms-customer
+          - name: Data import templates
+            href: download-template-data-import.md
+          - name: Document templates
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/work-with-templates
+          - name: Email signatures
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-signature-dynamics-365-email-queue
+          - name: Email templates
+            href: create-templates-email.md
+          - name: Mail merge templates
+            href: work-mail-merge-templates.md
+        - name: Email 
           items:
           - name: Email settings
             href: settings-email.md
@@ -169,12 +201,34 @@
             href: create-forward-mailboxes-edit-mailboxes.md
           - name: Server profiles 
             href: supported-email-service-configurations-server-side-synchronization.md
-        - name: Services settings
+        - name: Integration
           items:
+          - name: Enable server-based SharePoint integration
+            href: configure-server-based-authentication-sharepoint-on-premises.md
+          - name: Document management settings
+            href: enable-sharepoint-document-management-specific-entities.md
+          #- name: Manage document suggestions
+          #  href: 
           - name: Microsoft Social Engagement
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/administer-microsoft-social-engagement
+            href: connect-microsoft-social-engagement.md
+          - name: OneDrive for business
+            href: enable-onedrive-for-business.md 
+          - name: OneNote
+            href: set-up-onenote-integration-in-dynamics-365.md
+          - name: Outlook
+            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook.md
+          - name: SharePoint document locations
+            href: create-edit-document-location-records.md
+          - name: SharePoint sites
+            href: edit-existing-sharepoint-site-records.md
+          - name: Synchronization
+            href: system-settings-dialog-box-synchronization-tab.md
+          - name: Yammer
+            href: connect-yammer.md
         - name: Data management settings
           items:
+          - name: Add ready-to-use business process
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/add-ready-use-business-processes
           - name: Announcements
             href: settings-announcements.md
           - name: Auto numbering
@@ -187,12 +241,30 @@
             href: import-data-all-record-types.md
           - name: Data maps
             href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map
-          - name: Duplicate detection
-            href: turn-duplicate-detection-rules-off-whole-organization.md                                             
-          - name: Templates
-            href: download-template-data-import.md
-          - name: Cascading transaction processing
-            href: async-cascading.md
+          - name: Duplicate detection jobs
+            href: run-bulk-system-jobs-detect-duplicate-records.md
+          - name: Duplicate detection rules
+            href: set-up-duplicate-detection-rules-keep-data-clean.md
+          - name: Duplicate detection settings
+            href: turn-duplicate-detection-rules-off-whole-organization.md
+          - name: Export field translations
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/export-customized-entity-field-text-translation
+          - name: Import field translations
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/import-translated-entity-field-text
+          - name: Imports
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data 
+          - name: Sample data
+            href: add-remove-sample-data.md
+        - name: Encryption
+          items:
+          - name: Encryption
+            href: data-encryption.md
+        - name: Resources
+          items: 
+          - name: All legacy settings
+            href: set-up-business-management-options.md
+          - name: Dynamics 365 for Outlook
+            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
         - name: System Settings
           items: 
           - name: Overview
