@@ -188,17 +188,17 @@ If you want, you can delete an existing environment of that specific type and cr
 If you are getting any other error message or have more questions, please connect with us [here][5].
 
 ### When will my Trial environment expire?   
-Trial environments expire after 30 days from their creation. If you don't want your Trial environments to expire, you can [convert them to Production environments](trial-environments.md#convert-a-trial-environment-to-production). 
+Trial environments expire after 30 days from their creation. If you don't want your Trial environments to expire, you can [convert them to production environments](trial-environments.md#convert-a-trial-environment-to-production). 
 
 ### Does my current database (created with previous version of the Common Data Service) also gets counted in the quota?
-If you had a database (created with previous version of the Common Data Service), they will also get counted with your Production environment quota. If you now create a database in an environment (created prior to March 15, 2018) then it will also get counted as Production environment.
+If you had a database (created with previous version of the Common Data Service), they will also get counted with your production environment quota. If you now create a database in an environment (created prior to March 15, 2018) then it will also get counted as production environment.
 
 ### Can I rename an environment?
 Yes, this functionality is available from the PowerApps Admin center. See [Environments Administration](environments-administration.md#rename-your-environment) for more details.
 
 ### Can I delete an environment?
 Yes, this functionality is available from the PowerApps Admin center. See [Environments Administration](environments-administration.md#delete-your-environment) for more details.
-Please note that you currently can't delete a Production environment with a database (with latest version of the Common Data Service). This will be coming soon!
+Please note that you currently can't delete a production environment with a database (with latest version of the Common Data Service). This will be coming soon!
 
 ### As an Environment Admin, can I view and manage all resources (apps, flows, APIs, etc.) for an environment?
 Yes, the ability to view the apps and flows for an environment is available from the PowerApps Admin center. See [View Apps](admin-view-apps.md) for more details.

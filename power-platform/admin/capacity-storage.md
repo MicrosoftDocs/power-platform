@@ -174,5 +174,5 @@ Not all licenses give per user entitlement. For example, the team member license
 Check back for availability. In addition to top tables, we will also show the table trend.
 
 ### Which environments are counted in the capacity report?
-Default, Production, and Sandbox environments are counted for consumption. Trial, Preview, Support, and Developer environments are not counted.
+Default, production, and Sandbox environments are counted for consumption. Trial, Preview, Support, and Developer environments are not counted.
 

@@ -32,8 +32,8 @@ All new Common Data Service environments and Common Data Service environments, i
 |Environment types  |Release date  |
 |---------|---------|
 |New Trial environments     | December 12, 2018         |
-|New Trial and Production Common Data Service environments     | February 2, 2019        |
-|New Production and Sandbox environments     | June 8, 2019       |
+|New Trial and production Common Data Service environments     | February 2, 2019        |
+|New production and Sandbox environments     | June 8, 2019       |
 
 ### Existing environments
 

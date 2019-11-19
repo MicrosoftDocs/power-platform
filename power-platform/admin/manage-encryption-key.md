@@ -189,7 +189,7 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 3.	Select **See all**.
 4.  In the **Environment Encryption** section, select **Manage**, and then select **Confirm**. 
 5.	Under **Return to standard encryption management**, select **Return** .
-6.  For Production environments, confirm the environment by entering the environment's name.
+6.  For production environments, confirm the environment by entering the environment's name.
 7.  Select **Confirm** to return to standard encryption key management.
 
 To perform this task using PowerShell, see [Set-CrmProtectWithMicrosoftKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmprotectwithmicrosoftkey?view=dynamics365ce-ps).
