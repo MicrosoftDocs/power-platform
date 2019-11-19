@@ -26,29 +26,18 @@ For a walkthrough of how to connect to your customer service data to gain insigh
 
 <<<  INCLUDE IMAGE OF CSI KPI SUMMARY PAGE >>>>
 
-The AI-driven technology empowers informed decision making about how to improve resolution rates, reduce wait times, and decrease customer service costs. You can use case resolution insights, backlog trends, and historical comparisons to evaluate agent performance and business impact, and address inefficiencies in your system.
-
-
-## Popular and emerging topics in the CSI dashboard
-
-Looking at the **New Cases** tab in Customer Service Insights, you can see cases with similar intent that are grouped through AI learning into: 
-
-1. **Popular topics** chart: AI technology groups related incoming support cases as support topics and then displays topics in order of volume over the specified time period.
-
-2. **Emerging topics** chart: Displays support topics that have a high volume of change in order of the change in volume over the specified time period. This chart shows the topics with high volume changes before they become popular topics.
-
-<<< INCLUDE IMAGE OF NEW CASES TAB IN CSI, HIGHLIGHT POPULAR TOPICS AND EMERGING TOPICS >>>
-
-To view detailed analytics and cases for any topic, scroll to the right in the charts and click on the Details icon. 
-
-<<< INCLUDE IMAGE OF THE POPULAR CASES CHART SCROLLED TO THE RIGHT SHOWING THE DETAILS ICON >>>
-
 
 ## Identifying CSI topics to automate to Power Virtual Agents
 
-To view topic details analytics, see the [Topic details analytics dashboard](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-topic-details) for more information.
+Looking at the [**New Cases** dashboard](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-incoming-cases) in Customer Service Insights, you can see cases with similar intent that are grouped through AI learning into 
 
-<<< INCLUDE IMAGE OF ANALYTICS TAB FOR A TOPIC >>>
+1. Popular topics. The Popular topics chart uses artificial intelligence technology to group related incoming support cases as support topics and then display topics in order of volume over the specified time period.
+
+2. Emerging topics. The Emerging topics chart displays support topics that have a high volume of change in order of the change in volume over the specified time period. This chart shows the topics with high volume changes before they become popular topics.
+
+To see additional information about each topic, right-click the topic name, hover over **Drillthrough**, and then select **Topic drillthrough** to display the Topic details dashboard. For more information, see [Topic details dashboard](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-topic-details).
+
+<<< INCLUDE IMAGE OF topic details dashboard FOR A TOPIC >>>
 
 
 You can consider topics as good candidates for automation, if they are:
@@ -59,9 +48,7 @@ You can consider topics as good candidates for automation, if they are:
 
 Customer Service Insights also calculates resolution time impact for each topic, which has already taken into account both average resolution time and case volume. See the [Resolution time drivers chart](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-case-resolutions#resolution-time-drivers-chart) for more details how resolution time impact is calculated.
 
-You can also explore the Cases that are contained in this topic by clicking on the **Cases** tab. 
 
-<<< INCLUDE IMAGE OF CASES TAB FOR A TOPIC >>>
 
 ## Pre-requisite to automate topics to Power Virtual Agents
 
@@ -78,7 +65,7 @@ In order to automate a topic from Customer Service Insights to Power Virtual Age
 
 Once you have identified a topic to automate in your bot, you can automate the topic right away from the topic details page:
 
-In topic details page, select **Automate** on the top.
+On the topic details page, select **Automate** on the top.
 
 <<< INCLUDE IMAGE OF AUTOMATE BUTTON HIGHLIGHTED  >>>
 
