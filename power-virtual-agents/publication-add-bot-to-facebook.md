@@ -93,7 +93,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 ### Configure the Facebook channel in Power Virtual Agents
 
-1. In Power Virtual Agents, select **Manage** on the side navigation panel, and then go to the **Channels** tab. 
+1. In Power Virtual Agents, select **Manage** on the side navigation pane, and then go to the **Channels** tab. 
 
 2. Select the **Facebook** tile to open the configuration window.
 
@@ -103,7 +103,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    ![Provide Facebook app and page information](media/channel-fb-add-channel.png)
 
-4. At least one page is required, but you can select **Add Page** to add addiitional pages.
+4. At least one page is required, but you can select **Add Page** to add additional pages.
 
    ![Provide multiple Facebook pages' information](media/channel-fb-add-pages.png)
 
@@ -121,7 +121,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    ![Set up webhooks for Facebook app](media/channel-fb-add-callbackurl.png)
 
-1. Provide the *Callback URL* and *Verify token* from the [Configure the Facebook channel in Power Vitual Agents](#configure-the-facebook-channel-in-power-virtual-agents) section and select **Verify and Save**.
+1. Provide the *Callback URL* and *Verify token* from the [Configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents) section and select **Verify and Save**.
 
    ![Add Callback URL and Verify Token](media/channel-fb-webhook-setting.png)
 
@@ -193,7 +193,7 @@ Learn more at [What are the differences between Workplace Standard and Workplace
 ## Remove your bot from Facebook Messenger or Facebook Workplace
 When you do not want the bot to be reachable in Facebook Messenger or Facebook Workplace, you can remove the bot from Facebook. 
 
-1. In Power Virtual Agents, select **Manage** on the side navigation panel, and then go to the **Channels** tab. 
+1. In Power Virtual Agents, select **Manage** on the side navigation pane, and then go to the **Channels** tab. 
 
 1. Select the **Facebook** tile and then **Delete**.
 
