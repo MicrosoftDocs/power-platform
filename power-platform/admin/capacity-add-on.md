@@ -1,7 +1,7 @@
 ---
 title: "Capacity add-ons for PowerApps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 10/25/2019
+ms.date: 11/19/2019
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -86,6 +86,9 @@ Set-TenantSettings $settings
 -->
 ## FAQ
 
+### Can I assign Power Apps per app plans in the Microsoft 365 admin center (admin.microsoft.com)? 
+No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to end users when apps are shared with end users in the environment.
+
 ### Can I use model-driven apps by consuming app passes? 
 Yes. Please use the following steps.
 
@@ -100,7 +103,7 @@ Yes. Please use the following steps.
 
 4. [Generate a canvas app from Common Data Service in PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app). 
    1.	Use Common Data Service from an environment you plan to share the model-driven app. 
-   2.	Assign the security role to the group that you plan to use to make the model-driven app accessible to end-users.  
+   2.	Assign the security role to the group that you plan to use to make the model-driven app accessible to end users.  
 
 5. Share the canvas app with the group created in Step #1. See [Assign a group to a role](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal). 
 
