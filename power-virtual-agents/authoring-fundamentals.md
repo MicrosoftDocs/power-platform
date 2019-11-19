@@ -2,7 +2,7 @@
 title: "Bot authoring in Power Virtual Agents"
 description: "Discover how to create bots and topics easily and with no coding or long deployment times."
 keywords: ""
-ms.date: 11/16/2019
+ms.date: 11/19/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
