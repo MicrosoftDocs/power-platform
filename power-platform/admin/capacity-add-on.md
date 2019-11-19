@@ -86,6 +86,9 @@ Set-TenantSettings $settings
 -->
 ## FAQ
 
+### Can I assign Power Apps per app plans in admin.microsoft.com? 
+No. Although Power Apps per app plans appear in https://admin.microsoft.com after purchasing, they shouldn't be assigned to users in this website. Power Apps Per App Plans are to be allocated to an environment by an admin in https://admin.powerplatform.microsoft.com, after Per App Plans are allocated to an environment the Per App Plans are assigned to end-users when apps are shared with end-users in an environment that has the Per App Plans allocated.
+
 ### Can I use model-driven apps by consuming app passes? 
 Yes. Please use the following steps.
 
