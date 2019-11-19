@@ -13,11 +13,11 @@ ms.custom: authentication
 ms.collection: virtual-agent
 ---
 
-# Configure user authentication in Power Virtual Agents
+# Configure end-user authentication in Power Virtual Agents
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with any [OAuth2 identity providers](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, and Facebook. 
+You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, and Facebook. 
 
 To learn how to add authentication to a bot topic, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md).
 

@@ -1,86 +1,88 @@
 - name: Overview
-  href: overview.md
-- name: Quickstart
-  href: quickstart.md
-- name: Videos
-  href: videos.md
-- name: Frequently asked questions
-  href: faq.md
-- name: Introduction
   items:
-   - name: Create a bot
-     href: getting-started-create-bot.md
-   - name: Create a Power Apps environment
-     href: getting-started-new-environment.md
-   - name: Overview of Power Virtual Agents pages
-     href: getting-started-bot-designer.md
-   - name: Create a custom greeting for your bot
-     href: getting-started-create-greeting.md
-   - name: Create custom topics for your bot
-     href: getting-started-create-topics.md
-   - name: Work with the authoring canvas
-     href: expanding-design-canvas.md
-   - name: Validate a topic with Topic Checker
-     href: topic-checker.md
-   - name: Use analytics to improve your bot
-     href: getting-started-analytics.md
-   - name: Fundamentals - publish your bot
+   - name: Power Virtual Agents Overview
+     href: fundamentals-what-is-power-virtual-agents.md
+   - name: Get started quickly with Power Virtual Agents
+     href: fundamentals-get-started.md
+   - name: Working with environments
+     href: environments-first-run-experience.md
+- name: Author and edit
+  items:
+   - name: Key concepts - Authoring
+     href: authoring-fundamentals.md
+   - name: Create your first bot
+     href: authoring-first-bot.md
+   - name: Use lesson topics
+     href: authoring-template-topics.md
+   - name: Create and edit topics
+     href: authoring-create-edit-topics.md
+   - name: Manage topics
+     href: authoring-topic-management.md
+   - name: Test your bot
+     href: authoring-test-bot.md
+- name: Enhance and improve
+  items:
+   - name: Key concepts - Enhanced authoring
+     href: advanced-fundamentals.md
+   - name: Use entities and slot filling
+     href: advanced-entities-slot-filling.md
+   - name: Use variables
+     href: authoring-variables.md
+   - name: Create topics from existing support content
+     href: advanced-create-topics-from-web.md
+   - name: Add end-user authentication
+     href: advanced-end-user-authentication.md
+   - name: Add actions using Power Automate
+     href: advanced-flow.md
+   - name: Trigger hand-off to a live agent
+     href: advanced-hand-off.md
+- name: Publish and integrate
+  items:
+   - name: Key concepts - Publish your bot
      href: publication-fundamentals-publish-channels.md
-   - name: Configure publication to demo and live websites
+   - name: Configure the demo website and add the bot to your live website 
      href: publication-connect-bot-to-web-channels.md
    - name: Add bot to Microsoft Teams
      href: publication-add-bot-to-microsoft-teams.md
    - name: Add bot to Facebook
      href: publication-add-bot-to-facebook.md
-   - name: Add bot to mobile and custom apps
+   - name: Add bot to mobile or custom apps
      href: publication-connect-bot-to-custom-application.md
    - name: Add bot to Azure Bot Service channels
      href: publication-connect-bot-to-azure-bot-service-channels.md
-   - name: Delete your bot
-     href: getting-started-delete-bot.md
-- name: How-to
+- name: Monitor and diagnose
   items:
-   - name: Work with built-in topics
-     href: how-to-templates.md
-   - name: Work with the Test bot pane
-     href: how-to-test-bot.md
-   - name: Use entities
-     href: advanced-entities-slot-filling.md
-   - name: Work with variables
-     href: authoring-variables.md
-   - name: Trigger hand-off to a live human agent
-     href: how-to-handoff.md
-   - name: Configure hand off to Omnichannel for Customer Service
-     href: configuration-hand-off-omnichannel.md
-   - name: Add actions (flows) to your bot using Power Automate
-     href: how-to-flow.md
-   - name: Use a Microsoft Bot Framework bot with a Power Virtual Agents bot
-     href: how-to-use-dispatcher.md
+   - name: Key concepts - Analytics
+     href: analytics-overview.md
+   - name: Analyze bot performance and usage
+     href: analytics-summary.md
+   - name: Analyze customer satisfaction
+     href: analytics-csat.md
+   - name: Analyze session information
+     href: analytics-sessions.md
+   - name: Analyze topic usage
+     href: analytics-topic-details.md
+- name: Configure and customize 
+  items:
+   - name: Key concepts - Configuration
+     href: configuration-fundamentals.md
    - name: Configure end-user authentication
      href: configuration-end-user-authentication.md
-   - name: Use end-user authentication
-     href: advanced-end-user-authentication.md
-- name: Analytics
+   - name: Configure hand-off to Omnichannel for Customer Service
+     href: configuration-hand-off-omnichannel.md
+   - name: Connect your bot to a custom canvas
+     href: extend-custom-canvas-connect.md
+   - name: Connect your bot to Azure Storage
+     href: extend-custom-canvas-upload.md
+- name: Respond to GDPR Data Subject Rights (DSR) requests
   items:
-   - name: Analytics overview
-     href: analytics-overview.md
-   - name: Summary page
-     href: analytics-summary.md
-   - name: Customer satisfaction page
-     href: analytics-csat.md
-   - name: Topic details page
-     href: analytics-topic-details.md
-   - name: Sessions page
-     href: analytics-sessions.md
-- name: Data Subject Rights (DSR) requests under GDPR
-  items:
-   - name: Overview of GDPR compliance
+   - name: Key concepts - GDPR compliance
      href: gdpr-summary.md
-   - name: Requests to export data
+   - name: Requests to export and download data
      href: gdpr-export.md
    - name: Requests to delete data
      href: gdpr-delete.md
    - name: Requests to discover data
      href: gdpr-discovery.md
-   - name: Where an organization's Power Virtual Agents data is located
+   - name: Where an organization's data is located
      href: data-location.md

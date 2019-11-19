@@ -13,7 +13,7 @@ ms.custom: authoring
 ms.collection: virtual-agent
 ---
 
-# Work with variables
+# Use variables
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -86,7 +86,7 @@ In the bot authoring canvas, add a question node by choosing "Ask a question". A
    ![Image 1 - Create a variable](media/Automatically_created_variable_(draft).PNG)
 
 ## Pick an entity to use
-By default the question node will be created using *Multiple choice options*, but you can also pick a different prebuilt or custom entity by choosing what to identify from the node. For example, you can choose **Person name** to use that entity. 
+By default, the question node will be created using *Multiple choice options*, but you can also pick a different prebuilt or custom entity by choosing what to identify from the node. For example, you can choose **Person name** to use that entity. 
 
 ![Image 2 - Select an entity](media/Pick_an_entity_(draft).PNG)
 
