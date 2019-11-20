@@ -98,13 +98,13 @@ Yes, with the PowerApps Community Plan you get a free environment for individual
 
 [Learn more](https://powerapps.microsoft.com/pricing/).
 
-### How do I convert my trial environment to a production environment?
+### How do I convert my Trial environment to a production environment?
 
 More information is available [here](/power-platform/admin/trial-environments).
 
-### Where can I find more information about trial environments?
+### Where can I find more information about Trial environments?
 
-For more information about trial environments in PowerApps read this [topic](/power-platform/admin/trial-environments).
+For more information about Trial environments in PowerApps read this [topic](/power-platform/admin/trial-environments).
 
 ## Office 365
 
