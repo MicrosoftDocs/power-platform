@@ -18,17 +18,18 @@ You can get support for Power Virtual Agents on the Power Virtual Agents communi
 
 Check Microsoft community forums to see if other users have posted a solution that might help you.
 
-- Ask the community(https://go.microsoft.com/fwlink/?linkid=2058639)
+- [Ask the community](https://go.microsoft.com/fwlink/?linkid=2058639)
 Visit the Power Virtual Agents community to get answers and tips directly from other Power Virtual Agents users.
 
-- Submit an idea(https://go.microsoft.com/fwlink/?linkid=2064961)
+- [Submit an idea](https://go.microsoft.com/fwlink/?linkid=2064961)
 Do you have a great idea that will make Power Virtul Agents even better? We's love to hear from you!
 
 ## Microsoft support
 
 If you're an administrator of your Power Virtual Agents tenant, you can use the Power Platform Admin Center to request support from Microsoft.
 
-Sign in to the Power Platform Admin Center (https://admin.powerplatform.microsoft.com/).
-In the left navigation pane, select Help + Support, and then select New support request.
-For detailed information about the Help + Support experience in the Power Platform Admin center, see Get Help + Support in the Power Platform admin documentation.
+1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
+2. In the left navigation pane, select Help + Support, and then select New support request.
+
+For detailed information about the Help + Support experience in the Power Platform Admin center, see [Get Help + Support](https://docs.microsoft.com/en-us/power-platform/admin/get-help-support) in the Power Platform admin documentation.
 
