@@ -51,6 +51,8 @@ A billed session is an interaction between the customer and the bot and represen
 2. When a customer intentionally ends or closes a chat session. For web this means when customer closes the tab with the chat open, for persistent channels such as Microsoft Teams or Facebook this means the customer didn't write any message for more than 30 minutes.
 3. When a bot is unable to answer adequately and the interaction is escalated to a live agent. To see how to configure live agent hand off, read [Trigger hand-off to a live agent](how-to-handoff.md).
 
+On top of the above scenarios, there are two additional limitations of a billed session. One billed session can last 60 minutes at longest and contain maximum of 100 turns. 
+
 
 ## Using Power Automate with Power Virtual Agents SKU
 In order to use unlimited flow runs in Power Automate, you need to create a flow using the link from within the Power Virtual Agents app. Flow runs created using this template do not accrue to your overall Power Automate quotas. See [working with Power Automate article](how-to-flow.md) for more information.
