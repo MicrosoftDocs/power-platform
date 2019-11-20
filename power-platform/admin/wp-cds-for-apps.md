@@ -23,18 +23,6 @@ The Common Data Service is a cloud scale database used to securely store data fo
 
 Common Data Service databases are created in the context of a Power Apps environment. Each environment can have only a single Common Data Service database. Common Data Service databases can be provisioned by you or licensed individuals in your organization to support their custom applications. Common Data Service databases are also automatically provisioned when a model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, is added to your tenant.
 
-## Managing Common Data Service database environments
-
-The easiest way to know if you have a Common Data Service database associated with your environments is to look at the detail page of the environment from admin.powerapps.com. If you see the Create my database button then you don’t have one in that environment yet and can create one.
-
-![Create my database](media/create-my-database.png "Create my database")
-
-On the other hand, if you don’t see the Create my Database link then the Common Data Service database environment exists and you can click on the Dynamics 365 Administration center link to navigate to the list of all your Common Data Service databases.
-
-![Manage settings in Dynamics 365 Administration center](media/manage-in-d365-admin-center.png "Manage settings in Dynamics 365 Administration center")
-
-From the Dynamics 365 Admin center you can open the environment as well as manage and view some of the environment details. The actions you can take on each environment depends currently on if it started as an environment for model-driven apps in Dynamics 365 or if you started it with just the core Common Data Service entities. For core Common Data Service environments, you can only copy or set notifications. On Common Data Service environments you also have the ability to reset the environment if it is of type Sandbox, and potentially convert an environment to a Sandbox to then test or reset.
-
 ### See also
 [Microsoft Learn: Get started with Common Data Service](https://docs.microsoft.com/learn/modules/get-started-with-powerapps-common-data-service/)<br />
 [Environments overview](environments-overview.md)<br />
