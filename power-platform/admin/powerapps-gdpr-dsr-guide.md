@@ -1,6 +1,6 @@
 ---
-title: Responding to Data Subject Rights (DSR) requests for PowerApps customer data  | Microsoft Docs
-description: Walkthough of how to respond to Data Subject Rights (DSR) requests for PowerApps customer data
+title: Responding to Data Subject Rights (DSR) requests for Power Apps customer data  | Microsoft Docs
+description: Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data
 author: jimholtz
 ms.reviewer: paulliew
 manager: kvivek
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Responding to Data Subject Rights (DSR) requests for PowerApps customer data
+# Responding to Data Subject Rights (DSR) requests for Power Apps customer data
 
 ## Introduction to DSR Requests
 The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:
@@ -50,7 +50,7 @@ The following actions are covered in this article:
 The first step in responding to a DSR request is to find the personal data that is the subject of the request. This first step&mdash;finding and reviewing the personal data at issue&mdash;will help you determine whether a DSR request meets your organization's requirements for honoring or declining a DSR request. For example, after finding and reviewing the personal data at issue, you may determine the request doesn’t meet your organization’s requirements because doing so may adversely affect the rights and freedoms of others.
 
 ### Step 1: Find personal data for the user in PowerApps
-Below is a summary of the types of PowerApps resources that contain personal data for a specific user.
+Below is a summary of the types of Power Apps resources that contain personal data for a specific user.
 
 Resources containing personal data |	Purpose
 --- | ---
@@ -60,38 +60,38 @@ Canvas app	| Cross-platform business apps that can be built from a power of a bl
 Canvas-app permissions	| Canvas apps can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872242)
 Connection	| Used by connectors and allow for connectivity to APIs, systems, databases, etc. [Learn more](https://go.microsoft.com/fwlink/?linkid=872243)
 Connection permissions	| Certain types of connections can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872244)
-Custom connector	| Custom connectors that a user has created to provide access to a data source not offered through one of the PowerApps standard connectors. [Learn more](https://go.microsoft.com/fwlink/?linkid=872245)
+Custom connector	| Custom connectors that a user has created to provide access to a data source not offered through one of the Power Apps standard connectors. [Learn more](https://go.microsoft.com/fwlink/?linkid=872245)
 Custom-connector permissions	| Custom connectors can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872246)
-PowerApps user and user-app settings	| PowerApps stores several user preferences and settings that are used to deliver the PowerApps runtime and portal experiences.
-PowerApps notifications	| PowerApps sends several types of notifications to users including when an app is shared with them and when a Common Data Service export operation has completed.
-Gateway	| Gateways are on-premises data gateways that can be installed by a user to transfer data quickly and securely between PowerApps and a data source that isn’t in the cloud. [Learn more](https://go.microsoft.com/fwlink/?linkid=872247)
+Power Apps user and user-app settings	| Power Apps stores several user preferences and settings that are used to deliver the Power Apps runtime and portal experiences.
+Power Apps notifications	| Power Apps sends several types of notifications to users including when an app is shared with them and when a Common Data Service export operation has completed.
+Gateway	| Gateways are on-premises data gateways that can be installed by a user to transfer data quickly and securely between Power Apps and a data source that isn’t in the cloud. [Learn more](https://go.microsoft.com/fwlink/?linkid=872247)
 Gateway permissions	| Gateways can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872249)
 Model-driven apps and model-driven app permissions	| Model-driven app design is a component-focused approach to app development. Model-driven apps and their user access permissions are stored as data within the Common Data Service database.  [Learn more](https://go.microsoft.com/fwlink/?linkid=872248)
 
-PowerApps offers the following experiences to find personal data for a specific user:
+Power Apps offers the following experiences to find personal data for a specific user:
 
-- **Website access**: [PowerApps site](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [PowerApps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
-- **PowerShell access**: PowerApps cmdlets (for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804)) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
+- **Website access**: [Power Apps site](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+- **PowerShell access**: Power Apps cmdlets (for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804)) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
 
-For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export PowerApps customer data](powerapps-gdpr-export-dsr.md).
+For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md).
 
 After you find the data, you can then perform the specific action to satisfy the request by the data subject.
 
 ### Step 2: Find personal data for the user in Power Automate
-PowerApps licenses always include Power Automate capabilities. In addition to being included in PowerApps licenses, Power Automate is also available as a standalone service.
+Power Apps licenses always include Power Automate capabilities. In addition to being included in Power Apps licenses, Power Automate is also available as a standalone service.
 
 For guidance on how to discover personal data stored by the Power Automate service, see [Responding to GDPR Data Subject Requests for Power Automate](https://go.microsoft.com/fwlink/?linkid=872250).
 
 > [!IMPORTANT]
-> It is recommended that admins complete this step for a PowerApps user
+> It is recommended that admins complete this step for a Power Apps user
 
 ### Step 3: Find personal data for the user in environments of Common Data Service
-Certain PowerApps licenses, including the PowerApps Community Plan, give the ability for users within your organization to create environments of Common Data Service and to create and build apps on Common Data Service. The PowerApps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the [PowerApps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each PowerApps license.
+Certain Power Apps licenses, including the Power Apps Community Plan, give the ability for users within your organization to create environments of Common Data Service and to create and build apps on Common Data Service. The Power Apps Community Plan is a free license that allows users to try out Common Data Service in an individual environment. See the [Power Apps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each Power Apps license.
 
 For guidance on how to discover personal data stored by Common Data Service, see [Responding to Data Subject Rights (DSR) requests for customer data in Common Data Service](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
-> It is recommended that admins complete this step for a PowerApps user.
+> It is recommended that admins complete this step for a Power Apps user.
 
 ## Rectify
 If a data subject asks you to rectify the personal data that resides in your organization’s data, you and your organization must determine whether it’s appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
@@ -112,11 +112,11 @@ Data subjects may request that you restrict processing of their personal data.  
 ## Export
 The “right of data portability” allows a data subject to request a copy of his or her personal data in an electronic format (that’s a “structured, commonly used, machine read-able and interoperable format”) that may be transmitted to another data controller.
 
-See [Responding to Data Subject Rights (DSR) requests to export PowerApps customer data](powerapps-gdpr-export-dsr.md) for details.
+See [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md) for details.
 
 ## Delete
 The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the GDPR. Removing personal data includes system-generated logs but not audit-log information.
 
-PowerApps allows users to build line-of-business applications that are a critical part of your organization’s day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user’s account is deleted from Azure Active Directory.
+Power Apps allows users to build line-of-business applications that are a critical part of your organization’s day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user’s account is deleted from Azure Active Directory.
 
-See [Responding to Data Subject Rights (DSR) requests to delete PowerApps customer data](powerapps-gdpr-delete-dsr.md) for details.
+See [Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data](powerapps-gdpr-delete-dsr.md) for details.

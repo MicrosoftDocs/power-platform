@@ -22,7 +22,7 @@ search.app:
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
 > [!NOTE]
-> For introductory licensing information on the new capacity analytics model, see [PowerApps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> For introductory licensing information on the new capacity analytics model, see [Power Apps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
 > Common Data Service storage capacity is not available for Dynamics 365 US Government – GCC and GCC High, DOD, and Microsoft Dynamics 365 online services operated by 21Vianet.
 

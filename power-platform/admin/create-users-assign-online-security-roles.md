@@ -279,7 +279,7 @@ All application users are created with a non-interactive user account, however t
 ## How stub users are created
 A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user does not exist in model-driven apps in Dynamics 365. This user cannot log in, cannot be enabled, and cannot be synchronized to Office 365. This type of user can only be created through data import. 
 
-A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Common Data Service User** security role is assigned in a PowerApps environment.
+A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Common Data Service User** security role is assigned in a Power Apps environment.
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 

@@ -1,5 +1,5 @@
 ---
-title: Regions overview in PowerApps Admin center| Microsoft Docs
+title: Regions overview in Power Apps Admin center| Microsoft Docs
 description: Learn about regions in PowerApps
 author: jimholtz
 manager: kvivek
@@ -16,13 +16,13 @@ search.app:
   - Powerplatform
 ---
 
-# Regions overview in PowerApps Admin center
+# Regions overview in Power Apps Admin center
 
 ## How do I find out where my app is deployed?
 
 Your app is deployed in the region that hosts the environment. For example, if your environment is created in the Europe region, then your app is deployed in Europe data centers.
 
-If you're an administrator, you can determine the region of each environment in the PowerApps Admin center.
+If you're an administrator, you can determine the region of each environment in the Power Apps Admin center.
 
 - Go to the [admin center](https://admin.powerapps.com), and sign in with your work account.
   

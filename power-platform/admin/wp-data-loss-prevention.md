@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Your organization’s data is likely one of the most important assets you are responsible for safeguarding as an administrator. The ability to build apps and automation that uses the data allows your company to be successful. PowerApps and Power Automate allow rapid build and rollout of these high value applications that allow users to measure and act on the data in real time. Applications and automation are increasingly becoming more connected across multiple data sources and multiple services. Some of these services might be external 3rd party services and might even include some social networks. Users will often have good intentions but might overlook the potential for exposure from data leakage to services and audiences that shouldn’t have access to the data.
+Your organization’s data is likely one of the most important assets you are responsible for safeguarding as an administrator. The ability to build apps and automation that uses the data allows your company to be successful. Power Apps and Power Automate allow rapid build and rollout of these high value applications that allow users to measure and act on the data in real time. Applications and automation are increasingly becoming more connected across multiple data sources and multiple services. Some of these services might be external 3rd party services and might even include some social networks. Users will often have good intentions but might overlook the potential for exposure from data leakage to services and audiences that shouldn’t have access to the data.
 
 Data Loss Prevention (DLP) policies that help protect organizational data from unintended exposure, are available for administrators to create. They can act as guardrails to help prevent users from unintentionally exposing the data. DLP policies can be scoped at the environment and tenant level offering flexibility to craft policies that are sensible and do not block high productivity.
 
@@ -27,7 +27,7 @@ DLP policies enforce rules of what connectors can be used together by classifyin
 
 ## What policies do we already have?
 
-From the PowerApps Admin Center (admin.powerapps.com) you can see the current policies you have in place in your tenant. This should be your first stop as a new administrator to understand what is currently active.
+From the Power Apps Admin Center (admin.powerapps.com) you can see the current policies you have in place in your tenant. This should be your first stop as a new administrator to understand what is currently active.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/data-policies.png "Data policies")
@@ -81,7 +81,7 @@ One thing to keep in mind, DLP policies created for a connector do not understan
 
 ## Strategies for creating DLP policies
 
-As an administrator taking over an environment or starting to support use of PowerApps and Power Automate DLP policies should be something you evaluate and create within the first 30 days. This ensures a base set of policies are in place before too many users start creating connections that might violate your policies.
+As an administrator taking over an environment or starting to support use of Power Apps and Power Automate DLP policies should be something you evaluate and create within the first 30 days. This ensures a base set of policies are in place before too many users start creating connections that might violate your policies.
 
 For smaller environments where the users are highly capable and are trusted you could start out with no DLP policies taking only the default options. This is the most flexible option and can be changed at any time. Keep in mind introducing more restrictive policies later could conflict with existing assets. These conflicts could have business impact when existing apps and flows stop working until either the app / flow is brought into compliance or the DLP policy relaxed.
 
@@ -94,7 +94,7 @@ First, let’s look at our environment setup and assumptions. The following are 
 |Contoso – Default     | This is the default environment, and anyone can create apps and flows in it        |
 |Contoso Enterprise Apps     |This is a production environment with applications managed with formal review before being promoted here. This could also be more business unit aligned e.g. Marketing, Finance etc.         |
 |Community Plan Environments (0…N)     |These will be automatically created by any users in our org that sign up for the free Community Plan         |
-|User Owned Environments (0…N)     |These are production or Trial Environments created by users with a PowerApps plan or PowerApps Trial         |
+|User Owned Environments (0…N)     |These are production or Trial Environments created by users with a Power Apps plan or Power Apps Trial         |
 
 We now are going to design a tenant wide default DLP policy. Our goal is to ensure that as people create their own environments and test and explore they minimize mix of core business data without us first working with them.
 

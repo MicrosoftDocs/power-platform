@@ -1,5 +1,5 @@
 ---
-title: "Capacity add-ons for PowerApps and Power Automate  | MicrosoftDocs"
+title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
 ms.date: 11/19/2019
 ms.reviewer: 
@@ -23,7 +23,7 @@ If your organization has purchased capacity add-ons, you have to allocate that c
 
 There are three stages for using capacity add-ons:
 
-1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [PowerApps and Power Automate Licensing Guide Oct 2019](https://go.microsoft.com/fwlink/?linkid=2085130).
+1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [Power Apps and Power Automate Licensing Guide Oct 2019](https://go.microsoft.com/fwlink/?linkid=2085130).
 2. Allocate: assign the purchased add-ons to an environment.
 3. Consume: once allocated, you can consume the capacity add-ons.
 
@@ -75,7 +75,7 @@ The following admins will be able to allocate add-on capacity in the Power Platf
 <!--
 ## Control add-on capacity allocation through PowerShell
 
-Download and install the admin PowerShell cmdlets as described [here](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1). For more information about our cmdlets, see [PowerShell support for PowerApps (preview)](powerapps-powershell.md).
+Download and install the admin PowerShell cmdlets as described [here](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1). For more information about our cmdlets, see [PowerShell support for Power Apps (preview)](powerapps-powershell.md).
 
 Use the following commands to restrict environment creation to Global admin, service admin, and Delegated admin. 
 
@@ -97,7 +97,7 @@ Yes. Please use the following steps.
 
 2. Assign the group licenses in portal.azure.com. 
    1. Go to: [https://portal.azure.com](https://portal.azure.com)  > **Azure Active Directory** > **Groups** > search for the group created in Step #1.  
-   2. For now, sign up for the [Per app baseline access plan](https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2), and then assign the license **PowerApps per app plan baseline access**. See [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups).  
+   2. For now, sign up for the [Per app baseline access plan](https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2), and then assign the license **Power Apps per app plan baseline access**. See [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups).  
 
 3. Add users to the group, see [Add or remove group members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).  
 
@@ -110,7 +110,7 @@ Yes. Please use the following steps.
 6. Proceed with sharing the model-driven app, and assign the security role from Step #4b to the users expected to access the app.  
 
 ### How do I setup an app to use app passes?
-See [PowerApps per app plan](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#powerapps-per-app-plan).
+See [Power Apps per app plan](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#powerapps-per-app-plan).
 
 ### When can I see how many capacity add-ons are consumed? 
 Check back later for availability. 

@@ -130,7 +130,7 @@ The 2019 release wave 2 update has three kinds of functionalities (as with any o
 
 By activating the 2019 release wave 2 updates opt-in, you will get updates **to existing user experience only**. The exact list of features that are updates to existing user experiences are listed on the [early access page](https://aka.ms/EarlyAccessFeatures). 
  
-The release wave 2 plan lists other features across Dynamics 365 – Sales, Service, Marketing, and PowerApps (and platform). Features that are not updates to the existing user experience will not be part of the 2019 release wave 2 updates opt-in. They can either be new functionalities or additions to maker and admin functionality.
+The release wave 2 plan lists other features across Dynamics 365 – Sales, Service, Marketing, and Power Apps (and platform). Features that are not updates to the existing user experience will not be part of the 2019 release wave 2 updates opt-in. They can either be new functionalities or additions to maker and admin functionality.
 
 ## Check the status of the update and troubleshoot
 

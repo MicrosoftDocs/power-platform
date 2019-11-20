@@ -24,7 +24,7 @@ The PowerShell cmdlets allow you to do similar tasks that you would do with the 
 
 |PowerShell cmdlet library  |Common Tasks  |
 |---------|---------|
-|PowerApps cmdlets <br/>[PowerShell support for PowerApps (preview)](powerapps-powershell.md)  |Designed for app makers and administrators to automate tasks with environments and associated apps, flows and connectors. <br/> **Note**: These cmdlets are currently in preview.        |
+|Power Apps cmdlets <br/>[PowerShell support for Power Apps (preview)](powerapps-powershell.md)  |Designed for app makers and administrators to automate tasks with environments and associated apps, flows and connectors. <br/> **Note**: These cmdlets are currently in preview.        |
 |Office 365 cmdlets<br/> https://docs.microsoft.com/office365/enterprise/powershell/getting-started-with-office-365-powershell    |These are focused on Office 365 related tasks and can be used to automate user-related actions and tasks, for example, assignment of licenses.         |
 |Dynamics 365 cmdlets<br/> https://docs.microsoft.com/powershell/dynamics365/customer-engagement/overview     |These are useful if you have any environments with Common Data Service databases. Modules include support for using the Common Data Service online admin API, as well as to automate solution deployment to the Common Data Service environments.         |
 |Microsoft Azure cmdlets <br/> https://docs.microsoft.com/powershell/azure/overview     | The Azure cmdlets are useful if you are including any Azure components in your overall solution. This could also be used to script setup of the on-premise application gateway.        |

@@ -36,7 +36,7 @@ The notifications sent from the Business Application Group communications team w
 | Dynamics 365 Market Insights | marketinsights@microsoft.com|
 | Dynamics 365 Finance & Operations    | msdyn365finops@microsoft.com| 
 | Microsoft Power Automate  | msflow@microsoft.com| 
-| Microsoft PowerApps | mspowerapps@microsoft.com| 
+| Microsoft Power Apps | mspowerapps@microsoft.com| 
 | Microsoft Power BI  | mspowerbi@microsoft.com| 
 
 

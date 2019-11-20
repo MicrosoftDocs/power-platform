@@ -22,7 +22,7 @@ This section provides information on how [**Common Data Service**](/powerapps/ma
 The following is a high-level overview of how security model is implemented in Common Data Service.
 
 - Users are authenticated by Azure Active Directory (Azure AD).
-- Licensing is the first control-gate to allowing access to PowerApps components.
+- Licensing is the first control-gate to allowing access to Power Apps components.
 - Ability to create applications and flows is controlled by security roles in the context of environments.
 - A user’s ability to see and use apps is controlled by sharing the application with the user. Sharing of [canvas apps](/powerapps/maker/canvas-apps/getting-started) is done directly with the user or Azure AD group. Sharing of [model-drive apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) is done via Common Data Service security roles.
 - Environments act as security boundaries allowing different security needs to be implemented in each environment.

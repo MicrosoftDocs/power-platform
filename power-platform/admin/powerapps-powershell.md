@@ -17,11 +17,11 @@ search.app:
   - Powerplatform
 ---
 
-# PowerShell support for PowerApps (preview)
-With the preview launch of the PowerShell cmdlets for app creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or the [PowerApps Admin center](https://admin.powerapps.com).
+# PowerShell support for Power Apps (preview)
+With the preview launch of the PowerShell cmdlets for app creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or the [Power Apps Admin center](https://admin.powerapps.com).
 
 ## Cmdlets
-[Cmdlets](https://docs.microsoft.com/powershell/developer/cmdlet/writing-a-windows-powershell-cmdlet) are functions written in PowerShell script language that execute commands in the Windows PowerShell environment. Running these PowerApps cmdlets will allow you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. Note that you can still use the cmdlets if you’re not an admin on the tenant, but you will be limited to the resources you own. Cmdlets that start with the word ‘Admin’ are designed to be used by an administrative user account.
+[Cmdlets](https://docs.microsoft.com/powershell/developer/cmdlet/writing-a-windows-powershell-cmdlet) are functions written in PowerShell script language that execute commands in the Windows PowerShell environment. Running these Power Apps cmdlets will allow you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. Note that you can still use the cmdlets if you’re not an admin on the tenant, but you will be limited to the resources you own. Cmdlets that start with the word ‘Admin’ are designed to be used by an administrative user account.
 
 Cmdlets are available on the PowerShell gallery as two separate modules: 
 - [Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell)
@@ -67,10 +67,10 @@ To run the PowerShell cmdlets for app creators, do the following:
     Add-PowerAppsAccount -Username foo@bar.com -Password $pass
     ```
 
-## PowerApps cmdlets for app creators (preview)
+## Power Apps cmdlets for app creators (preview)
 
 ### Prerequisite
-Users with a valid PowerApps license can perform the operations in these cmdlets, but they will only have access to the resources (for example, apps, flows, etc.) that have been created or shared with them.
+Users with a valid Power Apps license can perform the operations in these cmdlets, but they will only have access to the resources (for example, apps, flows, etc.) that have been created or shared with them.
 
 Check back for the availability of operation and access permissions for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and upcoming Power Platform admin roles.
 
@@ -93,12 +93,12 @@ Check back for the availability of operation and access permissions for model-dr
 | Read and delete connectors | Get-PowerAppConnector *(previously Get-Connector)* <br> Remove-PowerAppConnector *(previously Remove-Connector)* |
 | Read, update, and delete custom connector permissions | Get-PowerAppConnectorRoleAssignment *(previously Get-ConnectorRoleAssignment)* <br> Set-PowerAppConnectorRoleAssignment *(previously Set-ConnectorRoleAssignment)* <br> Remove-PowerAppConnectorRoleAssignment *(previously Remove-ConnectorRoleAssignment)* |
 
-## PowerApps cmdlets for administrators (preview)
+## Power Apps cmdlets for administrators (preview)
 
 ### Prerequisite
 To perform the administration operations in the admin cmdlets, you'll need the following:
 
-- A user with any of these roles, Office 365 Global admins, Azure Active Directory Global admins, or Dynamics 365 Service administrator, can access the PowerApps admin PowerShell cmdlets. These roles no longer require a PowerApps plan for administrative access to the PowerApps admin PowerShell cmdlets. However, these administrators need to sign in to the [PowerApps Admin Center](https://admin.powerapps.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
+- A user with any of these roles, Office 365 Global admins, Azure Active Directory Global admins, or Dynamics 365 Service administrator, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the [Power Apps Admin Center](https://admin.powerapps.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
 - [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504), [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 Service administrator](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user’s resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
 
@@ -119,7 +119,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read, update, and delete connection permissions | Get-AdminPowerAppConnectionRoleAssignment *(previously Get-AdminConnectionRoleAssignment)* <br> Set-AdminPowerAppEnvironmentConnectionRoleAssignment *(previously Set-AdminConnectionRoleAssignment)* <br> Remove-AdminPowerAppConnectionRoleAssignment *(previously Remove-AdminConnectionRoleAssignment)* |
 | Read and delete custom connectors | Get-AdminPowerAppConnector *(previously Get-AdminConnector)* <br> Remove-AdminPowerAppConnector *(previously Remove-AdminConnector)* |
 | Read, update, and delete custom connector permissions | Get-AdminPowerAppConnectorRoleAssignment *(previously Get-AdminConnectorRoleAssignment)*<br> Set-AdminPowerAppConnectorRoleAssignment *(previously Set-AdminConnectorRoleAssignment)* <br> Remove-AdminPowerAppConnectorRoleAssignment *(previously Remove-AdminConnectorRoleAssignment)* |
-| Read a user's PowerApps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
+| Read a user's Power Apps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
 | Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
 | Create, read, update and delete data loss prevention policies for your organization | Get-AdminDlpPolicy *(previously Get-AdminApiPolicy)* <br> New-AdminDlpPolicy *(previously Add-AdminApiPolicy)* <br> Remove-AdminDlpPolicy *(previously Remove-AdminApiPolicy)* <br> Set-AdminDlpPolicy *(previously Set-AdminApiPolicy)* <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup <br/>Add-CustomConnectorToPolicy<br/> Remove-CustomConnectorFromPolicy|
 | Read and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> |
@@ -142,10 +142,10 @@ Get-Help Get-AdminPowerAppEnvironment -Detailed
 
 ## Operation examples
 
-Below are some common scenarios that show how to use new and existing PowerApps cmdlets.
+Below are some common scenarios that show how to use new and existing Power Apps cmdlets.
 
 - [Environments Commands](#environments-commands)
-- [PowerApps Commands](#powerapps-commands)
+- [Power Apps Commands](#powerapps-commands)
 - [Power Automate commands](#power-automate-commands)
 - [API connection commands](#api-connection-commands)
 - [Data Loss Prevention (DLP) policy commands](#data-loss-prevention-dlp-policy-commands)
@@ -180,9 +180,9 @@ Get-AdminPowerAppEnvironment –EnvironmentName ‘EnvironmentName’
 
 ![Get-AdminEnvironment command](media/get-adminenvironment.png "Get-AdminEnvironment command")
 
-### PowerApps commands
+### Power Apps commands
 
-These operations are used to read and modify PowerApps data in your tenant.
+These operations are used to read and modify Power Apps data in your tenant.
 
 #### Display a list of all PowerApps
 
@@ -190,15 +190,15 @@ These operations are used to read and modify PowerApps data in your tenant.
 Get-AdminPowerApp
 ```
 
-Returns a list of all PowerApps across the tenant, with details of each (e.g., application name (guid), display name, creator, etc).
+Returns a list of all Power Apps across the tenant, with details of each (e.g., application name (guid), display name, creator, etc).
 
-#### Display a list of all PowerApps that match the input display name
+#### Display a list of all Power Apps that match the input display name
 
 ```powershell
 Get-AdminPowerApp 'DisplayName'
 ```
 
-Returns a list of all the PowerApps in your tenant that match the display name. 
+Returns a list of all the Power Apps in your tenant that match the display name. 
 
 **Note**: Use quotation characters (”) around input values that contain spaces.
 
@@ -208,7 +208,7 @@ Returns a list of all the PowerApps in your tenant that match the display name.
 Set-AdminPowerAppAsFeatured –AppName 'AppName'
 ```
 
-Featured applications are grouped and pushed to the top of the list in the PowerApps mobile player.
+Featured applications are grouped and pushed to the top of the list in the Power Apps mobile player.
 
 **Note**: Like environments, the *AppName* field is a unique identifier, which is different from the *DisplayName*. If you want to perform operations based on the display name, some functions will let you use the pipeline (see next function).
 
@@ -218,7 +218,7 @@ Featured applications are grouped and pushed to the top of the list in the Power
 Get-AdminPowerApp 'DisplayName' | Set-AdminPowerAppAsHero
 ```
 
-A Hero app will appear at the top of the list in the PowerApps mobile player. There can only be one Hero app.
+A Hero app will appear at the top of the list in the Power Apps mobile player. There can only be one Hero app.
 
 The pipeline (represented as the ‘|’ character between two cmdlets) takes the output of the first cmdlet and passes it as the input value of the second, assuming the function has been written to accommodate the pipeline feature.
 
@@ -230,7 +230,7 @@ The pipeline (represented as the ‘|’ character between two cmdlets) takes th
 Get-AdminPowerApp | Select –ExpandProperty Owner | Select –ExpandProperty displayname | Group
 ```
 
-You can combine native PowerShell functions with the PowerApps cmdlets to manipulate data even further. Here we use the Select function to isolate the Owner attribute (an object) from the Get-AdminApp object. We then isolate the name of the owner object by pipelining that output into another Select function. Finally, passing the second Select function output into the Group function returns a nice table that includes a count of each owner’s number of apps.
+You can combine native PowerShell functions with the Power Apps cmdlets to manipulate data even further. Here we use the Select function to isolate the Owner attribute (an object) from the Get-AdminApp object. We then isolate the name of the owner object by pipelining that output into another Select function. Finally, passing the second Select function output into the Group function returns a nice table that includes a count of each owner’s number of apps.
 
 ![Get-AdminPowerApp command](media/get-adminpowerapp.png "Get-AdminPowerApp command")
 
@@ -242,13 +242,13 @@ Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Obje
 
 ![Get-AdminPowerApp command](media/get-adminpowerapp-environment.png "Get-AdminPowerApp command")
 
-#### Download PowerApps user details
+#### Download Power Apps user details
 
 ```powershell
 Get-AdminPowerAppsUserDetails -OutputFilePath '.\adminUserDetails.txt' –UserPrincipalName ‘admin@bappartners.onmicrosoft.com’
 ```
 
-The above command will store the PowerApps user details (basic usage information about the input user via their user principal name) in the specified text file. It will create a new file if there is no existing file with that name, and overwrite the text file if it already exists.
+The above command will store the Power Apps user details (basic usage information about the input user via their user principal name) in the specified text file. It will create a new file if there is no existing file with that name, and overwrite the text file if it already exists.
 
 #### Set logged in user as the owner of a PowerApp
 
@@ -367,7 +367,7 @@ Adds a connector to the ‘Business data only’ group in a given DLP policy. Se
 ## Version History
 | Date | Updates |
 | --- | --- |
-| 04/23/2018 | <ol> <li> Initial launch of the PowerApps cmdlets for app creators (preview) including management cmdlets for Environments, Apps, Flows, Power Automate approvals, Connections, and Custom Connectors </li> <li> Initial launch of the PowerApps cmdlets for administrators (preview) including administrative cmdlets for Environments, Apps, and Flows </li></ol>|
+| 04/23/2018 | <ol> <li> Initial launch of the Power Apps cmdlets for app creators (preview) including management cmdlets for Environments, Apps, Flows, Power Automate approvals, Connections, and Custom Connectors </li> <li> Initial launch of the Power Apps cmdlets for administrators (preview) including administrative cmdlets for Environments, Apps, and Flows </li></ol>|
 | 05/24/2018 | <ol> <li> Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the following new administrative cmdlets: <br> Get-AdminConnection <br> Remove-AdminConnection <br> Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br>Remove-AdminConnectionRoleAssignment <br>Get-AdminConnector  <br>Remove-AdminConnector <br>Set-AdminConnectorRoleAssignment  <br>Get-AdminConnectorRoleAssignment  <br>Remove-AdminConnectorRoleAssignment <br>Get-AdminPowerAppsUserDetails <br>Get-AdminFlowUserDetails <br>Remove-AdminFlowUserDetails <br>Get-AdminApiPolicy  <br>Add-AdminApiPolicy <br>Remove-AdminApiPolicy <br>Set-AdminApiPolicy <br>Add-ConnectorToBusinessDataGroup  <br>Remove-ConnectorFromBusinessDataGroup </li> </ol>
 | 07/30/2018 | <ol> <li> Added the ability to pass-in credentials to the Add-PowerAppsAccount (to enable recurring scripting) </li> <li>  Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the "PowerApp" or "Flow" prefix to each cmdlet for app creators </li> <li>  Added the "AdminPowerApp" or "AdminFlow" prefix to each cmdlet for administrators </li> <li> Added the following new administrative cmdlets: <br> New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Remove-AdminFlowApprovals </li></ol>
 | 08/15/2018 | Added an optional parameter to the New-AdminPowerAppCdsDatabase to make the function synchronous, by default (i.e. it will not return until the database is successfully provisioned)
@@ -382,4 +382,4 @@ Adds a connector to the ‘Business data only’ group in a given DLP policy. Se
 
 ## Questions?
 
-If you have any comments, suggestions, or questions, post them on the [Administering PowerApps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
+If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).

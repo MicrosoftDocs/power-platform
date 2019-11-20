@@ -1,6 +1,6 @@
 ---
 title: Governance considerations | Microsoft Docs
-description: Explains how PowerApps and Power Automate be made widely available to their business and be supported by IT.
+description: Explains how Power Apps and Power Automate be made widely available to their business and be supported by IT.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -18,7 +18,7 @@ search.app:
 
 # Governance considerations 
 
-Many customers wonder: How can PowerApps and Power Automate be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing PowerApps and Power Automate. 
+Many customers wonder: How can Power Apps and Power Automate be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing Power Apps and Power Automate. 
 
 |Theme  |Common questions related to each theme for which this content answers  |
 |---------|---------|
@@ -31,28 +31,28 @@ Many customers wonder: How can PowerApps and Power Automate be made available to
 It’s best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a PowerApps, Power Automate and Common Data Service. [Environments Overview](environments-overview.md) is a good primer which should be followed by [Common Data Service](wp-cds-for-apps.md), [Types of PowerApps](wp-types-powerapps.md), [Microsoft Power Automate](wp-about-flows.md), [Connectors](wp-connectors.md),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
-This section outlines mechanisms that exist to control who can access PowerApps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
+This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
 
 ### Licensing 
-Access to PowerApps and Power Automate starts with having a license, the type of license a user has determines the assets and data a user can access. The following table outlines differences in resources available to a user based on their plan type, from a high-level. Granular licensing details can be found in the [Licensing overview](pricing-billing-skus.md).
+Access to Power Apps and Power Automate starts with having a license, the type of license a user has determines the assets and data a user can access. The following table outlines differences in resources available to a user based on their plan type, from a high-level. Granular licensing details can be found in the [Licensing overview](pricing-billing-skus.md).
 
 
 |Plan  |Description  |
 |---------|---------|
 |Office 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
 |Dynamics 365 Included     | This allows users to customize and extend model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, they already have.  |
-|PowerApps plan  | This allows: <ul><li>making enterprise connectors and Common Data Service accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
-|PowerApps Community | This allows a user to use PowerApps, Power Automate, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
+|Power Apps plan  | This allows: <ul><li>making enterprise connectors and Common Data Service accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
+|Power Apps Community | This allows a user to use PowerApps, Power Automate, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
 |Power Automate Free | This allows users to create unlimited flows and perform 750 runs. |
-|Power Automate plan| See [Microsoft PowerApps and Microsoft Power Automate Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).|
+|Power Automate plan| See [Microsoft Power Apps and Microsoft Power Automate Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).|
 
 
 ### Environments
 After users have licenses, environments exist as containers for all resources utilized by PowerApps, Power Automate and Common Data Service. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
 
 ### Secure your data and network
-- PowerApps and Power Automate *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
-- Network Access control policies can also apply to PowerApps and Power Automate. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in PowerApps and Power Automate. 
+- Power Apps and Power Automate *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
+- Network Access control policies can also apply to Power Apps and Power Automate. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in Power Apps and Power Automate. 
 - In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for PowerApps, Power Automate, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
 - When Common Data Service is created in an environment the Common Data Service roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
 
@@ -78,24 +78,24 @@ The following principals are supported for each role type.
 
 Today, Azure AD global tenant admins can perform the following: 
 
-1.	Download the PowerApps & Power Automate license report
+1.	Download the Power Apps & Power Automate license report
 2.	Create DLP policy scoped only to ‘All Environments’ or scoped to include/exclude specific environments
 3.	Manage and assign licenses via Office admin center
 4.	Access all environment, app, and flow management capabilities for all environments in the tenant available via
-   1. PowerApps Admin center
-   2. PowerApps Admin PowerShell cmdlets
-   3. PowerApps management connectors
-5.	Access the PowerApps and Power Automate admin analytics for all environments in the tenant:
+   1. Power Apps Admin center
+   2. Power Apps Admin PowerShell cmdlets
+   3. Power Apps management connectors
+5.	Access the Power Apps and Power Automate admin analytics for all environments in the tenant:
    1.	aka.ms/paadminanalytics  
    2.	aka.ms/flowadminanalytics 
 
 ### Consider Microsoft Intune
 
-Customers with Microsoft Intune can set mobile application protection policies for both PowerApps and Power Automate apps on Android and iOS. This walkthrough highlights setting a policy via Intune for Power Automate. 
+Customers with Microsoft Intune can set mobile application protection policies for both Power Apps and Power Automate apps on Android and iOS. This walkthrough highlights setting a policy via Intune for Power Automate. 
 
 ### Consider location-based conditional access
 
-For customers with Azure AD Premium, conditional access policies can be defined in Azure for PowerApps and Power Automate. This allows granting or blocking access based upon: user/group, device, location. 
+For customers with Azure AD Premium, conditional access policies can be defined in Azure for Power Apps and Power Automate. This allows granting or blocking access based upon: user/group, device, location. 
 
 #### Creating a Conditional Access Policy
 
@@ -115,7 +115,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 Q: Can I control, on the tenant level, which connector is at all available, e.g. No to Dropbox or Twitter but Yes to SharePoint)?
 
-A: This is not possible. Customers can subscribe to Audit events to perform corrective action if there are flows that have been built that create concerns for customers. In fact, a very large PowerApps customer has leveraged this approach to apply another level of governance.
+A: This is not possible. Customers can subscribe to Audit events to perform corrective action if there are flows that have been built that create concerns for customers. In fact, a very large Power Apps customer has leveraged this approach to apply another level of governance.
  
 Q: What about Sharing connectors between users? E.g. the connector for Teams is a general one that can be shared (?)
 
@@ -125,12 +125,12 @@ A: Connectors are available to all users. With the exception of premium or custo
 
 In addition to monitoring, many customers want to subscribe to software creation, usage or health events so they know when to perform an action. This section outlines a few means to observe events (manually and programmatically) and perform actions triggered by an event occurrence. 
 
-### Leverage the [PowerApps and Microsoft Power Automate admin center](wp-work-with-admin-portals.md)
+### Leverage the [Power Apps and Microsoft Power Automate admin center](wp-work-with-admin-portals.md)
 
 1.	View and manage environments
 2.	View and manage all apps and flows within an environment
 3.	View and manage your CDS 
-4.	Environment and app management requires a PowerApps plan or a Power Automate plan 
+4.	Environment and app management requires a Power Apps plan or a Power Automate plan 
 
 ### Build Power Automate flows to alert on key audit events
 
@@ -140,14 +140,14 @@ In addition to monitoring, many customers want to subscribe to software creation
 ### Build the policies you need with PowerApps, Power Automate, and PowerShell
 
 1.	These [PowerShell cmdlets](powerapps-powershell.md) place full control in the hands of admins to automate the governance policies necessary. 
-2.	The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by leveraging PowerApps and Power Automate. 
+2.	The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by leveraging Power Apps and Power Automate. 
 3.	The following Power Automate templates for administration connectors exist for ramping up quickly:
    1.	[List new Power Automate Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
    2.	[List new PowerApps, Power Automate flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
    3.	[Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
    4.	[Access Office 365 Security and Compliance Logs from Power Automate](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
 4.	This [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) exist to help ramping up quickly on the administration connectors. 
-5. Additionally, it’s worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here’s another example of an administrative experience built using PowerApps and admin connectors.
+5. Additionally, it’s worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here’s another example of an administrative experience built using Power Apps and admin connectors.
 
 ### FAQ
 
@@ -160,7 +160,7 @@ The [PowerShell cmdlets](https://powerapps.microsoft.com/blog/gdpr-admin-powersh
 Here are three samples: 
 
 1. Download a report of activity w/ PowerShell. 
-This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  NOTE: the calling user or user account must be a global admin and have a PowerApps plan or a PowerApps trial.
+This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  NOTE: the calling user or user account must be a global admin and have a Power Apps plan or a Power Apps trial.
 	
    Q: Where should we host .zip files in the following deck? (Governance.pptx slide 48)
 
@@ -171,16 +171,16 @@ This is a flow that runs every 30 minutes and automatically disables flows that 
 
 ## Monitor
 
-It’s well understood that monitoring as a critical aspect of managing software at scale, this section highlights a couple of means to get insight in PowerApps and Power Automate development and usage.  
+It’s well understood that monitoring as a critical aspect of managing software at scale, this section highlights a couple of means to get insight in Power Apps and Power Automate development and usage.  
 
 ### Review the audit trail
 
 [Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
-### Download the PowerApps and Power Automate license report
+### Download the Power Apps and Power Automate license report
 
 1. [https://admin.powerapps.com/tenant/userLicenses](https://admin.powerapps.com/tenant/userLicenses) 
-2. View PowerApps and Power Automate admin analytics
+2. View Power Apps and Power Automate admin analytics
    1. Available now in preview from the new [Power Platform Admin center](https://aka.ms/ppac). 
    2. One can get information along the following lines: 
      1. Active User and App usage  - how many users are using an app and how often? 
@@ -195,7 +195,7 @@ It’s well understood that monitoring as a critical aspect of managing software
 
 ### View app resources used in an Environment
 
-1.	In the PowerApps Admin center, select Environments in the navigation menu. 
+1.	In the Power Apps Admin center, select Environments in the navigation menu. 
 2.	Select an Environment.
 3. Optionally, the list of resources used in an Environment may be downloaded as a .csv.
 
@@ -226,7 +226,7 @@ The means by which software is developed, validated and deployed to a production
 6.	In UAT and Production, Custom Connectors are created under a service account and shared as ‘can use’ to the entire org and ‘Can Edit’ to our maker SG.
 7.	Custom Connectors are patched for single-sign-on. 
 8.	AAD app registrations are admin consented.
-9.	The connection object is patched to use aadcertificate auth under the context of the PowerApps API Hub
+9.	The connection object is patched to use aadcertificate auth under the context of the Power Apps API Hub
 10.	SQL connectors and push notification connectors show up in the Connections view as they are a shared environment. Makes must be educated to not delete these, as they are *not* a personal connection environment of a custom connector and deleting them will delete it for all users.
 
 ### How does Microsoft prepare for disaster recovery?

@@ -19,16 +19,16 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Application Lifecycle Management (ALM) is important as the applications your organization builds becomes more complex and as more of your company depends on their stability. In other sections we discussed some of the ALM building blocks that just happen such as versioning of PowerApps canvas apps. We also covered some of the self-service actions that makers can do such as exporting and importing their Common Data Service solutions. In this section we are going to have a more cohesive discussion about ALM bringing together some of these individual concepts and using them to handle more complex scenarios.
+Application Lifecycle Management (ALM) is important as the applications your organization builds becomes more complex and as more of your company depends on their stability. In other sections we discussed some of the ALM building blocks that just happen such as versioning of Power Apps canvas apps. We also covered some of the self-service actions that makers can do such as exporting and importing their Common Data Service solutions. In this section we are going to have a more cohesive discussion about ALM bringing together some of these individual concepts and using them to handle more complex scenarios.
 
-Let’s look first at things you should consider as an administrator to consider to help guide the application through its lifecycles from new to production and then ongoing maintenance and enhancements. For purposes of this section, application refers to the whole set of components form PowerApps canvas or model-driven apps, flows and any Common Data Service customizations.
+Let’s look first at things you should consider as an administrator to consider to help guide the application through its lifecycles from new to production and then ongoing maintenance and enhancements. For purposes of this section, application refers to the whole set of components form Power Apps canvas or model-driven apps, flows and any Common Data Service customizations.
 
 |New Applications  |Existing Applications being upgraded  |
 |---------|---------|
 |Who is the application owner, and who is involved in maintaining it?     | Are any new connectors being used by the application?        |
 |Who are the users of the apps? Are they already licensed?     | Is there any new reference data to update?        |
 |What environment did you build the app in?     | Are there any new Canvas, Power Automate flows or Common Data Service solutions added in this update?        |
-|Are there any PowerApps canvas or model-driven apps as part of the application?     | Any changes to how users are assigned security roles?        |
+|Are there any Power Apps canvas or model-driven apps as part of the application?     | Any changes to how users are assigned security roles?        |
 |Are there any flows?     | Any impact on existing Common Data Service data?        |
 |What connectors are the apps using?     |Any changes in the required licenses?         |
 |Does anything require an on-premises gateway?     | Potentially any of the considerations from the New Application column, if it was not a consideration at the time.       |
@@ -84,7 +84,7 @@ We also covered import, but let’s look at a few more things to consider.
 - Create any necessary custom connectors prior to import
 - If you are importing a Common Data Service solution that is dependent on other Common Data Service solutions make sure those are already imported into the Common Data Service environment
 - If you import an unmanaged Common Data Service solution make sure you publish all after import has completed
-- Remember when you import an update to a PowerApps canvas application you must publish the new version before others will see it
+- Remember when you import an update to a Power Apps canvas application you must publish the new version before others will see it
 - If you are importing Common Data Service changes that remove any entities and data, consider a proactive on demand backup prior to the import.
 
 ## Updating existing applications
@@ -94,13 +94,13 @@ Shown earlier, the import feature allows the maker to update an existing app in 
 - Custom connectors updates must be performed first, as your app may rely on new data definitions.
 - Custom connector updates may take a few minutes to be reflected in the portal. During that time, new operations may return a 404 error when invoked.
 - If extensive changes are being made, consider creating a new custom connector and leaving the old connector intact. This can also be beneficial in the event the maker needs to roll back, as the previous version of the app will use the old (existing) connector.
-- PowerApps uses caching for the web and mobile clients, so changes may not be immediate. For the web client, be sure to clear your cache to see the new changes. On the mobile client, swipe down to refresh app metadata.
+- Power Apps uses caching for the web and mobile clients, so changes may not be immediate. For the web client, be sure to clear your cache to see the new changes. On the mobile client, swipe down to refresh app metadata.
 
 ## Ongoing application maintenance
 
 Once your application has been deployed you can mostly go into maintenance mode responding to user inquires as needed. Here are a few things to consider while you are between updates.
 
-- PowerApps canvas applications need to be periodically republished for best performance and stability. About every six months you should re-publish your deployed PowerApps canvas applications even if they haven’t changed. This ensures the application picks up the latest runtime changes in the environments.
+- Power Apps canvas applications need to be periodically republished for best performance and stability. About every six months you should re-publish your deployed Power Apps canvas applications even if they haven’t changed. This ensures the application picks up the latest runtime changes in the environments.
 - Keep an eye on your Common Data Service environment storage usage as well as your Power Automate quotas and adjust resources and licensing as needed.
 
 ## Retiring and removing an application
@@ -110,10 +110,10 @@ As your organization evolves it’s likely one or more of the applications deplo
 - Confirm that if there are users they understand the shutdown. Consider shutdown notifications in advance to ensure business continuity and minimize impact
 - Removing access to the application components is often a good first step. Leaving it in this state for a period of time also helps to ensure users know and have a chance to argue their case or save any data needed.
 - Deleting an environment will remove all associated PowerApps, Power Automate, and Common Data Service data. This is not the approach to take if you have multiple applications sharing the environment and you are just retiring a single application.
-- PowerApps canvas apps and flows can usually be removed without lots of dependency considerations. Currently it is necessary to remove these one at a time even if you imported both a PowerApp canvas app and a flow at the same time. The connections for these will not be removed automatically.
-- When removing connections, you need to first consider the PowerApps canvas apps and flows that might still be using them. This can be checked by looking at what is associated with the connection prior to deleting.
+- Power Apps canvas apps and flows can usually be removed without lots of dependency considerations. Currently it is necessary to remove these one at a time even if you imported both a PowerApp canvas app and a flow at the same time. The connections for these will not be removed automatically.
+- When removing connections, you need to first consider the Power Apps canvas apps and flows that might still be using them. This can be checked by looking at what is associated with the connection prior to deleting.
 - Custom connections are sometimes better to be left if they might be reused later as they would require extra effort to re-establish in the future.
-- To remove a PowerApps model-driven app depends if the Common Data Service solution containing it was installed as managed or unmanaged. If it was installed as unmanaged you can delete the application module to remove it from users. Removing unmanaged Common Data Service solution components requires manually removing one item at a time from the environment. Removing the Common Data Service solution itself in this situation only removes the container and not the components. This is one of the key benefits of managed solution is the ability to uninstall them as a unit.
+- To remove a Power Apps model-driven app depends if the Common Data Service solution containing it was installed as managed or unmanaged. If it was installed as unmanaged you can delete the application module to remove it from users. Removing unmanaged Common Data Service solution components requires manually removing one item at a time from the environment. Removing the Common Data Service solution itself in this situation only removes the container and not the components. This is one of the key benefits of managed solution is the ability to uninstall them as a unit.
 - If the solution installed is managed, you would uninstall/remove the Common Data Service solution containing it from the environment. When you remove the Common Data Service solution that contains that application it’s important to note that also removes any other components and data as well. If only desiring to remove the application best approach would be to remove the application in the development environment for that Common Data Service solution and then import the update in using the Stage for Upgrade option on import. This will cause only that component to be removed leaving all other components and data intact.
 
 ## Moving reference data to another environment

@@ -21,7 +21,7 @@ You can create a database and build apps by using Common Data Service as a data 
 
 There are various ways to create a database:
 
-- In the PowerApps Admin center
+- In the Power Apps Admin center
 - In the **Entities** pane of powerapps.com
 
 > [!NOTE]
@@ -64,7 +64,7 @@ You can assign additional users to pre-defined roles or even create [custom role
 To create a database, you must be an administrator in the selected environment, and the appropriate license must be assigned to you. From the environment, you can further configure security permissions for other users by using the **Security** tab. For more information, see [Configure database security](database-security.md).
 
 ## Privacy notice
-With the Microsoft PowerApps Common Data Model we collect and store custom entity and field names in our diagnostic systems.  We use this knowledge to improve the Common Data Model for our customers. The entity and field names that Creators create help us understand scenarios that are common across the Microsoft PowerApps community and ascertain gaps in the service’s standard entity coverage, such as schemas related to organizations. The data in the database tables associated with these entities is not accessed or used by Microsoft or replicated outside of the region in which the database is provisioned. Note, however, the custom entity and field names may be replicated across regions and are deleted in accordance with our data retention policies. Microsoft is committed to your privacy as described further in our [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx).
+With the Microsoft Power Apps Common Data Model we collect and store custom entity and field names in our diagnostic systems.  We use this knowledge to improve the Common Data Model for our customers. The entity and field names that Creators create help us understand scenarios that are common across the Microsoft Power Apps community and ascertain gaps in the service’s standard entity coverage, such as schemas related to organizations. The data in the database tables associated with these entities is not accessed or used by Microsoft or replicated outside of the region in which the database is provisioned. Note, however, the custom entity and field names may be replicated across regions and are deleted in accordance with our data retention policies. Microsoft is committed to your privacy as described further in our [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx).
 
 
 <!--Reference links in article-->
