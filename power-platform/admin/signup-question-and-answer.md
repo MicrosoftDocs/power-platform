@@ -43,12 +43,12 @@ See [Self-service sign up for Power Apps](/powerapps/maker/signup-for-powerapps)
 ### How can users in my organization gain access to Power Apps?
 Users within your organization can gain access to Power Apps in three different ways:
 
-* They can individually sign up for a Power Apps trial as outlined in the [How do users sign up for Power Apps?](#how-do-users-sign-up-for-powerapps) section.
+* They can individually sign up for a Power Apps trial as outlined in the [How do users sign up for Power Apps?](#how-do-users-sign-up-for-power-apps) section.
 * You can assign a Power Apps license to them within the Office 365 admin portal.
 * The user has been assigned an Office 365 and Dynamics 365 plans that includes access to the Power Apps service. See the [Power Apps pricing page](https://powerapps.microsoft.com/pricing) for the list of Office 365 and Dynamics 365 plans that include Power Apps capabilities.
 
 ### Can I block users in my organization from signing up for Power Apps?
-Any individual can try out the features of Microsoft Power Apps for 30 days, and incur no costs as outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-powerapps) section.  This option is available to any user in a tenant and cannot be disabled by an admin.  After the user's trial expires the user will lose access to Power Apps capabilities.  
+Any individual can try out the features of Microsoft Power Apps for 30 days, and incur no costs as outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-power-apps) section.  This option is available to any user in a tenant and cannot be disabled by an admin.  After the user's trial expires the user will lose access to Power Apps capabilities.  
 
 If a person signs up for a 30 day trial of Microsoft Power Apps , and you choose to not support them inside of your organization, they can in no way incur costs to your company. When an individual signs up for Microsoft Power Apps, that is a relationship between that individual and Microsoft directly, like any many public cloud services from Microsoft, such as Bing, Wunderlist, OneDrive or Outlook.com, and does not in any way imply that the service is provided by your organization.
 
@@ -111,7 +111,7 @@ As a qualifying organization, users in your organization are eligible to try out
 * If at least one user in your tenant participated in the Power Apps public preview that spanned from April 2016 to October 2016 then you will see 10,000 licenses labeled as "Microsoft Power Apps and Logic flows"
 
     ![](./media/signup-question-and-answer/licenses_2.png)
-* If at least one user in your tenant has signed-up for a Power Apps trial by going through trial signup **Option 1** outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-powerapps) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Power Automate"
+* If at least one user in your tenant has signed-up for a Power Apps trial by going through trial signup **Option 1** outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-power-apps) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Power Automate"
 
     ![](./media/signup-question-and-answer/licenses_1.png)
 
