@@ -388,7 +388,7 @@
           href: prevent-data-loss.md
         - name: Introduction to data groups
           href: introduction-to-data-groups.md
-        - name: Restrict access with trusted IP rules
+        - name: Block access by location with Azure AD Conditional Access
           href: restrict-access-online-trusted-ip-rules.md
       - name: Encryption
         items:

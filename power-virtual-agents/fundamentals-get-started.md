@@ -1,7 +1,7 @@
 ---
 title: "Quickstart: Create and deploy a bot"
 description: "Create and publis a Power Virtual Agents bot in minutes with this quickstart guide."
-ms.date: 11/18/2019
+ms.date: 11/20/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 
 Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
 
-This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding custom topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it’s been deployed. 
+This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it’s been deployed. 
 
 
 ## Create your first bot
@@ -45,9 +45,9 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 5. When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify any User or System topic, test out your content changes, or deploy your bot.
 
 
-## Create a custom topic
+## Create a topic
 
-1.	Now that you have full functionality within your bot, you can create your own custom topic—or, in other words, a dialogue tree specifying how your bot responds to a user’s question.
+1.	Now that you have full functionality within your bot, you can create your own topic—or, in other words, a dialog tree specifying how your bot responds to a user’s question.
 
 2.	Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page.
 
@@ -55,13 +55,13 @@ This quickstart guide takes you through the end-to-end experience of creating a 
     
 
 
-3. You can now name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog. The following image shows the trigger phrases for a topic about a store's opening hours:
+3. You can now name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog. 
     
-    ![Create topic and trigger phrase](media/topics-details-triggers.png)
+
 
    As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase. Select **Save topic** to add the topic to the topics list.
     
-    
+    ![Create topic and trigger phrase](media/overview-trigger.png)
 
 
 4. After saving your topic, select **Go to authoring canvas**. This is the graphical dialog tree editor that allows you to define bot responses and the overall bot conversation.
@@ -98,7 +98,7 @@ You now have a very simple branching dialog tree, congratulations! You can begin
  
 ## Test your content in real time
 
-1. Now that you have some content authored into a dialogue tree, it’s time to test this out in real time to see if it’s working as you expected. For this, you’ll use the test bot panel.
+1. Now that you have some content authored into a dialog tree, it’s time to test this out in real time to see if it’s working as you expected. For this, you’ll use the test bot panel.
 
     ![Start bot with latest content](media/test-bot-panel.png)
     
@@ -124,7 +124,7 @@ The bot is now waiting for you to respond and has provided suggestions on how to
     
 	 
 
-4. You can continue the dialog by selecting the Seattle branch. You’ll see the dialogue stop once you’ve reached the bottom of this branch. If you author more content, the dialog will continue, but since we’ve only created a very simple and small dialog tree, we can reach the end of the content very quickly.
+4. You can continue the dialog by selecting the Seattle branch. You’ll see the chat stop once you’ve reached the bottom of this branch. If you author more content, the dialog will continue, but since we’ve only created a very simple and small dialog tree, we can reach the end of the content very quickly.
 
     This test experience empowers you to quickly create and test a conversation to ensure that the conversation will flow as anticipated. If the dialog does not reflect your intention, you can change the dialog, and save it. The latest content will be pushed into the test bot, and you can try it out again. None of this changes the published version of the bot, so feel free to play around with your content until you are happy with it.
  
@@ -167,7 +167,7 @@ For more information on publishing your bot to other channels, see the documenta
     
 ## Conclusion
 
-You’ve now created a bot, created your own custom topic, tested it out, published it to a demo website, and learned how to analyze your bot’s performance. Congratulations! Your bot has many capabilities beyond this, so please try it out and play with the advanced features.
+You’ve now created a bot, created your own topic, tested it out, published it to a demo website, and learned how to analyze your bot’s performance. Congratulations! Your bot has many capabilities beyond this, so please try it out and play with the advanced features.
 
 For questions not covered in the product documentation or for feature ideas, please [visit our community](https://aka.ms/PowerVirtualAgentsForum) and post questions.
 

@@ -2,7 +2,7 @@
 title: "Bot authoring in Power Virtual Agents"
 description: "Discover how to create bots and topics easily and with no coding or long deployment times."
 keywords: ""
-ms.date: 11/16/2019
+ms.date: 11/19/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -41,6 +41,9 @@ Press enter or space on a route anchor to go into editing mode for that route. O
 At any time, pressing these hotkeys on a route anchor will read out the properties of the route:
 - ```Alt + Shift + A``` will read out the source node.
 - ```Alt + Shift + B``` will read out the target node.
+
+> [!NOTE] 
+> If you are using a screen reader, note that the sidebar menu entry labeled **Manage** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded. This is a known issue with our menu control which will be fixed at a future date.
 
 ## In this section
 
