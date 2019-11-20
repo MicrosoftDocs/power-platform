@@ -1,0 +1,34 @@
+---
+title: "Get support for Power Virtual Agents"
+description: "Get support Power Virtual Agents
+ms.date: 11/19/2019
+ms.service:
+  - "dynamics-365-ai"
+ms.topic: article
+author: m-hartmann
+ms.author: mhart
+manager: shellyha
+---
+
+# Get support for Power Virtual Agents
+
+You can get support for Power Virtual Agents on the Power Virtual Agents community forums. Features that have been released for general availability are eligible for support through Microsoft Support.
+
+## Power Virtual Agents community forums
+
+Check Microsoft community forums to see if other users have posted a solution that might help you.
+
+- Ask the community(https://go.microsoft.com/fwlink/?linkid=2058639)
+Visit the Power Virtual Agents community to get answers and tips directly from other Power Virtual Agents users.
+
+- Submit an idea(https://go.microsoft.com/fwlink/?linkid=2064961)
+Do you have a great idea that will make Power Virtul Agents even better? We's love to hear from you!
+
+## Microsoft support
+
+If you're an administrator of your Power Virtual Agents tenant, you can use the Power Platform Admin Center to request support from Microsoft.
+
+Sign in to the Power Platform Admin Center (https://admin.powerplatform.microsoft.com/).
+In the left navigation pane, select Help + Support, and then select New support request.
+For detailed information about the Help + Support experience in the Power Platform Admin center, see Get Help + Support in the Power Platform admin documentation.
+
