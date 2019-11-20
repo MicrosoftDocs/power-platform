@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2019
+ms.date: 11/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -90,7 +90,9 @@ About **manual backups**:
    > ![Select Create](media/create-backup.png "Select Create")
 
 3. Fill in the information, and then select **Create**.
-  
+
+There is no status as the backup is processing. When the backup is completed, you'll see the following message: "*The Test backup backup was successfully created.*" 
+
 ### Restore a manual backup  
 You can only restore to Sandbox environments. To restore to a production environment, first switch it to a Sandbox environment. See [Switch an environment](switch-environment.md).
 
@@ -150,6 +152,9 @@ In the current version of the product, system backups occur continuously; this i
 In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
 
 Because Azure SQL Database takes backups continuously, there is no need to take additional backups or specify Azure SQL Database to take additional backups or an on-demand full backup. That means our on-demand backup is just a label and a time stamp that we store in our system and use during restore requests. This is different from previous versions that took a full backup during an on-demand backup. 
+
+### Why can't I see a status of the manual backup?
+There is no status as the backup is processing. When the backup is completed, you'll see the following message: "*The Test backup backup was successfully created.*" 
 
 ### Should I open a support ticket for taking a full backup?
 No. In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
