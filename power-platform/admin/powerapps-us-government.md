@@ -27,7 +27,7 @@ Power Apps US Government plans are monthly subscriptions and can be licensed to 
 
 The Power Apps GCC environment provides compliance with federal requirements for cloud services, including FedRAMP High, DoD DISA IL2, and requirements for criminal justice systems (CJI data types).
 
-In addition to the features and capabilities of PowerApps, organizations that use Power Apps US Government benefit from the following features unique to Power Apps US Government:
+In addition to the features and capabilities of Power Apps, organizations that use Power Apps US Government benefit from the following features unique to Power Apps US Government:
 
 - Your organization's customer content is physically segregated from customer content in Microsoft's commercial Power Apps services.
 - Your organization's customer content is stored within the United States.
@@ -46,7 +46,7 @@ Entities with questions about eligibility for Power Apps US Government should co
 
 Access to Power Apps US Government plans is restricted to the following offerings; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- PowerApps/Power Automate Plan US Government
+- Power Apps/Power Automate Plan US Government
 - In addition to the standalone plans, Power Apps and Power Automate capabilities are also included in certain Office 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Office 365 and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
 
 Additional information about the differences in functionality between these groups of licenses is described in more detail on the [Power Apps licensing information](https://powerapps.microsoft.com/pricing/) page. Power Apps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
@@ -204,7 +204,7 @@ The mobile application will now use the US Government Cloud domain to look up us
 
 Install an [on-premises data gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in Power Apps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
-If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for PowerApps. However, if you are unable to connect to your tenant, you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
+If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. However, if you are unable to connect to your tenant, you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
 
 ## Power Apps US Government feature limitations
 
@@ -222,7 +222,7 @@ Some of the features available in the commercial version of Power Apps are not a
 
 - [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
 
-- [Customize a SharePoint list form by using PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form).
+- [Customize a SharePoint list form by using Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form).
 
 ## Requesting support
 

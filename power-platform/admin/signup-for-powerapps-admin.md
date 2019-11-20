@@ -73,7 +73,7 @@ These are not supported yet.
 
 ### See also
 [Power Apps in your organization Q&A](signup-question-and-answer.md)  
-[Self-service sign up for PowerApps](/powerapps/maker/signup-for-powerapps)  
+[Self-service sign up for Power Apps](/powerapps/maker/signup-for-powerapps)  
 
 <!--Reference links in article-->
 [1]: https://go.microsoft.com/fwlink/p/?LinkId=715583

@@ -52,7 +52,7 @@ Resources containing personal data | Website access	| PowerShell access
 --- | --- | ---
 Environment	| Power Apps Admin center | 	Power Apps cmdlets
 Environment permissions**	| Power Apps Admin center | Power Apps cmdlets
-Canvas app	| Power Apps Admin center <br> PowerApps| Power Apps cmdlets
+Canvas app	| Power Apps Admin center <br> Power Apps| Power Apps cmdlets
 Canvas-app permissions	| Power Apps Admin center | Power Apps cmdlets
 Connection | | App creator: Available <br> Admin: Available
 Connection permissions | | App creator: Available <br> Admin: Available
@@ -64,7 +64,7 @@ Custom-connector permissions | | App creator: Available <br> Admin: Available
 ## Prerequisites
 
 ### For users
-Any user with a valid Power Apps license can perform the user operations outlined in this document using the [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or [PowerShell cmdlets for app creators](https://go.microsoft.com/fwlink/?linkid=871448).
+Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or [PowerShell cmdlets for app creators](https://go.microsoft.com/fwlink/?linkid=871448).
 
 #### Unmanaged tenant
 If you are a member of an [unmanaged tenant](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover), meaning that your Azure AD tenant does not have global administrator, then you will still be able to follow the steps outlined in this art to remove your own personal data.  However, since there is no global administrator for your tenant you will need to follow the instructions outlined in [Step 11: Delete the user from Azure Active Directory](#step-11-delete-the-user-from-azure-active-directory) below to delete your own account from the tenant.

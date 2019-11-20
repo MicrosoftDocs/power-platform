@@ -53,26 +53,26 @@ Environments have two built-in roles that provide access to permissions within a
 
 * The Environment Maker role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate.
 
-Environment Makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or to all users in the organization. For more information, see [Share an app in PowerApps](/powerapps/maker/canvas-apps/share-app).
+Environment Makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or to all users in the organization. For more information, see [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app).
 
 Users or groups assigned to these environment roles are not automatically given access to the environment’s database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).
 
-Users or security groups can be assigned to either of these two roles by an Environment Admin from the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) or [Power Apps Admin center](https://admin.powerapps.com). For more information, see [Administer environments in PowerApps](environments-administration.md).
+Users or security groups can be assigned to either of these two roles by an Environment Admin from the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) or [Power Apps Admin center](https://admin.powerapps.com). For more information, see [Administer environments in Power Apps](environments-administration.md).
 
 ![](./media/environments-overview/EnvironmentRoles.png)
 
 ## The default environment
-A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for PowerApps, they are automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of the Azure AD tenant.
+A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they are automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of the Azure AD tenant.
 
 > [!NOTE]
-> No users will be added to the Environment Admin role of the default environment automatically. For more information, see [Administer environments in PowerApps](environments-administration.md).
+> No users will be added to the Environment Admin role of the default environment automatically. For more information, see [Administer environments in Power Apps](environments-administration.md).
 
 The default environment is named as follows: “{Azure AD tenant name} (default)”
 
 ![](./media/environments-overview/DefaultEnvironment.png)
 
 ## Production and Trial environments
-You can create environments for different purpose. A Trial environment is for trying out the environment and database with Common Data Service experience. It expires after certain period. For more information, see [Administer environments in PowerApps](environments-administration.md).
+You can create environments for different purpose. A Trial environment is for trying out the environment and database with Common Data Service experience. It expires after certain period. For more information, see [Administer environments in Power Apps](environments-administration.md).
 
 ## Choosing an environment
 With the introduction of environments, you will now see a new experience when you come to [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  The apps, connections, and other items that are visible in the site will now be filtered based on the current environment that is selected.  Your current environment is specified in the environment picker near the right edge of the header. To choose a different environment, click or tap the picker, and a list of available environments appears. Click or tap the one you wish to enter.

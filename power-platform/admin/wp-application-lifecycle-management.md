@@ -69,7 +69,7 @@ The following is an example of the Team Status Dashboards that gives the team an
 
 ## Exporting from the source environment
 
-We’ve already covered the concept of exporting from PowerApps, Power Automate, and Common Data Service earlier in the document. Let’s look at some additional things to consider when exporting as part of an application lifecycle management process.
+We’ve already covered the concept of exporting from Power Apps, Power Automate, and Common Data Service earlier in the document. Let’s look at some additional things to consider when exporting as part of an application lifecycle management process.
 
 - Always save a copy of the exported PowerApp, Power Automate, or Common Data Service solution file.
 - For Common Data Service Solutions make sure if you are publishing a managed solution, that you also export an unmanaged solution as well. If you are not familiar with the differences, we cover that in the Platform Architecture section.
@@ -109,7 +109,7 @@ As your organization evolves it’s likely one or more of the applications deplo
 
 - Confirm that if there are users they understand the shutdown. Consider shutdown notifications in advance to ensure business continuity and minimize impact
 - Removing access to the application components is often a good first step. Leaving it in this state for a period of time also helps to ensure users know and have a chance to argue their case or save any data needed.
-- Deleting an environment will remove all associated PowerApps, Power Automate, and Common Data Service data. This is not the approach to take if you have multiple applications sharing the environment and you are just retiring a single application.
+- Deleting an environment will remove all associated Power Apps, Power Automate, and Common Data Service data. This is not the approach to take if you have multiple applications sharing the environment and you are just retiring a single application.
 - Power Apps canvas apps and flows can usually be removed without lots of dependency considerations. Currently it is necessary to remove these one at a time even if you imported both a PowerApp canvas app and a flow at the same time. The connections for these will not be removed automatically.
 - When removing connections, you need to first consider the Power Apps canvas apps and flows that might still be using them. This can be checked by looking at what is associated with the connection prior to deleting.
 - Custom connections are sometimes better to be left if they might be reused later as they would require extra effort to re-establish in the future.

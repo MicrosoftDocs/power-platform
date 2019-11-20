@@ -63,7 +63,7 @@ You have multiple options when creating an environment:
 2. [Create an environment without a Common Data Service database](#create-an-environment-without-a-database)
 
 ## Create an environment with a database
-You create a database to use Common Data Service as a data store. The Common Data Service is a cloud scale database used to securely store data for business applications built on PowerApps. Common Data Service provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
+You create a database to use Common Data Service as a data store. The Common Data Service is a cloud scale database used to securely store data for business applications built on Power Apps. Common Data Service provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
 
 ### Prerequisites
 To create an environment with a database, you need 1GB available database capacity.
@@ -205,6 +205,6 @@ Yes it will appear in both admin centers.
 Provisioning environments is based on database capacity. Previously, it was two environments per Power Apps Plan 2 license. Now all you need is 1GB of available capacity to provision. All environments with or without Common Data Service will consume at least 1GB capacity.
 
 ### See also 
-[Manage environments in PowerApps](environments-administration.md) <br />
+[Manage environments in Power Apps](environments-administration.md) <br />
 [Preview: Common Data Service storage capacity](capacity-storage.md)
 

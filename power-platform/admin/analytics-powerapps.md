@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Admin Analytics for PowerApps
+# Admin Analytics for Power Apps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

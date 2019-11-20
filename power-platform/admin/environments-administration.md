@@ -1,6 +1,6 @@
 ---
 title: Manage environments in the Power Apps Admin center| Microsoft Docs
-description: Learn how to manage environments in PowerApps, including creation, renaming, deletion, and security
+description: Learn how to manage environments in Power Apps, including creation, renaming, deletion, and security
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -120,7 +120,7 @@ In an environment, all the users in the Azure AD tenant are users of that enviro
   > [!NOTE]
   > If the environment has the database, then you need to assign users the **System Administrator** role, instead of the **Environment Admin** role.
 
-* The **Environment Maker** role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate. Environment Makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. For more information, see [Share an app in PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
+* The **Environment Maker** role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate. Environment Makers can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. For more information, see [Share an app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
 
 To assign a user or a security group to an environment role, an Environment Admin can take these steps in the [Power Apps Admin center][1]:
 

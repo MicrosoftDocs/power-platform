@@ -1,6 +1,6 @@
 ---
 title: Data groups | Microsoft Docs
-description: Walkthrough of how to use data groups in PowerApps.
+description: Walkthrough of how to use data groups in Power Apps.
 author: manasmams
 manager: kvivek
 ms.service: power-platform
@@ -62,4 +62,4 @@ In this walk-through, we will change the default data group from the **no busine
 ## Next steps
 * [Learn more about data loss prevention (DLP) policies](prevent-data-loss.md)
 * [Learn more about environments](environments-overview.md)
-* [Learn more about Microsoft PowerApps](/powerapps/maker/canvas-apps/getting-started)
+* [Learn more about Microsoft Power Apps](/powerapps/maker/canvas-apps/getting-started)

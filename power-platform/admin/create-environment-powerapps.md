@@ -24,7 +24,7 @@ Follow these steps to create a Power Apps environment and a database for that en
 ### Prerequisites
  To follow this topic, the following items are required:
  - A Power Apps plan. Alternatively, you can sign up for a [free Power Apps trial](https://web.powerapps.com/signup?redirect=marketing&email=).
- - Power Apps Environment Admin, Office 365 Global Admin, or Azure Active Directory Tenant Admin permissions. For more information, see [Environments administration in PowerApps](environments-administration.md).
+ - Power Apps Environment Admin, Office 365 Global Admin, or Azure Active Directory Tenant Admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
 ### Sign in to the Power Apps Admin center
 Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
@@ -69,14 +69,14 @@ Your license determines whether you can create environments.
 | Power Apps Community Plan   |No | No |
 
 ### Where can environments be created?
-You will be able to create new environments from [https://web.powerapps.com](https://web.powerapps.com) and from the [Power Apps Admin center](https://admin.powerapps.com). If you create an environment, you will automatically be added to the Environment Admin role for that environment. There is not be a limit on the number of environments that you can participate in as a member of the Environment Admin or Environment Maker role. For more information about environments, see [Administer environments in PowerApps](environments-administration.md). For instructions on how to create an environment, see [Create an environment](create-environment.md).
+You will be able to create new environments from [https://web.powerapps.com](https://web.powerapps.com) and from the [Power Apps Admin center](https://admin.powerapps.com). If you create an environment, you will automatically be added to the Environment Admin role for that environment. There is not be a limit on the number of environments that you can participate in as a member of the Environment Admin or Environment Maker role. For more information about environments, see [Administer environments in Power Apps](environments-administration.md). For instructions on how to create an environment, see [Create an environment](create-environment.md).
 
 ![](./media/environments-overview/CreateEnvironmentDialog-New.png)
 
 ## Managing environments for your organization
 In Power Apps Admin center,  you can manage all of the environments that you have created or to which you have been added to the Environment Admin role. From the Admin center, you can perform all administrative actions on an environment, including the following:
 
-* Add or remove a user or group from either the Environment Admin or Environment Maker role.  For more information, see [Administer environments in PowerApps](environments-administration.md).
+* Add or remove a user or group from either the Environment Admin or Environment Maker role.  For more information, see [Administer environments in Power Apps](environments-administration.md).
 * Provision a Common Data Service database for the environment. For more information, see [Create a Common Data Service database](create-database.md).
 * Set Data Loss Prevention policies. For more information, see [Data loss prevention policies](prevent-data-loss.md).
 * Set database security policies (as open or restricted by database roles). For more information, see [Configure database security](database-security.md).

@@ -16,6 +16,6 @@ search.app:
 ---
 # Automate application lifecycle management with Power Apps Build Tools
 
-Use Power Apps Build Tools to automate common build and deployment tasks related to PowerApps. This includes synchronization of solution metadata (solutions) between development environments and source control, generating build artifacts, deploying to downstream environments, provisioning/de-provisioning of environments, and the ability to perform static analysis checks against your solution using the Power Apps checker service.
+Use Power Apps Build Tools to automate common build and deployment tasks related to Power Apps. This includes synchronization of solution metadata (solutions) between development environments and source control, generating build artifacts, deploying to downstream environments, provisioning/de-provisioning of environments, and the ability to perform static analysis checks against your solution using the Power Apps checker service.
 
 Interested? Check out the blog: [Automate your application lifecycle management (ALM) with Power Apps Build Tools (Preview)](https://powerapps.microsoft.com/blog/automate-your-application-lifecycle-management-alm-with-powerapps-build-tools-preview/).

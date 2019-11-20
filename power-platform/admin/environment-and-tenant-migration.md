@@ -83,7 +83,7 @@ The ability to import an app is available to any user with "Environment Maker" p
 ## Exporting Common Data Service customizations and model-driven apps
 Exporting any entity or option set customizations or any model-driven apps that you have built in https://web.powerapps.com is supported by exporting the default environment solution as follows:
 > [!NOTE]
->  If you would like to learn more about solutions in PowerApps, please see [Introduction to solutions](/powerapps/developer/common-data-service/introduction-solutions).
+>  If you would like to learn more about solutions in Power Apps, please see [Introduction to solutions](/powerapps/developer/common-data-service/introduction-solutions).
 >
 >
 

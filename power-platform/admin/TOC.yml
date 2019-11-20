@@ -19,7 +19,7 @@
         href: powerapps-flow-licensing-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
-  - name: Administer PowerApps
+  - name: Administer Power Apps
     items:
     - name: Overview
       href: admin-guide.md
@@ -89,9 +89,9 @@
           href: control-environment-creation.md
         - name: Back up and restore environments
           href: backup-restore-environments.md
-        - name: Create a database in PowerApps
+        - name: Create a database in Power Apps
           href: create-database.md
-        - name: Create an environment in PowerApps
+        - name: Create an environment in Power Apps
           href: create-environment-powerapps.md
         - name: Copy an environment
           href: copy-environment.md
@@ -103,9 +103,9 @@
           href: trial-environments.md     
       #  - name: Manage environments in Power Platform
       #    href: manage-environments.md
-        - name: Manage environments in PowerApps
+        - name: Manage environments in Power Apps
           href: environments-administration.md
-        - name: Regions overview in PowerApps
+        - name: Regions overview in Power Apps
           href: regions-overview.md
         - name: Manage encryption key
           href: manage-encryption-key.md

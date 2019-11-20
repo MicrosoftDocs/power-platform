@@ -35,7 +35,7 @@ In a perfect world as an administrator you would only visit a single portal to p
 |Microsoft Azure<br/>https://portal.azure.com     |Advanced Azure AD management tasks like conditional access is managed here. Also if you support any developer application registration it is also done here. This is also where you start setup of your on-premises gateways.         |
 |Security & Compliance Center<br/>https://protection.office.com     |In addition to the general compliance tasks, administrators can come here to search the Audit log to see Power Automate audit events         |
 
-Over the near-term future we will see consolidation of the PowerApps, Power Automate, and the Dynamics 365 administration portals into a more unified administrative portal experience.
+Over the near-term future we will see consolidation of the Power Apps, Power Automate, and the Dynamics 365 administration portals into a more unified administrative portal experience.
 For partners helping their customers manage their cloud services using delegated administration capabilities you will not be able to use delegated access to the Power Apps and Power Automate portals. Currently, you would need to have a user in the customers tenant and assign that user a Power Apps plan.
 
 ## Common portal tasks

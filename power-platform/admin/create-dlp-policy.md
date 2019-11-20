@@ -1,6 +1,6 @@
 ---
 title: Create a data loss prevention (DLP) policy | Microsoft Docs
-description: In this quickstart, you learn how to create a data loss prevention (DLP) policy in PowerApps
+description: In this quickstart, you learn how to create a data loss prevention (DLP) policy in Power Apps
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -26,7 +26,7 @@ To follow the steps, **one** of the following items is required:
 * Office 365 Global Admin permissions
 * Power Apps Environment Admin permissions plus a Power Apps plan, Power Automate plan, or a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) license
 
-For more information, see [Environments administration in PowerApps](environments-administration.md).
+For more information, see [Environments administration in Power Apps](environments-administration.md).
 
 ## Sign in to the Power Apps Admin center
 Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).

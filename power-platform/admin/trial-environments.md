@@ -101,7 +101,7 @@ To determine your plan(s), select the **Gear** icon (![Gear icon](media/selectio
 > ![Select Plans](media/powerapps-plans.png "Select Plans")
 
 ### See also
-[Administer environments in PowerApps](environments-administration.md)<br/>
+[Administer environments in Power Apps](environments-administration.md)<br/>
 [Environments overview](environments-overview.md)<br/>
 [Choose the right plans for your team](https://powerapps.microsoft.com/pricing/)<br/>
 [Licensing overview](pricing-billing-skus.md)<br/>

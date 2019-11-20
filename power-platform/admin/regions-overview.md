@@ -1,6 +1,6 @@
 ---
 title: Regions overview in Power Apps Admin center| Microsoft Docs
-description: Learn about regions in PowerApps
+description: Learn about regions in Power Apps
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -46,7 +46,7 @@ If you're an administrator, you can determine the region of each environment in 
 
 ## Who can create environments in these regions?
 
-With PowerApps, you can create environments in various regions across the globe, which benefits your business in these ways:
+With Power Apps, you can create environments in various regions across the globe, which benefits your business in these ways:
 
 - Store your data closer to your users
 - Maintain the compliance requirement of your geography

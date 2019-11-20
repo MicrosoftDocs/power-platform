@@ -30,7 +30,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 
 A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
 
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using PowerApps, Power Automate, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Power Apps, Power Automate, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
 The following actions are covered in this article:
 
@@ -53,7 +53,7 @@ The following actions are covered in this article:
 
 Common Data Service and the previous version of Common Data Service have separate processes for interacting with personal data.
 
-You can identify which type of Common Data Service environment you have by logging into [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and following these steps:
+You can identify which type of Common Data Service environment you have by logging into [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and following these steps:
 
 1. In the **Environment** drop-down list, select your environment.
 2. In the navigation pane, click or tap **Data**, and then click or tap **Entities**.
@@ -310,12 +310,12 @@ You can find personal data from users of the previous version of Common Data Ser
 
 |Resource | Purpose | Website access |	Programmatic access
 | --- | --- | --- | ---
-|Entity records	| Captures business transactions in the respective business entity. | [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |  	No
+|Entity records	| Captures business transactions in the respective business entity. | [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |  	No
 
 #### Entity records
 An individual's personal data can be stored in any business entity.
 
-This version of the Common Data Service contains its own database schema and infrastructure. It has its own entities, and you manage these entities in [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+This version of the Common Data Service contains its own database schema and infrastructure. It has its own entities, and you manage these entities in [Power Apps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 To see a list of your entities, do the following:
 
@@ -350,7 +350,7 @@ To rectify personal data that resides in the Common Data Service environment, yo
 
 Common Data Service System Administrators are responsible for identifying all entities that contain personal data for an individual and repeating the following steps for each of those entities.
 
-From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
+From [Power Apps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
 
 1. In the navigation pane, click or tap **Data**, and then click or tap **Entities**.
 
@@ -372,7 +372,7 @@ From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinad
 
 7. Make the necessary personal data updates and save the spreadsheet.
 
-10.	In PowerApps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
+10.	In Power Apps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
 
 11.	Click **Search**, and then select and open the Excel spreadsheet that you just updated.
 
@@ -381,7 +381,7 @@ From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinad
 ### Export
 You can export personal data from each entity into an Excel spreadsheet and view it.
 
-From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
+From [Power Apps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
 
 1. In the navigation pane, click or tap **Data**, and then click or tap **Entities**.
 
@@ -406,7 +406,7 @@ You can delete personal data that's stored in entities by using the Export/Impor
 
 Common Data Service System Administrators are responsible for identifying all entities that contain personal data for an individual and repeating the following steps for each of those entities.
 
-From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
+From [Power Apps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
 
 1. In the navigation pane, click or tap **Data**, and then click or tap **Entities**.
 
@@ -428,7 +428,7 @@ From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinad
 
 7. Delete the rows containing the personal data that you want to remove from the entity and save the spreadsheet.
 
-10.	In PowerApps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
+10.	In Power Apps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
 
 11.	Click **Search**, and then select and open the Excel spreadsheet that you just updated.
 

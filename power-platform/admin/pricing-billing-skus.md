@@ -1,6 +1,6 @@
 ---
 title: Licensing overview | Microsoft Docs
-description: Overview of licensing in PowerApps.
+description: Overview of licensing in Power Apps.
 author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
@@ -23,9 +23,9 @@ The topics in this section provide detailed information about Power Apps and Mic
 
 For information about Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
 
-## PowerApps/Power Automate for Office 365
+## Power Apps/Power Automate for Office 365
 
-PowerApps/Power Automate capabilities for Office 365 enable users to extend and
+Power Apps/Power Automate capabilities for Office 365 enable users to extend and
 customize the Office experience with Power Apps and Power Automate. Users can
 create applications and flows based on Office 365 data. These productivity apps
 can also utilize data outside of Office 365 by connecting to common services
@@ -63,10 +63,10 @@ Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## Community Plan
 
-If you want to build skills and learn more about PowerApps, Power Automate, and
+If you want to build skills and learn more about Power Apps, Power Automate, and
 Common Data Service, the Power Apps Community Plan is the right plan for you. The
 Power Apps Community Plan gives you a free development environment for individual
-use to learn with full functionality of PowerApps. More information: [Power Apps Community Plan](https://powerapps.microsoft.com/communityplan/).
+use to learn with full functionality of Power Apps. More information: [Power Apps Community Plan](https://powerapps.microsoft.com/communityplan/).
 
 ## Power Apps and Power Automate for Dynamics 365
 

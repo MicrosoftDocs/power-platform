@@ -87,7 +87,7 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
 ~~~~
  
 ## Step 2: Export the user’s environment permissions
-Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Common Data Service, if a database is created within the environment, the role assignments are stored as records within the Common Data Service database environment. For more information, see [Administer environments within PowerApps](environments-administration.md).
+Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Common Data Service, if a database is created within the environment, the role assignments are stored as records within the Common Data Service database environment. For more information, see [Administer environments within Power Apps](environments-administration.md).
 
 ### For environments without a Common Data Service database
 

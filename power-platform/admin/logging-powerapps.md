@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Activity logging for PowerApps
+# Activity logging for Power Apps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Power Apps activities are now tracked from the [Office 365 Security & Compliance
 
 ![Audit log search](media/audit-log-search-menu.png "Audit log search")
 
-Within the **Audit log search** screen, tenant administrators can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and Microsoft PowerApps.
+Within the **Audit log search** screen, tenant administrators can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and Microsoft Power Apps.
 
 Once the Audit log search screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown. By scrolling down the list, a section dedicated to Microsoft Power Apps activities can be found. 
 
@@ -49,7 +49,7 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Deleted app permission |Every time a user's permissions to the app is removed  |
 
 ## Base schema
-Schemas define which Power Apps fields are sent to the Office 365 Security and Compliance Center.  Some fields are common to all applications that send audit data to Office 365, while others are specific to PowerApps. The Base schema contains the common fields. 
+Schemas define which Power Apps fields are sent to the Office 365 Security and Compliance Center.  Some fields are common to all applications that send audit data to Office 365, while others are specific to Power Apps. The Base schema contains the common fields. 
 
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|

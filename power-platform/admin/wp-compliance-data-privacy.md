@@ -25,9 +25,9 @@ To help your organization comply with national, regional, and industry-specific 
 
 ## Trust Center
 
-The Microsoft Trust Center (https://www.microsoft.com/trustcenter) is a centralized resource for obtaining information on Microsoft’s portfolio of products. This includes information on security, privacy, compliance, and transparency. While this content may contain some subset of this information for PowerApps, it is important to always refer to the Microsoft Trust Center for the most up to date authoritative information.
+The Microsoft Trust Center (https://www.microsoft.com/trustcenter) is a centralized resource for obtaining information on Microsoft’s portfolio of products. This includes information on security, privacy, compliance, and transparency. While this content may contain some subset of this information for Power Apps, it is important to always refer to the Microsoft Trust Center for the most up to date authoritative information.
 
-For quick reference, you can find the Trust Center Information for the Microsoft Power Platform here https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx This will include information on PowerApps, Microsoft Power Automate and Power BI.
+For quick reference, you can find the Trust Center Information for the Microsoft Power Platform here https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx This will include information on Power Apps, Microsoft Power Automate and Power BI.
 
 ## Data Location
 

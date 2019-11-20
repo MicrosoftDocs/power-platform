@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) PowerApps, and Power Automate.
+Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) Power Apps, and Power Automate.
 
 ## What is a Microsoft Power Platform request?
 
@@ -45,7 +45,7 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | Dynamics 365 Team Member                                 | 5,000                                                                                                                                         |
 | Power Apps per user plan                                  | 5,000                                                                                                                                         |
 | Power Automate per user plan                             | 5,000                                                                                                                                         |
-| Office licenses (that include PowerApps/Power Automate)  | 2,000                                                                                                                                         |
+| Office licenses (that include Power Apps/Power Automate)  | 2,000                                                                                                                                         |
 | Application user / Non-interactive users                 | See *Non-licensed user* section below |
 
 
@@ -70,7 +70,7 @@ If a user has multiple licenses allocated within the same product line, for exam
 
 ## Power Apps and Power Automate capacity add-on
 
-Power Apps and Power Automate capacity add-on allows customers to purchase additional requests which can be assigned to any user who has a PowerApps/Power Automate license as well as Dynamics 365 license. These can be assigned to an application, and administrative and non-interactive users.
+Power Apps and Power Automate capacity add-on allows customers to purchase additional requests which can be assigned to any user who has a Power Apps/Power Automate license as well as Dynamics 365 license. These can be assigned to an application, and administrative and non-interactive users.
 
 Each capacity add-on provides an additional 10,000 requests/24 hours which can be assigned to any user. Multiple capacity add-ons can also be assigned to the same user.
 
@@ -109,11 +109,11 @@ Apart from the new daily API request limit, there are other service protection l
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), PowerApps, and Power Automate connecting to Common Data Service/model-driven apps in Dynamics 365
+- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), Power Apps, and Power Automate connecting to Common Data Service/model-driven apps in Dynamics 365
 
 - [Microsoft Power Automate limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Power Automate
 
-- [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Power Automate and PowerApps
+- [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Power Automate and Power Apps
 
 
 ## Frequently asked questions

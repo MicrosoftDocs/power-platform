@@ -1,6 +1,6 @@
 ---
 title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
-description: "FAQs for licensing PowerApps, Power Automate, Common Data Service, and AI Builder"
+description: "FAQs for licensing Power Apps, Power Automate, Common Data Service, and AI Builder"
 author: dileepsinghmicrosoft
 manager: kvivek
 ms.service: power-platform
@@ -62,7 +62,7 @@ Power Apps licenses will continue to include Power Automate capabilities. Howeve
 
 ### Is there a plan for developers?
 
-Yes, we have a free Community Plan to learn and build skills on PowerApps, Power Automate, and Common Data Service. [Learn more](https://powerapps.microsoft.com/communityplan/).
+Yes, we have a free Community Plan to learn and build skills on Power Apps, Power Automate, and Common Data Service. [Learn more](https://powerapps.microsoft.com/communityplan/).
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
@@ -241,7 +241,7 @@ A list of add-ons applicable to all standalone Power Apps and Power Automate pla
 
   - Power Apps Portals page view capacity add-on (100,000 anonymous page views for $100 per month)
 
-- New **Power Apps and Power Automate capacity add-on** increases daily API request limits for PowerApps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
+- New **Power Apps and Power Automate capacity add-on** increases daily API request limits for Power Apps, Power Automate, and Dynamics 365 workloads for users that exceed their usage entitlement (10,000 daily API requests for $50 per month).
 
 - Common Data Service Database Capacity (1GB) $40 per month
 
@@ -319,7 +319,7 @@ Portals are licensed at a monthly rate that is based on a customer’s anticipat
 
 ### How is AI Builder licensed?
 
-AI Builder is a capacity add-on to paid, standalone PowerApps, Power Automate, and Dynamics 365 licenses. Each $500 subscription includes 1 million AI Builder service credits applied at the tenant level. To use your AI Builder capacity, an administrator has to allocate AI Builder capacity to the environment where you want to use AI Builder.  
+AI Builder is a capacity add-on to paid, standalone Power Apps, Power Automate, and Dynamics 365 licenses. Each $500 subscription includes 1 million AI Builder service credits applied at the tenant level. To use your AI Builder capacity, an administrator has to allocate AI Builder capacity to the environment where you want to use AI Builder.  
 
 - More details about licensing can be found in the Microsoft Power Apps and Power Automate Licensing Guide. 
 - Information about how to allocate capacity in the Power Platform admin center can be found [here](/power-platform/admin/capacity-add-on).

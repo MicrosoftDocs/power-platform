@@ -18,13 +18,13 @@ search.app:
 
 # Manage Power Apps licenses in your organization
 
-This topic describes how users in your organization can get access to use PowerApps, and how you can control access to the Power Apps service.
+This topic describes how users in your organization can get access to use Power Apps, and how you can control access to the Power Apps service.
 
-## Sign up for PowerApps
-### What is PowerApps?
+## Sign up for Power Apps
+### What is Power Apps?
 Microsoft Power Apps enables users to create applications for Windows, iOS, and Android mobile devices. Using these apps, you can create connections to common SaaS services, including Twitter, Office 365, Dropbox, and Excel.
 
-### How do users sign up for PowerApps?
+### How do users sign up for Power Apps?
 The only sign-up option for individual users in your organization is the Power Apps trial, which they can sign up for through the Power Apps website:
 
 ##### Option 1
@@ -33,30 +33,30 @@ Users can sign up by going to [powerapps.microsoft.com](https://powerapps.micros
 ##### Option 2
 Users can sign up by going to [powerapps.microsoft.com](https://powerapps.microsoft.com), selecting **Sign in**, signing in with their work or school accounts, and sign up for the Power Apps trial by accepting the Power Apps terms of use.    
 
-When a user in your organization signs up for PowerApps, that user is assigned a Power Apps license automatically.
+When a user in your organization signs up for Power Apps, that user is assigned a Power Apps license automatically.
 
 > [!NOTE]
-> Users who sign up for a trial license from within Power Apps don't appear in the Office 365 admin portal as Power Apps trial users (unless they have another license to Office 365, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or PowerApps).
+> Users who sign up for a trial license from within Power Apps don't appear in the Office 365 admin portal as Power Apps trial users (unless they have another license to Office 365, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or Power Apps).
 
-See [Self-service sign up for PowerApps](/powerapps/maker/signup-for-powerapps) for more details.
+See [Self-service sign up for Power Apps](/powerapps/maker/signup-for-powerapps) for more details.
 
-### How can users in my organization gain access to PowerApps?
+### How can users in my organization gain access to Power Apps?
 Users within your organization can gain access to Power Apps in three different ways:
 
-* They can individually sign up for a Power Apps trial as outlined in the [How do users sign up for PowerApps?](#how-do-users-sign-up-for-powerapps) section.
+* They can individually sign up for a Power Apps trial as outlined in the [How do users sign up for Power Apps?](#how-do-users-sign-up-for-powerapps) section.
 * You can assign a Power Apps license to them within the Office 365 admin portal.
 * The user has been assigned an Office 365 and Dynamics 365 plans that includes access to the Power Apps service. See the [Power Apps pricing page](https://powerapps.microsoft.com/pricing) for the list of Office 365 and Dynamics 365 plans that include Power Apps capabilities.
 
-### Can I block users in my organization from signing up for PowerApps?
-Any individual can try out the features of Microsoft Power Apps for 30 days, and incur no costs as outlined in the [How do users sign up for PowerApps](#how-do-users-sign-up-for-powerapps) section.  This option is available to any user in a tenant and cannot be disabled by an admin.  After the user's trial expires the user will lose access to Power Apps capabilities.  
+### Can I block users in my organization from signing up for Power Apps?
+Any individual can try out the features of Microsoft Power Apps for 30 days, and incur no costs as outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-powerapps) section.  This option is available to any user in a tenant and cannot be disabled by an admin.  After the user's trial expires the user will lose access to Power Apps capabilities.  
 
-If a person signs up for a 30 day trial of Microsoft Power Apps , and you choose to not support them inside of your organization, they can in no way incur costs to your company. When an individual signs up for Microsoft PowerApps, that is a relationship between that individual and Microsoft directly, like any many public cloud services from Microsoft, such as Bing, Wunderlist, OneDrive or Outlook.com, and does not in any way imply that the service is provided by your organization.
+If a person signs up for a 30 day trial of Microsoft Power Apps , and you choose to not support them inside of your organization, they can in no way incur costs to your company. When an individual signs up for Microsoft Power Apps, that is a relationship between that individual and Microsoft directly, like any many public cloud services from Microsoft, such as Bing, Wunderlist, OneDrive or Outlook.com, and does not in any way imply that the service is provided by your organization.
 
-Finally, if your company wishes to restrict the use of organizational-only data inside of Microsoft PowerApps, that is possible through Data loss prevention (DLP) policies. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
+Finally, if your company wishes to restrict the use of organizational-only data inside of Microsoft Power Apps, that is possible through Data loss prevention (DLP) policies. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
-## Administration of PowerApps
+## Administration of Power Apps
 ### Why has the Power Apps icon appeared in the Office 365 app launcher?
-Microsoft Power Apps is a fundamental part of the Office 365 suite and is enabled as a service as a part of existing Office 365 SKU's. As users everywhere in the world can now use Microsoft PowerApps, it appears in 'All apps' in the app launcher screen. See [Licensing overview](pricing-billing-skus.md) to understand which Office 365 SKUs now include PowerApps.
+Microsoft Power Apps is a fundamental part of the Office 365 suite and is enabled as a service as a part of existing Office 365 SKU's. As users everywhere in the world can now use Microsoft Power Apps, it appears in 'All apps' in the app launcher screen. See [Licensing overview](pricing-billing-skus.md) to understand which Office 365 SKUs now include Power Apps.
 
 See the following section if you'd like to remove the Power Apps tile from 'All apps' by default.
 
@@ -100,7 +100,7 @@ Removing of the Power Apps license or service for a user in your organization wi
 
     ![](./media/signup-question-and-answer/office-waffle.png)
 
-### How can I restrict my users' ability to access my organization's business data using PowerApps?
+### How can I restrict my users' ability to access my organization's business data using Power Apps?
 Power Apps allows you to create data zones for business and non-business data, as shown below.  Once these data loss prevention policies are implemented, users are prevented from designing or running Power Apps that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
 ![](./media/signup-question-and-answer/data-loss-prevention-policy.png)
@@ -111,7 +111,7 @@ As a qualifying organization, users in your organization are eligible to try out
 * If at least one user in your tenant participated in the Power Apps public preview that spanned from April 2016 to October 2016 then you will see 10,000 licenses labeled as "Microsoft Power Apps and Logic flows"
 
     ![](./media/signup-question-and-answer/licenses_2.png)
-* If at least one user in your tenant has signed-up for a Power Apps trial by going through trial signup **Option 1** outlined in the [How do users sign up for PowerApps](#how-do-users-sign-up-for-powerapps) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Power Automate"
+* If at least one user in your tenant has signed-up for a Power Apps trial by going through trial signup **Option 1** outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-powerapps) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Power Automate"
 
     ![](./media/signup-question-and-answer/licenses_1.png)
 

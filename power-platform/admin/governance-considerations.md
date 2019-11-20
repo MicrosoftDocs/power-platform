@@ -22,13 +22,13 @@ Many customers wonder: How can Power Apps and Power Automate be made available t
 
 |Theme  |Common questions related to each theme for which this content answers  |
 |---------|---------|
-|Architecture     | <ul><li>What are the basic constructs and concepts of PowerApps, Power Automate, and Common Data Service?</li> <br /><li>How do these constructs fit together at design time and runtime?</li></ul> |
-|Security     | <ul><li>What are the best practices for security design considerations?</li> <br /><li>How do I leverage our existing user and group management solutions to manage access and security roles in PowerApps?</li></ul>     |
+|Architecture     | <ul><li>What are the basic constructs and concepts of Power Apps, Power Automate, and Common Data Service?</li> <br /><li>How do these constructs fit together at design time and runtime?</li></ul> |
+|Security     | <ul><li>What are the best practices for security design considerations?</li> <br /><li>How do I leverage our existing user and group management solutions to manage access and security roles in Power Apps?</li></ul>     |
 |Alert and Action     | <ul><li>How do I define the governance model between citizen developers and managed IT services?</li> <br /><li>How do I define the governance model between central IT and the business unit admins?</li> <br /><li>How should I approach support for non-default environments in my organization? </li></ul>        |
 |Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
-It’s best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a PowerApps, Power Automate and Common Data Service. [Environments Overview](environments-overview.md) is a good primer which should be followed by [Common Data Service](wp-cds-for-apps.md), [Types of PowerApps](wp-types-powerapps.md), [Microsoft Power Automate](wp-about-flows.md), [Connectors](wp-connectors.md),  and [On-premises Gateways](wp-onpremises-gateway.md). 
+It’s best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a Power Apps, Power Automate and Common Data Service. [Environments Overview](environments-overview.md) is a good primer which should be followed by [Common Data Service](wp-cds-for-apps.md), [Types of Power Apps](wp-types-powerapps.md), [Microsoft Power Automate](wp-about-flows.md), [Connectors](wp-connectors.md),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
 This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
@@ -42,18 +42,18 @@ Access to Power Apps and Power Automate starts with having a license, the type o
 |Office 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
 |Dynamics 365 Included     | This allows users to customize and extend model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, they already have.  |
 |Power Apps plan  | This allows: <ul><li>making enterprise connectors and Common Data Service accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
-|Power Apps Community | This allows a user to use PowerApps, Power Automate, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
+|Power Apps Community | This allows a user to use Power Apps, Power Automate, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
 |Power Automate Free | This allows users to create unlimited flows and perform 750 runs. |
 |Power Automate plan| See [Microsoft Power Apps and Microsoft Power Automate Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).|
 
 
 ### Environments
-After users have licenses, environments exist as containers for all resources utilized by PowerApps, Power Automate and Common Data Service. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
+After users have licenses, environments exist as containers for all resources utilized by Power Apps, Power Automate and Common Data Service. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
 
 ### Secure your data and network
 - Power Apps and Power Automate *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
 - Network Access control policies can also apply to Power Apps and Power Automate. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in Power Apps and Power Automate. 
-- In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for PowerApps, Power Automate, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
+- In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for Power Apps, Power Automate, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
 - When Common Data Service is created in an environment the Common Data Service roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
 
 The following principals are supported for each role type.
@@ -137,13 +137,13 @@ In addition to monitoring, many customers want to subscribe to software creation
 1.	An example of alerting that can be implemented is subscribing to Office 365 Security and Compliance Audit Logs. 
 2.	This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
 
-### Build the policies you need with PowerApps, Power Automate, and PowerShell
+### Build the policies you need with Power Apps, Power Automate, and PowerShell
 
 1.	These [PowerShell cmdlets](powerapps-powershell.md) place full control in the hands of admins to automate the governance policies necessary. 
 2.	The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by leveraging Power Apps and Power Automate. 
 3.	The following Power Automate templates for administration connectors exist for ramping up quickly:
    1.	[List new Power Automate Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
-   2.	[List new PowerApps, Power Automate flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
+   2.	[List new Power Apps, Power Automate flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
    3.	[Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
    4.	[Access Office 365 Security and Compliance Logs from Power Automate](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
 4.	This [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) exist to help ramping up quickly on the administration connectors. 
@@ -175,7 +175,7 @@ It’s well understood that monitoring as a critical aspect of managing software
 
 ### Review the audit trail
 
-[Activity logging for PowerApps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
+[Activity logging for Power Apps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
 ### Download the Power Apps and Power Automate license report
 
@@ -202,7 +202,7 @@ It’s well understood that monitoring as a critical aspect of managing software
 <!--
 ## Deploy
 
-The means by which software is developed, validated and deployed to a production environment is an important topic for each organization and happens to vary greatly from one organization to the next. As a reference, this section outlines how Microsoft’s central IT organization manages and deploys PowerApps.
+The means by which software is developed, validated and deployed to a production environment is an important topic for each organization and happens to vary greatly from one organization to the next. As a reference, this section outlines how Microsoft’s central IT organization manages and deploys Power Apps.
 
 ### How does Microsoft manage environments, maker roles, DLP policies? 
 

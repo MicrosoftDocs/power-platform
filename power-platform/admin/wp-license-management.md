@@ -53,7 +53,7 @@ trial. This trial would not show up under the user licenses in the Office 365
 Portal, however you would be able to see it in the Power Apps license report
 discussed later in this security section.
 
-For PowerApps, if a user signs up for a Power Apps trial they will get a
+For Power Apps, if a user signs up for a Power Apps trial they will get a
 Power Apps per user trial if needed for any of the actions they take such as
 creating an environment.
 

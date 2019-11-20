@@ -101,7 +101,7 @@ Yes. Please use the following steps.
 
 3. Add users to the group, see [Add or remove group members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).  
 
-4. [Generate a canvas app from Common Data Service in PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app). 
+4. [Generate a canvas app from Common Data Service in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app). 
    1.	Use Common Data Service from an environment you plan to share the model-driven app. 
    2.	Assign the security role to the group that you plan to use to make the model-driven app accessible to end users.  
 
