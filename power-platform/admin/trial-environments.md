@@ -39,7 +39,7 @@ Follow these steps to convert a Trial environment to a production environment:
 2. Open the **Environments** page, and select the Trial environment you want to convert to production:
 
     > [!div class="mx-imgBorder"] 
-    > ![Select Trial environment](media/powerapps-environments75b-select-trial.png "Select trial environment")
+    > ![Select Trial environment](media/powerapps-environments75b-select-trial.png "Select Trial environment")
 
 3. On the **Details** tab, select **Convert**:
 
