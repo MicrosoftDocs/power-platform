@@ -41,8 +41,8 @@ For information, see: [Create a basic group and add members using Azure Active D
   
 <a name="BKMK_CreateTrustedIPRule"></a>   
 
-## Create a Block Access by location
-Block Access by location is set using Azure Active Directory (AD) Conditional Access. For the cloud app, select **Common Data Service** to control access to model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).
+## Create a block access by location
+Block access by location is set using Azure Active Directory (AD) Conditional Access. For the cloud app, select **Common Data Service** to control access to model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).
   
 > [!NOTE]
 >  Setting Conditional Access is only available with an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] Premium license.  Upgrade your Azure AD to a Premium license in the Microsoft 365 admin center (**<https://admin.microsoft.com>** > **Billing** > **Purchase services**).  
