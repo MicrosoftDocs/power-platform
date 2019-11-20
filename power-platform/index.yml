@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Learn how to analyze data for insights using Power BI, quickly and easily build custom apps using PowerApps, automate workflows to improve business productivity using Power Automate, and build intelligent bots with a no-code interface using Power Virtual Agents.
+summary: Learn how to analyze data for insights using Power BI, quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, and build intelligent bots with a no-code interface using Power Virtual Agents.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Power Automate. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, Power Apps, and Power Automate. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: dynamics-365-crossapp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: buck1ey #Required; your GitHub user alias, with correct capitalization.
@@ -25,12 +25,12 @@ additionalContent:
             text: Documentation
           - url: https://docs.microsoft.com/en-us/learn/browse/?products=power-bi
             text: Learn Power BI
-        - title: PowerApps
+        - title: Power Apps
           links:
           - url: https://docs.microsoft.com/powerapps
             text: Documentation
           - url: https://docs.microsoft.com/en-us/learn/browse/?products=powerapps
-            text: Learn PowerApps
+            text: Learn Power Apps
         - title: Power Automate
           links:
           - url: https://docs.microsoft.com/power-automate/

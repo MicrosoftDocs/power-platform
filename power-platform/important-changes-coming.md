@@ -1,5 +1,5 @@
 ---
-title: "Important changes (deprecations) coming in PowerApps, Power Automate and model-driven apps in Dynamics 365"
+title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
 ms.date: "10/23/2019"
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
@@ -13,10 +13,10 @@ ms.author: kvivek
 manager: annbe
 ---
 
-Important changes (deprecations) coming in PowerApps, Power Automate, and model-driven apps in Dynamics 365
+Important changes (deprecations) coming in Power Apps, Power Automate, and model-driven apps in Dynamics 365
 ============================================================
 
-The announcements and deprecations described in this topic apply to PowerApps, Power Automate, and model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
+The announcements and deprecations described in this topic apply to Power Apps, Power Automate, and model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation).
 
 Administrators and IT professionals should use this information to prepare for future releases. This article was first published on June 27, 2017.
 
@@ -27,7 +27,7 @@ notification can span a few years. After removal, the feature or capability will
 Rules feature in canvas apps is deprecated
 ----------------------------------
 
-Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-with-rules) feature in canvas apps in PowerApps is deprecated. Few people have made use of rules in their canvas apps. From feedback collected through research and discussions with makers of PowerApps, the rules feature was confusing, and expressions were easier to learn, use, and debug. For more information about the rules feature deprecation, see [Blog: Canvas Rules feature deprecation](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/).
+Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-with-rules) feature in canvas apps in Power Apps is deprecated. Few people have made use of rules in their canvas apps. From feedback collected through research and discussions with makers of Power Apps, the rules feature was confusing, and expressions were easier to learn, use, and debug. For more information about the rules feature deprecation, see [Blog: Canvas Rules feature deprecation](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/).
 
 
 Legacy web client is deprecated

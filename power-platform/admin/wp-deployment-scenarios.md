@@ -31,7 +31,7 @@ For this scenario there is no need for additional DLP policies or environments. 
 
 A user started building a PowerApp, canvas app or a flow and after adding two connectors, was informed that one of the connectors violated the DLP policies. They approached you for how they could get an exception.
 
-For this scenario you have three primary options; deny the request, add the connector to your existing tenant wide policy or create environment(s) to support the exception. If you decide to update your existing tenant-wide DLP do so understanding it would apply to all environments and all PowerApps and flows; there are not exceptions to that policy.
+For this scenario you have three primary options; deny the request, add the connector to your existing tenant wide policy or create environment(s) to support the exception. If you decide to update your existing tenant-wide DLP do so understanding it would apply to all environments and all Power Apps and flows; there are not exceptions to that policy.
 
 If you decide to allow an exception in a special environment, this could be a shared environment that is used by any users you give an exception to or it could be a separate environment for the user or team needing the exception.
 

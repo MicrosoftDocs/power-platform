@@ -1,6 +1,6 @@
 ---
 title: Trial environments | Microsoft Docs
-description: Get early access to functionalities with PowerApps Preview Program
+description: Get early access to functionalities with Power Apps Preview Program
 author: jimholtz
 ms.reviewer: manasmams
 manager: kvivek
@@ -24,7 +24,7 @@ Currently, you can create two types of Common Data Service environments: Trial o
 Open the **Environments** page to see the environment types you have and the upcoming expiration date for Trial environments:
 
 > [!div class="mx-imgBorder"] 
-> ![PowerApps environments](media/powerapps-environments75b.png "PowerApps environments")
+> ![Power Apps environments](media/powerapps-environments75b.png "Power Apps environments")
 
 ## Convert a Trial environment to production
 
@@ -65,10 +65,10 @@ If you have 1GB of available database capacity, you can convert a Trial environm
 ### What if I don’t have available quota for production environments?
 
 Contact your Office 365 Global admin or Azure Active Directory (Azure AD) tenant admin to:
-- Assign a PowerApps plan to you. 
+- Assign a Power Apps plan to you. 
 - Locate another user who has available production environment quota.
 
-You can also purchase a PowerApps plan.
+You can also purchase a Power Apps plan.
 
 ### Can every Office 365 Global admin or Azure AD tenant admin convert a Trial environment to a production environment?
 
@@ -76,7 +76,7 @@ No. Global admins and Azure AD tenant admins need to have available quota for pr
 
 ### How can I retain my data and resources if I don’t have a way to convert the Trial environment to a production environment?
 
-You can export your resources and data to another environment. If you want to retain them for a longer time, we recommend you create a production environment or an individual environment (with PowerApps Community Plan) and export your resources to that environment. 
+You can export your resources and data to another environment. If you want to retain them for a longer time, we recommend you create a production environment or an individual environment (with Power Apps Community Plan) and export your resources to that environment. 
 
 Here are some guidelines for exporting resources.
 
@@ -89,19 +89,19 @@ We delete Trial environments that haven’t had any activity in the environment 
 
 ### How can I create a production or an individual environment?
 
-You need to have a PowerApps plan that provides production environment creation. <!-- For more information, see [Creating an environment](environments-overview.md#creating-an-environment). -->
+You need to have a Power Apps plan that provides production environment creation. <!-- For more information, see [Creating an environment](environments-overview.md#creating-an-environment). -->
 
-You can create an individual environment by signing up for the [PowerApps Community Plan](https://powerapps.microsoft.com/communityplan/). Note that there are restrictions on sharing apps in individual environments—these environments are meant for personal use only.
+You can create an individual environment by signing up for the [Power Apps Community Plan](https://powerapps.microsoft.com/communityplan/). Note that there are restrictions on sharing apps in individual environments—these environments are meant for personal use only.
 
 ### How do I identify my plan(s)?
 
-To determine your plan(s), select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the PowerApps site, and then select **Plan(s)**.
+To determine your plan(s), select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Power Apps site, and then select **Plan(s)**.
 
 > [!div class="mx-imgBorder"] 
 > ![Select Plans](media/powerapps-plans.png "Select Plans")
 
 ### See also
-[Administer environments in PowerApps](environments-administration.md)<br/>
+[Administer environments in Power Apps](environments-administration.md)<br/>
 [Environments overview](environments-overview.md)<br/>
 [Choose the right plans for your team](https://powerapps.microsoft.com/pricing/)<br/>
 [Licensing overview](pricing-billing-skus.md)<br/>

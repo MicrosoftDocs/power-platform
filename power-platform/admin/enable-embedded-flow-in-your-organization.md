@@ -26,7 +26,7 @@ Microsoft Power Automate lets you create automated processes between your favori
 Environments use the same environment in which the environment resides. For more information about Power Automate environments, see [Using environments within Power Automate](https://docs.microsoft.com/power-automate/environments-overview-admin)
   
 The Power Automate integration feature is not available in the following service or geographic regions.
-- Microsoft PowerApps US Government
+- Microsoft Power Apps US Government
 - Germany
 
 Once the Power Automate integration feature is enabled, the following privileges are added in the **Miscellaneous** section of the **Customization** tab for security roles.  

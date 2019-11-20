@@ -22,7 +22,7 @@ search.app:
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
 > [!NOTE]
-> For introductory licensing information on the new capacity analytics model, see [PowerApps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> For introductory licensing information on the new capacity analytics model, see [Power Apps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
 > Common Data Service storage capacity is not available for Dynamics 365 US Government – GCC and GCC High, DOD, and Microsoft Dynamics 365 online services operated by 21Vianet.
 
@@ -155,7 +155,7 @@ If you have an existing agreement, you are not impacted with the current change.
 ### I'm an existing customer and my renewal is coming up. Will I be impacted?
 Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
 
-### I’m a PowerApps/Power Automate customer and have environments with and without Database. Will they consume storage capacity? 
+### I’m a Power Apps/Power Automate customer and have environments with and without Database. Will they consume storage capacity? 
 Currently, only the environments with Database consume capacity; environments without Database do not. However, once the Power Platform Admin center has the ability to create environments, all environments will consume 1GB. 
 
 ### Why am I no longer getting storage notifications?

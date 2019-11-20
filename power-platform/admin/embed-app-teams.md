@@ -18,16 +18,16 @@ search.app:
 
 # Embed an app in Microsoft Teams
 
-As an admin, you can share apps created in PowerApps to users in your tenant through Microsoft Teams. Upload the apps so they show up for **all** teams in your tenant under the **All tabs section**. 
+As an admin, you can share apps created in Power Apps to users in your tenant through Microsoft Teams. Upload the apps so they show up for **all** teams in your tenant under the **All tabs section**. 
 
-Individuals can share an app they've created in PowerApps in a Team they are a member of by following these [instructions](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app). 
+Individuals can share an app they've created in Power Apps in a Team they are a member of by following these [instructions](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app). 
 
 > [!NOTE]
 > Team custom app policies must be set to allow uploading custom apps. Check out [custom app settings](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings). 
 
 ## Prerequisites
 
-- [Have a PowerApps license](pricing-billing-skus.md)
+- [Have a Power Apps license](pricing-billing-skus.md)
 - Be a tenant administrator 
 - Created a canvas app
 

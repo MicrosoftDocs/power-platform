@@ -146,7 +146,7 @@ Administrators no longer have to wait for the user to sync to the environment an
 
 Administrators can continue to use an Azure AD security group to lock down the list of users synced to an environment. This can be further reinforced by using Azure AD group teams. To lock down environment or app access to restricted environments, the administrator can create separate Azure AD groups for each environment and assign the appropriate security role for these groups. Only these Azure AD group team members have the access rights to the environment.
 
-#### Share PowerApps to team members of an Azure AD group 
+#### Share Power Apps to team members of an Azure AD group 
 
 When canvas and model-driven apps are shared to an Azure AD group team, team members can immediately run the apps.
 
