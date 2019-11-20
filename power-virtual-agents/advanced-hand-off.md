@@ -1,7 +1,7 @@
 ---
 title: "Use hand-off to live agent"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
-ms.date: 11/04/2019
+ms.date: 11/20/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
