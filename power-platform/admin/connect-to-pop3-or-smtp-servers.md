@@ -167,8 +167,8 @@ Follow these steps to connect model-driven apps in Dynamics 365, such as Dynamic
 
 <a name="BKMK_NetworkPorts"></a>   
 
-## Network ports for PowerApps US Government  
- The following ports are open for outbound connections between PowerApps US Government and internet services.  
+## Network ports for Power Apps US Government  
+ The following ports are open for outbound connections between Power Apps US Government and internet services.  
 
 -   80 HTTP  
 
@@ -178,9 +178,9 @@ Follow these steps to connect model-driven apps in Dynamics 365, such as Dynamic
 
 -   995 Secure POP3  
 
-Customizations or email configurations in PowerApps US Government can only use these ports.  
+Customizations or email configurations in Power Apps US Government can only use these ports.  
 
 ### See also  
  [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
  [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
- [Microsoft PowerApps US Government](powerapps-us-government.md)
+ [Microsoft Power Apps US Government](powerapps-us-government.md)

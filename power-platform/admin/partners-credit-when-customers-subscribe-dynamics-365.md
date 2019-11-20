@@ -25,7 +25,7 @@ As a Dynamics 365 partner, you can help your customer sign up for a [!INCLUDE[pn
 ## Sign up for a free trial subscription  
  Using a [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)], which can be your ID or your customer’s, sign up for a free trial of Dynamics 365 apps. The free 30-day trial subscription includes 20 user licenses and 5 gigabytes (GB) of storage. You can activate your customer’s trial subscription as a paying subscription at any time during the first 30 days. If you sign up for the trial subscription using your customer's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)], you won't need to worry about transferring ownership of the account later on.  
 
-For information on signing up for a trial, see [Try PowerApps and Dynamics 365 apps](try-powerapps-dynamics-365.md).
+For information on signing up for a trial, see [Try Power Apps and Dynamics 365 apps](try-powerapps-dynamics-365.md).
   
 > [!IMPORTANT]
 > When signing up for the free trial, note the following:  

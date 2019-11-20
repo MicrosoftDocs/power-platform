@@ -100,17 +100,17 @@ It may take up to 15 minutes to create the first bot within a tenant. While the 
 
 It is possible that you do not have read/write access to any environments. In this case, you will see the error: “You do not have permissions to any environments. Please get access from an administrator.” 
 
-To resolve this issue, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md) to create a new environment. Use that environment to create your bot.
+To resolve this issue, follow the steps in [To create a new Power Apps environment](getting-started-new-environment.md) to create a new environment. Use that environment to create your bot.
 
 ### Why do I get "An unexpected server error occurred"?
 
-This error indicates an issue with your current environment. If refreshing your browser doesn't resolve the issue, follow the link to [create a new PowerApps environment](getting-started-new-environment.md). Use that environment to create your bot.
+This error indicates an issue with your current environment. If refreshing your browser doesn't resolve the issue, follow the link to [create a new Power Apps environment](getting-started-new-environment.md). Use that environment to create your bot.
 
-### The PowerApps environment I created does not show up in the drop-down menu of Power Virtual Agents. Why?
+### The Power Apps environment I created does not show up in the drop-down menu of Power Virtual Agents. Why?
 
 Your environment might not show up in the drop-down menu due to the following reasons:
  - The environment doesn't have a database created. To resolve this, go to [admin.powerapps.com](https://admin.powerapps.com), and create a database in your environment.
- - The environment's region is set to something other than a [supported region](data-location.md). To resolve this, follow the steps in [To create a new PowerApps environment](getting-started-new-environment.md), and create an environment in a supported region.
+ - The environment's region is set to something other than a [supported region](data-location.md). To resolve this, follow the steps in [To create a new Power Apps environment](getting-started-new-environment.md), and create an environment in a supported region.
 
  - The environment didn't finish setting up. To resolve this, retry in a few minutes
 
@@ -122,7 +122,7 @@ When using a trial environment and you want to retain the bots longer than 30 da
 
 To convert to a production environment, the following criteria must be met:
 
-1. You are eligible to use a suitable PowerApps plan that enables you to create production environments.
+1. You are eligible to use a suitable Power Apps plan that enables you to create production environments.
 
 2. You need to have available production quota. There is a fixed number of production environments you can create with your plan.
 

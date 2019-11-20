@@ -13,13 +13,13 @@
         href: signup-question-and-answer.md
       - name: Administer without a license
         href: global-service-administrators-can-administer-without-license.md      
-      - name: Purchase PowerApps 
+      - name: Purchase Power Apps 
         href: signup-for-powerapps-admin.md
-      - name: PowerApps and Power Automate licensing FAQs
+      - name: Power Apps and Power Automate licensing FAQs
         href: powerapps-flow-licensing-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
-  - name: Administer PowerApps
+  - name: Administer Power Apps
     items:
     - name: Overview
       href: admin-guide.md
@@ -31,13 +31,13 @@
       href: determine-org-id-name.md
     - name: Getting started
       items:
-      - name: PowerApps overview
+      - name: Power Apps overview
         href: wp-powerapps-platform-overview.md
-      - name: What's the role of a PowerApps administrator? 
+      - name: What's the role of a Power Apps administrator? 
         href: overview-role-powerapps-admin.md
-      - name: PowerApps enterprise deployment whitepaper
+      - name: Power Apps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
-      - name: Try PowerApps and model-driven apps in Dynamics 365
+      - name: Try Power Apps and model-driven apps in Dynamics 365
         href: try-powerapps-dynamics-365.md
       - name: Move between your apps
         href: quickly-navigate-office-365-app-launcher.md
@@ -69,7 +69,7 @@
           href: analytics-common-data-service.md
         - name: Power Automate analytics
           href: analytics-flow.md
-        - name: PowerApps analytics
+        - name: Power Apps analytics
           href: analytics-powerapps.md
         - name: Capacity
           href: capacity-storage.md
@@ -89,9 +89,9 @@
           href: control-environment-creation.md
         - name: Back up and restore environments
           href: backup-restore-environments.md
-        - name: Create a database in PowerApps
+        - name: Create a database in Power Apps
           href: create-database.md
-        - name: Create an environment in PowerApps
+        - name: Create an environment in Power Apps
           href: create-environment-powerapps.md
         - name: Copy an environment
           href: copy-environment.md
@@ -103,15 +103,15 @@
           href: trial-environments.md     
       #  - name: Manage environments in Power Platform
       #    href: manage-environments.md
-        - name: Manage environments in PowerApps
+        - name: Manage environments in Power Apps
           href: environments-administration.md
-        - name: Regions overview in PowerApps
+        - name: Regions overview in Power Apps
           href: regions-overview.md
         - name: Manage encryption key
           href: manage-encryption-key.md
         - name: "Troubleshooting: Unblock required URLs"
           href: troubleshooting-unblock-urls-required.md
-        - name: PowerApps Preview Program
+        - name: Power Apps Preview Program
           href: preview-environments.md
       - name: Manage settings 
         items:
@@ -321,7 +321,7 @@
         href: wp-environments.md
       - name: Common Data Service 
         href: wp-cds-for-apps.md
-      - name: Types of PowerApps 
+      - name: Types of Power Apps 
         href: wp-types-powerapps.md
       - name: Power Automate
         href: wp-about-flows.md
@@ -453,7 +453,7 @@
              href: troubleshooting-server-based-authentication.md
            - name: Troubleshoot set up with SharePoint online
              href: troubleshoot-set-up-sharepoint-online.md
-      - name: PowerShell support for PowerApps (preview) 
+      - name: PowerShell support for Power Apps (preview) 
         items:
         - name: About PowerShell support
           href: powerapps-powershell.md           
@@ -485,7 +485,7 @@
       items:
       - name: About Application Lifecycle Management 
         href: wp-application-lifecycle-management.md
-      - name: Activity logging for PowerApps 
+      - name: Activity logging for Power Apps 
         href: logging-powerapps.md
     - name: Data integration
       items:
@@ -683,7 +683,7 @@
         href: powerapps-gdpr-dsr-guide-systemlogs.md
       - name: Data integrations for Common Data Service 
         href: data-integration-gdpr-dsr-guide.md
-      - name: PowerApps customer data 
+      - name: Power Apps customer data 
         items:
         - name: Overview
           href: powerapps-gdpr-dsr-guide.md        
@@ -695,7 +695,7 @@
           href: common-data-service-gdpr-dsr-guide.md
     - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
-    - name: PowerApps US Government
+    - name: Power Apps US Government
       href: powerapps-us-government.md
     - name: Datacenter regions
       href: new-datacenter-regions.md

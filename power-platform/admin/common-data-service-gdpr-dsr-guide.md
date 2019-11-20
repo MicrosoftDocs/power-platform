@@ -30,7 +30,7 @@ The European Union (EU) General Data Protection Regulation (GDPR) gives rights t
 
 A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
 
-This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using PowerApps, Power Automate, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Power Apps, Power Automate, and Common Data Service. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
 
 The following actions are covered in this article:
 
@@ -53,18 +53,18 @@ The following actions are covered in this article:
 
 Common Data Service and the previous version of Common Data Service have separate processes for interacting with personal data.
 
-You can identify which type of Common Data Service environment you have by logging into [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and following these steps:
+You can identify which type of Common Data Service environment you have by logging into [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and following these steps:
 
 1. In the **Environment** drop-down list, select your environment.
 2. In the navigation pane, click or tap **Data**, and then click or tap **Entities**.
 
     Your environment is Common Data Service if you see the following entities listed:
 
-    ![PowerApps Entities list](./media/common-data-service-gdpr-dsr-guide/powerapps-entities-list.png)
+    ![Power Apps Entities list](./media/common-data-service-gdpr-dsr-guide/powerapps-entities-list.png)
 
     Your environment is the previous version of Common Data Service if you see the following entities listed:
 
-    ![PowerApps Legacy Entities list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-list.png)
+    ![Power Apps Legacy Entities list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-list.png)
 
 After you determine which type of Common Data Service environment you have, follow the steps in the following sections to identify personal data.
 
@@ -86,31 +86,31 @@ Only Office 365 Global Administrators and Common Data Service System Administrat
 ### Discover
 System Administrators can create multiple Common Data Service environments. These environments can be used for trial, development, or production purposes. Each of these environments has a copy of the system User entity with any custom attributes that may have been added by the system administrator, as well as the user personal data synced from the Microsoft 365 admin center.
 
-System administrators can find a list of all the Common Data Service environments by navigating to the Dynamics 365 Administration Center from the PowerApps Admin center.
+System administrators can find a list of all the Common Data Service environments by navigating to the Dynamics 365 Administration Center from the Power Apps Admin center.
 
-From the [PowerApps Admin center](https://admin.powerapps.com/), do the following:
+From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
 3.	Click or tap **Dynamics 365 Administration Center**.
 
-    ![PowerApps Environment Details](./media/common-data-service-gdpr-dsr-guide/powerapps-environment-details.png)
+    ![Power Apps Environment Details](./media/common-data-service-gdpr-dsr-guide/powerapps-environment-details.png)
 
     A list of all the environments displays.
 
-    ![PowerApps environment Picker](./media/common-data-service-gdpr-dsr-guide/powerapps-instance-picker.png)
+    ![Power Apps environment Picker](./media/common-data-service-gdpr-dsr-guide/powerapps-instance-picker.png)
 
 You can find personal data from Common Data Service users within the following resources:
 
 |Resource | Purpose | Website access | Programmatic access
 | --- | --- | --- | ---
-| Entity record | Known as the system User entity, it stores a user's personal data. | [PowerApps Admin center](https://admin.powerapps.com) | Through the [Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)
-| Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at an entity level. | [PowerApps Admin center](https://admin.powerapps.com) | Through the [Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)
+| Entity record | Known as the system User entity, it stores a user's personal data. | [Power Apps Admin center](https://admin.powerapps.com) | Through the [Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)
+| Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at an entity level. | [Power Apps Admin center](https://admin.powerapps.com) | Through the [Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### User
 User personal data is stored in the Azure Active Directory and is automatically synced to all Common Data Service environments. System administrators cannot update this personal data directly in Common Data Service while the user is active&mdash;they must update the data from within the Office 365 Administration Center. System administrators can add personal data (for example, custom attributes) directly to Common Data Service, but they must manually manage this data.
 
-To find a user and his or her personal data, go to the [PowerApps Admin center](https://admin.powerapps.com/) and do the following:
+To find a user and his or her personal data, go to the [Power Apps Admin center](https://admin.powerapps.com/) and do the following:
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
@@ -122,7 +122,7 @@ To find a user and his or her personal data, go to the [PowerApps Admin center](
 
 5. To view the user's personal data, double-click or double-tap the user's name.
 
-    ![PowerApps User Form](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
+    ![Power Apps User Form](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
 
 #### Audit history
 When [audit tracking](audit-data-user-activity.md) is enabled for an entity in Common Data Service, a user's personal data is logged in the audit history along with the actions that the user performs.
@@ -139,7 +139,7 @@ Once a user record is deleted from Azure Active Directory, System Administrators
 #### System user
 You can export a user's personal data stored in the system User entity to Excel from the user list within the administration center.
 
-From the [PowerApps Admin center](https://admin.powerapps.com/), do the following:
+From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
@@ -152,7 +152,7 @@ From the [PowerApps Admin center](https://admin.powerapps.com/), do the followin
 #### Audit history
 You can take screenshots of the audit history from within the adminisration center.
 
-From the [PowerApps Admin center](https://admin.powerapps.com/), do the following:
+From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
@@ -160,11 +160,11 @@ From the [PowerApps Admin center](https://admin.powerapps.com/), do the followin
 
 3. Go to **Settings** > **Auditing**, and then select **Audit Summary View**.
 
-    ![PowerApps Audit History Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-menu.png)
+    ![Power Apps Audit History Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-menu.png)
 
 4. Locate the user audit record, and then press Alt+PrtScn to take the screenshot.
 
-    ![PowerApps Audit History Details](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-details.png)
+    ![Power Apps Audit History Details](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-details.png)
 
 5. Save the screenshot to a file, which you can then send to the DSR requestor.
 
@@ -178,7 +178,7 @@ When a user record is deleted from the Azure Active Directory, the following mes
 
 *This user’s information is no longer managed by Office 365. You can update this record to respond to DSR requests by removing or replacing all personal data associated with this user.*
 
-From the [PowerApps Admin center](https://admin.powerapps.com/), do the following:
+From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
@@ -193,7 +193,7 @@ From the [PowerApps Admin center](https://admin.powerapps.com/), do the followin
 10. On the user's Summary page, remove all personal data, and then click or tap **Save**.
 
 #### Remove a user's personal data by using Excel
-From the [PowerApps Admin center](https://admin.powerapps.com/), do the following:
+From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
@@ -212,7 +212,7 @@ From the [PowerApps Admin center](https://admin.powerapps.com/), do the followin
 12. Click or tap **Next**, and then click or tap **Submit**.
 
 #### Remove audit history from the Audit Summary View page
-From the [PowerApps Admin center](https://admin.powerapps.com/), do the following:
+From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
@@ -236,17 +236,17 @@ When Common Data Service System Administrators receive a DSR request from an ind
 
 Using an inventory, Common Data Service System Administrators can configure the search entities and fields and then access the Common Data Service environment to discover personal data. For more information, see [Configure Relevance Search](https://go.microsoft.com/fwlink/?linkid=872506).
 
-From the [PowerApps Admin center](https://admin.powerapps.com/), do the following:
+From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
 2. Click or tap **Dynamics 365 Administration Center**, select an environment from the list, click or tap the search button, and then click or tap **Relevance Search**.
 
-    ![PowerApps Relevance Search Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
+    ![Power Apps Relevance Search Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
 
 3. Enter the individual’s personal data in the search box, and then click or tap **Search**.
 
-    ![PowerApps Relevance Search Results](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
+    ![Power Apps Relevance Search Results](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
 
 ### Rectify
 Common Data Service System Administrators can update an individual’s personal data by using the list of results from the  Relevance Search. However, an individual’s personal data may also be stored in other custom entities. Common Data Service System Administrators are responsible for maintaining an inventory of these other custom entities and making the appropriate updates to an individual’s personal data.
@@ -257,22 +257,22 @@ From the Relevance Search results, do the following:
 
 2. Update the individual's personal data where appropriate, and then click or tap **Save**.
 
-    ![PowerApps Account details](./media/common-data-service-gdpr-dsr-guide/powerapps-account-details.png)
+    ![Power Apps Account details](./media/common-data-service-gdpr-dsr-guide/powerapps-account-details.png)
 
 ### Export
 You can take a screenshot of the data and share it with your DSR requestor.
 
-From the [PowerApps Admin center](https://admin.powerapps.com/), do the following:
+From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
 2. Click or tap **Dynamics 365 Administration Center**, select an environment from the list, click or tap the search button, and then click or tap **Relevance Search**.
 
-    ![PowerApps Relevance Search Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
+    ![Power Apps Relevance Search Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
 
 3. Enter the individual’s personal data in the search box, and then click or tap **Search**.
 
-    ![PowerApps Relevance Search Results](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
+    ![Power Apps Relevance Search Results](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
 
 4. Double-click the item in the search results list.
 
@@ -292,7 +292,7 @@ From the Relevance Search results, to the following:
 
 2. In the ribbon, click or tap **Delete**. (Note that **Delete** is disabled if the record cannot be deleted).
 
-    ![PowerApps Account delete](./media/common-data-service-gdpr-dsr-guide/powerapps-account-delete.png)
+    ![Power Apps Account delete](./media/common-data-service-gdpr-dsr-guide/powerapps-account-delete.png)
 
 ## Personal data stored in databases of the previous version of Common Data Service
 
@@ -310,12 +310,12 @@ You can find personal data from users of the previous version of Common Data Ser
 
 |Resource | Purpose | Website access |	Programmatic access
 | --- | --- | --- | ---
-|Entity records	| Captures business transactions in the respective business entity. | [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |  	No
+|Entity records	| Captures business transactions in the respective business entity. | [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |  	No
 
 #### Entity records
 An individual's personal data can be stored in any business entity.
 
-This version of the Common Data Service contains its own database schema and infrastructure. It has its own entities, and you manage these entities in [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+This version of the Common Data Service contains its own database schema and infrastructure. It has its own entities, and you manage these entities in [Power Apps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 To see a list of your entities, do the following:
 
@@ -323,15 +323,15 @@ To see a list of your entities, do the following:
 
 2. In the navigation pane, click or tap **Data**, and then click or tap **Entities**.
 
-    ![PowerApps Legacy Entities](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+    ![Power Apps Legacy Entities](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 
 3. From the list of entities, click or tap an entity (for example, the Account entity), as shown below.
 
-    ![PowerApps Legacy Entities details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+    ![Power Apps Legacy Entities details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
 
 4. Click or tap the **Data** tab. A list of records for the entity displays.
 
-    ![PowerApps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+    ![Power Apps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
 5. Click or tap **Export data**.
 
@@ -350,19 +350,19 @@ To rectify personal data that resides in the Common Data Service environment, yo
 
 Common Data Service System Administrators are responsible for identifying all entities that contain personal data for an individual and repeating the following steps for each of those entities.
 
-From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
+From [Power Apps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
 
 1. In the navigation pane, click or tap **Data**, and then click or tap **Entities**.
 
-    ![PowerApps Legacy Entities](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+    ![Power Apps Legacy Entities](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 
 2. From the list of entities, click or tap an entity (for example, the Account entity), as shown below.
 
-    ![PowerApps Legacy Entities details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+    ![Power Apps Legacy Entities details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
 
 3. Click or tap the **Data** tab. A list of records for the entity displays.
 
-    ![PowerApps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+    ![Power Apps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
 4. Click or tap **Export data**.
 
@@ -372,7 +372,7 @@ From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinad
 
 7. Make the necessary personal data updates and save the spreadsheet.
 
-10.	In PowerApps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
+10.	In Power Apps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
 
 11.	Click **Search**, and then select and open the Excel spreadsheet that you just updated.
 
@@ -381,19 +381,19 @@ From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinad
 ### Export
 You can export personal data from each entity into an Excel spreadsheet and view it.
 
-From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
+From [Power Apps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
 
 1. In the navigation pane, click or tap **Data**, and then click or tap **Entities**.
 
-    ![PowerApps Legacy Entities](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+    ![Power Apps Legacy Entities](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 
 2. From the list of entities, click or tap the entity that you want to export and view (for example, the Account entity), as shown below.
 
-    ![PowerApps Legacy Entities details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+    ![Power Apps Legacy Entities details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
 
 3. Click or tap the **Data** tab. A list of records for the entity displays.
 
-    ![PowerApps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+    ![Power Apps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
 4. Click or tap **Export data**.
 
@@ -406,19 +406,19 @@ You can delete personal data that's stored in entities by using the Export/Impor
 
 Common Data Service System Administrators are responsible for identifying all entities that contain personal data for an individual and repeating the following steps for each of those entities.
 
-From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
+From [Power Apps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), do the following:
 
 1. In the navigation pane, click or tap **Data**, and then click or tap **Entities**.
 
-    ![PowerApps Legacy Entities](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+    ![Power Apps Legacy Entities](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 
 2. From the list of entities, click or tap the entity from which you want to remove personal data (for example, the Account entity), as shown below.
 
-    ![PowerApps Legacy Entities details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+    ![Power Apps Legacy Entities details list](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
 
 3. Click or tap the **Data** tab. A list of records for the entity displays.
 
-    ![PowerApps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+    ![Power Apps Legacy Account data](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
 4. Click or tap **Export data**.
 
@@ -428,7 +428,7 @@ From [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinad
 
 7. Delete the rows containing the personal data that you want to remove from the entity and save the spreadsheet.
 
-10.	In PowerApps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
+10.	In Power Apps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
 
 11.	Click **Search**, and then select and open the Excel spreadsheet that you just updated.
 

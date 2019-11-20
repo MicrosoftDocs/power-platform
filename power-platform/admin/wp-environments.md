@@ -51,7 +51,7 @@ There are multiple types of environments. The type of environment indicates the 
 
 |Type  |Description  |
 |---------|---------|
-|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a PowerApps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
+|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
 |Default     | These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail.        |
 |Sandbox     | These are non-production environments and when associated with a Common Data Service database environment offer features like reset.        |
 |Trial     | Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time.        |
@@ -77,7 +77,7 @@ As a global administrator in the admin portal you will be able to see a list of 
 
 ## Impact of multiple environments on users
 
-While it might be tempting to have users partitioned off into smaller environments it is important to consider the impact on the users in that decision. When users access the PowerApps Canvas App Player or the Power Automate application from the Web Browser or Windows Store the user will select and work within a single environment. By default, that environment will be set to the tenant default environment. Users can change their environment in the players and portals using the environment selector.
+While it might be tempting to have users partitioned off into smaller environments it is important to consider the impact on the users in that decision. When users access the Power Apps Canvas App Player or the Power Automate application from the Web Browser or Windows Store the user will select and work within a single environment. By default, that environment will be set to the tenant default environment. Users can change their environment in the players and portals using the environment selector.
 
 ![Default environment](media/DefaultEnvironment780.png "Default environment")
 

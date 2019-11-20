@@ -1,6 +1,6 @@
 ---
-title: "Types of PowerApps  | MicrosoftDocs"
-description: Types of PowerApps 
+title: "Types of Power Apps  | MicrosoftDocs"
+description: Types of Power Apps 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,13 +15,13 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Types of PowerApps
+# Types of Power Apps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-In the overview we hinted that there are two distinct types of applications PowerApps Canvas apps and PowerApps Model-driven apps and in this section, we will drill deeper into what you should be concerned with as an administrator. First, model-driven apps require a Common Data Service database and are built on top of the data modeled in that database environment. Model-driven apps materialize views and detail screens based on the data structure. Because of this, they offer users a more consistent look and feel from one screen to the next without much effort by the creator. Canvas apps on the other hand can be built with or without a Common Data Service database. They use connectors to access data and services. Canvas apps start with a blank screen like an artist’s canvas and the creator manually lays out each screen. This allows the creator to have complete control of placements of controls on the canvas. Regardless of the two types, apps will be built in the context of a PowerApps environment.
+In the overview we hinted that there are two distinct types of applications Power Apps Canvas apps and Power Apps Model-driven apps and in this section, we will drill deeper into what you should be concerned with as an administrator. First, model-driven apps require a Common Data Service database and are built on top of the data modeled in that database environment. Model-driven apps materialize views and detail screens based on the data structure. Because of this, they offer users a more consistent look and feel from one screen to the next without much effort by the creator. Canvas apps on the other hand can be built with or without a Common Data Service database. They use connectors to access data and services. Canvas apps start with a blank screen like an artist’s canvas and the creator manually lays out each screen. This allows the creator to have complete control of placements of controls on the canvas. Regardless of the two types, apps will be built in the context of a Power Apps environment.
 
-![Types of PowerApps](media/types-of-powerapps.png "Types of PowerApps")
+![Types of Power Apps](media/types-of-powerapps.png "Types of Power Apps")
 
 It is also possible as the scenarios get more complex that your solution contains both types of apps.
 
@@ -39,11 +39,11 @@ Both types of applications can be used as web applications from mainstream web b
 
 ## Versions of the application
 
-When you save a PowerApps canvas app it creates a new version of the application and it is published for the owner of the application and anyone that has permission to edit the app. Any other user that that application is shared with will still see the “live” version. Once ready, the new version can be published by explicitly clicking on the “Publish this version” link.
+When you save a Power Apps canvas app it creates a new version of the application and it is published for the owner of the application and anyone that has permission to edit the app. Any other user that that application is shared with will still see the “live” version. Once ready, the new version can be published by explicitly clicking on the “Publish this version” link.
 
 ![App versions](media/app-versions.png "App versions")
 
-In the event the new version has problems, a prior version can be restored by clicking the Restore button next to that version. In the example above, there are two versions of an app. If the Restore button is clicked on version 1, PowerApps will create a new version 3 of the application that is identical to version 1. In this way history and audit information is preserved and the maker could elect to return to version 2 and fix issues at a later date. This light weight application lifecycle management (ALM) is perfect for productivity applications built by your organizations users without introducing them to the additional overhead of deploying to multiple environments.
+In the event the new version has problems, a prior version can be restored by clicking the Restore button next to that version. In the example above, there are two versions of an app. If the Restore button is clicked on version 1, Power Apps will create a new version 3 of the application that is identical to version 1. In this way history and audit information is preserved and the maker could elect to return to version 2 and fix issues at a later date. This light weight application lifecycle management (ALM) is perfect for productivity applications built by your organizations users without introducing them to the additional overhead of deploying to multiple environments.
 
 For model-driven applications there is also a concept of publish that happens after change of most visual components in the application. For example, if you change the application navigation, users in the same environment will not see the change until Publish is completed. Restore is typically accomplished with model-driven applications by exporting a solution version and re-importing it to restore. 
 
