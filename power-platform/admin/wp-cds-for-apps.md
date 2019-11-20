@@ -35,7 +35,7 @@ On the other hand, if you don’t see the Create my Database link then the Commo
 
 ![Manage settings in Dynamics 365 Administration center](media/manage-in-d365-admin-center.png "Manage settings in Dynamics 365 Administration center")
 
-From the Dynamics 365 Admin center you can open the environment as well as manage and view some of the environment details. The actions you can take on each environment depends currently on if it started as an environment for model-driven apps in Dynamics 365 or if you started it with just the core Common Data Service entities. For core Common Data Service environments, you can only copy or set notifications. On Common Data Service environments you also have the ability to reset the environment if it is of type sandbox, and potentially convert an environment to a sandbox to then test or reset.
+From the Dynamics 365 Admin center you can open the environment as well as manage and view some of the environment details. The actions you can take on each environment depends currently on if it started as an environment for model-driven apps in Dynamics 365 or if you started it with just the core Common Data Service entities. For core Common Data Service environments, you can only copy or set notifications. On Common Data Service environments you also have the ability to reset the environment if it is of type Sandbox, and potentially convert an environment to a Sandbox to then test or reset.
 
 ### See also
 [Microsoft Learn: Get started with Common Data Service](https://docs.microsoft.com/learn/modules/get-started-with-powerapps-common-data-service/)<br />
