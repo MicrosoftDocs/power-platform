@@ -52,5 +52,10 @@ Block access by location is set using Azure Active Directory (AD) Conditional Ac
 1. Create a Named location. See [Define locations](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-location#define-locations). 
 2. Create a Conditional Access policy. See [Create a Conditional Access policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-location#create-a-conditional-access-policy).
 
+   For **Step 6. Under Cloud apps or actions**, select the Common Data Service application.
+
+  > [!div class="mx-imgBorder"] 
+  > ![](media/restrictedip-cds.png "Restricted IP CDS cloud app")
+
 ### See also  
  [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)   
