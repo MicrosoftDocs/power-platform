@@ -13,7 +13,7 @@ ms.custom: authoring
 ms.collection: virtual-agent
 ---
 
-# Use entities to streamline bot conversations
+# Use entities and slot filling in Power Virtual Agents bots
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -28,7 +28,7 @@ With the knowledge granted by entities, a bot can smartly recognize the relevant
 
 To help understand that notion, the **Money** entity can be used as an example. 
 
-1. In Power Virtual Agents, go to the **Entities** tab on the side navigation.
+1. In Power Virtual Agents, go to the **Entities** tab on the side navigation pane.
 
    ![Entities tab](media/entities-menu.png)
 
@@ -51,7 +51,7 @@ For instance, let's say you want to build a bot for an outdoor store. In this ca
  
 To do this, you need to create a custom entity. In this case, you can create an entity that gives the bot the knowledge of all outdoor product categories. 
 
-1. In Power Virtual Agents, go to the **Entities** tab on the side navigation.
+1. In Power Virtual Agents, go to the **Entities** tab on the side navigation pane.
 
    ![Go to Entities tab](media/entities-menu.png)
 
@@ -84,8 +84,8 @@ For example, for the "hiking" product category, you can add "trekking" and "moun
 ![Synonyms](media/entities-5(draft).png)
 
 
-## Use entities in a dialog
-Now that you’ve done the work of giving the bot the knowledge about outdoor gear by creating that product category entity and a few other custom entities, you can start to use them when constructing a dialog. 
+## Use entities in a conversation
+Now that you’ve done the work of giving the bot the knowledge about outdoor gear by creating that product category entity and a few other custom entities, you can start to use them when constructing a bot conversation. 
 
 1. Go to the [**Topics page**](getting-started-create-topics.md) for the bot you want to edit.
 
@@ -132,7 +132,7 @@ Essentially, slot filling has happened by inserting the extracted entity “Hiki
 
 You can also use what is known as "proactive slot filling" where the user can specify multiple pieces of information that map to multiple entities. The bot is able to understand what information belongs to which entity automatically. In cases where it is unsure of the intended mapping, it will prompt the user to be more specific by providing choices.
 
-In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear, and also provides a second piece of information—the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
+In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear and also provides a second piece of information—the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
 
 ![Variable watch window](media/entities-13(draft).png)
 
@@ -140,7 +140,7 @@ In tracking between topics, you can see the bot takes in this user input, and in
 
 The bot is always actively listening to the user input, remembering information upfront so it can skip unnecessary steps as appropriate.
 
-Let’s restart the testing again and try another case. In this round you can add a couple more question nodes asking for things like the type of hiking gear as well as the price range (using the **Money** entity). 
+Let’s restart the testing again and try another case. In this round, you can add a couple more question nodes asking for things like the type of hiking gear as well as the price range (using the **Money** entity). 
 
 This time when the product category question is presented, instead of telling the bot only the product category, the user can say "I want to buy a pair of hiking boots under $100". In this example, the bot is not only able to route to the correct hiking product category path, but also actively fill the slots asking for the type of hiking gear and the target price range information. 
 

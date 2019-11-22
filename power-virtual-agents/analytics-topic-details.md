@@ -1,24 +1,30 @@
 ---
-title: "Topic details page"
-description: "Learn about the Power Virtual Agents Topic details page."
-ms.date: 05/29/2019
+title: "Analyze topic performance in Power Virtual Agents"
+description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
+ms.date: 11/12/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
-author: m-hartmann
-ms.author: mhart
+author: iaanw
+ms.author: iawilt
 manager: shellyha
+ms.cusom: analysis
+ms.collection: virtual-agent
 ---
 
-# Topic details page
+# Analyze topic usage in Power Virtual Agents
+
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
+
 The topic details page provides a view into the performance of individual topics and how they can be improved.
 
-![Topic details page](media/topic-details-page.png)
+
 
 You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-CSAT.md) pages:
+
 
 * [Escalation rate drivers (Summary page)](analytics-summary.md#escalation-rate-drivers-chart)
 * [Abandon rate drivers (Summary page)](analytics-summary.md#abandon-rate-drivers-chart)
@@ -27,7 +33,17 @@ You can display the topic details page by selecting the **Detail** link in one o
 
 ![Topic details link](media/topic-details-link.png)
 
-The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page. 
+>[!IMPORTANT]
+>You need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.
+
+
+The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page.
+
+![From the Topic details page, select the Analytics tab](media/analytics-topics-details.png)
+
+You can also hover over each topic in the Topics page and select the **Go to analytics** icon. 
+
+![Hovering shows the Go to analytics icon](media/analytics-topics.png)
 
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:
 
@@ -35,9 +51,9 @@ The topic details page includes a variety of charts with graphical views of a to
 * [Impact Summary charts](#impact-summary-charts)
 * [Topic Volume by Day chart](#topic-volume-by-day-chart)
 
-## Topic Summary charts
+## Topic summary charts
 
-The Topic Summary charts summarize the topic's performance indicators for the specified time period and the percent change over the period.
+The Topic summary charts summarize the topic's performance indicators for the specified time period and the percent change over the period.
 
 Description | Details
 ----------- | -------
@@ -51,7 +67,7 @@ A blue up-and-down indicator below the value indicates the percent change in a p
 
 ## Impact summary charts
 
-The Impact Summary charts summarize the impact of the topic on key performance indicators for the specified time period.
+The Impact summary charts summarize the impact of the topic on key performance indicators for the specified time period.
 
 Description | Details
 ----------- | -------
@@ -62,4 +78,4 @@ Abandon rate impact | The topic's abandon-rate impact score. The abandon-rate im
 
 ## Topic Volume by Day chart
 
-The Topic Volume by Day chart provides a graphical view of the number of sessions for the topic over the specified time period.
+The Topic volume by day chart provides a graphical view of the number of sessions for the topic over the specified time period.

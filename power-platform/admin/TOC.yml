@@ -13,13 +13,13 @@
         href: signup-question-and-answer.md
       - name: Administer without a license
         href: global-service-administrators-can-administer-without-license.md      
-      - name: Purchase PowerApps 
+      - name: Purchase Power Apps 
         href: signup-for-powerapps-admin.md
-      - name: PowerApps and Power Automate licensing FAQs
+      - name: Power Apps and Power Automate licensing FAQs
         href: powerapps-flow-licensing-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
-  - name: Administer PowerApps
+  - name: Administer Power Apps
     items:
     - name: Overview
       href: admin-guide.md
@@ -31,13 +31,13 @@
       href: determine-org-id-name.md
     - name: Getting started
       items:
-      - name: PowerApps overview
+      - name: Power Apps overview
         href: wp-powerapps-platform-overview.md
-      - name: What's the role of a PowerApps administrator? 
+      - name: What's the role of a Power Apps administrator? 
         href: overview-role-powerapps-admin.md
-      - name: PowerApps enterprise deployment whitepaper
+      - name: Power Apps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
-      - name: Try PowerApps and model-driven apps in Dynamics 365
+      - name: Try Power Apps and model-driven apps in Dynamics 365
         href: try-powerapps-dynamics-365.md
       - name: Move between your apps
         href: quickly-navigate-office-365-app-launcher.md
@@ -45,6 +45,8 @@
         href: sign-in-office-365-apps.md
       - name: Manage subscription with Microsoft 365 admin center
         href: use-office-365-admin-center-manage-subscription.md
+      - name: How do I check my online service health?
+        href: check-online-service-health.md
       - name: Enabling preview features
         href: what-are-preview-features-how-do-i-enable-them.md
       - name: Unified Interface
@@ -67,7 +69,7 @@
           href: analytics-common-data-service.md
         - name: Power Automate analytics
           href: analytics-flow.md
-        - name: PowerApps analytics
+        - name: Power Apps analytics
           href: analytics-powerapps.md
         - name: Capacity
           href: capacity-storage.md
@@ -87,9 +89,9 @@
           href: control-environment-creation.md
         - name: Back up and restore environments
           href: backup-restore-environments.md
-        - name: Create a database in PowerApps
+        - name: Create a database in Power Apps
           href: create-database.md
-        - name: Create an environment in PowerApps
+        - name: Create an environment in Power Apps
           href: create-environment-powerapps.md
         - name: Copy an environment
           href: copy-environment.md
@@ -101,15 +103,15 @@
           href: trial-environments.md     
       #  - name: Manage environments in Power Platform
       #    href: manage-environments.md
-        - name: Manage environments in PowerApps
+        - name: Manage environments in Power Apps
           href: environments-administration.md
-        - name: Regions overview in PowerApps
+        - name: Regions overview in Power Apps
           href: regions-overview.md
         - name: Manage encryption key
           href: manage-encryption-key.md
         - name: "Troubleshooting: Unblock required URLs"
           href: troubleshooting-unblock-urls-required.md
-        - name: PowerApps Preview Program
+        - name: Power Apps Preview Program
           href: preview-environments.md
       - name: Manage settings 
         items:
@@ -129,20 +131,28 @@
             href: settings-privacy-security.md
         - name: Business settings
           items:
-          - name: Business closures  #Don't move to PPAC, Customer Service setting
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/set-when-business-closed-csh
-          - name: Calendar #Don't move to PPAC, Busn Mgmt setting
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/work-fiscal-year-settings
-          - name: Currencies #Don't move to PPAC, Busn Mgmt setting
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-transactions-with-multiple-currencies
+          - name: Business closures 
+            href: https://docs.microsoft.com/dynamics365/customer-service/set-when-business-closed-csh
+          - name: Calendar 
+            href: work-fiscal-year-settings.md
+          - name: Connection roles
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
+          - name: Currencies 
+            href: manage-transactions-with-multiple-currencies.md
+          - name: Queues
+            href: https://docs.microsoft.com/dynamics365/customer-service/set-up-queues-manage-activities-cases
           - name: Regional formatting
             href: customize-regional-options-admins.md
+          - name: Relationship roles
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
         - name: Users + permissions settings
           items:
           - name: Business units
             href: create-edit-business-units.md
           - name: Hierarchy security
             href: hierarchy-security.md
+          - name: Mobile configuration
+            href: https://docs.microsoft.com/dynamics365/mobile-app/setup-mobile-offline-for-admin
           - name: Positions
             href: hierarchy-security.md#position-hierarchy
           - name: Security roles
@@ -151,13 +161,37 @@
             href: create-team-template-add-entity-form.md
           - name: Users 
             href: create-users-assign-online-security-roles.md
-        - name: Encryption
+        - name: Audit and logs
+          items: 
+          - name: Audit log management
+            href: audit-data-user-activity.md
+          - name: Audit settings
+            href: system-settings-dialog-box-auditing-tab.md
+          - name: Audit summary view
+            href: audit-data-user-activity.md
+          - name: Entity and field audit settings
+            href: audit-data-user-activity.md
+          - name: System jobs
+            href: monitor-manage-system-jobs.md
+        - name: Templates
           items:
-          - name: Encryption
-            href: data-encryption.md
-          - name: Manage encryption key
-            href: manage-encryption-key.md 
-        - name: Email settings
+          - name: Access team templates
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/about-team-templates
+          - name: Article templates
+            href: create-templates-articles.md
+          - name: Contract templates
+            href: https://docs.microsoft.com/dynamics365/customer-service/create-entitlement-define-support-terms-customer
+          - name: Data import templates
+            href: download-template-data-import.md
+          - name: Document templates
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/admin/work-with-templates
+          - name: Email signatures
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-signature-dynamics-365-email-queue
+          - name: Email templates
+            href: create-templates-email.md
+          - name: Mail merge templates
+            href: work-mail-merge-templates.md
+        - name: Email 
           items:
           - name: Email settings
             href: settings-email.md
@@ -167,12 +201,34 @@
             href: create-forward-mailboxes-edit-mailboxes.md
           - name: Server profiles 
             href: supported-email-service-configurations-server-side-synchronization.md
-        - name: Services settings
+        - name: Integration
           items:
+          - name: Enable server-based SharePoint integration
+            href: configure-server-based-authentication-sharepoint-on-premises.md
+          - name: Document management settings
+            href: enable-sharepoint-document-management-specific-entities.md
+          #- name: Manage document suggestions
+          #  href: 
           - name: Microsoft Social Engagement
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/administer-microsoft-social-engagement
+            href: connect-microsoft-social-engagement.md
+          - name: OneDrive for business
+            href: enable-onedrive-for-business.md 
+          - name: OneNote
+            href: set-up-onenote-integration-in-dynamics-365.md
+          - name: Outlook
+            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook.md
+          - name: SharePoint document locations
+            href: create-edit-document-location-records.md
+          - name: SharePoint sites
+            href: edit-existing-sharepoint-site-records.md
+          - name: Synchronization
+            href: system-settings-dialog-box-synchronization-tab.md
+          - name: Yammer
+            href: connect-yammer.md
         - name: Data management settings
           items:
+          - name: Add ready-to-use business process
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/add-ready-use-business-processes
           - name: Announcements
             href: settings-announcements.md
           - name: Auto numbering
@@ -185,12 +241,30 @@
             href: import-data-all-record-types.md
           - name: Data maps
             href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map
-          - name: Duplicate detection
-            href: turn-duplicate-detection-rules-off-whole-organization.md                                             
-          - name: Templates
-            href: download-template-data-import.md
-          - name: Cascading transaction processing
-            href: async-cascading.md
+          - name: Duplicate detection jobs
+            href: run-bulk-system-jobs-detect-duplicate-records.md
+          - name: Duplicate detection rules
+            href: set-up-duplicate-detection-rules-keep-data-clean.md
+          - name: Duplicate detection settings
+            href: turn-duplicate-detection-rules-off-whole-organization.md
+          - name: Export field translations
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/export-customized-entity-field-text-translation
+          - name: Import field translations
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/import-translated-entity-field-text
+          - name: Imports
+            href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/import-accounts-leads-other-data 
+          - name: Sample data
+            href: add-remove-sample-data.md
+        - name: Encryption
+          items:
+          - name: Encryption
+            href: data-encryption.md
+        - name: Resources
+          items: 
+          - name: All legacy settings
+            href: set-up-business-management-options.md
+          - name: Dynamics 365 for Outlook
+            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
         - name: System Settings
           items: 
           - name: Overview
@@ -247,7 +321,7 @@
         href: wp-environments.md
       - name: Common Data Service 
         href: wp-cds-for-apps.md
-      - name: Types of PowerApps 
+      - name: Types of Power Apps 
         href: wp-types-powerapps.md
       - name: Power Automate
         href: wp-about-flows.md
@@ -314,7 +388,7 @@
           href: prevent-data-loss.md
         - name: Introduction to data groups
           href: introduction-to-data-groups.md
-        - name: Restrict access with trusted IP rules
+        - name: Block access by location with Azure AD Conditional Access
           href: restrict-access-online-trusted-ip-rules.md
       - name: Encryption
         items:
@@ -379,7 +453,7 @@
              href: troubleshooting-server-based-authentication.md
            - name: Troubleshoot set up with SharePoint online
              href: troubleshoot-set-up-sharepoint-online.md
-      - name: PowerShell support for PowerApps (preview) 
+      - name: PowerShell support for Power Apps (preview) 
         items:
         - name: About PowerShell support
           href: powerapps-powershell.md           
@@ -411,7 +485,7 @@
       items:
       - name: About Application Lifecycle Management 
         href: wp-application-lifecycle-management.md
-      - name: Activity logging for PowerApps 
+      - name: Activity logging for Power Apps 
         href: logging-powerapps.md
     - name: Data integration
       items:
@@ -609,7 +683,7 @@
         href: powerapps-gdpr-dsr-guide-systemlogs.md
       - name: Data integrations for Common Data Service 
         href: data-integration-gdpr-dsr-guide.md
-      - name: PowerApps customer data 
+      - name: Power Apps customer data 
         items:
         - name: Overview
           href: powerapps-gdpr-dsr-guide.md        
@@ -621,7 +695,7 @@
           href: common-data-service-gdpr-dsr-guide.md
     - name: Compliance and data privacy 
       href: wp-compliance-data-privacy.md
-    - name: PowerApps US Government
+    - name: Power Apps US Government
       href: powerapps-us-government.md
     - name: Datacenter regions
       href: new-datacenter-regions.md

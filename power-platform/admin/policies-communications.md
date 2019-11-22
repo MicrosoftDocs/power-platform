@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/02/2019
+ms.date: 11/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -93,7 +93,7 @@ To limit the impact on users, the maintenance window is planned according to the
 | SAM           | crm2.dynamics.com | 12 AM to 10 AM |
 | CAN           | crm3.dynamics.com | 1 AM to 10 AM |
 | EUR           | crm4.dynamics.com | 6 PM to 3 AM |
-| FRA           | crm4.dynamics.com | 6 PM to 3 AM | 
+| FRA           | crm12.dynamics.com | 6 PM to 3 AM | 
 | APJ           | crm5.dynamics.com | 3 PM to 8 PM |
 | OCE           | crm6.dynamics.com | 11AM to 9PM |
 | JPN           | crm7.dynamics.com | 10 AM to 7 PM |
@@ -182,4 +182,4 @@ The [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/ma
 Once a customer has purchased model-driven apps in Dynamics 365, we send a series of email communications to administrators during the first year. These communications direct customers to several resources that will assist both administrators and users to successfully adopt and expand their use of model-driven apps in Dynamics 365.  This information can be found in the [Microsoft 365 Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) as well.
   
 ### Notice about Online Policies
-Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/legal/intellectualproperty/onlinedisclaimer.aspx).
+Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/en-us/legal/intellectualproperty/mtl/onlinedisclaimer.aspx).

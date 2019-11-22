@@ -52,4 +52,4 @@ There is a set of database settings for each environment that provides default o
 For the updates to take effect, sign out of the environment and sign in again. 
 
 > [!NOTE]
-> Updating environment database settings impacts the environment and should be done with caution. You should first test out the database settings in a non-Production environment. 
+> Updating environment database settings impacts the environment and should be done with caution. You should first test out the database settings in a non-production environment. 

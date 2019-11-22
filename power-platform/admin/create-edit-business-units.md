@@ -94,5 +94,5 @@ Make sure you have the System Administrator or System Customizer security role o
 4. In the **Change Business Unit** dialog box, use the **Lookup** button (![Lookup button](media/lookup-4.png)) to select a new business unit, and then select **OK**.  
   
 ### See also  
- [Delete a business unit](https://docs.microsoft.com/dynamics365/customer-engagement/admin/delete-business-unit)   
- [Assign a business unit a different parent business](https://docs.microsoft.com/dynamics365/customer-engagement/admin/assign-business-unit-different-parent)
+ [Delete a business unit](delete-business-unit.md)   
+ [Assign a business unit a different parent business](assign-business-unit-different-parent.md)

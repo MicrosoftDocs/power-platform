@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
-In 2018, we introduced [Unified Interface](https://docs.microsoft.com/powerapps/user/unified-interface), the latest generation of web app design for the PowerApps model-driven apps and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. It brings the best in usability, accessibility, functionality, and speed to every user. Improve how your business applications run by using only the Unified Interface. To learn how to enable it, see [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode). For more information, see [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and [FAQs](#faqs).
+In 2018, we introduced [Unified Interface](https://docs.microsoft.com/powerapps/user/unified-interface), the latest generation of web app design for the Power Apps model-driven apps and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. It brings the best in usability, accessibility, functionality, and speed to every user. Improve how your business applications run by using only the Unified Interface. To learn how to enable it, see [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode). For more information, see [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and [FAQs](#faqs).
 
 ## When does the Unified Interface Only experience become available, and which environments are affected?
 
@@ -32,8 +32,8 @@ All new Common Data Service environments and Common Data Service environments, i
 |Environment types  |Release date  |
 |---------|---------|
 |New Trial environments     | December 12, 2018         |
-|New Trial and Production Common Data Service environments     | February 2, 2019        |
-|New Production and Sandbox environments     | June 8, 2019       |
+|New Trial and production Common Data Service environments     | February 2, 2019        |
+|New production and Sandbox environments     | June 8, 2019       |
 
 ### Existing environments
 
@@ -57,7 +57,7 @@ Users with multiple apps see the list of apps available to them, and can navigat
 > ![Unified interface apps](media/uci-apps-home-page.png "Unified interface apps")
 
 > [!NOTE]
-> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn’t affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Signing in and signing out (for iOS users)](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/dynamics-365-phones-tablets-users-guide#signing-in-and-signing-out-for-ios-users) and [Signing in and signing out (for Android users)](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/dynamics-365-phones-tablets-users-guide#signing-in-and-signing-out-for-android-users).
+> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn’t affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Sign in and sign out](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide#sign-in-and-sign-out).
 
 ### Run all apps in Unified Interface Only mode
 
@@ -120,7 +120,7 @@ This setting is preset to Off for your environment, and you are unaffected by th
 
 ### I want to use Unified Interface for all the apps, but still want *Dynamics 365 – custom* to open in the legacy web client. Is that possible?
 
-You can achieve this by [setting all apps to be Unified Interface apps](https://docs.microsoft.com/dynamics365/customer-engagement/admin/update-apps-to-unified-interface). Note that this won't change the home page experience to Unified Interface. Unified Interface Only mode is a prerequisite to get the [new home page experience](#new-immersive-home-page-experience-on-web).
+You can achieve this by [setting all apps to be Unified Interface apps](update-apps-to-unified-interface.md). Note that this won't change the home page experience to Unified Interface. Unified Interface Only mode is a prerequisite to get the [new home page experience](#new-immersive-home-page-experience-on-web).
 
 ### How do I resolve errors seen while using a *Dynamics 365 - custom* legacy app in Unified Interface?
 If there are issues with Unified Interface, [please let us know](https://docs.microsoft.com/power-platform/admin/get-help-support).

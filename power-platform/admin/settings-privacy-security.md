@@ -44,11 +44,11 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Never send an error report to Microsoft|Default: Not selected. |  
 > |**Blocked attachments**| |
 > |Set blocked file extensions for attachments (semicolon separated)|Prevent upload or download of certain attachment types that are considered dangerous. Separate file extensions with a semicolon.<br /><br />Default extensions: ade; adp; app; asa; ashx; asmx; asp; bas; bat; cdx; cer; chm; class; cmd; com; config; cpl; crt; csh; dll; exe; fxp; hlp; hta; htr; htw; ida; idc; idq; inf; ins; isp; its; jar; js; jse; ksh; lnk; mad; maf; mag; mam; maq; mar; mas; mat; mau; mav; maw; mda; mdb; mde; mdt; mdw; mdz; msc; msh; msh1; msh1xml; msh2; msh2xml; mshxml; msi; msp; mst; ops; pcd; pif; prf; prg; printer; pst; reg; rem; scf; scr; sct; shb; shs; shtm; shtml; soap; stm; tmp; url; vb; vbe; vbs; vsmacros; vss; vst; vsw; ws; wsc; wsf; wsh|
-> |**Session expiration**|More information: [Security enhancements: User session and access management](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management)> |  
+> |**Session expiration**|More information: [Security enhancements: User session and access management](user-session-management.md)> |  
 > |Set custom session timeout|Default: Off. Select **On** to specify values different from default values.|
 > |Enter maximum session length|Default: 1440. After the time you set is reached, users must re-authenticate to model-driven apps in Dynamics 365.|  
 > |How long before the session expires do you want to show a timeout warning?|Default: 20. After the time you set is reached, users receive an expiration warning.|  
-> |**Inactivity timeout**|More information: [Inactivity timeout](https://docs.microsoft.com/dynamics365/customer-engagement/admin/user-session-management#inactivity-timeout) |  
+> |**Inactivity timeout**|More information: [Inactivity timeout](user-session-management.md#inactivity-timeout) |  
 > |Set inactivity timeout|Default: Off. Enable to automatically sign out a user. |  
 
 ## Replace the privacy statement for the organization  
