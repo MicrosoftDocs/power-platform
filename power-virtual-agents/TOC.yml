@@ -6,6 +6,8 @@
      href: fundamentals-get-started.md
    - name: Working with environments
      href: environments-first-run-experience.md
+   - name: Support
+     href: support.md
 - name: Author and edit
   items:
    - name: Key concepts - Authoring
@@ -86,5 +88,4 @@
      href: gdpr-discovery.md
    - name: Where an organization's data is located
      href: data-location.md
-- name: Support
-  href: support.md
+
