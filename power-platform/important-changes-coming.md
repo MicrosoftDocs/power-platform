@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: "10/23/2019"
+ms.date: "11/21/2019"
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -154,7 +154,7 @@ If you are currently using the Dynamics 365 for Blackberry App together with Mob
 Service scheduling in Dynamics 365 Customer Service is deprecated
 ---------------------------------------------------------------------
 
-The existing service scheduling functionality is deprecated and will be removed in a future major release. The new scheduling experience, built atop Universal Resource Scheduling (URS), is now available on the Unified Interface.
+The existing service scheduling functionality is deprecated, and will no longer be available on Oct 1, 2020. The new scheduling experience, built atop Universal Resource Scheduling (URS), is now available in the Unified Interface.
 
 Existing service scheduling users will be provided advance notice for a timebound migration to the new scheduling capabilities.
 
