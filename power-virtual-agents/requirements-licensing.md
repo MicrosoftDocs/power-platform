@@ -58,14 +58,14 @@ You can pruchase Power Virtual Agents licenses for your organization from the [M
 4. In the flyout panel that opens, select the checkbox next to **Power Virtual Agents user license**. Select **Save changes**. Repeat these steps to add more users, or exist the Microsoft 365 admin center if you're finished.
 
   > [!NOTE]
-  > To simplify User License management you can assign licenses to an AAD security group. [Learn more](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/licensing-groups-assign)
+  > To simplify User License management you can assign licenses to an AAD security group. [Learn more](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
 5. The selected users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
 
 ## Trial plans
 Users in your organization can trial Power Virtual Agents for a limited time period.
 
-You can choose to disable or enable the ability for users in your organization to sign up for a trial by modifying the **AllowAdHocSubscriptions** flag in [your organization settings](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-self-service-signup). 
+You can choose to disable or enable the ability for users in your organization to sign up for a trial by modifying the **AllowAdHocSubscriptions** flag in [your organization settings](/azure/active-directory/users-groups-roles/directory-self-service-signup). 
 
 
 ## Billing unit 
@@ -80,18 +80,19 @@ A billed session is an interaction between the customer and the bot and represen
 
 2. When a user intentionally ends or closes a chat session. For web this means when the user closes the tab with the chat open. For persistent channels such as Microsoft Teams or Facebook, this means the user didn't write any message for more than 30 minutes.
 
-3. When a bot is unable to answer the question adequately and the interaction is [escalated to a live agent](how-to-handoff.md).
+3. When a bot is unable to answer the question adequately and the interaction is [escalated to a live agent](advanced-hand-off.md).
 
 On top of the above scenarios, there are two additional limitations of a billed session:
 
 - One billed session can last 60 minutes at its longest.
 - One bulled session can contain a maximum of 100 conversational turns. 
 
->[!WARNING]Is a turn including both what the user says the bot's answer? Or just what the user says?
+>[!WARNING]
+>Is a turn including both what the user says the bot's answer? Or just what the user says?
 
 
 ## Using Power Automate with a Power Virtual Agents license
-In order to have unlimited flow runs in Power Automate, you need to create a flow [using the link from within the Power Virtual Agents app](how-to-flow.md). 
+In order to have unlimited flow runs in Power Automate, you need to create a flow [using the link from within the Power Virtual Agents app](advanced-flow.md). 
 
 Flow runs created using this template do not accrue to your overall Power Automate quotas. 
 
