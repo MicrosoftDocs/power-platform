@@ -31,11 +31,11 @@ Manage your Sandbox environments from the Power Platform Admin center.
    > ![](media/sandbox-environments.png "Environments page")
 
 ## Provision a Sandbox environment
-To provision a Sandbox environment, you change a Production environment to Sandbox.
+To provision a Sandbox environment, you change a production environment to Sandbox.
 
 1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
 
-2. From the left-side menu, select **Environments**, and then select a Production environment.
+2. From the left-side menu, select **Environments**, and then select a production environment.
 
 3. Select **Edit**
 
@@ -63,7 +63,7 @@ Reset a Sandbox environment to delete and re-provision it. Consider a reset when
 
  **An example scenario**  
   
- Thomas is looking at the storage consumed by the various Contoso environments and is getting concerned that they’ll run out of space in one of their Production environments.  He’d like to free up some space so he can give the Production environment some additional storage.  He’s also been notified that the Legal department has set a retention policy on the use of production data in the test environment.  
+ Thomas is looking at the storage consumed by the various Contoso environments and is getting concerned that they’ll run out of space in one of their production environments.  He’d like to free up some space so he can give the production environment some additional storage.  He’s also been notified that the Legal department has set a retention policy on the use of production data in the test environment.  
   
  After contacting Isaac, Thomas resets the Sales department’s complete Sandbox environment. The environment is re-provisioned to factory settings and ready for future use as a Sandbox environment for a future project.  
  

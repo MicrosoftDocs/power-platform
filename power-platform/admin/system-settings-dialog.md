@@ -23,5 +23,3 @@ Use the **System Settings** dialog box to specify system-level settings for your
 > Getting to the **System Settings** dialog box can vary based on the type of app you're using (Unified Interface or the legacy web client). You might need to adjust the procedural steps in this section to reflect your app type. See [Settings](../admin/admin-settings.md#app-settings).
 >
 > Also, we are moving some settings from model-driven apps in Dynamics 365, and the Dynamics 365 Admin center to the Power Platform Admin center. See [Environment settings are moving](../admin/admin-settings.md#environment-settings-are-moving).
-
-Help for the **System Settings** dialog box for Customer Engagement (on-premises) users is available here: [System Settings dialog box](/dynamics365/customer-engagement/on-premises/admin/system-settings-dialog-box-general-tab)

@@ -9,7 +9,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication"
+ms.custom: "publication, azure"
 ms.collection: virtual-agent
 ---
 
@@ -29,7 +29,7 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 
 
-1. In Power Virtual Agents, select **Manage** on the side navigation panel, and then go to the **Channels** tab. 
+1. In Power Virtual Agents, select **Manage** on the side navigation pane, and then go to the **Channels** tab. 
 
 1. Select the **Mobile app** tile to open the configuration window.
 
@@ -47,7 +47,7 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 If your goal is to connect to Azure Bot Service channels, besides following the instructions here, your developers can learn more at [Connect your bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md).
 
->[!WARNING]
+>[!IMPORTANT]
 >Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
 
 ### Prerequisites
@@ -64,8 +64,8 @@ Code snippets used in this document are from:
 The instructions in this document reference the following:
 - [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0)
 - [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens)
-- [Contextual variables available upon hand-off](how-to-handoff.md#contextual-variables-available-upon-hand-off)
-- [Microsfot Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
+- [Contextual variables available upon hand-off](advanced-hand-off.md#contextual-variables-available-upon-hand-off)
+- [Microsoft Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
 
 ### Retrieve your Power Virtual Agent bot parameters
 To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
@@ -185,7 +185,7 @@ The following example uses samples from the [Connector sample code](https://gith
       }
     ```
 
-3. Retrieve the bot's response using the same `token` and `converstaionId`. The retrived Direct Line response activities contains both the user's and bot's messages. You can filter response activites by your bot's name to get only the bot's response message.  
+3. Retrieve the bot's response using the same `token` and `converstaionId`. The retrieved Direct Line response activities contains both the user's and bot's messages. You can filter response activities by your bot's name to get only the bot's response message.  
 
     ```C#
       // Use the same token to create a directLineClinet
@@ -231,7 +231,7 @@ The following example uses samples from the [Connector sample code](https://gith
 After starting a conversation with the bot, the conversation JSON payload uses the standard Microsoft Bot Framework Direct Line activity. You can learn more at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0).
 
 ### Handle hand-off activity
-If your application needs to hand off to a live agent provider, you will need to handle the hand-off activity. Hand-off activity is sent when the "Transfer to agent" node is hit. In the Direct Line Channel, an activity with `Type=Handoff` will be sent to the client. You can learn more on the payload of the hand-off `activity at [Contextual variables available upon hand-off](how-to-handoff.md#contextual-variables-available-upon-hand-off)
+If your application needs to hand off to a live agent provider, you will need to handle the hand-off activity. Hand-off activity is sent when the "Transfer to agent" node is hit. In the Direct Line Channel, an activity with `Type=Handoff` will be sent to the client. You can learn more on the payload of the hand-off activity at [Contextual variables available upon hand-off](advanced-hand-off.md#contextual-variables-available-upon-hand-off)
 
 ### Trigger a welcome message
 If you want your bot to send the Greeting system topic automatically when a user starts a conversation, you can send an activity with `Type=event` and `Name=startsConversation`.

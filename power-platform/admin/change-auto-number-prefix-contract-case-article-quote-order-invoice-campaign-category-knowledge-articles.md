@@ -34,7 +34,7 @@ Make sure you have the System Administrator or System Customizer security role o
   
      Prefixes are system-wide and are used for all system-generated numbers for the selected record type. If you change the prefix for a record type, it won’t change the prefix of numbers that are already assigned.  
   
-     The prefix of the tracking token for email messages is set in the System Settings area. More information: [System Settings dialog box - Email tab](https://docs.microsoft.com/dynamics365/customer-engagement/admin/system-settings-dialog-box-email-tab)  
+     The prefix of the tracking token for email messages is set in the System Settings area. More information: [System Settings dialog box - Email tab](system-settings-dialog-box-email-tab.md)  
   
 4.  In the **Number** box, enter the starting number.  
   

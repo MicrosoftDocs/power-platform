@@ -47,10 +47,9 @@ However, when you use Dynamics 365 App for Outlook to track or set the regarding
   
  [!INCLUDE[cc_privacy_crm_sync_to_outlook](../includes/cc-privacy-crm-sync-to-outlook.md)]
   
- [!INCLUDE[cc_privacy_crm_outlook1](../includes/cc-privacy-crm-outlook1.md)]
+ [!INCLUDE[cc_privacy_crm_outlook1](../includes/cc-privacy-crm-outlook1.md)] 
   
 ### See also 
  [Integrate your email system](../admin/integrate-synchronize-your-email-system.md)   
- [Dynamics 365 App for Outlook User's Guide](https://docs.microsoft.com/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide)   
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
  [Set personal options that affect tracking and synchronization between model-driven apps in Dynamics 365 and Outlook or Exchange](set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md)

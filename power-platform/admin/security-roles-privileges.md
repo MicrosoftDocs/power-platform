@@ -44,7 +44,7 @@ The colored circles on the security role settings page define the access level f
 |![Access level none](../admin/media/access-level-none.png "Access level none")|**None**. No access is allowed.|  
   
 > [!IMPORTANT]
-> To ensure that users can view and access all areas of the web application, such as entity forms, the nav bar, or the command bar, all security roles in the organization must include the Read privilege on the `Web Resource` entity. For example, without read permissions, a user won’t be able to open a form that contains a web resource and will see an error message similar to this: “Missing `prvReadWebResource` privilege.” [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit a security role](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-security-role)  
+> To ensure that users can view and access all areas of the web application, such as entity forms, the nav bar, or the command bar, all security roles in the organization must include the Read privilege on the `Web Resource` entity. For example, without read permissions, a user won’t be able to open a form that contains a web resource and will see an error message similar to this: “Missing `prvReadWebResource` privilege.” [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit a security role](create-edit-security-role.md)  
 
 ### Record-level privileges  
  [!INCLUDE [pn-powerapps](../includes/pn-powerapps.md)] and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, use eight different record-level privileges that determine the level of access a user has to a specific record or record type.  
@@ -63,7 +63,7 @@ The colored circles on the security role settings page define the access level f
 ## Overriding security roles  
  The owner of a record or a person who has the Share privilege on a record can share a record with other users or teams. Sharing can add Read, Write, Delete, Append, Assign, and Share privileges for specific records.  
   
- Teams are used primarily for sharing records that team members ordinarily couldn't access. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage security, users and teams](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-teams).  
+ Teams are used primarily for sharing records that team members ordinarily couldn't access. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage security, users and teams](manage-teams.md).  
   
  It’s not possible to remove access for a particular record. Any change to a security role privilege applies to all records of that record type.  
 
@@ -76,7 +76,7 @@ The colored circles on the security role settings page define the access level f
 
 A security role can be set to provide a team member with direct Basic-level access user privileges. A team member can create records that they own and records that have the team as owner when the Basic access level for Create is given. When the Basic access level for Read is given, team member can access records that are owned by both that team member and by the team.  
 
-This member’s privilege inheritance role is applicable to [Owner](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-teams#about-owner-teams) and Azure Active Directory (Azure AD) [Group teams](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-teams#about-group-teams). 
+This member’s privilege inheritance role is applicable to [Owner](manage-teams.md#about-owner-teams) and Azure Active Directory (Azure AD) [Group teams](manage-teams.md#about-group-teams). 
 
 ### Create a security role with team member’s privilege inheritance
 

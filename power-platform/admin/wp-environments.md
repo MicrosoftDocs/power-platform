@@ -51,7 +51,7 @@ There are multiple types of environments. The type of environment indicates the 
 
 |Type  |Description  |
 |---------|---------|
-|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a PowerApps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
+|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
 |Default     | These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail.        |
 |Sandbox     | These are non-production environments and when associated with a Common Data Service database environment offer features like reset.        |
 |Trial     | Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time.        |
@@ -77,13 +77,13 @@ As a global administrator in the admin portal you will be able to see a list of 
 
 ## Impact of multiple environments on users
 
-While it might be tempting to have users partitioned off into smaller environments it is important to consider the impact on the users in that decision. When users access the PowerApps Canvas App Player or the Power Automate application from the Web Browser or Windows Store the user will select and work within a single environment. By default, that environment will be set to the tenant default environment. Users can change their environment in the players and portals using the environment selector.
+While it might be tempting to have users partitioned off into smaller environments it is important to consider the impact on the users in that decision. When users access the Power Apps Canvas App Player or the Power Automate application from the Web Browser or Windows Store the user will select and work within a single environment. By default, that environment will be set to the tenant default environment. Users can change their environment in the players and portals using the environment selector.
 
 ![Default environment](media/DefaultEnvironment780.png "Default environment")
 
 Having users’ applications and other assets spread across multiple environments will result in the user frequently having to adjust their environment setting. The best user experience is when the user stays within a single environment for most of their daily use.
 
-In the mobile applications the user is presented with a consolidated list of applications across the environments they have access to. Each application indicates the environment. This reduces the need to switch, however it introduces the need for the user to choose the correct application. For example, imagine if you had an application Device Ordering and it was deployed to environment Test and environment Production. If the user had access to both environments it would show up twice on the list. The user would have to differentiate between the two. Some of this can be minimized by only granting access as needed and then only temporarily to the Test environment.
+In the mobile applications the user is presented with a consolidated list of applications across the environments they have access to. Each application indicates the environment. This reduces the need to switch, however it introduces the need for the user to choose the correct application. For example, imagine if you had an application Device Ordering and it was deployed to environment Test and environment production. If the user had access to both environments it would show up twice on the list. The user would have to differentiate between the two. Some of this can be minimized by only granting access as needed and then only temporarily to the Test environment.
 
 ## Impact of multiple environments on Connectors
 
@@ -96,4 +96,4 @@ Applications that use the Common Data Service connector currently only can commu
 When thinking about how to organize your environments you should consider where your data lives. Having a single production environment with your Common Data Service is the simplest configuration as it makes accessing data from apps the easiest. Having multiple environments, each with their own Common Data Service database, might make sense in a few different scenarios. First, users have data that is geographically separated, and they don’t share across those boundaries. Second, data from different applications that have conflicting incompatible use of Common Data Service. Third, where users are building personal or team productivity applications that need Common Data Service data but as an organization you aren’t ready to mix that with the rest of your enterprise data.
 
 ### See also
-[Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/power-platform/create-manage-environments)
+[Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/modules/create-manage-environments/)

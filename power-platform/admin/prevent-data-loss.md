@@ -1,6 +1,6 @@
 ---
 title: Manage data loss prevention (DLP) policies | Microsoft Docs
-description: Walkthrough of how to manage data loss prevention policies for PowerApps.
+description: Walkthrough of how to manage data loss prevention policies for Power Apps.
 author: manasmams
 manager: kvivek
 ms.service: power-platform
@@ -17,9 +17,9 @@ search.app:
 ---
 
 # Manage data loss prevention (DLP) policies
-An organization's data is critical to its success. Its data needs to be readily available for decision-making, but it needs to be protected so that it isn't shared with audiences that shouldn't have access to it. To protect this data, PowerApps lets you create and enforce data loss prevention (DLP) policies that define which consumer connectors specific business data can be shared with. For example, an organization that uses PowerApps may not want its business data that's stored in SharePoint to be automatically published to its Twitter feed.
+An organization's data is critical to its success. Its data needs to be readily available for decision-making, but it needs to be protected so that it isn't shared with audiences that shouldn't have access to it. To protect this data, Power Apps lets you create and enforce data loss prevention (DLP) policies that define which consumer connectors specific business data can be shared with. For example, an organization that uses Power Apps may not want its business data that's stored in SharePoint to be automatically published to its Twitter feed.
 
-To create, edit, or delete DLP policies, you must have either Environment Admin or Azure Active Directory Tenant Admin permissions. For more information, see [Environments administration in PowerApps](environments-administration.md).
+To create, edit, or delete DLP policies, you must have either Environment Admin or Azure Active Directory Tenant Admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
 For instructions on how to create a DLP policy, see [Create a data loss prevention (DLP) policy](create-dlp-policy.md).
 
@@ -52,4 +52,4 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
 
 ## Next steps
 * [Learn more about environments](environments-administration.md)
-* [Learn more about Microsoft PowerApps](/powerapps/maker/canvas-apps/getting-started)
+* [Learn more about Microsoft Power Apps](/powerapps/maker/canvas-apps/getting-started)

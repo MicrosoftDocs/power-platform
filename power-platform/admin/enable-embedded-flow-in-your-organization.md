@@ -23,10 +23,10 @@ Microsoft Power Automate lets you create automated processes between your favori
 
 ![Lead record with Power Automate integration](media/flow-integration.png)
 
-Environments use the same environment in which the environment resides. For more information about Power Automate environments, see [Using environments within Power Automate](https://flow.microsoft.com/documentation/environments-overview-admin/)
+Environments use the same environment in which the environment resides. For more information about Power Automate environments, see [Using environments within Power Automate](https://docs.microsoft.com/power-automate/environments-overview-admin)
   
 The Power Automate integration feature is not available in the following service or geographic regions.
-- Microsoft PowerApps US Government
+- Microsoft Power Apps US Government
 - Germany
 
 Once the Power Automate integration feature is enabled, the following privileges are added in the **Miscellaneous** section of the **Customization** tab for security roles.  
@@ -39,7 +39,7 @@ Once the Power Automate integration feature is enabled, the following privileges
   
 - A Power Automate connection for model-driven apps in Dynamics 365 (recommended). [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Connectors](https://docs.microsoft.com/connectors/)  
   
-- One or more flows created in the Power Automate environment to use with model-driven apps in Dynamics 365. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using model-driven apps in Dynamics 365](https://flow.microsoft.com/documentation/connection-dynamics365/)  
+- One or more flows created in the Power Automate environment to use with model-driven apps in Dynamics 365. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using model-driven apps in Dynamics 365](https://docs.microsoft.com/power-automate/connection-dynamics365)  
   
 ## Enable or disable Power Automate in your organization  
  By default, all security roles allow users to run flows on the records that they have access to.  
@@ -63,4 +63,4 @@ Once the Power Automate integration feature is enabled, the following privileges
    >  
  
 ### See also  
- [Create and edit web resources](/dynamics365/customer-engagement/customize/create-edit-web-resources.md)
+ [Create and edit web resources](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-web-resources)
