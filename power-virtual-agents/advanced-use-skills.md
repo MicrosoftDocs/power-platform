@@ -21,9 +21,9 @@ Azure Bot Framework Skills can be used in your Power Virtual Agents bots to add 
 To use Skills, you'll need to [create them with the Azure Bot Builder](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0), and you'll need to [configure and add the Skill in Power Virtual Agents](configuration-add-skills.md)
 
 ## Add a Skill to bot conversations
-Once you've created your virtual agent, built a Skill and added the Skill to your bot, you are ready to use Skill actions as part of your bot conversation.
+Once you've created your virtual agent, built a Skill and added the Skill to your bot, you're ready to use Skill actions as part of your bot conversation.
 
-**Add Skill into a conversation:**
+**Add a Skill into a conversation:**
 
 
 1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
@@ -36,17 +36,13 @@ Once you've created your virtual agent, built a Skill and added the Skill to you
 
 1. In the node selection window, select **Call an action**, and then select the Skill you want to add. 
 
-(IMAGE SHOWING ACTION PICKER)
->[!WARNING]
->Please provide image
-
 1. If your Skill has inputs, assign variables to those inputs. Also, if your Skill emits outputs to variables, you can use those variables in any nodes that follow. 
 
-1. Select **Save** to persist your changes to the topic.
+    >[!NOTE]
+    >Skills can accept simple data types (integer, boolean, string) and complex data types (as JSON strings). 
+    >If you need to extract variables from complex data types, you must [use Power Automate](advanced-flow.md) to further parse and break down complex JSON strings into key value pairs for use in your bot.
 
->[!NOTE]
->Skills can accept simple data types (integer, boolean, string) and complex data types (as JSON strings). 
->If you need to extract variables from complex data types, you must [use Power Automate](advanced-flow.md) to further parse and break down complex JSON strings into key value pairs for use in your bot.
+1. Select **Save** to persist your changes to the topic.
 
 1. You should [test your bot](authoring-test-bot.md) to make sure it's using the Skill properly.
 
