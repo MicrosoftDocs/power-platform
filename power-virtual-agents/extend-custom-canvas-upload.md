@@ -219,11 +219,10 @@ BOT_TENANT_ID=3fde45d-32we-3342-ewer-err3fr32564
 
 ## Further reading
 
+-  [Add Power Virtual Agent bot to Azure Bot Service channels](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-azure-bot-service-channels)
+-  [Power Virtual Agent Documentation and Resources](https://docs.microsoft.com/power-virtual-agents/overview)
 -  [Setting up a new Bot Channel Registration](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0)
 -  [Generating a Direct Line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
 -  [Enhanced Direct Line Authentication feature](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/)
 -  [Azure Storage: Setting up storage lifecycle management](https://docs.microsoft.com/azure/storage/blobs/storage-lifecycle-management-concepts)
-- [Microsoft Flow Documentation and Resources](https://docs.microsoft.com/flow/)
--  [Add Power Virtual Agent bot to Azure Bot Service channels](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-azure-bot-service-channels)
-
-
+-  [Microsoft Flow Documentation and Resources](https://docs.microsoft.com/flow/)
