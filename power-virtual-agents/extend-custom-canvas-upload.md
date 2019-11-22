@@ -120,8 +120,8 @@ During development, you will run your bot locally. Azure Bot Services will send 
 1. Select **Demo Website** and copy the bot's URL to your clipboard.
 
 1. Retrieve the `botid` and `bottenentid` from the URL, you will need to place these within `/bot/.env`
-      -  `BOT_ID=8ef39aa5-81a8-460e-8a15-2ebc338ce456`  
-      -  `BOT_TENANT_ID=816d751c-c4fd-48b0-bc7d-898eed92e911`
+      -  `BOT_ID=<your bot ID>`  
+      -  `BOT_TENANT_ID=<your bot tenant ID>`
 
 
 ## Prepare and run the code
@@ -172,15 +172,7 @@ After all attachments are uploaded to Azure Storage, we will send an event activ
 >For example, using reverse-proxy, removing files more frequently, or capping the size that your system can handle per hour based on certain demographic data.
 
 
-#### Using an event activity for uploaded files
 
-Currently, DirectLineJS (0.11.4) will inspect every outgoing activity. If the `attachments` array is not empty, it will read the `contentURL` from every attachment, download the content as `Blob` using the `contentURL`, and then send a multipart message to the Direct Line channel. Today, the `contentURL` is constructed by converting a `File` object into a URL through the [`URL.createObjectURL` function](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) and is prefixed with `blob:` protocol.
-
-Thus, if we use `attachments` array to send blob URLs to the bot, DirectLineJS will try to re-download every file and send it to Direct Line channel again.
-
-As there are no workarounds for this behavior, we will need to use a mechanism other than the `attachments` array.
-
-Since revoking the URL created through `createObjectURL` is not trivial, there is a possibility that in the future we might change this behavior in DirectLineJS to use `ArrayBuffer` or `Blob` directly.
 
 ### Processing attachments
 
@@ -219,8 +211,8 @@ MICROSOFT_APP_PASSWORD=a1b2c3d4e5f6
 ```
 AZURE_STORAGE_ACCOUNT_NAME=youraccountname
 AZURE_STORAGE_ACCOUNT_KEY=a1b2c3d
-BOT_ID=8ef39aa5-81a8-460e-8a15-2ebc338ce456
-BOT_TENANT_ID=816d751c-c4fd-48b0-bc7d-898eed92e911 
+BOT_ID=21wejwl2-2j34-dse3-12df-1123rgted34
+BOT_TENANT_ID=3fde45d-32we-3342-ewer-err3fr32564 
 ```
 
 
@@ -231,6 +223,7 @@ BOT_TENANT_ID=816d751c-c4fd-48b0-bc7d-898eed92e911
 -  [Generating a Direct Line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
 -  [Enhanced Direct Line Authentication feature](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/)
 -  [Azure Storage: Setting up storage lifecycle management](https://docs.microsoft.com/azure/storage/blobs/storage-lifecycle-management-concepts)
+- [Microsoft Flow Documentation and Resources](https://docs.microsoft.com/flow/)
 -  [Add Power Virtual Agent bot to Azure Bot Service channels](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-azure-bot-service-channels)
 
 

@@ -77,8 +77,8 @@ During development, you will run your bot locally. Azure Bot Services will send 
 1. Select **Demo Website** and copy the bot's URL to your clipboard.
 
 1. Retrieve the `botid` and `bottenentid` from the URL, you will need to place these within `/bot/.env`
-      -  `BOT_ID=8ef39aa5-81a8-460e-8a15-2ebc338ce456`  
-      -  `BOT_TENANT_ID=816d751c-c4fd-48b0-bc7d-898eed92e911`    
+      -  `BOT_ID=<your bot ID>`  
+      -  `BOT_TENANT_ID=<your bot tenant ID>`    
 
 
 ## Prepare and run the code
@@ -126,8 +126,8 @@ MICROSOFT_APP_PASSWORD=a1b2c3d4e5f6
 ### `/web/.env`
 
 ```
-BOT_ID=8ef39aa5-81a8-460e-8a15-2ebc338ce456
-BOT_TENANT_ID=816d751c-c4fd-48b0-bc7d-898eed92e911 
+BOT_ID=21wejwl2-2j34-dse3-12df-1123rgted34
+BOT_TENANT_ID=3fde45d-32we-3342-ewer-err3fr32564
 ```
 
 
@@ -136,4 +136,5 @@ BOT_TENANT_ID=816d751c-c4fd-48b0-bc7d-898eed92e911
 -  [Setting up a new Bot Channel Registration](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0)
 -  [Generating a Direct Line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
 -  [Enhanced Direct Line Authentication feature](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/)
+-  [Microsoft Flow Documentation and Resources](https://docs.microsoft.com/flow/)
 -  [Add Power Virtual Agent bot to Azure Bot Service channels](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-azure-bot-service-channels)
