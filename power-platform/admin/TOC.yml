@@ -103,6 +103,8 @@
           href: trial-environments.md     
       #  - name: Manage environments in Power Platform
       #    href: manage-environments.md
+        - name: Working with environments and Power Apps
+          href: working-with-environments.md
         - name: Manage environments in Power Apps
           href: environments-administration.md
         - name: Regions overview in Power Apps
