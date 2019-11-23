@@ -34,6 +34,8 @@
      href: advanced-end-user-authentication.md
    - name: Add actions using Power Automate
      href: advanced-flow.md
+   - name: Use Azure Bot Framework Skills
+     href: advanced-use-skills.md
    - name: Trigger hand-off to a live agent
      href: advanced-hand-off.md
 - name: Publish and integrate
@@ -74,6 +76,8 @@
      href: extend-custom-canvas-connect.md
    - name: Connect your bot to Azure Storage
      href: extend-custom-canvas-upload.md
+   - name: Enable and configure Azure Bot Framework Skills
+     href: configuration-add-skills.md
 - name: Respond to GDPR Data Subject Rights (DSR) requests
   items:
    - name: Key concepts - GDPR compliance
