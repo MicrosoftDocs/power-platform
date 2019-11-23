@@ -59,6 +59,7 @@ You can add your bot to a live website as an IFrame. Your live website can be a 
 3. Provide the snippet to your web developer to add the bot to your website.
 
 **Add bot to your Power Apps Portal**
+
 You can easily add the bot to your Power Apps Portal with the iFrame from previous section.
 
 1. Go to Power Apps Portal designer and add an IFrame component into your Portal.
