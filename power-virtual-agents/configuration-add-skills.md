@@ -20,7 +20,7 @@ Power Virtual Agents allows you to extend your bot using Azure Bot Framework Ski
 This article is intended for System administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). Once a Skill has been registered, Bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
 
 ## Configure a Skill for use in Power Virtual Agents
-First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy hthe Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
+First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
 Before registering the Skill, provide the bot's ID to your Skill developer to authorize the bot to call actions in the Skill.
 
