@@ -48,7 +48,7 @@ To share the demo website link, simply copy the demo website URL and share it wi
 
 You can add your bot to a live website as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint or Yammer site.
 
-**Get IFrame snippet:**
+**Add bot to your website**
 
 1. Select **Manage** on the side navigation pane, and then go to the **Channels** tab.
 
@@ -56,6 +56,17 @@ You can add your bot to a live website as an IFrame. Your live website can be a 
 
     ![Add bot to custom website](media/channel-custom-website.png)
 
+3. Provide the snippet to your web developer to add the bot to your website.
+
+**Add bot to your Power Apps Portal**
+You can easily add the bot to your Power Apps Portal with the iFrame from previous section.
+
+1. Go to Power Apps Portal designer and add an IFrame component into your Portal.
+    ![Add IFrame to Power Apps Portal](media/channel-custom-website-portal-iframe.png)
+
+2. Provide only the URL link section of the snippet from previous section to the **Link** field of the IFrame component.
+    ![Add bot IFrame to Power Apps Portal](media/channel-custom-website-portal-pva-iframe.png)
+    
 
 
 
