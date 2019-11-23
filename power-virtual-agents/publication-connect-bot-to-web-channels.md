@@ -65,7 +65,7 @@ You can easily add the bot to your Power Apps Portal with the iFrame from previo
 1. Go to Power Apps Portal designer and add an IFrame component into your Portal.
     ![Add IFrame to Power Apps Portal](media/channel-custom-website-portal-iframe.png)
 
-2. Provide only the URL link section of the snippet from previous section to the **Link** field of the IFrame component.  The link format will be https://powerva.microsoft.com/webchat/bots/{your bot ID}
+2. Provide only the URL link section (https://powerva.microsoft.com/webchat/bots/{your_bot_ID}) of the snippet from previous section to the **Link** field of the IFrame component.  
     ![Add bot IFrame to Power Apps Portal](media/channel-custom-website-portal-pva-iframe.png)
     
 
