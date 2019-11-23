@@ -1,6 +1,6 @@
 ---
-title: "Add Skills to Power Virtual Agents bot conversations"
-description: "Author complex bot conversations with Azure Bot Framework Skills that enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
+title: "Use Azure Bot Framework Skills in Power Virtual Agents"
+description: "Extend your bot and author complex bot dialogs using pro-code tools to build Azure Bot Framework Skills that enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "authoring, extensibility, integration, extend bot, bot framework, skills, custom capabilities"
 ms.date: 11/22/2019
 ms.service:
@@ -18,13 +18,12 @@ ms.collection: virtual-agent
 
 Azure Bot Framework Skills can be used in your Power Virtual Agents bots to add conversational actions within any topic. For example, you can embed re-usable converational multi-turn actions to perform complex tasks like booking appointments, managing tasks, and more.
 
-To use Skills, you'll need to [create them with the Azure Bot Builder](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0), and you'll need to [configure and add the Skill in Power Virtual Agents](configuration-add-skills.md)
-
 ## Add a Skill to bot conversations
-Once you've created your virtual agent, built a Skill and added the Skill to your bot, you're ready to use Skill actions as part of your bot conversation.
+First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy the Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
+
+Next, [register Skill in Power Virtual Agent](configuration-add-skills.md).
 
 **Add a Skill into a conversation:**
-
 
 1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
 
@@ -45,7 +44,5 @@ Once you've created your virtual agent, built a Skill and added the Skill to you
 1. Select **Save** to persist your changes to the topic.
 
 1. You should [test your bot](authoring-test-bot.md) to make sure it's using the Skill properly.
-
-
 
 
