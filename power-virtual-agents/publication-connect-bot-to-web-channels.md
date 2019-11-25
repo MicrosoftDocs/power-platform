@@ -2,7 +2,7 @@
 title: "Configure a Power Virtual Agents bot for a live or demo website"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
-ms.date: 11/9/2019
+ms.date: 11/25/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -62,13 +62,22 @@ You can also add the bot to your Power Apps portal.
 
 **Add bot to your Power Apps Portal:**
 
-1. Go to Power Apps Portal Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your Portal.
+1. In the Power Virtual Agents Portal, select **Manage** on the side navigation pane, and then go to the **Channels** tab.
+
+1. Select **Custom website** and then copy only the URL of the IFframe snippet: this is the URL defined by `src="<URL>"`.
+
+    ![Select only the src URL](media/channel-custom-website-url.png)
+
+1. Go to Power Apps Portal Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your Portal by selecting **Components** on the side navigation pane, and then **IFrame**.
+
     ![Add IFrame to Power Apps Portal](media/channel-custom-website-portal-iframe.png)
 
-2. Provide only the URL link section of the snippet from previous section to the **Link** field of the IFrame component. You can adjust the size of the chat window by adjusting the **Width** and **Height** field.
+1. Paste in the URL you copied from the IFrame snippet into the **Link** field of the IFrame component. You can adjust the size of the chat window by adjusting the **Width** and **Height** field.
+
     ![Add bot IFrame to Power Apps Portal](media/channel-custom-website-portal-pva-iframe.png)
     
-3. You can interact with your bot by clicking on **Browse website** at the top right corner.
+1. You can interact with your bot by clicking on **Browse website** at the top right corner.
+
     ![Add bot IFrame to Power Apps Portal](media/channel-custom-website-portal-browse-website.png)
 
 
