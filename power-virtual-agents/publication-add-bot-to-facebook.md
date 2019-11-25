@@ -200,6 +200,7 @@ When you do not want the bot to be reachable in Facebook Messenger or Facebook W
    ![Delete Facebook channel](media/channel-fb-delete-channel.png)
 
 ## Known limitations
+- You will need to create a new bot if the Customer Satisfaction (CSAT) survey shows up as a non-interactable card image to access the latest CSAT content.
 - It might take a few minutes before the bot becomes reachable by users on Facebook pages after the Facebook channel is added.
 - After removing the Facebook channel, it might take a few minutes before the bot is removed fully and becomes unreachable on Facebook Messenger and Facebook Workplace.
 - After removing a Facebook page, it might take a few minutes before the bot becomes unreachable by visitors to the removed page through Facebook Messenger.
