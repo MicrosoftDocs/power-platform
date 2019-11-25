@@ -34,7 +34,7 @@ If you're an administrator of your Power Virtual Agents tenant, you can use the 
 
 1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
 
-2. In the side navigation pane, select **Help + Support**, and then select **New support request***.
+2. In the side navigation pane, select **Help + Support**, and then select **New support request**.
 
 For detailed information about the help and support experience in the Power Platform Admin center, see [Get Help + Support](/power-platform/admin/get-help-support) at the Power Platform admin documentation library.
 
