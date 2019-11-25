@@ -28,20 +28,16 @@ You can pruchase Power Virtual Agents licenses for your organization from the [M
 
 **Purchase base and user licences:**
 
+  > ![Note]
+  > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
 
 2. On the side navigation pane, expand the **Billing** menu and then select **Purchase services**.
 
-3. Search for *Power Virtual Agents*.
+3. Search for the subscription names, select them and on the confirmation screen, select the number of licenses you would like to purchase.
 
-4. Select **Power Virtual Agents** and **Power Virtual Agents user license**.
-
-5. On the confirmation screen, select the number of licenses you would like to purchase.
-
-6. Complete the check out process.
-
->[!WARNING]
->I think we should remove these instructions and just keep the line at the start of the doc.
+4. Complete the check out process.
 
 **Give indidvidual users access:**
 
@@ -85,11 +81,9 @@ A billed session is an interaction between the customer and the bot and represen
 On top of the above scenarios, there are two additional limitations of a billed session:
 
 - One billed session can last 60 minutes at its longest.
-- One billed session can contain a maximum of 100 conversational turns. 
+- One billed session can contain a maximum of 100 conversational turns. (one turn is defined as one exchange of a user and the bot)
 
->[!WARNING]
->Is a turn including both what the user says the bot's answer? Or just what the user says?
-
+Please note that, at the moment, you will be billed even if you chat with the bot in the embedded chat canvas. 
 
 ## Using Power Automate with a Power Virtual Agents license
 In order to have unlimited flow runs in Power Automate, you need to create a flow [using the link from within the Power Virtual Agents app](advanced-flow.md). 
