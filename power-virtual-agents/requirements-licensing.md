@@ -85,7 +85,7 @@ A billed session is an interaction between the customer and the bot and represen
 On top of the above scenarios, there are two additional limitations of a billed session:
 
 - One billed session can last 60 minutes at its longest.
-- One bulled session can contain a maximum of 100 conversational turns. 
+- One billed session can contain a maximum of 100 conversational turns. 
 
 >[!WARNING]
 >Is a turn including both what the user says the bot's answer? Or just what the user says?
