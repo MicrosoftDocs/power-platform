@@ -86,6 +86,7 @@ In addition to directly installing the Microsoft Teams app package, you can use 
 
 
 ## Known limitations
+- You will need to create a new bot if the Customer Satisfaction (CSAT) survey shows up as a card with missing icons to access the latest CSAT content.
 - The icon and name of your bot on Microsoft Teams is not customizable by Microsoft Teams App Studio when sideloaded and published through the Microsoft Teams Tenant Apps Catalog. The Microsoft Teams App Studio bot icon and name customization will be applied to bots that are published through AppSource. Learn more at the Microsoft Teams [Publishing checklist](/microsoftteams/platform/publishing/office-store-checklist).
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Currently, if your bot supports [end-user authentication](advanced-end-user-authentication.md), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](/office/dev/store/validation-policies).
