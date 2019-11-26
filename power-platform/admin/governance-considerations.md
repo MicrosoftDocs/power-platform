@@ -86,8 +86,8 @@ Today, Azure AD global tenant admins can perform the following:
     - Power Apps Admin PowerShell cmdlets
     - Power Apps management connectors
 1. Access the Power Apps and Power Automate admin analytics for all environments in the tenant:
-    - aka.ms/paadminanalytics  
-    - aka.ms/flowadminanalytics 
+    - <https://aka.ms/paadminanalytics>  
+    - <https://aka.ms/flowadminanalytics> 
 
 ### Consider Microsoft Intune
 
