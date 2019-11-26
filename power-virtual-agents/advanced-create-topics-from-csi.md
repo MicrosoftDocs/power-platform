@@ -1,6 +1,6 @@
 ---
-title: "Automate topics to Power Virtual Agents"
-description: "Learn how to automate topics discovered by Dynamics 365 Customer Service Insights to Power Virtual Agents"
+title: "Automate topic creation in Power Virtual Agents"
+description: "Automate the creation of topics in Power Virtual Agents bots by using support topics discovered by Dynamics 365 Customer Service Insights."
 keywords: "Customer Service Insights"
 ms.date: 11/26/2019
 ms.service:
@@ -9,8 +9,8 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "VA"
-ms.collection: virtualagent
+ms.custom: "advanced-authoring, CSI"
+ms.collection: virtual-agent
 ---
 
 
@@ -44,7 +44,7 @@ After reviewing topic details and identifying a candiate for automation, you can
     
     Customer Service Insights prefills **Trigger phrases** with non-duplicated case titles from the most relevant cases (up to three cases). 
 
-3. Review the topic name and trigger phrases, and follow the other steps in the [Create custom topics for your bot](/power-virtual-agents/getting-started-create-topics) article to complete the creation of your bot topic. 
+3. Review the topic name and trigger phrases, and follow the other steps in the [Create custom topics for your bot](authoring-create-edit-topics.md) article to complete the creation of your bot topic. 
 
 ## Automate topics from the Topics page
 You can also automate topics from  the Topics page: hover over the topic you want to automate in the topic list, then select the **Automate** icon. 
