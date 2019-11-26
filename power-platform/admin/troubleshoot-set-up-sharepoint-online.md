@@ -55,7 +55,7 @@ The most common cause for the Documents associated grid not loading is the corru
     a. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
     b. Don’t have the correct permissions? Contact your system administrator.
 2. Go to **Settings** > **Customizations** > **Solutions**. 
-3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](/dynamics365/customer-engagement/customize/create-solution.md).
+3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-app-solution).
 4. Choose **Entities** > **Add Existing** > **Entity** > find and add **SharePoint Document** entity  (select all fields, forms, views). 
 5. Select **Save** and **Close**.
 6. Publish all customizations.

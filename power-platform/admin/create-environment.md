@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
 ---
 # Create and manage environments in the Power Platform Admin center 
-An environment is a space to store, manage, and share your organization’s business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. PowerApps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
+An environment is a space to store, manage, and share your organization’s business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
 
 > [!TIP]
 > For the blog announcing the latest changes to environment creation, see [Provisioning and administration updates are now live in the Power Platform Admin center](https://powerapps.microsoft.com/blog/provisioning-and-administration-updates-are-now-live-in-the-power-platform-admin-center/). 
@@ -23,15 +23,15 @@ An environment is a space to store, manage, and share your organization’s busi
 ## Provisioning a new environment
 You have a choice when provisioning a new environment. You can:
 
-- Provision based on [buying an environment](https://docs.microsoft.com/dynamics365/customer-engagement/admin/add-instance-subscription#add-an-additional-instance) using the Dynamics 365 Admin center.<br />
+- Provision based on [buying an environment](https://docs.microsoft.com/dynamics365/admin/add-instance-subscription#add-an-additional-instance) using the Dynamics 365 Admin center.<br />
 or <br />
 - Provision based on [available capacity](capacity-storage.md#about-the-new-capacity-analytics-reporting). See the section [Create an environment in the Power Platform Admin center](#create-an-environment-in-the-power-platform-admin-center).
 
 ### What's new in provisioning environments
 We're consolidating how you view, create, and manage environments. 
 
-- **Environments can now be provisioned in the Power Platform Admin center**: You can create environments in the Power Platform Admin center. Previously, environments could only be created in the Dynamics 365 Admin center and the PowerApps Admin center. 
-- **Admins can govern environment creation**: To limit environment creation to admins (Service admins, Office 365 Global admins, or Delegated admins), see [Control who can create environments in the Power Platform Admin center](control-environment-creation.md). Previously, limiting was done by controlling who had PowerApps P2 licenses.  
+- **Environments can now be provisioned in the Power Platform Admin center**: You can create environments in the Power Platform Admin center. Previously, environments could only be created in the Dynamics 365 Admin center and the Power Apps Admin center. 
+- **Admins can govern environment creation**: To limit environment creation to admins (Service admins, Office 365 Global admins, or Delegated admins), see [Control who can create environments in the Power Platform Admin center](control-environment-creation.md). Previously, limiting was done by controlling who had Power Apps P2 licenses.  
 - **Admins can see all environments**: Admins can see all environments (environments with and without a database, and environments with apps) in the Power Platform Admin center. Previously, admins could not see environments created without a database.
 - **Trial environment provisioning**: You can create one Trial environment per user. Previously, you could create two per user.
 
@@ -42,12 +42,12 @@ Your license determines whether you can create environments.
 | --- | --- | --- |
 | Office 365 Plans |No | No |
 | Dynamics 365 Teams Plans   |No | No |
-| PowerApps Community Plan   |No | No |
+| Power Apps Community Plan   |No | No |
 | Dynamics 365 Trial | Yes (one) | Yes|
 | Dynamics 365 Plans |Yes (one)| Yes |
 | Dynamics 365 Apps Plans |Yes (one)| Yes |
-| PowerApps plan |Yes (one)| Yes |
-| PowerApps Trial |Yes (one)| Yes |
+| Power Apps plan |Yes (one)| Yes |
+| Power Apps Trial |Yes (one)| Yes |
 
 To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
@@ -63,7 +63,7 @@ You have multiple options when creating an environment:
 2. [Create an environment without a Common Data Service database](#create-an-environment-without-a-database)
 
 ## Create an environment with a database
-You create a database to use Common Data Service as a data store. The Common Data Service is a cloud scale database used to securely store data for business applications built on PowerApps. Common Data Service provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
+You create a database to use Common Data Service as a data store. The Common Data Service is a cloud scale database used to securely store data for business applications built on Power Apps. Common Data Service provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
 
 ### Prerequisites
 To create an environment with a database, you need 1GB available database capacity.
@@ -81,7 +81,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose Production or Trial.        |
+   |Type     | You can choose production or Trial.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
@@ -106,7 +106,7 @@ To create an environment with a database, you need 1GB available database capaci
 When you create an environment with a database, you can add model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) to your environment.
 
 > [!NOTE]
-> Currently, Dynamics 365 apps can only be enabled for Production environments. You can create Dynamics 365 app trials at <https://trials.dynamics.com>.
+> Currently, Dynamics 365 apps can only be enabled for production environments. You can create Dynamics 365 app trials at <https://trials.dynamics.com>.
 
 ### Prerequisites
 To create an environment with a database, you need 1GB available database capacity.
@@ -124,7 +124,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose Production or Trial.        |
+   |Type     | You can choose production or Trial.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
@@ -160,7 +160,7 @@ You need 1GB available database capacity.
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose Production or Trial.        |
+   |Type     | You can choose production or Trial.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **No**. |
@@ -169,11 +169,11 @@ You need 1GB available database capacity.
    > ![](./media/new-environment-page1-nodb.png "Create new environment settings")
 
 ## Provision a Sandbox environment
-To provision a Sandbox environment, you change a Production environment to Sandbox.
+To provision a Sandbox environment, you change a production environment to Sandbox.
 
 1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
 
-2. From the left-side menu, select **Environments**, and then select a Production environment.
+2. From the left-side menu, select **Environments**, and then select a production environment.
 
 3. Select **Edit**
 
@@ -192,7 +192,7 @@ To provision a Sandbox environment, you change a Production environment to Sandb
 ### I’m a Dynamics 365 customer. Should I provision using the Dynamics 365 Admin center or Power Platform Admin center?
 Power Platform Admin center provisioning is only available for customers who have transitioned to the new capacity-based licenses. If you have not transitioned, please use the Dynamics 365 Admin center for provisioning. 
 
-### What are the new Trial limits for PowerApps customers?
+### What are the new Trial limits for Power Apps customers?
 The new trial limits are one per user. 
 
 ### Can an Office 365 licensed user manage and create environments?
@@ -201,10 +201,10 @@ No, Office 365 licensed users will not be able to manage environments.
 ### If I create an environment in the Dynamics 365 Admin center, will it appear in the Power Platform Admin center?
 Yes it will appear in both admin centers.
 
-### What is the PowerApps Production environment limit?
-Provisioning environments is based on database capacity. Previously, it was two environments per PowerApps Plan 2 license. Now all you need is 1GB of available capacity to provision. All environments with or without Common Data Service will consume at least 1GB capacity.
+### What is the Power Apps production environment limit?
+Provisioning environments is based on database capacity. Previously, it was two environments per Power Apps Plan 2 license. Now all you need is 1GB of available capacity to provision. All environments with or without Common Data Service will consume at least 1GB capacity.
 
 ### See also 
-[Manage environments in PowerApps](environments-administration.md) <br />
+[Manage environments in Power Apps](environments-administration.md) <br />
 [Preview: Common Data Service storage capacity](capacity-storage.md)
 

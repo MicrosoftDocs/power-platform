@@ -46,7 +46,7 @@ Use the settings on this page to enable preview features in model-driven apps in
 |**Text Analytics Preview for Case Topic analysis, Suggest Similar Cases and Suggest Knowledge Articles**||
 |Enable the Text Analytics Preview|More information: [Public Preview: Topic analysis](https://technet.microsoft.com/library/mt752501.aspx)|
 |**Sales Insights**||
-|Install Relationship Analytics to enable it for preview|More information: [Preview feature: Get insights on opportunities, activities, and leads of customers](https://docs.microsoft.com/dynamics365/customer-engagement/sales-enterprise/sales-insights-addon)|
+|Get insights on opportunities, activities, and leads of customers |More information: [Overview of Dynamics 365 Sales Insights](https://docs.microsoft.com/dynamics365/ai/sales/overview)|
 
 ### See also
-[What are Preview features and how do I enable them?](../admin/what-are-preview-features-how-do-i-enable-them.md)
+[What are Preview features and how do I enable them?](what-are-preview-features-how-do-i-enable-them.md)

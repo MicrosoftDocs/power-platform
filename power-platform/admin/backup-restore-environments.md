@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 11/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -71,7 +71,7 @@ About **manual backups**:
 - A backup is created for you when we update your environment.  
 - You can back up production and Sandbox environments. 
 - Sandbox backups are retained for up to 7 days. 
-- Production backups are retained for up to 28 days. 
+- System backups for production-type environments are retained up to 28 days.
 - Check your expiration date.  
   
   > [!div class="mx-imgBorder"] 
@@ -90,9 +90,14 @@ About **manual backups**:
    > ![Select Create](media/create-backup.png "Select Create")
 
 3. Fill in the information, and then select **Create**.
-  
+
+There is no status as the backup is processing. When the backup is completed, you'll see the following message: "*The [backup name] backup was successfully created.*" 
+
 ### Restore a manual backup  
-You can only restore to Sandbox environments. To restore to a production environment, first switch it to a Sandbox environment, restore to it, and then switch it back to a production environment. See [Switch an environment](switch-environment.md). 
+You can only restore to Sandbox environments. To restore to a production environment, first switch it to a Sandbox environment. See [Switch an environment](switch-environment.md).
+
+> [!IMPORTANT]
+> Note that changing an environment type to Sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type Sandbox.
 
 1. Browse to the Power Platform Admin center and sign in using administrator credentials.
   
@@ -148,13 +153,16 @@ In the current version of the product, system backups occur continuously; this i
 
 Because Azure SQL Database takes backups continuously, there is no need to take additional backups or specify Azure SQL Database to take additional backups or an on-demand full backup. That means our on-demand backup is just a label and a time stamp that we store in our system and use during restore requests. This is different from previous versions that took a full backup during an on-demand backup. 
 
+### Why can't I see a status of the manual backup?
+There is no status as the backup is processing. When the backup is completed, you'll see the following message: "*The [backup name] backup was successfully created.*" 
+
 ### Should I open a support ticket for taking a full backup?
 No. In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
 
 Because Azure SQL Database takes backups continuously and there is no specific way to take additional on-demand backups, we recommend you use our on-demand backup feature to label your backups. 
 
 ### How long are my manual/on-demand backups and system backups retained?
-Manual backups and system backups each are retained for 28 days. We currently do not show all the available system backups. We plan to show the full range of available backups in the future.
+System backups for production-type environments are retained up to 28 days. Other environment-type backups are retained up to 7 days.
 
 ### Can I extend my backup to be retained beyond the standard number of days?
 You can't extend your system backups or manual/on-demand backups. However, if you want to keep the data for longer than the standard retention period, we recommend you copy your environment to an additional environment and do not modify that additional environment. 
@@ -169,7 +177,7 @@ Obtaining a copy of your database backup isn't available. Moving your online dat
 We don't have any restriction on database size to take a backup or restore an organization through UI or API. Use the UI or API to do self-service. Open a support ticket if the operation fails.
 
 ### Can I restore to a production environment?
-In order to prevent accidental overwrites, we don't allow users to restore to a production environment directly. To restore to a production environment, first switch it to a Sandbox environment. See [Switch an environment](switch-environment.md).   
+In order to prevent accidental overwrites, we don't allow users to directly restore to a production environment. To restore to a production environment, first switch it to a Sandbox environment. See [Switch an environment](switch-environment.md). Note that changing an environment type to Sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type Sandbox.
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
 The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](sandbox-environments.md#set-administration-mode).  

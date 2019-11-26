@@ -1,7 +1,7 @@
 ---
 title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 11/06/2019
+ms.date: 11/19/2019
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -22,7 +22,7 @@ search.app:
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
 > [!NOTE]
-> For introductory licensing information on the new capacity analytics model, see [PowerApps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> For introductory licensing information on the new capacity analytics model, see [Power Apps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
 > Common Data Service storage capacity is not available for Dynamics 365 US Government – GCC and GCC High, DOD, and Microsoft Dynamics 365 online services operated by 21Vianet.
 
@@ -75,7 +75,7 @@ To view the **Summary** page, select **Analytics** > **Capacity** > **Summary** 
 
 |  |Description |
 |---------|---------|
-|(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
+|(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-box (OOB) entity that has fields of datatype File or Image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
 |(2)    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every User License purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li></ul>      |
 |(3)    |**What's new**: Used for announcements and notifications  |
 |(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
@@ -155,7 +155,7 @@ If you have an existing agreement, you are not impacted with the current change.
 ### I'm an existing customer and my renewal is coming up. Will I be impacted?
 Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
 
-### I’m a PowerApps/Power Automate customer and have environments with and without Database. Will they consume storage capacity? 
+### I’m a Power Apps/Power Automate customer and have environments with and without Database. Will they consume storage capacity? 
 Currently, only the environments with Database consume capacity; environments without Database do not. However, once the Power Platform Admin center has the ability to create environments, all environments will consume 1GB. 
 
 ### Why am I no longer getting storage notifications?
@@ -174,5 +174,5 @@ Not all licenses give per user entitlement. For example, the team member license
 Check back for availability. In addition to top tables, we will also show the table trend.
 
 ### Which environments are counted in the capacity report?
-Default, Production, and Sandbox environments are counted for consumption. Trial, Preview, Support, and Developer environments are not counted.
+Default, production, and Sandbox environments are counted for consumption. Trial, Preview, Support, and Developer environments are not counted.
 

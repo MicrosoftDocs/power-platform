@@ -1,6 +1,6 @@
 ---
 title: Migrate apps between environments and tenants | Microsoft Docs
-description: Walkthrough of how to migrate PowerApps apps between environments and tenants
+description: Walkthrough of how to migrate Power Apps apps between environments and tenants
 author: jimholtz
 manager: kvivek
 ms-topic: conceptual
@@ -21,7 +21,7 @@ search.app:
 Learn how to migrate resources from one environment to another with packaging. These environments can be within the same tenant or across different tenants.
 
 ## The scenario
-One common scenario where you may want to migrate resources is where you have Test or Dev environments and a Production environment. Developers and testers have wide access to the apps in their environments. But when it comes time to migrate a new app to production, that environment has rigorous control over permissions to update and change it.
+One common scenario where you may want to migrate resources is where you have Test or Dev environments and a production environment. Developers and testers have wide access to the apps in their environments. But when it comes time to migrate a new app to production, that environment has rigorous control over permissions to update and change it.
 
 Another scenario is one where each customer has their own environment and data. When a new customer is added, a new environment is created for them, and you would migrate apps into their environment.
 
@@ -43,7 +43,7 @@ The ability to export an app is available to any user with "Can edit" permission
 The ability to import an app is available to any user with "Environment Maker" permission in the destination environment.
 
 > [!NOTE]
-> While packaging is in preview, any user with a valid PowerApps license will be able to try out packaging for their apps and environments.
+> While packaging is in preview, any user with a valid Power Apps license will be able to try out packaging for their apps and environments.
 
 ## Exporting an app
 1. In http://web.powerapps.com, click or tap **Apps**, select the ellipses for the app you want to migrate, and then select **Export (preview)**.
@@ -83,7 +83,7 @@ The ability to import an app is available to any user with "Environment Maker" p
 ## Exporting Common Data Service customizations and model-driven apps
 Exporting any entity or option set customizations or any model-driven apps that you have built in https://web.powerapps.com is supported by exporting the default environment solution as follows:
 > [!NOTE]
->  If you would like to learn more about solutions in PowerApps, please see [Introduction to solutions](/powerapps/developer/common-data-service/introduction-solutions).
+>  If you would like to learn more about solutions in Power Apps, please see [Introduction to solutions](/powerapps/developer/common-data-service/introduction-solutions).
 >
 >
 

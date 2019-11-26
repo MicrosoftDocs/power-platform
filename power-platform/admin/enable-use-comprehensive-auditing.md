@@ -17,13 +17,13 @@ search.app:
 ---
 # Enable and use Activity Logging 
 
-Protecting data, preserving privacy, and complying with regulations such as the [General Data Protection Regulation](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) are certainly some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, PowerApps, Microsoft Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).  
+Protecting data, preserving privacy, and complying with regulations such as the [General Data Protection Regulation](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) are certainly some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Microsoft Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).  
 
 This topic covers how you can set model-driven apps in Dynamics 365 to audit a broad range of data processing activities and use the [Office 365 Security and Compliance Center](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
 
 ## Requirements
 - An Office 365 Enterprise [E3](https://products.office.com/business/office-365-enterprise-e3-business-software) or [E5](https://products.office.com/business/office-365-enterprise-e5-business-software) subscription is required to do Activity Logging.
-- Available for Production and not Sandbox environments.
+- Available for production and not Sandbox environments.
 
 ## What events are audited
 Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of admin and user events you can audit.

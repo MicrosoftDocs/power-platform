@@ -43,7 +43,7 @@ search.app:
   
  ![Dynamics 365 option on the Microsoft 365 admin center menu](../admin/media/o365-admin-center-crm.png "Dynamics 365 option on the Microsoft 365 admin center menu")  
   
- Choose the **environments** tab to edit, copy, and reset, existing environments, configure new environments, manage preferred solutions, and more. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage environments](/dynamics365/customer-engagement/admin/manage-online-instances.md)  
+ Choose the **environments** tab to edit, copy, and reset, existing environments, configure new environments, manage preferred solutions, and more. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Environments overview](environments-overview.md)
   
  ![Dynamics 365 Administration Center environments tab](../admin/media/crm-admin-center-instances.png "Dynamics 365 Administration Center environments tab")  
   
@@ -56,7 +56,7 @@ search.app:
 ## Check your service health  
  You can quickly get real-time status of your model-driven apps in Dynamics 365 and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services. The Service health page on the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] provides a comprehensive view of the service health of your online services. If users are having trouble signing in to model-driven apps in Dynamics 365, check this page to see if there is a service outage.  
   
-For more information, see [Check your service health](use-office-365-admin-center-manage-subscription.md#check-your-service-health).
+For more information, see [Check your service health](check-online-service-health.md).
   
 <a name="BKMK_ServiceMessages"></a>   
 
@@ -101,7 +101,7 @@ More information: [Contact Technical Support](get-help-support.md)
  ![Microsoft 365 admin center manage password expiration](../admin/media/o365-admin-center-password-expiration.png "Microsoft 365 admin center manage password expiration")  
   
 > [!TIP]
->  Note the information on this page about users doing their own password reset. To enable your users to be able to reset their passwords themselves, you’ll need to purchase an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] subscription and configure it for password self-service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Self-service password reset in Azure AD: how to enable, configure, and test self-service password reset](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started#enable-users-to-reset-their-azure-ad-passwords)  
+>  Note the information on this page about users doing their own password reset. To enable your users to be able to reset their passwords themselves, you’ll need to purchase an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] subscription and configure it for password self-service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Self-service password reset in Azure AD: how to enable, configure, and test self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset)  
   
 <a name="BKMK_PasswordSelfSet"></a>   
 ## Configure self-service password reset and other settings in Azure  

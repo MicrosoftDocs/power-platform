@@ -62,24 +62,19 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
    ![New support request](media/new-support-request.png "New support request")
 
-3. Select the product with the issue.
-
-   > [!div class="mx-imgBorder"] 
-   > ![](media/support-which-product.png "Select product")
-
-4. To get immediate help with your issue, fill in the rest of the information on the page, and then select **See solutions**.
+3. Select the product with the issue. Fill in the problem type, a description of the issue, and then select **See solutions**.
 
    > [!div class="mx-imgBorder"] 
    > ![](media/create-support-ticket.png "See solutions")
 
    Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
 
-5. If the guidance doesn't resolve your issue, select **Create a support request** and fill in the fields in the form pages.
+4. If the guidance doesn't resolve your issue, scroll down and select **Create a support request** and fill in the fields in the form pages.
 
    > [!div class="mx-imgBorder"] 
    > ![](media/support-request-page2.png "Create a new support request")
 
-6. If you have a **Premier** support plan, select **Yes** for **File as a Premier support request?** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Technical Account Manager (TAM).
+5. If you have a **Premier** support plan, select **Yes** for **File as a Premier support request?** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Technical Account Manager (TAM).
 
    > [!div class="mx-imgBorder"] 
    > ![](media/premier-support.png "Premier support info")
@@ -104,3 +99,7 @@ Fill out the pages and then submit to have your support request receive an exped
 ![Fill in outage info](media/report-outage-page-one.png "Fill in outage info")
 
 We'd love to know your thoughts on the new outage reporting process. Or, if you'd like to be considered for this limited Preview, please fill out this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-5Axi2KMXdNi_1eF9P36tZUN1FUQkJLNVBZVVlOSVk0T0tIQTBIMk9VOC4u).
+
+### See also
+[Support overview](support-overview.md)<br />
+[How do I check my online service health?](check-online-service-health.md)

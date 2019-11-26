@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/05/2019
+ms.date: 11/18/2019
 ms.author: matp 
 search.audienceType: 
   - admin
@@ -24,7 +24,7 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
 
 > [!IMPORTANT]
-> Self-managed database encryption keys are only available for customers who have more than 1000 PowerApps plan licensed user seats and who have opted in to the feature.  To opt in to this program, contact your account or sales representative.
+> Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps plan licensed user seats and who have opted in to the feature.  To opt in to this program, contact your account or sales representative.
 >
 > Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can’t be encrypted with the self-managed encryption key:
 > - Relevance Search
@@ -141,6 +141,10 @@ To perform this task using PowerShell, see [Get-CRMGenerateProtectionkey](/power
 
 To perform this task using PowerShell, see [New-CRMImportProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/new-crmimportprotectionkey?view=dynamics365ce-ps) and [Set-CrmTenantProtectionKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmtenantprotectionkey?view=dynamics365ce-ps).
 
+> [!NOTE]
+> To reduce the number of steps for the administrator to manage the key process, the key is automatically activated when it is uploaded the first time. All subsequent key uploads require an additional step to activate the key.
+
+
 ### Activate an encryption key for a tenant
 Once an encryption key is generated or uploaded for the tenant, it can be activated. 
 
@@ -185,7 +189,7 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 3.	Select **See all**.
 4.  In the **Environment Encryption** section, select **Manage**, and then select **Confirm**. 
 5.	Under **Return to standard encryption management**, select **Return** .
-6.  For Production environments, confirm the environment by entering the environment's name.
+6.  For production environments, confirm the environment by entering the environment's name.
 7.  Select **Confirm** to return to standard encryption key management.
 
 To perform this task using PowerShell, see [Set-CrmProtectWithMicrosoftKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmprotectwithmicrosoftkey?view=dynamics365ce-ps).
@@ -251,7 +255,28 @@ To unlock environments you must first [upload](#upload-a-key-pfx-or-byok) and th
 
 To unlock an environment using the PowerShell cmdlet, see [Set-CrmUnlockTenantProtectedInstance](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmunlocktenantprotectedinstance?view=dynamics365ce-ps).
 
-  
+
+## Environment database operations 
+A customer tenant can have environments that are encrypted using the Microsoft managed key and environments that are encrypted with the customer managed key. To maintain data integrity and data protection, the following controls are available when managing environment database operations.
+
+1. [Restore](backup-restore-environments.md) 
+   The environment to overwrite (the restored to environment) is restricted to the same environment that the backup was taken from or to another environment that is encrypted with the same customer managed key. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Restore backup](media/cmk-restore-backup.png "Restore backup")
+
+2. [Copy](copy-environment.md)
+   The environment to overwrite (the copied to environment) is restricted to another environment that is encrypted with the same customer managed key. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Copy environment](media/cmk-copy-environment.png "Copy environment")
+
+   > [!NOTE]
+   > If a Support Investigation environment was created to resolve support issue in a customer managed environment, the encryption key for the Support Investigation environment must be changed to customer managed key before the Copy environment operation can be performed. 
+
+3. [Reset](sandbox-environments.md#reset-a-sandbox-environment)
+   The environment’s encrypted data will be deleted including backups. After the environment is reset, the environment encryption will revert back to the Microsoft managed key. 
+
 ## Encryption key change notification
 > [!IMPORTANT]
 > When an encryption key is activated or changed, all administrators receive an email message alerting them of the change. This provides a means to allow other administrators to verify and confirm that the key was updated by an authorized administrator.  Since it takes time to activate the key and to encrypt all the environments, and to send out the email notification, an encryption key can only be updated once every 24 hours.

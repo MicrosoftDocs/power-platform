@@ -18,16 +18,16 @@ search.app:
 
 # Embed an app in Microsoft Teams
 
-As an admin, you can share apps created in PowerApps to users in your tenant through Microsoft Teams. Upload the apps so they show up for **all** teams in your tenant under the **All tabs section**. 
+As an admin, you can share apps created in Power Apps to users in your tenant through Microsoft Teams. Upload the apps so they show up for **all** teams in your tenant under the **All tabs section**. 
 
-Individuals can share an app they've created in PowerApps in a Team they are a member of by following these [instructions](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-teams-app). 
+Individuals can share an app they've created in Power Apps in a Team they are a member of by following these [instructions](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app). 
 
 > [!NOTE]
 > Team custom app policies must be set to allow uploading custom apps. Check out [custom app settings](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings). 
 
 ## Prerequisites
 
-- [Have a PowerApps license](pricing-billing-skus.md)
+- [Have a Power Apps license](pricing-billing-skus.md)
 - Be a tenant administrator 
 - Created a canvas app
 
@@ -132,7 +132,7 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
 
    Replace `<App ID>` with the App ID GUID you recorded above.
 
-   Select the [scope](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope) for your app to appear in. Ensure **Can update configuration** is checked, select **Save**, and then skip to Step 10.
+   Select the [scope](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) for your app to appear in. Ensure **Can update configuration** is checked, select **Save**, and then skip to Step 10.
 
    > [!div class="mx-imgBorder"] 
    > ![Configuration URL](./media/configuration-url.png "Configuration URL")

@@ -23,7 +23,7 @@ Common Data Service uses a role-based security model to help secure access to th
 ## Assign security roles to users
 Security roles control a user’s access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user’s view of data and on the user’s interactions with that data.
 
-To assign a user to an environment role, an Environment Admin can take these steps in the [PowerApps Admin center][1]:
+To assign a user to an environment role, an Environment Admin can take these steps in the [Power Apps Admin center][1]:
 
 > [!NOTE]
 > Currently, roles can only be assigned to users. Please check back for when assigning a role to a security group is available.
@@ -38,7 +38,7 @@ To assign a user to an environment role, an Environment Admin can take these ste
     
     ![](./media/database-security/security-viewuser.png)
 
-4. In case user doesn’t exist, you can add the user from PowerApps Admin center 
+4. In case user doesn’t exist, you can add the user from Power Apps Admin center 
 	Add the user by mentioning the email address of the user, in your organization, and selecting **Add user**.
 
     ![](./media/database-security/security-adduser.png)
@@ -56,7 +56,7 @@ To assign a user to an environment role, an Environment Admin can take these ste
 7. Select **OK** to update the assignments to the environment role.
 
 ## Predefined security roles
-The PowerApps environment includes predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app.
+The Power Apps environment includes predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app.
 
 |Security role  |*Database Privileges  |Description |
 |---------|---------|---------|
@@ -68,7 +68,7 @@ The PowerApps environment includes predefined security roles that reflect common
 
 *Privilege is global scope unless specified otherwise.
 
-- The Environment Maker role can not only create resources within an environment, but can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users. For more information, see [Share an app in PowerApps](/powerapps/maker/canvas-apps/share-app). 
+- The Environment Maker role can not only create resources within an environment, but can also distribute the apps they build in an environment to other users in your organization. They can share the app with individual users. For more information, see [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app). 
 
 - For the users making apps which are connecting to the database and needs to create or update entities and security roles, should be assigned System Customizer role as well, along with the Environment Maker as Environment Maker role, has no privileges on the database.
 
@@ -82,9 +82,9 @@ The environment might maintain the records which can be used by multiple apps, y
 - Some of the users (Type A) might only need to read, update, and attach other records so their security role will have read, write, and append privileges.
 - Other users might need all the privileges that users of Type A has, plus the ability to create, append to, delete, and share, so their security role will have create, read, write, append, delete, assign, append to, and share privileges.
 
-For more information about access and scope privileges, see [Security roles](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles).
+For more information about access and scope privileges, see [Security roles](security-roles-privileges.md#security-roles).
 
-1. In [PowerApps Admin center][1] select the environment where you want to update a security role.
+1. In [Power Apps Admin center][1] select the environment where you want to update a security role.
 
     ![](./media/environment-admin/choose-environment-updated.png)
 
@@ -121,7 +121,7 @@ Start by downloading the solution from the Download Center: [Common Data Service
 
 Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 
-When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](https://docs.microsoft.com/dynamics365/customer-engagement/admin/create-edit-security-role#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
+When you import the solution, it creates the **min prv apps use** role which you can copy (see: [Create a security role by Copy Role](create-edit-security-role.md#create-a-security-role-by-copy-role)). When Copying Role is complete, navigate to each tab - Core Records, Business Management, Customization, etc - and set the appropriate privileges. 
 
 > [!IMPORTANT]
 > You should try out the solution in a development environment before importing into a production environment. 
