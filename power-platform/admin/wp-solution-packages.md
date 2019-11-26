@@ -29,8 +29,8 @@ users see as the effective set of customizations.
 
 - What the User Sees (Calculated)
 - Default Solution (Unmanaged Layer)
-- PowerApps - Model Driven App A (managed)
-- PowerApps - Model Driven App B (managed)
+- Power Apps - Model Driven App A (managed)
+- Power Apps - Model Driven App B (managed)
 - ISV Loan Calculator (managed)
 - Common Data Model
 

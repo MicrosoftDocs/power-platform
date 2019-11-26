@@ -1,6 +1,6 @@
 ---
 title: Create a data loss prevention (DLP) policy | Microsoft Docs
-description: In this quickstart, you learn how to create a data loss prevention (DLP) policy in PowerApps
+description: In this quickstart, you learn how to create a data loss prevention (DLP) policy in Power Apps
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,7 +16,7 @@ search.app:
 ---
 
 # Create a data loss prevention (DLP) policy
-To protect data in your organization, PowerApps lets you create and enforce policies that define which consumer connectors specific business data can be shared with. These policies that define how data can be shared are referred to as data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
+To protect data in your organization, Power Apps lets you create and enforce policies that define which consumer connectors specific business data can be shared with. These policies that define how data can be shared are referred to as data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
 
 In this topic, you'll learn how to create a DLP policy for a single environment that prevents data that's stored in your Common Data Service and SharePoint databases from being published to Twitter.
 
@@ -24,11 +24,11 @@ In this topic, you'll learn how to create a DLP policy for a single environment 
 To follow the steps, **one** of the following items is required:
 * Azure Active Directory Tenant Admin permissions
 * Office 365 Global Admin permissions
-* PowerApps Environment Admin permissions plus a PowerApps plan, Power Automate plan, or a [free PowerApps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) license
+* Power Apps Environment Admin permissions plus a Power Apps plan, Power Automate plan, or a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) license
 
-For more information, see [Environments administration in PowerApps](environments-administration.md).
+For more information, see [Environments administration in Power Apps](environments-administration.md).
 
-## Sign in to the PowerApps Admin center
+## Sign in to the Power Apps Admin center
 Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
 
 ## Create a DLP policy

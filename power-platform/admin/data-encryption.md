@@ -60,5 +60,5 @@ Make sure you have the System Administrator or System Customizer security role o
 ### See also  
  [SQL Server Encryption](https://technet.microsoft.com/library/bb510663.aspx)   
  [FIPS 140 Evaluation](https://technet.microsoft.com/library/cc750357.aspx)   
- [Manage Your Data](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-your-data)   
- [Manage configuration data](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-configuration-data)
+ [Manage Your Data](add-remove-sample-data.md)   
+ [Manage configuration data](manage-configuration-data.md)

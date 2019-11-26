@@ -36,7 +36,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Settings|Description|  
 > |--------------|-----------------|  
 > |**AI Builder (preview)**  |   |
-> |Create AI models in PowerApps  | Default: On. If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](https://docs.microsoft.com/ai-builder/administer)  |
+> |Create AI models in Power Apps  | Default: On. If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](https://docs.microsoft.com/ai-builder/administer)  |
 > |**Embedded content**||  
 > |Power BI visualization embedding|Default: Off. More information: [Add or edit Power BI visualizations on your dashboard](https://docs.microsoft.com/powerapps/user/add-powerbi-dashboards)|  
 > |Bing Maps|Default: Off. If **On**, Customer Engagement (on-premises) users will need to enter a Bing Maps key. Users don’t need to enter a key. |  
@@ -45,11 +45,11 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Skype presence|Default: On. If **On**, instant messaging will display the current status for users, contacts, opportunities, or leads. This only applies to lists and sub-lists for entities with an updated user interface.|  
 > |Country/region code prefixing for numbers|Default: On. If **On**, model-driven apps in Dynamics 365 will prefix the country/region code to numbers that users are trying to call.|  
 > |Set the telephony provider|Default: On. Choose which provider to enable outbound calls from within model-driven apps in Dynamics 365. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.|  
-> |Use Skype| Default: enabled. [More information: Set up model-driven apps in Dynamics 365 to use Skype or Skype for Business](https://docs.microsoft.com/dynamics365/customer-engagement/admin/set-up-skype-or-skype-for-business)|
+> |Use Skype| Default: enabled. [More information: Set up model-driven apps in Dynamics 365 to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)|
 > |Use Skype for Business| Default: not enabled. |
 > |**Search**||  
 > |Relevance Search|Default: Off. If **On**, you can use Relevance search to find records across multiple entities, sorted by relevance.|  
-> |Quick Find record limits|Default: On. If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Relevance search for the organization](https://docs.microsoft.com/dynamics365/customer-engagement/admin/configure-relevance-search-organization)| 
+> |Quick Find record limits|Default: On. If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Relevance search for the organization](configure-relevance-search-organization.md)| 
 > |**Help features**||  
 > |Custom help for customizable entities|Default: Off. Select **On** to replace the default Help content with custom Help designed for your users. After you enable custom Help, you can enter a Global Custom Help URL.|  
 > |Global custom help URL| To replace the default Help with a single URL for all customizable record types (entities), enter the URL here. You also have the option of entering override URLs for each record type (entity) for customizable record types. More information: [Create your own guided help](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-guided-help-learning-path)|  

@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Power Automate.
+summary: Learn how to analyze data for insights using Power BI, quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, and build intelligent bots with a no-code interface using Power Virtual Agents.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, PowerApps, and Power Automate. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, Power Apps, and Power Automate. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: dynamics-365-crossapp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: buck1ey #Required; your GitHub user alias, with correct capitalization.
@@ -15,38 +15,32 @@ metadata:
   ms.date: 10/29/2019 #Required; mm/dd/yyyy format.
   hide_bc: false
 
-# productDirectory section (optional)
-productDirectory:
-  items:
-    # Card
-    - title: Power BI
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: media/PowerBI_Mark_Yellow.svg
-      links:
-        - url: https://docs.microsoft.com/power-bi/
-          text: Documentation
-        - url: https://docs.microsoft.com/en-us/learn/browse/?products=power-bi
-          text: Learn Power BI
-    # Card
-    - title: PowerApps
-      imageSrc: media/PowerApps_Mark.svg
-      links:
-        - url: https://docs.microsoft.com/powerapps
-          text: Documentation
-        - url: https://docs.microsoft.com/en-us/learn/browse/?products=powerapps
-          text: Learn PowerApps
-    # Card
-    - title: Power Automate
-      imageSrc: media/Flow_Mark.svg
-      links:
-        - url: https://docs.microsoft.com/flow/
-          text: Documentation
-        - url: https://docs.microsoft.com/en-us/learn/browse/?products=flow
-          text: Learn Power Automate
-
 additionalContent:
   # Supports up to 3 sections
   sections:
+    - items:
+        - title: Power BI
+          links:
+          - url: https://docs.microsoft.com/power-bi/
+            text: Documentation
+          - url: https://docs.microsoft.com/en-us/learn/browse/?products=power-bi
+            text: Learn Power BI
+        - title: Power Apps
+          links:
+          - url: https://docs.microsoft.com/powerapps
+            text: Documentation
+          - url: https://docs.microsoft.com/en-us/learn/browse/?products=powerapps
+            text: Learn Power Apps
+        - title: Power Automate
+          links:
+          - url: https://docs.microsoft.com/power-automate/
+            text: Documentation
+          - url: https://docs.microsoft.com/en-us/learn/browse/?products=flow
+            text: Learn Power Automate
+        - title: Power Virtual Agents
+          links:
+          - url: https://docs.microsoft.com/power-virtual-agents/
+            text: Documentation
     - title: Related features
       items:
         # Card

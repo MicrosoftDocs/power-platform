@@ -55,16 +55,6 @@ Admins can use their [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] glo
   
 3. A partner can create a trial invitation link and invite the customer to the trial via a link in email or a link on the partner’s website. The trial invitation can include delegated admin if the prospect chooses to accept.  
   
-## Related information  
- Review the following for more information on partners and delegated admins.  
-  
--   [Learn how to provide technical support as a delegated admin](https://msdn.microsoft.com/library/partnercenter/mt157012.aspx)  
-  
--   [Learn how to do common partner tasks](https://partnercenter.microsoft.com/partner/howto)  
-  
--   [Learn about the Microsoft Cloud Solution Provider (CSP) program](https://go.microsoft.com/fwlink/p/?LinkID=617116)  
-  
 ### See also  
- [Introducing the new Office 365 Partner admin center](https://blogs.office.com/2014/01/28/introducing-the-new-office-365-partner-admin-center/)   
  [Partners: Offer delegated administration](https://support.office.com/article/Partners-Offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e?ui=en-US&rs=en-US&ad=US)   
  [Partners: Add or delete a delegated admin](https://support.office.com/article/partners-add-or-delete-a-delegated-admin-201ccb3b-6011-4bf1-a6b2-84e7cc1ee2d0)

@@ -52,5 +52,5 @@ Make sure you have the System Administrator or System Customizer security role o
 For information about how to implement bulk delete in code, see [Delete data in bulk](https://docs.microsoft.com/powerapps/developer/common-data-service/delete-data-bulk). 
   
 ### See also  
- [Manage your data](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-your-data)   
- [Data Encryption](https://docs.microsoft.com/dynamics365/customer-engagement/admin/data-encryption)
+ [Manage your data](add-remove-sample-data.md)   
+ [Data Encryption](data-encryption.md)

@@ -46,7 +46,7 @@ Getting to app feature settings can vary based on the type of app you're using.
 
 ### Settings in Unified Interface apps
 
-To open settings for apps that use [Unified Interface](https://docs.microsoft.com/dynamics365/customer-engagement/admin/about-unified-interface), look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**.
+To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/advanced-settings.png "Advanced settings")

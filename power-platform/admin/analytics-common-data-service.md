@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 11/14/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -350,14 +350,19 @@ For storage information, see [Preview: Common Data Service storage capacity](cap
 
 |Download | Description  |
 |----|-----|
-| Most Active Users Performing Operations | List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`. |
-|        Most Used Custom Entities        |                                List of custom entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                                |
-|         Most Used OOB Entities          |                              List of out-of-box entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`.                              |
-|       Active Users by Device Type       |                               List of active users by device type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)] (refreshed hourly)                                |
-|      Active Users by Business Unit      |                                                            List of active users by their business unit (refreshed hourly)                                                             |
-|      Active Users by Security Role      |                                                            List of active users by their security roles (refreshed hourly)                                                            |
-|         Active Users by Client          |                               List of active users, by client type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)] (refreshed hourly)                               |
-|        Active Users by Entities         |                                                             List of active users distributed by entity (refreshed hourly)                                                             |
+| Active users by device type  | List of active users by device type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)] (refreshed hourly)  |
+| Active users by business unit  | List of active users by their business unit (refreshed hourly)   |
+| Active users by security role  | List of active users by their security roles (refreshed hourly)  |
+| Active users by client  | List of active users, by client type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)] (refreshed hourly) |
+| Active users by entities | List of active users distributed by entity (refreshed hourly)   |
+| Most active users performing operations | List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls: `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`. |
+| Most used custom entities |  List of custom entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`. |
+| Most used OOB entities  |  List of out-of-box entities which had the most `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update SDK Calls`. |
+| Most active workflows | List of top 10 most executed workflows in the Customer Data Service environment over the specified time.   |
+| Most active plug-ins | List of top 10 most executed plug-ins in the Customer Data Service environment over the specified time.  |
+| Most used API  | List of top 10 most executed API calls in the Customer Data Service environment database.   |
+| Active D365 Plan Users by Application | List of workload usage by users with D365 Plan (aka bundle) licenses for the past 30 days. Users with standalone app licenses do not show up in this report.    |
+
 
 ### Update frequency  
  Download chart data is updated as follows.  

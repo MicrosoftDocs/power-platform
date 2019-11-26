@@ -55,8 +55,8 @@ Dynamics 365 US Government plans are available to qualified government and priva
 
 - Additional Portal for Government
 - Additional Portal Page Views for Government
-- Additional Production Instance for Government
-- Additional Non-Production Instance for Government
+- Additional production Instance for Government
+- Additional Non-production Instance for Government
 - Additional Database Storage for Government
 
 ### Dynamics 365 US Government – GCC High User Subscription Licenses
@@ -77,8 +77,8 @@ Dynamics 365 US Government plans are available to qualified government and priva
 
 - Additional Portal for Government – GCC High
 - Additional Portal Page Views for Government – GCC High
-- Additional Production Instance for Government – GCC High
-- Additional Non-Production Instance for Government – GCC High
+- Additional production Instance for Government – GCC High
+- Additional Non-production Instance for Government – GCC High
   
 ### Subscription Availability
 

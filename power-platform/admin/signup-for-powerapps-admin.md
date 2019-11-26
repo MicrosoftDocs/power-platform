@@ -1,6 +1,6 @@
 ---
-title: Purchase PowerApps for your organization | Microsoft Docs
-description: Walkthrough of how to sign up for PowerApps as an administrator.
+title: Purchase Power Apps for your organization | Microsoft Docs
+description: Walkthrough of how to sign up for Power Apps as an administrator.
 author: jimholtz
 ms.reviewer: manasmams
 manager: kvivek
@@ -17,27 +17,27 @@ search.app:
   - Powerplatform
 ---
 
-# Purchase PowerApps for your organization
+# Purchase Power Apps for your organization
 
-This topic shows you how to purchase PowerApps for your organization as an administrator. You can purchase PowerApps through the PowerApps website directly, through the Microsoft 365 admin center, or through your Microsoft representative or partner. This article will discuss the trial options available for a PowerApps plan and then explain how to purchase a PowerApps plan as an organization. For more information, see [PowerApps in your organization Q&A](signup-question-and-answer.md).
+This topic shows you how to purchase Power Apps for your organization as an administrator. You can purchase Power Apps through the Power Apps website directly, through the Microsoft 365 admin center, or through your Microsoft representative or partner. This article will discuss the trial options available for a Power Apps plan and then explain how to purchase a Power Apps plan as an organization. For more information, see [Power Apps in your organization Q&A](signup-question-and-answer.md).
 
 > [!NOTE]
->   To purchase PowerApps for an organization, you must already be an Office 365 Global or Billing Admin of a tenant, or you must create a tenant.
+>   To purchase Power Apps for an organization, you must already be an Office 365 Global or Billing Admin of a tenant, or you must create a tenant.
 
 ## Choosing the right plan
-For details about what licenses you can choose for your organization, see [PowerApps licensing overview](pricing-billing-skus.md).
+For details about what licenses you can choose for your organization, see [Power Apps licensing overview](pricing-billing-skus.md).
 
-## Purchase PowerApps directly
-You can purchase PowerApps subscriptions for your organization from [powerapps.microsoft.com][4] and then assign PowerApps licenses to your users. [Learn more][5].
+## Purchase Power Apps directly
+You can purchase Power Apps subscriptions for your organization from [powerapps.microsoft.com][4] and then assign Power Apps licenses to your users. [Learn more][5].
 
 1. Open [powerapps.microsoft.com/pricing/][4], and then select **Pricing**.
 
 2. Select **Buy now** for the plan you want.
 
-3. Provide information to make the purchase, and then navigate to the [Microsoft 365 admin center][6] to assign PowerApps licenses to your users.
+3. Provide information to make the purchase, and then navigate to the [Microsoft 365 admin center][6] to assign Power Apps licenses to your users.
 
-## Get PowerApps through Office 365
-You can purchase PowerApps subscriptions for your organization from the [Microsoft 365 admin center][6] and then assign PowerApps licenses to your users. [Learn more][5].
+## Get Power Apps through Office 365
+You can purchase Power Apps subscriptions for your organization from the [Microsoft 365 admin center][6] and then assign Power Apps licenses to your users. [Learn more][5].
 
 ### Purchase a subscription trial
 1. Browse to the [Microsoft 365 admin center][6].
@@ -72,8 +72,8 @@ These are not supported yet.
 -->
 
 ### See also
-[PowerApps in your organization Q&A](signup-question-and-answer.md)  
-[Self-service sign up for PowerApps](/powerapps/maker/signup-for-powerapps)  
+[Power Apps in your organization Q&A](signup-question-and-answer.md)  
+[Self-service sign up for Power Apps](/powerapps/maker/signup-for-powerapps)  
 
 <!--Reference links in article-->
 [1]: https://go.microsoft.com/fwlink/p/?LinkId=715583
