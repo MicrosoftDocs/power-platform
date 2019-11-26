@@ -19,7 +19,7 @@ You need an organizational license and a user license to use Power Virtual Agent
 
 To see the available subscriptions for Power Virtual Agents see the [pricing page](https://go.microsoft.com/fwlink/?linkid=2099502). 
 
-This article focuses on how assign licenses for Power Virtual Agents to your users.
+This article focuses on how to assign licenses for Power Virtual Agents to your users.
 
 Visit [Microsoft Volume Licensing](http://www.microsoftvolumelicensing.com/Default.aspx) to quickly access licensing terms, conditions, and supplemental information relevant to the use of Power Virtual Agents
 
@@ -35,7 +35,7 @@ You can pruchase Power Virtual Agents licenses for your organization from the [M
 
 2. On the side navigation pane, expand the **Billing** menu and then select **Purchase services**.
 
-3. Search for the subscription names, select them and on the confirmation screen, select the number of licenses you would like to purchase.
+3. Search for and select the subscriptions you want to purchase. On the confirmation screen select the number of licenses you would like to purchase.
 
 4. Complete the check out process.
 
@@ -81,9 +81,9 @@ A billed session is an interaction between the customer and the bot and represen
 On top of the above scenarios, there are two additional limitations of a billed session:
 
 - One billed session can last 60 minutes at its longest.
-- One billed session can contain a maximum of 100 conversational turns. (one turn is defined as one exchange of a user and the bot)
+- One billed session can contain a maximum of 100 conversational turns (one turn is defined as one exchange between the user and the bot).
 
-Please note that, at the moment, you will be billed even if you chat with the bot in the embedded chat canvas. 
+Please note that, at the moment, you will be billed even if you chat with the bot in the embedded test chat. 
 
 ## Using Power Automate with a Power Virtual Agents license
 In order to have unlimited flow runs in Power Automate, you need to create a flow [using the link from within the Power Virtual Agents app](advanced-flow.md). 
