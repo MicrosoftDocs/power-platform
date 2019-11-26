@@ -78,16 +78,16 @@ The following principals are supported for each role type.
 
 Today, Azure AD global tenant admins can perform the following: 
 
-1.	Download the Power Apps & Power Automate license report
-2.	Create DLP policy scoped only to ‘All Environments’ or scoped to include/exclude specific environments
-3.	Manage and assign licenses via Office admin center
-4.	Access all environment, app, and flow management capabilities for all environments in the tenant available via
-   1. Power Apps Admin center
-   2. Power Apps Admin PowerShell cmdlets
-   3. Power Apps management connectors
-5.	Access the Power Apps and Power Automate admin analytics for all environments in the tenant:
-   1.	aka.ms/paadminanalytics  
-   2.	aka.ms/flowadminanalytics 
+1. Download the Power Apps & Power Automate license report
+1. Create DLP policy scoped only to ‘All Environments’ or scoped to include/exclude specific environments
+1. Manage and assign licenses via Office admin center
+1. Access all environment, app, and flow management capabilities for all environments in the tenant available through:
+    - Power Apps Admin center
+    - Power Apps Admin PowerShell cmdlets
+    - Power Apps management connectors
+1. Access the Power Apps and Power Automate admin analytics for all environments in the tenant:
+    - aka.ms/paadminanalytics  
+    - aka.ms/flowadminanalytics 
 
 ### Consider Microsoft Intune
 
@@ -127,10 +127,11 @@ In addition to monitoring, many customers want to subscribe to software creation
 
 ### Leverage the [Power Apps and Microsoft Power Automate admin center](wp-work-with-admin-portals.md)
 
-1.	View and manage environments
-2.	View and manage all apps and flows within an environment
-3.	View and manage your CDS 
-4.	Environment and app management requires a Power Apps plan or a Power Automate plan 
+Environment and app management requires a Power Apps plan or a Power Automate plan
+
+1. View and manage environments
+2. View and manage all apps and flows within an environment
+	 
 
 ### Build Power Automate flows to alert on key audit events
 
@@ -139,35 +140,39 @@ In addition to monitoring, many customers want to subscribe to software creation
 
 ### Build the policies you need with Power Apps, Power Automate, and PowerShell
 
-1.	These [PowerShell cmdlets](powerapps-powershell.md) place full control in the hands of admins to automate the governance policies necessary. 
-2.	The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by leveraging Power Apps and Power Automate. 
-3.	The following Power Automate templates for administration connectors exist for ramping up quickly:
-   1.	[List new Power Automate Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
-   2.	[List new Power Apps, Power Automate flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
-   3.	[Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
-   4.	[Access Office 365 Security and Compliance Logs from Power Automate](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
-4.	This [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) exist to help ramping up quickly on the administration connectors. 
-5. Additionally, it’s worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here’s another example of an administrative experience built using Power Apps and admin connectors.
+1. These [PowerShell cmdlets](powerapps-powershell.md) place full control in the hands of admins to automate the governance policies necessary. 
+1. The [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide the same level of control but with added extensibility and ease-of-uses by leveraging Power Apps and Power Automate. 
+1. The following Power Automate templates for administration connectors exist for ramping up quickly:
+    1. [List new Power Automate Connectors](https://preview.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
+    1. [Get List of new Power Apps, Power Automate flows and Connectors](https://preview.flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
+    1. [Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
+    1. [Access Office 365 Security and Compliance Logs from Power Automate](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
+1. Use this [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) ramp up quickly on the administration connectors. 
+1. Additionally, it’s worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here’s another example of an administrative experience built using Power Apps and admin connectors.
 
 ### FAQ
 
 **Problem**
-Currently, all users with Office E3 licenses can create apps in the Default environment. How can we enable Environment Maker rights to a select group e.g. 10 persons to create apps? 
+Currently, all users with Office E3 licenses can create apps in the Default environment. How can we enable Environment Maker rights to a select group, for example. 10 persons to create apps? 
 
 **Recommendation**
 The [PowerShell cmdlets](https://powerapps.microsoft.com/blog/gdpr-admin-powershell-cmdlets/) and [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide full flexibility and control to administrators to build the policies they want for their organization.
 
+<!--
+TO DO: Link to sample source or remove this block
 Here are three samples: 
 
-1. Download a report of activity w/ PowerShell. 
-This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  NOTE: the calling user or user account must be a global admin and have a Power Apps plan or a Power Apps trial.
-	
-   Q: Where should we host .zip files in the following deck? (Governance.pptx slide 48)
+1. Download a report of activity with PowerShell. 
+This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  
 
-2. Notify un-authorized app creators and share their app w/ administrators (automated with Power Automate)This is a daily flow that identified ‘authorized’ creators via a security group(s) check and sends a notification to un-authorized app creators AND a summary report to administrators.  The flow also shares the app w/ administrators for auditing.
+    > [!NOTE]
+    > The calling user or user account must be a global admin and must have a Power Apps plan or a Power Apps trial.
+
+2. Notify un-authorized app creators and share their app with administrators (automated with Power Automate). This is a daily flow that identified ‘authorized’ creators via a security group(s) check and sends a notification to un-authorized app creators and a summary report to administrators. The flow also shares the app with administrators for auditing.
 
 3. Find and disable flows that leverage certain connectors
 This is a flow that runs every 30 minutes and automatically disables flows that include certain connectors. In this flow I identified flows from the following connectors – but the flow can be extended to identify any connector.
+-->
 
 ## Monitor
 
@@ -195,8 +200,8 @@ It’s well understood that monitoring as a critical aspect of managing software
 
 ### View app resources used in an Environment
 
-1.	In the Power Apps Admin center, select Environments in the navigation menu. 
-2.	Select an Environment.
+1. In the Power Apps Admin center, select Environments in the navigation menu. 
+2. Select an Environment.
 3. Optionally, the list of resources used in an Environment may be downloaded as a .csv.
 
 <!--
