@@ -2,7 +2,7 @@
 title: "Automate topics to Power Virtual Agents"
 description: "Learn how to automate topics discovered by Dynamics 365 Customer Service Insights to Power Virtual Agents"
 keywords: "Customer Service Insights"
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -14,30 +14,24 @@ ms.collection: virtualagent
 ---
 
 
-# Create topics from Customer Service Insights
+# Create bot topics from Customer Service Insights
 
-## Introduction to Dynamics 365 Customer Service Insights
+If you use [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/overview), you can automatically create new [topics]() in Power Virtual Agents based on your existing [Customer Service Insights support topics](/dynamics365/ai/customer-service-insights/topics-page).
 
-Dynamics 365 Customer Service Insights (https://csi.ai.dynamics.com) gives you actionable insights into critical performance metrics, operational data, and emerging trends from your customer service system. Built-in dashboards, interactive charts, and visual filters provide views into support operations data across channels, and highlight areas for improvement that can have the greatest impact, helping you quickly evaluate and respond to key performance indicators (KPIs) and customer satisfaction levels.
-
-Customer Service Insights uses artificial intelligence to automatically group your cases into topics using natural language understanding. Topics enable you to discover and adapt to current and emerging trends, improve brand sentiment, and identify problem areas. By pinpointing and fixing issues before they impact customers, you can deliver better customer service experiences.
+Dynamics 365 Customer Service Insights (https://csi.ai.dynamics.com) gives you actionable insights into critical performance metrics, operational data, and emerging trends from your customer service system. 
 
 For a walkthrough of how to connect to your customer service data to gain insights into your customer support system, see [Quickstart - Get immediate insights into your customer service system's performance](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/quickstart).
-
-<<<  INCLUDE IMAGE OF CSI KPI SUMMARY PAGE >>>>
 
 
 ## Identifying CSI topics to automate to Power Virtual Agents
 
-Looking at the [**New Cases** dashboard](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-incoming-cases) in Customer Service Insights, you can see cases with similar intent that are grouped through AI learning into:
+Looking at the [**New Cases** dashboard](/dynamics365/ai/customer-service-insights/dashboard-incoming-cases) in Customer Service Insights, you can see cases with similar intent that are grouped through AI learning into:
 
-1. Popular topics. The Popular topics chart uses artificial intelligence technology to group related incoming support cases as support topics and then display topics in order of volume over the specified time period.
+1. **Popular topics**. This chart uses AI technology to group related incoming support cases as *support topics* and then displays topics in order of volume over the specified time period.
 
-2. Emerging topics. The Emerging topics chart displays support topics that have a high volume of change in order of the change in volume over the specified time period. This chart shows the topics with high volume changes before they become popular topics.
+2. **Emerging topics**.This chart shows the topics with high volume changes, before they become popular topics.
 
-To see additional information about each topic, right-click the topic name, hover over **Drillthrough**, and then select **Topic drillthrough** to display the Topic details dashboard. For more information, see [Topic details dashboard](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/dashboard-topic-details).
-
-<<< INCLUDE IMAGE OF topic details dashboard FOR A TOPIC >>>
+To see additional information about each topic, right-click the topic name, hover over **Drillthrough**, and then select **Topic drillthrough** to display the Topic details dashboard. For more information, see [Topic details dashboard](/dynamics365/ai/customer-service-insights/dashboard-topic-details).
 
 
 You can consider topics as good candidates for automation, if they are:
