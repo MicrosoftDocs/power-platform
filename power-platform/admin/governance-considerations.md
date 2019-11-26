@@ -127,10 +127,10 @@ In addition to monitoring, many customers want to subscribe to software creation
 
 ### Leverage the [Power Apps and Microsoft Power Automate admin center](wp-work-with-admin-portals.md)
 
-Environment and app management requires a Power Apps plan or a Power Automate plan
+Environment and app management requires a Power Apps plan or a Power Automate plan. You can do the following:
 
-1. View and manage environments
-2. View and manage all apps and flows within an environment
+1. View and manage environments.
+2. View and manage all apps and flows within an environment.
 	 
 
 ### Build Power Automate flows to alert on key audit events
