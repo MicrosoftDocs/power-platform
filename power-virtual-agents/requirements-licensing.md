@@ -1,5 +1,5 @@
 ---
-title: "Assign user licenses for Power Virtual Agents"
+title: "Assign user licenses and manage access to Power Virtual Agents"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing"
 ms.date: 12/02/2019
@@ -13,7 +13,7 @@ ms.custom: "licensing, admin"
 ms.collection: virtual-agent
 ---
 
-# Assign licenses for Power Virtual Agents
+# Assign licenses and manage access to Power Virtual Agents
 
 To use Power Virtual Agents, you need a license for your organization as well as a license for each user. 
 
