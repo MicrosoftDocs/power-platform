@@ -1,7 +1,7 @@
 ---
 title: "Responding to GDPR Data Subject Delete Requests"
 description: "Learn how to respond​ to GDPR Data Subject Delete Requests for Power Virtual Agents."
-ms.date: 05/29/2019
+ms.date: 11/26/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -24,7 +24,7 @@ Power Virtual Agents offers the following experiences to delete personal data fo
 
 ### Bot chat logs
 
-Bot chat logs are deleted when the bot is deleted.
+All bot chat logs are deleted when the bot is deleted. See [steps to delete bot](#power-virtual-agents-bot-content) for more information.
 
 ### Power Virtual Agents bot content
 
@@ -39,9 +39,7 @@ Follow these steps to delete a bot:
 
 All bot content is immediately deleted.
 
-### Bot chat logs
-
-All bot chat logs are deleted when the bot is deleted. See [steps to delete bot](#power-virtual-agents-bot-content) for more information.
+If your license has expired, you can delete your bot(s) by selecting **Permanently delete your bots**.
 
 ### Power Virtual Agents telemetry
 
