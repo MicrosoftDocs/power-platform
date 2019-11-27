@@ -58,7 +58,7 @@ Microsoft will not transfer customer data outside the selected Azure geographic 
 
   - [Customer Service Hand-off](advanced-hand-off.md) - Configurable external services that hand-off bot escalations to a human agent. 
 
-  - Multi-Channel – Configurable to external channels such as Facebook and internal non-PVA services (Microsoft Teams). 
+  - Multi-Channel – Configurable to external channels such as Facebook and internal non-Power Virtual Agents services (Microsoft Teams). 
 
     - [Facebook documentation](publication-add-bot-to-facebook.md)
 
