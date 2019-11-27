@@ -24,7 +24,7 @@ Administrators and IT professionals should use this information to prepare for f
 > “Deprecated” means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
-All regional Discovery endpoints and the Discovery APIs in the Organization SDK are deprecated
+Regional Discovery Service is deprecated
 ----------------------------------------------------------------------------------------------
 
 Effective February 1, 2020, the *regional* Discovery Service in [Organization Service (SOAP)](/powerapps/developer/common-data-service/org-service/discovery-service) and [Web API (REST)](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) is deprecated, and won't be available after December 1, 2020. Until December 1, 2020, Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced.
