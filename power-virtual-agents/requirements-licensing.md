@@ -67,14 +67,13 @@ Currently, we only report the total number of sessions within the product. We do
 
 The number of billed sessions will be always lower than the number of sessions. We are working on bringing the number of billed sessions into the product soon.
 
-### Definition of billing unit
 A billed session is an interaction between the customer and the bot and represents one unit of consumption. The billed session begins when an authored topic is triggered. A topic ends in one of the following scenarios: 
 
-1. When all of the user's questions are answered.
+- When all of the user's questions are answered.
 
-2. When a user intentionally ends or closes a chat session. For web this means when the user closes the tab with the chat open. For persistent channels such as Microsoft Teams or Facebook, this means the user didn't write any message for more than 30 minutes.
+- When a user intentionally ends or closes a chat session. For web this means when the user closes the tab with the chat open. For persistent channels such as Microsoft Teams or Facebook, this means the user didn't write any message for more than 30 minutes.
 
-3. When a bot is unable to answer the question adequately and the interaction is [escalated to a live agent](advanced-hand-off.md).
+- When a bot is unable to answer the question adequately and the interaction is [handed off to a live agent](advanced-hand-off.md).
 
 There are two additional limitations:
 
