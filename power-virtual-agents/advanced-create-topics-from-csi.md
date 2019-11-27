@@ -1,90 +1,55 @@
 ---
-title: "TITLE"
-description: "DESCRIPTION"
-keywords: "KEYWORDS"
-ms.date: 09/04/2019
+title: "Automate topic creation in Power Virtual Agents"
+description: "Automate the creation of topics in Power Virtual Agents bots by using support topics discovered by Dynamics 365 Customer Service Insights."
+keywords: "Customer Service Insights"
+ms.date: 11/26/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "VA"
-ms.collection: virtualagent
+ms.custom: "advanced-authoring, CSI"
+ms.collection: virtual-agent
 ---
 
 
-# Create topics from Customer Service Insights
+# Create bot topics from Customer Service Insights
 
-## Introduction to Dynamics 365 Customer Service Insights
+If you use [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/overview), you can automatically create new [topics](authoring-create-edit-topics.md) in Power Virtual Agents based on your existing [Customer Service Insights support topics](/dynamics365/ai/customer-service-insights/topics-page).
 
-Dynamics 365 Customer Service Insights (https://csi.ai.dynamics.com) gives you actionable insights into critical performance metrics, operational data, and emerging trends from your customer service system. Built-in dashboards, interactive charts, and visual filters provide views into support operations data across channels, and highlight areas for improvement that can have the greatest impact, helping you quickly evaluate and respond to key performance indicators (KPIs) and customer satisfaction levels.
-
-Customer Service Insights uses artificial intelligence to automatically group your cases into topics using natural language understanding. Topics enable you to discover and adapt to current and emerging trends, improve brand sentiment, and identify problem areas. By pinpointing and fixing issues before they impact customers, you can deliver better customer service experiences.
-
-For a walkthrough of how to connect to your customer service data to gain insights into your customer support system, see [Quickstart - Get immediate insights into your customer service system's performance](https://docs.microsoft.com/en-us/dynamics365/ai/customer-service-insights/quickstart).
-
-<<<  INCLUDE IMAGE OF CSI KPI SUMMARY PAGE >>>>
-
-The AI-driven technology empowers informed decision making about how to improve resolution rates, reduce wait times, and decrease customer service costs. You can use case resolution insights, backlog trends, and historical comparisons to evaluate agent performance and business impact, and address inefficiencies in your system.
+You should review [recommendations for identifying topics for automation](/dynamics365/ai/customer-service-insights/automate-topics#identify-topics-for-automation) in the Customer Service Insights documentation library before you begin.
 
 
-## Popular and emerging topics in the CSI dashboard
+## Prerequisite to automate topics
 
-Looking at the **New Cases** tab in Customer Service Insights, you can see cases with similar intent that are grouped through AI learning into: 
+You must have the following to automate a topic from Customer Service Insights to Power Virtual Agents:
 
-1. **Popular topics** chart: AI technology groups related incoming support cases as support topics and then displays topics in order of volume over the specified time period.
+- A valid license to access Power Virtual Agents. Go to https://aka.ms/TryPVA for more information and to sign up for a trial. 
 
-2. **Emerging topics** chart: Displays support topics that have a high volume of change in order of the change in volume over the specified time period. This chart shows the topics with high volume changes before they become popular topics.
-
-<<< INCLUDE IMAGE OF NEW CASES TAB IN CSI, HIGHLIGHT POPULAR TOPICS AND EMERGING TOPICS >>>
-
-To view detailed analytics and cases for any topic, scroll to the right in the charts and click on the Details icon. 
-
-<<< INCLUDE IMAGE OF THE POPULAR CASES CHART SCROLLED TO THE RIGHT SHOWING THE DETAILS ICON >>>
+- A [bot created in Power Virtual Agents](authoring-first-bot.md).
 
 
-## Identifying CSI topics to automate in Power Virtual Agents
+## Automate topics from the topic details page
 
-The topic details page for a topic shows Key Performance Metrics on the Analytics tab.
+After reviewing topic details and identifying a candiate for automation, you can automate the topic right away from the topic details page:
 
-<<< INCLUDE IMAGE OF ANALYTICS TAB FOR A TOPIC >>>
+1. In the topic details page, select **Automate** at the top. 
 
-Observe the metrics here to identify topics to automate in Power Virtual Agents.
+    ![Automate topics from topic details page](media/automate-topic-details.png)
 
-Topics that have:
-1. Large number of cases, meaning, high support volume
-2. High average resolution time, could mean that customers are either waiting in queue for a long time to connect to agents
-3. High resolution rate, meaning, agents are able to resolve the issue
+2. Customer Service Insights creates a new topic in Power Virtual Agents in a new browser tab. 
 
-Such topics are good candidates to optimize and automate in your bot in Power Virtual Agents.
+    The **Name** and **Trigger phrases** are prefilled from the topic you selected for automation. 
+    
+    Customer Service Insights prefills **Trigger phrases** with non-duplicated case titles from the most relevant cases (up to three cases). 
 
-You can also explore the Cases that are contained in this topic by clicking on the **Cases** tab. 
+3. Review the topic name and trigger phrases, and follow the other steps in the [Create custom topics for your bot](authoring-create-edit-topics.md) article to complete the creation of your bot topic. 
 
-The Cases tab shows all the cases that Go through the case titles to determine the issues customers are reaching support for.  This will also help identify if the topic is good to auatomate.
+## Automate topics from the Topics page
+You can also automate topics from  the Topics page: hover over the topic you want to automate in the topic list, then select the **Automate** icon. 
 
-<<< INCLUDE IMAGE OF CASES TAB FOR A TOPIC >>>
-
-
-## Automate in Power Virtual Agents
-
-Once you have identified a topic to automate in your bot, click the **Automate** button on the command bar. 
-
-<<< INCLUDE IMAGE OF AUTOMATE BUTTON HIGHLIGHTED ON CASES TAB  >>>
-
-This button is available on the **Analytics** tab of the topic and on the **Cases** tab of the topic.
-
-
-## New topic in Power Virtual Agents
-
-Discuss license needs and having a bot created. Discuss experience when you don't have these setup. Discuss experience of successful automation.
-
-
-> [!NOTE]
->  
-> Watch this video to learn more about creating topic suggestions from CSI 
->
-> <<<< INCLUDE VIDEO  >>>
+![Automate topics from Topics page](media/automate-topic-list.png)
 
 
 
