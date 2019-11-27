@@ -14,9 +14,9 @@ ms.cusom: "multi-geo, gdpr"
 
 # Data locations for organizations using Power Virtual Agents
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
     
-Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as “regions”) listed in this article. You can create a bot by default in your tenant’s location or you can choose the datacenter you want to use when [setting up your environment](getting-started-new-environment.md).
+Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as “regions”) listed in this article. You can create a bot by default in your tenant’s location or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 Microsoft may replicate customer data to other regions available within the same geography for data durability. 
 
