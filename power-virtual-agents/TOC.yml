@@ -32,6 +32,8 @@
      href: authoring-variables.md
    - name: Create topics from existing support content
      href: advanced-create-topics-from-web.md
+   - name: Create topics from Customer Service Insights
+     href: advanced-create-topics-from-csi.md
    - name: Add end-user authentication
      href: advanced-end-user-authentication.md
    - name: Add actions using Power Automate
