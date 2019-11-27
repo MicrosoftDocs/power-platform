@@ -19,7 +19,7 @@ To use Power Virtual Agents, you need a license for your organization as well as
 
 This article focuses on how to assign licenses for Power Virtual Agents to your users.
 
-For more information subscriptions for Power Virtual Agents, see the [pricing page](https://go.microsoft.com/fwlink/?linkid=2099502). 
+For more information about Power Virtual Agents licensing, see the [pricing page](https://go.microsoft.com/fwlink/?linkid=2099502). 
 
 ## Buy base and user licenses from the Microsoft 365 admin center
 You can purchase Power Virtual Agents licenses for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx).
