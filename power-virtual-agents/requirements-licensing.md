@@ -1,6 +1,6 @@
 ---
 title: "Assign user licenses for Power Virtual Agents"
-description: "Assign licenses and manage access to Power Virtual Agents in your organization"
+description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing"
 ms.date: 12/02/2019
 ms.service:
@@ -15,14 +15,14 @@ ms.collection: virtual-agent
 
 # Assign licenses for Power Virtual Agents
 
-To use Power Virtual Agents, you need a license for your organization as well as a license for each user.
-
-For more information about buying subscriptions for Power Virtual Agents, see the [pricing page](https://go.microsoft.com/fwlink/?linkid=2099502). 
+To use Power Virtual Agents, you need a license for your organization as well as a license for each user. 
 
 This article focuses on how to assign licenses for Power Virtual Agents to your users.
 
+For more information subscriptions for Power Virtual Agents, see the [pricing page](https://go.microsoft.com/fwlink/?linkid=2099502). 
+
 ## Buy base and user licenses from the Microsoft 365 admin center
-You can purchase Power Virtual Agents licenses for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
+You can purchase Power Virtual Agents licenses for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx).
 
   > ![Note]
   > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting **Try the new admin center** located at the top of the Home page.
@@ -52,18 +52,18 @@ You can purchase Power Virtual Agents licenses for your organization from the [M
 5. Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
 
   > [!NOTE]
-  > To simplify User License management you can assign licenses to an AAD security group. [Learn more](/azure/active-directory/users-groups-roles/licensing-groups-assign)
+  > To simplify user license management you can assign licenses to an Azure Active Directory (AAD) security group. More information: [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
-The selected users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
+The users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
 
 ## Trial plans
-Users in your organization can trial Power Virtual Agents for a limited time period.
+Users in your organization can try Power Virtual Agents for a limited time period.
 
-You can choose to disable or enable the ability for users in your organization to sign up for a trial by modifying the **AllowAdHocSubscriptions** flag in [your organization settings](/azure/active-directory/users-groups-roles/directory-self-service-signup). 
+You can disable or enable the ability for users to sign up for a trial by modifying the **AllowAdHocSubscriptions** flag in [your organization settings](/azure/active-directory/users-groups-roles/directory-self-service-signup). 
 
 
-## Billing unit 
-Currently, we only report the total number of sessions in the product. We do not report the number of billed sessions. 
+## Billing unit and billing sessions
+Currently, we only report the total number of sessions within the product. We do not report the number of billed sessions. 
 
 The number of billed sessions will be always lower than the number of sessions. We are working on bringing the number of billed sessions into the product soon.
 
@@ -76,12 +76,12 @@ A billed session is an interaction between the customer and the bot and represen
 
 3. When a bot is unable to answer the question adequately and the interaction is [escalated to a live agent](advanced-hand-off.md).
 
-On top of the above scenarios, there are two additional limitations of a billed session:
+There are two additional limitations:
 
 - One billed session can last 60 minutes at its longest.
 - One billed session can contain a maximum of 100 conversational turns (one turn is defined as one exchange between the user and the bot).
 
-Please note that, at the moment, you will be billed even if you chat with the bot in the embedded test chat. 
+Please note that you will be billed even if you chat with the bot in the embedded test chat. 
 
 ## Using Power Automate with a Power Virtual Agents license
 In order to have unlimited flow runs in Power Automate, you need to create a flow [using the link from within the Power Virtual Agents app](advanced-flow.md). 
