@@ -24,14 +24,14 @@ This article focuses on how to assign licenses for Power Virtual Agents to your 
 
 
 ## Managing licenses using the Microsoft 365 admin center
-You can purchase Power Virtual Agents licenses for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx).
+You can purchase Power Virtual Agents licenses for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) (you may need to sign in with an admin account).
 
 **Purchase base and user licenses:**
 
   > [!Note]
   > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx).
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
 
 2. On the side navigation pane, expand the **Billing** menu and then select **Purchase services**.
 
