@@ -59,7 +59,7 @@ The users can now sign in to the [Power Virtual Agents portal](https://powerva.m
 ## Trial plans
 Users in your organization can try Power Virtual Agents for a limited time period.
 
-You can disable or enable the ability for users to sign up for a trial by modifying the **AllowAdHocSubscriptions** flag in [your organization settings](/azure/active-directory/users-groups-roles/directory-self-service-signup). 
+You can disable or enable the ability for users to sign up for a trial themselves by modifying the **AllowAdHocSubscriptions** flag in [your organization settings](/azure/active-directory/users-groups-roles/directory-self-service-signup). 
 
 
 ## Billing unit and billing sessions
@@ -80,7 +80,7 @@ There are two additional limitations:
 - One billed session can last 60 minutes at its longest.
 - One billed session can contain a maximum of 100 conversational turns (one turn is defined as one exchange between the user and the bot).
 
-Please note that you will be billed even if you chat with the bot in the embedded test chat. 
+Note that you will be billed even if you chat with the bot in the embedded test chat. 
 
 ## Using Power Automate with a Power Virtual Agents license
 In order to have unlimited flow runs in Power Automate, you need to create a flow [using the link from within the Power Virtual Agents app](advanced-flow.md). 
