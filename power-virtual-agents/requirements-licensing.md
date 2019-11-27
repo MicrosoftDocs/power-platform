@@ -1,6 +1,6 @@
 ---
-title: "Enable user licences for Power Virtual Agent"
-description: "Learn how to manage access to Power Virtual Agents in your organization"
+title: "Assign user licenses for Power Virtual Agents"
+description: "Assign licenses and manage access to Power Virtual Agents in your organization"
 keywords: "Administration, licensing"
 ms.date: 12/02/2019
 ms.service:
@@ -15,48 +15,46 @@ ms.collection: virtual-agent
 
 # Assign licenses for Power Virtual Agents
 
-You need an organizational license and a user license to use Power Virtual Agents.
+To use Power Virtual Agents, you need a license for your organization as well as a license for each user.
 
-To see the available subscriptions for Power Virtual Agents see the [pricing page](https://go.microsoft.com/fwlink/?linkid=2099502). 
+For more information about buying subscriptions for Power Virtual Agents, see the [pricing page](https://go.microsoft.com/fwlink/?linkid=2099502). 
 
 This article focuses on how to assign licenses for Power Virtual Agents to your users.
 
-Visit [Microsoft Volume Licensing](http://www.microsoftvolumelicensing.com/Default.aspx) to quickly access licensing terms, conditions, and supplemental information relevant to the use of Power Virtual Agents
-
-## Managing liceneses using the Microsoft 365 admin center
-You can pruchase Power Virtual Agents licenses for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
-
-**Purchase base and user licences:**
+## Buy base and user licenses from the Microsoft 365 admin center
+You can purchase Power Virtual Agents licenses for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
 
   > ![Note]
-  > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+  > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting **Try the new admin center** located at the top of the Home page.
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx).
 
-2. On the side navigation pane, expand the **Billing** menu and then select **Purchase services**.
+2. On the navigation pane, expand the **Billing** menu and then select **Purchase services**.
 
-3. Search for and select the subscriptions you want to purchase. On the confirmation screen select the number of licenses you would like to purchase.
+3. Search for and select the subscriptions you want to purchase. On the confirmation screen, select the number of licenses to purchase.
 
 4. Complete the check out process.
 
-**Give indidvidual users access:**
+**Assign licenses to users:**
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx)
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx).
 
-2. On the side navigation pane, expand the **Users** menu and then select **Active users**.
+2. On the navigation pane, expand the **Users** menu and then select **Active users**.
 
     ![Expand Users, then select Active users](media/licensing-menu-users.png)
 
-3. Select users to whom you would like to give access and select **Manage product licenses**.
+3. Select the name, and then select **Manage product licenses**.
 
    ![Select a user and then manage product licenses](media/licensing-manage.png)
 
-4. In the flyout panel that opens, select the checkbox next to **Power Virtual Agents user license**. Select **Save changes**. Repeat these steps to add more users, or exist the Microsoft 365 admin center if you're finished.
+4. On the flyout panel, select the checkbox next to **Power Virtual Agents user license**. Select **Save changes**. 
+
+5. Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
 
   > [!NOTE]
   > To simplify User License management you can assign licenses to an AAD security group. [Learn more](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
-5. The selected users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
+The selected users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
 
 ## Trial plans
 Users in your organization can trial Power Virtual Agents for a limited time period.
