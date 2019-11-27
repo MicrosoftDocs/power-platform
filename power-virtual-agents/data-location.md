@@ -1,6 +1,6 @@
 ---
 title: "Data location for Power Virtual Agents"
-description: "Identify the geographic location where your data will reside"
+description: "Identify the geographic location where your data will reside."
 ms.date: 11/27/2019
 ms.service:
   - "dynamics-365-ai"
@@ -8,6 +8,8 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.collection: virtual-agent
+ms.cusom: "multi-geo, gdpr"
 ---
 
 # Data locations for organizations using Power Virtual Agents
