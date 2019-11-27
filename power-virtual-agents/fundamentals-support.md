@@ -26,7 +26,7 @@ Check community forums to see if other users have posted a solution that might h
 
 - [Submit an idea](https://go.microsoft.com/fwlink/?linkid=2064961)
     
-    Do you have a great idea that will make Power Virtul Agents even better? We'd love to hear from you!
+    Do you have a great idea that will make Power Virtual Agents even better? We'd love to hear from you!
 
 ## Microsoft support
 
