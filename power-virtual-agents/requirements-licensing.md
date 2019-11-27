@@ -59,7 +59,7 @@ The users can now sign in to the [Power Virtual Agents portal](https://powerva.m
 ## Trial plans
 Users in your organization can try Power Virtual Agents for a limited time period.
 
-You can disable or enable the ability for users to sign up for a trial themselves by modifying the **AllowAdHocSubscriptions** flag in [your organization settings](/azure/active-directory/users-groups-roles/directory-self-service-signup). 
+You can disable or enable the ability for users to sign up for a trial themselves by modifying the **AllowAdHocSubscriptions** flag in your organization settings. More information: [What is self-service sign-up for Azure Active Directory?](/azure/active-directory/users-groups-roles/directory-self-service-signup). 
 
 
 ## Billing unit and billing sessions
