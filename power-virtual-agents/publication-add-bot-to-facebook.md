@@ -198,6 +198,9 @@ When you do not want the bot to be reachable in Facebook Messenger or Facebook W
 1. Select the **Facebook** tile and then **Delete**.
 
    ![Delete Facebook channel](media/channel-fb-delete-channel.png)
+   
+## Updating bot content for existing conversation on Facebook
+To prevent disruption on existing conversations between user and the bot, existing conversations will not be updated to latest bot content immediately after new publish until the conversation has been idle over a period of time.  New conversations between user and the bot will have the latest published bot content.
 
 ## Known limitations
 - You will need to create a new bot if the Customer Satisfaction (CSAT) survey shows up as a non-interactable card image for a bot created during public preview to access the latest CSAT content.
