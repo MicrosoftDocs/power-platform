@@ -1,7 +1,7 @@
 ---
 title: "Find community help and get support for Power Virtual Agents"
 description: "Use the Power Virtual Agents community forums to ask and get help and trips and ideas, or get support directly from Microsoft."
-ms.date: 11/19/2019
+ms.date: 12/2/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
