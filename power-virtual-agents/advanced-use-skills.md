@@ -16,12 +16,12 @@ ms.collection: virtual-agent
 
 # Use Azure Bot Framework Skills in Power Virtual Agents
 
-Azure Bot Framework Skills can be used with Power Virtual Agents bots to add conversational actions within any topic. For example, Skills can embed re-usable converational multi-turn actions to perform complex tasks like booking appointments, managing tasks, and more.
+Azure Bot Framework Skills can be used with Power Virtual Agents bots to add conversational actions within any topic. For example, Skills can embed re-usable conversational multi-turn actions to perform complex tasks like booking appointments, managing tasks, and more.
 
 ## Add a Skill to bot conversations
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy the Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
-Next, [register Skill in Power Virtual Agent](configuration-add-skills.md).
+Next, [register a Skill in Power Virtual Agent](configuration-add-skills.md).
 
 **Add a Skill into a conversation:**
 
