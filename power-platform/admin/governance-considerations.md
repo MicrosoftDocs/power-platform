@@ -158,15 +158,14 @@ Currently, all users with Office E3 licenses can create apps in the Default envi
 **Recommendation**
 The [PowerShell cmdlets](https://powerapps.microsoft.com/blog/gdpr-admin-powershell-cmdlets/) and [Management connectors](https://powerapps.microsoft.com/blog/new-connectors-for-powerapps-and-flow-resources/) provide full flexibility and control to administrators to build the policies they want for their organization.
 
-<!--
-TO DO: Link to sample source or remove this block
+<!-- 
 Here are three samples: 
 
 1. Download a report of activity with PowerShell. 
 This scripts downloads 4 files, which capture all apps, app permission, flows, and flow permissions within a tenant.  
 
-    > [!NOTE]
-    > The calling user or user account must be a global admin and must have a Power Apps plan or a Power Apps trial.
+   > [!NOTE]
+   > The calling user or user account must be a global admin and must have a Power Apps plan or a Power Apps trial.
 
 2. Notify un-authorized app creators and share their app with administrators (automated with Power Automate). This is a daily flow that identified ‘authorized’ creators via a security group(s) check and sends a notification to un-authorized app creators and a summary report to administrators. The flow also shares the app with administrators for auditing.
 
@@ -188,15 +187,15 @@ It’s well understood that monitoring as a critical aspect of managing software
 2. View Power Apps and Power Automate admin analytics
    1. Available now in preview from the new [Power Platform Admin center](https://aka.ms/ppac). 
    2. One can get information along the following lines: 
-     1. Active User and App usage  - how many users are using an app and how often? 
-     2. Location – where is the usage? 
-     3. Service Performance of connectors
-     4. Error reporting – which are the most error prone apps
-     5. Flows in use by type and date
-     6. Flows created by type and date
-     7. Application-level auditing 
-     8. Service Health
-     9. Connectors used
+      1. Active User and App usage  - how many users are using an app and how often? 
+      2. Location – where is the usage? 
+      3. Service Performance of connectors
+      4. Error reporting – which are the most error prone apps
+      5. Flows in use by type and date
+      6. Flows created by type and date
+      7. Application-level auditing 
+      8. Service Health
+      9. Connectors used
 
 ### View app resources used in an Environment
 
