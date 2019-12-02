@@ -26,7 +26,7 @@ Using Power Virtual Agents, you can:
 - **Improve customer satisfaction** by allowing customers to self-help and resolve issues quickly 24/7 using rich personalized bot conversations. 
 
 > [!div class="nextstepaction"]
-> [Get started now](https://aka.ms/virtual-agent)
+> [Get started now](https://aka.ms/trypva)
 
 ## Highlights of Power Virtual Agents
 
