@@ -38,7 +38,6 @@ You can purchase Power Virtual Agents licenses for your organization on the [Mic
 
 
 **Assign licenses to users:**
-1
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
 
