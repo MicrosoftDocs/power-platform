@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/02/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,7 +31,7 @@ One of the unique things about Power Automate is you can use it to manage itself
 
 ## Common Power Automate tasks
 
-daily on schedule, and uses the Power Automate Management connector to get a list of the connection in the environment and sends you an e-mail. You can add it to your flows quickly using the template https://us.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/
+List new connectors created is a simple template you can get started with right away. It simply triggers daily on schedule, and uses the Power Automate Management connector to get a list of the connection in the environment and sends you an e-mail. You can add it to your flows quickly using the template https://us.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/
 
 > [!div class="mx-imgBorder"] 
 > ![](media/list-new-flow-connectors.png "List new connectors")
