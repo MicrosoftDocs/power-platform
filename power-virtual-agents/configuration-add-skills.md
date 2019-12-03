@@ -13,14 +13,29 @@ ms.custom: "azure, extend"
 ms.collection: virtual-agent
 ---
 
+# IAAN - PLEASE ADD THE PREVIEW CAPABILITY BANNER HERE - Skills is in PREVIEW UNTIL April 2020.
 
 # Extend your bot using Bot Framework Skills
 Power Virtual Agents allows you to extend your bot using Azure Bot Framework Skills. Skills can be used to embed re-usable conversational multi-turn actions to perform complex tasks like booking appointments, managing tasks, and more. Existing bots built using Bot Framework's pro-code tools can be seamlessly embedded as Skills into Power Virtual Agent's no-code graphical conversation designer.
 
 This article is intended for System administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). Once a Skill has been registered, Bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
 
+## Compare use of Flows and Skills actions
+The following table will help you determine when to use Skills for a particular conversation.
+
+|    | **Flow actions** | **Skill actions** |
+| -- | -- | -- |
+| **Users** | Bot authors can build reusable Flows to embed into any bot conversation | Developers need to create, deploy and host custom Skills in their own environment |
+| **Conversation authoring** | Use Flows for simple, single-turn transactions. E.g. Place an order, Get Order Status, etc. | Use Skills for complex, multi-turn conversations. E.g. Schedule a meeting, Book a flight, etc. |
+| **Bot response** | Use Flows to emit simple bot response e.g. Show a personalized message, inline images, etc. | Use Skills to emit any supported bot response. E.g. Show an adaptive card, Send random responses. |
+| **Trigger client-side actions** | Use Flows to trigger server-side single-turn actions E.g. Call an API | Use Skills to trigger server-side and client-side actions E.g. Navigate to a page on bot response |
+
+
 ## Configure a Skill for use in Power Virtual Agents
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
+
+>[!NOTE]
+>Power Virtual Agents only supports Skills built using Bot Framework Skills library version 4.5 [see nuget](https://www.nuget.org/packages/Microsoft.Bot.Builder.Skills/4.5.1)
 
 Before registering the Skill, provide the bot's ID to your Skill developer to authorize the bot to call actions in the Skill.
 
