@@ -2,7 +2,7 @@
 title: "Add a Power Virtual Agents bot to Facebook"
 description: "Add your bot to Facebook so Facebook users can interact with it."
 keywords: "Channel, publish, Facebook"
-ms.date: 11/25/2019
+ms.date: 12/3/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
