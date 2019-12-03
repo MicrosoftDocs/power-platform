@@ -27,7 +27,7 @@ You can also delete the bot from Microsoft Teams when you no longer want people 
 
 ## Add your bot to Microsoft Teams
 
-Before adding your bot to Microsoft Teams, you should [publish your bot at least once](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content).
+Before adding your bot to Microsoft Teams, you should [publish your bot at least once](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content). You will need to have [permission from your tenant admin to sideload a Teams app](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies) to complete the following instructions.
 
 **Add bot to Microsoft Teams:**
 
@@ -78,6 +78,11 @@ After installing the app package, you will automatically start a chat with the b
 
    ![Delete Microsoft Teams channel](media/channel-teams-delete-channel.png)
 
+## Updating bot content for existing conversations on Teams
+
+To prevent disruptions during a chat between a user and the bot, existing conversations will not be updated to the latest bot content immediately after a new publish. Instead, the content will be updated after the conversation has been idle for 30 minutes..  
+
+New conversations between user and the bot will have the latest published bot content.
 
 
 ## Distribute your Microsoft Teams bot

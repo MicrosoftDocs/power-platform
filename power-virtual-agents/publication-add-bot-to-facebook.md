@@ -199,6 +199,12 @@ When you do not want the bot to be reachable in Facebook Messenger or Facebook W
 
    ![Delete Facebook channel](media/channel-fb-delete-channel.png)
 
+## Updating bot content for existing conversations on Facebook
+
+To prevent disruptions during a chat between a user and the bot, existing conversations will not be updated to the latest bot content immediately after a new publish. Instead, the content will be updated after the conversation has been idle for 30 minutes.
+
+New conversations between user and the bot will have the latest published bot content.
+
 ## Known limitations
 - You will need to create a new bot if the Customer Satisfaction (CSAT) survey shows up as a non-interactable card image for a bot created during public preview to access the latest CSAT content.
 - It might take a few minutes before the bot becomes reachable by users on Facebook pages after the Facebook channel is added.
