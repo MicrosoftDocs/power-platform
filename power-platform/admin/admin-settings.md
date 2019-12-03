@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 12/03/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can view and manage the settings for your environments by going to the **Environments** page, selecting an environment, and then selecting **Settings**.
+You can view and manage the settings for your environments by signing in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), going to the **Environments** page, selecting an environment, and then selecting **Settings**.
 
 ![Environment details](media/environment-details.png "Environment details")
 
