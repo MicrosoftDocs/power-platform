@@ -27,7 +27,7 @@ You can also delete the bot from Microsoft Teams when you no longer want people 
 
 ## Add your bot to Microsoft Teams
 
-Before adding your bot to Microsoft Teams, you should [publish your bot at least once](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content). You will need to have [permission from your tenant admin to sideload a Teams app](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies) to complete the following instructions.
+Before adding your bot to Microsoft Teams, you should [publish your bot at least once](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content). You will need to have [permission from your tenant admin to sideload a Teams app](/microsoftteams/teams-app-permission-policies) to complete the following instructions.
 
 **Add bot to Microsoft Teams:**
 
