@@ -13,9 +13,10 @@ ms.custom: "azure, extend"
 ms.collection: virtual-agent
 ---
 
+# Extend your bot using Bot Framework Skills
+
 [This topic is pre-release documentation and is subject to change.]
 
-# Extend your bot using Bot Framework Skills
 Power Virtual Agents enables you to extend your bot using Azure Bot Framework Skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a Skill and embed the Skill within a Power Virtual Agents bot.
 
 This article is intended for System administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). Once a Skill has been registered, Bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
