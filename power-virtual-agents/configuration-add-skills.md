@@ -27,7 +27,7 @@ The following table will help you determine when to use Skills for a conversatio
 |    | **Flow actions** | **Skill actions** |
 | -- | -- | -- |
 | **Persona** | Bot authors can build reusable Flows to embed into any bot conversation | Developers can create, deploy and host custom Skills in their own environment |
-| **Conversation** | Use Flows for simple, single-turn transactions. For example, place an order, or get order status. | Use Skills for complex, multi-turn conversations. For example, schedule a meeting or book a flight. |
+| **Conversation** | Use Flows for simple, single-turn operations. For example, place an order, or get order status. | Use Skills for complex, multi-turn operations. For example, schedule a meeting or book a flight. |
 | **Response** | Use Flows to emit a simple bot response. For example, show a personalized message or inline images. | Use Skills to emit any supported bot response. For example, show an adaptive card or send random responses. |
 | **Actions** | Use Flows to trigger server-side single-turn actions. For example, call an HTTP API or trigger a custom connector. | Use Skills to trigger server-side and client-side events and actions. For example, navigate to a page upon bot response. |
 
