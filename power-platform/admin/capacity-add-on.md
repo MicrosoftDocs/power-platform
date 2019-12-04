@@ -110,7 +110,7 @@ Yes. Please use the following steps.
 6. Proceed with sharing the model-driven app, and assign the security role from Step #4b to the users expected to access the app.  
 
 ### How do I setup an app to use app passes?
-See [Power Apps per app plan](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#powerapps-per-app-plan).
+See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
 
 ### When can I see how many capacity add-ons are consumed? 
 Check back later for availability. 
