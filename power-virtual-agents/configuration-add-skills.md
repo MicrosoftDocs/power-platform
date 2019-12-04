@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 Power Virtual Agents enables you to extend your bot using Azure Bot Framework Skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a Skill and embed the Skill within a Power Virtual Agents bot.
 
-This article is intended for system administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). Once a Skill has been registered, bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
+This article is intended for system administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). After a Skill has been registered, bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
 
 ## Compare use of Flows and Skills actions
 The following table will help you determine when to use Skills for a conversation.
@@ -63,7 +63,7 @@ Before registering the Skill, provide the bot's ID to your Skills developer to a
  
    ![Select Add skill button](media/skills-provide-id.png)
 
-1. Enter the URL to the Skill manifest. A Skill's manifest contains vital information that your bot will need to trigger actions within a Skill.
+1. Enter the URL to the Skill manifest. A Skill's manifest contains the information that your bot will need to trigger actions within a Skill.
 
 1. Select **Next** to begin the [validation process](#validation-performed-during-registering-a-skill). When successful, your Skill is added to your bot. You can now [use this Skill in your topics](advanced-use-skills.md). 
 
