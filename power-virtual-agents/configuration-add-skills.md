@@ -1,8 +1,8 @@
 ---
 title: "Extend your bot using Bot Framework Skills"
-description: "Skills extend your bots's conversational capabilities by automating a series of actions within a topic. They enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
+description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities"
-ms.date: 12/2/2019
+ms.date: 12/4/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -13,16 +13,32 @@ ms.custom: "azure, extend"
 ms.collection: virtual-agent
 ---
 
-
 # Extend your bot using Bot Framework Skills
-Power Virtual Agents allows you to extend your bot using Azure Bot Framework Skills. Skills can be used to embed re-usable conversational multi-turn actions to perform complex tasks like booking appointments, managing tasks, and more. Existing bots built using Bot Framework's pro-code tools can be seamlessly embedded as Skills into Power Virtual Agent's no-code graphical conversation designer.
 
-This article is intended for System administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). Once a Skill has been registered, Bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
+[This topic is pre-release documentation and is subject to change.]
+
+Power Virtual Agents enables you to extend your bot using Azure Bot Framework Skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a Skill and embed the Skill within a Power Virtual Agents bot.
+
+This article is intended for system administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). After a Skill has been registered, bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
+
+## Compare use of Flows and Skills actions
+The following table will help you determine when to use Skills for a conversation.
+
+|    | **Flow actions** | **Skill actions** |
+| -- | -- | -- |
+| **Persona** | Bot authors can build reusable Flows to embed into any bot conversation | Developers can create, deploy and host custom Skills in their own environment |
+| **Conversation** | Use Flows for simple, single-turn operations. For example, place an order, or get order status. | Use Skills for complex, multi-turn operations. For example, schedule a meeting or book a flight. |
+| **Response** | Use Flows to emit a simple bot response. For example, show a personalized message or inline images. | Use Skills to emit any supported bot response. For example, show an adaptive card or send random responses. |
+| **Actions** | Use Flows to trigger server-side single-turn actions. For example, call an HTTP API or trigger a custom connector. | Use Skills to trigger server-side and client-side events and actions. For example, navigate to a page upon bot response. |
+
 
 ## Configure a Skill for use in Power Virtual Agents
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
-Before registering the Skill, provide the bot's ID to your Skill developer to authorize the bot to call actions in the Skill.
+>[!NOTE]
+>Power Virtual Agents only supports Skills built using [Bot Framework Skills package version 4.5](https://www.nuget.org/packages/Microsoft.Bot.Builder.Skills/4.5.1)
+
+Before registering the Skill, provide the bot's ID to your Skills developer to authorize the bot to call actions in the Skill.
 
 **Add bot to Skill's allow list:**
 
@@ -34,12 +50,12 @@ Before registering the Skill, provide the bot's ID to your Skill developer to au
  
    ![Select Provide id for allow list button](media/skills-provide-id.png)
 
-1. A window will show with your unique ID. Copy this and provide it to your Skills developer.
+1. A window will show with your unique ID. Copy this ID and provide it to your Skills developer.
 
    ![Windows showing unique ID](media/skills-provide-id-modal.png)
 
 
-**Enter Skill manifest URL to add a Skill to your bot:**
+**Enter the Skill manifest URL to add a Skill to your bot:**
 
 1. In the [Power Virtual Agents portal](https://powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
 
@@ -49,34 +65,30 @@ Before registering the Skill, provide the bot's ID to your Skill developer to au
  
    ![Select Add skill button](media/skills-provide-id.png)
 
-1. Enter the URL to the Skill manifest. A Skill's manifest contains vital information that your bot will need to trigger actions within a Skill.
+1. Enter the URL to the Skill manifest. A Skill's manifest contains the information that your bot will need to trigger actions within a Skill.
 
-1. Select **Next** to begin the [validation process](#validation-performed-during-registering-a-skill). If successful, your Skill is added to your bot. You can now [use this Skill in your topics](advanced-use-skills.md). 
+1. Select **Next** to begin the [validation process](#validation-performed-during-registering-a-skill). When successful, your Skill is added to your bot. You can now [use this Skill in your topics](advanced-use-skills.md). 
 
 ## Compliance considerations
 To protect user's privacy, we restrict users from adding Skills that are deployed outside of the signed-in user's Azure tenant. However, your bot may send customer information to a Skill if your Skill and bot are deployed in different regions.
 
 ### Validation performed during registering a Skill
 
-A series of validation checks are made against the URL. The checks are described as follows - the failure of these checks may result in an error message as described in this table.
+A series of validation checks are made against the URL. The checks are described as follows. The failure of these checks may result in an error message as described in this table.
 
 Validation step|Error message|Description or mitigation
 ---|---|---
-Valdate Skill manifest URL|URL_MALFORMED(100); URL_NOT_HTTPS(101)|Url is not https (http, warning?); Url is not valid
-Validate if Skill manifest can be retrieved|MANIFEST_FETCH_FAILED(200)|Network or http (not found, not authorized) errors getting the manifest; No response in 3 seconds
-Validate if Skill manifest can be read|MANIFEST_TOO_LARGE(201), MANIFEST_MALFORMED(202)|Syntax errors in the manifest; Optional manifest properties are missing that we need requires; Manifest larger than 500kb
-Validate Skill manifest version|MANIFEST_UNVERSIONED(203)|Manifest doesn't have a skill version
-Validate if Skill is previously registered|MANIFEST_ALREADY_IMPORTED(204)|Already registered (with same version?)
-Validate Skill manifest endpoint origin|MANIFEST_ENDPOINT_ORIGIN_MISMATCH(206)|Attacker altered manifest and hosted on their website
-Validate Skill is hosted in signed in user's tenant|APPID_NOT_IN_TENANT(400)|Skill is not registered in the tenant of the bot author
-Validate Skill actions|LIMITS_TOO_MANY_ACTIONS(300)|There are too many Skill actions defined in Skill manigest. We only support registering Skills with 25 actions.
-Validate Skill action input parameters|LIMITS_TOO_MANY_INPUTS(301)|There are too many Skill action input parameters. We only support Skill actions that have 25 input parameters.
-Validate Skill action output parameters|LIMITS_TOO_MANY_OUTPUTS(302)|There are too many Skill action output parameters. We only support Skill actions that have 25 output parameters.
-Validate Skill count|LIMITS_TOO_MANY_SKILLS(303)|There are too many Skills added into a bot. We only support a bot to have 25 registered Skills.
-Validate Skill action language|MANIFEST_MISSING_ACTION_LANGUAGE(205)|Skill has actions with unsupported locales. We only support Skills with Actions in en-US.
-Validate security token to trigger Skill|AADERROR_NOT_MULTITENANT(600)|Skill is not registered as a multi-tenant app (because bot not registered in customer's tenant)
-Validate security token to trigger Skill|AADERROR_OTHER(601)|There may be a transient error to acquire a security token to trigger Skill. Please retry.
-Validate Skill health|ENDPOINT_HEALTHCHECK_FAILED(700)|Network errors, http errors (not found, not authenticated)
-
-
-
+Valdate Skill manifest URL|The link isn't valid; The link must begin with https:// | Re-enter the link as a secure URL. |
+Validate if Skill manifest can be retrieved|We ran into problems getting the Skill manifest.| Try again or contact your Skills developer.
+Validate if Skill manifest can be read|The manifest is too large; The manifest is incompatible.| Fix syntactical errors in the manifest. For example, check whether optional manifest properties are missing that are required. Manifest size must be less than or equal to 500KB. |
+Validate if Skill is previously registered|This Skill has already been added to your bot.|Delete the Skill and try again. |
+Validate Skill manifest endpoint origin|There's a mismatch in your Skill endpoints.|Contact your Skills developer. |
+Validate Skill is hosted in signed in user's tenant|To add a Skill, it must first be registered.| Your global administrator must register the Skill into the signed in user's organization. |
+Validate Skill actions|The Skill is limited to 25 actions.|There are too many Skill actions defined in Skill manifest. Remove actions and try again. |
+Validate Skill action input parameters|Actions are limited to 25 inputs.|There are too many Skill action input parameters. Remove parameters and try again. |
+Validate Skill action output parameters|Actions are limited to 25 outputs.|There are too many Skill action output parameters. Remove parameter and try again. |
+Validate Skill count|Your bot can have a maximum of 25 Skills.| There are too many Skills added into a bot. Remove an existing Skill and try again. |
+Validate Skill action language|Currently, Skills are only supported in English.| Skill has actions with unsupported locales. We only support Skills with Actions in English ('en') locale. |
+Validate AAD app setting |The Skill must be registered multi-tenant.| Contact your Skills developer. |
+Validate security token |It looks like something went wrong.|There may be a transient error to acquire a security token to trigger Skill. Retry.|
+Validate Skill health|Something went wrong while checking your Skill.|Try again or contact your Skills developer.|
