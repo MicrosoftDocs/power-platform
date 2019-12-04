@@ -1,8 +1,8 @@
 ---
 title: "Extend your bot using Bot Framework Skills"
-description: "Skills extend your bots's conversational capabilities by automating a series of actions within a topic. They enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
+description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities"
-ms.date: 12/2/2019
+ms.date: 12/4/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -15,21 +15,19 @@ ms.collection: virtual-agent
 
 # Extend your bot using Bot Framework Skills
 
-[This topic is pre-release documentation and is subject to change.]
-
 Power Virtual Agents enables you to extend your bot using Azure Bot Framework Skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a Skill and embed the Skill within a Power Virtual Agents bot.
 
-This article is intended for System administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). Once a Skill has been registered, Bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
+This article is intended for system administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). Once a Skill has been registered, bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
 
 ## Compare use of Flows and Skills actions
-The following table will help you determine when to use Skills for a particular conversation.
+The following table will help you determine when to use Skills for a conversation.
 
 |    | **Flow actions** | **Skill actions** |
 | -- | -- | -- |
 | **Persona** | Bot authors can build reusable Flows to embed into any bot conversation | Developers can create, deploy and host custom Skills in their own environment |
-| **Conversation** | Use Flows for simple, single-turn transactions. e.g. Place an order, Get order status, etc. | Use Skills for complex, multi-turn conversations. e.g. Schedule a meeting, Book a flight, etc. |
-| **Response** | Use Flows to emit simple bot response e.g. Show a personalized message, inline images, etc. | Use Skills to emit any supported bot response. e.g. Show an adaptive card, Send random responses. |
-| **Actions** | Use Flows to trigger server-side single-turn actions e.g. call an HTTP API, trigger a custom connector, etc. | Use Skills to trigger server-side and client-side events and actions e.g. Navigate to a page upon bot response |
+| **Conversation** | Use Flows for simple, single-turn transactions. For example, place an order, or get order status. | Use Skills for complex, multi-turn conversations. For example, schedule a meeting or book a flight. |
+| **Response** | Use Flows to emit a simple bot response. For example, show a personalized message or inline images. | Use Skills to emit any supported bot response. For example, show an adaptive card or send random responses. |
+| **Actions** | Use Flows to trigger server-side single-turn actions. For example, call an HTTP API or trigger a custom connector. | Use Skills to trigger server-side and client-side events and actions. For example, navigate to a page upon bot response. |
 
 
 ## Configure a Skill for use in Power Virtual Agents
@@ -38,7 +36,7 @@ First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create a
 >[!NOTE]
 >Power Virtual Agents only supports Skills built using [Bot Framework Skills package version 4.5](https://www.nuget.org/packages/Microsoft.Bot.Builder.Skills/4.5.1)
 
-Before registering the Skill, provide the bot's ID to your Skill developer to authorize the bot to call actions in the Skill.
+Before registering the Skill, provide the bot's ID to your Skills developer to authorize the bot to call actions in the Skill.
 
 **Add bot to Skill's allow list:**
 
@@ -50,12 +48,12 @@ Before registering the Skill, provide the bot's ID to your Skill developer to au
  
    ![Select Provide id for allow list button](media/skills-provide-id.png)
 
-1. A window will show with your unique ID. Copy this and provide it to your Skills developer.
+1. A window will show with your unique ID. Copy this ID and provide it to your Skills developer.
 
    ![Windows showing unique ID](media/skills-provide-id-modal.png)
 
 
-**Enter Skill manifest URL to add a Skill to your bot:**
+**Enter the Skill manifest URL to add a Skill to your bot:**
 
 1. In the [Power Virtual Agents portal](https://powerva.microsoft.com), on the side navigation pane, expand the **Manage** menu and select **Skills**.
 
@@ -67,14 +65,14 @@ Before registering the Skill, provide the bot's ID to your Skill developer to au
 
 1. Enter the URL to the Skill manifest. A Skill's manifest contains vital information that your bot will need to trigger actions within a Skill.
 
-1. Select **Next** to begin the [validation process](#validation-performed-during-registering-a-skill). If successful, your Skill is added to your bot. You can now [use this Skill in your topics](advanced-use-skills.md). 
+1. Select **Next** to begin the [validation process](#validation-performed-during-registering-a-skill). When successful, your Skill is added to your bot. You can now [use this Skill in your topics](advanced-use-skills.md). 
 
 ## Compliance considerations
 To protect user's privacy, we restrict users from adding Skills that are deployed outside of the signed-in user's Azure tenant. However, your bot may send customer information to a Skill if your Skill and bot are deployed in different regions.
 
 ### Validation performed during registering a Skill
 
-A series of validation checks are made against the URL. The checks are described as follows - the failure of these checks may result in an error message as described in this table.
+A series of validation checks are made against the URL. The checks are described as follows. The failure of these checks may result in an error message as described in this table.
 
 Validation step|Error message|Description or mitigation
 ---|---|---
