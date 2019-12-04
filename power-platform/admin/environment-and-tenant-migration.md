@@ -7,7 +7,7 @@ ms-topic: conceptual
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 12/04/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,7 +30,7 @@ When you export an app, the dependent resources for your app will also get expor
 
 | Resource type | Supported | Import options |
 | --- | --- | --- |
-| App |Yes |There are two options to import an app into an environment: <ol><li><b>Create new</b> – The app will be created as a new app in the environment where the package is imported.</li> <li><b>Update</b> - the app already exists in the environment and will be updated when this package is imported.</li></ol> |
+| App |Yes, for canvas apps |There are two options to import an app into an environment: <ol><li><b>Create new</b> – The app will be created as a new app in the environment where the package is imported.</li> <li><b>Update</b> - the app already exists in the environment and will be updated when this package is imported.</li></ol> |
 | Power Automate |Yes |There are two options to import a flow into an environment: <ol><li><b>Create new</b> – The flow will be created as a new flow in the environment where the package is imported.</li> <li><b>Update</b> - The flow already exists in the environment and will be updated when this package is imported.</li></ol> <b>Note: </b>All resources that the flow depends on will also be included within the app package that is exported and will need to be configured with the package is imported. |
 | Custom Connectors |No |If an app depends on a custom connector <b>we do not</b> currently support exporting the connector as a part of the package. <p></p> If you have an app that relies on a custom connector, your only current option is to manually re-create or update the connector in your target environment and select that connector when you import the package. |
 | Connections |No |If an app depends on a connection (such as a SQL connection w/ credentials), we do not currently support exporting the connection or credentials as a part of the package. <p></p> If you have an app that relies on a shared connection (like SQL), your only current option is to manually re-create that connection with the appropriate credentials in your target environment and select that connection when you import the package. |
@@ -45,8 +45,8 @@ The ability to import an app is available to any user with "Environment Maker" p
 > [!NOTE]
 > While packaging is in preview, any user with a valid Power Apps license will be able to try out packaging for their apps and environments.
 
-## Exporting an app
-1. In http://web.powerapps.com, click or tap **Apps**, select the ellipses for the app you want to migrate, and then select **Export (preview)**.
+## Exporting a canvas app
+1. In http://web.powerapps.com, click or tap **Apps**, select the ellipses for the app you want to migrate, and then select **Export package (preview)**.
 
     ![Select export](./media/environment-and-tenant-migration/select-export.png)
 2. When the export package page opens, enter a Name and Description for the package.
@@ -58,8 +58,8 @@ The ability to import an app is available to any user with "Environment Maker" p
 
 4. When you are done select **Export** and the package file will begin downloading within a few seconds.
 
-## Importing an app
-1. In http://web.powerapps.com, click or tap **Apps**, and then select **Import package (preview)**.
+## Importing a canvas app
+1. In http://web.powerapps.com, click or tap **Apps**, and then select **Import canvas app**.
 
     ![Select import](./media/environment-and-tenant-migration/select-import.png)
 2. Select **Upload** and select the app package file that you want to import.
