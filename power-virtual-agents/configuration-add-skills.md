@@ -77,16 +77,16 @@ A series of validation checks are made against the URL. The checks are described
 Validation step|Error message|Description or mitigation
 ---|---|---
 Valdate Skill manifest URL|The link isn't valid; The link must begin with https:// | Re-enter the link as a secure URL. |
-Validate if Skill manifest can be retrieved|We ran into problems getting the skill manifest| Try again or contact your Skills developer.
-Validate if Skill manifest can be read|The manifest is too large, The manifest is incompatible| Fix syntactical errors in the manifest. For example, check whether optional manifest properties are missing that are required. Manifest size must be less than or equal to 500KB. |
-Validate if Skill is previously registered|This skill has already been added to your bot|Delete the skill and try again. |
-Validate Skill manifest endpoint origin|There's a mismatch in your skill endpoints|Contact your Skills developer. |
-Validate Skill is hosted in signed in user's tenant|To add a skill, it must first be registered| Your global administrator must register the skill into the signed in user's organization. |
-Validate Skill actions|The skill is limited to 25 actions|There are too many Skill actions defined in Skill manigest. Remove actions and try again. |
-Validate Skill action input parameters|Actions are limited to 25 inputs|There are too many Skill action input parameters. Remove parameters and try again. |
-Validate Skill action output parameters|Actions are limited to 25 outputs|There are too many Skill action output parameters. Remove parameter and try again. |
-Validate Skill count|Your bot can have a maximum of 25 skills| There are too many Skills added into a bot. Remove an existing Skill and try again. |
-Validate Skill action language|Currently, skills are only supported in English| Skill has actions with unsupported locales. We only support Skills with Actions in English ('en') locale. |
-Validate AAD app setting |The skill must be registered multi-tenant| Contact your Skills developer. |
-Validate security token |It looks like something went wrong|There may be a transient error to acquire a security token to trigger Skill. Retry.|
-Validate Skill health|Something went wrong while checking your skill|Try again or contact your Skills developer.|
+Validate if Skill manifest can be retrieved|We ran into problems getting the Skill manifest.| Try again or contact your Skills developer.
+Validate if Skill manifest can be read|The manifest is too large; The manifest is incompatible.| Fix syntactical errors in the manifest. For example, check whether optional manifest properties are missing that are required. Manifest size must be less than or equal to 500KB. |
+Validate if Skill is previously registered|This Skill has already been added to your bot.|Delete the Skill and try again. |
+Validate Skill manifest endpoint origin|There's a mismatch in your Skill endpoints.|Contact your Skills developer. |
+Validate Skill is hosted in signed in user's tenant|To add a Skill, it must first be registered.| Your global administrator must register the Skill into the signed in user's organization. |
+Validate Skill actions|The Skill is limited to 25 actions.|There are too many Skill actions defined in Skill manifest. Remove actions and try again. |
+Validate Skill action input parameters|Actions are limited to 25 inputs.|There are too many Skill action input parameters. Remove parameters and try again. |
+Validate Skill action output parameters|Actions are limited to 25 outputs.|There are too many Skill action output parameters. Remove parameter and try again. |
+Validate Skill count|Your bot can have a maximum of 25 Skills.| There are too many Skills added into a bot. Remove an existing Skill and try again. |
+Validate Skill action language|Currently, Skills are only supported in English.| Skill has actions with unsupported locales. We only support Skills with Actions in English ('en') locale. |
+Validate AAD app setting |The Skill must be registered multi-tenant.| Contact your Skills developer. |
+Validate security token |It looks like something went wrong.|There may be a transient error to acquire a security token to trigger Skill. Retry.|
+Validate Skill health|Something went wrong while checking your Skill.|Try again or contact your Skills developer.|
