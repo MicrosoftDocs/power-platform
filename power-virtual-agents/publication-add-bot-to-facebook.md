@@ -2,7 +2,7 @@
 title: "Add a Power Virtual Agents bot to Facebook"
 description: "Add your bot to Facebook so Facebook users can interact with it."
 keywords: "Channel, publish, Facebook"
-ms.date: 11/25/2019
+ms.date: 12/3/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -198,6 +198,12 @@ When you do not want the bot to be reachable in Facebook Messenger or Facebook W
 1. Select the **Facebook** tile and then **Delete**.
 
    ![Delete Facebook channel](media/channel-fb-delete-channel.png)
+
+## Updating bot content for existing conversations on Facebook
+
+To prevent disruptions during a chat between a user and the bot, existing conversations will not be updated to the latest bot content immediately after a new publish. Instead, the content will be updated after the conversation has been idle for 30 minutes.
+
+New conversations between user and the bot will have the latest published bot content.
 
 ## Known limitations
 - You will need to create a new bot if the Customer Satisfaction (CSAT) survey shows up as a non-interactable card image for a bot created during public preview to access the latest CSAT content.
