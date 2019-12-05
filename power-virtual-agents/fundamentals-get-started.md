@@ -1,7 +1,7 @@
 ---
 title: "Quickstart: Create and deploy a bot"
 description: "Create and publis a Power Virtual Agents bot in minutes with this quickstart guide."
-ms.date: 11/20/2019
+ms.date: 12/2/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -13,8 +13,6 @@ ms.collection: virtual-agent
 ---
 
 # Quickstart: Create and deploy a Power Virtual Agents bot
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
 
@@ -32,7 +30,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
     Your bot is created in the default Power Apps environment that was created for you when you signed up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, you can do so by expanding the **More options** menu and selecting a different environment.
 
    > [!NOTE] 
-   > Preview is currently supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with **Region** set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
+   > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with **Region** set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
    ![Name the new bot](media/create-new-bot-screen.png)
    
