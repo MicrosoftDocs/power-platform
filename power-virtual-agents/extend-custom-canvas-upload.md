@@ -2,7 +2,7 @@
 title: "Upload attachments in Power Virtual Agent bot conversations"
 description: "Connect your bot to Azure Storage so users can upload attachments within a bot conversation (dev coding required)."
 keywords: ""
-ms.date: 11/15/2019
+ms.date: 12/5/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
