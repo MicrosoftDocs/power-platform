@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 12/04/2019
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -26,7 +26,7 @@ Security roles control a user’s access to data through a set of access levels 
 To assign a user to an environment role, an Environment Admin can take these steps in the [Power Apps Admin center][1]:
 
 > [!NOTE]
-> Currently, roles can only be assigned to users. Please check back for when assigning a role to a security group is available.
+> Roles can also be assigned to [Owner](manage-teams.md#create-an-owner-team) and [Azure AD Group](manage-teams.md#create-a-group-team) teams. 
 
 1. Select the environment in the environments table.
 
