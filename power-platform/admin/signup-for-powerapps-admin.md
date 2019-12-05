@@ -110,3 +110,6 @@ is shared with them:
 3. Under **Pass assignment**, change the **Auto assign per app passes** toggle to **No**. The **Auto assign per app passes** toggle appears in all app setting.
 
     ![Pass assignment](media/pass-assignment.png "Pass assignment")
+
+> [!IMPORTANT]
+> Turning off the per app plan is currently available only for canvas apps. Model-driven apps and portals will have this ability in the future.
