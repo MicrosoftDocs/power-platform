@@ -78,7 +78,7 @@ Office admin center and you can allocate add-ons in the [Capacity](https://admi
 Admin center. More information: [Capacity add-ons](capacity-add-on.md)
 
 > [!IMPORTANT]
-> Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn’t attempt to assign them to users there. Power Apps per app plans must be allocated to a Common Data Service environment by an admin in Power Platform Admin center (<https://admin.powerplatform.microsoft.com>). 
+> Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn’t attempt to assign them to users there. Power Apps per app plans must be allocated to an environment by an admin in Power Platform Admin center (<https://admin.powerplatform.microsoft.com>). 
 >
 > After per app plans are allocated to an environment, they are assigned when apps are shared with end users in the environment.
 
