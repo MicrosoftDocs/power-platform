@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 12/09/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -36,7 +36,7 @@ This table below will describe the common requests limits as well as the allocat
 
 ## Microsoft Power Platform requests allocations based on licenses
 
-All the users of Microsoft Power Platform can use a certain number of requests based on the license they are assigned. The following table defines the number of requests a user can make in a 24-hour period:
+All the users of Microsoft Power Platform can use a certain number of requests based on the license they are assigned. The following table defines the number of requests a user can make in a 24-hour period: 
 
 | **User licenses**                                        | **Number of API requests / 24 hours**                                                                                                         |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,13 +45,15 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | Dynamics 365 Team Member                                 | 5,000                                                                                                                                         |
 | Power Apps per user plan                                  | 5,000                                                                                                                                         |
 | Power Automate per user plan                             | 5,000                                                                                                                                         |
-| Office licenses (that include Power Apps/Power Automate)  | 2,000                                                                                                                                         |
+| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 2,000                                                                                                                                         |
 | Application user / Non-interactive users                 | See *Non-licensed user* section below |
 
 
 <sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent.
 
 <sup>2</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
+
+<sup>3</sup>See the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 
 Users who are running apps and flows without a user license through the Power Apps per app plan or flows licensed through the Power Automate per flow plan are granted the following API request entitlement.
