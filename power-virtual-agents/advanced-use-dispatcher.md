@@ -164,7 +164,7 @@ The following steps require you to add code that registers your new dispatch end
       "DynamicsBotId": "<Bot Id>",
       "DynamicsBotTenantId": "<Tenant Id>",
       "DynamicsBotName": "<Bot Name>",
-      "DynamicsBotTokenEndpoint": "https://va.ai.dynamics.com/api/botmanagement/v1/directline/directlinetoken",
+      "DynamicsBotTokenEndpoint": "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken",
     }
     ```
 
@@ -358,7 +358,7 @@ The following steps require you to add code that registers your new dispatch end
 
 You're ready to test your dispatcher to ensure seamless interaction between DynamicsBot and your other bots.
 
-1.  [Deploy your DynamicsBot](https://docs.microsoft.com/dynamics365/ai/customer-service-virtual-agent/getting-started-deploy#to-share-your-bot-on-the-demo-website).    
+1.  [Publish your Bot to a demo website](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-web-channels).    
     ![Deploy our bot](media/open-deploy.png)
   
 2.  Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
