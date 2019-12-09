@@ -18,7 +18,7 @@ search.app:
 
 # Purchase Power Apps for your organization
 
-This topic provides information on how to purchase Power Apps for your organization as an administrator. You can purchase Power Apps through the Power Apps website directly, through the [Microsoft 365 admin center](https:admin.microsoft.com), or through your Microsoft representative or partner. This article will also provide information about the trial options available for a Power Apps plan and then explain how to purchase a Power Apps plan as an organization. For more information, see [Manage licenses in your organization](signup-question-and-answer.md).
+This topic provides information on how to purchase Power Apps for your organization as an administrator. You can purchase Power Apps through the Power Apps website directly, through the [Microsoft 365 admin center](https://admin.microsoft.com), or through your Microsoft representative or partner. This article will also provide information about the trial options available for a Power Apps plan and then explain how to purchase a Power Apps plan as an organization. For more information, see [Manage licenses in your organization](signup-question-and-answer.md).
 
 > [!NOTE]
 > To purchase Power Apps for an organization, you must already be an Office 365 Global or Billing Admin of a tenant, or you must create a tenant.
@@ -34,15 +34,15 @@ You can purchase Power Apps subscriptions for your organization from [Power Apps
 
 2. Select **Buy now** for the plan you want.
 
-3. Provide information to make the purchase, and then navigate to the [Microsoft 365 admin center](https:admin.microsoft.com) to assign Power Apps licenses to your users.
+3. Provide information to make the purchase, and then navigate to the [Microsoft 365 admin center](https://admin.microsoft.com) to assign Power Apps licenses to your users.
 
 ## Get Power Apps through Office 365
 
-You can purchase Power Apps subscriptions for your organization from the [Microsoft 365 admin center](https:admin.microsoft.com) and then assign Power Apps licenses to your users. [Learn more](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide).
+You can purchase Power Apps subscriptions for your organization from the [Microsoft 365 admin center](https://admin.microsoft.com) and then assign Power Apps licenses to your users. [Learn more](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide).
 
 ### Purchase a subscription trial
 
-1. Browse to the [Microsoft 365 admin center](https:admin.microsoft.com).
+1. Browse to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. On the left navigation pane, select **Billing -> Subscriptions**.
 
@@ -54,7 +54,7 @@ You can purchase Power Apps subscriptions for your organization from the [Micros
 
 ### Purchase a subscription
 
-1. Browse to the [Microsoft 365 admin center](https:admin.microsoft.com).
+1. Browse to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. On the left navigation pane, select **Billing -> Subscriptions**.
 
@@ -78,7 +78,7 @@ Office admin center and you can allocate add-ons in the [Capacity](https://admi
 Admin center. More information: [Capacity add-ons](capacity-add-on.md)
 
 > [!IMPORTANT]
-> Although, Power Apps per app plans appear in Microsoft 365 admin center (<https://admin.microsoft.com>), you shouldn’t attempt to assign them to users there. Power Apps per app plans must be allocated to a Common Data Service environment by an admin in Power Platform Admin center (<https://admin.powerplatform.microsoft.com>). 
+> Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn’t attempt to assign them to users there. Power Apps per app plans must be allocated to a Common Data Service environment by an admin in Power Platform Admin center (<https://admin.powerplatform.microsoft.com>). 
 >
 > After per app plans are allocated to an environment, they are assigned when apps are shared with end users in the environment.
 
