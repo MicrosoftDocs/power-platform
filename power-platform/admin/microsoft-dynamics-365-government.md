@@ -194,6 +194,15 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 - GCC: https://*.dynamics365portals.us
 - GCC High: http://*.high.dynamics365portals.us
   
+## Regional Discovery Service is deprecated
+
+Effective March 2, 2020, the *regional* Discovery Service in [Organization Service (SOAP)](/powerapps/developer/common-data-service/org-service/discovery-service) and [Web API (REST)](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) is deprecated. Until March 1, 2021, Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After March 1, 2021, the *regional* Discovery Service won't be available.
+
+Customers must transition to using the *global* [Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) available in Web API before March 1, 2021. More information: [Modify your code to use global Discovery Service in Web API](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi) 
+
+
+
+
 ### See also  
  [Dynamics 365 US Government - Feature availability](government-feature-availability.md)<br/>
  [IP Address Ranges (prior to v9.x)](https://support.microsoft.com/help/2728473/microsoft-dynamics-crm-online-ip-address-ranges)<br/>
