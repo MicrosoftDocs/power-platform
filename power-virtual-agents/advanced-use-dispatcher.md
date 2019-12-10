@@ -48,8 +48,8 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 2.	[Sign in to your Power Virtual Agents environment](https://powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
 
 3.	Go to the **Network** tab.
-
-    ![DevTools in Microsoft Edge browser showing the Network tab](media/devtools-network-preview.png)
+    >[!div class="mx-imgBorder"]
+    >![DevTools in Microsoft Edge browser showing the Network tab](media/devtools-network-preview.png)
 
 4.	Filter and look for client requests.
 
@@ -88,7 +88,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 ## Train the dispatcher custom model with your Power Virtual Agents topics
 
-Train and recreate the dispatcher app and add your exported topics and utterances with your existing Cognitive Service intents (for example, LUIS and/or QnA maker) using the Dispatch tool. For more information, [follow the guidance in the dispatch tool tutorial](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=cs).
+Train and recreate the dispatcher app and add your exported topics and utterances with your existing Cognitive Service intents (for example, LUIS and/or QnA maker) using the dispatch tool. For more information, [follow the guidance in the dispatch tool tutorial](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=cs).
 
 1.  Install the dispatch tool using the NuGet package manager.
 
