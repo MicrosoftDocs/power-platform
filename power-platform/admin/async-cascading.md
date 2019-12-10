@@ -35,6 +35,13 @@ If an environment is encountering timeouts or degraded performance while the syn
 |If a single record fails, all data is rolled back to the original value. The roll back will require re-editing all completed records, which takes additional time.     |  If a single job fails, it is retried multiple times to attempt completion. If the job can't be completed the failure is recorded in the **System Jobs** area. Notice that successfully completed records retain the new value.       |
 |If one of the records in the cascading list has a value that is different than the expected value, the job will fail and roll back. For example, the starting record belongs to *Owner 1* and the cascading operation wants to change it to *Owner 2*. If one of the downstream related records has changed to *Owner 3* or is deleted before the lock occurs, the entire job will roll back.     | The operation always works in overwrite mode changing the current value to the new value based on the parent child relationship. There are no job failures due to an original value mismatch.        |
 
+## Asynchronous mode and plugins
+When a cascading transaction has more than 100 records and does not have any plugins associated with the records, the records will be processed asynchronously. 
+
+If, inside of the asynchronous batch, there is a plugin assigned to a record, the single record update/delete along with all associated plugins for that record will run synchronously as part of a transaction before moving to the next record in the asynchronous batch. 
+
+If a plugin inside of the asynchronous transaction triggers a new cascading delete or assign, the new cascading transaction will always run synchronously within the current asynchronous transaction. This prevents us having multiple layers of asynchronous transactions. 
+
 ## Tracking asynchronous operation progress
 Administrators can monitor the processing of asynchronous operations in the **Settings** area. 
 
@@ -77,17 +84,6 @@ Assign and Delete cascading transactions can be processed asynchronously.
 > [!NOTE]
 > Other transactions, such as merge, share/unshare, rollup view, and re-parent are are currently under review for asynchronous processing. 
 
-## Enable asynchronous processing of cascading transactions
-At this time, changing the processing of cascading transactions to asynchronous mode is a backend change that must be made by Microsoft. 
-
-To submit your request to have your environment changed to asynchronous mode:
-
-1.	Email: D365PI@microsoft.com
-2.	Enter the subject line: Enable Asynchronous Cascading &lt;transaction type&gt;. 
-    For  example, *Enable Asynchronous Cascading Assign*. 
-3.	In the body of the email include your environment name, environment ID, and Microsoft 365 tenant ID. To find the environment name and ID go to **Settings** > **Developer Resources**. 
-
-The change to asynchronous mode can take one to two business days to complete. We'll contact you when the change has been made.
 
 ### See also
 [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)
