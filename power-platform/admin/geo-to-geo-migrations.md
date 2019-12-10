@@ -23,7 +23,6 @@ We continue to open new datacenter regions for business services, and to add dat
 
 > [!IMPORTANT]
 > - Support for geo migration is limited and generally not available.
-> - For versions prior to version 9.0, you can move individual environments from one geographical region to another. When you do so, your tenant becomes a multiregional tenant. Regional features are enabled in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
 > - To request a regional migration, please contact your account manager or  see [Technical Support](get-help-support.md).  
 > - Version 9.0 does not currently support regional migration. Check back later for availability. 
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
