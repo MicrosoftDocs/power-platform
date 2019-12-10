@@ -360,9 +360,11 @@ The following steps require you to add code that registers your new dispatch end
 You're ready to test your dispatcher to ensure seamless interaction between DynamicsBot and your other bots.
 
 1.  [Publish your bot to a demo website](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-web-channels).    
+    >[!div class="mx-imgBorder"]
     ![Deploy our bot](media/open-deploy.png)
   
 2.  Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
   
 3.  Open the Bot Emulator where you add the name and endpoint to your bot.
+    >[!div class="mx-imgBorder"]
     ![Dialog to create new bot in the bot emulator](media/dispatch-bot-emulator.png)
