@@ -2,19 +2,19 @@
 title: "Use a Microsoft Bot Framework bot with Power Virtual Agents"
 description: "Step-by-step guide to using and extending an existing Microsoft Bot Framework bot to work with Power Virtual Agents."
 keywords: "extensibility, integration, extend bot, bot framework"
-ms.date: 07/03/2019
+ms.date: 12/10/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: pawant-ms
-ms.author: mhart
-ms.reviewer: m-hartmann
+ms.author: iawilt
+ms.reviewer: iaanw 
 manager: shellyha
 ---
 
 # Use a Microsoft Bot Framework bot with Power Virtual Agents
 
-This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with your Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs. 
+This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with a Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and integrated development environments (IDEs). 
 
 * [Retrieve topics, utterances and secrets from your Virtual Agent tenant](#retrieve-topics-and-utterances-from-your-virtual-agent-tenant)
 * [Train the dispatcher custom model with your Virtual Agent topics](#train-the-dispatcher-custom-model-with-your-virtual-agent-topics)
@@ -45,12 +45,12 @@ You'll need to retrieve your Virtual Agent bot's content (topics and utterances)
 
 1.	In Microsoft Edge, select F12 to open DevTools. (Note: For other browsers, use comparable commands and functionality.)
 
-2.	[Sign in to your Power Virtual Agent](https://powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
+2.	[Sign in to your Power Virtual Agents environment](https://powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
 
 3.	Go to the **Network** tab.
     ![DevTools in Microsoft Edge browser showing the Network tab](media/devtools-network-preview.png)
 
-4.	Filter and look for “client” requests.
+4.	Filter and look for client requests.
 
 5.	Copy the following details. 
     ```javascript
@@ -66,7 +66,7 @@ You'll need to retrieve your Virtual Agent bot's content (topics and utterances)
   
   2.  Download the zip file and unzip it to find two CSV files: `annotations.csv` and `msdynce_botcontents.csv`
   
-### Convert the exported content to LU format
+### Convert the exported content to .LU format
 
 1. Convert your bot content into .lu format using [our ContentConverter utility](https://go.microsoft.com/fwlink/?linkid=2097857).
    
