@@ -16,8 +16,8 @@ manager: shellyha
 
 This article covers how to use the Azure Bot Framework dispatcher tool to integrate an existing bot with a Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and integrated development environments (IDEs). 
 
-* [Retrieve topics, utterances and secrets from your Virtual Agent tenant](#retrieve-topics-and-utterances-from-your-virtual-agent-tenant)
-* [Train the dispatcher custom model with your Virtual Agent topics](#train-the-dispatcher-custom-model-with-your-virtual-agent-topics)
+* [Retrieve topics, utterances and secrets from your Power Virtual Agents bot](#retrieve-topics-and-utterances-from-your-bot)
+* [Train the dispatcher custom model with your Power Virtual Agents topics](#train-the-dispatcher-custom-model-with-your-power-virtual-agents-topics)
 * [Register and trigger your new dispatch endpoint in code](#register-and-trigger-your-new-dispatch-endpoint-in-code)
 * [Deploy your bot and test the dispatcher](#deploy-your-bot-and-test-the-dispatcher)
 
@@ -48,6 +48,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 2.	[Sign in to your Power Virtual Agents environment](https://powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
 
 3.	Go to the **Network** tab.
+
     ![DevTools in Microsoft Edge browser showing the Network tab](media/devtools-network-preview.png)
 
 4.	Filter and look for client requests.
@@ -62,7 +63,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 ### Retrieve topics and utterances from your bot
 
-  1.	Export `BotContent` and `Annotations` from Common Data Service. [Review how to export data from Virtual Agent](https://docs.microsoft.com/power-virtual-agents/gdpr-export).
+  1.	Export `BotContent` and `Annotations` from Common Data Service. [Review how to export data](https://docs.microsoft.com/power-virtual-agents/gdpr-export).
   
   2.  Download the zip file and unzip it to find two CSV files: `annotations.csv` and `msdynce_botcontents.csv`
   
