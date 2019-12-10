@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 12/10/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -39,8 +39,8 @@ Save time when creating multiple campaigns by creating a campaign template. Camp
   
 - Open the campaign that you want to copy. Click **Copy as Template**, type a name for the template, and click **Save**.  
   
-  If you need to back up your templates, or use them in a different implementation of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations.md)  
-  
+  If you need to back up your campaign templates, or use them in a different implementation of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, you can copy the data to a different environment using the [Configuration Migration tool](manage-configuration-data.md).
+
 > [!NOTE]
 > [!INCLUDE[cc_CRM_Marketing_and_MDM](../includes/cc-crm-marketing-and-mdm.md)] 
   
