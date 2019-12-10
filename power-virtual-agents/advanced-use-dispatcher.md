@@ -62,7 +62,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 
 ### Retrieve topics and utterances from your bot
 
-  1.	Export `BotContent` and `Annotations` from Common Data Service. [Review how to export data from Virtual Agent](https://docs.microsoft.com/en-us/power-virtual-agents/gdpr-export).
+  1.	Export `BotContent` and `Annotations` from Common Data Service. [Review how to export data from Virtual Agent](https://docs.microsoft.com/power-virtual-agents/gdpr-export).
   
   2.  Download the zip file and unzip it to find two CSV files: `annotations.csv` and `msdynce_botcontents.csv`
   
@@ -358,7 +358,7 @@ The following steps require you to add code that registers your new dispatch end
 
 You're ready to test your dispatcher to ensure seamless interaction between DynamicsBot and your other bots.
 
-1.  [Publish your bot to a demo website](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-web-channels).    
+1.  [Publish your bot to a demo website](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-web-channels).    
     ![Deploy our bot](media/open-deploy.png)
   
 2.  Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
