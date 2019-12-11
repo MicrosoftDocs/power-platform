@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, and Facebook. 
+You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook. 
 
 To learn how to add authentication to a bot topic, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md).
 
@@ -39,7 +39,7 @@ Make sure to configure the redirect URL to be `https://token.botframework.com/.a
 
    ![Go to Manage and then Authentication](media/auth-manage-sm.png)
 
-2. Enter the information as described for each of the fields in the following table. The information required depends on your specific setup and provider. For questions about the required information, contact your administrator or identity provider.
+2. Enter the information as described for each of the fields in the following table. The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
 
 3. Click **Save** to finish the configuration.
 
@@ -65,7 +65,7 @@ Scopes | List of scopes you want authenticated users to have once signed in. Mak
 
 ## Test your configuration
 
-Once the setup steps are complete, save your configuration and test it by [creating a new topic using authentication](advanced-end-user-authentication.md).
+After the setup steps are complete, save your configuration and test it by [creating a new topic using authentication](advanced-end-user-authentication.md).
 
 
 ## Remove the authentication configuration
