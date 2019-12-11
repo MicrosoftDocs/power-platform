@@ -1,12 +1,11 @@
 ---
 title: "About Unified Interface  | MicrosoftDocs"
 description: About Unified Interface
-author: mduelae
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/08/2019
+ms.date: 12/11/2019
 author: jimholtz
 ms.author: jimholtz
 search.audienceType: 
@@ -20,7 +19,7 @@ search.app:
 
 The Unified Interface uses responsive web design principles to provide an optimal viewing and interaction experience for any screen size, device, or orientation. It brings all the rich experiences to any client that you are using. Whether you are on a browser, tablet, or phone, you will be able to consume similar experiences.
 
-More information: [Enhanced user experience with the Unified Interface for model-driven apps](https://docs.microsoft.com/powerapps/user/unified-interface) 
+More information: [Enhanced user experience with the Unified Interface for model-driven apps](https://docs.microsoft.com/powerapps/user/unified-interface) and the blogs [Moving forward with your transition to Unified Interface](https://powerapps.microsoft.com/blog/moving-forward-with-your-transition-to-unified-interface/) and [Performance benefits of unified interface](https://powerapps.microsoft.com/blog/performance-benefits-of-unified-interface/)
 
 ## Accessing Unified Interface apps on browsers
 
