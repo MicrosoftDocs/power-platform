@@ -43,6 +43,22 @@ If you have already created a bot, you can create a new bot by selecting the ico
 
    ![New bot icon in title bar](media/first-bot-new.png)
 
+## Delete a bot
+
+You can delete bots to remove them from your environment. 
+
+1. Select the bot icon on the top menu bar, and then select the bot you want to delete.
+
+2. Select the **Settings** icon on the top menu bar, then select **General settings**.
+
+   ![General settings](media/general-settings.png)
+
+3. Select **Delete bot**.
+
+You'll be asked to confirm the deletion of the bot, after which all bot content is immediately deleted.
+
+If your license has expired, you can delete your bot(s) by selecting **Permanently delete your bots**.
+
 ## Known issues with creating a bot
 
 When you are creating your bot, you might encounter the following issues.
