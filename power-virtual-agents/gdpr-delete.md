@@ -16,17 +16,17 @@ manager: shellyha
 
 Power Virtual Agents offers the following experiences to delete personal data for a specific user:
 
-* [Bot chat logs](#bot-chat-logs)
-* [Power Virtual Agents bot content](#power-virtual-agents-bot-content)
-* [Power Virtual Agents telemetry](#power-virtual-agents-telemetry)
-* [Metrics](#metrics)
-* [System telemetry](#system-telemetry)
+* [Bot chat logs](#delete-power-virtual-agents-bot-chat-logs)
+* [Power Virtual Agents bot content](#delete-power-virtual-agents-bot-including-all-content)
+* [Power Virtual Agents telemetry](#delete-power-virtual-agents-telemetry)
+* [Metrics](#delete-power-virtual-agents-metrics)
+* [System telemetry](#delete-power-virtual-agents-system-telemetry)
 
 ### Delete Power Virtual Agents bot chat logs
 
-All bot chat logs are deleted when the bot is deleted. See [steps to delete bot](#power-virtual-agents-bot-content) for more information.
+All bot chat logs are deleted when the bot is deleted. See [steps to delete bot](#delete-power-virtual-agents-bot-including-all-content) for more information.
 
-### Delete Power Virtual Agents bot, including all content
+### Delete Power Virtual Agents bot including all content
 
 Follow these steps to delete a bot:
 
@@ -47,7 +47,7 @@ All Power Virtual Agents telemetry data is automatically deleted within 29 days.
 
 ### Delete Power Virtual Agents metrics
 
-To delete metrics data, you must delete your bot. See [steps to delete your bot](#power-virtual-agents-bot-content) for more information.
+To delete metrics data, you must delete your bot. See [steps to delete your bot](#delete-power-virtual-agents-bot-including-all-content) for more information.
 
 ### Delete Power Virtual Agents system telemetry
 
