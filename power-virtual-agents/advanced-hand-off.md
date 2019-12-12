@@ -1,7 +1,7 @@
 ---
 title: "Use hand-off to live agent"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -23,6 +23,15 @@ When you hand off a conversation, you share the full history of the conversation
 
 For more information about how to configure hand-off with [Omnichannel for Customer Service](https://go.microsoft.com/fwlink/?linkid=2098992), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
 
+>[!NOTE]
+>You can choose to escalate a bot conversation without linking to an engagement hub:
+>
+>1. In the **Authoring canvas** for the topic you want to add an escalation option to, at the end of the topic, select the plus (+) icon to add a new node.
+>2. Select **Go to another topic** and then **Escalate**.
+>
+>**Escalate** is a [system topic](authoring-create-edit-topics.md#use-system-and-sample-topics) that, by default, provides a simple message to a user if they ask for a human agent. 
+>
+>You can edit the topic to include a simple URL to a support website or ticketing system, or to include instructions for emailing or contacting support.
 
 ## Pre-requisites
 
