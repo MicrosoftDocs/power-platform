@@ -2,7 +2,7 @@
 title: "Create conversational bots in Power Virtual Agents"
 description: "You can easily create new bots using the bot-builder wizard in Power Virtual Agents."
 keywords: ""
-ms.date: 09/04/2019
+ms.date: 12/12/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
