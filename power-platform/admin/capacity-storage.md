@@ -176,3 +176,5 @@ Check back for availability. In addition to top tables, we will also show the ta
 ### Which environments are counted in the capacity report?
 Default, production, and Sandbox environments are counted for consumption. Trial, Preview, Support, and Developer environments are not counted.
 
+### See also
+[Capacity add-ons](capacity-add-on.md)
