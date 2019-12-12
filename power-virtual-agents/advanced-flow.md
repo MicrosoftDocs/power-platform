@@ -73,6 +73,19 @@ Bots can use the following types of inputs and outputs with Microsoft Automate f
 - String
 - Boolean
 
+The following types are unsupported :
+
+- Object
+- Date
+- Timestamp
+- List [String]
+- List [Number]
+- List [Boolean]
+- List [Object]
+- List [Date]
+- List [Timestamp]
+
+
 ### Input parameters
 
 This example in the template shows how to specify a flow to accept two *input* parameters from a bot - a `string` and a `number` - as specified in the **Request Body JSON Schema** by this JSON snippet:
