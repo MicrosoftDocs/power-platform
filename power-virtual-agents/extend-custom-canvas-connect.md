@@ -31,7 +31,7 @@ This demo integrates with multiple services that you need to set up to host the 
 
 1. [Clone the code](#clone-the-code)
 1. [Setup Azure Bot Services](#set-up-azure-bot-services)
-1. [Setup bot and direct line](#set-up-bot-and-direct-line)
+1. [Setup bot and direct line](#set-up-the-bot-and-direct-line)
 1. [Prepare and run the code](#prepare-and-run-the-code)
 
 ## Clone the code
