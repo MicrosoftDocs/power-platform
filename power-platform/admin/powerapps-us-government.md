@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/06/2019
+ms.date: 12/11/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -139,6 +139,7 @@ You use a different set of URLs to access Power Apps US Government environments,
 | <https://create.powerapps.com> | <https://make.gov.powerapps.us> (GCC)<br /><https://make.high.powerapps.us> (GCC High)    |
 | <https://admin.powerapps.com>  | <https://gov.admin.powerapps.us> (GCC)<br /><https://high.admin.powerapps.us> (GCC High)     |
 | <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors><br /><https://high.flow.microsoft.us/connectors> (GCC High)  |
+| <https://admin.powerplatform.microsoft.com> | <https://gcc.admin.powerplatform.microsoft.us><br /><https://high.admin.powerplatform.microsoft.us> (GCC High) |
 
 For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users’ access points:
 
