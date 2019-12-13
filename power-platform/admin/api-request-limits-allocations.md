@@ -148,3 +148,5 @@ No. All the power platform request entitlements are calculated on a rolling 24-h
 
 Yes, if these requests are making CRUD, assign or share type of calls, they would count. However, calls generated internally from the platform are not going to be accounted.
 
+### See also
+[Common Data Service API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
