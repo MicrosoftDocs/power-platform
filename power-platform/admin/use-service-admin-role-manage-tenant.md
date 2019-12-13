@@ -1,12 +1,12 @@
 ---
-title: "Use the service admin role to manage your tenant   | MicrosoftDocs"
-description: Use the service admin role to manage your tenant 
+title: "Use service admin roles to manage your tenant   | MicrosoftDocs"
+description: Use service admin roles to manage your tenant 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 12/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,36 +15,82 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Use the service admin role to manage your tenant 
+# Use service admin roles to manage your tenant
 
-To help you administer model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Dynamics 365 Customer Service, you can assign users to manage model-driven apps in Dynamics 365 at the tenant level without having to assign the more powerful [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global admin privileges.  
-  
- Users with the service admin role can:  
-  
-- Sign in to and manage multiple environments. If an environment uses a security group, a service administrator would need to be added to the security group in order to manage that environment.  
-  
-- Perform admin functions in model-driven apps in Dynamics 365 because they have the system admin role. The service admin must be assigned a license.  
-  
-A service admin cannot do functions restricted to the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global admin such as manage user accounts, manage subscriptions, access settings for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps like [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
-  
-> [!NOTE]
-> The service admin can manage environments of version 8.1 ([!INCLUDE[pn_crm_8_1_0_online](../includes/pn-crm-8-1-0-online.md)]) or later.  
-  
- ![Service admin](../admin/media/dynamics-365-service-admin.png "Service admin")  
-  
- Here's a matrix of what's available with the various [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] roles.  
-  
-|Office 365 role / feature|Backup & restore|Sandbox copy|Configure new environments|Manage an environment|Add licenses|Access support requests|Access Service health|Access Message center|  
-|--------------------------------|----------------------|------------------|-----------------------------|------------------------|-------------------------------|---------------------------------|-----------------------------|---------------------------|---------------------------|  
-|Office 365 global admin|Yes|Yes|Yes|Yes|Yes|Yes|Yes|Yes|  
-|Exchange admin|n/a|n/a|n/a|n/a|n/a|n/a|Yes|Yes|  
-|Office 365 service admin|No|No|No|No|No|Yes|Yes|Yes|  
-|Office 365 user|No|No|No|No|No|No|No|No|  
-|Service admin|Yes|Yes|Yes|Yes|No|Yes|Yes|Yes| 
-|License administrator|No|No|No|No|Yes|No|No|No|  
+To help you administer environments and settings for Power Platform and Power BI, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
 
-> [!NOTE]
-> For information on email approval, see [Approve email](connect-exchange-online.md#approve-email).
+There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
+
+## Dynamics 365 service administrator
+
+The Dynamics 365 service admin can:
+
+- Sign in to and manage multiple environments. If an environment uses a security group, a service admin would need to be added to the security group in order to manage that environment. Not assigning to an in place security group essentially locks these admins out of any admin management. 
+- Perform admin functions in Power Platform because they have the system admin role. The service admin must be assigned a license.  
+
+## Power Platform service administrator 
+  
+ Users with the Power Platform service admin role can:  
+  
+- Sign in to and manage multiple environments. Power Platform service admins **are not affected** by security group membership and can manage environments even if not added to an environment's security group.
+- Perform admin functions in Power Platform because they have the system admin role. The Power Platform service admin must be assigned a license.  
+  
+Both service admin roles cannot do functions restricted to the Microsoft 365 global admin such as manage user accounts, manage subscriptions, access settings for Microsoft 365 apps like Microsoft Exchange or Microsoft SharePoint.  
+  
+## Assign a service admin role to a user
+
+Follow these steps to assign a service admin role.
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) as a global admin.
+
+2. Go to **Users** > **Active users** and select a user or users.
+  
+3. Select to expand **Show all by category**.
+
+4. Under **Collaboration** select either **Dynamics 365 service administrator** or **Power Platform administrator**. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Power Platform admin](../admin/media/power-platform-admin.png "Power Platform admin")  
+  
+5. Select **Save changes**.
+
+## Service administrator permission matrix
+
+The following matrix shows what management is possible with the various service admin roles compared to the Microsoft 365 global admin role.
+
+||Microsoft 365<br>Global admin<br />  |Power Platform<br>Service admin <br />  |Dynamics 365<br>Service admin<br />  | Power BI<br>Service admin<br />  |
+|---------|---------|---------|---------|---------|
+|**POWER PLATFORM** |||||  
+|**Environments** |||||  
+|Create|Yes|Yes|<sup>*</sup>Yes|No|  
+|Backup and restore|Yes|Yes| <sup>*</sup>Yes|No|  
+|Copy |Yes|Yes|<sup>*</sup>Yes|No|  
+|**Analytics**|||||
+|Capacity|Yes|Yes|<sup>*</sup>Yes|No|  
+|Common Data Service|Yes|Yes|<sup>*</sup>Yes|No|  
+|Power Automate|Yes|Yes|<sup>*</sup>Yes|No|  
+|Power Apps|Yes|Yes|<sup>*</sup>Yes|No|  
+|**Help + support**|||||
+|Create and access support requests|Yes|Yes|<sup>*</sup>Yes|No|  
+|**Data integration**|||||
+|Create new project and connection set|Yes|Yes|<sup>*</sup>Yes|No|  
+|**Data gateways**|||||
+|View gateways|Yes|Yes|<sup>*</sup>Yes|No|  
+|**Data policies**|||||
+|View and manage tenant policies|Yes|Yes|<sup>*</sup>Yes|No|  
+|View and manage environment policies|Yes|Yes|<sup>*</sup>Yes|No|  
+||||||
+|**POWER BI**|||||  
+|Manage the Power BI tenant|Yes|Yes|No|Yes|  
+|Acquire and assign Power BI licenses|Yes|Yes|No|No|  
+||||||
+|**MICROSOFT 365**|||||  
+|Create users|Yes|No|No|No|  
+|Add security roles|Yes|No|No|No|  
+|Add licenses|Yes|No|No|No|  
+
+<sup>*</sup>If a security group is assigned to the environment and the user with this role added to the security group
 
 ### See also  
-
+[Environments overview](environments-overview.md)<br />
+[What is Power BI administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization)
