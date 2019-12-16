@@ -2,7 +2,7 @@
 title: "Add a Power Virtual Agents bot to Azure Bot Service channels"
 description: "Connect your bot to existing Azure Bot Service framework channels (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
-ms.date: 11/9/2019
+ms.date: 12/16/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -14,7 +14,7 @@ ms.collection: virtualagent
 ---
 
 
-# Add Power Virtual Agent bot to Azure Bot Service channels
+# Add Power Virtual Agents bot to Azure Bot Service channels
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
