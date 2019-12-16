@@ -64,8 +64,6 @@ Sign in to the Power Virtual Agents bot you want to connect to Omnichannel for C
 
 ## Mitigations for known issues
 If you experience issues, see below for possible mitigations.
-<!--note from editor: We don't have headings without content underneath them, so I added a sentence. Feel free to make it better. 
-It's also worth asking if the info should go in a KB instead of product documentation. What you have below looks like it should go in a readme, but I'm not aware of one being done where you could add this. -->
 
 ### Remove Omnichannel for Customer Service connection
 Once your bot has been connected to Omnichannel for Customer Service, you cannot remove the connection setting. If you erroneously connected to the wrong instance or environment, you will need to create a new bot and try connecting to Omnichannel for Customer Service again.
