@@ -80,7 +80,7 @@ After installing the app package, you will automatically start a chat with the b
 
 ## Updating bot content for existing conversations on Teams
 
-To prevent disruptions during a chat between a user and the bot, existing conversations will not be updated to the latest bot content immediately after a new publish. Instead, the content will be updated after the conversation has been idle for 30 minutes..  
+To prevent disruptions during a chat between a user and the bot, existing conversations will not be updated to the latest bot content immediately after a new publish. Instead, the content will be updated after the conversation has been idle for 30 minutes. 
 
 New conversations between user and the bot will have the latest published bot content.
 
