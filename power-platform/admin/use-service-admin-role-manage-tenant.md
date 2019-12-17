@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/20/2019
+ms.date: 12/17/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -58,7 +58,7 @@ Follow these steps to assign a service admin role.
 
 The following matrix shows what management is possible with the various service admin roles compared to the Microsoft 365 global admin role.
 
-||Microsoft 365<br>Global admin<br />  |Power Platform<br>Service admin <br />  |Dynamics 365<br>Service admin<br />  | Power BI<br>Service admin<br />  |
+|    |Microsoft 365<br>Global admin<br />  |Power Platform<br>Service admin <br />  |Dynamics 365<br>Service admin<br />  | Power BI<br>Service admin<br />  |
 |---------|---------|---------|---------|---------|
 |**POWER PLATFORM** |||||  
 |**Environments** |||||  
@@ -67,6 +67,7 @@ The following matrix shows what management is possible with the various service 
 |Copy |Yes|Yes|<sup>*</sup>Yes|No|  
 |**Analytics**|||||
 |Capacity|Yes|Yes|<sup>*</sup>Yes|No|  
+|Capacity allocation (Power Apps per app plans, Power Automate, AI Builder, and Portal) |Yes|Yes|<sup>*</sup>Yes|No|
 |Common Data Service|Yes|Yes|<sup>*</sup>Yes|No|  
 |Power Automate|Yes|Yes|<sup>*</sup>Yes|No|  
 |Power Apps|Yes|Yes|<sup>*</sup>Yes|No|  
@@ -82,7 +83,7 @@ The following matrix shows what management is possible with the various service 
 ||||||
 |**POWER BI**|||||  
 |Manage the Power BI tenant|Yes|Yes|No|Yes|  
-|Acquire and assign Power BI licenses|Yes|Yes|No|No|  
+|Acquire and assign Power BI licenses|Yes|No|No|No|  
 ||||||
 |**MICROSOFT 365**|||||  
 |Create users|Yes|No|No|No|  
