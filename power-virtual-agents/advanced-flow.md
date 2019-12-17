@@ -2,7 +2,7 @@
 title: "Automate Power Virtual Agents bot activities with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: ""
-ms.date: 11/11/2019
+ms.date: 12/12/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -65,12 +65,26 @@ This template is an example of a flow that can be used by bots. To be suitable f
 - Flow trigger:  **HTTP Request**
 - Response action:  **HTTP Response**
 
+## Input and output parameters
 
 Bots can use the following types of inputs and outputs with Microsoft Automate flows:
 
 - Number
 - String
 - Boolean
+
+The following types are unsupported :
+
+- Object
+- Date
+- Timestamp
+- List [String]
+- List [Number]
+- List [Boolean]
+- List [Object]
+- List [Date]
+- List [Timestamp]
+
 
 ### Input parameters
 
