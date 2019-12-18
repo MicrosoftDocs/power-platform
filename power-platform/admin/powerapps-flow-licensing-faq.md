@@ -39,6 +39,9 @@ Power Automate Plans:
 
 More details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
+### How do I use Power Apps per app plans? 
+See [Power Apps per app plan](https://docs.microsoft.com/en-us/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan).
+
 ### What license must be assigned to a guest so they can run a canvas app shared with them?
 
 The guest user must have a Power Apps license assigned through one of the following tenants:
