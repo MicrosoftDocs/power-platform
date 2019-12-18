@@ -44,6 +44,7 @@ Users within your organization can gain access to Power Apps in three different 
 
 * They can individually sign up for a Power Apps trial as outlined in the [How do users sign up for Power Apps?](#how-do-users-sign-up-for-power-apps) section.
 * You can assign a Power Apps license to them within the Office 365 admin portal.
+* You can purchase Power Apps Per App Plans and allocate them in the Power Platform Admin Center. See [Power Apps per app plan](https://docs.microsoft.com/en-us/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan)
 * The user has been assigned an Office 365 and Dynamics 365 plans that includes access to the Power Apps service. See the [Power Apps pricing page](https://powerapps.microsoft.com/pricing) for the list of Office 365 and Dynamics 365 plans that include Power Apps capabilities.
 
 ### Can I block users in my organization from signing up for Power Apps?
