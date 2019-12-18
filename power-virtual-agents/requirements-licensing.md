@@ -22,32 +22,41 @@ For more information about Power Virtual Agents licensing, see the [pricing page
 
 This article focuses on how to assign licenses for Power Virtual Agents to your users.
 
-## Buy tenant and per user licenses 
-You can purchase Power Virtual Agents licenses for your organization on the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) (you may need to sign in with an admin account).
 
   > [!Note]
-  > If you're not using the new Microsoft 365 admin center, you can turn it on by selecting **Try the new admin center** located at the top of the Home page.
+  > In order to acquire Power Virtual Agent User License you need to use the non-preview version of Admin portal. To do so ensure the **Try the new admin center** setting is turned off.
+  
+## Buy tenant license
+You can purchase Power Virtual Agents licenses for your organization on the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) (you will need to sign in with an admin account).
+
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
 
 2. On the navigation pane, expand the **Billing** menu and then select **Purchase services**.
 
-3. Search for and select the subscriptions you want to purchase. On the confirmation screen, select the number of licenses to purchase.
+3. Search for Power Virtual Agents license and complete the checkout process
 
 4. Complete the check-out process.
 
+## Acquire user licenses
 
-**Assign licenses to users:**
+1. After you have purchased Power Virtual Agent license you need to acquire user licenses to be able to give users access to the product. In the Microsoft 365 admin center, go to **Billing** and select **Purchase services**
+
+2. Scroll down to Add-ons section
+
+3. Look for Power Virtual Agent User License. Select the number of licenses you need and finish the checkout process.
+
+## Assign licenses to users
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
 
 2. On the navigation pane, expand the **Users** menu and then select **Active users**.
 
-    ![Expand Users, then select Active users](media/licensing-menu-users.png)
+    ![Expand Users, then select Active users](media/licensing-menu-users-legacy.jpg)
 
 3. Select the name, and then select **Manage product licenses**.
 
-   ![Select a user and then manage product licenses](media/licensing-manage.png)
+   ![Select a user and then manage product licenses](media/license-manage-legacy.png)
 
 
 4. On the flyout panel, select the checkbox next to **Power Virtual Agents user license**. Select **Save changes**. 
