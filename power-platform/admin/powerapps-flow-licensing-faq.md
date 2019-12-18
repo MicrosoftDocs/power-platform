@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 12/18/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -38,6 +38,9 @@ Power Automate Plans:
 - **Power Automate per flow plan** which enables organizations to implement flows with reserved capacity that serve teams, department, or the entire organization without having to license each end user. This plan starts at $500/month for 5 flows.
 
 More details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+### How do I use Power Apps per app plans? 
+See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
 
 ### What license must be assigned to a guest so they can run a canvas app shared with them?
 
@@ -161,8 +164,7 @@ There is no limit on the number of applications. Customers can continue to run s
 
 ### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
-The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to two apps (canvas and/or model-driven) as well as one Power Apps Portal, all within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple solutions targeted at various business scenarios, without requiring a per-user license. In other words, the
-“per app” license is stackable.
+The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to two apps (canvas and/or model-driven) as well as one Power Apps Portal, all within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple solutions targeted at various business scenarios, without requiring a per-user license. In other words, the “per app” license is stackable.
 
 
 ### Do embedded canvas apps in model-driven apps count toward the two-apps limits?
