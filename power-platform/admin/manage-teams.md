@@ -118,8 +118,6 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 
 ## About group teams
 
-Applies to Common Data Service
-
 ### Using Azure Active Directory groups to manage a user’s app and data access 
 
 The administration of app and data access for Microsoft Common Data Service has been extended to allow administrators to use their organization’s Azure Active Directory (Azure AD) groups to manage access rights for licensed Common Data Service users.
