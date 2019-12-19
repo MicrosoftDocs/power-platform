@@ -126,6 +126,9 @@ The administration of app and data access for Microsoft Common Data Service has 
 
 Both types of Azure AD groups—Office and Security—can be used to secure user-access rights. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
+> [!NOTE]
+> Only Azure AD groups with **Membership Type** of “Assigned” is supported at this time.  Support for “Dynamic User” **Membership Type** is coming soon.
+
 The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the Common Data Service environments and assign a security role to these group teams. When members of these group teams access these environments, their access rights are automatically granted based on the group team’s security role.
 
 #### Provision and deprovision users 
@@ -215,8 +218,8 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 
 > [!NOTE]
 > - The list of team members listed in each group team only displays the user members who have accessed the environment. This list doesn’t show all the group members of the Azure AD group. The team member’s privileges are derived dynamically at run-time when the team member accesses the application. The security role of the team is not assigned directly to the team member. Since team member's privileges are derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
-> - **Discover and launch apps** coming soon in October 2019 - Group team members can see the list of all the apps and the list of all the environments they have access to based on their AAD Group membership. The temporary workaround is to assign a security role directly to the team member.  
-> - **System Administrator and Environment Maker security roles**. These are special administrator's security roles and they need to be assigned to the user directly. If these security roles are assigned to Group teams, team members get the team privileges only and won't have any direct/inherited privileges. Team members won't be able to perform all the system administrator and environment maker functions. In addition they won't be able to see the list of all the environments in their tenant. 
+> - **Discover and launch apps** coming soon: Group team members can see the list of all the apps and the list of all the environments they have access to based on their AAD Group membership. The temporary workaround is to assign a security role directly to the team member.  
+> - **System Administrator and Environment Maker security roles**: These are special administrator's security roles and they need to be assigned to the user directly. If these security roles are assigned to Group teams, team members get the team privileges only and won't have any direct/inherited privileges. Team members won't be able to perform all the system administrator and environment maker functions. In addition they won't be able to see the list of all the environments in their tenant. 
 
 <a name="AboutAccess"></a>   
 
