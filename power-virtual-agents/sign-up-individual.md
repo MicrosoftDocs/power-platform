@@ -42,4 +42,7 @@ At the moment, you cannot sign up for Power Virtual Agents using a personal emai
 ### Self service sign up disabled
 If you receive a message like the below during your sign up it means your organization's IT admin has disabled self-service signup for Power Virtual Agents. To finish signing up, contact your IT admin and ask them to follow the instructions on how to [enable sign-up](requirements-licensing.md#trial-plans).
 
-  ![Viral sign up disabled](media/licensing-sign-up-disabled.jpg)
+"Sorry...We can't finish signing you up.
+Your IT department has turned off signup for Power Virtual Agents. Contact them to complete signup."
+
+  ![Viral sign up disabled with message saying Sorry we can't finish signing you up](media/licensing-sign-up-disabled.jpg)
