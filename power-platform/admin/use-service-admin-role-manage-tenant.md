@@ -17,7 +17,7 @@ search.app:
 ---
 # Use service admin roles to manage your tenant
 
-To help you administer environments and settings for Power Platform and Power BI, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
+To help you administer environments and settings for Power Platform, you can assign users to manage at the tenant level without having to assign the more powerful Microsoft 365 global admin privilege.  
 
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
 
@@ -28,12 +28,12 @@ The Dynamics 365 service admin can:
 - Sign in to and manage multiple environments. If an environment uses a security group, a service admin would need to be added to the security group in order to manage that environment. Not assigning to an in place security group essentially locks these admins out of any admin management. 
 - Perform admin functions in Power Platform because they have the system admin role. The service admin must be assigned a license.  
 
-## Power Platform service administrator 
+## Power Platform administrator 
   
- Users with the Power Platform service admin role can:  
+ Users with the Power Platform admin role can:  
   
-- Sign in to and manage multiple environments. Power Platform service admins **are not affected** by security group membership and can manage environments even if not added to an environment's security group.
-- Perform admin functions in Power Platform because they have the system admin role. The Power Platform service admin must be assigned a license.  
+- Sign in to and manage multiple environments. Power Platform admins **are not affected** by security group membership and can manage environments even if not added to an environment's security group.
+- Perform admin functions in Power Platform because they have the system admin role. The Power Platform admin must be assigned a license.  
   
 Both service admin roles cannot do functions restricted to the Microsoft 365 global admin such as manage user accounts, manage subscriptions, access settings for Microsoft 365 apps like Microsoft Exchange or Microsoft SharePoint.  
   
