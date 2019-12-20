@@ -27,7 +27,7 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 
 >[!IMPORTANT]
 >The flow that can be called from a topic must be in the same [Common Data Service environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
->Flows must also be in a solution in Microsoft Power Automate. You can [move flows into solutions](#move-a-flow-to-the-solutions-tab-on-the-microsoft-automate-portal) so they appear in the authoring canvas.
+>Flows must also be in a solution in Microsoft Power Automate. You can [move flows into solutions](#move-a-flow-to-the-solutions-tab-on-the-power-automate-portal) so they appear in the authoring canvas.
 
 Flow typically use variables to take in and output information. The variables can then be used in other nodes within the topic.
 
@@ -50,24 +50,24 @@ Flow typically use variables to take in and output information. The variables ca
 1. In the node selection window, select **Call an action**, and then select **Create a flow**. 
 
 
-    ![Create a new Microsoft Automate flow](media/UseCreateFlowOption.jpg)
+    ![Create a new Power Automate flow](media/UseCreateFlowOption.jpg)
 
 
-Using the **Create a flow** option will open a starter flow template in the [Microsoft Automate portal](https://preview.flow.microsoft.com/en-us/) in a separate tab.
+Using the **Create a flow** option will open a starter flow template in the [Power Automate portal](https://preview.flow.microsoft.com/en-us/) in a separate tab.
 
-![Microsoft Automate flow template](media/FlowTemplate.jpg)
+![Power Automate flow template](media/FlowTemplate.jpg)
 
 >[NOTE]
->The Microsoft Automate portal will automatically open in the same environment as the bot using the same user credentials
+>The Power Automate portal will automatically open in the same environment as the bot using the same user credentials
 
-This template is an example of a flow that can be used by bots. To be suitable for bots, a Microsoft Automate flow requires a special kind of trigger and response action: 
+This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special kind of trigger and response action: 
 
 - Flow trigger:  **HTTP Request**
 - Response action:  **HTTP Response**
 
 ## Input and output parameters
 
-Bots can use the following types of inputs and outputs with Microsoft Automate flows:
+Bots can use the following types of inputs and outputs with Power Automate flows:
 
 - Number
 - String
@@ -91,7 +91,7 @@ The following types are unsupported :
 This example in the template shows how to specify a flow to accept two *input* parameters from a bot - a `string` and a `number` - as specified in the **Request Body JSON Schema** by this JSON snippet:
 
 
-![Microsoft Automate flow template inputs](media/FlowHttpRequestInputs.jpg)
+![Power Automate flow template inputs](media/FlowHttpRequestInputs.jpg)
 
 
 
@@ -116,14 +116,14 @@ An **HTTP Response** action must be used to return outputs to the bot.
 This template provides an example on how to return two *output* parameters to the bot, a `string` and a `number`.
 
 
-![Microsoft Automate flow template outputs](media/FlowHttpResponseOutputs.jpg)
+![Power Automate flow template outputs](media/FlowHttpResponseOutputs.jpg)
 
 
 Note that both the **Body** and **HTTP Response Body JSON Schema** (under **Advanced options**) sections must be filled out in the **HTTP Response** action.
 
 In this example, the **Body** section defines the flow outputs `string` and `number`:
 
-![Microsoft Automate flow template outputs - Body](media/Body.jpg)
+![Power Automate flow template outputs - Body](media/Body.jpg)
 
 ```
     {
@@ -135,7 +135,7 @@ In this example, the **Body** section defines the flow outputs `string` and `num
 The **Response Body JSON Schema** section defines the type for the flow outputs defined in the body section:
 
 
-![Microsoft Automate flow template outputs - Body Schema](media/HttpResponseBodySchema.jpg)
+![Power Automate flow template outputs - Body Schema](media/HttpResponseBodySchema.jpg)
 
 
    ``` JSON
@@ -157,25 +157,25 @@ This template provides a fully functional flow that accepts two parameters, a `s
 
 Select **Save** to save your new flow.
 
-![Microsoft Automate flow template - Save](media/SaveFlowTemplate.jpg)
+![Power Automate flow template - Save](media/SaveFlowTemplate.jpg)
 
 
-Your flow will be saved to **My flows** tab on the Microsoft Automate portal.
+Your flow will be saved to **My flows** tab on the Power Automate portal.
 
 
-![Microsoft Automate flow template - Save](media/MyFlows.jpg)
+![Power Automate flow template - Save](media/MyFlows.jpg)
 
 
 
 
 
-## Move a flow to the Solutions tab on the Microsoft Automate portal
+## Move a flow to the Solutions tab on the Power Automate portal
 
-To ensure your flow can be used with a Power Virtual Agent bot, it must be moved from the **My Flows** tab to the **Solutions** tab in the Microsoft Automate portal. 
+To ensure your flow can be used with a Power Virtual Agent bot, it must be moved from the **My Flows** tab to the **Solutions** tab in the Power Automate portal. 
 
 **Move flow to new or existing solution:**
 
-1. On the Microsoft Automate portal, go to the **Solutions** tab. Here you can see what solutions are already available to you; you can use any of the existing solutions or you can create a new solution for your flows.
+1. On the Power Automate portal, go to the **Solutions** tab. Here you can see what solutions are already available to you; you can use any of the existing solutions or you can create a new solution for your flows.
 
 1. To create a new solution, select **New solution**.
 
@@ -204,9 +204,9 @@ In Power Virtual Agents, you can now see this flow on the list of available acti
 ![New flow shows up in Action picker](media/FlowInActionPicker.jpg)
 
 
-## Modify a flow on Microsoft Automate portal
+## Modify a flow on Power Automate portal
 
-You can rename and modify your flow on the Microsoft Automate Portal. For example, the flow you just created using the template can be updated to provide a weather forecast when called from a bot.
+You can rename and modify your flow on the Power Automate Portal. For example, the flow you just created using the template can be updated to provide a weather forecast when called from a bot.
 
 **Modify a flow:**
 
@@ -286,9 +286,9 @@ You can rename and modify your flow on the Microsoft Automate Portal. For exampl
 This flow is now ready to be used in your bots.
 
 
-## Call Microsoft Automate flow as an Action from a bot 
+## Call Power Automate flow as an Action from a bot 
 
-You can call a Microsoft Automate flow from a bot topic using the **Call an action** node. You can then pass variables to the flow and receive flow outputs that can be used in a bot conversation.
+You can call a Power Automate flow from a bot topic using the **Call an action** node. You can then pass variables to the flow and receive flow outputs that can be used in a bot conversation.
 
 These instructions use the examples described above to add weather information to a flow.
 
