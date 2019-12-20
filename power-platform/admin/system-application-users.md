@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 07/25/2019
+ms.date: 12/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 
 # System and application users
 
-There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  Application users can also be used for performing back-end services.  
+There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users-assign-online-security-roles.md#create-an-application-user) can also be used for performing back-end services.  
 
 Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users entity.  Do not delete or modify these users including changing or reassigning security role. 
 
