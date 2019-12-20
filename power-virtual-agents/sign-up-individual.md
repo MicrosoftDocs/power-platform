@@ -1,6 +1,6 @@
 ---
 title: "Sign up for a Power Virtual Agents trial"
-description: "You can sign up for Power Virtual Agents trial as an individual rather than as an admin of an organization."
+description: "You can sign up for Power Virtual Agents individually as a trial if you're not an admin of an organization."
 keywords: "Administration, licensing"
 ms.date: 12/18/2019
 ms.service:
