@@ -1,6 +1,6 @@
 ---
 title: "Sign up for a Power Virtual Agents trial"
-description: "You can sign up for Power Virtual Agents as an individual rather than as an admin of an organization."
+description: "You can sign up for Power Virtual Agents trial as an individual rather than as an admin of an organization."
 keywords: "Administration, licensing"
 ms.date: 12/18/2019
 ms.service:
@@ -23,9 +23,10 @@ Follow the instructions below to sign up for a Power Virtual Agents trial. After
 
 1. Go to the [sign-up page](https://go.microsoft.com/fwlink/?LinkId=2107702).
 
-2. Enter your email address and select **Get started**.
+2. Enter your email address and then select **Sign up**.
 
- ![sign up portal get started](media/sign-up-get-started.jpg)
+> [!div class="mx-imgBorder"]
+> ![sign up portal get started](media/sign-up-get-started.jpg)
 
 You'll then be taken to the Power Virtual Agents sign-in page and you can start using your account.
 
@@ -37,9 +38,10 @@ After you finish the sign-up process, your free trial for Power Virtual Agents w
 In most cases, you'll be able to sign up for Power Virtual Agents using the steps in this article. Some issues might prevent you from signing up. 
 
 ### Personal email address 
-At the moment, you cannot sign up for Power Virtual Agents using a personal email address. You need to use your work or school account to finish the sign up.
+You can't sign up for Power Virtual Agents using a personal email address. You need to use your work or school account to finish the sign up.
 
 ### Self service sign up disabled
 If you receive a message that your sign-up couldn't be completed it means your organization's IT administrator has disabled self-service sign-up for Power Virtual Agents. To finish signing up, contact your IT administrator and ask them to follow the instructions to [enable sign-up](requirements-licensing.md#trial-plans).
 
-  ![Viral sign up disabled with message saying Sorry we can't finish signing you up](media/licensing-sign-up-disabled.jpg)
+> [!div class="mx-imgBorder"]
+> ![Viral sign up disabled with message saying Sorry we can't finish signing you up](media/licensing-sign-up-disabled.jpg)
