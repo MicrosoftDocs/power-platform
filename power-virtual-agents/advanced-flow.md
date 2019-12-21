@@ -187,7 +187,7 @@ To ensure your flow can be used with a Power Virtual Agent bot, it must be moved
     ![Save a new solution](media/NewSolution_details.jpg)
 
 
-1. On the **Solutions** tab, go to the solution you want to use, such as the one you just create. Select **Add existing** to add a flow.
+1. On the **Solutions** tab, go to the solution you want to use, such as the one you just created. Select **Add existing** to add a flow.
 
     ![Add existing menu](media/AddExistingFlow.jpg)
 
