@@ -1,6 +1,6 @@
 ---
 title: System and application users | Microsoft Docs
-description: About system and application users
+description: About system and application users 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
