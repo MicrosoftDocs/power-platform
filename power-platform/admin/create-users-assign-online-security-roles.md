@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/05/2019
+ms.date: 12/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -270,11 +270,22 @@ You need to have the System Administrator security role or equivalent permission
 9. Go back to model-driven apps in Dynamics 365 and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
 
 ## Create an application user  
- Introduced in [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)], you can use server-to-server (S2S) authentication to securely and seamlessly communicate with [!INCLUDE[pn_crm_8_2_0_online_subsequent](../includes/pn-crm-8-2-0-online-subsequent.md)] with your web applications and services. S2S authentication is the common way that apps registered on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] use to access the [!INCLUDE[pn_crm_2016_shortest](../includes/pn-crm-2016-shortest.md)] data of their subscribers. All operations performed by your application or service using S2S will be performed as the application user you provide rather than as the user who is accessing your application.  
+You can use server-to-server (S2S) authentication to securely and seamlessly communicate with Common Data Service with your web applications and services. S2S authentication is the common way that apps registered on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] use to access the Common Data Service data of their subscribers. All operations performed by your application or service using S2S will be performed as the application user you provide rather than as the user who is accessing your application.  
 
 All application users are created with a non-interactive user account, however they are not counted towards the seven non-interactive user accounts limit. In addition, there is no limit on how many application users you can create in an environment.
   
-![Application user](../admin/media/application-user.png "Application user")  
+![Application user](../admin/media/application-user.png "Application user") 
+
+For step-by-step information on creating an application user, see [Application User Creation](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation).
+
+### Enable or disable application users
+
+When application users are created, they are automatically enabled. The default Application User form shows the status in the form footer; the **Status** field can't be updated.
+
+You can customize the default Application User form to allow updates to the **Status** field so that you can enable or disable the applications users, if required. For step-by-step information on customizing the default Application User form, see [Enable or disable application users](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#enable-or-disable-application-users).
+
+> [!CAUTION]
+> Disabling an application user will break all the integration scenarios that use the application user.
 
 ## How stub users are created
 A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user does not exist in model-driven apps in Dynamics 365. This user cannot log in, cannot be enabled, and cannot be synchronized to Office 365. This type of user can only be created through data import. 
