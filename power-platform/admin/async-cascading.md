@@ -35,12 +35,12 @@ If an environment is encountering timeouts or degraded performance while the syn
 |If a single record fails, all data is rolled back to the original value. The roll back will require re-editing all completed records, which takes additional time.     |  If a single job fails, it is retried multiple times to attempt completion. If the job can't be completed the failure is recorded in the **System Jobs** area. Notice that successfully completed records retain the new value.       |
 |If one of the records in the cascading list has a value that is different than the expected value, the job will fail and roll back. For example, the starting record belongs to *Owner 1* and the cascading operation wants to change it to *Owner 2*. If one of the downstream related records has changed to *Owner 3* or is deleted before the lock occurs, the entire job will roll back.     | The operation always works in overwrite mode changing the current value to the new value based on the parent child relationship. There are no job failures due to an original value mismatch.        |
 
-## Asynchronous mode and plugins
-When a cascading transaction has more than 100 records and does not have any plugins associated with the records, the records will be processed asynchronously. 
+## Asynchronous mode and plug-ins
+When a cascading transaction has more than 100 records and does not have any plug-ins associated with the records, the records will be processed asynchronously. 
 
-If, inside of the asynchronous batch, there is a plugin assigned to a record, the single record update/delete along with all associated plugins for that record will run synchronously as part of a transaction before moving to the next record in the asynchronous batch. 
+If inside of the asynchronous batch, there is a plug-in assigned to a record, the single record update/delete along with all associated plug-ins for that record will run synchronously as part of a transaction before moving to the next record in the asynchronous batch. 
 
-If a plugin inside of the asynchronous transaction triggers a new cascading delete or assign, the new cascading transaction will always run synchronously within the current asynchronous transaction. This prevents us having multiple layers of asynchronous transactions. 
+If a plug-in inside the asynchronous transaction triggers a new cascading delete or assign, the new cascading transaction will always run synchronously within the current asynchronous transaction. This prevents having multiple layers of asynchronous transactions. 
 
 ## Tracking asynchronous operation progress
 Administrators can monitor the processing of asynchronous operations in the **Settings** area. 
