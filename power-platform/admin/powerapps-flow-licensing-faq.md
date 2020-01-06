@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/06/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -237,7 +237,7 @@ Since flows, as well as certain Power Automate features like approvals, run insi
 
 A list of add-ons applicable to all standalone Power Apps and Power Automate plans are listed below:
 
-- New **Power Apps Portals login capacity add-on** and **Portals page view capacity add-on** for external users of Power Apps Portals.
+- New **Power Apps Portals login capacity add-on** and **Portals page view capacity add-on** for external users of Power Apps Portals. External users are those outside of your organization who sign in with a variety of identities such as LinkedIn, Microsoft Account, other commercial login providers, or anonymously.
 
   - Power Apps Portals log in capacity add-ons (various volume tiers start from $200 per 100 logins per month)
 
