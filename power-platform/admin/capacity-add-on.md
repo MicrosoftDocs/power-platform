@@ -1,7 +1,7 @@
 ---
 title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 11/19/2019
+ms.date: 01/06/2020
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -90,7 +90,10 @@ Set-TenantSettings $settings
 No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to end users when apps are shared with end users in the environment.
 
 ### Can I use model-driven apps by consuming app passes? 
-Yes. Please use the following steps.
+Yes. Please use the following steps. 
+
+> [!NOTE]
+> The following steps aren't required to use per app plans with model-driven apps. You can use the [traditional steps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). However, the following instructions minimize manual steps of assigning CDS security roles to users individually. 
 
 1. Create a group in Azure Active Directory, see [Create a group and add members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
    1. Go to: [https://portal.azure.com](https://portal.azure.com) > **Azure Active Directory** > **Groups** > **+ New Group**

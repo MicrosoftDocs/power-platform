@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/20/2019
+ms.date: 01/06/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -61,12 +61,14 @@ The following are Office 365 user contact fields.
 ![Office 365 user contact info](media/office-365-contact-info.png "Office 365 user contact info")
 
 ## Add a license to a user account  
- You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service.  
+You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service. 
   
- For step-by-step instructions, see [Assign, reassign, or remove licenses](https://go.microsoft.com/fwlink/p/?LinkId=255449).  
+For step-by-step instructions to use user licenses, see [Assign, reassign, or remove licenses](https://go.microsoft.com/fwlink/p/?LinkId=255449). 
+ 
+For step-by-step instructions to use Power Apps per app plans, see [Power Apps per app plans](https://docs.microsoft.com/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan).
   
 > [!IMPORTANT]
->  Licensed users must be assigned at least one security role to access model-driven apps in Dynamics 365.  
+> Licensed users must be assigned at least one security role to access model-driven apps in Dynamics 365.  
   
  **About user licenses**  
   
