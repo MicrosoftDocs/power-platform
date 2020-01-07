@@ -29,8 +29,8 @@ We recommend starting with one of the samples custom built to work with Power Vi
 
 | Samples name | Description | Screenshot |
 | ------------ | ----------- | :----: |
-| 1. [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) | Custom canvas capable of showing all rich content from Power Virtual Agents | (image) |
-| 2. [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) | Custom canvas capable of getting user's location and sending it to a bot using Power Virtual Agents | (image) |
+| 1. [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) | Custom canvas capable of showing all rich content from Power Virtual Agents | ![Full bundle custom canvas](media/custom-canvas-full-bundle.png) |
+| 2. [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) | Custom canvas capable of getting user's location and sending it to a bot using Power Virtual Agents | ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload.png) |
 | [Other samples](https://github.com/microsoft/BotFramework-WebChat/#samples-list) | Other sample web chat canvases provided by Bot Framework | -  | 
 
 ## Retrieve Bot ID and Tenant ID details
