@@ -1,7 +1,7 @@
 ---
 title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 11/19/2019
+ms.date: 01/06/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -156,7 +156,7 @@ If you have an existing agreement, you are not impacted with the current change.
 Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
 
 ### I’m a Power Apps/Power Automate customer and have environments with and without Database. Will they consume storage capacity? 
-Currently, only the environments with Database consume capacity; environments without Database do not. However, once the Power Platform Admin center has the ability to create environments, all environments will consume 1GB. 
+Yes. All environments will consume 1GB, regardless of whether or not they have an associated Database.
 
 ### Why am I no longer getting storage notifications?
 We have disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity )** page to monitor usage.
