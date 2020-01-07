@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/09/2019
+ms.date: 01/07/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -72,9 +72,12 @@ If a user has multiple licenses allocated within the same product line, for exam
 
 ## Power Apps and Power Automate capacity add-on
 
-Power Apps and Power Automate capacity add-on allows customers to purchase additional requests which can be assigned to any user who has a Power Apps/Power Automate license as well as Dynamics 365 license. These can be assigned to an application, and administrative and non-interactive users.
+Power Apps and Power Automate capacity add-on allows customers to purchase additional requests. Eventually, these may be assigned to any user who has a Power Apps/Power Automate license as well as a Dynamics 365 license. 
 
 Each capacity add-on provides an additional 10,000 requests/24 hours which can be assigned to any user. Multiple capacity add-ons can also be assigned to the same user.
+
+> [!NOTE] 
+> Power Apps and Power Automate capacity add-ons cannot be assigned to users yet. Assignment will be possible later in calendar year 2020. When supported these may be assigned to application and administrative and non-interactive users.
 
 ## Non-licensed users/application users/Users with special free licenses 
 

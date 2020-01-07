@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 01/07/2020
 ms.author: matp
 search.audienceType: 
   - admin
