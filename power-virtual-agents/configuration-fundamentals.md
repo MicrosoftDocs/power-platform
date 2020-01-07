@@ -29,5 +29,4 @@ Topic | Description
 - | -
 [Configure end-user authentication](configuration-end-user-authentication.md) | Allow users to sign in with any OAuth2 identity provider directly in a bot conversation.
 [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) | Seamlessly and contextually hand off bot conversations to live (human) agents using Omnichannel for Dynamics 365 Customer Service.
-[Connect your bot to a custom canvas](extend-custom-canvas-connect.md) | Send and receive dynamic responses (such as Adaptive Cards and Carousels) that you can custom render directly in the bot conversation.
-[Connect your bot to Azure Storage](extend-custom-canvas-upload.md) | Allow users to directly upload files to an Azure Storage blob directly from within a bot conversation.
+[Customize the look and feel of your bot](extend-custom-canvas-connect.md) | Send and receive dynamic responses (such as Adaptive Cards and Carousels) that you can custom render directly in the bot conversation.
