@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 01/06/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -26,7 +26,7 @@ You can delete a business unit to completely remove it.
 >   
 > -   Deleting a business unit is irreversible.  
 > -   The records owned by the business unit (for example: Teams, Facilities/Equipment, and Resource Groups) are deleted at the same time you delete the business unit.  
-> -   You can’t delete a business unit until you delete any associated users, teams, and child business units.  
+> -   You can’t delete a business unit until you reassign all the business unit records to another business unit.  
 
 1. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
   
