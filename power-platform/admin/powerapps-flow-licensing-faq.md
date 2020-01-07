@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2020
+ms.date: 01/07/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -23,7 +23,7 @@ We have found some common questions on licensing and plan options. We’ve inclu
 
 ## General licensing questions
 
-### How is Microsoft Power Apps and Power Automate Licensed?
+### How is Microsoft Power Apps and Power Automate licensed? 
 
 Power Apps plans:
 
@@ -41,6 +41,10 @@ More details can be found in [Microsoft Power Apps and Power Automate Licensing 
 
 ### How do I use Power Apps per app plans? 
 See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
+
+### What are the self-service purchase options for the Power Platform products?
+
+See the FAQ: [Self-service purchase FAQ](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq#admin-capabilities).
 
 ### What license must be assigned to a guest so they can run a canvas app shared with them?
 
