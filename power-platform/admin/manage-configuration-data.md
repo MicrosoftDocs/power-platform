@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/08/2019
+ms.date: 01/07/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -38,10 +38,7 @@ The Configuration Migration tool enables you to move configuration data across e
   
 - Embed the exported modules created from this tool (schema and data files) in other programs. For example, you can use the exported data in Package Deployer along with other solutions files and data to create and deploy packages on a environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy packages using  Package Deployer and Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md)  
   
-> [!IMPORTANT]
-> The Configuration Migration tool does not support filtering of records in an entity. By default, all the records in the selected entity will be exported.  
-> 
-> For information on downloading the Configuration Migration tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget).
+For information on downloading the Configuration Migration tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget).
 
 <a name="HowItWorks"></a>   
 
