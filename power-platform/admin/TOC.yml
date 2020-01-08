@@ -97,9 +97,9 @@
           href: copy-environment.md
         - name: Change environment type
           href: switch-environment.md
-        - name: View and reset Sandbox environments
+        - name: View and reset sandbox environments
           href: sandbox-environments.md
-        - name: About Trial environments
+        - name: About trial environments
           href: trial-environments.md     
       #  - name: Manage environments in Power Platform
       #    href: manage-environments.md

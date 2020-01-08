@@ -58,7 +58,7 @@ About **system backups**:
    > ![Enter backup details](media/restore-backup.png "Enter backup details")
 
    > [!NOTE]
-   > - Only Sandbox environments can be restored to.
+   > - Only sandbox environments can be restored to.
    > - Under **Edit details**, you can change the environment name.
 
 7. Confirm overwrite of the environment. 
@@ -69,7 +69,7 @@ Automated system backups are great, but you'll want to make your own backups bef
 About **manual backups**:  
 
 - A backup is created for you when we update your environment.  
-- You can back up production and Sandbox environments. 
+- You can back up production and sandbox environments. 
 - Sandbox backups are retained for up to 7 days. 
 - System backups for production-type environments are retained up to 28 days.
 - Check your expiration date.  
@@ -94,10 +94,10 @@ About **manual backups**:
 There is no status as the backup is processing. When the backup is completed, you'll see the following message: "*The [backup name] backup was successfully created.*" 
 
 ### Restore a manual backup  
-You can only restore to Sandbox environments. To restore to a production environment, first switch it to a Sandbox environment. See [Switch an environment](switch-environment.md).
+You can only restore to sandbox environments. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md).
 
 > [!IMPORTANT]
-> Note that changing an environment type to Sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type Sandbox.
+> Note that changing an environment type to sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
 
 1. Browse to the Power Platform Admin center and sign in using administrator credentials.
   
@@ -110,7 +110,7 @@ You can only restore to Sandbox environments. To restore to a production environ
 5. Select an environment to restore to (overwrite), and then select **Restore**.
 
    > [!NOTE]
-   > Only Sandbox environments can be restored to.
+   > Only sandbox environments can be restored to.
 
 6. Confirm overwrite of the environment. 
 
@@ -177,7 +177,7 @@ Obtaining a copy of your database backup isn't available. Moving your online dat
 We don't have any restriction on database size to take a backup or restore an organization through UI or API. Use the UI or API to do self-service. Open a support ticket if the operation fails.
 
 ### Can I restore to a production environment?
-In order to prevent accidental overwrites, we don't allow users to directly restore to a production environment. To restore to a production environment, first switch it to a Sandbox environment. See [Switch an environment](switch-environment.md). Note that changing an environment type to Sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type Sandbox.
+In order to prevent accidental overwrites, we don't allow users to directly restore to a production environment. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md). Note that changing an environment type to sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
 The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](sandbox-environments.md#set-administration-mode).  
@@ -185,4 +185,4 @@ The newly restored environment is placed in administration mode. To disable admi
 ## Troubleshooting
 
 ### Don't see your environment to restore to?
-Only Sandbox environments can be restored to.
+Only sandbox environments can be restored to.
