@@ -31,9 +31,9 @@ All new Common Data Service environments and Common Data Service environments, i
 
 |Environment types  |Release date  |
 |---------|---------|
-|New Trial environments     | December 12, 2018         |
-|New Trial and production Common Data Service environments     | February 2, 2019        |
-|New production and Sandbox environments     | June 8, 2019       |
+|New trial environments     | December 12, 2018         |
+|New trial and production Common Data Service environments     | February 2, 2019        |
+|New production and sandbox environments     | June 8, 2019       |
 
 ### Existing environments
 
@@ -43,7 +43,7 @@ Environments created before the scheduled release dates will not get this change
 > For existing environments, it’s recommended that you:
 >
 > - Read [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and understand how it affects end users in your environment. 
-> - Test the changes in your Trial or Sandbox environments before applying to your production environment.
+> - Test the changes in your trial or sandbox environments before applying to your production environment.
 
 ## What experiences are available in Unified Interface Only mode 
 

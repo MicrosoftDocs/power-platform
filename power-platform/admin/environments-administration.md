@@ -180,15 +180,15 @@ Power Apps plan.  See [Power Apps pricing page][3] for details on all the plans 
 ### While trying to create a new environment, I am getting an error. How should I resolve it?
 If you are getting the following error message: "Either your plan doesn’t support the environment type selected or you’ve reached the limit for that type of environment.", it can mean one of the two things:
 
-1. You have already utilized your quota to create a specific type of environments. Say you were creating  a Trial environment and you get this error message. That means, that you have already provisioned two Trial environments. You can view all the environments in [Power Apps Admin center][1].
+1. You have already utilized your quota to create a specific type of environments. Say you were creating  a trial environment and you get this error message. That means, that you have already provisioned two trial environments. You can view all the environments in [Power Apps Admin center][1].
 If you want, you can delete an existing environment of that specific type and create a new one. But, please make sure that you don't lose your data, apps, flows and other resources which you want to retain.
 
 2. You do not have a quota to create that specific type of the environment. <!-- Check what type of environment you can create [here](environments-overview.md#creating-an-environment). -->
 
 If you are getting any other error message or have more questions, please connect with us [here][5].
 
-### When will my Trial environment expire?   
-Trial environments expire after 30 days from their creation. If you don't want your Trial environments to expire, you can [convert them to production environments](trial-environments.md#convert-a-trial-environment-to-production). 
+### When will my trial environment expire?   
+Trial environments expire after 30 days from their creation. If you don't want your trial environments to expire, you can [convert them to production environments](trial-environments.md#convert-a-trial-environment-to-production). 
 
 ### Does my current database (created with previous version of the Common Data Service) also gets counted in the quota?
 If you had a database (created with previous version of the Common Data Service), they will also get counted with your production environment quota. If you now create a database in an environment (created prior to March 15, 2018) then it will also get counted as production environment.

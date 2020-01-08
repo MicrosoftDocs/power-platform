@@ -94,7 +94,7 @@ First, let’s look at our environment setup and assumptions. The following are 
 |Contoso – Default     | This is the default environment, and anyone can create apps and flows in it        |
 |Contoso Enterprise Apps     |This is a production environment with applications managed with formal review before being promoted here. This could also be more business unit aligned e.g. Marketing, Finance etc.         |
 |Community Plan Environments (0…N)     |These will be automatically created by any users in our org that sign up for the free Community Plan         |
-|User Owned Environments (0…N)     |These are production or Trial Environments created by users with a Power Apps plan or Power Apps Trial         |
+|User Owned Environments (0…N)     |These are production or trial Environments created by users with a Power Apps plan or Power Apps trial         |
 
 We now are going to design a tenant wide default DLP policy. Our goal is to ensure that as people create their own environments and test and explore they minimize mix of core business data without us first working with them.
 

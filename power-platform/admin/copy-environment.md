@@ -1,6 +1,6 @@
 ---
-title: "Copy an environment to a Sandbox environment  | MicrosoftDocs"
-description: Learn how to copy a Sandbox environment. 
+title: "Copy an environment to a sandbox environment  | MicrosoftDocs"
+description: Learn how to copy a sandbox environment. 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -17,13 +17,13 @@ search.app:
 ---
 # Copy an environment
 
-You can use Copy environment in the Power Platform Admin center to copy the model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and all data from any environment to a Sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use Copy environment in the Power Platform Admin center to copy the model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![](media/copy-menu.png "Copy menu")
 
 > [!NOTE]
-> - You can only copy an environment to a Sandbox environment.
+> - You can only copy an environment to a sandbox environment.
 > - The source and destination environments must be in the same region.
 > - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) will not be copied to the target environment.
 
@@ -39,9 +39,9 @@ You can use Copy environment in the Power Platform Admin center to copy the mode
   
 **An example scenario**  
   
-Isaac, a business application developer, has received a request from the sales department to configure and deploy a social media integration solution from another company vendor.  Isaac has never installed a solution from this vendor and is unsure what impact this would have on the production application.  He’d like to import the solution into an environment that is nearly identical to, but isolated from, production to learn about the solution and make the appropriate configuration changes. Isaac submits a request to Thomas, the IT Manager for Contoso, to create an Everything copy Sandbox environment for him.  
+Isaac, a business application developer, has received a request from the sales department to configure and deploy a social media integration solution from another company vendor.  Isaac has never installed a solution from this vendor and is unsure what impact this would have on the production application.  He’d like to import the solution into an environment that is nearly identical to, but isolated from, production to learn about the solution and make the appropriate configuration changes. Isaac submits a request to Thomas, the IT Manager for Contoso, to create an Everything copy sandbox environment for him.  
   
-After the Everything copy is complete, Isaac receives a mail from Thomas telling him the Sandbox environment is ready.  Isaac logs into the Sandbox environment and makes the necessary changes to make sure that production external services will not be impacted by the Sandbox environment.  Once changes are complete, Isaac turns off administration mode and enables background services.  Isaac is able to use the Everything copy Sandbox environment to do his testing and later manually import the solution into production.  
+After the Everything copy is complete, Isaac receives a mail from Thomas telling him the sandbox environment is ready.  Isaac logs into the sandbox environment and makes the necessary changes to make sure that production external services will not be impacted by the sandbox environment.  Once changes are complete, Isaac turns off administration mode and enables background services.  Isaac is able to use the Everything copy sandbox environment to do his testing and later manually import the solution into production.  
   
 ## Copy over customizations and schemas only 
  A Customizations and schemas only copy only includes users, customizations, and schema from the source environment and is suitable for:  
@@ -52,9 +52,9 @@ After the Everything copy is complete, Isaac receives a mail from Thomas telling
   
 **An example scenario**  
   
-Isaac has a large development project starting next week for the sales department.  He has a team of developers ready to start on the project, some of whom are internal to Contoso and some are external vendors. The Contoso sales application contains Personally Identifiable Information (PII) that the sales manager has explicitly stated must not be made available to any external parties for privacy and legal liability reasons.  Isaac requests a customizations and schemas only copy Sandbox environment that does not contain any production data or users. In addition, Isaac creates a Office 365 security group to give the development team access to the Sandbox environment.  
+Isaac has a large development project starting next week for the sales department.  He has a team of developers ready to start on the project, some of whom are internal to Contoso and some are external vendors. The Contoso sales application contains Personally Identifiable Information (PII) that the sales manager has explicitly stated must not be made available to any external parties for privacy and legal liability reasons.  Isaac requests a customizations and schemas only copy sandbox environment that does not contain any production data or users. In addition, Isaac creates a Office 365 security group to give the development team access to the sandbox environment.  
   
-After modifying and enabling some of the plug-ins, the developer Sandbox environment functions the same and is completely isolated from the production application.  The development team works on their modifications in this environment for several weeks.  They package their changes into a solution and export/import to deploy to the Everything copy Sandbox environment.  After a successful round of testing and signoffs, the changes are manually deployed to production.  
+After modifying and enabling some of the plug-ins, the developer sandbox environment functions the same and is completely isolated from the production application.  The development team works on their modifications in this environment for several weeks.  They package their changes into a solution and export/import to deploy to the Everything copy sandbox environment.  After a successful round of testing and signoffs, the changes are manually deployed to production.  
   
 ### Entities copied in a Customizations and schemas only copy  
  The following entities are copied when you do a Customizations and schemas only copy:  
@@ -88,7 +88,7 @@ After modifying and enabling some of the plug-ins, the developer Sandbox environ
 |Template|  
 |SystemUser|  
 
-## Copy an environment to a Sandbox environment
+## Copy an environment to a sandbox environment
   
 1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
@@ -104,9 +104,9 @@ After modifying and enabling some of the plug-ins, the developer Sandbox environ
    > [!div class="mx-imgBorder"] 
    > ![](media/copy-environment1.png "Copy environment")
 
-5. Select a Sandbox environment.
+5. Select a sandbox environment.
   
-    A target environment can be a Sandbox or Preview environment; not a production environment.  
+    A target environment can be a sandbox or preview environment; not a production environment.  
   
    > [!WARNING]
    >  The target environment will be deleted and replaced with a copy of the data and customizations from the source environment. You won’t be able to recover any deleted data.  
@@ -154,11 +154,11 @@ Once the copy process is complete, the target environment is placed in [Administ
   
   More information: [Set the delivery method for incoming and outgoing email](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)  
   
-- **SharePoint**. Deactivate or redirect SharePoint to a Sandbox SharePoint environment to prevent impacting documents managed by SharePoint. Go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then click **Deactivate**.  
+- **SharePoint**. Deactivate or redirect SharePoint to a sandbox SharePoint environment to prevent impacting documents managed by SharePoint. Go to **Settings** > **Documentation Management** > **SharePoint Sites**. Select your site, and then click **Deactivate**.  
   
 - **Yammer**. Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
   
-     After creating a new Sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you have connected Yammer to model-driven apps in Dynamics 365 there will be Yammer activity streams posted from model-driven apps in Dynamics 365 to Yammer asynchronously. These activity streams are not visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the Sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your Sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
+     After creating a new sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you have connected Yammer to model-driven apps in Dynamics 365 there will be Yammer activity streams posted from model-driven apps in Dynamics 365 to Yammer asynchronously. These activity streams are not visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
   
 - **Platform extensibility**. Consider disabling the following that could be running in the copy environment and impacting external service components.  
   

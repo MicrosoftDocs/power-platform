@@ -71,8 +71,8 @@ The default environment is named as follows: “{Azure AD tenant name} (default)
 
 ![](./media/environments-overview/DefaultEnvironment.png)
 
-## Production and Trial environments
-You can create environments for different purpose. A Trial environment is for trying out the environment and database with Common Data Service experience. It expires after certain period. For more information, see [Administer environments in Power Apps](environments-administration.md).
+## Production and trial environments
+You can create environments for different purpose. A trial environment is for trying out the environment and database with Common Data Service experience. It expires after certain period. For more information, see [Administer environments in Power Apps](environments-administration.md).
 
 ## Choosing an environment
 With the introduction of environments, you will now see a new experience when you come to [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  The apps, connections, and other items that are visible in the site will now be filtered based on the current environment that is selected.  Your current environment is specified in the environment picker near the right edge of the header. To choose a different environment, click or tap the picker, and a list of available environments appears. Click or tap the one you wish to enter.
