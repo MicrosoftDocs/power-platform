@@ -32,7 +32,9 @@ You'll then be taken to the Power Virtual Agents sign-in page and you can start 
 
 
 ## Trial expiration
-After you finish the sign-up process, your free trial for Power Virtual Agents will start. When the trial expires, you will be able to extend the trial.
+After you finish the sign-up process, your time-limited free trial for Power Virtual Agents will start. When the trial expires, you will be able to extend the trial by 30 days. 
+
+> ![License invalid page. Extend trial](media/extend_trial_screen.jpg)
 
 ## Troubleshooting the sign-up process
 In most cases, you'll be able to sign up for Power Virtual Agents using the steps in this article. Some issues might prevent you from signing up. 
