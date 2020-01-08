@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/07/2019
+ms.date: 12/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,6 +30,17 @@ You can delete a sandbox environment to recover storage space and to remove Pers
 
 3. Select **Continue** to confirm the deletion.
 
+## Recover a recently deleted environment
+
+You can recover a recently deleted environment (within 7 days of deletion), by using the Power Apps cmdlet Recover-AdminPowerAppEnvironment.
+
+To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdlets for administrators (preview)](powerapps-powershell.md#power-apps-cmdlets-for-administrators-preview).
+
+> [!NOTE]
+> Environments that can be restored are environments deleted by an administrator and not those deleted by the system due to license expiration and other scenarios.
+
 ### See also
 [Manage sandbox environments](sandbox-environments.md) <br />
-[Environments overview](environments-overview.md)
+[Environments overview](environments-overview.md) <br />
+[Cmdlet list - Admin Cmdlets](powerapps-powershell.md#cmdlet-list---admin-cmdlets)
+
