@@ -23,7 +23,7 @@ This topic covers how you can set model-driven apps in Dynamics 365 to audit a b
 
 ## Requirements
 - An Office 365 Enterprise [E3](https://products.office.com/business/office-365-enterprise-e3-business-software) or [E5](https://products.office.com/business/office-365-enterprise-e5-business-software) subscription is required to do Activity Logging.
-- Available for production and not Sandbox environments.
+- Available for production and not sandbox environments.
 
 ## What events are audited
 Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of admin and user events you can audit.

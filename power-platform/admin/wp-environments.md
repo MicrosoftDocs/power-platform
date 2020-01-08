@@ -73,7 +73,7 @@ When you create an environment, you will pick a geographic location. Application
 
 ## Who can create environments
 
-As a global administrator in the admin portal you will be able to see a list of all environments created by users in your tenant. Any administrators and users will be able to create new environments, provided there is 1GB available database capacity. Also users with the Community plan license can also create one Developer environment.
+As a global administrator in the admin portal you will be able to see a list of all environments created by users in your tenant. Any administrators and users will be able to create new environments, provided there is 1GB available database capacity. Also users with the Community plan license can also create one developer environment.
 
 ## Impact of multiple environments on users
 

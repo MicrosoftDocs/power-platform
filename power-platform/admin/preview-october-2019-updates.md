@@ -71,10 +71,10 @@ Check out the new features releasing from October 2019 through March 2020 for Dy
 
 ## Which environment can be used for early opt-in to 2019 release wave 2 updates?
 
-You can enable trial and Sandbox environments for the 2019 release wave 2 release. This will allow you the flexibility to explore features, and then adopt them across your environments at a rate that suits your business.
+You can enable trial and sandbox environments for the 2019 release wave 2 release. This will allow you the flexibility to explore features, and then adopt them across your environments at a rate that suits your business.
 
 > [!IMPORTANT]
-> While you can enable a production environment, we highly recommend that you create a copy of your production environment as a Sandbox environment to try out the 2019 release wave 2 updates. After enabling the 2019 release wave 2 update, it can’t be turned off. Therefore, it’s necessary to first test the updates in a Sandbox environment prior to enabling them in a production environment that could impact your users in the organization.
+> While you can enable a production environment, we highly recommend that you create a copy of your production environment as a sandbox environment to try out the 2019 release wave 2 updates. After enabling the 2019 release wave 2 update, it can’t be turned off. Therefore, it’s necessary to first test the updates in a sandbox environment prior to enabling them in a production environment that could impact your users in the organization.
 >
 > Be sure to:
 > - Understand the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/).
@@ -91,7 +91,7 @@ You can enable trial and Sandbox environments for the 2019 release wave 2 releas
 Visit the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) and select the environment you want to enable for the 2019 release wave 2 updates.
 
 > [!IMPORTANT]
-> We highly recommend that you create a copy of your production environment as a Sandbox environment to try out the 2019 release wave 2 updates. After enabling the 2019 release wave 2 update, it can’t be turned off. Therefore, it’s necessary to first test the updates in a Sandbox environment prior to enabling it in a production environment that could impact your users in the organization.
+> We highly recommend that you create a copy of your production environment as a sandbox environment to try out the 2019 release wave 2 updates. After enabling the 2019 release wave 2 update, it can’t be turned off. Therefore, it’s necessary to first test the updates in a sandbox environment prior to enabling it in a production environment that could impact your users in the organization.
 
 Select **Manage**.
 
@@ -183,10 +183,10 @@ You can only export solutions to other environments which have also been updated
 ### Will the version number be updated with the 2019 release wave 2 update?
 No, the version number will not change with the 2019 release wave 2 update.
 
-### Will Microsoft provide a free Sandbox environment at no charge for testing updates? 
-You will need to create a Sandbox environment (a copy of the production environment), which is not provided for free.
+### Will Microsoft provide a free sandbox environment at no charge for testing updates? 
+You will need to create a sandbox environment (a copy of the production environment), which is not provided for free.
 
-### When will the updates be available for testing in the Sandbox environment?
+### When will the updates be available for testing in the sandbox environment?
 The updates are available now. All you need to do is activate the 2019 release wave 2 update as described above.
 
 ### Which updates will have an opt-in switch and which ones will be provided by default? 
@@ -205,13 +205,13 @@ The following flow chart shows the steps needed to enable the 2019 release wave 
 
 |  |  |
 |---------|---------|
-|(1)    | **Have a Sandbox environment as a copy for the production environment** <br/><br/>We strongly recommend enabling the 2019 release wave 2 release first in a Sandbox environment that is a replica or copy of the existing production environment. This is to make sure that a customer has validated the updates in another environment prior to impacting the current production apps and environment.<br/> <br/> Also, once the 2019 release wave 2 updates are enabled for an environment, they cannot be turned off like any other setting. <br/><br/>**Create a copy of the production environment into a Sandbox environment**<br/><br/>If you don’t have a Sandbox copy of your production environment, you can create a [copy](copy-environment.md) in the Dynamics 365 admin center.<br/><br/>**Create a backup of the production environment**<br/> <br/> Recommended before merging Sandbox with changes into production.    |
-|(2)     | **Enable the 2019 release wave 2 opt-in from the Power Platform Admin center**<br/><br/>Starting August 2, 2019,  you will be able to enable the 2019 release wave 2 release for the environment. Once enabled for an environment, you cannot turn this off for the environment. To remove the 2019 release wave 2 updates from your environment, you will have to reset the environment. We do not recommend doing this unless necessary. It's important to try the 2019 release wave 2 updates in your Sandbox environment first prior to enabling them in your production environment.        |
+|(1)    | **Have a sandbox environment as a copy for the production environment** <br/><br/>We strongly recommend enabling the 2019 release wave 2 release first in a sandbox environment that is a replica or copy of the existing production environment. This is to make sure that a customer has validated the updates in another environment prior to impacting the current production apps and environment.<br/> <br/> Also, once the 2019 release wave 2 updates are enabled for an environment, they cannot be turned off like any other setting. <br/><br/>**Create a copy of the production environment into a sandbox environment**<br/><br/>If you don’t have a sandbox copy of your production environment, you can create a [copy](copy-environment.md) in the Dynamics 365 admin center.<br/><br/>**Create a backup of the production environment**<br/> <br/> Recommended before merging sandbox with changes into production.    |
+|(2)     | **Enable the 2019 release wave 2 opt-in from the Power Platform Admin center**<br/><br/>Starting August 2, 2019,  you will be able to enable the 2019 release wave 2 release for the environment. Once enabled for an environment, you cannot turn this off for the environment. To remove the 2019 release wave 2 updates from your environment, you will have to reset the environment. We do not recommend doing this unless necessary. It's important to try the 2019 release wave 2 updates in your sandbox environment first prior to enabling them in your production environment.        |
 |(3)     |**Do you have Dynamics 365 Marketing?**<br/><br/>If you have the Marketing app, you will need to manually enable it according to the process listed above. Dynamics 365 apps on your environment like Sales and Service will be automatically updated to the 2019 release wave 2 version once you enable the update. |
 |(4)     | **We recommend testing all the scenarios thoroughly in this step** <br/><br/>If you have any Dynamics 365 apps in your environment like Sales, Service, and Marketing, they need to be explicitly updated to the 2019 release wave 2 version.  |
 |(5) and (6)     |Validate the app upgrade progress. See [Check status of the update and troubleshoot](#check-the-status-of-the-update-and-troubleshoot). |
 |(7)     |Updating the Marketing app requires additional action. See [Enable the 2019 release wave 2 updates for Dynamics 365 Marketing](#enable-the-2019-release-wave-2-updates-for-dynamics-365-marketing).    |
 |(8) and (9)    | **Report any issues found**<br/><br/>As you verify the experience in your preview environment, if you find any regressions, functional, or performance issues related to the 2019 release wave 2 updates that could impact your business, report them to Microsoft by opening a [support ticket](https://dynamics.microsoft.com/support/) or through the [Dynamics 365 forum](https://community.dynamics.com/f).  |
-|(10)     | **Enable the 2019 release wave 2 updates in your Sandbox environment**<br /><br />You should: <br />1. Update customizations to leverage or respond to new capabilities.<br />2.	Update internal readiness materials based on new features or user experiences.<br />3.	Prepare internal change management to run in October (training, communications, and so on). |
+|(10)     | **Enable the 2019 release wave 2 updates in your sandbox environment**<br /><br />You should: <br />1. Update customizations to leverage or respond to new capabilities.<br />2.	Update internal readiness materials based on new features or user experiences.<br />3.	Prepare internal change management to run in October (training, communications, and so on). |
 |(11)     |**Enable the 2019 release wave 2 updates in your production environment**<br /><br />We recommend enabling these updates during business downtime after you have validated that your key scenarios work as expected. Note that once the 2019 release wave 2 update is enabled, it cannot be reversed. However, you can restore to a prior backup version of the updated environment if needed. |
 

@@ -17,9 +17,9 @@ search.app:
 ---
 # Change the environment type
 
-You may decide that your customization work developed and tested on a Sandbox environment is now ready to go live. If you’ve placed your Sandbox environment in administration mode, only users with System Administrator or System Customizer security roles are able to sign in to that environment. Once you change the environment type to production, all your users can access your organization. When you configure or edit an environment, you can change the environment from:
+You may decide that your customization work developed and tested on a sandbox environment is now ready to go live. If you’ve placed your sandbox environment in administration mode, only users with System Administrator or System Customizer security roles are able to sign in to that environment. Once you change the environment type to production, all your users can access your organization. When you configure or edit an environment, you can change the environment from:
 
-- Production to Sandbox
+- Production to sandbox
 - Sandbox to production
 
 **To change the environment type**: 

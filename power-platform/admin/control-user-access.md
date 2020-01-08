@@ -27,7 +27,7 @@ Consider the following example scenario:
 |Coho Winery Sales|Sales_SG| Provide access to the environment that creates sales opportunities, handles quotes, and closes deals.|  
 |Coho Winery Marketing|Marketing_SG|Provide access to the environment that drives marketing efforts through marketing campaigns and advertising.|  
 |Coho Winery Service|Marketing_SG|Provide access to the environment that processes customer cases.|  
-|Coho Winery Dev|Developer_SG|Provide access to the Sandbox environment used for development and testing.|  
+|Coho Winery Dev|Developer_SG|Provide access to the sandbox environment used for development and testing.|  
   
 In this example, four security groups provide controlled access to a specific environment.  
   
