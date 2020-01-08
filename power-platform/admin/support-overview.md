@@ -20,7 +20,6 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-
 # Support overview
 
 ## About support
@@ -83,7 +82,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some subsc
     <td>Unified Support</td>
   </tr>
   <tr>
-    <td>Customer Engagement on-premises (Customer Engagement, Dynamics GP)</td>
+    <td>Dynamics</td>
     <td colspan="2"><a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a></td>
     <td colspan="2"><a href="https://serviceshub.microsoft.com/">Services Hub</a></td>
   </tr>
@@ -138,7 +137,7 @@ Public preview and/or beta services may be supported through our [forums](https:
 |Dynamics 365 Finance and Operations (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
 |Dynamics 365 Business Central      | Support is provided through partners only. Contact your Cloud Solution Provider (CSP) for assistance.        |
 |**Product**    |     |
-|Customer Engagement (Customer Engagement, Dynamics GP)     |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |
+|Dynamics   |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |
 
 ### Why is submitting a request online the preferred method of contacting Support? 
 
