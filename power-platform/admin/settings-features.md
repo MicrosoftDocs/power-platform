@@ -19,9 +19,9 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use Feature settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, features appear and function.
+Use feature settings to adjust how features appear and function in Dynamics 365 model-driven apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
 
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Features**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Features**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 
@@ -30,7 +30,7 @@ Make sure you have the System Administrator or System Customizer security role o
 - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
-## Settings
+## Settings 
 
 > [!div class="mx-tableFixed"]
 > |Settings|Description|  
