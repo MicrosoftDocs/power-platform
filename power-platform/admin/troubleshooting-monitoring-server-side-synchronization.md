@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 01/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,14 +20,10 @@ search.app:
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 This page is your source for issues and resolutions for troubleshooting server-side synchronization. Check back for updated information as issues are discovered and resolutions recorded.  
-  
-> [!TIP]
->  Check out the following: [Blog: Test and Enable Mailboxes in Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx)  
  
 ## The Server-Side Snychronization Failures dashboard
 
 Follow the steps in this [KB article](https://support.microsoft.com/help/4468755/troubleshoot-item-level-server-side-synchronization-issues-with-dynami) to enable and use a dashboard to get information on synchronization errors.
-
 
 > [!div class="mx-imgBorder"] 
 > ![](media/server-side-sync-failures-dashboard.png "Server-side sync failures dashboard")
@@ -35,23 +31,26 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
  
 <a name="BKMK_PerformanceDashboard"></a>   
 
-## The Server-Side Synchronization Performance dashboard  
- You can use the Server-Side Synchronization Performance dashboard to get a quick look at the health of mailboxes using server-side sync.  
+## The Server-Side Synchronization Monitoring dashboard  
+ You can use the Server-Side Synchronization Monitoring dashboard to get a quick look at the health of mailboxes using server-side sync.  
   
- Go to any dashboard, click Select ![Drop-down button](../admin/media/drop-down-button.png "Drop-down button") next to the dashboard title, and then click **Server-Side Synchronization Performance**.  
-  
- ![Server-side Synchronization Performance dashboard](../admin/media/server-side-sync-performance-dashboard.png "Server-side Synchronization Performance dashboard")  
+ Go to any dashboard, click Select ![Drop-down button](../admin/media/drop-down-button.png "Drop-down button") next to the dashboard title, and then click **Server-Side Synchronization Monitoring**.  
+
+> [!div class="mx-imgBorder"] 
+> ![Server-side Synchronization Monitoring dashboard](../admin/media/server-side-sync-performance-dashboard.png "Server-side Synchronization Monitoring dashboard")  
   
  This dashboard is made up of multiple charts, each providing insights into your organization’s server-side sync performance.  
   
  Click on a number in the list of mailboxes configured for server-side sync to get a specific mailbox status.  
   
- ![Click on the maiboxes listed for more info.](../admin/media/server-side-sync-performance-dashboard-mailbox.png "Click on the maiboxes listed for more info.")  
+> [!div class="mx-imgBorder"] 
+> ![Click on the mailboxes listed for more info.](../admin/media/server-side-sync-performance-dashboard-mailbox.png "Click on the mailboxes listed for more info.")  
   
  Click on the grid icon in each chart to view the records that are used to generate the chart.  
   
- ![Click to view records used to create chart](../admin/media/server-side-sync-performance-dashboard-chart.PNG "Click to view records used to create chart")  
-  
+> [!div class="mx-imgBorder"] 
+> ![Click to view records used to create chart](../admin/media/server-side-sync-performance-dashboard-chart.PNG "Click to view records used to create chart")  
+
 ## Common alerts and recommended resolutions  
   
 ### Mailbox disabled for synchronization  
