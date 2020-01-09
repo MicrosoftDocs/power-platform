@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/20/2019
+ms.date: 01/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,7 +16,6 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-
 # Back up and restore environments
 
 Protecting your data in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Dynamics 365 Customer Service, and providing continuous availability of service are important. You have multiple options for backing up and restoring your environments.   
@@ -30,9 +29,8 @@ Some backups take place without you having to do anything.
 About **system backups**:  
   
 - All your environments are backed up.  
-
-- System backups occur continuously. Because the underlying technology used is Azure SQL Database, see [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
-- System backups for production-type environments are retained up to 28 days. Other environment-type backups are retained up to 7 days.
+- System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
+- System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days.
   
 ### Restore a system backup  
   
@@ -71,7 +69,7 @@ About **manual backups**:
 - A backup is created for you when we update your environment.  
 - You can back up production and sandbox environments. 
 - Sandbox backups are retained for up to 7 days. 
-- System backups for production-type environments are retained up to 28 days.
+- Manual backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. Manual backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days.
 - Check your expiration date.  
   
   > [!div class="mx-imgBorder"] 
@@ -162,7 +160,11 @@ No. In the current version of the product, system backups occur continuously; th
 Because Azure SQL Database takes backups continuously and there is no specific way to take additional on-demand backups, we recommend you use our on-demand backup feature to label your backups. 
 
 ### How long are my manual/on-demand backups and system backups retained?
-System backups for production-type environments are retained up to 28 days. Other environment-type backups are retained up to 7 days.
+System and manual backups for certain production-type environments are retained up to 28 days. Other environment type backups are retained up to 7 days only. Please see the following FAQ, [How do I determine if backups of a production environment are retained for 28 days?](#how-do-i-determine-if-backups-of-a-production-environment-are-retained-for-28-days)
+
+### How do I determine if backups of a production environment are retained for 28 days? 
+
+Production environments that have been created with a database will give you the option to enable one or more Dynamics 365 applications if you have purchased licenses that entitle you to deploy such applications (for example, Dynamics 365 Sales, Dynamics 365 Customer Service). Backups of production environments with a database and Dynamics 365 applications deployed are retained for up to 28 days. In contrast, backups of production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days. 
 
 ### Can I extend my backup to be retained beyond the standard number of days?
 You can't extend your system backups or manual/on-demand backups. However, if you want to keep the data for longer than the standard retention period, we recommend you copy your environment to an additional environment and do not modify that additional environment. 
