@@ -62,7 +62,7 @@ You can now customize your canvas by updating `styleSetOptions`, which is the su
 
 ## Host your custom canvas
 
-Once you've customized the look and feel of the bot, you must deploy your custom canvas for your users to use it with your Power Virtual Agents bot.
+After you've customized the look and feel of the bot, you must deploy your custom canvas for your users to use it with your Power Virtual Agents bot.
 
 ## Related links
 
