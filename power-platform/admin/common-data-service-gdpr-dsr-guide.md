@@ -150,7 +150,7 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 4. Click **Export to Excel**.
 
 #### Audit history
-You can take screenshots of the audit history from within the adminisration center.
+You can take screenshots of the audit history from within the administration center.
 
 From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
