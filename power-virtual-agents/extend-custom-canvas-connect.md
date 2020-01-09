@@ -35,9 +35,7 @@ We recommend starting with one of these samples custom built to work with Power 
 
   ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload.png)
 
-* [Other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) are provided by Azure Bot Framework.
-
-Or [pick a sample provided by Bot Framework](https://github.com/microsoft/BotFramework-WebChat#samples-list).
+[Or pick from other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) are provided by Azure Bot Framework.
 
 ## Retrieve Bot ID and Tenant ID details
 
