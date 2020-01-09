@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2020
+ms.date: 01/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -296,19 +296,6 @@ A default security role is automatically assigned to these imported users. The *
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). 
-
-## Disable a user
-
-> [!NOTE]
-> You can [assign records](https://docs.microsoft.com/powerapps/user/assign-or-share-records) to a disabled user and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
-
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
-
-2.  In the **Enabled Users** view, select the checkmark next to the user you want to disable.
-
-3.  On the Actions toolbar, select **Disable**.
-
-4.  In the **Confirm User Record Deactivation** message, select **Deactivate**.
 
 ### Update a user record to reflect changes in Active Directory
 
