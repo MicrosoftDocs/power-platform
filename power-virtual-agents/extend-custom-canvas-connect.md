@@ -2,7 +2,7 @@
 title: "Connect Power Virtual Agents to a custom canvas"
 description: "Use an advanced custom canvas to change the display and functionality of your bot (development coding required)."
 keywords: ""
-ms.date: 12/5/2019
+ms.date: 1/7/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -56,13 +56,13 @@ BOT_ID=21wejwl2-2j34-dse3-12df-1123rgted34
 BOT_TENANT_ID=3fde45d-32we-3342-ewer-err3fr32564
 ```
 
-## Customize canvas using `sytlesetOptions`
+## Customize canvas using `stylesetOptions`
 
 You can now customize your canvas by updating `styleSetOptions`, which is the supported method of changing existing DOM elements in the canvas. A full list of customizable look and feel properties are shown in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js)
 
 ## Host your custom canvas
 
-After you've customized the look and feel of the bot, you must deploy your custom canvas for your users to use it with your Power Virtual Agents bot.
+After you've customized the look and feel of the bot, you need to deploy your custom canvas for your users to use it with your Power Virtual Agents bot.
 
 ## Related links
 
