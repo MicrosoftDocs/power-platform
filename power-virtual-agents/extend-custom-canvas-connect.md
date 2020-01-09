@@ -15,10 +15,10 @@ ms.collection: virtualagent
 
 # Customize the look and feel of your bot chat canvas
 
-Power Virtual Agents allows you customize the look and feel of your bot's chat canvas. Our chat canvas builds on the highly customizable [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat). This article explains how you can customize your canvas and connect it with a Power Virtual Agents bot.
+Power Virtual Agents allows you customize the look and feel of your bot's chat canvas. Power Virtual Agents chat canvas builds on the highly customizable [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat). This article explains how to customize your canvas and connect it to a Power Virtual Agents bot.
 
 >[!IMPORTANT]
->When dealing with personal data, respect user privacy. Follow platform guidelines and post your privacy statement online.
+>When handling personal data, respect user privacy. Follow platform guidelines and post your privacy statement online.
 
 >[!WARNING]
 >Creating a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
@@ -66,5 +66,5 @@ Once you've customized the look and feel of the bot, you must deploy your custom
 
 ## Related links
 
--  [Bot Framework Web Chat](https://github.com/microsoft/BotFramework-WebChat)
+-  [Azure Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
 -  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
