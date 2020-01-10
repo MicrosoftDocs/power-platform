@@ -15,13 +15,13 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Manage feature settings 
+# Manage feature settings
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Use feature settings to adjust how features appear and function in Dynamics 365 model-driven apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Features**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Features**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 
