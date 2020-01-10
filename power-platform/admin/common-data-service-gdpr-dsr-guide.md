@@ -158,7 +158,7 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 
 2. Click or tap **Dynamics 365 Administration Center**, select an environment from the list, and then click or tap **Open**.
 
-3. Go to **Settings** > **Auditing**, and then select **Audit Summary View**.
+3. Go to **Settings** > **Audit and logs**, and then select **Audit Summary View**.
 
     ![Power Apps Audit History Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-menu.png)
 
@@ -218,7 +218,7 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 
 2. Click or tap **Dynamics 365 Administration Center**, select an environment from the list, and then click or tap **Open**.
 
-3. Go to **Settings** > **Auditing**, and then select **Audit Summary View**.
+3. Go to **Settings** > **Audit and logs**, and then select **Audit Summary View**.
 
 4. Locate the user's change history, click or tap the check box next to the row(s), and then click or tap **Delete Change History**.
 

@@ -21,7 +21,7 @@ search.app:
 
 Use these settings to adjust model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, privacy and security.
 
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Privacy + Security**.
+These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Privacy + Security**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 
@@ -54,7 +54,7 @@ Make sure you have the System Administrator or System Customizer security role o
 ## Replace the privacy statement for the organization  
  By default, the [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] privacy statement is always shown to users with an administrator role only, and not to other (business) users. As an administrator, you can add a link to specify your organization's privacy statement, which is then shown to other users in your organization.  
   
-1. Go to **Environments** > [select an environment] > **Settings** > **Privacy + Security**
+1. Go to **Environments** > [select an environment] > **Settings** > **Product** > **Privacy + Security**
   
 2. Under **Privacy Preferences**, turn on **Show privacy statement link for this organization**.
   
@@ -74,7 +74,7 @@ Make sure you have the System Administrator or System Customizer security role o
   
  By default, individual users have a measure of control over whether to send error reports to [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)]. But you, as an administrator, can override their preferences and set up the error reporting preferences for the entire organization.  
   
-1. Go to **Environments** > [select an environment] > **Settings** > **Privacy + Security**
+1. Go to **Environments** > [select an environment] > **Settings** > **Product** > **Privacy + Security**
   
 2. Under **Privacy Preferences**, **Default action to take when an error occurs**, select an action to take. 
   
