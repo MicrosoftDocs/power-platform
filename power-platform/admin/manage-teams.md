@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 01/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +25,7 @@ Using teams is optional. However, teams provide an easy way to share business ob
   
 - An *owner* team owns records and has security roles assigned to the team. The team’s privileges are defined by these security roles. In addition to privileges provided by the team, team members have the privileges defined by their individual security roles and team [member’s privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) roles, and by the roles from other teams in which they are members. A team has full access rights on the records that the team owns. Team members are added manually to the owner team.
 
-- An Azure Active Directory (Azure AD) *group* team. Similar to owner team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership.  
+- An Azure Active Directory (Azure AD) *group* team. Similar to *owner* team, an Azure AD group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Azure AD group types – Security and Office. The *group* security role can be just for the team or for team member with User privileges [member’s privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Azure AD group membership.  
   
 - An *access* team doesn’t own records and doesn’t have security roles assigned to the team. The team members have privileges defined by their individual security roles and by roles from the teams in which they are members. The records are shared with an access team, and the team is granted access rights on the records, such as Read, Write, or Append.  
   
@@ -215,7 +215,8 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 
 > [!NOTE]
 > - The list of team members listed in each group team only displays the user members who have accessed the environment. This list doesn’t show all the group members of the Azure AD group. The team member’s privileges are derived dynamically at run-time when the team member accesses the application. The security role of the team is not assigned directly to the team member. Since team member's privileges are derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
-> - **Discover and launch apps** coming soon in October 2019 - Group team members can see the list of all the apps and the list of all the environments they have access to based on their AAD Group membership. The temporary workaround is to assign a security role directly to the team member.  
+> - You do not need to assign team members with an individual security role if your group team's security role has a [member’s privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission. 
+> - **Discover and launch apps** coming soon - Group team members can see the list of all the apps and the list of all the environments they have access to based on their Azure AD group membership. The temporary workaround is to assign a security role directly to the team member.  
 > - **System Administrator and Environment Maker security roles**. These are special administrator's security roles and they need to be assigned to the user directly. If these security roles are assigned to Group teams, team members get the team privileges only and won't have any direct/inherited privileges. Team members won't be able to perform all the system administrator and environment maker functions. In addition they won't be able to see the list of all the environments in their tenant. 
 
 <a name="AboutAccess"></a>   
