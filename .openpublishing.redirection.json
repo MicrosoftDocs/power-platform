@@ -1,6 +1,12 @@
 {
   "redirections": [
     {
+      "source_path": "power-virtual-agents/extend-custom-canvas-upload.md",
+      "redirect_url": "extend-custom-canvas-connect",
+      "redirect_document_id": "false"
+
+    },
+    {
       "source_path": "power-platform/admin/provision-environment.md",
       "redirect_url": "create-environment",
       "redirect_document_id": "false"
