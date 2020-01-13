@@ -42,7 +42,7 @@ In most cases, you'll be able to sign up for Power Virtual Agents using the step
 ### Personal email address 
 You can't sign up for Power Virtual Agents using a personal email address. You need to use your work or school account to finish the sign up.
 
-### Self service sign-up disabled
+### Self-service sign-up disabled
 If you receive a message that your sign-up couldn't be completed it means your organization's IT administrator has disabled self-service sign-up for Power Virtual Agents. To finish signing up, contact your IT administrator and ask them to follow the instructions to [enable sign-up](requirements-licensing.md#trial-plans).
 
 > [!div class="mx-imgBorder"]
