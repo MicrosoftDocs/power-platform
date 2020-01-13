@@ -2,7 +2,7 @@
 title: "Connect Power Virtual Agents to a custom canvas"
 description: "Use an advanced custom canvas to change the display and functionality of your bot (development coding required)."
 keywords: ""
-ms.date: 1/7/2019
+ms.date: 1/13/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
