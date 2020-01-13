@@ -2,7 +2,7 @@
 title: "Sign up for a Power Virtual Agents trial"
 description: "You can sign up for Power Virtual Agents individually as a trial if you're not an admin of an organization."
 keywords: "Administration, licensing"
-ms.date: 12/18/2019
+ms.date: 1/13/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -32,7 +32,9 @@ You'll then be taken to the Power Virtual Agents sign-in page and you can start 
 
 
 ## Trial expiration
-After you finish the sign-up process, your free trial for Power Virtual Agents will start. When the trial expires, you will be able to extend the trial.
+After you finish the sign-up process, your time-limited free trial for Power Virtual Agents will start. When the trial expires, you will be able to extend the trial by 30 days. 
+
+> ![License invalid page. Extend trial](media/extend_trial_screen.jpg)
 
 ## Troubleshooting the sign-up process
 In most cases, you'll be able to sign up for Power Virtual Agents using the steps in this article. Some issues might prevent you from signing up. 
@@ -40,7 +42,7 @@ In most cases, you'll be able to sign up for Power Virtual Agents using the step
 ### Personal email address 
 You can't sign up for Power Virtual Agents using a personal email address. You need to use your work or school account to finish the sign up.
 
-### Self service sign up disabled
+### Self-service sign-up disabled
 If you receive a message that your sign-up couldn't be completed it means your organization's IT administrator has disabled self-service sign-up for Power Virtual Agents. To finish signing up, contact your IT administrator and ask them to follow the instructions to [enable sign-up](requirements-licensing.md#trial-plans).
 
 > [!div class="mx-imgBorder"]
