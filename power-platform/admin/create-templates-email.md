@@ -58,7 +58,7 @@ An email template is attached to an email activity after the activity is created
    >   1. Select the link text and data fields. For example: http://contoso.com/q?{!User : City;}  
    >   2. Select **Make this a Hyperlink** (![Make this a Hyperlink](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
    > 
-   >      The text and data fields will be converted to a hyperlink. For example: \<a href="http://contoso.com/q?{!User : City;}">http://contoso.com/q?{!User : City;}\</a>.  
+   >      The text and data fields will be converted to a hyperlink. For example: \<a href="https://contoso.com/q?{!User : City;}">http://contoso.com/q?{!User : City;}\</a>.  
    > 
    >      The hyperlink text will appear as a link when the template is used in an email.  
    > - There is no spell check built into model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. There might be third-party solutions available. For more information, visit [Microsoft Dynamics Solution Finder](https://www.microsoft.com/dynamics365/partners).  

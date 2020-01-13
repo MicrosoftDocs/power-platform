@@ -27,7 +27,7 @@ The [!INCLUDE[pn_power_bi_for_office_365_long](../includes/pn-power-bi-for-offic
   
  To create a [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] dashboard using a  content pack, follow these instructions.  
   
-1. If you haven't already done so, [register with Power BI](http://powerbi.com/).  
+1. If you haven't already done so, [register with Power BI](https://powerbi.com/).  
   
 2. After you have signed in to [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)], in the **Datasets** area click **Get Data**, under **Services** click **Get**, and then select from the following content packs.  
   
