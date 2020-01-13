@@ -81,7 +81,7 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
 |                                [!INCLUDE[tn_Mozilla_Firefox](../includes/tn-mozilla-firefox.md)]                                 |       Yes\*\*       |
 |                                   [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)]                                    |         Yes         |
   
- \* The [Skype Click-to-call plugin](http://www.skype.com/go/clicktocall) must be installed on the [!INCLUDE[tn_chrome](../includes/tn-chrome.md)] browser and enabled. More information: [How do I enable Skype Click to Call in Chrome?](https://support.skype.com/en/faq/FA12243/how-do-i-enable-skype-click-to-call-in-chrome)  
+ \* The [Skype Click-to-call plugin](https://www.skype.com/go/clicktocall) must be installed on the [!INCLUDE[tn_chrome](../includes/tn-chrome.md)] browser and enabled. More information: [How do I enable Skype Click to Call in Chrome?](https://support.skype.com/en/faq/FA12243/how-do-i-enable-skype-click-to-call-in-chrome)  
   
  Additionally, [!INCLUDE[pn_skype](../includes/pn-skype.md)] click-to-call is supported with [!INCLUDE[pn_crm_for_windows_8](../includes/pn-crm-for-windows-8.md)], [!INCLUDE[pn_moca_CRM_Windows_8_1](../includes/pn-moca-crm-windows-8-1.md)], and [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)].  
   

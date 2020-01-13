@@ -53,5 +53,5 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
 >  To monitor enhanced SLA details, consider creating custom dashboards based on the SLA KPI environment entity or custom views using the Regarding (Case) relationship.  
   
 ### See also  
- [Video: SLA Enhancements in Microsoft Dynamics CRM 2015](http://youtu.be/rgmPqLsG8WI)   
+ [Video: SLA Enhancements in Microsoft Dynamics CRM 2015](https://youtu.be/rgmPqLsG8WI)   
  [Enable languages](../admin/enable-languages.md)

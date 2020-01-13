@@ -83,5 +83,5 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 ### See also  
  [Manage configuration data](manage-configuration-data.md)   
- [Video: Salesperson Experience with Product Taxonomy in Microsoft Dynamics CRM 2015](http://www.youtube.com/watch?v=MptViq7tf_s&index=2&list=PLC3591A8FE4ADBE07)   
+ [Video: Salesperson Experience with Product Taxonomy in Microsoft Dynamics CRM 2015](https://www.youtube.com/watch?v=MptViq7tf_s&index=2&list=PLC3591A8FE4ADBE07)   
  [Product catalog entities](manage-product-catalog-configuration.md)
