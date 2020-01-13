@@ -2,7 +2,7 @@
 title: "Configuration of advanced features in Power Virtual Agents"
 description: "Incorporate advanced features into your bot, such as sign-in, live agent transfer, custom appearances and dynamic cards, and file uploads."
 keywords: ""
-ms.date: 11/16/2019
+ms.date: 1/13/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
