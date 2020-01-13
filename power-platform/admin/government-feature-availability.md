@@ -31,7 +31,7 @@ There are certain experiences that are currently not available with Dynamics 365
 - [Connected Field Service](https://msdn.microsoft.com/library/mt744253.aspx)
 - [Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)
 - [Gamification](https://docs.microsoft.com/dynamics365/customer-engagement/gamification/manage-gamification-in-dynamics-365-online)
-- [Home.Dynamics.com](http://home.dynamics.com/)
+- [Home.Dynamics.com](https://home.dynamics.com/)
 - [Insights, powered by InsideView](https://appsource.microsoft.com/product/dynamics-365/insideviewinc.b5386882-4312-4d69-879a-23081897c012)
 - [Mobile offline](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/configure-mobile-offline-synchronization-dynamics-365-phones-tablets)
 - [PowerBI “embedded” user dashboard experience](https://docs.microsoft.com/power-bi/service-connect-to-microsoft-dynamics-crm)

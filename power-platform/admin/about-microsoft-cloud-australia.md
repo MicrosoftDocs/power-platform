@@ -110,7 +110,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
  We’ll store all customer data, including backups, within the Australia Datacenter. For any [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services that are running in conjunction with model-driven apps in Dynamics 365 those services will follow the data storage rules for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
   
 ### Will model-driven apps in Dynamics 365 be Information Security Registered Assessors Program (IRAP) certified when the datacenters are live in Australia?  
- We’re actively investigating [IRAP](http://www.asd.gov.au/infosec/irap/index.htm) requirements and how they relate specifically to model-driven apps in Dynamics 365 and we’ll share more information at a later date.  
+ We’re actively investigating [IRAP](https://www.asd.gov.au/infosec/irap/index.htm) requirements and how they relate specifically to model-driven apps in Dynamics 365 and we’ll share more information at a later date.  
   
 ### Where can I find out more about the physical infrastructure for model-driven apps in Dynamics 365?  
  [Microsoft Cloud Infrastructure and Operations (MCIO)](https://go.microsoft.com/fwlink/p/?LinkID=528551) powers the Microsoft cloud services. MCIO focuses on smart growth, high reliability, operational excellence, cost-effectiveness, environmental sustainability, and a trustworthy online experience for customers and partners worldwide.  

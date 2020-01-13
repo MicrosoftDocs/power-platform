@@ -293,7 +293,7 @@ For information about the programmatic interface for managing configuration and 
   
 <a name="view_failure_records"></a>   
 ### How to view detailed information about the records that failed to sync  
- Viewing the failed record logs can help you determine the cause of synchronization failures. To view failed records in the destination Azure destination database, use Azure Storage Explorer, a free standalone app that allows you to easily work with Azure Storage data. More information:  [Azure Storage Explorer](http://storageexplorer.com/).  
+ Viewing the failed record logs can help you determine the cause of synchronization failures. To view failed records in the destination Azure destination database, use Azure Storage Explorer, a free standalone app that allows you to easily work with Azure Storage data. More information:  [Azure Storage Explorer](https://storageexplorer.com/).  
   
 1. Go to **Settings** > **Data Export**.  
   

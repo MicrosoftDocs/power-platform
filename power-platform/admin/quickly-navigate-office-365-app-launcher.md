@@ -52,7 +52,7 @@ Dynamics 365 introduces a new app model for Dynamics 365 apps and makes accessin
   
 <a name="BKMK_IntroD365HomePage"></a>   
 ## For admins and end users: Introducing the Dynamics 365 home page  
- If you've transitioned to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)], we have a new page for you to manage and open Dynamics 365 apps. Click <strong>Dynamics 365</strong>from the app launcher, to go to the Dynamics 365 home page ([home.dynamics.com](http://home.dynamics.com)).  
+ If you've transitioned to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)], we have a new page for you to manage and open Dynamics 365 apps. Click <strong>Dynamics 365</strong>from the app launcher, to go to the Dynamics 365 home page ([home.dynamics.com](https://home.dynamics.com)).  
   
  ![Dynamics 365 apps tile on the Office 365 app launcher](../admin/media/select-dynamics-365-app-launcher.png "Dynamics 365 apps tile on the Office 365 app launcher")  
   

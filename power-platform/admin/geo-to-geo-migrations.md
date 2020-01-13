@@ -57,7 +57,7 @@ We continue to open new datacenter regions for business services, and to add dat
 > [!NOTE]
 >  Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won’t be available. In the unlikely event this happens, we will work with you to decide how to proceed.  
 
- To see the datacenter regions, go to [Where is my data?](http://o365datacentermap.azurewebsites.net/) and then click **Select Your Region**.  
+ To see the datacenter regions, go to [Where is my data?](https://o365datacentermap.azurewebsites.net/) and then click **Select Your Region**.  
 
  The following topics have information that could be helpful to understand the move process:  
 
