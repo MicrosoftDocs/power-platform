@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 01/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -24,7 +24,6 @@ We continue to open new datacenter regions for business services, and to add dat
 > [!IMPORTANT]
 > - Support for geo migration is limited and generally not available.
 > - To request a regional migration, please contact your account manager or  see [Technical Support](get-help-support.md).  
-> - Version 9.0 does not currently support regional migration. Check back later for availability. 
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
 
 ## Impact of migrating  
@@ -32,21 +31,14 @@ We continue to open new datacenter regions for business services, and to add dat
 
  The other significant change is to your organization URL. Each of the regional datacenters has a unique identifier in the URL. When your organization is moved from one regional datacenter to another this identifier will change. For example:  
 
--   South America (LATAM/SAM) = .crm2.dynamics.com  
-
--   Canada (CAN) = .crm3.dynamics.com  
-
--   Europe, Middle East, Africa (EMEA) = .crm4.dynamics.com  
-
--   Asia Pacific (APAC) = *.crm5.dynamics.com  
-
--   Australia (OCE) = *.crm6.dynamics.com  
-
--   Japan (JPN) = *.crm7.dynamics.com  
-
--   India (IND) = *.crm8.dynamics.com  
-
--   United Kingdom (UK) = *.crm11.dynamics.com  
+- South America (LATAM/SAM) = .crm2.dynamics.com  
+- Canada (CAN) = .crm3.dynamics.com  
+- Europe, Middle East, Africa (EMEA) = .crm4.dynamics.com  
+- Asia Pacific (APAC) = *.crm5.dynamics.com  
+- Australia (OCE) = *.crm6.dynamics.com  
+- Japan (JPN) = *.crm7.dynamics.com  
+- India (IND) = *.crm8.dynamics.com  
+- United Kingdom (UK) = *.crm11.dynamics.com  
 
  [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in](sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)
 
@@ -57,21 +49,16 @@ We continue to open new datacenter regions for business services, and to add dat
 > [!NOTE]
 >  Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won’t be available. In the unlikely event this happens, we will work with you to decide how to proceed.  
 
- To see the datacenter regions, go to [Where is my data?](https://o365datacentermap.azurewebsites.net/) and then click **Select Your Region**.  
+ To see the datacenter regions, go to [Where is my data?](http://o365datacentermap.azurewebsites.net/) and then click **Select Your Region**.  
 
  The following topics have information that could be helpful to understand the move process:  
 
--   [New datacenter regions](new-datacenter-regions.md)  
-
--   [About Microsoft Cloud Australia](about-microsoft-cloud-australia.md)  
-
--   [About Microsoft Cloud Canada](about-microsoft-cloud-canada.md)  
-
--   [About the Microsoft Cloud Germany datacenter](about-microsoft-cloud-germany.md)
-
--   [About Microsoft Cloud Japan](about-microsoft-cloud-japan.md)  
-
--   [About Microsoft Cloud India](about-microsoft-cloud-india.md)  
+- [New datacenter regions](new-datacenter-regions.md)  
+- [About Microsoft Cloud Australia](about-microsoft-cloud-australia.md)  
+- [About Microsoft Cloud Canada](about-microsoft-cloud-canada.md)  
+- [About the Microsoft Cloud Germany datacenter](about-microsoft-cloud-germany.md)
+- [About Microsoft Cloud Japan](about-microsoft-cloud-japan.md)  
+- [About Microsoft Cloud India](about-microsoft-cloud-india.md)  
 
 ## How the move works  
  You’ll be provided with a list of prerequisites and post-requisites for your migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move.  
