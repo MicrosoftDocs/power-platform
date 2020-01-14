@@ -27,7 +27,7 @@ notification can span a few years. After removal, the feature or capability will
 Regional Discovery Service is deprecated
 ----------------------------------------------------------------------------------------------
 
-Effective March 2, 2020, the *regional* [Discovery Service)](/powerapps/developer/common-data-service/org-service/discovery-service) is deprecated. Until March 1, 2021, Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After March 1, 2021, the *regional* Discovery Service won't be available.
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) is deprecated. Until March 1, 2021, Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After March 1, 2021, the *regional* Discovery Service won't be available.
 
 Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before March 1, 2021. More information: [Modify your code to use global Discovery Service in Web API](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
 
