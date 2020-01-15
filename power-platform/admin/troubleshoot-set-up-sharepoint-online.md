@@ -61,14 +61,26 @@ The most common cause for the Documents associated grid not loading is the corru
 6. Publish all customizations.
 7. Select the created (SharePointDocumentSolution) solution.
 8. Export the solution and choose the Package type as "Unmanaged". SharePointDocumentSolution.zip will be downloaded. 
-9. Extract the zip file (downloaded file from Step 8).
-10. Browse the folder, locate and open customization.xml.
+9. Delete the solution that was created during step 3 from the organization.
+<!-- 10. Browse the folder, locate and open customization.xml.
 11. Search LayoutXml of Document associated grid (search for *Document Associated*).
     
     > [!div class="mx-imgBorder"] 
-    > ![](media/sharepoint-document-associated-grid.png "Search for Document Associated")
+    > ![](media/sharepoint-document-associated-grid.png "Search for Document Associated")  -->
 
-12. Make the changes as below for the LayoutXML section:
+10.	Extract the exported solution zip file (downloaded file from Step 8).  
+11.	In the solution contents folder, locate and then open **Solution.xml**.
+12.	Change the following value in **Solution.xml**, and then save it. <br />
+    From `<Managed>0</Managed>` to `<Managed>1</Managed>`.
+13.	In the solution contents folder, locate and open **customization.xml**.
+14.	Search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to “0016f9f3-41cc-4276-9d11-04308d15858d”.
+15.	If the `<SavedQuery>` element found in step 14 is similar to 
+`<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute. 
+16. Search layoutxml of Document associated grid (search for *Document Associated*).
+    
+    > [!div class="mx-imgBorder"] 
+    > ![](media/sharepoint-document-associated-grid.png "Search for Document Associated")
+17. Make the changes as indicated below for the layoutxml section:
 
     ```  
     <layoutxml>
@@ -93,7 +105,10 @@ The most common cause for the Documents associated grid not loading is the corru
     </layoutxml>
     ```  
 
-13. Make the changes as below for the FetchXml section:
+    > [!IMPORTANT]
+    >  All the attributes configured in the layout xml require their corresponding respective attributes to be present in the Fetch XML. The grid will return an error when this configuration is incorrect.  
+
+18. Make the changes as below for the FetchXml section:
 
     ```  
     <fetch distinct="false" mapping="logical">
@@ -123,16 +138,13 @@ The most common cause for the Documents associated grid not loading is the corru
     </fetch>
      ```  
 
-> [!IMPORTANT]
->  All the attributes configured in the layout xml require their corresponding respective attributes to be present in the Fetch XML. Grid will result in error when this configuration is incorrect.  
-
-14. Save the file.
-15. Zip the folder.
-16. Open model-driven app in Dynamics 365.
-17. Navigate to **Settings** > **Solutions**
-18. Import the solution (zipped file in Step 8).
-19. Publish all customizations.
-20. Verify the Document associated grid is displaying in all the required SharePoint documents.
+19. Save the file.
+20. Zip the folder.
+21. Open a model-driven app in Dynamics 365.
+22. Navigate to **Settings** > **Solutions**
+23. Import the solution (zipped file in Step 8).
+24. Publish all customizations.
+25. Verify the Document associated grid is displaying in all the required SharePoint documents.
 
 ## Validate and fix SharePoint site URLs
 
