@@ -17,8 +17,6 @@ search.app:
 ---
 # Get Help + Support 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 Admins you can use the **Help + support** experience in the [Power Platform Admin center](admin-documentation.md) to get self-help solutions in ***real-time*** for their issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
 
 An example of solutions provided for Dynamics 365 App for Outlook issues:

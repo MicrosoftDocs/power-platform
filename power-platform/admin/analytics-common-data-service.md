@@ -17,8 +17,6 @@ search.app:
 ---
 # Common Data Service analytics
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power Platform Admin center to quickly view adoption ad user metrics for your organization. 
 
  **Key highlights**  
@@ -338,7 +336,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 <a name="BKMK_Storage"></a>   
 
 ## Storage  
-For storage information, see [Preview: Common Data Service storage capacity](capacity-storage.md).
+For storage information, see [Common Data Service storage capacity](capacity-storage.md).
 
 ## Download  
  ![Customer Data Service analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service analytics Download Section")  

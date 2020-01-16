@@ -17,8 +17,6 @@ search.app:
 ---
 # Activity logging for Power Apps
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 Power Apps activities are now tracked from the [Office 365 Security & Compliance Center](https://go.microsoft.com/fwlink/?LinkID=824876). Office 365 tenant administrators reach the Security & Compliance Center by navigating to [https://protection.office.com](https://protection.office.com). From there, the **Audit log search** is found under the **Search and investigation** dropdown.
 
 ![Audit log search](media/audit-log-search-menu.png "Audit log search")

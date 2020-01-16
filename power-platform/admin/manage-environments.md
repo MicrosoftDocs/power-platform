@@ -17,8 +17,6 @@ search.app:
 ---
 # Manage environments
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 You can view and manage your environments on the **Environments** page. 
 
 ![Environment list](media/environment-list.png "Environment list")

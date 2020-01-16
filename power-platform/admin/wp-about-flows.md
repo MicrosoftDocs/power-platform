@@ -17,8 +17,6 @@ search.app:
 ---
 # About Microsoft Power Automate
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 Microsoft Power Automate is an online workflow service that allows automating tasks across multiple services using connectors. Flows are started when a triggering event occurs, this could be a record is created or a scheduled execution, or even a button click from the Power Automate mobile application. Once triggered, the flow proceeds to execute the actions in the flow. Conditions are used to guide the flow to the proper actions. You may find that it helpful to create some flows yourself to support your administration of your company’s PowerApp environments.
 
 The following is a simple example of a flow, with a trigger using the Twitter connector and three other actions that will run in sequence.

@@ -17,9 +17,6 @@ search.app:
 ---
 # Videos and PowerPoint presentations
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-
 |Topic  |Video  |PowerPoint  |
 |---------|---------|---------|
 |Center of Excellence: Tried and tested techniques|[Video](https://youtu.be/ItjPsGZ2NBE)  |[Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2004)  |
