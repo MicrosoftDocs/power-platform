@@ -18,7 +18,7 @@ search.app:
 # Manage the encryption key
 All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
   
- By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don’t have to.  The manage keys feature in the Power Platform Admin Center (preview) gives administrators the ability to self-manage the database encryption key that is associated with the Common Data Service tenant. 
+ By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don’t have to.  The manage keys feature in the Power Platform Admin Center gives administrators the ability to self-manage the database encryption key that is associated with the Common Data Service tenant. 
 
 <!--  [!IMPORTANT]
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
@@ -58,7 +58,7 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
 
 Consider the following sequence of events.  
   
-The malicious administrator signs in to the Power Platform Admin Center (preview), goes to the **Environments** tab and selects **Manage encryption key**. The malicious administrator then creates a new key with a password and downloads the encryption key to their local drive, and activates the new key. Now all the environment databases are encrypted with the new key. Next, the malicious administrator locks the tenant with the newly downloaded key, and then takes or deletes the downloaded encryption key.  
+The malicious administrator signs in to the Power Platform Admin Center, goes to the **Environments** tab and selects **Manage encryption key**. The malicious administrator then creates a new key with a password and downloads the encryption key to their local drive, and activates the new key. Now all the environment databases are encrypted with the new key. Next, the malicious administrator locks the tenant with the newly downloaded key, and then takes or deletes the downloaded encryption key.  
 
 These actions will result in disabling all the environments within the tenant from online access and make all database backups un-restorable.
   
@@ -98,7 +98,7 @@ For more information about generating and transferring an HSM-protected key over
 3.	[Manage encryption for an environment](#manage-encryption-for-an-environment) 
 
 
-Administrators can use the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments) or the [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
+Administrators can use the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments) or the [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
   
 ### Generate or upload the encryption key for a tenant  
 All encryption keys are stored in the Azure Key Vault, and there can only be one active key at any time. Since the active key is used to encrypt all the environments in the tenant, managing the encryption is operated at the tenant level. Once the key is activated, each individual environment can then be selected to use the key for encryption. 
@@ -107,7 +107,7 @@ Use this procedure to set the manage key feature the first time for an environme
 
 > [!WARNING]
 > When you perform the steps described here for the first time you are opting in to self-managing your encryption keys. More information: [Understand the potential risk when you manage your keys](#understand-the-potential-risk-when-you-manage-your-keys).  
-1. Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments).  
+1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).  
   
 2. Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar. 
 
@@ -148,11 +148,11 @@ To perform this task using PowerShell, see [New-CRMImportProtectionKey](/powersh
 ### Activate an encryption key for a tenant
 Once an encryption key is generated or uploaded for the tenant, it can be activated. 
 
-1.	Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments).  
+1.	Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).  
 2.	Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar.
-3.  Select **Confirm** to acknowledge the manage key risk.
-4.  Select a key that has an **Available** state and then select **Activate key** on the toolbar.
-5.  Select **Confirm** to acknowledge the key change and that all administrators will be notified.
+1.  Select **Confirm** to acknowledge the manage key risk.
+2.  Select a key that has an **Available** state and then select **Activate key** on the toolbar.
+3.  Select **Confirm** to acknowledge the key change and that all administrators will be notified.
     More information: [Encryption key change notification](#encryption-key-change-notification)
 
 When you activate a key for the tenant, it takes a while for the key management service to activate the key. The status of the **Key state** displays the key as **Installing** when the new or uploaded key is activated. 
@@ -172,25 +172,25 @@ To perform this task using PowerShell, see [Set-CrmProtectWithTenantKey](/powers
 By default, each environment is encrypted with the Microsoft-provided encryption key. Once an encryption key is activated for the tenant, administrators can elect to change the default encryption to use the activated encryption key. To use the activated key, follow these steps.
 
 #### Apply encryption key to an environment
-1.  Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments).  
+1.  Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).  
 2.	Select the **Environments** tab.
-3.  Open a **Microsoft-provided** encrypted environment. 
-4.  Select **See all**. 
-5.  In the **Environment Encryption** section, select **Manage**. 
+1.  Open a **Microsoft-provided** encrypted environment. 
+2.  Select **See all**. 
+3.  In the **Environment Encryption** section, select **Manage**. 
 6.	Select **Confirm** to acknowledge the manage key risk.
-7.  Select **Apply this key** to accept changing the encryption to use the activated key. 
-8.  Select **Confirm** to acknowledge that you are managing the key directly and that there is downtime for this action.
+1.  Select **Apply this key** to accept changing the encryption to use the activated key. 
+2.  Select **Confirm** to acknowledge that you are managing the key directly and that there is downtime for this action.
 
 #### Return a managed encryption key back to Microsoft-provided encryption key
  Returning to the Microsoft-provided encryption key configures the environment back to the default behavior where [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] manages the encryption key for you.  
   
-1.	Sign in to the [Power Platform Admin Center (preview)](https://admin.powerplatform.microsoft.com/environments).
+1.	Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
 2.	Select the **Environments** tab, and then select an environment that is encrypted with a self-managed key.
 3.	Select **See all**.
-4.  In the **Environment Encryption** section, select **Manage**, and then select **Confirm**. 
+1.  In the **Environment Encryption** section, select **Manage**, and then select **Confirm**. 
 5.	Under **Return to standard encryption management**, select **Return** .
-6.  For production environments, confirm the environment by entering the environment's name.
-7.  Select **Confirm** to return to standard encryption key management.
+1.  For production environments, confirm the environment by entering the environment's name.
+2.  Select **Confirm** to return to standard encryption key management.
 
 To perform this task using PowerShell, see [Set-CrmProtectWithMicrosoftKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmprotectwithmicrosoftkey?view=dynamics365ce-ps).
   

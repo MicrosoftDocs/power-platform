@@ -1,5 +1,5 @@
 ---
-title: "Preview: Common Data Service storage capacity  | MicrosoftDocs"
+title: "Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
 ms.date: 01/06/2020
 ms.reviewer: ""
@@ -15,9 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Preview: Common Data Service storage capacity 
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Common Data Service storage capacity 
 
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 

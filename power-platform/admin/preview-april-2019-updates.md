@@ -23,8 +23,6 @@ search.app:
 ---
 # Opt in to April 2019 updates
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 You can enable the features coming in the April 2019 update by opting in to the updates in the Power Platform Admin center. Opting in will enable all changed user experience updates for Dynamics 365 apps, which will be enabled by default to everyone starting April 2019.
 
 ![Previewing April 2019 updates](media/preview-schedule.png "Previewing April 2019 updates")

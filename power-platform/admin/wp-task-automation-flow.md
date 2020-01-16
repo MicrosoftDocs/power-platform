@@ -17,8 +17,6 @@ search.app:
 ---
 # Automation of tasks with Microsoft Power Automate
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 One of the unique things about Power Automate is you can use it to manage itself along with other parts of the Microsoft Power platform. The following connectors can be helpful to automate administrator tasks with Power Automate.
 
 |Connector  |Possible uses  |

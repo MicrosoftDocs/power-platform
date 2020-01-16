@@ -17,8 +17,6 @@ search.app:
 ---
 # Management and monitoring
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 In this section we will focus on the tools you can use to manage and monitor what is going on in your environments. Tooling falls into the following three categories:
 Portals offer an interactive experience for performing administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view this channel is used mostly for ad hoc interactive discovery.
 

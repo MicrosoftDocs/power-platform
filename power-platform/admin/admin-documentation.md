@@ -14,14 +14,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Preview: Administer Power Platform 
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Administer Power Platform 
 
 The **Power Platform Admin center** provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).
-
-> [!IMPORTANT]
-> The Power Platform Admin center is a *preview* feature, and we will continue to add functionality from other admin centers until it becomes the only admin center where you can accomplish all admin tasks related to Power Platform.<br/><br/>A *preview* feature may have limited availability and restricted functionality. A preview feature is available before an official release so that customers can get early access and provide feedback.
 
 ## Power Platform Admin center capabilities
 
