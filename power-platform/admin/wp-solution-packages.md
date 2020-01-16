@@ -17,8 +17,6 @@ search.app:
 ---
 # About solution packages
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 The Common Data Service Solutions Framework provides solutions as containers to track and manage customizations in a Common Data Service environment. This includes entity metadata, forms, views, and other resources required to run the app including developer compiled code assets. A project solution starts in the Common Data Service environment where the app is created, and the container is used to track any change made to support the app. The solution can then be exported from that Common Data Service environment for transit to other Common Data Service environments. This is commonly used to promote an application from a development environment to test and then finally to a production Common Data Service environment. Today, canvas apps and flows have their own packaging and are not included
 in the Common Data Service solution package but will be in the near future.
 

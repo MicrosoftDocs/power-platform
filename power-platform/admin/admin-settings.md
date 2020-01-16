@@ -17,8 +17,6 @@ search.app:
 ---
 # Manage Common Data Service settings
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 You can view and manage the settings for your environments by signing in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), going to the **Environments** page, selecting an environment, and then selecting **Settings**.
 
 ![Environment details](media/environment-details.png "Environment details")

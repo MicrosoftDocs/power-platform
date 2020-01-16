@@ -17,8 +17,6 @@ search.app:
 ---
 # Deployment scenarios 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 Now that you have read through the platform architecture section and the data protection concepts, and have a good grasp of all the individual components, let’s look at some scenarios and how you might handle deploying them. This assumes you created some default data loss prevention policies like what we suggested in the compliance and data protection section of the document. These scenarios represent possible deployment configurations but are not the only ways you could deploy the given scenario. Use them to inspire how you want to handle things in your organization.
 
 ## Canvas app or flows that are built to share with others (wp)

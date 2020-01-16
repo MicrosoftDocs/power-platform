@@ -17,8 +17,6 @@ search.app:
 ---
 # Manage behavior settings 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 Use Behavior settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, appear and functions.
 
 These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Product** >**Behavior**.

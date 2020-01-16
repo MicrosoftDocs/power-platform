@@ -17,8 +17,6 @@ search.app:
 ---
 # Free storage space
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 These are ways to reduce the amount of storage space used by removing or deleting different types of information from model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Use one or more of these methods to control your total data storage usage. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
   
 > [!WARNING]
@@ -411,4 +409,4 @@ Use the following methods to free storage for each of the capacity types.
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
 ### See also
-[Preview: Common Data Service storage capacity](capacity-storage.md)
+[Common Data Service storage capacity](capacity-storage.md)
