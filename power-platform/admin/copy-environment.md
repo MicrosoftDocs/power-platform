@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 01/17/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -27,8 +27,6 @@ You can use Copy environment in the Power Platform Admin center to copy the mode
 > - The source and destination environments must be in the same region.
 > - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) will not be copied to the target environment.
 > - You cannot copy from or to a default environment.
-
-
   
 ## Copy over everything
  An Everything copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  
@@ -75,6 +73,8 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 |Mailbox|  
 |Organization|  
 |Position|  
+|Queues|
+|QueueMembership|
 |Report|  
 |Resource|  
 |ResourceGroup|  
@@ -162,9 +162,9 @@ Once the copy process is complete, the target environment is placed in [Administ
      After creating a new sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you have connected Yammer to model-driven apps in Dynamics 365 there will be Yammer activity streams posted from model-driven apps in Dynamics 365 to Yammer asynchronously. These activity streams are not visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
   
 - **Platform extensibility**. Consider disabling the following that could be running in the copy environment and impacting external service components.  
-  
     - **Server-side plug-ins**.  
     - **Workflow custom activity**.  
+
 - **Client extensibility**. Review the following.  
     - **Client-side JavaScript**. Take a look at your JavaScript and HTML web resources for read/write operations that could impact external services.  
     - **IFRAMES**. Determine if the target of an IFRAME is a production environment.  
