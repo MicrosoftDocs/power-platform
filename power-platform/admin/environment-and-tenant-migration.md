@@ -46,7 +46,7 @@ The ability to import an app is available to any user with "Environment Maker" p
 > While packaging is in preview, any user with a valid Power Apps license will be able to try out packaging for their apps and environments.
 
 ## Exporting a canvas app
-1. In http://web.powerapps.com, click or tap **Apps**, select the ellipses for the app you want to migrate, and then select **Export package (preview)**.
+1. In https://web.powerapps.com, click or tap **Apps**, select the ellipses for the app you want to migrate, and then select **Export package (preview)**.
 
     ![Select export](./media/environment-and-tenant-migration/select-export.png)
 2. When the export package page opens, enter a Name and Description for the package.
@@ -59,7 +59,7 @@ The ability to import an app is available to any user with "Environment Maker" p
 4. When you are done select **Export** and the package file will begin downloading within a few seconds.
 
 ## Importing a canvas app
-1. In http://web.powerapps.com, click or tap **Apps**, and then select **Import canvas app**.
+1. In https://web.powerapps.com, click or tap **Apps**, and then select **Import canvas app**.
 
     ![Select import](./media/environment-and-tenant-migration/select-import.png)
 2. Select **Upload** and select the app package file that you want to import.
@@ -87,7 +87,7 @@ Exporting any entity or option set customizations or any model-driven apps that 
 >
 >
 
-1. In http://web.powerapps.com, select the **Model-driven (preview)** design mode in your environment.
+1. In https://web.powerapps.com, select the **Model-driven (preview)** design mode in your environment.
 
     ![Select model-driven design mode](./media/environment-and-tenant-migration/select-model-driven.png)
 
@@ -102,7 +102,7 @@ Exporting any entity or option set customizations or any model-driven apps that 
 ## Importing Common Data Service customization and model-driven apps
 Importing a Common Data Service solution package unfortunately requires a manual workaround in the experience, one that we are actively working to fix:
 
-1. In http://web.powerapps.com, select the **Model-driven (preview)** design mode in your environment.
+1. In https://web.powerapps.com, select the **Model-driven (preview)** design mode in your environment.
 
     ![Select model-driven design mode](./media/environment-and-tenant-migration/select-model-driven.png)
 
