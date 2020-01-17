@@ -81,6 +81,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 |Role|  
 |RollupField|  
 |SavedQuery|  
+|Sites|
 |SLAKPIenvironment|  
 |Solution|  
 |Subject|  
