@@ -35,9 +35,9 @@ landingContent:
           - text: What's new and planned
             url: https://docs.microsoft.com/dynamics365-release-plan/2019wave2/artificial-intelligence/dynamics365-virtual-agent-for-customer-service/planned-features
           - text: Forums and community
-            url: http://aka.ms/PowerVirtualAgentsForum
+            url: https://aka.ms/PowerVirtualAgentsForum
           - text: Submit ideas
-            url: http://aka.ms/PowerVirtualAgentsIdeas
+            url: https://aka.ms/PowerVirtualAgentsIdeas
             
   # Card (optional)
   - title: Create bots and topics

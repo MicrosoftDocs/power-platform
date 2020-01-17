@@ -198,7 +198,7 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 ### Microsoft Dynamics Portals
 
 - GCC: https://*.dynamics365portals.us
-- GCC High: http://*.high.dynamics365portals.us
+- GCC High: https://*.high.dynamics365portals.us
   
 ### See also  
  [Dynamics 365 US Government - Feature availability](government-feature-availability.md)<br/>

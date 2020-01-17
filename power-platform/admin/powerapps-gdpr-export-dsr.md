@@ -52,7 +52,7 @@ Any user with a valid Power Apps license can perform the user operations outline
 ### For admins
 To perform the administration operations outlined in this document using the Power Apps Admin center, Power Automate Admin Center, or [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
-* A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [http://web.powerapps.com/trial](https://web.powerapps.com/trial). Trial licenses can be renewed if they've expired.
+* A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://web.powerapps.com/trial](https://web.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
 * [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user’s resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
