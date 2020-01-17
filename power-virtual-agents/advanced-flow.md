@@ -321,7 +321,7 @@ These instructions use the examples described above to add weather information t
 
 1. Select the plus (**+**) icon underneath the question nodes to add a new node. In the node selection window, select **Call an action**, and then select the flow you created earlier **Get weather forecast**. 
 
-    ![Call action](media/TopicCallActionWeather.jpg)
+    ![Call action](media/SelectFlowGetWeatherForecast.png)
 
 
 1. Map the flow input blocks to the output variables from the question nodes. **City (text)** gets its value from `Var1 (text)` and **Zipcode (number)** gets its value from `Var2 (number)`.
@@ -332,7 +332,7 @@ These instructions use the examples described above to add weather information t
     Chance of rain is `{x}chance_of_rain`%**
 
 
-    ![Call action](media/TopicDisplayWeather.jpg)
+    ![Call action](media/ActionNodeGetWeatherForecast.png)
 
 
 Press **Save** to save your topic. 
