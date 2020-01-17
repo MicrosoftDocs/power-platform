@@ -1,5 +1,5 @@
 ---
-title: "On-premises data gateway management  | MicrosoftDocs"
+title: "Preview: On-premises data gateway management  | MicrosoftDocs"
 description: View and manage on-premises gateways. 
 author: jimholtz
 manager: kvivek
@@ -15,7 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# On-premises data gateway management
+# Preview: On-premises data gateway management
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services.
 

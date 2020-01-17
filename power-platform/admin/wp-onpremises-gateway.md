@@ -1,5 +1,5 @@
 ---
-title: "About On-premises gateways  | MicrosoftDocs"
+title: "Preview: About On-premises gateways  | MicrosoftDocs"
 description: About On-premises gateway
 author: jimholtz
 manager: kvivek
@@ -15,7 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# About On-premises gateway
+# Preview: About On-premises gateway
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The on-premises gateway allows Power Apps and Power Automate to reach back to on-premise resources to support hybrid integration scenarios. The gateway leverages Azure Service Bus relay technology to security allow access to on-premise resources.
 
