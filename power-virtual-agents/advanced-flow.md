@@ -214,18 +214,19 @@ You can rename and modify your flow on the Microsoft Automate Portal. For exampl
 
 In Power Virtual Agents, you can open a flow by using the flow's **View flow details** link that shows up on the list of available actions when you use the **Call an action node** in the authoring canvas:
 
- ![Modify a flow from Action Picker](media/FlowInActionPicker.png)
+ ![Modify a flow from Action Picker](media/ModifyFlowInPicker.png)
  
  If you want to update a flow that is alreday used in your Dialog, the same **View flow details** link is avlaible directly in the Action node:
  
- ![Modify a flow from Action node](media/FlowInActionPicker.png)
+ ![Modify a flow from Action node](media/ModifyFlowInAction.png)
  
- This will launch Power Automate portal in aserparte browser tab and open this flow in a Details page where it can be updated using **Edit** option.
+Using the flow's **View flow details** link will launch Power Automate portal in a separate browser tab and open this flow in a Details page where it can be updated using **Edit** option.
 
-On the Microsoft Power Automate portal, go to the **Solutions** tab and open your flow's solution. Use the flow’s **Edit menu** option to open this flow for editing.
+If you want to open a flow on the Microsoft Power Automate portal directly, go to the **Solutions** tab and open your flow's solution. Use the flow’s **Edit menu** option to open this flow for editing.
 
-    ![Open your flow for Editing](media/EditFlow.jpg)
+![Open your flow for Editing](media/EditFlow.jpg)
 
+    
 1. Rename the flow to **Get weather forecast** and add the following flow input parameters to **Request body JSON Schema** in the **When a HTTP request is received** trigger:
 
     - City (String)
