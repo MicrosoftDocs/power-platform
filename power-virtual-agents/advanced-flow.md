@@ -201,7 +201,7 @@ This flow will be moved from the **My Flows** tab and into the solution you chos
 
 In Power Virtual Agents, you can now see this flow on the list of available actions when you use the **Call an action node** in the authoring canvas.
 
-![New flow shows up in Action picker](media/FlowInActionPicker.jpg)
+![New flow shows up in Action picker](media/FlowInActionPicker.png)
 
 
 ## Modify a flow on Microsoft Automate portal
