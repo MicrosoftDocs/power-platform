@@ -222,6 +222,8 @@ In Power Virtual Agents, you can open a flow by using the flow's **View flow det
  
 Using the flow's **View flow details** link will launch Power Automate portal in a separate browser tab and open this flow in a Details page where it can be updated using **Edit** option.
 
+![Edit your flow using Details page](media/FlowEditDetailsPage.png)
+
 If you want to open a flow on the Microsoft Power Automate portal directly, go to the **Solutions** tab and open your flow's solution. Use the flow’s **Edit menu** option to open this flow for editing.
 
 ![Open your flow for Editing](media/EditFlow.jpg)
