@@ -359,7 +359,7 @@ In the **Test chat** pane, start a conversation with the bot by typing in a trig
 
 Enter your city and zipcode at the prompt to get today's weather forecast from the bot
 
-![Test Dialog](media/TopicTestDialog.jpg)
+![Test Dialog](media/GetWeatherE2E.png)
 
 
 
