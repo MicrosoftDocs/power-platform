@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 01/19/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -72,9 +72,30 @@ The default environment is named as follows: “{Azure AD tenant name} (default)
 ![](./media/environments-overview/DefaultEnvironment.png)
 
 ## Production and trial environments
-You can create environments for different purpose. A trial environment is for trying out the environment and database with Common Data Service experience. It expires after certain period. For more information, see [Administer environments in Power Apps](environments-administration.md).
+You can create environments for different purpose. A trial environment is for trying out the environment and database with Common Data Service experience. It expires after certain period. 
 
-## Choosing an environment
+## Manage environments in Power Platform admin center
+
+You can view and manage your environments in the **Environments** page. 
+
+> [!div class="mx-imgBorder"] 
+> ![Environment list](media/environment-list.png "Environment list")
+
+You can sort and search the list of environments - useful for those of you with a large number of environments to manage.
+
+### Environment details
+
+You can see some the details of your environments by selecting an environment. Select **See all** to see more environment details.
+
+> [!div class="mx-imgBorder"] 
+> ![Environment details](media/environment-details-see-all.png "Environment details")
+
+Select **Edit** to review and edit all your environment details.
+
+> [!div class="mx-imgBorder"] 
+> ![More environment details](media/environment-details-more.png "More environment details")
+
+## Choosing an environment in Power Apps admin center
 With the introduction of environments, you will now see a new experience when you come to [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  The apps, connections, and other items that are visible in the site will now be filtered based on the current environment that is selected.  Your current environment is specified in the environment picker near the right edge of the header. To choose a different environment, click or tap the picker, and a list of available environments appears. Click or tap the one you wish to enter.
 
 An environment will show up in your picker if you meet one of the following conditions:
@@ -84,7 +105,6 @@ An environment will show up in your picker if you meet one of the following cond
 * You are not an Environment Admin or Environment Maker of the environment, but you have been given ‘Contributor’ access to at least one app within the environment. For more information, see [share an app](/powerapps/maker/canvas-apps/share-app). In this case, you will not be able to create apps in this environment. You will only be able to modify the existing apps that have been shared with you.
 
 ![](./media/environments-overview/EnvironmentPicker.png)
-
 
 ### See also
 [Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/modules/create-manage-environments/)
