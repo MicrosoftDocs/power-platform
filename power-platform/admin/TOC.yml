@@ -101,16 +101,20 @@
           href: sandbox-environments.md
         - name: About trial environments
           href: trial-environments.md     
-      #  - name: Manage environments in Power Platform
-      #    href: manage-environments.md
         - name: Working with environments and Power Apps
           href: working-with-environments.md
         - name: Manage environments in Power Apps
           href: environments-administration.md
-        - name: Regions overview in Power Apps
+        - name: Regions overview
           href: regions-overview.md
+        - name: Multiple online environments or tenants
+          href: multiple-online-environments-tenants.md
+        - name: Move environments
+          href: move-environment-tenant.md
         - name: Manage encryption key
           href: manage-encryption-key.md
+        - name: Manage support environments
+          href: support-environment.md
         - name: "Troubleshooting: Unblock required URLs"
           href: troubleshooting-unblock-urls-required.md
         - name: Power Apps Preview Program

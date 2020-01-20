@@ -1,12 +1,12 @@
 ---
-title: Regions overview in Power Apps Admin center| Microsoft Docs
+title: Regions overview  Microsoft Docs
 description: Learn about regions in Power Apps
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 01/19/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,20 +15,33 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
+# Regions overview 
 
-# Regions overview in Power Apps Admin center
+For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can create an environment in a different region than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](multiple-online-environments-tenants.md#a-multi-environment-deployment) to understand the features of multiple environments.  
 
 ## How do I find out where my app is deployed?
 
 Your app is deployed in the region that hosts the environment. For example, if your environment is created in the Europe region, then your app is deployed in Europe data centers.
 
-If you're an administrator, you can determine the region of each environment in the Power Apps Admin center.
+### Using Power Platform admin center
+If you're an administrator, you can determine the region of each environment in the Power Platform admin center.
 
-- Go to the [admin center](https://admin.powerapps.com), and sign in with your work account.
+- Browse to the [admin center](https://admin.powerplatform.microsoft.com), and sign in with your admin account.
   
-    In the admin center, all existing environments are listed on the **Environments** tab. This list shows the **Region** where your app is deployed:
+  From the left-side menu, select **Environments**.
   
-   ![Environments tab](./media/regions-overview/environment-list.png)
+  > [!div class="mx-imgBorder"] 
+  > ![Environments page](media/environment-list-region.png "Environments page")
+
+### Using Power Apps admin center
+If you're an administrator, you can also determine the region of each environment in the Power Apps admin center.
+
+- Browse to the [admin center](https://admin.powerapps.com), and sign in with your admin account.
+  
+  In the admin center, all existing environments are listed on the **Environments** tab. 
+
+  > [!div class="mx-imgBorder"] 
+  > ![Environments tab](media/environment-list-powerapps.png "Environments tab")
 
 ## What regions are available?
 
