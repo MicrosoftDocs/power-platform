@@ -41,7 +41,7 @@ If you're an administrator, you can also determine the region of each environmen
   In the admin center, all existing environments are listed on the **Environments** tab. 
 
   > [!div class="mx-imgBorder"] 
-  > ![Environments tab](media/environment-list-powerapps.png) "Environments tab")
+  > ![Environments tab](media/environment-list-powerapps.png "Environments tab")
 
 ## What regions are available?
 
