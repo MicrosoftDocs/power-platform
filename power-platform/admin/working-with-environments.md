@@ -6,22 +6,22 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.date: 11/22/2016
+ms.date: 01/19/2020
 ms.author: jimholtz
 search.audienceType: 
   - maker
 search.app: 
   - PowerApps
 ---
-# Working with environments and Microsoft PowerApps
-With PowerApps, you can work in different environments and easily switch among them. For an overview of environments, see [Environments overview](environments-overview.md), which explains in detail why you use environments and how you can create and manage them. The scope of this article will cover the following topics on environment:
+# Working with environments and Microsoft Power Apps
+With Power Apps, you can work in different environments and easily switch among them. For an overview of environments, see [Environments overview](environments-overview.md), which explains in detail why you use environments and how you can create and manage them. The scope of this article will cover the following topics on environment:
 
 - How to switch the environment on powerapps.com
 - How to create an app in the right environment
 - How to view an app in the right environment
 
 ## Switch the environment
-When you sign up and first sign in to PowerApps, it opens in a default environment, which you can identify in the upper-right corner of the page.
+When you sign up and first sign in to Power Apps, it opens in a default environment, which you can identify in the upper-right corner of the page.
 
 > [!div class="mx-imgBorder"]
 > ![Default environment](media/env-dropdown.png)
@@ -38,13 +38,13 @@ You can create apps in an environment that you create or for which you've been g
 
 To create an app in the right environment:
 
-1. [Sign in to PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. [Sign in to Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. As the previous section describes, select the environment in which you would like to create your app.
 
 1. Select **Apps** near the left edge, and then select **Create an app**.
 
 ## View apps in the right environment
-Whether you are working in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or PowerApps Studio, the list of apps, connections, etc. that you see is always filtered based on the environment that's selected in the dropdown. If you don't see the apps you're looking for, always confirm whether the right environment is selected.
+Whether you are working in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or Power Apps Studio, the list of apps, connections, etc. that you see is always filtered based on the environment that's selected in the dropdown. If you don't see the apps you're looking for, always confirm whether the right environment is selected.
 
 For more information about environments, see [this overview](environments-overview.md).
