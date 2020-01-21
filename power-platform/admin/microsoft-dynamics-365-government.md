@@ -171,19 +171,19 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 - GCC: *.crm9.dynamics.com
 - GCC High:  *.crm.microsoftdynamics.us
 
-### Discovery Service
+### Discovery Service (Deprecated)
 
 - GCC: https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc
 - GCC High: https://disco.crm.microsoftdynamics.us/XRMServices/2011/Discovery.svc
 
-### Discovery WebAPI
+### Discovery (OData V4) RESTful API
 
 - GCC: 
-    - Discovery URL: https://disco.crm9.dynamics.com/api/discovery/v9.1/
-    - Global discovery URL: https://globaldisco.crm9.dynamics.com/api/discovery/v1.0/
+    - (Deprecated) Discovery URL: https://disco.crm9.dynamics.com/api/discovery/v9.1/
+    - Global discovery URL: https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/
 - GCC High: 
-    - Discovery URL: https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/
-    - Global discovery URL: https://globaldisco.crm.microsoftdynamics.us/api/discovery/v1.0
+    - (Deprecated) Discovery URL: https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/
+    - Global discovery URL: https://globaldisco.crm.microsoftdynamics.us/api/discovery/v2.0
 
 ### Instance WebAPI
 
@@ -200,6 +200,12 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 - GCC: https://*.dynamics365portals.us
 - GCC High: https://*.high.dynamics365portals.us
   
+## Regional Discovery Service is deprecated
+
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. More information: [Regional Discovery Service is deprecated](/power-platform/important-changes-coming#regional-discovery-service-is-deprecated).
+
+
+
 ### See also  
  [Dynamics 365 US Government - Feature availability](government-feature-availability.md)<br/>
  [IP Address Ranges (prior to v9.x)](https://support.microsoft.com/help/2728473/microsoft-dynamics-crm-online-ip-address-ranges)<br/>

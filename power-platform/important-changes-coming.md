@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: "11/21/2019"
+ms.date: 01/21/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -23,6 +23,13 @@ Administrators and IT professionals should use this information to prepare for f
 > [!IMPORTANT]
 > “Deprecated” means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+
+Regional Discovery Service is deprecated
+----------------------------------------------------------------------------------------------
+
+Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer/common-data-service/org-service/discovery-service) will be deprecated. Until March 1, 2021, Microsoft will continue to provide support, security, and other critical updates for the *regional* Discovery Service, but won't release any additional functionality beyond what has already been announced. After March 1, 2021, the *regional* Discovery Service won't be available.
+
+Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before March 1, 2021. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
 
 Rules feature in canvas apps is deprecated
 ----------------------------------
@@ -242,6 +249,8 @@ The Silverlight (XAP) web resource is deprecated on the web client, and is not
 supported on the Unified Interface. Instead of Silverlight web resources, you must use custom
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
+
+
 
 
 
