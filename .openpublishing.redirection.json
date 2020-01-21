@@ -63,7 +63,7 @@
     {
       "source_path": "power-virtual-agents/getting-started-new-environment.md",
       "redirect_url": "environments-fundamentals",
-      "redirect_document_id": "true"
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-virtual-agents/how-to-flow.md",
