@@ -55,7 +55,7 @@ Flow typically use variables to take in and output information. The variables ca
 
 Using the **Create a flow** option will open a starter flow template in the [Microsoft Automate portal](https://preview.flow.microsoft.com/en-us/) in a separate tab.
 
-![Microsoft Automate flow template](media/FlowTemplate.jpg)
+![Microsoft Automate flow template](media/PVAConnectorTemplate.JPG)
 
 >[NOTE]
 >The Microsoft Automate portal will automatically open in the same environment as the bot using the same user credentials
