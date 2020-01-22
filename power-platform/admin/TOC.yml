@@ -213,8 +213,8 @@
             href: configure-server-based-authentication-sharepoint-on-premises.md
           - name: Document management settings
             href: enable-sharepoint-document-management-specific-entities.md
-          #- name: Manage document suggestions
-          #  href: 
+          - name: Manage document suggestions
+            href: enable-document-suggestions.md
           - name: Microsoft Social Engagement
             href: connect-microsoft-social-engagement.md
           - name: OneDrive for business
