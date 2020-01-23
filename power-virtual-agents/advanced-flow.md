@@ -112,7 +112,7 @@ To return *output* parameters to the bot that can be a `string`, `number` or a `
 ![Power Virtual Agents Response output types](media/PVAConnector_Output_1.JPG)
 
 
-For example, you can select **Text** and **Number** to add the following output parameters to the flow:
+For example, you can select **Text** and **Number** to add the following output parameters to the flow and assign return values for them:
 - **String_Output** of type `string`
 - **Number_Output** ot type `number`
 
@@ -122,7 +122,7 @@ This example pwould create a fully functional flow that accepts two parameters, 
 
 Select **Save** to save your new flow.
 
-![Microsoft Automate flow template - Save](media/SaveFlowTemplate.jpg)
+![Microsoft Automate flow template - Save](media/PVAConnectorTemplate_SAVE.jpg)
 
 
 Your flow will be saved to **My flows** tab on the Microsoft Automate portal.
