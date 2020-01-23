@@ -98,21 +98,25 @@ To specify a flow to accept *input* parameters from a bot, select **Add an input
 ![Power Virtual Agents Trigger Input Types](media/PVAConnector_Inputs_1.JPG)
 
 
-For example, you can select **Text** and **Number** to add the following inout parameters to the flow:
-**String_Input** of type `string`
-**Number_Input** ot type `number` 
+For example, you can select **Text** and **Number** to add the following input parameters to the flow:
+- **String_Input** of type `string`
+- **Number_Input** ot type `number` 
 
 ![Power Virtual Agents Trigger Inputs](media/PVAConnector_Inputs_2.JPG)
 
 ### Output parameters
 
-To return two *output* parameters to the bot, a `string`, `number` or a `boolean`, select **Add an output** option in **Power Vitual Agents response** UI, and select the approprite type:
+To return *output* parameters to the bot that can be a `string`, `number` or a `boolean`, select **Add an output** option in **Power Vitual Agents response** UI, and select the approprite type for the output:
 
 
-![Microsoft Automate flow template outputs](media/FlowHttpResponseOutputs.jpg)
+![Microsoft Automate flow template output types](media/PVAConnector_Outputs_1.JPG)
 
 
+For example, you can select **Text** and **Number** to add the following output parameters to the flow:
+- **String_Output** of type `string`
+- **Number_Output** ot type `number`
 
+![Microsoft Automate flow template outputs](media/PVAConnector_Outputs_2.JPG)
 
 This example pwould create a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs. 
 
