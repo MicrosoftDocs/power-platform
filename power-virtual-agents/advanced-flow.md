@@ -61,7 +61,6 @@ Using the **Create a flow** option will open a starter flow template in the [Mic
 >The Microsoft Automate portal will automatically open in the same environment as the bot using the same user credentials
 
 This template is an example of a flow that can be used by bots. To be suitable for bots, a Microsoft Automate flow requires a special **Power Virtual Agents** trigger and response action: 
-
 - Flow trigger:  **Power Virtual Agents**
 ![Power Virtual Agents Trigger](media/PVAConnectorTrigger.JPG)
 
@@ -71,7 +70,7 @@ This template is an example of a flow that can be used by bots. To be suitable f
 
 ## Input and output parameters
 
-Bots can use the following types of inputs and outputs with Microsoft Automate flows:
+There is no upper limit on how many input or output parameters a bot Power Automate flow can have. Bots can use the following types of inputs and outputs with Microsoft Automate flows:
 
 - Number
 - String
@@ -89,6 +88,8 @@ The following types are unsupported:
 - List [Date]
 - List [Timestamp]
 
+>[NOTE]
+>The maximum szie of data that a bot can receive from a Power Automate flow is 1MB at a time. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
 
 ### Input parameters
 
