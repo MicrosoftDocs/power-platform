@@ -216,10 +216,6 @@ You can rename and modify your flow on the Microsoft Automate Portal. For exampl
 
     ![Pass flow's input parameters to MSN Weather connector as location](media/AddLocationForMSN.jpg)
 
-1. Delete both **Initialize Variable** nodes by selecting the **...** icon and then **Delete**.
-
-    ![Add Dynamic variables](media/DeleteVariables.jpg)
-
 
 1. In the response node **Return value(s) to Power Virtual Agents**, add output parameters that you want to return to the bot, and **Save** your flow. 
 
