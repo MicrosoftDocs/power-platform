@@ -128,7 +128,7 @@ Select **Save** to save your new flow.
 Your flow will be saved to **My flows** tab on the Microsoft Automate portal.
 
 
-![Microsoft Automate flow template - Save](media/MyFlows.jpg)
+![Microsoft Automate flow template - Save](media/FlowInMyFlows.JPG)
 
 
 
