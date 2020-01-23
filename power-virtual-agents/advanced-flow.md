@@ -89,7 +89,7 @@ The following types are unsupported:
 - List [Timestamp]
 
 >[NOTE]
->The maximum szie of data that a bot can receive from a Power Automate flow is 1MB at a time. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
+>Bot is able to receive up to 1MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
 
 ### Input parameters
 
