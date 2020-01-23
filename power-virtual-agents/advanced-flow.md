@@ -77,7 +77,7 @@ Bots can use the following types of inputs and outputs with Microsoft Automate f
 - String
 - Boolean
 
-The following types are unsupported :
+The following types are unsupported:
 
 - Object
 - Date
@@ -92,72 +92,24 @@ The following types are unsupported :
 
 ### Input parameters
 
-This example in the template shows how to specify a flow to accept two *input* parameters from a bot - a `string` and a `number` - as specified in the **Request Body JSON Schema** by this JSON snippet:
+To specify a flow to accept *input* parameters from a bot, select **Add an input** option in **Power Vitual Agents trigger** UI and select the type a - `string`, `number` or a `boolean`, for example:
 
 
 ![Microsoft Automate flow template inputs](media/FlowHttpRequestInputs.jpg)
 
 
 
-   ``` JSON
-{
-    "type": "object",
-    "properties": {
-        "flow_input_string": {
-            "type": "string"
-        },
-        "flow_input_number": {
-            "type": "number"
-        }
-    }
-}
- ```
-
 ### Output parameters
 
-An **HTTP Response** action must be used to return outputs to the bot. 
-
-This template provides an example on how to return two *output* parameters to the bot, a `string` and a `number`.
+To return two *output* parameters to the bot, a `string`, `number` or a `boolean`, select **Add an output** option in **Power Vitual Agents response** UI, and select the approprite type:
 
 
 ![Microsoft Automate flow template outputs](media/FlowHttpResponseOutputs.jpg)
 
 
-Note that both the **Body** and **HTTP Response Body JSON Schema** (under **Advanced options**) sections must be filled out in the **HTTP Response** action.
-
-In this example, the **Body** section defines the flow outputs `string` and `number`:
-
-![Microsoft Automate flow template outputs - Body](media/Body.jpg)
-
-```
-    {
-      "flow_output_string": <flow-provided variable block>
-      "flow_output_number": <flow-provided variable block>
-    }
-```
-
-The **Response Body JSON Schema** section defines the type for the flow outputs defined in the body section:
 
 
-![Microsoft Automate flow template outputs - Body Schema](media/HttpResponseBodySchema.jpg)
-
-
-   ``` JSON
-
-{
-    "type": "object",
-    "properties": {
-        "flow_output_string": {
-            "type": "string"
-        },
-        "flow_output_number": {
-            "type": "number"
-        }
-    }
-}
-```
-
-This template provides a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs. 
+This example pwould create a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs. 
 
 Select **Save** to save your new flow.
 
