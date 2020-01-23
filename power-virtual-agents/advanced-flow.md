@@ -92,12 +92,17 @@ The following types are unsupported:
 
 ### Input parameters
 
-To specify a flow to accept *input* parameters from a bot, select **Add an input** option in **Power Vitual Agents trigger** UI and select the type a - `string`, `number` or a `boolean`, for example:
+To specify a flow to accept *input* parameters from a bot, select **Add an input** option in **Power Vitual Agents trigger** UI and select the type a - `string`, `number` or a `boolean`:
 
 
-![Microsoft Automate flow template inputs](media/FlowHttpRequestInputs.jpg)
+![Power Virtual Agents Trigger Input Types](media/PVAConnector_Inputs_1.JPG)
 
 
+For example, you can select **Text** and **Number** to add the following inout parameters to the flow:
+**String_Input** of type `string`
+**Number_Input** ot type `number` 
+
+![Power Virtual Agents Trigger Inputs](media/PVAConnector_Inputs_2.JPG)
 
 ### Output parameters
 
