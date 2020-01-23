@@ -65,8 +65,9 @@ This template is an example of a flow that can be used by bots. To be suitable f
 - Flow trigger:  **Power Virtual Agents**
 ![Power Virtual Agents Trigger](media/PVAConnectorTrigger.JPG)
 
+
 - Response action:  **Power Virtual Agents**
-![Power Virtual Agents Trigger](media/PVAConnectorResponse.JPG)
+![Power Virtual Agents Response](media/PVAConnectorResponse.JPG)
 
 ## Input and output parameters
 
