@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 01/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -113,3 +113,4 @@ is shared with them:
 
 > [!IMPORTANT]
 > Turning off the per app plan is currently available only for canvas apps. Model-driven apps and portals will have this ability in the future.
+> For the time being, "Ad-hoc subscription" consent plans must be enabled for an organization's tenant. An ad-hoc subscription refers to trial licenses that can be assigned by admins to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal, or that users can sign themselves up for via https://signup.microsoft.com. End users that receive a per app plan also receive an "ad-hoc" Power Apps baseline access plan. This plan ensures end users can launch apps shared with them when they're expected to be entitled access via a per app plan. The requirement for ad-hoc subscription consent plans will be removed in the future. [This documentation](powerapps-powershell.md#block-trial-licenses-commands) outlines how ad-hoc subscription consent plans are blocked and unblocked for an organization.
