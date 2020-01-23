@@ -194,7 +194,7 @@ You can rename and modify your flow on the Microsoft Automate Portal. For exampl
   ![Open your flow for Editing](media/EditFlow.jpg)
 
     
-1.  Rename the flow to **Get weather forecast** and add the following flow input parameters to **Request body JSON Schema** in the **When a HTTP request is received** trigger:
+1.  Rename the flow to **Get weather forecast** and add the following flow input parameters to **POwer Virtual Agents** trigger :
 
     - City (String)
     - Zipcode (Number)
@@ -202,21 +202,9 @@ You can rename and modify your flow on the Microsoft Automate Portal. For exampl
 
     ![Open your flow for Editing](media/RenameFlow.jpg)
 
-    ``` JSON
-    { 
-        "type": "object",
-        "properties": {
-            "City": {
-                "type": "string"
-            },
-            "Zipcode": {
-                "type": "number"
-            }
-        }
-    }
-    ``` 
+   
 
-1. Choose **Add an action** to create a new action below the **When a HTTP request is received** trigger
+1. Choose **Add an action** to create a new action below the **Power Virtual Agents** trigger
 
     ![Add flow action](media/AddAction.jpg)
 
@@ -233,7 +221,7 @@ You can rename and modify your flow on the Microsoft Automate Portal. For exampl
     ![Add Dynamic variables](media/DeleteVariables.jpg)
 
 
-1. In the response node **Respond to Power Virtual Agents**, add output parameters that you want to return to the bot. Under **Body**, select **Add dynamic content** and select the following outputs to add them to body of the response node:
+1. In the response node **Return value(s) to Power Virtual Agents**, add output parameters that you want to return to the bot, and **Save** your flow. 
 
     - day_summary (String)
     - location (String)
@@ -242,26 +230,6 @@ You can rename and modify your flow on the Microsoft Automate Portal. For exampl
 
 ![Add Dynamic variables to flow's reponse](media/AddDynamicVariables.jpg)
 
-1. Under **Advanced options**, add the following JSON code to **Response Body JSON Schema** and then **Save** your changes.
-
-    ![Add Dynamic variables to flow's reponse](media/GetWeatherFlowSave.jpg)
-
-    ``` JSON
-    {
-        "type": "object",
-        "properties": {
-            "day_summary": {
-                "type": "string"        },
-            "location": {
-                "type": "string"
-            },
-            "chance_of_rain": {
-                "type": "number"
-            }
-        }
-    }
-    
-    ```
 
 This flow is now ready to be used in your bots.
 
