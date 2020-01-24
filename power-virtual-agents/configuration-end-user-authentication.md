@@ -2,7 +2,7 @@
 title: "Configure user authentication in Power Virtual Agents"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
 keywords: "Authentication, IdP,"
-ms.date: 12/10/2019
+ms.date: 1/24/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -15,13 +15,14 @@ ms.collection: virtual-agent
 
 # Configure end-user authentication in Power Virtual Agents
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook. 
 
 To learn how to add authentication to a bot topic, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md).
 
 Power Virtual Agents supports any identity provider that is compliant with the [OAuth2 standard](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+
+### Watch a video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G2]
 
 ## Registering a new app with your identity provider
 
