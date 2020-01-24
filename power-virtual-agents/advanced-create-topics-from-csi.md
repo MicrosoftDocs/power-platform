@@ -2,7 +2,7 @@
 title: "Automate topic creation in Power Virtual Agents"
 description: "Automate the creation of topics in Power Virtual Agents bots by using support topics discovered by Dynamics 365 Customer Service Insights."
 keywords: "Customer Service Insights"
-ms.date: 12/2/2019
+ms.date: 1/24/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -18,8 +18,10 @@ ms.collection: virtual-agent
 
 If you use [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/overview), you can automatically create new [topics](authoring-create-edit-topics.md) in Power Virtual Agents based on your existing [Customer Service Insights support topics](/dynamics365/ai/customer-service-insights/topics-page).
 
-You should review [recommendations for identifying topics for automation](/dynamics365/ai/customer-service-insights/automate-topics#identify-topics-for-automation) in the Customer Service Insights documentation library before you begin.
+You should review [recommendations for identifying topics for automation](/dynamics365/ai/customer-service-insights/automate-topics#identify-topics-for-automation) in the Customer Service Insights documentation before you begin.
 
+### Watch a video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n7pD]
 
 ## Prerequisite to automate topics
 
