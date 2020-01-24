@@ -74,31 +74,12 @@ Users in your organization can try Power Virtual Agents for a limited time perio
 You can disable or enable the ability for users to sign up for a trial themselves by modifying the **AllowAdHocSubscriptions** flag in your organization settings. For mMore information see [What is self-service sign-up for Azure Active Directory?](/azure/active-directory/users-groups-roles/directory-self-service-signup). 
 
 
-## Billing unit and billing sessions
-Currently, we only report the total number of sessions within the product. We do not report the number of billed sessions. 
+## Subscription capacity
+By purchasing one of our paid SKUs you gain capacity for the specified number of billed sessions. The capacity is pooled across the entire tenant and any user who has access to PVA can build bots that use this capacity. 
 
-The number of billed sessions will always be lower than the number of sessions.
-
-A billed session is an interaction between the customer and the bot and represents one unit of consumption. The billed session begins when an authored topic is triggered. A topic ends in one of the following scenarios: 
-
-- When all of the user's questions are answered.
-
-- When a user intentionally ends or closes a chat session. For web this means when the user closes the tab with the chat open. For persistent channels such as Microsoft Teams or Facebook, this means the user didn't write any message for more than 30 minutes.
-
-- When a bot is unable to answer the question adequately and the interaction is [handed off to a live agent](advanced-hand-off.md).
-
-There are two additional limitations:
-
-- One billed session can last 60 minutes at its longest.
-- One billed session can contain a maximum of 100 conversational turns (one turn is defined as one exchange between the user and the bot).
-
-
-Note that you'll be billed even if you chat with the bot in the [embedded test chat](authoring-test-bot.md). 
-
+The capacity is currently not reported at the tenant level, but is available for each individual bot. [Learn more](analytics-billed-sessions.md) about billed sessions.
 
 ## Using Power Automate with a Power Virtual Agents license
 In order to have unlimited flow runs in Power Automate, you need to create a flow [using the link from within the Power Virtual Agents app](advanced-flow.md). 
 
 Flow runs created using this template do not accrue to your overall Power Automate quotas. 
-
-
