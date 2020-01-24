@@ -1,7 +1,7 @@
 ---
 title: "Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 01/06/2020
+ms.date: 01/24/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -74,7 +74,7 @@ To view the **Summary** page, select **Analytics** > **Capacity** > **Summary** 
 |  |Description |
 |---------|---------|
 |(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-box (OOB) entity that has fields of datatype File or Image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
-|(2)    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every User License purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li></ul>      |
+|(2)    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every User License purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><!--<li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li>--></ul>      |
 |(3)    |**What's new**: Used for announcements and notifications  |
 |(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
 
@@ -102,10 +102,9 @@ This page provides an environment-level detailed view of where your organization
 
 To view environment-level capacity analytics:
 
-1. Select **Analytics** > **Capacity** > **Overall** tab.
-2. Select the **Storage capacity** tab.
-3. Select an environment.
-4. Select the **Details** button (![Details button](media/storage-data-details-button.png "Details button"))
+1. Select **Analytics** > **Capacity** > **Storage capacity** tab.
+2. Select an environment.
+3. Select the **Details** button (![Details button](media/storage-data-details-button.png "Details button"))
 
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-capacity-details.png "Environment capacity analytics")
@@ -125,6 +124,25 @@ Select **Applied filters** at the the top of the page to filter data for differe
 > [!div class="mx-imgBorder"] 
 > ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
 -->
+
+## Database Storage Usage
+Database storage includes both the database records as well as index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. An increased size or number of indexes will consume additional storage on the database. Common causes for an increase in index size are:
+
+- An organization making use of new functionality (this can be custom, out-of-box, or part of an update or solution installation)
+- Data volume or complexity changes
+- A change in usage patterns that indicate new indexes are  in need of reevaluated
+
+If Quick Find lookups are configured for data that is frequently used, this will also create additional indexes in the database. Admin configured “quick search” values can increase the size of the indexes based on:
+
+- The number of fields chosen and the data type of those fields
+- The volume of records for the entities and fields
+- The complexity of the database structure
+
+Since custom Quick Find lookups are created by an admin in the org, these can be user controlled. Admins can reduce some of the storage used by these custom indexes by doing the following: 
+
+- Removing unneeded fields/entities 
+- Eliminating multiline text fields from inclusion
+
 ## FAQ
 
 ### I see the new Capacity Report, but I have not purchased the new capacity offers. How do I interpret the report?
@@ -175,4 +193,5 @@ Check back for availability. In addition to top tables, we will also show the ta
 Default, production, and sandbox environments are counted for consumption. Trial, preview, support, and developer environments are not counted.
 
 ### See also
-[Capacity add-ons](capacity-add-on.md)
+[Capacity add-ons](capacity-add-on.md)<br />
+[Automatic tuning in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning)
