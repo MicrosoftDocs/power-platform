@@ -14,10 +14,6 @@ ms.collection: virtual-agent
 
 # Analyze bot performance and usage in Power Virtual Agents
 
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
-
 The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
 ![The Analytics summary page](media/overview-analytics.png)
@@ -118,3 +114,6 @@ The chart displays the impact as a red or blue bar. A red bar indicates that the
 Improving the abandon rate for the top abandon-rate topics in red has the greatest impact on improving the overall abandon rate.
 
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details.md).
+
+## Video: Analytics deep dive
+https://www.microsoft.com/en-us/videoplayer/embed/RE4mQpm
