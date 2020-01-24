@@ -2,7 +2,7 @@
 title: "Get Power Virtual Agents topic suggestions from support pages"
 description: "Use existing help and support pages to quickly generate new topics for your Power Virtual Agents bot."
 keywords: ""
-ms.date: 01/22/2020
+ms.date: 01/24/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -29,7 +29,7 @@ There are three main steps to using the feature:
 
 You can [test the topics in the test chat](authoring-test-bot.md), but you'll need to [publish your bot for customers](publication-fundamentals-publish-channels.md) to see the latest changes.
 
-### Watch a video
+### Watch an overview video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mNOt]
 
 
