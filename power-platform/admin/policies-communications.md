@@ -55,7 +55,7 @@ We are transforming how we do service updates. We will deliver two major release
 In addition to the two major updates, we will continue to deploy regular performance and reliability improvement updates throughout the year. We are phasing deployments over several weeks following safe deployment practices and monitoring updates closely for any issues.  Notifications about when the major release events are enabled in each geographic region are published in the Message Center.
 
 > [!IMPORTANT]
-> Be sure to check out [Opt in to 2019 release wave 2](https://docs.microsoft.com/power-platform/admin/preview-october-2019-updates) for important information about updating to the latest version.  
+> Be sure to check out [Opt in to early access updates](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates) for important information about updating to the latest version.  
   
  **How do I find out about Major release events?**  
   
