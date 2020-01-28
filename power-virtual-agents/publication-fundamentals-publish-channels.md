@@ -2,7 +2,7 @@
 title: "Fundamentals - Publish a Power Virtual Agents bot to channels"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels"
-ms.date: 11/9/2019
+ms.date: 1/28/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -15,15 +15,14 @@ ms.collection: virtual-agent
 
 # Key Concepts - Publish your bot
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook. 
 
-
-Once you've published at least once, you can connect your bot to additional channels. 
+After you've published at least once, you can connect your bot to additional channels. 
 
 Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. This will update the bot across all the channels where you've inserted or connected your bot.
 
+### Watch a how-to video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mGa9]
 
 ## Publish the latest bot content
 
