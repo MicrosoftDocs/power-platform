@@ -19,11 +19,8 @@ A big part of bot conversations in Power Virtual Agents is natural language unde
 
 One fundamental aspect of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name. 
 
-## Watch an overview video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mTUN]
 
-## Watch a deep dive video
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ncEw]
 
 ## Prebuilt entities
 Out of the box, Power Virtual Agents comes with a set of prebuilt entities, which represent the most commonly used stereotype information in real-world dialogs, such as age, colors, numbers, and names. 
@@ -154,6 +151,8 @@ Proactive slot filling can be manually controlled at the node level. If you'd li
 
 ![Skip question](media/entities-skip-node.png)
 
+## Watch a deep dive video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ncEw]
 
 
 
