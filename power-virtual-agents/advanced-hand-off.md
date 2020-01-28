@@ -1,7 +1,7 @@
 ---
 title: "Use hand-off to live agent"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
-ms.date: 1/24/2020
+ms.date: 1/28/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -22,7 +22,7 @@ When you hand off a conversation, you share the full history of the conversation
 For more information about how to configure hand-off with [Omnichannel for Customer Service](https://go.microsoft.com/fwlink/?linkid=2098992), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
    
    
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G1]
+  > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G1]
 
 >[!NOTE]
 >You can choose to escalate a bot conversation without linking to an engagement hub:
