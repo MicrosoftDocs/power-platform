@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
   
-### Watch a how-to video
+  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mGa9]
   
 
