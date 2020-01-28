@@ -21,8 +21,9 @@ To learn how to add authentication to a bot topic, see [Add user authentication 
 
 Power Virtual Agents supports any identity provider that is compliant with the [OAuth2 standard](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-   
-  > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G2]
+> 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G2]
+>
 
 ## Registering a new app with your identity provider
 
