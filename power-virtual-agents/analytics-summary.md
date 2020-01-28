@@ -14,7 +14,9 @@ ms.collection: virtual-agent
 
 # Analyze bot performance and usage in Power Virtual Agents
 
+>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mQpm]
+>
 
 The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
