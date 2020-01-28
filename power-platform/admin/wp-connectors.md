@@ -67,7 +67,7 @@ The API Key is a little less complex as it typically involves the API assigning 
 > ![](media/azure-blob-storage-connection.png "Azure blob storage connection")
 
 
-When on-premise gateways are involved the process is even a little more complex. The following diagrams what happens when you establish a connection with the gateway data source.
+When on-premises gateways are involved the process is even a little more complex. The following diagrams what happens when you establish a connection with the gateway data source.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/architecture-connections.png "Connection architecture")

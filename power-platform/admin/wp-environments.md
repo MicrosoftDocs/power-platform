@@ -59,7 +59,7 @@ There are multiple types of environments. The type of environment indicates the 
 
 Each tenant will have a default environment created automatically in the region nearest the Azure Active Directory (Azure AD) tenant. This environment has a few unique characteristics from other environments that you create. This environment can’t be disabled or deleted. All tenant users are added automatically to the maker role for the default environment and you can’t remove them from that role. They are not however added automatically to the environment administrator role. This makes the default environment the perfect place for people to build personal productivity apps and flows.
 
-The default environment is also the only place you can currently create gateways to connect to on-premises resources. So, if you have an application that needs on-premise resources the app, its connector and the gateway must be created and run from your organization’s default environment. It is planned to allow creation of gateways in the non-default environments in the future.
+The default environment is also the only place you can currently create gateways to connect to on-premises resources. So, if you have an application that needs on-premises resources the app, its connector and the gateway must be created and run from your organization’s default environment. It is planned to allow creation of gateways in the non-default environments in the future.
 
 Another unique consideration of the default environment is you can’t create a Common Data Service database in the default environment. This however will be supported in the future.
 
