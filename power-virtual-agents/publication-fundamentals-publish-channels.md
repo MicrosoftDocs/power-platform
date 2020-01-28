@@ -21,8 +21,9 @@ After you've published at least once, you can connect your bot to additional cha
 
 Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. This will update the bot across all the channels where you've inserted or connected your bot.
 
-   
+>   
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mGa9]
+>
 
 ## Publish the latest bot content
 
