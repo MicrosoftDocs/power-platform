@@ -35,7 +35,7 @@ additionalContent:
           links:
           - url: https://docs.microsoft.com/power-automate/
             text: Documentation
-          - url: https://docs.microsoft.com/en-us/learn/browse/?products=flow
+          - url: https://docs.microsoft.com/en-us/learn/browse/?products=power-automate
             text: Learn Power Automate
         - title: Power Virtual Agents
           links:
