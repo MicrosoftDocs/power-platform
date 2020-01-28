@@ -2,7 +2,7 @@
 title: "Create and use entities in Power Virtual Agents"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: ""
-ms.date: 1/24/2020
+ms.date: 1/28/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -19,7 +19,7 @@ A big part of bot conversations in Power Virtual Agents is natural language unde
 
 One fundamental aspect of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mTUN]
+  > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mTUN]
 
 
 ## Prebuilt entities
