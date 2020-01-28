@@ -20,8 +20,8 @@ With Power Virtual Agents, you can hand-off conversations to live agents seamles
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
 For more information about how to configure hand-off with [Omnichannel for Customer Service](https://go.microsoft.com/fwlink/?linkid=2098992), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
-
-### Watch an overview video
+   
+   
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G1]
 
 >[!NOTE]
