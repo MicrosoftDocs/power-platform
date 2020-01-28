@@ -58,7 +58,7 @@ Using the **Create a flow** option will open a starter flow template in the [Mic
 ![Microsoft Automate flow template](media/PVAConnectorTemplate.JPG)
 
 >[NOTE]
->The Microsoft Automate portal will automatically open in the same environment as the bot using the same user credentials
+>The Power Automate portal will automatically open in the same environment as the bot using the same user credentials
 
 This template is an example of a flow that can be used by bots. To be suitable for bots, a Microsoft Automate flow requires a special **Power Virtual Agents** trigger and response action: 
 - Flow trigger:  **Power Virtual Agents**
