@@ -20,8 +20,10 @@ If you use [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-ser
 
 You should review [recommendations for identifying topics for automation](/dynamics365/ai/customer-service-insights/automate-topics#identify-topics-for-automation) in the Customer Service Insights documentation before you begin.
 
-   
+>   
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n7pD]
+>
+
 
 ## Prerequisite to automate topics
 
