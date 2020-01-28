@@ -2,7 +2,7 @@
 title: "Get Power Virtual Agents topic suggestions from support pages"
 description: "Use existing help and support pages to quickly generate new topics for your Power Virtual Agents bot."
 keywords: ""
-ms.date: 11/10/2019
+ms.date: 01/24/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # Create topics from existing support content on the web
 
-You can efficiently leverage existing content that already exists on webpages when creating a Power Virtual Agents bot.  This is useful if you already have help or support content, such as FAQ pages or supports sites. 
+You can efficiently leverage existing content that already exists on webpages when creating a Power Virtual Agents bot.  This capability is useful if you already have help or support content, such as FAQ pages or supports sites. 
 
 Rather than having to design a whole new topic architecture, plan and write the content, copy it manually into individual topics, and then configure the conversation flow, you can utilize AI-assisted authoring to automatically extract and insert relevant content from existing web content into your bots.
 
@@ -28,6 +28,10 @@ There are three main steps to using the feature:
 3. Enable the topics.
 
 You can [test the topics in the test chat](authoring-test-bot.md), but you'll need to [publish your bot for customers](publication-fundamentals-publish-channels.md) to see the latest changes.
+
+>    
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mNOt]
+>
 
 ## Extract content from web pages
 
