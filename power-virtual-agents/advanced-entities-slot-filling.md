@@ -2,7 +2,7 @@
 title: "Create and use entities in Power Virtual Agents"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: ""
-ms.date: 11/9/2019
+ms.date: 1/28/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -15,11 +15,13 @@ ms.collection: virtual-agent
 
 # Use entities and slot filling in Power Virtual Agents bots
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
-A big part of bot conversations in Power Virtual Agents is around natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
+A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
 
 One fundamental aspect of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name. 
+
+>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mTUN]
+>
 
 ## Prebuilt entities
 Out of the box, Power Virtual Agents comes with a set of prebuilt entities, which represent the most commonly used stereotype information in real-world dialogs, such as age, colors, numbers, and names. 
@@ -149,6 +151,9 @@ This time when the product category question is presented, instead of telling th
 Proactive slot filling can be manually controlled at the node level. If you'd like to always prompt for the question within a specific node, regardless of whether the slot has been filled from previous user responses, you can disable the **Skip question** option for that question node.
 
 ![Skip question](media/entities-skip-node.png)
+
+## Watch a deep dive video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ncEw]
 
 
 
