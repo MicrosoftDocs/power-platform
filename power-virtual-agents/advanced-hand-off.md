@@ -21,8 +21,9 @@ When you hand off a conversation, you share the full history of the conversation
 
 For more information about how to configure hand-off with [Omnichannel for Customer Service](https://go.microsoft.com/fwlink/?linkid=2098992), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
    
-   
+  > 
   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G1]
+  >
 
 >[!NOTE]
 >You can choose to escalate a bot conversation without linking to an engagement hub:
