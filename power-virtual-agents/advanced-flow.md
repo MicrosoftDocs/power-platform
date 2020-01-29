@@ -38,8 +38,6 @@ Flows typically use variables to input and output information. The variables can
 
 1. Select the plus (**+**) button below an existing node to add a new node. 
 
-    ![Screenshot of adding a node](media/handoff-add-node.png)
-
 1. In the node selection window, select **Call an action**, and then select **Create a flow**. 
 
 
