@@ -36,6 +36,15 @@ Examples include the following:
 - Renaming of previously auto-created entity record level SharePoint folders.
 - Moving previously auto-created entity record level SharePoint folders to another location.
 
+## SharePoint enforces resource throttling with 5000 or more documents
+A document library with 5000 or more documents might experience resource throttling.
+Users may experience the following behavior with document management and OneNote integration:
+
+- A sort on columns other than the default sorted column, may return an error indicating that the throttling limit has been exceeded.
+- Microsoft OneNote integration will not work when the SharePoint Server site has 5000 or more documents.
+
+If you have more than 5000 documents in your document library, you can view the documents in the default grid view. For more details, see [Manage large lists and libraries in SharePoint](https://support.office.microsoft.com/en-us/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59?ui=en-US&rs=en-US&ad=US).
+
 ## Document location for child entities
 Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the **Documents** tab of the parent record. If no such location is created, child documents will not appear in the parent entity folder. Once the location is created, child documents will begin to appear in the parent entity folder.
 
