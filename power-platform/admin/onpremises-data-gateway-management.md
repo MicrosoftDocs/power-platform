@@ -45,7 +45,7 @@ The gateway cluster list includes both On-premises data gateways and On-premises
 
 ## Details
 
-To see gateway details, select an environment and then select **Details**.
+Select any gateway cluster and select **Details** to see the gateway members, device name, and version in each gateway cluster.
 
 > [!div class="mx-imgBorder"] 
 > ![Gateway details](media/data-gateways-details.png "Gateway details")
