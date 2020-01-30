@@ -21,7 +21,7 @@ If your organization has purchased capacity add-ons, you have to allocate that c
 
 There are three stages for using capacity add-ons:
 
-1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [Power Apps and Power Automate Licensing Guide Oct 2019](https://go.microsoft.com/fwlink/?linkid=2085130).
+1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 2. Allocate: assign the purchased add-ons to an environment.
 3. Consume: once allocated, you can consume the capacity add-ons.
 
