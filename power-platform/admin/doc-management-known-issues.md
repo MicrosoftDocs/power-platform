@@ -45,6 +45,11 @@ Users may experience the following behavior with document management and OneNote
 
 If you have more than 5000 documents in your document library, you can view the documents in the default grid view. For more details, see [Manage large lists and libraries in SharePoint](https://support.office.microsoft.com/en-us/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59?ui=en-US&rs=en-US&ad=US).
 
+## Relationship must be one-to-many (1:N) between an entity and a SharePoint document entity 
+Users cannot see documents when many entities are pointing to a SharePoint document location, a many-to-many relationship (N:N). The relationship must be one-to-many (1:N) between any entity and a SharePoint document entity.
+
+In Common Data Service you can create an entity and enable the Document management property for the entity. This allows for the entity to participate in integration with SharePoint. Power Apps and Common Data Service support only a one-to-many relationship (1:N) between any entity and a SharePoint document related entity. A many-to-one or a many-to-many relationship between an entity and a SharePoint document entity results in the app not listing the documents that exist in the SharePoint document library.
+
 ## Document location for child entities
 Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the **Documents** tab of the parent record. If no such location is created, child documents will not appear in the parent entity folder. Once the location is created, child documents will begin to appear in the parent entity folder.
 
