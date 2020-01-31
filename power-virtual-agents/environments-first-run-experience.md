@@ -87,7 +87,7 @@ If you have created your own environment and selected **Trial** as the environme
 ![Notification about expiring environment](media/environment_expiration.jpg)
 
 > [!NOTE]
-> Note that there is a difference between expiring environment and expiring license. If your license is expiring, you will be able to extend it without losing any data. [Learn more](sign-up-individual.md#trial-expiration).
+> Note that there is a difference between an expiring environment and an expiring license. If your license is expiring, you will be able to extend it without losing any data. [Learn more](sign-up-individual.md#trial-expiration).
 
 ## Converting a trial environment to a production environment
 
