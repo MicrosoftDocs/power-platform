@@ -84,6 +84,11 @@ Trial environments expire after 30 days. When the environment expires, all the b
 
 If you have created your own environment and selected **Trial** as the environment type, you'll receive emails shortly before it expires. In the Power Virtual Agents portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
 
+![Notification about expiring environment](media/environment_expiration.jpg)
+
+> [!NOTE]
+> Please note that there is a difference between expiring environment and expiring license. If your license is expiring, you will be able to extend it and you won't lose any data. [Learn more](sign-up-individual.md#trial-expiration).
+
 ## Converting a trial environment to a production environment
 
 When using a trial environment and you want to retain the bots for longer than 30 days, you must [convert the trial environment to a production environment](/power-platform/admin/trial-environments#convert-a-trial-environment-to-production).
