@@ -104,5 +104,5 @@ You will need to [create a new environment](environments-first-run-experience.md
 ### The environment doesn't show up in the drop-down menu of Power Virtual Agents
 
 Your environment might not show up in the drop-down menu due to one of the following:
- - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
+ - The environment doesn't have a database created. To resolve this issue, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
  - The environment is created in an unsupported region. More information: [Supported data locations](data-location.md).
