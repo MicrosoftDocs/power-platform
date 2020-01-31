@@ -2,7 +2,7 @@
 title: "Create and use Power Apps environments in Power Virtual Agents"
 description: "Environments store all the data and resources associated with the bots you create in Power Virtual Agents."
 keywords: "onboarding, environments"
-ms.date: 11/13/2019
+ms.date: 1/31/2019
 ms.service:
   - dynamics-365-ai
 ms.topic: article
