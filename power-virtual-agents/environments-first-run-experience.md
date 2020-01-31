@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 # Working with environments in Power Virtual Agents
 
-With Power Virtual Agents, you can create bots in different environments and easily switch among them.
+With Power Virtual Agents, you can create bots in different environments and easily switch between them.
 
 An environment is a space to store, manage and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. More information: [Supported data locations](data-location.md).
 
@@ -42,8 +42,8 @@ You can, however, create additional environments by using the [Power Platform Ad
    ![Create environment](media/environments-create-1.png)
   
    1. Under **Name**, specify a unique name for the environment.
-   1. Under **Environment** select the environment type. A **Production** environment is intended for production scenarios and won't be subject to the same restrictions as a [**Trial** environment](#trial-environments).
-   1. Under **Region** select a [support data region](data-location.md) where you want the environment to be created.
+   1. Under **Environment** select the environment type. A production environment is intended for production scenarios and won't be subject to the same restrictions as a [trial environment](#trial-environments).
+   1. Under **Region** select the [support data region](data-location.md) where you want the environment to be created.
    1. Set **Create a database for this environment?** to **Yes**
    1. Select **Next**.
    
@@ -51,7 +51,7 @@ You can, however, create additional environments by using the [Power Platform Ad
    
    > [!NOTE]
    > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a bot.
-   > Learn more about [supported data locations](https://go.microsoft.com/fwlink/?linkid=2106441).
+   > More information: [Supported data locations](https://go.microsoft.com/fwlink/?linkid=2106441).
 
 3. Specify the details of the database, such as the language and currency type, and then select **Save**.
 
