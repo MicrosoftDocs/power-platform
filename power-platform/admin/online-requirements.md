@@ -38,4 +38,5 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
+ [Work with requirements as a solution architect for Power Platform and Dynamics 365](https://docs.microsoft.com/learn/modules/work-with-requirements/index) <br />
  [Microsoft Dynamics CRM Online IP Address Ranges](https://support.microsoft.com/help/2728473/microsoft-dynamics-crm-online-ip-address-ranges)
