@@ -84,8 +84,6 @@ Trial environments expire after 30 days. When the environment expires, all the b
 
 If you have created your own environment and selected **Trial** as the environment type, you'll receive emails shortly before it expires. In the Power Virtual Agents portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
 
-![Notification about expiring environment](media/environment_expiration.jpg)
-
 > [!NOTE]
 > Note that there is a difference between an expiring environment and an expiring license. If your license is expiring, you will be able to extend it without losing any data. [Learn more](sign-up-individual.md#trial-expiration).
 
@@ -103,7 +101,7 @@ In this case, you see this error: "You do not have permissions to any environmen
 
 You will need to [create a new environment](environments-first-run-experience.md). Use that environment to create your bot.
 
-### The environment I created does not show up in the drop-down menu of Power Virtual Agents
+### The environment doesn't show up in the drop-down menu of Power Virtual Agents
 
 Your environment might not show up in the drop-down menu due to one of the following:
  - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
