@@ -79,10 +79,11 @@ More information:
 - [Power Platform - Configure environment security](/power-platform/admin/database-security)
 
 ## Trial environments
-
 Trial environments expire after 30 days. When the environment expires, all the bots in the environment will be deleted and the data associated with it, including any flows and resources you have been using, will be lost.
 
 If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Power Virtual Agents portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
+
+> ![Environment expiration notification](media/ennvironemnt_expiration_notification.png)
 
 > [!NOTE]
 > Note that there is a difference between an expiring environment and an expiring license. If your license is expiring, you will be able to extend it without losing any data. More information: [Learn more](sign-up-individual.md#trial-expiration).
