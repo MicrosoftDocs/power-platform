@@ -188,3 +188,13 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ### Don't see your environment to restore to?
 Only sandbox environments can be restored to.
+
+<!-- 
+Add to see also
+[Automatic environment cleanup](automatic-environment-cleanup.md) <br />
+-->
+
+### See also
+[Manage sandbox environments](sandbox-environments.md) <br />
+[Environments overview](environments-overview.md) <br />
+[Licensing overview for Power Platform](pricing-billing-skus.md)
