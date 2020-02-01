@@ -41,9 +41,9 @@ You can, however, create additional environments by using the [Power Platform Ad
 
    ![Create environment](media/environments-create-1.png)
   
-- Under **Name**, specify a unique name for the environment.
-- Under **Environment** select the environment type. A production environment is intended for production scenarios and won't be subject to the same restrictions as a [trial environment](#trial-environments).
-- Under **Region** select the [support data region](data-location.md) where you want the environment to be created.
+- For **Name**, specify a unique name for the environment.
+- For **Environment** select the environment type. A production environment is intended for production scenarios and won't be subject to the same restrictions as a [trial environment](#trial-environments).
+- For **Region** select the [support data region](data-location.md) where you want the environment to be created.
 - Set **Create a database for this environment?** to **Yes**
 - Select **Next**.
    
