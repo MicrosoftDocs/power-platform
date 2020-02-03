@@ -7,28 +7,17 @@ author: kvivek
 manager: annbe
 ms.date: 01/31/2020
 ms.topic: article
-ms.prod:
-ms.service: dynamics-365-crossapp
+ms.service: power-platform
 ms.custom:
- - dyn365-hub
-
-# optional metadata
-
-# keywords:
-# ROBOTS:
 audience: Application User, IT Pro, Developer
-
-# ms.tgt_pltfrm:
 ms.search.region: Global
-# ms.industry:
 ms.author: radhij
 
 ---
 
-
 # International availability of Power Platform
 
-We are very excited to share the downloadable [Infrastructure availability PDF](https://aka.ms/dynamics_365_international_availability_deck) with you. 
+We are very excited to share the downloadable [Infrastructure availability PDF](https://aka.ms/dynamics_365_international_availability_deck) with you.
 
 The purpose of this document is to provide comprehensive information about product availability and customer data location for Power Platform family of applications. In this document, the following information can be found:
 - Product availability
