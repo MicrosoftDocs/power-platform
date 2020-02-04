@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2020
+ms.date: 02/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -66,6 +66,8 @@ A single default environment is automatically created by Power Apps for each ten
 
 > [!NOTE]
 > No users will be added to the Environment Admin role of the default environment automatically. For more information, see [Administer environments in Power Apps](environments-administration.md).
+>
+> The default environment is limited to 32GB of storage capacity. In case you need to store more data, you can create a production environment. See [Provisioning a new environment](create-environment.md#provisioning-a-new-environment).
 
 The default environment is named as follows: “{Azure AD tenant name} (default)”
 
