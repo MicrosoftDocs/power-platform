@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/03/2020
+ms.date: 02/05/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -144,6 +144,9 @@ The following checklist provides the general guidelines to help you prepare for 
 5. Enable the early access updates in your production environment. We recommend enabling the updates in your production environment during business downtime.
 
 ## Early access updates FAQ 
+
+### Will an environment that previously opted in for the early access updates automatically get the early access update of the new releases?
+An environment opted in for the previous early access will not be automatically opted in for the next early access release.  Each early access release will need to be opted in explicitly. When a release becomes generally available, all environments will be automatically updated to the latest release throughout the release wave. 
 
 ### After updating to a new release wave, can I export solutions? 
 Yes, you can export solutions to other environments that have also been updated to the same release wave. 
