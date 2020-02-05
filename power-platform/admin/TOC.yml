@@ -15,6 +15,8 @@
         href: global-service-administrators-can-administer-without-license.md      
       - name: Purchase Power Apps 
         href: signup-for-powerapps-admin.md
+     # - name: About Power Apps per app plans
+     #   href: about-powerapps-perapp.md
       - name: Power Apps and Power Automate licensing FAQs
         href: powerapps-flow-licensing-faq.md
       - name: Requests limits and allocations
