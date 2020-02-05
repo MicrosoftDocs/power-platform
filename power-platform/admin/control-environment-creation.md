@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 10/09/2019
+ms.date: 02/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,8 +30,8 @@ With the new provisioning model, those with the correct licenses can create an e
 The following admins will be able to create new environments in the Power Platform Admin center:
 
 - Office 365 Global admins
-- Service admins
-- Delegated admins
+- Dynamics 365 service admins
+- Power Platform service admins
 
 > [!NOTE]
 > Environments created prior to restriction can still be managed after restriction by those who created the environment. Restriction will prevent any new environments being created and managed. 
@@ -40,7 +40,7 @@ The following admins will be able to create new environments in the Power Platfo
 
 Download and install the admin PowerShell cmdlets as described [here](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1). For more information about our cmdlets, see [PowerShell support for Power Apps (preview)](powerapps-powershell.md).
 
-Use the following commands to restrict environment creation to Global admin, service admin, and Delegated admin. 
+Use the following commands to restrict environment creation to Office 365 Global admins, Dynamics 365 service admins, and Power Platform service admins. 
 
 ```
 $settings = @{ DisableEnvironmentCreationByNonAdminUsers = $true }
