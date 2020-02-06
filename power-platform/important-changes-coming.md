@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 01/21/2020
+ms.date: 02/05/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -23,6 +23,45 @@ Administrators and IT professionals should use this information to prepare for f
 > [!IMPORTANT]
 > “Deprecated” means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+
+Deprecation of Office365 authentication type and OrganizationServiceProxy class for connecting to Common Data Service
+----------------------------------------------------------------------------------------------
+
+Effective Feb 4, 2020, the **WS-Trust** authentication type that is used by
+custom clients to connect to Common Data Service is deprecated. This change
+affects applications that utilize
+[Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.client.organizationserviceproxy)
+and
+[Microsoft.Xrm.Tooling.Connector.CrmServiceClient](https://docs.microsoft.com/dotnet/api/microsoft.xrm.tooling.connector.crmserviceclient)
+classes for the authentication type of “Office365”.
+
+We are making this change to remove a security protocol (WS-Trust) that is
+inherently insecure by current encryption standards. While Microsoft has worked
+extremely hard to protect users who choose to use this authentication type for
+the convenience of login process, it has become an increasing source of concern
+for Microsoft security and identity protection systems. The WS-Trust security
+protocol, when used in conjunction with a user account and password, implements
+an authentication flow that presents both the user Id and password to the
+authenticating resource in ‘clear text’ form, relying solely on the transport
+encryption to provide security for the initial leg of the authentication, until
+such point as the token service returns an authentication token to use.
+Additionally, the WS-Trust protocol does not support modern forms of
+Multi-Factor Authentication and conditional access controls to customer data.
+
+With this change, the intent is to guide developers away from this
+authentication flow and help application developers to utilize the capabilities
+of Azure Active Directory to secure and protect access to their applications and
+customers in Common Data Service.
+
+To allow for transition of customers and partner applications:
+
+-   Effective April 2021, we intend to retire this authentication protocol for
+    all new environments.
+
+-   Effective April 2022, the authentication protocol will be retired for all
+    new and existing environments.
+
+More information: [Use of Office365 authentication with the WS-Trust security protocol]()
 
 Regional Discovery Service is deprecated
 ----------------------------------------------------------------------------------------------
