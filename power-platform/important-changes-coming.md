@@ -61,7 +61,7 @@ To allow for transition of customers and partner applications:
 -   Effective April 2022, the authentication protocol will be retired for all
     new and existing environments.
 
-More information: [Use of Office365 authentication with the WS-Trust security protocol]()
+More information: [Use of Office365 authentication with the WS-Trust security protocol](/powerapps/developer/common-data-service/authenticate-office365-deprecation)
 
 Regional Discovery Service is deprecated
 ----------------------------------------------------------------------------------------------
