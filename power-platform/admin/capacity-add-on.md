@@ -1,7 +1,7 @@
 ---
 title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 01/06/2020
+ms.date: 02/05/2020
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -65,11 +65,12 @@ As an admin, you can restrict who can allocate add-on capacity to environments.
    > [!div class="mx-imgBorder"] 
    > ![](./media/add-on-governance.png "Control add-on capacity allocation")
 
-The following admins will be able to allocate add-on capacity in the Power Platform Admin center:
+The following admins will be able to allocate add-on capacity in the Power Platform admin center:
 
 - Office 365 Global admins
-- Service admins
-- Delegated admins
+- Dynamics 365 service admins
+- Power Platform service admins
+
 <!--
 ## Control add-on capacity allocation through PowerShell
 
