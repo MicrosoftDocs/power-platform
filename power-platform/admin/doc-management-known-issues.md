@@ -36,6 +36,15 @@ Examples include the following:
 - Renaming of previously auto-created entity record level SharePoint folders.
 - Moving previously auto-created entity record level SharePoint folders to another location.
 
+## "File not found" error when adding a file from a SharePoint site
+If you receive a **File not found** error or encounter a problem while adding a file from a SharePoint site or SharePoint subsite in model-driven apps in Dynamics 365, the likely cause is that you have not created the document location records in the model-driven app to point to these SharePoint document libraries and folders.
+
+SharePoint document locations are records in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, that point to a SharePoint document library or folder. To use any SharePoint Site or Subsite in SharePoint integration, you must run the Document Management Settings wizard once with the corresponding Site URL, so that the Document Libraries are created in the Site.
+
+To store documents for records, the document libraries or folders must be in place. If model-driven apps in Dynamics 365 are unable to create the document libraries and folders automatically, you can manually create these in SharePoint. After you create the document libraries and folders in SharePoint, you must create document location records in model-driven apps in Dynamics 365 to point to these SharePoint document libraries and folders.
+
+For more information, see [Create or edit document location records](https://docs.microsoft.com/en-us/power-platform/admin/create-edit-document-location-records).
+
 ## SharePoint enforces resource throttling with 5000 or more documents
 A document library with 5000 or more documents might experience resource throttling.
 Users may experience the following behavior with document management and OneNote integration:
