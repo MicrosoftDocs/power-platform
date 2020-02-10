@@ -2,7 +2,7 @@
 title: "Multiple environments or tenants   | MicrosoftDocs"
 description: Information on multiple environments or tenants 
 ms.custom: ""
-ms.date: 01/19/2020
+ms.date: 02/10/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -44,8 +44,6 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
  You can provide access to one or both environments easily.  Sales and Marketing users could be limited to their environment while Service users with extended access could update support escalations records related to accounts in both environments.  
   
  About single tenant with multiple environments:  
-  
-- A tenant can include up to 50 production environments and up to 75 non-production (sandbox) environments.  
   
 - Each environment within the tenant receives its own SQL database.  
   
