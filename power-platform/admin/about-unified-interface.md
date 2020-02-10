@@ -84,7 +84,6 @@ The following are entities that are currently read-only in Unified Interface:
 - Contract Lines
 - Contract Templates
 - Case Resolution
-- Service
 
 ### See also
 [Overview of building model-driven apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
