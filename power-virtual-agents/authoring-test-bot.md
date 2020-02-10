@@ -2,7 +2,7 @@
 title: "Check your Power Virtual Agents bot with the Test bot"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
 keywords: ""
-ms.date: 11/13/2019
+ms.date: 02/10/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
