@@ -2,7 +2,7 @@
 title: "Check your Power Virtual Agents bot with the Test bot"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
 keywords: ""
-ms.date: 11/13/2019
+ms.date: 02/10/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -25,7 +25,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
    ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu.png)
 
-1. To make sure you're using the most current bot content, select **Reset** at the top of the **Test bot** pane. This will load any changes you've made to topics, and will clear any previous conversation in the test pane.
+1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 
    ![Click Reset at the top of the Test bot pane to clear conversation history](media/test-bot-reset.png)
 
