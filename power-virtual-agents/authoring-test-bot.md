@@ -25,7 +25,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
    ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu.png)
 
-1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. This makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
+1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 
    ![Click Reset at the top of the Test bot pane to clear conversation history](media/test-bot-reset.png)
 
