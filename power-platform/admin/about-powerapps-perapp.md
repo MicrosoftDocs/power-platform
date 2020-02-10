@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/07/2020
+ms.date: 02/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -96,14 +96,16 @@ After completing the first three steps, you can now share apps.
 
 ### Sharing model-driven apps
 
-1. Assign the Power Apps per app plan baseline access license to users. See the following topics for guidance:
+1. Get the Power Apps per app plan baseline access license [here](https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2).
+
+2. Assign the Power Apps per app plan baseline access license to users. See the following topics for guidance:
 
    - [Create a group and add members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
    - [Add or remove group members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
    - [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)
    - [Assign licenses to users](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
 
-2. Share the model-driven app. See [Share a model-driven app with Power Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). 
+3. Share the model-driven app. See [Share a model-driven app with Power Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). 
 
 ### Sharing canvas apps
 To share canvas apps, see [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
