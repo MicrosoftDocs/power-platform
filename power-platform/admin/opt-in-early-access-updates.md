@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2020
+ms.date: 02/10/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -175,7 +175,18 @@ Throughout a release wave, your environments will be updated during one of the [
 
 See [Policies and communications](policies-communications.md#scheduled-system-updates). 
 
-Check back for information on the region deployment schedule.
+#### Deployment schedule
+The following are the current schedules for when the 2020 release wave 1 features will be enabled by regions. 
+
+|Regions  |General availability release update window  |
+|---------|---------|
+|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa  |  Friday, April 3rd – Sunday, April 5th       |
+|Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, April 10th – Sunday April 12th        |
+|Europe     | Friday, April 17th – Sunday, April 19th        |
+|North America     |  Friday, April 24th – Sunday, April 26th       |
+|GCC<br />GCC High<br />DOD  |Friday, May 1st – Sunday, May 3rd<br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md).          |
+
+During the general availability deployment, your environments will be updated with the latest features and functionality automatically applied to Dynamics 365 applications and Power Platform. It will not require any action from you. 
 
 ### See also
 [Dynamics 365 release schedule and early access ](https://docs.microsoft.com/dynamics365/get-started/release-schedule)<br />
