@@ -48,9 +48,6 @@ Follow these steps to assign a service admin role.
 3. Select to expand **Show all by category**.
 
 4. Under **Collaboration** select either **Dynamics 365 service administrator** or **Power Platform administrator**. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Power Platform admin](../admin/media/power-platform-admin.png "Power Platform admin")  
   
 5. Select **Save changes**.
 
