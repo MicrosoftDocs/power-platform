@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 To use Power Virtual Agents, you need a license for each user (a "per user license"), as well as a license for your organization (a "tenant license"). 
 
 
-For more information about Power Virtual Agents licensing, see the [pricing page](https://go.microsoft.com/fwlink/?linkid=2099502). 
+For more information about Power Virtual Agents licensing, see the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
 This article focuses on how to assign licenses for Power Virtual Agents to your users.
 
@@ -80,6 +80,5 @@ By purchasing one of our paid SKUs you gain capacity for the specified number of
 The capacity is currently not reported at the tenant level, but is available for each individual bot. [Learn more](analytics-billed-sessions.md) about billed sessions.
 
 ## Using Power Automate with a Power Virtual Agents license
-In order to have unlimited flow runs in Power Automate, you need to create a flow [using the link from within the Power Virtual Agents app](advanced-flow.md). 
+[See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
 
-Flow runs created using this template do not accrue to your overall Power Automate quotas. 
