@@ -20,18 +20,10 @@ You can find the number of billed sessions for your bot under **Analytics** -> *
 
 # Definition of a billed session
 
-A billed session is an interaction between the customer and the bot and represents one unit of consumption. The billed session begins when an user topic is triggered. The session ends in one of the following scenarios: 
-
-- When all of the user's questions are answered.
-
-- When a user ends or closes a chat session. For web this means when the user closes the tab with the chat open. For persistent channels such as Microsoft Teams or Facebook, this means the user didn't write any message for more than 30 minutes.
-
-- When a bot is unable to answer the question adequately and the interaction is [handed off to a live agent](advanced-hand-off.md).
-
-There are two limitations on a billed session:
-
-- One billed session can last 60 minutes at its longest.
-- One billed session can contain a maximum of 100 conversational turns (one turn is defined as one exchange between the user and the bot).
+A billed session is an interaction between the customer and the bot and represents one unit of consumption. The billed session begins when an user topic is triggered (user topics are different from system topics and you can distinguish between them in the Topics list). The session ends for one of the following reasons: 
+- the customer ends the chat sessions. When the bot doesn't receive a new message for more than 30 minutes, we consider it closed.
+- The session is longer than 60 minutes. After the user chats with the bot for longer than 60 minutes, the first message that will go over 60 minutes will start a new session. Depending on the use cases for your bot, this is more or less likely to happen.
+- The session has more than 100 turns (one turn is defined as one exchange between the user and the bot). The 101st turn will trigger a new session start. Depending on the use cases for your bot, this is more or less likely to happen.
 
   > [!Note]
   > Note that sessions using the [embedded test chat](authoring-test-bot.md) while you test the bot, won't count towards the billed sessions.
