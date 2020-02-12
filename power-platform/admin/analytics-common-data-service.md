@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 02/12/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,9 +15,15 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Common Data Service analytics
+# Common Data Service analytics 
 
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power Platform Admin center to quickly view adoption ad user metrics for your organization. 
+
+Admins with the following roles can view Customer Data Service analytics:
+- Office 365 global admins
+- Dynamics 365 service admins
+- Power Platform service admins
+- Environment admins
 
  **Key highlights**  
 
