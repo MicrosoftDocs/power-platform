@@ -19,7 +19,7 @@ search.app:
 
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power Platform Admin center to quickly view adoption ad user metrics for your organization. 
 
-Admins with the following roles can view Customer Data Service analytics:
+Admins with the following roles can view Common Data Service analytics:
 - Office 365 global admins
 - Dynamics 365 service admins
 - Power Platform service admins
