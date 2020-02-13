@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 10/15/2019
+ms.date: 02/13/2020
 ms.service: powerapps
 ms.custom: 
 ms.topic: article
@@ -39,9 +39,9 @@ Examples include the following:
 ## "File not found" error when adding a file from a SharePoint site
 If you receive a **File not found** error or encounter a problem while adding a file from a SharePoint site or SharePoint subsite in model-driven apps in Dynamics 365, the likely cause is that you have not created the document location records in the model-driven app to point to these SharePoint document libraries and folders.
 
-SharePoint document locations are records in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, that point to a SharePoint document library or folder. To use any SharePoint Site or Subsite in SharePoint integration, you must run the Document Management Settings wizard once with the corresponding Site URL, so that the Document Libraries are created in the Site.
+SharePoint document locations are records in model-driven apps, such as Dynamics 365 Sales and Customer Service, that point to a SharePoint document library or folder. To use any SharePoint site or subsite in SharePoint integration, you must run the Document Management Settings wizard once with the corresponding site URL, so that the document libraries are created in the site.
 
-To store documents for records, the document libraries or folders must be in place. If model-driven apps in Dynamics 365 are unable to create the document libraries and folders automatically, you can manually create these in SharePoint. After you create the document libraries and folders in SharePoint, you must create document location records in model-driven apps in Dynamics 365 to point to these SharePoint document libraries and folders.
+To store documents for records, the document libraries or folders must be in place. If model-driven apps are unable to create the document libraries and folders automatically, you can manually create these in SharePoint. After you create the document libraries and folders in SharePoint, you must create document location records in model-driven apps to point to these SharePoint document libraries and folders.
 
 For more information, see [Create or edit document location records](https://docs.microsoft.com/power-platform/admin/create-edit-document-location-records).
 
