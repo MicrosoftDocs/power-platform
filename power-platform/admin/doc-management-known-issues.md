@@ -43,7 +43,7 @@ SharePoint document locations are records in model-driven apps in Dynamics 365, 
 
 To store documents for records, the document libraries or folders must be in place. If model-driven apps in Dynamics 365 are unable to create the document libraries and folders automatically, you can manually create these in SharePoint. After you create the document libraries and folders in SharePoint, you must create document location records in model-driven apps in Dynamics 365 to point to these SharePoint document libraries and folders.
 
-For more information, see [Create or edit document location records](https://docs.microsoft.com/en-us/power-platform/admin/create-edit-document-location-records).
+For more information, see [Create or edit document location records](https://docs.microsoft.com/power-platform/admin/create-edit-document-location-records).
 
 ## SharePoint enforces resource throttling with 5000 or more documents
 A document library with 5000 or more documents might experience resource throttling.
@@ -52,7 +52,7 @@ Users may experience the following behavior with document management and OneNote
 - A sort on columns other than the default sorted column, may return the error message "The throttling limit has been exceeded by this operation."
 - Microsoft OneNote integration will not work when the document library has 5000 or more documents.
 
-If you have more than 5000 documents in your document library, you can view the documents in the default grid view. For more details, see [Manage large lists and libraries in SharePoint](https://support.office.microsoft.com/en-us/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59?ui=en-US&rs=en-US&ad=US).
+If you have more than 5000 documents in your document library, you can view the documents in the default grid view. For more details, see [Manage large lists and libraries in SharePoint](https://support.office.microsoft.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59?ui=en-US&rs=en-US&ad=US).
 
 ## Relationship must be one-to-many (1:N) between an entity and a SharePoint document entity 
 Users cannot see documents when many entities are pointing to a SharePoint document location, a many-to-many relationship (N:N). The relationship must be one-to-many (1:N) between any entity and a SharePoint document entity.
