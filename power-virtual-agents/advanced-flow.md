@@ -52,12 +52,15 @@ Using the **Create a flow** option opens a starter flow template in the [Power A
 >The Power Automate portal automatically opens in the same environment as the bot (using the same user credentials).
 
 This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action: 
-- Flow trigger:  **Power Virtual Agents**
-![Power Virtual Agents trigger](media/PVAConnectorTrigger.JPG)
+
+- Flow trigger:  **Power Virtual Agents**  
+
+    ![Power Virtual Agents trigger](media/PVAConnectorTrigger.JPG)
 
 
-- Response action:  **Power Virtual Agents**
-![Power Virtual Agents response](media/PVAConnectorResponse.JPG)
+- Response action:  **Power Virtual Agents**  
+
+    ![Power Virtual Agents response](media/PVAConnectorResponse.JPG)
 
 ## Input and output parameters
 
@@ -79,7 +82,7 @@ The following types are not supported:
 - List [Date]
 - List [Timestamp]
 
->[NOTE]
+>[!NOTE]
 >A bot is able to receive up to 1MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
 
 ### Input parameters
