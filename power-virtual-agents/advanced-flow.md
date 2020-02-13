@@ -87,7 +87,7 @@ The following types are not supported:
 
 ### Input parameters
 
-To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Vitual Agents trigger** user interface, and then select the type a - `string`, `number` or a `boolean`.
+To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface, and then select the type a - `string`, `number` or a `boolean`.
 
 
 ![Power Virtual Agents trigger input types](media/PVAConnector_Inputs_1.JPG)
@@ -101,7 +101,7 @@ For example, you can select **Text** and **Number** to add the following input p
 
 ### Output parameters
 
-To return output parameters to the bot that can be a `string`, `number` or a `boolean`, select **Add an output** option in **Power Vitual Agents response** user interface, and then select the type for the output.
+To return output parameters to the bot that can be a `string`, `number` or a `boolean`, select **Add an output** option in **Power Virtual Agents response** user interface, and then select the type for the output.
 
 
 ![Power Virtual Agents response output types](media/PVAConnector_Output_1.JPG)
@@ -215,7 +215,7 @@ You can rename and modify your flow on the Power Automate portal. For example, t
     - chance_of_rain (Number)
 
 
-![Add dynamic variables to the flow's reponse](media/AddDynamicVariables.jpg)
+![Add dynamic variables to the flow's response](media/AddDynamicVariables.jpg)
 
 
 This flow is now ready to be used in your bots.
