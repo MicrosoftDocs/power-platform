@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/10/2020
+ms.date: 02/14/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -17,12 +17,12 @@ search.app:
 ---
 # Opt in to early access updates 
 
-Power Platform and model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Project Service Automation, and Dynamics 365 Marketing) deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
+[Model-driven apps in Microsoft Dynamics 365](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview) (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Project Service Automation, and Dynamics 365 Marketing) and Microsoft Power Platform deliver two [major releases](policies-communications.md#major-release-events) per year (April and October) that offer new capabilities and functionality.
 
 Because the major releases include features that affect the user experience, you can opt in for early access to self-update to the new release, and start testing and validating the new features before they're automatically enabled for your users.
 
 > [!TIP]
-> Check out the early access features for [Power Platform](https://aka.ms/PowerPlatformEAFeatures) and [Dynamics 365](https://aka.ms/Dynamics365EAFeatures) to know the features that will roll out to the users automatically when you opt in for an update.
+> Check out the Dynamics 365 [early access features](https://aka.ms/Dynamics365EAFeatures) and Power Platform [early access features](https://aka.ms/PowerPlatformEAFeatures) to know the features that will roll out to the users automatically when you opt in for an update.
 
 ## Early access availability  
 For each of the major releases, you can opt in for early access updates approximately two months before the major release is automatically enabled in your region.
@@ -176,6 +176,7 @@ Throughout a release wave, your environments will be updated during one of the [
 See [Policies and communications](policies-communications.md#scheduled-system-updates). 
 
 #### Deployment schedule
+
 The following are the current schedules for when the 2020 release wave 1 features will be enabled by regions. 
 
 |Regions  |General availability release update window  |
@@ -186,7 +187,7 @@ The following are the current schedules for when the 2020 release wave 1 feature
 |North America     |  Friday, April 24th – Sunday, April 26th       |
 |GCC<br />GCC High<br />DOD  |Friday, May 1st – Sunday, May 3rd<br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md).          |
 
-During the general availability deployment, your environments will be updated with the latest features and functionality automatically applied to Dynamics 365 applications and Power Platform. It will not require any action from you. 
+During the general availability deployment, your environments will be updated with the latest features and functionality automatically applied to Dynamics 365 applications and Power Platform. It will not require any action from you.  
 
 ### See also
 [Dynamics 365 release schedule and early access ](https://docs.microsoft.com/dynamics365/get-started/release-schedule)<br />
