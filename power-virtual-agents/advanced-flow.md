@@ -48,16 +48,19 @@ Using the **Create a flow** option opens a starter flow template in the [Power A
 
 ![Power Automate flow template](media/PVAConnectorTemplate.JPG)
 
->[NOTE]
+>[!NOTE]
 >The Power Automate portal automatically opens in the same environment as the bot (using the same user credentials).
 
 This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action: 
-- Flow trigger:  **Power Virtual Agents**
-![Power Virtual Agents trigger](media/PVAConnectorTrigger.JPG)
+
+- Flow trigger:  **Power Virtual Agents**  
+
+    ![Power Virtual Agents trigger](media/PVAConnectorTrigger.JPG)
 
 
-- Response action:  **Power Virtual Agents**
-![Power Virtual Agents response](media/PVAConnectorResponse.JPG)
+- Response action:  **Power Virtual Agents**  
+
+    ![Power Virtual Agents response](media/PVAConnectorResponse.JPG)
 
 ## Input and output parameters
 
@@ -79,12 +82,12 @@ The following types are not supported:
 - List [Date]
 - List [Timestamp]
 
->[NOTE]
+>[!NOTE]
 >A bot is able to receive up to 1MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
 
 ### Input parameters
 
-To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Vitual Agents trigger** user interface, and then select the type a - `string`, `number` or a `boolean`.
+To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface, and then select the type a - `string`, `number`, or a `boolean`.
 
 
 ![Power Virtual Agents trigger input types](media/PVAConnector_Inputs_1.JPG)
@@ -98,7 +101,7 @@ For example, you can select **Text** and **Number** to add the following input p
 
 ### Output parameters
 
-To return output parameters to the bot that can be a `string`, `number` or a `boolean`, select **Add an output** option in **Power Vitual Agents response** user interface, and then select the type for the output.
+To return output parameters to the bot that can be a `string`, `number`, or a `boolean`, select **Add an output** option in **Power Virtual Agents response** user interface, and then select the type for the output.
 
 
 ![Power Virtual Agents response output types](media/PVAConnector_Output_1.JPG)
@@ -161,27 +164,25 @@ In Power Virtual Agents, you can now see this flow on the list of available acti
 ![New flow shows up in Action picker](media/FlowInActionPicker.png)
 
 
-## Modify a flow on Power Automate portal
+## Modify a flow on the Power Automate portal
 
 You can rename and modify your flow on the Power Automate portal. For example, the flow you just created using the template can be updated to provide a weather forecast when called from a bot.
 
-1.  You can open a flow to modify either from a Power Virtual Agents dialog, or directly on the Power Automate portal.
+1. In Power Virtual Agents, you can open a flow by using the flow's **View flow details** link on the list of available actions when you use the **Call an action node** in the authoring canvas.
 
-  In Power Virtual Agents, you can open a flow by using the flow's **View flow details** link on the list of available actions when you use the **Call an action node** in the authoring canvas.
+    ![Modify a flow from Action Picker](media/ModifyFlowInPicker.png)
 
- ![Modify a flow from Action Picker](media/ModifyFlowInPicker.png)
+    If you want to update a flow that is already used in your dialog, the same **View flow details** link is available directly in the Action node.
  
-  If you want to update a flow that is already used in your dialog, the same **View flow details** link is avlaible directly in the Action node.
+    ![Modify a flow from Action node](media/ModifyFlowInAction.png)
  
-   ![Modify a flow from Action node](media/ModifyFlowInAction.png)
- 
-  Using the flow's **View flow details** link launches the Power Automate portal in a separate browser tab, and open the flow in a **Details** page where you can modify it using the **Edit** command.
+    Using the flow's **View flow details** link launches the Power Automate portal in a separate browser tab, and opens the flow in a **Details** page where you can modify it using the **Edit** command.
 
-  ![Edit your flow using the Details page](media/FlowEditDetailsPage.png)
+    ![Edit your flow using the Details page](media/FlowEditDetailsPage.png)
 
-  If you want to open a flow on the Power Automate portal, go to the **Solutions** tab and then open your flow's solution. Use the flow’s **Edit menu** to open the flow for editing.
+    If you want to open a flow on the Power Automate portal, go to the **Solutions** tab and then open your flow's solution. Use the flow’s **Edit menu** to open the flow for editing.
 
-  ![Open your flow for editing](media/EditFlow.jpg)
+    ![Open your flow for editing](media/EditFlow.jpg)
 
     
 1.  Rename the flow to **Get weather forecast** and then add the following flow input parameters to **Power Virtual Agents** trigger:
@@ -202,7 +203,7 @@ You can rename and modify your flow on the Power Automate portal. For example, t
 
     ![Add Get forecast action](media/AddMSNWeather.jpg)
 
-1. A new **MSN Weather Connector** is added to the flow. Under Location, select **Add dynamic content**. Select **City** and **Zipcode** from the list. 
+1. A new **MSN Weather Connector** is added to the flow. Under **Location**, select **Add dynamic content**. Select **City** and **Zipcode** from the list. 
 
     ![Pass flow's input parameters to MSN Weather connector as location](media/AddLocationForMSN.jpg)
 
@@ -214,7 +215,7 @@ You can rename and modify your flow on the Power Automate portal. For example, t
     - chance_of_rain (Number)
 
 
-![Add dynamic variables to the flow's reponse](media/AddDynamicVariables.jpg)
+    ![Add dynamic variables to the flow's response](media/AddDynamicVariables.jpg)
 
 
 This flow is now ready to be used in your bots.
@@ -224,7 +225,7 @@ This flow is now ready to be used in your bots.
 
 You can call a Power Automate flow from a bot topic using the **Call an action** node. You can then pass variables to the flow and receive flow outputs that can be used in a bot conversation.
 
-These instructions use adding weather information to a flow as an example. If you haven't already, follow the steps in this article to create a **Get weather forecast** flow.
+These instructions use adding weather information to a flow as an example. If you haven't already, follow the steps under the [Modify a flow on the Power Automate portal](#modify-a-flow-on-the-power-automate-portal) section in this topic to create a weather forecast flow.
 
 **Call a flow from within a topic:**
 
@@ -269,7 +270,7 @@ These instructions use adding weather information to a flow as an example. If yo
     ![Call action](media/ActionNodeGetWeatherForecast.png)
 
 
-Select **Save** to save your topic. 
+1. Select **Save** to save your topic. 
 
 
 ## Test your flow and topic
