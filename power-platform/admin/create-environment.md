@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 02/05/2020
+ms.date: 02/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -43,9 +43,8 @@ Your license determines whether you can create environments.
 | Office 365 Plans |No | No |
 | Dynamics 365 Teams Plans   |No | No |
 | Power Apps Community Plan   |No | No |
-| Dynamics 365 trial | Yes (one) | Yes|
+| Dynamics 365 trial | Yes (one) | No|
 | Dynamics 365 Plans |Yes (one)| Yes |
-| Dynamics 365 Apps Plans |Yes (one)| Yes |
 | Power Apps plan |Yes (one)| Yes |
 | Power Apps trial |Yes (one)| Yes |
 
