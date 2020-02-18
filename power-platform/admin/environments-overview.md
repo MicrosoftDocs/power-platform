@@ -65,14 +65,39 @@ Users or security groups can be assigned to either of these two roles by an Envi
 
 There are multiple types of environments. The type of environment indicates the purpose and determines the environment characteristics. The following table summarizes the current types of environments that you might encounter.
 
+<table style="width:100%">
+<tr>
+<th>Settings</th>
+<th>Description</th>
+<th>Security</th>
+</tr>
+<tr>
+<td width="20%"> Production</td>
+<td width="50%">  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.        </td>
+<td width="30%"> Full control.  </td>
+</tr>
+<tr>
+<td width="20%"> Default</td>
+<td width="50%"> These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail. </td>
+<td width="30%">  Limited control - all licensed users<sup>1</sup> are Environment Makers.</td>
+<tr>
+<td width="20%"> Sandbox</td>
+<td width="50%">   These are non-production environments and offer features like copy and reset. Sandbox environments are used for development and testing, separated from production. Provisioning sandbox environments can be restricted to admins (since production environment creation can be blocked), but conversion from production cannot be blocked.   </td>
+<td width="30%">  Full control. <br />If used for testing, only end user access is needed. <br />Developers require Environment Maker access to create resources.</td>
+</tr>
+<tr>
+<td width="20%"> Trial</td>
+<td width="50%">  Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time. Expires after 30 days and are limited to 1 user. Provisioning trial environments can be restricted to admins.</td>
+<td width="30%">  Full control.</td>
+</tr>
+<tr>
+<td width="20%"> Developer</td>
+<td width="50%">  Developer environments are created by users with the Community Plan license. They are special environments intended only for use by the owner. Sharing with other users is not possible. Provisioning developer environments can't be restricted unless through a support ticket. </td>
+<td width="30%">  Only a single user account with the Community Plan has access.</td>
+</tr>
+</table>
 
-|Type  |Description  |
-|---------|---------|
-|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
-|Default     | These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail.        |
-|Sandbox     | These are non-production environments and when associated with a Common Data Service database environment offer features like reset.        |
-|Trial     | Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time.        |
-|Developer     | Developer environments are created by users with the Community Plan license. They are special environments intended only for use by the owner. Sharing with other users is not possible in these environments.        |
+<sup>1</sup>Users licensed for Power Apps, Power Automate, Office 365 and Dynamics 365 Online, stand-alone licenses, free and trial licenses.
 
 ## The default environment
 A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they are automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of the Azure AD tenant.
@@ -122,4 +147,5 @@ An environment will show up in your picker if you meet one of the following cond
 ![](./media/environments-overview/EnvironmentPicker.png)
 
 ### See also
-[Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/modules/create-manage-environments/)
+[Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/modules/create-manage-environments/)<br />
+[About environments](wp-environments.md)
