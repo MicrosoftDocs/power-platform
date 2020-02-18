@@ -30,7 +30,7 @@ The capacity is currently not reported at the tenant level, but is available for
 
 A billed session is an interaction between the customer and the bot and represents one unit of consumption. 
 
-The billed session begins when a user topic is triggered ([user topics are different from system topics](authoring-create-edit-topics.md#-use-system-and-sample-topics).
+The billed session begins when a user topic is triggered ([user topics are different from system topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
 
 The session ends for one of the following reasons: 
 
