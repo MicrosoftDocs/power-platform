@@ -44,7 +44,7 @@ These are:
   - Four pre-populated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics.md) can be used to help understand simple to complex ways of using nodes to create bot conversations.
   - A number of **System Topics**. These are pre-populated topics that you are likely to need during a bot conversation. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
 
-You can edit both of these topic types in the same manner as for topics you create, however you cannot delete them.
+You can edit bot of these topic types in the same manner as for topics you create, however you cannot delete them.
 
 
 ## Create a topic
