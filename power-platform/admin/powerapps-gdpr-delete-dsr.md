@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 02/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -42,7 +42,7 @@ Custom-connector permissions |
 
 For the data and resources that require manual review, Power Apps offers the following experiences to reassign (if necessary) or delete personal data for a specific user:
 
-* Website access: [Power Apps site](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Website access: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell access: Power Apps cmdlets for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804) and cmdlets for [on-premises gateways](https://go.microsoft.com/fwlink/?linkid=872238).
 
@@ -64,7 +64,7 @@ Custom-connector permissions | | App creator: Available <br> Admin: Available
 ## Prerequisites
 
 ### For users
-Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or [PowerShell cmdlets for app creators](https://go.microsoft.com/fwlink/?linkid=871448).
+Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps](https://make.powerapps.com) or [PowerShell cmdlets for app creators](https://go.microsoft.com/fwlink/?linkid=871448).
 
 #### Unmanaged tenant
 If you are a member of an [unmanaged tenant](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover), meaning that your Azure AD tenant does not have global administrator, then you will still be able to follow the steps outlined in this art to remove your own personal data.  However, since there is no global administrator for your tenant you will need to follow the instructions outlined in [Step 11: Delete the user from Azure Active Directory](#step-11-delete-the-user-from-azure-active-directory) below to delete your own account from the tenant.
@@ -89,7 +89,7 @@ In order to determine if you are a member of an unmanaged tenant please follow t
 ### For administrators
 To perform the administrative operations outlined in this document using the [Power Apps Admin center](https://admin.powerapps.com/), Power Automate admin center, or [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
-* A paid Power Apps plan or a Power Apps plan trial. You can sign-up for a 30-day trial at [https://web.powerapps.com/trial](https://web.powerapps.com/trial). Trial licenses can be renewed if they've expired.
+* A paid Power Apps plan or a Power Apps plan trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
 * [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user’s resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
@@ -212,7 +212,7 @@ Get-AdminApp -Owner $deleteDsrUserId | Set-AdminAppOwner -AppOwner $newAppOwnerU
 ```
 
 ### Delete a user’s canvas app using the Power Apps site
-A user can delete an app from the [Power Apps site](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). For the full steps on how to delete an app, please see deleting an app.
+A user can delete an app from the [Power Apps site](https://make.powerapps.com). For the full steps on how to delete an app, please see deleting an app.
 
 ### Delete a user’s canvas app using the Power Apps Admin center
 An admin can delete apps created by a user starting from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:

@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/04/2019
+ms.date: 02/18/2020
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -43,7 +43,7 @@ There are various ways to create a database:
     ![](./media/create-database/DB-Choose-options.png)
 
 ## Create a database in the Entities pane of Power Apps
-1. On [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), expand the **Data** section and click or tap **Entities** in the left navigation pane.
+1. On [powerapps.com](https://make.powerapps.com), expand the **Data** section and click or tap **Entities** in the left navigation pane.
 
 2. Click **Create Database** to create the database.
 

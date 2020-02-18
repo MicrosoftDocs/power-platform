@@ -65,6 +65,14 @@ Users or security groups can be assigned to either of these two roles by an Envi
 
 There are multiple types of environments. The type of environment indicates the purpose and determines the environment characteristics. The following table summarizes the current types of environments that you might encounter.
 
+|Type  |Description  |
+|---------|---------|
+|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
+|Default     | These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail.        |
+|Sandbox     | These are non-production environments and when associated with a Common Data Service database environment offer features like reset.        |
+|Trial     | Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time.        |
+|Developer     | Developer environments are created by users with the Community Plan license. They are special environments intended only for use by the owner. Sharing with other users is not possible in these environments.        |
+
 <table style="width:100%">
 <tr>
 <th>Settings</th>
@@ -136,7 +144,7 @@ Select **Edit** to review and edit all your environment details.
 > ![More environment details](media/environment-details-more.png "More environment details")
 
 ## Choosing an environment in Power Apps admin center
-With the introduction of environments, you will now see a new experience when you come to [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  The apps, connections, and other items that are visible in the site will now be filtered based on the current environment that is selected.  Your current environment is specified in the environment picker near the right edge of the header. To choose a different environment, click or tap the picker, and a list of available environments appears. Click or tap the one you wish to enter.
+With the introduction of environments, you will now see a new experience when you come to [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  The apps, connections, and other items that are visible in the site will now be filtered based on the current environment that is selected.  Your current environment is specified in the environment picker near the right edge of the header. To choose a different environment, click or tap the picker, and a list of available environments appears. Click or tap the one you wish to enter.
 
 An environment will show up in your picker if you meet one of the following conditions:
 

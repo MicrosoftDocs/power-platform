@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 02/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -24,7 +24,7 @@ In a perfect world as an administrator you would only visit a single portal to p
 |---------|---------|
 |Power Platform Admin center <br/>https://admin.powerplatform.microsoft.com     |The new unified administrative portal for Power Platform admins. Currently this portal can be used for Common Data Service environment Management, to submit Dynamics 365 and Microsoft Power Automate focused support tickets, and to view Power Apps and Power Automate admin analytics. Over time the following admin experience will be migrated and replaced by the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/): <br/><ol><li>Power Apps Admin Portal</li> <li>Power Automate Admin Portal</li><li>Business platform admin center</li> <li>Dynamics 365 admin center</li> </ol>   |
 |Power Apps Admin Portal <br/>https://admin.powerapps.com     |Creating and managing environments including security starts here. Within each environment you can manage the apps and flows. Monitoring to see who is licensed and building things. Managing Data Loss Prevention Policies. Manage Common Data Service Data Integration projects. Over time this will migrated & replaced by the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/).         |
-|Power Apps Maker Portal <br/>https://web.powerapps.com     |This portal is focused on building Power Apps but can also view and manage Common Data Service components, manage connectors and gateways. You can also see application statistics from details on apps here.         |
+|Power Apps Maker Portal <br/>https://make.powerapps.com     |This portal is focused on building Power Apps but can also view and manage Common Data Service components, manage connectors and gateways. You can also see application statistics from details on apps here.         |
 |Power Automate Admin Portal<br/>https://admin.flow.microsoft.com     |This points to the same site as admin.powerapps.com. Over time this will migrated & replaced by the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/).         |
 |Business platform admin center <br/>https://admin. businessplatform.microsoft.com     |This points to the same site as admin.powerapps.com. Over time this will migrated & replaced by the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/).        |
 |Dynamics 365 admin center<br/>https://port.crm. dynamics.com/G/manage/index.aspx     |The Dynamics 365 admin center, that can be leveraged to perform certain Common Data Service Environment management activities like renaming, deleting, and resetting.         |

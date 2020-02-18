@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 12/07/2018
+ms.date: 02/18/2020
 ms.author: sabinn
 search.audienceType: 
   - admin
@@ -108,7 +108,7 @@ If you are unable to see your connections or environments in the drop-down while
 > [!div class="mx-imgBorder"] 
 > ![](media/ConnectionSet1.png "Connection set")
 
-* **Connection**: Ensure you have created your connections under Data/Connections on [https://web.powerapps.com ](https://web.powerapps.com) and that they are in the **Connected** state. If you see a **Fix Connection** notification, you should double-check the credentials used for the account, and use the **Switch account** option from the ellipsis (...) to reauthenticate.
+* **Connection**: Ensure you have created your connections under Data/Connections on [https://make.powerapps.com ](https://make.powerapps.com) and that they are in the **Connected** state. If you see a **Fix Connection** notification, you should double-check the credentials used for the account, and use the **Switch account** option from the ellipsis (...) to reauthenticate.
 
    > [!div class="mx-imgBorder"] 
    > ![](media/ConnectionsIssue.png "Connections issue")
@@ -117,7 +117,7 @@ If you are unable to see your connections or environments in the drop-down while
 
   Here is an example of creating a simple flow to test your connection to Dynamics 365 Finance and Operations:
 
-  1. Create a new flow (choose **Create from blank**) under **Business logic/Flow** from [https://web.powerapps.com](https://web.powerapps.com).
+  1. Create a new flow (choose **Create from blank**) under **Business logic/Flow** from [https://make.powerapps.com](https://make.powerapps.com).
 
       > [!div class="mx-imgBorder"] 
       > ![](media/ConnectionstestFlow1.png "Connections new flow")

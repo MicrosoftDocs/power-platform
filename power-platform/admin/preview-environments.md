@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 02/18/2020
 ms.author: manasma
 search.audienceType: 
   - admin
@@ -76,9 +76,9 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
 <!--Reference links in article-->
 [1]: https://preview.admin.powerapps.com
-[2]: https://web.powerapps.com
+[2]: https://make.powerapps.com
 [3]: https://preview.web.powerapps.com
-[4]: https://preview.web.powerapps.com/webplayer
+[4]: https://preview.apps.powerapps.com/play
 [5]: https://docs.microsoft.com/powerapps/whats-new
 [7]: https://preview.create.powerapps.com
 [8]: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 02/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -198,6 +198,7 @@ Yes, this functionality is available from the Power Apps Admin center. See [Envi
 
 ### Can I delete an environment?
 Yes, this functionality is available from the Power Apps Admin center. See [Environments Administration](environments-administration.md#delete-your-environment) for more details.
+
 Please note that you currently can't delete a production environment with a database (with latest version of the Common Data Service). This will be coming soon!
 
 ### As an Environment Admin, can I view and manage all resources (apps, flows, APIs, etc.) for an environment?
@@ -207,7 +208,7 @@ Yes, the ability to view the apps and flows for an environment is available from
 
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com
-[2]: https://web.powerapps.com
+[2]: https://make.powerapps.com
 [3]: https://powerapps.microsoft.com/pricing/
 [4]: https://admin.flow.microsoft.com
 [5]: https://go.microsoft.com/fwlink/p/?linkid=871628
