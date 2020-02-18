@@ -2,7 +2,7 @@
 title: "Assign user licenses and manage access to Power Virtual Agents"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing"
-ms.date: 12/20/2019
+ms.date: 2/20/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -75,7 +75,7 @@ You can disable or enable the ability for users to sign up for a trial themselve
 
 
 ## Subscription capacity
-By purchasing one of our paid SKUs you gain capacity for the specified number of billed sessions. The capacity is pooled across the entire tenant and any user who has access to PVA can build bots that use this capacity. 
+When you purchase a license you gain capacity for the specified number of billed sessions. The capacity is pooled across the entire tenant and any user who has access to Power Virtual Agents can build bots that use this capacity. 
 
 The capacity is currently not reported at the tenant level, but is available for each individual bot. [Learn more](analytics-billed-sessions.md) about billed sessions.
 
