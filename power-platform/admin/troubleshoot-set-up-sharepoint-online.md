@@ -82,28 +82,31 @@ The most common cause for the Documents associated grid not loading is the corru
     > ![](media/sharepoint-document-associated-grid.png "Search for Document Associated")
 17. Make the changes as indicated below for the layoutxml section:
 
-    ```  
+    ```
     <layoutxml>
-      <grid name="sharepointdocument" jump="fullname" select="1" icon="0" preview="1">
-        <row name="sharepointdocument" id="sharepointdocumentid">
-          <cell name="fullname" width="300" imageproviderfunctionname="DocumentManagement.FileTypeIcon.loadSharePointFileTypeIcon" imageproviderwebresource="$webresource:SharePoint_main_system_library.js" />
-          <cell name="relativelocation" width="200" />
-          <cell name="modified" width="150" />
-          <cell name="sharepointmodifiedby" width="150" />
-          <cell name="sharepointcreatedon" width="300" />
-          <cell name="title" ishidden="1" />
-          <cell name="readurl" ishidden="1" />
-          <cell name="editurl" ishidden="1" />
-          <cell name="author" ishidden="1" />
-          <cell name="absoluteurl" ishidden="1" />
-          <cell name="filetype" ishidden="1" />
-          <cell name="ischeckedout" ishidden="1" />
-          <cell name="locationid" ishidden="1" />
-          <cell name="iconclassname" ishidden="1" />
-        </row>
-      </grid>
+     <grid name="sharepointdocument" object="9507" jump="fullname" select="1" icon="0" preview="1">
+      <row name="sharepointdocument" id="sharepointdocumentid">
+            <cell name="fullname" width="300" imageproviderfunctionname="DocumentManagement.FileTypeIcon.loadSharePointFileTypeIcon" imageproviderwebresource="$webresource:SharePoint_main_system_library.js" />
+            <cell name="modified" width="150" />
+            <cell name="sharepointmodifiedby" width="150" />
+            <cell name="relativelocation" width="200" />
+            <cell name="servicetype" width="90" />
+            <cell name="documentid" ishidden="1" />
+            <cell name="title" ishidden="1" />
+            <cell name="author" ishidden="1" />
+            <cell name="sharepointcreatedon" ishidden="1" />
+            <cell name="sharepointdocumentid" ishidden="1" />
+            <cell name="filetype" ishidden="1" />
+            <cell name="readurl" ishidden="1" />
+            <cell name="editurl" ishidden="1" />
+            <cell name="ischeckedout" ishidden="1" />
+            <cell name="absoluteurl" ishidden="1" />
+            <cell name="locationid" ishidden="1" />
+            <cell name="iconclassname" ishidden="1" />
+      </row>
+     </grid>
     </layoutxml>
-    ```  
+    ``` 
 
     > [!IMPORTANT]
     >  All the attributes configured in the layout xml require their corresponding respective attributes to be present in the Fetch XML. The grid will return an error when this configuration is incorrect.  

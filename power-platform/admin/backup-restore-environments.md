@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 02/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -188,3 +188,9 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ### Don't see your environment to restore to?
 Only sandbox environments can be restored to.
+
+### See also
+[Automatic environment cleanup](automatic-environment-cleanup.md) <br />
+[Manage sandbox environments](sandbox-environments.md) <br />
+[Environments overview](environments-overview.md) <br />
+[Licensing overview for Power Platform](pricing-billing-skus.md)

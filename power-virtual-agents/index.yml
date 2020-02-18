@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Power Virtual Agents documentation # < 60 chars
-summary: Build chat bots easily with Power Virtual Agents.  # < 160 chars
+summary: Build chatbots easily with Power Virtual Agents.  # < 160 chars
 
 metadata:
   title: Power Virtual Agents documentation and guidance # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: See how Power Virtual Agents can be used to build powerful AI-driven chat bots.  # Required; article description that is displayed in search results. < 160 chars.
+  description: See how Power Virtual Agents can be used to build powerful AI-driven chatbots.  # Required; article description that is displayed in search results. < 160 chars.
   services: service
   ms.service:   
     - "dynamics-365-ai" #Required; service per approved list. service slug assigned to your service by ACOM.

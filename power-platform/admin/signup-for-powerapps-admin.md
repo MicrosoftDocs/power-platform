@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 02/07/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -71,46 +71,4 @@ You can purchase Power Apps subscriptions for your organization from the [Micros
 
 ## Power Apps per app plan
 
-Power Apps per app plan allows individual users to run 2 applications on a single
-portal for a specific business scenario based on the full capabilities of
-Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the
-Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity) area in the Power Platform
-Admin center. More information: [Capacity add-ons](capacity-add-on.md)
-
-> [!IMPORTANT]
-> Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn’t attempt to assign them to users there. Power Apps per app plans must be allocated to an environment by an admin in Power Platform Admin center (<https://admin.powerplatform.microsoft.com>). 
->
-> After per app plans are allocated to an environment, they are assigned when apps are shared with end users in the environment.
-
-### Allocate per app plans
-
-After purchase, you can allocate per app plans to the environments as required. 
-
-In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select **Analytics > Capacity** in the left-side navigation pane. If your organization has purchased add-ons that includes per app plans, an **Add-ons** tile appears on the **Capacity** screen displaying summary information about the capacity add-ons that your organization has.
-
-![Add-on tile](media/add-on-tile2.png "Example of purchased capacity in the admin center")
-
-To allocate add-ons, select **Manage**. For detailed information, see [Allocate or change capacity in an environment](capacity-add-on.md#allocate-or-change-capacity-in-an-environment).
-
-> [!NOTE]
-> As an admin, you can restrict who can allocate add-on capacity to environments. More information: [Control who can allocate add-on capacity](capacity-add-on.md#control-who-can-allocate-add-on-capacity)
-
-### Set up app to use per app plans
-
-After an admin allocates Power Apps per app plan to an environment, they're assigned to unlicensed users when an app in that environment is shared with them. 
-
-Follow these steps to turn off assigning per app plans for users when an app
-is shared with them:
-
-1. Choose the app in [Power Apps](https://make.powerapps.com).
-2. Select **Settings**.
-
-    ![App settings](media/app-settings1.png "App settings")
-
-3. Under **Pass assignment**, change the **Auto assign per app passes** toggle to **No**. The **Auto assign per app passes** toggle appears in all app setting.
-
-    ![Pass assignment](media/pass-assignment.png "Pass assignment")
-
-> [!IMPORTANT]
-> Turning off the per app plan is currently available only for canvas apps. Model-driven apps and portals will have this ability in the future.
-> For the time being, "Ad-hoc subscription" consent plans must be enabled for an organization's tenant. An ad-hoc subscription refers to trial licenses that can be assigned by admins to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal, or that users can sign themselves up for via https://signup.microsoft.com. End users that receive a per app plan also receive an "ad-hoc" Power Apps baseline access plan. This plan ensures end users can launch apps shared with them when they're expected to be entitled access via a per app plan. The requirement for ad-hoc subscription consent plans will be removed in the future. [This documentation](powerapps-powershell.md#block-trial-licenses-commands) outlines how ad-hoc subscription consent plans are blocked and unblocked for an organization.
+See [About Power Apps per app plans](about-powerapps-perapp.md).

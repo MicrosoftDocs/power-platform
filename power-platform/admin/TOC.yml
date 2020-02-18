@@ -15,6 +15,8 @@
         href: global-service-administrators-can-administer-without-license.md      
       - name: Purchase Power Apps 
         href: signup-for-powerapps-admin.md
+      - name: About Power Apps per app plans
+        href: about-powerapps-perapp.md
       - name: Power Apps and Power Automate licensing FAQs
         href: powerapps-flow-licensing-faq.md
       - name: Requests limits and allocations
@@ -61,8 +63,8 @@
           href: enable-hybrid-experience.md
     - name: Environments
       items:
-      - name: Early opt-in to 2019 release wave 2
-        href: preview-october-2019-updates.md
+      - name: Opt in to early access updates
+        href: opt-in-early-access-updates.md
       - name: View analytics
         items:
         - name: Common Data Service analytics 
@@ -73,6 +75,8 @@
           href: analytics-powerapps.md
         - name: Capacity
           href: capacity-storage.md
+        - name: View self-service capacity
+          href: view-self-service-capacity.md
         - name: Add-on capacity management
           href: capacity-add-on.md
         - name: Free storage space
@@ -83,8 +87,10 @@
           href: environments-overview.md
         - name: Create environments
           href: create-environment.md
-        - name: Delete environment
+        - name: Delete and recover environments
           href: delete-environment.md
+        - name: Automatic environment cleanup 
+          href: automatic-environment-cleanup.md
         - name: Control environment creation
           href: control-environment-creation.md
         - name: Back up and restore environments
@@ -795,3 +801,5 @@
     href: videos.md
   - name: Important changes (deprecations) coming
     href: ../important-changes-coming.md
+  - name: International availability
+    href: ../availability.md

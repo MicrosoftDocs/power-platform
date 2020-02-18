@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: buck1ey #Required; your GitHub user alias, with correct capitalization.
   ms.author: buckg #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/29/2019 #Required; mm/dd/yyyy format.
+  ms.date: 01/29/2020 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 additionalContent:
@@ -23,19 +23,19 @@ additionalContent:
           links:
           - url: https://docs.microsoft.com/power-bi/
             text: Documentation
-          - url: https://docs.microsoft.com/en-us/learn/browse/?products=power-bi
+          - url: https://docs.microsoft.com/learn/browse/?products=power-bi
             text: Learn Power BI
         - title: Power Apps
           links:
           - url: https://docs.microsoft.com/powerapps
             text: Documentation
-          - url: https://docs.microsoft.com/en-us/learn/browse/?products=powerapps
+          - url: https://docs.microsoft.com/learn/browse/?products=powerapps
             text: Learn Power Apps
         - title: Power Automate
           links:
           - url: https://docs.microsoft.com/power-automate/
             text: Documentation
-          - url: https://docs.microsoft.com/en-us/learn/browse/?products=flow
+          - url: https://docs.microsoft.com/learn/browse/?products=power-automate
             text: Learn Power Automate
         - title: Power Virtual Agents
           links:
@@ -64,4 +64,4 @@ additionalContent:
         # Card
         - title: Microsoft Azure
           summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
-          url: https://docs.microsoft.com/en-us/azure
+          url: https://docs.microsoft.com/azure
