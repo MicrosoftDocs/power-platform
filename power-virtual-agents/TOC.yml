@@ -77,6 +77,8 @@
      href: analytics-sessions.md
    - name: Analyze topic usage
      href: analytics-topic-details.md
+   - name: Analyze billed session information
+     href: analytics-billed-sessions.md
 - name: Configure and customize 
   items:
    - name: Key concepts - Configuration
