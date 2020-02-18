@@ -26,11 +26,13 @@ The capacity is currently not reported at the tenant level, but is available for
 
     ![Billed session view](media/analytics-billed-sessions.png)
 
+You can change the date range to filter the **Total billed sessions over time** chart to a period you specify. You can also instantly see the total billed sessions, as well as the trend percentage, beside the chart of sessions.
+
 ## Definition of a billed session
 
 A billed session is an interaction between the customer and the bot and represents one unit of consumption. 
 
-The billed session begins when a user topic is triggered ([user topics are different from system topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
+The billed session begins when a user topic is triggered (see the [Use system and sample topics section](authoring-create-edit-topics.md#use-system-and-sample-topics) for more information).
 
 The session ends for one of the following reasons: 
 
@@ -60,6 +62,6 @@ See the [Analyze bot performance and usage in Power Virtual Agents](analytics-su
 
 Currently you can only see billed sessions for a single bot.
 
-### If I am on trial subscripition but have some billed sessions, does it mean I have to pay?
+### If I am on a trial subscription but have some billed sessions, does it mean I have to pay?
 
 If you see billed sessions for your bot, it does not mean you will be charged. If you signed up for our [trial offer](sign-up-individual.md) you have a number of billed sessions included with the trial.
