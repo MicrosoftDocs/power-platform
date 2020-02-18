@@ -77,7 +77,7 @@ You can disable or enable the ability for users to sign up for a trial themselve
 ## Subscription capacity
 When you purchase a license you gain capacity for the specified number of billed sessions. The capacity is pooled across the entire tenant and any user who has access to Power Virtual Agents can build bots that use this capacity. 
 
-The capacity is currently not reported at the tenant level, but is available for each individual bot. [Learn more](analytics-billed-sessions.md) about billed sessions.
+The capacity is currently not reported at the tenant level, but is available for each individual bot. See the [View billed sessions for Power Virtual Agents](analytics-billed-sessions.md) topic for more information on billed sessions and how to analyze usage.
 
 ## Using Power Automate with a Power Virtual Agents license
 [See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
