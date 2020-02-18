@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Replicate data to Azure SQL Database 
+# Replicate data to Azure SQL Database
 
 [!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
@@ -41,6 +41,8 @@ For information about the programmatic interface for managing configuration and 
    Alternatively, you can turn on **Allow access to Azure services** to allow all Azure services access.  
   
    For [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] VM, the “Connect to SQL Server over the Internet” option should be enabled. More information: [Azure: Connect to a SQL Server Virtual Machine on Azure (Classic Deployment)](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-classic-sql-connect/)  
+
+   Additionally, configure your firewall rules to allow communication between Data Export Service and SQL Server.
   
 - The database user must have permissions at the database and schema level according to the following tables. The database user is used in the data export connection string.  
   
@@ -77,6 +79,8 @@ For information about the programmatic interface for managing configuration and 
   
 - The Key Vault should be tagged with the organization (OrgId) and tenant ids (TenantId).  This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
   
+- Configure your firewall rules to allow communication between Data Export Service and Azure Key Vault.
+
 ### Model-driven apps in Dynamics 365  
   
 - A version 9.0 or later version environment.  
@@ -587,7 +591,7 @@ EXEC SP_EXECUTESQL @sql;
 
 <a name="SQLDB_IP_addresses"></a>   
 ## Azure SQL database static IP addresses used by the Data Export Service  
- In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/)l  
+ In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/)l  
   
 |Region|IP address|  
 |------------|----------------|  

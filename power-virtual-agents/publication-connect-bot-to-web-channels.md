@@ -2,7 +2,7 @@
 title: "Configure a Power Virtual Agents bot for a live or demo website"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
-ms.date: 11/25/2019
+ms.date: 1/24/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -15,9 +15,11 @@ ms.collection: virtual-agent
 
 # Configure the demo website and add the bot to your live website
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
+  
+>  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mGa9]
+>  
 
 > [!TIP]
 > **When should I use the demo website and when should I use my own website?** <br/>

@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/03/2019
+ms.date: 02/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -87,7 +87,7 @@ In this example, four security groups provide controlled access to a specific en
   
 ### Associate a security group with a Common Data Service environment  
   
-1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (service admin, Office 365 Global admin, or delegated admin).
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Office 365 Global admin, or Power Platform service admin).
   
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
   

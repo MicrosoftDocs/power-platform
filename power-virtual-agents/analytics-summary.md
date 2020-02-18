@@ -1,7 +1,7 @@
 ---
 title: "Report analytics, performance, and usage in Power Virtual Agents"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
-ms.date: 11/12/2019
+ms.date: 1/24/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -14,9 +14,9 @@ ms.collection: virtual-agent
 
 # Analyze bot performance and usage in Power Virtual Agents
 
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
+>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mQpm]
+>
 
 The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
@@ -118,3 +118,5 @@ The chart displays the impact as a red or blue bar. A red bar indicates that the
 Improving the abandon rate for the top abandon-rate topics in red has the greatest impact on improving the overall abandon rate.
 
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details.md).
+
+

@@ -15,16 +15,16 @@ ms.collection: virtual-agent
 
 # Assign licenses and manage access to Power Virtual Agents
 
-To use Power Virtual Agents, you need a license for each user (a "per user license"), as well as a license for your organization (a "tenant license"). 
+To create and manage bots with Power Virtual Agents, you need a license for each user (a "per user license"), as well as a license for your organization (a "tenant license"). 
 
+>[!NOTE]
+>End users of your bot don't need a special license. After you publish your bot, anyone who can access where you published the bot can interact with the bot.
 
 For more information about Power Virtual Agents licensing, see the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
-This article focuses on how to assign licenses for Power Virtual Agents to your users.
 
-
-  > [!Note]
-  > In order to acquire a Power Virtual Agents user license you need to use the non-preview version of Admin portal. To do so ensure the **Try the new admin center** setting is turned off.
+> [!Note]
+> To acquire a Power Virtual Agents user license you need to use the non-preview version of the Admin portal. Ensure the **Try the new admin center** setting is turned off.
   
 ## Buy tenant license
 You can purchase Power Virtual Agents licenses for your organization on the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) (you will need to sign in with an admin account).

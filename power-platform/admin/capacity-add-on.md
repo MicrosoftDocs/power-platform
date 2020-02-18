@@ -1,7 +1,7 @@
 ---
 title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 01/06/2020
+ms.date: 02/07/2020
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -21,7 +21,7 @@ If your organization has purchased capacity add-ons, you have to allocate that c
 
 There are three stages for using capacity add-ons:
 
-1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [Power Apps and Power Automate Licensing Guide Oct 2019](https://go.microsoft.com/fwlink/?linkid=2085130).
+1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 2. Allocate: assign the purchased add-ons to an environment.
 3. Consume: once allocated, you can consume the capacity add-ons.
 
@@ -54,6 +54,13 @@ To allocate capacity to an environment:
    > [!div class="mx-imgBorder"] 
    > ![Manage add-ons](./media/manage-add-ons.png "Manage add-ons")
 
+   **Some examples**
+
+   - If you have 10 users who are going to be using 1 app each, you should assign 10 **app passes** to the app environment.
+   - If you want to create 5 flows in an environment which are going to be used for business process flows, assign a capacity of 5 for **flow per business process**.
+  - If a company has created a portal and anticipate 50,000 views of the portal, they should allocate 50,000 **portal page views**.
+
+
 ## Control who can allocate add-on capacity
 
 As an admin, you can restrict who can allocate add-on capacity to environments.
@@ -65,53 +72,8 @@ As an admin, you can restrict who can allocate add-on capacity to environments.
    > [!div class="mx-imgBorder"] 
    > ![](./media/add-on-governance.png "Control add-on capacity allocation")
 
-The following admins will be able to allocate add-on capacity in the Power Platform Admin center:
+The following admins will be able to allocate add-on capacity in the Power Platform admin center:
 
 - Office 365 Global admins
-- Service admins
-- Delegated admins
-<!--
-## Control add-on capacity allocation through PowerShell
-
-Download and install the admin PowerShell cmdlets as described [here](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1). For more information about our cmdlets, see [PowerShell support for Power Apps (preview)](powerapps-powershell.md).
-
-Use the following commands to restrict environment creation to Global admin, service admin, and Delegated admin. 
-
-```
-$settings = @{ DisableEnvironmentCreationByNonAdminUsers = $true }
-Set-TenantSettings $settings
-```
--->
-## FAQ
-
-### Can I assign Power Apps per app plans in the Microsoft 365 admin center (admin.microsoft.com)? 
-No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to end users when apps are shared with end users in the environment.
-
-### Can I use model-driven apps by consuming app passes? 
-Yes. Please use the following steps. 
-
-> [!NOTE]
-> The following steps aren't required to use per app plans with model-driven apps. You can use the [traditional steps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). However, the following instructions minimize manual steps of assigning CDS security roles to users individually. 
-
-1. Create a group in Azure Active Directory, see [Create a group and add members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
-   1. Go to: [https://portal.azure.com](https://portal.azure.com) > **Azure Active Directory** > **Groups** > **+ New Group**
-
-2. Assign the group licenses in portal.azure.com. 
-   1. Go to: [https://portal.azure.com](https://portal.azure.com)  > **Azure Active Directory** > **Groups** > search for the group created in Step #1.  
-   2. For now, sign up for the [Per app baseline access plan](https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2), and then assign the license **Power Apps per app plan baseline access**. See [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups).  
-
-3. Add users to the group, see [Add or remove group members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).  
-
-4. [Generate a canvas app from Common Data Service in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app). 
-   1.	Use Common Data Service from an environment you plan to share the model-driven app. 
-   2.	Assign the security role to the group that you plan to use to make the model-driven app accessible to end users.  
-
-5. Share the canvas app with the group created in Step #1. See [Assign a group to a role](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal). 
-
-6. Proceed with sharing the model-driven app, and assign the security role from Step #4b to the users expected to access the app.  
-
-### How do I setup an app to use app passes?
-See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
-
-### When can I see how many capacity add-ons are consumed? 
-Check back later for availability. 
+- Dynamics 365 service admins
+- Power Platform service admins

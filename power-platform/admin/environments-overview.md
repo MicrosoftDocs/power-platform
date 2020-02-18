@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2020
+ms.date: 02/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -61,11 +61,26 @@ Users or security groups can be assigned to either of these two roles by an Envi
 
 ![](./media/environments-overview/EnvironmentRoles.png)
 
+## Types of environments
+
+There are multiple types of environments. The type of environment indicates the purpose and determines the environment characteristics. The following table summarizes the current types of environments that you might encounter.
+
+
+|Type  |Description  |
+|---------|---------|
+|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
+|Default     | These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail.        |
+|Sandbox     | These are non-production environments and when associated with a Common Data Service database environment offer features like reset.        |
+|Trial     | Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time.        |
+|Developer     | Developer environments are created by users with the Community Plan license. They are special environments intended only for use by the owner. Sharing with other users is not possible in these environments.        |
+
 ## The default environment
 A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they are automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of the Azure AD tenant.
 
 > [!NOTE]
 > No users will be added to the Environment Admin role of the default environment automatically. For more information, see [Administer environments in Power Apps](environments-administration.md).
+>
+> The default environment is limited to 32GB of storage capacity. In case you need to store more data, you can create a production environment. See [Provisioning a new environment](create-environment.md#provisioning-a-new-environment).
 
 The default environment is named as follows: “{Azure AD tenant name} (default)”
 
