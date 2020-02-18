@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 02/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,7 +35,7 @@ Individuals can share an app they've created in Power Apps in a Team they are a 
 
 Find and make note of your app's GUID to use in a later step.
 
-1. Sign in to [https://web.powerapps.com](https://web.powerapps.com), and then select **Apps** in the menu.
+1. Sign in to [https://make.powerapps.com](https://make.powerapps.com), and then select **Apps** in the menu.
 
    > [!div class="mx-imgBorder"] 
    > ![Show list of apps](./media/file-apps2.png "Show list of apps")
@@ -128,7 +128,7 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
    > [!div class="mx-imgBorder"] 
    > ![Team tab Add](./media/team-tab-add.png "Team tab Add")
 
-7. Add your app's configuration URL in the "Configuration URL" input field, using the following format: `https://web.powerapps.com/webplayer/teamsapptabsettings?appid=<your App ID>`
+7. Add your app's configuration URL in the "Configuration URL" input field, using the following format: `https://apps.powerapps.com/play/<your app ID>?source=teamstab&locale={locale}&channelId={channelId}&channelType=&{channelType}&chatId=${chatId}&groupId={groupId}&hostClientType={hostClientType}&isFullScreen={isFullScreen}&subEntityID={subEntityID}&teamId={teamId}&teamType={teamType}&theme={theme}&userTeamRole={userTeamRole}`
 
    Replace `<App ID>` with the App ID GUID you recorded above.
 
@@ -148,8 +148,8 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
 
    **Name**: your app name<br />
    **Entity ID**: your app ID <br />
-   **Content URL**: `https://web.powerapps.com/webplayer/iframeapp?appId=<your app ID>&source=teamstab` <br />
-   **Website URL**: `https://web.powerapps.com/webplayer/app?appId=<your app ID>&source=teamsopenwebsite`
+   **Content URL**: `https://apps.powerapps.com/play/<your app ID>?source=teamstab&locale={locale}&channelId={channelId}&channelType=&{channelType}&chatId=${chatId}&groupId={groupId}&hostClientType={hostClientType}&isFullScreen={isFullScreen}&subEntityID={subEntityID}&teamId={teamId}&teamType={teamType}&theme={theme}&userTeamRole={userTeamRole}` <br />
+   **Website URL**: `https://apps.powerapps.com/play/<your app ID>?source=teamsopenwebsite&locale={locale}&channelId={channelId}&channelType=&{channelType}&chatId=${chatId}&groupId={groupId}&hostClientType={hostClientType}&isFullScreen={isFullScreen}&subEntityID={subEntityID}&teamId={teamId}&teamType={teamType}&theme={theme}&userTeamRole={userTeamRole}`
 
    > [!div class="mx-imgBorder"] 
    > ![Configuration URL](./media/personal-configuration-url.png "Configuration URL")

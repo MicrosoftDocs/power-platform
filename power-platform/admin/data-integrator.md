@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 05/15/2019
+ms.date: 02/20/2020
 ms.author: sabinn
 search.audienceType: 
   - admin
@@ -69,7 +69,7 @@ Before you can create a data integration project, you must provision a connectio
 
 **To create a connection**
 
-1. Go to [Power Apps](https://web.powerapps.com).
+1. Go to [Power Apps](https://make.powerapps.com).
 
 2. Under Data, select **Connections** and then select **New connection**.
 

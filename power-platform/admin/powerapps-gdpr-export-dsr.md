@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 02/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
 The “right of data portability” allows a data subject to request a copy of his or her personal data in an electronic format (that is, a structured, commonly used, machine readable and interoperable format) that may be transmitted to another data controller:
 
-* Website access: [Power Apps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Website access: [Power Apps portal](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell access: Power Apps [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448), [Admin cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
 
@@ -42,17 +42,17 @@ Power Apps user settings, user-app settings, and notifications | | App creator: 
 
 > ** With the introduction of Common Data Service, if a database is created within the environment, environment permissions and model-driven app permissions are stored as records within the Common Data Service database environment. For guidance on how to respond to DSR requests for users that use Common Data Service, see [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md).
 
-> *** An administrator can access these resources from the [Power Apps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) only if the owner of the resource has explicitly granted him or her access. If the administrator has not been granted access, he or she will need to leverage the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
+> *** An administrator can access these resources from the [Power Apps portal](https://make.powerapps.com) only if the owner of the resource has explicitly granted him or her access. If the administrator has not been granted access, he or she will need to leverage the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804).
 
 ## Prerequisites
 
 ### For users
-Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448).
+Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps portal](https://make.powerapps.com) or [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448).
 
 ### For admins
 To perform the administration operations outlined in this document using the Power Apps Admin center, Power Automate Admin Center, or [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804), you'll need the following:
 
-* A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://web.powerapps.com/trial](https://web.powerapps.com/trial). Trial licenses can be renewed if they've expired.
+* A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
 * [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user’s resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
@@ -128,7 +128,7 @@ With the introduction of the Common Data Service, if a database is created withi
 ## Step 3: Export personal data contained within canvas apps created by the user
 
 ### Power Apps portal
-A user can export an app from the [Power Apps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). For step-by-step instructions on how to export a canvas app, see [Exporting a canvas app](environment-and-tenant-migration.md#exporting-a-canvas-app).
+A user can export an app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export a canvas app, see [Exporting a canvas app](environment-and-tenant-migration.md#exporting-a-canvas-app).
 
 ### Power Apps Admin center
 An administrator can export apps created by a user starting from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
@@ -149,7 +149,7 @@ An administrator can export apps created by a user starting from the [Power Apps
 
     ![Give a user access](./media/powerapps-gdpr-export-dsr/grant-access.png)
 
-5. Once you have access to each of the user’s apps you can export a canvas app from the [Power Apps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). For step-by-step instructions on how to export an app, see [Exporting a canvas app](environment-and-tenant-migration.md#exporting-a-canvas-app).
+5. Once you have access to each of the user’s apps you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](environment-and-tenant-migration.md#exporting-a-canvas-app).
 
 ### PowerShell cmdlets for admins
 Administrators can export apps created by a user by using the **Get-AdminApp** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
@@ -276,7 +276,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 ~~~~
  
 ## Step 9: Export Power Apps Notifications, User Settings, and User-App Settings
-Power Apps sends several types of notifications to users, including when an app is shared with them and when a Common Data Service export operation has completed. A user’s notification history is visible to them within the [Power Apps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Power Apps sends several types of notifications to users, including when an app is shared with them and when a Common Data Service export operation has completed. A user’s notification history is visible to them within the [Power Apps portal](https://make.powerapps.com).
 
 Power Apps also stores several different user preferences and settings that are used to deliver the Power Apps runtime and portal experiences, including when a user last opened an application, pinned an app, etc.
 
@@ -300,9 +300,9 @@ Get-AdminPowerAppsUserDetails -WriteToFile -OutputFilePath "UserDetails.json" -U
 ## Step 10: Export personal data contained for a user-stored gateway or in the user’s gateway permissions
 
 ### Power Apps Portal
-Users can export the personal data stored within the gateway service from the [Power Apps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) by following these steps:
+Users can export the personal data stored within the gateway service from the [Power Apps portal](https://make.powerapps.com) by following these steps:
 
-1. From the [Power Apps portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), within the default environment for your tenant, select **Gateways**, and then select **Details** for each gateway to which you have access.
+1. From the [Power Apps portal](https://make.powerapps.com), within the default environment for your tenant, select **Gateways**, and then select **Details** for each gateway to which you have access.
 
     ![Gateway landing page](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
 
