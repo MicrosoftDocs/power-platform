@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 
-Multiple charts give you graphical views of the trends and breakdowns in your bot's topics. These charts are powered by AI technology that highlights the topics that have the greatest impact on your bot's performance.
+Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics with the greatest impact on your bot's performance.
        
        
 >

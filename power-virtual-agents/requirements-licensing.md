@@ -30,7 +30,7 @@ For more information about Power Virtual Agents licensing, see the [licensing gu
 > To acquire a Power Virtual Agents user license you need to use the non-preview version of the Admin portal. Ensure the **Try the new admin center** setting is turned off.
   
 ## Buy tenant license
-You can purchase Power Virtual Agents licenses for your organization by going to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx). You'll need to sign in with an admin account to buy licenses.
+Purchase licenses for your organization by going to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx). You'll need to sign in with an admin account to buy licenses.
 
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
@@ -42,7 +42,7 @@ You can purchase Power Virtual Agents licenses for your organization by going to
 
 ## Acquire user licenses
 
-1. After you have purchased a Power Virtual Agent license, you need to acquire user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing** and select **Purchase services**.
+1. After you've purchased a Power Virtual Agent license, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing** and select **Purchase services**.
 
 2. Scroll down to the **Add-ons** section.
 
@@ -66,7 +66,7 @@ You can purchase Power Virtual Agents licenses for your organization by going to
 5. Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
 
   > [!NOTE]
-  > To simplify user license management you can assign licenses to an Azure Active Directory (AAD) security group. For more information see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
+  > To simplify user license management you can assign licenses to an Azure Active Directory (AAD) security group. For more information, see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 
 The users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).

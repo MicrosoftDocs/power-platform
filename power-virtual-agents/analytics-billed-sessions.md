@@ -26,7 +26,7 @@ The capacity isn't reported at the tenant level, but can be seen for each indivi
 
     ![Billed session view](media/analytics-billed-sessions.png)
 
-You can change the date range to filter the **Total billed sessions over time** chart to a specific period. You can also see the total billed sessions, as well as the trend percentage, next to the chart of sessions.
+You can change the date range to filter the **Total billed sessions over time** chart. You can also see the total billed sessions and trend percentage next to the chart.
 
 ## Definition of a billed session
 
