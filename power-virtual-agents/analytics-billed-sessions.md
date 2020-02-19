@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 When you purchase a license you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
 
-The capacity isn't reported at the tenant level, but can be seen for each individual bot. 
+The consumption of the capacity isn't reported at the tenant level, but can be seen for each individual bot. 
 
 **Find the number of billed sessions for your bot:**
 
@@ -52,7 +52,7 @@ The session ends for one of the following reasons:
 ## Frequently asked questions
 
 ### What is the difference between sessions, engaged sessions, and billed sessions?
-The number of **billed sessions** is a unit used to measure capacity, and is defined when you purchase a license. 
+The number of **billed sessions** is a unit used to measure capacity, and is allocated when you purchase a license. 
 
 **Total sessions** and **engaged sessions** are metrics used to determine how efficient a bot is in addressing a user's questions. 
 
