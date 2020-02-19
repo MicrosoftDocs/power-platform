@@ -64,4 +64,4 @@ Currently you can only see billed sessions for a single bot.
 
 ### If I am on a trial subscription but have some billed sessions, do I have to pay?
 
-If you see billed sessions for your bot, it doesn't mean you'll be charged. For example, signing up for the [trial offer](sign-up-individual.md) will provide you with a number of billed sessions included in the trial.
+If you see billed sessions, it doesn't mean you'll be charged. For example, the [trial offer](sign-up-individual.md) provides you with a number of billed sessions.
