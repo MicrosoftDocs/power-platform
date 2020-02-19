@@ -14,9 +14,9 @@ ms.collection: virtual-agent
 
 # View billed sessions for Power Virtual Agents
 
-When you purchase a license you gain capacity for the specified number of billed sessions. The capacity is pooled across the entire tenant and any user who has access to Power Virtual Agents can build bots that use this capacity. 
+When you purchase a license you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
 
-The capacity is currently not reported at the tenant level, but is available for each individual bot within the analytics section of Power Virtual Agents.
+The capacity isn't reported at the tenant level, but can be seen for each individual bot. 
 
 **Find the number of billed sessions for your bot:**
 
@@ -37,7 +37,7 @@ The billed session begins when a user topic is triggered (see the [Use system an
 The session ends for one of the following reasons: 
 
 - The user ends the chat sessions.  
-    When the bot doesn't receive a new message for more than 30 minutes, it is considered to be closed.
+    When the bot doesn't receive a new message for more than 30 minutes, it's considered closed.
 
 - The session is longer than 60 minutes.  
     The first message that occurs after 60 minutes will start a new session.
@@ -52,7 +52,7 @@ The session ends for one of the following reasons:
 ## Frequently asked questions
 
 ### What is the difference between sessions, engaged sessions, and billed sessions?
-The number of **billed sessions** is a unit we use to measure capacity, and is defined when you purchase a license. 
+The number of **billed sessions** is a unit used to measure capacity, and is defined when you purchase a license. 
 
 **Total sessions** and **engaged sessions** are metrics used to determine how efficient your bot is in addressing your user's questions. 
 
@@ -64,4 +64,4 @@ Currently you can only see billed sessions for a single bot.
 
 ### If I am on a trial subscription but have some billed sessions, does it mean I have to pay?
 
-If you see billed sessions for your bot, it does not mean you will be charged. If you signed up for our [trial offer](sign-up-individual.md) you have a number of billed sessions included with the trial.
+If you see billed sessions for your bot, it doesn't mean you'll be charged. For example, signing up for the [trial offer](sign-up-individual.md) will provide you with a number of billed sessions included in the trial.

@@ -15,7 +15,10 @@ ms.collection: virtual-agent
 
 # Assign licenses and manage access to Power Virtual Agents
 
-To create and manage bots with Power Virtual Agents, you need a license for each user (a "per user license"), as well as a license for your organization (a "tenant license"). 
+To create and manage bots with Power Virtual Agents, you need:
+
+- A license for each user, also known as a "per user license".
+- A license for your organization, also known as a "tenant license". 
 
 >[!NOTE]
 >End users of your bot don't need a special license. After you publish your bot, anyone who can access where you published the bot can interact with the bot.
@@ -27,7 +30,7 @@ For more information about Power Virtual Agents licensing, see the [licensing gu
 > To acquire a Power Virtual Agents user license you need to use the non-preview version of the Admin portal. Ensure the **Try the new admin center** setting is turned off.
   
 ## Buy tenant license
-You can purchase Power Virtual Agents licenses for your organization on the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) (you will need to sign in with an admin account).
+You can purchase Power Virtual Agents licenses for your organization by going to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx). You'll need to sign in with an admin account to buy licenses.
 
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
@@ -51,11 +54,11 @@ You can purchase Power Virtual Agents licenses for your organization on the [Mic
 
 2. On the navigation pane, expand the **Users** menu and then select **Active users**.
 
-    ![Expand Users, then select Active users](media/licensing-menu-users-legacy.jpg)
+    ![Expand Users, then select Active users](media/licensing-menu-users.png)
 
 3. Select the name, and then select **Manage product licenses**.
 
-   ![Select a user and then manage product licenses](media/license-manage-legacy.png)
+   ![Select a user and then manage product licenses](media/licensing-manage.png)
 
 
 4. On the flyout panel, select the checkbox next to **Power Virtual Agents user license**. Select **Save changes**. 
@@ -71,13 +74,13 @@ The users can now sign in to the [Power Virtual Agents portal](https://powerva.m
 ## Trial plans
 Users in your organization can try Power Virtual Agents for a limited time period.
 
-You can disable or enable the ability for users to sign up for a trial themselves by modifying the **AllowAdHocSubscriptions** flag in your organization settings. For mMore information see [What is self-service sign-up for Azure Active Directory?](/azure/active-directory/users-groups-roles/directory-self-service-signup). 
+You can [disable or enable the ability for users to sign up for a trial themselves](/azure/active-directory/users-groups-roles/directory-self-service-signup) by modifying the **AllowAdHocSubscriptions** flag in your organization settings. 
 
 
 ## Subscription capacity
-When you purchase a license you gain capacity for the specified number of billed sessions. The capacity is pooled across the entire tenant and any user who has access to Power Virtual Agents can build bots that use this capacity. 
+When you purchase a license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
 
-The capacity is currently not reported at the tenant level, but is available for each individual bot. See the [View billed sessions for Power Virtual Agents](analytics-billed-sessions.md) topic for more information on billed sessions and how to analyze usage.
+The capacity isn't reported at the tenant level, but [can be seen for each individual bot](analytics-billed-sessions.md).
 
 ## Using Power Automate with a Power Virtual Agents license
 [See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
