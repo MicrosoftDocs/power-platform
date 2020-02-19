@@ -394,6 +394,8 @@
         items: 
         - name: Control user access to environments
           href: control-user-access.md  
+        - name: Restrict cross-tenant access 
+          href: cross-tenant-restrictions.md
         - name: Data loss prevention policies 
           href: wp-data-loss-prevention.md
         - name: Create a DLP policy
