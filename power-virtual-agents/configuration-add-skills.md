@@ -15,14 +15,12 @@ ms.collection: virtual-agent
 
 # Extend your bot using Bot Framework Skills
 
-[This topic is pre-release documentation and is subject to change.]
+Power Virtual Agents enables you to extend your bot using [Bot Framework Skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0). If you have already built and deployed bots in your organization (using Bot Framework SDK and pro-code tools) for specific scenarios, you can convert those bots into a Skill and register that Skill in a Power Virtual Agents bot.
 
-Power Virtual Agents enables you to extend your bot using Azure Bot Framework Skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a Skill and embed the Skill within a Power Virtual Agents bot.
-
-This article is intended for system administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). After a Skill has been registered, bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
+This article is intended for system administrators or IT professionals who are familiar with [Bot Framework Skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0). After a Skill has been registered with Power Virtual Agents bot, authors can seamlessly [trigger Skill actions in conversation](advanced-use-skills.md).
 
 ## Compare use of Flows and Skills actions
-The following table will help you determine when to use Skills for a conversation.
+The following table will help determine when to use Skills for a conversation.
 
 |    | **Flow actions** | **Skill actions** |
 | -- | -- | -- |
@@ -36,7 +34,7 @@ The following table will help you determine when to use Skills for a conversatio
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
 >[!NOTE]
->Power Virtual Agents only supports Skills built using [Bot Framework Skills package version 4.5](https://www.nuget.org/packages/Microsoft.Bot.Builder.Skills/4.5.1)
+>Power Virtual Agents only supports Skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0)
 
 Before registering the Skill, provide the bot's ID to your Skills developer to authorize the bot to call actions in the Skill.
 
@@ -70,7 +68,7 @@ Before registering the Skill, provide the bot's ID to your Skills developer to a
 1. Select **Next** to begin the [validation process](#validation-performed-during-registering-a-skill). When successful, your Skill is added to your bot. You can now [use this Skill in your topics](advanced-use-skills.md). 
 
 ## Compliance considerations
-To protect user's privacy, we restrict users from adding Skills that are deployed outside of the signed-in user's Azure tenant. However, your bot may send customer information to a Skill if your Skill and bot are deployed in different regions.
+To protect user's privacy, we require Skills to be registered as an app in the signed-in user's Azure Active Directory tenant.
 
 ### Validation performed during registering a Skill
 
