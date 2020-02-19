@@ -17,13 +17,21 @@ ms.collection: virtual-agent
 
 [This topic is pre-release documentation and is subject to change.]
 
-Power Virtual Agents enables you to author personalized conversations and perform actions on behalf of your users. With single sign-on support, bot can be configured to not prompt for credentials if the user has already signed into the website where the bot is deployed.
+Power Virtual Agents enables you to author personalized conversations and perform actions on behalf of your users. With single sign-on support, bots can be configured to automatically sign-in the user if the user has already signed into the page where bot is deployed (e.g. Coporate Intranet, Applications, etc.)
 
 > [!IMPORTANT] 
-> Before using this feature, you must follow the [end-user authentication configuration instructions](configuration-end-user-authentication.md).
+> Before using this feature, you must follow the [end-user authentication configuration instructions](configuration-end-user-authentication.md) and [deploy a custom canvas](extend-custom-canvas-connect.md)
 
-## Configure Azure Active Directory
+## Overview
+The following illustration gives you an overview of how Single Sign-on works end-to-end.
 
-## Custom canvas changes
+[Illustration goes here]
 
-## Bot Framework Skill changes
+1. 
+
+## Create an app registration in Azure Active Directory
+
+## Update your custom canvas to intercept sign-in prompts
+
+## Compliance considerations
+Security and privacy considerations - scope, token caching, etc.
