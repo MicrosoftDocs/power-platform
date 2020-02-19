@@ -20,7 +20,7 @@ ms.collection: virtual-agent
 
 The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
-![The Analytics summary page](media/overview-analytics.png)
+![The Analytics summary page](media/overview-analytics_v2.png)
 
 The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
