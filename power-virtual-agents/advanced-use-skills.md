@@ -16,8 +16,6 @@ ms.collection: virtual-agent
 
 # Use Microsoft Bot Framework Skills in Power Virtual Agents
 
-[This topic is pre-release documentation and is subject to change.]
-
 Power Virtual Agents enables you to extend your bot using Microsoft Bot Framework Skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a Skill and embed the Skill within a Power Virtual Agents bot.
 
 ## Add a Skill to bot conversations
