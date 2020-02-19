@@ -87,12 +87,12 @@
           href: environments-overview.md
         - name: Create environments
           href: create-environment.md
+        - name: Control environment creation
+          href: control-environment-creation.md
         - name: Delete and recover environments
           href: delete-environment.md
         - name: Automatic environment cleanup 
           href: automatic-environment-cleanup.md
-        - name: Control environment creation
-          href: control-environment-creation.md
         - name: Back up and restore environments
           href: backup-restore-environments.md
         - name: Create a database in Power Apps
