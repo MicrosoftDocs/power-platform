@@ -23,8 +23,7 @@ To create and manage bots with Power Virtual Agents, you need:
 >[!NOTE]
 >Users of your bot don't need a special license. After you publish your bot, anyone who can access where you published the bot can interact with the bot.
 
-For more information about Power Virtual Agents licensing, see the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
-
+More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 > [!Note]
 > To acquire a Power Virtual Agents user license, you need to use the non-preview version of the admin center. Ensure the **Try the new admin center** setting is turned off.
@@ -64,7 +63,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
 
   > [!NOTE]
-  > To simplify user license management, you can assign licenses to an Azure Active Directory (Azure AD)<!--from editor: Via Cloud Style Guide--> security group. For more information, see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
+  > To simplify user license management, you can assign licenses to an Azure Active Directory (Azure AD)<!--from editor: Via Cloud Style Guide--> security group. More information: [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
 The users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
 
