@@ -50,7 +50,7 @@ A session ends for one of the following reasons:
 
 ## Frequently asked questions
 
-### What's the difference between total <!--edit okay? To match the text below.-->sessions, engaged sessions, and billed sessions?
+### What's the difference between total sessions, engaged sessions, and billed sessions?
 
 The number of **billed sessions** is used to measure capacity, and is allocated when you purchase a license. 
 
