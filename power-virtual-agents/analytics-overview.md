@@ -16,28 +16,26 @@ ms.collection: virtual-agent
 
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 
-Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics with the greatest impact on your bot's performance.
-       
-       
+Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.
+
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mNOu]
 >
 
 ## Analytics in Power Virtual Agents
 
-The analytics section is broken down into a number of pages to give you multiple ways to understand bot performance.
+The analytics section is divided into<!--suggested--> a number of pages to give you multiple ways to understand bot performance.
 
 >[!NOTE]
->While transcripts are available immediately, the analytics dashboards are updated every hour so there will be some delay before you see all data.
+>Although<!--via Writing Style Guide --> transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
 
-**View analytics:**
+#### View analytics
 
-1. In Power Virtual Agents, select **Analytics** on the side navigation pane.
+* In Power Virtual Agents, select **Analytics** on the side navigation pane.
+<!--alt text suggested. We need to have it (though Acrolinx doesn't seem to think so) -->
+![Opening the Analytics dashboard](media/analytics-open.png "Opening the Analytics dashboard")
 
-![](media/analytics-open.png)
-
-## See also
-
+### See also
 
 Topic | Description
 - | -
