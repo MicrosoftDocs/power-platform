@@ -26,7 +26,7 @@ There are three stages for using capacity add-ons:
 3. Consume: once allocated, you can consume the capacity add-ons.
 
 > [!TIP]
-> Consider purchasing Power Apps per app plans which allow individual users to run two applications on a single portal. See [About Power Apps per app plans](about-powerapps-perapp.md).
+> Consider purchasing Power Apps per app plans which allow individual users to run two applications and one portal. See [About Power Apps per app plans](about-powerapps-perapp.md).
 
 ## View capacity add-ons in Power Platform Admin center
 
