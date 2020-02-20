@@ -24,15 +24,15 @@ Multiple charts show you trends and usage for your bot's topics. These charts us
 
 ## Analytics in Power Virtual Agents
 
-The analytics section is divided into<!--suggested--> a number of pages to give you multiple ways to understand bot performance.
+The analytics section is divided into a number of pages to give you multiple ways to understand bot performance.
 
 >[!NOTE]
->Although<!--via Writing Style Guide --> transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
+>Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
 
 #### View analytics
 
 * In Power Virtual Agents, select **Analytics** on the side navigation pane.
-<!--alt text suggested. We need to have it (though Acrolinx doesn't seem to think so) -->
+
 ![Opening the Analytics dashboard](media/analytics-open.png "Opening the Analytics dashboard")
 
 ### See also
