@@ -1,7 +1,7 @@
 ---
 title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 02/07/2020
+ms.date: 02/20/2020
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -24,6 +24,9 @@ There are three stages for using capacity add-ons:
 1. Purchase: you buy individual capacity add-ons. For purchasing information, see the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 2. Allocate: assign the purchased add-ons to an environment.
 3. Consume: once allocated, you can consume the capacity add-ons.
+
+> [!TIP]
+> Consider purchasing Power Apps per app plans which allow individual users to run two applications on a single portal. See [About Power Apps per app plans](about-powerapps-perapp.md).
 
 ## View capacity add-ons in Power Platform Admin center
 
@@ -77,3 +80,6 @@ The following admins will be able to allocate add-on capacity in the Power Platf
 - Office 365 Global admins
 - Dynamics 365 service admins
 - Power Platform service admins
+
+### See also
+[About Power Apps per app plans](about-powerapps-perapp.md)
