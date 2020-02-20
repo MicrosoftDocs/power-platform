@@ -70,16 +70,40 @@ Let’s look at an example if we were to create a new tenant wide DLP policy tha
 > [!div class="mx-imgBorder"] 
 > ![](media/example-dlp-policy.png "Example DLP policy")
 
-Users accessing a PowerApp or Power Automate impacted by the DLP policy will see a message informing of the DLP policy conflict. As an administrator you should have a process and plan in place to handle these types of support needs if you are using DLP policies.
+
+## Impact of a change in DLP policy on existing apps and flows
+Consider the following table.
+
+> [!div class="mx-tableFixed"]
+> |         |New  |Existing  |
+> |---------|---------|---------|
+> |**Power Apps**   | Users trying to create a new Power App that violate DLP policies will not be allowed to do so.        | Power Apps do not enforce new DLP policies after the app has been created and published. The Power Apps app won’t check for DLP policy violations until the maker edits the canvas app again, removes one of the connections, and attempts to re-add it since DLP policies only restrict users from adding new connections.        |
+> |**Power Automate**     | Users will not be allowed to create a new Flow that violates a DLP policy.        |When a flow executes the trigger, the Power Automate runtime checks to see if the flow is compliant with all existing DLP policies. If it violates any DLP policy then the Flow will be disabled.         |
+
+Users creating or editing a resource impacted by the DLP policy will see a message informing of the DLP policy conflict. As an administrator you should have a process and plan in place to handle these types of support needs if you are using DLP policies.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/dlp-policy-conflict.png "DLP policy conflict")
 
-One thing to keep in mind, DLP policies created for a connector do not understand that that connector could be configured to talk to Dev, Test and production, etc. When you configure a DLP policy it is all or nothing. So, if you want to allow the connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won’t help you restrict that. Another way to say the same thing, is DLP policies are Connector aware, but do not control the connections that are made using the connector.
+Using the DLP Editor in the [Center of Excellence starter kit](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit), you can see the impact a change of DLP policies would have on existing apps and can mitigate the risk by reaching out to the maker.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/dlp-editor.png "DLP Editor")
+
+DLP policies created for a connector do not understand that that connector could be configured to talk to Dev, Test and production, etc. When you configure a DLP policy it is all or nothing. So, if you want to allow the connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won’t help you restrict that. DLP policies are Connector aware, but do not control the connections that are made using the connector.
+
+## Custom connector and HTTP
+
+By default, custom connectors and the HTTP connector are not part of the standard configuration capabilities of DLP policies. Using templates or PowerShell you can configure DLP to include these connectors. For more information, see [Introducing HTTP and Custom Connector Support for Data Loss Prevention Policies](https://flow.microsoft.com/blog/introducing-http-and-custom-connector-support-for-data-loss-prevention-policies/).
+
+The [Center of Excellence starter kit](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit) has an app that allows users to update policies for these connectors as well, this provides a UI front-end to the PowerShell scripts.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/dlp-customizer.png "DLP Customizer")
 
 ## Strategies for creating DLP policies
 
-As an administrator taking over an environment or starting to support use of Power Apps and Power Automate DLP policies should be something you evaluate and create within the first 30 days. This ensures a base set of policies are in place before too many users start creating connections that might violate your policies.
+As an administrator taking over an environment or starting to support use of Power Apps and Power Automate DLP policies should be one of the first things you set up. This ensures a base set of policies is in place, and you can then focus on handling exceptions and creating targeted DLP policies that implement these exceptions once approved.
 
 For smaller environments where the users are highly capable and are trusted you could start out with no DLP policies taking only the default options. This is the most flexible option and can be changed at any time. Keep in mind introducing more restrictive policies later could conflict with existing assets. These conflicts could have business impact when existing apps and flows stop working until either the app / flow is brought into compliance or the DLP policy relaxed.
 
