@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 02/20/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -26,13 +26,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 ### Prerequisites
 
--  You have one of the following Office 365 admin roles to enter support requests:
- 
-   - Global
-   - Tenant
-   - Service
-   - Support
-   - Billing
+-  You have a security role that is enabled for creating support requests such as an Office 365 Global admin or Service support admin.
 
 -  For the following [support plans](https://www.microsoft.com/dynamics365/support):
    
