@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 02/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -59,24 +59,25 @@ The following matrix shows what management is possible with the various service 
 |---------|---------|---------|---------|---------|
 |**POWER PLATFORM** |||||  
 |**Environments** |||||  
-|Create|Yes|Yes|<sup>*</sup>Yes|No|  
-|Backup and restore|Yes|Yes| <sup>*</sup>Yes|No|  
-|Copy |Yes|Yes|<sup>*</sup>Yes|No|  
+|Full access<sup>1</sup> |Yes|Yes|Yes<sup>2</sup>|No|  
+|Create|Yes|Yes|Yes<sup>2</sup>|No|  
+|Backup and restore|Yes|Yes| Yes<sup>2</sup>|No|  
+|Copy |Yes|Yes|Yes<sup>2</sup>|No|  
 |**Analytics**|||||
-|Capacity|Yes|Yes|<sup>*</sup>Yes|No|  
-|Capacity allocation (Power Apps per app plans, Power Automate, AI Builder, and Portal) |Yes|Yes|<sup>*</sup>Yes|No|
-|Common Data Service|Yes|Yes|<sup>*</sup>Yes|No|  
-|Power Automate|Yes|Yes|<sup>*</sup>Yes|No|  
-|Power Apps|Yes|Yes|<sup>*</sup>Yes|No|  
+|Capacity|Yes|Yes|Yes<sup>2</sup>|No|  
+|Capacity allocation (Power Apps per app plans, Power Automate, AI Builder, and Portal) |Yes|Yes|Yes<sup>2</sup>|No|
+|Common Data Service|Yes|Yes|Yes<sup>2</sup>|No|  
+|Power Automate|Yes|Yes|Yes<sup>2</sup>|No|  
+|Power Apps|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Help + support**|||||
-|Create and access support requests|Yes|Yes|<sup>*</sup>Yes|No|  
+|Create and access support requests|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data integration**|||||
-|Create new project and connection set|Yes|Yes|<sup>*</sup>Yes|No|  
+|Create new project and connection set|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data gateways**|||||
-|View gateways|Yes|Yes|<sup>*</sup>Yes|No|  
+|View gateways|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data policies**|||||
-|View and manage tenant policies|Yes|Yes|<sup>*</sup>Yes|No|  
-|View and manage environment policies|Yes|Yes|<sup>*</sup>Yes|No|  
+|View and manage tenant policies|Yes|Yes|Yes<sup>2</sup>|No|  
+|View and manage environment policies|Yes|Yes|Yes<sup>2</sup>|No|  
 ||||||
 |**POWER BI**|||||  
 |Manage the Power BI tenant|Yes|Yes|No|Yes|  
@@ -87,7 +88,10 @@ The following matrix shows what management is possible with the various service 
 |Add security roles|Yes|No|No|No|  
 |Add licenses|Yes|No|No|No|  
 
-<sup>*</sup>If a security group is assigned to the environment and the user with this role added to the security group
+<sup>1</sup>Equivalent permission level to a System Administrator. Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment.
+
+<sup>2</sup>If a security group is assigned to the environment and the user with this role added to the security group
+
 
 ### See also  
 [Environments overview](environments-overview.md)<br />
