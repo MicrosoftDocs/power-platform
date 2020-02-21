@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2020
+ms.date: 02/21/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +20,6 @@ search.app:
 By default, all Office 365 Global administrators and Power Platform service administrators who do not have a license are granted the following two levels of permission in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
   
 -   System administrator security role  
-  
 -   Administrative access mode  
   
 The System administrator security role is typically granted to administrators giving them unrestricted access to the administrative (Settings) areas, which are used for managing and configuring features of model-driven apps in Dynamics 365.  
@@ -42,9 +41,9 @@ To give these administrators access to additional areas, such as the Sales, Mark
    > [!IMPORTANT]
    > Unlicensed [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Global and Power Platform service administrators have access to the *administrative* areas. However, if the administrator also needs access to additional areas you must select a license for the user.  
   
-5. Next to **Roles**, click **Edit** and then click either **Global administrator** or **Customized administrator** > **Dynamics 365 service administrator**. For more information about these roles, see [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504).  
+5. Select **Manage roles**, and then select either **Global administrator** or **Show all by category** > **Power Platform admin**. For more information about these roles, see [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504).  
   
-6. Enter an alternate email address, and then click **Save**.  
+6. Select  **Save changes**.  
   
 ### See also  
-
+[Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)
