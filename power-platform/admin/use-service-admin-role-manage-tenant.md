@@ -26,7 +26,7 @@ There are two Power Platform related service admin roles you can assign to provi
 The Dynamics 365 service admin can:
 
 - Sign in to and manage multiple environments. If an environment uses a security group, a service admin would need to be added to the security group in order to manage that environment. Not assigning to an in place security group essentially locks these admins out of any admin management. 
-- Perform admin functions in Power Platform because they have the system admin role. The service admin must be assigned a license.  
+- Perform admin functions in Power Platform because they have the system admin role.  
 
 ## Power Platform administrator 
   
