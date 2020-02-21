@@ -27,6 +27,11 @@ You can use environments in a number of different ways, depending on your busine
 
 You can also build all your bots in a single environment if you don't need or want to use different ones.
 
+In order to achieve the best performance for your bots, we don't recommend to build production bots in the default environment. For bots that you wish to deploy to customers, please use a non-default production environment. See steps below on how to create an environment. 
+
+> [!NOTE]
+> In order to create a bot, the environment you want to use needs to have a CDS environment. 
+
 ## Create a new environment for your bots
 
 When you first sign in and create a new bot, an default environment is created for you. 
@@ -79,7 +84,7 @@ More information:
 - [Power Platform - Configure environment security](/power-platform/admin/database-security)
 
 ## Trial environments
-Trial environments expire after 30 days. When the environment expires, all the bots in the environment will be deleted and the data associated with it, including any flows and resources you have been using, will be lost.
+When you trial Power Virtual Agents, you are able to create trial environments that expire after 30 days. When the environment expires, all the bots in the environment will be deleted and the data associated with it, including any flows and resources you have been using, will be lost.
 
 If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Power Virtual Agents portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
 
