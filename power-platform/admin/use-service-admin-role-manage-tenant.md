@@ -33,7 +33,7 @@ The Dynamics 365 service admin can:
  Users with the Power Platform admin role can:  
   
 - Sign in to and manage multiple environments. Power Platform admins **are not affected** by security group membership and can manage environments even if not added to an environment's security group.
-- Perform admin functions in Power Platform because they have the system admin role. The Power Platform admin must be assigned a license.  
+- Perform admin functions in Power Platform because they have the system admin role.
   
 Both service admin roles cannot do functions restricted to the Microsoft 365 global admin such as manage user accounts, manage subscriptions, access settings for Microsoft 365 apps like Microsoft Exchange or Microsoft SharePoint.  
   
@@ -63,6 +63,7 @@ The following matrix shows what management is possible with the various service 
 |Create|Yes|Yes|Yes<sup>2</sup>|No|  
 |Backup and restore|Yes|Yes| Yes<sup>2</sup>|No|  
 |Copy |Yes|Yes|Yes<sup>2</sup>|No|  
+|Ability to exclude access from selected environments (using security groups) |No|No|Yes|Yes|  
 |**Analytics**|||||
 |Capacity|Yes|Yes|Yes<sup>2</sup>|No|  
 |Capacity allocation (Power Apps per app plans, Power Automate, AI Builder, and Portal) |Yes|Yes|Yes<sup>2</sup>|No|
