@@ -66,7 +66,7 @@ After running the extraction wizard, you'll be presented with a series of sugges
 >[!IMPORTANT]
 >You won't be able to add more URLs while the extraction is happening.
 
-    ![](media/suggested-web-wait.png)
+    ![A message that says Getting your suggestions. This may take several minutes appears at the top of the page](media/suggested-web-wait.png)
 
 >[!TIP]
 >You can add multiple webpages but we recommend that you don't include more than a few at a time to keep it manageable.
@@ -102,6 +102,7 @@ Once the extraction process has completed, you'll see the successfully extracted
     
 2. You can also add or delete multiple topic suggestions at a time. If you select multiple rows, you'll see options to **Add to topic** or **Delete**.
 
+    ![The tabulated list has three different items selected, indicated by checkmarks next to each selected item](media/suggested-web-multi.png)
 
 ## Enable topics in your bot
 
