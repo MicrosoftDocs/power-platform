@@ -18,9 +18,9 @@ ms.collection: virtual-agent
 
 You can efficiently leverage existing content that already exists on webpages when creating a Power Virtual Agents bot.  This capability is useful if you already have help or support content, such as FAQ pages or supports sites. 
 
-Rather than having to design a whole new topic architecture, plan and write the content, copy it manually into individual topics, and then configure the conversation flow, you can utilize AI-assisted authoring to automatically extract and insert relevant content from existing web content into your bots.
+Rather than manually copy-pasting or recreating content, you can utilize AI-assisted authoring to automatically extract and insert relevant content from existing web content into your bot.
 
-The feature uses AI to determine the structure and content on a web page. It isolates content blocks that pertain to single issues and classifies them into topics. It then identifies what the [trigger phrase (or "question") and what the **Message** node (or "answer")](authoring-create-edit-topics.md) should be for each topic.
+The feature uses AI to determine the structure and content on a webpage. It isolates content blocks that pertain to single issues and classifies them into topics. It then identifies what the [**Trigger phrase** (or "question") and what the **Message** node (or "answer")](authoring-create-edit-topics.md) should be for each topic.
 
 There are three main steps to using the feature: 
 1. Extract content from FAQ or support pages.
@@ -33,16 +33,16 @@ You can [test the topics in the test chat](authoring-test-bot.md), but you'll ne
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mNOt]
 >
 
-## Extract content from web pages
+## Extract content from webpages
 
-To get suggestions from web pages, you first need to run the topic extraction wizard on the pages you want to use.
+To get suggestions from webpages, you first need to run the topic extraction wizard on the pages you want to use.
 
 After running the extraction wizard, you'll be presented with a series of suggested topics. Suggested topics won't be automatically added to your bot, but you can easily [add them individually or in bulk](#add-suggested-topics-to-an-existing-bot).
 
 >[!IMPORTANT]
->The feature expects the websites to be in the form of FAQ pages or support sites. Other types of pages that don't have that structure may not work as expected.
+>The feature expects the webpages to be in the form of FAQ pages or support sites. Other types of pages that don't have that structure may not work as expected.
 
-**Extract content from existing web pages:**
+**Extract content from existing webpages:**
 1. Select **Topics** on the side navigation pane.
 
     ![](media/menu-topics.png)
@@ -55,22 +55,22 @@ After running the extraction wizard, you'll be presented with a series of sugges
 
     ![](media/suggested-web-get.png)
 
-5. Enter each web page you want to extract content from and select **Add**. The URLs must be secure (they must start with *https://*).
+5. Enter each webpage you want to extract content from and select **Add**. The URLs must be secure (they must start with *https://*).
 
 6. You can delete any page by hovering near the end of the URL and selecting the delete icon.
 
     ![](media/suggested-web-wizard.png)
 
-7. When you're done adding pages, select **Start** to being the extraction process. This could take several minutes, depending on the complexity and number of web pages you added. A alert at the top of the screen will let you know the extraction is in process. You will not be able to add more URLs while extraction is happening.
+7. When you're done adding pages, select **Start** to begin the extraction process. This could take several minutes, depending on the complexity and number of webpages you added. An alert at the top of the screen will let you know the extraction is in process. You will not be able to add more URLs while extraction is happening.
 
     ![](media/suggested-web-wait.png)
 
 >[!TIP]
->You can add multiple websites but we recommend that you don't include more than a few at a time to keep it manageable.
+>You can add multiple webpages but we recommend that you don't include more than a few at a time to keep it manageable.
 
-Sometimes it may be impossible to extract content from a linked website (for example, the site you're referencing might be down). The tool provides explicit feedback about errors so that you can understand and address the issue.
+Sometimes it may be impossible to extract content from a linked webpage (for example, the site you're referencing might be down). The tool provides explicit feedback about errors so that you can understand and address the issue.
 
-After you've successfully extracted content, a number of suggestions should appear. You can now review these to determine which you want to add to your bot.
+After you've successfully extracted content, a number of suggestions will appear. You can now review these to determine which you want to add to your bot.
 
 ![](media/suggested-web-topics.png)
 
@@ -86,7 +86,7 @@ We recommend that you review and look at the extracted content first, so that yo
 
 2. Review the trigger phrases and suggested **Message** node. Note that each topic will end with a survey so your customers can identify if it was helpful or not. You can deal with the suggested topic in three ways:
     a. To make edits to the topic (which you may want to do to add to the trigger phrases, or change the answer in the **Message** node), select **Add to topics and edit**. This will [open that topic where you can edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics.md) to make changes to the conversation flow. This will also remove the topic from the list of suggested topics.
-    b. To directly add the suggested topic without making any changes, select **Add to topics**. This all add the topic and save it, but you'll stay on the list of suggested topics. This will also remove the topic from the list of suggested topics.
+    b. To directly add the suggested topic without making any changes, select **Add to topics**. This will add the topic and save it, but you'll stay on the list of suggested topics. This will also remove the topic from the list of suggested topics.
     c. To completely remove the suggestion, select **Delete suggestion**. This will delete it from the list of suggested topics and you'll need to run the extraction wizard again to get it back.
 
     ![](media/suggested-web-add-edit.png)
@@ -98,6 +98,9 @@ We recommend that you review and look at the extracted content first, so that yo
     b. To delete the suggested topic, select the **Delete** button. This will delete it from the list of suggested topics and you'll need to run the extraction wizard again to get it back.
 
     ![](media/suggested-web-quick.png)
+    
+2. You can also add or delete multiple topic suggestions at a time. If you select multiple rows, you'll see the options to either **Add to topic** or **Delete** in the banner at the top of the page.
+
 
 ## Enable topics in your bot
 
