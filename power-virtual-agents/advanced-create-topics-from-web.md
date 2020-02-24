@@ -63,13 +63,14 @@ After running the extraction wizard, you'll be shown the suggested topics. Sugge
 
 7. When you're done adding pages, select **Start** to begin the extraction process. The process can take several minutes, depending on the complexity and number of webpages you added. An alert at the top of the screen will let you know the extraction is in process. 
 
->[!IMPORTANT]
->You won't be able to add more URLs while the extraction is happening.
 
     ![A message that says Getting your suggestions. This may take several minutes appears at the top of the page](media/suggested-web-wait.png)
 
 >[!TIP]
 >You can add multiple webpages but we recommend that you don't include more than a few at a time to keep it manageable.
+
+>[!IMPORTANT]
+>You won't be able to add more URLs while the extraction is happening.
 
 The tool provides explicit feedback about errors so that you can understand and address the issue. For example, the site you're referencing might be down and you can't extract content.
 
@@ -85,7 +86,7 @@ Once the extraction process has completed, you'll see the successfully extracted
 
 1. Select the name of the suggested topic.
 
-2. Review the trigger phrases and suggested **Message** node. Each topic will end with a survey so your customers can identify if it was helpful or not. You can deal with the suggested topic in three ways:
+2. Review the trigger phrases and suggested **Message** node. Each topic will end with a survey so your customers can identify if it was helpful or not. You can deal with the suggested topic in three ways:  
     a. To make edits to the topic, select **Add to topics and edit**. [The topic will open, where you can edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics.md) to make changes to the conversation flow. The topic will also be removed from the list of suggested topics.
     b. To directly add the suggested topic without making any changes, select **Add to topics**. The topic is added and saved, but you'll stay on the list of suggested topics. The topic will also be removed from the list of suggested topics.
     c. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. Run the extraction wizard again to restore it.
@@ -94,7 +95,7 @@ Once the extraction process has completed, you'll see the successfully extracted
 
 **Add or delete suggested topics directly from the suggestions list:**
 
-1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete.
+1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete.  
     a. To add the topic to your bot, select the **Add to Existing topics** button. You won't see a preview of the topic, and the topic will be automatically removed from the list of suggested topics.
     b. To delete the suggested topic, select the **Delete** button. The topic will be deleted from the list of suggested topics. Run the extraction wizard again to restore it.
 
