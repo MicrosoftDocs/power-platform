@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # Create topics from existing support content on the web
 
-You can efficiently use existing content that already exists on webpages when creating a Power Virtual Agents bot.  This capability is useful if you already have help or support content, such as FAQ pages or supports sites. 
+You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you have help or support content, such as FAQ pages or supports sites. 
 
 Rather than manually copy-pasting or recreating content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing web content into your bot.
 
@@ -45,7 +45,7 @@ After running the extraction wizard, you'll be presented with a series of sugges
 **Extract content from existing webpages:**
 1. Select **Topics** on the side navigation pane.
 
-    ![](media/menu-topics.png)
+    ![The Topics menu item on the navigation pane](media/menu-topics.png)
 
 2. Go to the **Suggested** tab. 
 
@@ -53,18 +53,18 @@ After running the extraction wizard, you'll be presented with a series of sugges
 
 4. Click **Get started** or **Suggest topics** to open the suggestions extraction wizard. 
 
-    ![](media/suggested-web-get.png)
+    ![An empty Topics page, with a link to Get started or Learn more](media/suggested-web-get.png)
 
 5. Enter each webpage you want to extract content from and select **Add**. The URLs must be secure (they must start with *https://*).
 
 6. You can delete any page by hovering near the end of the URL and selecting the delete icon.
 
-    ![](media/suggested-web-wizard.png)
+    ![The Get topics wizard, requesting to add a URL, with Start and Cancel buttons](media/suggested-web-wizard.png)
 
 7. When you're done adding pages, select **Start** to begin the extraction process. The process can take several minutes, depending on the complexity and number of webpages you added. An alert at the top of the screen will let you know the extraction is in process. 
 
 >[!IMPORTANT]
->>You won't be able to add more URLs while the extraction is happening.
+>You won't be able to add more URLs while the extraction is happening.
 
     ![](media/suggested-web-wait.png)
 
@@ -75,30 +75,30 @@ The tool provides explicit feedback about errors so that you can understand and 
 
 After you've successfully extracted content, a number of suggestions will appear. You can now review these suggestions to see what to add to your bot.
 
-![](media/suggested-web-topics.png)
+![A tabulated list of suggested topics, as seen on the Suggested tab on the Topics page; each suggested topic has a name, trigger phrases, source, and date it was received listed in the table](media/suggested-web-topics.png)
 
 ## Add suggested topics to an existing bot
 
-Once the extraction process has completed, you'll see the successfully extracted topic suggestions appear under the **Suggested** tab. You should review them individually to help you decide which ones you want to include in your bot. You can also just add suggestions without reviewing them. 
+Once the extraction process has completed, you'll see the successfully extracted topic suggestions appear under the **Suggested** tab. Review them individually to help you decide which ones you want to include in your bot. You can also just add suggestions without reviewing them. 
 
 **Review suggestions and add to bot:**
 
 1. Select the name of the suggested topic.
 
 2. Review the trigger phrases and suggested **Message** node. Each topic will end with a survey so your customers can identify if it was helpful or not. You can deal with the suggested topic in three ways:
-    a. To make edits to the topic (such as adding trigger phrases or changing the answer in the **Message** node), select **Add to topics and edit**. This [opens that topic where you can edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics.md) to make changes to the conversation flow. The topic will also be removed from the list of suggested topics.
-    b. To directly add the suggested topic without making any changes, select **Add to topics**. This adds the topic and saves it, but you'll stay on the list of suggested topics. The topic will also be removed from the list of suggested topics.
-    c. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics and you'll need to run the extraction wizard again to get it back.
+    a. To make edits to the topic select **Add to topics and edit**. [The topic will open, where you can edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics.md) to make changes to the conversation flow. The topic will also be removed from the list of suggested topics.
+    b. To directly add the suggested topic without making any changes, select **Add to topics**. The topic is added and saved, but you'll stay on the list of suggested topics. The topic will also be removed from the list of suggested topics.
+    c. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. Run the extraction wizard again to restore it.
 
-    ![](media/suggested-web-add-edit.png)
+    ![An editing window showing a snapshot of the topic's layout, with buttons to either Add to topics, Delete suggestion, or Add to topics and edit](media/suggested-web-add-edit.png)
 
 **Add or delete suggested topics directly from the suggestions list:**
 
 1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete.
     a. To add the topic to your bot, select the **Add to Existing topics** button. You won't see a preview of the topic, and the topic will be automatically removed from the list of suggested topics.
-    b. To delete the suggested topic, select the **Delete** button. The topic will be deleted from the list of suggested topics and you'll need to run the extraction wizard again to get it back.
+    b. To delete the suggested topic, select the **Delete** button. The topic will be deleted from the list of suggested topics. Run the extraction wizard again to restore it.
 
-    ![](media/suggested-web-quick.png)
+    ![A highlight of an up arrow icon next to the title of a topic in the tabulated list of suggested topics](media/suggested-web-quick.png)
     
 2. You can also add or delete multiple topic suggestions at a time. If you select multiple rows, you'll see options to **Add to topic** or **Delete**.
 
@@ -111,13 +111,13 @@ Topic suggestions are added with their status set to **Off**. Setting it to this
 
 1. Select **Topics** on the side navigation pane.
     
-    ![](media/menu-topics.png)
+    ![The Topics menu item on the navigation pane](media/menu-topics.png)
 
 2. Go to the **Existing** tab. 
 
 3. For each topic you want to enable, slide the switch under **Status** to **On**.
 
-    ![](media/suggested-enable.png)
+    ![A tabulated list of existing topics, each item in the list has a switch toggle that can be set between off and on, under a column labeled status](media/suggested-enable.png)
 
 ## Related links
 - [Create your first bot](authoring-first-bot.md)
