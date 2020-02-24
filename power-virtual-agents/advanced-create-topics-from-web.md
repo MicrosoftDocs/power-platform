@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 # Create topics from existing support content on the web
 
-You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you have help or support content, such as FAQ pages or supports sites. 
+You can use content from existing webpages when creating a Power Virtual Agents bot. This feature is useful if you have help or support content, such as FAQ pages or supports sites. 
 
 Rather than manually copy-pasting or recreating content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing web content into your bot.
 
@@ -37,7 +37,7 @@ You can [test the topics in the test chat](authoring-test-bot.md), but you'll ne
 
 To get suggestions from webpages, you first need to run the topic extraction wizard on the pages you want to use.
 
-After running the extraction wizard, you'll be presented with a series of suggested topics. Suggested topics won't be automatically added to your bot, but you can easily [add them individually or in bulk](#add-suggested-topics-to-an-existing-bot).
+After running the extraction wizard, you'll be shown the suggested topics. Suggested topics won't be automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
 
 >[!IMPORTANT]
 >The feature expects the webpages to be in the form of FAQ pages or support sites. Other types of pages that don't have that structure may not work as expected.
@@ -86,7 +86,7 @@ Once the extraction process has completed, you'll see the successfully extracted
 1. Select the name of the suggested topic.
 
 2. Review the trigger phrases and suggested **Message** node. Each topic will end with a survey so your customers can identify if it was helpful or not. You can deal with the suggested topic in three ways:
-    a. To make edits to the topic select **Add to topics and edit**. [The topic will open, where you can edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics.md) to make changes to the conversation flow. The topic will also be removed from the list of suggested topics.
+    a. To make edits to the topic, select **Add to topics and edit**. [The topic will open, where you can edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics.md) to make changes to the conversation flow. The topic will also be removed from the list of suggested topics.
     b. To directly add the suggested topic without making any changes, select **Add to topics**. The topic is added and saved, but you'll stay on the list of suggested topics. The topic will also be removed from the list of suggested topics.
     c. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. Run the extraction wizard again to restore it.
 
