@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 02/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,12 +20,10 @@ search.app:
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power Platform Admin center to quickly view adoption ad user metrics for your organization. 
 
 Admins with the following roles can view Common Data Service analytics:
-- Environment admins
-- Power Platform service admins
-- Office 365 global admins
-- Dynamics 365 service admins
-- Tenant admins
-
+- Environment Admins - can view reports for the environments that the admin has access to.
+- Power Platform service admins – can view reports for all environments.
+- Office 365 global admins – can view reports for all environments.
+- Tenant Admin – can view reports for all environments.
 
  **Key highlights**  
 
