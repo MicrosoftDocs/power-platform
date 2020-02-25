@@ -22,9 +22,16 @@ Environment admins can access analytics for Power Automate in the [Power Platfor
 To access these reports:
 
 1. Go to the navigation bar on the left side.
-1. Select **Analytics**.
-1. Select **Microsoft Power Automate**.
-1. View the reports on the right side.
+2. Select **Analytics**.
+3. Select **Microsoft Power Automate**.
+4. View the reports on the right side.
+
+## Who can view these reports?
+Admins with the following roles can view the reports in Power Automate Analytics:
+- Environment Admins
+- Power Platform service admins
+- Office 365 global admins
+- Tenant Admin
 
 ## Data storage
 
