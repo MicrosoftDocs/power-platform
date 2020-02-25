@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 02/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -21,6 +21,13 @@ Preview of analytics for the environment admin is available at the Power Platfor
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics menu](media/powerapps-analytics-menu.png "Power Apps analytics menu")
+
+## Who can view these reports?
+Admins with the following roles can view the reports in Power Apps Analytics:
+- Environment Admins
+- Power Platform service admins
+- Office 365 global admins
+- Tenant Admin
 
 ## Where is my data stored? 
 
