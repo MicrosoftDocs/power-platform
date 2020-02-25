@@ -24,6 +24,8 @@ Click on each row to download the sessions for the specified timeframe.
 
 ![Sessions page](media/analytics-sessions.png)
 
+![Sessions page](media/analytics-sessions-billing.png)
+
 The downloaded file contains the following information: 
 
 - SessionID: A unique identifier per session. 
