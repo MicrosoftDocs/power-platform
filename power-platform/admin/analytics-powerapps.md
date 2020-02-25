@@ -24,10 +24,10 @@ Preview of analytics for the environment admin is available at the Power Platfor
 
 ## Who can view these reports?
 Admins with the following roles can view the reports in Power Apps Analytics:
-- Environment Admins
-- Power Platform service admins
-- Office 365 global admins
-- Tenant Admin
+- Environment Admins - can view reports for the environments that the admin has access to.
+- Power Platform service admins – can view reports for all environments.
+- Office 365 global admins – can view reports for all environments.
+- Tenant Admin – can view reports for all environments.
 
 ## Where is my data stored? 
 

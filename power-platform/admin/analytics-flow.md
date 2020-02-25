@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 02/25/2020
 ms.author: deonhe
 search.audienceType: 
   - admin
@@ -28,10 +28,10 @@ To access these reports:
 
 ## Who can view these reports?
 Admins with the following roles can view the reports in Power Automate Analytics:
-- Environment Admins
-- Power Platform service admins
-- Office 365 global admins
-- Tenant Admin
+- Environment Admins - can view reports for the environments that the admin has access to.
+- Power Platform service admins – can view reports for all environments.
+- Office 365 global admins – can view reports for all environments.
+- Tenant Admin – can view reports for all environments.
 
 ## Data storage
 
