@@ -393,8 +393,7 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 | 03/07/2019 | Added a cmdlet: Add a canvas app to a Common Data Service solution - SetPowerAppAsSolutionAware  |
 | 04/29/2019 | Revised GCC terminology. |
 | 05/10/2019 | Revised links for Cmdlets available on the PowerShell gallery to remove preset version. |
-| 05/20/2019 | Added support for environment-specific Data Loss Prevention (DLP) policies.  |
-| 08/30/2019 | <ol><li>Added BlockNonBusinessDataGroup to New-AdminDlpPolicy that can block all the connectors in Non business data group (LBI).</li><li>Added SetNonBusinessDataGroupState('Block' and 'Unblock') parameter to Set-AdminDlpPolicy to block or unblock all the connectors in Non business data group (LBI).</li></ol>   |
+| 05/20/2019 | Added support for environment-specific Data Loss Prevention (DLP) policies.</li></ol>   |
 
 ## Questions?
 
