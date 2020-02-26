@@ -695,6 +695,8 @@
         href: verify-network-capacity-throughput-clients.md
       - name: Data query performance
         href: analyze-improve-data-query-performance.md
+    - name: Compliance and data privacy 
+      href: wp-compliance-data-privacy.md
     - name: GDPR - Responding to DSR requests
       items:
       - name: System-generated logs 
@@ -711,8 +713,6 @@
           href: powerapps-gdpr-delete-dsr.md
         - name: Common Data Service customer data 
           href: common-data-service-gdpr-dsr-guide.md
-    - name: Compliance and data privacy 
-      href: wp-compliance-data-privacy.md
     - name: Power Apps US Government
       href: powerapps-us-government.md
     - name: Datacenter regions
