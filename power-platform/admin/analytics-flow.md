@@ -33,6 +33,8 @@ Admins with the following roles can view the reports in Power Automate Analytics
 - Office 365 global admins – can view reports for all environments.
 - Tenant Admin – can view reports for all environments.
 
+For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
+
 ## Data storage
 
 When a user creates an environment in a region, the environment is hosted in that region. All data for that environment resides within that region for a maximum period of 28 days. 
