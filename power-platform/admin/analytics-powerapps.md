@@ -17,7 +17,7 @@ search.app:
 ---
 # Admin Analytics for Power Apps
 
-Preview of analytics for the environment admin is available at the Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. 
+Analytics for the environment admin is available at the Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. 
 
 To access these reports:
 
