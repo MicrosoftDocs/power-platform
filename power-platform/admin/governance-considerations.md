@@ -53,7 +53,7 @@ After users have licenses, environments exist as containers for all resources ut
 ### Secure your data and network
 - Power Apps and Power Automate *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
 - Network Access control policies can also apply to Power Apps and Power Automate. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in Power Apps and Power Automate. 
-- In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for Power Apps, Power Automate, etc… and [Common Data Service security roles](wp-security-cds.md) (if a CDS data base is provisioned). 
+- In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for Power Apps, Power Automate, etc… and [Common Data Service security roles](wp-security-cds.md) (if a Common Data Service data base is provisioned). 
 - When Common Data Service is created in an environment the Common Data Service roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
 
 The following principals are supported for each role type.
@@ -66,7 +66,7 @@ The following principals are supported for each role type.
 |Environment with Common Data Service      | Environment role        | User        |
 |     |Resource permission: Canvas app         |User, group, tenant         |
 |     | Resource permission: Power Automate, Custom Connector, Gateways, Connections<sup>1</sup>          |User, group         |
-|     |CDS role (applies to all model-driven apps and components)         |User         |
+|     |Common Data Service role (applies to all model-driven apps and components)         |User         |
 
 <sup>1</sup>Only certain connection (like SQL) can be shared.
 

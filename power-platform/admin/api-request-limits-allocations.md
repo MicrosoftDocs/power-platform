@@ -147,7 +147,7 @@ Usage reports and monitoring capabilities would be made available in Power Platf
 
 No. All the power platform request entitlements are calculated on a rolling 24-hour period. If they are not consumed, they don’t roll over to the next day or next month.
 
-### Will the requests generated from Async workflows and Plug-ins in CDS count against the Request limits?
+### Will the requests generated from Async workflows and Plug-ins in Common Data Service count against the Request limits?
 
 Yes, if these requests are making CRUD, assign or share type of calls, they would count. However, calls generated internally from the platform are not going to be accounted.
 
