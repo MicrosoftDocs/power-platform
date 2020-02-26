@@ -17,9 +17,17 @@ search.app:
 ---
 # Common Data Service analytics 
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power Platform Admin center to quickly view adoption ad user metrics for your organization. 
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power Platform admin center to quickly view adoption ad user metrics for your organization. 
 
-Admins with the following roles can view Common Data Service analytics:
+To access these reports:
+
+1. Go to the navigation bar on the left side.
+2. Select **Analytics**.
+3. Select **Common Data Service**.
+4. View the reports on the right side.
+
+## Who can view these reports?
+Admins with the following roles can view the reports in Common Data Service analytics:
 - Environment Admins - can view reports for the environments that the admin has access to.
 - Power Platform service admins – can view reports for all environments.
 - Office 365 global admins – can view reports for all environments.
@@ -38,11 +46,6 @@ For more information on the different roles for managing your tenant across the 
 - **Manage storage and performance**: Monitor storage quotas, storage use, and top tables by size to optimize performance.  
 
 - **Troubleshoot effectively**: Drill down into the details of your top failing workflows and API calls to quickly diagnose and troubleshoot errors.
-
-<a name="BKMK_InstallSolution"></a>   
-
-## View Common Data Service analytics  
-It's simple. In the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), select **analytics** > **Common Data Service**.
 
 <a name="BKMK_Home"></a>   
 

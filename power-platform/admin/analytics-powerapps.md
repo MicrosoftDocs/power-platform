@@ -17,13 +17,17 @@ search.app:
 ---
 # Admin Analytics for Power Apps
 
-Preview of analytics for the environment admin is available at the Power Platform Admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. To view reports, in the Power Platform Admin center menu expand **Analytics** and then select **PowerApps**.  
+Preview of analytics for the environment admin is available at the Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. 
 
-> [!div class="mx-imgBorder"] 
-> ![Power Apps analytics menu](media/powerapps-analytics-menu.png "Power Apps analytics menu")
+To access these reports:
+
+1. Go to the navigation bar on the left side.
+2. Select **Analytics**.
+3. Select **Power Apps**.
+4. View the reports on the right side.
 
 ## Who can view these reports?
-Admins with the following roles can view the reports in Power Apps Analytics:
+Admins with the following roles can view the reports in Power Apps analytics:
 - Environment Admins - can view reports for the environments that the admin has access to.
 - Power Platform service admins – can view reports for all environments.
 - Office 365 global admins – can view reports for all environments.
