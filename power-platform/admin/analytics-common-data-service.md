@@ -27,11 +27,12 @@ To access these reports:
 4. View the reports on the right side.
 
 ## Who can view these reports?
+
 Admins with the following roles can view the reports in Common Data Service analytics:
-- Environment Admins - can view reports for the environments that the admin has access to.
-- Power Platform service admins – can view reports for all environments.
-- Office 365 global admins – can view reports for all environments.
-- Tenant Admin – can view reports for all environments.
+- Environment Admin - can view reports for the environments that the admin has access to.
+- Power Platform Service admin – can view reports for all environments.
+- Dynamics 365 Service admin - can view reports for all environments.
+- Microsoft 365 Global admin – can view reports for all environments.
 
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
