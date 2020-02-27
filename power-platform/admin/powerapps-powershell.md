@@ -50,6 +50,16 @@ To run the PowerShell cmdlets for app creators, do the following:
     Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
     Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber
     ```
+
+    Alternatively, if you don't have admin rights on your computer, you can use the following to use these modules:
+
+    ```powershell
+    Save-Module -Name Microsoft.PowerApps.Administration.PowerShell -Path
+    Import-Module -Name Microsoft.PowerApps.Administration.PowerShell
+    Save-Module -Name Microsoft.PowerApps.PowerShell -Path
+    Import-Module -Name Microsoft.PowerApps.PowerShell
+    ```
+
 3. If you are prompted to accept the change to *InstallationPolicy* value of the repository, accept [A] Yes to all modules by typing ‘A’ and pressing **Enter** for each module.
 
    ![Accept InstallationPolicy value](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")
