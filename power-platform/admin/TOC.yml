@@ -87,6 +87,8 @@
           href: environments-overview.md
         - name: Create environments
           href: create-environment.md
+        - name: Edit environment properties
+          href: edit-properties-environment.md
         - name: Control environment creation
           href: control-environment-creation.md
         - name: Delete and recover environments
