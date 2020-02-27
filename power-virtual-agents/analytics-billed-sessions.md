@@ -1,7 +1,7 @@
 ---
 title: "View Power Virtual Agents billed sessions"
 description: "See Power Virtual Agents billed sessions for the last 30 or 7 days"
-ms.date: 2/20/2020
+ms.date: 2/27/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article

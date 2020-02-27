@@ -1,7 +1,7 @@
 ---
 title: "Download Power Virtual Agents bot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
-ms.date: 11/12/2019
+ms.date: 2/27/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -35,11 +35,14 @@ The downloaded file contains the following information:
 - TopicName: Name of the last authored topic that was triggered in this session. 
 
 - ChatTranscript: Transcript of the session in the following format:
-    - “User says”/“Bot says” structure
+    - *User says:" "; Bot says:" ";* structure
     - Conversation turns separated by semicolons</br>
    **Bot says** doesn't include the options presented to the user.
     
-    Example: “User says: store hours; Bot says: Which store are you asking about?; User says: Bellevue; Bot says: Bellevue store is open from 10am to 7pm every day.;”
+    Example: 
+    ```
+    User says: store hours; Bot says: Which store are you asking about?; User says: Bellevue; Bot says: Bellevue store is open from 10am to 7pm every day.;
+    ```
 
 - SessionOutcome: Outcome of the session (Resolved, Escalated, Abandoned, Unengaged).
 
