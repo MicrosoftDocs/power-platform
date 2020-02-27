@@ -35,9 +35,9 @@ The downloaded file contains the following information:
 - TopicName: Name of the last authored topic that was triggered in this session. 
 
 - ChatTranscript: Transcript of the session in the following format:
-    - *User says:" "; Bot says:" ";* structure
-    - Conversation turns separated by semicolons</br>
-   **Bot says** doesn't include the options presented to the user.
+    - ***User says:**" "; **Bot says:**" ";* structure
+    - Conversation turns are separated by semicolons
+    - **Bot says** doesn't include the options presented to the user.
     
     Example: 
     ```
