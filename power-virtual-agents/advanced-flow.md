@@ -294,9 +294,11 @@ Select **Save snapshot** option to download bot content and conversational diagn
 
 
 Bot content and conversational diagnostics will be saved into a **DSAT.zip** archive:
+![Conversational diagnostics archive](media/DSAT.png)
 
 
 You can find conversational diagnostics that contains details dercriptions of the errors in **dialog.json** file:
+![Conversational diagnostics file](media/ConversationFile.png)
 
 
 You can help us improve Power Virtual Agents by submiting issues you run into ditectly to Microsoft. If you Dialog does not behave as you expect, you can use **Flag an issue** feature in your **Test chat** pane:
