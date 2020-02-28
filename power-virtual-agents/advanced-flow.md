@@ -294,10 +294,12 @@ Select **Save snapshot** option to download bot content and conversational diagn
 
 
 Bot content and conversational diagnostics will be saved into a **DSAT.zip** archive:
+
 ![Conversational diagnostics archive](media/DSAT.png)
 
 
 You can find conversational diagnostics that contains details dercriptions of the errors in **dialog.json** file:
+
 ![Conversational diagnostics file](media/ConversationFile.png)
 
 
