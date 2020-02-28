@@ -18,9 +18,9 @@ ms.collection: virtual-agent
 <!--note from editor: We've got a lot of names for the feature here - "suggestions extraction wizard," "Get topics wizard," "extraction wizard." Also "tool." The Style Guide wouldn't want us to call this a wizard because the term isn't in the UI (named wizards are actually rare these days). It seems that the UI calls this thing that runs, the **Suggest topics** command. I've made that edit below. If you don't like it, I think whatever else we use should be used throughout.-->
 You can use content from existing webpages when creating a Power Virtual Agents bot. This <!--note from editor: Deleted "feature" here because you haven't described it yet, you're still setting up the scenario.-->is useful if you already have help or support content, such as FAQ pages or support sites. 
 
-Rather than copying and pasting or manually re-creating<!--hyphen via Style Guide --> this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing webpages into your bot.
+Rather than copying and pasting or manually re-creating<!--hyphen via Style Guide --> this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing web content into your bot.
 
-This feature uses AI to determine the structure and content of a webpage. It isolates content blocks that pertain to a support issue<!--note from editor: Edit okay? I wasn't sure what "single issues" meant here.--> and classifies them into topics. The feature then identifies what the <!--note from editor: You don't need quotation marks because you're not using the terms in an unusual way.-->[**Trigger phrase** (question) and **Message** node (answer)](authoring-create-edit-topics.md) should be for each topic.
+The AI determines the structure and content on a webpage, isolates content blocks that pertain to single issues<!--note from editor: not sure what "single issues" means here. Could this say "..content blocks that pertain to a support issue or issues" or something similar?-->, and then classifies them into topics. Lastly, the AI identifies the [**Trigger phrase** and **Message** node](authoring-create-edit-topics.md) for each topic.
 
 There are three main steps to using the feature: 
 
@@ -94,25 +94,19 @@ After the extraction process has been completed, the topic suggestions appear on
 
     c. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. Run the **Suggest topics** command again to restore it.  
 
-![An editing window showing a snapshot of the topic's layout, with commands to either Add to topics, Delete suggestion, or Add to topics and edit](media/suggested-web-add-edit.png "An editing window showing a snapshot of the topic's layout, with commands to either Add to topics, Delete suggestion, or Add to topics and edit")
-<!--note from editor: I think it might be good to remove the mention of the survey from step 2 and add something like the following note:
-> [!NOTE]
-> Each topic that you add to your bot will end with a survey that asks customers whether they found the topic helpful. You can use this feedback to inform your future choices for topics.
--->
-**To add or delete suggested topics directly from the suggestions list**
+    ![An editing window showing a snapshot of the topic's layout](media/suggested-web-add-edit.png)
 
 1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete. 
 
     1. To add the topic to your bot, select **Add to topics** ![Add to topics](media/add-to-topics.png)<!--note from editor: Should this be "Add to topics" rather than "Add to Existing topics"? Also, what do you think of supplying the graphic inline like this? I think it would be helpful to the reader, and also would remove the need for the suggested-web-quick.png graphic below.-->. You won't see a preview of the topic, and the topic will be automatically removed from the list of suggested topics.
 
-    2. To delete the suggested topic, select **Delete** ![Delete](media/delete-suggested-topic.png).<!--note from editor: Same idea as previous step. Also, is "Delete" the tooltip or "Delete suggestion"?--> The topic will be deleted from the list of suggested topics. Select **Suggest topics** <!--note from editor: This could also be accompanied by its icon, but it looks like the icon never appears without the command name, so it wouldn't be as necessary to supply the graphic. -->again to restore it.
-<!--note from editor: Maybe remove the following graphic, if you like the inline versions?
-    ![The Add to topic and Delete icons in the list of suggested topics](media/suggested-web-quick.png "The Add to topic and Delete icons in the list of suggested topics")
--->
+
+    ![An up arrow icon next to the title of a topic](media/suggested-web-quick.png)
     
 2. You can also add or delete multiple topic suggestions at a time. If you select multiple rows, you'll see options to **Add to topic** or **Delete**.
 
-    ![A list of topics with three different items selected, indicated by check marks next to the items](media/suggested-web-multi.png "A list of topics with three different items selected, indicated by check marks next to the items")
+    ![The list has three items selected](media/suggested-web-multi.png)
+
 
 ## Enable topics in your bot
 
