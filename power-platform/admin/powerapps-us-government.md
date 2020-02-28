@@ -229,6 +229,8 @@ Some of the features available in the commercial version of Power Apps are not a
 
 - [Customize a SharePoint list form by using Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form).
 
+- [Dataflows in Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/create-and-use-dataflows)
+
 ## Requesting support
 
 Having a problem with your service? You can create a support request to get the issue resolved.  
