@@ -15,12 +15,12 @@ ms.collection: virtual-agent
 
 
 # Create topics from existing support content on the web
-<!--note from editor: We've got a lot of names for the feature here - "suggestions extraction wizard," "Get topics wizard," "extraction wizard." Also "tool." The Style Guide wouldn't want us to call this a wizard because the term isn't in the UI (named wizards are actually rare these days). I suggest that when we talk about the thing that runs, we call it the **Suggest topics** command. What do you think?-->
+<!--note from editor: We've got a lot of names for the feature here - "suggestions extraction wizard," "Get topics wizard," "extraction wizard." Also "tool." The Style Guide wouldn't want us to call this a wizard because the term isn't in the UI (named wizards are actually rare these days). It seems that the UI calls this thing that runs, the **Suggest topics** command. I've made that edit below. If you don't like it, I think whatever else we use should be used throughout.-->
 You can use content from existing webpages when creating a Power Virtual Agents bot. This <!--note from editor: Deleted "feature" here because you haven't described it yet, you're still setting up the scenario.-->is useful if you already have help or support content, such as FAQ pages or support sites. 
 
 Rather than copying and pasting or manually re-creating<!--hyphen via Style Guide --> this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing webpages into your bot.
 
-This feature uses AI to determine the structure and content of a webpage. It isolates content blocks that pertain to single<!--"support"? SELF --> issues and classifies them into topics. The feature then identifies what the <!--note from editor: You don't need quotation marks because you're not using the terms in an unusual way.-->[**Trigger phrase** (question) and **Message** node (answer)](authoring-create-edit-topics.md) should be for each topic.
+This feature uses AI to determine the structure and content of a webpage. It isolates content blocks that pertain to a support issue<!--note from editor: Edit okay? I wasn't sure what "single issues" meant here.--> and classifies them into topics. The feature then identifies what the <!--note from editor: You don't need quotation marks because you're not using the terms in an unusual way.-->[**Trigger phrase** (question) and **Message** node (answer)](authoring-create-edit-topics.md) should be for each topic.
 
 There are three main steps to using the feature: 
 
@@ -42,7 +42,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 >[!IMPORTANT]
 >The **Suggest topics** command is built to run on webpages that are in the form of FAQ pages or support sites. Other types of pages that don't have that structure might not work as expected.
-<!--Style Guide says headings should have no end punctuation. It also recommends using an infinitive phrase for procedure headings, which I've done below. This doesn't match other PVA procedure headings, but maybe we can change those over time.-->
+<!--note from editor: Style Guide says headings should have no end punctuation. It also recommends using an infinitive phrase for procedure headings, which I've done below. This doesn't match other PVA procedure headings, but maybe we can change those over time.-->
 **To extract content from existing webpages**
 
 <!--note from editor about this procedure: I think the image of the empty Topics page works better if it directly follows step 3. I moved step 6 into step 5, since the image that followed step 6 pertained to step 5 too. (And also, step 6 was optional - you don't necessarily have to delete anything.)-->
@@ -56,25 +56,25 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
     ![An empty Topics page, with a link to Get started or Learn more](media/suggested-web-get.png "An empty Topics page, with a link to Get started or Learn more")
 
-4. Select **Get started** or **Suggest topics** to open the suggestions extraction tool. 
+4. Select **Get started** or **Suggest topics**. 
 
-5. Enter each webpage you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting the **Delete**<!> icon.
+5. Enter each webpage you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting **Delete** ![Delete](media/delete-suggested-topic.png).<!--note from editor: Suggest using the icon inline (This comes up later also.)-->
 
-    ![The Get topics wizard, requesting to add a URL, with Start and Cancel buttons](media/suggested-web-wizard.png)
+    ![The Suggest topics page, where you enter URLs to extract suggested topics from](media/suggested-web-wizard.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
 
 7. When you're done adding pages, select **Start**. The process can take several minutes, depending on the complexity and number of webpages you added. An alert at the top of the screen lets you know the extraction is in progress. <!--note from editor: You could take care of this in text rather than a graphic if you said "The message 'Getting your suggestions. This may take several minutes' appears at the top of the screen while the extraction is in progress."-->
 
     ![An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page](media/suggested-web-wait.png "An alert that says 'Getting your suggestions. This may take several minutes' appears at the top of the page")
 
 >[!TIP]
->You can add multiple webpages, but we recommend that you include only a few at a time<!--Suggested.--> to keep the list of suggestions manageable<!--Is this what you mean by "manageable"? Or do you mean the tool will take too long to run?-->.
+>You can add multiple webpages, but we recommend that you include only a few at a time<!--note from editor: Suggested.--> to keep the list of suggestions manageable<!--Is this what you mean by "manageable"? Or do you mean the tool will take too long to run?-->.
 
 >[!IMPORTANT]
 >You won't be able to add more URLs while the **Suggest topics** command is running.
 
-The tool provides explicit feedback about errors so that you can understand and address the issue. For example, you might be unable to extract content because the site you're referencing is down.<!--Suggested.-->
+The tool provides explicit feedback about errors so that you can understand and address the issue. For example, you might be unable to extract content because the site you're referencing is down.<!--note from editor: Suggested.-->
 
-After you've successfully extracted content, a number of suggestions will appear. You can now review these suggestions to see what to add to your bot.<!--The following alt text is nice! Suggested edits just to make it a bit shorter -->
+After you've successfully extracted content, a number of suggestions will appear. You can now review these suggestions to see what to add to your bot.<!--note from editor: The following alt text is nice! Suggested edits just to make it a bit shorter -->
 
 ![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received](media/suggested-web-topics.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
 
@@ -86,9 +86,9 @@ After the extraction process has been completed, the topic suggestions appear on
 <!--note from editor about formatting: The nested numbered lists in these procedures are behaving badly! When I change the numbering from a, b, c to 1, 2, 3, the hanging indents are formatted correctly in VSCode preview and on the review site, but the numbering is wrong on the review site. If I stay with a,b,c numbering, theres' no hanging indent at all. I can't explain this.-->
 1. Select the name of the suggested topic.  
 
-2. Review the trigger phrases and suggested **Message** node. <!--note from editor: The following point doesn't flow with this discussion. It does fully describe the UI but it's a bit of a red herring. I suggest either putting the sentence in parentheses to at least signal that this is a diversion, or adding a note at the end of the procedure (which see below).-->(Each topic will end with a survey, so your customers will be able to let you know whether they found it helpful.)<!--Style Guide doesn't want "or not" after "whether." --> You have the following three options for dealing with the topic:  
+2. Review the trigger phrases and suggested **Message** node. <!--note from editor: The following point doesn't flow with this discussion. It does fully describe the UI but it's a bit of a red herring. I suggest either putting the sentence in parentheses to at least signal that this is a diversion, or adding a note at the end of the procedure (which see below).-->(Each topic will end with a survey, so your customers will be able to let you know whether they found it helpful.)<!--note from editor: Style Guide doesn't want "or not" after "whether." --> You have the following three options for dealing with the topic:  
 
-    a. To make edits to the topic, select **Add to topics and edit**. The topic will open, where you can <!--Suggested, to make it a bit clearer what the link covers.-->[edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics.md) to make changes to the conversation flow. The topic will also be removed from the list of suggestions.  
+    a. To make edits to the topic, select **Add to topics and edit**. The topic will open, where you can <!--note from editor: Suggested, to make it a bit clearer what the link covers.-->[edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics.md) to make changes to the conversation flow. The topic will also be removed from the list of suggestions.  
 
     b. To directly add the suggested topic without making any changes, select **Add to topics**. The topic is added and saved, but you'll stay on the list of suggested topics. The topic will also be removed from the list of suggested topics.  
 
@@ -103,9 +103,9 @@ After the extraction process has been completed, the topic suggestions appear on
 
 1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete. 
 
-    1. To add the topic to your bot, select **Add to topics** ![Add to topics](media/add-to-topics.png)<!--Should this be "Add to topics" rather than "Add to Existing topics"? Also, what do you think of supplying the graphic inline like this? I think it would be helpful to the reader, and also would remove the need for the suggested-web-quick.png graphic below.-->. You won't see a preview of the topic, and the topic will be automatically removed from the list of suggested topics.
+    1. To add the topic to your bot, select **Add to topics** ![Add to topics](media/add-to-topics.png)<!--note from editor: Should this be "Add to topics" rather than "Add to Existing topics"? Also, what do you think of supplying the graphic inline like this? I think it would be helpful to the reader, and also would remove the need for the suggested-web-quick.png graphic below.-->. You won't see a preview of the topic, and the topic will be automatically removed from the list of suggested topics.
 
-    2. To delete the suggested topic, select **Delete** ![Delete](media/delete-suggested-topic.png).<!--Same idea as previous step. Also, is "Delete" the tooltip or "Delete suggestion"?--> The topic will be deleted from the list of suggested topics. Select **Suggest topics** <!--This could also be accompanied by its icon, but it looks like the icon never appears without the command name, so it wouldn't be as necessary to supply the graphic. -->again to restore it.
+    2. To delete the suggested topic, select **Delete** ![Delete](media/delete-suggested-topic.png).<!--note from editor: Same idea as previous step. Also, is "Delete" the tooltip or "Delete suggestion"?--> The topic will be deleted from the list of suggested topics. Select **Suggest topics** <!--note from editor: This could also be accompanied by its icon, but it looks like the icon never appears without the command name, so it wouldn't be as necessary to supply the graphic. -->again to restore it.
 <!--note from editor: Maybe remove the following graphic, if you like the inline versions?
     ![The Add to topic and Delete icons in the list of suggested topics](media/suggested-web-quick.png "The Add to topic and Delete icons in the list of suggested topics")
 -->
@@ -116,13 +116,15 @@ After the extraction process has been completed, the topic suggestions appear on
 
 ## Enable topics in your bot
 
-Suggested topics are added to the **Existing**<!--edit okay?--> tab with their status set to **Off**. This way, topics won't be prematurely added to your bot.<!--Suggested. If you don't like it, something needs to fix the slightly misplaced modifier of "Setting it to this status"... -->
+Suggested topics are added to the **Existing**<!--note from editor: edit okay?--> tab with their status set to **Off**. This way, topics won't be prematurely added to your bot.<!--note from editor: Suggested. If you don't like it, something needs to fix the slightly misplaced modifier of "Setting it to this status"... -->
 
 **To enable topics for use**
 
 1. Select **Topics** on the side navigation pane.
     
-<!--note from editor: You don't need to show this graphic twice.    ![The Topics menu item on the navigation pane](media/menu-topics.png)-->
+<!--note from editor: You don't need to show this graphic twice. 
+   ![The Topics menu item on the navigation pane](media/menu-topics.png)
+-->
 
 2. Go to the **Existing** tab. 
 
