@@ -1,5 +1,5 @@
 ---
-title: "Automate Power Virtual Agents bot activities with flows"
+title: "Automate Power Virtual Agents bot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: ""
 ms.date: 1/28/2020
@@ -286,6 +286,7 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 
 While testing your bot in **Test chat** pane, you can use **Save snapshot** feature to get the conversational diagnostics data that you can use to troubleshoot any issues you runt into. 
 
+
 In your **Test chat** pane, go to the Menu on the right to find **Save snapshot** option:
 
 
@@ -294,6 +295,11 @@ Select **Save snapshot** option to download bot content and conversational diagn
 
 Bot content and conversational diagnostics will be saved into a **DSAT.zip** archive:
 
+
 You can find conversational diagnostics that contains details dercriptions of the errors in **dialog.json** file:
 
 
+You can help us improve Power Virtual Agents by submiting issues you run into ditectly to Microsoft. If you Dialog does not behave as you expect, you can use **Flag an issue** in your **Test chat** pane:
+
+
+Flagging an issue in conversation will submit the Conversation ID to Micrsoffl; all information collected adheres to [Microsoft’s privacy policy] (https://privacy.microsoft.com/en-US/privacystatement) and will be used anonymously to help improve bot quality.
