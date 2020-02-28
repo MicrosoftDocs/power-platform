@@ -282,4 +282,18 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 ![Test Dialog](media/GetWeatherE2E.png)
 
 
+## Troubleshoot your bot
+
+While testing your bot in **Test chat** pane, you can use **Save snapshot** feature to get the conversational diagnostics data that you can use to troubleshoot any issues you runt into. 
+
+In your **Test chat** pane, go to the Menu on the right to find **Save snapshot** option:
+
+
+Select **Save snapshot** option to download bot content and conversational diagnostics for this session:
+
+
+Bot content and conversational diagnostics will be saved into a **DSAT.zip** archive:
+
+You can find conversational diagnostics that contains details dercriptions of the errors in **dialog.json** file:
+
 
