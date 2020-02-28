@@ -308,4 +308,7 @@ You can find conversational diagnostics that contains details dercriptions of th
 
 You can help us improve Power Virtual Agents by submiting issues you run into ditectly to Microsoft. If you Dialog does not behave as you expect, you can use **Flag an issue** feature in your **Test chat** pane to submit your Conversation ID to Microsoft.
 
+![Flag an issue](media/FlagIssue.png)
+
+
 All information collected via **Flag an issue** feature adheres to [Microsoft’s privacy policy](https://privacy.microsoft.com/en-US/privacystatement) and will be used anonymously to help improve bot quality.
