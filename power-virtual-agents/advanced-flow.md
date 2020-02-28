@@ -284,7 +284,7 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 
 ## Troubleshoot your bot
 
-While testing your bot in **Test chat** pane, you can use **Save snapshot** feature to get the conversational diagnostics data that you can use to troubleshoot any issues you runt into. 
+While testing your bot in **Test chat** pane, you can use **Save snapshot** feature to get the conversational diagnostics data that you can use to troubleshoot any issues you run into. 
 
 
 In your **Test chat** pane, go to the Menu on the right to find **Save snapshot** option:
@@ -299,7 +299,7 @@ Bot content and conversational diagnostics will be saved into a **DSAT.zip** arc
 You can find conversational diagnostics that contains details dercriptions of the errors in **dialog.json** file:
 
 
-You can help us improve Power Virtual Agents by submiting issues you run into ditectly to Microsoft. If you Dialog does not behave as you expect, you can use **Flag an issue** in your **Test chat** pane:
+You can help us improve Power Virtual Agents by submiting issues you run into ditectly to Microsoft. If you Dialog does not behave as you expect, you can use **Flag an issue** feature in your **Test chat** pane:
 
 
 Flagging an issue in conversation will submit the Conversation ID to Micrsoffl; all information collected adheres to [Microsoft’s privacy policy] (https://privacy.microsoft.com/en-US/privacystatement) and will be used anonymously to help improve bot quality.
