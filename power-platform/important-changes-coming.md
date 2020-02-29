@@ -34,8 +34,8 @@ Beginning March 5, 2020, customers will need to recreate their existing form pro
 After March 5, 2020, customers are encouraged to transition to the new model versions as soon as possible.
 
 More information: 
-- [Transition to use a new form processing model version](/ai-builder/form-processing-transition.md)
-- [Transition to use a new object detection model version](/ai-builder/object-detection-transition.md)
+- [Transition to use a new form processing model version](https://docs.microsoft.com/ai-builder/form-processing-transitionn.md)
+- [Transition to use a new object detection model version](https://docs.microsoft.com/ai-builder//ai-builder-docs/object-detection-transition.md)
 
 Old Common Data Service environment URL redirector service is deprecated
 -------------------------------------------------------------------------
