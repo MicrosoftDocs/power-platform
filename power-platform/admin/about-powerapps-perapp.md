@@ -117,13 +117,13 @@ To share canvas apps, see [Share a canvas app in Power Apps](https://docs.micros
 ### Can I assign Power Apps per app plans in the Microsoft 365 admin center (admin.microsoft.com)? 
 No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to users when apps are shared with users in the environment.
 
-### For users expected to use a Power Apps per app plan, why are they prompted to start a trial after signing in to [https://make.powerapps.com](https://make.powerapps.com)?
+### For users expected to use a Power Apps per app plan, why are they prompted to start a trial after signing in to <https://make.powerapps.com>?
 
-Both [https://make.powerapps.com](https://make.powerapps.com) is being updated to not require a license to begin making an app. Licenses are required for users to run apps.
+<https://make.powerapps.com> is being updated to not require a license to begin making an app. Licenses are required for users to run apps.
 
 ### For users expected to use a Power Apps per app plan, why are they prompted to start a trial when attempting to create a premium connection?
 
-https://make.powerapps.com is being updated to not require a license to begin making an app. Licenses are required for users to run apps.
+<https://make.powerapps.com> is being updated to not require a license to begin making an app. Licenses are required for users to run apps.
 
 ### For users expected to use a Power Apps per app plan, why are users that use an app shared with them prompted to start a Power Apps trial? 
 
