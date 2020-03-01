@@ -15,7 +15,7 @@ search.audienceType:
 search.app: 
   - Powerplatform
 ---
-# Security in the Common Data Service
+# Security in Common Data Service
 
 This section provides information on how [**Common Data Service**](/powerapps/maker/common-data-service/data-platform-intro), the underlying data platform for Power Apps, handles security from user authentication to authorization that allows users to perform actions with data and services. Conceptually, security in Common Data Service is there to ensure users can do the work they need to do with the least amount of friction, while still protecting the data and services. Security in Common Data Service can be implemented as a simple security model with broad access all the way to highly complex security models where users have specific record and field level access. 
 
