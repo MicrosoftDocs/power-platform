@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/07/2020
+ms.date: 03/02/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -41,6 +41,14 @@ More details can be found in [Microsoft Power Apps and Power Automate Licensing 
 
 ### How do I use Power Apps per app plans? 
 See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
+
+### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
+
+The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to two apps (canvas and/or model-driven) as well as one Power Apps Portal, all within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple solutions targeted at various business scenarios, without requiring a per-user license. In other words, the “per app” license is stackable.
+
+### Do embedded canvas apps in model-driven apps count toward the two-apps limits?
+
+No. Embedded canvas components within the model-driven app will not count towards the two apps limit in the per app licensing model.
 
 ### What are the self-service purchase options for the Power Platform products?
 
@@ -165,15 +173,6 @@ In addition, apps and flows created prior to October 1, 2019 which are using the
 ### How many Power Apps applications I can run with Office 365 plans?
 
 There is no limit on the number of applications. Customers can continue to run standalone Power Apps applications to extend and customize Office 365 using standard connectors. 
-
-### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
-
-The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to two apps (canvas and/or model-driven) as well as one Power Apps Portal, all within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple solutions targeted at various business scenarios, without requiring a per-user license. In other words, the “per app” license is stackable.
-
-
-### Do embedded canvas apps in model-driven apps count toward the two-apps limits?
-
-No. Embedded canvas components within the model-driven app will not count towards the two apps limit in the per app licensing model.
 
 ## Dynamics 365
 
