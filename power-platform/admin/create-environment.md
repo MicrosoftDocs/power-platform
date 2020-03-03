@@ -89,7 +89,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | Choose production, trial or sandbox.        |
+   |Type     | Choose production, trial, or sandbox.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
