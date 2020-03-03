@@ -24,6 +24,19 @@ Administrators and IT professionals should use this information to prepare for f
 > “Deprecated” means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
+## Form processing and object detection preview models in AI Builder are deprecated 
+-----------------------------------------------------------------------------------
+
+Effective March 5, 2020, any form processing and object detection models created using AI Builder before this date will be deprecated. Until June 8, 2020, these models will continue to function, and Microsoft will continue to provide support, however some functionality may be disabled. After June 8, 2020, these models will no longer work. 
+
+Beginning March 5, 2020, customers will need to recreate their existing form processing and object detection models with the new model versions. Any models created after this date will automatically use the new model versions and require no further action.
+
+After March 5, 2020, customers are encouraged to transition to the new model versions as soon as possible.
+
+More information: 
+- [Transition to use a new form processing model version](/ai-builder/form-processing-transition)
+- [Transition to use a new object detection model version](/ai-builder/object-detection-transition)
+
 Old Common Data Service environment URL redirector service is deprecated
 -------------------------------------------------------------------------
 When you access your Common Data Service environment for the first time or every time after you have signed out from a prior session, you are directed to Azure AD for signing in. In the sign-in page URL, it contains a set of internal values/codes that include a link to the URL redirector service. Upon successful login, the URL redirector service directs you to your Common Data Service environment.
