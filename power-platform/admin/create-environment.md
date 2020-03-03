@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 02/14/2020
+ms.date: 03/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -89,7 +89,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Setting  |Description  |
    |---------|---------|
    |Name     | The name of your environment.        |
-   |Type     | You can choose production or trial.        |
+   |Type     | Choose production, trial or sandbox.        |
    |Region     | Choose a region for the environment.        |
    |Purpose     | A description of the environment.         |
    |Create a database for this environment? | Select **Yes**. |
