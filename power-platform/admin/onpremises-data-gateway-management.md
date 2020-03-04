@@ -19,7 +19,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services.
+The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)
 
 You can use the Power Platform Admin center to get visibility into all on-Premises data gateways in a tenant. To do so, sign in as a tenant admin and select the **Data Gateway** option.
 
@@ -171,5 +171,5 @@ For faster troubleshooting and assistance, select **Get help** to open a Get Hel
 > ![Get help](media/get-help.png "Get help")
 
 ### See also
- [On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem)<br/>
+ [On-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)<br/>
  [Connecting to on-premises data sources with On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)<br/>
