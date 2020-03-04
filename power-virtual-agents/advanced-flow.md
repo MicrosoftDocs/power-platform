@@ -284,29 +284,43 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 
 ## Troubleshoot your bot
 
-While testing your bot in **Test chat** pane, you can use **Save snapshot** feature to get the conversational diagnostics data that you can use to troubleshoot any issues you run into. 
+While testing your bot in the **Test chat** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect. 
 
-In your **Test chat** pane, go to the Menu on the right to find **Save snapshot** option:
+>[!WARNING]
+>The snapshot contains all of your bot content, which may include sensitive information.
+
+1. At the top of the **Test chat** pane, select the menu icon (three vertical periods) and then **Save snapshot**.
 
 ![Save snapshot](media/SaveSnapshot.png)
 
 
-Select **Save snapshot** option to download bot content and conversational diagnostics for this session:
+1. In the window that appears, select **Save**.
 
 ![Save snapshot message](media/SaveSnapshot_1.png)
 
-
-Bot content and conversational diagnostics will be saved into a **DSAT.zip** archive:
+1. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
 
 ![Conversational diagnostics archive](media/DSAT.png)
 
 
-You can find conversational diagnostics that contains details dercriptions of the errors in **dialog.json** file:
+1. The *DSAT.zip* file contains two files: *botContent.json* and *dialog.json*. 
 
-![Conversational diagnostics file](media/ConversationFile.png)
+    1. *dialog.json* contains conversational diagnostics, including detailed descriptions of errors.
+
+    ![Conversational diagnostics file](media/ConversationFile.png)
+
+    1. *botContent.json* contains...
+
+>[!NOTE]
+>What does botcontent.json contain?
 
 
-You can help us improve Power Virtual Agents by submiting issues you run into ditectly to Microsoft. If you Dialog does not behave as you expect, you can use **Flag an issue** feature in your **Test chat** pane to submit your Conversation ID to Microsoft.
+
+You can help us improve Power Virtual Agents by flagging issues with the **Flag** command on the test bot pane. This submits your Conversation ID to Microsoft.
+
+>[!NOTE]
+>What is the Conversation ID?
+>What information is submitted - is it the same as what's in the dsat.zip file?
 
 ![Flag an issue](media/FlagIssue.png)
 
