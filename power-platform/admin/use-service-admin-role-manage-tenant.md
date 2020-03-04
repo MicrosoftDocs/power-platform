@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -89,7 +89,7 @@ The following matrix shows what management is possible with the various service 
 |Add security roles|Yes|No|No|No|  
 |Add licenses|Yes|No|No|No|  
 
-<sup>1</sup>Equivalent permission level to a System Administrator. Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment.
+<sup>1</sup>Equivalent permission level to a System Administrator. Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment - if the user has a suitable license.
 
 <sup>2</sup>If a security group is assigned to the environment and the user with this role added to the security group
 
