@@ -293,17 +293,15 @@ While testing your bot in the **Test chat** pane, you can use the **Save snapsho
 
 ![Save snapshot](media/SaveSnapshot.png)
 
-
-1. In the window that appears, select **Save**.
+2. In the window that appears, select **Save**.
 
 ![Save snapshot message](media/SaveSnapshot_1.png)
 
-1. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
+3. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
 
 ![Conversational diagnostics archive](media/DSAT.png)
 
-
-1. The *DSAT.zip* file contains two files: *botContent.json* and *dialog.json*. 
+4. The *DSAT.zip* file contains two files: *botContent.json* and *dialog.json*. 
 
     1. *dialog.json* contains conversational diagnostics, including detailed descriptions of errors.
 
@@ -316,7 +314,7 @@ While testing your bot in the **Test chat** pane, you can use the **Save snapsho
 
 
 
-You can help us improve Power Virtual Agents by flagging issues with the **Flag** command on the test bot pane. This submits your Conversation ID to Microsoft.
+You can help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your Conversation ID to Microsoft.
 
 >[!NOTE]
 >What is the Conversation ID?
@@ -325,4 +323,4 @@ You can help us improve Power Virtual Agents by flagging issues with the **Flag*
 ![Flag an issue](media/FlagIssue.png)
 
 
-All information collected via **Flag an issue** feature adheres to [Microsoft’s privacy policy](https://privacy.microsoft.com/en-US/privacystatement) and will be used anonymously to help improve bot quality.
+All information collected via **Flag an issue** command adheres to [Microsoft’s privacy policy](https://privacy.microsoft.com/en-US/privacystatement) and will be used anonymously to help improve bot quality.
