@@ -17,7 +17,7 @@ search.app:
 ---
 # Add or remove sales territory members
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 To accommodate changes in sales territories or the representatives that are assigned to each territory, you can add or remove territory members.  
   
@@ -29,7 +29,7 @@ To accommodate changes in sales territories or the representatives that are assi
   
 4. In the Navigation Pane, expand **Common** if necessary, and then choose **Members**.  
   
-5. Follow the steps for the task you’re performing:  
+5. Follow the steps for the task you're performing:  
   
    **Add people to a sales territory**  
   
@@ -46,7 +46,7 @@ To accommodate changes in sales territories or the representatives that are assi
    2.  In the **Remove Members** dialog box, choose **Remove**.  
   
        > [!NOTE]
-       >  When you remove someone from a sales territory, the updated list of members isn’t displayed until you refresh the page.  
+       >  When you remove someone from a sales territory, the updated list of members isn't displayed until you refresh the page.  
   
 ### See also  
  [Manage users](../admin/create-users-assign-online-security-roles.md)   
