@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,14 +17,12 @@ search.app:
 ---
 # Add or remove sample data 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
-Sample data gives you something to experiment with as you learn model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and helps you see how data is organized in the system. At some point, you’ll probably want to remove the sample data.  
+Sample data gives you something to experiment with as you learn model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and helps you see how data is organized in the system. At some point, you'll probably want to remove the sample data.  
   
- Or, if sample data isn’t installed on your system, you may want to add it for training purposes. Later, when you’re ready, you can remove it.  
+ Or, if sample data isn't installed on your system, you may want to add it for training purposes. Later, when you're ready, you can remove it.  
   
 > [!IMPORTANT]
-> Use sample data to learn and play around with system features. However, to avoid unwanted results, don’t associate it with any data you actually need.  
+> Use sample data to learn and play around with system features. However, to avoid unwanted results, don't associate it with any data you actually need.  
   
 1. Make sure you have the System Administrator security role or equivalent permissions.
   
@@ -34,16 +32,17 @@ Sample data gives you something to experiment with as you learn model-driven app
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
-  
-3. Click **Sample Data**. You’ll see a message that tells you whether the sample data is currently installed.  
-  
-4. Do one of the following:  
-  
-    Click **Remove Sample Data**, and then click **Close**.  
-  
-    -OR-  
-  
-    Click **Install Sample Data**, and then click **Close**.  
-  
+1. Sign into the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/)
 
+1. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
+
+1. Select **Data management** to expand the category, then select **Sample data**.
+  
+1. A message appears that tells you whether the sample data is installed.  
+  
+1. Select an action at the bottom of the screen:  
+  
+   - **Remove Sample Data**, and then select **Close**.  
+   - **Install Sample Data**, and then select **Close**.  
+   - To close the screen without making changes, just select **Close**.
+  

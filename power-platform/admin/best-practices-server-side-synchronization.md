@@ -17,7 +17,7 @@ search.app:
 ---
 # Best practices for server-side synchronization 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 Consider the following when planning and deploying server-side synchronization.  
   
@@ -44,8 +44,8 @@ Consider the following when planning and deploying server-side synchronization.
 |--------------|--------------------|  
 |**Incoming Connection**||  
 |Authenticate Using|Credentials Specified in Email Server Profile|  
-|User Name|The administrator’s user name|  
-|Password|The administrator’s password|  
+|User Name|The administrator's user name|  
+|Password|The administrator's password|  
 |Use Impersonation|Yes|  
 |Use same settings for Outgoing|Yes|  
   
@@ -53,7 +53,7 @@ Consider the following when planning and deploying server-side synchronization.
   
 <a name="BKMK_EachUser"></a>   
 ### If you want to use individual credentials to process emails with Outlook or Exchange  
- An alternative to a single account to process emails is using individual accounts. This method requires more maintenance effort but does not focus security on a single account. If you want each user account to synchronize with [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and you’re not using the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile, use the following settings (**Settings** > **Email Configuration** > **Email Server Profiles**).  
+ An alternative to a single account to process emails is using individual accounts. This method requires more maintenance effort but does not focus security on a single account. If you want each user account to synchronize with [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and you're not using the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile, use the following settings (**Settings** > **Email Configuration** > **Email Server Profiles**).  
   
 |Settings|Recommendation|  
 |--------------|--------------------|  
