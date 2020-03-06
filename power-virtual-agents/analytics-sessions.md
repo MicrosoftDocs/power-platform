@@ -18,19 +18,19 @@ ms.collection: virtual-agent
 
 
 
-By default, you can download up to seven days of sessions from the past 30 days directly from the Power Virtual Agents portal.
+By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
 
 You can also download and view chat transcripts in the Power Apps portal.
 
 Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
 
-## Download session information from the Power Virtual Agents portal
+## Download session transcript information from the Power Virtual Agents portal
 
 1. Select **Analytics** on the side navigation pane. Go to the **Sessions** tab. 
 
     If your bot had a high number of sessions, they'll be broken down into multiple rows. Each row contains 2500 sessions. 
 
-1. Click on each row to download the sessions for the specified timeframe.
+1. Click on each row to download the session transcripts for the specified timeframe.
 
     ![Sessions page](media/analytics-sessions-billing.png)
 
@@ -64,6 +64,23 @@ You can also view and export bot conversation transcripts from the Power Apps po
 
 First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
 
+**To view the conversation transcripts**
+
+1. In the side navigation pane, expand the **Data** node. Select **Entities**. On the top right, expand **Default** and select **All**.
+
+    ![](media/powerapps-data-entities-view.png)
+
+1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Entities**.
+
+    ![](media/export-view-transcript.png)
+ 
+1. Select **Data** tab. Expand **Active conversationtranscripts** on top right and select **All fields**.
+
+    ![](media/export-view-all-fields.png)
+ 
+1. View the bot’s conversation transcripts.
+
+    ![](media/export-view-sessions.png)
 
 **To export the conversation transcripts**
 
@@ -77,27 +94,9 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
 1. Select **Download exported data** to download the content.
 
-    ![Download exported data](media/export-6.png)
-
-**To view the conversation transcripts**
-
-1. In the side navigation pane, expand the **Data** node. Select **Entities**. On the top right, expand **Default** and select **All**.
-
-    ![](media/export-view-filter.png)
-
-1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Entities**.
-
-    ![](media/export-view-transcript.png)
+    ![Download exported data](media/powerapps-download-1.png)
  
-1. Select **Data** tab. Expand **Active conversationtranscripts** on top right and select **All fields**.
-
-    ![](media/export-view-all-fields.png)
- 
-1. View the bot’s conversation transcripts.
-
-    ![](media/export-view-sessions.png)
- 
-## Change the default period of session information retention
+## Change the default period of session transcript retention
 
 By default, a pre-configured bulk delete job will remove all conversation transcripts older than 30 days. 
 
