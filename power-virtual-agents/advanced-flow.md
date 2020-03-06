@@ -83,7 +83,7 @@ The following types are not supported:
 - List [Timestamp]
 
 >[!NOTE]
->A bot is able to receive up to 1MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
+>A bot is able to receive up to 1 MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
 
 ### Input parameters
 
@@ -307,18 +307,11 @@ While testing your bot in the **Test chat** pane, you can use the **Save snapsho
 
         ![Conversational diagnostics file](media/conversation-file.png)
 
-    1. *botContent.json* contains...
-
->[!NOTE]
->What does botcontent.json contain?
+    1. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
 
 
+You can help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your Conversation ID to Microsoft. The Conversation ID is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file is not sent when you flag an issue.
 
-You can help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your Conversation ID to Microsoft.
-
->[!NOTE]
->What is the Conversation ID?
->What information is submitted - is it the same as what's in the dsat.zip file?
 
 ![Flag an issue](media/flag-issue.png)
 
