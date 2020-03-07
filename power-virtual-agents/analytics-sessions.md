@@ -64,7 +64,7 @@ You can also view and export bot conversation transcripts from the Power Apps po
 
 First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
 
-**To view the conversation transcripts**
+### View conversation transcripts
 
 1. In the side navigation pane, expand the **Data** node. Select **Entities**. On the top right, expand **Default** and select **All**.
 
@@ -78,11 +78,11 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
     ![](media/export-view-all-fields.png)
  
-1. View the bot’s conversation transcripts.
+1. View the botâ€™s conversation transcripts.
 
     ![](media/export-view-sessions.png)
 
-**To export the conversation transcripts**
+### Export conversation transcripts
 
 1. In the side navigation pane, expand the **Data** node. Select **Entities** and then **Export data**.
 
