@@ -1,7 +1,7 @@
 ---
 title: "Download Power Virtual Agents bot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
-ms.date: 2/27/2020
+ms.date: 3/6/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -74,7 +74,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
     ![](media/export-view-transcript.png)
  
-1. Select **Data** tab. Expand **Active conversationtranscripts** on top right and select **All fields**.
+1. Select **Data** tab. Expand **Active conversationtranscripts** and then select **All fields**.
 
     ![](media/export-view-all-fields.png)
  
