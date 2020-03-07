@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/06/2020
 ms.author: mhart
 search.audienceType: 
   - admin
@@ -17,9 +17,9 @@ search.app:
 ---
 # Connect to Social Engagement
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
-Your customers and stakeholders are talking about you on Facebook, Twitter, or blogs. How do you learn about it? In model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, you can get powerful social insights by connecting model-driven apps in Dynamics 365 to [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]. [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] collects data from social media websites and presents it to you in charts and graphs that you can use to spot emerging trends in people’s comments, whether they’re positive, negative, or neutral. You can drill down into the data and see who is mentioning you, where they posted the comment, and exactly what they said. Armed with these insights, you can pinpoint what you’re doing right, and address potential issues before bigger problems arise.  
+Your customers and stakeholders are talking about you on Facebook, Twitter, or blogs. How do you learn about it? In model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, you can get powerful social insights by connecting model-driven apps in Dynamics 365 to [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]. [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] collects data from social media websites and presents it to you in charts and graphs that you can use to spot emerging trends in people's comments, whether they're positive, negative, or neutral. You can drill down into the data and see who is mentioning you, where they posted the comment, and exactly what they said. Armed with these insights, you can pinpoint what you're doing right, and address potential issues before bigger problems arise.  
   
  With social insights, you bring social media data directly into model-driven apps in Dynamics 365 dashboards and entity forms. As an administrator, you configure the connection to [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] and add the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls to the entity forms and system dashboards. You use the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls to specify what social data you want to see and in what form you want this data to be presented to you. When you set up the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls, you choose a search topic or search topic category and visuals. For the search topic you may choose your company name to listen to what is said in social media about your company or your product. Or, you may want to know what is being said about your accounts; if so, choose the Accounts search topic category. After you choose the search topic or search category, you pick the visuals. It can be a graph or chart, or some other visual representation of data. You can find a lot of interesting, useful, and easy to follow information about social listening and social insights in this book: [eBook: Microsoft Social Engagement for CRM](https://go.microsoft.com/fwlink/p/?LinkID=393642).  
   
@@ -27,6 +27,7 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
 >  Before you can set up the Social Insights controls in model-driven apps in Dynamics 365, you have to add search topic categories and visuals for your  organization in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]. You can add search topics in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] directly from within model-driven apps in Dynamics 365. See the [Microsoft Social Engagement Help Center](https://go.microsoft.com/fwlink/p/?LinkID=394325)  
   
 <a name="BKMK_Connect"></a>   
+
 ## Connect to Social Engagement for Social Insights  
  To configure the connection, you need to have a subscription to [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)], be an authorized [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] user and have a [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] environment provisioned for this environment.  
   
@@ -35,14 +36,16 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
 > 
 > [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Connect Social Engagement to other domains](https://go.microsoft.com/fwlink/p/?linkid=403288)  
   
-1. Click **Settings** > **Administration** > **Microsoft Social Engagement Configuration**.  
-  
-2. Click **Continue** to accept the legal disclaimer.  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Integration** > **Microsoft Social Engagement**.  
+
+3. Select **Continue** to accept the legal disclaimer.  
   
    > [!NOTE]
-   >  You’re asked to accept this disclaimer  when you connect for the first time.  
+   >  You're asked to accept this disclaimer  when you connect for the first time.  
   
-3. On the **Microsoft Social Engagement Configuration** page, in the **Select the Microsoft Social Engagement solution to connect to** dropdown box, choose the [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] environment to which you want to connect. Choose the **Select** button next to the dropdown box. The **Select** button becomes grayed out to indicate that the selection is confirmed.  
+4. On the **Microsoft Social Engagement Configuration** page, in the **Select the Microsoft Social Engagement solution to connect to** dropdown box, choose the [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] environment to which you want to connect. Choose the **Select** button next to the dropdown box. The **Select** button becomes grayed out to indicate that the selection is confirmed.  
   
    ![Microsoft Social Engagement configuration](../admin/media/social-engagement-configuration.png "Social Engagement configuration")  
   
@@ -73,14 +76,17 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
    >  If your subscription is not eligible for [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)], see [Microsoft Dynamics Social Solutions](https://go.microsoft.com/fwlink/p/?LinkID=401462).  
   
 <a name="BKMK_Reset"></a>   
+
 ## Reset Social Insights  
   
 > [!WARNING]
 >  This action deletes all existing data for the search topics, search topic categories and visuals for [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)].  
+
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Integration** > **Microsoft Social Engagement**.   
   
-1. Click **Settings** > **Administration** > **Microsoft Social Engagement Configuration**.  
-  
-2. On the **Microsoft Social Engagement Configuration** page, choose **Reset Social Insights**. The **Reset Social Insights Confirmation** message box appears, choose **Confirm**, if you want to proceed, otherwise choose **Cancel**.  
+3. On the **Microsoft Social Engagement Configuration** page, choose **Reset Social Insights**. The **Reset Social Insights Confirmation** message box appears, choose **Confirm**, if you want to proceed, otherwise choose **Cancel**.  
   
    ![Confirm you want to reset Social Insights](../admin/media/social-engagement-confirm-reset.png "Confirm you want to reset Social Insights")  
   
@@ -89,36 +95,37 @@ Your customers and stakeholders are talking about you on Facebook, Twitter, or b
 ## Add the Social Insights control to an entity form  
  To add [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls to an entity (record type) form, you have to use the form editor provided in the **Customization** area. You can position the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] control anywhere on the form and resize it, just like you would do with the **iFrame** controls. You can make the control bigger by increasing the number of rows and spanning the control over several columns. This is important if you want to make a graph or a chart in the control appear larger and be more readable. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use the Form Editor](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-editor-user-interface-legacy).  
   
-1. Click **Settings** > **Customizations** > **Customize the System**.  
+1. In the web app, select **Settings** > **Customizations** > **Customize the System**.  
   
 2. In the Navigation Pane, under **Components**, expand **Entities**.  
   
 3. Expand the entity that you want to add the **[!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** control to. Choose **Forms**.  
   
-4. In the grid view, choose the entity’s Main form. The entity form opens.  
+4. In the grid view, choose the entity's Main form. The entity form opens.  
   
-5. Select the **Insert** tab. At the top of the form, on the ribbon, click the **[!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** icon. In the setup dialog box, fill out the required fields, such as the unique name of the control and the label name.  
+5. Select the **Insert** tab. At the top of the form, on the ribbon, select the **[!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** icon. In the setup dialog box, fill out the required fields, such as the unique name of the control and the label name.  
   
-    Click to enable **Pass record object-type code and unique identifier as parameters**.  
+    Select to enable **Pass record object-type code and unique identifier as parameters**.  
   
    ![Add the Social Insights control to the form](../admin/media/social-engagement-control.png "Add the Social Insights control to the form")  
   
-6. Click **OK**. The [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] control is now added to the entity form. You can resize the control or move the control to another location on the form.  
+6. Select **OK**. The [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] control is now added to the entity form. You can resize the control or move the control to another location on the form.  
   
 7. Switch back to the **Home** tab. Choose **Save** and then choose **Publish** to publish the added customizations. The control called **Configure Social Insights** appears on all records based on this form. The search topics, search categories and visuals can be added to the control.  
   
 > [!NOTE]
->  You don’t need administrator permissions to set up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] on the entity record.  
+>  You don't need administrator permissions to set up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] on the entity record.  
   
 <a name="BKMK_AddControls"></a>   
+
 ## Add and set up Social Insights controls on the system dashboards  
   
 > [!NOTE]
->  You don’t need administrator permissions to add and set up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls on the personal dashboard.  
+>  You don't need administrator permissions to add and set up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls on the personal dashboard.  
   
- You can add the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls to the existing system dashboards or to a new dashboard. Let’s create a new dashboard and add the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] control to it. We’ll use the **Set Up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** wizard to lead us through the setup. Shortly after the setup is finished and customizations are published, the charts and graphs with social data will appear on your dashboard.  
+ You can add the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] controls to the existing system dashboards or to a new dashboard. Let's create a new dashboard and add the [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)] control to it. We'll use the **Set Up [!INCLUDE[pn_social_insights](../includes/pn-social-insights.md)]** wizard to lead us through the setup. Shortly after the setup is finished and customizations are published, the charts and graphs with social data will appear on your dashboard.  
   
-1. Click **Settings** > **Customizations** > **Customize the System**.  
+1. In the web app, select **Settings** > **Customizations** > **Customize the System**.  
   
 2. In the Navigation Pane, under **Components**, choose **Dashboards**.  
   
