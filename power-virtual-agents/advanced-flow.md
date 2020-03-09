@@ -316,4 +316,4 @@ You can help us improve Power Virtual Agents by flagging issues with the **Flag 
 ![Flag an issue](media/flag-issue.png)
 
 
-All information collected with the **Flag an issue** command adheres to [Microsoft’s privacy policy](https://privacy.microsoft.com/privacystatement) and will be used anonymously to help improve bot quality.
+All information collected is anonymous and will be used to help improve bot quality.
