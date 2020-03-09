@@ -43,15 +43,21 @@ Follow the steps to configure your Power Virtual Agents' bot to accept 'exchange
 * Select the 'Azure Active Directory Resource'
 * Click on 'New Registration' -- Fill out Name, Selecting Single / Multitenant and click 'Next'
 * Once the resource is created, go to the Authentication
-* Add the host address into the ‘Redirect URI’ field and make sure that ‘Web’ is selected as the Type. Also ensure
-that 'Id Tokens' and 'Access' Tokens are selected.
+* Add the host address into the `Redirect URI` field and make sure that `Web` is selected as the Type. Also ensure
+that `Id Tokens` and `Access` Tokens are selected.
 * Click 'Save' at the top
 * Take a note of the `Client ID` and your `Directory ID`.
 
-### 2. Update your custom canvas to intercept sign-in prompts
+### 2. Add 'Token exchange URL' to your bot's authentication page
+<@Kyle - add blurb on why it's needed>
 
-* Update your index.html to intercept OAuth card request and exchange your token
-* Configure MSAL by adding this code into your `<script>` tag:
+* Navigate to `Configure` --> `Authentication`
+* Update `Token exchange URL` with the URL configured in Step 1.
+
+### 3. Update your custom canvas to intercept sign-in prompts
+
+* Update your `index.html` to intercept login card request and exchange your token
+* Configure Microsoft Authentication Library (MSAL) by adding this code into your `<script>` tag:
 
 ```javascript
 <script>
@@ -59,8 +65,8 @@ that 'Id Tokens' and 'Access' Tokens are selected.
      (function ()
        var msalConfig = {
            auth: {
-             clientId: ' Client ID [CanvasClientId]',
-             authority: 'https://login.microsoftonline.com/Directory (tenant) ID [TenantId]'
+             clientId: '<Client ID [CanvasClientId]>',
+             authority: 'https://login.microsoftonline.com/<Directory ID>'
            },
            cache: {
              cacheLocation: 'localStorage',
@@ -157,3 +163,7 @@ const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
 
 ## Compliance considerations
 Security and privacy considerations - scope, token caching, etc.
+
+## FAQs
+1. How do we configure our Skills with Single-Sign-On?
+A) 
