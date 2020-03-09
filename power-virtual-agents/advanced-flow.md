@@ -1,8 +1,8 @@
 ---
-title: "Automate Power Virtual Agents bot activities with flows"
+title: "Automate Power Virtual Agents bot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: ""
-ms.date: 1/28/2020
+ms.date: 3/9/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -83,7 +83,7 @@ The following types are not supported:
 - List [Timestamp]
 
 >[!NOTE]
->A bot is able to receive up to 1MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
+>A bot is able to receive up to 1 MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
 
 ### Input parameters
 
@@ -282,4 +282,38 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 ![Test Dialog](media/GetWeatherE2E.png)
 
 
+## Troubleshoot your bot
 
+While testing your bot in the **Test chat** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect. 
+
+>[!WARNING]
+>The snapshot contains all of your bot content, which may include sensitive information.
+
+1. At the top of the **Test chat** pane, select the menu icon (three vertical periods) and then **Save snapshot**.
+
+    ![Save snapshot](media/save-snapshot.png)
+
+2. In the window that appears, select **Save**.
+
+    ![Save snapshot message](media/save-snapshot-window.png)
+
+3. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
+
+    ![Conversational diagnostics archive](media/dsat.png)
+
+4. The *DSAT.zip* file contains two files: *botContent.json* and *dialog.json*. 
+
+    1. *dialog.json* contains conversational diagnostics, including detailed descriptions of errors.
+
+        ![Conversational diagnostics file](media/conversation-file.png)
+
+    1. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
+
+
+You can help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
+
+
+![Flag an issue](media/flag-issue.png)
+
+
+All information collected is anonymous and will be used to help improve bot quality.
