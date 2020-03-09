@@ -111,48 +111,48 @@ function exchangeTokenAsync(resourceUri) {
 
 ```javascript
 const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
-const { type } = action;
- if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
- const activity = action.payload.activity;
- let resourceUri;
- if (activity.from && activity.from.role === 'bot' &&
-(resourceUri = getOAuthCardResourceUri(activity))) {
- exchangeTokenAsync(resourceUri).then(function (token) {
- if (token) {
- directLine.postActivity({
- type: 'invoke',
- name: 'signin/tokenExchange',
- value: {
- id: activity.attachments[0].content.tokenExchangeResource.id,
- connectionName: activity.attachments[0].content.connectionName,
- token
- },
- "from":{id:"",name:"",role:"user"}
- }).subscribe(
- id => {
- if (id === 'retry') {
- // bot was not able to handle the invoke, so display the oauthCard
- return next(action);
- }
- // else: tokenexchange successful and we do not display the oauthCard
- },
- error => {
- // an error occurred to display the oauthCard
- return next(action);
- }
- );
- return;
- }
- else
- return next(action);
- });
- }
- else
- return next(action);
- }
- else
- return next(action);
- });
+    const { type } = action;
+     if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
+         const activity = action.payload.activity;
+         let resourceUri;
+         if (activity.from && activity.from.role === 'bot' &&
+            (resourceUri = getOAuthCardResourceUri(activity))) {
+            exchangeTokenAsync(resourceUri).then(function (token) {
+             if (token) {
+             directLine.postActivity({
+             type: 'invoke',
+             name: 'signin/tokenExchange',
+             value: {
+               id: activity.attachments[0].content.tokenExchangeResource.id,
+               connectionName: activity.attachments[0].content.connectionName,
+               token
+              },
+             "from":{id:"",name:"",role:"user"}
+             }).subscribe(
+         id => {
+         if (id === 'retry') {
+           // bot was not able to handle the invoke, so display the oauthCard
+           return next(action);
+        }
+     // else: tokenexchange successful and we do not display the oauthCard
+     },
+     error => {
+       // an error occurred to display the oauthCard
+       return next(action);
+     }
+     );
+   return;
+   }
+   else
+     return next(action);
+   });
+   }
+   else
+     return next(action);
+   }
+   else
+     return next(action);
+});
 ```
 
 ## Compliance considerations
