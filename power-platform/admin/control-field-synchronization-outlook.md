@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/25/2019
+ms.date: 03/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,11 +17,11 @@ search.app:
 ---
 # Control field synchronization with Outlook
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 With field synchronization, admins can set the sync direction between model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)] fields. You can control synchronization when using either [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization or server-side synchronization ([!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]).  
   
- For example, a salesperson may want to take personal notes about a contact and not want the notes to synchronize with data available to all users. An admin can set the Personal Notes field for contacts in Outlook to not synchronize [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] with model-driven apps in Dynamics 365 so the salesperson’s notes will remain private.  
+ For example, a salesperson may want to take personal notes about a contact and not want the notes to synchronize with data available to all users. An admin can set the Personal Notes field for contacts in Outlook to not synchronize [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] with model-driven apps in Dynamics 365 so the salesperson's notes will remain private.  
   
 > [!TIP]
 > ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Configurability in Synchronizing Data with Outlook or Exchange in Microsoft Dynamics CRM 2015](https://youtu.be/BMZsVUuaklo?list=PLC3591A8FE4ADBE07)  
