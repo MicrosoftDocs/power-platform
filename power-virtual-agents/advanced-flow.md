@@ -2,7 +2,7 @@
 title: "Automate Power Virtual Agents bot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: ""
-ms.date: 1/28/2020
+ms.date: 3/9/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
