@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,11 +17,11 @@ search.app:
 ---
 # Create or edit a site to specify location
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 You can create a new site to add an office location or other facility where service operations take place. You can also edit the details, such as the street address or phone number, for an existing site.  
   
-1. [!INCLUDE[proc_settings_bus_management](../includes/proc-settings-bus-management.md)]  
+1. In the web app, go to **Settings** > **Business Management**.
   
 2. Choose **Sites**.  
   

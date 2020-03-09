@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/11/2018
+ms.date: 03/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Create or edit a security role to manage access
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   
@@ -33,21 +31,21 @@ You can create new security roles to accommodate changes in your business requir
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
-  
-3. Click **Security Roles**.  
-  
-4. On the Actions toolbar, click **New**.  
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Users + permissions** > **Security roles**.  
+   
+4. On the Actions toolbar, select **New**.  
   
 5. Set the privileges on each tab.  
   
-    To change the access level for a privilege, click the symbol until you see the symbol you want. The possible access levels depend on whether the record type is organization-owned or user-owned.  
+    To change the access level for a privilege, select the symbol until you see the symbol you want. The possible access levels depend on whether the record type is organization-owned or user-owned.  
   
    > [!TIP]
-   >  To cycle through the access levels, you can also click the privilege column heading, or click the record type multiple times.  
+   >  To cycle through the access levels, you can also select the privilege column heading, or select the record type multiple times.  
    >  There are a set of minimum privileges that are required in order for the new security role to be used - see below Minimum Privileges for common tasks.
   
-6. When you have finished configuring the security role, on the toolbar, click or tap **Save and Close**.  
+6. When you have finished configuring the security role, on the toolbar, select or tap **Save and Close**.  
   
 ## Create a security role by Copy Role
 
@@ -59,31 +57,31 @@ You can create new security roles to accommodate changes in your business requir
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
-  
-3. Click **Security Roles**.  
-  
-4. Click on the Security role you want to copy from.
+2. In the Power Platform admin center, select an environment. 
 
-5. On the Actions toolbar, click **Copy Role**.  
+3. Select **Settings** > **Users + permissions** > **Security roles**.  
+  
+4. Select the Security role you want to copy from.
+
+5. On the Actions toolbar, select **Copy Role**.  
 
 6. Enter the New Role Name, and check the box for **Open the new security role when copying is complete**.
 
-7. Click the OK button.
+7. Select **OK**.
   
 8. When Copying Role is complete, navigate to each tab, ie Core Records, Business Management, Customization, etc.
 
 9. Set the privileges on each tab.
 
 > [!TIP]
->  To cycle through the access levels, you can also click the privilege column heading, or click the record type multiple times.  
+>  To cycle through the access levels, you can also select the privilege column heading, or select the record type multiple times.  
 >  There are a set of minimum privileges that are required in order for the new security role to be used - see below Minimum Privileges for common tasks.
 
 ## Edit a security role  
  Before you edit an existing security role, make sure that you understand the principles of data access. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Controlling Data Access](../admin/security-roles-privileges.md)  
   
 > [!NOTE]
->  You can’t edit the System Administrator security role. To create a security role similar to the System Administrator security role, copy the System Administrator security role, and make changes to the new role.  
+>  You can't edit the System Administrator security role. To create a security role similar to the System Administrator security role, copy the System Administrator security role, and make changes to the new role.  
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -93,21 +91,21 @@ You can create new security roles to accommodate changes in your business requir
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Users + permissions** > **Security roles**.  
   
-3. Click **Security Roles**.  
-  
-4. In the list of security roles, double-click or tap a name to open the page associated with that security role.  
+4. In the list of security roles, double-select or tap a name to open the page associated with that security role.  
   
 5. Set the privileges on each tab.  
   
-    To change the access level for a privilege, click the symbol until you see the symbol you want. The possible access levels depend on whether the record type is organization-owned or user-owned.  
+    To change the access level for a privilege, select the symbol until you see the symbol you want. The possible access levels depend on whether the record type is organization-owned or user-owned.  
   
    > [!TIP]
-   >  To cycle through the access levels, you can also click the privilege column heading, or click the record type multiple times.  
+   >  To cycle through the access levels, you can also select the privilege column heading, or select the record type multiple times.  
    >  There are a set of minimum privileges that are required in order for the new security role to be used - see below Minimum Privileges for common tasks. 
     
-6. When you have finished configuring the security role, on the toolbar, click or tap **Save and Close**.  
+6. When you have finished configuring the security role, on the toolbar, select or tap **Save and Close**.  
   
 ## Minimum privileges for common tasks  
  It's helpful to keep in mind the minimum privileges that are needed for some common tasks. This means that a user is required to have a security role with these privileges in order to run applications. 
