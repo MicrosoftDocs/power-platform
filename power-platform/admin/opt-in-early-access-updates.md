@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/14/2020
+ms.date: 03/10/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -181,7 +181,7 @@ The following are the current schedules for when the 2020 release wave 1 feature
 
 |Regions  |General availability release update window  |
 |---------|---------|
-|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa  |  Friday, April 3rd – Sunday, April 5th       |
+|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, April 3rd – Sunday, April 5th       |
 |Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, April 10th – Sunday April 12th        |
 |Europe     | Friday, April 17th – Sunday, April 19th        |
 |North America     |  Friday, April 24th – Sunday, April 26th       |
