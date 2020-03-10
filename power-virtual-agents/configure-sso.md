@@ -25,7 +25,7 @@ Power Virtual Agents enables you to author personalized conversations and perfor
 ## Overview
 The following illustration gives you an overview of how Single Sign-on works end-to-end.
 
-[Illustration goes here]
+  ![Illustration of SSO auth flow](media/sso-illustration.png)
 
 1. Customer enters a trigger phrase that triggers a topic that is authored to sign-in the user and use user's authenticated token (AuthToken)
 1. On trigger, Power Virtual Agents sends a login prompt to allow user to sign-in with their configured identity provider
