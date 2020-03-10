@@ -21,7 +21,8 @@ Power Virtual Agents enables handing off bot conversations seamlessly and contex
 * Build a bot using Power Virtual Agents
 * An engagement hub capable of interacting programmatically using APIs and/or SDK
 
-[!Note] Disclaimer: Audience - Developer, no 
+>[!Note]
+> Audience - Developer, no 
 
 ## Overview
 
@@ -75,8 +76,8 @@ Hand-off is currently only supported over DirectLine - [learn more about interac
                   "id": "91hcXEd0ZYCBPoRwBDPHZ6-o"
                 },
                 "recipient": {
-                  "id": "f074b91b-2f8c-4543-bbcc-7226e9662c01@fadZN3vAcL8",
-                  "name": "Test501",
+                  "id": "<REDACTED>",
+                  "name": "Contoso Bot",
                   "role": "bot"
                 },
                 "textFormat": "plain",
@@ -110,8 +111,8 @@ Hand-off is currently only supported over DirectLine - [learn more about interac
                 "serviceUrl": "https://directline.botframework.com/",
                 "channelId": "directline",
                 "from": {
-                  "id": "f074b91b-2f8c-4543-bbcc-7226e9662c01@fadZN3vAcL8",
-                  "name": "Test501",
+                  "id": "<REDACTED>",
+                  "name": "Contoso Bot",
                   "role": "bot"
                 },
                 "conversation": {
@@ -171,8 +172,8 @@ Hand-off is currently only supported over DirectLine - [learn more about interac
                 "serviceUrl": "https://directline.botframework.com/",
                 "channelId": "directline",
                 "from": {
-                  "id": "f074b91b-2f8c-4543-bbcc-7226e9662c01@fadZN3vAcL8",
-                  "name": "Test501",
+                  "id": "<REDACTED>",
+                  "name": "Contoso Bot",
                   "role": "bot"
                 },
                 "conversation": {
@@ -267,7 +268,7 @@ Hand-off is currently only supported over DirectLine - [learn more about interac
 ### Extract context from hand-off message
 In order to leverage context, you must parse the `handoff.initiate` event activity. The following snippet of code parses the above event activity and extract context. [Click here for the full code sample](https://link to sample).
 
-```
+```C#
         public void InitiateHandoff(string botresponseJson)
         {
             BotResponse response = JsonConvert.DeserializeObject<BotResponse>(botresponseJson);
