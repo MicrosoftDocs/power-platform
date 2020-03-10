@@ -1,6 +1,6 @@
 ---
 title: "Use topics to design a Power Virtual Agents bot conversation"
-description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, performa actions, and solve issues."
+description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: ""
 ms.date: 11/14/2019
 ms.service:
