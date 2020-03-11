@@ -16,11 +16,11 @@ search.app:
 ---
 
 # Download a list of active users in your tenant
-If you're a 365 Global admin or Azure Active Directory Tenant admin, you can download a list of active users in your tenant, so you can see not only who's accessed Power Apps, Power Automate, or both, but also the licenses assigned to those users.
+If you're a 365 Global admin or Power Platform admin, you can download a list of active users in your tenant, so you can see not only who's accessed Power Apps, Power Automate, or both, but also the licenses assigned to those users.
 
 In this topics, you'll learn how to download a list of active users to a .csv file, and then view that list in Excel.
 
-To follow the steps, you need Office 365 Global Admin or Azure Active Directory Tenant Admin permissions.
+To follow the steps, you need Office 365 Global Admin or Power Platform admin permissions.
 
 ## Sign in to the Power Apps Admin center
 Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
@@ -33,7 +33,7 @@ In the navigation pane, click or tap **User licenses**, and then click or tap **
 The list of users is downloaded into a .csv file. This process could take several minutes. Make sure that you don't close the window before the list completely downloads or you may have to restart the process.
 
 ## View the list
-After the .csv file is created, open it in Excel. The list contains each user’s name, email address, license type, and other information.
+After the .csv file is created, open it in Excel. The list contains each user's name, email address, license type, and other information.
 
 A user who's accessed a product at least once is considered an *active user*. Since this is a list of active users, it does not contain users who have licenses for Power Apps and Power Automate but have never accessed them. You can view all user licenses from the [Microsoft 365 admin center](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 

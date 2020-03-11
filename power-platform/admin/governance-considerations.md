@@ -28,7 +28,7 @@ Many customers wonder: How can Power Apps and Power Automate be made available t
 |Monitor     | <ul><li>How are we capturing compliance / auditing data?</li> <br /><li>How can I measure adoption and usage within my organization?</li></ul> |
 
 ## Architecture
-It’s best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a Power Apps, Power Automate and Common Data Service. [Environments Overview](environments-overview.md) is a good primer which should be followed by [Common Data Service](wp-cds-for-apps.md), [Types of Power Apps](wp-types-powerapps.md), [Microsoft Power Automate](wp-about-flows.md), [Connectors](wp-connectors.md),  and [On-premises Gateways](wp-onpremises-gateway.md). 
+It's best to familiarize oneself with Environments as the first step to building the right governance story for your company. Environments are the containers for all resources utilized by a Power Apps, Power Automate and Common Data Service. [Environments Overview](environments-overview.md) is a good primer which should be followed by [Common Data Service](wp-cds-for-apps.md), [Types of Power Apps](wp-types-powerapps.md), [Microsoft Power Automate](wp-about-flows.md), [Connectors](wp-connectors.md),  and [On-premises Gateways](wp-onpremises-gateway.md). 
 
 ## Security 
 This section outlines mechanisms that exist to control who can access Power Apps in an environment and access data: licenses, environments, environment roles, Azure Active Directory, Data Loss Prevention policies and admin connectors that can be used with Power Automate. 
@@ -51,7 +51,7 @@ Access to Power Apps and Power Automate starts with having a license, the type o
 After users have licenses, environments exist as containers for all resources utilized by Power Apps, Power Automate and Common Data Service. Environments can be used to target different audiences and/or for different purposes such as developing, testing and production. More information can be found in the [Environments Overview](environments-overview.md).
 
 ### Secure your data and network
-- Power Apps and Power Automate *do not* provide users with access to any data assets that they don’t already have access to. Users should only have access to data that they really require access to.
+- Power Apps and Power Automate *do not* provide users with access to any data assets that they don't already have access to. Users should only have access to data that they really require access to.
 - Network Access control policies can also apply to Power Apps and Power Automate. For environment, one can block access to a site from within a network by blocking the sign-on page to prevent connections to that site from being created in Power Apps and Power Automate. 
 - In an environment, access is controlled at three levels: [Environment roles](database-security.md), Resource permissions for Power Apps, Power Automate, etc… and [Common Data Service security roles](wp-security-cds.md) (if a Common Data Service data base is provisioned). 
 - When Common Data Service is created in an environment the Common Data Service roles will take over for controlling security in the environment (and all environment admins and makers are migrated).
@@ -76,10 +76,10 @@ The following principals are supported for each role type.
 
 #### FAQ - What permissions exist at an Azure AD tenant level? 
 
-Today, Azure AD global tenant admins can perform the following: 
+Today, Power Platform admins can perform the following: 
 
 1. Download the Power Apps & Power Automate license report
-1. Create DLP policy scoped only to ‘All Environments’ or scoped to include/exclude specific environments
+1. Create DLP policy scoped only to 'All Environments' or scoped to include/exclude specific environments
 1. Manage and assign licenses via Office admin center
 1. Access all environment, app, and flow management capabilities for all environments in the tenant available through:
     - Power Apps Admin center
@@ -109,7 +109,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 
 ### Prevent data leakage with data loss prevent policies
 
-[Data loss prevention policies (DLP)](wp-data-loss-prevention.md) enforce rules for which connectors can be used together by classifying connectors as either Business Data only or No Business Data allowed. Simply, if you put a connector in the business data only group, it can only be used with other connectors from that group in the same application. Tenant admins can define policies that apply to all environments.
+[Data loss prevention policies (DLP)](wp-data-loss-prevention.md) enforce rules for which connectors can be used together by classifying connectors as either Business Data only or No Business Data allowed. Simply, if you put a connector in the business data only group, it can only be used with other connectors from that group in the same application. Power Platform admins can define policies that apply to all environments.
 
 #### FAQ
 
@@ -131,12 +131,12 @@ Environment and app management requires a Power Apps plan or a Power Automate pl
 
 1. View and manage environments.
 2. View and manage all apps and flows within an environment.
-	 
+     
 
 ### Build Power Automate flows to alert on key audit events
 
-1.	An example of alerting that can be implemented is subscribing to Office 365 Security and Compliance Audit Logs. 
-2.	This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
+1.    An example of alerting that can be implemented is subscribing to Office 365 Security and Compliance Audit Logs. 
+2.    This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
 
 ### Build the policies you need with Power Apps, Power Automate, and PowerShell
 
@@ -148,7 +148,7 @@ Environment and app management requires a Power Apps plan or a Power Automate pl
     1. [Email me a weekly summary of Office 365 Message Center notices](https://preview.flow.microsoft.com/galleries/public/templates/c2537df7b47340e6bcf1ba931a459355/email-me-a-weekly-summary-of-office-365-message-center-notices/)
     1. [Access Office 365 Security and Compliance Logs from Power Automate](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/)
 1. Use this [blog and app template](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) ramp up quickly on the administration connectors. 
-1. Additionally, it’s worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here’s another example of an administrative experience built using Power Apps and admin connectors.
+1. Additionally, it's worth checking out content shared in the [Community Apps Gallery](https://powerusers.microsoft.com/t5/Community-Apps-Gallery/PowerApps-admin-app-version-2/m-p/247560), here's another example of an administrative experience built using Power Apps and admin connectors.
 
 ### FAQ
 
@@ -167,7 +167,7 @@ This scripts downloads 4 files, which capture all apps, app permission, flows, a
    > [!NOTE]
    > The calling user or user account must be a global admin and must have a Power Apps plan or a Power Apps trial.
 
-2. Notify un-authorized app creators and share their app with administrators (automated with Power Automate). This is a daily flow that identified ‘authorized’ creators via a security group(s) check and sends a notification to un-authorized app creators and a summary report to administrators. The flow also shares the app with administrators for auditing.
+2. Notify un-authorized app creators and share their app with administrators (automated with Power Automate). This is a daily flow that identified 'authorized' creators via a security group(s) check and sends a notification to un-authorized app creators and a summary report to administrators. The flow also shares the app with administrators for auditing.
 
 3. Find and disable flows that leverage certain connectors
 This is a flow that runs every 30 minutes and automatically disables flows that include certain connectors. In this flow I identified flows from the following connectors – but the flow can be extended to identify any connector.
@@ -175,7 +175,7 @@ This is a flow that runs every 30 minutes and automatically disables flows that 
 
 ## Monitor
 
-It’s well understood that monitoring as a critical aspect of managing software at scale, this section highlights a couple of means to get insight in Power Apps and Power Automate development and usage.  
+It's well understood that monitoring as a critical aspect of managing software at scale, this section highlights a couple of means to get insight in Power Apps and Power Automate development and usage.  
 
 ### Review the audit trail
 
@@ -206,38 +206,38 @@ It’s well understood that monitoring as a critical aspect of managing software
 <!--
 ## Deploy
 
-The means by which software is developed, validated and deployed to a production environment is an important topic for each organization and happens to vary greatly from one organization to the next. As a reference, this section outlines how Microsoft’s central IT organization manages and deploys Power Apps.
+The means by which software is developed, validated and deployed to a production environment is an important topic for each organization and happens to vary greatly from one organization to the next. As a reference, this section outlines how Microsoft's central IT organization manages and deploys Power Apps.
 
 ### How does Microsoft manage environments, maker roles, DLP policies? 
 
-1.	Microsoft IT maintains at least 2 environments. 
-2.	Admin and maker roles are assigned only to security groups, not individuals. 
-3.	Environments are *not* geo-redundant. 
-4.	The region for an environment is selected based on proximity to the users it will serve.
-5.	Microsoft created an app services API that exposes app URLs by SG membership so we can support geo-redundancy (but don’t do so currently).
-6.	For development, there exists a sandbox environment where Makers can create apps here under their own user identity.
-7.	For User Acceptance Testing, there exists an environment to test integration with other applications, deployment procedures, single-sign-on, etc… Apps are authored by an official AAD security group account. 
-8.	For production, there is a unique AAD security group for makers than for development and UAT. Apps are authored by the official AAD SG account. Deployment to this environment is locked down to avoid disruption and ensure the environment telemetry is accurate.
-9.	Default DLP policies exist for the entire tenant that limit access to business data.
+1.    Microsoft IT maintains at least 2 environments. 
+2.    Admin and maker roles are assigned only to security groups, not individuals. 
+3.    Environments are *not* geo-redundant. 
+4.    The region for an environment is selected based on proximity to the users it will serve.
+5.    Microsoft created an app services API that exposes app URLs by SG membership so we can support geo-redundancy (but don't do so currently).
+6.    For development, there exists a sandbox environment where Makers can create apps here under their own user identity.
+7.    For User Acceptance Testing, there exists an environment to test integration with other applications, deployment procedures, single-sign-on, etc… Apps are authored by an official AAD security group account. 
+8.    For production, there is a unique AAD security group for makers than for development and UAT. Apps are authored by the official AAD SG account. Deployment to this environment is locked down to avoid disruption and ensure the environment telemetry is accurate.
+9.    Default DLP policies exist for the entire tenant that limit access to business data.
 
 ### How does Microsoft share apps and connectors? 
 
-1.	Apps and connectors are shared to security groups only.
-2.	Apps are directly authored in the studio for the development environment. Apps are then exported and imported into other environments. 
-3.	Custom Connectors are shared to the entire org. 
-4.	Since we restrict makers by access-control-lists, non-authorized users cannot enumerate environments in the powerapps studio nor can they re-use our connection objects to create unsponsored apps
-5.	For development, connectors are shared as ‘Can Edit’ with the same SG used for the environment maker role and we allow the makers to create Custom Connectors.
-6.	In UAT and Production, Custom Connectors are created under a service account and shared as ‘can use’ to the entire org and ‘Can Edit’ to our maker SG.
-7.	Custom Connectors are patched for single-sign-on. 
-8.	AAD app registrations are admin consented.
-9.	The connection object is patched to use aadcertificate auth under the context of the Power Apps API Hub
-10.	SQL connectors and push notification connectors show up in the Connections view as they are a shared environment. Makes must be educated to not delete these, as they are *not* a personal connection environment of a custom connector and deleting them will delete it for all users.
+1.    Apps and connectors are shared to security groups only.
+2.    Apps are directly authored in the studio for the development environment. Apps are then exported and imported into other environments. 
+3.    Custom Connectors are shared to the entire org. 
+4.    Since we restrict makers by access-control-lists, non-authorized users cannot enumerate environments in the powerapps studio nor can they re-use our connection objects to create unsponsored apps
+5.    For development, connectors are shared as 'Can Edit' with the same SG used for the environment maker role and we allow the makers to create Custom Connectors.
+6.    In UAT and Production, Custom Connectors are created under a service account and shared as 'can use' to the entire org and 'Can Edit' to our maker SG.
+7.    Custom Connectors are patched for single-sign-on. 
+8.    AAD app registrations are admin consented.
+9.    The connection object is patched to use aadcertificate auth under the context of the Power Apps API Hub
+10.    SQL connectors and push notification connectors show up in the Connections view as they are a shared environment. Makes must be educated to not delete these, as they are *not* a personal connection environment of a custom connector and deleting them will delete it for all users.
 
 ### How does Microsoft prepare for disaster recovery?
 
-1.	For canvas apps, versioning is built-in the service and any maker can restore an app to a preview version. See [https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app](https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app).
-2.	For Microsoft Flows, we use the export feature to download the flow as a .zip package and archive the package.
-3.	For all Common Data Service components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](backup-restore-environments.md).
+1.    For canvas apps, versioning is built-in the service and any maker can restore an app to a preview version. See [https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app](https://docs.microsoft.com/powerapps/maker/canvas-apps/restore-an-app).
+2.    For Microsoft Flows, we use the export feature to download the flow as a .zip package and archive the package.
+3.    For all Common Data Service components, which use the same platform that powers Dynamics 365 apps, it benefits from the [built-in daily backup and restore capabilities](backup-restore-environments.md).
 -->
 
 
