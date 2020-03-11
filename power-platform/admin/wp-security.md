@@ -2,7 +2,7 @@
 title: "Security in Common Data Service | MicrosoftDocs"
 description: Provides information about the security concepts in Common Data Service.
 ms.custom: ""
-ms.date: 06/18/2019
+ms.date: 03/10/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.topic: "get-started-article"
@@ -24,11 +24,15 @@ The following is a high-level overview of how security model is implemented in C
 - Users are authenticated by Azure Active Directory (Azure AD).
 - Licensing is the first control-gate to allowing access to Power Apps components.
 - Ability to create applications and flows is controlled by security roles in the context of environments.
-- A user’s ability to see and use apps is controlled by sharing the application with the user. Sharing of [canvas apps](/powerapps/maker/canvas-apps/getting-started) is done directly with a user or Azure AD group but is still subject to Common Data Service security roles. Sharing of [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) is done via Common Data Service security roles.
+- A user's ability to see and use apps is controlled by sharing the application with the user. Sharing of [canvas apps](/powerapps/maker/canvas-apps/getting-started) is done directly with a user or Azure AD group but is still subject to Common Data Service security roles. Sharing of [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) is done via Common Data Service security roles.
 - Environments act as security boundaries allowing different security needs to be implemented in each environment.
 - Flows and Canvas apps use connectors, the specific connections credentials and associated service entitlements determine permissions when apps use the connectors.
 - Environments with Common Data Service add support for more advanced security models that are specific to controlling access to data and services in the Common Data Service environment.
 
 ### See also
 [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)<br/>
-[Security concepts in Common Data Service](wp-security-cds.md)
+[Security concepts in Common Data Service](wp-security-cds.md)<br />
+[Data loss prevention policies](wp-data-loss-prevention.md)<br />
+[Block access by location with Azure AD Conditional Access](restrict-access-online-trusted-ip-rules.md)<br />
+[Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md)<br />
+[Manage security for your environments](environments-administration.md#manage-security-for-your-environments)
