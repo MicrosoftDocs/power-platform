@@ -42,7 +42,7 @@ For more information on the different roles for managing your tenant across the 
 
 - **Deprecating Organization Insights dashboard**: This dashboard will be removed from Common Data Service in future releases. 
 
-- **Monitor adoption and use**: Identify your most active users, the number and types of operations they’re performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
+- **Monitor adoption and use**: Identify your most active users, the number and types of operations they're performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
 
 - **Manage storage and performance**: Monitor storage quotas, storage use, and top tables by size to optimize performance.  
 
@@ -112,18 +112,18 @@ For more information on the different roles for managing your tenant across the 
 
 |Chart|Update frequency|  
 |-----------|----------------------|  
-|Total Active Users|1 hour|  
-|Most Used Entities|1 hour|  
-|Most Active Users (Reads)|1 hour|  
-|Total API Calls|1 hour|  
-|Total Page Requests|1 hour|  
-|Most Active Users (Changes)|1 hour|  
-|Total Operations|1 hour|  
-|Active Users Performing Specific Operations|1 hour|  
-|Active Users|1 hour|  
-|Most Active Users Performing Operations|1 hour|  
-|Most Used Custom Entities|1 hour|  
-|Most Used OOB Entities|1 hour|  
+|Total Active Users|24 hours|  
+|Most Used Entities|24 hours|  
+|Most Active Users (Reads)|24 hours|  
+|Total API Calls|24 hours|  
+|Total Page Requests|24 hours|  
+|Most Active Users (Changes)|24 hours|  
+|Total Operations|24 hours|  
+|Active Users Performing Specific Operations|24 hours|  
+|Active Users|24 hours|  
+|Most Active Users Performing Operations|24 hours|  
+|Most Used Custom Entities|24 hours|  
+|Most Used OOB Entities|24 hours|  
 
 <!--
 ## Users - Mode of Access
@@ -170,18 +170,18 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 |Chart|Update frequency|  
 |-----------|----------------------|  
-|Total Active Users|1 hour|  
-|Most Used Entities|1 hour|  
-|Most Active Users (Reads)|1 hour|  
-|Total API Calls|1 hour|  
-|Total Page Requests|1 hour|  
-|Most Active Users (Changes)|1 hour|  
-|Total Operations|1 hour|  
-|Active Users Performing Specific Operations|1 hour|  
-|Active Users|1 hour|  
-|Most Active Users Performing Operations|1 hour|  
-|Most Used Custom Entities|1 hour|  
-|Most Used OOB Entities|1 hour|  
+|Total Active Users|24 hours|  
+|Most Used Entities|24 hours|  
+|Most Active Users (Reads)|24 hours|  
+|Total API Calls|24 hours|  
+|Total Page Requests|24 hours|  
+|Most Active Users (Changes)|24 hours|  
+|Total Operations|24 hours|  
+|Active Users Performing Specific Operations|24 hours|  
+|Active Users|24 hours|  
+|Most Active Users Performing Operations|24 hours|  
+|Most Used Custom Entities|24 hours|  
+|Most Used OOB Entities|24 hours|  
 -->
 <!--
 ## Content Usage
@@ -206,18 +206,18 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 |Chart|Update frequency|  
 |-----------|----------------------|  
-|Total Active Users|1 hour|  
-|Most Used Entities|1 hour|  
-|Most Active Users (Reads)|1 hour|  
-|Total API Calls|1 hour|  
-|Total Page Requests|1 hour|  
-|Most Active Users (Changes)|1 hour|  
-|Total Operations|1 hour|  
-|Active Users Performing Specific Operations|1 hour|  
-|Active Users|1 hour|  
-|Most Active Users Performing Operations|1 hour|  
-|Most Used Custom Entities|1 hour|  
-|Most Used OOB Entities|1 hour|  
+|Total Active Users|24 hours|  
+|Most Used Entities|24 hours|  
+|Most Active Users (Reads)|24 hours|  
+|Total API Calls|24 hours|  
+|Total Page Requests|24 hours|  
+|Most Active Users (Changes)|24 hours|  
+|Total Operations|24 hours|  
+|Active Users Performing Specific Operations|24 hours|  
+|Active Users|24 hours|  
+|Most Active Users Performing Operations|24 hours|  
+|Most Used Custom Entities|24 hours|  
+|Most Used OOB Entities|24 hours|  
 -->
 
 <a name="BKMK_SystemJobs"></a>   
@@ -233,7 +233,7 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 |Chart element  | Description  |ChartID|
 |----|-----|-----|
 |      Workflow Executions      |                                 This chart shows how many workflows have been executed in the Customer Data Service environment over the specified time.                                  | 3555801D-0EAF-4100-891C-DB34400AB102 |
-|     System Jobs Pass Rate     |               This chart shows the system job’s pass rate as percentage of system jobs that were executed in the Customer Data Service environment over the specified time.               | 1355801D-0EAF-4100-891C-DB34400AB102 |
+|     System Jobs Pass Rate     |               This chart shows the system job's pass rate as percentage of system jobs that were executed in the Customer Data Service environment over the specified time.               | 1355801D-0EAF-4100-891C-DB34400AB102 |
 | System Jobs Throughput/Minute |                        This chart shows the average system jobs that have been executed per hour in the Customer Data Service environment over the specified time.                        | 090F51C1-7DBA-42BA-B031-FB1C0999EE28 |
 |    Executions and Backlog     |                        This chart shows the number of executions and the backlog for system jobs in the Customer Data Service environment over the specified time.                        | 9D941442-759D-4C29-8348-ADCA2810A602 |
 |     Most Active Workflows     |                                     This chart shows top 10 most executed workflows in the Customer Data Service environment over the specified time.                                     | 7128FF54-B377-4236-ACFF-EEDF696461AA |
@@ -244,12 +244,12 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 |Chart|Update frequency|  
 |-----------|----------------------|  
-|Workflow Executions|1 hour|  
-|System Jobs Pass Rate|1 hour|  
-|System Jobs Throughput / Hour|1 hour|  
-|Most Active Workflows|1 hour|  
-|System Jobs Executions and Backlog|1 hour|  
-|Top Workflows by Failures|1 hour|  
+|Workflow Executions|24 hours|  
+|System Jobs Pass Rate|24 hours|  
+|System Jobs Throughput / Hour|24 hours|  
+|Most Active Workflows|24 hours|  
+|System Jobs Executions and Backlog|24 hours|  
+|Top Workflows by Failures|24 hours|  
 
 <a name="BKMK_Plugins"></a>   
 
@@ -274,11 +274,11 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 |Chart|Update frequency|  
 |-----------|----------------------|  
-|Plug-in Success Rate|1 hour|  
-|Most Active Plug-ins|1 hour|  
-|Plug-in Executions|1 hour|  
-|Average Plug-in Execution Time|1 hour|  
-|Top Plug-ins by Failures|1 hour|  
+|Plug-in Success Rate|24 hours|  
+|Most Active Plug-ins|24 hours|  
+|Plug-in Executions|24 hours|  
+|Average Plug-in Execution Time|24 hours|  
+|Top Plug-ins by Failures|24 hours|  
 
 <a name="BKMK_APICallStats"></a>   
 
@@ -303,11 +303,11 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 |Chart|Update frequency|  
 |-----------|----------------------|  
-|API Success Rate|1 hour|  
-|Top API by Failures|1 hour|  
-|Most Used API|1 hour|  
-|Total API Calls|1 hour|  
-|API Calls|1 hour|  
+|API Success Rate|24 hours|  
+|Top API by Failures|24 hours|  
+|Most Used API|24 hours|  
+|Total API Calls|24 hours|  
+|API Calls|24 hours|  
 
 <a name="BKMK_MailboxUsage"></a>   
 
@@ -336,14 +336,14 @@ Use this dashboard to find out how many [!INCLUDE[pn_dyn_365](../includes/pn-dyn
 
 |Chart|Update frequency|  
 |-----------|----------------------|  
-|Mailbox Details by Geo|30 minutes average|  
-|Active Email Server Profiles by Geo|5 minutes average|  
-|Mailboxes by Server Type|5 minutes average|  
-|Mailbox Usage|5 minutes average|  
-|Number of Mailbox Configuration Errors|30 minutes average|  
-|Number of Active Email Server Profiles|5 minutes average|  
-|Number of Outlook Mailboxes|15 minutes average|  
-|Mailboxes by Exchange Configuration|5 minutes average|  
+|Mailbox Details by Geo|24 hours|  
+|Active Email Server Profiles by Geo|24 hours|  
+|Mailboxes by Server Type|24 hours|  
+|Mailbox Usage|24 hours|  
+|Number of Mailbox Configuration Errors|24 hours|  
+|Number of Active Email Server Profiles|24 hours|  
+|Number of Outlook Mailboxes|24 hours|  
+|Mailboxes by Exchange Configuration|24 hours|  
 
 <a name="BKMK_Storage"></a>   
 
@@ -379,9 +379,9 @@ For storage information, see [Common Data Service storage capacity](capacity-sto
 
 |Chart|Update frequency|  
 |-----------|----------------------|  
-|Most Active Users Performing Operations|1 hour|  
-|Most Used Custom Entities|1 hour|  
-|Most Used OOB Entities|1 hour|  
+|Most Active Users Performing Operations|24 hours|  
+|Most Used Custom Entities|24 hours|  
+|Most Used OOB Entities|24 hours|  
 
 <a name="BKMK_ViewData"></a>   
 
