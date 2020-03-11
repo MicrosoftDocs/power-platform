@@ -96,7 +96,7 @@ Removing of the Power Apps license or service for a user in your organization wi
 * [Office.com](https://office.com)
 
     ![](./media/signup-question-and-answer/office-home.png)
-* Office 365 AppLauncher “waffle”
+* Office 365 AppLauncher "waffle"
 
     ![](./media/signup-question-and-answer/office-waffle.png)
 
@@ -123,9 +123,9 @@ These licenses are free trial licenses for your users to try-out the Microsoft P
 ### How will this change the way I manage identities for users in my organization today?
 If your organization already has an existing Office 365 environment and all users in your organization have Office 365 accounts, then identity management does not change.
 
-If your organization already has an existing Office 365 environment but not all users in your organization have Office 365 accounts, then we create a user in the tenant and assign licenses based on the user’s work or school email address. This means that the number of users you are managing at any particular time will grow as users in your organization sign up for the service.
+If your organization already has an existing Office 365 environment but not all users in your organization have Office 365 accounts, then we create a user in the tenant and assign licenses based on the user's work or school email address. This means that the number of users you are managing at any particular time will grow as users in your organization sign up for the service.
 
-If your organization does not have an Office 365 environment connected to your email domain, there is no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to take over as the tenant admin and manage them.
+If your organization does not have an Office 365 environment connected to your email domain, there is no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to take over as the Power Platform admin and manage them.
 
 ### What is the process to manage a tenant created by Microsoft for my users?
 If a tenant was created by Microsoft, you can claim and manage that tenant using the following steps:
@@ -137,7 +137,7 @@ If a tenant was created by Microsoft, you can claim and manage that tenant using
 5. Read the instructions on the **Become the admin** page, and then choose **Yes, I want to be the admin**.  
 
 > [!NOTE]
-> If this option doesn’t appear, an Office 365 administrator is already in place.
+> If this option doesn't appear, an Office 365 administrator is already in place.
 
 ### If I have multiple domains, can I control the Office 365 tenant that users are added to?
 If you do nothing, a tenant is created for each user email domain and subdomain.

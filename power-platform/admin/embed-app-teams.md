@@ -28,7 +28,7 @@ Individuals can share an app they've created in Power Apps in a Team they are a 
 ## Prerequisites
 
 - [Have a Power Apps license](pricing-billing-skus.md)
-- Be a tenant administrator 
+- Be a Power Platform admin 
 - Created a canvas app
 
 ## Locate your app's GUID
