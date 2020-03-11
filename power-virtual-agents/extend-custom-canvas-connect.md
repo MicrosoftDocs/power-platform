@@ -13,9 +13,11 @@ ms.custom: "extend, azure, byoc"
 ms.collection: virtualagent
 ---
 
-# Customize the look and feel of your bot chat canvas
+# Use a custom canvas to customize the look and feel of your bot
 
-Power Virtual Agents allows you customize the look and feel of your bot's chat canvas. Power Virtual Agents chat canvas builds on the highly customizable [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat). This article explains how to customize your canvas and connect it to a Power Virtual Agents bot.
+You can connet your Power Virtual Agents bot to a custom chat canvas for advanaced customization. The chat canvas refers to how the bot looks to your users when they interact with the bot. 
+
+Power Virtual Agents' chat canvas builds on the highly customizable [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat). You can create a custom canvas using this framework, and then connect it to your Power Virtual Agents bot to change how it looks. This can be useful if you want to use consistent branding between your website and the bot.
 
 >[!IMPORTANT]
 >When handling personal data, respect user privacy. Follow platform guidelines and post your privacy statement online.

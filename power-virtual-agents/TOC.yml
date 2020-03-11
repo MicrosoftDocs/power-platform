@@ -87,7 +87,9 @@
      href: configuration-end-user-authentication.md
    - name: Configure hand-off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
-   - name: Connect your bot to a custom canvas
+   - name: Customize the bot's default canvas
+     href: customize-default-canvas.md
+   - name: Customize the bot with a custom canvas
      href: extend-custom-canvas-connect.md
    - name: Enable and configure Azure Bot Framework Skills
      href: configuration-add-skills.md
