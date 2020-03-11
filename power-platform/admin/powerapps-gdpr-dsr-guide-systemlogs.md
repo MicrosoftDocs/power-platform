@@ -29,11 +29,11 @@ Note that the ability to restrict or rectify data in system-generated logs is no
 This article focuses on responding to DSR requests for system-generated logs in managed and unmanaged tenants. To determine whether or not you belong to a managed or unmanaged tenant, please see the **Determining Tenant Type** section below.
 
 ## Accessing and exporting system-generated logs for Managed Tenants
-Administrators can access system-generated logs associated with a user’s use of Power Apps, Power Automate, and Common Data Service services and applications.
+Administrators can access system-generated logs associated with a user's use of Power Apps, Power Automate, and Common Data Service services and applications.
 
 To access and export system-generated logs, do the following:
 
-1. Go to the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) and sign in using Office 365 Global Administrator credentials.
+1. Go to the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) and sign in using Global admin credentials.
 
 2. From the **Privacy** drop-down list at the top of the page, select **Data Subject Request**.
 
@@ -41,18 +41,18 @@ To access and export system-generated logs, do the following:
 
 4. To create a new request for a user, click **Create Export Data Request**.
 
-    After you create a new request, the request is listed on the **Data Log Export** page, where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization’s Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as XML, CSV, or JSON. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
+    After you create a new request, the request is listed on the **Data Log Export** page, where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization's Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as XML, CSV, or JSON. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 
 The following table summarizes accessing and exporting system-generated logs for managed tenants:
 
 | Question | Answer |
 | --- | --- |
-| How long does the Microsoft Data Log Export tool take to complete a request? |	This depends on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
+| How long does the Microsoft Data Log Export tool take to complete a request? |    This depends on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
 | What format will the output be in? | The output will be in the form of structured, machine-readable files such as XML, CSV, or JSON.
-| Who has access to the Data Log Export tool to submit access requests for system-generated logs? |	Office 365 Global Administrators will have access to the GDPR Log Manager tool.
-| What data does the Data Log Export tool return? |	The Data Log Export tool returns system-generated logs that Microsoft stores. Exported data spans across various Microsoft services including Office 365, Azure, Dynamics, Power Apps, Power Automate, and Common Data Service.
-| How is data returned to the user? |	Data will be exported to your organization's Azure storage location; it will be up to administrators in your organization to determine how they will show/return this data to users.
-| What will data in system-generated logs look like? |	Example of a system-generated log record in JSON format: <br> [{ <br>"DateTime": "2017-04- 28T12:09:29-07:00",  <br> "AppName": "SharePoint", <br> "Action": "OpenFile", "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" <br>}]
+| Who has access to the Data Log Export tool to submit access requests for system-generated logs? |  Global admin will have access to the GDPR Log Manager tool.
+| What data does the Data Log Export tool return? |    The Data Log Export tool returns system-generated logs that Microsoft stores. Exported data spans across various Microsoft services including Office 365, Azure, Dynamics, Power Apps, Power Automate, and Common Data Service.
+| How is data returned to the user? |    Data will be exported to your organization's Azure storage location; it will be up to administrators in your organization to determine how they will show/return this data to users.
+| What will data in system-generated logs look like? |    Example of a system-generated log record in JSON format: <br> [{ <br>"DateTime": "2017-04- 28T12:09:29-07:00",  <br> "AppName": "SharePoint", <br> "Action": "OpenFile", "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" <br>}]
 
 > [!NOTE]
 >  For security and audit purposes, some features do not allow you to export or delete system-generated logs in order to maintain the integrity of personal information.
@@ -62,7 +62,7 @@ The following table summarizes accessing and exporting system-generated logs for
 ## Deleting system-generated logs for Managed Tenants
 To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete his or her Azure Active Directory account. For instructions on how to permanently delete a user, see the **Deleting a user** section in the *Azure Data Subject Request GDPR documentation* that can be found on the [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR). It's important to note that permanently deleting a user account is irreversible once initiated.
 
-Permanently deleting a user account removes the user’s data from system-generated logs for Power Apps, Power Automate, and Common Data Service services within 30 days.
+Permanently deleting a user account removes the user's data from system-generated logs for Power Apps, Power Automate, and Common Data Service services within 30 days.
 
 
 ## Accessing and exporting system-generated logs for Unmanaged Tenants
@@ -82,12 +82,12 @@ The following table summarizes accessing and exporting system-generated logs for
 
 | Question | Answer |
 | --- | --- |
-| How long does the Microsoft Data Log Export tool take to complete a request? |	This depends on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
+| How long does the Microsoft Data Log Export tool take to complete a request? |    This depends on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
 | What format will the output be in? | The output will be in the form of structured, machine-readable files such as XML, CSV, or JSON.
-| Who has access to the Data Log Export tool to submit access requests for system-generated logs? |	Users who are a member of an unmanaged tenant have access to submit requests.
-| What data does the Data Export tool return? |	The Data Export tool returns system-generated logs that Microsoft stores. Exported data spans across various Microsoft services including Office 365, Azure, Dynamics, Power Apps, Power Automate, and Common Data Service.
-| How is data returned to the user? |	Data will be exported to a Microsoft website where a link will be securely provided to the user who made the DSR request.
-| What will data in system-generated logs look like? |	Example of a system-generated log record in JSON format: <br> [{ <br>"DateTime": "2017-04- 28T12:09:29-07:00",  <br> "AppName": "SharePoint", <br> "Action": "OpenFile", "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" <br>}]
+| Who has access to the Data Log Export tool to submit access requests for system-generated logs? |    Users who are a member of an unmanaged tenant have access to submit requests.
+| What data does the Data Export tool return? |    The Data Export tool returns system-generated logs that Microsoft stores. Exported data spans across various Microsoft services including Office 365, Azure, Dynamics, Power Apps, Power Automate, and Common Data Service.
+| How is data returned to the user? |    Data will be exported to a Microsoft website where a link will be securely provided to the user who made the DSR request.
+| What will data in system-generated logs look like? |    Example of a system-generated log record in JSON format: <br> [{ <br>"DateTime": "2017-04- 28T12:09:29-07:00",  <br> "AppName": "SharePoint", <br> "Action": "OpenFile", "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" <br>}]
 
 > [!NOTE]
 >  For security and audit purposes, some features do not allow you to export or delete system-generated logs in order to maintain the integrity of personal information.

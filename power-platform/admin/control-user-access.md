@@ -56,7 +56,7 @@ In this example, four security groups provide controlled access to a specific en
 -->
 
 > [!NOTE]
-> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access environments. You assign the security roles in the web application. Users can’t access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
+> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access environments. You assign the security roles in the web application. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
   
 ### Create a security group and add members to the security group  
 
@@ -87,7 +87,7 @@ In this example, four security groups provide controlled access to a specific en
   
 ### Associate a security group with a Common Data Service environment  
   
-1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Office 365 Global admin, or Power Platform service admin).
+1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Global admin, or Power Platform service admin).
   
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
   

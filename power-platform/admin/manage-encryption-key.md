@@ -72,7 +72,7 @@ These actions will result in disabling all the environments within the tenant fr
 ### Privileges required  
  To use the manage keys feature you need one of the following privileges:  
   
-- Office 365 Global administrators membership.  
+- Global admin membership.  
   
 - Office 365 Service administrators group membership.  
   
