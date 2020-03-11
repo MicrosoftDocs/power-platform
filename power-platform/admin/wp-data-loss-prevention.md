@@ -17,7 +17,7 @@ search.app:
 ---
 # Data loss prevention policies
 
-Your organization’s data is likely one of the most important assets you are responsible for safeguarding as an administrator. The ability to build apps and automation that uses the data allows your company to be successful. Power Apps and Power Automate allow rapid build and rollout of these high value applications that allow users to measure and act on the data in real time. Applications and automation are increasingly becoming more connected across multiple data sources and multiple services. Some of these services might be external 3rd party services and might even include some social networks. Users will often have good intentions but might overlook the potential for exposure from data leakage to services and audiences that shouldn’t have access to the data.
+Your organization's data is likely one of the most important assets you are responsible for safeguarding as an administrator. The ability to build apps and automation that uses the data allows your company to be successful. Power Apps and Power Automate allow rapid build and rollout of these high value applications that allow users to measure and act on the data in real time. Applications and automation are increasingly becoming more connected across multiple data sources and multiple services. Some of these services might be external 3rd party services and might even include some social networks. Users will often have good intentions but might overlook the potential for exposure from data leakage to services and audiences that shouldn't have access to the data.
 
 Data Loss Prevention (DLP) policies that help protect organizational data from unintended exposure, are available for administrators to create. They can act as guardrails to help prevent users from unintentionally exposing the data. DLP policies can be scoped at the environment and tenant level offering flexibility to craft policies that are sensible and do not block high productivity.
 
@@ -32,16 +32,16 @@ From the Power Apps Admin Center (admin.powerapps.com) you can see the current p
 
 ## Creating new DLP Policies
 
-When you create a new DLP policy you first decide on the scope. If you are only an environment administrator, you will see a selection to choose one of your environments to associate with the DLP policy. If you are a tenant administrator you will have the ability to apply to All Environments, Selected Environments or All Environments EXCEPT.
+When you create a new DLP policy you first decide on the scope. If you are only an environment administrator, you will see a selection to choose one of your environments to associate with the DLP policy. If you are a Power Platform admin you will have the ability to apply to All Environments, Selected Environments or All Environments EXCEPT.
 
 For the process to create a DLP policy, see [Create a data loss prevention (DLP) policy](create-dlp-policy.md).
 
 > [!div class="mx-imgBorder"] 
 > ![](media/new-dlp-policy.png "New DLP policy")
 
-Environment only admins do have the ability to view policies created by tenant admins to understand what might apply to their environment.
+Environment only admins do have the ability to view policies created by Power Platform admins to understand what might apply to their environment.
 
-One thing to consider is that environment specific policies can’t override tenant-wide DLP policies. For example, if you only allow use of Common Data Service connectors in an environment, an individual user that is only an environmental admin can’t override that policy to allow social network connectors to be used.
+One thing to consider is that environment specific policies can't override tenant-wide DLP policies. For example, if you only allow use of Common Data Service connectors in an environment, an individual user that is only an environmental admin can't override that policy to allow social network connectors to be used.
 
 ## Configuring connectors for a DLP policy
 
@@ -57,7 +57,7 @@ When new connectors are added they are added to the Default category which is No
 
 Typically, though most companies will want to treat new connectors as No business data allowed until they evaluate if it is appropriate to use with what they have classified as business data.
 
-Let’s look at an example if we were to create a new tenant wide DLP policy that had just the Common Data Service added to the Business Only Data and all others in No Business Data. Let’s look at a few application examples and the outcome of this policy.
+Let's look at an example if we were to create a new tenant wide DLP policy that had just the Common Data Service added to the Business Only Data and all others in No Business Data. Let's look at a few application examples and the outcome of this policy.
 
 |Connectors used in Application or flow  |Impact of DLP  |
 |---------|---------|
@@ -77,7 +77,7 @@ Consider the following table.
 > [!div class="mx-tableFixed"]
 > |         |New  |Existing  |
 > |---------|---------|---------|
-> |**Power Apps**   | Users trying to create a new Power App that violate DLP policies will not be allowed to do so.        | Power Apps do not enforce new DLP policies after the app has been created and published. The Power Apps app won’t check for DLP policy violations until the maker edits the canvas app again, removes one of the connections, and attempts to re-add it since DLP policies only restrict users from adding new connections.        |
+> |**Power Apps**   | Users trying to create a new Power App that violate DLP policies will not be allowed to do so.        | Power Apps do not enforce new DLP policies after the app has been created and published. The Power Apps app won't check for DLP policy violations until the maker edits the canvas app again, removes one of the connections, and attempts to re-add it since DLP policies only restrict users from adding new connections.        |
 > |**Power Automate**     | Users will not be allowed to create a new Flow that violates a DLP policy.        |When a flow executes the trigger, the Power Automate runtime checks to see if the flow is compliant with all existing DLP policies. If it violates any DLP policy then the Flow will be disabled.         |
 
 Users creating or editing a resource impacted by the DLP policy will see a message informing of the DLP policy conflict. As an administrator you should have a process and plan in place to handle these types of support needs if you are using DLP policies.
@@ -90,7 +90,7 @@ Using the DLP Editor in the [Center of Excellence starter kit](https://github.co
 > [!div class="mx-imgBorder"] 
 > ![](media/dlp-editor.png "DLP Editor")
 
-DLP policies created for a connector do not understand that that connector could be configured to talk to Dev, Test and production, etc. When you configure a DLP policy it is all or nothing. So, if you want to allow the connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won’t help you restrict that. DLP policies are Connector aware, but do not control the connections that are made using the connector.
+DLP policies created for a connector do not understand that that connector could be configured to talk to Dev, Test and production, etc. When you configure a DLP policy it is all or nothing. So, if you want to allow the connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won't help you restrict that. DLP policies are Connector aware, but do not control the connections that are made using the connector.
 
 ## Custom connector and HTTP
 
@@ -107,9 +107,9 @@ As an administrator taking over an environment or starting to support use of Pow
 
 For smaller environments where the users are highly capable and are trusted you could start out with no DLP policies taking only the default options. This is the most flexible option and can be changed at any time. Keep in mind introducing more restrictive policies later could conflict with existing assets. These conflicts could have business impact when existing apps and flows stop working until either the app / flow is brought into compliance or the DLP policy relaxed.
 
-For larger environments it is recommend you have a plan in place for DLP policies. It is best to do this in conjunction with your plan for managing environments in your organization. While there is an endless combination of connectors you might have in your own environment we will be using an example that you can tailor to fit your own needs. Let’s setup a framework for a generic DLP policy template that could apply to many organizations, only modifying it for some of their specific needs.
+For larger environments it is recommend you have a plan in place for DLP policies. It is best to do this in conjunction with your plan for managing environments in your organization. While there is an endless combination of connectors you might have in your own environment we will be using an example that you can tailor to fit your own needs. Let's setup a framework for a generic DLP policy template that could apply to many organizations, only modifying it for some of their specific needs.
 
-First, let’s look at our environment setup and assumptions. The following are the environments we are expecting to manage in our organization.
+First, let's look at our environment setup and assumptions. The following are the environments we are expecting to manage in our organization.
 
 |Environment  |Expected Use / Policy  |
 |---------|---------|
@@ -146,7 +146,7 @@ Now with this in place, you need a plan on how to handle exceptions. You really 
 
 1. Deny the request
 2. Add the connector to the default DLP policy
-3. Add the users’ environments to the All Except list for the Global default DLP and create a user specific DLP policy with the exception included.
+3. Add the users' environments to the All Except list for the Global default DLP and create a user specific DLP policy with the exception included.
 
 Hopefully that helps you understand how you might apply DLP policies in your organization. These are just some of the many options you could configure with DLP policies.
 
