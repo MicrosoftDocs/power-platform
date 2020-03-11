@@ -29,7 +29,7 @@ In the [Power Apps Admin center][1], manage environments that you've created and
 * Provision a Common Data Service database for the environment.
 * Set Data Loss Prevention policies.
 * Set database security policies (as open or restricted by database roles).
-* Members of the Azure AD tenant Global administrator role (includes Office 365 Global admins) can also manage all environments that have been created in their tenant and set tenant-wide policies.
+* Members of the Azure AD tenant Global administrator role (includes Global admins) can also manage all environments that have been created in their tenant and set tenant-wide policies.
 
 For more information, see [Environments overview](environments-overview.md).
 
@@ -157,7 +157,7 @@ To assign a user or a security group to an environment role, an Environment Admi
     d. Select **OK** to update the assignments to the environment role.
 
 > [!NOTE]
-> Users or groups assigned to these environment roles are not automatically given access to the environment’s database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).  
+> Users or groups assigned to these environment roles are not automatically given access to the environment's database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).  
 
 ### Database security
 The ability to create and modify a database schema and to connect to the data stored within a database that is provisioned in your environment is controlled by the database's user roles and permission sets. You can manage the user roles and permission sets for your environment's database from the **User roles** and **Permission sets** section of the **Security** tab. For more information, see [Configure database security](database-security.md).
@@ -178,7 +178,7 @@ Provisioning environments is based on the available storage in your organization
 Power Apps plan.  See [Power Apps pricing page][3] for details on all the plans that include this license.
 
 ### While trying to create a new environment, I am getting an error. How should I resolve it?
-If you are getting the following error message: "Either your plan doesn’t support the environment type selected or you’ve reached the limit for that type of environment.", it can mean one of the two things:
+If you are getting the following error message: "Either your plan doesn't support the environment type selected or you've reached the limit for that type of environment.", it can mean one of the two things:
 
 1. You have already utilized your quota to create a specific type of environments. Say you were creating  a trial environment and you get this error message. That means, that you have already provisioned two trial environments. You can view all the environments in [Power Apps Admin center][1].
 If you want, you can delete an existing environment of that specific type and create a new one. But, please make sure that you don't lose your data, apps, flows and other resources which you want to retain.
