@@ -26,7 +26,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 ### Prerequisites
 
--  You have a security role that is enabled for creating support requests such as an Office 365 Global admin or Service support admin.
+-  You have a security role that is enabled for creating support requests such as an Global admin or Service support admin.
 
 -  For the following [support plans](https://www.microsoft.com/dynamics365/support):
    

@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Office 365 Global admins and Power Platform service admins can administer without a license
+# Global admins and Power Platform service admins can administer without a license
 
-By default, all Office 365 Global administrators and Power Platform service administrators who do not have a license are granted the following two levels of permission in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
+By default, all Global admin and Power Platform service administrators who do not have a license are granted the following two levels of permission in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
   
 -   System administrator security role  
 -   Administrative access mode  

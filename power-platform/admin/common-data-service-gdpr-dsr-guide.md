@@ -34,7 +34,7 @@ This article describes how Microsoft is preparing for the GDPR, and also provide
 
 The following actions are covered in this article:
 
-* **Discover** — Use search and discovery tools to more easily find customer data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the following DSR actions to respond to the request. Alternatively, you may determine that the request doesn't meet your organization’s guidelines for responding to DSR requests.
+* **Discover** — Use search and discovery tools to more easily find customer data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the following DSR actions to respond to the request. Alternatively, you may determine that the request doesn't meet your organization's guidelines for responding to DSR requests.
 
 * **Access** — Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of that data available to the data subject.
 
@@ -79,9 +79,9 @@ You must create users in the Microsoft 365 admin center and assign them an appro
 
 Standard user personal data (for example, UserName, UserID, Phone, Email, and Address) is kept and maintained in the Microsoft 365 admin center. System administrators can update this personal data only in the Microsoft 365 admin center, and the data is then automatically synced to the Common Data Service system User entity in all environments. System administrators can also create custom attributes to capture additional user personal data within the Common Data Service system User entity, and then manually maintain and manage these attributes.
 
-To avoid interruption to business applications that may be critical to your organization’s operations, a user's records are not automatically removed from the Common Data Service system User entity when that user is deleted from within the Microsoft 365 admin center. The user’s status is set to Disabled in Common Data Service, but a Common Data Service System Administrator must locate and remove the user's personal data from Common Data Service within the application.
+To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Common Data Service system User entity when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Common Data Service, but a Common Data Service System Administrator must locate and remove the user's personal data from Common Data Service within the application.
 
-Only Office 365 Global Administrators and Common Data Service System Administrators can perform the discover, rectify, export, and delete actions listed below.
+Only Global admin and Common Data Service System Administrators can perform the discover, rectify, export, and delete actions listed below.
 
 ### Discover
 System Administrators can create multiple Common Data Service environments. These environments can be used for trial, development, or production purposes. Each of these environments has a copy of the system User entity with any custom attributes that may have been added by the system administrator, as well as the user personal data synced from the Microsoft 365 admin center.
@@ -92,7 +92,7 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
-3.	Click or tap **Dynamics 365 Administration Center**.
+3.    Click or tap **Dynamics 365 Administration Center**.
 
     ![Power Apps Environment Details](./media/common-data-service-gdpr-dsr-guide/powerapps-environment-details.png)
 
@@ -128,7 +128,7 @@ To find a user and his or her personal data, go to the [Power Apps Admin center]
 When [audit tracking](audit-data-user-activity.md) is enabled for an entity in Common Data Service, a user's personal data is logged in the audit history along with the actions that the user performs.
 
 ### Rectify
-If a data subject asks you to rectify the personal data that resides in your organization’s data, you and your organization must determine whether it’s appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
+If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
 
 You can use Azure Active Directory to manage the identities (personal data) of your users within Common Data Service. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services. See [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) for details.
 
@@ -171,12 +171,12 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 ### Delete
 
 #### User
-To avoid interruption to business applications that may be critical to your organization’s operations, a user's records are not automatically removed from the Common Data Service system User entity when that user is deleted from within the Microsoft 365 admin center. The user’s status is set to Disabled in Common Data Service, but a Common Data Service System Administrator must locate and remove the user's personal data from Common Data Service within the application.
+To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Common Data Service system User entity when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Common Data Service, but a Common Data Service System Administrator must locate and remove the user's personal data from Common Data Service within the application.
 
 #### Remove a user's personal data from the user's Summary page
 When a user record is deleted from the Azure Active Directory, the following message is displayed on the user's Summary page:
 
-*This user’s information is no longer managed by Office 365. You can update this record to respond to DSR requests by removing or replacing all personal data associated with this user.*
+*This user's information is no longer managed by Office 365. You can update this record to respond to DSR requests by removing or replacing all personal data associated with this user.*
 
 From the [Power Apps Admin center](https://admin.powerapps.com/), do the following:
 
@@ -232,7 +232,7 @@ Common Data Service System Administrators are responsible for maintaining an inv
 Personal data can then be exported, rectified, or deleted in an entity using the in-product functionality.  
 
 ### Discover
-When Common Data Service System Administrators receive a DSR request from an individual, they must identify which environments/Common Data Service environments contain personal data for that individual. Personal data is typically stored in key entities (for example, Account, Contact, Lead, Opportunity, etc.), but it’s your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
+When Common Data Service System Administrators receive a DSR request from an individual, they must identify which environments/Common Data Service environments contain personal data for that individual. Personal data is typically stored in key entities (for example, Account, Contact, Lead, Opportunity, etc.), but it's your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
 
 Using an inventory, Common Data Service System Administrators can configure the search entities and fields and then access the Common Data Service environment to discover personal data. For more information, see [Configure Relevance Search](https://go.microsoft.com/fwlink/?linkid=872506).
 
@@ -244,12 +244,12 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 
     ![Power Apps Relevance Search Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
 
-3. Enter the individual’s personal data in the search box, and then click or tap **Search**.
+3. Enter the individual's personal data in the search box, and then click or tap **Search**.
 
     ![Power Apps Relevance Search Results](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
 
 ### Rectify
-Common Data Service System Administrators can update an individual’s personal data by using the list of results from the  Relevance Search. However, an individual’s personal data may also be stored in other custom entities. Common Data Service System Administrators are responsible for maintaining an inventory of these other custom entities and making the appropriate updates to an individual’s personal data.
+Common Data Service System Administrators can update an individual's personal data by using the list of results from the  Relevance Search. However, an individual's personal data may also be stored in other custom entities. Common Data Service System Administrators are responsible for maintaining an inventory of these other custom entities and making the appropriate updates to an individual's personal data.
 
 From the Relevance Search results, do the following:
 
@@ -270,7 +270,7 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 
     ![Power Apps Relevance Search Menu](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
 
-3. Enter the individual’s personal data in the search box, and then click or tap **Search**.
+3. Enter the individual's personal data in the search box, and then click or tap **Search**.
 
     ![Power Apps Relevance Search Results](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
 
@@ -281,7 +281,7 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 6. Save the screenshot to a file, which you can then send to the DSR requestor.
 
 ### Delete
-Common Data Service System Administrators can delete an individual’s personal data from records where that data is stored.  The Common Data Service System Administrator can choose to either delete the record where the personal data is stored, or remove the contents of the personal data from the record.  
+Common Data Service System Administrators can delete an individual's personal data from records where that data is stored.  The Common Data Service System Administrator can choose to either delete the record where the personal data is stored, or remove the contents of the personal data from the record.  
 
 > [!NOTE]
 > Common Data Service administrators can customize an environment to prevent a record from being deleted from an entity. If configured in this way, you'll have to remove the contents of the personal data from the record rather than delete the record itself.
@@ -304,13 +304,13 @@ Common Data Service System Administrators are responsible for maintaining an inv
 Personal data can then be exported, rectified, or deleted in an entity using the in-product functionality.  
 
 ### Discover
-When Common Data Service System Administrators receives a DSR request from an individual, they must identify which environments/Common Data Service environments contain personal data from that individual. Personal data is typically stored in key entities (for example, Account, Contact, Lead, Opportunity, etc.), but it’s your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
+When Common Data Service System Administrators receives a DSR request from an individual, they must identify which environments/Common Data Service environments contain personal data from that individual. Personal data is typically stored in key entities (for example, Account, Contact, Lead, Opportunity, etc.), but it's your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
 
 You can find personal data from users of the previous version of Common Data Service within the following resources:
 
-|Resource | Purpose | Website access |	Programmatic access
+|Resource | Purpose | Website access |    Programmatic access
 | --- | --- | --- | ---
-|Entity records	| Captures business transactions in the respective business entity. | [Power Apps](https://make.powerapps.com) |  	No
+|Entity records    | Captures business transactions in the respective business entity. | [Power Apps](https://make.powerapps.com) |      No
 
 #### Entity records
 An individual's personal data can be stored in any business entity.
@@ -337,12 +337,12 @@ To see a list of your entities, do the following:
 
 6. When the export is complete, click or tap **Open in Excel**, and then click or tap **Enable editing**.
 
-7. Click or tap the search button, enter the individual’s personal data in the search box, and then click or tap **Search**.
+7. Click or tap the search button, enter the individual's personal data in the search box, and then click or tap **Search**.
 
 8. Using your inventory list, repeat the above steps for each of the business entities to discover all of the individual's personal data.
 
 ### Rectify
-If a data subject asks you to rectify the personal data that resides in your organization’s data, you and your organization must determine whether it’s appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
+If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
 
 You can use Azure Active Directory to manage the identities (personal data) of your users within the previous version of Common Data Service. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services. See [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) for details.
 
@@ -372,9 +372,9 @@ From [Power Apps](https://make.powerapps.com), do the following:
 
 7. Make the necessary personal data updates and save the spreadsheet.
 
-10.	In Power Apps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
+10.    In Power Apps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
 
-11.	Click **Search**, and then select and open the Excel spreadsheet that you just updated.
+11.    Click **Search**, and then select and open the Excel spreadsheet that you just updated.
 
 12. Click **Import**.
 
@@ -397,7 +397,7 @@ From [Power Apps](https://make.powerapps.com), do the following:
 
 4. Click or tap **Export data**.
 
-    The export operation runs in the background and you'll be notified when it’s complete.
+    The export operation runs in the background and you'll be notified when it's complete.
 
 5. To view the exported data, click or tap **Open in Excel**.
 
@@ -428,8 +428,8 @@ From [Power Apps](https://make.powerapps.com), do the following:
 
 7. Delete the rows containing the personal data that you want to remove from the entity and save the spreadsheet.
 
-10.	In Power Apps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
+10.    In Power Apps, go back to the **Data** tab of the entity, and then click or tap **Import data**.
 
-11.	Click **Search**, and then select and open the Excel spreadsheet that you just updated.
+11.    Click **Search**, and then select and open the Excel spreadsheet that you just updated.
 
 12. Click **Import**.
