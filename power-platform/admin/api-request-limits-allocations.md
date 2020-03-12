@@ -141,7 +141,7 @@ During this transition period reporting would be made available to customers whi
 
 ### What tools can admin use to monitor/analyze API requests across the platform?
 
-Usage reports and monitoring capabilities would be made available in Power Platform Admin Center soon and would be the best way to monitor/analyze usage for API requests. 
+Usage reports and monitoring capabilities would be made available in Power Platform admin center soon and would be the best way to monitor/analyze usage for API requests. 
 
 ### Do the Power Platform Requests entitlements roll over from day to day or month to month?
 

@@ -21,7 +21,7 @@ A sandbox environment is any non-production environment of Common Data Service. 
 
 ## View your sandbox environments  
 
-Manage your sandbox environments from the Power Platform Admin center.  
+Manage your sandbox environments from the Power Platform admin center.  
   
 1. Go to [https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com), and sign in using Environment Admin or System Administrator role credentials.
   
@@ -33,7 +33,7 @@ Manage your sandbox environments from the Power Platform Admin center.
 ## Provision a sandbox environment
 To provision a sandbox environment, you change a production environment to sandbox.
 
-1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Global admin, or Delegated admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Global admin, or Delegated admin).
 
 2. From the left-side menu, select **Environments**, and then select a production environment.
 
@@ -69,7 +69,7 @@ Reset a sandbox environment to delete and re-provision it. Consider a reset when
  
 ### To reset an environment  
 
-1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
 2. From the left-side menu, select **Environments**, and then select an environment to reset.
 
@@ -107,7 +107,7 @@ The reset process starts.
   
 ### Set administration mode  
   
-1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
 2. From the left-side menu, select **Environments**, and then select an environment.
   

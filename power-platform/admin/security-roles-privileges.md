@@ -81,7 +81,7 @@ This member's privilege inheritance role is applicable to [Owner](manage-teams.m
 ### Create a security role with team member's privilege inheritance
 
 #### Prerequisites
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Security roles**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Security roles**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 

@@ -34,7 +34,7 @@ About **system backups**:
   
 ### Restore a system backup  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
+1. Browse to the Power Platform admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
   
@@ -80,7 +80,7 @@ About **manual backups**:
 
 ### Create a manual backup
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials.
+1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Create**.
   
@@ -97,7 +97,7 @@ You can only restore to sandbox environments. To restore to a production environ
 > [!IMPORTANT]
 > Note that changing an environment type to sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
 
-1. Browse to the Power Platform Admin center and sign in using administrator credentials.
+1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
   
@@ -116,7 +116,7 @@ You can only restore to sandbox environments. To restore to a production environ
 ### Edit a manual backup  
 Edit a backup to change its label and your notes about the backup.  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials.
+1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
 
@@ -130,7 +130,7 @@ Edit a backup to change its label and your notes about the backup.
 ### Delete a manual backup  
  You can  delete manual backups. You can't delete system backups.  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials.
+1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
   

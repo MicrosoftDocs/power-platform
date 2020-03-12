@@ -30,7 +30,7 @@ The following table shows tasks that are associated with changing regional and l
 
 ## Enable the language  
 
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Languages**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Languages**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
@@ -39,7 +39,7 @@ Make sure you have the System Administrator or System Customizer security role o
 
  Before users can start using a Language Pack to display a language, the Language Pack must be enabled in your organization.  
 
-1. Sign in to the Power Platform Admin center. 
+1. Sign in to the Power Platform admin center. 
 
 2. Select an environment and go to **Settings** > **Product** > **Languages**.
 

@@ -185,7 +185,7 @@ It's well understood that monitoring as a critical aspect of managing software a
 
 1. [https://admin.powerapps.com/tenant/userLicenses](https://admin.powerapps.com/tenant/userLicenses) 
 2. View Power Apps and Power Automate admin analytics
-   1. Available now in preview from the new [Power Platform Admin center](https://aka.ms/ppac). 
+   1. Available now in preview from the new [Power Platform admin center](https://aka.ms/ppac). 
    2. One can get information along the following lines: 
       1. Active User and App usage  - how many users are using an app and how often? 
       2. Location – where is the usage? 

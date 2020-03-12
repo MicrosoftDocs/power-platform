@@ -26,7 +26,7 @@ Learn how you can manage [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] f
 
 ## Turn Bing Maps on or off for your organization  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials.
+1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Settings** > **Product** > **Features**.
 

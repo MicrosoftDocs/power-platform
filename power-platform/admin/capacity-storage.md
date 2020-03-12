@@ -26,7 +26,7 @@ Data volume continues to grow exponentially, as businesses advance their digital
 
 We have updated our capacity analytics reporting to provide important benefits to our customers. Here is a summary of changes in capacity analytics.
 
-- New **Capacity** page is available in the Power Platform Admin center.
+- New **Capacity** page is available in the Power Platform admin center.
 -	Admins can visualize the data stored in Database, Files, and Logs. 
 -	Entitlement information is added to the report to help customers understand available capacity of the tenant level.
 -	Existing customers get entitlements for new types of capacity (File and Log) but are not impacted by the licensing change until renewal.
@@ -149,7 +149,7 @@ Since custom Quick Find lookups are created by an admin in the org, these can be
 As an existing customer, we have added File and Log capacity to your tenant automatically based on your existing licenses. Because you are currently in an agreement under the old offers, you are not impacted. Make sure your Database consumption is per the entitlement. You are not expected to take any action for File and Log. At renewal, you can use this report to get the right amount of capacity for Database, File, and Log.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment using this model?
-You can provision environments through the Power Platform Admin center. For details, see [Create and manage environments in the Power Platform Admin center](create-environment.md).
+You can provision environments through the Power Platform admin center. For details, see [Create and manage environments in the Power Platform admin center](create-environment.md).
 
 ### I’m an existing customer and have not purchased the new offers. The capacity report indicates I’m overusing the Database/File/Log, what should I do?
 If Database, you should not exceed the available Database capacity. Please consider [freeing storage space](free-storage-space.md) or purchase more storage capacity. 

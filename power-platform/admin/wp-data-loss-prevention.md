@@ -32,7 +32,7 @@ From the Power Apps Admin Center (admin.powerapps.com) you can see the current p
 
 ## Creating new DLP Policies
 
-When you create a new DLP policy you first decide on the scope. If you are only an environment administrator, you will see a selection to choose one of your environments to associate with the DLP policy. If you are a Power Platform admin you will have the ability to apply to All Environments, Selected Environments or All Environments EXCEPT.
+When you create a new DLP policy you first decide on the scope. If you are only an environment administrator, you will see a selection to choose one of your environments to associate with the DLP policy. If you are a Power Platform service admin you will have the ability to apply to All Environments, Selected Environments or All Environments EXCEPT.
 
 For the process to create a DLP policy, see [Create a data loss prevention (DLP) policy](create-dlp-policy.md).
 

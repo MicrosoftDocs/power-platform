@@ -17,7 +17,7 @@ search.app:
 ---
 # Manage Common Data Service settings
 
-You can view and manage the settings for your environments by signing in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), going to the **Environments** page, selecting an environment, and then selecting **Settings**.
+You can view and manage the settings for your environments by signing in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), going to the **Environments** page, selecting an environment, and then selecting **Settings**.
 
 ![Environment details](media/environment-details.png "Environment details")
 
@@ -26,7 +26,7 @@ Settings for the selected environment can be managed here.
 ![Environment settings](media/environment-settings.png)
 
 ## Environment settings are moving
-Across organization admin settings are gradually moving from the web client to the Power Platform Admin center. Until the move to the Power Platform Admin center is complete, you’ll still be able to manage settings in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, as usual.
+Across organization admin settings are gradually moving from the web client to the Power Platform admin center. Until the move to the Power Platform admin center is complete, you’ll still be able to manage settings in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, as usual.
 
 Many of these settings...
 

@@ -25,7 +25,7 @@ Admins can do the following from the Power Apps Admin center:
 
 ## Prerequisites
 * Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
-* Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
+* Power Apps Environment Admin, Global admin, or Power Platform service admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
 ## Manage an app
 1. Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).

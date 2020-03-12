@@ -21,7 +21,7 @@ Administrators can edit properties of an environment, such as the friendly name,
   
 ## Edit an environment  
   
-1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using administrator credentials.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using administrator credentials.
 
 2. From the left-side menu, select **Environments**, and then select an environment.
 
