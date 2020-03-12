@@ -32,7 +32,7 @@ Sample data gives you something to experiment with as you learn model-driven app
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-1. Sign into the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/)
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
 
 1. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
 

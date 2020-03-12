@@ -62,7 +62,7 @@ The hierarchy security model is an extension to the existing security models tha
 >  In addition to the Position hierarchy security model, the users at a higher level must have at least the user level Read privilege on an entity to see the records that the users at the lower positions have access to. For example, if a user at a higher level doesn’t have the Read access to the Case entity, that user won’t be able to see the cases that the users at a lower positions have access to.  
   
 ## Set up hierarchy security  
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **Hierarchy security**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **Hierarchy security**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 

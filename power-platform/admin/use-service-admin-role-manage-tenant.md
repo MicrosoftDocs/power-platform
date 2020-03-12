@@ -30,7 +30,7 @@ The Dynamics 365 service admin can:
 
 ## Power Platform administrator 
   
- Users with the Power Platform admin role can:  
+ Users with the Power Platform service admin role can:  
   
 - Sign in to and manage multiple environments. Power Platform admins **are not affected** by security group membership and can manage environments even if not added to an environment's security group.
 - Perform admin functions in Power Platform because they have the system admin role.

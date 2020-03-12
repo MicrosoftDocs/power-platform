@@ -18,7 +18,7 @@ search.app:
 # Manage the encryption key
 All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
   
- By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to.  The manage keys feature in the Power Platform Admin Center gives administrators the ability to self-manage the database encryption key that is associated with the Common Data Service tenant. 
+ By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to.  The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the Common Data Service tenant. 
 
 <!--  [!IMPORTANT]
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
@@ -58,7 +58,7 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
 
 Consider the following sequence of events.  
   
-The malicious administrator signs in to the Power Platform Admin Center, goes to the **Environments** tab and selects **Manage encryption key**. The malicious administrator then creates a new key with a password and downloads the encryption key to their local drive, and activates the new key. Now all the environment databases are encrypted with the new key. Next, the malicious administrator locks the tenant with the newly downloaded key, and then takes or deletes the downloaded encryption key.  
+The malicious administrator signs in to the Power Platform admin center, goes to the **Environments** tab and selects **Manage encryption key**. The malicious administrator then creates a new key with a password and downloads the encryption key to their local drive, and activates the new key. Now all the environment databases are encrypted with the new key. Next, the malicious administrator locks the tenant with the newly downloaded key, and then takes or deletes the downloaded encryption key.  
 
 These actions will result in disabling all the environments within the tenant from online access and make all database backups un-restorable.
   
@@ -98,7 +98,7 @@ For more information about generating and transferring an HSM-protected key over
 3.    [Manage encryption for an environment](#manage-encryption-for-an-environment) 
 
 
-Administrators can use the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments) or the [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
+Administrators can use the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) or the [Microsoft.Xrm.OnlineManagementAPI PowerShell module](https://docs.microsoft.com/powershell/module/microsoft.xrm.onlinemanagementapi/?view=dynamics365ce-ps) cmdlets to perform the key management tasks described here.
   
 ### Generate or upload the encryption key for a tenant  
 All encryption keys are stored in the Azure Key Vault, and there can only be one active key at any time. Since the active key is used to encrypt all the environments in the tenant, managing the encryption is operated at the tenant level. Once the key is activated, each individual environment can then be selected to use the key for encryption. 
@@ -107,7 +107,7 @@ Use this procedure to set the manage key feature the first time for an environme
 
 > [!WARNING]
 > When you perform the steps described here for the first time you are opting in to self-managing your encryption keys. More information: [Understand the potential risk when you manage your keys](#understand-the-potential-risk-when-you-manage-your-keys).  
-1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments).  
   
 2. Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar. 
 
@@ -148,7 +148,7 @@ To perform this task using PowerShell, see [New-CRMImportProtectionKey](/powersh
 ### Activate an encryption key for a tenant
 Once an encryption key is generated or uploaded for the tenant, it can be activated. 
 
-1.    Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).  
+1.    Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments).  
 2.    Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar.
 1.  Select **Confirm** to acknowledge the manage key risk.
 2.  Select a key that has an **Available** state and then select **Activate key** on the toolbar.
@@ -172,7 +172,7 @@ To perform this task using PowerShell, see [Set-CrmProtectWithTenantKey](/powers
 By default, each environment is encrypted with the Microsoft-provided encryption key. Once an encryption key is activated for the tenant, administrators can elect to change the default encryption to use the activated encryption key. To use the activated key, follow these steps.
 
 #### Apply encryption key to an environment
-1.  Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).  
+1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments).  
 2.    Select the **Environments** tab.
 1.  Open a **Microsoft-provided** encrypted environment. 
 2.  Select **See all**. 
@@ -184,7 +184,7 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 #### Return a managed encryption key back to Microsoft-provided encryption key
  Returning to the Microsoft-provided encryption key configures the environment back to the default behavior where [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] manages the encryption key for you.  
   
-1.    Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
+1.    Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments).
 2.    Select the **Environments** tab, and then select an environment that is encrypted with a self-managed key.
 3.    Select **See all**.
 1.  In the **Environment Encryption** section, select **Manage**, and then select **Confirm**. 
@@ -195,7 +195,7 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 To perform this task using PowerShell, see [Set-CrmProtectWithMicrosoftKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmprotectwithmicrosoftkey?view=dynamics365ce-ps).
   
 #### Lock the tenant  
-Since there is only one active key per tenant, locking the encryption for the tenant *disables all the environments* that are in the tenant. All locked environments remain inaccessible to everyone, including [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)], until a Power Platform admin in your organization unlocks it by using the key that was used to lock it.  
+Since there is only one active key per tenant, locking the encryption for the tenant *disables all the environments* that are in the tenant. All locked environments remain inaccessible to everyone, including [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)], until a Power Platform service admin in your organization unlocks it by using the key that was used to lock it.  
   
 > [!CAUTION]
 >  You should never lock the tenant environments as part of your normal business process. When you lock a Common Data Service tenant, all the environments will be taken completely offline and they can't be accessed by anyone, including Microsoft. Additionally, services such as synchronization and maintenance are all stopped. If you decide to leave the service, locking the tenant can ensure that your online data is never accessed again by anyone.  

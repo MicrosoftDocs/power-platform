@@ -22,7 +22,7 @@ In this topic, you'll learn how to create a DLP policy for a single environment 
 
 ## Prerequisites
 To follow the steps, **one** of the following items is required:
-* Power Platform admin permissions
+* Power Platform service admin permissions
 * Global admin permissions
 * Power Apps Environment Admin permissions plus a Power Apps plan, Power Automate plan, or a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) license
 

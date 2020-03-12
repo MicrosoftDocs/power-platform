@@ -1,6 +1,6 @@
 ---
 title: "Administer Power Platform  | MicrosoftDocs"
-description: "The Power Platform Admin center a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service)."
+description: "The Power Platform admin center a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service)."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -16,9 +16,9 @@ search.app:
 ---
 # Administer Power Platform 
 
-The **Power Platform Admin center** provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).
+The **Power Platform admin center** provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).
 
-## Power Platform Admin center capabilities
+## Power Platform admin center capabilities
 
 Currently, the admin center provides the following capabilities.
 
@@ -32,4 +32,4 @@ Currently, the admin center provides the following capabilities.
 |Data policies     | More information: [Create and manage data loss prevention policies](create-dlp-policy.md).       |
 
 ### See also
-[Blog: Introducing the Power Platform Admin center](https://blogs.msdn.microsoft.com/crm/2018/09/25/introducing-the-power-platform-admin-center/)
+[Blog: Introducing the Power Platform admin center](https://blogs.msdn.microsoft.com/crm/2018/09/25/introducing-the-power-platform-admin-center/)

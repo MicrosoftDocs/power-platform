@@ -24,7 +24,7 @@ Follow these steps to create a Power Apps environment and a database for that en
 ### Prerequisites
  To follow this topic, the following items are required:
  - A Power Apps plan. Alternatively, you can sign up for a [free Power Apps trial](https://make.powerapps.com/signup).
- - Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
+ - Power Apps Environment Admin, Global admin, or Power Platform service admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
 ### Sign in to the Power Apps Admin center
 Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).

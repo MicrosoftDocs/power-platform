@@ -102,7 +102,7 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Users**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Users**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
@@ -228,7 +228,7 @@ You need to have the System Administrator security role or equivalent permission
   
    Wait for user to sync to the environments.
 
-6. In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
+6. In the Power Platform admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
   
 7. Choose **Enabled Users**, and then select a user’s full name.  
   
@@ -253,7 +253,7 @@ You need to have the System Administrator security role or equivalent permission
   
     Be sure to assign a license to the account.  
   
-2. In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
+2. In the Power Platform admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
   
 3. Choose **Enabled Users**, and then select a user’s full name.  
   
@@ -301,7 +301,7 @@ A default security role is automatically assigned to these imported users. The *
 
 When you create a new user or update an existing user in Microsoft Customer Engagement (on-premises), some fields in the user records, such as the name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created, there is no further synchronization between Active Directory user accounts and model-driven apps in Dynamics 365 user records. If you make changes to the Active Directory user account, you must manually edit the user record to reflect the changes.
 
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
+1.  In the Power Platform admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
 
 2.  In the list, select the user you want to update, and then choose **Edit**.
 
