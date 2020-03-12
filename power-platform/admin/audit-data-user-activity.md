@@ -60,7 +60,7 @@ System administrators and customizers can start or stop auditing for an organiza
 ## Start or stop auditing for an organization  
 This task requires the system administrator or customizer security role or equivalent permissions.  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials. 
+1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
 2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Audit settings**.
   
@@ -83,7 +83,7 @@ This task requires the system administrator or customizer security role or equiv
 ## View audit logging details  
 System administrators can see activity for the entities that are enabled for audit logging.  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials. 
+1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
 2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Audit Summary View**.
   
@@ -100,7 +100,7 @@ System administrators or customizers can change the default audit settings for e
   
 ### To enable or disable auditing for an entity  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials. 
+1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
 2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Entity and Field Audit Settings**.
   

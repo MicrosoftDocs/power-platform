@@ -21,9 +21,9 @@ search.app:
 
 The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)
 
-You can use the Power Platform Admin center to get visibility into all on-Premises data gateways in a tenant. To do so, sign in as a Power Platform admin and select the **Data Gateway** option.
+You can use the Power Platform admin center to get visibility into all on-Premises data gateways in a tenant. To do so, sign in as a Power Platform service admin and select the **Data Gateway** option.
 
-Users who are part of the Azure AD Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to Data Gateway management on the Power Platform Admin center. There may however be differences in the features available and the operations which can be performed by each of these roles.
+Users who are part of the Azure AD Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to Data Gateway management on the Power Platform admin center. There may however be differences in the features available and the operations which can be performed by each of these roles.
 
 The Azure AD Global administrator role (which includes Global admins) and Power BI service administrators will be able to see all gateways in their organizations in addition to the gateways they manage. You can switch between these two views using this toggle in the upper-right corner of the page:
 
@@ -129,7 +129,7 @@ As either an Azure AD Global administrator (which includes Global admins) or a P
 > [!NOTE]
 > This feature does not apply for On-premises data gateways (personal mode).
 
-1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Data Gateways** from the left-side menu.
 
@@ -165,7 +165,7 @@ If a person who doesn't have access to install gateways tries to install one, th
 > ![Error message](media/manage-gateway-error-message.png "Error message")
 
 ## Get Help
-For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform Admin center.
+For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
 
 > [!div class="mx-imgBorder"] 
 > ![Get help](media/get-help.png "Get help")

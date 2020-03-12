@@ -57,7 +57,7 @@ Environment Makers can also distribute the apps they build in an environment to 
 
 Users or groups assigned to these environment roles are not automatically given access to the environment’s database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).
 
-Users or security groups can be assigned to either of these two roles by an Environment Admin from the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) or [Power Apps Admin center](https://admin.powerapps.com). For more information, see [Administer environments in Power Apps](environments-administration.md).
+Users or security groups can be assigned to either of these two roles by an Environment Admin from the [Power Platform admin center](https://admin.powerplatform.microsoft.com) or [Power Apps Admin center](https://admin.powerapps.com). For more information, see [Administer environments in Power Apps](environments-administration.md).
 
 ![](./media/environments-overview/EnvironmentRoles.png)
 

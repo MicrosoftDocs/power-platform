@@ -24,7 +24,7 @@ By default, when users and queues are created in model-driven apps in Dynamics 3
 > [!TIP]
 >  You can use an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] shared mailbox when you create a queue in model-driven apps in Dynamics 365 and not consume an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] license for a forwarding email account.  
 
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Mailboxes**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Mailboxes**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 

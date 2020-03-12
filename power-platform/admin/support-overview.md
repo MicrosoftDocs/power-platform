@@ -64,7 +64,7 @@ Yes, you need a support plan to receive one-on-one technical support. Some subsc
   </tr>
   <tr> 
     <td width="30%">Model-driven apps in Dynamics 365 and AI apps including mixed reality apps and Insights apps</td>
-    <td width="70%" colspan="4"><a href="https://admin.powerplatform.microsoft.com">Power Platform Admin center</a></td>
+    <td width="70%" colspan="4"><a href="https://admin.powerplatform.microsoft.com">Power Platform admin center</a></td>
   </tr>
   <tr>
     <td width="30%">Dynamics 365 Finance and Operations (online and on-premises)</td>
@@ -133,7 +133,7 @@ Public preview and/or beta services may be supported through our [forums](https:
 
 |Service  |Support portal  |
 |---------|---------|
-|Model-driven apps in Dynamics 365 and AI apps including mixed reality apps and Insights apps   |[Power Platform Admin center](https://admin.powerplatform.microsoft.com)         |
+|Model-driven apps in Dynamics 365 and AI apps including mixed reality apps and Insights apps   |[Power Platform admin center](https://admin.powerplatform.microsoft.com)         |
 |Dynamics 365 Finance and Operations (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
 |Dynamics 365 Business Central      | Support is provided through partners only. Contact your Cloud Solution Provider (CSP) for assistance.        |
 |**Product**    |     |
@@ -150,7 +150,7 @@ Contacting Support over the phone will not speed up the processing of your reque
 ### How do I submit a support request? 
 
 -    Access to technical support is provided through one of the [support plans included with model-driven apps in Dynamics 365 or through one of the premium support plans](https://dynamics.microsoft.com/support/plans/). Submit a technical support request from the correct support portal for the product or service for which you need assistance (see the table earlier in this topic). To begin the support-request submission process:
-   -    From the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/), select **Help + support** from the left navigation pane and then **New support request** from the top navigation.
+   -    From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Help + support** from the left navigation pane and then **New support request** from the top navigation.
    -    From the [Lifecycle Services portal](https://lcs.dynamics.com/), choose a project, select **Support** from the option list, and then select **Submit an incident**.
    -    From [Support for Business](https://support.microsoft.com/supportforbusiness/productselection), select the Dynamics 365 product family followed by the specific Dynamics 365 product or service for which you need help.
    -    From the [Premier Portal](https://support.microsoft.com/premier), select **New support request** from the Support requests page navigation, enter your access ID and password or select your associated access ID, and proceed with your submission.
@@ -162,7 +162,7 @@ If you cannot submit a support request online, you can find a local support phon
 
 ### How do I get support if I don't have a subscription yet, and I get an error message while creating one? 
 
-You can open a Subscription Management support request through the [Microsoft 365 Admin Portal](https://portal.office.com/), as long as you have a Power Platform admin sign-in credentials to the portal. To open a Subscription Management support request, sign in to the [Microsoft 365 Admin Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane, and provide the additional information needed to submit the support request.
+You can open a Subscription Management support request through the [Microsoft 365 Admin Portal](https://portal.office.com/), as long as you have a Power Platform service admin sign-in credentials to the portal. To open a Subscription Management support request, sign in to the [Microsoft 365 Admin Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane, and provide the additional information needed to submit the support request.
 
 ### Who can submit a support request? 
 
@@ -170,7 +170,7 @@ Any users with the Power Platform admin roles on the tenant containing the subsc
 
 ### How do I authorize another person to submit support requests for a particular subscription? 
 
-To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant but do not require other permissions. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) about role assignments in the portal.
+To grant permission, you must have a Power Platform service admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant but do not require other permissions. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) about role assignments in the portal.
 
 ### I am developing applications on behalf of my client or assisting my client who is running model-driven apps in Dynamics 365. How do I get support? 
 
@@ -214,7 +214,7 @@ Technical support does not conduct RCAs as part of any support experience. If an
 
 ### How do I purchase Support? 
 
-- Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct  support plan is available online through the [Microsoft 365 Admin Center](https://portal.office.com/). You must be the Power Platform admin or owner to purchase a support plan.
+- Support plans may be purchased either online or through an Enterprise Agreement. The Professional Direct  support plan is available online through the [Microsoft 365 Admin Center](https://portal.office.com/). You must be the Power Platform service admin or owner to purchase a support plan.
 - If you purchase model-driven apps in Dynamics 365 through an Enterprise Agreement (EA), you can add a Professional Direct  support plan to your Enterprise Agreement by contacting your Large Account Reseller (LAR). 
 
 ### When will I be billed for Support? 
@@ -254,15 +254,15 @@ Yes, each EA enrollment requires a separate support plan. If you have one Suppor
 
 ### How do I submit a support request using my Premier contract? 
 
-Power Platform Admin center (PPAC) and the Lifecycle Services (LCS) are designed to recognize and entitle Premier and Unified Access IDs.
+Power Platform admin center (PPAC) and the Lifecycle Services (LCS) are designed to recognize and entitle Premier and Unified Access IDs.
 
-In **PPAC**: You can link your Premier contract to your account by entering your Premier Access ID and Contract ID information in the Power Platform Admin center, which you can do by selecting **Help + Support** and turning on the Premier support toggle in the new incident submission experience. This is a one-time process, and your Premier contract information will be saved with your account, being accessible from all subscriptions where you have Owner/Administrator privileges. 
+In **PPAC**: You can link your Premier contract to your account by entering your Premier Access ID and Contract ID information in the Power Platform admin center, which you can do by selecting **Help + Support** and turning on the Premier support toggle in the new incident submission experience. This is a one-time process, and your Premier contract information will be saved with your account, being accessible from all subscriptions where you have Owner/Administrator privileges. 
 
 In **LCS**: You can link your Premier contract to your account by selecting a project within LCS. Select the **Support** option from the drop-down menu, and then select **Manage Contracts**. This is a one-time process, and your Premier contract information will be saved for use with any support incident you create in LCS.
 
 Contact your Technical Account Manager (TAM) if you don't have your access ID and contract ID information.
 
-Although Premier customers can continue to use the [Microsoft Premier Online](https://support.microsoft.com/premier) portal or phone channels to submit a support request, using the Power Platform Admin center or Lifecycle Services has a number of significant advantages, including:
+Although Premier customers can continue to use the [Microsoft Premier Online](https://support.microsoft.com/premier) portal or phone channels to submit a support request, using the Power Platform admin center or Lifecycle Services has a number of significant advantages, including:
 
 - Self-help content to find answers to known issues quickly.
 - Faster resolution, thanks to a Dynamics 365–specific submission experience.

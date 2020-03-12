@@ -19,7 +19,7 @@ search.app:
 # Manage environments in the Power Apps Admin center
 
 > [!NOTE]
-> We are moving environment management from other admin centers to the Power Platform Admin center. Until this is completed, some management can be or must be done in other admin centers such as the Power Apps Admin center.
+> We are moving environment management from other admin centers to the Power Platform admin center. Until this is completed, some management can be or must be done in other admin centers such as the Power Apps Admin center.
 
 In the [Power Apps Admin center][1], manage environments that you've created and those for which you have been added to the Environment Admin or System Administrator role. From the admin center, you can perform these administrative actions:
 

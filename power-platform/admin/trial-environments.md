@@ -25,7 +25,7 @@ Using the Power Platform admin center, you can create three types of Common Data
 
 To determine when a trial environment will expire:
 
-1. Sign into the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
 2. Go to **Environments** > [select a trial environment] > **See all**. Check out **Day(s) remain**.
 
@@ -38,7 +38,7 @@ Currently, Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Custome
 
 ## Create a trial environment without Dynamics 365 apps
 
-You can create a trial environment in the Power Platform admin center without Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. See [Create and manage environments in the Power Platform Admin center](create-environment.md) and select **Trial** as the environment type.
+You can create a trial environment in the Power Platform admin center without Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. See [Create and manage environments in the Power Platform admin center](create-environment.md) and select **Trial** as the environment type.
 
 ## Convert a trial environment to production
 
@@ -48,7 +48,7 @@ If you have 1GB of available database capacity, you can convert a trial environm
 
 Follow these steps to convert a trial environment to a production environment:
 
-1. Sign into the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
 2. Go to **Environments** > [select a trial environment] > **Convert to production**.
 

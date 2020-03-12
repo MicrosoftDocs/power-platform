@@ -19,7 +19,7 @@ search.app:
 
 Circulate information quickly to a wide set of users at one go by using Announcements in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Announcements can also serve as message boards, where you can post topics of your interest that you wish to share, or get answers to.
 
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Announcements**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Announcements**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
