@@ -84,9 +84,7 @@ search.app:
 ## Use Package Deployer tool at the command line  
  System administrators and customizers can pass parameters, such as a regional language code, to packagedeployer.exe from the command line.  These parameters may only be configured by running Package Deployer tool at the command line.  
   
-> [!NOTE]
->  This feature was first introduced in [!INCLUDE[pn_crm_8_0_1_online](../includes/pn-crm-8-0-1-online.md)].  
-  
+ 
  Available parameters are in this table.  
   
 |Parameter|Description|Default Value|  
