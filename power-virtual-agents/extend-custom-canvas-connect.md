@@ -27,7 +27,7 @@ Power Virtual Agents' chat canvas builds on the highly customizable [Azure Bot F
 
 ## Pick a sample to customize
 
-We recommend starting with one of these samples custom built to work with Power Virtual Agents: 
+We recommend starting with one of these samples custom-built to work with Power Virtual Agents: 
 
 * [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
 
@@ -41,7 +41,7 @@ Or you can pick from [other sample web chat canvases](https://github.com/microso
 
 ## Retrieve bot ID and tenant ID details
 
-Next, you will need to retrieve your bot details to configure the custom canvas to send and receive messages from your bot.
+First, you will need to retrieve your bot details to configure the custom canvas to send and receive messages from your bot.
 
 1. Select **Manage** and then go to the **Channels** tab on the side navigation panel.
 
