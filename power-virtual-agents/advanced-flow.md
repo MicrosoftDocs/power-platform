@@ -24,7 +24,7 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 
 >[!IMPORTANT]
 >A flow can only be called from a topic located in the same [Common Data Service environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
->Flows must also be in a solution in Power Automate. You can [move flows into solutions](#move-a-flow-to-the-solutions-tab-on-the-power-automate-portal) so they are listed in the authoring canvas.
+>Flows must also be in a solution in Power Automate. You can [move flows into solutions](#(Optional)-Move-a-flow-from-Default-Solution-to-another-solution) so they are listed in the authoring canvas.
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
 
@@ -138,7 +138,7 @@ In Power Virtual Agents, you can now see this new flow on the list of available 
 
 
 
-## (Optional) Move a flow from Default Solution to another Solution
+## (Optional) Move a flow from Default Solution to another solution
 
 To be avaliable to the bots, flows must be stored in a solution in Power Automate.  If you do not want to keep your Power Virtual Agents flows in **Default Solution**, you can move them to another Soltuion on the Power Automate portal. 
 
@@ -161,9 +161,11 @@ To be avaliable to the bots, flows must be stored in a solution in Power Automat
     ![Add existing menu](media/AddExistingFlow.jpg)
 
 
-1. On the **Add existing flow** page, select the **Outside of solutions** tab, and then select your flow. Select **Add** to add your flow to the solution.
+1. On the **Add existing flow** page, select the **From solutions** tab, and then select your flow. Select **Add** to add your flow to the solution.
 
-    ![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
+    ![Add flow to a solution](media/MoveFlowFromSolution.png)
+
+Note that if you want to move a flow from **My flows** tab to a solution, you need to select **Outside solutions** tab instead.
 
 
 ## Modify a flow on the Power Automate portal
