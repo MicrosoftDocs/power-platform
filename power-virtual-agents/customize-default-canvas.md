@@ -137,7 +137,7 @@ First, you need to configure the page where you are hosting your bot.
     ```
 
 
-4.	In the *index.html* file you just created, enter your **BotId** at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+4.	In the *index.html* file you created, enter your **BotId** at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
 
 5.	Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom Web Chat canvas.
 
@@ -151,7 +151,7 @@ Once you get the customized Web Chat canvas working with your bot, you can custo
 
 You can use the JavaScript `styleOptions` options to configure a number of pre-defined styles. 
 
-The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0) for more information on what you can customize and how it will look.
+The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0).
 
 
 **To change the bot icon**
