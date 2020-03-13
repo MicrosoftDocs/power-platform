@@ -44,7 +44,7 @@ Flows typically use variables to input and output information. The variables can
     ![Create a new Power Automate flow](media/UseCreateFlowOption.jpg)
 
 
-Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://preview.flow.microsoft.com/) in a separate tab.
+Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
 
 ![Power Automate flow template](media/PVAConnectorTemplate.JPG)
 
@@ -164,9 +164,12 @@ To be avaliable to the bots, flows must be stored in a solution in Power Automat
 1. On the **Add existing flow** page, select the **From solutions** tab, and then select your flow. Select **Add** to add your flow to the solution.
 
     ![Add flow to a solution](media/MoveFlowFromSolution.png)
+    
 
-Note that if you want to move a flow from **My flows** tab to a solution, you need to select **Outside solutions** tab instead.
+If your flow is saved in **My flows** tab on Power Automate portal, you need to select **Outside solutions** option instead.
 
+    ![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
+    
 
 ## Modify a flow on the Power Automate portal
 
