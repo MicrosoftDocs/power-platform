@@ -27,10 +27,6 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 >Flows must also be in a solution in Power Automate.You can [move flows into solutions](#Move-a-flow-from-Default-Solution-to-another-solution) so they are listed in the authoring canvas.
 
 
-(Optional) Move a flow from Default Solution to another solution
-
-
-
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
 
 ## Create a new flow from the Power Virtual Agents authoring canvas 
@@ -143,7 +139,7 @@ In Power Virtual Agents, you can now see this new flow on the list of available 
 
 
 
-## Move a flow from Default Solution to another solution
+## Move a flow from Default Solution to another solution (optional)
 
 To be avaliable to the bots, flows must be stored in a solution in Power Automate.  If you do not want to use **Default Solution** for this purpose, you can move your flows to another soltuion.
 
