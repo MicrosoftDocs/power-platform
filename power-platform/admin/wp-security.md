@@ -29,6 +29,9 @@ The following is a high-level overview of how security model is implemented in C
 - Flows and Canvas apps use connectors, the specific connections credentials and associated service entitlements determine permissions when apps use the connectors.
 - Environments with Common Data Service add support for more advanced security models that are specific to controlling access to data and services in the Common Data Service environment.
 
+> [!TIP]
+> To learn about how to help secure and govern Power Platform apps like Power Automate, check out the [Microsoft Learn: Introduction to Power Automate security and governance](https://docs.microsoft.com/learn/modules/security-governance-intro/).
+
 ### See also
 [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)<br/>
 [Security concepts in Common Data Service](wp-security-cds.md)<br />
