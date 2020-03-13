@@ -17,7 +17,7 @@ ms.collection: virtualagent
 
 
 
-After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot’s Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
+After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
 
 
 The default look and feel of the bot is defined by the Web Chat canvas. You can customize the chat canvas in two ways, depending on the complexity of the customizations:
@@ -144,7 +144,7 @@ First, you need to configure the page where you are hosting your bot.
 6.	Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
     If you encounter problems, make sure you've published your bot, and that the **BotId** has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
 
-### Customize the bot icon, backgroundcolor, and name
+### Customize the bot icon, background color, and name
 
 
 Once you get the customized Web Chat canvas working with your bot, you can customize it. 
@@ -170,7 +170,7 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
 
 2.  Replace the bot and user avatar images with your company images.  
-    If you don’t have an image URL, you can use a Base64-encoded image string instead. 
+    If you don't have an image URL, you can use a Base64-encoded image string instead. 
 
 
 **To change the background color**
@@ -192,15 +192,15 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
 1. Update the `<h1>` text in the *index.html* file with the following.
 
-```HTML
-<body>
-    <div id="chatwindow">
-        <div id="heading">
-                         <!-- Change the h1 text to change the bot name -->
-            <h1><img src="images/robot-create-illustration.svg"> Contoso Bot Name</h1>
-        </div>
+    ```HTML
+    <body>
+        <div id="chatwindow">
+            <div id="heading">
+                             <!-- Change the h1 text to change the bot name -->
+                <h1><img src="images/robot-create-illustration.svg"> Contoso Bot Name</h1>
+            </div>
 
-```
+    ```
 
 
 
