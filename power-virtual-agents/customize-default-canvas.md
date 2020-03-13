@@ -20,14 +20,14 @@ After you create and [publish a bot](publication-fundamentals-publish-channels.m
 
 The default look and feel of the bot is defined by the web chat canvas. You can customize the chat canvas in two ways, depending on the complexity of the customizations:
 
-1. You can use a [custom web chat canvas](extend-custom-canvas-connect.md), based on the [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
-    This requires extensive developer knowledge and is useful for large organizations who want to completely customize the experience.
+1. ***Simple*** - You can apply javascript-based styling in the HTML code for the website where you deploy your bot.  
+     This is useful to a low-code customer who wants to make changes to the Web Chat.
 
-2. You can apply javascript-based styling in the HTML code for the website where you deploy your bot.  
-    This is useful for smaller organizations, or if your bot is hosted only on a website.
+2. ***Advance*** - You can use a [custom web chat canvas](extend-custom-canvas-connect.md), based on the [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
+    This requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
 
 
-The second option is described in this article.
+The first option is described in this article.
 
 
 ## Configure the Web Chat with your bot
@@ -142,7 +142,7 @@ First, you need to configure the page where you are hosting your bot.
 6.	Test the bot to ensure you are receiving responses from your bot and that it's working correctly.
     If you encounter problems, make sure you've published your bot, and that the **BotId** has been inserted in the correct place. It shoudl be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
 
-### Customize the bot icon, color, and name
+### Customize the bot icon, backgroundcolor, and name
 
 
 Once you get the customized web chat canvas working with your bot, you will be able to customize it. 
