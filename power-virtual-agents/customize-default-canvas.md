@@ -16,15 +16,27 @@ ms.collection: virtualagent
 # Customize the look and feel of the bot's default Web Chat canvas
 
 
-After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the botâ€™s Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
+<<<<<<< HEAD
+After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot’s Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
+=======
+After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the botâ€™s Web Chat to interact with your bot](publication-connect-bot-to-web-channels.md).
+>>>>>>> 8027bb4820c119c17c8e5c08ecf5d064fb60ebaa
 
 The default look and feel of the bot is defined by the Web Chat canvas. You can customize the chat canvas in two ways, depending on the complexity of the customizations:
 
+<<<<<<< HEAD
 1. You can use a [custom Web Chat canvas](extend-custom-canvas-connect.md), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     This requires extensive developer knowledge and is useful for large organizations who want to completely customize the experience.
 
 2. You can apply JavaScript-based styling in the HTML code for the website where you deploy your bot.  
     This is useful for smaller organizations, or if your bot is hosted only on a website.
+=======
+1. ***Simple*** - You can apply javascript-based styling in the HTML code for the website where you deploy your bot.  
+     This is useful to a low-code customer who wants to make changes to the Web Chat.
+
+2. ***Advance*** - You can use a [custom web chat canvas](extend-custom-canvas-connect.md), based on the [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
+    This requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
+>>>>>>> 8027bb4820c119c17c8e5c08ecf5d064fb60ebaa
 
 
 The first option is described in this article.
@@ -41,7 +53,7 @@ First, you need to configure the page where you are hosting your bot.
 2.	After a bot is created, get the BotID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agent-bot-parameters). 
 
 3.	Copy-paste the HTML code below and save it as *index.html*.
-    You can also cut and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) to see how it works (remember to add your your BotID).  
+    You can also cut and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) to see how it works (remember to add your BotID).  
 
     ```HTML
     <!DOCTYPE html>
@@ -140,14 +152,14 @@ First, you need to configure the page where you are hosting your bot.
 5.	Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom Web Chat canvas.
 
 6.	Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that the **BotId** has been inserted in the correct place. It shoudl be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
+    If you encounter problems, make sure you've published your bot, and that the **BotId** has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
 
 ### Customize the bot icon, backgroundcolor, and name
 
 
 Once you get the customized Web Chat canvas working with your bot, you can customize it. 
 
-If you need to do some simple styling, you can use the JavaScript `styleOptions` options. 
+You can use the JavaScript `styleOptions` options to configure a number of pre-defined styles. 
 
 The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0) for more information on what you can customize and how it will look.
 
@@ -166,8 +178,13 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
     ```
 
+<<<<<<< HEAD
 2.  Replace the bot and user avatar images with your company images.  
+    If you don’t have an image URL, you can use a Base64-encoded image string instead. 
+=======
+2.  Replace the bot and user avatar images with your company images.
     If you donâ€™t have an image URL, you can use a Base64-encoded image string instead. 
+>>>>>>> 8027bb4820c119c17c8e5c08ecf5d064fb60ebaa
 
 **To change the background color**
 
