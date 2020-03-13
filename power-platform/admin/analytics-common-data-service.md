@@ -17,7 +17,7 @@ search.app:
 ---
 # Common Data Service analytics 
 
-We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Customer Data Service analytics right from the Power Platform admin center to quickly view adoption ad user metrics for your organization. 
+We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Common Data Service analytics right from the Power Platform admin center to quickly view adoption ad user metrics for your organization. 
 
 To access these reports:
 
