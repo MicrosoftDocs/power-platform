@@ -165,7 +165,7 @@ To be avaliable to the bots, flows must be stored in a solution in Power Automat
 
     ![Add flow to a solution](media/MoveFlowFromSolution.png)
     
-   If you need to move a flow from **My flows** tab to a solution, select **Outside solutions** option instead.
+   To move a flow from **My flows** tab to a solution, select **Outside solutions** option instead.
 
     ![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
     
