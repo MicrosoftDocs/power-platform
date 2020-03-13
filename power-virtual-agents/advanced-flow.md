@@ -129,7 +129,7 @@ Your flow is auotmatically saved to the **Default Solution** under **Solutions**
 
 ## Flows created from the Power Virtual Agents authoring canvas are immediately avaliable to the bot
 
-To be avaliable to the bots, flows must be in a solution in Power Automate. All flows created from the Power Virtual Agents authoring canvas are automatically saved in a **Default Solution** on Power Automate portal and immediately avaliable to the bots.
+All flows created from the Power Virtual Agents authoring canvas are automatically saved in a **Default Solution** on Power Automate portal and immediately avaliable to the bots.
 
 In Power Virtual Agents, you can now see this new flow on the list of available actions when you use the **Call an action node** in the authoring canvas right away.
 
@@ -140,7 +140,7 @@ In Power Virtual Agents, you can now see this new flow on the list of available 
 
 ## (Optional) Move a flow from Default Solution to another Solution
 
-If you do not want to store your Power Virtual Agents flows in **Default Solution**, you can move them to another Soltuion on the Power Automate portal. 
+To be avaliable to the bots, flows must be stored in a solution in Power Automate.  If you do not want to keep your Power Virtual Agents flows in **Default Solution**, you can move them to another Soltuion on the Power Automate portal. 
 
 **Move flow to new or existing solution:**
 
@@ -164,17 +164,6 @@ If you do not want to store your Power Virtual Agents flows in **Default Solutio
 1. On the **Add existing flow** page, select the **Outside of solutions** tab, and then select your flow. Select **Add** to add your flow to the solution.
 
     ![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
-
-
-This flow is moved from the **My Flows** tab and into the solution you chose on the **Solutions** tab. It's now ready to use in a bot. 
-
-In Power Virtual Agents, you can now see this flow on the list of available actions when you use the **Call an action node** in the authoring canvas.
-
-![New flow shows up in Action picker](media/FlowInActionPicker.png)
-
-If you wish to store your Power Virtual Agents flows in another Solution, you can move them from **Default Solution** on Power Automate portal.
-
-[move flows into solutions](#move-a-flow-to-the-solutions-tab-on-the-power-automate-portal) from **Default Solution** to another Solution of your choice on Power Automate Portal.
 
 
 ## Modify a flow on the Power Automate portal
