@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 03/12/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,15 +17,19 @@ search.app:
 ---
 # Automation of tasks with PowerShell
 
-The PowerShell cmdlets allow you to do similar tasks that you would do with the admin portals but do them in scripting where you can sequentially execute multiple commands or pipe output from one to automate common tasks. There are multiple PowerShell cmdlets that you can work with. The following is an overview of each that you would likely interact with.
-
+The PowerShell cmdlets allow you to do similar tasks that you would do with the admin portals but do them in scripting where you can sequentially execute multiple commands or pipe output from one to automate common tasks. Using the PowerShell cmdlets or the management connectors you can build flows and apps that help you do implement your governance policies. There are multiple PowerShell cmdlets that you can work with. The following is an overview of each that you would likely interact with.
 
 |PowerShell cmdlet library  |Common Tasks  |
 |---------|---------|
 |Power Apps cmdlets <br/>[PowerShell support for Power Apps (preview)](powerapps-powershell.md)  |Designed for app makers and administrators to automate tasks with environments and associated apps, flows and connectors. <br/> **Note**: These cmdlets are currently in preview.        |
 |Office 365 cmdlets<br/> https://docs.microsoft.com/office365/enterprise/powershell/getting-started-with-office-365-powershell    |These are focused on Office 365 related tasks and can be used to automate user-related actions and tasks, for example, assignment of licenses.         |
 |Dynamics 365 cmdlets<br/> https://docs.microsoft.com/powershell/dynamics365/customer-engagement/overview     |These are useful if you have any environments with Common Data Service databases. Modules include support for using the Common Data Service online admin API, as well as to automate solution deployment to the Common Data Service environments.         |
-|Microsoft Azure cmdlets <br/> https://docs.microsoft.com/powershell/azure/overview     | The Azure cmdlets are useful if you are including any Azure components in your overall solution. This could also be used to script setup of the on-premise application gateway.        |
+|Microsoft Azure cmdlets <br/> https://docs.microsoft.com/powershell/azure/overview     | The Azure cmdlets are useful if you are including any Azure components in your overall solution. This could also be used to script setup of the on-premises application gateway.        |
+
+You can use a combination of all the above cmdlets to build PowerShell scripts to do bulk operations on users, environments or their resources.
+
+> [!TIP]
+> Examples can also be found when installing and testing the [Center of Excellence Starter Kit](https://aka.ms/CoEStarterKitDownload) or using the Admin-in-a-Day hands-on-labs which can be found on GitHub ([https://aka.ms/powerapps/admininaday](https://aka.ms/powerapps/admininaday)).
 
 ## Common PowerShell tasks
 
@@ -44,7 +48,7 @@ Get-AdminPowerAppEnvironment -Default
 ```
 
 Using the GUID you got back (which is the non-display name for the environment) you can drill into details of that specific environment
-Get-AdminPowerAppEnvironment -Environment ‘EnvironmentName’
+Get-AdminPowerAppEnvironment -Environment 'EnvironmentName'
 
 Which would produce the following detailed information:
 
@@ -52,7 +56,7 @@ Which would produce the following detailed information:
 > ![](media/powershell-get-environment-details.png "User PowerShell to get environment details")
 
 
-Another useful one is getting a list of connections in an environment. The following lists all the connections in the tenant’s default environment.
+Another useful one is getting a list of connections in an environment. The following lists all the connections in the tenant's default environment.
 
 ```powershell
 Get-AdminPowerAppEnvironment -Default | Get-AdminPowerAppConnection
