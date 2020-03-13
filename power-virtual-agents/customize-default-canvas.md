@@ -16,28 +16,18 @@ ms.collection: virtualagent
 # Customize the look and feel of the bot's default Web Chat canvas
 
 
-<<<<<<< HEAD
+
 After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot’s Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
-=======
-After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the botâ€™s Web Chat to interact with your bot](publication-connect-bot-to-web-channels.md).
->>>>>>> 8027bb4820c119c17c8e5c08ecf5d064fb60ebaa
+
 
 The default look and feel of the bot is defined by the Web Chat canvas. You can customize the chat canvas in two ways, depending on the complexity of the customizations:
 
-<<<<<<< HEAD
-1. You can use a [custom Web Chat canvas](extend-custom-canvas-connect.md), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
-    This requires extensive developer knowledge and is useful for large organizations who want to completely customize the experience.
 
-2. You can apply JavaScript-based styling in the HTML code for the website where you deploy your bot.  
-    This is useful for smaller organizations, or if your bot is hosted only on a website.
-=======
-1. ***Simple*** - You can apply javascript-based styling in the HTML code for the website where you deploy your bot.  
-     This is useful to a low-code customer who wants to make changes to the Web Chat.
+1. You can apply JavaScript-based styling in the HTML code for the website where you deploy your bot.  
+    This is useful if you want to make small customizations without investing in code development.
 
-2. ***Advance*** - You can use a [custom web chat canvas](extend-custom-canvas-connect.md), based on the [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
+2. You can use a [custom Web Chat canvas](extend-custom-canvas-connect.md), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     This requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
->>>>>>> 8027bb4820c119c17c8e5c08ecf5d064fb60ebaa
-
 
 The first option is described in this article.
 
@@ -178,13 +168,10 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
     ```
 
-<<<<<<< HEAD
+
 2.  Replace the bot and user avatar images with your company images.  
     If you don’t have an image URL, you can use a Base64-encoded image string instead. 
-=======
-2.  Replace the bot and user avatar images with your company images.
-    If you donâ€™t have an image URL, you can use a Base64-encoded image string instead. 
->>>>>>> 8027bb4820c119c17c8e5c08ecf5d064fb60ebaa
+
 
 **To change the background color**
 
