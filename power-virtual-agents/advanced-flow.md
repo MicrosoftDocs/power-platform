@@ -139,7 +139,7 @@ In Power Virtual Agents, you can now see this new flow on the list of available 
 
 
 
-## Optionally move a flow from Default Solution to another solution (optional)
+## Optionally move a flow from Default Solution to another solution
 
 To be avaliable to the bots, flows must be stored in a solution in Power Automate.  If you do not want to use **Default Solution** for this purpose, you can move your flows to another soltuion.
 
