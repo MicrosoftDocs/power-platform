@@ -123,7 +123,7 @@ Select **Save** to save your new flow.
 Your flow is auotmatically saved to the **Default Solution** under **Solutions** tab on the Power Automate portal.
 
 
-![Power Automate flow template - Save](media/FlowInMyFlows.JPG)
+![Power Automate flow template - Default Solution](media/DefaultSolution.png)
 
 
 
