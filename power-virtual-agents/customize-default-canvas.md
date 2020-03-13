@@ -1,22 +1,22 @@
 ---
-title: "Connect Power Virtual Agents to a custom canvas"
-description: "Use an advanced custom canvas to change the display and functionality of your bot (development coding required)."
+title: "Customize the Power Virtual Agents web chat canvas"
+description: "Edit the custom web chat canvas to change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: ""
-ms.date: 1/13/2020
+ms.date: 3/13/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "extend, azure, byoc"
+ms.custom: "customization"
 ms.collection: virtualagent
 ---
 
 # Customize the look and feel of the bot's default web chat canvas
 
 
-After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot’s Web Chat to interact with your bot](publication-connect-bot-to-web-channels.md).
+After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the botâ€™s Web Chat to interact with your bot](publication-connect-bot-to-web-channels.md).
 
 The default look and feel of the bot is defined by the web chat canvas. You can customize the chat canvas in two ways, depending on the complexity of the customizations:
 
@@ -167,7 +167,7 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
     ```
 
 2.  Replace the bot and user avatar images with your company images.
-    If you don’t have an image URL, you can use a Base64-encoded image string instead. 
+    If you donâ€™t have an image URL, you can use a Base64-encoded image string instead. 
 
 **To change the background color**
 
