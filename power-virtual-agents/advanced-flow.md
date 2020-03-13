@@ -24,7 +24,11 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 
 >[!IMPORTANT]
 >A flow can only be called from a topic located in the same [Common Data Service environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
->Flows must also be in a solution in Power Automate.You can [move flows into solutions](#Add-actions-to-a-bot-using-Power-Automate) so they are listed in the authoring canvas.
+>Flows must also be in a solution in Power Automate.You can [move flows into solutions](#(Optional)-Move-a-flow-from-Default-Solution-to-another-solution) so they are listed in the authoring canvas.
+
+
+(Optional) Move a flow from Default Solution to another solution
+
 
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
