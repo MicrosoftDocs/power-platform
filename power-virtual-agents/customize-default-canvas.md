@@ -13,17 +13,17 @@ ms.custom: "extend, azure, byoc"
 ms.collection: virtualagent
 ---
 
-# Customize the look and feel of the bot's default web chat canvas
+# Customize the look and feel of the bot's default Web Chat canvas
 
 
-After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot’s Web Chat to interact with your bot](publication-connect-bot-to-web-channels.md).
+After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot’s Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
 
-The default look and feel of the bot is defined by the web chat canvas. You can customize the chat canvas in two ways, depending on the complexity of the customizations:
+The default look and feel of the bot is defined by the Web Chat canvas. You can customize the chat canvas in two ways, depending on the complexity of the customizations:
 
-1. You can use a [custom web chat canvas](extend-custom-canvas-connect.md), based on the [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
+1. You can use a [custom Web Chat canvas](extend-custom-canvas-connect.md), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     This requires extensive developer knowledge and is useful for large organizations who want to completely customize the experience.
 
-2. You can apply javascript-based styling in the HTML code for the website where you deploy your bot.  
+2. You can apply JavaScript-based styling in the HTML code for the website where you deploy your bot.  
     This is useful for smaller organizations, or if your bot is hosted only on a website.
 
 
@@ -32,7 +32,7 @@ The second option is described in this article.
 
 ## Configure the Web Chat with your bot
 
-To configure how the web chat canvas looks, you'll need to have a published bot. You then apply some CSS and JavaScript styling to the page where you insert your bot to change bot's icon, color, and name.
+To configure how the Web Chat canvas looks, you'll need to have a published bot. You then apply some CSS and JavaScript styling to the page where you insert your bot to change bot's icon, color, and name.
 
 First, you need to configure the page where you are hosting your bot.
 
@@ -106,7 +106,7 @@ First, you need to configure the page where you are hosting your bot.
       <script>
             const styleOptions = {
 
-               // Add styleOptions to customize web chat canvas
+               // Add styleOptions to customize Web Chat canvas
 
             };
 
@@ -135,26 +135,26 @@ First, you need to configure the page where you are hosting your bot.
     ```
 
 
-4.	Update the *index.html* file to enter your **BotId** at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+4.	In the *index.html* file you just created, enter your **BotId** at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
 
-5.	Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom web chat canvas.
+5.	Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom Web Chat canvas.
 
-6.	Test the bot to ensure you are receiving responses from your bot and that it's working correctly.
+6.	Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
     If you encounter problems, make sure you've published your bot, and that the **BotId** has been inserted in the correct place. It shoudl be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
 
 ### Customize the bot icon, color, and name
 
 
-Once you get the customized web chat canvas working with your bot, you will be able to customize it. 
+Once you get the customized Web Chat canvas working with your bot, you can customize it. 
 
-If you need to do some simple styling, you can set them with the JavaScript `styleOptions` option. These options are a set of predefined styles that you can modify directly, upon which the web chat canvas will compute the whole stylesheet. 
+If you need to do some simple styling, you can use the JavaScript `styleOptions` options. 
 
-The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the the full list of all settings that you can modify. 
+The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0) for more information on what you can customize and how it will look.
 
 
 **To change the bot icon**
 
-1. Update the index.html file with the following sample code
+1. Update the *index.html* file with the following sample code
 
     ```js
 
@@ -166,12 +166,12 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
     ```
 
-2.  Replace the bot and user avatar images with your company images.
+2.  Replace the bot and user avatar images with your company images.  
     If you don’t have an image URL, you can use a Base64-encoded image string instead. 
 
 **To change the background color**
 
-1. Update the index.html file with following sample code. 
+1. Update the *index.html* file with following sample code. 
 
     ```js
     const styleOptions = {
@@ -182,11 +182,11 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
     ```
 
-2. Change the backgroundColor to any color you wish. You can use standard CSS color names, RGB values, or HEX.
+2. Change `backgroundColor` to any color you wish. You can use standard CSS color names, RGB values, or HEX.
 
 **To change the bot name**
 
-1. Update the `<h1>` text in the index.html file with the following.
+1. Update the `<h1>` text in the *index.html* file with the following.
 
 ```HTML
 <body>
