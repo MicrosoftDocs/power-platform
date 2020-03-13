@@ -140,7 +140,7 @@ In Power Virtual Agents, you can now see this new flow on the list of available 
 
 ## (Optional) Move a flow from Default Solution to another solution
 
-To be avaliable to the bots, flows must be stored in a solution in Power Automate.  If you do not want to keep your Power Virtual Agents flows in **Default Solution**, you can move them to another Soltuion on the Power Automate portal. 
+To be avaliable to the bots, flows must be stored in a solution in Power Automate.  If you do not want to use **Default Solution** for this purpose, you can move your flows to another soltuion.
 
 **Move flow to new or existing solution:**
 
@@ -165,8 +165,7 @@ To be avaliable to the bots, flows must be stored in a solution in Power Automat
 
     ![Add flow to a solution](media/MoveFlowFromSolution.png)
     
-
-If your flow is saved in **My flows** tab on Power Automate portal, you need to select **Outside solutions** option instead.
+   If you need to move a flow from **My flows** tab to a solution, select **Outside solutions** option instead.
 
     ![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
     
