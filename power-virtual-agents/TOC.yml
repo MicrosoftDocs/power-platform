@@ -24,6 +24,8 @@
      href: authoring-template-topics.md
    - name: Create and edit topics
      href: authoring-create-edit-topics.md
+   - name: Use system fallback topic
+     href: authoring-system-fallback-topic.md
    - name: Manage topics
      href: authoring-topic-management.md
    - name: Test your bot
