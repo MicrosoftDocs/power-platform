@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 03/16/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -205,7 +205,7 @@ For more information, see this [kb article](https://support.microsoft.com/kb/318
 -   Using non-default [network ports](https://technet.microsoft.com/library/hh699823.aspx)  
 -->
  
-- Connecting model-driven apps in Dynamics 365 with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in different tenant is not supported.  
+- Connecting model-driven apps in Dynamics 365 with Exchange Online in a different tenant is supported by setting up hybrid profile connections to the separate tenant infrastructure.
   
 ### Mailbox deliveries regularly disabled  
  Mailbox delivery errors are classified as follows:  
