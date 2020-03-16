@@ -2,7 +2,7 @@
 title: "Multiple environments or tenants   | MicrosoftDocs"
 description: Information on multiple environments or tenants 
 ms.custom: ""
-ms.date: 02/10/2020
+ms.date: 03/16/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -49,7 +49,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 - Data is not shared across environments.  
   
-- Storage is shared across the primary environment and any additional environments.  
+- See [Common Data Service storage capacity](capacity-storage.md) for how storage is shared across environments.  
   
 - All environments for a single customer tenant will be set up in the geography where they initially signed up for their account. Storage consumption is totaled and tracked across all the environments attached to a customer tenant.  
   
@@ -149,3 +149,6 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 - There can be no duplicate accounts across the tenants or partitions in the on-premises [!INCLUDE[pn_Active_Directory](../includes/pn-active-directory.md)].  
   
+### See also
+[Blog: What is a tenant?](https://powerbi.microsoft.com/blog/what-is-a-tenant/) <br />
+[Environments overview](environments-overview.md)
