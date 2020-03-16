@@ -230,11 +230,11 @@ We recommend starting with one of these samples custom-built to work with Power 
 
 Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Azure Bot Framework.
 
-## Customize canvas using `stylesetOptions`
+### Customize canvas using `stylesetOptions`
 
 As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0).
 
-## Host your custom canvas
+### Host your custom canvas
 
 After you've customized the look and feel of the bot, you need to deploy your custom canvas for your users to use it with your Power Virtual Agents bot.
 
