@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/01/2018
+ms.date: 03/16/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -73,6 +73,11 @@ Store the documents related to entity records in [!INCLUDE[pn_ms_SharePoint_long
 7. Click **Next**.  
   
    Dynamics 365 apps create document libraries for the selected entities on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. Dynamics 365 apps also create the corresponding document location records that contain the links to these document libraries. The **Document Management Settings** wizard shows the creation status of the document libraries.  -->
+
+> [!IMPORTANT]
+> - With the exception of the opportunity and contract entities, a hierarchical folder structure will not be automatically created in SharePoint for entities that have more than one many-to-one (N:1) relationship with the parent entity.
+> - For document management to function correctly for an entity, the entity relationship must be one-to-many (1:N) between the entity and the SharePoint document entity. The documents that exist in the SharePoint document library will not appear in the app for entities with many-to-one (N:1) or many-to-many (N:N) relationships between the entity and a SharePoint document entity.
+
   
 ### See also  
  [Edit existing SharePoint site records](../admin/edit-existing-sharepoint-site-records.md)   
