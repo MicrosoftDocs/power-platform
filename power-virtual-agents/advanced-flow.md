@@ -2,7 +2,7 @@
 title: "Automate Power Virtual Agents bot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: ""
-ms.date: 3/9/2020
+ms.date: 3/18/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -24,7 +24,7 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 
 >[!IMPORTANT]
 >A flow can only be called from a topic located in the same [Common Data Service environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
->Flows must also be in a solution in Power Automate.You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
+>Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
 
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
@@ -121,18 +121,18 @@ Select **Save** to save your new flow.
 ![Power Automate flow template - Save](media/PVAConnectorTemplate_SAVE.jpg)
 
 
-Your flow is saved to the **Default Solution** under **Solutions** tab on the Power Automate portal.
+Your flow is saved to the **Default Solution** under the **Solutions** tab on the Power Automate portal.
 
 
-![Power Automate flow template - Default Solution](media/DefaultSolution.png)
+![Power Automate flow template - Default Solution](media/default-solution.png)
 
 
 
 ## Flows created from the Power Virtual Agents authoring canvas are immediately available to the bot
 
-All flows created from the Power Virtual Agents authoring canvas are saved in a **Default Solution** in Power Automate. They are available to the bots right away.
+All flows created from the Power Virtual Agents authoring canvas are saved in a **Default Solution** in Power Automate. They can be used by your bots immediately.
 
-In Power Virtual Agents, you can now see this new flow on the list of available actions when you use the **Call an action node** in the authoring canvas right away.
+In Power Virtual Agents, you can now see this new flow on the list of available actions when you use the **Call an action node** in the authoring canvas.
 
 ![New flow shows up in Action picker](media/FlowInActionPicker.png)
 
@@ -141,7 +141,7 @@ In Power Virtual Agents, you can now see this new flow on the list of available 
 
 ## Optionally move a flow from Default Solution to another solution
 
-To be available to the bots, flows must be stored in a solution in Power Automate.  If you do not want to use **Default Solution** for this purpose, you can move your flows to another solution.
+To be available to your bots, flows must be stored in a solution in Power Automate. If you do not want to use the **Default Solution** for this purpose, you can move your flows to another solution.
 
 **Move flow to new or existing solution:**
 
@@ -164,9 +164,9 @@ To be available to the bots, flows must be stored in a solution in Power Automat
 
 1. On the **Add existing flow** page, select the **From solutions** tab, and then select your flow. Select **Add** to add your flow to the solution.
 
-    ![Add flow to a solution](media/MoveFlowFromSolution.png)
+    ![Add flow to a solution](media/move-flow-from-solution.png)
     
-   To move a flow from **My flows** tab to a solution, select **Outside solutions** option. Select **Add** to add your flow to the solution.
+   To move a flow from **My flows** tab to a solution, select the **Outside solutions** option. Select **Add** to add your flow to the solution.
 
     ![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
     
