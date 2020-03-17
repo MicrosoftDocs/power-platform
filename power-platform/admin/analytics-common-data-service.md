@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/16/2020
+ms.date: 03/17/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -272,12 +272,12 @@ For more information on the different roles for managing your tenant across the 
 
 Select **Download** to view available downloads and then select any of the reports to download them into Microsoft Excel.
 
-All the download reports, except "Active D365 Plan Users by Application", show data:   
-- for an environment 
-  and
+All the download reports, except "Active Dynamics 365 Customer Engagement Plan Users by Application", show data:   
+- for an environment <br />
+  and <br />
 - per the timeline in the filters for the out-of-box Common Data Service analytics reports. If you select a certain date range for the out-of-box Common Data Service reports, the same time filter applies to the downloads.  
 
-The "Active D365 Plan Users by Application" report shows the last 30 days of data at the tenant level. 
+The "Active Dynamics 365 Customer Engagement Plan Users by Application" report shows the last 30 days of data at the tenant level. 
 
 > [!div class="mx-imgBorder"] 
 > ![Customer Data Service analytics Download Section](./media/organization-insights-download-section.png "Customer Data Service analytics Download Section")  
@@ -298,7 +298,7 @@ The "Active D365 Plan Users by Application" report shows the last 30 days of dat
 > | Most active workflows | List of top 10 most executed workflows in the Customer Data Service environment over the specified time.   |
 > | Most active plug-ins | List of top 10 most executed plug-ins in the Customer Data Service environment over the specified time.  |
 > | Most used API  | List of top 10 most executed API calls in the Customer Data Service environment database.   |
-> | Active D365 Plan Users by Application | Active Dynamics 365 Customer Engagement plan users by application. Helps customers to know usage across different apps and entities so that when it is time to renew their subscription, they can chose the individual apps to be bought (for example Dynamics 365 for Sales, Dynamics 365 for Customer Service, etc.). The Customer Engagement plan which was a suite of all Customer Engagement applications is no longer being sold and people need to choose the individual apps to be bought.    |
+> | Active Dynamics 365 Customer Engagement Plan Users by Application | Active Dynamics 365 Customer Engagement plan users by application. Helps customers to know usage across different apps and entities so that when it is time to renew their subscription, they can chose the individual apps to be bought (for example Dynamics 365 for Sales, Dynamics 365 for Customer Service, etc.). The Customer Engagement plan which was a suite of all Customer Engagement applications is no longer being sold and people need to choose the individual apps to be bought.    |
 > | Non-conformant usage by users with Team Member license   | Shows customers how their users (with team member licenses) are using the product in ways that are deemed to be not conformant with the use rights entitled to this license, as per licensing guide.   |
 
 <a name="BKMK_ViewData"></a>   
@@ -312,3 +312,5 @@ Select **Change filters**.
 
 Select the environment and time-period from the drop-down lists, and then select **Apply** to save the changes. All the Common Data Service analytics reports are available using this selection. 
 
+> [!div class="mx-imgBorder"] 
+> ![Customer Data Service analytics change filters](./media/organization-insights-change-filters-apply.png "Customer Data Service analytics change filters")  
