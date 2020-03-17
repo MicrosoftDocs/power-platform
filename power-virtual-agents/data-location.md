@@ -29,11 +29,12 @@ Azure geographic locations (geos) | Azure datacenters (regions)
  ---|---
 United States | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA)
 Europe | West Europe (Netherlands), North Europe (Ireland)
-Australia	 | Australia East (New South Wales), Australia Southeast (Victoria)
-United Kingdom	| UK South (London), UK West (Cardiff, Durham)
-India	| Central India (Pune), South India (Chennai)
-Asia Pacific	| Southeast Asia (Singapore), East Asia (Hong Kong)
-Japan	| Japan East (Tokyo, Saitama), Japan West (Osaka)
+Australia | Australia East (New South Wales), Australia Southeast (Victoria)
+United Kingdom | UK South (London), UK West (Cardiff, Durham)
+India | Central India (Pune), South India (Chennai)
+Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong)
+Japan | Japan East (Tokyo, Saitama), Japan West (Osaka)
+Canada | Canada Central (Toronto), Canada East (Quebec City)
 
 ## Customer data  
 Microsoft will not transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when: 
