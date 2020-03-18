@@ -29,7 +29,7 @@ You can also build all your bots in a single environment if you don't need or wa
 
 
 >[!NOTE]
->We recommend using a non-default Production environment to build bots you intend to deploy to production. See steps below on how to create an environment.  
+>We recommend using a non-default production environment for bots that you want to deploy to production.  
 >[Learn more about types of environments](/power-platform/admin/environments-overview#types-of-environments).
 
 
