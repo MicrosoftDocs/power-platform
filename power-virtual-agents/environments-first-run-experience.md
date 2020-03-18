@@ -2,7 +2,7 @@
 title: "Create and use Power Apps environments in Power Virtual Agents"
 description: "Environments store all the data and resources associated with the bots you create in Power Virtual Agents."
 keywords: "onboarding, environments"
-ms.date: 1/31/2020
+ms.date: 3/18/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -26,6 +26,12 @@ You can use environments in a number of different ways, depending on your busine
   - You might also create separate environments for different global branches of your company.
 
 You can also build all your bots in a single environment if you don't need or want to use different ones.
+
+
+>[!NOTE]
+>We recommend using a non-default Production environment to build bots you intend to deploy to production. See steps below on how to create an environment.  
+>[Learn more about types of environments](/power-platform/admin/environments-overview#types-of-environments).
+
 
 ## Create a new environment for your bots
 
@@ -79,7 +85,7 @@ More information:
 - [Power Platform - Configure environment security](/power-platform/admin/database-security)
 
 ## Trial environments
-Trial environments expire after 30 days. When the environment expires, all the bots in the environment will be deleted and the data associated with it, including any flows and resources you have been using, will be lost.
+When you trial Power Virtual Agents, you can create trial environments that expire after 30 days. When the environment expires, all the bots in the environment will be deleted and the data associated with it, including any flows and resources you have been using, will be lost.
 
 If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Power Virtual Agents portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
 
