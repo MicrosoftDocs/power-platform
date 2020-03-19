@@ -16,7 +16,7 @@
     - name: Canvas apps
       href: canvas-apps.md       
     - name: Model driven apps
-      href: model-drive-apps.md     
+      href: model-driven-apps.md     
     - name: Non-solution aware
       href: nonsolution-aware.md     
     - name: Example processes
@@ -35,4 +35,4 @@
     - name: Set up audit and report components
       href: setup-audit-report-components.md  
     - name: Set up nurture components
-      href: setup-nuture-components.md         
+      href: setup-nurture-components.md         
