@@ -1,8 +1,36 @@
-- name: Power Platform CoE Kit
+- name: Power Platform Center of Excellence
   items: 
   - name: Overview
-    href: admin-documentation.md
-    items:    
-    - name: Licensing and license management
-      href: admin-documentation.md
-      
+    href: topicname.md   
+  - name: Setup the CoE Starter Kit
+    items: 
+    - name: Setup core components
+      href: topicname.md
+    - name: Setup audit and report components
+      href: topicname.md
+    - name: Setup nurture components
+      href: topicname.md     
+  - name: About the CoE Starter Kit
+    items: 
+    - name: Motivation
+      href: topicname.md
+    - name: Setup 
+      href: topicname.md
+    - name: Components overview
+      href: topicname.md     
+    - name: Flows
+      href: topicname.md     
+    - name: Canvas apps
+      href: topicname.md     
+    - name: Model driven apps
+      href: topicname.md   
+    - name: Non-solution aware
+      href: topicname.md   
+    - name: Example processes
+      href: topicname.md   
+    - name: Limitations
+      href: topicname.md   
+    - name: Elements to import to unmanaged solutions
+      href: topicname.md   
+    - name: Support and other resources
+      href: topicname.md   
