@@ -1,0 +1,8 @@
+- name: Power Platform CoE Kit
+  items: 
+  - name: Overview
+    href: admin-documentation.md
+    items:    
+    - name: Licensing and license management
+      href: admin-documentation.md
+      
