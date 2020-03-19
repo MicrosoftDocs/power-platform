@@ -1,36 +1,36 @@
 - name: Power Platform Center of Excellence
   items: 
   - name: Overview
-    href: topicname.md   
+    href: overview.md   
   - name: Setup the CoE Starter Kit
     items: 
     - name: Setup core components
-      href: topicname.md
+      href: overview.md  
     - name: Setup audit and report components
-      href: topicname.md
+      href: overview.md  
     - name: Setup nurture components
-      href: topicname.md     
+      href: overview.md       
   - name: About the CoE Starter Kit
     items: 
     - name: Motivation
-      href: topicname.md
+      href: overview.md  
     - name: Setup 
-      href: topicname.md
+      href: overview.md  
     - name: Components overview
-      href: topicname.md     
+      href: overview.md       
     - name: Flows
-      href: topicname.md     
+      href: overview.md       
     - name: Canvas apps
-      href: topicname.md     
+      href: overview.md       
     - name: Model driven apps
-      href: topicname.md   
+      href: overview.md     
     - name: Non-solution aware
-      href: topicname.md   
+      href: overview.md     
     - name: Example processes
-      href: topicname.md   
+      href: overview.md     
     - name: Limitations
-      href: topicname.md   
+      href: overview.md     
     - name: Elements to import to unmanaged solutions
-      href: topicname.md   
+      href: overview.md     
     - name: Support and other resources
-      href: topicname.md   
+      href: overview.md     
