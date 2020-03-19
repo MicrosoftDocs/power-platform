@@ -65,7 +65,7 @@ Before registering the Skill, provide the bot's ID to your Skills developer to a
 
 1. Enter the URL to the Skill manifest. A Skill's manifest contains the information that your bot will need to trigger actions within a Skill.
 
-1. Select **Next** to begin the [validation process](#validation-performed-during-registering-a-skill). When successful, your Skill is added to your bot. You can now [use this Skill in your topics](advanced-use-skills.md). 
+1. Select **Next** to begin the [validation process](#troubleshooting-errors-during-skill-registration). When successful, your Skill is added to your bot. You can now [use this Skill in your topics](advanced-use-skills.md). 
 
 ## Compliance considerations
 To protect user's privacy, we require Skills to be registered as an app in the signed-in user's Azure Active Directory tenant.
