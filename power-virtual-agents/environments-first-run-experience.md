@@ -2,7 +2,7 @@
 title: "Create and use Power Apps environments in Power Virtual Agents"
 description: "Environments store all the data and resources associated with the bots you create in Power Virtual Agents."
 keywords: "onboarding, environments"
-ms.date: 1/31/2020
+ms.date: 3/18/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 With Power Virtual Agents, you can create bots in different environments and easily switch between them.
 
-An environment is a space to store, manage and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. More information: [Supported data locations](data-location.md).
+An environment is a space to store, manage, and share your organization's business data. The bots you create are stored in an environment (apps and flows are also stored in environments). Environments may also have different roles, security requirements and target audiences, and each environment is created in a separate location. More information: [Supported data locations](data-location.md).
 
 ## Leverage environments
 
@@ -27,15 +27,21 @@ You can use environments in a number of different ways, depending on your busine
 
 You can also build all your bots in a single environment if you don't need or want to use different ones.
 
+
+>[!NOTE]
+>We recommend using a non-default production environment for bots that you want to deploy to production.  
+>[Learn more about types of environments](/power-platform/admin/environments-overview#types-of-environments).
+
+
 ## Create a new environment for your bots
 
-When you first sign in and create a new bot, an default environment is created for you. 
+When you first sign in and create a new bot, a default environment is created for you. 
 
 You can, however, create additional environments by using the [Power Platform Admin Center](/power-platform/admin/create-environment).
 
 **Create a new environment:**
 
-1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work account. You should use the same tenant that you use for Power Virtual Agents.
+1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work account. Use the same tenant that you use for Power Virtual Agents.
 
 2. Go to the **Environments** tab and select **+ New** to open the **New environment** panel.
 
@@ -55,7 +61,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 
 3. Specify the details of the database, such as the language and currency type, and then select **Save**.
 
-4. You'll be returned to the **Environments** tab. Select **Refresh** to see the environment you just created. You'll also see a notice explaining that it may take a few minutes to fully create the environment.
+4. You'll be returned to the **Environments** tab. Select **Refresh** to see the environment. You'll also see a notice explaining that it may take a few minutes to fully create the environment.
 
 5. After the environment is created, you can return to the [Power Virtual Agents portal](https://go.microsoft.com/fwlink/?linkid=2093067) and use the environment to create a new bot.
 
@@ -64,9 +70,9 @@ To create a bot in an existing environment, select the environment in the [bot c
 
 ![Select environment](media/select_environment_onboarding.png)
 
-### Create a bot in an existing environment to which the user doesn't have access
+### Create a bot in an existing environment where you don't have access
 
-To create a bot in an environment where you don't have access, you'll need to be a system administrator or contact the system administrator for the environment to complete the following:
+To create a bot in an environment where you don't have access, you'll need to be a system administrator or contact the system administrator. You then need to complete the following:
 
 1. Create a bot in the environment (this step will install the necessary Power Virtual Agents solutions).
 
@@ -79,7 +85,7 @@ More information:
 - [Power Platform - Configure environment security](/power-platform/admin/database-security)
 
 ## Trial environments
-Trial environments expire after 30 days. When the environment expires, all the bots in the environment will be deleted and the data associated with it, including any flows and resources you have been using, will be lost.
+When you trial Power Virtual Agents, you can create trial environments that expire after 30 days. When the environment expires, all the bots in the environment will be deleted. The data associated with the bot, including any flows and resources you have been using, will be lost.
 
 If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Power Virtual Agents portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
 
