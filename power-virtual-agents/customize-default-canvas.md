@@ -26,7 +26,7 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 1. You can [customize the default canvas](#customize-the-default-canvas) with JavaScript-based styling in the HTML code for the website where you deploy your bot.  
     Customizing the default canvas is useful if you want to make small customizations without investing in code development.
 
-2. You can use a [custom canvas](#use-a-custom-canvas-to-customize-the-look-and-feel-of-your-bot), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
+2. You can use a [custom canvas](#customize-a-self-hosted-canvas-advanced), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
 
 ## Retrieve bot ID and tenant ID details
