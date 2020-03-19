@@ -203,22 +203,20 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
     ```
 
-## Customize a hosted canvas (advanced)
+## Customize a self-hosted canvas (advanced)
 
 You can connect your Power Virtual Agents bot to a custom chat canvas for advanced customization. The chat canvas refers to how the bot looks to your users when they interact with the bot. 
 
->[!IMPORTANT]
->After you've customized the look and feel of the bot, you need to deploy your custom canvas for your users to use it with your Power Virtual Agents bot.
-
-
-Power Virtual Agents' chat canvas builds on the highly customizable [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat). You can create a custom canvas using this framework, and then connect it to your bot to change how it looks. For example, you might want to have consistent branding between your website and the bot.
-
+>[!WARNING]
+>Creating a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
+>After you've customized the look and feel of the bot canvas, you need to host it so your users can see the customization.
 
 >[!IMPORTANT]
 >When handling personal data, respect user privacy. Follow platform guidelines and post your privacy statement online.
 
->[!WARNING]
->Creating a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
+
+Power Virtual Agents' chat canvas builds on the highly customizable [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat). You can create a custom canvas using this framework, and then connect it to your bot to change how it looks. For example, you might want to have consistent branding between your website and the bot.
+
 
 ### Pick a sample to customize
 
