@@ -29,15 +29,15 @@ The following illustration gives you an overview of how Single Sign-on works end
 
 1. Customer enters a trigger phrase that triggers a topic that is authored to sign-in the user and use user's authenticated token (AuthToken)
 1. On trigger, Power Virtual Agents sends a login prompt to allow user to sign-in with their configured identity provider
-1. Customer's custom canvas intercepts this sign-in prompt and request an 'exchange token' from Azure Active Directory which it sends to Power Virtual Agents' bot
-1. On receipt of the 'exchange token', Power Virtual Agents' bot exchanges the 'exchange token' for an 'access token' and fills in the `AuthToken` variable
+1. Customer's custom canvas intercepts this sign-in prompt and request an On-Behalf-Of (OBO) token from Azure Active Directory which it sends to Power Virtual Agents' bot
+1. On receipt of the OBO token, Power Virtual Agents' bot exchanges the OBO token for an 'access token' and fills in the `AuthToken` variable using this value.  The 'IsLoggedIn' variable is also set at this time.
 
 The above steps completes the Single-Sign-On auth flow and the user is signed in without being prompted.
 
 ## Steps to configure SSO with Azure Active Directory
-Follow the steps to configure your Power Virtual Agents' bot to accept 'exchange tokens' and seamlessly sign-in without prompting the user.
+Follow the steps to configure your Power Virtual Agents' bot to accept OBO tokens and seamlessly sign-in without prompting the user.
 
-### 1. Create an app registration in Azure Active Directory
+### 1. Create an app registration in Azure Active Directory for your client application
 
 * Navigate to https://portal.azure.com
 * Select the 'Azure Active Directory Resource'
@@ -48,13 +48,27 @@ that `Id Tokens` and `Access` Tokens are selected.
 * Click 'Save' at the top
 * Take a note of the `Client ID` and your `Directory ID`.
 
-### 2. Add 'Token exchange URL' to your bot's authentication page
-<@Kyle - add blurb on why it's needed>
+### 2. Create an app registration in Azure Active Directory for your bot application
 
+* Navigate to https://portal.azure.com
+* Select the 'Azure Active Directory Resource'
+* Click on 'New Registration' -- Fill out Name, Selecting Single / Multitenant and click 'Next'
+* Once the resource is created, go to the Authentication
+* Add the host address into the `Redirect URI` field and make sure that `Web` is selected as the Type and enter 'https://token.botframework.com/.auth/web/redirect' as the value
+* Go to 'Certificates & Secrets', add a New Client Secret, and take note of this secret
+* Go to 'API Permissions' and ensure that the correct permissions are added for your bot
+* Go to 'Expose an API', Add a Scope, fill out all required fields, and click 'Add scope'
+* Click on 'Add a client application', paste in the 'Client Id' from Step 1. Check the scope you just created and then click 'Add application'
+* Click 'Save' at the top
+* Take a note of the `Client Secret` and your `Scope`.
+
+### 3. Add 'Token exchange URL' to your bot's authentication page
+The Token Exchange URL is used to exchange the OBO token for the requested access token through the bot framework.  This calls into Azure Active Directory to preform the actual exchange.
+* Within your Power Virtual Agent:
 * Navigate to `Configure` --> `Authentication`
-* Update `Token exchange URL` with the URL configured in Step 1.
+* Update `Token exchange URL` with the URL configured in Step 2.
 
-### 3. Update your custom canvas to intercept sign-in prompts
+### 4. Update your custom canvas to intercept sign-in prompts
 
 * Update your `index.html` to intercept login card request and exchange your token
 * Configure Microsoft Authentication Library (MSAL) by adding this code into your `<script>` tag:
@@ -133,7 +147,11 @@ const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
                connectionName: activity.attachments[0].content.connectionName,
                token
               },
-             "from":{id:"",name:"",role:"user"}
+             "from":{
+               id:clientApplication.account.account,
+               name:clientApplication.account.userName,
+               role:"user"
+             }
              }).subscribe(
          id => {
          if (id === 'retry') {
@@ -166,4 +184,4 @@ Security and privacy considerations - scope, token caching, etc.
 
 ## FAQs
 1. How do we configure our Skills with Single-Sign-On?
-A) 
+A) Create an app registration for your Skill bot following Step 2.  Navigate to https://portal.azure.com and locate the Bot Channel Registration for your Skill. Go to 'Settings' and then choose your Authentication Setting.  Paste your scope into the 'TokenExchangeUrl' field and click 'Save'.
