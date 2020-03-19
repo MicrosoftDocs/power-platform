@@ -16,3 +16,5 @@ search.app:
   - Powerplatform
 ---
 # Motivation
+
+## Philosophy

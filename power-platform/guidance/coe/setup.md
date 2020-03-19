@@ -16,3 +16,11 @@ search.app:
   - Powerplatform
 ---
 # Setup
+
+## Setting up
+
+## Extending the Toolkit
+
+## Recent changes to the CoE Starter Kit
+
+## Installing updates

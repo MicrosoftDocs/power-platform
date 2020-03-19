@@ -1,5 +1,5 @@
 ---
-title: "Example processes | MicrosoftDocs"
+title: "Model-driven apps | MicrosoftDocs"
 description: 
 author: jimholtz
 manager: kvivek
@@ -15,6 +15,8 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Example processes
+# Model-driven apps
 
-## Power Apps app auditing process
+## Model-driven apps - core components
+
+## Model-driven apps - audit and report components

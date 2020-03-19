@@ -16,3 +16,7 @@ search.app:
   - Powerplatform
 ---
 # Support and other resources
+
+## Support
+
+## Other resources

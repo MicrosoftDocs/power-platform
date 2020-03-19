@@ -16,3 +16,7 @@ search.app:
   - Powerplatform
 ---
 # Non-solution aware
+
+## Power BI Report
+
+## Audit log custom connector

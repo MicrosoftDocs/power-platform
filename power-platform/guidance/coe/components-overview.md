@@ -16,3 +16,16 @@ search.app:
   - Powerplatform
 ---
 # Components overview
+
+## Common Data Service entities
+
+## Security roles
+
+## Flows - core components solution
+
+## Flows - audit and report components solution
+
+## Flows - nurture components solution
+
+## Business process flows
+

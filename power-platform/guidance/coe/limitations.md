@@ -16,3 +16,11 @@ search.app:
   - Powerplatform
 ---
 # Limitations
+
+## Timeouts in the Admin | Sync Template V2
+
+## MFA and audit logs
+
+## DLP editor
+
+## Government community cloud environments

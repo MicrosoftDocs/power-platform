@@ -2,37 +2,37 @@
   items: 
   - name: Overview
     href: overview.md   
-  - name: Set up the CoE Starter Kit
-    href: setup-coe-starter-kit.md
-    items: 
-    - name: Set up core components
-      href: overview.md  
-    - name: Set up audit and report components
-      href: overview.md  
-    - name: Set up nurture components
-      href: overview.md       
   - name: About the CoE Starter Kit
     href: about-coe-starter-kit.md
     items: 
     - name: Motivation
-      href: overview.md  
-    - name: Setup 
-      href: overview.md  
+      href: motivation.md  
+    - name: CoE Starter Kit Explained
+      href: coe-starter-kit-explained.md  
     - name: Components overview
-      href: overview.md       
+      href: components-overview.md       
     - name: Flows
-      href: overview.md       
+      href: flows.md       
     - name: Canvas apps
-      href: overview.md       
+      href: canvas-apps.md       
     - name: Model driven apps
-      href: overview.md     
+      href: model-drive-apps.md     
     - name: Non-solution aware
-      href: overview.md     
+      href: nonsolution-aware.md     
     - name: Example processes
-      href: overview.md     
+      href: example-processes.md     
     - name: Limitations
-      href: overview.md     
+      href: limitations.md     
     - name: Elements to import to unmanaged solutions
-      href: overview.md     
+      href: elements-import-managed-solutions.md     
     - name: Support and other resources
-      href: overview.md     
+      href: support-other-resources.md   
+  - name: Set up the CoE Starter Kit
+    href: setup-coe-starter-kit.md
+    items: 
+    - name: Set up core components
+      href: setup-core-components.md  
+    - name: Set up audit and report components
+      href: setup-audit-report-components.md  
+    - name: Set up nurture components
+      href: setup-nuture-components.md         

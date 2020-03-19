@@ -16,3 +16,9 @@ search.app:
   - Powerplatform
 ---
 # Canvas apps
+
+## Canvas apps - core components solution
+
+## Canvas apps - audit components solution
+
+## Canvas apps - nurture components solution
