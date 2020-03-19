@@ -76,7 +76,7 @@ A series of validation checks are made against the URL. These checks ensure for 
 
 Error message | Troubleshoot / Mitigation
 ---|---
-We ran into problems getting the skill manifest.<br/>(`MANIFEST_FETCH_FAILED`)| Try opening your manifest URL in a web browser. If the URL renders the page, please re-register your Skill.
+We ran into problems getting the skill manifest.<br/>(`MANIFEST_FETCH_FAILED`)| Try opening your manifest URL in a web browser. If the URL renders the page within 10 seconds, please re-register your Skill.
 The manifest is incompatible. <br/>(`MANIFEST_MALFORMED`) | (a) Check if the manifest is a valid JSON file.<br/>(b) Check if the manifest contains required properties <br/>&nbsp;&nbsp;E.g.(`name`, `msaAppId`, single `endpoint`, `activities`/`id`, `activities`/`description`, `activities`/`type` (only `event` or `message` supported), `properties`/`id`, `properties`/`type`, `definitions`/`id`, `definitions`/`type` (only `strings` or `objects`) )
 There is a mismatch in your endpoints <br/>(`MANIFEST_ENDPOINT_ORIGIN_MISMATCH`) | Check if your Skill's application registration in Azure AD contains the URL of your Skill in the `Home page URL` field. [Learn more](https://go.microsoft.com/fwlink/?linkid=2123145)
 To add a skill, it must first be registered <br/>(`APPID_NOT_IN_TENANT`) | Check if your skill's application ID is registered in your organization's Azure AD tenant. |
