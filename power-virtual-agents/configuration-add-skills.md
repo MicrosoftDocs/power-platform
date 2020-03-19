@@ -74,7 +74,7 @@ To protect user's privacy, we require Skills to be registered as an app in the s
 
 A series of validation checks are made against the URL. These checks ensure for compliance, governance and usability of the Skill being added to your bot. You will need to fix these errors prior to registering a skill.
 
-Error message | Troubleshoot / Mitigation
+Error message &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Troubleshoot / Mitigation
 ---|---
 We ran into problems getting the skill manifest.<br/>(`MANIFEST_FETCH_FAILED`)| Try opening your manifest URL in a web browser. If the URL renders the page within 10 seconds, please re-register your Skill.
 The manifest is incompatible. <br/>(`MANIFEST_MALFORMED`) | (a) Check if the manifest is a valid JSON file.<br/>(b) Check if the manifest contains required properties <br/>&nbsp;&nbsp;E.g.(`name`, `msaAppId`, single `endpoint`, `activities`/`id`, `activities`/`description`, `activities`/`type` (only `event` or `message` supported) )
