@@ -34,7 +34,7 @@ The following table will help determine when to use Skills for a conversation.
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
 >[!NOTE]
->Power Virtual Agents only supports Skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0)
+>Power Virtual Agents only supports Skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0) or above.
 
 Before registering the Skill, provide the bot's ID to your Skills developer to authorize the bot to call actions in the Skill. [Learn more about Skill allowlist](https://go.microsoft.com/fwlink/?linkid=2123148).
 
