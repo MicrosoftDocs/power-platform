@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/19/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -45,27 +45,37 @@ The gateway cluster list includes both On-premises data gateways and On-premises
 
 ## Details
 
-Select any gateway cluster and select **Details** to see the gateway members, device name, and version in each gateway cluster.
+Select a gateway cluster and then select **Details** to see the following information on gateway members.
 
 > [!div class="mx-imgBorder"] 
 > ![Gateway details](media/data-gateways-details.png "Gateway details")
 
+> [!div class="mx-imgBorder"] 
+> ![Gateway member details](media/data-gateways-member-details.png "Gateway member details")
+
+- **Gateway name**: The name of the gateway member.
+- **Device name**: The physical device on which the gateway is installed.
+- **Version**: The gateway software version installed on the machine.
+- **Status**: Select (![Gateway status](media/gateway-status.png "Gateway status")) to check the status of a gateway member.
+- **State**: Select to enable or disable a gateway member.
+
+After selecting a gateway member, you can select **Remove** to remove it. This does not uninstall the gateway from the physical machine but removes all the metadata regarding the gateway.
+
 ## Settings
 
-> [!NOTE]
-> Only gateway admins (not Power Platform admins) can view **Settings**. 
-
-With **Tenant administration** turned off, use **Settings** to set on-Premises data gateway settings such as the gateway cluster name, department, and Power BI settings.
+Use **Settings** to set on-Premises data gateway settings such as the gateway cluster name, department, General settings and Power BI settings. 
 
 > [!div class="mx-imgBorder"] 
 > ![Data gateway settings](media/data-gateways-settings-tab.png "Data gateway settings")
+
+> [!div class="mx-imgBorder"] 
+> ![Data gateway settings](media/data-gateways-settings.png "Data gateway settings")
 
 For more information on **Allow user's cloud datasources to refresh through this gateway cluster**, see [Merge or append on-premises and cloud data sources](https://go.microsoft.com/fwlink/p/?linkid=2005525).
 
 For more information on **Allow user's custom data connectors to refresh through this gateway cluster**, see [Use custom data connectors with the on-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-custom-connectors).
 
-> [!div class="mx-imgBorder"] 
-> ![Data gateway settings](media/data-gateways-settings.png "Data gateway settings")
+For more information on **Distribute requests across all active gateways in this cluster**, see [Load balance across gateways in a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster).
 
 ## Manage users
 
@@ -91,10 +101,7 @@ For on-Premises data gateway in standard mode, users can be added in any of the 
 
 ## Remove
 
-> [!NOTE]
-> Only gateway admins (not Power Platform admins) can remove a gateway cluster. 
-
-With **Tenant administration** turned off, use **Remove** to remove a gateway cluster.
+With **Tenant administration** turned off, use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
 
 > [!div class="mx-imgBorder"] 
 > ![Remove gateway cluster](media/data-gateways-remove.png "Remove gateway cluster")
