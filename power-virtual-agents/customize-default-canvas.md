@@ -35,11 +35,11 @@ To customize your canvas, whether it's the default canvas or a custom one you co
 
 You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agent-bot-parameters). 
 
-## Customize the default canvas
+## Customize the default canvas (simple)
 
-To configure how the canvas looks, you'll need to have a published bot. You then apply some CSS and JavaScript styling to the page where you insert your bot to change the bot's icon, color, and name.
+You can configure how the chat canvas looks with some simple CSS and JavaScript styling options. 
 
-First, you need to configure the page where you are hosting your bot.
+First, you need to configure where you're deploying your bot canvas.
 
 1.	[Create and publish a bot](fundamentals-get-started.md).
 
@@ -203,9 +203,13 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
     ```
 
-## Use a custom canvas to customize the look and feel of your bot
+## Customize a hosted canvas (advanced)
 
 You can connect your Power Virtual Agents bot to a custom chat canvas for advanced customization. The chat canvas refers to how the bot looks to your users when they interact with the bot. 
+
+>[!IMPORTANT]
+>After you've customized the look and feel of the bot, you need to deploy your custom canvas for your users to use it with your Power Virtual Agents bot.
+
 
 Power Virtual Agents' chat canvas builds on the highly customizable [Azure Bot Framework web chat canvas](https://github.com/microsoft/BotFramework-WebChat). You can create a custom canvas using this framework, and then connect it to your bot to change how it looks. For example, you might want to have consistent branding between your website and the bot.
 
@@ -233,10 +237,6 @@ Or you can pick from [other sample web chat canvases](https://github.com/microso
 ### Customize canvas using `stylesetOptions`
 
 As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0).
-
-### Host your custom canvas
-
-After you've customized the look and feel of the bot, you need to deploy your custom canvas for your users to use it with your Power Virtual Agents bot.
 
 ## Related links
 
