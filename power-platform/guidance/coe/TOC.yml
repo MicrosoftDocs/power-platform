@@ -2,15 +2,17 @@
   items: 
   - name: Overview
     href: overview.md   
-  - name: Setup the CoE Starter Kit
+  - name: Set up the CoE Starter Kit
+    href: setup-coe-starter-kit.md
     items: 
-    - name: Setup core components
+    - name: Set up core components
       href: overview.md  
-    - name: Setup audit and report components
+    - name: Set up audit and report components
       href: overview.md  
-    - name: Setup nurture components
+    - name: Set up nurture components
       href: overview.md       
   - name: About the CoE Starter Kit
+    href: about-coe-starter-kit.md
     items: 
     - name: Motivation
       href: overview.md  
