@@ -1,8 +1,8 @@
 ---
-title: "Use an Azure Bot Framework bot with Power Virtual Agents"
-description: "Use and extend an existing Azure Bot Framework bot to work with Power Virtual Agents."
+title: "Use a Microsoft Bot Framework bot with Power Virtual Agents"
+description: "Use and extend an existing Microsoft Bot Framework bot to work with Power Virtual Agents."
 keywords: "extensibility, integration, extend bot, bot framework"
-ms.date: 12/10/2019
+ms.date: 12/16/2019
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -14,7 +14,7 @@ manager: shellyha
 
 # Use an Azure Bot Framework bot with Power Virtual Agents
 
-This article covers how to use the Azure Bot Framework dispatcher tool to integrate an existing bot with a Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and integrated development environments (IDEs). 
+This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with a Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and integrated development environments (IDEs). 
 
 * [Retrieve topics, utterances and secrets from your Power Virtual Agents bot](#retrieve-topics-and-utterances-from-your-bot)
 * [Train the dispatcher custom model with your Power Virtual Agents topics](#train-the-dispatcher-custom-model-with-your-power-virtual-agents-topics)
@@ -23,17 +23,17 @@ This article covers how to use the Azure Bot Framework dispatcher tool to integr
 
 ## Prerequisites
 
-  * Bot built using [Azure Bot Framework SDK v4](https://github.com/microsoft/botframework)
-  * Understanding of [Azure Bot Framework's dispatch tool](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig)
+  * Bot built using [Microsoft Bot Framework SDK v4](https://github.com/microsoft/botframework)
+  * Understanding of [Microsoft Bot Framework's dispatch tool](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig)
   * Understanding how to [test and debug bots using Bot Framework emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0)
 
 ### Code samples and dependencies
 
 Code snippets used in this document are available in these articles:
 
-  * [Azure Bot Framework dispatch tool app sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/14.nlp-with-dispatch)
+  * [Microsoft Bot Framework dispatch tool app sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/14.nlp-with-dispatch)
   * [Content converter](https://go.microsoft.com/fwlink/?linkid=2097857)
-  * [Azure Bot Framework LUDown utility](https://github.com/microsoft/botbuilder-tools/tree/master/packages/Ludown)
+  * [Microsoft Bot Framework LUDown utility](https://github.com/microsoft/botbuilder-tools/tree/master/packages/Ludown)
   * [NuGet package manager](https://www.nuget.org/downloads)
   * .NET Core 2.2 runtime: [x86](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.300-windows-x86-installer) | [x64](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.300-windows-x64-installer)
 
@@ -156,7 +156,7 @@ Train and recreate the dispatcher app and add your exported topics and utterance
 
 ## Register and trigger your new dispatch endpoint in code
 
-The following steps require you to add code that registers your new dispatch endpoint and trigger it whenever a user's utterance matches intent. We are using the [sample provided by the Azure Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/14.nlp-with-dispatch).
+The following steps require you to add code that registers your new dispatch endpoint and trigger it whenever a user's utterance matches intent. We are using the [sample provided by the Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/14.nlp-with-dispatch).
 
 1.  Update `appsettings.json` in your dispatcher app to include the new endpoint for Virtual Agent.
   
@@ -263,7 +263,7 @@ The following steps require you to add code that registers your new dispatch end
     );
     ```
   
-5.  Update `DispatchBot.cs` to add a trigger for the Virtual Agent bot on intent match.
+5.  Update `DispatchBot.cs` to add a trigger for the Power Virtual Agents bot on intent match.
   
     ```csharp
     private async Task ProcessDynamicsBotAsync(ITurnContext<Microsoft.Bot.Schema.IMessageActivity> turnContext, CancellationToken     cancellationToken)
