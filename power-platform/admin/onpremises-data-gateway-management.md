@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/19/2020
+ms.date: 03/20/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -77,6 +77,13 @@ For more information on **Allow user's custom data connectors to refresh through
 
 For more information on **Distribute requests across all active gateways in this cluster**, see [Load balance across gateways in a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster).
 
+## Status
+
+Select a gateway cluster, then select **Details** > **Check status** (![Gateway status](media/gateway-status.png "Gateway status")) to check the status of a gateway cluster.
+
+> [!div class="mx-imgBorder"] 
+> ![Data gateway settings](media/data-gateways-status.png "Data gateway settings")
+
 ## Manage users
 
 Select the **People** icon (![People](media/people.png)) next to the gateway cluster name to see the list of gateway users. Add or remove gateway admins in the **Manage Users** page.
@@ -101,7 +108,7 @@ For on-Premises data gateway in standard mode, users can be added in any of the 
 
 ## Remove
 
-With **Tenant administration** turned off, use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
+Use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
 
 > [!div class="mx-imgBorder"] 
 > ![Remove gateway cluster](media/data-gateways-remove.png "Remove gateway cluster")
