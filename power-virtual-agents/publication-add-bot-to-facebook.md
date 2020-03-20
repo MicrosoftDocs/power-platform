@@ -17,12 +17,12 @@ ms.collection: virtual-agent
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can add your bot to either Facebook Messenger or Facebook Workplace to use the Facebook experience to engage with your end users.
+You can add your bot to Facebook Messenger to use the Facebook experience to engage with your end users.
 
-Facebook Messenger, Facebook Workplace, and related services are subject to Facebook's own terms and conditions.  For support related to Facebook Messenger and Facebook Workplace, contact Facebook directly.
+Facebook Messenger and related services are subject to Facebook's own terms and conditions.  For support related to Facebook Messenger, contact Facebook directly.
 
 > [!IMPORTANT]
-> This article is intended for experienced IT professionals who manage your organization's Facebook page and Facebook Workplace.
+> This article is intended for experienced IT professionals who manage your organization's Facebook page.
 
 > [!NOTE]
 > By publishing your bot to a Facebook page, some of your data such as bot content and end-user chat content will be shared with Facebook (meaning that your data will flow outside of your [organization’s compliance and geographic or regional boundaries](data-location.md)). <br/>
@@ -153,45 +153,9 @@ Until the app is published, it is in [Development Mode](https://developers.faceb
 
 After the review is successful, in the app's **Dashboard** under **App Review**, set the app to **Public**. Ensure that the Facebook Page associated with the bot is published. The status appears in the **Pages** settings.
 
-## Add your bot to Facebook Workplace
-[Facebook Workplace](https://workplace.facebook.com/help/work/) is the business-to-employee version of Facebook.
 
-To add your bot to Facebook Workplace, you'll need information from your Facebook Workplace Advanced account and Power Virtual Agents. 
-
-You also need to be the administrator of a Facebook Workplace Advanced account to create a custom integration. 
-
-Learn more at [What are the differences between Workplace Standard and Workplace Advanced?](https://www.facebook.com/help/work/289530281467090) and [Facebook Workplace Custom Integrations](https://developers.facebook.com/docs/workplace/custom-integrations-new/).
-
-**Create and connect a custom integration:**
-
-1. Sign in to your [Facebook Workplace Advanced](https://www.facebook.com/workplace) account as the administrator.
-
-2. Select **Admin Panel** on the side menu panel and then **Integrations**. Select **Create Custom Integration**.
-
-   ![Create custom integration](media/channel-fb-wp-custom-integration.png)
-
-3. Under **Integration details**, copy and securely store the *App ID*, *App Secret*, and *Access token* (the *Access token* will be used as the page access token). Make sure **Enabled** is set to **Yes**. Under **Integrations Permissions**, make sure **Message any member** is selected.
-
-   ![Get Facebook Workplace custom integration info](media/channel-fb-wp-get-integration-info.png)
-
-4. Navigate to the custom integration page you created in the previous step. You can do this by searching the custom integration's name on the side search bar. Copy the *page ID* of the custom integration from the URL at *my.workplace.com/\{your-integration-name}-\{pageID}/*.
-
-   ![Get Facebook Workplace custom integration page ID](media/channel-fb-wp-get-page-id.png)
-
-5. Follow the steps under [Configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents) to provide the custom integration information.
-
-**Set up webhooks for Facebook Workplace custom integration:**
-1. Return to your Facebook Workplace custom integration settings by selecting **Admin Panel** on the side menu panel and then the custom integration you created.
-
-2. Under the **Configure Webhooks** section, provide the *Callback URL* and *Verify token* from the [Configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents) section.  Select the **messages**, **messaging_postbacks**, and **message_deliveries** fields. 
-
-   ![Set Facebook Workplace custom integration webhook](media/channel-fb-wp-webhooks.png)
-
-3. Save your custom integration by selecting **Save**.
-
-
-## Remove your bot from Facebook Messenger or Facebook Workplace
-When you do not want the bot to be reachable in Facebook Messenger or Facebook Workplace, you can remove the bot from Facebook. 
+## Remove your bot from Facebook Messenger
+When you do not want the bot to be reachable in Facebook Messenger, you can remove the bot from Facebook. 
 
 1. In Power Virtual Agents, select **Manage** on the side navigation pane, and then go to the **Channels** tab. 
 
@@ -208,6 +172,6 @@ New conversations between user and the bot will have the latest published bot co
 ## Known limitations
 - You will need to create a new bot if the Customer Satisfaction (CSAT) survey shows up as a non-interactable card image for a bot created during public preview to access the latest CSAT content.
 - It might take a few minutes before the bot becomes reachable by users on Facebook pages after the Facebook channel is added.
-- After removing the Facebook channel, it might take a few minutes before the bot is removed fully and becomes unreachable on Facebook Messenger and Facebook Workplace.
+- After removing the Facebook channel, it might take a few minutes before the bot is removed fully and becomes unreachable on Facebook Messenger.
 - After removing a Facebook page, it might take a few minutes before the bot becomes unreachable by visitors to the removed page through Facebook Messenger.
 
