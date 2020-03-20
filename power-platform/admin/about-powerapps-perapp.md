@@ -21,8 +21,9 @@ Power Apps per app plan allows individual users to run two applications and one 
 
 The following release plan topic announces the availability of this feature: [New licensing options for Power Automate standalone paid plans](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans).
 
-
+<!-- 
 ![Power Apps per app plan](media/per-app-pass-concept.png "Power Apps per app plan")
+-->
 
 > [!IMPORTANT]
 > Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn't attempt to assign them to users there. Power Apps per app plans must be allocated to an environment (and not to users) by an admin in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
