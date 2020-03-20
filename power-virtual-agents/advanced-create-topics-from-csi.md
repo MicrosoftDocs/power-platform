@@ -24,7 +24,7 @@ You should review [recommendations for identifying topics for automation](/dynam
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n7pD]
 >
 
-[!INCLUDE] [Medical and emergency usage](includes/pva-usage-limitations.md)
+[!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 
 ## Prerequisite to automate topics
