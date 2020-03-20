@@ -65,7 +65,7 @@
       items:
       - name: Opt in to early access updates
         href: opt-in-early-access-updates.md
-      - name: View analytics
+      - name: View analytics and storage
         items:
         - name: Common Data Service analytics 
           href: analytics-common-data-service.md
