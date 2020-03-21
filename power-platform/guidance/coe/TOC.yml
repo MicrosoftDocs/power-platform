@@ -1,12 +1,21 @@
 - name: Power Platform Center of Excellence
   items: 
   - name: Overview
-    href: overview.md   
+    href: overview.md
+  - name: Why we built it?
+    href: motivation.md   
+  - name: Set up the CoE Starter Kit
+    href: setup-coe-starter-kit.md
+    items: 
+    - name: Set up core components
+      href: setup-core-components.md  
+    - name: Set up audit and report components
+      href: setup-audit-report-components.md  
+    - name: Set up nurture components
+      href: setup-nurture-components.md
   - name: About the CoE Starter Kit
     href: about-coe-starter-kit.md
-    items: 
-    - name: Motivation
-      href: motivation.md  
+    items:  
     - name: CoE Starter Kit Explained
       href: coe-starter-kit-explained.md  
     - name: Components overview
@@ -26,13 +35,5 @@
     - name: Elements to import to unmanaged solutions
       href: elements-import-managed-solutions.md     
     - name: Support and other resources
-      href: support-other-resources.md   
-  - name: Set up the CoE Starter Kit
-    href: setup-coe-starter-kit.md
-    items: 
-    - name: Set up core components
-      href: setup-core-components.md  
-    - name: Set up audit and report components
-      href: setup-audit-report-components.md  
-    - name: Set up nurture components
-      href: setup-nurture-components.md         
+      href: support-other-resources.md  
+           
