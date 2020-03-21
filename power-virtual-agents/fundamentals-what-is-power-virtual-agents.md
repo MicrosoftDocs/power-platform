@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 # Power Virtual Agents overview
 
->[IMPORTANT]
+>[!IMPORTANT]
 >See the [Important information](#important-information) section for specific usage details.
 
 Power Virtual Agents empowers teams to easily create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.

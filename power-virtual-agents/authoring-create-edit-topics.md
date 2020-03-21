@@ -33,6 +33,11 @@ You can see how the bot conversation works in practice by testing it in the **Te
 >You can have up to 1000 topics in a bot.
 
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Use system and sample topics
 
 When you create bot, a number of topics will be automatically created for you.
