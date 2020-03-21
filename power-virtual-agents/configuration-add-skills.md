@@ -21,6 +21,11 @@ Power Virtual Agents enables you to extend your bot using Azure Bot Framework Sk
 
 This article is intended for system administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). After a Skill has been registered, bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Compare use of Flows and Skills actions
 The following table will help you determine when to use Skills for a conversation.
 

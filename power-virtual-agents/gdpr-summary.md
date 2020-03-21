@@ -25,6 +25,11 @@ The guide discusses how to use Microsoft's products, services and administrative
 6.	**Export** — Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR request for personal data in Microsoft's cloud
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## GDPR terminology
 
 The following provides definitions of terms that are relevant to this guide:

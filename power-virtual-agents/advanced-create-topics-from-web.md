@@ -32,7 +32,12 @@ You can [test the topics in the test chat](authoring-test-bot.md), but you'll ne
 
 >    
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mNOt]
->
+
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
 
 ## Extract content from webpages
 

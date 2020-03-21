@@ -24,6 +24,11 @@ Creating a bot with Power Virtual Agents is easy to do with the [no-code authori
 
 There are a number of [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, in addition to [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics)
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Accessibility
 
 Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot **Authoring canvas** is built to be accessible from the get-go. 
