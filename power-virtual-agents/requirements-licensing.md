@@ -28,6 +28,11 @@ More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085
 > [!NOTE]
 > To acquire a Power Virtual Agents user license, you need to use the non-preview version of the admin center. Ensure the **Try the new admin center** setting is turned off.
   
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Buy a tenant license
 
 Purchase licenses for your organization by going to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx). You'll need to sign in with an admin account to buy licenses.

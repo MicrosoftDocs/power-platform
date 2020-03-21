@@ -23,6 +23,11 @@ Power Virtual Agents offers the following capabilities to find or export persona
 3. Export system-generated logs (tenant admin) 
 
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 
 ## Export the bot content
 

@@ -23,6 +23,11 @@ For example, you can save a customer's name in a variable called `UserName`. The
 
 You can use variables to create logical expressions that dynamically route the customer down different conversation paths. You can also feed variables to [Power Automate](how-to-flow.md) and [Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) as input parameters, and save the output results from those actions.  
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Entity and variable type
 Power Virtual Agents uses *[entities](advanced-entities-slot-filling.md)* to understand and identify a specific type of information from a user's responses. When saving the identified information to a variable, a *variable type* will be associated with it. The variable type is essentially analogous with the *entity*. 
 
