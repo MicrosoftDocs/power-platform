@@ -4,9 +4,10 @@
     href: overview.md
   - name: Why we built it?
     href: motivation.md   
-  - name: Set up the CoE Starter Kit
-    href: setup-coe-starter-kit.md
+  - name: Set up the CoE Starter Kit    
     items: 
+    - name: Get started with setup
+      href: setup.md
     - name: Set up core components
       href: setup-core-components.md  
     - name: Set up audit and report components
@@ -16,7 +17,7 @@
   - name: Use the CoE Starter Kit
     href: use.md
     items:  
-    - name: CoE Starter Kit Explained
+    - name: CoE Starter Kit explained
       href: coe-starter-kit-explained.md  
     - name: Components overview
       href: components-overview.md       
