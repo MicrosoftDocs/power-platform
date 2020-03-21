@@ -51,6 +51,11 @@ The topic details page includes a variety of charts with graphical views of a to
 * [Impact Summary charts](#impact-summary-charts)
 * [Topic Volume by Day chart](#topic-volume-by-day-chart)
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Topic summary charts
 
 The Topic summary charts summarize the topic's performance indicators for the specified time period and the percent change over the period.

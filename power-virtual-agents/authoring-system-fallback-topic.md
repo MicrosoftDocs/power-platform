@@ -23,6 +23,11 @@ In some scenarios, you might want to customize how the bot behaves when user inp
 
 You customize these fallback behaviors by adding the system **Fallback** topic. You can also customize the **Fallback** topic, similar to most other system topics.
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Add a system fallback topic
 
 1.    On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon.png "Settings icon"), and then select **System fallback**.

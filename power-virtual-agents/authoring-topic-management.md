@@ -21,6 +21,11 @@ As the number of topics in your bot grows, the following features will help you 
 - [Topic status](#topic-status)
 - [Copying a topic](#copying-a-topic)
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Topic errors
 
 The topic authoring canvas validates topics and shows errors and warnings. 

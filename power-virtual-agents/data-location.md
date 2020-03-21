@@ -24,6 +24,11 @@ No matter where customer data is stored, Microsoft does not control or limit the
 
 Data will be stored in United States, if a bot author’s tenant location is not listed under the Data locations table above. For France, data will be stored in Europe.   
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Data locations
 Azure geographic locations (geos) | Azure datacenters (regions)
  ---|---
