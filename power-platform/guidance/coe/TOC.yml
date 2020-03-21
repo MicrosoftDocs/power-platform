@@ -32,8 +32,6 @@
       href: example-processes.md    
     - name: Elements to import to unmanaged solutions
       href: elements-import-managed-solutions.md     
-    - name: Support and other resources
-      href: support-other-resources.md  
   - name: Limitations
     href: limitations.md 
   - name: Feedback and support
