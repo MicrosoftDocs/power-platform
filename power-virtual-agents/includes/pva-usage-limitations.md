@@ -1,1 +1,1 @@
-See the [Power Virtual Agents overview](/fundamentals-what-is-power-virtual-agents.md) topic for important information and guidance.
+See the [Power Virtual Agents overview](./fundamentals-what-is-power-virtual-agents.md) topic for important information and guidance.
