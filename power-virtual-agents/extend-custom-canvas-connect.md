@@ -23,6 +23,11 @@ Power Virtual Agents allows you customize the look and feel of your bot's chat c
 >[!WARNING]
 >Creating a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Pick a sample to customize
 
 We recommend starting with one of these samples custom built to work with Power Virtual Agents: 

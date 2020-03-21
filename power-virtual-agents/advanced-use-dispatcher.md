@@ -26,6 +26,9 @@ This article covers how to use the Microsoft Bot Framework dispatcher tool to in
   * Bot built using [Microsoft Bot Framework SDK v4](https://github.com/microsoft/botframework)
   * Understanding of [Microsoft Bot Framework's dispatch tool](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=csaddref%2Ccsbotconfig)
   * Understanding how to [test and debug bots using Bot Framework emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0)
+  * [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 
 ### Code samples and dependencies
 

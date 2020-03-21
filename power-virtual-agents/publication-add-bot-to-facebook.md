@@ -28,6 +28,11 @@ Facebook Messenger and related services are subject to Facebook's own terms and 
 > By publishing your bot to a Facebook page, some of your data such as bot content and end-user chat content will be shared with Facebook (meaning that your data will flow outside of your [organization’s compliance and geographic or regional boundaries](data-location.md)). <br/>
 > For more information, see [Facebook's Platform Policies](https://developers.facebook.com/docs/messenger-platform/policy-overview).
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Add bot to Facebook Messenger
 You need a Facebook app, and an associated developer account, to connect your Power Virtual Agents bot to Facebook Messenger on your Facebook pages. 
 
