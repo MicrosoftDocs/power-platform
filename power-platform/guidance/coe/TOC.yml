@@ -14,7 +14,7 @@
     - name: Set up nurture components
       href: setup-nurture-components.md
   - name: Use the CoE Starter Kit
-    href: about-coe-starter-kit.md
+    href: use.md
     items:  
     - name: CoE Starter Kit Explained
       href: coe-starter-kit-explained.md  
@@ -29,12 +29,12 @@
     - name: Non-solution aware
       href: nonsolution-aware.md     
     - name: Example processes
-      href: example-processes.md     
-    - name: Limitations
-      href: limitations.md     
+      href: example-processes.md    
     - name: Elements to import to unmanaged solutions
       href: elements-import-managed-solutions.md     
     - name: Support and other resources
       href: support-other-resources.md  
-  - name: Provide feedback
-    href: feedback.md         
+  - name: Limitations
+    href: limitations.md 
+  - name: Feedback and support
+    href: feedback-support.md         
