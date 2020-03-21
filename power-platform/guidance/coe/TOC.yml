@@ -1,4 +1,4 @@
-- name: Power Platform Center of Excellence
+- name: Power Platform Center of Excellence (CoE) Kit
   items: 
   - name: Overview
     href: overview.md
@@ -36,4 +36,5 @@
       href: elements-import-managed-solutions.md     
     - name: Support and other resources
       href: support-other-resources.md  
-           
+  - name: Provide feedback
+    href: feedback.md         
