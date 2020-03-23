@@ -16,3 +16,13 @@ search.app:
   - Powerplatform
 ---
 # Flows
+
+## Flows - core components solution
+
+## Flows - audit and report components solution
+
+## Flows - nurture components solution
+
+## Change welcome email from Microsoft 365
+
+## Business process flows

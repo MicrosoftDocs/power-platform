@@ -21,14 +21,14 @@
       href: coe-starter-kit-explained.md  
     - name: Components overview
       href: components-overview.md       
-    - name: Flows
-      href: flows.md       
-    - name: Canvas apps
-      href: canvas-apps.md       
-    - name: Model driven apps
-      href: model-driven-apps.md     
-    - name: Non-solution aware
-      href: nonsolution-aware.md     
+      - name: Use flows
+        href: flows.md       
+      - name: Use canvas apps
+        href: canvas-apps.md       
+      - name: Use model driven apps
+        href: model-driven-apps.md     
+      - name: Non-solution aware
+        href: nonsolution-aware.md     
     - name: Example processes
       href: example-processes.md    
     - name: Elements to import to unmanaged solutions
