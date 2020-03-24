@@ -391,17 +391,3 @@ To check the status:
 1. This will open a new tab to the flow's details page.
 
 1. View the Runs
-
-## FAQ
-
-- **What licenses do I need to run this solution?**
-The apps and flows in this solution use Premium Features like Custom Connectors and CDS, therefore a Per App or Per User Power Apps license is required to run and play the apps. More information: [Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
-If you want to use the Power BI report (packaged as part of the solution), you'll need a Power BI license. More information: [Power BI pricing](https://powerbi.microsoft.com/pricing/)
-
-- **It looks like I found a bug with the app; where should I go?** To file a bug with the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-- **What features are currently not supported in GCC?** The Office 365 Audit Log and custom connector are not available in GCC.
-
-## Issues and feedback
-
-For feedback and issues about the CoE Starter Kit, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
