@@ -18,7 +18,7 @@
     href: use.md
     items:  
     - name: CoE Starter Kit explained
-      href: coe-starter-kit-explained.md  
+      href: starter-kit-explained.md  
     - name: Components overview
       href: components-overview.md       
       - name: Use flows
