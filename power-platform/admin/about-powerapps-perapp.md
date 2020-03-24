@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/20/2020
+ms.date: 03/24/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,13 +17,9 @@ search.app:
 ---
 # About Power Apps per app plans 
 
-Power Apps per app plan allows individual users to run two applications and one portal for a specific business scenario based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity) area in the Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
+Power Apps per app plan allows individual users to run **two applications** and **one portal** for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity) area in the Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
 
 The following release plan topic announces the availability of this feature: [New licensing options for Power Automate standalone paid plans](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans).
-
-<!-- 
-![Power Apps per app plan](media/per-app-pass-concept.png "Power Apps per app plan")
--->
 
 > [!IMPORTANT]
 > Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn't attempt to assign them to users there. Power Apps per app plans must be allocated to an environment (and not to users) by an admin in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
@@ -57,7 +53,7 @@ Once you've made your purchase, there are no further actions needed in the Micro
 
 ## Step two: Allocate per app plans
 
-After purchase, you allocate per app plans to environments.
+After purchase, you allocate per app plans to environments. If you have multiple environments like test and production, you need to allocate per app plans capacity to all these environments appropriately.
 
 In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Analytics > Capacity** in the left-side navigation pane. If your organization has purchased add-ons that includes per app plans, an **Add-ons** tile appears on the **Capacity** screen displaying summary information about the capacity add-ons that your organization has.
 
