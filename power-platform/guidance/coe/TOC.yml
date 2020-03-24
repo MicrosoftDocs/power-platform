@@ -20,7 +20,8 @@
     - name: CoE Starter Kit explained
       href: starter-kit-explained.md  
     - name: Components overview
-      href: components-overview.md       
+      href: components-overview.md      
+      items:  
       - name: Use flows
         href: flows.md       
       - name: Use canvas apps
