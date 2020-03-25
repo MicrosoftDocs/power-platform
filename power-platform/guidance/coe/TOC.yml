@@ -26,14 +26,14 @@
     - name: Components overview
       href: components-overview.md      
       items:  
-      - name: Use flows
-        href: flows.md       
-      - name: Use canvas apps
-        href: canvas-apps.md       
-      - name: Use model driven apps
-        href: model-driven-apps.md     
-      - name: Non-solution aware
-        href: nonsolution-aware.md     
+      - name: Use core components
+        href: core-components.md       
+      - name: Use governance components
+        href: governance-components.md       
+      - name: Use nurture components
+        href: nurture-components.md     
+      - name: Extend and modify components
+        href: modify-components.md     
     - name: Example processes
       href: example-processes.md    
     - name: Elements to import to unmanaged solutions

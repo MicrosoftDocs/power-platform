@@ -54,9 +54,48 @@ There are multiple components provided in this starter kit, each will require so
 
 ## Extending the Toolkit
 
-## Recent changes to the CoE Starter Kit
+When you are ready to extend the CoE Starter Kit with your own ideas, you will do so by making modifications to the solution components in your own unmanaged solution:
+
+1. **Read about solutions** in our documentation which will introduce you to
+    the concepts as well as to notions like how to create your publisher:
+    [introduction
+    solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/introduction-solutions)
+
+1. **Create a new UNMANAGED solution**
+
+1. **Choose components from the CoE starter kit to add to your new solution**,
+    you decide which ones you want to use. See here for the elements needed to
+    import to extend and utilize the entire CoE Starter Kit: [Elements to Import
+    to Unmanaged Solution](#elements-to-import-to-unmanaged-solution)
+
+1. **Update the Environment Variables**
+
+1. **Extend the CoE starter kit** by making modifications to the solution
+    components in the context of your new unmanaged solution.
+
+1. If you are **extending canvas apps or flows**, create a copy of the app from
+    the managed solution and add the unmanaged copy of the app to your unmanaged
+    solution.
+
+    For an example of extending an app, please see [Template
+    Catalog](#template-catalog) below.
+
+1. **Deploy to test and production**. We recommend making modifications and
+    installing updates pushed by our team to the solution in a development
+    environment dedicated to this kit and hosting a production environment that
+    has the real data. If data is being accessed and contributed by other end
+    users, that would be a scenario to have a dev/test/prod environment.  
 
 ## Installing updates
+
+Periodically, the solution will receive updates to implement new features and fixes for bugs or optimizations. These updates will be announced on the GitHub repo and can be downloaded from there or the direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+
+Install the updates by importing the latest version to the environment where you originally installed the solution - select **Upgrade > Overwrite customizations** to upgrade the solution.
+
+![Solution Upgrade](media/5fa9fdcde830b71b2d7d26dbd722f066.png)
+
+>[!NOTE]
+>**Known Limitations**: Currently, only model-driven components and CDS entities will be updated with managed solution updates. Canvas Apps and Flows will be replaced during an update. If you are extending and customizing canvas apps, you will need to make a copy of the app first (which will not receive updates).
 
 ## FAQ
 

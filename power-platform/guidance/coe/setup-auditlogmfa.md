@@ -53,41 +53,41 @@ Management APIs](<https://docs.microsoft.com/office/office-365-management-api/ge
 1. Download the new **Center of Excellence – Audit Logs** solution from [GitHub](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit/Audit%20Log%20(MFA))
 1. Navigate to [make.powerapps.com](https://make.powerapps.com)
 1. Import the new **Center of Excellence – Audit Logs** (CenterofExcellenceAuditLogs_x_x_x_xxx_managed.zip) solution, which contains the custom connector and Power Automate flow to sync audit logs to CoE CDS entities.
-1. Open the solution, click on the **Office 365 Management API custom connector** and click on **edit** ![A screenshot of a social media post Description automatically generated](media/96ddbe8096a7e02a58dacede9f7a3cd8.png)
+1. Open the solution, click on the **Office 365 Management API custom connector** and click on **edit** ![A screenshot of a social media post Description automatically generated](media/coemfa1.png)
 
 ### Custom connector setup
 
-1. Leave the **1. General** page as is and click **Security** ![A screenshot of a cell phone Description automatically generated](media/cf6b3c772c6c3342b9e24e30dc55ba82.png)
-1. Click on **Edit** at the bottom of the OAuth 2.0 area to edit the authentication parameters ![A screenshot of a cell phone Description automatically generated](media/7c928595217c56c59a6e555386d688fb.png)
+1. Leave the **1. General** page as is and click **Security** ![A screenshot of a cell phone Description automatically generated](media/coemfa2.png)
+1. Click on **Edit** at the bottom of the OAuth 2.0 area to edit the authentication parameters ![A screenshot of a cell phone Description automatically generated](media/coemfa3.png)
 1. Paste the Application (Client) ID you have copied from the App Registration under Client Id. Remember, this is the value you copied from the Overview.
 1. Paste the Client Secret you have copied from the App Registration under Client Secret. Remember, this is the value you copied from Certificates & Secrets.
 1. Leave the Tenant ID to common
 1. Set the Resource URL to **https://manage.office.com**
-1. Copy the Redirect URL into your Notepad ![A screenshot of a cell phone Description automatically generated](media/44a534a9fa89efaad0e74eb49ec7328e.png)
-1. Click **Update Connector** ![screenshot](media/58474e2220c7274fb6310b82c5698bf7.png)
+1. Copy the Redirect URL into your Notepad ![A screenshot of a cell phone Description automatically generated](media/coemfa4.png)
+1. Click **Update Connector** ![screenshot](media/coemfa5.png)
 
 ### Update Azure AD App Registration with the Redirect URL
 
 1. Go back to the Azure AD Portal and your App Registrations
-1. Under Overview, click on Add a Redirect URI  ![screenshot](media/5bea59cc403a04edc543949daa069af3.png)
-1. Select + Add a platform ![screenshot](media/924bcb32f91b32d228276a679bbf3bc4.png)
-1. Choose Web ![A screenshot of a social media post Description automatically generated](media/00803c2ce0894f3804c808756ab8f996.png)
+1. Under Overview, click on Add a Redirect URI  ![screenshot](media/coemfa6.png)
+1. Select + Add a platform ![screenshot](media/coemfa7.png)
+1. Choose Web ![A screenshot of a social media post Description automatically generated](media/coemfa8.png)
 1. Enter the URL you have copied from the Redirect URL section of the Custom Connector (step 9.g above)
 1. Click Configure
 1. Go back to the Custom Connector setup to set up a connection to the Custom Connector and Start a Subscription to the [Audit Log Content](<https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription>). It is important to complete these steps for the flow to work.
 
-    1. Select Test ![](media/dd6052cc59cba01c25951738b6b1b602.png)
+    1. Select Test ![](media/coemfa8a.png)
 
     1. Create a **+ New connection** and login to the user account with access
         to the audit logs
 
-    1. Select **StartSubscription** as Operation ![A screenshot of a cell phone Description automatically generated](media/a072d172a394a06ba031512b01a596d7.png)
+    1. Select **StartSubscription** as Operation ![A screenshot of a cell phone Description automatically generated](media/coemfa9.png)
 
-    1. Copy the Directory (Tenant ID) under **tenant** and  **PublisherIdentifier**. Remember, this is the value you copied from the Overview of the Azure App Registration ![screenshot](media/556cb31aa1533b30613dc49d9a9fac21.png)
+    1. Copy the Directory (Tenant ID) under **tenant** and  **PublisherIdentifier**. Remember, this is the value you copied from the Overview of the Azure App Registration ![screenshot](media/coemfa10.png)
 
     1. Click **Test Operation**
 
-    1. You should see a (200) Status returned, which means the query was successful ![A screenshot of a social media post Description automatically generated](media/01011d82a8e8c7c643d461dd23323b0b.png) *Note: If you do not see a (200) response, the request has failed and there is an error with your setup. The flow will therefore not work.*
+    1. You should see a (200) Status returned, which means the query was successful ![A screenshot of a social media post Description automatically generated](media/coemfa11.png) *Note: If you do not see a (200) response, the request has failed and there is an error with your setup. The flow will therefore not work.*
 
 ## Setup the Power Automate Flow
 
@@ -99,25 +99,26 @@ report on sessions and unique users of an app.
 
 1. Open the Center of Excellence – Audit Log solution and edit the **Admin \| Sync Audit Logs** (Click on the Flow in the solution to open it in the maker portal, and then click on edit there. You will not be able to select Edit directly from the solution.)
 
-1. Paste in the ID you have copied from Directory (tenant) ID. Remember, this is the value you coped from Directory (tenant) ID from the App Registration Overview ![screenshot](media/7d41bb56ab2d645b52d4ed5dd626395e.png) ![A screenshot of a cell phone Description automatically generated](media/6943e2119d085b57b54043203ae19dc9.png)
+1. Paste in the ID you have copied from Directory (tenant) ID. Remember, this is the value you coped from Directory (tenant) ID from the App Registration Overview ![screenshot](media/coemfa12.png) ![A screenshot of a cell phone Description automatically generated](media/coemfa13.png)
 
-1. Optionally update the time interval at which the log clusters should be retrieved. Default is set to 1 day intervals (from Month, Week, Day, Hour, Minute, Second) ![screenshot](media/a787671841afa0ea0ddf03369830f632.png)
+1. Optionally update the time interval at which the log clusters should be retrieved. Default is set to 1 day intervals (from Month, Week, Day, Hour, Minute, Second) ![screenshot](media/coemfa14.png)
 
 1. Optionally update the start time and end time at which the logs will read from. The maximum is 7 days in the past, and the end time must be after the start time (a smaller amount of time subtracted in the action). Use a positive
-    number in the interval field. ![screenshot](media/ea2e38e02c1da743b2a59532e750a18b.png)
+    number in the interval field. ![screenshot](media/coemfa15.png)
 
 1. Go back to the Center of Excellence - Audit Log solution, open the flow details screen of the [Child] Admin \| Sync Logs by clicking on its display name
 
-1. Edit the **Run only users** settings ![screenshot](media/aa55d1918d8039d4234d1e270ac7dd4b.png)
+1. Edit the **Run only users** settings ![screenshot](media/coemfa16.png)
 
-1. For both connections (Custom connector and Common Data Service), change the dropdown value to 'Use this connection (userPrincipalName\@company.com)'. If there is no connection for any of the connectors, go to Data \> Connections and create one for the connector. ![screenshot](media/47d7343ae838e8e8f37aad1ded77a070.png)
+1. For both connections (Custom connector and Common Data Service), change the dropdown value to 'Use this connection (userPrincipalName\@company.com)'. If there is no connection for any of the connectors, go to Data \> Connections and create one for the connector. ![screenshot](media/coemfa17.png)
 
 1. Click okay on the prompt
 
 1. Click **Save** and close the Flow details tab
 
-1. Click **Turn on** in the top navigation to turn on the Child Flow ![A screenshot of a social media post Description automatically generated](media/e4f116f092cfdfa415bd51adc489d3e7.png)
+1. Click **Turn on** in the top navigation to turn on the Child Flow ![A screenshot of a social media post Description automatically generated](media/coemfa18.png)
 
-1. Check the status changes to On ![screenshot](media/d0abef9f3189a58b8f084ccb08af511e.png)
+1. Check the status changes to On ![screenshot](media/coemfa19.png)
 
-1. Go back to the Center of Excellence – Audit Log solution, click on the **Admin \| Sync Audit Log**s to open the flow details page and **Turn on** this flow as well. ![A screenshot of a cell phone Description automatically generated](media/24838d756a282edfbf5412e713a64f16.png)
+1. Go back to the Center of Excellence – Audit Log solution, click on the **Admin \| Sync Audit Log**s to open the flow details page and **Turn on** this flow as well. ![A screenshot of a cell phone Description automatically generated](media/coemfa20.png)
+
