@@ -115,11 +115,12 @@ Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-wit
 
 Legacy web client is deprecated
 -------------------------------
-As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before October 1, 2020. Microsoft will continue to provide support, security and other critical updates to the legacy web client until October 1, 2020 but won't release any additional functionality beyond what has already been announced.
+As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 1, 2020. Microsoft will continue to provide support, security and other critical updates to the legacy web client until December 1, 2020 but won't release any additional functionality beyond what has already been announced.
   
-On October 1, 2020, the legacy web client will no longer be available. Organizations should make the transition to the Unified Interface as soon as possible to take advantage of Microsoft's ongoing investments in reliability, performance, and functionality. 
+On December 1, 2020, the legacy web client will no longer be available. Organizations should make the transition to the Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
+
  
-In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to October 1, 2020. 
+In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 1, 2020. 
 For further information and steps to make a smooth transition, view our helpful resources and community site: 
 
 -   [Unified Interface Community
