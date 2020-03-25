@@ -1,1 +1,1 @@
-See the [Power Virtual Agents overview](./fundamentals-what-is-power-virtual-agents) topic learn more about what you can do.
+See the [Power Virtual Agents overview](https://docs.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents) topic to learn more about what you can do.
