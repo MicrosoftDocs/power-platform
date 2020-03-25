@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/04/2019
+ms.date: 03/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Enable Unified Interface Only
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 In 2018, we introduced [Unified Interface](https://docs.microsoft.com/powerapps/user/unified-interface), the latest generation of web app design for the Power Apps model-driven apps and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. It brings the best in usability, accessibility, functionality, and speed to every user. Improve how your business applications run by using only the Unified Interface. To learn how to enable it, see [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode). For more information, see [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and [FAQs](#faqs).
 
@@ -40,7 +38,7 @@ All new Common Data Service environments and Common Data Service environments, i
 Environments created before the scheduled release dates will not get this change automatically. Version 9.1.0.3448 onwards, administrators will have the option to change the environment settings to get the Unified Interface Only experience. It is recommended to switch to this mode by following the steps at [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode).
 
 > [!IMPORTANT]
-> For existing environments, it’s recommended that you:
+> For existing environments, it's recommended that you:
 >
 > - Read [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and understand how it affects end users in your environment. 
 > - Test the changes in your trial or sandbox environments before applying to your production environment.
@@ -57,7 +55,7 @@ Users with multiple apps see the list of apps available to them, and can navigat
 > ![Unified interface apps](media/uci-apps-home-page.png "Unified interface apps")
 
 > [!NOTE]
-> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn’t affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Sign in and sign out](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide#sign-in-and-sign-out).
+> This change applies to environment URL based sign-in (for example, https://contoso.crm.dynamics.com/) on the web. It doesn't affect users who sign in using home.dynamics.com or other portals. The sign-in and home page experience for [!INCLUDE[pn_dyn-365_phones](../includes/pn-dyn-365-phones.md)] and [!INCLUDE [pn-dyn-365-tablets](../includes/pn-dyn-365-tablets.md)] remains unchanged. You can learn more at [Sign in and sign out](https://docs.microsoft.com/dynamics365/mobile-app/dynamics-365-phones-tablets-users-guide#sign-in-and-sign-out).
 
 ### Run all apps in Unified Interface Only mode
 
@@ -69,7 +67,7 @@ In Unified Interface Only mode, all model-driven apps, including those created f
 
 With Unified Interface Only mode, all URLs (or deep links) open in Unified Interface in the context of the app being referenced. For more information on constructing links, see [Open forms, views, dialogs, and reports with a URL](https://docs.microsoft.com/powerapps/developer/model-driven-apps/open-forms-views-dialogs-reports-url).
 
-If no app is referenced in the URL, the record or page opens without any navigation elements on the page. Navigation elements like sitemap are defined using an app; URLs without apps don’t have them. Users can use the app switcher to navigate to an app and continue their work.
+If no app is referenced in the URL, the record or page opens without any navigation elements on the page. Navigation elements like sitemap are defined using an app; URLs without apps don't have them. Users can use the app switcher to navigate to an app and continue their work.
 
 ### Dynamics 365 - custom
 
@@ -78,14 +76,12 @@ The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from
 > [!div class="mx-imgBorder"] 
 > ![Dynamics 365 - custom legacy app](media/dynamics-365-custom.png "Dynamics 365 - custom legacy app")
 
-When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Unified Interface and not in the legacy web client. If users only have access to the Dynamics 365 – custom app and no other model-driven apps, they won’t be redirected automatically when signing in using the environment URL (for example, https://contoso.crm.dynamics.com/). Access to this app can be enabled in one of two ways:
+When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Unified Interface and not in the legacy web client. If users only have access to the Dynamics 365 – custom app and no other model-driven apps, they won't be redirected automatically when signing in using the environment URL (for example, https://contoso.crm.dynamics.com/). Access to this app can be enabled in one of two ways:
 
 - In the Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** and then turn on **Show legacy app to everyone, not just admins**.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/show-legacy-app-to-everyone.png "Show legacy app to everyone")
-
-- In model-driven apps in Dynamics 365, go to **Settings** > **Administration** > **System Settings** > **General** tab. Under **Show legacy Dynamics 365 - custom app**, select **Yes** for **Show this app to all users, not just administrators**.
 
 ### Advanced settings
 
