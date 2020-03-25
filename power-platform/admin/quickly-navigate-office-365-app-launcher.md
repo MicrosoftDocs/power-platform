@@ -22,8 +22,9 @@ search.app:
 <a name="BKMK_AppLauncher"></a>   
 ## Quickly move between apps with the app launcher  
  The app launcher is built in to all Dynamics and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps. Use the app launcher in the top left corner to quickly navigate to your Dynamics application of choice.  
-  
- ![Office 365 app launcher](../admin/media/new-office-365-app-launcher.png "Office 365 app launcher")  
+ 
+ > [!div class="mx-imgBorder"]
+ > ![Office 365 app launcher](../admin/media/new-office-365-app-launcher.png "Office 365 app launcher")  
 
   
 > [!NOTE]
@@ -52,16 +53,18 @@ You're app will now be automatically pinned in the app launcher. To remove an ap
 <a name="BKMK_SearchApps"></a>   
 ## Search your apps 
  If you have a lot of apps, you can also search for specific ones by using the global search bar that is found on most Microsoft products.
-  
- ![Search for Dynamics 365 apps](../admin/media/search-dynamics-365-apps.png "Search for Dynamics 365 apps")  
+ 
+ > [!div class="mx-imgBorder"]
+ > ![Search for Dynamics 365 apps](../admin/media/search-dynamics-365-apps.png "Search for Dynamics 365 apps")  
 
 
 <a name="BKMK_IntroD365HomePage"></a>   
 ## Viewing all of your business applications  
 
 To see all of the business apps that you have access to across Dynamics 365 and the Power Platform, you can navigate to the Dynamics home page by selecting the **Dynamics 365** tile from the app launcher  
-  
- ![Dynamics 365 apps tile on the Office 365 app launcher](../admin/media/select-dynamics-365-app-launcher.png "Dynamics 365 apps tile on the Office 365 app launcher")  
+
+> [!div class="mx-imgBorder"]
+> ![Dynamics 365 apps tile on the Office 365 app launcher](../admin/media/select-dynamics-365-app-launcher.png "Dynamics 365 apps tile on the Office 365 app launcher")  
   
  This will bring you to the Dynamics 365 home page.  
   
