@@ -10,10 +10,14 @@
       href: setup.md
     - name: Set up core components
       href: setup-core-components.md  
-    - name: Set up audit and report components
-      href: setup-audit-report-components.md  
+    - name: Set up governance components
+      href: setup-governance-components.md  
     - name: Set up nurture components
       href: setup-nurture-components.md
+    - name: Set up audit log with MFA 
+      href: setup-auditlogmfa.md
+    - name: Set up advanced Power BI report
+      href: setup-powerbiadvanced.md
   - name: Use the CoE Starter Kit
     href: use.md
     items:  
