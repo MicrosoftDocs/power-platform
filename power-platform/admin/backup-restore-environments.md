@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2020
+ms.date: 03/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,7 +30,7 @@ About **system backups**:
   
 - All your environments are backed up.  
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
-- System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days.
+- System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
   
 ### Restore a system backup  
   
