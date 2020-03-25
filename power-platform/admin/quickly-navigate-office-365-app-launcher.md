@@ -21,23 +21,19 @@ search.app:
   
 <a name="BKMK_AppLauncher"></a>   
 ## Quickly move between apps with the app launcher  
- The app launcher is built in to all Dynamics and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps. Use the app launcher to quickly navigate to your Dynamics application of choice.  
-  
-  Click the app launcher to go to the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps and services available to you.  
+ The app launcher is built in to all Dynamics and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps. Use the app launcher in the top left corner to quickly navigate to your Dynamics application of choice.  
   
  ![Office 365 app launcher](../admin/media/new-office-365-app-launcher.png "Office 365 app launcher")  
   
  Check your email.  Create  a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] doc. Get files from your [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)].  All while staying just two clicks away from getting back to Dynamics 365 apps.  
   
 > [!NOTE]
-> **TIP**: If you've just started a trial or upgraded to Dynamics 365, you might need to refresh or open a new browser session to see your apps. There might be a delay for your environment to fully provision.  
-> 
 >  For [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscriptions, the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher will take users to either Dynamics 365 apps or the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)]. Admins will go to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
 
   
 <a name="BKMK_PinApps"></a>   
 ## Pin your frequently-used apps 
-For companies with lots of Dynamics 365 apps, the app launcher will automatically show you your most frequently used apps. To pin an app to the app launcher follow these steps:
+The app launcher will automatically show you your most frequently used apps. This is particularly helpful for companies with lots of business apps. To pin an app to the app launcher follow these steps:
   
 1. Open the app launcher.
 
@@ -47,7 +43,7 @@ For companies with lots of Dynamics 365 apps, the app launcher will automaticall
 
 1. Select your app.
   
-You're app will now be automatically pinned in the app launcher. To remove your app, select the **...** menu for the app and select **Unpin from launcher**.
+You're app will now be automatically pinned in the app launcher. To remove an app, select the **...** menu for the app and select **Unpin from launcher**.
 
 > [!NOTE]
 >  Your apps will also be automatically pinned if you open your app from the global search bar or from  [office.com](https://office.com)   
@@ -56,15 +52,15 @@ You're app will now be automatically pinned in the app launcher. To remove your 
   
 <a name="BKMK_SearchApps"></a>   
 ## Search your apps 
- If you have a lot of apps, you can search for specific ones by using the global search bar that is found on most Microsoft products.
+ If you have a lot of apps, you can also search for specific ones by using the global search bar that is found on most Microsoft products.
   
  ![Search for Dynamics 365 apps](../admin/media/search-dynamics-365-apps.png "Search for Dynamics 365 apps")  
 
 
 <a name="BKMK_IntroD365HomePage"></a>   
-## Viewing all of your business applications across Dynamics and the Power Platform  
+## Viewing all of your business applications  
 
-To play any of your existing business apps, you can navigate to the Dynamics home page by selecting the **Dynamics 365** tile from the app launcher  
+To see all of the business apps that you have access to across Dynamics 365 and the Power Platform, you can navigate to the Dynamics home page by selecting the **Dynamics 365** tile from the app launcher  
   
  ![Dynamics 365 apps tile on the Office 365 app launcher](../admin/media/select-dynamics-365-app-launcher.png "Dynamics 365 apps tile on the Office 365 app launcher")  
   
@@ -80,26 +76,11 @@ To play any of your existing business apps, you can navigate to the Dynamics hom
 > [!TIP]
 >  If you've just started a trial or upgraded to Dynamics 365, you might need to refresh or open a new browser session to see your apps. There might be a delay for your environment to fully provision.  
   
- ![Two environments of Dynamics 365 apps on the home page](../admin/media/two-instances-of-dynamics-365-online-in-the-home-page.png "Two environments of Dynamics 365 apps on the home page")  
-  
-> [!NOTE]
-> **What is "Dynamics 365 - custom"?**  
-> 
->  "Dynamics 365 - custom" is the app name for all online organizations with a version 8.1 and lower as well as the default app on 8.2. The name for the 8.2 default app can be changed by the administrator.  
-> 
-> **What are the tiles on the home page?**  
-> 
-> Dynamics 365 is introducing a new app model and what you're seeing are Dynamics 365 apps for which you're licensed once you've upgraded to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)].  
-> 
-> **Admins: You have options for displaying and naming Dynamics 365 - custom.**  
-> 
->  Once you update to [!INCLUDE[pn_crm_8_2_0_online](../includes/pn-crm-8-2-0-online.md)], you have options.  Go to **Settings** > **Administration** > **System Setting** > **General** tab. Scroll down to **Set options for the default app: Dynamics 365 - custom**.  
-
 
 ## Your business apps are moving
-In the future, the home for all of your business applications across Dynamics and the Power Platform will move to the apps page on [office.com](https://office.com).
+In the future, the home for all of your business applications across Dynamics and the Power Platform will move to the apps page on [office.com](https://office.com/apps).
 This will help ensure that your end-users have a single spot to find all of their apps across the Microsoft ecosystem. Once the apps on the Dynamics home page have
-moved to [office.com](https://office.com), we will provide a banner redirecting users to their new home.
+moved to [office.com](https://office.com/apps), we will provide a banner redirecting users to their new home.
 
 After October 1, 2020, when users navigate to https://home.dynamics.com, they will be redirected to https://www.office.com/apps with a deep link to their business applications.
   
