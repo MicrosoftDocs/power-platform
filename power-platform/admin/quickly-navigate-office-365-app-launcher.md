@@ -31,25 +31,6 @@ search.app:
 >  For [!INCLUDE[pn_CRM_Online_Government_Full](../includes/pn-crm-online-government-full.md)] subscriptions, the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher will take users to either Dynamics 365 apps or the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)]. Admins will go to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
 
   
-<a name="BKMK_PinApps"></a>   
-## Pin your frequently-used apps 
-The app launcher will automatically show you your most frequently used apps. This is particularly helpful for companies with lots of business apps. To pin an app to the app launcher follow these steps:
-  
-1. Open the app launcher.
-
-1. Select **All apps**.
-
-1. Search for the app you want to pin.
-
-1. Select your app.
-  
-You're app will now be automatically pinned in the app launcher. To remove an app, select the **...** menu for the app and select **Unpin from launcher**.
-
-> [!NOTE]
->  Your apps will also be automatically pinned if you open your app from the global search bar or from  [office.com](https://office.com)   
-
-
-  
 <a name="BKMK_SearchApps"></a>   
 ## Search your apps 
  If you have a lot of apps, you can also search for specific ones by using the global search bar that is found on most Microsoft products.
