@@ -144,7 +144,7 @@ or define limits, within their applications
 The user must specify in the *MenuList* property, the Screen Names for
 navigation
 
-```csharp
+```
 Table(
     {TextShown: "Home Screen", Screen: App.ActiveScreen},
     {TextShown: "Search", Screen: App.ActiveScreen},
