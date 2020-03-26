@@ -19,15 +19,15 @@
     - name: Set up Power BI report
       href: setup-powerbi.md
   - name: Use the CoE Starter Kit
-    href: use.md
     items:  
     - name: CoE Starter Kit explained
       href: starter-kit-explained.md  
-    - name: Components overview
-      href: components-overview.md      
+    - name: Components overview     
       items:  
       - name: Use core components
-        href: core-components.md       
+        href: core-components.md
+      - name: Learn about the dashboard     
+        href: power-bi.md  
       - name: Use governance components
         href: governance-components.md       
       - name: Use nurture components

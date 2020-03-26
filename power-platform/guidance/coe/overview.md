@@ -21,6 +21,22 @@ The Center of Excellence (CoE) starter kit is a collection of components and too
 
 You can download the most updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
 
+The kit does not represent the entire Center of Excellence, because
+managing a CoE requires more than the tools alone; the Center of Excellence
+also requires people, communication, defined requirements and processes. The
+tools provided here are just a means to get to the end goal, but the Center of
+Excellence itself must be thoughtfully designed by each organization based on
+their needs and preferences - read more under [Why we built it?](motivation.md).
+
+The kit provides some automation and tooling to help teams build monitoring and
+automation necessary to support a CoE. The foundation of the kit is a Common
+Data Service (CDS) data model and workflows to collect resource information
+across the environments in the tenant. The kit includes multiple Power Apps and
+Power BI analytics to view and interact with the data collected, as well as
+flows to collect data across environments, and help with workflows for your
+Compliance needs. The kit also provides several assets that provide templates
+and suggested patterns and practices for implementing CoE efforts.
+
 ## Disclaimer
 
 While the underlying features and components used to build the kit (such as Common Data Service, Admin APIs, and Connectors) are fully supported, the kit itself represents sample implementations of these features that our customers and community can use and customize to implement admin and governance capabilities in their organization.

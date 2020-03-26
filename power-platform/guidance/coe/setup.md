@@ -17,18 +17,18 @@ search.app:
 ---
 # Set up the Center of Excellence Starter Kit
 
-The Center of Excellence (CoE) starter kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting the Power Platform, with a focus on Power Apps and Power Automate.
+The Center of Excellence (CoE) starter kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting the Power Platform, with a focus on Power Apps and Power Automate. Learn more about the  individual components under [Use the CoE Starter Kit](starter-kit-explained.md).
 
-In this walkthrough, you'll learn how to
+You will learn how to
 
 - Import the Center of Excellence Starter Kit solutions
-- Configure the apps, flows and dashboard assets
+- Configure the apps, flows and dashboard
 - Extend the Starter Kit
 - Install updates to the Starter Kit
 
 ## Prerequisites
 
-The following are prerequisites for installing the CoE starter kit as it comes in the solution.
+The following are prerequisites for **installing** the CoE starter kit as it comes in the solution.
 
 1. **Admin account**
     1. Power Platform Service Admin, Global tenant admin or Dynamics 365 service admin for access to all tenant resources through the Power Apps APIs.
@@ -40,17 +40,15 @@ The following are prerequisites for installing the CoE starter kit as it comes i
 1. **Download of the Center of Excellence Solution** and Power BI dashboard files to your device. The entire content package can be downloaded directly at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload)
 1. Both the Audit and Report Components and Nurture components solution require the **Core Components solution to be installed**
 
-These are the requirements for using the solution.
+These are the requirements for **using** the solution.
 
 1. Power Apps Premium License (Per App, Per User or Dynamics 365 Online licenses)
 1. For the **Core Components** solution, only the admins need a Premium License. For the Audit and Report Components, all makers require a Premium License. For the Nurture components, everyone will require Premium License.
 
 > [!NOTE]
-  >**Where the data comes from**
-  >
-  >The "Admin \| Sync Template" flows crawl through all the resources stored in the Power Platform and makes a copy of details in each resource (e.g., apps and flows) to the CDS (entity definitions are provided in this solution). All data displayed in most of the starter kit components are dependent on the data first being in CDS, which means that the sync template must be configured for everything else to work. The Sync Flows run daily overnight. When you first set up the CoE Starter Kit, you can manually start the **Admin \| Sync Template v2** which will start the process of crawling and storing the information in CDS.
+>The *Admin \| Sync Template* flows crawl through all the resources stored in the Power Platform and makes a copy of details in each resource (e.g., apps and flows) to the CDS (entity definitions are provided in this solution). All data displayed in most of the starter kit components are dependent on the data first being in CDS, which means that the sync template must be configured for everything else to work. The Sync Flows run daily overnight. When you first set up the CoE Starter Kit, you can manually start the *Admin \| Sync Template v2* which will start the process of crawling and storing the information in CDS.
 
-There are multiple components provided in this starter kit, each will require some configuration to install. The installation instructions have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
+Start installing the CoE Starter Kit by [Setting up the Core Components](setup-core-components.md).
 
 ## Extending the Toolkit
 
@@ -61,14 +59,10 @@ When you are ready to extend the CoE Starter Kit with your own ideas, you will d
     [introduction
     solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/introduction-solutions)
 
-1. **Create a new UNMANAGED solution**
+1. Create a new **unmanaged solution**
 
 1. **Choose components from the CoE starter kit to add to your new solution**,
-    you decide which ones you want to use. See here for the elements needed to
-    import to extend and utilize the entire CoE Starter Kit: [Elements to Import
-    to Unmanaged Solution](#elements-to-import-to-unmanaged-solution)
-
-1. **Update the Environment Variables**
+    you decide which ones you want to customize.
 
 1. **Extend the CoE starter kit** by making modifications to the solution
     components in the context of your new unmanaged solution.
@@ -88,14 +82,12 @@ When you are ready to extend the CoE Starter Kit with your own ideas, you will d
 
 ## Installing updates
 
-Periodically, the solution will receive updates to implement new features and fixes for bugs or optimizations. These updates will be announced on the GitHub repo and can be downloaded from there or the direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+Periodically, the solution will receive updates to implement new features and fixes for bugs or optimizations. These updates will be announced on the [GitHub repo](https://aka.ms/CoEStarterKitRepo) and can be downloaded from there or the direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
 Install the updates by importing the latest version to the environment where you originally installed the solution - select **Upgrade > Overwrite customizations** to upgrade the solution.
 
-![Solution Upgrade](media/5fa9fdcde830b71b2d7d26dbd722f066.png)
-
->[!NOTE]
->**Known Limitations**: Currently, only model-driven components and CDS entities will be updated with managed solution updates. Canvas Apps and Flows will be replaced during an update. If you are extending and customizing canvas apps, you will need to make a copy of the app first (which will not receive updates).
+>[!WARNING]
+>Currently, only model-driven components and CDS entities will be updated with managed solution updates. Canvas Apps and Flows will be replaced during an update. If you are extending and customizing canvas apps, you will need to make a copy of the app first (which will not receive updates).
 
 ## FAQ
 

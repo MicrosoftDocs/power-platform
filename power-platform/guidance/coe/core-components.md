@@ -17,6 +17,47 @@ search.app:
 ---
 # Use Core Components
 
+These components provide the core to get started with setting up a CoE – they sync all your resources into entities and build admin apps on top of that to help you get more visibility of what apps, flows and makers are in your environment. Additionally, apps like the DLP Editor and Set New App Owner help with daily admin tasks.  The Core Components solution only contains assets relevant to admins.
+
+Learn how to [set up the core components](setup-core-components.md).
+
+Here's a breakdown of the assets that form the core components
+
+- **Catalog tenant resources**
+  - CDS Entities: Environments, Apps, Flows
+  - Admin | Sync Template v2 (Flows) – all, Apps, Flows, Custom Connectors, Connectors, Model Driven Apps
+  - Admin | Sync Audit Log (Flow)
+  - Power BI Dashboard
+  - Custom Connector for Office 365 Audit Logs
+  - Power Platform Admin View (Model Driven App)
+- **DLP Strategy and Visibility**
+  - DLP Editor (Canvas App)
+  - DLP Customizer (Canvas App)
+- **Change App Ownership**
+  - Set New App Owner (Canvas App)
+
+## Entities
+
+- **Environment**
+Represents the Environment object, which contains Power Apps, Flows and Connectors.
+- **PowerApps App**
+Represents a Power Apps App.
+- **Flow** Represents a flow.
+- **PowerApps Connector** Represents a standard or custom connector.
+- **Connection Reference** The linking table for the many to many relationships between Connectors (PowerApps Connector) and flows (Flow) / Power Apps (PowerApps App)
+- **Maker** Represents a user who has created a Power App, flow, Custom Connector or Environment.
+- **Audit Log** Represents session details for Power Apps.
+- **CoE Settings** Settings configurations live in a record here. This is an important entity to populate data into during the setup process, because it contains details that are important for configuring the branding and support aspect of the solution
+- **Sync Flow Errors** Represents daily occurrence of Sync Flow errors to provide a summary email to admin
+
+## Security Roles
+
+- **Power Platform Admin SR** Gives full access to create, read, write and delete operations on the custom entities.
+
+- **Power Platform Maker SR** Gives read and write access to the custom entities (e.g., Environments, Apps, etc).
+
+- **Power Platform User SR**  Gives read only access to the resources in the custom entities.
+
 ## Flows
 
 ### Admin \| Sync Audit Logs
@@ -78,7 +119,7 @@ groups](https://docs.microsoft.com/en-us/power-platform/admin/introduction-to-da
 **Permission**: Intended to be used only by admins, Power Platform Service Admin
 or Global Admin permission required. Share with your CoE Admins.
 
-![A screenshot of a cell phone Description automatically generated](media/3363ebde703fa8e4f3c3b31ac505c266.png)
+![DLP Editor](media/coedlp1.png)
 
 ### DLP Customizer
 
@@ -89,6 +130,8 @@ policies](https://docs.microsoft.com/en-us/business-applications-release-notes/o
 
 **Permission**: Intended to be used only by admins, Power Platform Service Admin
 or Global Admin permission required. Share with your CoE Admins.
+
+![DLP Customizer](media/coedlp2.png)
 
 ### Set New App Owner
 
@@ -101,27 +144,5 @@ app](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/share-app).
 **Permission**: Intended to be used only by admins, Power Platform Service Admin
 or Global Admin permission required. Share with your CoE Admins.
 
-![A screenshot of a cell phone Description automatically generated](media/9f6ed8e6c6ec8d3bd7513a1a04d3698c.png)
+![Set New App Owner](media/coeowner1.png)
 
-## Power BI Report
-
-Provides a wholistic view with visualizations and insights of data in the CDS
-entities: Environments, Power Apps Apps, Flows, Connectors, Connection
-References, Makers and Audit Logs.
-
-Note that the roll up fields for the App and Flow counts in Environment may take
-up to 12 hours to populate.
-
-![](media/6f6cd8d695705b33336cb36f92224e97.png)
-
-## Audit Log Custom Connector
-
-The Audit Logs are usage logs and log in events. They are normally accessible
-from the Security and Compliance Center. We collect them here for the Power BI
-to show usage of applications across the tenant. For more info on these logs
-see:
-
-- basic auth
-- oAuth (supports MFA)
-
-(need to add details here)

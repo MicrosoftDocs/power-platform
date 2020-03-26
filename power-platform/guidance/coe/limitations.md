@@ -38,21 +38,14 @@ The CDS connector might experience some throttling limits if the tenant has a lo
     1. Open Admin \| Sync Template v2 to Edit
     1. Expand the step: Get Environments and store them in the CoE CDS Entity
     1. Expand the step: **Apply to each Environment**
-    1. Go to settings for each call to the CDS ![](media/a691e92a3a247d807c60b6de2220f50a.png)
+    1. Go to settings for each call to the CDS and configure the timeout / retry settings <br> ![Configure retry policy](media/coelimit1.png)
 
-1. **Configure the timeout / retry settings**
+1. **Configure concurrency in Foreach**
     1. Reduce concurrency in Foreach loops to reduce simultaneous calls
     1. Open Admin \| Sync Template v2 to Edit
     1. Expand the step: **Get Environments and store them in the CoE CDS Entity**
-    1.  Go to Settings for the **Apply to each Environment** step ![](media/928e8c743b4fb86202160263b944d52a.png)
+    1. Go to Settings for the **Apply to each Environment** step ![Configure concurrency in Foreach](media/coelimit2.png)
     1. Reduce the degree of parallelism here.
-
-## MFA and audit logs
-
-If your organization requires Mulit-Factor Authentication, then you will not be
-able to use the custom connectors that's part of the CoE Starter Kit download file.
-
-Instead please follow the steps described under [setup Audit Log with MFA](setup-auditlogmfa.md).
 
 ## DLP editor
 
@@ -61,4 +54,4 @@ Instead please follow the steps described under [setup Audit Log with MFA](setup
 
 ## Government community cloud (GCC) environments
 
-- The CoE Starter Kit is currently not available for GCC Environments, as the flow Management Connector and the Custom Connector to connect to Office 365 Audit Logs are not available for GCC environments yet.
+- The CoE Starter Kit is available for GCC Environments, however the Custom Connector to connect to Office 365 Audit Logs are not available for GCC environments yet.

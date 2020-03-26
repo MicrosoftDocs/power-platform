@@ -1,6 +1,6 @@
 ---
-title: "About the CoE Starter Kit  | MicrosoftDocs"
-description: About the CoE Starter Kit 
+title: "Example processes | MicrosoftDocs"
+description: 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,4 +15,6 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# About the CoE Starter Kit 
+# Example processes
+
+## Power Apps app auditing process
