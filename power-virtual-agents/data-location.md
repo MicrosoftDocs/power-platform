@@ -1,7 +1,7 @@
 ---
 title: "Data location for Power Virtual Agents"
 description: "Identify the geographic location where your data will reside."
-ms.date: 12/2/2019
+ms.date: 03/26/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
