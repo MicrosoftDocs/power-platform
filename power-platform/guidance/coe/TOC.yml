@@ -14,10 +14,10 @@
       href: setup-governance-components.md  
     - name: Set up nurture components
       href: setup-nurture-components.md
-    - name: Set up audit log with MFA 
-      href: setup-auditlogmfa.md
-    - name: Set up advanced Power BI report
-      href: setup-powerbiadvanced.md
+    - name: Collect audit log data
+      href: setup-auditlog.md
+    - name: Set up Power BI report
+      href: setup-powerbi.md
   - name: Use the CoE Starter Kit
     href: use.md
     items:  
