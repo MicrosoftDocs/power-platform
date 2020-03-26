@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Gain deep insights into your Power Platform adoption with the CoE Starter Kit
+# Gain deep insights into your Power Platform adoption with the Power BI Dashboard
 
 As a Power Platform Admin, you want visibility into how your organization is using Power Apps and Power Automate. Insights into your adoption will help you govern and secure the platform, identify patterns and enable you to nurture your makers to accelerate adoption.
 
