@@ -119,7 +119,7 @@ up to 12 hours to populate.
 The Audit Logs are usage logs and log in events. They are normally accessible
 from the Security and Compliance Center. We collect them here for the Power BI
 to show usage of applications across the tenant. For more info on these logs
-see: 
+see:
 
 - basic auth
 - oAuth (supports MFA)

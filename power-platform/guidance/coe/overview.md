@@ -1,13 +1,13 @@
 ---
 title: "Overview  | MicrosoftDocs"
 description: Overview of the CoE Starter Kit
-author: jimholtz
+author: jimholtz, manuelap-msft
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/18/2020
-ms.author: jimholtz
+ms.author: jimholtz, mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -23,7 +23,7 @@ You can download the most updated assets from the [GitHub repository](https://ak
 
 ## Disclaimer
 
-The Center of Excellence (CoE) starter kit is a collection of sample customizable apps, flows, and dashboards to showcase the admin and governance capabilities in Power Platform. While the underlying features and components used to build the kit (such as Common Data Service, Admin APIs, and Connectors) are fully supported, the kit itself represents sample implementations of these features that our customers and community can use and customize to implement admin and governance capabilities in their organization.
+While the underlying features and components used to build the kit (such as Common Data Service, Admin APIs, and Connectors) are fully supported, the kit itself represents sample implementations of these features that our customers and community can use and customize to implement admin and governance capabilities in their organization.
 
 If you face issues with:
 
@@ -36,20 +36,29 @@ This CoE Starter Kit and this guidance is targeted toward the person or departme
 
 ## How to get started
 
-After you've installed the CoE Starter Kit solution (see [Get started with setup](setup.md)), get familiar with the resources in your tenant
+After you've installed the CoE Starter Kit solution (see [Set up the CoE Starter Kit](setup.md)), get familiar with the resources in your tenant
 
-1. Open the Power BI Dashboard and familiarize yourself with resources and makers already in your environments.
-1. Plan your Data Loss Prevention Policy Strategy and use the DLP Editor (canvas app) to mitigate the risk of impacting apps when making changes to your policies.
-1. Identify orphaned apps and assign them to new owners using the embedded app in the Power BI Dashboard.
-1. Start planning your governance strategy by identifying your requirements on what makes a compliant app or makers, what information you will need per app or per maker, what happens to non-compliant apps and makers and how you support your maker community in building compliant apps that follow best practices, what audits you want to run and what actions you will drive based on those audits.
-1. Embrace your maker community and develop a nurture and adoption strategy – think about how to onboard new makers, organizing internal events, like Show & Tell sessions, training workshops, hackathons, put together templates and best practises for your makers to use.
+:::row:::
+   :::column span="":::
+      ![CoE Starter Kit Dashboard](media/coeoverview1.PNG)
+   :::column-end:::
+   :::column span="":::
+      ![CoE Starter Kit App Catalog](media/coeoverview2.PNG)
+   :::column-end:::
+      :::column span="":::
+      ![CoE Starter Kit Welcome eMail](media/coeoverview3.PNG)
+   :::column-end:::
+:::row-end:::
+
+1. Open the **Power BI Dashboard** and familiarize yourself with resources and makers already in your environments.
+1. Plan your **Data Loss Prevention Policy Strategy** and use the DLP Editor (canvas app) to mitigate the risk of impacting apps when making changes to your policies.
+1. **Identify orphaned apps** and assign them to new owners using the embedded app in the Power BI Dashboard.
+1. Start planning your **governance strategy** by identifying your requirements on what makes a compliant app or makers, what information you will need per app or per maker, what happens to non-compliant apps and makers and how you support your maker community in building compliant apps that follow best practices, what audits you want to run and what actions you will drive based on those audits.
+1. Embrace your maker community and develop a **nurture and adoption strategy** – think about how to onboard new makers, organizing internal events, like Show & Tell sessions, training workshops, hackathons, put together templates and best practices for your makers to use.
 
 The above are just some samples of the components in the CoE Starter Kit, explore the rest of the guidance here to see what is available as part of the kit.
 
 ## Further Resources
-
-Other Resources
-===============
 
 - [Power Apps admin documentation](<https://docs.microsoft.com/powerplatform/admin>)
 
