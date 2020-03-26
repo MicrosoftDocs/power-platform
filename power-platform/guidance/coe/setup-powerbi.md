@@ -29,7 +29,7 @@ You need the environment URL of the Power Platform environment the CoE Starter K
 
 1. Go to the [Power Platform Admin Center](https://aka.ms/ppac)
 1. Click on **Environments**, and select the Environment where the Center of Excellence solution is installed
-1. Copy the organization URL in the details window. ![A screenshot of the Power Platform Admin Center, with the Environment URL highlighted](media/coesetup_envorgurl.png)
+1. Copy the organization URL in the details window. <br>![A screenshot of the Power Platform Admin Center, with the Environment URL highlighted](media/coesetup_envorgurl.png)
 1. If the URL is cut off, you can see the full URL by clicking See all \> Environment URL ![A screenshot of the Environment Settings available in the Power Platform Admin Center](media/coesetup_orgurl.png)
 
 ### Get the Power BI Dashboard from App source
@@ -42,7 +42,7 @@ targeting GCC, please use the [Configure the Power BI Dashboard using the pbix f
 
 1. Navigate to the [CoE Starter Kit page on App Source](https://appsource.microsoft.com/product/power-bi/powerapps_pbi.powerapps_coe)
 
-1. Select **Get It Now** ![A screenshot of the Power Platform CoE Starter Kit offer on App Source](media/coesetup_powerbiappsource.png)
+1. Select **Get It Now**<Br> ![A screenshot of the Power Platform CoE Starter Kit offer on App Source](media/coesetup_powerbiappsource.png)
 
 1. Confirm the T&C and make sure you are signed in with your organization account
 
@@ -66,7 +66,7 @@ targeting GCC, please use the [Configure the Power BI Dashboard using the pbix f
 
 1. Sign in with your account that has access to the entities.
 
-1. Go to **Transform Data** in the top ribbon (under Home). ![Edit Queries in Power BI Desktop](media/coepowerbi1.png)
+1. Go to **Transform Data** in the top ribbon (under Home).<br> ![Edit Queries in Power BI Desktop](media/coepowerbi1.png)
 
 1. Select the OrgUrl parameter and replace the URL with your instance's URL. Make sure to keep the 'http**s**://'. ![Set OrgUrl in Power BI](media/coesetup_powerbi3.png)
 
