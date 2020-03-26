@@ -25,14 +25,14 @@ Learn how to [set up the governance components](setup-governance-components.md).
 
 Here's a breakdown of the assets that form the core components
 
-1. Sample Audit Process
+1. **Sample Audit Process**
     1. Developer Compliance Center (Canvas App)
     1. Flow – Compliance detail request
     1. Business Process Flow for Auditing resources
-1. Archive unused apps
+1. **Archive unused apps**
     1. App Archive and Clean Up – Start Approval and Check Approval (Flows)
     1. App Archive and Clean Up Admin View (Model Driven App)
-1. Act based on certain connector usage
+1. **Act based on certain connector usage**
     1. Find and add admins as owners for apps that leverage certain connectors (Flow)
     1. Find and disable flows that leverage certain connectors (Flow)
 
@@ -55,7 +55,7 @@ It sends an email to users who have Power Apps apps in the tenant who are not co
 
 - The app has business justification details provided and has indicated high business impact and has not submitted a mitigation plan to the attachments field.
 
-The Flow has a template you can customize in the email sent out by the Flow, but will otherwise look like the following:  
+You can customize the email sent out by the Flow, by default it will look like the following:  
 
 ![Compliance Detail Request email](media/coegov1.png)
 

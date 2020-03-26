@@ -25,13 +25,13 @@ Learn how to [set up the nurture components](setup-nurture-components.md)
 
 Here's a breakdown of the assets that form the core components
 
-1. Onboard new makers, provide training and share best practices
+1. **Onboard new makers, provide training and share best practices**
     1. Admin | Welcome Email (Flow)
     1. Template Catalog (Canvas App)
     1. Admin | Newsletter with Product Updates (Flow)
     1. Training in a day Management and Registration (Canvas Apps)
     1. Training in a day Feedback Reminder, Registration Confirmation and Reminder (Flow)
-1. Encourage Adoption
+1. **Encourage Adoption**
     1. App Catalog (Canvas App)
 
 ## Entities
