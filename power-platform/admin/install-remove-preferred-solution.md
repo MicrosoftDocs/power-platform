@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/08/2019
+ms.date: 03/26/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Install, update, or remove a preferred solution
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 Install preferred solutions to gain added features and functionality.  
   

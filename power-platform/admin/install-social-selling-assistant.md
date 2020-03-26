@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/25/2020
 ms.author: mhart
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Install the Social Selling Assistant
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 Set up the Social Selling Assistant  and onboard your users in just a few minutes. First, a [!INCLUDE[pn_ms_dyn_365](../includes/pn-ms-dyn-365.md)] admin needs to install the Social Selling Assistant and connect it with [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]. Then, a [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] admin refines the configuration in [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] to enable the best possible experience when users are working with the Social Selling Assistant.  
   
@@ -48,7 +48,7 @@ Set up the Social Selling Assistant  and onboard your users in just a few minute
   
 ### Get it from Microsoft AppSource  
   
-1. As a system administrator, go to **Settings** > **Dynamics Marketplace**.  
+1. As a system administrator, in the web app, go to **Settings** > **Microsoft AppSource**.  
   
 2. In the [AppSource](https://appsource.microsoft.com/marketplace?product=dynamics-365-for-sales%3Bdynamics-365-for-field-services%3Bdynamics-365-for-project-services-automation%3Bdynamics-365-for-customer-services) dialog, search for **Social Selling Assistant**.  
   
@@ -60,7 +60,7 @@ Set up the Social Selling Assistant  and onboard your users in just a few minute
   
 ### Get to the Social Selling Assistant dashboard  
   
-1. As a system administrator, go to **Sales** > **Dashboards**.  
+1. As a system administrator, in the web app, go to **Sales** > **Dashboards**.  
   
 2. In the drop-down list under **System Dashboards**, select **Social Selling assistant dashboard**.  
   

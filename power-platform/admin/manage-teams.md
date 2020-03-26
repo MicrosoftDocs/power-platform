@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 03/26/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Manage teams
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 Using teams is optional. However, teams provide an easy way to share business objects and let you collaborate with other people across business units. While a team belongs to one business unit, it can include users from other business units. You can associate a user with more than one team.  
   
@@ -55,7 +55,7 @@ Anyone who has Create, Read, Update (Write), Delete (CRUD) privileges on the Tea
 > ![](media/create-teams-security-roles.png "Privileges for creating teams") 
 
 ### Add a Team administrator
-When you create a team, you need to add a Team administrator with a security role that has Read privilege to the Team entity. Go to **Settings** > **Security** > **Teams** and select a team to enter the Team administrator.
+When you create a team, you need to add a Team administrator with a security role that has Read privilege to the Team entity. In the web app, go to **Settings** > **Security** > **Teams** and select a team to enter the Team administrator.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/add-team-administrator.png "Adding Team administrator")
@@ -80,7 +80,7 @@ For more information, see [Assign a record to a user or team](https://docs.micro
    - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-2. Go to **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+2. In the web app, go to **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
 3. Select **Teams**.
 
@@ -106,7 +106,7 @@ For more information, see [Assign a record to a user or team](https://docs.micro
    - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-2. Go to **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+2. In the web app, go to **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
 3. Select **Teams**.
 
@@ -175,7 +175,7 @@ For more information, see [Assign a record to a user or team](https://docs.micro
    2.    Obtain the Azure AD Group's **ObjectID** from your https://portal.azure.com site.
    3.    Create a custom security role that contains privileges per your team's collaboration requirement. Please see the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
-2. Go to **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+2. In the web app, go to **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
 3. Select **Teams**.
 
@@ -205,7 +205,7 @@ For more information, see [Assign a record to a user or team](https://docs.micro
    - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-2. Go to **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+2. In the web app, go to **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
 3. Select **Teams**.
 
