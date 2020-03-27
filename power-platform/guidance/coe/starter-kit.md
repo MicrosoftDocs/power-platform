@@ -29,7 +29,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-strategy.png" data-linktype="external">
+                                <img alt="" src="./media/caf-strategy.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -48,7 +48,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-plan.png" data-linktype="external">
+                                <img alt="" src="./media/caf-plan.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -67,7 +67,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-ready.png" data-linktype="external">
+                                <img alt="" src="./media/caf-ready.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -86,7 +86,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-migrate.png" data-linktype="external">
+                                <img alt="" src="./media/caf-migrate.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -105,7 +105,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                                <img alt="" src="./media/caf-adopt.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -124,7 +124,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-govern.png" data-linktype="external">
+                                <img alt="" src="./media/caf-govern.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -143,7 +143,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-manage.png" data-linktype="external">
+                                <img alt="" src="./media/caf-manage.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -161,7 +161,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
 
 Each of the methodologies captured above are part of a broad cloud adoption lifecycle. The following image ties together each methodology to demonstrate the overall lifecycle. The Cloud Adoption Framework is a full lifecycle framework, supporting customers throughout each phase of adoption by providing methodologies as specific approaches to overcoming common blockers.
 
-![Cloud Adoption Framework overview](./_images/caf-overview.png)
+![Cloud Adoption Framework overview](./media/caf-overview.png)
 
 ## Intent
 
