@@ -231,7 +231,7 @@ As with customizing the default canvas, you can use `styleSetOptions` to customi
 
 ### Deploy your customized canvas
 
-In order to host your custom canvas, deploy all files to a web application.
+In order to host your custom canvas, deploy all files to a web app.
 
 ## Related links
 
