@@ -160,4 +160,15 @@ The Power Platform Center of Excellence (CoE) starter kit is a collection of com
     </li>
 </ul>
 
+a
+b
+c
+d
+
+|  |  |  |
+|---------|---------|---------|
+|![](media/caf-strategy.png) Strategy <br /> Define business justification and expected outcomes.     |![](media/caf-plan.png) Plan  <br /> Align actionable adoption plans to business outcomes.     |![](media/caf-ready.png) Ready <br />         |
+|![](media/caf-migrate.png) Migrate  <br />  Migrate and modernize existing workloads.  |![](media/caf-adopt.png)  Innovate   <br /> Develop new cloud-native or hybrid solutions.    | ![](media/caf-govern.png) Govern  <br /> Govern the environment and workloads.     |
+|![](media/caf-manage.png) Manage <br /> Operations management for cloud and hybrid solutions.    |         |         |
+
 
