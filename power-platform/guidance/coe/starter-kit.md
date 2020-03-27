@@ -23,7 +23,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./strategy/index.md">
+        <a href="">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -42,7 +42,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./plan/index.md">
+        <a href="">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -61,7 +61,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./ready/index.md">
+        <a href="">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -80,7 +80,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./migrate/index.md">
+        <a href="">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -99,7 +99,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./innovate/index.md">
+        <a href="">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -118,7 +118,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./govern/index.md">
+        <a href="">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -137,7 +137,7 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./manage/index.md">
+        <a href="">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
