@@ -20,9 +20,9 @@ search.app:
 ---
 # Power Platform Center of Excellence Kit
 
-The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in Azure, consolidating and sharing best practices from Microsoft employees, partners, and customers. The framework gives customers a set of tools, guidance, and narratives that help shape technology, business, and people strategies for driving desired business outcomes during their adoption effort. This guidance aligns to the following phases of the cloud adoption lifecycle, ensuring easy access to the right guidance at the right time.
+A Center of Excellence (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization.
 
-<!-- markdownlint-disable MD033 -->
+The Power Platform Center of Excellence (CoE) starter kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting the Power Platform, with a focus on Power Apps and Power Automate.
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
@@ -160,11 +160,4 @@ The Cloud Adoption Framework is the One Microsoft approach to cloud adoption in 
     </li>
 </ul>
 
-## Understand the lifecycle
 
-Each of the methodologies captured above are part of a broad cloud adoption lifecycle. The following image ties together each methodology to demonstrate the overall lifecycle. The Cloud Adoption Framework is a full lifecycle framework, supporting customers throughout each phase of adoption by providing methodologies as specific approaches to overcoming common blockers.
-
-![Cloud Adoption Framework overview](./media/caf-overview.png)
-
-> [!div class="nextstepaction"]
-> [Get started with setup](setup.md)
