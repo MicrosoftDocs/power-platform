@@ -37,7 +37,7 @@
       - name: Learn about the CoE Dashboard     
         href: power-bi.md
       - name: CoE Dashboard Explained
-      - items:
+        items:
         - name: Monitor
           href: power-bi-monitor.md
         - name: Govern
