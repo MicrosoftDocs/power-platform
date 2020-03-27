@@ -32,21 +32,21 @@
         href: nurture-components.md     
       - name: Extend and modify components
         href: modify-components.md
-- name: How to use the CoE Starter Kit
-  items:
-    - name: Learn about the CoE Dashboard     
-      href: power-bi.md
-    - name: CoE Dashboard Explained
-    - items:
+  - name: How to use the CoE Starter Kit
+    items:
+      - name: Learn about the CoE Dashboard     
+        href: power-bi.md
+      - name: CoE Dashboard Explained
+      - items:
         - name: Monitor
           href: power-bi-monitor.md
         - name: Govern
           href: power-bi-govern.md
         - name: Nurture
           href: power-bi-nurture.md
-    - name: Sample audit process
-      href: example-processes.md  
-- name: Limitations
-  href: limitations.md
-- name: Feedback and support
-  href: feedback-support.md         
+      - name: Sample audit process
+        href: example-processes.md  
+  - name: Limitations
+    href: limitations.md
+  - name: Feedback and support
+    href: feedback-support.md         
