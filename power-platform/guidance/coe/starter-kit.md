@@ -3,9 +3,12 @@ title: "CoE Starter Kit explained | MicrosoftDocs"
 description: 
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+ms.service: cloud-adoption-framework
+ms.subservice: overview
+ms.custom: homepage
+layout: LandingPage
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: landing-page
 ms.date: 03/18/2020
 ms.author: jimholtz
 search.audienceType: 
@@ -181,9 +184,6 @@ Each section of the Cloud Adoption Framework represents a different specializati
 
 ## How to use the Microsoft Cloud Adoption Framework for Azure
 
-If your enterprise is new to Azure, begin by reading [Get started with the Cloud Adoption Framework](./getting-started/migrate.md). This overview provides best practices for your enterprise's digital transformation as it walks you through each step of the process.
+If your enterprise is new to Azure, begin by reading This overview provides best practices for your enterprise's digital transformation as it walks you through each step of the process.
 
-<!-- test:ignoreNextStep -->
 
-> [!div class="nextstepaction"]
-> [Get started](./getting-started/migrate.md)
