@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 03/27/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -217,6 +217,7 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 
 > [!NOTE]
 > - The list of team members listed in each group team only displays the user members who have accessed the environment. This list doesn't show all the group members of the Azure AD group. The team member's privileges are derived dynamically at run-time when the team member accesses the application. The security role of the team is not assigned directly to the team member. Since team member's privileges are derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
+> - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission. 
 > - **Discover and launch apps** coming soon - Group team members can see the list of all the apps and the list of all the environments they have access to based on their Azure AD group membership. The temporary workaround is to assign a security role directly to the team member.  
 > - **System Administrator and Environment Maker security roles**. These are special administrator's security roles and they need to be assigned to the user directly. If these security roles are assigned to Group teams, team members get the team privileges only and won't have any direct/inherited privileges. Team members won't be able to perform all the system administrator and environment maker functions. In addition they won't be able to see the list of all the environments in their tenant. 
