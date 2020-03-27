@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 03/27/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -43,7 +43,7 @@ This Azure AD ID token refresh cycle continues in the background based on the Az
 
 
 ### Resilience to Azure AD outages 
-In an event that there are intermittent Azure AD outages, authenticated users can continue to access the model-driven apps in Dynamics 365/Common Data Service data if the PCI claims has not expired or the user has opted in the ‘Stay signed in’ during authentication. 
+In an event that there are intermittent Azure AD outages, authenticated users can continue to access the model-driven apps in Dynamics 365/Common Data Service data if the PCI claims has not expired or the user has opted in the 'Stay signed in' during authentication. 
 
 ### Set Custom Session timeout for individual environment 
 For environments that require different session timeout values, administrators can continue to set the session timeout and/or inactivity timeout in the System Settings.  These settings override the default Azure AD session policy and users will be directed to Azure AD for re-authentication when these settings expired.   
@@ -69,6 +69,8 @@ For environments that require different session timeout values, administrators c
 > - Maximum Session Length: 1440 minutes
 > - Minimum Session Length: 60 minutes
 > - How long before session expires before showing timeout warning: 20 minutes
+
+> - The updated settings will be effective the next time the user signs in to the application.
 
 ## Inactivity timeout
 
@@ -97,9 +99,11 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 > - Minimum Duration of Inactivity: 5 minutes
 > - Maximum Duration of Inactivity: less than Maximum Session length or 1440 minutes
 
+> - The updated settings will be effective the next time the user signs in to the application. 
+
 ## Access management
 
-Model-driven apps in Dynamics 365 use Azure Active Directory as the identity provider.  To secure the user’s access to model-driven apps in Dynamics 365, the following were implemented:
+Model-driven apps in Dynamics 365 use Azure Active Directory as the identity provider.  To secure the user's access to model-driven apps in Dynamics 365, the following were implemented:
 
 - To enforce users to re-authenticate, users are required to sign in with their credentials after they signed out within the application. 
 - To prevent users from sharing credentials to access model-driven apps in Dynamics 365, the user access token is validated to ensure that the user who was given access by the identity provider is the same user who is accessing model-driven apps in Dynamics 365.
