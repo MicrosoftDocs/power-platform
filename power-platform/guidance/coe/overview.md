@@ -1,7 +1,7 @@
 ---
 title: "Overview  | MicrosoftDocs"
 description: Overview of the CoE Starter Kit
-author: jimholtz, manuelap-msft
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
