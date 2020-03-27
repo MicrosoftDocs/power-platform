@@ -183,7 +183,8 @@ Each section of the Cloud Adoption Framework represents a different specializati
 
 If your enterprise is new to Azure, begin by reading [Get started with the Cloud Adoption Framework](./getting-started/migrate.md). This overview provides best practices for your enterprise's digital transformation as it walks you through each step of the process.
 
-<!-- test:ignoreNextStep -->
+<!-- test:ignoreNextStep 
 
 > [!div class="nextstepaction"]
 > [Get started](./getting-started/migrate.md)
+-->
