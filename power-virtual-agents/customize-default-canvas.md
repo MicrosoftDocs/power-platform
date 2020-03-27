@@ -205,7 +205,7 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
 ## Customize and host your chat canvas (advanced)
 
-You can connect your Power Virtual Agents bot with a custom canvas that is hosted as a standalone web-application. This option is best if you need to embed a customized iFrame across multiple web pages.
+You can connect your Power Virtual Agents bot with a custom canvas that is hosted as a standalone web app. This option is best if you need to embed a customized iFrame across multiple web pages.
 
 >[!NOTE]
 > Hosting a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a good understanding of developer tools, utilities, and IDEs.
