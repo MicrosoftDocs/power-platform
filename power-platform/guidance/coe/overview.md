@@ -7,7 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/18/2020
-ms.author: jimholtz, mapichle
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
