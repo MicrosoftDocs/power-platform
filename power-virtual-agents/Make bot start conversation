@@ -1,0 +1,250 @@
+---
+title: "Customize the Power Virtual Agents web chat canvas"
+description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
+keywords: ""
+ms.date: 3/29/2020
+ms.service:
+  - dynamics-365-ai
+ms.topic: article
+author: digantak
+ms.author: iawilt
+manager: shellyha
+ms.custom: "customization"
+ms.collection: virtualagent
+---
+
+# Make your bot start the conversation using a custom canvas
+
+
+One of the topmost ask from the Power Virtual Agents customers is to make a bot start the conversation. Customers want their bot to greet their users before they ask any questions. For example, a bot begins a conversation by saying, “Hi, I’m Botty, a virtual agent”.
+
+In this blog, you can learn how to do that using a custom canvas. You can copy-paste the HTML code in your tools (for example, Website, Intranet, or blog) of choice where you want to show the custom canvas.
+
+1. Configure the canvas with your bot
+
+2. Change the bot default greeting message
+
+## Configure the canvas with your bot
+
+To make your bot start the conversation do the following,
+
+1.	[Create and publish a bot](fundamentals-get-started.md).
+
+2.	Copy-paste the HTML code below and save it as *index.html*.
+    You can also cut and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
+
+    ```HTML
+      <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Contoso Sample Web Chat</title> 
+            <!-- This styling is for the canvas demonstration purposes. It is recommended 
+        that style is moved to separate file for organization in larger projects -->
+            <style>
+                html, body {
+                    height: 100%;
+                }
+                body {
+                    margin: 0;
+                }
+                h1 {
+                    font-size: 16px;
+                    font-family: Segoe UI;
+                    line-height: 20px;
+                    color: whitesmoke;
+                    display: table-cell;
+                    padding: 13px 0px 0px 20px;
+                }
+                #heading {
+                    background-color: black;
+                    height: 50px;
+                }
+                .main {
+                    margin: 18px;
+                    border-radius: 4px;
+                }
+
+                div[role="form"]{
+                    background-color: black;
+                }        
+                #webchat {
+                    position: fixed;
+                    height: calc(100% - 50px);
+                    width: 100%;
+                    top: 50px;
+                    overflow: hidden;
+                }
+              </style>
+        </head>
+        <body>
+            <div>
+                <div id="heading">
+
+                    <!-- Change the h1 text to change the bot name -->    
+                    <h1>Contoso Bot Name</h1>
+
+                </div>
+                <div id="webchat" role="main"></div>
+            </div>    
+          <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+          <script>
+                const styleOptions = {
+                   // Add styleOptions to customize web chat canvas
+                   hideUploadButton: true
+                };
+
+                // Add your BOT ID below
+                var BOT_ID = "<ENTER YOUR BOT ID>"; 
+
+                var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+
+                const store = window.WebChat.createStore(
+                   {},
+                   ({ dispatch }) => next => action => {
+                       if (action.type === "DIRECT_LINE/CONNECT_FULFILLED") {
+                          dispatch({
+                              meta: {
+                                   method: "keyboard",
+                               },
+                               payload: {
+                                   activity: {
+                                         channelData: {
+                                              postBack: true,
+                                         },
+                                          //Web Chat will show the 'Greeting' System Topic message which has a trigger-phrase 'hello'
+                                          text: "hello",
+                                          type: "message",
+                                     },
+                                },
+                                type: "DIRECT_LINE/POST_ACTIVITY",
+                           });
+                     }
+                     return next(action);
+                  }
+               );
+               fetch(theURL)
+                    .then(response => response.json())
+                    .then(conversationInfo => {
+                        window.WebChat.renderWebChat(
+                            {
+                                directLine: window.WebChat.createDirectLine({
+                                    token: conversationInfo.token,
+                                }),
+                                store: store,
+                                styleOptions: styleOptions
+                            },
+                            document.getElementById('webchat')
+                        );
+                    })
+                    .catch(err => console.error("An error occurred: " + err));
+            </script>
+          </body>
+        </html>
+    ```
+
+4.	In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+
+5.	Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom canvas.
+
+6.	Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
+    If you encounter problems, make sure you've published your bot, and that your Bot Id has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
+
+## Change the bot default greeting message
+
+
+You can change the default greeting message using two ways:
+
+1. Modify a system topic (recommended)
+
+2. Create a new user topic
+
+### Modify a system topic (recommended)
+
+### Create a new user topic
+
+In the side navigation pane, select Topics and select Go to authoring canvas icon next to the Greeting system topic.
+
+
+
+1. Update the *index.html* file with the following sample code
+
+    ```js
+         payload: {
+            activity: {
+                channelData: {
+                    postBack: true,
+                },
+            //Triggers a new topic with trigger-phrase 'start conversation'  
+            text: "start conversation",
+            type: "message",
+         }, 
+    ```
+
+
+2.  Replace the bot and user avatar images with your company images.  
+    If you don't have an image URL, you can use a Base64-encoded image string instead. 
+
+
+**To change the background color**
+
+1. Update the *index.html* file with following sample code. 
+
+    ```js
+    const styleOptions = {
+           
+                backgroundColor: 'lightgray'
+
+            };  
+
+    ```
+
+2. Change `backgroundColor` to any color you wish. You can use standard CSS color names, RGB values, or HEX.
+
+**To change the bot name**
+
+1. Update the `<h1>` text in the *index.html* file with the following.
+
+    ```HTML
+    <body>
+        <div id="chatwindow">
+            <div id="heading">
+                             <!-- Change the h1 text to change the bot name -->
+                <h1><img src="images/robot-create-illustration.svg"> Contoso Bot Name</h1>
+            </div>
+
+    ```
+
+## Customize and host your chat canvas (advanced)
+
+You can connect your Power Virtual Agents bot with a custom canvas that is hosted as a standalone web app. This option is best if you need to embed a customized iFrame across multiple web pages.
+
+>[!NOTE]
+> Hosting a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a good understanding of developer tools, utilities, and IDEs.
+
+
+### Pick a sample to customize
+
+We recommend starting with one of these samples custom-built to work with Power Virtual Agents: 
+
+* [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
+
+  ![Full bundle custom canvas](media/custom-canvas-full-bundle.png)
+
+* [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Power Virtual Agents. For example:
+
+  ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload.png)
+
+Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Azure Bot Framework.
+
+### Customize canvas using `stylesetOptions`
+
+As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0).
+
+### Deploy your customized canvas
+
+In order to host your custom canvas, deploy all files to a web app.
+
+## Related links
+
+-  [Azure Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
+-  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
