@@ -160,13 +160,35 @@ You can change the default greeting message using two ways:
 
 ### Modify a system topic (recommended)
 
+In the side navigation pane, select **Topics** and select **Go to authoring canvas** icon next to the **Greeting** system topic.
+
+![](media/powerapps-data-entities-view.png)
+
+Change the text to your liking inside the **Message** boxes and **Save** the topic.
+
+**Publish** the bot.
+
+The bot will start the conversation by showing updated greeting messages.
+
+
 ### Create a new user topic
 
-In the side navigation pane, select Topics and select Go to authoring canvas icon next to the Greeting system topic.
+>[!WARNING]
+>Using a user topic to start a conversation will increase your [billed sessions](https://docs.microsoft.com/en-us/power-virtual-agents/analytics-billed-sessions#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+Go to the **Topics** section and click on **New topic** to create a user topic.
 
 
+Add a trigger phrase called **start conversation** and select **Go to authoring canvas**.
 
-1. Update the *index.html* file with the following sample code
+
+Change the text to your liking inside the **Message** boxes and **Save** the topic.
+
+
+**Publish** the bot.
+
+
+Configure the canvas code to use the greeting message in the new user topic: **Start Conversation**. Update the value of **text** to **start conversation**.
 
     ```js
          payload: {
@@ -180,71 +202,9 @@ In the side navigation pane, select Topics and select Go to authoring canvas ico
          }, 
     ```
 
-
-2.  Replace the bot and user avatar images with your company images.  
-    If you don't have an image URL, you can use a Base64-encoded image string instead. 
+The bot will start the conversation by showing updated greeting messages.
 
 
-**To change the background color**
-
-1. Update the *index.html* file with following sample code. 
-
-    ```js
-    const styleOptions = {
-           
-                backgroundColor: 'lightgray'
-
-            };  
-
-    ```
-
-2. Change `backgroundColor` to any color you wish. You can use standard CSS color names, RGB values, or HEX.
-
-**To change the bot name**
-
-1. Update the `<h1>` text in the *index.html* file with the following.
-
-    ```HTML
-    <body>
-        <div id="chatwindow">
-            <div id="heading">
-                             <!-- Change the h1 text to change the bot name -->
-                <h1><img src="images/robot-create-illustration.svg"> Contoso Bot Name</h1>
-            </div>
-
-    ```
-
-## Customize and host your chat canvas (advanced)
-
-You can connect your Power Virtual Agents bot with a custom canvas that is hosted as a standalone web app. This option is best if you need to embed a customized iFrame across multiple web pages.
-
->[!NOTE]
-> Hosting a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a good understanding of developer tools, utilities, and IDEs.
 
 
-### Pick a sample to customize
 
-We recommend starting with one of these samples custom-built to work with Power Virtual Agents: 
-
-* [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
-
-  ![Full bundle custom canvas](media/custom-canvas-full-bundle.png)
-
-* [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Power Virtual Agents. For example:
-
-  ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload.png)
-
-Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Azure Bot Framework.
-
-### Customize canvas using `stylesetOptions`
-
-As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0).
-
-### Deploy your customized canvas
-
-In order to host your custom canvas, deploy all files to a web app.
-
-## Related links
-
--  [Azure Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
--  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
