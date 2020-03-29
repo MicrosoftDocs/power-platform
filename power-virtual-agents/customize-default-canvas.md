@@ -110,7 +110,7 @@ First, you need to configure where you're deploying your bot canvas.
             const styleOptions = {
 
                // Add styleOptions to customize Web Chat canvas
-
+               hideUploadButton: true
             };
 
             // Add your BOT ID below 
