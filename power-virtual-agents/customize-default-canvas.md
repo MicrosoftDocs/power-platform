@@ -2,7 +2,7 @@
 title: "Customize the Power Virtual Agents web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: ""
-ms.date: 3/13/2020
+ms.date: 3/30/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -23,11 +23,16 @@ After you create and [publish a bot](publication-fundamentals-publish-channels.m
 The default look and feel of the bot is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
 
 
-1. You can [customize the default canvas](#customize-the-default-canvas) with JavaScript-based styling in the HTML code for the website where you deploy your bot.  
+1. You can [customize the default canvas](#customize-the-default-canvas-simple) with JavaScript-based styling in the HTML code for the website where you deploy your bot.  
     Customizing the default canvas is useful if you want to make small customizations without investing in code development.
 
-2. You can use a [custom canvas](#customize-a-self-hosted-canvas-advanced), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
+2. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
+
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Retrieve bot ID and tenant ID details
 
