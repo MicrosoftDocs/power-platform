@@ -19,6 +19,11 @@ ms.collection: virtual-agent
 
 Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that leverage the use of [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 
 ## Access and use lesson topics for new bots
 

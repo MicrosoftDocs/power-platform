@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/03/2020
+ms.date: 03/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,7 +30,7 @@ The Dynamics 365 service admin can:
 
 ## Power Platform administrator 
   
- Users with the Power Platform admin role can:  
+ Users with the Power Platform service admin role can:  
   
 - Sign in to and manage multiple environments. Power Platform admins **are not affected** by security group membership and can manage environments even if not added to an environment's security group.
 - Perform admin functions in Power Platform because they have the system admin role.
@@ -47,7 +47,7 @@ Follow these steps to assign a service admin role.
   
 3. Select to expand **Show all by category**.
 
-4. Under **Collaboration** select either **Dynamics 365 service administrator** or **Power Platform administrator**. 
+4. Under **Collaboration** select either **Dynamics 365 administrator** or **Power Platform administrator**. 
   
 5. Select **Save changes**.
 

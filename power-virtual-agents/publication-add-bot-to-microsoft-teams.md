@@ -25,6 +25,11 @@ You can also delete the bot from Microsoft Teams when you no longer want people 
 > By adding the bot to Microsoft Teams, some of your data, such as bot content and end-user chat content, will be shared with Microsoft Teams (meaning that your data will flow outside of your [organization’s compliance and geographic or regional boundaries](data-location.md)). <br/>
 > For more information, see the [Microsoft Teams app privacy policy](/MicrosoftTeams/app-permissions).
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Add your bot to Microsoft Teams
 
 Before adding your bot to Microsoft Teams, you should [publish your bot at least once](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content). You will need to have [permission from your tenant admin to sideload a Teams app](/microsoftteams/teams-app-permission-policies) to complete the following instructions.

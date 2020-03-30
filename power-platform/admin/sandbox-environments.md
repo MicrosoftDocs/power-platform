@@ -21,7 +21,7 @@ A sandbox environment is any non-production environment of Common Data Service. 
 
 ## View your sandbox environments  
 
-Manage your sandbox environments from the Power Platform Admin center.  
+Manage your sandbox environments from the Power Platform admin center.  
   
 1. Go to [https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com), and sign in using Environment Admin or System Administrator role credentials.
   
@@ -33,7 +33,7 @@ Manage your sandbox environments from the Power Platform Admin center.
 ## Provision a sandbox environment
 To provision a sandbox environment, you change a production environment to sandbox.
 
-1. Sign in to the Power Platform Admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Office 365 Global admin, or Delegated admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Global admin, or Delegated admin).
 
 2. From the left-side menu, select **Environments**, and then select a production environment.
 
@@ -63,13 +63,13 @@ Reset a sandbox environment to delete and re-provision it. Consider a reset when
 
  **An example scenario**  
   
- Thomas is looking at the storage consumed by the various Contoso environments and is getting concerned that they’ll run out of space in one of their production environments.  He’d like to free up some space so he can give the production environment some additional storage.  He’s also been notified that the Legal department has set a retention policy on the use of production data in the test environment.  
+ Thomas is looking at the storage consumed by the various Contoso environments and is getting concerned that they'll run out of space in one of their production environments.  He'd like to free up some space so he can give the production environment some additional storage.  He's also been notified that the Legal department has set a retention policy on the use of production data in the test environment.  
   
- After contacting Isaac, Thomas resets the Sales department’s complete sandbox environment. The environment is re-provisioned to factory settings and ready for future use as a sandbox environment for a future project.  
+ After contacting Isaac, Thomas resets the Sales department's complete sandbox environment. The environment is re-provisioned to factory settings and ready for future use as a sandbox environment for a future project.  
  
 ### To reset an environment  
 
-1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
 2. From the left-side menu, select **Environments**, and then select an environment to reset.
 
@@ -107,7 +107,7 @@ The reset process starts.
   
 ### Set administration mode  
   
-1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
 2. From the left-side menu, select **Environments**, and then select an environment.
   

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 03/26/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Import configuration data
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 After exporting your configuration data from the source environment, you are now ready to import it to the target environment.  
   

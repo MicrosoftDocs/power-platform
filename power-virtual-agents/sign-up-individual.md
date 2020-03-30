@@ -30,6 +30,11 @@ Follow the instructions below to sign up for a Power Virtual Agents trial. After
 
 You'll then be taken to the Power Virtual Agents sign-in page and you can start using your account.
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 
 ## Trial expiration
 > ![Trial expiration notification](media/trial_expiration_notification.jpg)

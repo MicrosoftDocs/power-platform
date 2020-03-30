@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/05/2019
+ms.date: 03/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Enable the hybrid experience
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 Most of the core functionalities of sales and customer service have moved to the [Unified Interface](about-unified-interface.md) experience. Some of the features that are not yet on Unified Interface can now be accessed in the Unified Interface client. 
 
@@ -35,7 +35,7 @@ The following features are not yet present in the Unified Interface but can be e
 
 These features are enabled through a setting in System Settings.
 
-1. Go to **Settings** > **Administration** > **System Settings**.  
+1. In the web app, go to **Settings** > **Administration** > **System Settings**.  
 2. Select the **General** tab.  
 3. Set **Enable embedding of certain legacy dialogs in Unified Interface browser client** to **Yes**.
 

@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 03/03/2020
+ms.date: 03/23/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -21,8 +21,33 @@ The announcements and deprecations described in this topic apply to Power Apps, 
 Administrators and IT professionals should use this information to prepare for future releases. This article was first published on June 27, 2017.
 
 > [!IMPORTANT]
-> “Deprecated” means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
+> "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+
+## AI Builder text classification models are deprecated
+-------------------------------------------------------
+
+Effective April 24, 2020, any text classification models created using AI Builder before this date will be deprecated. Until May 15, 2020, these models will continue to function, and Microsoft will continue to provide support, however some functionality may be disabled. After May 15, 2020, these models will no longer work.
+
+Beginning April 24, 2020, customers will need to recreate their existing text classification models with the new model versions. Any models created after this date will automatically use the new model versions and require no further action.
+
+After April 24, 2020, customers are encouraged to transition to the new model versions as soon as possible.
+
+## Dynamic 365 for Outlook is deprecated
+----------------------------------------
+
+Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) is deprecated. Customers must transition to the modern [Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/overview) before October 1, 2020. Microsoft will continue to provide support, security and other critical updates to the Outlook COM Add-in until October 1, 2020.
+
+For further information and steps to make a smooth transition, download [Dynamics 365 for Outlook (COM add-in) Playbook](https://aka.ms/OutlookCOMPlaybook)
+
+## Dynamics 365 Home is deprecated 
+------------------------------------------------------
+
+Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available after October 1, 2020. The Office 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
+
+Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks until October 1, 2020. After October 1, 2020, users navigating to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
+
+More information: <https://aka.ms/business-apps-discovery-docs>
 
 ## Form processing and object detection preview models in AI Builder are deprecated 
 -----------------------------------------------------------------------------------
@@ -54,7 +79,7 @@ affects applications that utilize
 [Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.client.organizationserviceproxy)
 and
 [Microsoft.Xrm.Tooling.Connector.CrmServiceClient](https://docs.microsoft.com/dotnet/api/microsoft.xrm.tooling.connector.crmserviceclient)
-classes for the authentication type of “Office365”.
+classes for the authentication type of "Office365".
 
 We are making this change to remove a security protocol (WS-Trust) that is
 inherently insecure by current encryption standards. While Microsoft has worked
@@ -63,7 +88,7 @@ the convenience of login process, it has become an increasing source of concern
 for Microsoft security and identity protection systems. The WS-Trust security
 protocol, when used in conjunction with a user account and password, implements
 an authentication flow that presents both the user Id and password to the
-authenticating resource in ‘clear text’ form, relying solely on the transport
+authenticating resource in 'clear text' form, relying solely on the transport
 encryption to provide security for the initial leg of the authentication, until
 such point as the token service returns an authentication token to use.
 Additionally, the WS-Trust protocol does not support modern forms of
@@ -99,11 +124,12 @@ Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-wit
 
 Legacy web client is deprecated
 -------------------------------
-As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before October 1, 2020. Microsoft will continue to provide support, security and other critical updates to the legacy web client until October 1, 2020 but won't release any additional functionality beyond what has already been announced.
+As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 1, 2020. Microsoft will continue to provide support, security and other critical updates to the legacy web client until December 1, 2020 but won't release any additional functionality beyond what has already been announced.
   
-On October 1, 2020, the legacy web client will no longer be available. Organizations should make the transition to the Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
+On December 1, 2020, the legacy web client will no longer be available. Organizations should make the transition to the Unified Interface as soon as possible to take advantage of Microsoft’s ongoing investments in reliability, performance, and functionality. 
+
  
-In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to October 1, 2020. 
+In the coming months, for those that have not already made the transition, we will be sending reminders and scheduling updates to transition customers to Unified Interface prior to December 1, 2020. 
 For further information and steps to make a smooth transition, view our helpful resources and community site: 
 
 -   [Unified Interface Community
@@ -139,7 +165,7 @@ form that requires user input to start and run to completion. When you start the
 dialog process, a wizard-like interface is presented; users make selections or
 enter data as they progress through each page of the wizard.
 
-Process dialogs are deprecated and will be removed by October 1, 2020. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](https://docs.microsoft.com/flow/replace-dialogs)
+Process dialogs are deprecated and will be removed by December 1, 2020. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](https://docs.microsoft.com/flow/replace-dialogs)
 
 Legacy process-related attributes in entities are deprecated
 ------------------------------------------------------------
@@ -159,7 +185,7 @@ and supported until they are officially removed from a future major release. *A 
 
 |Deprecated Client API |Replacement Client API |Comments |
 |-----|-----|-----|
-|[Xrm.Page](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg328474(v%3dcrm.7))                                 | **Forms**: ExecutionContext.[getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext)  <br/>**Commands**: Send it as the [PrimaryControl](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions#form-and-grid-context-in-ribbon-actions) parameter |                                               Use of the **Xrm.Page** object as a static access to the primary form context is still supported to maintain backward compatibility with the existing scripts. Based on the feedback, we understand that the usage of **Xrm.Page** is high, and it won’t be removed as soon as some other client API methods listed in this section. We encourage you to use the new way of getting form content where possible. More information: [Client API form context](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)<br/>Although **Xrm.Page** is deprecated, **parent.Xrm.Page** will continue to work in case of HTML web resources embedded in forms as this is the only way to access the form context from the HTML web resource.                                                |
+|[Xrm.Page](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg328474(v%3dcrm.7))                                 | **Forms**: ExecutionContext.[getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext)  <br/>**Commands**: Send it as the [PrimaryControl](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions#form-and-grid-context-in-ribbon-actions) parameter |                                               Use of the **Xrm.Page** object as a static access to the primary form context is still supported to maintain backward compatibility with the existing scripts. Based on the feedback, we understand that the usage of **Xrm.Page** is high, and it won't be removed as soon as some other client API methods listed in this section. We encourage you to use the new way of getting form content where possible. More information: [Client API form context](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)<br/>Although **Xrm.Page** is deprecated, **parent.Xrm.Page** will continue to work in case of HTML web resources embedded in forms as this is the only way to access the form context from the HTML web resource.                                                |
 |[Xrm.Page.context](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v%3dcrm.7))                             |                                                                                                                    Xrm.Utility.[getGlobalContext](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility/getglobalcontext)                                                                                                                    |                                                                                                                                                              Allows access to the global context without going through the form context.                                                                                                                                                               |
 | [Xrm.Page.context.getQueryStringParameters](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v%3dcrm.7)#getquerystringparameters) |                                                                                                                                                                    formContext.data.attributes                                                                                                                                                                    | The formContext.data.attributes API will make retrieval of non-entity bound data consistent across entity forms, metadata-driven dialogs, and task-based flows. The data will be a combination of custom values sent using the query string and what was specified in the parameters in the [openForm](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openform) method. |
 | [Xrm.Page.context.getTimeZoneOffsetMinutes](https://docs.microsoft.com/previous-versions/dynamicscrm-2015/developers-guide/gg334511(v=crm.7)#gettimezoneoffsetminutes) |                                                                                                                                                        globalContext.userSettings.getTimeZoneOffsetMinutes                                                                                                                                                        |                                                                                                                                                                                  Moved to globalContext.userSettings                                                                                                                                                                                   |
@@ -225,7 +251,7 @@ Microsoft will continue to provide security and other critical updates to the Dy
 
 **What should you do?**
 
-If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft’s ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
+If you are currently using the Dynamics 365 for Blackberry App together with Mobile Application Management for Blackberry, plan to migrate to Dynamics 365 for phones by October 31, 2019. We encourage you to migrate as soon as possible to take advantage of Microsoft's ongoing investments in the reliability, performance, and functionality of the Dynamics 365 mobile app.
 
 
 Service scheduling in Dynamics 365 Customer Service is deprecated
@@ -255,7 +281,7 @@ Project Service Finder app is deprecated
 
 The Project Service Finder App, available for use with Dynamics 365 Project Service Automation, is deprecated. The legacy application will be supported for
 associated legacy Project Service Automation releases in accordance with
-Microsoft’s [Modern Lifecycle
+Microsoft's [Modern Lifecycle
 Policy](https://support.microsoft.com/help/30881). The functionality
 available through this app will be available in a future release of Dynamics 365 Project Service Automation application.
 

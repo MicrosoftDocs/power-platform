@@ -22,6 +22,11 @@ Multiple charts show you trends and usage for your bot's topics. These charts us
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mNOu]
 >
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Analytics in Power Virtual Agents
 
 The analytics section is divided into a number of pages to give you multiple ways to understand bot performance.

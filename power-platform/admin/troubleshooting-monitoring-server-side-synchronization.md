@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 03/16/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -39,7 +39,7 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 > [!div class="mx-imgBorder"] 
 > ![Server-side Synchronization Monitoring dashboard](../admin/media/server-side-sync-performance-dashboard.png "Server-side Synchronization Monitoring dashboard")  
   
- This dashboard is made up of multiple charts, each providing insights into your organization’s server-side sync performance.  
+ This dashboard is made up of multiple charts, each providing insights into your organization's server-side sync performance.  
   
  Click on a number in the list of mailboxes configured for server-side sync to get a specific mailbox status.  
   
@@ -76,7 +76,7 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
   
 4. Verify the user is correctly configured and enabled for sending email:  
   
-   - If the user’s mailbox record is configured to use server-side synchronization for outgoing email, verify the user’s email address is approved and is also tested and enabled.  For more information about configuring server-side synchronization, see [Set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md).  
+   - If the user's mailbox record is configured to use server-side synchronization for outgoing email, verify the user's email address is approved and is also tested and enabled.  For more information about configuring server-side synchronization, see [Set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md).  
   
 ### Email address requires approval by Office 365 administrator  
  **Alert:** Email cannot be sent/received because the email address of the mailbox \<User Name> requires an approval by an Office 365 administrator. The mailbox has been disabled for sending/receiving email and the owner of the email server profile Exchange Online has been notified.  
@@ -89,7 +89,7 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
   
  To approve one or more mailboxes:  
   
-1. Sign in to model-driven apps in Dynamics 365 as a user with the Office 365 global administrator role or the Dynamics 365 service administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
+1. Sign in to model-driven apps in Dynamics 365 as a user with the Global admin role or the Dynamics 365 service administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
   
 2. [!INCLUDE[proc_settings_email_config](../includes/proc-settings-email-config.md)]  
   
@@ -110,7 +110,7 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
   
  Mailboxes must be approved before the email will be processed. To approve mailboxes:  
   
-1. Sign in to model-driven apps in Dynamics 365 as a user with the Office 365 global administrator role or the Dynamics 365 service administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
+1. Sign in to model-driven apps in Dynamics 365 as a user with the Global admin role or the Dynamics 365 service administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
   
 2. [!INCLUDE[proc_settings_email_config](../includes/proc-settings-email-config.md)]  
   
@@ -145,10 +145,10 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
   
 -   [Allow Mailbox Access](https://technet.microsoft.com/library/aa996343\(v=exchg.141\).aspx)  
   
-### Appointments can’t be synchronized  
- **Alert:** Appointments can’t be synchronized because the Organizer field is not present.  
+### Appointments can't be synchronized  
+ **Alert:** Appointments can't be synchronized because the Organizer field is not present.  
   
- **Cause:** The Organizer field is required for appointment records to synchronize. By default, this field isn’t included on the appointment form.  
+ **Cause:** The Organizer field is required for appointment records to synchronize. By default, this field isn't included on the appointment form.  
   
  **Solution:**  
   
@@ -205,7 +205,7 @@ For more information, see this [kb article](https://support.microsoft.com/kb/318
 -   Using non-default [network ports](https://technet.microsoft.com/library/hh699823.aspx)  
 -->
  
-- Connecting model-driven apps in Dynamics 365 with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in different tenant is not supported.  
+- Connecting model-driven apps in Dynamics 365 with Exchange Online in a different tenant is supported by setting up hybrid profile connections to the separate tenant infrastructure.
   
 ### Mailbox deliveries regularly disabled  
  Mailbox delivery errors are classified as follows:  
@@ -223,7 +223,7 @@ For more information, see this [kb article](https://support.microsoft.com/kb/318
 Review the troubleshooting steps in this topic and if the issue is successfully resolved, enable the mailbox.  
   
 ### Unsupported email service configurations  
- Server-side synchronization doesn’t support the following scenarios:  
+ Server-side synchronization doesn't support the following scenarios:  
   
 - Mix of [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]/SMTP and POP3/[!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].  
   
@@ -238,7 +238,7 @@ Review the troubleshooting steps in this topic and if the issue is successfully 
 For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](../admin/integrate-synchronize-your-email-system.md)  
   
 > [!NOTE]
->  We recommend that you don’t use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated Dynamics 365 apps data not synchronizing to all attendees.  
+>  We recommend that you don't use a mixed configuration of [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] synchronization and server-side synchronization for appointments, contacts, and tasks in the same organization, because it may result in updated Dynamics 365 apps data not synchronizing to all attendees.  
   
 ### Appointment record is not created when tracked by invitee  
  Consider the following scenario regarding tracking an event:  
@@ -257,7 +257,7 @@ Result: the appointment is not created for the invitee.
   
 This is a known issue and is not supported. If the organizer is someone outside of the organization, a user who is an invitee can still track the appointment and have the record created.  
    
-### Service Appointments and Activities don’t synchronize from Outlook to model-driven apps in Dynamics 365 
+### Service Appointments and Activities don't synchronize from Outlook to model-driven apps in Dynamics 365 
  Changes made to Service Appointments and Activities will update in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] when you synchronize but the reverse is not true. When you make changes to Service Appointments or Activities in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the changes are not synchronized to model-driven apps in Dynamics 365. Service appointments are scheduled by an agent and need free/busy information for resources available only in model-driven apps in Dynamics 365.  
   
 ### Be aware of Exchange Online receiving and sending limits  

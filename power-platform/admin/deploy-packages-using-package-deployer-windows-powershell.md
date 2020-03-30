@@ -17,9 +17,7 @@ search.app:
 ---
 # Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
-[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on Customer Engagement (on-premises) or Common Data Service environment. A “package” can consist of any or all of the following:  
+[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on Customer Engagement (on-premises) or Common Data Service environment. A "package" can consist of any or all of the following:  
   
 - One or more solution files.  
   
@@ -86,9 +84,7 @@ search.app:
 ## Use Package Deployer tool at the command line  
  System administrators and customizers can pass parameters, such as a regional language code, to packagedeployer.exe from the command line.  These parameters may only be configured by running Package Deployer tool at the command line.  
   
-> [!NOTE]
->  This feature was first introduced in [!INCLUDE[pn_crm_8_0_1_online](../includes/pn-crm-8-0-1-online.md)].  
-  
+ 
  Available parameters are in this table.  
   
 |Parameter|Description|Default Value|  
@@ -160,7 +156,7 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
    You are now ready to use the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] cmdlets. To list the cmdlets that you registered, run the following command at the prompt in the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] window:  
   
 ```  
-Get-Help “Crm”  
+Get-Help "Crm"  
 ```  
   
 <a name="retrieve"></a>   
@@ -274,7 +270,7 @@ Get-Help Import-CrmPackage -full
 ## Troubleshoot package deployment issues by using log files  
  The Package Deployer tool provides logging support to get detailed information about errors that can occur when someone signs in to the environment using the tool and deploying packages. By default, the tool generates three log files that are available at the following location on the computer where you run the tool: c:\Users\\*\<UserName>*\AppData\Roaming\Microsoft\Microsoft Dynamics CRM Package Deployer\\*\<Version>*. To specify a different folder, use the -LogWriteDirectory [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlet parameter. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use the cmdlet to retrieve packages](#retrieve)  
   
-- `Login_ErrorLog.log`: Provides information about the issues that occurred when you use the tool to sign in to the environment. If there are any issues during sign in, a message appears on the tool’s login screen with a link to this log file. The message states that an error occurred while processing the login request and the user can view the error log. You can click the link in the message to view this log file. The log file is created the first time you encounter any sign-in issues in the tool. Thereafter, the log file is used to log information about a sign-in issue, whenever it occurs.  
+- `Login_ErrorLog.log`: Provides information about the issues that occurred when you use the tool to sign in to the environment. If there are any issues during sign in, a message appears on the tool's login screen with a link to this log file. The message states that an error occurred while processing the login request and the user can view the error log. You can click the link in the message to view this log file. The log file is created the first time you encounter any sign-in issues in the tool. Thereafter, the log file is used to log information about a sign-in issue, whenever it occurs.  
   
 - `PackageDeployer.log`: Provides detailed information about each task performed in the tool during the deployment of the packages. You can view the log file from the tool by clicking the **View Log File** link at the bottom of the screen.  
   

@@ -2,7 +2,7 @@
 title: "Restrict cross-tenant access   | MicrosoftDocs"
 description: Restrict cross-tenant access  
 ms.custom: ""
-ms.date: 02/19/2020
+ms.date: 03/16/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -22,11 +22,11 @@ search.app:
 ---
 # Cross-tenant inbound and outbound restrictions
 
-With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. For example, you may want to allow access to your organization’s Office 365 applications, while preventing access to other organizations’ instances of these same applications.
+With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. For example, you may want to allow access to your organization's Office 365 applications, while preventing access to other organizations' instances of these same applications.
 
 With tenant restrictions, organizations can specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants.
 
-Restricting outbound cross-tenant connections can be done using [Tenant Restrictions](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions) that apply to all Azure AD Cloud SaaS apps, or at the API Hub level which would block outbound connections just for canvas apps and flows.
+Restricting outbound cross-tenant connections can be done using tenant restrictions that apply to all Azure AD Cloud SaaS apps, or at the API Hub level which would block outbound connections just for canvas apps and flows.
 
 ![Restrict outbound cross-tenant access](media/restrict-outbound-cross-tenant.png "Restrict outbound cross-tenant access")
 

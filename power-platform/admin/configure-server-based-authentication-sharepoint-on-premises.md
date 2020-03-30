@@ -25,7 +25,7 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
 ## Permissions required  
 [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]
   
-- Office 365 Global Administrators membership - this is required for administrative-level access to the [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] subscription and to run the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets.  
+- Global admin membership - this is required for administrative-level access to the [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] subscription and to run the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets.  
   
 Model-driven apps in Dynamics 365 
   
@@ -124,7 +124,7 @@ Model-driven apps in Dynamics 365
   
 2. Connect to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
   
-    When you run the Connect-MsolService command, you must provide a valid [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that has Office 365 Global Administrator membership for the [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license that is required.  
+    When you run the Connect-MsolService command, you must provide a valid [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] that has Global admin membership for the [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license that is required.  
   
     For detailed information about each of the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands listed here, see [Manage Azure AD using Windows PowerShell](https://msdn.microsoft.com/library/azure/jj151815.aspx)  
   

@@ -21,6 +21,11 @@ Power Virtual Agents enables you to extend your bot using Azure Bot Framework Sk
 
 This article is intended for system administrators or IT professionals who are familiar with [Azure Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0). After a Skill has been registered, bot authors can seamlessly [call Actions into bot conversations](advanced-use-skills.md).
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Compare use of Flows and Skills actions
 The following table will help you determine when to use Skills for a conversation.
 
@@ -82,7 +87,7 @@ Valdate Skill manifest URL|The link isn't valid; The link must begin with https:
 Validate if Skill manifest can be retrieved|We ran into problems getting the Skill manifest.| Try again or contact your Skills developer.
 Validate if Skill manifest can be read|The manifest is too large; The manifest is incompatible.| Fix syntactical errors in the manifest. For example, check whether optional manifest properties are missing that are required. Manifest size must be less than or equal to 500KB. |
 Validate if Skill is previously registered|This Skill has already been added to your bot.|Delete the Skill and try again. |
-Validate Skill manifest endpoint origin|There's a mismatch in your Skill endpoints.|Contact your Skills developer. |
+Validate Skill manifest endpoint origin|There's a mismatch in your Skill endpoints.|Contact your Skills developer. Please add in the Manifest URL to the [Home Page in the Azure Portal](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) and re-validate the Skill.|
 Validate Skill is hosted in signed in user's tenant|To add a Skill, it must first be registered.| Your global administrator must register the Skill into the signed in user's organization. |
 Validate Skill actions|The Skill is limited to 25 actions.|There are too many Skill actions defined in Skill manifest. Remove actions and try again. |
 Validate Skill action input parameters|Actions are limited to 25 inputs.|There are too many Skill action input parameters. Remove parameters and try again. |

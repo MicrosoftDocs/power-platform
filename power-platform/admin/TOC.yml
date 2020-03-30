@@ -65,7 +65,9 @@
       items:
       - name: Opt in to early access updates
         href: opt-in-early-access-updates.md
-      - name: View analytics
+      - name: General availability deployment
+        href: general-availability-deployment.md
+      - name: View analytics and storage
         items:
         - name: Common Data Service analytics 
           href: analytics-common-data-service.md
@@ -81,10 +83,14 @@
           href: capacity-add-on.md
         - name: Free storage space
           href: free-storage-space.md
+    #  - name: View and manage resources
+    #    href: view-manage-resources.md
       - name: Manage environments
         items:
         - name: Environments overview
           href: environments-overview.md
+    #    - name: What's new with environments
+    #      href: environments-whats-new.md
         - name: Create environments
           href: create-environment.md
         - name: Edit environment properties
@@ -129,6 +135,8 @@
           href: preview-environments.md
       - name: Manage settings 
         items:
+        - name: Power Platform settings
+          href: power-platform-settings.md
         - name: Common Data Service settings
           href: admin-settings.md      
         - name: Environment database settings

@@ -22,8 +22,8 @@ In this topic, you'll learn how to create a DLP policy for a single environment 
 
 ## Prerequisites
 To follow the steps, **one** of the following items is required:
-* Azure Active Directory Tenant Admin permissions
-* Office 365 Global Admin permissions
+* Power Platform service admin permissions
+* Global admin permissions
 * Power Apps Environment Admin permissions plus a Power Apps plan, Power Automate plan, or a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) license
 
 For more information, see [Environments administration in Power Apps](environments-administration.md).
@@ -38,11 +38,11 @@ Sign in to the Admin center at [https://admin.powerapps.com](https://admin.power
 2. The **Data Policy Name** field auto-populates with a name based on the time and date the policy is created. Replace this with **Secure Data Access for Contoso**.
 
     ![](./media/create-dlp-policy/policy-name.png)
-3. The options on the **Environments** tab differ depending on whether you're an Environment admin or a Tenant admin. If you're an Environment admin, select an environment from the drop-down list, and then click or tap **Continue**.
+3. The options on the **Environments** tab differ depending on whether you're an Environment admin or a Power Platform admin. If you're an Environment admin, select an environment from the drop-down list, and then click or tap **Continue**.
 
     ![](./media/create-dlp-policy/select-environment.png)
 
-    If you're a Tenant admin, you can create DLP policies that apply to one or more environments, or to all environments within the tenant (including those created using a trial license). For this topic, click or tap **Apply to ONLY selected environments**, select an environment from the drop-down list, and then click or tap **Continue**.
+    If you're a Power Platform admin, you can create DLP policies that apply to one or more environments, or to all environments within the tenant (including those created using a trial license). For this topic, click or tap **Apply to ONLY selected environments**, select an environment from the drop-down list, and then click or tap **Continue**.
 
     ![](./media/create-dlp-policy/select-environment-tenant.png)
 

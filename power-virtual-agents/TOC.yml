@@ -14,6 +14,8 @@
      href: sign-up-individual.md
    - name: Working with environments
      href: environments-first-run-experience.md
+   - name: Data locations for organizations
+     href: data-location.md
 - name: Author and edit
   items:
    - name: Key concepts - Authoring
@@ -24,6 +26,8 @@
      href: authoring-template-topics.md
    - name: Create and edit topics
      href: authoring-create-edit-topics.md
+   - name: Use system fallback topic
+     href: authoring-system-fallback-topic.md
    - name: Manage topics
      href: authoring-topic-management.md
    - name: Test your bot
@@ -101,6 +105,5 @@
      href: gdpr-delete.md
    - name: Requests to discover data
      href: gdpr-discovery.md
-   - name: Data locations for organizations
-     href: data-location.md
+
 
