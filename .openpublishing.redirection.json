@@ -7,7 +7,12 @@
     },
     {
       "source_path": "power-virtual-agents/extend-custom-canvas-upload.md",
-      "redirect_url": "extend-custom-canvas-connect",
+      "redirect_url": "customize-default-canvas",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/extend-custom-canvas-connect.md",
+      "redirect_url": "customize-default-canvas",
       "redirect_document_id": "false"
     },
     {

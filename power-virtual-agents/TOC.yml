@@ -91,8 +91,8 @@
      href: configuration-end-user-authentication.md
    - name: Configure hand-off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
-   - name: Connect your bot to a custom canvas
-     href: extend-custom-canvas-connect.md
+   - name: Customize the look and feel of the bot
+     href: customize-default-canvas.md
    - name: Enable and configure Azure Bot Framework Skills
      href: configuration-add-skills.md
 - name: Respond to GDPR Data Subject Rights (DSR) requests
