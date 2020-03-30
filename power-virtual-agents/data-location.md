@@ -1,7 +1,7 @@
 ---
 title: "Data location for Power Virtual Agents"
 description: "Identify the geographic location where your data will reside."
-ms.date: 03/26/2020
+ms.date: 03/30/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -23,6 +23,11 @@ Microsoft may replicate customer data to other regions available within the same
 No matter where customer data is stored, Microsoft does not control or limit the locations from which customers or their end users may access customer data.
 
 Data will be stored in United States, if a bot author’s tenant location is not listed under the Data locations table above. For France, data will be stored in Europe.   
+
+
+> 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mPmc ]
+> 
 
 ## Prerequisites
 
