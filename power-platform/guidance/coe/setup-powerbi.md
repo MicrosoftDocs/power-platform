@@ -36,7 +36,7 @@ You need the environment URL of the Power Platform environment the CoE Starter K
 
 > [!NOTE]
 > You cannot deploy from AppSource if you are deploying to GCC. If you are
-targeting GCC, please use the [Configure the Power BI Dashboard using the pbix file](configure-the-power-bi-dashboard-using-the-pbix-file) instructions below.
+targeting GCC, please use the [Configure the Power BI Dashboard using the pbix file](#configure-the-power-bi-dashboard-using-the-pbix-file) instructions below.
 
 1. A pre-requisite is to have the [CoE Core Components Solution](setup-core-components.md) installed.
 

@@ -247,7 +247,7 @@ The user account who uploaded the solution and the Environment admin of the
 Environment the solution exists in will have full access to the solution,
 however you might want to share these apps with specific other users. To find more
 information on sharing, see the [documentation on sharing Canvas Apps]([this
-blog](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/share-app).
+blog](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
 
 These components are designed to give admins better visibility and overview of
 resources and usage in their environments. None of the components are to be
