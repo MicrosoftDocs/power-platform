@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,24 +17,22 @@ search.app:
 ---
 # Run bulk system jobs to detect duplicate records
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
-To maintain the integrity of system data, you should check for duplicates regularly to make sure that users don’t inadvertently create duplicate contacts, accounts, leads, or other types of records.  
+To maintain the integrity of system data, you should check for duplicates regularly to make sure that users don't inadvertently create duplicate contacts, accounts, leads, or other types of records.  
   
- The Check for Duplicates wizard helps you set up a bulk “job” that finds and cleans up duplicate records. You can schedule the job to run daily, and you can receive an email confirmation when the job finishes.  
+ The Check for Duplicates wizard helps you set up a bulk "job" that finds and cleans up duplicate records. You can schedule the job to run daily, and you can receive an email confirmation when the job finishes.  
   
 > [!NOTE]
->  If you haven’t already done so, create and publish duplicate detection rules, and turn duplicate detection on before you run the wizard. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up duplicate detection rules to keep your data clean](../admin/set-up-duplicate-detection-rules-keep-data-clean.md)  
+>  If you haven't already done so, create and publish duplicate detection rules, and turn duplicate detection on before you run the wizard. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up duplicate detection rules to keep your data clean](../admin/set-up-duplicate-detection-rules-keep-data-clean.md)  
   
-1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Data management** > **Duplicate detection jobs**.  
   
-2. Click **Duplicate Detection Jobs**.  
+3. Select **New**, or select the name of the duplicate detection job you want to run.  
   
-3. Click **New**, or select the name of the duplicate detection job you want to run.  
+   You'll see the Duplicate Detection wizard, which helps you create a job to check for duplicates.  
   
-    You’ll see the Duplicate Detection wizard, which helps you create a job to check for duplicates.  
-  
-4. Click **Next**.  
+4. Select **Next**.  
   
 5. In the **Look for** drop-down list, select the record type that you want to check for duplicates.  
   
@@ -43,11 +41,11 @@ To maintain the integrity of system data, you should check for duplicates regula
   
 6. In the **Use Saved View** drop-down list, select a view if you want to limit the records searched to records in that view. For example, select Active Accounts. When you select a view, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, add the criteria to search on.  
   
-7. To further limit the records searched, click **Select** and then enter the criteria you want.  
+7. To further limit the records searched, select **Select** and then enter the criteria you want.  
   
    ![Screenshot of duplicate detection wizard, page 1](../admin/media/duplicate-detection-wizard.png "Screenshot of duplicate detection wizard, page 1")  
   
-8. Click **Next**.  
+8. Select **Next**.  
   
 9. Accept the default name for the job, or type a different name.  
   
@@ -55,7 +53,7 @@ To maintain the integrity of system data, you should check for duplicates regula
   
 11. If you want to receive an email confirmation when the job is completed, select the **Email options** check box. Enter an additional email address, if desired.  
   
-12. Click **Next**, and then click **Submit**.  
+12. Select **Next**, and then select **Submit**.  
   
 ### See also  
  [Set up duplicate detection rules to keep your data clean](../admin/set-up-duplicate-detection-rules-keep-data-clean.md)   

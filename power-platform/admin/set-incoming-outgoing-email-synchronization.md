@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,22 +17,20 @@ search.app:
 ---
 # Set incoming and outgoing email synchronization 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
 You have several options for synchronizing email messages with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Use the following information to deploy the best option for your company.  
   
 ## Set the synchronization method  
  You can set the default synchronization method applied to all newly created user mailboxes:  
   
-1.  Go to **Settings** > **Email Configuration**  
-  
-2.  Click the **Email Configuration Settings** > **Email tab**.  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Email settings**.  
   
 You can set the synchronization method for individual mailboxes:  
-  
-1.  Go to **Settings** > **Email Configuration**  
-  
-2.  Click **Mailboxes** > select a mailbox.  
+
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Mailboxes**, and then select a mailbox.
   
 For information on picking a synchronization method, see [Integrate your email system](../admin/integrate-synchronize-your-email-system.md).  
   

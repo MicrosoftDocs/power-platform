@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/19/2019
+ms.date: 03/30/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Recover database space by deleting audit logs
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 When you enable auditing, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, store the change history for transactions in the form of audit logs in the database. You can delete the old or unwanted logs to clean up the database space.  
   
@@ -32,9 +30,9 @@ When you enable auditing, model-driven apps in Dynamics 365, such as Dynamics 36
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_auditing](../includes/proc-settings-auditing.md)]  
-  
-3. Choose **Audit Log Management**  
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Audit and logs** > **Audit Log Management**.  
   
 4. Select the oldest audit log. Then, on the command bar, choose **Delete Logs**.  
   
