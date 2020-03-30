@@ -24,6 +24,10 @@ No matter where customer data is stored, Microsoft does not control or limit the
 
 Data will be stored in United States, if a bot author’s tenant location is not listed under the Data locations table above. For France, data will be stored in Europe.   
 
+> 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mPmc ]
+> 
+
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
