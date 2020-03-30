@@ -28,7 +28,7 @@ managing a CoE requires more than the tools alone; the Center of Excellence
 also requires people, communication, defined requirements and processes. The
 tools provided here are just a means to get to the end goal, but the Center of
 Excellence itself must be thoughtfully designed by each organization based on
-their needs and preferences - read more under [Why we built it?](motivation.md).
+their needs and preferences - read more under [What is a Center of Excellence?](motivation.md).
 
 The kit provides some automation and tooling to help teams build monitoring and
 automation necessary to support a CoE. The foundation of the kit is a Common
@@ -56,23 +56,12 @@ This CoE Starter Kit and this guidance are targeted toward the person or departm
 
 After you've installed the CoE Starter Kit solution (see [Set up the CoE Starter Kit](setup.md)), get familiar with the resources in your tenant:
 
-:::row:::
-   :::column span="":::
-      ![CoE Starter Kit Dashboard](media/coeoverview1.PNG)
-   :::column-end:::
-   :::column span="":::
-      ![CoE Starter Kit App Catalog](media/coeoverview2.PNG)
-   :::column-end:::
-      :::column span="":::
-      ![CoE Starter Kit Welcome eMail](media/coeoverview3.PNG)
-   :::column-end:::
-:::row-end:::
-
-1. Open the **Power BI Dashboard** and familiarize yourself with resources and makers already in your environments.
-1. Plan your **Data Loss Prevention Policy Strategy** and use the DLP Editor (canvas app) to mitigate the risk of impacting apps when making changes to your policies.
-1. **Identify orphaned apps** and assign them to new owners using the embedded app in the Power BI Dashboard.
-1. Start planning your **governance strategy** by identifying your requirements on what makes a compliant app or maker, what information you will need per app or per maker, what happens to non-compliant apps and makers, how you will support your maker community in building compliant apps that follow best practices, what audits you want to run, and what actions you will drive based on those audits.
-1. Embrace your maker community and develop a **nurture and adoption strategy**. Think about how to onboard new makers; organize internal events such as Show & Tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.
+1. Open the **Power BI Dashboard** and familiarize yourself with resources and makers already in your environments.<br>
+![CoE Power BI  Dashboard](media/coe1.PNG)
+1. Plan your **Data Loss Prevention Policy Strategy** and use the DLP Editor (canvas app) to mitigate the risk of impacting apps when making changes to your policies.<br>![DLP Editor Canvas App](media/coe2.PNG)
+1. **Identify orphaned apps** and assign them to new owners using the embedded app in the Power BI Dashboard.<br>![Set New App Owner Canvas App](media/coe3.PNG)
+1. Start planning your **governance strategy** by identifying your requirements on what makes a compliant app or maker, what information you will need per app or per maker, what happens to non-compliant apps and makers, how you will support your maker community in building compliant apps that follow best practices, what audits you want to run, and what actions you will drive based on those audits.<br>![Developer Compliance Center Canvas App](media/coe4.PNG)
+1. Embrace your maker community and develop a **nurture and adoption strategy**. Think about how to onboard new makers; organize internal events such as Show & Tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.<br>![Welcome email to new makers](media/coe4.PNG)
 
 The above are just some samples of the components in the CoE Starter Kit. Explore the rest of the guidance here to see what is available in the kit.
 

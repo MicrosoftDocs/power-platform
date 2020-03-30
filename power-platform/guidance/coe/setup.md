@@ -79,7 +79,7 @@ When you are ready to extend the CoE Starter Kit with your own ideas, you will d
 
 Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced on the [GitHub repo](https://aka.ms/CoEStarterKitRepo) and can be downloaded from there or the direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-Install the updates by importing the latest version to the environment where you originally installed the solution - select **Upgrade > Overwrite customizations** to upgrade the solution.
+Install the updates by importing the latest version to the environment where you originally installed the solution - select **Upgrade** to update the solution.
 
 >[!WARNING]
 >Currently, only model-driven components and CDS entities will be updated with managed solution updates. Canvas Apps and Flows will be replaced during an update. If you are extending and customizing canvas apps, you will need to make a copy of the app first (which will not receive updates).
