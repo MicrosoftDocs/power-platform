@@ -1,13 +1,13 @@
 ---
 title: "Overview  | MicrosoftDocs"
 description: Overview of the CoE Starter Kit
-author: jimholtz, manuelap-msft
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/18/2020
-ms.author: jimholtz, mapichle
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -17,7 +17,9 @@ search.app:
 ---
 # Overview
 
-The Center of Excellence (CoE) starter kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting the Power Platform, with a focus on Power Apps and Power Automate.
+A Center of Excellence (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization. 
+
+The Power Platform Center of Excellence (CoE) starter kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting the Power Platform, with a focus on Power Apps and Power Automate.
 
 You can download the most updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
 
@@ -34,7 +36,7 @@ Data Service (CDS) data model and workflows to collect resource information
 across the environments in the tenant. The kit includes multiple Power Apps and
 Power BI analytics to view and interact with the data collected, as well as
 flows to collect data across environments, and help with workflows for your
-Compliance needs. The kit also provides several assets that provide templates
+Compliance needs. The kit also provides several templates
 and suggested patterns and practices for implementing CoE efforts.
 
 ## Disclaimer
@@ -48,11 +50,11 @@ If you face issues with:
 
 ## Purpose of this document
 
-This CoE Starter Kit and this guidance is targeted toward the person or department responsible for setting up a Microsoft Power Platform CoE in their organization. The goal of this guidance is to help you understand what the motivation as well as responsibilities of a Center of Excellence are, as well as walk you through the pre-requisites, setup instructions and individual components of the CoE Starter Kit.
+This CoE Starter Kit and this guidance are targeted toward the person or department responsible for setting up a Microsoft Power Platform CoE in their organization. The goal of this guidance is to help you understand what the motivation as well as responsibilities of a Center of Excellence are, as well as walk you through the pre-requisites, setup instructions and individual components of the CoE Starter Kit.
 
 ## How to get started
 
-After you've installed the CoE Starter Kit solution (see [Set up the CoE Starter Kit](setup.md)), get familiar with the resources in your tenant
+After you've installed the CoE Starter Kit solution (see [Set up the CoE Starter Kit](setup.md)), get familiar with the resources in your tenant:
 
 :::row:::
    :::column span="":::
@@ -69,10 +71,10 @@ After you've installed the CoE Starter Kit solution (see [Set up the CoE Starter
 1. Open the **Power BI Dashboard** and familiarize yourself with resources and makers already in your environments.
 1. Plan your **Data Loss Prevention Policy Strategy** and use the DLP Editor (canvas app) to mitigate the risk of impacting apps when making changes to your policies.
 1. **Identify orphaned apps** and assign them to new owners using the embedded app in the Power BI Dashboard.
-1. Start planning your **governance strategy** by identifying your requirements on what makes a compliant app or makers, what information you will need per app or per maker, what happens to non-compliant apps and makers and how you support your maker community in building compliant apps that follow best practices, what audits you want to run and what actions you will drive based on those audits.
-1. Embrace your maker community and develop a **nurture and adoption strategy** – think about how to onboard new makers, organizing internal events, like Show & Tell sessions, training workshops, hackathons, put together templates and best practices for your makers to use.
+1. Start planning your **governance strategy** by identifying your requirements on what makes a compliant app or maker, what information you will need per app or per maker, what happens to non-compliant apps and makers, how you will support your maker community in building compliant apps that follow best practices, what audits you want to run, and what actions you will drive based on those audits.
+1. Embrace your maker community and develop a **nurture and adoption strategy**. Think about how to onboard new makers; organize internal events such as Show & Tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.
 
-The above are just some samples of the components in the CoE Starter Kit, explore the rest of the guidance here to see what is available as part of the kit.
+The above are just some samples of the components in the CoE Starter Kit. Explore the rest of the guidance here to see what is available in the kit.
 
 ## Further Resources
 

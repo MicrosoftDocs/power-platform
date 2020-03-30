@@ -1,4 +1,5 @@
 - name: Power Platform Center of Excellence (CoE) Kit
+  href: starter-kit.md
   items: 
   - name: Overview
     href: overview.md
