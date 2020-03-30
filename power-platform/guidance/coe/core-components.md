@@ -114,7 +114,7 @@ have, and mitigate the risk of breaking a Flow / App through DLP changes by
 contacting makers.
 
 To learn more about DLP data groups, read [introduction to data
-groups](https://docs.microsoft.com/en-us/power-platform/admin/introduction-to-data-groups)
+groups](https://docs.microsoft.com/power-platform/admin/introduction-to-data-groups)
 
 **Permission**: Intended to be used only by admins, Power Platform Service Admin
 or Global Admin permission required. Share with your CoE Admins.
@@ -126,7 +126,7 @@ or Global Admin permission required. Share with your CoE Admins.
 Canvas app that allows you to add Custom Connectors to the Business Data Group
 of a DLP Policy, or to enable HTTP Connectors to a DLP Policy. For more
 information read [http and custom connector support for dlp
-policies](https://docs.microsoft.com/en-us/business-applications-release-notes/october18/microsoft-flow/http-and-custom-connector-support-for-dlp-policies)
+policies](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/http-and-custom-connector-support-for-dlp-policies)
 
 **Permission**: Intended to be used only by admins, Power Platform Service Admin
 or Global Admin permission required. Share with your CoE Admins.
@@ -139,7 +139,7 @@ Canvas app that an admin can use to discover apps by app or maker name, and set
 a new *app owner* or add new viewers and editors.
 
 For more information on application permissions see [canvas apps - share
-app](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/share-app).
+app](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
 
 **Permission**: Intended to be used only by admins, Power Platform Service Admin
 or Global Admin permission required. Share with your CoE Admins.
