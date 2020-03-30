@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,8 +17,6 @@ search.app:
 ---
 # Quickly navigate with the Office 365 app launcher and the Dynamics 365 home page
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-  
 <a name="BKMK_AppLauncher"></a>   
 ## Quickly move between apps with the app launcher  
  The app launcher is built in to all Dynamics and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] apps. Use the app launcher in the top left corner to quickly navigate to your Dynamics application of choice.  

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/28/2019
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -28,8 +28,6 @@ Learning Path (guided help) is turned on by default.
   
 ## Turn Learning Path on or off for an entire organization  
 This setting changes access to Learning Path for an entire organization. 
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -39,11 +37,11 @@ This setting changes access to Learning Path for an entire organization.
   
    2. [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_administration](../includes/proc-settings-administration.md)].  
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Product** > **Features**.  
   
-3. On the **Administration** page, click **System Settings**.  
-  
-4. On the **General** tab, scroll down to the **Set custom Help URL** section. Next to **Enable Learning Path**, select **Yes** or **No**.  
+4. Under **Help features**, set **Learning Path** to **On**.
   
 <a name="BKMK_Privacy"></a>   
 ## Privacy notice  
