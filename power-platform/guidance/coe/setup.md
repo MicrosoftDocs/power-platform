@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
 ---
 # Set up the Center of Excellence Starter Kit
-<!---KATHY SAYS: This was very clear. Nice!--->
+
 The Center of Excellence (CoE) starter kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting the Power Platform, with a focus on Power Apps and Power Automate. Learn more about the  individual components under [Use the CoE Starter Kit](starter-kit-explained.md).
 
 In this article, you will learn how to:
@@ -36,9 +36,9 @@ The following are prerequisites for **installing** the CoE starter kit as it com
     1. Dynamics 365 service admin is required for getting details on Model-Driven Apps and Solution Aware Flows.
 1. **Power Apps Premium License** (Per App, Per User or Dynamics 365 Online licenses) is required for using the CDS solution.
 1. **Environment with a CDS instance**, where the user installing the solution has the System Administrator security role.
-1. The environment must have <!---KATHY SAYS: Not sure about "a DLP Policies" is that a singular or a plural?.--->a **DLP Policies** that allows Common Data Service, Power Platform Management connectors, Office 365 Users and Office 365 Outlook to be used together - those connectors must be in the business data only bucket of the DLP policy for this environment.
+1. The environment must have a **DLP Policy** that allows Common Data Service, Power Platform Management connectors, Office 365 Users and Office 365 Outlook to be used together - those connectors must be in the business data only bucket of the DLP policy for this environment.
 1. **Download of the Center of Excellence Solution** and CoE Power BI dashboard files to your device. The entire content package can be downloaded directly at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
-1. Both the Audit and Report components and Nurture components solutions <!---KATHY SAYS: .Can you please check the capitalization and singular/plural for the foregoing?--->require the **Core Components solution to be installed**.
+1. Both the Governance and Nurture solutions require the **Core solution to be installed**.
 
 These are the requirements for **using** the solution.
 
@@ -57,7 +57,7 @@ When you are ready to extend the CoE Starter Kit with your own ideas, you will d
 1. **Read about solutions** in our documentation, which will introduce you to
     the concepts as well as to notions like how to create your publisher:
     [Introduction to
-    solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/introduction-solutions).
+    solutions](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions).
 
 1. Create a new **unmanaged solution**.
 
@@ -67,12 +67,7 @@ When you are ready to extend the CoE Starter Kit with your own ideas, you will d
 1. **Extend the CoE starter kit** by making modifications to the solution
     components in the context of your new unmanaged solution.
 
-1. If you are **extending canvas apps or flows**, create a copy of the app from
-    the managed solution and add the unmanaged copy of the app to your unmanaged
-    solution.
-
-    For an example of extending an app, please see [Template
-    Catalog](#template-catalog). <!---KATHY SAYS: I don't think we use "above" and "below" in docs. But more to the point I couldn't find "template catalog" (yet!).--->
+1. It is currently not possible to **extend canvas apps or flows**. If you want to make customizations to apps and flows, create a copy add it to your unmanaged solution.
 
 1. **Deploy to test and production**. We recommend making modifications and
     installing updates pushed by our team to the solution in a development
@@ -95,9 +90,9 @@ Install the updates by importing the latest version to the environment where you
 The apps and flows in the CoE Starter Kit use Premium Features like Custom Connectors and CDS, therefore a Per App or Per User Power Apps license is required to run and play the apps. More information: [Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus).
 If you want to use the Power BI report (packaged as part of the solution), you'll need a Power BI license. More information: [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
-- **It looks like I found a bug with the app; where should I go?** To file a bug against <!---KATHY SAYS: Might ot be better but it felt more clear to me.--->the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
+- **It looks like I found a bug with the app; where should I go?** To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 
-- **What features are currently not supported in GCC (the cloud for governments)?** The Office 365 Audit Log and custom connector are not available in GCC.<!---KATHY SAYS: Consider putting a link to https://www.microsoft.com/en-us/industry/government/. GCC means a lot of different things outside of Microsoft.--->
+- **What features are currently not supported in Government Community Cloud GCC?** The Office 365 Audit Log and custom connector are not available in the Government Community Cloud.
 
 ## Issues and feedback
 

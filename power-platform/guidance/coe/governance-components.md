@@ -45,7 +45,7 @@ Here's a breakdown of the assets that form the core components
 ### Admin \| Compliance detail request
 
 This flow works in conjunction with other apps and flows in the CoE toolkit to facilitate a process described in the following section: [PowerApps App Auditing
-Process](#powerapps-app-auditing-process)
+Process](example-processes.md)
 
 It sends an email to users who have Power Apps apps in the tenant who are not compliant with specific thresholds:
 
