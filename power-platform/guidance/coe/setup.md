@@ -57,22 +57,16 @@ When you are ready to extend the CoE Starter Kit with your own ideas, you will d
 1. **Read about solutions** in our documentation which will introduce you to
     the concepts as well as to notions like how to create your publisher:
     [introduction
-    solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/introduction-solutions)
+    solutions](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions)
 
 1. Create a new **unmanaged solution**
 
 1. **Choose components from the CoE starter kit to add to your new solution**,
     you decide which ones you want to customize.
 
-1. **Extend the CoE starter kit** by making modifications to the solution
-    components in the context of your new unmanaged solution.
+1. **Extend the CoE starter kit** by making modifications to the solution components in the context of your new unmanaged solution.
 
-1. If you are **extending canvas apps or flows**, create a copy of the app from
-    the managed solution and add the unmanaged copy of the app to your unmanaged
-    solution.
-
-    For an example of extending an app, please see [Template
-    Catalog](#template-catalog) below.
+1. It is currently not possible to **extending canvas apps or flows**, but you can create a copy of them and add them to your unmanaged solution.
 
 1. **Deploy to test and production**. We recommend making modifications and
     installing updates pushed by our team to the solution in a development

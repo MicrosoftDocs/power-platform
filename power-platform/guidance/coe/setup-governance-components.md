@@ -42,11 +42,11 @@ The Archive and Clean Up Flows archive apps to a SharePoint library. If you are 
 need to be configured first.
 
 1. Follow the steps described under [Create a team site in
-    SharePoint](https://support.office.com/en-us/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+    SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
     to create a new Team Site
 
 1. Follow the steps described under [Create a document library in
-    SharePoint](https://support.office.com/en-us/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939) to add a Document Library to your new Team Site. Name the document library **PowerAppsArchive**
+    SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939) to add a Document Library to your new Team Site. Name the document library **PowerAppsArchive**
 
 1. Ensure you set up the correct permissions for your SharePoint site, we would
     recommend only your Admin team should have contribute access to the site.
@@ -60,7 +60,7 @@ If you already have a security group ready, go to [portal.azure.com](<https://po
 
 1. Follow the steps described here to create a new Azure AD Group: [active
     directory groups create azure
-    portal](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+    portal](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 1. Once created, add your Admin team to the Azure AD Security Group
 

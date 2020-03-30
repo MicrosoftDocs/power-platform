@@ -75,7 +75,7 @@ Sends an email to an attendee of a training in a day event 3 days prior to the e
 
 A Canvas app that gives access to the entire organization to make apps more discoverable. Admins audit and validate certain apps which are graduated to the app catalog if the app is meant to be shared broadly.
 
-When you first open the App Catalog, you will not see any apps there at first. There is a field on the Power Apps App entity called *In App Catalog*, which is a two-option set type field (aka Boolean). If the value is set to *Yes*, the app will show up in the catalog. Following the [Compliance Business Process](#powerapps-app-auditing-process) in the Admin app will allow you to publish an app to the App Catalog.
+When you first open the App Catalog, you will not see any apps there at first. There is a field on the Power Apps App entity called *In App Catalog*, which is a two-option set type field (aka Boolean). If the value is set to *Yes*, the app will show up in the catalog. Following the [Compliance Business Process](example-processes.md) in the Admin app will allow you to publish an app to the App Catalog.
 
 **Permission**: Once you are using this process, the App Catalog can be shared with the entire organization.
 
@@ -91,7 +91,7 @@ Canvas app that allows CoE Admins to share app and component templates as well a
 
 **Pre-Requisite**: This app is using SharePoint in the background and requires a SharePoint site to be configured. This is described under [setup nurture components](setup-nurture-components.md)).
 
-This app cannot be tested out in the managed solution, only once you've [imported it into your extended unmanaged solution](#extending-the-toolkit).
+This app cannot be tested out in the managed solution, only once you've [imported it into your extended unmanaged solution](modify-components.md)).
 This is due to some limitations in the environment variables and data sources in the canvas apps.
 
 #### Power Apps setup

@@ -45,7 +45,7 @@ Here's a breakdown of the assets that form the core components
 ### Admin \| Compliance detail request
 
 This flow works in conjunction with other apps and flows in the CoE toolkit to facilitate a process described in the following section: [PowerApps App Auditing
-Process](#powerapps-app-auditing-process)
+Process](example-processes.md)
 
 It sends an email to users who have Power Apps apps in the tenant who are not compliant with specific thresholds:
 
@@ -94,12 +94,12 @@ Checks for apps that leverage certain connectors; notifies the app maker and sha
 ### Developer Compliance Center
 
 This app is used in the [PowerApps App Auditing
-Process](#powerapps-app-auditing-process), as a
+Process](example-processes.md), as a
 tool for users to check if their app is compliant and to submit information to the Center of Excellence admins as business justification to stay in compliance.
 They can also use the app to update the description and re-publish, which are
 other ways to stay in compliance.
 
-**Permission**: Once you are using the [PowerApps App Auditing Process](#powerapps-app-auditing-process), this app needs to be shared with your App Makers. If you are intending to use this process, modify the *Welcome email* (see [setup nurture components](setup-nurture-components.md))
+**Permission**: Once you are using the [PowerApps App Auditing Process](example-processes.md), this app needs to be shared with your App Makers. If you are intending to use this process, modify the *Welcome email* (see [setup nurture components](setup-nurture-components.md))
 Flow to add users to a Security Group and then share this app with the Security Group.
 
 **Pre-Requisite**: This app uses CDS, a Premium license is therefore required.
