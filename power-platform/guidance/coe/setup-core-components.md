@@ -33,8 +33,8 @@ This is the first setup step of the installation process and is required for eve
     - Select **yes** for creating the database, and select **Next**
     - Leave sample apps and data to no, and then select a security group who can view this environment. Then select **Save**
     - Navigate to your new environment
-       - Go to <https://make.powerapps.com>
-       - Navigate to the Environment you just created, where the CoE solution will be hosted in. In the screenshots example, we're importing to the Environment called 'Contoso CoE'. ![Power Apps Maker Portal Environment Selection](media/coesetup_env.png)
+       - Go to [make.powerapps.com](<https://make.powerapps.com>)
+       - Navigate to the Environment you just created, where the CoE solution will be hosted in. In the screenshots example, we're importing to the Environment called *Contoso CoE*. ![Power Apps Maker Portal Environment Selection](media/coe6.png)
     - Select **Solutions** on the left navigation bar.
     - Select **Import**, and a pop-up window will appear (make sure to disable the pop-up blocker in your browser and try again if nothing happens when clicking the Import button).
     - In the pop-up window, select **Choose File**
@@ -94,9 +94,9 @@ All of the Sync flows depend on all Environment Variables being configured.
 
 After importing the solution, you will see an error at the top, notifying you that Environment Variables need to be configured. For the Core Components solution, it will be **3** environment variables that need to be configured.
 
-![Prompt to setup Environment Variables](media/coesetup_setupenvvar.png)
+:::image type="content" source="media/coe7.png" alt-text="Prompt to setup Environment Variables" border="true":::
 
-1. Click on a variable and configure the **Default Value** ![Edit Environment Variable](media/coe_setenvvar.PNG)
+1. Click on a variable and configure the **Default Value**<br> ![Edit Environment Variable](media/coe8.PNG)
 1. You will configure the following variables for the Core Components solution, confirm by clicking **Save**
 
 | Name | Default Value |
@@ -157,15 +157,15 @@ each action need to be individually configured.
 
     1. In the left navigation, click on **Solutions**, then select the **Center of Excellence - Core Components** solution
 
-1. Select the flow name (all flows starting with *Admin | Sync Template v2*) to get to the Flow details screen, then select **Edit** ![Sync Template Flows](media/coe_flowedit.PNG)
+1. Select the flow name (all flows starting with *Admin | Sync Template v2*) to get to the Flow details screen, then select **Edit** <br>![Sync Template Flows](media/coe9.PNG)
 
-1. The flow will open in the maker studio. For each action that requires a connection, there will be a warning icon on the right side of the action. This indicates the need for a connection to be selected. ![Setup connections in the Sync Template Flow](media/coesetup_flowconnections.png)
+1. The flow will open in the maker studio. For each action that requires a connection, there will be a warning icon on the right side of the action. This indicates the need for a connection to be selected.<Br> ![Setup connections in the Sync Template Flow](media/coe10.png)
 
-1. If, when you hit save, you see this error, that means that there are more connections that still need made, likely hidden in conditional nodes. ![Setup Flow authentication](media/coesetup_authflows.png)
+1. If, when you hit save, you see an error message, that means that there are more connections that still need made, likely hidden in conditional nodes.
 
     - Some connections will need to be created if not already available
 
-    - Some actions might be hidden within other built in actions, such as a      condition or scope. Expand these actions to find the hidden ones
+    - Some actions might be hidden within other built in actions, such as a condition or scope. Expand these actions to find the hidden ones
 
     - We Suggest you start at the top of the flow and work down, opening each step as you go down, step by step until you find them all.
 
@@ -198,11 +198,11 @@ solution package with newer versions. You will have to import the new solution a
 
 1. Select the flow you want to copy to navigate to the flow's details page.
 
-1. Select **Save As** in the ribbon
+1. Select **Save As** in the ribbon<br>![Sync Template Flows Save As](media/coe11.PNG)
 
-1. A window will pop up saying, *We'll create these connections for you*. Select Continue. ![A screenshot of the Flow Details page, when you copy the Flow](media/coesetup_appauth.png)
+1. A window will pop up saying, *We'll create these connections for you*. Select Continue. ![A screenshot of the Flow Details page, when you copy the Flow](media/coe12.png)
 
-1. Rename the copy if desired. Select **Save**.  ![A screenshot of the option to rename the flow when you copy it](media/coesetup_copyflow.png)
+1. Rename the copy if desired. Select **Save**.
 
 1. At this point, the copy has been created. You can now view the flow in the **My Flows** page in the left navigation. Remember that the copy of the flow will *not* be visible in the Center of Excellence – Core Components solution.
 
@@ -246,8 +246,7 @@ but only admin specific apps.
 The user account who uploaded the solution and the Environment admin of the
 Environment the solution exists in will have full access to the solution,
 however you might want to share these apps with specific other users. To find more
-information on sharing, see the [documentation on sharing Canvas Apps]([this
-blog](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
+information on sharing, see the [documentation on sharing Canvas Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
 
 These components are designed to give admins better visibility and overview of
 resources and usage in their environments. None of the components are to be
