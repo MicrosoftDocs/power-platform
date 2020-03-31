@@ -61,7 +61,7 @@ After you've installed the CoE Starter Kit solution (see [Set up the CoE Starter
 1. Plan your **Data Loss Prevention Policy Strategy** and use the DLP Editor (canvas app) to mitigate the risk of impacting apps when making changes to your policies.<br>![DLP Editor Canvas App](media/coe2.PNG)
 1. **Identify orphaned apps** and assign them to new owners using the embedded app in the Power BI Dashboard.<br>![Set New App Owner Canvas App](media/coe3.PNG)
 1. Start planning your **governance strategy** by identifying your requirements on what makes a compliant app or maker, what information you will need per app or per maker, what happens to non-compliant apps and makers, how you will support your maker community in building compliant apps that follow best practices, what audits you want to run, and what actions you will drive based on those audits.<br>![Developer Compliance Center Canvas App](media/coe4.PNG)
-1. Embrace your maker community and develop a **nurture and adoption strategy**. Think about how to onboard new makers; organize internal events such as Show & Tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.<br>![Welcome email to new makers](media/coe4.PNG)
+1. Embrace your maker community and develop a **nurture and adoption strategy**. Think about how to onboard new makers; organize internal events such as Show & Tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.<br>![Welcome email to new makers](media/coe6.PNG)
 
 The above are just some samples of the components in the CoE Starter Kit. Explore the rest of the guidance here to see what is available in the kit.
 

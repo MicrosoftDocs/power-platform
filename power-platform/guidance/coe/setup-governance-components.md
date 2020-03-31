@@ -61,7 +61,7 @@ If you already have a security group ready, go to [portal.azure.com](<https://po
 
 1. Then, add your Admin team to the Azure AD Security Group.
 
-1. Make note of the **Object Id** of the Group, which is needed to share an app with your group. ![A screenshot showing the Object ID field in Azure Active Directory](media/coesetup_groupadmin.png)
+1. Make note of the **Object Id** of the Group, which is needed to share an app with your group. ![Azure Portal Group](media/coe13.png)
 
 ## Update Environment Variables
 
@@ -72,7 +72,7 @@ All flows in this solution depend on all Environment Variables being configured.
 
 1. You will see an error at the top<!---KATHY SAYS: At the top of what? You just sent me over to Azure before this, so I need to be re-oriented to where I am in Power Apps.--->, notifying you that Environment Variables need to be configured.  
     Note: For the Audit and Report Components solution, it will be **4**
-    environment variables that need to be configured. ![Environment variables need to be updated](media/coesetup_setupenvvar.png)
+    environment variables that need to be configured. ![Environment variables need to be updated](media/coe7.png)
 
 1. Select  **See Environment Variables** to set the values.
 
@@ -89,29 +89,28 @@ The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Arc
 
 1. Navigate to [flow.microsoft.com](https://flow.microsoft.com).
 
-1. Select **+ Create**.
+1. Select **+ New** > **Instant (From Blank)**
 
-1. Select **Instant Flow**.
-
-1. Pick **manually trigger a flow** as the trigger, and enter *Admin \| Dummy Approval flow* as the name. ![Build an Instant Flow](media/coesetup_flowtrigger.png)
+1. Pick **manually trigger a flow** as the trigger, and enter *Admin \| Dummy Approval Flow* as name<br> ![Build an Instant Flow](media/coe14.png)
 
 1. Select **+ New Step** to add an approval action to the flow, then search for and select **Create an approval**.
 
-1. Select a dummy title and put your email address under **Assigned To**. ![Approval Flow](media/coesetup_approval.png)
+1. Select a dummy title and put your email address under **Assigned To**<br> ![Approval Flow](media/coe16.png)
 
 1. Select **Test** in the top right corner, and pick **I'll perform the trigger action**.
 
-1. Select **Save & Test**.  ![Test Flow](media/coesetup_testflow.png)
+1. Select **Save & Test**  
 
-1. Select **Run Flow**.  ![Run Flow](media/coesetup_runflow.png)
+1. Select **Run Flow**  
 
-1. This flow can take up to ten minutes to run initially. Once run, you can delete the flow as it will not be needed anymore ![Delete flow once it has run](media/coesetup_approvaltest.png)
+1. This flow can take up to ten minutes to run initially. Once run, you can delete the flow as it will not be needed anymore.
 
-1. Select **Solutions** on the right <!---KATHY SAYS: Not left?--->side, and you should now see two new  Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded. <!---KATHY SAYS: I appreciate this note explaining how I know it succeeded.---> ![Flow Approval solutions](media/coesetup_flowsolutions.png)
+1. Select **Solutions** on the left side, and you should now see two new  Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded. <br>![Flow Approval solutions](media/coe17.png)
+
 
 ## Activate the Flows
 
-This Compliance and Report<!---KATHY SAYS: I thought it was "Audit and Report"?---> solution contains five flows:
+This Governance solution contains five flows:
 
 1. Admin \| App Archive and Clean Up – Start Approval
 1. Admin \| App Archive and Clean Up – Check Approval
@@ -120,7 +119,7 @@ This Compliance and Report<!---KATHY SAYS: I thought it was "Audit and Report"?-
 1. SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
 
 Follow the same instructions to configure the flows as explained under [
-Activate the Sync Template Flows](setup-core-components.md).<!---KATHY SAYS: Is there a way to link directly to that heading? Otherwise it's not entirely obvious which part of the linked page they're heading to.--->
+Activate the Sync Template Flows](setup-core-components.md#activate-the-sync-template-flows).
 
 ## Share apps with Makers
 

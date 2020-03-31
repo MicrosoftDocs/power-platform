@@ -43,10 +43,9 @@ and apps.
 
 All flows in this solution depend on all Environment Variables being configured.
 
-1. You will see an error at the top<!---KATHY SAYS: The top of what?--->, notifying you that Environment Variables
-    need to be configured.  
-    Note: For the Audit and Report Components solution, **4**
-    environment variables need to be configured. ![Environment variables need to be updated](media/coesetup_setupenvvar.png)
+1. You will see an error notifying you that Environment Variables need to be configured.  
+    Note: For the Governance solution, **4**
+    environment variables need to be configured. <Br>![Environment variables need to be updated](media/coe7.png)
 
 1. Select **See Environment Variables** to set the values:
 
@@ -82,7 +81,7 @@ The Template Catalog depends upon this library.
 1. Create a document library to store templates on a SharePoint site of your choice. We recommend having a dedicated Power Apps CoE SharePoint site. Ensure everyone has read-only and download access to this library.
 
 1. Name the library **AppTemplates** to make conversion of the app easy, and add the meta-data columns shown below with precise naming to your library. <!---KATHY SAYS: You will need to either type these out (ideally) or set alt text on the image, as othrewise it isn't accessible to screen-readers. Is it important that the names not be localized? If so, Jim can tell you how to set a "no loc" on the relevant strings.--->See [create a managed metadata column](<https://support.office.com/article/create-a-managed-metadata-column-c2a06717-8105-4aea-890d-3082853ab7b7>) for assistance.![SharePoint column setup for Template App](media/coesetup_sharepointcolumns.png)
-1. The Template Type column should have the following Choice options ![Template Type options](media/coesetup_sharepointtemplate.png)<!---KATHY SAYS: Same accessibility note as above.--->
+1. The Template Type column should have the following Choice options ![SharePoint column setup for Template App](media/coe18.png)<!---KATHY SAYS: Same accessibility note as above.--->
 
 1. Upload your templates (for example brand guidelines, logos, app and flow samples) so that there is content within the application. <!---KATHY SAYS: I'm a little bit confused. I also don't see anyplace where the actual template (or link to the template) lives; this seems to be just metadata?--->
 
