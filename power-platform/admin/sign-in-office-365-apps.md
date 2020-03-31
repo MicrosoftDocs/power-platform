@@ -44,35 +44,35 @@ For admins and end users, when you sign in to https://office.com, you will see a
   
  For other ways to access Dynamics 365 and Office apps, see [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md).  
   
-<!-- 
+
 <a name="BKMK_DirectAdminCenter"></a>   
 
 ## Direct sign in to the Dynamics 365 Administration Center  
  Some Dynamics 365 admin or Microsoft 365 admin roles might be unable to access the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] after signing in to https://admin.microsoft.com. Use the following steps to directly navigate to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)] and manage your environment.  
   
-1. Go to https://port.\<region>.dynamics.com/G/environments/environmentPicker.aspx  
+1. Go to https://port.\<region>.dynamics.com/G/instances/instancePicker.aspx  
   
     Replace \<region> with the region identifier or use one of the links below.  
   
    |Region identifier|URL|  
    |-----------------------|---------|  
-   |**crm** for North America (NAM)|[https://port.crm.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm.dynamics.com/G/environments/environmentPicker.aspx)|  
-   |**crm2** for South America (LATAM/SAM)|[https://port.crm2.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm2.dynamics.com/G/environments/environmentPicker.aspx)|  
-   |**crm3** for Canada (CAN)|[https://port.crm3.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm3.dynamics.com/G/environments/environmentPicker.aspx)|  
-   |**crm4** for Europe, Middle East, Africa (EMEA)|[https://port.crm4.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm4.dynamics.com/G/environments/environmentPicker.aspx)|  
-   |**crm5** for Asia Pacific (APAC)|[https://port.crm5.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm5.dynamics.com/G/environments/environmentPicker.aspx)|  
-   |**crm6** for Oceania (OCE)|[https://port.crm6.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm6.dynamics.com/G/environments/environmentPicker.aspx)|  
-   |**crm7** for Japan (JPN)|[https://port.crm7.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm7.dynamics.com/G/environments/environmentPicker.aspx)|  
-   |**crm8** for India (IND)|[https://port.crm8.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm8.dynamics.com/G/environments/environmentPicker.aspx)|  
-   |**crm11** for United Kingdom (UK)|[https://port.crm11.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm11.dynamics.com/G/environments/environmentPicker.aspx)|  
-   |**crm12** for France (FRA)|[https://port.crm12.dynamics.com/G/environments/environmentPicker.aspx](https://port.crm12.dynamics.com/G/environments/environmentPicker.aspx)|  
+   |**crm** for North America (NAM)|[https://port.crm.dynamics.com/G/instances/instancePicker.aspx](https://port.crm.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm2** for South America (LATAM/SAM)|[https://port.crm2.dynamics.com/G/instances/instancePicker.aspx](https://port.crm2.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm3** for Canada (CAN)|[https://port.crm3.dynamics.com/G/instances/instancePicker.aspx](https://port.crm3.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm4** for Europe, Middle East, Africa (EMEA)|[https://port.crm4.dynamics.com/G/instances/instancePicker.aspx](https://port.crm4.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm5** for Asia Pacific (APAC)|[https://port.crm5.dynamics.com/G/instances/instancePicker.aspx](https://port.crm5.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm6** for Oceania (OCE)|[https://port.crm6.dynamics.com/G/instances/instancePicker.aspx](https://port.crm6.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm7** for Japan (JPN)|[https://port.crm7.dynamics.com/G/instances/instancePicker.aspx](https://port.crm7.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm8** for India (IND)|[https://port.crm8.dynamics.com/G/instances/instancePicker.aspx](https://port.crm8.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm11** for United Kingdom (UK)|[https://port.crm11.dynamics.com/G/instances/instancePicker.aspx](https://port.crm11.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm12** for France (FRA)|[https://port.crm12.dynamics.com/G/instances/instancePicker.aspx](https://port.crm12.dynamics.com/G/instances/instancePicker.aspx)|  
   
-    For Germany (DEU), use the following: https://port.crm.microsoftdynamics.de/g/environments.environmentpicker.aspx.  
+    For Germany (DEU), use the following: https://port.crm.microsoftdynamics.de/g/instances.instancepicker.aspx.  
   
 2. Sign in with your admin credentials.  
   
 <a name="BKMK_DirectHomePage"></a>   
--->
+
 
 ## Direct sign in to the Dynamics 365 home page  
 **Your business apps are moving**
@@ -82,7 +82,6 @@ moved to [office.com](https://office.com/apps), we will provide a banner redirec
 
 After October 1, 2020, when users navigate to https://home.dynamics.com, they will be redirected to https://www.office.com/apps with a deep link to their business applications.
 
-<!--
 <a name="BKMK_directsignin"></a>   
 
 ## Direct sign in to Dynamics 365 apps 
@@ -109,7 +108,6 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
  Your user name depends on whether your organization uses the standard [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] domain (for example, username@contoso.onmicrosoft.com) or you have a custom domain (for example, username@contoso.com).  
   
  Administrators can provide the URL and sign-in information.  
--->
 
 <a name="BKMK_social"></a>   
 ## Direct sign in to Social Engagement  
