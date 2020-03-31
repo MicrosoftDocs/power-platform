@@ -17,7 +17,7 @@ search.app:
 ---
 # Sign in to Dynamics 365 and Office apps
 
-There are multiple ways to sign in and access your Dynamics and Office apps. You can sign in by using the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], or sign in directly. 
+There are multiple ways to sign in and access your Dynamics and Office apps.  
   
 > [!TIP]
 > Admins: Be sure to share this information with your end users.  
@@ -44,6 +44,7 @@ For admins and end users, when you sign in to https://office.com, you will see a
   
  For other ways to access Dynamics 365 and Office apps, see [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md).  
   
+<!-- 
 <a name="BKMK_DirectAdminCenter"></a>   
 
 ## Direct sign in to the Dynamics 365 Administration Center  
@@ -71,6 +72,7 @@ For admins and end users, when you sign in to https://office.com, you will see a
 2. Sign in with your admin credentials.  
   
 <a name="BKMK_DirectHomePage"></a>   
+-->
 
 ## Direct sign in to the Dynamics 365 home page  
 **Your business apps are moving**
@@ -79,7 +81,8 @@ In the future, the home for all of your business applications across Dynamics an
 moved to [office.com](https://office.com/apps), we will provide a banner redirecting users to their new home.
 
 After October 1, 2020, when users navigate to https://home.dynamics.com, they will be redirected to https://www.office.com/apps with a deep link to their business applications.
-  
+
+<!--
 <a name="BKMK_directsignin"></a>   
 
 ## Direct sign in to Dynamics 365 apps 
@@ -106,7 +109,8 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
  Your user name depends on whether your organization uses the standard [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] domain (for example, username@contoso.onmicrosoft.com) or you have a custom domain (for example, username@contoso.com).  
   
  Administrators can provide the URL and sign-in information.  
-  
+-->
+
 <a name="BKMK_social"></a>   
 ## Direct sign in to Social Engagement  
  To directly sign in to the [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] service, use:  
