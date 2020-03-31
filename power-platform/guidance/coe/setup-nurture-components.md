@@ -47,7 +47,7 @@ All flows in this solution depend on all Environment Variables being configured.
 1. You will see an error at the top, notifying you that Environment Variables
     need to be configured.  
     Note: For the Audit and Report Components solution, it will be **4**
-    environment variables that need to be configured. ![Environment variables need to be updated](media/coesetup_setupenvvar.png)
+    environment variables that need to be configured. <Br>![Environment variables need to be updated](media/coe7.png)
 
 1. Click on **See Environment Variables** to set the values
 
@@ -82,8 +82,9 @@ The Template Catalog depends upon this library.
 
 1. Create a document library to store templates on a SharePoint site of your choice – we recommend having a dedicated Power Apps CoE SharePoint site. Ensure everyone has read-only and download access to this library.
 
-1. Name the library **AppTemplates** to make conversion of the app easy, and add the meta-data columns shown below with precise naming to your library. See [create a managed metadata column](<https://support.office.com/article/create-a-managed-metadata-column-c2a06717-8105-4aea-890d-3082853ab7b7>) for assistance.![SharePoint column setup for Template App](media/coesetup_sharepointcolumns.png)
-1. Create a column of type Choice called Template Type with the following options ![Template Type options](media/coesetup_sharepointtemplate.png)
+1. Name the library **AppTemplates** to make conversion of the app easy, and add the meta-data columns shown below with precise naming to your library. See [create a managed metadata column](<https://support.office.com/article/create-a-managed-metadata-column-c2a06717-8105-4aea-890d-3082853ab7b7>) for assistance.<br>
+![SharePoint column setup for Template App](media/coe18.png)
+1. Create a column of type Choice called Template Type with the options: *App, Component, Document*
 
 1. Upload your templates (for example brand guidelines, logos, app and flow samples) so that there is content within the application.
 
