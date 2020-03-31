@@ -41,11 +41,11 @@ The *Archive and Clean Up* flows archive un-needed apps to a SharePoint library.
 need to be configured first.
 
 1. Follow the steps described under [Create a team site in
-    SharePoint](https://support.office.com/en-us/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+    SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
     to create a new Team Site.
 
 1. Follow the steps described under [Create a document library in
-    SharePoint](https://support.office.com/en-us/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939) to add a Document Library to your new Team Site. Name the document library **PowerAppsArchive**.
+    SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939) to add a Document Library to your new Team Site. Name the document library **PowerAppsArchive**.
 
 1. Ensure you set up the correct permissions for your SharePoint site. We
     recommend that only your Admin team should have contribute access to the site.
@@ -80,7 +80,7 @@ All flows in this solution depend on all Environment Variables being configured.
 | Name | Default Value |
 |------|---------------|
 | Archive Site URL (SharePoint Site)  | The Archive and Clean Up Flow archives app files (.msapp) to a SharePoint site. Paste the URL of the Team site you created under [Create a SharePoint document library](#create-a-sharepoint-document-library). Leave blank if you are not planning to use the Archive and Clean Up Flow.
-| Archive Folder                      | Folder (Document Library) within the above SharePoint site, where the .msapp file should be stored. Paste the Name of the Document Library you created under [Step 2 above](#step-2-optional-create-a-sharepoint-document-library). Leave blank if you are not planning to use the Archive and Clean Up Flow.                                                                                                                                                                                                                                                                                 |
+| Archive Folder                      | Folder (Document Library) within the above SharePoint site, where the .msapp file should be stored. Paste the name of the [[Document Library you created earlier](#create-a-sharepoint-document-library). Leave blank if you are not planning to use the Archive and Clean Up Flow.                                                                                                                                                                                                                                                                                 |
 | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (Canvas App), part of this solution and copy the Web Link (to launch the app) and paste it into this variable.                                                                                                                                                                            |
 | Power Platform Admin Security Group | The *Admin \| Find and add admins as owners for apps that leverage certain connectors flow* adds the Admin Security Group to apps; it is therefore required to configure the Admin Security Group first – enter the Azure AD Group ID (Object Id) of the group you created under Step 3 here. Note: Make sure to enter the Object Id, not an email address. |
 

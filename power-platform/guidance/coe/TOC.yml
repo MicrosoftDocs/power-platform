@@ -1,8 +1,9 @@
 - name: Power Platform Center of Excellence (CoE) Kit
+  href: starter-kit.md
   items: 
   - name: Overview
     href: overview.md
-  - name: Why we built it
+  - name: What is a Center of Excellence
     href: motivation.md   
   - name: Set up the CoE Starter Kit    
     items: 
