@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2017
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,11 +17,9 @@ search.app:
 ---
 # Set up duplicate detection rules to keep your data clean
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
-To maintain the integrity of your data, it’s a good idea to have rules in place to reduce duplicate records in the system. Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, include default duplicate detection rules for accounts, contacts, and leads, but not for other types of records. If you want the system to detect duplicates for other record types, you’ll need to create a new rule.  
+To maintain the integrity of your data, it's a good idea to have rules in place to reduce duplicate records in the system. Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, include default duplicate detection rules for accounts, contacts, and leads, but not for other types of records. If you want the system to detect duplicates for other record types, you'll need to create a new rule.  
   
- After you’ve created duplicate detection rules, you need to turn duplicate detection on.  
+ After you've created duplicate detection rules, you need to turn duplicate detection on.  
   
 1. [!INCLUDE[proc_permissions_mgr_vp_sys_admin_sys_cust](../includes/proc-permissions-mgr-vp-sys-admin-sys-cust.md)]  
   
@@ -31,10 +29,10 @@ To maintain the integrity of your data, it’s a good idea to have rules in plac
   
    2. [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
-  
-3. Choose **Duplicate Detection Rules**.  
-  
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Data management** > **Duplicate detection rules**.  
+   
 4. To create a new duplicate detection rule, choose **New**. Type a name and description.  
   
     –OR–  
@@ -51,7 +49,7 @@ To maintain the integrity of your data, it’s a good idea to have rules in plac
   
        -   In the **Duplicate Detection Rule Criteria** section, in the **Base Record Type** list, choose the type of record that this rule applies to. For example, select **Contacts**.  
   
-       -   In the **Matching Record Type** box, choose the type of record to compare. In most cases, you’ll probably want to use the same record type for **Base Record Type** and **Matching Record Type**. It’s also useful to be able to compare different record types. For example, you might want to compare the **Email** field in Contacts to the **Email** field in Leads.  
+       -   In the **Matching Record Type** box, choose the type of record to compare. In most cases, you'll probably want to use the same record type for **Base Record Type** and **Matching Record Type**. It's also useful to be able to compare different record types. For example, you might want to compare the **Email** field in Contacts to the **Email** field in Leads.  
   
    2.  If you want the rule to consider only active records while detecting duplicates, select the **Exclude inactive matching records** check box. You should also select this check box if your duplicate detection rule criteria are based on a status field.  
   
@@ -67,7 +65,7 @@ To maintain the integrity of your data, it’s a good idea to have rules in plac
   
    6.  If you specified **Same First Characters** or **Same Last Characters**, in the **No. of Characters** column, choose **Enter Value**, and then enter the number of characters to compare.  
   
-   7.  If you don’t want the rule to consider blank fields (null values) as equal while identifying duplicates, select the **Ignore Blank Values** check box.  
+   7.  If you don't want the rule to consider blank fields (null values) as equal while identifying duplicates, select the **Ignore Blank Values** check box.  
   
    > [!IMPORTANT]
    >  If the duplicate detection rule contains only one condition, blank values are ignored during duplicate detection job.  
@@ -76,7 +74,7 @@ To maintain the integrity of your data, it’s a good idea to have rules in plac
   
    ![Example duplicate detection rule](../admin/media/cc-duplicate-detection-rule-cc-duplicate-detection-rule.PNG "Example duplicate detection rule")  
   
-6. When you’re finished adding criteria, choose **Save and Close**.  
+6. When you're finished adding criteria, choose **Save and Close**.  
   
 7. To make the new or changed duplicate detection rule usable, select the rule, and then choose **Publish**.  
   
