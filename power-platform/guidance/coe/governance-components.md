@@ -26,15 +26,15 @@ Learn how to [set up the governance components](setup-governance-components.md).
 Here's a breakdown of the assets that form the core components
 
 1. **Sample Audit Process**
-    1. Developer Compliance Center (Canvas App)
-    1. Flow – Compliance detail request
-    1. Business Process Flow for Auditing resources
+    1. [Developer Compliance Center (Canvas App)](#apps)
+    1. [Flow – Compliance detail request](#flows)
+    1. [Business Process Flow for Auditing resources](#business-process-flow)
 1. **Archive unused apps**
-    1. App Archive and Clean Up – Start Approval and Check Approval (Flows)
-    1. App Archive and Clean Up Admin View (Model Driven App)
+    1. [App Archive and Clean Up – Start Approval and Check Approval (Flows)](#flows)
+    1. [App Archive and Clean Up Admin View (Model Driven App)](#apps)
 1. **Act based on certain connector usage**
-    1. Find and add admins as owners for apps that leverage certain connectors (Flow)
-    1. Find and disable flows that leverage certain connectors (Flow)
+    1. [Find and add admins as owners for apps that leverage certain connectors (Flow)](#flows)
+    1. [Find and disable flows that leverage certain connectors (Flow)](#flows)
 
 ## Entities
 
@@ -57,13 +57,15 @@ It sends an email to users who have Power Apps apps in the tenant who are not co
 
 You can customize the email sent out by the Flow, by default it will look like the following:  
 
-![Compliance Detail Request email](media/coegov1.png)
+![Compliance Detail Request email](media/coe55.png)
 
 ### Admin \| App archive and clean up – Start Approval
 
 Checks for apps that have not been modified in the last six months (configurable) and asks the app owner (via Flow Approvals) if the app can be archived.
 
 This flow starts the approval process and writes the Approval Task to the *Archive Approval* CDS Entity.
+
+![App archive and clean up – Approval](media/coe58.png)
 
 ### Admin \| App archive and clean up – Check Approval
 
@@ -79,15 +81,15 @@ Checks if any Flows are using specific connectors, notifies the Flow maker and d
 
 **Update**: On setup, the array provided is blank so that we do not inadvertently disable flows in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice:  
 
-![Find and disable flows that leverage Certain connectors](media/coegov2.png)
+![Find and disable flows that leverage Certain connectors](media/coe59.png)
+
+![Find and disable flows that leverage Certain connectors](media/coe60.png)
 
 ### SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors
 
 Checks for apps that leverage certain connectors; notifies the app maker and shares the app with the admin security group.
 
 **Update**: On setup, the array provided is blank so that we do not inadvertently add owners to apps with connectors in your tenant. You must specify what connectors you want to audit by editing the Flow and updating the *disableConnectorArray* as shown for the connectors of your choice:  
-
-![Find and disable apps that leverage Certain connectors](media/coegov2.png)
 
 ## Apps
 
@@ -106,22 +108,27 @@ Flow to add users to a Security Group and then share this app with the Security 
 
 **Update**: Verify the Support Details form matches your requirement, and update if necessary.
 
-![Developer Compliance Center Overview](media/coegov3.png)
-
-![Developer Compliance Center App Detail](media/coegov4.png)
+:::row:::
+   :::column span="":::
+      ![Developer Compliance Center Overview](media/coe56.png)
+   :::column-end:::
+   :::column span="":::
+      ![Developer Compliance Center App Detail](media/coe57.png)
+   :::column-end:::
+:::row-end:::
 
 ## Model Driven App
 
 ### App Archive and Clean Up View
 
-A model driven app that provides an interface to canvas apps that have been highlighted for archiving, and their approval status.
+A model driven app that shows canvas apps that have been highlighted for archiving, and their approval status.
 
 This Model Driven App works in conjunction with other apps and flows in the CoE toolkit to facilitate a process described in the following section: [PowerApps
-App Auditing Process](#powerapps-app-auditing-process)
+App Auditing Process](example-processes.md)
 
 **Update**: Instead of using this model driven app, you could also modify the Power Platform Admin View app to additionaly show the *Archive Approval* entity.
 
-![App Archive and Clean Up View](media/coegov5.png)
+![App Archive and Clean Up View](media/coe61.png)
 
 ## Business Process Flow
 
@@ -129,9 +136,20 @@ App Auditing Process](#powerapps-app-auditing-process)
 
 This process helps the admin audit the Power Apps App audit process by providing a visual placeholder for the stage in the process they are currently on.
 
-![Power Apps App Approval BPF - Implementation](media/coegov6a.png)
+The audit stages are
 
-![Power Apps App Approval BPF - Validate Maker Requirements](media/coegov6.png)
+- Validate maker requirements
+- Assess risk
+- Highlight in app catalog
+
+:::row:::
+   :::column span="":::
+      ![Power Apps App Approval BPF - Implementation](media/coe62.png)
+   :::column-end:::
+   :::column span="":::
+      ![Power Apps App Approval BPF - Validate Maker Requirements](media/coe63.png)
+   :::column-end:::
+:::row-end:::
 
 #### Activate Business Process Flow
 

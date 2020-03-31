@@ -25,7 +25,7 @@ The Nurture section helps you find your "star" app and flow makers, see what con
 
 The **Maker page**, at one glance, helps you see your top makers, how many apps and flows those makers have created and your top active departments.
 
-![Makers](media/powerbi5.png)
+![Makers](media/pb7.png)
 
 ## App Gurus
 
@@ -44,7 +44,7 @@ actions or use multiple connectors are likely more advanced and could turn into
 your champions, makers use very few connectors or mostly template flows are
 likely at the beginning of their journey and might need a helping hand
 
-![Flow Gurus](media/powerbi9.png)
+![Flow Gurus](media/pb11.png)
 
 ## App Shares
 
@@ -52,4 +52,4 @@ The **App Shares** page shows your top apps by number of users it is shared
 with and number of app launches, and users who most frequently launch Power
 Apps.
 
-![App Shares](media/powerbi4.png)
+![App Shares](media/pb19.png)

@@ -23,7 +23,7 @@ be used to grant yourself or others ownership or a resource, archive it, or dele
 
 ## App and Flow Risk Assessment
 
-Added in March 2020 is the ability for admins to identify overshared and overused resources, or resources using specific connectors. Not only will the admin have visibility of those types of resources, they can also grant themselves ownership to inspect the resource behavior and decide if further action needs to be taken.
+The dashboard includes the ability for admins to identify overshared and overused resources, or resources using specific connectors. Not only will the admin have visibility of those types of resources, they can also grant themselves ownership to inspect the resource behavior and decide if further action needs to be taken.
 
 The **App Risk Assessment** page enables you to filter by:
 
@@ -68,13 +68,13 @@ Select *Blank* in the Owner dropdown in the right-hand filter section of this pa
 
 Select *SQL Server* in the Connector dropdown in the right-hand filter section of this page to find apps using the SQL Server Connector.
 
-![App Risk Assessment](media/powerbi11.png)
+![App Risk Assessment](media/pb13.png)
 
 ## Flow Risk Assessment
 
 The **Flow Risk Assessment** page enables you to filter by:
 
-- Evironment
+- Environment
 
 - Maker
 
@@ -117,7 +117,7 @@ Select *SQL Server* in the Connector dropdown in the right-hand filter section o
 Select **actions** or **connectors** you are interested in in the Connector and Action lists in the right-hand filter section of this page to find flows using those
 connectors or actions.
 
-![Flow Risk Assessment ](media/powerbi18.png)
+![Flow Risk Assessment ](media/pb14.png)
 
 ## App and Flow Archive
 
@@ -128,6 +128,15 @@ To support this, we have introduced an Archive Score – in short, the higher th
 - The highest possible score for an **app** is 6 – a score of 6 would represent an app that has not been modified since it was created, that is using a non-production word like test or demo in the title, that has been created over three years ago and has likely been created from a template.
 
 - The highest possible score for a **flow** is 7 – a score of 7 would represent a flow that has not been modified since it was created, that is  using a non-production word like test or demo in the title, that has been created over three years ago and has likely been created from a template,that is in stopped state and not complex (contains less than five actions)
+
+:::row:::
+   :::column span="":::
+      ![Power Apps Archive](media/pb10.png)
+   :::column-end:::
+   :::column span="":::
+      ![Power Automate Archive](media/pb12.png)
+   :::column-end:::
+:::row-end:::
 
 The **App Archive** page is sorted by highest archive score, and through filters allows you to target specific makers, date ranges, environments, departments or
 connectors.
@@ -144,11 +153,9 @@ The **Archive Score** is a sum of multiple criteria:
 
 A [tooltip](https://docs.microsoft.com/power-bi/desktop-tooltips) (pops up when you hover over a line item) shows additional details like number of launches and last launched date.
 
-![App Archive](media/powerbi19.png)
+![App Archive](media/pb15.png)
 
 By right-clicking a specific App and navigating to Drill through **App Detail**, you can open the Detail page for the selected app.
-
-![App Details](media/powerbi12.png)
 
 The **Flow Archive** page is sorted by highest archive score and allows you to target specific makers, date ranges, environments, departments or connectors.
 
@@ -168,7 +175,7 @@ The **Archive Score** is a sum of multiple criteria:
 
 A tooltip (pops up when you hover over a line item) shows additional details like number of launches and last launched date as well as the scores for the above criteria.
 
-![Flow Archive](media/powerbi16.png)
+![Flow Archive](media/pb18.png)
 
 By right-clicking a specific flow and navigating to Drill through **Flow Detail**, you can open the Detail page for the selected flow.
 
@@ -190,7 +197,7 @@ The **App Detail** page provides you with rich information about this resource, 
 
 With the embedded Power Apps app you don't have to leave the Power BI dashboard to take action.
 
-![App Details](media/powerbi15.png)
+![App Details](media/pb16.png)
 
 ### Flow Archive
 
@@ -209,4 +216,4 @@ flow.
 
 With the embedded Power App you don't have to leave the Power BI dashboard to take action.
 
-![Flow details](media/powerbi14.png)
+![Flow Details](media/pb17.png)

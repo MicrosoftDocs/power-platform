@@ -37,6 +37,6 @@ Get ready to use the dashboard by installing the [Core Components of the CoE Sta
 
 The first page of the dashboard provides an overview of all areas and their purpose, as well as buttons to navigate to the different sections and pages.
 
-![Power BI Dashboard Overview](media/powerbi1.png)
+![Power BI Dashboard Overview](media/pb1.png)
 
 Within each section, you'll find [bookmarks](https://docs.microsoft.com/power-bi/desktop-bookmarks)) at the top of each page to help you navigate to the information you are looking for.
