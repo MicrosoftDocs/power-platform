@@ -24,17 +24,16 @@ Learn how to [set up the core components](setup-core-components.md).
 Here's a breakdown of the assets that form the core components
 
 - **Catalog tenant resources**
-  - CDS Entities: Environments, Apps, Flows
-  - Admin | Sync Template v2 (Flows) – all, Apps, Flows, Custom Connectors, Connectors, Model Driven Apps
-  - Admin | Sync Audit Log (Flow)
-  - Power BI Dashboard
-  - Custom Connector for Office 365 Audit Logs
-  - Power Platform Admin View (Model Driven App)
+  - [CDS Entities](#entities): Environments, Apps, Flows,...
+  - [Admin | Sync Template v2 (Flows)](#flows) – all, Apps, Flows, Custom Connectors, Connectors, Model Driven Apps
+  - [Admin | Sync Audit Log (Flow)](#flows)
+  - [Power BI Dashboard](#power-bi-report)
+  - [Power Platform Admin View (Model Driven App)](#apps)
 - **DLP Strategy and Visibility**
-  - DLP Editor (Canvas App)
-  - DLP Customizer (Canvas App)
+  - [DLP Editor (Canvas App)](#apps)
+  - [DLP Customizer (Canvas App)](#apps)
 - **Change App Ownership**
-  - Set New App Owner (Canvas App)
+  - [Set New App Owner (Canvas App)](#apps)
 
 ## Entities
 
@@ -63,11 +62,7 @@ Represents a Power Apps App.
 ### Admin \| Sync Audit Logs
 
 Uses the Office 365 Audit logs custom connector to write audit log data into the
-CDS Audit Log entity. This will generate a view of usage for Power Apps. This
-flow also comes in a separate package outside of the solution when you download
-the CoE Starter Kit because it's easier to import the package separately with
-the custom connector. Follow the instructions in the audit log section to learn
-more.
+CDS Audit Log entity. This will generate a view of usage for Power Apps. Follow the [setup instructions](setup-auditlog.md) to learn more.
 
 ### Admin \| Sync Template v2
 
@@ -119,7 +114,7 @@ groups](https://docs.microsoft.com/power-platform/admin/introduction-to-data-gro
 **Permission**: Intended to be used only by admins, Power Platform Service Admin
 or Global Admin permission required. Share with your CoE Admins.
 
-![DLP Editor](media/coedlp1.png)
+![DLP Editor](media/coe51.png)
 
 ### DLP Customizer
 
@@ -131,7 +126,7 @@ policies](https://docs.microsoft.com/business-applications-release-notes/october
 **Permission**: Intended to be used only by admins, Power Platform Service Admin
 or Global Admin permission required. Share with your CoE Admins.
 
-![DLP Customizer](media/coedlp2.png)
+![DLP Customizer](media/coe52.png)
 
 ### Set New App Owner
 
@@ -144,5 +139,18 @@ app](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
 **Permission**: Intended to be used only by admins, Power Platform Service Admin
 or Global Admin permission required. Share with your CoE Admins.
 
-![Set New App Owner](media/coeowner1.png)
+![Set New App Owner](media/coe53.png)
 
+### Power Platform Admin View
+
+A model driven app that provides an interface used to navigate the items in the CDS custom entities. It provides access to views and forms for the custom entities in the solution.
+
+![ower Platform Admin View Model Driven App](media/coe54.png)
+
+## Power BI Report
+
+Provides a wholistic view with visualizations and insights of data in the CDS entities: Environments, Power Apps Apps, Flows, Connectors, Connection References, Makers and Audit Logs.
+
+Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard, and learn how to use it under [Learn about the CoE Dashboard](power-bi.md).
+
+![CoE Power BI Dashboard](media/coe1.png)

@@ -50,7 +50,7 @@ These are the requirements for **using** the solution.
 
 Start installing the CoE Starter Kit by [Setting up the Core Components](setup-core-components.md).
 
-## Extending the Toolkit
+## Extending the Starter Kit
 
 When you are ready to extend the CoE Starter Kit with your own ideas, you will do so by making modifications to the solution components in your own unmanaged solution:
 

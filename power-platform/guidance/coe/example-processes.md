@@ -30,12 +30,10 @@ with the app owner to fully understand the situation around their apps. Especial
 **Solution:** The CoE has decided there should be an auditing process on an app-level basis, using the CDS as a data store for business justification details. They decide to use apps and flows built around the data to facilitate
 this process.
 
-The flow called **'Admin \| Compliance detail request'** is used to iterate through all the apps in the tenant and check if the apps are compliant. If the owner has not submitted a business justification and the app was indicated to have been shared broadly (in this example, with more than 20 users or at least 1 group), then the flow will send the owner an email to notify them that the
+The flow called *Admin \| Compliance detail request* is used to iterate through all the apps in the tenant and check if the apps are compliant. If the owner has not submitted a business justification and the app was indicated to have been shared broadly (in this example, with more than 20 users or at least 1 group), then the flow will send the owner an email to notify them that the
 specific app is not compliant with the company's policy. The email contains a link to the Developer Compliance Center canvas app where they can provide the business justification details in a form submission. The app also contain details about the compliance thresholds and has links to the app settings so they can configure the description and re-publish if needed.
 
 Once the maker has proven compliance by adding these details, the admin can review those details and the app itself. A business process flow in the Power Platform Admin View (model driven app) helps facilitate the auditing process.
-
-![Sample Audit Process Flow](media/coeaudit1.png)
 
 ### User Pov of the Process
 
@@ -52,12 +50,12 @@ There are 3 items tracked in the system and the user may have 1 to 3 things to d
 
 1. Support details showing business justification and other support details
 
-![User PoV of sample audit process](media/coeaudit2.png)
+![User PoV of sample audit process](media/coe55.png)
 
 **Admin:** Once applications have hit all three of these markers, they show up in the Admin Review filter view on the Model Driven Apps – Audit and Report
 Components
 
-![Admin PoV of sample audit process](media/coeaudit3.png)
+![Admin PoV of sample audit process](media/coe71.png)
 
 Admin click into the app and comes to the workflow, they go to the audit tab and investigate the work by the Maker, then mark their assessment in the admin review section.
 
@@ -65,8 +63,8 @@ Their decision to put it in the app catalog, as featured or not, will expose the
 
 The admin marks the process to the next stage for the next two steps (first shown) and finish.
 
-![Validate maker requirements](media/coegov7.png)
+![Validate maker requirements](media/coe54.png)
 
 **End users:** The maker and end users can now see the app in the App Catalog.
 
-![App catalog](media/coeaudit4.png)
+![App catalog](media/coe67.png)

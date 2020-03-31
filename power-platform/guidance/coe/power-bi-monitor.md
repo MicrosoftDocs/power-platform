@@ -36,7 +36,14 @@ tenant-wide overview of resources:
 
 The visualizations highlight environments and makers with the most resources and show a map of where your makers are based.
 
-![Overview – Power Apps and Power Automate](media/powerbi2.png)
+:::row:::
+   :::column span="":::
+      ![Overview Power Apps](media/pb2.png)
+   :::column-end:::
+   :::column span="":::
+      ![Power Power Automate](media/pb3.png)
+   :::column-end:::
+:::row-end:::
 
 ## Environments
 
@@ -55,7 +62,7 @@ The graphs visualize
 
 The filters allow you to drill down and analyse specific environment types and maker trends as well as changes over time through a filter on Environment Created date.
 
-![Environments overview](media/powerbi8.png)
+![Environments overview](media/pb4.png)
 
 ## Apps
 
@@ -76,7 +83,7 @@ groups shared with, and last launched date.
 
 Filters on this page can help you narrow down this view by app owner, app display name, environment, maker department and connector used.
 
-![Apps overview](media/powerbi3.png)
+![Apps overview](media/pb5.png)
 
 ## Flows
 
@@ -94,7 +101,7 @@ Through visuals, you will be able to see your flow creation trend, your top acti
 
 Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department and connector used.
 
-![Flow Overview](media/powerbi10.png)
+![Flow Overview](media/pb6.png)
 
 ## Custom Connector
 
@@ -106,7 +113,7 @@ and its consuming flow or app.
 
 Filters help you narrow down the view by connector creator, environment and created date.
 
-![Custom Connector Overview](media/powerbi7.png)
+![Custom Connector Overview](media/pb9.png)
 
 ## Connections
 
@@ -120,4 +127,4 @@ The filters on this page are
 
 The visuals then show you a full list of all apps, flows and makers using the tier or connector specified – as well as the number of connections for the criteria specified.
 
-![A screenshot of a social media post Description automatically generated](media/powerbi6.png)
+![Connections](media/pb8.png)
