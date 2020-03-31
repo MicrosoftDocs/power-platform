@@ -159,9 +159,10 @@ Go back to the Custom Connector to set up a connection to the Custom Connector a
 
 You should see a (200) Status returned, which means the query was successful.
 
-![A screenshot of a successful status being returned from the StartSubscription activity ](media/coe44.png)<br>
+![A screenshot of a successful status being returned from the StartSubscription activity ](media/coe44.png)
 
->[!IMPORTANT] If you do not see a (200) response, the request has failed and there is an error with your setup. The flow will therefore not work.*
+> [!IMPORTANT]
+> If you do not see a (200) response, the request has failed and there is an error with your setup. The flow will therefore not work.
 
 ## Set up the Power Automate flow
 

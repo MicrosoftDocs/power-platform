@@ -34,7 +34,7 @@ advanced and could turn into your champions; makers who use only Office
 connectors are likely at the beginning of their journey and might need a helping
 hand.
 
-![App Gurus](media/powerbi13.png)
+![App Gurus](media/pb11.png)
 
 ## Flow Gurus
 
@@ -44,7 +44,7 @@ actions or use multiple connectors are likely more advanced and could turn into
 your champions, makers use very few connectors or mostly template flows are
 likely at the beginning of their journey and might need a helping hand
 
-![Flow Gurus](media/pb11.png)
+![Flow Gurus](media/pb20.png)
 
 ## App Shares
 
