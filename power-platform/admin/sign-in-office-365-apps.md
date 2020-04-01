@@ -17,7 +17,7 @@ search.app:
 ---
 # Sign in to Dynamics 365 and Office apps
 
-There are multiple ways to sign in and access your Dynamics and Office apps.  
+There are multiple ways to sign in and access your Dynamics 365 and Office apps.  
   
 > [!TIP]
 > Admins: Be sure to share this information with your end users.  
