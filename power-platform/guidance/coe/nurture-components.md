@@ -17,13 +17,13 @@ search.app:
 ---
 # Use nurture components
 
-An essential part of establishing a CoE is nurturing your makers and an internal community. You will want to share best practices and templates and onboard new makers – the assets part of this solution can help develop a strategy for this motion.  
+An essential part of establishing a CoE is nurturing your makers and an internal community. You will want to share best practices and templates and onboard new makers – the assets in this solution can help develop a strategy for this motion.  
 
-The Nurture Components solution contains assets relevant to everyone in the organization, admins, makers as well as end users of apps and flows.
+The Nurture Components solution contains assets relevant to everyone in the organization: admins, makers, as well as end users of apps and flows.
 
-Learn how to [set up the nurture components](setup-nurture-components.md)
+Learn how to [set up the nurture components](setup-nurture-components.md).
 
-Here's a breakdown of the assets that form the core components
+Here's a breakdown of the assets that form the Nurture components:
 
 1. **Onboard new makers, provide training and share best practices**
     1. [Admin | Welcome Email (Flow)](#flows)
@@ -36,8 +36,8 @@ Here's a breakdown of the assets that form the core components
 
 ## Entities
 
-- **InADayAttendees** Represents attendees that have registered for a Training in a day course using the Training in a day registration canvas app
-- **InADayEvent** Represents training events available and created through the Training in a day management canvas app
+- **InADayAttendees** Represents attendees that have registered for a Training in a Day course using the Training in a Day registration canvas app
+- **InADayEvent** Represents avaialbe training events created through the Training in a Day management canvas app
 
 ## Flows
 
@@ -51,13 +51,13 @@ You can customize the email sent out by the Flow, by default it will look like t
 
 ### Admin \| Newsletter with Product Updates
 
-Sends a weekly email with a summary of product updates, consisting of blog posts from the Power Apps / flow / Power BI Product blogs and Power Apps Community blog  
+Sends a weekly email with a summary of product updates, consisting of blog posts from the Power Apps / Power Automate / Power BI product blogs and the Power Apps Community blog  
 
 ![Newsletter with Product Updates](media/coe64.PNG)
 
 ### Training In A Day \| Feedback Reminder
 
-Sends an email to attendees of a training in a day event on the day and requests feedback
+Sends an email to attendees of a training in a day <!---KATHY SAYS: Above we were capping Training and Day.--->event on the day and requests feedback
 
 ### Training In A Day \| Registration Confirmation
 
@@ -65,7 +65,7 @@ Sends an email to an attendee when they register for a training in a day event
 
 ### Training In A Day \| Reminder 3 days prior to event
 
-Sends an email to an attendee of a training in a day event 3 days prior to the event  
+Sends a reminder email to an attendee of a training in a day event 3 days prior to the event  
 
 :::row:::
    :::column span="":::
@@ -80,13 +80,13 @@ Sends an email to an attendee of a training in a day event 3 days prior to the e
 
 ### App Catalog
 
-A Canvas app that gives access to the entire organization to make apps more discoverable. Admins audit and validate certain apps which are graduated to the app catalog if the app is meant to be shared broadly.
+A Canvas app that gives access to the entire organization <!---KATHY SAYS: I am reading this to mean that includion in the app catalog automatically enables app sharing for whole org; if you only meant that the whole org can see the app to know it exists, maybe slight revision?.--->to make apps more discoverable. Admins can promote an app to the app catalog if the app meets admin requirements and is meant to be shared broadly.
 
 When you first open the App Catalog, you will not see any apps there at first. There is a field on the Power Apps App entity called *In App Catalog*, which is a two-option set type field (aka Boolean). If the value is set to *Yes*, the app will show up in the catalog. Following the [Compliance Business Process](example-processes.md) in the Admin app will allow you to publish an app to the App Catalog.
 
 **Permission**: Once you are using this process, the App Catalog can be shared with the entire organization.
 
-**Pre-Requisite**: This app uses CDS, a Premium license is therefore required.
+**Pre-Requisite**: This app uses CDS; a Premium license is therefore required. <!---KATHY SAYS: For every app user, aka the entire organization?--->
 
 ![App Catalog](media/coe67.png)
 
@@ -98,32 +98,87 @@ Canvas app that allows CoE Admins to share app and component templates as well a
 
 **Pre-Requisite**: This app is using SharePoint in the background and requires a SharePoint site to be configured. This is described under [setup nurture components](setup-nurture-components.md)).
 
-This app cannot be tested out in the managed solution, only once you've imported it into your extended unmanaged solution.
-This is due to some limitations in the environment variables and data sources in the canvas apps.
+
+This app cannot be tested out in the managed solution; it can only be tested and used once you've [imported it into your extended unmanaged solution](modify-components.md)). This is due to some limitations in the environment variables and data sources in the canvas apps.
+
 
 Learn how to set up the template catalog: [Extend, customize and modify components](modify-components.md).
 
-![Template Catalog](media/coe68.png)
 
+You need to point the app to the SharePoint Library by opening the Template Catalog app and editing the SharePoint connection to point to your new Document library:
+
+1. Browse to your extended solution.
+1. Select **Template Catalog** and then select **Edit**.
+1. Select **File \> Save As** to create your own copy so that updates to the toolkit do not erase your changes.
+1. Give it a name that will allow you to recognize this as your own copy.
+1. Select the back arrow to return to the edit canvas.
+1. Select **data** on the left and remove the reference to the SharePoint Doc Lib shown.<Br> ![Template Catalog Setup SharePoint connection](media/coetemplate1.png)
+
+1. In the search bar under **Data sources**, type **SharePoint**, and select the SharePoint data source shown, then **Add a connection**. <br>![Template Catalog Setup SharePoint connection](media/coetemplate2.png)
+
+1. Choose to connect directly, enter the URL of the library and choose **Connect**.
+
+1. Select the **AppTemplates** library and connect.
+
+1. In the Tree View on the left, select **Screen1** and then **HomeScreen** to repopulate the gallery. <br>![Template Catalog Setup](media/coetemplate3.png)
+
+1. If you see any additional errors, its likely due to naming convention issues. If you see something like this, for example, fix up the name and you will be done.<!---KATHY SAYS: Jim may have some thoughts on how/whether to attempt to make accessible.---><br> ![Template Catalog Fix Connections](media/coetemplate4.png)
+
+Your template catalog is now ready.
+![Template Catalog](media/coetemplate5.png)
+
+#### Controls Provided
+
+There are 3 component controls in the solution, as described below. The demo app included in the Template Catalog list shows all three in action.
+
+All three components provide a Style Property that allows you to set default look and feel for the components; otherwise they default to the app theme.
+
+![Style Property of Templates](media/coetemplate6.png)
+
+*Dual Range Slider*: This control lets users set <!---KATHY SAYS: yes? I guess it depends on who you mean the user is. Do you mean the app maker gets or the end user sets?--->two values from an input range. The values can then be used to filter galleries or define limits.
+
+![Dual Range Slider](media/coetemplate7a.jpg)
+
+*Calendar Control*: Similar to the Dual Range Slider, this control lets user set a date, or a date range. The date(s) can then be used to filter galleries
+or define limits.
+
+![Calendar Control](media/coetemplate7c.png)
+
+*Header with Navigation Control:* This control allows makers to have their header and navigation pre-built for them. It helps you to streamline the look and feel across your organization.
+
+The app maker must specify, in the *MenuList* property, the Screen Names for
+navigation.
+
+```
+Table(
+    {TextShown: "Home Screen", Screen: App.ActiveScreen},
+    {TextShown: "Search", Screen: App.ActiveScreen},
+    {TextShown: "Contact", Screen: App.ActiveScreen})
+```
+
+![Header with Navigation Control](media/coetemplate7b.png)
 
 #### Training In A Day – Management
 
-If you are planning to run internal App / Flow / Custom in a day event, this
-canvas app will enable you to create and manage events
+If you are planning to run an internal training in a day event (such as App in a Day), this
+canvas app will enable you to create and manage events.
 
 **Permission**: Share with CoE Admins or the owners of your internal training
 events.
 
-**Pre-Requisite**: This app uses CDS, a Premium license is therefore required.
+**Pre-Requisite**: This app uses CDS; a Premium license is therefore required. <!---KATHY SAYS: For the admins who are using it?--->
 
-![Training in a day management app ](media/coe69.png)
+
+![Training in a Day management app ](media/coetraining2.png)
+
 
 #### Training In A Day – Registration
 
-If you are planning to run internal App / Flow / Custom in a day event, this canvas app will enable your end users to register for upcoming events
+If you are planning to run training in a day event (such as App in a Day, this canvas app will enable your end users to register for upcoming events.
 
 **Permission**: Once you are running internal training events, share with everyone in the organization.
 
-**Pre-Requisite**: This app uses CDS, a Premium license is therefore required.
+**Pre-Requisite**: This app uses CDS; a Premium license is therefore required. <!---KATHY SAYS: For everyone in your org?--->
 
-![Training in a da registration app](media/coe70.png)
+![Training in a Day registration app](media/coetraining1.png)
+
