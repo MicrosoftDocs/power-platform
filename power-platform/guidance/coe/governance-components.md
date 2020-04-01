@@ -17,9 +17,9 @@ search.app:
 ---
 # Use Governance components
 
-Once you are familiar with your environments and resources, you might start thinking about audit and compliance processes for your apps. You might want to gather additional information about your apps from your makers, or you might want to audit specific connectors or app usage. The <!---KATHY SAYS: Not sure what this phrase means, from here:--->apps and flows in this solution<!---KATHY SAYS: ...to here. Did I guess right?---> help you get started.  
+Once you are familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or you might want to audit specific connectors or app usage.
 
-The Audit and Report Components solution contains assets relevant to admins and makers.
+The Governance Components solution contains assets relevant to admins and makers.
 
 Learn how to [set up the governance components](setup-governance-components.md).
 
@@ -51,7 +51,7 @@ It sends an email to users who have Power Apps apps in the tenant that are not c
 
 - The app is shared with \> 20 Users or at least 1 group and the business justification details have not been provided.
 
-- The app has business justification details provided but has not been published in 60 days <!---KATHY SAYS: I don't understand why not being published in (last?) 60 days is important? Maybe I'm missing some nuance?--->or is missing a description.
+- The app has business justification details provided but has not been published in 60 days (so is likely not on the latest version of Power Apps) or is missing a description.
 
 - The app has business justification details provided and has indicated high business impact and has not submitted a mitigation plan to the attachments field.
 
@@ -71,15 +71,15 @@ This flow starts the approval process and writes the Approval Task to the *Archi
 
 Monitors Approval responses of the *App Archive and Clean Up – Start Approval* flow and, if approved, archives the app file to SharePoint.
 
-**Pre-Requisite**: Create a SharePoint document library to store the archived apps and configure this in the flow <!---KATHY SAYS: In the flow or in the Settings Configuration entity?--->
+**Pre-Requisite**: Create a SharePoint document library to store the archived apps and configure this in the Environment Variables.
 
-**Update**: By default, this flow will archive the application but not remove it or its permission from the environment<!---KATHY SAYS: Then what exactly does archive mean?--->. Update this flow based on your requirements, to delete the app from the environment or remove app permissions. 
+**Customize**: By default, this flow will archive the application but not remove it or its permission from the environment, so that we do not inadvertently remove apps from your tenant. Update this flow based on your requirements, to delete the app from the environment or remove app permissions.
 
 ### SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
 
 Checks if any Flows are using specific connectors, notifies the Flow maker and disables the Flow. The admin will receive a report.
 
-**Update**: On setup, the array provided is blank so that we do not inadvertently disable flows in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.  
+**Customize**: On setup, the array provided is blank so that we do not inadvertently disable flows in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.  
 
 ![Find and disable flows that leverage Certain connectors](media/coe59.png)
 
@@ -89,7 +89,7 @@ Checks if any Flows are using specific connectors, notifies the Flow maker and d
 
 Checks for apps that leverage certain connectors, notifies the app maker, and shares the app with the admin security group.
 
-**Update**: On setup, the array provided is blank so that we do not inadvertently add owners to apps with connectors in your tenant. You must specify what connectors you want to audit by editing the Flow and updating the *disableConnectorArray* as shown for the connectors of your choice.  
+**Customize**: On setup, the array provided is blank so that we do not inadvertently add owners to apps with connectors in your tenant. You must specify what connectors you want to audit by editing the Flow and updating the *disableConnectorArray* as shown for the connectors of your choice.  
 
 ## Apps
 
@@ -106,7 +106,7 @@ flow to add users to a Security Group and then share this app with the Security 
 
 **Pre-Requisite**: This app uses CDS; a Premium license is therefore required for each app user.
 
-**Update**: Verify that the Support Details form matches your requirements, and update if necessary.
+**Customize**: Verify that the Support Details form matches your requirements, and update if necessary.
 
 :::row:::
    :::column span="":::
@@ -121,12 +121,12 @@ flow to add users to a Security Group and then share this app with the Security 
 
 ### App Archive and Clean Up View
 
-A model-driven app that provides an interface to canvas apps that have been highlighted for archiving, and their approval status.
+A model driven app that provides an interface to canvas apps that have been highlighted for archiving, and their approval status.
 
-This Model-Driven app <!---KATHY SAYS: Not sure whether the capitalization in this sentence or the preceding sentence is right.--->works in conjunction with other apps and flows in the CoE toolkit to facilitate the process described in the following section: [PowerApps
+This model driven app works in conjunction with other apps and flows in the CoE toolkit to facilitate the process described in the following section: [PowerApps
 App Auditing Process](example-processes.md)
 
-**Update**<!---KATHY SAYS: You know, where you have "update" (in many pages, not just this one), I always take it to mean that you're announcing an update. I wonder if "Modify" or "Customize" would be a better term?--->: Instead of using this model-driven app, you could modify the Power Platform Admin View app to show the *Archive Approval* entity.
+**Customize**: Instead of using this model-driven app, you could modify the Power Platform Admin View app to show the *Archive Approval* entity.
 
 ![App Archive and Clean Up View](media/coe61.png)
 

@@ -1,5 +1,5 @@
 ---
-title: "Set up audit report components | MicrosoftDocs"
+title: "Set up governance components | MicrosoftDocs"
 description: 
 author: jimholtz
 manager: kvivek
@@ -16,8 +16,8 @@ search.app:
   - Powerplatform
 ---
 
-# Set up audit report components
-<!---KATHY SAYS: The TOC has a different name. You're probably already on top of that, but this is a reminder.--->
+# Set up governance components
+
 There are multiple components provided in this starter kit; each will require
 some configuration to install. The installation instructions have been segmented
 based on the set of components that should be grouped and installed together,
@@ -37,7 +37,7 @@ to be installed first.
 
 ## Create a SharePoint document library
 
-The *Archive and Clean Up* <!---KATHY SAYS: I am recommending using italics (or you could use bold) because these flow names can get very long and it's really hard to understand wht is a flow name and what is the sentence.--->flows archive un-needed <!---KATHY SAYS: While this word wasn't technically necessary, I think it helps with understanding the sentence; otherwise "archive" could sound like an adjective modifiying "apps".--->apps to a SharePoint library. If you are intending to make use of those flows, a SharePoint site and document library
+The *Archive and Clean Up* flows archive un-needed apps to a SharePoint library. If you are intending to make use of those flows, a SharePoint site and document library
 need to be configured first.
 
 1. Follow the steps described under [Create a team site in
@@ -70,11 +70,12 @@ Variables are used to store application and flow configuration data. This means,
 
 All flows in this solution depend on all Environment Variables being configured.
 
-1. You will see an error at the top<!---KATHY SAYS: At the top of what? You just sent me over to Azure before this, so I need to be re-oriented to where I am in Power Apps.--->, notifying you that Environment Variables need to be configured.  
+1. You will see an error at the top of the Power Apps Maker Portal, notifying you that Environment Variables need to be configured.  
     Note: For the Audit and Report Components solution, it will be **4**
     environment variables that need to be configured. ![Environment variables need to be updated](media/coe7.png)
 
 1. Select  **See Environment Variables** to set the values.
+
 
 | Name | Default Value |
 |------|---------------|
@@ -85,7 +86,7 @@ All flows in this solution depend on all Environment Variables being configured.
 
 ## Initialize Flow Approval Entities in your Environment
 
-The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Archive and Clean Up – Check Approval* flows use the built-in<!---KATHY SAYS: "in-built" is a British phrase, perhaps.---> Approval actions of Power Automate. In the background, the built-in Approval actions use CDS.<!---KATHY SAYS: It's not clear to my whether the previous sentence is relevant?---> If you have installed the solution in a new environment, the Approval entities must be initialized. The easiest way to do this is to create a dummy approval flow.
+The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Archive and Clean Up – Check Approval* flows use the built-in Approval actions of Power Automate. In the background, the built-in Approval actions use CDS. If you have installed the solution in a new environment, the Approval entities must be initialized. The easiest way to do this is to create a dummy approval flow.
 
 1. Navigate to [flow.microsoft.com](https://flow.microsoft.com).
 
@@ -106,7 +107,6 @@ The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Arc
 1. This flow can take up to ten minutes to run initially. Once run, you can delete the flow as it will not be needed anymore.
 
 1. Select **Solutions** on the left side, and you should now see two new  Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded. <br>![Flow Approval solutions](media/coe17.png)
-
 
 ## Activate the Flows
 
