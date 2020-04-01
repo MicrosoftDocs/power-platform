@@ -112,7 +112,7 @@ events.
 
 **Pre-Requisite**: This app uses CDS; a Premium license is therefore required for the admins who are using it.
 
-![Training in a Day management app ](media/coetraining2.png)
+![Training in a Day management app ](media/coe69.png)
 
 #### Training In A Day – Registration
 
@@ -122,4 +122,4 @@ If you are planning to run training in a day event (such as App in a Day, this c
 
 **Pre-Requisite**: This app uses CDS; a Premium license is therefore required for everyone in your org.
 
-![Training in a Day registration app](media/coetraining1.png)
+![Training in a Day registration app](media/coe70.png)

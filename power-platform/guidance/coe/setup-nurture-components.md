@@ -15,6 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
+
 # Set up nurture components
 
 There are multiple components provided in this starter kit; each will require
@@ -51,11 +52,7 @@ All flows in this solution depend on all Environment Variables being configured.
 
 | Name | Default Value |
 |------|---------------|
-<<<<<<< Updated upstream
 | Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 Group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the Group ID here.|
-=======
-| Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 Group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the Group ID here. |
->>>>>>> Stashed changes
 | Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the Form URL (<https://forms.office.com/>...) here.                                                |
 
 ## Activate the Flows
@@ -84,22 +81,6 @@ The Template Catalog depends upon this library.
 
 1. Create a document library to store templates on a SharePoint site of your choice. We recommend having a dedicated Power Apps CoE SharePoint site. Ensure everyone has read-only and download access to this library.
 
-<<<<<<< Updated upstream
-1. Name the library **AppTemplates** to make conversion of the app easy, and add the meta-data columns shown below with precise naming to your library. See [create a managed metadata column](<https://support.office.com/article/create-a-managed-metadata-column-c2a06717-8105-4aea-890d-3082853ab7b7>) for assistance.
-
-  | Column  Name | Type |
-  | ----- | ---- |
-  | Title  | Single line of text |
-  | Description  | Multiple line of text |
-  | Featured  |Yes/No |
-  | Category  | Choice |
-  | Template Type  | Choice |
-  | Approved  | Yes/No |
-
-1. The Template Type column should have the following Choice options: App, Component, Document
-
-1. Upload templates you want to share with your makers, for example your brand guidelines, logos, app and flow samples, to this document library. They will show up in the Template Catalog canvas app for makers to view and download.
-=======
 1. Name the library **AppTemplates** to make conversion of the app easy, and add the meta-data columns shown below with precise naming to your library.
 
 | Column Name | Type
@@ -115,7 +96,6 @@ The Template Catalog depends upon this library.
 1. The Template Type column should have the following Choice options: **App, Flow, Component, Document**
 
 1. If you already have existing templates that you would like to share with your makers, for example template apps, brand guidelines, app and flow samples, upload them to the TemplateApps Document Library so they show up in the Template Catalog app.
->>>>>>> Stashed changes
 
 ## Share apps with your organization
 
