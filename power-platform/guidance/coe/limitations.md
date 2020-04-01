@@ -38,13 +38,13 @@ The CDS connector might experience some throttling limits if the tenant has a lo
     1. Open Admin \| Sync Template v2 to Edit
     1. Expand the step: Get Environments and store them in the CoE CDS Entity
     1. Expand the step: **Apply to each Environment**
-    1. Go to settings for each call to the CDS and configure the timeout / retry settings <br> ![Configure retry policy](media/coelimit1.png)
+    1. Go to settings for each call to the CDS and configure the timeout / retry settings <br> ![Configure retry policy](media/coe72.png)
 
 1. **Configure concurrency in Foreach**
     1. Reduce concurrency in Foreach loops to reduce simultaneous calls
     1. Open Admin \| Sync Template v2 to Edit
     1. Expand the step: **Get Environments and store them in the CoE CDS Entity**
-    1. Go to Settings for the **Apply to each Environment** step ![Configure concurrency in Foreach](media/coelimit2.png)
+    1. Go to Settings for the **Apply to each Environment** step <br>![Configure concurrency in Foreach](media/coe73.png)
     1. Reduce the degree of parallelism here.
 
 ## DLP editor

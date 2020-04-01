@@ -51,7 +51,7 @@ All flows in this solution depend on all Environment Variables being configured.
 
 | Name | Default Value |
 |------|---------------|
-| Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 Group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the Group ID here. <!---KATHY SAYS: Will it be super obvious to readers where to get the group id?--->|
+| Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 Group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the Group ID here.|
 | Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the Form URL (<https://forms.office.com/>...) here.                                                |
 
 ## Activate the Flows
@@ -80,19 +80,29 @@ The Template Catalog depends upon this library.
 
 1. Create a document library to store templates on a SharePoint site of your choice. We recommend having a dedicated Power Apps CoE SharePoint site. Ensure everyone has read-only and download access to this library.
 
-1. Name the library **AppTemplates** to make conversion of the app easy, and add the meta-data columns shown below with precise naming to your library. <!---KATHY SAYS: You will need to either type these out (ideally) or set alt text on the image, as othrewise it isn't accessible to screen-readers. Is it important that the names not be localized? If so, Jim can tell you how to set a "no loc" on the relevant strings.--->See [create a managed metadata column](<https://support.office.com/article/create-a-managed-metadata-column-c2a06717-8105-4aea-890d-3082853ab7b7>) for assistance.![SharePoint column setup for Template App](media/coesetup_sharepointcolumns.png)
-1. The Template Type column should have the following Choice options ![SharePoint column setup for Template App](media/coe18.png)<!---KATHY SAYS: Same accessibility note as above.--->
+1. Name the library **AppTemplates** to make conversion of the app easy, and add the meta-data columns shown below with precise naming to your library. See [create a managed metadata column](<https://support.office.com/article/create-a-managed-metadata-column-c2a06717-8105-4aea-890d-3082853ab7b7>) for assistance.
 
-1. Upload your templates (for example brand guidelines, logos, app and flow samples) so that there is content within the application. <!---KATHY SAYS: I'm a little bit confused. I also don't see anyplace where the actual template (or link to the template) lives; this seems to be just metadata?--->
+  | Column  Name | Type |
+  | ----- | ---- |
+  | Title  | Single line of text |
+  | Description  | Multiple line of text |
+  | Featured  |Yes/No |
+  | Category  | Choice |
+  | Template Type  | Choice |
+  | Approved  | Yes/No |
+
+1. The Template Type column should have the following Choice options: App, Component, Document
+
+1. Upload templates you want to share with your makers, for example your brand guidelines, logos, app and flow samples, to this document library. They will show up in the Template Catalog canvas app for makers to view and download.
 
 ## Share apps with your organization
 
-The Nurture Components solution contains four apps. Once you are ready to adopt the CoE, share these apps as indicated below. <!---KATHY SAYS: Not sure why these are numbered.--->
+The Nurture Components solution contains four apps. Once you are ready to adopt the CoE, share these apps as indicated below.
 
-1. App Catalog – to be shared with your entire organization
+- App Catalog – to be shared with your entire organization
 
-2. Template Catalog – to be shared with your makers or entire organization
+- Template Catalog – to be shared with your makers or entire organization
 
-3. Training in a day Management – to be shared with admins only
+- Training in a day Management – to be shared with admins only
 
-4. Training in a day Registration – to be shared with entire organization
+- Training in a day Registration – to be shared with entire organization

@@ -26,13 +26,13 @@ Learn how to [set up the nurture components](setup-nurture-components.md).
 Here's a breakdown of the assets that form the Nurture components:
 
 1. **Onboard new makers, provide training and share best practices**
-    1. Admin | Welcome Email (Flow)
-    1. Template Catalog (Canvas App)
-    1. Admin | Newsletter with Product Updates (Flow)
-    1. Training in a day Management and Registration (Canvas Apps)
-    1. Training in a day Feedback Reminder, Registration Confirmation and Reminder (Flow)
+    1. [Admin | Welcome Email (Flow)](#flows)
+    1. [Template Catalog (Canvas App)](#apps)
+    1. [Admin | Newsletter with Product Updates (Flow)](#flows)
+    1. [Training in a day Management and Registration (Canvas Apps)](#apps)
+    1. [Training in a day Feedback Reminder, Registration Confirmation and Reminder (Flow)](#flows)
 1. **Encourage Adoption**
-    1. App Catalog (Canvas App)
+    1. [App Catalog (Canvas App)](#apps)
 
 ## Entities
 
@@ -47,13 +47,13 @@ Sends an email to a user who created a Power App, Flow, Custom Connector or Envi
 
 You can customize the email sent out by the Flow, by default it will look like the following:
 
-![Welcome email](media/coeoverview3.PNG)
+![Welcome email](media/coe5.PNG)
 
 ### Admin \| Newsletter with Product Updates
 
 Sends a weekly email with a summary of product updates, consisting of blog posts from the Power Apps / Power Automate / Power BI product blogs and the Power Apps Community blog  
 
-![Newsletter with Product Updates](media/coenurture1.PNG)
+![Newsletter with Product Updates](media/coe64.PNG)
 
 ### Training In A Day \| Feedback Reminder
 
@@ -67,7 +67,14 @@ Sends an email to an attendee when they register for a training in a day event
 
 Sends a reminder email to an attendee of a training in a day event 3 days prior to the event  
 
-![Training In A Day Reminder 3 days prior to event email](media/coenurture2.png)
+:::row:::
+   :::column span="":::
+      ![Training In A Day Reminder Confirmation](media/coe66.png)
+   :::column-end:::
+   :::column span="":::
+      ![Training In A Day Feedback Request](media/coe65.png)
+   :::column-end:::
+:::row-end:::
 
 ## Apps
 
@@ -81,7 +88,7 @@ When you first open the App Catalog, you will not see any apps there at first. T
 
 **Pre-Requisite**: This app uses CDS; a Premium license is therefore required. <!---KATHY SAYS: For every app user, aka the entire organization?--->
 
-![App Catalog](media/coeoverview2.png)
+![App Catalog](media/coe67.png)
 
 ### Template Catalog
 
@@ -91,9 +98,12 @@ Canvas app that allows CoE Admins to share app and component templates as well a
 
 **Pre-Requisite**: This app is using SharePoint in the background and requires a SharePoint site to be configured. This is described under [setup nurture components](setup-nurture-components.md)).
 
+
 This app cannot be tested out in the managed solution; it can only be tested and used once you've [imported it into your extended unmanaged solution](modify-components.md)). This is due to some limitations in the environment variables and data sources in the canvas apps.
 
-#### Power Apps setup
+
+Learn how to set up the template catalog: [Extend, customize and modify components](modify-components.md).
+
 
 You need to point the app to the SharePoint Library by opening the Template Catalog app and editing the SharePoint connection to point to your new Document library:
 
@@ -158,7 +168,9 @@ events.
 
 **Pre-Requisite**: This app uses CDS; a Premium license is therefore required. <!---KATHY SAYS: For the admins who are using it?--->
 
+
 ![Training in a Day management app ](media/coetraining2.png)
+
 
 #### Training In A Day – Registration
 
@@ -169,3 +181,4 @@ If you are planning to run training in a day event (such as App in a Day, this c
 **Pre-Requisite**: This app uses CDS; a Premium license is therefore required. <!---KATHY SAYS: For everyone in your org?--->
 
 ![Training in a Day registration app](media/coetraining1.png)
+
