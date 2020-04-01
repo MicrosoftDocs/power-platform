@@ -35,10 +35,10 @@
         href: modify-components.md
   - name: How to use the CoE Starter Kit
     items:
-      - name: Learn about the CoE Dashboard     
-        href: power-bi.md
       - name: CoE Dashboard Explained
         items:
+        - name: Overview  
+          href: power-bi.md
         - name: Monitor
           href: power-bi-monitor.md
         - name: Govern
