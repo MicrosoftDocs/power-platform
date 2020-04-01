@@ -17,11 +17,11 @@ search.app:
 ---
 # Set up Power BI Dashboard
 
-The Power BI Dashboard provides a holistic view with visualizations and insights into resources in your tenant: Environments, Power Apps apps, Power Automate flows, Connectors, Connection References, Makers and Audit Logs. Telemetry from the Audit Log is stored from the moment you set up the CoE Starter Kit, so over time you can look back and identify trends for longer than 28 days.<!---KATHY SAYS: I know there was somewhere (blog?) you said that the 28 days was what you get from Power Apps without the audit log solution, but in this section since you don't explain it here, it seems like out of the blue.--->
+The Power BI Dashboard provides a holistic view with visualizations and insights into resources in your tenant: Environments, Power Apps apps, Power Automate flows, Connectors, Connection References, Makers and Audit Logs. Telemetry from the Audit Log is stored from the moment you set up the CoE Starter Kit, so over time you can look back and identify trends.
 
 ![CoE Starter Kit Power BI Dashboard](media/coe1.PNG)
 
-You can either get the Power BI Dashboard <!---KATHY SAYS: Do you mean specifically the CoE one or is this just generic PBI?--->from App Source or download the Power BI file and configure it in Power BI Desktop, which would allow you to make changes to it. Both options are described below.
+You can either get the CoE Power BI Dashboard from App Source or download the Power BI file and configure it in Power BI Desktop, which would allow you to make changes to it. Both options are described below - and both require you to get the Environment URL first.
 
 ## Get the Environment URL
 
@@ -32,8 +32,7 @@ You need the environment URL of the Power Platform environment the CoE Starter K
 1. Copy the organization URL in the details window.  <br>![A screenshot of the Power Platform Admin Center, with the Environment URL highlighted](media/coe19.png)
 1. If the URL is cut off, you can see the full URL by selecting **See all \> Environment URL**. ![A screenshot of the Environment Settings available in the Power Platform Admin Center](media/coe20.png)
 
-
-### Option 1: Get the Power BI Dashboard from App source
+## Option 1: Get the Power BI Dashboard from App source
 
 > [!NOTE]
 > You cannot deploy from AppSource if you are deploying to the government cloud (GCC). If you are
@@ -55,19 +54,17 @@ using GCC, please use the [Configure the Power BI Dashboard using the pbix file]
 
 1. Copy and paste the URL you retrieved in *Step 1 Get the Environment URL* (section above) under **EnvironmentUrl** and select **Next** ![Connect to New Power Platform CoE Starter Kit Tenant, Step 8](media/coe23.png)
 
-
 1. Confirm your login to finish setting up the app.
 
-The Dashboard app will appear under the **Reports** tab of your workspace and can be opened from there. 
-
+The Dashboard app will appear under the **Reports** tab of your workspace and can be opened from there.
 
 ## Option 2: Configure the Power BI Dashboard using the pbix file
 
 You can also configure and modify the Power BI Dashboard by working directly with the Power BI (pbix) file and the Power BI Desktop client. This gives you more flexibility in terms of modifying the dashboard to your own branding and include/exclude pages or visuals you want to see in the dashboard.
 
-1. Open the **PowerPlatformAdminDashboard.pbix** file, which can be found in the CoE Starter Kit pack you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload)
+1. Open the **PowerPlatformAdminDashboard.pbix** file with Power BI Desktop client, which can be found in the CoE Starter Kit pack you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload)
 
-1. Sign in <!---KATHY SAYS: To what? (Where?)--->with your account that has access to the entities.
+1. Sign in to the Power BI Desktop Client with your organization account that has access to the environment you have installed the CoE Starter Kit in.
 
 1. Go to **Transform Data** in the **Home** ribbon.<br> ![Edit Queries in Power BI Desktop](media/coe25.png)
 

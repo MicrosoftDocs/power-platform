@@ -27,7 +27,7 @@ The Core Components solution contains assets relevant only to admins.
 This is the first setup step of the installation process and is required for every other component in the starter kit to work.
 
 1. Download the CoE starter kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)) and extract the zip file.
-1. Create an Environment in which to set up the CoE. <!---KATHY SAYS: It feels to me like you might need to give some guidance on why this should be its own environment (or, maybe that is obvious to admins?).--->Please see [Environment Strategy](https://powerapps.microsoft.com/blog/establishing-an-environment-strategy-for-microsoft-power-platform/) and [ALM](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management) for more information on how to decide on the best enviornment strategy for your organization.
+1. Create an Environment in which to set up the CoE. Please see [Environment Strategy](https://powerapps.microsoft.com/blog/establishing-an-environment-strategy-for-microsoft-power-platform/) and [ALM](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management) for more information on how to decide on the best enviornment strategy for your organization.
    1. Go to [aka.ms/ppac](https://admin.powerplatform.microsoft.com/).
    1. Select Environments, **+ New**, and then fill in a name, type and purpose.
    1. Select **yes** for creating the database, and select **Next**.
@@ -40,7 +40,7 @@ This is the first setup step of the installation process and is required for eve
 1. Select **Import**. A pop-up window will appear (make sure to disable the pop-up blocker in your browser and try again if nothing happens when selecting the Import button).
 1. In the pop-up window, select **Choose File**.
 1. Choose the **Center Of Excellence Core Components** solution from the file explorer (CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip).
-1. When the compressed (.zip) file has been loaded, select **Next**. 
+1. When the compressed (.zip) file has been loaded, select **Next**.
 1. Review, select **Next**, then select **Import**. (This can take some time.)
 1. When the import succeeds, the list of the components that were imported is displayed.
 1. Close out of the logs dialog.
@@ -53,7 +53,7 @@ This is the first setup step of the installation process and is required for eve
 
 This section explains how to enter data in the CoE Settings entity, which is in the Common Data Service you instantiated in step 2 above.
 
-This entity will hold a single row of information <!---KATHY SAYS: This is a nice helpful detail.--->which contains your logo, brand colors and so on, which different applications will reference.
+This entity will hold a single row of information which contains your logo, brand colors and so on, which different applications will reference.
 
 The following assets depend on the CoE Settings entity:
 
@@ -69,7 +69,7 @@ The following assets depend on the CoE Settings entity:
 1. In the left navigation, select **Configure**.
 1. In the Configure view screen, select **+ New** to create a new record.
 1. Provide values as per below table.
-1. Save by selecting Ctrl + S*<!---KATHY SAYS: Is the asterisk intentional?---> or by selecting the **Save** button in the bottom right corner.
+1. Save by selecting **Ctrl + S** or by selecting the **Save** button in the bottom right corner.
 1. Do not add more records to the CoE Settings table; there is no need. The dependent components will always get values from the first record.
 
 | Name | Setting Value |
@@ -77,11 +77,11 @@ The following assets depend on the CoE Settings entity:
 | Brand Logo | Link to your logo as an image file |
 | Brand Primary Color          | HEX Value of your primary brand color (\#cccccc)
 | Brand Secondary Color        | HEX Value of your secondary brand color (\#dddddd)                                                    |
-| Email End User Support       | Email Address for your Helpdesk or EUC <!---KATHY SAYS: EUC is a new term for me. Is this commonly used?--->Support Team                                                   |
+| Email End User Support       | Email Address for your Helpdesk or End User Computing Support Team                                                   |
 | Email Maker Support          | Email Address for your Power Platform Maker Support Team                                              |
-| Link to Community Channel    | Link to your internal Power Platform Community (<!---KATHY SAYS: Are these just examples or does it have to be one of these? If just an example, I would but "e.g."--->Yammer, Teams)                                        |
+| Link to Community Channel    | Link to your internal Power Platform Community (e.g. Yammer, Teams)                                        |
 Link to Learning Resource    | Link to internal Power Platform learning resources, or you could link to aka.ms/PowerUp    |
-Link to Policy Documentation | Link to internal Power Platform policies; these could be hosted in a Teams Channel or SharePoint site <!---KATHY SAYS: "for example"?---> |
+Link to Policy Documentation | Link to internal Power Platform policies; for example a Teams Channel or SharePoint site |
 Version                      | Set to 1.0                                                                                            |
 Company Name                 | Your company name as it will appear in Dashboards |
 
@@ -91,7 +91,7 @@ The Environment variables are used to store application and flow configuration d
 
 All of the Sync flows depend on all Environment Variables being configured.
 
-After importing the solution, you will see an error at the top, notifying you that Environment Variables need to be configured. For the Core Components solution, **3** environment variables need to be configured.<!---KATHY SAYS: This made sense to me until the below graphic, which shows 9. ???--->
+After importing the solution, you will see an error at the top, notifying you that Environment Variables need to be configured. For the Core Components solution, **3** environment variables need to be configured. The below screenshot shows an example of what the error message will look like.
 
 :::image type="content" source="media/coe7.png" alt-text="Prompt to setup Environment Variables" border="true":::
 
@@ -106,7 +106,7 @@ After importing the solution, you will see an error at the top, notifying you th
 
 ## Activate the Sync Template Flows
 
-The flows with the prefix *Sync* are required for populating data in the *resource* related CDS entities (Environments, Power Apps apps<!---KATHY SAYS: I see you might have to set his back the way it was. I worry about the old branding of PowerApps.--->, Flows, Connectors and Makers).
+The flows with the prefix *Sync* are required for populating data in the *resource* related CDS entities (environments, apps, flows, connectors and makers).
 
 The *Sync flows* are used to write data from the admin connectors into the CDS
 entities. None of the other components will work if the Sync flows aren't
@@ -119,8 +119,8 @@ Required flows to sync data to the resource entities:
     Description: This flow syncs environment details to the CoE CDS Entity
     *Environments*
 
-1. **Admin \| Sync Template v2 (Apps, Custom Connectors, Flows, Model Driven
-    Apps)**  
+1. **Admin \| Sync Template v2 (apps, custom connectors, flows, model driven
+    apps)**  
     Flow type: Automated  
     Description: These flows rely on the Admin \| Sync Template v2 and are
     triggered automatically when environment details are created or modified in
@@ -151,24 +151,20 @@ each action need to be individually configured.
 
 1. Go to the *Center of Excellence - Core Components* solution.
 
-    1. Navigate to [make.powerapps.com
-    ](https://make.powerapps.com) and set the current Environment to the same Environment where the Center of Excellence solution is installed.
+    1. Navigate to [make.powerapps.com](https://make.powerapps.com) and set the current Environment to the same Environment where the Center of Excellence solution is installed.
 
     1. In the left navigation, select **Solutions**, then select the **Center of Excellence - Core Components** solution.
 
-
 1. Select the flow name (all flows starting with *Admin | Sync Template v2*) to get to the Flow details screen, then select **Edit**. <br>![Sync Template Flows](media/coe9.PNG)
-
 
 1. The flow will open in the maker studio. For each action that requires a connection, there will be a warning icon on the right side of the action. This indicates the need for a connection to be selected.<Br> ![Setup connections in the Sync Template Flow](media/coe10.png)
   
 1. Update all the connections. If, when you hit save, you see an error message, that means that there are more connections that still need made, likely hidden in conditional nodes.
+    - Some connections will need to be created if not already available.
 
-  - Some connections will need to be created if not already available.
+    - Some actions might be hidden within other built in actions, such as a condition or scope. Expand these actions to find the hidden ones.
 
-  - Some actions might be hidden within other built in actions, such as a condition or scope. Expand these actions to find the hidden ones.
-
-  - We suggest you start at the top of the flow and work down, opening each step as you go down, step by step until you find them all.
+    - We suggest you start at the top of the flow and work down, opening each step as you go down, step by step until you find them all.
 
 1. Once all actions have a connection, **save** the flow.
 
@@ -184,12 +180,12 @@ each action need to be individually configured.
 
     - Select  **Run** in the Ribbon.
 
-### Option 2: Save a copy of the Flow outside of the solution
+### Option 2: Save a copy of the flows outside of the solution
 
-If you save a copy of the flow from the solution, the connections are created
+If you save a copy of the flows from the solution, the connections are created
 automatically for you. The drawback of this method is that if you copy the
-flow from the solution, the copy flow does not get updated when you update the
-solution package with newer versions. You will have to import the new solution and copy the flow again to upgrade it to the latest version. <!---KATHY SAYS: I found it somewhat awkward to refer to flow as singular when you need to do this for multiple flows. By using singular, you seem to e indicating there might be a reason to do it one way for some flows and the other way for others. If you didn't intend that, then it seems like both option 1 and option 2 introductions should refer to the flows in the plural.--->
+flows from the solution, the copied flows do not get updated when you update the
+solution package with newer versions. You will have to import the new solution and copy the flows again to upgrade it to the latest version.
 
 1. Go to the *Center of Excellence - Core Components* solution.
 

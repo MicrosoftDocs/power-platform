@@ -52,6 +52,6 @@ Admin and Governance tools can be broadly categorized into three categories:
        - [PowerApps for App Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/)
    :::column-end:::
     :::column span="":::
-      **Templates & customizations.** The <!---KATHY SAYS: It seems like this should be a link, either to the setup docs or to the kit download.--->CoE starter kit falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for that specific task, but it might not have the exact functionality that everyone needs and could require adjustment to achieve what others might be looking for.
+      **Templates & customizations.** The [CoE starter kit](setup.md) falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for that specific task, but it might not have the exact functionality that everyone needs and could require adjustment to achieve what others might be looking for.
    :::column-end:::
 :::row-end:::

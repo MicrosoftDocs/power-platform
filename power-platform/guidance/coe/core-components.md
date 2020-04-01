@@ -15,10 +15,10 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-<!---KATHY SAYS: Manuela, I actually had never looked at the metadata in any of the docs I have reviewed for you. I am wondering if Search.App needs to be updated. Also, shouldn't you name by on the authors list?--->
+
 # Use Core components
 
-These components provide the core to get started with setting up a CoE – they sync all your resources into entities and build admin apps on top of that to help you get more visibility of what apps, flows and makers are in your environment. Additionally, apps like the DLP Editor and Set New App Owner help with daily admin tasks.  The Core Components solution contains assets relevant only to admins. <!---KATHY SAYS: You can see I have a pet thing about where the word "only" goes. :-).--->
+These components provide the core to get started with setting up a CoE – they sync all your resources into entities and build admin apps on top of that to help you get more visibility of what apps, flows and makers are in your environment. Additionally, apps like the DLP Editor and Set New App Owner help with daily admin tasks.  The Core Components solution contains assets relevant only to admins.
 
 Learn how to [set up the core components](setup-core-components.md).
 
@@ -39,9 +39,9 @@ Here's a breakdown of the assets that form the core components:
 ## Entities
 
 - **Environment**
-Represents the Environment object, which contains Power Apps<!---KATHY SAYS: I am not sure whether it is OK to refer to the apps themselves as "a Power App" even though we do all the time. I am leaving these branding things alone for the most part.--->, Flows and Connectors
+Represents the Environment object, which contains apps, flows and connectors
 - **PowerApps App**
-Represents a Power Apps app<!---KATHY SAYS: Removed the periods here because these are not numbered lists and are sentence fragments.--->
+Represents a Power Apps app
 - **Flow** Represents a flow
 - **PowerApps Connector** Represents a standard or custom connector
 - **Connection Reference** The linking table for the many to many relationships between Connectors (PowerApps Connector) and flows (Flow) / Power Apps (PowerApps App)
@@ -102,12 +102,15 @@ link to the flow instance
 
 ### DLP Editor
 
-Canvas app that reads and updates DLP <!---KATHY SAYS: I don;t think I said this in the other ocs I edited, but it seems like we should spell out what DLP means at each use on a page "Data Loss Prevention (DLP)".--->policies while showing a list of apps that
+Canvas app that reads and updates Data Loss Prevention (DLP) policies while showing a list of apps that
 are affected by the policy configurations.
 
-Use this app to make changes to the DLP policies and to see what impact each change will
-have, and to mitigate the risk of breaking a Flow / App through DLP changes by
-contacting makers.<!---KATHY SAYS: This list could also be a bulleted list for readability.--->
+Use this app to
+
+- make changes to the DLP policies
+- see what impact each change will have
+- mitigate the risk of breaking a Flow / App through DLP changes by
+contacting makers.
 
 To learn more about DLP data groups, read [introduction to data
 groups](https://docs.microsoft.com/power-platform/admin/introduction-to-data-groups)
