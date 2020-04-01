@@ -17,7 +17,7 @@ search.app:
 ---
 # Use Governance components
 
-Once you are familiar with your environments and resources, you might start thinking about audit and compliance processes for your apps. You might want to gather additional information about your apps from your makers, or you might want to audit specific connectors or app usage. The <!---KATHY SAYS: Not sure what this phrase means, from here:--->apps and flows part of this solution<!---KATHY SAYS: ...to here.---> help you get started.  
+Once you are familiar with your environments and resources, you might start thinking about audit and compliance processes for your apps. You might want to gather additional information about your apps from your makers, or you might want to audit specific connectors or app usage. The <!---KATHY SAYS: Not sure what this phrase means, from here:--->apps and flows in this solution<!---KATHY SAYS: ...to here. Did I guess right?---> help you get started.  
 
 The Audit and Report Components solution contains assets relevant to admins and makers.
 
@@ -119,7 +119,7 @@ A model-driven app that provides an interface to canvas apps that have been high
 This Model-Driven app <!---KATHY SAYS: Not sure whether the capitalization in this sentence or the preceding sentence is right.--->works in conjunction with other apps and flows in the CoE toolkit to facilitate the process described in the following section: [PowerApps
 App Auditing Process](#powerapps-app-auditing-process)
 
-**Update**<!---KATHY SAYS: You know, where you have "update" (in many pages, not just this one), I always take it to mean that you're announcing an update. I wonder if "Modify" would be a better term?--->: Instead of using this model-driven app, you could modify the Power Platform Admin View app to show the *Archive Approval* entity.
+**Update**<!---KATHY SAYS: You know, where you have "update" (in many pages, not just this one), I always take it to mean that you're announcing an update. I wonder if "Modify" or "Customize" would be a better term?--->: Instead of using this model-driven app, you could modify the Power Platform Admin View app to show the *Archive Approval* entity.
 
 ![App Archive and Clean Up View](media/coegov5.png)
 
