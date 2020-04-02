@@ -41,7 +41,7 @@ A full hand off to an engagement hub follows this pattern:
 1. The custom adapter intercepts the hand-off message, parses the full conversation context, and seamlessly routes the escalated conversation to a skilled human agent, based on availability.
 1. The end user's chat is seamlessly and contextually handed off to a human agent who can resume the conversation.
 
-To hand off the conversation to a human agent, you need to build a custom hand-off adapter, which contains a hand-off message, and can extract the context of the conversation from the hand-off message.
+To hand off the conversation to a human agent, you need to build a custom hand-off adapter.
 
 ## Build a custom hand-off adapter
 An adapter bridges conversations to and from your agent engagement hub by relaying and transforming messages between end users, bots, and human agents.  
