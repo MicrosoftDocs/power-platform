@@ -71,8 +71,6 @@ All the service performance KPI's can be filtered with attributes like a specifi
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics service performance report](media/powerapps-analytics-service-performance.png "Power Apps analytics service performance report")
 
-## Connectors 
-
 **Connectors report** provides visibility into the standard and custom connectors being used by canvas apps. The last 28 days of data is visible at the environment level.  
 
 Admins can gain insights into the number of connectors associated with each app, the specific connectors being used by each app, and the owner of the connector. It also provides data on the number of times the app has been shared, the number of app sessions, and the last accessed time for visibility into high usage apps and connectors.  
