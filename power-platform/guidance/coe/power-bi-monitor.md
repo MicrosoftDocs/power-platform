@@ -125,6 +125,6 @@ The filters on this page are:
 
 - Connector (Office 365 Users, Common Data Service, Azure AD)
 
-The visuals then show you a list of all apps, flows and makers using the tier or connector specified – as well as the number of connections for the filters<!---KATHY SAYS: yes?---> specified.
+The visuals then show you a list of all apps, flows and makers using the tier or connector specified – as well as the number of connections for the filters specified.
 
 ![Connections](media/pb8.png)

@@ -16,9 +16,8 @@ search.app:
   - Powerplatform
 ---
 # Example processes
-<!---KATHY SAYS: I love the example. My only concern is that the process description talks about finding problem apps, whereas the Poit of View section goes to putting an app in the app catalog, so it feesls a little disconnected. I put in some attempts to correct that, but may not have entirely succeeded!--->
 
-The components in the CoE Starter Kit are designed for multiple uses. The example processes below, which use the Starter Kit components, are meant to showcase common patterns other organizations have found useful and hopefully act as inspiration for defining your own processes.<!---KATHY SAYS: I take it the plan is to maybe add some more examples over time?--->
+The components in the CoE Starter Kit are designed for multiple uses. The example processes below, which use the Starter Kit components, are meant to showcase common patterns other organizations have found useful and hopefully act as inspiration for defining your own processes.
 
 ## Power Apps app auditing process
 
@@ -59,10 +58,9 @@ Components.
 
 ![Admin PoV of sample audit process](media/coe71.png)
 
-An admin opens the Admin Review app and comes to the workflow<!---KATHY SAYS: Can you be slightly more specific? OK if the answer is no.--->. They go to the Audit tab and investigate the work by the Maker, then mark their assessment in the Admin Review section.
+An admin opens the Power Platform Admin View > Admin Review view and assesses all the apps due for review by looking at the Audit tab within the app and investigating the work by the Maker, then mark their assessment in the Admin Review section.
 
-The Admin can decide to put an app in the app catalog, as featured or not, to expose the app to users.
-
+The Admin can decide to put an app in the app catalog, as featured or not, to highlight the app to users.
 
 ![Validate maker requirements](media/coe54.png)
 

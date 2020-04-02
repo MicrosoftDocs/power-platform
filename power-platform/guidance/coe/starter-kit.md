@@ -28,3 +28,6 @@ The Power Platform Center of Excellence (CoE) starter kit is a collection of com
 |![](media/caf-manage.png) | **Manage** <br /> Operations management for cloud and hybrid solutions.    |   |  | |  |
 
 
+
+
+

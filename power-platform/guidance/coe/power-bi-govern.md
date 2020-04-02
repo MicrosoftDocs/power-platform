@@ -47,18 +47,18 @@ Some typical assessments an admin would perform would be:
 
 ### Identify widely shared apps
 
-- Widely shared <!---KATHY SAYS: Proposing this change because if it is truly "overshared" then the response would be to reduce the sharing but if the response is to support it better, then it seems like it is not overshared.--->resources (shared with the entire tenant or many individual users) might need a stronger support model through a dedicated environment<!---KATHY SAYS: Will it be obvious to readers why a dedicated environment helps with support? (Ohhhh, now I read the below paragaphs... could they be indented to be clearly under this one?) Is the dedicated environment the only way the strengthen support? Would it be OK to remove the last 4 words of this sentence? And also do you want to say "or reducing the number of people it is shared with?"--->.
+Set *Shared with Everyone* to true or Select the Number of Shared Users on the slider in the right-hand filter section of this page to find widely apps.
+
+- Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model or might need a review of the number of people it is shared with.
 - Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an AD group to share their app.    Otherwise a) your entire org will see the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them) and b) if a user does not have access to the underlying data source, they  will receive an error message upon trying to launch the app, which can cause an increase in support tickets and confusion.
 
 - Apps shared with a large number of individual users pose a different risk:  if the app is for a specific job role or department, when an end user moves departments or job roles they would still see the app and be able to access the information. Therefore, we recommend sharing role-specific apps with an AD group instead.
 
-<!---KATHY SAYS: It feels like these "how to" paragraphs in each section should go to the top of each section, before the bullets.--->Set *Shared with Everyone* to true or Select the Number of Shared Users on the slider in the right-hand filter section of this page to find overshared<!---KATHY SAYS: widely?--->  apps.
-
 ### Identify orphaned apps
 
-- Orphaned apps, where the app owner has left the organization, will still work for end users, but changes or bug fixes can only be made by an owner. It is therefore important to identify orphaned apps and find a new owner for them, or work on a retirement plan for those apps.
-
 Select *Blank* in the Owner dropdown in the right-hand filter section of this page to find orphaned apps.
+
+- Orphaned apps, where the app owner has left the organization, will still work for end users, but changes or bug fixes can only be made by an owner. It is therefore important to identify orphaned apps and find a new owner for them, or work on a retirement plan for those apps.
 
 ### Identify implicitly shared app connections
 
@@ -84,7 +84,7 @@ The **Flow Risk Assessment** page enables you to filter by:
 
 - Action (Send Email, Delete SharePoint Items)
 
-Some typical assessments an admin would perform would be:<!---KATHY SAYS: It feels awkward to have these colons before subsections. Jim might have a different way to achieve the same thing.--->
+Some typical assessments an admin would perform would be:
 
 ### Identify suspended flows
 
@@ -121,7 +121,7 @@ connectors or actions.
 
 ## App and Flow Archive
 
-Added in March 2020 is the ability for admins to identify unused apps and flows by monitoring their Archive Score – in short, the higher the score the more likely you can archive the resource. Admins can act by deleting or archiving those resources to avoid sprawl. <!---KATHY SAYS: That felt redundant to me.--->
+Using the CoE Dashboard, admins also have the ability to identify unused apps and flows by monitoring their Archive Score – in short, the higher the score the more likely you can archive the resource.
 
 - The highest possible score for an **app** is 6. A score of 6 would represent an app that has not been modified since it was created, is using a non-production word like "test" or "demo" in the title, was created over three years ago, and was likely created from a template.
 
@@ -153,7 +153,9 @@ A [tooltip](https://docs.microsoft.com/power-bi/desktop-tooltips) (pops up when 
 
 ![App Archive](media/pb15.png)
 
-By right-clicking a specific App and <!---KATHY SAYS: Not exactly sure what the next 6 words mean. Maybe it is obvious in the UI?--->navigating to Drill through **App Detail**, you can open the Detail page for the selected app.
+**Right-click** on a specific App and select Drill through >  **App Detail** to open open the Detail page for the selected app.
+
+![Navigate to the App Detail page](media/coe81.png)
 
 The **Flow Archive** page is sorted by highest archive score and allows you to target specific makers, date ranges, environments, departments or connectors.
 
@@ -210,6 +212,5 @@ With the embedded Power Apps app, you don't have to leave the Power BI dashboard
 - You can email the flow maker
 
 - Once you have granted yourself ownership, you can launch the Maker Portal to view flow analytics and details
-
 
 ![Flow Details](media/pb17.png)

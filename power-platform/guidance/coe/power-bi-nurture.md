@@ -50,6 +50,6 @@ likely at the beginning of their journey and might need a helping hand.
 
 The **App Shares** page shows your top apps (by number of users it is shared
 with and number of app launches), as well as your users who most frequently launch Power
-Apps.<!---KATHY SAYS: These changes aren't strictly necessary but I think they might aid readability.--->
+Apps.
 
 ![App Shares](media/pb19.png)
