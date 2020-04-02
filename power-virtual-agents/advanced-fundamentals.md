@@ -25,6 +25,11 @@ You can go beyond basic authoring in Power Virtual Agents by taking advantage of
 - Add special nodes that take the context of the entire bot conversation and share it with a human help support agent
 
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 
 ## In this section
 

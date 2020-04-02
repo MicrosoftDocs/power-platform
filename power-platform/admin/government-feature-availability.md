@@ -39,7 +39,7 @@ There are certain experiences that are currently not available with Dynamics 365
 - [Resource Scheduling Optimization](https://docs.microsoft.com/dynamics365/customer-engagement/common-scheduler/resource-scheduling-optimization)
 - [Versium Predict](https://docs.microsoft.com/dynamics365/customer-engagement/versium-predict/versium-predict)
 - [Forms Professional](https://docs.microsoft.com/business-applications-release-notes/April19/forms-pro/)
-- [Power Platform Admin center](https://docs.microsoft.com/power-platform/admin/admin-guide): the Power Platform admin center (<https://gcc.admin.powerplatform.microsoft.us>) is currently available and is the preferred means to manage your Dynamics 365 instances (environments). However, GCC customers should access the following URL to log a support ticket: <https://admin.powerplatform.microsoft.com/support>.
+- [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/admin-guide): the Power Platform admin center (<https://gcc.admin.powerplatform.microsoft.us>) is currently available and is the preferred means to manage your Dynamics 365 instances (environments). However, GCC customers should access the following URL to log a support ticket: <https://admin.powerplatform.microsoft.com/support>.
 - [Teams Integration](https://docs.microsoft.com/dynamics365/teams-integration/teams-integration)
 
 There are a number of other business application apps and services that are not currently available as a service operating within the GCC or GCC High at this time. They include:

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/10/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -17,12 +17,10 @@ search.app:
 ---
 # Edit existing SharePoint site records
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
 Store documents related to your records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] folders and manage the folders and documents from within model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Integrating [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] document management with model-driven apps in Dynamics 365 makes it easy to access and share documents associated with your records.  
   
 > [!TIP]
->  If you’re using [!INCLUDE[pn_crm_2013_sp_shortest](../includes/pn-crm-2013-sp-shortest.md)] or later, you can take advantage of server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration between model-driven apps in Dynamics 365 and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)]. Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration provides an immersive document management experience consistent with the look and feel of model-driven apps in Dynamics 365.  
+>  If you're using [!INCLUDE[pn_crm_2013_sp_shortest](../includes/pn-crm-2013-sp-shortest.md)] or later, you can take advantage of server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration between model-driven apps in Dynamics 365 and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)]. Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration provides an immersive document management experience consistent with the look and feel of model-driven apps in Dynamics 365.  
 > 
 >  You can use server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration for on-premises and hybrid [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] deployments. For information about setting up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration using a wizard, see [Set up SharePoint integration](set-up-sharepoint-integration.md)  
   
@@ -36,13 +34,13 @@ Store documents related to your records in [!INCLUDE[pn_ms_SharePoint_long](../i
   
    - [!INCLUDE[proc_follow_steps_in_link](../includes/proc-follow-steps-in-link.md)]  
   
-   - Don’t have the correct permissions? Contact your system administrator.  
+   - Don't have the correct permissions? Contact your system administrator.  
   
-2. [!INCLUDE[proc_settings_doc_management](../includes/proc-settings-doc-management.md)]  
+2. In the web apps, go to **Settings** > **Document Management**.
   
-3. Click **[!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Sites**.  
+3. Select **[!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Sites**.  
   
-4. Select the site record you want to modify, and then click **Edit**.  
+4. Select the site record you want to modify, and then select **Edit**.  
   
 5. Modify any of the following settings:  
   
@@ -63,12 +61,12 @@ Store documents related to your records in [!INCLUDE[pn_ms_SharePoint_long](../i
      > [!TIP]
      >  The List component has been deprecated in Dynamics 365 apps. For information on switching from the List component to server-based integration, see [Switching from the list component or changing the deployment](switch-dynamics-crm-online-dynamics-365.md)  -->
   
-6. Click **Save**.  
+6. Select **Save**.  
   
-7. Click **Save and Close**.  
+7. Select **Save and Close**.  
   
 > [!NOTE]
->  To activate or deactivate a site record, on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Sites page, select the site record, and then in the **Records** group, click **Activate** or **Deactivate**.  
+>  To activate or deactivate a site record, on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Sites page, select the site record, and then in the **Records** group, select **Activate** or **Deactivate**.  
   
 ### See also  
  [Set up SharePoint integration](set-up-sharepoint-integration.md)   

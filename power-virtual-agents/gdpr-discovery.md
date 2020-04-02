@@ -25,3 +25,9 @@ Bot content and settings | Information such as content topics and bot settings.
 User settings | Settings specific to the user of the bot.
 Conversation logs | Used to calculate bot metrics and analytics.
 Aggregated metrics | Used to determine bot behavior.
+
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+

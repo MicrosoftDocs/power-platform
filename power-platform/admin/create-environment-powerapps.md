@@ -24,7 +24,7 @@ Follow these steps to create a Power Apps environment and a database for that en
 ### Prerequisites
  To follow this topic, the following items are required:
  - A Power Apps plan. Alternatively, you can sign up for a [free Power Apps trial](https://make.powerapps.com/signup).
- - Power Apps Environment Admin, Office 365 Global Admin, or Azure Active Directory Tenant Admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
+ - Power Apps Environment Admin, Global admin, or Power Platform service admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
 ### Sign in to the Power Apps Admin center
 Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
@@ -80,4 +80,4 @@ In Power Apps Admin center,  you can manage all of the environments that you hav
 * Provision a Common Data Service database for the environment. For more information, see [Create a Common Data Service database](create-database.md).
 * Set Data Loss Prevention policies. For more information, see [Data loss prevention policies](prevent-data-loss.md).
 * Set database security policies (as open or restricted by database roles). For more information, see [Configure database security](database-security.md).
-* Members of the Azure AD tenant Global administrator role (includes Office 365 Global admins) can also manage all environments that have been created in their tenant and set tenant-wide policies from the Power Apps Admin center.
+* Members of the Azure AD tenant Global administrator role (includes Global admins) can also manage all environments that have been created in their tenant and set tenant-wide policies from the Power Apps Admin center.

@@ -25,6 +25,11 @@ There are different procedures for connecting to your mobile app, depending on w
 
 Connecting your bot to a web-based app is relatively straightforward as it involves copying a code snippet into your app. However, both web-based apps and native or custom apps still require considerable developer expertise to fully integrate the bot into your app. Both procedures are described in this article.
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Connect your bot to a web-based app
 
 

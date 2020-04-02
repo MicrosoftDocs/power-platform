@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/24/2019
+ms.date: 03/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Field-level security to control access
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 Record-level permissions are granted at the entity level, but you may have certain fields associated with an entity that contain data that is more sensitive than the other fields. For these situations, you use field-level security to control access to specific fields.  
   
@@ -45,11 +45,11 @@ A security profile determines the following:
   
   A security profile can be configured to grant user or team members the following permissions at the field level:  
   
-- **Read**. Read-only access to the field’s data.  
+- **Read**. Read-only access to the field's data.  
   
 - **Create**. Users or teams in this profile can add data to this field when creating a record.  
   
-- **Update**. Users or teams in this profile can update the field’s data after it has been created.  
+- **Update**. Users or teams in this profile can update the field's data after it has been created.  
   
 A combination of these three permissions can be configured to determine the user privileges for a specific data field.  
   
@@ -58,7 +58,7 @@ A combination of these three permissions can be configured to determine the user
   
 <a name="BKMK_FLSexample"></a>   
 ## Example for restricting the mobile phone field for the Contact entity  
- Imagine your company’s policy is that sales members should have different levels of access to contact mobile phone numbers as described here.  
+ Imagine your company's policy is that sales members should have different levels of access to contact mobile phone numbers as described here.  
   
 |User or Team|Access|  
 |------------------|------------|  
@@ -70,15 +70,15 @@ A combination of these three permissions can be configured to determine the user
   
  Secure the field.  
   
-1. [!INCLUDE[proc_settings_customization](../includes/proc-settings-customization.md)]  
+1. In the web app, go to **Settings** > **Customizations**.
   
-2. Click **Customize the System**.  
+2. Select **Customize the System**.  
   
-3. Click **Entities** > **Contact** > **Fields**.  
+3. Select **Entities** > **Contact** > **Fields**.  
   
-4. Click **mobilephone**, click **Edit**.  
+4. Select **mobilephone**, select **Edit**.  
   
-5. Next to **Field Security**, click **Enable**, click **Save and Close**.  
+5. Next to **Field Security**, select **Enable**, select **Save and Close**.  
   
 6. Publish the customization.  
 
@@ -86,28 +86,28 @@ Configure the security profiles.
   
 1. Create the field security profile for sales managers.  
   
-   1. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
+   1. In the web app, go to **Settings** > **Security**.
   
-   2. Click **Field Security Profiles**.  
+   2. Select **Field Security Profiles**.  
   
-   3. Click **New**, enter a name, such as *Sales Manager access contact mobile phone*, and click **Save**.  
+   3. Select **New**, enter a name, such as *Sales Manager access contact mobile phone*, and select **Save**.  
   
-   4. Click **Users**, click **Add**, select the users that you want to grant read access to the mobile phone number on the contact form, and then click **Add**.  
+   4. Select **Users**, select **Add**, select the users that you want to grant read access to the mobile phone number on the contact form, and then select **Add**.  
   
       > [!TIP]
       >  Instead of adding each user, create one or more teams that include all users that you want to grant read access.  
   
-   5. Click **Field Permissions**, click **mobilephone**, click **Edit**, select **Yes** next to **Allow Read**, and then click **OK**.  
+   5. Select **Field Permissions**, select **mobilephone**, select **Edit**, select **Yes** next to **Allow Read**, and then select **OK**.  
   
 2. Create the field security profiles for vice presidents.  
   
-   1.  Click **New**, enter a name, such as *VP access contact mobile phone*, and click **Save**.  
+   1.  Select **New**, enter a name, such as *VP access contact mobile phone*, and select **Save**.  
   
-   2.  Click **Users**, click **Add**, select the users that you want to grant full access to the mobile phone number on the contact form, and then click **Add**.  
+   2.  Select **Users**, select **Add**, select the users that you want to grant full access to the mobile phone number on the contact form, and then select **Add**.  
   
-   3.  Click **Field Permissions**, click **mobilephone**, click **Edit**, select **Yes** next to **Allow Read**, **Allow Update**, and **Allow Create**, and then click **OK**.  
+   3.  Select **Field Permissions**, select **mobilephone**, select **Edit**, select **Yes** next to **Allow Read**, **Allow Update**, and **Allow Create**, and then select **OK**.  
   
-3. Click **Save and Close**.  
+3. Select **Save and Close**.  
   
 Any users not defined in the previously created field security profiles will not have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the field is secured.  
   
@@ -119,16 +119,16 @@ Any users not defined in the previously created field security profiles will not
 > ![](media/field-security-enabled.png "Field security enabled")
  
 Although most attributes can be secured, there are system attributes, such as IDs, timestamps, and record tracking attributes, that can't. Below are a few examples of attributes that can't be enabled for field security. 
--	ownerid, processid, stageid, accountid, contactid
--	createdby, modifiedby, OwningTeam, OwningUser
+-    ownerid, processid, stageid, accountid, contactid
+-    createdby, modifiedby, OwningTeam, OwningUser
 - createdon, EntityImage_Timestamp, modifiedon, OnHoldTime, overriddencreatedon
--	statecode, statuscode
+-    statecode, statuscode
 
 You can view the entity metadata for your organization including which fields can be enabled for field security, by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](https://docs.microsoft.com/powerapps/developer/common-data-service/browse-your-metadata). You can also view the metadata for an uncustomized organization in the [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] file called EntityMetadata.xlsx included in the top-level folder of the SDK. [Download the SDK](https://go.microsoft.com/fwlink/p/?LinkId=691153)  
    
 <a name="BKMK_FLSbestprac"></a>   
 ## Best practices when you use field security  
- When you use calculated fields that include a field that is secured, data may be displayed in the calculated field to users that don’t have permission to the secured field. In this situation, both the original field and the calculated field should be secured.  
+ When you use calculated fields that include a field that is secured, data may be displayed in the calculated field to users that don't have permission to the secured field. In this situation, both the original field and the calculated field should be secured.  
   
  Some data, such as addresses, are actually made up of multiple fields. Therefore, to completely secure data that includes multiple fields, such as addresses, you must secure and configure the appropriate field security profiles on multiple fields for the entity. For example, to completely secure addresses for an entity, secure all relevant address fields, such as address_line1, address_line2, address_line3, address1_city, address1_composite, and so on.  
   

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/08/2019
+ms.date: 03/26/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,8 +17,6 @@ search.app:
 ---
 # Install, update, or remove a preferred solution
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
 Install preferred solutions to gain added features and functionality.  
   
  ![List of preferred solutions](media/PreferredSolutions65.png "List of preferred solutions")
@@ -28,7 +26,7 @@ Install preferred solutions to gain added features and functionality.
 <a name="BKMK_InstallInsights"></a>   
 ## Install a preferred solution  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
+1. Browse to the Power Platform admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
   
 2. Go to **Environments** > [select an environment] > **Manage Solutions**.
   
@@ -46,7 +44,7 @@ Install preferred solutions to gain added features and functionality.
 
 ## Update a preferred solution
 
-1. Browse to the Power Platform Admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
+1. Browse to the Power Platform admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
   
 2. Go to **Environments** > [select an environment] > **Manage Solutions**.
   

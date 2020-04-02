@@ -37,6 +37,8 @@ Adding your bot to Azure Bot Service channels requires considerable developer ex
 - [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1.
 - Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine).
 - A bot created in Power Virtual Agents that you want to connect to an Azure Bot Service channel.
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
 
 You should also read [Connect your bot to mobile and custom apps](publication-connect-bot-to-custom-application.md) before following the instructions in this topic.
 

@@ -2,7 +2,7 @@
 title: "Automate Power Virtual Agents bot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: ""
-ms.date: 3/9/2020
+ms.date: 3/18/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -24,9 +24,15 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 
 >[!IMPORTANT]
 >A flow can only be called from a topic located in the same [Common Data Service environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
->Flows must also be in a solution in Power Automate. You can [move flows into solutions](#move-a-flow-to-the-solutions-tab-on-the-power-automate-portal) so they are listed in the authoring canvas.
+>Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
+
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
 
 ## Create a new flow from the Power Virtual Agents authoring canvas 
 
@@ -44,7 +50,7 @@ Flows typically use variables to input and output information. The variables can
     ![Create a new Power Automate flow](media/UseCreateFlowOption.jpg)
 
 
-Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://preview.flow.microsoft.com/) in a separate tab.
+Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
 
 ![Power Automate flow template](media/PVAConnectorTemplate.JPG)
 
@@ -120,18 +126,27 @@ Select **Save** to save your new flow.
 ![Power Automate flow template - Save](media/PVAConnectorTemplate_SAVE.jpg)
 
 
-Your flow is saved to the **My flows** tab on the Power Automate portal.
+Your flow is saved to the **Default Solution** under the **Solutions** tab on the Power Automate portal.
 
 
-![Power Automate flow template - Save](media/FlowInMyFlows.JPG)
-
-
+![Power Automate flow template - Default Solution](media/default-solution.png)
 
 
 
-## Move a flow to the Solutions tab on the Power Automate portal
+## Flows created from the Power Virtual Agents authoring canvas are immediately available to the bot
 
-To ensure your flow can be used with a Power Virtual Agents bot, it must be moved from the **My Flows** tab to the **Solutions** tab on the Power Automate portal. 
+All flows created from the Power Virtual Agents authoring canvas are saved in a **Default Solution** in Power Automate. They can be used by your bots immediately.
+
+In Power Virtual Agents, you can now see this new flow on the list of available actions when you use the **Call an action node** in the authoring canvas.
+
+![New flow shows up in Action picker](media/FlowInActionPicker.png)
+
+
+
+
+## Optionally move a flow from Default Solution to another solution
+
+To be available to your bots, flows must be stored in a solution in Power Automate. If you do not want to use the **Default Solution** for this purpose, you can move your flows to another solution.
 
 **Move flow to new or existing solution:**
 
@@ -152,17 +167,14 @@ To ensure your flow can be used with a Power Virtual Agents bot, it must be move
     ![Add existing menu](media/AddExistingFlow.jpg)
 
 
-1. On the **Add existing flow** page, select the **Outside of solutions** tab, and then select your flow. Select **Add** to add your flow to the solution.
+1. On the **Add existing flow** page, select the **From solutions** tab, and then select your flow. Select **Add** to add your flow to the solution.
+
+    ![Add flow to a solution](media/move-flow-from-solution.png)
+    
+   To move a flow from **My flows** tab to a solution, select the **Outside solutions** option. Select **Add** to add your flow to the solution.
 
     ![Add flow from outside solutions](media/AddExistingFlow_details.jpg)
-
-
-This flow is moved from the **My Flows** tab and into the solution you chose on the **Solutions** tab. It's now ready to use in a bot. 
-
-In Power Virtual Agents, you can now see this flow on the list of available actions when you use the **Call an action node** in the authoring canvas.
-
-![New flow shows up in Action picker](media/FlowInActionPicker.png)
-
+    
 
 ## Modify a flow on the Power Automate portal
 

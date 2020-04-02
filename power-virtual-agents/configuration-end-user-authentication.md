@@ -25,6 +25,11 @@ Power Virtual Agents supports any identity provider that is compliant with the [
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G2]
 >
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Registering a new app with your identity provider
 
 You will need to register a new app with your identity provider and get a Client ID and Client Secret before you can configure authentication in Power Virtual Agents. 

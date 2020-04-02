@@ -1,7 +1,7 @@
 ---
 title: "Data location for Power Virtual Agents"
 description: "Identify the geographic location where your data will reside."
-ms.date: 12/2/2019
+ms.date: 03/30/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -24,16 +24,27 @@ No matter where customer data is stored, Microsoft does not control or limit the
 
 Data will be stored in United States, if a bot author’s tenant location is not listed under the Data locations table above. For France, data will be stored in Europe.   
 
+
+> 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mPmc ]
+> 
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Data locations
 Azure geographic locations (geos) | Azure datacenters (regions)
  ---|---
 United States | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA)
 Europe | West Europe (Netherlands), North Europe (Ireland)
-Australia	 | Australia East (New South Wales), Australia Southeast (Victoria)
-United Kingdom	| UK South (London), UK West (Cardiff, Durham)
-India	| Central India (Pune), South India (Chennai)
-Asia Pacific	| Southeast Asia (Singapore), East Asia (Hong Kong)
-Japan	| Japan East (Tokyo, Saitama), Japan West (Osaka)
+Australia | Australia East (New South Wales), Australia Southeast (Victoria)
+United Kingdom | UK South (London), UK West (Cardiff, Durham)
+India | Central India (Pune), South India (Chennai)
+Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong)
+Japan | Japan East (Tokyo, Saitama), Japan West (Osaka)
+Canada | Canada Central (Toronto), Canada East (Quebec City)
 
 ## Customer data  
 Microsoft will not transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when: 

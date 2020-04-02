@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 03/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,16 +17,16 @@ search.app:
 ---
 # Enable or disable security for a field to control access
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 Field-level security lets you set which fields users can see or edit. For example, if want to prevent users from accidentally changing an account name, you can restrict them from editing that field. In [!INCLUDE[pn_crmv6](../includes/pn-crmv6.md)], you could only set field-level security for custom fields, but in [!INCLUDE[pn_crm_2015](../includes/pn-crm-2015.md)] or later, you can also set field-level security for some default fields. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Field-level security](field-level-security.md)  
   
  To set which users and teams have read or write access to fields, see [Set up security permissions for a field](../admin/set-up-security-permissions-field.md).  
   
 > [!NOTE]
->  You can’t change the permissions on a field that you don’t have permission to access.  
+>  You can't change the permissions on a field that you don't have permission to access.  
   
-1. [!INCLUDE[proc_settings_customization](../includes/proc-settings-customization.md)]  
+1. In the web app, go to **Settings** > **Customizations**.
   
 2. Click **Customize the System**.  
   

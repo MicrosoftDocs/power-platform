@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2017
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,11 +17,9 @@ search.app:
 ---
 # System Settings Auditing tab
 
-Enable auditing to track changes to your organization’s data and maintain a log of changes. 
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)]  
+Enable auditing to track changes to your organization's data and maintain a log of changes. 
   
-## Open the System Settings dialog box (if it’s not already open)  
+## Open the System Settings dialog box (if it's not already open)  
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -31,10 +29,10 @@ Enable auditing to track changes to your organization’s data and maintain a lo
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_administration](../includes/proc-settings-administration.md)]  
-  
-3. Choose **System Settings** > **Auditing** tab.  
-  
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Product** > **Features**. Review the settings under **Auditing**. 
+    
 |      Settings      |                                                                                                                                                                  Description                                                                                                                                                                   |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Audit Settings** |                                                                                                                                                                                                                                                                                                                                                |

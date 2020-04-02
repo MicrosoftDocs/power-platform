@@ -2,7 +2,7 @@
 title: "Multiple environments or tenants   | MicrosoftDocs"
 description: Information on multiple environments or tenants 
 ms.custom: ""
-ms.date: 02/10/2020
+ms.date: 03/16/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -49,7 +49,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 - Data is not shared across environments.  
   
-- Storage is shared across the primary environment and any additional environments.  
+- See [Common Data Service storage capacity](capacity-storage.md) for how storage is shared across environments.  
   
 - All environments for a single customer tenant will be set up in the geography where they initially signed up for their account. Storage consumption is totaled and tracked across all the environments attached to a customer tenant.  
   
@@ -59,14 +59,14 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 - You can purchase additional environments through the Additional environment Add-On. Additional environments can be added only to "paid" subscriptions - not trials or Internal Use Rights (IUR). If you purchased your subscription through Volume Licensing, you must go through your Large Account Reseller (LAR) to purchase the additional environment. More information: [Support overview](support-overview.md)  
   
-- You can’t merge existing trials or subscriptions onto an additional environment; instead, you will need to move your data and customizations.  
+- You can't merge existing trials or subscriptions onto an additional environment; instead, you will need to move your data and customizations.  
   
 ## Why use multiple environments?  
- The following are common use cases for multi-environment deployment. Consider these examples when you decide the deployment type that best fits your company’s requirements.  
+ The following are common use cases for multi-environment deployment. Consider these examples when you decide the deployment type that best fits your company's requirements.  
   
  **Master data management**  
   
- In this scenario, a “master” data set provides for change management through a central master data source. This approach requires that the central master data be synchronized to all environments so that each environment has access to the latest version of the core information. Requested changes to the information can be made directly within the master system. Alternatively, users can explicitly access the master system or capture the changes in the local environment, with those changes subsequently passed on to the master environment.  
+ In this scenario, a "master" data set provides for change management through a central master data source. This approach requires that the central master data be synchronized to all environments so that each environment has access to the latest version of the core information. Requested changes to the information can be made directly within the master system. Alternatively, users can explicitly access the master system or capture the changes in the local environment, with those changes subsequently passed on to the master environment.  
   
  Requiring that changes be made centrally can provide for centralized change control. For example, anti-fraud checks can be performed to ensure that changes are made only by a central team and not by local teams that might otherwise benefit from a change, such as a change in credit limits. This would provide a second level of change authorization and verification that avoids the ability for a single person or a group of people who work closely together to collaborate to affect a fraud. Pushing a request to a different, independent team can provide protection against potential fraud.  
   
@@ -78,7 +78,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
  **Scalability**  
   
- While a single environment of can scale up and out to support the growth of a customer’s business, with very high data volumes or levels of complexity, there are additional considerations. For example, in environments with extreme volumes and/or extensive use of Service Scheduling, scaling up [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] can require complicated and expensive infrastructure that is prohibitively expensive or extremely difficult to manage.  
+ While a single environment of can scale up and out to support the growth of a customer's business, with very high data volumes or levels of complexity, there are additional considerations. For example, in environments with extreme volumes and/or extensive use of Service Scheduling, scaling up [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] can require complicated and expensive infrastructure that is prohibitively expensive or extremely difficult to manage.  
   
  There are many scenarios in which there is a natural functional split in capability requirements. In such cases, delegating workloads by creating scale-out scenarios that are based on these functional splits can provide for higher volumes by using commodity infrastructure.  
   
@@ -100,7 +100,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
    For example, if User A has an account to access Tenant A their license allows them to access any and all environments created within Tenant A - if they are allowed by their administrator.  If User A needs to access environments within Tenant B, they will need an additional license.  
   
-- Each tenant will require a tenant administrator(s) with unique sign-in credentials, and each tenant affiliate will manage its tenant separately in the administrator console.  
+- Each tenant will require Power Platform admin(s) with unique sign-in credentials, and each tenant affiliate will manage its tenant separately in the administrator console.  
   
 - Multiple environments within a tenant are visible from the interface if the administrator has access.  
   
@@ -149,3 +149,6 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
   
 - There can be no duplicate accounts across the tenants or partitions in the on-premises [!INCLUDE[pn_Active_Directory](../includes/pn-active-directory.md)].  
   
+### See also
+[Blog: What is a tenant?](https://powerbi.microsoft.com/blog/what-is-a-tenant/) <br />
+[Environments overview](environments-overview.md)

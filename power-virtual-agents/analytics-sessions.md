@@ -24,6 +24,11 @@ You can also download and view chat transcripts in the Power Apps portal.
 
 Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Download session transcript information from the Power Virtual Agents portal
 
 1. Select **Analytics** on the side navigation pane. Go to the **Sessions** tab. 

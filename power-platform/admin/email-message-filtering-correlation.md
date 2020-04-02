@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 03/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Use Email message filtering and correlation to specify which emails are tracked 
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 Server-side synchronization, [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)], or the Email Router can automatically create email activities in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, which are based on received email messages. This type of automation is known as email message tracking. Users can select a filtering option that determines what email messages will be tracked. Filtering is set on the **Email** tab of the **Set Personal Options** dialog box in the client applications. Users can set the following options:  
 
@@ -39,15 +37,13 @@ Email correlation is set on the **Email** tab of the System Settings page and ca
 ## How model-driven apps in Dynamics 365 uses conversations to track emails  
  Use [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] conversations to increase the probability for email identification and matching. [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] groups together related email and assigns them an id (conversation id), to identify emails that are part of one conversation.  
 
-1. Go to **Settings** > **Administration** > **System Settings**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Click the **Email** tab.  
+2. Select **Settings** > **Email** > **Email tracking**.  
 
-3. In the **Configure folder-level tracking and email correlation** area, click **Use correlation to track email conversations**.  
+3. In the **Configure folder-level tracking and email correlation** area, turn on **Use correlation**.  
 
-   ![Configure folder-level tracking](../admin/media/configure-folder-level-tracking.png "Configure folder-level tracking")  
-
-   If checked, this option uses the conversation id to identify all the emails that replied to a tracked email.  
+   If enabled, this option uses the conversation id to identify all the emails that replied to a tracked email.  
 
 ## How model-driven apps in Dynamics 365 associates email addresses with records
 
@@ -88,7 +84,7 @@ In the email **To** field, all of the records of email-enabled entities with the
 |         User number digit range         |                                                                                                                          Configurable from 1-9. The default range is three (3) digits. This value determines how many digits to use when model-driven apps in Dynamics 365 generates the numeric identifier for the user who generated the email activity.                                                                                                                          |
 | Incremental message counter digit range | Configurable from 1-9. Default range is three (3) digits. This value determines how many digits to use when model-driven apps in Dynamics 365 generates the numeric identifier for the email activity (not the individual messages that the activity contains). If you use the default value to generate a token with a three-digit number, it will increment the number through 999, and then restart the number at 000. You can use a larger order of digits to reduce the possibility of assigning duplicate tokens to active email threads. |
 
- Although we don’t recommend it because it can significantly reduce the probability for accurate email activity to email message correlation, you can turn tacking tokens off. To enable, disable, or configure tracking tokens, do the following:  
+ Although we don't recommend it because it can significantly reduce the probability for accurate email activity to email message correlation, you can turn tacking tokens off. To enable, disable, or configure tracking tokens, do the following:  
 
 1.  Go to **Settings** > **Administration** > **System Settings**.  
 
@@ -98,7 +94,7 @@ In the email **To** field, all of the records of email-enabled entities with the
 
 <a name="BKMK_smartmatching"></a>   
 ## What is smart matching?  
- When an incoming email message is processed by the Email Router, the system extracts information associated with the email message subject, sender address, and recipients’ addresses that link the email activity to other records. This correlation process, also known as smart matching, uses the following criteria to match received email message information to email activities:  
+ When an incoming email message is processed by the Email Router, the system extracts information associated with the email message subject, sender address, and recipients' addresses that link the email activity to other records. This correlation process, also known as smart matching, uses the following criteria to match received email message information to email activities:  
 
 - **Subject matching**. Prefixes, such as RE: or Re:, and letter case are ignored. For example, email message subjects with *Re: hello* and *Hello* would be considered a match.  
 

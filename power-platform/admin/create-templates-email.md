@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/01/2018
+ms.date: 03/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,9 +17,7 @@ search.app:
 ---
 # Create templates for email
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
-Save time when creating multiple email messages by making email templates. Email templates contain prefilled data that you specify, so you don’t have to re-enter the same information for each article.  
+Save time when creating multiple email messages by making email templates. Email templates contain prefilled data that you specify, so you don't have to re-enter the same information for each article.  
   
 An email template is attached to an email activity after the activity is created. Typically, each type of email activity has its own email template type; for example, an email activity created from a case record would use a case email template. You can also create global templates that are available for any record type, or personal templates available only to you, or organizational templates available to anyone in your organization.  
   
@@ -31,9 +29,9 @@ An email template is attached to an email activity after the activity is created
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_templates](../includes/proc-settings-templates.md)]  
- 
-3. Select **Email Templates**.  
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Templates** > **Email templates**.  
   
 4. On the Actions toolbar, select **New**.  
   

@@ -23,6 +23,11 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 > [!IMPORTANT] 
 > Before using this feature, you must follow the [end-user authentication configuration instructions](configuration-end-user-authentication.md).
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 
 ## Add user authentication to a topic
 

@@ -24,7 +24,7 @@ You may decide that your customization work developed and tested on a sandbox en
 
 **To change the environment type**: 
 
-1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
 
 2. From the left-side menu, select **Environments**, and then select an environment to change.
 

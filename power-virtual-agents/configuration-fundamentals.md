@@ -22,6 +22,11 @@ These features go beyond basic topic authoring and bot conversations and allow y
 You can accept files for upload, sign-in to backend systems, and seamlessly integrate between virtual support conversations and support help from live agents.
 
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 
 ## In this section
 

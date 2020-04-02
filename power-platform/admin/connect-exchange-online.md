@@ -145,12 +145,12 @@ The following table describes the permissions required to approve emails.
 <table>
   <tr>
     <th colspan="2">Security roles /<br />Applications in use</th>
-    <th colspan="2">Both roles required:<br />Office 365 Global admin<br />and <br />System admin</th>
+    <th colspan="2">Both roles required:<br />Global admin<br />and <br />System admin</th>
     <th colspan="2">Both roles required:<br />Exchange admin<br />and <br />System admin</th>
     <th>System admin</th>
     <th>Service admin</th>
     <th>Exchange admin</th>
-    <th>Office 365 Global admin</th>
+    <th>Global admin</th>
   </tr>
   <tr>
     <td rowspan="2">Model-driven apps in Dynamics 365</td>

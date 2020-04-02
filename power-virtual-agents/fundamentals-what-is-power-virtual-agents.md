@@ -17,6 +17,9 @@ ms.collection: virtual-agent
 
 # Power Virtual Agents overview
 
+>[!IMPORTANT]
+>See the [Important information](#important-information) section for specific usage details.
+
 Power Virtual Agents empowers teams to easily create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
 Power Virtual Agents addresses many of the major issues with bot building in the industry today. It eliminates the gap between the subject matter experts and the development teams building the bots, and the long latency between teams recognizing an issue and updating the bot to address it. It removes the complexity of exposing teams to the nuances of conversational AI and the need to write complex code. And, it minimizes the IT effort required to deploy and maintain a custom conversational solution.
 
@@ -27,6 +30,7 @@ Using Power Virtual Agents, you can:
 
 > [!div class="nextstepaction"]
 > [Get started now](https://aka.ms/trypva)
+
 
 ## Highlights of Power Virtual Agents
 
@@ -52,6 +56,12 @@ Using Power Virtual Agents, you can:
 
 >[!NOTE]
 > Power Virtual Agents does not currently support US Government Cloud plans.
+
+
+## Important information
+<!-- CELA required disclosure, do not modify -->
+Microsoft Power Virtual Agents (1) is not intended or made available as a medical device for the diagnosis of disease or other conditions, or in the cure, mitigation, treatment or prevention of disease, or otherwise to be used as a component of any clinical offering or product, and no license or right is granted to use Microsoft Power Virtual Agents for such purposes, (2) is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used as a substitute for, or to replace, professional medical advice, diagnosis, treatment, or judgment, and (3) should not be used for emergencies and does not support emergency calls. Any chatbot you create using Microsoft Power Virtual Agents is your own product or service, separate and apart from Microsoft Power Virtual Agents.  You are solely responsible for the design, development, and implementation of your chatbot (including incorporation of it into any product or service intended for medical or clinical use) and for explicitly providing end users with appropriate warnings and disclaimers pertaining to use of your chatbot. You are solely responsible for any personal injury or death that may occur as a result of your chatbot or your use of Microsoft Power Virtual Agents in connection with your chatbot, including (without limitation) any such injuries to end users.
+
 
 ## Helpful links
 

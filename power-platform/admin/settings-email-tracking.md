@@ -19,7 +19,7 @@ search.app:
 
 Use Email settings to adjust how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, features appear and function.
 
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email Tracking**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email Tracking**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the business closures.
 
