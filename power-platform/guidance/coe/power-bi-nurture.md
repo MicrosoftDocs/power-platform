@@ -19,7 +19,7 @@ search.app:
 
 As you establish your Center of Excellence, a significant part of your activity will be nurturing your maker community, enabling them to follow best practices, and working together with them to identify whether they or their resources need additional support.
 
-The Nurture section helps you find your "star" app and flow makers, see what connectors they are using, where they are based (department/city/country) and how they are adopting the Power Platform.
+The Nurture section helps you find your "star" app and flow makers and see what connectors they are using, where they are based (department/city/country) and how they are adopting the Power Platform.
 
 ## Makers
 
@@ -41,15 +41,15 @@ hand.
 The **Flow Gurus** page gives you an overview of how many actions and connectors
 per flow your makers are using. Makers with complex flows that have multiple
 actions or use multiple connectors are likely more advanced and could turn into
-your champions, makers use very few connectors or mostly template flows are
-likely at the beginning of their journey and might need a helping hand
+your champions; makers who use very few connectors or mostly template flows are
+likely at the beginning of their journey and might need a helping hand.
 
 ![Flow Gurus](media/pb20.png)
 
 ## App Shares
 
-The **App Shares** page shows your top apps by number of users it is shared
-with and number of app launches, and users who most frequently launch Power
-Apps.
+The **App Shares** page shows your top apps (by number of users it is shared
+with and number of app launches), as well as your users who most frequently launch Power
+Apps.<!---KATHY SAYS: These changes aren't strictly necessary but I think they might aid readability.--->
 
 ![App Shares](media/pb19.png)

@@ -17,7 +17,7 @@ search.app:
 ---
 # Monitor
 
-The Monitor section gives you the ability to query basic inventory (Environments, Apps, Flows, Makers, Connectors, Audit Logs) to monitor usage across your entire tenant and within each environment. These reports also support drill downs and filtering for example by maker department/country/city, connector usage, and premium feature usage.
+The Monitor section gives you the ability to query basic inventory (Environments, Apps, Flows, Makers, Connectors, Audit Logs) to monitor usage across your entire tenant and within each environment. These reports also support drill downs and filtering, for example by maker department/country/city, connector usage, and premium feature usage.
 
 ## Overview – Power Apps and Power Automate
 
@@ -50,7 +50,7 @@ The visualizations highlight environments and makers with the most resources and
 The **Environments** page shows you how many environments, environment makers
 and CDS instances you have.
 
-The graphs visualize
+The graphs visualize:
 
 - Environment creation trend by environment type
 
@@ -89,13 +89,13 @@ Filters on this page can help you narrow down this view by app owner, app displa
 
 The **Flows** page provides an overview of apps in your environment:
 
-- Total Number of flows
+- Total Number of Flows
 
-- Total Number of flows created this month
+- Total Number of Flows created this month
 
-- Total Number of flow Makers
+- Total Number of Flow Makers
 
-- Total Number of Suspended and Stopped flows
+- Total Number of Suspended and Stopped Flows
 
 Through visuals, you will be able to see your flow creation trend, your top active departments and top environments. A list view of all flows enables you to sort your flows by number of actions in a flow, creator and flow state.
 
@@ -103,9 +103,9 @@ Filters on this page can help you narrow down this view by flow owner, flow disp
 
 ![Flow Overview](media/pb6.png)
 
-## Custom Connector
+## Custom Connectors
 
-The **Custom Connector** page helps you understand what [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/) you have, what endpoint they are connecting to and which resources are using the custom
+The **Custom Connectors** page helps you understand what [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/) you have, what endpoints they are connecting to and which resources are using the custom
 connector.
 
 Next to the total number of custom connectors and number of test connectors (those that have the word Test in the display name), you will also see a connector creation trend, top connector makers and the link between a connector
@@ -119,12 +119,12 @@ Filters help you narrow down the view by connector creator, environment and crea
 
 The **Connections** page shows what resources and makers are using which connectors, and at a high-level which resources and makers are using premium features.
 
-The filters on this page are
+The filters on this page are:
 
 - Connector tier (premium or standard)
 
 - Connector (Office 365 Users, Common Data Service, Azure AD)
 
-The visuals then show you a full list of all apps, flows and makers using the tier or connector specified – as well as the number of connections for the criteria specified.
+The visuals then show you a list of all apps, flows and makers using the tier or connector specified – as well as the number of connections for the filters<!---KATHY SAYS: yes?---> specified.
 
 ![Connections](media/pb8.png)

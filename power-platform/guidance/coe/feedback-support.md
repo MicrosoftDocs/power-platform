@@ -21,5 +21,5 @@ While the underlying features and components used to build the kit (such as Comm
 
 If you face issues with:
 
-- Using the kit, report your issue here: [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they do help with related underlying platform and feature issues.)
-- The core features in Power Platform, use your standard channel to contact Microsoft Support.
+- **Using the kit**, report your issue here: [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they do help with related underlying platform and feature issues.)
+- **The core features in Power Platform**, use your standard channel to contact Microsoft Support.
