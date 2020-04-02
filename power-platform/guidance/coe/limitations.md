@@ -28,30 +28,30 @@ disrupted a business when installed. Therefore, if more restrictive
 implementations are desired, it must be implemented in addition to these tools.
 
 In addition to this high-level warning, there are some additional notes on some
-components:
+components.
 
 ## Timeouts in the Admin | Sync Template V2
 
-The CDS connector might experience some throttling limits if the tenant has a lot of resources. If you see 429 errors in the flow run history occurring in the later runs, you can the following things
+The CDS connector might experience some throttling limits if the tenant has a lot of resources. If you see "429" errors in the flow run history occurring in the later runs, you can try the following resolution steps:
 
 1. **Configure Retry**
-    1. Open Admin \| Sync Template v2 to Edit
-    1. Expand the step: Get Environments and store them in the CoE CDS Entity
+    1. Open **Admin \| Sync Template v2** tand select **Edit**.
+    1. Expand the step: **Get Environments and store them in the CoE CDS Entity**.
     1. Expand the step: **Apply to each Environment**
-    1. Go to settings for each call to the CDS and configure the timeout / retry settings <br> ![Configure retry policy](media/coe72.png)
+    1. Go to Settings for each call to the CDS and configure the timeout / retry settings. <br> ![Configure retry policy](media/coe72.png)
 
 1. **Configure concurrency in Foreach**
-    1. Reduce concurrency in Foreach loops to reduce simultaneous calls
-    1. Open Admin \| Sync Template v2 to Edit
-    1. Expand the step: **Get Environments and store them in the CoE CDS Entity**
-    1. Go to Settings for the **Apply to each Environment** step <br>![Configure concurrency in Foreach](media/coe73.png)
+    Reduce concurrency in Foreach loops to reduce simultaneous calls:
+    1. Open **Admin \| Sync Template v2** and select **Edit**.
+    1. Expand the step: **Get Environments and store them in the CoE CDS Entity**.
+    1. Go to Settings for the **Apply to each Environment** step. <br>![Configure concurrency in Foreach](media/coe73.png)
     1. Reduce the degree of parallelism here.
 
 ## DLP editor
 
-- The Environments call only returns the first 2000 environments.
+- The Environments call returns only the first 2000 environments.
 - The tool cannot write back Environment-type policies.
 
 ## Government community cloud (GCC) environments
 
-- The CoE Starter Kit is available for GCC Environments, however the Custom Connector to connect to Office 365 Audit Logs are not available for GCC environments yet.
+- The CoE Starter Kit is available for government cloud (GCC) Environments; however the Custom Connector to connect to Office 365 Audit Logs is not available for GCC Environments yet.
