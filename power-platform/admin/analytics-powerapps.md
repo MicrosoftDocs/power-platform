@@ -19,12 +19,10 @@ search.app:
 
 Analytics for the environment admin is available at the Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. 
 
-To access these reports:
+To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. Reports appear in a menu bar at the top of the page.
 
-1. Go to the navigation bar on the left side.
-2. Select **Analytics**.
-3. Select **Power Apps**.
-4. View the reports on the right side.
+> [!div class="mx-imgBorder"] 
+> ![Power Apps analytics menu](media/powerapps-analytics-menu.png "Power Apps analytics menu")
 
 ## Who can view these reports?
 
@@ -57,7 +55,7 @@ The preview contains four reports for Power Apps admins. The last viewed environ
 **Toast Errors** report provides insights into the toast error trends, types, and counts per app to help drive improvements in app quality. The toast errors are errors displayed to the end users of the app. 
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps analytics error report](media/powerapps-analytics-total-errors.png "Power Apps analytics error report")
+> ![Power Apps analytics error report](media/powerapps-analytics-toast-errors.png "Power Apps analytics error report")
 
 **Service Performance** report provides details of all standard and custom connectors to understand performance bottlenecks and client versus service API issues. An environment admin will get insights into:  
 
@@ -73,15 +71,13 @@ All the service performance KPI's can be filtered with attributes like a specifi
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics service performance report](media/powerapps-analytics-service-performance.png "Power Apps analytics service performance report")
 
-## Connectors report
+## Connectors 
 
-Connectors report for Power Apps provides visibility into the standard and custom connectors being used by canvas apps. The last 28 days of data is visible at the environment level.  
+**Connectors report** provides visibility into the standard and custom connectors being used by canvas apps. The last 28 days of data is visible at the environment level.  
 
 Admins can gain insights into the number of connectors associated with each app, the specific connectors being used by each app, and the owner of the connector. It also provides data on the number of times the app has been shared, the number of app sessions, and the last accessed time for visibility into high usage apps and connectors.  
 
-**A sample scenario**
-
-An admin can gain insight into the number of shares and usage of a specific finance app using one or more connectors. This will allow the admin to engage with the app owner to ensure no sensitive data is inadvertently being shared through the app.  
+**A sample scenario**: An admin can gain insight into the number of shares and usage of a specific finance app using one or more connectors. This will allow the admin to engage with the app owner to ensure no sensitive data is inadvertently being shared through the app.  
 
 Note that the current iteration of this specific report does not have a download report feature. 
 
