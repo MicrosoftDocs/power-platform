@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2020
+ms.date: 04/01/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -228,6 +228,8 @@ Some of the features available in the commercial version of Power Apps are not a
 - [Customize a SharePoint list form by using Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form).
 
 - [Dataflows in Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/create-and-use-dataflows)
+
+- [AI Builder](https://docs.microsoft.com/ai-builder/) is not yet available for GCC and GCC High tenants.
 
 ## Requesting support
 
