@@ -53,7 +53,7 @@ While it is outside the scope of this document to cover what a custom adapter co
 These code snippets and samples allow you to extract context from the bot conversation to seamlessly and contextually hand off bot conversations to any generic engagement hub.
 
 ### Sample hand-off message payload
-Hand-off is currently only supported over DirectLine - [learn more about interacting with the bot over DirectLine](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-azure-bot-service-channels#sample-code-example). Upon hand-off, an event activity called `handoff.initiate` is raised and sent to the adapter. 
+Hand-off is currently only supported over DirectLine - [learn more about interacting with the bot over DirectLine](publication-connect-bot-to-azure-bot-service-channels.md#sample-code-example). Upon hand-off, an event activity called `handoff.initiate` is raised and sent to the adapter. 
 
 You can see a [full sample hand-off message activity on our GitHub site](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/ConnectToEngagementHub/activities.json).
 
