@@ -21,13 +21,6 @@ A Center of Excellence (CoE) in an organization drives innovation and improvemen
 
 The Power Platform Center of Excellence (CoE) starter kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting the Power Platform, with a focus on Power Apps and Power Automate.
 
-|  |  |  |  |  |  |
-|---------|---------|---------|---------|---------|---------|---------|
-|![](media/caf-strategy.png) | **Strategy** <br /> Define business justification and expected outcomes.     |![](media/caf-plan.png) | **Plan**  <br /> Align actionable adoption plans to business outcomes.     |![](media/caf-ready.png) | **Ready** <br />   Prepare the cloud environment for the planned changes.       |
-|![](media/caf-migrate.png) | **Migrate**  <br />  Migrate and modernize existing workloads.  |![](media/caf-adopt.png) | **Innovate**   <br /> Develop new cloud-native or hybrid solutions.    | ![](media/caf-govern.png) | **Govern**  <br /> Govern the environment and workloads.     |
-|![](media/caf-manage.png) | **Manage** <br /> Operations management for cloud and hybrid solutions.    |   |  | |  |
-
-
-
-
-
+|  |  |  |  |  |  |  |  |
+|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+|<img src="media/i_overview.svg" alt="Overview icon" width="80"/> <Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;| **Overview** <br /> Define goals and expected outcomes of your Center of Excellence<Br>[Overview](overview.md)<br>[Motivation](motivation.md)<br>[Download](<https://aka.ms/coestarterkitdownload>) <Br>&nbsp; |<img src="media/i_dashboard.svg" alt="Monitor icon" width="70"/> <Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;| **Monitor**  <br /> Gain  insights into your Power Platform Adoption<br>[Set up](setup-core-components)<br>[Use](core-components.md)<br>[Deep Dive](power-bi.md) <Br>&nbsp;    |<img src="media/i_setup.svg" alt="Govern icon" width="80"/><Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp; | **Govern** <br />   Establish audit and compliance processes <br>[Set up](setup-governance-components)<br>[Use](governance-components.md)<br>[Deep Dive](example-processes.md)<Br>&nbsp;<Br>&nbsp; | <img src="media/i_get-started.svg" alt="Nurture icon" width="80"/><Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp;<Br>&nbsp; | **Nurture** Accelerate your adoption by thriving with a community of makers <br>[Set up](setup-nurture-components)<br>[Use](nurture-components.md) |
