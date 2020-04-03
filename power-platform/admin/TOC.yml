@@ -185,7 +185,7 @@
             href: create-users-assign-online-security-roles.md
         - name: Audit and logs
           items: 
-          - name: Audit data and user activity for security and compliance
+          - name: Audit data and user activity
             href: audit-data-user-activity.md
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
