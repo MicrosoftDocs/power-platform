@@ -185,14 +185,10 @@
             href: create-users-assign-online-security-roles.md
         - name: Audit and logs
           items: 
-          - name: Audit log management
+          - name: Audit data and user activity for security and compliance
             href: audit-data-user-activity.md
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
-          - name: Audit summary view
-            href: audit-data-user-activity.md
-          - name: Entity and field audit settings
-            href: audit-data-user-activity.md
           - name: System jobs
             href: monitor-manage-system-jobs.md
         - name: Templates
