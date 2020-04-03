@@ -26,7 +26,7 @@ The Power Platform Center of Excellence (CoE) starter kit is a collection of com
       <img src="media/i_overview.svg" alt="Overview icon" width="80"/><br><br>**Overview** <br /> Define goals and expected outcomes of your Center of Excellence<Br><ul><li>[Overview](overview.md)</li><li>[Motivation](motivation.md)</li><li>[Download](<https://aka.ms/coestarterkitdownload>)</li></ul>
    :::column-end:::
    :::column span="":::
-      <img src="media/i_dashboard.svg" alt="Overview icon" width="70"/><br><br>**Monitor**  <br /> Gain  insights into your Power Platform Adoption<br><ul><li>[Set up](setup-core-components)</li><li>[Use](core-components.md)</li><li>[Deep Dive](power-bi.md)</li></ul>
+      <img src="media/i_dashboard.svg" alt="Overview icon" width="80"/><br><br>**Monitor**  <br /> Gain  insights into your Power Platform Adoption<br><ul><li>[Set up](setup-core-components)</li><li>[Use](core-components.md)</li><li>[Deep Dive](power-bi.md)</li></ul>
    :::column-end:::
    :::column span="":::
       <img src="media/i_setup.svg" alt="Overview icon" width="80"/><br><br>**Govern** <br />   Establish audit and compliance processes <br><ul><li>[Set up](setup-governance-components)</li><li>[Use](governance-components.md)</li><li>[Deep Dive](example-processes.md)</li></ul>
