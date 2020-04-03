@@ -97,7 +97,7 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
 
 17. Make the changes as indicated below for the layoutxml section:
 
-    ```xml
+    ```
     <layoutxml>
      <grid name="sharepointdocument" object="9507" jump="fullname" select="1" icon="0" preview="1">
       <row name="sharepointdocument" id="sharepointdocumentid">
@@ -128,7 +128,7 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
 
 18. Make the changes as below for the FetchXml section:
 
-    ```xml  
+    ```
     <fetch distinct="false" mapping="logical">
       <entity name="sharepointdocument">
         <attribute name="documentid" />
@@ -156,9 +156,9 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
     </fetch>
     ```  
 
-19. Similarly search the <SavedQuery> element where the **savedqueryid** attribute is equal to "a5b008ac-07d9-4554-8509-2c05767bff51".
+19. Similarly search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "a5b008ac-07d9-4554-8509-2c05767bff51".
 
-20. If the <SavedQuery> element found in step 19 is similar to <SavedQuery unmodified="1">, remove the **unmodified="n"** attribute.
+20. If the `<SavedQuery>` element found in step 19 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
 
 21. Search layoutxml of All SharePoint Document (search for *All SharePoint Document*).
 
@@ -167,7 +167,7 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
 
 22. Make the changes as indicated below for the layoutxml section:
 
-    ```xml
+    ```
     <layoutxml>
       <grid name="sharepointdocument" jump="fullname" select="1" icon="0" preview="1">
         <row name="sharepointdocument" id="sharepointdocumentid">
@@ -194,7 +194,7 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
 
 23. Make the changes as below for the FetchXml section:
 
-    ```xml
+    ```
     <fetch distinct="false" mapping="logical">
       <entity name="sharepointdocument">
         <attribute name="documentid" />
@@ -221,9 +221,9 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
     </fetch>
     ```
 
-24. Similarly search the <SavedQuery> element where the **savedqueryid** attribute is equal to "cb177797-b2ac-42a8-9773-5412321a965c".
+24. Similarly search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "cb177797-b2ac-42a8-9773-5412321a965c".
 
-25. If the <SavedQuery> element found in step 19 is similar to <SavedQuery unmodified="1">, remove the **unmodified="n"** attribute.
+25. If the `<SavedQuery>` element found in step 19 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
 
 26. Search layoutxml of OneNote SharePoint Document (search for *OneNote SharePoint Document*).
 
@@ -232,7 +232,7 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
 
 27. Make the changes as indicated below for the layoutxml section:
 
-    ```xml
+    ```
     <layoutxml>
       <grid name="sharepointdocument" jump="fullname" select="1" icon="0" preview="1">
         <row name="sharepointdocument" id="sharepointdocumentid">
@@ -257,7 +257,7 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
 
 28. Make the changes as below for the FetchXml section:
 
-    ```xml
+    ```
     <fetch distinct="false" mapping="logical">
       <entity name="sharepointdocument">
         <attribute name="documentid" />
