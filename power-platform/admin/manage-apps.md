@@ -27,9 +27,9 @@ You can manage apps from either the tenant level or the environment level.
 
 App management in the Dynamics 365 admin center **Application** tab is now done from the tenant-level view of apps in the Power Platform admin center.
 
-|Legacy  | New  |
+|Legacy app management  | New app management  |
 |---------|---------|
-| ![Legacy tenant view](media/app-management-legacy-application.png "Legacy tenant view")    | ![New tenant view](media/app-management-environment-view-sm.png "New tenant view")        |
+| ![Legacy tenant view](media/app-management-legacy-application.png "Legacy tenant view")    | ![New tenant view](media/app-management-tenant-view-sm.png "New tenant view")        |
 
 Follow these steps to see a list of all licensed applications for your tenant.
 
@@ -65,9 +65,9 @@ Follow these steps to see a list of all licensed applications for your tenant.
 
 Solution management in the Dynamics 365 admin center is now done from the environment-level view of apps in the Power Platform admin center.
 
-|Legacy  | New  |
+|Legacy app management  | New app management  | 
 |---------|---------|
-| ![Legacy solution view](media/select-solution-upgrade2.png "Legacy solution view")  | ![New tenant view](media/app-management-tenant-view-sm.png "New tenant view")        |
+| ![Legacy solution view](media/select-solution-upgrade2.png "Legacy solution view")  | ![New tenant view](media/app-management-environment-view-sm.png "New tenant view")        |
 
 Follow these steps to see a list of all the licensed applications you installed for your environment.
 
