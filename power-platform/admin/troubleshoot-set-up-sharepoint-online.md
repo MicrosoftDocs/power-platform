@@ -50,7 +50,7 @@ For more information, see [Enable SharePoint document management for specific en
 
 <!--The most common cause for the Documents associated grid not loading is the corrupted FetchXML and LayoutXML. These sections could be corrupted due to many reasons. The most common of them is through customizing the entity/grid view, adding/removing columns, and other similar customizations. -->
 
-Corrupted FetXML or LayoutXML can cause any of the following issues:
+Corrupted FetchXML or LayoutXML can cause any of the following issues:
 
 * Documents associated grid is missing
 * Unable to view folders
@@ -60,9 +60,9 @@ Corrupted FetXML or LayoutXML can cause any of the following issues:
 * Error Message – "System.NullReferenceException" while uploading a document
 * Document being downloaded instead of opening in new tab
 
-There can be many causes for FetXML or LayoutXML to be corrupted. The most common cause is customizing the entity/grid view, adding/removing columns, and other similar customizations.
+There can be many causes for FetchXML or LayoutXML to be corrupted. The most common cause is customizing the entity/grid view, adding/removing columns, and other similar customizations.
 
-If FetXML or LayoutXML are corrupted, use the following to restore.
+If FetchXML or LayoutXML are corrupted, use the following to restore.
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
@@ -223,7 +223,7 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
 
 24. Similarly search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "cb177797-b2ac-42a8-9773-5412321a965c".
 
-25. If the `<SavedQuery>` element found in step 19 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
+25. If the `<SavedQuery>` element found in step 24 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
 
 26. Search layoutxml of OneNote SharePoint Document (search for *OneNote SharePoint Document*).
 
@@ -294,7 +294,7 @@ If FetXML or LayoutXML are corrupted, use the following to restore.
 32. Navigate to **Settings** > **Solutions**
 33. Import the solution (zipped file in Step 8).
 34. Publish all customizations.
-35. Verify that any of the issues associated with the corrupted FetXML or LayoutXML are resolved. For example, verify that Document associated grid displays in all the required SharePoint documents.
+35. Verify that any of the issues associated with the corrupted FetchXML or LayoutXML are resolved. For example, verify that Document associated grid displays in all the required SharePoint documents.
 
 ## Validate and fix SharePoint site URLs
 
