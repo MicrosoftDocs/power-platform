@@ -23,6 +23,7 @@ If you purchased storage in or after April 2019, or you have a mix of before and
 
 > [!NOTE]
 > The calculation of capacity storage into three storage types - database, file, and log - is the same for the legacy licensing storage model and the new licensing storage model. What differs is the presentation of the storage information in the user interface. See [Determining your storage model](#determining-your-storage-model).
+> 
 > For more information on changes, see [What's new in storage](whats-new-storage.md).
 
 ## Determining your storage model
