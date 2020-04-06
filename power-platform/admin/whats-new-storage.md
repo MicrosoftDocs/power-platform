@@ -1,6 +1,6 @@
 ---
-title: What's new | Microsoft Docs
-description: Learn about what's new with administering the Power Platform admin center
+title: What's new for storage | Microsoft Docs
+description: Learn about what's new about storage
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -16,33 +16,42 @@ search.app:
   - Powerplatform
 ---
 
-# What's new 
+# What's new about storage
 
 We've made some key enhancements to admin experiences for the Power Platform admin center and the Dynamics 365 admin center:
 
 - Storage reporting is based on customer licenses and capacity add-on's.
-- Provisioning new environments is only done in the Power Platform admin center.
 - Changes for exceeding storage capacity entitlements.
 
 ## Updates to storage reporting
 
 In April 2019, we introduced Common Data Service capacity storage that is optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) receive a tenant-wide default entitlement for each of these three storage types and additional per user subscription license entitlements. Additional storage can be purchased in 1 GB increments. Existing customers are not impacted by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required. 
 
+
+![](media/storage-model-evolution.png "Evolution of data management")
+
+Some of the benefits of this change: 
+
+- Scalability with purpose-built storage management solutions
+- Ability to enable new business scenarios
+- Reduced need to [free storage space](free-storage-space.md)
+- Support for variety of data types
+- Additional default and full user entitlements
+- Flexibility to create new environments
+
+
 Following the introduction of Common Data Service capacity, we updated our capacity reporting to show database, file, and log entitlement for all our customers. This change in reporting is not visible to those still on the legacy licensing storage model.
 
-- If you are on the previous licensing model for storage, you will see a single capacity for entitlement. See [Legacy storage capacity](legacy-capacity-storage.md).
-- If you have transitioned to the new licensing model or have a mix of old and new license models, you will see the storage capacity entitlement and usage by database, file, and log. See [Common Data Service storage capacity](capacity-storage.md).
-- To determine which licensing model you're using, see [Determining your storage model](legacy-capacity-storage.md#determining-your-storage-model).
-
-## Provisioning new environments will only be handled in the Power Platform admin center
-
-Today, there are two admin centers for provisioning new environments – Dynamics 365 admin center and Power Platform admin center. We are working to move to a single provisioning experience in the Power Platform admin center. Look for notifications in the Dynamics 365 admin center and updated information in this topic for when this work is completed.
+> [!NOTE]
+> - If you are on the previous licensing model for storage, you will see a single capacity for entitlement. See [Legacy storage capacity](legacy-capacity-storage.md).
+> - If you have transitioned to the new licensing model or have a mix of old and new license models, you will see the storage capacity entitlement and usage by database, file, and log. See [Common Data Service storage capacity](capacity-storage.md).
+> - To determine which licensing model you're using, see [Determining your storage model](legacy-capacity-storage.md#determining-your-storage-model).
 
 ## Changes for exceeding storage capacity entitlements
 
 We are making changes for what happens when an organization's storage capacity usage is greater than the capacity entitled or purchased via add-ons.
 
-For now, if you exceed your storage capacity, you will receive notifications alerting you to the overage. In the future, certain admin  operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information.
+For now, if you exceed your storage capacity, you will receive notifications alerting you to the over capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin  operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information.
 
 Consider the following scenarios.
 
@@ -83,10 +92,10 @@ This tenant is 10GB over in log usage but has 20GB available in database capacit
 |Type  |Entitled  |Consumed  |
 |---------|---------|---------|
 |**Database**     | 100GB        | 20GB        |
-|**Log**     |  10GB       | 2GB        |
-|**File**     | 200GB        | 285GB        |
+|**Log**     |  10GB       | 5GB        |
+|**File**     | 200GB        | 290GB        |
 
-This tenant is 85GB over in log usage but has 88GB available (80GB database + 8GB log) in storage capacity. Therefore, there is no deficit.
+This tenant is 90GB over in log usage but has 85GB available (80GB database + 5GB log) in storage capacity. There is a deficit and this tenant should purchase more capacity but it will not receive over capacity alerts.
 
 ### Actions to take for a storage capacity deficit
 
@@ -95,7 +104,7 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 ### FAQ
 
 #### I have available instances (Production and Sandbox), but my capacity usage is more than capacity entitled. Will I be able to provision new environments? 
-No. You can only provision a new environment if you have at least 1GB available database capacity. 
+For now, you can provision a new environment if you have at least 1GB available database capacity. 
 
 #### I have storage licenses from the legacy licensing model and I also purchased new model storage licenses. Which report will I see?  
 You will see the report for the new licensing model. 
@@ -104,7 +113,7 @@ You will see the report for the new licensing model.
 You can buy more capacity to be compliant, and [free up](free-storage-space.md) or [delete](delete-environment.md) unused environments. 
 
 #### Do I get notified through email when my org is over capacity?  
-When you sign in to the Power Platform admin center, you will be notified if your capacity usage is more than the entitled capacity. We are also planning to send email notifications and will publish an update once this is available. 
+When you sign in to the Power Platform admin center, you will be notified if your capacity usage is more than the entitled capacity. 
 
 ### See also
 [Common Data Service storage capacity](capacity-storage.md) <br />

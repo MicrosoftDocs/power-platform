@@ -31,8 +31,6 @@
       href: support-overview.md
     - name: Determine your organization ID and name
       href: determine-org-id-name.md
-    - name: What's new
-      href: whats-new.md
     - name: Getting started
       items:
       - name: Power Apps overview
@@ -77,6 +75,8 @@
           href: analytics-flow.md
         - name: Power Apps analytics
           href: analytics-powerapps.md
+        - name: What's new for storage
+          href: whats-new-storage.md
         - name: Capacity storage
           href: capacity-storage.md
         - name: Legacy capacity storage

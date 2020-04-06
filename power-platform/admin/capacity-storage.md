@@ -17,19 +17,20 @@ search.app:
 ---
 # Common Data Service storage capacity 
 
-Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today’s organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
+Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
 > [!NOTE]
 > For introductory licensing information on the new capacity analytics model, see [Power Apps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
 > Common Data Service storage capacity is not available for Dynamics 365 US Government – GCC and GCC High, DOD, and Microsoft Dynamics 365 online services operated by 21Vianet.
 
+<!-- 
 We have updated our capacity analytics reporting to provide important benefits to our customers. Here is a summary of changes in capacity analytics.
 
 - New **Capacity** page is available in the Power Platform admin center.
--	Admins can visualize the data stored in Database, Files, and Logs. 
--	Entitlement information is added to the report to help customers understand available capacity of the tenant level.
--	Existing customers get entitlements for new types of capacity (File and Log) but are not impacted by the licensing change until renewal.
+-    Admins can visualize the data stored in Database, Files, and Logs. 
+-    Entitlement information is added to the report to help customers understand available capacity of the tenant level.
+-    Existing customers get entitlements for new types of capacity (File and Log) but are not impacted by the licensing change until renewal.
 
 The new capacity analytics reporting provides a single place to view your capacity data.
 
@@ -59,6 +60,7 @@ Some of the benefits of this change:
 - Support for variety of data types
 - Additional default and full user entitlements
 - Flexibility to create new environments
+-->
 
 ## Capacity page details
 
@@ -111,12 +113,12 @@ To view environment-level capacity analytics:
 
 Details provided:
 
--	Actual Database usage
--	Top Database tables and their growth over time
--	Actual File usage
--	Top Files tables and their growth over time
--	Actual Log usage
--	Top tables and their growth over time
+-    Actual Database usage
+-    Top Database tables and their growth over time
+-    Actual File usage
+-    Top Files tables and their growth over time
+-    Actual Log usage
+-    Top tables and their growth over time
 
 <!--
 Select **Applied filters** at the the top of the page to filter data for different time spans. 
@@ -132,7 +134,7 @@ Database storage includes both the database records as well as index files used 
 - Data volume or complexity changes
 - A change in usage patterns that indicate new indexes are  in need of reevaluated
 
-If Quick Find lookups are configured for data that is frequently used, this will also create additional indexes in the database. Admin configured “quick search” values can increase the size of the indexes based on:
+If Quick Find lookups are configured for data that is frequently used, this will also create additional indexes in the database. Admin configured "quick search" values can increase the size of the indexes based on:
 
 - The number of fields chosen and the data type of those fields
 - The volume of records for the entities and fields
@@ -151,12 +153,12 @@ As an existing customer, we have added File and Log capacity to your tenant auto
 ### I just bought the new capacity-based licenses. How do I provision an environment using this model?
 You can provision environments through the Power Platform admin center. For details, see [Create and manage environments in the Power Platform admin center](create-environment.md).
 
-### I’m an existing customer and have not purchased the new offers. The capacity report indicates I’m overusing the Database/File/Log, what should I do?
+### I'm an existing customer and have not purchased the new offers. The capacity report indicates I'm overusing the Database/File/Log, what should I do?
 If Database, you should not exceed the available Database capacity. Please consider [freeing storage space](free-storage-space.md) or purchase more storage capacity. 
 
 If File and Log, then there is no immediate action required. At renewal, you can use this report to get the right amount of capacity for Database, File, and Log.
 
-### I’m a new customer and I recently purchased with the new offers. My usage of Database/Log/File is showing red. What should I do?  
+### I'm a new customer and I recently purchased with the new offers. My usage of Database/Log/File is showing red. What should I do?  
 Consider buying additional capacity using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
 
 ### Where can I read more about the new capacity offers?
@@ -171,7 +173,7 @@ If you have an existing agreement, you are not impacted with the current change.
 ### I'm an existing customer and my renewal is coming up. Will I be impacted?
 Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
 
-### I’m a Power Apps/Power Automate customer and have environments with and without Database. Will they consume storage capacity? 
+### I'm a Power Apps/Power Automate customer and have environments with and without Database. Will they consume storage capacity? 
 Yes. All environments will consume 1GB, regardless of whether or not they have an associated Database.
 
 ### Why am I no longer getting storage notifications?
