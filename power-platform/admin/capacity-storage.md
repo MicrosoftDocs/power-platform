@@ -75,7 +75,7 @@ To view the **Summary** page, select **Analytics** > **Capacity** > **Summary** 
 
 |  |Description |
 |---------|---------|
-|(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-box (OOB) entity that has fields of datatype File or Image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
+|(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-box (OOB) entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
 |(2)    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every User License purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)    |**What's new**: Used for announcements and notifications  |
 |(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
@@ -113,11 +113,11 @@ To view environment-level capacity analytics:
 
 Details provided:
 
--    Actual Database usage
--    Top Database tables and their growth over time
--    Actual File usage
--    Top Files tables and their growth over time
--    Actual Log usage
+-    Actual database usage
+-    Top database tables and their growth over time
+-    Actual file usage
+-    Top files tables and their growth over time
+-    Actual log usage
 -    Top tables and their growth over time
 
 <!--
@@ -127,7 +127,7 @@ Select **Applied filters** at the the top of the page to filter data for differe
 > ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
 -->
 
-## Database Storage Usage
+## Database storage usage
 Database storage includes both the database records as well as index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. An increased size or number of indexes will consume additional storage on the database. Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-box, or part of an update or solution installation)
@@ -148,17 +148,17 @@ Since custom Quick Find lookups are created by an admin in the org, these can be
 ## FAQ
 
 ### I see the new Capacity Report, but I have not purchased the new capacity offers. How do I interpret the report?
-As an existing customer, we have added File and Log capacity to your tenant automatically based on your existing licenses. Because you are currently in an agreement under the old offers, you are not impacted. Make sure your Database consumption is per the entitlement. You are not expected to take any action for File and Log. At renewal, you can use this report to get the right amount of capacity for Database, File, and Log.
+As an existing customer, we have added file and log capacity to your tenant automatically based on your existing licenses. Because you are currently in an agreement under the old offers, you are not impacted. Make sure your database consumption is per the entitlement. You are not expected to take any action for file and log. At renewal, you can use this report to get the right amount of capacity for database, file, and log.
 
 ### I just bought the new capacity-based licenses. How do I provision an environment using this model?
 You can provision environments through the Power Platform admin center. For details, see [Create and manage environments in the Power Platform admin center](create-environment.md).
 
-### I'm an existing customer and have not purchased the new offers. The capacity report indicates I'm overusing the Database/File/Log, what should I do?
-If Database, you should not exceed the available Database capacity. Please consider [freeing storage space](free-storage-space.md) or purchase more storage capacity. 
+### I'm an existing customer and have not purchased the new offers. The capacity report indicates I'm overusing the database/file/log, what should I do?
+If database, you should not exceed the available database capacity. Please consider [freeing storage space](free-storage-space.md) or purchase more storage capacity. 
 
-If File and Log, then there is no immediate action required. At renewal, you can use this report to get the right amount of capacity for Database, File, and Log.
+If file and log, then there is no immediate action required. At renewal, you can use this report to get the right amount of capacity for database, file, and log.
 
-### I'm a new customer and I recently purchased with the new offers. My usage of Database/Log/File is showing red. What should I do?  
+### I'm a new customer and I recently purchased with the new offers. My usage of database/log/file is showing red. What should I do?  
 Consider buying additional capacity using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
 
 ### Where can I read more about the new capacity offers?
@@ -167,14 +167,14 @@ Download the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544)
 ### I am an existing customer, will I be immediately impacted by this change?
 No, there is no immediate change for existing customers as your current term will be honored for the duration of your agreement. 
 
-### I'm an existing customer with an EA agreement. Should I go buy File and Log capacity?
-If you have an existing agreement, you are not impacted with the current change. We have added File and Log capacity to your current entitlement which reduces your Database capacity. Until renewal, you can continue with the current plan.
+### I'm an existing customer with an EA agreement. Should I go buy file and log capacity?
+If you have an existing agreement, you are not impacted with the current change. We have added file and log capacity to your current entitlement which reduces your database capacity. Until renewal, you can continue with the current plan.
 
 ### I'm an existing customer and my renewal is coming up. Will I be impacted?
 Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
 
-### I'm a Power Apps/Power Automate customer and have environments with and without Database. Will they consume storage capacity? 
-Yes. All environments will consume 1GB, regardless of whether or not they have an associated Database.
+### I'm a Power Apps/Power Automate customer and have environments with and without database. Will they consume storage capacity? 
+Yes. All environments will consume 1GB, regardless of whether or not they have an associated database.
 
 ### Why am I no longer getting storage notifications?
 We have disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity )** page to monitor usage.
@@ -182,11 +182,11 @@ We have disabled email notifications with the move to the new storage model. Rev
 ### How can I reduce consumed storage space?
 See the following: [Free storage space](free-storage-space.md).
 
-### I'm an existing customer. Should I expect my File and Log usage to change?
-Log and Files data usage is not expected to be exactly the same size as when the same data is stored using Database due to different storage and indexing technologies. The current set of out-of-box (OOB) entities stored in File and Log might change in the future.
+### I'm an existing customer. Should I expect my file and log usage to change?
+Log and files data usage is not expected to be exactly the same size as when the same data is stored using database due to different storage and indexing technologies. The current set of out-of-box (OOB) entities stored in file and log might change in the future.
 
 ### Capacity report shows the entitlement breakdown by per license, but I have more licenses in my tenant and not all of them are listed in the breakdown, why?
-Not all licenses give per user entitlement. For example, the team member license does not give any per user Database/File/Log entitlement. So in this case, the licenses that do not give any per user entitlement will not be listed in the breakdown.
+Not all licenses give per user entitlement. For example, the team member license does not give any per user database/file/log entitlement. So in this case, the licenses that do not give any per user entitlement will not be listed in the breakdown.
 
 ### When is table data expected to show in the report?
 Check back for availability. In addition to top tables, we will also show the table trend.
