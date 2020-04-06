@@ -47,7 +47,7 @@ The new licensing storage model looks like this:
 > ![](media/capacity-new-license-model.png "New licensing storage model")
 
 ### See also
-[Common Data Service storage capacity](capacity-storage.md)
+[Common Data Service storage capacity](capacity-storage.md) <br />
 [What's new](whats-new-storage.md)
 
 
