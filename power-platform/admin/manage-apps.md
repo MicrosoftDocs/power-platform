@@ -19,23 +19,13 @@ search.app:
 
 You can now install, configure, and manage Dynamics 365 apps in the Power Platform admin center.
 
-
-Previously, you managed applications such as [preferred solutions](install-remove-preferred-solution.md), through the Dynamics 365 admin center.  
-
-![Select solution and upgrade](media/select-solution-upgrade2.png "Select solution and upgrade")
-
-You can now install, configure, and manage Dynamics 365 apps in the Power Platform admin center by selecting **Resources** > **Dynamics 365 apps**.
-
-> [!div class="mx-imgBorder"] 
-> ![Manage apps](media/app-management.png "Manage apps")
-
 Apps in this topic refer to model-driven applications in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) as well as apps purchased from Microsoft AppSource.
 
 You can manage apps from either the tenant level or the environment level.
 
 ## Tenant-level view of apps
 
-App management in the Dynamics 365 admin center **Application** tab is now done in the Power Platform admin center.
+App management in the Dynamics 365 admin center **Application** tab is now done from the tenant-level view of apps in the Power Platform admin center.
 
 |Legacy  | New  |
 |---------|---------|
@@ -73,7 +63,7 @@ Follow these steps to see a list of all licensed applications for your tenant.
 
 ## Environment-level view of apps
 
-Solution management in the Dynamics 365 admin center is now done in the Power Platform admin center.
+Solution management in the Dynamics 365 admin center is now done from the environment-level view of apps in the Power Platform admin center.
 
 |Legacy  | New  |
 |---------|---------|
