@@ -22,7 +22,8 @@ In April 2019, we introduced Common Data Service capacity storage that is optimi
 If you purchased storage in or after April 2019, or you have a mix of before and after April 2019 storage purchases, you will see your storage capacity entitlement and usage by database, file, and log as it appears in the Power Platform admin center today. For more information, see [Common Data Service storage capacity](capacity-storage.md).
 
 > [!NOTE]
-> For information on recent changes, see [What's new](whats-new-storage.md).
+> The calculation of capacity storage into three storage types - database, file, and log - is the same for the legacy licensing storage model and the new licensing storage model. What differs is the presentation of the storage information in the user interface. See [Determining your storage model](#determining-your-storage-model).
+> For more information on changes, see [What's new in storage](whats-new-storage.md).
 
 ## Determining your storage model
 
