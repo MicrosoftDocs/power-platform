@@ -1,5 +1,5 @@
 ---
-title: Manage apps created in your organization | Microsoft Docs
+title: Manage Power Apps | Microsoft Docs
 description: Walkthrough of how to manage Power Apps apps created in your organization
 author: jimholtz
 ms.service: power-platform
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
 ---
 
-# Manage apps created in your organization 
+# Manage Power Apps
 If you're an Environment Admin, Global admin, or Power Platform admin, you can manage the apps created in your organization.
 
 Admins can do the following from the Power Apps Admin center:

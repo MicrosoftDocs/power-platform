@@ -89,8 +89,6 @@
      href: configuration-fundamentals.md
    - name: Configure end-user authentication
      href: configuration-end-user-authentication.md
-   - name: Configure hand-off to a generic engagement hub
-     href: configure-generic-handoff.md
    - name: Configure hand-off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
    - name: Customize the look and feel of the bot

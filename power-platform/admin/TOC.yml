@@ -31,6 +31,8 @@
       href: support-overview.md
     - name: Determine your organization ID and name
       href: determine-org-id-name.md
+    - name: What's new
+      href: whats-new.md
     - name: Getting started
       items:
       - name: Power Apps overview
@@ -61,7 +63,7 @@
           href: update-apps-to-unified-interface.md
         - name: Enable the hybrid experience
           href: enable-hybrid-experience.md
-    - name: Environments
+    - name: Environments 
       items:
       - name: Opt in to early access updates
         href: opt-in-early-access-updates.md
@@ -75,22 +77,29 @@
           href: analytics-flow.md
         - name: Power Apps analytics
           href: analytics-powerapps.md
-        - name: Capacity
+        - name: Capacity storage
           href: capacity-storage.md
+        - name: Legacy capacity storage
+          href: legacy-capacity-storage.md
         - name: View self-service capacity
           href: view-self-service-capacity.md
         - name: Add-on capacity management
           href: capacity-add-on.md
         - name: Free storage space
           href: free-storage-space.md
-    #  - name: View and manage resources
-    #    href: view-manage-resources.md
-      - name: Manage environments
+      - name: View and manage resources
+     #   href: view-manage-resources.md
+        items:
+        - name: Manage Dynamic 365 apps
+          href: manage-apps.md
+        - name: Manage Power apps 
+          href: admin-manage-apps.md
+        - name: Portal administration
+          href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
+      - name: Manage environments 
         items:
         - name: Environments overview
           href: environments-overview.md
-    #    - name: What's new with environments
-    #      href: environments-whats-new.md
         - name: Create environments
           href: create-environment.md
         - name: Edit environment properties
@@ -495,8 +504,8 @@
         href: notifications-explained.md 
       - name: View apps in your environments 
         href: admin-view-apps.md
-      - name: Manage apps in your org 
-        href: admin-manage-apps.md
+   #   - name: Manage apps in your org 
+   #     href: admin-manage-apps.md
       - name: Move an app between tenants or environments 
         href: environment-and-tenant-migration.md
       - name: Embed an app in Teams
