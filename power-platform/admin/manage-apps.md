@@ -25,7 +25,7 @@ You can manage apps from either the tenant level or the environment level.
 
 ## Tenant-level view of apps
 
-App management in the Dynamics 365 admin center **Application** tab is now done from the tenant-level view of apps in the Power Platform admin center.
+App management in the Dynamics 365 admin center **Applications** tab is now done from the tenant-level view of apps in the Power Platform admin center.
 
 |Legacy app management  | New app management  |
 |---------|---------|
