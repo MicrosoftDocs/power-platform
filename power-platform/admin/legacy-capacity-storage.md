@@ -48,6 +48,6 @@ The new licensing storage model looks like this:
 
 ### See also
 [Common Data Service storage capacity](capacity-storage.md) <br />
-[What's new](whats-new-storage.md)
+[What's new in storage](whats-new-storage.md)
 
 
