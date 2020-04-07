@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Set up security permissions for a field 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 You can restrict access to a field by creating a field security profile. After you create the profile, you assign users and or teams to that profile, and set up specific read, create, or write permissions for the field.  
   
@@ -31,7 +31,7 @@ You can restrict access to a field by creating a field security profile. After y
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
+2. In the web app, go to **Settings** > **Security**.
   
 3. Click **Field Security Profiles**, and then on the command bar, click **New**.  
   

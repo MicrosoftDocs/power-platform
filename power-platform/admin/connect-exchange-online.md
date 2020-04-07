@@ -17,7 +17,7 @@ search.app:
 ---
 # Connect to Exchange Online
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 With both model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] hosted as online services, connecting the two is a simpler, more straightforward configuration.  
   
@@ -39,31 +39,31 @@ With both model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Cust
 -   [Office 365 service comparison](https://technet.microsoft.com/office/dn788955)  
   
 > [!TIP]
->  To make sure you’ve got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
+>  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
   
 <a name="BKMK_VerifyProfile"></a>   
 
 ## Verify you have the profile: Microsoft Exchange Online  
  If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, model-driven apps in Dynamics 365 create a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
   
-1. Go to **Settings** > **Email Configuration** > **Email Server Profiles**.  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Server profiles**.  
   
-2. Select **Active Email Server Profiles** and check that the **Microsoft Exchange Online** profile is in the list.  
+3. Select **Active Email Server Profiles** and check that the **Microsoft Exchange Online** profile is in the list. If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your subscription.  
   
-   ![Verify the Microsoft Exchange Online profile](../admin/media/exchange-online-profile.png "Verify the Microsoft Exchange Online profile")  
-  
-    If the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile is missing, verify you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription and that it exists in the same tenant as your subscription.  
-  
-3. If there are multiple profiles, select the **Microsoft Exchange Online** profile and set it as default.  
+4. If there are multiple profiles, select the **Microsoft Exchange Online** profile and set it as default.  
   
 <a name="BKMK_ConfigureDefault"></a>   
 
 ## Configure default email processing and synchronization  
  Set server-side synchronization to be the default configuration method for newly created users.  
   
-1. Go to **Settings** > **Email Configuration** > **Email Configuration Settings**.  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Email settings**.  
   
-2. Set the processing and synchronization fields as follows:  
+3. Set the processing and synchronization fields as follows:  
   
    - **Server Profile**: [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)]  
   
@@ -71,11 +71,9 @@ With both model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Cust
   
    - **Outgoing Email**: Server-Side Synchronization or Email Router  
   
-   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router  
+   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization
   
-   ![System Settings for server-side synchronization](../admin/media/exchange-online-sss-settings.png "System Settings for server-side synchronization")  
-  
-3. Select **OK**.  
+4. Select **Save**.  
   
 All new users will have these settings applied to their mailbox.  
   
@@ -90,7 +88,7 @@ All new users will have these settings applied to their mailbox.
   
 ### Set mailboxes to the default profile  
   
-1. Go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
   
 2. Choose **Active Mailboxes**.  
   
@@ -102,7 +100,7 @@ All new users will have these settings applied to their mailbox.
   
 ### Edit mailboxes to set the profile and delivery methods  
   
-1.  Go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1.  In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
   
 2.  Select **Active Mailboxes**.  
   
@@ -147,12 +145,12 @@ The following table describes the permissions required to approve emails.
 <table>
   <tr>
     <th colspan="2">Security roles /<br />Applications in use</th>
-    <th colspan="2">Both roles required:<br />Office 365 Global admin<br />and <br />System admin</th>
+    <th colspan="2">Both roles required:<br />Global admin<br />and <br />System admin</th>
     <th colspan="2">Both roles required:<br />Exchange admin<br />and <br />System admin</th>
     <th>System admin</th>
     <th>Service admin</th>
     <th>Exchange admin</th>
-    <th>Office 365 Global admin</th>
+    <th>Global admin</th>
   </tr>
   <tr>
     <td rowspan="2">Model-driven apps in Dynamics 365</td>
@@ -210,16 +208,21 @@ Follow these steps to approve email addresses for users and queues. By default, 
 To approve emails, a Dynamics user requires the **Approve Email Addresses for Users or Queues** privilege.  A system admin can assign the **Approve Email Addresses for Users or Queues** privilege to any security role and assign the security role to any user. 
 
 To manually assign the **Approve Email Addresses for Users or Queues** privilege to a security role: 
-1. Go to **Settings** > **Security** > **Security Roles**. 
-2. Select a security role, and then select the **Business Management** tab. 
-3. Under **Miscellaneous Privileges**, set the privilege level for **Approve Email Addresses for Users or Queues**.
+
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Users + permissions** > **Security roles**.  
+
+3. Select a security role, and then select the **Business Management** tab. 
+
+4. Under **Miscellaneous Privileges**, set the privilege level for **Approve Email Addresses for Users or Queues**.
   
 > [!div class="mx-imgBorder"] 
 > ![](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
 
 #### Approve mailboxes
 
-1. Go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
   
 2. Select **Active Mailboxes**.  
   
@@ -231,20 +234,19 @@ To manually assign the **Approve Email Addresses for Users or Queues** privilege
 
 Admins, as described in the Permission model table, can change the settings so mailbox approval is not required.
 
-1. Go to **Settings** > **Administration** > **System Settings** > **Email tab**. 
+1. In the Power Platform admin center, select an environment. 
 
-2. Under **Email processing for unapproved user and queues**, uncheck **Process emails only for approved users** and **Process emails only for approved queues**. These settings are enabled by default.
+2. Select **Settings** > **Email** > **Email settings**.  
 
-3. Select **OK**.
+2. Under **Security and permissions**, **Process emails only for approved users** and **Process emails only for approved queues** to **Off**. These settings are enabled by default.
 
-   > [!div class="mx-imgBorder"] 
-   > ![](media/email-processing-for-unapproved.png "Email processing for unapproved user and queues")   
+3. Select **Save**.
 
 <a name="BKMK_TestConfiguration"></a>   
 
 ## Test configuration of mailboxes  
-  
-1. Go to **Settings** > **Email Configuration** > **Mailboxes**.  
+
+1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
   
 2. Select **Active Mailboxes**.  
   
@@ -261,24 +263,26 @@ Admins, as described in the Permission model table, can change the settings so m
   
    You can find information on recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md).  
   
-   Make sure you’ve got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] by running the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
+   Make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] by running the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
   
 > [!TIP]
->  If you’re unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
+>  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
   
 <a name="BKMK_TestEmailConfig"></a>   
 
-## Test email configuration for all mailboxes associated with an email server profile  
+## Test email configuration for all mailboxes associated with an email server profile 
+
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Server profiles**.  
   
-1. Go to **Settings** > **Email Configuration** > **Email Server Profiles**.  
+3. Select the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, and then select **Test & Enable Mailboxes**.  
   
-2. Select the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, and then select **Test & Enable Mailboxes**.  
-  
-    When you test the email configuration, an asynchronous job runs in the background. It may take a few minutes for the test to be completed. Model-driven apps in Dynamics 365 test the email configuration of all the mailboxes associated with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they’re configured properly.  
+    When you test the email configuration, an asynchronous job runs in the background. It may take a few minutes for the test to be completed. Model-driven apps in Dynamics 365 test the email configuration of all the mailboxes associated with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
   
 > [!TIP]
->  If you’re unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
+>  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
   
 ### See also  
- [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
- [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)   
+[Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
+[Test mail flow by validating your Office 365 connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   

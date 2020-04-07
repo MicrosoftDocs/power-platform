@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/01/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -34,7 +34,7 @@ In addition to the features and capabilities of Power Apps, organizations that u
 - Access to your organization's customer content is restricted to screened Microsoft personnel.
 - Power Apps US Government complies with certifications and accreditations that are required for US public sector customers.
 
-Beginning September, 2019, eligible customers may now choose to deploy Power Apps US Government to the “GCC High” environment, which enables single sign-on and seamless integration with Office 365 GCC High deployments. Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Apps US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
+Beginning September, 2019, eligible customers may now choose to deploy Power Apps US Government to the "GCC High" environment, which enables single sign-on and seamless integration with Office 365 GCC High deployments. Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Apps US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
 
 ## Customer eligibility
 
@@ -96,7 +96,7 @@ Power Apps US Government is designed to support the Federal Risk and Authorizati
 
 Note that, at the present time, the Power Apps US Government services are under review with FedRAMP but have been granted a Security Assessment Report (SAR) by a qualified Third Party Assessment Organization ([3PAO](https://www.fedramp.gov/3pao-requirements-update/)). As Microsoft moves to refresh FedRAMP artifacts as part of the standard audit cycles, content will be updated accordingly.
 
-Power Apps US Government has features designed to support customer’s CJIS Policy requirements for law enforcement agencies. Please visit the Power Apps US Government products page in Trust Center for more detailed information related to certifications and accreditations.
+Power Apps US Government has features designed to support customer's CJIS Policy requirements for law enforcement agencies. Please visit the Power Apps US Government products page in Trust Center for more detailed information related to certifications and accreditations.
 
 Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate our US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Apps US Government GCC High deployment option, which enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC which leverages Public Azure AD. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations.
 
@@ -110,20 +110,20 @@ If you adopt the use of Active Directory Federation Services (AD FS) 2.0 and set
 
 ## Power Apps US Government and third-party services
 
-Power Apps US Government provides the ability to integrate third-party applications into the service through [connectors](https://docs.microsoft.com/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the Power Apps US Government infrastructure and therefore are not covered by the Power Apps US Government compliance and data protection commitments.
+Power Apps US Government provides the ability to integrate third-party applications into the service through [connectors](https://docs.microsoft.com/connectors/index). These third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Power Apps US Government infrastructure and therefore are not covered by the Power Apps US Government compliance and data protection commitments.
 
 We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
 ## Power Apps US Government and Azure services
 
-The Power Apps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Power Apps US Government accreditation boundary, but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
+The Power Apps US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Power Apps US Government accreditation boundary, but takes a reliance on a customer's [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
-When a user of an organization employing AD FS attempts to access Power Apps US Government, the user is redirected to a login page hosted on the organization’s AD FS server.
-The user provides his or her credentials to their organization's AD FS server. The organization's AD FS server attempts to authenticate the credentials using the organization’s Active Directory infrastructure.
+When a user of an organization employing AD FS attempts to access Power Apps US Government, the user is redirected to a login page hosted on the organization's AD FS server.
+The user provides his or her credentials to their organization's AD FS server. The organization's AD FS server attempts to authenticate the credentials using the organization's Active Directory infrastructure.
 
-If authentication is successful, the organization’s AD FS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user’s identity and group membership.
+If authentication is successful, the organization's AD FS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user's identity and group membership.
 
-The customer’s AD FS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Azure AD via encrypted Transport Layer Security (TLS). Azure AD validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
+The customer's AD FS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Azure AD via encrypted Transport Layer Security (TLS). Azure AD validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
 
 The user's identity and group membership information remain encrypted in Azure AD. In other words, only limited user-identifiable information is stored in Azure AD.
 
@@ -141,7 +141,7 @@ You use a different set of URLs to access Power Apps US Government environments,
 | <https://flow.microsoft.com/connectors> | <https://gov.flow.microsoft.us/connectors><br /><https://high.flow.microsoft.us/connectors> (GCC High)  |
 | <https://admin.powerplatform.microsoft.com> | <https://gcc.admin.powerplatform.microsoft.us><br /><https://high.admin.powerplatform.microsoft.us> (GCC High) |
 
-For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users’ access points:
+For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users' access points:
 
 **GCC Customers:**
 
@@ -209,7 +209,7 @@ The mobile application will now use the US Government Cloud domain to look up us
 
 Install an [on-premises data gateway](https://docs.microsoft.com/powerapps/maker/canvas-apps/gateway-management) to transfer data quickly and securely between a canvas app that's built in Power Apps and a data source that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site.
 
-If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. However, if you are unable to connect to your tenant, you might need to go through a “whitelisting” process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
+If your organization (tenant) has already configured and successfully connected the on-premises data gateway for Power BI US Government, then the process and configuration your organization executed to enable that will also enable on-premises connectivity for Power Apps. However, if you are unable to connect to your tenant, you might need to go through a "whitelisting" process, which will enable this capability for your tenant. Should this occur, please open a support ticket to address your needs. The support team will follow an established process to address your request.
 
 ## Power Apps US Government feature limitations
 
@@ -223,11 +223,13 @@ Some of the features available in the commercial version of Power Apps are not a
 
 - [Common Data Service analytics](analytics-common-data-service.md).
 
-- [Mobile push notifications](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-notifications).
-
 - [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request.
 
 - [Customize a SharePoint list form by using Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form).
+
+- [Dataflows in Power Apps](https://docs.microsoft.com/powerapps/maker/common-data-service/create-and-use-dataflows)
+
+- [AI Builder](https://docs.microsoft.com/ai-builder/) is not yet available for GCC and GCC High tenants.
 
 ## Requesting support
 

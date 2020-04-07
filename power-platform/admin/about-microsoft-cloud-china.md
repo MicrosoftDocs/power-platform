@@ -43,7 +43,7 @@ OSPA = Online Services Premium Agreement<br />
 OSSA = Online Services Standard Agreement<br />
 CSP = Cloud Solution Provider
 
-For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](https://docs.microsoft.com/power-platform/admin/create-environment).
+For information on provisioning environments, see [Create and manage environments in the Power Platform admin center](https://docs.microsoft.com/power-platform/admin/create-environment).
 
 ## Features not available
 

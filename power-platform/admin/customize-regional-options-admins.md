@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 03/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,16 +17,12 @@ search.app:
 ---
 # Customize regional options 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
 You can customize how numbers, currencies, times, and dates appear to everyone in your organization.  
   
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **Business** > **Regional formatting**.
-
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
 
 - Follow the steps in [View your user profile](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
+- Don't have the correct permissions? Contact your system administrator.
   
 1. Select an environment and go to **Settings** > **Business** > **Regional formatting**.
 

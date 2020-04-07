@@ -141,13 +141,13 @@ During this transition period reporting would be made available to customers whi
 
 ### What tools can admin use to monitor/analyze API requests across the platform?
 
-Usage reports and monitoring capabilities would be made available in Power Platform Admin Center soon and would be the best way to monitor/analyze usage for API requests. 
+Usage reports and monitoring capabilities would be made available in Power Platform admin center soon and would be the best way to monitor/analyze usage for API requests. 
 
 ### Do the Power Platform Requests entitlements roll over from day to day or month to month?
 
 No. All the power platform request entitlements are calculated on a rolling 24-hour period. If they are not consumed, they don’t roll over to the next day or next month.
 
-### Will the requests generated from Async workflows and Plug-ins in CDS count against the Request limits?
+### Will the requests generated from Async workflows and Plug-ins in Common Data Service count against the Request limits?
 
 Yes, if these requests are making CRUD, assign or share type of calls, they would count. However, calls generated internally from the platform are not going to be accounted.
 

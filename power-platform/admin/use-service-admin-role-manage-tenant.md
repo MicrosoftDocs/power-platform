@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 03/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -26,14 +26,14 @@ There are two Power Platform related service admin roles you can assign to provi
 The Dynamics 365 service admin can:
 
 - Sign in to and manage multiple environments. If an environment uses a security group, a service admin would need to be added to the security group in order to manage that environment. Not assigning to an in place security group essentially locks these admins out of any admin management. 
-- Perform admin functions in Power Platform because they have the system admin role. The service admin must be assigned a license.  
+- Perform admin functions in Power Platform because they have the system admin role.  
 
 ## Power Platform administrator 
   
- Users with the Power Platform admin role can:  
+ Users with the Power Platform service admin role can:  
   
 - Sign in to and manage multiple environments. Power Platform admins **are not affected** by security group membership and can manage environments even if not added to an environment's security group.
-- Perform admin functions in Power Platform because they have the system admin role. The Power Platform admin must be assigned a license.  
+- Perform admin functions in Power Platform because they have the system admin role.
   
 Both service admin roles cannot do functions restricted to the Microsoft 365 global admin such as manage user accounts, manage subscriptions, access settings for Microsoft 365 apps like Microsoft Exchange or Microsoft SharePoint.  
   
@@ -47,7 +47,7 @@ Follow these steps to assign a service admin role.
   
 3. Select to expand **Show all by category**.
 
-4. Under **Collaboration** select either **Dynamics 365 service administrator** or **Power Platform administrator**. 
+4. Under **Collaboration** select either **Dynamics 365 administrator** or **Power Platform administrator**. 
   
 5. Select **Save changes**.
 
@@ -59,24 +59,26 @@ The following matrix shows what management is possible with the various service 
 |---------|---------|---------|---------|---------|
 |**POWER PLATFORM** |||||  
 |**Environments** |||||  
-|Create|Yes|Yes|<sup>*</sup>Yes|No|  
-|Backup and restore|Yes|Yes| <sup>*</sup>Yes|No|  
-|Copy |Yes|Yes|<sup>*</sup>Yes|No|  
+|Full access<sup>1</sup> |Yes|Yes|Yes<sup>2</sup>|No|  
+|Create|Yes|Yes|Yes<sup>2</sup>|No|  
+|Backup and restore|Yes|Yes| Yes<sup>2</sup>|No|  
+|Copy |Yes|Yes|Yes<sup>2</sup>|No|  
+|Ability to exclude access from selected environments (using security groups) |No|No|Yes|Yes|  
 |**Analytics**|||||
-|Capacity|Yes|Yes|<sup>*</sup>Yes|No|  
-|Capacity allocation (Power Apps per app plans, Power Automate, AI Builder, and Portal) |Yes|Yes|<sup>*</sup>Yes|No|
-|Common Data Service|Yes|Yes|<sup>*</sup>Yes|No|  
-|Power Automate|Yes|Yes|<sup>*</sup>Yes|No|  
-|Power Apps|Yes|Yes|<sup>*</sup>Yes|No|  
+|Capacity|Yes|Yes|Yes<sup>2</sup>|No|  
+|Capacity allocation (Power Apps per app plans, Power Automate, AI Builder, and Portal) |Yes|Yes|Yes<sup>2</sup>|No|
+|Common Data Service|Yes|Yes|Yes<sup>2</sup>|No|  
+|Power Automate|Yes|Yes|Yes<sup>2</sup>|No|  
+|Power Apps|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Help + support**|||||
-|Create and access support requests|Yes|Yes|<sup>*</sup>Yes|No|  
+|Create and access support requests|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data integration**|||||
-|Create new project and connection set|Yes|Yes|<sup>*</sup>Yes|No|  
+|Create new project and connection set|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data gateways**|||||
-|View gateways|Yes|Yes|<sup>*</sup>Yes|No|  
+|View gateways|Yes|Yes|Yes<sup>2</sup>|No|  
 |**Data policies**|||||
-|View and manage tenant policies|Yes|Yes|<sup>*</sup>Yes|No|  
-|View and manage environment policies|Yes|Yes|<sup>*</sup>Yes|No|  
+|View and manage tenant policies|Yes|Yes|Yes<sup>2</sup>|No|  
+|View and manage environment policies|Yes|Yes|Yes<sup>2</sup>|No|  
 ||||||
 |**POWER BI**|||||  
 |Manage the Power BI tenant|Yes|Yes|No|Yes|  
@@ -87,7 +89,10 @@ The following matrix shows what management is possible with the various service 
 |Add security roles|Yes|No|No|No|  
 |Add licenses|Yes|No|No|No|  
 
-<sup>*</sup>If a security group is assigned to the environment and the user with this role added to the security group
+<sup>1</sup>Equivalent permission level to a System Administrator. Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment - if the user has a suitable license.
+
+<sup>2</sup>If a security group is assigned to the environment and the user with this role added to the security group
+
 
 ### See also  
 [Environments overview](environments-overview.md)<br />

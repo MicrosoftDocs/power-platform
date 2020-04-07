@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 02/25/2020
 ms.author: deonhe
 search.audienceType: 
   - admin
@@ -17,14 +17,24 @@ search.app:
 ---
 # Admin Analytics for Microsoft Power Automate
 
-Environment admins can access analytics for Power Automate in the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with flows. 
+Environment admins can access analytics for Power Automate in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with flows. 
 
 To access these reports:
 
 1. Go to the navigation bar on the left side.
-1. Select **Analytics**.
-1. Select **Microsoft Power Automate**.
-1. View the reports on the right side.
+2. Select **Analytics**.
+3. Select **Microsoft Power Automate**.
+4. View the reports on the right side.
+
+## Who can view these reports?
+
+Admins with the following roles can view the reports in Power Automate analytics:
+- Environment Admin - can view reports for the environments that the admin has access to.
+- Power Platform Service admin – can view reports for all environments.
+- Dynamics 365 Service admin - can view reports for all environments.
+- Microsoft 365 Global admin – can view reports for all environments.
+
+For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
 ## Data storage
 

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 03/30/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Switching from the list component or changing the SharePoint deployment
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 This topic provides an overview about how to switch from the list component to server-based authentication. This topic can also help if you change the [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] deployment type, such as moving from [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)].  
   
@@ -37,9 +35,9 @@ This topic provides an overview about how to switch from the list component to s
    >  If you've made changes to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], such as new [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] servers, new site collections, or migrated from [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises to [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)], consider deactivating outdated [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site records. When you run the Enable Server-Based SharePoint Integration wizard, the wizard will attempt to validate all active [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deactivate a site](../admin/switching-list-component-changing-deployment.md#BKMK_deact_site)  
   
 2. Although it is not required for server-based authentication, we recommend that you deactivate and then delete the list component [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] solution from the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection. To do this, after you have confirmed that server-based authentication is enabled, in a web browser follow these steps. 
-      1. Sign-in to the site collection, click the **Settings** button in the top-right corner, then **Site Settings**, and then under **Web Designer Galleries**, click **Solutions**. 
-      2. Choose **crmlistcomponent**, and then on the tool bar click **Deactivate**. 
-      3. Choose the **crmlistcomponent** again, and then on the tool bar click **Delete**.  
+      1. Sign-in to the site collection, select the **Settings** button in the top-right corner, then **Site Settings**, and then under **Web Designer Galleries**, select **Solutions**. 
+      2. Choose **crmlistcomponent**, and then on the tool bar select **Deactivate**. 
+      3. Choose the **crmlistcomponent** again, and then on the tool bar select **Delete**.  
   
 <a name="BKMK_changeSP"></a>   
 ## Changing the SharePoint deployment type  
@@ -51,20 +49,20 @@ This topic provides an overview about how to switch from the list component to s
 <a name="BKMK_deact_site"></a>   
 ### Deactivate a site  
   
-1. [!INCLUDE[proc_settings_doc_management](../includes/proc-settings-doc-management.md)]  
-  
-2. Click **SharePoint Sites**.  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Integration** > **Document management settings** > **SharePoint Sites**.  
   
 3. Select the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site you want to remove, and then on the tool bar select **Deactivate**.  
   
 4. Repeat step three for all sites that you want to deactivate.  
 
-### What to do when the Enable Server-Based SharePoint Integration wizard doesn’t appear
+### What to do when the Enable Server-Based SharePoint Integration wizard doesn't appear
 If the **Enable Server-Based SharePoint Integration** icon doesn't appear in the **Document Management** area after you deactivate all SharePoint sites, follow these steps.
-1.	Select Advanced Find and create the following query. 
-    -	**Look for**: **SharePoint Sites** 
-    -	**Use Saved View**: **[new]**
-    -	Select the down arrow next to the **Service Type** clause and then select **Delete** to remove it. 
+1.    Select Advanced Find and create the following query. 
+    -    **Look for**: **SharePoint Sites** 
+    -    **Use Saved View**: **[new]**
+    -    Select the down arrow next to the **Service Type** clause and then select **Delete** to remove it. 
 
         ![Delete Service Type clause](media/delete-service-type-clause.png)
 

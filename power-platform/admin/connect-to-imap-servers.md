@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/11/2019
+ms.date: 03/06/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,8 +17,7 @@ search.app:
 ---
 # Connect to IMAP or SMTP servers
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
+<!-- legacy procedure -->
 
 Follow these steps to connect model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, with IMAP email servers such as used for Gmail and Yahoo! Mail.  
 
@@ -31,11 +30,13 @@ Follow these steps to connect model-driven apps in Dynamics 365, such as Dynamic
 
 ## Create an email server profile  
 
-1. Go to **Settings** > **Email Configuration** > **Email Server Profiles**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Choose **New** > **IMAP/SMTP Server**.  
+2. Select **Settings** > **Email** > **Server profiles**.  
 
-3. **For an Exchange email server profile, specify the following details:**  
+3. Choose **New** > **IMAP/SMTP Server**.  
+
+4. **For an Exchange email server profile, specify the following details:**  
 
 
    |  Fields  |     Description      |
@@ -45,9 +46,9 @@ Follow these steps to connect model-driven apps in Dynamics 365, such as Dynamic
    |   Description   |  Type a short description about the objective of the email server profile.       |
    | Incoming Server Location and Outgoing Server Location  |  Enter the **Incoming Server Location** and **Outgoing Server Location**<br /><br /> For example, Incoming: outlook.office365.com and Outgoing: smtp.office365.com  |
    |  **Credentials**  |    |
-   |  Authenticate Using  | Select a method to authenticate while connecting to the specified email server.<br /><br /> <ul><li> **Credentials Specified by a User or Queue**. If you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue. **Note:**      To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.</li><br /><li> **Credentials Specified in Email Server Profile**. If you select this option, the credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with profile. This option requires some configuration on the email server, for example, configuring impersonation rights on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] for the mailboxes associated with the profile. **Note:**      To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile if you’re processing email by using server-side synchronization.</li><br /><li> **Windows Integrated Authentication**. This option applies only to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and SMTP email server types. If you select this option, the credentials with which the Asynchronous Service has been configured will be used.</li><br /><li> **Without Credentials (Anonymous)**. Not a valid setting. </li></ul>|
-   | User Name   | Type the user name used to connect to the email server for sending or receiving email for the mailboxes of all users and queues associated with this profile. This field is enabled and valid only if **Authenticate Using** is set to **Credentials Specified in Email Server Profile**. The user name that you specify must have permission to send and receive email from the mailboxes of users and queues associated with this profile. **Note:**  If you’re using HTTP for model-driven apps in Dynamics 365, the **User Name** and **Password** fields will be disabled. To enable the option, change the value of the deployment property AllowCredentialsEntryViaNonSecureChannels to 1.  |
-   |  Password   |  Specify the password of the user that will be used together with the user name to connect to the email server for sending or receiving email for the mailboxes of users and queues associated with this profile. The password is stored securely. **Note:**  If you’re using HTTP for model-driven apps in Dynamics 365, the **User Name** and **Password** fields will be disabled. To enable the option, change the value of the deployment property AllowCredentialsEntryViaNonSecureChannels to 1.  | Use same settings for Outgoing |  If you want to use the same credential settings for the incoming and outgoing connections, choose **Yes**.  |
+   |  Authenticate Using  | Select a method to authenticate while connecting to the specified email server.<br /><br /> <ul><li> **Credentials Specified by a User or Queue**. If you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue. **Note:**      To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.</li><br /><li> **Credentials Specified in Email Server Profile**. If you select this option, the credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with profile. This option requires some configuration on the email server, for example, configuring impersonation rights on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] for the mailboxes associated with the profile. **Note:**      To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile if you're processing email by using server-side synchronization.</li><br /><li> **Windows Integrated Authentication**. This option applies only to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and SMTP email server types. If you select this option, the credentials with which the Asynchronous Service has been configured will be used.</li><br /><li> **Without Credentials (Anonymous)**. Not a valid setting. </li></ul>|
+   | User Name   | Type the user name used to connect to the email server for sending or receiving email for the mailboxes of all users and queues associated with this profile. This field is enabled and valid only if **Authenticate Using** is set to **Credentials Specified in Email Server Profile**. The user name that you specify must have permission to send and receive email from the mailboxes of users and queues associated with this profile. **Note:**  If you're using HTTP for model-driven apps in Dynamics 365, the **User Name** and **Password** fields will be disabled. To enable the option, change the value of the deployment property AllowCredentialsEntryViaNonSecureChannels to 1.  |
+   |  Password   |  Specify the password of the user that will be used together with the user name to connect to the email server for sending or receiving email for the mailboxes of users and queues associated with this profile. The password is stored securely. **Note:**  If you're using HTTP for model-driven apps in Dynamics 365, the **User Name** and **Password** fields will be disabled. To enable the option, change the value of the deployment property AllowCredentialsEntryViaNonSecureChannels to 1.  | Use same settings for Outgoing |  If you want to use the same credential settings for the incoming and outgoing connections, choose **Yes**.  |
    | **Advanced**    |  |
    |  Incoming Port  | This field shows the port on the email server for accessing the incoming email. This field is automatically populated when you save the record.   |
    |  Outgoing Port  | This field shows the port on the email server for accessing the outgoing email. This field is automatically populated when you save the record.   |
@@ -60,16 +61,18 @@ Follow these steps to connect model-driven apps in Dynamics 365, such as Dynamic
    |  Maximum Concurrent Connections   | Type the maximum number of simultaneous connections that can be made to the corresponding email server per mailbox. Increase the value to allow more parallel calls to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] to improve performance or reduce the value if there are errors on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] due to large number of calls from model-driven apps in Dynamics 365. The default value of this field is 10. The maximum number is considered per mailbox or per email server profile depending on whether the credentials are specified in a mailbox or email server profile.   |
 
 
-4. Choose **Save**.  
+5. Choose **Save**.  
 
 <a name="BKMK_ConfigureDefault"></a>   
 
 ## Configure default email processing and synchronization  
 Set server-side synchronization to be the default configuration method. 
- 
-1. Go to **Settings** > **Email Configuration** > **Email Configuration Settings**.  
 
-2. Set the processing and synchronization fields as follows:  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Email settings**.  
+ 
+3. Set the processing and synchronization fields as follows:  
 
    - **Server Profile**: The profile you created in the above section.  
 
@@ -86,7 +89,7 @@ Set server-side synchronization to be the default configuration method.
 
      ![System Settings for server-side synchronization](../admin/media/imap-profile.png "System Settings for server-side synchronization")  
 
-3.  Click **OK**.  
+4. Select **OK**.  
 
 <a name="BKMK_ConfigureMailboxes"></a>  
  
@@ -95,27 +98,27 @@ Set server-side synchronization to be the default configuration method.
 
  In addition to administrator permissions, you must have Read and Write privileges on the Mailbox entity to set the delivery method for the mailbox.  
 
- Click **one** of the following methods:  
+ Select **one** of the following methods:  
 
 ### Set mailboxes to the default profile  
 
-1. Go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
 
 2. Choose **Active Mailboxes**.  
 
-3. Select all the mailboxes that you want to associate with the IMAP profile you created, click **Apply Default Email Settings**, verify the settings, and then click **OK**.  
+3. Select all the mailboxes that you want to associate with the IMAP profile you created, select **Apply Default Email Settings**, verify the settings, and then select **OK**.  
 
    ![Apply default email settings](../admin/media/apply-default-email-settings.png "Apply default email settings")  
 
-    By default, the mailbox configuration is tested and the mailboxes are enabled when you click **OK**.  
+    By default, the mailbox configuration is tested and the mailboxes are enabled when you select **OK**.  
 
 ### Edit mailboxes to set the profile and delivery methods  
 
-1.  Go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1.  In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
 
-2.  Click **Active Mailboxes**.  
+2.  Select **Active Mailboxes**.  
 
-3.  Select the mailboxes that you want to configure, and then click **Edit**.  
+3.  Select the mailboxes that you want to configure, and then select **Edit**.  
 
 4.  In the **Change Multiple Records** form, under **Synchronization Method**, set **Server Profile** to the IMAP profile you created earlier.  
 
@@ -124,30 +127,30 @@ Set server-side synchronization to be the default configuration method.
 6.  Set **Appointments, Contacts, and Tasks** to **None**.  
 
 
-7.  Click **Change**.  
+7.  Select **Change**.  
 
 <a name="BKMK_ApproveEmail"></a> 
   
 ## Approve email  
  You need to approve each user mailbox or queue before that mailbox can process email.  
 
-1.  Go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1.  In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
 
-2.  Click **Active Mailboxes**.  
+2.  Select **Active Mailboxes**.  
 
-3.  Select the mailboxes that you want to approve, and then click **More Commands** (**…**) > **Approve Email**.  
+3.  Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
 
-4.  Click **OK**.  
+4.  Select **OK**.  
 
 <a name="BKMK_TestConfiguration"></a>   
 
 ## Test configuration of mailboxes  
 
-1. Go to **Settings** > **Email Configuration** > **Mailboxes**.  
+1. In the web app, go to **Settings** > **Email Configuration** > **Mailboxes**.  
 
-2. Click **Active Mailboxes**.  
+2. Select **Active Mailboxes**.  
 
-3. Select the mailboxes you want to test, and then click **Test & Enable Mailboxes**.  
+3. Select the mailboxes you want to test, and then select **Test & Enable Mailboxes**.  
 
     This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, model-driven apps in Dynamics 365 try to process the email again after some time or disables the mailbox for email processing.  
 
@@ -156,20 +159,22 @@ Set server-side synchronization to be the default configuration method.
     You can find information on recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://blogs.msdn.com/b/crm/archive/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015.aspx) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
 
 > [!TIP]
->  If you’re unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
+>  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
 
 <a name="BKMK_TestEmailConfig"></a>   
 
 ## Test email configuration for all mailboxes associated with an email server profile  
 
-1. Go to **Settings** > **Email Configuration** > **Email Server Profiles**.  
+1. In the Power Platform admin center, select an environment. 
 
-2. Select the profile you created, and then click **Test & Enable Mailboxes**.  
+2. Select **Settings** > **Email** > **Server profiles**.  
 
-    When you test the email configuration, an asynchronous job runs in the background. It may take a few minutes for the test to be completed. Model-driven apps in Dynamics 365 test the email configuration of all the mailboxes associated with the IMAP profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they’re configured properly.  
+3. Select the profile you created, and then select **Test & Enable Mailboxes**.  
+
+    When you test the email configuration, an asynchronous job runs in the background. It may take a few minutes for the test to be completed. Model-driven apps in Dynamics 365 test the email configuration of all the mailboxes associated with the IMAP profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
 
 > [!TIP]
->  If you’re unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
+>  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
 
 <a name="BKMK_NetworkPorts"></a>   
 

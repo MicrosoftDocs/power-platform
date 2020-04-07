@@ -65,7 +65,9 @@
       items:
       - name: Opt in to early access updates
         href: opt-in-early-access-updates.md
-      - name: View analytics
+      - name: General availability deployment
+        href: general-availability-deployment.md
+      - name: View analytics and storage
         items:
         - name: Common Data Service analytics 
           href: analytics-common-data-service.md
@@ -81,12 +83,18 @@
           href: capacity-add-on.md
         - name: Free storage space
           href: free-storage-space.md
+    #  - name: View and manage resources
+    #    href: view-manage-resources.md
       - name: Manage environments
         items:
         - name: Environments overview
           href: environments-overview.md
+    #    - name: What's new with environments
+    #      href: environments-whats-new.md
         - name: Create environments
           href: create-environment.md
+        - name: Edit environment properties
+          href: edit-properties-environment.md
         - name: Control environment creation
           href: control-environment-creation.md
         - name: Delete and recover environments
@@ -127,6 +135,8 @@
           href: preview-environments.md
       - name: Manage settings 
         items:
+        - name: Power Platform settings
+          href: power-platform-settings.md
         - name: Common Data Service settings
           href: admin-settings.md      
         - name: Environment database settings
@@ -175,14 +185,10 @@
             href: create-users-assign-online-security-roles.md
         - name: Audit and logs
           items: 
-          - name: Audit log management
+          - name: Audit data and user activity
             href: audit-data-user-activity.md
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
-          - name: Audit summary view
-            href: audit-data-user-activity.md
-          - name: Entity and field audit settings
-            href: audit-data-user-activity.md
           - name: System jobs
             href: monitor-manage-system-jobs.md
         - name: Templates
@@ -394,6 +400,8 @@
         items: 
         - name: Control user access to environments
           href: control-user-access.md  
+        - name: Restrict cross-tenant access 
+          href: cross-tenant-restrictions.md
         - name: Data loss prevention policies 
           href: wp-data-loss-prevention.md
         - name: Create a DLP policy
@@ -693,6 +701,8 @@
         href: verify-network-capacity-throughput-clients.md
       - name: Data query performance
         href: analyze-improve-data-query-performance.md
+    - name: Compliance and data privacy 
+      href: wp-compliance-data-privacy.md
     - name: GDPR - Responding to DSR requests
       items:
       - name: System-generated logs 
@@ -709,8 +719,6 @@
           href: powerapps-gdpr-delete-dsr.md
         - name: Common Data Service customer data 
           href: common-data-service-gdpr-dsr-guide.md
-    - name: Compliance and data privacy 
-      href: wp-compliance-data-privacy.md
     - name: Power Apps US Government
       href: powerapps-us-government.md
     - name: Datacenter regions

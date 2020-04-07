@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/06/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Enable OneDrive for Business (on-premises)
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)]. Those documents can be accessed within after the system administrator has enabled [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)].  
   
@@ -36,11 +34,13 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
 ## Enable OneDrive for Business  
  You enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] as follows:  
   
-1. Click **Settings** > **Document Management** > **Enable OneDrive for Business**  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Integration** > **Document management settings**.   
   
-2. Click **Enable OneDrive for Business** to enable it, and then click **OK**.  
+3. Select **Enable OneDrive for Business** to enable it, and then select **OK**.  
   
-   **If you’re running [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] on-premises**, on the Windows Server where [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] is running, open the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Management Shell and run the following commands to set up permissions between [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] and [!INCLUDE[pn_microsoft_dynamics_crm_2016_server](../includes/pn-microsoft-dynamics-crm-2016-server.md)].  
+   **If you're running [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] on-premises**, on the Windows Server where [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] is running, open the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Management Shell and run the following commands to set up permissions between [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] and [!INCLUDE[pn_microsoft_dynamics_crm_2016_server](../includes/pn-microsoft-dynamics-crm-2016-server.md)].  
   
 > [!NOTE]
 >  You might have already set up permissions and can skip the following if you completed the steps in [Configure server-based authentication with model-driven apps in Dynamics 365 and SharePoint on-premises](../admin/configure-server-based-authentication-sharepoint-on-premises.md).  
@@ -62,12 +62,14 @@ $wellKnownApp.Update()
   
 ## Controlling access to OneDrive for Business 
  You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)] for end users through the **OneDrive for Business** privilege.  
+
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Users + permissions** > **Security roles**.   
+
+3. Choose a security role, and then select the **Core Records** tab.  
   
-1. Click **Settings** > **Security** > **Security Roles**  
-  
-2. Choose a security role, and then click the **Core Records** tab.  
-  
-3. Under **Miscellaneous Privileges**, toggle the **OneDrive for Business** privilege to the desired availability.  
+4. Under **Miscellaneous Privileges**, toggle the **OneDrive for Business** privilege to the desired availability.  
   
    > [!NOTE]
    >  This privilege is visible in the Security Roles dialog only after [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)] is enabled.  

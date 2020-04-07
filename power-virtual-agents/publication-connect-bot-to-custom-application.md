@@ -25,6 +25,11 @@ There are different procedures for connecting to your mobile app, depending on w
 
 Connecting your bot to a web-based app is relatively straightforward as it involves copying a code snippet into your app. However, both web-based apps and native or custom apps still require considerable developer expertise to fully integrate the bot into your app. Both procedures are described in this article.
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Connect your bot to a web-based app
 
 
@@ -231,7 +236,7 @@ The following example uses samples from the [Connector sample code](https://gith
 After starting a conversation with the bot, the conversation JSON payload uses the standard Microsoft Bot Framework Direct Line activity. You can learn more at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0).
 
 ### Handle hand-off activity
-If your application needs to hand off to a live agent provider, you will need to handle the hand-off activity. Hand-off activity is sent when the "Transfer to agent" node is hit. In the Direct Line Channel, an activity with `Type=Handoff` will be sent to the client. You can learn more on the payload of the hand-off activity at [Contextual variables available upon hand-off](advanced-hand-off.md#contextual-variables-available-upon-hand-off)
+If your application needs to hand off to a live agent provider, you will need to handle the hand-off activity. Hand-off activity is sent when the "Transfer to agent" node is hit. You can [learn more on the payload of the hand-off activity](configure-generic-handoff.md#sample-hand-off-message-payload).
 
 ### Trigger a welcome message
 If you want your bot to send the Greeting system topic automatically when a user starts a conversation, you can send an activity with `Type=event` and `Name=startsConversation`.

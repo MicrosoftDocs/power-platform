@@ -19,6 +19,11 @@ Power Virtual Agents enables you to extend your bot using [Bot Framework Skills]
 
 This article is intended for system administrators or IT professionals who are familiar with [Bot Framework Skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0). After a Skill has been registered with a Power Virtual Agents bot, authors can seamlessly [trigger Skill actions in conversation](advanced-use-skills.md).
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Compare use of Flows and Skills actions
 The following table will help determine when to use Skills for a conversation.
 
@@ -68,6 +73,7 @@ Before registering the Skill, provide the bot's ID to your Skills developer to a
 1. Select **Next** to begin the [validation process](#troubleshooting-errors-during-skill-registration). When successful, your Skill is added to your bot. You can now [use this Skill in your topics](advanced-use-skills.md). 
 
 ## Compliance considerations
+
 To protect user privacy, we require Skills to be registered as an app in the signed-in user's Azure Active Directory tenant.
 
 ### Troubleshooting errors during Skill registration

@@ -17,7 +17,7 @@ search.app:
 ---
 # Enable accessible email flow
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 To improve accessibility when reading and editing email in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, we're introducing an app that provides an accessible email flow. This topic explains how admins can enable this flow and how end users can access it.
 

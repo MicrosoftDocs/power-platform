@@ -44,7 +44,7 @@ Users within your organization can gain access to Power Apps in three different 
 
 * They can individually sign up for a Power Apps trial as outlined in the [How do users sign up for Power Apps?](#how-do-users-sign-up-for-power-apps) section.
 * You can assign a Power Apps license to them within the Office 365 admin portal.
-* You can purchase Power Apps Per App Plans and allocate them in the Power Platform Admin Center. See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
+* You can purchase Power Apps Per App Plans and allocate them in the Power Platform admin center. See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
 * The user has been assigned an Office 365 and Dynamics 365 plans that includes access to the Power Apps service. See the [Power Apps pricing page](https://powerapps.microsoft.com/pricing) for the list of Office 365 and Dynamics 365 plans that include Power Apps capabilities.
 
 ### Can I block users in my organization from signing up for Power Apps?
@@ -96,7 +96,7 @@ Removing of the Power Apps license or service for a user in your organization wi
 * [Office.com](https://office.com)
 
     ![](./media/signup-question-and-answer/office-home.png)
-* Office 365 AppLauncher “waffle”
+* Office 365 AppLauncher "waffle"
 
     ![](./media/signup-question-and-answer/office-waffle.png)
 
@@ -123,9 +123,9 @@ These licenses are free trial licenses for your users to try-out the Microsoft P
 ### How will this change the way I manage identities for users in my organization today?
 If your organization already has an existing Office 365 environment and all users in your organization have Office 365 accounts, then identity management does not change.
 
-If your organization already has an existing Office 365 environment but not all users in your organization have Office 365 accounts, then we create a user in the tenant and assign licenses based on the user’s work or school email address. This means that the number of users you are managing at any particular time will grow as users in your organization sign up for the service.
+If your organization already has an existing Office 365 environment but not all users in your organization have Office 365 accounts, then we create a user in the tenant and assign licenses based on the user's work or school email address. This means that the number of users you are managing at any particular time will grow as users in your organization sign up for the service.
 
-If your organization does not have an Office 365 environment connected to your email domain, there is no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to take over as the tenant admin and manage them.
+If your organization does not have an Office 365 environment connected to your email domain, there is no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to take over as the Power Platform service admin and manage them.
 
 ### What is the process to manage a tenant created by Microsoft for my users?
 If a tenant was created by Microsoft, you can claim and manage that tenant using the following steps:
@@ -137,7 +137,7 @@ If a tenant was created by Microsoft, you can claim and manage that tenant using
 5. Read the instructions on the **Become the admin** page, and then choose **Yes, I want to be the admin**.  
 
 > [!NOTE]
-> If this option doesn’t appear, an Office 365 administrator is already in place.
+> If this option doesn't appear, an Office 365 administrator is already in place.
 
 ### If I have multiple domains, can I control the Office 365 tenant that users are added to?
 If you do nothing, a tenant is created for each user email domain and subdomain.
