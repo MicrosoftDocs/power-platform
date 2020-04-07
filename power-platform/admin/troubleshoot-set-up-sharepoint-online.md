@@ -42,15 +42,9 @@ If **Documents** is missing from entities such as account, use the following to 
 
 For more information, see [Enable SharePoint document management for specific entities](enable-sharepoint-document-management-specific-entities.md).
 
-## Corrupted FetchXML or LayoutXML - validate and fix
+## Malformed FetchXML or LayoutXML - validate and fix
 
-<!--If the Documents associated grid is missing, use the following to restore. -->
-
-<!-- ![Documents associated grid](media/list-of-documents-in-onedrive.png "Documents associated grid") -->
-
-<!--The most common cause for the Documents associated grid not loading is the corrupted FetchXML and LayoutXML. These sections could be corrupted due to many reasons. The most common of them is through customizing the entity/grid view, adding/removing columns, and other similar customizations. -->
-
-Corrupted FetchXML or LayoutXML can cause any of the following issues:
+Malformed FetchXML or LayoutXML can cause any of the following issues:
 
 * Documents associated grid is missing
 * Unable to view folders
@@ -60,9 +54,9 @@ Corrupted FetchXML or LayoutXML can cause any of the following issues:
 * Error Message – "System.NullReferenceException" while uploading a document
 * Document being downloaded instead of opening in new tab
 
-There can be many causes for FetchXML or LayoutXML to be corrupted. The most common cause is customizing the entity/grid view, adding/removing columns, and other similar customizations.
+There can be many causes for FetchXML or LayoutXML to be malformed. The most common cause is customizing the entity/grid view, adding/removing columns, and other similar customizations.
 
-If FetchXML or LayoutXML are corrupted, use the following to restore.
+If FetchXML or LayoutXML are malformed, use the following to restore.
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
@@ -294,7 +288,7 @@ If FetchXML or LayoutXML are corrupted, use the following to restore.
 32. Navigate to **Settings** > **Solutions**
 33. Import the solution (zipped file in Step 8).
 34. Publish all customizations.
-35. Verify that any of the issues associated with the corrupted FetchXML or LayoutXML are resolved. For example, verify that Document associated grid displays in all the required SharePoint documents.
+35. Verify that any of the issues associated with the malformed FetchXML or LayoutXML are resolved. For example, verify that Document associated grid displays in all the required SharePoint documents.
 
 ## Validate and fix SharePoint site URLs
 
