@@ -19,7 +19,9 @@ Quotas are default constraints applied to chatbots that limit how often messages
 
 Quotas are applied to your chatbots alongside the capacity constraints you gained by purchasing a [Power Virtual Agents plan](https://go.microsoft.com/fwlink/?linkid=2099502). Also see [Licensing and capacity considerations](requirements-licensing.md).
 
-The following quotas, defined as requests per minute (RPM) and requests per second (RPS), apply to Power Virtual Agents chatbots. A request is a message from the user to the chatbot, or a message from an Azure Bot Framework Skill, in a single chat session.
+The following quotas, defined as requests per minute (RPM) and requests per second (RPS), apply to Power Virtual Agents chatbots. A request is a message from the user to the chatbot, or a message from an Azure Bot Framework Skill, in a single chat session.  
+  
+  
 
 Action | Paid Plan
 --|--
