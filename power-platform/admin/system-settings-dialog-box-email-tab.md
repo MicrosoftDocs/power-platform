@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/04/2020
+ms.date: 04/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,9 +19,12 @@ search.app:
 
 Use the settings on this page to set up email processing in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
+
+> [!NOTE]
+> Many of these settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Email** > **Email settings**.
   
-## Open the System Settings dialog box (if it isn’t already open)  
+## Open the System Settings dialog box (if it isn't already open)  
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -31,7 +34,7 @@ Use the settings on this page to set up email processing in model-driven apps in
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_email_config](../includes/proc-settings-email-config.md)]  
+2. In the web app, go to **Settings** > **Email Configuration**.
   
 3. Choose **Email Configuration Settings**.  
   
@@ -41,20 +44,20 @@ Use the settings on this page to set up email processing in model-driven apps in
 > |    **Configure email processing**    |      |
 > |   Process Email Using  |  Select whether you want to process email by using server-side synchronization or the Email Router. server-side synchronization is the preferred synchronization method.<br /><br /> [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](integrate-synchronize-your-email-system.md)   |
 > |  **Configure default synchronization method**  |  For any mailbox that is automatically created in model-driven apps in Dynamics 365 when a user or queue is created, the default email settings as defined in this section will be applied.  |  
-> | Server Profile   | For server-side synchronization, select the email server profile that you want to use. The email server profile holds the configuration data that enables model-driven apps in Dynamics 365 to connect to [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. If you’re connecting model-driven apps in Dynamics 365 with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], the email server profile is automatically created for you.  |
+> | Server Profile   | For server-side synchronization, select the email server profile that you want to use. The email server profile holds the configuration data that enables model-driven apps in Dynamics 365 to connect to [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. If you're connecting model-driven apps in Dynamics 365 with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], the email server profile is automatically created for you.  |
 > | Incoming Email  |   Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the Email Router, server-side synchronization, or a forward mailbox for processing incoming email. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create forward mailboxes or edit mailboxes](create-forward-mailboxes-edit-mailboxes.md)  |     
 > |  Outgoing Email  |  Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the Email Router, or server-side synchronization for processing outgoing email.   |
-> |  Appointments, Contacts, and Tasks   |   Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or server-side synchronization to synchronize appointments, contacts, and tasks between [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] and model-driven apps in Dynamics 365. **Note:**  You can’t synchronize appointments, contacts, and tasks if you’re synchronizing with a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email server.  |
+> |  Appointments, Contacts, and Tasks   |   Select whether you want to use [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or server-side synchronization to synchronize appointments, contacts, and tasks between [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] and model-driven apps in Dynamics 365. **Note:**  You can't synchronize appointments, contacts, and tasks if you're synchronizing with a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] email server.  |
 > |  **Email processing for unapproved users and queues**  |  Select these check boxes if you want to allow email processing only for users and queues whose email addresses have been approved. More information: [Approve email](connect-exchange-online.md#approve-email).<br /><br /> -   Process email only for approved users<br />-   Process email only for approved queues |
 > |  **Configure folder-level tracking and email correlation**  |  |
 > | Use folder-level tracking for [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] folders (server-side synchronization must be enabled) | Users can set up [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] tracking folders, and then move messages to those folders to track them automatically on virtually any device. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)<br /><br /> Folder-level tracking provides 100% tracking accuracy. To use folder-level tracking:<br /><br /> -   You must select this check box.<br />-   Your organization must synchronize email through server-side synchronization. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md) |
-> |  Use correlation to track email conversations  | Select this check box if you want to link email activities with other related records using the information in the email headers. This method uses email properties for correlation and is more accurate than smart matching, but less accurate than folder-level tracking or tracking tokens. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md) **Note:**  Email correlation using email headers works best when email is processed using server-side synchronization. If you’re using the Email Router to process email, you can use tracking tokens or smart matching to correlate email activities with related records. |
-> |  Use tracking tokens  |  Select this check box to use tracking tokens and to configure how model-driven apps in Dynamics 365 displays them in the Subject line of the email messages.<br /><br /> Tracking tokens provide 100% tracking accuracy. If you don’t want to see tokens in Subject lines, however, consider folder-level tracking, which also provides 100% tracking accuracy.<br /><br /> You can configure prefixes and other sections of tracking tokens. Long prefixes or too many prefix changes may cause lost data in history, however. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md)  |
-> |  Use smart matching  |  Select this check box to use smart matching to correlate email based on the similarity between email messages. Smart matching isn’t as accurate as tracking tokens or folder-level tracking. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md)   |
+> |  Use correlation to track email conversations  | Select this check box if you want to link email activities with other related records using the information in the email headers. This method uses email properties for correlation and is more accurate than smart matching, but less accurate than folder-level tracking or tracking tokens. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md) **Note:**  Email correlation using email headers works best when email is processed using server-side synchronization. If you're using the Email Router to process email, you can use tracking tokens or smart matching to correlate email activities with related records. |
+> |  Use tracking tokens  |  Select this check box to use tracking tokens and to configure how model-driven apps in Dynamics 365 displays them in the Subject line of the email messages.<br /><br /> Tracking tokens provide 100% tracking accuracy. If you don't want to see tokens in Subject lines, however, consider folder-level tracking, which also provides 100% tracking accuracy.<br /><br /> You can configure prefixes and other sections of tracking tokens. Long prefixes or too many prefix changes may cause lost data in history, however. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md)  |
+> |  Use smart matching  |  Select this check box to use smart matching to correlate email based on the similarity between email messages. Smart matching isn't as accurate as tracking tokens or folder-level tracking. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Email message filtering and correlation](email-message-filtering-correlation.md)   |
 > |  **Set tracking options for emails between users**  | |
 > | Track email sent between two users as two activities | Select this option to create two email activities between users, one for the sender and one for the recipient.  |
 > |  **Set email form options**  |  |
-> |   Use secure frames to restrict email message content  | If this is set to **Yes**, you may see the following error message when you’re reading email: “This content cannot be displayed in a frame”. Although this can make sending sensitive content in email less secure, changing the setting to **No** typically eliminates this error.  |
+> |   Use secure frames to restrict email message content  | If this is set to **Yes**, you may see the following error message when you're reading email: "This content cannot be displayed in a frame". Although this can make sending sensitive content in email less secure, changing the setting to **No** typically eliminates this error.  |
 > |  Allow messages with unresolved recipients to be sent   |  Set this to **Yes** if you want to send email messages that have unresolved recipients.  |
 > |  Set To, cc, bcc, fields as unresolved values if multiple matches are found in Incoming Emails. |  Use this setting to choose which record an email address resolves to when there are multiple possible matches in **to**, **cc**, or **bcc** fields of an email. When you select **Yes**, if the **to**, **cc**, or **bcc** fields of an email have an email address that can be resolved to multiple contacts (or other records), the email address will be resolved in the unresolved mode instead of resolving to all possible records. Unresolved email addresses can then be resolved individually as you encounter them. The default value is **No**.  |
 > |  Apply same email address to all unresolved matches when you manually resolve it for one.  |  When set to **Yes**, the same email address is applied to all similar unresolved email addresses when resolved in one email activity.  When set to **No**, the email address is applied only to the specific email activity and does not resolve similar addresses present in other email activities. The default value is **Yes**. <br /><br />This setting appears when **Set To, cc, bcc, fields as unresolved values is multiple matches are found in Incoming Emails** is set to **Yes**.  |
@@ -62,7 +65,7 @@ Use the settings on this page to set up email processing in model-driven apps in
 > |  Maximum file size (in Kilobytes)  | Increase or decrease the maximum file size for attached files. The default size is 5 MB (5,120 KB). The maximum recommended size is 32 MB (32,768 KB). Using a larger file size is not recommended. |
 > | **Enhanced email for Timeline**  |  |
 > |  Multitask, compose, and save drafts using email pop-up windows when creating email from timeline. | Select this check box to allow users to use enhanced email. Enabling or disabling enhanced email will apply to all applications in your organization that use Timeline. |
-> |  **Configure alerts**   |  Select check boxes for the type of alerts that must be sent to users:<br /><br /> -   Error (default)<br />-   Warning<br />-   Information (default) **Tip:**  Select **Warning** if you’re troubleshooting or testing or want to get more detailed messages on the alert wall.  |
+> |  **Configure alerts**   |  Select check boxes for the type of alerts that must be sent to users:<br /><br /> -   Error (default)<br />-   Warning<br />-   Information (default) **Tip:**  Select **Warning** if you're troubleshooting or testing or want to get more detailed messages on the alert wall.  |
 > | Notify mailbox owner  |  By default, the system administrator is notified of any error that occurs for an email server profile.<br /><br /> Select this check box if you also want to notify the mailbox owner. |
   
 ### See also  
