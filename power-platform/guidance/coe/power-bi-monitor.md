@@ -48,7 +48,7 @@ The visualizations highlight environments and makers with the most resources and
 ## Environments
 
 The **Environments** page shows you how many environments, environment makers
-and CDS instances you have.
+and Common Data Service instances you have.
 
 The graphs visualize:
 
@@ -78,7 +78,7 @@ The **Apps** page provides an overview of apps in your environment:
 
 - Number of Production Apps (The definition of a Production App is 50 active sessions or active sessions by 5 unique users for the same app in a month.)
 
-On the graphs, you will be able to see your app creation trend, your top active departments, and environments with the highest number of apps. A list view of all apps enables you to sort your apps by unique users, sessions, users and
+On the graphs, you'll be able to see your app creation trend, your top active departments, and environments with the highest number of apps. A list view of all apps enables you to sort your apps by unique users, sessions, users and
 groups shared with, and last launched date.
 
 Filters on this page can help you narrow down this view by app owner, app display name, environment, maker department and connector used.
@@ -97,7 +97,7 @@ The **Flows** page provides an overview of apps in your environment:
 
 - Total Number of Suspended and Stopped Flows
 
-Through visuals, you will be able to see your flow creation trend, your top active departments and top environments. A list view of all flows enables you to sort your flows by number of actions in a flow, creator and flow state.
+Through visuals, you'll be able to see your flow creation trend, your top active departments and top environments. A list view of all flows enables you to sort your flows by number of actions in a flow, creator and flow state.
 
 Filters on this page can help you narrow down this view by flow owner, flow display name, environment, maker department and connector used.
 
@@ -105,10 +105,9 @@ Filters on this page can help you narrow down this view by flow owner, flow disp
 
 ## Custom Connectors
 
-The **Custom Connectors** page helps you understand what [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/) you have, what endpoints they are connecting to and which resources are using the custom
-connector.
+The **Custom Connectors** page helps you understand what [custom connectors](https://docs.microsoft.com/connectors/custom-connectors/) you have, what endpoints they're connecting to and which resources are using the custom connector.
 
-Next to the total number of custom connectors and number of test connectors (those that have the word Test in the display name), you will also see a connector creation trend, top connector makers and the link between a connector
+Next to the total number of custom connectors and number of test connectors (those that have the word **Test** in the display name), you'll also see a connector creation trend, top connector makers and the link between a connector
 and its consuming flow or app.
 
 Filters help you narrow down the view by connector creator, environment and created date.

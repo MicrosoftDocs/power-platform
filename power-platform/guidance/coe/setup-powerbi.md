@@ -17,15 +17,15 @@ search.app:
 ---
 # Set up Power BI Dashboard
 
-The Power BI Dashboard provides a holistic view with visualizations and insights into resources in your tenant: Environments, Power Apps apps, Power Automate flows, Connectors, Connection References, Makers and Audit Logs. Telemetry from the Audit Log is stored from the moment you set up the CoE Starter Kit, so over time you can look back and identify trends.
+The Power BI Dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers and audit logs. Telemetry from the audit log is stored from the moment you set up the CoE Starter Kit, so over time you can look back and identify trends.
 
-![CoE Starter Kit Power BI Dashboard](media/coe1.PNG)
+![CoE Starter Kit Power BI dashboard](media/coe1.PNG "CoE Starter Kit Power BI dashboard")
 
-You can either get the CoE Power BI Dashboard from App Source or download the Power BI file and configure it in Power BI Desktop, which would allow you to make changes to it. Both options are described below - and both require you to get the Environment URL first.
+You can either get the CoE Power BI Dashboard from AppSource or download the Power BI file and configure it in Power BI Desktop, which would allow you to make changes to it. Both options are described below - and both require you to get the Environment URL first.
 
 ## Get the Environment URL
 
-You need the environment URL of the Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the CDS entities in that environment.
+You need the environment URL of the Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Common Data Service entities in that environment.
 
 1. Go to the [Power Platform Admin Center](https://aka.ms/ppac).
 1. Select **Environments**, and select the Environment where the Center of Excellence solution is installed.
@@ -35,20 +35,19 @@ You need the environment URL of the Power Platform environment the CoE Starter K
 ## Option 1: Get the Power BI Dashboard from App source
 
 > [!NOTE]
-> You cannot deploy from AppSource if you are deploying to the government cloud (GCC). If you are
-using GCC, please use the [Configure the Power BI Dashboard using the pbix file](#option-2-configure-the-power-bi-dashboard-using-the-pbix-file) instructions below.
+> You can't deploy from AppSource if you're deploying to the government cloud (GCC). If you're using GCC, please use the [Configure the Power BI Dashboard using the pbix file](#option-2-configure-the-power-bi-dashboard-using-the-pbix-file) instructions below.
 
-1. A pre-requisite is to have the [CoE Core Components Solution](setup-core-components.md) installed.
+1. A prerequisite is to have the [CoE Core Components Solution](setup-core-components.md) installed.
 
 1. Navigate to the [CoE Starter Kit page on App Source](https://appsource.microsoft.com/product/power-bi/powerapps_pbi.powerapps_coe).
 
 1. Select **Get It Now**<Br> ![A screenshot of the Power Platform CoE Starter Kit offer on App Source](media/coe21.png)
 
-1. Accept the Terms & Conditions and make sure you are signed in with your organization account.
+1. Accept the Terms & Conditions and make sure you have signed in by using your organization account.
 
-1. Wait for the app to install
+1. Wait for the app to be installed.
 
-1. Select **Go to app** once it finished installing <Br> ![A screenshot of the Your new app is ready! notification](media/coe22.png)
+1. After the app installation is finished, select **Go to app**.<Br> ![A screenshot of the Your new app is ready! notification](media/coe22.png)
 
 1. To connect the dashboard to your own environment and data, select **Connect**  ![A screenshot of how to get started with your app from App Source](media/coe24.png)
 

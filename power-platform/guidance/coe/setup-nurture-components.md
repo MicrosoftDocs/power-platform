@@ -35,16 +35,16 @@ to be installed first.
 
 1. Import the *CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip*
 
-## Update Environment Variables
+## Update environment variables
 
 The Environment
 Variables are used to store application and flow configuration data. This means
 you have to set the value only once and it will be used in all necessary flows
 and apps.
 
-All flows in this solution depend on all Environment Variables being configured.
+All flows in this solution depend on all environment variables being configured.
 
-1. You will see an error notifying you that Environment Variables need to be configured.  
+1. You'll see an error notifying you that environment variables need to be configured.  
     Note: For the Governance solution, **4**
     environment variables need to be configured. <Br>![Environment variables need to be updated](media/coe7.png)
 
@@ -52,10 +52,10 @@ All flows in this solution depend on all Environment Variables being configured.
 
 | Name | Default Value |
 |------|---------------|
-| Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 Group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the Group ID here.|
-| Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the Form URL (<https://forms.office.com/>...) here.                                                |
+| Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
+| Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
 
-## Activate the Flows
+## Activate the flows
 
 This Nurture solution contains five flows:
 
@@ -74,8 +74,7 @@ Activate the Sync Template Flows](setup-core-components.md).
 
 ## (Optional) Create a SharePoint document library
 
-This library is used to store templates, components, and documents which you wish to share with Makers in your organization. In this section you will create
-and populate the library with a set of starter materials.
+This library is used to store templates, components, and documents which you wish to share with Makers in your organization. In this section you'll create and populate the library with a set of starter materials.
 
 The Template Catalog depends upon this library.
 
@@ -99,7 +98,7 @@ The Template Catalog depends upon this library.
 
 ## Share apps with your organization
 
-The Nurture Components solution contains four apps. Once you are ready to adopt the CoE, share these apps as indicated below.
+The Nurture Components solution contains four apps. As soon as you're ready to adopt the CoE, share these apps as indicated below.
 
 - App Catalog – to be shared with your entire organization
 

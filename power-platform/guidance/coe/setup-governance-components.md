@@ -37,8 +37,7 @@ to be installed first.
 
 ## Create a SharePoint document library
 
-The *Archive and Clean Up* flows archive un-needed apps to a SharePoint library. If you are intending to make use of those flows, a SharePoint site and document library
-need to be configured first.
+The *Archive and Clean Up* flows archive unneeded apps to a SharePoint library. If you intend to use those flows, you need to configure a SharePoint site and document library first.
 
 1. Follow the steps described under [Create a team site in
     SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
@@ -63,14 +62,14 @@ If you already have a security group ready, go to [portal.azure.com](<https://po
 
 1. Make note of the **Object Id** of the Group, which is needed to share an app with your group. ![Azure Portal Group](media/coe13.png)
 
-## Update Environment Variables
+## Update environment variables
 
 This step should be completed after importing the solution. The Environment
 Variables are used to store application and flow configuration data. This means, you have to set the value only once and it will be used in all necessary flows and apps.
 
-All flows in this solution depend on all Environment Variables being configured.
+All flows in this solution depend on all environment variables being configured.
 
-1. You will see an error at the top of the Power Apps Maker Portal, notifying you that Environment Variables need to be configured.  
+1. You'll see an error at the top of the Power Apps Maker Portal, notifying you that environment variables need to be configured.  
     Note: For the Audit and Report Components solution, it will be **4**
     environment variables that need to be configured. ![Environment variables need to be updated](media/coe7.png)
 
@@ -79,14 +78,14 @@ All flows in this solution depend on all Environment Variables being configured.
 
 | Name | Default Value |
 |------|---------------|
-| Archive Site URL (SharePoint Site)  | The *Archive and Clean Up flow* archives app files (.msapp) to a SharePoint site. Paste the URL of the Team site you created under [Create a SharePoint document library](#create-a-sharepoint-document-library). Leave blank if you are not planning to use the Archive and Clean Up Flow.
-| Archive Folder                      | Folder (Document Library) within the above SharePoint site, where the .msapp file should be stored. Paste the name of the [Document Library you created earlier](#create-a-sharepoint-document-library). Leave blank if you are not planning to use the Archive and Clean Up flow.                                                                                                                                                                                                                                                                                 |
-| Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (Canvas App), part of this solution and copy the Web Link (to launch the app) and paste it into this variable.                                                                                                                                                                            |
+| Archive Site URL (SharePoint Site)  | The *Archive and Clean Up flow* archives app files (.msapp) to a SharePoint site. Paste the URL of the Team site you created under [Create a SharePoint document library](#create-a-sharepoint-document-library). Leave blank if you're not planning to use the Archive and Clean Up flow.
+| Archive Folder                      | Folder (Document Library) within the above SharePoint site, where the .msapp file should be stored. Paste the name of the [Document Library you created earlier](#create-a-sharepoint-document-library). Leave blank if you're not planning to use the Archive and Clean Up flow.                                                                                                                                                                                                                                                                                 |
+| Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app), part of this solution and copy the Web Link (to launch the app) and paste it into this variable.                                                                                                                                                                            |
 | Power Platform Admin Security Group | The *Admin \| Find and add admins as owners for apps that leverage certain connectors* flow adds the Admin Security Group to apps. Configure the Admin Security Group first, then enter the Azure AD Group ID (Object Id) of the group here. Note: Make sure to enter the Object Id, not an email address. |
 
-## Initialize Flow Approval Entities in your Environment
+## Initialize Flow Approval entities in your environment
 
-The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Archive and Clean Up – Check Approval* flows use the built-in Approval actions of Power Automate. In the background, the built-in Approval actions use CDS. If you have installed the solution in a new environment, the Approval entities must be initialized. The easiest way to do this is to create a dummy approval flow.
+The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Archive and Clean Up – Check Approval* flows use the built-in Approval actions of Power Automate. In the background, the built-in Approval actions use Common Data Service. If you have installed the solution in a new environment, the Approval entities must be initialized. The easiest way to do this is to create a dummy approval flow.
 
 1. Navigate to [flow.microsoft.com](https://flow.microsoft.com).
 
@@ -104,11 +103,11 @@ The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Arc
 
 1. Select **Run Flow**  
 
-1. This flow can take up to ten minutes to run initially. Once run, you can delete the flow as it will not be needed anymore.
+1. This flow can take up to ten minutes to run initially. After it runs, you can delete the flow because it won't be needed anymore.
 
 1. Select **Solutions** on the left side, and you should now see two new  Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded. <br>![Flow Approval solutions](media/coe17.png)
 
-## Activate the Flows
+## Activate the flows
 
 This Governance solution contains five flows:
 
@@ -118,13 +117,11 @@ This Governance solution contains five flows:
 1. SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors
 1. SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
 
-Follow the same instructions to configure the flows as explained under [
-Activate the Sync Template Flows](setup-core-components.md#activate-the-sync-template-flows).
+Follow the same instructions to configure the flows as explained under [Activate the Sync Template Flows](setup-core-components.md#activate-the-sync-template-flows).
 
-## Share apps with Makers
+## Share apps with makers
 
-The Audit and Report Components solution contains one app, which is used by
-makers to update compliance details of their applications.
+The Audit and Report Components solution contains one app, which is used by makers to update compliance details of their applications.
 
 **Developer Compliance Center**
-Once you are ready to adopt the CoE with your makers of apps and flows, share this app with them. Your makers must have a Power Apps Premium license, as mentioned under [Prerequisites](setup.md#prerequisites).
+As soon as you're ready to adopt the CoE with your makers of apps and flows, share this app with them. Your makers must have a Power Apps Premium license, as mentioned under [Prerequisites](setup.md#prerequisites).

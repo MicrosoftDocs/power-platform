@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up Audit Log connector
+# Set up the Audit Log connector
 
-The Audit Log Sync flow connects to the Office 365 Audit Log to gather telemetry data (unique users, launches) for Power Apps apps. The flow uses a custom connector to
+The Audit Log Sync flow connects to the Office 365 Audit Log to gather telemetry data (unique users, launches) for apps. The flow uses a custom connector to
 connect to the Office 365 Audit Log. In the instructions below, you'll setup
 the custom connector and configure the flow.
 
@@ -28,7 +28,7 @@ There are two options to connect to the Audit Log: one using basic authenticatio
 ## Option 1: Connect to the Audit Log using basic authentication
 
 Make sure the account that is used to configure this section has permission to
-access the audit logs and does not have multi-factor authentication (MFA) enabled. Global tenant admins have access to the audit logs by default and can grant access to the audit logs for other user accounts or groups through the Exchange Admin Center.
+access the audit logs and doesn't have multifactor authentication enabled. Global tenant admins have access to the audit logs by default and can grant access to the audit logs for other user accounts or groups through the Exchange Admin Center.
 
 Keep in mind that once a user account has access to the audit logs, they have
 access to all audit logs across every Microsoft service that reports telemetry
@@ -75,7 +75,7 @@ For more information on how to configure a custom connector, see the [custom con
     1. For Admin \| Sync Audit Logs, select **Create as new** and select **Save**.
 
     1. For Office 365 Audit Logs Connector, Common Data Service Connection and Office 365 Audit Log Connection, select **Select during import**, and choose your connection.<br>
-    ![A screenshot of the import options when importing a new Flow](media/coe31.png)
+    ![A screenshot of the import options when importing a new flow](media/coe31.png)
 
     1. Once the connections are configured, select **Import**.
 
@@ -83,8 +83,8 @@ For more information on how to configure a custom connector, see the [custom con
 
     1. Select the back arrow in the upper left to go back to the flow details
         screen.
-    1. If the flow is not yet on, turn on the flow.
-    1. Run the flow to start syncing audit log data to the CDS entity.
+    1. If the flow isn't on yet, turn on the flow.
+    1. Run the flow to start syncing audit log data to the Common Data Service entity.
 
 ## Option 2: Connect to the Audit Log using an Azure App Registration
 
@@ -109,8 +109,8 @@ Using these steps, you'll set up an Azure AD App Registration that will be used 
 1. Select **+ New Client Secret**. <br>![New Client Secret](media/coe39.png)
 1. Add a description and expiration (in line with your company policies) and select **Add**.
 1. Copy and paste the **Secret** to Notepad for the time being.
-1. Select **Overview** and copy and paste the Application (client) id and Directory (tenant) id values to the same Notepad; make sure to take note of which GUID is for which value. You will need these values in the next step as you configure the Custom Connector.
-1. Leave the Azure AD Portal open, as you will need to make some configuration updates after setting up the custom connector.
+1. Select **Overview** and copy and paste the Application (client) id and Directory (tenant) id values to the same Notepad; make sure to take note of which GUID is for which value. You'll need these values in the next step as you configure the Custom Connector.
+1. Leave the Azure AD Portal open, because you'll need to make some configuration updates after setting up the custom connector.
 
 ### Set up the custom connector
 
@@ -120,13 +120,13 @@ Management APIs](<https://docs.microsoft.com/office/office-365-management-api/ge
 1. Download the **Center of Excellence – Audit Logs** solution from [GitHub](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit/Audit%20Log%20(MFA)).
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
-1. Import the **Center of Excellence – Audit Logs** (CenterofExcellenceAuditLogs_x_x_x_xxx_managed.zip) solution, which contains the custom connector and Power Automate flow to sync audit logs to CoE CDS entities.<br>![Center of Excellence – Audit Logs solution](media/coe40.png)
+1. Import the **Center of Excellence – Audit Logs** (CenterofExcellenceAuditLogs_x_x_x_xxx_managed.zip) solution, which contains the custom connector and Power Automate flow to sync audit logs to CoE Common Data Service entities.<br>![Center of Excellence – Audit Logs solution](media/coe40.png)
 1. Open the solution, select the **Office 365 Management API custom connector** and select **edit**.<br>![Custom Connector Setup](media/coe41.png)
 1. Leave the **1. General** page as is and select **2. Security**.
 1. Select **Edit** at the bottom of the OAuth 2.0 area to edit the authentication parameters.<br> ![Edit OAuth configuration](media/coe42.png)
 1. Paste the Application (Client) ID you have copied from the App Registration into Client Id.
 1. Paste the Client Secret you have copied from the App Registration into Client Secret.
-1. Do not change the Tenant ID.
+1. Don't change the Tenant ID.
 1. Set the Resource URL to **https://manage.office.com**.
 1. Copy the Redirect URL into your Notepad.
 1. Select **Update Connector**.
@@ -162,17 +162,17 @@ You should see a (200) Status returned, which means the query was successful.
 ![A screenshot of a successful status being returned from the StartSubscription activity ](media/coe44.png)
 
 > [!IMPORTANT]
-> If you do not see a (200) response, the request has failed and there is an error with your setup. The flow will therefore not work.
+> If you don't see a (200) response, the request has failed and there is an error with your setup. The flow will therefore not work.
 
 ## Set up the Power Automate flow
 
-A Power Automate flow uses the custom connector, queries the Audit Log daily and writes the Power Apps Launch Events to a CDS entity, which is then used in the Power BI Dashboard to report on sessions and unique users of an app.
+A Power Automate flow uses the custom connector, queries the Audit Log daily and writes the Power Apps Launch Events to a Common Data Service entity, which is then used in the Power BI Dashboard to report on sessions and unique users of an app.
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
 
 1. Open the Center of Excellence – Audit Log solution and edit the **Admin \| Sync Audit Logs**.  
     1. Select the flow in the solution to open it in the maker portal<Br> ![Select Admin Sync Audit Flow from solution](media/coe45.PNG)
-    1. Select **Edit** there (You will not be able to select Edit directly from the solution.)<Br> ![Edit flow](media/coe46.PNG)
+    1. Select **Edit** there (You won't be able to select Edit directly from the solution.)<Br> ![Edit flow](media/coe46.PNG)
 
 1. Look at the **Initialize tenantID** action and paste in the ID you have copied from Directory (tenant) ID. ![Initialize Tenant ID in Power Automate](media/coe47.png)
 

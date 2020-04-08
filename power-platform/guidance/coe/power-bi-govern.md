@@ -17,15 +17,15 @@ search.app:
 ---
 # Govern
 
-As an Admin you will want to use the insights you gather to drive action – such as performing risk assessments and identifying critical, orphaned or unused
-resources. The pages in the Govern section enable you to drive action directly from within the Power BI report through an embedded Power Apps app. The app can
-be used to grant yourself or others ownership or a resource, archive it, or delete it.
+As an admin, you'll want to use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused
+resources. The pages in the Govern section enable you to drive action directly from within the Power BI report through an embedded app. The app can
+be used to grant yourself or others ownership of a resource, archive it, or delete it.
 
-## App and Flow Risk Assessment
+## App and flow risk assessment
 
-The dashboard includes the ability for admins to identify overshared and overused resources, or resources using specific connectors. Not only will the admin have visibility to cccthose types of resources, they can also grant themselves ownership to inspect the resource behavior and decide if further action needs to be taken.
+You can use the dashboard to identify overshared and overused resources, or resources that use specific connectors. Not only will you have visibility to those types of resources, you can grant yourself ownership to inspect the resource behavior and decide whether you need to take further action.
 
-The **App Risk Assessment** page enables you to filter by:
+You can filter the **App Risk Assessment** page by:
 
 - Environment
 
@@ -50,23 +50,23 @@ Some typical assessments an admin would perform would be:
 Set *Shared with Everyone* to true or Select the Number of Shared Users on the slider in the right-hand filter section of this page to find widely apps.
 
 - Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model or might need a review of the number of people it is shared with.
-- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an AD group to share their app.    Otherwise a) your entire org will see the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them) and b) if a user does not have access to the underlying data source, they  will receive an error message upon trying to launch the app, which can cause an increase in support tickets and confusion.
+- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise a) your entire org will see the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them) and b) if a user doesn't have access to the underlying data source, they'll receive an error message when they try to launch the app, which can cause an increase in support tickets and confusion.
 
-- Apps shared with a large number of individual users pose a different risk:  if the app is for a specific job role or department, when an end user moves departments or job roles they would still see the app and be able to access the information. Therefore, we recommend sharing role-specific apps with an AD group instead.
+- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user moves departments or job roles they would still see the app and be able to access the information. Therefore, we recommend sharing role-specific apps with an Azure AD group instead.
 
 ### Identify orphaned apps
 
 Select *Blank* in the Owner dropdown in the right-hand filter section of this page to find orphaned apps.
 
-- Orphaned apps, where the app owner has left the organization, will still work for end users, but changes or bug fixes can only be made by an owner. It is therefore important to identify orphaned apps and find a new owner for them, or work on a retirement plan for those apps.
+- Orphaned apps, where the app owner has left the organization, will still work for users, but changes or bug fixes can only be made by an owner. It's important, therefore, to identify orphaned apps and find a new owner for them, or work on a retirement plan for those apps.
 
 ### Identify implicitly shared app connections
 
-- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](<https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication>). This means, once the application is published, the connection is also published and available to your users. Your end users can then also create applications using any connection using SQL Server authentication that is shared with them.
+- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the app is published, the connection is also published and available to your users. Your users can then also create apps by using any connection that uses SQL Server authentication that is shared with them.
 
-- Identify apps using the SQL Server Connector and ensure the end users are aware of the risks, and help them mitigate it by enabling AAD Authentication for SQL.
+- Identify apps that use the SQL Server Connector. Ensure that users are aware of the risks, and help them mitigate it by enabling Azure AD authentication for SQL.
 
-Select *SQL Server* in the Connector dropdown in the right-hand filter section of this page to find apps using the SQL Server Connector.
+Select *SQL Server* in the Connector drop-down in the right-hand filter section of this page to find apps that use the SQL Server Connector.
 
 ![App Risk Assessment](media/pb13.png)
 
@@ -96,7 +96,7 @@ Sort by *State* in the grid to look at flows that are Suspended.
 
 ### Identify orphaned flows
 
-- Orphaned flows, where the flow owner has left the organization, will stop working. It is therefore important to identify orphaned flows, check if they are still needed and find a new owner.
+- Orphaned flows, where the flow owner has left the organization, will stop working. It's therefore important to identify orphaned flows, check whether they're still needed, and find a new owner.
 
 - In the meantime, grant yourself ownership to see what the flow is doing.
 
@@ -104,28 +104,27 @@ Select *Blank* in the Owner dropdown in the right-hand filter section of this pa
 
 ### Implicitly shared flow connections
 
-- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users]  (<https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication>). This means, once the flow is shared, the connection is also published and  available to your users. Your end users can also create applications using any connection using SQL Server authentication that is shared with them.
+- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the flow is shared, the connection is also published and available to your users. Your users can also create flows<!--Edit okay? --> by using any connection that uses SQL Server authentication that is shared with them.
 
-- Identify flows using the SQL Server Connector, ensure the end users are aware of the risk, and help the mitigate it by enabling AAD Authentication for SQL.
+- Identify flows that use the SQL Server Connector. Ensure that users are aware of the risk, and help them mitigate it by enabling Azure AD Authentication for SQL.
 
-Select *SQL Server* in the Connector dropdown in the right-hand filter section of this page to find flows using the SQL Server Connector.
+Select *SQL Server* in the Connector drop-down in the right-hand filter section of this page to find flows that use the SQL Server Connector.
 
-### Identify Flow Actions
+### Identify flow actions
 
 - Specific actions or connectors might require you to gather additional information from the maker or educate them on usage. An example might be the Forward Email action of the Office 365 Outlook connector, or HTTP  Requests.
 
-Select **actions** or **connectors** you are interested in in the Connector and Action lists in the right-hand filter section of this page to find flows using those
-connectors or actions.
+Select actions or connectors you're interested in from the **Connector** and **Action** lists on the right side of this page to find flows that use those connectors or actions.
 
-![Flow Risk Assessment ](media/pb14.png)
+![Flows Risk Assessment ](media/pb14.png "Flows Risk Assessment")
 
 ## App and Flow Archive
 
-Using the CoE Dashboard, admins also have the ability to identify unused apps and flows by monitoring their Archive Score – in short, the higher the score the more likely you can archive the resource.
+Using the CoE Dashboard, admins also have the ability to identify unused apps and flows by monitoring their archive score: in short, the higher the score, the more likely it is you can safely archive the resource.
 
-- The highest possible score for an **app** is 6. A score of 6 would represent an app that has not been modified since it was created, is using a non-production word like "test" or "demo" in the title, was created over three years ago, and was likely created from a template.
+- The highest possible score for an **app** is 6. A score of 6 represents an app that hasn't been modified since it was created, is using a non-production word like  _test_ or _demo_ in the title, was created over three years ago, and was likely created from a template.
 
-- The highest possible score for a **flow** is 7. A score of 7 would represent a flow that has not been modified since it was created, is  using a non-production word like "test" or "demo" in the title, was created over three years ago, was likely created from a template, is in stopped state, and is not complex (contains fewer than 5 actions).
+- The highest possible score for a **flow** is 7. A score of 7 represents a flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, and isn't complex (contains fewer than five actions).
 
 :::row:::
    :::column span="":::
@@ -181,9 +180,9 @@ By right-clicking a specific flow and navigating to Drill through **Flow Detail*
 
 ### App and Flow Detail
 
-The **App Detail** page provides you with rich information about this resource, as well as an embedded Power Apps app that lets you immediately take action.
+The **App Detail** page provides you with rich information about this resource, as well as an embedded app that lets you immediately take action.
 
-With the embedded Power Apps app, you don't have to leave the Power BI dashboard to take action:
+With the embedded app, you don't have to leave the Power BI dashboard to take action:
 
 - You can grant yourself or others ownership
 
@@ -199,9 +198,9 @@ With the embedded Power Apps app, you don't have to leave the Power BI dashboard
 
 ### Flow Archive
 
-The **Flow Detail** page provides you with richer information about this resource, as well as an embedded Power Apps app to immediately take action.
+The **Flow Detail** page provides you with richer information about this resource, as well as an embedded app to immediately take action.
 
-With the embedded Power Apps app, you don't have to leave the Power BI dashboard to take action:
+With the embedded app, you don't have to leave the Power BI dashboard to take action:
 
 - You can grant yourself or others ownership
 

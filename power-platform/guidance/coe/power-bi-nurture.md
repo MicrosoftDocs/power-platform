@@ -19,7 +19,7 @@ search.app:
 
 As you establish your Center of Excellence, a significant part of your activity will be nurturing your maker community, enabling them to follow best practices, and working together with them to identify whether they or their resources need additional support.
 
-The Nurture section helps you find your "star" app and flow makers and see what connectors they are using, where they are based (department/city/country) and how they are adopting the Power Platform.
+The Nurture section helps you find your "star" app and flow makers and see what connectors they're using, where they're based (department/city/country) and how they're adopting Power Platform.
 
 ## Makers
 
