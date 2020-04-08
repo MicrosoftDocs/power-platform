@@ -36,7 +36,7 @@ If the quota for messages to a chatbot is met, the user chatting with the chatbo
  
 If the quota for messages in a conversation is met, the user will see a response from the chatbot asking the user to repeat the message again later.
 
-![Error message that says 'Please wait….I'm still processing your previous messages. Try again in a moment.'](media/ requirements-quota-messages-throttle.png "Error message that says 'Please wait….I'm still processing your previous messages. Try again in a moment.'")
+![Error message that says 'Please wait...I'm still processing your previous messages. Try again in a moment.'](media/requirements-quota-messages-throttle.png "Error message that says 'Please wait...I'm still processing your previous messages. Try again in a moment.'")
 
 
 
