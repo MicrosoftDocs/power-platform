@@ -84,6 +84,8 @@ When you purchase a license, you gain capacity for the specified number of bille
 
 The consumption of the capacity isn't reported at the tenant level, but [can be seen for each individual bot](analytics-billed-sessions.md).
 
+See [Power Virtual Agents quotas and capacity considerations](requirements-quotas.md) for more information.
+
 ## Using Power Automate with a Power Virtual Agents license
 
 [See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
