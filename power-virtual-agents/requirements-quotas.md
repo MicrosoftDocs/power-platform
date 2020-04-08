@@ -25,18 +25,18 @@ The following quotas, defined as requests per minute (RPM) and requests per seco
 
 Action | Paid Plan
 --|--
-**Messages to a chatbot**<br/>Includes any message from the user or from integrations, such as Azure Bot Framework Skills, to a single chatbot. | 800 requests per minute (RPM)\* 	
+**Messages to a chatbot**<br/>Includes any message from a user or from integrations, such as Azure Bot Framework Skills, to a single chatbot. This includes multiple users interacting with a single chatbot. | 800 RPM\* 	
 **Messages in a conversation**<br/>Includes messages in a single conversation. | 5 RPS and 30 RPM	
 
-\*Chatbots created in the North America region support 600 RPM. 800 RPM applies to all other supported regions.
+\*Chatbots created in the North America region support 600 RPM. 800 RPM applies to [all other supported regions](data-location.md).
 
 ## Error messages when quotas are met
 
-If the quota for messages to a chatbot is met, the user chatting with the chatbot will see a failure notice when they try to send a message. They'll be prompted to retry.
+If the quota for **messages to a chatbot** is met, the user chatting with the chatbot will see a failure notice when they try to send a message. They'll be prompted to retry.
 
 ![Error message in the chat bot window that says 'Send failed. Retry.'](media/requirements-quota-error.png "Error message in the chatbot window that says 'Send failed. Retry.'")
  
-If the quota for messages in a conversation is met, the user will see a response from the chatbot asking the user to repeat the message again later.
+If the quota for **messages in a conversation** is met, the user will see a response from the chatbot asking the user to repeat the message again later.
 
 ![Error message that says 'Please wait...I'm still processing your previous messages. Try again in a moment.'](media/requirements-quota-messages-throttle.png "Error message that says 'Please wait...I'm still processing your previous messages. Try again in a moment.'")
 
