@@ -2,7 +2,7 @@
 title: "Extend your bot using Bot Framework Skills"
 description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities"
-ms.date: 12/4/2019
+ms.date: 4/8/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
