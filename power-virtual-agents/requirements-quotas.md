@@ -1,89 +1,42 @@
 ---
-title: "Assign user licenses and manage access to Power Virtual Agents"
-description: "Assign licenses and manage access to Power Virtual Agents for your organization"
-keywords: "Administration, licensing"
-ms.date: 2/27/2020
+title: "Rate limits for Power Virtual Agents chatbots"
+description: "Rate limits determine how often messages can be sent to a chatbot"
+keywords: ""
+ms.date: 4/8/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "licensing, admin"
+ms.custom: "quotas, admin"
 ms.collection: virtual-agent
 ---
 
-# Assign licenses and manage access to Power Virtual Agents
+# Quotas and rate limit capacity considerations for Power Virtual Agents
 
-To create and manage bots with Power Virtual Agents, you need:
+Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the service load for a client, which protects a service from being overloaded and the client from unexpected resource usage.
 
-- A license for each user, also known as a "per user license."
-- A license for your organization, also known as a "tenant license." 
+Quotas are applied to the bots alongside the capacity constraints you gained by purchasing a [Power Virtual Agents plan](https://go.microsoft.com/fwlink/?linkid=2099502). Also see [Licensing and capacity considerations](requirements-licensing.md).
 
->[!NOTE]
->Users of your bot don't need a special license. After you publish your bot, anyone who can access where you published the bot can interact with the bot.
+The following quotas, defined as requests per minute (RPM) and requests per second (RPS), apply to Power Virtual Agents bots. A request is a message from the user to the bot, or a message from an Azure Bot Framework Skill, in a single chat session.
 
-More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+Action | Paid Plan
+--|--
+**Messages to a bot.**<br/>Includes any message from the user or from integrations, such as Azure Bot Framework Skills, to a single bot. | 800 requests per minute (RPM)\* 	
+**Messages in a conversation.**<br/>Includes messages in a single conversation. | 5 RPS and 30 RPM	
 
-> [!NOTE]
-> To acquire a Power Virtual Agents user license, you need to use the non-preview version of the admin center. Ensure the **Try the new admin center** setting is turned off.
-  
-## Prerequisites
+\*Bots created in the North America region support 600 RPM. 800 RPM applies to all other supported regions.
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+## Error messages when quotas are met
+
+If the quota for messages to a bot is met, the user chatting with the bot will see a failure notice when they try to send a message. They’ll be prompted to retry.
+
+![Error message that says Send failed. Retry. In the chat bot window](media/requirements-quota-error.png “Error message that says Send failed. Retry. In the chat bot window”)
+ 
+If the quota for messages in a conversation is met, the user will see a response from the bot asking the user to repeat the message again later.
+
+![Error message that says Please wait….I’m still processing your previous messages. Try again in a moment.](media/ requirements-quota-messages-throttle.png “Error message that says Please wait….I’m still processing your previous messages. Try again in a moment.”)
 
 
-## Buy a tenant license
 
-Purchase licenses for your organization by going to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx). You'll need to sign in with an admin account to buy licenses.
-
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
-
-2. On the navigation pane, expand the **Billing** menu, and then select **Purchase services**.
-
-3. Search for **Power Virtual Agents license**, and complete the checkout process.
-
-## Acquire user licenses
-
-1. After you've purchased a Power Virtual Agent license, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
-
-2. Scroll down to the **Add-ons** section.
-
-3. Look for **Power Virtual Agent User License**. Select the number of licenses you need, and complete the checkout process.
-
-## Assign licenses to users
-
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
-
-2. On the navigation pane, expand the **Users** menu, and then select **Active users**.
-
-    ![Expand Users, and then select Active users](media/licensing-menu-users.png "Expand Users, and then select Active users")
-
-3. Select a name, and then select **Manage product licenses**.
-
-   ![Select a user, and then manage product licenses](media/licensing-manage.png "Select a user, and then manage product licenses")
-
-4. On the flyout panel, select the check box next to **Power Virtual Agents user license**, and then select **Save changes**. 
-
-Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
-
-  > [!NOTE]
-  > To simplify user license management, you can assign licenses to an Azure Active Directory (Azure AD) security group. More information: [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
-
-The users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
-
-## Trial plans
-
-Users in your organization can try Power Virtual Agents for a limited time period.
-
-You can [disable or enable the ability for users to sign up for a trial themselves](/azure/active-directory/users-groups-roles/directory-self-service-signup) by modifying the **AllowAdHocSubscriptions** flag in your organization settings. 
-
-## Subscription capacity
-
-When you purchase a license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
-
-The consumption of the capacity isn't reported at the tenant level, but [can be seen for each individual bot](analytics-billed-sessions.md).
-
-## Using Power Automate with a Power Virtual Agents license
-
-[See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
