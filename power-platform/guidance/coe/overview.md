@@ -15,64 +15,66 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Overview
-
+# Overview 
+<!--note from editor: All of the articles in this doc set need more descriptive titles and descriptions. I didn't have time to make suggestions, but please see the Docs Contributor Guide for some ideas: https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-seo-basics?branch=master-->
 A Center of Excellence (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization. 
 
-The Power Platform Center of Excellence (CoE) starter kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting the Power Platform, with a focus on Power Apps and Power Automate.
+The Power Platform CoE Starter Kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting Power Platform, with a focus on Power Apps and Power Automate.
 
-You can download the most updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
+You can download the most recently updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
 
-The kit does not represent the entire Center of Excellence, because
-managing a CoE requires more than the tools alone; the Center of Excellence
-also requires people, communication, defined requirements and processes. The
-tools provided here are just a means to get to the end goal, but the Center of
-Excellence itself must be thoughtfully designed by each organization based on
-their needs and preferences - read more under [What is a Center of Excellence?](motivation.md).
+The kit doesn't represent the entire CoE, because managing a CoE requires more than the tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences. More information: [What is a Center of Excellence?](motivation.md)<!--general note: This is how we usually like to format cross-references. Note that there's no trailing period with this format, so it doesn't work when the cross-reference is in the middle of a paragraph.-->
 
-The kit provides some automation and tooling to help teams build monitoring and
-automation necessary to support a CoE. The foundation of the kit is a Common
-Data Service (CDS) data model and workflows to collect resource information
-across the environments in the tenant. The kit includes multiple Power Apps and
-Power BI analytics to view and interact with the data collected, as well as
-flows to collect data across environments, and help with workflows for your
-Compliance needs. The kit also provides several templates
-and suggested patterns and practices for implementing CoE efforts.
+The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Common Data Service data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps<!--Please check my edits against the Cloud Style Guide, which uses "apps" instead of "Power Apps apps".--> and Power BI analytics to view and interact with the data you collect, in addition to flows to collect data across environments and help with workflows for your compliance needs. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
 
 ## Disclaimer
 
-While the underlying features and components used to build the kit (such as Common Data Service, Admin APIs, and Connectors) are fully supported, the kit itself represents sample implementations of these features that our customers and community can use and customize to implement admin and governance capabilities in their organization.
+Although the underlying features and components used to build the kit (such as Common Data Service, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement admin and governance capabilities in their organizations.
 
 If you face issues with:
 
-- Using the kit, report your issue here: [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they do help with related underlying platform and feature issues.)
-- The core features in Power Platform, use your standard channel to contact Microsoft Support.
+- **Using the kit**: Report your issue at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
+- **The core features in Power Platform**: Use your standard channel to contact Support.
 
 ## Purpose of this document
 
-This CoE Starter Kit and this guidance are targeted toward the person or department responsible for setting up a Microsoft Power Platform CoE in their organization. The goal of this guidance is to help you understand what the motivation as well as responsibilities of a Center of Excellence are, as well as walk you through the pre-requisites, setup instructions and individual components of the CoE Starter Kit.
+This CoE Starter Kit and this guidance are targeted toward the person or department responsible for setting up a Power Platform CoE in their organization. The goal of this guidance is to help you understand what the motivation for&mdash;and the responsibilities of&mdash;a Center of Excellence are, in addition to walking you through the prerequisites, setup instructions, and individual components of the CoE Starter Kit.
 
 ## How to get started
 
-After you've installed the CoE Starter Kit solution (see [Set up the CoE Starter Kit](setup.md)), get familiar with the resources in your tenant:
+After you've [installed the CoE Starter Kit solution](setup.md), get familiar with the resources in your tenant.<!--Suggest adding this note above the examples instead of after; I was a bit confused until I realized that you were just showing a general overview of the features.-->
 
-1. Open the **Power BI Dashboard** and familiarize yourself with resources and makers already in your environments.<br>
-![CoE Power BI  Dashboard](media/coe1.PNG)
-1. Plan your **Data Loss Prevention Policy Strategy** and use the DLP Editor (canvas app) to mitigate the risk of impacting apps when making changes to your policies.<br>![DLP Editor Canvas App](media/coe2.PNG)
-1. **Identify orphaned apps** and assign them to new owners using the embedded app in the Power BI Dashboard.<br>![Set New App Owner Canvas App](media/coe3.PNG)
-1. Start planning your **governance strategy** by identifying your requirements on what makes a compliant app or maker, what information you will need per app or per maker, what happens to non-compliant apps and makers, how you will support your maker community in building compliant apps that follow best practices, what audits you want to run, and what actions you will drive based on those audits.<br>![Developer Compliance Center Canvas App](media/coe4.PNG)
-1. Embrace your maker community and develop a **nurture and adoption strategy**. Think about how to onboard new makers; organize internal events such as Show & Tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.<br>![Welcome email to new makers](media/coe6.PNG)
+> [!NOTE]
+> The following steps are just examples of what you can do with the components in the CoE Starter Kit. Explore the rest of the guidance here to see what's available and how to make the most of the kit.
 
-The above are just some samples of the components in the CoE Starter Kit. Explore the rest of the guidance here to see what is available in the kit.
+1. Open the Power BI dashboard and familiarize yourself with resources and makers that are already in your environments.<!--PLEASE NOTE: Throughout this doc set, I found no screenshots with fictitious names that are on the Dynamics approved name list. Are Lee Gu, Megan Bowen etc. names from sample data? If not, I'm afraid those names need to be smudged out, or the screens re-shot with names from this list (note that this IS NOT the list from the CELA Fictitious Names Finder): https://microsoft.sharepoint-df.com/:o:/r/teams/Dynamics365CustomerEngagementEditingResources/_layouts/15/Doc.aspx?sourcedoc=%7B0ea74ded-c03c-452d-a0de-6c89d54f7107%7D&action=edit&wd=target(Editing%20Process.one%7C8c39c533-53fe-4763-87d6-71b67de57561%2FRequest%20editing%20of%20your%20content%7Cb1a3c493-30ff-4299-9a40-6fbd69707fbd%2F)-->
 
-## Further Resources
+    ![CoE Power BI dashboard](media/coe1.PNG "CoE Power BI dashboard")
 
-- [Power Apps admin documentation](<https://docs.microsoft.com/powerplatform/admin>)
+1. Plan your data loss prevention policy strategy and use the DLP Editor (canvas app) to mitigate the risk of negatively affecting apps when making changes to your policies.<!--Another general note about graphics: We duplicate the alt text in the index field (in quotation marks). Notice also, we use blank lines and indents for graphics that are embedded in procedures, rather than <br> tags. This gives a bit more vertical space.-->
 
-- Find training resources, including guided learning and step-by-step guides [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs)
+    ![DLP Editor canvas app](media/coe2.PNG "DLP Editor canvas app")
 
-- Read up on customer success stories and find resources relevant to your experience, technical background and skill level [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources)
+1. Identify orphaned apps and assign them to new owners by using the embedded app in the Power BI dashboard.
 
-- Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](<https://aka.ms/PowerUp>)
+    ![Set New App Owner canvas app](media/coe3.PNG "Set New App Owner canvas app")
 
-- As an admin looking after the Center of Excellence, you should be familiar with the Administration and Governance of the Power Platform. We recommend the following whitepaper as a resource: [aka.ms/PowerAppsAdminWhitepaper](<https://aka.ms/powerappsadminwhitepaper>)
+1. Start planning your governance strategy by identifying your requirements for what makes a compliant app or maker, what information you'll need per app or per maker, what happens to noncompliant apps and makers, how you'll support your maker community in building compliant apps that follow best practices, what audits you want to run, and what actions you'll drive based on those audits.
+
+    ![Developer Compliance Center canvas app](media/coe4.PNG "Developer Compliance Center canvas app")
+
+1. Embrace your maker community and develop a nurture and adoption strategy. Think about how to onboard new makers; organize internal events such as show-and-tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.
+
+    ![Email to welcome new makers](media/coe6.PNG "Email to welcome new makers")
+
+## Further resources
+
+- Explore the [Power Apps admin documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation).
+
+- Find training resources, including guided learning and step-by-step guides at [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
+
+- Read up on customer success stories and find resources relevant to your experience, technical background and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
+
+- Get started with the Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](https://aka.ms/PowerUp).
+
+- As an admin looking after the CoE, you should be familiar with the administration and governance of Power Platform. We recommend the following white paper as a resource: [aka.ms/PowerAppsAdminWhitepaper](https://aka.ms/powerappsadminwhitepaper).

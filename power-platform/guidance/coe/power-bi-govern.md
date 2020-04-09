@@ -15,17 +15,15 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Govern
+# Govern in the CoE Power BI dashboard
 
-As an Admin you will want to use the insights you gather to drive action – such as performing risk assessments and identifying critical, orphaned or unused
-resources. The pages in the Govern section enable you to drive action directly from within the Power BI report through an embedded Power Apps app. The app can
-be used to grant yourself or others ownership or a resource, archive it, or delete it.
+As an admin, you'll want to use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, archive it, or delete it.
 
-## App and Flow Risk Assessment
+## App risk assessment
 
-The dashboard includes the ability for admins to identify overshared and overused resources, or resources using specific connectors. Not only will the admin have visibility to cccthose types of resources, they can also grant themselves ownership to inspect the resource behavior and decide if further action needs to be taken.
+You can use the dashboard to identify overshared and overused resources, or resources that use specific connectors. Not only will you have visibility to those types of resources, you can grant yourself ownership to inspect the resource behavior and decide whether you need to take further action.
 
-The **App Risk Assessment** page enables you to filter by:
+You can filter the **App Risk Assessment** page by:
 
 - Environment
 
@@ -41,38 +39,39 @@ The **App Risk Assessment** page enables you to filter by:
 
 - Last Launched Date
 
-You can additionally sort the output data by number of unique users or sessions and last launched date.
+In addition, you can sort the output data by number of unique users or sessions, and last launched date.
 
-Some typical assessments an admin would perform would be:
+Some typical assessments an admin might perform are described in the following sections.
 
 ### Identify widely shared apps
 
-Set *Shared with Everyone* to true or Select the Number of Shared Users on the slider in the right-hand filter section of this page to find widely apps.
+Set **Shared with Everyone** to **True**, or select the **Number of Shared Users** on the slider in the right-hand filter section of this page to find widely shared apps.
 
-- Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model or might need a review of the number of people it is shared with.
-- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an AD group to share their app.    Otherwise a) your entire org will see the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them) and b) if a user does not have access to the underlying data source, they  will receive an error message upon trying to launch the app, which can cause an increase in support tickets and confusion.
+- Widely shared resources (shared with the entire tenant or many individual users) might need a stronger support model or might need a review of the number of people they're shared with.
 
-- Apps shared with a large number of individual users pose a different risk:  if the app is for a specific job role or department, when an end user moves departments or job roles they would still see the app and be able to access the information. Therefore, we recommend sharing role-specific apps with an AD group instead.
+- Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise, (a) your entire org will see the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them), and (b) if a user doesn't have access to the underlying data source, they'll receive an error message when they try to launch the app, which can cause an increase in support tickets and confusion.
+
+- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user moves departments or job roles they will still see the app and be able to access the information. Therefore, we recommend sharing role-specific apps with an Azure AD group instead.
 
 ### Identify orphaned apps
 
-Select *Blank* in the Owner dropdown in the right-hand filter section of this page to find orphaned apps.
+Select **Blank** in the **Owner** drop-down in the right-hand filter section of this page to find orphaned apps.
 
-- Orphaned apps, where the app owner has left the organization, will still work for end users, but changes or bug fixes can only be made by an owner. It is therefore important to identify orphaned apps and find a new owner for them, or work on a retirement plan for those apps.
+- Orphaned apps, where the app owner has left the organization, will still work for users, but changes or bug fixes can only be made by an owner. It's important, therefore, to identify orphaned apps and find a new owner for them, or work on a retirement plan for those apps.
 
 ### Identify implicitly shared app connections
 
-- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](<https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication>). This means, once the application is published, the connection is also published and available to your users. Your end users can then also create applications using any connection using SQL Server authentication that is shared with them.
+- Some connectors, like the SQL Connector used with SQL Server Authentication, are [shared implicitly with users](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the app is published, the connection is also published and available to your users. Your users can then also create apps by using any connection that uses SQL Server authentication that's shared with them.
 
-- Identify apps using the SQL Server Connector and ensure the end users are aware of the risks, and help them mitigate it by enabling AAD Authentication for SQL.
+- Identify apps that use the SQL Server Connector. Ensure that users are aware of the risks, and help them mitigate it by enabling Azure AD authentication for SQL<!--Should this be SQL Server? -->.
 
-Select *SQL Server* in the Connector dropdown in the right-hand filter section of this page to find apps using the SQL Server Connector.
+Select **SQL Server** in the **Connector** drop-down in the right-hand filter section of this page to find apps that use the SQL Server Connector.
 
-![App Risk Assessment](media/pb13.png)
+![Apps Risk Assessment](media/pb13.png "Apps Risk Assessment")
 
-## Flow Risk Assessment
+## Flows risk assessment
 
-The **Flow Risk Assessment** page enables you to filter by:
+The **Flows Risk Assessment** page enables you to filter by:
 
 - Environment
 
@@ -84,133 +83,131 @@ The **Flow Risk Assessment** page enables you to filter by:
 
 - Action (Send Email, Delete SharePoint Items)
 
-Some typical assessments an admin would perform would be:
+Some typical assessments an admin might perform are described in the following sections.
 
 ### Identify suspended flows
 
-- Flows will be suspended due to using a combination of connectors that conflict with the company [data loss prevention policies](https://docs.microsoft.com/power-automate/prevent-data-loss) or billing restrictions
+- Flows will be suspended due to using a combination of connectors that conflict with the company [data loss prevention policies](https://docs.microsoft.com/power-automate/prevent-data-loss) or billing restrictions.
 
-- Find those flows and work with the maker to identify if the flow is still needed, and if so, what policy violation they've encountered. Educate the maker or modify the DLP policy as needed!
+- Find those flows, and work with the maker to decide whether the flow is still needed, and if so, what policy violation they've encountered. Educate the maker or modify the DLP policy as needed.
 
-Sort by *State* in the grid to look at flows that are Suspended.
+Sort by **State** in the grid to look at flows that are **Suspended**.
 
 ### Identify orphaned flows
 
-- Orphaned flows, where the flow owner has left the organization, will stop working. It is therefore important to identify orphaned flows, check if they are still needed and find a new owner.
+- Orphaned flows, where the flow owner has left the organization, will stop working. It's therefore important to identify orphaned flows, check whether they're still needed, and find a new owner.
 
 - In the meantime, grant yourself ownership to see what the flow is doing.
 
-Select *Blank* in the Owner dropdown in the right-hand filter section of this page to find orphaned flows.
+Select **Blank** in the **Owner** drop-down in the right-hand filter section of this page to find orphaned flows.
 
 ### Implicitly shared flow connections
 
-- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users]  (<https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication>). This means, once the flow is shared, the connection is also published and  available to your users. Your end users can also create applications using any connection using SQL Server authentication that is shared with them.
+- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the flow is shared, the connection is also published and available to your users. Your users can also create flows<!--Edit okay? --> by using any connection that uses SQL Server authentication that is shared with them.
 
-- Identify flows using the SQL Server Connector, ensure the end users are aware of the risk, and help the mitigate it by enabling AAD Authentication for SQL.
+- Identify flows that use the SQL Server Connector. Ensure that users are aware of the risk, and help them mitigate it by enabling Azure AD authentication for SQL<!--Should this be SQL Server? -->.
 
-Select *SQL Server* in the Connector dropdown in the right-hand filter section of this page to find flows using the SQL Server Connector.
+Select **SQL Server** in the **Connector** drop-down in the right-hand filter section of this page to find flows that use the SQL Server Connector.
 
-### Identify Flow Actions
+### Identify flow actions
 
-- Specific actions or connectors might require you to gather additional information from the maker or educate them on usage. An example might be the Forward Email action of the Office 365 Outlook connector, or HTTP  Requests.
+- Specific actions or connectors might require you to gather additional information from the maker or educate them on usage. An example might be the Forward Email action of the Office 365 Outlook connector, or HTTP requests.
 
-Select **actions** or **connectors** you are interested in in the Connector and Action lists in the right-hand filter section of this page to find flows using those
-connectors or actions.
+Select actions or connectors you're interested in from the **Connector** and **Action** lists on the right side of this page to find flows that use those connectors or actions.
 
-![Flow Risk Assessment ](media/pb14.png)
+![Flows Risk Assessment ](media/pb14.png "Flows Risk Assessment")
 
 ## App and Flow Archive
 
-Using the CoE Dashboard, admins also have the ability to identify unused apps and flows by monitoring their Archive Score – in short, the higher the score the more likely you can archive the resource.
+Using the CoE dashboard, admins also have the ability to identify unused apps and flows by monitoring their archive score: in short, the higher the score, the more likely it is you can safely archive the resource.
 
-- The highest possible score for an **app** is 6. A score of 6 would represent an app that has not been modified since it was created, is using a non-production word like "test" or "demo" in the title, was created over three years ago, and was likely created from a template.
+- The highest possible score for an app is 6. A score of 6 represents an app that hasn't been modified since it was created, is using a non-production word like  _test_ or _demo_ in the title, was created over three years ago, and was likely created from a template.
 
-- The highest possible score for a **flow** is 7. A score of 7 would represent a flow that has not been modified since it was created, is  using a non-production word like "test" or "demo" in the title, was created over three years ago, was likely created from a template, is in stopped state, and is not complex (contains fewer than 5 actions).
+- The highest possible score for a flow is 7. A score of 7 represents a flow that hasn't been modified since it was created, is using a non-production word like _test_ or _demo_ in the title, was created over three years ago, was likely created from a template, is in a stopped state, and isn't complex (contains fewer than five actions).
 
 :::row:::
    :::column span="":::
-      ![Power Apps Archive](media/pb10.png)
+      ![Power Apps Archive](media/pb10.png "Power Apps Archive")
    :::column-end:::
    :::column span="":::
-      ![Power Automate Archive](media/pb12.png)
+      ![Power Automate Archive](media/pb12.png "Power Automate Archive")
    :::column-end:::
 :::row-end:::
 
-The **App Archive** page is sorted by highest archive score and through filters allows you to target specific makers, date ranges, environments, departments or
-connectors.
+The **App Archive** page is sorted by highest archive score. You can use filters to target specific makers, date ranges, environments, departments, or connectors.
 
 The **Archive Score** is the sum of multiple criteria:
 
 - Has the app been modified since it was created? (+1)
 
-- Is the app name using non-production words such as *test, demo, sample*? (+1)
+- Is the app name using non-production words such as *test*, *demo*, or *sample*? (+1)
 
-- When was the app last modified? (+3 for more than 2 years ago, +2 for more than 1 year ago, +1 for more than 3 months ago)
+- When was the app last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
 
-- Is this app likely a template or are there multiple apps with the same name? (+1)
+- Is this app likely a template, or are there multiple apps with the same name? (+1)
 
-A [tooltip](https://docs.microsoft.com/power-bi/desktop-tooltips) (pops up when you hover over a line item) shows additional details like number of launches and last launched date.
+A [tooltip](https://docs.microsoft.com/power-bi/desktop-tooltips) shows additional details like number of launches and last launched date.
 
-![App Archive](media/pb15.png)
+![App Archive](media/pb15.png "App Archive")
 
-**Right-click** on a specific App and select Drill through >  **App Detail** to open open the Detail page for the selected app.
+Right-click to select a specific app, and then select **Drill through** >  **App Detail** to open the detail page for the selected app.
 
-![Navigate to the App Detail page](media/coe81.png)
+![Go to the app detail page](media/coe81.png "Go to the app detail page")
 
-The **Flow Archive** page is sorted by highest archive score and allows you to target specific makers, date ranges, environments, departments or connectors.
+The **Flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.
 
-The **Archive Score** is a sum of multiple criteria:
+The **Archive Score** is the sum of multiple criteria:
 
 - Has the flow been modified since it was created? (+1)
 
-- Is the flow using non production words such as *test, demo, sample*? (+1)
+- Is the flow using non production words such as *test*, *demo*, or *sample*? (+1)
 
-- When was the flow last modified? (+3 for more than 2 years ago, +2 for more than 1 year ago, +1 for more than 3 months ago)
+- When was the flow last modified? (+3 for more than two years ago, +2 for more than one year ago, +1 for more than three months ago)
 
-- Is this flow likely a template or are there multiple flows with the same name? (+1)
+- Is this flow likely a template, or are there multiple flows with the same name? (+1)
 
 - What is the flow state? (+2 for stopped, +1 for suspended)
 
-- How complex is the flow, based on number of unique actions? (-1 if complex, as it indicates a user has spent a lot of time putting together)
+- How complex is the flow, based on number of unique actions? (-1 if complex, because that indicates a user has spent a lot of time putting it together)
 
-A tooltip (pops up when you hover over a line item) shows additional details like number of launches and last launched date as well as the scores for the above criteria.
+A tooltip shows additional details like number of launches and last launched date, in addition to the scores for the above criteria.
 
-![Flow Archive](media/pb18.png)
+![Flow Archive](media/pb18.png "Flow Archive")
 
-By right-clicking a specific flow and navigating to Drill through **Flow Detail**, you can open the Detail page for the selected flow.
+By right-clicking to select a specific flow and going to **Drill through** > **Flow Detail**, you can open the detail page for the selected flow.
 
 ### App and Flow Detail
 
-The **App Detail** page provides you with rich information about this resource, as well as an embedded Power Apps app that lets you immediately take action.
+The **App Detail** page provides you with rich information about this resource, in addition to an embedded app that lets you immediately take action.
 
-With the embedded Power Apps app, you don't have to leave the Power BI dashboard to take action:
+With the embedded app, you don't have to leave the Power BI dashboard to take action:
 
-- You can grant yourself or others ownership
+- You can grant yourself or others ownership.
 
-- You can archive the app (this requires a SharePoint site with a Document Library to be configured beforehand)
+- You can archive the app (this requires that you configure a SharePoint site with a document library beforehand).
 
-- You can delete the app
+- You can delete the app.
 
-- You can email the app owner
+- You can email the app owner.
 
-- Once you have granted yourself ownership, you can launch the Maker Portal to view version
+- After you've granted yourself ownership, you can launch the maker portal to view the version number.<!--Edit okay? -->
 
-![App Details](media/pb16.png)
+![App Details](media/pb16.png "App Details")
 
 ### Flow Archive
 
-The **Flow Detail** page provides you with richer information about this resource, as well as an embedded Power Apps app to immediately take action.
+The **Flow Detail** page provides you with richer information about this resource, in addition to an embedded app to immediately take action.
 
-With the embedded Power Apps app, you don't have to leave the Power BI dashboard to take action:
+With the embedded app, you don't have to leave the Power BI dashboard to take action:
 
-- You can grant yourself or others ownership
+- You can grant yourself or others ownership.
 
-- You can export the flow
+- You can export the flow.
 
-- You can delete the flow
+- You can delete the flow.
 
-- You can email the flow maker
+- You can email the flow maker.
 
-- Once you have granted yourself ownership, you can launch the Maker Portal to view flow analytics and details
+- After you've granted yourself ownership, you can launch the maker portal to view flow analytics and details.
 
-![Flow Details](media/pb17.png)
+![Flow Details](media/pb17.png "Flow Details")
