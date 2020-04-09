@@ -35,3 +35,8 @@ The Power Platform CoE Starter Kit is a collection of components and tools that 
       <img src="media/i_get-started.svg" alt="Overview icon" width="80"/><br><br>**Nurture** <Br>Accelerate your adoption by thriving with a community of makers <br><ul><li>[Set up](setup-nurture-components.md)</li><li>[Use](nurture-components.md)</li></ul>
    :::column-end:::
 :::row-end:::
+
+### See also
+[Power Platform admin guide](/power-platform/admin/admin-documentation)<br/>
+[Power Apps docs](https://docs.microsoft.com/en-us/powerapps)<br/>
+[Power Automate docs](https://docs.microsoft.com/power-automate)
