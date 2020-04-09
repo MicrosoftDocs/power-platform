@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 04/09/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -19,7 +19,6 @@ search.app:
 
 |Topic  |Video  |PowerPoint  |
 |---------|---------|---------|
-|Center of Excellence: Tried and tested techniques|[Video](https://youtu.be/ItjPsGZ2NBE)  |[Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2004)  |
 |Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate |[Video](https://youtu.be/BnolkTK2Sng) | [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2005) |
 |What's new for Power Apps and Microsoft Dynamics 365 admins |[Video](https://youtu.be/arzQrPPItlY) |[Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2000) |
 |Best practices for managing and automating (ALM) |[Video](https://youtu.be/aWjMFxI3y8c)| [Deck](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2001) |
