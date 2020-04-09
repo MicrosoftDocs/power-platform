@@ -25,11 +25,11 @@ You can download the most recently updated assets from the [GitHub repository](h
 
 The kit doesn't represent the entire CoE, because managing a CoE requires more than the tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences. More information: [What is a Center of Excellence?](motivation.md)
 
-The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Common Data Service data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps<!--note from editor: See Cloud Style Guide, which uses "apps" instead of "Power Apps apps".--> and Power BI analytics to view and interact with the data you collect, in addition to flows to collect data across environments and help with workflows for your compliance needs. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
+The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Common Data Service data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps<!--Please check against the Cloud Style Guide, which uses "apps" instead of "Power Apps apps".--> and Power BI analytics to view and interact with the data you collect, in addition to flows to collect data across environments and help with workflows for your compliance needs. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
 
 ## Disclaimer
 
-Although<!--note from editor: https://styleguides.azurewebsites.net/StyleGuide/Read?id=2700&topicid=36434 --> the underlying features and components used to build the kit (such as Common Data Service, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement admin and governance capabilities in their organizations.
+Although the underlying features and components used to build the kit (such as Common Data Service, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement admin and governance capabilities in their organizations.
 
 If you face issues with:
 
@@ -42,9 +42,12 @@ This CoE Starter Kit and this guidance are targeted toward the person or departm
 
 ## How to get started
 
-After you've [installed the CoE Starter Kit solution](setup.md)), get familiar with the resources in your tenant.
+After you've [installed the CoE Starter Kit solution](setup.md), get familiar with the resources in your tenant.<!--Suggest adding this note above the examples instead of after; I was a bit confused until I realized that you were just showing a general overview of the features.-->
 
-1. Open the Power BI dashboard and familiarize yourself with resources and makers that are already in your environments.<!--note from editor: The following fictitious names aren't on our approved list.-->
+> [!NOTE]
+> The following steps are just examples of what you can do with the components in the CoE Starter Kit. Explore the rest of the guidance here to see what's available and how to make the most of the kit.
+
+1. Open the Power BI dashboard and familiarize yourself with resources and makers that are already in your environments.<!--PLEASE NOTE: Throughout this doc set, I found no screenshots with fictitious names that are on the Dynamics approved name list. Are Lee Gu, Megan Bowen etc. names from sample data? If not, I'm afraid those names need to be smudged out, or the screens re-shot with names from this list (note that this IS NOT the list from the CELA Fictitious Names Finder): https://microsoft.sharepoint-df.com/:o:/r/teams/Dynamics365CustomerEngagementEditingResources/_layouts/15/Doc.aspx?sourcedoc=%7B0ea74ded-c03c-452d-a0de-6c89d54f7107%7D&action=edit&wd=target(Editing%20Process.one%7C8c39c533-53fe-4763-87d6-71b67de57561%2FRequest%20editing%20of%20your%20content%7Cb1a3c493-30ff-4299-9a40-6fbd69707fbd%2F)-->
 
     ![CoE Power BI dashboard](media/coe1.PNG "CoE Power BI dashboard")
 
@@ -56,7 +59,7 @@ After you've [installed the CoE Starter Kit solution](setup.md)), get familiar w
 
     ![Set New App Owner canvas app](media/coe3.PNG "Set New App Owner canvas app")
 
-1. Start planning your governance strategy by identifying your requirements for what makes a compliant app or maker, what information you'll need per app or per maker, what happens to noncompliant apps and makers, how you'll support your maker community in building compliant apps that follow best practices, what audits you want to run, and what actions you'll drive based on those audits.<!--note from editor: "Lee Gu" isn't on our approved list. (See right-side pane.) Can you simply smudge the name so it's illegible?-->
+1. Start planning your governance strategy by identifying your requirements for what makes a compliant app or maker, what information you'll need per app or per maker, what happens to noncompliant apps and makers, how you'll support your maker community in building compliant apps that follow best practices, what audits you want to run, and what actions you'll drive based on those audits.
 
     ![Developer Compliance Center canvas app](media/coe4.PNG "Developer Compliance Center canvas app")
 
@@ -64,11 +67,9 @@ After you've [installed the CoE Starter Kit solution](setup.md)), get familiar w
 
     ![Email to welcome new makers](media/coe6.PNG "Email to welcome new makers")
 
-The above are just some examples of the components in the CoE Starter Kit. Explore the rest of the guidance here to see what's available in the kit.
-
 ## Further resources
 
-- Explore the [Power Apps admin documentation](https://docs.microsoft.com/powerplatform/admin).
+- Explore the [Power Apps admin documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation).
 
 - Find training resources, including guided learning and step-by-step guides at [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
 

@@ -15,62 +15,81 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up Power BI Dashboard
+# Set up the Power BI dashboard
 
-The Power BI Dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers and audit logs. Telemetry from the audit log is stored from the moment you set up the CoE Starter Kit, so over time you can look back and identify trends.
+The Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers and audit logs. Telemetry from the audit log is stored from the moment you set up the Center of Excellence (CoE) Starter Kit, so over time you can look back and identify trends.
 
 ![CoE Starter Kit Power BI dashboard](media/coe1.PNG "CoE Starter Kit Power BI dashboard")
 
-You can either get the CoE Power BI Dashboard from AppSource or download the Power BI file and configure it in Power BI Desktop, which would allow you to make changes to it. Both options are described below - and both require you to get the Environment URL first.
+You can either get the CoE Power BI dashboard from AppSource or download the Power BI file and configure it in Power BI Desktop, which will allow you to make changes to it. Both options are described below; both options require you to get the environment URL first.
 
-## Get the Environment URL
+## Get the environment URL
 
 You need the environment URL of the Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Common Data Service entities in that environment.
 
-1. Go to the [Power Platform Admin Center](https://aka.ms/ppac).
-1. Select **Environments**, and select the Environment where the Center of Excellence solution is installed.
-1. Copy the organization URL in the details window.  <br>![A screenshot of the Power Platform Admin Center, with the Environment URL highlighted](media/coe19.png)
-1. If the URL is cut off, you can see the full URL by selecting **See all \> Environment URL**. ![A screenshot of the Environment Settings available in the Power Platform Admin Center](media/coe20.png)
+1. Go to the [Power Platform admin center](https://aka.ms/ppac).
 
-## Option 1: Get the Power BI Dashboard from App source
+1. Select **Environments**, and select the environment where the CoE solution is installed.
+
+1. Copy the organization URL in the details window.
+
+   ![Power Platform admin center, with the environment URL highlighted](media/coe19.png "Power Platform admin center, with the environment URL highlighted")
+
+   If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
+
+   ![Environment settings available in the Power Platform admin center](media/coe20.png "Environment settings available in the Power Platform admin center")
+
+## Option 1: Get the Power BI dashboard from AppSource
 
 > [!NOTE]
-> You can't deploy from AppSource if you're deploying to the government cloud (GCC). If you're using GCC, please use the [Configure the Power BI Dashboard using the pbix file](#option-2-configure-the-power-bi-dashboard-using-the-pbix-file) instructions below.
+> You can't deploy from AppSource if you're deploying to the government cloud (GCC). If you're using GCC, please use the [Configure the Power BI Dashboard by using the .pbix file](#configure-by-using-pbix-file) instructions below.
 
-1. A prerequisite is to have the [CoE Core Components Solution](setup-core-components.md) installed.
+Before performing this procedure, you must have installed the [CoE Core Components solution](setup-core-components.md).<!--Is this really necessary? You already got the environment URL, you couldn't have gotten it otherwise. And also, if this applies to Option 1, it should by rights be repeated in Option 2 (but I don't think it's necessary either place).-->
 
-1. Navigate to the [CoE Starter Kit page on App Source](https://appsource.microsoft.com/product/power-bi/powerapps_pbi.powerapps_coe).
+1. Go to the [CoE Starter Kit page on AppSource](https://appsource.microsoft.com/product/power-bi/powerapps_pbi.powerapps_coe).
 
-1. Select **Get It Now**<Br> ![A screenshot of the Power Platform CoE Starter Kit offer on App Source](media/coe21.png)
+1. Select **Get It Now**
 
-1. Accept the Terms & Conditions and make sure you have signed in by using your organization account.
+   ![Power Platform CoE Starter Kit offer on AppSource](media/coe21.png "Power Platform CoE Starter Kit offer on AppSource")
+
+1. Accept the terms and conditions, and make sure you have signed in by using your organization account.
 
 1. Wait for the app to be installed.
 
-1. After the app installation is finished, select **Go to app**.<Br> ![A screenshot of the Your new app is ready! notification](media/coe22.png)
+1. After the app installation is finished, select **Go to app**.
 
-1. To connect the dashboard to your own environment and data, select **Connect**  ![A screenshot of how to get started with your app from App Source](media/coe24.png)
+   ![Your new app is ready](media/coe22.png "Your new app is ready")
 
-1. Copy and paste the URL you retrieved in *Step 1 Get the Environment URL* (section above) under **EnvironmentUrl** and select **Next** ![Connect to New Power Platform CoE Starter Kit Tenant, Step 8](media/coe23.png)
+1. To connect the dashboard to your own environment and data, select **Connect** 
 
-1. Confirm your login to finish setting up the app.
+   ![How to get started with your app from AppSource](media/coe24.png "How to get started with your app from AppSource")
 
-The Dashboard app will appear under the **Reports** tab of your workspace and can be opened from there.
+1. Copy and paste the URL you retrieved in [Get the environment URL](#get-the-environment-url), above, and then select **Next**
 
-## Option 2: Configure the Power BI Dashboard using the pbix file
+   ![Connect to New Power Platform CoE Starter Kit Tenant](media/coe23.png "Connect to New Power Platform CoE Starter Kit Tenant")
 
-You can also configure and modify the Power BI Dashboard by working directly with the Power BI (pbix) file and the Power BI Desktop client. This gives you more flexibility in terms of modifying the dashboard to your own branding and include/exclude pages or visuals you want to see in the dashboard.
+1. Confirm your sign-in to finish setting up the app.
 
-1. Open the **PowerPlatformAdminDashboard.pbix** file with Power BI Desktop client, which can be found in the CoE Starter Kit pack you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload)
+The dashboard app will appear under the **Reports** tab of your workspace, and can be opened from there.
 
-1. Sign in to the Power BI Desktop Client with your organization account that has access to the environment you have installed the CoE Starter Kit in.
+## Option 2: Configure the Power BI dashboard by using the .pbix file<a name="configure-by-using-pbix-file"></a>
 
-1. Go to **Transform Data** in the **Home** ribbon.<br> ![Edit Queries in Power BI Desktop](media/coe25.png)
+You can also configure and modify the Power BI dashboard by working directly with the Power BI (.pbix) file and the Power BI Desktop client. This gives you more flexibility in terms of modifying the dashboard to your own branding, and including (or excluding) pages or visuals you want to see (or not see) in the dashboard.
 
-1. Select the **OrgUrl** parameter and replace the URL with your instance's URL. Make sure to keep the 'https://'. <br>![Set OrgUrl in Power BI](media/coe26.png)
+1. In the Power BI Desktop client, open the **PowerPlatformAdminDashboard.pbix** file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Select **Close & Apply**. Your data will now load, and the dashboard will update.
+1. Sign in to the Power BI Desktop client with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
-1. Select **Publish** and choose the workspace you want to publish the report to.
+1. Go to **Transform Data** on the **Home** ribbon.
 
-1. You can find the report later by navigating to [app.powerbi.com](https://app.powerbi.com/)
+   ![Edit queries in Power BI Desktop](media/coe25.png "Edit queries in Power BI Desktop")
+
+1. Select the **OrgUrl** parameter, and replace the URL with the URL of your instance. Be sure to keep the 'https://'.
+
+   ![Set OrgUrl in Power BI](media/coe26.png "Set OrgUrl in Power BI")
+
+1. Select **Close & Apply**. Your data will now load, and the dashboard will be updated.
+
+1. Select **Publish**, and then choose the workspace you want to publish the report to.
+
+You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).

@@ -30,7 +30,7 @@ Here's a breakdown of the assets that form the governance components:
 
 -  Archive unused apps
    - [App Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
-   - [App Archive and Clean Up Admin View (model-driven app)](#apps)
+   - [App Archive and Clean Up View (model-driven app)](#apps)
 
 -  Take action based on certain connector usage
    - [Find and add admins as owners for apps that use certain connectors (flow)](#flows)
@@ -81,11 +81,11 @@ Monitors approval responses of the App Archive and Clean Up – Start Approval f
 
 Checks whether any flows are using specific connectors, notifies the flow maker, and then disables the flow. The admin will receive a report.
 
-**Customize**: On setup, the array provided is blank so that we don't inadvertently disable flows in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.<!--note from editor: The following two images shouldn't have the same alt text. I can't see what coe59.png is illustrating well enough to make any suggestions. -->
+**Customize**: On setup, the array provided is blank so that we don't inadvertently disable flows in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.<!--The following two images shouldn't have the same alt text. I can't see what coe59.png is illustrating well enough to make any suggestions. -->
 
-![Find and disable flows that use certain connectors](media/coe59.png)
+![Find and disable flows that use certain connectors](media/coe59.png "Find and disable flows that use certain connectors")
 
-![Find and disable flows that use certain connectors](media/coe60.png)
+![Find and disable flows that use certain connectors](media/coe60.png "Find and disable flows that use certain connectors")
 
 ### SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors
 
@@ -99,7 +99,7 @@ Checks for apps that use certain connectors, notifies the app maker, and shares 
 
 This app is used in the [app auditing process](example-processes.md) as a tool for users to check whether their app is compliant, and to submit information to the CoE admins as business justification to stay in compliance. They can also use the app to update the description of their app and republish it, which are other ways to stay in compliance.
 
-**Permission**: As soon as you're using the [app auditing process](example-processes.md), this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
+**Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
 **Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for each app user.
 
@@ -118,9 +118,7 @@ This app is used in the [app auditing process](example-processes.md) as a tool f
 
 ### App Archive and Clean Up View
 
-A model-driven app that provides an interface to canvas apps that have been highlighted for archiving, and their approval status.
-
-This model driven app works in conjunction with other apps and flows in the CoE toolkit to facilitate the process described for the [app auditing process](example-processes.md).
+A model-driven app that provides an interface to canvas apps that have been highlighted for archiving, and their approval status. This model-driven app works in conjunction with other apps and flows in the CoE toolkit to facilitate the process described for the [app auditing process](example-processes.md).
 
 **Customize**: Instead of using this model-driven app, you can modify the Power Platform Admin View app to show the Archive Approval entity.
 
@@ -136,7 +134,7 @@ The audit stages are:
 
 - Validate maker requirements.
 - Assess risk.
-- Highlight in the App Catalog.
+- Highlight the app in the App Catalog.
 
 :::row:::
    :::column span="":::

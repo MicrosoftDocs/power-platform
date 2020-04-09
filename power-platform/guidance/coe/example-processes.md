@@ -17,10 +17,10 @@ search.app:
 ---
 # Example processes
 
-The components in the CoE Starter Kit are designed for multiple uses. The example processes below, which use the starter kit components, are meant to showcase common patterns other organizations have found useful and&mdash;hopefully&mdash;act as inspiration for defining your own processes.
+The components in the Center of Excellence (CoE) Starter Kit are designed for multiple uses. The example processes below, which use the starter kit components, are meant to showcase common patterns other organizations have found useful and&mdash;hopefully&mdash;act as inspiration for defining your own processes.
 
 ## App auditing process
-<!--note from editor: Need intervening text here. I'd suggest promoting this to be the H1, but I assume eventually there will be more examples. -->
+<!--Need intervening text here, if you have the time to add some. I'd suggest promoting this to be the H1, but I assume eventually there will be more examples. -->
 ### Process description
 
 **Problem statement:** There are many apps in the Contoso tenant. IT doesn't know what all these apps are intended for or how to support individual apps when the helpdesk is called, and it's unclear whether all the apps are being maintained to any standard. They can see details like the description and number of shared users from the Power Apps for Admins connector, but they need to communicate directly with the app owner to fully understand the situation around the apps. Especially in a large organization like Contoso, it's not feasible for the IT team to be responsible for manually reaching out to each owner individually for the apps, and those details can't be stored in email conversations. The Contoso team would like to have a central App Catalog for high-quality apps.

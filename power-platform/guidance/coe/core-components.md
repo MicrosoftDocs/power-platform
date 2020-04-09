@@ -27,7 +27,7 @@ Here's a breakdown of the assets that form the core components:
   - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, custom connectors, connectors, model-driven apps
   - [Admin | Sync Audit Log (flow)](#flows)
   - [Power BI dashboard](#power-bi-report)
-  - [Power Platform admin view (model-driven app)](#apps)
+  - [Power Platform Admin View (model-driven app)](#apps)
 - **DLP strategy and visibility**
   - [DLP Editor (canvas app)](#apps)
   - [DLP Customizer (canvas app)](#apps)
@@ -102,7 +102,7 @@ Use this app to:
 
 More information: [Introduction to data groups](https://docs.microsoft.com/power-platform/admin/introduction-to-data-groups)
 
-**Permission**: Intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.<!--note from editor: Fictitious name isn't on our approved list.-->
+**Permission**: Intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.<!--Fictitious name isn't on our approved list.-->
 
 ![DLP Editor](media/coe51.png "DLP Editor")
 
@@ -133,6 +133,6 @@ A model-driven app that provides an interface used to browse items in Common Dat
 
 Provides a holistic view with visualizations and insights of data in the Common Data Service entities: Environments, Power Apps Apps, Flows, Connectors, Connection References, Makers, and Audit Logs.
 
-Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. Learn how to use it in [Learn about the CoE dashboard](power-bi.md).<!--note from editor: The following fictitious names aren't on our approved list.-->
+Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. Learn how to use it in [Learn about the CoE dashboard](power-bi.md).<!--The following fictitious names aren't on our approved list.-->
 
 ![CoE Power BI dashboard](media/coe1.png "CoE Power BI dashboard")

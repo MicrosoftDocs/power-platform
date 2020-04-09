@@ -36,7 +36,7 @@ The Common Data Service connector might experience some throttling limits if the
     1. Open **Admin \| Sync Template v2**, and then select **Edit**.
     1. Expand the step: **Get Environments and store them in the CoE Common Data Service Entity**.
     1. Go to Settings for the **Apply to each Environment** step. <br>![Configure concurrency in Foreach](media/coe73.png "Configure concurrency in Foreach")
-    1. Turn on **Concurrency Control**.<!--note from editor: Is this the step that's implied by "Reduce the degree of parallelism here"? -->
+    1. Turn on **Concurrency Control**.<!--Is this the step that's implied by "Reduce the degree of parallelism here"? -->
 
 ## DLP editor
 
