@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 04/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -85,18 +85,18 @@ Users creating or editing a resource impacted by the DLP policy will see a messa
 > [!div class="mx-imgBorder"] 
 > ![DLP policy conflict](media/dlp-policy-conflict.png "DLP policy conflict")
 
-Using the DLP Editor in the [Center of Excellence starter kit](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit), you can see the impact a change of DLP policies would have on existing apps and can mitigate the risk by reaching out to the maker.
+Using the DLP Editor in the [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md), you can see the impact a change of DLP policies would have on existing apps and can mitigate the risk by reaching out to the maker.
 
 > [!div class="mx-imgBorder"] 
 > ![DLP Editor](media/dlp-editor.png "DLP Editor")
 
 DLP policies created for a connector do not understand that that connector could be configured to talk to dev, test, production, and so on. When you configure a DLP policy, it is all or nothing. So, if you want to allow the connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won't help you restrict that. DLP policies are connector-aware, but do not control the connections that are made using the connector.
 
-## Custom connector and HTTP
+## Custom connector and HTTP  
 
 By default, custom connectors and the HTTP connector are not part of the standard configuration capabilities of DLP policies. Using templates or PowerShell, you can configure DLP to include these connectors. For more information, see [Introducing HTTP and Custom Connector Support for Data Loss Prevention Policies](https://flow.microsoft.com/blog/introducing-http-and-custom-connector-support-for-data-loss-prevention-policies/).
 
-The [Center of Excellence starter kit](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit) has an app that allows users to update policies for these connectors as well. This provides a UI front end to the PowerShell scripts.
+The [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) has an app that allows users to update policies for these connectors as well. This provides a UI front end to the PowerShell scripts.
 
 > [!div class="mx-imgBorder"] 
 > ![DLP Customizer](media/dlp-customizer.png "DLP Customizer")
