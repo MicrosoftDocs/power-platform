@@ -1,13 +1,13 @@
 ---
 title: "Set up audit log components | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "The *Audit Log Sync* flow connects to the Office 365 Audit Log to gather telemetry data (unique users, launches) for apps"
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -25,7 +25,7 @@ There are two options for connecting to the audit log: one uses basic authentica
 
 ## Option 1: Connect to the audit log by using basic authentication
 
-Make sure the account that is used to configure this section has permission to access the audit logs and doesn't have multifactor authentication<!--PLEASE NOTE: This is Microsoft style. The style guide says "don't use MFA." --> enabled. Global tenant admins have access to the audit logs by default and can grant access to the audit logs for other user accounts or groups through the Exchange admin center.
+Make sure the account that is used to configure this section has permission to access the audit logs and doesn't have multifactor authentication enabled. Global tenant admins have access to the audit logs by default and can grant access to the audit logs for other user accounts or groups through the Exchange admin center.
 
 Keep in mind that after a user account has access to the audit logs, that user has access to all audit logs across every Microsoft service that reports telemetry to audit logs.
 
@@ -41,7 +41,7 @@ Keep in mind that after a user account has access to the audit logs, that user h
 
 1. Provide a connector name (**Office 365 Audit Logs**), and then select the .swagger file that can be found in the CoE Starter Kit pack you downloaded.
 
-1. Select **Create Connector**. You don't need to change the Security and Definition information. 
+1. Select **Create Connector**. You don't need to change the Security and Definition information.
 
 1. Select **4. Test**.
 
@@ -53,13 +53,13 @@ Keep in mind that after a user account has access to the audit logs, that user h
 
    ![Create new connection option](media/coe29.png "Create new connection option")
 
-1. Select the refresh icon in the right-hand<!--Can this be "lower-right corner" or "upper-right corner"? Style Guide doesn't like "right-hand." --> corner of the **Connections** area to ensure that the new connection is selected.
+1. Select the refresh icon in the upper-right corner corner of the **Connections** area to ensure that the new connection is selected.
 
 1. Provide a **Start Date** and **End Date** for the **GetActivitiesByOperation**.
 
 1. Select **Test Operation**.
 
-   You should receive a (200)<!--why parentheses?--> response, which indicates the query has been successfully executed.
+   You should receive a (200) response, which indicates the query has been successfully executed.
    
    ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
 
@@ -208,7 +208,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the directory (tenant) ID under **Tenant**, and paste the application (client) ID<!--Edit okay?--> under **PublisherIdentifier**.
+1. Paste the directory (tenant) ID under **Tenant**, and paste the application (client) ID under **PublisherIdentifier**.
 
  1. Select **Test Operation**.
 
@@ -241,7 +241,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 1. (Optional) Update the time interval at which the log clusters should be retrieved. The default is set to one-day intervals (from the options of Month, Week, Day, Hour, Minute, or Second).
 
-1. (Optional) Update the start time and end time during which the logs will be read. The maximum is seven days in the past, and the end time must be after the start time (a smaller amount of time subtracted in the action<!--Don't know what this means.-->). Use a positive number in the interval field.
+1. (Optional) Update the start time and end time during which the logs will be read. The maximum is seven days in the past, and the end time must be after the start time. Use a positive number in the interval field.
 
    [Update the start time and end time during which the logs will read](media/coe48.png "Update the start time and end time during which the logs will read")
 

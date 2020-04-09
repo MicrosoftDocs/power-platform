@@ -1,13 +1,13 @@
 ---
 title: "Governance Components  | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "The Governance components solution provides assets to automate common auditing and compliance scenarios."
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -19,22 +19,22 @@ search.app:
 
 After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage.
 
-The Governance Components solution<!--okay to use? Or should this be something like "the governance components in the Audit and Report Components solution..."? --> contains assets relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md)
+The Governance Components solution contains assets relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md)
 
 Here's a breakdown of the assets that form the governance components:
 
--  Sample audit process
-   - [Developer Compliance Center (canvas app)](#apps)
-   - [Flow – Compliance detail request](#flows)
-   - [Business Process Flow for Auditing resources](#business-process-flow)
+- Sample audit process
+  - [Developer Compliance Center (canvas app)](#apps)
+  - [Flow – Compliance detail request](#flows)
+  - [Business Process Flow for Auditing resources](#business-process-flow)
 
--  Archive unused apps
-   - [App Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
-   - [App Archive and Clean Up View (model-driven app)](#apps)
+- Archive unused apps
+  - [App Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
+  - [App Archive and Clean Up View (model-driven app)](#apps)
 
--  Take action based on certain connector usage
-   - [Find and add admins as owners for apps that use certain connectors (flow)](#flows)
-   - [Find and disable flows that leverage certain connectors (flow)](#flows)
+- Take action based on certain connector usage
+  - [Find and add admins as owners for apps that use certain connectors (flow)](#flows)
+  - [Find and disable flows that leverage certain connectors (flow)](#flows)
 
 ## Entities
 
@@ -81,11 +81,11 @@ Monitors approval responses of the App Archive and Clean Up – Start Approval f
 
 Checks whether any flows are using specific connectors, notifies the flow maker, and then disables the flow. The admin will receive a report.
 
-**Customize**: On setup, the array provided is blank so that we don't inadvertently disable flows in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.<!--The following two images shouldn't have the same alt text. I can't see what coe59.png is illustrating well enough to make any suggestions. -->
+**Customize**: On setup, the array provided is blank so that we don't inadvertently disable flows in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.
 
-![Find and disable flows that use certain connectors](media/coe59.png "Find and disable flows that use certain connectors")
+![In Power Automate, specify which connectors you want to perform an audit for](media/coe59.png "In Power Automate, specify which connectors you want to perform an audit for")
 
-![Find and disable flows that use certain connectors](media/coe60.png "Find and disable flows that use certain connectors")
+![The Flow owner receives an email notifying them of the unauthorized connector usage](media/coe60.png "The Flow owner receives an email notifying them of the unauthorized connector usage")
 
 ### SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors
 
@@ -147,7 +147,7 @@ The audit stages are:
 
 #### Activate the business process flow
 
-The Power Apps App Approval business process flow<!--Curious what the difference is between "business process flow" and the flows listed above?--> is disabled by default. To enable it, do the following: 
+The Power Apps App Approval business process flow is disabled by default. To enable it, do the following:
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>) and set the current environment to the same environment where the CoE solution is installed.
 

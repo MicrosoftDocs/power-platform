@@ -1,13 +1,13 @@
 ---
-title: "Motivation | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+title: "Set up the Power BI dashboard | MicrosoftDocs"
+description: "The Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant - learn how to configure and set this up for your tenant."
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -22,6 +22,8 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 ![CoE Starter Kit Power BI dashboard](media/coe1.PNG "CoE Starter Kit Power BI dashboard")
 
 You can either get the CoE Power BI dashboard from AppSource or download the Power BI file and configure it in Power BI Desktop, which will allow you to make changes to it. Both options are described below; both options require you to get the environment URL first.
+
+Before setting up the Power BI dashboard, you must have installed the [CoE Core Components solution](setup-core-components.md).
 
 ## Get the environment URL
 
@@ -43,8 +45,6 @@ You need the environment URL of the Power Platform environment the CoE Starter K
 
 > [!NOTE]
 > You can't deploy from AppSource if you're deploying to the government cloud (GCC). If you're using GCC, please use the [Configure the Power BI Dashboard by using the .pbix file](#configure-by-using-pbix-file) instructions below.
-
-Before performing this procedure, you must have installed the [CoE Core Components solution](setup-core-components.md).<!--Is this really necessary? You already got the environment URL, you couldn't have gotten it otherwise. And also, if this applies to Option 1, it should by rights be repeated in Option 2 (but I don't think it's necessary either place).-->
 
 1. Go to the [CoE Starter Kit page on AppSource](https://appsource.microsoft.com/product/power-bi/powerapps_pbi.powerapps_coe).
 

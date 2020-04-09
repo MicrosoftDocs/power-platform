@@ -1,13 +1,13 @@
 ---
 title: "Nurture Components | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "The CoE Nurture Components solution contains assets to share best practices and templates, and onboard new makers"
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -71,7 +71,7 @@ Sends an email to an attendee when they register for a training in a day event
 
 ### Training in a Day \| Reminder 3 days prior to event
 
-Sends a reminder email to an attendee of a training in a day event three days before the event.<!--Fictitious name okay? -->
+Sends a reminder email to an attendee of a training in a day event three days before the event.
 
 :::row:::
    :::column span="":::
@@ -88,7 +88,7 @@ Sends a reminder email to an attendee of a training in a day event three days be
 
 A canvas app that gives visibility to certain apps to the organization. Admins can choose which apps to highlight in the App Catalog if the app meets admin requirements and is meant to be shared broadly.
 
-When you first open the App Catalog, you won't see any apps there. There is a field on the Power Apps App entity called **In App Catalog**, which is a two-option set type field (Boolean). If the value is set to **Yes**, the app will show up in the catalog. To publish an app to the App Catalog, follow the [app auditing process](example-processes.md) in the Power Platform Admin View app<!--edit okay?-->.
+When you first open the App Catalog, you won't see any apps there. There is a field on the Power Apps App entity called **In App Catalog**, which is a two-option set type field (Boolean). If the value is set to **Yes**, the app will show up in the catalog. To publish an app to the App Catalog, follow the [app auditing process](example-processes.md) in the Power Platform Admin View app.
 
 **Permission**: As soon as you're using this process, you can share the App Catalog with the entire organization.
 

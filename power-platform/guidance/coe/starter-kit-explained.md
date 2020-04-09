@@ -1,13 +1,13 @@
 ---
-title: "CoE Starter Kit explained | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+title: "CoE Starter Kit modules | MicrosoftDocs"
+description: "The CoE Starter Kit is shipped in multiple modules, learn about which ones are available here."
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -15,8 +15,8 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# CoE Starter Kit explained
-<!--I'm not sure the H1 is very accurate. Can it be something like "CoE Starter Kit modules"? -->
+# CoE Starter Kit modules
+
 The Center of Excellence (CoE) Starter Kit is shipped in multiple modules:
 
 -  **Center of Excellence – Core Components**  
@@ -29,7 +29,7 @@ The Center of Excellence (CoE) Starter Kit is shipped in multiple modules:
 
     After you've become familiar with your environment and resources, you might start thinking about audit and compliance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage. The apps and flows that are part of this solution help you get started.  
 
-    The Audit and Report Components solution<!--Is this the real name of the solution? If so, is it ever correct to use "Governance Components solution"? There's one case (setup-governance-components.md) where the two names for this solution are used within twelve lines. I find it very confusing!--> contains assets that are relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md) and [Use governance components](governance-components.md)
+    The Governance Components solution contains assets that are relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md) and [Use governance components](governance-components.md)
 
 -  **Center of Excellence – Nurture Components**  
 
@@ -37,4 +37,4 @@ The Center of Excellence (CoE) Starter Kit is shipped in multiple modules:
 
     The Nurture Components solution contains assets that are relevant to everyone in the organization: admins, makers, and users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md) and [Use nurture components](nurture-components.md)
 
-We recommend becoming familiar<!--edit suggested, because you have to get started with the core components, right? --> with the Center of Excellence Core Components solution before adding governance and nurture components.
+We recommend becoming familiar with the Center of Excellence Core Components solution before adding governance and nurture components.

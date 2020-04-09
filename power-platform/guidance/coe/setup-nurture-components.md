@@ -1,13 +1,13 @@
 ---
 title: "Set up nurture components | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "Setup instructions for how to set up the nurture components solution of the CoE Starter Kit"
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -36,7 +36,7 @@ All flows in this solution depend on all environment variables' being configured
 
 1. You'll see an error notifying you that environment variables need to be configured. 
    > [!NOTE]
-   > For the Nurture Components solution, two<!--edits okay?--> environment variables need to be configured.
+   > For the Nurture Components solution, two environment variables need to be configured.
    
    ![Environment variables need to be updated](media/coe7.png "Environment variables need to be updated")
 
@@ -71,7 +71,7 @@ The Template Catalog depends upon this library.
 
 1. Create a document library to store templates on a SharePoint site of your choice. We recommend having a dedicated Power Apps CoE SharePoint site. Ensure that everyone has Read-only and Download access to this library.
 
-1. Name the library **AppTemplates** to make conversion of the app easy, and add the following metadata columns<!--what does "with precise naming to your library" mean?-->.
+1. Name the library **AppTemplates** to make conversion of the app easy, and add the following metadata columns.
 
    | Column name | Type |
    |----|----|
@@ -89,7 +89,7 @@ The Template Catalog depends upon this library.
 
 ## Share apps with your organization
 
-The Nurture Components solution contains four apps. As soon as you're ready to adopt the CoE, share these apps as follows: 
+The Nurture Components solution contains four apps. As soon as you're ready to adopt the CoE, share these apps as follows:
 
 - App Catalog; Share with your entire organization.
 

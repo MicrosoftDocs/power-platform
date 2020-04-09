@@ -1,13 +1,13 @@
 ---
 title: "Example processes | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "The example processes outlined here are meant to showcase common patterns other organizations have found useful and act as inspiration for defining your own processes."
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -20,7 +20,9 @@ search.app:
 The components in the Center of Excellence (CoE) Starter Kit are designed for multiple uses. The example processes below, which use the starter kit components, are meant to showcase common patterns other organizations have found useful and&mdash;hopefully&mdash;act as inspiration for defining your own processes.
 
 ## App auditing process
-<!--Need intervening text here, if you have the time to add some. I'd suggest promoting this to be the H1, but I assume eventually there will be more examples. -->
+
+The App auditing sample process showcases how your CoE department or IT administrators can automate an auditing process on an app-level basis to gather additional information about an app, like business justification and impact of an outage, from the maker.
+
 ### Process description
 
 **Problem statement:** There are many apps in the Contoso tenant. IT doesn't know what all these apps are intended for or how to support individual apps when the helpdesk is called, and it's unclear whether all the apps are being maintained to any standard. They can see details like the description and number of shared users from the Power Apps for Admins connector, but they need to communicate directly with the app owner to fully understand the situation around the apps. Especially in a large organization like Contoso, it's not feasible for the IT team to be responsible for manually reaching out to each owner individually for the apps, and those details can't be stored in email conversations. The Contoso team would like to have a central App Catalog for high-quality apps.
@@ -55,10 +57,10 @@ Three items are tracked in the system, and the user might have to do all three:
 
 An admin opens the Power Platform Admin View > Admin Review view and assesses all the apps due for review by looking at the **Audit** tab within the app, investigating the work done by the maker, then marking their assessment in the Admin Review section.
 
-The admin can decide to put an app in the App Catalog and mark it either featured or not, depending on whether the app should be highlighted for users.<!--Lee Gu not approved name. -->
+The admin can decide to put an app in the App Catalog and mark it either featured or not, depending on whether the app should be highlighted for users.
 
 ![Validate maker requirements](media/coe54.png "Validate maker requirements")
 
-**Users:** The maker and users can now see the app in the App Catalog.<!--names -->
+**Users:** The maker and users can now see the app in the App Catalog.
 
 ![App Catalog](media/coe67.png "App Catalog")

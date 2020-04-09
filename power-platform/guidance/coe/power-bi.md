@@ -1,13 +1,13 @@
 ---
-title: "Example processes | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+title: "CoE Power BI Dashboard | MicrosoftDocs"
+description: "Gain deep insights into your Power Platform adoption with the CoE Power BI dashboard"
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 

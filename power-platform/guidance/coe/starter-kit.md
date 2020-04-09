@@ -1,13 +1,13 @@
 ---
 title: "Power Platform Center of Excellence Kit| MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "The Power Platform CoE Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Power Platform, with a focus on Power Apps and Power Automate"
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
