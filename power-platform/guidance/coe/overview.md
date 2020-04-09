@@ -16,16 +16,16 @@ search.app:
   - Powerplatform
 ---
 # Overview 
-
+<!--note from editor: All of the articles in this doc set need more descriptive titles and descriptions. I didn't have time to make suggestions, but please see the Docs Contributor Guide for some ideas: https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-seo-basics?branch=master-->
 A Center of Excellence (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization. 
 
 The Power Platform CoE Starter Kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting Power Platform, with a focus on Power Apps and Power Automate.
 
 You can download the most recently updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
 
-The kit doesn't represent the entire CoE, because managing a CoE requires more than the tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences. More information: [What is a Center of Excellence?](motivation.md)
+The kit doesn't represent the entire CoE, because managing a CoE requires more than the tools alone; the CoE also requires people, communication, and defined requirements and processes. The tools provided here are just a means to get to the end goal, but the CoE itself must be thoughtfully designed by each organization based on their needs and preferences. More information: [What is a Center of Excellence?](motivation.md)<!--general note: This is how we usually like to format cross-references. Note that there's no trailing period with this format, so it doesn't work when the cross-reference is in the middle of a paragraph.-->
 
-The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Common Data Service data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps<!--Please check against the Cloud Style Guide, which uses "apps" instead of "Power Apps apps".--> and Power BI analytics to view and interact with the data you collect, in addition to flows to collect data across environments and help with workflows for your compliance needs. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
+The kit provides some automation and tooling to help teams build monitoring and automation necessary to support a CoE. The foundation of the kit is a Common Data Service data model and workflows to collect resource information across the environments in the tenant. The kit includes multiple apps<!--Please check my edits against the Cloud Style Guide, which uses "apps" instead of "Power Apps apps".--> and Power BI analytics to view and interact with the data you collect, in addition to flows to collect data across environments and help with workflows for your compliance needs. The kit also provides several templates and suggested patterns and practices for implementing CoE efforts.
 
 ## Disclaimer
 
@@ -51,7 +51,7 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
     ![CoE Power BI dashboard](media/coe1.PNG "CoE Power BI dashboard")
 
-1. Plan your data loss prevention policy strategy and use the DLP Editor (canvas app) to mitigate the risk of negatively affecting apps when making changes to your policies.
+1. Plan your data loss prevention policy strategy and use the DLP Editor (canvas app) to mitigate the risk of negatively affecting apps when making changes to your policies.<!--Another general note about graphics: We duplicate the alt text in the index field (in quotation marks). Notice also, we use blank lines and indents for graphics that are embedded in procedures, rather than <br> tags. This gives a bit more vertical space.-->
 
     ![DLP Editor canvas app](media/coe2.PNG "DLP Editor canvas app")
 
@@ -63,7 +63,7 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
     ![Developer Compliance Center canvas app](media/coe4.PNG "Developer Compliance Center canvas app")
 
-1. Embrace your maker community and develop a nurture and adoption strategy. Think about how to onboard new makers; organize internal events such as show-and-tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.<!--Lee Gu again.-->
+1. Embrace your maker community and develop a nurture and adoption strategy. Think about how to onboard new makers; organize internal events such as show-and-tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.
 
     ![Email to welcome new makers](media/coe6.PNG "Email to welcome new makers")
 
