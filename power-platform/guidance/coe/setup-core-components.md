@@ -1,13 +1,13 @@
 ---
 title: "Set up core components | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "Setup instructions for how to set up the core admin components solution of the CoE Starter Kit"
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -24,11 +24,11 @@ The Core Components solution contains assets that are only relevant to admins.
 
 ## Import the solution
 
-This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. More information about how to decide on the best strategy for your organization: [Establishing an Environment Strategy for Microsoft Power Platform](https://powerapps.microsoft.com/blog/establishing-an-environment-strategy-for-microsoft-power-platform/) and [Application lifecycle management](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management)<!--Edit okay? You don't generally want important cross-references to more information inside a detailed procedure. These seemed important enough to call out here.-->
+This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. More information about how to decide on the best strategy for your organization: [Establishing an Environment Strategy for Microsoft Power Platform](https://powerapps.microsoft.com/blog/establishing-an-environment-strategy-for-microsoft-power-platform/) and [Application lifecycle management](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management)
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)), and extract the zip file.
 
-1. Create an environment in which to set up the CoE. 
+1. Create an environment in which to set up the CoE.
 
    1. Go to [aka.ms/ppac](https://admin.powerplatform.microsoft.com/).
    1. Select **Environments** > **+ New**, and then fill in a name, type, and purpose.
@@ -187,7 +187,7 @@ Use this option if you'd like to continue receiving updates to the flow through 
 
 ### Option 2: Save a copy of the flows outside of the solution
 
-If you save a copy of the flows from the solution, the connections are created automatically for you. The drawback of this method is that if you copy the flows from the solution, the copied flows don't get updated when you update the solution package to newer versions. You'll have to import the new solution and copy the flows again to upgrade it<!--Should this be "them"?--> to the latest version.
+If you save a copy of the flows from the solution, the connections are created automatically for you. The drawback of this method is that if you copy the flows from the solution, the copied flows don't get updated when you update the solution package to newer versions. You'll have to import the new solution and copy the flows again to upgrade them to the latest version.
 
 1. Go to the *Center of Excellence - Core Components* solution.
 
@@ -201,7 +201,7 @@ If you save a copy of the flows from the solution, the connections are created a
 
    ![Sync Template flows Save As command](media/coe11.PNG "Sync Template flows Save As command")
 
-1. A pop-up window appears with the message, "We'll create these connections for you." Select **Continue**. 
+1. A pop-up window appears with the message, "We'll create these connections for you." Select **Continue**.
 
    ![A screenshot of the flow details page, when you copy the flow](media/coe12.png "A screenshot of the flow details page, when you copy the flow")
 

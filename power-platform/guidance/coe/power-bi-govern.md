@@ -1,13 +1,13 @@
 ---
-title: "Example processes | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+title: "Govern with the CoE Power BI dashboard | MicrosoftDocs"
+description: "Perform risk assessments and identifying critical, orphaned, or unused resources with the CoE Power BI dashboard"
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Govern in the CoE Power BI dashboard
+# Govern with the CoE Power BI dashboard
 
 As an admin, you'll want to use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, archive it, or delete it.
 
@@ -63,7 +63,7 @@ Select **Blank** in the **Owner** drop-down in the right-hand filter section of 
 
 - Some connectors, like the SQL Connector used with SQL Server Authentication, are [shared implicitly with users](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the app is published, the connection is also published and available to your users. Your users can then also create apps by using any connection that uses SQL Server authentication that's shared with them.
 
-- Identify apps that use the SQL Server Connector. Ensure that users are aware of the risks, and help them mitigate it by enabling Azure AD authentication for SQL<!--Should this be SQL Server? -->.
+- Identify apps that use the SQL Server Connector. Ensure that users are aware of the risks, and help them mitigate it by enabling Azure AD authentication for SQL Server.
 
 Select **SQL Server** in the **Connector** drop-down in the right-hand filter section of this page to find apps that use the SQL Server Connector.
 
@@ -103,9 +103,9 @@ Select **Blank** in the **Owner** drop-down in the right-hand filter section of 
 
 ### Implicitly shared flow connections
 
-- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the flow is shared, the connection is also published and available to your users. Your users can also create flows<!--Edit okay? --> by using any connection that uses SQL Server authentication that is shared with them.
+- Some connectors, like the SQL Connector used with SQL Server Authentication are [shared implicitly with users](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list\#sql-user-name-and-password-authentication). This means that as soon as the flow is shared, the connection is also published and available to your users. Your users can also create flows by using any connection that uses SQL Server authentication that is shared with them.
 
-- Identify flows that use the SQL Server Connector. Ensure that users are aware of the risk, and help them mitigate it by enabling Azure AD authentication for SQL<!--Should this be SQL Server? -->.
+- Identify flows that use the SQL Server Connector. Ensure that users are aware of the risk, and help them mitigate it by enabling Azure AD authentication for SQL Server.
 
 Select **SQL Server** in the **Connector** drop-down in the right-hand filter section of this page to find flows that use the SQL Server Connector.
 
@@ -190,7 +190,7 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - You can email the app owner.
 
-- After you've granted yourself ownership, you can launch the maker portal to view the version number.<!--Edit okay? -->
+- After you've granted yourself ownership, you can launch the maker portal to view the version number.
 
 ![App Details](media/pb16.png "App Details")
 

@@ -1,13 +1,13 @@
 ---
 title: "Set up governance components | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "Learn how to set up the governance components of the CoE Starter Kit"
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -106,7 +106,7 @@ The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Arc
 
 ## Activate the flows
 
-This Governance Components solution<!--name?--> contains five flows:
+This Governance Components solution contains five flows:
 
 -  Admin \| App Archive and Clean Up – Start Approval
 -  Admin \| App Archive and Clean Up – Check Approval
@@ -118,8 +118,8 @@ Follow the same instructions to configure the flows as explained in [Activate th
 
 ## Share apps with makers
 
-The Audit and Report Components solution<!--name? --> contains one app, which is used by makers to update the compliance details of their applications.
+The Governance Components solution contains one app, which is used by makers to update the compliance details of their applications.
 
 **Developer Compliance Center**
 
-As soon as you're ready to adopt the CoE with your app and flow makerss, share this app with them. Your makers must have a Power Apps Premium license, as mentioned under [Prerequisites](setup.md#prerequisites).
+As soon as you're ready to adopt the CoE with your app and flow makers, share this app with them. Your makers must have a Power Apps Premium license, as mentioned under [Prerequisites](setup.md#prerequisites).

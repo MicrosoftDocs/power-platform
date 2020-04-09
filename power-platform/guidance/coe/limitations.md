@@ -1,13 +1,13 @@
 ---
 title: "Limitations | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "Limitations to some components within the CoE Starter Kit, such as potential timeouts, Government Community Cloud availability etc."
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -36,7 +36,7 @@ The Common Data Service connector might experience some throttling limits if the
     1. Open **Admin \| Sync Template v2**, and then select **Edit**.
     1. Expand the step: **Get Environments and store them in the CoE Common Data Service Entity**.
     1. Go to Settings for the **Apply to each Environment** step. <br>![Configure concurrency in Foreach](media/coe73.png "Configure concurrency in Foreach")
-    1. Turn on **Concurrency Control**.<!--Is this the step that's implied by "Reduce the degree of parallelism here"? -->
+    1. Reduce the **Degree of Parallelism** using the slider. The default value is 50 - reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
 
 ## DLP editor
 

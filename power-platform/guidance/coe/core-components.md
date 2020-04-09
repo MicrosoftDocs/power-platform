@@ -1,13 +1,13 @@
 ---
 title: "Core Components | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of what apps, flows, and makers are in your environment."
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
@@ -102,7 +102,7 @@ Use this app to:
 
 More information: [Introduction to data groups](https://docs.microsoft.com/power-platform/admin/introduction-to-data-groups)
 
-**Permission**: Intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.<!--Fictitious name isn't on our approved list.-->
+**Permission**: Intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.
 
 ![DLP Editor](media/coe51.png "DLP Editor")
 
@@ -119,7 +119,7 @@ or Global Admin permission required. Share with your CoE Admins.
 
 Canvas app that an admin can use to discover apps by app or maker name, and set a new app owner or add new viewers and editors. More information: [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)
 
-**Permission**: This app is intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.<!--None of the following names are on our approved names list. Are they supplied with sample data, perhaps?-->
+**Permission**: This app is intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.
 
 ![Set New App Owner](media/coe53.png "Set New App Owner")
 
@@ -133,6 +133,6 @@ A model-driven app that provides an interface used to browse items in Common Dat
 
 Provides a holistic view with visualizations and insights of data in the Common Data Service entities: Environments, Power Apps Apps, Flows, Connectors, Connection References, Makers, and Audit Logs.
 
-Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. Learn how to use it in [Learn about the CoE dashboard](power-bi.md).<!--The following fictitious names aren't on our approved list.-->
+Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. Learn how to use it in [Learn about the CoE dashboard](power-bi.md).
 
 ![CoE Power BI dashboard](media/coe1.png "CoE Power BI dashboard")

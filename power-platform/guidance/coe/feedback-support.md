@@ -1,13 +1,13 @@
 ---
 title: "Feedback and support | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "Describes the process on how to provide feedback and raise issues with the CoE Starter Kit."
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 

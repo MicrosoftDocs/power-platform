@@ -1,13 +1,13 @@
 ---
 title: "What is a Center of Excellence | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+description: "What is a Center of Excellence, key principles of establishing a CoE and some of the tools available to a CoE"
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
 search.audienceType: 
   - admin
 search.app: 
