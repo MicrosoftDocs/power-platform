@@ -122,18 +122,18 @@ This tenant is 10GB over in storage usage. Therefore, there is a deficit and add
 
 You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130), the 'Add-ons' section. You can work through your organization's standard procurement process to purchase capacity add-ons.
 
-### FAQ
+## FAQ
 
-#### I have available instances (production and sandbox), but my capacity usage is more than capacity entitled. Will I be able to provision new environments? 
+### I have available instances (production and sandbox), but my capacity usage is more than capacity entitled. Will I be able to provision new environments? 
 For now, you can provision a new environment if you have at least 1GB available database capacity. 
 
-#### I have storage licenses from the legacy licensing model and I also purchased new model storage licenses. Which report will I see?  
+### I have storage licenses from the legacy licensing model and I also purchased new model storage licenses. Which report will I see?  
 You will see the report for the new licensing model. 
 
-#### What are my options if I'm overusing capacity?  
+### What are my options if I'm overusing capacity?  
 You can buy more capacity to be compliant, and [free up](free-storage-space.md) or [delete](delete-environment.md) unused environments. 
 
-#### Do I get notified through email when my org is over capacity?  
+### Do I get notified through email when my org is over capacity?  
 When you sign in to the Power Platform admin center, you will be notified if your capacity usage is more than the entitled capacity. 
 
 ### See also
