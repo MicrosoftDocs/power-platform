@@ -77,7 +77,7 @@ Follow these steps to see a list of all the licensed applications you installed 
 
 3. Under **Resources**, select **Dynamics 365 apps**.
 
-   You'll see a list of Dynamics 365 apps installed in the selected environment.
+   You'll see a list of Dynamics 365 apps installed **by you** in the selected environment.
 
    > [!div class="mx-imgBorder"] 
    > ![Environment view](media/app-management-environment-view.png "Environment view")
