@@ -30,7 +30,7 @@ In April 2019, we introduced Common Data Service capacity storage that is optimi
 
 ![](media/storage-model-evolution.png "Evolution of data management")
 
-Some of the benefits of this change: 
+Some of the benefits of this change:
 
 - Scalability with purpose-built storage management solutions
 - Ability to enable new business scenarios
@@ -42,78 +42,20 @@ Some of the benefits of this change:
 
 Following the introduction of Common Data Service capacity, we updated our capacity reporting to show database, file, and log entitlement for all our customers. This change in reporting is not visible to those still on the legacy licensing storage model.
 
-> [!NOTE]
-> - If you are on the previous licensing model for storage, you will see a single capacity for entitlement. See [Legacy storage capacity](legacy-capacity-storage.md).
-> - If you have transitioned to the new licensing model or have a mix of old and new license models, you will see the storage capacity entitlement and usage by database, file, and log. See [Common Data Service storage capacity](capacity-storage.md).
-> - To determine which licensing model you're using, see [Determining your storage model](legacy-capacity-storage.md#determining-your-storage-model).
+### Two versions of storage reporting
+
+There are two versions for storage capacity reporting.
+
+- **Legacy capacity model**: Organizations with the [previous licensing model](legacy-capacity-storage.md#verifying-your-legacy-storage-model) for storage. Users with these licenses will see a single capacity for entitlement. See [Legacy storage capacity](legacy-capacity-storage.md).
+
+- **New capacity model**: Organizations with the [new licensing model](capacity-storage.md#verifying-your-new-storage-model) for storage. Users with these licenses will see the storage capacity entitlement and usage by database, file, and log. See [Common Data Service storage capacity](capacity-storage.md). 
 
 ## Changes for exceeding storage capacity entitlements
 
 We are making changes for what happens when an organization's storage capacity usage is greater than the capacity entitled or purchased via add-ons.
 
-For now, if you exceed your storage capacity, you will receive notifications alerting you to the over capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin  operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information.
+For now, if you exceed your storage capacity, you will receive notifications alerting you to the over capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin  operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information. For more information, see [Legacy storage capacity](legacy-capacity-storage.md) or [Common Data Service storage capacity](capacity-storage.md). 
 
-Consider the following scenarios.
-
-### Example storage capacity scenarios
-
-#### Scenario 1: Database storage is over capacity
-
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 110GB        |
-|**Log**     |  10GB       | 5GB        |
-|**File**     | 400GB        | 200GB        |
-
-This tenant is considered over capacity for entitlement storage.
-
-#### Scenario 2: Log storage is over capacity
-
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 95GB        |
-|**Log**     |  10GB       | 20GB        |
-|**File**     | 400GB        | 200GB        |
-
-This tenant is 10GB over in log usage and has only 5GB available in database capacity. Therefore, there is a deficit.
-
-#### Scenario 3: Log storage is over capacity
-
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 80GB        |
-|**Log**     |  10GB       | 20GB        |
-|**File**     | 400GB        | 200GB        |
-
-This tenant is 10GB over in log usage but has 20GB available in database capacity. Therefore, there is no deficit.
-
-#### Scenario 4: File storage is over capacity
-
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 20GB        |
-|**Log**     |  10GB       | 5GB        |
-|**File**     | 200GB        | 290GB        |
-
-This tenant is 90GB over in log usage but has 85GB available (80GB database + 5GB log) in storage capacity. There is a deficit and this tenant should purchase more capacity but it will not receive over capacity alerts.
-
-### Actions to take for a storage capacity deficit
-
-You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130), the 'Add-ons' section. You can work through your organization's standard procurement process to purchase capacity add-ons.
-
-### FAQ
-
-#### I have available instances (Production and Sandbox), but my capacity usage is more than capacity entitled. Will I be able to provision new environments? 
-For now, you can provision a new environment if you have at least 1GB available database capacity. 
-
-#### I have storage licenses from the legacy licensing model and I also purchased new model storage licenses. Which report will I see?  
-You will see the report for the new licensing model. 
-
-#### What are my options if I'm overusing capacity?  
-You can buy more capacity to be compliant, and [free up](free-storage-space.md) or [delete](delete-environment.md) unused environments. 
-
-#### Do I get notified through email when my org is over capacity?  
-When you sign in to the Power Platform admin center, you will be notified if your capacity usage is more than the entitled capacity. 
 
 ### See also
 [Common Data Service storage capacity](capacity-storage.md) <br />
