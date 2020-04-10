@@ -51,7 +51,7 @@ The report displays available storage capacity by source as well as overall stor
 ## Capacity page details
 
 > [!NOTE]
-> The calculation of capacity storage into three storage types - database, file, and log - is the same for the legacy licensing storage model and the new licensing storage model. What differs is the presentation of the storage information in the user interface. See [Determining your storage model](#determining-your-storage-model).
+> The calculation of capacity storage into three storage types - database, file, and log - is the same for the legacy licensing storage model and the new licensing storage model. What differs is the presentation of the storage information in the user interface. 
 
 ### Summary tab
 
