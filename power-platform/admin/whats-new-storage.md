@@ -44,11 +44,11 @@ Following the introduction of Common Data Service capacity, we updated our capac
 
 ### Two versions of storage reporting
 
-There are two versions for storage capacity reporting.
+There are two versions for storage capacity reporting. 
 
-- **Legacy capacity model**: Organizations with the [previous licensing model](legacy-capacity-storage.md#verifying-your-legacy-storage-model) for storage. Users with these licenses will see a single capacity for entitlement. See [Legacy storage capacity](legacy-capacity-storage.md).
+- **Legacy capacity model**: Organizations with the [previous licensing model](legacy-capacity-storage.md#licenses-for-legacy-storage-model) for storage. Users with these licenses will see a single capacity for entitlement. See [Legacy storage capacity](legacy-capacity-storage.md).
 
-- **New capacity model**: Organizations with the [new licensing model](capacity-storage.md#verifying-your-new-storage-model) for storage. Users with these licenses will see the storage capacity entitlement and usage by database, file, and log. See [Common Data Service storage capacity](capacity-storage.md). 
+- **New capacity model**: Organizations with the [new licensing model](capacity-storage.md#licenses-for-new-storage-model) for storage. Users with these licenses will see the storage capacity entitlement and usage by database, file, and log. See [Common Data Service storage capacity](capacity-storage.md). 
 
 ## Changes for exceeding storage capacity entitlements
 
