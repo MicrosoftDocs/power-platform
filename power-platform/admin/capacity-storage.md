@@ -28,7 +28,18 @@ Data volume continues to grow exponentially, as businesses advance their digital
 
 ## Licenses for new storage model
 
-<should license table be included - only if user can determine>
+The following licenses provide capacity using the new storage model. If you have any of these licenses, you will see the new model report. 
+
+- Common Data Service for Apps Database Capacity 
+- Common Data Service for Apps File Capacity 
+- Common Data Service for Apps Log Capacity 
+
+To see if you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Products & Services**.
+
+> [!NOTE]
+> If you have a mix of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-legacy-storage-model) and the above new model licenses, you will see the new model report.
+> 
+> If you have a none of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-legacy-storage-model) or the new model licenses, you will see the new model report.
 
 ## Verifying your new storage model
 
@@ -43,13 +54,6 @@ The new licensing storage model looks like this:
 > [!div class="mx-imgBorder"] 
 > ![](media/capacity-new-license-model.png "New licensing storage model")
 
-
-## Changes for exceeding storage capacity entitlements
-
-We are making changes for what happens when an organization's storage capacity usage is greater than the capacity entitled or purchased via add-ons.
-
-For now, if you exceed your storage capacity, you will receive notifications alerting you to the over capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin  operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information. For more information, see [Legacy storage capacity](legacy-capacity-storage.md) or [Common Data Service storage capacity](capacity-storage.md). 
-Consider the following scenarios.
 
 ## Capacity page details
 
@@ -66,8 +70,7 @@ To view the **Summary** page, select **Analytics** > **Capacity** > **Summary** 
 |---------|---------|
 |(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-box (OOB) entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
 |(2)    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every User License purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
-|(3)    |**What's new**: Used for announcements and notifications  |
-|(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
+|(3)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
 
 ### Storage capacity tab
 
@@ -133,6 +136,12 @@ Since custom Quick Find lookups are created by an admin in the org, these can be
 
 - Removing unneeded fields/entities 
 - Eliminating multiline text fields from inclusion
+
+## Changes for exceeding storage capacity entitlements
+
+We are making changes for what happens when an organization's storage capacity usage is greater than the capacity entitled or purchased via add-ons.
+
+For now, if you exceed your storage capacity, you will receive notifications alerting you to the over capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin  operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information. For more information, see [Legacy storage capacity](legacy-capacity-storage.md) or [Common Data Service storage capacity](capacity-storage.md). 
 
 ## Example storage capacity scenarios
 
@@ -231,5 +240,8 @@ Default, production, and sandbox environments are counted for consumption. Trial
 
 ### See also
 [Capacity add-ons](capacity-add-on.md)<br />
-[Automatic tuning in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning)
- 
+[Automatic tuning in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning) <br />
+[What's new in storage](whats-new-storage.md) <br />
+[Free storage space](free-storage-space.md) <br />
+
+

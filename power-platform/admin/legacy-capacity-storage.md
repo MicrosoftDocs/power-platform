@@ -32,6 +32,8 @@ To see if you have any of these licenses, sign in to the Microsoft 365 admin cen
 
 > [!NOTE]
 > If you have a mix of the above legacy model licenses and the [new model licenses](capacity-storage.md#licenses-for-new-storage-model), you will see the [new model report](capacity-storage.md).
+> 
+> If you have a none of the above legacy model licenses or the [new model licenses](capacity-storage.md#licenses-for-new-storage-model), you will see the [new model report](capacity-storage.md).
 
 ## Verifying your legacy storage model
 
@@ -139,6 +141,6 @@ When you sign in to the Power Platform admin center, you will be notified if you
 ### See also
 [Common Data Service storage capacity](capacity-storage.md) <br />
 [What's new in storage](whats-new-storage.md) <br />
-[Free storage space](free-storage-space.md)
-
+[Free storage space](free-storage-space.md) <br />
+[Capacity add-ons](capacity-add-on.md)
 
