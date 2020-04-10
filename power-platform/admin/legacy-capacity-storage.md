@@ -45,6 +45,64 @@ The legacy licensing storage model looks like this:
 
 The report displays available storage capacity by source as well as overall storage capacity usage. To help customers transition to the new licensing model, current usage is also shown by database, file, and log capacity. 
 
+## Capacity page details
+
+### Summary tab
+
+This page provides a tenant-level view of where your organization is using storage capacity.
+
+To view the **Summary** page, select **Analytics** > **Capacity** > **Summary** tab.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
+
+|  |Description |
+|---------|---------|
+|(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-box (OOB) entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
+|(2)    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every User License purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(3)    |**What's new**: Used for announcements and notifications  |
+|(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
+
+### Storage capacity tab
+
+This page provides similar information as the **Summary** tab but with an environment-level view of where your organization is using capacity.
+
+To view the **Storage capacity** page, select **Analytics** > **Capacity** > **Storage capacity** tab. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
+
+
+> [!NOTE]
+> - The following environments do not count against capacity and show as 0GB:
+>   - Trial 
+>   - Preview
+>   - Support
+>   - Developer
+> - Admins can select environments showing 0GB to go to the **Environment Analytics** page and see the actual consumption.
+
+### Environment capacity analytics
+
+This page provides an environment-level detailed view of where your organization is using capacity as well as the three capacity types consumption. 
+
+To view environment-level capacity analytics:
+
+1. Select **Analytics** > **Capacity** > **Storage capacity** tab.
+2. Select an environment.
+3. Select the **Details** button (![Details button](media/storage-data-details-button.png "Details button"))
+
+> [!div class="mx-imgBorder"] 
+> ![](media/storage-data-capacity-details.png "Environment capacity analytics")
+
+Details provided:
+
+-    Actual database usage
+-    Top database tables and their growth over time
+-    Actual file usage
+-    Top files tables and their growth over time
+-    Actual log usage
+-    Top tables and their growth over time
+
 ## Example storage capacity scenario
 
 ### Scenario: Database storage is over capacity
@@ -54,6 +112,10 @@ The report displays available storage capacity by source as well as overall stor
 |**Database**     | 100GB        | 110GB        |
 
 This tenant is 10GB over in storage usage. Therefore, there is a deficit and additional capacity should be purchased.
+
+## Actions to take for a storage capacity deficit
+
+You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130), the 'Add-ons' section. You can work through your organization's standard procurement process to purchase capacity add-ons.
 
 ### FAQ
 

@@ -51,52 +51,6 @@ We are making changes for what happens when an organization's storage capacity u
 For now, if you exceed your storage capacity, you will receive notifications alerting you to the over capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin  operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information. For more information, see [Legacy storage capacity](legacy-capacity-storage.md) or [Common Data Service storage capacity](capacity-storage.md). 
 Consider the following scenarios.
 
-### Example storage capacity scenarios
-
-#### Scenario 1: Database storage is over capacity
-
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 110GB        |
-|**Log**     |  10GB       | 5GB        |
-|**File**     | 400GB        | 200GB        |
-
-This tenant has 10 GB extra database capacity and is considered within capacity for entitlement storage. There is no deficit.
-
-#### Scenario 2: Log storage is over capacity
-
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 95GB        |
-|**Log**     |  10GB       | 20GB        |
-|**File**     | 400GB        | 200GB        |
-
-This tenant is 10GB over in log usage and has only 5GB available in database capacity. Therefore, there is a deficit.
-
-#### Scenario 3: Log storage is over capacity
-
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 80GB        |
-|**Log**     |  10GB       | 20GB        |
-|**File**     | 400GB        | 200GB        |
-
-This tenant is 10GB over in log usage but has 20GB available in database capacity. Therefore, there is no deficit.
-
-#### Scenario 4: File storage is over capacity
-
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 20GB        |
-|**Log**     |  10GB       | 5GB        |
-|**File**     | 200GB        | 290GB        |
-
-This tenant is 90GB over in log usage but has 85GB available (80GB database + 5GB log) in storage capacity. There is a deficit and this tenant should purchase more capacity but it will not receive over capacity alerts.
-
-## Actions to take for a storage capacity deficit
-
-You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130), the 'Add-ons' section. You can work through your organization's standard procurement process to purchase capacity add-ons.
-
 ## Capacity page details
 
 ### Summary tab
@@ -179,6 +133,52 @@ Since custom Quick Find lookups are created by an admin in the org, these can be
 
 - Removing unneeded fields/entities 
 - Eliminating multiline text fields from inclusion
+
+## Example storage capacity scenarios
+
+### Scenario 1: Database storage is over capacity
+
+|Type  |Entitled  |Consumed  |
+|---------|---------|---------|
+|**Database**     | 100GB        | 110GB        |
+|**Log**     |  10GB       | 5GB        |
+|**File**     | 400GB        | 200GB        |
+
+This tenant has 10 GB extra database capacity and is considered within capacity for entitlement storage. There is no deficit.
+
+### Scenario 2: Log storage is over capacity
+
+|Type  |Entitled  |Consumed  |
+|---------|---------|---------|
+|**Database**     | 100GB        | 95GB        |
+|**Log**     |  10GB       | 20GB        |
+|**File**     | 400GB        | 200GB        |
+
+This tenant is 10GB over in log usage and has only 5GB available in database capacity. Therefore, there is a deficit.
+
+### Scenario 3: Log storage is over capacity
+
+|Type  |Entitled  |Consumed  |
+|---------|---------|---------|
+|**Database**     | 100GB        | 80GB        |
+|**Log**     |  10GB       | 20GB        |
+|**File**     | 400GB        | 200GB        |
+
+This tenant is 10GB over in log usage but has 20GB available in database capacity. Therefore, there is no deficit.
+
+### Scenario 4: File storage is over capacity
+
+|Type  |Entitled  |Consumed  |
+|---------|---------|---------|
+|**Database**     | 100GB        | 20GB        |
+|**Log**     |  10GB       | 5GB        |
+|**File**     | 200GB        | 290GB        |
+
+This tenant is 90GB over in log usage but has 85GB available (80GB database + 5GB log) in storage capacity. There is a deficit and this tenant should purchase more capacity but it will not receive over capacity alerts.
+
+## Actions to take for a storage capacity deficit
+
+You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130), the 'Add-ons' section. You can work through your organization's standard procurement process to purchase capacity add-ons.
 
 ## FAQ
 
