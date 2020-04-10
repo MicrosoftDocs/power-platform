@@ -19,16 +19,19 @@ search.app:
 
 In April 2019, we introduced Common Data Service capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage prior to April 2019, you are using the legacy licensing model for storage discussed in this topic.
 
-> [!NOTE]
-> The calculation of capacity storage into three storage types - database, file, and log - is the same for the legacy licensing storage model and the new licensing storage model. What differs is the presentation of the storage information in the user interface. See [Determining your storage model](#determining-your-storage-model).
-> 
-> For more information on changes, see [What's new in storage](whats-new-storage.md).
-
 ## Licenses for legacy storage model
 
-The following licenses provide capacity using the legacy storage model.
+The following licenses provide capacity using the legacy storage model. If you have any of these licenses, you will see the legacy model report. 
 
-<should license table be included - only if user can determine>
+- Microsoft Dynamics CRM Online Additional Non-production Instance 
+- Microsoft Dynamics CRM Online Additional Test Instance 
+- Microsoft Dynamics CRM Online Instance 
+- Microsoft Dynamics CRM Online Storage Add-On 
+
+To see if you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Products & Services**.
+
+> [!NOTE]
+> If you have a mix of the above legacy model licenses and the [new model licenses](capacity-storage.md#licenses-for-new-storage-model), you will see the [new model report](capacity-storage.md).
 
 ## Verifying your legacy storage model
 
@@ -47,6 +50,9 @@ The report displays available storage capacity by source as well as overall stor
 
 ## Capacity page details
 
+> [!NOTE]
+> The calculation of capacity storage into three storage types - database, file, and log - is the same for the legacy licensing storage model and the new licensing storage model. What differs is the presentation of the storage information in the user interface. See [Determining your storage model](#determining-your-storage-model).
+
 ### Summary tab
 
 This page provides a tenant-level view of where your organization is using storage capacity.
@@ -54,14 +60,13 @@ This page provides a tenant-level view of where your organization is using stora
 To view the **Summary** page, select **Analytics** > **Capacity** > **Summary** tab.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
+> ![](media/capacity-old-license-model-explained.png "Capacity storage details")
 
 |  |Description |
 |---------|---------|
 |(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-box (OOB) entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
 |(2)    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every User License purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
-|(3)    |**What's new**: Used for announcements and notifications  |
-|(4)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
+|(3)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
 
 ### Storage capacity tab
 
@@ -70,7 +75,7 @@ This page provides similar information as the **Summary** tab but with an enviro
 To view the **Storage capacity** page, select **Analytics** > **Capacity** > **Storage capacity** tab. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
+> ![](media/capacity-old-license-model-storage-tab.png "Storage capacity tab")
 
 
 > [!NOTE]
@@ -92,16 +97,16 @@ To view environment-level capacity analytics:
 3. Select the **Details** button (![Details button](media/storage-data-details-button.png "Details button"))
 
 > [!div class="mx-imgBorder"] 
-> ![](media/storage-data-capacity-details.png "Environment capacity analytics")
+> ![](media/capacity-old-license-model-storage-details.png "Environment capacity analytics")
 
 Details provided:
 
--    Actual database usage
--    Top database tables and their growth over time
--    Actual file usage
--    Top files tables and their growth over time
--    Actual log usage
--    Top tables and their growth over time
+- Actual database usage
+- Top database tables and their growth over time
+- Actual file usage
+- Top files tables and their growth over time
+- Actual log usage
+- Top tables and their growth over time
 
 ## Example storage capacity scenario
 
@@ -119,7 +124,7 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 
 ### FAQ
 
-#### I have available instances (Production and Sandbox), but my capacity usage is more than capacity entitled. Will I be able to provision new environments? 
+#### I have available instances (production and sandbox), but my capacity usage is more than capacity entitled. Will I be able to provision new environments? 
 For now, you can provision a new environment if you have at least 1GB available database capacity. 
 
 #### I have storage licenses from the legacy licensing model and I also purchased new model storage licenses. Which report will I see?  
@@ -133,6 +138,7 @@ When you sign in to the Power Platform admin center, you will be notified if you
 
 ### See also
 [Common Data Service storage capacity](capacity-storage.md) <br />
-[What's new in storage](whats-new-storage.md)
+[What's new in storage](whats-new-storage.md) <br />
+[Free storage space](free-storage-space.md)
 
 
