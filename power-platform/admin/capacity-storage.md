@@ -1,5 +1,5 @@
 ---
-title: "New model: Common Data Service storage capacity  | MicrosoftDocs"
+title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
 ms.date: 01/29/2020
 ms.reviewer: ""
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# New model: Common Data Service storage capacity 
+# New Common Data Service storage capacity 
 
 If you purchased storage in or after April 2019, or you have a mix of before and after April 2019 storage purchases, you will see your storage capacity entitlement and usage by database, file, and log as it appears in the Power Platform admin center today. 
 
