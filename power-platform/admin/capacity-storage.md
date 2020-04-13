@@ -1,13 +1,14 @@
 ---
-title: "New Common Data Service storage capacity  | MicrosoftDocs"
-description: Introducing a new storage model for Common Data Service.
-ms.date: 01/29/2020
-ms.reviewer: ""
-ms.service: "power-platform"
-ms.topic: "quickstart"
-author: "jimholtz"
-ms.author: "jimholtz"
-manager: "kvivek"
+title: Requests limits and allocations | Microsoft Docs
+description: FAQ for licensing Power Apps and Power Automate
+author: dileepsinghmicrosoft
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 04/13/2020
+ms.author: dileeps
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -15,241 +16,140 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# New Common Data Service storage capacity 
+# Requests limits and allocations
 
-If you purchased storage in or after April 2019, or you have a mix of before and after April 2019 storage purchases, you will see your storage capacity entitlement and usage by database, file, and log as it appears in the Power Platform admin center today. 
+Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) Power Apps, and Power Automate.
 
-Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
+## What is a Microsoft Power Platform request?
 
-> [!NOTE]
-> For introductory licensing information on the new capacity analytics model, see [Power Apps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
->
-> Common Data Service storage capacity is not available for Dynamics 365 US Government – GCC and GCC High, DOD, and Microsoft Dynamics 365 online services operated by 21Vianet.
+Requests in Microsoft Power Platform consist of various actions which a user makes across various products. At a high level, below is what constitute an API call:
 
-## Licenses for new storage model
+- **Connectors** – all API requests to connectors from Power Apps or Power Automate
 
-The following licenses provide capacity using the new storage model. If you have any of these licenses, you will see the new model report. 
+- **Microsoft Power Automate** – all Power Automate step actions
 
-- Common Data Service for Apps Database Capacity 
-- Common Data Service for Apps File Capacity 
-- Common Data Service for Apps Log Capacity 
+- **Common Data Service** – all CRUD operations, as well as special operations like "share" or "assign". These can be from any client or application and using any endpoint SOAP or REST. These include but are not limited to plug-ins, async workflows, and custom controls making the above mentioned operations.
 
-To see if you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Products & Services**.
+Note that for Common Data Service, there will be a small set of system internal operations that are excluded, like login, logout, and system metadata operations like getClientMetadata.
 
-> [!NOTE]
-> If you have a mix of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-legacy-storage-model) and the above new model licenses, you will see the new model report.
-> 
-> If you have a none of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-legacy-storage-model) or the new model licenses, you will see the new model report.
+This table below will describe the common requests limits as well as the allocation which a user gets based on the type of license assigned to the user.
 
-## Verifying your new storage model
+## Microsoft Power Platform requests allocations based on licenses
 
-1. Sign in to the Power Platform admin center, and then select an environment. 
+All the users of Microsoft Power Platform can use a certain number of requests based on the license they are assigned. The following table defines the number of requests a user can make in a 24-hour period: 
 
-2. Select **Analytics** > **Capacity**.
+| **User licenses**                                        | **Number of API requests / 24 hours**                                                                                                         |
+|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Dynamics 365 Enterprise applications<sup>1</sup>                  | 20,000                                                                                                                                        |
+| Dynamics 365 Professional <sup>2</sup>                          | 10,000                                                                                                                                        |
+| Dynamics 365 Team Member                                 | 5,000                                                                                                                                         |
+| Power Apps per user plan                                  | 5,000                                                                                                                                         |
+| Power Automate per user plan                             | 5,000                                                                                                                                         |
+| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 2,000                                                                                                                                         |
+| Application user / Non-interactive users                 | See *Non-licensed user* section below |
 
-3. View the data on the **Summary** page.
 
-The new licensing storage model looks like this: 
+<sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent.
 
-> [!div class="mx-imgBorder"] 
-> ![](media/capacity-new-license-model.png "New licensing storage model")
+<sup>2</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
+<sup>3</sup>See **Appendix D** for Office 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
-## Capacity page details
 
-### Summary tab
+Users who are running apps and flows without a user license through the Power Apps per app plan or flows licensed through the Power Automate per flow plan are granted the following API request entitlement.
 
-This page provides a tenant-level view of where your organization is using storage capacity.
 
-To view the **Summary** page, select **Analytics** > **Capacity** > **Summary** tab.
+| **Non User Licenses **       | **Number of API requests / 24 hours** |
+|------------------------------|---------------------------------------|
+| Power Apps per app plan       | 1,000 per user pass                   |
+| Power Automate per flow plan | 15,000 per flow                       |
 
-> [!div class="mx-imgBorder"] 
-> ![](media/storage-data-capacity-page-review.png "Capacity hub walkthrough")
 
-|  |Description |
-|---------|---------|
-|(1)   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-box (OOB) entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
-|(2)    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every User License purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
-|(3)     |**Top capacity usage, by environment**: Top environments that consume the most capacity        |
+If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license as well as a Power Apps per user license , then that user will have a total of 20000 + 5000 = 25000 requests available per 24 hours.
 
-### Storage capacity tab
+If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 Customer Service Enterprise license as the base license and a Dynamics 365 Sales Enterprise license attached, the total number of requests would be what is provided by the base license - Dynamics 365 Customer Service.
 
-This page provides similar information as the **Summary** tab but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Analytics** > **Capacity** > **Storage capacity** tab. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
+## Power Apps and Power Automate capacity add-on
 
-> [!div class="mx-imgBorder"] 
-> ![](media/storage-data-per-environment2.png "Capacity hub walkthrough")
+Power Apps and Power Automate capacity add-on allows customers to purchase additional requests. Eventually, these may be assigned to any user who has a Power Apps/Power Automate license as well as a Dynamics 365 license. 
 
+Each capacity add-on provides an additional 10,000 requests/24 hours which can be assigned to any user. Multiple capacity add-ons can also be assigned to the same user.
 
-> [!NOTE]
-> - The following environments do not count against capacity and show as 0GB:
->   - Trial 
->   - Preview
->   - Support
->   - Developer
-> - Admins can select environments showing 0GB to go to the **Environment Analytics** page and see the actual consumption.
+> [!NOTE] 
+> Power Apps and Power Automate capacity add-ons cannot be assigned to users yet. Assignment will be possible later in calendar year 2020. When supported these may be assigned to application and administrative and non-interactive users.
 
-### Environment capacity analytics
+## Non-licensed users/application users/Users with special free licenses 
 
-This page provides an environment-level detailed view of where your organization is using capacity as well as the three capacity types consumption. 
+Common Data Service also provides the ability to have identities that do not require any user license to interact with the service. There are three types of
+these users:
 
-To view environment-level capacity analytics:
+-   [Application users](create-users-assign-online-security-roles.md#create-an-application-user)
 
-1. Select **Analytics** > **Capacity** > **Storage capacity** tab.
-2. Select an environment.
-3. Select the **Details** button (![Details button](media/storage-data-details-button.png "Details button"))
+-   [Non-interactive users](create-users-assign-online-security-roles.md#create-a-non-interactive-user-account)
 
-> [!div class="mx-imgBorder"] 
-> ![](media/storage-data-capacity-details.png "Environment capacity analytics")
+-   [Administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account). 
 
-Details provided:
+Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 
--    Actual database usage
--    Top database tables and their growth over time
--    Actual file usage
--    Top files tables and their growth over time
--    Actual log usage
--    Top tables and their growth over time
+For these users, every tenant will get base request capacity per tenant that can only be used by these users and not by users with standard licenses.
 
-<!--
-Select **Applied filters** at the the top of the page to filter data for different time spans. 
+This base request capacity is based on the type of subscription, as follows:
 
-> [!div class="mx-imgBorder"] 
-> ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
--->
+1. If a tenant has at least one Dynamics 365 enterprise subscription, they will get 100,000 requests per 24 hours.
 
+2. If a tenant has at least one Dynamics 365 professional subscription, they will get 50,000 requests per 24 hours.
 
+3. If a tenant has at least one Microsoft Power Apps or Power Automate subscription, they will get 25,000 requests per 24 hours.
 
-## Changes for exceeding storage capacity entitlements
+If a tenant has multiple types of subscriptions, their base request capacity will be a maximum of two subscriptions. For example, if a customer has both Dynamics 365 Customer Service and Power Apps per user subscriptions, their base request capacity will be 100,000 requests per 24 hours.
 
-We are making changes for what happens when an organization's storage capacity usage is greater than the capacity entitled or purchased via add-ons.
+Base request capacity is defined at the tenant level and can only be used by non-licensed users, application users, and users who have free ($0) licenses.
 
-For now, if you exceed your storage capacity, you will receive notifications alerting you to the over capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin  operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information. For more information, see [Legacy storage capacity](legacy-capacity-storage.md) or [Common Data Service storage capacity](capacity-storage.md). 
+After base request capacity is exhausted, customers can increase this capacity by purchasing a Power Apps and Power Automate capacity add-on.
 
-## Example storage capacity scenarios
+## Service protection limits currently applicable
 
-### Scenario 1: Database storage is over capacity
+Apart from the new daily API request limit, there are other service protection limits specific to various services that exist currently. These limits are usually much higher when compared to the daily per user entitlements for a 24-hour period. Limits help maintain the quality of service by protecting the service from malicious or noisy behavior that would otherwise disrupt service for all customers.
 
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 110GB        |
-|**Log**     |  10GB       | 5GB        |
-|**File**     | 400GB        | 200GB        |
+Review the following resources for information about *current* service protection limits for each service:
 
-This tenant has 10 GB extra database capacity and is considered within capacity for entitlement storage. There is no deficit.
+- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), Power Apps, and Power Automate connecting to Common Data Service/model-driven apps in Dynamics 365
 
-### Scenario 2: Log storage is over capacity
+- [Microsoft Power Automate limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Power Automate
 
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 95GB        |
-|**Log**     |  10GB       | 20GB        |
-|**File**     | 400GB        | 200GB        |
+- [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Power Automate and Power Apps
 
-This tenant is 10GB over in log usage and has only 5GB available in database capacity. Therefore, there is a deficit.
 
-### Scenario 3: Log storage is over capacity
+## Frequently asked questions
 
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 80GB        |
-|**Log**     |  10GB       | 20GB        |
-|**File**     | 400GB        | 200GB        |
+### What happens if any user exceeds request capacity?
 
-This tenant is 10GB over in log usage but has 20GB available in database capacity. Therefore, there is no deficit.
+If any user exceeds their request capacity, the admin for the tenant/environment is notified. The admin can assign Power Apps and Power Automate request capacity to that user.
 
-### Scenario 4: File storage is over capacity
+Users won't be blocked from using the app for occasional and reasonable overages at this point in time.
 
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100GB        | 20GB        |
-|**Log**     |  10GB       | 5GB        |
-|**File**     | 200GB        | 290GB        |
+### Will my integrations stop working if application users exceed base request capacity?
 
-This tenant is 90GB over in log usage but has 85GB available (80GB database + 5GB log) in storage capacity. There is a deficit and this tenant should purchase more capacity but it will not receive over capacity alerts.
+Integrations won't be stopped for occasional and reasonable overages at this point in time. Admins will be notified about overages and will be able to add Power Apps and Power Automate request capacity to be compliant.
 
-## Actions to take for a storage capacity deficit
+### Will there be a transition period for existing customers?
 
-You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130), the 'Add-ons' section. You can work through your organization's standard procurement process to purchase capacity add-ons.
+Yes, all existing customers will have a transition period until October 1, 2020, or the expiration of their current subscription term, whichever is longer.
 
-## FAQ
+During this transition period, reporting that shows the API consumption will be made available to customers.
 
-### Indexes and database storage usage
-Database storage includes both the database records as well as index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. An increased size or number of indexes will consume additional storage on the database. Common causes for an increase in index size are:
+### What tools can an admin use to monitor and analyze API requests across the platform?
 
-- An organization making use of new functionality (this can be custom, out-of-box, or part of an update or solution installation)
-- Data volume or complexity changes
-- A change in usage patterns that indicate new indexes are  in need of reevaluated
+Usage reports and monitoring capabilities will be made available in Power Platform admin center soon, and will be the best way to monitor and analyze usage for API requests. 
 
-If Quick Find lookups are configured for data that is frequently used, this will also create additional indexes in the database. Admin configured "quick search" values can increase the size of the indexes based on:
+### Do the Power Platform request entitlements roll over from day to day or month to month?
 
-- The number of fields chosen and the data type of those fields
-- The volume of records for the entities and fields
-- The complexity of the database structure
+No. All the Power Platform request entitlements are calculated on a rolling 24-hour period. If they aren't consumed, they don't roll over to the next day or next month.
 
-Since custom Quick Find lookups are created by an admin in the org, these can be user controlled. Admins can reduce some of the storage used by these custom indexes by doing the following: 
+### Will the requests generated from async workflows and plug-ins in Common Data Service count against the request limits?
 
-- Removing unneeded fields/entities 
-- Eliminating multiline text fields from inclusion
-
-### I see the new Capacity Report, but I have not purchased the new capacity offers. How do I interpret the report?
-As an existing customer, we have added file and log capacity to your tenant automatically based on your existing licenses. Because you are currently in an agreement under the old offers, you are not impacted. Make sure your database consumption is per the entitlement. You are not expected to take any action for file and log. At renewal, you can use this report to get the right amount of capacity for database, file, and log.
-
-### I have storage licenses from the legacy licensing model and I also purchased new model storage licenses. Which report will I see?  
-You will see the report for the new licensing model. 
-
-### I just bought the new capacity-based licenses. How do I provision an environment using this model?
-You can provision environments through the Power Platform admin center. For details, see [Create and manage environments in the Power Platform admin center](create-environment.md).
-
-### I'm an existing customer and have not purchased the new offers. The capacity report indicates I'm overusing the database/file/log, what should I do?
-If database, you should not exceed the available database capacity. Please consider [freeing storage space](free-storage-space.md) or purchase more storage capacity. 
-
-If file and log, then there is no immediate action required. At renewal, you can use this report to get the right amount of capacity for database, file, and log.
-
-### I'm a new customer and I recently purchased with the new offers. My usage of database/log/file is showing red. What should I do?  
-Consider buying additional capacity using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
-
-### Where can I read more about the new capacity offers?
-Download the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) to learn more.
-
-### I am an existing customer, will I be immediately impacted by this change?
-No, there is no immediate change for existing customers as your current term will be honored for the duration of your agreement. 
-
-### I'm an existing customer with an EA agreement. Should I go buy file and log capacity?
-If you have an existing agreement, you are not impacted with the current change. We have added file and log capacity to your current entitlement which reduces your database capacity. Until renewal, you can continue with the current plan.
-
-### I'm an existing customer and my renewal is coming up. Will I be impacted?
-Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
-
-### I'm a Power Apps/Power Automate customer and have environments with and without database. Will they consume storage capacity? 
-Yes. All environments will consume 1GB, regardless of whether or not they have an associated database.
-
-### Do I get notified through email when my org is over capacity?  
-When you sign in to the Power Platform admin center, you will be notified if your capacity usage is more than the entitled capacity. 
-
-### Why am I no longer getting storage notifications?
-We have disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity )** page to monitor usage.
-
-### How can I reduce consumed storage space?
-See the following: [Free storage space](free-storage-space.md).
-
-### I'm an existing customer. Should I expect my file and log usage to change?
-Log and files data usage is not expected to be exactly the same size as when the same data is stored using database due to different storage and indexing technologies. The current set of out-of-box (OOB) entities stored in file and log might change in the future.
-
-### Capacity report shows the entitlement breakdown by per license, but I have more licenses in my tenant and not all of them are listed in the breakdown, why?
-Not all licenses give per user entitlement. For example, the team member license does not give any per user database/file/log entitlement. So in this case, the licenses that do not give any per user entitlement will not be listed in the breakdown.
-
-### When is table data expected to show in the report?
-Check back for availability. In addition to top tables, we will also show the table trend.
-
-### Which environments are counted in the capacity report?
-Default, production, and sandbox environments are counted for consumption. Trial, preview, support, and developer environments are not counted.
+Yes, if these requests are making CrUD, assign, or share&ndash;type calls, they will count. However, calls generated internally from the platform aren't going to be counted.
 
 ### See also
-[Capacity add-ons](capacity-add-on.md)<br />
-[Automatic tuning in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning) <br />
-[What's new in storage](whats-new-storage.md) <br />
-[Free storage space](free-storage-space.md) <br />
-
-
+[Common Data Service API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
