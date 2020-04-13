@@ -151,15 +151,5 @@ No. All the Power Platform request entitlements are calculated on a rolling 24-h
 
 Yes, if these requests are making CrUD, assign, or share&ndash;type calls, they will count. However, calls generated internally from the platform aren't going to be counted.
 
-
-|Column1  |Column2  |
-|---------|---------|
-|Row1     |         |
-|Row2     |> [!NOTE]
-> Information the user should notice even if skimming         |
-
-
-
-
 ### See also
 [Common Data Service API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
