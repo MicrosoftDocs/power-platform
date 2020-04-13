@@ -110,7 +110,7 @@ After importing the solution, you may see an error at the top, notifying you tha
 
  ![Prompt to set up environment variables](media/coe7.png "Prompt to set up environment variables")
 
->[!Note]
+>[!TIP]
 >To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
 
 - Select a variable, and then configure its **Default Value**.
