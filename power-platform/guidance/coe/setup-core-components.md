@@ -106,9 +106,12 @@ The environment variables are used to store application and flow configuration d
 
 All of the sync flows depend on all environment variables' being configured.
 
-After importing the solution, you'll see an error at the top, notifying you that environment variables need to be configured. For the Core Components solution, three environment variables need to be configured. The following screenshot shows an example of what the error message will look like.
+After importing the solution, you may see an error at the top, notifying you that environment variables need to be configured. For the Core Components solution, three environment variables need to be configured. The following screenshot shows an example of what the error message will look like.
 
  ![Prompt to set up environment variables](media/coe7.png "Prompt to set up environment variables")
+
+>[!Note]
+>To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
 
 - Select a variable, and then configure its **Default Value**.
 
