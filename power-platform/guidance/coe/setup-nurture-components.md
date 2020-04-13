@@ -8,6 +8,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
 ms.author: mapichle
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -34,11 +35,14 @@ Environment variables are used to store application and flow configuration data.
 
 All flows in this solution depend on all environment variables' being configured.
 
-1. You'll see an error notifying you that environment variables need to be configured. 
+1. You may see an error notifying you that environment variables need to be configured. 
    > [!NOTE]
    > For the Nurture Components solution, two environment variables need to be configured.
    
    ![Environment variables need to be updated](media/coe7.png "Environment variables need to be updated")
+
+>[!Note]
+>To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
 
 1. Select **See Environment Variables** to set the values as described in the following table.
 
