@@ -138,5 +138,7 @@ Filters are applied to the **Select an environment** drop-down list as follows:
 2. Filtered with environments that only have a database.
 3. Filtered with environments that are only in a ready state. 
 
+<!-- 
 ### See also
 [Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
+-->
