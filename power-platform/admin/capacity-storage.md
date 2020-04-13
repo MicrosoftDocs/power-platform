@@ -119,23 +119,7 @@ Select **Applied filters** at the the top of the page to filter data for differe
 > ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
 -->
 
-## Database storage usage
-Database storage includes both the database records as well as index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. An increased size or number of indexes will consume additional storage on the database. Common causes for an increase in index size are:
 
-- An organization making use of new functionality (this can be custom, out-of-box, or part of an update or solution installation)
-- Data volume or complexity changes
-- A change in usage patterns that indicate new indexes are  in need of reevaluated
-
-If Quick Find lookups are configured for data that is frequently used, this will also create additional indexes in the database. Admin configured "quick search" values can increase the size of the indexes based on:
-
-- The number of fields chosen and the data type of those fields
-- The volume of records for the entities and fields
-- The complexity of the database structure
-
-Since custom Quick Find lookups are created by an admin in the org, these can be user controlled. Admins can reduce some of the storage used by these custom indexes by doing the following: 
-
-- Removing unneeded fields/entities 
-- Eliminating multiline text fields from inclusion
 
 ## Changes for exceeding storage capacity entitlements
 
@@ -190,6 +174,24 @@ This tenant is 90GB over in log usage but has 85GB available (80GB database + 5G
 You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the [Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130), the 'Add-ons' section. You can work through your organization's standard procurement process to purchase capacity add-ons.
 
 ## FAQ
+
+### Indexes and database storage usage
+Database storage includes both the database records as well as index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. An increased size or number of indexes will consume additional storage on the database. Common causes for an increase in index size are:
+
+- An organization making use of new functionality (this can be custom, out-of-box, or part of an update or solution installation)
+- Data volume or complexity changes
+- A change in usage patterns that indicate new indexes are  in need of reevaluated
+
+If Quick Find lookups are configured for data that is frequently used, this will also create additional indexes in the database. Admin configured "quick search" values can increase the size of the indexes based on:
+
+- The number of fields chosen and the data type of those fields
+- The volume of records for the entities and fields
+- The complexity of the database structure
+
+Since custom Quick Find lookups are created by an admin in the org, these can be user controlled. Admins can reduce some of the storage used by these custom indexes by doing the following: 
+
+- Removing unneeded fields/entities 
+- Eliminating multiline text fields from inclusion
 
 ### I see the new Capacity Report, but I have not purchased the new capacity offers. How do I interpret the report?
 As an existing customer, we have added file and log capacity to your tenant automatically based on your existing licenses. Because you are currently in an agreement under the old offers, you are not impacted. Make sure your database consumption is per the entitlement. You are not expected to take any action for file and log. At renewal, you can use this report to get the right amount of capacity for database, file, and log.
