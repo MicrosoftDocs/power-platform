@@ -231,9 +231,6 @@ When you sign in to the Power Platform admin center, you will be notified if you
 ### Why am I no longer getting storage notifications?
 We have disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity )** page to monitor usage.
 
-### How can I reduce consumed storage space?
-See the following: [Free storage space](free-storage-space.md).
-
 ### I'm an existing customer. Should I expect my file and log usage to change?
 Log and files data usage is not expected to be exactly the same size as when the same data is stored using database due to different storage and indexing technologies. The current set of out-of-box (OOB) entities stored in file and log might change in the future.
 
