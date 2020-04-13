@@ -225,6 +225,9 @@ Customers who renew existing subscriptions can choose to continue to transact us
 ### I'm a Power Apps/Power Automate customer and have environments with and without database. Will they consume storage capacity? 
 Yes. All environments will consume 1GB, regardless of whether or not they have an associated database.
 
+### Do I get notified through email when my org is over capacity?  
+When you sign in to the Power Platform admin center, you will be notified if your capacity usage is more than the entitled capacity. 
+
 ### Why am I no longer getting storage notifications?
 We have disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity )** page to monitor usage.
 

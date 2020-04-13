@@ -132,9 +132,6 @@ For now, you can provision a new environment if you have at least 1GB available 
 ### I have storage licenses from the legacy licensing model and I also purchased new model storage licenses. Which report will I see?  
 You will see the report for the new licensing model. 
 
-### What are my options if I'm overusing capacity?  
-You can buy more capacity to be compliant, and [free up](free-storage-space.md) or [delete](delete-environment.md) unused environments. 
-
 ### Do I get notified through email when my org is over capacity?  
 When you sign in to the Power Platform admin center, you will be notified if your capacity usage is more than the entitled capacity. 
 
