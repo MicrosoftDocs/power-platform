@@ -196,6 +196,9 @@ Since custom Quick Find lookups are created by an admin in the org, these can be
 ### I see the new Capacity Report, but I have not purchased the new capacity offers. How do I interpret the report?
 As an existing customer, we have added file and log capacity to your tenant automatically based on your existing licenses. Because you are currently in an agreement under the old offers, you are not impacted. Make sure your database consumption is per the entitlement. You are not expected to take any action for file and log. At renewal, you can use this report to get the right amount of capacity for database, file, and log.
 
+### I have storage licenses from the legacy licensing model and I also purchased new model storage licenses. Which report will I see?  
+You will see the report for the new licensing model. 
+
 ### I just bought the new capacity-based licenses. How do I provision an environment using this model?
 You can provision environments through the Power Platform admin center. For details, see [Create and manage environments in the Power Platform admin center](create-environment.md).
 
