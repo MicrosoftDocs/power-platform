@@ -93,10 +93,10 @@
      href: configure-generic-handoff.md
    - name: Configure hand-off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
+   - name: Configure the bot to automatically start the conversation
+     href: configure-bot-greeting.md
    - name: Customize the look and feel of the bot
      href: customize-default-canvas.md
-   - name: Automatically start the bot's conversation
-     href: configure-bot-greeting.md
    - name: Enable and configure Azure Bot Framework Skills
      href: configuration-add-skills.md
 - name: Respond to GDPR Data Subject Rights (DSR) requests
