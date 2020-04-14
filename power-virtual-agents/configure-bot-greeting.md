@@ -165,7 +165,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
 
 ## Change the bot's default greeting
 
-The code in the *index.html* file causes a topic to be called automatically when the bot is loaded. By default, it calls the sytem greeting topic. You can also create a new topic and point the code to call that topic instead.
+The code in the *index.html* file causes a topic to be called automatically when the bot is loaded. By default, it calls the system greeting topic. You can also create a new topic and point the code to call that topic instead.
 
 
 
@@ -191,7 +191,7 @@ We recommend you modify the system greeting topic so that you don't have to edit
 
     ![Publish latest bot content](media/channel-publish-latest-content.png "Publish latest bot content")
 
-You can now test your bot by goign to the web page where you [deployed your bot](publication-fundamentals-publish-channels.md). You'll see the bot start the conversation by automatically showing the updated greeting topic.
+You can now test your bot by going to the web page where you [deployed your bot](publication-fundamentals-publish-channels.md). You'll see the bot start the conversation by automatically showing the updated greeting topic.
 
 
 ### Create a new user topic
@@ -226,7 +226,7 @@ You can now test your bot by goign to the web page where you [deployed your bot]
          }, 
     ```
 
-You can now test your bot by goign to the web page where you [deployed your bot](publication-fundamentals-publish-channels.md). You'll see the bot start the conversation by automatically showing the new topic.
+You can now test your bot by going to the web page where you [deployed your bot](publication-fundamentals-publish-channels.md). You'll see the bot start the conversation by automatically showing the new topic.
 
 
 
