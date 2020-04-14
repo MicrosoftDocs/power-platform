@@ -35,9 +35,9 @@ Environment variables are used to store application and flow configuration data.
 
 All flows in this solution depend on all environment variables' being configured.
 
-1. You may see an error notifying you that environment variables need to be configured. 
+1. You may see an error notifying you that environment variables need to be configured.
    > [!NOTE]
-   > For the Nurture Components solution, two environment variables need to be configured.
+   > For the Nurture Components solution, three environment variables need to be configured.
    
    ![Environment variables need to be updated](media/coe7.png "Environment variables need to be updated")
 
@@ -50,6 +50,7 @@ All flows in this solution depend on all environment variables' being configured
 |------|---------------|
 | Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
 | Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
+| Power User Site URL (SharePoint Site) | The site that your Power Platform Power Users can use to communicate and share files. You will use it here to house the Template Library for them. |
 
 ## Activate the flows
 
@@ -67,29 +68,57 @@ The Nurture Components solution contains five flows:
 
 Follow the same instructions to configure the flows as explained in [Activate the Sync Template flows](setup-core-components.md#activate-the-sync-template-flows).
 
-## (Optional) Create a SharePoint document library
+## Create a SharePoint document library
 
 This library is used to store templates, components, and documents that you want to share with makers in your organization. In this section, you'll create and populate the library by using a set of starter materials.
 
-The Template Catalog depends upon this library.
+The Template Catalog app depends upon this library.
 
-1. Create a document library to store templates on a SharePoint site of your choice. We recommend having a dedicated Power Apps CoE SharePoint site. Ensure that everyone has Read-only and Download access to this library.
+### Create the library
+We have created a helper flow to create the library for you, see the following zip file: *CreateCoETemplateLibaryDocLibraryinSP.zip*
 
-1. Name the library **AppTemplates** to make conversion of the app easy, and add the following metadata columns.
+1. Download and import this zipped flow into your CoE environment using the same pattern as you did to [import the audit log flow](setup-auditlog.md###Import-the-flow-template).
+
+2. Ensure the flow is turned on and run it
+3. When complete, you will have a Doc Lib named *AppTemplates* with the following shown for the default view:
 
    | Column name | Type |
    |----|----|
    |Title | Single line of text |
-   |Description | Multiple lines of text |
+   |DisplayName | Single line of text |
+   |ItemDescription | Multiple lines of text |
    |Featured | Yes/No |
-   |Display Name | Single line of text |
-   |Template Type | Choice |
-   |Category | Choice |
-   |Approved | Yes/No |
+   |TemplateType | Choice |
 
-   The **Template Type** column should have the following options: **App**, **Flow**, **Component**, **Document**.
+   The **TemplateType** column will have the following options: **App**, **Flow**, **Component**, **Image**, **Document**.
 
-1. If you have existing templates that you'd like to share with your makers (for example template apps, brand guidelines, or app and flow samples), upload them to the TemplateApps document library so they show up in the Template Catalog.
+### Load Sample Templates
+We have created a starter set of templates for you, to access them, please do the following:
+
+1. Download the CoE Starter Components zip file from the [GitHub repository](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit) and extract: *CoE Components.zip*
+2. Browse to the newly made Document library:
+![BrowseToLib](media\sp-upload-1.png)
+3. Chose to upload files
+![BrowseToLib](media\sp-upload-2.png)
+4. Select all files in the library downloaded above
+![BrowseToLib](media\sp-upload-3.png)
+5. Back in the Document Library, chose to Quick Edit
+![BrowseToLib](media\sp-upload-4.png)
+6. Select the first row under DisplayName, and  paste the data from the  following into the table.
+
+    | DisplayName | ItemDescription |Featured|TemplateType|
+    |------------------|---------|--------|--------|
+    |Calendar Control|A control for your users to get date values from a calendar for use in their PA Canvas Apps  | Yes |Component|
+    |Components Demo App|App showing the starter components from the CoE Starter Kit  | Yes |App|
+    |Dual Range Slider|A control for your users to get numeric values from a slider control that lets them pick two numbers, for use in their PA Canvas Apps | Yes |Component|
+    |Header Nav Control|A control for your users to easily have a nice header with navigation control for their PA Canvas Apps | Yes |Component|
+    |Admin White Paper|An example document to show how they will appear in the Template Library. This document is also useful to you as an admin. | No |Document|
+
+7. You now have a starter set of components for your power user usage.
+![BrowseToLib](media\sp-upload-5.png)
+
+### Add your own Templates
+If you have existing templates that you'd like to share with your makers (for example template apps, brand guidelines, or app and flow samples), upload them to the TemplateApps document library so they show up in the Template Catalog.
 
 ## Share apps with your organization
 
