@@ -74,10 +74,16 @@ This library is used to store templates, components, and documents that you want
 
 The Template Catalog app depends upon this library.
 
+### Create the site
+If you do not already have a SharePoint Site for the Power Platform Power Users in your tenant, create a new team one now for them to access.
+This site is the one specified in the following environmental variable: *Power User Site URL (SharePoint Site)*
+
+More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+
 ### Create the library
 We have created a helper flow to create the library for you, see the following zip file: *CreateCoETemplateLibaryDocLibraryinSP.zip*
 
-1. Download and import this zipped flow into your CoE environment using the same pattern as you did to [import the audit log flow](setup-auditlog.md###Import-the-flow-template).
+1. Download and import this zipped flow into your CoE environment using the same pattern as you did to [import the audit log flow](setup-auditlog.md###Import-the-flow-template-compressed-(.zip)-package-named-SyncAuditLogs.zip).
 
 2. Ensure the flow is turned on and run it
 3. When complete, you will have a Doc Lib named *AppTemplates* with the following shown for the default view:
@@ -116,6 +122,11 @@ We have created a starter set of templates for you, to access them, please do th
 
 7. You now have a starter set of components for your power user usage.
 ![BrowseToLib](media\sp-upload-5.png)
+
+Ensure you set up the correct permissions for your SharePoint site; we recommend that you view only access to your Power Users.
+
+More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939).
+
 
 ### Add your own Templates
 If you have existing templates that you'd like to share with your makers (for example template apps, brand guidelines, or app and flow samples), upload them to the TemplateApps document library so they show up in the Template Catalog.

@@ -33,11 +33,23 @@ The Core Components solution is required for the Audit and Report Components sol
 
 The *Archive and Clean Up* flows will archive unneeded apps to a SharePoint library. If you intend to use those flows, you need to configure a SharePoint site and document library first.
 
-1. Create a new team site. More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+### Create the site
+If you do not already have a SharePoint Site for CoE Admins in your tenant, create a new team one now for them to access.
+This site will be specified later in the following environmental variable: *Archive Site URL (SharePoint Site)*
 
-1. Create a document library for your team site. More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939). Name the document library **PowerAppsArchive**.
+More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
 
-1. Ensure you set up the correct permissions for your SharePoint site; we recommend that only your admin team have Contribute access to the site.
+### Create the library
+We have created a helper flow to create the library for you, see the following zip file: *CreateCoEArchivalDocLibraryinSP.zip*
+
+1. Download and import this zipped flow into your CoE environment using the same pattern as you did to [import the audit log flow](setup-auditlog.md###Import-the-flow-template-compressed-(.zip)-package-named-SyncAuditLogs.zip).
+
+2. Ensure the flow is turned on and run it
+3. When complete, you will have a Doc Lib named *PowerAppsArchive*
+
+Ensure you set up the correct permissions for your SharePoint site; we recommend that only your admin team have Contribute access to the site.
+
+More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939).
 
 ## Create an Azure AD security group
 
