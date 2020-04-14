@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 03/30/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -17,8 +17,6 @@ search.app:
 ---
 # Set up model-driven apps in Dynamics 365 to use SharePoint Online
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
 When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)] with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, you can:  
   
 - Create, upload, view, and delete documents stored in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] from within model-driven apps in Dynamics 365.  
@@ -28,7 +26,7 @@ When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-
 - Enable non-model-driven apps in Dynamics 365 users, such as customers who want to review a bid, to directly access the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] documents, provided they have the appropriate permissions.  
   
 > [!IMPORTANT]
->  This topic is for organizations who wish to deploy for the first time or upgrade to server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration. After you enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, you can’t revert to the previous client-based authentication method.  
+>  This topic is for organizations who wish to deploy for the first time or upgrade to server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration. After you enable server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, you can't revert to the previous client-based authentication method.  
 > 
 > [!TIP]
 > ![Video symbol](../admin/media/video-thumbnail-4-crm.png "Video symbol") Check out the following video: [Connect to SharePoint Online](https://go.microsoft.com/fwlink/p/?linkid=837790)  
@@ -44,15 +42,15 @@ When you use [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-
   
 1. [!INCLUDE[proc_office365_signin](../includes/proc-office365-signin.md)]  
   
-2. Open the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher, and then click **SharePoint**.  
+2. Open the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher, and then select **SharePoint**.  
   
-3. On the left-side menu, click **Team Site**.  
+3. On the left-side menu, select **Team Site**.  
   
-4. On the Home page, click **SHARE** (upper-right corner).  
+4. On the Home page, select **SHARE** (upper-right corner).  
   
    ![SharePoint Share Settings](../admin/media/sharepoint-share-settings.png "SharePoint Share Settings")  
   
-5. To view the default permissions for your team site, click **lots of people**.  
+5. To view the default permissions for your team site, select **lots of people**.  
   
    ![Share Team site](../admin/media/crm-itpro-crmo365tg2-shareteamsite.png "Share Team site")  
   
@@ -82,24 +80,26 @@ For more information about [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepo
  ![Enable Server-Based SharePoint Integration alert](../admin/media/crm-and-sharepoint-online-enable-now.png "Enable Server-Based SharePoint Integration alert")  
   
 > [!NOTE]
->  If you don’t see the alert and have not previously enabled server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, clear your browser cache or open model-driven apps in Dynamics 365 using [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] with InPrivate browsing to have the alert display again. Once you configure server-based integration, the alert will no longer appear.  
+>  If you don't see the alert and have not previously enabled server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, clear your browser cache or open model-driven apps in Dynamics 365 using [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] with InPrivate browsing to have the alert display again. Once you configure server-based integration, the alert will no longer appear.  
   
-1. Go to **Settings** > **Document Management**, and then select **Enable server-based SharePoint** integration.
+1. In the Power Platform admin center, select an environment. 
 
-2. In the Enable Server-based SharePoint Integration alert click **Next**.  
+2. Select **Settings** > **Integration** > **Document management settings**, and then select **Enable server-based SharePoint integration**.
+
+3. In the Enable Server-based SharePoint Integration alert select **Next**.  
   
-3. Choose **Online** for where your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites are located, and then choose **Next**.  
+4. Choose **Online** for where your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites are located, and then choose **Next**.  
   
    ![Select Online as the SharePoint sites location](../admin/media/crmandsharepointonlineenablestep2.png "Select Online as the SharePoint sites location")  
   
-4. If your model-driven apps in Dynamics 365 are not connected to a [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site, enter the URL (for example <https://contoso.sharepoint.com>) of your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site that you will use for auto folder creation, and then choose **Next**.  
+5. If your model-driven apps in Dynamics 365 are not connected to a [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site, enter the URL (for example <https://contoso.sharepoint.com>) of your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site that you will use for auto folder creation, and then choose **Next**.  
   
    > [!TIP]
-   >  To see your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collections, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], click **Admin centers** > **SharePoint**, and then click **site collections**.  
+   >  To see your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collections, in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Admin centers** > **SharePoint**, and then select **site collections**.  
   
    ![Enter the URL of the SharePoint site](../admin/media/crmandsharepointonlineenablestep3.png "Enter the URL of the SharePoint site")  
   
-5. The URL will be checked for being a valid [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your organization. After enabling server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration you can’t go back to the previous client-side integration. Choose **Enable**.  
+6. The URL will be checked for being a valid [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] online site and for existing in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your organization. After enabling server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration you can't go back to the previous client-side integration. Choose **Enable**.  
 
 ### Next steps  
 Once server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration is enabled you will need to enable the entities you want available for document management integration. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)    
@@ -115,21 +115,21 @@ Once server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short
   
 2. Choose an account, such as the **Adventure Works** sample account.  
   
-3. On the nav bar, click the down arrow next to the account name, and then click **Documents**.  
+3. On the nav bar, select the down arrow next to the account name, and then select **Documents**.  
   
    ![Select Documents for an account](../admin/media/crm-itpro-crmo365tg-seldoc.png "Select Documents for an account")  
   
-4. Click **Upload**, and then browse to a document to upload to the new folder in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)][!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] Team site.  
+4. Select **Upload**, and then browse to a document to upload to the new folder in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)][!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] Team site.  
   
    ![Add a document](../admin/media/crm-itpro-crmo365tg-crmadddoc.png "Add a document")  
   
-5. Select a folder location, and then click **Ok**.  
+5. Select a folder location, and then select **Ok**.  
   
-6. To see the document in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)][!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] Team site, click to the left of the document name (you’ll see a check mark), and then click **Open Location**.  
+6. To see the document in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)][!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] Team site, select to the left of the document name (you'll see a check mark), and then select **Open Location**.  
   
 ![Office 365 Team Site shared document](../admin/media/crm-itpro-crmo365tg-teamdocshare.png "Office 365 Team Site shared document")  
   
-7. Click **Site Contents** to see all the document libraries created for the managed entities you selected.  
+7. Select **Site Contents** to see all the document libraries created for the managed entities you selected.  
   
     The entities you selected to be managed by Document Management appear as document libraries (for example: Account, Article, Case, Lead, Opportunity, Product, Quote, and Sales Literature).  
   
@@ -144,15 +144,15 @@ You can set access at three levels:
 2. Allow limited, web-only access
 3. Block access
 
-For “Block Access” level, only devices that satisfy the AD trust policy defined by the SharePoint or global admin can open SharePoint site and perform operations.
+For "Block Access" level, only devices that satisfy the AD trust policy defined by the SharePoint or global admin can open SharePoint site and perform operations.
 
 ### Impact on model-driven apps in Dynamics 365 and SharePoint Online integration
 
-When SharePoint Online is configured for “Block Access”, model-driven apps in Dynamics 365 receives a 401 UnAuthorized response from SharePoint Online for all operations triggered using server-to-server integration. This is because SharePoint Online rejects the AppAssertedUser token (the claims-based token which is used for server-to-server authentication between model-driven apps in Dynamics 365 and SharePoint Online).
+When SharePoint Online is configured for "Block Access", model-driven apps in Dynamics 365 receives a 401 UnAuthorized response from SharePoint Online for all operations triggered using server-to-server integration. This is because SharePoint Online rejects the AppAssertedUser token (the claims-based token which is used for server-to-server authentication between model-driven apps in Dynamics 365 and SharePoint Online).
 
 ### Work around
 
-As a workaround, you can set the unmanaged devices policy to “Allow full access from desktop apps, mobile apps, and the web” on SharePoint Online.
+As a workaround, you can set the unmanaged devices policy to "Allow full access from desktop apps, mobile apps, and the web" on SharePoint Online.
 
 1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com) as a global or SharePoint admin. If you see a message that you don't have permission to access the page, you don't have Office 365 administrator permissions in your organization.
 2. In the left pane, select **Admin centers** > **SharePoint**.

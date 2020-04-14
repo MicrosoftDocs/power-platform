@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,11 +17,9 @@ search.app:
 ---
 # Set up model-driven apps in Dynamics 365 to use Skype or Skype for Business
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
 When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, your organization can benefit from these capabilities:  
   
-- Real-time communications with customers, colleagues, and team members without leaving model-driven apps in Dynamics 365. Click or tap a person’s phone number to call them.  
+- Real-time communications with customers, colleagues, and team members without leaving model-driven apps in Dynamics 365. Click or tap a person's phone number to call them.  
   
 - Track meetings as Activities.  
   
@@ -30,32 +28,31 @@ When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.
   ![Call a contact with Skype](../admin/media/crm-itpro-crmo365tg2-kimpresence.png "Call a contact with Skype")  
   
 ## Set up Skype in model-driven apps in Dynamics 365
+
+
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Product** > **Features**.  
   
-1. Verify that IM presence is enabled. Go to **Settings** > **Administration** > **System Settings** > **General tab**.  
+4. Under Communications verify that **Skype presence** is set to **On** and **Set the telephony provider** is set to **Use Skype for Business**.
   
-   ![Set the IM presence option](../admin/media/crm-itpro-crmo365tg2-presencesetting.png "Set the IM presence option")  
+5. [!INCLUDE[proc_office365_signin](../includes/proc-office365-signin.md)]  
   
-2. In **System Settings**, set the telephony provider to [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)].  
+6. On the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] page, click or tap **Admin** > **Skype for Business** > **organization**.  
   
-   ![Select Skype or Lync as the provider](../admin/media/crm-itpro-crmo365tg2-lyncprovider.png "Select Skype or Lync as the provider")  
-  
-3. [!INCLUDE[proc_office365_signin](../includes/proc-office365-signin.md)]  
-  
-4. On the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] page, click or tap **Admin** > **Skype for Business** > **organization**.  
-  
-5. Choose the **general** tab. Review and set the presence privacy mode.  
+7. Choose the **general** tab. Review and set the presence privacy mode.  
   
    > [!NOTE]
-   >  Presence information is shown for members of the same email domain you are signed in to with [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)]. For example, if you are signed in with someone@contoso.com, you will see presence for other @contoso.com users.  
+   > Presence information is shown for members of the same email domain you are signed in to with [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)]. For example, if you are signed in with someone@contoso.com, you will see presence for other @contoso.com users.  
    > 
-   >  Instruct users to add the following as trusted sites in their browser:  
+   > Instruct users to add the following as trusted sites in their browser:  
    > 
    > - https://*.dynamics.com  
    > - https://*.lync.com  
    > - https://*.sharepoint.com  
    > - https://login.microsoftonline.com  
   
-6. Choose the **external communications** tab. Review and set the **external access** and public **IM connectivity** settings.  
+8. Choose the **external communications** tab. Review and set the **external access** and public **IM connectivity** settings.  
   
    ![Lync admin center external communications settings](../admin/media/crm-itpro-crmo365tg2-lyncsettingsexternal.png "Lync admin center external communications settings")  
   

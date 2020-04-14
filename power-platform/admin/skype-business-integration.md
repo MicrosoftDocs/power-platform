@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Skype for Business and Skype integration
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] (formerly known as [!INCLUDE[pn_Microsoft_Lync](../includes/pn-microsoft-lync.md)]) or [!INCLUDE[pn_skype](../includes/pn-skype.md)], you can take advantage of connectivity features like click-to-call or checking user availability from within model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
   
@@ -38,9 +36,9 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
   
   **Client requirements and configuration**  
   
-- To use click-to-call, [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] must be selected as the telephony provider. You can set this on the **General** tab at **Settings** > **Administration** > **System Settings**.  
+- To use click-to-call, [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] must be selected as the telephony provider. You can set this by selecting an environment in the Power Platform admin center, and then select **Settings** > **Product** > **Features**. Under **Communications** review the Skype settings.  
   
-- By default, [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] presence is enabled in model-driven apps in Dynamics 365. System administrators can enable or disable presence in model-driven apps in Dynamics 365. To do this, click **Settings** > **Administration** > **System Settings** and on the **General** tab, **Set the IM presence option** to **Yes** or **No**.  
+- By default, [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] presence is enabled in model-driven apps in Dynamics 365. System administrators can enable or disable presence in model-driven apps in Dynamics 365. To do this, set **Skype presence** to **On** or **Off**.  
   
 - Each user must have the [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] client installed and running on their PC.  
   
@@ -67,7 +65,7 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
   
 - Each user must have the [!INCLUDE[pn_skype_for_windows](../includes/pn-skype-for-windows.md)] desktop client or the [!INCLUDE[pn_skype_for_windows_8](../includes/pn-skype-for-windows-8.md)] app installed and running on their PC or [!INCLUDE[pn_windows8](../includes/pn-windows8.md)] device.  
   
-- **Skype** must be selected as the telephony provider. You can set this on the **General** tab at **Settings** > **Administration** > **System Settings**.  
+- **Skype** must be selected as the telephony provider. Select an environment in the Power Platform admin center, and then select **Settings** > **Product** > **Features**. Under **Communications** set **Set the telephony provider** to **Use Skype for Business**. 
   
 ### Supported devices and web browsers when you use Skype with model-driven apps in Dynamics 365
   

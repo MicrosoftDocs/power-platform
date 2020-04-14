@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/27/2020
+ms.date: 03/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -99,9 +99,6 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](https://docs.microsoft.com/power-platform/admin/manage-teams#about-group-teams). The service does not allow access to users who do not have at least one security role.   
 
-> [!NOTE]
-> By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
-
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Users**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
@@ -119,6 +116,9 @@ Check your security role:
      Only the security roles available for that user's business unit are displayed.  
   
 4.  In the **Manage User Roles** dialog box, select the security role or roles you want for the user or users, and then select **OK**.  
+
+> [!NOTE]
+> By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
 ## (Optional) Assign an administrator role  
  You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. You might decide to assign the global administrator role to a second person in your organization for times when you are not available.  

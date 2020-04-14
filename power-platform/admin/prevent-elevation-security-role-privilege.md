@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Create an administrative user and prevent elevation of security role privilege
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 The [copy security role method](copy-security-role.md) is a quick and easy way to create a new security role based on an existing set of privileges. However, security role privileges can change with product updates which could render the new security role out-of-date and might not function as expected. This is especially true in the case where you want to allow [a certain group of administrative users](create-users-assign-online-security-roles.md#create-an-administrative-user-account) to assign security roles to your users.  We recommend you not copy the System Administrator security role and assign it to users, since this would allow the users to elevate the assigned user to System Administrators.  In addition, newer privileges from product updates will not be automatically added to the copied System Administrator security role resulting in the role having insufficient privileges to continue to assign security roles.
 
@@ -33,9 +31,11 @@ The following steps describe a method to create a new custom security role with 
 
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
 
-2. Go to **Settings** > **Security** > **Security Roles**, and then choose **New**.
-3. Enter a role name, and then select the **Business Management** tab.
-4. Scroll down to the **Entity** list and set the **Security Role** entity privileges as follows:
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Users + permissions** > **Security roles**, and then select **New**.
+4. Enter a role name, and then select the **Business Management** tab.
+5. Scroll down to the **Entity** list and set the **Security Role** entity privileges as follows:
 
    |Privilege  |Setting  |
    |---------|---------|
@@ -49,15 +49,16 @@ The following steps describe a method to create a new custom security role with 
 
    ![Security Role](media/security-role.png)
 
-5. Choose **Save and Close**.
+6. Select **Save and Close**.
 
 ### Assign the new security role to an administrative user
 
-1. Go to **Settings** > **Security** > **Users**.
-2. Select an administrative user and then choose **Manage Roles**.
-3. Select the new security role.
-4. Select all the security roles that the administrative user can assign to other users.
-5. Choose **OK**.
+1. In the Power Platform admin center, select an environment. 
+2. Select **Settings** > **Users + permissions** > **Users**.
+3. Select an administrative user and then choose **Manage Roles**.
+4. Select the new security role.
+5. Select all the security roles that the administrative user can assign to other users.
+6. Choose **OK**.
 
 > [!NOTE]
 > Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, are designed to prevent any elevation of security role privileges. Therefore, the administrative user **cannot** assign System Administrator, System Customizer, or any security roles that have a higher privilege.

@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 03/24/2020
+ms.date: 04/01/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -158,15 +158,15 @@ To provision a [sandbox environment](sandbox-environments.md), you change a prod
 
 5. Select **Save**.
 
-## Setting an environment update cadence
-You can indicate how often you would prefer an environment to receive updates to certain Power Platform services. You have two options to choose from when creating an environment.
+## Setting an environment refresh cadence
+You can indicate how often you would prefer an environment to receive updates and features to certain Power Platform services. You have two options to choose from after creating an environment.
 
 |Service  |Setting  |Description  |
 |---------|---------|---------|
 |Canvas app authoring |Frequent     | Get access the latest updates and newest features multiple times a month.|
 |                     |Moderate     | Get access to updates and features at least once a month.|
 
-The update cadence does not change when you will get updates for:
+The refresh cadence does not change when you will receive updates for:
 - Power Platform
 - Dynamics 365 Sales
 - Dynamics 365 Customer Service
