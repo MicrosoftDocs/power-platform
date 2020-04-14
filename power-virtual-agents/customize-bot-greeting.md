@@ -26,12 +26,12 @@ In this blog, you can learn how to do that using a custom canvas. You can copy-p
 
 ## Configure the canvas with your bot
 
-To make your bot start the conversation do the following,
+**To make your bot start the conversation:**
 
 1.	[Create and publish a bot](fundamentals-get-started.md).
 
 2.	Copy-paste the HTML code below and save it as *index.html*.
-    You can also cut and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
+    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
 
     ```HTML
       <!DOCTYPE html>
