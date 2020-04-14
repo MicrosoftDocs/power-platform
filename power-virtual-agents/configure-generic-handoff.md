@@ -21,8 +21,10 @@ Power Virtual Agents lets you hand over bot conversations seamlessly and context
 With some custom development, you can configure your bot to hand-off conversations to any engagement hub. This guide describes how you can do this.
 
 ## Prerequisites
-- You need to have [built a bot using Power Virtual Agents](authoring-first-bot.md)
-- You need an engagement hub that can interacting programmatically using APIs or SDK
+- You need to have [built a bot using Power Virtual Agents](authoring-first-bot.md)  
+
+- You need an engagement hub that can interacting programmatically using APIs or SDK  
+
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 >[!IMPORTANT]
@@ -35,10 +37,15 @@ With some custom development, you can configure your bot to hand-off conversatio
 A full hand off to an engagement hub follows this pattern:
 
 1. An end user interacts with the engagement hub's chat canvas.
+
 1. The engagement hub routes the incoming chat through built-in chat routing capabilities to a bot.
+
 1. A custom adapter relays the incoming chat messages from the engagement hub to a Power Virtual Agents bot.
+
 1. Once the end user [triggers hand-off](advanced-hand-off.md#triggering-hand-off-to-a-live-agent), Power Virtual Agents starts hand-off with full conversational context.
+
 1. The custom adapter intercepts the hand-off message, parses the full conversation context, and seamlessly routes the escalated conversation to a skilled human agent, based on availability.
+
 1. The end user's chat is seamlessly and contextually handed off to a human agent who can resume the conversation.
 
 To hand off the conversation to a human agent, you need to build a custom hand-off adapter.

@@ -29,6 +29,8 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 2. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
 
+You can also combine the customized canvas with [a custom greeting](customize-bot-greeting.md).
+
 
 ## Prerequisites
 
@@ -48,8 +50,8 @@ First, you need to configure where you're deploying your bot canvas.
 
 1.	[Create and publish a bot](fundamentals-get-started.md).
 
-2.	Copy-paste the HTML code below and save it as *index.html*.
-    You can also cut and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
+2.	Copy and paste the HTML code below and save it as *index.html*.  
+    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
 
     ```HTML
     <!DOCTYPE html>
@@ -148,7 +150,7 @@ First, you need to configure where you're deploying your bot canvas.
 5.	Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom canvas.
 
 6.	Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that your Bot Id has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
+    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
 
 ### Customize the bot icon, background color, and name
 
