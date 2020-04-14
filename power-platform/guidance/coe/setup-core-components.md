@@ -123,7 +123,7 @@ After importing the solution, you may see an error at the top, notifying you tha
     |------|---------------|
     |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
-    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See provided default value](code-samples/css/default-value-eMail-Header-Style.md)
+    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See provided default value](code-samples/css/default-value-eMail-Header-Style.md#Default-Value:-eMail-Header-Style)
 
 
 ## Activate the Sync Template flows

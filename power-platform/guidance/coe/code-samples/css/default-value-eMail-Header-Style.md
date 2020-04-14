@@ -4,10 +4,10 @@ description: "Allows the reader to easily view the default value that has been p
 author: jeneferm-msft
 ---
 
-## Default Value of eMail Header Style Environmental Variable
+# Default Value: eMail Header Style
 
 ### Return to Core Solution Setup Docs
-[Setup Core Components](../../setup-core-components.md##Update-environment-variables)
+[Setup Core Components](../../setup-core-components.md##update-environment-variables)
 
 ### CSS Style used in Default Value  
 ```css
