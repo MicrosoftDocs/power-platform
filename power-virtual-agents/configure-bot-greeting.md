@@ -197,7 +197,7 @@ You can now test your bot by goign to the web page where you [deployed your bot]
 ### Create a new user topic
 
 >[!WARNING]
->Using a user topic to start a conversation will increase your [billed sessions](https://docs.microsoft.com/en-us/power-virtual-agents/analytics-billed-sessions#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+>Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 
 1. Select **Topics** on the side navigation pane.
