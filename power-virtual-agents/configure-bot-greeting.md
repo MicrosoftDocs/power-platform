@@ -1,6 +1,6 @@
 ---
-title: "Customize the Power Virtual Agents web chat canvas"
-description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
+title: "Automatically start a Power Virtual Agents bot conversation"
+description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: ""
 ms.date: 4/17/2020
 ms.service:
