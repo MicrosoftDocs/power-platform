@@ -16,9 +16,6 @@ search.app:
   - Powerplatform
 ---
 
-<!--See question on line 45. -->
-
-
 # Manage Dynamics 365 apps
 
 You can now install, configure, and manage Dynamics 365 apps in the Power Platform admin center.
@@ -40,10 +37,6 @@ Follow these steps to see a list of all licensed applications for your tenant.
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Resources** > **Dynamics 365 apps** from the left-side menu.
-
-
-<!--In the following sentence, should it be "configured" instead of "configure"? -->
-
 
    You'll see a list of installed or available to install or configure Dynamics 365 apps for the signed-in user and their tenant. An admin will see all installed or available to install apps.
 
