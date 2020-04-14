@@ -77,7 +77,7 @@ The Template Catalog app depends upon this library.
 ### Create the library
 We have created a helper flow to create the library for you, see the following zip file: *CreateCoETemplateLibaryDocLibraryinSP.zip*
 
-1. Download and import this zipped flow into your CoE environment using the same pattern as you did to [import the audit log flow](setup-auditlog.md###Import-the-flow-template-compressed-(.zip)-package-named-SyncAuditLogs.zip).
+1. Download and import this zipped flow into your CoE environment using the same pattern as you did to [import the audit log flow](setup-auditlog.md###Import-the-flow-template).
 
 2. Ensure the flow is turned on and run it
 3. When complete, you will have a Doc Lib named *AppTemplates* with the following shown for the default view:
