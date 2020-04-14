@@ -29,7 +29,7 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 2. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
 
-You can also combine the customized canvas with [a custom greeting](customize-bot-greeting.md).
+You can also combine the customized canvas with [configuring your bot to automaticallly start the conversation](configure-bot-greeting.md).
 
 
 ## Prerequisites

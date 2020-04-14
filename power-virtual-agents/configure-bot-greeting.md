@@ -2,12 +2,13 @@
 title: "Customize the Power Virtual Agents web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: ""
-ms.date: 3/29/2020
+ms.date: 4/17/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
-author: digantak
+author: iaanw
 ms.author: iawilt
+ms.reviewer: digantak
 manager: shellyha
 ms.custom: "customization"
 ms.collection: virtualagent
@@ -20,7 +21,7 @@ By default, chatbots created with Power Virtual Agents will load without a greet
 
 However, with some simple modifications to the web page where you [deploy your bot](publication-fundamentals-publish-channels.md), you can make the bot start the conversation with a customized greeting.
 
-For example, you could configure your bot so that as soon as a user loads the site where the bot is, the bot says "Hi, I’m Botty, a virtual agent."
+For example, you could have your bot say "Hi, I’m Botty, a virtual agent" as soon a the bot loads.
 
 First, you'll need to deploy a custom canvas that includes arguments that trigger the greeting. By default, the custom canvas calls the default system greeting topic. You can, however, create a new topic to be used as the greeting, although you will need to modify the custom canvas code.
 
@@ -212,7 +213,7 @@ You can now test your bot by going to the web page where you [deployed your bot]
 
 1. [**Publish** your bot](publication-fundamentals-publish-channels.md).
 
-1. Configure the custom canvas code in the *index.html* file to call the topic you created. You need to enter the trigger phrase that you used for the topic. In this example, update the value of `text` to `start conversation` as shown in the following snippet:
+1. Configure the custom canvas code in the *index.html* file to call the topic you created by entering the trigger phrase that you used for the topic. In this example, update the value of `text` to `start conversation` as shown in the following snippet:
 
     ```js
          payload: {
