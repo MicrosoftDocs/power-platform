@@ -88,7 +88,7 @@
         - name: Free up storage space
           href: free-storage-space.md
       - name: View and manage resources
-     #   href: view-manage-resources.md
+        href: view-manage-resources.md
         items:
         - name: Manage Dynamic 365 apps
           href: manage-apps.md

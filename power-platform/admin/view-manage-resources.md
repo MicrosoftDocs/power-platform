@@ -16,8 +16,13 @@ search.app:
   - Powerplatform
 ---
 # View and manage resources 
+This section covers managing your apps in the Power Platform admin center.
 
-[Manage Dynamics 365 apps](manage-apps.md)
+- [Manage Dynamics 365 apps](manage-apps.md)
+- [Manage Power Apps](admin-manage-apps.md)
 
-[Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
+<!-- 
+- Flow topic
+- [Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
 
+-->
