@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Work with mail merge templates
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 You can use mail merge templates with Office Word to create customer-ready letters, faxes, e-mail messages, and quotes.  
   
@@ -31,11 +29,11 @@ You can use mail merge templates with Office Word to create customer-ready lette
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_templates](../includes/proc-settings-templates.md)]  
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Templates** > **Mail merge templates**.  
   
-3. Click **Mail Merge Templates**.  
-  
-4. To create a new mail merge template, click **New**.  
+4. To create a new mail merge template, select **New**.  
   
 5. In the **Mail Merge Templates** form, enter a **Name** and an **Associated Entity** (record type).  
   
@@ -45,11 +43,11 @@ You can use mail merge templates with Office Word to create customer-ready lette
   
 8. If you have enabled additional languages, you can select one for the template.  
   
-9. To attach the template, click **Browse**, search for the template on your computer, and then click **Attach**. Only .xml documents can be uploaded.  
+9. To attach the template, select **Browse**, search for the template on your computer, and then select **Attach**. Only .xml documents can be uploaded.  
   
-10. When you’re done, click **Save and close**.  
+10. When you're done, select **Save and close**.  
   
 > [!NOTE]
->  To change a personal template to a shared one, after you save the record on the template form, on the **More Actions** menu, click **Make Available to Organization**. To revert the template to a personal one, click **Make Personal**.  
+>  To change a personal template to a shared one, after you save the record on the template form, on the **More Actions** menu, select **Make Available to Organization**. To revert the template to a personal one, select **Make Personal**.  
   
 ### See also  
