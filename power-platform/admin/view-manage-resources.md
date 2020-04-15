@@ -18,8 +18,7 @@ search.app:
 # View and manage resources 
 This section covers managing your apps in the Power Platform admin center.
 
-<!-- This was created for fwlink 2126968. Don't delete.
--->
+<!-- This was created for fwlink 2126968. Don't delete. -->
 
 - [Manage Dynamics 365 apps](manage-apps.md)
 - [Manage Power Apps](admin-manage-apps.md)
