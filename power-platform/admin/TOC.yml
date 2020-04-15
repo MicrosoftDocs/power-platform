@@ -77,7 +77,7 @@
           href: analytics-powerapps.md
         - name: What's new for storage
           href: whats-new-storage.md
-        - name: Capacity # New capacity storage model 
+        - name: New capacity storage model 
           href: capacity-storage.md
         - name: Legacy capacity storage model
           href: legacy-capacity-storage.md
