@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/27/2020
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Security enhancements: User session and access management 
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 You can use security enhancements to better secure the model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. 
 
@@ -61,8 +59,11 @@ For environments that require different session timeout values, administrators c
 
 ## Configure session timeout 
 
-1. In model-driven apps in Dynamics 365, choose **Settings** > **Administration** > **System Settings** > **General** tab.
-2. Under **Set session timeout**, set the values to apply to all your users.
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Product** > **Privacy + Security**.  
+
+3. Set **Session Expiration** and **Inactivity timeout**. These settings apply to all users.
 
 > [!NOTE]
 > Default values are:
@@ -91,8 +92,11 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 
 ## Configure inactivity timeout
 
-1. In model-driven apps in Dynamics 365, choose **Settings** > **Administration** > **System Settings** > **General tab**.
-2. Under **Set inactivity timeout**, set the values to apply to all your users.
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Product** > **Privacy + Security**.  
+
+3. Set **Session Expiration** and **Inactivity timeout**. These settings apply to all users.
 
 > [!NOTE]
 > Default values are:

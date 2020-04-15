@@ -17,8 +17,7 @@ search.app:
 ---
 # Use Word templates to create standardized documents
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
+<!-- legacy procedure -->
 
  After you create and import [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] templates into model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, with one click users can generate standardized documents automatically populated with data. This feature has some special considerations you should know about to successfully create [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates.  
 
@@ -48,7 +47,7 @@ search.app:
 ### Where you can create a template  
  There are three places in model-driven apps in Dynamics 365 where you can create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template:  
 
-- **From the Settings page**. Go to **Settings** > **Templates** > **Document Templates** > **New**(![New or Add button](../admin/media/nb-ua-r1-plus.png "New or Add button")). You’ll need sufficient permissions to access to the Settings page, such as System Administrator or System Customizer.  
+- **From the Settings page**. Go to **Settings** > **Templates** > **Document Templates** > **New**(![New or Add button](../admin/media/nb-ua-r1-plus.png "New or Add button")). You'll need sufficient permissions to access to the Settings page, such as System Administrator or System Customizer.  
 
 - **From a record**. Open a record such as an account in Sales. Go to **Sales** > **Client_Accounts** > **My Active Accounts**. Click an account to open it, and then click **More** (**…**) > **Word Templates** > **Create Word Template**. Templates created here are personal and available only to the user creating the template.  
 
@@ -86,7 +85,7 @@ search.app:
  The relationships you select on this screen determine what entities and fields are available later when you define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template. Only select relationships you need to add data to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 
 > [!NOTE]
->  To ensure documents download in a timely matter, there is an upper limit of 100 for the number of related records returned for each relationship. For example, if you’re exporting a template for an account, and you want to include a list of its contacts, the document will return at most 100 of the account’s contacts.  
+>  To ensure documents download in a timely matter, there is an upper limit of 100 for the number of related records returned for each relationship. For example, if you're exporting a template for an account, and you want to include a list of its contacts, the document will return at most 100 of the account's contacts.  
 
 ### Download the template  
  Click **Download Template** on the **Select Entity** page to create a [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] file on your local computer with the exported entity included as XML data.  
@@ -116,7 +115,7 @@ search.app:
 
 <a name="BKMK_Important"></a>   
 ## Important! A known issue and how to avoid it  
- There’s a known issue with model-driven apps in Dynamics 365 apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. In the next section, you’ll be adding XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
+ There's a known issue with model-driven apps in Dynamics 365 apps-generated [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates and [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. In the next section, you'll be adding XML content control fields to the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 
 > [!WARNING]
 >  A few things  can cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze, requiring you to use [!INCLUDE[pn_ms_TaskManager_short](../includes/pn-ms-taskmanager-short.md)] to stop [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]:  
@@ -154,7 +153,7 @@ search.app:
 
 4. Click **OK**.  
 
-   If you followed the above recommendations, you’re ready to define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
+   If you followed the above recommendations, you're ready to define the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template.  
 
 <a name="BKMK_DefineTemplate"></a>  
 
@@ -169,12 +168,12 @@ search.app:
 
    ![The default XML Mapping schema](../admin/media/word-template-upload-dynamics-365.png "The default XML Mapping schema")  
 
-2. Select the XML schema. It will begin with “urn:microsoft-crm/document-template/”.  
+2. Select the XML schema. It will begin with "urn:microsoft-crm/document-template/".  
 
    ![Select the XML schema](../admin/media/word-template-select-xml-schema.png "Select the XML schema")  
 
    > [!IMPORTANT]
-   >  If you have frequent accidental edits that cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze or have performance degradation, be sure to turn off the AutoCorrect options according to the section: “A known issue and how to avoid it”.  
+   >  If you have frequent accidental edits that cause [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] to freeze or have performance degradation, be sure to turn off the AutoCorrect options according to the section: "A known issue and how to avoid it".  
 
 3. Expand the entity, right-click the entity field, and then click **Insert Content Control** > **Plain Text**.  
 
@@ -248,7 +247,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 <a name="BKMK_Generate"></a>
 
 ## Step 5: Generate a document from the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template  
- To use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template you’ve created, do the following:  
+ To use the [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] template you've created, do the following:  
 
 1. Open a record with information you want to create a document. For example, open a customer account record in Sales.  
 
@@ -269,7 +268,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
 
  ![These templates are included with model-driven apps in Dynamics 365](../admin/media/template-bundled.png "These templates are included with model-driven apps in Dynamics 365")  
 
- The sample [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates were created with a particular record type (entity). You’ll only be able to apply the template to records of the same record type.  
+ The sample [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] templates were created with a particular record type (entity). You'll only be able to apply the template to records of the same record type.  
 
 |Name|Entity|  
 |----------|------------|  
