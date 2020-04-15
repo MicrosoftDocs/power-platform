@@ -17,7 +17,7 @@ ms.author: radhij
 
 # International availability of Power Platform
 
-We are very excited to share the downloadable [Infrastructure availability PDF](https://aka.ms/dynamics_365_international_availability_deck) with you.
+We are very excited to share the downloadable [Infrastructure and availability PDF](https://aka.ms/dynamics_365_international_availability_deck) with you.
 
 The purpose of this document is to provide comprehensive information about product availability and customer data locations for the Power Platform family of applications. This document has information about the following:
 - Product availability
