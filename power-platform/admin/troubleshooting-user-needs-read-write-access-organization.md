@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,13 +17,11 @@ search.app:
 ---
 # Troubleshooting: User needs read-write access
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+You don't have sufficient permissions to access model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. A system administrator will need to do the following:  
+  
+1. In the Power Platform admin center, select an environment. 
 
-You don’t have sufficient permissions to access model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. A system administrator will need to do the following:  
-  
-1. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
-  
-2. Choose **Users**.  
+2. Select **Settings** > **Users + permissions** > **Users**.  
   
 3. Open the user record.  
   
