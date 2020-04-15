@@ -178,7 +178,7 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 
 ## FAQ
 
-### Indexes and database storage usage
+### Do indexes impact database storage usage?
 Database storage includes both the database records as well as index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Common Data Service is constantly working on ways to increase efficiency and adopt new technologies that improve the experience and optimize storage capacity.  Compressing indexes to reduce storage is an example of these optimizations. Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-box, or part of an update or solution installation)
