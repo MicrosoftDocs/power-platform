@@ -75,12 +75,12 @@
           href: analytics-flow.md
         - name: Power Apps analytics
           href: analytics-powerapps.md
-     #   - name: What's new for storage
-     #     href: whats-new-storage.md
+        - name: What's new for storage
+          href: whats-new-storage.md
         - name: Capacity # New capacity storage model 
           href: capacity-storage.md
-    #    - name: Legacy capacity storage model
-    #      href: legacy-capacity-storage.md
+        - name: Legacy capacity storage model
+          href: legacy-capacity-storage.md
         - name: View self-service capacity
           href: view-self-service-capacity.md
         - name: Add-on capacity management
