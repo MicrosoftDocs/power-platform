@@ -2,7 +2,7 @@
 title: "Work with variables in Power Virtual Agents"
 description: "Use variables to utilize custom and prebuilt entities to allow for customized conversations in your bot."
 keywords: ""
-ms.date: 11/9/2019
+ms.date: 4/15/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article

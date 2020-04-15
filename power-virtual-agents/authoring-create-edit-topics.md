@@ -2,7 +2,7 @@
 title: "Use topics to design a Power Virtual Agents bot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: ""
-ms.date: 11/14/2019
+ms.date: 4/15/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
