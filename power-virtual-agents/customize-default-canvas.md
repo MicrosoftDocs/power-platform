@@ -26,7 +26,7 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 1. You can [customize the default canvas](#customize-the-default-canvas-simple) with JavaScript-based styling in the HTML code for the website where you deploy your bot.  
     Customizing the default canvas is useful if you want to make small customizations without investing in code development.
 
-2. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
+2. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
 
 
@@ -228,7 +228,7 @@ We recommend starting with one of these samples custom-built to work with Power 
 
   ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload.png)
 
-Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Azure Bot Framework.
+Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Bot Framework.
 
 ### Customize canvas using `stylesetOptions`
 
@@ -238,7 +238,7 @@ As with customizing the default canvas, you can use `styleSetOptions` to customi
 
 In order to host your custom canvas, deploy all files to a web app.
 
-## Related links
+## See also
 
--  [Azure Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
+-  [Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
 -  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)

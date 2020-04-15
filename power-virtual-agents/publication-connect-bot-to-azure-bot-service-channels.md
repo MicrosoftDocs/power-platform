@@ -14,7 +14,7 @@ ms.collection: virtualagent
 ---
 
 
-# Add Power Virtual Agent bot to Azure Bot Service channels
+# Add Power Virtual Agents bot to Azure Bot Service channels
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -138,7 +138,7 @@ The following example uses samples from the [relay bot sample code](https://gith
     /// </summary>
     public class PowerVirtualAgentsConversation
     {
-        public string ConversationtId { get; set; } // The Power Virtual Agent conversation ID retrieved from step 1
+        public string ConversationtId { get; set; } // The Power Virtual Agents conversation ID retrieved from step 1
 
         public string Token { get; set; } // The DirectLine token retrieved from step 1
 

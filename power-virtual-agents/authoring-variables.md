@@ -33,7 +33,7 @@ Power Virtual Agents uses *[entities](advanced-entities-slot-filling.md)* to und
 
 Each entity or variable type maps to a base type. These are listed in the following table. 
 
-The base type defines the operators that can be used for the corresponding variable when constructing a logical expression. It also defines whether a variable can be used to feed to an input parameter in a [flow](how-to-flow.md) or Azure Bot Framework Skill action node as an input parameter. 
+The base type defines the operators that can be used for the corresponding variable when constructing a logical expression. It also defines whether a variable can be used to feed to an input parameter in a [flow](advanced-flow.md) or [Bot Framework Skill](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) as an input parameter. 
 
 For example, a **boolean** base type maps to an operator "is equal to" with possible values being true or false, while a **number** base type will give you a series of numeric operators such as "is equal to", "is greater than", or "is greater than or equal to", and so on.
 
@@ -101,7 +101,7 @@ When a variable is automatically created, a default name will be given. You rena
 ![Image 3 - Rename a variable](media/Rename_a_variable_(draft).PNG)
 
 ## Use variables in action nodes
-When using a variable in an action node, if a variable's base type matches with a parameter type specified for a flow or Azure Bot Framework Skill, it will show up as a candidate to be used to feed to this parameter. The output from the action nodes will generate new variables as well.  
+When using a variable in an action node, if a variable's base type matches with a parameter type specified for a flow or Bot Framework Skill, it will show up as a candidate to be used to feed to this parameter. The output from the action nodes will generate new variables as well.  
 
 ![Image 4 - Use entity in an action node](media/User_a_variable_in_Skills(draft).PNG)
 

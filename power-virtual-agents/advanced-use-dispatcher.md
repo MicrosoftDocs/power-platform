@@ -12,7 +12,7 @@ ms.reviewer: iaanw
 manager: shellyha
 ---
 
-# Use an Azure Bot Framework bot with Power Virtual Agents
+# Use a Microsoft Bot Framework bot with Power Virtual Agents
 
 This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with a Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and integrated development environments (IDEs). 
 
@@ -161,7 +161,7 @@ Train and recreate the dispatcher app and add your exported topics and utterance
 
 The following steps require you to add code that registers your new dispatch endpoint and trigger it whenever a user's utterance matches intent. We are using the [sample provided by the Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/14.nlp-with-dispatch).
 
-1.  Update `appsettings.json` in your dispatcher app to include the new endpoint for Virtual Agent.
+1.  Update `appsettings.json` in your dispatcher app to include the new endpoint for your Power Virtual Agents bot.
   
     ```csharp
     {

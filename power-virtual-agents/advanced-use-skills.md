@@ -26,7 +26,7 @@ Power Virtual Agents enables you to extend your bot using Microsoft Bot Framewor
 ## Add a Skill to bot conversations
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy the Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
-Next, [register a Skill in Power Virtual Agent](configuration-add-skills.md).
+Next, [register a Skill in Power Virtual Agents](configuration-add-skills.md).
 
 **Add a Skill into a conversation:**
 

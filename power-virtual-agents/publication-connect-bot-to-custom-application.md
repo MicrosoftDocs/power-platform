@@ -72,7 +72,7 @@ The instructions in this document reference the following:
 - [Contextual variables available upon hand-off](advanced-hand-off.md#contextual-variables-available-upon-hand-off)
 - [Microsoft Bot Framework Activity](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md)
 
-### Retrieve your Power Virtual Agent bot parameters
+### Retrieve your Power Virtual Agents bot parameters
 To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
 
 1. Copy your bot's name in Power Virtual Agents.
