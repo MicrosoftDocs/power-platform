@@ -58,7 +58,7 @@ For now, if you exceed your storage capacity, you will receive notifications ale
 
 
 ### See also
-[Legacy storage capacity](legacy-capacity-storage.md) <br />
+[Legacy storage capacity](legacy-capacity-storage.md) 
 [Common Data Service storage capacity](capacity-storage.md) <br />
 [Free up storage space](free-storage-space.md) <br />
 [Delete and recover environments](delete-environment.md)
