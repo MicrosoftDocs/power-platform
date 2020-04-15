@@ -22,7 +22,7 @@ If you purchased storage in or after April 2019, or you have a mix of before and
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data across their organization together. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
 > [!NOTE]
-> For introductory licensing information on the new capacity analytics model, see [Power Apps plans](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> For licensing information, see the [Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
 > Common Data Service storage capacity is not available for Dynamics 365 US Government – GCC and GCC High, DOD, and Microsoft Dynamics 365 online services operated by 21Vianet.
 
@@ -129,6 +129,9 @@ For now, if you exceed your storage capacity, you will receive notifications ale
 
 ## Example storage capacity scenarios
 
+You should be within limits for your entitled capacity, for database log, and file. If capacity is over utilized, you should buy more capacity or free up capacity. However, if you are over utilizing the database, log, or file capacity, review the below scenarios to understand when enforcement will be applied.
+
+
 ### Scenario 1: Database storage is over capacity
 
 |Type  |Entitled  |Consumed  |
@@ -137,7 +140,7 @@ For now, if you exceed your storage capacity, you will receive notifications ale
 |**Log**     |  10GB       | 5GB        |
 |**File**     | 400GB        | 200GB        |
 
-This tenant has 10 GB extra database capacity and is considered within capacity for entitlement storage. There is no deficit.
+This tenant is 10 GB over in database usage. Despite 200GB excess file storage, the tenant is considered in deficit.
 
 ### Scenario 2: Log storage is over capacity
 
@@ -157,7 +160,7 @@ This tenant is 10GB over in log usage and has only 5GB available in database cap
 |**Log**     |  10GB       | 20GB        |
 |**File**     | 400GB        | 200GB        |
 
-This tenant is 10GB over in log usage but has 20GB available in database capacity. Therefore, there is no deficit.
+This tenant is 10GB over in log usage but has 20GB available in database capacity. Therefore, there is no deficit. Note, file storage excess entitlement cannot be used to compensate deficits in log or database storage.
 
 ### Scenario 4: File storage is over capacity
 
@@ -176,7 +179,7 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 ## FAQ
 
 ### Indexes and database storage usage
-Database storage includes both the database records as well as index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. An increased size or number of indexes will consume additional storage on the database. Common causes for an increase in index size are:
+Database storage includes both the database records as well as index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. Fluctuation in database size, represented by an increase or decrease in the size or number of indexes, affects storage consumption. Common Data Service is constantly working to compress the index which is displayed to users.  Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-box, or part of an update or solution installation)
 - Data volume or complexity changes
@@ -202,22 +205,11 @@ You will see the report for the new licensing model.
 ### I just bought the new capacity-based licenses. How do I provision an environment using this model?
 You can provision environments through the Power Platform admin center. For details, see [Create and manage environments in the Power Platform admin center](create-environment.md).
 
-### I'm an existing customer and have not purchased the new offers. The capacity report indicates I'm overusing the database/file/log, what should I do?
-If database, you should not exceed the available database capacity. Please consider [freeing storage space](free-storage-space.md) or purchase more storage capacity. 
-
-If file and log, then there is no immediate action required. At renewal, you can use this report to get the right amount of capacity for database, file, and log.
-
 ### I'm a new customer and I recently purchased with the new offers. My usage of database/log/file is showing red. What should I do?  
 Consider buying additional capacity using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
 
 ### Where can I read more about the new capacity offers?
 Download the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) to learn more.
-
-### I am an existing customer, will I be immediately impacted by this change?
-No, there is no immediate change for existing customers as your current term will be honored for the duration of your agreement. 
-
-### I'm an existing customer with an EA agreement. Should I go buy file and log capacity?
-If you have an existing agreement, you are not impacted with the current change. We have added file and log capacity to your current entitlement which reduces your database capacity. Until renewal, you can continue with the current plan.
 
 ### I'm an existing customer and my renewal is coming up. Will I be impacted?
 Customers who renew existing subscriptions can choose to continue to transact using the existing offers for a certain period of time. Please contact your Microsoft partner or Microsoft sales team for details.
@@ -237,9 +229,6 @@ Log and files data usage is not expected to be exactly the same size as when the
 ### Capacity report shows the entitlement breakdown by per license, but I have more licenses in my tenant and not all of them are listed in the breakdown, why?
 Not all licenses give per user entitlement. For example, the team member license does not give any per user database/file/log entitlement. So in this case, the licenses that do not give any per user entitlement will not be listed in the breakdown.
 
-### When is table data expected to show in the report?
-Check back for availability. In addition to top tables, we will also show the table trend.
-
 ### Which environments are counted in the capacity report?
 Default, production, and sandbox environments are counted for consumption. Trial, preview, support, and developer environments are not counted.
 
@@ -247,5 +236,5 @@ Default, production, and sandbox environments are counted for consumption. Trial
 [Capacity add-ons](capacity-add-on.md)<br />
 [Automatic tuning in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning) <br />
 [What's new in storage](whats-new-storage.md) <br />
-[Free storage space](free-storage-space.md) <br />
+[Free up storage space](free-storage-space.md) <br />
 

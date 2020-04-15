@@ -34,7 +34,7 @@ Some of the benefits of this change:
 
 - Scalability with purpose-built storage management solutions
 - Ability to enable new business scenarios
-- Reduced need to [free storage space](free-storage-space.md)
+- Reduced need to [free up storage space](free-storage-space.md)
 - Support for variety of data types
 - Additional default and full user entitlements
 - Flexibility to create new environments
@@ -58,7 +58,7 @@ For now, if you exceed your storage capacity, you will receive notifications ale
 
 
 ### See also
-[Common Data Service storage capacity](capacity-storage.md) <br />
 [Legacy storage capacity](legacy-capacity-storage.md) <br />
-[Free storage space](free-storage-space.md) <br />
+[Common Data Service storage capacity](capacity-storage.md) <br />
+[Free up storage space](free-storage-space.md) <br />
 [Delete and recover environments](delete-environment.md)
