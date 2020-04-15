@@ -38,7 +38,7 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 
 To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details. 
 
-You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agent-bot-parameters). 
+You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters). 
 
 ## Customize the default canvas (simple)
 
