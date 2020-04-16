@@ -262,8 +262,9 @@ The existing service scheduling functionality is deprecated, and will no longer 
 Existing service scheduling users will be provided advance notice for a timebound migration to the new scheduling capabilities.
 
 There are two approaches to migrate to the core scheduling experience:
-> Follow the guidance in the [Service Scheduling Guide](/dynamics365/customer-engagement/customer-service/basics-service-service-scheduling) to set up the new scheduling experience for an existing Dynamics 365 Customer Service organization.
-> If your organization requires features that rely on legacy APIs, the product team is offering an incremental migration option and will update to the Unified Interface experience for you while continuing to allow the use of the legacy APIs. This approach is available in 2020 release wave 2 with Eary Access in August, 2020.
+- Follow the guidance in the [Service Scheduling Guide](/dynamics365/customer-engagement/customer-service/basics-service-service-scheduling) to set up the new scheduling experience for an existing Dynamics 365 Customer Service organization.
+
+>\- If your organization requires features that rely on legacy APIs, the product team is offering an incremental migration option and will update to the Unified Interface experience for you while continuing to allow the use of the legacy APIs. This approach is available in 2020 release wave 2 with Eary Access in August, 2020.
 
 Usage of Parature knowledgebase as the knowledge management solution is deprecated
 -----------------------------------------------------------------------------------------------
