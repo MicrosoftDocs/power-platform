@@ -98,6 +98,7 @@ We have created a helper flow to create the library for you, see the following z
 
    The **TemplateType** column will have the following options: **App**, **Flow**, **Component**, **Image**, **Document**.
 
+<!--- Commenting this out until version 3.20041.19 is live so that these msapp files will work in production
 ### Load Sample Templates
 We have created a starter set of templates for you, to access them, please do the following:
 
@@ -122,11 +123,11 @@ We have created a starter set of templates for you, to access them, please do th
 
 7. You now have a starter set of components for your power user usage.
 ![BrowseToLib](media\sp-upload-5.png)
+-->
 
 Ensure you set up the correct permissions for your SharePoint site; we recommend that you view only access to your Power Users.
 
 More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939).
-
 
 ### Add your own Templates
 If you have existing templates that you'd like to share with your makers (for example template apps, brand guidelines, or app and flow samples), upload them to the TemplateApps document library so they show up in the Template Catalog.
