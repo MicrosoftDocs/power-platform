@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/07/2018
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Use Power BI
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 The [!INCLUDE[pn_power_bi_for_office_365_long](../includes/pn-power-bi-for-office-365-long.md)] cloud service works with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, to provide a self-service analytics solution. [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] automatically refreshes the data displayed. With [!INCLUDE[pn_power_bi_desktop](../includes/pn-power-bi-desktop.md)] or [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] Power Query for authoring reports and [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] for sharing dashboards and refreshing data from model-driven apps in Dynamics 365, sales, marketing, and service personnel in your organization have a powerful new way to work with data.  
   
@@ -75,13 +73,13 @@ The [!INCLUDE[pn_power_bi_for_office_365_long](../includes/pn-power-bi-for-offic
   
 ### Enable [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] visualizations in the organization  
   
-1. Sign-in to model-driven apps in Dynamics 365 as a user with the system administrator security role.  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Product** > **Features**.  
   
-2. Go to **Settings** > **Administration** > **System Settings**.  
+3. Under **Embedded content** set **Power BI visualization embedding** to **On** to enable or **Off** to disable.  
   
-3. On the **Reporting** tab in the **Allow Power BI visualization embedding** option, select **Yes** to enable or **No** to disable.  
-  
-4. Click **OK**.  
+4. Click **Save**.  
   
 To learn more about how to add [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] tiles to personal dashboards, see [Embed Power BI tiles on your personal dashboard  ](https://docs.microsoft.com/powerapps/user/add-powerbi-dashboards#embed--power-bi-tiles-on-your-personal-dashboard).  
   

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/07/2020
+ms.date: 04/13/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -28,7 +28,7 @@ Requests in Microsoft Power Platform consist of various actions which a user mak
 
 - **Microsoft Power Automate** – all Power Automate step actions
 
-- **Common Data Service** – all CRUD operations, as well as special operations like “share” or “assign”. These can be from any client or application and using any endpoint SOAP or REST. These include but are not limited to plug-ins, async workflows, and custom controls making the above mentioned operations.
+- **Common Data Service** – all CRUD operations, as well as special operations like "share" or "assign". These can be from any client or application and using any endpoint SOAP or REST. These include but are not limited to plug-ins, async workflows, and custom controls making the above mentioned operations.
 
 Note that for Common Data Service, there will be a small set of system internal operations that are excluded, like login, logout, and system metadata operations like getClientMetadata.
 
@@ -41,11 +41,11 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | **User licenses**                                        | **Number of API requests / 24 hours**                                                                                                         |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Dynamics 365 Enterprise applications<sup>1</sup>                  | 20,000                                                                                                                                        |
-| Dynamics 365 Professional <sup>2</sup>                          | 10,000                                                                                                                                        |
+| Dynamics 365 Professional <sup>2</sup>                          | 10,000                                                                                                                                        |
 | Dynamics 365 Team Member                                 | 5,000                                                                                                                                         |
-| Power Apps per user plan                                  | 5,000                                                                                                                                         |
-| Power Automate per user plan                             | 5,000                                                                                                                                         |
-| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 2,000                                                                                                                                         |
+| Power Apps per user plan                                  | 5,000                                                                                                                                         |
+| Power Automate per user plan                             | 5,000                                                                                                                                         |
+| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 2,000                                                                                                                                         |
 | Application user / Non-interactive users                 | See *Non-licensed user* section below |
 
 
@@ -59,9 +59,9 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 Users who are running apps and flows without a user license through the Power Apps per app plan or flows licensed through the Power Automate per flow plan are granted the following API request entitlement.
 
 
-| **Non User Licenses **       | **Number of API requests / 24 hours** |
+| **Non User Licenses **       | **Number of API requests / 24 hours** |
 |------------------------------|---------------------------------------|
-| Power Apps per app plan       | 1,000 per user pass                   |
+| Power Apps per app plan       | 1,000 per user pass                   |
 | Power Automate per flow plan | 15,000 per flow                       |
 
 
