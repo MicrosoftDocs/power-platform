@@ -118,7 +118,7 @@ Details provided:
 |---------|---------|---------|
 |**Database**     | 100GB        | 110GB        |
 
-This tenant is 10GB over in storage usage. Therefore, there is a deficit and additional capacity should be purchased.
+This tenant is 10GB over in storage usage. Therefore, there is a deficit and this tenant should free up or purchase more capacity.
 
 ## Actions to take for a storage capacity deficit
 

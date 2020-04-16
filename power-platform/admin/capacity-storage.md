@@ -140,7 +140,7 @@ You should be within limits for your entitled capacity, for database log, and fi
 |**Log**     |  10GB       | 5GB        |
 |**File**     | 400GB        | 200GB        |
 
-This tenant is 10 GB over in database usage. Despite 200GB excess file storage, the tenant is considered in deficit.
+This tenant is 10 GB over in database usage. Despite 200GB excess file storage, the tenant is considered in deficit. This tenant should free up or purchase more capacity.
 
 ### Scenario 2: Log storage is over capacity
 
@@ -150,7 +150,7 @@ This tenant is 10 GB over in database usage. Despite 200GB excess file storage, 
 |**Log**     |  10GB       | 20GB        |
 |**File**     | 400GB        | 200GB        |
 
-This tenant is 10GB over in log usage and has only 5GB available in database capacity. Therefore, there is a deficit.
+This tenant is 10GB over in log usage and has only 5GB available in database capacity. Therefore, there is a deficit and this tenant should free up or purchase more capacity.
 
 ### Scenario 3: Log storage is over capacity
 
@@ -170,7 +170,7 @@ This tenant is 10GB over in log usage but has 20GB available in database capacit
 |**Log**     |  10GB       | 5GB        |
 |**File**     | 200GB        | 290GB        |
 
-This tenant is 90GB over in log usage but has 85GB available (80GB database + 5GB log) in storage capacity. There is a deficit and this tenant should purchase more capacity but it will not receive over capacity alerts.
+This tenant is 90GB over in log usage but has 85GB available (80GB database + 5GB log) in storage capacity. There is a deficit and this tenant should free up or purchase more capacity.
 
 ## Actions to take for a storage capacity deficit
 
