@@ -2,7 +2,7 @@
 title: "Use topics to design a Power Virtual Agents bot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: ""
-ms.date: 11/14/2019
+ms.date: 4/15/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -205,6 +205,6 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 [Test your bot](authoring-test-bot.md) when you make changes to your topics, to ensure everything is working as expected.
 
-Once you've finished designing and testing your bot, you can consider [publishing it to the web, mobile or native apps, or Azure Bot Framework channels](publication-fundamentals-publish-channels.md).
+Once you've finished designing and testing your bot, you can consider [publishing it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
 
