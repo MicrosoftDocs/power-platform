@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 05/23/2020
+ms.date: 04/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
