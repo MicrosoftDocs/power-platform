@@ -18,8 +18,6 @@ search.app:
 # Create a data loss prevention (DLP) policy
 To protect data in your organization, Power Apps lets you create and enforce policies that define which consumer connectors specific business data can be shared with. These policies that define how data can be shared are referred to as data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
 
-In this topic, you'll learn how to create a DLP policy for a single environment that prevents data that's stored in your Common Data Service and SharePoint databases from being published to Twitter.
-
 ## Prerequisites
 To follow the steps, **one** of the following items is required:
 * Power Platform service admin permissions
@@ -93,8 +91,5 @@ For more information, see [Environments administration in Power Apps](environmen
 The policy is created and appears in the list of data loss prevention policies. Since the Twitter connector resides in the **No business data allowed** data group, this policy ensures that the Common Data Service and SharePoint do not share their data with Twitter.
 
 It's good practice for administrators to share a list of DLP policies with their organization so that users are aware of the policies prior to creating apps.
-
-## Next steps
-In this topic, you learned how to create a DLP policy for a single environment to prevent important business data from being accidentally published to connectors such as Twitter. To learn more about DLP policies, check out the article about how to manage them.
 
 ### See also
