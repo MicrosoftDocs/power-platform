@@ -6,10 +6,10 @@ author: jeneferm-msft
 
 # Default Value: eMail Header Style
 
-### Return to Core Solution Setup Docs
-[Setup Core Components](../../setup-core-components.md##update-environment-variables)
+[Return to Core Solution Setup Docs](./setup-core-components.md#update-environment-variables)
 
 ### CSS Style used in Default Value  
+
 ```css
 <head> <style> 
 body {

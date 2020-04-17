@@ -81,9 +81,10 @@ This site is the one specified in the following environmental variable: *Power U
 More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
 
 ### Create the library
+
 We have created a helper flow to create the library for you, see the following zip file: *CreateCoETemplateLibaryDocLibraryinSP.zip*, part of your CoE Starter Kit download.
 
-1. Download and import this zipped flow into your CoE environment using the same pattern as you did to [import the audit log flow](setup-auditlog.md###Import-the-flow-template-compressed-(.zip)-package-named-SyncAuditLogs.zip).
+1. Download and import this zipped flow into your CoE environment using the same pattern as you did to [import the audit log flow](setup-auditlog.md).
 
 2. Ensure the flow is turned on and run the flow.
 3. When complete, you will have a Doc Lib named *AppTemplates* with the following shown for the default view:
@@ -130,6 +131,7 @@ Ensure you set up the correct permissions for your SharePoint site; we recommend
 More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939).
 
 ### Add your own Templates
+
 If you have existing templates that you'd like to share with your makers (for example template apps, brand guidelines, or app and flow samples), upload them to the TemplateApps document library so they show up in the Template Catalog.
 
 ## Share apps with your organization
