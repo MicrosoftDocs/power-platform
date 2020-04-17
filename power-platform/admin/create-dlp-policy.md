@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 10/15/2019
+ms.date: 05/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -28,16 +28,33 @@ To follow the steps, **one** of the following items is required:
 
 For more information, see [Environments administration in Power Apps](environments-administration.md).
 
-## Sign in to the Power Apps Admin center
-Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
-
 ## Create a DLP policy
-1. In the navigation pane, click or tap **Data policies**, and then click or tap **New policy**.
+1. In Power Platform admin center, select **Data policies** > **New policy** to start the New Policy process.
 
-    ![](./media/create-dlp-policy/new-data-policy.png)
-2. The **Data Policy Name** field auto-populates with a name based on the time and date the policy is created. Replace this with **Secure Data Access for Contoso**.
 
-    ![](./media/create-dlp-policy/policy-name.png)
+   > [!div class="mx-imgBorder"] 
+   > ![New data policy](media/dlp-new-policy.png "New data policy")
+
+2. Enter a policy name and then select **Next**.
+
+3. Review the various actions you can take on the **Assign connectors** page. Note, unless specified the setting appears for both tenant and environment admins.
+   
+|Setting  |Action  |
+|---------|---------|
+|Set default group |         |
+|Business (n)     |         |
+|Non-Business / Default (n)      |        |
+|Blocked (n)      | Select to see the number of blocked connectors which can't be used where the policy is applied.   |
+|Search Connectors     |         |
+|Name     |         |
+|Blockable     |         |
+|Type     |         |
+|Publisher     |         |
+|About      |         |
+
+3. Tenant admins, choose the environment scope. Environment admins, you won't see scope options so move to Step 4.
+
+
 3. The options on the **Environments** tab differ depending on whether you're an Environment admin or a Power Platform admin. If you're an Environment admin, select an environment from the drop-down list, and then click or tap **Continue**.
 
     ![](./media/create-dlp-policy/select-environment.png)
