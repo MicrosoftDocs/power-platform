@@ -49,7 +49,7 @@ For more information, see [Environments administration in Power Apps](environmen
    |Search Connectors     | To search a long list of policies to find specific DLP policies.        |
    |Name     | The name of the connector.        |
    |Blockable     | Connectors which can be blocked. See xyz for a list of connectors that cannot be blocked.     |
-   |Type     | <need explanation for Standard and Premium>        |
+   |Type     | [need explanation for Standard and Premium]        |
    |Publisher     |  The company that publishes the connector.       |
    |About      | Select the URL for more information about the connector.       |
 
