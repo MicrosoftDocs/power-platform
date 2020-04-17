@@ -1,13 +1,13 @@
 ---
 title: Manage data loss prevention (DLP) policies | Microsoft Docs
 description: Walkthrough of how to manage data loss prevention policies for Power Apps.
-author: manasmams
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: manasma
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -24,32 +24,40 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 For instructions on how to create a DLP policy, see [Create a data loss prevention (DLP) policy](create-dlp-policy.md).
 
 ## Find a DLP policy
-1. Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
-2. In the navigation pane, click or tap **Data policies**. If you have a long list of policies, use the **Search** box to find specific DLP policies.
 
-    ![](./media/prevent-data-loss/data-policies.png)
+1. Sign in to the Power Platform admin center.
+
+2. In the navigation pane, select **Data policies**. If you have a long list of policies, use the **Search** box to find specific DLP policies.
+
+   > [!div class="mx-imgBorder"] 
+   > ![DLP policy list](media/dlp-policy-list-view.png "DLP policy list")
 
 ## Edit a DLP policy
-1. In the list of data loss prevention policies, click or tap the pencil icon next to the policy you want to edit.
 
-    ![Sign in](./media/prevent-data-loss/3.png)
-2. Make your changes, and then click or tap **Save Policy**.
+1. In the list of data loss prevention policies, select an environment and then select **Edit Policy**.
 
-    > [!NOTE]
-    > Environment DLP policies cannot override tenant-wide DLP policies.
-    >
-    >
+   > [!div class="mx-imgBorder"] 
+   > ![Edit DLP policy](media/dlp-edit-policy.png "Edit DLP policy")
 
-    To review the changes, find the DLP policy in the list of data loss prevention policies and click or tap it to review its properties.
+2. Proceed through the Edit policy steps, and then select **Update Policy**.
+
+   > [!NOTE]
+   > Environment DLP policies cannot override tenant-wide DLP policies.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Edit DLP policy review](media/dlp-edit-policy-review.png "Edit DLP policy review")
 
 ## Delete a DLP policy
-1. In the list of data loss prevention policies, click or tap the trash can icon next to the policy you want to delete.
 
-    ![Sign in](./media/prevent-data-loss/3-delete.png)
-4. In the confirmation dialog box, click or tap **Delete**.
+1. In the list of data loss prevention policies, select an environment and then select **Delete Policy**.
 
-    The policy is deleted and no longer appears in the list of data loss prevention policies.
+   > [!div class="mx-imgBorder"] 
+   > ![Delete DLP policy](media/dlp-delete-policy.png "Delete DLP policy")
 
-## Next steps
-* [Learn more about environments](environments-administration.md)
-* [Learn more about Microsoft Power Apps](/powerapps/maker/canvas-apps/getting-started)
+   > [!NOTE]
+   > Environment admins can't delete environments created by the tenant admin.
+
+2. In the confirmation dialog box, select **Delete**.
+
+   The policy is deleted and no longer appears in the list of data loss prevention policies.
+

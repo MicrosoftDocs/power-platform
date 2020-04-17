@@ -68,9 +68,9 @@ To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.
 
 |  | |
 |---------|---------|
-|**1**   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
-|**2**    |**Capacity types and sources** <ul><li>**Organization base<!--"Org (tenant) default"?-->**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage<!--"capacity"?-->**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
-|**3**     |**Top capacity<!--"storage"?--> usage, by environment**: The environments that consume the most capacity        |
+|(1)   |**Current usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
+|(2)    |**Capacity types and sources** <ul><li>**Organization base<!--"Org (tenant) default"?-->**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(3)     |**Top capacity<!--"storage"?--> usage, by environment**: The environments that consume the most capacity        |
 
 ### Storage capacity tab
 

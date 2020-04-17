@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 10/15/2019
+ms.date: 04/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,8 +18,6 @@ search.app:
 # Create a data loss prevention (DLP) policy
 To protect data in your organization, Power Apps lets you create and enforce policies that define which consumer connectors specific business data can be shared with. These policies that define how data can be shared are referred to as data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
 
-In this topic, you'll learn how to create a DLP policy for a single environment that prevents data that's stored in your Common Data Service and SharePoint databases from being published to Twitter.
-
 ## Prerequisites
 To follow the steps, **one** of the following items is required:
 * Power Platform service admin permissions
@@ -28,44 +26,71 @@ To follow the steps, **one** of the following items is required:
 
 For more information, see [Environments administration in Power Apps](environments-administration.md).
 
-## Sign in to the Power Apps Admin center
-Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
-
 ## Create a DLP policy
-1. In the navigation pane, click or tap **Data policies**, and then click or tap **New policy**.
+1. In Power Platform admin center, select **Data policies** > **New policy** to start the New Policy process.
 
-    ![](./media/create-dlp-policy/new-data-policy.png)
-2. The **Data Policy Name** field auto-populates with a name based on the time and date the policy is created. Replace this with **Secure Data Access for Contoso**.
 
-    ![](./media/create-dlp-policy/policy-name.png)
-3. The options on the **Environments** tab differ depending on whether you're an Environment admin or a Power Platform admin. If you're an Environment admin, select an environment from the drop-down list, and then click or tap **Continue**.
+   > [!div class="mx-imgBorder"] 
+   > ![New data policy](media/dlp-new-policy.png "New data policy")
 
-    ![](./media/create-dlp-policy/select-environment.png)
+2. Enter a policy name and then select **Next**.
 
-    If you're a Power Platform admin, you can create DLP policies that apply to one or more environments, or to all environments within the tenant (including those created using a trial license). For this topic, click or tap **Apply to ONLY selected environments**, select an environment from the drop-down list, and then click or tap **Continue**.
+3. Review the various actions you can take on the **Assign connectors** page. 
 
-    ![](./media/create-dlp-policy/select-environment-tenant.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Assign connectors](media/dlp-assign-connectors.png "Assign connectors") 
+
+   |Setting  |Action  |
+   |---------|---------|
+   |Set default group |         |
+   |Business (n)     |         |
+   |Non-Business / Default (n)      |        |
+   |Blocked (n)      | Select to see the number of blocked connectors which can't be used where the policy is applied.   |
+   |Search Connectors     |         |
+   |Name     |         |
+   |Blockable     |         |
+   |Type     |         |
+   |Publisher     |         |
+   |About      |         |
+
+
+4. Select one or more connectors and then select **Move to Business** or **Block** from the top menu bar to apply to all the selected. To set individual connectors, use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Assign multiple connectors](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
+
+   - Select **Move to business** to 
+   - Select **Block** to 
+   - Select **Next** to move to the next step.
+
+5. Tenant admins, choose the environment scope. Environment admins, you won't see scope options so move to Step 6.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Define scope](media/dlp-define-scope.png "Define scope")
+
+   Depending on which scope you've chosen, you'll see more options for selecting environments to include in or exclude from the DLP policy.
+
+   Make your selections and select **Next**.
+
+6. Environment admins can add a single environment to the DLP policy. Tenant admins can add multiple environments to the DLP policy. Select **Next** to continue.
+
+
+   > [!div class="mx-imgBorder"] 
+   > ![Add environments to policy](media/dlp-add-environments.png "Add environments to policy")
+
 
     Note that environment DLP policies cannot override tenant-wide DLP policies.
-4. On the **Data groups** tab, under **Business data only**, click or tap **Add**.
 
-    ![](./media/create-dlp-policy/data-groups.png)
-5. In the **Add connectors** window, select **Common Data Service** and **SharePoint** (you may have to scroll down or search to find them), and then click or tap **Add connectors** to add them to the **Business data only** data group.
+7. Review the policy settings and then select **Create Policy**.
 
-    ![](./media/create-dlp-policy/add-connectors.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Review new policy](media/dlp-new-policy-review.png "Review new policy")
 
     Connectors can reside in only one data group at a time and are added to the **No business data allowed** group by default. By moving Common Data Service and SharePoint to the **Business data only** group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **No business data allowed** group.
 
-6. Click **Save policy**.
-
-    ![](./media/create-dlp-policy/save-policy.png)
-
-The Secure Data Access for Contoso policy is created and appears in the list of data loss prevention policies. Since the Twitter connector resides in the **No business data allowed** data group, this policy ensures that the Common Data Service and SharePoint do not share their data with Twitter.
+The policy is created and appears in the list of data loss prevention policies. Since the Twitter connector resides in the **No business data allowed** data group, this policy ensures that the Common Data Service and SharePoint do not share their data with Twitter.
 
 It's good practice for administrators to share a list of DLP policies with their organization so that users are aware of the policies prior to creating apps.
 
-## Next steps
-In this topic, you learned how to create a DLP policy for a single environment to prevent important business data from being accidentally published to connectors such as Twitter. To learn more about DLP policies, check out the article about how to manage them.
-
-> [!div class="nextstepaction"]
-> [Manage data loss prevention (DLP) policies](prevent-data-loss.md)
+### See also
+[Manage data loss prevention (DLP) policies](prevent-data-loss.md)
