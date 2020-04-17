@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 
 # Environments overview
-An environment is a space to store, manage, and share your organization’s business data, apps, and flows. They also serve as containers to separate apps that may have different roles, security requirements, or target audiences. How you choose to leverage environments depends on your organization and the apps you are trying to build. For example:
+An environment is a space to store, manage, and share your organization's business data, apps, and flows. They also serve as containers to separate apps that may have different roles, security requirements, or target audiences. How you choose to leverage environments depends on your organization and the apps you are trying to build. For example:
 
 * You may choose to only build your apps in a single environment.
 * You might create separate environments that group the Test and production versions of your apps.
@@ -26,11 +26,11 @@ An environment is a space to store, manage, and share your organization’s busi
 * Get early access to the upcoming Power Apps functionalities by joining [Power Apps Preview Program](preview-environments.md).
 
 ## Environment scope
-Each environment is created under an Azure AD tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the US. When you create an app in an environment, that app is routed to only datacenters in that geographic location. Any items that you create in that environment (including connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment’s location.
+Each environment is created under an Azure AD tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the US. When you create an app in an environment, that app is routed to only datacenters in that geographic location. Any items that you create in that environment (including connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
 
 Every environment can have zero or one Common Data Service databases, which provides storage for your apps. The ability to create a database for your environment will depend on the license you purchase for Power Apps and your permission within that environment. For more information, see [Pricing info](pricing-billing-skus.md).
 
-When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Common Data Service databases.  For example, let’s consider a scenario where you have created two environments named ‘Test’ and ‘Dev’ and created a Common Data Service database in each of the environments. If you create an app in the ‘Test’ environment, it will only be permitted to connect to the ‘Test’ database, it won't be able to connect to the ‘Dev’ database.
+When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Common Data Service databases.  For example, let's consider a scenario where you have created two environments named 'Test' and 'Dev' and created a Common Data Service database in each of the environments. If you create an app in the 'Test' environment, it will only be permitted to connect to the 'Test' database, it won't be able to connect to the 'Dev' database.
 
 There is also a process to move resources between environments. For more information, see [Migrate resources](environment-and-tenant-migration.md).
 
@@ -55,7 +55,7 @@ Environments have two built-in roles that provide access to permissions within a
 
 Environment Makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or to all users in the organization. For more information, see [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app).
 
-Users or groups assigned to these environment roles are not automatically given access to the environment’s database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).
+Users or groups assigned to these environment roles are not automatically given access to the environment's database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).
 
 Users or security groups can be assigned to either of these two roles by an Environment Admin from the [Power Platform admin center](https://admin.powerplatform.microsoft.com) or [Power Apps Admin center](https://admin.powerapps.com). For more information, see [Administer environments in Power Apps](environments-administration.md).
 
@@ -65,17 +65,9 @@ Users or security groups can be assigned to either of these two roles by an Envi
 
 There are multiple types of environments. The type of environment indicates the purpose and determines the environment characteristics. The following table summarizes the current types of environments that you might encounter.
 
-|Type  |Description  |
-|---------|---------|
-|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
-|Default     | These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail.        |
-|Sandbox     | These are non-production environments and when associated with a Common Data Service database environment offer features like reset.        |
-|Trial     | Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time.        |
-|Developer     | Developer environments are created by users with the Community Plan license. They are special environments intended only for use by the owner. Sharing with other users is not possible in these environments.        |
-
 <table style="width:100%">
 <tr>
-<th>Settings</th>
+<th>Type</th>
 <th>Description</th>
 <th>Security</th>
 </tr>
@@ -115,7 +107,7 @@ A single default environment is automatically created by Power Apps for each ten
 >
 > The default environment is limited to 32GB of storage capacity. In case you need to store more data, you can create a production environment. See [Provisioning a new environment](create-environment.md#provisioning-a-new-environment).
 
-The default environment is named as follows: “{Azure AD tenant name} (default)”
+The default environment is named as follows: "{Azure AD tenant name} (default)"
 
 ![](./media/environments-overview/DefaultEnvironment.png)
 
@@ -150,7 +142,7 @@ An environment will show up in your picker if you meet one of the following cond
 
 * You are a member of the Environment Admin role for the environment.
 * You are a member of the Environment Maker role for the environment.
-* You are not an Environment Admin or Environment Maker of the environment, but you have been given ‘Contributor’ access to at least one app within the environment. For more information, see [share an app](/powerapps/maker/canvas-apps/share-app). In this case, you will not be able to create apps in this environment. You will only be able to modify the existing apps that have been shared with you.
+* You are not an Environment Admin or Environment Maker of the environment, but you have been given 'Contributor' access to at least one app within the environment. For more information, see [share an app](/powerapps/maker/canvas-apps/share-app). In this case, you will not be able to create apps in this environment. You will only be able to modify the existing apps that have been shared with you.
 
 ![](./media/environments-overview/EnvironmentPicker.png)
 

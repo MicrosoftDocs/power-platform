@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/19/2019
+ms.date: 04/13/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -30,8 +30,11 @@ Manage your sandbox environments from the Power Platform admin center.
    > [!div class="mx-imgBorder"] 
    > ![](media/sandbox-environments.png "Environments page")
 
-## Provision a sandbox environment
-To provision a sandbox environment, you change a production environment to sandbox.
+## Create a sandbox environment
+
+See [Create and manage environments in the Power Platform admin center](create-environment.md).
+
+## Change a production environment to sandbox
 
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Global admin, or Delegated admin).
 

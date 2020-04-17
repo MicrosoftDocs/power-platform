@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 04/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,9 +19,9 @@ search.app:
 
 You can control how model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, display numbers, currencies, times, and dates for your organization. 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)]  
+<!-- legacy procedure -->
   
-## Open the Formats System Settings dialog box (it it isn’t already open)  
+## Open the Formats System Settings dialog box (it it isn't already open)  
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -31,14 +31,14 @@ You can control how model-driven apps in Dynamics 365, such as Dynamics 365 Sale
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_administration](../includes/proc-settings-administration.md)]  
+2. In the web app, go to **Settings** > **Administration**.
   
 3. Choose **System Settings** > **Formats** tab.  
   
 |Settings|Description|  
 |--------------|-----------------|  
 |**Organizational Standards and Formats**||  
-|**Current Format**|Default: your organization’s language and locale. Choose **Customize** to customize number, currency, time, and date formats for your organization.|  
+|**Current Format**|Default: your organization's language and locale. Choose **Customize** to customize number, currency, time, and date formats for your organization.|  
 |Format Preview|Preview the settings for the selected language and locale.|  
   
 ### See also  

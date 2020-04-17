@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 04/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,7 +35,7 @@ Out-of-the-box tooling around monitoring, alert, and actions falls into the foll
 
 Check out the Admin-in-a-day content that can be found in the GitHub repository ([https://aka.ms/powerapps/admininaday](https://aka.ms/powerapps/admininaday)) that walks you through examples via hands-on labs with step-by-step instructions. 
 
-The [Center of Excellence starter kit](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit) offers a template implementation using the Management and Admin connectors, and comes with a Power BI dashboard that can be leveraged to gain tenant-wide insights.
+The [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) offers a template implementation using the Management and Admin connectors, and comes with a Power BI dashboard that can be leveraged to gain tenant-wide insights.
 
 ### See also
 [Common Data Service analytics](analytics-common-data-service.md)<br />

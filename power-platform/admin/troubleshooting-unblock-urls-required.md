@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,9 +17,7 @@ search.app:
 ---
 # Troubleshooting: Unblock required URLs
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
-Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, use several Microsoft URLs to help provide security, services, and features. However, your computer or your organization’s computer network may block access to some of these URLs. Blocking any of the required URLs will cause model-driven apps in Dynamics 365 to operate incorrectly or not at all.  
+Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, use several Microsoft URLs to help provide security, services, and features. However, your computer or your organization's computer network may block access to some of these URLs. Blocking any of the required URLs will cause model-driven apps in Dynamics 365 to operate incorrectly or not at all.  
   
  You may see a network or server error message if your computer or your organization's network blocks the URLs you need. The error message might look like one of these:  
   
@@ -30,7 +28,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
 You can unblock these URLs on your computer by adding them to a list of approved sites in your browser.  
   
 > [!IMPORTANT]
->  If the following procedure doesn’t unblock the URLs required for model-driven apps in Dynamics 365, ask your system administrator to unblock the URLs on the organization’s network.  
+>  If the following procedure doesn't unblock the URLs required for model-driven apps in Dynamics 365, ask your system administrator to unblock the URLs on the organization's network.  
    
 ### Unblock model-driven apps in Dynamics 365 URLs in Internet Explorer  
   

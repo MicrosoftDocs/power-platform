@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,13 +17,11 @@ search.app:
 ---
 # View and take action on bulk deletion jobs
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
 You can view the status of, pause, postpone, and resume a system job that you created using **Bulk Record Deletion**.  
   
-1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
-  
-2. Choose **Bulk Record Deletion**.  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Data management** > **Bulk deletion**.  
   
 3. In the **Bulk Record Deletion** window, you can perform the actions described in the following table.  
   
