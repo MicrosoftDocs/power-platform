@@ -93,3 +93,4 @@ The policy is created and appears in the list of data loss prevention policies. 
 It's good practice for administrators to share a list of DLP policies with their organization so that users are aware of the policies prior to creating apps.
 
 ### See also
+[Manage data loss prevention (DLP) policies](prevent-data-loss.md)
