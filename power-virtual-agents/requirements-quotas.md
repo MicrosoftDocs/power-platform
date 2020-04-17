@@ -9,7 +9,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "quotas, admin"
+ms.custom: quotas, admin
 ms.collection: virtual-agent
 ---
 
