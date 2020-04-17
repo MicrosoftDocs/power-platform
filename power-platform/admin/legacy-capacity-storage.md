@@ -1,7 +1,7 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 03/27/2020
+ms.date: 04/17/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -18,6 +18,8 @@ search.app:
 # Legacy storage capacity
 
 In April 2019, we introduced Common Data Service capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage prior to April 2019, you are using the legacy licensing model for storage discussed in this topic.
+
+We're rolling out this feature now so check back if your user experience varies from the following content.
 
 ## Licenses for the legacy storage model
 

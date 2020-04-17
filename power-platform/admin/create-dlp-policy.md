@@ -27,6 +27,9 @@ To follow the steps, **one** of the following items is required:
 For more information, see [Environments administration in Power Apps](environments-administration.md).
 
 ## Create a DLP policy
+
+In these steps, you'll add SharePoint and Salesforce to the **Business** data only data group of a DLP policy. If a person who is part of the DLP policy's environment creates an app that shares data between SharePoint or Salesforce and any service in the **Non-business** data allowed data group, the app will not be allowed to connect.
+
 1. In Power Platform admin center, select **Data policies** > **New policy** to start the New Policy process.
 
 
@@ -54,16 +57,17 @@ For more information, see [Environments administration in Power Apps](environmen
    |About      | Select the URL for more information about the connector.       |
 
 
-4. Select one or more connectors and then select **Move to Business** or **Block** from the top menu bar to apply to all the selected. To set individual connectors, use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. 
+4. Select one or more connectors, such as SalesForce and Sharepoint, and then select **Move to Business** from the top menu bar to apply to all the selected. You can also use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign multiple connectors](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
 
-   - Select **Move to business** to 
-   - Select **Block** to 
-   - Select **Next** to move to the next step.
+   The connectors will appear in the **Business** data group.
 
-5. Tenant admins, choose the environment scope. Environment admins, you won't see scope options so move to Step 6.
+   > [!div class="mx-imgBorder"] 
+   > ![Business data group](media/dlp-business-data-group.png "Business data group")
+
+5. Tenant admins, choose the environment scope. Environment admins won't see scope options so move to Step 6.
 
    > [!div class="mx-imgBorder"] 
    > ![Define scope](media/dlp-define-scope.png "Define scope")

@@ -1,7 +1,7 @@
 ---
 title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 01/29/2020
+ms.date: 04/17/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -22,10 +22,12 @@ If you purchased storage in or after April 2019, or you have a mix of storage pu
 
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs.
 
+We're rolling out this feature now so check back if your user experience varies from the following content.
+
 > [!NOTE]
 > For licensing information, see the [Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
-> Common Data Service storage capacity isn't available for Microsoft Dynamics 365 US Government – Government Community Cloud (GCC), GCC High, Department of Defense<!--Edit okay? This implies that there's such a thing as "Dynamics 365 US Government - Department of Defense," which I don't actually think is true. I'm not sure how to work in this reference to the DOD.-->, or Dynamics 365 online services operated by 21Vianet (operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd, a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., located in China)<!--Edit okay? Wording was recommended by the Release Plans team because it's so rare that we call out a third party this way.-->.
+> Common Data Service storage capacity isn't available for Microsoft Dynamics 365 US Government – Government Community Cloud (GCC), GCC High, Department of Defense, or Dynamics 365 online services operated by 21Vianet (operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd, a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., located in China).
 
 ## Licenses for the new storage model
 
@@ -71,6 +73,8 @@ To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
+
+Files, such as .PDF attachments, are stored as records in database storage and files in file storage.
 
 ### Storage capacity tab
 
@@ -170,7 +174,7 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 ## FAQ
 
 ### Do indexes affect database storage usage?
-Possibly. Database storage includes both the database records and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Common Data Service is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity. Compressing indexes to reduce storage is an example of these optimizations. Common causes for an increase in index size are:
+Possibly. Database storage includes both the database records and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Common Data Service is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-the-box, or part of an update or solution installation).
 - Data volume or complexity changes.

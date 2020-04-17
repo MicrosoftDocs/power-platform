@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -22,6 +22,8 @@ We've made some key enhancements to admin experiences for the Power Platform adm
 
 - Storage reporting is based on customer licenses and capacity add-ons.
 - Changes have been implemented for exceeding storage capacity entitlements.
+
+We're rolling out these features now so check back if your user experience varies from the following content.
 
 ## Updates to storage reporting
 

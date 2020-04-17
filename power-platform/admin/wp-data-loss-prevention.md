@@ -23,6 +23,15 @@ Data loss prevention (DLP) policies that help protect organizational data from u
 
 DLP policies enforce rules of what connectors can be used together by classifying connectors as either Business data only or No business data allowed. Simply, if you put a connector in the Business data only group, it can only be used with other connectors from that group in the same app. Keep reading and we will cover some scenarios for using this later in this section.
 
+## The DLP process
+
+The following are the steps you follow to create a DLP policy.
+
+- Step 1: Assign the policy a name:
+- Step 2: 
+
+
+<!-- 
 ## What policies do we already have?
 
 From the Power Apps admin center (admin.powerapps.com) you can see the current policies you have in place in your tenant. This should be your first stop as a new administrator to understand what is currently active.
@@ -150,4 +159,5 @@ Now with this in place, you need a plan on how to handle exceptions. You really 
 
 Hopefully that helps you understand how you might apply DLP policies in your organization. These are just some of the many options you could configure with DLP policies.
 
+-->
 
