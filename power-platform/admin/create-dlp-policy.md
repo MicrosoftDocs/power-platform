@@ -37,25 +37,38 @@ For more information, see [Environments administration in Power Apps](environmen
 
 2. Enter a policy name and then select **Next**.
 
-3. Review the various actions you can take on the **Assign connectors** page. Note, unless specified the setting appears for both tenant and environment admins.
+3. Review the various actions you can take on the **Assign connectors** page. 
    
-|Setting  |Action  |
-|---------|---------|
-|Set default group |         |
-|Business (n)     |         |
-|Non-Business / Default (n)      |        |
-|Blocked (n)      | Select to see the number of blocked connectors which can't be used where the policy is applied.   |
-|Search Connectors     |         |
-|Name     |         |
-|Blockable     |         |
-|Type     |         |
-|Publisher     |         |
-|About      |         |
+   |Setting  |Action  |
+   |---------|---------|
+   |Set default group |         |
+   |Business (n)     |         |
+   |Non-Business / Default (n)      |        |
+   |Blocked (n)      | Select to see the number of blocked connectors which can't be used where the policy is applied.   |
+   |Search Connectors     |         |
+   |Name     |         |
+   |Blockable     |         |
+   |Type     |         |
+   |Publisher     |         |
+   |About      |         |
 
-3. Tenant admins, choose the environment scope. Environment admins, you won't see scope options so move to Step 4.
+   Select one or more 
+
+   > [!div class="mx-imgBorder"] 
+   > ![New data policy](media/dlp-assign-connectors.png "New data policy")
+
+4. Select one or more connectors and then select **Move to Business** or **Block** from the top menu bar to apply to all the selected. To set individual connectors, use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. Select **Next** to move to the next step.
+
+   > [!div class="mx-imgBorder"] 
+   > ![New data policy](media/dlp-assign-connectors-multiple.png "New data policy")
 
 
-3. The options on the **Environments** tab differ depending on whether you're an Environment admin or a Power Platform admin. If you're an Environment admin, select an environment from the drop-down list, and then click or tap **Continue**.
+
+5. Tenant admins, choose the environment scope. Environment admins, you won't see scope options so move to Step 6.
+
+
+
+6. The options on the **Environments** tab differ depending on whether you're an Environment admin or a Power Platform admin. If you're an Environment admin, select an environment from the drop-down list, and then click or tap **Continue**.
 
     ![](./media/create-dlp-policy/select-environment.png)
 
