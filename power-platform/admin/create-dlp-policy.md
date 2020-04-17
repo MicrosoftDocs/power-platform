@@ -57,45 +57,39 @@ For more information, see [Environments administration in Power Apps](environmen
    > [!div class="mx-imgBorder"] 
    > ![New data policy](media/dlp-assign-connectors.png "New data policy")
 
-4. Select one or more connectors and then select **Move to Business** or **Block** from the top menu bar to apply to all the selected. To set individual connectors, use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. Select **Next** to move to the next step.
+4. Select one or more connectors and then select **Move to Business** or **Block** from the top menu bar to apply to all the selected. To set individual connectors, use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. 
+
+   - Select **Move to business** to 
+   - Select **Block** to 
+   - Select **Next** to move to the next step.
 
    > [!div class="mx-imgBorder"] 
    > ![New data policy](media/dlp-assign-connectors-multiple.png "New data policy")
 
-
-
 5. Tenant admins, choose the environment scope. Environment admins, you won't see scope options so move to Step 6.
 
+   Depending on which scope you've chosen, you'll see more options for selecting environments to include in or exclude from the DLP policy.
+
+   Make your selections and select **Next**.
+
+6. Environment admins can add a single environment to the DLP policy. Tenant admins can add multiple environments to the DLP policy. Select **Next** to continue.
 
 
-6. The options on the **Environments** tab differ depending on whether you're an Environment admin or a Power Platform admin. If you're an Environment admin, select an environment from the drop-down list, and then click or tap **Continue**.
+   > [!div class="mx-imgBorder"] 
+   > ![New data policy](media/dlp-add-environments.png "New data policy")
 
-    ![](./media/create-dlp-policy/select-environment.png)
-
-    If you're a Power Platform admin, you can create DLP policies that apply to one or more environments, or to all environments within the tenant (including those created using a trial license). For this topic, click or tap **Apply to ONLY selected environments**, select an environment from the drop-down list, and then click or tap **Continue**.
-
-    ![](./media/create-dlp-policy/select-environment-tenant.png)
 
     Note that environment DLP policies cannot override tenant-wide DLP policies.
-4. On the **Data groups** tab, under **Business data only**, click or tap **Add**.
 
-    ![](./media/create-dlp-policy/data-groups.png)
-5. In the **Add connectors** window, select **Common Data Service** and **SharePoint** (you may have to scroll down or search to find them), and then click or tap **Add connectors** to add them to the **Business data only** data group.
-
-    ![](./media/create-dlp-policy/add-connectors.png)
+7. Review the policy settings and then select **Create Policy**.
 
     Connectors can reside in only one data group at a time and are added to the **No business data allowed** group by default. By moving Common Data Service and SharePoint to the **Business data only** group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **No business data allowed** group.
 
-6. Click **Save policy**.
-
-    ![](./media/create-dlp-policy/save-policy.png)
-
-The Secure Data Access for Contoso policy is created and appears in the list of data loss prevention policies. Since the Twitter connector resides in the **No business data allowed** data group, this policy ensures that the Common Data Service and SharePoint do not share their data with Twitter.
+The policy is created and appears in the list of data loss prevention policies. Since the Twitter connector resides in the **No business data allowed** data group, this policy ensures that the Common Data Service and SharePoint do not share their data with Twitter.
 
 It's good practice for administrators to share a list of DLP policies with their organization so that users are aware of the policies prior to creating apps.
 
 ## Next steps
 In this topic, you learned how to create a DLP policy for a single environment to prevent important business data from being accidentally published to connectors such as Twitter. To learn more about DLP policies, check out the article about how to manage them.
 
-> [!div class="nextstepaction"]
-> [Manage data loss prevention (DLP) policies](prevent-data-loss.md)
+### See also
