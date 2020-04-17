@@ -40,18 +40,18 @@ For more information, see [Environments administration in Power Apps](environmen
    > [!div class="mx-imgBorder"] 
    > ![Assign connectors](media/dlp-assign-connectors.png "Assign connectors") 
 
-   |Setting  |Action  |
+   |Setting  |Description  |
    |---------|---------|
-   |Set default group |         |
-   |Business (n)     |         |
-   |Non-Business / Default (n)      |        |
-   |Blocked (n)      | Select to see the number of blocked connectors which can't be used where the policy is applied.   |
-   |Search Connectors     |         |
-   |Name     |         |
-   |Blockable     |         |
-   |Type     |         |
-   |Publisher     |         |
-   |About      |         |
+   |Set default group | Default: **Business**. See xyz.        |
+   |Business (n)     | Connectors for sensitive data. Connectors in this group can’t share data with connectors in other groups. Unassigned connectors will show up here by default.        |
+   |Non-Business / Default (n)      | Connectors for non-sensitive data. Connectors in this group can’t share data with connectors in other groups.       |
+   |Blocked (n)      | Blocked connectors can’t be used where this policy is applied.  |
+   |Search Connectors     | To search a long list of policies to find specific DLP policies.        |
+   |Name     | The name of the connector.        |
+   |Blockable     | Connectors which can be blocked. See xyz for a list of connectors that cannot be blocked.     |
+   |Type     | <need explanation for Standard and Premium>        |
+   |Publisher     |  The company that publishes the connector.       |
+   |About      | Select the URL for more information about the connector.       |
 
 
 4. Select one or more connectors and then select **Move to Business** or **Block** from the top menu bar to apply to all the selected. To set individual connectors, use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. 
