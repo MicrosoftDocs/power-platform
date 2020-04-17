@@ -38,7 +38,10 @@ For more information, see [Environments administration in Power Apps](environmen
 2. Enter a policy name and then select **Next**.
 
 3. Review the various actions you can take on the **Assign connectors** page. 
-   
+
+   > [!div class="mx-imgBorder"] 
+   > ![Assign connectors](media/dlp-assign-connectors.png "Assign connectors") 
+
    |Setting  |Action  |
    |---------|---------|
    |Set default group |         |
@@ -52,21 +55,20 @@ For more information, see [Environments administration in Power Apps](environmen
    |Publisher     |         |
    |About      |         |
 
-   Select one or more 
-
-   > [!div class="mx-imgBorder"] 
-   > ![New data policy](media/dlp-assign-connectors.png "New data policy")
 
 4. Select one or more connectors and then select **Move to Business** or **Block** from the top menu bar to apply to all the selected. To set individual connectors, use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Assign multiple connectors](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
 
    - Select **Move to business** to 
    - Select **Block** to 
    - Select **Next** to move to the next step.
 
-   > [!div class="mx-imgBorder"] 
-   > ![New data policy](media/dlp-assign-connectors-multiple.png "New data policy")
-
 5. Tenant admins, choose the environment scope. Environment admins, you won't see scope options so move to Step 6.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Define scope](media/dlp-define-scope.png "Define scope")
 
    Depending on which scope you've chosen, you'll see more options for selecting environments to include in or exclude from the DLP policy.
 
@@ -76,7 +78,7 @@ For more information, see [Environments administration in Power Apps](environmen
 
 
    > [!div class="mx-imgBorder"] 
-   > ![New data policy](media/dlp-add-environments.png "New data policy")
+   > ![Add environments to policy](media/dlp-add-environments.png "Add environments to policy")
 
 
     Note that environment DLP policies cannot override tenant-wide DLP policies.
