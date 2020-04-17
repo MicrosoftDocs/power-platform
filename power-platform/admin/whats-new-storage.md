@@ -25,7 +25,7 @@ We've made some key enhancements to admin experiences for the Power Platform adm
 
 ## Updates to storage reporting
 
-In April 2019, we introduced Common Data Service capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) receive a tenant-wide<!--Is "tenant" necessary throughout? If so, should it replace "org" everywhere? --> default entitlement for each of these three storage types and additional per user subscription license entitlements. Additional storage can be purchased in 1-GB increments. Existing customers won't be affected by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
+In April 2019, we introduced Common Data Service capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) receive a tenant-wide default entitlement for each of these three storage types and additional per user subscription license entitlements. Additional storage can be purchased in 1-GB increments. Existing customers won't be affected by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
 
 ![Evolution of data management](media/storage-model-evolution.png "Evolution of data management")
 
@@ -52,10 +52,9 @@ There are two versions for storage capacity reporting:
 
 We're making changes for what happens when an organization's storage capacity usage is greater than the capacity entitled or purchased via add-ons.
 
-For now, if you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications occur as alerts in the Power Platform admin center. In the future, certain admin operations won't be available when a tenant exceeds storage capacity entitlements. Check back for updated information. <!--You don't need so many cross-references in a row. More information: [Legacy storage capacity](legacy-capacity-storage.md) or [Common Data Service storage capacity](capacity-storage.md) -->
+For now, if you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications occur as alerts in the Power Platform admin center. In the future, certain admin operations won't be available when a tenant exceeds storage capacity entitlements. Check back for updated information. 
 
 ### See also
-
 [Legacy storage capacity](legacy-capacity-storage.md) <br />
 [Common Data Service storage capacity](capacity-storage.md) <br />
 [Free up storage space](free-storage-space.md) <br />

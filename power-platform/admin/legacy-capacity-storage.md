@@ -21,7 +21,7 @@ In April 2019, we introduced Common Data Service capacity storage that is optimi
 
 ## Licenses for the legacy storage model
 
-The following licenses provide capacity using the legacy storage model. If you have any of the following licenses and none of the new model licenses<!--Edit okay? It didn't seem accurate just to say "if you have any of the following licenses..."-->, you'll see the legacy model report: 
+The following licenses provide capacity using the legacy storage model. If you have any of the following licenses and none of the new model licenses, you'll see the legacy model report: 
 
 - Microsoft Dynamics CRM Online Additional Non-production Instance 
 - Microsoft Dynamics CRM Online Additional Test Instance 
@@ -59,16 +59,16 @@ The report displays available storage capacity by source in addition to overall 
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
-To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.<!--In the table below the image, the text doesn't match UI strings. Is that okay? (Please see capacity-storage.md for details.) -->
+To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.
 
 > [!div class="mx-imgBorder"] 
 > ![Capacity storage details](media/capacity-old-license-model-explained.png "Capacity storage details")
 
 |  | |
 |---------|---------|
-|**1**   |**Current usage**  <ul><li>**File**: The following entities are used: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database**: All other entities are counted for your database</li></ul> |
-|**2**    |**Capacity types and sources** <ul><li>**Organization base**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md).</li></ul>      |
-|**3**     |**Top capacity usage, by environment**: The environments that consume the most capacity        |
+|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
+|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 
 ### Storage capacity tab
 

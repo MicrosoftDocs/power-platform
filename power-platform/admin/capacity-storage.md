@@ -38,7 +38,7 @@ The following licenses provide capacity by using the new storage model. If you h
 To see whether you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Products & Services**.
 
 > [!NOTE]
-> If you have a mix of [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) and the abovementioned<!--Ed. note: One word via American Heritage dictionary.--> new model licenses, you'll see the new model report.
+> If you have a mix of [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) and the abovementioned new model licenses, you'll see the new model report.
 > 
 > If you have none of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) nor the new model licenses, you'll see the new model report.
 
@@ -50,7 +50,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 3. View the data on the **Summary** page.
 
-The new licensing storage model looks like the following image. <!--Ed. note: According to Buckley, we want text in the leading brackets of an image call (alt text), and also text in quotation marks after the file name (the "index attribute" that shows up in tooltips).-->
+The new licensing storage model looks like the following image. 
 
 > [!div class="mx-imgBorder"] 
 > ![New licensing storage model](media/capacity-new-license-model.png "New licensing storage model")
@@ -61,25 +61,25 @@ The new licensing storage model looks like the following image. <!--Ed. note: Ac
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
-To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.<!--Ed. note: The description of the image doesn't match the UI strings (noted in parens below). Will the image be updated, or should the text be? Also, note the change to alt text so we don't have two consecutive images with identical alt text. -->
+To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.
 
 > [!div class="mx-imgBorder"] 
-> ![Capacity hub walkthrough, Summary tab](media/storage-data-capacity-page-review.png "Capacity hub walkthrough, Summary tab")
+> ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
 
 |  | |
 |---------|---------|
-|(1)   |**Current usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
-|(2)    |**Capacity types and sources** <ul><li>**Organization base<!--"Org (tenant) default"?-->**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
-|(3)     |**Top capacity<!--"storage"?--> usage, by environment**: The environments that consume the most capacity        |
+|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
+|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 
 ### Storage capacity tab
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Analytics** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.<!--as above, please note change to alt text. -->
+To view the **Storage capacity** page, select **Analytics** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
 
 > [!div class="mx-imgBorder"] 
-> ![Capacity hub walkthrough, Storage tab](media/storage-data-per-environment2.png "Capacity hub walkthrough, Storage tab")
+> ![Details button](media/storage-data-per-environment2.png "Details button")
 
 
 > [!NOTE]
@@ -88,7 +88,7 @@ To view the **Storage capacity** page, select **Analytics** > **Capacity** > **S
 >   - Preview
 >   - Support
 >   - Developer
-> - You can select an environment that's showing 0 GB, and then go to its **Environment Analytics** page to see the actual consumption.<!--Edit okay? I wasn't sure what this was saying. -->
+> - You can select an environment that's showing 0 GB, and then go to its **Environment Analytics** page to see the actual consumption.
 
 ### Environment capacity analytics
 
@@ -112,21 +112,11 @@ The following details are provided:
 -   Actual log usage
 -   Top tables and their growth over time
 
-<!--editor's note: If you bring this image back, please add alt text and spell out "CDS." -->
-<!--
-Select **Applied filters** at the the top of the page to filter data for different time spans. 
-
-> [!div class="mx-imgBorder"] 
-> ![](media/storage-data-cds2-prod-env2.png "CDS 2.0 Production environment")
--->
-
-
-
 ## Changes for exceeding storage capacity entitlements
 
 We're making changes for what happens when an organization's storage capacity usage is greater than the capacity entitled or purchased via add-ons.
 
-For now, if you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information. More information: [Legacy storage capacity](legacy-capacity-storage.md)<!--ed. note deleting circular reference: or [Common Data Service storage capacity](capacity-storage.md).--> 
+For now, if you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information. 
 
 ## Example storage capacity scenarios
 
@@ -171,7 +161,7 @@ This tenant is 10 GB over in log usage but has 20 GB available in database capac
 |**Log**     |  10 GB       | 5 GB        |
 |**File**     | 200 GB        | 290 GB        |
 
-This tenant is 90 GB over in file usage. Despite having 85 GB available (80 GB database + 5 GB log) in storage capacity, the tenant is considered to be in deficit.<!--Ed. note: Suggested, to be parallel with the wording in Scenario 1.--> This tenant should free up storage or purchase more capacity.
+This tenant is 90 GB over in file usage. Despite having 85 GB available (80 GB database + 5 GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
 
 ## Actions to take for a storage capacity deficit
 
@@ -180,8 +170,7 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 ## FAQ
 
 ### Do indexes affect database storage usage?
-<!--Ed. note: Recommend putting some kind of answer at the beginning instead of burying the lead. Maybe it should be "Yes" instead of "Possibly"?-->
-Possibly. Database storage includes both the database records and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Common Data Service is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.<!--Edit okay? Common Data Service can't be the agent of action here.--> Compressing indexes to reduce storage is an example of these optimizations. Common causes for an increase in index size are:
+Possibly. Database storage includes both the database records and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Common Data Service is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity. Compressing indexes to reduce storage is an example of these optimizations. Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-the-box, or part of an update or solution installation).
 - Data volume or complexity changes.
