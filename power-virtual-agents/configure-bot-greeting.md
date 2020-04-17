@@ -36,7 +36,7 @@ You can also combine the customized greeting with [customization to the look and
 
 To customize the greeting, you need to know your Bot ID. 
 
-You can get the Bot ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agent-bot-parameters). 
+You can get the Bot ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters). 
 
 
 ## Deploy a custom canvas for your bot
