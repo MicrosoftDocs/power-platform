@@ -85,6 +85,9 @@ For more information, see [Environments administration in Power Apps](environmen
 
 7. Review the policy settings and then select **Create Policy**.
 
+   > [!div class="mx-imgBorder"] 
+   > ![Review new policy](media/dlp-new-policy-review.png "Review new policy")
+
     Connectors can reside in only one data group at a time and are added to the **No business data allowed** group by default. By moving Common Data Service and SharePoint to the **Business data only** group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **No business data allowed** group.
 
 The policy is created and appears in the list of data loss prevention policies. Since the Twitter connector resides in the **No business data allowed** data group, this policy ensures that the Common Data Service and SharePoint do not share their data with Twitter.
