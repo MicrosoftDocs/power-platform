@@ -16,13 +16,13 @@ ms.cusom: "multi-geo, gdpr"
 
 
     
-Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as “regions”) listed in this article. You can create a bot by default in your tenant’s location or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
+Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as “regions”) listed in this article. You can create a bot by default in your tenant’s location, or you can choose the data center you want to use when [setting up your environment](environments-first-run-experience.md).
 
 Microsoft may replicate customer data to other regions available within the same geography for data durability. 
 
 No matter where customer data is stored, Microsoft does not control or limit the locations from which customers or their end users may access customer data.
 
-Data will be stored in United States, if a bot author’s tenant location is not listed under the Data locations table above. For France, data will be stored in Europe.   
+Data will be stored in United States if a bot author’s tenant location is not listed under the Data locations table below. For France, data will be stored in Europe.   
 
 
 > 
@@ -35,7 +35,7 @@ Data will be stored in United States, if a bot author’s tenant location is not
 
 
 ## Data locations
-Azure geographic locations (geos) | Azure datacenters (regions)
+Azure geographic locations (geos) | Azure data centers (regions)
  ---|---
 United States | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA)
 Europe | West Europe (Netherlands), North Europe (Ireland)
