@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.author: matp 
 search.audienceType: 
   - admin
@@ -32,9 +32,11 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
 > - Activity Log (Office 365 portal)
 > - Exchange (Server-side sync)
 > 
-> Encryption key management cannot be applied to environments that have data stored in [File](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-fields#file-fields) and [Image](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-fields#image-fields) fields. 
-> 
-> A majority of existing environments have file and log stored in non-Azure SQL databases. These environments cannot be opted in to self-managed encryption key. Only new environments (once you signed up for this program) can be enabled with self-managed encryption key.
+> Note the following: 
+> - The self-manage the database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
+> - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.  
+> - Encryption key management cannot be applied to environments that have data stored in [File](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-fields#file-fields) and [Image](https://docs.microsoft.com/powerapps/maker/common-data-service/types-of-fields#image-fields) fields. 
+> - A majority of existing environments have file and log stored in non-Azure SQL databases. These environments cannot be opted in to self-managed encryption key. Only new environments (once you signed up for this program) can be enabled with self-managed encryption key.
   
 <a name="KM_tasks"></a>   
 ## Introduction to key management  

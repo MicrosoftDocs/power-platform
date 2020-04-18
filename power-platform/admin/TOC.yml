@@ -75,20 +75,20 @@
           href: analytics-flow.md
         - name: Power Apps analytics
           href: analytics-powerapps.md
-     #   - name: What's new for storage
-     #     href: whats-new-storage.md
-        - name: Capacity # New capacity storage model 
+        - name: What's new for storage
+          href: whats-new-storage.md
+        - name: New capacity storage model 
           href: capacity-storage.md
-    #    - name: Legacy capacity storage model
-    #      href: legacy-capacity-storage.md
+        - name: Legacy capacity storage model
+          href: legacy-capacity-storage.md
         - name: View self-service capacity
           href: view-self-service-capacity.md
         - name: Add-on capacity management
           href: capacity-add-on.md
-        - name: Free storage space
+        - name: Free up storage space
           href: free-storage-space.md
       - name: View and manage resources
-     #   href: view-manage-resources.md
+        href: view-manage-resources.md
         items:
         - name: Manage Dynamic 365 apps
           href: manage-apps.md
