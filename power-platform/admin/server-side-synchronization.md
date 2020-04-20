@@ -38,7 +38,7 @@ Server-side synchronization is the preferred option for organizations with users
 ## Features available with server-side synchronization 
  Some features offered by server-side synchronization include the following:  
   
-- **Sent item folder**: If your server version is 9.1.0000.16819 or greater, email messages sent from Dynamics 365 apps using a server-side synchronization enabled Exchange mailbox will be visible in the **Sent Items** folder in the Exchange sender mailbox. To determine your version, sign in and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**.  
+- **Sent Items folder**: If your server version is 9.1.0000.16819 or greater, email messages sent from Dynamics 365 apps using a server-side synchronization enabled Exchange mailbox will be visible in the **Sent Items** folder in the Exchange sender mailbox. To determine your version, sign in and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**.  
 
 - **Email folder tracking**: You can simply drag email to a folder to track it. Folder tracking works on any mobile device that supports [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)], which means you can track email from just about any device.  
   
