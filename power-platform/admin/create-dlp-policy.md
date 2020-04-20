@@ -45,9 +45,9 @@ In these steps, you'll add SharePoint and Salesforce to the **Business** data on
 
    |Setting  |Description  |
    |---------|---------|
-   |Set default group | Default: **Business**. See xyz.        |
+   |Set default group | Default: **Business**. For more information on the default group, see xyz.        |
    |Business (n)     | Connectors for sensitive data. Connectors in this group can’t share data with connectors in other groups. Unassigned connectors will show up here by default.        |
-   |Non-Business / Default (n)      | Connectors for non-sensitive data. Connectors in this group can’t share data with connectors in other groups.       |
+   |Non-Business / Default (n)      | Default: All app connectors are originally assigned to this data group. Connectors in this group can’t share data with connectors in other groups.       |
    |Blocked (n)      | Blocked connectors can’t be used where this policy is applied.  |
    |Search Connectors     | To search a long list of policies to find specific DLP policies.        |
    |Name     | The name of the connector.        |
@@ -67,7 +67,9 @@ In these steps, you'll add SharePoint and Salesforce to the **Business** data on
    > [!div class="mx-imgBorder"] 
    > ![Business data group](media/dlp-business-data-group.png "Business data group")
 
-5. Tenant admins, choose the environment scope. Environment admins won't see scope options so move to Step 6.
+       Connectors can reside in only one data group at a time. By moving the SharePoint and Salesforce connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** and **Blocked** groups.
+
+5. Tenant admins, choose the scope of the DLP policy. If you're an environment admin, you won't see scope settings so move to Step 6.
 
    > [!div class="mx-imgBorder"] 
    > ![Define scope](media/dlp-define-scope.png "Define scope")
@@ -76,7 +78,7 @@ In these steps, you'll add SharePoint and Salesforce to the **Business** data on
 
    Make your selections and select **Next**.
 
-6. Environment admins can add a single environment to the DLP policy. Tenant admins can add multiple environments to the DLP policy. Select **Next** to continue.
+6. Tenant admins can add multiple environments to the DLP policy. Environment admins can add a single environment.  Select **Next** to continue.
 
 
    > [!div class="mx-imgBorder"] 
@@ -90,9 +92,7 @@ In these steps, you'll add SharePoint and Salesforce to the **Business** data on
    > [!div class="mx-imgBorder"] 
    > ![Review new policy](media/dlp-new-policy-review.png "Review new policy")
 
-    Connectors can reside in only one data group at a time and are added to the **No business data allowed** group by default. By moving Common Data Service and SharePoint to the **Business data only** group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **No business data allowed** group.
-
-The policy is created and appears in the list of data loss prevention policies. Since the Twitter connector resides in the **No business data allowed** data group, this policy ensures that the Common Data Service and SharePoint do not share their data with Twitter.
+The policy is created and appears in the list of data loss prevention policies. As a result of this policy, SharePoint and Salesforce apps can share data. However, any connector, such as Twitter, that resides in the **Non-Business** data group will not share data with SharePoint and Salesforce apps.
 
 It's good practice for administrators to share a list of DLP policies with their organization so that users are aware of the policies prior to creating apps.
 
