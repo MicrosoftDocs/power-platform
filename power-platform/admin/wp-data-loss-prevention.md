@@ -216,7 +216,7 @@ Unlike Standard and Premium connectors which are available to all environments i
 > Only custom connectors stored in a tenant’s default environment will be displayed with its given icon and display name in the policy editor. All other custom connectors will be displayed with the default connector icon and their internal name.
 
 ### Default data group for new connectors
-Additionally, one data group must be designated as the default group to auto classify any new connectors added to Power Platform after your policy has been created. Initially, the **Non-Business** group is the default group for new connectors and all services. An administrator can change the default data group to the **Business** data group. See [Change the default data group](prevent-data-loss.md#change-the-default-data-group).
+One data group must be designated as the default group to auto classify any new connectors added to Power Platform after your policy has been created. Initially, the **Non-Business** group is the default group for new connectors and all services. An administrator can change the default data group to the **Business** data group. See [Change the default data group](prevent-data-loss.md#change-the-default-data-group).
 
 > [!NOTE]
 > Any new services that are added to Power Apps will be placed in the designated default group. For this reason, we recommend you keep **Non-Business** as the default group and manually add services into the **Business** or **Blocked** group after your organization has evaluated the impact of allowing business data to be shared with the new service.

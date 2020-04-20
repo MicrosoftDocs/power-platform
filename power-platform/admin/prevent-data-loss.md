@@ -66,5 +66,27 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
 
 ## Change the default data group
 
+1. In the list of data loss prevention policies, select an environment and then select **Edit Policy**.
 
+   > [!div class="mx-imgBorder"] 
+   > ![Edit DLP policy](media/dlp-edit-policy.png "Edit DLP policy")
 
+   > [!NOTE]
+   > Environment admins can't edit environments created by the tenant admin.
+
+2. Select the **Connectors** step in the **Edit Policy** process.
+
+3. In the upper-right, select **Set default group**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Edit default group](media/dlp-edit-policy.png "Edit default group")
+
+4. Choose a default group, and then select **Apply**. See [Connector classification](wp-data-loss-prevention.md#connector-classification) and [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors).
+
+5. Select **Next** as needed to close the **Edit Policy** process.
+
+The data group you chose will be the default group to auto classify any new connectors added to Power Platform after your policy has been created. 
+
+## See also
+[Data loss prevention policies](wp-data-loss-prevention.md) <br />
+[Create a data loss prevention (DLP) policy](create-dlp-policy.md)
