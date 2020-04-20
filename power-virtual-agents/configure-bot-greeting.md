@@ -17,9 +17,9 @@ ms.collection: virtualagent
 # Configure your bot to automatically start the conversation
 
 
-By default, chatbots created with Power Virtual Agents will load without a greeting, and will passively wait for the user to start the conversation.
+By default, chatbots created with Power Virtual Agents and [published to a website](publication-connect-bot-to-web-channels.md) will load without a greeting, and will passively wait for the user to start the conversation.
 
-If you're [publishing to a website](publication-connect-bot-to-web-channels.md), however, you can make the bot start the conversation with a customized greeting.
+However, you can use custom CSS and JavaScript code to automatically have the bot start the conversation when the bot loads.
 
 For example, you could have your bot say "Hi, I’m Botty, a virtual agent" as soon a the bot loads.
 
