@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/01/2020
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Troubleshooting and monitoring server-side synchronization 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 This page is your source for issues and resolutions for troubleshooting server-side synchronization. Check back for updated information as issues are discovered and resolutions recorded.  
  
@@ -54,27 +54,29 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 ## Common alerts and recommended resolutions  
   
 ### Mailbox disabled for synchronization  
- **Alert:** The mailbox has been disabled for synchronizing appointments, contacts, and tasks for the mailbox because an error occurred while establishing a secure connection to the Exchange server. The owner of the email server profile has been notified.  
+**Alert:** The mailbox has been disabled for synchronizing appointments, contacts, and tasks for the mailbox because an error occurred while establishing a secure connection to the Exchange server. The owner of the email server profile has been notified.  
   
  **Solution:**  [https://support.microsoft.com/kb/2993502](https://support.microsoft.com/kb/2993502)  
   
 ### Error while establishing a secure connection  
- **Alert:** Email cannot be received for the mailbox because an error occurred while establishing a secure connection to the email server. The mailbox has been disabled for receiving email and the owner of the email server profile has been notified.  
+**Alert:** Email cannot be received for the mailbox because an error occurred while establishing a secure connection to the email server. The mailbox has been disabled for receiving email and the owner of the email server profile has been notified.  
   
  **Solution:**  [https://support.microsoft.com/kb/2993502](https://support.microsoft.com/kb/2993502)  
   
 ### Email message has "Pending Send" status  
- If you create an email message in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from model-driven apps in Dynamics 365.  
+If you create an email message in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from model-driven apps in Dynamics 365.  
   
  Verify that the user who sent the email is enabled for sending email.  
+
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Mailboxes**.  
   
-1. Click **Settings**, and then click **Email Configuration**.  
+3. Change the view to **Active Mailboxes.**  
   
-2. Click **Mailboxes**, and then change the view to **Active Mailboxes.**  
+4. Select the mailbox record for the user who sent the email, and then click the **Edit** button.  
   
-3. Select the mailbox record for the user who sent the email, and then click the **Edit** button.  
-  
-4. Verify the user is correctly configured and enabled for sending email:  
+5. Verify the user is correctly configured and enabled for sending email:  
   
    - If the user's mailbox record is configured to use server-side synchronization for outgoing email, verify the user's email address is approved and is also tested and enabled.  For more information about configuring server-side synchronization, see [Set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md).  
   
@@ -89,19 +91,17 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
   
  To approve one or more mailboxes:  
   
-1. Sign in to model-driven apps in Dynamics 365 as a user with the Global admin role or the Dynamics 365 service administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Mailboxes**.  
   
-2. [!INCLUDE[proc_settings_email_config](../includes/proc-settings-email-config.md)]  
+3. Select **Active Mailboxes** or perform an **Advanced Find** query to identify a list of mailboxes to update.  
   
-3. Click **Mailboxes**.  
+4. Select the list of mailboxes you want to approve and then click **Approve Email**.  
   
-4. Select **Active Mailboxes** or perform an **Advanced Find** query to identify a list of mailboxes to update.  
+5. Click **OK** to approve the email addresses.  
   
-5. Select the list of mailboxes you want to approve and then click **Approve Email**.  
-  
-6. Click **OK** to approve the email addresses.  
-  
-7. Click **Test & Enable Mailboxes** to retest email processing for the enabled mailboxes.  
+6. Click **Test & Enable Mailboxes** to retest email processing for the enabled mailboxes.  
   
 ### Email addresses must be approved  
  **Alert:** One or more mailboxes have been disabled for sending/receiving email because their email addresses have not been approved. Approve the email addresses, and then enable the mailboxes for sending/receiving email." or "Email cannot be received for the mailbox \<Mailbox Name> because the email address of the mailbox \<Mailbox Name> is not approved and the mailbox has been disabled. The owner of the associated email server profile \<Email Server Profile name> has been notified.  
@@ -110,22 +110,20 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
   
  Mailboxes must be approved before the email will be processed. To approve mailboxes:  
   
-1. Sign in to model-driven apps in Dynamics 365 as a user with the Global admin role or the Dynamics 365 service administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Email** > **Mailboxes**.  
   
-2. [!INCLUDE[proc_settings_email_config](../includes/proc-settings-email-config.md)]  
+3. Select **Active Mailboxes** or perform an **Advanced Find** query to identify a list of mailboxes to update.  
   
-3. Click **Mailboxes**.  
+4. Select the list of mailboxes you want to approve and then click **Approve Email**.  
   
-4. Select **Active Mailboxes** or perform an **Advanced Find** query to identify a list of mailboxes to update.  
+5. Click **OK** to approve the email addresses.  
   
-5. Select the list of mailboxes you want to approve and then click **Approve Email**.  
-  
-6. Click **OK** to approve the email addresses.  
-  
-7. Click **Test & Enable Mailboxes** to retest email processing for the enabled mailboxes.  
+6. Click **Test & Enable Mailboxes** to retest email processing for the enabled mailboxes.  
   
 > [!NOTE]
->  You can remove the requirement for approving mailboxes using: **Settings** > **Administration** > **System Settings** > **Email** tab. Uncheck **Process emails only for approved users** and **Process emails only for approved queues**, then click **OK**. If you are using the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, email addresses must still be approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator.  
+> You can remove the requirement for approving mailboxes using: **Settings** > **Administration** > **System Settings** > **Email** tab. Uncheck **Process emails only for approved users** and **Process emails only for approved queues**, then click **OK**. If you are using the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, email addresses must still be approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator.  
   
 ### Mailbox location could not be determined  
  **Alert:** The mailbox location could not be determined while sending/receiving the email message \<Message Subject>. The mailbox \<Mailbox Name> has been disabled for sending/receiving email and the owner of the associated email server profile \<Email Server Profile name> has been notified.  
@@ -154,7 +152,7 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
   
  To add the Organizer field to the appointment form:  
   
-1.  Go to **Settings** > **Customizations** > **Customize the System**  
+1.  In the web app, go to **Settings** > **Customizations** > **Customize the System**  
   
 2.  Under **Components**, expand **Entities** > **Appointment**, and then click **Forms**.  
   

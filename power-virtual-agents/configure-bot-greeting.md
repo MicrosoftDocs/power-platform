@@ -14,14 +14,14 @@ ms.custom: "customization"
 ms.collection: virtualagent
 ---
 
-# Configure your bot to automatically start the conversation
+# Configure your bot to start the conversation automatically
 
 
 By default, chatbots created with Power Virtual Agents and [published to a website](publication-connect-bot-to-web-channels.md) will load without a greeting, and will passively wait for the user to start the conversation.
 
 However, you can use custom CSS and JavaScript code to automatically have the bot start the conversation when the bot loads.
 
-For example, you could have your bot say "Hi, I’m Botty, a virtual agent" as soon a the bot loads.
+For example, you could have your bot say, "Hi, I’m Botty, a virtual agent" as soon a the bot loads.
 
 First, you'll need to deploy a custom canvas that includes arguments that trigger the greeting. By default, the custom canvas calls the default system greeting topic. You can, however, create a new topic to be used as the greeting, although you will need to modify the custom canvas code.
 
@@ -40,7 +40,7 @@ You can also combine the customized greeting with [customization to the look and
 
 To customize the greeting, you need to know your Bot ID. 
 
-You can get the Bot ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agent-bot-parameters). 
+You can get the Bot ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters). 
 
 
 ## Deploy a custom canvas for your bot
@@ -74,7 +74,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
                     display: table-cell;
                     padding: 13px 0px 0px 20px;
                 }
-                #heading {
+                .heading {
                     background-color: black;
                     height: 50px;
                 }
@@ -97,7 +97,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
         </head>
         <body>
             <div>
-                <div id="heading">
+                <div class="heading">
 
                     <!-- Change the h1 text to change the bot name -->    
                     <h1>Contoso Bot Name</h1>
@@ -166,7 +166,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
 5. Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom canvas.
 
 6. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
+    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
 
 ## Change the bot's default greeting
 
@@ -196,7 +196,7 @@ We recommend you modify the system greeting topic so that you don't have to edit
 
     ![Publish latest bot content](media/channel-publish-latest-content.png "Publish latest bot content")
 
-You can now test your bot by going to the web page where you [deployed your bot](publication-fundamentals-publish-channels.md). You'll see the bot start the conversation by automatically showing the updated greeting topic.
+You can now test your bot by going to the web page where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the greeting topic.
 
 
 ### Create a new user topic
@@ -231,7 +231,7 @@ You can now test your bot by going to the web page where you [deployed your bot]
          }, 
     ```
 
-You can now test your bot by going to the web page where you [deployed your bot](publication-fundamentals-publish-channels.md). You'll see the bot start the conversation by automatically showing the new topic.
+You can now test your bot by going to the web page where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the new topic.
 
 
 

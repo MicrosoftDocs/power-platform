@@ -2,7 +2,7 @@
 title: "Configure Power Virtual Agents to hand off bot conversations to any generic engagement hub"
 description: "Guidance to hand off a bot conversation to any generic engagement hub"
 keywords: "human handoff, generic handoff, generic engagement hub support"
-ms.date: 4/2/2020
+ms.date: 4/17/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article

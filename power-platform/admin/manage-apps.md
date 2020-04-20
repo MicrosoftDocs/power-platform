@@ -15,6 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
+
 # Manage Dynamics 365 apps
 
 You can now install, configure, and manage Dynamics 365 apps in the Power Platform admin center.

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -147,3 +147,9 @@ For customers that want to use a Power Apps per app plan and they have the *Allo
    1. Set-MsolCompanySettings -AllowAdHocSubscriptions $false
 
 6. Execute the following command, if internal consent plans were previously removed: [Add-AllowedConsentPlans](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#block-trial-licenses-commands)
+
+### Why are makers prompted to start a trial when creating a premium connection using gateways? 
+This is an artifact of previous, but no longer required, licenses being assigned to Power Apps makers. This license check and prompt to start a trial will eventually be removed. 
+
+**Mitigation steps**:
+The maker should sign up for the trial to proceed with creating the connection that uses a gateway. 
