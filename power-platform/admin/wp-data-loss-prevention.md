@@ -207,6 +207,8 @@ Data cannot be altogether restricted to flow to a specific service by marking th
 </tr>
 </table>
 
+*[need info]
+
 ### Custom connector classification
 By default, custom connectors are not part of the standard configuration capabilities of DLP policies from Power Platform Admin Center UX. They can however be set up for DLP across ‘Business’, ‘Non-Business’ and ‘Blocked’ categories using DLP Powershell commands listed here - <Add example here using help from Geoffrey>. 
 
