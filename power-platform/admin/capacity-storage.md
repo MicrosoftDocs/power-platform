@@ -74,7 +74,7 @@ To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 
-The actual files such as .pdf (or any other file attachment type) are stored in file storage. However certain attributes needed to access the files are stored in the database as well.
+The actual files such as .pdf (or any other file attachment type) are stored in file storage. However, certain attributes needed to access the files are stored in the database as well.
 
 ### Storage capacity tab
 
