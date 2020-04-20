@@ -49,9 +49,9 @@ The key point being that connectors in the same group can share data, while conn
 Data cannot [Jim: can?] be altogether restricted to flow to a specific service by marking that connector as **Blocked**. For example, if you place Facebook and Twitter in the Blocked group, makers cannot create a PowerApp or PowerAutomate resource that uses Facebook connector. This in turn restricts data flows to this service using Power Platform. 
 
 > [!NOTE]
-> **Standard** licensed connectors where the service/stack is owned by Microsoft cannot be classified as **Blocked** through DLP policies. They can however be classified into Business or **Non-Business**. These connectors are either enterprise class services such as O365 with not additional licensing implications or are public facing cloud services hosted by Microsoft that do not store data such as Bing Search or are private use only Microsoft services such as Outlook.com that only support MSA (private account) login through connector surface. Privacy policy statement for Microsoft hosted public services can be found here - https://privacy.microsoft.com. Full list of connectors that cannot be blocked can be found here - <link TBD>
+> **Standard** licensed connectors where the service is owned by Microsoft cannot be classified as **Blocked** through DLP policies. They can be classified into **Business** or **Non-Business** data groups. These connectors are either enterprise class services such as Microsoft 365 with no additional licensing implications or are public facing cloud services hosted by Microsoft that do not store data, such as Bing Search. Or, these connectors are private use only Microsoft services, such as Outlook.com, that only support Microsoft account (private account) sign-in through the connector. Privacy policy statement for Microsoft hosted public services can be found [here](https://privacy.microsoft.com). A full list of connectors that cannot be blocked can be found in the next section.
 >
-> Common data service connectors are the only Premium connectors that cannot be blocked. CDS is an integral part of Power Platform, hence the exception.
+> Common Data Service connectors are the only Premium connectors that cannot be blocked. Common Data Service is an integral part of Power Platform, hence the exception.
 
 ### List of connectors that cannot be blocked
 
@@ -205,24 +205,21 @@ Data cannot [Jim: can?] be altogether restricted to flow to a specific service b
 </tr>
 </table>
 
-*[need info]
+*[Jim: need info]
 
 ### Custom connector classification
-By default, custom connectors are not part of the standard configuration capabilities of DLP policies from Power Platform Admin Center UX. They can however be set up for DLP across **Business**, **Non-Business** and **Blocked**categories using DLP PowerShell commands listed here - <Add example here using help from Geoffrey>. 
+By default, custom connectors are not part of the standard configuration capabilities of DLP policies in the Power Platform admin center. They can be set up for DLP across **Business**, **Non-Business** and **Blocked** groups using the DLP PowerShell commands listed here - [Jim: Add example here using help from Geoffrey]. 
 
-Unlike standard and premium connectors which are available to all environments in the tenant, custom connectors are scoped specific to an individual environment. Therefore, tenant level DLP policies cannot be used to manipulate custom connectors. They are only available to categorize for environment level DLP policies. Using PowerShell, you can configure DLP to include these connectors. Once added, these will then be manageable in the Admin Portal.
+Unlike Standard and Premium connectors which are available to all environments in the tenant, custom connectors are scoped specific to an individual environment. Therefore, tenant-level DLP policies cannot be used to manipulate custom connectors. They are only available to categorize for environment-level DLP policies. Using PowerShell, you can configure DLP to include these connectors. Once added, these will then be manageable in the Admin Portal.
 
 > [!NOTE]
-> Only Custom Connectors stored in a tenant’s default environment will be displayed with its given icon and display name in the policy editor. All other custom connectors will be displayed with the default connector icon and their internal name.
+> Only custom connectors stored in a tenant’s default environment will be displayed with its given icon and display name in the policy editor. All other custom connectors will be displayed with the default connector icon and their internal name.
 
 ### Default data group for new connectors
-Additionally, one data group must be designated as the default group to auto classify an new connectors added to Power Platform after your policy has been created. Initially, the No business data allowed group is the default group for new connectors and all services are in the data group. An administrator can change the default data group to the business data only data group. For step by step instructions on how to change the default data group settings for DLP policy refer to this <link TBD>.
+Additionally, one data group must be designated as the default group to auto classify any new connectors added to Power Platform after your policy has been created. Initially, the **Non-Business** group is the default group for new connectors and all services. An administrator can change the default data group to the **Business** data group. See [Change the default data group](prevent-data-loss.md#change-the-default-data-group).
 
 > [!NOTE]
-> Any new services that are added to Power Apps will be placed in the designated default group. For this reason, we recommend you keep the **Non-Business** as the default group and manually add services into the Business or Blocked group after your organization has evaluated the impact of allowing business data to be shared with the new service.
-
-
-
+> Any new services that are added to Power Apps will be placed in the designated default group. For this reason, we recommend you keep **Non-Business** as the default group and manually add services into the **Business** or **Blocked** group after your organization has evaluated the impact of allowing business data to be shared with the new service.
 
 ## Policy scope
 ### Tenant-level policies
@@ -253,10 +250,10 @@ For a description of these steps, see [Create a data loss prevention (DLP) polic
 ## Known issues
 
 ### Cloud PKI Management
-Cloud PKI Management is wrongfully marked as exempt from blocking. It is not a Microsoft owned service and will be available for blocking after this known issue is fixed.
+Cloud PKI Management is wrongfully marked as exempt from blocking. It is not a Microsoft owned service and will be available for blocking after this issue is fixed.
 
 ### LinkedIn and Microsoft Staffhub
-LinkedIn and Microsoft Staffhub are wrongfully marked as available for blocking. They are Microsoft owned standard connectors and will be exempt from blocking after this known issue is fixed.
+LinkedIn and Microsoft Staffhub are wrongfully marked as available for blocking. They are Microsoft owned standard connectors and will be exempt from blocking after this issue is fixed.
 
 
 ## Legacy DLP policy support
