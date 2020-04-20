@@ -87,109 +87,123 @@ Data cannot be altogether restricted to flow to a specific service by marking th
 <td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Microsoft Teams </td>
+<td width="20%"> Microsoft Flow for Admins</td>
+<td width="20%"> Excel </td>
+<td width="20%"> Cloud App Security</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Microsoft To-Do (Business) </td>
+<td width="20%"> Power BI</td>
+<td width="20%">  </td>
+<td width="20%"> Computer Vision API (Azure)</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Office 365 Groups </td>
+<td width="20%"> PowerApps for Admins</td>
+<td width="20%">  </td>
+<td width="20%"> Content Moderator</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Office 365 Outlook </td>
+<td width="20%"> PowerApps for App Makers</td>
+<td width="20%">  </td>
+<td width="20%"> Custom Vision (Azure)</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Office 365 Users </td>
+<td width="20%"> PowerPlatform for Admins</td>
+<td width="20%">  </td>
+<td width="20%"> Face API (Azure)</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Office 365 Video </td>
+<td width="20%"> Content Conversion</td>
+<td width="20%">  </td>
+<td width="20%"> GitHub</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> OneDrive for Business </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> LinkedIn V2</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> OneNote (Business) </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> LUIS (Azure)</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Outlook Customer Manager </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Microsoft Kaizala</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Outlook Tasks </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> QnA Maker (Azure)</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Planner </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Microsoft School Data Sync</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Project Online </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Microsoft Translator</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> SharePoint </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> MSN Weather</td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%"> Skype for Business Online </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Text Analytics </td>
+<td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa </td>
-<td width="20%"> aaaaaa</td>
-<td width="20%"> aaaaaa</td>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Video Indexer (V2)</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Wunderlist</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Yammer</td>
+<td width="20%"> </td>
 </tr>
 </table>
 
