@@ -2,7 +2,7 @@
 title: "Automatically start a Power Virtual Agents bot conversation"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: ""
-ms.date: 4/17/2020
+ms.date: 4/20/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -29,7 +29,7 @@ You can also combine the customized greeting with [customization to the look and
 
 >[!IMPORTANT]
 >Having the bot start the conversation will show up in your [analytics](analytics-overview.md) will increase your session count.
->If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary#engagement-over-time-chart). 
+>If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary.md#engagement-over-time-chart). 
 >This might impact your analytics.
 
 ## Prerequisites

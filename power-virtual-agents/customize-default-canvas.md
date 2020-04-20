@@ -2,7 +2,7 @@
 title: "Customize the Power Virtual Agents web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: ""
-ms.date: 4/17/202
+ms.date: 4/20/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
