@@ -27,8 +27,17 @@ DLP policies enforce rules of what connectors can be used together by classifyin
 
 The following are the steps you follow to create a DLP policy.
 
-- Step 1: Assign the policy a name:
-- Step 2: 
+1. Assign the policy a name
+2. Classify connectors
+3. Define scope
+4. Select environments
+5. Review settings
+
+For a description of these steps, see [Create a data loss prevention (DLP) policy](create-dlp-policy.md).
+
+## The three data groups
+
+Explanation of: **Business**, **Non-Business**, and **Blocked**.
 
 
 <!-- 
