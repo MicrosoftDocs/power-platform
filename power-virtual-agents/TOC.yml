@@ -16,6 +16,8 @@
      href: environments-first-run-experience.md
    - name: Data locations for organizations
      href: data-location.md
+   - name: Quotas and rate limit considerations
+     href: requirements-quotas.md
 - name: Author and edit
   items:
    - name: Key concepts - Authoring
@@ -93,6 +95,8 @@
      href: configure-generic-handoff.md
    - name: Configure hand-off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
+   - name: Configure the bot to automatically start the conversation
+     href: configure-bot-greeting.md
    - name: Customize the look and feel of the bot
      href: customize-default-canvas.md
    - name: Enable and configure Bot Framework Skills
