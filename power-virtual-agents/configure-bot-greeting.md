@@ -19,7 +19,7 @@ ms.collection: virtualagent
 
 By default, chatbots created with Power Virtual Agents will load without a greeting, and will passively wait for the user to start the conversation.
 
-However, with some simple modifications to the web page where you [deploy your bot](publication-fundamentals-publish-channels.md), you can make the bot start the conversation with a customized greeting.
+If you're [publishing to a website](publication-connect-bot-to-web-channels.md), however, you can make the bot start the conversation with a customized greeting.
 
 For example, you could have your bot say "Hi, I’m Botty, a virtual agent" as soon a the bot loads.
 
@@ -27,6 +27,10 @@ First, you'll need to deploy a custom canvas that includes arguments that trigge
 
 You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas.md).
 
+>[!IMPORTANT]
+>Having the bot start the conversation will show up in your [analytics](analytics-overview.md) will increase your session count.
+>If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary#engagement-over-time-chart). 
+>This might impact your analytics.
 
 ## Prerequisites
 
