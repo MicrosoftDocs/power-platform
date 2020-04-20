@@ -95,6 +95,8 @@
      href: configure-generic-handoff.md
    - name: Configure hand-off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
+   - name: Configure the bot to automatically start the conversation
+     href: configure-bot-greeting.md
    - name: Customize the look and feel of the bot
      href: customize-default-canvas.md
    - name: Enable and configure Bot Framework Skills
