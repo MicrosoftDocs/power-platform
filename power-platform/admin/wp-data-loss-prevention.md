@@ -57,7 +57,141 @@ Data cannot be altogether restricted to flow to a specific service by marking th
 
 ### List of connectors that cannot be blocked
 
-[table coming]
+<table style="width:100%">
+<tr>
+<th>Business Use<br />Office Connectors (Standard)</th>
+<th>Power Platform Connectors (Standard)</th>
+<th>Personal Use<br /> Office Connectors (Standard)*</th>
+<th>Other Microsoft Connectors (Standard)</th>
+<th>Exception for Premium Connector</th>
+</tr>
+<tr>
+<td width="20%"> Excel Online (Business) </td>
+<td width="20%"> Approvals</td>
+<td width="20%"> OneDrive </td>
+<td width="20%"> Azure AD</td>
+<td width="20%"> Common Data Service</td>
+</tr>
+<tr>
+<td width="20%"> Microsoft Forms </td>
+<td width="20%"> Notifications</td>
+<td width="20%"> Outlook.com </td>
+<td width="20%"> Bing Maps</td>
+<td width="20%"> Common Data Service<br /> (current environment)</td>
+</tr>
+<tr>
+<td width="20%"> Microsoft Forms Pro </td>
+<td width="20%"> Flow Management</td>
+<td width="20%"> Excel Online (OneDrive) </td>
+<td width="20%"> Bing Search</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+<tr>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa </td>
+<td width="20%"> aaaaaa</td>
+<td width="20%"> aaaaaa</td>
+</tr>
+</table>
 
 ### Custom connector classification
 By default, custom connectors are not part of the standard configuration capabilities of DLP policies from Power Platform Admin Center UX. They can however be set up for DLP across ‘Business’, ‘Non-Business’ and ‘Blocked’ categories using DLP Powershell commands listed here - <Add example here using help from Geoffrey>. 
