@@ -16,6 +16,8 @@
      href: environments-first-run-experience.md
    - name: Data locations for organizations
      href: data-location.md
+   - name: Quotas and rate limit considerations
+     href: requirements-quotas.md
 - name: Author and edit
   items:
    - name: Key concepts - Authoring

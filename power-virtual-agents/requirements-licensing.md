@@ -2,7 +2,7 @@
 title: "Assign user licenses and manage access to Power Virtual Agents"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing"
-ms.date: 4/15/2020
+ms.date: 4/17/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -83,6 +83,8 @@ You can [disable or enable the ability for users to sign up for a trial themselv
 When you purchase a license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
 
 The consumption of the capacity isn't reported at the tenant level, but [can be seen for each individual bot](analytics-billed-sessions.md).
+
+See [Quotas and rate limit capacity considerations for Power Virtual Agents](requirements-quotas.md) for more information.
 
 ## Using Power Automate with a Power Virtual Agents license
 
