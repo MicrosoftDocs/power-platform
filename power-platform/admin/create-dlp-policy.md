@@ -56,13 +56,13 @@ In these steps, you'll add SharePoint and Salesforce to the **Business** data on
 
    |Setting  |Description  |
    |---------|---------|
-   |Set default group | Default: **Business**. For more information on the default group, see xyz.        |
+   |Set default group | Default: **Business**. For more information on the default group, see [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors).        |
    |Business (n)     | Connectors for sensitive data. Connectors in this group can’t share data with connectors in other groups.         |
    |Non-Business / Default (n)      | By default, all connectors are considered part of the **Non-Business** data group; no connectors are included in the **Business** data group. This effectively means that all connectors in this group can share data with each other.    |
    |Blocked (n)      | Blocked connectors can’t be used where this policy is applied.  |
    |Search Connectors     | To search a long list of policies to find specific DLP policies.        |
    |Name     | The name of the connector.        |
-   |Blockable     | Connectors which can be blocked. See xyz for a list of connectors that cannot be blocked.     |
+   |Blockable     | Connectors which can be blocked. For a list of connectors that cannot be blocked, see [List of connectors that cannot be blocked](wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked).     |
    |Type     | [need explanation for Standard and Premium]        |
    |Publisher     |  The company that publishes the connector.       |
    |About      | Select the URL for more information about the connector.       |
@@ -113,7 +113,7 @@ It's good practice for administrators to share a list of DLP policies with their
 
 By default, all connectors are considered part of the **Non-Business** data group; no connectors are included in the **Business** data group. This effectively means that all connectors can be used with other connectors. 
 
-New connectors are added to the default data group, **Non-Business**. If you prefer, you can change which category is considered the default, and then all new connectors will be classified in that category by default. See xyz. 
+New connectors are added to the default data group, **Non-Business**. If you prefer, you can change which category is considered the default, and then all new connectors will be classified in that category by default. See [Change the default data group](prevent-data-loss.md#change-the-default-data-group). 
 
 Typically, most companies will want to treat new connectors as **Non-Business** until they evaluate if it is appropriate to use with data classified as business data. 
 
