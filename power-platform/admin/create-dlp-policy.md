@@ -132,6 +132,9 @@ You create a new tenant-wide DLP policy that has just Common Data Service added 
 |harePoint and Twitter     | This would be allowed         |
 |SharePoint, Twitter, and Common Data Service      | This would not be allowed         |
 
+## Use DLP PowerShell commands
+See [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).
+
 ### See also
 [Data loss prevention policies](wp-data-loss-prevention.md) <br />
 [Manage data loss prevention (DLP) policies](prevent-data-loss.md) <br />
