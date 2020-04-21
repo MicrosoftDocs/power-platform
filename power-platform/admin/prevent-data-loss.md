@@ -89,4 +89,5 @@ The data group you chose will be the default group to auto classify any new conn
 
 ## See also
 [Data loss prevention policies](wp-data-loss-prevention.md) <br />
-[Create a data loss prevention (DLP) policy](create-dlp-policy.md)
+[Create a data loss prevention (DLP) policy](create-dlp-policy.md) <br />
+[Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)

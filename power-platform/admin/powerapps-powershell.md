@@ -452,6 +452,7 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 | 04/29/2019 | Revised GCC terminology. |
 | 05/10/2019 | Revised links for cmdlets available on the PowerShell gallery to remove preset version. |
 | 05/20/2019 | Added support for environment-specific Data Loss Prevention (DLP) policies. |
+| 04/21/2020 | Added the new DLP cmdlets: New-DlpPolicy, Get-DlpPolicy, Set-DlpPolicy, Remove-DlpPolicy |
 
 ## Questions?
 

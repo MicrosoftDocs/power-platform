@@ -139,4 +139,5 @@ You create a new tenant-wide DLP policy that has just Common Data Service added 
 
 ### See also
 [Data loss prevention policies](wp-data-loss-prevention.md) <br />
-[Manage data loss prevention (DLP) policies](prevent-data-loss.md)
+[Manage data loss prevention (DLP) policies](prevent-data-loss.md) <br />
+[Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
