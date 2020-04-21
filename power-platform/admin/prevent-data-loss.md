@@ -87,7 +87,7 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
 
 The data group you chose will be the default group to auto classify any new connectors added to Power Platform after your policy has been created. 
 
-## See also
+### See also
 [Data loss prevention policies](wp-data-loss-prevention.md) <br />
 [Create a data loss prevention (DLP) policy](create-dlp-policy.md) <br />
 [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
