@@ -28,6 +28,18 @@ To follow the steps, **one** of the following items is required:
 
 For more information, see [Environments administration in Power Apps](environments-administration.md).
 
+## The DLP process
+
+The following are the steps you follow to create a DLP policy.
+
+1. Assign the policy a name
+2. Classify connectors
+3. Define scope
+4. Select environments
+5. Review settings
+
+These are covered in the next section.
+
 ## Create a DLP policy
 
 In these steps, you'll add SharePoint and Salesforce to the **Business** data only data group of a DLP policy. If a person who is part of the DLP policy's environment creates an app that shares data between SharePoint or Salesforce and any service in the **Non-business** data allowed data group, the app will not be allowed to connect.
