@@ -20,11 +20,8 @@ To protect data in your organization, Power Apps lets you create and enforce pol
 
 ## Prerequisites
 To follow the steps, **one** of the following items is required:
-* Power Platform service admin permissions
-* Global admin permissions
-* Power Apps Environment Admin permissions plus a Power Apps plan, Power Automate plan, or a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) license
-
-[Need to include tenant and environment admin definitions and redo list above to accomodate]
+- [Tenant admin](use-service-admin-role-manage-tenant.md) permissions
+- [Environment admin](environments-overview.md#environment-permissions) permissions plus a Power Apps plan, Power Automate plan, or a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) license
 
 For more information, see [Environments administration in Power Apps](environments-administration.md).
 
