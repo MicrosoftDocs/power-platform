@@ -79,7 +79,7 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
 3. In the upper-right, select **Set default group**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Edit default group](media/dlp-edit-policy.png "Edit default group")
+   > ![Set default group](media/dlp-edit-default-group.png "Set default group")
 
 4. Choose a default group, and then select **Apply**. See [Connector classification](wp-data-loss-prevention.md#connector-classification) and [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors).
 
