@@ -47,3 +47,7 @@ The Common Data Service connector might experience some throttling limits if the
 ## Government community cloud (GCC) environments
 
 - The CoE Starter Kit is available for government cloud (GCC) environments; however the custom connector to connect to Office 365 Audit Logs isn't available for GCC environments yet.
+
+## Sync Flow (Model Driven Apps)
+
+- It is currently not possible to retrieve model driven apps for Developer environments (My Name's environment).

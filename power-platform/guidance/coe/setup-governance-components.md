@@ -33,11 +33,25 @@ The Core Components solution is required for the Audit and Report Components sol
 
 The *Archive and Clean Up* flows will archive unneeded apps to a SharePoint library. If you intend to use those flows, you need to configure a SharePoint site and document library first.
 
-1. Create a new team site. More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+### Create the site
 
-1. Create a document library for your team site. More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939). Name the document library **PowerAppsArchive**.
+If you do not already have a SharePoint Site for CoE Admins in your tenant, create a new team one now for them to access.
+This site will be specified later in the following environmental variable: *Archive Site URL (SharePoint Site)*
 
-1. Ensure you set up the correct permissions for your SharePoint site; we recommend that only your admin team have Contribute access to the site.
+More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
+
+### Create the library
+
+We have created a helper flow to create the library for you, see the following zip file: *CreateCoEArchivalDocLibraryinSP.zip*
+
+1. Download and import this zipped flow into your CoE environment.
+
+2. Ensure the flow is turned on and run it
+3. When complete, you will have a Doc Lib named *PowerAppsArchive*
+
+Ensure you set up the correct permissions for your SharePoint site; we recommend that only your admin team have Contribute access to the site.
+
+More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939).
 
 ## Create an Azure AD security group
 
@@ -66,8 +80,8 @@ All flows in this solution depend on all environment variables' being configured
    
    ![Environment variables need to be updated](media/coe7.png "Environment variables need to be updated")
 
->[!Note]
->To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
+    >[!TIP]
+    >To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
 
 1. Select **See Environment Variables** to set the values as described in the following table.
 
