@@ -270,26 +270,26 @@ Evaluation of **Business** or **Non-Business** classification across multiple po
 
 Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across ten connectors (Sharepoint, Twitter, Salesforce, Facebook, Face API, Office 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob Storage, Box) classifying them as **Business** or **Non-Business** represented through six different examples  (-E1-, -E2-, -E3-, -E4-, -E5-, -E6-)
 
-**Policy A**
--E1- **Business** – Sharepoint, Twitter, Salesforce, Office 365 Outlook, Basecamp 3
+**Policy A** <br />
+-E1- **Business** – Sharepoint, Twitter, Salesforce, Office 365 Outlook, Basecamp 3 <br />
 -E2- **Non-Business** – Facebook, Face API, Adobe Sign, Azure Blob Storage, Box
 
-**Policy B**
--E3- **Business**  – Sharepoint, Facebook, Face API, Office 365 Outlook, Basecamp 3
+**Policy B** <br />
+-E3- **Business**  – Sharepoint, Facebook, Face API, Office 365 Outlook, Basecamp 3 <br />
 -E4- **Non-Business** – Twitter, Salesforce, Adobe Sign, Azure Blob Storage, Box
 
-**Policy C**
--E5- **Business**  – Facebook, Face API, Twitter, Salesforce, Office 365 Outlook 
+**Policy C** <br />
+-E5- **Business**  – Facebook, Face API, Twitter, Salesforce, Office 365 Outlook <br />
 -E6- **Non-Business** – Sharepoint, Adobe Sign, Azure Blob Storage, Box, Basecamp 3
 
-**Consolidated grouping**
--E1-, -E2-, -E3- Group 1 – Office 365 Outlook
--E1-, -E2-, -E6- Group 2 – Sharepoint, Basecamp 3
--E1-, -E4-, -E5- Group 3 – Twitter, Salesforce
--E1-, -E4-, -E6- Group 4 – <empty>
--E2-, -E3-, -E5- Group 5 – Facebook, Face API
--E2-, -E3-, -E6- Group 6 – <empty>
--E2-, -E4-, -E5- Group 7 – <empty>
+**Consolidated grouping** <br />
+-E1-, -E2-, -E3- Group 1 – Office 365 Outlook <br />
+-E1-, -E2-, -E6- Group 2 – Sharepoint, Basecamp 3 <br />
+-E1-, -E4-, -E5- Group 3 – Twitter, Salesforce <br />
+-E1-, -E4-, -E6- Group 4 – <empty> <br />
+-E2-, -E3-, -E5- Group 5 – Facebook, Face API <br />
+-E2-, -E3-, -E6- Group 6 – <empty> <br />
+-E2-, -E4-, -E5- Group 7 – <empty> <br />
 -E2-, -E4-, -E6- Group 8 – Adobe Sign, Azure Blob Storage, Box
 
 To summarize, an app or flow can only use connectors from these individual groups at any given time and not mix connectors across the eight different groups. From the examples above, note that multiple DLP policies applied on an environment will fragment your connector space in complicated ways. Therefore, it is highly recommended to have a minimum number of DLP policies applicable to any given environment. 
