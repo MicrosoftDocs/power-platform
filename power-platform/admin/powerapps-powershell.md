@@ -356,9 +356,41 @@ Get-AdminPowerAppConnector
 
 Returns a list of all custom connector details in the tenant.
 
-### Data Loss Prevention (DLP) policy commands
+### Data Loss Prevention (DLP) policy commands 
 
 These cmdlets will control the DLP policies on your tenant.
+
+#### Create policy
+
+```powershell
+New-DlpPolicy
+```
+
+Creates a new DLP policy for the logged in admin's tenant.
+
+#### Retrieve a list of of DLP objects
+
+```powershell
+Get-DlpPolicy
+```
+
+Gets policy objects for the signed in admin's tenant.
+
+#### Update a policy
+
+```powershell
+Set-DlpPolicy
+```
+
+Updates details on the policy, such as the policy display name.
+
+#### Remove a policy
+
+```powershell
+Remove-DlpPolicy
+```
+
+Deletes a DLP policy.
 
 #### Display all policies
 
