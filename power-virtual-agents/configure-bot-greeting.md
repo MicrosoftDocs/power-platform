@@ -2,7 +2,7 @@
 title: "Automatically start a Power Virtual Agents bot conversation"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: ""
-ms.date: 4/20/2020
+ms.date: 4/21/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
