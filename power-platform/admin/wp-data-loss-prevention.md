@@ -28,7 +28,7 @@ DLP policies are created in the [Power Platform admin center](https://admin.powe
 > [!NOTE]
 > Connector blocking capability using a three-way classification - **Business**, **Non-Business**, and **Blocked** - as well as DLP user interface support in the Power Platform admin center are currently in public preview. There is new DLP PowerShell support for three-way DLP classification which is also in public preview. Legacy DLP support for two-way classification along with user interface and PowerShell support for two-way classification – **Business**,**Non-Business** - is currently generally available and will continue to be available until the three-way policy is upgraded to general availability. 
 > 
-> For detailed information on Power Platform Connectors, see [Connectors documentation](https://docs.microsoft.com/en-us/connectors/).
+> For detailed information on Power Platform Connectors, see [Connectors documentation](https://docs.microsoft.com/connectors/).
 
 ## View existing policies
 
