@@ -131,8 +131,8 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read, update, and delete custom connector permissions | Get-AdminPowerAppConnectorRoleAssignment *(previously Get-AdminConnectorRoleAssignment)*<br> Set-AdminPowerAppConnectorRoleAssignment *(previously Set-AdminConnectorRoleAssignment)* <br> Remove-AdminPowerAppConnectorRoleAssignment *(previously Remove-AdminConnectorRoleAssignment)* |
 | Read a user's Power Apps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
 | Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
-| Create, read, update and delete data loss prevention policies for your organization - previous user interface | Get-AdminDlpPolicy *(previously Get-AdminApiPolicy)* <br> New-AdminDlpPolicy *(previously Add-AdminApiPolicy)* <br> Remove-AdminDlpPolicy *(previously Remove-AdminApiPolicy)* <br> Set-AdminDlpPolicy *(previously Set-AdminApiPolicy)* <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup <br/>Add-CustomConnectorToPolicy<br/> Remove-CustomConnectorFromPolicy|
-| Create, read, update and delete data loss prevention policies for your organization - new user interface | New-DlpPolicy <br> Get-DlpPolicy <br> Set-DlpPolicy <br> Remove-DlpPolicy |
+| Create, read, update and delete data loss prevention policies for your organization - connector blocking capability using a two-way classification - **Business** and **Non-Business** | Get-AdminDlpPolicy *(previously Get-AdminApiPolicy)* <br> New-AdminDlpPolicy *(previously Add-AdminApiPolicy)* <br> Remove-AdminDlpPolicy *(previously Remove-AdminApiPolicy)* <br> Set-AdminDlpPolicy *(previously Set-AdminApiPolicy)* <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup <br/>Add-CustomConnectorToPolicy<br/> Remove-CustomConnectorFromPolicy|
+| Create, read, update and delete data loss prevention policies for your organization - connector blocking capability using a three-way classification - **Business**, **Non-Business**, and **Blocked**  | New-DlpPolicy <br> Get-DlpPolicy <br> Set-DlpPolicy <br> Remove-DlpPolicy |
 | Read and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> |
 | Read, add, or remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
 
@@ -360,7 +360,7 @@ Returns a list of all custom connector details in the tenant.
 ### Data Loss Prevention (DLP) policy commands 
 
 > [!NOTE]
-> Connector blocking capability using a three-way classification - **Business**, **Non-Business**, and **Blocked** - as well as DLP user interface support in the Power Platform admin center are currently in public preview. There is new DLP PowerShell support for three-way DLP classification which is also in public preview. Legacy DLP support for two-way classification along with user interface and PowerShell support for two-way classification – **Business**,**Non-Business** - is currently generally available and will continue to be available until the three-way policy is upgraded to general availability. 
+> Connector blocking capability using a three-way classification - **Business**, **Non-Business**, and **Blocked** - as well as DLP user interface support in the Power Platform admin center are currently in public preview. There is new DLP PowerShell support for three-way DLP classification which is also in public preview. Legacy DLP support for two-way classification along with user interface and PowerShell support for two-way classification – **Business**, **Non-Business** - is currently generally available and will continue to be available until the three-way policy is upgraded to general availability. 
 
 These cmdlets will control the DLP policies on your tenant.
 
