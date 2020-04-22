@@ -158,7 +158,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    |---------|---------|---------|
    |**1**  |   | Assign one or more connectors across connector classification groups        |
    |**2**  |   | Connector classification group pivot tables         |
-   |**3**  |   | Search bar to find connectors across properties like **Name**, **Blockable**, Type Publisher       |
+   |**3**  |   | Search bar to find connectors across properties like **Name**, **Blockable**, **Type**, **Publisher**       |
    |**4**  |  |  Connector classification group  that maps any new connectors added by Power Platform *after* your DLP policy is created.         |
    |**5**  |   |  Select, multi-select, bulk select connector to move across groups        |
    |**6**  |   |  Alphabetical sort capability across individual columns        |
