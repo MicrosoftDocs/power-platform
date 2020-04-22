@@ -188,9 +188,9 @@ It's good practice for administrators to share a list of DLP policies with their
 This table describes the outcome of the DLP policy created.
 
 
-|Connector matrix  |Sharepoint (Business)  |Salesforce (Business)  |Outlook.com (Non-Business)   |Facebook (Blocked)  |Twitter (Blocked) |
+|Connector matrix  |SharePoint (Business)  |Salesforce (Business)  |Outlook.com (Non-Business)   |Facebook (Blocked)  |Twitter (Blocked) |
 |---------|---------|---------|---------|---------|---------|
-|Sharepoint (Business)     | Allowed        | Allowed        | Denied        |Denied        |Denied         |
+|SharePoint (Business)     | Allowed        | Allowed        | Denied        |Denied        |Denied         |
 |Salesforce (Business)     | Allowed        | Allowed        |  Denied       | Denied        | Denied        |
 |Outlook.com (Non-Business)      |Denied         | Denied        | Allowed        |  Denied       | Denied        |
 |Facebook (Blocked)     |  Denied       | Denied        |  Denied       |  Denied       |  Denied       |
