@@ -83,6 +83,33 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
    **Attributes** <br />
 
+   <table style="width:100%">
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+<tr>
+<td width="20%"> Name</td>
+<td width="80%"> The name of the connector. </td>
+</tr>
+<tr>
+<td width="20%"> Blockable</td>
+<td width="80%"> Connectors which can be blocked. For a list of connectors that cannot be blocked, see [List of connectors that cannot be blocked](wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked).  </td>
+</tr>
+<tr>
+<td width="20%"> Type</td>
+<td width="80%"> If the connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.    </td>
+</tr>
+<tr>
+<td width="20%"> Publisher</td>
+<td width="80%">  The company that publishes the connector. The publisher value can be different from the service owner. For example, Microsoft can be the publisher of Salesforce connector but the underlying service is not owned by Microsoft and is owned by Salesforce.  </td>
+</tr>
+<tr>
+<td width="20%"> About</td>
+<td width="80%"> Select the URL for more information about the connector. </td>
+</tr>
+</table>
+
+
    > [!div class="mx-tableFixed"]
    > |Attribute  |Description  |
    > |---------|---------|
