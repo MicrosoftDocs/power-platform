@@ -81,7 +81,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    > [!div class="mx-imgBorder"] 
    > ![Assign connectors](media/dlp-assign-connectors.png "Assign connectors") 
 
-   **Attributes** <br />
+   **Attributes** <br /><br />
 
    <table style="width:100%">
    <tr>
@@ -110,13 +110,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    </table>
 
-   **Lists** <br />
-
-   |Setting  |Description  |
-   |---------|---------|
-   |Business (n)     | Connectors for business sensitive data. Connectors in this group can’t share data with connectors in other groups.         |
-   |Non-Business / Default (n)      | Connectors for non-business data such as personal use data. Connectors in this group can’t share data with connectors in other groups.|
-   |Blocked (n)      | Blocked connectors can’t be used where this policy is applied.  |
+   **Lists** <br /><br />
 
    <table style="width:100%">
    <tr>
@@ -137,12 +131,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    </table>
 
-   **Actions** <br />
-
-   |Setting  |Description  |
-   |---------|---------|
-   |Set default group | Group that maps any new connectors added by Power Platform *after* your DLP policy is created.  For more information on the default group, see [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors).        |
-   |Search Connectors     | To search a long list of connectors to find specific connectors to classify them. You can search on any field in the connector list view such as Name, Blockable, Type, and Publisher.      |
+   **Actions** <br /><br />  
 
    <table style="width:100%">
    <tr>
@@ -151,7 +140,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    <tr>
    <td width="20%"> Set default group </td>
-   <td width="80%"> Group that maps any new connectors added by Power Platform *after* your DLP policy is created.  For more information on the default group, see [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors).      </td>
+   <td width="80%"> Group that maps any new connectors added by Power Platform *after* your DLP policy is created.  For more information on the default group, see <a href="wp-data-loss-prevention.md#default-data-group-for-new-connectors">Default data group for new connectors</a>.      </td>
    </tr>
    <tr>
    <td width="20%"> Search Connectors </td>
@@ -165,15 +154,15 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    > [!div class="mx-imgBorder"] 
    > ![Assign connectors actions](media/dlp-assign-connectors-actions.png "Assign connectors actions") 
 
-   |         |Description  |
-   |---------|---------|
-   |**1**     | Assign one or more connectors across connector classification groups        |
-   |**2**     | Connector classification group pivot tables         |
-   |**3**     | Search bar to find connectors across properties like **Name**, **Blockable**, Type Publisher       |
-   |**4**     |  Connector classification group  that maps any new connectors added by Power Platform *after* your DLP policy is created.         |
-   |**5**     |  Select, multi-select, bulk select connector to move across groups        |
-   |**6**     |  Alphabetical sort capability across individual columns        |
-   |**7**     |  Action buttons to assign individual connectors across connector classification groups        |
+   |         |   |Description  |
+   |---------|---------|---------|
+   |**1**  |   | Assign one or more connectors across connector classification groups        |
+   |**2**  |   | Connector classification group pivot tables         |
+   |**3**  |   | Search bar to find connectors across properties like **Name**, **Blockable**, Type Publisher       |
+   |**4**  |  |  Connector classification group  that maps any new connectors added by Power Platform *after* your DLP policy is created.         |
+   |**5**  |   |  Select, multi-select, bulk select connector to move across groups        |
+   |**6**  |   |  Alphabetical sort capability across individual columns        |
+   |**7**  |   |  Action buttons to assign individual connectors across connector classification groups        |
 
 
 4. Select one or more connectors, such as SalesForce and Sharepoint, and then select **Move to Business** from the top menu bar to apply to all the selected. You can also use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. 
@@ -201,17 +190,9 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
 6. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies this list will show all the environments in the tenant to the tenant admin. For environment-level policies this list will only show a subset of the environments in the tenant that are managed by the logged in user as Environment admin. 
 
-   **Attributes** <br />
+   **Attributes** <br /><br />
 
-   |Attribute  |Description  |
-   |---------|---------|
-   |Name     | The name of the environment.        |
-   |Type     | Type of the environment: Trial, Production, Sandbox, Default |
-   |Region     |Region associated with the environment.     |
-   |Created by     |  User who created the environment.      |
-   |Created (On)      | Date on which the environment was created.     |
 
-      <table style="width:100%">
    <tr>
    <th>Attribute</th>
    <th>Description</th>
@@ -238,12 +219,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    </table>
 
-   **Lists** <br />
-
-   |Setting  |Description  |
-   |---------|---------|
-   |Available (n)     | Environments which are not explicitly included or excluded in the policy scope. For environment policy and tenant-level policies with scope defined as **Add multiple environments**, this list represents the subset of environments that are not included in the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the set of environments that are included within the policy scope.       |
-   |Added to policy (n)     | For environment policy and tenant-level policies with scope defined as **Add multiple environments**, this pivot represents the subset of environments that are within the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the subset of environments that are excluded from the policy scope. |
+   **Lists** <br /><br />
 
    <table style="width:100%">
    <tr>
