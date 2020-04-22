@@ -417,8 +417,8 @@
           href: create-dlp-policy.md
         - name: Manage DLP policies
           href: prevent-data-loss.md
-        - name: Introduction to data groups
-          href: introduction-to-data-groups.md
+    #    - name: Introduction to data groups    # redirect
+    #      href: introduction-to-data-groups.md    # redirect
         - name: Block access by location with Azure AD Conditional Access
           href: restrict-access-online-trusted-ip-rules.md
       - name: Encryption
