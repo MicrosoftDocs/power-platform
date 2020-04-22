@@ -69,10 +69,11 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
    </tr>
    </table>
 
-
 ## Edit a DLP policy
 
-1. In the list of data loss prevention policies, select an environment and then select **Edit Policy**.
+1. Sign in to the Power Platform admin center.
+
+2. In the list of data loss prevention policies, select an environment and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
    > ![Edit DLP policy](media/dlp-edit-policy.png "Edit DLP policy")
@@ -80,7 +81,7 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
    > [!NOTE]
    > Environment Admins can't edit environments created by the tenant admin.
 
-2. Proceed through the Edit policy steps, and then select **Update Policy**.
+3. Proceed through the Edit policy steps (see [Create a DLP policy](create-dlp-policy.md)), and then select **Update Policy**.
 
    > [!NOTE]
    > Environment DLP policies cannot override tenant-wide DLP policies.
@@ -90,7 +91,9 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
 
 ## Delete a DLP policy
 
-1. In the list of data loss prevention policies, select an environment and then select **Delete Policy**.
+1. Sign in to the Power Platform admin center.
+
+2. In the list of data loss prevention policies, select an environment and then select **Delete Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
    > ![Delete DLP policy](media/dlp-delete-policy.png "Delete DLP policy")
@@ -98,13 +101,15 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
    > [!NOTE]
    > Environment Admins can't delete environments created by the tenant admin.
 
-2. In the confirmation dialog box, select **Delete**.
+3. In the confirmation dialog box, select **Delete**.
 
    The policy is deleted and no longer appears in the list of data loss prevention policies.
 
 ## Change the default data group
 
-1. In the list of data loss prevention policies, select an environment and then select **Edit Policy**.
+1. Sign in to the Power Platform admin center.
+
+2. In the list of data loss prevention policies, select an environment and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
    > ![Edit DLP policy](media/dlp-edit-policy.png "Edit DLP policy")
@@ -112,16 +117,16 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
    > [!NOTE]
    > Environment Admins can't edit environments created by the tenant admin.
 
-2. Select the **Connectors** step in the **Edit Policy** process.
+3. Select the **Connectors** step in the **Edit Policy** process.
 
-3. In the upper-right, select **Set default group**.
+4. In the upper-right, select **Set default group**.
 
    > [!div class="mx-imgBorder"] 
    > ![Set default group](media/dlp-edit-default-group.png "Set default group")
 
-4. Choose a default group, and then select **Apply**. See [Connector classification](wp-data-loss-prevention.md#connector-classification) and [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors).
+5. Choose a default group, and then select **Apply**. See [Connector classification](wp-data-loss-prevention.md#connector-classification) and [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors).
 
-5. Select **Next** as needed to close the **Edit Policy** process.
+6. Select **Next** as needed to close the **Edit Policy** process.
 
 The data group you chose will be the default group to auto classify any new connectors added to Power Platform after your policy has been created. 
 
