@@ -83,10 +83,11 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
    **Attributes** <br />
 
-   <table style="width:100%">
+<table style="width:100%">
 <tr>
 <th>Attribute</th>
 <th>Description</th>
+</tr>
 <tr>
 <td width="20%"> Name</td>
 <td width="80%"> The name of the connector. </td>
