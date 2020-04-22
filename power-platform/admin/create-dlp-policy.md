@@ -60,14 +60,11 @@ These are covered in the next section.
 
 In these steps, you'll add SharePoint and Salesforce to the **Business** data only data group of a DLP policy. If a person who is part of the DLP policy's environment creates an app that shares data between SharePoint or Salesforce and any service in the **Non-business** data allowed data group, the app will not be allowed to connect.
 
-
-
 In this example walkthrough, you will create a tenant-level DLP policy. You will add SharePoint and Salesforce to the Business data group of a DLP policy. You will also add Facebook and Twitter to the Blocked data group. You will leave the remaining connectors in the **Non-Business** data group. You will then exclude test environments from the scope of this policy and apply it on the remaining environments such as default and production environments in your tenant.
 
 Once this policy is saved, any Power App or Power Automate maker who is part of the DLP policy's environment can create an app or a flow that shares data between SharePoint or Salesforce. Any service in the **Non-business** data group, will not be allowed to establish connections. Similarly, makers will not be able to add Facebook and Twitter connectors in any app or flow.
 
 1. In Power Platform admin center, select **Data policies** > **New policy** to start the New Policy process.
-
 
    > [!div class="mx-imgBorder"] 
    > ![New data policy](media/dlp-new-policy.png "New data policy")
@@ -75,7 +72,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    If no policies exist in the tenant, admins see the following experience.
 
    > [!div class="mx-imgBorder"] 
-   > ![No policies view](media/dlp-no-policies.png "No policies view")
+   > ![No policies view](media/dlp-view-no-policies.png "No policies view")
 
 2. Enter a policy name and then select **Next**.
 
@@ -84,17 +81,18 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    > [!div class="mx-imgBorder"] 
    > ![Assign connectors](media/dlp-assign-connectors.png "Assign connectors") 
 
-   **Attributes**
+   **Attributes** <br />
 
-   |Attribute  |Description  |
-   |---------|---------|
-   |Name     | The name of the connector.        |
-   |Blockable     | Connectors which can be blocked. For a list of connectors that cannot be blocked, see [List of connectors that cannot be blocked](wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked).     |
-   |Type     | If the connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.     |
-   |Publisher     |  The company that publishes the connector. The publisher value can be different from the service owner. For example, Microsoft can be the publisher of Salesforce connector but the underlying service is not owned by Microsoft and is owned by Salesforce.    |
-   |About      | Select the URL for more information about the connector.       |
+   > [!div class="mx-tableFixed"]
+   > |Attribute  |Description  |
+   > |---------|---------|
+   > |Name     | The name of the connector.        |
+   > |Blockable     | Connectors which can be blocked. For a list of connectors that cannot be blocked, see [List of connectors that cannot be blocked](wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked).     |
+   > |Type     | If the connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.     |
+   > |Publisher     |  The company that publishes the connector. The publisher value can be different from the service owner. For example, Microsoft can be the publisher of Salesforce connector but the underlying service is not owned by Microsoft and is owned by Salesforce.    |
+   > |About      | Select the URL for more information about the connector.       |
 
-   **Lists**
+   **Lists** <br />
 
    |Setting  |Description  |
    |---------|---------|
@@ -102,7 +100,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    |Non-Business / Default (n)      | Connectors for non-business data such as personal use data. Connectors in this group can’t share data with connectors in other groups.|
    |Blocked (n)      | Blocked connectors can’t be used where this policy is applied.  |
 
-   **Actions**
+   **Actions** <br />
 
    |Setting  |Description  |
    |---------|---------|
@@ -150,7 +148,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
 6. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies this list will show all the environments in the tenant to the tenant admin. For environment-level policies this list will only show a subset of the environments in the tenant that are managed by the logged in user as Environment admin. 
 
-   **Attributes**
+   **Attributes** <br />
 
    |Attribute  |Description  |
    |---------|---------|
@@ -160,7 +158,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    |Created by     |  User who created the environment.      |
    |Created (On)      | Date on which the environment was created.     |
 
-   **Lists**
+   **Lists** <br />
 
    |Setting  |Description  |
    |---------|---------|
