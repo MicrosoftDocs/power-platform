@@ -2,7 +2,7 @@
 title: "Automatically start a Power Virtual Agents bot conversation"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: ""
-ms.date: 4/21/2020
+ms.date: 4/20/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -21,24 +21,20 @@ By default, chatbots created with Power Virtual Agents and [published to a websi
 
 However, you can use custom CSS and JavaScript code to automatically have the bot start the conversation when the bot loads.
 
-For example, you could have your bot say, "Hi, I’m Botty, a virtual agent" as soon as the bot loads.
+For example, you could have your bot say, "Hi, I’m Botty, a virtual agent" as soon a the bot loads.
 
-First, you'll need to deploy a custom canvas that includes arguments that trigger the greeting. By default, the custom canvas calls the default system greeting topic. You can, however, create a new topic to be used as the greeting, although you will need to modify the custom canvas code.
+First, you'll need to deploy a custom canvas that includes arguments that trigger the greeting. By default, the custom canvas calls the default system greeting topic. You can, however, create a new topic to be used as the greeting, although you will need to divert the default system greeting topic to a new topic.
 
 You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas.md).
 
 >[!IMPORTANT]
->Having the bot start the conversation will show up in your [analytics](analytics-overview.md) and will increase your session count.
+>Having the bot start the conversation will show up in your [analytics](analytics-overview.md) will increase your session count.
 >If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary.md#engagement-over-time-chart). 
 >This might impact your analytics.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
->[!IMPORTANT]
->You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents service. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
->Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 ## Retrieve bot ID details
 
@@ -135,8 +131,8 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
                                               postBack: true,
                                          },
                                           //Web Chat will show the 'Greeting' System Topic message which has a trigger-phrase 'hello'
-                                          text: "hello",
-                                          type: "message",
+                                          name: 'startConversation',
+                                          type: "event"
                                      },
                                 },
                                 type: "DIRECT_LINE/POST_ACTIVITY",
@@ -174,7 +170,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
 
 ## Change the bot's default greeting
 
-The code in the *index.html* file causes a topic to be called automatically when the bot is loaded. By default, it calls the system greeting topic. You can also create a new topic and point the code to call that topic instead.
+The code in the *index.html* file causes a topic to be called automatically when the bot is loaded. By default, it calls the system greeting topic. You can also create a new topic and divert the default system greeting topic to that new topic.
 
 
 
@@ -206,34 +202,32 @@ You can now test your bot by going to the web page where you deployed your bot'
 ### Create a new user topic
 
 >[!WARNING]
->Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
+>Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 
 1. Select **Topics** on the side navigation pane.
 
-1. Select **New topic**, and give it a name. Add the **start conversation** as a trigger phrase.
+1. Select **New topic**, and give it a name. 
 
 1. Select **Go to authoring canvas**.
 
-1. Edit the text inside the **Message** node. You can also [add or delete additional nodes](authoring-create-edit-topics.md#insert-nodes).
+1. Add the text inside the **Message** node. 
+
+1. Select **Save** when you're finished editing the message.
+
+1. Select **Topics** again on the side navigation pane. 
+
+1. Under **System Topics**, select the **Go to authoring canvas** icon on the **Greeting** topic row.
+
+1. [Delete the message nodes](authoring-create-edit-topics.md#insert-nodes) on the **Greeting** topic.
+
+1. To automatically divert the bot to a user topic, select + to add a node, and then [Go to another topic](authoring-create-edit-topics#go-to-another-topic).
+
+1. In the flyout menu, select the user topic you created above.
 
 1. Select **Save** when you're finished editing the message.
 
 1. [**Publish** your bot](publication-fundamentals-publish-channels.md).
-
-1. Configure the custom canvas code in the *index.html* file to call the topic you created by entering the trigger phrase that you used for the topic. In this example, update the value of `text` to `start conversation` as shown in the following snippet:
-
-    ```js
-         payload: {
-            activity: {
-                channelData: {
-                    postBack: true,
-                },
-            //Triggers a new topic with trigger-phrase 'start conversation'  
-            text: "start conversation",
-            type: "message",
-         }, 
-    ```
 
 You can now test your bot by going to the web page where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the new topic.
 
