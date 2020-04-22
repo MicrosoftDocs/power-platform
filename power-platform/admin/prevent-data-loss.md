@@ -32,6 +32,44 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
    > [!div class="mx-imgBorder"] 
    > ![DLP policy list](media/dlp-policy-list-view.png "DLP policy list")
 
+   The list view shows the following attributes:
+
+   <table style="width:100%">
+   <tr>
+   <th>Attribute</th>
+   <th>Description</th>
+   </tr>
+   <tr>
+   <td width="20%"> Scope</td>
+   <td width="80%"> Type of the policy such as environment-level policy or tenant-level </td>
+   </tr>
+   <tr>
+   <td width="20%"> Type</td>
+   <td width="80%"> Type of the environment: trial, production, sandbox, default   </td>
+   </tr>
+   <tr>
+   <td width="20%"> Applied to</td>
+   <td width="80%"> Environment scope associated with the policy.<br />For an environment-level policy, this will be a specific (single) environment name associated with the policy. <br /> For a tenant-level policy, this can be one of the following values:<br /><ul><li>All environments</li><li>All environments, except (n)</li><li> (n) environments</li><li>Single environment name</li></ul> </td>
+   </tr>
+   <tr>
+   <td width="20%"> Created by  </td>
+   <td width="80%">   User who created the policy.   </td>
+   </tr>
+   <tr>
+   <td width="20%"> Created (On) </td>
+   <td width="80%"> Date on which the policy was created.  </td>
+   </tr>
+      <tr>
+   <td width="20%"> Modified by  </td>
+   <td width="80%">   User who modified the policy.   </td>
+   </tr>
+   <tr>
+   <td width="20%"> Modified (On) </td>
+   <td width="80%"> Date on which the policy was modified.  </td>
+   </tr>
+   </table>
+
+
 ## Edit a DLP policy
 
 1. In the list of data loss prevention policies, select an environment and then select **Edit Policy**.
