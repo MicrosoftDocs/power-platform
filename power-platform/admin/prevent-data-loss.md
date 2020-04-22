@@ -40,7 +40,7 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
    > ![Edit DLP policy](media/dlp-edit-policy.png "Edit DLP policy")
 
    > [!NOTE]
-   > Environment admins can't edit environments created by the tenant admin.
+   > Environment Admins can't edit environments created by the tenant admin.
 
 2. Proceed through the Edit policy steps, and then select **Update Policy**.
 
@@ -58,7 +58,7 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
    > ![Delete DLP policy](media/dlp-delete-policy.png "Delete DLP policy")
 
    > [!NOTE]
-   > Environment admins can't delete environments created by the tenant admin.
+   > Environment Admins can't delete environments created by the tenant admin.
 
 2. In the confirmation dialog box, select **Delete**.
 
@@ -72,7 +72,7 @@ For instructions on how to create a DLP policy, see [Create a data loss preventi
    > ![Edit DLP policy](media/dlp-edit-policy.png "Edit DLP policy")
 
    > [!NOTE]
-   > Environment admins can't edit environments created by the tenant admin.
+   > Environment Admins can't edit environments created by the tenant admin.
 
 2. Select the **Connectors** step in the **Edit Policy** process.
 

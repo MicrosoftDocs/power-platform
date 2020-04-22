@@ -58,9 +58,9 @@ These are covered in the next section.
 
 ## Create a DLP policy
 
-In these steps, you'll add SharePoint and Salesforce to the **Business** data only data group of a DLP policy. If a person who is part of the DLP policy's environment creates an app that shares data between SharePoint or Salesforce and any service in the **Non-business** data allowed data group, the app will not be allowed to connect.
+In these steps, we'll add SharePoint and Salesforce to the **Business** data only data group of a DLP policy. If a person who is part of the DLP policy's environment creates an app that shares data between SharePoint or Salesforce and any service in the **Non-business** data allowed data group, the app will not be allowed to connect.
 
-In this example walkthrough, you will create a tenant-level DLP policy. You will add SharePoint and Salesforce to the Business data group of a DLP policy. You will also add Facebook and Twitter to the Blocked data group. You will leave the remaining connectors in the **Non-Business** data group. You will then exclude test environments from the scope of this policy and apply it on the remaining environments such as default and production environments in your tenant.
+In this example walkthrough, we'll create a tenant-level DLP policy. We will add SharePoint and Salesforce to the Business data group of a DLP policy. We will also add Facebook and Twitter to the Blocked data group. We will leave the remaining connectors in the **Non-Business** data group. We will then exclude test environments from the scope of this policy and apply it on the remaining environments such as default and production environments in the tenant.
 
 Once this policy is saved, any Power App or Power Automate maker who is part of the DLP policy's environment can create an app or a flow that shares data between SharePoint or Salesforce. Any service in the **Non-business** data group, will not be allowed to establish connections. Similarly, makers will not be able to add Facebook and Twitter connectors in any app or flow.
 
@@ -69,14 +69,14 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    > [!div class="mx-imgBorder"] 
    > ![New data policy](media/dlp-new-policy.png "New data policy")
 
-   If no policies exist in the tenant, admins see the following experience.
+   If no policies exist in the tenant, you'll see the following page.
 
    > [!div class="mx-imgBorder"] 
    > ![No policies view](media/dlp-view-no-policies.png "No policies view")
 
 2. Enter a policy name and then select **Next**.
 
-3. Review the various attributes and settings you can take on the **Assign connectors** page. 
+3. Review the various attributes and settings you can take on the **Assign Connectors** page. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign connectors](media/dlp-assign-connectors.png "Assign connectors") 
@@ -122,7 +122,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    <td width="80%"> Connectors for business sensitive data. Connectors in this group can’t share data with connectors in other groups.      </td>
    </tr>
    <tr>
-   <td width="20%"> Non-Business/Default (n)</td>
+   <td width="20%"> Non-Business/<br />Default (n)</td>
    <td width="80%"> Connectors for non-business data such as personal use data. Connectors in this group can’t share data with connectors in other groups. </td>
    </tr>
    <tr>
@@ -144,7 +144,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    <tr>
    <td width="20%"> Search Connectors </td>
-   <td width="80%"> To search a long list of connectors to find specific connectors to classify them. You can search on any field in the connector list view such as Name, Blockable, Type, and Publisher.    </td>
+   <td width="80%"> To search a long list of connectors to find specific connectors to classify them. You can search on any field in the connector list view such as <b>Name</b>, <b>Blockable</b>, <b>Type</b>, and <b>Publisher</b>.    </td>
    </tr>
    </table>
 
@@ -184,15 +184,14 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    > [!div class="mx-imgBorder"] 
    > ![Define scope](media/dlp-define-scope.png "Define scope")
 
-   For the purpose of this walkthrough, to exclude test environments from this policy, select **Exclude certain environments** which brings up the **Add Environments** page. 
+   For the purpose of this walkthrough, to exclude test environments from this policy, select **Exclude certain environments** which brings up the **Add Environments** page. Select **Next**.
+  
 
-  Select **Next**.
-
-6. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies this list will show all the environments in the tenant to the tenant admin. For environment-level policies this list will only show a subset of the environments in the tenant that are managed by the logged in user as Environment admin. 
+6. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies this list will show all the environments in the tenant to the tenant admin. For environment-level policies this list will only show a subset of the environments in the tenant that are managed by the logged in user as Environment Admin. 
 
    **Attributes** <br /><br />
 
-
+   <table style="width:100%">
    <tr>
    <th>Attribute</th>
    <th>Description</th>
@@ -228,7 +227,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    <tr>
    <td width="20%"> Available (n)    </td>
-   <td width="80%"> Environments which are not explicitly included or excluded in the policy scope. For environment policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this list represents the subset of environments that are not included in the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the set of environments that are included within the policy scope.   </td>
+   <td width="80%"> Environments which are not explicitly included or excluded in the policy scope. For environment policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this list represents the subset of environments that are not included in the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the set of environments that are included within the policy scope.   </td>
    </tr>
    <tr>
    <td width="20%"> Added to policy (n)   </td>
@@ -236,14 +235,14 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    </table>
 
-7. Select one or more environments. You can use the search bar to quickly find the environments of your interest. For this walkthrough, we'll search for test environments - sandbox. Once we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
+7. Select one or more environments. You can use the search bar to quickly find the environments of your interest. For this walkthrough, we'll search for test environments - type sandbox. Once we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy](media/dlp-assign-policy-environments.png "Assign policy")
 
    Since the policy scope was initially selected as **Exclude certain environments** these test environments will now be excluded from the policy scope and the DLP settings will be applied to all the remaining (Available) environments. For environment-level policy you can only select a single environment from the list of available environments.
 
-   After making your selections for environments, select **Next** to move to the Review step.
+   After making selections for environments, select **Next** to move to the Review step.
 
 8. Review the policy settings and then select **Create Policy**.
 
@@ -276,7 +275,7 @@ Typically, most companies will want to treat new connectors as **Non-Business** 
 
 ## Example new DLP policy scenario
 
-You create a new tenant-wide DLP policy that has just Common Data Service added to the **Business** data group and all other connectors in **Non-Business**. Let's look at the outcome of this policy on a few application examples. 
+You can create a new tenant-wide DLP policy that has just Common Data Service added to the **Business** data group and all other connectors in **Non-Business**. Let's look at the outcome of this policy on a few application examples. 
 
 |Connectors used in app or flow  |Connection impact of DLP  |
 |---------|---------|

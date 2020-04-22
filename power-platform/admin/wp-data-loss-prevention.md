@@ -23,7 +23,7 @@ Data loss prevention (DLP) policies that help protect organizational data from u
 
 DLP policies enforce rules of what connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in the same app or flow. Sometimes you may want to altogether block the usage of certain connectors by classifying them as **Blocked**.
 
-DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). They impact Power Platform canvas apps and Power Automate flows. In order to create a DLP policy you need to be a [tenant admin](use-service-admin-role-manage-tenant.md) or an [environment admin](environments-overview.md#environment-permissions). 
+DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). They impact Power Platform canvas apps and Power Automate flows. In order to create a DLP policy you need to be a [tenant admin](use-service-admin-role-manage-tenant.md) or an [Environment Admin](environments-overview.md#environment-permissions). 
 
 > [!NOTE]
 > Connector blocking capability using a three-way classification - **Business**, **Non-Business**, and **Blocked** - as well as DLP user interface support in the Power Platform admin center are currently in public preview. There is new DLP PowerShell support for three-way DLP classification which is also in public preview. Legacy DLP support for two-way classification along with user interface and PowerShell support for two-way classification – **Business**,**Non-Business** - is currently generally available and will continue to be available until the three-way policy is upgraded to general availability. 
@@ -239,7 +239,7 @@ Any new services that are added to Power Apps will be placed in the designated d
 > Microsoft owned Standard connectors are exempt from being marked as **Blocked** and can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that are not blockable and if the DLP policy’s default group setting is **Blocked**, then these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
 
 ## Policy scope
-Data policies can be created at both the tenant and environment level. While tenant admins have the permissions to create tenant-level policies, environment admins have the permissions to create environment-level policies.
+Data policies can be created at both the tenant and environment level. While tenant admins have the permissions to create tenant-level policies, Environment Admins have the permissions to create environment-level policies.
 
 ### Tenant-level policies
 Tenant admins can define three different types of scopes for tenant level data policies. 
@@ -253,14 +253,14 @@ It is typical for tenant admins to define DLP policies for their entire tenant b
 Tenant admins can define more than one multiple tenant-level policy for their environments in their tenant. These policies can be for mutually exclusive or overlapping environment scopes.
 
 ### Environment-level policies
-Environment admins can define environment-level data policies for one environment at a time. Environment admins cannot exclude their environments from tenant-level policies. Therefore, all the restrictions defined by the tenant admins scoped for their environment still apply in addition to the environment-level policy that they individually define for their environment. 
+Environment Admins can define environment-level data policies for one environment at a time. Environment Admins cannot exclude their environments from tenant-level policies. Therefore, all the restrictions defined by the tenant admins scoped for their environment still apply in addition to the environment-level policy that they individually define for their environment. 
 
-Like tenant-level policies, environment admins can define more than one environment-level policy for their environment.
+Like tenant-level policies, Environment Admins can define more than one environment-level policy for their environment.
 
-Even though environment admins might manage more than one environment, unlike tenant-level policies, they are not able to include more than one environment in the environment-level policy. They will need to define individual environment-level policies for each environment that they manage. 
+Even though Environment Admins might manage more than one environment, unlike tenant-level policies, they are not able to include more than one environment in the environment-level policy. They will need to define individual environment-level policies for each environment that they manage. 
 
 ## Combined effect of multiple DLP policies
-As tenant or environment admins, you can create more than one DLP policy and apply it on the same environment. At design and run time all policies applicable for the environment in which the app or flow reside, are evaluated together to decide if the resource is in compliance or violation of the DLP policies.
+As tenant or Environment Admins, you can create more than one DLP policy and apply it on the same environment. At design and run time all policies applicable for the environment in which the app or flow reside, are evaluated together to decide if the resource is in compliance or violation of the DLP policies.
 
 ### Blocked classification impact across multiple policies
 If any policy (tenant and/or environment-level) applicable to an environment marks a connector as **Blocked**, then no app or flow can use that connector in the environment. It doesn’t matter if any other policy classifies that connector as **Business** or **Non-Business**, since **Blocked** is the most restrictive classification for the connector therefore **Blocked** is always the final outcome of multiple policy evaluation. 
