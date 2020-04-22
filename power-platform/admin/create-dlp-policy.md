@@ -187,7 +187,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    For the purpose of this walkthrough, to exclude test environments from this policy, select **Exclude certain environments** which brings up the **Add Environments** page. Select **Next**.
   
 
-6. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies this list will show all the environments in the tenant to the tenant admin. For environment-level policies this list will only show a subset of the environments in the tenant that are managed by the logged in user as Environment Admin. 
+6. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies this list will show all the environments in the tenant to the tenant admin. For environment-level policies this list will only show a subset of the environments in the tenant that are managed by the user signed in as Environment Admin. 
 
    **Attributes** <br /><br />
 
