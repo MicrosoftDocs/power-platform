@@ -94,9 +94,9 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    <tr>
    <td width="20%"> Blockable</td>
-   <td width="80%"> Connectors which can be blocked. For a list of connectors that cannot be blocked, see [List of connectors that cannot be blocked](wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked).  </td>
+   <td width="80%"> Connectors which can be blocked. For a list of connectors that cannot be blocked, see <a href="wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked">List of connectors that cannot be blocked</a>.  </td>
    </tr>
-   <tr>
+   <tr> 
    <td width="20%"> Type</td>
    <td width="80%"> If the connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.    </td>
    </tr>
@@ -122,7 +122,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    <td width="80%"> Connectors for business sensitive data. Connectors in this group can’t share data with connectors in other groups.      </td>
    </tr>
    <tr>
-   <td width="20%"> Non-Business / Default (n)</td>
+   <td width="20%"> Non-Business/Default (n)</td>
    <td width="80%"> Connectors for non-business data such as personal use data. Connectors in this group can’t share data with connectors in other groups. </td>
    </tr>
    <tr>
@@ -203,7 +203,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    <tr>
    <td width="20%"> Type</td>
-   <td width="80%"> Type of the environment: Trial, Production, Sandbox, Default   </td>
+   <td width="80%"> Type of the environment: trial, production, sandbox, default   </td>
    </tr>
    <tr>
    <td width="20%"> Region</td>
@@ -228,11 +228,11 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    <tr>
    <td width="20%"> Available (n)    </td>
-   <td width="80%"> Environments which are not explicitly included or excluded in the policy scope. For environment policy and tenant-level policies with scope defined as **Add multiple environments**, this list represents the subset of environments that are not included in the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the set of environments that are included within the policy scope.   </td>
+   <td width="80%"> Environments which are not explicitly included or excluded in the policy scope. For environment policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this list represents the subset of environments that are not included in the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the set of environments that are included within the policy scope.   </td>
    </tr>
    <tr>
    <td width="20%"> Added to policy (n)   </td>
-   <td width="80%">  For environment policy and tenant-level policies with scope defined as **Add multiple environments**, this pivot represents the subset of environments that are within the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the subset of environments that are excluded from the policy scope.   </td>
+   <td width="80%">  For environment policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this pivot represents the subset of environments that are within the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the subset of environments that are excluded from the policy scope.   </td>
    </tr>
    </table>
 
