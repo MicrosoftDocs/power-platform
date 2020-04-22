@@ -83,42 +83,32 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
    **Attributes** <br />
 
-<table style="width:100%">
-<tr>
-<th>Attribute</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="20%"> Name</td>
-<td width="80%"> The name of the connector. </td>
-</tr>
-<tr>
-<td width="20%"> Blockable</td>
-<td width="80%"> Connectors which can be blocked. For a list of connectors that cannot be blocked, see [List of connectors that cannot be blocked](wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked).  </td>
-</tr>
-<tr>
-<td width="20%"> Type</td>
-<td width="80%"> If the connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.    </td>
-</tr>
-<tr>
-<td width="20%"> Publisher</td>
-<td width="80%">  The company that publishes the connector. The publisher value can be different from the service owner. For example, Microsoft can be the publisher of Salesforce connector but the underlying service is not owned by Microsoft and is owned by Salesforce.  </td>
-</tr>
-<tr>
-<td width="20%"> About</td>
-<td width="80%"> Select the URL for more information about the connector. </td>
-</tr>
-</table>
-
-
-   > [!div class="mx-tableFixed"]
-   > |Attribute  |Description  |
-   > |---------|---------|
-   > |Name     | The name of the connector.        |
-   > |Blockable     | Connectors which can be blocked. For a list of connectors that cannot be blocked, see [List of connectors that cannot be blocked](wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked).     |
-   > |Type     | If the connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.     |
-   > |Publisher     |  The company that publishes the connector. The publisher value can be different from the service owner. For example, Microsoft can be the publisher of Salesforce connector but the underlying service is not owned by Microsoft and is owned by Salesforce.    |
-   > |About      | Select the URL for more information about the connector.       |
+   <table style="width:100%">
+   <tr>
+   <th>Attribute</th>
+   <th>Description</th>
+   </tr>
+   <tr>
+   <td width="20%"> Name</td>
+   <td width="80%"> The name of the connector. </td>
+   </tr>
+   <tr>
+   <td width="20%"> Blockable</td>
+   <td width="80%"> Connectors which can be blocked. For a list of connectors that cannot be blocked, see [List of connectors that cannot be blocked](wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked).  </td>
+   </tr>
+   <tr>
+   <td width="20%"> Type</td>
+   <td width="80%"> If the connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.    </td>
+   </tr>
+   <tr>
+   <td width="20%"> Publisher</td>
+   <td width="80%">  The company that publishes the connector. The publisher value can be different from the service owner. For example, Microsoft can be the publisher of Salesforce connector but the underlying service is not owned by Microsoft and is owned by Salesforce.  </td>
+   </tr>
+   <tr>
+   <td width="20%"> About</td>
+   <td width="80%"> Select the URL for more information about the connector. </td>
+   </tr>
+   </table>
 
    **Lists** <br />
 
@@ -128,12 +118,47 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    |Non-Business / Default (n)      | Connectors for non-business data such as personal use data. Connectors in this group can’t share data with connectors in other groups.|
    |Blocked (n)      | Blocked connectors can’t be used where this policy is applied.  |
 
+   <table style="width:100%">
+   <tr>
+   <th>Setting</th>
+   <th>Description</th>
+   </tr>
+   <tr>
+   <td width="20%"> Business (n) </td>
+   <td width="80%"> Connectors for business sensitive data. Connectors in this group can’t share data with connectors in other groups.      </td>
+   </tr>
+   <tr>
+   <td width="20%"> Non-Business / Default (n)</td>
+   <td width="80%"> Connectors for non-business data such as personal use data. Connectors in this group can’t share data with connectors in other groups. </td>
+   </tr>
+   <tr>
+   <td width="20%"> Blocked (n)    </td>
+   <td width="80%"> Blocked connectors can’t be used where this policy is applied.    </td>
+   </tr>
+   </table>
+
    **Actions** <br />
 
    |Setting  |Description  |
    |---------|---------|
    |Set default group | Group that maps any new connectors added by Power Platform *after* your DLP policy is created.  For more information on the default group, see [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors).        |
    |Search Connectors     | To search a long list of connectors to find specific connectors to classify them. You can search on any field in the connector list view such as Name, Blockable, Type, and Publisher.      |
+
+   <table style="width:100%">
+   <tr>
+   <th>Setting</th>
+   <th>Description</th>
+   </tr>
+   <tr>
+   <td width="20%"> Set default group </td>
+   <td width="80%"> Group that maps any new connectors added by Power Platform *after* your DLP policy is created.  For more information on the default group, see [Default data group for new connectors](wp-data-loss-prevention.md#default-data-group-for-new-connectors).      </td>
+   </tr>
+   <tr>
+   <td width="20%"> Search Connectors </td>
+   <td width="80%"> To search a long list of connectors to find specific connectors to classify them. You can search on any field in the connector list view such as Name, Blockable, Type, and Publisher.    </td>
+   </tr>
+   </table>
+
 
    You can take the following actions:
 
@@ -186,12 +211,54 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    |Created by     |  User who created the environment.      |
    |Created (On)      | Date on which the environment was created.     |
 
+      <table style="width:100%">
+   <tr>
+   <th>Attribute</th>
+   <th>Description</th>
+   </tr>
+   <tr>
+   <td width="20%"> Name</td>
+   <td width="80%"> The name of the environment. </td>
+   </tr>
+   <tr>
+   <td width="20%"> Type</td>
+   <td width="80%"> Type of the environment: Trial, Production, Sandbox, Default   </td>
+   </tr>
+   <tr>
+   <td width="20%"> Region</td>
+   <td width="80%"> Region associated with the environment.    </td>
+   </tr>
+   <tr>
+   <td width="20%"> Created by  </td>
+   <td width="80%">   User who created the environment.   </td>
+   </tr>
+   <tr>
+   <td width="20%"> Created (On) </td>
+   <td width="80%"> Date on which the environment was created.  </td>
+   </tr>
+   </table>
+
    **Lists** <br />
 
    |Setting  |Description  |
    |---------|---------|
    |Available (n)     | Environments which are not explicitly included or excluded in the policy scope. For environment policy and tenant-level policies with scope defined as **Add multiple environments**, this list represents the subset of environments that are not included in the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the set of environments that are included within the policy scope.       |
    |Added to policy (n)     | For environment policy and tenant-level policies with scope defined as **Add multiple environments**, this pivot represents the subset of environments that are within the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the subset of environments that are excluded from the policy scope. |
+
+   <table style="width:100%">
+   <tr>
+   <th>Setting</th>
+   <th>Description</th>
+   </tr>
+   <tr>
+   <td width="20%"> Available (n)    </td>
+   <td width="80%"> Environments which are not explicitly included or excluded in the policy scope. For environment policy and tenant-level policies with scope defined as **Add multiple environments**, this list represents the subset of environments that are not included in the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the set of environments that are included within the policy scope.   </td>
+   </tr>
+   <tr>
+   <td width="20%"> Added to policy (n)   </td>
+   <td width="80%">  For environment policy and tenant-level policies with scope defined as **Add multiple environments**, this pivot represents the subset of environments that are within the policy scope. For tenant-level policies with scope defined as **Exclude certain environments**, this pivot represents the subset of environments that are excluded from the policy scope.   </td>
+   </tr>
+   </table>
 
 7. Select one or more environments. You can use the search bar to quickly find the environments of your interest. For this walkthrough, we'll search for test environments - sandbox. Once we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
 
@@ -212,7 +279,6 @@ The policy is created and appears in the list of data loss prevention policies. 
 It's good practice for administrators to share a list of DLP policies with their organization so that users are aware of the policies prior to creating apps.
 
 This table describes the outcome of the DLP policy created.
-
 
 |Connector matrix  |SharePoint (Business)  |Salesforce (Business)  |Outlook.com (Non-Business)   |Facebook (Blocked)  |Twitter (Blocked) |
 |---------|---------|---------|---------|---------|---------|
