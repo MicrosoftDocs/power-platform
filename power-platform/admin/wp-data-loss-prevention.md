@@ -346,7 +346,7 @@ The DLP connector blocking ability and DLP user interface support in the Power P
 2.	Cloud PKI management display as a connector which is not blockable. Cloud PKI management is not a Microsoft Standard connector and should be blockable.
 3.	LinkedIn and Microsoft Staffhub display as connectors which are blockable. These are Microsoft Standard connectors and should be not blockable.
 4.	If the default group is set as **Blocked** for policies created through DLP PowerShell, the not blockable connector list is not taking effect.
-5.	All check boxes present while creating a new policy appear completed on selecting the Review step directly on the Data Policies page.
+5.	All check boxes present while creating a new policy appear completed on selecting the **Review** step directly on the **Data Policies** page.
 6.	Environment Admin is not able to view details of a tenant policy.
 7.	Environment Admin is not able to edit environment policies created by other Environment Admins.
 8.	Select environments messaging for Environment Admins is incongruent with behavior.
