@@ -338,24 +338,23 @@ Similarly, Power Automate makers and users will see that the flows which is usin
 > [!div class="mx-imgBorder"] 
 > ![Flow suspension](media/dlp-flow-suspension.png "Flow suspension")
 
-<!-- 
-
-For a description of these steps, see [Create a data loss prevention (DLP) policy](create-dlp-policy.md).
-
 ## Known issues
 
-### Cloud PKI Management
-Cloud PKI Management is wrongfully marked as exempt from blocking. It is not a Microsoft owned service and will be available for blocking after this issue is fixed.
+The DLP connector blocking ability and DLP user interface support in the Power Platform admin center is in public preview. There are the following known issues and limitations with the current offering that we're working to address:
 
-### LinkedIn and Microsoft Staffhub
-LinkedIn and Microsoft Staffhub are wrongfully marked as available for blocking. They are Microsoft owned standard connectors and will be exempt from blocking after this issue is fixed.
+1.	Three-way DLP policy creation is not available through admin connectors.
+2.	Cloud PKI management display as a connector which is not blockable. Cloud PKI management is not a Microsoft Standard connector and should be blockable.
+3.	LinkedIn and Microsoft Staffhub display as connectors which are blockable. These are Microsoft Standard connectors and should be not blockable.
+4.	If the default group is set as **Blocked** for policies created through DLP PowerShell, the not blockable connector list is not taking effect.
+5.	All check boxes present while creating a new policy appear completed on selecting the Review step directly on the Data Policies page.
+6.	Environment Admin is not able to view details of a tenant policy.
+7.	Environment Admin is not able to edit environment policies created by other Environment Admins.
+8.	Select environments messaging for Environment Admins is incongruent with behavior.
+9.	Environment admins can create a DLP policy without selecting an environment.
+10.	Some **About** links give 404s on the connector list view.
+11.	Power Platform for admins connector always blocks LBI group.
+12.	Policy list view search only working on the Name field.
 
-
-## Legacy DLP policy support
-
-## Center of Excellence support for DLP
-
--->
 
 ### See also
 [Create a data loss prevention (DLP) policy](create-dlp-policy.md) <br />
