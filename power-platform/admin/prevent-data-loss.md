@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 04/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,7 +23,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 For instructions on how to create a DLP policy, see [Create a data loss prevention (DLP) policy](create-dlp-policy.md).
 
-## Find a DLP policy
+## Find and view DLP policies
 
 1. Sign in to the Power Platform admin center.
 

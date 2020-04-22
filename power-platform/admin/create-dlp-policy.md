@@ -18,7 +18,7 @@ search.app:
 # Create a data loss prevention (DLP) policy
 To protect data in your organization, Power Apps lets you create and enforce policies that define which consumer connectors specific business data can be shared with. These policies that define how data can be shared are referred to as data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
 
-DLP policies can be created at the tenant level or at the environment level.
+DLP policies can be created at the tenant-level or at the environment-level and are managed from the Power Platform Admin Center. The new user interface is now in public preview.
 
 ## Prerequisites
 
@@ -35,14 +35,9 @@ We refer to these roles throughout this document as tenant admins. For more info
 
 To follow the steps below for environment-level policies, you need to have Power Apps Environment Admin permissions. For more information, see [Environment permissions](environments-administration.md#environment-permissions). 
 
-## View DLP policies
+## Find and view DLP policies
 
-DLP policies can be viewed and managed from the Power Platform Admin Center. The new user interface is now in public preview.
-
-Sign in to the Power Platform admin center and select **Data policies**.
-
-> [!div class="mx-imgBorder"] 
-> ![View data policies](media/dlp-view-policies.png "View data policies")
+To find and view DLP policies, see [Find and view DLP policies](prevent-data-loss.md#find-and-view-dlp-policies).
 
 ## The DLP process
 
@@ -56,7 +51,7 @@ The following are the steps you follow to create a DLP policy.
 
 These are covered in the next section.
 
-## Create a DLP policy
+## Create DLP policy process
 
 In these steps, we'll add SharePoint and Salesforce to the **Business** data only data group of a DLP policy. If a person who is part of the DLP policy's environment creates an app that shares data between SharePoint or Salesforce and any service in the **Non-business** data allowed data group, the app will not be allowed to connect.
 
@@ -179,7 +174,16 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
    For connectors like SharePoint that are not blockable, **Block** action will be greyed out and a warning appears informing the reasoning behind making **Block** action being unavailable for these connectors.
 
-5. Choose the scope of the DLP policy. This step is not available for environment-level policies since they are always meant for a single environment.
+5. Review and change the default group setting for new connectors, if you need to. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the DLP policy, once you have had a chance to review and assign them. If the new connector setting is set as **Blocked** then any new connectors which are blockable will map to **Blocked** as expected. However, any new connectors that are unblockable will be mapped to **Non-Business** since they by design cannot be blocked. 
+
+   In the upper-right, select **Set default group**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Set default group](media/dlp-edit-default-group.png "Set default group")
+
+   Once you have completed all the connector assignments across **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next** to move to the scope selection step.
+
+6. Choose the scope of the DLP policy. This step is not available for environment-level policies since they are always meant for a single environment.
 
    > [!div class="mx-imgBorder"] 
    > ![Define scope](media/dlp-define-scope.png "Define scope")
@@ -187,7 +191,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    For the purpose of this walkthrough, to exclude test environments from this policy, select **Exclude certain environments** which brings up the **Add Environments** page. Select **Next**.
   
 
-6. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies this list will show all the environments in the tenant to the tenant admin. For environment-level policies this list will only show a subset of the environments in the tenant that are managed by the user signed in as Environment Admin. 
+7. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies this list will show all the environments in the tenant to the tenant admin. For environment-level policies this list will only show a subset of the environments in the tenant that are managed by the user signed in as Environment Admin. 
 
    **Attributes** <br /><br />
 
@@ -235,7 +239,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    </table>
 
-7. Select one or more environments. You can use the search bar to quickly find the environments of your interest. For this walkthrough, we'll search for test environments - type sandbox. Once we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
+8. Select one or more environments. You can use the search bar to quickly find the environments of your interest. For this walkthrough, we'll search for test environments - type sandbox. Once we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy](media/dlp-assign-policy-environments.png "Assign policy")
@@ -244,7 +248,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
    After making selections for environments, select **Next** to move to the Review step.
 
-8. Review the policy settings and then select **Create Policy**.
+9. Review the policy settings and then select **Create Policy**.
 
    > [!div class="mx-imgBorder"] 
    > ![Review new policy](media/dlp-new-policy-review.png "Review new policy")
@@ -253,7 +257,7 @@ The policy is created and appears in the list of data loss prevention policies. 
 
 It's good practice for administrators to share a list of DLP policies with their organization so that users are aware of the policies prior to creating apps.
 
-This table describes the outcome of the DLP policy created.
+This table describes the impact of the created DLP policy on app connections.
 
 |Connector matrix  |SharePoint (Business)  |Salesforce (Business)  |Outlook.com (Non-Business)   |Facebook (Blocked)  |Twitter (Blocked) |
 |---------|---------|---------|---------|---------|---------|
@@ -272,18 +276,6 @@ By default, all connectors are considered part of the **Non-Business** data grou
 New connectors are added to the default data group, **Non-Business**. If you prefer, you can change which category is considered the default, and then all new connectors will be classified in that category by default. See [Change the default data group](prevent-data-loss.md#change-the-default-data-group). 
 
 Typically, most companies will want to treat new connectors as **Non-Business** until they evaluate if it is appropriate to use with data classified as business data. 
-
-## Example new DLP policy scenario
-
-You can create a new tenant-wide DLP policy that has just Common Data Service added to the **Business** data group and all other connectors in **Non-Business**. Let's look at the outcome of this policy on a few application examples. 
-
-|Connectors used in app or flow  |Connection impact of DLP  |
-|---------|---------|
-|SharePoint and OneDrive      | This would be allowed         |
-|Common Data Service      | This would be allowed         |
-|Common Data Service and SharePoint      | This would not be allowed         |
-|harePoint and Twitter     | This would be allowed         |
-|SharePoint, Twitter, and Common Data Service      | This would not be allowed         |
 
 ## Use DLP PowerShell commands
 See [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).

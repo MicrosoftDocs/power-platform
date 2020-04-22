@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 04/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,13 +29,6 @@ DLP policies are created in the [Power Platform admin center](https://admin.powe
 > Connector blocking capability using a three-way classification - **Business**, **Non-Business**, and **Blocked** - as well as DLP user interface support in the Power Platform admin center are currently in public preview. There is new DLP PowerShell support for three-way DLP classification which is also in public preview. Legacy DLP support for two-way classification along with user interface and PowerShell support for two-way classification – **Business**,**Non-Business** - is currently generally available and will continue to be available until the three-way policy is upgraded to general availability. 
 > 
 > For detailed information on Power Platform Connectors, see [Connectors documentation](https://docs.microsoft.com/connectors/).
-
-## View existing policies
-
-To view your existing policies, sign in to the Power Platform admin center and select **Data policies**.
-
-> [!div class="mx-imgBorder"] 
-> ![View data policies](media/dlp-view-policies.png "View data policies")
 
 ## Connector classification
 Data groups are a simple way to categorize connectors within a DLP policy. The three data groups available are the **Business** data group, the **Non-Business** data group, and the **Blocked** data group. 
