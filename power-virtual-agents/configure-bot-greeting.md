@@ -2,7 +2,7 @@
 title: "Automatically start a Power Virtual Agents bot conversation"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: ""
-ms.date: 4/20/2020
+ms.date: 4/21/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -21,20 +21,24 @@ By default, chatbots created with Power Virtual Agents and [published to a websi
 
 However, you can use custom CSS and JavaScript code to automatically have the bot start the conversation when the bot loads.
 
-For example, you could have your bot say, "Hi, I’m Botty, a virtual agent" as soon a the bot loads.
+For example, you could have your bot say, "Hi, I’m Botty, a virtual agent" as soon as the bot loads.
 
 First, you'll need to deploy a custom canvas that includes arguments that trigger the greeting. By default, the custom canvas calls the default system greeting topic. You can, however, create a new topic to be used as the greeting, although you will need to modify the custom canvas code.
 
 You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas.md).
 
 >[!IMPORTANT]
->Having the bot start the conversation will show up in your [analytics](analytics-overview.md) will increase your session count.
+>Having the bot start the conversation will show up in your [analytics](analytics-overview.md) and will increase your session count.
 >If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary.md#engagement-over-time-chart). 
 >This might impact your analytics.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+>[!IMPORTANT]
+>You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents service. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
+>Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 ## Retrieve bot ID details
 
@@ -202,7 +206,7 @@ You can now test your bot by going to the web page where you deployed your bot'
 ### Create a new user topic
 
 >[!WARNING]
->Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+>Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
 
 
 1. Select **Topics** on the side navigation pane.

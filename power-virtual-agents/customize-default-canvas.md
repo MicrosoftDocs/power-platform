@@ -2,7 +2,7 @@
 title: "Customize the Power Virtual Agents web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: ""
-ms.date: 4/20/2020
+ms.date: 4/21/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -35,6 +35,10 @@ You can also combine the customized canvas with [configuring your bot to automat
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+>[!IMPORTANT]
+>You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents service. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
+>Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 ## Retrieve bot ID and tenant ID details
 
