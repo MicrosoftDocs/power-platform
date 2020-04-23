@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2020
+ms.date: 04/23/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -39,7 +39,7 @@ Here's what you can expect to receive if you (as an admin) or someone in your or
 - Fourteen days prior to disabling the environment, an email is sent to all admins in your organization.
 - Seven days prior to disabling the environment, an email is sent to all admins in your organization.
 - One day prior to disabling the environment, an email is sent to all admins in your organization.
-- If no action is taken, the environment will be deleted seven days after the final email.
+- If no action is taken, the environment will be deleted ten days after the final email.
 
 ## Actions you can take to prevent environment disabling and deletion
 
