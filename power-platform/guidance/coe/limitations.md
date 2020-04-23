@@ -48,6 +48,13 @@ The Common Data Service connector might experience some throttling limits if the
 
 - The CoE Starter Kit is available for government cloud (GCC) environments; however the custom connector to connect to Office 365 Audit Logs isn't available for GCC environments yet.
 
+## Developer Environments from Power Apps Community Plan
+
+- Power Platform protects Developer type SKUs from inquiry by non-authenticated users.
+- This means that the Model Driven Apps in Developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v2 (Model Driven Apps).
+- To fix this you would need to have your admin security role added to the security roles for all Dev environments, and then remove the check from the sync flow.
+- For more information on these environments see [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan).
+
 ## Sync Flow (Model Driven Apps)
 
 - It is currently not possible to retrieve model driven apps for Developer environments (My Name's environment).
