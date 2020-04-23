@@ -24,17 +24,16 @@ Install preferred solutions to gain added features and functionality.
  The list of available solutions varies. Some solutions like Office 365 groups for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, are freely available and visible by default. Trials for some solutions are gated and will only be visible if you go through **Settings** > **Dynamics Marketplace** or [appsource.microsoft.com](https://appsource.microsoft.com/marketplace?product=dynamics-crm) and sign up for the solutions. If you buy a new service subscription through Office Commerce, any associated solution installer  also becomes visible in the **Solutions** tab after that purchase is recognized by the provisioning system.  
   
 <a name="BKMK_InstallInsights"></a>   
+
 ## Install a preferred solution  
   
-1. Browse to the Power Platform admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
+1. Sign in to the Dynamics 365 admin center.
   
-2. Go to **Environments** > [select an environment] > **Manage Solutions**.
+2. Select the **Instances** tab, and then select the instance to add the solution to.  
   
-3. Select the **Instances** tab, and then select the environment to add the solution to.  
+3. Select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").  
   
-4. Select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").  
-  
-5. Select the solution you want to install and select **Install**.  
+4. Select the solution you want to install and select **Install**.  
   
     Proceed through **Terms of service** to accept the terms.  
   
@@ -44,15 +43,13 @@ Install preferred solutions to gain added features and functionality.
 
 ## Update a preferred solution
 
-1. Browse to the Power Platform admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
-  
-2. Go to **Environments** > [select an environment] > **Manage Solutions**.
+1. Sign in to the Dynamics 365 admin center.
   
 3. Select the **Instances** tab.  
   
-4. Select the environment with the solution to update, and then select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").  
+4. Select the instance with the solution to update, and then select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").  
   
-   ![Select an environment and Manage your solutions](media/select-instance-solution.png "Select an environment and Manage your solutions")
+   ![Select an instance and Manage your solutions](media/select-instance-solution.png "Select an instance and Manage your solutions")
 
 5. Select the solution you want to update, and then select **Upgrade**.  
   
