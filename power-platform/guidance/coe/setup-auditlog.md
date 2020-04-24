@@ -220,7 +220,7 @@ You should see a (200) status returned, which means the query was successful.
 > [!IMPORTANT]
 > If you don't see a (200) response, the request has failed and there is an error with your setup. Therefore, the flow won't work.
 
-## Set up the Power Automate flow
+### Set up the Power Automate flow
 
 A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Common Data Service entity, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
 
@@ -244,7 +244,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 1. (Optional) Update the start time and end time during which the logs will be read. The maximum is seven days in the past, and the end time must be after the start time. Use a positive number in the interval field.
 
-   [Update the start time and end time during which the logs will read](media/coe48.png "Update the start time and end time during which the logs will read")
+   ![Update the start time and end time during which the logs will read](media/coe48.png "Update the start time and end time during which the logs will read")
 
 1. Go back to the Center of Excellence - Audit Log solution, and open the flow details screen of the *(Child) Admin \| Sync Logs* flow by selecting the display name.
 
