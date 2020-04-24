@@ -239,7 +239,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    </table>
 
-      **Actions** <br /><br />
+   **Actions** <br /><br />
 
    <table style="width:100%">
    <tr>
@@ -252,7 +252,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    </tr>
    <tr>
    <td width="20%"> Remove from policy  </td>
-   <td width="80%">  Environments in <b>Added to policy</b> category can be moved to <b>Available category</b> using this action.  </td>
+   <td width="80%">  Environments in <b>Added to policy</b> category can be moved to <b>Available</b> category using this action.  </td>
    </tr>
    </table>
 
