@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
 ---
 
-# Create a data loss prevention (DLP) policy
+# Create a data loss prevention (DLP) policy 
 To protect data in your organization, Power Apps lets you create and enforce policies that define which consumer connectors specific business data can be shared with. These policies that define how data can be shared are referred to as data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
 
 DLP policies can be created at the tenant-level or at the environment-level and are managed from the Power Platform Admin Center. The new user interface is now in public preview.
@@ -53,11 +53,9 @@ These are covered in the next section.
 
 ## Create DLP policy process
 
-In these steps, we'll add SharePoint and Salesforce to the **Business** data only data group of a DLP policy. If a person who is part of the DLP policy's environment creates an app that shares data between SharePoint or Salesforce and any service in the **Non-business** data allowed data group, the app will not be allowed to connect.
-
 In this example walkthrough, we'll create a tenant-level DLP policy. We will add SharePoint and Salesforce to the Business data group of a DLP policy. We will also add Facebook and Twitter to the Blocked data group. We will leave the remaining connectors in the **Non-Business** data group. We will then exclude test environments from the scope of this policy and apply it on the remaining environments such as default and production environments in the tenant.
 
-Once this policy is saved, any Power App or Power Automate maker who is part of the DLP policy's environment can create an app or a flow that shares data between SharePoint or Salesforce. Any service in the **Non-business** data group, will not be allowed to establish connections. Similarly, makers will not be able to add Facebook and Twitter connectors in any app or flow.
+Once this policy is saved, any Power App or Power Automate maker who is part of the DLP policy's environment can create an app or a flow that shares data between SharePoint or Salesforce. Any Power App or Power Automate resource having an existing connection with a connector in the **Non-business** data group, will not be allowed to establish connections with SharePoint or Salesforce connectors and vice versa. Also, these makers will not be able to add Facebook and Twitter connectors to any Power App or Power Automate resource.
 
 1. In Power Platform admin center, select **Data policies** > **New policy** to start the New Policy process.
 
@@ -109,7 +107,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
    <table style="width:100%">
    <tr>
-   <th>Setting</th>
+   <th>Pivot</th>
    <th>Description</th>
    </tr>
    <tr>
@@ -130,7 +128,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
    <table style="width:100%">
    <tr>
-   <th>Setting</th>
+   <th>Action</th>
    <th>Description</th>
    </tr>
    <tr>
@@ -160,7 +158,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    |**7**  |   |  Action buttons to assign individual connectors across connector classification groups        |
 
 
-4. Select one or more connectors, such as SalesForce and Sharepoint, and then select **Move to Business** from the top menu bar to apply to all the selected. You can also use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. 
+4. Select one or more connectors, such as SalesForce and SharePoint, and then select **Move to Business** from the top menu bar to apply to all the selected. You can also use the ellipses (![](./media/vertical-ellipses.png)) to the right of the connector name. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign multiple connectors](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
@@ -190,8 +188,10 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
    For the purpose of this walkthrough, to exclude test environments from this policy, select **Exclude certain environments** which brings up the **Add Environments** page. Select **Next**.
   
-
 7. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies this list will show all the environments in the tenant to the tenant admin. For environment-level policies this list will only show a subset of the environments in the tenant that are managed by the user signed in as Environment Admin. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Add environments](media/dlp-add-environments2.png "Add environments")
 
    **Attributes** <br /><br />
 
@@ -226,7 +226,7 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
 
    <table style="width:100%">
    <tr>
-   <th>Setting</th>
+   <th>Pivot</th>
    <th>Description</th>
    </tr>
    <tr>
@@ -236,6 +236,23 @@ Once this policy is saved, any Power App or Power Automate maker who is part of 
    <tr>
    <td width="20%"> Added to policy (n)   </td>
    <td width="80%">  For environment policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this pivot represents the subset of environments that are within the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the subset of environments that are excluded from the policy scope.   </td>
+   </tr>
+   </table>
+
+      **Actions** <br /><br />
+
+   <table style="width:100%">
+   <tr>
+   <th>Action</th>
+   <th>Description</th>
+   </tr>
+   <tr>
+   <td width="20%"> Add to policy   </td>
+   <td width="80%"> Environments in <b>Available</b> category can be moved to <b>Added to policy</b> category using this action. </td>
+   </tr>
+   <tr>
+   <td width="20%"> Remove from policy  </td>
+   <td width="80%">  Environments in <b>Added to policy</b> category can be moved to <b>Available category</b> using this action.  </td>
    </tr>
    </table>
 
@@ -269,13 +286,6 @@ This table describes the impact of the created DLP policy on app connections.
 
 Since no DLP policy has been applied to test environments, apps and flows can use any set of connectors together in these environments.
 
-## About new connectors
-
-By default, all connectors are considered part of the **Non-Business** data group; no connectors are included in the **Business** data group. This effectively means that all connectors can be used with other connectors. 
-
-New connectors are added to the default data group, **Non-Business**. If you prefer, you can change which category is considered the default, and then all new connectors will be classified in that category by default. See [Change the default data group](prevent-data-loss.md#change-the-default-data-group). 
-
-Typically, most companies will want to treat new connectors as **Non-Business** until they evaluate if it is appropriate to use with data classified as business data. 
 
 ## Use DLP PowerShell commands
 See [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).
