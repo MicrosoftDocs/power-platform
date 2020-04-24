@@ -261,7 +261,7 @@ If any policy (tenant and/or environment-level) applicable to an environment mar
 ### Business/Non-Business classification impact across multiple policies
 Evaluation of **Business** or **Non-Business** classification across multiple policies is a lot more complicated than **Blocked** classification. Note, **Business**/**Non-Business** is simply a grouping attribution. It is not a property that gets assigned to the connector. Admins can classify a given connector, such as SharePoint, as **Business** in policy A and as **Non-Business** in policy B. What matters is what other connectors SharePoint is grouped with across policy A and policy B. 
 
-Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across ten connectors (SharePoint, Twitter, Salesforce, Facebook, Face API, Office 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob Storage, Box) classifying them as **Business** or **Non-Business** represented through six different categories across the three policies (-E1-, -E2-, -E3-, -E4-, -E5-, -E6-).
+Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across ten connectors (SharePoint, Twitter, Salesforce, Facebook, Face API, Office 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob Storage, Box) classifying them as **Business** or **Non-Business** represented through two categories each across the three policies (-E1-, -E2-, -E3-, -E4-, -E5-, -E6-).
 
 **Policy A** <br />
 -E1- **Business** – SharePoint, Twitter, Salesforce, Office 365 Outlook, Basecamp 3 <br />
