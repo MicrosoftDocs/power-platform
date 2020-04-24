@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2020
+ms.date: 04/24/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -89,15 +89,15 @@ Below are the connectors that cannot be blocked using DLP policies.
 </tr>
 <tr>
 <td width="20%"> Microsoft Forms Pro </td>
-<td width="20%"> Flow Management</td>
-<td width="20%"> Excel Online (OneDrive) </td>
+<td width="20%"> Power Automate Management</td>
+<td width="20%"> Excel  </td>
 <td width="20%"> Bing Search</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> Microsoft Teams </td>
-<td width="20%"> Microsoft Flow for Admins</td>
-<td width="20%"> Excel </td>
+<td width="20%"> Power Automate for Admins</td>
+<td width="20%"> Excel Online (OneDrive) </td>
 <td width="20%"> Cloud App Security</td>
 <td width="20%"> </td>
 </tr>
@@ -112,84 +112,91 @@ Below are the connectors that cannot be blocked using DLP policies.
 <td width="20%"> Office 365 Groups </td>
 <td width="20%"> Power Apps for Admins</td>
 <td width="20%">  </td>
-<td width="20%"> Content Moderator</td>
+<td width="20%"> Content Conversion</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> Office 365 Outlook </td>
 <td width="20%"> Power Apps for App Makers</td>
 <td width="20%">  </td>
-<td width="20%"> Custom Vision (Azure)</td>
+<td width="20%"> Content Moderate</td>
 <td width="20%"> </td>
 </tr>
 <tr> 
 <td width="20%"> Office 365 Users </td>
 <td width="20%"> PowerPlatform for Admins</td>
 <td width="20%">  </td>
-<td width="20%"> Face API (Azure)</td>
+<td width="20%"> Custom Vision</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> Office 365 Video </td>
-<td width="20%"> Content Conversion</td>
+<td width="20%"> Power Apps Notifications</td>
 <td width="20%">  </td>
-<td width="20%"> GitHub</td>
+<td width="20%"> Face API/td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> OneDrive for Business </td>
 <td width="20%"> </td>
 <td width="20%">  </td>
-<td width="20%"> LinkedIn V2</td>
+<td width="20%"> GitHub</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> OneNote (Business) </td>
 <td width="20%"> </td>
 <td width="20%">  </td>
-<td width="20%"> LUIS (Azure)</td>
+<td width="20%"> LinkedIn V2</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> Outlook Customer Manager </td>
 <td width="20%"> </td>
 <td width="20%">  </td>
-<td width="20%"> Microsoft Kaizala</td>
+<td width="20%"> LUIS</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> Outlook Tasks </td>
 <td width="20%"> </td>
 <td width="20%">  </td>
-<td width="20%"> QnA Maker (Azure)</td>
+<td width="20%"> Microsoft Kaizala</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> Planner </td>
 <td width="20%"> </td>
 <td width="20%">  </td>
-<td width="20%"> Microsoft School Data Sync</td>
+<td width="20%"> QnA Maker</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> Project Online </td>
 <td width="20%"> </td>
 <td width="20%">  </td>
-<td width="20%"> Microsoft Translator</td>
+<td width="20%"> Microsoft School Data Sync</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> SharePoint </td>
 <td width="20%"> </td>
 <td width="20%">  </td>
-<td width="20%"> MSN Weather</td>
+<td width="20%"> Microsoft Translator</td>
 <td width="20%"> </td>
 </tr>
 <tr>
 <td width="20%"> Skype for Business Online </td>
 <td width="20%"> </td>
 <td width="20%">  </td>
-<td width="20%"> Text Analytics </td>
+<td width="20%"> MSN Weather</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Text Analytics</td>
 <td width="20%"> </td>
 </tr>
 <tr>
@@ -211,6 +218,27 @@ Below are the connectors that cannot be blocked using DLP policies.
 <td width="20%"> </td>
 <td width="20%">  </td>
 <td width="20%"> Yammer</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> LinkedIn</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Microsoft Staffhub</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Form Recognizer</td>
 <td width="20%"> </td>
 </tr>
 </table>
@@ -337,15 +365,16 @@ Similarly, Power Automate makers and users will see that the flows which is usin
 
 The DLP connector blocking ability and DLP user interface support in the Power Platform admin center is in public preview. There are the following known issues and limitations with the current offering that we're working to address:
 
-1.	Three-way DLP policy creation is not available through admin connectors.
-2.	If the default group is set as **Blocked** for policies created through DLP PowerShell, the not blockable connector list is not taking effect.
-3.	All check boxes present while creating a new policy appear completed on selecting the **Review** step directly on the **Data Policies** page.
-4.	Environment Admin is not able to view details of a tenant policy.
-5.	Environment Admin is not able to edit environment policies created by other Environment Admins.
-6.	Select environments messaging for Environment Admins is incongruent with behavior.
-7.	Power Platform for admins connector always blocks **LBI/Non-Business** group.
-8.	Policy list view search only working on the Name field.
-
+1. Three-way DLP policy creation is not available through admin connectors.
+2. If the default group is set as **Blocked** for policies created through DLP PowerShell, the not blockable connector list is not taking effect.
+3. All check boxes present while creating a new policy appear completed on selecting the **Review** step directly on the **Data Policies** page.
+4. Environment Admin is not able to view details of a tenant policy.
+5. Environment Admin is not able to edit environment policies created by other Environment Admins.
+6. Select environments messaging for Environment Admins is incongruent with behavior.
+7. Power Platform for admins connector always blocks **LBI/Non-Business** group.
+8. Policy list view search only working on the Name field.
+9. The following are not marked as blockable but will be blockable: Microsoft Teams, Power Apps Notifications, Computer Vision API, QnA Maker, LinkedIn, Microsoft Staffhub, Form Recognizer. Cloud PKI Management is marked as unblockable but will be blockable.
+10. Some environment admin profiles are getting evaluated as tenant admin profiles. However, they are unable to save their changes as tenant admins.
 
 ### See also
 [Create a data loss prevention (DLP) policy](create-dlp-policy.md) <br />
