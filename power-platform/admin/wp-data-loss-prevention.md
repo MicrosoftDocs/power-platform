@@ -133,7 +133,7 @@ Below are the connectors that cannot be blocked using DLP policies.
 <td width="20%"> Office 365 Video </td>
 <td width="20%"> Power Apps Notifications</td>
 <td width="20%">  </td>
-<td width="20%"> Face API/td>
+<td width="20%"> Face API</td>
 <td width="20%"> </td>
 </tr>
 <tr>
@@ -373,7 +373,7 @@ The DLP connector blocking ability and DLP user interface support in the Power P
 6. Select environments messaging for Environment Admins is incongruent with behavior.
 7. Power Platform for admins connector always blocks **LBI/Non-Business** group.
 8. Policy list view search only working on the Name field.
-9. The following are not marked as blockable but will be blockable: Microsoft Teams, Power Apps Notifications, Computer Vision API, QnA Maker, LinkedIn, Microsoft Staffhub, Form Recognizer. Cloud PKI Management is marked as unblockable but will be blockable.
+9. The following are not marked as blockable but will not be blockable: Microsoft Teams, Power Apps Notifications, Computer Vision API, QnA Maker, LinkedIn, Microsoft Staffhub, Form Recognizer. Cloud PKI Management is marked as unblockable but will be blockable.
 10. Some environment admin profiles are getting evaluated as tenant admin profiles. However, they are unable to save their changes as tenant admins.
 
 ### See also
