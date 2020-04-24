@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/22/2020
+ms.date: 04/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,7 +31,7 @@ There are certain experiences that are currently not available with Dynamics 365
 - [Connected Field Service](https://msdn.microsoft.com/library/mt744253.aspx)
 - [Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)
 - [Gamification](https://docs.microsoft.com/dynamics365/customer-engagement/gamification/manage-gamification-in-dynamics-365-online)
-- [Home.Dynamics.com](https://home.dynamics.com/)
+- [Home.Dynamics.com](https://home.dynamics.com/) and the app switcher
 - [Insights, powered by InsideView](https://appsource.microsoft.com/product/dynamics-365/insideviewinc.b5386882-4312-4d69-879a-23081897c012)
 - [Mobile offline](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/configure-mobile-offline-synchronization-dynamics-365-phones-tablets)
 - [Remote Assist on the HoloLens mobile](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/remote-assist-government-community-cloud)
