@@ -150,7 +150,7 @@
           href: admin-settings.md      
         - name: Environment database settings
           href: environment-database-settings.md     
-        - name: Product settings
+        - name: Product 
           items:
           - name: Behavior 
             href: settings-behavior.md
@@ -160,7 +160,7 @@
             href: enable-languages.md
           - name: Privacy and security 
             href: settings-privacy-security.md
-        - name: Business settings
+        - name: Business 
           items:
           - name: Business closures 
             href: https://docs.microsoft.com/dynamics365/customer-service/set-when-business-closed-csh
@@ -176,7 +176,7 @@
             href: customize-regional-options-admins.md
           - name: Relationship roles
             href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/create-connections-view-relationships-between-records
-        - name: Users + permissions settings
+        - name: Users + permissions 
           items:
           - name: Business units
             href: create-edit-business-units.md
@@ -194,10 +194,14 @@
             href: create-users-assign-online-security-roles.md
         - name: Audit and logs
           items: 
-          - name: Audit data and user activity
-            href: audit-data-user-activity.md
+          - name: Audit log management
+            href: recover-database-space-deleting-audit-logs.md
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
+          - name: Audit summary view 
+            href: audit-data-user-activity.md#view-audit-logging-details
+          - name: Entity and field audit settings 
+            href: audit-data-user-activity.md#enable-or-disable-entities-and-fields-for-auditing
           - name: System jobs
             href: monitor-manage-system-jobs.md
         - name: Templates
@@ -252,7 +256,7 @@
             href: system-settings-dialog-box-synchronization-tab.md
           - name: Yammer
             href: connect-yammer.md
-        - name: Data management settings
+        - name: Data management 
           items:
           - name: Add ready-to-use business process
             href: https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/add-ready-use-business-processes
