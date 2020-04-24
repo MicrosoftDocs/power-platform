@@ -109,8 +109,6 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 
 - [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 Service administrator](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
 
-- Check back for availability of operation and access permissions for the upcoming Power Platform service admin role.
-
 ### Cmdlet list - Admin Cmdlets
 
 | Purpose | Cmdlets
