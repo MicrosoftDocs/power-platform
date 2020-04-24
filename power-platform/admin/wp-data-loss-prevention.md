@@ -57,11 +57,11 @@ All third-party connectors can be blocked. All Microsoft owned Premium connector
 ### List of connectors that cannot be blocked
 **Standard** licensed connectors where the service is owned by Microsoft cannot be classified as **Blocked** through DLP policies. They can be classified into **Business** or **Non-Business** data groups. These connectors broadly fall into following categories:
 
-1.	Enterprise class Microsoft 365 suite of services with no additional licensing implications 
-2.	Power Platform specific connectors which are part of the base platform capabilities
-3.	Private use only Microsoft services such as Outlook.com that only support Microsoft account (private account) sign in through the connector 
-4.	Public facing cloud services hosted by Microsoft that do not store data such as Bing Search. Privacy policy statement for Microsoft hosted public services can be found [here](https://privacy.microsoft.com).
-5.	Common data service connectors that are the only Premium connectors that cannot be blocked since Common Data Service is an integral part of Power Platform
+1.	Enterprise class Microsoft 365 suite of services with no additional licensing implications. 
+2.	Power Platform specific connectors which are part of the base platform capabilities.
+3.	Private use only Microsoft connectors such as Outlook.com do not support corporate sign-ins through connectors and only support Microsoft account sign-ins. We recommend that these are classified in the **Non-Business** category by the admins.
+4.	For other standard Microsoft services such as Bing Search and Microsoft Translator, the privacy policy statement for Microsoft hosted services can be found [here](https://privacy.microsoft.com).
+5.	Common data service connectors that are the only Premium connectors that cannot be blocked since Common Data Service is an integral part of Power Platform,
 
 Below are the connectors that cannot be blocked using DLP policies.
 
