@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2020
+ms.date: 04/24/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,13 +20,13 @@ search.app:
 
 You can now install, configure, and manage Dynamics 365 apps in the Power Platform admin center.
 
-Apps in this topic refer to model-driven applications in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) as well as apps purchased from Microsoft AppSource.
+Apps in this topic refer to model-driven applications in Dynamics 365, Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
 You can manage apps from either the tenant level or the environment level.
 
 ## Tenant-level view of apps
 
-App management in the Dynamics 365 admin center **Applications** tab is now done from the tenant-level view of apps in the Power Platform admin center.
+App management in the **Applications** tab of the Dynamics 365 admin center  is now done from the tenant-level view of apps in the Power Platform admin center. Follow these steps to see a list of all licensed Dynamics 365 Customer Engagement applications for your tenant.
 
 |Legacy app management  | New app management  |
 |---------|---------|
@@ -38,7 +38,7 @@ Follow these steps to see a list of all licensed applications for your tenant.
 
 2. Select **Resources** > **Dynamics 365 apps** from the left-side menu.
 
-   You'll see a list of installed or available to install or configure Dynamics 365 apps for the signed-in user and their tenant. An admin will see all installed or available to install apps.
+   You'll see a list of installed or available to install or configure Dynamics 365 apps for the signed-in user. An admin will see all installed or available to install apps.
 
    Duplicate items will appear under **Name** if you have the same app license applied to multiple environments.
 
@@ -47,15 +47,15 @@ Follow these steps to see a list of all licensed applications for your tenant.
 
    Note the following under **Status**:
 
-   - **Enabled**: This app is ready to be installed to your environments. 
-   - **Configured**: This app has been configured to an environment. It can be reconfigured to a different environment.
+   - **Enabled**: This app is ready to be installed in your environments. 
+   - **Configured**: This app has been configured to an environment. It can be reconfigured to a different environment or configuration to current environment can be udpated.
    - **Not configured**: This app is ready to be configured to an environment.
 
 3. From the top menu bar, depending on the status of the app, you can do the following:
 
     - **Manage**: Select to go to a page where you can manage your app. 
     - **Details**: See information about the app such as the publisher.
-    - **Install app**: Admins can install certain applications to the selected environment for which they have permission. Once an environment is selected, you'll see a list of packages to be installed.
+    - **Install app**: Install certain applications to the selected environment for which you have permissions. Once an environment is selected, you'll see a list of packages to be installed.
 
 4. If your tenant is multigeo, you can change the locale with the region selector.
 
@@ -64,7 +64,7 @@ Follow these steps to see a list of all licensed applications for your tenant.
 
 ## Environment-level view of apps
 
-Solution management in the Dynamics 365 admin center is now done from the environment-level view of apps in the Power Platform admin center.
+In addition to the environment level, solution management can also be done from the environment-level view in the Power Platform admin center.
 
 |Legacy app management  | New app management  | 
 |---------|---------|
@@ -132,7 +132,7 @@ If it's necessary to [contact Support](support-overview.md), be sure to provide 
 
 ### Don't see your environment?
 
-The number of environments admins see in the **Select an environment** drop-down list will be less than or equal to the number of environments displayed on the **Environments** page in the Power Platform admin center. Note that no filter is applied on the **Environments** page.    
+The number of environments admins see in the **Select an environment** drop-down list will be less than or equal to the number of environments displayed on the **Environments** page in the Power Platform admin center. Check that no filter is applied on the **Environments** page.    
 
 Filters are applied to the **Select an environment** drop-down list as follows:
 1. Filtered based on the geographic region (Geo picker); selected by the admin in the tenant-level view.
