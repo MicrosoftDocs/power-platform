@@ -283,8 +283,8 @@ When all three policies are applied together on the same environment the net res
 -E1-, -E4-, -E5- Group 3 – Twitter, Salesforce <br />
 -E1-, -E4-, -E6- Group 4 – NULL <br />
 -E2-, -E3-, -E5- Group 5 – Facebook, Face API <br />
--E2-, -E3-, -E6- Group 6 – <empty> <br />
--E2-, -E4-, -E5- Group 7 – <empty> <br />
+-E2-, -E3-, -E6- Group 6 – NULL <br />
+-E2-, -E4-, -E5- Group 7 – NULL <br />
 -E2-, -E4-, -E6- Group 8 – Adobe Sign, Azure Blob Storage, Box
 
 To summarize, an app or flow can only use connectors from these individual groups at any given time and not mix connectors across the eight different groups. From the examples above, note that multiple DLP policies applied on an environment will fragment your connector space in complicated ways. Therefore, it is highly recommended to have a minimum number of DLP policies applicable to any given environment. 
