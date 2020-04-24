@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 04/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,6 +16,9 @@ search.app:
   - Powerplatform
 ---
 # Install, update, or remove a preferred solution
+
+> [!NOTE]
+> You can now manage your solutions in the Power Platform admin center. See [Environment-level view of apps](manage-apps.md#environment-level-view-of-apps).
 
 Install preferred solutions to gain added features and functionality.  
   
@@ -45,17 +48,17 @@ Install preferred solutions to gain added features and functionality.
 
 1. Sign in to the Dynamics 365 admin center.
   
-3. Select the **Instances** tab.  
+2. Select the **Instances** tab.  
   
-4. Select the instance with the solution to update, and then select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").  
+3. Select the instance with the solution to update, and then select **Manage your solutions** ![Manage your solutions](media/manage-solution.png "Manage your solutions").  
   
    ![Select an instance and Manage your solutions](media/select-instance-solution.png "Select an instance and Manage your solutions")
 
-5. Select the solution you want to update, and then select **Upgrade**.  
+4. Select the solution you want to update, and then select **Upgrade**.  
   
    ![Select solution and upgrade](media/select-solution-upgrade.png "Select solution and upgrade")
 
-6. Proceed through **Terms of service** to accept the terms and start the upgrade. 
+5. Proceed through **Terms of service** to accept the terms and start the upgrade. 
 
   
 ## Delete a preferred solution  
