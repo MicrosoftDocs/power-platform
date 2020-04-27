@@ -188,8 +188,8 @@ The refresh cadence does not change when you will receive updates for:
 - Dynamics 365 Marketing
 
 > [!NOTE]
-> - By default, environments are automatically in the frequent cadence; creating and editing of canvas apps will receive updates once a week. When apps are published, they will receive the corresponding runtime version. 
-> - If you’ve chosen the moderate cadence for the environment, all creating and editing of canvas apps will receive updates once a month. When apps are published, they will receive the corresponding runtime version.
+> - By default, environments are automatically in the **frequent** cadence; creating and editing canvas apps will receive updates once a week. When apps are published, they will receive the corresponding runtime version. 
+> - If you’ve chosen the **moderate** cadence for the environment, all creating and editing of canvas apps will receive updates once a month. When apps are published, they will receive the corresponding runtime version.
 
 ## FAQ
 
