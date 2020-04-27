@@ -45,7 +45,7 @@ Here's what you can expect to receive if you (as an admin) or someone in your or
 
 Any time prior to the environment deletion you can purchase licenses. Be sure to purchase enough licenses and/or capacity to cover all the production environments in your tenant. See [Licensing overview for Power Platform](pricing-billing-skus.md).
 
-Within 24 hours after the licenses and capacity are applied to your tenant, the environment will automatically be enabled and no longer be considered marked for deletion. If your environment has already been deleted, it is possible to recover it within a limited window of time. See [Recover a recently deleted environment](delete-environment.md#recover-a-recently-deleted-environment).
+Within 24 hours after the licenses and capacity are applied to your tenant, the environment will automatically be enabled and no longer be considered marked for deletion. If your environment has already been deleted, it is possible to recover it within a limited window of time. See [Recover a recently deleted environment](recover-environment.md).
 
 > [!IMPORTANT]
 > Please allow ample time to take appropriate action. Your organization may have a central admin and purchasing group and might be purchasing through Microsoft partners. Please plan accordingly. 
