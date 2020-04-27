@@ -55,7 +55,7 @@ Data flow to a specific service can be blocked altogether by marking that connec
 
 All third-party connectors can be blocked. All Microsoft-owned premium connectors (except Common Data Service) can be blocked.
 
-### List of connectors that can't be blocked
+### List of connectors that can't be blocked<a name="list-of-connectors-that-cannot-be-blocked"></a>
 
 Standard licensed connectors, where the service is owned by Microsoft, can't be classified as **Blocked** through DLP policies. They can be classified into **Business** or **Non-Business** data groups. These connectors broadly fall into following categories:
 
@@ -395,4 +395,4 @@ The ability to block connectors by using DLP policy and DLP policy support in th
 
 [Create a data loss prevention (DLP) policy](create-dlp-policy.md) <br />
 [Manage data loss prevention (DLP) policies](prevent-data-loss.md) <br />
-[Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
+[Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
