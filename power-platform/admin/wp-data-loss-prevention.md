@@ -275,7 +275,7 @@ Data policies<!--Intentionally not "DLP policies" here?--> can be created at bot
 ### Tenant-level policies
 
 Tenant admins can define three types of scopes for tenant-level data policies: 
-<!--Suggest formatting as options rather than steps.-->
+<!--Suggest formatting as options rather than steps. Maybe this should track exactly with the UI? So it would be: "Option 1: Add all environments. Option 2: Add multiple environments. Option 3: Exclude certain environments." ?-->
 Option 1: Apply to all environments<br>
 Option 2: Apply to multiple environments (but not all)<br>
 Option 3: Apply to all environments except certain specifically excluded ones
