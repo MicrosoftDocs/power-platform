@@ -218,7 +218,10 @@ You should see a (200) status returned, which means the query was successful.
 ![Successful status being returned from the StartSubscription activity](media/coe44.png "Successful status being returned from the StartSubscription activity")
 
 > [!IMPORTANT]
-> If you don't see a (200) response, the request has failed and there is an error with your setup. Therefore, the flow won't work.
+> If you don't see a (200) response, the request has failed and there is an error with your setup. Therefore, the flow won't work. Frequent issues to check are: <br>
+> 1. Audit logs are enabled, and you have permissions: [view audit logs](https://protection.office.com/unifiedauditlog)<br>
+> 2. You must give the connector time to install, try again in a few minutes.
+> 3. Did you type or paste the correct tenant url?
 
 ### Set up the Power Automate flow
 
