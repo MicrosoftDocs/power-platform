@@ -303,7 +303,7 @@
         - name: Multiple online environments or tenants
           href: multiple-online-environments-tenants.md
         - name: Administration mode
-          href: administration-mode.md
+          href: sandbox-environments#administration-mode.md
         - name: Support environment
           href: support-environment.md            
     - name: Analytics
