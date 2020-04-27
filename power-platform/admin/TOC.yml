@@ -389,7 +389,7 @@
         - name: Assign license to users
           href: create-users-assign-online-security-roles#add-a-license-to-a-user-account.md
         - name: Assign service admin role to users
-          href: assign-service-admin-role.md
+          href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
         - name: Add users to environment
           href: database-security.md
      #  - name: Delete users from environment
