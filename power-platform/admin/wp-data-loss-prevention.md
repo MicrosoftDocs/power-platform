@@ -107,7 +107,7 @@ The following connectors can't be blocked by using DLP policies.
 <td width="20%"> Microsoft To-Do (Business) </td>
 <td width="20%"> Power Apps Notification<!-- On docs, this is singular but it probably shouldn't be when it goes to general availability.--></td>
 <td width="20%">  </td>
-<td width="20%"> Computer Vision API<!--note from editor: (Azure) is not part of the connector name. Should this be "(Preview)" instead? (see https://docs.microsoft.com/en-us/connectors/cognitiveservicescomputervision/ --></td>
+<td width="20%"> Computer Vision API<!--note from editor: (Azure) is not part of the connector name. Should this be "(Preview)" instead? (see https://docs.microsoft.com/connectors/cognitiveservicescomputervision/ --></td>
 <td width="20%"> </td>
 </tr>
 <tr>
@@ -239,7 +239,7 @@ The following connectors can't be blocked by using DLP policies.
 </tr>
 -->
 
-<!--note from editor: Can you verify whether you really want to include this connector? According to https://docs.microsoft.com/en-us/microsoftteams/expand-teams-across-your-org/shifts/microsoft-staffhub-to-be-retired, "Microsoft StaffHub will stop working for all users as of January 1, 2020."
+<!--note from editor: Can you verify whether you really want to include this connector? According to https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/shifts/microsoft-staffhub-to-be-retired, "Microsoft StaffHub will stop working for all users as of January 1, 2020."
 <tr>
 <td width="20%">  </td>
 <td width="20%"> </td>

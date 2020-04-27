@@ -352,20 +352,20 @@ Get-AdminPowerAppConnector
 
 Returns a list of all custom connector details in the tenant.
 
-### Data Loss Prevention (DLP) policy commands 
-
+### Data loss prevention (DLP) policy commands 
+<!--note from editor: Duplicated this from wp-data-loss-prevention.md, which please see.-->
 > [!NOTE]
-> Connector blocking capability using a three-way classification - **Business**, **Non-Business**, and **Blocked** - as well as DLP user interface support in the Power Platform admin center are currently in public preview. There is new DLP PowerShell support for three-way DLP classification which is also in public preview. Legacy DLP support for two-way classification along with user interface and PowerShell support for two-way classification – **Business**, **Non-Business** - is currently generally available and will continue to be available until the three-way policy is upgraded to general availability. 
+> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
 
-These cmdlets will control the DLP policies on your tenant.
+These cmdlets control the DLP policies on your tenant.
 
-#### Create policy
+#### Create a DLP policy
 
 ```powershell
 New-DlpPolicy
 ```
 
-Creates a new DLP policy for the signed in admin's tenant.
+Creates a new DLP policy for the signed-in admin's tenant.
 
 #### Retrieve a list of of DLP objects
 
@@ -373,15 +373,15 @@ Creates a new DLP policy for the signed in admin's tenant.
 Get-DlpPolicy
 ```
 
-Gets policy objects for the signed in admin's tenant.
+Gets policy objects for the signed-in admin's tenant.
 
-#### Update a policy
+#### Update a DLP policy
 
 ```powershell
 Set-DlpPolicy
 ```
 
-Updates details on the policy, such as the policy display name.
+Updates details of the policy, such as the policy display name.
 
 #### Remove a policy
 
@@ -391,21 +391,21 @@ Remove-DlpPolicy
 
 Deletes a DLP policy.
 
-#### Display all policies
+#### Display all DLP policies
 
 ```powershell
 Get-AdminDlpPolicy
 ```
 
-Returns a list of all the policies.
+Returns a list of all DLP policies.
 
-#### Display a filtered list of policies
+#### Display a filtered list of DLP policies
 
 ```powershell
 Get-AdminDlpPolicy 'DisplayName'
 ```
 
-Uses the display name to filter the policies
+Uses the display name to filter the policy list.
 
 #### Display all 'Business data only' API connectors in a policy
 
@@ -413,7 +413,7 @@ Uses the display name to filter the policies
 Get-AdminDlpPolicy 'PolicyName' | Select –ExpandProperty BusinessDataGroup
 ```
 
-Lists the API connections that are in the *Business data only*(or *BusinessDataGroup*) field in an input policy.
+Lists the API connections that are in the *Business data only* (or *BusinessDataGroup*) field in an input policy.
 
 #### Add a connector to the 'Business data only' group
 
@@ -421,7 +421,7 @@ Lists the API connections that are in the *Business data only*(or *BusinessDataG
 Add-ConnectorToBusinessDataGroup -PolicyName 'PolicyName' –ConnectorName 'ConnectorName'
 ```
 
-Adds a connector to the 'Business data only' group in a given DLP policy. See the list of connectors by *DisplayName* and *ConnectorName* (used as input) here.
+Adds a connector to the *Business data only* group in a given DLP policy. See the list of connectors by *DisplayName* and *ConnectorName* (used as input) here.
 
 ### Block trial licenses commands
 
@@ -438,6 +438,7 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 ## Version History
 | Date | Updates |
 | --- | --- |
+| 04/23/2020 | Added new DLP policy cmdlets:<ul><li>New-DlpPolicy</li><li>Get-DlpPolicy</li><li>Set-DlpPolicy</li><li>Remove-DlpPolicy</li><li>Get-AdminDlpPolicy</li><li>Add-ConnectorToBusinessDataGroup</li></ul>
 | 12/20/2019| Added the new administrative cmdlets: Recover-AdminPowerAppEnvironment and Get-AdminPowerAppSoftDeletedEnvironment |
 | 12/05/2019| Provide a way for Power Platform admins to block users within their tenant from signing up for PowerApps/Flows trial licenses. |
 | 04/23/2018 | <ol> <li> Initial launch of the Power Apps cmdlets for app creators (preview) including management cmdlets for Environments, Apps, Flows, Power Automate approvals, Connections, and Custom Connectors </li> <li> Initial launch of the Power Apps cmdlets for administrators (preview) including administrative cmdlets for Environments, Apps, and Flows </li></ol>|
