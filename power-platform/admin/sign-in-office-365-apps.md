@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 04/28/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -65,7 +65,8 @@ For admins and end users, when you sign in to https://office.com, you will see a
    |**crm7** for Japan (JPN)|[https://port.crm7.dynamics.com/G/instances/instancePicker.aspx](https://port.crm7.dynamics.com/G/instances/instancePicker.aspx)|  
    |**crm8** for India (IND)|[https://port.crm8.dynamics.com/G/instances/instancePicker.aspx](https://port.crm8.dynamics.com/G/instances/instancePicker.aspx)|  
    |**crm11** for United Kingdom (UK)|[https://port.crm11.dynamics.com/G/instances/instancePicker.aspx](https://port.crm11.dynamics.com/G/instances/instancePicker.aspx)|  
-   |**crm12** for France (FRA)|[https://port.crm12.dynamics.com/G/instances/instancePicker.aspx](https://port.crm12.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm12** for France (FRA)|[https://port.crm12.dynamics.com/G/instances/instancePicker.aspx](https://port.crm12.dynamics.com/G/instances/instancePicker.aspx)| 
+   |**crm15** for United Arab Emirates (UAE)|[https://port.crm15.dynamics.com/G/instances/instancePicker.aspx](https://port.crm15.dynamics.com/G/instances/instancePicker.aspx)|
   
     For Germany (DEU), use the following: https://port.crm.microsoftdynamics.de/g/instances.instancepicker.aspx.  
   
