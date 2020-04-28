@@ -61,8 +61,10 @@ Keep in mind that after a user account has access to the audit logs, that user h
 1. Select **Test Operation**.
 
    You should receive a (200) response, which indicates the query has been successfully executed.
-   
    ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
+
+>> [!IMPORTANT]
+> If you are using DLP, you will need to put this connector into the business group, see: [Custom Connectors and DLP](https://docs.microsoft.com/power-platform/guidance/coe/limitations#Custom-Connectors-and-DLP)
 
 More information: [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition).
 
@@ -80,7 +82,6 @@ More information: [custom connector documentation](https://docs.microsoft.com/co
     1. For Admin \| Sync Audit Logs, select **Create as new**, and then select **Save**.
 
     1. For the Office 365 Audit Logs connector, Common Data Service Connection, and Office 365 Audit Log Connection, select **Select during import**, and then choose your connection.
-    
        ![Import options when importing a new flow](media/coe31.png "Import options when importing a new flow]")
 
     1. After the connections are configured, select **Import**.
@@ -222,6 +223,9 @@ You should see a (200) status returned, which means the query was successful.
 > 1. Audit logs are enabled, and you have permissions: [view audit logs](https://protection.office.com/unifiedauditlog)<br>
 > 2. You must give the connector time to install, try again in a few minutes.
 > 3. Did you type or paste the correct tenant url?
+
+>> [!IMPORTANT]
+> If you are using DLP, you will need to put this connector into the business group, see: [Custom Connectors and DLP](https://docs.microsoft.com/power-platform/guidance/coe/limitations#Custom-Connectors-and-DLP)
 
 ### Set up the Power Automate flow
 
