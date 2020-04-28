@@ -442,6 +442,19 @@
         href: system-application-users.md
       - name: Configure user security
         href: manage-users-overview.md
+      - name: Configure environment security
+        items: 
+        - name: Control user access to environments
+          href: control-user-access.md  
+        - name: Restrict cross-tenant access 
+          href: cross-tenant-restrictions.md
+      - name: Data loss prevention policies 
+        href: wp-data-loss-prevention.md
+        items: 
+        - name: Create a DLP policy
+          href: create-dlp-policy.md
+        - name: Manage DLP policies
+          href: prevent-data-loss.md
       - name: Configure field-level security
         items:
         - name: Overview
@@ -460,19 +473,7 @@
           href: about-team-templates.md
         - name: Team templates for access rights 
           href: create-team-template-add-entity-form.md
-      - name: Configure environment security
-        items: 
-        - name: Control user access to environments
-          href: control-user-access.md  
-        - name: Restrict cross-tenant access 
-          href: cross-tenant-restrictions.md
-        - name: Data loss prevention policies 
-          href: wp-data-loss-prevention.md
-          items: 
-          - name: Create a DLP policy
-            href: create-dlp-policy.md
-          - name: Manage DLP policies
-            href: prevent-data-loss.md
+
         - name: Encryption
           items:
           - name: Encryption
