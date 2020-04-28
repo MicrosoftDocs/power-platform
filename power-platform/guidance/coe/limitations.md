@@ -58,3 +58,27 @@ The Common Data Service connector might experience some throttling limits if the
 ## Sync Flow (Model Driven Apps)
 
 - It is currently not possible to retrieve model driven apps for Developer environments (My Name's environment).
+
+## Custom Connectors and DLP
+
+There is a gap with the Get-AdminPowerAppConnector action in both PowerShell as well as the management connector which leads to it not returning custom connectors that are shipped as part of a managed solution. This has been reported to the owning team who are looking at a resolution.
+
+In order to add custom connectors to the business data only group of your DLP policy, please follow the following steps using PowerShell cmdlets:
+
+1. Follow the steps here to set up the PowerShell cmdlets, if not already done [PowerShell support for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell)
+
+1. Open the DLP Policy you want to add the custom connector to, and note the GUID of the DLP Policy. You can also achieve this by calling Get-AdminDlpPolicy in PowerShell and noting the PolicyName
+![Note DLP GUID](media/DLP-CC-1.png)
+
+1. Navigate to flow.microsoft.com > Data > Custom Connector and select Edit on the custom connector
+![Edit Custom Connector](media/DLP-CC-2.png)
+
+1. Note the Connector Name (everything between custom and edit)
+![Note Connector Name](media/DLP-CC-3.png)
+
+1. In PowerShell, use Add-CustomConnectorToPolicy to add the custom connector to your policy.
+The format here is:
+Add-CustomConnectorToPolicy -PolicyName {your policy name GUID} -ConnectorName {the nName you copied from above} -GroupName hbi -ConnectorId /providers/Microsoft.PowerApps/scopes/admin/environments/{your environment GUID{/apis/{your connector name}
+
+1. for example this should look like this
+Add-CustomConnectorToPolicy -PolicyName fbe6cc78-1234-1234-9362-a87c1618abcd -ConnectorName shared_admin-5foffice-20365-20management-20api-5f218397e7aabcdef -GroupName hbi -ConnectorId /providers/Microsoft.PowerApps/scopes/admin/environments/aab123ca-1234-1234-8b12-eae67cabcdef/apis/shared_admin-5foffice-20365-20management-20api-5f218397e7aabcdef
