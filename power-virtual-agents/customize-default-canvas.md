@@ -2,7 +2,7 @@
 title: "Customize the Power Virtual Agents web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: ""
-ms.date: 3/30/2020
+ms.date: 4/21/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -26,19 +26,25 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 1. You can [customize the default canvas](#customize-the-default-canvas-simple) with JavaScript-based styling in the HTML code for the website where you deploy your bot.  
     Customizing the default canvas is useful if you want to make small customizations without investing in code development.
 
-2. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Azure Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
+2. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
+
+You can also combine the customized canvas with [configuring your bot to automaticallly start the conversation](configure-bot-greeting.md).
 
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
+>[!IMPORTANT]
+>You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents service. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
+>Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
+
 ## Retrieve bot ID and tenant ID details
 
 To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details. 
 
-You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agent-bot-parameters). 
+You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters). 
 
 ## Customize the default canvas (simple)
 
@@ -48,8 +54,8 @@ First, you need to configure where you're deploying your bot canvas.
 
 1.	[Create and publish a bot](fundamentals-get-started.md).
 
-2.	Copy-paste the HTML code below and save it as *index.html*.
-    You can also cut and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
+2.	Copy and paste the HTML code below and save it as *index.html*.  
+    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
 
     ```HTML
     <!DOCTYPE html>
@@ -148,7 +154,7 @@ First, you need to configure where you're deploying your bot canvas.
 5.	Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom canvas.
 
 6.	Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that your Bot Id has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
+    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
 
 ### Customize the bot icon, background color, and name
 
@@ -228,7 +234,7 @@ We recommend starting with one of these samples custom-built to work with Power 
 
   ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload.png)
 
-Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Azure Bot Framework.
+Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Bot Framework.
 
 ### Customize canvas using `stylesetOptions`
 
@@ -238,7 +244,7 @@ As with customizing the default canvas, you can use `styleSetOptions` to customi
 
 In order to host your custom canvas, deploy all files to a web app.
 
-## Related links
+## See also
 
--  [Azure Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
+-  [Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
 -  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)

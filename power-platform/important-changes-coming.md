@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 03/23/2020
+ms.date: 04/16/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -257,12 +257,14 @@ If you are currently using the Dynamics 365 for Blackberry App together with Mob
 Service scheduling in Dynamics 365 Customer Service is deprecated
 ---------------------------------------------------------------------
 
-The existing service scheduling functionality is deprecated, and will no longer be available on Oct 1, 2020. The new scheduling experience, built atop Universal Resource Scheduling (URS), is now available in the Unified Interface.
+The existing service scheduling functionality is deprecated, and will no longer be available on December 1, 2020. The new scheduling experience, built on Universal Resource Scheduling (URS), is now available in the Unified Interface.
 
 Existing service scheduling users will be provided advance notice for a timebound migration to the new scheduling capabilities.
 
-More information: [Service Scheduling Guide](/dynamics365/customer-engagement/customer-service/basics-service-service-scheduling)
+There are two approaches to migrate to the scheduling experience:
+- Follow the guidance in the [Service Scheduling Guide](/dynamics365/customer-engagement/customer-service/basics-service-service-scheduling) to set up the new scheduling experience for an existing Dynamics 365 Customer Service organization.
 
+- If your organization requires features that rely on legacy APIs, the product team is offering an incremental migration option and will update your organization to the Unified Interface experience while continuing to allow the use of the legacy APIs. This approach is available in 2020 release wave 2 with Eary Access in August, 2020.
 
 Usage of Parature knowledgebase as the knowledge management solution is deprecated
 -----------------------------------------------------------------------------------------------
