@@ -157,7 +157,7 @@
           - name: Teams 
             href: create-team-template-add-entity-form.md
           - name: Users 
-            href: create-users-assign-online-security-roles.md
+            href: users-settings.md
         - name: Audit and logs
           items: 
           - name: Audit log management
@@ -335,7 +335,9 @@
           href: control-user-access.md  
         - name: View user profile
           href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
-          items: 
+
+        - name: Assign security roles
+          items:  
           - name: About security roles and privileges
             href: security-roles-privileges.md
       #   - name: Automatic role assignment by the system
@@ -345,8 +347,8 @@
             href: create-edit-security-role.md
           - name: Copy a security role
             href: copy-security-role.md
-          - name: Create an administrative user
-            href: prevent-elevation-security-role-privilege.md
+        - name: Create an administrative user
+          href: prevent-elevation-security-role-privilege.md
         - name: Troubleshoot access issues
           href: troubleshooting-user-needs-read-write-access-organization.md
         - name: Assign security roles to a form
