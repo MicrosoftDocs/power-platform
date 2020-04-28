@@ -65,7 +65,7 @@ There is a gap with the Get-AdminPowerAppConnector action in both PowerShell as 
 
 In order to add custom connectors to the business data only group of your DLP policy, please follow the following steps using PowerShell cmdlets:
 
-1. Follow the steps here to set up the PowerShell cmdlets, if not already done [PowerShell support for Power Apps](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell)
+1. Follow the steps here to set up the PowerShell cmdlets, if not already done [PowerShell support for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell)
 
 1. Open the DLP Policy you want to add the custom connector to, and note the GUID of the DLP Policy. You can also achieve this by calling Get-AdminDlpPolicy in PowerShell and noting the PolicyName
 ![Note DLP GUID](media/DLP-CC-1.png)
