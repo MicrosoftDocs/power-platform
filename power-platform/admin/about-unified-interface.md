@@ -66,6 +66,7 @@ There are certain capabilities that continue to be unavailable in the Unified In
 -	Admin experiences
 -	Editable grids on phones
 -	Learning Path
+- Duplicate detection in Lookups
 
 ## Read-only entities on Unified Interface
 

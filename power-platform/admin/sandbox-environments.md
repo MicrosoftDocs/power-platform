@@ -81,12 +81,13 @@ Reset a sandbox environment to delete and re-provision it. Consider a reset when
    > [!div class="mx-imgBorder"] 
    > ![](media/reset-menu.png "Reset menu")
 
-4. On the **Reset environment** page, adjust the environment settings as needed and then select **Reset**.  
+4. On the **Reset environment** page, adjust the environment settings as needed and understand the following consequences:  
   
    > [!WARNING]
-   >  The sandbox environment will be deleted and reset to factory settings. You will not be able to recover any deleted data.  
+   > - The sandbox environment will be deleted and reset to factory settings. You will not be able to recover any data that was previously in the environment. 
+   > - When you reset an environment, the security group specified on the **Reset environment** page will be applied. If a security group isn’t specified during the reset, no security group will be assigned to the environment after the reset is completed.  Any existing security group configured before the reset is performed will no longer be applied to the environment. More information: [Control user access to environments: security groups and licenses](control-user-access.md)   
   
-5. Select **Confirm** to reset the selected environment.
+5. Select **Reset**, and then select **Confirm** to reset the selected environment.
 
 The reset process starts.
 
