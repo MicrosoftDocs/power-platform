@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 04/01/2020
+ms.date: 04/27/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -166,11 +166,30 @@ You can indicate how often you would prefer an environment to receive updates an
 |Canvas app authoring |Frequent     | Get access the latest updates and newest features multiple times a month.|
 |                     |Moderate     | Get access to updates and features at least once a month.|
 
+To set refresh cadence:
+
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Global admin, or Power Platform service admin).
+
+2. From the left-side menu, select **Environments**, and then select an environment.
+
+3. Select **Edit**
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/select-edit.png "Select Edit")
+
+4. Under **Refresh cadence**, choose the cadence type. 
+
+5. Select **Save**.
+
 The refresh cadence does not change when you will receive updates for:
 - Power Platform
 - Dynamics 365 Sales
 - Dynamics 365 Customer Service
 - Dynamics 365 Marketing
+
+> [!NOTE]
+> - By default, environments are automatically in the **frequent** cadence; creating and editing canvas apps will receive updates once a week. When apps are published, they will receive the corresponding runtime version. 
+> - If you’ve chosen the **moderate** cadence for the environment, all creating and editing of canvas apps will receive updates once a month. When apps are published, they will receive the corresponding runtime version.
 
 ## FAQ
 
