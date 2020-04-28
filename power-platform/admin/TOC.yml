@@ -335,7 +335,6 @@
           href: control-user-access.md  
         - name: View user profile
           href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
-
         - name: Assign security roles
           items:  
           - name: About security roles and privileges
@@ -365,7 +364,6 @@
           href: restrict-access-online-trusted-ip-rules.md
         - name: B2B collaboration with Azure AD
           href: invite-users-azure-active-directory-b2b-collaboration.md    
-
     - name: Analytics
       items: 
       - name: Common Data Service analytics 
@@ -387,7 +385,16 @@
       - name: Add-on capacity management
         href: capacity-add-on.md
       - name: Free storage space
-        href: free-storage-space.md            
+        href: free-storage-space.md       
+    - name: Resources
+  #   href: view-manage-resources.md
+      items:
+      - name: Manage Dynamic 365 apps
+        href: manage-apps.md
+      - name: Manage Power apps 
+        href: admin-manage-apps.md
+      - name: Portal administration
+        href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
     - name: Activity logging for Power Apps 
       href: logging-powerapps.md 
       items: 
@@ -778,7 +785,6 @@
         href: partners-credit-when-customers-subscribe-dynamics-365.md
       - name: "For partners: Delegated Administrator"
         href: for-partners-delegated-administrator.md
-
   - name: Administer Power Apps
     items:
     - name: Environments 
@@ -795,16 +801,6 @@
         href: troubleshooting-unblock-urls-required.md
       - name: Power Apps Preview Program
         href: preview-environments.md
-      - name: View and manage resources
-     #   href: view-manage-resources.md
-        items:
-        - name: Manage Dynamic 365 apps
-          href: manage-apps.md
-        - name: Manage Power apps 
-          href: admin-manage-apps.md
-        - name: Portal administration
-          href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
-
   - name: Administer Power Automate
     href: about-flow-guide.md
   - name: Administer Power BI
