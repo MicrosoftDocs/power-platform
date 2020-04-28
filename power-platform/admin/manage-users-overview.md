@@ -16,4 +16,4 @@ search.app:
 ---
 # Overview
 
-The managing users content is available in the [Security section](wp-security.md).
+The configure user security content is available in the [Manage users](grant-users-access.md) section.
