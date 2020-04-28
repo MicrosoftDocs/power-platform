@@ -309,7 +309,11 @@
         - name: Administration mode
           href: sandbox-environments.md#administration-mode
         - name: Support environment
-          href: support-environment.md         
+          href: support-environment.md     
+        - name: Automation of tasks with PowerShell 
+          href: wp-task-automation-powershell.md
+        - name: Automation of tasks with Power Automate
+          href: wp-task-automation-flow.md    
     - name: Manage users 
       items:     
       - name: Configure user security
