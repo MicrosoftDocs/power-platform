@@ -6,10 +6,14 @@
       href: admin-documentation.md
     - name: Working with the Admin Portals 
       href: wp-work-with-admin-portals.md
-    - name: Get Help + Support 
-      href: get-help-support.md
-    - name: Support overview
-      href: support-overview.md
+    - name: Support
+      items:
+      - name: Get Help + Support 
+        href: get-help-support.md
+      - name: Support overview
+        href: support-overview.md
+      - name: Determine your organization ID and name
+        href: determine-org-id-name.md
     - name: Licensing
       items:
       - name: Overview
@@ -90,8 +94,6 @@
           href: trial-environments.md     
         - name: Sandbox environment
           href: sandbox-environments.md
-        - name: Determine your organization ID and name
-          href: determine-org-id-name.md
       - name: Manage updates
         items:
         - name: Opt in to early access updates
