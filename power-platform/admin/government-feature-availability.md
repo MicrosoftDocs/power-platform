@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/11/2019
+ms.date: 04/28/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,14 +31,14 @@ There are certain experiences that are currently not available with Dynamics 365
 - [Connected Field Service](https://msdn.microsoft.com/library/mt744253.aspx)
 - [Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)
 - [Gamification](https://docs.microsoft.com/dynamics365/customer-engagement/gamification/manage-gamification-in-dynamics-365-online)
-- [Home.Dynamics.com](https://home.dynamics.com/)
+- [Home.Dynamics.com](https://home.dynamics.com/) and the app switcher
 - [Insights, powered by InsideView](https://appsource.microsoft.com/product/dynamics-365/insideviewinc.b5386882-4312-4d69-879a-23081897c012)
 - [Mobile offline](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/configure-mobile-offline-synchronization-dynamics-365-phones-tablets)
+- [Remote Assist on the HoloLens mobile](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/remote-assist-government-community-cloud)
 - [PowerBI “embedded” user dashboard experience](https://docs.microsoft.com/power-bi/service-connect-to-microsoft-dynamics-crm)
 - [Relevance Search](https://docs.microsoft.com/powerapps/user/search-records)
 - [Resource Scheduling Optimization](https://docs.microsoft.com/dynamics365/customer-engagement/common-scheduler/resource-scheduling-optimization)
 - [Versium Predict](https://docs.microsoft.com/dynamics365/customer-engagement/versium-predict/versium-predict)
-- [Forms Professional](https://docs.microsoft.com/business-applications-release-notes/April19/forms-pro/)
 - [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/admin-guide): the Power Platform admin center (<https://gcc.admin.powerplatform.microsoft.us>) is currently available and is the preferred means to manage your Dynamics 365 instances (environments). However, GCC customers should access the following URL to log a support ticket: <https://admin.powerplatform.microsoft.com/support>.
 - [Teams Integration](https://docs.microsoft.com/dynamics365/teams-integration/teams-integration)
 

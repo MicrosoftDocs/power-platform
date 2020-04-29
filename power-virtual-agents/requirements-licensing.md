@@ -2,7 +2,7 @@
 title: "Assign user licenses and manage access to Power Virtual Agents"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing"
-ms.date: 2/27/2020
+ms.date: 4/17/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -45,11 +45,11 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
 ## Acquire user licenses
 
-1. After you've purchased a Power Virtual Agent license, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
+1. After you've purchased a Power Virtual Agents license, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
 
 2. Scroll down to the **Add-ons** section.
 
-3. Look for **Power Virtual Agent User License**. Select the number of licenses you need, and complete the checkout process.
+3. Look for **Power Virtual Agents User License**. Select the number of licenses you need, and complete the checkout process.
 
 ## Assign licenses to users
 
@@ -83,6 +83,8 @@ You can [disable or enable the ability for users to sign up for a trial themselv
 When you purchase a license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
 
 The consumption of the capacity isn't reported at the tenant level, but [can be seen for each individual bot](analytics-billed-sessions.md).
+
+See [Quotas and rate limit capacity considerations for Power Virtual Agents](requirements-quotas.md) for more information.
 
 ## Using Power Automate with a Power Virtual Agents license
 

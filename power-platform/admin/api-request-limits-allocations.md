@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/07/2020
+ms.date: 04/13/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -28,7 +28,7 @@ Requests in Microsoft Power Platform consist of various actions which a user mak
 
 - **Microsoft Power Automate** – all Power Automate step actions
 
-- **Common Data Service** – all CRUD operations, as well as special operations like “share” or “assign”. These can be from any client or application and using any endpoint SOAP or REST. These include but are not limited to plug-ins, async workflows, and custom controls making the above mentioned operations.
+- **Common Data Service** – all CRUD operations, as well as special operations like "share" or "assign". These can be from any client or application and using any endpoint SOAP or REST. These include but are not limited to plug-ins, async workflows, and custom controls making the above mentioned operations.
 
 Note that for Common Data Service, there will be a small set of system internal operations that are excluded, like login, logout, and system metadata operations like getClientMetadata.
 
@@ -41,11 +41,11 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | **User licenses**                                        | **Number of API requests / 24 hours**                                                                                                         |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Dynamics 365 Enterprise applications<sup>1</sup>                  | 20,000                                                                                                                                        |
-| Dynamics 365 Professional <sup>2</sup>                          | 10,000                                                                                                                                        |
+| Dynamics 365 Professional <sup>2</sup>                          | 10,000                                                                                                                                        |
 | Dynamics 365 Team Member                                 | 5,000                                                                                                                                         |
-| Power Apps per user plan                                  | 5,000                                                                                                                                         |
-| Power Automate per user plan                             | 5,000                                                                                                                                         |
-| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 2,000                                                                                                                                         |
+| Power Apps per user plan                                  | 5,000                                                                                                                                         |
+| Power Automate per user plan                             | 5,000                                                                                                                                         |
+| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 2,000                                                                                                                                         |
 | Application user / Non-interactive users                 | See *Non-licensed user* section below |
 
 
@@ -59,9 +59,9 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 Users who are running apps and flows without a user license through the Power Apps per app plan or flows licensed through the Power Automate per flow plan are granted the following API request entitlement.
 
 
-| **Non User Licenses **       | **Number of API requests / 24 hours** |
+| **Non User Licenses **       | **Number of API requests / 24 hours** |
 |------------------------------|---------------------------------------|
-| Power Apps per app plan       | 1,000 per user pass                   |
+| Power Apps per app plan       | 1,000 per user pass                   |
 | Power Automate per flow plan | 15,000 per flow                       |
 
 
@@ -92,21 +92,21 @@ these users:
 
 Additionally there are special free (\$0) licenses which are used to interact with Dynamics 365 applications like Dynamics 365 Marketing. See [How Marketing is licensed](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/purchase-setup#how-marketing-is-licensed).
 
-For these users, every tenant will get base request capacity per tenant which can only be used by these users and not by users with standard licenses.
+For these users, every tenant will get base request capacity per tenant that can only be used by these users and not by users with standard licenses.
 
-This base request capacity would be based on the type of subscription and would be as follows:
+This base request capacity is based on the type of subscription, as follows:
 
-1. If a tenant has at least one Dynamics 365 enterprise subscription, they will get 100,000 requests per 24 hours
+1. If a tenant has at least one Dynamics 365 enterprise subscription, they will get 100,000 requests per 24 hours.
 
-2. If a tenant has at least one Dynamics 365 professional subscription, they will get 50,000 requests per 24 hours
+2. If a tenant has at least one Dynamics 365 professional subscription, they will get 50,000 requests per 24 hours.
 
 3. If a tenant has at least one Microsoft Power Apps or Power Automate subscription, they will get 25,000 requests per 24 hours.
 
-If a tenant has multiple type of subscriptions, their base request capacity would be max of two subscriptions. For example, if a customer has both Dynamics 365 Customer Service and Power Apps per user subscription, their base request capacity would be 100,000 Requests per 24 hours.
+If a tenant has multiple types of subscriptions, their base request capacity will be a maximum of two subscriptions. For example, if a customer has both Dynamics 365 Customer Service and Power Apps per user subscriptions, their base request capacity will be 100,000 requests per 24 hours.
 
-Base Request Capacity would be at tenant level and can only be used by non-licensed users, application users and users which has free ($0) licenses.
+Base request capacity is defined at the tenant level and can only be used by non-licensed users, application users, and users who have free ($0) licenses.
 
-Once the Base Request capacity is exhausted, customers can increase this capacity by purchasing Power Apps and Power Automate capacity add-on.
+After base request capacity is exhausted, customers can increase this capacity by purchasing a Power Apps and Power Automate capacity add-on.
 
 ## Service protection limits currently applicable
 
@@ -123,33 +123,33 @@ Review the following resources for information about *current* service protectio
 
 ## Frequently asked questions
 
-### What happens if any user exceeds Request capacity?
+### What happens if any user exceeds request capacity?
 
-If any user exceeds request capacity, admin for the tenant/environment would be notified and would be able to assign Power Apps and Power Automate request capacity to that user.
+If any user exceeds their request capacity, the admin for the tenant/environment is notified. The admin can assign Power Apps and Power Automate request capacity to that user.
 
-End users will not be blocked from using the app for occasional and reasonable overages at this point of time.
+Users won't be blocked from using the app for occasional and reasonable overages at this point in time.
 
-### Will my Integrations stop working if application users exceeds Base Request capacity?
+### Will my integrations stop working if application users exceed base request capacity?
 
-Integrations will not be stopped for occasional and reasonable overages at this point of time. Administrators would be notified about overages and will be able to add Power Apps and Power Automate request capacity to be compliant.
+Integrations won't be stopped for occasional and reasonable overages at this point in time. Admins will be notified about overages and will be able to add Power Apps and Power Automate request capacity to be compliant.
 
 ### Will there be a transition period for existing customers?
 
-Yes, all existing customers will have a transition period until October 1, 2020 or the expiration of their current subscription term, whichever is longer.
+Yes, all existing customers will have a transition period until October 1, 2020, or the expiration of their current subscription term, whichever is longer.
 
-During this transition period reporting would be made available to customers which shows the API consumption.
+During this transition period, reporting that shows the API consumption will be made available to customers.
 
-### What tools can admin use to monitor/analyze API requests across the platform?
+### What tools can an admin use to monitor and analyze API requests across the platform?
 
-Usage reports and monitoring capabilities would be made available in Power Platform admin center soon and would be the best way to monitor/analyze usage for API requests. 
+Usage reports and monitoring capabilities will be made available in Power Platform admin center soon, and will be the best way to monitor and analyze usage for API requests. 
 
-### Do the Power Platform Requests entitlements roll over from day to day or month to month?
+### Do the Power Platform request entitlements roll over from day to day or month to month?
 
-No. All the power platform request entitlements are calculated on a rolling 24-hour period. If they are not consumed, they don’t roll over to the next day or next month.
+No. All the Power Platform request entitlements are calculated on a rolling 24-hour period. If they aren't consumed, they don't roll over to the next day or next month.
 
-### Will the requests generated from Async workflows and Plug-ins in Common Data Service count against the Request limits?
+### Will the requests generated from async workflows and plug-ins in Common Data Service count against the request limits?
 
-Yes, if these requests are making CRUD, assign or share type of calls, they would count. However, calls generated internally from the platform are not going to be accounted.
+Yes, if these requests are making CrUD, assign, or share&ndash;type calls, they will count. However, calls generated internally from the platform aren't going to be counted.
 
 ### See also
 [Common Data Service API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)

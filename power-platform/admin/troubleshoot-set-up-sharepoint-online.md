@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/02/2019
+ms.date: 04/15/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Troubleshoot SharePoint integration
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 This topic explains how to fix common issues that may occur with SharePoint document management.
 
@@ -30,7 +30,7 @@ If **Documents** is missing from entities such as account, use the following to 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
     a. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
-    b. Don’t have the correct permissions? Contact your system administrator.
+    b. Don't have the correct permissions? Contact your system administrator.
 
 2. Fix the missing **Documents** button. Follow these steps:
 
@@ -42,19 +42,27 @@ If **Documents** is missing from entities such as account, use the following to 
 
 For more information, see [Enable SharePoint document management for specific entities](enable-sharepoint-document-management-specific-entities.md).
 
-##  Missing Document associated grid - validate and fix
+## Malformed FetchXML or LayoutXML - validate and fix
 
-If the Documents associated grid is missing, use the following to restore.
+Malformed FetchXML or LayoutXML can cause any of the following issues:
 
-![Documents associated grid](media/list-of-documents-in-onedrive.png "Documents associated grid")
+* Documents associated grid is missing
+* Unable to view folders
+* Unable to view documents inside folders
+* Document is not getting deleted
+* Error Message – "Required parameter is null or undefined: url" while opening the documents tab
+* Error Message – "System.NullReferenceException" while uploading a document
+* Document being downloaded instead of opening in new tab
 
-The most common cause for the Documents associated grid not loading is the corrupted FetchXML and LayoutXML. These sections could be corrupted due to many reasons. The most common of them is through customizing the entity/grid view, adding/removing columns, and other similar customizations.
+There can be many causes for FetchXML or LayoutXML to be malformed. The most common cause is customizing the entity/grid view, adding/removing columns, and other similar customizations.
+
+If FetchXML or LayoutXML are malformed, use the following to restore.
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
-    a. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
-    b. Don’t have the correct permissions? Contact your system administrator.
-2. Go to **Settings** > **Customizations** > **Solutions**. 
+    1. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+    2. Don't have the correct permissions? Contact your system administrator.
+2. In the web app, go to **Settings** > **Customizations** > **Solutions**. 
 3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-app-solution).
 4. Choose **Entities** > **Add Existing** > **Entity** > find and add **SharePoint Document** entity  (select all fields, forms, views). 
 5. Select **Save** and **Close**.
@@ -68,18 +76,19 @@ The most common cause for the Documents associated grid not loading is the corru
     > [!div class="mx-imgBorder"] 
     > ![](media/sharepoint-document-associated-grid.png "Search for Document Associated")  -->
 
-10.	Extract the exported solution zip file (downloaded file from Step 8).  
-11.	In the solution contents folder, locate and then open **Solution.xml**.
-12.	Change the following value in **Solution.xml**, and then save it. <br />
+10.    Extract the exported solution zip file (downloaded file from Step 8).  
+11.    In the solution contents folder, locate and then open **Solution.xml**.
+12.    Change the following value in **Solution.xml**, and then save it. <br />
     From `<Managed>0</Managed>` to `<Managed>1</Managed>`.
-13.	In the solution contents folder, locate and open **customization.xml**.
-14.	Search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to “0016f9f3-41cc-4276-9d11-04308d15858d”.
-15.	If the `<SavedQuery>` element found in step 14 is similar to 
+13.    In the solution contents folder, locate and open **customization.xml**.
+14.    Search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "0016f9f3-41cc-4276-9d11-04308d15858d".
+15.    If the `<SavedQuery>` element found in step 14 is similar to 
 `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute. 
 16. Search layoutxml of Document associated grid (search for *Document Associated*).
     
     > [!div class="mx-imgBorder"] 
     > ![](media/sharepoint-document-associated-grid.png "Search for Document Associated")
+
 17. Make the changes as indicated below for the layoutxml section:
 
     ```
@@ -113,7 +122,7 @@ The most common cause for the Documents associated grid not loading is the corru
 
 18. Make the changes as below for the FetchXml section:
 
-    ```  
+    ```
     <fetch distinct="false" mapping="logical">
       <entity name="sharepointdocument">
         <attribute name="documentid" />
@@ -139,15 +148,147 @@ The most common cause for the Documents associated grid not loading is the corru
         </filter>
       </entity>
     </fetch>
-     ```  
+    ```  
 
-19. Save the file.
-20. Zip the folder.
-21. Open a model-driven app in Dynamics 365.
-22. Navigate to **Settings** > **Solutions**
-23. Import the solution (zipped file in Step 8).
-24. Publish all customizations.
-25. Verify the Document associated grid is displaying in all the required SharePoint documents.
+19. Similarly search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "a5b008ac-07d9-4554-8509-2c05767bff51".
+
+20. If the `<SavedQuery>` element found in step 19 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
+
+21. Search layoutxml of All SharePoint Document (search for *All SharePoint Document*).
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/search-layoutxml-sharepoint.png "Search layoutxml for All SharePoint Document")
+
+22. Make the changes as indicated below for the layoutxml section:
+
+    ```
+    <layoutxml>
+      <grid name="sharepointdocument" jump="fullname" select="1" icon="0" preview="1">
+        <row name="sharepointdocument" id="sharepointdocumentid">
+          <cell name="fullname" width="300" imageproviderfunctionname="DocumentManagement.FileTypeIcon.loadSharePointFileTypeIcon" imageproviderwebresource="$webresource:SharePoint_main_system_library.js" />
+          <cell name="relativelocation" width="200" />
+          <cell name="modified" width="150" />
+          <cell name="sharepointmodifiedby" width="150" />
+          <cell name="sharepointcreatedon" width="300" />
+          <cell name="documentid" ishidden="1" />
+          <cell name="title" ishidden="1" />
+          <cell name="readurl" ishidden="1" />
+          <cell name="editurl" ishidden="1" />
+          <cell name="author" ishidden="1" />
+          <cell name="absoluteurl" ishidden="1" />
+          <cell name="sharepointdocumentid" ishidden="1" />
+          <cell name="filetype" ishidden="1" />
+          <cell name="ischeckedout" ishidden="1" />
+          <cell name="locationid" ishidden="1" />
+          <cell name="iconclassname" ishidden="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    ```
+
+23. Make the changes as below for the FetchXml section:
+
+    ```
+    <fetch distinct="false" mapping="logical">
+      <entity name="sharepointdocument">
+        <attribute name="documentid" />
+        <attribute name="fullname" />
+        <attribute name="relativelocation" />
+        <attribute name="sharepointcreatedon" />
+        <attribute name="filetype" />
+        <attribute name="absoluteurl" />
+        <attribute name="modified" />
+        <attribute name="sharepointmodifiedby" />
+        <attribute name="title" />
+        <attribute name="readurl" />
+        <attribute name="editurl" />
+        <attribute name="author" />
+        <attribute name="sharepointdocumentid" />
+        <attribute name="ischeckedout" />
+        <attribute name="locationid" />
+        <attribute name="iconclassname" />
+        <filter>
+          <condition attribute="isrecursivefetch" operator="eq" value="1" />
+        </filter>
+        <order attribute="relativelocation" descending="false" />
+      </entity>
+    </fetch>
+    ```
+
+24. Similarly search the `<SavedQuery>` element where the **savedqueryid** attribute is equal to "cb177797-b2ac-42a8-9773-5412321a965c".
+
+25. If the `<SavedQuery>` element found in step 24 is similar to `<SavedQuery unmodified="1">`, remove the **unmodified="n"** attribute.
+
+26. Search layoutxml of OneNote SharePoint Document (search for *OneNote SharePoint Document*).
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/search-layoutxml-onenote.png "Search layoutxml for OneNote SharePoint Document")
+
+27. Make the changes as indicated below for the layoutxml section:
+
+    ```
+    <layoutxml>
+      <grid name="sharepointdocument" jump="fullname" select="1" icon="0" preview="1">
+        <row name="sharepointdocument" id="sharepointdocumentid">
+          <cell name="fullname" width="300" imageproviderfunctionname="DocumentManagement.FileTypeIcon.loadSharePointFileTypeIcon" imageproviderwebresource="$webresource:SharePoint_main_system_library.js" />
+          <cell name="relativelocation" width="200" />
+          <cell name="modified" width="150" />
+          <cell name="sharepointmodifiedby" width="150" />
+          <cell name="sharepointcreatedon" width="300" />
+          <cell name="title" ishidden="1" />
+          <cell name="readurl" ishidden="1" />
+          <cell name="editurl" ishidden="1" />
+          <cell name="author" ishidden="1" />
+          <cell name="absoluteurl" ishidden="1" />
+          <cell name="filetype" ishidden="1" />
+          <cell name="ischeckedout" ishidden="1" />
+          <cell name="locationid" ishidden="1" />
+          <cell name="iconclassname" ishidden="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    ```
+
+28. Make the changes as below for the FetchXml section:
+
+    ```
+    <fetch distinct="false" mapping="logical">
+      <entity name="sharepointdocument">
+        <attribute name="documentid" />
+        <attribute name="fullname" />
+        <attribute name="relativelocation" />
+        <attribute name="sharepointcreatedon" />
+        <attribute name="filetype" />
+        <attribute name="modified" />
+        <attribute name="sharepointmodifiedby" />
+        <attribute name="title" />
+        <attribute name="readurl" />
+        <attribute name="editurl" />
+        <attribute name="author" />
+        <attribute name="absoluteurl" />
+        <attribute name="ischeckedout" />
+        <attribute name="locationid" />
+        <attribute name="iconclassname" />
+        <filter type="and">
+          <condition attribute="documentlocationtype" operator="eq" value="1" />
+          <condition attribute="isrecursivefetch" operator="eq" value="0" />
+          <filter type="or">
+            <condition attribute="filetype" operator="eq" value="one" />
+            <condition attribute="filetype" operator="eq" value="onetoc2" />
+          </filter>
+        </filter>
+        <order attribute="sharepointcreatedon" descending="true" />
+      </entity>
+    </fetch>
+    ```
+
+29. Save the file.
+30. Zip the folder.
+31. Open a model-driven app in Dynamics 365.
+32. Navigate to **Settings** > **Solutions**
+33. Import the solution (zipped file in Step 8).
+34. Publish all customizations.
+35. Verify that any of the issues associated with the malformed FetchXML or LayoutXML are resolved. For example, verify that Document associated grid displays in all the required SharePoint documents.
 
 ## Validate and fix SharePoint site URLs
 
