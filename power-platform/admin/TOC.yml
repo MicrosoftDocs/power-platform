@@ -395,8 +395,8 @@
       items:
       - name: Manage Dynamic 365 apps
         href: manage-apps.md
-      - name: Manage Power apps 
-        href: admin-manage-apps.md
+  #    - name: Manage Power apps 
+  #      href: admin-manage-apps.md
   #    - name: Portal administration
   #      href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
     - name: Activity logging for Power Apps 
