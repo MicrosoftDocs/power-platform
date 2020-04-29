@@ -14,22 +14,20 @@ ms.cusom: "multi-geo, gdpr"
 
 # Regional settings and data locations for organizations using Power Virtual Agents
 
-Power Virtual Agents supports a number of glovalization scenarios, and allows you to choose where you want your data to reside.
+Power Virtual Agents supports a number of globalization scenarios, and allows you to choose where you want your data to reside.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
-## Supported locales and formats:
+## Supported locales and formats
 
 Based on the end-user's browser locale setting, chatbots built with Power Virtual Agents will understand and display content that is locally relevant to the user. This includes support for localized handling and formats for the following entities:
-* Date-Time
-* Number
-* Zip code
-* Money
+* Date and time
+* Numbers
+* Zip or postal code
+* Currency
 * Speed
-
-For example, this means that if the end-user's browser locale setting is set to en-GB, the bot knows that **the date 2/3** should be understood as **March 2nd**, whereas if the browser locale setting is en-US, the same date would be understood as **February 3rd**.
 
 Power Virtual Agents supports the following locales:
 * en-AU
@@ -37,6 +35,10 @@ Power Virtual Agents supports the following locales:
 * en-GB
 * en-IN
 * en-US
+
+
+For example, this means that if the end-user's browser locale setting is set to en-GB, the bot knows that **2/3** should be understood as **March 2nd**, whereas if the browser locale setting is en-US, the same date would be understood as **February 3rd**.
+
 
 ## Data locations
 
