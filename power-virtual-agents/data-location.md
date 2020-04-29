@@ -1,6 +1,6 @@
 ---
-title: "Data location for Power Virtual Agents"
-description: "Identify the geographic location where your data will reside."
+title: "Regional settings and data locations for Power Virtual Agents"
+description: "Identify the geographic location where your data will reside, and plan for globalization features, including currency and date and time formats."
 ms.date: 03/30/2020
 ms.service:
   - "dynamics-365-ai"
@@ -12,29 +12,47 @@ ms.collection: virtual-agent
 ms.cusom: "multi-geo, gdpr"
 ---
 
-# Data locations for organizations using Power Virtual Agents
+# Regional settings and data locations for organizations using Power Virtual Agents
 
+Power Virtual Agents supports a number of glovalization scenarios, and allows you to choose where you want your data to reside.
 
-    
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+## Supported locales and formats:
+
+Based on the end-user's browser locale setting, chatbots built with Power Virtual Agents will understand and display content that is locally relevant to the user. This includes support for localized handling and formats for the following entities:
+* Date-Time
+* Number
+* Zip code
+* Money
+* Speed
+
+For example, this means that if the end-user's browser locale setting is set to en-GB, the bot knows that **the date 2/3** should be understood as **March 2nd**, whereas if the browser locale setting is en-US, the same date would be understood as **February 3rd**.
+
+Power Virtual Agents supports the following locales:
+* en-AU
+* en-CA
+* en-GB
+* en-IN
+* en-US
+
+## Data locations
+
 Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as “regions”) listed in this article. You can create a bot by default in your tenant’s location or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 Microsoft may replicate customer data to other regions available within the same geography for data durability. 
 
 No matter where customer data is stored, Microsoft does not control or limit the locations from which customers or their end users may access customer data.
 
-Data will be stored in United States, if a bot author’s tenant location is not listed under the Data locations table above. For France, data will be stored in Europe.   
+Data will be stored in United States, if a bot author’s tenant location is not listed under the Data locations table on this page. For France, data will be stored in Europe.   
 
 
 > 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mPmc ]
 > 
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
-
-## Data locations
 Azure geographic locations (geos) | Azure datacenters (regions)
  ---|---
 United States | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA)
