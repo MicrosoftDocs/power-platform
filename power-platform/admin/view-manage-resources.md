@@ -21,9 +21,10 @@ This section covers managing your apps in the Power Platform admin center.
 <!-- This was created for fwlink 2126968. Don't delete. -->
 
 - [Manage Dynamics 365 apps](manage-apps.md)
-- [Manage Power Apps](admin-manage-apps.md)
+
 
 <!-- 
+- [Manage Power Apps](admin-manage-apps.md)
 - Flow topic
 - [Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
 
