@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/05/2018
+ms.date: 02/19/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,24 +19,20 @@ search.app:
 
 Users can access the model-driven apps with the most recent versions of these popular browsers:  
   
-- [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)]   
-  
-- [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)]  
-  
-- [!INCLUDE[tn_Firefox](../includes/tn-firefox.md)]   
+- Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium))
+- Chrome
+- Firefox  
+- Safari
+- Internet Explorer (not recommended)
 
-- [!INCLUDE[tn_chrome](../includes/tn-chrome.md)]
-  
-- [!INCLUDE[tn_Safari](../includes/tn-safari.md)]   
-    
+> [!TIP]
+> For optimal performance and experience, we recommend you use the latest version of a modern browser. 
   
 For more detailed information about supported browsers, see [Web application requirements](web-application-requirements.md).  
   
 For a mobile device, such as an iPad or smartphone, the following apps are available:  
   
-- [!INCLUDE[pn_crm_for_ipad](../includes/pn-crm-for-ipad.md)]  
-  
-- [!INCLUDE[pn_crm_for_windows_8](../includes/pn-crm-for-windows-8.md)]  
+- [Dynamics 365 for phones and Dynamics 365 for tablets](https://docs.microsoft.com/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets)
   
 For more detailed information about supported phones and tablets, see [Dynamics 365 mobile and tablet device support](/dynamics365/mobile-app/support-phones-tablets).  
   

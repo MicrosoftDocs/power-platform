@@ -17,7 +17,7 @@ search.app:
 ---
 # Choose the records to synchronize between model-driven apps in Dynamics 365 and Exchange 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure --> 
 
 Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, use online synchronization filters to determine which records to synchronize between model-driven apps in Dynamics 365 and [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] (using [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)]). You can modify the existing online synchronization filters or create new filters to synchronize certain types of records. You can also delete, deactivate, or activate filters.  
   
@@ -36,7 +36,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
    ![Online synchronization filters](media/online-sync-filters-dialog-box2.png "Online synchronization filters")  
   
    > [!NOTE]
-   > If you’re a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](https://docs.microsoft.com/powerapps/developer/common-data-service/outlook-client/offline-outlook-filters-templates) 
+   > If you're a system administrator, you can create or modify organization-wide filters (system filters) through the SDK. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Tell me more about system filters](https://docs.microsoft.com/powerapps/developer/common-data-service/outlook-client/offline-outlook-filters-templates) 
   
 4. Do one of the following:  
   

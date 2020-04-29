@@ -1,9 +1,24 @@
 {
   "redirections": [
     {
-      "source_path": "power-virtual-agents/extend-custom-canvas-upload.md",
-      "redirect_url": "extend-custom-canvas-connect",
+      "source_path": "power-platform/admin/introduction-to-data-groups.md",
+      "redirect_url": "wp-data-loss-prevention",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/preview-october-2019-updates.md",
+      "redirect_url": "opt-in-early-access-updates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/extend-custom-canvas-upload.md",
+      "redirect_url": "customize-default-canvas",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/extend-custom-canvas-connect.md",
+      "redirect_url": "customize-default-canvas",
+      "redirect_document_id": "true"
     },
     {
       "source_path": "power-platform/admin/provision-environment.md",

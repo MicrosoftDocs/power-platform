@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 03/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +25,7 @@ You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admi
 > [!NOTE]
 >  When you create a user and assign a license in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the user is also created in model-driven apps in Dynamics 365. The synchronization process between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and model-driven apps in Dynamics 365 can take a few minutes to complete.  
 > 
->  By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user will not have access to model-driven apps in Dynamics 365 until you assign at least one security role to this user.  
+>  By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user will not have access to model-driven apps in Dynamics 365 until the user has a security role assigned either directly or indirectly as a member of a [group team](https://docs.microsoft.com/power-platform/admin/manage-teams#about-group-teams).  
 > 
 > [!TIP]
 >  To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and model-driven apps in Dynamics 365, do the following:  
@@ -68,7 +68,7 @@ For step-by-step instructions to use user licenses, see [Assign, reassign, or re
 For step-by-step instructions to use Power Apps per app plans, see [Power Apps per app plans](https://docs.microsoft.com/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan).
   
 > [!IMPORTANT]
-> Licensed users must be assigned at least one security role to access model-driven apps in Dynamics 365.  
+> Licensed users must be assigned at least one security role to access model-driven apps in Dynamics 365. Security roles can be assigned either directly or indirectly as a member of a [group team](https://docs.microsoft.com/power-platform/admin/manage-teams#about-group-teams).
   
  **About user licenses**  
   
@@ -83,10 +83,10 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
 - Each user license requires a unique Microsoft account, and every user who logs on needs a license. Most subscriptions include a specific number of user licenses.  
 
 > [!NOTE]
-> There is a set of default security roles that are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. There is no data access permission granted to this role. The administrator is still required to assign the appropriate security role to the user in order for the user to view and interact with the data. 
+> There is a set of default security roles that are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. There is no data access permission granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](https://docs.microsoft.com/power-platform/admin/manage-teams#about-group-teams)) in order for the user to view and interact with the data. 
 
 ## Assign a security role to a user  
- Security roles control a user’s access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user’s view of data and on the user’s interactions with that data.  
+ Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
   
  Model-driven apps in Dynamics 365 provide a default set of security roles. If necessary for your organization, you can create new security roles by editing one of the default security roles and then saving it under a new name.  
   
@@ -96,19 +96,16 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
   
  For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
   
-> [!IMPORTANT]
->  You must assign at least one security role to every user. The service does not allow access to users who do not have at least one security role. Even if a user is a member of a team with its own security privileges, the user won’t be able to see some data and may experience other problems when trying to use the system.  
+> [!IMPORTANT] 
+> You must assign at least one security role to every user either directly or indirectly as a member of a [group team](https://docs.microsoft.com/power-platform/admin/manage-teams#about-group-teams). The service does not allow access to users who do not have at least one security role.   
 
-> [!NOTE]
-> By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
-
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Users**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Users**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
 Check your security role:
 - Follow the steps in [View your user profile](hhttps://docs.microsoft.com/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.<br />
+- Don't have the correct permissions? Contact your system administrator.<br />
   
 1.  Select an environment and go to **Settings** > **User's + permissions** > **Users**.
   
@@ -120,21 +117,24 @@ Check your security role:
   
 4.  In the **Manage User Roles** dialog box, select the security role or roles you want for the user or users, and then select **OK**.  
 
+> [!NOTE]
+> By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+
 ## (Optional) Assign an administrator role  
  You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. You might decide to assign the global administrator role to a second person in your organization for times when you are not available.  
   
  There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles with varying levels of permissions. For example, the password reset administrator role can reset user passwords only; the user management administrator role can reset user passwords as well as add, edit, or delete user accounts; and the global administrator role can add online service subscriptions for the organization and can manage all aspects of subscriptions. For detailed information about [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles, see [Assigning Admin Roles](https://go.microsoft.com/fwlink/p/?LinkId=255444).  
   
 > [!NOTE]
-> [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles are valid only for managing aspects of the online service subscription. These roles don’t affect permissions within the service.  
+> [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles are valid only for managing aspects of the online service subscription. These roles don't affect permissions within the service.  
 
 ## Enable or disable users  
  To enable a user, assign a license to the user and add a user to the security group that is associated with an environment. If you enable a user that was disabled, you must send a new invitation for the user to access the system.  
   
- To disable a user, remove a license from the user or remove the user from the security group that is associated with an environment. Removing a user from the security group doesn’t remove the user’s license. If you want to make the license available to another user, you have to remove the license from the disabled user.  
+ To disable a user, remove a license from the user or remove the user from the security group that is associated with an environment. Removing a user from the security group doesn't remove the user's license. If you want to make the license available to another user, you have to remove the license from the disabled user.  
   
 > [!NOTE]
-> Removing all security roles from the user prevents the user from signing into and accessing model-driven apps in Dynamics 365. However, it doesn’t remove the license from the user and the user remains in the list of the enabled users. Removing security roles from a user isn’t a recommended method of removing access.  
+> Removing all security roles from the user prevents the user from signing into and accessing model-driven apps in Dynamics 365. However, it doesn't remove the license from the user and the user remains in the list of the enabled users. Removing security roles from a user isn't a recommended method of removing access.  
 >
 > When using a security group to manage enabling or disabling users or provisioning access to an org, nested security groups within a selected security group are not supported and ignored.
 >
@@ -185,7 +185,7 @@ Check your security role:
 > [!NOTE]
 > You can also delete users in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. When you remove a user from your subscription, the license assigned to that user automatically becomes available to be assigned to a different user. If you want the user to still have access to other applications you manage through [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], for example [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] or [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)], don't delete them as a user. Instead, simply remove the license you've assigned to them.  
 > 
-> When you sign out of the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], you aren’t signing out of model-driven apps in Dynamics 365. You have to do that separately.  
+> When you sign out of the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], you aren't signing out of model-driven apps in Dynamics 365. You have to do that separately.  
 
 > [!TIP]
 > To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and model-driven apps in Dynamics 365, do the following:  
@@ -199,7 +199,7 @@ By default all licensed users are created with an access mode of **Read-Write**.
 
 1. Select an environment and go to **Settings** > **User's + permissions** > **Users**.
   
-2. Choose **Enabled Users**, and then select a user’s full name.  
+2. Choose **Enabled Users**, and then select a user's full name.  
   
 3. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Read-Write**.  
 
@@ -208,7 +208,7 @@ By default all licensed users are created with an access mode of **Read-Write**.
 ## Create an Administrative user account
 An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the  functionality.  It is used to allow customers to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, etc).  Since the administrative user does not have access to customer data and any of the functionalities, it does not require a license (after setup).
 
-You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you’ll create a user account in Office 365 and then in model-driven apps in Dynamics 365, select the **Administrative** access mode for the account.
+You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you'll create a user account in Office 365 and then in model-driven apps in Dynamics 365, select the **Administrative** access mode for the account.
 
 > [!NOTE]
 > See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md) for an example of how an Administrative user account can be used.
@@ -228,9 +228,9 @@ You need to have the System Administrator security role or equivalent permission
   
    Wait for user to sync to the environments.
 
-6. In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
+6. In the Power Platform admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
   
-7. Choose **Enabled Users**, and then select a user’s full name.  
+7. Choose **Enabled Users**, and then select a user's full name.  
   
 8. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Administrative**.  
 
@@ -245,17 +245,17 @@ You need to have the System Administrator security role or equivalent permission
 12. Uncheck the license box(es),  and then select **Save changes**.
 
 ## Create a non-interactive user account  
- The non-interactive user is not a ‘user’ in the typical sense – it is not a person but an access mode that is created with a user account. It is used for programmatic access to and from model-driven apps in Dynamics 365 between applications. A non-interactive user account lets these applications or tools, such as a model-driven apps in Dynamics 365 to ERP connector, authenticate and access model-driven apps in Dynamics 365, without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
+ The non-interactive user is not a 'user' in the typical sense – it is not a person but an access mode that is created with a user account. It is used for programmatic access to and from model-driven apps in Dynamics 365 between applications. A non-interactive user account lets these applications or tools, such as a model-driven apps in Dynamics 365 to ERP connector, authenticate and access model-driven apps in Dynamics 365, without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
   
- You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you’ll create a user account in Office 365 and then in model-driven apps in Dynamics 365, select the non-interactive access mode for the account.  
+ You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you'll create a user account in Office 365 and then in model-driven apps in Dynamics 365, select the non-interactive access mode for the account.  
   
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
     Be sure to assign a license to the account.  
   
-2. In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
+2. In the Power Platform admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
   
-3. Choose **Enabled Users**, and then select a user’s full name.  
+3. Choose **Enabled Users**, and then select a user's full name.  
   
 4. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Non-interactive**.  
   
@@ -301,7 +301,7 @@ A default security role is automatically assigned to these imported users. The *
 
 When you create a new user or update an existing user in Microsoft Customer Engagement (on-premises), some fields in the user records, such as the name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created, there is no further synchronization between Active Directory user accounts and model-driven apps in Dynamics 365 user records. If you make changes to the Active Directory user account, you must manually edit the user record to reflect the changes.
 
-1.  In the Power Platform Admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
+1.  In the Power Platform admin center, select an environment and go to **Settings** > **User's + permissions** > **Users**.
 
 2.  In the list, select the user you want to update, and then choose **Edit**.
 

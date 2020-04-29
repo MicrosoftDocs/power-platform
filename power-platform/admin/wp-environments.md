@@ -46,22 +46,50 @@ In addition to these default roles, you can also create custom security roles. C
 
 There are multiple types of environments. The type of environment indicates the purpose and determines the environment characteristics. The following table summarizes the current types of environments that you might encounter.
 
+<table style="width:100%">
+<tr>
+<th>Settings</th>
+<th>Description</th>
+<th>Security</th>
+</tr>
+<tr>
+<td width="20%"> Production</td>
+<td width="50%">  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.        </td>
+<td width="30%"> Full control.  </td>
+</tr>
+<tr>
+<td width="20%"> Default</td>
+<td width="50%"> These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail. </td>
+<td width="30%">  Limited control - all licensed users<sup>1</sup> are Environment Makers.</td>
+<tr>
+<td width="20%"> Sandbox</td>
+<td width="50%">   These are non-production environments and offer features like copy and reset. Sandbox environments are used for development and testing, separated from production. Provisioning sandbox environments can be restricted to admins (since production environment creation can be blocked), but conversion from production cannot be blocked.   </td>
+<td width="30%">  Full control. <br />If used for testing, only end user access is needed. <br />Developers require Environment Maker access to create resources.</td>
+</tr>
+<tr>
+<td width="20%"> Trial</td>
+<td width="50%">  Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time. Expires after 30 days and are limited to 1 user. Provisioning trial environments can be restricted to admins.</td>
+<td width="30%">  Full control.</td>
+</tr>
+<tr>
+<td width="20%"> Developer</td>
+<td width="50%">  Developer environments are created by users with the Community Plan license. They are special environments intended only for use by the owner. Sharing with other users is not possible. Provisioning developer environments can't be restricted unless through a support ticket. </td>
+<td width="30%">  Only a single user account with the Community Plan has access.</td>
+</tr>
+</table>
 
-|Type  |Description  |
-|---------|---------|
-|Production     |This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.         |
-|Default     | These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail.        |
-|Sandbox     | These are non-production environments and when associated with a Common Data Service database environment offer features like reset.        |
-|Trial     | Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time.        |
-|Developer     | Developer environments are created by users with the Community Plan license. They are special environments intended only for use by the owner. Sharing with other users is not possible in these environments.        |
+<sup>1</sup>Users licensed for Power Apps, Power Automate, Office 365 and Dynamics 365 Online, stand-alone licenses, free and trial licenses.
 
 ## Default environment
 
-Each tenant will have a default environment created automatically in the region nearest the Azure Active Directory (Azure AD) tenant. This environment has a few unique characteristics from other environments that you create. This environment can’t be disabled or deleted. All tenant users are added automatically to the maker role for the default environment and you can’t remove them from that role. They are not however added automatically to the environment administrator role. This makes the default environment the perfect place for people to build personal productivity apps and flows.
+Each tenant will have a default environment created automatically in the region nearest the Azure Active Directory (Azure AD) tenant. This environment has a few unique characteristics from other environments that you create. 
 
-The default environment is also the only place you can currently create gateways to connect to on-premises resources. So, if you have an application that needs on-premises resources the app, its connector and the gateway must be created and run from your organization’s default environment. It is planned to allow creation of gateways in the non-default environments in the future.
+1. This environment can’t be disabled or deleted. 
+2. All tenant users are added automatically to the maker role for the default environment and you can’t remove them from that role. 
+3. Only Office 365 tenant global administrators, Dynamics 365 service administrators, and Power Platform service administrators are added to Environment Administrator role.
+4. As the default environment is the preferred place for individual users to start off building personal productivity apps and workflows, you should consider renaming the default environment to “Personal Productivity (default)” or another suitable name for your organization.
 
-Another unique consideration of the default environment is you can’t create a Common Data Service database in the default environment. This however will be supported in the future.
+The default environment should not be used to host production solutions. It’s designed to be an open environment that allows users to extend Office 365 and trusted applications or to build personal productivity applications that don’t affect many people. You can restrict to this usage by adding a DLP policy that only allows data flow between trusted first party connectors.
 
 ## Environment regions
 

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/07/2019
+ms.date: 03/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -44,7 +44,7 @@ The colored circles on the security role settings page define the access level f
 |![Access level none](../admin/media/access-level-none.png "Access level none")|**None**. No access is allowed.|  
   
 > [!IMPORTANT]
-> To ensure that users can view and access all areas of the web application, such as entity forms, the nav bar, or the command bar, all security roles in the organization must include the Read privilege on the `Web Resource` entity. For example, without read permissions, a user won’t be able to open a form that contains a web resource and will see an error message similar to this: “Missing `prvReadWebResource` privilege.” [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit a security role](create-edit-security-role.md)  
+> To ensure that users can view and access all areas of the web application, such as entity forms, the nav bar, or the command bar, all security roles in the organization must include the Read privilege on the `Web Resource` entity. For example, without read permissions, a user won't be able to open a form that contains a web resource and will see an error message similar to this: "Missing `prvReadWebResource` privilege." [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create or edit a security role](create-edit-security-role.md)  
 
 ### Record-level privileges  
  [!INCLUDE [pn-powerapps](../includes/pn-powerapps.md)] and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, use eight different record-level privileges that determine the level of access a user has to a specific record or record type.  
@@ -65,9 +65,9 @@ The colored circles on the security role settings page define the access level f
   
  Teams are used primarily for sharing records that team members ordinarily couldn't access. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage security, users and teams](manage-teams.md).  
   
- It’s not possible to remove access for a particular record. Any change to a security role privilege applies to all records of that record type.  
+ It's not possible to remove access for a particular record. Any change to a security role privilege applies to all records of that record type.  
 
-## Team member’s privilege inheritance
+## Team member's privilege inheritance
 
 ### User and Team privileges
 
@@ -76,23 +76,23 @@ The colored circles on the security role settings page define the access level f
 
 A security role can be set to provide a team member with direct Basic-level access user privileges. A team member can create records that they own and records that have the team as owner when the Basic access level for Create is given. When the Basic access level for Read is given, team member can access records that are owned by both that team member and by the team.  
 
-This member’s privilege inheritance role is applicable to [Owner](manage-teams.md#about-owner-teams) and Azure Active Directory (Azure AD) [Group teams](manage-teams.md#about-group-teams). 
+This member's privilege inheritance role is applicable to [Owner](manage-teams.md#about-owner-teams) and Azure Active Directory (Azure AD) [Group teams](manage-teams.md#about-group-teams). 
 
-### Create a security role with team member’s privilege inheritance
+### Create a security role with team member's privilege inheritance
 
 #### Prerequisites
-These settings can be found in the Power Platform Admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Security roles**.
+These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Security roles**.
 
 Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
 Check your security role:
 - Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.<br />
+- Don't have the correct permissions? Contact your system administrator.<br />
 
 1. Select an environment and go to **Settings** > **User's + permissions** > **Security roles**.
 2. On the command bar, select **New**.
 3. Enter a role name.
-4. Select the **Member’s privilege inheritance** drop-down list.
+4. Select the **Member's privilege inheritance** drop-down list.
 5. Select **Direct User/Basic access level and Team privileges**.
 6. Go to each tab and set the appropriate privileges on each entity.
 
@@ -100,4 +100,5 @@ Check your security role:
 
 > [!NOTE]
 > You can also set this privilege inheritance property for all out-of-the-box security roles except the System Administrator role.  When a privilege inheritance security role is assigned to a user, the user gets all the privileges directly, just like a security role without privilege inheritance.
-
+>
+> You can only select Basic level privileges in the member's privilege inheritance. If you need to provide access to a child business unit, you will need to elevate the privilege to Deep; for example, you need to assign a security role to the Group team and you want the members of this group to be able to Append to Account.  You setup the security role with a Basic level member's privilege inheritance and in the Append to Account privilege, you set it to Deep.  This is because Basic privileges are only applicable to the user's business unit.

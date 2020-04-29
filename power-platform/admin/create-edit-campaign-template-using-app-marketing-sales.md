@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/10/2019
+ms.date: 03/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,15 +17,15 @@ search.app:
 ---
 # Create or edit a campaign template using in-app marketing (Sales)
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
-Save time when creating multiple campaigns by creating a campaign template. Campaign templates contain prefilled data that you specify, so you don’t have to reenter the same information for each campaign. You can either create a new campaign template or copy an existing campaign to use as a template.  
+Save time when creating multiple campaigns by creating a campaign template. Campaign templates contain prefilled data that you specify, so you don't have to reenter the same information for each campaign. You can either create a new campaign template or copy an existing campaign to use as a template.  
   
 ## Create a campaign template  
   
-1. [!INCLUDE[proc_marketing_campaigns](../includes/proc-marketing-campaigns.md)]  
+1. In the web app, go to **Marketing** > **Campaigns**.
   
-2. Click **New Template**.  
+2. Select **New Template**.  
   
     \- OR -  
   
@@ -33,11 +33,11 @@ Save time when creating multiple campaigns by creating a campaign template. Camp
   
 3. Add information in the template form just as you do when creating a campaign. In the template form, enter the information you want to appear in campaigns based on this template, and add items such as planning tasks, campaign activities, and marketing lists.  
   
-4. Click **Save** or **Save and Close**.  
+4. Select **Save** or **Save and Close**.  
   
 ## Copy an existing campaign as a template  
   
-- Open the campaign that you want to copy. Click **Copy as Template**, type a name for the template, and click **Save**.  
+- Open the campaign that you want to copy. Select **Copy as Template**, type a name for the template, and select **Save**.  
   
   If you need to back up your campaign templates, or use them in a different implementation of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, you can copy the data to a different environment using the [Configuration Migration tool](manage-configuration-data.md).
 

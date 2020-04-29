@@ -1,8 +1,8 @@
 ---
 title: "Use topics to design a Power Virtual Agents bot conversation"
-description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, performa actions, and solve issues."
+description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: ""
-ms.date: 11/14/2019
+ms.date: 4/15/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -33,6 +33,11 @@ You can see how the bot conversation works in practice by testing it in the **Te
 >You can have up to 1000 topics in a bot.
 
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
 ## Use system and sample topics
 
 When you create bot, a number of topics will be automatically created for you.
@@ -44,7 +49,7 @@ These are:
   - Four pre-populated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics.md) can be used to help understand simple to complex ways of using nodes to create bot conversations.
   - A number of **System Topics**. These are pre-populated topics that you are likely to need during a bot conversation. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
 
-You can edit bot of these topic types in the same manner as for topics you create, however you cannot delete them.
+You can edit both of these topic types in the same manner as for topics you create, however you cannot delete them.
 
 
 ## Create a topic
@@ -113,7 +118,7 @@ Additionally, you can **Branch based on a condition** when inserting a node betw
 
 1. You can choose from several options for the user’s response in the **Identify** field. 
    
-   These options determine what sort of information the bot should be listening for in the user's response. 
+   These options determine what the bot should be listening for in the user's response. 
    
    For example, they could be multiple choice options, a number, or a specific string. 
    
@@ -198,8 +203,8 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 ## Test and publish your bot
 
-You should [test your bot](authoring-test-bot.md) when you make changes to your topics, to ensure everything is working as expected.
+[Test your bot](authoring-test-bot.md) when you make changes to your topics, to ensure everything is working as expected.
 
-Once you've finished designing and testing your bot, you can consider [publishing it to the web, mobile or native apps, or Azure Bot Framework channels](publication-fundamentals-publish-channels.md).
+Once you've finished designing and testing your bot, you can consider [publishing it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
 

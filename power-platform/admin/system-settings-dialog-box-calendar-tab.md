@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/31/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,10 +18,8 @@ search.app:
 # System Settings Calendar tab
 
 Use the settings on this page to configure calendar settings for model-driven apps in Dynamics 365.  
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
   
-## Open the Calendar System Settings dialog box (if it isn’t already open)  
+## Open the Calendar System Settings dialog box (if it isn't already open)  
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
@@ -31,9 +29,9 @@ Use the settings on this page to configure calendar settings for model-driven ap
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_administration](../includes/proc-settings-administration.md)]  
-  
-3. Go to **System Settings** > **Calendar** tab.  
+2. In the Power Platform admin center, select an environment. 
+
+3. Select **Settings** > **Business** > **Calendar**.  
   
 |                  Settings                  |                                                                                                                                                                          Description                                                                                                                                                                           |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

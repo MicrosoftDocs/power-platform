@@ -17,7 +17,7 @@ search.app:
 ---
 # Assign security roles to a form to more finely control access
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 Control form and field access by assigning different security roles to different forms you create.  
   
@@ -59,7 +59,7 @@ Control form and field access by assigning different security roles to different
   
    2.  To close the **Preview** form, on the **File** menu, choose **Close**.  
   
-7. When you’re ready to save your data, choose **Save and Close**.  
+7. When you're ready to save your data, choose **Save and Close**.  
   
 8. Publish your customization.  
   

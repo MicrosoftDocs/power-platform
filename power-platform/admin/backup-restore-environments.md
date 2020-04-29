@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 03/31/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,11 +30,12 @@ About **system backups**:
   
 - All your environments are backed up.  
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) for details.
-- System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days.
+- System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
+- You must restore an environment to the same region in which it was backed up.
   
 ### Restore a system backup  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
+1. Browse to the Power Platform admin center and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. See [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
   
@@ -77,10 +78,11 @@ About **manual backups**:
   
 - You are not limited in the number of manual backups you can make.
 - Manual backups do not count against your storage limits.  
+- You must restore an environment to the same region in which it was backed up.
 
 ### Create a manual backup
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials.
+1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Create**.
   
@@ -97,7 +99,7 @@ You can only restore to sandbox environments. To restore to a production environ
 > [!IMPORTANT]
 > Note that changing an environment type to sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
 
-1. Browse to the Power Platform Admin center and sign in using administrator credentials.
+1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
   
@@ -116,7 +118,7 @@ You can only restore to sandbox environments. To restore to a production environ
 ### Edit a manual backup  
 Edit a backup to change its label and your notes about the backup.  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials.
+1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
 
@@ -130,7 +132,7 @@ Edit a backup to change its label and your notes about the backup.
 ### Delete a manual backup  
  You can  delete manual backups. You can't delete system backups.  
   
-1. Browse to the Power Platform Admin center and sign in using administrator credentials.
+1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
   
@@ -188,3 +190,9 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ### Don't see your environment to restore to?
 Only sandbox environments can be restored to.
+
+### See also
+[Automatic environment cleanup](automatic-environment-cleanup.md) <br />
+[Manage sandbox environments](sandbox-environments.md) <br />
+[Environments overview](environments-overview.md) <br />
+[Licensing overview for Power Platform](pricing-billing-skus.md)

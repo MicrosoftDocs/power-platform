@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 04/15/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -19,16 +19,16 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services.
+The On-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)
 
-You can use the Power Platform Admin center to get visibility into all on-Premises data gateways in a tenant. To do so, sign in as a tenant admin and select the **Data Gateway** option.
+You can use the Power Platform admin center to get visibility into all on-Premises data gateways in a tenant. To do so, sign in as a Power Platform service admin and select the **Data Gateway** option.
 
-Users who are part of the Azure AD Global administrator role (which includes Office 365 Global admins), Power BI service administrators, and Gateway administrators will have access to Data Gateway management on the Power Platform Admin center. There may however be differences in the features available and the operations which can be performed by each of these roles.
+Users who are part of the Azure AD Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators will have access to Data Gateway management on the Power Platform admin center. There may however be differences in the features available and the operations which can be performed by each of these roles.
 
-The Azure AD Global administrator role (which includes Office 365 Global admins) and Power BI service administrators will be able to see all gateways in their organizations in addition to the gateways they manage. You can switch between these two views using this toggle in the upper-right corner of the page:
+The Azure AD Global administrator role (which includes Global admins) and Power BI service administrators will be able to see all gateways in their organizations in addition to the gateways they manage. You can switch between these two views using this toggle in the upper-right corner of the page:
 
 > [!div class="mx-imgBorder"] 
-> ![](media/tenant-administration.png "Tenant administration")
+> ![](media/tenant-administration.png "Power Platform admin")
 
 The Gateways page lists all on-Premises data gateway clusters installed on the tenant. In addition, you can review the following information about these clusters:
 
@@ -45,27 +45,44 @@ The gateway cluster list includes both On-premises data gateways and On-premises
 
 ## Details
 
-Select any gateway cluster and select **Details** to see the gateway members, device name, and version in each gateway cluster.
+Select a gateway cluster and then select **Details** to see the following information on gateway members.
 
 > [!div class="mx-imgBorder"] 
 > ![Gateway details](media/data-gateways-details.png "Gateway details")
 
+> [!div class="mx-imgBorder"] 
+> ![Gateway member details](media/data-gateways-member-details.png "Gateway member details")
+
+- **Gateway name**: The name of the gateway member.
+- **Device name**: The physical device on which the gateway is installed.
+- **Version**: The gateway software version installed on the machine.
+- **Status**: Select (![Gateway status](media/gateway-status.png "Gateway status")) to check the status of a gateway member.
+- **State**: Select to enable or disable a gateway member.
+
+After selecting a gateway member, you can select **Remove** to remove it. This does not uninstall the gateway from the physical machine but removes all the metadata regarding the gateway.
+
 ## Settings
 
-> [!NOTE]
-> Only gateway admins (not tenant admins) can view **Settings**. 
-
-With **Tenant administration** turned off, use **Settings** to set on-Premises data gateway settings such as the gateway cluster name, department, and Power BI settings.
+Use **Settings** to set on-Premises data gateway settings such as the gateway cluster name, department, General settings and Power BI settings. 
 
 > [!div class="mx-imgBorder"] 
 > ![Data gateway settings](media/data-gateways-settings-tab.png "Data gateway settings")
+
+> [!div class="mx-imgBorder"] 
+> ![Data gateway settings](media/data-gateways-settings.png "Data gateway settings")
 
 For more information on **Allow user's cloud datasources to refresh through this gateway cluster**, see [Merge or append on-premises and cloud data sources](https://go.microsoft.com/fwlink/p/?linkid=2005525).
 
 For more information on **Allow user's custom data connectors to refresh through this gateway cluster**, see [Use custom data connectors with the on-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-custom-connectors).
 
+For more information on **Distribute requests across all active gateways in this cluster**, see [Load balance across gateways in a cluster](https://docs.microsoft.com/data-integration/gateway/service-gateway-high-availability-clusters#load-balance-across-gateways-in-a-cluster).
+
+## Status
+
+Select a gateway cluster, then select **Details** > **Check status** (![Gateway status](media/gateway-status.png "Gateway status")) to check the status of a gateway cluster.
+
 > [!div class="mx-imgBorder"] 
-> ![Data gateway settings](media/data-gateways-settings.png "Data gateway settings")
+> ![Data gateway settings](media/data-gateways-status.png "Data gateway settings")
 
 ## Manage users
 
@@ -85,16 +102,14 @@ For on-Premises data gateway in standard mode, users can be added in any of the 
 > [!NOTE]
 > - **Can Use** and **Can use + share** apply only to Power Apps and Power Automate. 
 > - While sharing gateways for **Can use** and **Can use + share** permission levels, you can restrict the data source type that the user can connect over the gateway. At least one data source type should be selected for the user to be successfully added.
+> - **Can Use** and **Can use + share** do not apply to custom connectors in Power Apps and Power Automate.
 
 > [!div class="mx-imgBorder"] 
 > ![Manage users](media/manage-gateway-users.png "Manage users")
 
 ## Remove
 
-> [!NOTE]
-> Only gateway admins (not tenant admins) can remove a gateway cluster. 
-
-With **Tenant administration** turned off, use **Remove** to remove a gateway cluster.
+Use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
 
 > [!div class="mx-imgBorder"] 
 > ![Remove gateway cluster](media/data-gateways-remove.png "Remove gateway cluster")
@@ -110,7 +125,7 @@ Use **Search** to find gateway clusters and see their details. You can search fo
 
 ## Manage gateways by region
 
-Select the region drop-down to see the list of gateway regions. When you select one of the regions, you'll see a list of gateways installed in that region. You can manage users or view gateway members for these gateways. By default, you'll see gateways within your tenant’s default region.
+Select the region drop-down to see the list of gateway regions. When you select one of the regions, you'll see a list of gateways installed in that region. You can manage users or view gateway members for these gateways. By default, you'll see gateways within your tenant's default region.
 
 > [!div class="mx-imgBorder"] 
 > ![Manage by gateway region](media/manage-gateway-by-region.png "Manage by gateway region")
@@ -124,12 +139,12 @@ Select the gateway type drop-down to filter by gateway type. By default, you'll 
 
 ## Manage installers
 
-As either an Azure AD Global administrator (which includes Office 365 Global admins) or a Power BI service administrator, use Manage Gateway installers to manage who can install the On-premises data gateway in your enterprise. This operation isn’t available for gateway admins.
+As either an Azure AD Global administrator (which includes Global admins) or a Power BI service administrator, use Manage Gateway installers to manage who can install the On-premises data gateway in your enterprise. This operation isn't available for gateway admins.
 
 > [!NOTE]
 > This feature does not apply for On-premises data gateways (personal mode).
 
-1. Go to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Data Gateways** from the left-side menu.
 
@@ -159,17 +174,17 @@ As either an Azure AD Global administrator (which includes Office 365 Global adm
    > [!NOTE]
    > This does not impact gateways which are already installed. This feature only allows or restricts users from installing gateways going forward.
 
-If a person who doesn’t have access to install gateways tries to install one, they will get the following error once they provide their credentials during the gateway registration.
+If a person who doesn't have access to install gateways tries to install one, they will get the following error once they provide their credentials during the gateway registration.
 
 > [!div class="mx-imgBorder"] 
 > ![Error message](media/manage-gateway-error-message.png "Error message")
 
 ## Get Help
-For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform Admin center.
+For faster troubleshooting and assistance, select **Get help** to open a Get Help panel. Include the session ID in a customer support ticket for any issues on the Data Gateways feature in the Power Platform admin center.
 
 > [!div class="mx-imgBorder"] 
 > ![Get help](media/get-help.png "Get help")
 
 ### See also
- [On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem)<br/>
+ [On-premises data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-onprem)<br/>
  [Connecting to on-premises data sources with On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)<br/>

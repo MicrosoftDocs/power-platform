@@ -1,13 +1,13 @@
 ---
 title: "Policies and Communications for service incidents  | MicrosoftDocs"
 description: Policies and Communications for service incidents
-author: jimholtz
-manager: kvivek
+author: astockli
+manager: timrob
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/15/2019
-ms.author: jimholtz
+ms.date: 02/04/2020
+ms.author: astockli
 search.audienceType: 
   - admin
 search.app: 
@@ -17,8 +17,8 @@ search.app:
 ---
 # Policies and Communications for service incidents
 
-## Introduction
-Microsoft regularly communicates work done to maintain and update Dmodel-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
+## Introduction 
+Microsoft regularly communicates work done to maintain and update model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
   
 If you’re not sure who your admin is, see [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
   
@@ -69,7 +69,7 @@ Minor service updates contain customization changes to support new features, pro
 - A Message Center notification is published that details when the deployment will be delivered into the environment 
 - A link to the Weekly Release Notes that contain the list of fixes that are included
   
-  A list of minor service updates can be found on our [Weekly Releases page](https://support.microsoft.com/help/2925359/microsoft-dynamics-crm-online-releases).
+A list of service updates can be found on our [Version Availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
   
 ## System maintenance
 
@@ -100,6 +100,11 @@ To limit the impact on users, the maintenance window is planned according to the
 | IND           | crm8.dynamics.com | 7:30PM to 1AM |
 | GCC           | crm9.dynamics.com | 2 AM to 11 AM |
 | GBR           | crm11.dynamics.com | 6 PM to 3 AM |
+| ZAF           | crm14.dynamics.com | 5 PM to 2 AM |
+| UAE           | crm15.dynamics.com| 3 PM to 12 AM |
+
+### Service Update Release Schedule
+To see the Service Update release schedule for your regions see our new [Released Versions](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#latest-version-availability) page.  
 
 **Prior notification**  
   

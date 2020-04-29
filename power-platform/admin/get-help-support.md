@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 04/14/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Get Help + Support 
 
-Admins you can use the **Help + support** experience in the [Power Platform Admin center](admin-documentation.md) to get self-help solutions in ***real-time*** for their issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
+Admins you can use the **Help + support** experience in the [Power Platform admin center](admin-documentation.md) to get self-help solutions in ***real-time*** for their issue. If the issue can't be resolved through self-help, you can use the same **Help + support** experience to contact a Microsoft support representative. 
 
 An example of solutions provided for Dynamics 365 App for Outlook issues:
 
@@ -26,13 +26,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 ### Prerequisites
 
--  You have one of the following Office 365 admin roles to enter support requests:
- 
-   - Global
-   - Tenant
-   - Service
-   - Support
-   - Billing
+-  You have a security role that is enabled for creating support requests such as an Global admin or Service support admin.
 
 -  For the following [support plans](https://www.microsoft.com/dynamics365/support):
    
@@ -54,7 +48,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 ### View solutions or enter a support request through the new support center
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with your admin credentials.
 
 2. Select **Help + support** > **New support request**.
 
@@ -68,6 +62,9 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
    Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
 
 4. If the guidance doesn't resolve your issue, scroll down and select **Create a support request** and fill in the fields in the form pages.
+
+   > [!NOTE]
+   > If you have one of the plans listed in [Prerequisites](#prerequisites), you can set the severity to a higher level than **Minimal**.
 
    > [!div class="mx-imgBorder"] 
    > ![](media/support-request-page2.png "Create a new support request")

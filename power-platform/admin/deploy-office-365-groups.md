@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,9 +17,7 @@ search.app:
 ---
 # Deploy Office 365 Groups [!INCLUDE [pn-dynamics-crm-online](../includes/pn-dynamics-crm-online.md)]
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
-[!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)], available with [!INCLUDE [pn-dynamics-crm-online](../includes/pn-dynamics-crm-online.md)] apps, provides a new environment for collaboration with [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] users who don’t use model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. For example, use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] when a sales team has a major opportunity requiring input from several people who don’t have access to model-driven apps in Dynamics 365. [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] provides a single location to share documents, conversations, meetings, and notes. You can enable [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] for any entity.  
+[!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)], available with [!INCLUDE [pn-dynamics-crm-online](../includes/pn-dynamics-crm-online.md)] apps, provides a new environment for collaboration with [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] users who don't use model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. For example, use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] when a sales team has a major opportunity requiring input from several people who don't have access to model-driven apps in Dynamics 365. [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] provides a single location to share documents, conversations, meetings, and notes. You can enable [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] for any entity.  
   
  ![Use Office 365 Groups to collaborate with others](../admin/media/office-groups-venn.png "Use Office 365 Groups to collaborate with others")  
   
@@ -64,49 +62,50 @@ search.app:
   
 2. [!INCLUDE[proc_office365_choose_admin_crm](../includes/proc-office365-choose-admin-crm.md)]  
   
-3. Click the **environments** tab.  
+3. Select the **environments** tab.  
   
-4. Choose your environment, and then click **Solutions**.  
+4. Choose your environment, and then select **Solutions**.  
   
-5. Select **Office 365 Groups** and then click **Install**.  
+5. Select **Office 365 Groups** and then select **Install**.  
   
-6. Review the terms of service and then click **Install**.  
+6. Review the terms of service and then select **Install**.  
   
    Once installation of the solution has completed, you can configure [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)].  
   
 > [!NOTE]
->  When you install a solution, your site is taken offline in maintenance mode for a short time. We recommend you install the solution when it’s least disruptive to users.  
+>  When you install a solution, your site is taken offline in maintenance mode for a short time. We recommend you install the solution when it's least disruptive to users.  
   
 <a name="BKMK_privileges"></a>   
+
 ## Check required privileges  
- The security privilege, **ISV Extensions**, is required to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. You can add or remove this privilege from custom or default security roles to meet your business needs. If a user doesn’t have this privilege, they won’t be able to see the [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] item in a record’s navigation menu.  
+ The security privilege, **ISV Extensions**, is required to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. You can add or remove this privilege from custom or default security roles to meet your business needs. If a user doesn't have this privilege, they won't be able to see the [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] item in a record's navigation menu.  
   
-1.  Go to **Settings** > **Security**.  
+1.  In the web app, go to **Settings** > **Security**.  
   
-2.  Click **Security Roles**.  
+2.  Select **Security Roles**.  
   
-3.  Choose the security role to check and then click the **Customization** tab.  
+3.  Choose the security role to check and then select the **Customization** tab.  
   
-4.  In the **Miscellaneous Privileges** section, review the **ISV Extensions** privilege setting. If the security role doesn’t have the **ISV Extensions** privilege, select it to set it to Organization.  
+4.  In the **Miscellaneous Privileges** section, review the **ISV Extensions** privilege setting. If the security role doesn't have the **ISV Extensions** privilege, select it to set it to Organization.  
   
-5.  Click **Save and Close**.  
+5.  Select **Save and Close**.  
   
 <a name="BKMK_ConfigureOfficeGroups"></a>   
 
 ## Configure Office 365 Groups  
  Once you provision [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)], you can enable them for any entity. Security group membership is associated with the entity. You configure [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] in model-driven apps in Dynamics 365.  
   
-1. Click **Settings** > **Office 365 Groups**.  
+1. In the web app, go to **Settings** > **Office 365 Groups**.  
   
-2. On the **Office 365 Groups Settings** page, click ![Add properties button](../admin/media/add-properties-button.png "Add properties button")**Add entity** and choose an entity from the drop-down list. Repeat this step for each entity you want to enable, including custom entities.  
+2. On the **Office 365 Groups Settings** page, select ![Add properties button](../admin/media/add-properties-button.png "Add properties button")**Add entity** and choose an entity from the drop-down list. Repeat this step for each entity you want to enable, including custom entities.  
   
-3. Optionally, you can click **Auto-create** for an entity to have a new group automatically created when a new record for that entity is created. However, we recommend you choose this option only for entities that typically require large groups to collaborate.  
+3. Optionally, you can select **Auto-create** for an entity to have a new group automatically created when a new record for that entity is created. However, we recommend you choose this option only for entities that typically require large groups to collaborate.  
   
-4. When you have added all the entities you want to enable for [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)], click **Publish All**.  
+4. When you have added all the entities you want to enable for [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)], select **Publish All**.  
   
     All of your pending system customizations will be published, including those you may have saved but not published in another area.  
   
-   You’re now ready to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. See [Collaborate with your colleagues using Office 365 Groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups).  
+   You're now ready to use [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. See [Collaborate with your colleagues using Office 365 Groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups).  
   
 <a name="BKMK_Connectors"></a>   
 ## Use the Office 365 Connectors for Groups  
@@ -119,15 +118,15 @@ search.app:
   
 2. Create or choose an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group.  
   
-3. Click **Connectors**.  
+3. Select **Connectors**.  
   
-   ![Click Office 365 Groups Connectors.](../admin/media/office-365-groups-connectors.png "Click Office 365 Groups Connectors.")  
+   ![Select Office 365 Groups Connectors.](../admin/media/office-365-groups-connectors.png "Select Office 365 Groups Connectors.")  
   
-4. Scroll down to **Dynamics 365 Online**, and then click **Add**.  
+4. Scroll down to **Dynamics 365 Online**, and then select **Add**.  
   
 5. If you have access to more than one environment, choose which environment to connect to this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group. If you only have access to one environment, this step will be skipped and you will advance to the next step.  
   
-6. Choose the record you want to connect this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group to, and then click **Save**.  
+6. Choose the record you want to connect this [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Group to, and then select **Save**.  
   
    ![Add Office 365 Groups records to connect](../admin/media/add-office-365-groups-records-to-connect.png "Add Office 365 Groups records to connect")  
   
@@ -135,7 +134,7 @@ search.app:
   
    ![Office 365 Groups records in connector](../admin/media/office-365-groups-records-in-connector.png "Office 365 Groups records in connector")  
   
-   To delete a connected record, click **View**, and then click **Remove**.  
+   To delete a connected record, select **View**, and then select **Remove**.  
   
    ![Delete Office 365 Groups records from connect](../admin/media/delete-office-365-groups-records-from-connect.png "Delete Office 365 Groups records from connect")  
   
@@ -152,7 +151,7 @@ search.app:
   
 <a name="BKMK_KnownIssues"></a>   
 ## Known issues  
- You need to have version [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)] or later, to install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. If [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] appears as an available solution in the [!INCLUDE[pn_crm_online_admin_center](../includes/pn-crm-online-admin-center.md)], but you receive the following error when trying to install: "Solution install failed. Please try again later. If the problem persists, contact customer support," you’ll need to update your environment before you can install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)].  
+ You need to have version [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)] or later, to install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]. If [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] appears as an available solution in the [!INCLUDE[pn_crm_online_admin_center](../includes/pn-crm-online-admin-center.md)], but you receive the following error when trying to install: "Solution install failed. Please try again later. If the problem persists, contact customer support," you'll need to update your environment before you can install [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)].  
   
 ## Privacy notice  
  When a user leverages the Office 365 Groups feature to connect an Office Group to model-driven apps in Dynamics 365, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  

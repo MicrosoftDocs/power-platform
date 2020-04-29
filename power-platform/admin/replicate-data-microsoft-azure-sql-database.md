@@ -1,12 +1,12 @@
 ---
-title: "Replicate data to Azure SQL Database   | MicrosoftDocs"
-description: Replicate data to Azure SQL Database 
+title: "Replicate data to Azure SQL Database using Data Export Service | MicrosoftDocs"
+description: Replicate data to Azure SQL Database using Data Export Service 
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,18 +15,15 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Replicate data to Azure SQL Database 
+# Replicate data to Azure SQL Database using Data Export Service
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
-The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is an add-on service made available on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] that adds the ability to replicate data to a [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] store in a customer-owned [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription. The supported target destinations are [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] and [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] virtual machines.  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] intelligently synchronizes the entire data initially and thereafter synchronizes on a continuous basis as changes occur (delta changes) in the system. This helps enable several analytics and reporting scenarios on top of data with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] data and analytics services and opens up new possibilities for customers and partners to build custom solutions.  
+The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is an add-on service made available on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] that adds the ability to replicate data from Common Data Service database to a [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] store in a customer-owned [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription. The supported target destinations are [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] and [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] virtual machines.  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] intelligently synchronizes the entire data initially and thereafter synchronizes on a continuous basis as changes occur (delta changes) in the system. This helps enable several analytics and reporting scenarios on top of data with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] data and analytics services, and opens up new possibilities for customers and partners to build custom solutions.  
   
 > [!NOTE]
->  You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. <br />
-> <br />
-> We’re now previewing a similar capability to export your Common Data Service data to Azure Data Lake Gen2. Within a few clicks you’ll be able to link your Common Data Service environment to a data lake in your Azure subscription, select standard or custom entities, and then export that data to the data lake. All data or metadata changes (initial and incremental) in the Common Data Service are automatically pushed to Azure Data Lake Gen2 without any additional action. More information:  [Exporting CDS data to Azure Data Lake](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) 
+> - You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Dynamics 365 Customer Service. <br />
+> - We're now previewing a similar capability to export your Common Data Service data to Azure Data Lake Gen2. You'll be able to link your Common Data Service environment to a data lake in your Azure subscription, select standard or custom entities, and then export data to the data lake. All data or metadata changes (initial and incremental) in Common Data Service are automatically pushed to Azure Data Lake Gen2 without any additional action. More information: [Exporting Common Data Service data to Azure Data Lake](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/) 
   
-For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service).
+For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](https://docs.microsoft.com/powerapps/developer/common-data-service/data-export-service) in the developer guide.
   
 <a name="Prereq_DES"></a>   
 ## Prerequisites for using [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]  
@@ -40,7 +37,9 @@ For information about the programmatic interface for managing configuration and 
   
    Alternatively, you can turn on **Allow access to Azure services** to allow all Azure services access.  
   
-   For [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] VM, the “Connect to SQL Server over the Internet” option should be enabled. More information: [Azure: Connect to a SQL Server Virtual Machine on Azure (Classic Deployment)](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-classic-sql-connect/)  
+   For [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] VM, the "Connect to SQL Server over the Internet" option should be enabled. More information: [Azure: Connect to a SQL Server Virtual Machine on Azure (Classic Deployment)](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-classic-sql-connect/)  
+
+   Additionally, configure your firewall rules to allow communication between Data Export Service and SQL Server.
   
 - The database user must have permissions at the database and schema level according to the following tables. The database user is used in the data export connection string.  
   
@@ -77,6 +76,8 @@ For information about the programmatic interface for managing configuration and 
   
 - The Key Vault should be tagged with the organization (OrgId) and tenant ids (TenantId).  This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
   
+- Configure your firewall rules to allow communication between Data Export Service and Azure Key Vault.
+
 ### Model-driven apps in Dynamics 365  
   
 - A version 9.0 or later version environment.  
@@ -120,7 +121,7 @@ For information about the programmatic interface for managing configuration and 
 
   To do this, delete the Export Profile in the EXPORT PROFILES view, then delete the tables and stored procedures, and then create a new profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to delete all Data Export Profile tables and stored procedures](#Delete_DEP)  
   
-- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn’t work for sandbox environments that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](sandbox-environments.md#administration-mode)  
+- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn't work for sandbox environments that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](sandbox-environments.md#administration-mode)  
 
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] does not drop (delete) the associated tables, columns, or stored procedure objects in the destination Azure SQL database when the following actions occur.
   - An entity is deleted.
@@ -134,7 +135,7 @@ For information about the programmatic interface for managing configuration and 
 ## Export Profile  
  To export data from model-driven apps in Dynamics 365, the administrator creates an Export Profile.  Multiple profiles can be created and activated to synchronize data to different destination databases simultaneously.  
   
- The Export Profile is the core concept of  the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. The Export Profile gathers set up and configuration information to synchronize data with the destination database. As part of the Export Profile, the administrator provides a list of entities to be exported to the destination database. Once activated, the Export Profile starts the automatic synchronization of data. Initially, all data that corresponds to each selected entity is exported. Thereafter, only the changes to data as they occur to the entity records or metadata in model-driven apps in Dynamics 365 are synchronized continuously using a push mechanism in near real time. Therefore, you don’t need to set up a schedule to retrieve data from model-driven apps in Dynamics 365.  
+ The Export Profile is the core concept of  the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. The Export Profile gathers set up and configuration information to synchronize data with the destination database. As part of the Export Profile, the administrator provides a list of entities to be exported to the destination database. Once activated, the Export Profile starts the automatic synchronization of data. Initially, all data that corresponds to each selected entity is exported. Thereafter, only the changes to data as they occur to the entity records or metadata in model-driven apps in Dynamics 365 are synchronized continuously using a push mechanism in near real time. Therefore, you don't need to set up a schedule to retrieve data from model-driven apps in Dynamics 365.  
   
  Only entities that have change tracking enabled can be added to the Export Profile. Notice that, most of the standard entities which capture data are change tracking enabled. Custom entities must be explicitly enabled for change tracking before you can add them to an Export Profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable change tracking to control data synchronization](../admin/enable-change-tracking-control-data-synchronization.md)  
   
@@ -277,7 +278,7 @@ For information about the programmatic interface for managing configuration and 
   
    ![Notification of a successful resynchronization](../admin/media/data-export-resync-success.PNG "Notification of a successful resynchronization")  
   
-   5.  Verify that the Export Profile doesn’t contain failed record notifications by opening the data export profile and viewing the **Failed Notifications** counter on the **PROPERTIES & OVERVIEW** tab, which should be **0**. Click **REFRESH** on the Export Profile toolbar to make sure the **Failed Notifications** value is current.  
+   5.  Verify that the Export Profile doesn't contain failed record notifications by opening the data export profile and viewing the **Failed Notifications** counter on the **PROPERTIES & OVERVIEW** tab, which should be **0**. Click **REFRESH** on the Export Profile toolbar to make sure the **Failed Notifications** value is current.  
   
    ![Zero records failed  indication](../admin/media/data-export-failed-records-zero.PNG "Zero records failed  indication")  
   
@@ -395,7 +396,7 @@ The statement has been terminated.
 
 - Periodically update database statistics on tables and indexed views in the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database. More information: [Update Statistics](https://docs.microsoft.com/sql/relational-databases/statistics/update-statistics?view=sql-server-2017) 
 
-- Monitor the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database’s utilization. More information: [Perf monitoring](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-monitor)
+- Monitor the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] database's utilization. More information: [Perf monitoring](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-monitor)
 
   
 ## About data synchronization latency
@@ -428,7 +429,7 @@ When the above conditions are met, 15 minutes is a typical synchronization laten
   
  Before running the script, replace the placeholders for the following variables.  
   
-- $subscriptionId. The Key Vault resource group you want to use. If a resource group doesn’t already exist a new one with the name you specify will be created. In this example, *ContosoResourceGroup1* is used.  
+- $subscriptionId. The Key Vault resource group you want to use. If a resource group doesn't already exist a new one with the name you specify will be created. In this example, *ContosoResourceGroup1* is used.  
   
 - $location. Specify the location where the resource group is, or should be, located, such as *West US*.  
   
@@ -443,16 +444,16 @@ When the above conditions are met, 15 minutes is a typical synchronization laten
 
 ```powershell
 # -------------------------------------------------------------------------------- #
-	#  Provide the value for the following parameters before executing the script
-$subscriptionId = 'ContosoSubscriptionId'	
+    #  Provide the value for the following parameters before executing the script
+$subscriptionId = 'ContosoSubscriptionId'    
 $keyvaultName = 'ContosoKeyVault'
-	$secretName = 'ContosoDataExportSecret'
-	$resourceGroupName = 'ContosoResourceGroup1'
-	$location = 'West US'
-	$connectionString = 'AzureSQLconnectionString'
+    $secretName = 'ContosoDataExportSecret'
+    $resourceGroupName = 'ContosoResourceGroup1'
+    $location = 'West US'
+    $connectionString = 'AzureSQLconnectionString'
 $organizationIdList = 'ContosoSalesOrg1_id, ContosoSalesOrg2_id'
 $tenantId = 'tenantId'
-	# -------------------------------------------------------------------------------- #
+    # -------------------------------------------------------------------------------- #
 
 # Login to Azure account, select subscription and tenant Id
 Login-AzureRmAccount
@@ -587,7 +588,7 @@ EXEC SP_EXECUTESQL @sql;
 
 <a name="SQLDB_IP_addresses"></a>   
 ## Azure SQL database static IP addresses used by the Data Export Service  
- In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/)l  
+ In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/)l  
   
 |Region|IP address|  
 |------------|----------------|  

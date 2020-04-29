@@ -2,7 +2,7 @@
 title: "Add a Power Virtual Agents bot to Azure Bot Service channels"
 description: "Connect your bot to existing Azure Bot Service framework channels (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
-ms.date: 11/9/2019
+ms.date: 4/15/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -14,7 +14,7 @@ ms.collection: virtualagent
 ---
 
 
-# Add Power Virtual Agent bot to Azure Bot Service channels
+# Add Power Virtual Agents bot to Azure Bot Service channels
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -37,6 +37,8 @@ Adding your bot to Azure Bot Service channels requires considerable developer ex
 - [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1.
 - Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine).
 - A bot created in Power Virtual Agents that you want to connect to an Azure Bot Service channel.
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
 
 You should also read [Connect your bot to mobile and custom apps](publication-connect-bot-to-custom-application.md) before following the instructions in this topic.
 
@@ -136,7 +138,7 @@ The following example uses samples from the [relay bot sample code](https://gith
     /// </summary>
     public class PowerVirtualAgentsConversation
     {
-        public string ConversationtId { get; set; } // The Power Virtual Agent conversation ID retrieved from step 1
+        public string ConversationtId { get; set; } // The Power Virtual Agents conversation ID retrieved from step 1
 
         public string Token { get; set; } // The DirectLine token retrieved from step 1
 

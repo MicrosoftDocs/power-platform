@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 03/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,11 +17,11 @@ search.app:
 ---
 # Connect to Yammer 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] gives colleagues at your organization a central place to have conversations, create and edit documents, and share information without sending a single email or attending any meetings.  
   
- After you set up your organization to work with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], employees will see posts in a newsfeed on their model-driven apps in Dynamics 365 dashboard whenever people update customer info, and they’ll be able to join in the conversation with their own posts.  
+ After you set up your organization to work with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], employees will see posts in a newsfeed on their model-driven apps in Dynamics 365 dashboard whenever people update customer info, and they'll be able to join in the conversation with their own posts.  
   
 ## Connect your organization to Yammer  
   
@@ -33,7 +33,7 @@ search.app:
   
 - [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   
-- You’ll also need to have verified system administrator privileges for your organization’s [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account.  
+- You'll also need to have verified system administrator privileges for your organization's [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account.  
   
 - Install the most recent product updates for model-driven apps in Dynamics 365.  
   
@@ -45,33 +45,35 @@ search.app:
   
 2. [!INCLUDE[proc_settings_system](../includes/proc-settings-system.md)]  
   
-3. Choose **Administration** > **Yammer Configuration**  
+3. In the Power Platform admin center, select an environment. 
+
+4. Select **Settings** > **Integration** > **Yammer**.  
   
-4. Read the disclaimer, and then choose **Continue**.  
+5. Read the disclaimer, and then choose **Continue**.  
   
-5. Choose **Authorize model-driven apps in Dynamics 365 (or [!INCLUDE[pn_crm_2016_shortest](../includes/pn-crm-2016-shortest.md)]) to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]**.  
+6. Choose **Authorize model-driven apps in Dynamics 365 (or [!INCLUDE[pn_crm_2016_shortest](../includes/pn-crm-2016-shortest.md)]) to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]**.  
   
-6. Sign in to your enterprise [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account using your administrator credentials.  
+7. Sign in to your enterprise [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account using your administrator credentials.  
   
-7. Follow the on-screen instructions to accept the [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] terms of service, note which [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] network has been set up for you, and connect your organization to it. After your organization is connected, you’ll see a confirmation message at the bottom of the screen.  
+8. Follow the on-screen instructions to accept the [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] terms of service, note which [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] network has been set up for you, and connect your organization to it. After your organization is connected, you'll see a confirmation message at the bottom of the screen.  
   
    > [!NOTE]
    > Model-driven apps in Dynamics 365 only support connecting to the primary [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] network. Connecting to External Networks in [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] is not supported.  
   
-8. If desired, stay signed in to your [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account and set your organization’s preferences for [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts.  
+9. If desired, stay signed in to your [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account and set your organization's preferences for [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts.  
   
-### Set your organization’s preferences for Yammer posts (optional)  
+### Set your organization's preferences for Yammer posts (optional)  
   
-1. Make sure you’re signed in to your enterprise [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account using your administrator credentials.  
+1. Make sure you're signed in to your enterprise [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] account using your administrator credentials.  
   
-2. If desired, select whether [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts are **public** (everyone sees model-driven apps in Dynamics 365 posts in the newsfeed, or **private** (people must “follow” a record to see posts about that record in the newsfeed).  
+2. If desired, select whether [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] posts are **public** (everyone sees model-driven apps in Dynamics 365 posts in the newsfeed, or **private** (people must "follow" a record to see posts about that record in the newsfeed).  
   
 3. If desired, select the default group where you would like posts to appear.  
   
 4. If desired, select which record types trigger automatic posts to the [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] newsfeed.  
   
 ## Enable entities for Yammer  
- Once you’ve connected model-driven apps in Dynamics 365 to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], you need to specify which entities are enabled for use with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]. Enabled entities can be followed by users  
+ Once you've connected model-driven apps in Dynamics 365 to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)], you need to specify which entities are enabled for use with [!INCLUDE[pn_yammer](../includes/pn-yammer.md)]. Enabled entities can be followed by users  
   
 1. [!INCLUDE[proc_settings_system](../includes/proc-settings-system.md)]  
   
@@ -89,7 +91,7 @@ search.app:
 ## Additional considerations  
   
 ### When connecting with a federated Yammer  
- If you have configured [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] to use single sign-on, you’ll need to generate and use a temporary password to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)].  
+ If you have configured [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] to use single sign-on, you'll need to generate and use a temporary password to connect to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)].  
   
 1. Sign in to [!INCLUDE[pn_yammer](../includes/pn-yammer.md)] with the single sign-on credentials.  
   

@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2018
+ms.date: 02/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -34,7 +34,7 @@ This article describes how Microsoft is preparing for the GDPR, and also provide
 
 The following actions are covered in this article:
 
-* **Discover** — Use search and discovery tools to more easily find customer data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the following DSR actions to respond to the request. Alternatively, you may determine that the request doesn't meet your organization’s guidelines for responding to DSR requests.
+* **Discover** — Use search and discovery tools to more easily find customer data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the following DSR actions to respond to the request. Alternatively, you may determine that the request doesn't meet your organization's guidelines for responding to DSR requests.
 
 * **Access** — Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of that data available to the data subject.
 
@@ -47,30 +47,30 @@ The following actions are covered in this article:
 * **Export** — Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
 
 ## Discover
-The first step in responding to a DSR request is to find the personal data that is the subject of the request. This first step&mdash;finding and reviewing the personal data at issue&mdash;will help you determine whether a DSR request meets your organization's requirements for honoring or declining a DSR request. For example, after finding and reviewing the personal data at issue, you may determine the request doesn’t meet your organization’s requirements because doing so may adversely affect the rights and freedoms of others.
+The first step in responding to a DSR request is to find the personal data that is the subject of the request. This first step&mdash;finding and reviewing the personal data at issue&mdash;will help you determine whether a DSR request meets your organization's requirements for honoring or declining a DSR request. For example, after finding and reviewing the personal data at issue, you may determine the request doesn't meet your organization's requirements because doing so may adversely affect the rights and freedoms of others.
 
 ### Step 1: Find personal data for the user in Power Apps
 Below is a summary of the types of Power Apps resources that contain personal data for a specific user.
 
-Resources containing personal data |	Purpose
+Resources containing personal data |    Purpose
 --- | ---
-Environment |	An environment is a space to store, manage, and share your organization’s business data, apps, and flows. [Learn more](https://go.microsoft.com/fwlink/?linkid=872239)
-Environment permissions	| Users are assigned to environments roles to be granted maker and administrative privileges within an environment. [Learn more](https://go.microsoft.com/fwlink/?linkid=872240)
-Canvas app	| Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=872241)
-Canvas-app permissions	| Canvas apps can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872242)
-Connection	| Used by connectors and allow for connectivity to APIs, systems, databases, etc. [Learn more](https://go.microsoft.com/fwlink/?linkid=872243)
-Connection permissions	| Certain types of connections can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872244)
-Custom connector	| Custom connectors that a user has created to provide access to a data source not offered through one of the Power Apps standard connectors. [Learn more](https://go.microsoft.com/fwlink/?linkid=872245)
-Custom-connector permissions	| Custom connectors can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872246)
-Power Apps user and user-app settings	| Power Apps stores several user preferences and settings that are used to deliver the Power Apps runtime and portal experiences.
-Power Apps notifications	| Power Apps sends several types of notifications to users including when an app is shared with them and when a Common Data Service export operation has completed.
-Gateway	| Gateways are on-premises data gateways that can be installed by a user to transfer data quickly and securely between Power Apps and a data source that isn’t in the cloud. [Learn more](https://go.microsoft.com/fwlink/?linkid=872247)
-Gateway permissions	| Gateways can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872249)
-Model-driven apps and model-driven app permissions	| Model-driven app design is a component-focused approach to app development. Model-driven apps and their user access permissions are stored as data within the Common Data Service database.  [Learn more](https://go.microsoft.com/fwlink/?linkid=872248)
+Environment |    An environment is a space to store, manage, and share your organization's business data, apps, and flows. [Learn more](https://go.microsoft.com/fwlink/?linkid=872239)
+Environment permissions    | Users are assigned to environments roles to be granted maker and administrative privileges within an environment. [Learn more](https://go.microsoft.com/fwlink/?linkid=872240)
+Canvas app    | Cross-platform business apps that can be built from a power of a blank canvas and connected to over 200 data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=872241)
+Canvas-app permissions    | Canvas apps can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872242)
+Connection    | Used by connectors and allow for connectivity to APIs, systems, databases, etc. [Learn more](https://go.microsoft.com/fwlink/?linkid=872243)
+Connection permissions    | Certain types of connections can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872244)
+Custom connector    | Custom connectors that a user has created to provide access to a data source not offered through one of the Power Apps standard connectors. [Learn more](https://go.microsoft.com/fwlink/?linkid=872245)
+Custom-connector permissions    | Custom connectors can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872246)
+Power Apps user and user-app settings    | Power Apps stores several user preferences and settings that are used to deliver the Power Apps runtime and portal experiences.
+Power Apps notifications    | Power Apps sends several types of notifications to users including when an app is shared with them and when a Common Data Service export operation has completed.
+Gateway    | Gateways are on-premises data gateways that can be installed by a user to transfer data quickly and securely between Power Apps and a data source that isn't in the cloud. [Learn more](https://go.microsoft.com/fwlink/?linkid=872247)
+Gateway permissions    | Gateways can be shared with users within an organization. [Learn more](https://go.microsoft.com/fwlink/?linkid=872249)
+Model-driven apps and model-driven app permissions    | Model-driven app design is a component-focused approach to app development. Model-driven apps and their user access permissions are stored as data within the Common Data Service database.  [Learn more](https://go.microsoft.com/fwlink/?linkid=872248)
 
 Power Apps offers the following experiences to find personal data for a specific user:
 
-- **Website access**: [Power Apps site](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+- **Website access**: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 - **PowerShell access**: Power Apps cmdlets (for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804)) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
 
 For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md).
@@ -94,12 +94,12 @@ For guidance on how to discover personal data stored by Common Data Service, see
 > It is recommended that admins complete this step for a Power Apps user.
 
 ## Rectify
-If a data subject asks you to rectify the personal data that resides in your organization’s data, you and your organization must determine whether it’s appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
+If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
 
 You can use Azure Active Directory to manage the identities (personal data) of your users within Power Apps. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services. See [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) for details.
 
 ## Restrict
-Data subjects may request that you restrict processing of their personal data.  We provide both pre-existing application programming interfaces (APIs) and user interfaces (UIs).  These experiences provide the enterprise customer’s tenant administrator the capability to manage such DSRs through a combination of data export and data deletion. A customer may request:
+Data subjects may request that you restrict processing of their personal data.  We provide both pre-existing application programming interfaces (APIs) and user interfaces (UIs).  These experiences provide the enterprise customer's Power Platform service admin the capability to manage such DSRs through a combination of data export and data deletion. A customer may request:
 
 * Export an electronic copy of the personal data of the user, including:
 
@@ -110,13 +110,13 @@ Data subjects may request that you restrict processing of their personal data.  
 * Delete the account and associated data residing within Microsoft systems.
 
 ## Export
-The “right of data portability” allows a data subject to request a copy of his or her personal data in an electronic format (that’s a “structured, commonly used, machine read-able and interoperable format”) that may be transmitted to another data controller.
+The "right of data portability" allows a data subject to request a copy of his or her personal data in an electronic format (that's a "structured, commonly used, machine read-able and interoperable format") that may be transmitted to another data controller.
 
 See [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md) for details.
 
 ## Delete
-The “right to erasure” by the removal of personal data from an organization’s customer data is a key protection in the GDPR. Removing personal data includes system-generated logs but not audit-log information.
+The "right to erasure" by the removal of personal data from an organization's customer data is a key protection in the GDPR. Removing personal data includes system-generated logs but not audit-log information.
 
-Power Apps allows users to build line-of-business applications that are a critical part of your organization’s day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user’s account is deleted from Azure Active Directory.
+Power Apps allows users to build line-of-business applications that are a critical part of your organization's day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user's account is deleted from Azure Active Directory.
 
 See [Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data](powerapps-gdpr-delete-dsr.md) for details.

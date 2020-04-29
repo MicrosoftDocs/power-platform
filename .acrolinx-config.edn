@@ -1,2 +1,14 @@
 {:allowed-branchname-matches ["^master$"]
- :allowed-filename-matches ["power-platform"]}
+ :allowed-filename-matches ["power-platform" "power-virtual-agents"]
+ :acrolinx-check-settings
+ {
+  "languageId" "en"
+  "ruleSetName" "Standard"
+  "requestedFlagTypes" ["SPELLING" "GRAMMAR" "STYLE"
+                        "TERMINOLOGY_DEPRECATED"
+                        "TERMINOLOGY_VALID"
+                        "VOICE_GUIDANCE"
+                        ]
+  "termSetNames" ["BAG"]
+ }
+}

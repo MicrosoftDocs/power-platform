@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/03/2019
+ms.date: 03/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,9 +17,9 @@ search.app:
 ---
 # Enable viewing profile cards
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
-Microsoft’s people experience is centered around profile cards that have been around in Microsoft Outlook and other Office apps and services on the web. When you select someone’s name or picture in Outlook or other Office apps, you can find information related to them on their profile card. The profile card is also sometimes referred to as contact card or people card. Profile cards are available on contacts and users in any Unified Interface app.
+Microsoft's people experience is centered around profile cards that have been around in Microsoft Outlook and other Office apps and services on the web. When you select someone's name or picture in Outlook or other Office apps, you can find information related to them on their profile card. The profile card is also sometimes referred to as contact card or people card. Profile cards are available on contacts and users in any Unified Interface app.
 
 > [!NOTE]
 > If multi-factor authentication has been enabled for Office 365 services and not enabled for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, profile cards will not be rendered for users in Unified Interface.
@@ -32,7 +32,7 @@ Microsoft’s people experience is centered around profile cards that have been 
 > - lpcres.delve.office.com 
 > - Port: TCP:443 
 > 
-> To view the complete endpoint requirements for connectivity from a user’s machine to Office 365 for profile cards to be displayed in Unified Interface, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ID 130.
+> To view the complete endpoint requirements for connectivity from a user's machine to Office 365 for profile cards to be displayed in Unified Interface, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) ID 130.
 
 ## Prerequisites
 
@@ -41,9 +41,9 @@ The following settings/environment are required for profile cards to be enabled 
 1. Office 365 (Exchange Online)
 2. Unified Interface Build 9.1.0.4626 or higher
 3. Enable Admin setting
-    a. Navigate to **Settings** > **Administration** > **System Settings**
-    b. Select the **General** tab.
-    c. For **Enable users to view contact cards**, select **Yes**, and then **OK**.
+   1. In the web app, navigate to **Settings** > **Administration** > **System Settings**
+   2. Select the **General** tab.
+   3. For **Enable users to view contact cards**, select **Yes**, and then **OK**.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/enable-users-view-contact-cards.png "Enable users to view contact cards")

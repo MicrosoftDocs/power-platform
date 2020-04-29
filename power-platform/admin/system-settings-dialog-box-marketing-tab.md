@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 04/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,9 +19,9 @@ search.app:
 
 Use the settings on this page to configure marketing settings for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
-## Open the Marketing System Settings dialog box (if it isn’t already open)  
+## Open the Marketing System Settings dialog box (if it isn't already open)  
 
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
 
@@ -31,7 +31,7 @@ Use the settings on this page to configure marketing settings for model-driven a
 
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
 
-2. [!INCLUDE[proc_settings_administration](../includes/proc-settings-administration.md)]  
+2. In the web app, go to **Settings** > **Administration**.
 
 3. Choose **System Settings** > **Marketing** tab.  
 
@@ -43,6 +43,6 @@ Use the settings on this page to configure marketing settings for model-driven a
 |                                           Create campaign responses for incoming email                                            |                     Default: Yes. If Yes, model-driven apps in Dynamics 365 create campaign response records automatically when email messages are received in response to a specific marketing campaign.                     |
 |                        **Set the auto-unsubscribe options (Available only if Email tracking is enabled)**                         |                                                                                                                                                                                                                                                          |
 |                          Set "Do Not Send Marketing Material" option when unsubscribe email is received                           |                         Default: No. If Yes, when an unsubscribe email is received, the preference setting for the account, contact, or lead from the marketing list gets updated automatically to not send marketing materials.                         |
-|                                      Send acknowledgement to customers when they unsubscribe                                      |                                                 If the previous setting **Set “Do Not Send Marketing Material”** is Yes, you can use this setting to send a response to customers when they unsubscribe.                                                 |
+|                                      Send acknowledgement to customers when they unsubscribe                                      |                                                 If the previous setting **Set "Do Not Send Marketing Material"** is Yes, you can use this setting to send a response to customers when they unsubscribe.                                                 |
 |                                                Template for Acknowledgement Email                                                 |                                                              If the two previous settings are Yes, you must specify an email template to use to respond to customers when they unsubscribe.                                                              |
 

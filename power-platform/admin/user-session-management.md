@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,8 +16,6 @@ search.app:
   - Powerplatform
 ---
 # Security enhancements: User session and access management 
-
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
 
 You can use security enhancements to better secure the model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. 
 
@@ -43,7 +41,7 @@ This Azure AD ID token refresh cycle continues in the background based on the Az
 
 
 ### Resilience to Azure AD outages 
-In an event that there are intermittent Azure AD outages, authenticated users can continue to access the model-driven apps in Dynamics 365/Common Data Service data if the PCI claims has not expired or the user has opted in the ‘Stay signed in’ during authentication. 
+In an event that there are intermittent Azure AD outages, authenticated users can continue to access the model-driven apps in Dynamics 365/Common Data Service data if the PCI claims has not expired or the user has opted in the 'Stay signed in' during authentication. 
 
 ### Set Custom Session timeout for individual environment 
 For environments that require different session timeout values, administrators can continue to set the session timeout and/or inactivity timeout in the System Settings.  These settings override the default Azure AD session policy and users will be directed to Azure AD for re-authentication when these settings expired.   
@@ -61,14 +59,19 @@ For environments that require different session timeout values, administrators c
 
 ## Configure session timeout 
 
-1. In model-driven apps in Dynamics 365, choose **Settings** > **Administration** > **System Settings** > **General** tab.
-2. Under **Set session timeout**, set the values to apply to all your users.
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Product** > **Privacy + Security**.  
+
+3. Set **Session Expiration** and **Inactivity timeout**. These settings apply to all users.
 
 > [!NOTE]
 > Default values are:
 > - Maximum Session Length: 1440 minutes
 > - Minimum Session Length: 60 minutes
 > - How long before session expires before showing timeout warning: 20 minutes
+
+> - The updated settings will be effective the next time the user signs in to the application.
 
 ## Inactivity timeout
 
@@ -89,17 +92,22 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 
 ## Configure inactivity timeout
 
-1. In model-driven apps in Dynamics 365, choose **Settings** > **Administration** > **System Settings** > **General tab**.
-2. Under **Set inactivity timeout**, set the values to apply to all your users.
+1. In the Power Platform admin center, select an environment. 
+
+2. Select **Settings** > **Product** > **Privacy + Security**.  
+
+3. Set **Session Expiration** and **Inactivity timeout**. These settings apply to all users.
 
 > [!NOTE]
 > Default values are:
 > - Minimum Duration of Inactivity: 5 minutes
 > - Maximum Duration of Inactivity: less than Maximum Session length or 1440 minutes
 
+> - The updated settings will be effective the next time the user signs in to the application. 
+
 ## Access management
 
-Model-driven apps in Dynamics 365 use Azure Active Directory as the identity provider.  To secure the user’s access to model-driven apps in Dynamics 365, the following were implemented:
+Model-driven apps in Dynamics 365 use Azure Active Directory as the identity provider.  To secure the user's access to model-driven apps in Dynamics 365, the following were implemented:
 
 - To enforce users to re-authenticate, users are required to sign in with their credentials after they signed out within the application. 
 - To prevent users from sharing credentials to access model-driven apps in Dynamics 365, the user access token is validated to ensure that the user who was given access by the identity provider is the same user who is accessing model-driven apps in Dynamics 365.

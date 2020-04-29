@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 05/15/2019
+ms.date: 02/20/2020
 ms.author: sabinn
 search.audienceType: 
   - admin
@@ -69,7 +69,7 @@ Before you can create a data integration project, you must provision a connectio
 
 **To create a connection**
 
-1. Go to [Power Apps](https://web.powerapps.com).
+1. Go to [Power Apps](https://make.powerapps.com).
 
 2. Under Data, select **Connections** and then select **New connection**.
 
@@ -189,11 +189,11 @@ Execution history shows the history of all project executions with project name,
     > [!div class="mx-imgBorder"] 
     > ![Execution history failure](media/data-integrator/ExecutionHistoryFailures3780.png "Execution history failure")
 
--   If the project execution is in ‘ERROR’ state, then it will retry execution at the next scheduled run.
+-   If the project execution is in 'ERROR' state, then it will retry execution at the next scheduled run.
 
--   If the project execution is in ‘WARNING’ state, then you will need to fix the issues on the source. It will retry execution at the next scheduled run.
+-   If the project execution is in 'WARNING' state, then you will need to fix the issues on the source. It will retry execution at the next scheduled run.
 
-    In either case, you could also choose to manually ‘re-run execution.’
+    In either case, you could also choose to manually 're-run execution.'
 
 > [!NOTE]
 > Anytime you execute a project, manually or schedule based, it generates a detailed log which shows project name, last updated timestamp along with status. You can view this under the execution history for each project. Project execution history is maintained for 45 days after which it is automatically purged.
@@ -333,7 +333,7 @@ You can customize projects and templates in these ways:
 
 4. Follow the steps 6 through 9 <a href="#CreateProject">here</a> to finish creating a data integration project. Select **Save**.
 
-5. You’ll see the Tasks page which is empty since it’s a blank template, without any tasks. Select **Add task** to pick an entity from the drop-down list and add a new task.
+5. You'll see the Tasks page which is empty since it's a blank template, without any tasks. Select **Add task** to pick an entity from the drop-down list and add a new task.
    In this case, for demo purposes, we will create an **Activities Sales to Fin and Ops** task by picking **Activities** entity for Dynamics 365 Finance and Operations and Dynamics 365 Sales. Select **Create**.
 
     > [!div class="mx-imgBorder"] 
@@ -438,6 +438,14 @@ With Power Query support, we now provide advanced filtering and data transformat
     > ![Pick new column](media/data-integrator/EnablePQDefaultValueTransforms6780.png "Pick new column")
 
 For more information on Power Query, see [Power Query documentation](https://docs.microsoft.com/power-query/).
+
+> [!NOTE]
+> - Currently, we do not support doing joins across multiple data sources (either via the **Get data** button or M query) in Advanced Query and Filtering.
+> - If you encounter Power Query evaluation limits with the error: 
+> 
+>   <i>The powerquery job failed with error: Exception ExceptionType:MashupEvaluationException, ExceptionMessage:EvaluationQuotaReached, EvaluationResponse:{"ResultType":"ErrorCode","Code":"EvaluationQuotaReached"</i> 
+>
+>   Review the guidance on [Power Query Online Limits](https://docs.microsoft.com/power-query/power-query-online-limits).
 
 ## Performance tuning
 

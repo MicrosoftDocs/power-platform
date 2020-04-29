@@ -1,13 +1,13 @@
 ---
 title: "Notifications for Business Application Group services  | MicrosoftDocs"
 description: CNotifications for Business Application Group services
-author: jimholtz
-manager: kvivek
+author: astockli
+manager: timrob
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/09/2019
-ms.author: jimholtz
+ms.date: 02/04/2020
+ms.author: astockli
 search.audienceType: 
   - admin
 search.app: 
@@ -35,7 +35,7 @@ The notifications sent from the Business Application Group communications team w
 | Dynamics 365 Marketing | msdynamics365@microsoft.com |
 | Dynamics 365 Market Insights | marketinsights@microsoft.com|
 | Dynamics 365 Finance & Operations    | msdyn365finops@microsoft.com| 
-| Microsoft Power Automate  | msflow@microsoft.com| 
+| Microsoft Power Automate  | mspowerautomate@microsoft.com| 
 | Microsoft Power Apps | mspowerapps@microsoft.com| 
 | Microsoft Power BI  | mspowerbi@microsoft.com| 
 
@@ -45,21 +45,21 @@ Email notifications are sent to Common Data Service users who have the System Ad
 ## Incident Communications
 Major service incident emails can easily be identified by the red banner.
 
-![Service incident email banner](../admin/media/service-incident-banner.png "Service incident email banner")  
+![Service incident email banner](../admin/media/Interruption-Notification-Banner.png "Interruption Notification Banner")  
  
-Microsoft will send you an email when normal system services have been restored. You can easily identify these emails by the light-green banner.
+Microsoft will send you an email when normal system services have been restored. You can easily identify these emails by the green banner.
 
-![Service restored email banner](../admin/media/service-restored-banner.png "Service restored email banner")  
+![Service restored email banner](../admin/media/Restored-Notification-Banner.png "Restored Notification Banner")  
  
 ## Maintenance communications 
 Planned maintenance includes updates and changes to the service to provide increased stability, reliability, and performance. Planned and unplanned maintenance emails can be identified by the light-orange banner.
 
-![Planned and unplanned maintenance banner](../admin/media/maintenance-banner.png "Planned and unplanned maintenance banner")
+![Planned and unplanned maintenance banner](../admin/media/Maintenance-Notification-Banner.png "Maintenance Notification Banner")
 
 ## Communications for releases, package deployments, and awareness
 Communications can be informational in nature, drive specific actions, or both. The target audience for these communications are System Administrators or individuals designated to run the service. You can easily identify these by the light-blue banner.
 
-![General awareness email banner](../admin/media/scheduling-banner.png "General awareness email banner") 
+![General awareness email banner](../admin/media/Customer-Notification-Banner.png "Customer Notification Banner") 
  
 Power BI will display with the following yellow banner:
  
