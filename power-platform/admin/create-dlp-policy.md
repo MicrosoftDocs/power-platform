@@ -271,7 +271,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    > [!div class="mx-imgBorder"] 
    > ![Review new policy](media/dlp-new-policy-review.png "Review new policy")
 
-The policy is created and appears in the list of DLP policies. As a result of this policy, SharePoint and Salesforce apps can share data in non-test environments&mdash;such as production environments&mdash;because they're both part of the same **Business** data group. However, any connector that resides in the **Non-Business** data group&mdash;such as Outlook.com&mdash;won't share data with apps and flows by using SharePointor Salesforce connectors. Facebook and Twitter connectors are altogether blocked from being used in any app or flow in non-test environments such as production or default environments. 
+The policy is created and appears in the list of DLP policies. As a result of this policy, SharePoint and Salesforce apps can share data in non-test environments&mdash;such as production environments&mdash;because they're both part of the same **Business** data group. However, any connector that resides in the **Non-Business** data group&mdash;such as Outlook.com&mdash;won't share data with apps and flows by using SharePoint or Salesforce connectors. Facebook and Twitter connectors are altogether blocked from being used in any app or flow in non-test environments such as production or default environments. 
 
 It's good practice for admins to share the list of DLP policies with their organization so that users are aware of the policies before they create apps.
 
