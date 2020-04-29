@@ -1,29 +1,30 @@
 ---
-title: "Configure Single Sign-on in Power Virtual Agents"
-description: "Step by step guide to enable your bot to authenticate an already signed in user"
+title: "Configure single sign-on in Power Virtual Agents"
+description: "Enable your bot to authenticate an already-signed-in user"
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider"
-ms.date: 1/31/2020
+ms.date: 4/28/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
-author: pawant
+author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: pawant
 ms.custom: authentication
 ms.collection: virtual-agent
 ---
 
-# Configure Single Sign-on with Azure Active Directory in Power Virtual Agents
+# Configure single sign-on with Azure Active Directory in Power Virtual Agents
 
 [This topic is pre-release documentation and is subject to change.]
 
-Power Virtual Agents enables you to author personalized conversations and perform actions on behalf of your users. With single sign-on support, bots can be configured to automatically sign-in the user if the user has already signed into the page where bot is deployed (e.g. Coporate Intranet, Applications, etc.)
+Power Virtual Agents supports single sign-on support, which means chatbots can be configured to automatically sign-in the user if they are already signed in to the page where the bot is deployed (for example, they bot is hosted on the corporate intranet or in an app that they're signed in to).
 
 > [!IMPORTANT] 
 > Before using this feature, you must follow the [end-user authentication configuration instructions](configuration-end-user-authentication.md) and [deploy a custom canvas](extend-custom-canvas-connect.md)
 
 ## Overview
-The following illustration gives you an overview of how Single Sign-on works end-to-end.
+The following illustration gives you an overview of how single sign-on works end-to-end.
 
   ![Illustration of SSO auth flow](media/sso-illustration.png)
 
