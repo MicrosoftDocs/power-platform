@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 04/23/2020
+ms.date: 04/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 
 # Create a data loss prevention (DLP) policy 
 
-To protect data in your organization, you can use Power Apps to create and enforce policies that define the consumer connectors that specific business data can be shared with.<!--Suggested.--> These policies are called *data loss prevention* (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
+To protect data in your organization, you can use Power Apps to create and enforce policies that define the consumer connectors that specific business data can be shared with. These policies are called *data loss prevention* (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
 
 DLP policies can be created at the tenant level or at the environment level, and are managed from the Power Platform admin center. The new user interface is now in public preview.
 
@@ -25,7 +25,7 @@ DLP policies can be created at the tenant level or at the environment level, and
 
 ### Tenant-level 
 
-Tenant-level policies can be defined to include or exclude specific environments. To follow the steps described in this article for tenant-level policies, *one*<!--Via Writing Style Guide--> of the following permissions is required:
+Tenant-level policies can be defined to include or exclude specific environments. To follow the steps described in this article for tenant-level policies, *one* of the following permissions is required:
 
 - Power Platform service admin permissions
 - Microsoft 365 Global admin permissions
@@ -35,7 +35,7 @@ We refer to these roles throughout this article as *tenant admins*. More informa
 ### Environment-level
 
 To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions. More information: [Environment permissions](environments-administration.md#environment-permissions) 
-<!--The following H2 seems to be a non sequitur. Is it necessary to have it here? -->
+
 ## Find and view DLP policies
 
 To find and view DLP policies, see [Find and view DLP policies](prevent-data-loss.md#find-and-view-dlp-policies).
@@ -151,7 +151,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    |         |   |Description  |
    |---------|---------|---------|
    |**1**  |   | Assign one or more connectors across connector classification groups        |
-   |**2**  |   | Connector classification group pivot tables<!--Is this what we're calling "tabs" now? I haven't heard this before.-->         |
+   |**2**  |   | Connector classification group pivot tables    |
    |**3**  |   | Search bar to find connectors across properties like **Name**, **Blockable**, **Type**, or **Publisher**       |
    |**4**  |  |  Connector classification group that maps any new connectors added by Power Platform *after* your DLP policy is created.         |
    |**5**  |   |  Select, multi-select, or bulk-select connectors to move across groups        |
@@ -159,7 +159,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    |**7**  |   |  Action buttons to assign individual connectors across connector classification groups        |
 
 
-4. Select the SalesForce and SharePoint connectors<!--Suggest being directive here because this is a walkthrough.-->, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![](./media/vertical-ellipses.png)) to the right of the connector name. 
+4. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![](./media/vertical-ellipses.png)) to the right of the connector name. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign multiple connectors](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
@@ -275,7 +275,7 @@ The policy is created and appears in the list of DLP policies. As a result of th
 
 It's good practice for admins to share the list of DLP policies with their organization so that users are aware of the policies before they create apps.
 
-This table describes how the DLP policy you created affects data connections in apps and flows.<!--Suggested.-->
+This table describes how the DLP policy you created affects data connections in apps and flows.
 
 |Connector matrix  |SharePoint (Business)  |Salesforce (Business)  |Outlook.com (Non-Business)   |Facebook (Blocked)  |Twitter (Blocked) |
 |---------|---------|---------|---------|---------|---------|
@@ -287,10 +287,9 @@ This table describes how the DLP policy you created affects data connections in 
 
 Because no DLP policy has been applied to test environments, apps and flows can use any set of connectors together in these environments.
 
-<!--What is this doing here? It looks like another stray H2 that disrupts the story you've got in this article. Suggest deleting. If you have to mention PowerShell, this could be a note toward the top (maybe next to that other stray H2).
 ## Use DLP PowerShell commands
 See [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).
--->
+
 ### See also
 
 [Data loss prevention policies](wp-data-loss-prevention.md) <br />

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2020
+ms.date: 04/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -78,7 +78,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
    > ![Edit a DLP policy](media/dlp-edit-policy.png "Edit a DLP policy")
 
    > [!NOTE]
-   > Environment admins can't edit policies<!--Edit okay? --> that were created by the tenant admin.
+   > Environment admins can't edit policies that were created by the tenant admin.
 
 3. Proceed through the steps described in [Create a DLP policy](create-dlp-policy.md), and then select **Update Policy**.
 
@@ -98,7 +98,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
    > ![Delete a DLP policy](media/dlp-delete-policy.png "Delete a DLP policy")
 
    > [!NOTE]
-   > Environment admins can't delete policies<!--Edit okay?--> that were created by the tenant admin.
+   > Environment admins can't delete policies that were created by the tenant admin.
 
 3. In the confirmation dialog box, select **Delete**.
 
@@ -106,13 +106,13 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 1. Sign in to the Power Platform admin center.
 
-2. From the list of DLP policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.<!--Suggest deleting the graphic; they already know how to get here.-->
+2. From the list of DLP policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
    > ![Edit a DLP policy](media/dlp-edit-policy.png "Edit a DLP policy")
 
    > [!NOTE]
-   > Environment admins can't edit policies<!--Edit okay?--> created by the tenant admin.
+   > Environment admins can't edit policies created by the tenant admin.
 
 3. Select the **Connectors** step in the **Edit Policy** process.
 
@@ -126,7 +126,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 6. Select **Next** as needed to close the **Edit Policy** process.
 
 The data group you chose will be the default group to automatically classify any new connectors added to Power Platform after your policy has been created. 
-<!--The following random-seeming H2 should be a note somewhere else, not this slim and underwhelming section tucked at the end of the article.  -->
+
 ## Use DLP PowerShell commands
 See [Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).
 

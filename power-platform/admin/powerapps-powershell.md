@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/23/2020
+ms.date: 04/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -353,7 +353,7 @@ Get-AdminPowerAppConnector
 Returns a list of all custom connector details in the tenant.
 
 ### Data loss prevention (DLP) policy commands 
-<!--note from editor: Duplicated this from wp-data-loss-prevention.md, which please see.-->
+
 > [!NOTE]
 > The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
 
