@@ -33,3 +33,5 @@ Currently, the admin center provides the following capabilities.
 
 ### See also
 [Blog: Introducing the Power Platform admin center](https://blogs.msdn.microsoft.com/crm/2018/09/25/introducing-the-power-platform-admin-center/)
+[Reference: Use the various admin centers](admin-centers.md)<br />
+[Reference: Videos and PowerPoint presentations](videos.md)
