@@ -21,7 +21,7 @@ Use the settings on this page to configure marketing settings for model-driven a
 
 <!-- legacy procedure -->
 
-## Open the Marketing System Settings dialog box (if it isn't already open)  
+## Open the Marketing System Settings dialog box 
 
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
 
