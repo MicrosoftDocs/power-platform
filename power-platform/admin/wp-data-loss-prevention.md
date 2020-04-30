@@ -66,7 +66,7 @@ Standard licensed connectors, where the service is owned by Microsoft, can't be 
 5.	Common Data Service connectors. These are the only premium connectors that can't be blocked, because Common Data Service is an integral part of Power Platform.
 
 The following connectors can't be blocked by using DLP policies.
-<!--note from editor: I worked on the order of these rows, so they'll all show as being changed, but whenever I changed the actual name of a connector (by comparing them with the list on docs), I added a note.-->
+
 <table style="width:100%">
 <tr>
 <th>Business use<br />Office connectors (standard)</th>

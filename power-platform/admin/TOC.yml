@@ -793,6 +793,7 @@
       - name: "For partners: Delegated Administrator"
         href: for-partners-delegated-administrator.md
   - name: Administer Power Apps
+    href: admin-guide.md
     items:
     - name: Environments 
       items:
