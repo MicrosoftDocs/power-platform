@@ -84,6 +84,10 @@ Runs once daily on a schedule, and gets connector information.
 
 Runs when an environment is created or modified, and gets custom connector information.
 
+### Admin \| Sync Template v2 (Model Driven Apps)
+
+Runs when an environment is created or modified, and gets model driven app information.
+
 ### Admin \| Sync Template v2 (Sync Flow Errors)
 
 Runs on a schedule, and sends an email to the admin about environments that failed to sync (with a
