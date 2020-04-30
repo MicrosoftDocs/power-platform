@@ -24,7 +24,7 @@ Use the settings on this page to change general system-level settings like prefe
 > [!NOTE]
 > Many of these settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings**.
   
-## Open the System Settings dialog box (if it isn't already open)  
+## Open the System Settings dialog box 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
