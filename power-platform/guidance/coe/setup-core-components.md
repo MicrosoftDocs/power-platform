@@ -150,49 +150,12 @@ The following flows are required to sync data to the resource entities:
     Flow type: Scheduled (daily by default)  
     Description: If any of the sync flows fail, the failure is stored in the Common Data Service Sync Flow Errors entity. This scheduled flow sends a report of failures to the admin.
 
-The flows are all part of the solution. There are two options to consider for activation of the flows. Option 1 takes longer to configure than option 2, but it's easier to receive updates with option 1.
+### Activate each of these flows
 
-### Option 1: Keep the flow in the solution, and update each action connection
+Save a copy of the flows outside of the solution to activate and create the connections.
 
-Use this option if you'd like to continue receiving updates to the flow through this solution. This takes longer to set up because the connections for each action need to be individually configured.
-
-1. Go to the *Center of Excellence - Core Components* solution.
-
-    1. Go to [make.powerapps.com](https://make.powerapps.com), and set the current environment to the same environment where the CoE solution is installed.
-
-    1. In the left navigation, select **Solutions**, and then select the **Center of Excellence - Core Components** solution.
-
-1. Select the flow name (all flows starting with *Admin | Sync Template v2*) to get to the flow details screen, and then select **Edit**.
-
-    ![Sync Template flows](media/coe9.PNG "Sync Template flows")
-
-1. The flow will open in the maker studio. For each action that requires a connection, there will be a warning icon on the right side of the action. This indicates the need for a connection to be selected.
-
-    ![Set up connections in the Sync Template flow](media/coe10.png "Set up connections in the Sync Template flow")
-  
-1. Update all the connections. If you see an error message when you select **Save**, that means that more connections still need to be made; these are likely hidden in conditional nodes.
-
-    - Some connections will need to be created, if they aren't already available.
-
-    - Some actions might be hidden within other built-in actions, such as a condition or scope. Expand those actions to find the hidden ones.
-
-    - We suggest you start at the top of the flow and work down step by step, opening each step as you go, until you find them all.
-
-1. After all actions have a connection, select **Save**.
-
-1. Repeat the above steps for *Admin \| Sync Template v2 – Apps, Connectors, Custom Connectors, Flows, Model Driven Apps and Sync Flow Errors*.
-
-1. Ensure that the flows are turned on.
-
-1. Trigger the sync flows to populate your data.
-
-    - Select **Admin \| Sync Template v2**. This will open a new tab to the flow details page.
-
-    - Select **Run**.
-
-### Option 2: Save a copy of the flows outside of the solution
-
-If you save a copy of the flows from the solution, the connections are created automatically for you. The drawback of this method is that if you copy the flows from the solution, the copied flows don't get updated when you update the solution package to newer versions. You'll have to import the new solution and copy the flows again to upgrade them to the latest version.
+>[!NOTE]
+>There is a current product limitation in this methodology such that you will not get updates for these flows as new versions of the CoE are released. You'll have to import the new solution and copy the flows again to upgrade them to the latest version. This is being actively investigated by the product team.
 
 1. Go to the *Center of Excellence - Core Components* solution.
 
