@@ -68,6 +68,20 @@ The Nurture Components solution contains five flows:
 
 Follow the same instructions to configure the flows as explained in [Activate the Sync Template flows](setup-core-components.md#activate-the-sync-template-flows).
 
+## Set up a feedback form for your Training in a day
+
+1. Navigate to [forms.office.com](https://forms.office.com)
+1. Select **New Form**
+1. Enter *Power Platform Training Feedback* as title
+1. Select **+ Add New** to add the following questions:
+    1. Rating: *Please rate the training course?*
+    1. Text: *What went well?*
+    1. Text: *What didn't go well?*
+1. Select **Share** and copy the link for *Send and collect responses*
+
+    ![Copy Feedback form URL to send and collect responses](media/nurture-feedback.png "Copy Feedback form URL to send and collect responses")
+1. Paste the link into the Default Value of your *Training in a day - Feedback Form* Environment Variable.
+
 ## Create a SharePoint document library
 
 This library is used to store templates, components, and documents that you want to share with makers in your organization. In this section, you'll create and populate the library by using a set of starter materials.
