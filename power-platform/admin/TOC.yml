@@ -34,7 +34,7 @@
         href: api-request-limits-allocations.md
     - name: Getting started
       items:
-      - name: What's the role of a Power Apps administrator? 
+      - name: What's the role of a Power Platform administrator? 
         href: overview-role-powerapps-admin.md
       - name: Power Apps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
@@ -391,8 +391,9 @@
       - name: Free storage space
         href: free-storage-space.md       
     - name: Resources
-      href: view-manage-resources.md
       items:
+      - name: Overview 
+        href: view-manage-resources.md
       - name: Manage Dynamic 365 apps
         href: manage-apps.md
   #    - name: Manage Power apps 
@@ -400,8 +401,9 @@
   #    - name: Portal administration
   #      href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
     - name: Activity logging for Power Apps 
-      href: logging-powerapps.md 
       items: 
+      - name: Overview
+        href: logging-powerapps.md 
       - name: Audit data and user Activity
         href: audit-data-user-activity.md
       - name: Enable and use Activity Logging
