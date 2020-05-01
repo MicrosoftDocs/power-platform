@@ -21,7 +21,7 @@ search.app:
 
 You can now install, configure, and manage Dynamics 365 apps in the Power Platform admin center.
 
-Apps in this topic refer to model-driven applications in Dynamics 365, Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
+Apps refer to model-driven applications in Dynamics 365, Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
 You can manage apps from either the tenant level or the environment level.
 
