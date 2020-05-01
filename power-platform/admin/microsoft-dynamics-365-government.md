@@ -56,7 +56,7 @@ Dynamics 365 US Government plans are available to qualified government and priva
 - Dynamics 365 Team Member GCC
 - Dynamics 365 ProDirect Support GCC
 - Dynamics 365 Enhanced Support GCC
-- Remote Assist on HoloLens GCC
+- Dynamics 365 Remote Assist GCC
 
 ### Dynamics 365 US Government – GCC AddOns
 
@@ -79,7 +79,7 @@ Dynamics 365 US Government plans are available to qualified government and priva
 - Dynamics 365 Team Member GCC High
 - Dynamics 365 ProDirect Support GCC High
 - Dynamics 365 Enhanced Support GCC High
-- Remote Assist on HoloLens GCC High
+- Dynamics 365 Remote Assist GCC High
 
 ### Dynamics 365 US Government – GCC High AddOns
 
