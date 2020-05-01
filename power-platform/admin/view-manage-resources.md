@@ -1,12 +1,12 @@
 ---
-title: "View and manage resources  | MicrosoftDocs"
-description: About viewing and managing resources
+title: "About resources  | MicrosoftDocs"
+description: About  resources
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/29/2020
+ms.date: 05/01/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -15,17 +15,22 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# View and manage resources 
-This section covers managing your apps in the Power Platform admin center.
+# About resources
 
 <!-- This was created for fwlink 2126968. Don't delete. -->
 
-- [Manage Dynamics 365 apps](manage-apps.md)
+You can now install, configure, and manage Dynamics 365 apps in the Power Platform admin center.
 
+Apps in this topic refer to model-driven applications in Dynamics 365, Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
+
+You can manage apps from either the tenant level or the environment level.
+
+See the following topics:
+
+- [Manage Dynamics 365 apps](manage-apps.md)
 
 <!-- 
 - [Manage Power Apps](admin-manage-apps.md)
-- Flow topic
+- [About Microsoft Power Automate](wp-about-flows.md)
 - [Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
-
 -->

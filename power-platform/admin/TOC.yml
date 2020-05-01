@@ -34,8 +34,6 @@
         href: api-request-limits-allocations.md
     - name: Getting started
       items:
-      - name: Power Apps overview
-        href: wp-powerapps-platform-overview.md
       - name: What's the role of a Power Apps administrator? 
         href: overview-role-powerapps-admin.md
       - name: Power Apps enterprise deployment whitepaper
@@ -795,6 +793,8 @@
   - name: Administer Power Apps
     href: admin-guide.md
     items:
+    - name: Power Apps overview
+      href: wp-powerapps-platform-overview.md
     - name: Environments 
       items:
       - name: Edit environment properties
