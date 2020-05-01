@@ -29,66 +29,14 @@ The Core Components solution is required for the Nurture Components solution, or
 
 1. Import the *CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip* file.
 
-## Update environment variables
-
-Environment variables are used to store application and flow configuration data. This means you only have to set the value once and it will be used in all necessary flows and apps.
-
-All flows in this solution depend on all environment variables' being configured.
-
-1. You may see an error notifying you that environment variables need to be configured.
-   > [!NOTE]
-   > For the Nurture Components solution, three environment variables need to be configured.
-   
-   ![Environment variables need to be updated](media/coe7.png "Environment variables need to be updated")
-
->[!TIP]
->To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
-
-1. Select **See Environment Variables** to set the values as described in the following table.
-
-| Name | Default value |
-|------|---------------|
-| Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-| Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
-| Power User Site URL (SharePoint Site) | The site that your Power Platform Power Users can use to communicate and share files. You will use it here to house the Template Library for them. |
-
-## Activate the flows
-
-The Nurture Components solution contains five flows:
-
--  Admin \| Newsletter with Product Updates
-
--  Admin \| Welcome Email
-
--  Training in a day \| Feedback Reminder
-
--  Training in a day \| Registration Confirmation
-
--  Training in a day \| Reminder 3 days prior to event
-
-Follow the same instructions to configure the flows as explained in [Activate the Sync Template flows](setup-core-components.md#activate-the-sync-template-flows).
-
-## Set up a feedback form for your Training in a day
-
-1. Navigate to [forms.office.com](https://forms.office.com)
-1. Select **New Form**
-1. Enter *Power Platform Training Feedback* as title
-1. Select **+ Add New** to add the following questions:
-    1. Rating: *Please rate the training course?*
-    1. Text: *What went well?*
-    1. Text: *What didn't go well?*
-1. Select **Share** and copy the link for *Send and collect responses*
-
-    ![Copy Feedback form URL to send and collect responses](media/nurture-feedback.png "Copy Feedback form URL to send and collect responses")
-1. Paste the link into the Default Value of your *Training in a day - Feedback Form* Environment Variable.
-
 ## Create a SharePoint document library
 
 This library is used to store templates, components, and documents that you want to share with makers in your organization. In this section, you'll create and populate the library by using a set of starter materials.
 
-The Template Catalog app depends upon this library.
+The Template Catalog app depends upon this library. If you are not intending to use the Template Catalog, you can skip this step and go straight to [Update Environment Variables](#update-environment-variables).
 
 ### Create the site
+
 If you do not already have a SharePoint Site for the Power Platform Power Users in your tenant, create a new team one now for them to access.
 This site is the one specified in the following environmental variable: *Power User Site URL (SharePoint Site)*
 
@@ -147,6 +95,59 @@ More information: [Create a document library in SharePoint](https://support.offi
 ### Add your own Templates
 
 If you have existing templates that you'd like to share with your makers (for example template apps, brand guidelines, or app and flow samples), upload them to the TemplateApps document library so they show up in the Template Catalog.
+
+## Update environment variables
+
+Environment variables are used to store application and flow configuration data. This means you only have to set the value once and it will be used in all necessary flows and apps.
+
+All flows in this solution depend on all environment variables' being configured.
+
+1. You may see an error notifying you that environment variables need to be configured.
+   > [!NOTE]
+   > For the Nurture Components solution, three environment variables need to be configured.
+   
+   ![Environment variables need to be updated](media/coe7.png "Environment variables need to be updated")
+
+>[!TIP]
+>To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
+
+1. Select **See Environment Variables** to set the values as described in the following table.
+
+| Name | Default value |
+|------|---------------|
+| Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
+| Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
+| Power User Site URL (SharePoint Site) | The site that your Power Platform Power Users can use to communicate and share files. You will use it here to house the Template Library for them. |
+
+## Activate the flows
+
+The Nurture Components solution contains five flows:
+
+-  Admin \| Newsletter with Product Updates
+
+-  Admin \| Welcome Email
+
+-  Training in a day \| Feedback Reminder
+
+-  Training in a day \| Registration Confirmation
+
+-  Training in a day \| Reminder 3 days prior to event
+
+Follow the same instructions to configure the flows as explained in [Activate the Sync Template flows](setup-core-components.md#activate-the-sync-template-flows).
+
+## Set up a feedback form for your Training in a day
+
+1. Navigate to [forms.office.com](https://forms.office.com)
+1. Select **New Form**
+1. Enter *Power Platform Training Feedback* as title
+1. Select **+ Add New** to add the following questions:
+    1. Rating: *Please rate the training course?*
+    1. Text: *What went well?*
+    1. Text: *What didn't go well?*
+1. Select **Share** and copy the link for *Send and collect responses*
+
+    ![Copy Feedback form URL to send and collect responses](media/nurture-feedback.png "Copy Feedback form URL to send and collect responses")
+1. Paste the link into the Default Value of your *Training in a day - Feedback Form* Environment Variable.
 
 ## Share apps with your organization
 
