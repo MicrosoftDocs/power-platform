@@ -1,6 +1,6 @@
 ---
-title: "About resources  | MicrosoftDocs"
-description: About  resources
+title: "Overview | MicrosoftDocs"
+description: About resources
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# About resources
+# Overview
 
 <!-- This was created for fwlink 2126968. Don't delete. -->
 
