@@ -155,7 +155,7 @@ The following flows are required to sync data to the resource entities:
 Save a copy of the flows outside of the solution to activate and create the connections.
 
 >[!NOTE]
->There is a current product limitation in this methodology such that you will not get updates for these flows as new versions of the CoE are released. You'll have to import the new solution and copy the flows again to upgrade them to the latest version. This is being actively investigated by the product team.
+>There is a current product limitation in this methodology such that you will not get updates for these flows as new versions of the CoE are released. You'll have to import the new solution and copy the flows again to upgrade them to the latest version. This experience will improve once [Modern Solution Import (Power Apps 2020 Release Wave 1)](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/modern-solution-import-experience) is available.
 
 1. Go to the *Center of Excellence - Core Components* solution.
 
