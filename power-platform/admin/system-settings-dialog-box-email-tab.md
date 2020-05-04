@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 05/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -58,7 +58,7 @@ Use the settings on this page to set up email processing in model-driven apps in
 > | Track email sent between two users as two activities | Select this option to create two email activities between users, one for the sender and one for the recipient.  |
 > |  **Set email form options**  |  |
 > |   Use secure frames to restrict email message content  | If this is set to **Yes**, you may see the following error message when you're reading email: "This content cannot be displayed in a frame". Although this can make sending sensitive content in email less secure, changing the setting to **No** typically eliminates this error.  |
-> |  Allow messages with unresolved recipients to be sent   |  Set this to **Yes** if you want to send email messages that have unresolved recipients.  |
+> |  Allow messages with unresolved email recipients to be sent  |  Set this to **Yes** if you want to send email messages that have unresolved recipients.  |
 > |  Set To, cc, bcc, fields as unresolved values if multiple matches are found in Incoming Emails. |  Use this setting to choose which record an email address resolves to when there are multiple possible matches in **to**, **cc**, or **bcc** fields of an email. When you select **Yes**, if the **to**, **cc**, or **bcc** fields of an email have an email address that can be resolved to multiple contacts (or other records), the email address will be resolved in the unresolved mode instead of resolving to all possible records. Unresolved email addresses can then be resolved individually as you encounter them. The default value is **No**.  |
 > |  Apply same email address to all unresolved matches when you manually resolve it for one.  |  When set to **Yes**, the same email address is applied to all similar unresolved email addresses when resolved in one email activity.  When set to **No**, the email address is applied only to the specific email activity and does not resolve similar addresses present in other email activities. The default value is **Yes**. <br /><br />This setting appears when **Set To, cc, bcc, fields as unresolved values is multiple matches are found in Incoming Emails** is set to **Yes**.  |
 > | **Set file size limit for attachments**  |  |
@@ -67,6 +67,8 @@ Use the settings on this page to set up email processing in model-driven apps in
 > |  Multitask, compose, and save drafts using email pop-up windows when creating email from timeline. | Select this check box to allow users to use enhanced email. Enabling or disabling enhanced email will apply to all applications in your organization that use Timeline. |
 > |  **Configure alerts**   |  Select check boxes for the type of alerts that must be sent to users:<br /><br /> -   Error (default)<br />-   Warning<br />-   Information (default) **Tip:**  Select **Warning** if you're troubleshooting or testing or want to get more detailed messages on the alert wall.  |
 > | Notify mailbox owner  |  By default, the system administrator is notified of any error that occurs for an email server profile.<br /><br /> Select this check box if you also want to notify the mailbox owner. |
+> | **Enable Send Direct Email Action in Unified Interface**  |  |
+> |  Enable Send Direct Email Action in Unified Interface for Send Email enabled entities. | Set this to **Yes** if you want to send an email message to multiple recipients using email templates. |
   
 ### See also  
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
