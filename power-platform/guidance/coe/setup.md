@@ -40,17 +40,17 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
 -  Environment with a Common Data Service instance, where the user installing the solution has the System Administrator security role.
 
--  The environment must have a DLP Policy that allows Common Data Service, Power Platform Management connectors, Office 365 Users, and Office 365 Outlook to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
+-  The environment must have a DLP Policy that allows [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/), [Common Data Service (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/) to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
 
--  Download of the Center of Excellence Solution and CoE Power BI dashboard files to your device. The entire content package can be downloaded directly at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+- Download of the Center of Excellence Solution and CoE Power BI dashboard files to your device. The entire content package can be downloaded directly at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
--  Both the Governance Components and Nurture Components solutions require the core solution before they can be installed.
+- Both the Governance Components and Nurture Components solutions require the core solution before they can be installed.
 
 These are the requirements for using the solution.
 
--  Power Apps Premium license (per app, per user, or Dynamics 365 Online licenses).
+- Power Apps Premium license (per app, per user, or Dynamics 365 Online licenses).
 
--  For the Core Components solution, only the admins need a Power Apps Premium license. For the Governance Components solution, all makers require a Premium license. For the Nurture Components solution, everyone will require a Premium license.
+- For the Core Components solution, only the admins need a Power Apps Premium license. For the Governance Components solution, all makers require a Premium license. For the Nurture Components solution, everyone will require a Premium license.
 
 > [!NOTE]
 >The *Admin \| Sync Template* flows crawl through all the resources stored in Power Platform and make a copy of details in each resource (for example, apps and flows) to Common Data Service (entity definitions are provided in this solution). All data displayed in most of the starter kit components must be in Common Data Service, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight. When you first set up the CoE Starter Kit, you can manually start the *Admin \| Sync Template v2*, which will start the process of crawling and storing the information in Common Data Service.
