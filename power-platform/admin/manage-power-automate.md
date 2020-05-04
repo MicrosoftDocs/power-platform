@@ -41,7 +41,7 @@ Admins can do the following from the Power Platform admin center:
    > [!div class="mx-imgBorder"] 
    > ![Select Power Automate resource](media/resources-select-power-automate.png "Select Power Automate resource")
 
-3. Select an flow to manage.
+3. Select a flow to manage.
 
    > [!div class="mx-imgBorder"] 
    > ![Select a flow](media/resources-power-automate-flows-list.png "Select a flow") 
