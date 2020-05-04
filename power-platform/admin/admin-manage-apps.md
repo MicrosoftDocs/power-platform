@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 05/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,34 +18,34 @@ search.app:
 # Manage Power Apps
 If you're an Environment Admin, Global admin, or Power Platform admin, you can manage the apps created in your organization.
 
-Admins can do the following from the Power Apps Admin center:
-* Add or change the users with whom an app is shared
-* Delete apps not currently in use
-* View the data sources used by an app
+Admins can do the following from the Power Platform admin center:
+
+- Add or change the users with whom an app is shared
+- Delete apps not currently in use
 
 ## Prerequisites
-* Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
-* Power Apps Environment Admin, Global admin, or Power Platform service admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
-## Manage an app
-1. Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
-2. In the navigation pane, click or tap **Environments**, and then click or tap the environment that contains the app that you want to manage.
+- Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
 
-    If you don't see **Environments** in the navigation pane, that indicates you don't have a Power Apps plan, a Power Automate plan, or a Power Apps trial license.
+- Power Apps Environment Admin, Global admin, or Power Platform service admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
-    ![File and Share](./media/admin-manage-apps/environment.png)
-3. On the **Resources** tab, click or tap **Apps**, and then click or tap the app that you want to manage.
+## Manage Power Apps
 
-   ![File and Share](./media/admin-manage-apps/resources.png)
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-    This takes you to the app **Details** page.
+2. In the navigation pane, select **Environments**, select an environment with resources, and then select the **Power Apps** resource.
 
-    ![File and Share](./media/admin-manage-apps/app-details.png)
-4. Do any of the following:
+   > [!div class="mx-imgBorder"] 
+   > ![Select Power Apps resource](media/resources-select-power-apps.png "Select Power Apps resource")
 
-    * Click or tap the trash can icon to delete the app.
-    * View data connections, flows, and other details associated with the app.
-    * Click or tap **Share** to view or modify the users with whom the app is shared.
+3. Select an app to manage.
 
-## Next steps
-Check out other [how-to guides](signup-for-powerapps-admin.md) to learn what else you can do from the Power Apps Admin center.
+   > [!div class="mx-imgBorder"] 
+   > ![Select an app](media/resources-manage-power-apps-list.png "Select an app") 
+
+4. Select your desired action.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Share or delete app](media/resources-edit-power-app.png "Share or delete app") 
+
+
