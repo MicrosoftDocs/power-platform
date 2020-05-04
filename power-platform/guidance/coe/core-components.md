@@ -40,6 +40,7 @@ Here's a breakdown of the assets that form the core components:
 - **Environment** Represents the Environment object, which contains apps, flows, and connectors.
 - **PowerApps App** Represents an app.
 - **Flow** Represents a flow.
+- **Flow Action Detail** Represents the set of actions that occur in a flow.
 - **PowerApps Connector** Represents a standard or custom connector.
 - **Connection Reference** The linking table for the many-to-many relationships among connectors (PowerApps Connector) and flows (Flows) and/or apps (PowerApps App).
 - **Maker** Represents a user who has created an app, flow, custom connector, or environment.
@@ -82,6 +83,10 @@ Runs once daily on a schedule, and gets connector information.
 ### Admin \| Sync Template v2 (Custom Connector)
 
 Runs when an environment is created or modified, and gets custom connector information.
+
+### Admin \| Sync Template v2 (Model Driven Apps)
+
+Runs when an environment is created or modified, and gets model driven app information.
 
 ### Admin \| Sync Template v2 (Sync Flow Errors)
 
