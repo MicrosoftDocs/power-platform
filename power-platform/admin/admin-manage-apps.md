@@ -1,6 +1,6 @@
 ---
 title: Manage Power Apps | Microsoft Docs
-description: Walkthrough of how to manage Power Apps apps created in your organization
+description: How to manage Power Apps apps created in your organization
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
