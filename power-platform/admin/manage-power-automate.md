@@ -21,8 +21,10 @@ If you're an Environment Admin, Global admin, or Power Platform admin, you can m
 
 Admins can do the following from the Power Platform admin center:
 
-- Add or change the users with whom an app is shared
-- Delete apps not currently in use
+- View flow details, connections, and owners
+- Share the flow with others  
+- Disable the flow
+- Delete the flow
 
 ## Prerequisites
 
@@ -34,7 +36,7 @@ Admins can do the following from the Power Platform admin center:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. In the navigation pane, select **Environments**, select an environment with resources, and then select the **Power Automate (Flow)** resource.
+2. In the navigation pane, select **Environments**, select an environment with resources, and then select the **Power Automate (Flows)** resource.
 
    > [!div class="mx-imgBorder"] 
    > ![Select Power Automate resource](media/resources-select-power-automate.png "Select Power Automate resource")
@@ -44,13 +46,10 @@ Admins can do the following from the Power Platform admin center:
    > [!div class="mx-imgBorder"] 
    > ![Select a flow](media/resources-power-automate-flows-list.png "Select a flow") 
 
-   
-
 4. Select your desired action.
 
    > [!div class="mx-imgBorder"] 
    > ![Manage a flow](media/resources-edit-power-automate.png "Manage a flow") 
-
 
    |Action  |Description  |
    |---------|---------|
