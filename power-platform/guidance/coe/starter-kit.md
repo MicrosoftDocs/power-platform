@@ -37,6 +37,12 @@ The Power Platform CoE Starter Kit is a collection of components and tools that 
    :::column-end:::
 :::row-end:::
 
+### Quick Overview
+
+Watch a quick overview of the CoE Starter Kit
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI5]
+
 ### Related resources
 [Power Platform admin guide](/power-platform/admin/admin-documentation)<br/>
 [Power Apps docs](https://docs.microsoft.com/powerapps)<br/>
