@@ -102,6 +102,8 @@ To limit the impact on users, the maintenance window is planned according to the
 | GBR           | crm11.dynamics.com | 6 PM to 3 AM |
 | ZAF           | crm14.dynamics.com | 5 PM to 2 AM |
 | UAE           | crm15.dynamics.com| 3 PM to 12 AM |
+| GER           |                    | 6 PM TO 3 AM |
+| CHN           |                    | 3 PM to 9 PM |
 
 ### Service Update Release Schedule
 To see the Service Update release schedule for your regions see our new [Released Versions](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#latest-version-availability) page.  
