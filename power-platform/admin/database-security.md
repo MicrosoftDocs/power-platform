@@ -126,8 +126,6 @@ For more information about access and scope privileges, see Security roles.
 
 5. Select **Security roles**.
 
-    ![](./media/database-security/dyn365-securityroles.png)
-
    > [!div class="mx-imgBorder"] 
    > ![Select Security roles](./media/database-security/dyn365-securityroles.png "Select Security roles")
 
