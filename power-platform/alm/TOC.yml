@@ -1,0 +1,77 @@
+- name: Application lifecycle management (ALM)
+  items:
+  - name: Application lifecycle management (ALM)
+    href: ./index.yml
+  - name: Overview   
+    href: overview-alm.md     
+  - name: ALM basics
+    href: basics-alm.md    
+  - name: Environment strategy 
+    href: environment-strategy-alm.md
+  - name: Solutions
+    items:
+      - name: Solution concepts
+        href: solution-concepts-alm.md
+      - name: Solution layers
+        href: solution-layers-alm.md
+      - name: How managed solutions are merged
+        href: how-managed-solutions-merged.md        
+      - name: Use solutions to customize
+        href: use-solutions-for-your-customizations.md
+      - name: Managed properties
+        href: managed-properties-alm.md
+      - name: Use segmented solutions
+        href: segmented-solutions-alm.md
+      - name: Update solutions
+        href: update-solutions-alm.md
+  - name: Tools and apps used
+    href: tools-apps-used-alm.md
+  - name: Implementing healthy ALM
+    items: 
+    - name: Healthy ALM overview
+      href: implement-healthy-alm.md
+    - name: "Scenario 0: Implement for a new project"
+      href: new-project-alm.md
+    - name: "Scenario 1: Citizen developer ALM"
+      href: citizen-dev-alm.md
+    - name: "Scenario 2: Moving from a single environment"
+      href: move-from-single-env-alm.md
+    - name: "Scenario 3: Moving from unmanaged to managed solutions"
+      href: move-from-unmanaged-managed-alm.md
+    - name: "Scenario 4: Use DevOps for automation"  
+      href: use-devops-automated-alm.md
+    - name: "Scenario 5: Support team development"
+      href: team-development-alm.md
+    - name: "Scenario 6: Embrace citizen developers"
+      href: embrace-citizen-devs.md
+  - name: ALM for developers   
+    href: alm-for-developers.md
+    items:
+    - name: Use Power Apps build tools with Azure DevOps
+      href: devops-build-tools.md
+    - name: Work with solution components
+      href: 
+      items:
+        - name: Power Apps component framework
+          href: component-framework.md
+        - name: Plug-ins
+          href: plugin-component.md
+        - name: Web resources
+          href: web-resource-component.md
+    - name: Leverage solution and packaging tools
+      href: 
+      items:
+        - name: Configuration Migration and Package Deployer tools
+          href: configure-and-deploy-tools.md
+        - name: Solution Packager tool
+          href: solution-packager-tool.md
+    - name: Manage solutions using custom code
+      href: 
+      items:
+        - name: Work with solutions using PowerShell
+          href: powershell-api.md
+        - name: Online Management API (REST) to manage environments
+          href: online-management-api.md
+        - name: Work with solutions using the SDK APIs 
+          href: solution-api.md
+  
