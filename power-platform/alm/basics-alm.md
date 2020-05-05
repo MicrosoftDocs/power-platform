@@ -173,7 +173,7 @@ Automation is a key part of the application lifecycle that improves the
 productivity, reliability, quality, and efficiency of ALM. Automation tools and
 tasks are used to validate, export, pack, unpack, and export solutions in addition to creating and resetting sandbox environments. 
 
-More information: [What are Power Apps build tools?](../developer/common-data-service/build-tools-overview.md)
+More information: [What are Power Apps build tools?](/powerapps/developer/common-data-service/build-tools-overview.md)
 
 ## Team development using shared source control
 
