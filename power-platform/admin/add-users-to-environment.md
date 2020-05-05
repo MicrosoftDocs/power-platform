@@ -35,7 +35,7 @@ When an environment is created with a Common Data Service database, or when a Co
 
 - Since automatic user addition to an environment may take some time, if you'd like to add specific users to the environment sooner, you can follow these steps. 
 
-## Add users to an environment that has a Common Data Service database
+## Add users to an environment that has a Common Data Service database 
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com) select the environment to which you want to add users. 
 

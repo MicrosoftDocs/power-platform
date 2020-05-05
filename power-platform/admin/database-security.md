@@ -1,14 +1,13 @@
 ---
 title: Configure environment security | Microsoft Docs
 description: This topic explains how to configure environment security.
-author: manasmams
-ms.reviewer: jimholtz
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/04/2019
-ms.author: manasma
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
