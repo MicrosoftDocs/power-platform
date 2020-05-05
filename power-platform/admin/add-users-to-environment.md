@@ -1,5 +1,5 @@
 ---
-title: "Add users to environment | MicrosoftDocs"
+title: "Add users to an environment | MicrosoftDocs"
 description: Add users to environment 
 author: jimholtz
 manager: kvivek
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Add users to environment 
+# Add users to an environment 
 
 Environments can have zero or one Common Data Service database. The process for adding users to environments with no Common Data Service database differs from the process for environments with one Common Data Service database. For an overview of environments, see [Environments overview](environments-overview.md). 
 
