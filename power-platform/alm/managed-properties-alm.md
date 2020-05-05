@@ -25,19 +25,9 @@ search.app:
 ---
 
 # Managed properties 
-<!--I found it a bit hard to parse this first paragraph, I think because suddenly we're talking about what ISVs should do versus the in-house solution guy (who seems to have been the audience for most of these articles). Suggest rewriting it to be a bit more explicit about the two approaches, maybe something like:
-
 You can use managed properties to control which of your managed solution components can be customized. If you're creating solutions for other organizations, you should allow them to customize solution components where it makes sense for their unique requirements. However, you have to be able to predictably support and maintain your solution, so you should never allow any customization of critical components that provide the core functionality of your solution.
 
-If you're creating solutions for your own organization, we recommend that you don't allow any customization of the components in your managed solutions at all. -->
-You can control which of your managed solution components are customizable by
-using managed properties. ISVs should allow customization for solution
-components where it makes sense. This lets organizations customize your solution
-to their unique requirements. Limit or eliminate customization of critical
-solution components that provide the core functionality of your solution so that
-you can predictably support and maintain it. For most non-ISV development
-environments, we recommend that you don't allow customization for your managed
-solution components.
+If you're creating solutions for your own organization, we recommend that you don't allow any customization of the components in your managed solutions at all. 
 
 Managed properties are intended to protect your solution from modifications that
 might cause it to break. Managed properties don't provide digital rights

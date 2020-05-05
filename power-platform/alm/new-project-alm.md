@@ -27,7 +27,6 @@ search.app:
 # Scenario 0: ALM for a new project
 If you're new to Power Apps and creating your first app, follow the
 tasks described in this article to successfully deploy a functioning application to your production environment using a healthy application lifecycle management (ALM) strategy.
-<!--In steps 4 and 7, the cross-references go to sections in the devops-build-tools article that consist only of graphics. Are those sections incomplete? -->
 
 | Task  | Description       | More information   |
 |-------|-------------------|--------------------|

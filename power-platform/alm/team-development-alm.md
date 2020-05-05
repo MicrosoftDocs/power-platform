@@ -26,7 +26,7 @@ search.app:
 # Scenario 5: Supporting team development
 Supporting team development consists of multiple apps and development team members in a structured release management process. Team development includes the following: 
 
--   **Conflict and merge resolution** It's important to consider which pieces will merge well and which should only be worked on by a single developer at a time, such as forms or site maps. More information: [Understand how managed solutions are merged](how-managed-solutions-merged.md)<!-- LINK to other section outlining this --><!--Edit okay? -->
+-   **Conflict and merge resolution** It's important to consider which pieces will merge well and which should only be worked on by a single developer at a time, such as forms or site maps. More information: [Understand how managed solutions are merged](how-managed-solutions-merged.md)
 
 -   **Branching strategy** Your branching strategy should make sure that you can
     service an existing release while working on the next version.
@@ -38,7 +38,7 @@ Supporting team development consists of multiple apps and development team membe
     in which only the required unmanaged solution is installed, and all dependent
     solutions are installed as managed.
 
--   **Power Apps component library** Components are reusable building blocks for canvas apps so that app makers can create custom controls to use inside an app, or across apps using the component library. More information: [Component library](../maker/canvas-apps/component-library.md) <!-- Vivek to reach out to Mike Stall for team dev on Canvas apps -->
+-   **Power Apps component library** Components are reusable building blocks for canvas apps so that app makers can create custom controls to use inside an app, or across apps using the component library. More information: [Component library](../maker/canvas-apps/component-library.md) 
 
 ### See also
 [Scenario 6: Embrace your citizen developers in the ALM process](embrace-citizen-devs.md)

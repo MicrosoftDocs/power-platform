@@ -24,7 +24,7 @@ search.app:
   - D365CE
 ---
 
-# Overview of application lifecycle management with Power Apps
+# Overview of application lifecycle management with Microsoft Power Platform
 The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, and Common Data Service. 
 
 ## What is ALM? 
@@ -37,13 +37,12 @@ to achieve the goal of driving efficiency through predictable and repeatable
 software delivery.
 
 ## Key areas of ALM
-<!--Several topics have lists like these that use run-in headings. Rather than periods or colons (both are used in these articles), I personally like to format these in bold, followed by a space and no punctuation. I think it's good to distinguish them this way as a label (a mini-heading) for the text that follows. I did this in basics-alm.md, segmented-solutions-alm.md, solution-concepts-alm.md, solution-layers-alm.md, and team-development-alm.md.-->
 1.  **Governance**  includes requirements management, resource management, data
     security, user access, change tracking, review, audit, deployment control,
     and rollback.
 
 2.  **Application development**  includes identifying current problems, and
-    planning, design, building, and testing the application.<!--General note: I didn't make a pass through these articles to change "application" to "app" because deciding which to use got a little tangled. I figured that for this docset, it's okay to use "application" more often than not.--> This area includes
+    planning, design, building, and testing the application. This area includes
     traditional developer and app maker roles.
 
 3.  **Maintenance** includes deployment of the app and maintenance of optional and
@@ -55,10 +54,9 @@ The *application lifecycle* is the cyclical software development process that in
 
 ## ALM for Power Apps, Power Automate, and Common Data Service
 
-Common Data Service in Microsoft Power Platform<!--note from editor: Guidance has changed for Power Platform. Now it's always "Microsoft Power Platform," no "the." Apparently "the Power Platform admin center" is still okay though.--> lets you securely store and manage data
-that's used by business applications. To use the features and tools available
-for ALM, all environments that participate in ALM must include a Common Data
-Service database.<!--The transition to the list below is sort of abrupt. Can there be a sentence here like "The following concepts are important for understanding ALM." (but better?) -->
+Common Data Service in Microsoft Power Platform lets you securely store and manage data that's used by business applications. To use the features and tools available for ALM, all environments that participate in ALM must include a Common Data Service database.
+
+The following concepts are important for understanding ALM using the Microsoft Power Platform.
 
 -   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents something that you can potentially customize. Anything that can be included in a solution is a component, such as site maps, apps, entities, fields, charts, or plug-ins. 
 
@@ -69,7 +67,7 @@ Service database.<!--The transition to the list below is sort of abrupt. Can the
 <!-- Power BI is not part of this ALM story. For more information about Power
 BI ALM, see \<add a link to Power BI docs\ --> 
 
-For more information about how ALM and Azure DevOps technologies&mdash;combined with people and processes&mdash;enable teams to continually provide value to customers, see [DevOps tools on Azure](https://azure.microsoft.com/solutions/devops/).<!--General editor's note: When a link to more information occurs at the end of a paragraph and doesn't have any further explanation, I've made them all look like the token we used to use (that is, "More information: LINK" with no ending punctuation).-->
+For more information about how ALM and Azure DevOps technologies&mdash;combined with people and processes&mdash;enable teams to continually provide value to customers, see [DevOps tools on Azure](https://azure.microsoft.com/solutions/devops/).
 
 ### See also
 [Application lifecycle management with Power Apps basics](basics-alm.md)<br/>
