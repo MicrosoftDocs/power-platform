@@ -27,7 +27,7 @@ search.app:
 # Use a solution to customize
 We recommend that you create a solution to manage your customizations. By using a custom solution, you can easily find just the solution components you've customized, consistently apply your solution publisher prefix, and export your solution for distribution to other environments.  
 
-If you don't use a custom solution, you'll be working in one of these default solutions<!--Edit okay? I wanted to introduce the list a bit more explicitly. --> in the unmanaged layer:  
+If you don't use a custom solution, you'll be working in one of these default solutions in the unmanaged layer:  
 - Common Data Service Default Solution. This solution is available for makers to use by default for their customizations in an environment. The Common Data Service Default Solution is useful when you want to evaluate or learn Power Apps. However, we recommend that app makers work in their own unmanaged solutions. More information: [Common Data Service Default Solution](#common-data-service-default-solution) 
 - Default solution. This is a special solution that contains all components in the system. The default solution is useful for discovering all the components and configurations in your system.  
 
@@ -36,7 +36,7 @@ There are a few reasons why you shouldn't create apps and make customizations in
 - The default solution contains all components and customizations from all solutions in the environment. 
 - By default, all enabled users can create apps and customize components in the Common Data Services Default Solution. 
 - It's difficult to locate or identify the customizations you've made in the environment by using either default solution. 
-- When you use either default solution to create components, they'll also use the default publisher assigned to the solution<!--Edit okay? I got a bit lost following this.-->. This might result in the wrong publisher prefix being applied to some components. 
+- When you use either default solution to create components, you'll also use the default publisher assigned to the solution. This often results in the wrong publisher prefix being applied to some components. 
 - The default solution can't be exported; therefore, you can't distribute the default solution to another environment. 
 
 ## Common Data Service Default Solution
