@@ -1,5 +1,5 @@
 ---
-title: "Work with solutions using the APIs | Microsoft Docs"
+title: "Work with solutions using the SDK APIs | Microsoft Docs"
 description: "Learn about the APIs that are available to manage Common Data Service solutions."
 keywords: 
 author: phecke
@@ -24,7 +24,7 @@ search.app:
   - D365CE
 ---
 
-# Work with solutions using the APIs
+# Work with solutions using the SDK APIs
 
 As part of your development to production lifecycle you may want to create
 custom automation to handle certain tasks. For example, in your DevOps project
@@ -41,11 +41,11 @@ of what you can accomplish using the .NET SDK APIs, the SOAP 2011 endpoint, and 
 
 Let's see how to perform some common solution operations by using C# code. To
 view the complete working C# code sample that demonstrates these types of
-solution operations (and more), see [Sample: Work with solutions](../developer/common-data-service/org-service/samples/work-solutions.md).
+solution operations (and more), see [Sample: Work with solutions](/powerapps/developer/common-data-service/org-service/samples/work-solutions.md).
 
 ### Create a publisher
 
-Every solution requires a publisher, represented by the [Publisher entity](../developer/common-data-service/reference/entities/publisher.md). A publisher requires the following:
+Every solution requires a publisher, represented by the [Publisher entity](/powerapps/developer/common-data-service/reference/entities/publisher.md). A publisher requires the following:
 
 - A customization prefix
 - A unique name
@@ -124,7 +124,7 @@ contains.
 | Name               | Common Data Service generates a unique name based on the **Display Name**. You can edit the unique name. The unique name must only contain alphanumeric characters or the underscore character.   |
 | Publisher          | Use the **Publisher** lookup to associate the solution with a publisher.      |
 | Version            | Specify a version by using the following format: *major.minor.build.revision* (for example, 1.0.0.0.    |
-| Configuration Page | If you include an HTML Web resource in your solution, you can use this lookup to add it as your designated configuration page. More information: [Use the Solution Configuration Page](../developer/common-data-service/create-export-import-unmanaged-solution.md#BKMK_UseSolutionConfigurationPage)    |
+| Configuration Page | If you include an HTML Web resource in your solution, you can use this lookup to add it as your designated configuration page. More information: [Use the Solution Configuration Page](/powerapps/developer/common-data-service/create-export-import-unmanaged-solution.md#BKMK_UseSolutionConfigurationPage)    |
 | Description        | Use this field to include any relevant details about your solution.     |
 
 Below is sample code to create an unmanaged solution that uses the publisher we
@@ -172,8 +172,8 @@ if (SampleSolutionResults == null)
 
 After you create an unmanaged solution, you can add solution components by
 creating them in the context of this solution or by adding existing components
-from other solutions. More information: [Add a new solution component](../developer/common-data-service/work-solutions.md#add-a-new-solution-component)
-and [Add an existing solution component](../developer/common-data-service/work-solutions.md#add-an-existing-solution-component)
+from other solutions. More information: [Add a new solution component](/powerapps/developer/common-data-service/work-solutions.md#add-a-new-solution-component)
+and [Add an existing solution component](/powerapps/developer/common-data-service/work-solutions.md#add-an-existing-solution-component)
 
 ### Export an unmanaged solution
 
@@ -293,17 +293,4 @@ You can perform other solution operations by using these
 APIs: [StageAndUpgradeRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.stageandupgraderequest),
 [CloneAsPatchRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.cloneaspatchrequest),
 and [CloneAsSolutionRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.cloneassolutionrequest).
-For information about cloning and patching, see [Create solution patches](../maker/common-data-service/solution-patches.md). For information about staging and upgrades, see [Solution lifecycle](solution-concepts-alm.md#solution-lifecycle).
-
-<!--
-### See also
-
-[ALM for developers](alm-for-developers.md)  
-[Use Power Apps build tools with Azure DevOps](devops-build-tools.md)  
-[Power Apps component framework](component-framework.md)  
-[Plug-ins](plugin-component.md)  
-[Web resources](web-resource-component.md)  
-[Configuration Migration and Package Deployer tools](configure-and-deploy-tools.md)  
-[Solution Packager tool](solution-packager-tool.md)  
-[Online Management API (REST) to manage environments](online-management-api.md)
--->
+For information about cloning and patching, see [Create solution patches](/powerapps/maker/common-data-service/solution-patches.md). For information about staging and upgrades, see [Solution lifecycle](solution-concepts-alm.md#solution-lifecycle).

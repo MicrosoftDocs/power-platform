@@ -36,7 +36,7 @@ data, use that data in source control, and use that data to automate testing. Do
 just rely on an environment for isolation: use source control instead.
 
 Test data is data that's necessary to run your tests (that is, sample data).
-Configuration capture can't be automated.<!--What's the significance of this statement?-->
+Configuration capture can't be automated.
 
 > [!TIP]
 > You can also automate running the Configuration Migration tool with PowerShell by using the
@@ -55,23 +55,10 @@ code together in a single file for deployment to other environments.
 Common Data Service provides you with a Visual Studio template for creating
 these packages, which you can use with the Package Deployer tool to deploy the
 packages to a Common Data Service instance. For information about creating a
-package, see [Create packages for the Package Deployer](../developer/common-data-service/package-deployer/create-packages-package-deployer.md).
+package, see [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer.md).
 Next, follow the instructions to
-[deploy](../developer/common-data-service/package-deployer/create-packages-package-deployer.md#deploy-a-package) the package.
+[deploy](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer.md#deploy-a-package) the package.
 
 ### See also
 
 [Solution Packager tool](solution-packager-tool.md)
-
-<!--
-### See also
-
-[ALM for developers](alm-for-developers.md)  
-[Use Power Apps build tools with Azure DevOps](devops-build-tools.md)  
-[Power Apps component framework](component-framework.md)  
-[Plug-ins](plugin-component.md)  
-[Web resources](web-resource-component.md)  
-[Solution Packager tool](solution-packager-tool.md)  
-[Online Management API (REST) to manage environments](online-management-api.md)  
-[Work with solutions using the APIs](solution-api.md)  
--->

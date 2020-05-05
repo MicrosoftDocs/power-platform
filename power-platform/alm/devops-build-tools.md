@@ -27,7 +27,7 @@ search.app:
 # Power Apps build tools for Azure DevOps
 
 Use Power Apps build tools to automate common build and deployment tasks related
-to Power Apps. This includes synchronization of solution metadata (also known as<!--I don't see how "a.k.a." makes sense here; do people actually call solutions "solution metadata"? And if so, what kind of people are they?? Would it be accurate just to say "...solution metadata (or solutions) between development environments..."?-->
+to Power Apps. This includes synchronization of solution metadata (also known as
 solutions) between development environments and source control, generating build
 artifacts, deploying to downstream environments, provisioning or de-provisioning
 environments, and the ability to perform static analysis checks against your
@@ -49,19 +49,19 @@ downstream environment, or used together in a pipeline to orchestrate a
 scenario such as "generate a build artifact," "deploy to test," or "harvest maker
 changes." The build tasks can largely be categorized into four types:
 
--   Helper
+- Helper
 
--   Quality check
+- Quality check
 
--   Solution
+- Solution
 
--   Environment management
+- Environment management
 
 ## Get the Power Apps build tools
 
 The Power Apps build tools can be installed into your Azure DevOps organization
 from [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools).
-After<!--via Style Guide.--> they're installed, all tasks included in the Power Apps build tools will be
+After they're installed, all tasks included in the Power Apps build tools will be
 available to add into any new or existing pipeline. You can find them by
 searching for **powerapps**.
 
@@ -86,10 +86,10 @@ you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| Power Apps checker service                         | Select the service endpoint for the Power Apps checker. The service endpoint is defined under **Service Connections** in **Project Settings**.<!--Edit assumes these are UI strings, but if they're just generic references, please remove the bold and make them lowercase. --><br>**Note**: The service connection type that must be used for this specific task only is **Power Apps Checker**, which is a service principals connection. You need to [configure service principals before you can use the task](https://aka.ms/buildtoolsconnection).<!--Suggested, to avoid a "blind" link.--> |
-| Location of file to analyze       | Specify whether to reference a local file or a reference file from a shared access signature<!--edit okay?--> (SAS) URL.   |
+| Power Apps checker service                         | Select the service endpoint for the Power Apps checker. The service endpoint is defined under **Service Connections** in **Project Settings**.<p/>**Note**: The service connection type that must be used for this specific task only is **Power Apps Checker**, which is a service principals connection. You need to [configure service principals before you can use the task](https://aka.ms/buildtoolsconnection). |
+| Location of file to analyze       | Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.   |
 | Local files to analyze/SAS URI for the file to analyze | Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\*.zip for all zip files in all subfolders. You can choose to specify the files directly or reference a file by using an SAS URI.     |
-| Rule set                          | Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps<!--edit okay?--> maker portal.</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to AppSource.</li></ul>    |
+| Rule set                          | Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps maker portal.</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to AppSource.</li></ul>    |
 
 More information about how to configure the quality check service connection:
 [Configure service connection for Power Apps checker](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-tasks#configure-service-connection-for-power-apps-checker)
@@ -146,7 +146,7 @@ managed by a source control system.
 |---------------|-------------------|
 | Solution input file              | The path and file name of the solution.zip file to unpack.     |
 | Target folder to unpack solution | The path and target folder you want to unpack the solution into.      |
-| Type of solution                 | The type of solution you want to unpack. **Unmanaged** is recommended: You should only unpack an unmanaged solution to your repo<!--Edit okay? Not sure that it's a good idea to include all options?--> |
+| Type of solution                 | The type of solution you want to unpack. **Unmanaged** is recommended: You should only unpack an unmanaged solution to your repo. |
 
 #### Power Apps set solution version
 
@@ -194,7 +194,7 @@ The create environment task creates an environment.
 | Deployment Region | The region that the environment should be deployed into.         |
 | Instance Type     | The type of instance to deploy. Options are **Sandbox** or **Production**.      |
 | Base Language     | The base language in the environment.      |
-| Domain Name       | This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be powerappsbuildtasks. <br>**Note**: If you enter a domain name that's already in use, the task appends a numeric value to the domain name<!--edit okay? -->, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
+| Domain Name       | This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be powerappsbuildtasks. <p/>**Note**: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
 | Friendly name     | The friendly name of the environment.     |
 
 #### Power Apps delete environment
@@ -222,7 +222,7 @@ solution metadata (customizations), whereas *minimal* only copies solution
 metadata, not the actual data.
 
 > [!NOTE]
-> This task is only available for Dynamics 365 Customer Engagement (on-premises)<!--Edit okay? The way I read the Dynamics Style Guide, we can't really have a naked reference to CE like this. Please see https://styleguides.azurewebsites.net/StyleGuide/Read?id=2858&topicid=44518 -->
+> This task is only available for Dynamics 365 Customer Engagement (on-premises)
 > environments.
 
 | Parameters     | Description     |
@@ -243,8 +243,6 @@ authoring using the Power Apps build tools, complete the [Power Apps build tools
 which you can download from GitHub.
 
 More information about Azure DevOps pipelines: [Use Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops)
-
-<!--Not sure about the following edits. These sections are incomplete, yes? If the reader is supposed to deduce something from the graphics, can you add alt text that describes what's happening here?-->
 
 <a name="build-pipeline-export-solution-from-development"></a>
 
@@ -273,16 +271,3 @@ The following figure shows the build tool tasks that you might add to a pipeline
 ### See also
 
 [Power Apps component framework](component-framework.md)
-
-<!--
-### See also
-
-[ALM for developers](alm-for-developers.md)  
-[Power Apps component framework](component-framework.md)  
-[Plug-ins](plugin-component.md)  
-[Web resources](web-resource-component.md)  
-[Configuration Migration and Package Deployer tools](configure-and-deploy-tools.md)  
-[Solution Packager tool](solution-packager-tool.md)  
-[Online Management API (REST) to manage environments](online-management-api.md)  
-[Work with solutions using the APIs](solution-api.md)  
--->

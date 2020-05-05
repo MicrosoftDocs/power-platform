@@ -34,8 +34,8 @@ development and deployment sequence.
     [unmanaged](solution-concepts-alm.md#managed-and-unmanaged-solutions) solution in your DEV environment.
 
 2.  Write one or more
-    [plug-ins](../developer/common-data-service/tutorial-write-plug-in.md)
-    or [custom workflow activities](../developer/common-data-service/workflow/tutorial-create-workflow-extension.md).
+    [plug-ins](/powerapps/developer/common-data-service/tutorial-write-plug-in.md)
+    or [custom workflow activities](/powerapps/developer/common-data-service/workflow/tutorial-create-workflow-extension.md).
 
 3.  [Register](#bkmk_register) the plug-ins or custom workflow activities in the unmanaged solution you created in step 1.
 
@@ -53,7 +53,7 @@ When planning your solution design, consider whether you'll place your custom
 code and other customizations (customized entities, forms,
 views, and so on) in the same solution or you'll divide these customizations among multiple
 solutions, where one solution contains the custom code and another solution contains
-the other customizations (customized entities, forms, views, and so on).<!--Suggested, to untangle the sentence a little. -->
+the other customizations (customized entities, forms, views, and so on).
 
 > [!TIP]
 > Start with a custom publisher and unmanaged solution, and then
@@ -73,13 +73,13 @@ solution and begin testing it.
 
 To distribute a custom workflow activity in a solution, you must add the
 registered assembly that contains it to an unmanaged solution.
-First, [register](../developer/common-data-service/workflow/tutorial-create-workflow-extension.md#register-your-assembly)
+First, [register](/powerapps/developer/common-data-service/workflow/tutorial-create-workflow-extension.md#register-your-assembly)
 the custom workflow assembly, and then add the assembly to a solution by
 following these steps.
 
 1.  Create a new solution in the Power Apps [maker portal](https://make.powerapps.com), or use an existing solution. To create a new solution, select **Solutions** > **New solution**, and then enter the required information for your solution.
 
-2.  With **Solutions** selected in the left navigation pane<!--Is it a panel or a "pane"? -->, select the solution name in the list, and then select **Add existing** \> **Other** \> **Plugin assembly**.
+2.  With **Solutions** selected in the left navigation pane, select the solution name in the list, and then select **Add existing** \> **Other** \> **Plugin assembly**.
 
 3.  Search for the compiled custom workflow assembly by name.
 
@@ -91,7 +91,7 @@ The procedure to register a plug-in is similar to registering a custom workflow
 activity assembly, except you must also register one or more *steps* which
 identify the conditions under which the plug-in should be executed by Common Data Service.
 
-To begin, follow these instructions to [register a plug-in and step](../developer/common-data-service/register-plug-in.md) by using the Plug-in Registration tool. Next, we'll create a solution and then add the plug-in assembly and step to the solution by using the modern maker interface<!--What is this? Is the reader going to understand it, and is it important that it be said? -->. The example "Followup" plug-in and step registration we'll use is shown in the following illustration.
+To begin, follow these instructions to [register a plug-in and step](/powerapps/developer/common-data-service/register-plug-in.md) by using the Plug-in Registration tool. Next, we'll create a solution and then add the plug-in assembly and step to the solution by using the modern maker interface. The example "Followup" plug-in and step registration we'll use is shown in the following illustration.
 
   ![Registered plug-in and step](media/plugin-registration-summary.PNG "Registered plug-in and step")
 
@@ -110,7 +110,7 @@ Let's get started adding those components to our solution.
 5. Add a step to the solution by selecting **Add existing** \> **Other** \> **Sdk message**.
 
     > [!TIP]
-    > In the Plug-in Registration tool, a step is called a **step**. In the classic interface **Solution Explorer**, a step is called an **Sdk message processing step**. In the modern maker interface, a step is called an **Sdk message**.<!--Again, is this important for the reader to know? It seems kind of extra.-->
+    > In the Plug-in Registration tool, a step is called a **step**. In the classic interface **Solution Explorer**, a step is called an **Sdk message processing step**. In the modern maker interface, a step is called an **Sdk message**.
 
 6. Search for the registered step, select it, and then select **Add**.
 
@@ -128,16 +128,3 @@ remove any steps that depend on it. You must remove those steps individually.
 ### See also
 
 [Web resources](web-resource-component.md)
-
-<!--
-### See also
-
-[ALM for developers](alm-for-developers.md)  
-[Use Power Apps build tools with Azure DevOps](devops-build-tools.md)  
-[Power Apps component framework](component-framework.md)  
-[Web resources](web-resource-component.md)  
-[Configuration Migration and Package Deployer tools](configure-and-deploy-tools.md)  
-[Solution Packager tool](solution-packager-tool.md)  
-[Online Management API (REST) to manage environments](online-management-api.md)  
-[Work with solutions using the APIs](solution-api.md)  
--->

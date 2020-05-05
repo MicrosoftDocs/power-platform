@@ -40,21 +40,8 @@ To manually add a web resource to a solution, follow these steps.
 You can also add web resources to a solution by using code. Use the
 `SolutionUniqueName` optional parameter to associate a web resource with a
 specific solution when the web resource is created. This is demonstrated in this
-sample: [Import files as web resources](../developer/model-driven-apps/sample-import-files-web-resources.md).
+sample: [Import files as web resources](/powerapps/developer/model-driven-apps/sample-import-files-web-resources.md).
 
 ### See also
 
 [Configuration Migration and Package Deployer tools](configure-and-deploy-tools.md)
-
-<!--
-### See also
-
-[ALM for developers](alm-for-developers.md)  
-[Use Power Apps build tools with Azure DevOps](devops-build-tools.md)  
-[Power Apps component framework](component-framework.md)  
-[Plug-ins](plugin-component.md)  
-[Configuration Migration and Package Deployer tools](configure-and-deploy-tools.md)  
-[Solution Packager tool](solution-packager-tool.md)  
-[Online Management API (REST) to manage environments](online-management-api.md)  
-[Work with solutions using the APIs](solution-api.md)  
--->

@@ -25,7 +25,7 @@ search.app:
 ---
 
 # Power Apps component framework
-<!--Via Cloud Style Guide: lowercase "component framework," no abbreviation or acronym, subsequent mentions "the framework." -->
+
 To be accessible by Power Apps makers, components in the Power Apps component framework must be packaged in a
 solution, exported, and then imported into a Power Apps environment with Common
 Data Service. The following sections describe how to do this.
@@ -93,7 +93,7 @@ To create and import a solution file:
 
 6.  You can use the [Power Apps build tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools)
     to automate importing the solution into a Common Data Service environment;
-    otherwise, you can manually [import the solution into Common Data Service](../maker/common-data-service/import-update-export-solutions.md) by using
+    otherwise, you can manually [import the solution into Common Data Service](/powerapps/maker/common-data-service/import-update-export-solutions.md) by using
     the web portal.
 
 ## Additional tasks that you can do with the framework and solutions
@@ -101,25 +101,12 @@ To create and import a solution file:
 Below are links to additional common tasks that you can do when working with
 the framework and solutions.
 
--   [Create a solution project based on an existing solution in Common Data Service](../developer/component-framework/import-custom-controls.md#create-a-solution-project-based-on-an-existing-solution-in-common-data-service)
+- [Create a solution project based on an existing solution in Common Data Service](/powerapps/developer/component-framework/import-custom-controls.md#create-a-solution-project-based-on-an-existing-solution-in-common-data-service)
 
--   [Create a plug-in project and add a reference to it in your solution](../developer/component-framework/import-custom-controls.md#create-a-plug-in-project-and-add-a-reference-to-it-in-your-solution)
+- [Create a plug-in project and add a reference to it in your solution](/powerapps/developer/component-framework/import-custom-controls.md#create-a-plug-in-project-and-add-a-reference-to-it-in-your-solution)
 
--   [Remove components from a solution](../developer/component-framework/import-custom-controls.md#remove-components-from-a-solution)
+- [Remove components from a solution](/powerapps/developer/component-framework/import-custom-controls.md#remove-components-from-a-solution)
 
 ### See also
 
 [Plug-ins](plugin-component.md)
-
-<!--
-### See also
-
-[ALM for developers](alm-for-developers.md)  
-[Use Power Apps build tools with Azure DevOps](devops-build-tools.md)  
-[Plug-ins](plugin-component.md)  
-[Web resources](web-resource-component.md)  
-[Configuration Migration and Package Deployer tools](configure-and-deploy-tools.md)  
-[Solution Packager tool](solution-packager-tool.md)  
-[Online Management API (REST) to manage environments](online-management-api.md)  
-[Work with solutions using the APIs](solution-api.md)  
--->
