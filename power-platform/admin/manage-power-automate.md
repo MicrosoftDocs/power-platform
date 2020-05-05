@@ -32,7 +32,7 @@ Admins can do the following from the Power Platform admin center:
 
 - Power Apps Environment Admin, Global admin, or Power Platform service admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
-## Manage Power Apps
+## Manage Power Automate flows
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
