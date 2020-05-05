@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/01/2020
+ms.date: 05/05/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -28,9 +28,8 @@ You can manage apps from either the tenant level or the environment level.
 See the following topics:
 
 - [Manage Dynamics 365 apps](manage-apps.md)
-
-<!-- 
 - [Manage Power Apps](admin-manage-apps.md)
 - [About Microsoft Power Automate](wp-about-flows.md)
+<!-- 
 - [Portal administration with Power Platform admin center](https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center) 
 -->
