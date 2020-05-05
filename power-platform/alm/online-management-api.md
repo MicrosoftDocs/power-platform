@@ -33,13 +33,13 @@ The Online Management API is a REST API that lets you create and manage Common D
 
 Using the Online Management API, you can perform various tasks on your environment such as create, retrieve, delete, backup and restore environments, and other environment-related tasks. More information:
 
-* [Online Management API for Common Data Service](/powerapps/developer/common-data-service/online-management-api/overview.md)
+* [Online Management API for Common Data Service](/powerapps/developer/common-data-service/online-management-api/overview)
 
-* [Operations supported by Online Management API](/powerapps/developer/common-data-service/online-management-api/operations-supported.md)
+* [Operations supported by Online Management API](/powerapps/developer/common-data-service/online-management-api/operations-supported)
 
-* [Authenticate to use the Online Management API](/powerapps/developer/common-data-service/online-management-api/authentication.md)
+* [Authenticate to use the Online Management API](/powerapps/developer/common-data-service/online-management-api/authentication)
 
-* [Sample: Retrieve Common Data Service environments using Online Management API](/powerapps/developer/common-data-service/online-management-api/sample-quick-start.md)
+* [Sample: Retrieve Common Data Service environments using Online Management API](/powerapps/developer/common-data-service/online-management-api/sample-quick-start)
 
 ### See also
 

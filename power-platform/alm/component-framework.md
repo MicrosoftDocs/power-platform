@@ -101,11 +101,11 @@ To create and import a solution file:
 Below are links to additional common tasks that you can do when working with
 the framework and solutions.
 
-- [Create a solution project based on an existing solution in Common Data Service](/powerapps/developer/component-framework/import-custom-controls.md#create-a-solution-project-based-on-an-existing-solution-in-common-data-service)
+- [Create a solution project based on an existing solution in Common Data Service](/powerapps/developer/component-framework/import-custom-controls#create-a-solution-project-based-on-an-existing-solution-in-common-data-service)
 
-- [Create a plug-in project and add a reference to it in your solution](/powerapps/developer/component-framework/import-custom-controls.md#create-a-plug-in-project-and-add-a-reference-to-it-in-your-solution)
+- [Create a plug-in project and add a reference to it in your solution](/powerapps/developer/component-framework/import-custom-controls#create-a-plug-in-project-and-add-a-reference-to-it-in-your-solution)
 
-- [Remove components from a solution](/powerapps/developer/component-framework/import-custom-controls.md#remove-components-from-a-solution)
+- [Remove components from a solution](/powerapps/developer/component-framework/import-custom-controls#remove-components-from-a-solution)
 
 ### See also
 

@@ -55,9 +55,9 @@ code together in a single file for deployment to other environments.
 Common Data Service provides you with a Visual Studio template for creating
 these packages, which you can use with the Package Deployer tool to deploy the
 packages to a Common Data Service instance. For information about creating a
-package, see [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer.md).
+package, see [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer).
 Next, follow the instructions to
-[deploy](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer.md#deploy-a-package) the package.
+[deploy](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer#deploy-a-package) the package.
 
 ### See also
 
