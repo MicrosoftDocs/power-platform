@@ -55,11 +55,9 @@ Environments have two built-in roles that provide access to permissions within a
 
 Environment Makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or to all users in the organization. For more information, see [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app).
 
-Users or groups assigned to these environment roles are not automatically given access to the environment's database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).
+Users or groups assigned to these environment roles are not automatically given access to the environment's database (if it exists) and must be given access separately.
 
-Users or security groups can be assigned to either of these two roles by an Environment Admin from the [Power Platform admin center](https://admin.powerplatform.microsoft.com) or [Power Apps Admin center](https://admin.powerapps.com). For more information, see [Administer environments in Power Apps](environments-administration.md).
-
-![](./media/environments-overview/EnvironmentRoles.png)
+Users or security groups can be assigned to either of these two roles by an Environment Admin by following the steps described in [Configure user security to resources in an environment](database-security.md). 
 
 ## Types of environments
 

@@ -49,21 +49,24 @@ A user who already has the Environment Admin role in the environment can take th
 > [!NOTE]
 > Roles can be assigned to [Owner](manage-teams.md#create-an-owner-team) and [Azure AD Group](manage-teams.md#create-a-group-team) teams, in addition to individual users. 
 
-1. Select the environment in environments table. 
+1. In [Power Apps Admin center](https://admin.powerapps.com/) select the environment for which you want to update a security role.
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![Choose an environment](media/choose-environment-updated.png "Choose an environment")
 
-2. Select Security tab. 
+2. Select the **Security** tab. 
 
-3. Select either the Environment Admin or Environment Maker role. 
+3. Select either the **Environment Admin** or **Environment Maker** role. 
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![Choose a role](media/select-environment-role-powerapps.png "Choose a role")
 
 4. Specify the names of one or more users or security groups from Azure Active Directory or specify that you want to add your entire organization.
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![Enter user info](media/enter-user-names-powerapps.png "Enter user info")
 
-5. Select Save to update the assignments to the environment role.
+5. Select **Save** to update the assignments to the environment role.
 
 ## Assign security role to users in an environment that has a Common Data Service database 
 
@@ -73,23 +76,26 @@ In general, security role can only be assigned to users in Enabled state. But if
 
 To add a security role to a user who is already present in an environment: 
 
-1. Visit Power Platform admin center 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Go to Environments > [select an environment] > Settings > Users + permissions > Users. 
+2. Select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Users**. 
 
-3. Select Manage users in Dynamics 365 
+3. Select **Manage users in Dynamics 365**.
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![Select Manage users in Dynamics 365](media/manage-users-dynamics-365.png "Select Manage users in Dynamics 365")
 
-4. Select the user from the list of users in the environment. 
+4. Select the user from the list of users in the environment, and then select **Manage roles**.
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![Select Manage roles](media/select-manage-roles.png "Select Manage roles")
 
 5. Assign one or more security roles to the user. 
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![Manage user roles](media/select-manage-roles.png "Manage user roles")
 
-6. Select OK to apply the changes you made. 
+6. Select **OK** to apply the changes you made. 
 
 ## Create or configure a custom security role 
 
@@ -104,23 +110,26 @@ If your app uses a custom entity, its privileges must be explicitly granted in a
 
 For more information about access and scope privileges, see Security roles. 
 
-1. From Power Platform admin center select the environment where you want to update a security role. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select the environment for which you want to update a security role. 
 
-image
+2. Select the environment’s URL. 
 
-2. Click on the environment’s URL 
+   > [!div class="mx-imgBorder"] 
+   > ![Select environment URL](media/select-environment-url.png "Select environment URL")
 
-image
-
-3. If you see published apps and tiles, look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
+3. If you see published apps and tiles, select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner, and then select **Advanced settings**. 
 
 4. In the menu bar, select **Settings** > **Security**. 
 
-    ![](./media/database-security/dyn365-settings-security.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Select Settings > Security](./media/database-security/dyn365-settings-security.png "Select Settings > Security")
 
 5. Select **Security roles**.
 
     ![](./media/database-security/dyn365-securityroles.png)
+
+   > [!div class="mx-imgBorder"] 
+   > ![Select Security roles](./media/database-security/dyn365-securityroles.png "Select Security roles")
 
 6. Select **New**.
 
@@ -143,53 +152,4 @@ When you import the solution, it creates the **min prv apps use** role which you
 
 > [!IMPORTANT]
 > You should try out the solution in a development environment before importing into a production environment. 
-
-
-
-
-
-
-
-
-
-
-
-> [!TIP]
-> If you want to create a custom security role with the minimum required privileges to run an app, check out the section below: [Minimum privileges to run app](#minimum-privileges-to-run-app).
-
-The environment might maintain the records which can be used by multiple apps, you might need multiple security roles to access the data with different privileges. e.g.
-- Some of the users (Type A) might only need to read, update, and attach other records so their security role will have read, write, and append privileges.
-- Other users might need all the privileges that users of Type A has, plus the ability to create, append to, delete, and share, so their security role will have create, read, write, append, delete, assign, append to, and share privileges.
-
-For more information about access and scope privileges, see [Security roles](security-roles-privileges.md#security-roles).
-
-1. In [Power Apps Admin center][1] select the environment where you want to update a security role.
-
-    ![](./media/environment-admin/choose-environment-updated.png)
-
-2. Click on the **Dynamics 365 Administration Center** link in the **Details** tab to manage the environment in the Dynamics 365 admin center.
-
-3. Select the environment (with the same name of environment) and select **Open**.
-
-    ![](./media/database-security/glados-instance-list.png)
-
-4. If you see published apps and tiles, look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
-
-5. In the menu bar, select **Settings** > **Security**. 
-
-    ![](./media/database-security/dyn365-settings-security.png)
-
-6. Select **Security roles**.
-
-    ![](./media/database-security/dyn365-securityroles.png)
-
-7. Select **New**.
-
-8. From the security role designer, enter a role name in the **Details** tab. From the other tabs, you'll select the actions and the scope for performing that action.
-
-9. Select a tab and search for your entity; for example - **Custom Entities** tab, for setting permissions on a custom entity.
-
-10. Select the privileges **Read, Write, Append**.
-
-11. Select **Save and Close**.
 
