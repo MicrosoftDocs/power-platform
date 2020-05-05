@@ -30,11 +30,11 @@ This article describes the components, tools, and processes needed to implement 
 ## Environments
 Environments are a space to store, manage, and share your organization's
 business data, apps, and business processes. They also serve as containers to
-separate apps that might<!--Style Guide.--> have different roles, security requirements, or target
+separate apps that might have different roles, security requirements, or target
 audiences. Each environment can have only one Common Data Service database.
 
 > [!IMPORTANT]
-> When you create an environment, you can choose to install Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Marketing. If you aren't building on these apps, we recommend that you not install them in your environments. This will help<!--Suggested.--> avoid dependency complications when you distribute solutions between environments.  
+> When you create an environment, you can choose to install Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Marketing. If you aren't building on these apps, we recommend that you not install them in your environments. This will help avoid dependency complications when you distribute solutions between environments.  
 
 ### Types of environments used in ALM
 
@@ -88,7 +88,7 @@ the Azure Active Directory (Azure AD) tenant and is named: "{Azure AD tenant nam
 
 > [!WARNING]
 > By default, every user in your tenant can create and edit apps in
-> a Common Data Service default environment that has a database<!--Edit okay? I take it that a default environment might NOT have a database, so "a" seemed better than "the" here.-->. We strongly
+> a Common Data Service default environment that has a database. We strongly
 > recommend that you create environments for a specific purpose, and grant the
 > appropriate roles and privileges only to those people who need them.
 
@@ -161,7 +161,7 @@ branching, release branching, and feature branching. More information: [Adopt a 
 
 There are two main paths you can use when working with solutions in a source control system: 
 - Export the unmanaged solution and place it as unpacked in the source control system. The build process imports the packed solution as unmanaged into a temporary build environment (sandbox environment). Then, export the solution as managed and store it as a build artifact in your source control system. 
-- Export the solution as unmanaged and also export the solution as managed, and place both in the source control system. Although this method doesn't require a build environment, it does require maintaining two copies of all components (one copy of all unmanaged components from the unmanaged solution and one copy of all managed components from the managed solution).<!--note from editor: I added placeholder alt text; please make it better.-->
+- Export the solution as unmanaged and also export the solution as managed, and place both in the source control system. Although this method doesn't require a build environment, it does require maintaining two copies of all components (one copy of all unmanaged components from the unmanaged solution and one copy of all managed components from the managed solution).
 
 ![Source control by using a solution](media/build-pipeline-alm.png "Source control by using a solution")
 
@@ -181,15 +181,14 @@ It's important to consider how you and your development team will work together
 to build the project. Breaking down silos and fostering views and conversations
 can enable your team to deliver better software. Some tools and workflows&mdash;such as those provided in Git, GitHub, and Azure DevOps&mdash;were
 designed for the express purpose of improving communication and software
-quality.<!--Suggested, to avoid duplication.--> Note
-that working with configurations in a solution system can create challenges for
+quality. Note that working with configurations in a solution system can create challenges for
 team development. Organizations must orchestrate changes from
 multiple developers to avoid merge conflicts as much as possible, because source
 control systems have limitations on how merges occur. We recommend that you
 avoid situations where multiple people make changes to complex components&mdash;such
 as forms, flows, and canvas apps&mdash;at the same time.
 
-More information: [Scenario 5: Supporting team development](team-development-alm.md)<!--This is how the H1 in the file is worded, but it's "Support team development" in the TOC. IS that okay?-->
+More information: [Scenario 5: Supporting team development](team-development-alm.md)
 
 ## Continuous integration and deployment 
 

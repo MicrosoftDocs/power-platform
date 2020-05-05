@@ -35,13 +35,13 @@ by creating apps and flows in a Common Data Service solution.
 
 > [!NOTE]
 > You can use the [default Common Data Service environment](basics-alm.md#default-environment) as a playground to get acquainted with the
-> app-building experience. However, if you'll be shipping shared components (such as entities and AI models) along with your apps and flows as part of a solution, we recommend you move to a model where you have multiple environments, each dedicated for the development, testing, and release of your apps.<!--Suggested.-->
+> app-building experience. However, if you'll be shipping shared components (such as entities and AI models) along with your apps and flows as part of a solution, we recommend you move to a model where you have multiple environments, each dedicated for the development, testing, and release of your apps.
 
 For legacy canvas app and flow makers to participate and move to a healthy ALM model, you must do the following:
 
 1.  Work with your IT admin/organization to discuss your business processes and
     environment strategy, such as the number of environments, access
-    permissions, groups, and security.<!--note from editor: If you have "such as," you don't need "etc."--> More information: [ALM environment strategy](environment-strategy-alm.md)
+    permissions, groups, and security. More information: [ALM environment strategy](environment-strategy-alm.md)
 
 2.  Understand the concept of solutions in Common Data Service as a mechanism to transport and share components with others. You can export a solution from one environment to another to easily and securely share your apps and flows.
 More information: [Solution concepts](solution-concepts-alm.md)

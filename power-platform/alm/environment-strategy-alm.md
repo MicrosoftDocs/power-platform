@@ -34,10 +34,10 @@ Some organizations might also need additional environments for user acceptance t
 (UAT), systems integration testing (SIT), and training.
 
 Separate development environments can be helpful to help isolate changes from
-one work effort being checked in before it's completed. Separate development environments can also be helpful to reduce situations when one person negatively affects<!--via style guide.--> another while making changes.
+one work effort being checked in before it's completed. Separate development environments can also be helpful to reduce situations when one person negatively affects another while making changes.
 
 Every organization is unique, so carefully consider
-what your organization's environment needs are.<!--Suggested.-->
+what your organization's environment needs are.
 
 ### Development environments 
 
@@ -51,7 +51,7 @@ You should answer questions such as:
 
 ### Other environments 
 
-You should also<!--suggested--> answer the question, "Which types of non-development environments do I need?"
+You should also answer the question, "Which types of non-development environments do I need?"
 
 For example, in addition to your production environment, you might need separate
 test, UAT, SIT, and

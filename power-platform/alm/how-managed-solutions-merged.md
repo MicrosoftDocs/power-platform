@@ -17,10 +17,9 @@ search.app:
   - D365CE
 ---
 # Understand how managed solutions are merged
-<!--note from editor: Sometimes the title and description metadata fields use "Common Data Service," sometimes "Power Apps." I don't know whether this is intentional or an artifact, just wanted to point it out. -->
-When you prepare your managed solution to be installed, remember that an environment might already have<!--Suggested. (Not using "may" is via style guide.)--> multiple solutions installed or that other solutions might be installed in the future. Construct a solution that follows best practices so that your solution won't interfere with other solutions.  
+When you prepare your managed solution to be installed, remember that an environment might already have multiple solutions installed or that other solutions might be installed in the future. Construct a solution that follows best practices so that your solution won't interfere with other solutions.  
   
-The processes that Common Data Service uses to merge customizations emphasize maintaining the functionality of the solution. Although<!--Style guide--> every effort is made to preserve the presentation, some incompatibilities between customizations might require that the computed resolution change some presentation details in favor of maintaining the customization functionality.<!--Edits reproduced from the same paragraph in solution-layers-alm.md-->
+The processes that Common Data Service uses to merge customizations emphasize maintaining the functionality of the solution. Although every effort is made to preserve the presentation, some incompatibilities between customizations might require that the computed resolution change some presentation details in favor of maintaining the customization functionality.
   
 <a name="BKMK_MergingFormCustomizations"></a>   
 
@@ -31,7 +30,7 @@ The processes that Common Data Service uses to merge customizations emphasize ma
   
 Form merge occurs on a section-by-section basis. When you add new elements to an existing tab or section, your changes can affect or conceal the elements from the managed layers, including when the managed element is updated. This behavior occurs because the managed layers are underneath the unmanaged layer you're introducing with your customization. If you don't want to affect or conceal managed elements on the form, we recommend that you include your new elements within new container elements, such as a section or tab. This isolates your elements and reduces the possibility of affecting or concealing the elements from the managed layers. More information: [Solution layers](solution-layers-alm.md) 
   
- Managed solutions that contain forms that use new security roles depend on those roles. You should include these security roles with your managed solution. <!-- Validate this...  If there are security roles associated with a form that are not in the environment that the managed solution is being installed on, the installation will not fail but the forms may not be associated with any security roles. When the managed solution is uninstalled, any security roles included with it will be removed.  Any forms outside the managed solution can no longer be associated with those security roles. --> 
+ Managed solutions that contain forms that use new security roles depend on those roles. You should include these security roles with your managed solution. 
   
 > [!NOTE]
 >  When a managed solution entity contains multiple forms and the environment entity form also contains multiple forms, the new forms aren't appended to the bottom of the list of available forms&mdash;they're interleaved with the original entity forms.  
@@ -45,13 +44,13 @@ Form merge occurs on a section-by-section basis. When you add new elements to an
  Whenever a new visible element is added to the SiteMap, it appears at the bottom of whatever container it belongs in. For example, a new area will appear at the bottom of the navigation area. To position the elements that have been added, you must export the SiteMap, edit it to set the precise position of the elements, and then import it again as an unmanaged solution.  
   
 > [!NOTE]
->  Only one SiteMap customization can be applied between publishing<!--I don't know what this means.-->. Any unpublished SiteMap customizations will be lost when a new SiteMap definition is imported.  
+>  Only one SiteMap customization can be applied between publishing. Any unpublished SiteMap customizations will be lost when a new SiteMap definition is imported.  
   
 <a name="BKMK_MergingOptionSetOptions"></a>   
 ## Merge option set options  
  Each new option set option is initialized with an integer value assigned that includes an option value prefix. The option value prefix is a set of five digits prepended to the option value. An option value prefix is generated based on the solution publisher's customization prefix, but can be set to any value. The option value prefix helps differentiate new option set options created in the context of a specific solution publisher and reduces the opportunity for collisions of option values. Using the option value prefix is recommended but not required.  
   
- A managed solution usually updates or adds options for option sets that are already in the environment, for example, the Category or Industry option sets for an account<!--Edit okay? Wasn't sure what "account Category" meant.-->. When a managed solution modifies the options available in an option set, all the options defined in the managed solution are available in the environment. When the managed solution is uninstalled, the options in the option set will be returned to their original state.  
+ A managed solution usually updates or adds options for option sets that are already in the environment, for example, the Category or Industry option sets for an account. When a managed solution modifies the options available in an option set, all the options defined in the managed solution are available in the environment. When the managed solution is uninstalled, the options in the option set will be returned to their original state.  
   
 ### See also  
 
