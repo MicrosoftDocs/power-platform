@@ -59,7 +59,6 @@ adding an existing entity to the solution:
     remove the entity from the solution and re-add it by selecting only the
     changed or new components.
 
-<!--A warning should be reserved for something that might kill you. Wouldn't this be more appropriate as a Caution? -->
 > [!WARNING]
 >   Don't add components to the solution that aren't new or changed components.
 >   When your update is imported to the target environment, a solution with
@@ -69,7 +68,7 @@ adding an existing entity to the solution:
 >   the view in the existing layer has customizations, the existing
 >   customizations might become inactive. More information: [Solution layers](solution-layers-alm.md)
 
-More information: [Create segmented solutions](../maker/common-data-service/use-segmented-solutions-patches-simplify-updates.md)
+More information: [Create segmented solutions](/powerapps/maker/common-data-service/use-segmented-solutions-patches-simplify-updates)
 
 ### See also
 [Update a solution](update-solutions-alm.md)
