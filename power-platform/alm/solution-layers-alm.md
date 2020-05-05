@@ -72,7 +72,7 @@ imported&mdash;can include the following layers:
    <img src="media/layering-within-solution-alm.png" alt="Layering example within a solution" title="Layering example within a solution" width="472" height="288">
 
 > [!IMPORTANT]
-> Using patches isn't recommended. More information: [Create solution patches](../maker/common-data-service/solution-patches.md)
+> Using patches isn't recommended. More information: [Create solution patches](/powerapps/maker/common-data-service/solution-patches)
 
 The following image shows an example of solution layers for a custom field that displays the base
 solution, a patch, and a pending upgrade.<!--Edit okay? I didn't know how this fit into the flow of the article. -->
@@ -81,7 +81,7 @@ solution, a patch, and a pending upgrade.<!--Edit okay? I didn't know how this f
 > ![Solution layers](media/solution-layers-example.png "Solution layers")
 
 For information about how to view layers for a component within a solution, see
-[Solution layers](../maker/common-data-service/solution-layers.md).
+[Solution layers](/powerapps/maker/common-data-service/solution-layers).
 
 ### Merge behavior 
 

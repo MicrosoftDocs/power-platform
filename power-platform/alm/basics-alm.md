@@ -1,6 +1,6 @@
 ---
-title: "Application lifecycle management basics with Power Apps | Microsoft Docs"
-description: "Learn the basics of application lifecycle management with Power Apps"
+title: "Application lifecycle management basics with Microsoft Power Platform | Microsoft Docs"
+description: "Learn the basics of application lifecycle management with Microsoft Power Platform"
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -24,7 +24,7 @@ search.app:
   - D365CE
 ---
 
-# Application lifecycle management with Power Apps basics 
+# Application lifecycle management with Microsoft Power Platform basics 
 This article describes the components, tools, and processes needed to implement application lifecycle management (ALM). 
 
 ## Environments

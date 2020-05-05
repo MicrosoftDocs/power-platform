@@ -68,7 +68,7 @@ adding an existing entity to the solution:
 >   the view in the existing layer has customizations, the existing
 >   customizations might become inactive. More information: [Solution layers](solution-layers-alm.md)
 
-More information: [Create segmented solutions](../maker/common-data-service/use-segmented-solutions-patches-simplify-updates.md)
+More information: [Create segmented solutions](/powerapps/maker/common-data-service/use-segmented-solutions-patches-simplify-updates)
 
 ### See also
 [Update a solution](update-solutions-alm.md)

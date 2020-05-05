@@ -38,7 +38,7 @@ Supporting team development consists of multiple apps and development team membe
     in which only the required unmanaged solution is installed, and all dependent
     solutions are installed as managed.
 
--   **Power Apps component library** Components are reusable building blocks for canvas apps so that app makers can create custom controls to use inside an app, or across apps using the component library. More information: [Component library](../maker/canvas-apps/component-library.md) 
+-   **Power Apps component library** Components are reusable building blocks for canvas apps so that app makers can create custom controls to use inside an app, or across apps using the component library. More information: [Component library](/powerapps/maker/canvas-apps/component-library) 
 
 ### See also
 [Scenario 6: Embrace your citizen developers in the ALM process](embrace-citizen-devs.md)

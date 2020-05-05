@@ -48,7 +48,7 @@ environment to build custom apps for your business needs. Using Power Apps, you
 can quickly build custom business apps that connect to your business data stored
 either in the underlying data platform (Common Data Service) or in various
 online and on-premises data sources, such as SharePoint, Excel, Office 365,
-Dynamics 365, SQL Server, and so on. More information: [What is Power Apps?](../powerapps-overview.md)
+Dynamics 365, SQL Server, and so on. More information: [What is Power Apps?](/powerapps/powerapps-overview)
 
 ## DevOps
 DevOps is the combining of two historically disparate disciplines:
@@ -61,7 +61,7 @@ solution metadata between development environments and your version control
 system, generating build artifacts, deploying to downstream environments,
 provisioning or de-provisioning of environments, and the ability to perform
 static analysis checks against your solution by using the Power Apps checker
-service. More information: [Power Apps build tools for Azure DevOps overview](../developer/common-data-service/build-tools-overview.md)
+service. More information: [Power Apps build tools for Azure DevOps overview](/powerapps/developer/common-data-service/build-tools-overview)
 
 ## Version control system 
 A version control system is a category of software tools that help record
@@ -88,7 +88,7 @@ assets to Common Data Service instances. Packages can consist of not only
 solution files, but also flat files, custom code, and HTML files. Common Data
 Service provides you with a Visual Studio template for creating these packages
 that can be used with the Package Deployer tool to deploy them to a Common Data
-Service instance. More information: [Create packages for the Package Deployer](../developer/common-data-service/package-deployer/create-packages-package-deployer.md)
+Service instance. More information: [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
 
 ## Solution Packager
 Solution Packager is a tool that can unpack a compressed solution file into
@@ -98,7 +98,7 @@ a source control system. More information: [Use the Solution Packager tool to co
 ## Power Apps CLI
 Microsoft Power Apps CLI is a simple, single-stop developer command-line
 interface that empowers developers and app makers to create code components.
-More information: [What is Microsoft Power Apps CLI?](../developer/common-data-service/powerapps-cli.md)
+More information: [What is Microsoft Power Apps CLI?](/powerapps/developer/common-data-service/powerapps-cli)
 
 ## PowerShell modules
 With PowerShell cmdlets for administrators, app makers, and developers, you can

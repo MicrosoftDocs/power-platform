@@ -70,5 +70,5 @@ BI ALM, see \<add a link to Power BI docs\ -->
 For more information about how ALM and Azure DevOps technologies&mdash;combined with people and processes&mdash;enable teams to continually provide value to customers, see [DevOps tools on Azure](https://azure.microsoft.com/solutions/devops/).
 
 ### See also
-[Application lifecycle management with Power Apps basics](basics-alm.md)<br/>
+[Application lifecycle management with Microsoft Power Platform basics](basics-alm.md)<br/>
 [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)

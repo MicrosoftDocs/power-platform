@@ -1,5 +1,5 @@
 ---
-title: "Implement ALM for a new project with Power Apps | Microsoft Docs"
+title: "Implement ALM for a new project with Microsoft Power Platform | Microsoft Docs"
 description: "Learn how to implement ALM for a new project with Power Apps"
 keywords: 
 author: Mattp123

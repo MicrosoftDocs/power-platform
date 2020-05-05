@@ -114,4 +114,4 @@ metadata items after they're initially created.
 ### See also
 [Solution layers](solution-layers-alm.md) <br />
 [Create and manage environments in the Power Platform admin center](https://docs.microsoft.com/power-platform/admin/create-environment) <br />
-[Create a solution publisher](../maker/common-data-service/change-solution-publisher-prefix.md#create-a-solution-publisher)
+[Create a solution publisher](/powerapps/maker/common-data-service/change-solution-publisher-prefix#create-a-solution-publisher)

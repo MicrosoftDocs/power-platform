@@ -32,7 +32,7 @@ import logic detects the solution as an update and displays the following screen
 > [!div class="mx-imgBorder"] 
 > ![Solution update detected upon import](media/solution-update-alm.png "Solution update detected upon import")
 
-More information: [Apply an update or upgrade for a solution](../maker/common-data-service/update-solutions.md) 
+More information: [Apply an update or upgrade for a solution](/powerapps/maker/common-data-service/update-solutions) 
 
 ### See also
 [Overview of tools and apps used with ALM](tools-apps-used-alm.md)
