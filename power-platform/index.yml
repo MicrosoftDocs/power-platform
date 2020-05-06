@@ -8,11 +8,11 @@ brand: dynamics
 metadata:
   title: Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, Power Apps, and Power Automate. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: dynamics-365-crossapp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: power-platform #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  author: buck1ey #Required; your GitHub user alias, with correct capitalization.
-  ms.author: buckg #Required; microsoft alias of author; optional team alias.
-  ms.date: 01/29/2020 #Required; mm/dd/yyyy format.
+  author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kvivek #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/05/2020 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 additionalContent:
@@ -25,22 +25,38 @@ additionalContent:
             text: Documentation
           - url: https://docs.microsoft.com/learn/browse/?products=power-bi
             text: Learn Power BI
+          - url: https://www.youtube.com/user/mspowerbi
+            text: Videos            
         - title: Power Apps
           links:
           - url: https://docs.microsoft.com/powerapps
             text: Documentation
           - url: https://docs.microsoft.com/learn/browse/?products=powerapps
             text: Learn Power Apps
+          - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
+            text: Videos
         - title: Power Automate
           links:
           - url: https://docs.microsoft.com/power-automate/
             text: Documentation
           - url: https://docs.microsoft.com/learn/browse/?products=power-automate
             text: Learn Power Automate
+          - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
+            text: Videos
         - title: Power Virtual Agents
           links:
           - url: https://docs.microsoft.com/power-virtual-agents/
             text: Documentation
+          - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
+            text: Videos
+        - title: Administer and manage Power Platform
+          links:
+          - url: /power-platform/admin/admin-documentation
+            text: Power Platform Admin guide
+          - url: /power-platform/guidance/coe/starter-kit
+            text: Center of Excellence (CoE) Starter kit
+          - url: /power-platform/alm
+            text: Power Platform ALM guide
     - title: Related features
       items:
         # Card
@@ -55,6 +71,9 @@ additionalContent:
         - title: Common Data Model
           summary: "Unify data across all your business processes and enable interoperability among apps"
           url: https://docs.microsoft.com/common-data-model/
+        - title: Connectors
+          summary: "Connect to hundreds of data sources using a library of connectors"
+          url: https://docs.microsoft.com/en-us/connectors/
     - title: See also
       items:
         # Card
