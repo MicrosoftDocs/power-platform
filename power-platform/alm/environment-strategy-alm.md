@@ -1,6 +1,6 @@
 ---
-title: "Environment strategy with Power Apps | Microsoft Docs"
-description: "Environment strategy considerations for application lifecycle management with Power Apps"
+title: "Environment strategy for ALM | Microsoft Docs"
+description: "Environment strategy considerations for application lifecycle management (ALM) with Power Platform"
 keywords: 
 author: Mattp123
 ms.author: matp
@@ -24,7 +24,8 @@ search.app:
   - D365CE
 ---
 
-# Application lifecycle management environment strategy 
+# Environment strategy for ALM
+
 To follow application lifecycle management (ALM) principles, you'll need separate environments for app development and production. Although you can perform basic ALM with only separate
 development and production environments, we recommend that you also maintain at
 least one test environment that's separate from your development and production
