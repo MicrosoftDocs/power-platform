@@ -320,8 +320,8 @@
         items:
         - name: Overview of user security
           href: grant-users-access.md
-#        - name: View active users  # this feature going away, need to redirect to M365 topic or something in PPAC
-#          href: admin-view-user-licenses.md
+        - name: View active users  
+          href: admin-view-user-licenses.md
      #  - name: User identity and access model
      #  - name: Best practice recommendations 
         - name: Create users and assign security roles
@@ -334,9 +334,9 @@
           href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
         - name: Add users to an environment
           href: add-users-to-environment.md
-        - name: Configure user security in environment
+        - name: Configure user security in an environment
           href: database-security.md
-        - name: Configure user access to environment
+        - name: Configure user access to an environment
           href: control-user-access.md  
         - name: View user profile
           href: https://docs.microsoft.com/powerapps/user/view-your-user-profile

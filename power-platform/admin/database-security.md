@@ -93,7 +93,7 @@ To add a security role to a user who is already present in an environment:
 5. Assign one or more security roles to the user. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Manage user roles](media/select-manage-roles.png "Manage user roles")
+   > ![Manage user roles](media/manage-user-roles.png "Manage user roles")
 
 6. Select **OK** to apply the changes you made. 
 
