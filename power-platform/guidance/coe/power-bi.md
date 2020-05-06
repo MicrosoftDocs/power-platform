@@ -1,6 +1,6 @@
 ---
 title: "CoE Power BI Dashboard | MicrosoftDocs"
-description: "Gain deep insights into your Power Platform adoption with the CoE Power BI dashboard"
+description: "Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard"
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -16,9 +16,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Gain deep insights into your Power Platform adoption with the CoE Power BI dashboard
+# Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard
 
-As a Power Platform admin, you want visibility into how your organization is using Power Apps and Power Automate. Insights into your adoption will help you govern and secure the platform, identify patterns, and enable you to nurture your makers to accelerate adoption.
+As a Microsoft Power Platform admin, you want visibility into how your organization is using Power Apps and Power Automate. Insights into your adoption will help you govern and secure the platform, identify patterns, and enable you to nurture your makers to accelerate adoption.
 
 Out of the box, the [Admin Analytics](https://docs.microsoft.com/power-platform/admin/analytics-powerapps) that are part of the [Power Platform admin center](https://aka.ms/ppac) provide you with environment-level analytics based on your usage for the past 28 days. As your adoption grows, you might need customized dashboards that show you more insights and allow you to apply richer filters to your data over a longer period of time.
 

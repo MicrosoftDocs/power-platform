@@ -20,7 +20,7 @@ search.app:
 
 A Center of Excellence (CoE) in an organization drives innovation and improvement and brings together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization.
 
-The Power Platform CoE Starter Kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting Power Platform, with a focus on Power Apps and Power Automate.
+The Microsoft Power Platform CoE Starter Kit is a collection of components and tools that are designed to help get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate.
 
 You can download the most recently updated assets from the [GitHub repository](https://aka.ms/CoEStarterKitRepo).
 
@@ -35,11 +35,11 @@ Although the underlying features and components used to build the kit (such as C
 If you face issues with:
 
 - **Using the kit**: Report your issue at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
-- **The core features in Power Platform**: Use your standard channel to contact Support.
+- **The core features in Microsoft Power Platform**: Use your standard channel to contact Support.
 
 ## Purpose of this document
 
-This CoE Starter Kit and this guidance are targeted toward the person or department responsible for setting up a Power Platform CoE in their organization. The goal of this guidance is to help you understand what the motivation for&mdash;and the responsibilities of&mdash;a Center of Excellence are, in addition to walking you through the prerequisites, setup instructions, and individual components of the CoE Starter Kit.
+This CoE Starter Kit and this guidance are targeted toward the person or department responsible for setting up a Microsoft Power Platform CoE in their organization. The goal of this guidance is to help you understand what the motivation for&mdash;and the responsibilities of&mdash;a Center of Excellence are, in addition to walking you through the prerequisites, setup instructions, and individual components of the CoE Starter Kit.
 
 ## How to get started
 
@@ -52,7 +52,7 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
     ![CoE Power BI dashboard](media/coe1.PNG "CoE Power BI dashboard")
 
-1. Plan your data loss prevention policy strategy and use the DLP Editor (canvas app) to mitigate the risk of negatively affecting apps when making changes to your policies.
+1. Plan your data loss prevention (DLP) policy strategy and use the DLP Editor (canvas app) to mitigate the risk of negatively affecting apps when making changes to your policies.
 
     ![DLP Editor canvas app](media/coe2.PNG "DLP Editor canvas app")
 
@@ -76,6 +76,6 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
 - Read up on customer success stories and find resources relevant to your experience, technical background and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
 
-- Get started with the Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](https://aka.ms/PowerUp).
+- Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](https://aka.ms/PowerUp).
 
-- As an admin looking after the CoE, you should be familiar with the administration and governance of Power Platform. We recommend the following white paper as a resource: [aka.ms/PowerAppsAdminWhitepaper](https://aka.ms/powerappsadminwhitepaper).
+- As an admin looking after the CoE, you should be familiar with the administration and governance of Microsoft Power Platform. We recommend the following white paper as a resource: [aka.ms/PowerAppsAdminWhitepaper](https://aka.ms/powerappsadminwhitepaper).

@@ -93,10 +93,10 @@ The following assets depend on the CoE Settings entity:
 | Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCC)
 | Brand Secondary Color        | Hexadecimal value of your secondary brand color (\#DDDDDD)                                                    |
 | Email End User Support       | Email address for your helpdesk or user computing support team                                        |
-| Email Maker Support          | Email address for your Power Platform maker support team                                              |
-| Link to Community Channel    | Link to your internal Power Platform community (for example, Yammer, Teams)                            |
-Link to Learning Resource    | Link to internal Power Platform learning resources, or you might link to aka.ms/PowerUp    |
-Link to Policy Documentation | Link to internal Power Platform policies; for example, a Teams channel or SharePoint site |
+| Email Maker Support          | Email address for your Microsoft Power Platform maker support team                                              |
+| Link to Community Channel    | Link to your internal Microsoft Power Platform community (for example, Yammer, Teams)                            |
+Link to Learning Resource    | Link to internal Microsoft Power Platform learning resources, or you might link to aka.ms/PowerUp    |
+Link to Policy Documentation | Link to internal Microsoft Power Platform policies; for example, a Teams channel or SharePoint site |
 Version                      | Set to 1.0                                                                                            |
 Company Name                 | Your company name as it will appear in dashboards |
 
@@ -106,12 +106,12 @@ The environment variables are used to store application and flow configuration d
 
 All of the sync flows depend on all environment variables' being configured.
 
-After importing the solution, you may see an error at the top, notifying you that environment variables need to be configured. For the Core Components solution, three environment variables need to be configured. The following screenshot shows an example of what the error message will look like.
+After importing the solution, you might see an error at the top, notifying you that environment variables need to be configured. For the Core Components solution, three environment variables need to be configured. The following screenshot shows an example of what the error message will look like.
 
  ![Prompt to set up environment variables](media/coe7.png "Prompt to set up environment variables")
 
 >[!TIP]
->To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
+>To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
 
 - Select a variable, and then configure its **Default Value**.
 
@@ -123,7 +123,7 @@ After importing the solution, you may see an error at the top, notifying you tha
     |------|---------------|
     |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
-    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See provided default value](code-samples/css/default-value-eMail-Header-Style.md)
+    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md).
 
 
 ## Activate the Sync Template flows
@@ -155,7 +155,7 @@ The following flows are required to sync data to the resource entities:
 Save a copy of the flows outside of the solution to activate and create the connections.
 
 >[!NOTE]
->There is a current product limitation in this methodology such that you will not get updates for these flows as new versions of the CoE are released. You'll have to import the new solution and copy the flows again to upgrade them to the latest version. This experience will improve once [Modern Solution Import (Power Apps 2020 Release Wave 1)](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/modern-solution-import-experience) is available.
+>Due to a current product limitation in this methodology, you won't get updates for these flows as new versions of the CoE are released. You'll have to import the new solution and copy the flows again to upgrade them to the latest version. This experience will improve when the [modern solution import experience (Power Apps 2020 release wave 1)](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/modern-solution-import-experience) is available.
 
 1. Go to the *Center of Excellence - Core Components* solution.
 
