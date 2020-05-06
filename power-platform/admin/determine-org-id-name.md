@@ -27,12 +27,12 @@ There are two ways to find your organization ID and name.
    > ![](media/advanced-settings.png "Select Advanced Settings")
 
 2. Go to **Settings** > **Customizations** > **Developer Resources**.
-3. Under **environment Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
+3. Under **Instance Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
 
 ## Using the web app
 
 1. In the web app, go to **Settings** > **Customizations** > **Developer Resources**.
-2. Under **environment Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
+2. Under **Instance Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
 
 ## The organization ID and unique name
 
