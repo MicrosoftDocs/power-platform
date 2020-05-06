@@ -1,7 +1,7 @@
 ---
 title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 04/17/2020
+ms.date: 05/06/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -70,7 +70,7 @@ To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.
 
 |  | |
 |---------|---------|
-|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li></ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
+|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights Applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 
@@ -238,6 +238,16 @@ Not all licenses give per-user entitlement. For example, the Team Member license
 ### Which environments are counted in the capacity report?
 
 Default, production, and sandbox environments are counted for consumption. Trial, preview, support, and developer environments aren't counted.
+
+### What are entities ending in “- Analytics” in my capacity report?
+
+Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Common Data Service entities. See the [documentation](https://docs.microsoft.com/dynamics365/) for the installed Insights applications about the entities used to create insights and dashboards.
+
+**More information:**
+- [Sales Insights ](https://docs.microsoft.com/dynamics365/ai/sales/help-hub#get-started)
+- [Field Service and resource scheduling optimization (RSO)](https://docs.microsoft.com/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
+- [Customer Service Hub](https://docs.microsoft.com/dynamics365/customer-service/customer-service-analytics-insights-csh) 
+- [Field Service](https://docs.microsoft.com/dynamics365/field-service/reports) 
 
 ### See also
 

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/10/2019
+ms.date: 05/07/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -24,38 +24,27 @@ The auditing feature logs changes that are made to customer records and user acc
 -->
  The audit logs help the administrator answer questions such as:  
   
--   Which user was accessing the system and when?  
-  
--   Who updated this field value on this record and when?  
-  
--   What was the previous field value before it was updated?  
-  
--   What actions has this user taken recently?  
-  
--   Who deleted this record?  
-  
--   What locale was used to make the update?  
+- Which user was accessing the system and when?  
+- Who updated this field value on this record and when?  
+- What was the previous field value before it was updated?  
+- What actions has this user taken recently?  
+- Who deleted this record?  
+- What locale was used to make the update?  
   
 The following operations can be audited:  
   
--   Create, update, deactivate, and delete operations on records.  
-  
--   Changes to the sharing privileges of a record.  
-  
--   The N:N association or disassociation of records.  
-  
--   Changes to security roles.  
-  
--   Audit changes at the entity, attribute, and organization level. For example, enabling audit on an entity.  
-  
--   Deletion of audit logs.  
-  
--   For changes made to entity fields that can be localized, such as the Product entity name or description fields, the locale ID (LCID) appears in the audit record.  
+- Create, update, deactivate, and delete operations on records.  
+- Changes to the sharing privileges of a record.  
+- The N:N association or disassociation of records.  
+- Changes to security roles.  
+- Audit changes at the entity, attribute, and organization level. For example, enabling audit on an entity.   
+- Deletion of audit logs.  
+- For changes made to entity fields that can be localized, such as the Product entity name or description fields, the locale ID (LCID) appears in the audit record.  
   
 System administrators and customizers can start or stop auditing for an organization.  
   
 > [!IMPORTANT]
->  For Customer Engagement (on-premises), you may notice that auditing can significantly increase the size of the organization database over time. You can delete audit logs by going to **Settings** > **Auditing** > **Audit Log Management**. Additionally, you may want to stop auditing for maintenance purposes. Stopping auditing stops tracking for the organization during the period until auditing is started again. When you start auditing again, the same auditing selection is maintained that was previously used.  
+> For Customer Engagement (on-premises), you may notice that auditing can significantly increase the size of the organization database over time. You can delete audit logs by going to **Settings** > **Auditing** > **Audit Log Management**. Additionally, you may want to stop auditing for maintenance purposes. Stopping auditing stops tracking for the organization during the period until auditing is started again. When you start auditing again, the same auditing selection is maintained that was previously used.  
   
 ## Start or stop auditing for an organization  
 This task requires the system administrator or customizer security role or equivalent permissions.  
@@ -64,8 +53,14 @@ This task requires the system administrator or customizer security role or equiv
   
 2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Audit settings**.
   
-3. On the **Auditing** tab, select the **Start Auditing** check box to start auditing. Clear the **Start Auditing** check box to stop all auditing.  
+3. Select the **Start Auditing** check box to start auditing. Clear the **Start Auditing** check box to stop all auditing.  
   
+
+
+
+
+
+
 4. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
    - **Audit user access**. Tracks when a user accesses model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, including the user name and time.  
@@ -103,6 +98,22 @@ System administrators or customizers can change the default audit settings for e
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
 2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Entity and Field Audit Settings**.
+
+
+
+Specify to audit specific areas of the product, as described in the following table via **Settings** > **Audit and logs** > **Legacy audit settings**.  
+
+|Auditing area|Enable the start of auditing for these entities|  
+|-------------------|-----------------------------------------------------|  
+|**Enable Auditing in the following areas**||
+|Common Entities|Account, Contact, Lead, Marketing List, Product, Quick Campaign, Report, Sales Literature, Security Role, and User|  
+|Sales Entities|Competitor, Invoice, Opportunity, Order, and Quote|  
+|Marketing Entities|Campaign|  
+|Customer Service Entities|Article, Case, Client Feedback, Contract, and Service|  
+
+
+
+
   
 4. Under **Components**, expand **Entities**.  
   
