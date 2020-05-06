@@ -182,7 +182,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 1. Select **Update Connector**.
 
 > [!NOTE]
-> If you have a [DLP policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. More information: [Add custom connectors to your DLP policy](limitations.md#custom-connectors-and-DLP) and [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition)
+> If you have a [DLP policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. More information: [Add custom connectors to your DLP policy](limitations.md#custom-connectors-and-dlp) and [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition)
 
 ### Update Azure AD app registration with the redirect URL
 
