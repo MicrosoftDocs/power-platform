@@ -9,13 +9,7 @@ ms.custom: ""
 ms.date: 04/08/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-  - "powerapps"
 ms.assetid: 
 search.audienceType: 
   - developer
@@ -40,7 +34,7 @@ same application and sharing source code. For team development, it's a good prac
 
 More information: [Scenario 5: Supporting team development](team-development-alm.md)
 
-### Conflict management
+## Conflict management
 
 For team development, the goal is to avoid conflict when making changes to
 shared code. With a source control system, branching and merging help to
@@ -51,7 +45,7 @@ Another method is to use strategies to avoid conflict. For example, you can have
 at a time work on a complex component, to avoid a merge conflict that a
 source control system might not automatically be able to resolve.
 
-### Working with complex components
+## Working with complex components
 
 What are complex components? Examples include forms,
 canvas apps, flows, and workflows.
@@ -64,3 +58,4 @@ to avoid conflict.
 ### See also
 
 [Power Apps build tools for Azure DevOps](devops-build-tools.md)
+[Power Apps for developers](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer)
