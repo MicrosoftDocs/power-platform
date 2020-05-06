@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2020
+ms.date: 05/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,10 +17,24 @@ search.app:
 ---
 # Determine your environment's organization ID and name
 
-Follow these steps to determine your organization name and ID.
+There are two ways to find your organization ID and name. 
+
+## Using Advanced Settings
+
+1. Go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/advanced-settings.png "Select Advanced Settings")
+
+2. Go to **Settings** > **Customizations** > **Developer Resources**.
+3. Under **environment Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
+
+## Using the web app
 
 1. In the web app, go to **Settings** > **Customizations** > **Developer Resources**.
 2. Under **environment Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
+
+## The organization ID and unique name
 
 > [!div class="mx-imgBorder"] 
 > ![](media/org-id-name.png "Determine org ID and name")
