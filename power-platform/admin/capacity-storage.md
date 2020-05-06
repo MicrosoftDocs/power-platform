@@ -241,7 +241,7 @@ Default, production, and sandbox environments are counted for consumption. Trial
 
 ### What are entities ending in “- Analytics” in my capacity report?
 
-Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Common Data Service entities. See the [documentation](https://docs.microsoft.com/dynamics365/) for the installed Insights applications about the entities used to create insights and dashboards.
+Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Common Data Service entities. See **More information** below for documentation covering the installed Insights applications and the entities used to create insights and dashboards.
 
 **More information:**
 - [Sales Insights ](https://docs.microsoft.com/dynamics365/ai/sales/help-hub#get-started)
