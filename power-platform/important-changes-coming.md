@@ -26,7 +26,7 @@ notification can span a few years. After removal, the feature or capability will
 
 ## Dynamics 365 Connector is deprecated
 
-Effective May 4, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps and Canvas Apps is officially deprecated. We recommend that you do not create new connections using this connector.
+Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps and Canvas Apps is officially deprecated. We recommend that you do not create new connections using this connector.
 
 Rather than use the Dynamics 365 connector, the [Common Data Service (Current Environment) connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Common Data Service (Current Environment) connector in every situation today because of the following limitations:
 
