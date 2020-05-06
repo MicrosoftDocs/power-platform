@@ -1,22 +1,15 @@
 ---
-title: "Application lifecycle management with Power Apps | Microsoft Docs"
-description: "Learn how to implement application lifecycle management with Power Apps"
+title: "Overview of Application lifecycle management (ALM) with Microsoft Power Platform | Microsoft Docs"
+description: "Learn how to implement application lifecycle management with Microsoft Power Platform"
 keywords: 
 author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ""
-ms.date: 04/08/2020
-ms.reviewer: ""
+ms.date: 05/05/2020
+ms.reviewer: "matp"
 ms.service: powerapps
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-  - "powerapps"
-ms.assetid: 
 search.audienceType: 
   - maker
 search.app: 
@@ -70,5 +63,5 @@ BI ALM, see \<add a link to Power BI docs\ -->
 For more information about how ALM and Azure DevOps technologies&mdash;combined with people and processes&mdash;enable teams to continually provide value to customers, see [DevOps tools on Azure](https://azure.microsoft.com/solutions/devops/).
 
 ### See also
-[Application lifecycle management with Microsoft Power Platform basics](basics-alm.md)<br/>
+[ALM basics with Microsoft Power Platform](basics-alm.md)<br/>
 [What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)
