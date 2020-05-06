@@ -190,3 +190,6 @@ Once a customer has purchased model-driven apps in Dynamics 365, we send a serie
   
 ### Notice about Online Policies
 Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/en-us/legal/intellectualproperty/mtl/onlinedisclaimer.aspx).
+
+If you have any feedback, please fill out our [survey](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxclc4NDdL5CqxoDKPhEMtxUQlNBTkhCWkZEQk1FM1JORU5XSTZFUFJNVyQlQCN0PWcu), and share your thoughts!
+
