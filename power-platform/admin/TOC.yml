@@ -334,7 +334,7 @@
           href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
         - name: Add users to an environment
           href: add-users-to-environment.md
-        - name: Configure user security in an environment
+        - name: Configure user security to resources
           href: database-security.md
         - name: Configure user access to an environment
           href: control-user-access.md  
