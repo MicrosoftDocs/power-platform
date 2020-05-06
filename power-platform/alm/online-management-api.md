@@ -6,17 +6,10 @@ author: phecke
 ms.author: pehecke
 manager: kvivek
 ms.custom: ""
-ms.date: 04/13/2020
+ms.date: 05/05/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-  - "powerapps"
-ms.assetid: 
 search.audienceType: 
   - developer
 search.app: 

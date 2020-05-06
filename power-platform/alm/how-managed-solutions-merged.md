@@ -2,13 +2,13 @@
 title: "How managed solutions are merged (Common Data Service) | Microsoft Docs" 
 description: "To avoid multiple installed solutions from interfering with one another, follow best practices while constructing a solution" 
 ms.custom: ""
-ms.date: 02/27/2020
+ms.date: 05/05/2020
 ms.reviewer: ""
 ms.service: powerapps
 ms.topic: "article"
 author: "shmcarth" 
-ms.author: "jdaly" 
-manager: "ryjones" 
+ms.author: "matp" 
+manager: "kvivek" 
 search.audienceType: 
   - maker
   - developer

@@ -1,22 +1,15 @@
 ---
-title: "Overview of tools and apps used with ALM in Power Apps | Microsoft Docs"
-description: "Learn about the tools and apps used with ALM in Power Apps"
+title: "Overview of tools and apps used with application lifecycle management (ALM) in Power Platform | Microsoft Docs"
+description: "Learn about the tools and apps used with application lifecycle management (ALM) in Power Platform"
 keywords: 
 author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ""
-ms.date: 04/08/2020
+ms.date: 05/05/2020
 ms.reviewer: ""
 ms.service: powerapps
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-  - "powerapps"
-ms.assetid: 
 search.audienceType: 
   - maker
 search.app: 
@@ -24,7 +17,8 @@ search.app:
   - D365CE
 ---
 
-# Overview of tools and apps used with application lifecycle management
+# Overview of tools and apps used with ALM
+
 This article gives a brief overview of the tools and apps used with application lifecycle management (ALM). 
 
 ## Power Platform admin center

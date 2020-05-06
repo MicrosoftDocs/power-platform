@@ -2,19 +2,11 @@
 title: "Use a solution to customize Power Apps | MicrosoftDocs"
 description: "Learn how to customize Power Apps"
 ms.custom: ""
-ms.date: 02/20/2020
+ms.date: 05/05/2020
 ms.reviewer: ""
 ms.service: powerapps
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-  - "Dynamics 365 Version 9.x"
-  - "powerapps"
 author: "Mattp123"
-ms.assetid: f993c4ed-1fc3-4e47-bef1-d38695ddb11a
-caps.latest.revision: 57
 ms.author: "matp"
 manager: "kvivek"
 search.audienceType: 
