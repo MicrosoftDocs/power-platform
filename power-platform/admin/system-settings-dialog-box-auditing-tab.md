@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/25/2020
+ms.date: 05/06/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -40,7 +40,7 @@ Enable auditing to track changes to your organization's data and maintain a log 
 | Start Read Auditing |   |  
 | Audit user access  | If enabled, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, tracks when the user started accessing model-driven apps in Dynamics 365 and whether or not the user accessed the application by using the web application or [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]. | 
 
-Specify to audit specific areas of the product, as described in the following table via **Settings** > **Audit and logs** > **Entity and field audit settings**.  
+Specify to audit specific areas of the product, as described in the following table via **Settings** > **Audit and logs** > **Legacy audit settings**.  
 
 |Auditing area|Enable the start of auditing for these entities|  
 |-------------------|-----------------------------------------------------|  
