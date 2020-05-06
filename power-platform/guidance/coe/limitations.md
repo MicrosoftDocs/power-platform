@@ -44,10 +44,45 @@ The Common Data Service connector might experience some throttling limits if the
 - The Environments call returns only the first 2,000 environments.
 - The tool can't write back Environment-type policies.
 
+## DLP customizer
+
+- The tool currently does not work for custom connectors that are installed as part of a managed solution.
+
 ## Government community cloud (GCC) environments
 
 - The CoE Starter Kit is available for government cloud (GCC) environments; however the custom connector to connect to Office 365 Audit Logs isn't available for GCC environments yet.
 
+## Developer Environments from Power Apps Community Plan
+
+- Power Platform protects Developer type SKUs from inquiry by non-authenticated users.
+- This means that the Model Driven Apps in Developer SKUs will be skipped from our tally work in the sync flow Admin | Sync Template v2 (Model Driven Apps).
+- To fix this you would need to have your admin security role added to the security roles for all Dev environments, and then remove the check from the sync flow.
+- For more information on these environments see [Power Apps Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan).
+
 ## Sync Flow (Model Driven Apps)
 
 - It is currently not possible to retrieve model driven apps for Developer environments (My Name's environment).
+
+## Custom Connectors and DLP
+
+In order to add custom connectors shipped as part of this solution to the business data only group of your DLP policy, please use the PowerShell cmdlets:
+
+1. Install the [PowerShell cmdlets for Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-powershell)
+
+1. List all DLP Policies and copy the *PolicyName* (GUID) of the policy that is applied to your CoE Starter Kit environment
+
+    ```powershell
+    Get-AdminDlpPolicy
+    ```
+
+1. Navigate to [flow.microsoft.com](https://flow.microsoft.com) > Data > Custom Connector and select **Edit** on the custom connector
+![Edit Custom Connector](media/DLP-CC2.png)
+
+1. Copy the Connector Name
+![Note Connector Name](media/DLP-CC3.png)
+
+1. In PowerShell, use Add-CustomConnectorToPolicy to add the custom connector to your policy.
+
+    ```powershell
+    Add-CustomConnectorToPolicy -PolicyName {your policy name GUID} -ConnectorName {the nName you copied from above} -GroupName hbi -ConnectorId /providers/Microsoft.PowerApps/scopes/admin/environments/{your environment GUID{/apis/{your connector name}
+    ```

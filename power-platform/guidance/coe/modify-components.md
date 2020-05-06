@@ -87,6 +87,7 @@ Your template catalog is now ready.
 
 ![Template Catalog](media/coe78.png "Template Catalog")
 
+<!--- Commenting this out until version 3.20041.19 is live so that these msapp files will work in production
 ### Controls provided in the Template Catalog app
 
 The following three components are included to help you get started with the Template Catalog. You can download them from [GitHub](https://github.com/microsoft/powerapps-tools/raw/master/Administration/CoEStarterKit/Individual%20Components/CoE%20Components.zip).
@@ -115,3 +116,4 @@ Table(
       ![Dual range slider component](media/coe80.jpg "Dual range slider component")
    :::column-end:::
 :::row-end:::
+--->

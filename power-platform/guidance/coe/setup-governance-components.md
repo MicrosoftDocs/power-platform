@@ -76,7 +76,7 @@ All flows in this solution depend on all environment variables' being configured
 
 1. You may see an error at the top of the Power Apps maker portal, notifying you that environment variables need to be configured.
    > [!NOTE]
-   > For the Audit and Report Components solution, four environment variables need to be configured.
+   > For the Audit and Report Components solution, five environment variables need to be configured.
    
    ![Environment variables need to be updated](media/coe7.png "Environment variables need to be updated")
 
@@ -89,6 +89,7 @@ All flows in this solution depend on all environment variables' being configured
    |------|---------------|
    | Archive Site URL (SharePoint Site)  | The *Archive and Clean Up* flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library). Leave this blank if you're not planning to use the *Archive and Clean Up* flow.
    | Archive Folder                      | Folder (document library) in the SharePoint site where the .msapp file should be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library). Leave this blank if you're not planning to use the *Archive and Clean Up* flow.   |
+   | Auto Delete On Archive | Determines if in apps are deleted when they are archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. |
    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
    | Power Platform Admin Security Group | The *Admin \| Find and add admins as owners for apps that leverage certain connectors* flow adds the Admin security group to apps. Configure the Admin security group first, then enter the Azure AD group ID (Object Id) of the group here. Note: Be sure you enter the Object Id, not an email address. |
 
