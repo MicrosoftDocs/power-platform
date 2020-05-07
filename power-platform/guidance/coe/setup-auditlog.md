@@ -66,6 +66,11 @@ Keep in mind that after a user account has access to the audit logs, that user h
    You should receive a (200) response, which indicates the query has been successfully executed.
    ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
 
+>> [!IMPORTANT]
+> If you are using DLP, you will need to put this connector into the business group, see [Custom Connectors and DLP](https://docs.microsoft.com/en-us/power-platform/guidance/coe/limitations#Custom-Connectors-and-DLP)
+>
+> More information: [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition).
+
 ### Import the flow template compressed (.zip) package named SyncAuditLogs.zip
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com), and set the current environment to the same environment where the CoE solution is installed.
@@ -228,6 +233,7 @@ You should see a (200) status returned, which means the query was successful.
 > 1. Have you enabled the audit log very recently? Please try again in a few minutes to give the audit log time to activate.
 > 1. Have you pasted in the correct Tenant ID from your Azure App Registration?
 > 1. Have you pasted in the correct Resource URL without added spaces or characters at the end?
+
 
 ### Set up the Power Automate flow
 
