@@ -16,6 +16,8 @@
      href: environments-first-run-experience.md
    - name: Data locations for organizations
      href: data-location.md
+   - name: Quotas and rate limit considerations
+     href: requirements-quotas.md
 - name: Author and edit
   items:
    - name: Key concepts - Authoring
@@ -48,7 +50,7 @@
      href: advanced-end-user-authentication.md
    - name: Add actions using Power Automate
      href: advanced-flow.md
-   - name: Use Azure Bot Framework Skills
+   - name: Use Bot Framework Skills
      href: advanced-use-skills.md
    - name: Trigger hand-off to a live agent
      href: advanced-hand-off.md
@@ -66,7 +68,7 @@
      href: publication-connect-bot-to-custom-application.md
    - name: Add bot to Azure Bot Service channels
      href: publication-connect-bot-to-azure-bot-service-channels.md
-   - name: Use an Azure Bot Framework bot with Power Virtual Agents
+   - name: Use a Bot Framework bot with Power Virtual Agents
      href: advanced-use-dispatcher.md
      
 - name: Monitor and diagnose
@@ -93,9 +95,11 @@
      href: configure-generic-handoff.md
    - name: Configure hand-off to Omnichannel for Customer Service
      href: configuration-hand-off-omnichannel.md
+   - name: Configure the bot to automatically start the conversation
+     href: configure-bot-greeting.md
    - name: Customize the look and feel of the bot
      href: customize-default-canvas.md
-   - name: Enable and configure Azure Bot Framework Skills
+   - name: Enable and configure Bot Framework Skills
      href: configuration-add-skills.md
 - name: Respond to GDPR Data Subject Rights (DSR) requests
   items:

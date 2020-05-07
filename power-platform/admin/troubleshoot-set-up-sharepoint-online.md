@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/03/2020
+ms.date: 04/15/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Troubleshoot SharePoint integration
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
 This topic explains how to fix common issues that may occur with SharePoint document management.
 
@@ -60,9 +60,9 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 1. Make sure you have the System Administrator security role or equivalent permissions.
     Check your security role:
-    a. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
-    b. Don't have the correct permissions? Contact your system administrator.
-2. Go to **Settings** > **Customizations** > **Solutions**. 
+    1. Follow the steps in [View your user profile](https://docs.microsoft.com/powerapps/user/view-your-user-profile).
+    2. Don't have the correct permissions? Contact your system administrator.
+2. In the web app, go to **Settings** > **Customizations** > **Solutions**. 
 3. Create a solution (named SharePointDocumentSolution). For more information, see [Create a solution](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-app-solution).
 4. Choose **Entities** > **Add Existing** > **Entity** > find and add **SharePoint Document** entity  (select all fields, forms, views). 
 5. Select **Save** and **Close**.

@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 03/23/2020
+ms.date: 05/04/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -23,6 +23,38 @@ Administrators and IT professionals should use this information to prepare for f
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+
+## Dynamics 365 Connector is deprecated
+
+Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps and Canvas Apps is officially deprecated. We recommend that you do not create new connections using this connector.
+
+Rather than use the Dynamics 365 connector, the [Common Data Service (Current Environment) connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Common Data Service (Current Environment) connector in every situation today because of the following limitations:
+
+- It is not available in Logic Apps.
+- It does not enable cross-tenant or cross environment connections. 
+- It cannot be used for canvas apps that use the [Power Apps for Windows client](https://www.microsoft.com/p/power-apps/9nblggh5z8f3).
+- Coming soon:
+    - It will soon be available within Flows that are created outside the context of a solution.
+    - It will soon be available on US Government cloud.
+
+If you cannot use the Common Data Service (Current Environment) connector, you should use the [Common Data Service connector](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
+
+The Common Data Service (Current Environment) connector represents the future for connections using Common Data Service. This includes Dynamics 365 apps using Common Data Service. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Common Data Service Connector can be used today.
+
+At this time, there is no requirement to convert canvas apps, flows, or logic apps to stop using the Dynamics 365 connector because of the known blocking limitations. But you should stop creating new connections with the Dynamics 365 connector and convert them if you can.
+
+|Type|Guidance|
+|---------|---------|
+|Flows|If you can convert existing Flows to use the Common Data Service (Current Environment) connector we recommend you do so.|
+|Logic Apps|We recommend you stop creating new connections using the Dynamics 365 connector and use the Common Data Service Connector instead.|
+|Canvas Apps|Canvas apps created after November 2019 should not have used the connector infrastructure by default. These apps should automatically connect to the Common Data Service instance within the same environment. <br /><br />If you have an canvas app that used the  Dynamics 365 connector, find information about how to convert them here: [Converting canvas apps with the Dynamics 365 connector](/powerapps/maker/canvas-apps/use-native-cds-connector#converting-canvas-apps-with-the-dynamics-365-connector).|
+
+### Forward looking guidance
+
+When the Common Data Service (Current Environment) connector represents a viable replacement for all situations where the Dynamics 365 and Common Data Service connectors are used today, we intend to remove both the current Dynamics 365 and Common Data Service connectors so that a single connector based on the Common Data Service (Current Environment) connector will remain. At that time it will be required to convert any Flows, Logic Apps and Canvas Apps still using the Dynamics 365 and Common Data Service connectors.
+
+We will announce timelines as they are determined.
+
 
 ## AI Builder text classification models are deprecated
 -------------------------------------------------------
@@ -257,12 +289,14 @@ If you are currently using the Dynamics 365 for Blackberry App together with Mob
 Service scheduling in Dynamics 365 Customer Service is deprecated
 ---------------------------------------------------------------------
 
-The existing service scheduling functionality is deprecated, and will no longer be available on Oct 1, 2020. The new scheduling experience, built atop Universal Resource Scheduling (URS), is now available in the Unified Interface.
+The existing service scheduling functionality is deprecated, and will no longer be available on December 1, 2020. The new scheduling experience, built on Universal Resource Scheduling (URS), is now available in the Unified Interface.
 
 Existing service scheduling users will be provided advance notice for a timebound migration to the new scheduling capabilities.
 
-More information: [Service Scheduling Guide](/dynamics365/customer-engagement/customer-service/basics-service-service-scheduling)
+There are two approaches to migrate to the scheduling experience:
+- Follow the guidance in the [Service Scheduling Guide](/dynamics365/customer-engagement/customer-service/basics-service-service-scheduling) to set up the new scheduling experience for an existing Dynamics 365 Customer Service organization.
 
+- If your organization requires features that rely on legacy APIs, the product team is offering an incremental migration option and will update your organization to the Unified Interface experience while continuing to allow the use of the legacy APIs. This approach is available in 2020 release wave 2 with Eary Access in August, 2020.
 
 Usage of Parature knowledgebase as the knowledge management solution is deprecated
 -----------------------------------------------------------------------------------------------

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,12 +17,12 @@ search.app:
 ---
 # Work with fiscal year settings
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
+<!-- legacy procedure -->
 
-You can set the fiscal year period, and how it’s displayed, for your organization.  
+You can set the fiscal year period, and how it's displayed, for your organization.  
   
 > [!IMPORTANT]
->  After you set the fiscal year options, you can’t change them. Fiscal year options affect the way in which your organization's data is stored in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
+>  After you set the fiscal year options, you can't change them. Fiscal year options affect the way in which your organization's data is stored in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
   
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
   
@@ -32,7 +32,7 @@ You can set the fiscal year period, and how it’s displayed, for your organizat
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. [!INCLUDE[proc_settings_bus_management](../includes/proc-settings-bus-management.md)]  
+2. In the web app, go to **Settings** > **Business Management**.
   
 3. Click **Fiscal Year Settings**.  
   

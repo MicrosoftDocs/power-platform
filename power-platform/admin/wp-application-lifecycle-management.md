@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/03/2020
+ms.date: 05/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,6 +19,9 @@ search.app:
 # Application lifecycle management
 
 Application lifecycle management (ALM) is important as the applications your organization builds become more complex and as more of your company depends on their stability. In this topic we discuss using ALM to handle more complex scenarios.
+
+> [!NOTE]
+> Check out our new [application lifecycle management (ALM) guide for Power Platform](/power-platform/alm)!
 
 ALM is not a one-size-fits-all concept. It can vary from organization to organization and even within, based on the type of solution being built. If you were to look at a typical mission-critical solution, the following would be a good health check of your current Power Platform ALM maturity:
 

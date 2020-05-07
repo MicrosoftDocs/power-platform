@@ -17,8 +17,6 @@ search.app:
 ---
 # Use the Microsoft 365 admin center to manage your subscription 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
 [The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
   
  ![Microsoft 365 admin center](../admin/media/o365-admin-center.png "Microsoft 365 admin center")  
@@ -84,7 +82,7 @@ More information: [Contact Technical Support](get-help-support.md)
  ![Microsoft 365 admin center active users](../admin/media/o365-admin-center-manage-users.png "Microsoft 365 admin center active users")  
   
 > [!NOTE]
-> Model-driven apps in Dynamics 365 use [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) as its identity provider. You access model-driven apps in Dynamics 365 through an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID that is created and managed in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. For simplicity, we’ll refer to the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID as the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID in this documentation.  
+> Model-driven apps in Dynamics 365 use [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) as its identity provider. You access model-driven apps in Dynamics 365 through an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID that is created and managed in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. For simplicity, we'll refer to the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID as the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID in this documentation.  
   
  If your company uses on-premises [!INCLUDE[pn_Active_Directory](../includes/pn-active-directory.md)] for user identity, you have options that can simplify user management such as providing a single sign-on experience for your users. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage user account synchronization](../admin/manage-user-account-synchronization.md)  
   
@@ -96,12 +94,12 @@ More information: [Contact Technical Support](get-help-support.md)
   
 <a name="BKMK_SetPassword"></a>   
 ## Set the password expiration  
- Use the Security & privacy page to set how frequently a user’s password expires and the number of days before a user is notified of an upcoming expiration.  
+ Use the Security & privacy page to set how frequently a user's password expires and the number of days before a user is notified of an upcoming expiration.  
   
  ![Microsoft 365 admin center manage password expiration](../admin/media/o365-admin-center-password-expiration.png "Microsoft 365 admin center manage password expiration")  
   
 > [!TIP]
->  Note the information on this page about users doing their own password reset. To enable your users to be able to reset their passwords themselves, you’ll need to purchase an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] subscription and configure it for password self-service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Self-service password reset in Azure AD: how to enable, configure, and test self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset)  
+>  Note the information on this page about users doing their own password reset. To enable your users to be able to reset their passwords themselves, you'll need to purchase an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] subscription and configure it for password self-service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Self-service password reset in Azure AD: how to enable, configure, and test self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset)  
   
 <a name="BKMK_PasswordSelfSet"></a>   
 ## Configure self-service password reset and other settings in Azure  
@@ -113,7 +111,7 @@ More information: [Contact Technical Support](get-help-support.md)
   
 <a name="BKMK_AddDomain"></a>   
 ## Add your domain  
- Use the Manage domains page to add your domain to your subscription. When you add your own domain, user sign-ins can match your company’s URL. For example, instead of user@contoso.onmicrosoft.com, it could be user@contoso.com. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Verify your domain in Office 365](https://support.office.com/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)  
+ Use the Manage domains page to add your domain to your subscription. When you add your own domain, user sign-ins can match your company's URL. For example, instead of user@contoso.onmicrosoft.com, it could be user@contoso.com. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Verify your domain in Office 365](https://support.office.com/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)  
   
  ![Microsoft 365 admin center add your domain](../admin/media/o365-admin-center-add0domain.png "Microsoft 365 admin center add your domain")  
   

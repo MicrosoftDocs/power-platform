@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 02/13/2020
+ms.date: 05/01/2020
 ms.service: powerapps
 ms.custom: 
 ms.topic: article
@@ -27,15 +27,17 @@ search.app:
 The customizations and configurations described here can cause issues with the document management feature. 
 
 ## Components from an Iframe
-Opening a component from an Iframe in an entity form from a Unified Interface app will not succeed. For example, loading the **Document Associated Grid** for an entity form in an Iframe loads the grid in the Iframe but users will not be able to interact with the document records from the grid. 
+Opening a component from an Iframe in an entity form from a Unified Interface app will not succeed. For example, loading the Document Associated Grid for an entity form in an Iframe loads the grid in the Iframe but users will not be able to interact with the document records from the grid. 
 
 ## Third-party solutions that modify Document Management folders 
-Deploying third-party solutions that modify the folders used with the document management feature can cause unexpected behavior. 
+Deploying third-party solutions that modify the folders used with the Document Management feature can cause unexpected behavior. 
 Examples include the following: 
 - Creation of entity record level SharePoint folders. 
 - Renaming of previously auto-created entity record level SharePoint folders.
 - Moving previously auto-created entity record level SharePoint folders to another location.
 
+If you experience unexpected behavior with the document management feature caused by a third-party solution, contact the third-party solution vendor. 
+ 
 ## "File not found" error when adding a file from a SharePoint site
 If you receive a **File not found** error or encounter a problem while adding a file from a SharePoint site or SharePoint subsite in model-driven apps in Dynamics 365, the likely cause is that you have not created the document location records in the model-driven app to point to these SharePoint document libraries and folders.
 
@@ -60,10 +62,10 @@ Users cannot see documents when many entities are pointing to a SharePoint docum
 In Common Data Service you can create an entity and enable the Document management property for the entity. This allows for the entity to participate in integration with SharePoint. Power Apps and Common Data Service support only a one-to-many relationship (1:N) between any entity and a SharePoint document related entity. A many-to-one or a many-to-many relationship between an entity and a SharePoint document entity results in the app not listing the documents that exist in the SharePoint document library.
 
 ## Document location for child entities
-Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the **Documents** tab of the parent record. If no such location is created, child documents will not appear in the parent entity folder. Once the location is created, child documents will begin to appear in the parent entity folder.
+Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the Documents tab of the parent record. If no such location is created, child documents will not appear in the parent entity folder. Once the location is created, child documents will begin to appear in the parent entity folder.
 
 ## Document folder location for multiple lookups
-If the entity selected for the **Based on entity** folder structure has two lookups, documents will not be stored inside the entity folder, but will be stored in the root folder. For example, if the **Based on entity** folder structure is set to **Account**, and you have an entity with two lookup accounts, such as **Work Order**, the documents related to **Work Orders** will not be stored inside any account document location, but will be stored in the root folder.
+If the entity selected for the Based on entity folder structure has two lookups, documents will not be stored inside the entity folder, but will be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders will not be stored inside any account document location, but will be stored in the root folder.
 
 ### See also
 [Troubleshooting server-based authentication](troubleshooting-server-based-authentication.md) <br />

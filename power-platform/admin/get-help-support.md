@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 04/14/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -62,6 +62,9 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
    Based on the information you provided, you'll see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix. 
 
 4. If the guidance doesn't resolve your issue, scroll down and select **Create a support request** and fill in the fields in the form pages.
+
+   > [!NOTE]
+   > If you have one of the plans listed in [Prerequisites](#prerequisites), you can set the severity to a higher level than **Minimal**.
 
    > [!div class="mx-imgBorder"] 
    > ![](media/support-request-page2.png "Create a new support request")
