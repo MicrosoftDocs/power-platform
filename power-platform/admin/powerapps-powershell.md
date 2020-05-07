@@ -30,7 +30,7 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 > [!NOTE]
 > **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
 > 
-> The default endpoint is "prod". If a user wants to run a PowerShell script on the GCC environment, the -Endpoint parameter needs to be changed to "usgov" or "usgovhigh". DOD is not yet supported.
+> The default endpoint is "prod". If a user wants to run a PowerShell script targeting a GCC environment, the -Endpoint parameter needs to be changed to "usgov" for GCC Moderate or "usgovhigh" for GCC High. GCC DOD is not yet supported.
 > 
 > ```powershell
 > Add-PowerAppsAccount -Endpoint "usgov" 
