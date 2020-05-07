@@ -46,14 +46,31 @@ System administrators and customizers can start or stop auditing for an organiza
 > [!IMPORTANT]
 > For Customer Engagement (on-premises), you may notice that auditing can significantly increase the size of the organization database over time. You can delete audit logs by going to **Settings** > **Auditing** > **Audit Log Management**. Additionally, you may want to stop auditing for maintenance purposes. Stopping auditing stops tracking for the organization during the period until auditing is started again. When you start auditing again, the same auditing selection is maintained that was previously used.  
   
-## Start or stop auditing for an organization  
+## Start/stop auditing and set retention policy  
 This task requires the system administrator or customizer security role or equivalent permissions.  
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
 2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Audit settings**.
   
-3. Select the **Start Auditing** check box to start auditing. Clear the **Start Auditing** check box to stop all auditing.  
+   |      Setting |     Description    |
+   |--------------------|---------------------|
+   | Start Auditing   | Start or stop auditing.    |
+   | Log access | Log whenever the system is accessed, generally by signing in  |  
+   | Read logs | Logs will be sent to the [Office 365 Security and Compliance Center](https://protection.office.com/homepage) |
+
+3. You can set a retention period for how long audit logs are kept in a Common Data Service environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
+
+   |      Setting |     Description    |
+   |--------------------|---------------------|
+   | Set the retention policy for these logs   | Default: 30 days.   |
+   | Set a custom retention policy | Maximum: 100,000 days  |  
+
+   When new features are deployed, the audit retention period is set to **Forever** for all Common Data Service environments with existing audit data. The default audit retention period is 30 days for new environments and existing environments without any audit data. You can also change the audit retention value using the [Common Data Service Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview). 
+
+   Each audit log is stamped with the currently active retention period. Changing the retention period will not change already existing audit logs and is only applied to newly created audit logs. 
+
+4. Select **Save**.
   
 ## Set specific areas of the product to audit
 
@@ -117,5 +134,5 @@ System administrators or customizers can change the default audit settings for e
   
 4. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the Actions toolbar.  
 
-## Set the log retention policy
+
 

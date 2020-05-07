@@ -33,9 +33,8 @@ Enable auditing to track changes to your organization's data and maintain a log 
 
 3. Select **Settings** > **Audit and logs** > **Audit settings**. 
     
-|      Settings |     Description    |
+|      Setting |     Description    |
 |--------------------|---------------------|
-| **Audit Settings**           |
 | Start Auditing   | Start or stop auditing.    |
 | Log access | Log whenever the system is accessed, generally by signing in  |  
 | Read logs | Logs will be sent to the [Office 365 Security and Compliance Center](https://protection.office.com/homepage) |
