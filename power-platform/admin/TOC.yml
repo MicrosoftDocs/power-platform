@@ -213,7 +213,7 @@
           - name: OneNote
             href: set-up-onenote-integration-in-dynamics-365.md
           - name: Outlook
-            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook.md
+            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
           - name: SharePoint document locations
             href: create-edit-document-location-records.md
           - name: SharePoint sites

@@ -25,7 +25,7 @@ There are certain experiences that are currently not available with Dynamics 365
 
 - [Activity Logging](enable-use-comprehensive-auditing.md)
 - [AppSource](https://appsource.microsoft.com/?product=dynamics-365-business-central%3Bdynamics-365-for-customer-services%3Bdynamics-365-for-field-services%3Bdynamics-365-for-finance-and-operations%3Bdynamics-365-for-project-service-automation%3Bdynamics-365-for-sales) (that is, the ability to install Applications directly from AppSource)
-- [Organization Insights](https://appsource.microsoft.com/product/dynamics-365/mscrm.04931187-431c-415d-8777-f7f482ba8095)
+- Organization Insights
 - [CAFEx Integration](https://appsource.microsoft.com/product/dynamics-365/cafexliveassistfor365.27ac7522-68b2-44a2-9f36-da66a47e2b19)
 - [Channel Integration Framework](https://docs.microsoft.com/dynamics365/customer-service/channel-integration-framework/channel-integration-framework) 
 - [Connected Field Service](https://msdn.microsoft.com/library/mt744253.aspx)
@@ -35,7 +35,7 @@ There are certain experiences that are currently not available with Dynamics 365
 - [Insights, powered by InsideView](https://appsource.microsoft.com/product/dynamics-365/insideviewinc.b5386882-4312-4d69-879a-23081897c012)
 - [Mobile offline](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/configure-mobile-offline-synchronization-dynamics-365-phones-tablets)
 - [PowerBI “embedded” user dashboard experience](https://docs.microsoft.com/power-bi/service-connect-to-microsoft-dynamics-crm)
-- [Relevance Search](https://docs.microsoft.com/powerapps/user/search-records)
+- [Relevance Search](https://docs.microsoft.com/powerapps/user/relevance-search)
 - [Resource Scheduling Optimization](https://docs.microsoft.com/dynamics365/customer-engagement/common-scheduler/resource-scheduling-optimization)
 - [Versium Predict](https://docs.microsoft.com/dynamics365/customer-engagement/versium-predict/versium-predict)
 - [Power Platform admin center](https://docs.microsoft.com/power-platform/admin/admin-guide): the Power Platform admin center (<https://gcc.admin.powerplatform.microsoft.us>) is currently available and is the preferred means to manage your Dynamics 365 instances (environments). However, GCC customers should access the following URL to log a support ticket: <https://admin.powerplatform.microsoft.com/support>.
