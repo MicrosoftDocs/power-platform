@@ -55,25 +55,21 @@ This task requires the system administrator or customizer security role or equiv
   
 3. Select the **Start Auditing** check box to start auditing. Clear the **Start Auditing** check box to stop all auditing.  
   
+## Set specific areas of the product to audit
 
-
-
-
-
-
-4. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
+1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-   - **Audit user access**. Tracks when a user accesses model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, including the user name and time.  
+2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Legacy audit settings**.
+
+3. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
+  <!--  **Audit user access**. Tracks when a user accesses model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, including the user name and time.  -->
    - **Common Entities**. Tracks common entities like Account, Contact, Goal, Product, and User.  
-  
    - **Sales Entities**. Tracks sales-related entities like Competitor, Opportunity, Invoice, Order, and Quote.  
-  
    - **Marketing Entities**. Tracks Campaign entity activity.  
-  
    - **Customer Service Entities**. Tracks Case, Contract, Queue, and Service entity activity.  
   
-5. Select **OK**.  
+4. Select **OK**.  
 
 ## View audit logging details  
 System administrators can see activity for the entities that are enabled for audit logging.  
@@ -84,50 +80,32 @@ System administrators can see activity for the entities that are enabled for aud
   
 3. In the **Audit Summary View**, you can do the following:  
   
-   -   Select **Enable/Disable Filters** to turn on filtering. Then, you can filter on a specific event, such as **Delete** actions.  
-  
-   -   Choose an event to view specific details about the activity, such as field changes that were made during an update to a record and who performed the update.  
-  
-   -   Select the **Refresh** button  ![Refresh button](media/html-viewer-grid-refresh.png "Refresh button") to view the most recent activity. 
+   - Select **Enable/Disable Filters** to turn on filtering. Then, you can filter on a specific event, such as **Delete** actions.  
+   - Choose an event to view specific details about the activity, such as field changes that were made during an update to a record and who performed the update.  
+   - Select the **Refresh** button  ![Refresh button](media/html-viewer-grid-refresh.png "Refresh button") to view the most recent activity. 
 
 ## Enable or disable entities and fields for auditing  
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  
   
-### To enable or disable auditing for an entity  
+### Enable or disable auditing for an entity  
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
 2. Go to **Environments** > [select an environment] > expand **Audit and logs** > **Entity and Field Audit Settings**.
 
-
-
-Specify to audit specific areas of the product, as described in the following table via **Settings** > **Audit and logs** > **Legacy audit settings**.  
-
-|Auditing area|Enable the start of auditing for these entities|  
-|-------------------|-----------------------------------------------------|  
-|**Enable Auditing in the following areas**||
-|Common Entities|Account, Contact, Lead, Marketing List, Product, Quick Campaign, Report, Sales Literature, Security Role, and User|  
-|Sales Entities|Competitor, Invoice, Opportunity, Order, and Quote|  
-|Marketing Entities|Campaign|  
-|Customer Service Entities|Article, Case, Client Feedback, Contract, and Service|  
-
-
-
-
+3. Under **Components**, expand **Entities**.  
   
-4. Under **Components**, expand **Entities**.  
+4. Select the entity for which you want to enable or disable auditing.  
   
-5. Select the entity for which you want to enable or disable auditing.  
-  
-6. To start auditing, on the **General** tab, in the **Data Services** section, select the **Auditing** check box to enable auditing, or clear the **Auditing** check box to disable it.  
+5. To start auditing, on the **General** tab, in the **Data Services** section, select the **Auditing** check box to enable auditing, or clear the **Auditing** check box to disable it.  
   
    By default, when you start or stop auditing for an entity, you also start or stop auditing for all the fields of this entity.  
   
-7. Select **Save**.  
+6. Select **Save**.  
   
-8. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the toolbar.  
+7. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the toolbar.  
   
-### To enable or disable auditing for specific fields on an entity 
+### Enable or disable auditing for specific fields on an entity 
   
 1. Under the entity for which you want to enable or disable auditing with specific fields, select **Fields**.  
   
@@ -138,3 +116,6 @@ Specify to audit specific areas of the product, as described in the following ta
 3. Select **Save**.  
   
 4. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the Actions toolbar.  
+
+## Set the log retention policy
+
