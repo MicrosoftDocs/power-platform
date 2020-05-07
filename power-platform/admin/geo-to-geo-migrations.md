@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 04/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,8 +23,9 @@ We continue to open new datacenter regions for business services, and to add dat
 
 > [!IMPORTANT]
 > - Support for geo migration is limited and generally not available.
-> - To request a regional migration, please contact your account manager or  see [Technical Support](get-help-support.md).  
+> - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).  
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
+> - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](https://docs.microsoft.com/dynamics365/marketing/manage-marketing-instances).
 
 ## Impact of migrating  
  Moving an environment to a different region changes your tenant to be multiregional - enabling regional features in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  

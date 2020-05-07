@@ -6,7 +6,7 @@ manager: timrob
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/04/2020
+ms.date: 05/04/2020
 ms.author: astockli
 search.audienceType: 
   - admin
@@ -18,7 +18,7 @@ search.app:
 # Policies and Communications for service incidents
 
 ## Introduction 
-Microsoft regularly communicates work done to maintain and update model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, to ensure security, performance, and availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
+Microsoft regularly communicates work done to maintain and update Dynamics 365, Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services) and all integrated Apps to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these activities, communication is provided through the Microsoft 365 Admin center in the Message Center, and the Service health dashboard. From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment. For example, during a service incident we attempt to deliver an organization-specific email to impacted System Administrators.
   
 If you’re not sure who your admin is, see [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
   
@@ -28,22 +28,22 @@ If you’re not sure who your admin is, see [Find your administrator or support 
   
 ## Scheduled system updates
 
-The Dynamics 365 team regularly performs security updates and minor service updates on a weekly basis.  There are also two major events in April and October that are delivered through the weekly update mechanism, and details can be found in the [Business Applications Release Notes](https://docs.microsoft.com/dynamics365/release-plans/). 
+The Service teams regularly performs security updates and minor service updates on a weekly basis.  There are also two major events in April and October that are delivered through the weekly update mechanism, and details can be found in the [Business Applications Release Notes](https://docs.microsoft.com/dynamics365/release-plans/). 
 
 <a name="bkmk_SecurityUpdates"></a>   
 
 ### Security updates  
-The Dynamics 365 team regularly performs the following to ensure the security of the system:  
+The Service teams regularly performs the following to ensure the security of the system:  
   
 - Scans of the service to identify possible security vulnerabilities  
 - Assessments of the service to ensure that key security controls are operating effectively  
 - Evaluations of the service to determine exposure to any vulnerabilities identified by the Microsoft Security Response Center (MSRC), which regularly monitors external vulnerability awareness sites  
   
-The Dynamics 365 team identifies and tracks any identified issues, and takes swift action to mitigate risks when necessary.  
+The teams identify and track any identified issues, and takes swift action to mitigate risks when necessary.  
   
 **How do I find out about security updates?**  
   
-Because the Dynamics 365 team strives to apply risk mitigations in a way that doesn’t require service downtime, administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it is considered planned maintenance, and will be posted with the estimated impact duration, and the window when the work will occur.
+Because the Service teams strives to apply risk mitigations in a way that doesn’t require service downtime, administrators usually don’t see Message Center notifications for security updates. If a security update does require service impact, it is considered planned maintenance, and will be posted with the estimated impact duration, and the window when the work will occur.
   
  For more information about security, see [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
  
@@ -102,6 +102,8 @@ To limit the impact on users, the maintenance window is planned according to the
 | GBR           | crm11.dynamics.com | 6 PM to 3 AM |
 | ZAF           | crm14.dynamics.com | 5 PM to 2 AM |
 | UAE           | crm15.dynamics.com| 3 PM to 12 AM |
+| GER           | crm16.dynamics.com| 6 PM TO 3 AM |
+| CHN           | crm.dynamics.cn | 3 PM to 9 PM |
 
 ### Service Update Release Schedule
 To see the Service Update release schedule for your regions see our new [Released Versions](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#latest-version-availability) page.  
@@ -188,3 +190,6 @@ Once a customer has purchased model-driven apps in Dynamics 365, we send a serie
   
 ### Notice about Online Policies
 Please review [Notice About Online Policies and Similar Documents](https://www.microsoft.com/en-us/legal/intellectualproperty/mtl/onlinedisclaimer.aspx).
+
+If you have any feedback, please fill out our [survey](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxclc4NDdL5CqxoDKPhEMtxUQlNBTkhCWkZEQk1FM1JORU5XSTZFUFJNVyQlQCN0PWcu), and share your thoughts!
+

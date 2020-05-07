@@ -24,12 +24,15 @@ Currently, the admin center provides the following capabilities.
 
 |Feature  |Description  |
 |---------|---------|
-|Help + support     | Get a list of self-help solutions or create a support ticket for technical support. More information: [Get Help + Support](/power-platform/admin/get-help-support)       |
-|Analytics     | Get a detailed view of key metrics for Power Platform apps. More information: [Common Data Service analytics](/power-platform/admin/analytics-common-data-service)      |
 |Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. More information: [Manage environment settings](/power-platform/admin/admin-settings)|
+|Resources  |  More information: [View and manage resources](view-manage-resources.md)  |
+|Analytics     | Get a detailed view of key metrics for Power Platform apps. More information: [Common Data Service analytics](/power-platform/admin/analytics-common-data-service)      |
+|Help + support     | Get a list of self-help solutions or create a support ticket for technical support. More information: [Get Help + Support](/power-platform/admin/get-help-support)       |
 |Data integration| More information: [Integrate data into Common Data Service ](data-integrator.md)  |
-|Data Gateway| More information: [Set up data transfer between on-premises data and cloud services ](onpremises-data-gateway-management.md) |
+|Data gateways| More information: [Set up data transfer between on-premises data and cloud services ](onpremises-data-gateway-management.md) |
 |Data policies     | More information: [Create and manage data loss prevention policies](create-dlp-policy.md).       |
 
 ### See also
-[Blog: Introducing the Power Platform admin center](https://blogs.msdn.microsoft.com/crm/2018/09/25/introducing-the-power-platform-admin-center/)
+[Blog: Introducing the Power Platform admin center](https://blogs.msdn.microsoft.com/crm/2018/09/25/introducing-the-power-platform-admin-center/)<br />
+[Reference: Use the various admin centers](admin-centers.md)<br />
+[Reference: Videos and PowerPoint presentations](videos.md)

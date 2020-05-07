@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/20/2020
+ms.date: 04/15/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -102,6 +102,7 @@ For on-Premises data gateway in standard mode, users can be added in any of the 
 > [!NOTE]
 > - **Can Use** and **Can use + share** apply only to Power Apps and Power Automate. 
 > - While sharing gateways for **Can use** and **Can use + share** permission levels, you can restrict the data source type that the user can connect over the gateway. At least one data source type should be selected for the user to be successfully added.
+> - **Can Use** and **Can use + share** do not apply to custom connectors in Power Apps and Power Automate.
 
 > [!div class="mx-imgBorder"] 
 > ![Manage users](media/manage-gateway-users.png "Manage users")

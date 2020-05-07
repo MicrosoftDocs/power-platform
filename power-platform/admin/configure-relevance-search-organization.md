@@ -213,4 +213,4 @@ By default, some out-of-the-box system entities are included in Relevance Search
 [!INCLUDE[cc_privacy_crm_relevance_search](../includes/cc-privacy-crm-relevance-search.md)]
 
 ### See also  
- [Use Relevance Search for faster comprehensive results](https://docs.microsoft.com/powerapps/user/search-records)
+ [Use relevance search to search for records](https://docs.microsoft.com/powerapps/user/relevance-search)

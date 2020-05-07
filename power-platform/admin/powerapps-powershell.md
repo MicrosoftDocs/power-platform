@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/03/2020
+ms.date: 04/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -82,9 +82,6 @@ To run the PowerShell cmdlets for app creators, do the following:
 ### Prerequisite
 Users with a valid Power Apps license can perform the operations in these cmdlets, but they will only have access to the resources (for example, apps, flows, etc.) that have been created or shared with them.
 
-Check back for the availability of operation and access permissions for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and upcoming Power Platform admin roles.
-
-
 ### Cmdlet list - Maker Cmdlets
 > [!NOTE]
 > We have updated some of the cmdlets function names in the latest release in order to add appropriate prefixes to prevent collisions. See the table below for an overview of what has changed.
@@ -112,8 +109,6 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 
 - [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 Service administrator](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
 
-- Check back for availability of operation and access permissions for the upcoming Power Platform service admin role.
-
 ### Cmdlet list - Admin Cmdlets
 
 | Purpose | Cmdlets
@@ -131,7 +126,8 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Read, update, and delete custom connector permissions | Get-AdminPowerAppConnectorRoleAssignment *(previously Get-AdminConnectorRoleAssignment)*<br> Set-AdminPowerAppConnectorRoleAssignment *(previously Set-AdminConnectorRoleAssignment)* <br> Remove-AdminPowerAppConnectorRoleAssignment *(previously Remove-AdminConnectorRoleAssignment)* |
 | Read a user's Power Apps user settings, user-app settings, and notifications | Get-AdminPowerAppsUserDetails |
 | Read and delete a user's Power Automate settings, which are not visible to user, but that support flow execution | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails |
-| Create, read, update and delete data loss prevention policies for your organization | Get-AdminDlpPolicy *(previously Get-AdminApiPolicy)* <br> New-AdminDlpPolicy *(previously Add-AdminApiPolicy)* <br> Remove-AdminDlpPolicy *(previously Remove-AdminApiPolicy)* <br> Set-AdminDlpPolicy *(previously Set-AdminApiPolicy)* <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup <br/>Add-CustomConnectorToPolicy<br/> Remove-CustomConnectorFromPolicy|
+| Create, read, update and delete data loss prevention policies for your organization using a two-way classification - **Business** and **Non-Business** | Get-AdminDlpPolicy *(previously Get-AdminApiPolicy)* <br> New-AdminDlpPolicy *(previously Add-AdminApiPolicy)* <br> Remove-AdminDlpPolicy *(previously Remove-AdminApiPolicy)* <br> Set-AdminDlpPolicy *(previously Set-AdminApiPolicy)* |
+| Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*  |
 | Read and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> |
 | Read, add, or remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
 
@@ -356,25 +352,60 @@ Get-AdminPowerAppConnector
 
 Returns a list of all custom connector details in the tenant.
 
-### Data Loss Prevention (DLP) policy commands
+### Data loss prevention (DLP) policy commands 
 
-These cmdlets will control the DLP policies on your tenant.
+> [!NOTE]
+> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
 
-#### Display all policies
+These cmdlets control the DLP policies on your tenant.
+
+#### Create a DLP policy
+
+```powershell
+New-DlpPolicy
+```
+
+Creates a new DLP policy for the signed-in admin's tenant.
+
+#### Retrieve a list of of DLP objects
+
+```powershell
+Get-DlpPolicy
+```
+
+Gets policy objects for the signed-in admin's tenant.
+
+#### Update a DLP policy
+
+```powershell
+Set-DlpPolicy
+```
+
+Updates details of the policy, such as the policy display name.
+
+#### Remove a policy
+
+```powershell
+Remove-DlpPolicy
+```
+
+Deletes a DLP policy.
+
+#### Display all DLP policies
 
 ```powershell
 Get-AdminDlpPolicy
 ```
 
-Returns a list of all the policies.
+Returns a list of all DLP policies.
 
-#### Display a filtered list of policies
+#### Display a filtered list of DLP policies
 
 ```powershell
 Get-AdminDlpPolicy 'DisplayName'
 ```
 
-Uses the display name to filter the policies
+Uses the display name to filter the policy list.
 
 #### Display all 'Business data only' API connectors in a policy
 
@@ -382,7 +413,7 @@ Uses the display name to filter the policies
 Get-AdminDlpPolicy 'PolicyName' | Select –ExpandProperty BusinessDataGroup
 ```
 
-Lists the API connections that are in the *Business data only*(or *BusinessDataGroup*) field in an input policy.
+Lists the API connections that are in the *Business data only* (or *BusinessDataGroup*) field in an input policy.
 
 #### Add a connector to the 'Business data only' group
 
@@ -390,7 +421,7 @@ Lists the API connections that are in the *Business data only*(or *BusinessDataG
 Add-ConnectorToBusinessDataGroup -PolicyName 'PolicyName' –ConnectorName 'ConnectorName'
 ```
 
-Adds a connector to the 'Business data only' group in a given DLP policy. See the list of connectors by *DisplayName* and *ConnectorName* (used as input) here.
+Adds a connector to the *Business data only* group in a given DLP policy. See the list of connectors by *DisplayName* and *ConnectorName* (used as input) here.
 
 ### Block trial licenses commands
 
@@ -407,6 +438,7 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 ## Version History
 | Date | Updates |
 | --- | --- |
+| 04/23/2020 | Added new DLP policy cmdlets:<ul><li>New-DlpPolicy</li><li>Get-DlpPolicy</li><li>Set-DlpPolicy</li><li>Remove-DlpPolicy</li><li>Get-AdminDlpPolicy</li><li>Add-ConnectorToBusinessDataGroup</li></ul>
 | 12/20/2019| Added the new administrative cmdlets: Recover-AdminPowerAppEnvironment and Get-AdminPowerAppSoftDeletedEnvironment |
 | 12/05/2019| Provide a way for Power Platform admins to block users within their tenant from signing up for PowerApps/Flows trial licenses. |
 | 04/23/2018 | <ol> <li> Initial launch of the Power Apps cmdlets for app creators (preview) including management cmdlets for Environments, Apps, Flows, Power Automate approvals, Connections, and Custom Connectors </li> <li> Initial launch of the Power Apps cmdlets for administrators (preview) including administrative cmdlets for Environments, Apps, and Flows </li></ol>|
@@ -420,6 +452,7 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 | 04/29/2019 | Revised GCC terminology. |
 | 05/10/2019 | Revised links for cmdlets available on the PowerShell gallery to remove preset version. |
 | 05/20/2019 | Added support for environment-specific Data Loss Prevention (DLP) policies. |
+| 04/21/2020 | Added the new DLP cmdlets: New-DlpPolicy, Get-DlpPolicy, Set-DlpPolicy, Remove-DlpPolicy |
 
 ## Questions?
 

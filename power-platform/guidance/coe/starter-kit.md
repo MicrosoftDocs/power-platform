@@ -43,7 +43,8 @@ Watch a quick overview of the CoE Starter Kit.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI5]
 
-### Related resources
+## Related resources
 [Power Platform admin guide](/power-platform/admin/admin-documentation)<br/>
+[Power Platform ALM guide](/power-platform/alm)<br/>
 [Power Apps docs](https://docs.microsoft.com/powerapps)<br/>
 [Power Automate docs](https://docs.microsoft.com/power-automate)
