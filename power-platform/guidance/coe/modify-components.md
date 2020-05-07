@@ -45,7 +45,7 @@ If you'd prefer to use an Azure Active Directory (Azure AD) security group inste
 
     ![Get group members](media/coe74.png "Get group members")
 
-1. Select the **condition**, and then on the string expression, update **List_group_members** to **Get_group_members** in the body of the expression.<!--The expression should look like the highlighted area below. NOTE FROM EDITOR: Edit okay? Commenting this out because the graphic was removed.-->
+1. Select the **condition**, and then on the string expression, update **List_group_members** to **Get_group_members** in the body of the expression.
 
 1. Open the **No** branch of the condition, and remove the **Add member to group** action.
 

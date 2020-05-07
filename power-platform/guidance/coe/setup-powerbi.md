@@ -156,7 +156,7 @@ You'll now configure the Power App visuals in the Power BI dashboard to point to
 1. Resize and move the visual to the location you want. Delete the placeholder from the template and move your embedded app to the same place.
 
 **To configure the app on the Flow Detail page**
-<!--This step served more as a heading than a step, so I suggest breaking up the procedures with it. Also, please note the change to the graphic call in line 165.-->
+
 1. Go to the **Flow Detail** tab.
 1. Select the **Power App Visual** from **Visualizations**.
    Select the fields from your data set that you would like to use in the app.
@@ -164,7 +164,6 @@ You'll now configure the Power App visuals in the Power BI dashboard to point to
 
      ![Select admin_flowid and admin_flowenvironment from Flow for PowerApps Data](media/coe91.PNG "Select admin_flowid and admin_flowenvironment from Flow for PowerApps Data")
 
-1. Your **PowerApps Data** configuration should look like this now.<!--Seems to be a graphic missing.-->
 1. In the visual, select the environment of your CoE (where you imported the apps to).
 1. Select **Choose app**.
 1. Select **Admin – Access this flow**.

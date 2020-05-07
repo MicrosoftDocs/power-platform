@@ -87,7 +87,7 @@ We've created a starter set of templates for you. To access them, do the followi
 ![BrowseToLib](media\sp-upload-5.png)
 -->
 
-Ensure that you've set up the correct permissions for your SharePoint site; we recommend that you give view-only<!--Edit okay?--> access to your Power Users.
+Ensure that you've set up the correct permissions for your SharePoint site; we recommend that you give view-only access to your Power Users.
 
 More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939)
 

@@ -1,6 +1,6 @@
 ---
-title: "Example processes | MicrosoftDocs"
-description: 
+title: "Nurture with the CoE Power BI dashboard | MicrosoftDocs"
+description: "The Nurture section of the Center of Excellence (CoE) Power BI dashboard gives you the ability to identify your app and flow gurus."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform

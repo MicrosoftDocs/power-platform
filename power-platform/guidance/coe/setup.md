@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 # Set up the CoE Starter Kit
-<!--note from editor: The guidelines are to keep descriptions to a maximum of 145 characters. More won't bomb the build, but will be truncated.-->
+
 The Center of Excellence (CoE) Starter Kit is a collection of components and tools that are designed to help you get started with developing a strategy for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate. More information about individual components: [CoE Starter Kit explained](starter-kit-explained.md)
 
 In this article, you'll learn how to:
