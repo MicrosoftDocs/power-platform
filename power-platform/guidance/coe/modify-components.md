@@ -45,7 +45,7 @@ If you'd prefer to use an Azure Active Directory (Azure AD) security group inste
 
     ![Get group members](media/coe74.png "Get group members")
 
-1. Select the **condition** and on the string expression update **List_group_members** to **Get_group_members** in the body of the expression. The expression should look like the highlighted area below.
+1. Select the **condition**, and then on the string expression, update **List_group_members** to **Get_group_members** in the body of the expression.
 
 1. Open the **No** branch of the condition, and remove the **Add member to group** action.
 
@@ -75,7 +75,7 @@ Open the Template Catalog (canvas app) and edit the SharePoint connection to poi
 
 1. In the search bar under **Data sources**, enter **SharePoint**, select the SharePoint data source shown, and then select **Add a connection**.
 
-    ![Template Catalog setup - add a SharePoint connection](media/coe77.png)
+    ![Template Catalog setup - add a SharePoint connection](media/coe77.png "Template Catalog setup - add a SharePoint connection")
 
 1. Choose to connect directly, enter the URL of the library, and then select **Connect**.
 
