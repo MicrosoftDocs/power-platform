@@ -111,7 +111,7 @@ The following connectors can't be blocked by using DLP policies.
 <td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> Office 365 Groups </td>
+<td width="20%"> Microsoft 365 Groups </td>
 <td width="20%"> Power Automate for Admins</td>
 <td width="20%">  </td>
 <td width="20%"> Content Conversion</td>
