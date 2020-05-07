@@ -49,7 +49,7 @@ For information on provisioning environments, see [Create and manage environment
 
 Due to certain technological dependencies, the following features listed will not be available for general availability of Common Data Service services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release notes](https://go.microsoft.com/fwlink/p/?linkid=2010158).
 
-- [Search for records in an app](https://docs.microsoft.com/powerapps/user/search-records) or **Categorized Search** used for searching records across multiple entities will be unavailable.
+- [Search for records in an app](https://docs.microsoft.com/powerapps/user/search) or **Categorized Search** used for searching records across multiple entities will be unavailable.
 - [Office 365 Groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups) feature used for shared workspace for emails, conversations, files, and events in Common Data Service services will be unavailable.
 - [Online Management API](https://docs.microsoft.com/powerapps/developer/common-data-service/online-management-api) (Admin API) enables customers to create and manage the Common Data Service environments using REST API will be unavailable.
 - [Company News Timeline](https://docs.microsoft.com/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
@@ -61,7 +61,7 @@ Due to certain technological dependencies, the following features listed will no
   - [Data Export Service](https://appsource.microsoft.com/product/dynamics-365/mscrm.44f192ec-e387-436c-886c-879923d8a448)
   - [Connector for LinkedIn Lead Gen Forms](https://appsource.microsoft.com/product/dynamics-365/mscrm.dd228afa-64e7-4c9f-92ad-77e7f1334547?tab=overview)
   - [Gamification](https://appsource.microsoft.com/product/dynamics-365/mscrm.f6d23ec7-255c-4bd8-8c99-dc041d5cb8b3)
-  - [DXC Health360 Care Coordination](https://appsource.microsoft.com/product/dynamics-365/tribridge_health360.2ca8cb47-4e93-4e1c-af86-784041b4d8a9)
+  - DXC Health360 Care Coordination
 - [Voice of the Customer](https://docs.microsoft.com/dynamics365/customer-engagement/voice-of-customer/help-hub) solution used for sending surveys to customers and get their valuable feedback will not be available.
 - [Live Assist for Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x) Powered by [CaféX](https://www.cafex.com/products/live-assist-365/) is an integrated omnichannel solution for Common Data Service services that will not be available.
 - The following [Customer Service](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/help-hub) features will be unavailable: 

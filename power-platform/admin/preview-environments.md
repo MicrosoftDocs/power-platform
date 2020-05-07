@@ -78,7 +78,7 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 [1]: https://preview.admin.powerapps.com
 [2]: https://make.powerapps.com
 [3]: https://preview.web.powerapps.com
-[4]: https://preview.apps.powerapps.com/play
+[4]: https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview
 [5]: https://docs.microsoft.com/powerapps/whats-new
 [7]: https://preview.create.powerapps.com
 [8]: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1
