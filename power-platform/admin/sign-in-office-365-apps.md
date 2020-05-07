@@ -113,7 +113,7 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
 ## Direct sign in to Social Engagement  
  To directly sign in to the [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] service, use:  
   
- https://listening.microsoft.com/app/\<appID>  
+ https://listening.microsoft.com/app/<appID>  
   
  This URL, which includes the appID, is sent to the administrator in an email invitation.  
   

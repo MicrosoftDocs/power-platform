@@ -185,7 +185,6 @@ You use a different set of URLs to access Dynamics 365 US Government environment
     - Global discovery URL: https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/
 - GCC High: 
     - (Deprecated) Discovery URL: https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/
-    - Global discovery URL: https://globaldisco.crm.microsoftdynamics.us/api/discovery/v2.0
 
 ### Instance WebAPI
 

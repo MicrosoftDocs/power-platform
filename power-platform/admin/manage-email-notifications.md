@@ -57,6 +57,4 @@ The service team regularly sends email notifications to the administrators in yo
   
    ![Send Email Notifications](../admin/media/customer-driven-updatesendemailnotifications.PNG "Send Email Notifications")  
   
-### See also   
- [Blog: Managing Email notifications in Microsoft Dynamics CRM Online](https://blogs.msdn.com/b/crm/archive/2014/05/27/how-do-i-start-receiving-notification.aspx)   
- [Blog: Identifying Your Microsoft Dynamics CRM Online Administrator(s)](https://blogs.msdn.com/b/crm/archive/2014/05/27/how-to-identify-the-system-administrator-s-in-your-org-who-currently-receive-notifications.aspx)
+

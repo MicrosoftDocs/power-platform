@@ -38,7 +38,7 @@ For more information on the different roles for managing your tenant across the 
 
  **Key highlights**  
 
-- **Deprecating the solution**: Organization Insights, available as a preferred solution from [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.04931187-431c-415d-8777-f7f482ba8095?tab=Overview), will no longer be supported or available for use in future releases.  
+- **Deprecating the solution**: Organization Insights, available as a preferred solution from AppSource, will no longer be supported or available for use in future releases.  
 
 - **Deprecating Organization Insights dashboard**: This dashboard will be removed from Common Data Service in future releases. 
 
