@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/29/2020
+ms.date: 05/07/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -376,6 +376,7 @@ The ability to block connectors by using DLP policy and DLP policy support in th
 8. Search in the policy list view only works on the **Name** field.
 9. The following connectors are marked as blockable, but they can't be blocked: Microsoft Teams, Power Apps Notification, Computer Vision API, QnA Maker, LinkedIn, and Form Recognizer. Cloud PKI Management is marked as unblockable, but it can be blocked.
 10. Some environment admin profiles are getting evaluated as tenant admin profiles; however, these admins are unable to save their changes as tenant admins.
+11. Canvas apps assessment for DLP violations at launch time/run time does not work as expected.
 
 ### See also
 
