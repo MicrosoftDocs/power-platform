@@ -99,7 +99,7 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
   
 2. Create or choose a Microsoft 365 Group.  
   
-3. Select **Connectors**.  
+3. Select **Connect your apps**.  
   
    > [!div class="mx-imgBorder"] 
    > ![Select Microsoft 365 groups Connectors](media/office-365-groups-connectors.png "Select Microsoft 365 groups Connectors")
@@ -130,10 +130,6 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
 > - The fields in the card shown in the Group conversation are not customizable.  
 > - Nothing is required in model-driven apps in Dynamics 365 to make the connector work.  
 > - For sensitive information, you should connect your record to a private group where only approved members can view contents. For public groups, everyone in the org has access to view contents. See "Public and private Microsoft 365 groups" in [Learn more about groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).  
-  
-<a name="BKMK_KnownIssues"></a>   
-## Known issues  
- You need to have version [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)] or later, to install Microsoft 365 Groups. If Microsoft 365 Groups appears as an available solution in the [!INCLUDE[pn_crm_online_admin_center](../includes/pn-crm-online-admin-center.md)], but you receive the following error when trying to install: "Solution install failed. Please try again later. If the problem persists, contact customer support," you'll need to update your environment before you can install Microsoft 365 Groups.  
   
 ## Privacy notice  
  When a user leverages the Microsoft 365 groups feature to connect an Office Group to model-driven apps in Dynamics 365, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  
