@@ -43,7 +43,7 @@ From here you will see a dialog to specify the user or group as well as a list o
 > ![](media/connections-used-notifications.png "Connections used notifications")
 
 
-One of the more recent additions is the ability to share a flow with a SharePoint List or an Office 365 Group. In this scenario, the flow is available to all members of the group in the case of Office 365 groups. For SharePoint Lists, anyone with edit access to the list would have access to the flow. The flow would then show up with the ability to execute it from the application navigation.
+One of the more recent additions is the ability to share a flow with a SharePoint List or an Microsoft 365 Group. In this scenario, the flow is available to all members of the group in the case of Microsoft 365 groups. For SharePoint Lists, anyone with edit access to the list would have access to the flow. The flow would then show up with the ability to execute it from the application navigation.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/sharepoint-flow-menu.png "SharePoint Power Automate menu")
