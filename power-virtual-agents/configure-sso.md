@@ -199,8 +199,7 @@ OAuth prompt.
 +         else
 +           return next(action);
 +      });
- ...
-})().catch(err => console.error("An error occurred: " + err));
++})().catch(err => console.error("An error occurred: " + err));
 
 </script>
 ```
