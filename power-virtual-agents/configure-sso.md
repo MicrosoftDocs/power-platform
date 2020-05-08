@@ -141,20 +141,20 @@ OAuth prompt.
 * Update `BOT_ID` by putting in your bot's ID that you copied earlier
 
 ```diff
-<script>
-
-  (async function main() {
-
-        // Add your BOT ID below 
++ <script>
++
++  (async function main() {
++
++        // Add your BOT ID below 
 +        var BOT_ID = "<BOT ID>";
-        var theURL = "https://bots.ppe.customercareintelligence.net/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
-		
-	   const { token } = await fetchJSON(theURL);
-	   const directLine = window.WebChat.createDirectLine({ token });
-     
-+      const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
-+          const { type } = action;
-+           if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
++        var theURL = "https://bots.ppe.customercareintelligence.net/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
++		
++	   const { token } = await fetchJSON(theURL);
++	   const directLine = window.WebChat.createDirectLine({ token });
++     
++          const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
++           const { type } = action;
++            if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
 +               const activity = action.payload.activity;
 +               let resourceUri;
 +               if (activity.from && activity.from.role === 'bot' &&
