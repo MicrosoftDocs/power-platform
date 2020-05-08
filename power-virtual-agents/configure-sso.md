@@ -105,7 +105,7 @@ OAuth prompt.
 
 ```diff
 <script>
- +function getOAuthCardResourceUri(activity) {
+ + function getOAuthCardResourceUri(activity) {
  +   if (activity &&
  +        activity.attachments &&
  +        activity.attachments[0] &&
@@ -195,6 +195,9 @@ OAuth prompt.
 +         else
 +           return next(action);
 +      });
+ ...
+})().catch(err => console.error("An error occurred: " + err));
+</script>
 ```
 
 #### Full sample code
