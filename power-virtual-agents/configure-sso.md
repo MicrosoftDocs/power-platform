@@ -40,14 +40,14 @@ Follow the steps to configure your Power Virtual Agents' bot to accept OBO token
 
 ### 1. Create an app registration in Azure Active Directory for your client application
 
+* Navigate to Manage --> Channels --> Mobile app. Copy your bot's `Bot ID` and `Tenant ID` as you'll need it later.
 * Navigate to https://portal.azure.com
-* Select the 'Azure Active Directory Resource'
-* Click on 'New Registration' -- Fill out Name, Selecting Single / Multitenant and click 'Next'
-* Once the resource is created, go to the Authentication
-* Add the host address into the `Redirect URI` field and make sure that `Web` is selected as the Type. Also ensure
-that `Id Tokens` and `Access` Tokens are selected.
-* Click 'Save' at the top
-* Take a note of the `Client ID` and your `Directory ID`.
+* Create a new 'Application Registration' - [click here](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)
+* Click on 'New Registration' -- Fill out Name, "	Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)" and click 'Register'
+* Once the resource is created, go to the 'Authentication' --> '+ Add a platform' --> 'Web' 
+* Add `https://token.botframework.com/.auth/web/redirect` in 'Redirect URI'. Also ensure that `Id Tokens` and `Access` Tokens are selected.
+* Click 'Configure'
+* Click 'Overview', take a note of the `Application (client) ID` and your `Directory (tenant) ID`.
 
 ### 2. Create an app registration in Azure Active Directory for your bot application
 
