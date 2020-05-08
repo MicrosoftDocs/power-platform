@@ -45,7 +45,7 @@ Follow the steps to configure your Power Virtual Agents' bot to accept OBO token
 * Create a new 'Application Registration' - [click here](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)
 * Click on 'New Registration' -- Fill out Name, "	Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)" and click 'Register'
 * Once the resource is created, go to the 'Authentication' --> '+ Add a platform' --> 'Web' 
-* Add `https://token.botframework.com/.auth/web/redirect` in 'Redirect URI'. Also ensure that `Id Tokens` and `Access` Tokens are selected.
+* Add the full URL to the page where your chat canvas will be hosted (eg. `https://10.127.97.163:8081/sso-<bot_id>.html`) in 'Redirect URI'. Also ensure that `Id Tokens` and `Access` Tokens are selected.
 * Click 'Configure'
 * Click 'Overview', take a note of the `Application (client) ID` and your `Directory (tenant) ID`.
 
