@@ -101,7 +101,8 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
   
 3. Select **Connectors**.  
   
-   ![Select Microsoft 365 groups Connectors.](../admin/media/office-365-groups-connectors.png "Select Microsoft 365 groups Connectors.")  
+   > [!div class="mx-imgBorder"] 
+   > ![Select Microsoft 365 groups Connectors](media/office-365-groups-connectors.png "Select Microsoft 365 groups Connectors")
   
 4. Scroll down to **Dynamics 365**, and then select **Add**.  
   
