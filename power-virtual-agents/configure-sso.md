@@ -76,7 +76,6 @@ The Token Exchange URL is used to exchange the OBO token for the requested acces
 * Configure Microsoft Authentication Library (MSAL) by adding this code into your `<script>` tag:
 
 ```diff
-  …
 <head>
 + <script>
 +   var clientApplication;
@@ -97,53 +96,48 @@ The Token Exchange URL is used to exchange the OBO token for the requested acces
 +     } ());
 + </script>
 </head>
-  …
 ```
 
 * Insert the following methods to retrieve the `resourceUrl` and exchange your current token for a token requested by the
 OAuth prompt.
 
 ```diff
-  …
-<script>
-...
- + function getOAuthCardResourceUri(activity) {
- +   if (activity &&
- +        activity.attachments &&
- +        activity.attachments[0] &&
- +        activity.attachments[0].contentType === 'application/vnd.microsoft.card.oauth' &&
- +        activity.attachments[0].content.tokenExchangeResource) {
- +          // asking for token exchange with AAD
- +          return activity.attachments[0].content.tokenExchangeResource.uri;
- +    }
- + }
++ <script>
++ function getOAuthCardResourceUri(activity) {
++   if (activity &&
++        activity.attachments &&
++        activity.attachments[0] &&
++        activity.attachments[0].contentType === 'application/vnd.microsoft.card.oauth' &&
++        activity.attachments[0].content.tokenExchangeResource) {
++          // asking for token exchange with AAD
++          return activity.attachments[0].content.tokenExchangeResource.uri;
++    }
++ }
  
- + function exchangeTokenAsync(resourceUri) {
- +   let user = clientApplication.getAccount();
- +    if (user) {
- +      let requestObj = {
- +        scopes: [resourceUri]
- +      };
- +      return clientApplication.acquireTokenSilent(requestObj)
- +        .then(function (tokenResponse) {
- +          return tokenResponse.accessToken;
- +          })
- +          .catch(function (error) {
- +            console.log(error);
- +          });
- +          }
- +          else {
- +          return Promise.resolve(null);
- +    }
- + }
- ...
- </script>
++ function exchangeTokenAsync(resourceUri) {
++   let user = clientApplication.getAccount();
++    if (user) {
++      let requestObj = {
++        scopes: [resourceUri]
++      };
++      return clientApplication.acquireTokenSilent(requestObj)
++        .then(function (tokenResponse) {
++          return tokenResponse.accessToken;
++          })
++          .catch(function (error) {
++            console.log(error);
++          });
++          }
++          else {
++          return Promise.resolve(null);
++    }
++ }
++ </script>
    …
 ```
 * Next, set up the interceptor. Within the `main` method, add the following conditional to your `store`
 
 ```diff
-  …
 <script>
 
   (async function main() {
@@ -206,7 +200,6 @@ OAuth prompt.
 })().catch(err => console.error("An error occurred: " + err));
 
 </script>
-  …
 ```
 
 #### Full sample code
