@@ -207,7 +207,7 @@ OAuth prompt.
 #### Full sample code
 Here's the full sample code to configure Single Sign-on
 
-	```HTML
+	```HTML 
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -486,10 +486,7 @@ Here's the full sample code to configure Single Sign-on
 	  </script>
 	</body>
 	</html>
-```
-
-
-
+	```
 
 ## Compliance considerations
 Security and privacy considerations - scope, token caching, etc.
