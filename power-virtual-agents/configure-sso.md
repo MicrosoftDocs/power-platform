@@ -104,6 +104,7 @@ The Token Exchange URL is used to exchange the OBO token for the requested acces
 OAuth prompt.
 
 ```diff
+  …
 <script>
 ...
  + function getOAuthCardResourceUri(activity) {
@@ -137,10 +138,12 @@ OAuth prompt.
  + }
  ...
  </script>
+   …
 ```
 * Next, set up the interceptor. Within the `main` method, add the following conditional to your `store`
 
 ```diff
+  …
 <script>
 
   (async function main() {
@@ -203,6 +206,7 @@ OAuth prompt.
 })().catch(err => console.error("An error occurred: " + err));
 
 </script>
+  …
 ```
 
 #### Full sample code
