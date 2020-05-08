@@ -73,7 +73,9 @@ The Token Exchange URL is used to exchange the OBO token for the requested acces
 ### 4. Update your custom canvas to intercept sign-in prompts
 
 * Update your `index.html` to intercept login card request and exchange your token (see sample below)
-* Configure Microsoft Authentication Library (MSAL) by adding this code into your `<script>` tag:
+* Configure Microsoft Authentication Library (MSAL) by adding this code into your `<script>` tag
+* Update `clientId` with the Custom canvas ID you copied earlier
+* Replace `<Directory ID>` with your tenant's ID you copied earlier
 
 ```diff
 <head>
@@ -136,6 +138,7 @@ OAuth prompt.
    …
 ```
 * Next, set up the interceptor. Within the `main` method, add the following conditional to your `store`
+* Update `BOT_ID` by putting in your bot's ID that you copied earlier
 
 ```diff
 <script>
@@ -143,7 +146,7 @@ OAuth prompt.
   (async function main() {
 
         // Add your BOT ID below 
-        var BOT_ID = "<BOT ID>";
++        var BOT_ID = "<BOT ID>";
         var theURL = "https://bots.ppe.customercareintelligence.net/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
 		
 	   const { token } = await fetchJSON(theURL);
