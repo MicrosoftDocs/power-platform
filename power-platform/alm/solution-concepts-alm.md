@@ -81,11 +81,12 @@ processes:
 Every app you create or customization you make is part of a solution. Because
 every solution has a publisher, you should create your own publisher rather than use the default<!--Suggested, to avoid a momentary confusion.-->. You specify the publisher when you create a solution.
 
-The base publisher of a solution that defines a component is considered the
-owner and controls what changes other publishers of the solution are allowed to make or
-restricted from making. It's possible to move the ownership of a component from one
-solution to another within the same publisher, but not across publishers. Because of this, it's often best to define a single publisher so you can change the
-layering model across publishers later.
+The publisher of a solution where a component is created is considered the owner of 
+that component. The owner of a component controls what changes other publishers of 
+solutions including that component are allowed to make or restricted from making. It 
+is possible to move the ownership of a component from one solution to another within 
+the same publisher, but not across publishers. Because of this, it's often best to 
+define a single publisher so you can change the layering model across solutions later.
 
 The solution publisher specifies who developed the app. For this reason, you
 should create a solution publisher name that's meaningful.
