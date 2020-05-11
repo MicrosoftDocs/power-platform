@@ -81,7 +81,7 @@ The Token Exchange URL is used to exchange the OBO token for the requested acces
 <head>
 + <script>
 +   var clientApplication;
-+     (function ()
++     (function () {
 +       var msalConfig = {
 +           auth: {
 +             clientId: '<Client ID [CanvasClientId]>',
