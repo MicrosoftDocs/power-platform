@@ -419,10 +419,6 @@
         href: web-application-requirements.md
     - name: Platform architecture
       items: 
-      - name: "Preview: About on-premises gateway"
-        href: wp-onpremises-gateway.md
-      - name: "Preview: On-premises data gateway management"
-        href: onpremises-data-gateway-management.md
       - name: About environments 
         href: wp-environments.md
       - name: Common Data Service 
@@ -556,6 +552,12 @@
         href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
+    - name: Data gateways
+      items: 
+      - name: "Preview: About on-premises gateway"
+        href: wp-onpremises-gateway.md
+      - name: "Preview: On-premises data gateway management"
+        href: onpremises-data-gateway-management.md
     - name: Manage data
       items: 
       - name: Add or remove sample data 
