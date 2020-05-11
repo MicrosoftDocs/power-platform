@@ -457,6 +457,8 @@
           href: create-dlp-policy.md
         - name: Manage DLP policies
           href: prevent-data-loss.md
+        - name: Data loss prevention SDK 
+          href: data-loss-prevention-sdk.md
       - name: Configure field-level security
         items:
         - name: Overview
