@@ -91,11 +91,13 @@ The following assets depend on the CoE Settings entity:
 
 | Name | Setting value |
 |------|------------|
-| Brand Logo | Link to your logo as an image file |
+| Company Name | The name of your company as you woudl like it shown in apps and reports
+|Brand Logo | Link to your logo as an image file |
 | Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCC)
 | Brand Secondary Color        | Hexadecimal value of your secondary brand color (\#DDDDDD)                                                    |
 | Email End User Support       | Email address for your helpdesk or user computing support team                                        |
 | Email Maker Support          | Email address for your Microsoft Power Platform maker support team                                              |
+| Tenant Type | The type of tenant you have. Possible Values:<br> **Commercial** _(use if your url is https://make.powerapps.com)_ <br> **GCC** _(use if your url is https://make.gov.powerapps.us)_ <br> **GCC High** _(use if your url is https://make.high.powerapps.us)_
 | Link to Community Channel    | Link to your internal Microsoft Power Platform community (for example, Yammer, Teams)                            |
 Link to Learning Resource    | Link to internal Microsoft Power Platform learning resources, or you might link to aka.ms/PowerUp    |
 Link to Policy Documentation | Link to internal Microsoft Power Platform policies; for example, a Teams channel or SharePoint site |
