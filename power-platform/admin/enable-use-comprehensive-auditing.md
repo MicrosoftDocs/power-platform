@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 05/08/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -53,37 +53,6 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Report Viewed  |Logging when a report is viewed. Critical customer content information might be displayed on the report.  |
 |Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and is vulnerable to threats.  |
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
-
-### Microsoft Social Engagement logging   
-
-The following Microsoft Social Engagement (MSE) entities and actions are logged.
-
-|MSE entity  |MSE pages/panels/controls logged  |
-|---------|---------|
-|Search Topic Category      |Create, Rename, Delete          |
-|Search Topic      |Create, Update, Delete          |
-|Custom Source      |Create, Update, Delete           |
-|Blocked Keyword      |Add, Delete          |
-|Blocked Domain      |Add, Delete          |
-|Stream      |Create, Update, Delete         |
-|Post (acquired)   |Internal & External Actions   |
-|Post (published)   |Send   |
-|Author   |Add (GDPR), Delete (GDPR), Delete   |
-|Activity Map   |Create, Update, Delete   |
-|Alert   |Create, Update, Delete   |
-|Preference   |Update   |
-|Social Profile   |Create, Update, Reauthenticate, Delete   |
-|User   |Edit Role, E-mail   |
-|Azure Event Hubs   |Create, Update, Delete   |
-|Model-driven apps in Dynamics 365  |Create, Update, Refresh, Delete   |
-|Allowed Domain   |Add, Delete   |
-|Automation Rule   |Create, Update, Delete   |
-|AR Notification   |Enable, Disable   |
-|Tag   |Add, Update, Delete   |
-|Label   |Add, Update Delete    |
-|Search Language   |Add, Delete   |
-|Adaptive Sentiment   |Enable, Disable, Reset   |
-|Other Global Settings   |Update   |
 
 ## Base schema
 Schemas define which fields are sent to the Office 365 Security and Compliance Center.  Some fields are common to all applications that send audit data to Office 365, while others are specific to model-driven apps in Dynamics 365. The Base schema contains the common fields. 

@@ -35,21 +35,20 @@ The *Archive and Clean Up* flows will archive unneeded apps to a SharePoint libr
 
 ### Create the site
 
-If you do not already have a SharePoint Site for CoE Admins in your tenant, create a new team one now for them to access.
-This site will be specified later in the following environmental variable: *Archive Site URL (SharePoint Site)*
+If you don't already have a SharePoint Site for CoE Admins in your tenant, create a new team one now for them to access. This site will be specified later in the environmental variable *Archive Site URL (SharePoint Site)*.
 
 More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
 
 ### Create the library
 
-We have created a helper flow to create the library for you, see the following zip file: *CreateCoEArchivalDocLibraryinSP.zip*
+We've created a helper flow to create the library for you. See the following zip file: *CreateCoEArchivalDocLibraryinSP.zip*.
 
-1. Download and import this zipped flow into your CoE environment.
+1. Download and import this flow into your CoE environment.
 
-2. Ensure the flow is turned on and run it
-3. When complete, you will have a Doc Lib named *PowerAppsArchive*
+2. Ensure that the flow is turned on, and run it.
+3. When the flow is completed, you'll have a document library named PowerAppsArchive.
 
-Ensure you set up the correct permissions for your SharePoint site; we recommend that only your admin team have Contribute access to the site.
+Ensure that you set up the correct permissions for your SharePoint site; we recommend that only your admin team have Contribute access to the site.
 
 More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939).
 
@@ -74,14 +73,14 @@ This step should be completed after you import the solution. Environment variabl
 
 All flows in this solution depend on all environment variables' being configured.
 
-1. You may see an error at the top of the Power Apps maker portal, notifying you that environment variables need to be configured.
+1. You might see an error at the top of the Power Apps maker portal, notifying you that environment variables need to be configured.
    > [!NOTE]
    > For the Audit and Report Components solution, five environment variables need to be configured.
    
    ![Environment variables need to be updated](media/coe7.png "Environment variables need to be updated")
 
-    >[!TIP]
-    >To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
+   >[!TIP]
+   >To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
 
 1. Select **See Environment Variables** to set the values as described in the following table.
 
@@ -89,7 +88,7 @@ All flows in this solution depend on all environment variables' being configured
    |------|---------------|
    | Archive Site URL (SharePoint Site)  | The *Archive and Clean Up* flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library). Leave this blank if you're not planning to use the *Archive and Clean Up* flow.
    | Archive Folder                      | Folder (document library) in the SharePoint site where the .msapp file should be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library). Leave this blank if you're not planning to use the *Archive and Clean Up* flow.   |
-   | Auto Delete On Archive | Determines if in apps are deleted when they are archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. |
+   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. |
    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
    | Power Platform Admin Security Group | The *Admin \| Find and add admins as owners for apps that leverage certain connectors* flow adds the Admin security group to apps. Configure the Admin security group first, then enter the Azure AD group ID (Object Id) of the group here. Note: Be sure you enter the Object Id, not an email address. |
 
