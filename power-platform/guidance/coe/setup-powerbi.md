@@ -24,7 +24,9 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 
 You can either get the CoE Power BI dashboard from AppSource or download the Power BI file and configure it in Power BI Desktop, which will allow you to make changes to it. Both options are described below; both options require you to get the environment URL first.
 
-Before setting up the Power BI dashboard, you must have installed the [CoE Core Components solution](setup-core-components.md).
+> [!NOTE]
+> Before setting up the Power BI dashboard, you must have installed the [CoE Core Components solution](setup-core-components.md).<br>
+> Before you see data in the dashboard, the [Core Solution Sync Flows](core-components.md#admin--sync-template-v2) will need to have completed their runs.
 
 ## Get the environment URL
 
