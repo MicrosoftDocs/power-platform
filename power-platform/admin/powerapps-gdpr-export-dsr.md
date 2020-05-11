@@ -128,7 +128,7 @@ With the introduction of the Common Data Service, if a database is created withi
 ## Step 3: Export personal data contained within canvas apps created by the user
 
 ### Power Apps portal
-A user can export an app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export a canvas app, see [Exporting a canvas app](environment-and-tenant-migration.md#exporting-a-canvas-app).
+A user can export an app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export a canvas app, see [Exporting a canvas app](../alm/environment-and-tenant-migration.md#exporting-a-canvas-app).
 
 ### Power Apps Admin center
 An administrator can export apps created by a user starting from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
@@ -149,7 +149,7 @@ An administrator can export apps created by a user starting from the [Power Apps
 
     ![Give a user access](./media/powerapps-gdpr-export-dsr/grant-access.png)
 
-5. Once you have access to each of the user's apps you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](environment-and-tenant-migration.md#exporting-a-canvas-app).
+5. Once you have access to each of the user's apps you can export a canvas app from the [Power Apps portal](https://make.powerapps.com). For step-by-step instructions on how to export an app, see [Exporting a canvas app](../alm/environment-and-tenant-migration.md#exporting-a-canvas-app).
 
 ### PowerShell cmdlets for admins
 Administrators can export apps created by a user by using the **Get-AdminApp** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
