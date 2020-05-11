@@ -314,59 +314,57 @@
           href: wp-task-automation-flow.md    
     - name: Manage users 
       items:     
-      - name: Configure user security
-        items:
-        - name: Overview of user security
-          href: grant-users-access.md
-        - name: View active users  
-          href: admin-view-user-licenses.md
-     #  - name: User identity and access model
-     #  - name: Best practice recommendations 
-        - name: Create users and assign security roles
-          href: create-users-assign-online-security-roles.md
-        - name: Reset a user's password
-          href: reset-users-password.md          
-        - name: Assign licenses to users
-          href: create-users-assign-online-security-roles.md#add-a-license-to-a-user-account
-        - name: Assign service admin role to users
-          href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
-        - name: Add users to an environment
-          href: add-users-to-environment.md
-        - name: Configure user security to resources
-          href: database-security.md
-        - name: Configure user access to an environment
-          href: control-user-access.md  
-        - name: View user profile
-          href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
-        - name: Assign security roles
-          items:  
-          - name: About security roles and privileges
-            href: security-roles-privileges.md
-      #   - name: Automatic role assignment by the system
-          - name: Use service admin roles to manage your tenant
-            href: use-service-admin-role-manage-tenant.md
-          - name: Create or edit a security role
-            href: create-edit-security-role.md
-          - name: Copy a security role
-            href: copy-security-role.md
-        - name: Create an administrative user
-          href: prevent-elevation-security-role-privilege.md
-        - name: Troubleshoot access issues
-          href: troubleshooting-user-needs-read-write-access-organization.md
-        - name: Assign security roles to a form
-          href: assign-security-roles-form.md       
-    #    - name: Manage user account synchronization    # This topic should be removed, on-prem focus
-    #      href: manage-user-account-synchronization.md       
-        - name: Hierarchy security to control access
-          href: hierarchy-security.md
-        - name: Add or remove sales territory members
-          href: add-remove-territory-members.md
-        - name: User session management
-          href: user-session-management.md
-        - name: Conditional access with Azure AD 
-          href: restrict-access-online-trusted-ip-rules.md
-        - name: B2B collaboration with Azure AD
-          href: invite-users-azure-active-directory-b2b-collaboration.md    
+      - name: Overview of user security
+        href: grant-users-access.md
+      - name: View active users  
+        href: admin-view-user-licenses.md
+    #  - name: User identity and access model
+    #  - name: Best practice recommendations 
+      - name: Create users and assign security roles
+        href: create-users-assign-online-security-roles.md
+      - name: Reset a user's password
+        href: reset-users-password.md          
+      - name: Assign licenses to users
+        href: create-users-assign-online-security-roles.md#add-a-license-to-a-user-account
+      - name: Assign service admin role to users
+        href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
+      - name: Add users to an environment
+        href: add-users-to-environment.md
+      - name: Configure user security to resources
+        href: database-security.md
+      - name: Configure user access to an environment
+        href: control-user-access.md  
+      - name: View user profile
+        href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
+      - name: Assign security roles
+        items:  
+        - name: About security roles and privileges
+          href: security-roles-privileges.md
+    #   - name: Automatic role assignment by the system
+        - name: Use service admin roles to manage your tenant
+          href: use-service-admin-role-manage-tenant.md
+        - name: Create or edit a security role
+          href: create-edit-security-role.md
+        - name: Copy a security role
+          href: copy-security-role.md
+      - name: Create an administrative user
+        href: prevent-elevation-security-role-privilege.md
+      - name: Troubleshoot access issues
+        href: troubleshooting-user-needs-read-write-access-organization.md
+      - name: Assign security roles to a form
+        href: assign-security-roles-form.md       
+  #    - name: Manage user account synchronization    # This topic should be removed, on-prem focus
+  #      href: manage-user-account-synchronization.md       
+      - name: Hierarchy security to control access
+        href: hierarchy-security.md
+      - name: Add or remove sales territory members
+        href: add-remove-territory-members.md
+      - name: User session management
+        href: user-session-management.md
+      - name: Conditional access with Azure AD 
+        href: restrict-access-online-trusted-ip-rules.md
+      - name: B2B collaboration with Azure AD
+        href: invite-users-azure-active-directory-b2b-collaboration.md    
     - name: Analytics
       items: 
       - name: Common Data Service analytics 
@@ -448,7 +446,8 @@
       - name: System and application users
         href: system-application-users.md
       - name: Configure user security
-        href: manage-users-overview.md
+        href: database-security.md
+      #  href: manage-users-overview.md
       - name: Configure environment security 
         items: 
         - name: Control user access to environments
