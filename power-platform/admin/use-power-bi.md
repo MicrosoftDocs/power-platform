@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/15/2020
+ms.date: 05/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,8 +32,6 @@ The [!INCLUDE[pn_power_bi_for_office_365_long](../includes/pn-power-bi-for-offic
    - **Sales Analytics for Dynamics 365**  
   
    - **Customer Service Analytics for Dynamics 365**  
-  
-   - **Microsoft Dynamics 365 - Social Engagement**  
   
 3. For the Sales Analytics and Service Analytics content packs, enter the URL of your environment, such as *<https://OrganizationName.crm.dynamics.com>*, where *OrganizationName* is the organization name of your environment, and click **Next**.  
   
