@@ -147,7 +147,7 @@ OAuth prompt.
 +
 +        // Add your BOT ID below 
 +        var BOT_ID = "<BOT ID>";
-+        var theURL = "https://bots.ppe.customercareintelligence.net/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
++        var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
 +		
 +	   const { token } = await fetchJSON(theURL);
 +	   const directLine = window.WebChat.createDirectLine({ token });
