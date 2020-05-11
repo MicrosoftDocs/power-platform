@@ -45,13 +45,11 @@ There are a number of other business application apps and services that are not 
 
 - [Microsoft Dynamics 365 Marketing](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/overview)
 - [Microsoft Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/)
-- [Microsoft Dynamics Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-started) – This is a feature that cannot be used by Government customers, worldwide.
 - [Microsoft Business Central](https://docs.microsoft.com/dynamics365/business-central/index)
 - [Microsoft Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview)
 - [Microsoft Dynamics 365 AI for Customer Service Insights](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/overview)
 - [Microsoft Dynamics 365 AI for Market Insights](https://docs.microsoft.com/dynamics365/ai/market-insights/overview)
 - [Microsoft Dynamics 365 AI for Sales](https://docs.microsoft.com/dynamics365/ai/sales/overview)
-- [Microsoft Dynamics Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-started) – This is a feature that cannot be used by Government customers, worldwide.
 - [Microsoft Dynamics Voice of the Customer](https://docs.microsoft.com/dynamics365/customer-engagement/voice-of-customer/get-feedback-surveys) – Please note that while this is not available in GCC, it is available to install into a customer’s Instance(s) running GCC services; all integration points will work as they do in our non-GCC environments. 
 - [Microsoft Dynamics 365 for Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/) - Please note that while this is not available in GCC, it is available to purchase and associate to a customer’s tenant running GCC services. This option is not available for GCC High customers.
 - [Microsoft Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/) - Please note that while this is not available in GCC, it is available to purchase and associate to a customer’s tenant running GCC services. This option is not available for GCC High customers.

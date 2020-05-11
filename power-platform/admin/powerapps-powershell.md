@@ -258,7 +258,7 @@ Get-AdminPowerAppsUserDetails -OutputFilePath '.\adminUserDetails.txt' –UserPr
 
 The above command will store the Power Apps user details (basic usage information about the input user via their user principal name) in the specified text file. It will create a new file if there is no existing file with that name, and overwrite the text file if it already exists.
 
-#### Set logged in user as the owner of a PowerApp
+#### Set logged in user as the owner of a canvas app
 
 ```powershell
 Set-AdminPowerAppOwner –AppName 'AppName' -AppOwner $Global:currentSession.userId –EnvironmentName 'EnvironmentName'
@@ -268,7 +268,7 @@ Changes the owner role of a PowerApp to the current user, and replaces the origi
 
 **Note**: The AppName and EnvironmentName fields are the unique identifiers (guids), not the display names.
 
-#### Display a list of deleted Power Apps in an environment
+#### Display a list of deleted canvas apps in an environment
 
 ```
 Get-AdminDeletedPowerAppsList -EnvironmentName 'EnvironmentName'
