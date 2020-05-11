@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 05/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -109,17 +109,5 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
   
  Administrators can provide the URL and sign-in information.  
 
-<a name="BKMK_social"></a>   
-## Direct sign in to Social Engagement  
- To directly sign in to the [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] service, use:  
-  
- https://listening.microsoft.com/app/<appID>  
-  
- This URL, which includes the appID, is sent to the administrator in an email invitation.  
-  
- Your user name depends on whether your organization uses the standard [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] domain (for example, username@contoso.onmicrosoft.com) or you have a custom domain (for example, username@contoso.com).  
-  
- Administrators can provide the URL and sign-in information.  
-  
 ### See also  
  [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   
