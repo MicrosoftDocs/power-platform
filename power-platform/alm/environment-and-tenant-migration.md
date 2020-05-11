@@ -48,32 +48,32 @@ The ability to import an app is available to any user with "Environment Maker" p
 ## Exporting a canvas app
 1. In https://make.powerapps.com, click or tap **Apps**, select the ellipses for the app you want to migrate, and then select **Export package (preview)**.
 
-    ![Select export](./media/environment-and-tenant-migration/select-export.png)
+    ![Select export](media/select-export.png)
 2. When the export package page opens, enter a Name and Description for the package.
 
-    ![Review package details](./media/environment-and-tenant-migration/package-details.png)
+    ![Review package details](media/package-details.png)
 3. Within the ‘Review Package Content’ section you can optionally add comments or notes or change the setting for how each individual resource will be imported into the target environment during package import.
 
-    ![Configure package content](./media/environment-and-tenant-migration/export-package-content.png)
+    ![Configure package content](media/export-package-content.png)
 
 4. When you are done select **Export** and the package file will begin downloading within a few seconds.
 
 ## Importing a canvas app
 1. In https://make.powerapps.com, click or tap **Apps**, and then select **Import canvas app**.
 
-    ![Select import](./media/environment-and-tenant-migration/select-import.png)
+    ![Select import](media/select-import.png)
 2. Select **Upload** and select the app package file that you want to import.
 
-    ![Select package file](./media/environment-and-tenant-migration/select-file.png)
+    ![Select package file](media/select-file.png)
 3. Once the package has been uploaded you will need to review the package contents and will need to provide additional input for any item marked with a red icon by selecting the wrench icon for each item and entering the required information.
 
-    ![Review package content](./media/environment-and-tenant-migration/import-package-content.png)
+    ![Review package content](media/import-package-content.png)
 4. Once you have provided all of the required information select **Import**.
 
-    ![Updated packaged content](./media/environment-and-tenant-migration/import-package-content-dirty.png)
+    ![Updated packaged content](media/import-package-content-dirty.png)
 5. When import completes you will be automatically redirected to a page (similar to the one below) that outlines whether or not the import operation was successful.
 
-    ![Review import results](./media/environment-and-tenant-migration/import-results.png)
+    ![Review import results](media/import-results.png)
 
 > [!NOTE]
 >  If you are importing an app and chose to **Update** an existing app, the new changes will be saved as a draft of the applications.  You will need to [publish](https://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app) those changes in order for them to be available all other users of the applications.
@@ -89,40 +89,40 @@ Exporting any entity or option set customizations or any model-driven apps that 
 
 1. In https://make.powerapps.com, select the **Model-driven (preview)** design mode in your environment.
 
-    ![Select model-driven design mode](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![Select model-driven design mode](media/select-model-driven.png)
 
 2. Select **Advanced** in the left-navigation bar to launch the solution explorer for this environment's default solution
 
-    ![Select advanced](./media/environment-and-tenant-migration/select-advanced.png)
+    ![Select advanced](media/select-advanced.png)
 
 3. Select **Export Solution** and complete the required steps.  A solution package file will begin downloading within a few seconds.
 
-    ![Select export](./media/environment-and-tenant-migration/select-export-solution.png)
+    ![Select export](media/select-export-solution.png)
 
 ## Importing Common Data Service customization and model-driven apps
 Importing a Common Data Service solution package unfortunately requires a manual workaround in the experience, one that we are actively working to fix:
 
 1. In https://make.powerapps.com, select the **Model-driven (preview)** design mode in your environment.
 
-    ![Select model-driven design mode](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![Select model-driven design mode](media/select-model-driven.png)
 
 2. Select **Advanced** in the left-navigation bar to launch the solution explorer for this environment's default solution.
 
-    ![Select advanced](./media/environment-and-tenant-migration/select-advanced.png)
+    ![Select advanced](media/select-advanced.png)
 
 3. Copy the Url from your browser, make the following changes and then navigate to the new URL in your browser:
 
     * Current URL structure: `https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}`
 
-        ![Edit url](./media/environment-and-tenant-migration/edit-url.png)
+        ![Edit url](media/edit-url.png)
 
     * New URL structure:
   `https://{orguniquename}.crm.dynamics.com/tools/solution/import/SolutionImportWizard.aspx`
 
-        ![Select package](./media/environment-and-tenant-migration/select-package.png)
+        ![Select package](media/select-package.png)
 
 4. Select the Common Data Service solution package file that you want to import, and complete the wizard.
 
 5. If import is successful you will see the following confirmation dialog. In order for the solution changes to be available to other customizers within the environment select **Publish All Customizations**
 
-    ![Successful import](./media/environment-and-tenant-migration/successful-import.png)
+    ![Successful import](media/successful-import.png)
