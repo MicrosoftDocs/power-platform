@@ -151,3 +151,6 @@ When you import the solution, it creates the **min prv apps use** role which you
 > [!IMPORTANT]
 > You should try out the solution in a development environment before importing into a production environment. 
 
+### See also
+[Grant users access](grant-users-access.md) <br />
+[Control user access to environments: security groups and licenses](control-user-access.md)
