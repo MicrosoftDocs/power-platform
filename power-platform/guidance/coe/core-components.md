@@ -25,7 +25,7 @@ Here's a breakdown of the assets that form the core components:
 
 - **Catalog tenant resources**
   - [Common Data Service entities](#entities): Environments, apps, flows, and more
-  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, custom connectors, connectors, model-driven apps
+  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, flow action details, custom connectors, connectors, model-driven apps
   - [Admin | Sync Audit Log (flow)](#flows)
   - [Power BI dashboard](#power-bi-report)
   - [Power Platform Admin View (model-driven app)](#apps)
@@ -75,6 +75,10 @@ Runs when an environment is created or modified, and gets app information. Also 
 ### Admin \| Sync Template v2 (Flows)
 
 Runs when an environment is created or modified, and gets flow information. Also updates the record if flows are deleted.
+
+### Admin \| Sync Template v2 (Flow Action Details)
+
+Runs once daily on a schedule, and gets the actions and triggers for all flows.
 
 ### Admin \| Sync Template v2 (Connectors)
 
