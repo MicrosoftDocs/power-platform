@@ -23,7 +23,7 @@ Most of the core functionalities of sales and customer service have moved to the
 
 The following features are not yet present in the Unified Interface but can be enabled for display as legacy dialogs in the Unified Interface through the hybrid experience.
 
-- [Advanced Find](https://docs.microsoft.com/powerapps/user/create-edit-or-save-advanced-find-search) 
+- [Advanced Find](https://docs.microsoft.com/powerapps/user/advanced-find) 
 - Bulk edit
 - [Merge records](https://docs.microsoft.com/powerapps/user/merge-duplicate-records)
 - [Record sharing](https://docs.microsoft.com/powerapps/user/assign-or-share-records)

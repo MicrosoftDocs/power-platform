@@ -21,7 +21,7 @@ Use the tab to set preferences for plug-in and workflow tracing and also the use
 
 <!-- legacy procedure -->
   
-## Open the System Settings dialog box (if it isn't already open)  
+## Open the System Settings dialog box 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   

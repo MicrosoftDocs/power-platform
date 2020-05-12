@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2020
+ms.date: 05/07/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,9 +25,9 @@ You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admi
 > [!NOTE]
 >  When you create a user and assign a license in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the user is also created in model-driven apps in Dynamics 365. The synchronization process between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and model-driven apps in Dynamics 365 can take a few minutes to complete.  
 > 
->  By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user will not have access to model-driven apps in Dynamics 365 until the user has a security role assigned either directly or indirectly as a member of a [group team](https://docs.microsoft.com/power-platform/admin/manage-teams#about-group-teams).  
+>  By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user will not have access to model-driven apps in Dynamics 365 until the user has a security role assigned either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams).  
 > 
-> [!TIP]
+> [!TIP] 
 >  To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and model-driven apps in Dynamics 365, do the following:  
 > 
 > - Sign out of model-driven apps in Dynamics 365 and the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
@@ -68,7 +68,7 @@ For step-by-step instructions to use user licenses, see [Assign, reassign, or re
 For step-by-step instructions to use Power Apps per app plans, see [Power Apps per app plans](https://docs.microsoft.com/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan).
   
 > [!IMPORTANT]
-> Licensed users must be assigned at least one security role to access model-driven apps in Dynamics 365. Security roles can be assigned either directly or indirectly as a member of a [group team](https://docs.microsoft.com/power-platform/admin/manage-teams#about-group-teams).
+> Licensed users must be assigned at least one security role to access model-driven apps in Dynamics 365. Security roles can be assigned either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams).
   
  **About user licenses**  
   
@@ -83,7 +83,7 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
 - Each user license requires a unique Microsoft account, and every user who logs on needs a license. Most subscriptions include a specific number of user licenses.  
 
 > [!NOTE]
-> There is a set of default security roles that are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. There is no data access permission granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](https://docs.microsoft.com/power-platform/admin/manage-teams#about-group-teams)) in order for the user to view and interact with the data. 
+> There is a set of default security roles that are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. There is no data access permission granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams) in order for the user to view and interact with the data. 
 
 ## Assign a security role to a user  
  Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
@@ -97,28 +97,9 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
  For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
   
 > [!IMPORTANT] 
-> You must assign at least one security role to every user either directly or indirectly as a member of a [group team](https://docs.microsoft.com/power-platform/admin/manage-teams#about-group-teams). The service does not allow access to users who do not have at least one security role.   
+> You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams). The service does not allow access to users who do not have at least one security role.   
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **User's + permissions** > **Users**.
-
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
-
-Check your security role:
-- Follow the steps in [View your user profile](hhttps://docs.microsoft.com/powerapps/user/view-your-user-profile).
-- Don't have the correct permissions? Contact your system administrator.<br />
-  
-1.  Select an environment and go to **Settings** > **User's + permissions** > **Users**.
-  
-2.  In the list, select the user or users that you want to assign a security role to.  
-  
-3.  Select **Manage Roles**.  
-  
-     Only the security roles available for that user's business unit are displayed.  
-  
-4.  In the **Manage User Roles** dialog box, select the security role or roles you want for the user or users, and then select **OK**.  
-
-> [!NOTE]
-> By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+To assign security role to users in an environment that has zero or one Common Data Service database, please refer to [Configure user security to resources in an environment](database-security.md). 
 
 ## (Optional) Assign an administrator role  
  You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. You might decide to assign the global administrator role to a second person in your organization for times when you are not available.  
@@ -129,59 +110,64 @@ Check your security role:
 > [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles are valid only for managing aspects of the online service subscription. These roles don't affect permissions within the service.  
 
 ## Enable or disable users  
+User enablement and disablement only applies to environments that have a Common Data Service database. To enable a user in an environment that has a Common Data Service database, ensure they are allowed to sign in, assign a license to the user, and add the user to the security group that is associated with the environment. These are the same criteria to [add users to an environment](add-users-to-environment.md). 
+
  To enable a user, assign a license to the user and add a user to the security group that is associated with an environment. If you enable a user that was disabled, you must send a new invitation for the user to access the system.  
   
  To disable a user, remove a license from the user or remove the user from the security group that is associated with an environment. Removing a user from the security group doesn't remove the user's license. If you want to make the license available to another user, you have to remove the license from the disabled user.  
-  
+
 > [!NOTE]
 > Removing all security roles from the user prevents the user from signing into and accessing model-driven apps in Dynamics 365. However, it doesn't remove the license from the user and the user remains in the list of the enabled users. Removing security roles from a user isn't a recommended method of removing access.  
 >
 > When using a security group to manage enabling or disabling users or provisioning access to an org, nested security groups within a selected security group are not supported and ignored.
 >
-> You can [assign records](https://docs.microsoft.com/powerapps/user/assign-or-share-records) to a disabled user and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+> You can [assign records](https://docs.microsoft.com/powerapps/user/assign-or-share-records) to a disabled user and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers in [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
  You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assigning Admin Roles](https://go.microsoft.com/fwlink/p/?LinkId=255444)  
   
-### Enable a user by assigning a license to the user and adding a user to the security group  
-  
-1. Browse to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in.  
-  
-2. Select **Users** > **Active users** and select the user.  
-  
-3. Under **Product licenses**, select **Edit**.  
-  
-4. Turn on a license, and then select **Save** > **Close**.  
-  
-5. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Groups** > **Groups**.  
-  
-6. Choose the security group that is associated with your organization.  
-  
-7. Under **Members**, select **Edit**, and then **Add members**. Select from the list of users with [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] licenses or use **Search** to find users.  
-  
-8. Select the users to add to the security group, and then select **Save** > **Close** multiple times.  
-  
-   To add multiple users, see: [bulk add users to Office365 groups](https://go.microsoft.com/fwlink/p/?LinkID=615203).  
-  
-### Disable a user by removing a license from the user  
-  
-1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Users** > **Active Users** and select a user.  
-  
-2. In the right-side menu, under **Product licenses**, select **Edit**.  
-  
-3. Turn off the license, and then select **Save** > **Close** multiple times.  
-  
-### Disable a user by removing the user from the security group that is associated with an environment  
-  
-1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Groups** > **Groups**.  
-  
-2. Choose the security group that is associated with your organization.  
-  
-3. In the right-side menu, under **Members**, select **Edit**.  
-  
-4. Select **Remove members**, and then the select  users to remove from the security group.  
-  
-5. Select **Save** > **Close** multiple times.  
-  
+
+### Enable a user in an environment  
+User enablement only applies to environments that have a Common Data Service database. To enable a user in an environment that has a Common Data Service database, ensure they are allowed to sign in, assign a license to the user, and add the user to the security group that is associated with the environment. These are the same criteria to [add users to an environment](add-users-to-environment.md). 
+
+#### Enable sign-in
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. Select **Users**> **Active users** and select the user. 
+3. Ensure under the user’s display name you see **Sign in allowed**. If not, select **Block this user** and unblock sign in. 
+
+
+#### Assign a license 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. Select **Users**> **Active users** and select the user. 
+3. Select the **Licenses and Apps** tab, and then select the licenses to assign. 
+4. Select **Save changes**. 
+
+#### Add to a security group 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. **Select Groups** > **Groups**. 
+3. Choose the security group that is associated with your environment. 
+4. Select the **Members** tab. 
+5. Under **Members**, select **View all and manage members** >**Add members**.
+6. Choose users from the list or search for users, and then select **Save**.
+
+### Disable a user in an environment 
+User enablement and disablement only applies to environments that have a Common Data Service database. A user can be disabled by removing them from the security group that is associated with an environment. Removing a user from the security group doesn't remove the user's license. If you want to make the license available to another user, you have to remove the license from the disabled user. Removing a license from the user frees up the license for assigning to another user, but may not always result in disabling the user. 
+
+#### Remove from a security group 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. **Select Groups** > **Groups**. 
+3. Choose the security group that is associated with your environment. 
+4. Select the **Members** tab. 
+5. Under **Members**, select **View all and manage members**
+6. Choose users from the list to remove them, and then select **Save**.
+
+#### Remove a license
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. Select **Users**> **Active users** and select the user. 
+3. Select the **Licenses and Apps** tab, and then select the licenses to remove. 
+4. Select **Save changes**. 
+
+License removal may not always result in disabling a user, though the license will be freed up for assigning to another user. The recommended approach to disable a user in an environment is to remove them from the security group that is associated with the environment. 
+ 
 > [!NOTE]
 > You can also delete users in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. When you remove a user from your subscription, the license assigned to that user automatically becomes available to be assigned to a different user. If you want the user to still have access to other applications you manage through [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], for example [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] or [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)], don't delete them as a user. Instead, simply remove the license you've assigned to them.  
 > 

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 05/07/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,7 +32,7 @@ Every environment can have zero or one Common Data Service databases, which prov
 
 When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Common Data Service databases.  For example, let's consider a scenario where you have created two environments named 'Test' and 'Dev' and created a Common Data Service database in each of the environments. If you create an app in the 'Test' environment, it will only be permitted to connect to the 'Test' database, it won't be able to connect to the 'Dev' database.
 
-There is also a process to move resources between environments. For more information, see [Migrate resources](environment-and-tenant-migration.md).
+There is also a process to move resources between environments. For more information, see [Migrate resources](../alm/environment-and-tenant-migration.md).
 
 ![](./media/environments-overview/Environments.png)
 
@@ -55,11 +55,9 @@ Environments have two built-in roles that provide access to permissions within a
 
 Environment Makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or to all users in the organization. For more information, see [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app).
 
-Users or groups assigned to these environment roles are not automatically given access to the environment's database (if it exists) and must be given access separately by a Database owner. For more information, see [Configure database security](database-security.md).
+Users or groups assigned to these environment roles are not automatically given access to the environment's database (if it exists) and must be given access separately.
 
-Users or security groups can be assigned to either of these two roles by an Environment Admin from the [Power Platform admin center](https://admin.powerplatform.microsoft.com) or [Power Apps Admin center](https://admin.powerapps.com). For more information, see [Administer environments in Power Apps](environments-administration.md).
-
-![](./media/environments-overview/EnvironmentRoles.png)
+Users or security groups can be assigned to either of these two roles by an Environment Admin by following the steps described in [Configure user security to resources in an environment](database-security.md). 
 
 ## Types of environments
 

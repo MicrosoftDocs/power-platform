@@ -64,7 +64,7 @@ Enabling Document Suggestions helps your Dynamics 365 apps web browser and mobil
   
 3. OneDrive  
   
-4. Office 365 Groups (when solution is installed).  
+4. Microsoft 365 Groups (when solution is installed).  
   
 5. External URL (when configured).  
   

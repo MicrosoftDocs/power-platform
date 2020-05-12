@@ -28,7 +28,7 @@ Before setting up the Power BI dashboard, you must have installed the [CoE Core 
 
 ## Get the environment URL
 
-You need the environment URL of the Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Common Data Service entities in that environment.
+You need the environment URL of the Microsoft Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Common Data Service entities in that environment.
 
 1. Go to the [Power Platform admin center](https://aka.ms/ppac).
 
@@ -45,13 +45,13 @@ You need the environment URL of the Power Platform environment the CoE Starter K
 ## Option 1: Get the Power BI dashboard from AppSource
 
 > [!NOTE]
-> You can't deploy from AppSource if you're deploying to the government cloud (GCC). If you're using GCC, please use the [Configure the Power BI Dashboard by using the .pbix file](#configure-by-using-pbix-file) instructions below.
+> You can't deploy from AppSource if you're deploying to the government cloud (GCC). If you're using GCC, please use the [Configure the Power BI dashboard by using the .pbix file](#configure-by-using-pbix-file) instructions below.
 
 1. Go to the [CoE Starter Kit page on AppSource](https://appsource.microsoft.com/product/power-bi/powerapps_pbi.powerapps_coe).
 
 1. Select **Get It Now**
 
-   ![Power Platform CoE Starter Kit offer on AppSource](media/coe21.png "Power Platform CoE Starter Kit offer on AppSource")
+   ![Microsoft Power Platform CoE Starter Kit offer on AppSource](media/coe21.png "Microsoft Power Platform CoE Starter Kit offer on AppSource")
 
 1. Accept the terms and conditions, and make sure you have signed in by using your organization account.
 
@@ -67,7 +67,7 @@ You need the environment URL of the Power Platform environment the CoE Starter K
 
 1. Copy and paste the URL you retrieved in [Get the environment URL](#get-the-environment-url), above, and then select **Next**
 
-   ![Connect to New Power Platform CoE Starter Kit Tenant](media/coe23.png "Connect to New Power Platform CoE Starter Kit Tenant")
+   ![Connect to the new Microsoft Power Platform CoE Starter Kit tenant](media/coe23.png "Connect to the new Microsoft Power Platform CoE Starter Kit tenant")
 
 1. Confirm your sign-in to finish setting up the app.
 
@@ -95,79 +95,81 @@ You can also configure and modify the Power BI dashboard by working directly wit
 
 You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).
 
-### (Optional) Configure embedded apps in the CoE Dashboard
+### (Optional) Configure embedded apps in the CoE dashboard
 
-The dashboard can be configured to use embedded apps to enable you to drive action based on insights you find - with the embedded apps, you can grant yourself access to resources, archive and delete apps and flows, and reach out ot the maker via email.
-You will have to import the apps first, and then configure them in the dashboard.
+The dashboard can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, archive and delete apps and flows, and reach out to the maker via email. You'll have to import the apps first, and then configure them in the dashboard.
 
-#### Import embedded Power Apps apps
+#### Import embedded apps
 
-**Pre-Requisite:** You must have a SharePoint site with a Document Library set up already, this will be used to store archived apps.
+**Prerequisite:** You must have a SharePoint site with a document library set up already. This will be used to store archived apps.
 
-1. Navigate to **[flow.microsoft.com](https://flow.microsoft.com)** in the Environment where you have installed the CoE Starter Kit.
-1. Import the **PowerApps Button Archive App Flow** (*PowerAppsButtonArchiveApp.zip*) file and configure the connections. This flow archives apps to a SharePoint Document Library.
-1.	Once imported, **edit the flow** to update the SharePoint Site URL and Document Library name. Paste the top level SharePoint URL into the *archiveSiteUrl* variable and the Document Library name into the *archiveFolder* variable (if your document library contains spaces in the name, leave those as they are in the display name)
+1. Go to **[flow.microsoft.com](https://flow.microsoft.com)** in the environment where you installed the CoE Starter Kit.
+1. Import the **PowerApps Button Archive App Flow** (*PowerAppsButtonArchiveApp.zip*) file and configure the connections. This flow archives apps to a SharePoint document library.
+1. After it's imported, edit the flow to update the SharePoint site URL and document library name. Paste the top-level SharePoint URL into the *archiveSiteUrl* variable, and paste the document library name into the *archiveFolder* variable (if your document library contains spaces in the name, leave those as they are in the display name).
 
-     ![Configure SharePoint Site URL and Document Library Name](media/coe82.png "Configure SharePoint Site URL and Document Library Name")
+     ![Configure the SharePoint site URL and document library name](media/coe82.png "Configure the SharePoint site URL and document library name")
 
-1. **Save** the flow.
-1. **Navigate** to **[make.powerapps.com](https://make.powerapps.com)** in the Environment where you have installed the CoE Starter Kit
-1. Select **Apps** in the navigation.
-1. Select **Import Canvas App**.
+1. Select **Save**.
+1. Go to **[make.powerapps.com](https://make.powerapps.com)** in the environment where you installed the CoE Starter Kit.
+1. In the left pane, select **Apps**.
+1. Select **Import canvas app**.
 
-    ![Import Canvas App](media/coe83.png "Import Canvas App")
+   ![Import canvas app](media/coe83.png "Import canvas app")
 
-1. Import the **Admin – Access this app** app (*Admin-AccessthisApp.zip*)
-1. Configure all the connections, including pointing to the PowerApps Button Archive App Flow you have just imported.
-1. Repeat the same steps for the **Admin – Access this flow** app (*Admin-AccessthisFlow.zip*). *Note:* This app is not linked to a flow, you will not have to update the connection references to include a Flow.
+1. Import the **Admin – Access this app** app (*Admin-AccessthisApp.zip*).
+1. Configure all the connections, including pointing to the *PowerApps Button Archive App Flow* you just imported.
+1. Repeat the same steps for the **Admin – Access this flow** app (*Admin-AccessthisFlow.zip*). 
+   > [!NOTE]
+   > This app isn't linked to a flow. You won't have to update the connection references to include a flow.
 
-#### Embed apps into the Power BI Dashboard
+#### Embed apps into the Power BI dashboard
 
-You will now configure the Power App visuals in the Power BI Dashboard to point to the apps you have just imported.
+You'll now configure the Power App visuals in the Power BI dashboard to point to the apps you just imported.
 
-1. Open the CoE Power BI Dashboard in **Power BI Desktop**
-1. Navigate to the **App Detail** page.
+1. Open the CoE Power BI dashboard in **Power BI Desktop**.
+1. Go to the **App Detail** page.
 
-      ![Navigate to App Detail page in Power BI Desktop](media/coe84.PNG "Navigate to App Detail page in Power BI Desktop")
+      ![Go to App Detail page in Power BI Desktop](media/coe84.PNG "Go to App Detail page in Power BI Desktop")
 
 1. Select the **Power App Visual** from Visualizations.
 
-     ![PowerApps in Power BI Visual](media/coe85.PNG "PowerApps in Power BI Visual")
+     ![PowerApps in Power BI visual](media/coe85.PNG "PowerApps in Power BI visual")
 
 1. Select the fields from your data set that you would like to use in the app.
 1. With the visual selected, select **admin_appid** from App (under Fields).
 
      ![Select admin_appid from App for PowerApps Data](media/coe86.PNG "Select admin_appid from App for PowerApps Data")
 
-1. With the visual selected, select **admin_environmentid** from Environment (under Fields).
+1. With the visual selected, select the **admin_environmentid** environment under **Fields**.
 
      ![Select admin_environmentid from App for PowerApps Data](media/coe87.PNG "Select admin_environmentid from App for PowerApps Data")
 
-1. In the PowerApps for Power BI visual, select the **Environment** of your CoE (where you have imported the apps to).
+1. In the PowerApps for Power BI visual, select the environment of your CoE (where you imported the apps to).
 
-     ![Select Environment in PowerApps for Power BI visual](media/coe88.PNG "Select Environment in PowerApps for Power BI visual")
+     ![Select the environment in PowerApps for the Power BI visual](media/coe88.PNG "Select the environment in PowerApps for the Power BI visual")
 
 1. Select **Choose app**.
 1. Select **Admin – Access this app**.
 
      ![Select Admin - Access this app to embed this app into Power BI](media/coe89.PNG "Select Admin - Access this app to embed this app into Power BI")
 
-1. Resize and move the visual to the desired location. Delete the placeholder that is in the template and move your embedded app to the same place.
-1. Repeat the same steps to configure the app on the **Flow Detail** page
-Navigate to the Flow Detail tab
-1. Select the **Power App Visual** from Visualizations
-1. The first step to include a Power App visual is to select the fields from your data set that you would like to use in the app.
-1. With the visual selected, select **admin_flowid** and **admin_flowenvironment** from Flow (under Fields).
+1. Resize and move the visual to the location you want. Delete the placeholder from the template and move your embedded app to the same place.
 
-     ![Select admin_flowid and admin_flowenvironment from Flow for PowerApps Data](media/coe87.PNG "Select admin_flowid and admin_flowenvironment from Flow for PowerApps Data")
+**To configure the app on the Flow Detail page**
 
-1. Your **PowerApps Data** configuration should look like this now.
-1. In the visual, select the **Environment** of your CoE (where you have imported the apps to).
-1. Select **Choose app**
-1. Select **Admin – Access this flow**
+1. Go to the **Flow Detail** tab.
+1. Select the **Power App Visual** from **Visualizations**.
+   Select the fields from your data set that you would like to use in the app.
+1. With the visual selected, select the **admin_flowid** and **admin_flowenvironment** flows under **Fields**.
+
+     ![Select admin_flowid and admin_flowenvironment from Flow for PowerApps Data](media/coe91.PNG "Select admin_flowid and admin_flowenvironment from Flow for PowerApps Data")
+
+1. In the visual, select the environment of your CoE (where you imported the apps to).
+1. Select **Choose app**.
+1. Select **Admin – Access this flow**.
 
      ![Select Admin - Access this flow to embed this app into Power BI](media/coe90.PNG "Select Admin - Access this flow to embed this app into Power BI")
 
-1. Resize and move the visual to the desired location. Delete the placeholder that is in the template and move your embedded app to the same place.
+1. Resize and move the visual to the location you want. Delete the placeholder from the template and move your embedded app to the same place.
 
-Republish the dashboard and view it under [app.powerbi.com](https://app.powerbi.com/).
+Republish the dashboard, and view it under [app.powerbi.com](https://app.powerbi.com/).

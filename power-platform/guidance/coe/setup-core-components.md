@@ -27,7 +27,9 @@ The Core Components solution contains assets that are only relevant to admins.
 
 This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. More information about how to decide on the best strategy for your organization: [Establishing an Environment Strategy for Microsoft Power Platform](https://powerapps.microsoft.com/blog/establishing-an-environment-strategy-for-microsoft-power-platform/) and [Application lifecycle management](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management)
 
-1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)), and extract the zip file.
+1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+
+1. Extract the zip file.
 
 1. Create an environment in which to set up the CoE.
 
@@ -93,10 +95,10 @@ The following assets depend on the CoE Settings entity:
 | Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCC)
 | Brand Secondary Color        | Hexadecimal value of your secondary brand color (\#DDDDDD)                                                    |
 | Email End User Support       | Email address for your helpdesk or user computing support team                                        |
-| Email Maker Support          | Email address for your Power Platform maker support team                                              |
-| Link to Community Channel    | Link to your internal Power Platform community (for example, Yammer, Teams)                            |
-Link to Learning Resource    | Link to internal Power Platform learning resources, or you might link to aka.ms/PowerUp    |
-Link to Policy Documentation | Link to internal Power Platform policies; for example, a Teams channel or SharePoint site |
+| Email Maker Support          | Email address for your Microsoft Power Platform maker support team                                              |
+| Link to Community Channel    | Link to your internal Microsoft Power Platform community (for example, Yammer, Teams)                            |
+Link to Learning Resource    | Link to internal Microsoft Power Platform learning resources, or you might link to aka.ms/PowerUp    |
+Link to Policy Documentation | Link to internal Microsoft Power Platform policies; for example, a Teams channel or SharePoint site |
 Version                      | Set to 1.0                                                                                            |
 Company Name                 | Your company name as it will appear in dashboards |
 
@@ -106,12 +108,12 @@ The environment variables are used to store application and flow configuration d
 
 All of the sync flows depend on all environment variables' being configured.
 
-After importing the solution, you may see an error at the top, notifying you that environment variables need to be configured. For the Core Components solution, three environment variables need to be configured. The following screenshot shows an example of what the error message will look like.
+After importing the solution, you might see an error at the top, notifying you that environment variables need to be configured. For the Core Components solution, three environment variables need to be configured. The following screenshot shows an example of what the error message will look like.
 
  ![Prompt to set up environment variables](media/coe7.png "Prompt to set up environment variables")
 
 >[!TIP]
->To view all Environment Variables in the Environment, open the Default Solution for the Environment, and filter to Type Environment Variable
+>To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
 
 - Select a variable, and then configure its **Default Value**.
 
@@ -123,7 +125,7 @@ After importing the solution, you may see an error at the top, notifying you tha
     |------|---------------|
     |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
-    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See provided default value](code-samples/css/default-value-eMail-Header-Style.md)
+    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md).
 
 
 ## Activate the Sync Template flows
@@ -150,49 +152,12 @@ The following flows are required to sync data to the resource entities:
     Flow type: Scheduled (daily by default)  
     Description: If any of the sync flows fail, the failure is stored in the Common Data Service Sync Flow Errors entity. This scheduled flow sends a report of failures to the admin.
 
-The flows are all part of the solution. There are two options to consider for activation of the flows. Option 1 takes longer to configure than option 2, but it's easier to receive updates with option 1.
+### Activate each of these flows
 
-### Option 1: Keep the flow in the solution, and update each action connection
+Save a copy of the flows outside of the solution to activate and create the connections.
 
-Use this option if you'd like to continue receiving updates to the flow through this solution. This takes longer to set up because the connections for each action need to be individually configured.
-
-1. Go to the *Center of Excellence - Core Components* solution.
-
-    1. Go to [make.powerapps.com](https://make.powerapps.com), and set the current environment to the same environment where the CoE solution is installed.
-
-    1. In the left navigation, select **Solutions**, and then select the **Center of Excellence - Core Components** solution.
-
-1. Select the flow name (all flows starting with *Admin | Sync Template v2*) to get to the flow details screen, and then select **Edit**.
-
-    ![Sync Template flows](media/coe9.PNG "Sync Template flows")
-
-1. The flow will open in the maker studio. For each action that requires a connection, there will be a warning icon on the right side of the action. This indicates the need for a connection to be selected.
-
-    ![Set up connections in the Sync Template flow](media/coe10.png "Set up connections in the Sync Template flow")
-  
-1. Update all the connections. If you see an error message when you select **Save**, that means that more connections still need to be made; these are likely hidden in conditional nodes.
-
-    - Some connections will need to be created, if they aren't already available.
-
-    - Some actions might be hidden within other built-in actions, such as a condition or scope. Expand those actions to find the hidden ones.
-
-    - We suggest you start at the top of the flow and work down step by step, opening each step as you go, until you find them all.
-
-1. After all actions have a connection, select **Save**.
-
-1. Repeat the above steps for *Admin \| Sync Template v2 – Apps, Connectors, Custom Connectors, Flows, Model Driven Apps and Sync Flow Errors*.
-
-1. Ensure that the flows are turned on.
-
-1. Trigger the sync flows to populate your data.
-
-    - Select **Admin \| Sync Template v2**. This will open a new tab to the flow details page.
-
-    - Select **Run**.
-
-### Option 2: Save a copy of the flows outside of the solution
-
-If you save a copy of the flows from the solution, the connections are created automatically for you. The drawback of this method is that if you copy the flows from the solution, the copied flows don't get updated when you update the solution package to newer versions. You'll have to import the new solution and copy the flows again to upgrade them to the latest version.
+>[!NOTE]
+>Due to a current product limitation in this methodology, you won't get updates for these flows as new versions of the CoE are released. You'll have to import the new solution and copy the flows again to upgrade them to the latest version. This experience will improve when the [modern solution import experience (Power Apps 2020 release wave 1)](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/modern-solution-import-experience) is available.
 
 1. Go to the *Center of Excellence - Core Components* solution.
 

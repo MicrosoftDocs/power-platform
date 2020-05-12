@@ -56,6 +56,7 @@ Dynamics 365 US Government plans are available to qualified government and priva
 - Dynamics 365 Team Member GCC
 - Dynamics 365 ProDirect Support GCC
 - Dynamics 365 Enhanced Support GCC
+- Dynamics 365 Remote Assist GCC
 
 ### Dynamics 365 US Government – GCC AddOns
 
@@ -78,6 +79,7 @@ Dynamics 365 US Government plans are available to qualified government and priva
 - Dynamics 365 Team Member GCC High
 - Dynamics 365 ProDirect Support GCC High
 - Dynamics 365 Enhanced Support GCC High
+- Dynamics 365 Remote Assist GCC High
 
 ### Dynamics 365 US Government – GCC High AddOns
 
@@ -183,7 +185,6 @@ You use a different set of URLs to access Dynamics 365 US Government environment
     - Global discovery URL: https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/
 - GCC High: 
     - (Deprecated) Discovery URL: https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/
-    - Global discovery URL: https://globaldisco.crm.microsoftdynamics.us/api/discovery/v2.0
 
 ### Instance WebAPI
 
