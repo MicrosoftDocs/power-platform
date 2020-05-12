@@ -66,14 +66,29 @@ The available build tasks are described in the following sections.
 
 ### Helper task
 
-The Power Apps tools installer is required to be the first task in any build and
-release pipeline. This task installs a set of Power Apps&ndash;specific tools required
+#### Power Apps Tool Installer
+
+This task is required to be added once before any other Power Apps build tools tasks in build and
+release pipelines. This task installs a set of Power Apps&ndash;specific tools required
 by the agent to run the Power Apps build tasks. This task doesn't require any
-additional configuration.
+additional configuration when added, but contains parameters for the specific versions
+of each of the tools that are being installed.
+To stay up to date with the tool versions over time, make sure these parameters correspond
+to the versions of the tools that are required for the pipeline to run properly.
+
+#### Power Apps WhoAmI
+
+Verifies a Power Apps environment service connection by connecting and making a WhoAmI request. This task can be useful to include early in the pipeline, to verify connectivity before processing begins.
+
+| Parameters    | Description   |
+|---------------|---------------|
+| Power Apps environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
 
 ### Quality check
 
-The Power Apps checker task runs a static analysis check on your solutions
+#### Power Apps Checker
+
+This task runs a static analysis check on your solutions
 against a set of best-practice rules to identify any problematic patterns that
 you might have inadvertently introduced when building your solution.
 
@@ -83,6 +98,8 @@ you might have inadvertently introduced when building your solution.
 | Location of file to analyze       | Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.   |
 | Local files to analyze/SAS URI for the file to analyze | Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\*.zip for all zip files in all subfolders. You can choose to specify the files directly or reference a file by using an SAS URI.     |
 | Rule set                          | Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps maker portal.</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to AppSource.</li></ul>    |
+| Error Level | Combined with the Error threshold parameter defines the severity of errors and warnings that are allowed. |
+| Error threshold | Defines the number of errors of specified level that are allowed for the checker to pass the solutions being checked. |
 
 More information about how to configure the quality check service connection:
 [Configure service connection for Power Apps checker](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-tasks#configure-service-connection-for-power-apps-checker)
@@ -91,7 +108,7 @@ More information about how to configure the quality check service connection:
 
 This set of tasks perform actions against solutions.
 
-#### Power Apps import solution
+#### Power Apps Import Solution
 
 The import solution task imports a solution into a target environment.
 
@@ -104,7 +121,7 @@ The import solution task imports a solution into a target environment.
 > Variables give you a convenient way to get key bits of data into
 > various parts of your pipeline. For a comprehensive list of predefined variables, see [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml).
 
-#### Power Apps export solution
+#### Power Apps Export Solution
 
 The export solution task exports a solution from a source environment.
 
@@ -118,7 +135,7 @@ The export solution task exports a solution from a source environment.
 > Variables give you a convenient way to get key bits of data into
 > various parts of your pipeline. For a comprehensive list of predefined variables, see [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml).
 
-#### Power Apps pack solution
+#### Power Apps Pack Solution
 
 This task packs a solution represented in source control into a solution.zip file that can
 be imported into an environment.
@@ -129,7 +146,7 @@ be imported into an environment.
 | Source folder of solution to pack | The path and source folder of the solution to pack.      |
 | Type of solution                  | The type of solution you want to pack: **Unmanaged** (recommended), **Managed**, or **Both** |
 
-#### Power Apps unpack solution
+#### Power Apps Unpack Solution
 
 The unpack solution task takes a compressed solution file and decomposes it into
 multiple XML files and other files so that these files can be more easily
@@ -141,7 +158,7 @@ managed by a source control system.
 | Target folder to unpack solution | The path and target folder you want to unpack the solution into.      |
 | Type of solution                 | The type of solution you want to unpack. **Unmanaged** is recommended: You should only unpack an unmanaged solution to your repo. |
 
-#### Power Apps set solution version
+#### Power Apps Set Solution Version
 
 The set solution version task updates the version of a solution.
 
@@ -151,7 +168,7 @@ The set solution version task updates the version of a solution.
 | Solution name              | The name of the solution you want to set the version number for.     |
 | Solution Version Number    | Version number to set, using the format *major.minor.build.revision* (for example, 1.0.0.1)  |
 
-#### Power Apps deploy package
+#### Power Apps Deploy Package
 
 The deploy package task deploys a package to an environment. Deploying a package
 as opposed to a single solution file gives you the option to deploy multiple
@@ -161,7 +178,7 @@ solutions, data, and code into an environment.
 |-----------------|----------------|
 | Power Apps environment URL | The service endpoint for the target environment that holds the solution you want to update. Defined under **Service Connections** in **Project Settings**. |
 
-#### Power Apps publish customizations
+#### Power Apps Publish Customizations
 
 The publish customizations task publishes all customizations in an environment.
 
@@ -174,7 +191,7 @@ The publish customizations task publishes all customizations in an environment.
 Environment management tasks are used to automate common environment management
 functions.
 
-#### Power Apps create environment
+#### Power Apps Create Environment
 
 The create environment task creates an environment.
 
@@ -190,7 +207,7 @@ The create environment task creates an environment.
 | Domain Name       | This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be powerappsbuildtasks. <p/>**Note**: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
 | Friendly name     | The friendly name of the environment.     |
 
-#### Power Apps delete environment
+#### Power Apps Delete Environment
 
 The delete environment task deletes an environment.
 
@@ -198,7 +215,7 @@ The delete environment task deletes an environment.
 |------------------|---------------------|
 | Power Apps environment URL | The service endpoint for the environment you want to delete. Defined under **Service Connections** in **Project Settings**. |
 
-#### Power Apps backup environment
+#### Power Apps Backup Environment
 
 The backup environment task backs up an environment.
 
@@ -207,7 +224,7 @@ The backup environment task backs up an environment.
 | Power Apps environment URL | The service endpoint for the environment you want to backup. Defined under **Service Connections** in **Project Settings**. |
 | Backup label               | The label you want to assign to the backup.                                                                         |
 
-#### Power Apps copy environment
+#### Power Apps Copy Environment
 
 The copy environment task copies an environment to a target environment. Two
 types of copy are available: full and minimal. *Full* copies both data and
