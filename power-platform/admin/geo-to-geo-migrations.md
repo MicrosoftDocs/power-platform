@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/14/2020
+ms.date: 04/28/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -38,8 +38,9 @@ We continue to open new datacenter regions for business services, and to add dat
 - Asia Pacific (APAC) = *.crm5.dynamics.com  
 - Australia (OCE) = *.crm6.dynamics.com  
 - Japan (JPN) = *.crm7.dynamics.com  
-- India (IND) = *.crm8.dynamics.com  
+- India (IND) = *.crm8.dynamics.com 
 - United Kingdom (UK) = *.crm11.dynamics.com  
+- United Arab Emirates (UAE) = *.crm15.dynamics.com 
 
  [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in](sign-in-office-365-apps.md#BKMK_directsignin) and [Discover the URL for your organization using the Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)
 

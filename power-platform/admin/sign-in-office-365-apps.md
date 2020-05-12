@@ -65,7 +65,8 @@ For admins and end users, when you sign in to https://office.com, you will see a
    |**crm7** for Japan (JPN)|[https://port.crm7.dynamics.com/G/instances/instancePicker.aspx](https://port.crm7.dynamics.com/G/instances/instancePicker.aspx)|  
    |**crm8** for India (IND)|[https://port.crm8.dynamics.com/G/instances/instancePicker.aspx](https://port.crm8.dynamics.com/G/instances/instancePicker.aspx)|  
    |**crm11** for United Kingdom (UK)|[https://port.crm11.dynamics.com/G/instances/instancePicker.aspx](https://port.crm11.dynamics.com/G/instances/instancePicker.aspx)|  
-   |**crm12** for France (FRA)|[https://port.crm12.dynamics.com/G/instances/instancePicker.aspx](https://port.crm12.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm12** for France (FRA)|[https://port.crm12.dynamics.com/G/instances/instancePicker.aspx](https://port.crm12.dynamics.com/G/instances/instancePicker.aspx)| 
+   |**crm15** for United Arab Emirates (UAE)|[https://port.crm15.dynamics.com/G/instances/instancePicker.aspx](https://port.crm15.dynamics.com/G/instances/instancePicker.aspx)|
   
     For Germany (DEU), use the following: https://port.crm.microsoftdynamics.de/g/instances.instancepicker.aspx.  
   
@@ -102,6 +103,7 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
 > -   .crm9 for United States of America Government  
 > -   .crm11 for United Kingdom (UK)  
 > -   .crm12 for France (FRA)
+- .crm15 for United Arab Emirates (UAE)
   
  For Germany (DEU), use the following: [https://\<organization>.crm.microsoftdynamics.de](https://<organization>.crm.microsoftdynamics.de).  
   
@@ -111,3 +113,5 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
 
 ### See also  
  [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   
+
+
