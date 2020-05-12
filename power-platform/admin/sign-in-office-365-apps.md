@@ -103,6 +103,7 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
 > -   .crm9 for United States of America Government  
 > -   .crm11 for United Kingdom (UK)  
 > -   .crm12 for France (FRA)
+- .crm15 for United Arab Emirates (UAE)
   
  For Germany (DEU), use the following: [https://\<organization>.crm.microsoftdynamics.de](https://<organization>.crm.microsoftdynamics.de).  
   
