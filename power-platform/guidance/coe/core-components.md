@@ -76,6 +76,10 @@ Runs when an environment is created or modified, and gets app information. Also 
 
 Runs when an environment is created or modified, and gets flow information. Also updates the record if flows are deleted.
 
+### Admin \| Sync Template v2 (Flow Action Details)
+
+Runs once daily on a schedule, and gets the actions and triggers for all flows.
+
 ### Admin \| Sync Template v2 (Connectors)
 
 Runs once daily on a schedule, and gets connector information.

@@ -91,7 +91,7 @@ The following assets depend on the CoE Settings entity:
 
 | Name | Setting value |
 |------|------------|
-| Company Name | The name of your company as you woudl like it shown in apps and reports
+| Company Name | Your company name as it will appear in dashboards
 |Brand Logo | Link to your logo as an image file |
 | Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCC)
 | Brand Secondary Color        | Hexadecimal value of your secondary brand color (\#DDDDDD)                                                    |
@@ -102,7 +102,6 @@ The following assets depend on the CoE Settings entity:
 Link to Learning Resource    | Link to internal Microsoft Power Platform learning resources, or you might link to aka.ms/PowerUp    |
 Link to Policy Documentation | Link to internal Microsoft Power Platform policies; for example, a Teams channel or SharePoint site |
 Version                      | Set to 1.0                                                                                            |
-Company Name                 | Your company name as it will appear in dashboards |
 
 ## Update environment variables
 
@@ -132,7 +131,7 @@ After importing the solution, you might see an error at the top, notifying you t
 
 ## Activate the Sync Template flows
 
-The flows with the prefix *Sync* are required for populating data in the resource-elated Common Data Service entities (Environments, Power Apps Apps, Flows, Connectors, and Makers).
+The flows with the prefix *Sync* are required for populating data in the resource-elated Common Data Service entities (Environments, Power Apps Apps, Flows, Flow Action Details, Connectors, and Makers).
 
 The sync flows are used to write data from the admin connectors into the Common Data Service entities. None of the other components will work if the sync flows aren't successfully configured and run.
 
@@ -145,6 +144,10 @@ The following flows are required to sync data to the resource entities:
 -  **Admin \| Sync Template v2 (apps, custom connectors, flows, model-driven apps)**  
     Flow type: Automated  
     Description: These flows rely on the _Admin \| Sync Template v2_ flow and are triggered automatically when environment details are created or modified in the CoE Common Data Service Environments entity. These flows then crawl environment resources and store data in the PowerApps App, Flow, Connection Reference, and Maker entities.
+
+1. **Admin \| Sync Template v2 (Flow Action Details)**  
+    Flow type: Scheduled (daily by default)  
+    Description: This flow stores all triggers and actions from all the the Power Automate flows in your tenant.
 
 1. **Admin \| Sync Template v2 (Connectors)**  
     Flow type: Scheduled (daily by default)  
