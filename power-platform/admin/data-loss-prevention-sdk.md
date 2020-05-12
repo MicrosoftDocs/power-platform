@@ -37,6 +37,8 @@ This topic introduces the capabilities of the DLP SDK and shows you how DLP can 
    - Replace $EnvironmentAdminName value with your environment admin account
    - Replace $EnvironmentAdminPassword value with your environment admin account password
 
+Note: the tenant admin and environment admin accounts should be different accounts.
+
 5. Run RunSamples.ps1.
 
 ## What this sample does
