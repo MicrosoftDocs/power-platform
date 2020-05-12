@@ -25,7 +25,7 @@ Here's a breakdown of the assets that form the core components:
 
 - **Catalog tenant resources**
   - [Common Data Service entities](#entities): Environments, apps, flows, and more
-  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, custom connectors, connectors, model-driven apps
+  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, flow action details, custom connectors, connectors, model-driven apps
   - [Admin | Sync Audit Log (flow)](#flows)
   - [Power BI dashboard](#power-bi-report)
   - [Power Platform Admin View (model-driven app)](#apps)
