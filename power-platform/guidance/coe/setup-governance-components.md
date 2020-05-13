@@ -39,6 +39,9 @@ If you don't already have a SharePoint Site for CoE Admins in your tenant, creat
 
 More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
 
+>[!IMPORTANT]
+> Now update the *Archive Site URL (SharePoint Site)* environment variable, see **[Update Environment Variable](#update-environment-variables)**.
+
 ### Create the library
 
 We've created a helper flow to create the library for you. See the following zip file: *CreateCoEArchivalDocLibraryinSP.zip*.
@@ -116,7 +119,8 @@ The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Arc
 
 1. Select **Run Flow**  
 
-   This flow can take up to ten minutes to run initially. After it runs, you can delete the flow because it won't be needed anymore.
+    > [!NOTE]
+    > This flow can take up to ten minutes to run initially. After it runs, you can delete the flow because it won't be needed anymore.
 
 1. Select **Solutions** on the left side panel, and you should now see two new Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded.
 
