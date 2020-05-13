@@ -73,7 +73,7 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Main Phone </td><td>Office phone</td></tr>
 <tr><td>Mobile Phone  </td><td>Mobile phone</td></tr>
 <tr><td>Fax  </td><td>Fax number  </td></tr>
-<tr><td>Address  </td><td>Street address   </td></tr>|
+<tr><td>Address  </td><td>Street address   </td></tr>
 <tr><td>Address   </td><td>City   </td></tr>
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
