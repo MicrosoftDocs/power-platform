@@ -55,6 +55,9 @@ You can use mail merge templates with Office Word to create customer-ready lette
 
 14. Select **Save and Close**.
 
+> [!NOTE]
+> To change a personal template to a shared one, after you save the record on the template form, on the **More Actions** menu, select **Make Available to Organization**. To revert the template to a personal one, select **Make Personal**.  
+
 ## Use a mail merge template
 
 After creating a mail merge template, follow these steps to use it.
@@ -66,6 +69,5 @@ After creating a mail merge template, follow these steps to use it.
 3. Select **Mail Merge**, choose the **Personal mail merge template**, and then select **Download**.
 
 4. Open the downloaded file in Microsoft Word and go through the steps.
-  
   
 ### See also  
