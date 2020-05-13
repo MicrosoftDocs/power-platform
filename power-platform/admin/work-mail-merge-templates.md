@@ -69,5 +69,4 @@ After creating a mail merge template, follow these steps to use it.
 3. Select **Mail Merge**, choose the **Personal mail merge template**, and then select **Download**.
 
 4. Open the downloaded file in Microsoft Word and go through the steps.
-  
 
