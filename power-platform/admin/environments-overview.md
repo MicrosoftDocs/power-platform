@@ -17,51 +17,53 @@ search.app:
 ---
 
 # Environments overview
-An environment is a space to store, manage, and share your organization's business data, apps, and flows. They also serve as containers to separate apps that may have different roles, security requirements, or target audiences. How you choose to leverage environments depends on your organization and the apps you are trying to build. For example:
+An *environment* is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use<!--Writing Style Guide--> environments depends on your organization and the apps you're trying to build. For example:
 
-* You may choose to only build your apps in a single environment.
-* You might create separate environments that group the Test and production versions of your apps.
+* You can choose to only build your apps in a single environment.
+* You might create separate environments that group the test and production versions of your apps.
 * You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and apps for each audience.
 * You might also create separate environments for different global branches of your company.  
-* Get early access to the upcoming Power Apps functionalities by joining [Power Apps Preview Program](preview-environments.md).
+<!--Suggest making this last bullet a note, because it's interesting and also it doesn't really belong in the list.-->
+> [!NOTE]
+> You can get early access to upcoming Power Apps functionality by joining the [Power Apps Preview program](preview-environments.md).
 
 ## Environment scope
-Each environment is created under an Azure AD tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the US. When you create an app in an environment, that app is routed to only datacenters in that geographic location. Any items that you create in that environment (including connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
+Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
 
-Every environment can have zero or one Common Data Service databases, which provides storage for your apps. The ability to create a database for your environment will depend on the license you purchase for Power Apps and your permission within that environment. For more information, see [Pricing info](pricing-billing-skus.md).
+Every environment can have zero or one Common Data Service database, which provides storage for your apps. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
 
-When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Common Data Service databases.  For example, let's consider a scenario where you have created two environments named 'Test' and 'Dev' and created a Common Data Service database in each of the environments. If you create an app in the 'Test' environment, it will only be permitted to connect to the 'Test' database, it won't be able to connect to the 'Dev' database.
+When you create an app in an environment, that app is only permitted to connect to the data sources that are also deployed in that same environment, including connections, gateways, flows, and Common Data Service databases. For example, consider a scenario where you've created two environments named Test and Dev, and created a Common Data Service database in each of the environments. If you create an app in the Test environment, it will only be permitted to connect to the Test database; it won't be able to connect to the 'Dev' database.
 
-There is also a process to move resources between environments. For more information, see [Migrate resources](../alm/environment-and-tenant-migration.md).
-
-![](./media/environments-overview/Environments.png)
+You can also move resources between environments. More information: [Migrate resources](../alm/environment-and-tenant-migration.md)
+<!--In the following graphic, "CDM" should be "Common Data Service". Also, please verify that the suggested alt text covers your meaning. -->
+![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Common Data Service database](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Common Data Service database")
 
 ## Environment permissions
 Environments have two built-in roles that provide access to permissions within an environment:
 
-* The Environment Admin role can perform all administrative actions on an environment including the following:
+* The *Environment Admin* role can perform all administrative actions on an environment, including the following:
 
-    * Add or remove a user or group from either the Environment Admin or Environment Maker role
+    * Add or remove a user or group from either the Environment Admin or Environment Maker role.
 
-    * Provision a Common Data Service database for the environment
+    * Provision a Common Data Service database for the environment.
 
-    * View and manage all resources created within an environment
+    * View and manage all resources created within the environment.
 
-    * Set data loss prevention policies. For more information see [Data loss prevention policies](prevent-data-loss.md).
+    * Set data loss prevention policies. More information: [Manage data loss prevention policies](prevent-data-loss.md)
 
-    After creating the database in the environment, you can use System Administrator role instead of Environment Admin role.
+    After creating the database in the environment, you can use the System Administrator role instead of the Environment Admin role.
 
-* The Environment Maker role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate.
+* The *Environment Maker* role can create resources within an environment including apps, connections, custom connectors, gateways, and flows using Power Automate.
 
-Environment Makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or to all users in the organization. For more information, see [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app).
+Environment makers can also distribute the apps they build in an environment to other users in your organization by sharing the app with individual users, security groups, or all users in the organization. More information: [Share an app in Power Apps](/powerapps/maker/canvas-apps/share-app)
 
-Users or groups assigned to these environment roles are not automatically given access to the environment's database (if it exists) and must be given access separately.
+Users or groups assigned to these environment roles aren't automatically given access to the environment's database (if it exists) and must be given access separately.
 
-Users or security groups can be assigned to either of these two roles by an Environment Admin by following the steps described in [Configure user security to resources in an environment](database-security.md). 
+Users or security groups can be assigned to either of these two roles by an environment admin by following the steps described in [Configure user security to resources in an environment](database-security.md). 
 
 ## Types of environments
 
-There are multiple types of environments. The type of environment indicates the purpose and determines the environment characteristics. The following table summarizes the current types of environments that you might encounter.
+There are multiple types of environments. The type indicates the purpose of the environment and determines its characteristics. The following table summarizes the current types of environments that you might encounter.
 
 <table style="width:100%">
 <tr>
@@ -71,55 +73,57 @@ There are multiple types of environments. The type of environment indicates the 
 </tr>
 <tr>
 <td width="20%"> Production</td>
-<td width="50%">  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.        </td>
+<td width="50%">  This is intended to be used for permanent work in an organization. It can be created and owned by an administrator or anyone with a Power Apps license, provided there is 1&nbsp;GB available database capacity. These environments are also created for each existing Common Data Service database when it is upgraded to version 9.0 or later. Production environments are what you should use for any environments on which you depend.        </td>
 <td width="30%"> Full control.  </td>
 </tr>
 <tr>
 <td width="20%"> Default</td>
-<td width="50%"> These are a special type of production environments. Each tenant will have a default environment created automatically and it has special characteristics described below in further detail. </td>
-<td width="30%">  Limited control - all licensed users<sup>1</sup> are Environment Makers.</td>
+<td width="50%"> These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, <a href="the-default-environment">The default environment</a>. </td>
+<td width="30%">  Limited control&mdash;all licensed users* have the Environment Maker role.</td>
 <tr>
 <td width="20%"> Sandbox</td>
-<td width="50%">   These are non-production environments and offer features like copy and reset. Sandbox environments are used for development and testing, separated from production. Provisioning sandbox environments can be restricted to admins (since production environment creation can be blocked), but conversion from production cannot be blocked.   </td>
-<td width="30%">  Full control. <br />If used for testing, only end user access is needed. <br />Developers require Environment Maker access to create resources.</td>
+<td width="50%">   These are non-production environments, which offer features like copy and reset. Sandbox environments are used for development and testing, separate from production. Provisioning sandbox environments can be restricted to admins (because production environment creation can be blocked), but converting from a production to a sandbox environment can't be blocked.<!--Edit okay? I didn't quite follow this.-->  </td>
+<td width="30%">  Full control. <br />If used for testing, only user access is needed. <br />Developers require Environment Maker access to create resources.</td>
 </tr>
 <tr>
 <td width="20%"> Trial</td>
-<td width="50%">  Trial environments are intended to support short term testing needs and are automatically cleaned up after a short period of time. Expires after 30 days and are limited to 1 user. Provisioning trial environments can be restricted to admins.</td>
+<td width="50%">  Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one user. Provisioning trial environments can be restricted to admins.</td>
 <td width="30%">  Full control.</td>
 </tr>
 <tr>
 <td width="20%"> Developer</td>
-<td width="50%">  Developer environments are created by users with the Community Plan license. They are special environments intended only for use by the owner. Sharing with other users is not possible. Provisioning developer environments can't be restricted unless through a support ticket. </td>
+<td width="50%">  Developer environments are created by users who have the Community Plan license. They're special environments intended only for use by the owner, and they can't be shared with other users. Provisioning developer environments can't be restricted unless through a support ticket.<!--What does this mean?--> </td>
 <td width="30%">  Only a single user account with the Community Plan has access.</td>
 </tr>
+<tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Office 365 and Dynamics 365 Online, standalone licenses, and free and trial licenses.</td></tr>
 </table>
+<!--note from editor: If there's only one footnote, the footnote symbol is an asterisk. Also, "Office 365 and Dynamics 365 Online" is ambiguous. "Dynamics 365 Online" isn't really a thing. Should this be "Users licensed for Power Apps or Power Automate, or standalone, free, or trial licenses for Office 365 and Dynamics 365"? -->
 
-<sup>1</sup>Users licensed for Power Apps, Power Automate, Office 365 and Dynamics 365 Online, stand-alone licenses, free and trial licenses.
+<a name="the-default-environment"></a>
 
 ## The default environment
-A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they are automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of the Azure AD tenant.
+A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant.
 
 > [!NOTE]
-> No users will be added to the Environment Admin role of the default environment automatically. For more information, see [Administer environments in Power Apps](environments-administration.md).
+> No users will be added to the Environment Admin role of the default environment automatically. More information: [Administer environments in Power Apps](environments-administration.md)
 >
-> The default environment is limited to 32GB of storage capacity. In case you need to store more data, you can create a production environment. See [Provisioning a new environment](create-environment.md#provisioning-a-new-environment).
+> The default environment is limited to 32&nbsp;GB of storage capacity. In case you need to store more data, you can create a production environment. More information: [Provisioning a new environment](create-environment.md#provisioning-a-new-environment)
 
 The default environment is named as follows: "{Azure AD tenant name} (default)"
-
-![](./media/environments-overview/DefaultEnvironment.png)
+<!--Sorry to say, "John Doe" isn't on our approved fictitious names list! If the name is included in sample data, that's copacetic.-->
+![Default environment named Microsoft (default)](./media/environments-overview/DefaultEnvironment.png "Default environment named Microsoft (default)")
 
 ## Production and trial environments
-You can create environments for different purpose. A trial environment is for trying out the environment and database with Common Data Service experience. It expires after certain period. 
+You can create environments for different purposes. A trial environment is for trying out the environment and the experience of using a database with Common Data Service. It expires after a certain period. 
 
-## Manage environments in Power Platform admin center
+## Manage environments in the Power Platform admin center
 
-You can view and manage your environments in the **Environments** page. 
+You can view and manage your environments on the **Environments** page. 
 
 > [!div class="mx-imgBorder"] 
 > ![Environment list](media/environment-list.png "Environment list")
 
-You can sort and search the list of environments - useful for those of you with a large number of environments to manage.
+You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
 
 ### Environment details
 
@@ -128,21 +132,21 @@ You can see some the details of your environments by selecting an environment. S
 > [!div class="mx-imgBorder"] 
 > ![Environment details](media/environment-details-see-all.png "Environment details")
 
-Select **Edit** to review and edit all your environment details.
+Select **Edit** to review and edit environment details.
 
 > [!div class="mx-imgBorder"] 
 > ![More environment details](media/environment-details-more.png "More environment details")
 
-## Choosing an environment in Power Apps admin center
-With the introduction of environments, you will now see a new experience when you come to [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  The apps, connections, and other items that are visible in the site will now be filtered based on the current environment that is selected.  Your current environment is specified in the environment picker near the right edge of the header. To choose a different environment, click or tap the picker, and a list of available environments appears. Click or tap the one you wish to enter.
+## Choosing an environment in the Power Apps admin center
+With the introduction of environments, you'll now see a new experience when you come to [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). The apps, connections, and other items that are visible in the site will now be filtered based on the environment that's currently selected. Your current environment is displayed in the environment picker near the upper-right corner of the header. To choose a different environment, select the picker, and then select the environment you want to enter from the list that appears.
 
 An environment will show up in your picker if you meet one of the following conditions:
 
-* You are a member of the Environment Admin role for the environment.
-* You are a member of the Environment Maker role for the environment.
-* You are not an Environment Admin or Environment Maker of the environment, but you have been given 'Contributor' access to at least one app within the environment. For more information, see [share an app](/powerapps/maker/canvas-apps/share-app). In this case, you will not be able to create apps in this environment. You will only be able to modify the existing apps that have been shared with you.
-
-![](./media/environments-overview/EnvironmentPicker.png)
+* You're a member of the Environment Admin role for the environment.
+* You're a member of the Environment Maker role for the environment.
+* You aren't an Environment Admin or Environment Maker for the environment, but you've been given Contributor access to at least one app within the environment. In this case, you won't be able to create apps in this environment, you'll only be able to modify existing apps that have been shared with you. More information: [Share an app](/powerapps/maker/canvas-apps/share-app)
+<!--Please verify alt text. -->
+![Environment picker showing available apps and environments](./media/environments-overview/EnvironmentPicker.png "Environment picker showing available apps and environments")
 
 ### See also
 [Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/modules/create-manage-environments/)<br />

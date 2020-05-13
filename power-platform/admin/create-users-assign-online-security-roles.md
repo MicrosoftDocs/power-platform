@@ -39,6 +39,7 @@ You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admi
 Some user profile information is maintained and managed in the [!INCLUDE [pn-office-365-admin-center](../includes/pn-office-365-admin-center.md)]. After you create or update a user, these user profile fields are automatically updated and synchronized in your Microsoft Power Platform environments.
 
 The following table shows the fields that are managed in the **Users** section of the [!INCLUDE [pn-office-365-admin-center](../includes/pn-office-365-admin-center.md)].
+<!--note from editor: Redid the table so the footnote would work a little better.
 
 |Model-driven apps in Dynamics 365 user form  |Office 365/Azure Active Directory user  |
 |---------|---------|
@@ -53,10 +54,36 @@ The following table shows the fields that are managed in the **Users** section o
 |Address     |City         |
 |Address     |State or province         |
 |Address     |Country or region         |
-<tr><colspan=2>&nbsp;&nbsp;*&#8201;To prevent data loss, the Primary Email field isn't automatically updated and synchronized with model-driven apps in Dynamics 365.</tr>
+*To prevent data loss, the Primary Email field does not automatically update and synchronize with model-driven apps in Dynamics 365.
+-->
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>Model-driven apps in Dynamics 365 user form </th><th>Office 365/Azure AD user</th></tr>
+</thead>
+<tbody>
+<tr><td>User Name</td><td>Username</td></tr>
+<tr><td>Full Name  </td><td>First name + Last name </td></tr>
+<tr><td>Title </td><td>Job title </td></tr>
+<tr><td>Primary Email* </td><td>Email </td></tr>
+<tr><td>Main Phone </td><td>Office phone</td></tr>
+<tr><td>Mobile Phone  </td><td>Mobile phone</td></tr>
+<tr><td>Fax  </td><td>Fax number  </td></tr>
+<tr><td>Address  </td><td>Street address   </td></tr>|
+<tr><td>Address   </td><td>City   </td></tr>
+<tr><td>Address   </td><td>State or province    </td></tr>
+<tr><td>Address    </td><td>Country or region    </td></tr>
+<tr><td colspan="2">* To prevent data loss, the Primary Email field isn't automatically updated and synchronized with model-driven apps in Dynamics 365.</td></tr>
+</tbody>
+</table>
+
 
 The following image shows Office 365 user contact fields.
-<!--Suggest adding alt text, so that the information isn't only conveyed by a graphic.-->
+<!--Suggest adding alt text, so that the information doesn't only exist in a graphic.-->
 ![Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region](media/office-365-contact-info.png "Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region")
 
 ## Add a license to a user account  
@@ -108,10 +135,11 @@ To assign security roles to users in an environment that has zero or one Common 
 > [!NOTE]
 > [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles are valid only for managing aspects of the online service subscription. These roles don't affect permissions within the service.
 
-## Enable or disable user accounts  
+## Enable or disable user accounts
+<!--Suggest that we work around using the "disable user" phrasing. I figure this will be all right because the other headings use "account" as a qualifier (e.g. "Create a Read-Write user account"), but if you don't like this, please note that I changed the cross-references in add-users-to-environment.md to use this updated heading name. -->
 User enablement and disablement only applies to environments that have a Common Data Service database. To enable a user in an environment that has a Common Data Service database, ensure that they're allowed to sign in, assign a license to the user, and then add the user to the security group that's associated with the environment. These are the same criteria used to [add users to an environment](add-users-to-environment.md). 
 
-To enable a user, assign a license to the user and add the user to the security group that's associated with an environment. If you enable a user account<!--Edit okay? Grammatically, we should say "if you enable a user who [not 'that'] was disabled..." but it would be better to keep it impersonal if possible. I figure this will be all right because the other headings do use "account" as a qualifier (e.g. "Create a Read-Write user account").--> that was disabled, you must send a new invitation for the user to access the system.  
+To enable a user, assign a license to the user and add the user to the security group that's associated with an environment. If you enable a user account that was disabled, you must send a new invitation for the user to access the system.  
   
 To disable a user account, remove a license from the user or remove the user from the security group that's associated with an environment. Removing a user from the security group doesn't remove the user's license. If you want to make the license available to another user, you have to remove the license from the user account that was disabled.  
 
