@@ -231,7 +231,8 @@ You should see a (200) status returned, which means the query was successful.
 > -. Have you enabled the audit log very recently? If so, try again in a few minutes to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure app registration?
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
-
+> - Validate that you correctly followed the steps in [Azure App Registration](#create-an-azure-app-registration-for-the-office-365-management-api)
+> - Validate that you correctly updated the Security Settings of the Custom Connector as described in [step 6 of Custom Connector Setup](#set-up-the-custom-connector)
 
 ### Set up the Power Automate flow
 
