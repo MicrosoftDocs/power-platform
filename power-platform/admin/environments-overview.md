@@ -78,7 +78,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Default</td>
-<td width="50%"> These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, <a href="the-default-environment">The default environment</a>. </td>
+<td width="50%"> These are a special type of production environment. Each tenant has a default environment that's created automatically. Its characteristics are discussed in the following section, <a href="#the-default-environment">The default environment</a>. </td>
 <td width="30%">  Limited control&mdash;all licensed users* have the Environment Maker role.</td>
 <tr>
 <td width="20%"> Sandbox</td>
