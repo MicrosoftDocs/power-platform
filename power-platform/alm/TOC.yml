@@ -25,9 +25,7 @@
       - name: Update solutions
         href: update-solutions-alm.md
   - name: Tools and apps used
-    href: tools-apps-used-alm.md
-  - name: Move an app between tenants or environments 
-    href: environment-and-tenant-migration.md    
+    href: tools-apps-used-alm.md    
   - name: Implementing healthy ALM
     items: 
     - name: Healthy ALM overview
