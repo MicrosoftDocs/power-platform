@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 05/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.app:
 
 Common Data Service uses a role-based security model to help secure access to the database. This topic explains how to create the security artifacts that you must have to help secure resources in an environment. Security roles can be used to configure environment-wide access to all resources in the environment, or to configure access to specific apps and data in the environment. Security roles control a user's access to an environment's resources through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role governs the limitations on the user's view of apps and data, and on the user's interactions with that data. 
 
-An environment can have zero or one Common Data Service database. The process for assigning security roles for environments that have no Common Data Service database differs from that for an environment that does have<!--Suggested.--> a Common Data Service database. 
+An environment can have zero or one Common Data Service database. The process for assigning security roles for environments that have no Common Data Service database differs from that for an environment that does have a Common Data Service database. 
 
 ## Predefined security roles
 Environments include predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app. 
@@ -34,8 +34,6 @@ Environments include predefined security roles that reflect common user tasks wi
 |Common Data Service User     |  Read (self), Create (self), write (self), delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role)   |
 |Delegate     | Act on behalf of another user        | Allows code to *impersonate*, or run as another user.  Typically used with another security role to allow access to records. More information: [Impersonate another user](https://docs.microsoft.com/powerapps/developer/common-data-service/impersonate-another-user)        |
 &nbsp;&nbsp;*&thinsp;The scope of these privileges is global, unless specified otherwise.
-
-
 
 > [!NOTE]
 > - Environment Maker and Environment Admin are the only predefined roles for environments that have no Common Data Service database. 
@@ -71,7 +69,7 @@ A user who already has the Environment Admin role in the environment can take th
 
 ## Assign security roles to users in an environment that has a Common Data Service database 
 
-Verify that the user you want to assign a security role to is present in the environment. If not, add the user to the environment. You'll be able to assign a security role as part of the process of adding the user.<!--Edit okay? --> More information: [Add users to an environment](add-users-to-environment.md) 
+Verify that the user you want to assign a security role to is present in the environment. If not, add the user to the environment. You'll be able to assign a security role as part of the process of adding the user. More information: [Add users to an environment](add-users-to-environment.md) 
 
 In general, a security role can only be assigned to users who are in the Enabled state. But if you need to assign a security role to users in the Disabled state, you can do so by enabling **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings. 
 
@@ -100,7 +98,7 @@ To add a security role to a user who is already present in an environment:
 
 ## Create or configure a custom security role 
 
-If your app uses a custom entity, its privileges must be explicitly granted in a security role before your app can be used. You can either add these privileges in an existing security role or create a custom security role.<!--Suggested. I think this point is more of a note than a tip. -->
+If your app uses a custom entity, its privileges must be explicitly granted in a security role before your app can be used. You can either add these privileges in an existing security role or create a custom security role.
 
 > [!NOTE]
 > Every security role must include a minimum set of privileges before it can be used. These are described [later in this article](#minimum-privileges-to-run-an-app). 

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 05/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,9 +23,9 @@ You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admi
  When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You have the option to let the service send an email message to the user as clear text. Although the password is temporary, you might consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] user account, see [Add users individually or in bulk](https://go.microsoft.com/fwlink/p/?LinkId=255286).  
   
 > [!NOTE]
->  When you create a user and assign a license in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the user is also created in model-driven apps in Dynamics 365. It can take a few minutes to complete the synchronization process between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and model-driven apps in Dynamics 365.<!--Suggested, to avoid transitive verb awkwardness.-->
+> When you create a user and assign a license in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the user is also created in model-driven apps in Dynamics 365. It can take a few minutes to complete the synchronization process between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and model-driven apps in Dynamics 365.
 > 
->  By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user won't have access to model-driven apps in Dynamics 365 until the user has a security role assigned either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams).  
+> By entering a user ID and password, a user can access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to view information about the service. However, the user won't have access to model-driven apps in Dynamics 365 until the user has a security role assigned either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams).  
 > 
 > [!TIP] 
 >  To force an immediate synchronization between the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and model-driven apps in Dynamics 365, do the following:  
@@ -39,23 +39,7 @@ You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admi
 Some user profile information is maintained and managed in the [!INCLUDE [pn-office-365-admin-center](../includes/pn-office-365-admin-center.md)]. After you create or update a user, these user profile fields are automatically updated and synchronized in your Microsoft Power Platform environments.
 
 The following table shows the fields that are managed in the **Users** section of the [!INCLUDE [pn-office-365-admin-center](../includes/pn-office-365-admin-center.md)].
-<!--note from editor: Redid the table so the footnote would work a little better.
 
-|Model-driven apps in Dynamics 365 user form  |Office 365/Azure Active Directory user  |
-|---------|---------|
-|User Name     |Username         |
-|Full Name     |First name + Last name         |
-|Title     |Job title         |
-|Primary Email*     |Email         |
-|Main Phone     |Office phone         |
-|Mobile Phone     |Mobile phone         |
-|Fax     |Fax number         |
-|Address     |Street address         |
-|Address     |City         |
-|Address     |State or province         |
-|Address     |Country or region         |
-*To prevent data loss, the Primary Email field does not automatically update and synchronize with model-driven apps in Dynamics 365.
--->
 <table>
 <colgroup>
 <col style="width: 50%"/>
@@ -83,15 +67,15 @@ The following table shows the fields that are managed in the **Users** section o
 
 
 The following image shows Office 365 user contact fields.
-<!--Suggest adding alt text, so that the information doesn't only exist in a graphic.-->
+
 ![Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region](media/office-365-contact-info.png "Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region")
 
 ## Add a license to a user account  
 You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service. 
   
-For step-by-step instructions to use user licenses, see [Add users individually or in bulk](https://go.microsoft.com/fwlink/p/?LinkId=255449).<!--note from editor: This FWlink goes to the exact same page as the link in line 23! (which is https://go.microsoft.com/fwlink/p/?LinkId=255286) That can't be right, can it?-->
+For step-by-step instructions to use user licenses, see [Add users individually or in bulk](https://go.microsoft.com/fwlink/p/?LinkId=255449).
  
-For step-by-step instructions to use Power Apps per app plans, see [Power Apps per app plans](about-powerapps-perapp.md).<!--Suggested, to remove an unnecessary hop. The original link goes to a section that links to this "About" article. -->
+For step-by-step instructions to use Power Apps per app plans, see [Power Apps per app plans](about-powerapps-perapp.md).
   
 > [!IMPORTANT]
 > Licensed users must be assigned at least one security role to access model-driven apps in Dynamics 365. Security roles can be assigned either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams).
@@ -100,16 +84,16 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
   
 - Use user licenses to provide access to your organization. You need one user license per person with an active user record who signs in to your organization.  
   
-- When you add a new person, the **New user account** form displays the number of user licenses available. If you reach your limit, the **On**<!--Just checking, this isn't **Add**?--> button is no longer available. You can add additional licenses by choosing **Billing** > **Purchase Services** from the left-side menu in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
+- When you add a new person, the **New user account** form displays the number of user licenses available. You can add additional licenses by choosing **Billing** > **Purchase Services** from the left-side menu in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
-- You need a user license for each invitation you issue. Even an invitation that isn't accepted requires a user license until the invitation expires two weeks after it was issued.<!--Edit okay? I wasn't sure what the significance of an "unaccepted invitation" was.-->
+- You need a user license for each invitation you issue. Even an invitation that isn't accepted requires a user license until the invitation expires two weeks after it was issued.
   
 - If you have more user licenses than you're using, contact support to reduce the number of licenses. You can't reduce the number of licenses to fewer than you're currently using or fewer than your offer allows. Any changes are reflected in your next billing cycle.  
   
 - Each user license requires a unique Microsoft account, and every user who signs in needs a license. Most subscriptions include a specific number of user licenses.  
 
 > [!NOTE]
-> Certain default security roles<!--Suggested, to avoid "there is". --> are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. No data access permission is granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams)) in order for the user to view and interact with the data. 
+> Certain default security roles are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. No data access permission is granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](manage-teams.md#about-group-teams)) in order for the user to view and interact with the data. 
 
 ## Assign a security role to a user  
  Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
@@ -136,7 +120,7 @@ To assign security roles to users in an environment that has zero or one Common 
 > [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles are valid only for managing aspects of the online service subscription. These roles don't affect permissions within the service.
 
 ## Enable or disable user accounts
-<!--Suggest that we work around using the "disable user" phrasing. I figure this will be all right because the other headings use "account" as a qualifier (e.g. "Create a Read-Write user account"), but if you don't like this, please note that I changed the cross-references in add-users-to-environment.md to use this updated heading name. -->
+
 User enablement and disablement only applies to environments that have a Common Data Service database. To enable a user in an environment that has a Common Data Service database, ensure that they're allowed to sign in, assign a license to the user, and then add the user to the security group that's associated with the environment. These are the same criteria used to [add users to an environment](add-users-to-environment.md). 
 
 To enable a user, assign a license to the user and add the user to the security group that's associated with an environment. If you enable a user account that was disabled, you must send a new invitation for the user to access the system.  
@@ -144,7 +128,7 @@ To enable a user, assign a license to the user and add the user to the security 
 To disable a user account, remove a license from the user or remove the user from the security group that's associated with an environment. Removing a user from the security group doesn't remove the user's license. If you want to make the license available to another user, you have to remove the license from the user account that was disabled.  
 
 > [!NOTE]
-> You can also remove all security roles from a user to prevent the user from signing in to and accessing model-driven apps in Dynamics 365. However, this doesn't remove the license from the user, and the user will remain in the list of enabled users. We don't recommend using this method to remove access from a user.<!--Suggest rewording this a bit so it's clear that you're describing a possible method for "disabling" a user, and then you're immediately saying don't use this method. It took me some rereading to realize this was what was happening.-->  
+> You can also remove all security roles from a user to prevent the user from signing in to and accessing model-driven apps in Dynamics 365. However, this doesn't remove the license from the user, and the user will remain in the list of enabled users. We don't recommend using this method to remove access from a user.  
 >
 > When you use a security group to manage enabling or disabling users or provisioning access to an org, nested security groups within the selected security group aren't supported and will be ignored.
 >
@@ -153,13 +137,14 @@ To disable a user account, remove a license from the user or remove the user fro
 You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign admin roles](https://go.microsoft.com/fwlink/p/?LinkId=255444)  
 
 ### Enable a user account in an environment  
-<!--note from editor: I deleted the introduction because it's duplicated from above; suggest replacing it with something like the following:-->
+
 To enable a user in an environment that has a Common Data Service database, you enable sign-in for the user, assign a license to the user, and then add the user to a security group.
 
 **To enable sign-in**
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. Select **Users**> **Active users**, and then select the user. 
-3. Ensure that under the user's display name, you see **Sign in allowed**. If you don't, select **Block this user**, and then unblock sign in.<!--Will the reader know how to do this, or can you say "and then clear the check mark" or whatever the step looks like?-->
+3. Ensure that under the user's display name, you see **Sign in allowed**. If you don't, select **Block this user**, and then unblock sign in.
+
 
 **To assign a license**
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
@@ -176,7 +161,7 @@ To enable a user in an environment that has a Common Data Service database, you 
 6. Choose users from the list or search for users, and then select **Save**.
 
 ### Disable a user account in an environment 
-<!--As above, suggest deleting duplicated content and just focusing on the steps here.-->
+
 To disable a user account in an environment that has a Common Data Service database, you can either remove the user from the security group or remove the license from the user.
 
 **To remove a user from a security group**
@@ -230,11 +215,11 @@ You need to have the System Administrator security role or equivalent permission
 
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
-    Be sure to assign a license to the account. You'll remove the license (in step 12<!--Edit okay?-->) after you've assigned the **Administrative** access mode.
+    Be sure to assign a license to the account. You'll remove the license (in step 12) after you've assigned the **Administrative** access mode.
   
 2. In the **Optional settings** form, expand **Roles**.
 
-3. Clear the **User (no administrator access)** check box.<!--Edit okay?-->
+3. Clear the **User (no administrator access)** check box.
 
 4. Scroll down the form, and then select the **Show all** link.
 
@@ -260,7 +245,7 @@ You need to have the System Administrator security role or equivalent permission
 12. Clear the license box(es), and then select **Save changes**.
 
 ## Create a non-interactive user account  
- The non-interactive user isn't a "user" in the typical sense&mdash;it doesn't represent a person, it's an access mode that's created by means of<!--Suggested. "With" can be a bit ambiguous.--> a user account. It's used for programmatic access to and from model-driven apps in Dynamics 365 between applications. A non-interactive user account lets these applications or tools&mdash;such as a connector from model-driven apps in Dynamics 365 to ERP&mdash;authenticate and access model-driven apps in Dynamics 365 without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
+ The non-interactive user isn't a "user" in the typical sense&mdash;it doesn't represent a person, it's an access mode that's created by means of a user account. It's used for programmatic access to and from model-driven apps in Dynamics 365 between applications. A non-interactive user account lets these applications or tools&mdash;such as a connector from model-driven apps in Dynamics 365 to ERP&mdash;authenticate and access model-driven apps in Dynamics 365 without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
   
  You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you'll create a user account in Office 365. Then, in model-driven apps in Dynamics 365, select the non-interactive access mode for the account.  
   
@@ -287,7 +272,7 @@ You need to have the System Administrator security role or equivalent permission
 9. Go back to model-driven apps in Dynamics 365 and confirm that the non-interactive user account **Access Mode** is still set for **Non-interactive**.  
 
 ## Create an application user  
-You can use server-to-server (S2S) authentication to securely and seamlessly communicate between Common Data Service and<!--Suggested.--> your web applications and services. S2S authentication is the common way that apps registered on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] use to access the Common Data Service data of their subscribers. All operations performed by your application or service by using S2S will be performed as the application user you provide, rather than the user who's accessing your application.  
+You can use server-to-server (S2S) authentication to securely and seamlessly communicate between Common Data Service and your web applications and services. S2S authentication is the common way that apps registered on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] use to access the Common Data Service data of their subscribers. All operations performed by your application or service by using S2S will be performed as the application user you provide, rather than the user who's accessing your application.  
 
 All application users are created with a non-interactive user account, however they aren't counted toward the limit of seven non-interactive user accounts. In addition, there's no limit on how many application users you can create in an environment.
   
@@ -305,7 +290,7 @@ You can customize the default **Application User** form to allow updates to the 
 > Disabling an application user will break all the integration scenarios that use the application user.
 
 ## How stub users are created
-A stub user is a user record that has been created as a placeholder. For a typical<!--Edit assumes there are other situations where a stub user is created. If there aren't, then we don't need "For example".--> example, records have been imported that refer to this user but the user doesn't exist in model-driven apps in Dynamics 365. This user can't sign in, can't be enabled, and can't be synchronized to Office 365. This type of user can only be created through data import. 
+A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in model-driven apps in Dynamics 365. This user can't sign in, can't be enabled, and can't be synchronized to Office 365. This type of user can only be created through data import. 
 
 A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Common Data Service User** security role is assigned in a Power Apps environment.
 
@@ -314,7 +299,7 @@ A default security role is automatically assigned to these imported users. The *
 
 ### Update a user record to reflect changes in Azure AD
 
-When you create a new user or update an existing user in Dynamics 365 Customer Engagement (on-premises)<!--Edit okay??-->, some fields in the user records, such as name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS)<!--In the Cloud Style Guide, this is the only case where "Active Directory" doesn't need to be preceded with "Azure." -->. After the user record is created, no further synchronization occurs between Azure AD user accounts and model-driven apps in Dynamics 365 user records. If you make changes to the Azure AD user account, you must manually edit the user record to reflect the changes.
+When you create a new user or update an existing user in Dynamics 365 Customer Engagement (on-premises), some fields in the user records, such as name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created, no further synchronization occurs between Azure AD user accounts and model-driven apps in Dynamics 365 user records. If you make changes to the Azure AD user account, you must manually edit the user record to reflect the changes.
 
 1.  In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
 
