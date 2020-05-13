@@ -130,7 +130,7 @@ To perform the administration operations in the admin cmdlets, you'll need the f
 | Create, read, update and delete data loss prevention policies for your organization using a three-way classification - **Business**, **Non-Business**, and **Blocked**  |  Get-DlpPolicy *(previously Get-AdminDlpPolicy)* <br> New-DlpPolicy *(previously Add-AdminDlpPolicy)* <br>  Remove-DlpPolicy *(previously Remove-AdminDlpPolicy)* <br> Set-DlpPolicy *(previously Set-AdminDlpPolicy)*  |
 | Read and update tenant settings | Get-TenantSettings<br />Set-TenantSettings<br /> |
 | Read, add, or remove allowed consent/trial plans within the tenant | Remove-AllowedConsentPlans <br>Add-AllowedConsentPlans<br /> Get-AllowedConsentPlans |
-| Read tenant active user licenses | Get-AdminPowerAppLicenses |
+| Read tenant assigned user licenses | Get-AdminPowerAppLicenses |
 
 ## Tips
 
@@ -259,13 +259,15 @@ Get-AdminPowerAppsUserDetails -OutputFilePath '.\adminUserDetails.txt' –UserPr
 
 The above command will store the Power Apps user details (basic usage information about the input user via their user principal name) in the specified text file. It will create a new file if there is no existing file with that name, and overwrite the text file if it already exists.
 
-#### Export a list of active user licenses
+#### Export a list of assigned user licenses
 
 ```powershell
 Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 ```
 
-Exports all the active user licenses in your tenant into a tabular view .csv file. The export can take a while for tenants with a large number of Power Platform users.
+Exports all the assigned user licenses in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
+
+The export can take a while for tenants with a large number of Power Platform users.
 
 #### Set logged in user as the owner of a canvas app
 
@@ -462,7 +464,7 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 | 05/10/2019 | Revised links for cmdlets available on the PowerShell gallery to remove preset version. |
 | 05/20/2019 | Added support for environment-specific Data Loss Prevention (DLP) policies. |
 | 04/21/2020 | Added the new DLP cmdlets: New-DlpPolicy, Get-DlpPolicy, Set-DlpPolicy, Remove-DlpPolicy |
-| 05/12/2020 | Added a cmdlet: Export a list of active user licenses - Get-AdminPowerAppLicenses |
+| 05/12/2020 | Added a cmdlet: Export a list of assigned user licenses - Get-AdminPowerAppLicenses |
 
 ## Questions?
 
