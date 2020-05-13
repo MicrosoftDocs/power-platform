@@ -22,10 +22,13 @@ The *Audit Log Sync* flow connects to the Office 365 Audit Log to gather telemet
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
-There are two options for connecting to the audit log: one uses basic authentication (username and password), and one uses Azure App Registration to establish an identity for your app and allow access to the APIs.
+There are two options for connecting to the audit log: one uses basic authentication (username and password), and one uses Azure App Registration to establish an identity for your app and allow access to the APIs. If your admin account is protected by multifactor authentication, you will need to connect using Azure App Registration.
 
->[!IMPORTANT]
-> Office 365 Audit Log search must be turned on for the Audit Log connector to work. More information: **[Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide)**.
+## Before you use the Office 365 Audit Log connector
+
+1. Office 365 Audit Log search must be turned on for the Audit Log connector to work. More Information: [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide)
+1. You must have access to the Office 365 Audit Log. The Power Platform Service Admin role does not give you access to the Audit Log. More information: [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#before-you-begin)
+1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for Business and Enterprise plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
 ## Option 1: Connect to the audit log by using basic authentication
 
@@ -216,9 +219,9 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the directory (tenant) ID under **Tenant**, and paste the application (client) ID under **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID**, copied earlier from the App Registration overview page in Azure Active Directory to the field Tenant, then paste the **application (client) ID** under PublisherIdentifier. 
 
- 1. Select **Test Operation**.
+1. Select **Test Operation**.
 
 You should see a (200) status returned, which means the query was successful.
 
