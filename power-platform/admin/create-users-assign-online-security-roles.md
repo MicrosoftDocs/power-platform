@@ -142,13 +142,13 @@ To enable a user in an environment that has a Common Data Service database, you 
 
 **To enable sign-in**
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select **Users**> **Active users**, and then select the user. 
+2. Select **Users** > **Active users**, and then select the user. 
 3. Ensure that under the user's display name, you see **Sign in allowed**. If you don't, select **Block this user**, and then unblock sign in.
 
 
 **To assign a license**
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select **Users**> **Active users**, and then select the user. 
+2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to assign. 
 4. Select **Save changes**. 
 
@@ -174,7 +174,7 @@ To disable a user account in an environment that has a Common Data Service datab
 
 **To remove a license from a user**
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. Select **Users**> **Active users**, and then select the user. 
+2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to remove. 
 4. Select **Save changes**. 
 
