@@ -92,6 +92,8 @@
           href: trial-environments.md     
         - name: Sandbox environment
           href: sandbox-environments.md
+        - name: View apps in your environments 
+          href: admin-view-apps.md          
       - name: Manage updates
         items:
         - name: Opt in to early access updates
@@ -534,20 +536,12 @@
     - name: Application Lifecycle Management 
       href: wp-application-lifecycle-management.md
       items:
-      - name: View apps in your environments 
-        href: admin-view-apps.md
-      - name: Manage apps in your org 
-        href: admin-manage-apps.md
  #     - name: Move an app between tenants or environments 
   #      href: environment-and-tenant-migration.md
-      - name: Embed an app in Teams
-        href: embed-app-teams.md
   #    - name: Automate application lifecycle management
    #     href: automate-alm.md
   #    - name: Deploy packages using Package Deployer and Windows PowerShell
   #      href: deploy-packages-using-package-deployer-windows-powershell.md  
-      - name: Deployment scenarios 
-        href: wp-deployment-scenarios.md
     - name: Data integration
       items:
       - name: Integrate data into Common Data Service 
@@ -690,12 +684,14 @@
         href: manage-bing-maps-organization.md 
       - name: Enable Power Automate integration
         href: enable-embedded-flow-in-your-organization.md 
-      - name: "Preview feature: LIve Assist powered by Café X"
+      - name: "Preview feature: Live Assist powered by Café X"
         href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
 #      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
 #        href: deploy-packages-using-package-deployer-windows-powershell.md 
       - name: Use Power BI
         href: use-power-bi.md 
+      - name: Embed an app in Teams
+        href: embed-app-teams.md        
       - name: Install, update, or remove a preferred solution
         href: install-remove-preferred-solution.md 
       - name: Add Office 365 Online services
