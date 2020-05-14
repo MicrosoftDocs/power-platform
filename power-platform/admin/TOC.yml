@@ -531,7 +531,7 @@
             href: troubleshoot-set-up-sharepoint-online.md
           - name: Known issues with document management
             href: doc-management-known-issues.md
-    - name: Application Lifecycle Management 
+    - name: Application lifecycle management 
       href: wp-application-lifecycle-management.md
       items:
     - name: Data integration
