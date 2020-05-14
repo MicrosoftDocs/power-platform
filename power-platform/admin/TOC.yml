@@ -14,6 +14,12 @@
         href: support-overview.md
       - name: Determine your organization ID and name
         href: determine-org-id-name.md
+      - name: Manage email notifications to admins
+        href: manage-email-notifications.md
+      - name: Policies and communications
+        href: policies-communications.md
+      - name: Notifications explained
+        href: notifications-explained.md 
     - name: Licensing
       items:
       - name: Overview
@@ -409,6 +415,12 @@
         href: audit-data-user-activity.md
       - name: Enable and use Activity Logging
         href: enable-use-comprehensive-auditing.md    
+    - name: PowerShell support for Power Apps (preview) 
+    items:
+    - name: About PowerShell support
+      href: powerapps-powershell.md           
+    - name: Automation of tasks with PowerShell 
+      href: wp-task-automation-powershell.md
     - name: Requirements/supported configurations
       items:
       - name: Overview
@@ -519,29 +531,9 @@
             href: troubleshoot-set-up-sharepoint-online.md
           - name: Known issues with document management
             href: doc-management-known-issues.md
-      - name: PowerShell support for Power Apps (preview) 
-        items:
-        - name: About PowerShell support
-          href: powerapps-powershell.md           
-        - name: Automation of tasks with PowerShell 
-          href: wp-task-automation-powershell.md
-      - name: Automation of tasks with Power Automate
-        href: wp-task-automation-flow.md
-      - name: Manage email notifications to admins
-        href: manage-email-notifications.md
-      - name: Policies and communications
-        href: policies-communications.md
-      - name: Notifications explained
-        href: notifications-explained.md 
-    - name: Application Lifecycle Management 
+    - name: Application lifecycle management 
       href: wp-application-lifecycle-management.md
       items:
- #     - name: Move an app between tenants or environments 
-  #      href: environment-and-tenant-migration.md
-  #    - name: Automate application lifecycle management
-   #     href: automate-alm.md
-  #    - name: Deploy packages using Package Deployer and Windows PowerShell
-  #      href: deploy-packages-using-package-deployer-windows-powershell.md  
     - name: Data integration
       items:
       - name: Integrate data into Common Data Service 
@@ -787,8 +779,6 @@
   - name: Administer Power Apps
     href: admin-guide.md
     items:
-    - name: Power Apps overview
-      href: wp-powerapps-platform-overview.md
     - name: Environments 
       items:
       - name: Edit environment properties
