@@ -35,7 +35,7 @@ separate apps that might have different roles, security requirements, or target
 audiences. Each environment can have only one Common Data Service database.
 
 > [!IMPORTANT]
-> When you create an environment, you can choose to install Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Marketing. If you aren't building on these apps, we recommend that you not install them in your environments. This will help avoid dependency complications when you distribute solutions between environments.  
+> When you create an environment, you can choose to install Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Marketing. It is important to determine at that time if these apps are require or not because they cannot be uninstalled or installed afterwards. If you aren't building on these apps and will not require them in the future, we recommend that you not install them in your environments. This will help avoid dependency complications when you distribute solutions between environments.
 
 ### Types of environments used in ALM
 
@@ -57,7 +57,11 @@ Service environments:
     individual use. This plan is primarily meant for learning purposes or
     creating business solutions to be distributed for AppSource Test Drive.
     Although you can't share assets from a Community Plan developer environment
-    with anyone else, you can participate in the Azure DevOps pipeline. A developer environment is a single-user environment, and can't be used to run or share production apps. 
+    with anyone else, you can participate in the Azure DevOps pipeline. A developer environment is a single-user environment, and can't be used to run or share production apps.
+    
+-   **Default**  A single default environment is automatically created for each tenant and shared
+by all users in that tenant. The tenant identifies the customer, which can have one or more Microsoft subscriptions and services associated with it. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of
+the Azure Active Directory (Azure AD) tenant and is named: "{Azure AD tenant name} (default)"
 
 Create and use an environment for specific a purpose, such as development, test,
 or production.
@@ -74,24 +78,14 @@ Common Data Service.
 |-------------------------|---------------------------------|------------------|
 | Development             | App makers and developers.       | App users shouldn't have access. Developers require at least the Environment Maker security role to create resources.       |
 | Test                    | Admins and people who are testing.  | App makers, developers, and production app users shouldn't have access. Test users should have just enough privileges to perform testing. |
-| Production              | Admins and app users. Users should have just enough access to perform their tasks for the apps they use. | App makers and developers shouldn't have access, or should only have user-level privileges.                                                       |
+| Production              | Admins and app users. Users should have just enough access to perform their tasks for the apps they use. | App makers and developers shouldn't have access, or should only have user-level privileges.  |
+| Default              | By default, every user in your tenant can create and edit apps in a Common Data Service default environment that has a database. | We strongly recommend that you create environments for a specific purpose, and grant the appropriate roles and privileges only to those people who need them. |
 
 More information: 
+- [Environments overview](https://docs.microsoft.com/en-us/power-platform/admin/environments-overview)
 - [Manage environment roles](https://docs.microsoft.com/power-platform/admin/environments-administration#manage-security-for-your-environments)
 - [Create users and assign security roles](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles) 
 - [Create environments](https://docs.microsoft.com/power-platform/admin/create-environment)
-
-### Default environment 
-A single default environment is automatically created for each tenant and shared
-by all users in that tenant. The tenant identifies the customer, which can have one or more Microsoft subscriptions and services associated with it. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The
-default environment is created in the closest region to the default region of
-the Azure Active Directory (Azure AD) tenant and is named: "{Azure AD tenant name} (default)"
-
-> [!WARNING]
-> By default, every user in your tenant can create and edit apps in
-> a Common Data Service default environment that has a database. We strongly
-> recommend that you create environments for a specific purpose, and grant the
-> appropriate roles and privileges only to those people who need them.
 
 ## Solutions
 Solutions are used to transport apps and components from one environment to
