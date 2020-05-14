@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 05/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -316,8 +316,8 @@ Note that the most restrictive grouping is finally imposed when all the policies
 When all three policies are applied together to the same environment, the net result is fragmentation of connectors across eight (2<sup>3</sup> = 8) groups, as depicted below. Only connectors in the same group (out of eight possible combinations) can be used in a given app or flow. 
 
 **Consolidated grouping** <br />
--E1-, -E2-, -E3- Group 1 – Office 365 Outlook <br />
--E1-, -E2-, -E6- Group 2 – SharePoint, Basecamp 3 <br />
+-E1-, -E3-, -E5- Group 1 – Office 365 Outlook <br />
+-E1-, -E3-, -E6- Group 2 – SharePoint, Basecamp 3 <br />
 -E1-, -E4-, -E5- Group 3 – Twitter, Salesforce <br />
 -E1-, -E4-, -E6- Group 4 – NULL <br />
 -E2-, -E3-, -E5- Group 5 – Facebook, Face API <br />
