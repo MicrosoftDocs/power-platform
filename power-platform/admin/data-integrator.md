@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 02/20/2020
+ms.date: 05/14/2020
 ms.author: sabinn
 search.audienceType: 
   - admin
