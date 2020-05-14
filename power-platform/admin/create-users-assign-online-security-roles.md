@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2020
+ms.date: 05/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -141,19 +141,19 @@ You must be a member of an appropriate administrator role to do these tasks. [!I
 To enable a user in an environment that has a Common Data Service database, you enable sign-in for the user, assign a license to the user, and then add the user to a security group.
 
 **To enable sign-in**
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Ensure that under the user's display name, you see **Sign in allowed**. If you don't, select **Block this user**, and then unblock sign in.
 
 
 **To assign a license**
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to assign. 
 4. Select **Save changes**. 
 
 **To add a user to a security group**
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. **Select Groups** > **Groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
@@ -165,7 +165,7 @@ To enable a user in an environment that has a Common Data Service database, you 
 To disable a user account in an environment that has a Common Data Service database, you can either remove the user from the security group or remove the license from the user.
 
 **To remove a user from a security group**
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. **Select Groups** > **Groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
@@ -173,7 +173,7 @@ To disable a user account in an environment that has a Common Data Service datab
 6. Select the users in the list to remove them, and then select **Save**.
 
 **To remove a license from a user**
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to remove. 
 4. Select **Save changes**. 
@@ -197,7 +197,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 
 **To update the access mode of a user**
 
-1. Select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+1. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
   
 2. Select **Enabled Users**, and then select a user's full name.  
   
@@ -251,7 +251,7 @@ You need to have the System Administrator security role or equivalent permission
   
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
-    Be sure to assign a license to the account.  
+   Be sure to assign a license to the account.  
   
 2. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
   
@@ -259,7 +259,7 @@ You need to have the System Administrator security role or equivalent permission
   
 4. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Non-interactive**.  
   
-    You then need to remove the license from the account.  
+   You then need to remove the license from the account.  
   
 5. Go to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
@@ -301,9 +301,9 @@ A default security role is automatically assigned to these imported users. The *
 
 When you create a new user or update an existing user in Dynamics 365 Customer Engagement (on-premises), some fields in the user records, such as name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created, no further synchronization occurs between Azure AD user accounts and model-driven apps in Dynamics 365 user records. If you make changes to the Azure AD user account, you must manually edit the user record to reflect the changes.
 
-1.  In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+1. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
 
-2.  In the list, select the user record you want to update, and then select **Edit**.
+2. In the list, select the user record you want to update, and then select **Edit**.
 
 The following table shows the fields that are populated on the user form (user record) from the Azure AD user account.
 
