@@ -78,8 +78,13 @@ processes:
 
 ## Solution publisher 
 
-Every app you create or customization you make is part of a solution. Because
+Every app and metadata items (i.e. entity) you create or customization you make is part of a solution. Because
 every solution has a publisher, you should create your own publisher rather than use the default<!--Suggested, to avoid a momentary confusion.-->. You specify the publisher when you create a solution.
+
+> [!NOTE]
+> Even if you don't use a custom solution, you'll be working in solutions which
+> are known as the *Common Data Service Default Solution* and the *Default* solutions.
+> More information: [Default Solution and Common Data Service Default Solution](https://docs.microsoft.com/en-us/power-platform/alm/use-solutions-for-your-customizations)
 
 The base publisher of a solution that defines a component is considered the
 owner and controls what changes other publishers of the solution are allowed to make or
