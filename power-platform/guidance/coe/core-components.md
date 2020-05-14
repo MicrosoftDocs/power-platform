@@ -56,6 +56,10 @@ Here's a breakdown of the assets that form the core components:
 
 - **Power Platform User SR**  Gives read-only access to the resources in the custom entities.
 
+>> [!NOTE]
+> To easily explore and manage data stored in CDS, we recommend you install the [Microsoft PowerApps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview).<br><br>
+> More information about its usage can be found in the following blog post. [Working with data in the Common Data Service for Apps using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
+
 ## Flows
 
 ### Admin \| Sync Audit Logs
