@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/wp-powerapps-platform-overview.md",
+      "redirect_url": "https://docs.microsoft.com/powerapps/powerapps-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/wp-deployment-scenarios.md",
       "redirect_url": "../alm/implement-healthy-alm",
       "redirect_document_id": "false"
