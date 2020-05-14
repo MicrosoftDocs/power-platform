@@ -416,11 +416,11 @@
       - name: Enable and use Activity Logging
         href: enable-use-comprehensive-auditing.md    
     - name: PowerShell support for Power Apps (preview) 
-    items:
-    - name: About PowerShell support
-      href: powerapps-powershell.md           
-    - name: Automation of tasks with PowerShell 
-      href: wp-task-automation-powershell.md
+      items:
+      - name: About PowerShell support
+        href: powerapps-powershell.md           
+      - name: Automation of tasks with PowerShell 
+        href: wp-task-automation-powershell.md
     - name: Requirements/supported configurations
       items:
       - name: Overview
