@@ -26,8 +26,8 @@ The [Power Platform admin center](https://admin.powerplatform.microsoft.com)
 provides a unified portal for administrators to manage environments and settings
 for Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as
 Dynamics 365 Sales and Dynamics 365 Customer Service). From the admin center,
-administrators can manage environments, data integration, gateways, and policies,
-and get key Microsoft Power Platform metrics through Common Data Service analytics.
+administrators can manage environments, data integration, gateways, data policies,
+and get key Microsoft Power Platform metrics through Common Data Service analytics, Power Automate analytics and Power Apps analytics.
 
 More information:
 
@@ -66,23 +66,23 @@ to maintain a single "source of truth" and recall specific versions when needed.
 Git is a popular example of a version control system.
 
 > [!IMPORTANT]
-> Notice that *source control* applies both to solutions and
-> "traditional" source code. Solutions should always be part of the source code
+> Notice that *source control* applies both to [Common Data Service solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/introduction-solutions) and
+> "traditional" source code. Common Data Service solutions should always be part of the source code
 > and never stored solely in Microsoft Power Platform environments. More information:
 > [Getting started: What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
 
 ## Configuration Migration Tool
-The Configuration Migration Tool enables you to move configuration data across
-environments. Configuration data is different from user data and is used to
-define custom functionality in model-driven apps. More information: [Move configuration data across environments and organizations with the Configuration Migration Tool](https://docs.microsoft.com/power-platform/admin/manage-configuration-data)
+The Configuration Migration Tool enables you to move configuration and/or reference data across
+environments. Configuration/reference data is different from user and transactional data and is used to
+define custom functionality in apps based on Common Data Service. More information: [Move configuration data across environments and organizations with the Configuration Migration Tool](https://docs.microsoft.com/power-platform/admin/manage-configuration-data)
 
 ## Package Deployer
-Package Deployer lets administrators deploy comprehensive packages of relevant
+Package Deployer lets administrators or developers deploy comprehensive packages of relevant
 assets to Common Data Service instances. Packages can consist of not only
 solution files, but also flat files, custom code, and HTML files. Common Data
 Service provides you with a Visual Studio template for creating these packages
-that can be used with the Package Deployer tool to deploy them to a Common Data
-Service instance. More information: [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
+that can be used with the Package Deployer tool or with PowerShell to deploy them to a Common Data
+Service instance.  More information: [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
 
 ## Solution Packager
 Solution Packager is a tool that can unpack a compressed solution file into
