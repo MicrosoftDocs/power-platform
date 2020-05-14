@@ -154,7 +154,7 @@ To enable a user in an environment that has a Common Data Service database, you 
 
 **To add a user to a security group**
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. **Select Groups** > **Groups**. 
+2. Select **Groups** > **Groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
 5. Under **Members**, select **View all and manage members** >**Add members**.
@@ -166,7 +166,7 @@ To disable a user account in an environment that has a Common Data Service datab
 
 **To remove a user from a security group**
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. **Select Groups** > **Groups**. 
+2. Select **Groups** > **Groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
 5. Under **Members**, select **View all and manage members**
