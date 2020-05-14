@@ -446,6 +446,7 @@ For more information on Power Query, see [Power Query documentation](https://doc
 >   <i>The powerquery job failed with error: Exception ExceptionType:MashupEvaluationException, ExceptionMessage:EvaluationQuotaReached, EvaluationResponse:{"ResultType":"ErrorCode","Code":"EvaluationQuotaReached"</i> 
 >
 >   Review the guidance on [Power Query Online Limits](https://docs.microsoft.com/power-query/power-query-online-limits).
+> - Modifying the _url_ directly in the mashup editor is not supported. Only the filter applied using the mashup editor UI or specified in source filter edit field on mapping page will be used.
 
 ## Performance tuning
 
