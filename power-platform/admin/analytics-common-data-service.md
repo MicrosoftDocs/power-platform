@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/17/2020
+ms.date: 05/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -276,6 +276,7 @@ All the download reports, except "Active Dynamics 365 Customer Engagement Plan U
 - for an environment <br />
   and <br />
 - per the timeline in the filters for the out-of-box Common Data Service analytics reports. If you select a certain date range for the out-of-box Common Data Service reports, the same time filter applies to the downloads.  
+- The maximum duration for data availability is 30 days.
 
 The "Active Dynamics 365 Customer Engagement Plan Users by Application" report shows the last 30 days of data at the tenant level. 
 
