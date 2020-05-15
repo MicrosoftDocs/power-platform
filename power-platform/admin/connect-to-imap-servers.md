@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/06/2020
+ms.date: 05/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -21,10 +21,15 @@ search.app:
 
 Follow these steps to connect model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, with IMAP email servers such as used for Gmail and Yahoo! Mail.  
 
+> [!IMPORTANT]
+> Creating an IMAP/SMTP email server profile is currently not supported for Customer Engagement (on-premises). Check back for availability.
+
+<!-- 
 > [!NOTE]
 > - Only emails in the Inbox folder are synchronized.
 > - Existing POP3 email profiles will not be automatically converted to IMAP. There is no support for migrating from POP3 to IMAP.
 > - For IMAP/SMTP systems supported by Microsoft, check out the following topic: [Supported email service configurations for server-side synchronization](supported-email-service-configurations-server-side-synchronization.md).  
+-->
 
 <a name="BKMK_CreateProfile"></a>   
 
