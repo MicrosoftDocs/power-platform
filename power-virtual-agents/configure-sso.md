@@ -49,13 +49,19 @@ There are several steps to achieve single sign-on for your chatbot:
 
 1. Register your chatbot's canvas URL in Azure Active Directory (register an app 1)
 2. Enable authentication for PowerVirtual Agents (register an app 2)
-3. Configure the authentication-token exchange between Power Virtual Agents and Azure Active Directory
-4. Configure the chatbot on the page where you'll host it to intercept sign-in prompts
+3. Grant app 2 tenant wide admin consent (see [link](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent))
+4. Configure the authentication-token exchange between Power Virtual Agents and Azure Active Directory
+5. Configure the chatbot on the page where you'll host it to intercept sign-in prompts
 
 
 
 ## Steps to configure SSO with Azure Active Directory
 Follow the steps to configure your Power Virtual Agents' bot to accept OBO tokens and seamlessly sign-in without prompting the user.
+
+### 0. Grant tenant-wide admin consent to your Power Virtual Agents' bot application
+For single sign-on to work, you will need a Global Administrator, an Application Administrator, or a Cloud Application Administrator user role to grant tenant-wide consent to your bot's application. Click here for more details on [granting tenant-wide admin consent to an application](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent).
+
+Disclaimer - If your bot's application has not been consented to, single sign-on will not work and your bot will not get a valid access token from Azure Active Directory.
 
 ### 1. Create an app registration in Azure Active Directory for your canvas application
 
