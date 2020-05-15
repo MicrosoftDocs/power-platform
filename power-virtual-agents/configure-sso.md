@@ -80,9 +80,6 @@ You also need to define a custom scope by exposing an API for the canvas app reg
 1. Select **Configure** to confirm your changes.
 
 
-* Click 'Overview', take a note of the `Application (client) ID` (this is canvas ID) and your `Directory (tenant) ID` (this is canvas tenant id).
-
-
 **Define a custom scope for your bot (step 2)**
 1. Open the app registration that you created when you configured authentication.
 1. Go to **API Permissions** and ensure that the correct permissions are added for your bot
