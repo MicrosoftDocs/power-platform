@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2020
+ms.date: 05/15/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -102,7 +102,7 @@ This base request capacity is based on the type of subscription, as follows:
 
 3. If a tenant has at least one Microsoft Power Apps or Power Automate subscription, they will get 25,000 requests per 24 hours.
 
-If a tenant has multiple types of subscriptions, their base request capacity will be a maximum of two subscriptions. For example, if a customer has both Dynamics 365 Customer Service and Power Apps per user subscriptions, their base request capacity will be 100,000 requests per 24 hours.
+If a tenant has multiple types of subscriptions, their base request capacity will use the subscription with the larger number of requests. For example, if a customer has both Dynamics 365 Customer Service (100,000 requests) and Power Apps per user (25,000 requests) subscriptions, their base request capacity will be 100,000 requests per 24 hours.
 
 Base request capacity is defined at the tenant level and can only be used by non-licensed users, application users, and users who have free ($0) licenses.
 
