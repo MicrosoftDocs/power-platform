@@ -66,6 +66,31 @@ This is the first step of the installation process and is required for every oth
 >[!NOTE]
 >When importing the solution, sometimes Power Automate components show a warning of type *Process Activation* and a duplicate record of that component. You can ignore these warnings for flows.
 
+## Update environment variables
+
+The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once and it will be used in all necessary flows and apps.
+
+All of the sync flows depend on all environment variables' being configured.
+
+After importing the solution, you might see an error at the top, notifying you that environment variables need to be configured. For the Core Components solution, three environment variables need to be configured. The following screenshot shows an example of what the error message will look like.
+
+ ![Prompt to set up environment variables](media/coe7.png "Prompt to set up environment variables")
+
+>[!TIP]
+>To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
+
+- Select a variable, and then configure its **Default Value**.
+
+   ![Edit environment variable](media/coe8.PNG "Edit environment variable")
+
+    Configure the following variables for the Core Components solution, and then select **Save**.
+
+    | Name | Default Value |
+    |------|---------------|
+    |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
+    |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
+    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md).
+
 ## Configure the CoE Settings entity
 
 This section explains how to enter data in the CoE Settings entity, which is included in the Common Data Service instance from step 2, above.
@@ -93,7 +118,7 @@ The following assets depend on the CoE Settings entity:
 |------|------------|
 | Company Name | Your company name as it will appear in dashboards
 |Brand Logo | Link to your logo as an image file |
-| Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCC)
+| Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCCC)
 | Brand Secondary Color        | Hexadecimal value of your secondary brand color (\#DDDDDD)                                                    |
 | Email End User Support       | Email address for your helpdesk or user computing support team                                        |
 | Email Maker Support          | Email address for your Microsoft Power Platform maker support team                                              |
@@ -102,32 +127,6 @@ The following assets depend on the CoE Settings entity:
 Link to Learning Resource    | Link to internal Microsoft Power Platform learning resources, or you might link to aka.ms/PowerUp    |
 Link to Policy Documentation | Link to internal Microsoft Power Platform policies; for example, a Teams channel or SharePoint site |
 Version                      | Set to 1.0                                                                                            |
-
-## Update environment variables
-
-The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once and it will be used in all necessary flows and apps.
-
-All of the sync flows depend on all environment variables' being configured.
-
-After importing the solution, you might see an error at the top, notifying you that environment variables need to be configured. For the Core Components solution, three environment variables need to be configured. The following screenshot shows an example of what the error message will look like.
-
- ![Prompt to set up environment variables](media/coe7.png "Prompt to set up environment variables")
-
->[!TIP]
->To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
-
-- Select a variable, and then configure its **Default Value**.
-
-   ![Edit environment variable](media/coe8.PNG "Edit environment variable")
-
-    Configure the following variables for the Core Components solution, and then select **Save**.
-
-    | Name | Default Value |
-    |------|---------------|
-    |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
-    |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
-    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md).
-
 
 ## Activate the Sync Template flows
 
