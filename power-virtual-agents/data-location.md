@@ -14,7 +14,7 @@ ms.cusom: "multi-geo, gdpr"
 
 # Regional settings and data locations for organizations using Power Virtual Agents
 
-Power Virtual Agents supports a number of globalization scenarios, and allows you to choose where you want your data to reside.
+Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to reside.
 
 ## Prerequisites
 
@@ -37,13 +37,13 @@ Power Virtual Agents supports the following locales:
 * en-US
 
 
-For example, this means that if the end-user's browser locale setting is set to en-GB, the bot knows that **2/3** should be understood as **March 2nd**, whereas if the browser locale setting is en-US, the same date would be understood as **February 3rd**.
+For example, this means that if the end-user's browser locale setting is set to *en-GB*, the bot knows that **2/3** should be understood as **March 2nd**, whereas if the browser locale setting is *en-US*, the same date would be understood as **February 3rd**.
 
 
 ## Data locations
 
 
-Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as “regions”) listed in this article. You can create a bot by default in your tenant’s location, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
+Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also referred to as "regions") listed here. You can create a bot in your tenant’s location by default, or you can choose the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 
 Microsoft may replicate customer data to other regions available within the same geography for data durability. 
