@@ -30,7 +30,7 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Enable end-user authentication with Azure Active Directory](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider) and [add an authentication topic to your bot](advanced-end-user-authentication.md)
-- [Use a custom canvas](customize-default-canvas.md) (you can either customized the default canvas or use a hosted canvas app)
+- [Use a custom canvas](customize-default-canvas.md) (you can either customize the default canvas or use a hosted canvas app)
 
 
 
