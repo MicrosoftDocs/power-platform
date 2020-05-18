@@ -1,6 +1,6 @@
 ---
 title: "Regional settings and data locations for Power Virtual Agents"
-description: "Identify the geographic location where your data will reside, and plan for globalization features, including currency and date and time formats."
+description: "Identify the geographic location where your data will live, and plan for globalization features, including currency and date and time formats."
 ms.date: 03/30/2020
 ms.service:
   - "dynamics-365-ai"
@@ -14,7 +14,7 @@ ms.cusom: "multi-geo, gdpr"
 
 # Regional settings and data locations for organizations using Power Virtual Agents
 
-Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to reside.
+Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to live.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ Power Virtual Agents supports multiple globalization scenarios, and lets you cho
 
 ## Supported locales and formats
 
-Based on the end-user's browser locale setting, chatbots built with Power Virtual Agents will understand and display content that is locally relevant to the user. This includes support for localized handling and formats for the following entities:
+Chatbots built with Power Virtual Agents will understand and display content that is locally relevant to the user. Localized handling and formats are based on the end-user's browser locale setting, and includes:
 * Date and time
 * Numbers
 * Zip or postal code
@@ -37,7 +37,7 @@ Power Virtual Agents supports the following locales:
 * en-US
 
 
-For example, this means that if the end-user's browser locale setting is set to *en-GB*, the bot knows that **2/3** should be understood as **March 2nd**, whereas if the browser locale setting is *en-US*, the same date would be understood as **February 3rd**.
+For example, if the end-user's browser locale setting is set to *en-GB*, the bot knows that **2/3** equates to **March 2**. If the browser locale setting was *en-US*, the same date would equate to **February 3**.
 
 
 ## Data locations
@@ -48,10 +48,10 @@ Power Virtual Agents can be deployed into the Microsoft Azure datacenters (also 
 
 Microsoft may replicate customer data to other regions available within the same geography for data durability. 
 
-No matter where customer data is stored, Microsoft does not control or limit the locations from which customers or their end users may access customer data.
+No matter where customer data is stored, Microsoft doesn't control or limit the locations from which customers or their end users may access customer data.
 
 
-Data will be stored in United States if a bot author’s tenant location is not listed under the **Data locations** table below. For France, data will be stored in Europe.   
+Data will be stored in United States if a bot author’s tenant location isn't listed under the **Data locations** table below. For France, data will be stored in Europe.   
 
 
 
@@ -71,7 +71,7 @@ Japan | Japan East (Tokyo, Saitama), Japan West (Osaka)
 Canada | Canada Central (Toronto), Canada East (Quebec City)
 
 ## Customer data  
-Microsoft will not transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when: 
+Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when: 
 - Microsoft must provide customer support, troubleshoot the service, or comply with legal requirements. 
 
 - Customers use services that are designed to operate globally, including the following: 
@@ -85,7 +85,7 @@ Microsoft will not transfer customer data outside the selected Azure geographic 
   - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks), which may store multi-factor authentication data globally. 
 
   - Customer data collected during the onboarding process by the  [Microsoft Office 365 admin center](/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide). 
-  - Services that provide global routing functions and do not process or store customer data. This includes Azure DNS, which provides domain name services that route to different regions; or preview, beta, or other pre-release services, which typically store customer data in the United States but may store it globally. 
+  - Services that provide global routing functions and don't process or store customer data. This includes Azure DNS, which provides domain name services that route to different regions; or preview, beta, or other pre-release services, which typically store customer data in the United States but may store it globally. 
 
   - Additionally, certain types of customer data (specifically the application name, application description, and application logo) will be stored globally, rather than in the primary storage geographic location. 
 
@@ -93,7 +93,7 @@ Microsoft will not transfer customer data outside the selected Azure geographic 
 
   - [Customer Service Hand-off](advanced-hand-off.md) - Configurable external services that hand-off bot escalations to a human agent. 
 
-  - Multi-Channel – Configurable to external channels such as Facebook and internal non-Power Virtual Agents services (Microsoft Teams). 
+  - Multi-channel – Configurable to external channels such as Facebook and internal non-Power Virtual Agents services (Microsoft Teams). 
 
     - [Facebook documentation](publication-add-bot-to-facebook.md)
 
