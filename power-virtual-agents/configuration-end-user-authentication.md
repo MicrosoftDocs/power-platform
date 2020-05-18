@@ -77,6 +77,7 @@ Make sure to configure the redirect URL to be `https://token.botframework.com/.a
 
 > [!NOTE]
 > The examples provided below are for an Azure AD common endpoint. For more details, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2) documentation.
+>You must use Azure AD V2 token endpoints, as specified in the table.
 
 Field name | Description | Where to get this information for Azure AD
 ---|---
