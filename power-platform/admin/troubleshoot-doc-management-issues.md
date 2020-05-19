@@ -10,7 +10,7 @@ applies_to:
   - PowerApps
 ms.assetid: 
 author: Mattp123
-ms.author: Mansi Garg
+ms.author: t-magar
 ms.reviewer: v-iapr
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -24,12 +24,12 @@ search.app:
 
 # Troubleshooting Document Management Issues
 
-This topic explains how to use information provided in error messages to fix issues with the Document Management feature.
+This topic explains how to use information provided in error messages to fix issues with the document management feature.
 Below is an [index](#index-of-errors) that will help you to reach the right solution. The link in each cell navigates to the reason and mitigation steps for the corresponding error message.
 
 ## Error messages
 
-The following are error messages that are possible with Document Management.
+The following are error messages that are possible with document management.
 
 ### Error Message 1
 
@@ -56,14 +56,14 @@ Error message displayed for missing document library:
   > [!div class="mx-imgBorder"]
   > ![Error message in Unified Interface](media/error-in-unified-interface.png)
 
-- Error message in web client:
+- Error message in the web client:
 
   > [!div class="mx-imgBorder"]
   > ![Error message in web client](media/error-in-web-client.png)
 
 ### Reason
 
-This error typically occurs when the SharePoint document library was created for the record. Because of some change on SharePoint side, the document library doesn’t exist anymore. This can happen because the document library was deleted or moved to different SharePoint site.
+This error typically occurs when the SharePoint document library was created for the record. Because of some changes in SharePoint, the document library doesn’t exist anymore. This can happen because the document library was deleted or moved to a different SharePoint site.
 
 ### Mitigation steps for missing document library
 
@@ -82,7 +82,7 @@ This error typically occurs when the SharePoint document library was created for
 
 6.  Once complete, verify that document library is now present on the SharePoint site in the path shown in the error message.
 
-7.  Launch Dynamics 365 and repeat the operation that produced the error.
+7.  Launch the application and repeat the operation that produced the error.
 
 
 ## Reason and mitigation steps for missing folder
@@ -97,12 +97,12 @@ Error message displayed for missing document library:
 
   Folder path is `../<entity name>/<record name>`
 
-  - Error message in Unified Interface:
+  - Error message in the Unified Interface:
 
     > [!div class="mx-imgBorder"]
     > ![Error message in Unified Interface](media/folder-error1-in-unified-interface.png)
 
-  - Error message in web client:
+  - Error message in the web client:
 
     > [!div class="mx-imgBorder"]
     > ![Error message in web client](media/folder-error1-in-web-client.png)
@@ -111,29 +111,29 @@ Error message displayed for missing document library:
 
   Folder path is `../account/<account name>/<entity name>/<record name>`
 
-  - Error message in Unified Interface:
+  - Error message in the Unified Interface:
 
     > [!div class="mx-imgBorder"]
     > ![Error message in Unified Interface](media/folder-error2-in-unified-interface.png)
 
-  - Error message in web client:
+  - Error message in ther web client:
 
     > [!div class="mx-imgBorder"]
     > ![Error message in web client](media/folder-error2-in-web-client.png)
 
 ### Reason
 
-This error typically occurs when the SharePoint Folder was created for the record. Because of a change on SharePoint the folder doesn’t exist anymore. This can happen because the folder for this record was either renamed, deleted, or moved to different location.
+This error typically occurs when the SharePoint folder was created for the record. Because of a change in SharePoint, the folder doesn’t exist anymore. This can happen because the folder for this record was either renamed, deleted, or moved to different location.
 
 ### Mitigation steps for missing folder
 
-1.  The error message shows the name of the folder which is missing. It also shows the path where the folder was expected on SharePoint site. Navigate to this path on SharePoint.
+1.  The error message shows the name of the folder which is missing. It also shows the path where the folder was expected on the SharePoint site. Navigate to this path in SharePoint.
 
 2.	Create a new folder on SharePoint with the name the same as the folder name provided in error message.
 
 3.	Once complete, verify that folder is now present on the SharePoint site in the path shown in the error message.
 
-4.	Launch Dynamics 365 and repeat the operation that produced the error.
+4.	Launch the application and repeat the operation that produced the error.
 
 
 ### See also
