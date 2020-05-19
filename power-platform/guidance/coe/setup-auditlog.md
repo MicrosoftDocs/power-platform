@@ -22,10 +22,13 @@ The *Audit Log Sync* flow connects to the Office 365 Audit Log to gather telemet
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
-There are two options for connecting to the audit log: one uses basic authentication (username and password), and one uses Azure App Registration to establish an identity for your app and allow access to the APIs.
+There are two options for connecting to the audit log: one uses basic authentication (username and password), and one uses Azure App Registration to establish an identity for your app and allow access to the APIs. If your admin account is protected by multifactor authentication, you will need to connect using Azure App Registration.
 
->[!IMPORTANT]
-> Office 365 Audit Log search must be turned on for the Audit Log connector to work. More information: **[Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide)**.
+## Before you use the Office 365 Audit Log connector
+
+1. Office 365 Audit Log search must be turned on for the Audit Log connector to work. More Information: [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide)
+1. You must have access to the Office 365 Audit Log. The Power Platform Service Admin role does not give you access to the Audit Log. More information: [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#before-you-begin)
+1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for Business and Enterprise plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
 ## Option 1: Connect to the audit log by using basic authentication
 
@@ -216,9 +219,9 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the directory (tenant) ID under **Tenant**, and paste the application (client) ID under **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID**, copied earlier from the App Registration overview page in Azure Active Directory to the field Tenant, then paste the **application (client) ID** under PublisherIdentifier. 
 
- 1. Select **Test Operation**.
+1. Select **Test Operation**.
 
 You should see a (200) status returned, which means the query was successful.
 
@@ -231,7 +234,8 @@ You should see a (200) status returned, which means the query was successful.
 > -. Have you enabled the audit log very recently? If so, try again in a few minutes to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure app registration?
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
-
+> - Validate that you correctly followed the steps in [Azure App Registration](#create-an-azure-app-registration-for-the-office-365-management-api)
+> - Validate that you correctly updated the Security Settings of the Custom Connector as described in [step 6 of Custom Connector Setup](#set-up-the-custom-connector)
 
 ### Set up the Power Automate flow
 
@@ -275,4 +279,4 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 1. Refresh the page to make sure the status has changed to **On**.
 
-1. Go back to the Center of Excellence – Audit Log solution, select **Admin \| Sync Audit Log** to open the flow details page, and then select **Turn on** for this flow as well.
+1. Go back to the Center of Excellence – Audit Logs solution, select **Admin \| Sync Audit Logs* to open the flow details page, and then select **Turn on** for this flow as well.

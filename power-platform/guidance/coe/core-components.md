@@ -25,7 +25,7 @@ Here's a breakdown of the assets that form the core components:
 
 - **Catalog tenant resources**
   - [Common Data Service entities](#entities): Environments, apps, flows, and more
-  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, custom connectors, connectors, model-driven apps
+  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, flow action details, custom connectors, connectors, model-driven apps
   - [Admin | Sync Audit Log (flow)](#flows)
   - [Power BI dashboard](#power-bi-report)
   - [Power Platform Admin View (model-driven app)](#apps)
@@ -56,6 +56,10 @@ Here's a breakdown of the assets that form the core components:
 
 - **Power Platform User SR**  Gives read-only access to the resources in the custom entities.
 
+>> [!NOTE]
+> To easily explore and manage data stored in CDS, we recommend you install the [Microsoft PowerApps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview).<br><br>
+> More information about its usage can be found in the following blog post. [Working with data in the Common Data Service for Apps using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
+
 ## Flows
 
 ### Admin \| Sync Audit Logs
@@ -75,6 +79,10 @@ Runs when an environment is created or modified, and gets app information. Also 
 ### Admin \| Sync Template v2 (Flows)
 
 Runs when an environment is created or modified, and gets flow information. Also updates the record if flows are deleted.
+
+### Admin \| Sync Template v2 (Flow Action Details)
+
+Runs once daily on a schedule, and gets the actions and triggers for all flows.
 
 ### Admin \| Sync Template v2 (Connectors)
 
