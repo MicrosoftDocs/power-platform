@@ -18,7 +18,10 @@ search.app:
 
 Follow the steps in this article to set up server-side synchronization to send and receive email in model-driven apps in Dynamics 365 from Gmail accounts using OAuth2 as the authorization mechanism.
 
-## Step 1: Enable IMAP and POP in Gmail
+> [!NOTE]
+> the Gmail OAuth email server profile works for up to 100 users. Create multiple OAuth profiles (steps 1-4) if you want to associate the same profile with multiple users.
+
+## Step 1: Enable IMAP or POP in Gmail
 
 > [!NOTE]
 > These steps should be done by the System Administrator.
