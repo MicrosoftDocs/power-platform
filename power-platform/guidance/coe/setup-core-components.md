@@ -66,42 +66,6 @@ This is the first step of the installation process and is required for every oth
 >[!NOTE]
 >When importing the solution, sometimes Power Automate components show a warning of type *Process Activation* and a duplicate record of that component. You can ignore these warnings for flows.
 
-## Configure the CoE Settings entity
-
-This section explains how to enter data in the CoE Settings entity, which is included in the Common Data Service instance from step 2, above.
-
-This entity will hold a single row of information which contains your logo, brand colors, and so on, which different applications will reference.
-
-The following assets depend on the CoE Settings entity:
-
-- **Canvas apps**: The optional branding details (logo, brand colors) in all the canvas apps are pulled from this entity. Optional support and community channel links are also used.
-- **Optional flows**: The optional branding details and support channel links are used in the communication flows. You'll also configure links to the canvas apps in the settings. (The main flow that syncs data to the resource entities doesn't depend on this setting configuration.)
-
-1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Apps**, and open the Power Platform Admin View model-driven app in Play mode.
-
-1. In the left navigation, select **Configure**.
-
-1. In the **Configure view** screen, select **+ New** to create a new record.
-
-1. Provide values as listed in the following table.
-
-1. Select **Save**.
-
-1. Don't add more records to the CoE Settings table; there's no need. The dependent components will always get values from the first record.
-
-| Name | Setting value |
-|------|------------|
-| Brand Logo | Link to your logo as an image file |
-| Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCC)
-| Brand Secondary Color        | Hexadecimal value of your secondary brand color (\#DDDDDD)                                                    |
-| Email End User Support       | Email address for your helpdesk or user computing support team                                        |
-| Email Maker Support          | Email address for your Microsoft Power Platform maker support team                                              |
-| Link to Community Channel    | Link to your internal Microsoft Power Platform community (for example, Yammer, Teams)                            |
-Link to Learning Resource    | Link to internal Microsoft Power Platform learning resources, or you might link to aka.ms/PowerUp    |
-Link to Policy Documentation | Link to internal Microsoft Power Platform policies; for example, a Teams channel or SharePoint site |
-Version                      | Set to 1.0                                                                                            |
-Company Name                 | Your company name as it will appear in dashboards |
-
 ## Update environment variables
 
 The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once and it will be used in all necessary flows and apps.
@@ -127,10 +91,46 @@ After importing the solution, you might see an error at the top, notifying you t
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
     |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md).
 
+## Configure the CoE Settings entity
+
+This section explains how to enter data in the CoE Settings entity, which is included in the Common Data Service instance from step 2, above.
+
+This entity will hold a single row of information which contains your logo, brand colors, and so on, which different applications will reference.
+
+The following assets depend on the CoE Settings entity:
+
+- **Canvas apps**: The optional branding details (logo, brand colors) in all the canvas apps are pulled from this entity. Optional support and community channel links are also used.
+- **Optional flows**: The optional branding details and support channel links are used in the communication flows. You'll also configure links to the canvas apps in the settings. (The main flow that syncs data to the resource entities doesn't depend on this setting configuration.)
+
+1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Apps**, and open the Power Platform Admin View model-driven app in Play mode.
+
+1. In the left navigation, select **Configure**.
+
+1. In the **Configure view** screen, select **+ New** to create a new record.
+
+1. Provide values as listed in the following table.
+
+1. Select **Save**.
+
+1. Don't add more records to the CoE Settings table; there's no need. The dependent components will always get values from the first record.
+
+| Name | Setting value |
+|------|------------|
+| Company Name | Your company name as it will appear in dashboards
+|Brand Logo | Link to your logo as an image file |
+| Brand Primary Color          | Hexadecimal value of your primary brand color (\#CCCCCC)
+| Brand Secondary Color        | Hexadecimal value of your secondary brand color (\#DDDDDD)                                                    |
+| Email End User Support       | Email address for your helpdesk or user computing support team                                        |
+| Email Maker Support          | Email address for your Microsoft Power Platform maker support team                                              |
+| Tenant Type | The type of tenant you have. Possible Values:<br> **Commercial** _(use if your url is https://make.powerapps.com)_ <br> **GCC** _(use if your url is https://make.gov.powerapps.us)_ <br> **GCC High** _(use if your url is https://make.high.powerapps.us)_
+| Link to Community Channel    | Link to your internal Microsoft Power Platform community (for example, Yammer, Teams)                            |
+Link to Learning Resource    | Link to internal Microsoft Power Platform learning resources, or you might link to aka.ms/PowerUp    |
+Link to Policy Documentation | Link to internal Microsoft Power Platform policies; for example, a Teams channel or SharePoint site |
+Version                      | Set to 1.0                                                                                            |
 
 ## Activate the Sync Template flows
 
-The flows with the prefix *Sync* are required for populating data in the resource-elated Common Data Service entities (Environments, Power Apps Apps, Flows, Connectors, and Makers).
+The flows with the prefix *Sync* are required for populating data in the resource-elated Common Data Service entities (Environments, Power Apps Apps, Flows, Flow Action Details, Connectors, and Makers).
 
 The sync flows are used to write data from the admin connectors into the Common Data Service entities. None of the other components will work if the sync flows aren't successfully configured and run.
 
@@ -143,6 +143,10 @@ The following flows are required to sync data to the resource entities:
 -  **Admin \| Sync Template v2 (apps, custom connectors, flows, model-driven apps)**  
     Flow type: Automated  
     Description: These flows rely on the _Admin \| Sync Template v2_ flow and are triggered automatically when environment details are created or modified in the CoE Common Data Service Environments entity. These flows then crawl environment resources and store data in the PowerApps App, Flow, Connection Reference, and Maker entities.
+
+1. **Admin \| Sync Template v2 (Flow Action Details)**  
+    Flow type: Scheduled (daily by default)  
+    Description: This flow stores all triggers and actions from all the the Power Automate flows in your tenant.
 
 1. **Admin \| Sync Template v2 (Connectors)**  
     Flow type: Scheduled (daily by default)  

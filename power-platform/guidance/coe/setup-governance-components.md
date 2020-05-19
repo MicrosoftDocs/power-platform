@@ -39,6 +39,9 @@ If you don't already have a SharePoint Site for CoE Admins in your tenant, creat
 
 More information: [Create a team site in SharePoint](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)
 
+>[!IMPORTANT]
+> Now update the *Archive Site URL (SharePoint Site)* environment variable, see **[Update Environment Variable](#update-environment-variables)**.
+
 ### Create the library
 
 We've created a helper flow to create the library for you. See the following zip file: *CreateCoEArchivalDocLibraryinSP.zip*.
@@ -86,8 +89,8 @@ All flows in this solution depend on all environment variables' being configured
 
    | Name | Default value |
    |------|---------------|
-   | Archive Site URL (SharePoint Site)  | The *Archive and Clean Up* flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library). Leave this blank if you're not planning to use the *Archive and Clean Up* flow.
-   | Archive Folder                      | Folder (document library) in the SharePoint site where the .msapp file should be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library). Leave this blank if you're not planning to use the *Archive and Clean Up* flow.   |
+   | Archive Site URL (SharePoint Site)  | The *Archive and Clean Up* flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library).
+   | Archive Folder                      | Folder (document library) in the SharePoint site where the .msapp file should be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library).   |
    | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. |
    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
    | Power Platform Admin Security Group | The *Admin \| Find and add admins as owners for apps that leverage certain connectors* flow adds the Admin security group to apps. Configure the Admin security group first, then enter the Azure AD group ID (Object Id) of the group here. Note: Be sure you enter the Object Id, not an email address. |
@@ -116,7 +119,8 @@ The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Arc
 
 1. Select **Run Flow**  
 
-   This flow can take up to ten minutes to run initially. After it runs, you can delete the flow because it won't be needed anymore.
+    > [!NOTE]
+    > This flow can take up to ten minutes to run initially. After it runs, you can delete the flow because it won't be needed anymore.
 
 1. Select **Solutions** on the left side panel, and you should now see two new Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded.
 
