@@ -77,7 +77,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
    > [!div class="mx-imgBorder"] 
    > ![Create OAuth client ID](media/gmail-oauth-consent-create-clientid.png "Create OAuth client ID")
 
-8. Select **Create**.
+8. Select **Create**. In the screen that appears, make note of the client ID and client secret. You'll use this data in the next step.
 
 ## Step 4: Create an email server profile
 
@@ -98,8 +98,8 @@ Use the following settings:
 | POP3 incoming server location    | pop.gmail.com        |
 | IMAP and POP3 outgoing server location | smtp.gmail.com |
 | Authenticate using  |  Gmail OAuth  |
-| Client ID  |     |
-| Client secret |   |
+| Client ID  | From the previous step    |
+| Client secret | From the previous step  |
 
 > [!div class="mx-imgBorder"] 
 > ![IMAP server profile](media/gmail-oauth-imap-server-profile.png "IMAP server profile")
