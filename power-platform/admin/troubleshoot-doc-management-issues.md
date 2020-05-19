@@ -43,7 +43,7 @@ The following are error messages that are possible with Document Management.
 
 |Error | [Error Message 1](#error-message-1) | [Error Message 2](#error-message-2) |
 |----------------|-----------------|-----------------|
-|Error while loading the document management grid for an existing record     |  [Mitigation steps for missing document library](#mitigation-steps-for-missing-document-library)      | [Mitigation steps for missing folder](#mitigation-steps-for-missing-folder)        |
+|Error while loading the document management grid for an existing record     |  [Mitigation steps for missing document library](#reason-and-mitigation-steps-for-missing-document-library)      | [Mitigation steps for missing folder](#reason-and-mitigation-steps-for-missing-folder)        |
 
 ## Reason and mitigation steps for missing document library
 
@@ -131,7 +131,7 @@ This error typically occurs when the SharePoint Folder was created for the recor
 
 2.	Create a new folder on SharePoint with the name the same as the folder name provided in error message.
 
-3.	Once complete, verify that folder library is now present on the SharePoint site in the path shown in the error message.
+3.	Once complete, verify that folder is now present on the SharePoint site in the path shown in the error message.
 
 4.	Launch Dynamics 365 and repeat the operation that produced the error.
 
