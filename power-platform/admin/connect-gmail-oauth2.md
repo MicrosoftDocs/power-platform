@@ -34,17 +34,20 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 1. Select the OAuth consent screen and select the user type. Select **Internal** if you're using a GSuite admin tenant and will be creating the app exclusively for your organization. Select **External** if you’re testing with a stand-alone Gmail account. 
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![OAuth consent screen](media/gmail-oauth-consent-screen.png "OAuth consent screen")
 
 2. Select **Create**.
 
 3. Enter an application name and your environment's fully qualified domain name (for example: contoso.crm.dynamics.com). Then, select **Save**.
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![Enter application name and domain](media/gmail-oauth-consent-domain-name.png "Enter application name and domain")
 
 4. Select **Credentials** > **Create credentials**.
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![Create credentials](media/gmail-oauth-consent-create-credentials.png "Create credentials")
 
 5. Select **OAuth client ID**.
 
@@ -53,17 +56,17 @@ image
 7. Enter the following settings.
 
 
-|Setting  |Enter  |
-|---------|---------|
-|**Application type**     | Web application         |
-|Name     |  The name of your web client       |
-|**Authorized JavaScript origins**     | Your environment's  URL (for example, https://contoso.crm.dynamics.com)        |
-|**Authorized redirect URIs**     | Your environment's URL with "/_grid/cmds?dlg_gmailoauth.aspx" appended to it (for example, https://contoso.crm.dynamics.com/_grid/cmds/dlg_gmailoauth.aspx)        |
+   |Setting  |Enter  |
+   |---------|---------|
+   |**Application type**     | Web application         |
+   |Name     |  The name of your web client       |
+   |**Authorized JavaScript origins**     | Your environment's  URL (for example, https://contoso.crm.dynamics.com)        |
+   |**Authorized redirect URIs**     | Your environment's URL with "/_grid/cmds?dlg_gmailoauth.aspx" appended to it (for example, https://contoso.crm.dynamics.com/_grid/cmds/dlg_gmailoauth.aspx)        |
 
-image
+   > [!div class="mx-imgBorder"] 
+   > ![Create OAuth client ID](media/gmail-oauth-consent-create-clientid.png "Create OAuth client ID")
 
 8. Select **Create**.
-
 
 ## Step 4: Create an email server profile
 
