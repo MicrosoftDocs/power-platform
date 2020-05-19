@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 05/19/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -306,8 +306,6 @@ Custom Power Apps Portals use rights: For internal users, use rights to a “cus
 ### What is the minimum number of logins and page view that I need to assign to a specific portal?**
 
 Minimum login quantity to be assigned to a portal is 100 logins/month. Once you have assigned 100 logins, you can assign them in units of 1.
-
-Example: If you have 3 portals and bought 4 login packs (400 logins). You can assign them in the following way:
 
 For example, if you have 3 portals and bought 4 login packs (400 logins), you can assign them in the following ways:
 - Portal 1: 120 (min 100)
