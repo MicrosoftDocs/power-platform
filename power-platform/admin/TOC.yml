@@ -529,6 +529,8 @@
             href: troubleshooting-server-based-authentication.md
           - name: Troubleshoot set up with SharePoint online
             href: troubleshoot-set-up-sharepoint-online.md
+          - name: Troubleshooting Document Management Issues
+            href: troubleshoot-doc-management-issues.md
           - name: Known issues with document management
             href: doc-management-known-issues.md
     - name: Application lifecycle management 
