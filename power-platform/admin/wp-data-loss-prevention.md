@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/14/2020
+ms.date: 05/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -366,17 +366,15 @@ Similarly, Power Automate makers and users won't be able to start a flow that us
 
 The ability to block connectors by using DLP policy and DLP policy support in the Power Platform admin center UI are in public preview. We're working to address the following known issues and limitations:
 
-1. Three-way DLP policy creation isn't available through admin connectors.
-2. If the default group is set as **Blocked**, the list of connectors that can't be blocked won't apply when you use PowerShell to create DLP policies.
-3. All check boxes present while creating a new policy appear to have been selected when you select **Review** on the **Data Policies** page.
-4. Environment admins can't view details of tenant-level DLP policy.
-5. Environment admins can't edit environment-level policies created by other environment admins.
-6. Select environments messaging for environment admins is incongruent with feature behavior. 
-7. The Power Platform for Admins connector always blocks **LBI/Non-Business** group.
-8. Search in the policy list view only works on the **Name** field.
-9. The following connectors are marked as blockable, but they can't be blocked: Microsoft Teams, Power Apps Notification, Computer Vision API, QnA Maker, LinkedIn, and Form Recognizer. Cloud PKI Management is marked as unblockable, but it can be blocked.
-10. Some environment admin profiles are getting evaluated as tenant admin profiles; however, these admins are unable to save their changes as tenant admins.
-11. Canvas apps assessment for DLP violations at launch time/run time does not work as expected.
+1. HTTP connector settings explicitly classified in legacy DLP policies through PowerShell are not preserved while editing the policy using the new UI. 
+2. Custom connector settings explicitly classified in legacy DLP policies through PowerShell are not preserved while editing the policy using the new UI. Please do not use the new UI to edit DLP policies until this is fixed.
+3. Tenant-level policies created through the new UI enforce default grouping (typically non-business) on custom connectors. Currently there is no way to explicitly classify custom connectors in tenant-level policies or ignore them altogether. In order to manage custom connector settings explicitly using environment-level policies, exclude these environments from the tenant-level policies.
+4. Sorting by Created and Modified fields on Data Policy list view doesn’t work correctly.
+5. Three-way DLP policy creation isn't available through admin connectors. Also, the Power Platform for Admins connector always blocks LBI/Non-business group.
+6. If the default group is set as blocked, the list of connectors that can't be blocked won't apply when you use PowerShell to create DLP policies.
+7. All check boxes present while creating a new policy appear to have been selected when you select **Review** on the **Data Policies** page.
+8. Canvas apps assessment for DLP violations at launch time/run time does not work as expected.
+
 
 ### See also
 
