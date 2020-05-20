@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 [Variables](authoring-variables.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
-By default, a variable's value can be reused in the topic where this variable gets created. However, In some cases, you may want the bot to use the same value across topics, so that the bot can remember the necessary context when a conversation spans multiple topics. 
+By default, a variable's value can be reused in the topic where this variable gets created. In some cases, you may want the bot to use the same value across topics, so that the bot can remember the necessary context when a conversation spans multiple topics. 
 
 For example, in a Welcome topic, the bot asks for the customer's name and email. Then when the conversation goes to another topic, such as an Appointment Booking topic, you want the bot to remember this customer's name and email address. 
 
@@ -31,7 +31,7 @@ Bot variables apply during a single user session. You need to specify which vari
 
 ## Set bot variables
 
-After a variable is set as a bot variable, it'll be available to all topics. 
+After a variable is set as a bot variable, it will be available to all topics. 
 
 When you click on the `{x}` button in a message node or question node when composing a bot message, you'll see the bot variable is available. The variables are sorted in alphabetic order, so you'll find all bot variables are grouped together under the variable menu. 
 
@@ -110,7 +110,7 @@ The following example describes what the process would look like:
 
 In a production scenario, you might pass in as the query parameter another variable that has already stored the user's name (for example, if you have the user name from a log in script).
 
-Note that the parameter name is case insensitive. This means `username=Jeff` will also work in the above case. 
+The parameter name is case insensitive. This means `username=Jeff` will also work in the above case. 
 
 ## Related links
 - [Use variables](authoring-variables.md)
