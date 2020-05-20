@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 05/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -46,7 +46,7 @@ Once the Power Automate integration feature is enabled, the following privileges
 
 1. In the Power Platform admin center, select an environment. 
 
-2. Select **Settings** > **Behavior**.   
+2. Select **Settings** > **Product** > **Behavior**.   
   
 3. Under **Display behavior**, select **Show Power Automate on forms and in the site map** to enable or disable Power Automate.
 
