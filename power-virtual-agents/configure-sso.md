@@ -113,7 +113,7 @@ You then need to redirect the app registration to point to your custom canvas.
 1. Go to **API Permissions**. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
   
   >[!IMPORTANT]
-  >You must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to both of your app registrations or SSO will not work.
+  >To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
 
   ![](media/sso-grant-consent.png "")
 
@@ -319,4 +319,4 @@ You need to update the custom canvas page where the bot is located to intercept 
   ```
 
 #### Full sample code
-For reference, you can find the full sample code for a [simple custom canvas index.html file](customize-default-canvas.md#customize-the-default-canvas-simple), with the MSAL and store conditional scripts already [included at our GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html).
+For reference, you can find the full sample code, with the MSAL and store conditional scripts already included [at our GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html).
