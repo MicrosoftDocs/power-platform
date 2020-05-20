@@ -83,7 +83,7 @@ You then need to redirect the app registration to point to your custom canvas.
 1. Enter a name for the registration. It can be helpful to use the name of the bot whose canvas you're registering and include "canvas" to help separate it from the app registration for authentication.  
   For example, if your bot is called "Contoso sales help", you might name the app registration as "ContosoSalesCanvas" or something similar. 
 
-1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
+1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (for example Skype, Xbox)**.
 
 1. Leave the **Redirect URI** section blank for now, as you'll enter that information in the next steps. Select **Register**.
 
@@ -95,12 +95,12 @@ You then need to redirect the app registration to point to your custom canvas.
 
 **Add the redirect URL**
 
-1. Once the registration is completed, it will open to the **Overview** page. Go to **Authentication** and then select **Add a platform**.
+1. After the registration is completed, it will open to the **Overview** page. Go to **Authentication** and then select **Add a platform**.
 
 
   ![](media/sso-authentication.png "")
 
-1. On the **configure platforms** blade select **Web**. 
+1. On the **configure platforms** blade, select **Web**. 
 
   ![](media/sso-platform-web.png "")
  
