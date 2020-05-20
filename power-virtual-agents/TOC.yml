@@ -91,7 +91,7 @@
      href: configuration-fundamentals.md
    - name: Configure end-user authentication
      href: configuration-end-user-authentication.md
-   - name: Configure Single Sign-on
+   - name: Configure single sign-on
      href: configure-sso.md
    - name: Configure hand-off to a generic engagement hub
      href: configure-generic-handoff.md
