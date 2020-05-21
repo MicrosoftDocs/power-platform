@@ -133,8 +133,8 @@ This Governance Components solution contains five flows:
 -  Admin \| App Archive and Clean Up – Start Approval
 -  Admin \| App Archive and Clean Up – Check Approval
 -  Admin \| Compliance detail request
--  SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors
--  SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
+-  SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors ([Customization Instructions](governance-components.md#setup-required--admin--find-and-add-admins-as-owners-for-apps-that-leverage-certain-connectors))
+-  SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors ([Customization Instructions](governance-components.md#setup-required--admin--find-and-disable-flows-that-leverage-certain-connectors))
 
 Follow the same instructions to configure the flows as explained in [Activate the Sync Template flows](setup-core-components.md#activate-the-sync-template-flows).
 
