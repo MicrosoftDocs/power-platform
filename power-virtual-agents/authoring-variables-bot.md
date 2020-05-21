@@ -112,6 +112,13 @@ In a production scenario, you might pass in as the query parameter another varia
 
 The parameter name is case insensitive. This means `username=Jeff` will also work in the above case. 
 
+##Deleting bot variables
+When removing a global variable used in other topics, the references to that variable in the topics will be marked as "Unknown". You will receive a warning about the bot variable deletion before confirming the operation.
+<INSERT WARNING IMAGE HERE>
+  
+The topics using the deleted bot variable will display an unknown variable, and may stop working. Ensure you remove and correct all the topics that were using the deleted variable before publishing.
+<INSERT VISUAL OF TOPIC USING THE UNKNOWN VARIABLE HERE>
+
 ## Related links
 - [Use variables](authoring-variables.md)
 - [Customize the look and feel of the bot](customize-default-canvas.md)
