@@ -66,7 +66,7 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
 1. Embrace your maker community and develop a nurture and adoption strategy. Think about how to onboard new makers; organize internal events such as show-and-tell sessions, training workshops, and hackathons; and put together templates and best practices for your makers to use.
 
-    ![Email to welcome new makers](media/coe6.PNG "Email to welcome new makers")
+    ![Email to welcome new makers](media/coe5.PNG "Email to welcome new makers")
 
 ## Further resources
 
