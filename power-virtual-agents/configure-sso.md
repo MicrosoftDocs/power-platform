@@ -2,7 +2,7 @@
 title: "Configure single sign-on in Power Virtual Agents"
 description: "Enable your bot to authenticate an already-signed-in user"
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider"
-ms.date: 5/20/2020
+ms.date: 5/22/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -74,11 +74,11 @@ You then need to redirect the app registration to point to your custom canvas.
 
 1. Go to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade), either by selecting the icon or searching in the top search bar.
 
-  ![](media/sso-app-registrations.png "")
+    ![](media/sso-app-registrations.png "")
 
 1. Select **New registration**.
 
-  ![Screenshot of the app registration blade with the New registration button highlighted](media/sso-new-registration.png "Screenshot of the app registration blade with the New registration button highlighted")
+    ![Screenshot of the app registration blade with the New registration button highlighted](media/sso-new-registration.png "Screenshot of the app registration blade with the New registration button highlighted")
 
 1. Enter a name for the registration. It can be helpful to use the name of the bot whose canvas you're registering and include "canvas" to help separate it from the app registration for authentication.  
   For example, if your bot is called "Contoso sales help", you might name the app registration as "ContosoSalesCanvas" or something similar. 
@@ -87,7 +87,7 @@ You then need to redirect the app registration to point to your custom canvas.
 
 1. Leave the **Redirect URI** section blank for now, as you'll enter that information in the next steps. Select **Register**.
 
-  ![](media/sso-new-registration-details.png "")
+    ![](media/sso-new-registration-details.png "")
 
 
 
@@ -98,24 +98,24 @@ You then need to redirect the app registration to point to your custom canvas.
 1. After the registration is completed, it will open to the **Overview** page. Go to **Authentication** and then select **Add a platform**.
 
 
-  ![](media/sso-authentication.png "")
+    ![](media/sso-authentication.png "")
 
 1. On the **configure platforms** blade, select **Web**. 
 
-  ![](media/sso-platform-web.png "")
+    ![](media/sso-platform-web.png "")
  
 1. Under **Redirect URIs**  add the full URL to the page where your chat canvas is hosted. Under the **Implicit grant** section, select the **Id Tokens** and **Access Tokens** checkboxes.
 
 1. Select **Configure** to confirm your changes.
 
-  ![](media/sso-add-redirect-url.png "")
+    ![](media/sso-add-redirect-url.png "")
 
 1. Go to **API Permissions**. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
   
-  >[!IMPORTANT]
-  >To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
+    >[!IMPORTANT]
+    >To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
 
-  ![](media/sso-grant-consent.png "")
+    ![](media/sso-grant-consent.png "")
 
 
 
@@ -131,17 +131,17 @@ This step creates a trust relationship between the authentication app registrati
 
 1. Go to **API Permissions** and ensure that the correct permissions are added for your bot. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
   
-  >[!IMPORTANT]
-  >To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
+    >[!IMPORTANT]
+    >To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
 
 
 1. Go to **Expose an API** and select **Add a scope**.
 
-  ![](media/sso-expose-an-api-scopes.png "")
+    ![](media/sso-expose-an-api-scopes.png "")
 
 1. Enter a name for the scope, along with the display information that should be shown to users when they come to the single sign-on screen. Select **Add scope**.
 
-  ![](media/sso-add-scope-bladed.png "")
+    ![](media/sso-add-scope-bladed.png "")
 
 1. Select **Add a client application**. 
 
@@ -163,13 +163,13 @@ This calls into Azure AD to perform the actual exchange.
 
 1. Select **Manage** on the side navigation pane, and then go to the **Authentication** tab.
 
-   ![Go to Manage and then Authentication](media/auth-manage-sm.png)
+    ![Go to Manage and then Authentication](media/auth-manage-sm.png)
 
 1. Enter the full scope URI from the **Expose an API** blade for the canvas app registration in the **Token exchange URL** field. This will be in the format of `api://1234-4567/scope.name`.
 
-  ![](media/sso-api.png "")  
+    ![](media/sso-api.png "")  
 
-  ![](media/sso-pva-token-url.png "")
+    ![](media/sso-pva-token-url.png "")
 
 1. Select **Save** and then publish the bot content.
 
@@ -183,79 +183,79 @@ Update the custom canvas page where the bot is located to intercept the login ca
 
 2. Update `clientId` with the **Application (client) ID** for the canvas app registration. Replace `<Directory ID>` with the **Directory (tenant) ID**. You get these IDs from the **Overview** page for the canvas app registration.
 
-  ![](media/sso-app-client-id.png "")
+    ![](media/sso-app-client-id.png "")
 
 
 
-  ```HTML
-  <head>
-   <script>
-     var clientApplication;
-       (function () {
-         var msalConfig = {
-             auth: {
-               clientId: '<Client ID [CanvasClientId]>',
-               authority: 'https://login.microsoftonline.com/<Directory ID>'
-             },
-             cache: {
-               cacheLocation: 'localStorage',
-               storeAuthStateInCookie: false
-             }
-         };
-         if (!clientApplication) {
-           clientApplication = new Msal.UserAgentApplication(msalConfig);
-         }
-       } ());
-   </script>
-  </head>
-  ```
+    ```HTML
+    <head>
+     <script>
+       var clientApplication;
+         (function () {
+           var msalConfig = {
+               auth: {
+                 clientId: '<Client ID [CanvasClientId]>',
+                 authority: 'https://login.microsoftonline.com/<Directory ID>'
+               },
+               cache: {
+                 cacheLocation: 'localStorage',
+                 storeAuthStateInCookie: false
+               }
+           };
+           if (!clientApplication) {
+             clientApplication = new Msal.UserAgentApplication(msalConfig);
+           }
+         } ());
+     </script>
+    </head>
+    ```
 
 3. Insert the following \<script\> in the \<body\> section. This script calls a method to retrieve the `resourceUrl` and exchange your current token for a token requested by the OAuth prompt.
 
-  ```HTML
-   <script>
-   function getOAuthCardResourceUri(activity) {
-     if (activity &&
-          activity.attachments &&
-          activity.attachments[0] &&
-          activity.attachments[0].contentType === 'application/vnd.microsoft.card.oauth' &&
-          activity.attachments[0].content.tokenExchangeResource) {
-            // asking for token exchange with AAD
-            return activity.attachments[0].content.tokenExchangeResource.uri;
-      }
-   }
-  
-   function exchangeTokenAsync(resourceUri) {
-     let user = clientApplication.getAccount();
-      if (user) {
-        let requestObj = {
-          scopes: [resourceUri]
-        };
-        return clientApplication.acquireTokenSilent(requestObj)
-          .then(function (tokenResponse) {
-            return tokenResponse.accessToken;
-            })
-            .catch(function (error) {
-              console.log(error);
-            });
-            }
-            else {
-            return Promise.resolve(null);
-      }
-   }
-   </script>
-   ```
+    ```HTML
+    <script>
+    function getOAuthCardResourceUri(activity) {
+      if (activity &&
+           activity.attachments &&
+           activity.attachments[0] &&
+           activity.attachments[0].contentType === 'application/vnd.microsoft.card.oauth' &&
+           activity.attachments[0].content.tokenExchangeResource) {
+             // asking for token exchange with AAD
+             return activity.attachments[0].content.tokenExchangeResource.uri;
+       }
+    }
+   
+    function exchangeTokenAsync(resourceUri) {
+      let user = clientApplication.getAccount();
+       if (user) {
+         let requestObj = {
+           scopes: [resourceUri]
+         };
+         return clientApplication.acquireTokenSilent(requestObj)
+           .then(function (tokenResponse) {
+             return tokenResponse.accessToken;
+             })
+             .catch(function (error) {
+               console.log(error);
+             });
+             }
+             else {
+             return Promise.resolve(null);
+       }
+    }
+    </script>
+    ```
 
 4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier.
 
 5. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Power Virtual Agents portal.
 
-  ![](media/sso-pva-botid.png "")
+    ![](media/sso-pva-botid.png "")
    
 
 
-  ```HTML
-   <script>
+    ```HTML
+    <script>
   
     (async function main() {
   
@@ -315,8 +315,8 @@ Update the custom canvas page where the bot is located to intercept the login ca
         });
     })().catch(err => console.error("An error occurred: " + err));
   
-  </script>
-  ```
+    </script>
+    ```
 
 #### Full sample code
 For reference, you can find the full sample code, with the MSAL and store conditional scripts already included [at our GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html).
