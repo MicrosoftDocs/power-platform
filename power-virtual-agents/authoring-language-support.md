@@ -1,29 +1,26 @@
 # Language support
-We've enabled support for more languages so that your bots can reach a much broader audience all around the world.
+We've enabled support for more languages so that your bots can reach a much broader audience and engage with more markets all around the world.
 
 The current Public Preview experience of language expansion support allows bot authors to create a new bot in one of the languages listed below.
 
-## Creating a new bot in your target language
+## Bot creation
 
-When creating a new bot, simply go through the following steps:
+To create a new bot in your target language, simply go through the following steps:
 
 
-1. Select Language
-When you create a new bot, you select the language you want your bot to use for conversations with your users.
+1. **Select Language**: When you create a new bot, you select the language you want your bot to use when interacting with your users.
 
     ![Language selection option](media/LanguageSelection.png "Language selection option")
 
 
-2. Topics in target language
-Once your new bot has been created, you'll notice that your bot already has content in your target language, i.e. the System Topics as well as the template User Topics have localized content.
+2. **Topics in target language**: Once your new bot has been created, you'll notice that it already has content in the target language, i.e. the System Topics as well as the template User Topics have localized content.
 
     ![Topics in target language](media/LanguageTopics.png "Topics in target language")
 
-You can now move on to create new topics for your bot, authoring bot trigger phrases and bot messages in your target language.
+You can now move on to creating new topics for your bot, authoring bot trigger phrases and bot messages in your target language.
 
 
-3. Test in target language
-When you've created your own topic in the target language, you can test the bot in the chat canvas and see how it responds to target language user input and responds in kind.
+3. **Test in target language**: When you've created your own topic in the target language, you can test the bot in the chat canvas and see how it understands user input in the target language and responds in kind.
 
     ![Test in target language](media/LanguageTesting.png "Test in target language")
 
