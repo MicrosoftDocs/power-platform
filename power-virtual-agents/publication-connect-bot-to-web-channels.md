@@ -55,7 +55,7 @@ To share the demo website link, simply copy the demo website URL and share it wi
 
 You can add your bot to a live website as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint or Yammer site.
 
-You can also add the bot to your Power Apps portal.
+You can also add the bot to your Power Apps admin center.
 
 **Add bot to your website:**
 
@@ -67,7 +67,7 @@ You can also add the bot to your Power Apps portal.
 
 3. Provide the snippet to your web developer to add the bot to your website.
 
-**Add bot to your Power Apps Portal:**
+**Add bot to Power Apps:**
 
 1. In the Power Virtual Agents Portal, select **Manage** on the side navigation pane, and then go to the **Channels** tab.
 
@@ -75,17 +75,17 @@ You can also add the bot to your Power Apps portal.
 
     ![Select only the src URL](media/channel-custom-website-url.png)
 
-1. Go to Power Apps Portal Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your Portal by selecting **Components** on the side navigation pane, and then **IFrame**.
+1. Go to Power Apps Portal Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your app by selecting **Components** on the side navigation pane, and then **IFrame**.
 
-    ![Add IFrame to Power Apps Portal](media/channel-custom-website-portal-iframe.png)
+    ![Add IFrame to Power Apps](media/channel-custom-website-portal-iframe.png)
 
 1. Paste in the URL you copied from the IFrame snippet into the **Link** field of the IFrame component. You can adjust the size of the chat window by adjusting the **Width** and **Height** field.
 
-    ![Add bot IFrame to Power Apps Portal](media/channel-custom-website-portal-pva-iframe.png)
+    ![Add bot IFrame to Power Apps](media/channel-custom-website-portal-pva-iframe.png)
     
 1. You can interact with your bot by clicking on **Browse website** at the top right corner.
 
-    ![Add bot IFrame to Power Apps Portal](media/channel-custom-website-portal-browse-website.png)
+    ![Add bot IFrame to Power Apps](media/channel-custom-website-portal-browse-website.png)
 
 
 
