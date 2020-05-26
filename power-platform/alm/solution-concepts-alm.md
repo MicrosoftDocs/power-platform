@@ -24,7 +24,6 @@ Solutions are the mechanism for implementing ALM in Power Apps and Power Automat
 - Lifecycle of a solution
 - Solution publisher
 - Solution and solution component dependencies
-- Managed properties
 
 ## Managed and unmanaged solutions
 
@@ -143,16 +142,6 @@ The system tracks these dependencies between solutions. If you try to install a 
 ## Solution component dependencies
 A solution component represents something that you can potentially customize. Anything that can be included in a solution is a solution component and some components are dependant on other components. For example, the website field and account summary report are both dependant on the account entity.
 
-## Managed properties  
-You can control which of your managed solution components are customizable by using managed properties. ISVs should allow customization for solution components where it makes sense. This lets organizations customize your solution to their unique requirements. Limit or eliminate customization of critical solution components that provide the core functionality of your solution so that you can predictably support and maintain it. For most non-ISV development environments, we recommend that you don't allow customization for your managed solution components.
-
-Managed properties are intended to protect your solution from modifications that may cause it to break. Managed properties do not provide digital rights management (DRM), or capabilities to license your solution or control who may install it.
-
-You apply managed properties when the solution is unmanaged in the unmanaged layer of your development environment. The managed properties will take effect after you package the managed solution and install it in a different environment. After the managed solution is imported, the managed properties can't be updated except by an update of the solution by the original publisher.
-
-Most solution components have a **Managed properties** menu item available when viewing a list of solution components. When you import the managed solution that contains the components, you can view but not change their managed properties.
-
-More information: [Set managed properties](/powerapps/maker/common-data-service/set-managed-properties-metadata)
 
 ### See also
 [Solution layers](solution-layers-alm.md) <br />
