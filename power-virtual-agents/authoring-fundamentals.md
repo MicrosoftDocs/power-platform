@@ -22,7 +22,9 @@ Topics are discrete conversation paths that, when used together within a single 
 
 Creating a bot with Power Virtual Agents is easy to do with the [no-code authoring canvas](authoring-create-edit-topics.md), and there are a number of ways you can [manage how topics interact](authoring-topic-management.md), how you want the conversation to flow, and what it should feel like. It's also easy to [test the bot on the fly](authoring-test-bot.md) without having to fully deploy the bot whenever you make a small change that requires testing.
 
-There are a number of [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, in addition to [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics)
+There are a number of [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, in addition to [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
+
+You can also [choose what language you want your bot to use](authoring-language-support.md).
 
 ## Prerequisites
 
@@ -57,5 +59,7 @@ Topic | Description
 [Create your first bot](authoring-first-bot.md) | Create your first bot in less than thirty minutes.
 [Use lesson topics](authoring-template-topics.md) | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.
 [Create and edit topics](authoring-create-edit-topics.md) | Create and edit topics using the no-code authoring canvas.
+[Use system fallback topic](authoring-system-fallback-topic.md) | Use a system fallback topic for when your bot can't find an answer.
 [Manage topics](authoring-topic-management.md) | Copy, edit, and manage which topics should be available in your bot.
 [Test your bot](authoring-test-bot.md) | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.
+[Build bots in multiple languages](authoring-language-support.md) | Create bots in multiple languages, with user interface, system, and template topic localization.

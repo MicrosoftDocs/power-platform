@@ -34,6 +34,8 @@
      href: authoring-topic-management.md
    - name: Test your bot
      href: authoring-test-bot.md
+   - name: Build bots in multiple languages
+     href: authoring-language-support.md
 - name: Enhance and improve
   items:
    - name: Key concepts - Enhanced authoring
@@ -58,7 +60,7 @@
   items:
    - name: Key concepts - Publish your bot
      href: publication-fundamentals-publish-channels.md
-   - name: Configure the demo website and add the bot to your live website 
+   - name: Configure the demo website and add the bot to your live website
      href: publication-connect-bot-to-web-channels.md
    - name: Add bot to Microsoft Teams
      href: publication-add-bot-to-microsoft-teams.md
@@ -70,7 +72,7 @@
      href: publication-connect-bot-to-azure-bot-service-channels.md
    - name: Use a Bot Framework bot with Power Virtual Agents
      href: advanced-use-dispatcher.md
-     
+
 - name: Monitor and diagnose
   items:
    - name: Key concepts - Analytics
@@ -85,7 +87,7 @@
      href: analytics-topic-details.md
    - name: Analyze billed session information
      href: analytics-billed-sessions.md
-- name: Configure and customize 
+- name: Configure and customize
   items:
    - name: Key concepts - Configuration
      href: configuration-fundamentals.md

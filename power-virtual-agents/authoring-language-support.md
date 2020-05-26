@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Language support
+# Build bots in multiple languages
 
 [!INCLUDE [](includes/cc-beta-prerelease-disclaimer.md)
 
@@ -84,3 +84,6 @@ Swedish                     | Preview
 Turkish                     | Preview
 
 
+## See also
+
+- [Regional settings and data locations](data-location.md)
