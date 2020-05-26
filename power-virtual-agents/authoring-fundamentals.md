@@ -64,4 +64,4 @@ Topic | Description
 [Use system fallback topic](authoring-system-fallback-topic.md) | Use a system fallback topic for when your bot can't find an answer.
 [Manage topics](authoring-topic-management.md) | Copy, edit, and manage which topics should be available in your bot.
 [Test your bot](authoring-test-bot.md) | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.
-[Build bots in multiple languages](authoring-language-support.md) | Create bots in multiple languages, with user interface, system, and template topic localization.
+[Supported languages](authoring-language-support.md) | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization.

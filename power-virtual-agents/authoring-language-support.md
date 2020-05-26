@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Build bots in multiple languages
+# Supported languages
 
 [!INCLUDE [](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -25,7 +25,7 @@ The current Public Preview experience of language support lets you create a new 
 
 ## Specify a language for your bot
 
-You can specify the target language when you first [create a bot](authoring-first-bot.md).
+You specify the target language when you first [create a bot](authoring-first-bot.md).
 
 **To create a new bot in your target language**
 
@@ -53,11 +53,7 @@ When you've created your own topic in the target language, you can test the bot 
 
 ## List of supported languages
 
-Power Virtual Agents supports languages in general availability, preview, and experimental stages:
-
-- General availability: All elements are localized, including the user interface, menus, tooltips, system and template topics.
-- Preview: System and template topics are localized; the user interface, menus, and tooltips are not localized. Some localization issues might occur.
-- Experimental: System and template topics are localized; the user interface, menus, and tooltips are not localized. Multiple localization issues might occur.
+Power Virtual Agents supports languages in three stages. The stage indicates how well the bot can understand user input in that language, with general availability the strongest, followed by preview and then experimental.
 
 
 Language | Support  
