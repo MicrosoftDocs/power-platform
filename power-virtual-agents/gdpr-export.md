@@ -42,7 +42,7 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
 3. In the side navigation pane, expand the **Data** node. Select **Entities** and select **Export data**.
 
-   ![Clickpath to export data](media/export-3.png)
+   ![Export data](media/export-3.png)
 
 4. On the Export data screen, select **BotContent** and **Note** from the entity list. Select **Export data** at the top. Your data will take a couple of minutes to be compiled for export.
 
