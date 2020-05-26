@@ -31,7 +31,7 @@ additionalContent:
           links:
           - url: https://docs.microsoft.com/powerapps
             text: Documentation
-          - url: https://docs.microsoft.com/learn/browse/?products=powerapps
+          - url: https://docs.microsoft.com/learn/browse/?products=power-apps
             text: Learn Power Apps
           - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
             text: Videos
