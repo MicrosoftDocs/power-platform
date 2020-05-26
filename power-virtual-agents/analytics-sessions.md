@@ -135,7 +135,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
  
 6. In the **More Actions** dropdown, select **Cancel** to disable future bulk deletion using this job.
 
-    ![The more actions dropdown opesn to show a menu list, including Cancel](media/sessions-actions-cancel.png)
+    ![The more actions dropdown opens to show a menu list, including Cancel](media/sessions-actions-cancel.png)
  
 7. Create a new bulk record delete job by selecting **New** and set the following:
 
