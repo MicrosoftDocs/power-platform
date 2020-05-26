@@ -2,7 +2,7 @@
 title: "Bot authoring in Power Virtual Agents"
 description: "Discover how to create bots and topics easily and with no coding or long deployment times."
 keywords: ""
-ms.date: 11/19/2019
+ms.date: 5/26/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -20,9 +20,11 @@ When you create bots with Power Virtual Agents, you author and edit topics.
 
 Topics are discrete conversation paths that, when used together within a single bot, allow for users to have a conversation with a bot that feels natural and flows appropriately.
 
-Creating a bot with Power Virtual Agents is easy to do with the [no-code authoring canvas](authoring-create-edit-topics.md), and there are a number of ways you can [manage how topics interact](authoring-topic-management.md), how you want the conversation to flow, and what it should feel like. It's also easy to [test the bot on the fly](authoring-test-bot.md) without having to fully deploy the bot whenever you make a small change that requires testing.
+Creating a bot with Power Virtual Agents is easy to do with the [no-code authoring canvas](authoring-create-edit-topics.md), and there are a number of ways you can [manage how topics interact](authoring-topic-management.md), how you want the conversation to flow, and what it should feel like. 
 
-There are a number of [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, in addition to [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
+It's also easy to [test the bot](authoring-test-bot.md) without having to fully deploy the bot whenever you make a small change.
+
+There are also [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, as well as default [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
 
 You can also [choose what language you want your bot to use](authoring-language-support.md).
 
@@ -35,15 +37,15 @@ You can also [choose what language you want your bot to use](authoring-language-
 
 Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot **Authoring canvas** is built to be accessible from the get-go. 
 
-In general, using the authoring canvas follows standard navigation patterns. But for complex scenarios, we've built keyboard shortcuts specifically tailored to help users authoring content using keyboard navigation.
+In general, using the authoring canvas follows standard navigation patterns. For complex scenarios, we've built keyboard shortcuts tailored to help users authoring content using keyboard navigation.
 
 ###  Routing anchors
-Press enter or space on a route anchor to go into editing mode for that route. Once in the editing mode, you can tab to other node anchors. Once the desired anchor is selected, you can:
+Press enter or space on a route anchor to go into editing mode for that route. Once in the editing mode, you can tab to other node anchors. Once the anchor is selected, you can:
 
 - Press ```Delete``` to delete the route, and make the target node of the route an orphan node if this route is the only route leading to that node.
 - Press ```Escape``` to take the user out of tab mode and resume normal tabbing.
 - Press ```Enter``` or ```Space``` on a different node to reconnect the route to the new node (same source node, new target node).
-- Press ```Tab``` to take you to the next viable location to drop this route.
+- Press ```Tab``` to take you to the next available location to drop this route.
 
 At any time, pressing these hotkeys on a route anchor will read out the properties of the route:
 - ```Alt + Shift + A``` will read out the source node.
@@ -56,7 +58,7 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 
 Topic | Description
 - | -
-[Create your first bot](authoring-first-bot.md) | Create your first bot in less than thirty minutes.
+[Create your first bot](authoring-first-bot.md) | Create your first bot in less than 30 minutes.
 [Use lesson topics](authoring-template-topics.md) | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.
 [Create and edit topics](authoring-create-edit-topics.md) | Create and edit topics using the no-code authoring canvas.
 [Use system fallback topic](authoring-system-fallback-topic.md) | Use a system fallback topic for when your bot can't find an answer.

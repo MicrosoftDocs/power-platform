@@ -1,7 +1,7 @@
 ---
 title: "Regional settings and data locations for Power Virtual Agents"
 description: "Identify the geographic location where your data will live, and plan for globalization features, including currency and date and time formats."
-ms.date: 03/30/2020
+ms.date: 5/26/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -22,7 +22,7 @@ Power Virtual Agents supports multiple globalization scenarios, and lets you cho
 
 ## Supported locales and formats
 
-Chatbots built with Power Virtual Agents will understand and display content that is locally relevant to the user. Localized handling and formats are based on the end-user's browser locale setting, and includes:
+Chatbots built with Power Virtual Agents will understand and display content that is locally relevant to the user. Localized handling and formatting are based on the end user's browser locale setting, and includes:
 * Date and time
 * Numbers
 * Zip or postal code
@@ -37,7 +37,7 @@ Power Virtual Agents supports the following locales:
 * en-US
 
 
-For example, if the end-user's browser locale setting is set to *en-GB*, the bot knows that **2/3** equates to **March 2**. If the browser locale setting was *en-US*, the same date would equate to **February 3**.
+For example, if the end user's browser locale setting is set to *en-GB*, the bot knows that **2/3** equates to **March 2**. If the browser locale setting was *en-US*, the same date would equate to **February 3**.
 
 
 ## Data locations
@@ -74,7 +74,7 @@ Canada | Canada Central (Toronto), Canada East (Quebec City)
 Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when: 
 - Microsoft must provide customer support, troubleshoot the service, or comply with legal requirements. 
 
-- Customers use services that are designed to operate globally, including the following: 
+- Customers use services that are designed to operate globally, including: 
 
   - Email used to send marketing messaging globally, as configured by the customer. 
   
