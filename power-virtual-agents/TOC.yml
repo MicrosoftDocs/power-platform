@@ -14,7 +14,7 @@
      href: sign-up-individual.md
    - name: Working with environments
      href: environments-first-run-experience.md
-   - name: Regional settings and data locations
+   - name: Data locations
      href: data-location.md
    - name: Quotas and rate limit considerations
      href: requirements-quotas.md
