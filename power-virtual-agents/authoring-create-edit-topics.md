@@ -75,9 +75,6 @@ You can edit both of these topic types in the same manner as for topics you crea
 1. Select **Save topic** to add the topic to the topics list.
 
 
-<!--from editor: The screenshot below doesn't show "Save topic." Is that OK? -->
-
-
    > [!div class="mx-imgBorder"]
    > ![The Save topic button is at the top of the Topic details page](media/topics-details-save.png "The Save topic button is at the top of the Topic details page")
 
