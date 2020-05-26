@@ -19,7 +19,8 @@ search.app:
 
 # Solution concepts 
 Solutions are the mechanism for implementing ALM in Power Apps and Power Automate. This article describes the following:
-- Two different types of solutions
+- Two types of solutions
+- Solution components
 - Lifecycle of a solution
 - Solution publisher
 
@@ -59,7 +60,23 @@ managed solutions.
 > the unmanaged layer. Then, when you export the unmanaged solution as a
 > managed solution to distribute to another environment, the managed solution
 > is imported into the environment in the managed layer. More information:
-> [Solution layers](solution-layers-alm.md)<!--Edit okay? The link was to a different "Solution layers" article at https://review.docs.microsoft.com/en-us/powerapps/maker/common-data-service/solution-layers?branch=matp-master-aug).-->
+> [Solution layers](solution-layers-alm.md)
+
+## Solution components
+
+A component represents something that you can potentially customize. Anything that can be included in a solution is a component. To view the components included in a solution, open the solution you want. The components are listed in the **Components** list.
+
+> [!div class="mx-imgBorder"] 
+> ![Components in solution](media/components-in-solution.png "Components in solution") 
+
+> [!NOTE]
+> You can't edit components in a managed solution.
+
+To view a list of component types that can be added to any solution, see [ComponentType Options](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options). 
+
+Some components are nested within other components. For example, an entity contains forms, views, charts, fields, entity relationships, messages, and business rules. Each of those components requires an entity to exist. A field can’t exist outside of an entity. We say that the field is dependent on the entity. There are actually twice as many types of components as shown in the preceding list, but most of them are not nested within other components and not visible in the application.  
+  
+The purpose of having components is to keep track of any limitations on what can be customized using managed properties and all the dependencies so that it can be exported, imported, and (in managed solutions) deleted without leaving anything behind.
 
 ## Solution lifecycle
 
