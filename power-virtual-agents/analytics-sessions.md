@@ -1,7 +1,7 @@
 ---
 title: "Download Power Virtual Agents bot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
-ms.date: 3/6/2020
+ms.date: 5/26/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
