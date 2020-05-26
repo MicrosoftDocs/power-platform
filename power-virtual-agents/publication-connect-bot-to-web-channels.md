@@ -2,7 +2,7 @@
 title: "Configure a Power Virtual Agents bot for a live or demo website"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
-ms.date: 1/24/2020
+ms.date: 5/26/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
