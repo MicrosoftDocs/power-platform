@@ -21,7 +21,7 @@ Variables let you save responses from your customers in a conversation with your
 
 For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
-You can use variables to create logical expressions that dynamically route the customer down different conversation paths. You can also feed variables to [Power Automate](how-to-flow.md) and [Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) as input parameters, and save the output results from those actions.  
+You can use variables to create logical expressions that dynamically route the customer down different conversation paths. You can also feed variables to [Power Automate](advanced-flow.md) and [Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) as input parameters, and save the output results from those actions.  
 
 ## Prerequisites
 
