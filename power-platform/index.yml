@@ -73,7 +73,7 @@ additionalContent:
           url: https://docs.microsoft.com/common-data-model/
         - title: Connectors
           summary: "Connect to hundreds of data sources using a library of connectors"
-          url: https://docs.microsoft.com/en-us/connectors/
+          url: https://docs.microsoft.com/connectors/
     - title: See also
       items:
         # Card
