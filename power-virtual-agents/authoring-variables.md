@@ -1,8 +1,8 @@
 ---
 title: "Work with variables in Power Virtual Agents"
-description: "Use variables to utilize custom and prebuilt entities to allow for customized conversations in your bot."
+description: "Use variables to use custom and prebuilt entities to allow for customized conversations in your bot."
 keywords: ""
-ms.date: 4/15/2020
+ms.date: 5/27/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -29,9 +29,9 @@ You can use variables to create logical expressions that dynamically route the c
 
 
 ## Entity and variable type
-Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to understand and identify a specific type of information from a user's responses. When saving the identified information to a variable, a variable type will be associated with it. The variable type is essentially analogous with the entity. 
+Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to understand and identify a specific type of information from a user's responses. When saving the identified information to a variable, a variable type will be associated with it. The variable type is analogous with the entity. 
 
-Each entity or variable type maps to a base type. These are listed in the following table. 
+Each entity or variable type maps to a base type, as listed in the following table. 
 
 The base type defines the operators that can be used for the corresponding variable when constructing a logical expression. It also defines whether a variable can be used to feed to an input parameter in a [flow](advanced-flow.md) or [Bot Framework Skill](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) as an input parameter. 
 
