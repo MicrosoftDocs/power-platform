@@ -632,8 +632,8 @@
           href: connect-to-pop3-or-smtp-servers.md
         - name: Connect to IMAP or SMTP servers
           href: connect-to-imap-servers.md 
-        - name: Connect Gmail accounts using OAuth2
-          href: connect-gmail-oauth2.md
+      #  - name: Connect Gmail accounts using OAuth2
+      #    href: connect-gmail-oauth2.md
         - name: Troubleshooting and monitoring server-side synchronization
           href: troubleshooting-monitoring-server-side-synchronization.md
         - name: When would I want to use this check box?
