@@ -42,6 +42,8 @@
       items:
       - name: What's the role of a Power Platform administrator? 
         href: overview-role-powerapps-admin.md
+      - name: Management and monitoring
+        href: wp-management-monitoring.md
       - name: Power Apps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
       - name: Try Power Apps and model-driven apps in Dynamics 365
