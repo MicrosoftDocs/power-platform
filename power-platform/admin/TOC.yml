@@ -42,6 +42,8 @@
       items:
       - name: What's the role of a Power Platform administrator? 
         href: overview-role-powerapps-admin.md
+      - name: Management and monitoring
+        href: wp-management-monitoring.md
       - name: Power Apps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
       - name: Try Power Apps and model-driven apps in Dynamics 365
@@ -630,6 +632,8 @@
           href: connect-to-pop3-or-smtp-servers.md
         - name: Connect to IMAP or SMTP servers
           href: connect-to-imap-servers.md 
+      #  - name: Connect Gmail accounts using OAuth2
+      #    href: connect-gmail-oauth2.md
         - name: Troubleshooting and monitoring server-side synchronization
           href: troubleshooting-monitoring-server-side-synchronization.md
         - name: When would I want to use this check box?
