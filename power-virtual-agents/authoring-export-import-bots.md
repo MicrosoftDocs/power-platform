@@ -18,9 +18,9 @@ ms.collection: virtualagent
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can export and import bots using [solutions in Power Apps](/power-platform/alm/solution-concepts-alm) so you can move your bots across multiple [environments](https://docs.microsoft.com/power-platform/admin/environments-overview).
+You can export and import bots using [solutions](/power-platform/alm/solution-concepts-alm) so you can move your bots across multiple [environments](https://docs.microsoft.com/power-platform/admin/environments-overview).
 
-This can be useful if you use different environment for different purposes, or you employ ring-deployment methodologies. For example, you might have a specific environment where you internally test and validate bots, another environment where you test bots for only a subset of users, and a final production environment where you share bots with your customers and end users.
+This can be useful if you use different environments for different purposes, or you employ ring-deployment methodologies. For example, you might have a specific environment where you internally test and validate bots, another environment where you test bots for only a subset of users, and a final production environment where you share bots with your customers and end users.
 
 ## Prerequisites
 
@@ -35,9 +35,10 @@ This can be useful if you use different environment for different purposes, or y
 >These previews, and any support Microsoft may elect to provide, are provided "as-is," "with all faults," "as available," and without warranty.
 
 ## Upgrade existing bots (preview)
-You will need to upgrade existing bots (built before June 2020) before you can export them. Newly created bots don’t require an upgrade. You will be prompted to upgrade a bot if you attempt to export a bot that needs it.
+You will need to upgrade existing bots (built before June 2020) before you can export them. Newly created bots don’t require an upgrade, and won't show an option to upgrade them. 
 
-If you don't see an option to upgrade your bot, then your bot is already upgraded and you can continue to the next steps.
+**To update your existing bot**
+
 
 1. Sign in to the Power Virtual Agents bot you want to upgrade. 
 
@@ -108,16 +109,24 @@ You use solutions to export bots from one environment and import them into anoth
     1. Select the environment variables of the bot’s Skills. 
     1. Select **Next** to add them to the solution.
 
+
+>[!NOTE]
+>Removing a bot from a solution doesn't remove its components from a solution. Removal of the components should be done separately.  
+
+
 >[!WARNING]
->Do not remove any unmanaged chatbot subcomponents (such as bot topics) directly from the Power Apps portal. You should only make changes to topics from within the Power Virtual Agents portal.
+>Do not remove any unmanaged chatbot subcomponents (such as bot topics) directly from the Power Apps portal, unless you have removed the bot itself from the solution.  
+>You should only make changes to topics from within the Power Virtual Agents portal.  
 >Removing or changing the chatbot subcomponents from within Power Apps will cause the export and import to fail.
+
+
 
 ## Export and import bots
 
 You export and import bots by exporting and importing their containing solutions from one environment to another.
 
 >[!NOTE]
->You must have at least one upgraded bot already in the environment where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
+>You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
 
 **Export the solution with your bot**
 
@@ -187,6 +196,6 @@ There are times when you need to update an existing managed solution. To learn m
 ## Remove an unmanaged layer from a managed chatbot 
 Managed and unmanaged solutions exist at different levels within a Common Data Service environment. To learn more, go to [Solution layers](/powerapps/maker/common-data-service/solution-layers).
 
-Removing a bot from a solution doesn't remove its components from a solution. Removal of the components should be done separately. 
+
 
  
