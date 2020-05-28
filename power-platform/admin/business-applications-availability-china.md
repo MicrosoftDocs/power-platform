@@ -68,9 +68,9 @@ The Azure AD account management services are hosted on physical servers managed 
 #### Power Apps Feature not available:
 
 - Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) as Microsoft Teams is not yet available in China
-- [Power Apps Solution Checker [Planned for end of calendar year 2020]](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker)
+- [Power Apps Solution Checker (Planned for end of calendar year 2020)](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker)
 - [Power Query (Planned for end of calendar year 2020)](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
-- [Dataflows in Power Apps [Planned for end in the calendar year 2020]](https://docs.microsoft.com/powerapps/maker/common-data-service/create-and-use-dataflows)
+- [Dataflows in Power Apps (Planned for end in the calendar year 2020)](https://docs.microsoft.com/powerapps/maker/common-data-service/create-and-use-dataflows)
 - [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator)
 - [Export to Azure Data lake (aka Athena)](https://docs.microsoft.com/powerapps/maker/common-data-service/export-to-data-lake)
 - [Dual-write from Common Data Service to Dynamics 365 Finance and Operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
