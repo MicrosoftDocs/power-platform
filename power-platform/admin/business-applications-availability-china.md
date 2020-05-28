@@ -49,7 +49,7 @@ Power Apps and Power Automate maintains the actual resources, information flow, 
 
 Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors). 
 
-Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](https://review.docs.microsoft.com/connectors).
+Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors).
 
 ### Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
