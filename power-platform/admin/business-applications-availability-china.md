@@ -59,7 +59,7 @@ The Azure AD account management services are hosted on physical servers managed 
 
 #### Power Automate Features not available:
 
-- [UI Flows [Planned for end of calendar year](https://docs.microsoft.com/power-automate/ui-flows/overview)
+- [UI Flows (Planned for end of calendar year)](https://docs.microsoft.com/power-automate/ui-flows/overview)
 - [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Power Platform.
 - [Power Automate Mobile Application](https://docs.microsoft.com/flow/mobile-manage-flows)
 - [Submitting Templates](https://docs.microsoft.com/flow/publish-a-template)
@@ -69,12 +69,12 @@ The Azure AD account management services are hosted on physical servers managed 
 
 - Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) as Microsoft Teams is not yet available in China
 - [Power Apps Solution Checker [Planned for end of calendar year 2020]](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker)
-- [Power Query [Planned for end of calendar year 2020] ](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
+- [Power Query (Planned for end of calendar year 2020)](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
 - [Dataflows in Power Apps [Planned for end in the calendar year 2020]](https://docs.microsoft.com/powerapps/maker/common-data-service/create-and-use-dataflows)
 - [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator)
 - [Export to Azure Data lake (aka Athena)](https://docs.microsoft.com/powerapps/maker/common-data-service/export-to-data-lake)
 - [Dual-write from Common Data Service to Dynamics 365 Finance and Operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
-- [Common Data Service analytics [Planned for end in the calendar year 2020]](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service)
+- [Common Data Service analytics (Planned for end in the calendar year 2020)](https://docs.microsoft.com/power-platform/admin/analytics-common-data-service)
 - [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Power Platform.
 - [Connectors](https://docs.microsoft.com/connectors/connector-reference/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. 
 
