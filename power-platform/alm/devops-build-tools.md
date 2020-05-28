@@ -1,12 +1,12 @@
 ---
-title: "Power Apps build tools for Azure DevOps | Microsoft Docs"
+title: "Microsoft Power Platform Build Tools for Azure DevOps | Microsoft Docs"
 description: "Learn about the ALM-related tools, APIs, and services that are available to developers when using Azure DevOps."
 keywords: 
 author: phecke
 ms.author: pehecke
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 05/27/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -17,26 +17,26 @@ search.app:
   - D365CE
 ---
 
-# Power Apps build tools for Azure DevOps
+# Microsoft Power Platform Build Tools for Azure DevOps
 
-Use Power Apps build tools to automate common build and deployment tasks related
-to Power Apps. This includes synchronization of solution metadata (also known as
-solutions) between development environments and source control, generating build
-artifacts, deploying to downstream environments, provisioning or de-provisioning
-environments, and the ability to perform static analysis checks against your
-solution by using the Power Apps checker service.
+Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
+to Apps built on the Power Platform. These tasks include: 1) synchronization of solution metadata (also known as
+solutions) that contains the various platform components such as Dynamics 365 Customer Engagement apps, canvas apps, UI flows, virtual agents, AI Builder models and connectors between development environments and source control, 2) generating build
+artifacts, 3) deploying to downstream environments, 4) provisioning or de-provisioning
+environments, and 5) the ability to perform static analysis checks against your
+solution by using the Power Platform checker service.
 
-The Power Apps build tools tasks can be used along with any other available
+The Microsoft Power Platform Build Tools tasks can be used along with any other available
 Azure DevOps tasks to compose your build and release pipelines. Pipelines
 that teams commonly put in place include Initiate, Build, and Release.
 
 ![ALM powered by Azure DevOps](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
-## What are Power Apps build tools?
+## What are Microsoft Power Platform Build Tools?
 
-The Power Apps build tools are a collection of Power Apps&ndash;specific Azure DevOps
+The Microsoft Power Platform Build Tools are a collection of Power Platform&ndash;specific Azure DevOps
 build tasks that eliminate the need to manually download custom tooling and
-scripts to manage the application lifecycle of Power Apps. The tasks can be used
+scripts to manage the application lifecycle of Apps built on the Power Platform. The tasks can be used
 individually to perform a simple task, such as importing a solution into a
 downstream environment, or used together in a pipeline to orchestrate a
 scenario such as "generate a build artifact," "deploy to test," or "harvest maker
@@ -50,15 +50,15 @@ changes." The build tasks can largely be categorized into four types:
 
 - Environment management
 
-## Get the Power Apps build tools
+## Get the Microsoft Power Platform Build Tools
 
-The Power Apps build tools can be installed into your Azure DevOps organization
+The Microsoft Power Platform Build Tools can be installed into your Azure DevOps organization
 from [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools).
-After they're installed, all tasks included in the Power Apps build tools will be
+After installation, all tasks included in the Microsoft Power Platform Build Tools will be
 available to add into any new or existing pipeline. You can find them by
-searching for **powerapps**.
+searching for **Power**.
 
-![Get the Power Apps build tools](media/get-build-tools.png "Get the Power Apps build tools")
+![Get the Microsoft Power Platform Build Tools](media/get-build-tools.png "Get the Microsoft Power Platform Build Tools")
 
 ## Build tool tasks
 
@@ -66,26 +66,23 @@ The available build tasks are described in the following sections.
 
 ### Helper task
 
-The Power Apps tools installer is required to be the first task in any build and
-release pipeline. This task installs a set of Power Apps&ndash;specific tools required
+The Power Platform tools installer is required to be the first task in any build and
+release pipeline. This task installs a set of Power Platform&ndash;specific tools required
 by the agent to run the Power Apps build tasks. This task doesn't require any
 additional configuration.
 
 ### Quality check
 
-The Power Apps checker task runs a static analysis check on your solutions
+The Power Platform checker task runs a static analysis check on your solutions
 against a set of best-practice rules to identify any problematic patterns that
 you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| Power Apps checker service                         | Select the service endpoint for the Power Apps checker. The service endpoint is defined under **Service Connections** in **Project Settings**.<p/>**Note**: The service connection type that must be used for this specific task only is **Power Apps Checker**, which is a service principals connection. You need to [configure service principals before you can use the task](https://aka.ms/buildtoolsconnection). |
-| Location of file to analyze       | Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.   |
-| Local files to analyze/SAS URI for the file to analyze | Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\*.zip for all zip files in all subfolders. You can choose to specify the files directly or reference a file by using an SAS URI.     |
-| Rule set                          | Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps maker portal.</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to AppSource.</li></ul>    |
-
-More information about how to configure the quality check service connection:
-[Configure service connection for Power Apps checker](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-tasks#configure-service-connection-for-power-apps-checker)
+| Power Platform checker service                         | (Required) Select the service endpoint for the Power Platform checker. The service endpoint is defined under **Service Connections** in **Project Settings**.<p/>Note: The service connection type that must be used for this specific task only is **Power Platform Checker**, which is a service principals connection. For more information on how to configure service principals to be used with this task see [Configure service connection for Power Platform checker](https://aka.ms/buildtoolsconnection). |
+| Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository.  |
+| Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\*.zip for all zip files in all subfolders.<p/>If File from SAS URI was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
+| Rule set                          | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps maker portal.</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to AppSource.</li></ul>    |
 
 ### Solution tasks
 
@@ -187,7 +184,7 @@ The create environment task creates an environment.
 | Deployment Region | The region that the environment should be deployed into.         |
 | Instance Type     | The type of instance to deploy. Options are **Sandbox** or **Production**.      |
 | Base Language     | The base language in the environment.      |
-| Domain Name       | This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be powerappsbuildtasks. <p/>**Note**: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
+| Domain Name       | This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be powerappsbuildtasks. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
 | Friendly name     | The friendly name of the environment.     |
 
 #### Power Apps delete environment
