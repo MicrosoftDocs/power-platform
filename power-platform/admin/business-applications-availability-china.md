@@ -57,7 +57,7 @@ The customer’s ADFS server signs this ticket using one half of an asymmetric k
 
 The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
 
-#### Power Automate Features not available:
+#### Power Automate Features not available: 
 
 - [UI Flows (Planned for end of calendar year)](https://docs.microsoft.com/power-automate/ui-flows/overview)
 - [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Power Platform.
