@@ -47,7 +47,7 @@ Power Apps and Power Automate includes several features that allow users to conn
 
 Power Apps and Power Automate maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. 
 
-Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors/index). 
+Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors). 
 
 ### Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
@@ -59,7 +59,7 @@ The Azure AD account management services are hosted on physical servers managed 
 
 #### Power Automate Features not available:
 
-- [UI Flows [Planned for end of calendar year]](https://docs.microsoft.com/power-automate/ui-flows/overview)
+- [UI Flows [Planned for end of calendar year](https://docs.microsoft.com/power-automate/ui-flows/overview)
 - [AI Builder](https://docs.microsoft.com/ai-builder/), a separate add-on offering for Power Platform.
 - [Power Automate Mobile Application](https://docs.microsoft.com/flow/mobile-manage-flows)
 - [Submitting Templates](https://docs.microsoft.com/flow/publish-a-template)
