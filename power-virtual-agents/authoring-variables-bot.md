@@ -75,7 +75,7 @@ This will take you to the node in the topic where the bot variable was created.
  
 ## Bot variable initialization
 
-If a bot variable is triggered before it has been initialized (or "filled in"), the bot will automatically trigger the part of the topic where the bot variable is first defined before returning to the original topic. This allows the bot conversation to continue without breaking.  
+If a bot variable is triggered before it has been initialized (or "filled in"), the bot will automatically trigger the part of the topic where the bot variable is first defined, even when it's in a different topic, before returning to the original topic. This allows the bot to have all the variables filled in without interrupting the conversation.  
 
 For example, the customer starts the conversation on the "Appointment booking" topic, in which a bot variable `bot.UserName` is used. However, the `bot.UserName` variable is first defined in the "Welcome" topic.  
 When the conversation comes to the point in the "Appointment booking" topic where `bot.UserName` is referenced, the bot will seamlessly pivot to the question node where `bot.UserName` is first defined.  
@@ -94,9 +94,11 @@ You let the bot know the user's name before starting the conversation Now the bo
 
 1. In the **Variable properties** pane, under the **Usage** section, select the checkbox **External sources can set values**.
 
+    ![Screenshot of the variable properties pane, on the Usage section with the suboption External sources can be set, under the Bot option](media/bot-variable-external.png "Screenshot of the variable properties pane, on the Usage section with the suboption External sources can be set, under the Bot option")
+
 1. When embedding your bot on your website, append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`).
 
-    ![Screenshot of the variable properties pane, on the Usage section with the suboption External sources can be set, under the Bot option](media/bot-variable-external.png "Screenshot of the variable properties pane, on the Usage section with the suboption External sources can be set, under the Bot option")
+
 
     >[!NOTE]
     >The variable name in the query string must match that of the bot variable, without the `bot.` prefix. For example, a bot variable `bot.UserName` must be rendered as `UserName=`.
