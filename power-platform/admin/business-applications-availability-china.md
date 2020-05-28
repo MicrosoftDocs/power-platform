@@ -49,6 +49,8 @@ Power Apps and Power Automate maintains the actual resources, information flow, 
 
 Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors). 
 
+Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](https://review.docs.microsoft.com/connectors).
+
 ### Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
 When a user of an organization employing Azure Directory Federation Services (ADFS) attempts to access Power Automate, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides credentials to their organization's ADFS server. The organization's ADFS server attempts to authenticate the credentials using the organization’s Azure Active Directory infrastructure. If authentication is successful, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user’s identity and group membership.
