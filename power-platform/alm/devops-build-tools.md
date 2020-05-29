@@ -68,7 +68,7 @@ The available build tasks are described in the following sections.
 
 The Power Platform tools installer is required to be the first task in any build and
 release pipeline. This task installs a set of Power Platform&ndash;specific tools required
-by the agent to run the Power Apps build tasks. This task doesn't require any
+by the agent to run the Power Platform build tasks. This task doesn't require any
 additional configuration.
 
 ### Quality check
