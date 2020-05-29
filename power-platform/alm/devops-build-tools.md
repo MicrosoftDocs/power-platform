@@ -81,90 +81,80 @@ you might have inadvertently introduced when building your solution.
 |--------------------|------------------|
 | Power Platform checker service                         | (Required) Select the service endpoint for the Power Platform checker. The service endpoint is defined under **Service Connections** in **Project Settings**.<p/>Note: The service connection type that must be used for this specific task only is **Power Platform Checker**, which is a service principals connection. For more information on how to configure service principals to be used with this task see [Configure service connection for Power Platform checker](https://aka.ms/buildtoolsconnection). |
 | Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository.  |
-| Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\*.zip for all zip files in all subfolders.<p/>If File from SAS URI was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
+| Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
 | Rule set                          | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps maker portal.</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to AppSource.</li></ul>    |
 
 ### Solution tasks
 
-This set of tasks perform actions against solutions.
+This set of tasks perform actions against solutions, and includes the following tasks.
 
-#### Power Apps import solution
-
-The import solution task imports a solution into a target environment.
+#### Import solution
+Imports a solution into a target environment.
 
 | Parameters           | Description        |
 |----------------------|--------------------------|
-| Power Apps environment URL | The service endpoint for the target environment that you want to import the solution to. For example, [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com/). Service endpoints can be defined under **Service Connections** in **Project Settings**. |
-| Solution input file        | The path and file name of the solution.zip file to import into the target environment. For example: \$(Build.ArtifactStagingDirectory)\$(SolutionName).zip.      |
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection for the target environment that you want to import the solution to (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). The service connections can be defined under **Service Connections** in **Project Settings**.|
+ | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).  |
+ | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommend for larger solution as the task will automatically timeout after 4 minutes otherwise. |
 
-> [!NOTE]
-> Variables give you a convenient way to get key bits of data into
-> various parts of your pipeline. For a comprehensive list of predefined variables, see [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml).
+#### Export solution
 
-#### Power Apps export solution
-
-The export solution task exports a solution from a source environment.
+Exports a solution from a source environment.
 
 | Parameters      | Description     |
 |-----------------|---------------------|
-| Power Apps environment URL | The service endpoint for the source environment that you want to export the solution from. Defined under **Service Connections** -\> **Generic Service Connection** in **Project Settings**. |
-| Solution name              | The name of the solution to export. Always use the solution **Name**, not its **Display Name**.    |
-| Solution output file       | The path and file name of the solution.zip file to export the source environment to. For example: \$(Build.ArtifactStagingDirectory)\$(SolutionName).zip.        |
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection for the target environment that you want to import the solution from. The service connections can be defined under **Service Connections** > **Generic Service** > **Project Settings**. |
+| Solution name              | (Required) The name of the solution to export.<p/>Always use the solution **Name**, not its **Display Name**.    |
+| Solution output file       | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).   |
 
-> [!NOTE]
-> Variables give you a convenient way to get key bits of data into
-> various parts of your pipeline. For a comprehensive list of predefined variables, see [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml).
+#### Unpack solution
 
-#### Power Apps pack solution
-
-This task packs a solution represented in source control into a solution.zip file that can
-be imported into an environment.
-
-| Parameters       | Description     |
-|------------------|-----------------|
-| Solution output file              | The path and file name of the solution.zip file to pack the solution into.     |
-| Source folder of solution to pack | The path and source folder of the solution to pack.      |
-| Type of solution                  | The type of solution you want to pack: **Unmanaged** (recommended), **Managed**, or **Both** |
-
-#### Power Apps unpack solution
-
-The unpack solution task takes a compressed solution file and decomposes it into
-multiple XML files and other files so that these files can be more easily
-managed by a source control system.
+Takes a compressed solution file and decomposes it into multiple XML files so that these files can be more easily read and managed by a source control system.
 
 | Parameters    | Description       |
 |---------------|-------------------|
-| Solution input file              | The path and file name of the solution.zip file to unpack.     |
-| Target folder to unpack solution | The path and target folder you want to unpack the solution into.      |
-| Type of solution                 | The type of solution you want to unpack. **Unmanaged** is recommended: You should only unpack an unmanaged solution to your repo. |
+| Solution input file              | (Required) The path and file name of the solution.zip file to unpack.     |
+| Target folder to unpack solution | (Required) The path and target folder you want to unpack the solution into.      |
+| Type of solution                 | (Required) The type of solution you want to unpack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. Only the unmanaged solution should be unpacked to your repo.  |
 
-#### Power Apps set solution version
+#### Pack solution
 
-The set solution version task updates the version of a solution.
+Packs a solution represented in source control into a solution.zip file that can be imported into an environment.
 
-| Parameters    | Description   |
-|---------------|---------------|
-| Power Apps environment URL | The service endpoint for the environment where you want to deploy the package. Defined under **Service Connections** in **Project Settings**. |
-| Solution name              | The name of the solution you want to set the version number for.     |
-| Solution Version Number    | Version number to set, using the format *major.minor.build.revision* (for example, 1.0.0.1)  |
+| Parameters       | Description     |
+|------------------|-----------------|
+| Solution output file              | (Required) The path and file name of the solution.zip file to pack the solution into.     |
+| Source folder of solution to pack | (Required) The path and source folder of the solution to pack.      |
+| Type of solution                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
-#### Power Apps deploy package
+#### Publish customizations
 
-The deploy package task deploys a package to an environment. Deploying a package
-as opposed to a single solution file gives you the option to deploy multiple
-solutions, data, and code into an environment.
-
-| Parameters      | Description    |
-|-----------------|----------------|
-| Power Apps environment URL | The service endpoint for the target environment that holds the solution you want to update. Defined under **Service Connections** in **Project Settings**. |
-
-#### Power Apps publish customizations
-
-The publish customizations task publishes all customizations in an environment.
+Publishes all customizations in an environment.
 
 | Parameters     | Description    |
 |----------------|----------------|
-| Power Apps environment URL | The service endpoint for the environment in which you want to publish customizations. Defined under **Service Connections** in **Project Settings**.|
+| Power Apps environment URL | (Required) The service endpoint for the environment in which you want to publish customizations. Defined under **Service Connections** in **Project Settings**.|
+
+#### Set solution version
+
+Updates the version of a solution.
+
+| Parameters    | Description   |
+|---------------|---------------|
+| Power Apps environment URL | (Required) The Service Endpoint for the target environment that holds the solution you want to update. Defined under **Service Connections** in **Project Settings**. |
+| Solution name              | (Required) The name of the solution you want to set the version number for.     |
+
+#### Deploy package
+
+Deploys a package to an environment. Deploying a [package](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer) as opposed to a single solution file provides an option to deploy multiple solutions, data, and code into an environment.
+
+| Parameters      | Description    |
+|-----------------|----------------|
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service endpoint for the target environment to which you want to deploy the package. Defined under **Service Connections** in **Project Settings**. |
+| Package file | (Required) The path and file name of the package that you want to deploy. |
 
 ### Environment management tasks
 
