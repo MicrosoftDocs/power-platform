@@ -20,11 +20,11 @@ search.app:
 # Microsoft Power Platform Build Tools for Azure DevOps
 
 Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
-to Apps built on the Power Platform. These tasks include: 1) synchronization of solution metadata (also known as
+to apps built on the Power Platform. These tasks include: 1) synchronization of solution metadata (also known as
 solutions) that contains the various platform components such as Dynamics 365 Customer Engagement apps, canvas apps, UI flows, virtual agents, AI Builder models and connectors between development environments and source control, 2) generating build
 artifacts, 3) deploying to downstream environments, 4) provisioning or de-provisioning
 environments, and 5) the ability to perform static analysis checks against your
-solution by using the Power Platform checker service.
+solution by using the Power Apps checker service.
 
 The Microsoft Power Platform Build Tools tasks can be used along with any other available
 Azure DevOps tasks to compose your build and release pipelines. Pipelines
@@ -36,10 +36,10 @@ that teams commonly put in place include Initiate, Build, and Release.
 
 The Microsoft Power Platform Build Tools are a collection of Power Platform&ndash;specific Azure DevOps
 build tasks that eliminate the need to manually download custom tooling and
-scripts to manage the application lifecycle of Apps built on the Power Platform. The tasks can be used
+scripts to manage the application lifecycle of apps built on the Power Platform. The tasks can be used
 individually to perform a simple task, such as importing a solution into a
 downstream environment, or used together in a pipeline to orchestrate a
-scenario such as "generate a build artifact," "deploy to test," or "harvest maker
+scenario such as "generate a build artifact", "deploy to test", or "harvest maker
 changes." The build tasks can largely be categorized into four types:
 
 - Helper
@@ -56,16 +56,16 @@ The Microsoft Power Platform Build Tools can be installed into your Azure DevOps
 from [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools).
 After installation, all tasks included in the Microsoft Power Platform Build Tools will be
 available to add into any new or existing pipeline. You can find them by
-searching for **Power**.
+searching for "Power".
 
 ![Get the Microsoft Power Platform Build Tools](media/get-build-tools.png "Get the Microsoft Power Platform Build Tools")
 
 ## Connection to environments
 
-To interact with the Power Platform environment, a connection must be established that enables the various build tool tasks to perform the required actions. These types of connections are available:
+To interact with the Power Platform environment, a connection must be established that enables the various build tool tasks to perform the required actions. Two types of connections are available:
 
-- Username/password: Configured as generic service connection with username and password. Note that username/password does not support multi-factor authentication.
-- Service principal and client secret.
+- Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
+- Service Principal and client secret: (recommended) This connection type uses Service Principal based authentication and supports multi-factor authentication.
 
 ## Build tool tasks
 
@@ -80,13 +80,13 @@ additional configuration.
 
 ### Quality check
 
-The Power Platform checker task runs a static analysis check on your solutions
+The Power Apps checker task runs a static analysis check on your solutions
 against a set of best-practice rules to identify any problematic patterns that
 you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| Power Platform checker service                         | (Required) Select the service endpoint for the Power Platform checker. The service endpoint is defined under **Service Connections** in **Project Settings**.<p/>Note: The service connection type that must be used for this specific task only is **Power Platform Checker**, which is a service principals connection. For more information on how to configure service principals to be used with this task see [Configure service connection for Power Platform checker](https://aka.ms/buildtoolsconnection). |
+| Power Apps checker service                         | (Required) Select the service endpoint for the Power Apps checker. The service endpoint is defined under **Service Connections** in **Project Settings**.<p/>Note: The service connection type that must be used for this specific task only is **Power Platform Checker**, which is a service principals connection. For more information on how to configure service principals to be used with this task see [Configure service connection for Power Apps checker](https://aka.ms/buildtoolsconnection). |
 | Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository.  |
 | Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
 | Rule set                          | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps maker portal.</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to AppSource.</li></ul>    |
