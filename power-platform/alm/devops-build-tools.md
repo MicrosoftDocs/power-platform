@@ -60,6 +60,13 @@ searching for **Power**.
 
 ![Get the Microsoft Power Platform Build Tools](media/get-build-tools.png "Get the Microsoft Power Platform Build Tools")
 
+## Connection to environments
+
+To interact with the Power Platform environment, a connection must be established that enables the various build tool tasks to perform the required actions. These types of connections are available:
+
+- Username/password: Configured as generic service connection with username and password. Note that username/password does not support multi-factor authentication.
+- Service principal and client secret.
+
 ## Build tool tasks
 
 The available build tasks are described in the following sections.
