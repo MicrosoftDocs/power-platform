@@ -19,7 +19,7 @@ search.app:
 
 # Use core components
 
-These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the DLP Editor and Set New App Owner help with daily admin tasks. The Core Components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md)
+These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the DLP Editor and Set App Permissions help with daily admin tasks. The Core Components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md)
 
 Here's a breakdown of the assets that form the core components:
 
@@ -32,8 +32,8 @@ Here's a breakdown of the assets that form the core components:
 - **DLP strategy and visibility**
   - [DLP Editor (canvas app)](#apps)
   - [DLP Customizer (canvas app)](#apps)
-- **Change app ownership**
-  - [Set New App Owner (canvas app)](#apps)
+- **Bulk change permissions for apps and flow**
+  - [Set App Permission (canvas app)](#apps)
 
 ## Entities
 
@@ -126,13 +126,23 @@ Canvas app you can use to add custom connectors to the Business Data Group of a 
 
 ![DLP Customizer](media/coe52.png)
 
-### Set New App Owner
+### Set App Permissions
 
-Canvas app that an admin can use to discover apps by app or maker name, and set a new app owner or add new viewers and editors. More information: [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)
+Canvas app that an admin can use to discover apps by app name, environment, or owner name, and set a new app owner or add new viewers and editors. It will also let you find apps that have been orphaned by the owner having left your organization, and clean them up. <br>
+More information: [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)
 
 **Permission**: This app is intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.
 
-![Set New App Owner](media/coe53.png "Set New App Owner")
+![Set App Permissions](media/SetAppPerms.png "Set App Permissions")
+
+### Set Flow Permissions
+
+Similar to the Set App PErmissions app, this canvas app lets an admin discover flows by flow name, environment, or owner name, and  add new viewers and editors. Ownership cannot be changed for flows. It will also let you find flows that have been orphaned by the owner having left your organization, and clean them up. <br>
+More information: [Create Team Flows](https://docs.microsoft.com/power-automate/create-team-flows)
+
+**Permission**: This app is intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.
+
+![Set App Permissions](media/SetFlowPerms.png "Set Flow Permissions")
 
 ### Power Platform Admin View
 

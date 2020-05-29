@@ -22,7 +22,7 @@ The Center of Excellence (CoE) Starter Kit is shipped in multiple modules:
 
 -  **Center of Excellence – Core Components**  
 
-    These components provide what you need to get started with setting up a CoE. They sync all your resources into entities and build admin apps on top of that to help you get more visibility of the apps, flows, and makers that exist in your environment. Additionally, apps like the DLP Editor and Set New App Owner help with daily admin tasks.  
+    These components provide what you need to get started with setting up a CoE. They sync all your resources into entities and build admin apps on top of that to help you get more visibility of the apps, flows, and makers that exist in your environment. Additionally, apps like the DLP Editor and Set  App Permissions help with daily admin tasks.  
 
     The CoE Core Components solution contains assets that are only relevant to admins. More information: [Set up core components](setup-core-components.md) and [Use core components](core-components.md)
 
