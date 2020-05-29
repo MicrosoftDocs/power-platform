@@ -65,7 +65,7 @@ searching for "Power".
 To interact with the Power Platform environment, a connection must be established that enables the various build tool tasks to perform the required actions. Two types of connections are available:
 
 - Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
-- Service Principal and client secret: (recommended) This connection type uses Service Principal based authentication and supports multi-factor authentication.
+- Service principal and client secret: (recommended) This connection type uses service principal based authentication and supports multi-factor authentication.
 
 ## Build tool tasks
 
@@ -100,7 +100,7 @@ Imports a solution into a target environment.
 
 | Parameters           | Description        |
 |----------------------|--------------------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection for the target environment that you want to import the solution to (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). The service connections can be defined under **Service Connections** in **Project Settings**.|
  | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).  |
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommend for larger solution as the task will automatically timeout after 4 minutes otherwise. |
@@ -111,7 +111,7 @@ Exports a solution from a source environment.
 
 | Parameters      | Description     |
 |-----------------|---------------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection for the target environment that you want to import the solution from. The service connections can be defined under **Service Connections** > **Generic Service** > **Project Settings**. |
 | Solution name              | (Required) The name of the solution to export.<p/>Always use the solution **Name**, not its **Display Name**.    |
 | Solution output file       | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).   |
@@ -159,7 +159,7 @@ Deploys a package to an environment. Deploying a [package](/powerapps/developer/
 
 | Parameters      | Description    |
 |-----------------|----------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service endpoint for the target environment to which you want to deploy the package. Defined under **Service Connections** in **Project Settings**. |
 | Package file | (Required) The path and file name of the package that you want to deploy. |
 
@@ -177,7 +177,7 @@ Creates an environment.
 
 | Parameters        | Description     |
 |-------------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service endpoint for the target environment to which you want to deploy the package. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
 | Display name | (Required) The display name of the environment created. |
 | Deployment Region | (Required) The region that the environment should be deployed into.         |
@@ -193,7 +193,7 @@ Deletes an environment.
 
 | Parameters       | Description         |
 |------------------|---------------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the tenant for which you want to create the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
 
 #### Backup environment
@@ -202,7 +202,7 @@ Backs up an environment.
 
 | Parameters   | Description   |
 |--------------|---------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the tenant for which you want to create the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
 | Backup label               | (Required) The label you want to assign to the backup.                                                                         |
 
@@ -215,7 +215,7 @@ metadata, not the actual data.
 
 | Parameters     | Description     |
 |----------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection for the source environment that you want to copy from. Defined under **Service Connections** in **Project Settings**. |
 | Service connection | (Required) The service connection for the target environment that you want to copy to. Defined under **Service Connections** in **Project Settings**. |
 
@@ -226,7 +226,7 @@ how you might apply these tools to your build and release pipelines. A
 conceptual overview is shown below. Let's see some details of the pipeline implementation using the build tool tasks in the sub-sections that follow.
 
 To learn more about creating these pipelines and actually do hands-on pipeline
-authoring using the Microsoft Power Platform Build Tools, complete the build tools [labs](https://github.com/microsoft/PowerApps-Samples/tree/master/azure/build-tools),
+authoring using the Microsoft Power Platform Build Tools, complete the build tools [labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools),
 which you can download from GitHub.
 
 More information about Azure DevOps pipelines: [Use Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops)
