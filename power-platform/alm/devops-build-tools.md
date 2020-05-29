@@ -158,12 +158,11 @@ Deploys a package to an environment. Deploying a [package](/powerapps/developer/
 
 ### Environment management tasks
 
-Environment management tasks are used to automate common environment management
-functions.
+Automate common environment management tasks.
 
-#### Power Apps create environment
+#### Create environment
 
-The create environment task creates an environment.
+Creates an environment.
 
 > [!NOTE]
 > A new environment can only be provisioned if your license or capacity
@@ -171,55 +170,56 @@ The create environment task creates an environment.
 
 | Parameters        | Description     |
 |-------------------|-----------------|
-| Deployment Region | The region that the environment should be deployed into.         |
-| Instance Type     | The type of instance to deploy. Options are **Sandbox** or **Production**.      |
-| Base Language     | The base language in the environment.      |
-| Domain Name       | This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be powerappsbuildtasks. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
-| Friendly name     | The friendly name of the environment.     |
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service endpoint for the target environment to which you want to deploy the package. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
+| Display name | (Required) The display name of the environment created. |
+| Deployment Region | (Required) The region that the environment should be deployed into.         |
+| Environment Type     | (Required) The type of instance to deploy. Options are **Sandbox** or **Production**.      |
+| Region | (Required) The region that the environment should be created in.  |
+| Currency | (Required) Base currency for the environment created. Note, this cannot be updated after the environment is created. |
+| Language     | (Required) The base language in the environment.      |
+| Domain Name       | (Required) This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be 'powerappsbuildtasks'. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
 
-#### Power Apps delete environment
+#### Delete environment
 
-The delete environment task deletes an environment.
+Deletes an environment.
 
 | Parameters       | Description         |
 |------------------|---------------------|
-| Power Apps environment URL | The service endpoint for the environment you want to delete. Defined under **Service Connections** in **Project Settings**. |
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection to the tenant for which you want to create the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
 
-#### Power Apps backup environment
+#### Backup environment
 
-The backup environment task backs up an environment.
+Backs up an environment.
 
 | Parameters   | Description   |
 |--------------|---------------|
-| Power Apps environment URL | The service endpoint for the environment you want to backup. Defined under **Service Connections** in **Project Settings**. |
-| Backup label               | The label you want to assign to the backup.                                                                         |
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection to the tenant for which you want to create the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
+| Backup label               | (Required) The label you want to assign to the backup.                                                                         |
 
-#### Power Apps copy environment
+#### Copy environment
 
-The copy environment task copies an environment to a target environment. Two
+Copies an environment to a target environment. Two
 types of copy are available: full and minimal. *Full* copies both data and
 solution metadata (customizations), whereas *minimal* only copies solution
 metadata, not the actual data.
 
-> [!NOTE]
-> This task is only available for Dynamics 365 Customer Engagement (on-premises)
-> environments.
-
 | Parameters     | Description     |
 |----------------|-----------------|
-| Power Apps source environment URL | The service endpoint for the environment you want to copy from. Defined under **Service Connections** in **Project Settings**. |
-| Power Apps target environment URL | The service endpoint for the environment you want to copy to. Defined under **Service Connections** in **Project Settings**.   |
+| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection for the source environment that you want to copy from. Defined under **Service Connections** in **Project Settings**. |
+| Service connection | (Required) The service connection for the target environment that you want to copy to. Defined under **Service Connections** in **Project Settings**. |
 
 ## Build and release pipelines
 
 Now that we've identified what can be done using the build tools, let's see
 how you might apply these tools to your build and release pipelines. A
-conceptual overview is shown below.
-
-<!--This (the conceptual overview) doesn't seem to have come to pass:-->Now let's see some details of the pipeline implementation using the build tool tasks in the sub-sections that follow.
+conceptual overview is shown below. Let's see some details of the pipeline implementation using the build tool tasks in the sub-sections that follow.
 
 To learn more about creating these pipelines and actually do hands-on pipeline
-authoring using the Power Apps build tools, complete the [Power Apps build tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/azure/build-tools),
+authoring using the Microsoft Power Platform Build Tools, complete the build tools [labs](https://github.com/microsoft/PowerApps-Samples/tree/master/azure/build-tools),
 which you can download from GitHub.
 
 More information about Azure DevOps pipelines: [Use Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops)
