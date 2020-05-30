@@ -26,6 +26,7 @@ This can be useful if you use different environments for different purposes, or 
 
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- A maker will require minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](https://docs.microsoft.com/power-platform/admin/database-security).
 
 >[!IMPORTANT]
 >These features are in preview, which means that they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
