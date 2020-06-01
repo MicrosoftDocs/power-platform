@@ -6,7 +6,7 @@ author: phecke
 ms.author: pehecke
 manager: kvivek
 ms.custom: ""
-ms.date: 05/27/2020
+ms.date: 06/01/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -306,4 +306,24 @@ NOTE: Keep this client secret safe and secure. Once the PowerShell command promp
 ### Configure environment with the Application ID
 The application ID must be added as an Application User in the Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
 
-Ensure that the added Application User has the system administrator role assigned(available from “Manage Roles” in the Security settings for the application user):
+Ensure that the added Application User has the system administrator role assigned(available from “Manage Roles” in the Security settings for the application user).
+
+## Frequently asked question (FAQ)
+
+**Do the Microsoft Power Platform build tools only work for Power Apps?**  
+
+*The build tools work for both Power Apps (canvas) and model-driven apps in Dynamics 365 such as Dynamics 365 Sales and Dynamics 365 Customer Service. Separate build tasks are available for Microsoft Dynamics for Finance and Operations.*
+
+**Can I include Flow and Canvas Apps?**
+
+*Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors.*
+
+**How much do the Microsoft Power Platform build tools cost?**
+
+*The build tools are available at no cost. However, a valid subscription to Azure DevOps is required to utilize the build tools. More information is available [here](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
+
+**I can see the extension, but why don’t I have an option to install it?**
+
+*If you do not see the **install** option (outlined in screenshot below) then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [here](https://docs.microsoft.com/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
+
+![Build tasks screen](media/build-tasks.png)
