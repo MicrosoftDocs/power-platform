@@ -20,15 +20,23 @@ search.app:
 # Microsoft Power Platform Build Tools for Azure DevOps
 
 Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
-to apps built on the Power Platform. These tasks include: 1) synchronization of solution metadata (also known as
-solutions) that contains the various platform components such as Dynamics 365 Customer Engagement apps, canvas apps, UI flows, virtual agents, AI Builder models and connectors between development environments and source control, 2) generating build
-artifacts, 3) deploying to downstream environments, 4) provisioning or de-provisioning
-environments, and 5) the ability to perform static analysis checks against your
-solution by using the Power Apps checker service.
+to apps built on the Power Platform. These tasks include: 
+Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
+to apps built on the Power Platform. These tasks include: 
+<ul><li>Synchronization of solution metadata (also known as
+solutions) that contains the various platform components such as Dynamics 365 Customer Engagement apps, canvas apps, UI flows, virtual agents, AI Builder models and connectors between development environments and source control, </li></ul>
+<ul><li>Generating build artifacts</li></ul>
+<ul><li>Deploying to downstream environments</li></ul>
+
+<ul><li>Provisioning or de-provisioning
+environments</li></ul>
+
+<ul><li>Perform static analysis checks against solutions by using the Power Apps checker service</li></ul>
+
 
 The Microsoft Power Platform Build Tools tasks can be used along with any other available
 Azure DevOps tasks to compose your build and release pipelines. Pipelines
-that teams commonly put in place include Initiate, Build, and Release.
+that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
 
 ![ALM powered by Azure DevOps](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
