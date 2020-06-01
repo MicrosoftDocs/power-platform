@@ -105,7 +105,10 @@ Canvas app that allows CoE admins to share app and component templates, in addit
 
 **Prerequisite**: This app uses SharePoint in the background and requires a SharePoint site to be configured. This is described in [Set up nurture components](setup-nurture-components.md).
 
-This app can't be tested in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps.
+> [!NOTE]
+> This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps. <br>
+>You can see how to [modify the data source here](modify-components.md#set-up-the-template-catalog-and-upload-components).
+
 
 #### Training in a Day – Management
 
