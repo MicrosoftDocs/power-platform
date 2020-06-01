@@ -72,7 +72,7 @@ A component represents something that you can potentially customize. Anything th
 > [!NOTE]
 > You can't edit components in a managed solution.
 
-To view a list of component types that can be added to any solution, see [ComponentType Options](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options). 
+To view a list of component types that can be added to any solution, see [ComponentType Options](/powerapps/developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options). 
 
 Some components are nested within other components. For example, an entity contains forms, views, charts, fields, entity relationships, messages, and business rules. Each of those components requires an entity to exist. A field can’t exist outside of an entity. We say that the field is dependent on the entity. There are actually twice as many types of components as shown in the preceding list, but most of them are not nested within other components and not visible in the application.  
   
