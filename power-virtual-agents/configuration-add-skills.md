@@ -66,7 +66,7 @@ Before registering the Skill, provide the bot's ID to your Skills developer to a
 
 1. At the top of the Skills page, select **Add skill**.
  
-   ![Select Add skill button](media/skills-provide-id.png)
+   ![Select Add skill button](media/skills-add-skill.png)
 
 1. Enter the URL to the Skill manifest. A Skill's manifest contains the information that your bot will need to trigger actions within a Skill.
 
