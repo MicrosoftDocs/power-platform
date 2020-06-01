@@ -26,6 +26,7 @@ This can be useful if you use different environments for different purposes, or 
 
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- You will need to be a [System Customizer](/power-platform/admin/database-security) to use this feature.
 
 >[!IMPORTANT]
 >These features are in preview, which means that they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
@@ -50,7 +51,12 @@ You will need to upgrade existing bots (built before June 2020) before you can e
 
     ![](media/export-upgrade-bot.png "")
 
-
+>[!NOTE]
+>A notice will appear that says "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after a period of time, try refreshing your browser. You can continue working on your bot without losing any updates. 
+>  
+>If you still see the warning after a few days, create a support request with you Bot ID. Admins can use [Help + support](/power-platform/admin/get-help-support) in the Power Platform admin center to create a support request.  
+>  
+>![](media/export-warning.png "")
 
 ## Add a bot to a solution
 
@@ -125,9 +131,6 @@ You use solutions to export bots from one environment and import them into anoth
 
 You export and import bots by exporting and importing their containing solutions from one environment to another.
 
->[!NOTE]
->You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
-
 **Export the solution with your bot**
 
 1. In the list of solutions, select the solution that contains the bot you want to export. Select **Export**. 
@@ -147,6 +150,10 @@ You export and import bots by exporting and importing their containing solutions
 The export can take several minutes to complete. Once finished, a .zip file will be downloaded by your web browser. The file will be in the format `SolutionName_Version_ManagementType.zip`.
 
 **Import the solution with your bot**
+
+>[!NOTE]
+>You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
+
 
 1. On the top menu, select the environment name and select the environment where you want to import your bot.
 
