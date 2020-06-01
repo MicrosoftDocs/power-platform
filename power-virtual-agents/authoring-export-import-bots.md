@@ -2,7 +2,7 @@
 title: "Export and import bots using solutions (preview)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: ""
-ms.date: 5/29/2020
+ms.date: 6/01/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -10,7 +10,7 @@ author: iaanw
 ms.author: iawilt
 ms.reviewer: digantak
 manager: shellyha
-ms.custom: "customization"
+ms.custom: "customization, ceX"
 ms.collection: virtualagent
 ---
 
@@ -26,6 +26,7 @@ This can be useful if you use different environments for different purposes, or 
 
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- If you are not an admin, you will need to be a [System Customizer](/power-platform/admin/database-security) to use this feature.
 
 >[!IMPORTANT]
 >These features are in preview, which means that they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
@@ -44,13 +45,18 @@ You will need to upgrade existing bots (built before June 2020) before you can e
 
 1. Select **Settings**, and then **General settings**.
 
-    ![](media/export-settings.png "")
+    ![Screenshot showing the settings cog highlighted](media/export-settings.png "Screenshot showing the settings cog highlighted")
 
-2. Select **Upgrade bot**.
+2. Select **Upgrade bot**. This should take a few minutes.
 
-    ![](media/export-upgrade-bot.png "")
+    ![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot.png "Screenshot highlighting the Upgrade bot button")
 
-
+>[!NOTE]
+>A notice might appear that says "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after 10 minutes, try refreshing your browser. You can continue working on your bot without losing any updates. 
+>  
+>If you still see the warning after a few days, create a support request with you Bot ID. Admins can use [Help + support](/power-platform/admin/get-help-support) in the Power Platform admin center to create a support request.  
+>  
+>![Warning about time needed to finish the upgrade](media/export-warning.png "Warning about time needed to finish the upgrade")
 
 ## Add a bot to a solution
 
@@ -62,11 +68,11 @@ You use solutions to export bots from one environment and import them into anoth
 
 2. Select **Go to Power Apps Solutions**.
  
-    ![](media/export-settings-powerapps.png "")
+    ![Link to the Power Apps admin center from Power Virtual Agents](media/export-settings-powerapps.png "Link to the Power Apps admin center from Power Virtual Agents")
 
 3. Sign in to Power Apps and select **New solution**. Enter the information for each of the fields as described in this table, then select **Create**.
 
-    ![](media/export-new-solution.png "")
+    ![New solution button highlighted](media/export-new-solution.png "New solution button highlighted")
 
     Field | Description
     -- | --
@@ -88,11 +94,11 @@ You use solutions to export bots from one environment and import them into anoth
 
 1. Select **Add existing** and choose **Chatbot**.
 
-    ![](media/export-add-chatbot.png "")
+    ![Add existing menu highlighted](media/export-add-chatbot.png "Add existing menu highlighted")
 
 2. On the **Add existing Chatbots** panel, select the bot (or bots) you want to export. Select **Add**.
 
-    ![](media/export-add-chatbot-solution.png "")
+    ![Chatbot selected in the list of bots](media/export-add-chatbot-solution.png "Chatbot selected in the list of bots")
 
 3. On the filter on the top menu, select **Chatbot** to see the bot (or bots) you've added to the solution. Selecting the name of the bot will open it in the Power Virtual Agents portal.
 
@@ -104,7 +110,7 @@ You use solutions to export bots from one environment and import them into anoth
     1. Select **Add existing** and choose **Environment variables**.
     1. On the **Add existing environment variables** panel and select the environment variables for your bot’s Skills. Each Skill has two environments variables. The environment variables **Display name** column will show the bot name in square brackets. For example, *[Bot name] Skill name*.
 
-        ![](media/export-skills.png "")
+        ![List of skills selected for export](media/export-skills.png "List of skills selected for export")
  
     1. Select the environment variables of the bot’s Skills. 
     1. Select **Next** to add them to the solution.
@@ -125,14 +131,11 @@ You use solutions to export bots from one environment and import them into anoth
 
 You export and import bots by exporting and importing their containing solutions from one environment to another.
 
->[!NOTE]
->You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
-
 **Export the solution with your bot**
 
 1. In the list of solutions, select the solution that contains the bot you want to export. Select **Export**. 
 
-    ![](media/export-solution.png "")
+    ![Export button](media/export-solution.png "Export button")
 
     >[!NOTE]
     >You can't export managed solutions. When you create a solution, by default it will not be managed. If you change it to a managed solution you won't be able to export it, and will need to create a new solution.
@@ -148,13 +151,17 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 **Import the solution with your bot**
 
+>[!NOTE]
+>You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
+
+
 1. On the top menu, select the environment name and select the environment where you want to import your bot.
 
-    ![](media/export-power-apps-environment.png "")
+    ![Environment picker selected](media/export-power-apps-environment.png "Environment picker selected")
 
 2. Go to the **Solutions** tab, and on the command bar, select **Import**.
  
-    ![](media/export-import.png "")
+    ![Import button highlighted](media/export-import.png "Import button highlighted")
 
 
 1. In the **Select Solution Package** window, select **Choose File** and locate the .zip file that contains the solution with the bot you want to import.
@@ -187,7 +194,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 1. Use the filter menu to select **Chatbot**. You can then click on the bot's name to open the bot in the Power Virtual Agents portal. You can also navigate to the portal directly and open the imported bot under the environment you imported to.
 
-    ![](media/export-bot-picker.png "")
+    ![List of bots and environments in Power Virtual Agents](media/export-bot-picker.png "List of bots and environments in Power Virtual Agents")
 
 
 ## Upgrade or update a solution with bot
