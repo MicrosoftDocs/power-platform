@@ -123,7 +123,8 @@ different publishers to be installed in an environment with few conflicts.
 For example, the Contoso solution displayed here includes a solution publisher
 prefix of *contoso*.
 
-![Solution publisher prefix example](media/solution-publisher-prefix.png "Solution publisher prefix example")
+> [!div class="mx-imgBorder"]
+> ![Solution publisher prefix example](media/solution-publisher-prefix.png "Solution publisher prefix example")
 
 > [!NOTE]
 > When you change a solution publisher prefix, you should do it before
