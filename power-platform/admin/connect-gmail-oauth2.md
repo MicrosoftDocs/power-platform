@@ -15,10 +15,6 @@ search.app:
   - Powerplatform
 ---
 
-
-<!-- I don't find an OAuth entry in the MS style guide, but the OAuth website uses a space before the number, and in fact uses 2.0. I'm going to apply that style in this topic. Let me know if you have guidance showing it otherwise. -->
-
-
 # Connect Gmail accounts using OAuth 2.0 
 
 Follow the steps in this article to set up server-side synchronization to send and receive email in model-driven apps in Dynamics 365 from Gmail accounts using OAuth 2.0 as the authorization mechanism.
@@ -83,18 +79,12 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 7. Enter the following settings:
 
-
-
-<!-- Should "Name" be in bold in the table? -->
-
-
-
    |Setting  |Use  |
    |---------|---------|
-   |**Application type**     | Web application         |
+   |Application type     | Web application         |
    |Name     |  The name of your web client       |
-   |**Authorized JavaScript origins**     | Your environment's  URL (for example, https://contoso.crm.dynamics.com)        |
-   |**Authorized redirect URIs**     | Your environment's URL with "/_grid/cmds?dlg_gmailoauth.aspx" appended to it (for example, https://contoso.crm.dynamics.com/_grid/cmds/dlg_gmailoauth.aspx)        |
+   |Authorized JavaScript origins     | Your environment's  URL (for example, https://contoso.crm.dynamics.com)        |
+   |Authorized redirect URIs     | Your environment's URL with "/_grid/cmds?dlg_gmailoauth.aspx" appended to it (for example, https://contoso.crm.dynamics.com/_grid/cmds/dlg_gmailoauth.aspx)        |
 
    > [!div class="mx-imgBorder"] 
    > ![Create OAuth client ID](media/gmail-oauth-consent-create-clientid.png "Create OAuth client ID")
