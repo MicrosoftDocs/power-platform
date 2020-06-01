@@ -26,6 +26,6 @@ Power Apps administrators can use the Power Apps Admin center ([admin.powerapps.
 
 
 ### See also
-[Reference: Use the various admin centers](admin-centers.md) <br />
+[Working with the admin portals](wp-work-with-admin-portals.md) <br />
 [Reference: Videos and PowerPoint presentations](videos.md) <br />
 [What's the role of a Power Apps administrator?](overview-role-powerapps-admin.md)
