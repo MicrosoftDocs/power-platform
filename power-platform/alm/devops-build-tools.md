@@ -263,15 +263,15 @@ The following figure shows the build tool tasks that you might add to a pipeline
 
 ![Deploy to a production environment (PROD)](media/deploy-pipeline.png "Deploy to a production environment (PROD)")
 
-## Configure Service Connections using Service Principal
+## Configure service connections using a service principal
 
-To configure a connection using Service Principal, you must first create an application registration in Azure AD with the required permissions and then create the associated Application user in the Power Platform environment you want to connect to. We have offered a script to fasciliate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration). 
+To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
 
-### Create Service Principal and Client Secret using PowerShell 
+### Create service principal and client secret using PowerShell
 
-This PowerShell script assists in creating and configuring the Service Principal to be used with the Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in Azure Active Directory (AAD).
+This PowerShell script assists in creating and configuring the service principal to be used with the Microsoft Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
 
-This Application is then added as admin user to the Power Platform tenant itself.
+This application is then added as an administrator user to the Power Platform tenant itself.
 
 **Installation**
 
@@ -279,16 +279,16 @@ Download the following PowerShell cmdlet: [New-CrmServicePrincipal.ps1]((https:/
 
 <ul><li>Open a regular Windows PowerShell command prompt (standard, not PS core)
 </li></ul> 
-<ul><li>Navigate to the folder where you saved the script, and unblock the script using the following command: Unblock-File New-CrmServicePrincipal.ps1
+<ul><li>Navigate to the folder where you saved the script, and unblock the script using the following command: `Unblock-File New-CrmServicePrincipal.ps1`
 </li></ul>
-<ul><li>Run the script: .\New-CrmServicePrincipal.ps1"</li></ul>
+<ul><li>Run the script: `.\New-CrmServicePrincipal.ps1`</li></ul>
 
-The script will prompt TWICE with AAD login dialogs:
+The script will prompt two times with AAD login dialogs:
 
 
-<ul><li>1st time: to login as administrator to the AAD instance associated with the Power Platform tenant
+<ul><li>1st prompt: to login as administrator to the AAD instance associated with the Power Platform tenant
 </li></ul> 
-<ul><li>2nd time: to login as tenant admin to the Power Platform tenant itself
+<ul><li>2nd prompt: to login as tenant administrator to the Power Platform tenant itself
 </li></ul>
 
 
@@ -298,15 +298,16 @@ Once successful, 3 columns are displayed:
 <ul><li>Application ID</li></ul>
 <ul><li>Client Secret (in clear text)</li></ul>
 
-Use the information displayed to configure the Power Platform Service Connection 
+Use the information displayed to configure the Power Platform service connection. 
 
-NOTE: Keep this client secret safe and secure. Once the PowerShell command prompt is cleared, you cannot retrieve the same client secret again
+> [!IMPORTANT]
+> Keep the client secret safe and secure. Once the PowerShell command prompt is cleared, you cannot retrieve the same client secret again.
 
 
 ### Configure environment with the Application ID
-The application ID must be added as an Application User in the Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
+The Application ID must be added as an Application User in the Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
 
-Ensure that the added Application User has the system administrator role assigned(available from “Manage Roles” in the Security settings for the application user).
+Ensure that the added Application User has the system administrator role assigned (available from “Manage Roles” in the security settings for the application user).
 
 ## Frequently asked question (FAQ)
 
@@ -314,7 +315,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 *The build tools work for both Power Apps (canvas) and model-driven apps in Dynamics 365 such as Dynamics 365 Sales and Dynamics 365 Customer Service. Separate build tasks are available for Microsoft Dynamics for Finance and Operations.*
 
-**Can I include Flow and Canvas Apps?**
+**Can I include flow and canvas apps?**
 
 *Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors.*
 
