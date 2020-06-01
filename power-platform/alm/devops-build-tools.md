@@ -173,7 +173,7 @@ Deploys a package to an environment. Deploying a [package](/powerapps/developer/
 Automate common environment management tasks.
 
 > [!NOTE]
-> Environment actions will be made available subsequent releases.
+> Environment actions will be made available in subsequent releases.
 
 <!-- #### Create environment
 
