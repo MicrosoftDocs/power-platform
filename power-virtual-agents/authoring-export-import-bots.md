@@ -26,7 +26,7 @@ This can be useful if you use different environments for different purposes, or 
 
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- You will need to be a [System Customizer](/power-platform/admin/database-security) to use this feature.
+- If you are not an Admin, you will need to be a [System Customizer](/power-platform/admin/database-security) to use this feature.
 
 >[!IMPORTANT]
 >These features are in preview, which means that they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
