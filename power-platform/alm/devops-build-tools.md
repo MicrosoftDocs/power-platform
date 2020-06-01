@@ -86,7 +86,8 @@ you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| Power Apps checker service                         | (Required) Select the service endpoint for the Power Apps checker. The service endpoint is defined under **Service Connections** in **Project Settings**.<p/>Note: The service connection type that must be used for this specific task only is **Power Apps Checker**, which is a service principals connection. For more information on how to configure service principals to be used with this task see [Configure service connection for Power Apps checker](https://aka.ms/buildtoolsconnection). |
+| Service Connection                         | (Required) A connection to a licensed Power Platform environment is required to use the Power Apps checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .<p/>Note: Service Principal is the only authentication method available for the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments](https://aka.ms/buildtoolsspn). |
+| User default PowerApps Checker endpoint       | By default, the gelocation of the checker service will use the same geo as the environment you connect to. By unchecking the default, you have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the PowerApps Checker API](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
 | Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
 | Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
 | Rule set                          | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps [maker portal](https://make.powerapps.com).</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to [AppSource](https://appsource.microsoft.com/).</li></ul>    |
@@ -101,7 +102,7 @@ Imports a solution into a target environment.
 | Parameters           | Description        |
 |----------------------|--------------------------|
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection for the target environment that you want to import the solution to (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). The service connections can be defined under **Service Connections** in **Project Settings**.|
+| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
  | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).  |
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
 
@@ -112,7 +113,7 @@ Exports a solution from a source environment.
 | Parameters      | Description     |
 |-----------------|---------------------|
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection for the source environment that you want to export the solution from. The service connections is defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
+| Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
 | Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |
 | Solution output file       | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).   |
 
@@ -128,7 +129,7 @@ Takes a compressed solution file and decomposes it into multiple XML files so th
 
 #### Pack solution
 
-Packs a solution represented in source control into a solution.zip file that can be imported into an environment.
+Packs a solution represented in source control into a solution.zip file that can be imported into another environment.
 
 | Parameters       | Description     |
 |------------------|-----------------|
@@ -142,7 +143,8 @@ Publishes all customizations in an environment.
 
 | Parameters     | Description    |
 |----------------|----------------|
-| Power Apps environment URL | (Required) The service endpoint for the environment in which you want to publish customizations. Defined under **Service Connections** in **Project Settings**.|
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection to the environment in which you want to publish customizations. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 
 #### Set solution version
 
@@ -150,8 +152,11 @@ Updates the version of a solution.
 
 | Parameters    | Description   |
 |---------------|---------------|
-| Power Apps environment URL | (Required) The service endpoint for the target environment that holds the solution you want to update. Defined under **Service Connections** in **Project Settings**. |
+| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
+| Service connection | (Required) The service connection to the target environment that holds the solution you want to update.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
 | Solution name              | (Required) The name of the solution you want to set the version number for.     |
+| Solution Version Number              | (Required) Version number you want to set.     |
+
 
 #### Deploy package
 
@@ -160,14 +165,17 @@ Deploys a package to an environment. Deploying a [package](/powerapps/developer/
 | Parameters      | Description    |
 |-----------------|----------------|
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service endpoint for the target environment to which you want to deploy the package. Defined under **Service Connections** in **Project Settings**. |
-| Package file | (Required) The path and file name of the package that you want to deploy. |
+| Service connection | (Required) The service connection to the target environment into which you want to deploy the package.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
+| Package file | (Required) The path and file name of the path and file name of the package file assembly (.dll). |
 
 ### Environment management tasks
 
 Automate common environment management tasks.
 
-#### Create environment
+> [!NOTE]
+> Environment actions will be made available subsequent releases.
+
+<!-- #### Create environment
 
 Creates a new environment.
 
@@ -217,7 +225,7 @@ metadata and not the actual data.
 |----------------|-----------------|
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection for the source environment that you want to copy from. Defined under **Service Connections** in **Project Settings**. |
-| Service connection | (Required) The service connection for the target environment that you want to copy to. Defined under **Service Connections** in **Project Settings**. |
+| Service connection | (Required) The service connection for the target environment that you want to copy to. Defined under **Service Connections** in **Project Settings**. | -->
 
 ## Build and release pipelines
 
@@ -255,6 +263,47 @@ The following figure shows the build tool tasks that you might add to a pipeline
 
 ![Deploy to a production environment (PROD)](media/deploy-pipeline.png "Deploy to a production environment (PROD)")
 
-### See also
+## Configure Service Connections using Service Principal
 
-[Power Apps component framework](component-framework.md)
+To configure a connection using Service Principal, you must first create an application registration in Azure AD with the required permissions and then create the associated Application user in the Power Platform environment you want to connect to. We have offered a script to fasciliate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration). 
+
+### Create Service Principal and Client Secret using PowerShell 
+
+This PowerShell script assists in creating and configuring the Service Principal to be used with the Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in Azure Active Directory (AAD).
+
+This Application is then added as admin user to the Power Platform tenant itself.
+
+**Installation**
+
+Download the following PowerShell cmdlet: [New-CrmServicePrincipal.ps1]((https://pabuildtools.blob.core.windows.net/spn-docs-4133a3fe/New-CrmServicePrincipal.ps1)) 
+
+<ul><li>Open a regular Windows PowerShell command prompt (standard, not PS core)
+</li></ul> 
+<ul><li>Navigate to the folder where you saved the script, and unblock the script using the following command: Unblock-File New-CrmServicePrincipal.ps1
+</li></ul>
+<ul><li>Run the script: .\New-CrmServicePrincipal.ps1"</li></ul>
+
+The script will prompt TWICE with AAD login dialogs:
+
+
+<ul><li>1st time: to login as administrator to the AAD instance associated with the Power Platform tenant
+</li></ul> 
+<ul><li>2nd time: to login as tenant admin to the Power Platform tenant itself
+</li></ul>
+
+
+Once successful, 3 columns are displayed:
+
+<ul><li>Power Platform TenantId</li></ul>
+<ul><li>Application ID</li></ul>
+<ul><li>Client Secret (in clear text)</li></ul>
+
+Use the information displayed to configure the Power Platform Service Connection 
+
+NOTE: Keep this client secret safe and secure. Once the PowerShell command prompt is cleared, you cannot retrieve the same client secret again
+
+
+### Configure environment with the Application ID
+The application ID must be added as an Application User in the Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
+
+Ensure that the added Application User has the system administrator role assigned(available from “Manage Roles” in the Security settings for the application user):
