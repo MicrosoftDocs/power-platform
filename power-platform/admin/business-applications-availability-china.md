@@ -1,6 +1,6 @@
 ---
-title: "Business applications availability in China - operated by 21Vianet in China  | MicrosoftDocs"
-description: Business applications availability in China - operated by 21Vianet in China
+title: "Power Apps operated by 21Vianet and Power Automate operated by 21Vianet | MicrosoftDocs"
+description: Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -14,7 +14,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Business applications availability in China – operated by 21Vianet in China 
+# Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
 ## Overview
 
