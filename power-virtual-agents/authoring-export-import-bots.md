@@ -52,7 +52,7 @@ You will need to upgrade existing bots (built before June 2020) before you can e
     ![](media/export-upgrade-bot.png "")
 
 >[!NOTE]
->A notice will appear that says "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after a period of time, try refreshing your browser. You can continue working on your bot without losing any updates. 
+>A notice might appear that says "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after a period of time, try refreshing your browser. You can continue working on your bot without losing any updates. 
 >  
 >If you still see the warning after a few days, create a support request with you Bot ID. Admins can use [Help + support](/power-platform/admin/get-help-support) in the Power Platform admin center to create a support request.  
 >  
