@@ -94,7 +94,7 @@ you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| Service Connection                         | (Required) A connection to a licensed Power Platform environment is required to use the Power Apps checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .<p/>Note: Service Principal is the only authentication method available for the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments](https://aka.ms/buildtoolsspn). |
+| Service Connection                         | (Required) A connection to a licensed Power Platform environment is required to use the Power Apps checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .<p/>Note: Service Principal is the only authentication method available for the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments]( #configure-service-connections-using-a-service-principal). |
 | User default PowerApps Checker endpoint       | By default, the gelocation of the checker service will use the same geo as the environment you connect to. By unchecking the default, you have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the PowerApps Checker API](https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
 | Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
 | Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
@@ -321,18 +321,25 @@ Ensure that the added Application User has the system administrator role assigne
 
 **Do the Microsoft Power Platform Build Tools only work for Power Apps?**  
 
-*The build tools work for both Power Apps (canvas) and model-driven apps in Dynamics 365 such as Dynamics 365 Sales and Dynamics 365 Customer Service. Separate build tasks are available for Microsoft Dynamics for Finance and Operations.*
+*The build tools work for both canvas and model-driven apps, Power Virtual Agents, UI Flows and traditional flows, AI Builder, Custom Connectors and Data Flows, all of which can now be added to a solution. This also includes Dynamics 365 CE applications, such as Dynamics 365 Sales and Dynamics 365 Customer Service. Separate build tasks are available for Microsoft Dynamics for Finance and Operations.*
+
+**I had previuosly installed the preview of the Build Tools - can I upgrade from the preview of Power Apps Build Tools to Power Platform Build Tools?**
+
+*You cannot upgrade from the preview version as we had to introduce some breaking changes in the Generally Available release. To move from the preview version, you have to install the Power Platform Build Tools and either re-build your pipelines, or re-configure your existing pipelines to use the new Build Tools tasks. This includes creating new Service connections as well.*
 
 **Can I include flow and canvas apps?**
 
-*Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors.*
+*Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors A list of current limitations are available here: [Known limitations](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
 **How much do the Microsoft Power Platform Build Tools cost?**
 
-*The build tools are available at no cost. However, a valid subscription to Azure DevOps is required to utilize the build tools. More information is available [here](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
+*The build tools are available at no cost. However, a valid subscription to Azure DevOps is required to utilize the Build Tools. More information is available [here](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
 
 **I can see the extension, but why don’t I have an option to install it?**
 
 *If you do not see the **install** option (outlined in screenshot below) then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [here](https://docs.microsoft.com/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
 
-![Build tasks screen](media/build-tasks.png)
+**How can developers use the results of the Checker task?**
+
+*The output of the Checker task is a [Sarif file](https://sarifweb.azurewebsites.net/) and both VS Code and Visual Studio extensions are available for viewing and taking action on Sarif files.*
+
