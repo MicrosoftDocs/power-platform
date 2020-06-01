@@ -310,7 +310,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 ## Frequently asked question (FAQ)
 
-**Do the Microsoft Power Platform build tools only work for Power Apps?**  
+**Do the Microsoft Power Platform Build Tools only work for Power Apps?**  
 
 *The build tools work for both Power Apps (canvas) and model-driven apps in Dynamics 365 such as Dynamics 365 Sales and Dynamics 365 Customer Service. Separate build tasks are available for Microsoft Dynamics for Finance and Operations.*
 
@@ -318,7 +318,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 *Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors.*
 
-**How much do the Microsoft Power Platform build tools cost?**
+**How much do the Microsoft Power Platform Build Tools cost?**
 
 *The build tools are available at no cost. However, a valid subscription to Azure DevOps is required to utilize the build tools. More information is available [here](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
 
