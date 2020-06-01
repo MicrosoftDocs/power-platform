@@ -1,6 +1,6 @@
 ---
-title: "Connect Gmail accounts using OAuth2  | MicrosoftDocs"
-description: "Connect Gmail accounts using OAuth2"
+title: "Connect Gmail accounts using OAuth 2.0  | MicrosoftDocs"
+description: "Connect Gmail accounts using OAuth 2.0"
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -14,16 +14,21 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Connect Gmail accounts using OAuth2 
 
-Follow the steps in this article to set up server-side synchronization to send and receive email in model-driven apps in Dynamics 365 from Gmail accounts using OAuth2 as the authorization mechanism.
+
+<!-- I don't find an OAuth entry in the MS style guide, but the OAuth website uses a space before the number, and in fact uses 2.0. I'm going to apply that style in this topic. Let me know if you have guidance showing it otherwise. -->
+
+
+# Connect Gmail accounts using OAuth 2.0 
+
+Follow the steps in this article to set up server-side synchronization to send and receive email in model-driven apps in Dynamics 365 from Gmail accounts using OAuth 2.0 as the authorization mechanism.
 
 > [!NOTE]
-> the Gmail OAuth email server profile works for up to 100 users. Create multiple OAuth profiles (steps 1-4) if you want to associate the same profile with multiple users.
+> The Gmail OAuth email server profile works for up to 100 users. Create multiple OAuth profiles (steps 1-4) if you want to associate the same profile with multiple users.
 
 ## Availability
 
-We're in the process of rolling out this feature. To determine if your environment can connect Gmail accounts using OAuth2, do the following.
+We're in the process of rolling out this feature. To determine if your environment can connect Gmail accounts using OAuth 2.0, do the following:
 
 1. In the web app, select **Settings** > **Email configuration** > **Mailboxes**. To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
@@ -35,7 +40,7 @@ We're in the process of rolling out this feature. To determine if your environme
 ## Step 1: Enable IMAP or POP in Gmail
 
 > [!NOTE]
-> These steps should be done by the System Administrator.
+> These steps should be done by the system administrator.
 
 For IMAP, follow the steps in: [Check Gmail through other email platforms](https://support.google.com/mail/answer/7126229)
 
@@ -44,18 +49,18 @@ For POP, follow the steps in: [Read Gmail messages on other email clients using 
 ## Step 2: Create a project
 
 > [!NOTE]
-> These steps should be done by the System Administrator.
+> These steps should be done by the system administrator.
 
 Using a Google account (could be the same one you’ll use to send and retrieve email or a different one), go to the Google Developers Console and create a new project.
 
-Follow the steps for **Create a project** in: [Create, shut down, and restore projects ](https://support.google.com/googleapi/answer/6251787)
+Follow the steps for **Create a project** in: [Create, shut down, and restore projects](https://support.google.com/googleapi/answer/6251787)
 
 ## Step 3: Configure OAuth consent 
 
 > [!NOTE]
-> These steps should be done by the System Administrator.
+> These steps should be done by the system administrator.
 
-1. Select the OAuth consent screen and select the user type. Select **Internal** if you're using a GSuite admin tenant and will be creating the app exclusively for your organization. Select **External** if you’re testing with a stand-alone Gmail account. 
+1. Select **OAuth consent screen** and then select the user type. Select **Internal** if you're using a GSuite admin tenant and will be creating the app exclusively for your organization. Select **External** if you’re testing with a stand-alone Gmail account. 
 
    > [!div class="mx-imgBorder"] 
    > ![OAuth consent screen](media/gmail-oauth-consent-screen.png "OAuth consent screen")
@@ -78,6 +83,12 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 
 7. Enter the following settings:
 
+
+
+<!-- Should "Name" be in bold in the table? -->
+
+
+
    |Setting  |Use  |
    |---------|---------|
    |**Application type**     | Web application         |
@@ -93,7 +104,7 @@ Follow the steps for **Create a project** in: [Create, shut down, and restore pr
 ## Step 4: Create an email server profile
 
 > [!NOTE]
-> These steps should be done by the System Administrator.
+> These steps should be done by the system administrator.
 
 Create a new IMAP or POP3 email server profile.
 
