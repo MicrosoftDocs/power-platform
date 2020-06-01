@@ -21,7 +21,7 @@ With the introduction of [self-service purchases](https://docs.microsoft.com/mic
 
 1. Sign in to the Power Platform service admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) with admin or end-user credentials.
 
-2. Select **Analytics** > **Capacity** > **Summary** tab.
+2. Select **Resources** > **Capacity** > **Summary** tab.
 
    > [!NOTE]
    > Admins and end users will see the same tenant capacity on this page.

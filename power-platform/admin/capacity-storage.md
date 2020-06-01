@@ -1,7 +1,7 @@
 ---
 title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 05/07/2020
+ms.date: 05/29/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -48,7 +48,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 1. Sign in to the Power Platform admin center, and then select an environment. 
 
-2. Select **Analytics** > **Capacity**.
+2. Select **Resources** > **Capacity**.
 
 3. View the data on the **Summary** page.
 
@@ -63,14 +63,14 @@ The new licensing storage model looks like the following image.
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
-To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.
+To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 
 > [!div class="mx-imgBorder"] 
 > ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
 
 |  | |
 |---------|---------|
-|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
+|(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Resources*](#what-are-entities-ending-in---resources-in-my-capacity-report) </li> </ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 
@@ -80,7 +80,7 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Analytics** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
+To view the **Storage capacity** page, select **Resources** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity Resources.
 
 > [!div class="mx-imgBorder"] 
 > ![Details button](media/storage-data-per-environment2.png "Details button")
@@ -92,20 +92,20 @@ To view the **Storage capacity** page, select **Analytics** > **Capacity** > **S
 >   - Preview
 >   - Support
 >   - Developer
-> - You can select an environment that's showing 0 GB, and then go to its **Environment Analytics** page to see the actual consumption.
+> - You can select an environment that's showing 0 GB, and then go to its **Environment Resources** page to see the actual consumption.
 
-### Environment capacity analytics
+### Environment capacity Resources
 
 This page provides an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption. 
 
-**To view environment-level capacity analytics**
+**To view environment-level capacity Resources**
 
-1. Select **Analytics** > **Capacity** > **Storage capacity**.
+1. Select **Resources** > **Capacity** > **Storage capacity**.
 2. Select an environment.
 3. Select **Details** (![Details button](media/storage-data-details-button.png "Details button")).
 
 > [!div class="mx-imgBorder"] 
-> ![Environment capacity analytics](media/storage-data-capacity-details.png "Environment capacity analytics")
+> ![Environment capacity Resources](media/storage-data-capacity-details.png "Environment capacity Resources")
 
 The following details are provided:
 
@@ -225,7 +225,7 @@ When you sign in to the Power Platform admin center, you'll be notified if your 
 
 ### Why am I no longer getting storage notifications?
 
-We've disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity )** page to monitor usage.
+We've disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/Resources/capacity )** page to monitor usage.
 
 ### I'm an existing customer. Should I expect my file and log usage to change?
 
@@ -239,14 +239,14 @@ Not all licenses give per-user entitlement. For example, the Team Member license
 
 Default, production, and sandbox environments are counted for consumption. Trial, preview, support, and developer environments aren't counted.
 
-### What are entities ending in “- Analytics” in my capacity report?
+### What are entities ending in “- Resources” in my capacity report?
 
-Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Common Data Service entities. See **More information** below for documentation covering the installed Insights applications and the entities used to create insights and dashboards.
+Entities ending in “– Resources” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization Resources dashboard to generate predictive insights and/or Resources dashboards. The data is synched from Common Data Service entities. See **More information** below for documentation covering the installed Insights applications and the entities used to create insights and dashboards.
 
 **More information:**
 - [Sales Insights ](https://docs.microsoft.com/dynamics365/ai/sales/help-hub#get-started)
-- [Field Service and resource scheduling optimization (RSO)](https://docs.microsoft.com/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
-- [Customer Service Hub](https://docs.microsoft.com/dynamics365/customer-service/customer-service-analytics-insights-csh) 
+- [Field Service and resource scheduling optimization (RSO)](https://docs.microsoft.com/dynamics365/field-service/scheduling-Resources-reports)                                                                                             
+- [Customer Service Hub](https://docs.microsoft.com/dynamics365/customer-service/customer-service-Resources-insights-csh) 
 - [Field Service](https://docs.microsoft.com/dynamics365/field-service/reports) 
 
 ### See also
