@@ -87,7 +87,7 @@ you might have inadvertently introduced when building your solution.
 | Parameters         | Description      |
 |--------------------|------------------|
 | Service Connection                         | (Required) A connection to a licensed Power Platform environment is required to use the Power Apps checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .<p/>Note: Service Principal is the only authentication method available for the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments](https://aka.ms/buildtoolsspn). |
-| User default PowerApps Checker endpoint       | By default, the gelocation of the checker service will use the same geo as the environment you connect to. By unchecking the default, you have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the PowerApps Checker API](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
+| User default PowerApps Checker endpoint       | By default, the gelocation of the checker service will use the same geo as the environment you connect to. By unchecking the default, you have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the PowerApps Checker API](https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
 | Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
 | Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
 | Rule set                          | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps [maker portal](https://make.powerapps.com).</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to [AppSource](https://appsource.microsoft.com/).</li></ul>    |
@@ -265,7 +265,7 @@ The following figure shows the build tool tasks that you might add to a pipeline
 
 ## Configure Service Connections using Service Principal
 
-To configure a connection using Service Principal, you must first create an application registration in Azure AD with the required permissions and then create the associated Application user in the Power Platform environment you want to connect to. We have offered a script to fasciliate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration). 
+To configure a connection using Service Principal, you must first create an application registration in Azure AD with the required permissions and then create the associated Application user in the Power Platform environment you want to connect to. We have offered a script to fasciliate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration). 
 
 ### Create Service Principal and Client Secret using PowerShell 
 
@@ -304,7 +304,7 @@ NOTE: Keep this client secret safe and secure. Once the PowerShell command promp
 
 
 ### Configure environment with the Application ID
-The application ID must be added as an Application User in the Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
+The application ID must be added as an Application User in the Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
 
 Ensure that the added Application User has the system administrator role assigned(available from “Manage Roles” in the Security settings for the application user).
 
