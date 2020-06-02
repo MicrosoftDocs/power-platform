@@ -1,5 +1,5 @@
 ---
-title: "Manage email feature settings | MicrosoftDocs"
+title: "Manage feature settings | MicrosoftDocs"
 description: View and manage feature settings for Common Data Service.
 author: jimholtz
 manager: kvivek
