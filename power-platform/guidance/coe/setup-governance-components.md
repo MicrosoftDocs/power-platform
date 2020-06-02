@@ -97,7 +97,7 @@ All flows in this solution depend on all environment variables' being configured
 
 ## Initialize flow approval entities in your environment
 
-The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Archive and Clean Up – Check Approval* flows use the built-in Approval actions of Power Automate. In the background, the built-in Approval actions use Common Data Service. If you've installed the solution in a new environment, the Approval entities must be initialized. The easiest way to do this is to create a "dummy" approval flow.
+The archive approval flows (*Admin \| App Archive and Clean Up – Start Approval*, *Admin \| Flow Archive and Clean Up – Start Approval*, *Admin \| App Archive and Clean Up – Check Approval*, and *Admin \| Flow Archive and Clean Up – Check Approval*), use the built-in Approval actions of Power Automate. In the background, the built-in Approval actions use Common Data Service. If you've installed the solution in a new environment, the Approval entities must be initialized. The easiest way to do this is to create a "dummy" approval flow.
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com).
 
@@ -128,10 +128,12 @@ The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Arc
 
 ## Activate the flows
 
-This Governance Components solution contains five flows:
+This Governance Components solution contains seven flows:
 
 -  Admin \| App Archive and Clean Up – Start Approval
 -  Admin \| App Archive and Clean Up – Check Approval
+-  Admin \| Flow Archive and Clean Up – Start Approval
+-  Admin \| Flow Archive and Clean Up – Check Approval
 -  Admin \| Compliance detail request
 -  SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors ([Customization Instructions](governance-components.md#setup-required--admin--find-and-add-admins-as-owners-for-apps-that-leverage-certain-connectors))
 -  SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors ([Customization Instructions](governance-components.md#setup-required--admin--find-and-disable-flows-that-leverage-certain-connectors))
