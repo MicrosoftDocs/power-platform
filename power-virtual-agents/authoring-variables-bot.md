@@ -97,63 +97,74 @@ You let the bot know the user's name before starting the conversation Now the bo
     ![Screenshot of the variable properties pane, on the Usage section with the suboption External sources can be set, under the Bot option](media/bot-variable-external.png "Screenshot of the variable properties pane, on the Usage section with the suboption External sources can be set, under the Bot option")
 
 
-1. You can append the variables and their definitions if you're simply [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), or you can use a `<script>` code block to call and use variables programatically:
+1. You can append the variables and their definitions if you're simply [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), or you can use a `<script>` code block to call and use variables programatically.
 
     >[!NOTE]
     >The variable name in the query string must match that of the bot variable, without the `bot.` prefix. For example, a bot variable `bot.UserName` must be rendered as `UserName=`.
 
-    - When embedding your bot on your website, append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`).
+In the examples described here, a simple declaration is made for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the user's name (for example, if you have the user name from a log-in script).
+
+**To add the variable to an embedded bot:
+
+1. Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`), for example:
 
 
-        The following example describes what it might look like: 
+  - You have a bot variable named `bot.UserName`. 
 
-        - You have a bot variable named `bot.UserName`. 
+  - Your bot's URL is *https:// powerva.microsoft.com/webchat/bots/12345*.
 
-        - Your bot's URL is *https:// powerva.microsoft.com/webchat/bots/12345*.
+  - To pass in a user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https:// powerva.microsoft.com/webchat/bots/12345?**UserName=Jeff***.
 
-        - To pass in a user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https:// powerva.microsoft.com/webchat/bots/12345?**UserName=Jeff***.
+2. The parameter name is case insensitive. This means `username=Jeff` will also work in this example. 
 
-        The parameter name is case insensitive. This means `username=Jeff` will also work in this example. 
 
-        In a production scenario, you might pass in as the query parameter another variable that has already stored the user's name (for example, if you have the user name from a log-in script).
 
-    - Within the `<script>` section on your page, define the variables as follows:
+**To add the variable to a [custom canvas](customize-default-canvas.md)**
 
-        ```HTML
-        const store = WebChat.createStore();
-        store.dispatch({
-            type: "WEB_CHAT/SEND_EVENT",
-            payload: {
-                name: “pvaSetContext”,
+1. In the `<script>` section on the page where you have your bot, define the variables as follows, substituting `variableName1` for the variable name without the `bot.` and `variableDefinition1` for the definition. Separate multiple variables with commas `,`.
+
+    ```html
+       const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
+         if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+           dispatch({
+              type: "WEB_CHAT/SEND_EVENT",
+              payload: {
+                name: "pvaSetContext",
                 value: {
-                    "VariableName": “VariableDefinition”
+                   "variableName1": "variableDefinition1",
+                   "variableName2": "variableDefinition2"
                 }
-            },
+              },
+            });
+          }
+            return next(action);
         });
-        ```
-         
-         The following example describes what it might look like:
+    ```
 
-        - You have a bot variable named `bot.UserName`. 
+2. Call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called:
 
-        - You have an existing [custom canvas](customize-default-canvas.md), and you add the following `<script>`:
+    ```html
+    const BOT_ID = "00d04937-25a3-4bee-839f-ea79e8b72efd";
+    const theURL = "https://bots.sdf.customercareintelligence.net/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
 
-            ```HTML
-               const store = WebChat.createStore();
-               store.dispatch({
-                    type: "WEB_CHAT/SEND_EVENT",
-                    payload: {
-                        name: “pvaSetContext”,
-                        value: {
-                            "UserName": “Jeff”
-                    }
-                        },
-               });
-            ```
-
+    fetch(theURL)
+        .then(response => response.json())
+        .then(conversationInfo => {
+            window.WebChat.renderWebChat(
+                {
+                    directLine: window.WebChat.createDirectLine({
+                        token: conversationInfo.token,
+                    }),
+                    store,
+                    styleOptions
+                },
+                document.getElementById('webchat')
+            );
+        })
+        .catch(err => console.error("An error occurred: " + err));
+    ```
  
 
-In a production scenario, you might pass in as the query parameter another variable that has already stored the user's name (for example, if you have the user name from a log-in script).
 
 
 
