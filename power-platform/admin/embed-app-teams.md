@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 06/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -161,7 +161,7 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
     > [!div class="mx-imgBorder"] 
     > ![Add valid domains](./media/add-valid-domains.png "Add valid domains")
 
-11. To enable Single Sign On, set the AAD App ID to `3e62f81e-590b-425b-9531-cad6683656cf` and the resource URL to `https://apps.powerapps.com`
+11. To enable single sign-on, set the **AAD App ID** to `3e62f81e-590b-425b-9531-cad6683656cf` and the resource URL to `https://apps.powerapps.com`
 
     > [!div class="mx-imgBorder"] 
     > ![Add valid domains](./media/add-teams-sso.png "Add valid domains")
