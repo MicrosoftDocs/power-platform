@@ -141,11 +141,11 @@ In the examples described here, a simple declaration is made for the variables. 
         });
     ```
 
-2. Call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called:
+2. Call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
 
     ```html
-    const BOT_ID = "00d04937-25a3-4bee-839f-ea79e8b72efd";
-    const theURL = "https://bots.sdf.customercareintelligence.net/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+    const BOT_ID = "12345-5678";
+    const theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
 
     fetch(theURL)
         .then(response => response.json())
