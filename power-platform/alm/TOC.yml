@@ -47,7 +47,7 @@
   - name: ALM for developers   
     href: alm-for-developers.md
     items:
-    - name: Use Power Apps build tools with Azure DevOps
+    - name: Use Microsoft Power Platform Build Tools with Azure DevOps
       href: devops-build-tools.md
     - name: Work with solution components
       href: 
