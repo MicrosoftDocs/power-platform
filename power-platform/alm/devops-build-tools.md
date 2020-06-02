@@ -61,7 +61,7 @@ changes." The build tasks can largely be categorized into four types:
 ## Get the Microsoft Power Platform Build Tools
 
 The Microsoft Power Platform Build Tools can be installed into your Azure DevOps organization
-from [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools).
+from [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools).
 After installation, all tasks included in the Microsoft Power Platform Build Tools will be
 available to add into any new or existing pipeline. You can find them by
 searching for "Power Platform".
@@ -283,7 +283,7 @@ This application is then added as an administrator user to the Power Platform te
 
 **Installation**
 
-Download the following PowerShell cmdlet: [New-CrmServicePrincipal.ps1]((https://pabuildtools.blob.core.windows.net/spn-docs-4133a3fe/New-CrmServicePrincipal.ps1)) 
+Download the following PowerShell cmdlet: https://pabuildtools.blob.core.windows.net/spn-docs-4133a3fe/New-CrmServicePrincipal.ps1
 
 <ul><li>Open a regular Windows PowerShell command prompt (standard, not PS core)
 </li></ul> 
@@ -329,7 +329,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 **Can I include flow and canvas apps?**
 
-*Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors A list of current limitations are available here: [Known limitations](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
+*Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
 **How much do the Microsoft Power Platform Build Tools cost?**
 
