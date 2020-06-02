@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 06/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -156,32 +156,38 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
 
 **Add the app to all teams in your tenant**
 
-10. Under **Finish**, select **Valid domains**. Add **apps.powerapps.com** and **apps.preview.powerapps.com** as valid domains for the Teams application.
+10. Under **Finish**, select **Domains and permissions**. Add ***.powerapps.com** as a valid domain for the Teams application.
 
     > [!div class="mx-imgBorder"] 
     > ![Add valid domains](./media/add-valid-domains.png "Add valid domains")
 
-11. To set device permissions for your app, under **Device permissions** select **Set up**.
+11. To enable single sign-on, set the **AAD App ID** to `3e62f81e-590b-425b-9531-cad6683656cf` and the resource URL to `https://apps.powerapps.com`
+
+    > [!div class="mx-imgBorder"] 
+    > ![Add valid domains](./media/add-teams-sso.png "Add valid domains")
+
+
+12. To set device permissions for your app, under **Device permissions** select **Set up**.
 
     > [!div class="mx-imgBorder"] 
     > ![Device permissions](./media/device-permissions.png "Device permissions")
 
-12. Under **Finish**, select **Test and distribute**, and then select **Download**.
+13. Under **Finish**, select **Test and distribute**, and then select **Download**.
 
     > [!div class="mx-imgBorder"] 
     > ![Download app package](./media/download-app-package.png "Download app package")
 
-13. Go to **Store** > **Upload a custom app** > **Upload for** [your tenant name].
+14. Go to **Store** > **Upload a custom app** > **Upload for** [your tenant name].
 
     > [!div class="mx-imgBorder"] 
     > ![Upload for tenant](./media/upload-for-tenant.png "Upload for tenant")
 
-14. Locate your app file and select it. Then, navigate to your team and select **+**.
+15. Locate your app file and select it. Then, navigate to your team and select **+**.
 
     > [!div class="mx-imgBorder"] 
     > ![Add app](./media/add-app-all-tabs.png "Add app")
 
-15. You app will appear as a tile under **All Tabs**. Search for your app, select it, and then select **Save**.
+16. You app will appear as a tile under **All Tabs**. Search for your app, select it, and then select **Save**.
 
     > [!div class="mx-imgBorder"] 
     > ![Add app as tab](./media/add-app-as-tab.png "Add app as tab")
