@@ -63,7 +63,7 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
 2. **Using apps created in preview environments in production environments**
 
-   PowerApps does not support opening apps saved in preview only versions of PowerApps in production environments. Most versions of PowerApps will eventually move from preview into production, but how and when this happens is influenced by many factors and should not be relied on. We recommend you use production environments to create or edit any app intended for use in production.
+   PowerApps does not support opening apps saved in preview only versions of PowerApps in production environments. Most versions of PowerApps will eventually move from preview into production, but how and when this happens is influenced by many factors so it should not be relied on. We recommend you use production environments to create or edit any app intended for use in production.
 
 3. **Database cannot be created in Preview region**
 
