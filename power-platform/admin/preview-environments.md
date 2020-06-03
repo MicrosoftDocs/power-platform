@@ -1,6 +1,7 @@
 ---
 title: Preview environments | Microsoft Docs
 description: Get early access to functionalities with Power Apps Preview Program
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
