@@ -1,13 +1,12 @@
 ---
 title: Preview environments | Microsoft Docs
 description: Get early access to functionalities with Power Apps Preview Program
-author: manasmams
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
-ms.author: manasma
+ms.date: 06/02/2020
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -63,7 +62,7 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
 2. **Using apps created in preview environments in production environments**
 
-   PowerApps does not support opening apps saved in preview only versions of PowerApps in production environments. Most versions of PowerApps will eventually move from preview into production, but how and when this happens is influenced by many factors so it should not be relied on. We recommend you use production environments to create or edit any app intended for use in a production environment.
+   PowerApps does not support opening apps saved in preview only versions of Power Apps in production environments. Most versions of Power Apps will eventually move from preview into production, but how and when this happens is influenced by many factors so it should not be relied on. We recommend you use production environments to create or edit any app intended for use in a production environment.
 
 3. **Database cannot be created in Preview region**
 
