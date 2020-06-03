@@ -32,8 +32,8 @@ Review and modify the following settings:
 |---------|---------|
 |**Power Platform settings**    | Select this link to control who can create environments and allocate add-on capacity (if available). <br /> <br /> ![](media/power-platform-settings-governance.png "Power Platform settings")    |
 |**Themes**     | Change the appearance of the Power Platform site with the provided themes.        |
-|**Notifications** | By default, Office 365 apps will ping you when new mail arrives and when it's time for a reminder--with a pop up or with a sound. You can change these settings at any time. |
-|**Password**     | Change the password for all of your Office 365 apps and services.        |
+|**Notifications** | By default, Microsoft 365 apps will ping you when new mail arrives and when it's time for a reminder--with a pop up or with a sound. You can change these settings at any time. |
+|**Password**     | Change the password for all of your Microsoft 365 apps and services.        |
 |**Contact preferences**    | Change contact preferences such as email and phone preferences.         |
 
 

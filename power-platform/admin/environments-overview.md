@@ -95,7 +95,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 <td width="50%">  Developer environments are created by users who have the Community Plan license. They're special environments intended only for use by the owner, and they can't be shared with other users. Provisioning developer environments can't be restricted unless through a support ticket. </td>
 <td width="30%">  Only a single user account with the Community Plan has access.</td>
 </tr>
-<tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Office 365 and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
+<tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
 </table>
 
 

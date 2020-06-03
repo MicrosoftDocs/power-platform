@@ -85,7 +85,7 @@ You can buy additional data storage, file storage and flow runs. See the Power A
 
 ### Who can buy Microsoft Power Apps and Power Automate plans?
 
-Any customer can sign up for a free trial. Office 365 admins can buy Power Apps plans for their teams or organization. Contact your Office 365 admin when you’re ready to buy.
+Any customer can sign up for a free trial. Microsoft 365 admins can buy Power Apps plans for their teams or organization. Contact your Microsoft 365 admin when you’re ready to buy.
 
 ### Do all my users need to be licensed with the same Power Apps plan, or can I mix plans?
 
@@ -121,13 +121,13 @@ More information is available [here](/power-platform/admin/trial-environments).
 
 For more information about trial environments in Power Apps read this [topic](/power-platform/admin/trial-environments).
 
-## Office 365
+## Microsoft 365
 
-### What are Microsoft Power Apps and Power Automate use rights for Office 365 applications?
+### What are Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications?
 
-Please refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Office 365 applications.
+Please refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
 
-Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed below will be reclassified from Standard to Premium. Non-Microsoft connectors that had previously been classified as standard connectors will still be available to Office 365 users. A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors.
+Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed below will be reclassified from Standard to Premium. Non-Microsoft connectors that had previously been classified as standard connectors will still be available to Microsoft 365 users. A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors.
 
 Azure Application Insights  
 Azure Automation  
@@ -164,21 +164,21 @@ Power Automate plan-based limits on trigger frequency and the number of runs all
 
 Power Apps and Power Automate usage will be subject to service limits described [here](https://aka.ms/platformlimits). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
 
-### How does the change to Power Apps and Power Automate use rights for Office 365 applications affect me if I purchased the subscriptions prior to Oct 1st 2019? Will my existing Power Apps applications and Power Automate workflows continue to work?
+### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1st 2019? Will my existing Power Apps applications and Power Automate workflows continue to work?
 
-Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Office 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Office 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.
+Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.
 
 In addition, apps and flows created prior to October 1, 2019 which are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors.
 
-### How many Power Apps applications I can run with Office 365 plans?
+### How many Power Apps applications I can run with Microsoft 365 plans?
 
-There is no limit on the number of applications. Customers can continue to run standalone Power Apps applications to extend and customize Office 365 using standard connectors. 
+There is no limit on the number of applications. Customers can continue to run standalone Power Apps applications to extend and customize Microsoft 365 using standard connectors. 
 
 ## Dynamics 365
 
 ### What are Microsoft Power Apps and Power Automate use rights for Dynamics 365 applications?
 
-Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Office 365 applications.
+Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
 
 Effective October 1st 2019, there are certain changes made to use rights which are listed below:
 
