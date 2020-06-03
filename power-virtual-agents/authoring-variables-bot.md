@@ -9,7 +9,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring
+ms.custom: authoring, ce06032020
 ms.collection: virtual-agent
 ---
 
