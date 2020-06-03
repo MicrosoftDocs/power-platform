@@ -17,22 +17,22 @@ search.app:
 ---
 # About Unified Interface for model-driven apps in Power Apps 
 
-The Unified Interface uses responsive web design principles to provide an optimal viewing and interaction experience for any screen size, device, or orientation. It brings all the rich experiences to any client that you are using. Whether you are on a browser, tablet, or phone, you will be able to consume similar experiences.
+The Unified Interface uses responsive web design principles to provide an optimal viewing and interaction experience for any screen size, device, or orientation. It brings all the rich experiences to any client that you are using. Whether you are using a browser, tablet, or phone, you will be able to consume similar experiences.
 
 More information: 
 - [Enhanced user experience with the Unified Interface for model-driven apps](https://docs.microsoft.com/powerapps/user/unified-interface)
 - [Blog: Moving forward with your transition to Unified Interface](https://powerapps.microsoft.com/blog/moving-forward-with-your-transition-to-unified-interface/)
 - [Blog: Performance benefits of unified interface](https://powerapps.microsoft.com/blog/performance-benefits-of-unified-interface/)
 
-## Accessing Unified Interface apps on browsers
+## Accessing Unified Interface apps in browsers
 
-Once provisioned, you can access the installed Unified Interface and legacy web apps on browser.
+Once provisioned, you can access the installed Unified Interface and legacy web apps in browser.
 
 > [!NOTE]
 > The legacy web client is deprecated; you should plan to convert your legacy web apps to use the new Unified Interface. More information: [Legacy web client is deprecated](https://docs.microsoft.com/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#legacy-web-client-is-deprecated)
 
 
-You can access Unified Interface apps from the following locations on a browser: 
+You can access Unified Interface apps from the following locations in a browser: 
 
 1. In [https://home.dynamics.com/](https://home.dynamics.com/):
 

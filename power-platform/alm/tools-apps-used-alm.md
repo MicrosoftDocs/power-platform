@@ -55,7 +55,7 @@ solution metadata between development environments and your version control
 system, generating build artifacts, deploying to downstream environments,
 provisioning or de-provisioning of environments, and the ability to perform
 static analysis checks against your solution by using the Power Apps checker
-service. More information: [Power Apps build tools for Azure DevOps overview](/powerapps/developer/common-data-service/build-tools-overview)
+service. More information: [Microsoft Power Platform Build Tools for Azure DevOps overview](/powerapps/developer/common-data-service/build-tools-overview)
 
 ## Version control system 
 A version control system is a category of software tools that help record
