@@ -118,21 +118,21 @@ The following connectors can't be blocked by using DLP policies.
 <td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> Office 365 Outlook </td>
+<td width="20%"> Microsoft 365 Outlook </td>
 <td width="20%"> Power Automate Management</td>
 <td width="20%">  </td>
 <td width="20%"> Content Moderate</td>
 <td width="20%"> </td>
 </tr>
 <tr> 
-<td width="20%"> Office 365 Users </td>
+<td width="20%"> Microsoft 365 Users </td>
 <td width="20%"> Power BI</td>
 <td width="20%">  </td>
 <td width="20%"> Custom Vision</td>
 <td width="20%"> </td>
 </tr>
 <tr>
-<td width="20%"> Office 365 Video </td>
+<td width="20%"> Microsoft 365 Video </td>
 <td width="20%"> Power Platform for Admins</td>
 <td width="20%">  </td>
 <td width="20%"> Face API</td>
@@ -299,24 +299,24 @@ If any policy (tenant-level and/or environment-level) that's applicable to an en
 
 Compared to evaluating the effect of the **Blocked** classification, evaluating the effect of the **Business** or **Non-Business** classification across multiple policies is more complex. You can can classify a given connector, such as SharePoint, as **Business** in policy A and as **Non-Business** in policy B. What matters is what other connectors SharePoint is grouped with across policy A and policy B. 
 
-Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across ten connectors (SharePoint, Twitter, Salesforce, Facebook, Face API, Office 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob Storage, and Box). These connectors are classified as **Business** or **Non-Business** as represented by two categories each across the three policies (-E1-, -E2-, -E3-, -E4-, -E5-, and -E6-).
+Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across ten connectors (SharePoint, Twitter, Salesforce, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob Storage, and Box). These connectors are classified as **Business** or **Non-Business** as represented by two categories each across the three policies (-E1-, -E2-, -E3-, -E4-, -E5-, and -E6-).
 
 **Policy A** <br />
--E1- **Business** – SharePoint, Twitter, Salesforce, Office 365 Outlook, Basecamp 3 <br />
+-E1- **Business** – SharePoint, Twitter, Salesforce, Microsoft 365 Outlook, Basecamp 3 <br />
 -E2- **Non-Business** – Facebook, Face API, Adobe Sign, Azure Blob Storage, Box
 
 **Policy B** <br />
--E3- **Business**  – SharePoint, Facebook, Face API, Office 365 Outlook, Basecamp 3 <br />
+-E3- **Business**  – SharePoint, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3 <br />
 -E4- **Non-Business** – Twitter, Salesforce, Adobe Sign, Azure Blob Storage, Box
 
 **Policy C** <br />
--E5- **Business**  – Facebook, Face API, Twitter, Salesforce, Office 365 Outlook <br />
+-E5- **Business**  – Facebook, Face API, Twitter, Salesforce, Microsoft 365 Outlook <br />
 -E6- **Non-Business** – SharePoint, Adobe Sign, Azure Blob Storage, Box, Basecamp 3
 
 When all three policies are applied together to the same environment, the net result is fragmentation of connectors across eight (2<sup>3</sup> = 8) groups, as depicted below. Only connectors in the same group (out of eight possible combinations) can be used in a given app or flow. 
 
 **Consolidated grouping** <br />
--E1-, -E3-, -E5- Group 1 – Office 365 Outlook <br />
+-E1-, -E3-, -E5- Group 1 – Microsoft 365 Outlook <br />
 -E1-, -E3-, -E6- Group 2 – SharePoint, Basecamp 3 <br />
 -E1-, -E4-, -E5- Group 3 – Twitter, Salesforce <br />
 -E1-, -E4-, -E6- Group 4 – NULL <br />
