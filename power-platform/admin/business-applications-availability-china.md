@@ -42,11 +42,11 @@ Access to Power Apps operated by 21Vianet and Power Automate operated by 21Viane
 - Power Automate per business process plan
 - Power Automate plan
 
-In addition to the standalone plans, Power Automate and Power Apps capabilities are also included in certain Office 365 and Dynamics 365 plans allowing customers to extend and customize Office 365 and Dynamics 365 with Power Automate and Power Apps capabilities. This functionality will be enabled in a quarter following general availability of standalone plans.
+In addition to the standalone plans, Power Automate and Power Apps capabilities are also included in certain Microsoft 365 and Dynamics 365 plans allowing customers to extend and customize Microsoft 365 and Dynamics 365 with Power Automate and Power Apps capabilities. This functionality will be enabled in a quarter following general availability of standalone plans.
 
-Power Apps and Power Automate include several features that allow users to connect to and work with other Microsoft enterprise service offerings such as Office 365, Dynamics 365, and Power Apps. Power Apps and Power Automate within datacenters exist in a manner consistent with a multitenant, public cloud deployment model. Power Automate operated by 21Vianet utilizes the Office 365 customer administrator User Interface for customer administration and billing.
+Power Apps and Power Automate include several features that allow users to connect to and work with other Microsoft enterprise service offerings such as Microsoft 365, Dynamics 365, and Power Apps. Power Apps and Power Automate within datacenters exist in a manner consistent with a multitenant, public cloud deployment model. Power Automate operated by 21Vianet utilizes the Microsoft 365 customer administrator User Interface for customer administration and billing.
 
-Power Apps and Power Automate maintain the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. 
+Power Apps and Power Automate maintain the actual resources, information flow, and data management, while relying on Microsoft 365 to provide the visual styles that are presented to the customer administrator through their management console. 
 
 Power Apps and Power Automate will not have the ability to integrate third-party applications into the service through [Connectors](https://docs.microsoft.com/connectors). 
 
