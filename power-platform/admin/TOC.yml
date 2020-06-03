@@ -692,7 +692,7 @@
         href: embed-app-teams.md        
       - name: Install, update, or remove a preferred solution
         href: install-remove-preferred-solution.md 
-      - name: Add Office 365 Online services
+      - name: Add Microsoft 365 Online services
         items: 
         - name: Overview
           href: add-office-365-online-services.md

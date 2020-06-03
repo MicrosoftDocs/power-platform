@@ -127,17 +127,17 @@ Once server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short
   
 6. To see the document in your [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)][!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] Team site, select to the left of the document name (you'll see a check mark), and then select **Open Location**.  
   
-![Office 365 Team Site shared document](../admin/media/crm-itpro-crmo365tg-teamdocshare.png "Office 365 Team Site shared document")  
+![Microsoft 365 Team Site shared document](../admin/media/crm-itpro-crmo365tg-teamdocshare.png "Microsoft 365 Team Site shared document")  
   
 7. Select **Site Contents** to see all the document libraries created for the managed entities you selected.  
   
     The entities you selected to be managed by Document Management appear as document libraries (for example: Account, Article, Case, Lead, Opportunity, Product, Quote, and Sales Literature).  
   
-   ![Office 365 Team Site all libraries](../admin/media/crm-itpro-crmo365tg-teamalllib.png "Office 365 Team Site all libraries")  
+   ![Microsoft 365 Team Site all libraries](../admin/media/crm-itpro-crmo365tg-teamalllib.png "Microsoft 365 Team Site all libraries")  
  
 ## Known issue
 
-SharePoint Online has introduced a new feature that enables a SharePoint or global administrator in Office 365 to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+SharePoint Online has introduced a new feature that enables a SharePoint or global administrator in Microsoft 365 to block or limit access to SharePoint and OneDrive content from unmanaged devices. For more information, see [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
 You can set access at three levels:
 1. Allow full access  from desktop apps, mobile apps and the web
@@ -154,7 +154,7 @@ When SharePoint Online is configured for "Block Access", model-driven apps in Dy
 
 As a workaround, you can set the unmanaged devices policy to "Allow full access from desktop apps, mobile apps, and the web" on SharePoint Online.
 
-1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com) as a global or SharePoint admin. If you see a message that you don't have permission to access the page, you don't have Office 365 administrator permissions in your organization.
+1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com) as a global or SharePoint admin. If you see a message that you don't have permission to access the page, you don't have Microsoft 365 administrator permissions in your organization.
 2. In the left pane, select **Admin centers** > **SharePoint**.
 3. In the SharePoint admin center, select **access control** in the left pane.
 

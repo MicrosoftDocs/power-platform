@@ -69,7 +69,7 @@ The following links point to detailed information to help you respond to DSR req
 |Microsoft Accounts (MSAs)     | https://docs.microsoft.com/flow/gdpr-dsr-summary-msa        |
 |Model-driven apps in Dynamics 365     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
 
-## Office 365 Security and Compliance Center
+## Microsoft 365 Security and Compliance Center
 
 You may also find Microsoft Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More details about Compliance Manager can be found here https://aka.ms/compliancemanager .
 

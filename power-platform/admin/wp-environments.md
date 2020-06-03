@@ -27,7 +27,7 @@ Common Data Service databases are created in the context of environments. Each e
 
 Environments use security roles to determine what a user is able to do in the scope of that environment. The default roles that are available differ depending on if a Common Data Service database has been created in the environment.
 
-Environments without a Common Data Service database have two built-in security roles: Environment Administrator and Environment Maker. Environment Makers can create and share apps, connectors, gateways etc. in the environment. Users in the Environment Maker, or Office 365 tenant Global Administrator role can all manage the environment which includes adding/removing users, creating the Common Data Service environment, viewing and managing all resources created and setting Data Loss Prevention policies.
+Environments without a Common Data Service database have two built-in security roles: Environment Administrator and Environment Maker. Environment Makers can create and share apps, connectors, gateways etc. in the environment. Users in the Environment Maker, or Microsoft 365 tenant Global Administrator role can all manage the environment which includes adding/removing users, creating the Common Data Service environment, viewing and managing all resources created and setting Data Loss Prevention policies.
 
 Once a Common Data Service database has been created in an environment all users of the Environment Admin role will now be members of the System Administrator role instead. The Common Data Service security roles will now take over for controlling security in the environment. Users or groups previously assigned Environment Maker role will need to be re-assigned manually one of the Common Data Service security roles. The following are the initial Common Data Service security roles that exist prior to you creating any custom roles.
 
@@ -78,7 +78,7 @@ There are multiple types of environments. The type of environment indicates the 
 </tr>
 </table>
 
-<sup>1</sup>Users licensed for Power Apps, Power Automate, Office 365 and Dynamics 365 Online, stand-alone licenses, free and trial licenses.
+<sup>1</sup>Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365 Online, stand-alone licenses, free and trial licenses.
 
 ## Default environment
 
@@ -86,10 +86,10 @@ Each tenant will have a default environment created automatically in the region 
 
 1. This environment can’t be disabled or deleted. 
 2. All tenant users are added automatically to the maker role for the default environment and you can’t remove them from that role. 
-3. Only Office 365 tenant global administrators, Dynamics 365 service administrators, and Power Platform service administrators are added to Environment Administrator role.
+3. Only Microsoft 365 tenant global administrators, Dynamics 365 service administrators, and Power Platform service administrators are added to Environment Administrator role.
 4. As the default environment is the preferred place for individual users to start off building personal productivity apps and workflows, you should consider renaming the default environment to “Personal Productivity (default)” or another suitable name for your organization.
 
-The default environment should not be used to host production solutions. It’s designed to be an open environment that allows users to extend Office 365 and trusted applications or to build personal productivity applications that don’t affect many people. You can restrict to this usage by adding a DLP policy that only allows data flow between trusted first party connectors.
+The default environment should not be used to host production solutions. It’s designed to be an open environment that allows users to extend Microsoft 365 and trusted applications or to build personal productivity applications that don’t affect many people. You can restrict to this usage by adding a DLP policy that only allows data flow between trusted first party connectors.
 
 ## Environment regions
 
