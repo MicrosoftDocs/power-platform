@@ -17,7 +17,7 @@ search.app:
 ---
 # Management and monitoring
 
-In this section we will focus on the tools you can use to manage and monitor what is going on in your environments. It is important to understand that each company has its own operational model and requirements around a citizen app development platform. Fulfilling those requirements using the platform capabilities in terms of custom apps or flows can be seen as a best practice.
+This topic focuses on the tools you can use to manage and monitor what is going on in your environments. It is important to understand that each company has its own operational model and requirements around a citizen app development platform. Fulfilling those requirements using the platform capabilities in terms of custom apps or flows can be seen as a best practice.
 
 Out-of-the-box tooling around monitoring, alert, and actions falls into the following three categories:
 

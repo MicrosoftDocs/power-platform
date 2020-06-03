@@ -20,4 +20,4 @@ search.app:
 Microsoft Power Automate administrators can use the Power Automate admin portal ([admin.flow.microsoft.com](https://admin.flow.microsoft.com)) to manage an organization’s data policies and environments. Power Automate admin content is available at [Microsoft Power Automate documentation](https://docs.microsoft.com/flow/admin-center-introduction).
 
 ### See also
-[Reference: Use the various admin centers](admin-centers.md)
+[Working with the admin portals](wp-work-with-admin-portals.md)

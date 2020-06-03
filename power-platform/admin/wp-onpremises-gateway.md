@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 05/26/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,6 +29,8 @@ The on-premises gateway allows Power Apps and Power Automate to reach back to on
 The gateway service must run on a local server in your on-premises location. The server does not have to be the same one as the resources it will proxy access to, however it should be on the same local network to reduce latency. It does however need to be able to access the target resource with as low of latency as possible. Multiple application and flow connections can use the same gateway install. You can only install one gateway on a server.
 
 During the install the gateway is setup to use NT Service\PBIEgwService for the Windows service logon. You can switch this to a domain user or managed service account if you’d like.
+
+You can use the same gateway in multiple environments as long as the gateway region and the environment region match. See [FAQ for regions in Power Automate](https://docs.microsoft.com/power-automate/regions-overview) 
 
 ## Gateway Administration Access
 

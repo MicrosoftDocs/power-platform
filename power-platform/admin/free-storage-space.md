@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 06/02/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -408,5 +408,9 @@ Use the following methods to free up storage for each of the capacity types.
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
+## Free up storage used by flow approvals
+
+See [Delete approval history from Power Automate](https://docs.microsoft.com/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
+
 ### See also
 [Common Data Service storage capacity](capacity-storage.md)
