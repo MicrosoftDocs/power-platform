@@ -58,10 +58,11 @@ changes." The build tasks can largely be categorized into four types:
 
 - Environment management
 
-## Get the Microsoft Power Platform Build Tools
+## Get Microsoft Power Platform Build Tools
 
-The Microsoft Power Platform Build Tools can be installed into your Azure DevOps organization
+Microsoft Power Platform Build Tools can be installed into your Azure DevOps organization
 from [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools).
+
 After installation, all tasks included in the Microsoft Power Platform Build Tools will be
 available to add into any new or existing pipeline. You can find them by
 searching for "Power Platform".
