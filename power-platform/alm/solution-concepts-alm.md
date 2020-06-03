@@ -144,18 +144,6 @@ The system tracks these dependencies between solutions. If you try to install a 
 A solution component represents something that you can potentially customize. Anything that can be included in a solution is a solution component and some components are dependant on other components. For example, the website field and account summary report are both dependant on the account entity.
 
 
-## Solution components
-A component represents something that you can potentially customize. Anything that can be included in a solution is a component. To view the components included in a solution, in Power Apps select **Solutions**  and then open the solution you want. The components are listed in the **Components** list. Notice that you can't edit components contained in a managed solution. 
-
-> [!div class="mx-imgBorder"] 
-> ![Components in a solution](media/components-in-solution.png)
-
-To view a list of component types that can be added to any solution, see [ComponentType Options](/powerapps/developer/common-data-service/reference/entities/solutioncomponent#componenttype-options).
-
-Some components are nested within other components. For example, an entity contains forms, views, charts, fields, entity relationships, messages, and business rules. Each of those components requires an entity to exist. A field can’t exist outside of an entity. We say that the field is dependent on the entity. 
-
-The purpose of having components is to keep track of any limitations on what can be customized using managed properties and all the dependencies so that it can be exported, imported, and (in managed solutions) deleted without leaving anything behind. More information: [Managed properties](managed-properties-alm.md)
-
 ### See also
 [Solution layers](solution-layers-alm.md) <br />
 [Create and manage environments in the Power Platform admin center](https://docs.microsoft.com/power-platform/admin/create-environment) <br />
