@@ -1,1 +1,1 @@
-Office 365
+Microsoft 365
