@@ -42,7 +42,7 @@ Europe | West Europe (Netherlands), North Europe (Ireland)
 Australia | Australia East (New South Wales), Australia Southeast (Victoria)
 United Kingdom | UK South (London), UK West (Cardiff, Durham)
 India | Central India (Pune), South India (Chennai)
-Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong)
+Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong SAR)
 Japan | Japan East (Tokyo, Saitama), Japan West (Osaka)
 Canada | Canada Central (Toronto), Canada East (Quebec City)
 
