@@ -26,14 +26,16 @@ This can be useful if you use different environments for different purposes, or 
 
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- If you are not an admin, you will need to be a [System Customizer](/power-platform/admin/database-security) to use this feature.
 
->[!IMPORTANT]
->These features are in preview, which means that they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
+- A maker will require minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](https://docs.microsoft.com/power-platform/admin/database-security).
+
+
+> [!IMPORTANT]
+> These features are in preview, which means that they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
 >  
->Previews may employ reduced or different privacy, security, or compliance commitments than commercial versions. As such, previews are not meant to be used with any "live" or production Customer Data, Personal Data, or other data that is subject to heightened compliance requirements. Any use of "live" data is at your sole risk and it is your sole responsibility to notify your end users that they should not include sensitive information with their use of the Preview.  
+> Previews may employ reduced or different privacy, security, or compliance commitments than commercial versions. As such, previews are not meant to be used with any "live" or production Customer Data, Personal Data, or other data that is subject to heightened compliance requirements. Any use of "live" data is at your sole risk and it is your sole responsibility to notify your end users that they should not include sensitive information with their use of the Preview.  
 >  
->These previews, and any support Microsoft may elect to provide, are provided "as-is," "with all faults," "as available," and without warranty.
+> These previews, and any support Microsoft may elect to provide, are provided "as-is," "with all faults," "as available," and without warranty.
 
 ## Upgrade existing bots (preview)
 You will need to upgrade existing bots (built before June 2020) before you can export them. Newly created bots don’t require an upgrade, and won't show an option to upgrade them. 
