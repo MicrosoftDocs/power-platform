@@ -24,7 +24,7 @@ to apps built on the Power Platform. These tasks include:
 Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
 to apps built on the Power Platform. These tasks include: 
 <ul><li>Synchronization of solution metadata (also known as
-solutions) that contains the various platform components such as Dynamics 365 Customer Engagement apps, canvas apps, UI flows, virtual agents, AI Builder models and connectors between development environments and source control, </li></ul>
+solutions) that contains the various platform components such as customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation), canvas apps, model-driven apps, UI flows, virtual agents, AI Builder models, and connectors between development environments and source control</li></ul>
 <ul><li>Generating build artifacts</li></ul>
 <ul><li>Deploying to downstream environments</li></ul>
 

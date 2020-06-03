@@ -48,7 +48,7 @@ It is recommended that you whitelist the IP addresses for the data region in you
 
 ## Gateway Access
 
-Most of the Power Apps and Power Automate licenses have access to use the gateway with the exception of some of the lower end Office 365 licenses (Business and Office Enterprise E1 SKUs).
+Most of the Power Apps and Power Automate licenses have access to use the gateway with the exception of some of the lower end Microsoft 365 licenses (Business and Office Enterprise E1 SKUs).
 
 ## Updates to the Data Gateway
 
