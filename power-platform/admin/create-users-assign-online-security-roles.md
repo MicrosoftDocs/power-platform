@@ -47,7 +47,7 @@ The following table shows the fields that are managed in the **Users** section o
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Model-driven apps in Dynamics 365 user form </th><th>Office 365/Azure AD user</th></tr>
+<th><p>Model-driven apps in Dynamics 365 user form </th><th>Microsoft 365/Azure AD user</th></tr>
 </thead>
 <tbody>
 <tr><td>User Name</td><td>Username</td></tr>
@@ -66,7 +66,7 @@ The following table shows the fields that are managed in the **Users** section o
 </table>
 
 
-The following image shows Office 365 user contact fields.
+The following image shows Microsoft 365 user contact fields.
 
 ![Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region](media/office-365-contact-info.png "Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region")
 
@@ -208,7 +208,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 ## Create an Administrative user account
 An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the functionality. Use this account to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, and so on). Because an administrative user doesn't have access to customer data nor any functionality, the user doesn't require a license (after setup).
 
-You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you'll create a user account in Office 365, and then in model-driven apps in Dynamics 365, select the **Administrative** access mode for the account.
+You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you'll create a user account in Microsoft 365, and then in model-driven apps in Dynamics 365, select the **Administrative** access mode for the account.
 
 > [!NOTE]
 > See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md) for an example of how an Administrative user account can be used.
@@ -247,7 +247,7 @@ You need to have the System Administrator security role or equivalent permission
 ## Create a non-interactive user account  
  The non-interactive user isn't a "user" in the typical sense&mdash;it doesn't represent a person, it's an access mode that's created by means of a user account. It's used for programmatic access to and from model-driven apps in Dynamics 365 between applications. A non-interactive user account lets these applications or tools&mdash;such as a connector from model-driven apps in Dynamics 365 to ERP&mdash;authenticate and access model-driven apps in Dynamics 365 without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
   
- You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you'll create a user account in Office 365. Then, in model-driven apps in Dynamics 365, select the non-interactive access mode for the account.  
+ You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you'll create a user account in Microsoft 365. Then, in model-driven apps in Dynamics 365, select the non-interactive access mode for the account.  
   
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
@@ -290,7 +290,7 @@ You can customize the default **Application User** form to allow updates to the 
 > Disabling an application user will break all the integration scenarios that use the application user.
 
 ## How stub users are created
-A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in model-driven apps in Dynamics 365. This user can't sign in, can't be enabled, and can't be synchronized to Office 365. This type of user can only be created through data import. 
+A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in model-driven apps in Dynamics 365. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import. 
 
 A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Common Data Service User** security role is assigned in a Power Apps environment.
 
