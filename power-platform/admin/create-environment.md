@@ -40,7 +40,7 @@ Your license determines whether you can create environments.
 
 | License | Trial | Production |
 | --- | --- | --- |
-| Office 365 Plans |No | No |
+| Microsoft 365 Plans |No | No |
 | Dynamics 365 Teams Plans   |No | No |
 | Power Apps Community Plan   |No | No |
 | Dynamics 365 trial | Yes (one) | No|
@@ -199,8 +199,8 @@ Power Platform admin center provisioning is only available for customers who hav
 ### What are the new trial limits for Power Apps customers?
 The new trial limits are one per user. 
 
-### Can an Office 365 licensed user manage and create environments?
-No, Office 365 licensed users will not be able to manage environments. 
+### Can an Microsoft 365 licensed user manage and create environments?
+No, Microsoft 365 licensed users will not be able to manage environments. 
 
 ### If I create an environment in the Dynamics 365 Admin center, will it appear in the Power Platform admin center?
 Yes, it will appear in both admin centers.
