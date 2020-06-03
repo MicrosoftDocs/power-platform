@@ -59,9 +59,9 @@ Entities have more managed properties than any other type of solution component.
 |**New forms can be created**|Whether new forms can be created for the entity.|
 |**New charts can be created**|Whether new charts can be created for the entity.|
 |**New views can be created** |Whether new views can be created for the entity.|
-|**Can Change Hierarchical Relationship**|Whether Hierarchical Relationships settings can be changed. More information: [Define and query hierarchically related data](define-query-hierarchical-data.md)|
+|**Can Change Hierarchical Relationship**|Whether Hierarchical Relationships settings can be changed. More information: [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data)|
 |**Can Change Tracking Be Enabled** |Whether the entity **Change Tracking** property can be changed.|
-|**Can Enable sync to external search index** |Whether the entity can be configured to enable relevance search. More information: [Configure Relevance Search to improve search results and performance](/dynamics365/customer-engagement/admin/configure-relevance-search-organization) |
+|**Can Enable sync to external search index** |Whether the entity can be configured to enable relevance search. More information: [Configure Relevance Search to improve search results and performance](/power-platform/admin/configure-relevance-search-organization) |
 
 ## View and edit field managed properties
 Next to a custom field in a solution select **…** and then select **Managed properties**.
@@ -88,15 +88,15 @@ Disabling all the individual options is equivalent to disabling **Allow customiz
 Apply your choices and select **Done** to close the pane.
 
 > [!NOTE]
-> If this field is a **Date and Time** field, an additional **Can change date and time behavior** property is available. More information: [Behavior and format of the Date and Time field](behavior-format-date-time-field.md) 
+> If this field is a **Date and Time** field, an additional **Can change date and time behavior** property is available. More information: [Behavior and format of the Date and Time field](/powerapps/maker/portals/configure/behavior-format-date-time-field) 
 
-See [Create and edit fields for Common Data Service using Power Apps solution explorer](create-edit-field-solution-explorer.md) for information about how to edit fields.
+See [Update of delete a field](/powerapps/maker/common-data-service/data-platform-manage-fields#update-or-delete-a-field) for information about how to edit fields.
 
 ## View and edit other component managed properties
 You can view and edit managed properties for many other solution components, such as a web resource, process, chart, or dashboard. Next to the component in a solution select **…** and then select **Managed properties**. 
 
 ## View and edit relationship managed properties
-While viewing entity relationships in [solution explorer](../model-driven-apps/advanced-navigation.md#solution-explorer), select a relationship from an unmanaged solution and then choose **More Actions** > **Managed Properties** on the menu bar.
+While viewing entity relationships in [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer), select a relationship from an unmanaged solution and then choose **More Actions** > **Managed Properties** on the menu bar.
   
 With relationships, the only managed property is **Can Be Customized**. This single setting controls all changes that can be made to the entity relationship. 
 
