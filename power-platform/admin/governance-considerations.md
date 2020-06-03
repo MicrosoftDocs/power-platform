@@ -68,7 +68,7 @@ The following principals are supported for each role type.
 |     | Resource permission: Power Automate, Custom Connector, Gateways, Connections<sup>1</sup>          |User, group         |
 |     |Common Data Service role (applies to all model-driven apps and components)         |User         |
 
-<sup>1</sup>Only certain connection (like SQL) can be shared.
+<sup>1</sup>Only certain connections (like SQL) can be shared.
 
 > [!NOTE]
 > - In the Default environment, all users in a tenant are granted access to the Environment Maker role. 
