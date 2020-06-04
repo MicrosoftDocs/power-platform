@@ -23,19 +23,22 @@ search.app:
 ---
 # Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
 
-*This content also applies to the on-premises version.*
+[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on a Common Data Service environment. 
 
-[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages on a Dynamics 365 for Customer Engagement apps (on-premises) or [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] instance. A “package” can consist of any or all of the following:  
+> [!NOTE]
+> Package deployer also works with Dynamics 365 Customer Engagement (on-premises) organizations.
+
+A “package” can consist of any or all of the following:  
   
-- One or more [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps solution files.  
+- One or more Common Data Service solution files.  
   
 - Flat files or exported data files from the Configuration Migration tool. For information about the Configuration Migration tool, see [Manage your configuration data](manage-configuration-data.md).  
   
-- Custom code that can run during or after the package is deployed to [!INCLUDE[pn_dynamics_crm](../includes/pn-dynamics-crm.md)].  
+- Custom code that can run during or after the package is deployed to Common Data Service environment.  
   
 - HTML content specific to the package that can display at the beginning and end of the package deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
   
-  Developers create packages by using the package deployment template in [!INCLUDE[pn_Visual_Studio](../includes/pn-visual-studio.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create packages for the Dynamics 365 for Customer Engagement apps Package Deployer](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
+  Developers create packages by using the package deployment template in [!INCLUDE[pn_Visual_Studio](../includes/pn-visual-studio.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create packages for Package Deployer](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
   
   After a package is created, you can deploy it either by running [!INCLUDE[pn_package_deployer_short](../includes/pn-package-deployer-short.md)] or by using [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] cmdlets for the tool.  
   
