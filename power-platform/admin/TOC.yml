@@ -594,6 +594,8 @@
           href: modify-configuration-data-schema.md
         - name: Import configuration data
           href: import-configuration-data.md 
+      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
+        href: deploy-packages-using-package-deployer-windows-powershell.md 
     - name: Work with templates
       items: 
       - name: Article templates
@@ -684,8 +686,6 @@
         href: enable-embedded-flow-in-your-organization.md 
       - name: "Preview feature: Live Assist powered by Café X"
         href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
-#      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
-#        href: deploy-packages-using-package-deployer-windows-powershell.md 
       - name: Use Power BI
         href: use-power-bi.md 
       - name: Embed an app in Teams
