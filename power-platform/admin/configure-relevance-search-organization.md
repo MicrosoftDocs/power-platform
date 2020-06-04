@@ -1,13 +1,13 @@
 ---
 title: "Configure Relevance Search to improve search results and performance   | MicrosoftDocs"
 description: Configure Relevance Search to improve search results and performance 
-author: udag
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/04/2020
-ms.author: udag
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -77,12 +77,7 @@ You'll see hit highlights when your search term matches a term in your applicati
 <a name="BKMK_EnableSearch"></a>   
 ## Enable Relevance Search  
 
-<!--
-> [!IMPORTANT]
-> Data in your application  begins syncing to the external search index immediately after you enable Relevance Search.  We strongly recommend that you configure the entities and entity fields participating in Relevance Search before you enable the search, to prevent sensitive data from being indexed in a service external to model-driven apps in Dynamics 365.  For more information about configuring Relevance Search, see            [Select entities for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SelectEntities),            [Configure searchable fields for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_ConfigureFields), and            [Set managed property for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SetPropertiy).  
--->
-
- Relevance Search is an opt-in feature, set to off by default. Depending on the size of your organization, it may take up to an hour or more for the data to become available in the external search index after you enable the search. Enabling Relevance Search makes this search option available to all members of your organization.
+Relevance Search is an opt-in feature, set to off by default. Depending on the size of your organization, it may take up to an hour or more for the data to become available in the external search index after you enable the search. Enabling Relevance Search makes this search option available to all members of your organization.
   
  By default, Relevance Search is disabled. To enable Relevance Search, do the following:  
 
