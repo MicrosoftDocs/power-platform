@@ -1,13 +1,13 @@
 ---
 title: "Configure Relevance Search to improve search results and performance   | MicrosoftDocs"
 description: Configure Relevance Search to improve search results and performance 
-author: udag
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/04/2020
-ms.author: udag
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
