@@ -594,8 +594,8 @@
           href: modify-configuration-data-schema.md
         - name: Import configuration data
           href: import-configuration-data.md 
-       - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
-         href: deploy-packages-using-package-deployer-windows-powershell.md 
+      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
+        href: deploy-packages-using-package-deployer-windows-powershell.md 
     - name: Work with templates
       items: 
       - name: Article templates
