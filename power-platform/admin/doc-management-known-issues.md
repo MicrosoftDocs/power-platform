@@ -67,7 +67,7 @@ Points to consider:
 
 -  Document management works only for entities that are selected while running the Document Management Settings wizard.
 
--  The SharePoint site for which the Document Management Settings wizard is run the latest will become the default site.
+-  The SharePoint site for which the Document Management Settings wizard is last run becomes the default site. You can reset the default site if required by running the Document Management Settings wizard again for that particular site.
 
 For more information, see [Create or edit document location records](https://docs.microsoft.com/power-platform/admin/create-edit-document-location-records).
 
