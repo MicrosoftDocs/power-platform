@@ -243,7 +243,7 @@ how you might apply these tools to your build and release pipelines. A
 conceptual overview is shown below. Let's view some details of the pipeline implementation using the build tool tasks in the sub-sections that follow.
 
 To learn more about creating these pipelines and actually do hands-on pipeline
-authoring using the Microsoft Power Platform Build Tools, complete the build tools [labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools),
+authoring using the Microsoft Power Platform Build Tools, complete the [build tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools),
 which you can download from GitHub.
 
 More information about Azure DevOps pipelines: [Use Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops)
