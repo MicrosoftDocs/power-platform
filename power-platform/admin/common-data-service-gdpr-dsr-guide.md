@@ -92,13 +92,13 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
-3.    Click or tap **Dynamics 365 Administration Center**.
+3. Click or tap **Dynamics 365 Administration Center**.
 
-    ![Power Apps Environment Details](./media/common-data-service-gdpr-dsr-guide/powerapps-environment-details.png)
+   ![Power Apps Environment Details](./media/common-data-service-gdpr-dsr-guide/powerapps-environment-details.png)
 
-    A list of all the environments displays.
+   A list of all the environments displays.
 
-    ![Power Apps environment Picker](./media/common-data-service-gdpr-dsr-guide/powerapps-instance-picker.png)
+   ![Power Apps environment Picker](./media/common-data-service-gdpr-dsr-guide/powerapps-instance-picker.png)
 
 You can find personal data from Common Data Service users within the following resources:
 
