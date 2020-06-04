@@ -31,7 +31,7 @@ You may decide that your customization work developed and tested on a sandbox en
 3. Select **Convert to production** or **Convert to sandbox**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Convert to production](media/convert.production.png "Convert to production")
+   > ![Convert to production](media/convert-production.png "Convert to production")
 
 4. Select **Continue**. 
 
