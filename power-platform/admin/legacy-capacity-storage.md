@@ -21,7 +21,7 @@ In April 2019, we introduced Common Data Service capacity storage that is optimi
 
 We're rolling out this feature now so check back if your user experience varies from the following content.
 
-## Licenses for the legacy storage model
+## Licenses for the legacy storage model 
 
 The following licenses provide capacity using the legacy storage model. If you have any of the following licenses and none of the new model licenses, you'll see the legacy model report: 
 
