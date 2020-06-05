@@ -32,7 +32,7 @@ development and deployment sequence.
 
 3.  [Register](#bkmk_register) the plug-ins or custom workflow activities in the unmanaged solution you created in step 1.
 
-4.  [Export](devops-build-tools.md#export-solution) the unmanaged solution as a managed solution.
+4.  [Export](devops-build-tool-tasks.md#export-solution) the unmanaged solution as a managed solution.
 
 5.  Import the managed solution into another environment (that is, TEST or PROD).
 

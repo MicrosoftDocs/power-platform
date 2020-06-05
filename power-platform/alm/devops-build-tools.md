@@ -6,7 +6,7 @@ author: phecke
 ms.author: pehecke
 manager: kvivek
 ms.custom: ""
-ms.date: 06/01/2020
+ms.date: 06/04/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -58,6 +58,8 @@ changes." The build tasks can largely be categorized into four types:
 
 - Environment management
 
+For more information about the available tasks see [Build tool tasks](devops-build-tool-tasks.md). 
+
 ## Get Microsoft Power Platform Build Tools
 
 Microsoft Power Platform Build Tools can be installed into your Azure DevOps organization
@@ -75,202 +77,6 @@ To interact with the Power Platform environment, a connection must be establishe
 
 - Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
 - Service principal and client secret: (recommended) This connection type uses service principal based authentication and supports multi-factor authentication.
-
-## Build tool tasks
-
-The available build tasks are described in the following sections.
-
-### Helper task
-
-The Power Platform tools installer is required to be the first task in any build and
-release pipeline. This task installs a set of Power Platform&ndash;specific tools required
-by the agent to run the Power Platform build tasks. This task doesn't require any
-additional configuration.
-
-### Quality check
-
-The Power Apps checker task runs a static analysis check on your solutions
-against a set of best-practice rules to identify any problematic patterns that
-you might have inadvertently introduced when building your solution.
-
-| Parameters         | Description      |
-|--------------------|------------------|
-| Service Connection                         | (Required) A connection to a licensed Power Platform environment is required to use the Power Apps checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .<p/>Note: Service Principal is the only authentication method available for the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments]( #configure-service-connections-using-a-service-principal). |
-| User default PowerApps Checker endpoint       | By default, the gelocation of the checker service will use the same geo as the environment you connect to. By unchecking the default, you have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the PowerApps Checker API](https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
-| Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
-| Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
-| Rule set                          | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps [maker portal](https://make.powerapps.com).</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to [AppSource](https://appsource.microsoft.com/).</li></ul>    |
-
-### Solution tasks
-
-This set of tasks perform actions against solutions, and includes the following tasks.
-
-#### Import solution
-Imports a solution into a target environment.
-
-| Parameters           | Description        |
-|----------------------|--------------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
- | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).  |
- | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
-
-#### Export solution
-
-Exports a solution from a source environment.
-
-| Parameters      | Description     |
-|-----------------|---------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
-| Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |
-| Solution output file       | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).   |
-
-#### Unpack solution
-
-Takes a compressed solution file and decomposes it into multiple XML files so that these files can be more easily read and managed by a source control system.
-
-| Parameters    | Description       |
-|---------------|-------------------|
-| Solution input file              | (Required) The path and file name of the solution.zip file to unpack.     |
-| Target folder to unpack solution | (Required) The path and target folder you want to unpack the solution into.      |
-| Type of solution                 | (Required) The type of solution you want to unpack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
-
-#### Pack solution
-
-Packs a solution represented in source control into a solution.zip file that can be imported into another environment.
-
-| Parameters       | Description     |
-|------------------|-----------------|
-| Solution output file              | (Required) The path and file name of the solution.zip file to pack the solution into.     |
-| Source folder of solution to pack | (Required) The path and source folder of the solution to pack.      |
-| Type of solution                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
-
-#### Publish customizations
-
-Publishes all customizations in an environment.
-
-| Parameters     | Description    |
-|----------------|----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the environment in which you want to publish customizations. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
-
-#### Set solution version
-
-Updates the version of a solution.
-
-| Parameters    | Description   |
-|---------------|---------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the target environment that holds the solution you want to update.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
-| Solution name              | (Required) The name of the solution you want to set the version number for.     |
-| Solution Version Number              | (Required) Version number you want to set.     |
-
-
-#### Deploy package
-
-Deploys a package to an environment. Deploying a [package](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer) as opposed to a single solution file provides an option to deploy multiple solutions, data, and code into an environment.
-
-| Parameters      | Description    |
-|-----------------|----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the target environment into which you want to deploy the package.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
-| Package file | (Required) The path and file name of the path and file name of the package file assembly (.dll). |
-
-### Environment management tasks
-
-Automate common environment management tasks.
-
-> [!NOTE]
-> Environment actions will be made available in subsequent releases.
-
-<!-- #### Create environment
-
-Creates a new environment.
-
-> [!NOTE]
-> A new environment can only be provisioned if your license or capacity
-> allows for the creation of additional environments.
-
-| Parameters        | Description     |
-|-------------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to create the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
-| Display name | (Required) The display name of the environment created. |
-| Deployment Region | (Required) The region that the environment should be deployed into.         |
-| Environment Type     | (Required) The type of instance to deploy. Options are **Sandbox** or **Production**.      |
-| Region | (Required) The region that the environment should be created in.  |
-| Currency | (Required) Base currency for the environment created. Note that the currency cannot be updated after the environment is created. |
-| Language     | (Required) The base language in the environment.      |
-| Domain Name       | (Required) This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be 'powerappsbuildtasks'. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
-
-#### Delete environment
-
-Deletes an environment.
-
-| Parameters       | Description         |
-|------------------|---------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to delete the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
-
-#### Backup environment
-
-Backs up an environment.
-
-| Parameters   | Description   |
-|--------------|---------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to backup the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
-| Backup label               | (Required) The label to be assign to the backup.                                                                         |
-
-#### Copy environment
-
-Copies an environment to a target environment. Two
-types of copies are available: full and minimal. A *Full* copy includes both data and
-solution metadata (customizations), whereas a *minimal* copy only includes solution
-metadata and not the actual data.
-
-| Parameters     | Description     |
-|----------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection for the source environment that you want to copy from. Defined under **Service Connections** in **Project Settings**. |
-| Service connection | (Required) The service connection for the target environment that you want to copy to. Defined under **Service Connections** in **Project Settings**. | -->
-
-## Build and release pipelines
-
-Now that we've identified what can be done using the build tools, let's see
-how you might apply these tools to your build and release pipelines. A
-conceptual overview is shown below. Let's view some details of the pipeline implementation using the build tool tasks in the sub-sections that follow.
-
-To learn more about creating these pipelines and actually do hands-on pipeline
-authoring using the Microsoft Power Platform Build Tools, complete the [build tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools),
-which you can download from GitHub.
-
-More information about Azure DevOps pipelines: [Use Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops)
-
-<a name="build-pipeline-export-solution-from-development"></a>
-
-### Build pipeline: Export a solution from a development environment (DEV)
-
-The following figure shows the build tool tasks that you might add to a pipeline that exports a solution from a development environment.
-
-![Export a solution from a development environment (DEV)](media/export-pipeline.png "Export a solution from a development environment (DEV)")
-
-<a name="build-pipeline-build-managed-solution"></a>
-
-### Build pipeline: Build a managed solution
-
-The following figure shows the build tool tasks that you might add to a pipeline that builds a managed solution.
-
-![Build a managed solution](media/build-pipeline.png "Build a managed solution")
-
-<a name="release-pipeline-deploy-to-production"></a>
-
-### Release pipeline: Deploy to a production environment (PROD)
-
-The following figure shows the build tool tasks that you might add to a pipeline that deploys to a production environment.
-
-![Deploy to a production environment (PROD)](media/deploy-pipeline.png "Deploy to a production environment (PROD)")
 
 ## Configure service connections using a service principal
 
@@ -344,3 +150,6 @@ Ensure that the added Application User has the system administrator role assigne
 
 *The output of the Checker task is a [Sarif file](https://sarifweb.azurewebsites.net/) and both VS Code and Visual Studio extensions are available for viewing and taking action on Sarif files.*
 
+### See Also
+
+[Build tool tasks](devops-build-tool-tasks.md)
