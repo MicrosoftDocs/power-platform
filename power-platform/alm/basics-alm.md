@@ -166,7 +166,7 @@ There are two main paths you can use when working with solutions in a source con
 
 ![Source control by using a solution](media/build-pipeline-alm.png "Source control by using a solution")
 
-More information: [Build tool tasks](devops-build-tools.md#build-and-release-pipelines)
+More information: [Build tool tasks](devops-build-tool-tasks.md#build-and-release-pipelines)
 
 ## Automation 
 
