@@ -47,7 +47,7 @@ Once your new bot has been created, you'll notice that it already has content in
 You can now move on to creating new topics for your bot, authoring bot trigger phrases, and creating bot messages in your target language.
 
 
-When you've created your own topic in the target language, you can test the bot in the chat canvas and see how it understands user input and responds in the target language.
+When you've created your own topic in the target language, you can test the bot in the chat canvas and see how it understands user input and responds in that language.
 
 ![Test in target language](media/language-testing.png "Test in target language")
 
