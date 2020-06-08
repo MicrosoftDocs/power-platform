@@ -2,7 +2,7 @@
 title: "Customize the Power Virtual Agents web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: ""
-ms.date: 4/21/2020
+ms.date: 6/8/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -168,7 +168,7 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
 **To change the bot icon**
 
-1. Update the *index.html* file with the following sample code
+1. Update the *index.html* file with the following sample code. 
 
     ```js
 
@@ -202,17 +202,18 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
 **To change the bot name**
 
-1. Update the `<h1>` text in the *index.html* file with the following.
+1. Update the `<h1>` text in the *index.html* file with the following. 
 
     ```HTML
     <body>
-        <div id="chatwindow">
-            <div id="heading">
-                             <!-- Change the h1 text to change the bot name -->
-                <h1><img src="images/robot-create-illustration.svg"> Contoso Bot Name</h1>
-            </div>
+        <div id="heading">
+             <!-- Change the h1 text to change the bot name -->
+             <h1><img src="contosobot.png"> Contoso Bot Name</h1>
+        </div>
 
     ```
+
+2. Change the text to whatever you want to call the bot. You can also insert an image, although you may need to style it to ensure it fits within the heading section.
 
 ## Customize and host your chat canvas (advanced)
 
