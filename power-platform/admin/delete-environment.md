@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/26/2020
+ms.date: 06/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,6 +19,8 @@ search.app:
 
 You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII). 
 
+> [!NOTE]
+> You can't delete the [default environment](environments-overview.md#the-default-environment).
 
 1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
 
