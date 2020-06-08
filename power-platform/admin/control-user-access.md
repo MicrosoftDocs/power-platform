@@ -2,13 +2,13 @@
 title: "Control user access to environments: security groups and licenses | Microsoft Docs"
 description: Learn how to control user access to environments using security groups and licenses
 services: powerapps
-author: jimholtz
-manager: kvivek
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/13/2020
-ms.author: jimholtz
+ms.date: 05/15/2020
 search.audienceType: 
   - admin
 search.app: 
@@ -42,6 +42,7 @@ In this example, four security groups provide controlled access to a specific en
 - If you do not assign a security group to an environment, the environment will show up in [home.dynamics.com](https://home.dynamics.com) even for those who have not been assigned a security role in that Common Data Service environment.  
 - If you do not specify a security group, all users who have a Common Data Service license, (model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, Power Automate, Power Apps, etc.) will be added to the new environment.
 - **New**: Security groups cannot be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
+- Common Data Service environments support associating the following group types: Security and Microsoft 365. Associating [other group types](https://docs.microsoft.com/microsoft-365/admin/create-groups/compare-groups?WT.mc_id=365AdminCSH&view=o365-worldwide) is not supported.
 
 <!-- 
 - When you remove a security group that is associated with a Common Data Service environment, either by editing the environment and removing the security group or by deleting the security group, Common Data Service licensed users who were members of the security group will have the same access to Dynamics 365 apps. 
@@ -104,7 +105,7 @@ The security group is associated with the environment.
 
 ## Remove a security group's association with a Common Data Service environment
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Office 365 Global admin, or Power Platform service admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Microsoft 365 Global admin, or Power Platform service admin).
 
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
 

@@ -14,7 +14,9 @@
      href: sign-up-individual.md
    - name: Working with environments
      href: environments-first-run-experience.md
-   - name: Data locations
+   - name: Export and import bots with solutions
+     href: authoring-export-import-bots.md
+   - name: Data locations for organizations
      href: data-location.md
    - name: Quotas and rate limit considerations
      href: requirements-quotas.md
@@ -44,6 +46,8 @@
      href: advanced-entities-slot-filling.md
    - name: Use variables
      href: authoring-variables.md
+   - name: Reuse variables across topics
+     href: authoring-variables-bot.md
    - name: Create topics from existing support content
      href: advanced-create-topics-from-web.md
    - name: Create topics from Customer Service Insights
@@ -93,6 +97,8 @@
      href: configuration-fundamentals.md
    - name: Configure end-user authentication
      href: configuration-end-user-authentication.md
+   - name: Configure single sign-on
+     href: configure-sso.md
    - name: Configure hand-off to a generic engagement hub
      href: configure-generic-handoff.md
    - name: Configure hand-off to Omnichannel for Customer Service

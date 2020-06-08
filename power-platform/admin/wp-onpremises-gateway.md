@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 05/26/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,6 +30,8 @@ The gateway service must run on a local server in your on-premises location. The
 
 During the install the gateway is setup to use NT Service\PBIEgwService for the Windows service logon. You can switch this to a domain user or managed service account if you’d like.
 
+You can use the same gateway in multiple environments as long as the gateway region and the environment region match. See [FAQ for regions in Power Automate](https://docs.microsoft.com/power-automate/regions-overview) 
+
 ## Gateway Administration Access
 
 By default, you have this permission on any gateway that you install. As the administrator you can grant another users permission to co-administrate the gateway. It is recommended you always have multiple administrators specified to handle employee events in your organization.
@@ -46,7 +48,7 @@ It is recommended that you whitelist the IP addresses for the data region in you
 
 ## Gateway Access
 
-Most of the Power Apps and Power Automate licenses have access to use the gateway with the exception of some of the lower end Office 365 licenses (Business and Office Enterprise E1 SKUs).
+Most of the Power Apps and Power Automate licenses have access to use the gateway with the exception of some of the lower end Microsoft 365 licenses (Business and Office Enterprise E1 SKUs).
 
 ## Updates to the Data Gateway
 

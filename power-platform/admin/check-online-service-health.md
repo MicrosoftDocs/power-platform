@@ -17,10 +17,10 @@ search.app:
 ---
 # How do I check my online service health?
 
-You can quickly get a real-time status of your Dynamics 365 and Office 365 services. The dashboard on the Microsoft 365 Admin Center provides a comprehensive view of the service health of your online services. If users are having trouble signing in to Dynamics 365 apps, check this page to see if there is a service outage.
+You can quickly get a real-time status of your Dynamics 365 and Microsoft 365 services. The dashboard on the Microsoft 365 Admin Center provides a comprehensive view of the service health of your online services. If users are having trouble signing in to Dynamics 365 apps, check this page to see if there is a service outage.
   
 ## View a snapshot of service health  
-Browse to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in using Global admin credentials. You can see a quick snapshot of service health for some of your Office 365 services.  Select **Service health** (from the menu: **Health** > **Service health**) to get more information on all your services.  
+Browse to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in using Global admin credentials. You can see a quick snapshot of service health for some of your Microsoft 365 services.  Select **Service health** (from the menu: **Health** > **Service health**) to get more information on all your services.  
   
 ![Microsoft 365 admin center service health dashboard](media/office-365-admin-center-service-health-dashboard.png "Microsoft 365 admin center service health dashboard")  
   

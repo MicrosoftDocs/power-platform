@@ -2,7 +2,7 @@
 title: "Language support"
 description: "Create new bots in multiple languages, including tutorial and system topics."
 keywords: ""
-ms.date: 5/26/2020
+ms.date: 6/8/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -21,7 +21,7 @@ ms.collection: virtual-agent
 
 You can create chatbots in Power Virtual Agents in a number of languages. This means your bots can reach a much broader audience and engage with more markets all around the world.
 
-The current Public Preview experience of language support lets you create a new bot in one of the languages listed in this article.
+The current Public Preview experience of language support lets you create a new bot in one of the languages listed in this article. During Public Preview, the bot's content will be localized, but the UI will remain in English.
 
 ## Specify a language for your bot
 

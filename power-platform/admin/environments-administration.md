@@ -46,7 +46,7 @@ To manage an environment in the Power Apps Admin center, you must have one of th
 
 * The Environment Admin or System Administrator role of the environment, OR
 
-* The Global Administrator role of your Azure AD or Office 365 tenant.
+* The Global Administrator role of your Azure AD or Microsoft 365 tenant.
 
 You also need either a Power Apps plan or Power Automate plan to access the admin center. For more information, see the [Power Apps pricing page][3].
 
@@ -61,7 +61,7 @@ When you open the admin center, the Environments tab appears by default and list
 
 ![](./media/environment-admin/environment-list-new.png)
 
-If you are a member of the Global Administrator role of your Azure AD or Office 365 tenant, all the environments that have been created by users in your tenant appear, because you're automatically an Environment Admin for all of them.
+If you are a member of the Global Administrator role of your Azure AD or Microsoft 365 tenant, all the environments that have been created by users in your tenant appear, because you're automatically an Environment Admin for all of them.
 
 ## Rename your environment
 1. Open the [Power Apps Admin center][1], find the environment to be renamed in the list, and click or tap it.

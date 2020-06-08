@@ -1,1 +1,1 @@
-Power BI for Office 365
+Power BI for Microsoft 365

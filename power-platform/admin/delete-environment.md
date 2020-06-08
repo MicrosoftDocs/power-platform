@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 06/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,18 +17,19 @@ search.app:
 ---
 # Delete environment
 
-You can delete a sandbox environment to recover storage space and to remove Personally Identifiable Information (PII) data. In order to delete a production environment, you must first change it to a sandbox environment and then delete the sandbox environment. Trial and support environments can be deleted directly without converting to sandbox.
+You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII). 
 
-## Delete an environment
+> [!NOTE]
+> You can't delete the [default environment](environments-overview.md#the-default-environment).
 
-1. Follow the steps in [Change the environment type](switch-environment.md).
+1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
 
-2. Once the environment has been changed to sandbox, select it and then select **Delete**.
+2. Select an environment and then select **Delete**.
 
    > [!div class="mx-imgBorder"]
    > ![Delete environment](media/delete-environment.png "Delete environment")
 
-3. Select **Continue** to confirm the deletion.
+3. Provide the confirmation data and then select **Confirm**.
 
 ### See also 
 [Back up and restore environments](backup-restore-environments.md) <br />

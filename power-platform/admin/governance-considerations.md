@@ -39,7 +39,7 @@ Access to Power Apps and Power Automate starts with having a license, the type o
 
 |Plan  |Description  |
 |---------|---------|
-|Office 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
+|Microsoft 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
 |Dynamics 365 Included     | This allows users to customize and extend model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, they already have.  |
 |Power Apps plan  | This allows: <ul><li>making enterprise connectors and Common Data Service accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
 |Power Apps Community | This allows a user to use Power Apps, Power Automate, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
@@ -68,7 +68,7 @@ The following principals are supported for each role type.
 |     | Resource permission: Power Automate, Custom Connector, Gateways, Connections<sup>1</sup>          |User, group         |
 |     |Common Data Service role (applies to all model-driven apps and components)         |User         |
 
-<sup>1</sup>Only certain connection (like SQL) can be shared.
+<sup>1</sup>Only certain connections (like SQL) can be shared.
 
 > [!NOTE]
 > - In the Default environment, all users in a tenant are granted access to the Environment Maker role. 
@@ -135,7 +135,7 @@ Environment and app management requires a Power Apps plan or a Power Automate pl
 
 ### Build Power Automate flows to alert on key audit events
 
-1.    An example of alerting that can be implemented is subscribing to Office 365 Security and Compliance Audit Logs. 
+1.    An example of alerting that can be implemented is subscribing to Microsoft 365 Security and Compliance Audit Logs. 
 2.    This can be achieved through either a [webhook](https://preview.flow.microsoft.com/blog/automate-flow-governance/) subscription or [polling](https://preview.flow.microsoft.com/blog/accessing-office-365-security-compliance-center-logs-from-microsoft-flow/) approach. However, by attaching Power Automate to these alerts, we can provide administrators with more than just email alerts.
 
 ### Build the policies you need with Power Apps, Power Automate, and PowerShell
@@ -179,7 +179,7 @@ It's well understood that monitoring as a critical aspect of managing software a
 
 ### Review the audit trail
 
-[Activity logging for Power Apps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Office 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
+[Activity logging for Power Apps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Microsoft 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
 ### Download the Power Apps and Power Automate license report
 

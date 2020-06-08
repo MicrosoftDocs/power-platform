@@ -1,6 +1,6 @@
 ---
 title: "Set up audit log components | MicrosoftDocs"
-description: "The *Audit Log Sync* flow connects to the Office 365 Audit Log to gather telemetry data (unique users, launches) for apps"
+description: "The Audit Log Sync flow connects to the Office 365 Audit Log to gather telemetry data (unique users, launches) for apps"
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -22,7 +22,13 @@ The *Audit Log Sync* flow connects to the Office 365 Audit Log to gather telemet
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
-There are two options for connecting to the audit log: one uses basic authentication (username and password), and one uses Azure App Registration to establish an identity for your app and allow access to the APIs.
+There are two options for connecting to the audit log: one uses basic authentication (username and password), and one uses Azure App Registration to establish an identity for your app and allow access to the APIs. If your admin account is protected by multifactor authentication, you will need to connect using Azure App Registration.
+
+## Before you use the Office 365 Audit Log connector
+
+1. Office 365 Audit Log search must be turned on for the Audit Log connector to work. More Information: [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide)
+1. You must have access to the Office 365 Audit Log. The Power Platform Service Admin role does not give you access to the Audit Log. More information: [Search the audit log in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#before-you-begin)
+1. Your tenant must have a subscription that supports unified audit logging. More information: [Security & Compliance Center availability for Business and Enterprise plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
 ## Option 1: Connect to the audit log by using basic authentication
 
@@ -34,7 +40,7 @@ Keep in mind that after a user account has access to the audit logs, that user h
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com), and set the current environment to the same environment where the CoE solution is installed.
 
-1. In the left navigation pane, expand **Data**, and then select **Custom Connectors**.
+1. In the left pane, expand **Data**, and then select **Custom Connectors**.
 
 1. Select **+ New custom connector – Import an Open API file**.
 
@@ -54,23 +60,25 @@ Keep in mind that after a user account has access to the audit logs, that user h
 
    ![Create new connection option](media/coe29.png "Create new connection option")
 
-1. Select the refresh icon in the upper-right corner corner of the **Connections** area to ensure that the new connection is selected.
+1. Select the refresh icon in the upper-right corner of the **Connections** area to ensure that the new connection is selected.
 
 1. Provide a **Start Date** and **End Date** for the **GetActivitiesByOperation**.
 
 1. Select **Test Operation**.
 
    You should receive a (200) response, which indicates the query has been successfully executed.
-   
    ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
 
-More information: [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition).
+>> [!IMPORTANT]
+> If you are using DLP, you will need to put this connector into the business group, see [Custom Connectors and DLP](https://docs.microsoft.com/power-platform/guidance/coe/limitations#Custom-Connectors-and-DLP)
+>
+> More information: [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition).
 
 ### Import the flow template compressed (.zip) package named SyncAuditLogs.zip
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com), and set the current environment to the same environment where the CoE solution is installed.
 
-1. In the left navigation pane, navigate to the **My Flows** tab.
+1. In the left pane, navigate to the **My Flows** tab.
 
 1. Select **Import**.
 
@@ -80,7 +88,6 @@ More information: [custom connector documentation](https://docs.microsoft.com/co
     1. For Admin \| Sync Audit Logs, select **Create as new**, and then select **Save**.
 
     1. For the Office 365 Audit Logs connector, Common Data Service Connection, and Office 365 Audit Log Connection, select **Select during import**, and then choose your connection.
-    
        ![Import options when importing a new flow](media/coe31.png "Import options when importing a new flow]")
 
     1. After the connections are configured, select **Import**.
@@ -182,6 +189,9 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Select **Update Connector**.
 
+> [!NOTE]
+> If you have a [DLP policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. More information: [Add custom connectors to your DLP policy](limitations.md#custom-connectors-and-dlp) and [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition)
+
 ### Update Azure AD app registration with the redirect URL
 
 1. Go back to the Azure portal and your app registrations.
@@ -199,7 +209,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 Go back to the custom connector to set up a connection to the custom connector and [start a subscription to the audit log content](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription), as described in the following steps.
 
 > [!IMPORTANT]
-> It's important to complete these steps for the flow to work.
+> It's important to complete these steps for subsequent steps to work. If you don't create a new connection and test the connector here, setting up the flow and child flow in later steps will fail.
 
 1. On the **Custom Connector** page, select **4. Test**.
 
@@ -209,18 +219,25 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the directory (tenant) ID under **Tenant**, and paste the application (client) ID under **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID**, copied earlier from the App Registration overview page in Azure Active Directory to the field Tenant, then paste the **application (client) ID** under PublisherIdentifier. 
 
- 1. Select **Test Operation**.
+1. Select **Test Operation**.
 
 You should see a (200) status returned, which means the query was successful.
 
 ![Successful status being returned from the StartSubscription activity](media/coe44.png "Successful status being returned from the StartSubscription activity")
 
 > [!IMPORTANT]
-> If you don't see a (200) response, the request has failed and there is an error with your setup. Therefore, the flow won't work.
+> If you don't see a (200) response, the request has failed and there is an error with your setup. Therefore, the flow won't work. Common issues to check are: 
+>
+> - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
+> -. Have you enabled the audit log very recently? If so, try again in a few minutes to give the audit log time to activate.
+> - Have you pasted in the correct tenant ID from your Azure app registration?
+> - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
+> - Validate that you correctly followed the steps in [Azure App Registration](#create-an-azure-app-registration-for-the-office-365-management-api)
+> - Validate that you correctly updated the Security Settings of the Custom Connector as described in [step 6 of Custom Connector Setup](#set-up-the-custom-connector)
 
-## Set up the Power Automate flow
+### Set up the Power Automate flow
 
 A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Common Data Service entity, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
 
@@ -244,7 +261,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 1. (Optional) Update the start time and end time during which the logs will be read. The maximum is seven days in the past, and the end time must be after the start time. Use a positive number in the interval field.
 
-   [Update the start time and end time during which the logs will read](media/coe48.png "Update the start time and end time during which the logs will read")
+   ![Update the start time and end time during which the logs will read](media/coe48.png "Update the start time and end time during which the logs will read")
 
 1. Go back to the Center of Excellence - Audit Log solution, and open the flow details screen of the *(Child) Admin \| Sync Logs* flow by selecting the display name.
 
@@ -262,4 +279,4 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 1. Refresh the page to make sure the status has changed to **On**.
 
-1. Go back to the Center of Excellence – Audit Log solution, select **Admin \| Sync Audit Log** to open the flow details page, and then select **Turn on** for this flow as well.
+1. Go back to the Center of Excellence – Audit Logs solution, select **Admin \| Sync Audit Logs* to open the flow details page, and then select **Turn on** for this flow as well.
