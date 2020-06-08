@@ -1,13 +1,13 @@
 ---
 title: "Create an administrative user and prevent elevation of security role privilege  | MicrosoftDocs"
 description: Create an administrative user and prevent elevation of security role privilege
-author: jimholtz
-manager: kvivek
+author: paulliew
+ms.author: paulliew
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/30/2020
-ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
