@@ -17,8 +17,6 @@ search.app:
 ---
 # Configure date settings for demo data 
 
-[!INCLUDE [cc-settings-moving](../includes/cc-settings-moving.md)] 
-
 Use the information below to automatically keep your demo environment data current.
 
 **Before you begin** <br />
@@ -82,7 +80,7 @@ You can set the values of datetime fields to automatically move forward by a spe
 > **Example**: To move dates forward by 3 months, and import the data on 10/1/2017: change the **timestamp** in the data.xml file to 7/1/2017.
 
 ### See also  
- [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget)<br />
- [Modify a schema](modify-configuration-data-schema.md) <br />   
- [Manage your configuration data](manage-configuration-data.md) <br />
- [Import configuration data](import-configuration-data.md)
+[Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget) <br />
+[Modify a schema](modify-configuration-data-schema.md) <br />
+[Manage your configuration data](manage-configuration-data.md) <br />
+[Import configuration data](import-configuration-data.md)
