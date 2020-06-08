@@ -42,7 +42,7 @@ Custom-connector permissions |
 
 For the data and resources that require manual review, Power Apps offers the following experiences to reassign (if necessary) or delete personal data for a specific user:
 
-* Website access: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Website access: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell access: Power Apps cmdlets for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804) and cmdlets for [on-premises gateways](https://go.microsoft.com/fwlink/?linkid=872238).
 
@@ -91,7 +91,7 @@ To perform the administrative operations outlined in this document using the [Po
 
 * A paid Power Apps plan or a Power Apps plan trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
-* [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+* [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
 ## Step 1: Delete or reassign all environments created by the user
 As an administrator, you have two decisions to make when processing a DSR delete request for each environment that the user created:
@@ -166,7 +166,7 @@ An administrator can delete a user's environment permissions starting from the [
 
 1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
 
-    You must be an [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+    You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
@@ -219,7 +219,7 @@ An admin can delete apps created by a user starting from the [Power Apps Admin c
 
 1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
 
-    You must be a [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+    You must be a [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
@@ -260,7 +260,7 @@ An admin can delete app-role assignments for a user starting from the [Power App
 
 1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
 
-    You must be an [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+    You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
@@ -402,7 +402,7 @@ For guidance on how to respond to DSRs for users who use Common Data Service, se
 Once the above steps have been complete the final step is to delete the user's account for Azure Active Directory.
 
 ### Managed tenant
-As an admin of a managed Azure AD tenant you can delete the user's account by following the steps outlined in the Azure Data Subject Request GDPR documentation that can be found on the [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
+As an admin of a managed Azure AD tenant you can delete the user's account by following the steps outlined in the Azure Data Subject Request GDPR documentation that can be found on the [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
 ### Unmanaged tenant
 If you are a member of an unmanaged tenant then you will need to follow these steps in order to delete your account from your Azure AD tenant:

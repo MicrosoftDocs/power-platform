@@ -1,6 +1,6 @@
 ---
-title: "Example processes | MicrosoftDocs"
-description: 
+title: "Nurture with the CoE Power BI dashboard | MicrosoftDocs"
+description: "The Nurture section of the Center of Excellence (CoE) Power BI dashboard gives you the ability to identify your app and flow gurus."
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
@@ -20,7 +20,7 @@ search.app:
 
 As you establish your Center of Excellence (CoE), a significant part of your activity will be nurturing your maker community, enabling them to follow best practices, and working together with them to identify whether they or their resources need additional support.
 
-The **Nurture** section helps you find your "star" app and flow makers and see what connectors they're using, where they're based (department/city/country), and how they're adopting Power Platform.
+The **Nurture** section helps you find your "star" app and flow makers and see what connectors they're using, where they're based (department/city/country), and how they're adopting Microsoft Power Platform.
 
 ## Makers
 

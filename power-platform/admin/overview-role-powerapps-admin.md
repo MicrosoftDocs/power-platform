@@ -1,11 +1,11 @@
 ---
-title: Overview of the role of a Power Apps administrator | Microsoft Docs
-description: Overview of the Power Apps adoption journey and the role of a Power Apps administrator
+title: Overview of the role of a Power Platform administrator | Microsoft Docs
+description: Overview of the Power Apps adoption journey and the role of a Power Platform administrator
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/30/2018
+ms.date: 05/01/2020
 ms.author: jimholtz
 manager: kvivek
 search.audienceType: 
@@ -16,10 +16,9 @@ search.app:
   - Powerplatform
 ---
 
-# What's the role of a Power Apps administrator?
-Administration of Power Apps, Power Automate, and Common Data Service is done through the [Power Apps Admin center](https://admin.powerapps.com).
+# What's the role of a Power Platform administrator?
+Administration of Power Apps, Power Automate, and Common Data Service is done through the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-![Screenshot of the Power Apps Admin center.](./media/index/admin-center.png)
 
 ## Administration journey
 The evolution of an organization adopting Power Apps, Power Automate, and Common Data Service starts with the administrator. As an administrator, you begin your journey asking how you can protect your organization's data. What data is accessible through these services? Are there best practices to follow? What is the Power Apps security model and how should I control access to data? Once you determine how to proceed with data access, you'll then want to know how you can monitor and manage what users are doing with these services.

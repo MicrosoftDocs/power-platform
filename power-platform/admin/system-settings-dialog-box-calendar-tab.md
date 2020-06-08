@@ -19,7 +19,7 @@ search.app:
 
 Use the settings on this page to configure calendar settings for model-driven apps in Dynamics 365.  
   
-## Open the Calendar System Settings dialog box (if it isn't already open)  
+## Open the Calendar System Settings dialog box 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   

@@ -1,6 +1,6 @@
 ---
-title: "Core Components | MicrosoftDocs"
-description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of what apps, flows, and makers are in your environment."
+title: "Core components | MicrosoftDocs"
+description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -19,13 +19,13 @@ search.app:
 
 # Use core components
 
-These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of what apps, flows, and makers are in your environment. Additionally, apps like the DLP Editor and Set New App Owner help with daily admin tasks. The Core Components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md)
+These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the DLP Editor and Set New App Owner help with daily admin tasks. The Core Components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md)
 
 Here's a breakdown of the assets that form the core components:
 
 - **Catalog tenant resources**
   - [Common Data Service entities](#entities): Environments, apps, flows, and more
-  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, custom connectors, connectors, model-driven apps
+  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, flow action details, custom connectors, connectors, model-driven apps
   - [Admin | Sync Audit Log (flow)](#flows)
   - [Power BI dashboard](#power-bi-report)
   - [Power Platform Admin View (model-driven app)](#apps)
@@ -40,6 +40,7 @@ Here's a breakdown of the assets that form the core components:
 - **Environment** Represents the Environment object, which contains apps, flows, and connectors.
 - **PowerApps App** Represents an app.
 - **Flow** Represents a flow.
+- **Flow Action Detail** Represents the set of actions that occur in a flow.
 - **PowerApps Connector** Represents a standard or custom connector.
 - **Connection Reference** The linking table for the many-to-many relationships among connectors (PowerApps Connector) and flows (Flows) and/or apps (PowerApps App).
 - **Maker** Represents a user who has created an app, flow, custom connector, or environment.
@@ -54,6 +55,10 @@ Here's a breakdown of the assets that form the core components:
 - **Power Platform Maker SR** Gives read and write access to the custom entities (environments, apps, and so on).
 
 - **Power Platform User SR**  Gives read-only access to the resources in the custom entities.
+
+>> [!NOTE]
+> To easily explore and manage data stored in CDS, we recommend you install the [Microsoft PowerApps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview).<br><br>
+> More information about its usage can be found in the following blog post. [Working with data in the Common Data Service for Apps using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
 
 ## Flows
 
@@ -75,6 +80,10 @@ Runs when an environment is created or modified, and gets app information. Also 
 
 Runs when an environment is created or modified, and gets flow information. Also updates the record if flows are deleted.
 
+### Admin \| Sync Template v2 (Flow Action Details)
+
+Runs once daily on a schedule, and gets the actions and triggers for all flows.
+
 ### Admin \| Sync Template v2 (Connectors)
 
 Runs once daily on a schedule, and gets connector information.
@@ -83,17 +92,19 @@ Runs once daily on a schedule, and gets connector information.
 
 Runs when an environment is created or modified, and gets custom connector information.
 
+### Admin \| Sync Template v2 (Model Driven Apps)
+
+Runs when an environment is created or modified, and gets model-driven app information.
+
 ### Admin \| Sync Template v2 (Sync Flow Errors)
 
-Runs on a schedule, and sends an email to the admin about environments that failed to sync (with a
-link to the flow instance).
+Runs on a schedule, and sends an email to the admin about environments that failed to sync (with a link to the flow instance).
 
 ## Apps
 
 ### DLP Editor
 
-Canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps that
-are affected by the policy configurations.
+Canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps that are affected by the policy configurations.
 
 Use this app to:
 
@@ -111,8 +122,7 @@ More information: [Introduction to data groups](https://docs.microsoft.com/power
 
 Canvas app you can use to add custom connectors to the Business Data Group of a DLP policy, or to enable HTTP connectors to a DLP policy. More information: [HTTP and custom connector support for DLP policies](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/http-and-custom-connector-support-for-dlp-policies)
 
-**Permission**: Intended to be used only by admins: Power Platform Service Admin
-or Global Admin permission required. Share with your CoE Admins.
+**Permission**: Intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE Admins.
 
 ![DLP Customizer](media/coe52.png)
 

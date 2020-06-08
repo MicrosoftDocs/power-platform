@@ -2,7 +2,7 @@
 title: "Extend your bot using Bot Framework Skills"
 description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities"
-ms.date: 4/8/2020
+ms.date: 6/8/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -66,7 +66,7 @@ Before registering the Skill, provide the bot's ID to your Skills developer to a
 
 1. At the top of the Skills page, select **Add skill**.
  
-   ![Select Add skill button](media/skills-provide-id.png)
+   ![Select Add skill button](media/skills-add-skill.png)
 
 1. Enter the URL to the Skill manifest. A Skill's manifest contains the information that your bot will need to trigger actions within a Skill.
 

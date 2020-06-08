@@ -31,7 +31,7 @@ search.app:
 
  You can open model-driven apps in Dynamics 365 and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open model-driven apps in Dynamics 365. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Office 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher)  
   
- ![Office 365 app launcher](../admin/media/admin-center-app-launcher.png "Office 365 app launcher")  
+ ![Microsoft 365 app launcher](../admin/media/admin-center-app-launcher.png "Microsoft 365 app launcher")  
   
 <a name="BKMK_CRMAdminCenter"></a>   
 ## Manage environments and updates in the Dynamics 365 Administration Center  

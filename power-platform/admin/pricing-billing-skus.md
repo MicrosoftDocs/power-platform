@@ -23,36 +23,36 @@ The topics in this section provide detailed information about Power Apps and Mic
 
 For information about Power BI licensing, see [Power BI Pricing](https://powerbi.microsoft.com/pricing/).
 
-## Power Apps/Power Automate for Office 365
+## Power Apps/Power Automate for Microsoft 365
 
-Power Apps/Power Automate capabilities for Office 365 enable users to extend and
+Power Apps/Power Automate capabilities for Microsoft 365 enable users to extend and
 customize the Office experience with Power Apps and Power Automate. Users can
-create applications and flows based on Office 365 data. These productivity apps
-can also utilize data outside of Office 365 by connecting to common services
+create applications and flows based on Microsoft 365 data. These productivity apps
+can also utilize data outside of Microsoft 365 by connecting to common services
 including Box.com, Facebook, and many more via the use of standard connectors.
 
-Here is a brief overview of capabilities included with Power Apps for Office 365
+Here is a brief overview of capabilities included with Power Apps for Microsoft 365
 plan. More details around what Office plans includes these capabilities can be
 found in [Microsoft Power Apps and Power Automate Licensing
 Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 
-| Functionalities                                                   | Power Apps for Office 365 |
+| Functionalities                                                   | Power Apps for Microsoft 365 |
 |-----------------------------------------------------------------------|------------------------------|
 | Create, run and share apps                                            | Yes                          |
-| Run canvas apps in context of Office 365                              | Yes                          |
-| Connect to Office 365 data                                            | Yes                          |
+| Run canvas apps in context of Microsoft 365                              | Yes                          |
+| Connect to Microsoft 365 data                                            | Yes                          |
 | Connect to cloud services using standard connectors                   | Yes                          |
 | Run apps in a browser or Power Apps mobile for iOS and Android         | Yes                          |
 | Run Canvas apps offline                                               | Yes                          |
-| Support for data policies established by the Office 365 administrator | Yes                          |
+| Support for data policies established by the Microsoft 365 administrator | Yes                          |
 | Access on-premises data or use premium or custom connectors           | \-                           |
 | Data storage and management in Common Data Service                    | \-                           |
 
 ## Power Apps and Power Automate Standalone plans
 
 Standalone Power Apps and Microsoft flow plans provide users the ability to
-create and run apps across data sources that extend beyond Office 365, such as
+create and run apps across data sources that extend beyond Microsoft 365, such as
 Salesforce, on-premises and custom data sources. These plans also include access
 to Common Data Service to store and manage data. Learn more: [What is Common Data
 Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
