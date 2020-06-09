@@ -2,14 +2,14 @@
 title: "Language support"
 description: "Create new bots in multiple languages, including tutorial and system topics."
 keywords: ""
-ms.date: 6/8/2020
+ms.date: 6/09/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "authoring, fundamentals"
+ms.custom: "authoring, fundamentals, ce06092020"
 ms.collection: virtual-agent
 ---
 
