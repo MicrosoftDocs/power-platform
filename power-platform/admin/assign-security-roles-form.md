@@ -1,13 +1,13 @@
 ---
 title: "Assign security roles to a form  | MicrosoftDocs"
 description: Assign security roles to a form
-author: jimholtz
-manager: kvivek
+author: paulliew
+ms.author: paulliew
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
-ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
