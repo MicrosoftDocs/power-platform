@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/15/2020
+ms.date: 06/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -75,7 +75,7 @@ Follow these steps to turn off assigning per app plans for users when an app is 
 
    ![App settings](media/app-settings2.png "App settings")
 
-3. Under **Pass assignment**, change the **Auto assign per app passes** toggle to **No**. The **Auto assign per app passes** toggle appears in all app setting.
+3. Under **Pass assignment**, change the **Auto assign per app passes** toggle to **Yes**. The **Auto assign per app passes** toggle appears in all app setting.
 
    ![Pass assignment](media/pass-assignment2.png "Pass assignment")
 
