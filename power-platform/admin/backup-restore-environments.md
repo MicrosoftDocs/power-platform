@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -178,8 +178,14 @@ Obtaining a copy of your database backup isn't available. If you want to move yo
 Obtaining a copy of your database backup isn't available. Moving your online data requires data migration. For smaller data sets, consider [exporting data to Excel](https://docs.microsoft.com/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).  
 
 ### Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?
-We don't have any restriction on database size to take a backup or restore an organization through UI or API. Use the UI or API to do self-service. Open a support ticket if the operation fails.
+We don't have any restriction on database size (or storage capacity/entitlement) to take a backup through UI or API. However, when an organization’s storage capacity usage is greater than the entitled capacity, the following admin operations will be blocked:
 
+- **Restore an environment**
+- Create new environment (requires minimum 1GB capacity available)
+- Copy an environment
+ 
+To be compliant with storage usage requirements, customers can always [free up storage](free-storage-space.md), [archive data](recover-database-space-deleting-audit-logs.md), [delete unwanted environments](delete-environment.md), or buy more capacity. To learn more about capacity add-ons, see the Add-ons section in the Dynamics 365 Licensing Guide or the Power Apps and Power Automate Licensing Guide. You can work through your organization’s standard procurement process to purchase capacity add-ons.
+ 
 ### Can I restore to a production environment?
 In order to prevent accidental overwrites, we don't allow users to directly restore to a production environment. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md). Note that changing an environment type to sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
 
