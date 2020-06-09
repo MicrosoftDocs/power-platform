@@ -6,7 +6,7 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 06/09/2020
 ms.reviewer: ""
 ms.service: powerapps
 ms.topic: "article"
@@ -20,7 +20,7 @@ search.app:
 # Managed properties 
 You can use managed properties to control which of your managed solution components can be customized. If you're creating solutions for other organizations, you should allow them to customize solution components where it makes sense for their unique requirements. However, you have to be able to predictably support and maintain your solution, so you should never allow any customization of critical components that provide the core functionality of your solution.
 
-If you're creating solutions for your own organization, we recommend that you don't allow any customization of the components in your managed solutions at all. 
+Consider using managed properties to lock down your components unless you want them customizable in the destination environment. For example, imagine a scenario where your users might want to change many of the labels to fit their own business requirements.
 
 Managed properties are intended to protect your solution from modifications that
 might cause it to break. Managed properties don't provide digital rights
