@@ -413,8 +413,8 @@ Use the following methods to free up storage for each of the capacity types.
 
 Entities and entity fields enabled for Relevance Search have an impact on the database storage capacity. 
 
-- To revise the list of entities selected for Relevance Search results, refer to [Select entities for Relevance Search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
-- To revise the list of fields selected for each entity for Relevance Search results, refer to [Configure searchable fields for Relevance Search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
+- To revise the list of entities selected for Relevance Search results, see [Select entities for Relevance Search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
+- To revise the list of fields selected for each entity for Relevance Search results, see [Configure searchable fields for Relevance Search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
 
 ## Free up storage used by flow approvals
 
