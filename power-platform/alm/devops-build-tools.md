@@ -58,7 +58,7 @@ changes." The build tasks can largely be categorized into four types:
 
 - Environment management
 
-For more information about the available tasks see [Build tool tasks](devops-build-tool-tasks.md). 
+For more information about the available tasks see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md). 
 
 ## Get Microsoft Power Platform Build Tools
 
@@ -101,9 +101,9 @@ Download the following PowerShell cmdlet: https://pabuildtools.blob.core.windows
 The script will prompt two times with AAD login dialogs:
 
 
-<ul><li>1st prompt: to login as administrator to the AAD instance associated with the Power Platform tenant
+<ul><li>1st prompt: to login as administrator to the AAD instance associated with the Microsoft Power Platform tenant
 </li></ul> 
-<ul><li>2nd prompt: to login as tenant administrator to the Power Platform tenant itself
+<ul><li>2nd prompt: to login as tenant administrator to the Microsoft Power Platform tenant itself
 </li></ul>
 
 
@@ -128,11 +128,11 @@ Ensure that the added Application User has the system administrator role assigne
 
 **Do the Microsoft Power Platform Build Tools only work for Power Apps?**  
 
-*The build tools work for both canvas and model-driven apps, Power Virtual Agents, UI Flows and traditional flows, AI Builder, Custom Connectors and Data Flows, all of which can now be added to a solution. This also includes Dynamics 365 CE applications, such as Dynamics 365 Sales and Dynamics 365 Customer Service. Separate build tasks are available for Microsoft Dynamics for Finance and Operations.*
+*The build tools work for both canvas and model-driven apps, Power Virtual Agents, UI Flows and traditional flows, AI Builder, Custom Connectors and Data Flows, all of which can now be added to a solution. This also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
 
 **I had previuosly installed the preview of the Build Tools - can I upgrade from the preview of Power Apps Build Tools to Power Platform Build Tools?**
 
-*You cannot upgrade from the preview version as we had to introduce some breaking changes in the Generally Available release. To move from the preview version, you have to install the Power Platform Build Tools and either re-build your pipelines, or re-configure your existing pipelines to use the new Build Tools tasks. This includes creating new Service connections as well.*
+*You cannot upgrade from the preview version as we had to introduce some breaking changes in the Generally Available release. To move from the preview version, you have to install the Microsoft Power Platform Build Tools and either re-build your pipelines, or re-configure your existing pipelines to use the new Build Tools tasks. This includes creating new Service connections as well.*
 
 **Can I include flow and canvas apps?**
 
@@ -140,11 +140,11 @@ Ensure that the added Application User has the system administrator role assigne
 
 **How much do the Microsoft Power Platform Build Tools cost?**
 
-*The build tools are available at no cost. However, a valid subscription to Azure DevOps is required to utilize the Build Tools. More information is available [here](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
+*The build tools are available at no cost. However, a valid subscription to Azure DevOps is required to utilize the Build Tools. More information is available [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
 
 **I can see the extension, but why don’t I have an option to install it?**
 
-*If you do not see the **install** option (outlined in screenshot below) then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [here](https://docs.microsoft.com/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
+*If you do not see the **install** option then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](https://docs.microsoft.com/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
 
 **How can developers use the results of the Checker task?**
 
