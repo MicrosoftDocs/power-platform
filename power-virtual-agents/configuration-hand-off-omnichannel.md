@@ -1,7 +1,7 @@
 ---
 title: "Configure Power Virtual Agents hand-off to Omnichannel for Customer Service"
 description: "Have human agents intercede in bot conversations by connecting Power Virtual Agents to Omnichannel."
-ms.date: 6/02/2020
+ms.date: 6/09/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -10,7 +10,7 @@ ms.author: iawilt
 ms.reviewer: pawant
 manager: shellyha
 ms.collection: virtual-agent
-ms.custom: handoff
+ms.custom: handoff, ceX
 ---
 
 # Configure seamless and contextual hand-off to Omnichannel for Customer Service
@@ -51,6 +51,9 @@ Sign in to the Power Virtual Agents bot you want to connect to Omnichannel for C
     >Ensure that you adhere to [data sovereignty](data-location.md) laws when you configure this integration as your bot will store and send user information to your Omnichannel for Customer Service instance.
 
 1. Follow the steps to create or reuse an existing Azure application ID. Copy the *Application (client) ID* and paste it in the text box provided.
+
+    >[!IMPORTANT]
+    >Omnichannel models bots as "application users" in the system. Therefore, the *Application (client) ID* that you use must be unique to your orgnization (your Common Data Service organization or environment).
 
 1. Power Virtual Agents uses a [Teams channel](getting-started-deploy.md) to communicate with Omnichannel for Customer Service. If a Teams channel is not enabled, a Teams channel will be enabled when you select **Next**. 
 
