@@ -2,14 +2,14 @@
 title: "Use bot variables to carry content across topics"
 description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: ""
-ms.date: 5/27/2020
+ms.date: 6/8/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring
+ms.custom: authoring, ce06032020
 ms.collection: virtual-agent
 ---
 
@@ -75,7 +75,7 @@ This will take you to the node in the topic where the bot variable was created.
  
 ## Bot variable initialization
 
-If a bot variable is triggered before it has been initialized (or "filled in"), the bot will automatically trigger the part of the topic where the bot variable is first defined before returning to the original topic. This allows the bot conversation to continue without breaking.  
+If a bot variable is triggered before it has been initialized (or "filled in"), the bot will automatically trigger the part of the topic where the bot variable is first defined, even when it's in a different topic, before returning to the original topic. This allows the bot to have all the variables filled in without interrupting the conversation.  
 
 For example, the customer starts the conversation on the "Appointment booking" topic, in which a bot variable `bot.UserName` is used. However, the `bot.UserName` variable is first defined in the "Welcome" topic.  
 When the conversation comes to the point in the "Appointment booking" topic where `bot.UserName` is referenced, the bot will seamlessly pivot to the question node where `bot.UserName` is first defined.  
@@ -85,8 +85,8 @@ After the customer answers the question, the bot will resume the "Appointment bo
 
 You can set a bot variable to be initialized with an external source. This lets the bot start the conversation with some context. 
 
-For example, a customer brings up a bot chat from your web site, and the site already knows the customer's name.  
-You let the bot know the user's name before starting the conversation Now the bot can have a more intelligent conversation with the customer, without having to repeat the question asking for their names. 
+For example, a customer brings up a bot chat from your web site, and the site already knows the customer's name.   
+You let the bot know the user's name before starting the conversation, and the bot can have a more intelligent conversation with the customer, without having to repeat the question asking for their names. 
 
 **Set bot variable from external source**
 
@@ -94,26 +94,81 @@ You let the bot know the user's name before starting the conversation Now the bo
 
 1. In the **Variable properties** pane, under the **Usage** section, select the checkbox **External sources can set values**.
 
-1. When embedding your bot on your website, append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`).
-
     ![Screenshot of the variable properties pane, on the Usage section with the suboption External sources can be set, under the Bot option](media/bot-variable-external.png "Screenshot of the variable properties pane, on the Usage section with the suboption External sources can be set, under the Bot option")
+
+
+1. You can append the variables and their definitions if you're simply [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), or you can use a `<script>` code block to call and use variables programatically.
 
     >[!NOTE]
     >The variable name in the query string must match that of the bot variable, without the `bot.` prefix. For example, a bot variable `bot.UserName` must be rendered as `UserName=`.
 
-This will also work for the customers who bring their own [custom canvas](customize-default-canvas.md).
+In the examples described here, a simple declaration is made for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the user's name (for example, if you have the user name from a log-in script).
+
+**To add the variable to an embedded bot**
+
+1. Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`), for example:
+
+
+    - You have a bot variable named `bot.UserName`. 
+
+    - Your bot's URL is *https:// powerva.microsoft.com/webchat/bots/12345*.
+
+    - To pass in a user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https:// powerva.microsoft.com/webchat/bots/12345?**UserName=Jeff***.
+
+2. The parameter name is case insensitive. This means `username=Jeff` will also work in this example. 
+
+
+
+**To add the variable to a [custom canvas](customize-default-canvas.md)**
+
+1. In the `<script>` section on the page where you have your bot, define the variables as follows, substituting `variableName1` for the variable name without the `bot.` prefix and `variableDefinition1` for the definition. Separate multiple variables with commas `,`.
+
+    ```html
+       const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
+         if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+           dispatch({
+              type: "WEB_CHAT/SEND_EVENT",
+              payload: {
+                name: "pvaSetContext",
+                value: {
+                   "variableName1": "variableDefinition1",
+                   "variableName2": "variableDefinition2"
+                }
+              },
+            });
+          }
+            return next(action);
+        });
+    ```
+
+2. Within your `<scrip>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
+
+    ```html
+    const BOT_ID = "12345-5678";
+    const theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+
+    fetch(theURL)
+        .then(response => response.json())
+        .then(conversationInfo => {
+            window.WebChat.renderWebChat(
+                {
+                    directLine: window.WebChat.createDirectLine({
+                        token: conversationInfo.token,
+                    }),
+                    store,
+                    styleOptions
+                },
+                document.getElementById('webchat')
+            );
+        })
+        .catch(err => console.error("An error occurred: " + err));
+    ```
  
-The following example describes what the process would look like: 
 
-- You have a bot variable named `bot.UserName`. 
 
-- Your bot's URL is *https:// powerva.microsoft.com/webchat/bots/12345*.
 
-- To pass in a user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https:// powerva.microsoft.com/webchat/bots/12345?**UserName=Jeff***.
 
-In a production scenario, you might pass in as the query parameter another variable that has already stored the user's name (for example, if you have the user name from a log-in script).
 
-The parameter name is case insensitive. This means `username=Jeff` will also work in this example. 
 
 ## Delete bot variables
 

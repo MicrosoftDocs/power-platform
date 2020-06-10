@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 06/10/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -49,7 +49,7 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | Application user / Non-interactive users                 | See *Non-licensed user* section below |
 
 
-<sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent.
+<sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
 
 <sup>2</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
@@ -135,7 +135,7 @@ Integrations won't be stopped for occasional and reasonable overages at this poi
 
 ### Will there be a transition period for existing customers?
 
-Yes, all existing customers will have a transition period until October 1, 2020, or the expiration of their current subscription term, whichever is longer.
+Yes, all existing customers will have a transition period until reporting is made available in Power Platform Admin Center, or the expiration of their current subscription term, whichever is longer.
 
 During this transition period, reporting that shows the API consumption will be made available to customers.
 

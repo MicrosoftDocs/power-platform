@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/02/2020
+ms.date: 06/08/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -48,6 +48,7 @@ Use the following methods to free up storage for each of the capacity types.
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
 |     | **Method 8**: Delete bulk import environments using a bulk deletion job        |
 |     | **Method 9**: Delete bulk deletion job environments using a bulk deletion job        |
+|     | **Method 10**: Remove unrequired entities and fields from Relevance Search        |
 
 
 ## Reduce file storage
@@ -407,7 +408,14 @@ Use the following methods to free up storage for each of the capacity types.
 > ![](media/free-storage-method6b.png "Free up storage method 9")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
-  
+
+### Method 10: Remove unrequired entities and fields from Relevance Search
+
+Entities and entity fields enabled for Relevance Search have an impact on the database storage capacity. 
+
+- To revise the list of entities selected for Relevance Search results, see [Select entities for Relevance Search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
+- To revise the list of fields selected for each entity for Relevance Search results, see [Configure searchable fields for Relevance Search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
+
 ## Free up storage used by flow approvals
 
 See [Delete approval history from Power Automate](https://docs.microsoft.com/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).

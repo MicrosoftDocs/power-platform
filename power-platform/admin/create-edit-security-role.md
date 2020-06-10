@@ -1,13 +1,13 @@
 ---
 title: "Create or edit a security role  | MicrosoftDocs"
 description: Create or edit a security role
-author: jimholtz
-manager: kvivek
+author: paulliew
+ms.author: paulliew
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/09/2020
-ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 

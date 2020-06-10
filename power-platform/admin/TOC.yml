@@ -350,6 +350,8 @@
         items:  
         - name: About security roles and privileges
           href: security-roles-privileges.md
+        - name: Create users and assign security roles
+          href: create-users-assign-online-security-roles.md
     #   - name: Automatic role assignment by the system
         - name: Use service admin roles to manage your tenant
           href: use-service-admin-role-manage-tenant.md
@@ -363,8 +365,8 @@
         href: troubleshooting-user-needs-read-write-access-organization.md
       - name: Assign security roles to a form
         href: assign-security-roles-form.md       
-  #    - name: Manage user account synchronization    # This topic should be removed, on-prem focus
-  #      href: manage-user-account-synchronization.md       
+      - name: Manage user account synchronization 
+        href: manage-user-account-synchronization.md       
       - name: Hierarchy security to control access
         href: hierarchy-security.md
       - name: Add or remove sales territory members
@@ -594,6 +596,8 @@
           href: modify-configuration-data-schema.md
         - name: Import configuration data
           href: import-configuration-data.md 
+      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
+        href: deploy-packages-using-package-deployer-windows-powershell.md 
     - name: Work with templates
       items: 
       - name: Article templates
@@ -684,8 +688,6 @@
         href: enable-embedded-flow-in-your-organization.md 
       - name: "Preview feature: Live Assist powered by Café X"
         href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
-#      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
-#        href: deploy-packages-using-package-deployer-windows-powershell.md 
       - name: Use Power BI
         href: use-power-bi.md 
       - name: Embed an app in Teams

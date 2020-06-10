@@ -199,7 +199,7 @@ The per user plan is intended to support the broad adoption of an automation cul
 
 ### Which flows count in the Power Automate per flow plan?**
 
-All types of enabled flows count: scheduled flows, automated flows, and instant flows. Flows that are triggered by another flow (child flows) or that are disabled will not count against the plan.
+All types of enabled flows count: scheduled flows, automated flows, and instant flows. Flows that are triggered by other flows (child flows) do not count against the plan.
 
 ### Do flows always have to be purchased in units of five as part of the Power Automate per flow plan?
 
