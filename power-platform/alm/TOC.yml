@@ -49,7 +49,7 @@
     items:
     - name: Use Power Platform Build Tools
       href: devops-build-tools.md
-    - name: Build tool tasks
+    - name: Power Platform Build Tools tasks
       href: devops-build-tool-tasks.md
     - name: Work with solution components
       href: 
