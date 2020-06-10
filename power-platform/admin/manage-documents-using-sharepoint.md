@@ -24,8 +24,7 @@ Document management with SharePoint lets users manage common document types, suc
 
 > [!NOTE]
 > The document management feature isn't supported for users with Power Apps for Microsoft 365 licenses. These users should upgrade to the appropriate licensing. More information: [Compare Office 365 for Business Plans](https://www.microsoft.com/en-us/microsoft-365/business/compare-more-office-365-for-business-plans) 
-
-> [!NOTE]
+> 
 > The document management feature is supported for SharePoint sites with classic and modern experience.
 
 Depending on your environment, there are several model-driven apps in Dynamics 365 and SharePoint configurations possible. 
