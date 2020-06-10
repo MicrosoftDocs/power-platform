@@ -135,7 +135,7 @@ Integrations won't be stopped for occasional and reasonable overages at this poi
 
 ### Will there be a transition period for existing customers?
 
-Yes, all existing customers will have a transition period until October 1, 2020, or the expiration of their current subscription term, whichever is longer.
+Yes, all existing customers will have a transition period until reporting is made available in Power Platform Admin Center, or the expiration of their current subscription term, whichever is longer.
 
 During this transition period, reporting that shows the API consumption will be made available to customers.
 
