@@ -210,5 +210,6 @@ Provisioning environments is based on database capacity. Previously, it was two 
 
 ### See also 
 [Manage environments in Power Apps](environments-administration.md) <br />
-[Common Data Service storage capacity](capacity-storage.md)
+[Common Data Service storage capacity](capacity-storage.md) <br />
+[Control user access to environments: security groups and licenses](control-user-access.md)
 
