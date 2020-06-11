@@ -63,10 +63,26 @@
     - name: Leverage solution and packaging tools
       href: 
       items:
-        - name: Configuration Migration and Package Deployer tools
+        - name: Configuration Migration
           href: configure-and-deploy-tools.md
+        - name: Package Deployer tool
+          href: package-deployer-tool.md
         - name: Solution Packager tool
           href: solution-packager-tool.md
+    - name: Verify quality of solutions and packages
+      items:
+        - name: Use the Power Apps checker web API 
+          href: checker-api/overview.md
+        - name: Invoke the analysis
+          href: checker-api/analyze.md
+        - name: Check for analysis status
+          href: checker-api/check-status.md
+        - name: Retrieve the list of rules
+          href: checker-api/retrieve-rules.md
+        - name: Retrieve the list of rulesets
+          href: checker-api/retrieve-rulesets.md
+        - name: Upload a file for analysis
+          href: checker-api/upload-file.md
     - name: Manage solutions using custom code
       href: 
       items:

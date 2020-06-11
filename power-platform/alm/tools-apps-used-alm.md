@@ -82,7 +82,7 @@ assets to Common Data Service instances. Packages can consist of not only
 solution files, but also flat files, custom code, and HTML files. Common Data
 Service provides you with a Visual Studio template for creating these packages
 that can be used with the Package Deployer tool to deploy them to a Common Data
-Service instance. More information: [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
+Service instance. More information: [Create packages for the Package Deployer](package-deployer-tool.md)
 
 ## Solution Packager
 Solution Packager is a tool that can unpack a compressed solution file into
