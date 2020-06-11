@@ -63,8 +63,10 @@
     - name: Leverage solution and packaging tools
       href: 
       items:
-        - name: Configuration Migration and Package Deployer tools
+        - name: Configuration Migration
           href: configure-and-deploy-tools.md
+        - name: Package Deployer tool
+          href: package-deployer-tool.md
         - name: Solution Packager tool
           href: solution-packager-tool.md
     - name: Verify quality of solutions and packages
