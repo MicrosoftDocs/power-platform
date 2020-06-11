@@ -17,7 +17,7 @@ search.app:
   - D365CE
 ---
 
-# Build tool tasks
+# Microsoft Power Platform Build Tools tasks
 
 The available build tasks are described in the following sections. Afterwards, we will showcase some example Azure DevOps pipelines making use of these tasks. For information about the build tools and how to download them, see [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md).
 
