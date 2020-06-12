@@ -97,7 +97,6 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 
   - [Dynamics 365 Customer Service Insights Topic suggestion](advanced-create-topics-from-csi.md) - Topic suggestions from Customer Service Insights are automated into Power Virtual Agents with a single click. Data might go to a bot in a different geographic region than the workspace region in Customer Service Insights. 
 
-
-  ### See also
+### See also
 
 [Language support](authoring-language-support.md)
