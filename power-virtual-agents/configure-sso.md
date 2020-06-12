@@ -246,7 +246,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
     </script>
     ```
 
-4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable which you can use [when rendering the custom canvas].
+4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable which is then called as part of `styleOptions`. This may cause a duplicate reference to `styleOptions` [when rendering a custom canvas](customize-default-canvas.md) so you may need to combine the references.
 
 5. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Power Virtual Agents portal.
 
@@ -290,29 +290,23 @@ Update the custom canvas page where the bot is located to intercept the login ca
                      }
                      }).subscribe(
                  id => {
-                 if (id === 'retry') {
-                   // bot was not able to handle the invoke, so display the oauthCard
-                   return next(action);
-                }
-             // else: tokenexchange successful and we do not display the oauthCard
-             },
-             error => {
-               // an error occurred to display the oauthCard
-               return next(action);
-             }
-             );
-           return;
-           }
-           else
-             return next(action);
-           });
-           }
-           else
-             return next(action);
-           }
-           else
-             return next(action);
-        });
+                  return next(action);
+      });
+      const styleOptions = {
+        
+        //Add styleOptions to customize Web Chat canvas
+        hideUploadButton: true
+      };
+      
+          window.WebChat.renderWebChat(
+            {
+              directLine: directLine,
+              store,
+              userID:uniqueId,
+              styleOptions
+            },
+            document.getElementById('webchat')
+          );      
     })().catch(err => console.error("An error occurred: " + err));
   
     </script>
