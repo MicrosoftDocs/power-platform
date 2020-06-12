@@ -314,4 +314,4 @@ Select **Change filters**.
 Select the environment and time-period from the drop-down lists, and then select **Apply** to save the changes. All the Common Data Service analytics reports are available using this selection. 
 
 > [!div class="mx-imgBorder"] 
-> ![Customer Data Service analytics change filters](./media/organization-insights-change-filters-apply.png "Customer Data Service analytics change filters")  
+> ![Customer Data Service analytics change filters apply](./media/organization-insights-change-filters-apply.png "Customer Data Service analytics change filters apply")  

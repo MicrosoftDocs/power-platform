@@ -45,9 +45,8 @@ For information about the programmatic interface for managing configuration and 
   
    Database permissions required.  
   
-  |||  
-  |-|-|  
   |Permission type code|Permission name|  
+  |-|-|  
   |CRTB|CREATE TABLE|  
   |CRTY|CREATE TYPE|  
   |CRVW|CREATE VIEW|  
@@ -57,9 +56,8 @@ For information about the programmatic interface for managing configuration and 
   
    Schema permissions required.  
   
-  |||  
-  |-|-|  
   |Permission type code|Permission name|  
+  |-|-|  
   |AL|ALTER|  
   |IN|INSERT|  
   |DL|DELETE|  
@@ -145,9 +143,8 @@ For information about the programmatic interface for managing configuration and 
   
 ### Data synchronization available with an Export Profile  
   
-||||  
-|-|-|-|  
 |Category|Feature|Supported data types|  
+|-|-|-|  
 |Initial Sync|Metadata - Basic Data Types|Whole Number, Floating Point Number, Decimal Number, Single Line of Text, Multi Line of Text, Date and Time data types.|  
 |Initial Sync|Metadata - Advanced Data Types|Currency, PartyList, Option Set, Status, Status Reason, Lookup (including Customer and Regarding type lookup). PartyList is only available for export version 8.1 and above.|  
 |Initial Sync|Data - Basic Types|All basic data types.|  
