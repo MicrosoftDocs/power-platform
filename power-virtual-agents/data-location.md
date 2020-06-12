@@ -22,7 +22,7 @@ Power Virtual Agents supports multiple globalization scenarios, and lets you cho
 
 ## Supported locales and formats
 
-Chatbots built with Power Virtual Agents will understand and display content that's locally relevant to the user. Localized handling and formatting are based on the user's browser locale setting, and include<!--If the subject is "Localized handling and formatting"?-->:
+Chatbots built with Power Virtual Agents will understand and display content that's locally relevant to the user. Localized handling and formatting are based on the user's browser locale setting, and include the following elements within a chat conversation:
 
 * Date and time
 * Numbers
@@ -37,7 +37,7 @@ Power Virtual Agents supports the following locales:
 * en-IN
 * en-US
 
-For example, if the user's browser locale setting is *en-GB*, the bot knows that a date of<!--Suggested.--> **2/3** equates to **March 2**. If the browser locale setting is *en-US*, the same date equates to **February 3**.
+For example, if the user's browser locale setting is *en-GB*, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is *en-US*, the same date equates to **February 3**.
 
 ## Data locations
 
@@ -97,6 +97,6 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 
   - [Dynamics 365 Customer Service Insights Topic suggestion](advanced-create-topics-from-csi.md) - Topic suggestions from Customer Service Insights are automated into Power Virtual Agents with a single click. Data might go to a bot in a different geographic region than the workspace region in Customer Service Insights. 
 
-### See also
+## See also
 
-[Language support](authoring-language-support.md)
+- [Language support](authoring-language-support.md)
