@@ -32,7 +32,7 @@ These are ways to reduce the amount of storage space used by removing or deletin
 
 Use the following methods to free up storage for each of the capacity types.
 
-|  |  |
+| Storage | Method  |
 |---------|---------|
 |**File**     |        |
 |     | **Method 3**: Remove email attachments using Advanced Find         |

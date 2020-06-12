@@ -34,7 +34,7 @@ Many of these settings...
 
 ...are moving here.
 
-![Environment settings](media/environment-settings-mini.png)
+![Environment settings mini](media/environment-settings-mini.png)
 
 Use the links on this page to manage organization-wide settings. App-specific settings will remain in model-driven apps in Dynamics 365 and accessed through the app settings. 
 

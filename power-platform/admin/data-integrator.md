@@ -222,7 +222,7 @@ After you create an integration project, you get the option to run it manually o
 3. Select **Recur every** and once you have completed all the fields, select **Save schedule**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Schedule-based writes](media/data-integrator/Schedulebasedwrites1780.png "Schedule-based writes")
+    > ![Save schedule](media/data-integrator/Schedulebasedwrites1780.png "Save schedule")
 
 You can set a frequency as often as 1 minute or have it recur a certain number of hours, days, weeks, or months. Note that the next refresh won't start until the previous project task completes its run.
 
@@ -296,29 +296,29 @@ You can customize projects and templates in these ways:
 7. The dropdown list shows you all your source and destination entities.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template add task](media/data-integrator/CustomizeTemplateAddtask175.png "Customize template add task")
+    > ![Customize template add task2](media/data-integrator/CustomizeTemplateAddtask175.png "Customize template add task2")
 
     In this case, a new task was created to sync User entity from SalesForce to Users entity in Common Data Service.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template add task](media/data-integrator/CustomizeTemplateAddtask275.png "Customize template add task")
+    > ![Customize template add task3](media/data-integrator/CustomizeTemplateAddtask275.png "Customize template add task3")
 
 8. Once you create the task, you will see your new task listed and you can delete the original task.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template add task](media/data-integrator/CustomizeTemplateAddtask3780.png "Customize template add task")
+    > ![Customize template add task4](media/data-integrator/CustomizeTemplateAddtask3780.png "Customize template add task4")
 
 9. You just created a new template—in this case, a template to pull User entity data from SalesForce to Common Data Service. Select **Save** to save your customization.
 
 10. Follow the steps to customize field mappings for this new template. You could run this project and/or save the project as a template from the **Project list** page.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template save as template](media/data-integrator/CustomizeTemplateSaveAsTemplate780.png "Customize template save as template")
+    > ![Project list](media/data-integrator/CustomizeTemplateSaveAsTemplate780.png "Project list")
 
 11. Provide a name and description and/or share with others in your organization.
 
     > [!div class="mx-imgBorder"] 
-    > ![Customize template save as template](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Customize template save as template")
+    > ![Name and description](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Name and description")
 
 **To create your own template from blank templates**
 
@@ -393,7 +393,7 @@ With Power Query support, we now provide advanced filtering and data transformat
 5. Select **to link** to launch the Advanced Query and Filtering user interface, which gives you source field data in Microsoft Excel-type columns.
 
     > [!div class="mx-imgBorder"] 
-    > ![Advanced Query and Filtering](media/data-integrator/EnablePQ4780.png "Advanced Query and Filtering")
+    > ![Select to link](media/data-integrator/EnablePQ4780.png "Select to link")
 
 6. From the top menu, you get several options for transforming data such as **Add conditional column**, **Duplicate column**, and **Extract**.
 

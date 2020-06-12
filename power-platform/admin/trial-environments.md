@@ -19,7 +19,20 @@ search.app:
 
 # About trial environments
 
-Using the Power Platform admin center, you can create three types of Common Data Service environments: sandbox, production, or trial. A trial environment is useful for trying out model-driven apps in Dynamics 365 at no cost. Trial environments expire after 30 days.
+Using the Power Platform admin center, you can create four types of Common Data Service environments: sandbox, production, trial, or trial (subscription-based). A trial environment is useful for trying out model-driven apps in Dynamics 365 at no cost. Trial environments expire after 30 days.
+
+## Trial (subscription-based)
+
+With version XYZ, we're introducing this new trial environment type. 
+
+
+trial
+- 30 days
+
+trial (subscription-based)
+- 3GB of capacity so 3 environments can be created.
+- details: time remaining is based on subscription
+- 
 
 ## Check the expiration date
 
