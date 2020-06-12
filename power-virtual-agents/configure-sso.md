@@ -246,7 +246,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
     </script>
     ```
 
-4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier.
+4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable which you can use [when rendering the custom canvas].
 
 5. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Power Virtual Agents portal.
 
@@ -265,7 +265,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
   		
   	   const { token } = await fetchJSON(theURL);
   	   const directLine = window.WebChat.createDirectLine({ token });
-       
+       var uniqueId = Math.random().toString(36) + Date.now().toString();
             const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
              const { type } = action;
               if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
@@ -284,7 +284,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
                        token
                       },
                      "from":{
-                       id:clientApplication.account.accountidentifier,
+                       id:uniqueId,
                        name:clientApplication.account.userName,
                        role:"user"
                      }
