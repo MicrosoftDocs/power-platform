@@ -33,17 +33,17 @@ Bot variables apply during a single user session. You specify which variables sh
 
 After you set a bot variable, it will be available to all topics. 
 
-When you select the `{x}` button in a message node or question node when you're<!--Suggested.--> composing a bot message, you'll see that the bot variable is available. Variables are sorted in alphabetical<!--Listed first in American Heritage Dictionary.--> order, so you'll find that all bot variables are grouped together in the variable menu because they all begin with `bot.`.
-<!--I think it should be lowercase x in the alt text, even if it can't be italic.-->
+When you select the `{x}` button in a message node or question node when you're composing a bot message, you'll see that the bot variable is available. Variables are sorted in alphabetical order, so you'll find that all bot variables are grouped together in the variable menu because they all begin with `bot.`.
+
 ![Screenshot showing selection of the x variable icon to display a list of variables](media/bot-variable-message.png "Screenshot showing selection of the x variable icon to display a list of variables")
 
 When you use a condition node, a flow action node, or a skill node, you'll also see bot variables available there. 
  
 **Reuse a variable across topics by setting is as bot variable**
-<!--Note from editor: I'm very distressed to have read just now in the Writing Style Guide that we're supposed to use "on" to indicate the contents of a pane. I've always used "in." So I guess there's no time like the present to edit it correctly? but I'm very sorry for having been wrong all this time. And also... if you want to reject these edits, I wouldn't blame you.-->
+
 1. Select any variable in the authoring canvas.
 
-1. On the **Variable properties** pane, in the **Usage** section<!--Or "under **Usage**"-->, select **Bot (any topic can access)**.
+1. On the **Variable properties** pane, under **Usage**, select **Bot (any topic can access)**.
 
 1. The variable name will be given a prefix string `bot.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is now shown as `bot.UserName`. 
 
@@ -88,13 +88,13 @@ After the customer answers the question, the bot will resume the "Appointment bo
 
 You can set a bot variable to be initialized with an external source. This lets the bot start the conversation with some context. 
 
-For example, a customer brings up a bot chat from your web site, and the site already knows the customer's name. You let the bot know the user's name before starting the conversation, and the bot can have a more intelligent conversation with the customer without having to ask for their name again.<!--Suggested.--> 
+For example, a customer brings up a bot chat from your web site, and the site already knows the customer's name. You let the bot know the user's name before starting the conversation, and the bot can have a more intelligent conversation with the customer without having to ask for their name again.
 
 **Set bot variable from external source**
 
 1. Select any variable in the authoring canvas.
 
-1. On the **Variable properties** pane, in the **Usage** section, select the checkbox **External sources can set values**.<!--Edit to alt text okay?-->
+1. On the **Variable properties** pane, in the **Usage** section, select the checkbox **External sources can set values**.
 
     ![Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected](media/bot-variable-external.png "Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected")
 
