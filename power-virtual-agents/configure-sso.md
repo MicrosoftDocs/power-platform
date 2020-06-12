@@ -284,7 +284,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
                        token
                       },
                      "from":{
-                       id:clientApplication.account.account,
+                       id:clientApplication.account.accountidentifier,
                        name:clientApplication.account.userName,
                        role:"user"
                      }
