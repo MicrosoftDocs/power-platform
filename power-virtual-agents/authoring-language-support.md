@@ -44,7 +44,7 @@ You can now move on to creating new topics for your bot, authoring bot trigger p
 
 When you've created your own topic in the target language, you can test the bot in the chat canvas and see how well it understands user input and responds in that language.
 
-![Test in target language](media/language-testing.png "Test in target language")
+![Test in the target language](media/language-testing.png "Test in the target language")
 
 ## List of supported languages
 
