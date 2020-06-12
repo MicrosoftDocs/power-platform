@@ -68,7 +68,7 @@ To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 > [!div class="mx-imgBorder"] 
 > ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
 
-|  | |
+|Number  |Description |
 |---------|---------|
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
@@ -80,10 +80,10 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Resources** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
+To view the **Storage capacity** page, select **Resources** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.
 
 > [!div class="mx-imgBorder"] 
-> ![Details button](media/storage-data-per-environment2.png "Details button")
+> ![Storage data per environment details button](media/storage-data-per-environment2.png "Storage data per environment details button")
 
 
 > [!NOTE]
@@ -102,7 +102,7 @@ This page provides an environment-level detailed view of where your organization
 
 1. Select **Resources** > **Capacity** > **Storage capacity**.
 2. Select an environment.
-3. Select **Details** (![Details button](media/storage-data-details-button.png "Details button")).
+3. Select **Details** (![Storage data details button2](media/storage-data-details-button.png "Storage data details button2")).
 
 > [!div class="mx-imgBorder"] 
 > ![Environment capacity analytics](media/storage-data-capacity-details.png "Environment capacity analytics")

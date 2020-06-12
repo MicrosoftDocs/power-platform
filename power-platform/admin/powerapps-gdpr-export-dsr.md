@@ -182,7 +182,7 @@ Administrators can export app roles assignments for a user from the [Power Apps 
 
 3. Select **Share** for each of the apps in the environment.
 
-    ![Select app share](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
+    ![Select share](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
 
 4. If the user has access to the app, go to the app's **Share** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
@@ -312,7 +312,7 @@ Users can export the personal data stored within the gateway service from the [P
 
 3. Select **Share**, copy the contents of the page, and then paste it into a document editor, such as Microsoft Word.
 
-    ![Gateway details](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
+    ![Select Share](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
 
 ### Gateway PowerShell cmdlets
 There are also PowerShell cmdlets that allow you to retrieve, manage, and delete your personal gateways. For more information, see [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238).
