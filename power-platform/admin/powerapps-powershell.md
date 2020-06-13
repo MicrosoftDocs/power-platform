@@ -248,7 +248,7 @@ You can combine native PowerShell functions with the Power Apps cmdlets to manip
 Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Object -TypeName PSObject -Property @{ DisplayName = (Get-AdminPowerAppEnvironment -EnvironmentName $_.Name | Select -ExpandProperty displayName); Count = $_.Count } }
 ```
 
-![Get-AdminPowerApp command](media/get-adminpowerapp-environment.png "Get-AdminPowerApp command")
+![Get-AdminPowerApp environment](media/get-adminpowerapp-environment.png "Get-AdminPowerApp environment")
 
 #### Download Power Apps user details
 

@@ -73,7 +73,7 @@ If a user was assigned a Power Apps license then you can take the following step
 
 5. Find the Power Apps license, set the toggle to **Off**, and then select **Save**.
 
-    ![](./media/signup-question-and-answer/remove-license.png)
+    ![Remove license](./media/signup-question-and-answer/remove-license.png)
 
 If a user has access to Power Apps through their Microsoft 365 and Dynamics 365 plan license, then you can disable their access to the Power Apps service by taking the following steps:
 
@@ -87,7 +87,7 @@ If a user has access to Power Apps through their Microsoft 365 and Dynamics 365 
 
 5. Expand the user's Microsoft 365 or Dynamics 365 license, disable access to the service, and then select **Save**.
 
-    ![](./media/signup-question-and-answer/remove-service-plan.png)
+    ![Remove service plan](./media/signup-question-and-answer/remove-service-plan.png)
 
 Bulk removal of licenses is also possible through PowerShell. See [Remove licenses from user accounts with Office 365 PowerShell](https://technet.microsoft.com/library/dn771774.aspx) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to services with Office 365 PowerShell](https://technet.microsoft.com/library/dn771769.aspx).
 
@@ -95,25 +95,25 @@ Removing of the Power Apps license or service for a user in your organization wi
 
 * [Office.com](https://office.com)
 
-    ![](./media/signup-question-and-answer/office-home.png)
+    ![Office home](./media/signup-question-and-answer/office-home.png)
 * Microsoft 365 AppLauncher "waffle"
 
-    ![](./media/signup-question-and-answer/office-waffle.png)
+    ![Office menu](./media/signup-question-and-answer/office-waffle.png)
 
 ### How can I restrict my users' ability to access my organization's business data using Power Apps?
 Power Apps allows you to create data zones for business and non-business data, as shown below.  Once these data loss prevention policies are implemented, users are prevented from designing or running Power Apps that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
-![](./media/signup-question-and-answer/data-loss-prevention-policy.png)
+![Data loss prevention policies](./media/signup-question-and-answer/data-loss-prevention-policy.png)
 
 ### Why did 10,000 licenses for Microsoft Power Apps show up in my Microsoft 365 tenant?
 As a qualifying organization, users in your organization are eligible to try out Microsoft Power Apps  for 30 days, and these trial licenses represent the available capacity for new Power Apps users in your tenant. There is no charge for these licenses. Specifically, there are two possible reasons why you may see a capacity 10,000 (trial) licenses for Power Apps showing up in the Microsoft 365 admin portal:
 
 * If at least one user in your tenant participated in the Power Apps public preview that spanned from April 2016 to October 2016 then you will see 10,000 licenses labeled as "Microsoft Power Apps and Logic flows"
 
-    ![](./media/signup-question-and-answer/licenses_2.png)
+    ![Licenses](./media/signup-question-and-answer/licenses_2.png)
 * If at least one user in your tenant has signed-up for a Power Apps trial by going through trial signup **Option 1** outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-power-apps) section then you will see 10,000 licenses labeled "Microsoft Power Apps & Power Automate"
 
-    ![](./media/signup-question-and-answer/licenses_1.png)
+    ![Licenses2](./media/signup-question-and-answer/licenses_1.png)
 
 You can choose to assign additional licenses to users yourself through the Microsoft 365 admin portal, but please note that these are trial licenses for Microsoft Power Apps  and they will expire after 30 days of being assigned to a user.
 

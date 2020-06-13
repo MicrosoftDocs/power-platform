@@ -100,12 +100,12 @@ Error message displayed for missing document library:
   - Error message in the Unified Interface:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface](media/folder-error1-in-unified-interface.png)
+    > ![Folder error in unified interface](media/folder-error1-in-unified-interface.png)
 
   - Error message in the web client:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client](media/folder-error1-in-web-client.png)
+    > ![Folder error in web client](media/folder-error1-in-web-client.png)
 
 - Error message when the entity-based folder structure is enabled.
 
@@ -114,12 +114,12 @@ Error message displayed for missing document library:
   - Error message in the Unified Interface:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface](media/folder-error2-in-unified-interface.png)
+    > ![Error message in Unified Interface2](media/folder-error2-in-unified-interface.png)
 
   - Error message in ther web client:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client](media/folder-error2-in-web-client.png)
+    > ![Error message in web client2](media/folder-error2-in-web-client.png)
 
 ### Reason
 
