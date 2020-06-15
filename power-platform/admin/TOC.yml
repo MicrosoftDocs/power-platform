@@ -317,7 +317,7 @@
         - name: Multiple online environments or tenants
           href: multiple-online-environments-tenants.md
         - name: Administration mode
-          href: sandbox-environments.md#administration-mode
+          href: admin-mode.md
         - name: Support environment
           href: support-environment.md     
         - name: Automation of tasks with PowerShell 

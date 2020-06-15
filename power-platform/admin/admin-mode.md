@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
 ---
 
-## Administration mode  
+# Administration mode  
 You can set a sandbox or production environment in administration mode so that only users with System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
   
 > [!NOTE]
@@ -31,7 +31,7 @@ You can set a sandbox or production environment in administration mode so that o
 |Background operations | Select to disable all asynchronous operations (see [Asynchronous service](https://docs.microsoft.com/powerapps/developer/common-data-service/asynchronous-service)) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. **Note:**  Administration mode must be enabled to disable background operations.|  
 |Custom message | Enter a message that will be displayed to all users when they attempt to sign in.|  
   
-### Set administration mode  
+## Set administration mode  
   
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
