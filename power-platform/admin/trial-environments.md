@@ -23,16 +23,39 @@ Using the Power Platform admin center, you can create four types of Common Data 
 
 ## Trial (subscription-based)
 
-With version XYZ, we're introducing this new trial environment type. 
+With version XYZ, we're introducing a new trial environment type: trial (subscription-based). 
 
 
 trial
 - 30 days
 
 trial (subscription-based)
-- 3GB of capacity so 3 environments can be created.
-- details: time remaining is based on subscription
-- 
+- 3GB of capacity so 3 environments can be created
+- time remaining is based on subscription
+- up to 3 environments
+- extended life cycle operations on multiple environments - more sandbox-like operations, like copy
+- easily extended via Support
+- more licenses
+- controlled by admin
+- error messages
+- multiple people 
+- departmental solutions
+
+
+
+
+## Multiple ways to start a trial
+
+- Getting Started
+- within an app like Marketing
+- CSP, 
+- your site
+
+## Trial limits and durations
+
+- difference between adhoc subscription (individual creates, not admin) trials and company subscription.
+
+## Invite others
 
 ## Check the expiration date
 
