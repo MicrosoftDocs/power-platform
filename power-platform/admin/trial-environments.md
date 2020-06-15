@@ -1,6 +1,6 @@
 ---
-title: Trial environments | Microsoft Docs
-description: About trial environments
+title: Trials | Microsoft Docs
+description: About trial and trial (subscription-based) environments
 author: jimholtz
 ms.reviewer: 
 manager: kvivek
@@ -17,47 +17,55 @@ search.app:
   - Powerplatform
 ---
 
-# About trial environments
+# About trials
 
-Using the Power Platform admin center, you can create four types of Common Data Service environments: sandbox, production, trial, or trial (subscription-based). A trial environment is useful for trying out model-driven apps in Dynamics 365 at no cost. Trial environments expire after 30 days.
+Using the Power Platform admin center, you can create four types of Common Data Service environments: sandbox, production, trial, or trial (subscription-based). Trials are useful for trying out model-driven apps in Dynamics 365 at no cost. Choose either a trial or trial (subscription-based) environment to get started with Dynamics 365 apps.
 
-## Trial (subscription-based)
+## Trial environments
 
-With version XYZ, we're introducing a new trial environment type: trial (subscription-based). 
+Trial environments can be created by non-admin users for personal use. Here's what you should know.
 
+**Trial environments:**
+- Expire in 30 days
+- Come with 25 user licenses
+- Come with 1GB capacity
+- Are a single environment
+- Can be created by anyone with a valid subscription license
+- Require admins to use PowerShell cmdlets to control creating trial environments or disabling trial environments
 
-trial
-- 30 days
+## Trial (subscription-based) environments
 
-trial (subscription-based)
-- 3GB of capacity so 3 environments can be created
-- time remaining is based on subscription
-- up to 3 environments
-- extended life cycle operations on multiple environments - more sandbox-like operations, like copy
-- easily extended via Support
-- more licenses
-- controlled by admin
-- error messages
-- multiple people 
-- departmental solutions
+Trial (subscription-based) environments are suitable for broader, departmental-level exploration and have some significant advantages over trial environments.
 
-
-
+**Trial (subscription-based) environments:**
+- Are retained for as long as the subscription is valid, no expiration
+- Have 3GB of capacity so 3 environments can be created
+- Can be licensed based on your subscription license availability
+- Only tenant admins can create
+- Have extended lifecycle operations [Jim: need text/examples]
 
 ## Multiple ways to start a trial
 
-- Getting Started
-- within an app like Marketing
-- CSP, 
-- your site
+The type of trial you create depends on where you start and your tenant-level permissions.
 
-## Trial limits and durations
 
-- difference between adhoc subscription (individual creates, not admin) trials and company subscription.
+|Trial type  | Tenant-level permissions  | Create trial location  |
+|---------|---------|---------|
+|Trial     |  End user or admin      |  Power Platform admin center       |
+|Trial     |  End user or admin         | https://trials.dynamics.com/        |
+|Trial (subscription-based)      |  End user or admin        | Get started pages such as: <br /> <ul><li>https://dynamics.microsoft.com/en-us/get-started/?appname=salespro</li><br /><li>https://dynamics.microsoft.com/en-us/get-started/?appname=customerservice</li></ul>      |
+|Trial (subscription-based)      | admin        | Power Platform admin center        |
 
-## Invite others
 
-## Check the expiration date
+
+## Setting up a trial (subscription-based) environment in Power Platform admin center
+
+
+
+## Setting up a trial environment in Power Platform admin center
+
+
+### Check the expiration date
 
 To determine when a trial environment will expire:
 
@@ -68,15 +76,18 @@ To determine when a trial environment will expire:
    > [!div class="mx-imgBorder"] 
    > ![Trial days remaining](media/trial-expiration.png "Trial days remaining")
 
-## Create a trial environment with Dynamics 365 apps
+### Create a trial environment with Dynamics 365 apps
 
 Currently, Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service can only be enabled in production environments. To create a trial with Dynamics 365 apps, see [Start your digital transformation here](https://trials.dynamics.com).
 
-## Create a trial environment without Dynamics 365 apps
+### Create a trial environment without Dynamics 365 apps
 
 You can create a trial environment in the Power Platform admin center without Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. See [Create and manage environments in the Power Platform admin center](create-environment.md) and select **Trial** as the environment type.
 
-## Convert a trial environment to production
+
+
+
+## Convert either trial type to production
 
 While using the trial environment, if you created resources you want to retain longer than 30 days, convert the trial to a production environment.
 
