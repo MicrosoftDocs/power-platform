@@ -21,6 +21,7 @@ Power Virtual Agents enables you to extend your bot using Microsoft Bot Framewor
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
 
 
 ## Add a Skill to bot conversations
