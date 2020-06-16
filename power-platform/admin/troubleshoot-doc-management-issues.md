@@ -109,7 +109,7 @@ This error typically occurs when the SharePoint document library was created for
 
 Error message displayed for missing folder:
 
-  "Folder `<folder name>` has been renamed or deleted from SharePoint. It was expected inside "<folder path> " path. Restore the folder on SharePoint and try again.
+  "Folder "`<folder name>`" has been renamed or deleted from SharePoint. It was expected inside "`<folder path>`" path. Restore the folder on SharePoint and try again.
 
 - Error message when the entity-based folder structure is not enabled.
 
