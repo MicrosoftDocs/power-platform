@@ -47,9 +47,9 @@ Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 | Run Canvas apps offline                                               | Yes                          |
 | Support for data policies established by the Microsoft 365 administrator | Yes                          |
 | Access on-premises data or use premium or custom connectors           | \-                           |
-| Access to Common Data Service                    | \- (see note below)                |
+| Access to Common Data Service                    | Yes*                |
 
-[!IMPORTANT] A limited set of Common Data Service capabilities are included with Microsoft 365 licenses to support some Microsoft 365 products. However, a Power Apps or Power Automate Standalone plan is still needed to run apps with Common Data Service.
+*\*A limited set of Common Data Service capabilities are included with Microsoft 365 licenses to support some Microsoft 365 products. However, a Power Apps or Power Automate Standalone plan is still needed to run apps with Common Data Service*.
 
 ## Power Apps and Power Automate Standalone plans
 
