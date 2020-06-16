@@ -23,7 +23,7 @@ Using the Power Platform admin center, you can create four types of Common Data 
 
 ## Trial environments
 
-Trial environments can be created by non-admin users for personal use. Here's what you should know.
+The longstanding trial environment can be created by non-admin users for personal use. Here's what you should know.
 
 **Trial environments:**
 - Expire in 30 days
@@ -35,7 +35,7 @@ Trial environments can be created by non-admin users for personal use. Here's wh
 
 ## Trial (subscription-based) environments
 
-Trial (subscription-based) environments are suitable for broader, departmental-level exploration and have some significant advantages over trial environments.
+The recently introduced trial (subscription-based) environment is suitable for broader, departmental-level exploration and has some advantages over the trial environment.
 
 **Trial (subscription-based) environments:**
 - Are retained for as long as the subscription is valid, no expiration
@@ -56,14 +56,68 @@ The type of trial you create depends on where you start and your tenant-level pe
 |Trial (subscription-based)      |  End user or admin        | Get started pages such as: <br /> <ul><li>https://dynamics.microsoft.com/en-us/get-started/?appname=salespro</li><br /><li>https://dynamics.microsoft.com/en-us/get-started/?appname=customerservice</li></ul>      |
 |Trial (subscription-based)      | admin        | Power Platform admin center        |
 
+## Creating a trial (subscription-based) environment in the Power Platform admin center
 
+Follow these steps to create a trial (subscription-based) environment in the Power Platform admin center.
 
-## Setting up a trial (subscription-based) environment in Power Platform admin center
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
+2. Go to **Environments**, and then select **New**.
 
+   > [!div class="mx-imgBorder"] 
+   > ![Create new environment](media/new-environment.png "Create new environment")
 
-## Setting up a trial environment in Power Platform admin center
+3. For type, select **Trial (subscription-based)**, and then fill in and select other settings. Select **Next**.
 
+   |Setting  |Description  |
+   |---------|---------|
+   |Name     | The name of your environment.        |
+   |Type     | Choose production, trial, trial (subscription-based) or sandbox.        |
+   |Region     | Choose a region for the environment.        |
+   |Purpose     | A description of the environment.         |
+
+   > [!div class="mx-imgBorder"] 
+   > ![Create new environment](media/trial-subscription-based.png "Create new environment")
+
+   > [!NOTE]
+   > **Create a database for this environment** is preset to **Yes** and can't be changed as a Common Data Services database must be created for a trial (subscription-based) environment.
+
+4. Specify the following settings, and then select **Save**.
+   
+   |Setting  |Description  |
+   |---------|---------|
+   |Language     | The default language for this environment.        |
+   |URL | The environment name to include in the URL.     |
+   |Currency     | The base currency used for reporting.         |
+   |Enable Dynamics 365 apps | Select **Yes** to  display the following setting. Select **No**, to provision an environment with no applications included. [Jim: I need input on this and next setting.] |
+   |Automatically deploy these apps  | If you selected **Yes** above, select **All enterprise applications** to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.  Select  **None** to provision an environment with no applications included.|
+   |Security group | Select a security group to restrict access to this environment. |
+
+   > [!div class="mx-imgBorder"] 
+   > ![Create new environment database settings](media/new-environment-add-database.png "Create new environment database settings")
+
+## Creating a trial environment in the Power Platform admin center
+
+Follow these steps to create a trial (subscription-based) environment in the Power Platform admin center.
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+
+2. Go to **Environments**, and then select **New**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Create new environment](media/new-environment.png "Create new environment")
+
+3. For type, select **Trial (subscription-based)**, and then fill in and select other settings. Select **Next**.
+
+   |Setting  |Description  |
+   |---------|---------|
+   |Name     | The name of your environment.        |
+   |Type     | Choose production, trial, trial (subscription-based) or sandbox.        |
+   |Region     | Choose a region for the environment.        |
+   |Purpose     | A description of the environment.         |
+
+   > [!div class="mx-imgBorder"] 
+   > ![Create new environment](media/trial-subscription-based.png "Create new environment")
 
 ### Check the expiration date
 
