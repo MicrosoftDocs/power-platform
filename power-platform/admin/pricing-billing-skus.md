@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/04/2019
+ms.date: 06/15/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -32,7 +32,7 @@ can also utilize data outside of Microsoft 365 by connecting to common services
 including Box.com, Facebook, and many more via the use of standard connectors.
 
 Here is a brief overview of capabilities included with Power Apps for Microsoft 365
-plan. More details around what Office plans includes these capabilities can be
+plan. More details around which Microsoft 365 plans include these capabilities can be
 found in [Microsoft Power Apps and Power Automate Licensing
 Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
