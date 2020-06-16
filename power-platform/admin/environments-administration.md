@@ -188,7 +188,7 @@ If you want, you can delete an existing environment of that specific type and cr
 If you are getting any other error message or have more questions, please connect with us [here][5].
 
 ### When will my trial environment expire?   
-Trial environments expire after 30 days from their creation. If you don't want your trial environments to expire, you can [convert them to production environments](trial-environments.md#convert-a-trial-environment-to-production). 
+Trial environments expire after 30 days from their creation. If you don't want your trial environments to expire, you can [convert them to production environments](trial-environments.md#convert-either-trial-type-to-production). 
 
 ### Does my current database (created with previous version of the Common Data Service) also gets counted in the quota?
 If you had a database (created with previous version of the Common Data Service), they will also get counted with your production environment quota. If you now create a database in an environment (created prior to March 15, 2018) then it will also get counted as production environment.
