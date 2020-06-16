@@ -2,7 +2,7 @@
 title: "Configure single sign-on in Power Virtual Agents"
 description: "Enable your bot to authenticate an already-signed-in user"
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider"
-ms.date: 5/22/2020
+ms.date: 6/15/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -284,7 +284,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
                        token
                       },
                      "from":{
-                       id:clientApplication.account.account,
+                       id:clientApplication.account.accountidentifier,
                        name:clientApplication.account.userName,
                        role:"user"
                      }
