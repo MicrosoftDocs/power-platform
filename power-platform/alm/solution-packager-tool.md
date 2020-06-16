@@ -23,7 +23,7 @@ SolutionPackager is a tool that can reversibly decompose a Common Data Service c
 
 ## Where to find the SolutionPackager tool  
 
- The SolutionPackager tool is distributed as part of the [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGet package. See [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget.md) for information about how to download it.
+ The SolutionPackager tool is distributed as part of the [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools) NuGet package. See [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget) for information about how to download it.
   
 <a name="arguments"></a>   
 
