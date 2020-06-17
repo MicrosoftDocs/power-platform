@@ -37,7 +37,7 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 > ```
 
 ## Requirements
-PowerShell in this topic requires PowerShell version 5.0. To check the version of PowerShell running on your machine, run the following command:
+PowerShell in this topic requires PowerShell version 5.x. To check the version of PowerShell running on your machine, run the following command:
 
 > ```powershell
 > $PSVersionTable.PSVersion
@@ -46,7 +46,7 @@ PowerShell in this topic requires PowerShell version 5.0. To check the version o
 If you have an outdated version, see [Upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
 
 > [!IMPORTANT]
-> The modules described in this document, use .NET Framework. This makes it incompatible with PowerShell 6.0, which uses .NET Core. 
+> The modules described in this document, use .NET Framework. This makes it incompatible with PowerShell 6.0 and later, which uses .NET Core. 
 
 ## Installation
 To run the PowerShell cmdlets for app creators, do the following:
