@@ -94,6 +94,8 @@
           href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
+        - name: Administration mode
+          href: admin-mode.md
         - name: Customer managed encryption key
           href: manage-encryption-key.md
         - name: Trial environment
@@ -315,7 +317,8 @@
         - name: Multiple online environments or tenants
           href: multiple-online-environments-tenants.md
         - name: Administration mode
-          href: sandbox-environments.md#administration-mode
+     #     href: admin-mode.md
+          href: sandbox-environments.md#administration-mode         
         - name: Support environment
           href: support-environment.md     
         - name: Automation of tasks with PowerShell 
@@ -352,7 +355,6 @@
           href: security-roles-privileges.md
         - name: Create users and assign security roles
           href: create-users-assign-online-security-roles.md
-    #   - name: Automatic role assignment by the system
         - name: Use service admin roles to manage your tenant
           href: use-service-admin-role-manage-tenant.md
         - name: Create or edit a security role
@@ -636,8 +638,8 @@
           href: connect-to-pop3-or-smtp-servers.md
         - name: Connect to IMAP or SMTP servers
           href: connect-to-imap-servers.md 
-      #  - name: Connect Gmail accounts using OAuth 2.0
-      #    href: connect-gmail-oauth2.md
+        - name: Connect Gmail accounts using OAuth 2.0
+          href: connect-gmail-oauth2.md
         - name: Troubleshooting and monitoring server-side synchronization
           href: troubleshooting-monitoring-server-side-synchronization.md
         - name: When would I want to use this check box?
