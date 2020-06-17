@@ -35,7 +35,7 @@ separate apps that might have different roles, security requirements, or target
 audiences. Each environment can have only one Common Data Service database.
 
 > [!IMPORTANT]
-> When you create an environment, you can choose to install Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Marketing. It is important to determine at that time if these apps are require or not because they cannot be uninstalled or installed afterwards. If you aren't building on these apps and will not require them in the future, we recommend that you not install them in your environments. This will help avoid dependency complications when you distribute solutions between environments.
+> When you create an environment, you can choose to install Dynamics 365 apps, such as Dynamics 365 Sales and Dynamics 365 Marketing. It is important to determine at that time if these apps are required or not because they can't be uninstalled or installed later. If you aren't building on these apps and will not require them in the future, we recommend that you not install them in your environments. This will help avoid dependency complications when you distribute solutions between environments.
 
 ### Types of environments used in ALM
 
