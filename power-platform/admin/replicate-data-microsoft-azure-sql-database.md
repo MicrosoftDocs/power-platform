@@ -608,7 +608,7 @@ EXEC SP_EXECUTESQL @sql;
 |United Kingdom West|51.141.44.218|  
   
 > [!NOTE]
-> North America customers should whitelist IP addresses for both East US and West US.
+> North America customers should add IP addresses to an approved list for both East US and West US.
 
 <a name="DES_knownissues"></a>   
 ## Known issues  
