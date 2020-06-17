@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 05/13/2020
+ms.date: 06/17/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,6 +35,18 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 > ```powershell
 > Add-PowerAppsAccount -Endpoint "usgov" 
 > ```
+
+## Requirements
+PowerShell in this topic requires PowerShell version 5.0. To check the version of PowerShell running on your machine, run the following command:
+
+> ```powershell
+> $PSVersionTable.PSVersion
+> ```
+
+If you have an outdated version, see [Upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
+
+> [!IMPORTANT]
+> The modules described in this document, use .NET Framework. This makes it incompatible with PowerShell 6.0, which uses .NET Core. 
 
 ## Installation
 To run the PowerShell cmdlets for app creators, do the following:
