@@ -203,10 +203,10 @@ applications.
 To get started, you need the following:
 
 -   A GitHub account, where you can create a repository. If you don't have one,
-    you can create one for free.
+    you can [create one for free](https://github.com/join).
 
--   An Azure DevOps organization. If you don't have one, you can create one for
-    free.
+-   An Azure DevOps organization. If you don't have one, you can [create one for
+    free](https://dev.azure.com/).
 
 More information: [Create your first pipeline](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline?view=azure-devops)
 
