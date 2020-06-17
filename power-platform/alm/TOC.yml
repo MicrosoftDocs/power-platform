@@ -69,6 +69,8 @@
           href: package-deployer-tool.md
         - name: Solution Packager tool
           href: solution-packager-tool.md
+        - name: Source control with solution files
+          href: use-source-control-solution-files.md
     - name: Verify quality of solutions and packages
       items:
         - name: Use the Power Apps checker web API 

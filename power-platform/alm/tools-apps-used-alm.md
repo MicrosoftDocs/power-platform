@@ -87,7 +87,7 @@ Service instance. More information: [Create packages for the Package Deployer](p
 ## Solution Packager
 Solution Packager is a tool that can unpack a compressed solution file into
 multiple XML files and other files, so they can be easily managed by
-a source control system. More information: [Use the Solution Packager tool to compress and extract a solution file](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/compress-extract-solution-file-solutionpackager)
+a source control system. More information: [Use the Solution Packager tool to compress and extract a solution file](solution-packager-tool.md)
 
 ## Power Apps CLI
 Microsoft Power Apps CLI is a simple, single-stop developer command-line
