@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 06/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,8 +35,18 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
  Model-driven apps in Dynamics 365 leverage the capabilities of on-premises versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] or [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] and integrates with [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] and [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)]. For more information about the supported versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)], see [Supported versions of Office](web-application-requirements.md#supported-versions-of-office).  
   
  [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]  
+
+## IP addresses and URLs
+If certain IP address ranges or individual IP addresses are blocked in the environment, users may not be able to reach Microsoft Dynamics 365 environments. See the following:
+
+- [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
+- [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
+- [Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
+- [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
+
+Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause model-driven apps in Dynamics 365 to operate incorrectly or not at all. See [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
   
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
- [Work with requirements as a solution architect for Power Platform and Dynamics 365](https://docs.microsoft.com/learn/modules/work-with-requirements/index) <br />
- [Microsoft Dynamics CRM Online IP Address Ranges](https://support.microsoft.com/help/2728473/microsoft-dynamics-crm-online-ip-address-ranges)
+ [Work with requirements as a solution architect for Power Platform and Dynamics 365](https://docs.microsoft.com/learn/modules/work-with-requirements/index)
+
