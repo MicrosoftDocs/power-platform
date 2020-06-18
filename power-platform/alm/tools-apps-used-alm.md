@@ -27,7 +27,7 @@ provides a unified portal for administrators to manage environments and settings
 for Power Apps, Power Automate, and model-driven apps in Dynamics 365 (such as
 Dynamics 365 Sales and Dynamics 365 Customer Service). From the admin center,
 administrators can manage environments, data integration, gateways, data policies,
-and get key Microsoft Power Platform metrics through Common Data Service analytics, Power Automate analytics and Power Apps analytics.
+and get key Microsoft Power Platform metrics through Common Data Service analytics, Power Automate analytics, and Power Apps analytics.
 
 More information:
 
