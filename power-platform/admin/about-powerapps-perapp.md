@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 06/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -147,6 +147,10 @@ For customers that want to use a Power Apps per app plan and they have the *Allo
    1. Set-MsolCompanySettings -AllowAdHocSubscriptions $false
 
 6. Execute the following command, if internal consent plans were previously removed: [Add-AllowedConsentPlans](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#block-trial-licenses-commands)
+
+6. Execute the following command, if viral consent plans were previously removed: [Add-AllowedConsentPlans -(Types @("Viral")](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#block-trial-licenses-commands)
+
+   If AllowAdHocSubscriptions is off and viral consent plans are allowed, end-users can use viral licenses already assigned to them but won't be able to sign up for viral licenses on their own. 
 
 ### Why are makers prompted to start a trial when creating a premium connection using gateways? 
 This is an artifact of previous, but no longer required, licenses being assigned to Power Apps makers. This license check and prompt to start a trial will eventually be removed. 
