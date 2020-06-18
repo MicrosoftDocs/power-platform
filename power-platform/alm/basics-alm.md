@@ -2,12 +2,12 @@
 title: "Application lifecycle management (ALM) basics with Microsoft Power Platform | Microsoft Docs"
 description: "Learn the basics of application lifecycle management with Microsoft Power Platform"
 keywords: 
-author: Mattp123
-ms.author: matp
+author: shmcarth
+ms.author: shmcarth
 manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
-ms.reviewer: ""
+ms.reviewer: "matp"
 ms.service: powerapps
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -47,7 +47,7 @@ Service environments:
     to safely develop and test application changes with low risk. Sandbox
     environments include capabilities that would be harmful in a production
     environment, such as reset, delete, and copy operations. More information:
-    [Manage sandbox environments](https://docs.microsoft.com/power-platform/admin/sandbox-environments)
+    [Manage sandbox environments](/power-platform/admin/sandbox-environments)
 
 -   **Production**  The environment where apps and other software are put into
     operation for their intended use.
@@ -82,10 +82,10 @@ Common Data Service.
 | Default              | By default, every user in your tenant can create and edit apps in a Common Data Service default environment that has a database. | We strongly recommend that you create environments for a specific purpose, and grant the appropriate roles and privileges only to those people who need them. |
 
 More information: 
-- [Environments overview](https://docs.microsoft.com/en-us/power-platform/admin/environments-overview)
-- [Manage environment roles](https://docs.microsoft.com/power-platform/admin/environments-administration#manage-security-for-your-environments)
-- [Create users and assign security roles](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles) 
-- [Create environments](https://docs.microsoft.com/power-platform/admin/create-environment)
+- [Environments overview](/power-platform/admin/environments-overview)
+- [Manage environment roles](/power-platform/admin/environments-administration#manage-security-for-your-environments)
+- [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles) 
+- [Create environments](/power-platform/admin/create-environment)
 
 ## Solutions
 Solutions are used to transport apps and components from one environment to
@@ -202,7 +202,7 @@ To get started, you need the following:
 -   An Azure DevOps organization. If you don't have one, you can [create one for
     free](https://dev.azure.com/).
 
-More information: [Create your first pipeline](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline?view=azure-devops)
+More information: [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline?view=azure-devops)
 
 ## Licensing
 To create or edit apps and flows by using Power Apps and Power Automate,
