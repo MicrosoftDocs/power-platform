@@ -37,7 +37,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
  [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]  
 
 ## IP addresses and URLs
-If certain IP address ranges or individual IP addresses are blocked in the environment, users may not be able to reach Microsoft Dynamics 365 environments. See the following:
+If certain IP address ranges or individual IP addresses are blocked in the environment, users may not be able to reach Microsoft Dynamics 365 environments. Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). See the following:
 
 - [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
 - [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
