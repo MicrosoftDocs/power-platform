@@ -208,7 +208,7 @@ More information: [Create your first pipeline](https://docs.microsoft.com/azure/
 To create or edit apps and flows by using Power Apps and Power Automate,
 respectively, users will be required to have a per-user license for Power Apps or
 Power Automate or an appropriate Dynamics 365 application license. For more
-information, see [Licensing overview for Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus). We also recommend contacting your Microsoft account representative to discuss your licensing needs. 
+information, see [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus). We also recommend contacting your Microsoft account representative to discuss your licensing needs. 
 
 ## ALM considerations
 When you consider ALM as an integral part of building apps on Microsoft Power Platform, it can drastically improve speed, reliability, and user experience of
