@@ -20,7 +20,7 @@ search.app:
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data
 The "right of data portability" allows a data subject to request a copy of his or her personal data in an electronic format (that is, a structured, commonly used, machine readable and interoperable format) that may be transmitted to another data controller:
 
-* Website access: [Power Apps portal](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Website access: [Power Apps portal](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell access: Power Apps [App creator cmdlets](https://go.microsoft.com/fwlink/?linkid=871448), [Admin cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
 
@@ -54,7 +54,7 @@ To perform the administration operations outlined in this document using the Pow
 
 * A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
-* [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+* [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
 ## Step 1: Export personal data contained within environments created by the user
 
@@ -94,7 +94,7 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 #### Power Apps Admin center
 Administrators can export a user's environment permissions from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization. You must be an [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
@@ -133,7 +133,7 @@ A user can export an app from the [Power Apps portal](https://make.powerapps.com
 ### Power Apps Admin center
 An administrator can export apps created by a user starting from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization. You must be an [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
@@ -174,7 +174,7 @@ Get-AppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ### Power Apps Admin center
 Administrators can export app roles assignments for a user from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
 
-1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization. You must be an [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization. You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
@@ -182,7 +182,7 @@ Administrators can export app roles assignments for a user from the [Power Apps 
 
 3. Select **Share** for each of the apps in the environment.
 
-    ![Select app share](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
+    ![Select share](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
 
 4. If the user has access to the app, go to the app's **Share** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
@@ -312,7 +312,7 @@ Users can export the personal data stored within the gateway service from the [P
 
 3. Select **Share**, copy the contents of the page, and then paste it into a document editor, such as Microsoft Word.
 
-    ![Gateway details](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
+    ![Select Share](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
 
 ### Gateway PowerShell cmdlets
 There are also PowerShell cmdlets that allow you to retrieve, manage, and delete your personal gateways. For more information, see [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238).

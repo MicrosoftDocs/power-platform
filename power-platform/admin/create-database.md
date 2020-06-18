@@ -32,22 +32,22 @@ There are various ways to create a database:
     
 2. Select the environment in which you want to create the database.
     
-    ![](./media/create-database/environment-list-new.png)
+    ![Environment list new](./media/create-database/environment-list-new.png)
 
 3. On the **Details** tab, click **Create a database**. 
     
-    ![](./media/create-database/Create-DB-From-Details.png)
+    ![Create database from details](./media/create-database/Create-DB-From-Details.png)
 
 4. Choose currency and language to proceed with database creation. 
     
-    ![](./media/create-database/DB-Choose-options.png)
+    ![Database choose options](./media/create-database/DB-Choose-options.png)
 
 ## Create a database in the Entities pane of Power Apps
 1. On [powerapps.com](https://make.powerapps.com), expand the **Data** section and click or tap **Entities** in the left navigation pane.
 
 2. Click **Create Database** to create the database.
 
-    ![](./media/create-database/Create-DB-From-Entities.png)
+    ![Create database from entities](./media/create-database/Create-DB-From-Entities.png)
 
 ## Security model for the databases
 When a database is created, the users who have environment roles assigned to them, will continue to maintain those privileges.  

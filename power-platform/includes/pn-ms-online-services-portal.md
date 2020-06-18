@@ -1,1 +1,1 @@
-Office 365 admin portal
+Microsoft 365 admin portal

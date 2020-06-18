@@ -66,7 +66,7 @@ After selecting a gateway member, you can select **Remove** to remove it. This d
 Use **Settings** to set on-Premises data gateway settings such as the gateway cluster name, department, General settings and Power BI settings. 
 
 > [!div class="mx-imgBorder"] 
-> ![Data gateway settings](media/data-gateways-settings-tab.png "Data gateway settings")
+> ![Data gateway settings tab](media/data-gateways-settings-tab.png "Data gateway settings tab")
 
 > [!div class="mx-imgBorder"] 
 > ![Data gateway settings](media/data-gateways-settings.png "Data gateway settings")
@@ -82,11 +82,11 @@ For more information on **Distribute requests across all active gateways in this
 Select a gateway cluster, then select **Details** > **Check status** (![Gateway status](media/gateway-status.png "Gateway status")) to check the status of a gateway cluster.
 
 > [!div class="mx-imgBorder"] 
-> ![Data gateway settings](media/data-gateways-status.png "Data gateway settings")
+> ![Check status](media/data-gateways-status.png "Check status")
 
 ## Manage users
 
-Select the **People** icon (![People](media/people.png)) next to the gateway cluster name to see the list of gateway users. Add or remove gateway admins in the **Manage Users** page.
+Select the **People** icon (![Select People](media/people.png)) next to the gateway cluster name to see the list of gateway users. Add or remove gateway admins in the **Manage Users** page.
 
 For personal gateways, this would show the owner of the personal gateway and cannot be changed due to the security scope of personal gateways.
 

@@ -1,12 +1,12 @@
 ---
-title: "Power Apps build tools for Azure DevOps | Microsoft Docs"
+title: "Microsoft Power Platform Build Tools for Azure DevOps | Microsoft Docs"
 description: "Learn about the ALM-related tools, APIs, and services that are available to developers when using Azure DevOps."
 keywords: 
 author: phecke
 ms.author: pehecke
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 06/04/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -17,29 +17,37 @@ search.app:
   - D365CE
 ---
 
-# Power Apps build tools for Azure DevOps
+# Microsoft Power Platform Build Tools for Azure DevOps
 
-Use Power Apps build tools to automate common build and deployment tasks related
-to Power Apps. This includes synchronization of solution metadata (also known as
-solutions) between development environments and source control, generating build
-artifacts, deploying to downstream environments, provisioning or de-provisioning
-environments, and the ability to perform static analysis checks against your
-solution by using the Power Apps checker service.
+Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
+to apps built on the Power Platform. These tasks include: 
+Use Microsoft Power Platform Build Tools to automate common build and deployment tasks related
+to apps built on the Power Platform. These tasks include: 
+<ul><li>Synchronization of solution metadata (also known as
+solutions) that contains the various platform components such as customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation), canvas apps, model-driven apps, UI flows, virtual agents, AI Builder models, and connectors between development environments and source control</li></ul>
+<ul><li>Generating build artifacts</li></ul>
+<ul><li>Deploying to downstream environments</li></ul>
 
-The Power Apps build tools tasks can be used along with any other available
+<ul><li>Provisioning or de-provisioning
+environments</li></ul>
+
+<ul><li>Perform static analysis checks against solutions by using the Power Apps checker service</li></ul>
+
+
+The Microsoft Power Platform Build Tools tasks can be used along with any other available
 Azure DevOps tasks to compose your build and release pipelines. Pipelines
-that teams commonly put in place include Initiate, Build, and Release.
+that teams commonly put in place include Initiate, Export from Dev, Build, and Release.
 
 ![ALM powered by Azure DevOps](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
-## What are Power Apps build tools?
+## What are Microsoft Power Platform Build Tools?
 
-The Power Apps build tools are a collection of Power Apps&ndash;specific Azure DevOps
+The Microsoft Power Platform Build Tools are a collection of Power Platform&ndash;specific Azure DevOps
 build tasks that eliminate the need to manually download custom tooling and
-scripts to manage the application lifecycle of Power Apps. The tasks can be used
+scripts to manage the application lifecycle of apps built on the Power Platform. The tasks can be used
 individually to perform a simple task, such as importing a solution into a
 downstream environment, or used together in a pipeline to orchestrate a
-scenario such as "generate a build artifact," "deploy to test," or "harvest maker
+scenario such as "generate a build artifact", "deploy to test", or "harvest maker
 changes." The build tasks can largely be categorized into four types:
 
 - Helper
@@ -50,217 +58,98 @@ changes." The build tasks can largely be categorized into four types:
 
 - Environment management
 
-## Get the Power Apps build tools
+For more information about the available tasks see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md). 
 
-The Power Apps build tools can be installed into your Azure DevOps organization
-from [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools).
-After they're installed, all tasks included in the Power Apps build tools will be
+## Get Microsoft Power Platform Build Tools
+
+Microsoft Power Platform Build Tools can be installed into your Azure DevOps organization
+from [Azure Marketplace](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools).
+
+After installation, all tasks included in the Microsoft Power Platform Build Tools will be
 available to add into any new or existing pipeline. You can find them by
-searching for **powerapps**.
+searching for "Power Platform".
 
-![Get the Power Apps build tools](media/get-build-tools.png "Get the Power Apps build tools")
+![Get the Microsoft Power Platform Build Tools](media/get-build-tools.png "Get the Microsoft Power Platform Build Tools")
 
-## Build tool tasks
+## Connection to environments
 
-The available build tasks are described in the following sections.
+To interact with the Power Platform environment, a connection must be established that enables the various build tool tasks to perform the required actions. Two types of connections are available:
 
-### Helper task
+- Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
+- Service principal and client secret: (recommended) This connection type uses service principal based authentication and supports multi-factor authentication.
 
-The Power Apps tools installer is required to be the first task in any build and
-release pipeline. This task installs a set of Power Apps&ndash;specific tools required
-by the agent to run the Power Apps build tasks. This task doesn't require any
-additional configuration.
+## Configure service connections using a service principal
 
-### Quality check
+To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
 
-The Power Apps checker task runs a static analysis check on your solutions
-against a set of best-practice rules to identify any problematic patterns that
-you might have inadvertently introduced when building your solution.
+### Create service principal and client secret using PowerShell
 
-| Parameters         | Description      |
-|--------------------|------------------|
-| Power Apps checker service                         | Select the service endpoint for the Power Apps checker. The service endpoint is defined under **Service Connections** in **Project Settings**.<p/>**Note**: The service connection type that must be used for this specific task only is **Power Apps Checker**, which is a service principals connection. You need to [configure service principals before you can use the task](https://aka.ms/buildtoolsconnection). |
-| Location of file to analyze       | Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.   |
-| Local files to analyze/SAS URI for the file to analyze | Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\*.zip for all zip files in all subfolders. You can choose to specify the files directly or reference a file by using an SAS URI.     |
-| Rule set                          | Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps maker portal.</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to AppSource.</li></ul>    |
+This PowerShell script assists in creating and configuring the service principal to be used with the Microsoft Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
 
-More information about how to configure the quality check service connection:
-[Configure service connection for Power Apps checker](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-tasks#configure-service-connection-for-power-apps-checker)
+This application is then added as an administrator user to the Power Platform tenant itself.
 
-### Solution tasks
+**Installation**
 
-This set of tasks perform actions against solutions.
+Download the following PowerShell cmdlet: https://pabuildtools.blob.core.windows.net/spn-docs-4133a3fe/New-CrmServicePrincipal.ps1
 
-#### Power Apps import solution
+<ul><li>Open a regular Windows PowerShell command prompt (standard, not PS core)
+</li></ul> 
+<ul><li>Navigate to the folder where you saved the script, and unblock the script using the following command: `Unblock-File New-CrmServicePrincipal.ps1`
+</li></ul>
+<ul><li>Run the script: `.\New-CrmServicePrincipal.ps1`</li></ul>
 
-The import solution task imports a solution into a target environment.
+The script will prompt two times with AAD login dialogs:
 
-| Parameters           | Description        |
-|----------------------|--------------------------|
-| Power Apps environment URL | The service endpoint for the target environment that you want to import the solution to. For example, [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com/). Service endpoints can be defined under **Service Connections** in **Project Settings**. |
-| Solution input file        | The path and file name of the solution.zip file to import into the target environment. For example: \$(Build.ArtifactStagingDirectory)\$(SolutionName).zip.      |
 
-> [!NOTE]
-> Variables give you a convenient way to get key bits of data into
-> various parts of your pipeline. For a comprehensive list of predefined variables, see [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml).
+<ul><li>1st prompt: to login as administrator to the AAD instance associated with the Microsoft Power Platform tenant
+</li></ul> 
+<ul><li>2nd prompt: to login as tenant administrator to the Microsoft Power Platform tenant itself
+</li></ul>
 
-#### Power Apps export solution
 
-The export solution task exports a solution from a source environment.
+Once successful, 3 columns are displayed:
 
-| Parameters      | Description     |
-|-----------------|---------------------|
-| Power Apps environment URL | The service endpoint for the source environment that you want to export the solution from. Defined under **Service Connections** -\> **Generic Service Connection** in **Project Settings**. |
-| Solution name              | The name of the solution to export. Always use the solution **Name**, not its **Display Name**.    |
-| Solution output file       | The path and file name of the solution.zip file to export the source environment to. For example: \$(Build.ArtifactStagingDirectory)\$(SolutionName).zip.        |
+<ul><li>Power Platform TenantId</li></ul>
+<ul><li>Application ID</li></ul>
+<ul><li>Client Secret (in clear text)</li></ul>
 
-> [!NOTE]
-> Variables give you a convenient way to get key bits of data into
-> various parts of your pipeline. For a comprehensive list of predefined variables, see [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml).
+Use the information displayed to configure the Power Platform service connection. 
 
-#### Power Apps pack solution
+> [!IMPORTANT]
+> Keep the client secret safe and secure. Once the PowerShell command prompt is cleared, you cannot retrieve the same client secret again.
 
-This task packs a solution represented in source control into a solution.zip file that can
-be imported into an environment.
 
-| Parameters       | Description     |
-|------------------|-----------------|
-| Solution output file              | The path and file name of the solution.zip file to pack the solution into.     |
-| Source folder of solution to pack | The path and source folder of the solution to pack.      |
-| Type of solution                  | The type of solution you want to pack: **Unmanaged** (recommended), **Managed**, or **Both** |
+### Configure environment with the Application ID
+The Application ID must be added as an Application User in the Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
 
-#### Power Apps unpack solution
+Ensure that the added Application User has the system administrator role assigned (available from “Manage Roles” in the security settings for the application user).
 
-The unpack solution task takes a compressed solution file and decomposes it into
-multiple XML files and other files so that these files can be more easily
-managed by a source control system.
+## Frequently asked question (FAQ)
 
-| Parameters    | Description       |
-|---------------|-------------------|
-| Solution input file              | The path and file name of the solution.zip file to unpack.     |
-| Target folder to unpack solution | The path and target folder you want to unpack the solution into.      |
-| Type of solution                 | The type of solution you want to unpack. **Unmanaged** is recommended: You should only unpack an unmanaged solution to your repo. |
+**Do the Microsoft Power Platform Build Tools only work for Power Apps?**  
 
-#### Power Apps set solution version
+*The build tools work for both canvas and model-driven apps, Power Virtual Agents, UI Flows and traditional flows, AI Builder, Custom Connectors and Data Flows, all of which can now be added to a solution. This also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
 
-The set solution version task updates the version of a solution.
+**I had previuosly installed the preview of the Build Tools - can I upgrade from the preview of Power Apps Build Tools to Power Platform Build Tools?**
 
-| Parameters    | Description   |
-|---------------|---------------|
-| Power Apps environment URL | The service endpoint for the environment where you want to deploy the package. Defined under **Service Connections** in **Project Settings**. |
-| Solution name              | The name of the solution you want to set the version number for.     |
-| Solution Version Number    | Version number to set, using the format *major.minor.build.revision* (for example, 1.0.0.1)  |
+*You cannot upgrade from the preview version as we had to introduce some breaking changes in the Generally Available release. To move from the preview version, you have to install the Microsoft Power Platform Build Tools and either re-build your pipelines, or re-configure your existing pipelines to use the new Build Tools tasks. This includes creating new Service connections as well.*
 
-#### Power Apps deploy package
+**Can I include flow and canvas apps?**
 
-The deploy package task deploys a package to an environment. Deploying a package
-as opposed to a single solution file gives you the option to deploy multiple
-solutions, data, and code into an environment.
+*Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
-| Parameters      | Description    |
-|-----------------|----------------|
-| Power Apps environment URL | The service endpoint for the target environment that holds the solution you want to update. Defined under **Service Connections** in **Project Settings**. |
+**How much do the Microsoft Power Platform Build Tools cost?**
 
-#### Power Apps publish customizations
+*The build tools are available at no cost. However, a valid subscription to Azure DevOps is required to utilize the Build Tools. More information is available [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).*
 
-The publish customizations task publishes all customizations in an environment.
+**I can see the extension, but why don’t I have an option to install it?**
 
-| Parameters     | Description    |
-|----------------|----------------|
-| Power Apps environment URL | The service endpoint for the environment in which you want to publish customizations. Defined under **Service Connections** in **Project Settings**.|
+*If you do not see the **install** option then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](https://docs.microsoft.com/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
 
-### Environment management tasks
+**How can developers use the results of the Checker task?**
 
-Environment management tasks are used to automate common environment management
-functions.
+*The output of the Checker task is a [Sarif file](https://sarifweb.azurewebsites.net/) and both VS Code and Visual Studio extensions are available for viewing and taking action on Sarif files.*
 
-#### Power Apps create environment
+### See Also
 
-The create environment task creates an environment.
-
-> [!NOTE]
-> A new environment can only be provisioned if your license or capacity
-> allows for the creation of additional environments.
-
-| Parameters        | Description     |
-|-------------------|-----------------|
-| Deployment Region | The region that the environment should be deployed into.         |
-| Instance Type     | The type of instance to deploy. Options are **Sandbox** or **Production**.      |
-| Base Language     | The base language in the environment.      |
-| Domain Name       | This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be powerappsbuildtasks. <p/>**Note**: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
-| Friendly name     | The friendly name of the environment.     |
-
-#### Power Apps delete environment
-
-The delete environment task deletes an environment.
-
-| Parameters       | Description         |
-|------------------|---------------------|
-| Power Apps environment URL | The service endpoint for the environment you want to delete. Defined under **Service Connections** in **Project Settings**. |
-
-#### Power Apps backup environment
-
-The backup environment task backs up an environment.
-
-| Parameters   | Description   |
-|--------------|---------------|
-| Power Apps environment URL | The service endpoint for the environment you want to backup. Defined under **Service Connections** in **Project Settings**. |
-| Backup label               | The label you want to assign to the backup.                                                                         |
-
-#### Power Apps copy environment
-
-The copy environment task copies an environment to a target environment. Two
-types of copy are available: full and minimal. *Full* copies both data and
-solution metadata (customizations), whereas *minimal* only copies solution
-metadata, not the actual data.
-
-> [!NOTE]
-> This task is only available for Dynamics 365 Customer Engagement (on-premises)
-> environments.
-
-| Parameters     | Description     |
-|----------------|-----------------|
-| Power Apps source environment URL | The service endpoint for the environment you want to copy from. Defined under **Service Connections** in **Project Settings**. |
-| Power Apps target environment URL | The service endpoint for the environment you want to copy to. Defined under **Service Connections** in **Project Settings**.   |
-
-## Build and release pipelines
-
-Now that we've identified what can be done using the build tools, let's see
-how you might apply these tools to your build and release pipelines. A
-conceptual overview is shown below.
-
-<!--This (the conceptual overview) doesn't seem to have come to pass:-->Now let's see some details of the pipeline implementation using the build tool tasks in the sub-sections that follow.
-
-To learn more about creating these pipelines and actually do hands-on pipeline
-authoring using the Power Apps build tools, complete the [Power Apps build tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/azure/build-tools),
-which you can download from GitHub.
-
-More information about Azure DevOps pipelines: [Use Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops)
-
-<a name="build-pipeline-export-solution-from-development"></a>
-
-### Build pipeline: Export a solution from a development environment (DEV)
-
-The following figure shows the build tool tasks that you might add to a pipeline that exports a solution from a development environment.
-
-![Export a solution from a development environment (DEV)](media/export-pipeline.png "Export a solution from a development environment (DEV)")
-
-<a name="build-pipeline-build-managed-solution"></a>
-
-### Build pipeline: Build a managed solution
-
-The following figure shows the build tool tasks that you might add to a pipeline that builds a managed solution.
-
-![Build a managed solution](media/build-pipeline.png "Build a managed solution")
-
-<a name="release-pipeline-deploy-to-production"></a>
-
-### Release pipeline: Deploy to a production environment (PROD)
-
-The following figure shows the build tool tasks that you might add to a pipeline that deploys to a production environment.
-
-![Deploy to a production environment (PROD)](media/deploy-pipeline.png "Deploy to a production environment (PROD)")
-
-### See also
-
-[Power Apps component framework](component-framework.md)
+[Build tool tasks](devops-build-tool-tasks.md)

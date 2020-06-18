@@ -18,9 +18,9 @@ search.app:
 
 # Manage Dynamics 365 apps
 
-You can now install, configure, and manage Dynamics 365 apps in the Power Platform admin center.
+You can now use the Power Platform admin center to install, configure, and manage Dynamics 365 apps built on Common Data Service.
 
-Apps in this topic refer to model-driven applications in Dynamics 365, Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
+Apps in this topic refer to Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
 You can manage apps from either the tenant level or the environment level.
 
@@ -68,7 +68,7 @@ In addition to the environment level, solution management can also be done from 
 
 |Legacy app management  | New app management  | 
 |---------|---------|
-| ![Legacy solution view](media/select-solution-upgrade2.png "Legacy solution view")  | ![New tenant view](media/app-management-environment-view-sm.png "New tenant view")        |
+| ![Legacy solution view](media/select-solution-upgrade2.png "Legacy solution view")  | ![New tenant view2](media/app-management-environment-view-sm.png "New tenant view2")        |
 
 Follow these steps to see a list of all the licensed applications you installed for your environment.
 
@@ -107,7 +107,7 @@ The process to install an app depends on your view.
    You'll navigate to the environment-level view where you can see the installation status.
 
    > [!div class="mx-imgBorder"] 
-   > ![Environment view](media/app-management-environment-view3.png "Environment view")
+   > ![Environment view3](media/app-management-environment-view3.png "Environment view3")
 
 ### Install an app in the environment view
 
@@ -116,7 +116,7 @@ The process to install an app depends on your view.
 2. Select an **Enabled** app, and then select **Next**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Install app](media/app-management-install-app-env-view.png "Install app")
+   > ![Select enabled app](media/app-management-install-app-env-view.png "Select enabled app")
 
 3. Agree to the terms of service, and then select **Install**.
 

@@ -55,7 +55,7 @@ solution metadata between development environments and your version control
 system, generating build artifacts, deploying to downstream environments,
 provisioning or de-provisioning of environments, and the ability to perform
 static analysis checks against your solution by using the Power Apps checker
-service. More information: [Power Apps build tools for Azure DevOps overview](/powerapps/developer/common-data-service/build-tools-overview)
+service. More information: [Microsoft Power Platform Build Tools for Azure DevOps overview](/powerapps/developer/common-data-service/build-tools-overview)
 
 ## Version control system 
 A version control system is a category of software tools that help record
@@ -84,10 +84,11 @@ Service provides you with a Visual Studio template for creating these packages
 that can be used with the Package Deployer tool or with PowerShell to deploy them to a Common Data
 Service instance.  More information: [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)
 
+
 ## Solution Packager
 Solution Packager is a tool that can unpack a compressed solution file into
 multiple XML files and other files, so they can be easily managed by
-a source control system. More information: [Use the Solution Packager tool to compress and extract a solution file](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/compress-extract-solution-file-solutionpackager)
+a source control system. More information: [Use the Solution Packager tool to compress and extract a solution file](solution-packager-tool.md)
 
 ## Power Apps CLI
 Microsoft Power Apps CLI is a simple, single-stop developer command-line

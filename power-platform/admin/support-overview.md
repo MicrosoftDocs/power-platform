@@ -48,7 +48,7 @@ Microsoft provides support in English globally and provides additional languages
 
 ### What hours are considered local business hours for support? 
 
-For most countries, business hours are from 9 AM to 5 PM weekdays (weekends and holidays excluded). For North America, business hours are defined as 6 AM to 6 PM Pacific Time, Monday through Friday, excluding holidays. In Japan, business hours are from 9 AM to 5:30 PM weekdays. 
+For most countries and regions, business hours are from 9 AM to 5 PM weekdays (weekends and holidays excluded). For North America, business hours are defined as 6 AM to 6 PM Pacific Time, Monday through Friday, excluding holidays. In Japan, business hours are from 9 AM to 5:30 PM weekdays. 
 
 ### Do I need a support plan if I need assistance with a technical issue? 
 
@@ -202,8 +202,8 @@ Microsoft is committed to assist you in resolving your issue as soon as possible
 
 ### How do I get support during an outage or Service Interruption Event (SIE)? 
 
-- View the service health in Office 365 at a glance. You can also check out more details and the service health history. 
-- Use Message center in Office 365 to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for changes and understand how they might affect users.
+- View the service health in Microsoft 365 at a glance. You can also check out more details and the service health history. 
+- Use Message center in Microsoft 365 to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for changes and understand how they might affect users.
 - Finally, if service health and Message center do not show any active or recent service issues, contact support using your technical support plan.
 
 ### Which support plan do I need in order to request a Root-Cause Analysis (RCA)? 

@@ -6,7 +6,7 @@ author: phecke
 ms.author: pehecke
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 06/05/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -32,7 +32,7 @@ development and deployment sequence.
 
 3.  [Register](#bkmk_register) the plug-ins or custom workflow activities in the unmanaged solution you created in step 1.
 
-4.  [Export](devops-build-tools.md#power-apps-export-solution) the unmanaged solution as a managed solution.
+4.  [Export](devops-build-tool-tasks.md#export-solution) the unmanaged solution as a managed solution.
 
 5.  Import the managed solution into another environment (that is, TEST or PROD).
 
@@ -72,7 +72,7 @@ following these steps.
 
 1.  Create a new solution in the Power Apps [maker portal](https://make.powerapps.com), or use an existing solution. To create a new solution, select **Solutions** > **New solution**, and then enter the required information for your solution.
 
-2.  With **Solutions** selected in the left navigation pane, select the solution name in the list, and then select **Add existing** \> **Other** \> **Plugin assembly**.
+2.  With **Solutions** selected in the left navigation pane, select the solution name in the list, and then select **Add existing** \> **Other** \> **Plug-in assembly**.
 
 3.  Search for the compiled custom workflow assembly by name.
 
@@ -92,7 +92,7 @@ Let's get started adding those components to our solution.
 
 1.  Create a new solution in the Power Apps [maker portal](https://make.powerapps.com), or use an existing solution. To create a new solution, select **Solutions** > **New solution**, and enter the required information for your solution.
 
-2.  With **Solutions** selected in the left navigation panel, select the solution name in the list, and then select **Add existing** \> **Other** \> **Plugin assembly**.
+2.  With **Solutions** selected in the left navigation panel, select the solution name in the list, and then select **Add existing** \> **Other** \> **Plug-in assembly**.
 
 3.  Search for the compiled plug-in assembly by name.
 
@@ -100,10 +100,10 @@ Let's get started adding those components to our solution.
 
     ![Add a plug-in to a solution](media/solution-plugin-add.PNG "Add a plug-in to a solution")
 
-5. Add a step to the solution by selecting **Add existing** \> **Other** \> **Sdk message**.
+5. Add a step to the solution by selecting **Add existing** \> **Other** \> **Plug-in step**.
 
     > [!TIP]
-    > In the Plug-in Registration tool, a step is called a **step**. In the classic interface **Solution Explorer**, a step is called an **Sdk message processing step**. In the modern maker interface, a step is called an **Sdk message**.
+    > In the Plug-in Registration tool, a step is called a **step**. In the classic interface **Solution Explorer**, a step is called an **Sdk message processing step**. In the modern maker interface, a step is called an **Plug-in step**.
 
 6. Search for the registered step, select it, and then select **Add**.
 

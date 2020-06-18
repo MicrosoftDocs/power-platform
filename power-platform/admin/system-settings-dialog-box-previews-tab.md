@@ -21,7 +21,7 @@ Use the settings on this page to enable preview features in model-driven apps in
 
 <!-- legacy procedure -->
   
-## Open the System Settings dialog box (if it's not already open)  
+## Open the System Settings dialog box 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   

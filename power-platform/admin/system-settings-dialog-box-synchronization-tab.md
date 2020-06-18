@@ -19,7 +19,7 @@ search.app:
 
 Use the settings on this page to determine how data is synchronized between model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)]. For example, you can control synchronization between pairs of fields or enable or disable synchronization of additional mailing addresses, assigned tasks, or appointment attachments.  
   
-## Open the System Settings dialog box (if it's not already open)  
+## Open the System Settings dialog box 
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
