@@ -2,12 +2,12 @@
 title: "Citizen development ALM with Microsoft Power Platform | Microsoft Docs"
 description: "Learn how to implement ALM for citizen development with Microsoft Power Platform"
 keywords: 
-author: Mattp123
-ms.author: matp
+author: shmcarth
+ms.author: shmcarth
 manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
-ms.reviewer: ""
+ms.reviewer: "matp"
 ms.service: powerapps
 ms.topic: "article"
 search.audienceType: 
@@ -23,12 +23,10 @@ You currently build canvas apps and flows that are *not* part of a solution, and
 share your apps and flows by specifying each user by name or specifying a
 security group in Azure Active Directory who can access your app or flow.
 
-The end goal is to move your legacy canvas app and flows to a managed application lifecycle management (ALM) model
-by creating apps and flows in a Common Data Service solution.
+The end goal is to move your legacy canvas app and flows to a managed application lifecycle management (ALM) model by creating apps and flows in a Common Data Service solution.
 
 > [!NOTE]
-> You can use the [default Common Data Service environment](basics-alm.md#default-environment) as a playground to get acquainted with the
-> app-building experience. However, if you'll be shipping shared components (such as entities and AI models) along with your apps and flows as part of a solution, we recommend you move to a model where you have multiple environments, each dedicated for the development, testing, and release of your apps.
+> You can use the default Common Data Service environment as a playground to get acquainted with the app-building experience. However, if you'll be shipping shared components (such as entities and AI models) along with your apps and flows as part of a solution, we recommend you move to a model where you have multiple environments, each dedicated for the development, testing, and release of your apps. For more information about environments, see [Types of environments used in ALM](basics-alm.md#types-of-environments-used-in-alm).
 
 For legacy canvas app and flow makers to participate and move to a healthy ALM model, you must do the following:
 
