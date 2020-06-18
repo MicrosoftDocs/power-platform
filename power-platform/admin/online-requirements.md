@@ -44,7 +44,10 @@ If certain IP address ranges or individual IP addresses are blocked in the envir
 - [Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
 - [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
 
-Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
+Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See:
+
+- [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
+- [Internet accessible URLs required for connectivity to Microsoft Dynamics 365](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
   
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
