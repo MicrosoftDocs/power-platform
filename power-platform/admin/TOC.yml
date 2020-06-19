@@ -96,7 +96,7 @@
           href: backup-restore-environments.md
         - name: Administration mode
           href: sandbox-environments.md#administration-mode
-      #    href: admin-mode.md
+    #      href: admin-mode.md
         - name: Customer managed encryption key
           href: manage-encryption-key.md
         - name: Trial environment
@@ -248,7 +248,7 @@
           - name: Data import wizard
             href: import-data-all-record-types.md
           - name: Data maps
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map
+            href: select-data-map.md
           - name: Duplicate detection jobs
             href: run-bulk-system-jobs-detect-duplicate-records.md
           - name: Duplicate detection rules
@@ -318,7 +318,7 @@
         - name: Multiple online environments or tenants
           href: multiple-online-environments-tenants.md
         - name: Administration mode
-     #     href: admin-mode.md
+      #    href: admin-mode.md
           href: sandbox-environments.md#administration-mode         
         - name: Support environment
           href: support-environment.md     
