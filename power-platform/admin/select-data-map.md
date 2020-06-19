@@ -32,19 +32,19 @@ search.app:
 | For Generic Contact and Account Data |  Use when the import file contains contacts or accounts.   |
 |    |     |
 |----|----|
-| **Data Maps for [!INCLUDE[tn_salesforce](../includes/tn-salesforce.md)]** |    **When to Use**   |
-|  For Contact and Account Report Export  |   Use this map when your import file contains contacts or accounts from [!INCLUDE[tn_salesforce](../includes/tn-salesforce.md)].    |
-|  For Full Data Export  | Use this map when your import file is exported from [!INCLUDE[tn_salesforce](../includes/tn-salesforce.md)] using Full Data Export. |
+| **Data Maps for Salesforce** |    **When to Use**   |
+|  For Contact and Account Report Export  |   Use this map when your import file contains contacts or accounts from Salesforce.    |
+|  For Full Data Export  | Use this map when your import file is exported from Salesforce using Full Data Export. |
 |    |     |
-| For Report Export  |  Use this map when your import file is exported from [!INCLUDE[tn_salesforce](../includes/tn-salesforce.md)] using Report Export.   |
+| For Report Export  |  Use this map when your import file is exported from Salesforce using Report Export.   |
 |   |   |
 |-----|----|
 | **Data Maps for Microsoft Outlook Business Contact Manager**  |  **When to Use**  |
-| For [!INCLUDE[pn_ms_Outlook_2010_BCM](../includes/pn-ms-outlook-2010-bcm.md)] | Use this map when your import file contains data from [!INCLUDE[pn_ms_Outlook_2010_BCM](../includes/pn-ms-outlook-2010-bcm.md)]. |
+| For Microsoft Outlook 2010 with Business Contact Manager | Use this map when your import file contains data from Microsoft Outlook 2010 with Business Contact Manager. |
 |   |    |  
 |-|-|  
 |  **Custom Maps**(optional)   |  **When to Use**  |  
 |  Custom maps   |   If available, custom data maps created for your organization are listed here.   |  
   
-### See also  
+
 
