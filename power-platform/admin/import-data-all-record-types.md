@@ -15,6 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
+
 # Import data (all record types) from multiple sources
 
 Importing data is often the first important task that you need to perform after you have installed model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. You can import data from various systems and data sources into standard and customized fields of most business and custom entities. You can include related data, such as notes and attachments. To assure data integrity, you can enable duplicate detection that prevents importing duplicate records. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Detect duplicate data](detect-duplicate-data.md). For more complex data import scenarios, you can write code using the data import web service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Import data](https://docs.microsoft.com/powerapps/developer/common-data-service/import-data).
@@ -25,7 +26,7 @@ These settings can be found in the Power Platform admin center by going to **Env
   
 1. Preparing source data files in one of the following formats: comma-separated values (.csv), XML Spreadsheet 2003 (.xml), Compressed (.zip) or text files. You can import data from one source file or several source files. A source file can contain data for one entity type or multiple entity types.  
   
-2. Preparing data maps for mapping data contained in the source file to the record fields. You must map every column in the source file to an appropriate field. Unmapped data isn’t imported. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Select a data map](https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map)  
+2. Preparing data maps for mapping data contained in the source file to the record fields. You must map every column in the source file to an appropriate field. Unmapped data isn’t imported. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Select a data map](select-data-map.md)  
   
 There are several ways to import data:  
 

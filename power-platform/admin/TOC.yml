@@ -248,7 +248,7 @@
           - name: Data import wizard
             href: import-data-all-record-types.md
           - name: Data maps
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map
+            href: select-data-map.md
           - name: Duplicate detection jobs
             href: run-bulk-system-jobs-detect-duplicate-records.md
           - name: Duplicate detection rules
