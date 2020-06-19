@@ -209,5 +209,4 @@ Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer
 
 ### See also  
  [Dynamics 365 US Government - Feature availability](government-feature-availability.md)<br/>
- [IP Address Ranges (prior to v9.x)](https://support.microsoft.com/help/2728473/microsoft-dynamics-crm-online-ip-address-ranges)<br/>
- [IP Address Ranges (v9.x)](https://www.microsoft.com/download/confirmation.aspx?id=57063) Focus only on AzureCloud.usgovtexas and AzureCloud.usgovvirginia <br/> 
+ [IP addresses and URLs](online-requirements.md#ip-addresses-and-urls)<br />
