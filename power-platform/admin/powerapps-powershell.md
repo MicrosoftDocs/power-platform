@@ -292,7 +292,7 @@ Changes the owner role of a PowerApp to the current user, and replaces the origi
 
 #### Display a list of deleted canvas apps in an environment
 
-```
+```powershell
 Get-AdminDeletedPowerAppsList -EnvironmentName 'EnvironmentName'
 ```
 
@@ -300,7 +300,7 @@ This displays all canvas apps that were recently deleted and may still be recove
 
 #### Recover a deleted canvas app
 
-```
+```powershell
 Get-AdminRecoverDeletedPowerApp -AppName 'AppName' -EnvironmentName 'EnvironmentName'
 ```
 
