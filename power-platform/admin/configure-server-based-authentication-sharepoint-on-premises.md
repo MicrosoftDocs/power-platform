@@ -142,7 +142,7 @@ Model-driven apps in Dynamics 365
   
 4. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
-   ```  
+   ```powershell
    $SPOAppId = "00000003-0000-0ff1-ce00-000000000000"  
    $SPOContextId = (Get-MsolCompanyInformation).ObjectID  
    $SharePoint = Get-MsolServicePrincipal -AppPrincipalId $SPOAppId  

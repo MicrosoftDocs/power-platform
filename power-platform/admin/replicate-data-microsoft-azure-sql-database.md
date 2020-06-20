@@ -496,7 +496,7 @@ Write-Host "Connection key vault URL is "$secret.id.TrimEnd($secret.Version)""
 >  Before you run this SQL statement make sure that you have correctly defined the @prefix and @schema values in the statement. 
 >  The Export Profile will need to be re-created after you run this SQL statement. 
 
-```
+```sql
 -----------------------------------------------------------------
 -- Provide the value for the following parameters
 DECLARE @prefix nvarchar(32) =''
@@ -538,7 +538,7 @@ EXEC SP_EXECUTESQL @sql;
 > [!IMPORTANT]
 >  Before you run this SQL statement make sure that you have correctly defined the @prefix, @schema, and @entityName values in the statement. In this example, the leads entity table, types, and stored procedures are dropped. 
 
-```
+```sql
 -----------------------------------------------------------------
 -- Provide the value for the following parameters
 DECLARE @prefix nvarchar(32) ='crm'
@@ -627,7 +627,7 @@ EXEC SP_EXECUTESQL @sql;
 
    Example query for entity record deletion.
 
-```
+```sql
 DELETE FROM [dbo].[prefix_account] A
 WHERE id IN (SELECT CONVERT(uniqueidentifier, recordid) FROM [dbo].[prefix_DeleteLog] DL WHERE DL.entityname ='account'
 AND DL.VersionNumber &gt; A.VersionNumber)
