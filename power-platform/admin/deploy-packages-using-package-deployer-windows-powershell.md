@@ -44,6 +44,7 @@ A “package” can consist of any or all of the following:
   
 <a name="GUI"></a>   
 <a name="DeployerPackages"></a>   
+
 ## Deploying packages using the Package Deployer tool  
  You can use the Package Deployer tool (packagedeployer.exe) to deploy packages in the following ways.  
   
@@ -52,6 +53,7 @@ A “package” can consist of any or all of the following:
  [Use CRM Package Deployer tool at the command line](#PD_command)  
   
 <a name="PD_tool"></a>   
+
 ## Use Package Deployer tool to deploy packages  
  The Package Deployer tool can only process one package at a time. However, it provides users with the ability to select a package to deploy from multiple packages available in the Package Deployer tool directory. Some of the screens and actions in the tool differ based on the package definition. You do not have to install the Package Deployer tool. Just download and run it.  
   
@@ -103,7 +105,7 @@ A “package” can consist of any or all of the following:
   
  The following example instructs [!INCLUDE[pn_package_deployer_short](../includes/pn-package-deployer-short.md)] to  bypass some safety checks and sets the language to import as Polish.  
   
-```  
+```powershell 
 packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
 ```  
   
@@ -151,21 +153,21 @@ packagedeployer.exe /Settings:"SkipChecks=true|lcid=1045"
   
 3. At the prompt in the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] window, change your directory to the folder where you extracted the files. In this case:  
   
-   ```  
+   ```powershell
    cd [ExtractedLocation]\tools\  
    ```  
   
 4. Run the `RegisterXRMPackageDeployment.ps1` script available at the `[ExtractedLocation]\tools` folder by running the following command:  
   
-   ```  
+   ```powershell
    .\RegisterXRMPackageDeployment.ps1  
    ```
   
    You are now ready to use the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] cmdlets. To list the cmdlets that you registered, run the following command at the prompt in the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] window:  
   
-```  
-Get-Help “Crm”  
-```  
+   ```powershell  
+   Get-Help “Crm”  
+   ```  
   
 <a name="retrieve"></a>   
 
@@ -174,38 +176,37 @@ Get-Help “Crm”
   
 1. In the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] window, use the following cmdlet to return a list of packages available for import in the specified folder (in this case, c:\CRM\SDK\Tools\PackageDeployer):  
   
-   ```  
+   ```powershell  
    Get-CrmPackages –PackageDirectory [ExtractedLocation]\tools  
    ```  
   
 2. If you want information about a package in a folder, you can use the **Get-CrmPackages** cmdlet along with the **–PackageName** parameter to specify the name of the assembly in the folder that contains the package definition.  
   
-   ```  
+   ```powershell 
    Get-CrmPackages –PackageDirectory [ExtractedLocation]\tools –PackageName SampleCRMPackage.dll  
-  
    ```  
   
 3. The package assembly location can be stored in a variable by using the Get-CrmPackages cmdlet. Then it may be reused in the Import-CrmPackage cmdlet to specify a value for the PackageDirectory parameter. For example, you can store the information of one or more  packages returned from the Get-CrmPackages cmdlet in a variable called $MyPackages.  
   
-   ```  
+   ```powershell
    $MyPackages = Get-CrmPackages –PackageDirectory [ExtractedLocation]\tools   
    ```  
   
     To display all the packages.  
   
-   ```  
+   ```powershell
    $MyPackages  
    ```  
   
     To display only the third package.  
   
-   ```  
+   ```powershell
    $MyPackages[2].PackageAssemblyLocation  
    ```  
   
     Then, you can reference each package in the array from 0 through n. For example, this cmdlet imports the first package found in $MyPackages.  
   
-   ```  
+   ```powershell
    Import-CrmPackage -CrmConnection $CRMConn -PackageDirectory $MyPackages[0].PackageAssemblyLocation  
    ```  
   
@@ -216,7 +217,7 @@ Get-Help “Crm”
   
 1. Provide your credentials to connect to your [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] apps or Dynamics 365 for Customer Engagement apps (on-premises) instance. Running the following command will prompt you to type your user name and password to connect to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance, and we will store it in the `$Cred` variable, and use it later for connecting to your Dynamics 365 Server.  
   
-   ```  
+   ```powershell
    $Cred = Get-Credential  
    ```  
   
@@ -224,13 +225,13 @@ Get-Help “Crm”
   
    - If you are connecting to the Dynamics 365 for Customer Engagement apps (on-premises) instance:  
   
-     ```  
+     ```powershell 
      $CRMConn = Get-CrmConnection -ServerUrl https://<your_CRM_Server> -OrganizationName <your_Org_Name> -Credential $Cred  
      ```  
   
    - If you are connecting to the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-online.md)] server:  
   
-     ```  
+     ```powershell
      $CRMConn = Get-CrmConnection -DeploymentRegion NorthAmerica –OnlineType Office365 –OrganizationName <your_Org_Name> -Credential $Cred  
      ```  
   
@@ -244,7 +245,7 @@ Get-Help “Crm”
 ### Use the cmdlet to deploy packages  
  Next, use the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] apps connection information stored in the `$CRMConn` variable to deploy packages to the [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] instance.  The following command deploys a package, disassembles the package in the *c:\UnpackedFiles* folder, and records  information to a log file in the *c:\MyLogFiles* folder.  
   
-```  
+```powershell
 Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools\PackageDeployer –PackageName SampleCRMPackage.dll –UnpackFilesDirectory c:\UnpackedFiles -LogWriteDirectory C:\MyLogFiles -Verbose  
 ```  
   
@@ -265,7 +266,7 @@ Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools
 
  The following example command imports a package named *SampleCRMPackage* and specifies English-United States (1033) as the language to import the package.  
   
-```  
+```powershell
 Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools\PackageDeployer –PackageName SampleCRMPackage.dll –UnpackFilesDirectory c:\UnpackedFiles –RuntimePackageSettings LCID=1033  
 ```  
   
@@ -274,13 +275,14 @@ Import-CrmPackage –CrmConnection $CRMConn –PackageDirectory c:\CRM\SDK\Tools
 ### Get detailed help on cmdlets  
  In the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] window, use the `Get-Help` cmdlet with a cmdlet name to view a detailed help for the cmdlet. For example, to get detailed help for the `Import-CrmPackage` cmdlet:  
   
-```  
+```powershell
 Get-Help Import-CrmPackage -full  
 ```  
   
  To view the online help for the cmdlets, see [Dynamics 365 for Customer Engagement apps PowerShell Reference](https://technet.microsoft.com/library/dn756318.aspx).  
   
 <a name="Logfiles"></a>   
+
 ## Troubleshoot package deployment issues by using log files  
  The Package Deployer tool provides logging support to get detailed information about errors that can occur when someone signs in to the Microsoft Dynamics 365 for Customer Engagement instance using the tool and deploying packages. By default, the tool generates three log files that are available at the following location on the computer where you run the tool: c:\Users\\*\<UserName>*\AppData\Roaming\Microsoft\Microsoft Dynamics CRM Package Deployer\\*\<Version>*. To specify a different folder, use the -LogWriteDirectory [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlet parameter. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Use the cmdlet to retrieve packages](#retrieve)  
   
@@ -290,7 +292,8 @@ Get-Help Import-CrmPackage -full
   
 - `ComplexImportDetail.log`: Provides detailed information about the data imported in the last deployment by using the tool. Each time you deploy a package using this tool, the existing details from the log file are moved to a file called ComplexImportDetail._old.log in the same directory, and the ComplexImportDetail.log file displays information about the latest import done using the tool.  
   
-<a name="BestPractices"></a>   
+<a name="BestPractices"></a>  
+ 
 ## Best practices for deploying packages  
  While deploying packages, [!INCLUDE [pn-crm-shortest](../includes/pn-crm-shortest.md)] administrators must:  
   

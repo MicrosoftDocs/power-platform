@@ -59,12 +59,12 @@ This topic provides an overview about how to switch from the list component to s
 
 ### What to do when the Enable Server-Based SharePoint Integration wizard doesn't appear
 If the **Enable Server-Based SharePoint Integration** icon doesn't appear in the **Document Management** area after you deactivate all SharePoint sites, follow these steps.
-1.    Select Advanced Find and create the following query. 
-    -    **Look for**: **SharePoint Sites** 
-    -    **Use Saved View**: **[new]**
-    -    Select the down arrow next to the **Service Type** clause and then select **Delete** to remove it. 
+1. Select Advanced Find and create the following query. 
+   - **Look for**: **SharePoint Sites** 
+   - **Use Saved View**: **[new]**
+   -  Select the down arrow next to the **Service Type** clause and then select **Delete** to remove it. 
 
-        ![Delete Service Type clause](media/delete-service-type-clause.png)
+  ![Delete Service Type clause](media/delete-service-type-clause.png)
 
 2. Add **Status** as a new clause, select **Active** as the value, and then select **OK**: 
 
