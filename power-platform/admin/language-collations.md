@@ -28,7 +28,7 @@ These collation settings impact things such as recognized characters, sorting,
 quick find, and filtering. The collations applied to Common Data Service
 environments are chosen based on the default language selection at the time of environment creation and are not user configurable. Once a collation is in place it can't be changed.
 
-Collations contain the following case and accent sensitivity options that can vary from language to language:
+Collations contain the following case and accent sensitivity options that can vary from language to language.
 
 |Case and accent option  |Collation  |Description  |
 |---------|---------|---------|
@@ -44,7 +44,7 @@ A language includes the following information:
     Microsoft .NET framework to easily identify which language is being used.
     For example, 1033 is US English.
 
-- **Language**: the actual language. In some cases names, country, and
+- **Language**: The actual language. In some cases names, country, and
     character dataset information have been added for disambiguation.
 
 - **Collation**: The language collation uses the case and accent sensitivity options associated with the language (_CI, _AS, _AI) described earlier. 
