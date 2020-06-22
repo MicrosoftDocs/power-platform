@@ -48,7 +48,7 @@ Use the following methods to free up storage for each of the capacity types.
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
 |     | **Method 8**: Delete bulk import environments using a bulk deletion job        |
 |     | **Method 9**: Delete bulk deletion job environments using a bulk deletion job        |
-|     | **Method 10**: Remove unrequired entities and fields from Relevance Search        |
+|     | **Method 11**: Remove unrequired entities and fields from Relevance Search        |
 
 
 ## Reduce file storage
@@ -409,7 +409,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
-### Method 10: Remove unrequired entities and fields from Relevance Search
+### Method 11: Remove unrequired entities and fields from Relevance Search
 
 Entities and entity fields enabled for Relevance Search have an impact on the database storage capacity. 
 
