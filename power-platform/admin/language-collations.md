@@ -37,7 +37,7 @@ Collations contain the following case and accent sensitivity options that can va
 |Accent Insensitive     | _AI        | Some languages are *accent insensitive*, which means that “cafe” and “café” are treated as the same word.        |
 
 
-## Collation details
+## Language details
 A language includes the following information: 
 
 - **LCID**: This is an identification number provided to languages in the
