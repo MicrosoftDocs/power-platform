@@ -23,10 +23,10 @@ search.app:
 
 |  Component     | Latest version |
 |--------|-------------|
-| Core (Admin) Components |   [9.1 20054](common-data-service/9.1-20054.md)    |
-| Governance (Compliance and Reporting) Components |   [9.1 20053](common-data-service/9.1-20053.md)  |
-| Nurture |   [9.1 20053](common-data-service/9.1-20053.md)   |
-| Audit Log |   [9.1 20052](common-data-service/9.1-20052.md) |
+| Core (Admin) Components |   [1.48](release-notes/core_1.48.md)    |
+| Governance (Compliance and Reporting) Components |   [1.18](release-notes/governance-1.18.md)  |
+| Nurture |   [1.14](release-notes/nurture-1.14.md  |
+| Audit Log |   [1.0.0.16](release-notes/auditlog-1.0.0.16.md) |
 
 ### All Core (Admin) Components versions
 
@@ -50,4 +50,4 @@ search.app:
 
 |  Version | First available |
 | --------- | ---------------|
-| [9.1 20054](common-data-service/9.1-20054.md) | May 29, 2020 |
+| [1.0.0.16](release-notes/auditlog-1.0.0.16.md) | May 29, 2020 |
