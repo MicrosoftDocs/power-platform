@@ -265,10 +265,21 @@ Update the custom canvas page where the bot is located to intercept the login ca
   		
   	   const { token } = await fetchJSON(theURL);
   	   const directLine = window.WebChat.createDirectLine({ token });
-       var uniqueId = Math.random().toString(36) + Date.now().toString();
+       var userID = clientApplication.account?.accountIdentifier != null ? "Your-customized-prefix" + clientApplication.account.accountIdentified : Math.random().toString() + Date.now().toString(); // Make sure this will not exceed 64 characters
             const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
              const { type } = action;
-              if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
+             if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+               dispatch({
+                 type: 'WEB_CHAT/SEND_EVENT',
+                 payload: {
+                   name: 'startConversation',
+                   type: 'event',
+                   value: { text: "hello" }
+                 }
+               });
+               return next(action);
+             }
+             if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
                  const activity = action.payload.activity;
                  let resourceUri;
                  if (activity.from && activity.from.role === 'bot' &&
@@ -284,7 +295,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
                        token
                       },
                      "from":{
-                       id:uniqueId,
+                       id:userId,  //You need to specify the correct userID here, otherwise you might have a performance downgrade
                        name:clientApplication.account.userName,
                        role:"user"
                      }
@@ -302,7 +313,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
             {
               directLine: directLine,
               store,
-              userID:uniqueId,
+              id:userId,  //You need to specify the correct userID here, otherwise you might have a performance downgrade
               styleOptions
             },
             document.getElementById('webchat')
