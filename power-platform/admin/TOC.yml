@@ -104,7 +104,9 @@
         - name: Sandbox environment
           href: sandbox-environments.md
         - name: View apps in your environments 
-          href: admin-view-apps.md          
+          href: admin-view-apps.md
+        - name: Language collations 
+          href: language-collations.md                    
       - name: Manage updates
         items:
         - name: Opt in to early access updates
