@@ -33,9 +33,12 @@ Here's a breakdown of the assets that form the core components:
   - [DLP Editor (canvas app)](#apps)
   - [DLP Customizer (canvas app)](#apps)
 - **Bulk change permissions for apps and flow**
-  - [Set App Permission (canvas app)](#apps)
+  - [Set App Permissions (canvas app)](#apps)
+  - [Set Flow Permissions (canvas app)](#apps)
 
 ## Entities
+
+The [Sync Flows](#flows) of the CoE Starter Kit sync your tenant resources to the following CDS entities. All entities provide information on name, created by/on, modified by/on as well as resource specific information.
 
 - **Environment** Represents the Environment object, which contains apps, flows, and connectors.
 - **PowerApps App** Represents an app.
@@ -47,6 +50,11 @@ Here's a breakdown of the assets that form the core components:
 - **Audit Log** Represents session details for Power Apps.
 - **CoE Settings** Settings configurations live in a record in this entity. This is an important entity to populate data into during the setup process, because it contains details that are important for configuring the branding and support aspect of the solution.
 - **Sync Flow Errors** Represents the daily occurrence of sync flow errors to provide a summary email to an admin.
+- **Power Platform User** Represents who an app is shared with.
+- **Power Platform User Role** Represents the role a Power Platform User has for a specific app, this has a 1:n relationship with Power Platform User and PowerApps App.
+- **PVA** Represents a Power Virtual Agent.
+- **PVA Component** Represents a Power Virtual Agent Component, such as a topic.
+- **PVA Component Flow** Represents a flow triggered as part of a Power Virtual Agent.
 
 ## Security roles
 
@@ -56,45 +64,55 @@ Here's a breakdown of the assets that form the core components:
 
 - **Power Platform User SR**  Gives read-only access to the resources in the custom entities.
 
->> [!NOTE]
+> [!NOTE]
 > To easily explore and manage data stored in CDS, we recommend you install the [Microsoft PowerApps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview).<br><br>
 > More information about its usage can be found in the following blog post. [Working with data in the Common Data Service for Apps using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/).
 
 ## Flows
 
-### Admin \| Sync Audit Logs
-
-Uses the Office 365 Audit Logs custom connector to write audit log data into the Common Data Service Audit Log entity. This will generate a view of usage for Power Apps. More information: [Set up the Audit Log connector](setup-auditlog.md)
-
 ### Admin \| Sync Template v2
 
-Runs on a schedule, and updates environments. This and subsequent Sync Template v2 flows are an optimized version of the Sync Template v1, split into separate flows to make them easier to read and modify.
+Runs on a daily schedule, retrieves the environments in your tenant using [List Environments as Admin](https://docs.microsoft.com/connectors/powerplatformforadmins/#list-environments-as-admin) and creates or updates a record per environment in the Environment CDS entity.
 
 Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Common Data Service instance you instantiated.
 
 ### Admin \| Sync Template v2 (Apps)
 
-Runs when an environment is created or modified, and gets app information. Also updates the record if apps are deleted.
+Runs when an environment is created or modified, and gets app information using [Get Apps as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-apps-as-admin), information is then created or updated in the PowerApps App entity.
 
 ### Admin \| Sync Template v2 (Flows)
 
-Runs when an environment is created or modified, and gets flow information. Also updates the record if flows are deleted.
+Runs when an environment is created or modified, and gets flow information using [List Flows as Admin](https://docs.microsoft.com/connectors/flowmanagement/#list-flows-as-admin). Also updates the record if flows are deleted.
 
 ### Admin \| Sync Template v2 (Flow Action Details)
 
 Runs once daily on a schedule, and gets the actions and triggers for all flows.
 
+> [!WARNING]
+> This flow uses [Get Flow as Admin](https://docs.microsoft.com/connectors/flowmanagement/#get-flow-as-admin) for every indivdual flow in your tenant, to get action and trigger details. Thus, it can be a very time and resource consuming flow to run.
+Turning this flow on is optional, and only recommended if you are looking to perform action-level reporting or analysis, such as reporting on who is using the Send Email action of the Office 365 Outlook connector.
+
 ### Admin \| Sync Template v2 (Connectors)
 
-Runs once daily on a schedule, and gets connector information.
+Runs once daily on a schedule, and gets connector information using [Get Connectors](https://docs.microsoft.com/connectors/powerappsforappmakers/#get-connectors), information such as the connector name, publisher and tier are stored.
 
 ### Admin \| Sync Template v2 (Custom Connector)
 
-Runs when an environment is created or modified, and gets custom connector information.
+Runs when an environment is created or modified, and gets custom connector information using [Get Custom Connector](https://docs.microsoft.com/connectors/powerappsforadmins/#get-custom-connectors-as-admin), information such as the name, endpoint and created by/on are stored.
 
 ### Admin \| Sync Template v2 (Model Driven Apps)
 
-Runs when an environment is created or modified, and gets model-driven app information.
+Runs when an environment is created or modified, and gets model-driven app information. This information is retrieved from underlying CDS entities and requires the user running the flow to have System Administrator privileges to the environment.
+
+### Admin \| Sync Template v2 (Power Apps User Shared With))
+
+Runs when a PowerApps App record (canvas app) is created or modified, and gets who the app is shared with using [Get App Role Assignments as Admin](https://docs.microsoft.com/connectors/powerappsforadmins/#get-app-role-assignments-as-admin).
+
+### Admin \| Sync Template v2 (PVA)
+
+Runs when an environment is created or updated, and retrieves Power Virtual Agent (bot) information. This information is retrieved from underlying CDS entities and requires the user running the flow to have System Administrator privileges to the environment.
+
+Turning this flow is optional; and only recommended if you are using Power Virtual Agents in your tenant and interested in getting tenant wide overview.
 
 ### Admin \| Sync Template v2 (Sync Flow Errors)
 
@@ -128,7 +146,17 @@ Canvas app you can use to add custom connectors to the Business Data Group of a 
 
 ### Set App Permissions
 
-Canvas app that an admin can use to discover apps by app name, environment, or owner name, and set a new app owner or add new viewers and editors. It will also let you find apps that have been orphaned by the owner having left your organization, and clean them up. <br>
+Canvas app that an admin can use to discover apps by app name, environment, or owner name, and change app permissions.
+
+Use this app to:
+
+- Set a new app owner
+- Add new viewers and editors
+- Remove app permissions
+- Change app permissions from Editors to Viewers or Viewers to Editors
+
+It will also let you find apps that have been orphaned by the owner having left your organization, and clean them up. 
+
 More information: [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)
 
 **Permission**: This app is intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.
@@ -137,7 +165,17 @@ More information: [Share a canvas app in Power Apps](https://docs.microsoft.com/
 
 ### Set Flow Permissions
 
-Similar to the Set App PErmissions app, this canvas app lets an admin discover flows by flow name, environment, or owner name, and  add new viewers and editors. Ownership cannot be changed for flows. It will also let you find flows that have been orphaned by the owner having left your organization, and clean them up. <br>
+Similar to the Set App Permissions app, this canvas app lets an admin discover flows by flow name, environment, or owner name.
+
+Use this app to:
+
+- Add new viewers and editors
+- Remove flow permissions
+
+Ownership cannot be changed for flows.
+
+The app will also let you find flows that have been orphaned by the owner having left your organization, and clean them up.
+
 More information: [Create Team Flows](https://docs.microsoft.com/power-automate/create-team-flows)
 
 **Permission**: This app is intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE admins.
@@ -148,7 +186,19 @@ More information: [Create Team Flows](https://docs.microsoft.com/power-automate/
 
 A model-driven app that provides an interface used to browse items in Common Data Service custom entities. It provides access to views and forms for the custom entities in the solution.
 
-![Power Platform Admin View model-driven app](media/coe54.png "Power Platform Admin View model-driven app")
+Use this app to:
+
+- Get a quick overview of resources in your tenant
+- Learn about your makers, connectors, apps and flows
+- Find out who apps are shared with
+- Add additional information, such as notes and risk assessments, to your resources
+- Complete [App Audits](example-processes.md)
+
+![Power Platform Admin View model-driven app](media/coe-mda1.png "Power Platform Admin View model-driven app")
+
+At a quick glance, this app also allows you to view who an app is shared with, what roles (edit or view) the users have and - for groups - what the group size is.
+
+![Power Platform Admin View - View who an app is shared with](media/coe-mda2.png "Power Platform Admin View - View who an app is shared with")
 
 ## Power BI Report
 

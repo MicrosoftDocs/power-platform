@@ -98,6 +98,9 @@ Monitors approval responses of the Flow Archive and Clean Up – Start Approval 
 
 ### SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
 
+> [!NOTE]
+> Are you aware of the [Data Loss Prevention Policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#the-effect-of-the-blocked-data-group) feature to block connectors. Connectors that are blocked can't be used by either flow or app makers. You might want to consider blocking the connector instead of having a reactive flow setup to discover its usage.
+
 Checks whether any flows are using specific connectors, notifies the flow maker, and then disables the flow. The admin will receive a report.
 
 **Customize**: On setup, the array provided is blank so that we don't inadvertently disable flows in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.
@@ -107,6 +110,9 @@ Checks whether any flows are using specific connectors, notifies the flow maker,
 ![The Flow owner receives an email notifying them of the unauthorized connector usage](media/coe60.png "The Flow owner receives an email notifying them of the unauthorized connector usage")
 
 ### SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors
+
+> [!NOTE]
+> Are you aware of the [Data Loss Prevention Policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#the-effect-of-the-blocked-data-group) feature to block connectors. Connectors that are blocked can't be used by either flow or app makers. You might want to consider blocking the connector instead of having a reactive flow setup to discover its usage.
 
 Checks for apps that use certain connectors, notifies the app maker, and shares the app with the admin security group.
 
