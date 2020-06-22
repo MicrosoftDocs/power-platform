@@ -30,23 +30,23 @@ environments are chosen based on the default language selection at the time of e
 
 Collations contain the following case and accent sensitivity options that can vary from language to language:
 
-- **Case Insensitive** (_CI)– All languages have case insensitive enabled,
+- **Case Insensitive** (_CI): All languages have case insensitive enabled,
     which means that “Cafe” and “cafe” are considered the same word.
 
-- **Accent Sensitive** (_AS)– Some languages are *accent sensitive*, which means
+- **Accent Sensitive** (_AS): Some languages are *accent sensitive*, which means
     that “cafe” and “café” are treated as different words
 
-- **Accent Insensitive** (_AI)- Some languages are *accent insensitive*, which
+- **Accent Insensitive** (_AI): Some languages are *accent insensitive*, which
     means that “cafe” and “café” are treated as the same word. 
 
-## Understand the collation details
+## Collation details
 A language includes the following information: 
 
-- **LCID –** This is an identification number provided to languages in the
+- **LCID**: This is an identification number provided to languages in the
     Microsoft .NET framework to easily identify which language is being used.
     For example, 1033 is US English.
 
-- **Language -** the actual language. In some cases names, country, and
+- **Language**: the actual language. In some cases names, country, and
     character dataset information have been added for disambiguation.
 
 - **Collation**: The language collation uses the case and accent sensitivity options associated with the language (_CI, _AS, _AI) described earlier. 
