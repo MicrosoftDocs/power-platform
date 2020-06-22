@@ -55,10 +55,10 @@ Solutions can be installed into a Common Data Service instance if all their depe
 
 Importing a managed solution is different than importing an unmanaged solution. When you import an unmanaged solution, the changes are merged with other unmanaged changes in that Common Data Service instance. These merged changes can only be removed by manually removing each item individually. The administrator must also publish the unmanaged changes to have any non-schema (such as display labels) changes be visible to other users. Microsoft recommends using unmanaged solutions only during development. When installing into test and production environments, use managed solutions.
 
-Solutions also could be installed using Power Apps Build Tools for Azure DevOps. Those can be found in the AppSource Marketplace and installed from there. Think of it as the automated way of provisioning your solutions from a dev/test environment to your production environment.
+Solutions also could be installed using Microsoft Power Platform Build Tools for Azure DevOps. Those can be found in the AppSource Marketplace and installed from there. Think of it as the automated way of provisioning your solutions from a dev/test environment to your production environment.
 
 > [!div class="mx-imgBorder"] 
-> ![Power Apps Build Tools for Azure DevOps](media/power-apps-build-tools-azure-devops.png "Power Apps Build Tools for Azure DevOps")
+> ![Microsoft Power Platform Build Tools for Azure DevOps](media/power-apps-build-tools-azure-devops.png "Microsoft Power Platform Build Tools for Azure DevOps")
 
 ## Uninstalling solutions
 

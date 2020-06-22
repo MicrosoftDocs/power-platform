@@ -28,4 +28,4 @@ For this scenario, you should:
 
 ### See also
 
-[Power Apps build tools for Azure DevOps](devops-build-tools.md)
+[Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)

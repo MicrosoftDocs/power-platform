@@ -1,7 +1,7 @@
 ---
 title: "Regional settings and data locations for Power Virtual Agents"
 description: "Identify the geographic location where your data will live, and plan for globalization features, including currency and date and time formats."
-ms.date: 5/26/2020
+ms.date: 6/22/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -9,7 +9,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.collection: virtual-agent
-ms.cusom: "multi-geo, gdpr"
+ms.cusom: "multi-geo, gdpr, ce06102020"
 ---
 
 # Regional settings and data locations for organizations using Power Virtual Agents
@@ -63,6 +63,7 @@ Data will be stored in the United States if a bot author's tenant location isn't
 |Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong) |
 |Japan | Japan East (Tokyo, Saitama), Japan West (Osaka) |
 |Canada | Canada Central (Toronto), Canada East (Quebec City) |
+
 
 ## Customer data  
 Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when:

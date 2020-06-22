@@ -70,7 +70,7 @@ Model-driven apps and model-driven app permissions    | Model-driven app design 
 
 Power Apps offers the following experiences to find personal data for a specific user:
 
-- **Website access**: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+- **Website access**: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 - **PowerShell access**: Power Apps cmdlets (for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804)) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
 
 For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md).

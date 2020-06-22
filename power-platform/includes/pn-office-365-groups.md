@@ -1,1 +1,1 @@
-Office 365 Groups
+Microsoft 365 Groups

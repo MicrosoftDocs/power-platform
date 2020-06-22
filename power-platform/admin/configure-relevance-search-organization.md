@@ -1,13 +1,13 @@
 ---
 title: "Configure Relevance Search to improve search results and performance   | MicrosoftDocs"
 description: Configure Relevance Search to improve search results and performance 
-author: udag
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/11/2019
-ms.author: udag
+ms.date: 06/04/2020
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -19,13 +19,13 @@ search.app:
 
 <!-- legacy procedure -->
 
-Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. It uses a dedicated search service external to model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, powered by [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] Search to improve your Dynamics 365 apps search experience. As an administrator or customizer, you'll be able to enable and configure Relevance Search in the model-driven apps in Dynamics 365 user interface without writing code. Many of the configuration steps will look familiar to you, as they use the same user interface as the Quick Find configuration.  
+Relevance Search delivers fast and comprehensive search results in a single list, sorted by relevance. It is powered by [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] Search to provide an improved Dynamics 365 apps search experience. As an administrator or customizer, you'll be able to enable and configure Relevance Search in the model-driven apps in Dynamics 365 user interface without writing code. Many of the configuration steps will look familiar to you, as they use the same user interface as the Quick Find configuration.  
 
  Relevance Search is available in addition to other model-driven apps in Dynamics 365 search experience you're already familiar with. You can still use single-entity Quick Find on the entity grid. You can also use multi-entity Quick Find (now called Categorized Search) from the **Search Dynamics 365 apps data** search box on the navigation bar.  
 
  Relevance Search brings the following enhancements and benefits:  
 
-- Improves performance with external indexing and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Search technology.  
+- Improves performance with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Search technology.  
 
 - Finds matches to any word in the search term in any field in the entity. Matches may include inflectional words, like "stream," "streaming," or "streamed."  
 
@@ -77,10 +77,7 @@ You'll see hit highlights when your search term matches a term in your applicati
 <a name="BKMK_EnableSearch"></a>   
 ## Enable Relevance Search  
 
-> [!IMPORTANT]
-> Data in your application  begins syncing to the external search index immediately after you enable Relevance Search.  We strongly recommend that you configure the entities and entity fields participating in Relevance Search before you enable the search, to prevent sensitive data from being indexed in a service external to model-driven apps in Dynamics 365.  For more information about configuring Relevance Search, see            [Select entities for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SelectEntities),            [Configure searchable fields for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_ConfigureFields), and            [Set managed property for Relevance Search](../admin/configure-relevance-search-organization.md#BKMK_SetPropertiy).  
-
- Because you'll be sharing your data with the external system, Relevance Search is disabled by default. To enable it, you must accept the consent terms. Depending on the size of your organization, it may take up to an hour or more for the data to become available in the external search index after you enable the search. Enabling Relevance Search makes this search option available to all members of your organization.
+Relevance Search is an opt-in feature, set to off by default. Depending on the size of your organization, it may take up to an hour or more for the data to become available in the external search index after you enable the search. Enabling Relevance Search makes this search option available to all members of your organization.
   
  By default, Relevance Search is disabled. To enable Relevance Search, do the following:  
 
@@ -98,9 +95,9 @@ You'll see hit highlights when your search term matches a term in your applicati
 
  ![Configure Relevance Search](../admin/media/relevance-search-configure-search.png "Configure Relevance Search")  
 
- There is no limit on how many entities you can include in the Relevance Search results. However, there is a limit on the total number of fields in the external search index. Currently, the maximum is 1000 searchable fields for an organization. When you select an entity to include in the search results, you'll notice a number in parentheses next to the entity name. The number indicates how many fields each entity uses in the external search index. Some fields, such as **Primary Name** and **ID**, are shared by multiple entities and don't count toward the total. Additionally, some field types use more than one field in the external search index as indicated in this table.  
+ There is no limit on how many entities you can include in the Relevance Search results. However, there is a limit on the total number of fields that can be enabled in Relevance Search. Currently, the maximum is 1000 searchable fields for an organization. When you select an entity to include in the search results, you'll notice a number in parentheses next to the entity name. The number indicates how many fields each entity uses in the Relevance Search index. Some fields, such as **Primary Name** and **ID**, are shared by multiple entities and don't count toward the total. Additionally, some field types use more than one field in the Relevance Search index as indicated in this table.  
 
-|Field type|Number of fields used in the external search index|  
+|Field type|Number of fields used in the Relevance Search index|  
 |----------------|--------------------------------------------------------|  
 |Lookup (customer, owner, or Lookup type attribute)|3|  
 |Option Set (state, or status type attribute)|2|  
@@ -128,7 +125,7 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
 <a name="BKMK_ConfigureFields"></a>   
 ## Configure searchable fields for Relevance Search  
- The fields you add in the Quick Find view become part of the external search index. There is no limit on how many searchable fields you can add for each entity. However, there is a limit on the total number of indexed fields, as was explained in the previous section. **Find Columns** on a **Quick Find View** define the searchable fields in the external search index. Text fields such as Single Line of Text and Multiple Lines of Text, Lookups, and Option Sets are searchable. **Find Columns** with other data types are ignored. The **View Columns** on a **Quick Find View** define the fields that are displayed in the user interface by default, when the matched results are returned. The fields that are highlighted replace the fields that don't have the highlighting. The first four matched fields are displayed in the results. The **filter** on a Quick Find view is also applied to the Relevance Search results.  See the table below for the list of filter clauses not supported by Relevance Search. 
+ The fields you add in the Quick Find view become part of the Relevance Search index. There is no limit on how many searchable fields you can add for each entity. However, there is a limit on the total number of indexed fields, as was explained in the previous section. **Find Columns** on a **Quick Find View** define the searchable fields in the Relevance Search index. Text fields such as Single Line of Text and Multiple Lines of Text, Lookups, and Option Sets are searchable. **Find Columns** with other data types are ignored. The **View Columns** on a **Quick Find View** define the fields that are displayed in the user interface by default, when the matched results are returned. The fields that are highlighted replace the fields that don't have the highlighting. The first four matched fields are displayed in the results. The **filter** on a Quick Find view is also applied to the Relevance Search results.  See the table below for the list of filter clauses not supported by Relevance Search. 
 
 > [!NOTE]
 > There are some fields, called common fields, common to every CRM entity that are defined on the index by default. They are:
@@ -152,7 +149,7 @@ By default, some out-of-the-box system entities are included in Relevance Search
 
    ![Quick Find view](../admin/media/relevance-search-quick-find-view-screen.png "Quick Find view")  
 
-5. Click **Add Find Columns**. In the dialog box, select the fields you want to add to the search index. When done, click **OK**. In the following illustration, you see the                  `Account` entity fields added to the external search index.  
+5. Click **Add Find Columns**. In the dialog box, select the fields you want to add to the search index. When done, click **OK**. In the following illustration, you see the                  `Account` entity fields added to the Relevance Search index.  
 
    ![Quick Find field selection](../admin/media/relevance-search-quick-find-add-find-fields.png "Quick Find field selection")  
 
@@ -161,7 +158,7 @@ By default, some out-of-the-box system entities are included in Relevance Search
 7. Click **Publish All Customizations** for your changes to take effect.  
 
 > [!NOTE]
-> The changes you make in **Quick Find** view also apply to single-entity and multi-entity (Categorized Search) Quick Find configurations. This is why we don't prevent you from including the fields that aren't supported for Relevance Search when you configure **Quick Find** view. However, unsupported fields aren't synced to the external index and don't appear in the Relevance Search results.  
+> The changes you make in **Quick Find** view also apply to single-entity and multi-entity (Categorized Search) Quick Find configurations. This is why we don't prevent you from including the fields that aren't supported for Relevance Search when you configure **Quick Find** view. However, unsupported fields aren't synced to the Relevance Search index and don't appear in the Relevance Search results.  
 
  For Relevance Search, fields on a related entity are not supported as Find, View, or Filter fields.  
 

@@ -44,11 +44,11 @@ When you setup a data source on the gateway you will need to provide credentials
 
 The gateway service creates an outbound connection to Azure Service Bus so there are no inbound ports required to be open. The outbound connection communicates on ports: TCP 443(default), 5671, 5672 9350 through 9354.
 
-It is recommended that you whitelist the IP addresses for the data region in your firewall. You can download the latest list here https://www.microsoft.com/download/details.aspx?id=41653 These IP addresses are used for outbound communication with Azure Service Bus.
+It is recommended that you add the IP addresses to an approval list for the data region in your firewall. You can download the latest list here https://www.microsoft.com/download/details.aspx?id=41653 These IP addresses are used for outbound communication with Azure Service Bus.
 
 ## Gateway Access
 
-Most of the Power Apps and Power Automate licenses have access to use the gateway with the exception of some of the lower end Office 365 licenses (Business and Office Enterprise E1 SKUs).
+Most of the Power Apps and Power Automate licenses have access to use the gateway with the exception of some of the lower end Microsoft 365 licenses (Business and Office Enterprise E1 SKUs).
 
 ## Updates to the Data Gateway
 

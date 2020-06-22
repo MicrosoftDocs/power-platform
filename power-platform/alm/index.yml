@@ -74,7 +74,7 @@ landingContent:
         links:
           - text: ALM for developers
             url: alm-for-developers.md
-          - text: Power Apps build tools for Azure DevOps
+          - text: Microsoft Power Platform Build Tools for Azure DevOps
             url: devops-build-tools.md
           - text: Work with solution components
             url: component-framework.md

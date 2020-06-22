@@ -14,6 +14,8 @@
      href: sign-up-individual.md
    - name: Working with environments
      href: environments-first-run-experience.md
+   - name: Export and import bots with solutions
+     href: authoring-export-import-bots.md
    - name: Regional settings and data locations for organizations
      href: data-location.md
    - name: Quotas and rate limit considerations
@@ -34,6 +36,8 @@
      href: authoring-topic-management.md
    - name: Test your bot
      href: authoring-test-bot.md
+   - name: Supported languages
+     href: authoring-language-support.md
 - name: Enhance and improve
   items:
    - name: Key concepts - Enhanced authoring
@@ -42,6 +46,8 @@
      href: advanced-entities-slot-filling.md
    - name: Use variables
      href: authoring-variables.md
+   - name: Reuse variables across topics
+     href: authoring-variables-bot.md
    - name: Create topics from existing support content
      href: advanced-create-topics-from-web.md
    - name: Create topics from Customer Service Insights

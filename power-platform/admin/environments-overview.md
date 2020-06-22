@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2020
+ms.date: 06/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -95,7 +95,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 <td width="50%">  Developer environments are created by users who have the Community Plan license. They're special environments intended only for use by the owner, and they can't be shared with other users. Provisioning developer environments can't be restricted unless through a support ticket. </td>
 <td width="30%">  Only a single user account with the Community Plan has access.</td>
 </tr>
-<tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Office 365 and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
+<tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
 </table>
 
 
@@ -105,9 +105,9 @@ There are multiple types of environments. The type indicates the purpose of the 
 A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant.
 
 > [!NOTE]
-> No users will be added to the Environment Admin role of the default environment automatically. More information: [Administer environments in Power Apps](environments-administration.md)
->
-> The default environment is limited to 32&nbsp;GB of storage capacity. In case you need to store more data, you can create a production environment. More information: [Provisioning a new environment](create-environment.md#provisioning-a-new-environment)
+> - No users will be added to the Environment Admin role of the default environment automatically. More information: [Administer environments in Power Apps](environments-administration.md)
+> - You can't delete the default environment.
+> - The default environment is limited to 32 GB of storage capacity. In case you need to store more data, you can create a production environment. More information: [Provisioning a new environment](create-environment.md#provisioning-a-new-environment)
 
 The default environment is named as follows: "{Azure AD tenant name} (default)"
 

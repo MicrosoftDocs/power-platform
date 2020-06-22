@@ -36,4 +36,4 @@ For example, many of these admin settings in the legacy web client...
 Use links on this page to manage organization-wide settings. App-specific settings will remain in the model-driven apps, and will be accessed through the respective app settings. More information about managing environment settings in the Power Platform admin center: [Manage environment settings](admin-settings.md) 
 
 ### See also
-[Reference: Use the various admin centers](admin-centers.md)
+[Working with the admin portals](wp-work-with-admin-portals.md)

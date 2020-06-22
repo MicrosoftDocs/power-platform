@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 06/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -29,6 +29,7 @@ The following features are not yet present in the Unified Interface but can be e
 - [Record sharing](https://docs.microsoft.com/powerapps/user/assign-or-share-records)
 - [Audit History](https://docs.microsoft.com/powerapps/developer/common-data-service/auditing-overview)
 - All options under **Set Personal Options** (![Settings gear](media/settings-gear-icon.png "Settings gear"))
+- Reports
 
  > [!NOTE]
    > The hybrid experience is not available for on-premises versions or on mobile.  

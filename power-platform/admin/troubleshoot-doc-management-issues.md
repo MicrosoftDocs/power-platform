@@ -2,7 +2,7 @@
 title: "Troubleshooting Document Management Issues | MicrosoftDocs"
 description: "Learn how to troubleshoot issues with document management"
 keywords: encrypt
-ms.date: 05/15/2020
+ms.date: 06/15/2020
 ms.service: powerapps
 ms.custom: 
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
   - Powerplatform
 ---
 
-# Troubleshooting Document Management Issues
+# Troubleshooting document management issues
 
 This topic explains how to use information provided in error messages to fix issues with the document management feature.
 Below is an [index](#index-of-errors) that will help you to reach the right solution. The link in each cell navigates to the reason and mitigation steps for the corresponding error message.
@@ -43,7 +43,12 @@ The following are error messages that are possible with document management.
 
 |Error | [Error Message 1](#error-message-1) | [Error Message 2](#error-message-2) |
 |----------------|-----------------|-----------------|
-|Error while loading the document management grid for an existing record     |  [Mitigation steps for missing document library](#reason-and-mitigation-steps-for-missing-document-library)      | [Mitigation steps for missing folder](#reason-and-mitigation-steps-for-missing-folder)        |
+|Refresh the document grid for existing record    |  [Mitigation steps for missing document library](#reason-and-mitigation-steps-for-missing-document-library)      | [Mitigation steps for missing folder](#reason-and-mitigation-steps-for-missing-folder)        |
+|Load the document grid after creating new record | [Mitigation steps for missing document library](#reason-and-mitigation-steps-for-missing-document-library)      | [Mitigation steps for missing folder](#reason-and-mitigation-steps-for-missing-folder) |
+|Upload file   |[Mitigation steps for missing document library](#reason-and-mitigation-steps-for-missing-document-library)      | [Mitigation steps for missing folder](#reason-and-mitigation-steps-for-missing-folder) |
+|Create new file/folder  |[Mitigation steps for missing document library](#reason-and-mitigation-steps-for-missing-document-library)      | [Mitigation steps for missing folder](#reason-and-mitigation-steps-for-missing-folder) |
+|Add location   |[Mitigation steps for missing document library](#reason-and-mitigation-steps-for-missing-document-library)      | [Mitigation steps for missing folder](#reason-and-mitigation-steps-for-missing-folder) |
+|Edit location  |[Mitigation steps for missing document library](#reason-and-mitigation-steps-for-missing-document-library)      | [Mitigation steps for missing folder](#reason-and-mitigation-steps-for-missing-folder) |
 
 ## Reason and mitigation steps for missing document library
 
@@ -56,10 +61,25 @@ Error message displayed for missing document library:
   > [!div class="mx-imgBorder"]
   > ![Error message in Unified Interface](media/error-in-unified-interface.png)
 
+  *or*
+
+  > [!div class="mx-imgBorder"]
+  > ![Error message in Unified Interface dialog](media/error-in-unified-interface-dialog.png)
+
 - Error message in the web client:
 
   > [!div class="mx-imgBorder"]
   > ![Error message in web client](media/error-in-web-client.png)
+
+  *or*
+
+  > [!div class="mx-imgBorder"]
+  > ![Error message in web client dialog](media/error-in-web-client-dialog.png)
+
+  Log file:
+
+  > [!div class="mx-imgBorder"]
+  > ![Error message in web client log file](media/error-in-web-client-logfile.png)
 
 ### Reason
 
@@ -87,11 +107,9 @@ This error typically occurs when the SharePoint document library was created for
 
 ## Reason and mitigation steps for missing folder
 
-### Error message displayed
+Error message displayed for missing folder:
 
-Error message displayed for missing document library:
-
-  "Folder `<folder name>` has been renamed or deleted from SharePoint site `<SharePoint site>`. Restore the folder on SharePoint and try again."
+  "Folder "`<folder name>`" has been renamed or deleted from SharePoint. It was expected inside "`<folder path>`" path. Restore the folder on SharePoint and try again.
 
 - Error message when the entity-based folder structure is not enabled.
 
@@ -100,26 +118,56 @@ Error message displayed for missing document library:
   - Error message in the Unified Interface:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface](media/folder-error1-in-unified-interface.png)
+    > ![Folder error in unified interface](media/folder-error1-in-unified-interface.png)
+
+    *or*
+
+    > [!div class="mx-imgBorder"]
+    > ![Error message in Unified Interface dialog](media/folder-error1-in-unified-interface-dialog.png)
 
   - Error message in the web client:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client](media/folder-error1-in-web-client.png)
+    > ![Folder error in web client](media/folder-error1-in-web-client.png)
+
+    *or*
+
+    > [!div class="mx-imgBorder"]
+    > ![Error message in Unified Interface dialog](media/missing-folder-error1-uic-dialog.png)
+
+    Log file:
+
+    > [!div class="mx-imgBorder"]
+    > ![Error message in web client log file](media/folder-error1-in-web-client-logfile.png)
 
 - Error message when the entity-based folder structure is enabled.
 
-  Folder path is `../account/<account name>/<entity name>/<record name>`
+  Folder path is `../<account or contact>/<account or contact name>/<entity name>/<record name>`
 
   - Error message in the Unified Interface:
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in Unified Interface](media/folder-error2-in-unified-interface.png)
+    > ![Error message in Unified Interface2](media/folder-error2-in-unified-interface.png)
 
-  - Error message in ther web client:
+    *or*
 
     > [!div class="mx-imgBorder"]
-    > ![Error message in web client](media/folder-error2-in-web-client.png)
+    > ![Error message in Unified Interface2](media/folder-error2-in-unified-interface-dialog.png)
+
+  - Error message in the web client:
+
+    > [!div class="mx-imgBorder"]
+    > ![Error message in web client2](media/folder-error2-in-web-client.png)
+
+    *or*
+
+    > [!div class="mx-imgBorder"]
+    > ![Error message in web client2](media/missing-folder-error1-uic-dialog.png)
+
+    Log file:
+
+    > [!div class="mx-imgBorder"]
+    > ![Error message in web client log file](media/folder-error2-in-web-client-dialog-logfile.png)
 
 ### Reason
 
