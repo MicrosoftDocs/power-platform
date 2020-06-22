@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 04/27/2020
+ms.date: 06/22/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -103,7 +103,7 @@ To create an environment with a database, you need 1GB available database capaci
 
    |Setting  |Description  |
    |---------|---------|
-   |Language     | The default language for this environment.        |
+   |Language     | The default language for this environment. More information: [Common Data Service language collations](language-collations.md)     |
    |Currency     | The base currency used for reporting.         |
    |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |

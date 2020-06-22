@@ -16,7 +16,7 @@
      href: environments-first-run-experience.md
    - name: Export and import bots with solutions
      href: authoring-export-import-bots.md
-   - name: Data locations for organizations
+   - name: Regional settings and data locations for organizations
      href: data-location.md
    - name: Quotas and rate limit considerations
      href: requirements-quotas.md
