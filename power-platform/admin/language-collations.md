@@ -34,7 +34,7 @@ Collations contain the following case and accent sensitivity options that can va
     which means that “Cafe” and “cafe” are considered the same word.
 
 - **Accent Sensitive** (_AS): Some languages are *accent sensitive*, which means
-    that “cafe” and “café” are treated as different words
+    that “cafe” and “café” are treated as different words.
 
 - **Accent Insensitive** (_AI): Some languages are *accent insensitive*, which
     means that “cafe” and “café” are treated as the same word. 
@@ -53,7 +53,7 @@ A language includes the following information:
 
 ## Language and associated collation used with Common Data Service
 
-| **Common Data Service language**                       | **Collation** |
+| **LCID and language**                       | **Collation** |
 |--------------------------------------------------------|---------------|
 | 1025 Arabic                                            | \_CI_AI       |
 | 1026 Bulgarian - Cyrillic dataset                      | \_CI_AI       |
