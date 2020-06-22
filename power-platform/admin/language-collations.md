@@ -18,9 +18,9 @@ search.app:
 ---
 # Common Data Service language collations
 
-When a Common Data Service organization is deployed, users are asked to select
-which language they would like to use. This sets the dictionary, time and date
-format, number format, and indexing properties for the deployment.
+When a Common Data Service environment is created, admins are asked to select
+which default language they would like to use. This sets the dictionary, time and date
+format, number format, and indexing properties for the environment.
 
 Language selections for Common Data Service also include collation settings
 that are applied to the SQL database, which stores entities and relational data.
@@ -109,3 +109,6 @@ A language includes the following information:
 | 3084 French (Canada)                                   | \_CI_AI       |
 | 3098 Serbian - Cyrillic dataset                        | \_CI_AI       |
 | 4108 French (Switzerland)                              | \_CI_AI       |
+
+### See also
+[Environments overview](environments-overview.md)
