@@ -30,14 +30,12 @@ environments are chosen based on the default language selection at the time of e
 
 Collations contain the following case and accent sensitivity options that can vary from language to language:
 
-- **Case Insensitive** (_CI): All languages have case insensitive enabled,
-    which means that “Cafe” and “cafe” are considered the same word.
+|Case and accent option  |Collation  |Description  |
+|---------|---------|---------|
+|Case Insensitive     | _CI        | All languages have case insensitive enabled, which means that “Cafe” and “cafe” are considered the same word.        |
+|Accent Sensitive     | _AS        |  Some languages are *accent sensitive*, which means that “cafe” and “café” are treated as different words.       |
+|Accent Insensitive     | _AI        | Some languages are *accent insensitive*, which means that “cafe” and “café” are treated as the same word.        |
 
-- **Accent Sensitive** (_AS): Some languages are *accent sensitive*, which means
-    that “cafe” and “café” are treated as different words.
-
-- **Accent Insensitive** (_AI): Some languages are *accent insensitive*, which
-    means that “cafe” and “café” are treated as the same word. 
 
 ## Collation details
 A language includes the following information: 
