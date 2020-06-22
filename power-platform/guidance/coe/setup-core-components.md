@@ -61,7 +61,6 @@ This is the first step of the installation process and is required for every oth
 
 1. Select **Close**.
 
-1. On the **Solutions** page, select **Publish All Customizations**. This is a good practice to follow whenever you make changes to a solution, but especially so when importing.
 
 >[!NOTE]
 >When importing the solution, sometimes Power Automate components show a warning of type *Process Activation* and a duplicate record of that component. You can ignore these warnings for flows.
