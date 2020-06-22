@@ -234,7 +234,7 @@ When you sign in to the Power Platform admin center, you'll be notified if your 
 
 ### Why am I no longer getting storage notifications?
 
-We've disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity )** page to monitor usage.
+We've disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/resources/capacity)** page to monitor usage.
 
 ### I'm an existing customer. Should I expect my file and log usage to change?
 
