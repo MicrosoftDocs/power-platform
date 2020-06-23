@@ -24,6 +24,10 @@
         href: segmented-solutions-alm.md
       - name: Create and update solutions
         href: update-solutions-alm.md
+      - name: Dependency tracking
+        href: dependency-tracking-solution-components.md
+      - name: Removing dependencies
+        href: removing-dependencies.md
   - name: Tools and apps used
     href: tools-apps-used-alm.md    
   - name: Implementing healthy ALM
@@ -60,6 +64,8 @@
           href: plugin-component.md
         - name: Web resources
           href: web-resource-component.md
+        - name: Check for component dependencies
+          href: check-solution-dependencies.md
     - name: Leverage solution and packaging tools
       href: 
       items:
