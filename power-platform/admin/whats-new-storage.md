@@ -50,16 +50,15 @@ There are two versions for storage capacity reporting:
 
 - **New capacity model**: Organizations with the [new licensing model](capacity-storage.md#licenses-for-the-new-storage-model) for storage. Users with these licenses will see the storage capacity entitlement and usage by database, file, and log. More information: [Common Data Service storage capacity](capacity-storage.md)
 
-## Changes for exceeding storage capacity entitlements
-
-We've made changes for what happens when an organization's storage capacity usage is greater than the capacity entitled or purchased via add-ons.
+## What happens when my organization exceeds storage entitlements?
 
 If you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications occur as alerts in the Power Platform admin center. The following admin operations won't be available when a tenant exceeds storage capacity entitlements: 
 
-1. Create environment
+1. Create environment (currently enforced)
 2. Copy environment (starting July 20th)
 3. Restore environment (starting July 20th)
 
+See [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit).
 
 ### See also
 [Legacy storage capacity](legacy-capacity-storage.md) <br />
