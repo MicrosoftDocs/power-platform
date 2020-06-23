@@ -265,7 +265,8 @@ Update the custom canvas page where the bot is located to intercept the login ca
   		
   	   const { token } = await fetchJSON(theURL);
   	   const directLine = window.WebChat.createDirectLine({ token });
-       var userID = clientApplication.account?.accountIdentifier != null ? "Your-customized-prefix" + clientApplication.account.accountIdentified : Math.random().toString() + Date.now().toString(); // Make sure this will not exceed 64 characters
+      var calcId = Marh.floor(Math.random()*10000).toString() + Date.now().toString();
+      var userID = clientApplication.account?.accountIdentifier != null ? ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0,64) : calcId.substr(0,64)  // Make sure this will not exceed 64 characters 
             const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
              const { type } = action;
              if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
@@ -295,7 +296,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
                        token
                       },
                      "from":{
-                       id:userId,  //You need to specify the correct userID here, otherwise you might have a performance downgrade
+                       id:userId,  
                        name:clientApplication.account.userName,
                        role:"user"
                      }
@@ -313,7 +314,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
             {
               directLine: directLine,
               store,
-              id:userId,  //You need to specify the correct userID here, otherwise you might have a performance downgrade
+              userID:userId,  
               styleOptions
             },
             document.getElementById('webchat')
