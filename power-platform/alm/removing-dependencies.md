@@ -247,7 +247,4 @@ Remove all references, and then save and publish both the app and the site map.
 
  [Solution concepts](/power-platform/alm/solution-concepts-alm)  
  [Solution layers](/power-platform/alm/solution-layers-alm)  
- [Create, export, or import an unmanaged solution](create-export-import-unmanaged-solution.md)  
- [Create, install, and update a managed solution](create-install-update-managed-solution.md)  
- [Uninstall or delete a solution](uninstall-delete-solution.md)  
- [Solution entity reference](reference/entities/solution.md)
+ [Dependency tracking for solution components](dependency-tracking-solution-components.md)]

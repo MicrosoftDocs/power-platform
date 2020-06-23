@@ -160,12 +160,9 @@ Solutions are made of solution components. You’ll use the **Solutions** area i
 >  Web resources may depend on other web resources based on relative links. For example, an HTML web resource may use a CSS or script web resource. A Silverlight web resource displayed outside of an entity form or chart must have an HTML web resource to host it. These dependencies aren’t tracked as solution dependencies.  
   
 ### See also  
- [Removing dependencies](removing-dependencies.md)   
- [Package and Distribute Extensions with Dynamics 365 Solutions](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   
- [Introduction to Solutions](introduction-solutions.md)   
- [Plan For Solution Development](/dynamics365/customer-engagement/developer/plan-solution-development)   
- [Create, Export, or Import an Unmanaged Solution](create-export-import-unmanaged-solution.md)   
- [Create, install, and update a managed solution](create-install-update-managed-solution.md)   
- [Create, Install, and Update a Managed Solution](create-install-update-managed-solution.md)   
- [Uninstall or Delete a solution](uninstall-delete-solution.md)   
- [Solution entities](/dynamics365/customer-engagement/developer/solution-entities)
+ [Solution concepts](solution-concepts-alm.md)  
+ [Removing dependencies](removing-dependencies.md)  
+ [Environment strategy](environment-strategy-alm.md)   
+ [Work with solutions using the SDK APIs](solution-api.md)]  
+ [Solution Entity Reference](/powerapps/developer/common-data-service/reference/entities/solution)  
+ [SolutionComponent Entity Reference](/powerapps/developer/common-data-service/reference/entities/solutioncomponent)
