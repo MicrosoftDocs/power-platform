@@ -40,21 +40,128 @@ Here's a breakdown of the assets that form the core components:
 
 The [Sync Flows](#flows) of the CoE Starter Kit sync your tenant resources to the following CDS entities. All entities provide information on name, created by/on, modified by/on as well as resource specific information.
 
-- **Environment** Represents the Environment object, which contains apps, flows, and connectors.
-- **PowerApps App** Represents an app.
-- **Flow** Represents a flow.
-- **Flow Action Detail** Represents the set of actions that occur in a flow.
-- **PowerApps Connector** Represents a standard or custom connector.
+- **Environment** Represents the Environment object, which contains apps, flows, and connectors. The following information is available for each environment:
+  - Enviornment ID
+  - Display Name
+  - CDS Instance URL
+  - Created on
+  - Environment Maker (Created by)
+  - Region
+  - Type (Trial, Developer, Production)
+  - Number of Apps (rollup)
+  - Number of Flows (rollup)
+  - Number of Custom Connectors (rollup)
+- **PowerApps App** Represents an app. The following information is available for each app:
+
+  - Display Name
+  - App ID
+  - Environment
+  - Owner
+  - Created on
+  - Modified on
+  - Published on
+  - Last Launched on (if collecting [Audit Log](setup-auditlog.md) information is configured)
+  - App Plan Classification (Standard, Premium, Extended)
+  - Shared Users
+  - Shared Groups
+  - Shared With Tenant (yes/no)
+  - App Type (Canvas, Model Driven, SharePoint Form App)
+  - App Orphaned
+
+- **Flow** Represents a flow. The following information is available for each flow:
+
+  - Display Name
+  - Flow ID
+  - Environment
+  - Owner
+  - Created on
+  - Modified on
+  - State (Started, Suspended, Stopped)
+  - Flow Orphaned
+  - Flow Trigger
+- **Flow Action Detail** Represents the set of actions that occur in a flow. This entity has a n:1 link with the Flow entity. The following information is available for each action or trigger:
+  - Type (Scope, ForEach, Office 365 Users)
+  - Operation (for connectors, such as Send Email, List Items)
+  - Is Trigger (yes/no)
+- **PowerApps Connector** Represents a standard or custom connector. The following information is available for each connector:
+  - Connector ID
+  - Display Name
+  - Icon Background Color and Uri
+  - Is Custom Connector (yes/no)
+  - Maker (for Custom Connectors)
+  - Publisher
+  - Tier (Standard/Premium)
 - **Connection Reference** The linking table for the many-to-many relationships among connectors (PowerApps Connector) and flows (Flows) and/or apps (PowerApps App).
-- **Maker** Represents a user who has created an app, flow, custom connector, or environment.
-- **Audit Log** Represents session details for Power Apps.
-- **CoE Settings** Settings configurations live in a record in this entity. This is an important entity to populate data into during the setup process, because it contains details that are important for configuring the branding and support aspect of the solution.
-- **Sync Flow Errors** Represents the daily occurrence of sync flow errors to provide a summary email to an admin.
-- **Power Platform User** Represents who an app is shared with.
-- **Power Platform User Role** Represents the role a Power Platform User has for a specific app, this has a 1:n relationship with Power Platform User and PowerApps App.
-- **PVA** Represents a Power Virtual Agent.
-- **PVA Component** Represents a Power Virtual Agent Component, such as a topic.
-- **PVA Component Flow** Represents a flow triggered as part of a Power Virtual Agent.
+- **Maker** Represents a user who has created an app, flow, custom connector, or environment. The following information is available for each maker (retrieved from Office 365 Users Profiles):
+  - Display Name
+  - ID
+  - eMail (User Principal Name)
+  - City
+  - Country
+  - Department
+  - Job Title
+  - Office
+  - Number of Apps (rollup)
+  - Number of Flows (rollup)
+- **Audit Log** Represents session details for Power Apps. The following information is available for each audit log entry:
+  - Operation (Launched App, Deleted App, Deleted Flow)
+  - App/Flow Id
+  - User City, Country, Department, Job Title (from Office 365)
+  - Audit Log Event Time
+- **CoE Settings** Settings configurations live in a record in this entity. This is an important entity to populate data into during the setup process, because it contains details that are important for configuring the branding and support aspect of the solution. The following settings are available to configure:
+  - Brand Logo
+  - Company Name
+  - Primary Color
+  - Secondary Color
+  - End User Support eMail
+  - Maker Support eMail
+  - Link to Community Channel
+  - Link to Learning Material
+  - Link to Policy Documents
+  - Tenant Type (Public, GCC)
+- **Sync Flow Errors** Represents the daily occurrence of sync flow errors to provide a summary email to an admin. The following information is available for each sync flow error:
+  - Flow Instance URL
+  - Environment
+  - Created on
+- **Power Platform User** Represents who an app is shared with. The following information is available for each user:
+  - Display Name
+  - ID
+  - Group Size (for Users it is set to 1, for Groups it will be the Group Size according to Azure AD)
+  - Type (User, Group, Tenant)
+  - User Principal Name (for Users)
+- **Power Platform User Role** Represents the role a Power Platform User has for a specific app, this has a 1:n relationship with Power Platform User and PowerApps App. The following information is available for each role:
+  - App
+  - Power Platform User
+  - Role Name (Owner, CanEdit, CanView)
+  - Friendly Role Name (Owner, Co-Owner, Viewer)
+- **PVA** Represents a Power Virtual Agent. The following information is available for each bot:
+  - Display Name
+  - ID
+  - Created On
+  - Owner
+  - Modified on
+  - Last Launched on
+  - Total # of Sessions
+  - Number of Components (rollup)
+  - Number of Flows (rollup)
+  - Status
+  - Environment
+  - Is Bot orphaned (yes/no)
+- **PVA Component** Represents a Power Virtual Agent Component, such as a topic. The following information is available for each bot component:
+  - Name
+  - ID
+  - Component Created on
+  - Description
+  - Display Name
+  - Enviornment
+  - Modified on
+  - State
+  - Type (Topic, Entity)
+  - Uses Flow (yes/no)
+- **PVA Component Flow** Represents a flow triggered as part of a Power Virtual Agent. The following information is available for each bot component flow:
+  - Name
+  - ID
+  - Created on/by
 
 ## Security roles
 
