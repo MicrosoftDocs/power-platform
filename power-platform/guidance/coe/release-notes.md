@@ -32,7 +32,7 @@ search.app:
 
 |  Version | First available |
 | --------- | ---------------|
-| [1.48](release-notes/core_1.48.md) | June 27, 2020 |
+| [1.48](release-notes/core-1.48.md) | June 27, 2020 |
 
 ### All Governance (Compliance and Reporting) Components versions
 
