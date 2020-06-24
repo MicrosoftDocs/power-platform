@@ -38,10 +38,23 @@ search.app:
 ## Teams centric operations
 
 
-
-
-
-
+|  |Teams environment  |Production environment  |
+|---------|---------|---------|
+|Admin related operations     |         |         |
+|Ability to edit a M365 group associated to a CDS-Lite     | No        | Yes         |
+|Support environment type conversion     | No        | Yes        | 
+|Support a separate filter view for Teams environments     | Yes        | Yes        |
+|Team owner specific admin capabilities like backup, restore, delete, but no reset, copy     | Yes        | No        |
+|User sync can sync owners, members, guests.     | Yes        | Yes        |
+|Ability to edit settings     | Minimal        | Yes        |
+|Specific governance controls for Teams environments including Templates     | Yes        | No        |
+|Power Apps related Operations     |         |         |
+|Team owner, Team member, Team guest AuthZ.     |  Yes       | N/A        |
+|Template app acquisition/ blank app from within teams creates an environment.     | Yes       | N/A        |
+|Delete Team deletes the environment.     | Yes       | N/A        |
+|Embedded maker experience for teams shows Teams specific view that hides CDS and Environment awareness     |  Yes       | N/A        |
+|PA maker apps experience for Teams apps     | No       | N/A        |
+|Teams specific solution capabilities     | Yes       | N/A        |
 
 
 
