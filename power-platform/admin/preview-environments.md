@@ -1,13 +1,13 @@
 ---
 title: Preview environments | Microsoft Docs
 description: Get early access to functionalities with Power Apps Preview Program
-author: manasmams
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
-ms.author: manasma
+ms.date: 06/02/2020
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -34,7 +34,7 @@ Currently we will be rolling out preview for the following scenarios across Powe
 ## How to get early access to the upcoming updates?
 For Power Apps, all the apps and related resources are stored in an environment. Early access to all preview functionalities are also available with an environment created in a region where the vNext (preview) is deployed. For now, there is only one region, **Preview (United States)**, as shown in the image below:
 
-![](./media/preview-environment/env3-preview.png)
+![Preview environment](./media/preview-environment/env3-preview.png)
 
 Select the region for the environment as **Preview (United States)** and accept the consent for joining the Preview Program to create the environment to get access to the next version (vNext) of Power Apps.
 All the apps and other resources created in this environment are on the vNext version of the platform (SAAS).
@@ -59,15 +59,11 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
    There are certain functionalities, services and portals which are available in preview:
    
-   ![](./media/preview-environment/table.png)
+   ![Available in preview](./media/preview-environment/table.png)
 
-2. **Accessing apps created in First Release environment from the Desktop Studio in Windows**
+2. **Using apps created in preview environments in production environments**
 
-   As mentioned above, desktop studio in Windows is not available in preview. Hence, creating or editing of the apps in the preview environment might not be compatible with your Desktop Studio and shows the following error message:
-   
-   ![](./media/preview-environment/error2.jpg)
-
-   In such a case, we recommend you use Web Studio to create or edit an app in the preview environment.
+   PowerApps does not support opening apps saved in preview only versions of Power Apps in production environments. Most versions of Power Apps will eventually move from preview into production, but how and when this happens is influenced by many factors so it should not be relied on. We recommend you use production environments to create or edit any app intended for use in a production environment.
 
 3. **Database cannot be created in Preview region**
 

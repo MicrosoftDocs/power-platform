@@ -21,7 +21,7 @@ Use the settings on this page to configure reporting settings for model-driven a
 
 <!-- legacy procedure -->
 
-## Open the Reporting System Settings dialog box (if it's not already open)  
+## Open the Reporting System Settings dialog box 
 
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
 

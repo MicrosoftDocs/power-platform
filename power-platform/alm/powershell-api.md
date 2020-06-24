@@ -6,7 +6,7 @@ author: phecke
 ms.author: pehecke
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 06/16/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -40,8 +40,8 @@ The checker service provides the logic for the [solution checker feature](/powe
 > `Export-CrmSolution -conn $conn -SolutionName "MySolution" -Managed -SolutionFilePath "C:\temp" -SolutionZipFileName "MySolution_Managed.zip"`<p/>
 > `Import-CrmSolutionAsync -SolutionFilePath c:\temp\mysolution.zip -ActivateWorkflows -OverwriteUnManagedCustomizations -MaxWaitTimeInSeconds 600`
 
-In addition, there is a checker task in the Azure DevOps build tools include a checker task. For more information about using that task in your build pipeline, see [Quality check](devops-build-tools.md#quality-check).
+In addition, there is a checker task in the Azure DevOps build tools include a checker task. For more information about using that task in your build pipeline, see [Quality check](devops-build-tool-tasks.md#quality-check).
 
 ### See also
-
+[PowerShell modules](tools-apps-used-alm.md#powershell-modules)  
 [Online Management API (REST) to manage environments](online-management-api.md)

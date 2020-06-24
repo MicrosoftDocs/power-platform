@@ -84,7 +84,7 @@ To create and import a solution file:
 5.  The generated solution files are located in the \\bin\\debug\\ (or
     \\bin\\release) folder after the build is successful.
 
-6.  You can use the [Power Apps build tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools)
+6.  You can use the [Microsoft Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools)
     to automate importing the solution into a Common Data Service environment;
     otherwise, you can manually [import the solution into Common Data Service](/powerapps/maker/common-data-service/import-update-export-solutions.md) by using
     the web portal.

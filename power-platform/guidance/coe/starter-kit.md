@@ -46,5 +46,7 @@ Watch a quick overview of the CoE Starter Kit.
 ## Related resources
 [Power Platform admin guide](/power-platform/admin/admin-documentation)<br/>
 [Power Platform ALM guide](/power-platform/alm)<br/>
+[Power BI docs](https://docs.microsoft.com/power-bi)<br/>
 [Power Apps docs](https://docs.microsoft.com/powerapps)<br/>
-[Power Automate docs](https://docs.microsoft.com/power-automate)
+[Power Automate docs](https://docs.microsoft.com/power-automate)<br/>
+[Power Virtual Agents docs](https://docs.microsoft.com/power-virtual-agents)

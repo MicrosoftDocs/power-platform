@@ -71,7 +71,6 @@ Customizations or email configurations in Dynamics 365 GCC and GCC High can only
 ### See also  
  [Microsoft Dynamics 365 US Government](microsoft-dynamics-365-government.md)<br/>
  [Important changes coming](../important-changes-coming.md)<br/>
- [IP Address Ranges (prior to v9.x)](https://support.microsoft.com/help/2728473/microsoft-dynamics-crm-online-ip-address-ranges)<br/>
- [IP Address Ranges (v9.x)](https://www.microsoft.com/download/confirmation.aspx?id=57063) Focus only on AzureCloud.usgovtexas and AzureCloud.usgovvirginia <br/>
+ [IP addresses and URLs](online-requirements.md#ip-addresses-and-urls)<br />
  [PowerBI for US Government Customers](https://docs.microsoft.com/power-bi/service-govus-overview)<br/>
  [Compliance Offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings?product=Dynamics365)

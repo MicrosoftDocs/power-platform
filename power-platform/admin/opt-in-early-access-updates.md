@@ -107,7 +107,7 @@ To verify that a release wave is enabled, open the environment, go to **Settings
 
 |In Unified Interface  |In the web client interface  | 
 |---------|-------|
-|![Opt-in status](media/update-status.png "Opt-in status")        | ![Opt-in status](media/update-status-webclient.png "Opt-in status")        |
+|![Opt-in status](media/update-status.png "Opt-in status")        | ![Opt-in status webclient](media/update-status-webclient.png "Opt-in status webclient")        |
 
 > [!NOTE]
 > You need to select **About** from a Dynamics 365 apps page that's displayed in the [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages. 

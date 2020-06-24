@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/15/2020
+ms.date: 06/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # About Power Apps per app plans 
 
-Power Apps per app plan allows individual users to run **two applications** and **one portal** for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity) area in the Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
+Power Apps per app plan allows individual users to run **two applications** and **one portal** for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
 
 The following release plan topic announces the availability of this feature: [New licensing options for Power Automate standalone paid plans](https://docs.microsoft.com/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans).
 
@@ -75,7 +75,7 @@ Follow these steps to turn off assigning per app plans for users when an app is 
 
    ![App settings](media/app-settings2.png "App settings")
 
-3. Under **Pass assignment**, change the **Auto assign per app passes** toggle to **No**. The **Auto assign per app passes** toggle appears in all app setting.
+3. Under **Pass assignment**, change the **Auto assign per app passes** toggle to **Yes**. The **Auto assign per app passes** toggle appears in all app setting.
 
    ![Pass assignment](media/pass-assignment2.png "Pass assignment")
 
@@ -134,8 +134,12 @@ Users are receiving trial prompts because Power Apps per app plan is currently d
 For customers that want to use a Power Apps per app plan and they have the *AllowAdHocSubscriptions* flag set to false, admins should do the following. 
 
 1. Turn on, at least temporarily, ad-hoc subscriptions. Run the following PowerShell command: 
-   1. Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
-   2. [Documentation for this PowerShell cmdlet](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0#parameters)
+  
+   > ```powershell
+   > Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
+   > ```
+
+   [Documentation for this PowerShell cmdlet](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0#parameters)
 
 2. Add to your tenant the required ad-hoc subscription to use a Power Apps per app plan by selecting the following link and completing the sign-up process: [https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2](https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2). 
 
@@ -144,9 +148,16 @@ For customers that want to use a Power Apps per app plan and they have the *Allo
 4. You can assign the Power Apps per app baseline access individually to users or assign the license to a security group that contains all users that will receive a Power Apps per app plan. 
 
 5. This step is optional, at this point the admin can turn off AllowAdHocSubscriptions for their tenant by using the following command: 
-   1. Set-MsolCompanySettings -AllowAdHocSubscriptions $false
 
-6. Execute the following command, if internal consent plans were previously removed: [Add-AllowedConsentPlans](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#block-trial-licenses-commands)
+   > ```powershell
+   > Set-MsolCompanySettings -AllowAdHocSubscriptions $false
+   > ```
+
+6. Execute the following command, if viral consent plans were previously removed: [Add-AllowedConsentPlans -(Types @("Viral")](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#block-trial-licenses-commands)
+
+   Viral licenses can be assigned to a user either by an admin or by non-admins that assign these licenses to themselves. The ability for a non-admin to assign the license themselves is controlled by [AllowAdHocSubscriptions](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup). 
+
+   If AllowAdHocSubscriptions is off and viral consent plans are allowed, end-users can use viral licenses already assigned to them but won't be able to sign up for viral licenses on their own. 
 
 ### Why are makers prompted to start a trial when creating a premium connection using gateways? 
 This is an artifact of previous, but no longer required, licenses being assigned to Power Apps makers. This license check and prompt to start a trial will eventually be removed. 

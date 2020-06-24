@@ -1,13 +1,13 @@
 ---
 title: "Use service admin roles to manage your tenant   | MicrosoftDocs"
 description: Use service admin roles to manage your tenant 
-author: jimholtz
-manager: kvivek
+author: jayasreekumar
+ms.author: jkumar
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/20/2020
-ms.author: jimholtz
+ms.date: 06/20/2020
 search.audienceType: 
   - admin
 search.app: 
@@ -45,11 +45,13 @@ Follow these steps to assign a service admin role.
 
 2. Go to **Users** > **Active users** and select a user or users.
   
-3. Select to expand **Show all by category**.
+3. Under **Account** > **Roles** select **Manage roles**.
 
-4. Under **Collaboration** select either **Dynamics 365 administrator** or **Power Platform administrator**. 
+4. Select to expand **Show all by category**.
+
+5. Under **Collaboration** select either **Dynamics 365 administrator** or **Power Platform administrator**. 
   
-5. Select **Save changes**.
+6. Select **Save changes**.
 
 ## Service administrator permission matrix
 

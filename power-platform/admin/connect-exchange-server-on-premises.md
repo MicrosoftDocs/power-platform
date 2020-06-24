@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/06/2020
+ms.date: 06/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,21 +32,23 @@ With version 9.0., you can connect your model-driven apps in Dynamics 365, such 
 
      For more information on authentication, see:  
 
-   - [!INCLUDE[pn_ms_Exchange_Server_2010_short](../includes/pn-ms-exchange-server-2010-short.md)]: [Configure Integrated Windows Authentication](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998638(v%3dexchg.141))
+   - Exchange Server 2010: [Configure Integrated Windows Authentication](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998638(v=exchg.141))
 
-   - [!INCLUDE[pn_ms_Exchange_Server_2010_short](../includes/pn-ms-exchange-server-2010-short.md)]: [Configure Basic Authentication](https://technet.microsoft.com/library/aa996407\(v=exchg.141\).aspx)  
+   - Exchange Server 2010: [Configure Basic Authentication](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa996407(v=exchg.141))  
 
-   - [!INCLUDE[pn_ms_Exchange_Server_2010_short](../includes/pn-ms-exchange-server-2010-short.md)]: [Default Authentication Settings for Exchange-related Virtual Directories](https://technet.microsoft.com/library/gg247612\(v=exchg.141\).aspx)  
+   - Exchange Server 2010: [Default Authentication Settings for Exchange-related Virtual Directories](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/gg247612(v=exchg.141))  
 
-   - [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)]: [Authentication and EWS in Exchange](https://msdn.microsoft.com/library/office/dn626019\(v=exchg.150\).aspx)  
+   - Exchange Server 2013: [Authentication and EWS in Exchange](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/authentication-and-ews-in-exchange)  
 
-   - [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)]: [Default settings for Exchange virtual directories](https://technet.microsoft.com/library/gg247612\(v=exchg.150\).aspx) 
+   - Exchange Server 2013: [Default settings for Exchange virtual directories](https://docs.microsoft.com/exchange/default-settings-for-exchange-virtual-directories-exchange-2013-help) 
 
-   - [!INCLUDE [pn-exchange-server-2016-short](../includes/pn-exchange-server-2016-short.md)]: [Default settings for Exchange virtual directories](https://technet.microsoft.com/library/gg247612(v=exchg.160).aspx)
+   - Exchange Server 2016: [Default settings for Exchange virtual directories](https://docs.microsoft.com/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
+
+   - Exchange Server 2019: [Default settings for Exchange virtual directories](https://docs.microsoft.com/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
 
 3. **ApplicationImpersonation role**. You need to create and configure a service account with the **ApplicationImpersonation** role in [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Impersonation and EWS in Exchange](https://msdn.microsoft.com/library/office/dn722377\(v=exchg.150\).aspx).  
 
-4. **Secured connection**. The connection between model-driven apps in Dynamics 365 and Exchange must be encrypted via [!INCLUDE[pn_ssl_short](../includes/pn-ssl-short.md)] (HTTPS).  
+4. **Secured connection**. The connection between model-driven apps in Dynamics 365 and Exchange must be encrypted via [TLS/SSL](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel).  
 
 5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior facing connection.  
 

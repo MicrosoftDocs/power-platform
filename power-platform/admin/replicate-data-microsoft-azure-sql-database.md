@@ -45,9 +45,8 @@ For information about the programmatic interface for managing configuration and 
   
    Database permissions required.  
   
-  |||  
-  |-|-|  
   |Permission type code|Permission name|  
+  |-|-|  
   |CRTB|CREATE TABLE|  
   |CRTY|CREATE TYPE|  
   |CRVW|CREATE VIEW|  
@@ -57,9 +56,8 @@ For information about the programmatic interface for managing configuration and 
   
    Schema permissions required.  
   
-  |||  
-  |-|-|  
   |Permission type code|Permission name|  
+  |-|-|  
   |AL|ALTER|  
   |IN|INSERT|  
   |DL|DELETE|  
@@ -121,7 +119,7 @@ For information about the programmatic interface for managing configuration and 
 
   To do this, delete the Export Profile in the EXPORT PROFILES view, then delete the tables and stored procedures, and then create a new profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to delete all Data Export Profile tables and stored procedures](#Delete_DEP)  
   
-- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn't work for sandbox environments that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](sandbox-environments.md#administration-mode)  
+- The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn't work for sandbox or production environments that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](sandbox-environments.md#administration-mode)
 
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] does not drop (delete) the associated tables, columns, or stored procedure objects in the destination Azure SQL database when the following actions occur.
   - An entity is deleted.
@@ -145,9 +143,8 @@ For information about the programmatic interface for managing configuration and 
   
 ### Data synchronization available with an Export Profile  
   
-||||  
-|-|-|-|  
 |Category|Feature|Supported data types|  
+|-|-|-|  
 |Initial Sync|Metadata - Basic Data Types|Whole Number, Floating Point Number, Decimal Number, Single Line of Text, Multi Line of Text, Date and Time data types.|  
 |Initial Sync|Metadata - Advanced Data Types|Currency, PartyList, Option Set, Status, Status Reason, Lookup (including Customer and Regarding type lookup). PartyList is only available for export version 8.1 and above.|  
 |Initial Sync|Data - Basic Types|All basic data types.|  
@@ -499,7 +496,7 @@ Write-Host "Connection key vault URL is "$secret.id.TrimEnd($secret.Version)""
 >  Before you run this SQL statement make sure that you have correctly defined the @prefix and @schema values in the statement. 
 >  The Export Profile will need to be re-created after you run this SQL statement. 
 
-```
+```sql
 -----------------------------------------------------------------
 -- Provide the value for the following parameters
 DECLARE @prefix nvarchar(32) =''
@@ -541,7 +538,7 @@ EXEC SP_EXECUTESQL @sql;
 > [!IMPORTANT]
 >  Before you run this SQL statement make sure that you have correctly defined the @prefix, @schema, and @entityName values in the statement. In this example, the leads entity table, types, and stored procedures are dropped. 
 
-```
+```sql
 -----------------------------------------------------------------
 -- Provide the value for the following parameters
 DECLARE @prefix nvarchar(32) ='crm'
@@ -611,7 +608,7 @@ EXEC SP_EXECUTESQL @sql;
 |United Kingdom West|51.141.44.218|  
   
 > [!NOTE]
-> North America customers should whitelist IP addresses for both East US and West US.
+> North America customers should add IP addresses to an approved list for both East US and West US.
 
 <a name="DES_knownissues"></a>   
 ## Known issues  
@@ -630,7 +627,7 @@ EXEC SP_EXECUTESQL @sql;
 
    Example query for entity record deletion.
 
-```
+```sql
 DELETE FROM [dbo].[prefix_account] A
 WHERE id IN (SELECT CONVERT(uniqueidentifier, recordid) FROM [dbo].[prefix_DeleteLog] DL WHERE DL.entityname ='account'
 AND DL.VersionNumber &gt; A.VersionNumber)

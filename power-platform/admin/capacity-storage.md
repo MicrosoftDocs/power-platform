@@ -1,7 +1,7 @@
 ---
 title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 05/07/2020
+ms.date: 06/10/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -48,7 +48,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 
 1. Sign in to the Power Platform admin center, and then select an environment. 
 
-2. Select **Analytics** > **Capacity**.
+2. Select **Resources** > **Capacity**.
 
 3. View the data on the **Summary** page.
 
@@ -63,12 +63,12 @@ The new licensing storage model looks like the following image.
 
 This page provides a tenant-level view of where your organization is using storage capacity.
 
-To view the **Summary** page, select **Analytics** > **Capacity** > **Summary**.
+To view the **Summary** page, select **Resources** > **Capacity** > **Summary**.
 
 > [!div class="mx-imgBorder"] 
 > ![Capacity page Summary tab](media/storage-data-capacity-page-review.png "Capacity page Summary tab")
 
-|  | |
+|Number  |Description |
 |---------|---------|
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following entities store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box entity that has fields of datatype file or image (full size)</li><li>Any entity that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-entities-ending-in---analytics-in-my-capacity-report) </li> </ul></li><li>**Log**: The following entities are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other entities are counted for your database</li></ul> |
 |(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
@@ -80,10 +80,10 @@ The actual files such as .pdf (or any other file attachment type) are stored in 
 
 This page provides similar information as the **Summary** tab, but with an environment-level view of where your organization is using capacity.
 
-To view the **Storage capacity** page, select **Analytics** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Details button](media/storage-data-details-button.png "Details button")) to see environment capacity analytics.
+To view the **Storage capacity** page, select **Resources** > **Capacity** > **Storage capacity**. See the next section for using the **Details** button (![Storage data details button](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.
 
 > [!div class="mx-imgBorder"] 
-> ![Details button](media/storage-data-per-environment2.png "Details button")
+> ![Storage data per environment details button](media/storage-data-per-environment2.png "Storage data per environment details button")
 
 
 > [!NOTE]
@@ -100,9 +100,9 @@ This page provides an environment-level detailed view of where your organization
 
 **To view environment-level capacity analytics**
 
-1. Select **Analytics** > **Capacity** > **Storage capacity**.
+1. Select **Resources** > **Capacity** > **Storage capacity**.
 2. Select an environment.
-3. Select **Details** (![Details button](media/storage-data-details-button.png "Details button")).
+3. Select **Details** (![Storage data details button2](media/storage-data-details-button.png "Storage data details button2")).
 
 > [!div class="mx-imgBorder"] 
 > ![Environment capacity analytics](media/storage-data-capacity-details.png "Environment capacity analytics")
@@ -173,7 +173,16 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 
 ## FAQ
 
+### Why is my storage consumption decreasing in database and growing in file?
+
+We are constantly optimizing the Common Data Service for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage. This leads to decreased usage of database capacity and an increase in file capacity.
+
+### Why could my database table size decrease while my table and file data sizes remain the same?
+
+As part of moving file-type data such as “Annotation” and “Attachment” out from database and into file storage, we periodically reclaim the freed database space. This leads to decreased usage of database capacity, while the table and file data size computations remain unchanged.
+
 ### Do indexes affect database storage usage?
+
 Possibly. Database storage includes both the database records and index files used to improve search performance. Indexes are created and optimized for peak performance and are updated frequently by the system by analyzing data use patterns. No user action is needed to optimize the indexes, as all Common Data Service stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes on the database. Common Data Service is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity.  Common causes for an increase in index size are:
 
 - An organization making use of new functionality (this can be custom, out-of-the-box, or part of an update or solution installation).
@@ -225,7 +234,7 @@ When you sign in to the Power Platform admin center, you'll be notified if your 
 
 ### Why am I no longer getting storage notifications?
 
-We've disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/analytics/capacity )** page to monitor usage.
+We've disabled email notifications with the move to the new storage model. Review the **[Capacity](https://admin.powerplatform.microsoft.com/resources/capacity)** page to monitor usage.
 
 ### I'm an existing customer. Should I expect my file and log usage to change?
 
@@ -239,7 +248,7 @@ Not all licenses give per-user entitlement. For example, the Team Member license
 
 Default, production, and sandbox environments are counted for consumption. Trial, preview, support, and developer environments aren't counted.
 
-### What are entities ending in “- Analytics” in my capacity report?
+### What are entities ending in “- analytics" in my capacity report?
 
 Entities ending in “– Analytics” are entities used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Common Data Service entities. See **More information** below for documentation covering the installed Insights applications and the entities used to create insights and dashboards.
 

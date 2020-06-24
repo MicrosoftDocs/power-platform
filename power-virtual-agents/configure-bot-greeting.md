@@ -2,7 +2,7 @@
 title: "Automatically start a Power Virtual Agents bot conversation"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: ""
-ms.date: 4/21/2020
+ms.date: 6/10/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -10,7 +10,7 @@ author: iaanw
 ms.author: iawilt
 ms.reviewer: digantak
 manager: shellyha
-ms.custom: "customization"
+ms.custom: "customization, ce06102020"
 ms.collection: virtualagent
 ---
 
@@ -168,7 +168,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
 
 4. In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
 
-5. Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom canvas.
+5. Open *index.html* using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
 
 6. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
     If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
