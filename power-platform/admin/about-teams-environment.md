@@ -40,7 +40,7 @@ search.app:
 
 |  |Teams environment  |Production environment  |
 |---------|---------|---------|
-|Admin related operations     |         |         |
+|**Admin related operations**    |         |         |
 |Ability to edit a M365 group associated to a CDS-Lite     | No        | Yes         |
 |Support environment type conversion     | No        | Yes        | 
 |Support a separate filter view for Teams environments     | Yes        | Yes        |
@@ -48,7 +48,7 @@ search.app:
 |User sync can sync owners, members, guests.     | Yes        | Yes        |
 |Ability to edit settings     | Minimal        | Yes        |
 |Specific governance controls for Teams environments including Templates     | Yes        | No        |
-|Power Apps related Operations     |         |         |
+|**Power Apps related Operations**     |         |         |
 |Team owner, Team member, Team guest AuthZ.     |  Yes       | N/A        |
 |Template app acquisition/ blank app from within teams creates an environment.     | Yes       | N/A        |
 |Delete Team deletes the environment.     | Yes       | N/A        |
