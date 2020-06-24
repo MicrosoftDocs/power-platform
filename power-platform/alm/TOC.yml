@@ -68,6 +68,8 @@
           href: dependency-tracking-solution-components.md
         - name: Check for component dependencies
           href: check-solution-dependencies.md
+        - name: Support multiple languages
+          href: create-solutions-support-multiple-languages.md
     - name: Leverage solution and packaging tools
       href: 
       items:
