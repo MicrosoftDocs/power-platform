@@ -62,6 +62,8 @@
           href: plugin-component.md
         - name: Web resources
           href: web-resource-component.md
+        - name: Use managed properties
+          href: use-managed-properties.md
         - name: Dependency tracking
           href: dependency-tracking-solution-components.md
         - name: Check for component dependencies
