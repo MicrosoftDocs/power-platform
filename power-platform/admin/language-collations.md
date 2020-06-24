@@ -82,8 +82,6 @@ A language includes the following information:
 | 1055 Turkish                                           | \_CI_AI       |
 | 1057 Indonesian                                        | \_CI_AS       |
 | 1058 Ukrainian                                         | \_CI_AS       |
-| 1058 Ukrainian                                         | \_CI_AS       |
-| 1060 Slovenian                                         | \_CI_AS       |
 | 1060 Slovenian                                         | \_CI_AS       |
 | 1061 Estonian                                          | \_CI_AS       |
 | 1062 Latvian                                           | \_CI_AS       |
