@@ -2,8 +2,8 @@
 title: "Work with solutions using the SDK APIs | Microsoft Docs"
 description: "Learn about the APIs that are available to manage Common Data Service solutions."
 keywords: 
-author: phecke
-ms.author: pehecke
+author: mikkelsen2000
+ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020

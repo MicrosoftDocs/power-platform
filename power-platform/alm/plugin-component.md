@@ -2,8 +2,8 @@
 title: "Plug-ins | Microsoft Docs"
 description: "Learn about including plug-in components in solutions."
 keywords: 
-author: phecke
-ms.author: pehecke
+author: mikkelsen2000
+ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
 ms.date: 06/05/2020
