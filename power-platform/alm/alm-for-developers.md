@@ -2,8 +2,8 @@
 title: "ALM for developers | Microsoft Docs"
 description: "Learn what ALM tools, APIs, and services are available to developers when creating and publishing solutions for Common Data Service."
 keywords: 
-author: phecke
-ms.author: pehecke
+author: mikkelsen2000
+ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020

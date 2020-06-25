@@ -2,8 +2,8 @@
 title: "Work with solutions using PowerShell | Microsoft Docs"
 description: "Learn about the PowerShell APIs, service, and module that are available to analyze solutions against a set of best practice rules."
 keywords: 
-author: phecke
-ms.author: pehecke
+author: mikkelsen2000
+ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
 ms.date: 06/16/2020
