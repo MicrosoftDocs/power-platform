@@ -145,10 +145,11 @@ QueryExpression queryCheckForSampleSolution = new QueryExpression
 queryCheckForSampleSolution.Criteria.AddCondition("uniquename",
    ConditionOperator.Equal, solution.UniqueName);
 
-// Create the solution if it doesn't already exist
+// Attempt to retrieve the solution
 EntityCollection querySampleSolutionResults =
    _serviceProxy.RetrieveMultiple(queryCheckForSampleSolution);
 
+// Create the solution if it doesn't already exist
 Solution SampleSolutionResults = null;
 
 if (querySampleSolutionResults.Entities.Count > 0)
@@ -280,10 +281,109 @@ foreach (System.Xml.XmlNode node in optionSets)
 
 The content of the `Data` property is a string representing the solution XML file.
 
+## Add and remove solution components
+
+Learn how to add and remove solution components using code.
+
+### Add a new solution component
+ 
+This sample shows how to create a solution component that is associated with a specific solution. If you don't associate the solution component to a specific solution when it is created it will only be added to the default solution and you will need to add it to a solution manually or by using the code included in the [Add an existing solution component](#add-an-existing-solution-component).  
+  
+ This code creates a new global option set and adds it to the solution with a unique name equal to `_primarySolutionName`.  
+  
+ ```csharp
+ OptionSetMetadata optionSetMetadata = new OptionSetMetadata()
+{
+    Name = _globalOptionSetName,
+    DisplayName = new Label("Example Option Set", _languageCode),
+    IsGlobal = true,
+    OptionSetType = OptionSetType.Picklist,
+    Options =
+{
+    new OptionMetadata(new Label("Option 1", _languageCode), 1),
+    new OptionMetadata(new Label("Option 2", _languageCode), 2)
+}
+};
+CreateOptionSetRequest createOptionSetRequest = new CreateOptionSetRequest
+{
+    OptionSet = optionSetMetadata                
+};
+
+createOptionSetRequest.SolutionUniqueName = _primarySolutionName;
+_serviceProxy.Execute(createOptionSetRequest);
+ ```  
+  
+### Add an existing solution component  
+
+This sample shows how to add an existing solution component to a solution.  
+  
+The following code uses the <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> to add the `Account` entity as a solution component to an unmanaged solution.  
+  
+ ```csharp
+// Add an existing Solution Component
+//Add the Account entity to the solution
+RetrieveEntityRequest retrieveForAddAccountRequest = new RetrieveEntityRequest()
+{
+    LogicalName = Account.EntityLogicalName
+};
+RetrieveEntityResponse retrieveForAddAccountResponse = (RetrieveEntityResponse)_serviceProxy.Execute(retrieveForAddAccountRequest);
+AddSolutionComponentRequest addReq = new AddSolutionComponentRequest()
+{
+    ComponentType = (int)componenttype.Entity,
+    ComponentId = (Guid)retrieveForAddAccountResponse.EntityMetadata.MetadataId,
+    SolutionUniqueName = solution.UniqueName
+};
+_serviceProxy.Execute(addReq);
+```
+
+### Remove a solution component  
+
+This sample shows how to remove a solution component from an unmanaged solution. The following code uses the <xref:Microsoft.Crm.Sdk.Messages.RemoveSolutionComponentRequest> to remove an entity solution component from an unmanaged solution. The `solution.UniqueName` references the solution created in [Create an unmanaged solution](#create-an-unmanaged-solution).  
+  
+ ```csharp
+ // Remove a Solution Component
+//Remove the Account entity from the solution
+RetrieveEntityRequest retrieveForRemoveAccountRequest = new RetrieveEntityRequest()
+{
+    LogicalName = Account.EntityLogicalName
+};
+RetrieveEntityResponse retrieveForRemoveAccountResponse = (RetrieveEntityResponse)_serviceProxy.Execute(retrieveForRemoveAccountRequest);
+
+RemoveSolutionComponentRequest removeReq = new RemoveSolutionComponentRequest()
+{
+    ComponentId = (Guid)retrieveForRemoveAccountResponse.EntityMetadata.MetadataId,
+    ComponentType = (int)componenttype.Entity,
+    SolutionUniqueName = solution.UniqueName
+};
+_serviceProxy.Execute(removeReq);
+```
+
+## Delete a solution
+
+The following sample shows how to retrieve a solution using the solution `uniquename` and then extract the `solutionid` from the results. The sample then uses the `solutionid` with the<xref:Microsoft.Xrm.Sdk.IOrganizationService>. <xref:Microsoft.Xrm.Sdk.IOrganizationService.Delete*> method to delete the solution.  
+  
+```csharp
+// Delete a solution
+
+QueryExpression queryImportedSolution = new QueryExpression
+{
+    EntityName = Solution.EntityLogicalName,
+    ColumnSet = new ColumnSet(new string[] { "solutionid", "friendlyname" }),
+    Criteria = new FilterExpression()
+};
+
+
+queryImportedSolution.Criteria.AddCondition("uniquename", ConditionOperator.Equal, ImportedSolutionName);
+
+Solution ImportedSolution = (Solution)_serviceProxy.RetrieveMultiple(queryImportedSolution).Entities[0];
+
+_serviceProxy.Delete(Solution.EntityLogicalName, (Guid)ImportedSolution.SolutionId);
+
+Console.WriteLine("Deleted the {0} solution.", ImportedSolution.FriendlyName);
+
 ## Cloning, patching, and upgrading
 
-You can perform other solution operations by using these
-APIs: [StageAndUpgradeRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.stageandupgraderequest),
-[CloneAsPatchRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.cloneaspatchrequest),
-and [CloneAsSolutionRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.cloneassolutionrequest).
-For information about cloning and patching, see [Create solution patches](/powerapps/maker/common-data-service/solution-patches). For information about staging and upgrades, see [Solution lifecycle](solution-concepts-alm.md#solution-lifecycle).
+You can perform additional solution operations by using the available APIs. For cloning and patching solutions use the [CloneAsPatchRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.cloneaspatchrequest)
+and [CloneAsSolutionRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.cloneassolutionrequest). For information about cloning and patching, see [Create solution patches](/powerapps/maker/common-data-service/solution-patches).
+
+When performing solution staging and upgrades use the [StageAndUpgradeRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.stageandupgraderequest) and [DeleteAndPromoteRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.deleteandpromoterequest). For more information about staging and upgrades, see [Solution lifecycle](solution-concepts-alm.md#solution-lifecycle).
