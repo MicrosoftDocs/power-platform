@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/23/2020
+ms.date: 06/24/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -29,7 +29,7 @@ For each of the major releases, you can opt in for early access updates approxim
 
 For example, for a wave 1 major release that's planned to be automatically enabled starting in the first week of April, you'll be able to opt in for early access updates in early February. Similarly, for a wave 2 release that's planned to be automatically enabled starting in the first week of October, you'll be able to opt in for early access updates in early August.
 
-The following illustrates the early update availability timeline.
+The following is an example of an early update availability timeline.
 
 ![Opt-in timeline for 2020](media/opt-in-2020-timeline.png "Opt-in timeline for 2020")
 

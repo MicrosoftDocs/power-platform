@@ -73,7 +73,7 @@ The following image shows Microsoft 365 user contact fields.
 ## Add a license to a user account  
 You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service. 
   
-For step-by-step instructions to use user licenses, see [Add users individually or in bulk](https://go.microsoft.com/fwlink/p/?LinkId=255449).
+For step-by-step instructions to use user licenses, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
  
 For step-by-step instructions to use Power Apps per app plans, see [Power Apps per app plans](about-powerapps-perapp.md).
   

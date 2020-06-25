@@ -2,8 +2,8 @@
 title: "Online Management API (REST) to manage environments | Microsoft Docs"
 description: "Learn about the APIs that are available to manage Common Data Service environments."
 keywords: 
-author: phecke
-ms.author: pehecke
+author: mikkelsen2000
+ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
