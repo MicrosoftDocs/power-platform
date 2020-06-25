@@ -2,8 +2,8 @@
 title: "Power Apps component framework | Microsoft Docs"
 description: "Learn about including Power Apps component framework components in solutions."
 keywords: 
-author: phecke
-ms.author: pehecke
+author: mikkelsen2000
+ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
