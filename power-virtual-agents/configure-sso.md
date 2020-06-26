@@ -246,7 +246,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
     </script>
     ```
 
-4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable which is then called as part of `styleOptions`. This may cause a duplicate reference to `styleOptions` [when rendering a custom canvas](customize-default-canvas.md) so you may need to combine the references.
+4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable. 
 
 5. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Power Virtual Agents portal.
 
@@ -265,8 +265,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
   		
   	   const { token } = await fetchJSON(theURL);
   	   const directLine = window.WebChat.createDirectLine({ token });
-      var calcId = Marh.floor(Math.random()*10000).toString() + Date.now().toString();
-      var userID = clientApplication.account?.accountIdentifier != null ? ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0,64) : calcId.substr(0,64)  // Make sure this will not exceed 64 characters 
+       var userID = clientApplication.account?.accountIdentifier != null ? ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0,64) : (Math.random().toString() + Date.now().toString().substr(0,64)  // Make sure this will not exceed 64 characters 
             const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
              const { type } = action;
              if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
