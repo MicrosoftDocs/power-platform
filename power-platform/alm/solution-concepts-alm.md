@@ -1,6 +1,6 @@
 ---
-title: "Solution concepts in Power Apps | Microsoft Docs"
-description: "Learn about solutions in Power Apps"
+title: "Solution concepts | Microsoft Docs"
+description: "Learn about solutions in Power Apps, Power Automate, and Power Virtual Agents"
 keywords: 
 author: Mattp123
 ms.author: matp
