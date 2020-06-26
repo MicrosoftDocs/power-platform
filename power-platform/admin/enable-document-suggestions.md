@@ -2,11 +2,10 @@
 title: "Enable document suggestions for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
 description: Enable document suggestions for Dynamics 365 for Customer Engagement apps
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 06/26/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -107,7 +106,7 @@ External sites, such as an on-premises SharePoint document library can be includ
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
-2. Go to **Environments** > [select an environment] > **Settings** > **Integration** > **Manage document suggestions**.
+2. Go to **Environments** > [select an environment] > **Settings** > **Integration** > **Document management settings** > **Manage Document Suggestions**.
   
 3. In the **Select Entities** area, select the entities that you want to include in Document Suggestions, and then select **Apply**.  
   
