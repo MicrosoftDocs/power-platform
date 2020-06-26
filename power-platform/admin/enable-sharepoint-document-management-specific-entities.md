@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 06/26/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -32,7 +32,7 @@ Store the documents related to entity records in [!INCLUDE[pn_ms_SharePoint_long
   
 2. In the Power Platform admin center, select an environment. 
 
-3. Select **Settings** > **Integration** > **Document management settings**.  
+3. Select **Settings** > **Integration** > **Document management settings** > **Document Management Settings**.  
 
 4. Select the entities that you want to use to manage [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] documents.  
   
