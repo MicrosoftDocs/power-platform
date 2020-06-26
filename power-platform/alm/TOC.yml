@@ -98,10 +98,10 @@
     - name: Manage solutions using custom code
       href: 
       items:
-        - name: Work with solutions using PowerShell
+        - name: Use PowerShell
           href: powershell-api.md
-        - name: Online Management API (REST) to manage environments
+        - name: Manage environments (REST API) 
           href: online-management-api.md
-        - name: Work with solutions using the SDK APIs 
+        - name: Work with solutions (SDK API) 
           href: solution-api.md
   
