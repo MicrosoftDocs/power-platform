@@ -104,4 +104,8 @@
           href: online-management-api.md
         - name: Work with solutions (SDK API) 
           href: solution-api.md
+        - name: Create patches 
+          href: create-patches-simplify-solution-updates.md
+    - name: Manage solutions using custom code
+      href: when-edit-customization-file.md
   
