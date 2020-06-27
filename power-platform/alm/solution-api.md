@@ -117,7 +117,7 @@ contains.
 | Name               | Common Data Service generates a unique name based on the **Display Name**. You can edit the unique name. The unique name must only contain alphanumeric characters or the underscore character.   |
 | Publisher          | Use the **Publisher** lookup to associate the solution with a publisher.      |
 | Version            | Specify a version by using the following format: *major.minor.build.revision* (for example, 1.0.0.0.    |
-| Configuration Page | If you include an HTML Web resource in your solution, you can use this lookup to add it as your designated configuration page. More information: [Use the Solution Configuration Page](/powerapps/developer/common-data-service/create-export-import-unmanaged-solution#BKMK_UseSolutionConfigurationPage)    |
+| Configuration Page | If you include an HTML Web resource in your solution, you can use this lookup to add it as your designated solution configuration page.    |
 | Description        | Use this field to include any relevant details about your solution.     |
 
 Below is sample code to create an unmanaged solution that uses the publisher we
@@ -166,8 +166,8 @@ if (SampleSolutionResults == null)
 
 After you create an unmanaged solution, you can add solution components by
 creating them in the context of this solution or by adding existing components
-from other solutions. More information: [Add a new solution component](/powerapps/developer/common-data-service/work-solutions#add-a-new-solution-component)
-and [Add an existing solution component](/powerapps/developer/common-data-service/work-solutions#add-an-existing-solution-component)
+from other solutions. More information: [Add a new solution component](#add-a-new-solution-component)
+and [Add an existing solution component](#add-an-existing-solution-component)
 
 ### Export an unmanaged solution
 
