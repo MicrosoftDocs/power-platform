@@ -19,6 +19,8 @@ search.app:
 
 # Released versions for the CoE Starter Kit
 
+Select each version below to see release notes and updates for each component. You can download the most recently updated assets from the [GitHub repository](https://aka.ms/coestarterkitrepo).
+
 ## Latest version availability
 
 |  Component     | Latest version |
@@ -28,6 +30,7 @@ search.app:
 | Nurture |   [1.14](release-notes/nurture-1.14.md)  |
 | Audit Log |   [1.0.0.16](release-notes/auditlog-1.0.0.16.md) |
 
+<!-- NOTE: We will add this with the next release to have a version history, but had feedback that adding this with the first release adds confusion for users who are not familiar with the Power Apps release notes
 ### All Core (Admin) Components versions
 
 |  Version | First available |
@@ -51,3 +54,4 @@ search.app:
 |  Version | First available |
 | --------- | ---------------|
 | [1.0.0.16](release-notes/auditlog-1.0.0.16.md) | May 29, 2020 |
+>
