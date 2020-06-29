@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 06/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -55,7 +55,7 @@ Once you've made your purchase, there are no further actions needed in the Micro
 
 After purchase, you allocate per app plans to environments. If you have multiple environments like test and production, you need to allocate per app plans capacity to all these environments appropriately.
 
-In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Analytics > Capacity** in the left-side navigation pane. If your organization has purchased add-ons that includes per app plans, an **Add-ons** tile appears on the **Capacity** screen displaying summary information about the capacity add-ons that your organization has.
+In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Resources** > **Capacity** in the left-side navigation pane. If your organization has purchased add-ons that includes per app plans, an **Add-ons** tile appears on the **Capacity** screen displaying summary information about the capacity add-ons that your organization has.
 
 ![Example of purchased capacity in the admin center](media/manage-add-on.png "Example of purchased capacity in the admin center")
 
@@ -71,7 +71,8 @@ After an admin allocates Power Apps per app plan to an environment, they're assi
 Follow these steps to turn off assigning per app plans for users when an app is shared with them:
 
 1. Choose the app in [Power Apps](https://make.powerapps.com).
-2. Select **Settings**.
+
+2. Select **...** > **Settings**.
 
    ![App settings](media/app-settings2.png "App settings")
 
@@ -87,7 +88,7 @@ Follow these steps to turn off assigning per app plans for users when an app is 
 ### Check capacity
 Check the **App passes** capacity for the environment with the app you're sharing. Make sure you have sufficient app passes assigned for the number of users using the app.
 
-Go to **Capacity** > **Add-ons** tab.
+Go to **Resources** > **Capacity** > **Add-ons** tab.
 
 > [!div class="mx-imgBorder"] 
 > ![Add-on capacity assignment](media/add-on-assignment.png "Add-on capacity assignment")
