@@ -34,7 +34,7 @@ We refer to these roles throughout this article as *tenant admins*. More informa
 
 ### Environment-level
 
-To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions. More information: [Environment permissions](environments-administration.md#environment-permissions) 
+To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions.  
 
 ## Find and view DLP policies
 
