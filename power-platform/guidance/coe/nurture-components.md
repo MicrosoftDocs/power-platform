@@ -24,27 +24,35 @@ The CoE Nurture Components solution contains assets relevant to everyone in the 
 
 Here's a breakdown of the assets that form the Nurture Components solution:
 
--  Onboard new makers, provide training, and share best practices
-
-    - [Admin | Welcome Email (flow)](#flows)
-    - [Template Catalog (canvas app)](#apps)
-    - [Admin | Newsletter with Product Updates (flow)](#flows)
-    - [Training in a day Management and Registration (canvas apps)](#apps)
-    - [Training in a day Feedback Reminder, Registration Confirmation and Reminder (flow)](#flows)
-
--  Encourage adoption
-
-    - [App Catalog (canvas app)](#apps)
+- Onboard new makers, provide training, and share best practices
+  - [Admin | Welcome Email (flow)](#flows)
+  - [Template Catalog (canvas app)](#apps)
+  - [Admin | Newsletter with Product Updates (flow)](#flows)
+  - [Training in a day Management and Registration (canvas apps)](#apps)
+  - [Training in a day Feedback Reminder, Registration Confirmation and Reminder (flow)](#flows)
+- Encourage adoption
+  - [App Catalog (canvas app)](#apps)
 
 ## Entities
 
 ### InADayAttendees
 
-Represents attendees that have registered for a Training in a day course by using the Training in a day Registration canvas app.
+Represents attendees that have registered for a Training in a day course by using the Training in a day Registration canvas app. The following information is available for each attendee:
+
+- Attendee eMail
+- Name
+- Registered Event
 
 ### InADayEvent
 
-Represents available training events created through the Training in a day Management canvas app.
+Represents available training events created through the Training in a day Management canvas app. The following information is available for each event:
+
+- Name
+- Description
+- Start Time
+- End Time
+- Max Attendees
+- Location
 
 ## Flows
 
