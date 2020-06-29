@@ -91,7 +91,7 @@ In this example, four security groups provide controlled access to a specific en
 3. In the **Settings** page, select **Edit** (![Edit](media/edit-button.png)).
   
    > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/edit-security-group.png "Select Edit")
+   > ![Edit security group](media/edit-security-group.png "Edit security group")
 
 4. Select a security group, select **Done**, and then select **Save**.
 
@@ -110,7 +110,7 @@ The security group is associated with the environment.
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/edit-environment.png "Select Edit")
+   > ![Edit environment](media/edit-environment.png "Edit environment")
 
 3. In the **Settings** page, select **Delete** (![Delete](media/nb-ua-r1-trashbin.png)).  
 

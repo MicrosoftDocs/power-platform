@@ -49,7 +49,7 @@ About **system backups**:
 5. You'll be provided with a list of available backups at or close to the date and time you chose if the selected time is not available. Pick the desired backup, and then select **Confirm**.
 
    > [!div class="mx-imgBorder"] 
-   > ![System backups](media/select-available-backup.png "System backups")
+   > ![Select available backup](media/select-available-backup.png "Select available backup")
 
 6. Select an environment to restore to (overwrite), enter other settings as desired, and then select **Restore**.
 

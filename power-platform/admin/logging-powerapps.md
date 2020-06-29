@@ -69,7 +69,7 @@ You can review your audit data in the Microsoft 365 Security and Compliance Cent
 To use the preconfigured Power Apps reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Power Apps app activities** tab.
 
 > [!div class="mx-imgBorder"] 
-> ![Audit log search](media/audit-log-search-pa.png "Audit log search")
+> ![Audit log search Power Apps](media/audit-log-search-pa.png "Audit log search Power Apps")
 
 ### See also
  [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6)<br/>

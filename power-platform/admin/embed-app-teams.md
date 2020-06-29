@@ -48,7 +48,7 @@ Find and make note of your app's GUID to use in a later step.
 3. Record the **App ID** for later use.
 
    > [!div class="mx-imgBorder"] 
-   > ![App details](./media/app-details2.png "App details")
+   > ![App details2](./media/app-details2.png "App details2")
 
 ## Install App Studio
 
@@ -76,7 +76,7 @@ You can skip these steps if App Studio is already installed.
 1. In Teams, open App Studio.
 
    > [!div class="mx-imgBorder"] 
-   > ![Open App Studio](./media/open-app-studio2.png "Open App Studio")
+   > ![Open App Studio2](./media/open-app-studio2.png "Open App Studio2")
 
 2. Select the **Manifest editor** tab, and then select **Create a new app** under Welcome.
 
@@ -142,7 +142,7 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
 8. To configure the Teams manifest, under **Add a personal tab** select **Add**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Team tab Add](./media/personal-tab-add.png "Team tab Add")
+   > ![Personal tab Add](./media/personal-tab-add.png "Personal tab Add")
 
 9. Fill in the following fields, and then select **Save**.
 
@@ -152,7 +152,7 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
    **Website URL**: `https://apps.powerapps.com/play/<your app ID>?source=teamsopenwebsite&locale={locale}&channelId={channelId}&channelType=&{channelType}&chatId=${chatId}&groupId={groupId}&hostClientType={hostClientType}&isFullScreen={isFullScreen}&subEntityID={subEntityID}&teamId={teamId}&teamType={teamType}&theme={theme}&userTeamRole={userTeamRole}`
 
    > [!div class="mx-imgBorder"] 
-   > ![Configuration URL](./media/personal-configuration-url.png "Configuration URL")
+   > ![Personal configuration URL](./media/personal-configuration-url.png "Personal configuration URL")
 
 **Add the app to all teams in your tenant**
 
@@ -164,7 +164,7 @@ For more information, see [Manifest Editor](https://docs.microsoft.com/microsoft
 11. To enable single sign-on, set the **AAD App ID** to `3e62f81e-590b-425b-9531-cad6683656cf` and the resource URL to `https://apps.powerapps.com`
 
     > [!div class="mx-imgBorder"] 
-    > ![Add valid domains](./media/add-teams-sso.png "Add valid domains")
+    > ![Add teams](./media/add-teams-sso.png "Add teams")
 
 
 12. To set device permissions for your app, under **Device permissions** select **Set up**.

@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 05/13/2020
+ms.date: 06/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -27,6 +27,8 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 - [Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell)
 - [Maker](https://www.powershellgallery.com/packages/Microsoft.PowerApps.PowerShell) 
 
+For information on the Power Apps admin module, see [Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest) and [Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest).
+
 > [!NOTE]
 > **Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:**
 > 
@@ -35,6 +37,18 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 > ```powershell
 > Add-PowerAppsAccount -Endpoint "usgov" 
 > ```
+
+## Requirements
+PowerShell in this topic requires PowerShell version 5.x. To check the version of PowerShell running on your machine, run the following command:
+
+> ```powershell
+> $PSVersionTable.PSVersion
+> ```
+
+If you have an outdated version, see [Upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell).
+
+> [!IMPORTANT]
+> The modules described in this document, use .NET Framework. This makes it incompatible with PowerShell 6.0 and later, which uses .NET Core. 
 
 ## Installation
 To run the PowerShell cmdlets for app creators, do the following:
@@ -248,7 +262,7 @@ You can combine native PowerShell functions with the Power Apps cmdlets to manip
 Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Object -TypeName PSObject -Property @{ DisplayName = (Get-AdminPowerAppEnvironment -EnvironmentName $_.Name | Select -ExpandProperty displayName); Count = $_.Count } }
 ```
 
-![Get-AdminPowerApp command](media/get-adminpowerapp-environment.png "Get-AdminPowerApp command")
+![Get-AdminPowerApp environment](media/get-adminpowerapp-environment.png "Get-AdminPowerApp environment")
 
 #### Download Power Apps user details
 
@@ -280,7 +294,7 @@ Changes the owner role of a PowerApp to the current user, and replaces the origi
 
 #### Display a list of deleted canvas apps in an environment
 
-```
+```powershell
 Get-AdminDeletedPowerAppsList -EnvironmentName 'EnvironmentName'
 ```
 
@@ -288,7 +302,7 @@ This displays all canvas apps that were recently deleted and may still be recove
 
 #### Recover a deleted canvas app
 
-```
+```powershell
 Get-AdminRecoverDeletedPowerApp -AppName 'AppName' -EnvironmentName 'EnvironmentName'
 ```
 
@@ -448,24 +462,26 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 ## Version History
 | Date | Updates |
 | --- | --- |
+| 05/12/2020 | Added a cmdlet: Export a list of assigned user licenses - Get-AdminPowerAppLicenses |
 | 04/23/2020 | Added new DLP policy cmdlets:<ul><li>New-DlpPolicy</li><li>Get-DlpPolicy</li><li>Set-DlpPolicy</li><li>Remove-DlpPolicy</li><li>Get-AdminDlpPolicy</li><li>Add-ConnectorToBusinessDataGroup</li></ul>
 | 12/20/2019| Added the new administrative cmdlets: Recover-AdminPowerAppEnvironment and Get-AdminPowerAppSoftDeletedEnvironment |
 | 12/05/2019| Provide a way for Power Platform admins to block users within their tenant from signing up for PowerApps/Flows trial licenses. |
-| 04/23/2018 | <ol> <li> Initial launch of the Power Apps cmdlets for app creators (preview) including management cmdlets for Environments, Apps, Flows, Power Automate approvals, Connections, and Custom Connectors </li> <li> Initial launch of the Power Apps cmdlets for administrators (preview) including administrative cmdlets for Environments, Apps, and Flows </li></ol>|
-| 05/24/2018 | <ol> <li> Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the following new administrative cmdlets: <br> Get-AdminPowerAppConnection <br> Remove-AdminConnection <br> Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br>Remove-AdminConnectionRoleAssignment <br>Get-AdminConnector  <br>Remove-AdminConnector <br>Set-AdminConnectorRoleAssignment  <br>Get-AdminConnectorRoleAssignment  <br>Remove-AdminConnectorRoleAssignment <br>Get-AdminPowerAppsUserDetails <br>Get-AdminFlowUserDetails <br>Remove-AdminFlowUserDetails <br>Get-AdminApiPolicy  <br>Add-AdminApiPolicy <br>Remove-AdminApiPolicy <br>Set-AdminApiPolicy <br>Add-ConnectorToBusinessDataGroup  <br>Remove-ConnectorFromBusinessDataGroup </li> </ol>
-| 07/30/2018 | <ol> <li> Added the ability to pass-in credentials to the Add-PowerAppsAccount (to enable recurring scripting) </li> <li>  Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the "PowerApp" or "Flow" prefix to each cmdlet for app creators </li> <li>  Added the "AdminPowerApp" or "AdminFlow" prefix to each cmdlet for administrators </li> <li> Added the following new administrative cmdlets: <br> New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Remove-AdminFlowApprovals </li></ol>
-| 08/15/2018 | Added an optional parameter to the New-AdminPowerAppCdsDatabase to make the function synchronous, by default (i.e. it will not return until the database is successfully provisioned)
-| 08/24/2018 | Fixed an issue where the Power Automate admin cdmlets where not returning data for some using based on their security settings
-| 01/09/2019 | <ol><li>Cmdlets are now available on the PowerShell gallery as two separate modules: Administrator and Maker.</li> <li>Added administrative cmdlet: Remove-LegacyCDSDatabase</li><li> Added operation examples</li><li>Added the ability to manage HTTP and custom connectors in data loss prevention (DLP)</li></ol>|
-| 03/05/2019 | Added content for Government Community Cloud (GCC) level 2 support.  |
-| 03/07/2019 | Added a cmdlet: Add a canvas app to a Common Data Service solution - SetPowerAppAsSolutionAware  |
-| 04/29/2019 | Revised GCC terminology. |
-| 05/10/2019 | Revised links for cmdlets available on the PowerShell gallery to remove preset version. |
 | 05/20/2019 | Added support for environment-specific Data Loss Prevention (DLP) policies. |
-| 04/21/2020 | Added the new DLP cmdlets: New-DlpPolicy, Get-DlpPolicy, Set-DlpPolicy, Remove-DlpPolicy |
-| 05/12/2020 | Added a cmdlet: Export a list of assigned user licenses - Get-AdminPowerAppLicenses |
+| 05/10/2019 | Revised links for cmdlets available on the PowerShell gallery to remove preset version. |
+| 04/29/2019 | Revised GCC terminology. |
+| 03/07/2019 | Added a cmdlet: Add a canvas app to a Common Data Service solution - SetPowerAppAsSolutionAware  |
+| 03/05/2019 | Added content for Government Community Cloud (GCC) level 2 support.  |
+| 01/09/2019 | <ol><li>Cmdlets are now available on the PowerShell gallery as two separate modules: Administrator and Maker.</li> <li>Added administrative cmdlet: Remove-LegacyCDSDatabase</li><li> Added operation examples</li><li>Added the ability to manage HTTP and custom connectors in data loss prevention (DLP)</li></ol>|
+| 08/24/2018 | Fixed an issue where the Power Automate admin cdmlets where not returning data for some using based on their security settings |
+| 08/15/2018 | Added an optional parameter to the New-AdminPowerAppCdsDatabase to make the function synchronous, by default (i.e. it will not return until the database is successfully provisioned) |
+| 07/30/2018 | <ol> <li> Added the ability to pass-in credentials to the Add-PowerAppsAccount (to enable recurring scripting) </li> <li>  Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the "PowerApp" or "Flow" prefix to each cmdlet for app creators </li> <li>  Added the "AdminPowerApp" or "AdminFlow" prefix to each cmdlet for administrators </li> <li> Added the following new administrative cmdlets: <br> New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Remove-AdminFlowApprovals </li></ol> |
+| 05/24/2018 | <ol> <li> Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the following new administrative cmdlets: <br> Get-AdminPowerAppConnection <br> Remove-AdminConnection <br> Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br>Remove-AdminConnectionRoleAssignment <br>Get-AdminConnector  <br>Remove-AdminConnector <br>Set-AdminConnectorRoleAssignment  <br>Get-AdminConnectorRoleAssignment  <br>Remove-AdminConnectorRoleAssignment <br>Get-AdminPowerAppsUserDetails <br>Get-AdminFlowUserDetails <br>Remove-AdminFlowUserDetails <br>Get-AdminApiPolicy  <br>Add-AdminApiPolicy <br>Remove-AdminApiPolicy <br>Set-AdminApiPolicy <br>Add-ConnectorToBusinessDataGroup  <br>Remove-ConnectorFromBusinessDataGroup </li> </ol> |
+| 04/23/2018 | <ol> <li> Initial launch of the Power Apps cmdlets for app creators (preview) including management cmdlets for Environments, Apps, Flows, Power Automate approvals, Connections, and Custom Connectors </li> <li> Initial launch of the Power Apps cmdlets for administrators (preview) including administrative cmdlets for Environments, Apps, and Flows </li></ol>|
 
 ## Questions?
 
 If you have any comments, suggestions, or questions, post them on the [Administering Power Apps community board](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
 
+### See also
+[Get started using the Power Apps admin module](https://docs.microsoft.com/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest) <br />
+[Microsoft.PowerApps.Administration.PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest)

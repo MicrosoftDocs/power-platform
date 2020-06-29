@@ -114,8 +114,7 @@ Model-driven apps in Dynamics 365
   
     The following cmdlets enable the computer to receive remote commands and add [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] modules to the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] session. For more information about these cmdlets see [Windows PowerShell Core Cmdlets](https://technet.microsoft.com/library/hh849695.aspx).  
   
-   ```  
-  
+   ```powershell
    Enable-PSRemoting -force  
    New-PSSession  
    Import-Module MSOnline -force  
@@ -128,24 +127,22 @@ Model-driven apps in Dynamics 365
   
     For detailed information about each of the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands listed here, see [Manage Azure AD using Windows PowerShell](https://msdn.microsoft.com/library/azure/jj151815.aspx)  
   
-   ```  
+   ```powershell
    $msolcred = get-credential  
    connect-msolservice -credential $msolcred  
-  
    ```  
   
 3. Set the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] host name.  
   
     The value that you set for the variable *HostName* must be the complete host name of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection. The hostname must be derived from the site collection URL and is case sensitive. In this example, the site collection URL is *<https://SharePoint.constoso.com/sites/salesteam>*, so the hostname is *SharePoint.contoso.com*.  
   
-   ```  
+   ```powershell
    $HostName = "SharePoint.contoso.com"  
-  
    ```  
   
 4. Get the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] object (tenant) id and [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN).  
   
-   ```  
+   ```powershell
    $SPOAppId = "00000003-0000-0ff1-ce00-000000000000"  
    $SPOContextId = (Get-MsolCompanyInformation).ObjectID  
    $SharePoint = Get-MsolServicePrincipal -AppPrincipalId $SPOAppId  
@@ -154,11 +151,9 @@ Model-driven apps in Dynamics 365
   
 5. Set the [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] Service Principal Name (SPN) in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
   
-   ```  
-  
+   ```powershell
    $ServicePrincipalName.Add("$SPOAppId/$HostName")   
    Set-MsolServicePrincipal -AppPrincipalId $SPOAppId -ServicePrincipalNames $ServicePrincipalName  
-  
    ```  
   
    After these commands complete do not close the SharePoint 2013 Management Shell, and continue to the next step.  
@@ -171,10 +166,8 @@ Model-driven apps in Dynamics 365
 > [!CAUTION]
 >  Running this command changes the authentication realm of the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises farm. For applications that use an existing security token service (STS), this may cause unexpected behavior with other applications that use access tokens. More information: [Set-SPAuthenticationRealm](https://technet.microsoft.com/library/jj219756.aspx).  
   
-```  
-  
+```powershell
 Set-SPAuthenticationRealm -Realm $SPOContextId  
-  
 ```  
   
 ### Create a trusted security token issuer for Azure Active Directory on SharePoint  
@@ -186,28 +179,25 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
   
 1. Enable the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] session to make changes to the security token service for the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm.  
   
-   ```  
+   ```powershell
    $c = Get-SPSecurityTokenServiceConfig  
    $c.AllowMetadataOverHttp = $true  
    $c.AllowOAuthOverHttp= $true  
    $c.Update()  
-  
    ```  
   
 2. Set the metadata endpoint.  
   
-   ```  
+   ```powershell
    $metadataEndpoint = "https://accounts.accesscontrol.windows.net/" + $SPOContextId + "/metadata/json/1"  
    $acsissuer = "00000001-0000-0000-c000-000000000000@" + $SPOContextId  
    $issuer = "00000007-0000-0000-c000-000000000000@" + $SPOContextId  
-  
    ```  
   
 3. Create the new token control service application proxy in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
   
-   ```  
+   ```powershell
    New-SPAzureAccessControlServiceApplicationProxy -Name "Internal" -MetadataServiceEndpointUri $metadataEndpoint -DefaultProxyGroup  
-  
    ```  
   
    > [!NOTE]
@@ -215,10 +205,8 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
   
 4. Create the new token control service issuer in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises for [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)].  
   
-   ```  
-  
+   ```powershell
    $acs = New-SPTrustedSecurityTokenIssuer –Name "ACSInternal" –IsTrustBroker:$true –MetadataEndpoint $metadataEndpoint -RegisteredIssuerName $acsissuer  
-  
    ```  
   
 <a name="BKMK_grantperm"></a>   
@@ -235,10 +223,8 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
    >  To complete this command, the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] App Management Service Application Proxy must exist and be running. For more information about how to start and configure the service, see the Configure the Subscription Settings and App Management service applications subtopic in [Configure an environment for apps for SharePoint (SharePoint 2013)](https://technet.microsoft.com/library/fp161236.aspx).  
   
    ```powershell  
-  
    $site = Get-SPSite "https://sharepoint.contoso.com/sites/crm/"  
    Register-SPAppPrincipal -site $site.RootWeb -NameIdentifier $issuer -DisplayName "crm"  
-  
    ```  
   
 2. Grant model-driven apps in Dynamics 365 access to the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site. Replace *<https://sharepoint.contoso.com/sites/crm/>* with your [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site URL.  
@@ -250,7 +236,7 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
    >   - `sitecollection`. Grants the model-driven apps in Dynamics 365 permission to all websites and subsites within the specified [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection.  
    >   - `sitesubscription`. Grants the model-driven apps in Dynamics 365 permission to all websites in the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, including all site collections, websites, and subsites.  
   
-   ```  
+   ```powershell
    $app = Get-SPAppPrincipal -NameIdentifier $issuer -Site "https://sharepoint.contoso.com/sites/crm/"  
    Set-SPAppPrincipalPermission -AppPrincipal $app -Site $site.Rootweb -Scope "sitecollection" -Right "FullControl"  
    ```  
@@ -260,9 +246,8 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
    > [!IMPORTANT]
    >  By default, the claims-based authentication mapping will use the user's [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address and the user's [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises **work email** address for mapping. When you use this, the user's email addresses must match between the two systems. For more information, see [Selecting a claims-based authentication mapping type](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_selectclmmap).  
   
-   ```  
+   ```powershell
    $map1 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" -IncomingClaimTypeDisplayName "EmailAddress" -SameAsIncoming  
-  
    ```  
   
 ### Run the Enable server-based SharePoint integration wizard  
@@ -293,7 +278,7 @@ Follow these steps:
 ### Enable OneDrive for Business  
  On the Windows Server where [!INCLUDE[pn_SharePoint_Server_short](../includes/pn-sharepoint-server-short.md)] on-premises is running, open the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Management Shell and run the following commands:  
   
-```  
+```powershell
 Add-Pssnapin *  
 # Access WellKnown App principal  
 [Microsoft.SharePoint.Administration.SPWebService]::ContentService.WellKnownAppPrincipals  

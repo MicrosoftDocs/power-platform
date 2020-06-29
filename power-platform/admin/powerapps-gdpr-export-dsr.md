@@ -72,19 +72,19 @@ Administrators can export all environments created by a specific user from the [
 ### PowerShell cmdlets for app creators
 Users can export the environments they have access to in Power Apps by using the **Get-PowerAppsEnvironment** function in the [Power Apps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 Get-PowerAppsEnvironment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
 
 ### PowerShell cmdlets for admins
 Administrators can export all of the environments that have been created by a user by using the **Get-AdminEnvironment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 $userId = "7557f390-5f70-4c93-8bc4-8c2faabd2ca0"
 Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
  
 ## Step 2: Export the user's environment permissions
 Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Common Data Service, if a database is created within the environment, the role assignments are stored as records within the Common Data Service database environment. For more information, see [Administer environments within Power Apps](environments-administration.md).
@@ -111,11 +111,11 @@ Administrators can export a user's environment permissions from the [Power Apps 
 #### PowerShell cmdlets for admins
 Administrators can export all environment role assignments for a user across all environments without a Common Data Service database by using the **Get-AdminEnvironmentRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
 
 > [!IMPORTANT]
 >  This function only works for environments that do not have a Common Data Service database environment.
@@ -154,11 +154,11 @@ An administrator can export apps created by a user starting from the [Power Apps
 ### PowerShell cmdlets for admins
 Administrators can export apps created by a user by using the **Get-AdminApp** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminApp -Owner $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
 
 ## Step 4: Export the user's permissions to canvas apps
 Whenever an app is shared with a user, Power Apps stores a record called a *role assignment* that describes the user's permissions (CanEdit or CanUser) to the application. For more information, see [Share an app](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app#share-an-app).
@@ -166,10 +166,10 @@ Whenever an app is shared with a user, Power Apps stores a record called a *role
 ### PowerShell cmdlets for app creators
 Users can export the app role assignments for all apps that they have access to by using the **Get-RoleAssignment** function in the [Power Apps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 Get-AppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
 
 ### Power Apps Admin center
 Administrators can export app roles assignments for a user from the [Power Apps Admin center](https://admin.powerapps.com/) by following these steps:
@@ -182,7 +182,7 @@ Administrators can export app roles assignments for a user from the [Power Apps 
 
 3. Select **Share** for each of the apps in the environment.
 
-    ![Select app share](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
+    ![Select share](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
 
 4. If the user has access to the app, go to the app's **Share** page, copy the details, and then paste them into a document editor, such as Microsoft Word.
 
@@ -191,11 +191,11 @@ Administrators can export app roles assignments for a user from the [Power Apps 
 ### PowerShell cmdlets for admins
 Administrators can export all app role assignments for a user across all apps in their tenant by using the **Get-AdminAppRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminAppRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
 
 ## Step 5: Export personal data contained within connections created by the user
 Connections are used in conjunction with connectors when establishing connectivity with other APIs and SaaS systems. Connections include references to the user who created them and, as a result, can be deleted to remove any references to the user.
@@ -203,38 +203,38 @@ Connections are used in conjunction with connectors when establishing connectivi
 ### PowerShell cmdlets for app creators
 Users can export all of the connections they have access to by using the **Get-Connection** function in the [Power Apps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 Get-Connection | ConvertTo-Json | out-file -FilePath "UserDetails.json"
-~~~~
+```
 
 ### PowerShell cmdlets for admins
 Administrators can export all connections created by the user using the  **Get-AdminConnection** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminConnection -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
  
 ## Step 6: Export the user's permissions to shared connections
 
 ### PowerShell cmdlets for app creators
 Users can export the connection role assignments for all connections that they have access to by using the **Get-ConnectionRoleAssignment** function in the [Power Apps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | ConvertTo-Json | Out-file -FilePath "UserDetails.json"
-~~~~
+```
 
 ### PowerShell cmdlets for admins
 Administrators can export all connection role assignments for a user using the  **Get-AdminConnectionRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
 
 ## Step 7: Export personal data contained within custom connectors created by the user
 Custom Connectors supplement the existing out-of-box connectors and allow for connectivity to other APIs, SaaS, and custom-developed systems.
@@ -242,38 +242,38 @@ Custom Connectors supplement the existing out-of-box connectors and allow for co
 ### Power Apps App creator PowerShell cmdlets
 Users can export all custom connectors they've created by using the **Get-Connector** function in the [Power Apps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
-~~~~
+```powershell
 Add-PowerAppsAccount  
 Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
 
 ### PowerShell cmdlets for admins
 Administrators can export all custom connectors created by a user using the  **Get-AdminConnector** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
 
 ## Step 8: Export the user's permissions to custom connectors
 
 ### PowerShell cmdlets for app creators
 Users can export all connector role assignments for the custom connectors to which they have access by using the **Get-ConnectorRoleAssignment** function in the [Power Apps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
-~~~~
+```powershell
 Add-PowerAppsAccount  
 Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
 
 ### PowerShell cmdlets for admins
 Administrators can export all custom connector role assignments for a user using the  **Get-AdminConnectorRoleAssignment** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
-~~~~
+```
  
 ## Step 9: Export Power Apps Notifications, User Settings, and User-App Settings
 Power Apps sends several types of notifications to users, including when an app is shared with them and when a Common Data Service export operation has completed. A user's notification history is visible to them within the [Power Apps portal](https://make.powerapps.com).
@@ -283,19 +283,19 @@ Power Apps also stores several different user preferences and settings that are 
 ### PowerShell cmdlets for app creators
 Users can export their own Power Apps notifications, user settings, and user-app settings using the **Get-AdminPowerAppsUserDetails** function in the [Power Apps App creator PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871448):
 
-~~~~
+```powershell
 Add-PowerAppsAccount  
 Get-AdminPowerAppsUserDetails -WriteToFile -OutputFilePath "UserDetails.json"
-~~~~
+```
 
 ### PowerShell cmdlets for admins
 Administrators can export the Power Apps notifications, user settings, and user-app settings for a user using the  **Get-AdminPowerAppsUserDetails** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-~~~~
+```powershell
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 Get-AdminPowerAppsUserDetails -WriteToFile -OutputFilePath "UserDetails.json" -UserPrincipalName name@microsoft.com
-~~~~
+```
 
 ## Step 10: Export personal data contained for a user-stored gateway or in the user's gateway permissions
 
@@ -312,7 +312,7 @@ Users can export the personal data stored within the gateway service from the [P
 
 3. Select **Share**, copy the contents of the page, and then paste it into a document editor, such as Microsoft Word.
 
-    ![Gateway details](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
+    ![Select Share](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
 
 ### Gateway PowerShell cmdlets
 There are also PowerShell cmdlets that allow you to retrieve, manage, and delete your personal gateways. For more information, see [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238).

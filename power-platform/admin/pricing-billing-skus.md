@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/04/2019
+ms.date: 06/15/2019
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -32,7 +32,7 @@ can also utilize data outside of Microsoft 365 by connecting to common services
 including Box.com, Facebook, and many more via the use of standard connectors.
 
 Here is a brief overview of capabilities included with Power Apps for Microsoft 365
-plan. More details around what Office plans includes these capabilities can be
+plan. More details around which Microsoft 365 plans include these capabilities can be
 found in [Microsoft Power Apps and Power Automate Licensing
 Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
@@ -47,7 +47,9 @@ Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 | Run Canvas apps offline                                               | Yes                          |
 | Support for data policies established by the Microsoft 365 administrator | Yes                          |
 | Access on-premises data or use premium or custom connectors           | \-                           |
-| Data storage and management in Common Data Service                    | \-                           |
+| Access to Common Data Service                    | Yes*                |
+
+*\*A limited set of Common Data Service capabilities are included with Microsoft 365 licenses to support some Microsoft 365 products. However, a Power Apps or Power Automate Standalone plan is still needed to run apps with Common Data Service*.
 
 ## Power Apps and Power Automate Standalone plans
 

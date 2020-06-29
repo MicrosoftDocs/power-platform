@@ -34,7 +34,7 @@ Currently we will be rolling out preview for the following scenarios across Powe
 ## How to get early access to the upcoming updates?
 For Power Apps, all the apps and related resources are stored in an environment. Early access to all preview functionalities are also available with an environment created in a region where the vNext (preview) is deployed. For now, there is only one region, **Preview (United States)**, as shown in the image below:
 
-![](./media/preview-environment/env3-preview.png)
+![Preview environment](./media/preview-environment/env3-preview.png)
 
 Select the region for the environment as **Preview (United States)** and accept the consent for joining the Preview Program to create the environment to get access to the next version (vNext) of Power Apps.
 All the apps and other resources created in this environment are on the vNext version of the platform (SAAS).
@@ -59,7 +59,7 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
    There are certain functionalities, services and portals which are available in preview:
    
-   ![](./media/preview-environment/table.png)
+   ![Available in preview](./media/preview-environment/table.png)
 
 2. **Using apps created in preview environments in production environments**
 

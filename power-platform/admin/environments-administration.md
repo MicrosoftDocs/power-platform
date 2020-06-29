@@ -40,7 +40,7 @@ To access the Power Apps Admin center:
 
 * Go to [powerapps.com][2], and then select the gear icon in the  navigation header.
 
-    ![](./media/environment-admin/powerapps-gear-dropdown.png)
+    ![Power Apps gear dropdown](./media/environment-admin/powerapps-gear-dropdown.png)
 
 To manage an environment in the Power Apps Admin center, you must have one of these roles:
 
@@ -59,47 +59,47 @@ For instructions on how to create an environment, see [Create an environment](cr
 ## View your environments
 When you open the admin center, the Environments tab appears by default and lists all the environments for which you are an Environment Admin (as shown below):
 
-![](./media/environment-admin/environment-list-new.png)
+![New environment list](./media/environment-admin/environment-list-new.png)
 
 If you are a member of the Global Administrator role of your Azure AD or Microsoft 365 tenant, all the environments that have been created by users in your tenant appear, because you're automatically an Environment Admin for all of them.
 
 ## Rename your environment
 1. Open the [Power Apps Admin center][1], find the environment to be renamed in the list, and click or tap it.
 
-    ![](./media/environment-admin/environment-list-updated3.png)
+    ![Environment list updated](./media/environment-admin/environment-list-updated3.png)
 
 2. Click or tap **Details**.
 
-    ![](./media/environment-admin/environment-rename-details-2.png)
+    ![Environment rename details](./media/environment-admin/environment-rename-details-2.png)
 3. in the **Name** text box, enter the new name, then click **Save**.
 
-    ![](./media/environment-admin/environment-rename-2.png)
+    ![Environment rename](./media/environment-admin/environment-rename-2.png)
 
     If you have created the database in the environment, then you will not see this option. You can rename the environment from Dynamics 365 Admin center by clicking on the link in **Details** tab.
 
-    ![](./media/environment-admin/Delete-D365AdminCenter.png)
+    ![Details tab](./media/environment-admin/Delete-D365AdminCenter.png)
 
 ## Delete your environment
 1. In the [Power Apps Admin center][1], click or tap the environment that you want to delete.
 
-    ![](./media/environment-admin/environment-list-updated3.png)
+    ![Environment list updated3](./media/environment-admin/environment-list-updated3.png)
 2. Click or tap **Details**.
 
-    ![](./media/environment-admin/environment-rename-details-2.png)
+    ![Environment rename details2](./media/environment-admin/environment-rename-details-2.png)
 3. Click or tap **Delete environment** to delete your environment.
 
-    ![](./media/environment-admin/delete-environment-2.png)
+    ![Delete environment](./media/environment-admin/delete-environment-2.png)
 
 ## Create a Common Data Service database for an environment
 If an environment doesn't already have a database, an Environment Admin can create one in the [Power Apps Admin center][1] by following these steps. Only users with a Power Apps plan  can create Common Data Service databases.
 
 1. Select an environment in the environments table.
 
-    ![](./media/environment-admin/choose-environment-updated.png)
+    ![Choose environment updated](./media/environment-admin/choose-environment-updated.png)
 2. Select the **Details** tab.
 3. Select **Create a database**.
 
-    ![](./media/environment-admin/Create-DB-From-Details.png)
+    ![Create database from details](./media/environment-admin/Create-DB-From-Details.png)
 
 After you create a database, choose a security model. For more information, see [Configure database security](database-security.md).
 
@@ -126,17 +126,17 @@ To assign a user or a security group to an environment role, an Environment Admi
 
 1. Select the environment in environments table.
 
-    ![](./media/environment-admin/choose-environment-updated.png)
+    ![Choose environment updated2](./media/environment-admin/choose-environment-updated.png)
 2. Select **Security** tab.
 3. If there is no database created in the environment:
 
     a. Select either the **Environment Admin** or **Environment Maker** role.
 
-    ![](./media/environment-admin/choose-environment-role.png)
+    ![Choose environment role](./media/environment-admin/choose-environment-role.png)
 
     b. Specify the names of one or more users or security groups in Azure Active Directory, or specify that you want to add your entire organization.
 
-    ![](./media/environment-admin/enter-name.png)
+    ![Enter name](./media/environment-admin/enter-name.png)
 
     c. Select **Save** to update the assignments to the environment role.
 
@@ -144,15 +144,15 @@ To assign a user or a security group to an environment role, an Environment Admi
 
     a. Add the user to the environment and click on the link to assign the user a role.
 
-    ![](./media/database-security/security-adduser.png)
+    ![Add user](./media/database-security/security-adduser.png)
 
     b. Select the user from the list of users in the environment / environment.
 
-    ![](./media/environment-admin/D365-Select-User.png)
+    ![Select user](./media/environment-admin/D365-Select-User.png)
 
     c. Assign the role to the user.
 
-    ![](./media/environment-admin/D365-Assign-Role.png)
+    ![Assign role](./media/environment-admin/D365-Assign-Role.png)
 
     d. Select **OK** to update the assignments to the environment role.
 
@@ -162,12 +162,12 @@ To assign a user or a security group to an environment role, an Environment Admi
 ### Database security
 The ability to create and modify a database schema and to connect to the data stored within a database that is provisioned in your environment is controlled by the database's user roles and permission sets. You can manage the user roles and permission sets for your environment's database from the **User roles** and **Permission sets** section of the **Security** tab. For more information, see [Configure database security](database-security.md).
 
-![](./media/environment-admin/D365-Assign-Role.png)
+![Assign role2](./media/environment-admin/D365-Assign-Role.png)
 
 ## Data policies
 An organization's data must be protected so that it isn't shared with audiences that should not have access to it. To protect this data, you can create and enforce policies that define which consumer services and connector-specific business data can be shared with. Policies that define how data can be shared are referred to as data loss prevention (DLP) policies. You can manage the DLP policies for your environments  from the **Data Policies** section of the [Power Apps Admin center][1].  For more information, see [Data loss prevention policies](prevent-data-loss.md).
 
-![](./media/environment-admin/data-policies.png)
+![Data policies](./media/environment-admin/data-policies.png)
 
 ## Frequently asked questions
 
