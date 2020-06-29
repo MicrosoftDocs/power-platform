@@ -34,7 +34,7 @@ We refer to these roles throughout this article as *tenant admins*. More informa
 
 ### Environment-level
 
-To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions. More information: [Environment permissions](environments-administration.md#environment-permissions) 
+To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions.  
 
 ## Find and view DLP policies
 
@@ -159,7 +159,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    |**7**  |   |  Action buttons to assign individual connectors across connector classification groups        |
 
 
-4. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![](./media/vertical-ellipses.png)) to the right of the connector name. 
+4. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses](./media/vertical-ellipses.png)) to the right of the connector name. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign multiple connectors](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
