@@ -32,7 +32,7 @@ The customizations.xml file that is exported as part of an unmanaged solution ca
  **Editing the ribbon**  
  This documentation describes the process of editing the ribbon by editing the customization.xml file directly. Several people have created ribbon editors that provide a user interface to make editing the ribbon easier. The most popular one so far is the [Ribbon Workbench](https://www.develop1.net/public/rwb/ribbonworkbench.aspx). For support using this program, contact the program publisher.  
   
- For more information about editing the ribbon by editing the customization.xml manually, see [Customize the Ribbon for Microsoft Dynamics 365](/powerapps/developer/model-driven-apps/customize-commands-ribbon).  
+ For more information about editing the ribbon by editing the customization.xml manually, see [Customize commands and the ribbon](/powerapps/developer/model-driven-apps/customize-commands-ribbon).  
   
  **Editing the SiteMap**  
  The SDK describes the process of editing the SiteMap by editing the customization.xml file directly. However, its recommended that you use the site map designer in Common Data Service to create or update site maps. More information: [Create a site map for an app using the site map designer](/powerapps/maker/model-driven-apps/create-site-map-app)
@@ -43,10 +43,10 @@ The customizations.xml file that is exported as part of an unmanaged solution ca
  
   
  **Editing FormXml**  
- FormXml is used to define entity forms and dashboards. The form editor and dashboard designer in the application are the most commonly used tools for this purpose. Editing the customizations.xml file is an alternative method. For more information, see [Customize Entity Forms in Microsoft Dynamics 365](/powerapps/developer/model-driven-apps/customize-entity-forms)and [Create a Dashboard](/powerapps/developer/model-driven-apps/create-dashboard).
+ FormXml is used to define entity forms and dashboards. The form editor and dashboard designer in the application are the most commonly used tools for this purpose. Editing the customizations.xml file is an alternative method. For more information, see [Customize entity forms](/powerapps/developer/model-driven-apps/customize-entity-forms)and [Create a Dashboard](/powerapps/developer/model-driven-apps/create-dashboard).
   
  **Editing saved queries**  
- Definitions of views for entities are included in the customizations.xml file and may be manually edited. The view editor in the application is the most commonly used tool for this purpose. Editing customizations.xml is an alternative method. For more information, see [Customize Entity Views in Microsoft Dynamics 365](/powerapps/developer/model-driven-apps/customize-entity-views).
+ Definitions of views for entities are included in the customizations.xml file and may be manually edited. The view editor in the application is the most commonly used tool for this purpose. Editing customizations.xml is an alternative method. For more information, see [Customize entity views](/powerapps/developer/model-driven-apps/customize-entity-views).
   
  **Editing the ISV.config**  
  In earlier versions of Dynamics 365 Common Data Service, ISV.Config was the way to add client application extensions as well as some other configuration options. For Microsoft Dynamics CRM 2011 and Microsoft Dynamics 365 Online, the Ribbon provides the way to extend the application. The only remaining capability left in ISV.Config is to customize the appearance of the Service Calendar. For more information, see [Service Calendar Appearance Configuration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)
@@ -91,11 +91,11 @@ The customizations.xml file that is exported as part of an unmanaged solution ca
 -   Field Security Profiles  
   
 ### See also  
- [Customization XML Reference](/powerapps/developer/model-driven-apps/customization-xml-reference)
+ [Customization XML Reference](/powerapps/developer/model-driven-apps/customization-xml-reference)  
  [Customization Solutions File Schema](/powerapps/developer/common-data-service/customization-solutions-file-schema)  
- [Ribbon core schema](/powerapps/developer/model-driven-apps/ribbon-core-schema)
- [Ribbon types schema](/powerapps/developer/model-driven-apps/ribbon-types-schema)
+ [Ribbon core schema](/powerapps/developer/model-driven-apps/ribbon-core-schema)  
+ [Ribbon types schema](/powerapps/developer/model-driven-apps/ribbon-types-schema)  
  [Ribbon WSS schema](/powerapps/developer/model-driven-apps/ribbon-wss-schema)  
- [SiteMap schema](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)
+ [SiteMap schema](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)  
  [Form XML schema](/powerapps/developer/model-driven-apps/form-xml-schema)  
  [Schema Support for the Customization File](/powerapps/developer/model-driven-apps/edit-customizations-xml-file-schema-validation)
