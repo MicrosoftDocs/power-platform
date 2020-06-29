@@ -2,7 +2,7 @@
 title: "Create patches to simplify solution updates (Common Data Service) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Patches help you manage entities and all of its related assets when you add an entity to a solution and export that solution" # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
-ms.date: 10/31/2018
+ms.date: 06/29/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -107,9 +107,4 @@ If you add an entity to a solution and export the solution, the entity and all o
  For a managed solution things are handled slightly differently. You first clone the unmanaged solution (A), incorporating all of its patches and then exporting it as a managed solution (B). In the target organization that contains the managed version of the (A) solution and its patches, you import managed solution (B) and then execute <xref:Microsoft.Crm.Sdk.Messages.DeleteAndPromoteRequest> or the <xref href="Microsoft.Dynamics.CRM.DeleteAndPromote?text=DeleteAndPromote Action" /> to replace managed solution (A) and its patches with the upgraded managed solution (B) that has a higher version number.  
   
 ### See also  
- [Use segmented solutions and patches to simplify solution updates](https://technet.microsoft.com/library/mt628808.aspx)   
- [Plan For Solution Development](/dynamics365/customer-engagement/developer/plan-solution-development)   
- [Package and distribute extensions using solutions](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   
- [Solution Entity](/reference/entities/solution.md)   
- [Maintain Managed Solutions](maintain-managed-solutions.md)   
- [Publish your app on AppSource](publish-app-appsource.md)
+ [Use segmented solutions](segmented-solutions-alm)
