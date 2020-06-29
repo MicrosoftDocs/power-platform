@@ -1,7 +1,7 @@
 ---
 title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 03/12/2020
+ms.date: 06/29/2020
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -30,7 +30,7 @@ There are three stages for using capacity add-ons:
 
 ## View capacity add-ons in Power Platform admin center
 
-If your organization has purchased capacity add-ons, an **Add-ons** tile appears on the **Capacity** screen in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Sign into the Admin center, and select **Analytics > Capacity** in the left-side navigation pane.
+If your organization has purchased capacity add-ons, an **Add-ons** tile appears on the **Capacity** screen in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Sign into the Admin center, and select **Resources** > **Capacity** in the left-side navigation pane.
 
 The **Add-ons** tile shows summary information about the capacity add-ons that your organization has.
 
@@ -44,7 +44,7 @@ To allocate capacity to an environment:
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
-2. Select **Analytics > Capacity** in the left-side navigation pane.
+2. Select **Analytics** > **Capacity** in the left-side navigation pane.
 
 3. On the **Capacity** screen, do **one** of the following to open the **Manage add-ons** screen:
 
