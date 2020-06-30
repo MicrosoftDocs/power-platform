@@ -139,6 +139,8 @@ customers in Common Data Service.
 
 To allow for transition of customers and partner applications:
 
+ -  Effective October 2020, the authentication protocol will be retired for all new tenants.
+
 -   Effective April 2021, we intend to retire this authentication protocol for
     all new environments.
 
