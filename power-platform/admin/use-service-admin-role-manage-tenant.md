@@ -43,7 +43,7 @@ Follow these steps to assign a service admin role.
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) as a global admin.
 
-2. Go to **Users** > **Active users** and select a user or users.
+2. Go to **Users** > **Active users** and select a user.
   
 3. Under **Account** > **Roles** select **Manage roles**.
 
