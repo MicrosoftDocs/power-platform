@@ -26,6 +26,10 @@
         href: update-solutions-alm.md
       - name: Removing dependencies
         href: removing-dependencies.md
+      - name: Organize solutions
+        href: organize-solutions.md
+      - name: Maintain managed solutions
+        href: maintain-managed-solutions.md
   - name: Tools and apps used
     href: tools-apps-used-alm.md    
   - name: Implementing healthy ALM
