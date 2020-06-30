@@ -1,7 +1,7 @@
 ---
 title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 06/10/2020
+ms.date: 06/30/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -199,14 +199,6 @@ Because custom Quick Find lookups are created by an admin in the org, these can 
 
 - Removing unneeded fields and/or entities
 - Eliminating multiline text fields from inclusion
-
-### I see the new capacity report, but I haven't purchased the new capacity offers. How do I interpret the report?
-
-As an existing customer, you'll have additional file and log capacity added to your tenant automatically based on your existing licenses. Because you're currently in an agreement under the old offers, you aren't affected. Make sure your database consumption is in accordance with the entitlement. You aren't expected to take any action for file and log storage. When you renew your licenses, you can use this report to get the right amount of capacity for database, file, and log.
-
-### I have storage licenses from the legacy licensing model, and I also purchased new model storage licenses. Which report will I see?
-
-You'll see the report for the new licensing model. 
 
 ### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
 
