@@ -140,8 +140,8 @@ customers in Common Data Service.
 To allow for transition of customers and partner applications:
 
 - Effective October 2020, the authentication protocol will be retired for all new tenants.
-- Effective April 2021, we intend to retire this authentication protocol for all new environments.
-- Effective April 2022, the authentication protocol will be retired for all new and existing environments.
+- Effective April 2021, the authentication protocol will be retired for all new environments within a tenant.
+- Effective April 2022, the authentication protocol will be retired for all new and existing environments within a tenant.
 
 More information: [Use of Office365 authentication with the WS-Trust security protocol](/powerapps/developer/common-data-service/authenticate-office365-deprecation)
 
