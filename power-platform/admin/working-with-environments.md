@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.date: 01/19/2020
+ms.date: 06/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - maker
@@ -26,7 +26,7 @@ When you sign up and first sign in to Power Apps, it opens in a default environm
 > [!div class="mx-imgBorder"]
 > ![Default environment](media/env-dropdown.png)
 
-Everyone in your organization can access the default environment. You can create apps in this environment and share your apps with other users. You may also have access to other environments, whether [you create them](environments-administration.md#create-an-environment) or others do. You can switch environments by opening the environment list in the upper-right corner and then selecting a different environment. This example shows switching from **Microsoft** to **MyOwnEnv**.
+Everyone in your organization can access the default environment. You can create apps in this environment and share your apps with other users. You may also have access to other environments, whether [you create them](create-environment.md) or others do. You can switch environments by opening the environment list in the upper-right corner and then selecting a different environment. This example shows switching from **Microsoft** to **MyOwnEnv**.
 
 > [!div class="mx-imgBorder"]
 > ![Switch environment](media/switch-environment2.png)
