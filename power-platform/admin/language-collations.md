@@ -2,7 +2,7 @@
 title: "Common Data Service language collations | MicrosoftDocs"
 description: "Understand the Common Data Service language collations"
 keywords: ""
-ms.date: 06/16/2020
+ms.date: 06/30/2020
 ms.service: powerapps
 ms.custom: 
 ms.topic: article
@@ -18,21 +18,16 @@ search.app:
 ---
 # Common Data Service language collations
 
-When a Common Data Service environment is created, admins are asked to select
-which default language they would like to use. This sets the dictionary, time and date
+When a Common Data Service environment is created, admins are asked to select which default language they would like to use. This sets the dictionary, time and date
 format, number format, and indexing properties for the environment.
 
-Language selections for Common Data Service also include collation settings
-that are applied to the SQL database, which stores entities and relational data.
-These collation settings affect<!--Writing Style Guide--> things such as recognized characters, sorting,
-quick find, and filtering. The collations applied to Common Data Service
-environments are chosen based on the default language selected<!--Suggested--> at the time of environment creation and aren't user configurable. After<!--Writing Style Guide--> a collation is in place, it can't be changed.
+Language selections for Common Data Service also include collation settings that are applied to the SQL database, which stores entities and relational data. These collation settings affect things such as recognized characters, sorting, quick find, and filtering. The collations applied to Common Data Service environments are chosen based on the default language selected at the time of environment creation and aren't user configurable. After a collation is in place, it can't be changed.
 
-Collations contain the following case-sensitivity and accent-sensitivity<!--Suggested--> options that can vary from language to language.
+Collations contain the following case-sensitivity and accent-sensitivity options that can vary from language to language.
 
 |Case and accent option  |Collation  |Description  |
 |---------|---------|---------|
-|Case insensitive     | _CI        | All languages have *case insensitive*<!--Suggested, because you're defining this just as you do below.--> enabled, which means that "Cafe" and "cafe" are considered the same word.        |
+|Case insensitive     | _CI        | All languages have *case insensitive* enabled, which means that "Cafe" and "cafe" are considered the same word.        |
 |Accent sensitive     | _AS        |  Some languages are *accent sensitive*, which means that "cafe" and "café" are treated as different words.       |
 |Accent insensitive     | _AI        | Some languages are *accent insensitive*, which means that "cafe" and "café" are treated as the same word.        |
 
@@ -41,12 +36,9 @@ Collations contain the following case-sensitivity and accent-sensitivity<!--Sugg
 
 A language includes the following information: 
 
-- **LCID**: This is an identification number applied<!--Suggested--> to languages in the
-    Microsoft .NET framework to easily identify which language is being used.
-    For example, 1033 is US English.
+- **LCID**: This is an identification number applied to languages in the Microsoft .NET framework to easily identify which language is being used. For example, 1033 is US English.
 
-- **Language**: The actual language. In some cases, names, country, and
-    character dataset information have been added for disambiguation.
+- **Language**: The actual language. In some cases, names, country, and character dataset information have been added for disambiguation.
 
 - **Collation**: The language collation uses the case-sensitivity and accent-sensitivity options associated with the language (_CI, _AS, _AI) described earlier. 
 
