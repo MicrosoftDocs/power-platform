@@ -106,9 +106,7 @@
         - name: View apps in your environments 
           href: admin-view-apps.md
         - name: Language collations 
-          href: language-collations.md     
-      - name: About Teams environment
-        href: about-teams-environment.md               
+          href: language-collations.md            
       - name: Manage updates
         items:
         - name: Opt in to early access updates
