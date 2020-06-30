@@ -47,7 +47,7 @@ Notice that these values are recommendations and don’t guarantee satisfactory 
  The following table describes the [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] and [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] or [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] versions supported for use with the web application.  
 
 
-| [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] version | [!INCLUDE[pn_IE_10](../includes/pn-ie-10.md)] | [!INCLUDE[pn_ie_11](../includes/pn-ie-11.md)]<sup>3</sup> | [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] |
+| Windows version | Internet Explorer 10 | Internet Explorer 11<sup>3</sup> | Microsoft Edge |
 |-----------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------|
 |           [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)]           |           Not supported<sup>1</sup>           |                         Supported                         |                            Supported                            |
 |          [!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)]          |           Not supported<sup>1</sup>           |                         Supported                         |                          Not supported                          |
