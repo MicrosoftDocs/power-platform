@@ -2,7 +2,7 @@
 title: "Configure single sign-on in Power Virtual Agents"
 description: "Enable your bot to authenticate an already-signed-in user"
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider"
-ms.date: 6/15/2020
+ms.date: 6/29/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -246,7 +246,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
     </script>
     ```
 
-4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier.
+4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable. 
 
 5. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Power Virtual Agents portal.
 
@@ -265,10 +265,21 @@ Update the custom canvas page where the bot is located to intercept the login ca
   		
   	   const { token } = await fetchJSON(theURL);
   	   const directLine = window.WebChat.createDirectLine({ token });
-       
+       var userID = clientApplication.account?.accountIdentifier != null ? ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0,64) : (Math.random().toString() + Date.now().toString().substr(0,64)  // Make sure this will not exceed 64 characters 
             const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
              const { type } = action;
-              if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
+             if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+               dispatch({
+                 type: 'WEB_CHAT/SEND_EVENT',
+                 payload: {
+                   name: 'startConversation',
+                   type: 'event',
+                   value: { text: "hello" }
+                 }
+               });
+               return next(action);
+             }
+             if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
                  const activity = action.payload.activity;
                  let resourceUri;
                  if (activity.from && activity.from.role === 'bot' &&
@@ -284,35 +295,29 @@ Update the custom canvas page where the bot is located to intercept the login ca
                        token
                       },
                      "from":{
-                       id:clientApplication.account.accountidentifier,
+                       id:userId,  
                        name:clientApplication.account.userName,
                        role:"user"
                      }
                      }).subscribe(
                  id => {
-                 if (id === 'retry') {
-                   // bot was not able to handle the invoke, so display the oauthCard
-                   return next(action);
-                }
-             // else: tokenexchange successful and we do not display the oauthCard
-             },
-             error => {
-               // an error occurred to display the oauthCard
-               return next(action);
-             }
-             );
-           return;
-           }
-           else
-             return next(action);
-           });
-           }
-           else
-             return next(action);
-           }
-           else
-             return next(action);
-        });
+                  return next(action);
+      });
+      const styleOptions = {
+        
+        //Add styleOptions to customize Web Chat canvas
+        hideUploadButton: true
+      };
+      
+          window.WebChat.renderWebChat(
+            {
+              directLine: directLine,
+              store,
+              userID:userId,  
+              styleOptions
+            },
+            document.getElementById('webchat')
+          );      
     })().catch(err => console.error("An error occurred: " + err));
   
     </script>
