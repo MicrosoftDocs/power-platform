@@ -2,8 +2,8 @@
 title: "Overview of Application lifecycle management (ALM) with Microsoft Power Platform | Microsoft Docs"
 description: "Learn how to implement application lifecycle management with Microsoft Power Platform"
 keywords: 
-author: Mattp123
-ms.author: matp
+author: shmcarth
+ms.author: shmcarth
 manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
@@ -57,11 +57,9 @@ The following concepts are important for understanding ALM using the Microsoft P
 
 -   *Source control* should be your source of truth for storing and collaborating on your components.
 
-<!-- Power BI is not part of this ALM story. For more information about Power
-BI ALM, see \<add a link to Power BI docs\ --> 
-
 For more information about how ALM and Azure DevOps technologies&mdash;combined with people and processes&mdash;enable teams to continually provide value to customers, see [DevOps tools on Azure](https://azure.microsoft.com/solutions/devops/).
 
 ### See also
 [ALM basics with Microsoft Power Platform](basics-alm.md)<br/>
-[What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro)
+[What is Common Data Service?](/powerapps/maker/common-data-service/data-platform-intro) <br/>
+[Application lifecycle management for Finance and Operations apps](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/app-lifecycle-management)
