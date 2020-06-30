@@ -18,6 +18,8 @@ search.app:
 
 # Manage environments in the Power Apps Admin center
 
+Environment management is now done in the [Power Platform admin center](environments-overview.md).
+<!-- 
 > [!NOTE]
 > We are moving environment management from other admin centers to the Power Platform admin center. Until this is completed, some management can be or must be done in other admin centers such as the Power Apps Admin center.
 
@@ -125,7 +127,7 @@ If you are getting the following error message: "Either your plan doesn't suppor
 1. You have already utilized your quota to create a specific type of environments. Say you were creating  a trial environment and you get this error message. That means, that you have already provisioned two trial environments. You can view all the environments in [Power Apps Admin center][1].
 If you want, you can delete an existing environment of that specific type and create a new one. But, please make sure that you don't lose your data, apps, flows and other resources which you want to retain.
 
-2. You do not have a quota to create that specific type of the environment. <!-- Check what type of environment you can create [here](environments-overview.md#creating-an-environment). -->
+2. You do not have a quota to create that specific type of the environment. <!-- Check what type of environment you can create [here](environments-overview.md#creating-an-environment). 
 
 If you are getting any other error message or have more questions, please connect with us [here][5].
 
@@ -146,7 +148,7 @@ Please note that you currently can't delete a production environment with a data
 ### As an Environment Admin, can I view and manage all resources (apps, flows, APIs, etc.) for an environment?
 Yes, the ability to view the apps and flows for an environment is available from the Power Apps Admin center. See [View Apps](admin-view-apps.md) for more details.
 
-
+-->
 
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com
