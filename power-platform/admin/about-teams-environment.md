@@ -1,5 +1,5 @@
 ---
-title: "About Teams environment | MicrosoftDocs"
+title: "About the Teams environment | MicrosoftDocs"
 description: About Teams environment
 author: jimholtz
 ms.service: power-platform
@@ -14,7 +14,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# About Teams environment
+# About the Teams environment
 
 ## Lifecycle
 
