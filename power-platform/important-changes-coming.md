@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 06/02/2020
+ms.date: 06/29/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -139,13 +139,9 @@ customers in Common Data Service.
 
 To allow for transition of customers and partner applications:
 
- -  Effective October 2020, the authentication protocol will be retired for all new tenants.
-
--   Effective April 2021, we intend to retire this authentication protocol for
-    all new environments.
-
--   Effective April 2022, the authentication protocol will be retired for all
-    new and existing environments.
+- Effective October 2020, the authentication protocol will be retired for all new tenants.
+- Effective April 2021, we intend to retire this authentication protocol for all new environments.
+- Effective April 2022, the authentication protocol will be retired for all new and existing environments.
 
 More information: [Use of Office365 authentication with the WS-Trust security protocol](/powerapps/developer/common-data-service/authenticate-office365-deprecation)
 
