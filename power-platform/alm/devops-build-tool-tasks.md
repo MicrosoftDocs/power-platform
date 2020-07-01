@@ -53,7 +53,7 @@ Imports a solution into a target environment.
 |----------------------|--------------------------|
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .|
- | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).  |
+ | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.  |
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
 
 ### Export solution
@@ -65,7 +65,7 @@ Exports a solution from a source environment.
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
 | Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |
-| Solution output file       | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. A comprehensive list of predefined variables is available here: [https://docs.microsoft.com/azure/devops/pipelines/build/variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables).   |
+| Solution output file       | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.   |
 
 ### Unpack solution
 
@@ -128,11 +128,11 @@ Creates a new environment.
 
 > [!NOTE]
 > A new environment can only be provisioned if your license or capacity
-> allows for the creation of additional environments. More information on how to view capacity is available [here](https://docs.microsoft.com/en-us/power-platform/admin/capacity-storage#capacity-page-details).
+> allows for the creation of additional environments. For more information on how to view capacity see [Capacity page details](https://docs.microsoft.com/en-us/power-platform/admin/capacity-storage#capacity-page-details).
 
 | Parameters        | Description     |
 |-------------------|-----------------|
-| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication will be available in upcoming release. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication is planned for an upcoming release. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the tenant for which you want to create the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
 | Display name | (Required) The display name of the environment created. |
 | Deployment Region | (Required) The region that the environment should be deployed into.         |
@@ -148,7 +148,7 @@ Deletes an environment.
 
 | Parameters       | Description         |
 |------------------|---------------------|
-| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication will be available in upcoming release. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication is planned for an upcoming release. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the tenant for which you want to delete the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
 
 ### Backup environment
@@ -157,7 +157,7 @@ Backs up an environment.
 
 | Parameters   | Description   |
 |--------------|---------------|
-| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication will be available in upcoming release. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication is planned for an upcoming release. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the tenant for which you want to backup the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
 | Backup label               | (Required) The label to be assign to the backup.                                                                         |
 
@@ -170,7 +170,7 @@ metadata and not the actual data.
 
 | Parameters     | Description     |
 |----------------|-----------------|
-| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication will be available in upcoming release. Note that username/password does not support multi-factor authentication. |
+| Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication is planned for an upcoming release. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection for the source environment that you want to copy from. Defined under **Service Connections** in **Project Settings**. |
 | Service connection | (Required) The service connection for the target environment that you want to copy to. Defined under **Service Connections** in **Project Settings**. | 
 
