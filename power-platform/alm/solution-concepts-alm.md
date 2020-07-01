@@ -110,7 +110,7 @@ every solution has a publisher, you should create your own publisher rather than
 > [!NOTE]
 > Even if you don't use a custom solution, you'll be working in solutions which
 > are known as the *Common Data Service Default Solution* and the *Default* solutions.
-> More information: [Default Solution and Common Data Service Default Solution](https://docs.microsoft.com/en-us/power-platform/alm/use-solutions-for-your-customizations)
+> More information: [Default Solution and Common Data Service Default Solution](use-solutions-for-your-customizations.md)
 
 The publisher of a solution where a component is created is considered the owner of 
 that component. The owner of a component controls what changes other publishers of 
