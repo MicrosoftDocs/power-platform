@@ -128,7 +128,7 @@ Creates a new environment.
 
 > [!NOTE]
 > A new environment can only be provisioned if your license or capacity
-> allows for the creation of additional environments. For more information on how to view capacity see [Capacity page details](https://docs.microsoft.com/en-us/power-platform/admin/capacity-storage#capacity-page-details).
+> allows for the creation of additional environments. For more information on how to view capacity see [Capacity page details](https://docs.microsoft.com/power-platform/admin/capacity-storage#capacity-page-details).
 
 | Parameters        | Description     |
 |-------------------|-----------------|
