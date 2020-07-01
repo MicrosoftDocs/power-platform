@@ -47,7 +47,7 @@ More information: [Create a team site in SharePoint](https://support.office.com/
 We've created a helper flow to create the library for you. See the following zip file: *CreateCoEArchivalDocLibraryinSP.zip*.
 
 1. Download and import this flow into your CoE environment.
-
+<br>Go to [https://flow.microsoft.com/](https://flow.microsoft.com/) > Select the Environment of the CoE > My Flows > Import
 2. Ensure that the flow is turned on, and run it.
 3. When the flow is completed, you'll have a document library named PowerAppsArchive.
 
