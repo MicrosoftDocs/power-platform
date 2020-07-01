@@ -66,7 +66,7 @@ to maintain a single "source of truth" and recall specific versions when needed.
 Git is a popular example of a version control system.
 
 > [!IMPORTANT]
-> Notice that *source control* applies both to [Common Data Service solutions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/introduction-solutions) and
+> Notice that *source control* applies both to [Common Data Service solutions](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions) and
 > "traditional" source code. Common Data Service solutions should always be part of the source code
 > and never stored solely in Microsoft Power Platform environments. More information:
 > [Getting started: What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
