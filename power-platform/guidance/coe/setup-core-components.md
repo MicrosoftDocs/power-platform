@@ -36,7 +36,8 @@ This is the first step of the installation process and is required for every oth
    1. Go to [aka.ms/ppac](https://admin.powerplatform.microsoft.com/).
    1. Select **Environments** > **+ New**, and then fill in a name, type, and purpose.
    1. Select **Yes** for creating the database, and then select **Next**.
-   1. Leave sample apps and data set to **No**, and then select a security group who can view this environment. Then select **Save**.
+   1. Leave sample apps and data set to **No**
+   1. Select **Save**.
 
 1. Go to your new environment.
 
