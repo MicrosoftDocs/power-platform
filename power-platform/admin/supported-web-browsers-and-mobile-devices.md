@@ -37,7 +37,7 @@ For a mobile device, such as an iPad or smartphone, the following apps are avail
 For more detailed information about supported phones and tablets, see [Dynamics 365 mobile and tablet device support](/dynamics365/mobile-app/support-phones-tablets).  
   
 > [!NOTE]
-> - Users who try to view model-driven apps on an unsupported browser users are redirected to the Unified Interface experience. For more information, see [Unified Interface Overview](about-unified-interface.md).  
+> - Users who try to view model-driven apps on an unsupported browser are redirected to the Unified Interface experience. For more information, see [Unified Interface Overview](about-unified-interface.md).  
 > -  If you have added content to forms or dashboards in an iFrame, you might have implemented security restrictions around certain actions in that content, such as external links. Keep in mind that in [!INCLUDE[tn_Firefox](../includes/tn-firefox.md)], this security restriction code will likely be unsupported.  
   
 <a name="BKMK_browserIssues"></a>   
