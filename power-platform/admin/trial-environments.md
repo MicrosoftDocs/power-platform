@@ -52,7 +52,7 @@ The type of trial you create depends on where you start and your tenant-level pe
 
 |Trial type  | Tenant-level permissions  | Create trial location  |
 |---------|---------|---------|
-|Trial (standard)     |  End user or admin      |  Power Platform admin center. See [Creating a trial environment in the Power Platform admin center](#creating-a-trial-environment-in-the-power-platform-admin-center)       |
+|Trial (standard)     |  End user or admin      |  Power Platform admin center. See [Creating a trial (standard) environment in the Power Platform admin center](#creating-a-trial-environment-in-the-power-platform-admin-center)       |
 |Trial (standard)       |  End user or admin         | [https://trials.dynamics.com](https://trials.dynamics.com)     |
 |Trial (subscription-based)      |  End user or admin        | Get started pages such as: <br /> <ul><li>https://dynamics.microsoft.com/en-us/get-started/?appname=salespro</li><br /><li>https://dynamics.microsoft.com/en-us/get-started/?appname=customerservice</li></ul>      |
 |Trial (subscription-based)      | admin        | Power Platform admin center. See [Creating a trial (subscription-based) environment in the Power Platform admin center](#creating-a-trial-subscription-based-environment-in-the-power-platform-admin-center)        |
