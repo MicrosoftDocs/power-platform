@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2020
+ms.date: 07/02/2020
 search.audienceType: 
   - admin
 search.app: 
@@ -49,24 +49,19 @@ A user who already has the Environment Admin role in the environment can take th
 > [!NOTE]
 > Roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-teams.md#create-a-group-team), in addition to individual users. 
 
-1. In the [Power Apps admin center](https://admin.powerapps.com/), select the environment for which you want to update a security role.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. Select **Environments** > [select an environment].
+
+3. In the **Access** tile, select **See all** for **Environment admin** or **Environment maker** to add or remove people to either role.
 
    > [!div class="mx-imgBorder"] 
-   > ![Choose an environment](media/choose-environment-updated.png "Choose an environment")
-
-2. Select the **Security** tab. 
-
-3. Select either the **Environment Admin** or **Environment Maker** role. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Choose a role](media/select-environment-role-powerapps.png "Choose a role")
+   > ![Choose a role](media/assign-security-role-nodb.png "Choose a role")
 
 4. Specify the names of one or more users or security groups from Azure AD, or specify that you want to add your entire organization.
 
    > [!div class="mx-imgBorder"] 
-   > ![Enter user information](media/enter-user-names-powerapps.png "Enter user information")
-
-5. Select **Save**.
+   > ![Select an action](media/assign-security-role-nodb-action.png "Select an action")
 
 ## Assign security roles to users in an environment that has a Common Data Service database 
 
