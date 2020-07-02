@@ -53,7 +53,7 @@ A user who already has the Environment Admin role in the environment can take th
 
 2. Select **Environments** > [select an environment].
 
-3. In the **Access** tile, select **See all** for **Environment admin** or **Environment maker** to add or remove people to either role.
+3. In the **Access** tile, select **See all** for **Environment admin** or **Environment maker** to add or remove people for either role.
 
    > [!div class="mx-imgBorder"] 
    > ![Choose a role](media/assign-security-role-nodb.png "Choose a role")
