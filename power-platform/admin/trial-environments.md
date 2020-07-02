@@ -135,7 +135,7 @@ Follow these steps to create a trial (subscription-based) environment in the Pow
    > [!div class="mx-imgBorder"] 
    > ![Create new environment database settings](media/new-environment-add-database.png "Create new environment database settings")
 
-### Check the expiration date for a trial (standard) environment
+## Check the expiration date for a trial (standard) environment
 
 To determine when a trial environment will expire:
 
@@ -146,7 +146,7 @@ To determine when a trial environment will expire:
    > [!div class="mx-imgBorder"] 
    > ![Trial days remaining](media/trial-expiration.png "Trial days remaining")
 
-### Check the expiration date for a trial (subscription-based) environment
+## Check the expiration date for a trial (subscription-based) environment
 
 A trial (subscription-based) lasts as long as the subscription is active. To determine when a subscription will expire:
 
