@@ -19,32 +19,32 @@ search.app:
 
 # About trials
 
-Using the Power Platform admin center, you can create four types of Common Data Service environments: sandbox, production, trial, or trial (subscription-based). Trials are useful for trying out model-driven apps in Dynamics 365 at no cost. Choose either a trial or trial (subscription-based) environment to get started with Dynamics 365 apps.
+Using the Power Platform admin center, you can create four types of Common Data Service environments: sandbox, production, trial, or trial (subscription-based). Trials are useful for trying out model-driven apps in Dynamics 365 at no cost. Choose either a trial (standard) or trial (subscription-based) environment to get started with Dynamics 365 apps.
 
-## Trial environments
+## Trial (standard) environments
 
-The longstanding trial environment can be created by non-admin users for personal use. Here's what you should know.
+The trial (standard) environment can be created by non-admin users for personal use. Here's what you should know.
 
-**Trial environments:**
+**Trial (standard) environments:**
 - Expire in 30 days
 - Come with 25 user licenses
 - Come with 1GB capacity
 - Are a single environment
 - Can't include Dynamics 365 apps
 - Can be created by anyone with a valid subscription license
-- Require admins to use PowerShell cmdlets to control creating trial environments or disabling trial environments
+- Require admins to use PowerShell cmdlets to control creating trial (standard) environments or disabling trial (standard) environments
 
 ## Trial (subscription-based) environments
 
-The recently introduced trial (subscription-based) environment is suitable for broader, departmental-level exploration and has some advantages over the trial environment.
+The recently introduced trial (subscription-based) environment is suitable for broader, departmental-level exploration and is created by tenant admins.
 
 **Trial (subscription-based) environments:**
 - Are retained for as long as the subscription is valid, no expiration
-- Have 3GB of capacity so 3 environments can be created
 - Can be licensed based on your subscription license availability
 - Can include Dynamics 365 apps
-- Only tenant admins can create
 - Have extended lifecycle operations [Jim: need text/examples]
+- Only tenant admins can create
+- Up to 3 environments can be created
 
 ## Multiple ways to start a trial
 
@@ -52,10 +52,48 @@ The type of trial you create depends on where you start and your tenant-level pe
 
 |Trial type  | Tenant-level permissions  | Create trial location  |
 |---------|---------|---------|
-|Trial     |  End user or admin      |  Power Platform admin center. See [Creating a trial environment in the Power Platform admin center](#creating-a-trial-environment-in-the-power-platform-admin-center)       |
-|Trial     |  End user or admin         | [https://trials.dynamics.com](https://trials.dynamics.com)     |
+|Trial (standard)     |  End user or admin      |  Power Platform admin center. See [Creating a trial environment in the Power Platform admin center](#creating-a-trial-environment-in-the-power-platform-admin-center)       |
+|Trial (standard)       |  End user or admin         | [https://trials.dynamics.com](https://trials.dynamics.com)     |
 |Trial (subscription-based)      |  End user or admin        | Get started pages such as: <br /> <ul><li>https://dynamics.microsoft.com/en-us/get-started/?appname=salespro</li><br /><li>https://dynamics.microsoft.com/en-us/get-started/?appname=customerservice</li></ul>      |
 |Trial (subscription-based)      | admin        | Power Platform admin center. See [Creating a trial (subscription-based) environment in the Power Platform admin center](#creating-a-trial-subscription-based-environment-in-the-power-platform-admin-center)        |
+
+## Creating a trial (standard) environment in the Power Platform admin center
+
+Follow these steps to create a trial (standard) environment in the Power Platform admin center.
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+
+2. Go to **Environments**, and then select **+ New**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Create new trial (standard) environment](media/new-environment.png "Create new trial (standard) environment")
+
+3. Enter the following, and then select **Next**.
+   
+   |Setting  |Description  |
+   |---------|---------|
+   |Name     | The name of your environment.        |
+   |Type     | Choose **Trial**.        |
+   |Region     | Choose a region for the environment.        |
+   |Purpose     | A description of the environment.         |
+   |Create a database for this environment? | Select **Yes** to add a Common Data Service database to the trial (standard) environment. |
+
+   > [!div class="mx-imgBorder"] 
+   > ![Create new trial (standard) environment page two](./media/trial-subscription-standard.png "Create new trial (standard) environment page two")
+
+4. Enter the following, and then select **Save**.
+
+   |Setting  |Description  |
+   |---------|---------|
+   |Language     | The default language for this environment.        |
+   |Currency     | The base currency used for reporting.         |
+   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
+   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
+   |Security group | Select a security group to restrict access to this environment. |
+
+   > [!div class="mx-imgBorder"] 
+   > ![Create new environment settings page two](./media/trial-subscription-standard-page2.png "Create new environment settings page two")
+
 
 ## Creating a trial (subscription-based) environment in the Power Platform admin center
 
@@ -66,7 +104,7 @@ Follow these steps to create a trial (subscription-based) environment in the Pow
 2. Go to **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment](media/new-environment.png "Create new environment")
+   > ![Create new trial (subscription-based) environment](media/new-environment.png "Create new trial (subscription-based) environment")
 
 3. For type, select **Trial (subscription-based)**, and then fill in and select other settings. Select **Next**.
 
@@ -78,7 +116,7 @@ Follow these steps to create a trial (subscription-based) environment in the Pow
    |Purpose     | A description of the environment.         |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment](media/trial-subscription-based.png "Create new environment")
+   > ![Create new trial (subscription-based) environment page two](media/trial-subscription-based.png "Create new trial (subscription-based) environment page two")
 
    > [!NOTE]
    > **Create a database for this environment** is preset to **Yes** and can't be changed as a Common Data Services database must be created for a trial (subscription-based) environment.
@@ -98,44 +136,19 @@ Follow these steps to create a trial (subscription-based) environment in the Pow
    > [!div class="mx-imgBorder"] 
    > ![Create new environment database settings](media/new-environment-add-database.png "Create new environment database settings")
 
-## Creating a trial environment in the Power Platform admin center
 
-Follow these steps to create a trial (subscription-based) environment in the Power Platform admin center.
+### Check the expiration date for a trial (subscription-based) environment
+
+A trial (subscription-based) lasts as long as the subscription is active. To determine when a subscription will expire:
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
-2. Go to **Environments**, and then select **New**.
+2. Go to **Environments** > [select a trial environment] > **See all**. Check out **Day(s) remain**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment](media/new-environment.png "Create new environment")
+   > ![Trial days remaining](media/trial-expiration.png "Trial days remaining")
 
-3. Enter the following, and then select **Next**.
-   
-   |Setting  |Description  |
-   |---------|---------|
-   |Name     | The name of your environment.        |
-   |Type     | Choose production, trial, or sandbox.        |
-   |Region     | Choose a region for the environment.        |
-   |Purpose     | A description of the environment.         |
-   |Create a database for this environment? | Select **Yes**. |
-
-   > [!div class="mx-imgBorder"] 
-   > ![](./media/new-environment-page1.png "Create new environment settings")
-
-4. Enter the following, and then select **Save**.
-
-   |Setting  |Description  |
-   |---------|---------|
-   |Language     | The default language for this environment.        |
-   |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
-   |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
-   |Security group | Select a security group to restrict access to this environment. |
-
-   > [!div class="mx-imgBorder"] 
-   > ![](./media/new-environment-page2-enable-apps.png "Create new environment settings")
-
-### Check the expiration date for a trial environment
+### Check the expiration date for a trial (standard) environment
 
 To determine when a trial environment will expire:
 
