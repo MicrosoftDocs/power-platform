@@ -94,14 +94,13 @@ Follow these steps to create a trial (standard) environment in the Power Platfor
    > [!div class="mx-imgBorder"] 
    > ![Create new environment settings page two](./media/trial-subscription-standard-page2.png "Create new environment settings page two")
 
-
 ## Creating a trial (subscription-based) environment in the Power Platform admin center
 
 Follow these steps to create a trial (subscription-based) environment in the Power Platform admin center.
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
-2. Go to **Environments**, and then select **New**.
+2. Go to **Environments**, and then select **New**. 
 
    > [!div class="mx-imgBorder"] 
    > ![Create new trial (subscription-based) environment](media/new-environment.png "Create new trial (subscription-based) environment")
@@ -121,7 +120,7 @@ Follow these steps to create a trial (subscription-based) environment in the Pow
    > [!NOTE]
    > **Create a database for this environment** is preset to **Yes** and can't be changed as a Common Data Services database must be created for a trial (subscription-based) environment.
 
-4. Specify the following settings, and then select **Save**.
+4. Specify the following settings, and then select **Save**. 
    
    |Setting  |Description  |
    |---------|---------|
@@ -136,18 +135,6 @@ Follow these steps to create a trial (subscription-based) environment in the Pow
    > [!div class="mx-imgBorder"] 
    > ![Create new environment database settings](media/new-environment-add-database.png "Create new environment database settings")
 
-
-### Check the expiration date for a trial (subscription-based) environment
-
-A trial (subscription-based) lasts as long as the subscription is active. To determine when a subscription will expire:
-
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
-
-2. Go to **Environments** > [select a trial environment] > **See all**. Check out **Day(s) remain**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Trial days remaining](media/trial-expiration.png "Trial days remaining")
-
 ### Check the expiration date for a trial (standard) environment
 
 To determine when a trial environment will expire:
@@ -158,6 +145,19 @@ To determine when a trial environment will expire:
 
    > [!div class="mx-imgBorder"] 
    > ![Trial days remaining](media/trial-expiration.png "Trial days remaining")
+
+### Check the expiration date for a trial (subscription-based) environment
+
+A trial (subscription-based) lasts as long as the subscription is active. To determine when a subscription will expire:
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) using Global admin credentials.
+  
+2. Select **Billing** > **Your products** > **Subscriptions** tab.
+  
+3. Select your Dynamics 365 subscription and review the date in the **Billing** section.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Check trial (subscription-based) expiration](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
 
 ## Convert either trial type to production
 
