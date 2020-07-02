@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/19/2020
+ms.date: 07/02/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -268,7 +268,7 @@ Power Apps Portals can be provisioned without requiring a specific license. User
 |-------------------------------|---------------|---------------------------------------------------------------------|--------------------|-----------------|-------------|-------------------------------------------------------------------------------------------|
 | External user (authenticated) | Per login     | Power Apps portals login capacity add-on                             | 100 logins         | $200           | All         | A login provides the authenticated user with access to a single portal for up to 24 hours |
 |                               |               | Power Apps portals login capacity add-on Tier 2                      | 1000 logins        | $1000          | All         |                                                                                           |
-|                               |               | Power Apps portals login capacity add-on Tier 2                      | 5000 logins        | $3500          | CSP only    |                                                                                           |
+|                               |               | Power Apps portals login capacity add-on Tier 3                      | 5000 logins        | $3500          | CSP only    |                                                                                           |
 | External user (anonymous) | Per page view | Power Apps portals page view capacity add-on                         | 100,000 page views | $100           | All         |                                                                                           |
 | Internal user                 | Via license   | Dynamics 365 (various)                                              | n/a                | n/a             | n/a         | Custom portal use rights are aligned with custom app use rights                           |
 |                               |               | Power Apps per app plan                                              |                    |                 |             |                                                                                           |
