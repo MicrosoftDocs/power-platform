@@ -17,7 +17,7 @@ search.app:
 ---
 # On-premises server cipher suites and TLS requirements 
 
-A cipher suite is a set of cryptographic algorithms.  This is used to encrypt messages between clients/servers and other servers.  
+A [cipher suite](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) is a set of cryptographic algorithms. This is used to encrypt messages between clients/servers and other servers.  
 
 Before a secure connection is established, the protocol and cipher are negotiated between server and client based on availability on both sides. 
 
