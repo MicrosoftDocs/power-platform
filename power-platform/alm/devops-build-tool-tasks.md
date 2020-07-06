@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 06/04/2020
+ms.date: 07/02/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -23,30 +23,51 @@ The available build tasks are described in the following sections. Afterwards, w
 
 ## Helper task
 
-The Power Platform tools installer is required to be the first task in any build and
-release pipeline. This task installs a set of Power Platform&ndash;specific tools required
+The available helper tasks are described below.
+
+### Power Platform Tool Installer
+
+This task is required to be added once before any other Power Platform Build Tools tasks in build and
+release pipelines. This task installs a set of Power Platform&ndash;specific tools required
 by the agent to run the Power Platform build tasks. This task doesn't require any
-additional configuration.
+additional configuration when added, but contains parameters for the specific versions
+of each of the tools that are being installed.
+To stay up to date with the tool versions over time, make sure these parameters correspond
+to the versions of the tools that are required for the pipeline to run properly.
+
+### Power Platform WhoAmI
+
+Verifies a Power Platform environment service connection by connecting and making a WhoAmI request. This task can be useful to include early in the pipeline, to verify connectivity before processing begins.
+
+| Parameters    | Description   |
+|---------------|---------------|
+| Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
 
 ## Quality check
 
-The Power Apps checker task runs a static analysis check on your solutions
+Below are the available tasks for checking the quality of a solution.
+
+### Power Platform Checker
+
+This task runs a static analysis check on your solutions
 against a set of best-practice rules to identify any problematic patterns that
 you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| Service Connection                         | (Required) A connection to a licensed Power Platform environment is required to use the Power Apps checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a seperate connection to use with the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
-| User default Power Apps Checker endpoint       | By default, the gelocation of the checker service will use the same geo as the environment you connect to. By unchecking the default, you have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the Power Apps Checker API](https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
+| Service Connection                         | (Required) A connection to a licensed Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type .<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
+| User default Power Platform Checker endpoint       | By default, the gelocation of the checker service will use the same geo as the environment you connect to. By unchecking the default, you have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the Power Platform Checker API](https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
 | Location of file(s) to analyze       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
 | Local files to analyze/SAS URI for the file to analyze | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
 | Rule set                          | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps [maker portal](https://make.powerapps.com).</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to [AppSource](https://appsource.microsoft.com/).</li></ul>    |
+| Error Level | Combined with the Error threshold parameter defines the severity of errors and warnings that are allowed. |
+| Error threshold | Defines the number of errors of specified level that are allowed for the checker to pass the solutions being checked. |
 
 ## Solution tasks
 
 This set of tasks perform actions against solutions, and includes the following tasks.
 
-### Import solution
+### Power Platform Import Solution
 Imports a solution into a target environment.
 
 | Parameters           | Description        |
@@ -56,7 +77,7 @@ Imports a solution into a target environment.
  | Solution input file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.  |
  | Import solution as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
 
-### Export solution
+### Power Platform Export Solution
 
 Exports a solution from a source environment.
 
@@ -67,7 +88,7 @@ Exports a solution from a source environment.
 | Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |
 | Solution output file       | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.   |
 
-### Unpack solution
+### Power Platform Unpack Solution
 
 Takes a compressed solution file and decomposes it into multiple XML files so that these files can be more easily read and managed by a source control system.
 
@@ -77,7 +98,7 @@ Takes a compressed solution file and decomposes it into multiple XML files so th
 | Target folder to unpack solution | (Required) The path and target folder you want to unpack the solution into.      |
 | Type of solution                 | (Required) The type of solution you want to unpack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
-### Pack solution
+### Power Platform Pack Solution
 
 Packs a solution represented in source control into a solution.zip file that can be imported into another environment.
 
@@ -87,7 +108,7 @@ Packs a solution represented in source control into a solution.zip file that can
 | Source folder of solution to pack | (Required) The path and source folder of the solution to pack.      |
 | Type of solution                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
-### Publish customizations
+### Power Platform Publish Customizations
 
 Publishes all customizations in an environment.
 
@@ -96,7 +117,7 @@ Publishes all customizations in an environment.
 | Authentication type | (Required) Select whether to use username/password or service principal authentication. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the environment in which you want to publish customizations. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
 
-### Set solution version
+### Power Platform Set Solution Version
 
 Updates the version of a solution.
 
@@ -108,7 +129,7 @@ Updates the version of a solution.
 | Solution Version Number              | (Required) Version number you want to set.     |
 
 
-### Deploy package
+### Power Platform Deploy Package
 
 Deploys a package to an environment. Deploying a [package](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer) as opposed to a single solution file provides an option to deploy multiple solutions, data, and code into an environment.
 
@@ -120,9 +141,9 @@ Deploys a package to an environment. Deploying a [package](/powerapps/developer/
 
 ## Environment management tasks
 
-Automate common environment lifecycle management (ELM) tasks. 
+Automate common Environment Lifecycle Management (ELM) tasks.
 
-### Create environment
+### Power Platform Create Environment
 
 Creates a new environment.
 
@@ -142,7 +163,7 @@ Creates a new environment.
 | Language     | (Required) The base language in the environment.      |
 | Domain Name       | (Required) This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be 'powerappsbuildtasks'. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
 
-### Delete environment
+### Power Platform Delete Environment
 
 Deletes an environment.
 
@@ -151,7 +172,7 @@ Deletes an environment.
 | Authentication type | (Required) This is set to username/password which is the only supported authentication method currently. Service principal authentication is planned for an upcoming release. Note that username/password does not support multi-factor authentication. |
 | Service connection | (Required) The service connection to the tenant for which you want to delete the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
 
-### Backup environment
+### Power Platform Backup Environment
 
 Backs up an environment.
 
@@ -161,7 +182,7 @@ Backs up an environment.
 | Service connection | (Required) The service connection to the tenant for which you want to backup the environment. Defined under **Service Connections** > **Generic Service Connection** in **Project Settings**. |
 | Backup label               | (Required) The label to be assign to the backup.                                                                         |
 
-### Copy environment
+### Power Platform Copy Environment
 
 Copies an environment to a target environment. Two
 types of copies are available: full and minimal. A *Full* copy includes both data and
