@@ -33,7 +33,7 @@ Power Platform tenant isolation ability is available with two options: one-way o
 
 ## One-way tenant isolation (inbound connection restriction) 
 
-One-way tenant isolation or Inbound isolation will block connection establishment attempts to your tenant from other tenants. For example, if as admin of contoso.com (tenant A) you have enabled one-way tenant isolation then Azure AD-based Power Platform connection creation attempt from any other tenants like Fabrikam.com (tenant B) will fail.  
+One-way tenant isolation or inbound isolation will block connection establishment attempts to your tenant from other tenants. For example, as an admin of Contoso.com (tenant A), if you have enabled one-way tenant isolation then Azure AD-based Power Platform connection creation attempts from any other tenants like Fabrikam.com (tenant B) will fail.  
 
 One-way tenant isolation restricts incoming connection attempts into your tenant, hence the term inbound connection restriction.  
 
@@ -59,4 +59,4 @@ Two-way tenant isolation restricts incoming connection attempts into your tenant
 |B     | A (two-way data loss prevention policy enforced)         | No (inbound)        |
 |B     | B        | Yes        |
 
-![Restrict outbound cross-tenant access](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound cross-tenant access")
+![Restrict outbound and inbound cross-tenant access](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
