@@ -26,12 +26,8 @@ To comply with our security policy for a secure connection, your server must hav
 1. Transport Layer Security (TLS) 1.2 (or higher) compliance
 2. At least one of the following ciphers: 
 
-   TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <br />
-   TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 <br />
    TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br />
    TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br />
-   TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 <br />
-   TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 <br />
    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br />
    TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 
 
