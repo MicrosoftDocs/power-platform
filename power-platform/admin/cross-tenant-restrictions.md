@@ -44,7 +44,7 @@ One-way tenant isolation restricts incoming connection attempts into your tenant
 |B     | A (one-way data loss prevention policy enforced)         | No (inbound)        |
 |B     | B        | Yes        |
 
-![Restrict outbound cross-tenant access](media/restrict-outbound-cross-tenant.png "Restrict outbound cross-tenant access")
+![Restrict inbound cross-tenant access](media/restrict-inbound-cross-tenant.png "Restrict inbound cross-tenant access")
 
 ## Two-way tenant isolation (inbound and outbound connection restriction) 
 
@@ -59,4 +59,4 @@ Two-way tenant isolation restricts incoming connection attempts into your tenant
 |B     | A (two-way data loss prevention policy enforced)         | No (inbound)        |
 |B     | B        | Yes        |
 
-![Restrict inbound cross-tenant access](media/restrict-inbound-cross-tenant.png "Restrict inbound cross-tenant access")
+![Restrict outbound cross-tenant access](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound cross-tenant access")
