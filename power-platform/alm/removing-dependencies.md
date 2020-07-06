@@ -18,9 +18,7 @@ search.app:
 
 # Removing dependencies
 
-Dependencies are records created automatically by the solutions framework to prevent actions that, if executed unchecked, can cause problems. As components are changed and extended, dependencies are created to indicate that&mdash;for example&mdash;a field is required for a form to function. If you ever try to execute an action that will result in the deletion of that field, the form will stop working.
-
-Dependencies exist to prevent required components from being deleted while one or more dependent components still include references to them.
+Solution components often depend on other solution components. You can’t delete any solution component that has dependencies from another solution component. Dependencies are records created automatically by the solutions framework to prevent required components from being deleted while one or more dependent components still include references to them. An example of a dependency is as follows: given a field is required for a form to function, if you ever try to execute an action that will result in the deletion of that field, the form will stop working.
 
 > [!NOTE]
 > In this article, *delete* means that the component is completely removed from the system.
