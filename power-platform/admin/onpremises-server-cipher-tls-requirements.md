@@ -35,8 +35,10 @@ To comply with our security policy for a secure connection, your server must hav
    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br />
    TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 
 
+You may either upgrade the [Windows version](https://docs.microsoft.com/en-us/windows/win32/secauthn/cipher-suites-in-schannel) or update the [Windows TLS registry](https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings) to make sure that you server end-point supports one of these ciphers.
+
 ### See also
-Dynamics on-premises Exchange <br />
+[Dynamics on-premises Exchange](connect-exchange-server-on-premises.md) <br />
 [Dynamics 365 Server-side sync](https://docs.microsoft.com/powerapps/developer/common-data-service/server-side-synchronization-entities)  <br />
 [Exchange server TLS guidance](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)  <br />
 [Cipher Suites in TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel)  <br />
