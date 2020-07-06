@@ -90,7 +90,8 @@ After importing the solution, you might see an error at the top, notifying you t
     |------|---------------|
     |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
-    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md).
+    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
+    |Also Delete from CoE | When the **Admin \| Sync Template v2 (Check Deleted)** flow is run, this denotes if you want the items items deleted from CoE (yes) or just mark deleted (no) |
 
 ## Configure the CoE Settings entity
 
@@ -131,9 +132,9 @@ Version                      | Set to 1.0                                       
 
 ## Activate the Sync Template flows
 
-The flows with the prefix *Sync* are required for populating data in the resource-elated Common Data Service entities (Environments, Power Apps Apps, Flows, Flow Action Details, Connectors, and Makers).
+The flows with the prefix *Sync* are required for populating and cleaning up data in the resource-elated Common Data Service entities (Environments, Power Apps Apps, Flows, Flow Action Details, Connectors, and Makers).
 
-The sync flows are used to write data from the admin connectors into the Common Data Service entities. None of the other components will work if the sync flows aren't successfully configured and run.
+The sync flows are used to write or delete data from the admin connectors into the Common Data Service entities. None of the other components will work if the sync flows aren't successfully configured and run.
 
 The following flows are required to sync data to the resource entities:
 
@@ -156,6 +157,10 @@ The following flows are required to sync data to the resource entities:
 1. **Admin \| Sync Template v2 (Sync Flow Errors)**  
     Flow type: Scheduled (daily by default)  
     Description: If any of the sync flows fail, the failure is stored in the Common Data Service Sync Flow Errors entity. This scheduled flow sends a report of failures to the admin.
+
+1. **Admin \| Sync Template v2 (Check Deleted)**  
+    Flow type: Scheduled (weekly by default)  
+    Description: Compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var *Also Delete from CoE* = no) or deletes them from the CoE (if *Also Delete from CoE* = yes).
 
 ### Activate each of these flows
 
