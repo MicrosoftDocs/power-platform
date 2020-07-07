@@ -67,3 +67,8 @@ This version also introduces a new Set Flow Permissions app that allows admins t
 ## Admin | Sync Template v2 (Flow Action Details)
 
 This flow contained a bug due to which new actions and triggers were not captured. This has been fixed in this version.
+
+## Admin | Sync Template v2 (Check Deleted)
+
+This flow runs weekly, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted.
+

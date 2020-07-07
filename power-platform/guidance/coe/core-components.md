@@ -229,6 +229,10 @@ Runs when an environment is created or updated, and retrieves Power Virtual Agen
 
 Turning this flow is optional; and only recommended if you are using Power Virtual Agents in your tenant and interested in getting tenant wide overview.
 
+### Admin \| Sync Template v2 (Check Deleted)
+
+This flow runs weekly, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted.
+
 ### Admin \| Sync Template v2 (Sync Flow Errors)
 
 Runs on a schedule, and sends an email to the admin about environments that failed to sync (with a link to the flow instance).
