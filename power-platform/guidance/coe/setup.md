@@ -27,6 +27,12 @@ In this article, you'll learn how to:
 - Extend the starter kit.
 - Install updates to the starter kit.
 
+## Setup instructions video
+
+Watch how to download and deploy the solution.
+
+> [!VIDEO https://www.youtube.com/embed/L8gKjeE5GR4]
+
 ## Prerequisites
 
 The following are prerequisites for installing the CoE Starter Kit as it's included in the solution.

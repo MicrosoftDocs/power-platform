@@ -19,9 +19,11 @@ search.app:
 
 # Set up core components
 
-The Center of Excellence (CoE) Core Components solution provides components that you need to get started with setting up a CoE. They sync all your resources into entities and build admin apps on top of that to help you get more visibility into the apps, flows, and makers that exist in your environment. Additionally, apps like the DLP Editor and Set New App Owner help with daily admin tasks.  
+The Center of Excellence (CoE) Core Components solution provides components that you need to get started with setting up a CoE. They sync all your resources into entities and build admin apps on top of that to help you get more visibility into the apps, flows, and makers that exist in your environment. Additionally, apps like the DLP Editor and Set App Permissions help with daily admin tasks.  
 
 The Core Components solution contains assets that are only relevant to admins.
+
+Watch the [setup instructions video](https://youtu.be/L8gKjeE5GR4) to help you download and deploy the solution.
 
 ## Import the solution
 
@@ -89,7 +91,8 @@ After importing the solution, you might see an error at the top, notifying you t
     |------|---------------|
     |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
-    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md).
+    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
+    |Also Delete from CoE | When the **Admin \| Sync Template v2 (Check Deleted)** flow is run, this denotes if you want the items items deleted from CoE (yes) or just mark deleted (no) |
 
 ## Configure the CoE Settings entity
 
@@ -130,9 +133,9 @@ Version                      | Set to 1.0                                       
 
 ## Activate the Sync Template flows
 
-The flows with the prefix *Sync* are required for populating data in the resource-elated Common Data Service entities (Environments, Power Apps Apps, Flows, Flow Action Details, Connectors, and Makers).
+The flows with the prefix *Sync* are required for populating and cleaning up data in the resource-elated Common Data Service entities (Environments, Power Apps Apps, Flows, Flow Action Details, Connectors, and Makers).
 
-The sync flows are used to write data from the admin connectors into the Common Data Service entities. None of the other components will work if the sync flows aren't successfully configured and run.
+The sync flows are used to write or delete data from the admin connectors into the Common Data Service entities. None of the other components will work if the sync flows aren't successfully configured and run.
 
 The following flows are required to sync data to the resource entities:
 
@@ -140,13 +143,14 @@ The following flows are required to sync data to the resource entities:
     Flow type: Scheduled (daily by default)  
     Description: This flow syncs environment details to the CoE Common Data Service entity, Environments.
 
--  **Admin \| Sync Template v2 (apps, custom connectors, flows, model-driven apps)**  
+-  **Admin \| Sync Template v2 (apps, custom connectors, flows, model-driven apps, PVA, Power Apps Users Shared With)**  
     Flow type: Automated  
-    Description: These flows rely on the _Admin \| Sync Template v2_ flow and are triggered automatically when environment details are created or modified in the CoE Common Data Service Environments entity. These flows then crawl environment resources and store data in the PowerApps App, Flow, Connection Reference, and Maker entities.
+    Description: These flows rely on the _Admin \| Sync Template v2_ flow and are triggered automatically when environment details are created or modified in the CoE Common Data Service Environments entity. These flows then crawl environment resources and store data in the PowerApps App, Flow, Connection Reference, PVA, Power Platform Users and Maker entities.
 
-1. **Admin \| Sync Template v2 (Flow Action Details)**  
+1. (Optional) **Admin \| Sync Template v2 (Flow Action Details)**  
     Flow type: Scheduled (daily by default)  
     Description: This flow stores all triggers and actions from all the the Power Automate flows in your tenant.
+    Note that this flow is resource and performance intense; only enable this flow if you are interested in action and trigger specific reporting.
 
 1. **Admin \| Sync Template v2 (Connectors)**  
     Flow type: Scheduled (daily by default)  
@@ -155,6 +159,10 @@ The following flows are required to sync data to the resource entities:
 1. **Admin \| Sync Template v2 (Sync Flow Errors)**  
     Flow type: Scheduled (daily by default)  
     Description: If any of the sync flows fail, the failure is stored in the Common Data Service Sync Flow Errors entity. This scheduled flow sends a report of failures to the admin.
+
+1. **Admin \| Sync Template v2 (Check Deleted)**  
+    Flow type: Scheduled (weekly by default)  
+    Description: Compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var *Also Delete from CoE* = no) or deletes them from the CoE (if *Also Delete from CoE* = yes).
 
 ### Activate each of these flows
 
@@ -183,7 +191,7 @@ Save a copy of the flows outside of the solution to activate and create the conn
 
 1. At this point, the copy has been created. You can now view the flow in the **My Flows** page in the left navigation. Remember that the copy of the flow will *not* be visible in the Center of Excellence – Core Components solution.
 
-1. Repeat the above steps for *Admin \| Sync Template v2 – Apps, Connectors, Custom Connectors, Flows, Model Driven Apps and Sync Flow Errors*.
+1. Repeat the above steps for *Admin \| Sync Template v2 – Apps, Connectors, Custom Connectors, Flows, Model Driven Apps, Sync Flow Errors, Check Deleted, Flow Action Details, Power Apps User Shared With, PVA*.
 
 1. Turn each flow on.
 
