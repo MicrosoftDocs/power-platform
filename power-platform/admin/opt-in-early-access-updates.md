@@ -61,13 +61,13 @@ The early access updates are available for all types of environments, including 
 
    > [!div class="mx-imgBorder"] 
    > ![Manage opt-in update](media/update-manage.png "Manage opt-in update")
-   > <br />An example screenshot. Not current wave. 
+   > <br />An example screenshot. May not be current wave. 
 
 4. Select **Update now**, and then proceed through the confirmation dialog boxes to enable the new features and capabilities of the release wave.  
  
    > [!div class="mx-imgBorder"] 
    > ![Opt-in update now](media/new-update.png "Opt-in update now")
-   > <br />An example screenshot. Not current wave. 
+   > <br />An example screenshot. May not be current wave. 
 
 5. After the update is complete, all early access features will be enabled for your model-driven apps in your environment.  
 
@@ -109,7 +109,7 @@ To verify that a release wave is enabled, open the environment, go to **Settings
 
 |In Unified Interface  |In the web client interface  | 
 |---------|-------|
-|![Opt-in status](media/update-status.png "Opt-in status")<br /> An example screenshot. Not current wave.       | ![Opt-in status webclient](media/update-status-webclient.png "Opt-in status webclient") <br /> An example screenshot. Not current wave.        |
+|![Opt-in status](media/update-status.png "Opt-in status")<br /> An example screenshot. May not be current wave.        | ![Opt-in status webclient](media/update-status-webclient.png "Opt-in status webclient") <br /> An example screenshot. May not be current wave.         |
 
 > [!NOTE]
 > You need to select **About** from a Dynamics 365 apps page that's displayed in the [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages. 
