@@ -280,4 +280,4 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 1. Refresh the page to make sure the status has changed to **On**.
 
-1. Go back to the Center of Excellence – Audit Logs solution, select **Admin \| Sync Audit Logs* to open the flow details page, and then select **Turn on** for this flow as well.
+1. Go back to the Center of Excellence – Audit Logs solution, select *Admin \| Sync Audit Logs* to open the flow details page, and then select **Turn on** for this flow as well.
