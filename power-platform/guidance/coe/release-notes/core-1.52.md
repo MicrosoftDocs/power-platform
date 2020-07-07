@@ -17,11 +17,11 @@ search.app:
   - Powerplatform
 ---
 
-# Released version Core Components 1.48
+# Released version Core Components 1.52
 
 ## Introduction
 
-Version 1.48 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available in preview on June 27, 2020.
+Version 1.52 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 8, 2020.
 
 ## Power Virtual Agents inventory
 

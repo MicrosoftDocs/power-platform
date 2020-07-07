@@ -23,6 +23,8 @@ The Center of Excellence (CoE) Core Components solution provides components that
 
 The Core Components solution contains assets that are only relevant to admins.
 
+Watch the [setup instructions video](https://youtu.be/L8gKjeE5GR4) to help you download and deploy the solution.
+
 ## Import the solution
 
 This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. More information about how to decide on the best strategy for your organization: [Establishing an Environment Strategy for Microsoft Power Platform](https://powerapps.microsoft.com/blog/establishing-an-environment-strategy-for-microsoft-power-platform/) and [Application lifecycle management](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management)
@@ -142,13 +144,14 @@ The following flows are required to sync data to the resource entities:
     Flow type: Scheduled (daily by default)  
     Description: This flow syncs environment details to the CoE Common Data Service entity, Environments.
 
--  **Admin \| Sync Template v2 (apps, custom connectors, flows, model-driven apps)**  
+-  **Admin \| Sync Template v2 (apps, custom connectors, flows, model-driven apps, PVA, Power Apps Users Shared With)**  
     Flow type: Automated  
-    Description: These flows rely on the _Admin \| Sync Template v2_ flow and are triggered automatically when environment details are created or modified in the CoE Common Data Service Environments entity. These flows then crawl environment resources and store data in the PowerApps App, Flow, Connection Reference, and Maker entities.
+    Description: These flows rely on the _Admin \| Sync Template v2_ flow and are triggered automatically when environment details are created or modified in the CoE Common Data Service Environments entity. These flows then crawl environment resources and store data in the PowerApps App, Flow, Connection Reference, PVA, Power Platform Users and Maker entities.
 
-1. **Admin \| Sync Template v2 (Flow Action Details)**  
+1. (Optional) **Admin \| Sync Template v2 (Flow Action Details)**  
     Flow type: Scheduled (daily by default)  
     Description: This flow stores all triggers and actions from all the the Power Automate flows in your tenant.
+    Note that this flow is resource and performance intense; only enable this flow if you are interested in action and trigger specific reporting.
 
 1. **Admin \| Sync Template v2 (Connectors)**  
     Flow type: Scheduled (daily by default)  
@@ -189,7 +192,7 @@ Save a copy of the flows outside of the solution to activate and create the conn
 
 1. At this point, the copy has been created. You can now view the flow in the **My Flows** page in the left navigation. Remember that the copy of the flow will *not* be visible in the Center of Excellence – Core Components solution.
 
-1. Repeat the above steps for *Admin \| Sync Template v2 – Apps, Connectors, Custom Connectors, Flows, Model Driven Apps and Sync Flow Errors*.
+1. Repeat the above steps for *Admin \| Sync Template v2 – Apps, Connectors, Custom Connectors, Flows, Model Driven Apps, Sync Flow Errors, Check Deleted, Flow Action Details, Power Apps User Shared With, PVA*.
 
 1. Turn each flow on.
 

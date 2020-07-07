@@ -21,11 +21,19 @@ search.app:
 
 These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into entities and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the DLP Editor and Set App Permissions help with daily admin tasks. The Core Components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md)
 
+## Demo: Core Components
+
+Watch how to use the Core Components solution.
+
+> [!VIDEO https://www.youtube.com/embed/l0kJQAeKthw]
+
+## What's in the solution
+
 Here's a breakdown of the assets that form the core components:
 
 - **Catalog tenant resources**
   - [Common Data Service entities](#entities): Environments, apps, flows, and more
-  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, flow action details, custom connectors, connectors, model-driven apps
+  - [Admin | Sync Template v2 (flows)](#flows): All apps, flows, flow action details, custom connectors, connectors, model-driven apps, shared with information, chatbots.
   - [Admin | Sync Audit Log (flow)](#flows)
   - [Power BI dashboard](#power-bi-report)
   - [Power Platform Admin View (model-driven app)](#apps)
