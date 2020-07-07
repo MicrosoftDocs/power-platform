@@ -1,12 +1,12 @@
 ---
-title: "Configuration Migration and Package Deployer tools | Microsoft Docs"
-description: "Learn about transporting configuration data, test data, and packages from one environment to another."
+title: "Configuration Migration tool | Microsoft Docs"
+description: "Learn about transporting configuration data and test data from one environment to another."
 keywords: 
-author: phecke
-ms.author: pehecke
+author: mikkelsen2000
+ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 06/09/2020
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -17,11 +17,7 @@ search.app:
   - D365CE
 ---
 
-# Configuration Migration and Package Deployer tools
-
-These tools enable you to migrate configuration data, test data, solutions, and more from one environment to another. Read about each tool in the following sections.
-
-## Configuration Migration tool
+# Configuration Migration tool
 
 The Configuration Migration tool is used to transport configuration and test
 data from one environment to another. It provides the means to capture such
@@ -38,20 +34,7 @@ Configuration capture can't be automated.
 For more information about using the tool, including how to download it, see
 [Move configuration data across environments and organizations with the Configuration Migration tool](https://docs.microsoft.com/power-platform/admin/manage-configuration-data).
 
-## Package Deployer tool
-
-Let's now talk about creating a "package" in Visual Studio that can be deployed
-by the [Package Deployer](tools-apps-used-alm.md#package-deployer) tool. A package is a container
-where you place solution files, flat files, configuration data, HTML, and custom
-code together in a single file for deployment to other environments.
-
-Common Data Service provides you with a Visual Studio template for creating
-these packages, which you can use with the Package Deployer tool to deploy the
-packages to a Common Data Service instance. For information about creating a
-package, see [Create packages for the Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer).
-Next, follow the instructions to
-[deploy](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer#deploy-a-package) the package.
-
 ### See also
 
+[Package Deployer tool](package-deployer-tool.md)  
 [Solution Packager tool](solution-packager-tool.md)

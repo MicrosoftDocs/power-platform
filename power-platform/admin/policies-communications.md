@@ -112,7 +112,7 @@ To see the Service Update release schedule for your regions see our new [Release
   
 - Your organization will receive a Maintenance notification through the [Microsoft 365 Message Center](https://support.office.com/article/Message-center-in-Office-365-38fb3333-bfcc-4340-a37b-deda509c2093). 
 
-- You can also view notifications in the [Office 365 Admin mobile app](https://products.office.com/business/manage-office-365-admin-app) on your mobile device.  
+- You can also view notifications in the [Microsoft 365 Admin mobile app](https://products.office.com/business/manage-office-365-admin-app) on your mobile device.  
 
 - In addition, you can see the schedule and status of planned maintenance activities on the Microsoft 365 service health page. To learn how to get to the Microsoft 365 service health page, see [View the status of your services](https://support.office.com/article/View-the-status-of-your-services-932ad3ad-533c-418a-b938-6e44e8bc33b0).
 

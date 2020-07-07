@@ -2,8 +2,8 @@
 title: "ALM for developers | Microsoft Docs"
 description: "Learn what ALM tools, APIs, and services are available to developers when creating and publishing solutions for Common Data Service."
 keywords: 
-author: phecke
-ms.author: pehecke
+author: mikkelsen2000
+ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
@@ -57,5 +57,5 @@ to avoid conflict.
 
 ### See also
 
-[Power Apps build tools for Azure DevOps](devops-build-tools.md)
+[Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md)  
 [Power Apps for developers](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer)

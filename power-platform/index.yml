@@ -31,7 +31,7 @@ additionalContent:
           links:
           - url: https://docs.microsoft.com/powerapps
             text: Documentation
-          - url: https://docs.microsoft.com/learn/browse/?products=powerapps
+          - url: https://docs.microsoft.com/learn/browse/?products=power-apps
             text: Learn Power Apps
           - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
             text: Videos
@@ -73,7 +73,7 @@ additionalContent:
           url: https://docs.microsoft.com/common-data-model/
         - title: Connectors
           summary: "Connect to hundreds of data sources using a library of connectors"
-          url: https://docs.microsoft.com/en-us/connectors/
+          url: https://docs.microsoft.com/connectors/
     - title: See also
       items:
         # Card

@@ -1,12 +1,12 @@
 ---
 title: "Enable and use Activity Logging  | MicrosoftDocs"
-description: Learn how to enable auditing to be used for reports in the Office 365 Security Compliance Center.
+description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 05/08/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -19,10 +19,10 @@ search.app:
 
 Protecting data, preserving privacy, and complying with regulations such as the [General Data Protection Regulation](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) are certainly some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Microsoft Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).  
 
-This topic covers how you can set model-driven apps in Dynamics 365 to audit a broad range of data processing activities and use the [Office 365 Security and Compliance Center](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
+This topic covers how you can set model-driven apps in Dynamics 365 to audit a broad range of data processing activities and use the [Microsoft 365 Security and Compliance Center](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
 
 ## Requirements
-- An Office 365 Enterprise [E3](https://products.office.com/business/office-365-enterprise-e3-business-software) or [E5](https://products.office.com/business/office-365-enterprise-e5-business-software) subscription is required to do Activity Logging.
+- A Microsoft 365 Enterprise [E3](https://products.office.com/business/office-365-enterprise-e3-business-software) or [E5](https://products.office.com/business/office-365-enterprise-e5-business-software) subscription is required to do Activity Logging.
 - Available for production and not sandbox environments.
 
 ## What events are audited
@@ -54,39 +54,8 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Report Viewer Export  |Exporting a report to different formats moves the data outside of the secure environment and is vulnerable to threats.  |
 |Report Viewer Render Image  |Logging multimedia assets that are shown when a report is displayed. They might contain critical customer information.  |
 
-### Microsoft Social Engagement logging   
-
-The following Microsoft Social Engagement (MSE) entities and actions are logged.
-
-|MSE entity  |MSE pages/panels/controls logged  |
-|---------|---------|
-|Search Topic Category      |Create, Rename, Delete          |
-|Search Topic      |Create, Update, Delete          |
-|Custom Source      |Create, Update, Delete           |
-|Blocked Keyword      |Add, Delete          |
-|Blocked Domain      |Add, Delete          |
-|Stream      |Create, Update, Delete         |
-|Post (acquired)   |Internal & External Actions   |
-|Post (published)   |Send   |
-|Author   |Add (GDPR), Delete (GDPR), Delete   |
-|Activity Map   |Create, Update, Delete   |
-|Alert   |Create, Update, Delete   |
-|Preference   |Update   |
-|Social Profile   |Create, Update, Reauthenticate, Delete   |
-|User   |Edit Role, E-mail   |
-|Azure Event Hubs   |Create, Update, Delete   |
-|Model-driven apps in Dynamics 365  |Create, Update, Refresh, Delete   |
-|Allowed Domain   |Add, Delete   |
-|Automation Rule   |Create, Update, Delete   |
-|AR Notification   |Enable, Disable   |
-|Tag   |Add, Update, Delete   |
-|Label   |Add, Update Delete    |
-|Search Language   |Add, Delete   |
-|Adaptive Sentiment   |Enable, Disable, Reset   |
-|Other Global Settings   |Update   |
-
 ## Base schema
-Schemas define which fields are sent to the Office 365 Security and Compliance Center.  Some fields are common to all applications that send audit data to Office 365, while others are specific to model-driven apps in Dynamics 365. The Base schema contains the common fields. 
+Schemas define which fields are sent to the Microsoft 365 Security and Compliance Center.  Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to model-driven apps in Dynamics 365. The Base schema contains the common fields. 
 
 |Field name  |Type  |Mandatory  |Description  |
 |---------|---------|---------|---------|
@@ -100,7 +69,7 @@ Schemas define which fields are sent to the Office 365 Security and Compliance C
 |CreationTime     |Edm.Date         |No         |Date and time of when the log was generated in UTC          |
 |Operation     |Edm.Date         |No         |Name of the message called in the SDK          |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in AAD. AKA User PUID          |
-|UserType     |Self.UserType         |No         |The Office 365 audit type (Admin, Regular, System)          |
+|UserType     |Self.UserType         |No         |The Microsoft 365 audit type (Admin, Regular, System)          |
 |User     |Edm.String        |No         |UPN of the user          |
 
 ## Model-driven apps in Dynamics 365 schema
@@ -153,9 +122,9 @@ The model-driven apps in Dynamics 365 schema contains fields specific to model-d
 11. Turn on audit logging in Office 365. See [Turn Office 365 audit log search on or off](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
 
 
-## Review your audit data using reports in Office 365 Security and Compliance Center
+## Review your audit data using reports in Microsoft 365 Security and Compliance Center
 
-You can review your audit data in the Office 365 Security and Compliance Center. See [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6).
+You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6).
 
 To use the preconfigured reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Dynamics 365 activities** tab.
 
@@ -270,7 +239,7 @@ The following are some examples of logs created with Activity Logging.
 
 ## Additional considerations
 
-When audit log search in the Office 365 Security and Compliance Center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Office 365.
+When audit log search in the Microsoft 365 Security and Compliance Center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft 365.
 
 ## Known issues
 

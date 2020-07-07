@@ -1,12 +1,12 @@
 ---
-title: "Free storage space  | MicrosoftDocs"
+title: "Free up storage space  | MicrosoftDocs"
 description: Methods for reducing storage space consumed.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 06/08/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -15,24 +15,24 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Free storage space
+# Free up storage space
 
 These are ways to reduce the amount of storage space used by removing or deleting different types of information from model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Use one or more of these methods to control your total data storage usage. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
   
 > [!WARNING]
->  The suggestions in this topic include deleting notes, attachments, import history, and other data. Before you delete data, be sure that the data is no longer needed because you cannot retrieve deleted data. There is no “undo” to restore your data once it has been deleted. This means it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
+>  The suggestions in this topic include deleting notes, attachments, import history, and other data. Before you delete data, be sure that the data is no longer needed because you cannot retrieve deleted data. There is no "undo" to restore your data once it has been deleted. This means it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
 > 
 > [!NOTE]
->  - Except for methods 3 and 5, all these methods require that you have an administrator scurity role, such as System Administrator. This gives you permission to delete records in bulk and to delete system jobs.  
+>  - Except for methods 3 and 5, all these methods require that you have an administrator security role, such as System Administrator. This gives you permission to delete records in bulk and to delete system jobs.  
 >  - After performing actions to free up storage, the system can take up to 24 hours to update storage information. We recommend waiting up to 24 hours and monitoring your storage.  
 >  - Storage consumed does not directly correspond to the size reported in Common Data Service for Apps; consumption includes additional storage for metadata and encryption. For example, removing 10MB of storage from a file does not mean the file size is reduced by 10MB.
 >  - Some platform operations require you to wait 24-36 hours to confirm data size changes. Such operations include but are not limited to upgrades to new versions and introduction of new workflows. Such operations require system adjustments that might result in a momentary size increase report.
 
 ## Freeing storage for Common Data Service
 
-Use the following methods to free storage for each of the capacity types.
+Use the following methods to free up storage for each of the capacity types.
 
-|  |  |
+| Storage | Method  |
 |---------|---------|
 |**File**     |        |
 |     | **Method 3**: Remove email attachments using Advanced Find         |
@@ -48,6 +48,7 @@ Use the following methods to free storage for each of the capacity types.
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
 |     | **Method 8**: Delete bulk import environments using a bulk deletion job        |
 |     | **Method 9**: Delete bulk deletion job environments using a bulk deletion job        |
+|     | **Method 11**: Remove unrequired entities and fields from Relevance Search        |
 
 
 ## Reduce file storage
@@ -68,14 +69,14 @@ Use the following methods to free storage for each of the capacity types.
    **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (1MB in binary).  
  
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method3a.png "Free storage method 3")  
+> ![](media/free-storage-method3a.png "Free up storage method 3")  
  
 4. Choose **Results**.  
   
-5. You will now have a list of email messages that have attachments that are larger than ‘X’ bytes. Review the emails and delete the attachments as needed.  
+5. You will now have a list of email messages that have attachments that are larger than 'X' bytes. Review the emails and delete the attachments as needed.  
   
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method3b.png "Free storage method 3")  
+> ![](media/free-storage-method3b.png "Free up storage method 3")  
 
 ### Method 4: Remove email messages with attachments using a bulk deletion job  
   
@@ -107,7 +108,7 @@ Use the following methods to free storage for each of the capacity types.
    2.  With both rows selected, choose **Group AND**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![](media/free-storage-method4a.png "Free storage method 4")  
+   > ![](media/free-storage-method4a.png "Free up storage method 4")  
 
 7. Choose **Next**.  
   
@@ -120,7 +121,7 @@ Use the following methods to free storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method6b.png "Free storage method 4")  
+> ![](media/free-storage-method6b.png "Free up storage method 4")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -138,19 +139,19 @@ Use the following methods to free storage for each of the capacity types.
    **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1048576.  
 
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method5a.png "Free storage method 5")
+> ![](media/free-storage-method5a.png "Free up storage method 5")
   
 4. Choose **Results**.  
   
 5. You will now have a list of attachments that are larger than the size you specified.  
   
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method5b.png "Free storage method 5")
+> ![](media/free-storage-method5b.png "Free up storage method 5")
 
 6. Select individual or a multiple attachments, and then choose **Delete** (X).  
   
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method5c.png "Free storage method 5")
+> ![](media/free-storage-method5c.png "Free up storage method 5")
 
 ### Method 6: Remove notes with attachments using a bulk deletion job  
   
@@ -178,7 +179,7 @@ Use the following methods to free storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/free-storage-method6a.png "Free storage method 6")  
+   > ![](media/free-storage-method6a.png "Free up storage method 6")  
   
 7. Choose **Next**.  
   
@@ -191,7 +192,7 @@ Use the following methods to free storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method6b.png "Free storage method 6")  
+> ![](media/free-storage-method6b.png "Free up storage method 6")  
   
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
@@ -211,7 +212,7 @@ Use the following methods to free storage for each of the capacity types.
 3. Select the oldest audit log, then choose **Delete Logs**.  
  
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method10a.png "Free storage method 10")  
+> ![](media/free-storage-method10a.png "Free up storage method 10")  
  
 4. In the confirmation message choose **OK**.  
   
@@ -249,7 +250,7 @@ Use the following methods to free storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/free-storage-method1b.png "Free storage method 10")  
+   > ![](media/free-storage-method1b.png "Free up storage method 10")  
   
 7. Choose **Next**.  
   
@@ -262,7 +263,7 @@ Use the following methods to free storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an e-mail to me (email@domain.com) when this job is finished** check box.  
  
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method6b.png "Free storage method 10")  
+> ![](media/free-storage-method6b.png "Free up storage method 10")  
  
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -290,7 +291,7 @@ Use the following methods to free storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![](media/free-storage-method2b.png "Free storage method 2")  
+   > ![](media/free-storage-method2b.png "Free up storage method 2")  
 
 5. Choose **Results**.  
   
@@ -309,7 +310,7 @@ Use the following methods to free storage for each of the capacity types.
    To avoid wasting storage space, make sure duplicates are resolved promptly so that they are not reported in multiple duplicate detection jobs.  
 
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method7a.png "Free storage method 7")  
+> ![](media/free-storage-method7a.png "Free up storage method 7")  
   
 ### Method 8: Delete bulk import environments using a bulk deletion job  
 
@@ -341,7 +342,7 @@ Use the following methods to free storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
  
    > [!div class="mx-imgBorder"] 
-   > ![](media/free-storage-method8a.png "Free storage method 8")  
+   > ![](media/free-storage-method8a.png "Free up storage method 8")  
  
 7. Choose **Next**.  
   
@@ -354,7 +355,7 @@ Use the following methods to free storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method6b.png "Free storage method 8")  
+> ![](media/free-storage-method6b.png "Free up storage method 8")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -363,7 +364,7 @@ Use the following methods to free storage for each of the capacity types.
  When you are bulk deleting data, such as in many of the methods described in this article, a bulk deletion system job is created and can be deleted.  
   
 > [!WARNING]
->  After you delete these jobs, you will lose the history of the prior bulk deletion jobs that you’ve run.  
+>  After you delete these jobs, you will lose the history of the prior bulk deletion jobs that you've run.  
   
 1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
   
@@ -391,7 +392,7 @@ Use the following methods to free storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/free-storage-method9a.png "Free storage method 9")  
+   > ![](media/free-storage-method9a.png "Free up storage method 9")  
   
 7. Choose **Next**.  
   
@@ -404,9 +405,20 @@ Use the following methods to free storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![](media/free-storage-method6b.png "Free storage method 9")  
+> ![](media/free-storage-method6b.png "Free up storage method 9")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
-  
+
+### Method 11: Remove unrequired entities and fields from Relevance Search
+
+Entities and entity fields enabled for Relevance Search have an impact on the database storage capacity. 
+
+- To revise the list of entities selected for Relevance Search results, see [Select entities for Relevance Search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
+- To revise the list of fields selected for each entity for Relevance Search results, see [Configure searchable fields for Relevance Search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
+
+## Free up storage used by flow approvals
+
+See [Delete approval history from Power Automate](https://docs.microsoft.com/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
+
 ### See also
 [Common Data Service storage capacity](capacity-storage.md)

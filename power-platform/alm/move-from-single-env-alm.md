@@ -28,7 +28,7 @@ To move to healthy application lifecycle management (ALM), you must:
 
 2.  Use solutions to ship changes across environments: More information: [Use a solution to customize](use-solutions-for-your-customizations.md)
 
-3.  Automate the application lifecycle process using DevOps. More information: [Power Apps build tools for Azure DevOps](devops-build-tools.md) 
+3.  Automate the application lifecycle process using DevOps. More information: [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md) 
 
 ### See also
 [Scenario 3: Moving from unmanaged to managed solutions in your organization](move-from-unmanaged-managed-alm.md)

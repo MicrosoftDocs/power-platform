@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2020
+ms.date: 06/10/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -49,11 +49,11 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 | Application user / Non-interactive users                 | See *Non-licensed user* section below |
 
 
-<sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent.
+<sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
 
 <sup>2</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
-<sup>3</sup>See **Appendix D** for Office 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+<sup>3</sup>See **Appendix D** for Microsoft 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 
 Users who are running apps and flows without a user license through the Power Apps per app plan or flows licensed through the Power Automate per flow plan are granted the following API request entitlement.
@@ -102,7 +102,7 @@ This base request capacity is based on the type of subscription, as follows:
 
 3. If a tenant has at least one Microsoft Power Apps or Power Automate subscription, they will get 25,000 requests per 24 hours.
 
-If a tenant has multiple types of subscriptions, their base request capacity will be a maximum of two subscriptions. For example, if a customer has both Dynamics 365 Customer Service and Power Apps per user subscriptions, their base request capacity will be 100,000 requests per 24 hours.
+If a tenant has multiple types of subscriptions, their base request capacity will use the subscription with the larger number of requests. For example, if a customer has both Dynamics 365 Customer Service (100,000 requests) and Power Apps per user (25,000 requests) subscriptions, their base request capacity will be 100,000 requests per 24 hours.
 
 Base request capacity is defined at the tenant level and can only be used by non-licensed users, application users, and users who have free ($0) licenses.
 
@@ -135,7 +135,7 @@ Integrations won't be stopped for occasional and reasonable overages at this poi
 
 ### Will there be a transition period for existing customers?
 
-Yes, all existing customers will have a transition period until October 1, 2020, or the expiration of their current subscription term, whichever is longer.
+Yes, all existing customers will have a transition period until reporting is made available in Power Platform Admin Center, or the expiration of their current subscription term, whichever is longer.
 
 During this transition period, reporting that shows the API consumption will be made available to customers.
 

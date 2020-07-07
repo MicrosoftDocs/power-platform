@@ -1,7 +1,7 @@
 ---
 title: "Download Power Virtual Agents bot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
-ms.date: 3/6/2020
+ms.date: 5/26/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -20,7 +20,7 @@ ms.collection: virtual-agent
 
 By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
 
-You can also download and view chat transcripts in the Power Apps portal.
+You can also download and view chat transcripts in the Power Apps admin center.
 
 Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
 
@@ -63,9 +63,9 @@ The downloaded file contains the following information:
 
 - TopicId: A unique identifier of the last authored topic triggered in this session. 
 
-## View and export bot conversation transcripts from the Power Apps portal
+## View and export bot conversation transcripts from the Power Apps admin center
 
-You can also view and export bot conversation transcripts from the Power Apps portal.
+You can also view and export bot conversation transcripts from the Power Apps admin center.
 
 First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
 
@@ -135,7 +135,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
  
 6. In the **More Actions** dropdown, select **Cancel** to disable future bulk deletion using this job.
 
-    ![The more actions dropdown opesn to show a menu list, including Cancel](media/sessions-actions-cancel.png)
+    ![The more actions dropdown opens to show a menu list, including Cancel](media/sessions-actions-cancel.png)
  
 7. Create a new bulk record delete job by selecting **New** and set the following:
 
