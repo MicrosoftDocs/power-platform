@@ -73,19 +73,19 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
 1. In the side navigation pane, expand the **Data** node. Select **Entities**. On the top right, expand **Default** and select **All**.
 
-    ![](media/powerapps-data-entities-view.png)
+    ![Screenshot of the Power Apps window with Data and Entities selected](media/powerapps-data-entities-view.png)
 
 1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Entities**.
 
-    ![](media/export-view-transcript.png)
+    ![Screenshot showing Conversation Transcript selected](media/export-view-transcript.png)
  
 1. Select **Data** tab. Expand **Active conversationtranscripts** and then select **All fields**.
 
-    ![](media/export-view-all-fields.png)
+    ![Screenshot showing Active conversation transcripts expanded](media/export-view-all-fields.png)
  
 1. View the bot’s conversation transcripts.
 
-    ![](media/export-view-sessions.png)
+    ![Screenshot showing sample bot transcript entries](media/export-view-sessions.png)
 
 ### Export conversation transcripts
 
