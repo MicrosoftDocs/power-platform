@@ -1,14 +1,14 @@
 ---
 title: "Download Power Virtual Agents bot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
-ms.date: 5/26/2020
+ms.date: 7/7/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis
+ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
@@ -109,6 +109,8 @@ To keep the transcripts for longer, you need to disable the existing system job 
 
 First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
 
+The following instructions describe how to set a job to delete transcripts that are older than 12 months.
+
 1. At the top right, open the **Settings** menu cog icon and select **Advanced settings**.
 
     ![Select the cog icon to open the settings menu](media/sessions-advanced.png)
@@ -139,10 +141,10 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
  
 7. Create a new bulk record delete job by selecting **New** and set the following:
 
-    - Set **ConversationStartTime** as **Last x Months** to **12**
-        This will keep the transcripts for 12 months
+    - Set **ConversationStartTime** as **Older Than X Months** to **12**.  
+    This will keep the transcripts for 12 months
 
-    - Set **SchemaType** as **equals** to **powervirtualagents**
+    - Set **SchemaType** as **equals** to **powervirtualagents**.
 
         ![A popup window showing options to configure the job](media/sessions-schema.png)
  
