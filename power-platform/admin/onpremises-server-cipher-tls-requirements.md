@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2020
+ms.date: 07/07/2020
 search.audienceType: 
   - admin
 search.app: 
