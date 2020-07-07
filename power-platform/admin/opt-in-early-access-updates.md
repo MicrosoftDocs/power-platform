@@ -163,18 +163,19 @@ See [Early access availability](#early-access-availability).
 ### How do I report issues with updates? 
 Create a [support ticket](https://dynamics.microsoft.com/support/). 
 
-### Can I skip an update? 
-No. To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release.
+### Can I skip or postpone an update? 
+No. To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release as scheduled. 
 
 ### What happens to the environments after a release wave becomes generally available? 
 If you've enabled the early access updates in your environments, you'll continue to get updates throughout the release wave. 
 
-If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave.
+If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave.  For regional deployement, see [General availability deployment](https://docs.microsoft.com/en-us/power-platform/admin/general-availability-deployment)
  
 Throughout a release wave, your environments will be updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates will occur will be published to the [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide). Each notification will include the dates, the maintenance window, and the Release Plan reference for the list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time.
 
 See [Policies and communications](policies-communications.md#scheduled-system-updates). 
 
+<!--
 #### Deployment schedule
 
 > [!IMPORTANT]
@@ -192,6 +193,8 @@ The following is the updated schedule for when the 2020 release wave 1 features 
 |GCC<br />GCC High<br />DOD  |Friday, May 29th – Sunday, May 31st <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md).          |
 
 During the general availability deployment, your environments will be updated with the latest features and functionality automatically applied to Dynamics 365 applications and Power Platform. It will not require any action from you.  
+
+-->
 
 ### See also
 [Dynamics 365 release schedule and early access ](https://docs.microsoft.com/dynamics365/get-started/release-schedule)<br />
