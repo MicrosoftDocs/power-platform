@@ -31,6 +31,9 @@ Throughout a release wave, your environments will be updated during one of the w
 
 ## Deployment schedule  
 
+The deployement schedule will be updated soon. 
+
+<!--
 The following is the current schedule for when the 2020 release wave 1 features will be enabled by regions. 
  
 > [!IMPORTANT]
@@ -59,6 +62,8 @@ Some of the apps require additional manual steps to enable the new features of a
 |Dynamics 365 Project Service Automation      | If you have Dynamics 365 Project Service Automation version 3.10.2.0 or newer, you'll automatically receive the updates. If you're running on an older version of the Project Service app, you'll need to perform an upgrade. See [Upgrade home page](https://docs.microsoft.com/dynamics365/project-service/upgrade-psa-home-page).         |
 |Dynamics 365 Resource Scheduling Optimization      | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Dynamics 365 admin center. For instructions, see [Update RSO](https://docs.microsoft.com/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization) and [Deploy RSO](https://docs.microsoft.com/dynamics365/field-service/rso-deployment).         |
 |Dynamics 365 Customer Service Team Member      | Customer Service Team Member is a new app module. Users with a Dynamics 365 Team Member license need to manually install this app to enable this feature. For instructions, see [Customer Service Team Member](https://docs.microsoft.com/dynamics365/customer-service/customer-service-team-member).         |
+
+-->
 
 ### See also
 [Dynamics 365 release schedule](https://docs.microsoft.com/dynamics365/get-started/release-schedule) <br />
