@@ -61,13 +61,13 @@ The early access updates are available for all types of environments, including 
 
    > [!div class="mx-imgBorder"] 
    > ![Manage opt-in update](media/update-manage.png "Manage opt-in update")
-   > An example screenshot. Not current wave. 
+   > <br />An example screenshot. Not current wave. 
 
 4. Select **Update now**, and then proceed through the confirmation dialog boxes to enable the new features and capabilities of the release wave.  
  
    > [!div class="mx-imgBorder"] 
    > ![Opt-in update now](media/new-update.png "Opt-in update now")
-   > An example screenshot. Not current wave. 
+   > <br />An example screenshot. Not current wave. 
 
 5. After the update is complete, all early access features will be enabled for your model-driven apps in your environment.  
 
