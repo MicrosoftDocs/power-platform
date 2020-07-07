@@ -32,7 +32,7 @@ Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Servi
    - Select a subject from the tree and select **Edit subject** to edit a subject
    - Select a subject from the tree and select **Remove subject** to delete a subject
 
-   ![subjects-csh](media/subjects-csh.png)
+   ![Quick create](media/subjects-csh.png)
 
 
 ## Create or edit a subject  (Customer Service app) 

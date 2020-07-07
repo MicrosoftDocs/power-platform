@@ -73,10 +73,10 @@ A support engineer will assist you in verifying required prerequisites and provi
 ### If I am scheduled for an update to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)], will Microsoft apply the update at the same time as their migration to the Japan datacenter?  
  You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later before migrating to the Japan datacenter.  Customers can schedule their update.  
   
-### If I have both Office 365 services and model-driven apps in Dynamics 365, how will migration be handled?  
+### If I have both Microsoft 365 services and model-driven apps in Dynamics 365, how will migration be handled?  
  The move of each service will be handled separately and customers will be fully supported even if one service has been moved and the other has not. Customers will be able to choose their move date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with the customer to schedule the move. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], customers will be notified through the message center about the move timeline, but the large number of existing customers means that individual scheduling is not possible. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  
   
-### Can I move Office 365 and model-driven apps in Dynamics 365 at the same time?  
+### Can I move Microsoft 365 and model-driven apps in Dynamics 365 at the same time?  
  The move process for each service is handled separately, but the  move can be scheduled to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move if requested.  
   
 ### Will multi-geo environments be available to customers in Japan?  

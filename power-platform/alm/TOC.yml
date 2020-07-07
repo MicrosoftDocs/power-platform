@@ -22,10 +22,10 @@
         href: managed-properties-alm.md
       - name: Use segmented solutions
         href: segmented-solutions-alm.md
-      - name: Update solutions
+      - name: Create and update solutions
         href: update-solutions-alm.md
   - name: Tools and apps used
-    href: tools-apps-used-alm.md
+    href: tools-apps-used-alm.md    
   - name: Implementing healthy ALM
     items: 
     - name: Healthy ALM overview
@@ -47,8 +47,10 @@
   - name: ALM for developers   
     href: alm-for-developers.md
     items:
-    - name: Use Power Apps build tools with Azure DevOps
+    - name: Use Power Platform Build Tools
       href: devops-build-tools.md
+    - name: Power Platform Build Tools tasks
+      href: devops-build-tool-tasks.md
     - name: Work with solution components
       href: 
       items:
@@ -61,10 +63,28 @@
     - name: Leverage solution and packaging tools
       href: 
       items:
-        - name: Configuration Migration and Package Deployer tools
+        - name: Configuration Migration
           href: configure-and-deploy-tools.md
+        - name: Package Deployer tool
+          href: package-deployer-tool.md
         - name: Solution Packager tool
           href: solution-packager-tool.md
+        - name: Source control with solution files
+          href: use-source-control-solution-files.md
+    - name: Verify quality of solutions and packages
+      items:
+        - name: Use the Power Apps checker web API 
+          href: checker-api/overview.md
+        - name: Invoke the analysis
+          href: checker-api/analyze.md
+        - name: Check for analysis status
+          href: checker-api/check-status.md
+        - name: Retrieve the list of rules
+          href: checker-api/retrieve-rules.md
+        - name: Retrieve the list of rulesets
+          href: checker-api/retrieve-rulesets.md
+        - name: Upload a file for analysis
+          href: checker-api/upload-file.md
     - name: Manage solutions using custom code
       href: 
       items:

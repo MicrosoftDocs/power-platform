@@ -17,7 +17,7 @@ search.app:
 ---
 # About Connectors
 
-Connectors are essentially proxy wrappers around the APIs provided by services that allow Power Automate, Power Apps, and Logic Apps to easily interact with the service. Connectors can be either public or custom. There are currently over 200+ public connectors that can be used by all organizations. Examples of public connectors are Office 365, Common Data Service, Twitter, Dropbox and more. Custom connectors are defined in the context of an environment and are only available to apps and flows within that environment. Connectors make triggers and actions available that can be used by the apps and flows. Triggers are used by flow or Logic Apps to start the execution of the workflow. Actions are used by apps and flows to perform a defined set of actions during execution.
+Connectors are essentially proxy wrappers around the APIs provided by services that allow Power Automate, Power Apps, and Logic Apps to easily interact with the service. Connectors can be either public or custom. There are currently over 200+ public connectors that can be used by all organizations. Examples of public connectors are Microsoft 365, Common Data Service, Twitter, Dropbox and more. Custom connectors are defined in the context of an environment and are only available to apps and flows within that environment. Connectors make triggers and actions available that can be used by the apps and flows. Triggers are used by flow or Logic Apps to start the execution of the workflow. Actions are used by apps and flows to perform a defined set of actions during execution.
 
 ## Sharing of canvas apps that use Connectors
 
@@ -43,7 +43,7 @@ From here you will see a dialog to specify the user or group as well as a list o
 > ![](media/connections-used-notifications.png "Connections used notifications")
 
 
-One of the more recent additions is the ability to share a flow with a SharePoint List or an Office 365 Group. In this scenario, the flow is available to all members of the group in the case of Office 365 groups. For SharePoint Lists, anyone with edit access to the list would have access to the flow. The flow would then show up with the ability to execute it from the application navigation.
+One of the more recent additions is the ability to share a flow with a SharePoint List or an Microsoft 365 Group. In this scenario, the flow is available to all members of the group in the case of Microsoft 365 groups. For SharePoint Lists, anyone with edit access to the list would have access to the flow. The flow would then show up with the ability to execute it from the application navigation.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/sharepoint-flow-menu.png "SharePoint Power Automate menu")

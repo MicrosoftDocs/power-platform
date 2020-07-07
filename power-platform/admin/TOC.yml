@@ -14,6 +14,12 @@
         href: support-overview.md
       - name: Determine your organization ID and name
         href: determine-org-id-name.md
+      - name: Manage email notifications to admins
+        href: manage-email-notifications.md
+      - name: Policies and communications
+        href: policies-communications.md
+      - name: Notifications explained
+        href: notifications-explained.md 
     - name: Licensing
       items:
       - name: Overview
@@ -36,6 +42,8 @@
       items:
       - name: What's the role of a Power Platform administrator? 
         href: overview-role-powerapps-admin.md
+      - name: Management and monitoring
+        href: wp-management-monitoring.md
       - name: Power Apps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
       - name: Try Power Apps and model-driven apps in Dynamics 365
@@ -86,12 +94,19 @@
           href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
+        - name: Administration mode
+          href: sandbox-environments.md#administration-mode
+    #      href: admin-mode.md
         - name: Customer managed encryption key
           href: manage-encryption-key.md
         - name: Trial environment
           href: trial-environments.md     
         - name: Sandbox environment
           href: sandbox-environments.md
+        - name: View apps in your environments 
+          href: admin-view-apps.md
+        - name: Language collations 
+          href: language-collations.md            
       - name: Manage updates
         items:
         - name: Opt in to early access updates
@@ -206,14 +221,12 @@
             href: enable-sharepoint-document-management-specific-entities.md
           - name: Manage document suggestions
             href: enable-document-suggestions.md
-          - name: Microsoft Social Engagement
-            href: connect-microsoft-social-engagement.md
           - name: OneDrive for business
             href: enable-onedrive-for-business.md 
           - name: OneNote
             href: set-up-onenote-integration-in-dynamics-365.md
           - name: Outlook
-            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook.md
+            href: https://docs.microsoft.com/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook
           - name: SharePoint document locations
             href: create-edit-document-location-records.md
           - name: SharePoint sites
@@ -237,7 +250,7 @@
           - name: Data import wizard
             href: import-data-all-record-types.md
           - name: Data maps
-            href: https://docs.microsoft.com/dynamics365/customer-engagement/basics/select-data-map
+            href: select-data-map.md
           - name: Duplicate detection jobs
             href: run-bulk-system-jobs-detect-duplicate-records.md
           - name: Duplicate detection rules
@@ -307,7 +320,8 @@
         - name: Multiple online environments or tenants
           href: multiple-online-environments-tenants.md
         - name: Administration mode
-          href: sandbox-environments.md#administration-mode
+      #    href: admin-mode.md
+          href: sandbox-environments.md#administration-mode         
         - name: Support environment
           href: support-environment.md     
         - name: Automation of tasks with PowerShell 
@@ -316,58 +330,56 @@
           href: wp-task-automation-flow.md    
     - name: Manage users 
       items:     
-      - name: Configure user security
-        items:
-        - name: Overview of user security
-          href: grant-users-access.md
-        - name: View active users
-          href: admin-view-user-licenses.md
-     #  - name: User identity and access model
-     #  - name: Best practice recommendations 
+      - name: Overview of user security
+        href: grant-users-access.md
+      - name: View active users  
+        href: admin-view-user-licenses.md
+      - name: Create users and assign security roles
+        href: create-users-assign-online-security-roles.md
+      - name: Reset a user's password
+        href: reset-users-password.md          
+      - name: Assign licenses to users
+        href: create-users-assign-online-security-roles.md#add-a-license-to-a-user-account
+      - name: Assign service admin role to users
+        href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
+      - name: Add users to an environment
+        href: add-users-to-environment.md
+      - name: Configure user security to resources
+        href: database-security.md
+      - name: Configure user access to an environment
+        href: control-user-access.md  
+      - name: View user profile
+        href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
+      - name: Assign security roles
+        items:  
+        - name: About security roles and privileges
+          href: security-roles-privileges.md
         - name: Create users and assign security roles
           href: create-users-assign-online-security-roles.md
-        - name: Reset a user's password
-          href: reset-users-password.md          
-        - name: Assign licenses to users
-          href: create-users-assign-online-security-roles.md#add-a-license-to-a-user-account
-        - name: Assign service admin role to users
-          href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
-        - name: Add users to environment
-          href: database-security.md
-     #  - name: Delete users from environment
-        - name: Configure user access to environments
-          href: control-user-access.md  
-        - name: View user profile
-          href: https://docs.microsoft.com/powerapps/user/view-your-user-profile
-        - name: Assign security roles
-          items:  
-          - name: About security roles and privileges
-            href: security-roles-privileges.md
-      #   - name: Automatic role assignment by the system
-          - name: Use service admin roles to manage your tenant
-            href: use-service-admin-role-manage-tenant.md
-          - name: Create or edit a security role
-            href: create-edit-security-role.md
-          - name: Copy a security role
-            href: copy-security-role.md
-        - name: Create an administrative user
-          href: prevent-elevation-security-role-privilege.md
-        - name: Troubleshoot access issues
-          href: troubleshooting-user-needs-read-write-access-organization.md
-        - name: Assign security roles to a form
-          href: assign-security-roles-form.md       
-    #    - name: Manage user account synchronization    # This topic should be removed, on-prem focus
-    #      href: manage-user-account-synchronization.md       
-        - name: Hierarchy security to control access
-          href: hierarchy-security.md
-        - name: Add or remove sales territory members
-          href: add-remove-territory-members.md
-        - name: User session management
-          href: user-session-management.md
-        - name: Conditional access with Azure AD 
-          href: restrict-access-online-trusted-ip-rules.md
-        - name: B2B collaboration with Azure AD
-          href: invite-users-azure-active-directory-b2b-collaboration.md    
+        - name: Use service admin roles to manage your tenant
+          href: use-service-admin-role-manage-tenant.md
+        - name: Create or edit a security role
+          href: create-edit-security-role.md
+        - name: Copy a security role
+          href: copy-security-role.md
+      - name: Create an administrative user
+        href: prevent-elevation-security-role-privilege.md
+      - name: Troubleshoot access issues
+        href: troubleshooting-user-needs-read-write-access-organization.md
+      - name: Assign security roles to a form
+        href: assign-security-roles-form.md       
+      - name: Manage user account synchronization 
+        href: manage-user-account-synchronization.md       
+      - name: Hierarchy security to control access
+        href: hierarchy-security.md
+      - name: Add or remove sales territory members
+        href: add-remove-territory-members.md
+      - name: User session management
+        href: user-session-management.md
+      - name: Conditional access with Azure AD 
+        href: restrict-access-online-trusted-ip-rules.md
+      - name: B2B collaboration with Azure AD
+        href: invite-users-azure-active-directory-b2b-collaboration.md    
     - name: Analytics
       items: 
       - name: Common Data Service analytics 
@@ -388,7 +400,7 @@
         href: view-self-service-capacity.md
       - name: Add-on capacity management
         href: capacity-add-on.md
-      - name: Free storage space
+      - name: Free up storage space
         href: free-storage-space.md       
     - name: Resources
       items:
@@ -400,8 +412,8 @@
         href: admin-manage-apps.md
       - name: Manage Power Automate flows
         href: manage-power-automate.md
-  #    - name: Portal administration
-  #      href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
+      - name: Portal administration
+        href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
     - name: Activity logging for Power Apps 
       items: 
       - name: Overview
@@ -410,6 +422,12 @@
         href: audit-data-user-activity.md
       - name: Enable and use Activity Logging
         href: enable-use-comprehensive-auditing.md    
+    - name: PowerShell support for Power Apps (preview) 
+      items:
+      - name: About PowerShell support
+        href: powerapps-powershell.md           
+      - name: Automation of tasks with PowerShell 
+        href: wp-task-automation-powershell.md
     - name: Requirements/supported configurations
       items:
       - name: Overview
@@ -422,10 +440,6 @@
         href: web-application-requirements.md
     - name: Platform architecture
       items: 
-      - name: "Preview: About on-premises gateway"
-        href: wp-onpremises-gateway.md
-      - name: "Preview: On-premises data gateway management"
-        href: onpremises-data-gateway-management.md
       - name: About environments 
         href: wp-environments.md
       - name: Common Data Service 
@@ -449,7 +463,7 @@
       - name: System and application users
         href: system-application-users.md
       - name: Configure user security
-        href: manage-users-overview.md
+        href: database-security.md
       - name: Configure environment security 
         items: 
         - name: Control user access to environments
@@ -463,6 +477,8 @@
           href: create-dlp-policy.md
         - name: Manage DLP policies
           href: prevent-data-loss.md
+        - name: Data loss prevention SDK 
+          href: data-loss-prevention-sdk.md
       - name: Configure field-level security
         items:
         - name: Overview
@@ -519,45 +535,25 @@
             href: troubleshooting-server-based-authentication.md
           - name: Troubleshoot set up with SharePoint online
             href: troubleshoot-set-up-sharepoint-online.md
+          - name: Troubleshooting document management issues
+            href: troubleshoot-doc-management-issues.md
           - name: Known issues with document management
             href: doc-management-known-issues.md
-      - name: PowerShell support for Power Apps (preview) 
-        items:
-        - name: About PowerShell support
-          href: powerapps-powershell.md           
-        - name: Automation of tasks with PowerShell 
-          href: wp-task-automation-powershell.md
-      - name: Automation of tasks with Power Automate
-        href: wp-task-automation-flow.md
-      - name: Manage email notifications to admins
-        href: manage-email-notifications.md
-      - name: Policies and communications
-        href: policies-communications.md
-      - name: Notifications explained
-        href: notifications-explained.md 
-    - name: Application Lifecycle Management 
+    - name: Application lifecycle management 
       href: wp-application-lifecycle-management.md
       items:
-      - name: View apps in your environments 
-        href: admin-view-apps.md
-      - name: Manage apps in your org 
-        href: admin-manage-apps.md
-      - name: Move an app between tenants or environments 
-        href: environment-and-tenant-migration.md
-      - name: Embed an app in Teams
-        href: embed-app-teams.md
-      - name: Automate application lifecycle management
-        href: automate-alm.md
-      - name: Deploy packages using Package Deployer and Windows PowerShell
-        href: deploy-packages-using-package-deployer-windows-powershell.md  
-      - name: Deployment scenarios 
-        href: wp-deployment-scenarios.md
     - name: Data integration
       items:
       - name: Integrate data into Common Data Service 
         href: data-integrator.md
       - name: Data Integrator Error management and troubleshooting 
         href: data-integrator-error-management.md
+    - name: Data gateways
+      items: 
+      - name: "Preview: About on-premises gateway"
+        href: wp-onpremises-gateway.md
+      - name: "Preview: On-premises data gateway management"
+        href: onpremises-data-gateway-management.md
     - name: Manage data
       items: 
       - name: Add or remove sample data 
@@ -602,6 +598,8 @@
           href: modify-configuration-data-schema.md
         - name: Import configuration data
           href: import-configuration-data.md 
+      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
+        href: deploy-packages-using-package-deployer-windows-powershell.md 
     - name: Work with templates
       items: 
       - name: Article templates
@@ -640,6 +638,8 @@
           href: connect-to-pop3-or-smtp-servers.md
         - name: Connect to IMAP or SMTP servers
           href: connect-to-imap-servers.md 
+        - name: Connect Gmail accounts using OAuth 2.0
+          href: connect-gmail-oauth2.md
         - name: Troubleshooting and monitoring server-side synchronization
           href: troubleshooting-monitoring-server-side-synchronization.md
         - name: When would I want to use this check box?
@@ -684,27 +684,19 @@
         href: recover-from-exchange-server-failure.md 
     - name: Extend with integration and solutions
       items:
-      - name: Connect to Microsoft Social Engagement
-        items:
-        - name: Connect, assign licenses, and reset
-          href: connect-microsoft-social-engagement.md 
-        - name: Install the Social Selling Assistant
-          href: install-social-selling-assistant.md 
-        - name: Control receiving social data
-          href: control-social-data.md 
       - name: Manage Bing Maps
         href: manage-bing-maps-organization.md 
       - name: Enable Power Automate integration
         href: enable-embedded-flow-in-your-organization.md 
-      - name: "Preview feature: LIve Assist powered by Café X"
+      - name: "Preview feature: Live Assist powered by Café X"
         href: https://docs.microsoft.com/dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
-      - name: Deploy packages using Dynamics CRM Package Deployer and Windows PowerShell
-        href: deploy-packages-using-package-deployer-windows-powershell.md 
       - name: Use Power BI
         href: use-power-bi.md 
+      - name: Embed an app in Teams
+        href: embed-app-teams.md        
       - name: Install, update, or remove a preferred solution
         href: install-remove-preferred-solution.md 
-      - name: Add Office 365 Online services
+      - name: Add Microsoft 365 Online services
         items: 
         - name: Overview
           href: add-office-365-online-services.md
@@ -718,7 +710,7 @@
           href: skype-business-integration.md 
         - name: Set up Skype or Skype for Business
           href: set-up-skype-or-skype-for-business.md 
-        - name: Deploy Office 365 Groups
+        - name: Deploy Microsoft 365 Groups
           href: deploy-office-365-groups.md 
         - name: Enable viewing profile cards
           href: enable-profile-card.md
@@ -769,6 +761,8 @@
         items:
         - name: About China datacenter
           href: about-microsoft-cloud-china.md
+        - name: Business applications availability
+          href: business-applications-availability-china.md
         - name: 21 Vianet support
           href: 21vianet-support.md
       - name: France
@@ -797,8 +791,6 @@
   - name: Administer Power Apps
     href: admin-guide.md
     items:
-    - name: Power Apps overview
-      href: wp-powerapps-platform-overview.md
     - name: Environments 
       items:
       - name: Edit environment properties
@@ -832,8 +824,6 @@
     - name: Rich text experience for appointment activities
       href: enable-rich-text-experience.md
 
-  - name: "Reference: Use the various admin centers"
-    href: admin-centers.md
   - name: "Reference: Videos and PowerPoint presentations"
     href: videos.md
   - name: Important changes (deprecations) coming

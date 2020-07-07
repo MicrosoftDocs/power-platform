@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/13/2020
+ms.date: 05/20/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -113,7 +113,7 @@ The reset process starts.
   
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
   
-2. From the left-side menu, select **Environments**, and then select an environment.
+2. From the left-side menu, select **Environments**, and then select a sandbox environment.
   
 3. Select **See all**.
   

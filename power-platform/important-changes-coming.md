@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 05/04/2020
+ms.date: 06/29/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -23,6 +23,12 @@ Administrators and IT professionals should use this information to prepare for f
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+
+## Dynamic 365 Sales bot is deprecated
+----------------------------------------
+Effective June 2, 2020, the Dynamics 365 [Sales bot](https://docs.microsoft.com/dynamics365/teams-integration/teams-bot-search), a feature that enables users to retrieve sales information through a bot within Dynamics 365 Sales app for Teams will be deprecated. Until July 31, 2020, Microsoft will continue to provide support for the feature, but won't release any additional functionality beyond what is already present.  After July 31, 2020, you will no longer be able to receive responses to conversations. The bot won’t be available for new customers; existing customers may still be able to access the bot from the Chat, however the bot will not respond to questions.
+
+It is our goal to deliver a powerful bot experience that allows users to retrieve and manage information. Based on usage data and feedback from our customers, we will be working on a powerful, extensible set of capabilities and features that will allow you to intuitively access and interact with sales information—among other entities—through a bot interface. We will keep you updated on timing for when this will be available.
 
 ## Dynamics 365 Connector is deprecated
 
@@ -75,7 +81,7 @@ For further information and steps to make a smooth transition, download [Dynamic
 ## Dynamics 365 Home is deprecated 
 ------------------------------------------------------
 
-Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available after October 1, 2020. The Office 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
+Effective March 2020, the home page for Dynamics 365 applications (https://home.dynamics.com) is deprecated and won't be available after October 1, 2020. The Microsoft 365 apps page (https://www.office.com/apps) will replace it and provide users with a single page for productivity and business applications.  
 
 Dynamics 365 Home users will see notification about the new location and recommendation to change browser bookmarks until October 1, 2020. After October 1, 2020, users navigating to <https://home.dynamics.com> will automatically be redirected to <https://www.office.com/apps> with a business application filter applied.
 
@@ -133,11 +139,9 @@ customers in Common Data Service.
 
 To allow for transition of customers and partner applications:
 
--   Effective April 2021, we intend to retire this authentication protocol for
-    all new environments.
-
--   Effective April 2022, the authentication protocol will be retired for all
-    new and existing environments.
+- Effective October 2020, the authentication protocol will be retired for all new tenants.
+- Effective April 2021, the authentication protocol will be retired for all new environments within a tenant.
+- Effective April 2022, the authentication protocol will be retired for all new and existing environments within a tenant.
 
 More information: [Use of Office365 authentication with the WS-Trust security protocol](/powerapps/developer/common-data-service/authenticate-office365-deprecation)
 
@@ -251,7 +255,7 @@ and supported until they are officially removed from a future major release. *A 
 |                       [globalContext.userSettings.transactionCurrencyId](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrencyid)                       |                                                                                                                  [globalContext.userSettings.transactionCurrency](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrency)                                                                                                                   |                                                                                                                                                The replacement method lets you access the display name along with the ID of transaction currency.                                                                                                                                                 |
 |                       [getData](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/controls/getdata) and [setData](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/controls/setdata) for Silverlight web resources                       |                                                                                                                  None                                                                                                                  |                                                                                                                                                Silverlight is no longer supported. These methods won't be available after October, 2020.                                                                                                                                                  |
 |                       [formContext.data.entity.save](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data-entity/save)                       |                                                                                                                  [formContext.data.save](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data/save)                                                                                                                  |                                                                                                                   |
-|                       [ClientGlobalContext.js.aspx](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  None                                                                                                                  |  The `ClientGlobalContext.js.aspx` page is built on the legacy web client infrastructure. As the [legacy web client is deprecated](#legacy-web-client-is-deprecated) and scheduled to be unavailable effective October 1, 2020, the `ClientGlobalContext.js.aspx` page will also be removed along with the legacy web client on October 1, 2020.                                                                                                                 |
+|                       [ClientGlobalContext.js.aspx](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  None                                                                                                                  |  The `ClientGlobalContext.js.aspx` page is built on the legacy web client infrastructure. As the [legacy web client is deprecated](#legacy-web-client-is-deprecated) and scheduled to be unavailable effective December 1, 2020, the `ClientGlobalContext.js.aspx` page will also be removed along with the legacy web client on December 1, 2020.                                                                                                                 |
 |                       [getObject](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow)                                                                                                                  |                       |
 
 For information about the new client APIs, see [Apply business logic using client scripting in model-driven apps using JavaScript](/powerapps/developer/model-driven-apps/client-scripting)

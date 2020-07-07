@@ -20,8 +20,8 @@ search.app:
 We recommend that you create a solution to manage your customizations. By using a custom solution, you can easily find just the solution components you've customized, consistently apply your solution publisher prefix, and export your solution for distribution to other environments.  
 
 If you don't use a custom solution, you'll be working in one of these default solutions in the unmanaged layer:  
-- Common Data Service Default Solution. This solution is available for makers to use by default for their customizations in an environment. The Common Data Service Default Solution is useful when you want to evaluate or learn Power Apps. However, we recommend that app makers work in their own unmanaged solutions. More information: [Common Data Service Default Solution](#common-data-service-default-solution) 
-- Default solution. This is a special solution that contains all components in the system. The default solution is useful for discovering all the components and configurations in your system.  
+- **Common Data Service Default Solution**. This solution is available for makers to use by default for their customizations in an environment. The Common Data Service Default Solution is useful when you want to evaluate or learn Power Apps. However, we recommend that app makers work in their own unmanaged solutions. More information: [Common Data Service Default Solution](#common-data-service-default-solution) 
+- **Default Solution**. This is a special solution that contains all components in the system. The default solution is useful for discovering all the components and configurations in your system.  
 
 ## Why you shouldn't use the default solutions to manage customizations
 There are a few reasons why you shouldn't create apps and make customizations in either of the default solutions:  

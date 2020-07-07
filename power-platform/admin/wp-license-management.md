@@ -20,7 +20,7 @@ search.app:
 
 Organizations can obtain licenses by either licensing Microsoft Power Apps or
 Microsoft Power Automate specifically or by it being included in the license of another Microsoft
-cloud service offering. For example, both Office 365 and Dynamics 365 provide
+cloud service offering. For example, both Microsoft 365 and Dynamics 365 provide
 entitlements for Power Apps and Power Automate. As with most Microsoft licensing,
 you can mix and match for users as appropriate giving some additional
 entitlements.
@@ -49,7 +49,7 @@ For Power Automate, an unlicensed user that signs in to flow.microsoft.com will
 be setup with the free Power Automate plan. If later they try to perform an action like
 sharing a flow, they will be prompted to sign up for a trial. In this example,
 if the user accepted the offer for trial they would be signed up for a Power Automate
-trial. This trial would not show up under the user licenses in the Office 365
+trial. This trial would not show up under the user licenses in the Microsoft 365
 Portal, however you would be able to see it in the Power Apps license report
 discussed later in this security section.
 

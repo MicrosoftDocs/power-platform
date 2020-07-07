@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 04/27/2020
+ms.date: 06/22/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -40,7 +40,7 @@ Your license determines whether you can create environments.
 
 | License | Trial | Production |
 | --- | --- | --- |
-| Office 365 Plans |No | No |
+| Microsoft 365 Plans |No | No |
 | Dynamics 365 Teams Plans   |No | No |
 | Power Apps Community Plan   |No | No |
 | Dynamics 365 trial | Yes (one) | No|
@@ -103,7 +103,7 @@ To create an environment with a database, you need 1GB available database capaci
 
    |Setting  |Description  |
    |---------|---------|
-   |Language     | The default language for this environment.        |
+   |Language     | The default language for this environment. More information: [Common Data Service language collations](language-collations.md)     |
    |Currency     | The base currency used for reporting.         |
    |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
    |Deploy sample apps and data     | Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. You must select **No** for **Enable Dynamics 365 apps** for this setting to appear.        |
@@ -199,8 +199,8 @@ Power Platform admin center provisioning is only available for customers who hav
 ### What are the new trial limits for Power Apps customers?
 The new trial limits are one per user. 
 
-### Can an Office 365 licensed user manage and create environments?
-No, Office 365 licensed users will not be able to manage environments. 
+### Can an Microsoft 365 licensed user manage and create environments?
+No, Microsoft 365 licensed users will not be able to manage environments. 
 
 ### If I create an environment in the Dynamics 365 Admin center, will it appear in the Power Platform admin center?
 Yes, it will appear in both admin centers.
@@ -210,5 +210,6 @@ Provisioning environments is based on database capacity. Previously, it was two 
 
 ### See also 
 [Manage environments in Power Apps](environments-administration.md) <br />
-[Common Data Service storage capacity](capacity-storage.md)
+[Common Data Service storage capacity](capacity-storage.md) <br />
+[Control user access to environments: security groups and licenses](control-user-access.md)
 

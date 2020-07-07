@@ -45,7 +45,7 @@ Users can create and manage private documents with [!INCLUDE[pn_onedrive_for_bus
 > [!NOTE]
 >  You might have already set up permissions and can skip the following if you completed the steps in [Configure server-based authentication with model-driven apps in Dynamics 365 and SharePoint on-premises](../admin/configure-server-based-authentication-sharepoint-on-premises.md).  
   
-```  
+```powershell  
 Add-Pssnapin *  
 # Access WellKnown App principal  
 [Microsoft.SharePoint.Administration.SPWebService]::ContentService.WellKnownAppPrincipals  

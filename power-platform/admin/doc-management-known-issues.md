@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 05/01/2020
+ms.date: 06/02/2020
 ms.service: powerapps
 ms.custom: 
 ms.topic: article
@@ -44,6 +44,30 @@ If you receive a **File not found** error or encounter a problem while adding a 
 SharePoint document locations are records in model-driven apps, such as Dynamics 365 Sales and Customer Service, that point to a SharePoint document library or folder. To use any SharePoint site or subsite in SharePoint integration, you must run the Document Management Settings wizard once with the corresponding site URL, so that the document libraries are created in the site.
 
 To store documents for records, the document libraries or folders must be in place. If model-driven apps are unable to create the document libraries and folders automatically, you can manually create these in SharePoint. After you create the document libraries and folders in SharePoint, you must create document location records in model-driven apps to point to these SharePoint document libraries and folders.
+
+For more information, see [Create or edit document location records](https://docs.microsoft.com/power-platform/admin/create-edit-document-location-records).
+
+## "File not found" error when using multiple SharePoint sites
+
+If you receive a **File not found** error when using multiple SharePoint sites, the likely cause is that there are no document libraries for a new SharePoint site. You must run the Document Management Settings wizard for any newly added SharePoint sites.
+
+The following describes the scenario that causes the error.
+
+1. Run the Document Management Settings wizard for the default SharePoint site.
+
+2. In the model-driven app in Dynamics 365, add a new SharePoint site (go to **Advanced Settings** > **Document Management** > **SharePoint Sites** > **Add SharePoint Site**). This creates a SharePoint site entry only in the application and does not create the document libraries in SharePoint that are required for document management.
+
+3. Open any entity where document management is enabled, and create the document location for the new site that you added in step 2 as the parent site. 
+
+4. You will encounter the "File Not Found" error. The cause of the error is that there are no document libraries for this new SharePoint site in SharePoint.
+
+To mitigate this issue, run the Document Management Settings wizard for this newly added site as well.
+
+Points to consider:
+
+-  Document management works only for entities that are selected while running the Document Management Settings wizard.
+
+-  The SharePoint site for which the Document Management Settings wizard is last run becomes the default site. You can reset the default site if required by running the Document Management Settings wizard again for that particular site.
 
 For more information, see [Create or edit document location records](https://docs.microsoft.com/power-platform/admin/create-edit-document-location-records).
 

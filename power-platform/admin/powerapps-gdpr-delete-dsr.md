@@ -42,7 +42,7 @@ Custom-connector permissions |
 
 For the data and resources that require manual review, Power Apps offers the following experiences to reassign (if necessary) or delete personal data for a specific user:
 
-* Website access: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Website access: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell access: Power Apps cmdlets for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804) and cmdlets for [on-premises gateways](https://go.microsoft.com/fwlink/?linkid=872238).
 
@@ -74,7 +74,8 @@ In order to determine if you are a member of an unmanaged tenant please follow t
 1. Open the following URL in a browser, making sure to replace your email address in the URL: https://login.microsoftonline.com/common/userrealm/name@contoso.com?api-version=2.1
 
 2. If you are a member of an **unmanaged tenant** then you will see an `"IsViral": true` in the response.
-```
+
+```powershell
 {
   ...
   "Login": "name@unmanagedcontoso.com",
@@ -91,7 +92,7 @@ To perform the administrative operations outlined in this document using the [Po
 
 * A paid Power Apps plan or a Power Apps plan trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
-* [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+* [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
 ## Step 1: Delete or reassign all environments created by the user
 As an administrator, you have two decisions to make when processing a DSR delete request for each environment that the user created:
@@ -128,7 +129,7 @@ An admin can review and delete environments created by a specific user from the 
 ### Give access to a user's environments using PowerShell
 An administrator can assign themselves (or another user within their organization) access to all environments created by a user by using the **Set-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 $myUserId = $global:currentSession.UserId
@@ -146,7 +147,7 @@ Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Get-AdminEnvironmentRoleAssig
 ### Delete environments created by a user using PowerShell
  An administrator can delete all environments created by a user by using the **Remove-AdminEnvironment** function in the [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
@@ -166,7 +167,7 @@ An administrator can delete a user's environment permissions starting from the [
 
 1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
 
-    You must be an [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+    You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
@@ -183,7 +184,7 @@ An administrator can delete a user's environment permissions starting from the [
 #### PowerShell
 An administrator can delete all environment role assignments for a user across all environments without a Common Data Service database by using the **Remove-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
@@ -202,7 +203,7 @@ With the introduction of the Common Data Service, if a database is created withi
 ### Reassign a user's canvas apps using the Power Apps Admin PowerShell cmdlets
 If an admin decides not to delete a user's canvas apps, they can reassign the apps owned by a user by using the **Set-AdminAppOwner** function in the [Power Apps Admin PowerShell cdmlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 $newAppOwnerUserId = "72c272b8-14c3-4f7a-95f7-a76f65c9ccd8"
@@ -219,7 +220,7 @@ An admin can delete apps created by a user starting from the [Power Apps Admin c
 
 1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
 
-    You must be a [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+    You must be a [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
@@ -238,7 +239,7 @@ An admin can delete apps created by a user starting from the [Power Apps Admin c
 ### Delete a user's canvas app using the Power Apps Admin PowerShell cmdlets
 If an admin decides to delete all canvas apps owned by a user, they can do so using the **Remove-AdminApp** function in the [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
@@ -260,7 +261,7 @@ An admin can delete app-role assignments for a user starting from the [Power App
 
 1. From the [Power Apps Admin center](https://admin.powerapps.com/), select each environment in your organization.
 
-    You must be an [Office 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
+    You must be an [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments that have been created within your organization.
 
     ![Admin Center Landing Page](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
 
@@ -277,7 +278,7 @@ An admin can delete app-role assignments for a user starting from the [Power App
 ### PowerShell cmdlets for admins
 An admin can delete all of a user's canvas-app role assignments by using the **Remove-AdminAppRoleAssignmnet** function in the [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
@@ -291,7 +292,7 @@ Connections are used in conjunction with connectors when establishing connectivi
 ### PowerShell cmdlets for app creators
 A user can delete all of their connections by using the Remove-Connection function in the [PowerShell cmdlets for app creators](https://go.microsoft.com/fwlink/?linkid=871448):
 
-```
+```powershell
 Add-PowerAppsAccount
 
 #Retrieves all connections for the calling user and deletes them
@@ -301,7 +302,7 @@ Get-Connection | Remove-Connection
 ### PowerShell cmdlets for Power Apps administrators
 An admin can delete all of a user's connections by using the **Remove-AdminConnection** function in the [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
@@ -314,7 +315,7 @@ Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection
 ### PowerShell cmdlets for app creators
 A user can delete all of their connection role assignments for shared connections by using the Remove-ConnectionRoleAssignment function in the [PowerShell cmdlets for app creators](https://go.microsoft.com/fwlink/?linkid=871448):
 
-```
+```powershell
 Add-PowerAppsAccount
 
 #Retrieves all connection role assignments for the calling users and deletes them
@@ -326,7 +327,7 @@ Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 ### PowerShell cmdlets for admins
 An admin can delete all of a user's connection role assignments by using the **Remove-AdminConnectionRoleAssignment** function in the [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
@@ -340,7 +341,7 @@ Custom Connectors supplement the existing out of box connectors and allow for co
 ### PowerShell cmdlets for app creators
 A user can delete all of their custom connectors by using the Remove-Connector function in the [PowerShell cmdlets for app creators](https://go.microsoft.com/fwlink/?linkid=871448):
 
-```
+```powershell
 Add-PowerAppsAccount
 
 #Retrieves all custom connectors for the calling user and deletes them
@@ -350,7 +351,7 @@ Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ### PowerShell cmdlets for admins
 An admin can delete all custom connectors created by a user using the **Remove-AdminConnector** function in the [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
@@ -363,7 +364,7 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 ### PowerShell cmdlets for app creators
 A user can delete all of their connector role assignments for shared custom connectors with the Remove-ConnectorRoleAssignment function in the [PowerShell cmdlets for app creators](https://go.microsoft.com/fwlink/?linkid=871448):
 
-```
+```powershell
 Add-PowerAppsAccount
 
 #Retrieves all connector role assignments for the calling users and deletes them
@@ -376,7 +377,7 @@ Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 ### PowerShell cmdlets for admins
 An admin can delete all custom connector role assignments for a user using the **Remove-AdminConnectorRoleAssignment** function in the [Power Apps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804):
 
-```
+```powershell
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
@@ -402,7 +403,7 @@ For guidance on how to respond to DSRs for users who use Common Data Service, se
 Once the above steps have been complete the final step is to delete the user's account for Azure Active Directory.
 
 ### Managed tenant
-As an admin of a managed Azure AD tenant you can delete the user's account by following the steps outlined in the Azure Data Subject Request GDPR documentation that can be found on the [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
+As an admin of a managed Azure AD tenant you can delete the user's account by following the steps outlined in the Azure Data Subject Request GDPR documentation that can be found on the [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
 ### Unmanaged tenant
 If you are a member of an unmanaged tenant then you will need to follow these steps in order to delete your account from your Azure AD tenant:
@@ -414,4 +415,4 @@ If you are a member of an unmanaged tenant then you will need to follow these st
 
 2. Select **Close account** and follow the instructions to delete your account from your Azure AD tenant.
 
-    ![Select app share](./media/powerapps-gdpr-delete-dsr/close-account.png)
+    ![Select Close account](./media/powerapps-gdpr-delete-dsr/close-account.png)

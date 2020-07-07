@@ -43,7 +43,7 @@ Download and install the admin PowerShell cmdlets as described [here](https://ww
 
 Use the following commands to restrict environment creation to Global admins, Dynamics 365 service admins, and Power Platform service admins. 
 
-```
+```powershell
 $settings = @{ DisableEnvironmentCreationByNonAdminUsers = $true }
 Set-TenantSettings $settings
 ```
@@ -53,7 +53,7 @@ Set-TenantSettings $settings
 ### Can I disable trial environment creation for users in the tenant?
 Yes. Use the following PowerShell commands to restrict trial environment creation.
 
-```
+```powershell
 $settings = @{ DisableTrialEnvironmentCreationByNonAdminUsers = $true }
 Set-TenantSettings $settings
 ```
