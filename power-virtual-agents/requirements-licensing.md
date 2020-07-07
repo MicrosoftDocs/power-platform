@@ -2,14 +2,14 @@
 title: "Assign user licenses and manage access to Power Virtual Agents"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing"
-ms.date: 4/17/2020
+ms.date: 7/7/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "licensing, admin"
+ms.custom: "licensing, admin, ceX"
 ms.collection: virtual-agent
 ---
 
