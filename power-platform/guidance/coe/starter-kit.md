@@ -41,7 +41,7 @@ The Microsoft Power Platform CoE Starter Kit is a collection of components and t
 
 Watch a quick overview of the CoE Starter Kit.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI5]
+> [!VIDEO https://www.youtube.com/embed/3eF__GY0Vzg]
 
 ## Related resources
 [Power Platform admin guide](/power-platform/admin/admin-documentation)<br/>
