@@ -117,13 +117,13 @@ To share canvas apps, see [Share a canvas app in Power Apps](https://docs.micros
 
 The per app license gives a user access to two Power Apps and one portal for a single environment.  See the table below for an example of the consumption of licenses by the number of applications and the environments used.  Keep in mind that sharing an app with a user equals consumption even if the user does not run the app. 
 
-<table>
+<table style="width:100%">
 <thead>
   <tr>
     <th></th>
-    <th colspan="3">Environment 1 (e.g. dev)</th>
-    <th colspan="3">Environment 2 (e.g. test)</th>
-    <th colspan="3">Environment 3 (e.g. production)</th>
+    <th colspan="3">Environment 1 (for example, dev)</th>
+    <th colspan="3">Environment 2 (for example, test)</th>
+    <th colspan="3">Environment 3 (for example, production)</th>
     <th>Total licenses</th>
   </tr>
 </thead>
