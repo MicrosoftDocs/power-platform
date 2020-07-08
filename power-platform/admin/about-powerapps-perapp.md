@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/29/2020
+ms.date: 07/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -112,6 +112,79 @@ After completing the first three steps, you can now share apps.
 
 ### Sharing canvas apps
 To share canvas apps, see [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
+
+## Consumption of per app licensing
+
+The per app license gives a user access to two Power Apps and one portal for a single environment.  See the table below for an example of the consumption of licenses by the number of applications and the environments used.  Keep in mind that sharing an app with a user equals consumption even if the user does not run the app. 
+
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th colspan="3">Environment 1 (e.g. dev)</th>
+    <th colspan="3">Environment 2 (e.g. test)</th>
+    <th colspan="3">Environment 3 (e.g. production)</th>
+    <th>Total licenses</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><b>User 1</b></td>
+    <td>App A</td>
+    <td>App B</td>
+    <td>Portal</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td><b>User 2</b></td>
+    <td>App A<</td>
+    <td>App B</td>
+    <td>Portal</td>
+    <td>App A<</td>
+    <td>App B</td>
+    <td>Portal</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td><b>User 3</b></td>
+    <td>App A<</td>
+    <td>App B</td>
+    <td>App C/Portal</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td><b>User 4</b></td>
+    <td>App A<</td>
+    <td></td>
+    <td>Portal</td>
+    <td></td>
+    <td>App A<</td>
+    <td></td>
+    <td>Portal</td>
+    <td></td>
+    <td>App A<</td>
+    <td></td>
+    <td>Portal</td>
+    <td></td>
+    <td>3</td>
+  </tr>
+</tbody>
+</table>
 
 ## FAQ
 
