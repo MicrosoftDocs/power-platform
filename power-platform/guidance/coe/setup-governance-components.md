@@ -47,7 +47,7 @@ More information: [Create a team site in SharePoint](https://support.office.com/
 We've created a helper flow to create the library for you. See the following zip file: *CreateCoEArchivalDocLibraryinSP.zip*.
 
 1. Download and import this flow into your CoE environment.
-<br>Go to [https://flow.microsoft.com/](https://flow.microsoft.com/) > Select the Environment of the CoE > My Flows > Import
+   To import: Go to [https://flow.microsoft.com/](https://flow.microsoft.com/) > Select CoE  Environment > My Flows > Import
 2. Ensure that the flow is turned on, and run it.
 3. When the flow is completed, you'll have a document library named PowerAppsArchive.
 
@@ -91,13 +91,13 @@ All flows in this solution depend on all environment variables' being configured
    |------|---------------|
    | Archive Site URL (SharePoint Site)  | The *Archive and Clean Up* flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library).
    | Archive Folder                      | Folder (document library) in the SharePoint site where the .msapp file should be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library).   |
-   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. |
+   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
    | Developer Compliance Center         | Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
    | Power Platform Admin Security Group | The *Admin \| Find and add admins as owners for apps that leverage certain connectors* flow adds the Admin security group to apps. Configure the Admin security group first, then enter the Azure AD group ID (Object Id) of the group here. Note: Be sure you enter the Object Id, not an email address. |
 
 ## Initialize flow approval entities in your environment
 
-The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Archive and Clean Up – Check Approval* flows use the built-in Approval actions of Power Automate. In the background, the built-in Approval actions use Common Data Service. If you've installed the solution in a new environment, the Approval entities must be initialized. The easiest way to do this is to create a "dummy" approval flow.
+The archive approval flows (*Admin \| App Archive and Clean Up – Start Approval*, *Admin \| Flow Archive and Clean Up – Start Approval*, *Admin \| App Archive and Clean Up – Check Approval*, and *Admin \| Flow Archive and Clean Up – Check Approval*), use the built-in Approval actions of Power Automate. In the background, the built-in Approval actions use Common Data Service. If you've installed the solution in a new environment, the Approval entities must be initialized. The easiest way to do this is to create a "dummy" approval flow.
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com).
 
@@ -128,13 +128,15 @@ The *Admin \| App Archive and Clean Up – Start Approval* and *Admin \| App Arc
 
 ## Activate the flows
 
-This Governance Components solution contains five flows:
+This Governance Components solution contains seven flows:
 
 -  Admin \| App Archive and Clean Up – Start Approval
 -  Admin \| App Archive and Clean Up – Check Approval
+-  Admin \| Flow Archive and Clean Up – Start Approval
+-  Admin \| Flow Archive and Clean Up – Check Approval
 -  Admin \| Compliance detail request
--  SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors
--  SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
+-  SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors ([Customization Instructions](governance-components.md#setup-required--admin--find-and-add-admins-as-owners-for-apps-that-leverage-certain-connectors))
+-  SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors ([Customization Instructions](governance-components.md#setup-required--admin--find-and-disable-flows-that-leverage-certain-connectors))
 
 Follow the same instructions to configure the flows as explained in [Activate the Sync Template flows](setup-core-components.md#activate-the-sync-template-flows).
 

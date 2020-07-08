@@ -24,27 +24,35 @@ The CoE Nurture Components solution contains assets relevant to everyone in the 
 
 Here's a breakdown of the assets that form the Nurture Components solution:
 
--  Onboard new makers, provide training, and share best practices
-
-    - [Admin | Welcome Email (flow)](#flows)
-    - [Template Catalog (canvas app)](#apps)
-    - [Admin | Newsletter with Product Updates (flow)](#flows)
-    - [Training in a day Management and Registration (canvas apps)](#apps)
-    - [Training in a day Feedback Reminder, Registration Confirmation and Reminder (flow)](#flows)
-
--  Encourage adoption
-
-    - [App Catalog (canvas app)](#apps)
+- Onboard new makers, provide training, and share best practices
+  - [Admin | Welcome Email (flow)](#flows)
+  - [Template Catalog (canvas app)](#apps)
+  - [Admin | Newsletter with Product Updates (flow)](#flows)
+  - [Training in a day Management and Registration (canvas apps)](#apps)
+  - [Training in a day Feedback Reminder, Registration Confirmation and Reminder (flow)](#flows)
+- Encourage adoption
+  - [App Catalog (canvas app)](#apps)
 
 ## Entities
 
 ### InADayAttendees
 
-Represents attendees that have registered for a Training in a day course by using the Training in a day Registration canvas app.
+Represents attendees that have registered for a Training in a day course by using the Training in a day Registration canvas app. The following information is available for each attendee:
+
+- Attendee eMail
+- Name
+- Registered Event
 
 ### InADayEvent
 
-Represents available training events created through the Training in a day Management canvas app.
+Represents available training events created through the Training in a day Management canvas app. The following information is available for each event:
+
+- Name
+- Description
+- Start Time
+- End Time
+- Max Attendees
+- Location
 
 ## Flows
 
@@ -105,7 +113,10 @@ Canvas app that allows CoE admins to share app and component templates, in addit
 
 **Prerequisite**: This app uses SharePoint in the background and requires a SharePoint site to be configured. This is described in [Set up nurture components](setup-nurture-components.md).
 
-This app can't be tested in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps.
+> [!NOTE]
+> This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps. <br>
+>You can see how to [modify the data source here](modify-components.md#set-up-the-template-catalog-and-upload-components).
+
 
 #### Training in a Day – Management
 
