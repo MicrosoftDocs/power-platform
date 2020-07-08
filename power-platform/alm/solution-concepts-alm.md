@@ -68,7 +68,7 @@ A component represents something that you can potentially customize. Anything th
 > ![Components in solution](media/components-in-solution.png "Components in solution") 
 
 > [!NOTE]
-> You can't edit components in a managed solution.
+> You can't edit components directly within a managed solution.
 
 To view a list of component types that can be added to any solution, see [ComponentType Options](/powerapps/developer/common-data-service/reference/entities/solutioncomponent#componenttype-options). 
 
@@ -83,8 +83,7 @@ processes:
 
 -   **Create** Author and export unmanaged solutions.
 
--   **Update** Create updates to a managed solution that are deployed to the parent
-    managed solution. You can't delete components with an update.<!--Suggested.-->
+-   **Update** Create updates to a managed solution that are deployed to the parent managed solution. You can't delete components with an update.
 
 -   **Upgrade** Import the solution as an upgrade to an existing managed solution,
     which removes unused components and implements upgrade logic. Upgrades
@@ -94,38 +93,28 @@ processes:
     immediately or to stage the upgrade so that you can do some additional
     actions prior to completing the upgrade.
 
--   **Patch** A patch contains only the changes for a parent managed solution, such
-    as adding or editing components and assets. Use patches when making small
+-   **Patch** A patch contains only the changes for a parent managed solution, such as adding or editing components and assets. Use patches when making small
     updates (similar to a hotfix). When patches are imported, they're layered on
     top of the parent solution. You can't delete components with a
     patch.
 
 ## Solution publisher 
 
-Every app and other solution components such as entities you create or any customization you make is part of a solution. Because
-every solution has a publisher, you should create your own publisher rather than use the default<!--Suggested, to avoid a momentary confusion.-->. You specify the publisher when you create a solution.
+Every app and other solution components such as entities you create or any customization you make is part of a solution. Because every solution has a publisher, you should create your own publisher rather than use the default. You specify the publisher when you create a solution.
 
 > [!NOTE]
 > Even if you don't use a custom solution, you'll be working in solutions which
 > are known as the *Common Data Service Default Solution* and the *Default* solutions.
 > More information: [Default Solution and Common Data Service Default Solution](use-solutions-for-your-customizations.md)
 
-The publisher of a solution where a component is created is considered the owner of 
-that component. The owner of a component controls what changes other publishers of 
-solutions including that component are allowed to make or restricted from making.  It
-is possible to move the ownership of a component from one solution to another within
-the same publisher, but not across publishers. Because of this, it's often best to
-define a single publisher so you can change the layering model across publishers later.
+The publisher of a solution where a component is created is considered the owner of that component. The owner of a component controls what changes other publishers of solutions including that component are allowed to make or restricted from making. It is possible to move the ownership of a component from one solution to another within the same publisher, but not across publishers. Because of this, it's often best to define a single publisher so you can change the layering model across publishers later.
 
 The solution publisher specifies who developed the app. For this reason, you
 should create a solution publisher name that's meaningful.
 
 ### Solution publisher prefix
 
-A solution publisher includes a prefix. The publisher prefix is a mechanism to help avoid naming collisions. This allows for solutions from
-different publishers to be installed in an environment with few conflicts.
-For example, the Contoso solution displayed here includes a solution publisher
-prefix of *contoso*.
+A solution publisher includes a prefix. The publisher prefix is a mechanism to help avoid naming collisions. This allows for solutions from different publishers to be installed in an environment with few conflicts. For example, the Contoso solution displayed here includes a solution publisher prefix of *contoso*.
 
 > [!div class="mx-imgBorder"]
 > ![Solution publisher prefix example](media/solution-publisher-prefix.png "Solution publisher prefix example")

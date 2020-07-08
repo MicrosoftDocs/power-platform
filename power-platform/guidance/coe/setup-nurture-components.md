@@ -60,6 +60,13 @@ We've created a helper flow to create the library for you. See the following zip
 
    The **TemplateType** column will have the following options: **App**, **Flow**, **Component**, **Image**, or **Document**.
 
+   Ensure that you've set up the correct permissions for your SharePoint site; we recommend that you give view-only access to your Power Users.
+   
+   More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939)
+
+   > [!NOTE]
+   > Setup for the app that uses this environment, the [Template Catalog](nurture-components.md#template-catalog), cannot be completed until you extend the app, see how to [modify components](modify-components.md#set-up-the-template-catalog-and-upload-components)
+
 <!--- Commenting this out until version 3.20041.19 is live so that these msapp files will work in production
 ### Load sample templates
 We've created a starter set of templates for you. To access them, do the following:
@@ -86,10 +93,6 @@ We've created a starter set of templates for you. To access them, do the followi
 7. You now have a starter set of components for your power user usage.
 ![BrowseToLib](media\sp-upload-5.png)
 -->
-
-Ensure that you've set up the correct permissions for your SharePoint site; we recommend that you give view-only access to your Power Users.
-
-More information: [Create a document library in SharePoint](https://support.office.com/article/create-a-document-library-in-sharepoint-306728fe-0325-4b28-b60d-f902e1d75939)
 
 ### Add your own templates
 

@@ -231,6 +231,7 @@ You should see a (200) status returned, which means the query was successful.
 > If you don't see a (200) response, the request has failed and there is an error with your setup. Therefore, the flow won't work. Common issues to check are: 
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
+> - If you do not have permissions, see Before You Begin Searching the Audit Logs(https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#before-you-begin).
 > -. Have you enabled the audit log very recently? If so, try again in a few minutes to give the audit log time to activate.
 > - Have you pasted in the correct tenant ID from your Azure app registration?
 > - Have you pasted in the correct resource URL, with no added spaces or characters at the end?
@@ -279,4 +280,4 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 1. Refresh the page to make sure the status has changed to **On**.
 
-1. Go back to the Center of Excellence – Audit Logs solution, select **Admin \| Sync Audit Logs* to open the flow details page, and then select **Turn on** for this flow as well.
+1. Go back to the Center of Excellence – Audit Logs solution, select *Admin \| Sync Audit Logs* to open the flow details page, and then select **Turn on** for this flow as well.

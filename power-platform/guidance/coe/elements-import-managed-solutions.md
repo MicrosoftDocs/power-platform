@@ -1,13 +1,14 @@
 ---
-title: "Elements to import to unmanaged solution | MicrosoftDocs"
-description: 
-author: jimholtz
-manager: kvivek
+title: "Import Managed Solutions | MicrosoftDocs"
+description: ""
+author: manuelap-msft
+manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.author: jimholtz
+ms.date: 04/10/2020
+ms.author: mapichle
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -15,4 +16,4 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Elements to import to unmanaged solution
+# Import Managed Solutions
