@@ -1,14 +1,14 @@
 ---
 title: Trials | Microsoft Docs
 description: About trial and trial (subscription-based) environments
-author: jimholtz
-ms.reviewer: 
+author: imadyanni
+ms.author: imadyanni
+ms.reviewer: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/05/2020
-ms.author: jimholtz
+ms.date: 07/08/2020
 search.audienceType: 
   - admin
 search.app: 
@@ -21,6 +21,8 @@ search.app:
 
 Using the Power Platform admin center, you can create four types of Common Data Service environments: sandbox, production, trial, or trial (subscription-based). Trials are useful for trying out model-driven apps in Dynamics 365 at no cost. Choose either a trial (standard) or trial (subscription-based) environment to get started with Dynamics 365 apps.
 
+You can adjust who can create trials through trial environments and subscription licenses.
+
 ## Trial (standard) environments
 
 The trial (standard) environment can be created by non-admin users for personal use. Here's what you should know.
@@ -31,7 +33,7 @@ The trial (standard) environment can be created by non-admin users for personal 
 - Come with 1GB capacity
 - Are a single environment
 - Can't include Dynamics 365 apps
-- Can be created by anyone with a valid subscription license
+- Anyone with a valid subscription license can create
 - Require admins to use PowerShell cmdlets to control creating trial (standard) environments or disabling trial (standard) environments
 
 ## Trial (subscription-based) environments
@@ -42,9 +44,13 @@ The recently introduced trial (subscription-based) environment is suitable for b
 - Are retained for as long as the subscription is valid, no expiration
 - Can be licensed based on your subscription license availability
 - Can include Dynamics 365 apps
-- Have extended lifecycle operations [Jim: need text/examples]
+- Have extended lifecycle operations:
+  - Create and run canvas apps that connect to Common Data Service and other data sources
+  - Create and run model drive apps
+  - Create automated workflows with Power Automate
+  - Extend the capabilities of Office 365
 - Only tenant admins can create
-- Up to 3 environments can be created
+- Can create up to 3 environments
 
 ## Multiple ways to start a trial
 
@@ -54,8 +60,9 @@ The type of trial you create depends on where you start and your tenant-level pe
 |---------|---------|---------|
 |Trial (standard)     |  End user or admin      |  Power Platform admin center. See [Creating a trial (standard) environment in the Power Platform admin center](#creating-a-trial-environment-in-the-power-platform-admin-center)       |
 |Trial (standard)       |  End user or admin         | [https://trials.dynamics.com](https://trials.dynamics.com)     |
-|Trial (subscription-based)      |  End user or admin        | Get started pages such as: <br /> <ul><li>https://dynamics.microsoft.com/en-us/get-started/?appname=salespro</li><br /><li>https://dynamics.microsoft.com/en-us/get-started/?appname=customerservice</li></ul>      |
 |Trial (subscription-based)      | admin        | Power Platform admin center. See [Creating a trial (subscription-based) environment in the Power Platform admin center](#creating-a-trial-subscription-based-environment-in-the-power-platform-admin-center)        |
+|Trial (subscription-based)      |  End user or admin        | Get started pages such as: <br /> <ul><li>[https://dynamics.microsoft.com/get-started/?appname=salespro](https://dynamics.microsoft.com/get-started/?appname=salespro)</li><br /><li>[https://dynamics.microsoft.com/get-started/?appname=customerservice](https://dynamics.microsoft.com/get-started/?appname=customerservice)</li></ul>      |
+
 
 ## Creating a trial (standard) environment in the Power Platform admin center
 
