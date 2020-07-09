@@ -143,10 +143,10 @@ The per app license gives a user access to two Power Apps and one portal for a s
   </tr>
   <tr>
     <td><b>User 2</b></td>
-    <td>App A<</td>
+    <td>App A</td>
     <td>App B</td>
     <td>Portal</td>
-    <td>App A<</td>
+    <td>App A</td>
     <td>App B</td>
     <td>Portal</td>
     <td></td>
@@ -156,7 +156,7 @@ The per app license gives a user access to two Power Apps and one portal for a s
   </tr>
   <tr>
     <td><b>User 3</b></td>
-    <td>App A<</td>
+    <td>App A</td>
     <td>App B</td>
     <td>App C/Portal</td>
     <td></td>
@@ -169,15 +169,15 @@ The per app license gives a user access to two Power Apps and one portal for a s
   </tr>
   <tr>
     <td><b>User 4</b></td>
-    <td>App A<</td>
+    <td>App A</td>
     <td></td>
     <td>Portal</td>
     <td></td>
-    <td>App A<</td>
+    <td>App A</td>
     <td></td>
     <td>Portal</td>
     <td></td>
-    <td>App A<</td>
+    <td>App A</td>
     <td></td>
     <td>Portal</td>
     <td></td>
