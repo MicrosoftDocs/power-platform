@@ -452,8 +452,7 @@ $tenantId = 'tenantId'
     # -------------------------------------------------------------------------------- #
 
 # Login to Azure account, select subscription and tenant Id
-Login-AzureRmAccount
-Set-AzureRmContext -TenantId $tenantId -SubscriptionId $subscriptionId
+connect-azaccount -Tenant $tenantId -Subscription $subscriptionId
 
 # Create new resource group if not exists.
 $rgAvail = Get-AzureRmResourceGroup -Name $resourceGroupName -Location $location -ErrorAction SilentlyContinue
@@ -477,11 +476,11 @@ foreach ($orgId in $organizationIdList.Split(',')) {
 
 # Add or update a secret to key vault.
 $secretValue = ConvertTo-SecureString $connectionString -AsPlainText -Force
-$secret = Set-AzureKeyVaultSecret -VaultName $keyvaultName -Name $secretName -SecretValue $secretValue -Tags $secretTags
+$secret = Set-azKeyVaultSecret -VaultName $keyvaultName -Name $secretName -SecretValue $secretValue -Tags $secretTags
 
 # Authorize application to access key vault.
 $servicePrincipal = 'b861dbcc-a7ef-4219-a005-0e4de4ea7dcf'
-Set-AzureRmKeyVaultAccessPolicy -VaultName $keyvaultName -ServicePrincipalName $servicePrincipal -PermissionsToSecrets get
+set-azkeyvaultaccesspolicy -VaultName $keyvaultName -ServicePrincipalName $servicePrincipal -PermissionsToSecrets get
 
 # Display secret url.
 Write-Host "Connection key vault URL is "$secret.id.TrimEnd($secret.Version)""
