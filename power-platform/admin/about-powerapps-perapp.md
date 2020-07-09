@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/29/2020
+ms.date: 07/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# About Power Apps per app plans 
+# About Power Apps per app plans
 
 Power Apps per app plan allows individual users to run **two applications** and **one portal** for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Power Platform admin center. More information: [Capacity add-ons](capacity-add-on.md).
 
@@ -112,6 +112,17 @@ After completing the first three steps, you can now share apps.
 
 ### Sharing canvas apps
 To share canvas apps, see [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
+
+## Consumption of per app licensing
+
+The per app license gives a user access to two Power Apps and one portal for a single environment. See the table below for an example of the consumption of licenses by the number of applications and the environments used. 
+
+:::image type="content" source="media/per-app-license-consumption.png" alt-text="Per app license consumption example":::
+
+> [!NOTE]
+> Sharing an app with a user consumes the per app capacity. 
+> 
+> The consumption reporting for the per app license is a work in progress. Please check back for more details once the reporting is launched. 
 
 ## FAQ
 
