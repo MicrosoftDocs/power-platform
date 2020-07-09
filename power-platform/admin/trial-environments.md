@@ -134,7 +134,7 @@ Follow these steps to create a trial (subscription-based) environment in the Pow
    |Language     | The default language for this environment.        |
    |URL | The environment name to include in the URL.     |
    |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | Select **Yes** to  display the following setting. Select **No**, to provision an environment with no applications included. [Jim: I need input on this and next setting.] |
+   |Enable Dynamics 365 apps | Select **Yes** to  display the following setting. Select **No**, to provision an environment with no applications included.  |
    |Automatically deploy these apps  | If you selected **Yes** above, select **All enterprise applications** or individual apps to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.  Select  **None** to provision an environment with no applications included.|
    |Security group | Select a security group to restrict access to this environment. |
    |Deploy sample apps and data  | This appears if you select **No** for **Enable Dynamics 365 apps**. Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. |
@@ -168,9 +168,9 @@ A trial (subscription-based) lasts as long as the subscription is active. To det
 
 ## Convert either trial type to production
 
-For a trial environment, if you created resources you want to retain longer than 30 days, convert the trial to a production environment. If you have 1GB of available database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial database exceeds 1GB. To determine the size of the trial database see: [Common Data Service storage capacity](capacity-storage.md).
+For a trial (standard) environment, if you created resources you want to retain longer than 30 days, convert the trial to a production environment. If you have 1GB of available database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial database exceeds 1GB. To determine the size of the trial database see: [Common Data Service storage capacity](capacity-storage.md).
 
-For a trial (subscription-based) environment, you can convert it to production to [Jim: need reason to convert to production].
+For a trial (subscription-based) environment, you can convert it to production to make it generally available to users.
 
 Follow these steps to convert a either trial type to a production environment:
 
