@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Share your bot with other users
 
-You can share your bot with other users. This allows multiple users to edit, manage, and work together on a bot.  
+You can share your bot with other users. This allows multiple users to edit, manage, and work together on a bot. You can stop sharing a bot with individual users, and if you are a **System administrator**, you can assign additional security roles to users when sharing a bot.
 
 >[!NOTE]
 >You don’t need to share a bot with another user for them to chat with the bot.  
@@ -31,115 +31,110 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 
 1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
 
-    ![](media/IMAGE.png)
+    ![Power Virtual Agents bot homepage with the Share button highlighted](media/sharing-homepage.png)
 
 2. Specify the name or email address of the users that you would like to share the bot with.  
 
->[!NOTE]
->You can only share a bot with individual users, which means you can't share it with a security group or distribution group in your organization.  
->You also can't share with users or group outside of your organization.
+    >[!NOTE]
+    >You can only share a bot with individual users, which means you can't share it with a security group or distribution group in your organization.  
+    >You also can't share with users or groups outside of your organization.  
 
 
-    ![Share panel with name input](media/IMAGE.png)
+    ![Screenshot showing name input in the share window](media/sharing-input-invitee.png)
 
-3. Review the user’s permissions.  <--How are the permissions determined? Can you change these? Are they the same for everyone?
+3. Review the user's permissions.
  
-    ![View user’s permission](media/IMAGE.png)
 
+    ![Screenshot showing share window with user permissions](media/sharing-view-permission.png)
 
-4. If you want to let users know you have shared the bot with them, select the **Send an email invitation to new users** check box.
+4. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
 5. Select **Share** to share the bot with the new users.
 
-
+>[!IMPORTANT]
+>It can take up to 10 minutes for the bot to show up in the shared user’s bot list if the user [was not previously part of the environment](#assign-additional-environment-security-roles) of the shared bot.
 
 ### Insufficient environment permissions
 
 
-User in an environment must have Environment maker security role before they can be shared with a bot.  Learn more about [security roles]() and [predefined security roles]().
+Users in the environment must have the **Environment maker** security role before a bot can be shared with them. 
 
-If the specified user does not have sufficient environment permissions, you'll need to contact the system administrator of the environment to assign the *Environment maker* security role to the user before you share the bot.
+![User does not have sufficient permissions](media/sharing-insufficient-permission.png)
+
+**System administrators** of the environment will need to assign the **Environment maker** security role to the user before you share the bot. If you are a **System administrator**, you can [assign the **Environment maker** role when you share the bot](#assign-additional-environment-security-roles).
+
+Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
  
-![User does not have sufficient permissions](media/IMAGE.png)
+
 
 ### Share Power Automate flows used in bot
 You can [add actions to a bot using flows in Power Automate](advanced-flow.md), however flows in a bot are not automatically shared with other users when sharing a bot. 
 
-Users who do not have flow shared with them can continue to run flows by chatting with the bot in the test bot canvas.
+Users who do not have the flow shared with them can continue to run flows by chatting with the bot in the test bot canvas.
 
-If you want to allow other users to edit or add flows in topics you used in the bot, you will need to share it by opening the flow in Power Automate. You can do this directly from the topic where the flow is used in the bot's authoring canvas.
+If you want to allow other users to edit or add flows in topics you used in the bot, you'll need to share the flow by opening it in Power Automate. You can do this directly from the topic where the flow is used in the bot's authoring canvas.
 
-1. Go to the flow detail of flows that are added to the bot’s topic by clicking on view flow details on the flow you used in your topic.
+1. Select **View flow details** to go to the flow's details page in Power Automate.
  
-![](media/IMAGE.png)
+    ![Highlight of the view flow details on a flow in a topic](media/sharing-view-flow-details.png)
 
-2. Select Edit in the Owners section
+2. Select **Edit** in the **Owners** section
  
-![](media/IMAGE.png)
+    ![Select the Edit link](media/sharing-flow-owners.png)
 
 3. Enter the name or email address of the user you want to give editing permissions to.
 
 
 ## Stop sharing a bot
 
-You can stop sharing a bot with user.  
+You can stop sharing a bot with a user, and any shared user can stop the bot from being shared with other users, except for the owner. The owner will always have access to the bot.
 
-Any shared user can stop the bot from being shared with other users, except for the owner. The owner will always have access to the bot.
+1. Sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
 
-1. Select Share button on your bot’s Home in Power Virtual Agents.
-
-2. Select ‘X’ on users that you want to stop sharing the bot with.
+2. Select **X** next to the users that you want to stop sharing the bot with.
  
-    ![remove bot access ‘X’](media/IMAGE.png) 
+    ![Remove bot access ‘X’](media/sharing-remove-user.png) 
 
-3. Select Share to stop sharing the bot with the user
+3. Select **Share** to stop sharing the bot with the user.
 
-## Environment security roles
+## Assign additional environment security roles
 
-If you're a **System administrator**, you can assign and manage additional **Environment maker** security roles when sharing a bot.
+If you're a **System administrator**, you can assign and manage additional security roles when sharing a bot.
+
+The **Environment security roles** section shows when you share a bot and only if  you're a **System administrator**. It lets you share bots with users who do not have sufficient environment permissions to use Power Virtual Agents. 
+
+You must be a **System administrator** of the environment where the bot is located to view and add security roles.
+
+>[!NOTE]
+>For full security role management, [use the Power Platform Admin Center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
+> Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
 
 
+### Assign **Environment maker** security role during bot sharing
 
-### Prerequisites
-You must be a System administrator of the environment where the bot is in to view and add security roles in the bot sharing UI.
-**Note**
-The Environment security roles section in bot sharing UI allows System administrator to share bots with users who do not have sufficient Environment permission to use Power Virtual Agents.  For full security role management experience, please visit Power Platform Admin Center. 
-**Note**
-### Assigning security role during bot sharing
-You can assign a security role to user when sharing a bot with user who does not have sufficient environment permission to run Power Virtual Agents.
-1. Specify the name or email address of the users that you would like to share the bot with.  
-2. If the specified user does not have sufficient permission to use Power Virtual Agents in the environment, a notice bubble will notify you that Environment Maker security role will be assigned to user when sharing the bot.
+You can assign the **Environment maker** security role when sharing a bot with a user who does not have sufficient environment permissions to run Power Virtual Agents.
+
+When [sharing the bot](#share-a-bot), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you will be notified that **Environment maker **security role will be assigned to the user so they can use the bot.
  
-//Screenshot – share panel with permission notice bubble 
-3. Select Share to share the bot with the new users.  
-### Conversation transcript access
-You can assign Bot transcript viewer security role to users who do not have end user conversation transcript access when sharing a bot.  Depending on the content nature and target audience of the bot, you may want to only allow users who have appropriate privacy training to access conversation transcripts. 
-**Important**
-Conversation transcript access is managed by environment security roles.  After assigning Bot transcript viewer security role to user, the user can access conversation transcripts for all bots that they create or are shared with in the environment.  In default environment, every user by default has Bot transcript viewer assigned.  It is recommended to create an environment for bots that controls which user can view conversation transcripts.
-**Important**
-1. Specify the name or email address of the users that you would like to share the bot with.  You can also select a user who has already been shared with.
-2. If the specified user does not have permission to access conversation transcript, you can assign Bot transcript viewer security role when sharing the bot with the user.
+![Share panel with permission notice bubble](media/sharing-input-invitee-no-permission.png)
+
+
+
+### Assign **Bot transcript viewer** security role during bot sharing
+
+You can assign the **Bot transcript viewer** security role to users who do not have conversation transcript access when sharing a bot. 
+
+Depending on the content nature and target audience of the bot, you may want to only allow users who have appropriate privacy training to access conversation transcripts. 
+
+>[!IMPORTANT]
+>Conversation transcript access is managed by environment security roles. After assigning the **Bot transcript viewer** security role to a user, that user can access conversation transcripts for all bots that they create or are shared with in the environment.  
+>In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts.
+
+When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer** role by selecting the check box.
  
-//Screenshot – Assigning Bot transcript viewer security role
-3. Select Share to share the bot with the new user and allow them to access conversation transcript.  
+![Share panel with Bot transcript viewer role selected](media/sharing-assign-transcript-viewer.png)
+
+ 
 ### Manage security roles
-To manage environment security role, go to [Power Platform admin center]().  You can assign, remove, and customize security roles for user.  
-1. Go to Power Platform admin center
-2. Select Environments on the left nav bar
- 
-![](media/IMAGE.png)
+You can [manage environment security roles at the Power Platform admin center](/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-common-data-service-database). 
 
-3. Select the environment that you want to manage security role
-4. Select Settings on the top action bar
-5. Expand User + permissions and select Users
- 
-![](media/IMAGE.png)
-
-6. Select the user that you want to manage security role
-7. Select Manage roles on the top action bar
-8. Assign or remove security roles of the user
- 
-![](media/IMAGE.png)
-
-## Known limitation
-1. It can take up to 10 minutes for the bot to show up in the shared user’s bot list or share the bot with other users if the user was not previously part of the environment of the shared bot
