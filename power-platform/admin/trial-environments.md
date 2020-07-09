@@ -170,7 +170,7 @@ A trial (subscription-based) lasts as long as the subscription is active. To det
 
 For a trial (standard) environment, if you created resources you want to retain longer than 30 days, convert the trial to a production environment. If you have 1GB of available database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial database exceeds 1GB. To determine the size of the trial database see: [Common Data Service storage capacity](capacity-storage.md).
 
-For a trial (subscription-based) environment, you can convert it to production to make it generally available to users.
+For a trial (subscription-based) environment, you can convert it to production to [Jim: need reason to convert to production].
 
 Follow these steps to convert a either trial type to a production environment:
 
