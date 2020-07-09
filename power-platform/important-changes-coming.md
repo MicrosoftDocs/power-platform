@@ -29,7 +29,7 @@ notification can span a few years. After removal, the feature or capability will
 
 Effective July 10, 2020, the [Company News Timeline](https://docs.microsoft.com/dynamics365/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) solution, which delivers relevant news from Bing News about customers and categorizes it in inline when you're looking at customer accounts will be deprecated. Until September 10, 2020, Microsoft will continue to provide support for the feature, but won't release any additional functionality beyond what is already present. September 10, 2020, you will need uninstall the solution which will remove the news widget from the Account record pages. 
 
-1. Remove the solution go to **Advanced settings** and select **Solutions**. 
+1. To remove the solution, go to **Advanced settings** and select **Solutions**. 
 2. Select **CompanyNewsTimeline** and then select **Delete**. 
 
 As an alternative you can install Power Apps company News Component. For more information, see [Install Power Apps Company News Component](link TBD).
