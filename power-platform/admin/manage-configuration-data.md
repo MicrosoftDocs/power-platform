@@ -36,7 +36,7 @@ The Configuration Migration tool enables you to move configuration data across e
 
 - Automatically move DateTime fields forward at import for demo environments.
   
-- Embed the exported modules created from this tool (schema and data files) in other programs. For example, you can use the exported data in Package Deployer along with other solutions files and data to create and deploy packages on a environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy packages using  Package Deployer and Windows PowerShell](../admin/deploy-packages-using-package-deployer-windows-powershell.md)  
+- Embed the exported modules created from this tool (schema and data files) in other programs. For example, you can use the exported data in Package Deployer along with other solutions files and data to create and deploy packages on a environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Deploy packages using  Package Deployer](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer)  
   
 For information on downloading the Configuration Migration tool, see [Download tools from NuGet](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget).
 

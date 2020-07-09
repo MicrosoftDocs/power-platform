@@ -17,11 +17,11 @@ search.app:
 ---
 # Management and monitoring
 
-In this section we will focus on the tools you can use to manage and monitor what is going on in your environments. It is important to understand that each company has its own operational model and requirements around a citizen app development platform. Fulfilling those requirements using the platform capabilities in terms of custom apps or flows can be seen as a best practice.
+This topic focuses on the tools you can use to manage and monitor what is going on in your environments. It is important to understand that each company has its own operational model and requirements around a citizen app development platform. Fulfilling those requirements using the platform capabilities in terms of custom apps or flows can be seen as a best practice.
 
 Out-of-the-box tooling around monitoring, alert, and actions falls into the following three categories:
 
-**Admin portals** offer an interactive experience for performing administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad-hoc interactive discovery. We're working toward a single admin interface ([https://aka.ms/ppac](https://aka.ms/ppac)) for Microsoft Power Platform. Currently, there are admin portals for Microsoft Power Platform components, such as Power BI, Power Automate, and Power Apps. Additionally, some admin tasks are done in the Office 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/))
+**Admin portals** offer an interactive experience for performing administrative tasks. This is typically considered the primary path for completing administrative activities. From a monitoring point of view, this channel is used mostly for ad-hoc interactive discovery. We're working toward a single admin interface ([https://aka.ms/ppac](https://aka.ms/ppac)) for Microsoft Power Platform. Currently, there are admin portals for Microsoft Power Platform components, such as Power BI, Power Automate, and Power Apps. Additionally, some admin tasks are done in the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/))
 
 **PowerShell cmdlets** offer a way to automate both management and monitoring tasks using PowerShell. These cmdlets can be used in a sequence to automate multistep administrative actions. From a roadmap perspective, PowerShell cmdlets will be available first, before enabling administration capabilities, via the web app interface or via the management and admin connectors. Check out [https://www.powershellgallery.com/](https://www.powershellgallery.com/) to get the latest package.
 

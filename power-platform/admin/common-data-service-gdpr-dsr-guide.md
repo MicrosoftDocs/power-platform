@@ -92,13 +92,13 @@ From the [Power Apps Admin center](https://admin.powerapps.com/), do the followi
 
 1. In the navigation pane, click or tap **Environments**, and then select an environment from the list.
 
-3.    Click or tap **Dynamics 365 Administration Center**.
+3. Click or tap **Dynamics 365 Administration Center**.
 
-    ![Power Apps Environment Details](./media/common-data-service-gdpr-dsr-guide/powerapps-environment-details.png)
+   ![Power Apps Environment Details](./media/common-data-service-gdpr-dsr-guide/powerapps-environment-details.png)
 
-    A list of all the environments displays.
+   A list of all the environments displays.
 
-    ![Power Apps environment Picker](./media/common-data-service-gdpr-dsr-guide/powerapps-instance-picker.png)
+   ![Power Apps environment Picker](./media/common-data-service-gdpr-dsr-guide/powerapps-instance-picker.png)
 
 You can find personal data from Common Data Service users within the following resources:
 
@@ -108,7 +108,7 @@ You can find personal data from Common Data Service users within the following r
 | Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at an entity level. | [Power Apps Admin center](https://admin.powerapps.com) | Through the [Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### User
-User personal data is stored in the Azure Active Directory and is automatically synced to all Common Data Service environments. System administrators cannot update this personal data directly in Common Data Service while the user is active&mdash;they must update the data from within the Office 365 Administration Center. System administrators can add personal data (for example, custom attributes) directly to Common Data Service, but they must manually manage this data.
+User personal data is stored in the Azure Active Directory and is automatically synced to all Common Data Service environments. System administrators cannot update this personal data directly in Common Data Service while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Common Data Service, but they must manually manage this data.
 
 To find a user and his or her personal data, go to the [Power Apps Admin center](https://admin.powerapps.com/) and do the following:
 

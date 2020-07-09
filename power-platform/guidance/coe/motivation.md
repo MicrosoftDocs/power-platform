@@ -18,7 +18,7 @@ search.app:
 ---
 # What is a Center of Excellence?
 
-Establishing a Power Platform Center of Excellence (CoE) means investing in and nurturing organic growth while maintaining governance and control. A CoE is designed to drive innovation and improvement, and as a central function it can break down geographic and organizational silos to bring together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization. In summary, a CoE can be a powerful way for an organization to align around business goals rather than individual department metrics.
+Establishing a Microsoft Power Platform Center of Excellence (CoE) means investing in and nurturing organic growth while maintaining governance and control. A CoE is designed to drive innovation and improvement, and as a central function it can break down geographic and organizational silos to bring together like-minded people with similar business goals to share knowledge and success, while at the same time providing standards, consistency, and governance to the organization. In summary, a CoE can be a powerful way for an organization to align around business goals rather than individual department metrics.
 
 A key principle is to clarify why you're setting up a CoE, what you aim to accomplish, and the key business outcomes you hope to achieve. Then get started, and learn and evolve along the way. For many, the CoE is the first step in fostering greater creativity and innovation across the organization by empowering business units to digitize and automate their business processes, while maintaining the necessary level of central oversight and governance.
 
@@ -26,7 +26,7 @@ The CoE Starter Kit is a template that might not match every organization's requ
 
 ## Admin tools available to you
 
-A Power Platform CoE takes ownership of Power Platform administration, nurturing, and operations support. To do that, you'll need to use the administrative functions in Power Platform.
+A Microsoft Power Platform CoE takes ownership of Microsoft Power Platform administration, nurturing, and operations support. To do that, you'll need to use the administrative functions in Microsoft Power Platform.
 
 Admin and governance tools fall into three broad categories:
 

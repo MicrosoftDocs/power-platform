@@ -80,8 +80,8 @@ If you create an email message in model-driven apps in Dynamics 365, such as Dyn
   
    - If the user's mailbox record is configured to use server-side synchronization for outgoing email, verify the user's email address is approved and is also tested and enabled.  For more information about configuring server-side synchronization, see [Set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md).  
   
-### Email address requires approval by Office 365 administrator  
- **Alert:** Email cannot be sent/received because the email address of the mailbox \<User Name> requires an approval by an Office 365 administrator. The mailbox has been disabled for sending/receiving email and the owner of the email server profile Exchange Online has been notified.  
+### Email address requires approval by Microsoft 365 administrator  
+ **Alert:** Email cannot be sent/received because the email address of the mailbox \<User Name> requires an approval by an Microsoft 365 administrator. The mailbox has been disabled for sending/receiving email and the owner of the email server profile Exchange Online has been notified.  
   
  **Cause:**  
   

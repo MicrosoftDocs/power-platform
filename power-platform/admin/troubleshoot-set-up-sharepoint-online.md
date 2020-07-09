@@ -91,7 +91,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 17. Make the changes as indicated below for the layoutxml section:
 
-    ```
+    ```xml
     <layoutxml>
      <grid name="sharepointdocument" object="9507" jump="fullname" select="1" icon="0" preview="1">
       <row name="sharepointdocument" id="sharepointdocumentid">
@@ -122,7 +122,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 18. Make the changes as below for the FetchXml section:
 
-    ```
+    ```xml
     <fetch distinct="false" mapping="logical">
       <entity name="sharepointdocument">
         <attribute name="documentid" />
@@ -161,7 +161,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 22. Make the changes as indicated below for the layoutxml section:
 
-    ```
+    ```xml
     <layoutxml>
       <grid name="sharepointdocument" jump="fullname" select="1" icon="0" preview="1">
         <row name="sharepointdocument" id="sharepointdocumentid">
@@ -188,7 +188,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 23. Make the changes as below for the FetchXml section:
 
-    ```
+    ```xml
     <fetch distinct="false" mapping="logical">
       <entity name="sharepointdocument">
         <attribute name="documentid" />
@@ -226,7 +226,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 27. Make the changes as indicated below for the layoutxml section:
 
-    ```
+    ```xml
     <layoutxml>
       <grid name="sharepointdocument" jump="fullname" select="1" icon="0" preview="1">
         <row name="sharepointdocument" id="sharepointdocumentid">
@@ -251,7 +251,7 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 
 28. Make the changes as below for the FetchXml section:
 
-    ```
+    ```xml
     <fetch distinct="false" mapping="logical">
       <entity name="sharepointdocument">
         <attribute name="documentid" />

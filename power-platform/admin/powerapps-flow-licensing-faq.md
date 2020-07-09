@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -85,7 +85,7 @@ You can buy additional data storage, file storage and flow runs. See the Power A
 
 ### Who can buy Microsoft Power Apps and Power Automate plans?
 
-Any customer can sign up for a free trial. Office 365 admins can buy Power Apps plans for their teams or organization. Contact your Office 365 admin when you’re ready to buy.
+Any customer can sign up for a free trial. Microsoft 365 admins can buy Power Apps plans for their teams or organization. Contact your Microsoft 365 admin when you’re ready to buy.
 
 ### Do all my users need to be licensed with the same Power Apps plan, or can I mix plans?
 
@@ -121,13 +121,13 @@ More information is available [here](/power-platform/admin/trial-environments).
 
 For more information about trial environments in Power Apps read this [topic](/power-platform/admin/trial-environments).
 
-## Office 365
+## Microsoft 365
 
-### What are Microsoft Power Apps and Power Automate use rights for Office 365 applications?
+### What are Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications?
 
-Please refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Office 365 applications.
+Please refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
 
-Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed below will be reclassified from Standard to Premium. Non-Microsoft connectors that had previously been classified as standard connectors will still be available to Office 365 users. A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors.
+Effective October 1, 2019, the SQL, Azure, and Dynamics 365 connectors listed below will be reclassified from Standard to Premium. Non-Microsoft connectors that had previously been classified as standard connectors will still be available to Microsoft 365 users. A standalone Power Apps or Power Automate plan license is required to access all Premium, on-premises and custom connectors.
 
 Azure Application Insights  
 Azure Automation  
@@ -164,21 +164,25 @@ Power Automate plan-based limits on trigger frequency and the number of runs all
 
 Power Apps and Power Automate usage will be subject to service limits described [here](https://aka.ms/platformlimits). Per user service limits provide capacity assurance for users and alleviate the risk of one user exhausting the tenant wide quota.
 
-### How does the change to Power Apps and Power Automate use rights for Office 365 applications affect me if I purchased the subscriptions prior to Oct 1st 2019? Will my existing Power Apps applications and Power Automate workflows continue to work?
+### How does the change to Power Apps and Power Automate use rights for Microsoft 365 applications affect me if I purchased the subscriptions prior to Oct 1st 2019? Will my existing Power Apps applications and Power Automate workflows continue to work?
 
-Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Office 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Office 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.
+Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020 or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period customers can continue to create additional apps and flows using these connectors.
 
 In addition, apps and flows created prior to October 1, 2019 which are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors.
 
-### How many Power Apps applications I can run with Office 365 plans?
+The extended transition period allows for using the connectors listed above but it does not allow these connectors to use gateways. Gateways were a premium capability before the transition and they continue to be a premium capabilty.
 
-There is no limit on the number of applications. Customers can continue to run standalone Power Apps applications to extend and customize Office 365 using standard connectors. 
+Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector does not provide Common Data Service capacity. Common Data Service capacity is a prerequisite for Power Apps and Power Automate workflows to use Common Data Service. 
+
+### How many Power Apps applications I can run with Microsoft 365 plans?
+
+There is no limit on the number of applications. Customers can continue to run standalone Power Apps applications to extend and customize Microsoft 365 using standard connectors. 
 
 ## Dynamics 365
 
 ### What are Microsoft Power Apps and Power Automate use rights for Dynamics 365 applications?
 
-Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Office 365 applications.
+Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for Microsoft Power Apps and Power Automate use rights for Microsoft 365 applications.
 
 Effective October 1st 2019, there are certain changes made to use rights which are listed below:
 
@@ -199,7 +203,7 @@ The per user plan is intended to support the broad adoption of an automation cul
 
 ### Which flows count in the Power Automate per flow plan?**
 
-All types of enabled flows count: scheduled flows, automated flows, instant flows and business process flows. Flows that are triggered by another flow (child flows) or that are disabled will not count against the plan.
+All types of enabled flows count: scheduled flows, automated flows, and instant flows. Flows that are triggered by other flows (child flows) do not count against the plan.
 
 ### Do flows always have to be purchased in units of five as part of the Power Automate per flow plan?
 
@@ -264,7 +268,7 @@ Power Apps Portals can be provisioned without requiring a specific license. User
 |-------------------------------|---------------|---------------------------------------------------------------------|--------------------|-----------------|-------------|-------------------------------------------------------------------------------------------|
 | External user (authenticated) | Per login     | Power Apps portals login capacity add-on                             | 100 logins         | $200           | All         | A login provides the authenticated user with access to a single portal for up to 24 hours |
 |                               |               | Power Apps portals login capacity add-on Tier 2                      | 1000 logins        | $1000          | All         |                                                                                           |
-|                               |               | Power Apps portals login capacity add-on Tier 2                      | 5000 logins        | $3500          | CSP only    |                                                                                           |
+|                               |               | Power Apps portals login capacity add-on Tier 3                      | 5000 logins        | $3500          | CSP only    |                                                                                           |
 | External user (anonymous) | Per page view | Power Apps portals page view capacity add-on                         | 100,000 page views | $100           | All         |                                                                                           |
 | Internal user                 | Via license   | Dynamics 365 (various)                                              | n/a                | n/a             | n/a         | Custom portal use rights are aligned with custom app use rights                           |
 |                               |               | Power Apps per app plan                                              |                    |                 |             |                                                                                           |
@@ -306,8 +310,6 @@ Custom Power Apps Portals use rights: For internal users, use rights to a “cus
 ### What is the minimum number of logins and page view that I need to assign to a specific portal?**
 
 Minimum login quantity to be assigned to a portal is 100 logins/month. Once you have assigned 100 logins, you can assign them in units of 1.
-
-Example: If you have 3 portals and bought 4 login packs (400 logins). You can assign them in the following way:
 
 For example, if you have 3 portals and bought 4 login packs (400 logins), you can assign them in the following ways:
 - Portal 1: 120 (min 100)

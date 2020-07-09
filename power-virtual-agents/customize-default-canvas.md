@@ -2,14 +2,14 @@
 title: "Customize the Power Virtual Agents web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: ""
-ms.date: 4/15/2020
+ms.date: 6/10/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "customization"
+ms.custom: "customization, ce06102020"
 ms.collection: virtualagent
 ---
 
@@ -29,10 +29,16 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 2. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
 
+You can also combine the customized canvas with [configuring your bot to automatically start the conversation](configure-bot-greeting.md).
+
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+>[!IMPORTANT]
+>You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents service. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
+>Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 ## Retrieve bot ID and tenant ID details
 
@@ -48,8 +54,8 @@ First, you need to configure where you're deploying your bot canvas.
 
 1.	[Create and publish a bot](fundamentals-get-started.md).
 
-2.	Copy-paste the HTML code below and save it as *index.html*.
-    You can also cut and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
+2.	Copy and paste the HTML code below and save it as *index.html*.  
+    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
 
     ```HTML
     <!DOCTYPE html>
@@ -145,10 +151,10 @@ First, you need to configure where you're deploying your bot canvas.
 
 4.	In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
 
-5.	Open *index.html* using a modern browser (for example, Edge) to open the bot in the custom canvas.
+5.	Open *index.html* using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
 
 6.	Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that your Bot Id has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
+    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (")._
 
 ### Customize the bot icon, background color, and name
 
@@ -162,7 +168,7 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
 **To change the bot icon**
 
-1. Update the *index.html* file with the following sample code
+1. Update the *index.html* file with the following sample code. 
 
     ```js
 
@@ -196,17 +202,18 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
 
 **To change the bot name**
 
-1. Update the `<h1>` text in the *index.html* file with the following.
+1. Update the `<h1>` text in the *index.html* file with the following. 
 
     ```HTML
     <body>
-        <div id="chatwindow">
-            <div id="heading">
-                             <!-- Change the h1 text to change the bot name -->
-                <h1><img src="images/robot-create-illustration.svg"> Contoso Bot Name</h1>
-            </div>
+        <div id="heading">
+             <!-- Change the h1 text to change the bot name -->
+             <h1><img src="contosobot.png"> Contoso Bot Name</h1>
+        </div>
 
     ```
+
+2. Change the text to whatever you want to call the bot. You can also insert an image, although you may need to style it to ensure it fits within the heading section.
 
 ## Customize and host your chat canvas (advanced)
 

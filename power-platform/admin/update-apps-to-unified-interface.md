@@ -22,7 +22,7 @@ When you enable Unified Interface Only, all your apps, including those designed 
 "You are using apps designed for the legacy web client. For best results, update your apps to Unified Interface."
 
 > [!div class="mx-imgBorder"] 
-> ![Message: using apps designed for legacy web client](media/message-using-app-legacy-web-client.png "Message: using apps designed for legacy web client")
+> ![Message: using apps for legacy web client](media/message-using-app-legacy-web-client.png "Message: using apps for legacy web client")
 
 A similar notification will be visible to System Administrators whenever they use an app designed for the legacy web client, as shown below:
 

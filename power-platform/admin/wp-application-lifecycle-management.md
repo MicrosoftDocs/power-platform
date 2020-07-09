@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/03/2020
+ms.date: 05/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,6 +19,9 @@ search.app:
 # Application lifecycle management
 
 Application lifecycle management (ALM) is important as the applications your organization builds become more complex and as more of your company depends on their stability. In this topic we discuss using ALM to handle more complex scenarios.
+
+> [!NOTE]
+> Check out our new [application lifecycle management (ALM) guide for Power Platform](/power-platform/alm)!
 
 ALM is not a one-size-fits-all concept. It can vary from organization to organization and even within, based on the type of solution being built. If you were to look at a typical mission-critical solution, the following would be a good health check of your current Power Platform ALM maturity:
 
@@ -34,7 +37,7 @@ ALM is not a one-size-fits-all concept. It can vary from organization to organiz
 
   Solution Packager is also how you take individual files from source control and repackage them for managed solution deployment to other environments like test and production.
 - **Can you service (bug fix) production while working on your next version?** A key concept of a healthy ALM practice is not making changes in test or production. By having a good source control and environment strategy, you can ensure your dev–test–production release pipeline stays viable even while you are working on the next version.
-- **Do you have automated ALM?** While all of the above can be done manually, having an automated, repeatable process is ideal. Using the tooling like Power Apps build tools (which we will discuss later) with Azure DevOps, much of the ALM process, including the approvals, can be automated to progress through the release pipeline.
+- **Do you have automated ALM?** While all of the above can be done manually, having an automated, repeatable process is ideal. Using the tooling like Microsoft Power Platform Build Tools (which we will discuss later) with Azure DevOps, much of the ALM process, including the approvals, can be automated to progress through the release pipeline.
 
 Use the above ALM health check to measure where you are in your goal of having healthy ALM practices for your solutions.
 
