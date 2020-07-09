@@ -30,7 +30,7 @@ Here's a breakdown of the assets that form the governance components:
   - [Business Process Flow for Auditing resources](#business-process-flow)
 
 - Archive unused apps
-  - [App Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
+  - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
   - [App Archive and Clean Up View (model-driven app)](#apps)
 
 - Take action based on certain connector usage
@@ -76,9 +76,30 @@ Monitors approval responses of the App Archive and Clean Up – Start Approval f
 
 **Prerequisite**: Create a SharePoint document library to store the archived apps, and configure this in the environment variables.
 
-**Customize**: By default, this flow will archive the application but not remove it or its permission from the environment, so that we don't inadvertently remove apps from your tenant. Update this flow based on your requirements, to delete the app from the environment or remove app permissions.
+**Customize**: By default, this flow will archive the application but not remove it or its permission from the environment, so that we don't inadvertently remove apps from your tenant. Update the [**Auto Delete On** Archive environmental variable](setup-governance-components.md#update-environment-variables) to also delete the app.
+
+### Admin \| Flow archive and clean up – Start Approval
+
+The same as the above flow but for flows instead of apps. 
+
+Checks for flows that haven't been modified in the last six months (configurable) and asks the flow owner (via flow approvals) if the flow can be archived.
+
+This flow starts the approval process and writes the approval task to the Archive Approval Common Data Service entity.
+
+### Admin \| Flow archive and clean up – Check Approval
+
+The same as the above flow but for flows instead of apps. 
+
+Monitors approval responses of the Flow Archive and Clean Up – Start Approval flow and, if approved, archives the flow files to SharePoint. It archives two files per flow, one with the flow content, the other with the flow connections.
+
+**Prerequisite**: The same SharePoint document library as used to  store the archived apps can be use to store archived flows.
+
+**Customize**: By default, this flow will archive the flow but not remove it or its permission from the environment, so that we don't inadvertently remove flows from your tenant. Update the [**Auto Delete On** Archive environmental variable](setup-governance-components.md#update-environment-variables) to also delete the flow.
 
 ### SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
+
+> [!NOTE]
+> Are you aware of the [Data Loss Prevention Policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#the-effect-of-the-blocked-data-group) feature to block connectors. Connectors that are blocked can't be used by either flow or app makers. You might want to consider blocking the connector instead of having a reactive flow setup to discover its usage.
 
 Checks whether any flows are using specific connectors, notifies the flow maker, and then disables the flow. The admin will receive a report.
 
@@ -89,6 +110,9 @@ Checks whether any flows are using specific connectors, notifies the flow maker,
 ![The Flow owner receives an email notifying them of the unauthorized connector usage](media/coe60.png "The Flow owner receives an email notifying them of the unauthorized connector usage")
 
 ### SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors
+
+> [!NOTE]
+> Are you aware of the [Data Loss Prevention Policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#the-effect-of-the-blocked-data-group) feature to block connectors. Connectors that are blocked can't be used by either flow or app makers. You might want to consider blocking the connector instead of having a reactive flow setup to discover its usage.
 
 Checks for apps that use certain connectors, notifies the app maker, and shares the app with the admin security group.
 

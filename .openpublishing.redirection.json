@@ -1,6 +1,31 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/alm/environment-and-tenant-migration.md",
+      "redirect_url": "https://docs.microsoft.com/powerapps/maker/common-data-service/export-solutions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/admin-centers.md",
+      "redirect_url": "wp-work-with-admin-portals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/wp-powerapps-platform-overview.md",
+      "redirect_url": "https://docs.microsoft.com/powerapps/powerapps-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/wp-deployment-scenarios.md",
+      "redirect_url": "../alm/implement-healthy-alm",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/introduction-to-data-groups.md",
+      "redirect_url": "wp-data-loss-prevention",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/preview-october-2019-updates.md",
       "redirect_url": "opt-in-early-access-updates",
       "redirect_document_id": "false"

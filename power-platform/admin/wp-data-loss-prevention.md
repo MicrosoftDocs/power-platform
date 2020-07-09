@@ -1,12 +1,12 @@
 ---
 title: "Data loss prevention policies  | MicrosoftDocs"
-description: About Data loss prevention policies.
+description: About data loss prevention (DLP) policies.
 author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 06/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,137 +17,364 @@ search.app:
 ---
 # Data loss prevention policies
 
-Your organization's data is likely one of the most important assets you are responsible for safeguarding as an administrator. The ability to build apps and automation that uses the data allows your company to be successful. Power Apps and Power Automate allow rapid build and rollout of these high-value applications that allow users to measure and act on the data in real time. Applications and automation are increasingly becoming more connected across multiple data sources and multiple services. Some of these services might be external third-party services and might even include some social networks. Users will often have good intentions but might overlook the potential for exposure from data leakage to services and audiences that shouldn't have access to the data.
+Your organization's data is likely one of the most important assets you're responsible for safeguarding as an administrator. The ability to build apps and automation to use that data are a large part of your company's success. You can use Power Apps and Power Automate for rapid build and rollout of these high-value apps so that users can measure and act on the data in real time.Apps and automation are becoming increasingly connected across multiple data sources and multiple services. Some of these might be external, third-party services and might even include some social networks. Users generally have good intentions, but they can easily overlook the potential for exposure from data leakage to services and audiences that shouldn't have access to the data.
 
-Data loss prevention (DLP) policies that help protect organizational data from unintended exposure are available for administrators to create. They can act as guardrails to help prevent users from unintentionally exposing the data. DLP policies can be scoped at the environment and tenant level offering flexibility to craft policies that are sensible and do not block high productivity.
+You can create data loss prevention (DLP) policies that can act as guardrails to help prevent users from unintentionally exposing organizational data. DLP policies can be scoped at the environment level or tenant level, offering flexibility to craft sensible policies that strike the right balance between protection and productivity. For tenant-level policies you can define the scope to be all environments, selected environments, or all environments except ones you specifically exclude. Environment-level policies can be defined for one environment at a time. 
 
-DLP policies enforce rules of what connectors can be used together by classifying connectors as either Business data only or No business data allowed. Simply, if you put a connector in the Business data only group, it can only be used with other connectors from that group in the same app. Keep reading and we will cover some scenarios for using this later in this section.
+DLP policies enforce rules for which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in any given app or flow. Sometimes you might want to block the usage of certain connectors altogether by classifying them as **Blocked**.
 
-## What policies do we already have?
+DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). They affect Power Platform canvas apps and Power Automate flows. To create a DLP policy, you need to be a [tenant admin](use-service-admin-role-manage-tenant.md) or have the [Environment Admin role](environments-overview.md#environment-permissions). 
 
-From the Power Apps admin center (admin.powerapps.com) you can see the current policies you have in place in your tenant. This should be your first stop as a new administrator to understand what is currently active.
+> [!NOTE]
+> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
+
+## Connector classification
+
+Data groups are a simple way to categorize connectors within a DLP policy. The three data groups available are the **Business** data group, the **Non-Business** data group, and the **Blocked** data group. 
+
+A good way to categorize connectors is to place them in groups based on the business centered or personal-use centered services that they connect to in the context of your organization. Connectors that host business-use data should be classified as **Business** and connectors that host personal-use data should be classified as **Non-Business**. Any connectors that you want to restrict usage of across one or more environments should be classified as **Blocked**.
+
+When a new policy is created, by default all connectors are placed in the **Non-Business** group. From there they can be moved to **Business** or **Blocked** based on your preference. You manage the connectors in a data group when you create or modify the properties of a DLP policy from the admin center. See [Create a data loss prevention (DLP) policy](create-dlp-policy.md). You can also change the initial classification of connectors by editing your DLP policy. See [Edit a DLP policy](prevent-data-loss.md#edit-a-dlp-policy).
+
+> [!NOTE]
+> Until recently, some HTTP connectors weren't readily available for DLP policy configuration by using the DLP policy UI or PowerShell. As of May 2020, the following HTTP connectors can now be classified by using the DLP policy UI and PowerShell, like any other Power Platform connector: **HTTP**, **HTTP Webhook**, and **When a HTTP request is received**. If legacy DLP policies are being updated using the new DLP UI, a warning message will be displayed to admins indicating that these three HTTP connectors are now being added to the DLP purview and that they should ensure that these connectors are placed in the right DLP grouping.
+>
+> The **Content Conversion** connector is an integral feature of Power Platform, used to convert an HTML document to plain text. It applies both to **Business** and **Non-Business** scenarios and doesn't store any data context of the content converted through it; therefore, it's not available for classification through DLP policies.
+
+### How data is shared among data groups
+
+Data can't be shared among connectors that are located in different groups. For example, if you place SharePoint and Salesforce connectors in the **Business** group and you place Gmail in the **Non-Business** group, makers can't create an app or flow that uses both the SharePoint and Gmail connectors. This in turn restricts data flows between these two services in Power Platform. 
+
+Although data can't be shared among services in different groups, it can be shared among services within a specific group. From the earlier example, because SharePoint and Salesforce were placed in the same data group, makers can create an app or flow that uses both SharePoint and Salesforce connectors together. This in turn allows data flows between these two services in Power Platform.
+
+The key point is that connectors in the same group can share data in Power Platform, whereas connectors in different groups can't share data.
+
+### The effect of the Blocked data group
+
+Data flow to a specific service can be blocked altogether by marking that connector as **Blocked**. For example, if you place Facebook in the **Blocked** group, makers can't create an app or flow that uses the Facebook connector. This in turn restricts data flows to this service in Power Platform. 
+
+All third-party connectors can be blocked. All Microsoft-owned premium connectors (except Common Data Service) can be blocked.
+
+### List of connectors that can't be blocked<a name="list-of-connectors-that-cannot-be-blocked"></a>
+
+Standard licensed connectors, where the service is owned by Microsoft, can't be classified as **Blocked** through DLP policies. They can be classified into **Business** or **Non-Business** data groups. These connectors broadly fall into following categories:
+
+1.	Enterprise-class Microsoft 365 suite of services with no additional licensing implications. 
+2.	Power Platform&ndash;specific connectors that are part of the base platform capabilities.
+3.	Private use&ndash;only Microsoft connectors, such as Outlook.com. These connectors don't support corporate sign-ins, they only support Microsoft account sign-ins. We recommend that you classify these connectors in the **Non-Business** category.
+4.	Other standard Microsoft services, such as Bing Search and Microsoft Translator. The privacy policy statement for Microsoft-hosted services can be found [here](https://privacy.microsoft.com).
+5.	Common Data Service connectors. These are the only premium connectors that can't be blocked, because Common Data Service is an integral part of Power Platform.
+
+The following connectors can't be blocked by using DLP policies.
+
+<table style="width:100%">
+<tr>
+<th>Business use<br />Office connectors (standard)</th>
+<th>Power Platform connectors (standard)</th>
+<th>Personal use<br /> Office connectors (standard)</th>
+<th>Other Microsoft connectors (standard)</th>
+<th>Exception for premium connectors</th>
+</tr>
+<tr>
+<td width="20%"> Excel Online (Business) </td>
+<td width="20%"> Approvals</td>
+<td width="20%"> Excel </td>
+<td width="20%"> Azure AD</td>
+<td width="20%"> Common Data Service</td>
+</tr>
+<tr>
+<td width="20%"> Microsoft Forms </td>
+<td width="20%"> Notifications</td>
+<td width="20%"> Excel Online (OneDrive) </td>
+<td width="20%"> Bing Maps</td>
+<td width="20%"> Common Data Service<br /> (current environment)</td>
+</tr>
+<tr>
+<td width="20%"> Microsoft Forms Pro </td>
+<td width="20%"> Power Apps for Admins </td>
+<td width="20%"> OneDrive  </td>
+<td width="20%"> Bing Search</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Microsoft Teams </td>
+<td width="20%"> Power Apps for Makers</td>
+<td width="20%"> Outlook.com </td>
+<td width="20%"> Cloud App Security</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Microsoft To-Do (Business) </td>
+<td width="20%"> Power Apps Notification</td>
+<td width="20%">  </td>
+<td width="20%"> Computer Vision API</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Microsoft 365 Groups </td>
+<td width="20%"> Power Automate for Admins</td>
+<td width="20%">  </td>
+<td width="20%"> Content Conversion</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Microsoft 365 Outlook </td>
+<td width="20%"> Power Automate Management</td>
+<td width="20%">  </td>
+<td width="20%"> Content Moderate</td>
+<td width="20%"> </td>
+</tr>
+<tr> 
+<td width="20%"> Microsoft 365 Users </td>
+<td width="20%"> Power BI</td>
+<td width="20%">  </td>
+<td width="20%"> Custom Vision</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Microsoft 365 Video </td>
+<td width="20%"> Power Platform for Admins</td>
+<td width="20%">  </td>
+<td width="20%"> Face API</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> OneDrive for Business </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Form Recognizer</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> OneNote (Business) </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> GitHub</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Outlook Customer Manager </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> LinkedIn V2</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Outlook Tasks </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> LUIS</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Planner </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Microsoft Kaizala</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Project Online </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Microsoft School Data Sync</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> SharePoint </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Microsoft Translator</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%"> Skype for Business Online </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> MSN Weather</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> QnA Maker</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Text Analytics</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Video Indexer (V2)</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Wunderlist</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Yammer</td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> LinkedIn </td>
+<td width="20%"> </td>
+</tr>
+<tr>
+<td width="20%">  </td>
+<td width="20%"> </td>
+<td width="20%">  </td>
+<td width="20%"> Microsoft StaffHub</td>
+<td width="20%"> </td>
+</tr>
+</table>
+
+### Custom connector classification
+
+By default, custom connectors aren't part of the standard configuration capabilities of DLP policies in the Power Platform admin center. However, you can use DLP policy PowerShell commands to set them up into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data Loss Prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) 
+
+Unlike standard and premium connectors, which are available to all environments in the tenant, custom connectors are scoped specifically to an individual environment. Therefore, you can't use tenant-level DLP policies to manipulate custom connectors, you must use environment-level DLP policies. By using PowerShell, you can configure DLP policy to include these connectors. After they're added, they can then be managed in the admin center.
+
+> [!NOTE]
+> Only custom connectors that are stored in a tenant's default environment will be displayed with their associated icon and display name in the policy editor. All other custom connectors will be displayed with the default connector icon and their internal name.
+
+### Default data group for new connectors
+
+One data group must be designated as the default group to automatically classify any new connectors added to Power Platform after your policy has been created. Initially, the **Non-Business** group is the default group for new connectors and all services. You can [change the default data group](prevent-data-loss.md#change-the-default-data-group) to the **Business** or **Blocked** data group, but we don't recommend that you do so.
+
+Any new services that are added to Power Apps will be placed in the designated default group. For this reason, we recommend you keep **Non-Business** as the default group and manually add services into the **Business** or **Blocked** group after your organization has evaluated the impact of allowing business data to be shared with the new service.
+
+> [!NOTE]
+> Microsoft-owned standard connectors are exempt from being marked as **Blocked** and can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and if you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
+
+## Policy scope
+
+DLP policies can be created at both the tenant and environment level. Tenant admins have the permissions to create tenant-level policies; environment admins have the permissions to create environment-level policies.
+
+### Tenant-level policies
+
+Tenant admins can define three types of scopes for tenant-level data policies: 
+
+Option 1: Apply to all environments<br>
+Option 2: Apply to multiple environments (but not all)<br>
+Option 3: Apply to all environments except certain specifically excluded ones
+
+It's typical for tenant admins to define DLP policies for their entire tenant but exclude certain environments, as described in option 3. For the excluded environments, tenant admins can define alternate DLP policies and apply them to multiple environments, as described in option 2. Option 1 is for DLP policy rules that must apply across the entire tenant, without exception.
+
+Tenant admins can define more than one multiple-tenant&ndash;level policy for the environments in their tenant. These policies can be set for mutually exclusive or overlapping environment scopes.
+
+### Environment-level policies
+
+Environment admins can define environment-level data policies for one environment at a time. Environment admins can't exclude their environments from tenant-level policies. Therefore, all the restrictions defined by the tenant admins scoped for their environment still apply, in addition to any environment-level policy that they have individually defined for their environment. 
+
+As is true of tenant admins with tenant-level policies, environment admins can define more than one environment-level policy for their environment.
+
+Even though environment admins might manage more than one environment, they can't include more than one environment in the environment-level policy. They must define individual environment-level policies for each environment that they manage. 
+
+## Combined effect of multiple DLP policies
+
+As tenant or environment admins, you can create more than one DLP policy and apply it to the same environment. At design and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of DLP policies.
+
+### Blocked classification impact across multiple policies
+
+If any policy (tenant-level and/or environment-level) that's applicable to an environment marks a connector as **Blocked**, no app or flow can use that connector in the environment. It doesn't matter whether any other policy classifies that connector as **Business** or **Non-Business**, because **Blocked** is the most restrictive classification for the connector; therefore, **Blocked** is always the final outcome of multiple policy evaluations. 
+
+### Business/Non-Business classification impact across multiple policies
+
+Compared to evaluating the effect of the **Blocked** classification, evaluating the effect of the **Business** or **Non-Business** classification across multiple policies is more complex. You can can classify a given connector, such as SharePoint, as **Business** in policy A and as **Non-Business** in policy B. What matters is what other connectors SharePoint is grouped with across policy A and policy B. 
+
+Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across ten connectors (SharePoint, Twitter, Salesforce, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob Storage, and Box). These connectors are classified as **Business** or **Non-Business** as represented by two categories each across the three policies (-E1-, -E2-, -E3-, -E4-, -E5-, and -E6-).
+
+**Policy A** <br />
+-E1- **Business** – SharePoint, Twitter, Salesforce, Microsoft 365 Outlook, Basecamp 3 <br />
+-E2- **Non-Business** – Facebook, Face API, Adobe Sign, Azure Blob Storage, Box
+
+**Policy B** <br />
+-E3- **Business**  – SharePoint, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3 <br />
+-E4- **Non-Business** – Twitter, Salesforce, Adobe Sign, Azure Blob Storage, Box
+
+**Policy C** <br />
+-E5- **Business**  – Facebook, Face API, Twitter, Salesforce, Microsoft 365 Outlook <br />
+-E6- **Non-Business** – SharePoint, Adobe Sign, Azure Blob Storage, Box, Basecamp 3
+
+When all three policies are applied together to the same environment, the net result is fragmentation of connectors across eight (2<sup>3</sup> = 8) groups, as depicted below. Only connectors in the same group (out of eight possible combinations) can be used in a given app or flow. 
+
+**Consolidated grouping** <br />
+-E1-, -E3-, -E5- Group 1 – Microsoft 365 Outlook <br />
+-E1-, -E3-, -E6- Group 2 – SharePoint, Basecamp 3 <br />
+-E1-, -E4-, -E5- Group 3 – Twitter, Salesforce <br />
+-E1-, -E4-, -E6- Group 4 – NULL <br />
+-E2-, -E3-, -E5- Group 5 – Facebook, Face API <br />
+-E2-, -E3-, -E6- Group 6 – NULL <br />
+-E2-, -E4-, -E5- Group 7 – NULL <br />
+-E2-, -E4-, -E6- Group 8 – Adobe Sign, Azure Blob Storage, Box
+
+To summarize: an app or flow can only use connectors from these individual groups at any given time, and not mix connectors across the eight different groups. From the examples above, note that multiple DLP policies applied to an environment will fragment your connector space in complicated ways. Therefore, we highly recommended that you apply a minimum number of DLP policies to any given environment. 
+
+## Impact of DLP policies on apps and flows
+
+If admins have disallowed certain connectors to be used together in an environment by classifying them as **Business** or **Non-Business**&mdash;or marked certain connectors as **Blocked** by using tenant-level or environment-level DLP policies&mdash;these restrictions can negatively affect makers and users of Power Apps and Power Automate. The restrictions are enforced at both design time and at runtime.
+
+As an admin, you should have a process and plan in place to handle these types of support needs if you're using DLP policies.
+
+### Design-time impact on apps and flows
+
+Users who create or edit a resource affected by the DLP policy will see an appropriate error message about any DLP policy conflicts. For example, Power Apps makers will see the following error when they use connectors in an app that don't belong together or have been blocked by DLP policies. The app won't add the connection.
 
 > [!div class="mx-imgBorder"] 
-> ![Data policies](media/data-policies.png "Data policies")
+> ![Conflict error](media/dlp-conflict-error.png "Conflict error")
 
-## Creating new DLP Policies
-
-When you create a new DLP policy you first decide on the scope. If you are an environment administrator only, you will see a selection to choose one of your environments to associate with the DLP policy. If you are a Power Platform service admin, you will have the ability to apply to All Environments, Selected Environments, or All Environments EXCEPT.
-
-For the process to create a DLP policy, see [Create a data loss prevention (DLP) policy](create-dlp-policy.md).
+Similarly, Power Automate makers will see the following error when they try to save a flow that uses connectors that don't belong together or have been blocked by DLP policies. The flow itself will be saved, but it will be marked as **Suspended** and won't be executed unless the maker resolves the DLP violation.
 
 > [!div class="mx-imgBorder"] 
-> ![New DLP policy](media/new-dlp-policy.png "New DLP policy")
+> ![Flow error](media/dlp-suspended-flow-error.png "Flow error")
 
-Environment-only admins do have the ability to view policies created by Power Platform admins to understand what might apply to their environment.
+### Runtime impact on apps and flows
 
-One thing to consider is that environment-specific policies can't override tenant-wide DLP policies. For example, if you only allow use of Common Data Service connectors in an environment, an individual user who is only an environmental admin can't override that policy to allow social network connectors to be used.
+As an admin, you can decide to modify the DLP policies for your tenant or for specific environments at any point. If apps and flows were created and executed in compliance with an earlier DLP policy, some of them might be negatively affected by any policy changes you make. 
 
-## Configuring connectors for a DLP policy
-
-By default, all connectors are considered part of the No business data allowed list and no connectors are included in the Business data only group. This effectively means that all connectors can be used with other connectors.
+Users who use a resource that's in violation of the latest DLP policy will see an error message about the DLP policy conflict. For example, Power Apps makers and users will see the following error when they try to open an app that uses connectors that don't belong together or have been blocked by DLP policies. 
 
 > [!div class="mx-imgBorder"] 
-> ![Configure DLP connector](media/configure-dlp-connector.png "Configure DLP connector")
+> ![App opening error](media/dlp-opening-error.png "App opening error")
 
-When new connectors are added, they are added to the Default category, which is No business data allowed. If you prefer, you can change which category is considered the default, and then all new connectors will be classified in that category by default.
+Similarly, Power Automate makers and users won't be able to start a flow that uses connectors that don't below together or have been blocked by DLP policies. A background system process marks the flow as **Suspended**, and the flow won't be executed until the maker resolves the DLP policy violation.
 
-> [!div class="mx-imgBorder"] 
-> ![Set as default group](media/set-default-group.png "Set as default group")
-
-Typically, though, most companies will want to treat new connectors as No business data allowed until they evaluate if it is appropriate to use with what they have classified as business data.
-
-As an example, let's say we were to create a new tenant-wide DLP policy that had just Common Data Service added to the Business data only and all others in No business data allowed. Let's look at a few application examples and the outcome of this policy.
-
-|Connectors used in application or flow  |Impact of DLP  |
-|---------|---------|
-|SharePoint and OneDrive     |This would be allowed         |
-|Common Data Service     | This would be allowed        |
-|Common Data Service and SharePoint     |This would not be allowed         |
-|SharePoint and Twitter     |This would be allowed         |
-|SharePoint, Twitter, and Common Data Service     |This would not be allowed         |
+> [!NOTE]
+> The flow suspension process works in a polling mode. It takes about five minutes for the latest DLP policy changes to be assessed against active flows to mark them as suspended due to DLP policy violations. This change isn't instantaneous.
 
 > [!div class="mx-imgBorder"] 
-> ![Example DLP policy](media/example-dlp-policy.png "Example DLP policy")
+> ![Flow suspension](media/dlp-flow-suspension.png "Flow suspension")
 
+## Known issues
 
-## Impact of a change in DLP policy on existing apps and flows
-Consider the following table.
+The ability to block connectors by using DLP policy and DLP policy support in the Power Platform admin center UI are in public preview. We're working to address the following known issues and limitations:
 
-> [!div class="mx-tableFixed"]
-> |         |New  |Existing  |
-> |---------|---------|---------|
-> |**Power Apps**   | Users trying to create a new Power App that violates DLP policies will not be allowed to do so.        | Power Apps do not enforce new DLP policies after the app has been created and published. The Power Apps app won't check for DLP policy violations until the maker edits the canvas app again, removes one of the connections, and attempts to re-add it since DLP policies only restrict users from adding new connections.        |
-> |**Power Automate**     | Users will not be allowed to create a new Flow that violates a DLP policy.        |When a flow executes the trigger, the Power Automate runtime checks to see if the flow is compliant with all existing DLP policies. If it violates any DLP policy, then the flow will be disabled.         |
+1. Tenant-level policies created through the new UI enforce default grouping (typically non-business) on custom connectors. Currently there is no way to explicitly classify custom connectors in tenant-level policies or ignore them altogether. In order to manage custom connector settings explicitly using environment-level policies, exclude these environments from the tenant-level policies.
+2. Sorting by Created and Modified fields on Data Policy list view doesn’t work correctly.
+3. Three-way DLP policy creation isn't available through admin connectors. Also, the Power Platform for Admins connector always blocks LBI/Non-business group.
+4. If the default group is set as blocked, the list of connectors that can't be blocked won't apply when you use PowerShell to create DLP policies.
+5. All check boxes present while creating a new policy appear to have been selected when you select **Review** on the **Data Policies** page.
+6. Canvas apps assessment for DLP violations at launch time/run time does not work as expected.
 
-Users creating or editing a resource impacted by the DLP policy will see a message about the DLP policy conflict. As an administrator, you should have a process and plan in place to handle these types of support needs if you are using DLP policies.
+### See also
 
-> [!div class="mx-imgBorder"] 
-> ![DLP policy conflict](media/dlp-policy-conflict.png "DLP policy conflict")
-
-Using the DLP Editor in the [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md), you can see the impact a change of DLP policies would have on existing apps and can mitigate the risk by reaching out to the maker.
-
-> [!div class="mx-imgBorder"] 
-> ![DLP Editor](media/dlp-editor.png "DLP Editor")
-
-DLP policies created for a connector do not understand that that connector could be configured to talk to dev, test, production, and so on. When you configure a DLP policy, it is all or nothing. So, if you want to allow the connector to talk to a test database in the test environment, but not allow it to connect to the production database in that same test environment, then DLP policies won't help you restrict that. DLP policies are connector-aware, but do not control the connections that are made using the connector.
-
-## Custom connector and HTTP  
-
-By default, custom connectors and the HTTP connector are not part of the standard configuration capabilities of DLP policies. Using templates or PowerShell, you can configure DLP to include these connectors. For more information, see [Introducing HTTP and Custom Connector Support for Data Loss Prevention Policies](https://flow.microsoft.com/blog/introducing-http-and-custom-connector-support-for-data-loss-prevention-policies/).
-
-The [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) has an app that allows users to update policies for these connectors as well. This provides a UI front end to the PowerShell scripts.
-
-> [!div class="mx-imgBorder"] 
-> ![DLP Customizer](media/dlp-customizer.png "DLP Customizer")
-
-## Strategies for creating DLP policies
-
-As an administrator taking over an environment or starting to support use of Power Apps and Power Automate, DLP policies should be one of the first things you set up. This ensures a base set of policies is in place, and you can then focus on handling exceptions and creating targeted DLP policies that implement these exceptions once approved.
-
-For smaller environments where the users are highly capable and are trusted, you could start out with no DLP policies, taking only the default options. This is the most flexible option and can be changed at any time. Keep in mind introducing more restrictive policies later could conflict with existing assets. These conflicts could have business impact when existing apps and flows stop working until either the app or flow is brought into compliance or the DLP policy relaxed.
-
-For larger environments, it is recommended you have a plan in place for DLP policies. It is best to do this in conjunction with your plan for managing environments in your organization. While there is an endless combination of connectors you might have in your own environment, we will be using an example that you can tailor to fit your own needs. Let's set up a framework for a generic DLP policy template that could apply to many organizations, only modifying it for some of their specific needs.
-
-First, let's look at our environment setup and assumptions. The following are the environments we are expecting to manage in our organization.
-
-|Environment  |Expected Use / Policy  |
-|---------|---------|
-|Contoso – Default     | This is the default environment, and anyone can create apps and flows in it.        |
-|Contoso Enterprise Apps     |This is a production environment with applications managed with formal review before being promoted here. This could also be more business-unit aligned, Marketing or Finance, for example.         |
-|Community Plan Environments (0…N)     |These will be automatically created by any users in our org that sign up for the free Community Plan.         |
-|User-Owned Environments (0…N)     |These are production or trial environments created by users with a Power Apps plan or Power Apps trial.         |
-
-We now are going to design a tenant-wide default DLP policy. Our goal is to ensure that as people create their own environments and test and explore, they minimize the mixing of core business data without us first working with them.
-
-Our goal is to apply this default global policy to all environments except Contoso Enterprise Applications, which we are going to manage by a separate DLP policy.
-
-> [!div class="mx-imgBorder"] 
-> ![DLP choose environment](media/dlp-choose-environment.png "DLP choose environment")
-
-We have identified the following connectors as our initial set of Business data only connectors (remember, you can always add to this list at any time).
-
-> [!div class="mx-imgBorder"] 
-> ![Example DLP connectors](media/example-connectors.png "Example DLP connectors")
-
-With this policy in place, any use outside of those business connectors will need to have exceptions handled and we will cover that shortly.
-
-For the example Contoso Enterprise Applications environment, since we excluded it from our policy, we have two choices. We can either leave it wide open since we only deploy to it trusted applications that we as administrators install and configure, or we establish a DLP policy for it to match its application needs. The following new DLP policy shows how we would create a DLP specific for that environment.
-
-> [!div class="mx-imgBorder"] 
-> ![DLP choose environment](media/dlp-choose-environment-apply-selected.png "DLP choose environment")
-
-The following is an example that might look like a super set of our global one—notice it includes some social network and third-party connectors—but since these are all trusted apps and flows, that is OK.
-
-> [!div class="mx-imgBorder"] 
-> ![Example DLP connectors](media/example-connectors-social.png "Example DLP connectors")
-
-Now with this in place, you need a plan on how to handle exceptions. You really have three choices:
-
-1. Deny the request.
-2. Add the connector to the default DLP policy.
-3. Add the users' environments to the All Except list for the Global default DLP and create a user-specific DLP policy with the exception included.
-
-Hopefully that helps you understand how you might apply DLP policies in your organization. These are just some of the many options you could configure with DLP policies.
-
-
+[Create a data loss prevention (DLP) policy](create-dlp-policy.md) <br />
+[Manage data loss prevention (DLP) policies](prevent-data-loss.md) <br />
+[Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)

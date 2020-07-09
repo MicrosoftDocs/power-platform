@@ -1,0 +1,100 @@
+### YamlMime:Landing
+
+title: Application lifecycle management (ALM) with Microsoft Power Platform
+summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform.
+
+metadata:
+  title: Application lifecycle management (ALM) with Microsoft Power Platform
+  description: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform
+  ms.service: powerapps 
+  ms.topic: landing-page
+  author: Mattp123
+  ms.author: matp
+  ms.date: 05/05/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About ALM with Power Platform
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is ALM?
+            url: overview-alm.md
+      - linkListType: concept
+        links:
+          - text: ALM basics with Power Platform
+            url: basics-alm.md
+          - text: Environment strategy
+            url: environment-strategy-alm.md
+          - text: Tools and apps used in ALM
+            url: tools-apps-used-alm.md
+
+  # Card (optional)
+  - title: Understand and work with solutions
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Solution concepts
+            url: solution-concepts-alm.md
+          - text: Understand solution layers
+            url: solution-layers-alm.md
+          - text: Use solutions to customize
+            url: use-solutions-for-your-customizations.md
+          - text: Segment solutions
+            url: segmented-solutions-alm.md
+
+  # Card
+  - title: Implement healthy ALM
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Scenario 0: ALM for a new project"
+            url: new-project-alm.md
+          - text: "Scenario 1: Citizen development ALM"
+            url: citizen-dev-alm.md
+          - text: "Scenario 2: Moving from a single environment"
+            url: move-from-single-env-alm.md
+          - text: "Scenario 3: Moving from unmanaged to managed solutions"
+            url: move-from-unmanaged-managed-alm.md
+          - text: "Scenario 4: Use DevOps for automation"
+            url: use-devops-automated-alm.md      
+          - text: "Scenario 5: Support team development"
+            url: team-development-alm.md
+          - text: "Scenario 6: Embrace citizen developers"
+            url: embrace-citizen-devs.md
+  
+  # Card
+  - title: For developers
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: ALM for developers
+            url: alm-for-developers.md
+          - text: Microsoft Power Platform Build Tools for Azure DevOps
+            url: devops-build-tools.md
+          - text: Work with solution components
+            url: component-framework.md
+          - text: Solution and packaging tools
+            url: configure-and-deploy-tools.md
+          - text: Manage solutions using custom code
+            url: powershell-api.md
+
+  # Card
+  - title: Related docs
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "Create apps in Power Apps"
+            url: /powerapps/maker/
+          - text: "What is Common Data Service?"
+            url: /powerapps/maker/common-data-service/data-platform-intro
+          - text: "Work with solutions"
+            url: /powerapps/maker/common-data-service/solutions-overview
+          - text: "Power Platform admin guide"
+            url: /power-platform/admin/admin-documentation
+          - text: "Power Platform Center of Excellence (CoE) Kit"
+            url: /power-platform/admin/admin-documentation

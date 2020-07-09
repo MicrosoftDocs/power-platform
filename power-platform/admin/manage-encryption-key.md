@@ -29,7 +29,7 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
 > Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can't be encrypted with the self-managed encryption key:
 > - Relevance Search
 > - Mobile Offline
-> - Activity Log (Office 365 portal)
+> - Activity Log (Microsoft 365 portal)
 > - Exchange (Server-side sync)
 > 
 > Note the following: 
@@ -79,7 +79,7 @@ These actions will result in disabling all the environments within the tenant fr
   
 - Global admin membership.  
   
-- Office 365 Service administrators group membership.  
+- Microsoft 365 Service administrators group membership.  
   
 - System administrator security role for the environment that you want to manage the encryption key.  
   

@@ -2,7 +2,7 @@
 title: "Security in Common Data Service | MicrosoftDocs"
 description: Provides information about the security concepts in Common Data Service.
 ms.custom: ""
-ms.date: 03/10/2020
+ms.date: 06/30/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.topic: "get-started-article"
@@ -38,4 +38,4 @@ The following is a high-level overview of how security model is implemented in C
 [Data loss prevention policies](wp-data-loss-prevention.md)<br />
 [Block access by location with Azure AD Conditional Access](restrict-access-online-trusted-ip-rules.md)<br />
 [Cross-tenant inbound and outbound restrictions](cross-tenant-restrictions.md)<br />
-[Manage security for your environments](environments-administration.md#manage-security-for-your-environments)
+[Control user access to environments: security groups and licenses](control-user-access.md)

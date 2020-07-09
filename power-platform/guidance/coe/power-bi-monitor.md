@@ -1,6 +1,6 @@
 ---
 title: "Monitor with the CoE Power BI dashboard | MicrosoftDocs"
-description: "The **Monitor** section of the Center of Excellence (CoE) Power BI dashboard gives you the ability to query basic inventory (environments, apps, flows, makers, connectors, and audit logs) to monitor usage across your entire tenant and within each environment."
+description: "The Monitor section of the Center of Excellence (CoE) Power BI dashboard gives you the ability to query basic inventory (environments, apps, flows, makers, connectors, and audit logs) to monitor usage across your entire tenant and within each environment."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -125,3 +125,21 @@ The filters on this page are:
 The visuals then show you a list of all apps, flows, and makers using the tier or connector specified, in addition to the number of connections for the filters specified.
 
 ![Connections](media/pb8.png "Connections")
+
+## Virtual Agents
+
+The **Virtual Agents** page provides an overview of bots in your environment:
+
+- Total Number of Bots
+
+- Total Number of Bots created this month
+
+- Total Number of Bot Makers
+
+- Total Number of Published Bots
+
+Through visuals, you'll be able to see your bot creation trend, your top active departments, and top environments. A list view of all flows enables you to sort your flows by number of components and flows in a bot, bot maker, and bot state. You can also view last launched date of the bot, as well as total number of sessions.
+
+Filters on this page can help you narrow down this view by environment and by maker.
+
+![Power Virtual Agents](media/pb-pva.png "Power Virtual Agents")

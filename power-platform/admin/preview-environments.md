@@ -1,13 +1,13 @@
 ---
 title: Preview environments | Microsoft Docs
 description: Get early access to functionalities with Power Apps Preview Program
-author: manasmams
+author: jimholtz
 manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
-ms.author: manasma
+ms.date: 06/30/2020
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -29,12 +29,12 @@ Currently we will be rolling out preview for the following scenarios across Powe
 1. **Creating apps**: You can create canvas-based apps using the next version of Power Apps. This can be done by creating apps in a preview environment. Current limitations include - model-driven apps can’t be built in the preview program - we're working on it.
 2. **Managing apps**: You can manage and share apps using [Power Apps web portal][2]. To access the preview functionalities, all you need to do is to be in a preview environment; it will take you to the preview version of [Power Apps web portal][3].
 3. **Playing apps**: You need to play the apps in a preview environment using the web player. When you do that, you will be automatically taken to [preview version of web player][4]. Apps will play with the vNext version of the Power Apps web player. Current limitations include - Power Apps Mobile for iOS, Android, and Windows are currently not available for preview. Playing the apps created in the First Release environment might not work - we're working on it.
-4. **Administrating Power Apps**: Admin experiences are available for preview using the [preview version of Power Apps Admin center][1]
 
 ## How to get early access to the upcoming updates?
 For Power Apps, all the apps and related resources are stored in an environment. Early access to all preview functionalities are also available with an environment created in a region where the vNext (preview) is deployed. For now, there is only one region, **Preview (United States)**, as shown in the image below:
 
-![](./media/preview-environment/env3-preview.png)
+> [!div class="mx-imgBorder"] 
+> ![Preview environment](./media/preview-environment/env3-preview.png "Preview environment")
 
 Select the region for the environment as **Preview (United States)** and accept the consent for joining the Preview Program to create the environment to get access to the next version (vNext) of Power Apps.
 All the apps and other resources created in this environment are on the vNext version of the platform (SAAS).
@@ -45,7 +45,7 @@ You can get aware of the new functionalities which are available for preview at 
 ## Key scenarios to test with the preview program
 1. **Validate your production apps with the upcoming Power Apps updates (vNext)**
 
-   You might like to verify your production apps, to be working fine with the next upcoming updates on Power Apps. You can [copy](environment-and-tenant-migration.md) the apps from a production environment to an environment in First Release and play the apps to test out the scenarios. Please note, all the other necessary resources like CustomAPI, Power Automate, etc., will also need to be moved along with it. This should just create another copy of these apps and required resources. You can start testing out the newer updates not just for playing an app, but also while editing and managing the apps.
+   You might like to verify your production apps, to be working fine with the next upcoming updates on Power Apps. You can [copy](../alm/environment-and-tenant-migration.md) the apps from a production environment to an environment in First Release and play the apps to test out the scenarios. Please note, all the other necessary resources like CustomAPI, Power Automate, etc., will also need to be moved along with it. This should just create another copy of these apps and required resources. You can start testing out the newer updates not just for playing an app, but also while editing and managing the apps.
    
 2. **Trying out the new functionalities available in preview**
 
@@ -59,15 +59,11 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
    There are certain functionalities, services and portals which are available in preview:
    
-   ![](./media/preview-environment/table.png)
+   ![Available in preview](./media/preview-environment/table.png)
 
-2. **Accessing apps created in First Release environment from the Desktop Studio in Windows**
+2. **Using apps created in preview environments in production environments**
 
-   As mentioned above, desktop studio in Windows is not available in preview. Hence, creating or editing of the apps in the preview environment might not be compatible with your Desktop Studio and shows the following error message:
-   
-   ![](./media/preview-environment/error2.jpg)
-
-   In such a case, we recommend you use Web Studio to create or edit an app in the preview environment.
+   PowerApps does not support opening apps saved in preview only versions of Power Apps in production environments. Most versions of Power Apps will eventually move from preview into production, but how and when this happens is influenced by many factors so it should not be relied on. We recommend you use production environments to create or edit any app intended for use in a production environment.
 
 3. **Database cannot be created in Preview region**
 
@@ -78,7 +74,7 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 [1]: https://preview.admin.powerapps.com
 [2]: https://make.powerapps.com
 [3]: https://preview.web.powerapps.com
-[4]: https://preview.apps.powerapps.com/play
+[4]: https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview
 [5]: https://docs.microsoft.com/powerapps/whats-new
 [7]: https://preview.create.powerapps.com
 [8]: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1

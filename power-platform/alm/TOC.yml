@@ -1,0 +1,115 @@
+- name: Application lifecycle management (ALM)
+  items:
+  - name: Application lifecycle management (ALM)
+    href: ./index.yml
+  - name: Overview   
+    href: overview-alm.md     
+  - name: ALM basics
+    href: basics-alm.md    
+  - name: Environment strategy 
+    href: environment-strategy-alm.md
+  - name: Solutions
+    items:
+      - name: Solution concepts
+        href: solution-concepts-alm.md
+      - name: Solution layers
+        href: solution-layers-alm.md
+      - name: How managed solutions are merged
+        href: how-managed-solutions-merged.md        
+      - name: Use solutions to customize
+        href: use-solutions-for-your-customizations.md
+      - name: Managed properties
+        href: managed-properties-alm.md
+      - name: Use segmented solutions
+        href: segmented-solutions-alm.md
+      - name: Create and update solutions
+        href: update-solutions-alm.md
+      - name: Removing dependencies
+        href: removing-dependencies.md
+      - name: Organize solutions
+        href: organize-solutions.md
+      - name: Maintain managed solutions
+        href: maintain-managed-solutions.md
+  - name: Tools and apps used
+    href: tools-apps-used-alm.md    
+  - name: Implementing healthy ALM
+    items: 
+    - name: Healthy ALM overview
+      href: implement-healthy-alm.md
+    - name: "Scenario 0: Implement for a new project"
+      href: new-project-alm.md
+    - name: "Scenario 1: Citizen developer ALM"
+      href: citizen-dev-alm.md
+    - name: "Scenario 2: Moving from a single environment"
+      href: move-from-single-env-alm.md
+    - name: "Scenario 3: Moving from unmanaged to managed solutions"
+      href: move-from-unmanaged-managed-alm.md
+    - name: "Scenario 4: Use DevOps for automation"  
+      href: use-devops-automated-alm.md
+    - name: "Scenario 5: Support team development"
+      href: team-development-alm.md
+    - name: "Scenario 6: Embrace citizen developers"
+      href: embrace-citizen-devs.md
+  - name: ALM for developers   
+    href: alm-for-developers.md
+    items:
+    - name: Use Power Platform Build Tools
+      href: devops-build-tools.md
+    - name: Power Platform Build Tools tasks
+      href: devops-build-tool-tasks.md
+    - name: Work with solution components
+      href: 
+      items:
+        - name: Power Apps component framework
+          href: component-framework.md
+        - name: Plug-ins
+          href: plugin-component.md
+        - name: Web resources
+          href: web-resource-component.md
+        - name: Use managed properties
+          href: use-managed-properties.md
+        - name: Dependency tracking
+          href: dependency-tracking-solution-components.md
+        - name: Check for component dependencies
+          href: check-solution-dependencies.md
+        - name: Support multiple languages
+          href: create-solutions-support-multiple-languages.md
+    - name: Leverage solution and packaging tools
+      href: 
+      items:
+        - name: Configuration Migration
+          href: configure-and-deploy-tools.md
+        - name: Package Deployer tool
+          href: package-deployer-tool.md
+        - name: Solution Packager tool
+          href: solution-packager-tool.md
+        - name: Source control with solution files
+          href: use-source-control-solution-files.md
+    - name: Verify quality of solutions and packages
+      items:
+        - name: Use the Power Apps checker web API 
+          href: checker-api/overview.md
+        - name: Invoke the analysis
+          href: checker-api/analyze.md
+        - name: Check for analysis status
+          href: checker-api/check-status.md
+        - name: Retrieve the list of rules
+          href: checker-api/retrieve-rules.md
+        - name: Retrieve the list of rulesets
+          href: checker-api/retrieve-rulesets.md
+        - name: Upload a file for analysis
+          href: checker-api/upload-file.md
+    - name: Manage solutions using custom code
+      href: 
+      items:
+        - name: Use PowerShell
+          href: powershell-api.md
+        - name: Manage environments (REST API) 
+          href: online-management-api.md
+        - name: Work with solutions (SDK API) 
+          href: solution-api.md
+        - name: Create patches 
+          href: create-patches-simplify-solution-updates.md
+    - name: Edit the customizations file
+      href: when-edit-customization-file.md
+  

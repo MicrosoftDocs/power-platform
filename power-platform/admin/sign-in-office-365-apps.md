@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 05/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -65,7 +65,8 @@ For admins and end users, when you sign in to https://office.com, you will see a
    |**crm7** for Japan (JPN)|[https://port.crm7.dynamics.com/G/instances/instancePicker.aspx](https://port.crm7.dynamics.com/G/instances/instancePicker.aspx)|  
    |**crm8** for India (IND)|[https://port.crm8.dynamics.com/G/instances/instancePicker.aspx](https://port.crm8.dynamics.com/G/instances/instancePicker.aspx)|  
    |**crm11** for United Kingdom (UK)|[https://port.crm11.dynamics.com/G/instances/instancePicker.aspx](https://port.crm11.dynamics.com/G/instances/instancePicker.aspx)|  
-   |**crm12** for France (FRA)|[https://port.crm12.dynamics.com/G/instances/instancePicker.aspx](https://port.crm12.dynamics.com/G/instances/instancePicker.aspx)|  
+   |**crm12** for France (FRA)|[https://port.crm12.dynamics.com/G/instances/instancePicker.aspx](https://port.crm12.dynamics.com/G/instances/instancePicker.aspx)| 
+   |**crm15** for United Arab Emirates (UAE)|[https://port.crm15.dynamics.com/G/instances/instancePicker.aspx](https://port.crm15.dynamics.com/G/instances/instancePicker.aspx)|
   
     For Germany (DEU), use the following: https://port.crm.microsoftdynamics.de/g/instances.instancepicker.aspx.  
   
@@ -102,6 +103,7 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
 > -   .crm9 for United States of America Government  
 > -   .crm11 for United Kingdom (UK)  
 > -   .crm12 for France (FRA)
+- .crm15 for United Arab Emirates (UAE)
   
  For Germany (DEU), use the following: [https://\<organization>.crm.microsoftdynamics.de](https://<organization>.crm.microsoftdynamics.de).  
   
@@ -109,17 +111,7 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
   
  Administrators can provide the URL and sign-in information.  
 
-<a name="BKMK_social"></a>   
-## Direct sign in to Social Engagement  
- To directly sign in to the [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] service, use:  
-  
- https://listening.microsoft.com/app/\<appID>  
-  
- This URL, which includes the appID, is sent to the administrator in an email invitation.  
-  
- Your user name depends on whether your organization uses the standard [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] domain (for example, username@contoso.onmicrosoft.com) or you have a custom domain (for example, username@contoso.com).  
-  
- Administrators can provide the URL and sign-in information.  
-  
 ### See also  
  [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   
+
+

@@ -2,11 +2,10 @@
 title: "Enable document suggestions for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
 description: Enable document suggestions for Dynamics 365 for Customer Engagement apps
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 06/26/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -64,7 +63,7 @@ Enabling Document Suggestions helps your Dynamics 365 apps web browser and mobil
   
 3. OneDrive  
   
-4. Office 365 Groups (when solution is installed).  
+4. Microsoft 365 Groups (when solution is installed).  
   
 5. External URL (when configured).  
   
@@ -107,13 +106,13 @@ External sites, such as an on-premises SharePoint document library can be includ
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
-2. Go to **Environments** > [select an environment] > **Settings** > **Integration** > **Manage document suggestions**.
+2. Go to **Environments** > [select an environment] > **Settings** > **Integration** > **Document management settings** > **Manage Document Suggestions**.
   
 3. In the **Select Entities** area, select the entities that you want to include in Document Suggestions, and then select **Apply**.  
   
    > [!TIP]
    > If the entities (contact, opportunity, lead, account, or custom) aren't listed in the **Select Entities** area, it is because similarity rules for the entity have not been defined and activated.  [Use advanced similarity rules to view similar case suggestions](https://docs.microsoft.com/dynamics365/customer-service/suggest-similar-cases-for-a-case).
   
-4. Set external URL to include in Document Suggestions. By default, Document Suggestions searches in Office 365 services like SharePoint or OneDrive. If you want to search  an external site in addition to the available Office 365 services, such as an on-premises SharePoint site, enter the base URL to the external system. Dynamics 365 apps will append a search query string to the base URL you provide. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Adding an external URL to search another site](#adding-an-external-url-to-search-another-site).
+4. Set external URL to include in Document Suggestions. By default, Document Suggestions searches in Microsoft 365 services like SharePoint or OneDrive. If you want to search  an external site in addition to the available Microsoft 365 services, such as an on-premises SharePoint site, enter the base URL to the external system. Dynamics 365 apps will append a search query string to the base URL you provide. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Adding an external URL to search another site](#adding-an-external-url-to-search-another-site).
   
 ### See also  

@@ -1,14 +1,14 @@
 ---
 title: "Download Power Virtual Agents bot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
-ms.date: 3/6/2020
+ms.date: 7/7/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis
+ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
@@ -20,7 +20,7 @@ ms.collection: virtual-agent
 
 By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
 
-You can also download and view chat transcripts in the Power Apps portal.
+You can also download and view chat transcripts in the Power Apps admin center.
 
 Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
 
@@ -63,9 +63,9 @@ The downloaded file contains the following information:
 
 - TopicId: A unique identifier of the last authored topic triggered in this session. 
 
-## View and export bot conversation transcripts from the Power Apps portal
+## View and export bot conversation transcripts from the Power Apps admin center
 
-You can also view and export bot conversation transcripts from the Power Apps portal.
+You can also view and export bot conversation transcripts from the Power Apps admin center.
 
 First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
 
@@ -73,19 +73,19 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
 1. In the side navigation pane, expand the **Data** node. Select **Entities**. On the top right, expand **Default** and select **All**.
 
-    ![](media/powerapps-data-entities-view.png)
+    ![Screenshot of the Power Apps window with Data and Entities selected](media/powerapps-data-entities-view.png)
 
 1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Entities**.
 
-    ![](media/export-view-transcript.png)
+    ![Screenshot showing Conversation Transcript selected](media/export-view-transcript.png)
  
 1. Select **Data** tab. Expand **Active conversationtranscripts** and then select **All fields**.
 
-    ![](media/export-view-all-fields.png)
+    ![Screenshot showing Active conversation transcripts expanded](media/export-view-all-fields.png)
  
 1. View the bot’s conversation transcripts.
 
-    ![](media/export-view-sessions.png)
+    ![Screenshot showing sample bot transcript entries](media/export-view-sessions.png)
 
 ### Export conversation transcripts
 
@@ -108,6 +108,8 @@ By default, a pre-configured bulk delete job will remove all conversation transc
 To keep the transcripts for longer, you need to disable the existing system job and create a new job.
 
 First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
+
+The following instructions describe how to set a job to delete transcripts that are older than 12 months.
 
 1. At the top right, open the **Settings** menu cog icon and select **Advanced settings**.
 
@@ -135,14 +137,14 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
  
 6. In the **More Actions** dropdown, select **Cancel** to disable future bulk deletion using this job.
 
-    ![The more actions dropdown opesn to show a menu list, including Cancel](media/sessions-actions-cancel.png)
+    ![The more actions dropdown opens to show a menu list, including Cancel](media/sessions-actions-cancel.png)
  
 7. Create a new bulk record delete job by selecting **New** and set the following:
 
-    - Set **ConversationStartTime** as **Last x Months** to **12**
-        This will keep the transcripts for 12 months
+    - Set **ConversationStartTime** as **Older Than X Months** to **12**.  
+    This will keep the transcripts for 12 months
 
-    - Set **SchemaType** as **equals** to **powervirtualagents**
+    - Set **SchemaType** as **equals** to **powervirtualagents**.
 
         ![A popup window showing options to configure the job](media/sessions-schema.png)
  
