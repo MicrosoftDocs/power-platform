@@ -120,11 +120,11 @@ The per app license gives a user access to two Power Apps and one portal for a s
 <table style="width:100%">
 <thead>
   <tr>
-    <th></th>
-    <th colspan="3">Environment 1 (for example, dev)</th>
-    <th colspan="3">Environment 2 (for example, test)</th>
-    <th colspan="3">Environment 3 (for example, production)</th>
-    <th>Total licenses</th>
+    <th width="5%"></th>
+    <th width="30%" colspan="3">Environment 1 (for example, dev)</th>
+    <th width="30%" colspan="3">Environment 2 (for example, test)</th>
+    <th width="30%" colspan="3">Environment 3 (for example, production)</th>
+    <th width="5%">Total licenses</th>
   </tr>
 </thead>
 <tbody>
