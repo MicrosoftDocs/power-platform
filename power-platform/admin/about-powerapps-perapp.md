@@ -115,86 +115,14 @@ To share canvas apps, see [Share a canvas app in Power Apps](https://docs.micros
 
 ## Consumption of per app licensing
 
-The per app license gives a user access to two Power Apps and one portal for a single environment.  See the table below for an example of the consumption of licenses by the number of applications and the environments used.  Keep in mind that sharing an app with a user equals consumption even if the user does not run the app. 
+The per app license gives a user access to two Power Apps and one portal for a single environment. See the table below for an example of the consumption of licenses by the number of applications and the environments used. 
 
-<!--
-<table style="width:100%"> 
-<thead>
-  <tr>
-    <th width="10%"></th>
-    <th width="30%" colspan="3">Environment 1 <br />(example, dev)</th>
-    <th width="30%" colspan="3">Environment 2 <br />(example, test)</th>
-    <th width="30%" colspan="3">Environment 3 <br />(example, production)</th>
-    <th width="5%">Total licenses</th>
-  </tr>
--->
+:::image type="content" source="media/per-app-license-consumption.png" alt-text="Per app license consumption example":::
 
-
-<table>
-<thead>
-  <tr>
-    <th></th>
-    <th colspan="3">Environment 1 <br />(example, dev)</th>
-    <th colspan="3">Environment 2 <br />(example, test)</th>
-    <th colspan="3">Environment 3 <br />(example, production)</th>
-    <th>Total licenses</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td><b>User 1</b></td>
-    <td>App A</td>
-    <td>App B</td>
-    <td>Portal</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td><b>User 2</b></td>
-    <td>App A</td>
-    <td>App B</td>
-    <td>Portal</td>
-    <td>App A</td>
-    <td>App B</td>
-    <td>Portal</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td><b>User 3</b></td>
-    <td>App A</td>
-    <td>App B</td>
-    <td>App C/Portal</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td><b>User 4</b></td>
-    <td>App A</td>
-    <td></td>
-    <td>Portal</td>
-    <td>App A</td>
-    <td></td>
-    <td>Portal</td>
-    <td>App A</td>
-    <td></td>
-    <td>Portal</td>
-    <td>3</td>
-  </tr>
-</tbody>
-</table>
+> [!NOTE]
+> Sharing an app with a user consumes the per app capacity. 
+> 
+> The consumption reporting for the per app license is a work in progress. Please check back for more details once the reporting is launched. 
 
 ## FAQ
 
