@@ -170,7 +170,7 @@ Yes, existing apps and flows will continue to work. Customers who have been usin
 
 In addition, apps and flows created prior to October 1, 2019 which are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors.
 
-The extended transition period allows for using the connectors listed above but it does not allow these connectors to use gateways. Gateways were a premium capability before the transition and they continue to be a premium capabilty.
+The extended transition period allows for using the connectors listed above but it does not allow these connectors to use gateways. Gateways were a premium capability before the transition and they continue to be a premium capability.
 
 Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector does not provide Common Data Service capacity. Common Data Service capacity is a prerequisite for Power Apps and Power Automate workflows to use Common Data Service. 
 
