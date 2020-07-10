@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 07/10/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -105,7 +105,7 @@ More information is available [here](https://aka.ms/platformlimits).
 
 ### How long is the free trial period?
 
-Free trials for Microsoft Power Apps last 30 days. For Power Automate, they are available for 90 days.
+Free trials for Microsoft Power Apps and Microsoft Power Automate last 30 days.
 
 ### Is there a way to develop my Microsoft Power Apps and Power Automate skills for more than 90 days?
 
