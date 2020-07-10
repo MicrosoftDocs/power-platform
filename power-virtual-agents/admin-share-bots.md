@@ -108,7 +108,7 @@ The **Environment security roles** section shows when you share a bot and only i
 You must be a **System administrator** of the environment where the bot is located to view and add security roles.
 
 >[!NOTE]
->You can only assign security role during bot sharing and cannot remove security role.  For full security role management, [use the Power Platform Admin Center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
+>You can only *assign* security roles when sharing a bot. You can't remove security roles when sharing. For full security role management, [use the Power Platform Admin Center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
 > Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
 
 
@@ -130,7 +130,7 @@ Based on the content and target audience of the bot, you may want to give transc
 
 >[!IMPORTANT]
 >Conversation transcript access is managed by environment security roles. After assigning the **Bot transcript viewer** security role to a user, that user can access conversation transcripts for all bots that they create or are shared with in the environment.  
->In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more on [Create a new environment for your bots](https://docs.microsoft.com/power-virtual-agents/environments-first-run-experience#create-a-new-environment-for-your-bots)
+>In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](https://docs.microsoft.com/power-virtual-agents/environments-first-run-experience#create-a-new-environment-for-your-bots)
 
 When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer** role by selecting the check box.
  
