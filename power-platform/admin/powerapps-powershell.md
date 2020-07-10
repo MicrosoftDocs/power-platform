@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/25/2020
+ms.date: 07/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -459,6 +459,7 @@ Get-AllowedConsentPlans
 
 The allowed consent plans cmdlets can be used to add or remove access to a particular type of consent plan from a tenant. "Internal" consent plans are either trial licenses or community plans that users can sign themselves up for via Power Apps/Power Automate portals. "Ad-hoc subscription" consent plans are trial licenses that users can sign themselves up for via https://signup.microsoft.com or admins can assign to users via Azure Active Directory (Azure AD) or the Microsoft 365 admin portal. By default all types of consent plans are allowed in a tenant. A common use case for these cmdlets is if a Power Platform service admin wants to block users within their tenant from the ability to assign themselves trial licenses but retain the ability to assign trial licenses on behalf of users. This can be accomplished by using the *Remove-AllowedConsentPlans -Types "Internal"* command as well as disabling the setting *AllowAdHocSubscriptions* in Azure AD. It is important to note that when using *Remove-AllowedConsentPlans* all existing plans of the specified type will be removed from all users in the tenant and will not be recoverable. In addition, it will block all further assignment of plans of that type. If, at a later time, the Power Platform service admin wishes to re-enable plans of that type they can use *Add-AllowedConsentPlans*. If they want to view the current state of allowed consent plans they can use *Get-AllowedConsentPlans*.
 
+<!-- 
 ## Version History
 | Date | Updates |
 | --- | --- |
@@ -477,6 +478,7 @@ The allowed consent plans cmdlets can be used to add or remove access to a parti
 | 07/30/2018 | <ol> <li> Added the ability to pass-in credentials to the Add-PowerAppsAccount (to enable recurring scripting) </li> <li>  Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the "PowerApp" or "Flow" prefix to each cmdlet for app creators </li> <li>  Added the "AdminPowerApp" or "AdminFlow" prefix to each cmdlet for administrators </li> <li> Added the following new administrative cmdlets: <br> New-AdminPowerAppEnvironment <br> Set-AdminPowerAppEnvironmentDisplayName <br> New-AdminPowerAppCdsDatabase <br> Get-AdminPowerAppCdsDatabaseLanguages <br> Get-AdminPowerAppCdsDatabaseCurrencies <br> Get-AdminPowerAppEnvironmentLocations <br> Get-AdminPowerAppConnectionReferences <br> Set-AdminPowerAppAsFeatured <br> Clear-AdminPowerAppAsFeatured <br> Set-AdminPowerAppAsHero <br> Clear-AdminPowerAppAsHero <br> Set-AdminPowerAppApisToBypassConsent <br> Clear-AdminPowerAppApisToBypassConsent <br> Remove-AdminFlowApprovals </li></ol> |
 | 05/24/2018 | <ol> <li> Minor bug fixes in both the cmdlets for app creators and administrators </li> <li> Added the following new administrative cmdlets: <br> Get-AdminPowerAppConnection <br> Remove-AdminConnection <br> Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br>Remove-AdminConnectionRoleAssignment <br>Get-AdminConnector  <br>Remove-AdminConnector <br>Set-AdminConnectorRoleAssignment  <br>Get-AdminConnectorRoleAssignment  <br>Remove-AdminConnectorRoleAssignment <br>Get-AdminPowerAppsUserDetails <br>Get-AdminFlowUserDetails <br>Remove-AdminFlowUserDetails <br>Get-AdminApiPolicy  <br>Add-AdminApiPolicy <br>Remove-AdminApiPolicy <br>Set-AdminApiPolicy <br>Add-ConnectorToBusinessDataGroup  <br>Remove-ConnectorFromBusinessDataGroup </li> </ol> |
 | 04/23/2018 | <ol> <li> Initial launch of the Power Apps cmdlets for app creators (preview) including management cmdlets for Environments, Apps, Flows, Power Automate approvals, Connections, and Custom Connectors </li> <li> Initial launch of the Power Apps cmdlets for administrators (preview) including administrative cmdlets for Environments, Apps, and Flows </li></ol>|
+-->
 
 ## Questions?
 
