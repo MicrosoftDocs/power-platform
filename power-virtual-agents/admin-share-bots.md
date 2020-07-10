@@ -54,7 +54,7 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 5. Select **Share** to share the bot with the new users.
 
 >[!IMPORTANT]
->It can take up to 10 minutes for the bot to show up in the shared user's bot list if the user [was not previously part of the environment](#assign-additional-environment-security-roles) of the shared bot.
+>It can take up to 10 minutes for the bot to show up in the shared user's bot list if the user [was not previously part of the environment](#assign-environment-security-roles) of the shared bot.
 
 ### Insufficient environment permissions
 
@@ -63,7 +63,7 @@ Users in the environment must have the **Environment maker** security role befor
 
 ![User does not have sufficient permissions](media/sharing-insufficient-permission.png)
 
-**System administrators** of the environment will need to assign the **Environment maker** security role to the user before you share the bot. If you're a **System administrator**, you can [assign the **Environment maker** role when you share the bot](#assign-additional-environment-security-roles).
+**System administrators** of the environment will need to assign the **Environment maker** security role to the user before you share the bot. If you're a **System administrator**, you can [assign the **Environment maker** role when you share the bot](#assign-environment-security-roles).
 
 Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
  
@@ -101,7 +101,7 @@ You can stop sharing a bot with a user, and any shared user can stop the bot fro
 
 ## Assign environment security roles
 
-If you're a **System administrator**, you can assign and manage additional security roles when sharing a bot.
+If you're a **System administrator**, you can assign and manage environment security roles when sharing a bot.
 
 The **Environment security roles** section shows when you share a bot and only if you're a **System administrator**. It lets you share bots with users who don't have sufficient environment permissions to use Power Virtual Agents. 
 
