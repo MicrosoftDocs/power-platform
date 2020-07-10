@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/15/2018
+ms.date: 07/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
