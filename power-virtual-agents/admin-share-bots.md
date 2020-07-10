@@ -35,7 +35,7 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 
     ![Power Virtual Agents bot homepage with the Share button highlighted](media/sharing-home.png)
 
-2. Specify the name or email address of the users that you would like to share the bot with.  
+2. Specify the name or email address of each user that you would like to share the bot with.  
 
     >[!NOTE]
     >You can only share a bot with individual users, which means you can't share it with a security group or distribution group in your organization.  
@@ -63,16 +63,16 @@ Users in the environment must have the **Environment maker** security role befor
 
 ![User does not have sufficient permissions](media/sharing-insufficient-permission.png)
 
-**System administrators** of the environment will need to assign the **Environment maker** security role to the user before you share the bot. If you're a **System administrator**, you can [assign the **Environment maker** role when you share the bot](#assign-environment-security-roles).
+**System administrators** of the environment need to assign the **Environment maker** security role to the user before you share the bot. If you're a **System administrator**, you can [assign the **Environment maker** role when you share the bot](#assign-environment-security-roles).
 
 Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
  
 
 
-### Share Power Automate flows used in bot
-You can [add actions to a bot using flows in Power Automate](advanced-flow.md), however flows in a bot aren't automatically shared with other users when sharing a bot. 
+### Share Power Automate flows used in a bot
+You can [add actions to a bot using flows in Power Automate](advanced-flow.md); however flows in a bot aren't automatically shared with other users when sharing a bot. 
 
-Users who don't have access to the flow shared can still run it by using the test bot canvas.
+Users who don't have access to the shared flow can still run it by using the test bot canvas.
 
 To let other users edit or add flows you'll need to share them in Power Automate. You can open flows directly from the topic where the flow is used.
 
@@ -80,7 +80,7 @@ To let other users edit or add flows you'll need to share them in Power Automate
  
     ![Highlight of the view flow details on a flow in a topic](media/sharing-view-flow-details.png)
 
-2. Select **Edit** in the **Owners** section
+2. Select **Edit** in the **Owners** section.
  
     ![Select the Edit link](media/sharing-flow-owners.png)
 
@@ -112,7 +112,7 @@ You must be a **System administrator** of the environment where the bot is locat
 > Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
 
 
-### Assign Environment maker security role during bot sharing
+### Assign the Environment maker security role during bot sharing
 
 You can assign the **Environment maker** security role when sharing a bot with a user who does not have sufficient environment permissions to run Power Virtual Agents.
 
@@ -122,7 +122,7 @@ When [sharing the bot](#share-a-bot), if the specified user does not have suffic
 
 
 
-### Assign Bot transcript viewer security role during bot sharing
+### Assign the Bot transcript viewer security role during bot sharing
 
 You can assign the **Bot transcript viewer** security role to users who don't have conversation transcript access when sharing a bot. 
 
