@@ -99,7 +99,7 @@ You can stop sharing a bot with a user, and any shared user can stop the bot fro
 
 3. Select **Share** to stop sharing the bot with the user.
 
-## Assign additional environment security roles
+## Assign environment security roles
 
 If you're a **System administrator**, you can assign and manage additional security roles when sharing a bot.
 
