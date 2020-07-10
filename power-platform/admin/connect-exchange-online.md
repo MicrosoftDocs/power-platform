@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 07/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -117,8 +117,6 @@ All new users will have these settings applied to their mailbox.
 <a name="BKMK_ApproveEmail"></a>   
 
 ## Approve email  
-
-You only need to approve the email address for a user when their email address has changed in model-driven apps in Dynamics 365.
 
 To approve emails for model-driven apps in Dynamics 365, a user requires:
 
