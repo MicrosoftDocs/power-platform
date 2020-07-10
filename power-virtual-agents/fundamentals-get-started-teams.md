@@ -12,41 +12,27 @@ ms.custom: fundamentals
 ms.collection: virtual-agent
 ---
 
-# Quickstart: Create and deploy a Power Virtual Agents bot online
+# Quickstart: Create and deploy a Power Virtual Agents bot in Teams
 
-Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Online portal (https://powerva.microsoft.com)](fundamentals-get-started.md)
 > - [Teams (online or app)](fundamentals-get-started-teams.md)
 
 
-Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
+Create, manage, and publish conversational chatbots easily from within Teams. Share your bots with other people in your organization so they can chat and have their questions answered.
 
-This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it’s been deployed. 
-
-
-> 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLcX ]
-> 
+You can start by creating a simple bot, or create a ready-made bot based on standard frequently asked questions (FAQs).
 
 
 
+# Quickstart: Create and deploy a Power Virtual Agents bot in Teams
 
-# Quickstart: Create and deploy a Power Virtual Agents bot online
+Using the Power Virtual Agents online portal at https://powerva.microsoft.com? [See this article written specifically for the online portal](fundamentals-get-started.md). 
 
-Using Power Virtual Agents in Teams? [See this article written specifically for Teams use](fundamentals-get-started-teams.md). 
+Create, manage, and publish conversational chatbots easily from within Teams. Share your bots with other people in your organization so they can chat and have their questions answered.
 
-
-Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
-
-This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it’s been deployed. 
-
-
-> 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLcX ]
-> 
-
+You can start by creating a simple bot, or create a ready-made bot based on standard frequently asked questions (FAQs).
 
 
 ## Prerequisites
