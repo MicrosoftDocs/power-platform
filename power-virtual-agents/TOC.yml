@@ -14,6 +14,8 @@
      href: sign-up-individual.md
    - name: Working with environments
      href: environments-first-run-experience.md
+   - name: Share bots with users in your organization
+     href: admin-share-bots.md
    - name: Export and import bots with solutions
      href: authoring-export-import-bots.md
    - name: Regional settings and data locations for organizations
