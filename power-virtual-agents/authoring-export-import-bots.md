@@ -199,7 +199,11 @@ The export can take several minutes to complete. Once finished, a .zip file will
     ![List of bots and environments in Power Virtual Agents](media/export-bot-picker.png "List of bots and environments in Power Virtual Agents")
 
 
-## Upgrade or update a solution with bot
+## Upgrade or update a solution with chatbot
+There are times when you add new bot components (e.g., topics, Flow) to your bot in the PVA portal. To update those changes in your target environment, you need to add those components to the unmnaged solution by selecting **Add required components** before export.
+
+<Add the Add required components impage>
+
 There are times when you need to update an existing managed solution. To learn more, go to [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
 
 ## Remove an unmanaged layer from a managed chatbot 
