@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting: common user access issues  | MicrosoftDocs"
-description: "Troubleshooting: common user access issues"
+title: "Troubleshooting: Common user access issues  | MicrosoftDocs"
+description: "Troubleshooting: Common user access issues"
 author: jayasreekumar
 ms.author: jayasreekumar
 ms.reviewer: jimholtz
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Troubleshooting: common user access issues
+# Troubleshooting: Common user access issues
 
 ## User has no roles 
 
