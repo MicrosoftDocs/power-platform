@@ -1,13 +1,13 @@
 ---
 title: "Troubleshooting: User needs read-write access  | MicrosoftDocs"
 description: "Troubleshooting: User needs read-write access"
-author: jimholtz
-manager: kvivek
+author: jayasreekumar
+ms.author: jayasreekumar
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/15/2020
-ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app: 
@@ -25,15 +25,15 @@ You don't have sufficient permissions to access model-driven apps in Dynamics 36
   
 3. Open the user record.  
   
-4. Choose **More Commands** (![More commands button](../admin/media/not-available.png "More commands button")) > **Manage Roles**.  
+4. Select **More Commands** (![More commands button](../admin/media/not-available.png "More commands button")) > **Manage Roles**.  
   
 5. Make note of the role assigned to the user. If appropriate, select a different security role. Close the Manage User Roles dialog box.  
   
-6. Choose **Security** > **Security Roles**.  
+6. Select **Security** > **Security Roles**.  
   
-7. Choose the security role from step 4.  
+7. Select the security role from step 4.  
   
-8. Choose **Core Records**.  
+8. Select **Core Records**.  
   
 9. Confirm that the **Read** permission for **User Entity UI Settings** is set to the User level (a yellow circle with a wedge-shaped segment).  
   
