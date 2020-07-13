@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/09/2020
+ms.date: 07/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -125,6 +125,15 @@ The per app license gives a user access to two Power Apps and one portal for a s
 > The consumption reporting for the per app license is a work in progress. Please check back for more details once the reporting is launched. 
 
 ## FAQ
+
+### I want to transition users from a Power Apps per app license to a Power App per user license. 
+Once the user is allocated a Power Apps per user license the user is transitioned from a per app to per user license. When per app plan consumption reports are available, they will show per app plans aren’t consumed by users that are assigned a per user plan.
+
+### When will I be able to see the list of users who are using the Power Apps per app license?
+We are currently working on this report. Please check back again for more details. This report will be available in the Power Platform admin center. 
+
+### What are the differences in the admin experience between the Power App per app and the Power App per user license?
+Power Apps per user plan is a user license assigned by admins from https://admin.microsoft.com. Once the user has this license they can access any number of Power Apps apps. However, the Power Apps per app plan provides a capacity to run apps and the management experience for this license is in the Power Platform admin center. The license is assigned to users when apps in the environment are shared with them. Admins allocate the capacity of per app to an environment and the makers share the app with users. This sharing consumes the per app capacity. Once the reporting is available, admins can see the users who are consuming capacity in the Power Platform admin center and not in the Microsoft 365 admin center.
 
 ### Can I assign Power Apps per app plans in the Microsoft 365 admin center (admin.microsoft.com)? 
 No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to users when apps are shared with users in the environment.
