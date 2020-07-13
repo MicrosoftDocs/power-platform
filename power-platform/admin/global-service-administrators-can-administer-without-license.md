@@ -1,13 +1,13 @@
 ---
 title: "Global and Service administrators can administer without a license | MicrosoftDocs"
 description: Global and Service administrators can administer without a license 
-author: jimholtz
-manager: kvivek
+author: paulliew
+ms.author: paulliew
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/21/2020
-ms.author: jimholtz
+ms.date: 07/13/2020
 search.audienceType: 
   - admin
 search.app: 
@@ -19,8 +19,8 @@ search.app:
 
 By default, all Global admin and Power Platform service administrators who do not have a license are granted the following two levels of permission in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
   
--   System administrator security role  
--   Administrative access mode  
+- System administrator security role  
+- Administrative access mode  
   
 The System administrator security role is typically granted to administrators giving them unrestricted access to the administrative (Settings) areas, which are used for managing and configuring features of model-driven apps in Dynamics 365.  
   
@@ -46,9 +46,8 @@ To give these administrators access to additional areas, such as the Sales, Mark
 6. Select  **Save changes**.  
   
 > [!NOTE]
-> Global and Power service administrators who don't have a license are automatically synced into the environment with an Access Mode of 'Administrative' while administrators who have a license are synced into the environment with an Access Mode of 'Read-Write'.  These administrators are assigned with a 'System Administrator' security role. 
-  
-### See also  
-[Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)
+> Global and Power service administrators who don't have a license are automatically synced into the environment with an access mode of 'Administrative' while administrators who have a license are synced into the environment with an access mode of 'Read-Write'.  These administrators are assigned a System Administrator security role. 
 
+### See also  
+[Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) <br />
 [Create an Administrative user account](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-administrative-user-account)
