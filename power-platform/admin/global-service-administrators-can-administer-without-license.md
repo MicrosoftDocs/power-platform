@@ -45,5 +45,10 @@ To give these administrators access to additional areas, such as the Sales, Mark
   
 6. Select  **Save changes**.  
   
+> [!NOTE]
+> Global and Power service administrators who don't have a license are automatically synced into the environment with an Access Mode of 'Administrative' while administrators who have a license are synced into the environment with an Access Mode of 'Read-Write'.  These administrators are assigned with a 'System Administrator' security role. 
+  
 ### See also  
 [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)
+
+[Create an Administrative user account](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-administrative-user-account)
