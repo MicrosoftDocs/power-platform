@@ -29,6 +29,8 @@ This can be useful if you use different environments for different purposes, or 
 
 - A maker will require minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](https://docs.microsoft.com/power-platform/admin/database-security).
 
+- You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
+
 
 > [!IMPORTANT]
 > These features are in preview, which means that they are made available to you before general availability so you can test and evaluate them and provide feedback to Microsoft.  
@@ -145,7 +147,9 @@ You export and import bots by exporting and importing their containing solutions
 2. Select **Next** in the **Before you export** panel.
 
 4. The **Export this solution** panel appears. Enter or select from the following options, and then select **Export**:
-
+    
+    Option | Description
+    - | -
     Version number | Power Virtual Agents automatically increments your solution version while displaying the current version. You can accept the default version or enter your own.
     Export as | Select the package type, either **Managed** or **Unmanaged**. Learn more about [managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions).
 
