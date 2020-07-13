@@ -203,7 +203,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 If you add new bot components (such as new topics or flows) to your bot in the PVA portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the *...* menu next to the name of the solution, and then choosing the new components before you export it.
 
-![Screenshot highlighting the add required components option under the more ... menu](media/export-add-required-components.png "Screenshot highlighting the add required components option under the more ... menu")
+![Screenshot highlighting the add required components option under the more menu](media/export-add-required-components.png "Screenshot highlighting the add required components option under the more menu")
 
 There are times when you need to update an existing managed solution. To learn more, go to [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
 
