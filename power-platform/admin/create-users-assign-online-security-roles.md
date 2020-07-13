@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/14/2020
+ms.date: 07/13/2020
 search.audienceType: 
   - admin
 search.app: 
@@ -64,7 +64,6 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td colspan="2">* To prevent data loss, the Primary Email field isn't automatically updated and synchronized with model-driven apps in Dynamics 365.</td></tr>
 </tbody>
 </table>
-
 
 The following image shows Microsoft 365 user contact fields.
 
@@ -133,6 +132,8 @@ To disable a user account, remove a license from the user or remove the user fro
 > When you use a security group to manage enabling or disabling users or provisioning access to an org, nested security groups within the selected security group aren't supported and will be ignored.
 >
 > You can [assign records](https://docs.microsoft.com/powerapps/user/assign-or-share-records) to a disabled user account and also [share reports](https://docs.microsoft.com/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers in [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+> 
+> A Global admin, Power Platform service admin, or a Dynamics 365 service admin does not need a license to be enabled in a Common Data Service environment. See: [Global admins and Power Platform service admins can administer without a license](global-service-administrators-can-administer-without-license.md). But since they are unlicensed, they will be set in the [Administrative access mode](create-users-assign-online-security-roles.md#create-a-read-write-user-account).  
 
 You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign admin roles](https://go.microsoft.com/fwlink/p/?LinkId=255444)  
 
