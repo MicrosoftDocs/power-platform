@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/10/2020
+ms.date: 07/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -278,7 +278,7 @@ The above command will store the Power Apps user details (basic usage informatio
 Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 ```
 
-Exports all the assigned user licenses in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
+Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
 The export can take a while for tenants with a large number of Power Platform users.
 
