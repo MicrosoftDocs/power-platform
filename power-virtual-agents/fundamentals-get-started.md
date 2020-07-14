@@ -56,7 +56,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 
 ## Create your first bot
 
-1.	Go to [https://aka.ms/TryPVA](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Try preview**, and then sign in with your work email address. Note that personal Microsoft accounts aren't currently supported.
+1. Go to [https://aka.ms/TryPVA](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Try preview**, and then sign in with your work email address. Note that personal Microsoft accounts aren't currently supported.
 
     
 
@@ -70,7 +70,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
    ![Name the new bot](media/create-new-bot-screen.png)
    
 
-3.	Once you select **Create**, the process of creating the first bot within a new environment can take up to 15 minutes. Subsequent bots will be created much faster. 
+3. Once you select **Create**, the process of creating the first bot within a new environment can take up to 15 minutes. Subsequent bots will be created much faster. 
 
 4. After a few minutes, you’ll land on the home page and have an opportunity to play around with the bot in read-only mode. You can't save any edits during this time, but you can explore the overall user interface, look at the topics, experiment with the preloaded User Topics and System Topics, and interact with your bot using the Test Canvas. During this time, you can review additional documentation on authoring topics in your bot. See [Authoring key concepts](authoring-fundamentals.md).
    
@@ -80,9 +80,9 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 
 ## Create a topic
 
-1.	Now that you have full functionality within your bot, you can create your own topic—or, in other words, a dialog tree specifying how your bot responds to a user’s question.
+1. Now that you have full functionality within your bot, you can create your own topic—or, in other words, a dialog tree specifying how your bot responds to a user’s question.
 
-2.	Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page.
+2. Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page.
 
     ![New topic](media/topics-new.png)
     
@@ -155,7 +155,7 @@ The bot is now waiting for you to respond and has provided suggestions on how to
 
     ![Tracing conversation](media/quickstart-test-bot-03.png)
     
-	 
+  
 
 4. You can continue the dialog by selecting the Seattle branch. You’ll see the chat stop once you’ve reached the bottom of this branch. If you author more content, the dialog will continue, but since we’ve only created a very simple and small dialog tree, we can reach the end of the content very quickly.
 
@@ -183,7 +183,7 @@ For more information on publishing your bot to other channels, see the documenta
 
 ## Analyze the performance of your bot
 
-1.	Once your bot has completed interactions with users, the statistics are available on the **Analytics** tab in the side navigation pane. Here, you can find key performance indicators (KPIs) showing the volume of sessions your bot has handled, how effectively your bot was able to engage end-users and resolve issues, escalation rates to human agents, and abandonment rates during conversations. You will also find customer satisfaction information at the KPI level as well as in the **Customer Satisfaction** tab.
+1. Once your bot has completed interactions with users, the statistics are available on the **Analytics** tab in the side navigation pane. Here, you can find key performance indicators (KPIs) showing the volume of sessions your bot has handled, how effectively your bot was able to engage end-users and resolve issues, escalation rates to human agents, and abandonment rates during conversations. You will also find customer satisfaction information at the KPI level as well as in the **Customer Satisfaction** tab.
 
     > [!NOTE]
     > There is up to a 1-hour delay between when the conversations occur and when the statistics for those conversations appear in the analytics views. Also, all interactions with the bot are logged in analytics, including interactions from your demo website, custom website, or test bot.
@@ -191,7 +191,7 @@ For more information on publishing your bot to other channels, see the documenta
 
 
 
-2.	You can also view detailed session history and transcripts by selecting **Sessions** from the **Analytics** tab. This enables you to download a CSV file with the full session transcript. This can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot’s efficiency.
+2. You can also view detailed session history and transcripts by selecting **Sessions** from the **Analytics** tab. This enables you to download a CSV file with the full session transcript. This can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot’s efficiency.
 
     ![Download sessions](media/analytics-sessions.png)
     
