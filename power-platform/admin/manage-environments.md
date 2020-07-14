@@ -10,10 +10,11 @@ ms.date: 08/08/2018
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Manage environments
 

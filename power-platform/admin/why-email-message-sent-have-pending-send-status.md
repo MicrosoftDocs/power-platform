@@ -10,10 +10,11 @@ ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Why does the email message I sent have a "Pending Send" status?
 

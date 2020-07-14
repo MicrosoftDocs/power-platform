@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 06/20/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Use service admin roles to manage your tenant
 

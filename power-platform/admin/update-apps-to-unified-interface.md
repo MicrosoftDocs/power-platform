@@ -10,10 +10,11 @@ ms.date: 10/09/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Update your apps to Unified Interface
 

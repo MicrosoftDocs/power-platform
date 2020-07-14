@@ -10,10 +10,11 @@ ms.date: 10/30/2017
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Choose the records to synchronize between model-driven apps in Dynamics 365 and Exchange 
 

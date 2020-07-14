@@ -10,10 +10,11 @@ ms.date: 06/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Embed an app in Microsoft Teams

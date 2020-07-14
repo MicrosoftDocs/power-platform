@@ -10,10 +10,11 @@ ms.date: 11/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Block access by location with Azure AD Conditional Access
 

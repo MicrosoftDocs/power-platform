@@ -9,10 +9,11 @@ ms.date: 06/01/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 

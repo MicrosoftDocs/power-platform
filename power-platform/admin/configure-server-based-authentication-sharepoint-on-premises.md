@@ -10,10 +10,11 @@ ms.date: 07/08/2020
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Configure server-based authentication with SharePoint on-premises
 

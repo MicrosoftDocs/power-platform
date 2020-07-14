@@ -9,10 +9,11 @@ ms.date: 04/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Create a data loss prevention (DLP) policy 

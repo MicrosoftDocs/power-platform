@@ -10,10 +10,11 @@ ms.date: 10/01/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Try Power Apps and model-driven apps in Dynamics 365 apps
 

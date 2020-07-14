@@ -10,10 +10,11 @@ ms.date: 04/16/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Use Outlook category to track appointments and emails
 

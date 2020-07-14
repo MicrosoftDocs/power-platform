@@ -10,10 +10,11 @@ ms.date: 06/10/2020
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Manage your documents using SharePoint
 

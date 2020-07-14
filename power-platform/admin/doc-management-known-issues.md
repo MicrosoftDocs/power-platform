@@ -18,9 +18,11 @@ ms.tgt_pltfrm:
 topic-status: Drafting
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
+  - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Known issues with document management

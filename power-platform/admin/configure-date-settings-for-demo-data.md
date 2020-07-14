@@ -10,10 +10,11 @@ ms.date: 11/20/2017
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Configure date settings for demo data 
 

@@ -17,8 +17,11 @@ ms.author: "jimholtz"
 manager: kvivek
 search.audienceType: 
   - admin
-search.app: 
+search.app:
+  - D365CE
+  - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # About multiple online environments or tenants

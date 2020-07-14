@@ -10,10 +10,11 @@ ms.date: 11/04/2019
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Environment database settings
 

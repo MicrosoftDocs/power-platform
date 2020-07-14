@@ -9,10 +9,11 @@ ms.date: 05/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Connect Gmail accounts using OAuth 2.0 

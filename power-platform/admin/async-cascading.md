@@ -11,10 +11,11 @@ ms.date: 01/07/2020
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Asynchronous processing of cascading transactions

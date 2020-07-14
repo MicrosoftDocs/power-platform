@@ -10,10 +10,11 @@ ms.date: 12/02/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Types of Power Apps
 
