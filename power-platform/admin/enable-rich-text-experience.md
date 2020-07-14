@@ -10,10 +10,11 @@ ms.date: 08/27/2018
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Rich text experience for appointment activities
 

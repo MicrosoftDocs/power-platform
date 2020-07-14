@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 05/13/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Add users to an environment 
 

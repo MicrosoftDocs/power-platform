@@ -10,10 +10,11 @@ ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Quickly navigate with the Microsoft 365 app launcher and the Dynamics 365 home page
 

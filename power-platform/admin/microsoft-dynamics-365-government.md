@@ -10,10 +10,11 @@ ms.date: 10/04/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 <!--from editor: Please review the uses of "Customer Engagement" and ensure they are in compliance with our current product branding. See lines 48, 70, 115, 143, 154 (three uses), and 159.

@@ -11,10 +11,11 @@ ms.date: 05/23/2018
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Responding to DSR requests for system-generated logs in Power Apps, Power Automate, and Common Data Service

@@ -10,10 +10,11 @@ ms.date: 08/19/2019
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Regional and language options for your environment 
 

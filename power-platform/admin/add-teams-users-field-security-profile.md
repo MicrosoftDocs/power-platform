@@ -10,10 +10,11 @@ ms.date: 09/30/2017
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Add teams or users to a field security profile to control access
 

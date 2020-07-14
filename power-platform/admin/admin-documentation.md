@@ -9,9 +9,11 @@ ms.date: 06/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app:  
+search.app:
+  - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Administer Power Platform 
 

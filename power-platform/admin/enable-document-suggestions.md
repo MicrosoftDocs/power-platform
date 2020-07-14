@@ -9,10 +9,11 @@ ms.date: 06/26/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Enable document suggestions to recommend related documents
 

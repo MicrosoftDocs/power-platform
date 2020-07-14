@@ -10,10 +10,11 @@ ms.date: 04/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Admin Analytics for Power Apps
 

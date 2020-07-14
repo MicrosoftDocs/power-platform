@@ -10,10 +10,11 @@ ms.date: 07/07/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Preview: About on-premises gateway
 
