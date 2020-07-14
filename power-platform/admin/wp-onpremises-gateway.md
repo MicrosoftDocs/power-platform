@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/07/2020
+ms.date: 07/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -60,4 +60,5 @@ Updates are not auto-installed for the on-premises data gateway. It is highly en
 A recovery key is assigned (i.e., not auto-generated) by the administrator at the time the on-premises data gateway is installed. The recovery key is required if the gateway is to be relocated to another machine, or if the gateway is to be restored. Therefore, the key should be retained where other system administrators can locate it if necessary.
 
 ### See also
-[On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem)
+[On-premises data gateway](https://docs.microsoft.com/power-bi/service-gateway-onprem) <br />
+[On-premises server cipher suites and TLS requirements](onpremises-server-cipher-tls-requirements.md)

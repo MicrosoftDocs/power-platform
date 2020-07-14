@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/29/2020
+ms.date: 07/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -49,7 +49,7 @@ With version 9.0., you can connect your model-driven apps in Dynamics 365, such 
 
 3. **ApplicationImpersonation role**. You need to create and configure a service account with the **ApplicationImpersonation** role in [!INCLUDE[pn_Microsoft_Exchange](../includes/pn-microsoft-exchange.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Impersonation and EWS in Exchange](https://msdn.microsoft.com/library/office/dn722377\(v=exchg.150\).aspx).  
 
-4. **Secured connection**. The connection between model-driven apps in Dynamics 365 and Exchange must be encrypted via [TLS/SSL](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel).  
+4. **Secured connection**. The connection between model-driven apps in Dynamics 365 and Exchange must be encrypted via [TLS/SSL](https://docs.microsoft.com/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](onpremises-server-cipher-tls-requirements.md). 
 
 5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior facing connection.  
 
