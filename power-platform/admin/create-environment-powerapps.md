@@ -9,10 +9,11 @@ ms.date: 06/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Create and manage environments in the Power Apps Admin center

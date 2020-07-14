@@ -10,10 +10,11 @@ ms.date: 08/09/2018
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Administering a Power Apps enterprise deployment
 

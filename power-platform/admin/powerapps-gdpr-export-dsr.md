@@ -11,10 +11,11 @@ ms.date: 02/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Responding to Data Subject Rights (DSR) requests to export Power Apps customer data

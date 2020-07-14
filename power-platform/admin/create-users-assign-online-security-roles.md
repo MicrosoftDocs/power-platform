@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 05/14/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Create users and assign security roles
 

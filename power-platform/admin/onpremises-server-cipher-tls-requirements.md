@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 07/07/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # On-premises server cipher suites and TLS requirements 
 

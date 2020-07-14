@@ -10,10 +10,11 @@ ms.date: 04/23/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Install, update, or remove a preferred solution
 

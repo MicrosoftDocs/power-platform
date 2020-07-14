@@ -10,10 +10,11 @@ ms.date: 05/20/2020
 ms.author: mhart
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Install the Social Selling Assistant
 

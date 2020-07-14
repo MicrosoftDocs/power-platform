@@ -11,10 +11,11 @@ ms.topic: conceptual
 ms.date: 05/15/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Control user access to environments: security groups and licenses
 

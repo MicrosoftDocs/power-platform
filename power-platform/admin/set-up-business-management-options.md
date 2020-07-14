@@ -10,10 +10,11 @@ ms.date: 09/30/2017
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Set up Business Management options
 <!-- This is a topic linked from Help and is not in the TOC. -->

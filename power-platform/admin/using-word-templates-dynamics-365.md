@@ -10,10 +10,11 @@ ms.date: 05/28/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Use Word templates to create standardized documents
 

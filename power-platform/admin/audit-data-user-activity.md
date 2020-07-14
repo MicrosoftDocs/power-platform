@@ -10,10 +10,11 @@ ms.date: 05/07/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Audit data and user activity for security and compliance
 

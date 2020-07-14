@@ -9,10 +9,11 @@ ms.date: 02/18/2020
 ms.author: sabinn
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Data Integrator error management and troubleshooting
 

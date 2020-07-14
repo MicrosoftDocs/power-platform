@@ -11,9 +11,11 @@ ms.date: 06/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
+  - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Purchase Power Apps for your organization
