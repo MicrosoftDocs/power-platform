@@ -39,11 +39,35 @@ This can be useful if you use different environments for different purposes, or 
 >  
 > These previews, and any support Microsoft may elect to provide, are provided "as-is," "with all faults," "as available," and without warranty.
 
-## Upgrade existing bots (preview)
-You will need to upgrade existing bots (built before June 2020) before you can export them. Newly created bots don’t require an upgrade, and won't show an option to upgrade them. 
+## Add a bot to a solution
 
-**To update your existing bot**
+You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution. You must have at least one bot in a solution to properly export and import it to another environment.
 
+**Create a solution to manage import and export**
+
+1. Select **Settings**, and then **General settings**.
+
+2. Under **Export/Import bot**, select **Go to Power Apps Solutions**.
+ 
+    ![Link to the Power Apps admin center from Power Virtual Agents](media/export-settings-powerapps.png "Link to the Power Apps admin center from Power Virtual Agents")
+
+3. Sign in to Power Apps and select **New solution**. Enter the information for each of the fields as described in this table, then select **Create**.
+
+    ![New solution button highlighted](media/export-new-solution.png "New solution button highlighted")
+
+    Field | Description
+    -- | --
+    Display name | The name that is shown in the list of solutions. You can change this later.
+    Name | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can’t change it.
+    Publisher | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, see [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix)
+    Version | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.
+
+
+If you don't see the **Export/import bot** section under **Settings**, you will need to upgrade your bot:  
+
+>[!IMPORTANT]
+>Only follow thse steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
+>Newly created bots don’t require an upgrade, and won't show an option to upgrade them.
 
 1. Sign in to the Power Virtual Agents bot you want to upgrade. 
 
@@ -61,32 +85,6 @@ You will need to upgrade existing bots (built before June 2020) before you can e
 >If you still see the warning after a few days, create a support request with you Bot ID. Admins can use [Help + support](/power-platform/admin/get-help-support) in the Power Platform admin center to create a support request.  
 >  
 >![Warning about time needed to finish the upgrade](media/export-warning.png "Warning about time needed to finish the upgrade")
-
-## Add a bot to a solution
-
-You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution. You must have at least one bot in a solution to properly export and import it to another environment.
-
-**Create a solution to manage import and export**
-
-1. Select **Settings**, and then **General settings**.
-
-2. Select **Go to Power Apps Solutions**.
- 
-    ![Link to the Power Apps admin center from Power Virtual Agents](media/export-settings-powerapps.png "Link to the Power Apps admin center from Power Virtual Agents")
-
-3. Sign in to Power Apps and select **New solution**. Enter the information for each of the fields as described in this table, then select **Create**.
-
-    ![New solution button highlighted](media/export-new-solution.png "New solution button highlighted")
-
-    Field | Description
-    -- | --
-    Display name | The name that is shown in the list of solutions. You can change this later.
-    Name | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can’t change it.
-    Publisher | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, see [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix)
-    Version | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.
-
-
-
 
 
 
