@@ -205,7 +205,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 ## Upgrade or update a solution with a chatbot
 
-If you add new bot components (such as new topics or flows) to your bot in the PVA portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the *...* menu next to the name of the solution, and then choosing the new components before you export it.
+If you add new bot components (such as new topics or flows) to your bot in the PVA portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the *...* menu next to the name of the bot.
 
 ![Screenshot highlighting the add required components option under the more menu](media/export-add-required-components.png "Screenshot highlighting the add required components option under the more menu")
 
