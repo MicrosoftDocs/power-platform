@@ -43,9 +43,13 @@ This can be useful if you use different environments for different purposes, or 
 
 You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution. You must have at least one bot in a solution to properly export and import it to another environment.
 
-**Create a solution to manage import and export**
+**Create a solution to manage export and import**
+
+1. Sign in to the Power Virtual Agents bot you want to export. 
 
 1. Select **Settings**, and then **General settings**.
+
+    ![Screenshot showing the settings cog highlighted](media/export-settings.png "Screenshot showing the settings cog highlighted")
 
 2. Under **Export/Import bot**, select **Go to Power Apps Solutions**.
  
@@ -69,13 +73,7 @@ If you don't see the **Export/import bot** section under **Settings**, you will 
 >Only follow thse steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
 >Newly created bots don’t require an upgrade, and won't show an option to upgrade them.
 
-1. Sign in to the Power Virtual Agents bot you want to upgrade. 
-
-1. Select **Settings**, and then **General settings**.
-
-    ![Screenshot showing the settings cog highlighted](media/export-settings.png "Screenshot showing the settings cog highlighted")
-
-2. Select **Upgrade bot**. This should take a few minutes.
+1. Select **Upgrade bot**. This should take a few minutes.
 
     ![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot.png "Screenshot highlighting the Upgrade bot button")
 
