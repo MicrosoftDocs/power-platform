@@ -9,10 +9,11 @@ ms.date: 05/14/2020
 ms.author: sabinn
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Integrate data into Common Data Service
 

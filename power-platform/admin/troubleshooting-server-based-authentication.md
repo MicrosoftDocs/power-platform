@@ -10,10 +10,11 @@ ms.date: 08/02/2019
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Troubleshooting server-based authentication
 

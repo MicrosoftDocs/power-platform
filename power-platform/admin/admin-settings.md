@@ -10,10 +10,11 @@ ms.date: 12/03/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Manage Common Data Service settings
 

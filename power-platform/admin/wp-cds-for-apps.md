@@ -10,10 +10,11 @@ ms.date: 12/05/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # About Common Data Service 
 

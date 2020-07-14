@@ -10,10 +10,11 @@ ms.date: 02/25/2020
 ms.author: deonhe
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Admin Analytics for Microsoft Power Automate
 

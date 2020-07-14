@@ -9,10 +9,11 @@ ms.date: 10/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Download a list of apps created in your environments

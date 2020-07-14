@@ -10,10 +10,11 @@ ms.date: 07/03/2018
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # About the Microsoft Cloud Germany datacenter
 

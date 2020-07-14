@@ -10,10 +10,11 @@ ms.date: 02/27/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Edit properties of an environment 
 

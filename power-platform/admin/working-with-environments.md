@@ -10,8 +10,11 @@ ms.date: 06/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - maker
-search.app: 
+search.app:
+  - D365CE
   - PowerApps
+  - Powerplatform
+  - Flow
 ---
 # Working with environments and Microsoft Power Apps
 With Power Apps, you can work in different environments and easily switch among them. For an overview of environments, see [Environments overview](environments-overview.md), which explains in detail why you use environments and how you can create and manage them. The scope of this article will cover the following topics on environment:

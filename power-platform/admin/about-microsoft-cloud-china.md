@@ -10,10 +10,11 @@ ms.date: 10/30/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Model-driven apps in Dynamics 365 - operated by 21Vianet in China
 

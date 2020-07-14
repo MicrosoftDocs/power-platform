@@ -10,10 +10,11 @@ ms.date: 08/19/2019
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Enhance security by encrypting your data
 

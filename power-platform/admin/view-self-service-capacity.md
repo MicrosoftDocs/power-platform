@@ -10,10 +10,11 @@ ms.date: 01/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # View self-service storage capacity
 

@@ -10,10 +10,11 @@ ms.date: 06/19/2018
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Use the Microsoft 365 admin center to manage your subscription 
 

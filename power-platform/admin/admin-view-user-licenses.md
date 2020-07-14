@@ -9,10 +9,11 @@ ms.date: 05/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Download a list of active users in your tenant

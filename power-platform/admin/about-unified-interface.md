@@ -10,10 +10,11 @@ author: jimholtz
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # About Unified Interface for model-driven apps in Power Apps 
 

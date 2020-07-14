@@ -10,10 +10,11 @@ ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Track Outlook email by moving it to a tracked Exchange folder
 

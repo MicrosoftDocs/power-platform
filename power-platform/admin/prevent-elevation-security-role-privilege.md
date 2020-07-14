@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 03/30/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Create an administrative user and prevent elevation of security role privilege
 

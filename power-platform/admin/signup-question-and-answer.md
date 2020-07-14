@@ -10,9 +10,11 @@ ms.date: 12/18/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
+  - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Manage Power Apps licenses in your organization
