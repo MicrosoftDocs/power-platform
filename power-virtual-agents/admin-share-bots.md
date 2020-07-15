@@ -2,7 +2,7 @@
 title: "Share and collaborate on bots with other users"
 description: "Share Power Virtual Agents chatbots with other users, assign security roles, and work together."
 keywords: "Administration, share, multi-author, PVA"
-ms.date: 7/10/2020
+ms.date: 7/14/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Share your bot with other users
 
-Share your bot with other users so multiple users can edit, manage, and work together on a bot. 
+Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
 
 You can stop sharing a bot with individual users at any time. 
 
@@ -140,3 +140,33 @@ When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer
 ### Manage security roles
 You can [manage environment security roles at the Power Platform admin center](/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-common-data-service-database). 
 
+## Collaborate on bots
+
+After you've shared a bot, everyone can edit the bot's topics. 
+
+In the **Topics** list, you can see who's working on a topic under the **Currently editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email. 
+
+This can help prevent conflicts if multiple people are working on the same topic.
+
+![Screenshot showing the Power Virtual Agents list of topics with the Currently editing column highlighted](media/sharing-multi-authors.png)
+
+>[!NOTE]
+>The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
+
+A topic's **Properties** page also shows all the people currently editing a topic, as well as the last time someone saved.
+
+![Screenshot of a topic's details page on the properties pane with the Modified by section on the right highlighted](media/sharing-multi-details.png)
+
+A list of who's editing the page also appears as user icons on the top of the authoring canvas when you've opened a topic for editing.
+
+![Screenshot of a topic being edited with user profile pictures appearing on the top menu bar](media/sharing-multi-editing.png)
+
+If an author does not make any changes to the topic, or disconnects their computer or closes the browser window, they are considered to have abandoned the topic. After 30 minutes of inactivity the user will not be identified as editing the topic.
+
+Occasionally, multiple people might make changes to a topic and attempt to save their changes concurrently. For example, you might open and start editing a topic. Your coworker opens the same topic, makes a small change, and saves it. Then, when you've finished editing the topic, you go to save it, only to find yourself in a conflict state.
+
+Power Virtual Agents will detect this and prevent you from overwriting your coworker by prompting you with an option - you can reload the content with the latest changes (discarding your work), or you can save a copy of the topic (keeping your changes in a new, duplicate copy of the topic). 
+
+![Screenshot showing a prompt that says Updated content available and gives you options to discard your changes or save a copy](media/sharing-multi-conflict.png)
+
+If you save your changes to a new topic, you can then review your coworker's changes and merge the two topics, deleting the copy of the topic once you've finished.
