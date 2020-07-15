@@ -163,7 +163,7 @@ A list of who's editing the page also appears as user icons on the top of the au
 
 If an author does not make any changes to the topic, or disconnects their computer or closes the browser window, they are considered to have abandoned the topic. After 30 minutes of inactivity the user will not be identified as editing the topic.
 
-In some instances, multiple people might make changes to a topic and attempt to save their changes concurrently. For example, you might open and start editing a topic. Your coworker opens the same topic, makes a small change, and saves it. Then, when you've finished editing the topic, you go to save it, only to find yourself in a conflict state.
+Occasionally, multiple people might make changes to a topic and attempt to save their changes concurrently. For example, you might open and start editing a topic. Your coworker opens the same topic, makes a small change, and saves it. Then, when you've finished editing the topic, you go to save it, only to find yourself in a conflict state.
 
 Power Virtual Agents will detect this and prevent you from overwriting your coworker by prompting you with an option - you can reload the content with the latest changes (discarding your work), or you can save a copy of the topic (keeping your changes in a new, duplicate copy of the topic). 
 
