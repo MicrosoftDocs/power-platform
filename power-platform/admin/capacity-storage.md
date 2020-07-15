@@ -29,6 +29,8 @@ We're rolling out this feature now so check back if your user experience varies 
 > For licensing information, see the [Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
 > Common Data Service storage capacity isn't available for Microsoft Dynamics 365 US Government – Government Community Cloud (GCC), GCC High, Department of Defense, or Dynamics 365 online services operated by 21Vianet (operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd, a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., located in China).
+>
+> If you have purchased your Dynamics 365 subscription through a Microsoft partner, contact them to manage storage capacity. The steps below do not apply to partner-based subscriptions.
 
 ## Licenses for the new storage model
 
