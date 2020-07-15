@@ -67,15 +67,13 @@ You use solutions to export bots from one environment and import them into anoth
     Version | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.
 
 
-If you don't see the **Export/import bot** section under **Settings**, you will need to upgrade your bot:  
+If you don't see the **Export/import bot** section under **Settings**, you will need to upgrade your bot. Select **Upgrade bot**. This should take a few minutes
 
 >[!IMPORTANT]
->Only follow thse steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
+>Only follow these steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
 >Newly created bots don’t require an upgrade, and won't show an option to upgrade them.
 
-1. Select **Upgrade bot**. This should take a few minutes.
-
-    ![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot.png "Screenshot highlighting the Upgrade bot button")
+![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot.png "Screenshot highlighting the Upgrade bot button")
 
 >[!NOTE]
 >A notice might appear that says "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after 10 minutes, try refreshing your browser. You can continue working on your bot without losing any updates. 
