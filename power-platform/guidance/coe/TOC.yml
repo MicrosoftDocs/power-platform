@@ -19,6 +19,8 @@
       href: setup-auditlog.md
     - name: Set up Power BI report
       href: setup-powerbi.md
+    - name: Set up Power Apps Theming System
+      href: setup-theming.md
   - name: What's in the CoE Starter Kit
     items:  
     - name: CoE Starter Kit modules
@@ -30,7 +32,9 @@
       - name: Governance components
         href: governance-components.md       
       - name: Nurture components
-        href: nurture-components.md     
+        href: nurture-components.md   
+      - name: Theming components
+        href: theming-components.md    
       - name: Extend and modify components
         href: modify-components.md
   - name: How to use the CoE Starter Kit
