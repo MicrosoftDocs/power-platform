@@ -38,4 +38,10 @@ The Center of Excellence (CoE) Starter Kit is shipped in multiple modules:
 
     The Nurture Components solution contains assets that are relevant to everyone in the organization: admins, makers, and users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md) and [Use nurture components](nurture-components.md)
 
+- **Center of Excellence – Theming Components**  
+
+    An frequent ask when creating canvas apps apps is theming and specifically the ability to create apps that match the organization brand.  The assets in this solution will help you create, manage and share themes.
+
+    The Theming Components solution contains assets that are relevant to makers and designers. More information: [Set up theming components](setup-theming.md) and [Use theming components](theming-components.md)
+
 We recommend becoming familiar with the Center of Excellence Core Components solution before adding governance and nurture components.

@@ -17,11 +17,11 @@ search.app:
   - Powerplatform
 ---
 
-# Set up the Power Apps Theming System
+# Set up theming components
 
-The Power Apps Theming System allows you to create and manage themes for canvas apps. A theme contains a collection of styles that defines multiple design properties for controls and components such as colors, fonts, borders etc. These styles are then applied automatically when makers use the provided themed template app to create a new app, and controls and components are automatically themed.
+The theming components allow you to create, manage and share themes for canvas apps. A theme contains a collection of styles that defines multiple design properties for controls and components such as colors, fonts, borders etc. These styles are then applied automatically when makers use the provided themed template app to create a new app, and controls and components are automatically themed.
 
-The Power Apps Theming System solution contains assets that are relevant to makers as well as designers.
+The theming components solution contains assets that are relevant to makers as well as designers.
 
 >[!IMPORTANT]
 >The Power Apps Theming System solution does not have a dependency on other components of the CoE Starter Kit. It can be used independently.
@@ -36,7 +36,7 @@ Please check out the [prerequisites](setup.md#prerequisites) for using the solut
 1. The Power Apps Theming System solution contains PCF (Power Apps component framework) elements. Publishing of canvas apps with code components has to be enabled on the environment.
 
     1. Go to the [Power Platform Admin Center](https://aka.ms/ppac).
-    1. Go to your CoE environment. If you are already using the CoE Starter Kit, you will have created your CoE Environment as part of setting up the [Core Components](setup-core-components.md). If you are not already using the CoE Starter Kit, please create a new environment now.
+    1. Go to your CoE environment.
     1. Select **Settings**.
 
         ![Power Platform Admin Center - Environment Overview](media/theming-1.png "Power Platform Admin Center - Environment Overview")
@@ -48,10 +48,9 @@ Please check out the [prerequisites](setup.md#prerequisites) for using the solut
 
 ## Import the solution
 
-1. Go to your new environment.
+1. Go to [make.powerapps.com](<https://make.powerapps.com>)
 
-    1. Go to [make.powerapps.com](<https://make.powerapps.com>)
-    1. Go to the environment you just created, in which the CoE solution will be hosted. In the example in the following screenshot, we're importing to the environment named **Contoso CoE**.
+1. Go to your CoE environment. In the example in the following screenshot, we're importing to the environment named **Contoso CoE**.
 
      ![Power Apps maker portal environment selection](media/coe6.png "Power Apps maker portal environment selection")
 
@@ -70,3 +69,5 @@ Please check out the [prerequisites](setup.md#prerequisites) for using the solut
 1. When the import succeeds, the list of the components that were imported is displayed.
 
 1. Select **Close**.
+
+You can now [use the theming components](theming-components.md).

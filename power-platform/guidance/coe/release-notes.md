@@ -25,17 +25,21 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Component     | Latest version |
 |--------|-------------|
-| Core (Admin) Components |   [1.52](release-notes/core-1.52.md)    |
+| Core (Admin) Components |   [1.53](release-notes/core-1.53.md)    |
 | Governance (Compliance and Reporting) Components |   [1.18](release-notes/governance-1.18.md)  |
-| Nurture |   [1.14](release-notes/nurture-1.14.md)  |
+| Nurture Components |   [1.14](release-notes/nurture-1.14.md)  |
 | Audit Log |   [1.0.0.17](release-notes/auditlog-1.0.0.17.md) |
+| Theming Components |   [1.1](release-notes/theming-1.1.md) |
 
-<!-- NOTE: We will add this with the next release to have a version history, but had feedback that adding this with the first release adds confusion for users who are not familiar with the Power Apps release notes
 ### All Core (Admin) Components versions
 
 |  Version | First available |
 | --------- | ---------------|
-| [1.48](release-notes/core-1.48.md) | June 27, 2020 |
+| [1.52](release-notes/core-1.48.md) | July 8, 2020 |
+| [1.53](release-notes/core-1.48.md) | July 14 27, 2020 |
+
+<!-- NOTE: We will add this with the next release to have a version history, but had feedback that adding this with the first release adds confusion for users who are not familiar with the Power Apps release notes
+### All Core (Admin) Components versions
 
 ### All Governance (Compliance and Reporting) Components versions
 

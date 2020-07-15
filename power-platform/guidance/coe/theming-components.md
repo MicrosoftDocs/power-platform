@@ -18,7 +18,7 @@ search.app:
 ---
 # Use theming components
 
-An frequent question we get when it comes to creating canvas apps is theming and specifically the ability to create apps that match the organization brand.  The assets in this solution will help you create, manage and share themes. More information: [Set up theming components](setup-theming.md)
+An frequent question when it comes to creating canvas apps is theming and specifically the ability to create apps that match the organization brand.  The assets in this solution will help you create, manage and share themes. More information: [Set up theming components](setup-theming.md)
 
 The theming components allows you to create and manage themes for canvas apps. A theme contains a collection of styles that defines multiple design properties for controls and components such as colors, fonts, borders etc. These styles are then applied automatically when makers use the provided themed template app to create a new app, and controls and components are automatically themed.
 

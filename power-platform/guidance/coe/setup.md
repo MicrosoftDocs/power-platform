@@ -54,6 +54,8 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
 - Both the Governance Components and Nurture Components solutions require the core solution before they can be installed.
 
+- The Theming Components can be used independently, and have no dependency on other CoE Starter Kit components.
+
 These are the requirements for using the solution.
 
 - Power Apps Premium license (per app, per user, or Dynamics 365 Online licenses).
@@ -69,6 +71,7 @@ Set up the CoE Starter Kit by following the the instructions:
 - [Set up governance components](setup-governance-components.md)
 - [Set up nurture components](setup-nurture-components.md)
 - [Set up the CoE Power BI dashboard](setup-powerbi.md)
+- - [Set up the Theming dashboard](setup-theming.md)
 
 ## Extending the starter kit
 
