@@ -19,7 +19,7 @@
       href: setup-auditlog.md
     - name: Set up Power BI report
       href: setup-powerbi.md
-    - name: Set up Power Apps Theming System
+    - name: Set up theming components
       href: setup-theming.md
   - name: What's in the CoE Starter Kit
     items:  
