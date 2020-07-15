@@ -32,7 +32,7 @@
       - name: Governance components
         href: governance-components.md       
       - name: Nurture components
-        href: nurture-components.md   
+        href: nurture-components.md
       - name: Theming components
         href: theming-components.md    
       - name: Extend and modify components

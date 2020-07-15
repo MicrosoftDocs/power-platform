@@ -35,8 +35,8 @@ Select each version below to see release notes and updates for each component. Y
 
 |  Version | First available |
 | --------- | ---------------|
-| [1.52](release-notes/core-1.52.md) | July 8, 2020 |
 | [1.53](release-notes/core-1.53.md) | July 14 27, 2020 |
+| [1.52](release-notes/core-1.52.md) | July 8, 2020 |
 
 <!-- NOTE: We will add this with the next release to have a version history, but had feedback that adding this with the first release adds confusion for users who are not familiar with the Power Apps release notes
 ### All Core (Admin) Components versions
