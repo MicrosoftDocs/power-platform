@@ -25,5 +25,5 @@ Version 1.1 for the CoE Starter Kit Theming Components is now available. This ar
 
 This is the first version of the Theming components:
 
-- [Setup Theming components](setup-theming.md)
-- [Use Theming components](theming-components.md)
+- [Setup Theming components](../setup-theming.md)
+- [Use Theming components](../theming-components.md)
