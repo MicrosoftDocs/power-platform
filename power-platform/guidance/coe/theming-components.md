@@ -18,16 +18,16 @@ search.app:
 ---
 # Use theming components
 
-An frequent question when it comes to creating canvas apps is theming and specifically the ability to create apps that match the organization brand.  The assets in this solution will help you create, manage and share themes. More information: [Set up theming components](setup-theming.md)
+An frequent ask when creating canvas apps apps is theming and specifically the ability to create apps that match the organization brand.  The assets in this solution will help you create, manage and share themes. More information: [Set up theming components](setup-theming.md)
 
-The theming components allows you to create and manage themes for canvas apps. A theme contains a collection of styles that defines multiple design properties for controls and components such as colors, fonts, borders etc. These styles are then applied automatically when makers use the provided themed template app to create a new app, and controls and components are automatically themed.
+The theming components allow you to create and manage themes for canvas apps. A theme contains a collection of styles that defines multiple design properties for controls and components such as colors, fonts, borders etc. These styles are then applied automatically when makers use the provided themed template app to create a new app, and controls and components are automatically themed.
 
-The theming components ensure makers can focus on what matters - the business logic and problem they're trying to solve, and end users will have a consistent experience when using apps.
+The theming components ensure makers can focus on what matters - the business logic and problem they're trying to solve - and end users will have a consistent experience when using apps.
 
 Here's a breakdown of the assets that form the Theming Components solution:
 
-- [Theme Editor](#apps)
-- [Theme Gallery](#apps)
+- [Theme Editor](#theme-editor)
+- [Theme Gallery](#theme-gallery)
 - [Shared Component Library](#components)
 
 ## Entities
@@ -50,6 +50,9 @@ The Theme editor app allows designers to create and manage themes. A theme conta
 
 **Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for every app user.
 
+>[!NOTE]
+> If you have recently enabled the use of [code components](setup-theming.md) in the environment, you might have to edit and re-publish the Theme Editor in order for them to display the components correctly.
+
 The theme editor provides an overview of existing themes, users can create or edit a theme.
 
 ![Theme Editor](media/theming-4.png "Theme Editor")
@@ -60,7 +63,7 @@ Use the styles (color picker, font picker) to create the style and see a real ti
 
 ![Theme Editor - Create Theme](media/theming-5.png "Theme Editor - Create Theme")
 
-Once done authoring the theme, theme designers will need to update the *AppTemplatePhone.msapp* & *AppTemplateTablet.msapp* files and upload them. This step ensures that when app makers download the apps, it’s ready to be used with the correct theme applied.  
+Once done authoring the theme, select *Publish Theme*. Here, theme designers will need to update the *AppTemplatePhone.msapp* & *AppTemplateTablet.msapp* files and upload them. This step ensures that the app template is ready to be used by makers.
 
 ![Theme Editor - Publish Theme](media/theming-6.png "Theme Editor - Publish Theme")
 
@@ -71,8 +74,9 @@ Once done authoring the theme, theme designers will need to update the *AppTempl
 1. Select **Solutions** on the left navigation bar.
 1. Select the **Center of Excellence - Theming** solution.
 1. Edit the **AppTemplatePhone** canvas app.
-1. Select **App** > **OnStart** and replace the first line in the formula with the new formula you've copied in the first step. Make sure you don't replace any other formulas in the *OnStart* function.
-    ![Theme Editor - Edit App Template](media/theming-8.png "Theme Editor - Edit App Template")
+    ![Theme Editor - Edit App Template](media/theming-7.png "Theme Editor - Edit App Template")
+1. Select **App** > **OnStart** and replace the first line in the formula with the new formula you've copied from the Theme Editor app. Make sure you don't replace any other formulas in the *OnStart* function and that the line finishes with a semicolon.
+    ![Theme Editor - Insert OnStart formula](media/theming-8.png "Theme Editor - Insert OnStart formula")
 1. Select **File > Save as > This Computer** to save the file locally.
     ![Theme Editor - Save Template](media/theming-9.png "Theme Editor - Save Template")
 1. Download the file.
@@ -123,7 +127,7 @@ Create a new app based on the template.
 
 [Component libraries](https://docs.microsoft.com/powerapps/maker/canvas-apps/component-library) provides a centralized and managed repository of components for reusability. Component libraries are the recommended way of sharing components across apps.
 
-The Shared Component Library part of the Theming components contains a Header, TabControl and PreLoader component. You can extend this component library with further components you want your makers to use.
+The Shared Component Library part of the Theming components contains a Header, TabControl and PreLoader component. The Shared Component Library is not editable. Make a copy of the library before expanding it.
 
 **Permission**: Share the Shared Component Library with makers in your organization. Makers are using the same components to create their apps will ensure consistent look and feel across various apps.
 

@@ -71,7 +71,7 @@ Set up the CoE Starter Kit by following the the instructions:
 - [Set up governance components](setup-governance-components.md)
 - [Set up nurture components](setup-nurture-components.md)
 - [Set up the CoE Power BI dashboard](setup-powerbi.md)
-- - [Set up the Theming dashboard](setup-theming.md)
+- [Set up the Theming components](setup-theming.md)
 
 ## Extending the starter kit
 

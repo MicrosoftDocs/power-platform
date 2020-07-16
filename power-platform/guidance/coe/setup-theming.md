@@ -24,19 +24,19 @@ The theming components allow you to create, manage and share themes for canvas a
 The theming components solution contains assets that are relevant to makers as well as designers.
 
 >[!IMPORTANT]
->The Power Apps Theming System solution does not have a dependency on other components of the CoE Starter Kit. It can be used independently.
+>The theming components solution does not have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 Please check out the [prerequisites](setup.md#prerequisites) for using the solution.
 
-- If you are not already using the CoE Starter Kit, we recommend [creating a new environment](https://docs.microsoft.com/power-platform/admin/create-environment) for the CoE solutions.
+- If you are not already using the CoE Starter Kit, we recommend [creating a new environment](https://docs.microsoft.com/power-platform/admin/create-environment) for CoE solutions.
 - If you are already using other CoE Starter Kit components, please use the environment created as part of setting up the [Core Components](setup-core-components.md) for this solution.
 
 ## Prerequisites
 
-1. The Power Apps Theming System solution contains PCF (Power Apps component framework) elements. Publishing of canvas apps with code components has to be enabled on the environment.
+1. The Power Apps Theming System solution contains PCF (Power Apps component framework) elements. Publishing of canvas apps with code components has to be enabled for the environment.
 
     1. Go to the [Power Platform Admin Center](https://aka.ms/ppac).
-    1. Go to your CoE environment.
+    1. Go to your CoE environment, or the environment where you plan to import the solution.
     1. Select **Settings**.
 
         ![Power Platform Admin Center - Environment Overview](media/theming-1.png "Power Platform Admin Center - Environment Overview")
@@ -47,6 +47,10 @@ Please check out the [prerequisites](setup.md#prerequisites) for using the solut
         ![Enable publishing of canvas apps with code components in the Power Platform Admin Center](media/theming-3.png "Enable publishing of canvas apps with code components in the Power Platform Admin Center")
 
 ## Import the solution
+
+1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+
+1. Extract the zip file.
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>)
 
