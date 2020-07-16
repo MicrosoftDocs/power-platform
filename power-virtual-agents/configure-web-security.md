@@ -44,21 +44,21 @@ Any access to the bot that does not provide this security measure will not work.
 
 2. Turn the **Require secured access** switch to **Enabled**. 
  
-    :::image type="content" source="/media/configure-web-security/enable-web-security.png" alt-text=" Screenshot showing the Web channel security page.:::
+    :::image type="content" source="/media/configure-web-security/enable-web-security.png" alt-text="Screenshot showing the Web channel security page.":::
 
 >[!WARNING] 
 > Once "Require secured access" is enabled or disabled, the system can take up to two hours to propagate the settings and take effect. Until then, the previous setting will be in effect.  
 >You should plan ahead to avoid exposing your bot unintentionally.
 
-If you need to disable the web channel security option, you can do so by switched **Require secured access** to **Disabled**. Note that disabling secured access can take up to two hours.
+If you need to disable the web channel security option, you can do so by switching **Require secured access** to **Disabled**. Note that disabling secured access can take up to two hours to propagate.
  
-:::image type="content" source="/media/configure-web-security/disable-web-security.png" alt-text=" Screenshot showing a confirmation message when disabling secured access which says This action renders the Demo website available, as well as an Direct Line channel not using a secret or token. This action can take up to two hours to take effect.:::
+:::image type="content" source="/media/configure-web-security/disable-web-security.png" alt-text="Screenshot showing a confirmation message when disabling secured access which says This action renders the Demo website available, as well as an Direct Line channel not using a secret or token. This action can take up to two hours to take effect.":::
 
-# Use secrets or tokens 
+## Use secrets or tokens 
 
 If you're creating a service-to-service app, specifying the secret in the authorization header requests may be the simplest approach. 
 
-If you're writing an app where the client runs in a web browser or mobile app, or otherwise the code might be visible to customers, you must exchange your secret for a token, otherwise your secret can be compromised. Specify the secret in the authorization header in the request to acquire a token. 
+If you're writing an app where the client runs in a web browser or mobile app, or otherwise the code might be visible to customers, you must exchange your secret for a token. If you don't use a token, your secret can be compromised. Specify the secret in the authorization header in the request to acquire a token. 
 
 Tokens only work for a single conversation and will expire unless refreshed. 
 
@@ -70,7 +70,7 @@ Choose the security model that works best for your situation.
 
 ## Obtain the secrets
 
-You will need the secrets if you need to specify it in your app's authorization header requests or similar.
+You will need the secret so you can specify it in your app's authorization header requests or similar.
 
 1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon.png "Settings icon"), and then select **Web channel security**.
 
@@ -96,7 +96,7 @@ To regenerate the secret, select **Regenerate** next to the secret.
 
 You can generate a token that can be used when starting a single bot conversation. See the section **Get Direct Line token** in the [Add bot to mobile and custom apps](publication-connect-bot-to-custom-application.md#get-direct-line-token) topic for more information.
 
-1. [Obtain the secret](obtain-the-secrets). 
+1. [Obtain the secret](#obtain-the-secrets). 
 
 2. Issue the following request in your service code to exchange the secret for a token. 
 
@@ -138,7 +138,7 @@ HTTP/1.1 200 OK
 
 If the request is successful, the response contains a token that is valid for one conversation and an `expires_in` value that indicates the number of seconds until the token expires. 
 
-For the token to remain useful, you must [refresh the token](refresh-a-token) before it expires.
+For the token to remain useful, you must [refresh the token](#refresh-a-token) before it expires.
 
 ## Refresh a token
 For details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API – Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token) topic.
@@ -147,4 +147,4 @@ For details on refreshing a token, see the section **Refresh a Direct Line token
 - [Key Concepts - Publish your bot](publication-fundamentals-publish-channels.md)
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)
 - [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
-- 
+
