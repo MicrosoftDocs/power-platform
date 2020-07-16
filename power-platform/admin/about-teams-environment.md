@@ -9,10 +9,11 @@ ms.date: 06/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # About the Teams environment
 
