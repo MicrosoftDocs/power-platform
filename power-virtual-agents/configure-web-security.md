@@ -44,7 +44,7 @@ Any access to the bot that does not provide this security measure will not work.
 
 2. Turn the **Require secured access** switch to **Enabled**. 
  
-    :::image type="content" source="/media/configure-web-security/enable-web-security.png" alt-text="Screenshot showing the Web channel security page.":::
+    ![Screenshot showing the Web channel security page.](media/configure-web-security/enable-web-security.png "Screenshot showing the Web channel security page.")
 
 >[!WARNING] 
 > Once "Require secured access" is enabled or disabled, the system can take up to two hours to propagate the settings and take effect. Until then, the previous setting will be in effect.  
@@ -52,7 +52,7 @@ Any access to the bot that does not provide this security measure will not work.
 
 If you need to disable the web channel security option, you can do so by switching **Require secured access** to **Disabled**. Note that disabling secured access can take up to two hours to propagate.
  
-:::image type="content" source="/media/configure-web-security/disable-web-security.png" alt-text="Screenshot showing a confirmation message when disabling secured access which says This action renders the Demo website available, as well as an Direct Line channel not using a secret or token. This action can take up to two hours to take effect.":::
+:::image type="content" source="media/configure-web-security/disable-web-security.png" alt-text="Screenshot showing a confirmation message when disabling secured access which says This action renders the Demo website available, as well as an Direct Line channel not using a secret or token. This action can take up to two hours to take effect.":::
 
 ## Use secrets or tokens 
 
