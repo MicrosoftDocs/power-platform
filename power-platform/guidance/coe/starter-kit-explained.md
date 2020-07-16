@@ -40,7 +40,7 @@ The Center of Excellence (CoE) Starter Kit is shipped in multiple modules:
 
 - **Center of Excellence – Theming Components**  
 
-    An frequent ask when creating canvas apps apps is theming and specifically the ability to create apps that match the organization brand.  The assets in this solution will help you create, manage and share themes.
+    A frequent ask when creating canvas apps apps is theming and specifically the ability to create apps that match the organization brand.  The assets in this solution will help you create, manage and share themes.
 
     The Theming Components solution contains assets that are relevant to makers and designers. More information: [Set up theming components](setup-theming.md) and [Use theming components](theming-components.md)
 
