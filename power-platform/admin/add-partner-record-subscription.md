@@ -2,11 +2,10 @@
 title: "Add a Partner of Record (POR)  | MicrosoftDocs"
 description: Add a Partner of Record (POR)
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 07/16/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -46,7 +45,7 @@ You can choose to work with a designated Microsoft partner who can provide the s
 
 1. [!INCLUDE[proc_office365_signin](../includes/proc-office365-signin.md)]  
   
-2. Go to **Billing** > **Products & services** and select a subscription.  
+2. Go to **Billing** > **Your products** and select a subscription.  
   
 3. Under the subscription, select the **Partner** tab.
   
