@@ -88,3 +88,7 @@ To add custom connectors shipped as part of this solution to the business data&n
     ```powershell
     Add-CustomConnectorToPolicy -PolicyName {your policy name GUID} -ConnectorName {the nName you copied from above} -GroupName hbi -ConnectorId /providers/Microsoft.PowerApps/scopes/admin/environments/{your environment GUID{/apis/{your connector name} -ConnectorType "Custom"
     ```
+
+## Shared Component Library in the Theming components
+
+The Shared Component Library part of the [Theming components](theming-components.md) is not editable. Make your own copy to expand it.
