@@ -1,8 +1,8 @@
 ---
 title: "Export and import bots using solutions (preview)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
-keywords: ""
-ms.date: 6/01/2020
+keywords: "export, import, transfer, environment, PVA"
+ms.date: 7/16/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
