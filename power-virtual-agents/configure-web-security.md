@@ -10,7 +10,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: clmori
-ms.custom: authentication
+ms.custom: configuration, ceX
 ms.collection: virtual-agent
 ---
 
@@ -141,7 +141,48 @@ If the request is successful, the response contains a token that is valid for on
 For the token to remain useful, you must [refresh the token](#refresh-a-token) before it expires.
 
 ## Refresh a token
-For details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token) topic.
+
+A token can be refreshed an unlimited amount of times, as long as it has not expired. 
+
+An expired token cannot be refreshed. 
+
+To refresh a token, issue the following request and replace `<TOKEN TO BE REFRESHED>` with the token you want to refresh.
+
+```html
+POST https://???.com/v3/directline/tokens/refresh
+Authorization: Bearer <TOKEN TO BE REFRESHED>
+```
+
+The following snippets provide examples of the refresh token request and response.
+
+### Sample refresh request
+
+```html
+POST https://???.com/v3/directline/tokens/refresh
+Authorization: Bearer CurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xn
+```
+
+### Sample refresh response
+
+If the request is successful, the response contains a new token that is valid for the same conversation as the previous token and an `expires_in` value that indicates the number of seconds until the new token expires. 
+
+For the new token to remain useful, you must refresh the token again before it expires.
+
+```html
+HTTP/1.1 200 OK
+[other headers]
+```
+
+```json
+{
+  "conversationId": "abc123",
+  "token": "RCurR_XV9ZA.cwA.BKA.y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xniaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0",
+  "expires_in": 1800
+}
+```
+
+
+For more details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token) topic.
 
 ## See also
 - [Key Concepts - Publish your bot](publication-fundamentals-publish-channels.md)
