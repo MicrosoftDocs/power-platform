@@ -19,7 +19,7 @@ ms.collection: virtual-agent
 
 When you create a Power Virtual Agents bot, it is immediately available in the **Demo website** and  **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed. 
 
-Users can find the bot ID directly from within Power Virtual Agents, by receiving it from someone, or even by guessing it. 
+Users can find the bot ID directly from within Power Virtual Agents or by receiving it from someone. 
 
 Depending on the bot's capability and sensitivity that might not be desirable. 
 
@@ -58,7 +58,7 @@ If you need to disable the web channel security option, you can do so by switchi
 
 If you're creating a service-to-service app, specifying the secret in the authorization header requests may be the simplest approach. 
 
-If you're writing an app where the client runs in a web browser or mobile app, or otherwise the code might be visible to customers, you must exchange your secret for a token. If you don't use a token, your secret can be compromised. Specify the secret in the authorization header in the request to acquire a token. 
+If you're writing an app where the client runs in a web browser or mobile app, or otherwise the code might be visible to customers, you must exchange your secret for a token. If you don't use a token, your secret can be compromised. When you're making the request to acquire the token in your service, specify the secret in the authorization header. 
 
 Tokens only work for a single conversation and will expire unless refreshed. 
 
