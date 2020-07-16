@@ -250,7 +250,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
 
 5. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Power Virtual Agents portal.
 
-    ![](media/sso-pva-botid.png "")
+    ![Bot ID shown on the Mobile app channel configuration page](media/sso-pva-botid.png "Bot ID shown on the Mobile app channel configuration page")
    
 
 
