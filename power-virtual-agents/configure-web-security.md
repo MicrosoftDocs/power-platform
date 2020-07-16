@@ -1,15 +1,15 @@
 ---
 title: "Configure web channel security"
-description: "Enable your bot to authenticate an already-signed-in user"
-keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider"
-ms.date: 6/29/2020
+description: "Use Direct Line tokens or secrets to secure access to your bots."
+keywords: "direct line, token, secret, access, secure, security, channels, PVA"
+ms.date: 7/16/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: pawant
+ms.reviewer: clmori
 ms.custom: authentication
 ms.collection: virtual-agent
 ---
