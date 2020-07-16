@@ -117,7 +117,7 @@ The following snippets provide examples of the generate token request and its re
 ### Sample generate token request
 
 ```html
-POST https://powerva.microsoft.com/api/botmanagement/v1/directline/token?botId={botId}
+POST https://powerva.microsoft.com/api/botmanagement/v1/directline/token?botId=<BOT ID>
 Authorization: Bearer RCurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0
 ```
 
@@ -149,7 +149,7 @@ An expired token cannot be refreshed.
 To refresh a token, issue the following request and replace `<TOKEN TO BE REFRESHED>` with the token you want to refresh.
 
 ```html
-POST https://???.com/v3/directline/tokens/refresh
+POST https://directline.botframework.com/v3/directline/tokens/refresh
 Authorization: Bearer <TOKEN TO BE REFRESHED>
 ```
 
@@ -158,7 +158,7 @@ The following snippets provide examples of the refresh token request and respons
 ### Sample refresh request
 
 ```html
-POST https://???.com/v3/directline/tokens/refresh
+POST https://directline.botframework.com/v3/directline/tokens/refresh
 Authorization: Bearer CurR_XV9ZA.cwA.BKA.iaJrC8xpy8qbOF5xnR2vtCX7CZj0LdjAPGfiCpg4Fv0y8qbOF5xPGfiCpg4Fv0y8qqbOF5x8qbOF5xn
 ```
 
