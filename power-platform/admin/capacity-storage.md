@@ -1,13 +1,12 @@
 ---
 title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 07/15/2020
+ms.date: 07/16/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
 author: "jimholtz"
 ms.author: "jimholtz"
-manager: "kvivek"
 search.audienceType: 
   - admin
 search.app:
