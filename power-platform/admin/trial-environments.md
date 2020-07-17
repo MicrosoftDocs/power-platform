@@ -162,7 +162,7 @@ It might take several hours to convert to a production environment.
 
 The organization (tenant) admin can determine who is allowed to create trial environments and convert to production. If allowed and you have 1GB of available production database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial environment database exceeds available production capacity. To determine the size of the trial environment database see: [Common Data Service storage capacity](capacity-storage.md).
 
-## I can see a trial (subscription-based) environment type option but can't create this trial type
+### I can see a trial (subscription-based) environment type option but can't create this trial type
 Make sure that you have an active Dynamics 365 Trial subscription.
 
 ### How can I retain my data and resources if I don't have a way to convert the trial (standard) environment to a production environment?
