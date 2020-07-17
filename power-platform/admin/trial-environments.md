@@ -26,7 +26,7 @@ Using the Power Platform admin center, you can create  environments of multiple 
 Companies and admins do not all have a similar approach towards trials. This is especially true when it comes to allowing users to try new capabilities. Some companies allow their users to try features in a self-serve manner. Others want admins to completely control what is being trialed and who is licensed to use the trial. The two trial types provide this level of control.
 
 - **Trial (standard)**: This is the trial type that organizations usually rollout to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials or only organization admins. If allowed for users, then any user from that organization can create a 30-day trial environment. After 30 days, the environment is disabled and deleted. 
-- **Trial (subscription-based)**: This is the trial type that organizations can use to develop larger, multi-user and multi-department solutions and do proof of concept review. Tenant admins can add a trial (subscription-based) to their tenant or new customers can sign up for a new tenant and become the Global admin. For new customers, an admin-managed subscription is created with a set number of licenses (usually 25 licenses); admins control license assignment to other users. An admin-managed subscription has a start and end date that can be extended. 
+- **Trial (subscription-based)**: This is the trial type that organizations can use to develop larger, multi-user and multi-department solutions and do proof of concept reviews. Tenant admins can add a trial (subscription-based) to their tenant or new customers can sign up for a new tenant and become the Global admin. For new customers, an admin-managed subscription is created with a set number of licenses (usually 25 licenses); admins control license assignment to other users. An admin-managed subscription has a start and end date that can be extended. 
 
 Both types of environments do not consume from paid capacity and can be converted to production environments by consuming from paid capacity which will prevent trial environment disablement and deletion. Production environments follow the paid license lifecycle. 
 
@@ -46,7 +46,7 @@ The type of trial you create depends on where you start and your tenant-level pe
 
 Follow these steps to create a trial (standard) environment in the Power Platform admin center.
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
 2. Go to **Environments**, and then select **+ New**.
 
@@ -83,7 +83,7 @@ Follow these steps to create a trial (standard) environment in the Power Platfor
 
 Follow these steps to create a trial (subscription-based) environment in the Power Platform admin center.
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
 2. Go to **Environments**, and then select **New**. 
 
@@ -110,8 +110,8 @@ Follow these steps to create a trial (subscription-based) environment in the Pow
    |Language     | The default language for this environment.        |
    |URL | The environment name to include in the URL.     |
    |Currency     | The base currency used for reporting.         |
-   |Enable Dynamics 365 apps | Select **Yes** to  display the following setting. Select **No**, to provision an environment with no applications included. **No** can be  used to trial low-code and no-code applications and flows but not the full Dynamics 365 applications plaform.  |
-   |Automatically deploy these apps  | If you selected **Yes** above, select **All enterprise applications**, **Customoer Service Pro** or **Sales Pro** to deploy and try Dynamics 365 applications. Select **None** to provision an environment with no applications included.|
+   |Enable Dynamics 365 apps | Select **Yes** to  display the following setting. Select **No**, to provision an environment with no applications included. **No** can be  used to trial low-code and no-code applications and flows but not the full Dynamics 365 applications platform.  |
+   |Automatically deploy these apps  | If you selected **Yes** above, select **All enterprise applications**, **Customoer Service Pro**, or **Sales Pro** to deploy and try Dynamics 365 applications. Select **None** to provision an environment with no applications included.|
    |Security group | Select a security group to restrict access to this environment. |
    |Deploy sample apps and data  | This appears if you select **No** for **Enable Dynamics 365 apps**. Select **Yes** to include sample apps and data. Sample data gives you something to experiment with as you learn. |
 
@@ -122,7 +122,7 @@ Follow these steps to create a trial (subscription-based) environment in the Pow
 
 To determine when a trial environment will expire:
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
 2. Go to **Environments** > [select a trial environment] > **See all**. Check out **Day(s) remain**.
 
@@ -146,7 +146,7 @@ A trial (subscription-based) lasts as long as the subscription is active. To det
 
 Follow these steps to convert a either trial type to a production environment:
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) with admin credentials.
 
 2. Go to **Environments** > [select a trial environment] > **Convert to production**.
 
