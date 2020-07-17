@@ -24,7 +24,7 @@ Using the Power Platform admin center, you can create four types of Common Data 
 You can adjust who can create trials through trial environments and subscription licenses.
 
 > [!NOTE]
-> Trial mentions in other topics mean the trial (standard) type and not trial (subscription-based).
+> Trial mentions in other topics refer to the trial (standard) type and not trial (subscription-based).
 
 ## Trial (standard) environments
 
