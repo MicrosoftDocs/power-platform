@@ -48,6 +48,8 @@ To give these administrators access to additional areas, such as the Sales, Mark
   
 > [!NOTE]
 > Global and Power Platform service administrators who don't have a license are automatically synced into the environment with an access mode of 'Administrative' while administrators who have a license are synced into the environment with an access mode of 'Read-Write'.  These administrators are assigned a System Administrator security role. 
+> 
+> Unlicensed administrators who need to work with Power Apps for Admins PowerShell module or management connectors need to sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) at least once before invoking these administrative commands.
 
 ### See also  
 [Assigning admin roles](https://support.office.com/article/Assign-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) <br />

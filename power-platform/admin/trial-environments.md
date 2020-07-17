@@ -72,7 +72,7 @@ Follow these steps to create a trial (standard) environment in the Power Platfor
    |Language     | The default language for this environment.        |
    |Currency     | The base currency used for reporting.         |
    |Enable Dynamics 365 apps | Select **Yes** and make a selection to automatically deploy apps such as Dynamics 365 Sales and Dynamics 365 Customer Service. |
-   |Deploy sample apps and data     | This setting is preset to **No** can cannot be changed.      |
+   |Deploy sample apps and data     | This setting is preset to **No** and can't be changed.      |
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
@@ -161,6 +161,9 @@ It might take several hours to convert to a production environment.
 ### Who can convert a trial environment to a production environment?
 
 The organization (tenant) admin can determine who is allowed to create trial environments and convert to production. If allowed and you have 1GB of available production database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial environment database exceeds available production capacity. To determine the size of the trial environment database see: [Common Data Service storage capacity](capacity-storage.md).
+
+## I can see a trial (subscription-based) environment type option but can't create this trial type
+Make sure that you have an active Dynamics 365 Trial subscription.
 
 ### How can I retain my data and resources if I don't have a way to convert the trial (standard) environment to a production environment?
 
