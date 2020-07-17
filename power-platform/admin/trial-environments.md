@@ -4,11 +4,10 @@ description: About trial and trial (subscription-based) environments
 author: imadyanni
 ms.author: imadyanni
 ms.reviewer: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 search.audienceType: 
   - admin
 search.app:
@@ -23,6 +22,9 @@ search.app:
 Using the Power Platform admin center, you can create four types of Common Data Service environments: sandbox, production, trial, or trial (subscription-based). Trials are useful for trying out model-driven apps in Dynamics 365 at no cost. Choose either a trial (standard) or trial (subscription-based) environment to get started with Dynamics 365 apps.
 
 You can adjust who can create trials through trial environments and subscription licenses.
+
+> [!NOTE]
+> Trial mentions in other topics mean the trial (standard) type and not trial (subscription-based).
 
 ## Trial (standard) environments
 
