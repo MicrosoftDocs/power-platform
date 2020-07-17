@@ -18,7 +18,7 @@ search.app:
 ---
 # About trials
 
-Using the Power Platform admin center, you can create  environments of multiple types. Trial environments enable companies and customers try out new features and solutions. There are two type of trial environments: trial (standard) and trial (subscription-based). 
+Using the Power Platform admin center, you can create  environments of multiple types. Trial environments enable companies and customers to try out new features and solutions. There are two type of trial environments: trial (standard) and trial (subscription-based). 
 
 > [!NOTE]
 > "Trial", as documented in other topics and the user interface, refers to the trial (standard) type and not trial (subscription-based).
