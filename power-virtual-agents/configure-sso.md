@@ -74,7 +74,7 @@ You then need to redirect the app registration to point to your custom canvas.
 
 1. Go to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade), either by selecting the icon or searching in the top search bar.
 
-    ![](media/sso-app-registrations.png "")
+    ![Screenshot highlighting app registrations tile on the Azure portal](media/sso-app-registrations.png "Screenshot highlighting app registrations tile on the Azure portal")
 
 1. Select **New registration**.
 
@@ -87,7 +87,7 @@ You then need to redirect the app registration to point to your custom canvas.
 
 1. Leave the **Redirect URI** section blank for now, as you'll enter that information in the next steps. Select **Register**.
 
-    ![](media/sso-new-registration-details.png "")
+    ![Screenshot showing the registration form](media/sso-new-registration-details.png "Screenshot showing the registration form")
 
 
 
@@ -98,24 +98,24 @@ You then need to redirect the app registration to point to your custom canvas.
 1. After the registration is completed, it will open to the **Overview** page. Go to **Authentication** and then select **Add a platform**.
 
 
-    ![](media/sso-authentication.png "")
+    ![Screenshot showing Add a platform under Authentication](media/sso-authentication.png "Screenshot showing Add a platform under Authentication")
 
 1. On the **configure platforms** blade, select **Web**. 
 
-    ![](media/sso-platform-web.png "")
+    ![Screenshot showing the web tile highlighted](media/sso-platform-web.png "Screenshot showing the web tile highlighted")
  
 1. Under **Redirect URIs**  add the full URL to the page where your chat canvas is hosted. Under the **Implicit grant** section, select the **Id Tokens** and **Access Tokens** checkboxes.
 
 1. Select **Configure** to confirm your changes.
 
-    ![](media/sso-add-redirect-url.png "")
+    ![Screenshot showing the redirect URLs form](media/sso-add-redirect-url.png "Screenshot showing the redirect URLs form")
 
 1. Go to **API Permissions**. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
   
     >[!IMPORTANT]
     >To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
 
-    ![](media/sso-grant-consent.png "")
+    ![Screenshot highlight the Grant admin consent for tenant-name button](media/sso-grant-consent.png "Screenshot highlight the Grant admin consent for tenant-name button")
 
 
 
@@ -137,11 +137,11 @@ This step creates a trust relationship between the authentication app registrati
 
 1. Go to **Expose an API** and select **Add a scope**.
 
-    ![](media/sso-expose-an-api-scopes.png "")
+    ![Screenshot showing Expose an api and then add a scope](media/sso-expose-an-api-scopes.png "Screenshot showing Expose an api and then add a scope")
 
 1. Enter a name for the scope, along with the display information that should be shown to users when they come to the single sign-on screen. Select **Add scope**.
 
-    ![](media/sso-add-scope-bladed.png "")
+    ![Screenshot showing the Add scope blade](media/sso-add-scope-bladed.png "Screenshot showing the Add scope blade")
 
 1. Select **Add a client application**. 
 
@@ -167,9 +167,9 @@ This calls into Azure AD to perform the actual exchange.
 
 1. Enter the full scope URI from the **Expose an API** blade for the canvas app registration in the **Token exchange URL** field. This will be in the format of `api://1234-4567/scope.name`.
 
-    ![](media/sso-api.png "")  
+    ![Screenshot highlighting the scope's API](media/sso-api.png "Screenshot highlighting the scope's API")  
 
-    ![](media/sso-pva-token-url.png "")
+    ![Screenshot showing the authentication tab with location for the API](media/sso-pva-token-url.png "Screenshot showing the authentication tab with location for the API")
 
 1. Select **Save** and then publish the bot content.
 
@@ -183,7 +183,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
 
 2. Update `clientId` with the **Application (client) ID** for the canvas app registration. Replace `<Directory ID>` with the **Directory (tenant) ID**. You get these IDs from the **Overview** page for the canvas app registration.
 
-    ![](media/sso-app-client-id.png "")
+    ![App registration overview highlighting the Application and Directory IDs](media/sso-app-client-id.png "App registration overview highlighting the Application and Directory IDs")
 
 
 
@@ -250,7 +250,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
 
 5. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Power Virtual Agents portal.
 
-    ![](media/sso-pva-botid.png "")
+    ![Bot ID shown on the Mobile app channel configuration page](media/sso-pva-botid.png "Bot ID shown on the Mobile app channel configuration page")
    
 
 

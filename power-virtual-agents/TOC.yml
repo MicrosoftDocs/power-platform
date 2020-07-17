@@ -97,6 +97,8 @@
   items:
    - name: Key concepts - Configuration
      href: configuration-fundamentals.md
+   - name: Configure web channel security
+     href: configure-web-security.md
    - name: Configure end-user authentication
      href: configuration-end-user-authentication.md
    - name: Configure single sign-on

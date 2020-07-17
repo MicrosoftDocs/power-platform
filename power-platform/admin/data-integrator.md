@@ -441,6 +441,7 @@ With Power Query support, we now provide advanced filtering and data transformat
 For more information on Power Query, see [Power Query documentation](https://docs.microsoft.com/power-query/).
 
 > [!NOTE]
+> - Once **Advanced Query and Filtering** is enabled, transforms via **Fn** are not supported, and instead, should be defined using Advanced Query and Filtering. 
 > - Currently, we do not support doing joins across multiple data sources (either via the **Get data** button or M query) in Advanced Query and Filtering.
 > - If you encounter Power Query evaluation limits with the error: 
 > 
