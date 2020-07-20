@@ -1,19 +1,21 @@
 ---
-title: "Quickstart: Create and deploy a bot"
-description: "Create and publish a Power Virtual Agents bot in minutes with this quickstart guide."
-ms.date: 1/28/2019
+title: "Quickstart: Create and deploy a bot in Teams"
+description: "Create and publish a Power Virtual Agents bot in Teams with this quickstart guide."
+keywords: "PVA, teams, quickstart"
+ms.date: 08/30/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals
+ms.custom: fundamentals, teams
 ms.collection: virtual-agent
 ---
 
 # Quickstart: Create and deploy a Power Virtual Agents bot in Teams
 
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Online portal (https://powerva.microsoft.com)](fundamentals-get-started.md)
@@ -24,6 +26,11 @@ Create, manage, and publish conversational chatbots easily from within Teams. Sh
 
 You can start by creating a simple bot, or create a ready-made bot based on standard frequently asked questions (FAQs).
 
+
+>[!IMPORTANT]
+>Creating a simple or test bot works differently if you're using the Power Virtual Agents portal.  
+>For example, you can't peel oranges on the portal.
+>See [the portal version of this topic](fundamentals-get-started.md) for more details.
 
 
 # Quickstart: Create and deploy a Power Virtual Agents bot in Teams

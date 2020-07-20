@@ -1,14 +1,15 @@
 ---
-title: "Quickstart: Create and deploy a bot"
-description: "Create and publish a Power Virtual Agents bot in minutes with this quickstart guide."
-ms.date: 1/28/2019
+title: "Quickstart: Create and deploy a bot on the portal"
+description: "Create and publish a Power Virtual Agents bot on the online portal in minutes with this quickstart guide."
+keywords: "PVA, online, web, portal, quickstart"
+ms.date: 8/30/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals
+ms.custom: fundamentals, portal
 ms.collection: virtual-agent
 ---
 
@@ -30,7 +31,10 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLcX ]
 > 
 
-
+>[!IMPORTANT]
+>Creating a simple or test bot works differently if you're using Power Virtual Agents in Teams.
+>For example, you can't use emojis in Teams.
+>See [the Teams version of this topic](fundamentals-get-started-teams.md) for more details.
 
 
 # Quickstart: Create and deploy a Power Virtual Agents bot online
