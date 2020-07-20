@@ -2,7 +2,6 @@
 title: What's new for storage | Microsoft Docs
 description: Learn what's new about storage for Power Platform
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -56,8 +55,8 @@ There are two versions for storage capacity reporting:
 If you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications occur as alerts in the Power Platform admin center. The following admin operations won't be available when a tenant exceeds storage capacity entitlements: 
 
 1. Create environment (currently enforced)
-2. Copy environment (starting the second week of August)
-3. Restore environment (starting the second week of August)
+2. Copy environment (starting August 10th)
+3. Restore environment (starting August 10th)
 
 See [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit).
 
