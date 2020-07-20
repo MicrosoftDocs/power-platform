@@ -614,6 +614,8 @@
         href: analyze-your-data-with-excel-templates.md
       - name: Word templates
         href: using-word-templates-dynamics-365.md
+      - name: Troubleshooting Word templates
+        href: troubleshoot-word-templates-dynamics-365.md  
     - name: Integrate (synchronize) your email system
       items: 
       - name: Overview
