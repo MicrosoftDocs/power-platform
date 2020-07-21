@@ -1,9 +1,11 @@
+- name: Power Virtual Agents overview
+  href: fundamentals-what-is-power-virtual-agents.md
 - name: Power Virtual Agents online
   items:
     - name: Overview
       items:
-       - name: Power Virtual Agents overview
-         href: fundamentals-what-is-power-virtual-agents.md
+       - name: Power Virtual Agents online overview
+         href: fundamentals-what-is-power-virtual-agents-portal.md
        - name: Get started quickly with Power Virtual Agents
          href: fundamentals-get-started.md
        - name: Community help and support
@@ -125,9 +127,9 @@
     - name: Overview
       items:
        - name: Power Virtual Agents in Teams overview
-         href: fundamentals-what-is-power-virtual-agents.md
+         href: fundamentals-what-is-power-virtual-agents-teams.md
        - name: Get started quickly with Power Virtual Agents in Teams
-         href: fundamentals-get-started.md
+         href: fundamentals-get-started-teams.md
        - name: Community help and support
          href: fundamentals-support.md
     - name: Administer and manage

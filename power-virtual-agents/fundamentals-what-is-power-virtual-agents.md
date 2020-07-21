@@ -20,8 +20,24 @@ ms.collection: virtual-agent
 >[!IMPORTANT]
 >See the [Important information](#important-information) section for specific usage details.
 
-Power Virtual Agents empowers teams to easily create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
-Power Virtual Agents addresses many of the major issues with bot building in the industry today. It eliminates the gap between the subject matter experts and the development teams building the bots, and the long latency between teams recognizing an issue and updating the bot to address it. It removes the complexity of exposing teams to the nuances of conversational AI and the need to write complex code. And, it minimizes the IT effort required to deploy and maintain a custom conversational solution.
+Power Virtual Agents lets you create powerful chatbots that can answer questions posed by your customers, other employees, or visitors to your website or service. 
+
+These bots can be created with guided, no-code graphical interface - and without the need for data scientists or developers. Some of the ways that Power Virtual Agents bots have been used include:
+
+- COVID-19 infection rate and tracking information
+- Sales help and support issues
+- Opening hours and store information
+- Employee health and vacation benefits
+- Common employee questions for businesses
+
+The benefits of using a no-code graphical interface help to:
+
+- Eliminate the gap between subject matter experts and development teams building the bots
+- Reduce the time from when bot builders and owners recognize an issue to when it can be updated
+- Remove the need to understand complex conversational AI systems and methodologies
+- Simplify the need for complex code
+- Minimize the IT effort needed to deploy and maintain a custom conversational solution
+
 
 Using Power Virtual Agents, you can: 
 - **Empower your teams** by allowing them to easily build bots themselves without needing intermediaries, or coding or AI expertise.
