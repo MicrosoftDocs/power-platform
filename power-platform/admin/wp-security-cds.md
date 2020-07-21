@@ -2,14 +2,12 @@
 title: "Security concepts in Common Data Service | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Common Data Service.
 ms.custom: ""
-ms.date: 06/18/2019
+ms.date: 07/21/2020
 ms.reviewer: "jimholtz"
 ms.service: power-platform
 ms.topic: "article"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
 author: "jimholtz"
 ms.author: "jimholtz"
-manager: "kvivek"
 search.audienceType: 
   - admin
 search.app:
