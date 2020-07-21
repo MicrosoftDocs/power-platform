@@ -78,7 +78,7 @@ The Additional Info field is a JSON object that contains operation-specific prop
 
 Here’s what the Additional Info JSON might look like for a “Create” or “Delete” event: 
 
-```
+```json
 { 
   "policyId": "eb1e0480-0fe9-434e-9ad8-df4047a666ec", 
   "policyType": "SingleEnvironment", 
@@ -96,7 +96,7 @@ Here’s what the Additional Info JSON might look like for an “Update” opera
 - Moves the Bing Maps connector from the General to the Blocked bucket 
 - Moves the Azure Automation connector from the Confidential to the Blocked bucket 
 
-```
+```json
 { 
   "policyId": "eb1e0480-0fe9-434e-9ad8-df4047a666ec", 
   "policyType": "ExceptEnvironments", 
