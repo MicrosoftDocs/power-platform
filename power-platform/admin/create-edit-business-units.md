@@ -2,11 +2,10 @@
 title: "Create or edit business units  | MicrosoftDocs"
 description: Learn how to create or edit business units 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/30/2020
+ms.date: 07/21/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -44,7 +43,7 @@ A business unit is a logical grouping of related business activities.
 
 - You can assign a security role to the business unit's default team. This is done to simplify security role management where all your business unit team members can share the same data access.
 
-- You can assign additional team to a business unit but there can only be 1 business unit per team.
+- You can assign additional team to a business unit but there can only be one business unit per team.
 
 - A team can consist of users from one or many business units. Consider using this type of team if you have a situation where users from different business units need to work together on a shared set of records.  
 
