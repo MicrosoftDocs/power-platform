@@ -2,11 +2,10 @@
 title: "Create or edit business units  | MicrosoftDocs"
 description: Learn how to create or edit business units 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/30/2020
+ms.date: 07/21/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -34,8 +33,20 @@ A business unit is a logical grouping of related business activities.
   
 - Security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit.  
   
-- You can assign a team to just one business unit, but a team can consist of users from one or many business units. Consider using a team if you have a situation where users from different business units need to work together on a shared set of records.  
-  
+- You cannot add a user into a business unit directly. All newly provisioned users are assigned to the root business.
+
+- You can change the user's business unit at anytime. Once the business unit is changed, the user will show up as a member of the business unit automatically.
+
+- Each business unit has a default team. You cannot update the default team's name nor delete the default team.
+
+- You cannot add or remove users from the business unit's default team.  However you can change the user's business unit to the business unit and the user will automatically be added to the business unit's default team.
+
+- You can assign a security role to the business unit's default team. This is done to simplify security role management where all your business unit team members can share the same data access.
+
+- You can assign additional team to a business unit but there can only be one business unit per team.
+
+- A team can consist of users from one or many business units. Consider using this type of team if you have a situation where users from different business units need to work together on a shared set of records.  
+
 ## Create a new business unit  
   
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Business units**.
