@@ -44,8 +44,6 @@ Follow these steps to delete a bot:
 
 All bot content is immediately deleted.
 
-If your license has expired, you can delete your bot(s) by selecting **Permanently delete your bots**.
-
 ## Delete Power Virtual Agents telemetry
 
 All Power Virtual Agents telemetry data is automatically deleted within 29 days. No action from the user is needed.
