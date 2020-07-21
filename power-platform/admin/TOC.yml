@@ -414,13 +414,15 @@
         href: manage-power-automate.md
       - name: Portal administration
         href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
-    - name: Activity logging for Power Apps 
+    - name: Activity logging
       items: 
-      - name: Power Apps activity logging
+      - name: Power Apps 
         href: logging-powerapps.md 
-      - name: Audit data and user Activity
+      - name: Data loss prevention
+        href: dlp-activity-logging.md
+      - name: Audit data and user activity for Dynamics entities
         href: audit-data-user-activity.md
-      - name: Enable and use Activity Logging
+      - name: Common Data Service and model-driven apps
         href: enable-use-comprehensive-auditing.md    
     - name: PowerShell support for Power Apps (preview) 
       items:
