@@ -2,7 +2,7 @@
 title: "Use the Power Apps checker web API | Microsoft Docs"
 description: "The Power Apps checker Web API provides a development experience that can be used across a wide variety of programming languages, platforms, and devices"
 ms.custom: ""
-ms.date: 06/09/2020
+ms.date: 07/21/2020
 ms.service: powerapps
 ms.suite: ""
 ms.tgt_pltfrm: ""
