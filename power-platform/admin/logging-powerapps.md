@@ -1,5 +1,5 @@
 ---
-title: "Activity logging for Power Apps | MicrosoftDocs"
+title: "Power Apps activity logging| MicrosoftDocs"
 description: Activity logging for Power Apps 
 author: jimholtz
 ms.service: power-platform
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Activity logging for Power Apps
+# Power Apps activity logging
 
 Power Apps activities are now tracked from the [Microsoft 365 Security & Compliance Center](https://go.microsoft.com/fwlink/?LinkID=824876). 
 
