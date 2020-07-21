@@ -2,14 +2,12 @@
 title: "Security concepts in Common Data Service | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Common Data Service.
 ms.custom: ""
-ms.date: 06/18/2019
+ms.date: 07/21/2020
 ms.reviewer: "jimholtz"
 ms.service: power-platform
 ms.topic: "article"
-ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
 author: "jimholtz"
 ms.author: "jimholtz"
-manager: "kvivek"
 search.audienceType: 
   - admin
 search.app:
@@ -30,7 +28,7 @@ Common Data Service uses role-based security to group together a collection of p
 
 Business units work in conjunction with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Common Data Service database has a single root business unit.
 
-You can create child business units to help further segment your users and data. Every user assigned to a Common Data Service environment will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
+You can [create child business units](https://docs.microsoft.com/power-platform/admin/create-edit-business-units) to help further segment your users and data. Every user assigned to a Common Data Service environment will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
 
 To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We have created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this Common Data Service environment, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. By having that association allows us to tailor a security role to allow the user to see all records in that business unit.
 
@@ -59,7 +57,7 @@ In the above example, we have given organization level access to Contact which m
 
 ## Teams
 
-Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Common Data Service and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they are dynamically adjusted by the system as new users are associated/disassociated with business units. There are two types of teams, owning teams and access teams. Owning Teams can own records, which gives any team member direct access to that record. Users can be members of multiple teams. This will allow it to be a powerful way of granting permissions to users in a broad way without micromanaging access at the individual user level. Access teams are discussed below as part of Record Sharing.
+Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Common Data Service and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they are dynamically adjusted by the system as [new users are associated/disassociated with business units] (https://docs.microsoft.com/power-platform/admin/create-edit-business-units). There are two types of teams, owning teams and access teams. Owning Teams can own records, which gives any team member direct access to that record. Users can be members of multiple teams. This will allow it to be a powerful way of granting permissions to users in a broad way without micromanaging access at the individual user level. Access teams are discussed below as part of Record Sharing.
 
 ## Record Sharing
 
