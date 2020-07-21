@@ -420,7 +420,7 @@
         href: logging-powerapps.md 
       - name: Data loss prevention
         href: dlp-activity-logging.md
-      - name: Audit data and user activity for Dynamics entities
+      - name: Audit data and user activity for Dynamics 365 entities
         href: audit-data-user-activity.md
       - name: Common Data Service and model-driven apps
         href: enable-use-comprehensive-auditing.md    

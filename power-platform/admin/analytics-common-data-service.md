@@ -29,7 +29,7 @@ To access these reports:
 
 ## Who can view these reports?
 
-Admins with the following roles can view the reports in Common Data Service analytics:
+Admins with the following roles and a [license](pricing-billing-skus.md) can view the reports in Common Data Service analytics: 
 - Environment Admin - can view reports for the environments that the admin has access to.
 - Power Platform Service admin – can view reports for all environments.
 - Dynamics 365 Service admin - can view reports for all environments.

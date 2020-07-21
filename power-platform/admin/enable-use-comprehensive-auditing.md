@@ -1,12 +1,11 @@
 ---
-title: "Enable and use Activity Logging  | MicrosoftDocs"
+title: "Common Data Service and model-driven apps activity logging  | MicrosoftDocs"
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/08/2020
+ms.date: 07/21/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -16,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Enable and use Activity Logging 
+# Common Data Service and model-driven apps activity logging 
 
 Protecting data, preserving privacy, and complying with regulations such as the [General Data Protection Regulation](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) are certainly some of the highest priorities for your business. It's critical that you audit the entirety of data processing actions taking place to be able to analyze for possible security breaches. This information from Activity Logging can be used when you perform a Data Protection Impact Assessment (DPIA) addressing the use of Office, Power Apps, Microsoft Power Automate, and model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service).  
 
