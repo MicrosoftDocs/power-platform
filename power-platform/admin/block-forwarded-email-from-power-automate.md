@@ -1,11 +1,11 @@
 ---
-title: "Block forwarded emails sent from Microsoft Power Automate  | MicrosoftDocs"
+title: "Email exfiltration controls for Office 365 connectors | MicrosoftDocs"
 description: Block forwarded emails sent from Microsoft Power Automate.
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/20/2020
+ms.date: 07/21/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Block forwarded emails sent from Microsoft Power Automate
+# Email exfiltration controls for Office 365 connectors
 
  Microsoft Exchange allows admins to disable email auto-forwards and auto-replies to remote domains (external recipients) by using specific message type headers such as ‘Auto-forward’ received from Outlook and Outlook on the web clients.  
 
@@ -23,7 +23,7 @@ With Power Platform, you can now insert specific SMTP headers in emails sent thr
 
 For more details on the Office 365 Outlook connector, see: [SMTP headers](https://docs.microsoft.com/connectors/office365/#smtp-headers). 
 
-## Block unauthorized transfer of forwarded emails 
+## Block exfiltration of forwarded emails 
 
 Admins can set up Exchange mail flow rules to monitor or block emails sent by Power Automate and/or Power Apps using the Office 365 Outlook connector. The format of the SMTP header sent by Power Platform is as follows. A reserved word ‘Microsoft Power Automate’ or ‘Microsoft Power Apps’ is inserted with the header type: ‘x-ms-mail-application’. For example:
 
@@ -52,7 +52,7 @@ This is equivalent to the Exchange ‘mail flow’ rule set up for message type 
 
 :::image type="content" source="media/block-outbound-forwards80.png" alt-text="Block outbound forwards":::
 
-## Exempt specific flows from blocking 
+## Exempt specific flows from exfiltration blocking
 
 In addition to the new ‘x-ms-mail-application’, Power Platform also inserts the workflow identifier as the new ‘User-Agent’ header which is equal to the app or flow ID.  
 
