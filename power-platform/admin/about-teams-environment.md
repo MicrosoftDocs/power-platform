@@ -37,15 +37,9 @@ Power Platform admin center to just Teams organizations.
 |Reset     | Not available by default for Dataflex.        | No        |
 |Promote     | Unlocks all the functionalities of the Dataflex Pro services for the environment.         | Yes        |
 
-The lifetime of the environment in Dataflex will be tied to the team it was created in. If organization
-promotes an environment to Dataflex Pro, the 1:1 mapping is not guaranteed as the environment can now
-be used by applications outside of Teams. The promoted environment is bound by the lifecycle rules
-associated to the Power Apps license and the configuration of the environment.
+The lifetime of the environment in Dataflex will be tied to the team it was created in. If organization promotes an environment to Dataflex Pro, the 1:1 mapping is not guaranteed as the environment can now be used by applications outside of Teams. The promoted environment is bound by the lifecycle rules associated to the Power Apps license and the configuration of the environment.
 
-Not all lifecycle operations will be available during private previews (like the promote operation), but the
-intent is to make them available ahead of General Availability. Some operations will remain blocked by
-default, such as the Copy and Reset operations. For scenarios where you would need this capability,
-Dataflex Pro environments should be used. See the earlier table for details.
+Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you would need this capability, Dataflex Pro environments should be used. See the earlier table for details.
 
 > [!IMPORTANT]
 > Dataflex environments won’t be allowed to change types until the promote operation has been carried out on the environment. Once the promotion completes, the Dataflex environment will have the full capabilities found in Dataflex Pro. In addition to the standard termination of the environments, if the Microsoft Office license expires, there will also be an inactivity clause for these environments. 
@@ -68,7 +62,7 @@ Microsoft 365 Groups support two user membership types: owners and members. Memb
 
 Access to a Teams environment and its resources (apps, data) will be restricted to only users in the team. The Microsoft 365 Group linked to a team will be automatically associated with the Teams environment, restricting access to only users of that Microsoft 365 Group. This Microsoft 365 Group association with the Teams environment will not be editable until the environment is promoted to Dataflex Pro. 
 
-### Role assignments for Private Preview release
+### Role assignments 
 
 
 |Persona  |Security role auto-assigned   |
@@ -91,9 +85,6 @@ It can take up to 24 hours to:
 - Recognize a user who left the organization (user record deletion in Azure Active Directory) and disable them in the Teams environment. 
 - Recognize removal of Azure AD admin roles (Tenant admin, Power Platform service admin, Dynamics 365 service admin) from a user, and synchronize the change to the Teams environment. 
 
-> [!NOTE]
-> Team owners who are not also in the members list will not be recognized/synced for Private Preview. If owners need to be synced, they should be added to the members list too for Private Preview.
-
 ## Capacity limits
 
 The consumption of capacity by Teams environments will not count towards the tenant’s capacity limits. Instead, we will provide a pool of database capacity for Teams environments, which will be separate from the tenant’s Power Platform Dataflex Pro capacity pool. Note that capacity will not be transferable between these two pools.  
@@ -105,7 +96,7 @@ The consumption of capacity by Teams environments will not count towards the ten
 
 **Tenant-wide limits on Teams environments**: Each tenant will also have limits related to Teams environments defined as follows:  
 
-|Column1  |Column2  |
+|Unit  |Service limit  |
 |---------|---------|
 |Teams environments      | 5 + 1 per 20 eligible office seats (up to a maximum of 500 environments) <br />
 Note that this limit on the number of environments cannot be extended further in Teams environments. Should more instances be needed, consider deleting unused environments or promoting to Dataflex Pro.   |
