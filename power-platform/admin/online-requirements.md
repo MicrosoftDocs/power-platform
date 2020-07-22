@@ -2,11 +2,10 @@
 title: "Requirements/supported configurations  | MicrosoftDocs"
 description: Requirements/supported configurations 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 07/22/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -50,6 +49,22 @@ Dynamics 365 apps use several Microsoft URLs to help provide security, services,
 - [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
 - [Internet accessible URLs required for connectivity to Microsoft Dynamics 365](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
   
+## Internet accessible URLs required
+
+> [!div class="op_single_selector"]
+> - [North America-based organizations](internet-url-north-america.md)
+> - [South America-based organization](internet-url-south-america.md)
+> - [Europe, Africa, and Middle East-based organization](internet-url-europe-africa-middle-east.md)
+> - [Asia/Pacific area-based organization](../articles/notification-hubs-android-get-started/)
+> - [Japan area-based organizations](../articles/notification-hubs-kindle-get-started/)
+> - [India area-based organizations](../articles/notification-hubs-baidu-get-started/)
+> - [Canada area-based organizations](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+> - [Oceania area-based organizations](../articles/partner-xamarin-notification-hubs-android-get-started/)
+> - [CRM US Government environments](../articles/notification-hubs-baidu-get-started/)
+> - [United Kingdom area-based organizations](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+
+
+
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
  [Work with requirements as a solution architect for Power Platform and Dynamics 365](https://docs.microsoft.com/learn/modules/work-with-requirements/index)
