@@ -51,17 +51,22 @@ Dynamics 365 apps use several Microsoft URLs to help provide security, services,
   
 ## Internet accessible URLs required
 
+If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365, a proxy or firewall may be configured to prevent  Dynamics 365 URLs from accessing server resources.
+
+Add the following URLs to the approved list to allow traffic to proceed to these URLs.
+
+Select your region:
 > [!div class="op_single_selector"]
 > - [North America-based organizations](internet-url-north-america.md)
 > - [South America-based organization](internet-url-south-america.md)
 > - [Europe, Africa, and Middle East-based organization](internet-url-europe-africa-middle-east.md)
-> - [Asia/Pacific area-based organization](../articles/notification-hubs-android-get-started/)
-> - [Japan area-based organizations](../articles/notification-hubs-kindle-get-started/)
-> - [India area-based organizations](../articles/notification-hubs-baidu-get-started/)
-> - [Canada area-based organizations](../articles/partner-xamarin-notification-hubs-ios-get-started/)
-> - [Oceania area-based organizations](../articles/partner-xamarin-notification-hubs-android-get-started/)
-> - [CRM US Government environments](../articles/notification-hubs-baidu-get-started/)
-> - [United Kingdom area-based organizations](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+> - [Asia/Pacific area-based organization](internet-url-asia-pacific.md)
+> - [Japan area-based organizations](internet-url-japan.md)
+> - [India area-based organizations](internet-url-india.md)
+> - [Canada area-based organizations](internet-url-canada.md)
+> - [Oceania area-based organizations](internet-url-oceania.md)
+> - [Dynamics 365 US Government environments](internet-url-us-government.md)
+> - [United Kingdom area-based organizations](internet-url-united-kingdom.md)
 
 
 
