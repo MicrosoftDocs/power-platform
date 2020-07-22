@@ -17,6 +17,8 @@ search.app:
 ---
 # About the Teams environment
 
+Introduced in August, 2020, the Teams environment is automatically created for the selected team when you add an app in Teams using Power Apps for the first time or install a Power Apps app from the app catalog. The Teams environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment and all data, apps and flows created using Power Apps inside a team are available from that team's Power Apps Dataflex environment. 
+
 ## Environment lifecycle
 
 This section provides a summary of key lifecycle operations that will be allowed with Teams environments.
