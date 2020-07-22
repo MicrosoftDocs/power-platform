@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/13/2020
+ms.date: 07/22/2020
 search.audienceType: 
   - admin
 search.app:
@@ -103,6 +103,8 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
  You can assign more than one security role to a user. The effect of multiple security roles is cumulative, which means that the user has the permissions associated with all security roles assigned to the user.  
   
  Security roles are associated with business units. If you've created business units, only those security roles associated with the business unit are available for the users in the business unit. You can use this feature to limit data access to data owned by the business unit.  
+
+You need to have the appropriate privileges in order to assign security roles to another user. See [Assigning security roles](security-roles-privileges.md#assigning-security-roles).
   
  For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
   
