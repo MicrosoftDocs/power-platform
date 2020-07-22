@@ -430,9 +430,9 @@
         href: powerapps-powershell.md           
       - name: Automation of tasks with PowerShell 
         href: wp-task-automation-powershell.md
-    - name: Requirements/supported configurations
+    - name: Requirements
       items:
-      - name: Overview
+      - name: Requirements/supported configurations
         href: online-requirements.md
         items:
         - name: Required URLs for North America-based organizations
