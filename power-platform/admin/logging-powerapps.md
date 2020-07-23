@@ -25,8 +25,6 @@ Follow these steps.
 
 2. Select **Search** > **Audit log search**. 
 
-3. Under **Search** > **Activities**, enter "dlp". You'll see a list of activities for Power Platform DLP.
-
    > [!div class="mx-imgBorder"] 
    > ![Audit log search](media/audit-log-search.png "Audit log search")
 
