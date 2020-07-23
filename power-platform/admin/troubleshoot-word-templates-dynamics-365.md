@@ -18,7 +18,7 @@ search.app:
 ---
 
 # Troubleshooting Word templates
-<!--note from editor: Please see my edit to the description. I suggest something like this because as a reader, I wouldn't necessarily know what this article covers just from the title. (After all, the Word template isn't really misbehaving here, it just needs a little help so it can include entity images for every entity I'm interested in.)-->
+
 This article helps you troubleshoot and resolve issues related to Word templates.
 
 ## I'm unable to see an entity image in a Word template for certain out-of-the-box and custom entities
@@ -101,7 +101,7 @@ Now, when you download and open a document based on this template, it will conta
   >[!NOTE]
   >Similarly, if you add an image to an entity form, follow this process to upload the image to the Word template.
 
-  
+
 ### See also
 
 [Use Word templates to create standardized documents](using-word-templates-dynamics-365.md)
