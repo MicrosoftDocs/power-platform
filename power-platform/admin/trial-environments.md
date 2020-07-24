@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/17/2020
+ms.date: 07/24/2020
 search.audienceType: 
   - admin
 search.app:
@@ -25,7 +25,7 @@ Using the Power Platform admin center, you can create  environments of multiple 
 
 Companies and admins do not all have a similar approach towards trials. This is especially true when it comes to allowing users to try new capabilities. Some companies allow their users to try features in a self-serve manner. Others want admins to completely control what is being trialed and who is licensed to use the trial. The two trial types provide this level of control.
 
-- **Trial (standard)**: This is the trial type that organizations usually rollout to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials or only organization admins. If allowed for users, then any user from that organization can create a 30-day trial environment. After 30 days, the environment is disabled and deleted. 
+- **Trial (standard)**: This is the trial type that organizations usually rollout to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials or only organization admins. If allowed for users, then any user from that organization, [with a suitable license](create-environment.md#who-can-create-environments), can create a 30-day trial environment. After 30 days, the environment is disabled and deleted. 
 - **Trial (subscription-based)**: This is the trial type that organizations can use to develop larger, multi-user and multi-department solutions and do proof of concept reviews. Tenant admins can add a trial (subscription-based) to their tenant or new customers can sign up for a new tenant and become the Global admin. For new customers, an admin-managed subscription is created with a set number of licenses (usually 25 licenses); admins control license assignment to other users. An admin-managed subscription has a start and end date that can be extended. 
 
 Both types of environments do not consume from paid capacity and can be converted to production environments by consuming from paid capacity which will prevent trial environment disablement and deletion. Production environments follow the paid license lifecycle. 
