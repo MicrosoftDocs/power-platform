@@ -76,7 +76,7 @@ You'll need the secret so you can specify it in your app's authorization header 
 
     ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security/settings-web-channel.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
 
-3. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon ![Visibility icon](media/configure-web-security/visibility-icon.png "Visibility icon") to reveal the secret. A warning prompt will appear before you can reveal it.
+2. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon ![Visibility icon](media/configure-web-security/visibility-icon.png "Visibility icon") to reveal the secret. A warning prompt will appear before you can reveal it.
 
 
 ### Swapping secrets
@@ -98,9 +98,7 @@ You can generate a token that can be used when starting a single bot conversatio
 
 1. [Obtain the secret](#obtain-the-secrets). 
 
-2. Issue the following request in your service code to exchange the secret for a token. 
-
-    2. Replace `<SECRET>` with the value of the secret you obtained in Step 1.
+2. Issue the following request in your service code to exchange the secret for a token. Replace `<SECRET>` with the value of the secret you obtained in Step 1. 
 
 ```html
 POST https://directline.botframework.com/v3/directline/tokens/generate
