@@ -40,7 +40,7 @@ Here is a brief overview of capabilities included with Power Apps for Microsoft 
 | Run Canvas apps offline                                               | Yes                          |
 | Support for data policies established by the Microsoft 365 administrator | Yes                          |
 | Access on-premises data or use premium or custom connectors           | \-                           |
-| Access to Common Data Service                    | Yes*                |
+| Access to Common Data Service                    | Yes* (see note below)                |
 
 > [!NOTE]
 > <sup>*</sup>A limited set of Common Data Service capabilities are included with Microsoft 365 licenses to support some Microsoft 365 products. However, a Power Apps or Power Automate Standalone plan is still needed to run apps with Common Data Service.
@@ -50,7 +50,7 @@ Here is a brief overview of capabilities included with Power Apps for Microsoft 
 > 2. access Common Data Service in the default environment with Maker privileges
 > 
 > Users with Common Data Service service plan in a Microsoft 365 license, cannot:
-> 1. run any custom or 1st Party apps
+> 1. run any custom apps or Power Apps for Microsoft 365
 >
 > These users should only get added to an environment once they access the environment or the app. We do not auto-sync these users to any environment.
 > 
