@@ -46,16 +46,16 @@ Here is a brief overview of capabilities included with Power Apps for Microsoft 
 > <sup>*</sup>A limited set of Common Data Service capabilities are included with Microsoft 365 licenses to support some Microsoft 365 products. However, a Power Apps or Power Automate Standalone plan is still needed to run apps with Common Data Service.
 >
 > Users with Common Data Service service plan in a Microsoft 365 license, can: 
-> 1. access the Project App if a project is shared with them
-> 2. access Common Data Service in the default environment with Maker privileges
+> 1. Access the Project App if a project is shared with them
+> 2. Access Common Data Service in the default environment with Maker privileges
 > 
 > Users with Common Data Service service plan in a Microsoft 365 license, cannot:
-> 1. run any custom apps or Power Apps for Microsoft 365
+> 1. Run any custom apps or Power Apps for Microsoft 365
 >
 > These users should only get added to an environment once they access the environment or the app. We do not auto-sync these users to any environment.
 > 
 > **Known issues**
-> - If you are an existing customer and a user with this license that comes directly to Common Data Service, you will get an error message that states “You are not a member of the organization”. We are addressing this problem in the coming weeks. 
+> - If you are an existing customer and a user with this license that comes directly to Common Data Service, you might get an error message that states “You are not a member of the organization”. We are addressing this problem in the coming weeks. 
 > - We currently sync some of these Microsoft Common Data Service licensed users to all Common Data Service environments. We are addressing this right now. Currently, these users will not be able to launch Power Apps for Microsoft 365 with this license. 
 
 ## Power Apps and Power Automate Standalone plans
