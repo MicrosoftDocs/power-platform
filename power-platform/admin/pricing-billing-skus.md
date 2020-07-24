@@ -56,7 +56,7 @@ Here is a brief overview of capabilities included with Power Apps for Microsoft 
 > 
 > **Known issues**
 > - If you are an existing customer and a user with this license that comes directly to Common Data Service, you will get an error message that states “You are not a member of the organization”. We are addressing this problem in the coming weeks. 
-> - We currently sync some of these Microsoft Common Data Service licensed users to all Common Data Service environments. We are addressing this right now. Currently, these users will not be able to launch apps with this license. 
+> - We currently sync some of these Microsoft Common Data Service licensed users to all Common Data Service environments. We are addressing this right now. Currently, these users will not be able to launch Power Apps for Microsoft 365 with this license. 
 
 ## Power Apps and Power Automate Standalone plans
 
