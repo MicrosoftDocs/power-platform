@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/17/2020
+ms.date: 07/24/2020
 search.audienceType: 
   - admin
 search.app:
@@ -25,7 +25,7 @@ Using the Power Platform admin center, you can create environments of multiple t
 
 Not all companies and admins approach trials the same way<!--Suggested. If you don't like, it should be "toward" and "don't," via Writing Style Guide.-->. This is especially true when it comes to deciding whether to allow users<!--Suggested.--> to try new capabilities. Some companies let users try<!--Suggested--> features in a self-serve manner. Others want admins to completely control what's being tried and who's licensed to use the environment. The two types of trial environments provide this level of control.
 
-- **Trial (standard)**: This is the type of trial environment that companies can use to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials, or only tenant<!--To match later usage.--> admins. If allowed for users, any user from that organization can create a 30-day trial environment. After 30 days, the environment is disabled and deleted. 
+- **Trial (standard)**: This is the type of trial environment that companies can use to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials, or only tenant<!--To match later usage.--> admins. If allowed for users, any user from that organization who has [a suitable license](create-environment.md#who-can-create-environments) can create a 30-day trial environment. After 30 days, the environment is disabled and deleted. 
 - **Trial (subscription-based)**: This is the type of trial environment that companies can use to develop larger, multiuser<!--Via Writing Style Guide--> and multiple-department solutions and perform proof-of-concept reviews. Tenant admins can add a trial (subscription-based) environment to their tenant, or new customers can sign up for a new tenant and become the Global admin. For new customers, an admin-managed subscription is created with a set number of licenses (usually 25); admins control which other users get licenses assigned to them<!--Suggested, to air this sentence out, so to speak.-->. An admin-managed subscription has<!--Suggested, since it's just the end date that can be extended.--> an end date that can be extended. 
 
 Neither type of environment consumes paid capacity. You can convert either type of trial environment to a production environment by switching it to consume from paid capacity, which will keep it from being disabled and deleted. After it becomes a production environment, it will follow the paid license lifecycle.<!--Suggested, but if you don't like, that original first sentence needs a bit of work. "Neither type consumes paid capacity, and either can be converted..."--> 
