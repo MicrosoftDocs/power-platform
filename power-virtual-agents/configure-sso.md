@@ -256,70 +256,98 @@ Update the custom canvas page where the bot is located to intercept the login ca
 
     ```HTML
     <script>
-  
-    (async function main() {
-  
-          // Add your BOT ID below 
-          var BOT_ID = "<BOT ID>";
-          var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
-  		
-  	   const { token } = await fetchJSON(theURL);
-  	   const directLine = window.WebChat.createDirectLine({ token });
-       var userID = clientApplication.account?.accountIdentifier != null ? ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0,64) : (Math.random().toString() + Date.now().toString().substr(0,64)  // Make sure this will not exceed 64 characters 
-            const store = WebChat.createStore({}, ({ dispatch }) => next => action => {
-             const { type } = action;
-             if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
-               dispatch({
-                 type: 'WEB_CHAT/SEND_EVENT',
-                 payload: {
-                   name: 'startConversation',
-                   type: 'event',
-                   value: { text: "hello" }
-                 }
-               });
-               return next(action);
-             }
-             if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
-                 const activity = action.payload.activity;
-                 let resourceUri;
-                 if (activity.from && activity.from.role === 'bot' &&
-                    (resourceUri = getOAuthCardResourceUri(activity))) {
-                    exchangeTokenAsync(resourceUri).then(function (token) {
-                     if (token) {
-                     directLine.postActivity({
-                     type: 'invoke',
-                     name: 'signin/tokenExchange',
-                     value: {
-                       id: activity.attachments[0].content.tokenExchangeResource.id,
-                       connectionName: activity.attachments[0].content.connectionName,
-                       token
-                      },
-                     "from":{
-                       id:userId,  
-                       name:clientApplication.account.userName,
-                       role:"user"
-                     }
-                     }).subscribe(
-                 id => {
-                  return next(action);
-      });
-      const styleOptions = {
-        
-        //Add styleOptions to customize Web Chat canvas
-        hideUploadButton: true
-      };
-      
-          window.WebChat.renderWebChat(
-            {
-              directLine: directLine,
-              store,
-              userID:userId,  
-              styleOptions
-            },
-            document.getElementById('webchat')
-          );      
-    })().catch(err => console.error("An error occurred: " + err));
-  
+        (async function main() {
+
+            // Add your BOT ID below 
+            var BOT_ID = "<BOT ID>";
+            var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+
+            const {
+                token
+            } = await fetchJSON(theURL);
+            const directLine = window.WebChat.createDirectLine({
+                token
+            });
+            var userID = clientApplication.account ? .accountIdentifier != null ?
+                ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0, 64) :
+                (Math.random().toString() + Date.now().toString()).substr(0, 64); // Make sure this will not exceed 64 characters 
+            const store = WebChat.createStore({}, ({
+                dispatch
+            }) => next => action => {
+                const {
+                    type
+                } = action;
+                if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+                    dispatch({
+                        type: 'WEB_CHAT/SEND_EVENT',
+                        payload: {
+                            name: 'startConversation',
+                            type: 'event',
+                            value: {
+                                text: "hello"
+                            }
+                        }
+                    });
+                    return next(action);
+                }
+                if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
+                    const activity = action.payload.activity;
+                    let resourceUri;
+                    if (activity.from && activity.from.role === 'bot' &&
+                        (resourceUri = getOAuthCardResourceUri(activity))) {
+                        exchangeTokenAsync(resourceUri).then(function(token) {
+                            if (token) {
+                                directLine.postActivity({
+                                    type: 'invoke',
+                                    name: 'signin/tokenExchange',
+                                    value: {
+                                        id: activity.attachments[0].content.tokenExchangeResource.id,
+                                        connectionName: activity.attachments[0].content.connectionName,
+                                        token,
+                                    },
+                                    "from": {
+                                        id: userID,
+                                        name: clientApplication.account.name,
+                                        role: "user"
+                                    }
+                                }).subscribe(
+                                    id => {
+                                        if (id === 'retry') {
+                                            // bot was not able to handle the invoke, so display the oauthCard
+                                            return next(action);
+                                        }
+                                        // else: tokenexchange successful and we do not display the oauthCard
+                                    },
+                                    error => {
+                                        // an error occurred to display the oauthCard
+                                        return next(action);
+                                    }
+                                );
+                                return;
+                            } else
+                                return next(action);
+                        });
+                    } else
+                        return next(action);
+                } else
+                    return next(action);
+            });
+
+            const styleOptions = {
+
+                // Add styleOptions to customize Web Chat canvas
+                hideUploadButton: true
+            };
+
+            window.WebChat.renderWebChat({
+                    directLine: directLine,
+                    store,
+                    userID: userID,
+                    styleOptions
+                },
+                document.getElementById('webchat')
+            );
+        })().catch(err => console.error("An error occurred: " + err));
     </script>
     ```
 
