@@ -89,13 +89,13 @@ The following are entities that are currently read-only in Unified Interface:
 - Contract Templates
 - Case Resolution
 
-### Workaround
+### Workaround for out-of-the-box or custom entities appearing as read-only
 
-In the Unified Interface app such as Sales Hub or Customer Service Hub, follow these steps to make all the out-of-the-box actions available and entities editable.
+Follow these steps to make all the out-of-the-box actions available and entities editable.
 
 1. On the navigation bar in your app, select the **Settings** icon and then select **Advanced Settings**.
 
-   :::image type="content" source="media/advanced-settings.png" alt-text="Advanced Settings option on the Settings menu":::
+   :::image type="content" source="media/advanced-settings-option.png" alt-text="Advanced Settings option on the Settings menu":::
 
    The **Business Management** page opens in a new browser tab.
 
@@ -105,7 +105,7 @@ In the Unified Interface app such as Sales Hub or Customer Service Hub, follow t
 
 3. On the **Customization** page, select **Customize the System**.
 
-4. In the solution explorer, under Components, expand Entities and then select the specific entity that's appearing as read-only.
+4. In the solution explorer, under **Components**, expand **Entities** and then select the specific entity that's appearing as read-only.
 
 5. On the **General** tab, under **Outlook & Mobile**, clear the **Read-only in Unified Client** check box.
 
