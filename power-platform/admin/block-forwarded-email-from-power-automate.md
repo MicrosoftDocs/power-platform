@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/21/2020
+ms.date: 07/27/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -19,7 +19,7 @@ search.app:
 
  Microsoft Exchange allows admins to disable email auto-forwards and auto-replies to remote domains (external recipients) by using specific message type headers such as ‘Auto-forward’ received from Outlook and Outlook on the web clients.  
 
-With Power Platform, you can now insert specific SMTP headers in emails sent through Power Automate and Power Apps using the Microsoft 365 Exchange/Outlook connector. These SMTP headers can now be used to set up appropriate exfiltration (unauthorized transfer of data from one device to another) rules in Exchange for outbound emails.  
+Similarly, Power Platform has the inbuilt ability to insert specific SMTP headers in emails sent through Power Automate and Power Apps using the Microsoft 365 Exchange/Outlook connector. These SMTP headers can now be used to set up appropriate exfiltration (unauthorized transfer of data from one device to another) rules in Exchange for outbound emails.  
 
 For more details on the Office 365 Outlook connector, see: [SMTP headers](https://docs.microsoft.com/connectors/office365/#smtp-headers). 
 
