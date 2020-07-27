@@ -416,9 +416,9 @@
         href: https://docs.microsoft.com/powerapps/maker/portals/admin/power-platform-admin-center
     - name: Activity logging
       items: 
-      - name: Power Apps 
+      - name: Power Apps activity logging
         href: logging-powerapps.md 
-      - name: Data loss prevention
+      - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
       - name: Audit data and user activity for Dynamics 365 entities
         href: audit-data-user-activity.md
@@ -502,6 +502,8 @@
         href: system-application-users.md
       - name: Configure user security
         href: database-security.md
+      - name: Email exfiltration controls for Office 365 connectors
+        href: block-forwarded-email-from-power-automate.md
       - name: Configure environment security 
         items: 
         - name: Control user access to environments
