@@ -37,7 +37,7 @@ For information about the programmatic interface for managing configuration and 
   
    Alternatively, you can turn on **Allow access to Azure services** to allow all Azure services access.  
   
-   For [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] VM, the "Connect to SQL Server over the Internet" option should be enabled. More information: [Azure: Connect to a SQL Server Virtual Machine on Azure (Classic Deployment)](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-classic-sql-connect/)  
+   For [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] VM, the "Connect to SQL Server over the Internet" option should be enabled. More information: [Azure: Connect to a SQL Server Virtual Machine on Azure](https://docs.microsoft.com/azure/azure-sql/virtual-machines/windows/ways-to-connect-to-sql)  
 
    Additionally, configure your firewall rules to allow communication between Data Export Service and SQL Server.
   
