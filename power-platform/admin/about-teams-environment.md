@@ -85,6 +85,19 @@ It can take up to 24 hours to:
 - Recognize a user who left the organization (user record deletion in Azure Active Directory) and disable them in the Teams environment. 
 - Recognize removal of Azure AD admin roles (Tenant admin, Power Platform service admin, Dynamics 365 service admin) from a user, and synchronize the change to the Teams environment. 
 
+## Teams environments settings
+
+To change settings for a Teams environment, go to **Environments** > [select an environment] > **Settings**.
+
+### Languages
+Text to come.
+
+### Users + permissions
+Text to come.
+
+### Integration
+Text to come.
+
 ## Capacity limits
 
 The consumption of capacity by Teams environments will not count towards the tenant’s capacity limits. Instead, we will provide a pool of database capacity for Teams environments, which will be separate from the tenant’s Power Platform Dataflex Pro capacity pool. Note that capacity will not be transferable between these two pools.  
