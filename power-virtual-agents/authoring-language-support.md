@@ -66,7 +66,7 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 |Korean                      | Experimental |
 |Norwegian                   | Preview |
 |Polish                      | Experimental |
-|Portuguese                  | Preview |
+|Portuguese (Brazilian)      | Preview |
 |Russian                     | Preview |
 |Spanish                     | Preview |
 |Swedish                     | Preview |
