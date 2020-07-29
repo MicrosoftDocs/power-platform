@@ -2,11 +2,10 @@
 title: "About Power Apps per app plans  | MicrosoftDocs"
 description: About Power Apps per app plans 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/13/2020
+ms.date: 07/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -127,8 +126,8 @@ The per app license gives a user access to two Power Apps and one portal for a s
 
 ## FAQ
 
-### I want to transition users from a Power Apps per app license to a Power App per user license. 
-Once the user is allocated a Power Apps per user license the user is transitioned from a per app to per user license. When per app plan consumption reports are available, they will show per app plans aren’t consumed by users that are assigned a per user plan.
+### What happens if I assign a user the Power Apps per user license when earlier they were using apps by consuming the per app license? 
+Once the user is allocated a Power Apps per user license, when per app license consumption reports are available they will show per app licenses aren’t consumed by users that are assigned a per user plan.
 
 ### When will I be able to see the list of users who are using the Power Apps per app license?
 We are currently working on this report. Please check back again for more details. This report will be available in the Power Platform admin center. 
