@@ -47,7 +47,7 @@ The following settings/environment are required for profile cards to be enabled 
    3. For **Enable users to view contact cards**, select **Yes**, and then **OK**.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/enable-users-view-contact-cards.png "Enable users to view contact cards")
+> ![Enable users to view contact cards](media/enable-users-view-contact-cards.png "Enable users to view contact cards")
 
 For information on how to use profile cards, see [View the profile card for a contact or user](https://docs.microsoft.com/powerapps/user/profile-cards).
 

@@ -94,12 +94,12 @@ You can download the report from [admin.powerapps.com](https://admin.powerapps.c
 Licensing**
 
 > [!div class="mx-imgBorder"] 
-> ![](media/user-licenses.png "User licenses")
+> ![User licenses](media/user-licenses.png "User licenses")
 
 The report is an Excel workbook that once downloaded you can use all of Excel’s
 features to filter the data to what you are looking for. The following is an
 example of the downloaded workbook.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/user-licenses-downloaded-workbook.png "User licenses downloaded workbook")
+> ![User licenses downloaded workbook](media/user-licenses-downloaded-workbook.png "User licenses downloaded workbook")
 
