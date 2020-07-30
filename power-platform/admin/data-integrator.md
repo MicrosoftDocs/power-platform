@@ -330,7 +330,7 @@ You can customize projects and templates in these ways:
    For this example, choose the **Sales to Fin and Ops** template since we want to move data from Dynamics 365 Finance and Operations to Dynamics 365 Sales.
     
     > [!div class="mx-imgBorder"] 
-    > ![](media/create-data-integration-project.png "Create data integration project")
+    > ![Create data integration project](media/create-data-integration-project.png "Create data integration project")
 
 4. Follow the steps 6 through 9 <a href="#CreateProject">here</a> to finish creating a data integration project. Select **Save**.
 
@@ -338,32 +338,32 @@ You can customize projects and templates in these ways:
    In this case, for demo purposes, we will create an **Activities Sales to Fin and Ops** task by picking **Activities** entity for Dynamics 365 Finance and Operations and Dynamics 365 Sales. Select **Create**.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/activities-sales-fin-opps-task.png "ActivitiesSales to Fin and Ops task")
+    > ![ActivitiesSales to Fin and Ops task](media/activities-sales-fin-opps-task.png "ActivitiesSales to Fin and Ops task")
 
 6. You'll see a new task has been added **Activities Sales to Fin and Ops**. Select **Save** to save your changes.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/new-task-added.png "New task added")
+    > ![New task added](media/new-task-added.png "New task added")
 
 7. The project is created. Select **Save as template** from the **Projects** list page.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/save-as-template.png "Save as template")
+    > ![Save as template](media/save-as-template.png "Save as template")
 
 8. Provide and name and description, then select **Save**. Additionally, select **Share with everyone in my organization** to share this template.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/save-describe-share.png "Save project as template")
+    > ![Save project as template](media/save-describe-share.png "Save project as template")
 
 You'll see the newly created template listed on the **Templates** list page.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/newly-created-template.png "Newly created template")
+> ![Newly created template](media/newly-created-template.png "Newly created template")
 
 Additionally, after creating a new integration project, when you choose **Select a template** you'll see your newly created template as part of the **Select a template** list.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/new-data-integration-project.png "New data integration project")
+> ![New data integration project](media/new-data-integration-project.png "New data integration project")
 
 
 ## Advanced data transformation and filtering 

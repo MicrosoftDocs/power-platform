@@ -75,7 +75,7 @@ As an admin, you can restrict who can allocate add-on capacity to environments.
 4. Under **Who can allocated add-on capacity to environments**, select **Only specific admins**.
 
    > [!div class="mx-imgBorder"] 
-   > ![](./media/add-on-governance.png "Control add-on capacity allocation")
+   > ![Control add-on capacity allocation](./media/add-on-governance.png "Control add-on capacity allocation")
 
 The following admins will be able to allocate add-on capacity in the Power Platform admin center:
 

@@ -27,7 +27,7 @@ With the new provisioning model, those with the correct licenses can create an e
 4. Select **Only specific admins**.
 
    > [!div class="mx-imgBorder"] 
-   > ![](./media/governance-setting.png "Specify Global admins")
+   > ![Specify Global admins](./media/governance-setting.png "Specify Global admins")
 
 The following admins will be able to create new environments in the Power Platform admin center:
 
