@@ -92,7 +92,7 @@ The reports are built on Power BI. To download a report, select the ellipsis (â€
 
 ## How do I change environments? 
 
-Select **Change Filter** or the **Filter** button (![](media/filters-button.png "Filter button")) in the upper-right corner of the page.
+Select **Change Filter** or the **Filter** button (![Filter button](media/filters-button.png "Filter button")) in the upper-right corner of the page.
 
 > [!div class="mx-imgBorder"] 
 > ![Select Change Filter or Filter](media/powerapps-analytics-filter.png "Select Change Filter or Filter")

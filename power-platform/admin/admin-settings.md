@@ -48,13 +48,13 @@ Getting to app feature settings can vary based on the type of app you're using.
 To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/advanced-settings.png "Advanced settings")
+> ![Advanced settings](media/advanced-settings.png "Advanced settings")
 
 ### Settings in legacy web client apps
 
 To open settings for legacy client apps, select the arrow next to the app name, and then select **Settings**. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/legacy-settings.png "Legacy settings")
+> ![Legacy settings](media/legacy-settings.png "Legacy settings")
 
 
