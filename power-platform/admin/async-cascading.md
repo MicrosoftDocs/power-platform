@@ -49,17 +49,17 @@ Administrators can monitor the processing of asynchronous operations in the **Se
 1. Go to **Settings** > **System Jobs**. For unified client apps, see [Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/system-jobs.png "System Jobs area")
+    > ![System Jobs area](media/system-jobs.png "System Jobs area")
  
 2. Cascading operations are displayed in the **System Jobs** view. 
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/cascade-operations-view.png "Cascade Operations view")
+    > ![Cascade Operations view](media/cascade-operations-view.png "Cascade Operations view")
 
 > [!TIP]
 > To view only cascading operations, in the **View** selector select **Cascade Operations**. 
    > [!div class="mx-imgBorder"] 
-   > ![](media/cascade-operations.png "Cascade Operations view selector") 
+   > ![Cascade Operations view selector](media/cascade-operations.png "Cascade Operations view selector") 
 
 
 Cascading operations have any one of the following statuses: 
@@ -77,7 +77,7 @@ Opening a cascading operation displays:
 - Any messages associated with the job, such as failure reasons, or exceptions.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/cascade-operation-record.png "Cascade operation record")
+    > ![Cascade operation record](media/cascade-operation-record.png "Cascade operation record")
  
 ## Which cascading transactions can be processed asynchronously?
 Assign and Delete cascading transactions can be processed asynchronously. 

@@ -25,7 +25,7 @@ There are two ways to find your organization ID and name.
 1. Go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/advanced-settings.png "Select Advanced Settings")
+   > ![Select Advanced Settings](media/advanced-settings.png "Select Advanced Settings")
 
 2. Go to **Settings** > **Customizations** > **Developer Resources**.
 3. Under **Instance Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
@@ -38,4 +38,4 @@ There are two ways to find your organization ID and name.
 ## The organization ID and unique name
 
 > [!div class="mx-imgBorder"] 
-> ![](media/org-id-name.png "Determine org ID and name")
+> ![Determine org ID and name](media/org-id-name.png "Determine org ID and name")

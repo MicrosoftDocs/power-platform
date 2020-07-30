@@ -128,7 +128,7 @@ To approve emails for model-driven apps in Dynamics 365, a user requires:
 
 Decide which approach you want your organization to follow for mailbox approval.
 
-![](media/approval-flow-chart.png "Decide on mailbox approval approach")
+![Decide on mailbox approval approach](media/approval-flow-chart.png "Decide on mailbox approval approach")
 
 ### Permission model
 The following table describes the permissions required to approve emails.
@@ -217,7 +217,7 @@ To manually assign the **Approve Email Addresses for Users or Queues** privilege
 4. Under **Miscellaneous Privileges**, set the privilege level for **Approve Email Addresses for Users or Queues**.
   
 > [!div class="mx-imgBorder"] 
-> ![](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
+> ![Approve Email Address for User or Queues](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
 
 #### Approve mailboxes
 
@@ -252,7 +252,7 @@ Admins, as described in the Permission model table, can change the settings so m
 3. Select the mailboxes you want to test, and then select **Test & Enable Mailbox**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/test-enable-mailbox85.png "Test and enable mailboxes")
+   > ![Test and enable mailboxes](media/test-enable-mailbox85.png "Test and enable mailboxes")
   
    This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, model-driven apps in Dynamics 365 try to process the email again after some time or disables the mailbox for email processing.  
   
