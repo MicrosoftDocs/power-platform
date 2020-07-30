@@ -122,11 +122,31 @@ Checks for apps that use certain connectors, notifies the app maker, and shares 
 
 ### Developer Compliance Center
 
-This app is used in the [app auditing process](example-processes.md) as a tool for users to check whether their app is compliant, and to submit information to the CoE admins as business justification to stay in compliance. They can also use the app to update the description of their app and republish it, which are other ways to stay in compliance.
+This app is used in the [auditing process](example-processes.md) as a tool for users to check whether their app, flow, chatbot or custom connector is compliant, and to submit information to the CoE admins as business justification to stay in compliance.
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
 **Prerequisite**: This app uses Common Data Service; a Premium license is therefore required for each app user.
+
+#### Compliance Status
+
+A traffic light indicates how compliant the resource is towards a pre-defined rule set.
+
+- **Apps** are compliant if the app description is populated, the business justification is submitted and the app has been published in the past 60 days.
+- **Flows** are compliant if the flow description is populated, the business justification is submitted and the flow is not suspended.
+- **Chatbots** are compliant if the chatbot description and the business justification is populated, and the chatbot is not suspended.
+- **Custom Connectors** are compliant if the custom connector description, business justification and conditions of use are populated.
+
+**Customize**: Verify that the Compliance criteria matches your requirements, and update if necessary.
+
+Makers can achieve compliance by providing additional information through the Support Details form:
+
+- **Business Justification**: Describe the business need and problem you are solving with this solution.
+- **Business Impact**: Define the operational impact this solution has on the people using it.
+- **Access Management**: Describe who has access to this resource, how access is managed (individual user access, access through group membership) and how joiners/movers/leavers processes are managed.
+- **Dependencies**: Describe any dependencies this solution uses, e.g. external or internal APIs or Azure resources.
+- **Conditions of use**: (connectors only) Describe in which situations the connector can and should be used.
+- **Mitigation Plan provided**: For critical solutions, upload a mitigation plan that details what business users will do in the event of an outage.
 
 **Customize**: Verify that the Support Details form matches your requirements, and update if necessary.
 
