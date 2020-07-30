@@ -23,14 +23,13 @@ Introduced in August, 2020, the Teams environment is automatically created for t
 
 This section provides a summary of key lifecycle operations that will be allowed with Teams environments.
 
-Note: organizations within Dataflex are named the same as the team, and the list can be filtered in the
-Power Platform admin center to just Teams organizations.
+Note: organizations within Dataflex are named the same as the team, and the list can be filtered in the Power Platform admin center to just Teams organizations.
 
 
 |Operations  |Feature description  |Available in preview  |
 |---------|---------|---------|
 |Backup     | Automated backups and labeled backups can be taken. Admins can view them in the Power Platform admin center. Note that backups will be available for up to 7 days.        |  Yes       |
-|Restore     | Only point-in-time restores to the same environment will be possible. Note: if the environment has been promoted, the point-intime restore will only be available starting from the moment it was promoted. | Yes        |
+|Restore     | Only point-in-time restores to the same environment will be possible. Note: if the environment has been promoted, the point intime restore will only be available starting from the moment it was promoted. | Yes        |
 |Copy     | Not available by default for Dataflex.        | No        |
 |Create     | Only through Teams. Note: these Teams environments will be limited to a 1:1 mapping to the Teams team it was created in and bound to the Microsoft 365 Group associated to the team.        | Yes        |
 |Delete     | The environment can be deleted by the team owner. Note: the environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
