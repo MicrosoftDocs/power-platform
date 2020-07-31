@@ -49,7 +49,7 @@ License | Number of API requests every 24 hours
 Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations)
 
 > [!NOTE]
-> For flows created in the Power Virtual Agents authoring canvas you will see the plan used as "Per user plan". Tegardless of what your per-user license is, the above limit will apply.
+> For flows created in the Power Virtual Agents authoring canvas you will see the plan used listed as **Per user plan**. Regardless of what your per-user license is, the above limit will apply.
 
 
 
