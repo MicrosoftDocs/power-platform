@@ -1,15 +1,15 @@
 ---
-title: "Create and use entities in Power Virtual Agents"
+title: "Create and use entities"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
-keywords: ""
-ms.date: 1/28/2020
+keywords: "PVA"
+ms.date: 7/31/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring
+ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 

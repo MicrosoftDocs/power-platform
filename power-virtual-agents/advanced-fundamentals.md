@@ -1,15 +1,15 @@
 ---
-title: "Advanced authoring in Power Virtual Agents"
+title: "Advanced authoring of chatbots"
 description: "Go beyond basic authoring by using slot filling, entitie, variables, sign-in, live hand-off, and Power Automate flows."
-keywords: ""
-ms.date: 11/16/2019
+keywords: "PVA"
+ms.date: 7/31/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "authoring, fundamentals, advanced"
+ms.custom: "authoring, fundamentals, advanced, ceX"
 ms.collection: virtual-agent
 ---
 

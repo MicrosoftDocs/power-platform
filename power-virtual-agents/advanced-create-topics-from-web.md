@@ -1,15 +1,15 @@
 ---
-title: "Get Power Virtual Agents topic suggestions from support pages"
+title: "Get topic suggestions from support pages"
 description: "Use existing help and support pages to quickly generate new topics for your Power Virtual Agents bot."
-keywords: ""
-ms.date: 03/16/2020
+keywords: "PVA"
+ms.date: 7/31/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring
+ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
