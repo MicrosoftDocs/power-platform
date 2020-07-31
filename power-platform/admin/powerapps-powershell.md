@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/29/2020
+ms.date: 07/31/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +18,7 @@ search.app:
 ---
 
 # PowerShell support for Power Apps (preview)
-With the preview launch of the PowerShell cmdlets for app creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) or the [Power Apps Admin center](https://admin.powerapps.com).
+With the preview launch of the PowerShell cmdlets for app creators and administrators, you can automate many of the monitoring and management tasks that are only possible manually today in [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## Cmdlets
 [Cmdlets](https://docs.microsoft.com/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7) are functions written in PowerShell script language that execute commands in the Windows PowerShell environment. Running these Power Apps cmdlets will allow you to interact with your Business Application Platform without having to go through the admin portal in a web browser. You can combine these cmdlets with other PowerShell functions to write complex scripts that can optimize your workflow. Note that you can still use the cmdlets if you're not an admin on the tenant, but you will be limited to the resources you own. Cmdlets that start with the word 'Admin' are designed to be used by an administrative user account.
@@ -120,7 +120,7 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 ### Prerequisite
 To perform the administration operations in the admin cmdlets, you'll need the following:
 
-- A user with any of these roles, Global admins, Azure Active Directory Global admins, or Dynamics 365 Service administrator, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the [Power Apps Admin Center](https://admin.powerapps.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
+- A user with any of these roles, Global admins, Azure Active Directory Global admins, or Dynamics 365 Service administrator, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) at least once before using the PowerShell cmdlets. If this is not done, the cmdlets will fail with an authorization error.
 
 - [Microsoft 365 Global admin](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), or [Dynamics 365 Service administrator](global-service-administrators-can-administer-without-license.md) permissions if you need to search through another user's resources. Note that Environment Admins only have access to those environments and environment resources for which they have permissions.
 
