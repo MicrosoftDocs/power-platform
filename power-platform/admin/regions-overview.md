@@ -2,11 +2,10 @@
 title: Regions overview  Microsoft Docs
 description: Learn about regions in Power Apps
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2020
+ms.date: 07/31/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -33,16 +32,6 @@ If you're an administrator, you can determine the region of each environment in 
   
   > [!div class="mx-imgBorder"] 
   > ![Environments page](media/environment-list-region.png "Environments page")
-
-### Using Power Apps admin center
-If you're an administrator, you can also determine the region of each environment in the Power Apps admin center.
-
-- Browse to the [admin center](https://admin.powerapps.com), and sign in with your admin account.
-  
-  In the admin center, all existing environments are listed on the **Environments** tab. 
-
-  > [!div class="mx-imgBorder"] 
-  > ![Environments tab](media/environment-list-powerapps.png "Environments tab")
 
 ## What regions are available?
 
