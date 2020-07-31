@@ -1,8 +1,8 @@
 ---
 title: "Language support"
 description: "Create new bots in multiple languages, including tutorial and system topics."
-keywords: ""
-ms.date: 6/09/2020
+keywords: "PVA, language, regional, region"
+ms.date: 7/31/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -66,7 +66,7 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 |Korean                      | Experimental |
 |Norwegian                   | Preview |
 |Polish                      | Experimental |
-|Portuguese                  | Preview |
+|Portuguese (Brazilian)      | Preview |
 |Russian                     | Preview |
 |Spanish                     | Preview |
 |Swedish                     | Preview |
