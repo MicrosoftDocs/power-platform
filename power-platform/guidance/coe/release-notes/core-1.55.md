@@ -42,13 +42,6 @@ The Flow, Connector and Chatbot main forms have been updated with an Audit tab t
 
 The Flow, Connector and Chatbot entities have new Admin Review views, similar to the PowerApps App Admin Review view.
 
-New Business Process Flows to manage the Audit and Compliance Approval for Flows, Chatbots and Custom Connectors have been added:
-
-- Flow Approval BPF
-- Custom Connector Approval BPF
-- Chatbot Approval BPF
-
 ## Bug Fixes
 
 need to add
-

@@ -50,6 +50,8 @@ Represents archival approval tasks started during the *App Archive and Clean Up*
 This flow works in conjunction with other apps and flows in the CoE toolkit to facilitate a process described in the following section: [PowerApps App Auditing
 Process](example-processes.md).
 
+Compliance detail request emails are sent for apps and chatbots.
+
 It sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
 
 - The app is shared with more than 20 users or at least one group, and no business justification details have been provided.
@@ -57,6 +59,12 @@ It sends an email to users who have apps in the tenant that aren't compliant wit
 - The app has business justification details provided, but hasn't been published in 60 days (so is likely not on the latest version of Power Apps) or is missing a description.
 
 - The app has business justification details provided and has indicated high business impact, but hasn't submitted a mitigation plan to the attachments field.
+
+It sends an email to users who have chatbots in the tenant that aren't compliant with the following thresholds:
+
+- The chatbot has more than 50 launches, and no business justification details have been provided.
+
+- The chatbot has business justification details provided and has indicated high business impact, but hasn't submitted a mitigation plan to the attachments field.
 
 You can customize the email sent out by the flow; by default, it will look like the following:  
 
@@ -169,7 +177,7 @@ A model-driven app that provides an interface to canvas apps that have been high
 
 ![App Archive and Clean Up View](media/coe61.png "App Archive and Clean Up View")
 
-## Business process flow
+## Business process flows
 
 ### Power Apps App Approval BPF
 
@@ -190,9 +198,66 @@ The audit stages are:
    :::column-end:::
 :::row-end:::
 
-#### Activate the business process flow
+### Flow Approval BPF
 
-The Power Apps App Approval business process flow is disabled by default. To enable it, do the following:
+This process helps the admin audit the flow approval process by providing a visualization of the stage in the process they're currently on.
+
+The audit stages are:
+
+- Validate maker requirements.
+- Assess risk.
+- Complete admin review.
+
+:::row:::
+   :::column span="":::
+      ![Flow Approval BPF - Implementation](media/bpf1.png "Flow Approval BPF - Implementation")
+   :::column-end:::
+   :::column span="":::
+      ![Flow Approval BPF - Validate Maker Requirements](media/bpf2.png "Flow Approval BPF - Validate Maker Requirements")
+   :::column-end:::
+:::row-end:::
+
+### Custom Connector Approval BPF
+
+This process helps the admin audit the custom connector approval process by providing a visualization of the stage in the process they're currently on.
+
+The audit stages are:
+
+- Validate maker requirements.
+- Assess risk.
+- Complete admin review.
+
+:::row:::
+   :::column span="":::
+      ![Custom Connector Approval BPF - Implementation](media/bpf5.png "Custom Connector Approval BPF - Implementation")
+   :::column-end:::
+   :::column span="":::
+      ![Custom Connector Approval BPF - Validate Maker Requirements](media/bpf4.png "Custom Connector Approval BPF - Validate Maker Requirements")
+   :::column-end:::
+:::row-end:::
+
+### Chatbot Approval BPF
+
+This process helps the admin audit the chatbot approval process by providing a visualization of the stage in the process they're currently on.
+
+The audit stages are:
+
+- Validate maker requirements.
+- Assess risk.
+- Complete admin review.
+
+:::row:::
+   :::column span="":::
+      ![Chatbot Approval BPF - Implementation](media/bpf7.png "Chatbot Approval BPF - Implementation")
+   :::column-end:::
+   :::column span="":::
+      ![Chatbot Approval BPF - Validate Maker Requirements](media/bpf6.png "Chatbot Approval BPF - Validate Maker Requirements")
+   :::column-end:::
+:::row-end:::
+
+#### Activate the business process flows
+
+All business process flows are disabled by default. To enable it, do the following:
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>) and set the current environment to the same environment where the CoE solution is installed.
 
@@ -201,3 +266,5 @@ The Power Apps App Approval business process flow is disabled by default. To ena
 1. Select **Process** from the Filter option at the top.
 
 1. In **Power Apps App Approval BPF**, select the ellipsis (…) button, and then select **Turn On**.
+
+1. Repeat the last step for **Flow Approval BPF, Chatbot Approval BPF and Custom Connector Approval BPF**.
