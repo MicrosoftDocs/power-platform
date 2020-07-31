@@ -49,8 +49,8 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 
     ![New nodes](media/auth-template.png)
     
->[!NOTE]
->The **Authenticate** node is only available in the action picker at the end of a dialog tree (as a leaf node). It cannot be added in the middle of a dialog. Once added, other nodes can be added below it. 
+    >[!NOTE]
+    >The **Authenticate** node is only available in the action picker at the end of a dialog tree (as a leaf node). It cannot be added in the middle of a dialog. Once added, other nodes can be added below it. 
 
 ### Authenticate node
 
