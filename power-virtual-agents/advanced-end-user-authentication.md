@@ -2,14 +2,14 @@
 title: "Add user authentication to bot topics in Power Virtual Agents"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider"
-ms.date: 11/9/2019
+ms.date: 7/31/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authentication
+ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
@@ -48,6 +48,9 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 1. Once selected, a number of new nodes will be added automatically. These nodes include a parent **Authenticate** node, followed by nodes for bot a success and a failure path. 
 
     ![New nodes](media/auth-template.png)
+    
+    >[!NOTE]
+    >The **Authenticate** node is only available in the action picker at the end of a dialog tree (as a leaf node). It cannot be added in the middle of a dialog. Once added, other nodes can be added below it. 
 
 ### Authenticate node
 

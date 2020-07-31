@@ -1,7 +1,7 @@
 ---
 title: "Regional settings and data locations for Power Virtual Agents"
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
-ms.date: 6/22/2020
+ms.date: 7/31/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -30,7 +30,7 @@ Chatbots built with Power Virtual Agents will understand and display content tha
 * Currency
 * Speed
 
-Power Virtual Agents supports the following locales:
+Power Virtual Agents supports the following display formatting locales:
 * en-AU
 * en-CA
 * en-GB
