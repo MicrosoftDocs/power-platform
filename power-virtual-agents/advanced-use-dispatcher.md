@@ -1,8 +1,8 @@
 ---
-title: "Use a Microsoft Bot Framework bot with Power Virtual Agents"
+title: "Use a Microsoft Bot Framework bot"
 description: "Use and extend an existing Microsoft Bot Framework bot to work with Power Virtual Agents."
-keywords: "extensibility, integration, extend bot, bot framework"
-ms.date: 4/15/2020
+keywords: "extensibility, integration, extend bot, bot framework, PVA"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -10,6 +10,7 @@ author: pawant-ms
 ms.author: iawilt
 ms.reviewer: iaanw 
 manager: shellyha
+ms.custom: advanced-authoring, ceX
 ---
 
 # Use a Microsoft Bot Framework bot with Power Virtual Agents

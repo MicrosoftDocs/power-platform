@@ -1,14 +1,15 @@
 ---
-title: "View Power Virtual Agents billed sessions"
-description: "See Power Virtual Agents billed sessions for the last 30 or 7 days"
-ms.date: 2/27/2020
+title: "View billed sessions"
+description: "See Power Virtual Agents billed sessions for the last 30 or 7 days."
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: "analysis, licensing"
+ms.cusom: "analysis, licensing, ceX"
 ms.collection: virtual-agent
 ---
 
