@@ -256,7 +256,7 @@ The following steps require you to add code that registers your new dispatch end
     }
     ```
  
-4. Update the BotServices constructor to instatiate `DynamicsBotService` in the `BotServices.cs` file.
+4. Update the BotServices constructor to start `DynamicsBotService` in the `BotServices.cs` file.
 
     ```csharp
     DynamicsBotService = new DynamicsBotService(new DynamicsBotEndpoint(

@@ -1,5 +1,5 @@
 ---
-title: "Chatot authoring"
+title: "Chatbot authoring"
 description: "Discover how to create bots and topics easily in Power Virtual Agents with no coding or long deployment times."
 keywords: "PVA"
 ms.date: 6/09/2020
