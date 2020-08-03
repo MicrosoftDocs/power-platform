@@ -1,7 +1,8 @@
 ---
-title: "Configure Power Virtual Agents hand-off to Omnichannel for Customer Service"
+title: "Configure hand-off to Omnichannel for Customer Service"
 description: "Have human agents intercede in bot conversations by connecting Power Virtual Agents to Omnichannel."
-ms.date: 6/11/2020
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article

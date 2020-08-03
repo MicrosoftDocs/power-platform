@@ -1,8 +1,8 @@
 ---
-title: "Configure single sign-on in Power Virtual Agents"
+title: "Configure single sign-on"
 description: "Enable your bot to authenticate an already-signed-in user"
-keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider"
-ms.date: 6/29/2020
+keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -10,7 +10,7 @@ author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: pawant
-ms.custom: authentication
+ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 

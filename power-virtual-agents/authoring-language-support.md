@@ -1,6 +1,6 @@
 ---
 title: "Language support"
-description: "Create new bots in multiple languages, including tutorial and system topics."
+description: "Create new chatbots in multiple languages, including tutorial and system topics."
 keywords: "PVA, language, regional, region"
 ms.date: 7/31/2020
 ms.service:
