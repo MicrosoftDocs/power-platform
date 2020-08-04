@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2020
+ms.date: 08/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +25,6 @@ You can identify a Teams environment in the Power Platform admin center by selec
 > ![Teams environment in list](media/teams-environment-list.png "Teams environment in list")
 
 ## Licensing and restrictions 
-
 Apps created in Teams that use Dataflex will only be accessible in Teams and Teams Mobile, regardless of the user’s license.  
 
 For any standalone Power Apps or Power Automate usage, which includes API access as well, the Dataflex schema will need to be promoted to Dataflex Pro.  
@@ -139,7 +138,7 @@ Select **Promote to production**. See [Promotion Process](#promotion-process).
 
 ### Refresh cadence
 
-In Details, you'll see information on the refresh cadence. <need info on what this is>
+In **Details**, you'll see information on the refresh cadence. 
 
 ## Capacity limits
 

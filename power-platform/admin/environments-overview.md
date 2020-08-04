@@ -116,8 +116,6 @@ A single default environment is automatically created by Power Apps for each ten
 
 The default environment is named as follows: "{Azure AD tenant name} (default)"
 
-![Default environment named Microsoft (default)](./media/environments-overview/DefaultEnvironment.png "Default environment named Microsoft (default)")
-
 ## Production and trial environments
 You can create environments for different purposes. A trial environment is for trying out the environment and the experience of using a database with Common Data Service. It expires after a certain period. 
 
