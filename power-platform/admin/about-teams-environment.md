@@ -121,6 +121,9 @@ Only users that meet the access requirements can be added to this environment. A
 
 To delete a Teams environment, select it from the list of environments and then select **Delete**.
 
+> [!div class="mx-imgBorder"] 
+> ![Delete a Teams environment](media/teams-environment-manage-delete.png "Delete a Teams environment")
+
 ### Promote a Teams environment to production
 
 Select **Promote to production**. See [Promotion Process](#promotion-process).
@@ -190,14 +193,14 @@ A tenant admin will be allowed to promote a Teams environment to a Dataflex Pro 
 Post promotion, the following applies to the newly promoted environment:  
 -	The promoted environment’s lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the promoted environment remains. 
 -	Any apps running on the environment will require Power Platform (Power Apps, Power Automate) licenses to be accessed. 
--	The apps can run inside and outside of Teams - 	All existing apps will then be associated with the promoted environment (Dataflex Pro) and can leverage the extended set of entities. 
--	The promoted environment capacity will start counting against the tenant’s Dataflex Pro capacity.  - 	The Microsoft 365 Group association will then become editable. 
+-	The apps can run inside and outside of Teams. All existing apps will then be associated with the promoted environment (Dataflex Pro) and can leverage the extended set of entities. 
+-	The promoted environment capacity will start counting against the tenant’s Dataflex Pro capacity. The Microsoft 365 Group association will then become editable. 
 -	Azure AD admins (Tenant admin, Power Platform service admin, Dynamics 365 service admin) will continue to be System Admins in the promoted Dataflex Pro database environment. 
 -	Teams owners will not have access to this environment through the Power Platform admin center, unless they are explicitly assigned the System Admin role. 
--	Adding a new Teams Template app to the prior team will create a new Teams Environment for the team. 
+-	Adding a new Teams Template app to the prior team will create a new Teams environment for the team. 
 
 ## Admin experience 
-Tenant owners and members will be allowed to create their first app template or create a blank table app for the Team. For more detailed guidance on creating blank table apps, go to section 6 of this document. 
+Tenant owners and members will be allowed to create their first app template or create a blank table app for the Team. For more detailed guidance on creating blank table apps, see [Dataflex tables: Overview](https://review.docs.microsoft.com/en-us/powerapps/teams/overview-tables?branch=teams-preview). 
 
 Team owners will be allowed to delete a team associated to a Teams environment which will trigger the deletion of that environment.  
 
@@ -206,14 +209,4 @@ Though by design and per GDPR guidelines, tenant admins and/or Power Platform ad
 Team members that have a valid Teams license will be allowed to access Power Platform apps which are powered by the Teams environment in the team. This access will include the ability to install, make, edit, run, share, and remove apps.  
 
 Teams will also be able to invite guests who will be able to access the apps, flows, and data in the Teams Dataflex database within their team. However, they won’t be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
-
-
-
-
-
-
-
-
-
-
 
