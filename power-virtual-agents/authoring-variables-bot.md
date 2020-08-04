@@ -83,6 +83,10 @@ For example, the customer starts the conversation on the "Appointment booking" t
 When the conversation comes to the point in the "Appointment booking" topic where `bot.UserName` is referenced, the bot will seamlessly pivot to the question node where `bot.UserName` is first defined.
 
 After the customer answers the question, the bot will resume the "Appointment booking" topic. 
+
+## Bot variable behavior when implementing Power Automate flows
+
+Sometimes, you might use a flow or Skill to initialize or fill in a variable. However, you may find you also want to initialize the variable in another way at a different point in the conversation, or you may have already set the output variables of the flow or Skill. In this case, the flow or Skill will still run, and it will fill in that variable, overwriting what it has previously been filled in with.
  
 ## Set a bot variable's value from external sources
 
