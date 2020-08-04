@@ -101,7 +101,7 @@ It can take up to 24 hours to:
 To change settings for a Teams environment, go to **Environments** > [select an environment] > **Settings**.
 
 > [!div class="mx-imgBorder"] 
-> ![Teams environment settings](teams-environment-settings.png "Teams environment settings")
+> ![Teams environment settings](media/teams-environment-settings.png "Teams environment settings")
 
 ### Languages
 Select **Languages** and see the following topic for settings: [Regional and language options for your environment](enable-languages.md).
