@@ -29,11 +29,11 @@ With the new provisioning model, those with the correct licenses can create an e
    > [!div class="mx-imgBorder"] 
    > ![Specify Global admins](./media/governance-setting.png "Specify Global admins")
 
-The following admins will be able to create new environments in the Power Platform admin center:
+The following admin roles will be able to create new environments in the Power Platform admin center:
 
-- Global admins
-- Dynamics 365 service admins
-- Power Platform service admins
+- Global admin
+- Dynamics 365 admin
+- Power Platform admin
 
 > [!NOTE]
 > Environments created prior to restriction can still be managed after restriction by those who created the environment. Restriction will prevent any new environments being created and managed. 
