@@ -105,6 +105,7 @@ It can take up to 24 hours to:
 - Recognize removal of Azure AD admin roles (Tenant admin, Power Platform service admin, Dynamics 365 service admin) from a user, and synchronize the change to the Teams environment. 
 
 ## Teams environments settings and actions
+<!-- fwlink 2133713  -->
 
 To change settings for a Teams environment, go to **Environments** > [select an environment] > **Settings**.
 
@@ -115,6 +116,7 @@ To change settings for a Teams environment, go to **Environments** > [select an 
 Select **Languages** and see the following topic for settings: [Regional and language options for your environment](enable-languages.md).
 
 ### Users + permissions
+<!-- fwlink 2123134 2127762 -->
 Select **Users + permissions** > **Users**. Select **+ Add user** to add users.
 
 Only users that meet the access requirements can be added to this environment. Add one user at a time.
@@ -122,7 +124,7 @@ Only users that meet the access requirements can be added to this environment. A
 **User access requirements**
 
 - [Enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account)
-- Has an active Office 365 license that includes Teams. The Office 365 A1 plan does not provide user access.
+- Has an active Office 365 license in a plan that includes Teams. Note: the Office 365 A1 plan does not provide user access.
 - Member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group)
 
 ### Delete a Teams environment
@@ -135,6 +137,9 @@ To delete a Teams environment, select it from the list of environments and then 
 ### Promote a Teams environment to production
 
 Select **Promote to production**. See [Promotion Process](#promotion-process).
+
+### Microsoft Teams association
+Select the team to open the app in Teams.
 
 ### Refresh cadence
 
