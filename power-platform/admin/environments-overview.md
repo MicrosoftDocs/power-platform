@@ -2,11 +2,10 @@
 title: Environments overview | Microsoft Docs
 description: Learn about environments in Power Apps and how to use them
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/08/2020
+ms.date: 08/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -95,6 +94,11 @@ There are multiple types of environments. The type indicates the purpose of the 
 <td width="20%"> Developer</td>
 <td width="50%">  Developer environments are created by users who have the Community Plan license. They're special environments intended only for use by the owner, and they can't be shared with other users. Provisioning developer environments can't be restricted unless through a support ticket. </td>
 <td width="30%">  Only a single user account with the Community Plan has access.</td>
+</tr>
+<tr>
+<td width="20%"> Teams</td>
+<td width="50%">  Teams environments are automatically created for the selected team when you add an app in Teams using Power Apps for the first time or install a Power Apps app from the app catalog. See [About the Teams environment](about-teams-environment.md). </td>
+<td width="30%">  Tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Teams environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. </td>
 </tr>
 <tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
 </table>

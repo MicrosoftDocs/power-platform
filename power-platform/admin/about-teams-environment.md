@@ -1,5 +1,5 @@
 ---
-title: "About the Teams environment | MicrosoftDocs"
+title: "About the Teams environment (preview) | MicrosoftDocs"
 description: About Teams environment
 author: jimholtz
 ms.service: power-platform
@@ -26,13 +26,22 @@ You can identify a Teams environment in the Power Platform admin center by selec
 
 ## Licensing and restrictions 
 
-<need info on licensing required>
-
 Apps created in Teams that use Dataflex will only be accessible in Teams and Teams Mobile, regardless of the user’s license.  
 
 For any standalone Power Apps or Power Automate usage, which includes API access as well, the Dataflex schema will need to be promoted to Dataflex Pro.  
 
 No direct API access or pro developer experience will be provided and only Power Apps embedded within the Teams client will be able to access runtime.  
+
+## Admin experience 
+Tenant owners and members will be allowed to create their first app template or create a blank table app for the Team. For more detailed guidance on creating blank table apps, see [Dataflex tables: Overview](https://review.docs.microsoft.com/en-us/powerapps/teams/overview-tables?branch=teams-preview). 
+
+Team owners will be allowed to delete a team associated to a Teams environment which will trigger the deletion of that environment.  
+
+By design and per GDPR guidelines, tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Teams environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. 
+ 
+Team members that have a valid Teams license will be allowed to access Power Platform apps which are powered by the Teams environment in the team. This access will include the ability to install, make, edit, run, share, and remove apps.  
+
+Teams will also be able to invite guests who will be able to access the apps, flows, and data in the Teams Dataflex database within their team. However, they won’t be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
 
 ## Environment lifecycle
 
@@ -199,14 +208,5 @@ Post promotion, the following applies to the newly promoted environment:
 -	Teams owners will not have access to this environment through the Power Platform admin center, unless they are explicitly assigned the System Admin role. 
 -	Adding a new Teams Template app to the prior team will create a new Teams environment for the team. 
 
-## Admin experience 
-Tenant owners and members will be allowed to create their first app template or create a blank table app for the Team. For more detailed guidance on creating blank table apps, see [Dataflex tables: Overview](https://review.docs.microsoft.com/en-us/powerapps/teams/overview-tables?branch=teams-preview). 
 
-Team owners will be allowed to delete a team associated to a Teams environment which will trigger the deletion of that environment.  
-
-Though by design and per GDPR guidelines, tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Teams environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. 
- 
-Team members that have a valid Teams license will be allowed to access Power Platform apps which are powered by the Teams environment in the team. This access will include the ability to install, make, edit, run, share, and remove apps.  
-
-Teams will also be able to invite guests who will be able to access the apps, flows, and data in the Teams Dataflex database within their team. However, they won’t be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
 
