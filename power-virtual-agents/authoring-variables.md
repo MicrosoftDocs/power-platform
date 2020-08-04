@@ -1,15 +1,15 @@
 ---
-title: "Work with variables in Power Virtual Agents"
+title: "Work with chatbot variables"
 description: "Use variables to use custom and prebuilt entities to allow for customized conversations in your bot."
-keywords: ""
-ms.date: 5/27/2020
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring
+ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 

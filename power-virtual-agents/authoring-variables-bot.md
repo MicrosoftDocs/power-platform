@@ -1,8 +1,8 @@
 ---
-title: "Use bot variables to carry content across topics"
+title: "Use chatbot variables to carry content across topics"
 description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
-keywords: ""
-ms.date: 6/12/2020
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article

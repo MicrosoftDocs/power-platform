@@ -1,14 +1,15 @@
 ---
-title: "Analyze topic performance in Power Virtual Agents"
+title: "Analyze topic performance"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
-ms.date: 11/12/2019
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis
+ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 

@@ -2,11 +2,10 @@
 title: Governance considerations | Microsoft Docs
 description: Explains how Power Apps and Power Automate be made widely available to their business and be supported by IT.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/25/2019
+ms.date: 08/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -126,7 +125,7 @@ A: Connectors are available to all users. With the exception of premium or custo
 
 In addition to monitoring, many customers want to subscribe to software creation, usage or health events so they know when to perform an action. This section outlines a few means to observe events (manually and programmatically) and perform actions triggered by an event occurrence. 
 
-### Leverage the [Power Apps and Microsoft Power Automate admin center](wp-work-with-admin-portals.md)
+### Leverage the [Microsoft Power Automate admin center](https://admin.powerplatform.microsoft.com/)
 
 Environment and app management requires a Power Apps plan or a Power Automate plan. You can do the following:
 
@@ -184,19 +183,22 @@ It's well understood that monitoring as a critical aspect of managing software a
 
 ### Download the Power Apps and Power Automate license report
 
-1. [https://admin.powerapps.com/tenant/userLicenses](https://admin.powerapps.com/tenant/userLicenses) 
-2. View Power Apps and Power Automate admin analytics
-   1. Available now in preview from the new [Power Platform admin center](https://aka.ms/ppac). 
-   2. One can get information along the following lines: 
-      1. Active User and App usage  - how many users are using an app and how often? 
-      2. Location – where is the usage? 
-      3. Service Performance of connectors
-      4. Error reporting – which are the most error prone apps
-      5. Flows in use by type and date
-      6. Flows created by type and date
-      7. Application-level auditing 
-      8. Service Health
-      9. Connectors used
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+2. Select **Analytics** > **Power Automate** or **Power Apps**.
+
+3. View Power Apps and Power Automate admin analytics
+
+   You can get information about the following:
+   - Active User and App usage  - how many users are using an app and how often? 
+   - Location – where is the usage? 
+   - Service Performance of connectors
+   - Error reporting – which are the most error prone apps
+   - Flows in use by type and date
+   - Flows created by type and date
+   - Application-level auditing 
+   - Service Health
+   - Connectors used
 
 ### View app resources used in an Environment
 
