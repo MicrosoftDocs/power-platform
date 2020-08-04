@@ -97,7 +97,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Teams</td>
-<td width="50%">  Teams environments are automatically created for the selected team when you add an app in Teams using Power Apps for the first time or install a Power Apps app from the app catalog. See [About the Teams environment](about-teams-environment.md). </td>
+<td width="50%">  Teams environments are automatically created for the selected team when you add an app in Teams using Power Apps for the first time or install a Power Apps app from the app catalog. See <a href="about-teams-environment.md">About the Teams environment</a>. </td>
 <td width="30%">  Tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Teams environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. </td>
 </tr>
 <tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>

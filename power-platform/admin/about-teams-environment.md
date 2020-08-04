@@ -145,7 +145,7 @@ In Details, you'll see information on the refresh cadence. <need info on what th
 
 The consumption of capacity by Teams environments will not count towards the tenant’s capacity limits. Instead, we will provide a pool of database capacity for Teams environments, which will be separate from the tenant’s Power Platform Dataflex Pro capacity pool. Note that capacity will not be transferable between these two pools.  
 
-**Per-environment limits on Teams environments**: Each Teams environment will be restricted to 2 GB of database storage. To see the consumption of each Teams environment in a tenant, navigate to Power Platform admin center (http://aka.ms/ppac), then to **Resources** -> **Capacity** -> **Microsoft Teams Capacity**.   
+**Per-environment limits on Teams environments**: Each Teams environment will be restricted to 2 GB of database storage. To see the consumption of each Teams environment in a tenant, navigate to Power Platform admin center (https://aka.ms/ppac), then to **Resources** -> **Capacity** -> **Microsoft Teams Capacity**.   
 
 > [!div class="mx-imgBorder"] 
 > ![Teams environment capacity](media/teams-environment-capacity.png "Teams environment capacity")
