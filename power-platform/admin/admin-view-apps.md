@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 10/15/2019
+ms.date: 08/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,6 +17,12 @@ search.app:
 ---
 
 # Download a list of apps created in your environments
+
+With the retirement of the Power Apps admin center, this feature is no longer available.
+
+You can view apps in your environments. In the Power Platform admin center, select an environment and then select an item in the **Resources** section. See [Manage Power Apps](admin-manage-apps.md#manage-power-apps). 
+
+<!--
 If you're an Environment admin, you can view and download a list of apps created in the environments that you're administering. If you're a 365 Global admin or Power Platform admin, you can view and download a list of apps created in all of the environments in your organization.
 
 In this topic, you'll learn how to download a list of apps created in a single environment to a .csv file, and then view that list in Excel.
@@ -49,3 +55,4 @@ In this topic, you learned how to download and view a list of apps created in an
 
 > [!div class="nextstepaction"]
 > [Manage apps created in your organization](admin-manage-apps.md)
+-->
