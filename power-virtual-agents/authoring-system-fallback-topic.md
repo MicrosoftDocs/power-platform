@@ -1,15 +1,15 @@
 ---
-title: "Use a system fallback topic in Power Virtual Agents"
+title: "Use a system fallback topic"
 description: "A system fallback topic can be triggered when the bot doesn't understand the user's questions."
-keywords: ""
-ms.date: 03/12/2020
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring
+ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 

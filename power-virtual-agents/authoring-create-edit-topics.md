@@ -1,15 +1,15 @@
 ---
-title: "Use topics to design a Power Virtual Agents bot conversation"
+title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
-keywords: ""
-ms.date: 4/15/2020
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring
+ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
@@ -73,10 +73,6 @@ You can edit both of these topic types in the same manner as for topics you crea
    > ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers.png "The Topic details page contains a name, description, and trigger phrases")
 
 1. Select **Save topic** to add the topic to the topics list.
-
-
-   > [!div class="mx-imgBorder"]
-   > ![The Save topic button is at the top of the Topic details page](media/topics-details-save.png "The Save topic button is at the top of the Topic details page")
 
 
 ## Design the topic's conversation path

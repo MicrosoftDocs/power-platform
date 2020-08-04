@@ -1,13 +1,15 @@
 ---
 title: "Responding to GDPR Data Subject Export Requests"
 description: "Learn how to respond​ to GDPR Data Subject Export Requests for Power Virtual Agents."
-ms.date: 5/26/2020
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.custom: ceX
+ms.collection: virtual-agent
 ---
 
 # Export data to respond to requests for copies of personal data in Power Virtual Agents
