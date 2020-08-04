@@ -122,7 +122,7 @@ Only users that meet the access requirements can be added to this environment. A
 **User access requirements**
 
 - [Enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account)
-- Has an active [license](#licensing-and-restrictions)
+- Has an active license
 - Member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group)
 
 ### Delete a Teams environment
