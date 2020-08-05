@@ -80,8 +80,8 @@ As an admin, you can restrict who can allocate add-on capacity to environments.
 The following admins will be able to allocate add-on capacity in the Power Platform admin center:
 
 - Global admins
-- Dynamics 365 service admins
-- Power Platform service admins
+- Dynamics 365 admins
+- Power Platform admins
 
 ### See also
 [About Power Apps per app plans](about-powerapps-perapp.md)

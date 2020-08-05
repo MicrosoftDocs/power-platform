@@ -2,7 +2,6 @@
 title: Manage data loss prevention (DLP) policies | Microsoft Docs
 description: Walkthrough of how to manage data loss prevention policies for Power Apps.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -21,7 +20,7 @@ search.app:
 
 An organization's data is critical to its success. Its data needs to be readily available for decision-making, but the data needs to be protected so that it isn't shared with audiences who shouldn't have access to it. To protect this data, you can use Power Apps to create and enforce data loss prevention (DLP) policies that define the consumer connectors that specific business data can be shared with. For example, an organization that uses Power Apps might not want the business data that's stored in SharePoint to be automatically published to its Twitter feed.
 
-To create, edit, or delete DLP policies, you must have either Environment Admin or Power Platform service admin permissions. More information: [Environments administration in Power Apps](environments-administration.md) and [Create a data loss prevention (DLP) policy](create-dlp-policy.md)
+To create, edit, or delete DLP policies, you must have either Environment Admin or Power Platform admin permissions. 
 
 ## Find and view DLP policies
 
