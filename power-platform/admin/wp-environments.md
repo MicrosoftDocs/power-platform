@@ -87,7 +87,7 @@ Each tenant will have a default environment created automatically in the region 
 
 1. This environment can’t be disabled or deleted. 
 2. All tenant users are added automatically to the maker role for the default environment and you can’t remove them from that role. 
-3. Only Microsoft 365 tenant global administrators, Dynamics 365 service administrators, and Power Platform service administrators are added to Environment Administrator role.
+3. Only Microsoft 365 tenant global administrators, Dynamics 365 admin, and Power Platform admins are added to Environment Administrator role.
 4. As the default environment is the preferred place for individual users to start off building personal productivity apps and workflows, you should consider renaming the default environment to “Personal Productivity (default)” or another suitable name for your organization.
 
 The default environment should not be used to host production solutions. It’s designed to be an open environment that allows users to extend Microsoft 365 and trusted applications or to build personal productivity applications that don’t affect many people. You can restrict to this usage by adding a DLP policy that only allows data flow between trusted first party connectors.

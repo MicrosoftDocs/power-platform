@@ -21,7 +21,7 @@ If you're a 365 Global admin or Power Platform admin, you can download a list of
 
 In this topics, you'll learn how to download a list of active users to a .csv file, and then view that list in Excel.
 
-To follow the steps, you need Global admin or Power Platform service admin permissions.
+To follow the steps, you need Global admin or Power Platform admin permissions.
 
 ## Sign in to the Power Apps Admin center
 Sign in to the Admin center at [https://admin.powerapps.com](https://admin.powerapps.com).
