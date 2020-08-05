@@ -25,11 +25,19 @@ You can identify a Teams environment in the Power Platform admin center by selec
 > ![Teams environment in list](media/teams-environment-list.png "Teams environment in list")
 
 ## Licensing and restrictions 
-Apps created in Teams that use Dataflex will only be accessible in Teams and Teams Mobile, regardless of the user’s license.  
+Note the following regarding access to Power Platform apps in Teams.
 
-For any standalone Power Apps or Power Automate usage, which includes API access as well, the Dataflex schema will need to be promoted to Dataflex Pro.  
+- Team members that have an active Office 365 license in a plan that includes Teams will be allowed to access Power Platform apps, which are powered by the Dataflex database in the team. This access will include the ability to install, make, edit, run, share, and remove apps.
 
-No direct API access or pro developer experience will be provided and only Power Apps embedded within the Teams client will be able to access runtime.  
+- The following plans **do not** provide user access: US government subscriptions (GCC, GCC High and DoD), Office 365 A1, and Student Use Benefit plans.
+
+- Teams can invite guests who can access the apps, flows, and data in the Teams Dataflex database within their team. However, they won’t be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
+
+- Apps created in Teams that use Dataflex will only be accessible in Teams and Teams Mobile, regardless of the user’s license.  
+
+- For any standalone Power Apps or Power Automate usage, which includes API access as well, the Dataflex schema will need to be promoted to Dataflex Pro.  
+
+- No direct API access or pro developer experience will be provided and only Power Apps embedded within the Teams client will be able to access runtime.  
 
 ## Admin experience 
 Tenant owners and members will be allowed to create their first app template or create a blank table app for the Team. For more detailed guidance on creating blank table apps, see [Dataflex tables: Overview](https://review.docs.microsoft.com/en-us/powerapps/teams/overview-tables?branch=teams-preview). 
@@ -38,9 +46,7 @@ Team owners will be allowed to delete a team associated to a Teams environment w
 
 By design and per GDPR guidelines, tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Teams environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. 
  
-Team members that have a valid Teams license will be allowed to access Power Platform apps which are powered by the Teams environment in the team. This access will include the ability to install, make, edit, run, share, and remove apps.  
 
-Teams will also be able to invite guests who will be able to access the apps, flows, and data in the Teams Dataflex database within their team. However, they won’t be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
 
 ## Environment lifecycle
 
@@ -51,7 +57,7 @@ This section provides a summary of key lifecycle operations that will be allowed
 
 |Operations  |Feature description  |Available in preview  |
 |---------|---------|---------|
-|Backup     | Automated backups and labeled backups can be taken. Admins can view them in the Power Platform admin center. Note that backups will be available for up to 7 days.        |  Yes       |
+|Backup     | Automated backups and labeled backups can be taken. Admins can view them in the Power Platform admin center. Backups will be available for up to 7 days.        |  Yes       |
 |Restore     | Only point-in-time restores to the same environment will be possible. Note: if the environment has been promoted, the point in time restore will only be available starting from the moment it was promoted. | Yes        |
 |Copy     | Not available by default for Teams environments.        | No        |
 |Create     | Only through Teams. Note: these Teams environments will be limited to a 1:1 mapping to the Teams team it was created in and bound to the Microsoft 365 Group associated to the team.        | Yes        |
@@ -70,7 +76,7 @@ Some operations are blocked by default, such as the Copy and Reset operations. F
 
 ## User access to Teams environments
 
-In an environment such as Teams which can be collaborative in the development and use of apps, bots, and data, it’s important to understand how access is granted to the different types of roles within the service.
+In an environment such as Teams that can be collaborative in the development and use of apps, bots, and data, it’s important to understand how access is granted to the different types of roles within the service.
 
 This section summarizes user access to Teams environments and resources.
 
@@ -124,7 +130,7 @@ Only users that meet the access requirements can be added to this environment. A
 **User access requirements**
 
 - [Enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account)
-- Has an active Office 365 license in a plan that includes Teams. Note: the Office 365 A1 plan does not provide user access.
+- Has an active Office 365 license in a plan that includes Teams. See [Licensing and restrictions](#licensing-and-restrictions).
 - Member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group)
 
 ### Delete a Teams environment
@@ -147,7 +153,7 @@ In **Details**, you'll see information on the refresh cadence.
 
 ## Capacity limits
 
-The consumption of capacity by Teams environments will not count towards the tenant’s capacity limits. Instead, we will provide a pool of database capacity for Teams environments, which will be separate from the tenant’s Power Platform Dataflex Pro capacity pool. Note that capacity will not be transferable between these two pools.  
+The consumption of capacity by Teams environments will not count towards the tenant’s capacity limits. Instead, we will provide a pool of database capacity for Teams environments, which will be separate from the tenant’s Power Platform Dataflex Pro capacity pool. Capacity will not be transferable between these two pools.  
 
 **Per-environment limits on Teams environments**: Each Teams environment will be restricted to 2 GB of database storage. To see the consumption of each Teams environment in a tenant, navigate to Power Platform admin center (https://aka.ms/ppac), then to **Resources** -> **Capacity** -> **Microsoft Teams Capacity**.   
 
@@ -159,9 +165,9 @@ The consumption of capacity by Teams environments will not count towards the ten
 |Unit  |Service limit  |
 |---------|---------|
 |Teams environments      | 5 + 1 per 20 eligible office seats (up to a maximum of 500 environments) <br />
-Note that this limit on the number of environments cannot be extended further in Teams environments. Should more instances be needed, consider deleting unused environments or promoting to Dataflex Pro.   |
+This limit on the number of environments cannot be extended further in Teams environments. Should more instances be needed, consider deleting unused environments or promoting to Dataflex Pro.   |
 |Max Teams environment storage per tenant      | 10 GB + Teams environments x 2 GB (up to a max of 1 TB). <br />
-Note that this storage limit cannot be extended further in Teams environments. Should more storage be needed, consider promoting to Dataflex Pro.  |
+This storage limit cannot be extended further in Teams environments. Should more storage be needed, consider promoting to Dataflex Pro.  |
 |Max Teams environments API calls  | API requests in Microsoft Power Platform consist of various actions which a user makes across various products.  <br />
 For more information on API calls and the per user limits available, see the following documentation:  https://aka.ms/PowerPlatformRequestEntitlements  |
 
@@ -173,17 +179,19 @@ Below are the actions that we will take when customers approach and exceed the e
 
 When a Teams environment in a team approaches or hits the 2 GB capacity limit, the following actions will be taken: 
 - At 80% of the limit, the Teams users will see in the Teams maker experience a message informing them the capacity limit is about to be reached. At this point, customers are encouraged to either reduce storage usage or contact their admin for other options.  
-- At 100% of the limit, any existing apps will continue to work, and existing apps will be allowed to be updated. However, new apps and flows will not be allowed to be created or installed as a result of having reached the capacity limit. 
+- At 100% of the limit, any existing apps will continue to work, and existing apps can be updated. However, new apps and flows can't be created or installed as a result of having reached the capacity limit. 
 
 #### Tenant-level enforcement  
 
 When a tenant approaches or reaches their tenant-wide Teams limits described above, the following actions will be taken: 
 - At 80% of the limit, a notification will be sent to the Power Platform admin center admin informing of the approaching capacity limit, and to consider reducing storage usage or promoting some of the Teams environments. 
-- At 100% of the limit, the creation of new Teams environments will be blocked. Any users attempting to create a new Teams environment will be prompted to contact the tenant admin as the result of the capacity limit being reached. Additionally, new apps and flows will not be allowed to be created or installed in an existing Teams environment.  
+- At 100% of the limit, the creation of new Teams environments will be blocked. Any users attempting to create a new Teams environment will be prompted to contact the tenant admin as the result of the capacity limit being reached. Additionally, new apps and flows won't be allowed to be created or installed in an existing Teams environment.  
 
 As mentioned for the environment-level enforcement, any existing apps will still be able to function as expected.  
 
 ## Promotion Process 
+<!-- fwlink 2122620 for failure need 1GB -->
+<!-- fwlink 2134779 for for a few thing to know -->
 
 The high-level flow and business rules for promoting a Teams environment follow. 
 
@@ -193,7 +201,7 @@ A tenant admin will be allowed to promote a Teams environment to a Dataflex Pro 
 
 1. Within a team, the Teams user chooses to create a Power Apps app using the new integrated Teams/Power Apps app creation experience, or install a pre-existing Teams environment-based app. At this point, a Teams environment is provisioned for that team.  
 
-2. Over time, the data stored in the Teams environment will grow and will eventually reach the capacity limit that these environments have (2 GB). At this point, existing apps will continue to operate but new applications will not be allowed to be created or installed. Customers will be directed to contact a tenant admin to promote the Teams environments to Dataflex Pro and obtain more capacity. Note that alternatively, a Teams user could request the admin to promote because of a feature they want to use in Dataflex Pro.  
+2. Over time, the data stored in the Teams environment will grow and will eventually reach the capacity limit that these environments have (2 GB). At this point, existing apps will continue to operate but new applications won't be allowed to be created or installed. Customers will be directed to contact a tenant admin to promote the Teams environments to Dataflex Pro and obtain more capacity. Alternatively, a Teams user could request the admin to promote because of a feature they want to use in Dataflex Pro.  
 
 3. Admins will review the request from the Teams user and will make the decision to promote the environment from Teams to Dataflex Pro. At this point, the admin will go to the Power Platform admin center environments view to execute the promotion.   
 
