@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 03/09/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Create or edit a security role to manage access
 

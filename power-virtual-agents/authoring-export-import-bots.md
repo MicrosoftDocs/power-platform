@@ -1,8 +1,8 @@
 ---
 title: "Export and import bots using solutions (preview)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
-keywords: ""
-ms.date: 6/01/2020
+keywords: "export, import, transfer, environment, PVA"
+ms.date: 7/31/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -22,12 +22,18 @@ You can export and import bots using [solutions](/power-platform/alm/solution-co
 
 This can be useful if you use different environments for different purposes, or you employ ring-deployment methodologies. For example, you might have a specific environment where you internally test and validate bots, another environment where you test bots for only a subset of users, and a final production environment where you share bots with your customers and end users.
 
+> 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4CsHl]
+> 
+
 ## Prerequisites
 
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 - A maker will require minimum System Customizer security roles to use this feature. Learn more about [configuring user security to resources in an environment](https://docs.microsoft.com/power-platform/admin/database-security).
+
+- You must have at least one bot already in the new or existing environments where you are importing to. This ensures you have the correct configuration in your environment when you import a bot.
 
 
 > [!IMPORTANT]
@@ -37,38 +43,19 @@ This can be useful if you use different environments for different purposes, or 
 >  
 > These previews, and any support Microsoft may elect to provide, are provided "as-is," "with all faults," "as available," and without warranty.
 
-## Upgrade existing bots (preview)
-You will need to upgrade existing bots (built before June 2020) before you can export them. Newly created bots don’t require an upgrade, and won't show an option to upgrade them. 
+## Add a bot to a solution
 
-**To update your existing bot**
+You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution. You must have at least one bot in a solution to properly export and import it to another environment.
 
+**Create a solution to manage export and import**
 
-1. Sign in to the Power Virtual Agents bot you want to upgrade. 
+1. Sign in to the Power Virtual Agents bot you want to export. 
 
 1. Select **Settings**, and then **General settings**.
 
     ![Screenshot showing the settings cog highlighted](media/export-settings.png "Screenshot showing the settings cog highlighted")
 
-2. Select **Upgrade bot**. This should take a few minutes.
-
-    ![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot.png "Screenshot highlighting the Upgrade bot button")
-
->[!NOTE]
->A notice might appear that says "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after 10 minutes, try refreshing your browser. You can continue working on your bot without losing any updates. 
->  
->If you still see the warning after a few days, create a support request with you Bot ID. Admins can use [Help + support](/power-platform/admin/get-help-support) in the Power Platform admin center to create a support request.  
->  
->![Warning about time needed to finish the upgrade](media/export-warning.png "Warning about time needed to finish the upgrade")
-
-## Add a bot to a solution
-
-You use solutions to export bots from one environment and import them into another. The solution acts as a "carrier" for the bots, and you can import multiple bots in one solution. You must have at least one bot in a solution to properly export and import it to another environment.
-
-**Create a solution to manage import and export**
-
-1. Select **Settings**, and then **General settings**.
-
-2. Select **Go to Power Apps Solutions**.
+2. Under **Export/Import bot**, select **Go to Power Apps Solutions**.
  
     ![Link to the Power Apps admin center from Power Virtual Agents](media/export-settings-powerapps.png "Link to the Power Apps admin center from Power Virtual Agents")
 
@@ -84,7 +71,20 @@ You use solutions to export bots from one environment and import them into anoth
     Version | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.
 
 
+If you don't see the **Export/import bot** section under **Settings**, you will need to upgrade your bot. Select **Upgrade bot**. This should take a few minutes
 
+>[!IMPORTANT]
+>Only follow these steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
+>Newly created bots don’t require an upgrade, and won't show an option to upgrade them.
+
+![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot.png "Screenshot highlighting the Upgrade bot button")
+
+>[!NOTE]
+>A notice might appear that says "The upgrade is taking longer than expected. No action is required." If the notice does not disappear after 10 minutes, try refreshing your browser. You can continue working on your bot without losing any updates. 
+>  
+>If you still see the warning after a few days, create a support request with you Bot ID. Admins can use [Help + support](/power-platform/admin/get-help-support) in the Power Platform admin center to create a support request.  
+>  
+>![Warning about time needed to finish the upgrade](media/export-warning.png "Warning about time needed to finish the upgrade")
 
 
 
@@ -145,7 +145,9 @@ You export and import bots by exporting and importing their containing solutions
 2. Select **Next** in the **Before you export** panel.
 
 4. The **Export this solution** panel appears. Enter or select from the following options, and then select **Export**:
-
+    
+    Option | Description
+    - | -
     Version number | Power Virtual Agents automatically increments your solution version while displaying the current version. You can accept the default version or enter your own.
     Export as | Select the package type, either **Managed** or **Unmanaged**. Learn more about [managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions).
 
@@ -199,7 +201,12 @@ The export can take several minutes to complete. Once finished, a .zip file will
     ![List of bots and environments in Power Virtual Agents](media/export-bot-picker.png "List of bots and environments in Power Virtual Agents")
 
 
-## Upgrade or update a solution with bot
+## Upgrade or update a solution with a chatbot
+
+If you add new bot components (such as new topics or flows) to your bot in the PVA portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the *...* menu next to the name of the bot.
+
+![Screenshot highlighting the add required components option under the more menu](media/export-add-required-components.png "Screenshot highlighting the add required components option under the more menu")
+
 There are times when you need to update an existing managed solution. To learn more, go to [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
 
 ## Remove an unmanaged layer from a managed chatbot 

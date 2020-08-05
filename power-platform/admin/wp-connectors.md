@@ -10,10 +10,11 @@ ms.date: 11/18/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # About Connectors
 
@@ -28,25 +29,25 @@ Some connectors are shared automatically when you share the app. Others require 
 Flows can be shared with other users either as co-owners or run-only users. When a user adds another user or group as an owner of a flow those users will have full access to all the connections used in the flow. This means if they run the flow it will take the action in the context of the user signed into the connection. Because they are co-owners of the flow they will also be able to modify the flow using the connections that already exist. They may also change the login on the connection, however they are not required to do so. Co-owners are limited to use the connection with that flow, they can't create a new flow and use the same connection. The following is an example of the warning that is presented when you add a co-owner.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/connections-used.png "Connections used")
+> ![Connections used](media/connections-used.png "Connections used")
 
 Now in this example notice it is an Admin account. Since it is sending a notification probably not a great concern but if it was a more sensitive connector this could allow escalation of privileges beyond what is intended in your security models.
 
 Run-only sharing is an option when the flow is manually triggered. This option allows greater control because first of all the user does not have ability to edit the flow just to run it. Second, when you invite the user you can specify to reuse the existing connection or require the user to provide their own. To manage the Run-Only users drill down on the flow from the list of flows and you will see the following:
 
 > [!div class="mx-imgBorder"] 
-> ![](media/manage-run-only-users.png "Manage run-only users")
+> ![Manage run-only users](media/manage-run-only-users.png "Manage run-only users")
 
 From here you will see a dialog to specify the user or group as well as a list of the connections and the choice for each on how to grant access. The following shows the connection configuration and how you can choose to force the user to sign-in to their own connection.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/connections-used-notifications.png "Connections used notifications")
+> ![Connections used notifications](media/connections-used-notifications.png "Connections used notifications")
 
 
 One of the more recent additions is the ability to share a flow with a SharePoint List or an Microsoft 365 Group. In this scenario, the flow is available to all members of the group in the case of Microsoft 365 groups. For SharePoint Lists, anyone with edit access to the list would have access to the flow. The flow would then show up with the ability to execute it from the application navigation.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/sharepoint-flow-menu.png "SharePoint Power Automate menu")
+> ![SharePoint Power Automate menu](media/sharepoint-flow-menu.png "SharePoint Power Automate menu")
 
 ## Restricting Use of Connectors
 
@@ -59,19 +60,19 @@ Power Apps and Power Automate authenticate with connectors to create a connectio
 OAuth if you aren't familiar with it is an authorization framework that allows external applications to obtain controlled access to a target service. Many APIs support it including Common Data Service, Facebook and Twitter to name a few. The goal of authentication is to allow the user to sign in to a familiar login dialog, consent to the application using the service, and then setup to allow tokens to be acquired. It is the tokens that are used on each request to prove who the user is and their right to use the API. In the Power Apps and Power Automate usage, a Consent Server is involved that helps manage the tokens and their lifecycle including storing the renewal token in the Consent Server and handling the refresh cycle. The following is a step by step look at what happens when you authenticate a connection using OAuth.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/oauth-consent-flow.png "OAUTH Consent flow")
+> ![OAUTH Consent flow](media/oauth-consent-flow.png "OAUTH Consent flow")
 
 
 The API Key is a little less complex as it typically involves the API assigning a key that is passed on each request. That key is provided when the connection is established for the connector and is stored in the environment with the other connection information in a secure way. An example of an API Key authentication connector is the Azure Storage Blob. As you can see below it wants the Storage Account Name as well as the Access Key.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/azure-blob-storage-connection.png "Azure blob storage connection")
+> ![Azure blob storage connection](media/azure-blob-storage-connection.png "Azure blob storage connection")
 
 
 When on-premises gateways are involved the process is even a little more complex. The following diagrams what happens when you establish a connection with the gateway data source.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/architecture-connections.png "Connection architecture")
+> ![Connection architecture](media/architecture-connections.png "Connection architecture")
 
 ### See also
 [Custom Connectors](https://docs.microsoft.com/connectors/custom-connectors/)

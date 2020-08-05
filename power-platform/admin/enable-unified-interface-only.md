@@ -10,10 +10,11 @@ ms.date: 03/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Enable Unified Interface Only
 
@@ -81,7 +82,7 @@ When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Un
 - In the Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** and then turn on **Show legacy app to everyone, not just admins**.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/show-legacy-app-to-everyone.png "Show legacy app to everyone")
+> ![Show legacy app to everyone](media/show-legacy-app-to-everyone.png "Show legacy app to everyone")
 
 ### Advanced settings
 

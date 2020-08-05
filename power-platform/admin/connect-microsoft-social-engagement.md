@@ -10,10 +10,11 @@ ms.date: 05/08/2020
 ms.author: mhart
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Connect to Social Engagement
 

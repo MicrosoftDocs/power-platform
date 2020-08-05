@@ -10,10 +10,11 @@ ms.date: 11/01/2016
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # View the fields that are synchronized between model-driven apps in Dynamics 365 and Outlook
 

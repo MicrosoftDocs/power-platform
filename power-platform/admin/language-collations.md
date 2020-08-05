@@ -12,9 +12,11 @@ manager: kvivek
 ms.reviewer: matp
 search.audienceType: 
   - maker
-search.app: 
-  - PowerApps
+search.app:
   - D365CE
+  - PowerApps
+  - Powerplatform
+  - Flow
 ---
 # Common Data Service language collations
 

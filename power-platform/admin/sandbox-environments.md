@@ -10,10 +10,11 @@ ms.date: 05/20/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Manage sandbox environments
 
@@ -28,7 +29,7 @@ Manage your sandbox environments from the Power Platform admin center.
 2. Open the **Environments** page. Select the **Type** tab to sort by environment type.
   
    > [!div class="mx-imgBorder"] 
-   > ![](media/sandbox-environments.png "Environments page")
+   > ![Environments page](media/sandbox-environments.png "Environments page")
 
 ## Create a sandbox environment
 
@@ -43,12 +44,12 @@ See [Create and manage environments in the Power Platform admin center](create-e
 3. Select **Edit**
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/select-edit.png "Select Edit")
+   > ![Select Edit](media/select-edit.png "Select Edit")
 
 4. Under **Type**, choose the sandbox environment type. 
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/select-sandbox.png "Select sandbox environment")
+   > ![Select sandbox environment](media/select-sandbox.png "Select sandbox environment")
 
 5. Select **Save**.
 
@@ -79,7 +80,7 @@ Reset a sandbox environment to delete and re-provision it. Consider a reset when
 3. Select **Reset** from the top menu bar.
   
    > [!div class="mx-imgBorder"] 
-   > ![](media/reset-menu.png "Reset menu")
+   > ![Reset menu](media/reset-menu.png "Reset menu")
 
 4. On the **Reset environment** page, adjust the environment settings as needed and understand the following consequences:  
   
@@ -92,7 +93,7 @@ Reset a sandbox environment to delete and re-provision it. Consider a reset when
 The reset process starts.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/reset-environment-status.png "Reset environment status")
+> ![Reset environment status](media/reset-environment-status.png "Reset environment status")
   
 ## Administration mode  
  When you place a sandbox environment in administration mode only users with System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  

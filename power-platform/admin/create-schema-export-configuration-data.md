@@ -10,10 +10,11 @@ ms.date: 10/30/2017
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Create a schema to export configuration data
 

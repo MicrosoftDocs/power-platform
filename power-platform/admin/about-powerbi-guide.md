@@ -15,8 +15,11 @@ ms.author: "jimholtz"
 manager: "kvivek"
 search.audienceType: 
   - admin
-search.app: 
+search.app:
+  - D365CE
+  - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Administer Power BI
 

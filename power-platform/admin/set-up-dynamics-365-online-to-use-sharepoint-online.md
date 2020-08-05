@@ -10,10 +10,11 @@ ms.date: 03/30/2020
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Set up model-driven apps in Dynamics 365 to use SharePoint Online
 

@@ -2,18 +2,18 @@
 title: Preview environments | Microsoft Docs
 description: Get early access to functionalities with Power Apps Preview Program
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/30/2020
+ms.date: 07/31/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Power Apps Preview Program
@@ -71,7 +71,6 @@ You can provide feedback on the [Power Apps forum][8] and/or contact [support][9
 
 
 <!--Reference links in article-->
-[1]: https://preview.admin.powerapps.com
 [2]: https://make.powerapps.com
 [3]: https://preview.web.powerapps.com
 [4]: https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview

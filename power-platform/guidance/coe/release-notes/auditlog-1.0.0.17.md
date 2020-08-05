@@ -21,7 +21,7 @@ search.app:
 
 ## Introduction
 
-Version 1.0.0.17 for the CoE Starter Kit Audit Log Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available in preview on July 8, 2020.
+Version 1.0.0.17 for the CoE Starter Kit Audit Log Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 8, 2020.
 
 ## [Child] Admin | Sync Logs
 

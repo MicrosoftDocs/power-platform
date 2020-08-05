@@ -10,10 +10,11 @@ ms.date: 02/05/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Reset environment
 
@@ -42,7 +43,7 @@ Reset a sandbox environment to delete and re-provision it. Consider a reset when
 3. Select **Reset** from the top menu bar.
   
    > [!div class="mx-imgBorder"] 
-   > ![](media/reset-menu.png "Reset menu")
+   > ![Reset menu](media/reset-menu.png "Reset menu")
 
 4. On the **Reset environment** page, adjust the environment settings as needed and then select **Reset**.  
   
@@ -54,5 +55,5 @@ Reset a sandbox environment to delete and re-provision it. Consider a reset when
 The reset process starts.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/reset-environment-status.png "Reset environment status")
+> ![Reset environment status](media/reset-environment-status.png "Reset environment status")
   

@@ -10,17 +10,18 @@ ms.date: 06/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Copy an environment
 
 You can use Copy environment in the Power Platform admin center to copy the model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
-> ![](media/copy-menu.png "Copy menu")
+> ![Copy menu](media/copy-menu.png "Copy menu")
 
 > [!NOTE]
 > - You can only copy an environment to a sandbox environment.
@@ -105,7 +106,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 4. Select the desired copy over level.
   
    > [!div class="mx-imgBorder"] 
-   > ![](media/copy-environment1.png "Copy environment")
+   > ![Copy environment](media/copy-environment1.png "Copy environment")
 
 5. Select a sandbox environment.
   
@@ -119,14 +120,14 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 7. Edit the details for the copied environment, and then select **Copy**.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/copy-environment2.png "Copy environment")
+   > ![Copy environment](media/copy-environment2.png "Copy environment")
 
 8. Select **Confirm** to overwrite the target environment.
 
 The overwrite process starts.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/copy-environment-status.png "Copy environment status")
+> ![Copy environment status](media/copy-environment-status.png "Copy environment status")
   
 Once the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
  

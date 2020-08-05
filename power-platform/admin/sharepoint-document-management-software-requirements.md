@@ -10,10 +10,11 @@ ms.date: 05/29/2019
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # SharePoint Document Management software requirements
 

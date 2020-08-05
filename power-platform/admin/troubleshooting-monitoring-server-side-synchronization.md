@@ -10,10 +10,11 @@ ms.date: 04/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Troubleshooting and monitoring server-side synchronization 
 
@@ -26,7 +27,7 @@ This page is your source for issues and resolutions for troubleshooting server-s
 Follow the steps in this [KB article](https://support.microsoft.com/help/4468755/troubleshoot-item-level-server-side-synchronization-issues-with-dynami) to enable and use a dashboard to get information on synchronization errors.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/server-side-sync-failures-dashboard.png "Server-side sync failures dashboard")
+> ![Server-side sync failures dashboard](media/server-side-sync-failures-dashboard.png "Server-side sync failures dashboard")
 
  
 <a name="BKMK_PerformanceDashboard"></a>   

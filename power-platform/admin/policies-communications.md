@@ -10,10 +10,11 @@ ms.date: 05/04/2020
 ms.author: astockli
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Policies and Communications for service incidents
 

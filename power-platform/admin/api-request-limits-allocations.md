@@ -11,10 +11,11 @@ ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Requests limits and allocations
 

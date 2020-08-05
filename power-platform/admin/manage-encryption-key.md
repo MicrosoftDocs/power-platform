@@ -10,10 +10,11 @@ ms.date: 04/17/2020
 ms.author: matp 
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Manage the encryption key
 All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.  
@@ -24,7 +25,7 @@ All environments of Common Data Service use [!INCLUDE[pn_MS_SQL_Server](../inclu
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
 
 > [!IMPORTANT]
-> Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps plan and/or Dynamics 365 plan licensed user seats and who have opted in to the feature.  To opt in to this program, contact your account or sales representative.
+> Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps plan and/or Dynamics 365 plan licensed user seats and who have opted in to the feature.  To opt in to this program, submit a [support request](https://docs.microsoft.com/power-platform/admin/support-overview#using-support).
 >
 > Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can't be encrypted with the self-managed encryption key:
 > - Relevance Search
@@ -200,7 +201,7 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 To perform this task using PowerShell, see [Set-CrmProtectWithMicrosoftKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmprotectwithmicrosoftkey?view=dynamics365ce-ps).
   
 #### Lock the tenant  
-Since there is only one active key per tenant, locking the encryption for the tenant *disables all the environments* that are in the tenant. All locked environments remain inaccessible to everyone, including [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)], until a Power Platform service admin in your organization unlocks it by using the key that was used to lock it.  
+Since there is only one active key per tenant, locking the encryption for the tenant *disables all the environments* that are in the tenant. All locked environments remain inaccessible to everyone, including [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)], until a Power Platform admin in your organization unlocks it by using the key that was used to lock it.  
   
 > [!CAUTION]
 >  You should never lock the tenant environments as part of your normal business process. When you lock a Common Data Service tenant, all the environments will be taken completely offline and they can't be accessed by anyone, including Microsoft. Additionally, services such as synchronization and maintenance are all stopped. If you decide to leave the service, locking the tenant can ensure that your online data is never accessed again by anyone.  

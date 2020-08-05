@@ -2,18 +2,18 @@
 title: "Types of Power Apps  | MicrosoftDocs"
 description: Types of Power Apps 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/02/2019
+ms.date: 07/31/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Types of Power Apps
 
@@ -57,6 +57,14 @@ On import, prior to completion of the import the related resources will need to 
 
 ## What apps already exist?
 
-From the Admin Center admin.powerapps.com you can look at each environment and inside the Resources see a list of any apps that are associated with that particular environment.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-![See list of apps](media/see-app-list.png "See list of apps")
+2. In the navigation pane, select **Environments**, select an environment with resources, and then select the **Power Apps** resource.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Select Power Apps resource](media/resources-select-power-apps.png "Select Power Apps resource")
+
+3. View the list of apps.
+
+   > [!div class="mx-imgBorder"] 
+   > ![List of apps](media/resources-manage-power-apps-list.png "List of apps") 

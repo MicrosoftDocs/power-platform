@@ -5,14 +5,15 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 07/08/2020
+ms.date: 08/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # System and application users
@@ -30,9 +31,10 @@ Most of these users are hidden from user views but they can be found by using th
 |    | Dynamics 365 Athena-CDStoAzuredatalake        | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com         |Service application to perform data integration between Common Data Service to Azure Data Lake |DataLakeWorkspaceAppAccess   |
 |    | Dynamics 365 Athena2-CDStoAzuredatalake        | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com         |Service application to perform data integration between Common Data Service to Azure Data Lake |DataLakeWorkspaceAppAccess   |
 |    | Dynamics 365 EnterpriseSales-CDStoAzuredatalake        | Dynamics365EnterpriseSales-CDStoAzuredatalake@onmicrosoft.com         |Service application to perform data integration between Common Data Service (Sales) to Azure Data Lake |N/A    |
+|    | Microsoft Project | Project@microsoft.com         |Allow Project for the Web and Roadmap Service to communicate with Common Data Service |Project System and Portfolio User   |
 |    | Power Apps Checker Application        | Pacheckerapp@microsoft.com         |To perform static analysis of Power Apps solutions to assist in identifying performance and stability risks |Export customizations and Solution checker   |
 |    | Powerqueryonline-CDStoAzuredatalake        | Powerqueryonline-CDStoAzuredatalake@onmicrosoft.com         |Service application to perform data query between Common Data Service and Azure Data Lake |N/A    |
-|    | Provision User      | provisionapp@fabrikam.com         |To perfom Application installation from AppSource or System updates from Microsoft |System admin   |
+|    | Provision User      | provisionapp@fabrikam.com         |To perform Application installation from AppSource or System updates from Microsoft |System admin   |
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 

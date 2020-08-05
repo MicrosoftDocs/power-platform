@@ -10,10 +10,11 @@ ms.author: jimholtz
 manager: kvivek
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Capacity add-ons
 
@@ -74,13 +75,13 @@ As an admin, you can restrict who can allocate add-on capacity to environments.
 4. Under **Who can allocated add-on capacity to environments**, select **Only specific admins**.
 
    > [!div class="mx-imgBorder"] 
-   > ![](./media/add-on-governance.png "Control add-on capacity allocation")
+   > ![Control add-on capacity allocation](./media/add-on-governance.png "Control add-on capacity allocation")
 
 The following admins will be able to allocate add-on capacity in the Power Platform admin center:
 
 - Global admins
-- Dynamics 365 service admins
-- Power Platform service admins
+- Dynamics 365 admins
+- Power Platform admins
 
 ### See also
 [About Power Apps per app plans](about-powerapps-perapp.md)

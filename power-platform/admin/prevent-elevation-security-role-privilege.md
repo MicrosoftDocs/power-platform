@@ -7,13 +7,14 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 07/22/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Create an administrative user and prevent elevation of security role privilege
 
@@ -21,7 +22,7 @@ The [copy security role method](copy-security-role.md) is a quick and easy way t
 
 The following steps describe a method to create a new custom security role with privileges that will change dynamically with updates and therefore can continue to be used for security role assignments.
 
-### Create a new custom security role that only has access to "Security Role"
+### Create a new custom security role that only has access to "Security Role" entity
 
 1. Make sure that you have the System Administrator permissions.
 

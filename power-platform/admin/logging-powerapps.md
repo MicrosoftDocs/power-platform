@@ -1,34 +1,36 @@
 ---
-title: "Activity logging for Power Apps | MicrosoftDocs"
+title: "Power Apps activity logging| MicrosoftDocs"
 description: Activity logging for Power Apps 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 07/21/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
-# Activity logging for Power Apps
+# Power Apps activity logging
 
-Power Apps activities are now tracked from the [Microsoft 365 Security & Compliance Center](https://go.microsoft.com/fwlink/?LinkID=824876). Microsoft 365 tenant administrators reach the Security & Compliance Center by navigating to [https://protection.office.com](https://protection.office.com). From there, the **Audit log search** is found under the **Search and investigation** dropdown.
+Power Apps activities are now tracked from the [Microsoft 365 Security & Compliance Center](https://go.microsoft.com/fwlink/?LinkID=824876). 
 
-![Audit log search](media/audit-log-search-menu.png "Audit log search")
+Follow these steps.
+
+1. Sign in to the [Security & Compliance Center](https://protection.office.com) as a tenant admin.
+
+2. Select **Search** > **Audit log search**. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![Audit log search](media/audit-log-search.png "Audit log search")
 
 Within the **Audit log search** screen, Power Platform admins can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Azure AD, Microsoft Teams, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and Microsoft Power Apps.
 
 Once the Audit log search screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown. By scrolling down the list, a section dedicated to Microsoft Power Apps activities can be found. 
-
-<!--
-## Requirements
-- A Microsoft 365 Enterprise [E3](https://products.office.com/business/office-365-enterprise-e3-business-software) or [E5] (https://products.office.com/business/office-365-enterprise-e5-business-software) subscription is required to view the logs; not required to generate the logs.
--->
 
 ## What events are audited
 Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit.

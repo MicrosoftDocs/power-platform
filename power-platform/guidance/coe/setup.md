@@ -46,13 +46,15 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
 -  Environment with a Common Data Service instance, where the user installing the solution has the System Administrator security role.
 
--  The environment must have a DLP policy that allows [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/), [Common Data Service (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) and HTTP to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
+-  The environment must have a DLP policy that allows [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/), [Common Data Service (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/), [Azure AD](https://docs.microsoft.com/connectors/azuread/) and HTTP to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment. If you are using the [Audit log](setup-auditlog.md) solution, the custom connector used to connect to the Office 365 Audit Log also must be included in your business data&ndash;only bucket.
 
 - If there are multiple DLP policies applying to the same environment, either all of them have to have the connectors the CoE Starter Kit uses in business data only or if you have a policy that applies to all environments that you don't want to change you could exclude the CoE environment from that. <br>Learn more about [DLP Policy Scope](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#policy-scope).
 
 - Download of the Center of Excellence Solution and CoE Power BI dashboard files to your device. The entire content package can be downloaded directly at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
 - Both the Governance Components and Nurture Components solutions require the core solution before they can be installed.
+
+- The Theming Components can be used independently, and have no dependency on other CoE Starter Kit components.
 
 These are the requirements for using the solution.
 
@@ -69,6 +71,7 @@ Set up the CoE Starter Kit by following the the instructions:
 - [Set up governance components](setup-governance-components.md)
 - [Set up nurture components](setup-nurture-components.md)
 - [Set up the CoE Power BI dashboard](setup-powerbi.md)
+- [Set up the Theming components](setup-theming.md)
 
 ## Extending the starter kit
 

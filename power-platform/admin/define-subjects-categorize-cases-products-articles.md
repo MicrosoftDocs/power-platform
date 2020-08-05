@@ -10,10 +10,11 @@ ms.date: 03/10/2020
 ms.author: shujoshi
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Define subjects to categorize cases, products, and articles
 
