@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/25/2020
+ms.date: 08/04/2020
 ms.author: deonhe
 search.audienceType: 
   - admin
@@ -18,7 +18,7 @@ search.app:
 ---
 # Admin Analytics for Microsoft Power Automate
 
-Environment admins can access analytics for Power Automate in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with flows. 
+Environment admins can access analytics for Power Automate in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with all the different flow types like automated flows, button flows, scheduled flows, approval flows, business process flows. These reports are not available for the UI flows type.
 
 To access these reports:
 
