@@ -1,5 +1,5 @@
 ---
-title: "Responding to GDPR Data Subject Export Requests"
+title: "Responding to GDPR Data Subject Export Requests in Teams"
 description: "Learn how to respond​ to GDPR Data Subject Export Requests for Power Virtual Agents."
 ms.date: 8/3/2020
 ms.service:
@@ -12,7 +12,7 @@ ms.custom: ceX
 ms.collection: virtual-agent
 ---
 
-# Export data to respond to requests for copies of personal data in Power Virtual Agents
+# Export data to respond to requests for copies of personal data in Power Virtual Agents in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

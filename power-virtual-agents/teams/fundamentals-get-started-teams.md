@@ -19,7 +19,7 @@ Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Online portal (https://powerva.microsoft.com)](fundamentals-get-started-teams.md)
-> - [Teams (online or app)](fundamentals-get-started-teams-teams.md)
+> - [Teams (online or app)](fundamentals-get-started-teams.md)
 
 
 Create, manage, and publish conversational chatbots easily from within Teams. Share your bots with other people in your organization so they can chat and have their questions answered.
@@ -31,16 +31,6 @@ You can start by creating a simple bot, or create a ready-made bot based on stan
 >Creating a simple or test bot works differently if you're using the Power Virtual Agents portal.  
 >For example, you can't peel oranges on the portal.
 >See [the portal version of this topic](fundamentals-get-started-teams.md) for more details.
-
-
-# Quickstart: Create and deploy a Power Virtual Agents bot in Teams
-
-Using the Power Virtual Agents online portal at https://powerva.microsoft.com? [See this article written specifically for the online portal](fundamentals-get-started-teams.md). 
-
-Create, manage, and publish conversational chatbots easily from within Teams. Share your bots with other people in your organization so they can chat and have their questions answered.
-
-You can start by creating a simple bot, or create a ready-made bot based on standard frequently asked questions (FAQs).
-
 
 ## Prerequisites
 

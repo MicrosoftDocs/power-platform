@@ -1,5 +1,5 @@
 ---
-title: "Get topic suggestions from support pages"
+title: "Get topic suggestions from support pages in Teams"
 description: "Use existing help and support pages to quickly generate new topics for your Power Virtual Agents bot."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Create topics from existing support content on the web
+# Create topics from existing support content on the web in Teams
 
 You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages or support sites. 
 

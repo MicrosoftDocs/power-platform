@@ -1,5 +1,5 @@
 ---
-title: "Use chatbot variables to carry content across topics"
+title: "Use chatbot variables to carry content across topics in Teams"
 description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: authoring, ce06122020
 ms.collection: virtual-agent
 ---
 
-# Reuse variables across topics
+# Reuse variables across topics in Teams
 
 [Variables](authoring-variables-teams.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 

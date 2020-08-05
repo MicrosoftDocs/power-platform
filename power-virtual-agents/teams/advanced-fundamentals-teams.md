@@ -1,5 +1,5 @@
 ---
-title: "Advanced authoring of chatbots"
+title: "Advanced authoring of chatbots in Teams"
 description: "Go beyond basic authoring by using slot filling, entities, variables, sign-in, live hand-off, and Power Automate flows."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Key concepts - Enhanced authoring in Power Virtual Agents
+# Key concepts - Enhanced authoring in Power Virtual Agents in Teams
 
 You can go beyond basic authoring in Power Virtual Agents by taking advantage of a number of advanced features. These features enhance and improve upon the [authoring experience](authoring-fundamentals-teams.md) by letting you:
 - Expand the types of information the bot understands and can parse back

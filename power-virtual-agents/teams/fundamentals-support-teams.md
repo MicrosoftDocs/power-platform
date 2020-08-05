@@ -1,5 +1,5 @@
 ---
-title: "Find community help and get support"
+title: "Find community help and get support in Teams"
 description: "Use the Power Virtual Agents community forums to ask and get help and trips and ideas, or get support directly from Microsoft."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "fundamentals, ceX"
 ms.collection: virtual-agent
 ---
 
-# Community help and support for Power Virtual Agents
+# Community help and support for Power Virtual Agents in Teams
 
 You can get support for Power Virtual Agents on the community forums. Features that have been released for general availability are eligible for support through Microsoft Support.
 

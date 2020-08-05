@@ -1,5 +1,5 @@
 ---
-title: "Configure user authentication"
+title: "Configure user authentication in Teams"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
 keywords: "Authentication, IdP, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
-# Configure end-user authentication in Power Virtual Agents
+# Configure end-user authentication in Power Virtual Agents in Teams
 
 You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook. 
 

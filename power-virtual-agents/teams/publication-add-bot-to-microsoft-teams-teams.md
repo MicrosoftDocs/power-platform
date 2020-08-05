@@ -1,5 +1,5 @@
 ---
-title: "Add a chatbot to Microsoft Teams"
+title: "Add a chatbot to Microsoft Teams in Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-# Add bot to Microsoft Teams
+# Add bot to Microsoft Teams in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

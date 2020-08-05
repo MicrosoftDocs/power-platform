@@ -1,5 +1,5 @@
 ---
-title: "Use hand-off to live agent"
+title: "Use hand-off to live agent in Teams"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ms.custom: handoff, ceX, advanced-authoring
 ---
 
-# Trigger hand-off to a live agent
+# Trigger hand-off to a live agent in Teams
 
 With Power Virtual Agents, you can hand-off conversations to live agents seamlessly and contextually.
 
@@ -50,7 +50,7 @@ Customers engaging with the bot can ask for a live agent at any point in the con
 Upon triggering the hand-off topic, Power Virtual Agents initiates hand-off to the configured engagement hub and sends over all conversation context to find the next best live agent to ramp them up so they can resume the conversation.
 
 ### Implicit triggers
-In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there is no [topic](getting-started-create-topics-teams.md), or there is no matching option within a topic. 
+In some instances, the bot may be unable to determine the intent of a customer's conversation. For example, the customer may be asking a specific question for which there is no [topic](authoring-create-edit-topics-teams.md), or there is no matching option within a topic. 
 
 In other instances, your customers may ask to be handed off to a live agent immediately. For example, customers may type "talk to agent" mid-way into a conversation.
 
@@ -64,12 +64,12 @@ In these instances, you must add a **Transfer to agent** node into the topic.
 This node lets you add a **Private message to agent**, which is sent to the connected engagement hub to help the live agent understand the history and context of the conversation.
 
 >[!NOTE]
->Conversations that reach this node will be marked as **Escalated** sessions in [reporting analytics](getting-started-analytics-teams.md).
+>Conversations that reach this node will be marked as **Escalated** sessions in [reporting analytics](analytics-overview-teams.md).
 
 
 **Add a **Transfer to agent** node into a topic:**
 
-1. Go to the [**Topics page**](getting-started-create-topics-teams.md) for the bot you want to edit.
+1. Go to the [**Topics page**](authoring-create-edit-topics-teams.md) for the bot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add the **Transfer to agent** node to.
 
@@ -86,7 +86,7 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 The topic will initiate a transfer to a live agent when this node is reached. You can test the hand-off by triggering the topic in the test canvas.
 
 >[!NOTE]
->Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website. This suggests the need to [customize your chat canvas](extend-custom-canvas-connect-teams.md) to implement custom client-side code that brings in a human agent from your engagement hub into the conversation.
+>Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website. This suggests the need to [customize your chat canvas](customize-default-canvas-teams.md) to implement custom client-side code that brings in a human agent from your engagement hub into the conversation.
 
 
 ## Contextual variables available upon hand-off
@@ -107,7 +107,7 @@ The following table lists the context variables available by default.
 | `va_AgentMessage` | Helps ramp-up a live agent | `"Got a gift from: HandoffTest"` |
 | `va_BotId` | Helps identify the bot that is handing off a conversation | `GUID` |
 | `va_Language` | Helps route escalation to a live agent | `"en-us"` |
-| All [user-defined topic variables](how-to-variables-teams.md) | Helps ramp-up a live agent | `@StoreLocation = "Bellevue"` |
+| All [user-defined topic variables](authoring-variables-teams.md) | Helps ramp-up a live agent | `@StoreLocation = "Bellevue"` |
 
 A customer may go through several topics prior to escalating. Power Virtual Agents gathers all contextual variables across topics and merges them before sending to the engagement hub. 
 

@@ -1,5 +1,5 @@
 ---
-title: "Add user authentication to chatbot topics"
+title: "Add user authentication to chatbot topics in Teams"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
-# Add end-user authentication to a Power Virtual Agents bot
+# Add end-user authentication to a Power Virtual Agents bot in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
@@ -71,7 +71,7 @@ The `IsLoggedIn` variable indicates whether the user is signed in (either as a r
 
 #### AuthToken variable
 
-The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](how-to-flow-teams.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
+The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow-teams.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
 
 > [!WARNING] 
 > Make sure you're passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
@@ -97,9 +97,9 @@ If you have logic that uses the `AuthToken` variable (for example, to connect to
 ### Failure path
 The failure path equates to any condition other than `IsLoggedIn = True`. In most cases this is because the user failed to sign in, used the wrong password, or canceled the sign-in experience.
 
-You should add any logic you might want to treat this case. As an example, we have provided options for retrying or to [escalate to a live agent](how-to-handoff-teams.md). You should customize this for your particular scenario and usage.
+You should add any logic you might want to treat this case. As an example, we have provided options for retrying or to [escalate to a live agent](advanced-hand-off-teams.md). You should customize this for your particular scenario and usage.
 
 
 ## Testing your topic
 
-You should [test your topic](getting-started-create-topics-teams.md) using a real user configured in your identity provider. Ensure both the sign-in success and failure paths are exercised, so there are no surprises if your user fails to sign in or there is an error with the identity provider's sign-in experience.
+You should [test your topic](authoring-create-edit-topics-teams.md) using a real user configured in your identity provider. Ensure both the sign-in success and failure paths are exercised, so there are no surprises if your user fails to sign in or there is an error with the identity provider's sign-in experience.

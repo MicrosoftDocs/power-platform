@@ -1,5 +1,5 @@
 ---
-title: "Chatbot authoring"
+title: "Chatbot authoring in Teams"
 description: "Discover how to create bots and topics easily in Power Virtual Agents with no coding or long deployment times."
 keywords: "PVA"
 ms.date: 6/09/2020
@@ -13,7 +13,7 @@ ms.custom: "authoring, fundamentals, ce06092020"
 ms.collection: virtual-agent
 ---
 
-# Key concepts - Authoring Power Virtual Agents bots
+# Key concepts - Authoring Power Virtual Agents bots in Teams
 
 
 When you create bots with Power Virtual Agents, you author and edit topics. 

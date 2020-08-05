@@ -1,5 +1,5 @@
 ---
-title: "Use topics to design a chatbot conversation"
+title: "Use topics to design a chatbot conversation in Teams"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Create and edit topics in your Power Virtual Agents bot
+# Create and edit topics in your Power Virtual Agents bot in Teams
 
 In Power Virtual Agents, a topic defines a how a bot conversation plays out. 
 

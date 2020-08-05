@@ -1,5 +1,5 @@
 ---
-title: "Automate topic creation"
+title: "Automate topic creation in Teams"
 description: "Automate the creation of topics in Power Virtual Agents bots by using support topics discovered by Dynamics 365 Customer Service Insights."
 keywords: "Customer Service Insights, PVA, CSI"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Create bot topics from Customer Service Insights
+# Create bot topics from Customer Service Insights in Teams
 
 If you use [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/overview), you can automatically create new [topics](authoring-create-edit-topics-teams.md) in Power Virtual Agents based on your existing [Customer Service Insights support topics](/dynamics365/ai/customer-service-insights/topics-page).
 

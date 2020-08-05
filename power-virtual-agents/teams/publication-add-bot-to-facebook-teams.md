@@ -1,5 +1,5 @@
 ---
-title: "Add a chatbot to Facebook"
+title: "Add a chatbot to Facebook in Teams"
 description: "Add your bot to Facebook so Facebook users can interact with it."
 keywords: "Channel, publish, Facebook, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-# Add bot to Facebook
+# Add bot to Facebook in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

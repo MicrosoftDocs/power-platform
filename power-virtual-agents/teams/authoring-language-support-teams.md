@@ -1,5 +1,5 @@
 ---
-title: "Language support"
+title: "Language support in Teams"
 description: "Create new chatbots in multiple languages, including tutorial and system topics."
 keywords: "PVA, language, regional, region"
 ms.date: 7/31/2020
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Supported languages
+# Supported languages in Teams
 
 [!INCLUDE [](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

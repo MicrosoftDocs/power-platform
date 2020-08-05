@@ -1,5 +1,5 @@
 ---
-title: "Responding to GDPR Data Subject Discovery Requests"
+title: "Responding to GDPR Data Subject Discovery Requests in Teams"
 description: "Learn how to respond​ to GDPR Data Subject Requests for Power Virtual Agents."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "ceX"
 ms.collection: virtual-agent
 ---
 
-# Responding to GDPR discovery requests from data subjects
+# Responding to GDPR discovery requests from data subjects in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

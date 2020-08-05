@@ -1,5 +1,5 @@
 ---
-title: "Rate limits for chatbots"
+title: "Rate limits for chatbots in Teams"
 description: "Rate limits determine how often messages can be sent to a chatbot"
 keywords: "PVA, quotas, rate limits, requests, restrictions"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: quotas, admin, ceX
 ms.collection: virtual-agent
 ---
 
-# Quotas and rate limit capacity considerations for Power Virtual Agents
+# Quotas and rate limit capacity considerations for Power Virtual Agents in Teams
 
 Quotas are default constraints applied to chatbots that limit how often messages can be sent to the chatbot. The purpose of quotas is to throttle the service load for a client, which protects a service from being overloaded and the client from unexpected resource usage.
 

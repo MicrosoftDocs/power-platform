@@ -1,5 +1,5 @@
 ---
-title: "Configure a chatbot for a live or demo website"
+title: "Configure a chatbot for a live or demo website in Teams"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-# Configure the demo website and add the bot to your live website
+# Configure the demo website and add the bot to your live website in Teams
 
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
   

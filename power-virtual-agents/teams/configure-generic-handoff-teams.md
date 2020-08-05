@@ -1,5 +1,5 @@
 ---
-title: "Hand off chatbot conversations to any generic engagement hub"
+title: "Hand off chatbot conversations to any generic engagement hub in Teams"
 description: "Guidance to hand off a bot conversation to any generic engagement hub"
 keywords: "human handoff, generic handoff, generic engagement hub support, PVA"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.reviewer: pawant
 ms.collection: virtual-agent
 ---
 
-# Configure hand off to any generic engagement hub
+# Configure hand off to any generic engagement hub in Teams
 
 Power Virtual Agents lets you hand over bot conversations seamlessly and contextually to a human agent through an engagement hub. 
 

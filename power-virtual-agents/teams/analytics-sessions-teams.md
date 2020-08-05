@@ -1,5 +1,5 @@
 ---
-title: "Download chatbot sessions"
+title: "Download chatbot sessions in Teams"
 description: "Download sessions from the last 30 days for your bot conversations."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analyze session information in Power Virtual Agents
+# Analyze session information in Power Virtual Agents in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Regional settings and data locations"
+title: "Regional settings and data locations in Teams"
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
 ms.date: 8/3/2020
 ms.service:
@@ -12,7 +12,7 @@ ms.collection: virtual-agent
 ms.cusom: "multi-geo, gdpr, ce06102020"
 ---
 
-# Regional settings and data locations for organizations using Power Virtual Agents
+# Regional settings and data locations for organizations using Power Virtual Agents in Teams
 
 Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to live.
 

@@ -1,5 +1,5 @@
 ---
-title: "Sign up for a trial"
+title: "Sign up for a trial in Teams"
 description: "You can sign up for Power Virtual Agents individually as a trial if you're not an admin of an organization."
 keywords: "Administration, licensing, PVA"
 ms.date: 8/3/2020
@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 
 
-# Sign up for a Power Virtual Agents trial 
+# Sign up for a Power Virtual Agents trial  in Teams
 
 This article explains how to sign up for Power Virtual Agents as an individual. If you're an admin, see [Assign user licenses and manage access to Power Virtual Agents](requirements-licensing-teams.md).
 

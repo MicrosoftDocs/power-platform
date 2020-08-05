@@ -1,5 +1,5 @@
 ---
-title: "Configure hand-off to Omnichannel for Customer Service"
+title: "Configure hand-off to Omnichannel for Customer Service in Teams"
 description: "Have human agents intercede in bot conversations by connecting Power Virtual Agents to Omnichannel."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ms.custom: handoff, ceX
 ---
 
-# Configure seamless and contextual hand-off to Omnichannel for Customer Service
+# Configure seamless and contextual hand-off to Omnichannel for Customer Service in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
@@ -22,7 +22,7 @@ With Power Virtual Agents, you can seamlessly and contextually hand off escalate
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This allows Omnichannel for Customer Service to route incoming escalations to the right live agent queue and enables engaging live agents to review context from the prior conversation and resume the conversation.
 
-For more information about hand off, and how to use hand-off within a bot conversation, see the [Using Transfer to agent node](how-to-handoff-teams.md) topic.
+For more information about hand off, and how to use hand-off within a bot conversation, see the [Using Transfer to agent node](configure-generic-handoff-teams.md) topic.
 
 ## Prerequisites
 * Product license: You need a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for Omnichannel for Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
@@ -56,7 +56,7 @@ Sign in to the Power Virtual Agents bot you want to connect to Omnichannel for C
     >[!IMPORTANT]
     >Omnichannel models bots as "application users" in the system. Therefore, the *Application (client) ID* that you use must be unique to your organization (your Common Data Service organization or environment).
 
-1. Power Virtual Agents uses a [Teams channel](getting-started-deploy-teams.md) to communicate with Omnichannel for Customer Service. If a Teams channel is not enabled, a Teams channel will be enabled when you select **Next**. 
+1. Power Virtual Agents uses a [Teams channel](publication-add-bot-to-microsoft-teams-teams.md) to communicate with Omnichannel for Customer Service. If a Teams channel is not enabled, a Teams channel will be enabled when you select **Next**. 
 
 1. Select the environment where your Omnichannel for Customer Service instance is provisioned.
 
@@ -66,7 +66,7 @@ Sign in to the Power Virtual Agents bot you want to connect to Omnichannel for C
 
 
 >[!IMPORTANT]
->Your bot must be in a published state for end-to-end capabilities to work as expected. Ensure that you have [published your bot](getting-started-deploy-teams.md) prior to validating the integrated experience.  
+>Your bot must be in a published state for end-to-end capabilities to work as expected. Ensure that you have [published your bot](publication-fundamentals-publish-channels-teams.md) prior to validating the integrated experience.  
 >  
 >If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see **Prerequisites** in the [Integrate a Power Virtual Agents bot](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#prerequisites) article). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
 

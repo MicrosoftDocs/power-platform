@@ -1,5 +1,5 @@
 ---
-title: "Review customer satisfaction for your chatbots"
+title: "Review customer satisfaction for your chatbots in Teams"
 description: "Use AI-driven analytics to understand how well customers are interacting with your bot, and to identify areas for improvement."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analyze customer satisfaction for Power Virtual Agents bots
+# Analyze customer satisfaction for Power Virtual Agents bots in Teams
 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]

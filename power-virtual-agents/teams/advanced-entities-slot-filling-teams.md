@@ -1,5 +1,5 @@
 ---
-title: "Create and use entities"
+title: "Create and use entities in Teams"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Use entities and slot filling in Power Virtual Agents bots
+# Use entities and slot filling in Power Virtual Agents bots in Teams
 
 A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
 
@@ -94,7 +94,7 @@ For example, for the "hiking" product category, you can add "trekking" and "moun
 ## Use entities in a conversation
 Now that you’ve done the work of giving the bot the knowledge about outdoor gear by creating that product category entity and a few other custom entities, you can start to use them when constructing a bot conversation. 
 
-1. Go to the [**Topics page**](getting-started-create-topics-teams.md) for the bot you want to edit.
+1. Go to the [**Topics page**](authoring-create-edit-topics-teams.md) for the bot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add an entity to.
 

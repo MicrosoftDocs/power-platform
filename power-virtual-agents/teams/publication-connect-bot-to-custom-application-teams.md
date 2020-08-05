@@ -1,5 +1,5 @@
 ---
-title: "Add a chatbot to mobile and web apps"
+title: "Add a chatbot to mobile and web apps in Teams"
 description: "Connect your bot to mobile (native and web) apps, or to other types of apps (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "publication, azure, ceX"
 ms.collection: virtual-agent
 ---
 
-# Add bot to mobile and custom apps
+# Add bot to mobile and custom apps in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Analyze topic performance"
+title: "Analyze topic performance in Teams"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analyze topic usage in Power Virtual Agents
+# Analyze topic usage in Power Virtual Agents in Teams
 
 
 

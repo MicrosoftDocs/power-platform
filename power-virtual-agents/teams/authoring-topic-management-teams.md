@@ -1,5 +1,5 @@
 ---
-title: "Fix errors, set status, and copy topics"
+title: "Fix errors, set status, and copy topics in Teams"
 description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "ceX"
 ms.collection: virtual-agent
 ---
 
-# Manage topics in Power Virtual Agents
+# Manage topics in Power Virtual Agents in Teams
 
 As the number of topics in your bot grows, the following features will help you manage your topics so they are visible to end users only when they have been tested and ready to be invoked:
 

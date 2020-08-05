@@ -1,5 +1,5 @@
 ---
-title: "Share and collaborate on chatbots with other users"
+title: "Share and collaborate on chatbots with other users in Teams"
 description: "Share Power Virtual Agents chatbots with other users, assign security roles, and work together."
 keywords: "Administration, share, multi-author, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "multi-author, admin, ceX"
 ms.collection: virtual-agent
 ---
 
-# Share your bot with other users
+# Share your bot with other users in Teams
 
 Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
 

@@ -1,5 +1,5 @@
 ---
-title: "Check your chatbot with the Test bot"
+title: "Check your chatbot with the Test bot in Teams"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Test your Power Virtual Agents bot
+# Test your Power Virtual Agents bot in Teams
 
 As you design your bot in Power Virtual Agents for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation. 
 

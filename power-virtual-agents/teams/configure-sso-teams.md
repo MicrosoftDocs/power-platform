@@ -1,5 +1,5 @@
 ---
-title: "Configure single sign-on"
+title: "Configure single sign-on in Teams"
 description: "Enable your bot to authenticate an already-signed-in user"
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
-# Configure single sign-on with Azure Active Directory in Power Virtual Agents
+# Configure single sign-on with Azure Active Directory in Power Virtual Agents in Teams
 
 
 Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're already signed in to the page where the bot is deployed.  

@@ -1,5 +1,5 @@
 ---
-title: "Responding to GDPR Data Subject Delete Requests"
+title: "Responding to GDPR Data Subject Delete Requests in Teams"
 description: "Respond to GDPR Data Subject Delete Requests for Power Virtual Agents."
 keywords: "PVA, GDPR, delete data"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ manager: shellyha
 ms.collection: virtual-agent
 ---
 
-# Responding to requests to delete data from Power Virtual Agents
+# Responding to requests to delete data from Power Virtual Agents in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

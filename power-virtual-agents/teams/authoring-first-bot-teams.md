@@ -1,5 +1,5 @@
 ---
-title: "Create conversational chatbots"
+title: "Create conversational chatbots in Teams"
 description: "You can easily create new bots using the bot-builder wizard in Power Virtual Agents."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: onboarding, ceX
 ms.collection: virtual-agent
 ---
 
-# Create your first Power Virtual Agents bot
+# Create your first Power Virtual Agents bot in Teams
 
 To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 

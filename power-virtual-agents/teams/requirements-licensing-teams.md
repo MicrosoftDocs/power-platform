@@ -1,5 +1,5 @@
 ---
-title: "Assign user licenses and manage access"
+title: "Assign user licenses and manage access in Teams"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "licensing, admin, ceX"
 ms.collection: virtual-agent
 ---
 
-# Assign licenses and manage access to Power Virtual Agents
+# Assign licenses and manage access to Power Virtual Agents in Teams
 
 To create and manage bots with Power Virtual Agents, you need:
 

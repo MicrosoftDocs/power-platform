@@ -1,5 +1,5 @@
 ---
-title: "Work with chatbot variables"
+title: "Work with chatbot variables in Teams"
 description: "Use variables to use custom and prebuilt entities to allow for customized conversations in your bot."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Use variables
+# Use variables in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
@@ -74,7 +74,7 @@ In the bot authoring canvas, add a question node by choosing **Ask a question**.
 
 **Create a variable:**
 
-1. Go to the [**Topics page**](getting-started-create-topics-teams.md) for the bot you want to edit.
+1. Go to the [**Topics page**](authoring-create-edit-topics-teams.md) for the bot you want to edit.
 
 1. Open the authoring canvas for the topic you want to add a variable to.
 

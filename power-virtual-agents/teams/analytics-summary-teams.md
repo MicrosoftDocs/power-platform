@@ -1,5 +1,5 @@
 ---
-title: "Report analytics, performance, and usage"
+title: "Report analytics, performance, and usage in Teams"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analyze bot performance and usage in Power Virtual Agents
+# Analyze bot performance and usage in Power Virtual Agents in Teams
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mQpm]

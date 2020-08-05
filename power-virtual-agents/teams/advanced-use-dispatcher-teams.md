@@ -1,5 +1,5 @@
 ---
-title: "Use a Microsoft Bot Framework bot"
+title: "Use a Microsoft Bot Framework bot in Teams"
 description: "Use and extend an existing Microsoft Bot Framework bot to work with Power Virtual Agents."
 keywords: "extensibility, integration, extend bot, bot framework, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ manager: shellyha
 ms.custom: advanced-authoring, ceX
 ---
 
-# Use a Microsoft Bot Framework bot with Power Virtual Agents
+# Use a Microsoft Bot Framework bot with Power Virtual Agents in Teams
 
 This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with a Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and integrated development environments (IDEs). 
 

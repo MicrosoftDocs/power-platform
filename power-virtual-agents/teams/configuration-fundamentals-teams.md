@@ -1,5 +1,5 @@
 ---
-title: "Configuration of advanced features"
+title: "Configuration of advanced features in Teams"
 description: "Incorporate advanced features into your bot, such as sign-in, live agent transfer, custom appearances, dynamic cards, and file uploads."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "configuration, fundamentals, ceX"
 ms.collection: virtual-agent
 ---
 
-# Key concepts - Configuration of Power Virtual Agents
+# Key concepts - Configuration of Power Virtual Agents in Teams
 
 Power Virtual Agents has a number of advanced features that let you extend the capabilities of what bot conversations can do.
 

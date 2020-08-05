@@ -1,5 +1,5 @@
 ---
-title: "Overview"
+title: "Overview for Teams"
 description: "It's easy to use Power Virtual Agents and start solving problems with its AI-driven natural language processing - without needing to know or deploy any code."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 
 
-# Power Virtual Agents overview
+# Power Virtual Agents overview in Teams
 
 >[!IMPORTANT]
 >See the [Important information](#important-information) section for specific usage details.

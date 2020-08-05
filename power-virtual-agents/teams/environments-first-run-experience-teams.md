@@ -1,5 +1,5 @@
 ---
-title: "Create and use Power Apps environments"
+title: "Create and use Power Apps environments in Teams"
 description: "Environments store all the data and resources associated with the bots you create in Power Virtual Agents."
 keywords: "onboarding, environments, PVA"
 ms.date: 8/3/2020
@@ -12,7 +12,7 @@ manager: shellyha
 ms.custom: onboarding, ceX
 ms.collection: virtual-agent
 ---
-# Working with environments in Power Virtual Agents
+# Working with environments in Power Virtual Agents in Teams
 
 With Power Virtual Agents, you can create bots in different environments and easily switch between them.
 

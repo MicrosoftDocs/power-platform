@@ -37,22 +37,6 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 >See [the Teams version of this topic](fundamentals-get-started-teams.md) for more details.
 
 
-# Quickstart: Create and deploy a Power Virtual Agents bot online
-
-Using Power Virtual Agents in Teams? [See this article written specifically for Teams use](fundamentals-get-started-teams.md). 
-
-
-Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
-
-This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it’s been deployed. 
-
-
-> 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLcX ]
-> 
-
-
-
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]

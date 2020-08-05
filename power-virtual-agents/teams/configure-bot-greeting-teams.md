@@ -1,5 +1,5 @@
 ---
-title: "Automatically start a chatbot conversation"
+title: "Automatically start a chatbot conversation in Teams"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.custom: "customization, ce06102020"
 ms.collection: virtualagent
 ---
 
-# Configure your bot to start the conversation automatically
+# Configure your bot to start the conversation automatically in Teams
 
 
 By default, chatbots created with Power Virtual Agents and [published to a website](publication-connect-bot-to-web-channels-teams.md) will load without a greeting, and will passively wait for the user to start the conversation.

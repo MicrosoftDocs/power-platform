@@ -1,5 +1,5 @@
 ---
-title: "Export and import bots using solutions (preview)"
+title: "Export and import bots using solutions in Teams (preview)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: "export, import, transfer, environment, PVA"
 ms.date: 7/31/2020
@@ -14,7 +14,7 @@ ms.custom: "customization, ceX"
 ms.collection: virtualagent
 ---
 
-# Export and import bots using solutions (preview)
+# Export and import bots using solutions in Teams (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

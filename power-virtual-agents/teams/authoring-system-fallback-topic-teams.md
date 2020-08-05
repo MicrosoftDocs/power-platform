@@ -1,5 +1,5 @@
 ---
-title: "Use a system fallback topic"
+title: "Use a system fallback topic in Teams"
 description: "A system fallback topic can be triggered when the bot doesn't understand the user's questions."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 
 
-# Configure the system fallback topic in Power Virtual Agents
+# Configure the system fallback topic in Power Virtual Agents in Teams
 
 During a conversation, a Power Virtual Agents bot [triggers the appropriate topic based on the user's input](authoring-create-edit-topics-teams.md). If the bot can't determine the user's intent, it prompts the user again. After two prompts, the bot escalates to a live agent through the system **Escalate** topic.
 

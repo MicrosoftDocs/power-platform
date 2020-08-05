@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals - Analyze chatbot usage"
+title: "Fundamentals - Analyze chatbot usage in Teams"
 description: "Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-# Analysis in Power Virtual Agents
+# Analysis in Power Virtual Agents in Teams
 
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 

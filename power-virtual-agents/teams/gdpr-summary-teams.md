@@ -1,5 +1,5 @@
 ---
-title: "Overview of GDPR compliance"
+title: "Overview of GDPR compliance in Teams"
 description: "Learn how to respond​ to GDPR Data Subject Requests for Power Virtual Agents."
 ms.date: 05/29/2019
 ms.service:
@@ -12,7 +12,7 @@ ms.custom: ceX
 ms.collection: virtual-agent
 ---
 
-# GDPR compliance for Power Virtual Agents
+# GDPR compliance for Power Virtual Agents in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

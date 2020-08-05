@@ -1,5 +1,5 @@
 ---
-title: "Extend your chatbot using Bot Framework skills"
+title: "Extend your chatbot using Bot Framework skills in Teams"
 description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "azure, extend, ceX"
 ms.collection: virtual-agent
 ---
 
-# Extend your bot using Bot Framework skills
+# Extend your bot using Bot Framework skills in Teams
 
 Power Virtual Agents enables you to extend your bot using [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0). If you have already built and deployed bots in your organization (using Bot Framework SDK and pro-code tools) for specific scenarios, you can convert those bots into a skill and register that skill in a Power Virtual Agents bot.
 

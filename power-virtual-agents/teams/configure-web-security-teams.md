@@ -1,5 +1,5 @@
 ---
-title: "Configure web channel security"
+title: "Configure web channel security in Teams"
 description: "Use Direct Line tokens or secrets to secure access to your bots."
 keywords: "direct line, token, secret, access, secure, security, channels, PVA"
 ms.date: 7/16/2020
@@ -14,7 +14,7 @@ ms.custom: configuration, ceX
 ms.collection: virtual-agent
 ---
 
-# Configure Direct Line channel security
+# Configure Direct Line channel security in Teams
 
 
 When you create a Power Virtual Agents bot, it is immediately available in the **Demo website** and  **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed. 
@@ -40,11 +40,11 @@ Any access to the bot that doesn't provide this security measure won't work.
 
 1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon-teams.png "Settings icon"), and then select **Web channel security**.
 
-    ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security/settings-web-channel-teams.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
+    ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security-teams/settings-web-channel-teams.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
 
 2. Turn the **Require secured access** switch to **Enabled**. 
  
-    ![Screenshot showing the Web channel security page.](media/configure-web-security/enable-web-security-teams.png "Screenshot showing the Web channel security page.")
+    ![Screenshot showing the Web channel security page.](media/configure-web-security-teams/enable-web-security-teams.png "Screenshot showing the Web channel security page.")
 
 >[!WARNING] 
 > Once "Require secured access" is enabled or disabled, the system can take up to two hours to propagate the settings and take effect. Until then, the previous setting will be in effect.  
@@ -52,7 +52,7 @@ Any access to the bot that doesn't provide this security measure won't work.
 
 If you need to disable the web channel security option, you can do so by switching **Require secured access** to **Disabled**. Disabling secured access can take up to two hours to propagate.
  
-![Screenshot showing a confirmation message when disabling secured access, which says this action renders the Demo website and any Direct Line channel not using a secret or token available. This action can take up to two hours to take effect.](media/configure-web-security/disable-web-security-teams.png "Screenshot showing a confirmation message when disabling secured access.")
+![Screenshot showing a confirmation message when disabling secured access, which says this action renders the Demo website and any Direct Line channel not using a secret or token available. This action can take up to two hours to take effect.](media/configure-web-security-teams/disable-web-security-teams.png "Screenshot showing a confirmation message when disabling secured access.")
 
 ## Use secrets or tokens 
 
@@ -74,9 +74,9 @@ You'll need the secret so you can specify it in your app's authorization header 
 
 1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon-teams.png "Settings icon"), and then select **Web channel security**.
 
-    ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security/settings-web-channel-teams.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
+    ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security-teams/settings-web-channel-teams.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
 
-2. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon ![Visibility icon](media/configure-web-security/visibility-icon-teams.png "Visibility icon") to reveal the secret. A warning prompt will appear before you can reveal it.
+2. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon ![Visibility icon](media/configure-web-security-teams/visibility-icon-teams.png "Visibility icon") to reveal the secret. A warning prompt will appear before you can reveal it.
 
 
 ### Swapping secrets

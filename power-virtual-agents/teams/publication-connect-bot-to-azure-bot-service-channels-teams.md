@@ -1,5 +1,5 @@
 ---
-title: "Add a chatbot to Azure Bot Service channels"
+title: "Add a chatbot to Azure Bot Service channels in Teams"
 description: "Connect your bot to existing Azure Bot Service framework channels (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 8/3/2020
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 
 
-# Add Power Virtual Agents bot to Azure Bot Service channels
+# Add Power Virtual Agents bot to Azure Bot Service channels in Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

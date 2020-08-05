@@ -1,5 +1,5 @@
 ---
-title: "Customize the web chat canvas"
+title: "Customize the web chat canvas in Teams"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: "PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "customization, ce06102020"
 ms.collection: virtual-agent
 ---
 
-# Customize the look and feel of the bot's default canvas
+# Customize the look and feel of the bot's default canvas in Teams
 
 
 

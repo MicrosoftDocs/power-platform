@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals - Publish a chatbot to various channels"
+title: "Fundamentals - Publish a chatbot to various channels in Teams"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels, PVA"
 ms.date: 8/3/2020
@@ -13,7 +13,7 @@ ms.custom: "publication, fundamentals, ceX"
 ms.collection: virtual-agent
 ---
 
-# Key Concepts - Publish your bot
+# Key Concepts - Publish your bot in Teams
 
 With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook. 
 
