@@ -1,127 +1,248 @@
-- name: Overview
+- name: Power Virtual Agents overview
+  href: fundamentals-what-is-power-virtual-agents.md
+- name: Power Virtual Agents online
   items:
-   - name: Power Virtual Agents overview
-     href: fundamentals-what-is-power-virtual-agents.md
-   - name: Get started quickly with Power Virtual Agents
-     href: fundamentals-get-started.md
-   - name: Community help and support
-     href: fundamentals-support.md
-- name: Administer and manage
+    - name: Overview
+      items:
+       - name: Power Virtual Agents online overview
+         href: fundamentals-what-is-power-virtual-agents-portal.md
+       - name: Get started quickly with Power Virtual Agents
+         href: fundamentals-get-started.md
+       - name: Community help and support
+         href: fundamentals-support.md
+    - name: Administer and manage
+      items:
+       - name: Assign licenses
+         href: requirements-licensing.md
+       - name: Sign up for a trial account
+         href: sign-up-individual.md
+       - name: Working with environments
+         href: environments-first-run-experience.md
+       - name: Export and import bots with solutions
+         href: authoring-export-import-bots.md
+       - name: Regional settings and data locations for organizations
+         href: data-location.md
+       - name: Quotas and rate limit considerations
+         href: requirements-quotas.md
+    - name: Author and edit
+      items:
+       - name: Key concepts - Authoring
+         href: authoring-fundamentals.md
+       - name: Create your first bot
+         href: authoring-first-bot.md
+       - name: Use lesson topics
+         href: authoring-template-topics.md
+       - name: Create and edit topics
+         href: authoring-create-edit-topics.md
+       - name: Use system fallback topic
+         href: authoring-system-fallback-topic.md
+       - name: Manage topics
+         href: authoring-topic-management.md
+       - name: Test your bot
+         href: authoring-test-bot.md
+       - name: Supported languages
+         href: authoring-language-support.md
+    - name: Enhance and improve
+      items:
+       - name: Key concepts - Enhanced authoring
+         href: advanced-fundamentals.md
+       - name: Use entities and slot filling
+         href: advanced-entities-slot-filling.md
+       - name: Use variables
+         href: authoring-variables.md
+       - name: Reuse variables across topics
+         href: authoring-variables-bot.md
+       - name: Create topics from existing support content
+         href: advanced-create-topics-from-web.md
+       - name: Create topics from Customer Service Insights
+         href: advanced-create-topics-from-csi.md
+       - name: Add end-user authentication
+         href: advanced-end-user-authentication.md
+       - name: Add actions using Power Automate
+         href: advanced-flow.md
+       - name: Use Bot Framework Skills
+         href: advanced-use-skills.md
+       - name: Trigger hand-off to a live agent
+         href: advanced-hand-off.md
+    - name: Publish and integrate
+      items:
+       - name: Key concepts - Publish your bot
+         href: publication-fundamentals-publish-channels.md
+       - name: Configure the demo website and add the bot to your live website
+         href: publication-connect-bot-to-web-channels.md
+       - name: Add bot to Microsoft Teams
+         href: publication-add-bot-to-microsoft-teams.md
+       - name: Add bot to Facebook
+         href: publication-add-bot-to-facebook.md
+       - name: Add bot to mobile or custom apps
+         href: publication-connect-bot-to-custom-application.md
+       - name: Add bot to Azure Bot Service channels
+         href: publication-connect-bot-to-azure-bot-service-channels.md
+       - name: Use a Bot Framework bot with Power Virtual Agents
+         href: advanced-use-dispatcher.md
+    - name: Monitor and diagnose
+      items:
+       - name: Key concepts - Analytics
+         href: analytics-overview.md
+       - name: Analyze bot performance and usage
+         href: analytics-summary.md
+       - name: Analyze customer satisfaction
+         href: analytics-csat.md
+       - name: Analyze session information
+         href: analytics-sessions.md
+       - name: Analyze topic usage
+         href: analytics-topic-details.md
+       - name: Analyze billed session information
+         href: analytics-billed-sessions.md
+    - name: Configure and customize
+      items:
+       - name: Key concepts - Configuration
+         href: configuration-fundamentals.md
+       - name: Configure end-user authentication
+         href: configuration-end-user-authentication.md
+       - name: Configure single sign-on
+         href: configure-sso.md
+       - name: Configure hand-off to a generic engagement hub
+         href: configure-generic-handoff.md
+       - name: Configure hand-off to Omnichannel for Customer Service
+         href: configuration-hand-off-omnichannel.md
+       - name: Configure the bot to automatically start the conversation
+         href: configure-bot-greeting.md
+       - name: Customize the look and feel of the bot
+         href: customize-default-canvas.md
+       - name: Enable and configure Bot Framework Skills
+         href: configuration-add-skills.md
+    - name: Respond to GDPR Data Subject Rights (DSR) requests
+      items:
+       - name: Key concepts - GDPR compliance
+         href: gdpr-summary.md
+       - name: Requests to export and download data
+         href: gdpr-export.md
+       - name: Requests to delete data
+         href: gdpr-delete.md
+       - name: Requests to discover data
+         href: gdpr-discovery.md
+- name: Power Virtual Agents in Teams
   items:
-   - name: Assign licenses
-     href: requirements-licensing.md
-   - name: Sign up for a trial account
-     href: sign-up-individual.md
-   - name: Working with environments
-     href: environments-first-run-experience.md
-   - name: Share bots with users in your organization
-     href: admin-share-bots.md
-   - name: Export and import bots with solutions
-     href: authoring-export-import-bots.md
-   - name: Regional settings and data locations for organizations
-     href: data-location.md
-   - name: Quotas and rate limit considerations
-     href: requirements-quotas.md
-- name: Author and edit
-  items:
-   - name: Key concepts - Authoring
-     href: authoring-fundamentals.md
-   - name: Create your first bot
-     href: authoring-first-bot.md
-   - name: Use lesson topics
-     href: authoring-template-topics.md
-   - name: Create and edit topics
-     href: authoring-create-edit-topics.md
-   - name: Use system fallback topic
-     href: authoring-system-fallback-topic.md
-   - name: Manage topics
-     href: authoring-topic-management.md
-   - name: Test your bot
-     href: authoring-test-bot.md
-   - name: Supported languages
-     href: authoring-language-support.md
-- name: Enhance and improve
-  items:
-   - name: Key concepts - Enhanced authoring
-     href: advanced-fundamentals.md
-   - name: Use entities and slot filling
-     href: advanced-entities-slot-filling.md
-   - name: Use variables
-     href: authoring-variables.md
-   - name: Reuse variables across topics
-     href: authoring-variables-bot.md
-   - name: Create topics from existing support content
-     href: advanced-create-topics-from-web.md
-   - name: Create topics from Customer Service Insights
-     href: advanced-create-topics-from-csi.md
-   - name: Add end-user authentication
-     href: advanced-end-user-authentication.md
-   - name: Add actions using Power Automate
-     href: advanced-flow.md
-   - name: Use Bot Framework Skills
-     href: advanced-use-skills.md
-   - name: Trigger hand-off to a live agent
-     href: advanced-hand-off.md
-- name: Publish and integrate
-  items:
-   - name: Key concepts - Publish your bot
-     href: publication-fundamentals-publish-channels.md
-   - name: Configure the demo website and add the bot to your live website
-     href: publication-connect-bot-to-web-channels.md
-   - name: Add bot to Microsoft Teams
-     href: publication-add-bot-to-microsoft-teams.md
-   - name: Add bot to Facebook
-     href: publication-add-bot-to-facebook.md
-   - name: Add bot to mobile or custom apps
-     href: publication-connect-bot-to-custom-application.md
-   - name: Add bot to Azure Bot Service channels
-     href: publication-connect-bot-to-azure-bot-service-channels.md
-   - name: Use a Bot Framework bot with Power Virtual Agents
-     href: advanced-use-dispatcher.md
-
-- name: Monitor and diagnose
-  items:
-   - name: Key concepts - Analytics
-     href: analytics-overview.md
-   - name: Analyze bot performance and usage
-     href: analytics-summary.md
-   - name: Analyze customer satisfaction
-     href: analytics-csat.md
-   - name: Analyze session information
-     href: analytics-sessions.md
-   - name: Analyze topic usage
-     href: analytics-topic-details.md
-   - name: Analyze billed session information
-     href: analytics-billed-sessions.md
-- name: Configure and customize
-  items:
-   - name: Key concepts - Configuration
-     href: configuration-fundamentals.md
-   - name: Configure web channel security
-     href: configure-web-security.md
-   - name: Configure end-user authentication
-     href: configuration-end-user-authentication.md
-   - name: Configure single sign-on
-     href: configure-sso.md
-   - name: Configure hand-off to a generic engagement hub
-     href: configure-generic-handoff.md
-   - name: Configure hand-off to Omnichannel for Customer Service
-     href: configuration-hand-off-omnichannel.md
-   - name: Configure the bot to automatically start the conversation
-     href: configure-bot-greeting.md
-   - name: Customize the look and feel of the bot
-     href: customize-default-canvas.md
-   - name: Enable and configure Bot Framework Skills
-     href: configuration-add-skills.md
-- name: Respond to GDPR Data Subject Rights (DSR) requests
-  items:
-   - name: Key concepts - GDPR compliance
-     href: gdpr-summary.md
-   - name: Requests to export and download data
-     href: gdpr-export.md
-   - name: Requests to delete data
-     href: gdpr-delete.md
-   - name: Requests to discover data
-     href: gdpr-discovery.md
+    - name: Overview
+      items:
+       - name: Power Virtual Agents in Teams overview
+         href: fundamentals-what-is-power-virtual-agents-teams.md
+       - name: Get started quickly with Power Virtual Agents in Teams
+         href: fundamentals-get-started-teams.md
+       - name: Community help and support
+         href: fundamentals-support.md
+    - name: Administer and manage
+      items:
+       - name: Assign licenses
+         href: requirements-licensing.md
+       - name: Sign up for a trial account
+         href: sign-up-individual.md
+       - name: Working with environments
+         href: environments-first-run-experience.md
+       - name: Export and import bots with solutions
+         href: authoring-export-import-bots.md
+       - name: Regional settings and data locations for organizations
+         href: data-location.md
+       - name: Quotas and rate limit considerations
+         href: requirements-quotas.md
+    - name: Author and edit
+      items:
+       - name: Key concepts - Authoring
+         href: authoring-fundamentals.md
+       - name: Create your first bot
+         href: authoring-first-bot.md
+       - name: Use lesson topics
+         href: authoring-template-topics.md
+       - name: Create and edit topics
+         href: authoring-create-edit-topics.md
+       - name: Use system fallback topic
+         href: authoring-system-fallback-topic.md
+       - name: Manage topics
+         href: authoring-topic-management.md
+       - name: Test your bot
+         href: authoring-test-bot.md
+       - name: Supported languages
+         href: authoring-language-support.md
+    - name: Enhance and improve
+      items:
+       - name: Key concepts - Enhanced authoring
+         href: advanced-fundamentals.md
+       - name: Use entities and slot filling
+         href: advanced-entities-slot-filling.md
+       - name: Use variables
+         href: authoring-variables.md
+       - name: Reuse variables across topics
+         href: authoring-variables-bot.md
+       - name: Create topics from existing support content
+         href: advanced-create-topics-from-web.md
+       - name: Create topics from Customer Service Insights
+         href: advanced-create-topics-from-csi.md
+       - name: Add end-user authentication
+         href: advanced-end-user-authentication.md
+       - name: Add actions using Power Automate
+         href: advanced-flow.md
+       - name: Use Bot Framework Skills
+         href: advanced-use-skills.md
+       - name: Trigger hand-off to a live agent
+         href: advanced-hand-off.md
+    - name: Publish and integrate
+      items:
+       - name: Key concepts - Publish your bot
+         href: publication-fundamentals-publish-channels.md
+       - name: Configure the demo website and add the bot to your live website
+         href: publication-connect-bot-to-web-channels.md
+       - name: Add bot to Microsoft Teams
+         href: publication-add-bot-to-microsoft-teams.md
+       - name: Add bot to Facebook
+         href: publication-add-bot-to-facebook.md
+       - name: Add bot to mobile or custom apps
+         href: publication-connect-bot-to-custom-application.md
+       - name: Add bot to Azure Bot Service channels
+         href: publication-connect-bot-to-azure-bot-service-channels.md
+       - name: Use a Bot Framework bot with Power Virtual Agents
+         href: advanced-use-dispatcher.md
+    - name: Monitor and diagnose
+      items:
+       - name: Key concepts - Analytics
+         href: analytics-overview.md
+       - name: Analyze bot performance and usage
+         href: analytics-summary.md
+       - name: Analyze customer satisfaction
+         href: analytics-csat.md
+       - name: Analyze session information
+         href: analytics-sessions.md
+       - name: Analyze topic usage
+         href: analytics-topic-details.md
+       - name: Analyze billed session information
+         href: analytics-billed-sessions.md
+    - name: Configure and customize
+      items:
+       - name: Key concepts - Configuration
+         href: configuration-fundamentals.md
+       - name: Configure end-user authentication
+         href: configuration-end-user-authentication.md
+       - name: Configure single sign-on
+         href: configure-sso.md
+       - name: Configure hand-off to a generic engagement hub
+         href: configure-generic-handoff.md
+       - name: Configure hand-off to Omnichannel for Customer Service
+         href: configuration-hand-off-omnichannel.md
+       - name: Configure the bot to automatically start the conversation
+         href: configure-bot-greeting.md
+       - name: Customize the look and feel of the bot
+         href: customize-default-canvas.md
+       - name: Enable and configure Bot Framework Skills
+         href: configuration-add-skills.md
+    - name: Respond to GDPR Data Subject Rights (DSR) requests
+      items:
+       - name: Key concepts - GDPR compliance
+         href: gdpr-summary.md
+       - name: Requests to export and download data
+         href: gdpr-export.md
+       - name: Requests to delete data
+         href: gdpr-delete.md
+       - name: Requests to discover data
+         href: gdpr-discovery.md
 
 
