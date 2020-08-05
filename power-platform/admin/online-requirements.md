@@ -2,11 +2,10 @@
 title: "Requirements/supported configurations  | MicrosoftDocs"
 description: Requirements/supported configurations 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 07/22/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -50,6 +49,27 @@ Dynamics 365 apps use several Microsoft URLs to help provide security, services,
 - [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
 - [Internet accessible URLs required for connectivity to Microsoft Dynamics 365](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
   
+## Internet accessible URLs required
+
+If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365, a proxy or firewall may be configured to prevent  Dynamics 365 URLs from accessing server resources.
+
+Add the following URLs to the approved list to allow traffic to proceed to these URLs.
+
+Select your region:
+> [!div class="op_single_selector"]
+> - [North America-based organizations](internet-url-north-america.md)
+> - [South America-based organization](internet-url-south-america.md)
+> - [Europe, Africa, and Middle East-based organization](internet-url-europe-africa-middle-east.md)
+> - [Asia/Pacific area-based organization](internet-url-asia-pacific.md)
+> - [Japan area-based organizations](internet-url-japan.md)
+> - [India area-based organizations](internet-url-india.md)
+> - [Canada area-based organizations](internet-url-canada.md)
+> - [Oceania area-based organizations](internet-url-oceania.md)
+> - [Dynamics 365 US Government environments](internet-url-us-government.md)
+> - [United Kingdom area-based organizations](internet-url-united-kingdom.md)
+
+
+
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
  [Work with requirements as a solution architect for Power Platform and Dynamics 365](https://docs.microsoft.com/learn/modules/work-with-requirements/index)

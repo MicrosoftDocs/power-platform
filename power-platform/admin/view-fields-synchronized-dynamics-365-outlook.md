@@ -45,10 +45,9 @@ In [!INCLUDE[pn_crm_2015_outlook](../includes/pn-crm-2015-outlook.md)] or later,
    [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] fields are displayed on the left and the corresponding model-driven apps in Dynamics 365 fields are displayed on the right. The blue arrows show the sync direction:  
 
 
-   |                                                                                                                                |                                                                                                                                                      |
-   |--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                                       **This indicator**                                                       |                                                              **Shows that the fields**                                                               |
-   | ![One-way sync arrow (right)](media/one-way-sync-arrow-right.png "One-way sync arrow (right)") | Are synced one way from [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] to model-driven apps in Dynamics 365 |
+   |This indicator  |Shows that the fields   |
+   |----|---|
+      | ![One-way sync arrow (right)](media/one-way-sync-arrow-right.png "One-way sync arrow (right)") | Are synced one way from [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] to model-driven apps in Dynamics 365 |
    |  ![One-way sync arrow (left)](media/one-way-sync-arrow-left.png "One-way sync arrow (left)")   | Are synced one way from model-driven apps in Dynamics 365 to [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] |
    |            ![Two-way sync arrow](media/two-way-sync-arrow.png "Two-way sync arrow")            |                                                                  Are synced two way                                                                  |
    |       ![No synchronization arrow](media/no-sync-arrow.png "No synchronization arrow")        |                                                                    Aren't synced                                                                     |

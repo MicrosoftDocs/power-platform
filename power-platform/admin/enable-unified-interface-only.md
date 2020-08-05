@@ -2,11 +2,10 @@
 title: "Enable Unified Interface Only  | MicrosoftDocs"
 description: Enable Unified Interface Only
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 07/27/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 06/20/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -95,31 +95,3 @@ The reset process starts.
 > [!div class="mx-imgBorder"] 
 > ![Reset environment status](media/reset-environment-status.png "Reset environment status")
   
-## Administration mode  
- When you place a sandbox environment in administration mode only users with System Administrator or System Customizer security roles will be able to sign in to that environment. Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
-  
-> [!NOTE]
-> - You can only place sandbox environments in administration mode.  
-> - Processes that use code, such as plug-ins or custom workflow assemblies, continue to be processed by the Common Data Service platform when administration mode is enabled and background operations are disabled.
-  
- On the **Details** page, you can set the following.  
-  
-|Setting|Description|  
-|-------------|-----------------|  
-|Administration mode | Select to enable administration mode for the selected sandbox environment. Only System Administrators or System Customizers will be able to sign in to the selected sandbox environment.|  
-|Background operations | Select to disable all asynchronous operations (see [Asynchronous service](https://docs.microsoft.com/powerapps/developer/common-data-service/asynchronous-service)) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. **Note:**  Administration mode must be enabled to disable background operations.|  
-|Custom message | Enter a message that will be displayed to all users when they attempt to sign in.|  
-  
-### Set administration mode  
-  
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using Environment Admin or System Administrator role credentials.
-  
-2. From the left-side menu, select **Environments**, and then select a sandbox environment.
-  
-3. Select **See all**.
-  
-4. On the **Details** page, select **Edit**. 
-  
-5. Under **Administration mode**, toggle **Disabled** to **Enabled**.
-
-6. Set **Background operations** and **Custom message**, and then select **Save**.
