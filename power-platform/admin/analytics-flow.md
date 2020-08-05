@@ -31,8 +31,8 @@ To access these reports:
 
 Admins with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Automate analytics:
 - Environment Admin - can view reports for the environments that the admin has access to.
-- Power Platform Service admin – can view reports for all environments.
-- Dynamics 365 Service admin - can view reports for all environments.
+- Power Platform admin – can view reports for all environments.
+- Dynamics 365 admin - can view reports for all environments.
 - Microsoft 365 Global admin – can view reports for all environments.
 
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
