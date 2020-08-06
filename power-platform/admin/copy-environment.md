@@ -2,11 +2,10 @@
 title: "Copy an environment to a sandbox environment  | MicrosoftDocs"
 description: Learn how to copy a sandbox environment. 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 08/06/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +24,7 @@ You can use Copy environment in the Power Platform admin center to copy the mode
 
 > [!NOTE]
 > - You can only copy an environment to a sandbox environment.
-> - The source and destination environments must be in the same region.
+> - You can only copy to a sandbox environment in the same tenant and region.
 > - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) will not be copied to the target environment.
 > - You cannot copy from or to a default environment.
 > - You must have sufficient storage capacity to copy an environment.
@@ -129,7 +128,7 @@ The overwrite process starts.
 > [!div class="mx-imgBorder"] 
 > ![Copy environment status](media/copy-environment-status.png "Copy environment status")
   
-Once the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
+Once the copy process is complete, the target environment is placed in [Administration mode](admin-mode.md) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
  
 ### Next steps after copying an environment  
  To ensure the newly created copy (target) environment does not impact your production environment, once the copy operation is complete, two things happen:  
