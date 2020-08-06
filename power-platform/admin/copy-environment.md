@@ -128,7 +128,7 @@ The overwrite process starts.
 > [!div class="mx-imgBorder"] 
 > ![Copy environment status](media/copy-environment-status.png "Copy environment status")
   
-Once the copy process is complete, the target environment is placed in [Administration mode](admin-mode.md) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
+Once the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
  
 ### Next steps after copying an environment  
  To ensure the newly created copy (target) environment does not impact your production environment, once the copy operation is complete, two things happen:  
