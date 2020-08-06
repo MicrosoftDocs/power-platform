@@ -63,11 +63,17 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 4. Select **Get started** or **Suggest topics**. 
 
-5. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a link by mistake, you can remove it by selecting **Delete** ![Delete](media/delete-suggested-topic.png).
+5. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** ![Delete](media/delete-suggested-topic.png).
 
     ![The Suggest topics page, where you enter URLs to extract suggested topics from](media/suggested-web-wizard.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
+    
+>[!IMPORTANT]
+>The URLs must be secure (they must start with *https://*).
+>The URLs must be publically available, i.e. not gated behind a user login.
+>For online files, we do not support file opload, i.e. you need to provide the full URL to the location of the file like this https://www.microsoft.com/thisisafile.pdf.
+>For online files, we currently support PDF, DOCX, TSV, CSV, XLSX, PPTX, TXT formats.
 
-7. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages/files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
+6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages/files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
     ![An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page](media/suggested-web-wait.png "An alert that says 'Getting your suggestions. This may take several minutes' appears at the top of the page")
 
