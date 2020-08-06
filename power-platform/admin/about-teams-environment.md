@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2020
+ms.date: 08/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -27,9 +27,7 @@ You can identify a Teams environment in the Power Platform admin center by selec
 ## Licensing and restrictions 
 Note the following regarding access to Power Platform apps in Teams.
 
-- Team members that have an active Office 365 license in a plan that includes Teams will be allowed to access Power Platform apps, which are powered by the Dataflex database in the team. This access will include the ability to install, make, edit, run, share, and remove apps.
-
-- The following plans **do not** provide user access: US government subscriptions (GCC, GCC High and DoD), Office 365 A1, and Student Use Benefit plans.
+- Microsoft Dataflex for Teams capabilities will be available as part of select Office 365 subscriptions. See the licensing guide.
 
 - Teams can invite guests who can access the apps, flows, and data in the Teams Dataflex database within their team. However, they won’t be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
 
