@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Add end-user authentication to a Power Virtual Agents bot
 
-You can enable user authentication directly within a Power Virtual Agents bot conversation. This means you can prompt a user to sign in using single sign-on, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
+You can enable user authentication directly within a Power Virtual Agents bot conversation. User authentication means you can prompt a user to sign in using single sign-on, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
 
 
 > [!IMPORTANT] 
@@ -39,7 +39,7 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 
     ![Screenshot of adding a node](media/handoff-add-node.png)
 
-1. Underneath the message node you just created, select the plus (**+**) icon, select **Call an action**, and then select **Authenticate**. 
+1. Underneath the message node, select the plus (**+**) icon, select **Call an action**, and then select **Authenticate**. 
 
     ![Select Authenticate](media/auth-call-action-2.png)
 
@@ -63,7 +63,7 @@ The **Authenticate** node outputs two variables: `IsLoggedIn` and `AuthToken`.
 
 #### IsLoggedIn variable
 
-The `IsLoggedIn` variable indicates whether the user is signed in (either as a result of signing in or already being signed in—this is the log-in success path) or not signed in (which would result in the log-in failure path).
+The `IsLoggedIn` variable indicates whether the user is signed in (either as a result of signing in or already being signed in, also known as the log-in success path) or not signed in (which would result in the log-in failure path).
 
 ```IsLoggedIn``` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
 
@@ -80,7 +80,7 @@ Do not use `AuthToken` inside **Message** nodes, or on flows that you don't trus
 
 The ```IsLoggedIn``` and ```AuthToken``` variables are available even if you don't use the template provided by the **Call an action** menu entry. If you pass the `AuthToken` variable without first having the user go through the **Authenticate** node, the user will be prompted to sign in at that step. 
 
-This can be useful if you always expect the user to be signed in, or if your user is being redirected from a different topic. We suggest you use the template provided by the **Call an action** entry to treat cases where the user fails to sign in.
+Passing the `AuthToken` variable can be useful if you always expect the user to be signed in, or if your user is being redirected from a different topic. We suggest you use the template provided by the **Call an action** entry to treat cases where the user fails to sign in.
 
 > [!NOTE] 
 > If the user signs out in the middle of a conversation, they will be prompted to sign in again if the topic comes to a node that uses the ```AuthToken``` variable.
@@ -93,11 +93,11 @@ The success path equates to where ```IsLoggedIn = True``` and accounts for when 
 If you have logic that uses the `AuthToken` variable (for example, to connect to a back-end system using a flow to retrieve a user's information), it should go under this path.
 
 ### Failure path
-The failure path equates to any condition other than `IsLoggedIn = True`. In most cases this is because the user failed to sign in, used the wrong password, or canceled the sign-in experience.
+The failure path equates to any condition other than `IsLoggedIn = True`. In most cases the failure path occurs because the user failed to sign in, used the wrong password, or canceled the sign-in experience.
 
-You should add any logic you might want to treat this case. As an example, we have provided options for retrying or to [escalate to a live agent](how-to-handoff.md). You should customize this for your particular scenario and usage.
+Add any logic you might want to treat this case. As an example, we have provided options for retrying or to [escalate to a live agent](how-to-handoff.md). Customize the failure path's actions for your particular scenario and usage.
 
 
 ## Testing your topic
 
-You should [test your topic](getting-started-create-topics.md) using a real user configured in your identity provider. Ensure both the sign-in success and failure paths are exercised, so there are no surprises if your user fails to sign in or there is an error with the identity provider's sign-in experience.
+Make sure to [test your topic](getting-started-create-topics.md) using a real user configured in your identity provider. Ensure both the sign-in success and failure paths are exercised, so there are no surprises if your user fails to sign in or there is an error with the identity provider's sign-in experience.
