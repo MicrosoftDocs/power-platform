@@ -15,8 +15,6 @@ ms.collection: virtual-agent
 
 # Add end-user authentication to a Power Virtual Agents bot
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 You can enable user authentication directly within a Power Virtual Agents bot conversation. This means you can prompt a user to sign in using single sign-on, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
 
 
