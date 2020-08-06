@@ -74,8 +74,6 @@ Select your region:
 > - [Dynamics 365 US Government environments](internet-url-us-government.md)
 > - [United Kingdom area-based organizations](internet-url-united-kingdom.md)
 
-
-
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
  [Work with requirements as a solution architect for Power Platform and Dynamics 365](https://docs.microsoft.com/learn/modules/work-with-requirements/index)
