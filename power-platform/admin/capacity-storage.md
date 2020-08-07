@@ -158,7 +158,7 @@ This tenant is 10 GB over in log usage and has only 5 GB available in database c
 
 This tenant is 90 GB over in file usage. Despite having 85 GB available (80 GB database + 5 GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
 
-## Example storage capacity scenarios, no overage
+## Example storage capacity scenario, no overage
 
 ### Scenario 4: Log storage is over capacity
 
