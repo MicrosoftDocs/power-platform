@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/05/2020 #Required; mm/dd/yyyy format.
+  ms.date: 08/07/2020 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -22,12 +22,12 @@ highlightedContent:
   items:
     
     # Card
-    - title: What's new in Power Platform?
+    - title: What's new in Microsoft Power Platform?
       itemType: whats-new
-      url: https://docs.microsoft.com/power-platform-release-plan/2020wave1/
+      url: https://docs.microsoft.com/dynamics365/release-plans/
 
     # Card
-    - title: Power Platform training on Microsoft Learn
+    - title: Microsoft Power Platform training on Microsoft Learn
       itemType: learn
       url: https://docs.microsoft.com/learn/powerplatform/
 
