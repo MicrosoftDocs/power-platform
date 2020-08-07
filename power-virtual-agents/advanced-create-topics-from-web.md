@@ -68,10 +68,10 @@ After the extraction is complete, you'll be shown the suggested topics for furth
     ![The Suggest topics page, where you enter URLs to extract suggested topics from](media/suggested-web-wizard.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
     
 >[!IMPORTANT]
->The URLs must be secure (they must start with *https://*).
->The URLs must be publically available, i.e. not gated behind a user login.
->For online files, we do not support file opload, i.e. you need to provide the full URL to the location of the file like this https://www.microsoft.com/thisisafile.pdf.
->For online files, we currently support PDF, DOCX, TSV, CSV, XLSX, PPTX, TXT formats.
+>- The URLs must be secure (they must start with *https://*).
+>- The URLs must be publically available, i.e. not gated behind a user login.
+>- For online files, we do not support file opload, i.e. you need to provide the full URL to the location of the file like this https://www.microsoft.com/thisisafile.pdf.
+>- For online files, we currently support PDF, DOCX, PPTX, TXT files and 2-column formats in TSV, XLSX (first sheet only), and CSV.
 
 6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages/files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
