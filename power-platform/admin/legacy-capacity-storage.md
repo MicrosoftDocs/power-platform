@@ -114,11 +114,11 @@ The following details are provided:
 
 ## Example storage capacity scenario
 
-### Scenario: Storage is over capacity, overage enforcement
+### Scenario: Total storage is over capacity, overage enforcement
 
 |Type  |Entitled  |Consumed  |
 |---------|---------|---------|
-|**Database**     | 100 GB        | 110 GB        |
+|**Total storage**     | 100 GB        | 110 GB        |
 
 The 110 GB of storage is used by the three types of storage: database, log, and file. This tenant is 10 GB over in storage usage. Therefore, there is a deficit. This tenant should free up storage or purchase more capacity.
 
