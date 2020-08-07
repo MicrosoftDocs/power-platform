@@ -1,13 +1,12 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 06/10/2020
+ms.date: 08/07/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
 author: "jimholtz"
 ms.author: "jimholtz"
-manager: "kvivek"
 search.audienceType: 
   - admin
 search.app:
@@ -115,13 +114,13 @@ The following details are provided:
 
 ## Example storage capacity scenario
 
-### Scenario: Storage is over capacity
+### Scenario: Storage is over capacity, overage enforcement
 
 |Type  |Entitled  |Consumed  |
 |---------|---------|---------|
 |**Database**     | 100 GB        | 110 GB        |
 
-This tenant is 10 GB over in storage usage. Therefore, there is a deficit. This tenant should free up storage or purchase more capacity.
+The 110 GB of storage is used by the three types of storage: database, log, and file. This tenant is 10 GB over in storage usage. Therefore, there is a deficit. This tenant should free up storage or purchase more capacity.
 
 ## Actions to take for a storage capacity deficit
 

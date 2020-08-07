@@ -1,7 +1,7 @@
 ---
 title: "New Common Data Service storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Common Data Service.
-ms.date: 07/16/2020
+ms.date: 08/07/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -124,12 +124,11 @@ We're making changes for what happens when an organization's storage capacity us
 
 For now, if you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications will occur as alerts in the Power Platform admin center. In the future, certain admin operations will no longer be available when a tenant exceeds storage capacity entitlements. Check back for updated information. 
 
-## Example storage capacity scenarios
+## Example storage capacity scenarios, overage enforced
 
 You should be within limits for your entitled capacity for database, log, and file. If you have used more capacity than you're entitled to, you should buy more capacity or free up capacity. However, if you've overused database, log, or file capacity, review the following scenarios to understand when enforcement will be applied.
 
-
-### Scenario 1: Database storage is over capacity
+### Scenario 1: Database storage is over capacity, overage enforced
 
 |Type  |Entitled  |Consumed  |
 |---------|---------|---------|
@@ -139,7 +138,7 @@ You should be within limits for your entitled capacity for database, log, and fi
 
 This tenant is 10 GB over in database usage. Despite having 200 GB excess file storage, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
 
-### Scenario 2: Log storage is over capacity
+### Scenario 2: Log storage is over capacity, overage enforced
 
 |Type  |Entitled  |Consumed  |
 |---------|---------|---------|
@@ -149,17 +148,7 @@ This tenant is 10 GB over in database usage. Despite having 200 GB excess file s
 
 This tenant is 10 GB over in log usage and has only 5 GB available in database capacity. Therefore, the tenant is in deficit and should free up storage or purchase more capacity.
 
-### Scenario 3: Log storage is over capacity
-
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100 GB        | 80 GB        |
-|**Log**     |  10 GB       | 20 GB        |
-|**File**     | 400 GB        | 200 GB        |
-
-This tenant is 10 GB over in log usage but has 20 GB available in database capacity. Therefore, the tenant isn't in deficit. Note that file storage excess entitlement can't be used to compensate deficits in log or database storage.
-
-### Scenario 4: File storage is over capacity
+### Scenario 3: File storage is over capacity, overage enforced
 
 |Type  |Entitled  |Consumed  |
 |---------|---------|---------|
@@ -168,6 +157,18 @@ This tenant is 10 GB over in log usage but has 20 GB available in database capac
 |**File**     | 200 GB        | 290 GB        |
 
 This tenant is 90 GB over in file usage. Despite having 85 GB available (80 GB database + 5 GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
+
+## Example storage capacity scenarios, no overage
+
+### Scenario 4: Log storage is over capacity
+
+|Type  |Entitled  |Consumed  |
+|---------|---------|---------|
+|**Database**     | 100 GB        | 80 GB        |
+|**Log**     |  10 GB       | 20 GB        |
+|**File**     | 400 GB        | 200 GB        |
+
+This tenant is 10 GB over in log usage but has 20 GB available in database capacity. Therefore, the tenant isn't in deficit. Note that file storage excess entitlement can't be used to compensate deficits in log or database storage.
 
 ## Actions to take for a storage capacity deficit
 
