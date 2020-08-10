@@ -51,7 +51,7 @@ There are various ways to add or create a database:
 
 2. Select **Create a database** to create the database.
 
-    ![Create database from entities](./media/create-database/Create-DB-From-Entities.png)
+    ![Create database from entities](./media/create-database.png)
 
 ## Security model for the databases
 When a database is created, the users who have environment roles assigned to them, will continue to maintain those privileges.  
