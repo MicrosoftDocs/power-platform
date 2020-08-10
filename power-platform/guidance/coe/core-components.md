@@ -100,6 +100,10 @@ Runs when an environment is created or modified, and gets model-driven app infor
 
 Runs on a schedule, and sends an email to the admin about environments that failed to sync (with a link to the flow instance).
 
+### Admin \| Sync Template v2 (Check Deleted)
+
+This flow runs weekly, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var *Also Delete from CoE* = no) or deletes them from the CoE (if *Also Delete from CoE* = yes).
+
 ## Apps
 
 ### DLP Editor
