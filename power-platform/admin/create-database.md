@@ -47,7 +47,7 @@ There are various ways to add or create a database:
    |Security group | Select a security group to restrict access to this environment. |
 
 ## Create a database in the Entities pane of Power Apps
-1. On [powerapps.com](https://make.powerapps.com), expand the **Data** section and click or tap **Entities** in the left navigation pane.
+1. On [make.powerapps.com](https://make.powerapps.com), expand the **Data** section and click or tap **Entities** in the left navigation pane.
 
 2. Select **Create a database** to create the database.
 
