@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/07/2020
+ms.date: 08/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -117,9 +117,6 @@ To change settings for a Dataflex environment, go to **Environments** > [select 
 > [!div class="mx-imgBorder"] 
 > ![Dataflex environment settings](media/teams-environment-settings.png "Dataflex environment settings")
 
-### Languages
-Select **Languages** and see the following topic for settings: [Regional and language options for your environment](enable-languages.md).
-
 ### Users + permissions
 <!-- fwlink 2123134 2127762 -->
 Because it can take a while to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
@@ -143,6 +140,9 @@ Because it can take a while to automatically add users to an environment, you ca
 - Has an active Office 365 license in a plan that includes Teams. See [Licensing and restrictions](#licensing-and-restrictions).
 - Member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group)
 
+### Microsoft Teams Integration
+Select to open the app in Teams.
+
 ### Delete a Dataflex environment
 
 To delete a Dataflex environment, select it from the list of environments and then select **Delete**.
@@ -153,9 +153,6 @@ To delete a Dataflex environment, select it from the list of environments and th
 ### Promote a Dataflex environment to production
 
 Select **Promote to production**. See [Promotion Process](#promotion-process).
-
-### Microsoft Teams association
-Select the team to open the app in Teams.
 
 ### Refresh cadence
 
