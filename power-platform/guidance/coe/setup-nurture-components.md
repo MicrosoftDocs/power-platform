@@ -100,7 +100,7 @@ If you have existing templates that you'd like to share with your makers (for ex
 
 ## Update environment variables
 
-Environment variables are used to store application and flow configuration data. This means you only have to set the value once and it will be used in all necessary flows and apps.
+Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
 
 All flows in this solution depend on all environment variables' being configured.
 
