@@ -34,7 +34,7 @@ There are various ways to add or create a database:
 
 3. Select **+ Add database**. 
     
-    ![Add a database](./media/create-database/add-database.png)
+    ![Add a database](./media/add-database.png)
 
 4. Enter the following, and then select **Add**.
 
