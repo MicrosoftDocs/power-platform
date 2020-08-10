@@ -40,7 +40,7 @@ additionalContent:
           - url: https://docs.microsoft.com/power-bi/
             text: Documentation
           - url: https://docs.microsoft.com/learn/browse/?products=power-bi
-            text: Learn Power BI
+            text: Training on Microsoft Learn
           - url: https://www.youtube.com/user/mspowerbi
             text: Videos            
         - title: Power Apps
@@ -48,7 +48,7 @@ additionalContent:
           - url: https://docs.microsoft.com/powerapps
             text: Documentation
           - url: https://docs.microsoft.com/learn/browse/?products=power-apps
-            text: Learn Power Apps
+            text: Training on Microsoft Learn
           - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
             text: Videos
         - title: Power Automate
@@ -56,7 +56,7 @@ additionalContent:
           - url: https://docs.microsoft.com/power-automate/
             text: Documentation
           - url: https://docs.microsoft.com/learn/browse/?products=power-automate
-            text: Learn Power Automate
+            text: Training on Microsoft Learn
           - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
             text: Videos
         - title: Power Virtual Agents
