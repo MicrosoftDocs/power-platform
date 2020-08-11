@@ -80,10 +80,10 @@ Opening a cascading operation displays:
     > ![Cascade operation record](media/cascade-operation-record.png "Cascade operation record")
  
 ## Which cascading transactions can be processed asynchronously?
-Assign and Delete cascading transactions can be processed asynchronously. 
+Assign, Delete, and Merge cascading transactions can be processed asynchronously. 
 
 > [!NOTE]
-> Other transactions, such as merge, share/unshare, rollup view, and re-parent are are currently under review for asynchronous processing. 
+> Other transactions, such as share/unshare, rollup view, and re-parent are are currently under review for asynchronous processing. 
 
 
 ### See also
