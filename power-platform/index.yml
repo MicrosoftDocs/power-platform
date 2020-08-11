@@ -75,17 +75,17 @@ conceptualContent:
       - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
         itemType: video
         text: Videos
-    - title: Administer and manage Power Platform
+    - title: Administer and manage Microsoft Power Platform
       links:
       - url: /power-platform/admin/admin-documentation
         itemType: overview
-        text: Power Platform Admin guide
+        text: Admin guide
       - url: /power-platform/guidance/coe/starter-kit
         itemType: overview
         text: Center of Excellence (CoE) Starter kit
       - url: /power-platform/alm
         itemType: overview
-        text: Power Platform ALM guide
+        text: Application lifecycle management (ALM) guide
     
 additionalContent:
 # Supports up to 3 sections
