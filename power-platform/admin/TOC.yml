@@ -430,18 +430,6 @@
         href: powerapps-powershell.md           
       - name: Automation of tasks with PowerShell 
         href: wp-task-automation-powershell.md
-    # - name: Requirements/supported configurations
-    #   items:
-    #   - name: Overview
-    #     href: online-requirements.md
-    #   - name: Plan for deployment and administration
-    #     href: plan-for-deployment-and-administration.md
-    #   - name: Supported web browsers and mobile devices
-    #     href: supported-web-browsers-and-mobile-devices.md
-    #   - name: Web application requirements
-    #     href: web-application-requirements.md
-    #   - name: On-premises server cipher suites and TLS requirements
-    #     href: onpremises-server-cipher-tls-requirements.md
     - name: Requirements
       items:
       - name: Requirements/supported configurations
