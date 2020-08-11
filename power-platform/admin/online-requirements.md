@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 08/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -45,7 +45,7 @@ If certain IP address ranges or individual IP addresses are blocked in the envir
 - [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
 
 > [!NOTE]
-> You can search the Public Cloud .json file for the AzureCloud service tag for your region. For example, for Japan you'd search for "azurecloud.japaneast" and "azurecloud.japanwest" to find the list of IP addresses to unblock.
+> You can search the Azure IP Ranges json file for the AzureCloud service tag for your region. For example, for Japan you'd search for "azurecloud.japaneast" and "azurecloud.japanwest" to find the list of IP addresses to allow.
 >
 > [!div class="mx-imgBorder"] 
 > ![AzureCloud service tag for region IPs](media/example-azurecloud-tag.png "AzureCloud service tag for region IPs")
