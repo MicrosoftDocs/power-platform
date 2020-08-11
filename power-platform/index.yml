@@ -31,72 +31,89 @@ highlightedContent:
       itemType: learn
       url: https://docs.microsoft.com/learn/powerplatform/
 
+conceptualContent:
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    - title: Power BI
+      links:
+      - url: https://docs.microsoft.com/power-bi/
+        itemType: overview
+        text: Documentation
+      - url: https://docs.microsoft.com/learn/browse/?products=power-bi
+        itemType: learn
+        text: Training on Microsoft Learn
+      - url: https://www.youtube.com/user/mspowerbi
+        itemType: video
+        text: Videos            
+    - title: Power Apps
+      links:
+      - url: https://docs.microsoft.com/powerapps
+        itemType: overview
+        text: Documentation
+      - url: https://docs.microsoft.com/learn/browse/?products=power-apps
+        itemType: learn
+        text: Training on Microsoft Learn
+      - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
+        itemType: video
+        text: Videos
+    - title: Power Automate
+      links:
+      - url: https://docs.microsoft.com/power-automate/
+        itemType: overview
+        text: Documentation
+      - url: https://docs.microsoft.com/learn/browse/?products=power-automate
+        itemType: learn
+        text: Training on Microsoft Learn
+      - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
+        itemType: video
+        text: Videos
+    - title: Power Virtual Agents
+      links:
+      - url: https://docs.microsoft.com/power-virtual-agents/
+        itemType: overview
+        text: Documentation
+      - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
+        itemType: video
+        text: Videos
+    - title: Administer and manage Power Platform
+      links:
+      - url: /power-platform/admin/admin-documentation
+        itemType: overview
+        text: Power Platform Admin guide
+      - url: /power-platform/guidance/coe/starter-kit
+        itemType: overview
+        text: Center of Excellence (CoE) Starter kit
+      - url: /power-platform/alm
+        itemType: overview
+        text: Power Platform ALM guide
+    
 additionalContent:
-  # Supports up to 3 sections
+# Supports up to 3 sections
   sections:
-    - items:
-        - title: Power BI
-          links:
-          - url: https://docs.microsoft.com/power-bi/
-            text: Documentation
-          - url: https://docs.microsoft.com/learn/browse/?products=power-bi
-            text: Training on Microsoft Learn
-          - url: https://www.youtube.com/user/mspowerbi
-            text: Videos            
-        - title: Power Apps
-          links:
-          - url: https://docs.microsoft.com/powerapps
-            text: Documentation
-          - url: https://docs.microsoft.com/learn/browse/?products=power-apps
-            text: Training on Microsoft Learn
-          - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
-            text: Videos
-        - title: Power Automate
-          links:
-          - url: https://docs.microsoft.com/power-automate/
-            text: Documentation
-          - url: https://docs.microsoft.com/learn/browse/?products=power-automate
-            text: Training on Microsoft Learn
-          - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
-            text: Videos
-        - title: Power Virtual Agents
-          links:
-          - url: https://docs.microsoft.com/power-virtual-agents/
-            text: Documentation
-          - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
-            text: Videos
-        - title: Administer and manage Power Platform
-          links:
-          - url: /power-platform/admin/admin-documentation
-            text: Power Platform Admin guide
-          - url: /power-platform/guidance/coe/starter-kit
-            text: Center of Excellence (CoE) Starter kit
-          - url: /power-platform/alm
-            text: Power Platform ALM guide
-    - title: Related features
-      items:
-        # Card
-        - title: Common Data Service
-          summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
-          url: https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro
-        # Card
-        - title: AI Builder
-          summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
-          url: https://docs.microsoft.com/ai-builder
-        # Card
-        - title: Common Data Model
-          summary: "Unify data across all your business processes and enable interoperability among apps"
-          url: https://docs.microsoft.com/common-data-model/
-        - title: Connectors
-          summary: "Connect to hundreds of data sources using a library of connectors"
-          url: https://docs.microsoft.com/connectors/
-    - title: See also
-      items:
-        # Card
-        - title: Dynamics 365
-          summary: "The next generation of CRM and ERP applications"
-          url: /dynamics365/index
-        # Card
-        - title: Microsoft Azure
-          summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
-          url: https://docs.microsoft.com/azure
+  - title: Related features
+    items:
+      # Card
+      - title: Common Data Service
+        summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
+        url: https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro
+      # Card
+      - title: AI Builder
+        summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
+        url: https://docs.microsoft.com/ai-builder
+      # Card
+      - title: Common Data Model
+        summary: "Unify data across all your business processes and enable interoperability among apps"
+        url: https://docs.microsoft.com/common-data-model/
+      - title: Connectors
+        summary: "Connect to hundreds of data sources using a library of connectors"
+        url: https://docs.microsoft.com/connectors/
+  - title: See also
+    items:
+      # Card
+      - title: Dynamics 365
+        summary: "The next generation of CRM and ERP applications"
+        url: /dynamics365/index
+      # Card
+      - title: Microsoft Azure
+        summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
+        url: https://docs.microsoft.com/azure
