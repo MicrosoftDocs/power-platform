@@ -25,4 +25,4 @@ Common Data Service databases are created in the context of a Power Apps environ
 ### See also
 [Microsoft Learn: Get started with Common Data Service](https://docs.microsoft.com/learn/modules/get-started-with-powerapps-common-data-service/)<br />
 [Environments overview](environments-overview.md)<br />
-[Create and manage environments in the Power Apps Admin center](create-environment-powerapps.md)
+

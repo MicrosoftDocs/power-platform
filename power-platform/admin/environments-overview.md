@@ -2,11 +2,10 @@
 title: Environments overview | Microsoft Docs
 description: Learn about environments in Power Apps and how to use them
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/08/2020
+ms.date: 08/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -137,17 +136,6 @@ Select **Edit** to review and edit environment details.
 
 > [!div class="mx-imgBorder"] 
 > ![More environment details](media/environment-details-more.png "More environment details")
-
-## Choosing an environment in the Power Apps admin center
-With the introduction of environments, you'll now see a new experience when you come to [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). The apps, connections, and other items that are visible in the site will now be filtered based on the environment that's currently selected. Your current environment is displayed in the environment picker near the upper-right corner of the header. To choose a different environment, select the picker, and then select the environment you want to enter from the list that appears.
-
-An environment will show up in your picker if you meet one of the following conditions:
-
-* You're a member of the Environment Admin role for the environment.
-* You're a member of the Environment Maker role for the environment.
-* You aren't an Environment Admin or Environment Maker for the environment, but you've been given Contributor access to at least one app within the environment. In this case, you won't be able to create apps in this environment, you'll only be able to modify existing apps that have been shared with you. More information: [Share an app](/powerapps/maker/canvas-apps/share-app)
-
-![Environment picker showing available apps and environments](./media/environments-overview/EnvironmentPicker.png "Environment picker showing available apps and environments")
 
 ### See also
 [Microsoft Learn: Create and manage environments in Common Data Service](https://docs.microsoft.com/learn/modules/create-manage-environments/)<br />
