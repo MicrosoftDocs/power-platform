@@ -23,7 +23,7 @@ Effective October 2019, to help ensure service levels, availability and quality,
 
 ## What is a Microsoft Power Platform request?
 
-Requests in Microsoft Power Platform consist of various actions which a user makes across various products. At a high level, below is what constitute an API call:
+Requests in Microsoft Power Platform consist of various actions which a user makes across various products. At a high level, below is what constitute an API request:
 
 - **Connectors** – all API requests to connectors from Power Apps or Power Automate
 
@@ -150,7 +150,7 @@ No. All the Power Platform request entitlements are calculated on a rolling 24-h
 
 ### Will the requests generated from async workflows and plug-ins in Common Data Service count against the request limits?
 
-Yes, if these requests are making CrUD, assign, or share&ndash;type calls, they will count. However, calls generated internally from the platform aren't going to be counted.
+Yes, if these requests are making CrUD, assign, or share&ndash;type requests, they will count. However, requests generated internally from the platform aren't going to be counted.
 
 ### See also
 [Common Data Service API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
