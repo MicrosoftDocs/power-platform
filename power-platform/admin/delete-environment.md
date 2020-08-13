@@ -2,11 +2,10 @@
 title: "Delete environment | MicrosoftDocs"
 description: Delete environment
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/08/2020
+ms.date: 08/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,7 +22,7 @@ You can delete an environment to recover storage space and to remove Personally 
 > [!NOTE]
 > You can't delete the [default environment](environments-overview.md#the-default-environment).
 
-1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
+1. Sign in to [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).  
 
 2. Select an environment and then select **Delete**.
 
