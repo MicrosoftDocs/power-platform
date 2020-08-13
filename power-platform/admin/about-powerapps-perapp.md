@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/29/2020
+ms.date: 08/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -44,7 +44,7 @@ You can purchase per app plans from your sales channel or in the [Microsoft 365 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps per app plan](media/per-app-plan-tile.png "Power Apps per app plan")
 
-You can see your purchased plan in the Microsoft 365 admin center (**Billing** > **Products & services**).
+You can see your purchased plan in the Microsoft 365 admin center (**Billing** > **Your products**).
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps per app plan purchased](media/per-app-plan-purchased.png "Power Apps per app plan purchased")
