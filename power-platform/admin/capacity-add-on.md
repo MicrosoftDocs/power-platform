@@ -1,13 +1,12 @@
 ---
 title: "Capacity add-ons for Power Apps and Power Automate  | MicrosoftDocs"
 description: This topic covers the Per app, Power Automate per business process, AI builder, Portal logins, and Portal views. 
-ms.date: 06/29/2020
+ms.date: 08/13/2020
 ms.reviewer: 
 ms.service: "power-platform"
 ms.topic: "quickstart"
 author: jimholtz
 ms.author: jimholtz
-manager: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -45,7 +44,7 @@ To allocate capacity to an environment:
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
-2. Select **Analytics** > **Capacity** in the left-side navigation pane.
+2. Select **Resources** > **Capacity** in the left-side navigation pane.
 
 3. On the **Capacity** screen, do **one** of the following to open the **Manage add-ons** screen:
 
