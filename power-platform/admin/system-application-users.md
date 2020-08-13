@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/03/2020
+ms.date: 08/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,6 +35,7 @@ Most of these users are hidden from user views but they can be found by using th
 |    | Power Apps Checker Application        | Pacheckerapp@microsoft.com         |To perform static analysis of Power Apps solutions to assist in identifying performance and stability risks |Export customizations and Solution checker   |
 |    | Powerqueryonline-CDStoAzuredatalake        | Powerqueryonline-CDStoAzuredatalake@onmicrosoft.com         |Service application to perform data query between Common Data Service and Azure Data Lake |N/A    |
 |    | Provision User      | provisionapp@fabrikam.com         |To perform Application installation from AppSource or System updates from Microsoft |System admin   |
+|    | DataLakeStorage     | DataLakeStorage@onmicrosoft.com      | To allow solutions to manage workspaces, workspace permissions and the discovery of workspaces.  | DataLakeWorkspaceAppAccess    |
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 
