@@ -80,7 +80,7 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 ### Admin \| App archive and clean up – Check Approval
 
-Monitors approval responses of the App Archive and Clean Up – Start Approval flow and, if approved, archives the app file to SharePoint.
+On a scheduled interval, checks for approval responses created by the App Archive and Clean Up – Start Approval flow and, if approved, archives the app file to SharePoint.
 
 **Prerequisite**: Create a SharePoint document library to store the archived apps, and configure this in the environment variables.
 
@@ -88,7 +88,7 @@ Monitors approval responses of the App Archive and Clean Up – Start Approval f
 
 ### Admin \| Flow archive and clean up – Start Approval
 
-The same as the above flow but for flows instead of apps. 
+The same as the above flow but for flows instead of apps.
 
 Checks for flows that haven't been modified in the last six months (configurable) and asks the flow owner (via flow approvals) if the flow can be archived.
 
@@ -96,9 +96,9 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 ### Admin \| Flow archive and clean up – Check Approval
 
-The same as the above flow but for flows instead of apps. 
+The same as the above flow but for flows instead of apps.
 
-Monitors approval responses of the Flow Archive and Clean Up – Start Approval flow and, if approved, archives the flow files to SharePoint. It archives two files per flow, one with the flow content, the other with the flow connections.
+On a scheduled interval, checks for approval responses created by the Flow Archive and Clean Up – Start Approval flow and, if approved, archives the flow files to SharePoint. It archives two files per flow, one with the flow content, the other with the flow connections.
 
 **Prerequisite**: The same SharePoint document library as used to  store the archived apps can be use to store archived flows.
 

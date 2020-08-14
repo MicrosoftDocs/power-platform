@@ -72,7 +72,7 @@ If you already have a security group ready, go to [portal.azure.com](<https://po
 
 ## Update environment variables
 
-This step should be completed after you import the solution. Environment variables are used to store application and flow configuration data. This means that you have to set the value only once and it will be used in all necessary flows and apps.
+This step should be completed after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment..
 
 All flows in this solution depend on all environment variables' being configured.
 
