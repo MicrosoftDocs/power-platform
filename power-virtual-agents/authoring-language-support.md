@@ -54,23 +54,23 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 | ---- | -----------|  
 |Chinese (Simplified)        | Preview |
 |Chinese (Traditional)       | Preview |
-|Danish                      | Preview |
-|Dutch                       | Preview |
+|Danish                      | General availability |
+|Dutch                       | General availability |
 |English                     | General availability |
-|French                      | Preview |
-|German                      | Preview |
-|Hindi                       | Experimental |
-|Indonesian                  | Preview |
-|Italian                     | Preview |
-|Japanese                    | Preview |
-|Korean                      | Experimental |
-|Norwegian                   | Preview |
-|Polish                      | Experimental |
-|Portuguese (Brazilian)      | Preview |
-|Russian                     | Preview |
-|Spanish                     | Preview |
-|Swedish                     | Preview |
-|Turkish                     | Preview |
+|French                      | General availability |
+|German                      | General availability |
+|Hindi                       | Preview |
+|Indonesian                  | General availability |
+|Italian                     | General availability |
+|Japanese                    | General availability |
+|Korean                      | Preview |
+|Norwegian                   | General availability |
+|Polish                      | Preview |
+|Portuguese (Brazilian)      | General availability |
+|Russian                     | General availability |
+|Spanish                     | General availability |
+|Swedish                     | General availability |
+|Turkish                     | General availability |
 
 ### See also
 
