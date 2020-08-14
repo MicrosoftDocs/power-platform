@@ -98,6 +98,7 @@ Install the updates by importing the latest version to the environment where you
 
 > [!NOTE]
 > **Overwrite Customizations** is not the default selection, and needs explicitly selected or you will not receive updates.
+>![Overwrite Image](media/UpgradeAndOverwrite.png "Upgrade and Overwrite")
 
 >[!WARNING]
 >Currently, only model-driven app components and Common Data Service entities will be updated by using managed solution updates. Canvas apps and flows will be replaced during an update. If you're extending and customizing canvas apps, you'll need to make a copy of the app first (the copy won't receive updates).
