@@ -25,7 +25,7 @@ Version 1.60 for the CoE Starter Kit Core Components is now available. This arti
 
 ## Entity changes
 
-Entities **Chatbot, Flow and PowerApps Connector** have been updated to include fields that support the Compliance process of the [Governance Components](govern-1.19.md)
+Entities **Chatbot, Flow and PowerApps Connector** have been updated to include fields that support the Compliance process of the [Governance Components](govern-1.21.md)
 
 - Admin Requirement - Risk Assessment
 - Admin Requirement - Reviewed
