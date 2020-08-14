@@ -17,11 +17,11 @@ search.app:
   - Powerplatform
 ---
 
-# Released version Core Components 1.55
+# Released version Core Components 1.60
 
 ## Introduction
 
-Version 1.55 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on 
+Version 1.60 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on August 14, 2020.
 
 ## Entity changes
 
@@ -42,6 +42,10 @@ The Flow, Connector and Chatbot main forms have been updated with an Audit tab t
 
 The Flow, Connector and Chatbot entities have new Admin Review views, similar to the PowerApps App Admin Review view.
 
+Business Process Flows to manage the Audit process for Flow, Connector and Chatbot entities have been added.
+
 ## Bug Fixes
 
-need to add
+- Increase field lengths in Flow Resources entity for more robust handling
+- Sync Flows adjusted to short circuit when user doesn’t have permissions or the object of interest do not exist in the target environment.
+- CDS meta data stored in Environments entity and called from Sync Flows to reduce calls and reduce logic redundancy.

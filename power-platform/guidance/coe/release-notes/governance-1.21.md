@@ -17,11 +17,11 @@ search.app:
   - Powerplatform
 ---
 
-# Released version Governance Components 1.19
+# Released version Governance Components 1.21
 
 ## Introduction
 
-Version 1.19 for the CoE Starter Kit Governance Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on .
+Version 1.21 for the CoE Starter Kit Governance Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on August 14, 2020..
 
 ## Developer Compliance Center
 
@@ -42,7 +42,6 @@ Makers can now provide compliance and support details for all app types, flows, 
 
 Additionally, if the Archival process of the Governance components is used, apps and flows flagged for archiving are highlighted to makers in the Developer Compliance Center.
 
-## Business Process Flows
+## Bug Fixes
 
-New Compliance Approval flows have been added for [**Flows, Chatbots and Custom Connectors**](../governance-components.md#business-process-flow).
-
+- Change the Check Approval flows to use a recurrence instead of an automated trigger
