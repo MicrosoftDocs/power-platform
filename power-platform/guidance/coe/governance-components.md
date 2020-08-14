@@ -27,7 +27,7 @@ Here's a breakdown of the assets that form the governance components:
 - Sample audit process
   - [Developer Compliance Center (canvas app)](#apps)
   - [Flow – Compliance detail request](#flows)
-  - [Business Process Flow for Auditing resources](#business-process-flow)
+  - [Business Process Flow for Auditing resources](#business-process-flows)
 
 - Archive unused apps
   - [App and Flow Archive and Clean Up – Start Approval and Check Approval (flows)](#flows)
