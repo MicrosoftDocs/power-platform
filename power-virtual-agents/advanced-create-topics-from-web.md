@@ -24,7 +24,7 @@ The underlying capability identifies the structure and content on a webpage or o
 
 There are three main steps to using the feature: 
 
-1. Click the **Suggest topics** option on the Topics page to extract content from FAQ/support pages or online files.
+1. Select **Suggest topics** on the Topics page to extract content from FAQ/support pages or online files.
 2. Add the suggested topics to your bot.
 3. Enable the topics.
 
@@ -41,7 +41,7 @@ You can [test the topics in the test chat](authoring-test-bot.md), but you'll ne
 
 ## Extract content from webpages or online files
 
-You first need to point to the webpages or online files from which you want to extract content.
+First, you'll need to point to the webpages or online files from which you want to extract content.
 
 After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
 
@@ -69,21 +69,21 @@ After the extraction is complete, you'll be shown the suggested topics for furth
     
 >[!IMPORTANT]
 >- The URLs must be secure (they must start with *https://*).
->- The URLs must be publically available, i.e. not gated behind a user login.
->- For online files, we do not support file opload, i.e. you need to provide the full URL to the location of the file like this https://www.microsoft.com/thisisafile.pdf.
+>- The URLs must be publically available, that is, they can't need a user to log in.
+>- For online files, we do not support file upload. You must provide the full URL to the location of the file, as in the example *https://www.microsoft.com/thisisafile.pdf*.
 >- For online files, we currently support PDF, DOCX, PPTX, TXT files and 2-column formats in TSV, XLSX (first sheet only), and CSV.
 
-6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages/files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
+6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
     ![An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page](media/suggested-web-wait.png "An alert that says 'Getting your suggestions. This may take several minutes' appears at the top of the page")
 
 >[!TIP]
->You can add multiple webpages and/or links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
+>You can add multiple webpages and links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
 
 >[!IMPORTANT]
 >You won't be able to add more URLs while the **Suggest topics** command is running.
 
-The tool provides explicit feedback about errors so that you can understand and address any issues. For example, you might be unable to extract content because the site you're referencing is down or it may be gated behind a user login like a SharePoint page.
+The tool provides explicit feedback about errors so that you can understand and address any issues. For example, you might be unable to extract content because the site you're referencing is down or it may be gated behind a user login, such as a SharePoint page.
 
 After you've successfully extracted content, a number of suggestions will appear. You can now review these suggestions to see which ones you want to add to your bot.
 
@@ -109,7 +109,7 @@ After the extraction process has been completed, the topic suggestions appear on
 
 1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete. 
 
-    1. To add the topic to your bot, select **Add to topics** ![Add to topics](media/add-to-topics.png). You won't see a preview of the topic and the topic will be moved from the list of suggested topics into Existing topics.
+    1. To add the topic to your bot, select **Add to topics** ![Add to topics](media/add-to-topics.png). You won't see a preview of the topic and the topic will be moved from the list of **Suggested** topics into **Existing** topics.
 
 
     ![An up arrow icon next to the title of a topic](media/suggested-web-quick.png)
