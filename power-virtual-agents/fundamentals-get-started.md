@@ -19,7 +19,7 @@ Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Online portal (https://powerva.microsoft.com)](fundamentals-get-started.md)
-> - [Teams (online or app)](fundamentals-get-started-teams.md)
+> - [Teams (online or app)](teams/fundamentals-get-started-teams.md)
 
 
 Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
@@ -34,7 +34,7 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 >[!IMPORTANT]
 >Creating a simple or test bot works differently if you're using Power Virtual Agents in Teams.
 >For example, you can't use emojis in Teams.
->See [the Teams version of this topic](fundamentals-get-started-teams.md) for more details.
+>See [the Teams version of this topic](teams/fundamentals-get-started-teams.md) for more details.
 
 
 ## Prerequisites
