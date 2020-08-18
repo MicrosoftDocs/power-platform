@@ -215,7 +215,9 @@ If your organization (tenant) has already configured and successfully connected 
 
 Some of the features available in the commercial version of Power Apps are not available to Power Apps US Government customers. The Power Apps team is actively working on making the following features available to US Government customers and will update this article when these features become available:
 
-- Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) and [Power BI](https://docs.microsoft.com/power-bi/).
+- Embed in [Power BI](https://docs.microsoft.com/power-bi/).
+
+- Ability to add apps to Teams using the [Add to Teams button](https://docs.microsoft.com/powerapps/maker/canvas-apps/embed-teams-app).
 
 - [Integrate data into Common Data Service](data-integrator.md).
 
