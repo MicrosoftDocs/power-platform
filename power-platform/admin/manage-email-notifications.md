@@ -39,23 +39,21 @@ The service team regularly sends email notifications to the administrators in yo
   If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your admin. If you’re not sure who your  admin is, see: [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
   
   For more information, download the white paper: [Create your Mailbox rule](https://download.microsoft.com/download/D/1/A/D1A64A1D-FD55-43E4-AD71-9D32D16E5F9E/Create%20your%20Mailbox%20rule.docx)  
-  
-<a name="BKMK_SendEmailNotifications"></a>   
-## Send email notifications to multiple recipients  
+    
+## Set email notifications
  By default, admins will receive update notifications. You can add others to receive update notifications.  
   
-1. Sign in to [https://admin.microsoft.com](https://admin.microsoft.com).  
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
+
+2. In the navigation pane, select **Environments**, and then select an environment that has notifications you want to change.
   
-2. On the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] menu bar, click **Admin centers** > **Dynamics 365** > **environments** tab.  
+3. Select **Settings** > **Email** > **Email settings**.
+
+4. Specify the settings under **Notifications**.  
+
+   > [!div class="mx-imgBorder"] 
+   > ![Email notifications](media/email-notifications.png "Email notifications")
   
-3. Choose an environment that has notifications you want to change.  
-  
-4. Click **Notifications**.  
-  
-   ![Notifications button](../admin/media/customer-driven-update-notifications.png "Notifications button")  
-  
-5. Enter the email addresses of people to receive update notifications for the selected environment and click **Save**.  
-  
-   ![Send Email Notifications](../admin/media/customer-driven-updatesendemailnotifications.PNG "Send Email Notifications")  
+5. Select **Save**.
   
 

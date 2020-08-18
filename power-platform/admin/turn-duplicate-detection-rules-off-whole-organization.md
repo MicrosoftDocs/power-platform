@@ -33,13 +33,13 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
 2. Select or clear the **Enable duplicate detection** check box.  
   
    > [!NOTE]
-   >  If your system contains a large number of records, checking for duplicates can impact performance.  
+   > If your system contains a large number of records, checking for duplicates can impact performance.  
   
 3. If you’re turning duplicate detection on, select or clear the check boxes to set when duplicates are detected:  
   
    - **When a record is created or updated**  
   
-        The system checks for duplicates when a user enters or updates records.  
+       The system checks for duplicates when a user enters or updates records.  
   
        > [!IMPORTANT]
        >  Duplicates aren’t detected when a user merges two records, activates or deactivates a record, or saves a completed activity.  
@@ -50,7 +50,7 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
   
    - **During data import**  
   
-        When you use the Import Data wizard to bring in contacts, leads, accounts, or other types of data, the wizard detects any duplicate records as long as you enable duplicate detection in the wizard. For more information, see [Import data from multiple sources](import-data-all-record-types.md).  
+       When you use the Import Data wizard to bring in contacts, leads, accounts, or other types of data, the wizard detects any duplicate records as long as you enable duplicate detection in the wizard. For more information, see [Import data from multiple sources](import-data-all-record-types.md).  
   
 4. Select **OK**.  
   

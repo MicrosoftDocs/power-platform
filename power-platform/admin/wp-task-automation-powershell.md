@@ -72,7 +72,7 @@ And finally, a little more complex example. This one pipes the output from one c
 That would produce the following detailed information:
 
 > [!div class="mx-imgBorder"] 
-> ![User PowerShell to get environment details](media/powershell-get-environment-details-number-apps.png "User PowerShell to get environment details")
+> ![User PowerShell to get environment app number details](media/powershell-get-environment-details-number-apps.png "User PowerShell to get environment app number details")
 
 
 

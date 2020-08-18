@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service) Power Apps, and Power Automate.
+Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), Power Apps, Power Automate, AI Builder, and Power Virtual Agents.
 
 ## What is a Microsoft Power Platform request?
 
@@ -28,9 +28,9 @@ Requests in Microsoft Power Platform consist of various actions which a user mak
 
 - **Microsoft Power Automate** – all Power Automate step actions
 
-- **Common Data Service** – all CRUD operations, as well as special operations like "share" or "assign". These can be from any client or application and using any endpoint SOAP or REST. These include but are not limited to plug-ins, async workflows, and custom controls making the above mentioned operations.
+- **Common Data Service** – all CRUD operations including user-driven and internal system calls required to complete CRUD transactions, as well as special operations like “share” or “assign.” These can be from any client or application and using any endpoint SOAP or REST. These include but are not limited to plug-ins, async workflows, and custom controls making the above-mentioned operations.
 
-Note that for Common Data Service, there will be a small set of system internal operations that are excluded, like login, logout, and system metadata operations like getClientMetadata.
+Note that for Common Data Service, there will be a small set of system internal operations that are excluded, such as login, logout, and system metadata operations.
 
 This table below will describe the common requests limits as well as the allocation which a user gets based on the type of license assigned to the user.
 
@@ -114,12 +114,11 @@ Apart from the new daily API request limit, there are other service protection l
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Common Data Service API request limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), Power Apps, and Power Automate connecting to Common Data Service/model-driven apps in Dynamics 365
+- [Common Data Service service protection API limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), Power Apps, and Power Automate connecting to Common Data Service/model-driven apps in Dynamics 365
 
 - [Microsoft Power Automate limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Power Automate
 
 - [Limits in connectors](https://docs.microsoft.com/connectors/): applicable for Power Automate and Power Apps
-
 
 ## Frequently asked questions
 
@@ -131,21 +130,28 @@ Users won't be blocked from using the app for occasional and reasonable overages
 
 ### Will my integrations stop working if application users exceed base request capacity?
 
-Integrations won't be stopped for occasional and reasonable overages at this point in time. Admins will be notified about overages and will be able to add Power Apps and Power Automate request capacity to be compliant.
+Currently, integrations won't be stopped for occasional and reasonable overages (see above). Administrators will be notified about overages and will be able to add Power Apps and Power Automate request capacity to be compliant.
 
 ### Will there be a transition period for existing customers?
 
-Yes, all existing customers will have a transition period until reporting is made available in Power Platform Admin Center, or the expiration of their current subscription term, whichever is longer.
+Yes, all existing customers will have a transition period until reporting is made available in the Power Platform admin center.
 
 During this transition period, reporting that shows the API consumption will be made available to customers.
 
 ### What tools can an admin use to monitor and analyze API requests across the platform?
 
-Usage reports and monitoring capabilities will be made available in Power Platform admin center soon, and will be the best way to monitor and analyze usage for API requests. 
+Usage reports and monitoring capabilities are expected by October 2020 in the Power Platform admin center and will be the best way to monitor/analyze usage for API requests.  This reporting will account for interactive and non-interactive traffic, and will also de-duplicate calls between Power Apps and Power Automate to the Common Data Service.
+
+### Can I look at the API numbers in Common Data Service Analytics section of the Power Platform Admin Center to get a sense of Power Platform request counts versus entitlements?  
+
+No, the existing API reporting includes all Common Data Service API calls, and will not include Power Apps, Power Automate, and Power Virtual Agent requests.  For the Power Platform request counts, you should use the new reporting that is soon to be released. Additionally, some internal operations are not counted in the forthcoming Power Platform request report.  For example, the calls to entities that are considered ‘IsPrivate’ are excluded, such as: sdkmessagerequest, solutioncomponentdefinition, and ribbonclientmetadatareporting.
 
 ### Do the Power Platform request entitlements roll over from day to day or month to month?
 
 No. All the Power Platform request entitlements are calculated on a rolling 24-hour period. If they aren't consumed, they don't roll over to the next day or next month.
+
+### Does each application user, non-interactive user, or administrative user get their own tenant-level entitlement?
+No, tenant-level entitlements are shared across all application users, non-interactive users, or administrative users within the tenant.
 
 ### Will the requests generated from async workflows and plug-ins in Common Data Service count against the request limits?
 

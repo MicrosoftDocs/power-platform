@@ -96,7 +96,7 @@ The default environment should not be used to host production solutions. It’s 
 
 When you create an environment, you will pick a geographic location. Application components, including the Common Data Service database will reside in that region. Generally, you will want to choose a location closest to the majority of your users that will be using applications in the particular environment. If you are connecting to other existing external resources, you should consider their location as well. You should also consider any data residency issues when choosing a location.
 
-![Regions](media/regions.png "Regions")
+![Environment regions](media/regions.png "Environment regions")
 
 ## Who can create environments
 
