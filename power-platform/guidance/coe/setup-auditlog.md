@@ -69,7 +69,7 @@ Keep in mind that after a user account has access to the audit logs, that user h
    You should receive a (200) response, which indicates the query has been successfully executed.
    ![The Get Activities By Operation action of the custom connector](media/coe30.png "The Get Activities By Operation action of the custom connector]")
 
->> [!IMPORTANT]
+> [!IMPORTANT]
 > If you are using DLP, you will need to put this connector into the business group, see [Custom Connectors and DLP](https://docs.microsoft.com/power-platform/guidance/coe/limitations#Custom-Connectors-and-DLP)
 >
 > More information: [custom connector documentation](https://docs.microsoft.com/connectors/custom-connectors/define-openapi-definition#import-the-openapi-definition).
@@ -159,7 +159,9 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 Now you'll configure and set up a custom connector that uses the [Office 365 Management APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-1. Download the **Center of Excellence – Audit Logs** solution from [GitHub](https://github.com/microsoft/powerapps-tools/tree/master/Administration/CoEStarterKit/Audit%20Log%20(MFA)).
+1. Download the **Center of Excellence** solution from [GitHub](https://aka.ms/coestarterkitdownload)
+
+1. Extract the zip file.
 
 1. Go to [make.powerapps.com](https://make.powerapps.com).
 
