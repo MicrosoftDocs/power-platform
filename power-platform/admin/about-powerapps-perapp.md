@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/13/2020
+ms.date: 08/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -99,19 +99,13 @@ After completing the first three steps, you can now share apps.
 
 ### Sharing model-driven apps
 
-1. Get the Power Apps per app plan baseline access license [here](https://signup.microsoft.com/signup?sku=bf666882-9c9b-4b2e-aa2f-4789b0a52ba2).
+Share the model-driven app. See [Share a model-driven app with Power Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). 
 
-2. Assign the Power Apps per app plan baseline access license to users. See the following topics for guidance:
-
-   - [Create a group and add members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
-   - [Add or remove group members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
-   - [Assign or remove licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)
-   - [Assign licenses to users](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
-
-3. Share the model-driven app. See [Share a model-driven app with Power Apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app). 
+> [!IMPORTANT]
+> When the user launches the app, we create the user in the required Common Data Service environment. Users will not get added at the time of app sharing.
 
 ### Sharing canvas apps
-To share canvas apps, see [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).
+To share canvas apps, see [Share a canvas app in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app).  
 
 ## Consumption of per app licensing
 
@@ -123,6 +117,15 @@ The per app license gives a user access to two Power Apps and one portal for a s
 > Sharing an app with a user consumes the per app capacity. 
 > 
 > The consumption reporting for the per app license is a work in progress. Please check back for more details once the reporting is launched. 
+
+## Known issues
+
+### Reducing per app capacity to zero
+If you allocate per app capacity to an environment and later reduce per app capacity to zero, users that were added to Common Data Service while per app capacity was greater than zero will **not** get disabled in Common Data Service. However, these users won’t be able to launch apps since there is no per app capacity allocated to the environment. Admins should remove the role of the user they do not intend to access the platform.
+
+### Disabled user account
+
+If a user account is disabled in an environment, adding per app capacity, sharing the app with the user, and the user launching the app will **not** enable the user. We are working to address this issue. 
 
 ## FAQ
 
