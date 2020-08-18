@@ -2,11 +2,10 @@
 title: "Manage teams  | MicrosoftDocs"
 description: Manage teams 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/29/2020
+ms.date: 08/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -222,9 +221,6 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission. 
 > - **Discover and launch apps** coming soon - Group team members can see the list of all the apps and the list of all the environments they have access to based on their Azure AD group membership. The temporary workaround is to assign a security role directly to the team member.  
-> - **System Administrator and Environment Maker security roles**. These are special administrator's security roles and they need to be assigned to the user directly. If these security roles are assigned to Group teams, team members get the team privileges only and won't have any direct/inherited privileges. Team members won't be able to perform all the system administrator and environment maker functions. In addition they won't be able to see the list of all the environments in their tenant. 
-
-<a name="AboutAccess"></a>   
 
 ## About access teams and team templates  
  You can create an access team manually by choosing the team type **Access**, or let the system create and manage an access team for you. When you create an access team, you can share multiple records with the team.  
@@ -241,8 +237,6 @@ For example, you can create a team template for the Account entity with the Read
 >  A user must have sufficient privileges to join an access team. For example, if the access team has Delete access rights on an account, the user must have Delete privileges on the Account entity to join the team. If you're trying to add a user with insufficient privileges, you'll see this error message: "You can't add the user to the access team because the user doesn't have sufficient privileges on the entity."  
   
  For step-by-step instructions on how to create a team template and add the entity form, see [Create a team template and add to an entity form](create-team-template-add-entity-form.md)  
-  
-<a name="MaxSettings"></a>  
  
 ## Maximum settings for system-managed access teams  
  The maximum number of team templates that you can create for an entity is specified in the `MaxAutoCreatedAccessTeamsPerEntity` deployment setting. The default value is 2. The maximum number of entities that you can enable for auto-created access teams is specified in the `MaxEntitiesEnabledForAutoCreatedAccessTeams` deployment setting. The default value is 100. You can use the `Set-CrmSetting`[!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] command to update this value.   
