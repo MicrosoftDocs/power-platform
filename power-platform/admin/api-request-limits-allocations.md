@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/13/2020
+ms.date: 08/18/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -130,13 +130,11 @@ Users won't be blocked from using the app for occasional and reasonable overages
 
 ### Will my integrations stop working if application users exceed base request capacity?
 
-Currently, integrations won't be stopped for occasional and reasonable overages (see above). Administrators will be notified about overages and will be able to add Power Apps and Power Automate request capacity to be compliant.
+Currently, integrations won't be stopped for occasional and reasonable overages (see above). Administrators will be notified about overages and will be able to add Power Apps and Power Automate request capacity to be compliant. In the near future, after reporting becomes available, certain operations would be blocked when a tenant exceeds their Power Platform Request entitlements. These blocked operations will be in administration and customization areas, but not limited to these operations and could expand into other areas as well, depending on the overage scenarios.
 
 ### Will there be a transition period for existing customers?
 
 Yes, all existing customers will have a transition period until reporting is made available in the Power Platform admin center.
-
-During this transition period, reporting that shows the API consumption will be made available to customers.
 
 ### What tools can an admin use to monitor and analyze API requests across the platform?
 
