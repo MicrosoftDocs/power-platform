@@ -1,15 +1,15 @@
 ---
-title: "Add a Power Virtual Agents bot to Facebook"
+title: "Add a chatbot to Facebook"
 description: "Add your bot to Facebook so Facebook users can interact with it."
-keywords: "Channel, publish, Facebook"
-ms.date: 12/3/2019
+keywords: "Channel, publish, Facebook, PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication, authoring"
+ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 

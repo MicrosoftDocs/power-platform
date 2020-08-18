@@ -10,10 +10,11 @@ ms.date: 04/28/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Geo to geo migrations
 

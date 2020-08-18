@@ -1,15 +1,15 @@
 ---
-title: "Add a Power Virtual Agents bot to Microsoft Teams"
+title: "Add a chatbot to Microsoft Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
-ms.date: 12/3/2019
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication, authoring"
+ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 

@@ -10,10 +10,11 @@ ms.date: 03/05/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Add or remove sample data 
 

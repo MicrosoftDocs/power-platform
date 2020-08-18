@@ -2,18 +2,18 @@
 title: "Manage email tracking settings  | MicrosoftDocs"
 description: View and manage email tracking settings for Common Data Service.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/10/2018
+ms.date: 07/31/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Manage email tracking settings
 
@@ -46,4 +46,4 @@ Make sure you have the System Administrator or System Customizer security role o
 > |People can use categories to track emails and appointments|Default: Off. Content coming.|
 > |Allow auto-tracking on outgoing email|Default: Off. Content coming.|
 > |**Tracking between people**| |
-> |Track emails sent between people as two activities|Default: Off. Select this option to create two email activities between [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] users, one for the sender and one for the recipient.| 
+> |Track emails sent between Dynamics 365 users as two activities|Default: On. Select this option to create two email activities between [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] users, one for the sender and one for the recipient.| 

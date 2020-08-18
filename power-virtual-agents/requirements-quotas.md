@@ -1,15 +1,15 @@
 ---
-title: "Rate limits for Power Virtual Agents chatbots"
+title: "Rate limits for chatbots"
 description: "Rate limits determine how often messages can be sent to a chatbot"
-keywords: ""
-ms.date: 4/17/2020
+keywords: "PVA, quotas, rate limits, requests, restrictions"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: quotas, admin
+ms.custom: quotas, admin, ceX
 ms.collection: virtual-agent
 ---
 
@@ -37,6 +37,19 @@ If the quota for **messages to a chatbot** is met, the user chatting with the ch
 ![Error message in the chat bot window that says 'Send failed. Retry.'](media/requirements-quota-error.png "Error message in the chatbot window that says 'Send failed. Retry.'")
  
 
+## Power Automate Request limits
+As described in the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130), Power Automate usage rights are included with a Power Virtual Agents subscription. 
+
+Flows created in the [Power Virtual Agents authoring canvas](advanced-flow.md#create-a-new-flow-from-the-power-virtual-agents-authoring-canvas) have the following limits:
+
+License | Number of API requests every 24 hours
+--|--
+**Power Virtual Agents** | 15,000 per flow 	
+
+Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations)
+
+> [!NOTE]
+> For flows created in the Power Virtual Agents authoring canvas you will see the plan used listed as **Per user plan**. Regardless of what your per-user license is, the above limit will apply.
 
 
 

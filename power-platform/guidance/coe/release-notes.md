@@ -37,8 +37,6 @@ Select each version below to see release notes and updates for each component. Y
 | --------- | ---------------|
 | [1.60](release-notes/core-1.60.md) | August 14, 2020 |
 | [1.54](release-notes/core-1.54.md) | July 24, 2020 |
-| [1.53](release-notes/core-1.53.md) | July 14, 2020 |
-| [1.52](release-notes/core-1.52.md) | July 8, 2020 |
 
 ### All Governance (Compliance and Reporting) Components versions
 

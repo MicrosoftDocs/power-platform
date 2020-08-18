@@ -11,10 +11,11 @@ ms.topic: conceptual
 ms.date: 05/15/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Control user access to environments: security groups and licenses
 
@@ -81,7 +82,7 @@ In this example, four security groups provide controlled access to a specific en
   
 ## Associate a security group with a Common Data Service environment  
   
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Global admin, or Power Platform service admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.  
   
@@ -105,7 +106,7 @@ The security group is associated with the environment.
 
 ## Remove a security group's association with a Common Data Service environment
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Microsoft 365 Global admin, or Power Platform service admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Power Platform admin).
 
 2. In the navigation pane, select **Environments**, select an environment, and then select **Edit**.
 

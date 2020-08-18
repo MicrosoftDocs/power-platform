@@ -6,14 +6,15 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/07/2018
+ms.date: 07/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Web application requirements
 
@@ -42,46 +43,43 @@ Running model-driven apps on a computer that has less than the recommended requi
 
 Notice that these values are recommendations and don’t guarantee satisfactory performance. The recommended values are based on systems using out-of-the box forms that aren’t customized. If you significantly customize the out-of-box forms, we recommend that you test the form response to understand bandwidth needs. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Verify network capacity and throughput for clients](verify-network-capacity-throughput-clients.md)  
 
-<a name="SupportedOS"></a>   
+
 ## Supported versions of Internet Explorer and Microsoft Edge  
  The following table describes the [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] and [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] or [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] versions supported for use with the web application.  
 
 
-| [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] version | [!INCLUDE[pn_IE_10](../includes/pn-ie-10.md)] | [!INCLUDE[pn_ie_11](../includes/pn-ie-11.md)]<sup>3</sup> | [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)] |
+| Windows version | Internet Explorer 10 | Internet Explorer 11<sup>2</sup> | Microsoft Edge |
 |-----------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------|
-|           [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)]           |           Not supported<sup>1</sup>           |                         Supported                         |                            Supported                            |
-|          [!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)]          |           Not supported<sup>1</sup>           |                         Supported                         |                          Not supported                          |
-|             [!INCLUDE[pn_windows8](../includes/pn-windows8.md)]             |                   Limited support<sup>2</sup>                   |                 Not supported<sup>1</sup>                 |                          Not supported                          |
-|            [!INCLUDE[pn_Windows_7](../includes/pn-windows-7.md)]            |                   Limited support<sup>2</sup>                   |                         Supported                         |                          Not supported                          |
+|           Windows 10      |           Not supported<sup>1</sup>           |                         Supported                         |                            Supported                            |
+|          Windows 8.1       |           Not supported<sup>1</sup>           |                         Supported                         |                          Not supported                          |
+|             Windows 8           |                   Not supported                    |                 Not supported<sup>1</sup>                 |                          Not supported                          |
+|            Windows 7          |                   Not supported                |                         Supported                         |                          Not supported                          |
 
  <sup>1</sup> This version of [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] doesn’t support the version of [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Internet Explorer 11 – FAQ for IT Pros](https://technet.microsoft.com/library/dn268945.aspx)  <br/>
-<sup>2</sup> Supported with the classic web application. Not supported with Unified Interface apps. <br/>
-<sup>3</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics). <br/>
+<sup>2</sup> Check requirements for individual apps, such as [Customer Service Hub application requirements](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics). <br/>
 
 > [!IMPORTANT]
 >  Although you may be able to use [!INCLUDE[pn_IE_8](../includes/pn-ie-8.md)], [!INCLUDE[pn_IE_9](../includes/pn-ie-9.md)], or an [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] and [!INCLUDE[pn_ms_Windows_short](../includes/pn-ms-windows-short.md)] combination that is not supported in the previous table, those web browsers are not recommended and are not supported with this version of model-driven apps in Dynamics 365.  
 > 
 >  Using plug-ins or other third-party extensions in your browser can increase load times on pages with lists of data.  
 
-<a name="BKMK_support_nonIE"></a>   
 ## Supported non-Internet Explorer web browsers  
  The web application can run in any of the following web browsers running on the specified operating systems:  
 
-- [!INCLUDE[tn_Mozilla_Firefox](../includes/tn-mozilla-firefox.md)] (latest publicly-released version) running on [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)], [!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)], [!INCLUDE[pn_windows8](../includes/pn-windows8.md)], or [!INCLUDE[pn_Windows_7](../includes/pn-windows-7.md)]  
+- Mozilla Firefox (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, or Windows 7  
 
 - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)]
-  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on [!INCLUDE[pn_windows_10](../includes/pn-windows-10.md)], [!INCLUDE[pn_windows_8_1](../includes/pn-windows-8-1.md)], [!INCLUDE[pn_windows8](../includes/pn-windows8.md)], [!INCLUDE[pn_Windows_7](../includes/pn-windows-7.md)], or [Google Nexus](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets) tablet 
-  - Google Chrome (latest publicly-released version) running on [!INCLUDE[tn_Mac_OS_X](../includes/tn-mac-os-x.md)] 10.8 (Mountain Lion), 10.9 (Mavericks), or 10.10 (Yosemite) 
+  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, Windows 7, or [Google Nexus](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets) tablet 
+  - Google Chrome (latest publicly-released version) running on the two latest publicly-release Mac OS versions 
 
-- [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] (latest publicly-released version) running on [!INCLUDE[tn_Mac_OS_X](../includes/tn-mac-os-x.md)] 10.8 (Mountain Lion), 10.9 (Mavericks), 10.10 (Yosemite), or [Apple iPad](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets)  
+- [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] (latest publicly-released version) running on the two latest publicly-release Mac OS versions, or [Apple iPad](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets)  
 
 To find the latest release for these web browsers, visit the software manufacturer’s website.  
 
 > [!IMPORTANT]
 > - Using plug-ins or other third-party extensions in your browser can increase load times on pages with lists of data.  
-> - [!INCLUDE[tn_Mozilla_Firefox](../includes/tn-mozilla-firefox.md)] ESR (Extended Support Release) versions aren’t supported.  
+> - Mozilla Firefox ESR (Extended Support Release) versions aren’t supported.  
 
-<a name="SupportedMSOffice"></a>   
 ## Supported versions of Office  
  To use model-driven apps in Dynamics 365 with [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] integration features, such as Export to Excel and Mail Merge, you must have one of the following [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] versions on the computer that is running the web application:  
 

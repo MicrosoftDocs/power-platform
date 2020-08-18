@@ -10,10 +10,11 @@ ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Run bulk system jobs to detect duplicate records
 

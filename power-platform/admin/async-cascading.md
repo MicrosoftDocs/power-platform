@@ -3,18 +3,18 @@ title: Asynchronous processing of cascading transactions | Microsoft Docs
 description: Learn how to configure cascading operations to process asynchronously.
 services: powerapps
 author: NHelgren
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/07/2020
+ms.date: 08/12/2020
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Asynchronous processing of cascading transactions
@@ -48,17 +48,17 @@ Administrators can monitor the processing of asynchronous operations in the **Se
 1. Go to **Settings** > **System Jobs**. For unified client apps, see [Settings](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/system-jobs.png "System Jobs area")
+    > ![System Jobs area](media/system-jobs.png "System Jobs area")
  
 2. Cascading operations are displayed in the **System Jobs** view. 
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/cascade-operations-view.png "Cascade Operations view")
+    > ![Cascade Operations view](media/cascade-operations-view.png "Cascade Operations view")
 
 > [!TIP]
 > To view only cascading operations, in the **View** selector select **Cascade Operations**. 
    > [!div class="mx-imgBorder"] 
-   > ![](media/cascade-operations.png "Cascade Operations view selector") 
+   > ![Cascade Operations view selector](media/cascade-operations.png "Cascade Operations view selector") 
 
 
 Cascading operations have any one of the following statuses: 
@@ -76,13 +76,13 @@ Opening a cascading operation displays:
 - Any messages associated with the job, such as failure reasons, or exceptions.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/cascade-operation-record.png "Cascade operation record")
+    > ![Cascade operation record](media/cascade-operation-record.png "Cascade operation record")
  
 ## Which cascading transactions can be processed asynchronously?
-Assign and Delete cascading transactions can be processed asynchronously. 
+Assign, Delete, and Merge cascading transactions can be processed asynchronously. 
 
 > [!NOTE]
-> Other transactions, such as merge, share/unshare, rollup view, and re-parent are are currently under review for asynchronous processing. 
+> Other transactions, such as share/unshare, rollup view, and re-parent are are currently under review for asynchronous processing. 
 
 
 ### See also

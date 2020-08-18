@@ -10,10 +10,11 @@ ms.date: 03/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Use Email message filtering and correlation to specify which emails are tracked 
 

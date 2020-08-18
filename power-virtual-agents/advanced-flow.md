@@ -1,15 +1,15 @@
 ---
-title: "Automate Power Virtual Agents bot actions with flows"
+title: "Automate chatbot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
-keywords: ""
-ms.date: 3/18/2020
+keywords: "PVA, flow, automate"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: flow
+ms.custom: flow, ceX, advanced-authoring
 ms.collection: virtual-agent
 ---
 

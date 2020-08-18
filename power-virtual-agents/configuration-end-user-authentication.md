@@ -1,15 +1,15 @@
 ---
-title: "Configure user authentication in Power Virtual Agents"
+title: "Configure user authentication"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
-keywords: "Authentication, IdP,"
-ms.date: 1/24/2020
+keywords: "Authentication, IdP, PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authentication
+ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 

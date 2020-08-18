@@ -1,14 +1,15 @@
 ---
-title: "Download Power Virtual Agents bot sessions"
+title: "Download chatbot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
-ms.date: 5/26/2020
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis
+ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
@@ -73,19 +74,19 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
 1. In the side navigation pane, expand the **Data** node. Select **Entities**. On the top right, expand **Default** and select **All**.
 
-    ![](media/powerapps-data-entities-view.png)
+    ![Screenshot of the Power Apps window with Data and Entities selected](media/powerapps-data-entities-view.png)
 
 1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Entities**.
 
-    ![](media/export-view-transcript.png)
+    ![Screenshot showing Conversation Transcript selected](media/export-view-transcript.png)
  
 1. Select **Data** tab. Expand **Active conversationtranscripts** and then select **All fields**.
 
-    ![](media/export-view-all-fields.png)
+    ![Screenshot showing Active conversation transcripts expanded](media/export-view-all-fields.png)
  
 1. View the bot’s conversation transcripts.
 
-    ![](media/export-view-sessions.png)
+    ![Screenshot showing sample bot transcript entries](media/export-view-sessions.png)
 
 ### Export conversation transcripts
 
@@ -108,6 +109,8 @@ By default, a pre-configured bulk delete job will remove all conversation transc
 To keep the transcripts for longer, you need to disable the existing system job and create a new job.
 
 First, you'll need to sign in to [https://www.powerapps.com](https://www.powerapps.com) with your credentials.
+
+The following instructions describe how to set a job to delete transcripts that are older than 12 months.
 
 1. At the top right, open the **Settings** menu cog icon and select **Advanced settings**.
 
@@ -139,10 +142,10 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
  
 7. Create a new bulk record delete job by selecting **New** and set the following:
 
-    - Set **ConversationStartTime** as **Last x Months** to **12**
-        This will keep the transcripts for 12 months
+    - Set **ConversationStartTime** as **Older Than X Months** to **12**.  
+    This will keep the transcripts for 12 months
 
-    - Set **SchemaType** as **equals** to **powervirtualagents**
+    - Set **SchemaType** as **equals** to **powervirtualagents**.
 
         ![A popup window showing options to configure the job](media/sessions-schema.png)
  

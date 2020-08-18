@@ -10,10 +10,11 @@ ms.date: 04/22/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Analyze and share your data with Excel templates 
 

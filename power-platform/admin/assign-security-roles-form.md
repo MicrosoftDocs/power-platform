@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 09/30/2017
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Assign security roles to a form to more finely control access
 

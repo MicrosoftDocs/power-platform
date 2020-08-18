@@ -2,19 +2,19 @@
 title: Requests limits and allocations | Microsoft Docs
 description: FAQ for licensing Power Apps and Power Automate
 author: dileepsinghmicrosoft
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 08/13/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Requests limits and allocations
 
@@ -22,7 +22,7 @@ Effective October 2019, to help ensure service levels, availability and quality,
 
 ## What is a Microsoft Power Platform request?
 
-Requests in Microsoft Power Platform consist of various actions which a user makes across various products. At a high level, below is what constitute an API call:
+Requests in Microsoft Power Platform consist of various actions which a user makes across various products. At a high level, below is what constitute an API request:
 
 - **Connectors** – all API requests to connectors from Power Apps or Power Automate
 
@@ -53,7 +53,7 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 
 <sup>2</sup>Dynamics 365 Professional includes Dynamics 365 Sales Professional, Dynamics 365 Customer Service Professional.
 
-<sup>3</sup>See **Appendix D** for Microsoft 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+<sup>3</sup>See **Appendix C** for Microsoft 365 licenses that include Power Apps and Power Automate capabilities in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 
 Users who are running apps and flows without a user license through the Power Apps per app plan or flows licensed through the Power Automate per flow plan are granted the following API request entitlement.
@@ -149,7 +149,7 @@ No. All the Power Platform request entitlements are calculated on a rolling 24-h
 
 ### Will the requests generated from async workflows and plug-ins in Common Data Service count against the request limits?
 
-Yes, if these requests are making CrUD, assign, or share&ndash;type calls, they will count. However, calls generated internally from the platform aren't going to be counted.
+Yes, if these requests are making CrUD, assign, or share&ndash;type requests, they will count. However, requests generated internally from the platform aren't going to be counted.
 
 ### See also
 [Common Data Service API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)

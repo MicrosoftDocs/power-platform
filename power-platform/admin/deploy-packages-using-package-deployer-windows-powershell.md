@@ -12,9 +12,11 @@ ms.author: matp
 manager: brycho
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
+  - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Deploy packages using Package Deployer and Windows PowerShell
 

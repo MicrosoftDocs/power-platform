@@ -10,10 +10,11 @@ ms.date: 11/20/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Block access by location with Azure AD Conditional Access
 
@@ -55,7 +56,7 @@ Block access by location is set using Azure Active Directory (AD) Conditional Ac
    For **Step 6. Under Cloud apps or actions**, select the Common Data Service application.
 
   > [!div class="mx-imgBorder"] 
-  > ![](media/restrictedip-cds.png "Restricted IP Common Data Service cloud app")
+  > ![Restricted IP Common Data Service cloud app](media/restrictedip-cds.png "Restricted IP Common Data Service cloud app")
 
 ### See also  
  [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)   

@@ -10,10 +10,11 @@ ms.date: 09/30/2017
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # About the Microsoft Cloud Australia datacenter
  If you’re an existing Power Apps customer with a billing address mapping to a new data center region, review the information in this topic to understand the move process.  

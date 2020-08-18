@@ -1,19 +1,20 @@
 ---
 title: "Opt in to early access updates  | MicrosoftDocs"
 description: Opt in to early access updates in Power Platform and Dynamics 365 
-author: jimholtz
-manager: kvivek
+author: angelmarshall
+ms.author: angelmarshall
+ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/24/2020
-ms.author: jimholtz 
+ms.date: 07/07/2020
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Opt in to early access updates 
 
@@ -61,11 +62,13 @@ The early access updates are available for all types of environments, including 
 
    > [!div class="mx-imgBorder"] 
    > ![Manage opt-in update](media/update-manage.png "Manage opt-in update")
+   > <br />An example screenshot. May not be current wave. 
 
 4. Select **Update now**, and then proceed through the confirmation dialog boxes to enable the new features and capabilities of the release wave.  
  
    > [!div class="mx-imgBorder"] 
    > ![Opt-in update now](media/new-update.png "Opt-in update now")
+   > <br />An example screenshot. May not be current wave. 
 
 5. After the update is complete, all early access features will be enabled for your model-driven apps in your environment.  
 
@@ -83,8 +86,8 @@ Some apps require additional steps to enable early access features. If you have 
 |Dynamics 365 Marketing     | Run the Marketing setup wizard to update your environment. This will install both the new release for production updates and the early access features when you run it on an environment where early access is enabled. For instructions, see [Rerun the Dynamics 365 Marketing setup wizard](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/re-run-setup).          |
 |Dynamics 365 Field Service     | If you have Dynamics 365 Field Service version 8.8.6.0 or newer, you'll automatically receive the early access updates. If you're running on an older version of the Field Service app, you'll need to perform an upgrade. See [Upgrade Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/upgrade-field-service).        |
 |Dynamics 365 Project Service Automation     | If you have Dynamics 365 Project Service Automation version 3.10.2.0 or newer, you'll automatically receive the early access updates. If you're running on an older version of the Project Service app, you'll need to perform an upgrade. See [Upgrade home page](https://docs.microsoft.com/dynamics365/project-service/upgrade-psa-home-page).        |
-| Dynamics 365 Resource Scheduling Optimization | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Dynamics 365 admin center. For instructions, see [Update RSO](https://docs.microsoft.com/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization) and [Deploy RSO](https://docs.microsoft.com/dynamics365/field-service/rso-deployment).
-| Dynamics 365 Customer Service Team Member  | Customer Service Team Member is a new app module. Users with a Dynamics 365 Team Member license can opt in for early access to the Customer Service Team Member app. The app is not automatically available and needs to be manually installed.  For instructions, see [Customer Service Team Member](https://docs.microsoft.com/dynamics365/customer-service/customer-service-team-member).  |
+| Dynamics 365 Resource Scheduling Optimization | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Dynamics 365 admin center. For instructions, see [Update RSO](https://docs.microsoft.com/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization) and [Deploy RSO](https://docs.microsoft.com/dynamics365/field-service/rso-deployment). |
+
 
 > [!IMPORTANT]
 > Be sure to enable the early access updates in the Power Platform admin center first. If you run the Dynamics 365 Marketing setup wizard to update your Marketing app to a new release wave before activating the early access updates in the Power Platform admin center, you must [run the Dynamics 365 Marketing setup wizard again](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/re-run-setup) after opting in to install and enable the early access features. 
@@ -107,7 +110,7 @@ To verify that a release wave is enabled, open the environment, go to **Settings
 
 |In Unified Interface  |In the web client interface  | 
 |---------|-------|
-|![Opt-in status](media/update-status.png "Opt-in status")        | ![Opt-in status webclient](media/update-status-webclient.png "Opt-in status webclient")        |
+|![Opt-in status](media/update-status.png "Opt-in status")<br /> An example screenshot. May not be current wave.        | ![Opt-in status webclient](media/update-status-webclient.png "Opt-in status webclient") <br /> An example screenshot. May not be current wave.         |
 
 > [!NOTE]
 > You need to select **About** from a Dynamics 365 apps page that's displayed in the [Unified Interface](about-unified-interface.md), such as Sales Hub or Customer Service Hub pages. 
@@ -163,18 +166,19 @@ See [Early access availability](#early-access-availability).
 ### How do I report issues with updates? 
 Create a [support ticket](https://dynamics.microsoft.com/support/). 
 
-### Can I skip an update? 
-No. To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release.
+### Can I skip or postpone an update? 
+No. To ensure you get the best quality of the new features and capabilities, all customers are required to update to the latest release as scheduled. 
 
 ### What happens to the environments after a release wave becomes generally available? 
 If you've enabled the early access updates in your environments, you'll continue to get updates throughout the release wave. 
 
-If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave.
+If you didn't opt in for the early access updates in your environments, after a release wave is generally available, all environments will be automatically turned on to receive mandatory updates of the release wave.  For regional deployment, see [General availability deployment](https://docs.microsoft.com/power-platform/admin/general-availability-deployment)
  
 Throughout a release wave, your environments will be updated during one of the [maintenance windows](policies-communications.md#maintenance-timeline) over a weekend based on your environments' region. The specific dates when the updates will occur will be published to the [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide). Each notification will include the dates, the maintenance window, and the Release Plan reference for the list of optimizations, fixes, and enhancements. Each environment should see the new features and build numbers by Monday morning, local time.
 
 See [Policies and communications](policies-communications.md#scheduled-system-updates). 
 
+<!--
 #### Deployment schedule
 
 > [!IMPORTANT]
@@ -192,6 +196,7 @@ The following is the updated schedule for when the 2020 release wave 1 features 
 |GCC<br />GCC High<br />DOD  |Friday, May 29th – Sunday, May 31st <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md).          |
 
 During the general availability deployment, your environments will be updated with the latest features and functionality automatically applied to Dynamics 365 applications and Power Platform. It will not require any action from you.  
+-->
 
 ### See also
 [Dynamics 365 release schedule and early access ](https://docs.microsoft.com/dynamics365/get-started/release-schedule)<br />

@@ -10,10 +10,11 @@ ms.date: 06/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Embed an app in Microsoft Teams
@@ -28,7 +29,7 @@ Individuals can share an app they've created in Power Apps in a Team they are a 
 ## Prerequisites
 
 - [Have a Power Apps license](pricing-billing-skus.md)
-- Be a Power Platform service admin 
+- Be a Power Platform admin 
 - Created a canvas app
 
 ## Locate your app's GUID

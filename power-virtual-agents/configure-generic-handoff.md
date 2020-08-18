@@ -1,24 +1,24 @@
 ---
-title: "Configure Power Virtual Agents to hand off bot conversations to any generic engagement hub"
+title: "Hand off chatbot conversations to any generic engagement hub"
 description: "Guidance to hand off a bot conversation to any generic engagement hub"
-keywords: "human handoff, generic handoff, generic engagement hub support"
-ms.date: 4/17/2020
+keywords: "human handoff, generic handoff, generic engagement hub support, PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: handoff
+ms.custom: handoff, ceX
 ms.reviewer: pawant
 ms.collection: virtual-agent
 ---
 
-# Configure hand-off to any generic engagement hub
+# Configure hand off to any generic engagement hub
 
 Power Virtual Agents lets you hand over bot conversations seamlessly and contextually to a human agent through an engagement hub. 
 
-With some custom development, you can configure your bot to hand-off conversations to any engagement hub. This guide describes how you can do this.
+With some custom development, you can configure your bot to hand off conversations to any engagement hub. This guide describes how you can do this.
 
 ## Prerequisites
 - You need to have [built a bot using Power Virtual Agents](authoring-first-bot.md)  
@@ -34,7 +34,7 @@ With some custom development, you can configure your bot to hand-off conversatio
 
   ![ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW](media/generic-adapter-illustration.png "ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW")
 
-A full hand off to an engagement hub follows this pattern:
+A full hand-off to an engagement hub follows this pattern:
 
 1. An end user interacts with the engagement hub's chat canvas.
 

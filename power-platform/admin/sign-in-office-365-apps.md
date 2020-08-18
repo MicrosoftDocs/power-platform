@@ -2,18 +2,18 @@
 title: "Sign in to Dynamics 365 and Office apps  | MicrosoftDocs"
 description: Sign in to Dynamics 365 and Office apps 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/08/2020
+ms.date: 07/16/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Sign in to Dynamics 365 and Office apps
 
@@ -32,19 +32,15 @@ For admins and end users, when you sign in to https://office.com, you will see a
 > [!div class="mx-imgBorder"] 
 > ![Office tile page](../admin/media/office-365-welcome-page.png "Office tile page")  
   
- Select the Dynamics 365 apps tile to go to the Dynamics 365 home page. See [For admins and end users: Introducing the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md#BKMK_IntroD365HomePage).  
+Select the Dynamics 365 apps tile to go to the Dynamics 365 home page.   
   
- If you're a system administrator, you'll see an **Admin** tile. Select this tile to get to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], where you can see your service health, manage users, manage licenses, and more for all the online services associated with your account.  
+If you're a system administrator, you'll see an **Admin** tile. Select this tile to get to the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], where you can see your service health, manage users, manage licenses, and more for all the online services associated with your account.  
   
- ![Admin tile](../admin/media/admin-tile-office-365-welcome-page.png "Admin tile")  
+From there, you can get to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)]. Select **Show all** > **All admin centers** > **Dynamics 365**.  
+   
+For other ways to access Dynamics 365 and Office apps, see [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md).  
   
- From there, you can get to the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)]. Select **Admin centers** > **Dynamics 365**.  
-  
- ![Dynamics 365 apps option in the Admin center drop-down list](../admin/media/click-admin-centers-dynamics-365.png "Dynamics 365 apps option in the Admin center drop-down list")  
-  
- For other ways to access Dynamics 365 and Office apps, see [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md).  
-  
-
+<!-- 
 <a name="BKMK_DirectAdminCenter"></a>   
 
 ## Direct sign in to the Dynamics 365 Administration Center  
@@ -73,7 +69,7 @@ For admins and end users, when you sign in to https://office.com, you will see a
 2. Sign in with your admin credentials.  
   
 <a name="BKMK_DirectHomePage"></a>   
-
+-->
 
 ## Direct sign in to the Dynamics 365 home page  
 **Your business apps are moving**
@@ -85,6 +81,7 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
 
 <a name="BKMK_directsignin"></a>   
 
+<!-- 
 ## Direct sign in to Dynamics 365 apps 
  To directly sign in to the Dynamics 365 service, use:  
   
@@ -110,7 +107,7 @@ After October 1, 2020, when users navigate to https://home.dynamics.com, they wi
  Your user name depends on whether your organization uses the standard [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] domain (for example, username@contoso.onmicrosoft.com) or you have a custom domain (for example, username@contoso.com).  
   
  Administrators can provide the URL and sign-in information.  
-
+-->
 ### See also  
  [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   
 

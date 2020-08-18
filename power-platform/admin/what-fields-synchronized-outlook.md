@@ -10,10 +10,11 @@ ms.date: 08/31/2017
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # What fields can be synchronized with Outlook?
 

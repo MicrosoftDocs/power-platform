@@ -10,10 +10,11 @@ ms.date: 04/15/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # What are Preview features, and how do I enable them? 
 

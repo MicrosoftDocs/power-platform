@@ -10,10 +10,11 @@ ms.date: 02/27/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Edit properties of an environment 
 
@@ -28,7 +29,7 @@ Administrators can edit properties of an environment, such as the friendly name,
 3. Select **Edit**.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/select-edit.png "Select Edit")
+   > ![Select Edit](media/select-edit.png "Select Edit")
 
 4. Select any of the following field values that you want to change.  
   
