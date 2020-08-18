@@ -155,7 +155,7 @@ No, tenant-level entitlements are shared across all application users, non-inter
 
 ### Will the requests generated from async workflows and plug-ins in Common Data Service count against the request limits?
 
-Yes, if these requests are making CRUD, assign or share type of calls, they would count.
+Yes, if these requests are making CrUD, assign, or share&ndash;type requests, they will count. However, requests generated internally from the platform aren't going to be counted.
 
 ### See also
 [Common Data Service API limits overview](https://docs.microsoft.com/powerapps/maker/common-data-service/api-limits-overview)
