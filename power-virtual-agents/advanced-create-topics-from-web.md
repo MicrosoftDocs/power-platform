@@ -85,6 +85,10 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 The tool provides explicit feedback about errors so that you can understand and address any issues. For example, you might be unable to extract content because the site you're referencing is down or it may be gated behind a user login, such as a SharePoint page.
 
+![A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details.](media/suggested-web-error-bar.png "A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details.")
+
+![A pop-up window that describes the errors encountered when trying to get suggestions from a web page.](media/suggested-web-error-detail.png "A pop-up window that describes the errors encountered when trying to get suggestions from a web page.")
+
 After you've successfully extracted content, a number of suggestions will appear. You can now review these suggestions to see which ones you want to add to your bot.
 
 ![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received](media/suggested-web-topics.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
