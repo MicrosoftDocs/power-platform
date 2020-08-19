@@ -67,22 +67,11 @@ When you create chatbots, you need to think about the sorts of questions someone
 
     You can also create a bot by going to the **Chatbots** tab, selecting the team you want to use, and then **New chatbot**.
 
-2. Next, you’ll choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
-    Your bot is created in the default Power Apps environment that was created for you when you signed up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, you can do so by expanding the **More options** menu and selecting a different environment.
-
-   > [!NOTE] 
-   > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location-teams.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with **Region** set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience-teams.md).
 
    ![Name the new bot](media/create-new-bot-screen-teams.png)
    
 
-3.	Once you select **Create**, the process of creating the first bot within a new environment can take up to 15 minutes. Subsequent bots will be created much faster. 
-
-4. After a few minutes, you’ll land on the home page and have an opportunity to play around with the bot in read-only mode. You can't save any edits during this time, but you can explore the overall user interface, look at the topics, experiment with the preloaded User Topics and System Topics, and interact with your bot using the Test Canvas. During this time, you can review additional documentation on authoring topics in your bot. See [Authoring key concepts](authoring-fundamentals-teams.md).
-   
-
-5. When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify any User or System topic, test out your content changes, or deploy your bot.
 
 
 ## Create a topic

@@ -15,6 +15,14 @@ ms.collection: virtual-agent
 
 # Assign licenses and manage access to Power Virtual Agents
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Online portal (https://powerva.microsoft.com)](requirements-licensing.md)
+> - [Teams (online or app)](teams/requirements-licensing-teams.md)
+
+<!-- what are the licensing differences for teams use?-->
+
 To create and manage bots with Power Virtual Agents, you need:
 
 - A license for each user, also known as a "per user license."

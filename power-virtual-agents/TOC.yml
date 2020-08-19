@@ -1,4 +1,4 @@
-- name: Power Virtual Agents overview
+- name: Power Virtual Agents introduction
   href: fundamentals-what-is-power-virtual-agents.md
 - name: Community help and support
   href: fundamentals-support.md
@@ -232,15 +232,8 @@
          href: teams/customize-default-canvas-teams.md
        - name: Enable and configure Bot Framework Skills
          href: teams/configuration-add-skills-teams.md
-    - name: Respond to GDPR Data Subject Rights (DSR) requests
-      items:
-       - name: Key concepts - GDPR compliance
-         href: teams/gdpr-summary-teams.md
-       - name: Requests to export and download data
-         href: teams/gdpr-export-teams.md
-       - name: Requests to delete data
-         href: teams/gdpr-delete-teams.md
-       - name: Requests to discover data
-         href: teams/gdpr-discovery-teams.md
+    - name: GDPR compliance
+      href: teams/gdpr-summary-teams.md
+
 
 

@@ -15,68 +15,27 @@ ms.collection: virtual-agent
 
 # Assign licenses and manage access to Power Virtual Agents in Teams
 
-To create and manage bots with Power Virtual Agents, you need:
+Select the version of Power Virtual Agents you're using here:
 
-- A license for each user, also known as a "per user license."
-- A license for your organization, also known as a "tenant license." 
+> [!div class="op_single_selector"]
+> - [Online portal (https://powerva.microsoft.com)](../requirements-licensing.md)
+> - [Teams (online or app)](requirements-licensing-teams.md)
 
->[!NOTE]
->Users of your bot don't need a special license. After you publish your bot, anyone who can access where you published the bot can interact with the bot.
+To create and manage Power Virtual Agents chatbots in Teams, you need:
 
-More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130)
-
-> [!NOTE]
-> To acquire a Power Virtual Agents user license, you need to use the non-preview version of the admin center. Ensure the **Try the new admin center** setting is turned off.
-  
->[!IMPORTANT]
->If you purchase a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant license and a user licenses through that channel, preferably as part of a single transaction.
-  
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [A license to use Teams](/MicrosoftTeams/user-access)
+- [Licenses to use Power Virtual Agents](../requirements-licensing.md)
 
 
-## Buy a tenant license
+If you can access Teams, and if you can add the Power Virtual Agents app, then it's likely you already have all the necessary licenses. Users of your bot will also need to access Teams, but you can't add users to a team unless they already have access to Teams as a whole.
 
-Purchase licenses for your organization by going to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx). You'll need to sign in with an admin account to buy licenses.
+If you need more information about licenses, see the following topics:
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
+- [Manage user access to Teams](/MicrosoftTeams/user-access)
+- [Assign licenses and manage access to Power Virtual Agents](../requirements-licensing.md)
 
-2. On the navigation pane, expand the **Billing** menu, and then select **Purchase services**.
 
-3. Search for **Power Virtual Agents license**, and complete the checkout process.
-
-## Acquire user licenses
-
-1. After you've purchased a Power Virtual Agents license from the Microsoft 365 Admin Center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
-
-2. Scroll down to the **Add-ons** section.
-
-3. Look for **Power Virtual Agents User License**. Select the number of licenses you need, and complete the checkout process.
-
->[!IMPORTANT]
->If you purchased a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant licence and user licenses through that channel, preferably as part of a single transaction.
-
-## Assign licenses to users
-
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
-
-2. On the navigation pane, expand the **Users** menu, and then select **Active users**.
-
-    ![Expand Users, and then select Active users](media/licensing-menu-users-teams.png "Expand Users, and then select Active users")
-
-3. Select a name, and then select **Manage product licenses**.
-
-   ![Select a user, and then manage product licenses](media/licensing-manage-teams.png "Select a user, and then manage product licenses")
-
-4. On the flyout panel, select the check box next to **Power Virtual Agents user license**, and then select **Save changes**. 
-
-Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
-
-  > [!NOTE]
-  > To simplify user license management, you can assign licenses to an Azure Active Directory (Azure AD) security group. More information: [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
-
-The users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
+<!-- are trial plans affected? can you have a trial plan and a teams plan? also, what licenses are required for using PVA in teams - we should call out cds lite etc. are subscription/power automate capacities also applicable for teams?-->
 
 ## Trial plans
 
