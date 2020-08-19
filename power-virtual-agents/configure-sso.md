@@ -21,8 +21,7 @@ Power Virtual Agents supports single sign-on (SSO), which means chatbots can sig
 
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to).
 
-
-
+[!IMPORTANT] Single sign-on (SSO) is only supported for Azure Active Directory (AAD) today. Other account types such as Microsoft Account or other OAuth accounts cannot have SSO configured in Power Virtual Agents. We are working to bring SSO to other authentication providers in the future.
 
 
 ## Prerequisites
