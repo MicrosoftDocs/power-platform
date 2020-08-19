@@ -2,7 +2,7 @@
 title: "Use chatbot variables to carry content across topics"
 description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 8/19/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -86,7 +86,11 @@ After the customer answers the question, the bot will resume the "Appointment bo
 
 ## Bot variable behavior when implementing Power Automate flows
 
-Sometimes, you might use a flow or Skill to initialize or fill in a variable. However, you may find you also want to initialize the variable in another way at a different point in the conversation, or you may have already set the output variables of the flow or Skill. In this case, the flow or Skill will still run, and it will fill in that variable, overwriting what it has previously been filled in with.
+Sometimes, you might use a flow or Skill to initialize or fill in a variable in a chatbot.
+
+When a user interacts with the chatbot, however, the variable might be filled in at an earlier point in the conversation, or you may have [already set the variables externally](authoring-variables-bot.md#set-a-bot-variables-value-from-external-sources). 
+
+In this situation, the flow or Skill will still run and fill in the variable, overwriting whatever was previously stored in the variable.
  
 ## Set a bot variable's value from external sources
 
