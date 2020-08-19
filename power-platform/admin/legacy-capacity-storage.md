@@ -1,7 +1,7 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 08/13/2020
+ms.date: 08/19/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
@@ -25,10 +25,10 @@ We're rolling out this feature now so check back if your user experience varies 
 
 The following licenses provide capacity using the legacy storage model. If you have any of the following licenses and none of the new model licenses, you'll see the legacy model report: 
 
-- Microsoft Dynamics CRM Online Additional Non-production Instance 
-- Microsoft Dynamics CRM Online Additional Test Instance 
-- Microsoft Dynamics CRM Online Instance 
-- Microsoft Dynamics CRM Online Storage Add-On 
+- Microsoft Dynamics 365 Additional Non-production Instance 
+- Microsoft Dynamics 365 Additional Test Instance 
+- Microsoft Dynamics 365 Instance 
+- Microsoft Dynamics 365 Storage Add-On 
 
 To see whether you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Licenses**.
 
