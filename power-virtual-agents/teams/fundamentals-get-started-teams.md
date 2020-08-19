@@ -43,9 +43,29 @@ When you create chatbots, you need to think about the sorts of questions someone
 
 ## Create your first bot
 
-1.	Go to [https://aka.ms/TryPVA](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Try preview**, and then sign in with your work email address. Note that personal Microsoft accounts aren't currently supported.
+1.	Open Microsoft Teams and select **Apps** at the bottom of the side navigation pane.
+2.  Under **Apps**, in the search bar, search for *Power Virtual Agents*, and select the tile that appears.
 
-    
+    ![Add the Power Virtual Agents app to Teams](media/quickstart-add-app-teams.png "Add the Power Virtual Agents app to Teams")
+
+3. Right-click on the Power Virtual Agents tab, and select **Pin** to make it easier to get back to the app if you navigate away.
+
+    ![Right-click to pin the app to the navigation pane](media/quickstart-pin-app.png "Right-click to pin the app to the navigation pane")
+
+3. Select **Start now** on the **Home** tab.
+
+    ![Select Start now](media/quickstart-start-now.png "Select Start now")
+
+4. Select the team for your bot, and then **Continue**. Only members of that team will be able to see or interact with the bot. You might want to [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels) and make sure it is public if you want everyone in your organization to access it.
+
+    ![Screenshot of the screen asking to choose the team for the bot](media/quickstart-add-to-team.png "Screenshot of the screen asking to choose the team for the bot")
+
+    >[!NOTE]
+    >If you're the first person to create a bot in the team you choose, it will take a little bit longer to create and set up the bot. You'll see a notice describing this when you choose your team.
+
+    A loading screen will show up. You can close the screen while things are being set up, so you can keep using Teams. When your bot is ready, you'll see an alert.
+
+    You can also create a bot by going to the **Chatbots** tab, selecting the team you want to use, and then **New chatbot**.
 
 2. Next, you’ll choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
