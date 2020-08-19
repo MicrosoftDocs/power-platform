@@ -35,10 +35,8 @@ Power Virtual Agents is available as both a standalone web service, and as a dis
 
 Power Virtual Agents version | Use cases | More information
 -- | -- | --
-Online web service at https://powerva.microsoft.com | <ul><li>You're an IT admin and want to create bots for your customers to engage with</li><li>You've used chatbot services in the past, and want to trial or test Power Virtual Agents</li><li>You're familiar with advanced chatbot concepts, such as entities and variables, and want to create complex chatbots</li></ul> | <div class="nextstepaction">[Get started now](fundamentals-what-is-power-virtual-agents-portal.md)</div>
-Microsoft Teams app | <ul><li>You're an employee or member of an organization or team and want to create chatbots to answer common questions posed by other employees or teammates</li><li>You want to use advanced concepts, such as entities and variables, but have the chatbot available only internally</li><li>You want to create and distribute a chatbot in the shortest time possible</li></ul> | [Power Virtual Agents in Teams overview](teams/fundamentals-what-is-power-virtual-agents-teams.md)
-
-<div class="nextstepaction"><a href=fundamentals-what-is-power-virtual-agents-portal>Get started now</a></div>
+Online web service at https://powerva.microsoft.com | <ul><li>You're an IT admin and want to create bots for your customers to engage with</li><li>You've used chatbot services in the past, and want to trial or test Power Virtual Agents</li><li>You're familiar with advanced chatbot concepts, such as entities and variables, and want to create complex chatbots</li></ul> | <div class="nextstepaction">[Get started with Power Virtual Agents web service](fundamentals-what-is-power-virtual-agents-portal.md)</div>
+Microsoft Teams app |<ul><li>You're an employee or member of an organization or team and want to create chatbots to answer common questions posed by other employees or teammates</li><li>You want to use advanced concepts, such as entities and variables, but have the chatbot available only internally</li><li>You want to create and distribute a chatbot in the shortest time possible</li></ul> |  <div class="nextstepaction">[Get started with Power Virtual Agents in Teams](teams/fundamentals-what-is-power-virtual-agents-teams.md)</div>
 
 
 >[!NOTE]

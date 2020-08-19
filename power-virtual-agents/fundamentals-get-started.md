@@ -9,7 +9,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, portal
+ms.custom: fundamentals, portal, ceX
 ms.collection: virtual-agent
 ---
 
@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Teams (online or app)](teams/fundamentals-get-started-teams.md)
 
 
-Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience—all without the need for data scientists or developers. 
+Power Virtual Agents empowers teams to quickly and easily create powerful bots using a guided no-code graphical experience - all without the need for data scientists or developers. 
 
 This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it’s been deployed. 
 
@@ -30,11 +30,6 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 > 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLcX ]
 > 
-
->[!IMPORTANT]
->Creating a simple or test bot works differently if you're using Power Virtual Agents in Teams.
->For example, you can't use emojis in Teams.
->See [the Teams version of this topic](teams/fundamentals-get-started-teams.md) for more details.
 
 
 ## Prerequisites

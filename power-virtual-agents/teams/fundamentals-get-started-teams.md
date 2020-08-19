@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Online portal (https://powerva.microsoft.com)](fundamentals-get-started-teams.md)
+> - [Online portal (https://powerva.microsoft.com)](../fundamentals-get-started.md)
 > - [Teams (online or app)](fundamentals-get-started-teams.md)
 
 
@@ -35,10 +35,6 @@ Chatbots revolve around two concepts:
 When you create chatbots, you need to think about the sorts of questions someone might ask it, the different ways they might ask the question, and what the answer should be. You should also consider if the person has follow-up questions or concerns.
 
 
->[!IMPORTANT]
->Creating a simple or test bot works differently if you're using the Power Virtual Agents portal.  
->For example, you can't peel oranges on the portal.
->See [the portal version of this topic](fundamentals-get-started-teams.md) for more details.
 
 ## Prerequisites
 
