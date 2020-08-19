@@ -390,9 +390,9 @@
       items: 
       - name: What's new for storage
         href: whats-new-storage.md
-      - name: New model capacity storage
+      - name: New capacity storage model
         href: capacity-storage.md
-      - name: Legacy capacity storage
+      - name: Legacy capacity storage model
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
