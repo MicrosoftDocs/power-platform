@@ -208,6 +208,13 @@ There are times when you need to update an existing managed solution. To learn m
 ## Remove an unmanaged layer from a managed chatbot 
 Managed and unmanaged solutions exist at different levels within a Common Data Service environment. To learn more, go to [Solution layers](/powerapps/maker/common-data-service/solution-layers).
 
+A managed component (for example, topic, flow) gets an unmanaged layer when you edit it. This unmanaged active layer lies on top of all other layers coming from the different solutions containing this component. The layer on top always wins; hence you cannot see the new changes coming from new deployments. To avoid this issue, Microsoft introduced a new feature called **See solution layers**, where you can see all solutions where this component is part of it. You can see one “Active” solution on top of all solutions if you would have changed something directly on the instance. To get rid of the unmanaged customizations on the managed component you have to do the following, 
+1. Select **See solution layers** under the ... menu next to the component name.
+<Add the image solution layer image here>
+2. In the Solution layer page, select the unmanaged layer and then select the **Remove unmanaged layer** to remove the layer. 
 
+##Known limitations
+If your bot has a large number of components (for example, 250+ topics, 100+ entities), exporting a bot using Power Apps portal may takes a long time or fail. We recommend you to use the classic Power Apps portal.
+<Add the image classic UI>  
 
  
