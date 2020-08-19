@@ -1,7 +1,7 @@
 ---
-title: "Overview"
-description: "It's easy to use Power Virtual Agents and start solving problems with its AI-driven natural language processing - without needing to know or deploy any code."
-keywords: "PVA"
+title: "Overview of Power Virtual Agents web service"
+description: "Use Power Virtual Agents and start solving problems with its AI-driven natural language processing - without needing to know or deploy any code."
+keywords: "PVA, portal"
 ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
@@ -9,27 +9,25 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, ceX
+ms.custom: fundamentals, ceX, portal
 ms.collection: virtual-agent
 ---
 
 
 
 
-# Power Virtual Agents overview
+# Power Virtual Agents web service
 
 >[!IMPORTANT]
 >See the [Important information](#important-information) section for specific usage details.
 
-Power Virtual Agents lets you create powerful chatbots that can answer questions posed by your customers, other employees, or visitors to your website or service. 
+Select the version of Power Virtual Agents you're using here:
 
-These bots can be created with guided, no-code graphical interface - and without the need for data scientists or developers. Some of the ways that Power Virtual Agents bots have been used include:
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](fundamentals-what-is-power-virtual-agents-portal.md)
+> - [Teams (online or app)](teams/fundamentals-what-is-power-virtual-agents-teams.md)
 
-- COVID-19 infection rate and tracking information
-- Sales help and support issues
-- Opening hours and store information
-- Employee health and vacation benefits
-- Common employee questions for businesses
+Power Virtual Agents lets you create powerful chatbots that can be created with a guided, no-code graphical interface - and without the need for data scientists or developers. 
 
 The benefits of using a no-code graphical interface help to:
 
@@ -44,6 +42,8 @@ Using Power Virtual Agents, you can:
 - **Empower your teams** by allowing them to easily build bots themselves without needing intermediaries, or coding or AI expertise.
 - **Reduce costs** by easily automating common inquiries and freeing human agent time to deal with more complex issues.
 - **Improve customer satisfaction** by allowing customers to self-help and resolve issues quickly 24/7 using rich personalized bot conversations. 
+
+You can read more about Power Virtual Agents, or get started creating bots now at the following link:
 
 > [!div class="nextstepaction"]
 > [Get started now](https://aka.ms/trypva)

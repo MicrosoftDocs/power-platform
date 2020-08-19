@@ -1,75 +1,45 @@
 ---
-title: "Overview for Teams"
-description: "It's easy to use Power Virtual Agents and start solving problems with its AI-driven natural language processing - without needing to know or deploy any code."
-keywords: "PVA"
-ms.date: 8/3/2020
+title: "Overview of Power Virtual Agents in Teams"
+description: "Use Power Virtual Agents in Teams to create chatbots for fellow employees or team members."
+keywords: "PVA, teams"
+ms.date: 8/19/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals, ceX
+ms.custom: fundamentals, ceX, teams
 ms.collection: virtual-agent
 ---
 
 
 
 
-# Power Virtual Agents overview in Teams
+# Power Virtual Agents in Teams
 
 >[!IMPORTANT]
 >See the [Important information](#important-information) section for specific usage details.
 
-Power Virtual Agents lets you create powerful chatbots that can answer questions posed by your customers, other employees, or visitors to your website or service. 
+Select the version of Power Virtual Agents you're using here:
 
-These bots can be created with guided, no-code graphical interface - and without the need for data scientists or developers. Some of the ways that Power Virtual Agents bots have been used include:
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../fundamentals-what-is-power-virtual-agents-portal.md)
+> - [Teams (online or app)](fundamentals-what-is-power-virtual-agents-teams.md)
 
-- COVID-19 infection rate and tracking information
-- Sales help and support issues
-- Opening hours and store information
-- Employee health and vacation benefits
-- Common employee questions for businesses
+Power Virtual Agents lets you create powerful chatbots, right in Microsoft Teams, that can answer questions posed by other employees or team members.
 
-The benefits of using a no-code graphical interface help to:
+For example, you could create a bot that answers questions people might have about their benefits, or whether conference rooms are open, or what they need to know before returning to their workplace.
 
-- Eliminate the gap between subject matter experts and development teams building the bots
-- Reduce the time from when bot builders and owners recognize an issue to when it can be updated
-- Remove the need to understand complex conversational AI systems and methodologies
-- Simplify the need for complex code
-- Minimize the IT effort needed to deploy and maintain a custom conversational solution
+With Power Virtual Agents in teams you can:
 
+- [Create bots in seconds](authoring-fundamentals-teams.md)
+- Have bots [take actions on someone's behalf](advanced-fundamentals-teams.md)
+- [Review and analyze the performance of the bot](analytics-overview-teams.md), such as what questions are being asked the most, and how effective the bot is at understanding and answering questions
 
-Using Power Virtual Agents, you can: 
-- **Empower your teams** by allowing them to easily build bots themselves without needing intermediaries, or coding or AI expertise.
-- **Reduce costs** by easily automating common inquiries and freeing human agent time to deal with more complex issues.
-- **Improve customer satisfaction** by allowing customers to self-help and resolve issues quickly 24/7 using rich personalized bot conversations. 
+For more information about how to create chatbots and what they can do, see the [Get started with Power Virtual Agents in Teams topic](fundamentals-get-started-teams.md). 
 
-> [!div class="nextstepaction"]
-> [Get started now](https://aka.ms/trypva)
-
-
-## Highlights of Power Virtual Agents
-
-1. **Get started in seconds**. Power Virtual Agents is a software-as-a-service (SaaS) offering. It allows you to easily sign up, create your bot, and embed it into your website with just a few clicks. There’s no infrastructure to maintain or complex systems to deploy. 
-
-2. **Empower your subject matter experts**. Using Power Virtual Agents, you are in the driver's seat. Your SMEs can create bots quickly and easily using a **novel, intuitive, code-free graphical interface**, eliminating the need for AI expertise or teams of developers.
-
-    ![No-code interface](media/overview-no-code-teams.png)
-
-3. **Enable rich, natural conversations.** Microsoft’s powerful conversational AI capabilities enable your end users to have rich multi-turn conversations that quickly guide them to the right solution. And, unlike most products on the market, there’s no need to retrain AI models. Simply provide a few short examples of the topic you want the bot to handle, build the conversation using our graphical editor and your bot is ready to handle customer requests about it. You can even try out your changes in real-time in the test pane!
-
-   ![Natural conversation with a bot](media/overview-conversation-teams.png)
- 
-4. **Enable bots to take action.** Bots that can chat with your users are great, but bots that can act on their behalf are even better. With Power Virtual Agents, you can easily integrate with services and back-end systems out-of-the-box or through hundreds of easy-to-add custom connectors using Power Automate. This makes it simple to create a bot that not only responds to the user, but also takes action on their behalf.
- 
-    ![Bot actions](media/overview-actions-teams.png)
-
-5. **Monitor and improve bot performance.** Power Virtual Agents lets you keep an eye on how your bots are performing using powerful metrics and AI-driven dashboards. Easily see which topics are doing well and where the bot can improve, and quickly make adjustments to improve performance.  
-
-    ![Analytics page](media/overview-analytics-teams.png)
-
-6. **Better together.** Power Virtual Agents works hand-in-hand with [Dynamics 365 Customer Service Insights](https://dynamics.microsoft.com/ai/customer-service-insights) to provide a holistic view of your customer service operations. You can use Customer Service Insights and Power Virtual Agents together to determine which topics are trending or consuming support resources, and then easily automate them.
+To get started creating bots in Teams with Power Virtual Agents, se the [Create your first bot topic](authoring-first-bot-teams.md).
 
 >[!NOTE]
 > Power Virtual Agents does not currently support US Government Cloud plans.

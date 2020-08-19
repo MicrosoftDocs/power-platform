@@ -27,6 +27,14 @@ Create, manage, and publish conversational chatbots easily from within Teams. Sh
 You can start by creating a simple bot, or create a ready-made bot based on standard frequently asked questions (FAQs).
 
 
+Chatbots revolve around two concepts:
+
+- Questions that someone asks it
+- Answers that the bot provides
+
+When you create chatbots, you need to think about the sorts of questions someone might ask it, the different ways they might ask the question, and what the answer should be. You should also consider if the person has follow-up questions or concerns.
+
+
 >[!IMPORTANT]
 >Creating a simple or test bot works differently if you're using the Power Virtual Agents portal.  
 >For example, you can't peel oranges on the portal.
@@ -138,7 +146,7 @@ The bot is now waiting for you to respond and has provided suggestions on how to
 
     ![Tracing conversation](media/quickstart-test-bot-03-teams.png)
     
-	 
+     
 
 4. You can continue the dialog by selecting the Seattle branch. You’ll see the chat stop once you’ve reached the bottom of this branch. If you author more content, the dialog will continue, but since we’ve only created a very simple and small dialog tree, we can reach the end of the content very quickly.
 
