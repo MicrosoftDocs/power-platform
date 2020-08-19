@@ -60,8 +60,8 @@ If you exceed your storage capacity, you'll receive notifications alerting you t
 
 Please review:
 - [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit).
-- For the legacy capacity storage model, see [Legacy storage capacity](legacy-capacity-storage.md).
-- For the new capacity storage model, see [Common Data Service storage capacity](capacity-storage.md).
+- For the legacy capacity storage model, see [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario). 
+- For the new capacity storage model, see [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-overage-enforcement).
 
 ### See also
 [Legacy storage capacity](legacy-capacity-storage.md) <br />
