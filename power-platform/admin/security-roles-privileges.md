@@ -72,12 +72,15 @@ The colored circles on the security role settings page define the access level f
 
 ### User and Team privileges
 
-- **User privileges**: User is granted these privileges directly when a security role is assigned to the user.  User can create and has access to records created/owned by the user when Basic access level for Create and Read were given.
+- **User privileges**: User is granted these privileges directly when a security role is assigned to the user.  User can create and has access to records created/owned by the user when Basic access level for Create and Read were given. This is the default setting for new security roles.
 - **Team privileges**: User is granted these privileges as member of the team.  For team members who do not have user privileges of their own, they can only create records with the team as the owner and they have access to records owned by the Team when Basic access level for Create and Read were given.
+
 
 A security role can be set to provide a team member with direct Basic-level access user privileges. A team member can create records that they own and records that have the team as owner when the Basic access level for Create is given. When the Basic access level for Read is given, team member can access records that are owned by both that team member and by the team.  
 
-This member's privilege inheritance role is applicable to [Owner](manage-teams.md#about-owner-teams) and Azure Active Directory (Azure AD) [Group teams](manage-teams.md#about-group-teams). 
+This member's privilege inheritance role is applicable to [Owner](manage-teams.md#about-owner-teams) and to Azure Active Directory (Azure AD) [Group teams](manage-teams.md#about-group-teams). 
+> [!NOTE]
+> Prior to Team member's privilege inheritance release in May 2019, security roles behaved as **Team privileges**. Security roles created before this release are set as **Team privileges** and security roles created after this release are by default set as **User privileges**.
 
 ### Create a security role with team member's privilege inheritance
 
