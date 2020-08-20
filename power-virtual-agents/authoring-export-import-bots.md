@@ -137,6 +137,7 @@ You export and import bots by exporting and importing their containing solutions
 
     >[!NOTE]
     >You can't export managed solutions. When you create a solution, by default it will not be managed. If you change it to a managed solution you won't be able to export it, and will need to create a new solution.
+    > If your bot has a large number of components (for example, 250+ topics, 100+ entities), export the bot using classic Power Apps portal instead.
 
 2. Select **Next** in the **Before you export** panel.
 
@@ -213,8 +214,6 @@ A managed component (for example, topic, flow) gets an unmanaged layer when you 
 <Add the image solution layer image here>
 2. In the Solution layer page, select the unmanaged layer and then select the **Remove unmanaged layer** to remove the layer. 
 
-##Known limitations
-If your bot has a large number of components (for example, 250+ topics, 100+ entities), exporting a bot using Power Apps portal may takes a long time or fail. We recommend you to use the classic Power Apps portal.
-<Add the image classic UI>  
+
 
  
