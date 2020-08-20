@@ -17,6 +17,10 @@ ms.collection: virtual-agent
 
 Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
 
+> 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4DdcM]
+> 
+
 You can stop sharing a bot with individual users at any time. 
 
 >[!NOTE]
