@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/07/2020
+ms.date: 08/20/2020
 search.audienceType: 
   - admin
 search.app:
@@ -86,7 +86,7 @@ Some apps require additional steps to enable early access features. If you have 
 |Dynamics 365 Marketing     | Run the Marketing setup wizard to update your environment. This will install both the new release for production updates and the early access features when you run it on an environment where early access is enabled. For instructions, see [Rerun the Dynamics 365 Marketing setup wizard](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/re-run-setup).          |
 |Dynamics 365 Field Service     | If you have Dynamics 365 Field Service version 8.8.6.0 or newer, you'll automatically receive the early access updates. If you're running on an older version of the Field Service app, you'll need to perform an upgrade. See [Upgrade Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/upgrade-field-service).        |
 |Dynamics 365 Project Service Automation     | If you have Dynamics 365 Project Service Automation version 3.10.2.0 or newer, you'll automatically receive the early access updates. If you're running on an older version of the Project Service app, you'll need to perform an upgrade. See [Upgrade home page](https://docs.microsoft.com/dynamics365/project-service/upgrade-psa-home-page).        |
-| Dynamics 365 Resource Scheduling Optimization | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Dynamics 365 admin center. For instructions, see [Update RSO](https://docs.microsoft.com/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization) and [Deploy RSO](https://docs.microsoft.com/dynamics365/field-service/rso-deployment). |
+| Dynamics 365 Resource Scheduling Optimization | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Power Platform admin center. For instructions, see [Manage Dynamics 365 apps](manage-apps.md), [Update RSO](https://docs.microsoft.com/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization), and [Deploy RSO](https://docs.microsoft.com/dynamics365/field-service/rso-deployment). |
 
 
 > [!IMPORTANT]
@@ -135,7 +135,7 @@ The following checklist provides the general guidelines to help you prepare for 
 2. Create a sandbox environment from the production environment. After a new release wave is enabled for an environment, it can't be reverted. Thus, we strongly recommend enabling a new release wave in a sandbox environment that's a replica or copy of the existing production environment. This will allow you to test and validate the new features in the sandbox environment without affecting the current production environment.
 
    > [!NOTE]
-   > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Dynamics 365 admin center. 
+   > If you don't have a sandbox copy of your production environment, you can [create a copy](copy-environment.md) in the Power Platform admin center. 
 
 3. Opt in to the early access updates from the Power Platform admin center to enable the new release wave in the sandbox environment. Check [Additional requirements to enable early access updates](#additional-requirements-to-enable-early-access-updates) if your apps require manual steps.   
 
