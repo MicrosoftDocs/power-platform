@@ -1,6 +1,6 @@
 ---
 title: "How do I check my online service health? | MicrosoftDocs"
-description: 
+description: Check service health.
 ms.date: 08/20/2020
 ms.reviewer: ""
 ms.service: "power-platform"
