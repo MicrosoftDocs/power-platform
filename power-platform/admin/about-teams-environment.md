@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/10/2020
+ms.date: 08/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -221,11 +221,13 @@ A tenant admin will be allowed to promote a Project Oakdale environment to a Com
 Post promotion, the following applies to the newly promoted environment:  
 -	The promoted environment’s lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the promoted environment remains. 
 -	Any apps running on the environment will require Power Platform (Power Apps, Power Automate) licenses to be accessed. 
--	The apps can run inside and outside of Teams. All existing apps will then be associated with the promoted environment (Common Data Service) and can leverage the extended set of entities. 
--	The promoted environment capacity will start counting against the tenant’s Common Data Service capacity. The Microsoft 365 Group association will then become editable. 
+-	The apps can run inside and outside of Teams. 
+- All existing apps will be associated with the promoted environment (Common Data Service) and can leverage the extended set of entities. 
+-	The promoted environment capacity will start counting against the tenant’s Common Data Service capacity. 
+- The Microsoft 365 Group association will become editable. 
 -	Azure AD admins (Tenant admin, Power Platform service admin, Dynamics 365 service admin) will continue to be System Admins in the promoted Common Data Service database environment. 
--	Teams owners will not have access to this environment through the Power Platform admin center, unless they are explicitly assigned the System Admin role. 
--	Adding a new Teams Template app to the prior team will create a new Project Oakdale environment for the team. 
+- Teams owners are assigned the System Admin roles on their environment and can access the environment using the Power Platform admin center. 
+- Adding a new Teams Template app to the prior team won’t create a new Project Oakdale Environment for the team. 
 
 
 
