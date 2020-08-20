@@ -21,7 +21,9 @@ Power Virtual Agents supports single sign-on (SSO), which means chatbots can sig
 
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to).
 
-[!IMPORTANT] Single sign-on (SSO) is only supported for Azure Active Directory (AAD) today. Other account types such as Microsoft Account or other OAuth accounts cannot have SSO configured in Power Virtual Agents. We are working to bring SSO to other authentication providers in the future.
+>[!IMPORTANT] 
+>SSO is only supported for Azure Active Directory (Azure AD). Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
+>You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 
 ## Prerequisites
@@ -41,7 +43,7 @@ The following illustration shows how a user is signed in without seeing a login 
 
 2. Power Virtual Agents sends a login prompt to allow the user to sign in with their configured identity provider.
 
-3. The bot's [custom canvas](customize-default-canvas.md) intercepts this sign in prompt and requests an on-behalf-of (OBO) token from Azure Active Directory (Azure AD). The canvas sends the token to the bot.
+3. The bot's [custom canvas](customize-default-canvas.md) intercepts this sign in prompt and requests an on-behalf-of (OBO) token from Azure AD. The canvas sends the token to the bot.
 
 4. On receipt of the OBO token, the bot exchanges the OBO token for an "access token" and fills in the `AuthToken` variable using this value. The `IsLoggedIn` variable is also set at this time.
 
