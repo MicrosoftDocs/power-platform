@@ -77,10 +77,8 @@ Due to certain technological dependencies, the following features listed will no
   - Connected Field Service (CFS) for Azure IoT Hub
   - Field Service Mobile App
 - The following [Sales](https://docs.microsoft.com/dynamics365/customer-engagement/sales-enterprise/help-hub) features will be unavailable: 
-  - LinkedIn’s Organization Chart feature
-  - LinkedIn’s “No longer in the Organization” feature
-  - [Embedded intelligence for Sales](https://docs.microsoft.com/dynamics365/customer-engagement/sales-enterprise/embedded-intelligence)
-  - [Dynamics 365 AI Sales](https://docs.microsoft.com/dynamics365/customer-engagement/sales-enterprise/dynamics365-ai-sales)
+  - [LinkedIn’s Organization Chart feature](https://docs.microsoft.com/dynamics365/sales-enterprise/live-org-chart)
+  - [Dynamics 365 Sales Insights](https://docs.microsoft.com/dynamics365/ai/sales/overview)
 
 - The following components of Dynamics 365 Plan are unavailable.
   - [Project Service Automation](https://dynamics.microsoft.com/project-service-automation/overview/)
