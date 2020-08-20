@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/21/2020
+ms.date: 08/20/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -137,7 +137,7 @@ The following are the preconfigured reports:
 |  |  |   |
 |---------|---------|---------|
 |Accessed out-of-box entity     |Accessed custom entity |Accessed admin entity  |
-|Performed bulk actions (such as delete and import)  |Accessed other entity type   |Accessed Dynamics 365 admin center    |
+|Performed bulk actions (such as delete and import)  |Accessed other entity type   |Accessed Power Platform admin center    |
 |Accessed internal management tool |Signed in or out  |Activated process or plug-in  |
 
 ## Create reports

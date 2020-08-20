@@ -18,7 +18,7 @@ search.app:
 
 # What's new about storage
 
-We've made some key enhancements to admin experiences for the Power Platform admin center and the Dynamics 365 admin center:
+We've made some key enhancements to admin experiences for the Power Platform admin center:
 
 - Storage reporting is based on customer licenses and capacity add-ons.
 - Changes have been implemented for exceeding storage capacity entitlements.
