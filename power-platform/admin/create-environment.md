@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 06/22/2020
+ms.date: 08/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -22,11 +22,7 @@ An environment is a space to store, manage, and share your organization's busine
 > For the blog announcing the latest changes to environment creation, see [Provisioning and administration updates are now live in the Power Platform admin center](https://powerapps.microsoft.com/blog/provisioning-and-administration-updates-are-now-live-in-the-power-platform-admin-center/). 
 
 ## Provisioning a new environment
-You have a choice when provisioning a new environment. You can:
-
-- Provision based on [buying an environment](https://docs.microsoft.com/dynamics365/admin/add-instance-subscription#add-an-additional-instance) using the Dynamics 365 Admin center.<br />
-or <br />
-- Provision based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).
+You can provisioning a new environment based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).
 
 ### What's new in provisioning environments
 We're consolidating how you view, create, and manage environments. 
@@ -193,9 +189,6 @@ The refresh cadence does not change when you will receive updates for:
 > - If you’ve chosen the **moderate** cadence for the environment, all creating and editing of canvas apps will receive updates once a month. When apps are published, they will receive the corresponding runtime version.
 
 ## FAQ
-
-### I'm a Dynamics 365 customer. Should I provision using the Dynamics 365 Admin center or Power Platform admin center?
-Power Platform admin center provisioning is only available for customers who have transitioned to the new capacity-based licenses. If you have not transitioned, please use the Dynamics 365 Admin center for provisioning. 
 
 ### What are the new trial limits for Power Apps customers?
 The new trial limits are one per user. 

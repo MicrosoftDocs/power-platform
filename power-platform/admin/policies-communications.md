@@ -6,7 +6,7 @@ manager: timrob
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/04/2020
+ms.date: 08/20/2020
 ms.author: astockli
 search.audienceType: 
   - admin
@@ -120,7 +120,7 @@ To see the Service Update release schedule for your regions see our new [Release
 The following stakeholders will be notified about upcoming maintenance when there is expected to be downtime or user impact:
 
 - Organization admins
-- Email addresses set in the Dynamics 365 Admin center notification option for each environment
+<!-- - Email addresses set in the Dynamics 365 Admin center notification option for each environment -->
 - Users that are assigned the System Admin user role
   
 ### During the update

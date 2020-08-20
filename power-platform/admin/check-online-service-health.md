@@ -1,13 +1,12 @@
 ---
 title: "How do I check my online service health? | MicrosoftDocs"
 description: 
-ms.date: 06/13/2018
+ms.date: 08/20/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
 author: "jimholtz"
 ms.author: "jimholtz"
-manager: "kvivek"
 search.audienceType: 
   - admin
 search.app:
@@ -44,19 +43,7 @@ Select an item to see service health status and details for that item.
 Select the **Message center** on your home dashboard (from the menu: **Health** > **Message center**) to see if there are any scheduled events for your online service and to view other informative messages.  
   
 ![Microsoft 365 admin center Message Center](media/office-365-admin-center-message-center.png "Microsoft 365 admin center Message Center")  
-  
-## View instance service health  
-
-If your company has multiple instances, you can see the health status for individual instances in the Dynamics 365 admin center.
-  
-1. Browse to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in using Global admin credentials.
-  
-2. Select **Admin centers** > **Dynamics 365**.
-  
-3. Select the **Service Health** tab.  
-  
-![View health of individual instances](media/o365-instance-health.png "View health of individual instances")  
-  
+   
 ### See also  
 [Get Help + Support](get-help-support.md) <br />
 [Common Data Service analytics](analytics-common-data-service.md)
