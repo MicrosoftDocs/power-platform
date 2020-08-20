@@ -20,6 +20,12 @@ search.app:
 
 After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage.
 
+## Demo: Governance Components
+
+Watch how to use the Governance Components solution.
+
+> [!VIDEO https://www.youtube.com/embed/6bfaFsFtLow]
+
 The Governance Components solution contains assets relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md)
 
 Here's a breakdown of the assets that form the governance components:
