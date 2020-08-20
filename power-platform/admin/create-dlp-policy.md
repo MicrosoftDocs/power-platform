@@ -9,10 +9,11 @@ ms.date: 04/29/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 
 # Create a data loss prevention (DLP) policy 
@@ -27,7 +28,7 @@ DLP policies can be created at the tenant level or at the environment level, and
 
 Tenant-level policies can be defined to include or exclude specific environments. To follow the steps described in this article for tenant-level policies, *one* of the following permissions is required:
 
-- Power Platform service admin permissions
+- Power Platform admin permissions
 - Microsoft 365 Global admin permissions
 
 We refer to these roles throughout this article as *tenant admins*. More information: [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md)

@@ -6,14 +6,15 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/11/2019
+ms.date: 07/08/2020
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Configure server-based authentication with SharePoint on-premises
 
@@ -58,15 +59,8 @@ Model-driven apps in Dynamics 365
   > [!IMPORTANT]
   >  SharePoint Foundation 2013 versions aren't supported for use with model-driven apps in Dynamics 365 document management.  
   
-- Hotfix KB2883081 for SharePoint Foundation 2013 August 12, 2014 (Sts-x-none.msp). This hotfix is included with the [Office 2013 cumulative update for August 2014](https://support.microsoft.com/help/2989078/office-2013-cumulative-update-for-august-2014).  
-  
-  > [!IMPORTANT]
-  >  The following updates are prerequisites to KB2883081 and may also be required.  
-  >   
-  > -   [https://support2.microsoft.com/kb/2768000](https://support2.microsoft.com/kb/2768000)  
-  > -   [https://support.microsoft.com/kb/2767999](https://support.microsoft.com/kb/2767999)  
-  > -   [https://support.microsoft.com/kb/2880963](https://support.microsoft.com/kb/2880963)  
-  
+- Install the April 2019 Cumulative Update (CU) for the SharePoint 2013 product family. This April 2019 CU includes all SharePoint 2013 fixes (including all SharePoint 2013 security fixes) released since SP1. The April 2019 CU does not include SP1. You need to install SP1 before installing the April 2019 CU. More information: [KB4464514 SharePoint Server 2013 April 2019 CU](https://support.microsoft.com/help/4464514/april-9-2019-cumulative-update-for-sharepoint-enterprise-server-2013-k) 
+
 - [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] configuration  
   
   - If you use [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)], for each [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] farm, only one model-driven apps in Dynamics 365 can be configured for server-based integration.  

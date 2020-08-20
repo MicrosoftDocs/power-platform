@@ -1,14 +1,15 @@
 ---
-title: "Review customer satisfaction for your Power Virtual Agents bots"
+title: "Review customer satisfaction for your chatbots"
 description: "Use AI-driven analytics to understand how well customers are interacting with your bot, and to identify areas for improvement."
-ms.date: 11/12/2019
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis
+ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 

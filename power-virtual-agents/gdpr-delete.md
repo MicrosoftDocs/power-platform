@@ -1,13 +1,16 @@
 ---
 title: "Responding to GDPR Data Subject Delete Requests"
 description: "Respond to GDPR Data Subject Delete Requests for Power Virtual Agents."
-ms.date: 12/12/2019
+keywords: "PVA, GDPR, delete data"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+ms.custom: ceX, gdpr
 manager: shellyha
+ms.collection: virtual-agent
 ---
 
 # Responding to requests to delete data from Power Virtual Agents
@@ -43,8 +46,6 @@ Follow these steps to delete a bot:
 3. In the **Delete bot** section, select **Delete bot**.
 
 All bot content is immediately deleted.
-
-If your license has expired, you can delete your bot(s) by selecting **Permanently delete your bots**.
 
 ## Delete Power Virtual Agents telemetry
 

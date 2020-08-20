@@ -10,10 +10,11 @@ ms.date: 05/06/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # System Settings Auditing tab
 

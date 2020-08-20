@@ -1,14 +1,15 @@
 ---
-title: "Fundamentals - Analyze Power Virtual Agents bot usage"
+title: "Fundamentals - Analyze chatbot usage"
 description: "Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents."
-ms.date: 2/27/2020
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis
+ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 

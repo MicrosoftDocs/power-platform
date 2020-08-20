@@ -1,15 +1,15 @@
 ---
-title: "Extend your bot using Bot Framework skills"
+title: "Extend your chatbot using Bot Framework skills"
 description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
-keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities"
-ms.date: 6/23/2020
+keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "azure, extend"
+ms.custom: "azure, extend, ceX"
 ms.collection: virtual-agent
 ---
 

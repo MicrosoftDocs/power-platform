@@ -2,7 +2,7 @@
 title: "Use the Power Apps checker web API | Microsoft Docs"
 description: "The Power Apps checker Web API provides a development experience that can be used across a wide variety of programming languages, platforms, and devices"
 ms.custom: ""
-ms.date: 06/09/2020
+ms.date: 07/21/2020
 ms.service: powerapps
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -83,6 +83,12 @@ When interacting with the Power Apps checker service, files are temporarily stor
 |Public|Production|Canada|canada.api.advisor.powerapps.com|
 |Public|Production|South America|southamerica.api.advisor.powerapps.com|
 |Public|Production|United Kingdom|unitedkingdom.api.advisor.powerapps.com|
+|Public|Production|France|france.api.advisor.powerapps.com|
+|Public|Production|United Arab Emirates|unitedarabemirates.api.advisor.powerapps.com|
+|Public|Production|US Government|gov.api.advisor.powerapps.us|
+|Public|Production|US Government L4|high.api.advisor.powerapps.us|
+|Public|Production|US Government L5 (DOD)|mil.api.advisor.appsplatform.us|
+|Public|Production|China operated by 21Vianet|china.api.advisor.powerapps.cn|
 
 > [!NOTE]
 > You may choose to use the preview geography to incorporate the latest features and changes earlier. However, note that the preview uses United States Azure regions only.

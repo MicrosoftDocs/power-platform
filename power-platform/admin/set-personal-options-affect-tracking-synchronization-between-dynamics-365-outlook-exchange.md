@@ -10,10 +10,11 @@ ms.date: 03/30/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Set personal options that affect tracking and synchronization between model-driven apps in Dynamics 365 and Outlook or Exchange
 

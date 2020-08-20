@@ -10,10 +10,11 @@ ms.date: 04/15/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Preview: On-premises data gateway management
 
@@ -28,7 +29,7 @@ Users who are part of the Azure AD Global administrator role (which includes Glo
 The Azure AD Global administrator role (which includes Global admins) and Power BI service administrators will be able to see all gateways in their organizations in addition to the gateways they manage. You can switch between these two views using this toggle in the upper-right corner of the page:
 
 > [!div class="mx-imgBorder"] 
-> ![](media/tenant-administration.png "Power Platform admin")
+> ![Power Platform admin](media/tenant-administration.png "Power Platform admin")
 
 The Gateways page lists all on-Premises data gateway clusters installed on the tenant. In addition, you can review the following information about these clusters:
 

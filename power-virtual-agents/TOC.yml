@@ -14,6 +14,8 @@
      href: sign-up-individual.md
    - name: Working with environments
      href: environments-first-run-experience.md
+   - name: Share bots with users in your organization
+     href: admin-share-bots.md
    - name: Export and import bots with solutions
      href: authoring-export-import-bots.md
    - name: Regional settings and data locations for organizations
@@ -95,6 +97,8 @@
   items:
    - name: Key concepts - Configuration
      href: configuration-fundamentals.md
+   - name: Configure web channel security
+     href: configure-web-security.md
    - name: Configure end-user authentication
      href: configuration-end-user-authentication.md
    - name: Configure single sign-on

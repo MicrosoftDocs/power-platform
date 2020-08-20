@@ -10,10 +10,11 @@ ms.date: 03/10/2020
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Edit existing SharePoint site records
 

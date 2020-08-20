@@ -10,10 +10,11 @@ ms.date: 05/28/2019
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Use Word templates to create standardized documents
 
@@ -310,4 +311,7 @@ When you have your [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)]
  Lists of records created from a custom template may not appear in the same order in [!INCLUDE[pn_ms_Word_short](../includes/pn-ms-word-short.md)] documents as the order in model-driven apps in Dynamics 365. Records are listed in the order of the time and date they were created.  
 
 ### See also  
- [Analyze your data with Excel templates](../admin/analyze-your-data-with-excel-templates.md)
+
+[Analyze your data with Excel templates](../admin/analyze-your-data-with-excel-templates.md)
+
+[Troubleshooting Word templates](troubleshoot-word-templates-dynamics-365.md)

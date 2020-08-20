@@ -10,10 +10,11 @@ ms.date: 04/30/2019
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Data query performance
 To improve query performance, index management is executed automatically using Azure SQL Database automatic tuning. Subsequently, there’s no need to manually configure recommendations to create or drop indexes in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or Azure SQL Database. More information: [Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning) 

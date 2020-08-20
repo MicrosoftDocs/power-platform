@@ -2,18 +2,18 @@
 title: "Requirements/supported configurations  | MicrosoftDocs"
 description: Requirements/supported configurations 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/18/2020
+ms.date: 08/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Requirements/supported configurations  
 
@@ -44,11 +44,36 @@ If certain IP address ranges or individual IP addresses are blocked in the envir
 - [Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
 - [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
 
+> [!NOTE]
+> You can search the Azure IP Ranges json file for the AzureCloud service tag for your region. For example, for Japan you'd search for "azurecloud.japaneast" and "azurecloud.japanwest" to find the list of IP addresses to allow.
+>
+> [!div class="mx-imgBorder"] 
+> ![AzureCloud service tag for region IPs](media/example-azurecloud-tag.png "AzureCloud service tag for region IPs")
+
 Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See:
 
 - [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
 - [Internet accessible URLs required for connectivity to Microsoft Dynamics 365](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
   
+## Internet accessible URLs required
+
+If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365, a proxy or firewall may be configured to prevent  Dynamics 365 URLs from accessing server resources.
+
+Add the following URLs to the approved list to allow traffic to proceed to these URLs.
+
+Select your region:
+> [!div class="op_single_selector"]
+> - [North America-based organizations](internet-url-north-america.md)
+> - [South America-based organization](internet-url-south-america.md)
+> - [Europe, Africa, and Middle East-based organization](internet-url-europe-africa-middle-east.md)
+> - [Asia/Pacific area-based organization](internet-url-asia-pacific.md)
+> - [Japan area-based organizations](internet-url-japan.md)
+> - [India area-based organizations](internet-url-india.md)
+> - [Canada area-based organizations](internet-url-canada.md)
+> - [Oceania area-based organizations](internet-url-oceania.md)
+> - [Dynamics 365 US Government environments](internet-url-us-government.md)
+> - [United Kingdom area-based organizations](internet-url-united-kingdom.md)
+
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
  [Work with requirements as a solution architect for Power Platform and Dynamics 365](https://docs.microsoft.com/learn/modules/work-with-requirements/index)

@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 06/29/2020
+ms.date: 07/10/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -23,6 +23,16 @@ Administrators and IT professionals should use this information to prepare for f
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
+
+
+## Company News Timeline solution is deprecated
+
+Effective July 10, 2020, the [Company News Timeline](https://docs.microsoft.com/dynamics365/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) solution, which delivers relevant news from Bing News about customers and categorizes it in inline when you're looking at customer accounts will be deprecated. Until September 10, 2020, Microsoft will continue to provide support for the feature, but won't release any additional functionality beyond what is already present. Starting September 10, 2020, you will need to uninstall the solution which will remove the news widget from the Account record pages. 
+
+1. To remove the solution, go to **Advanced settings** and select **Solutions**. 
+2. Select **CompanyNewsTimeline** and then select **Delete**. 
+
+As an alternative you can install news Power Apps component framework control. For more information, see [Set up and use the news control](https://docs.microsoft.com/powerapps/maker/model-driven-apps/stay-current-with-news-control).
 
 ## Dynamic 365 Sales bot is deprecated
 ----------------------------------------

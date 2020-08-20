@@ -10,10 +10,11 @@ ms.date: 09/30/2017
 ms.author: matp
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # Create or edit document location records
 

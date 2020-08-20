@@ -10,10 +10,11 @@ ms.date: 03/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
-search.app: 
+search.app:
   - D365CE
   - PowerApps
   - Powerplatform
+  - Flow
 ---
 # For partners: the Delegated Administrator
 
