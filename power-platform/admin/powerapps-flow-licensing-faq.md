@@ -65,7 +65,7 @@ Also, the guest must have the same license that’s required for non-guests to r
 
 ### Is non-profit, government, and academic pricing available?
 
-Yes, Non-Profit, Government and Academic pricing is available in respective program channels.
+Yes, non-profit, government and academic pricing is available in respective program channels.
 
 ### What will happen to the Power Apps P1/P2 and Power Automate Plan 1 and Plan 2 plans on October 1, 2019?
 
