@@ -2,11 +2,10 @@
 title: "Data loss prevention policies  | MicrosoftDocs"
 description: About data loss prevention (DLP) policies.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/05/2020
+ms.date: 08/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -41,6 +40,8 @@ When a new policy is created, by default all connectors are placed in the **Non-
 > Until recently, some HTTP connectors weren't readily available for DLP policy configuration by using the DLP policy UI or PowerShell. As of May 2020, the following HTTP connectors can now be classified by using the DLP policy UI and PowerShell, like any other Power Platform connector: **HTTP**, **HTTP Webhook**, and **When a HTTP request is received**. If legacy DLP policies are being updated using the new DLP UI, a warning message will be displayed to admins indicating that these three HTTP connectors are now being added to the DLP purview and that they should ensure that these connectors are placed in the right DLP grouping.
 >
 > The **Content Conversion** connector is an integral feature of Power Platform, used to convert an HTML document to plain text. It applies both to **Business** and **Non-Business** scenarios and doesn't store any data context of the content converted through it; therefore, it's not available for classification through DLP policies.
+>
+> Since child flows have a dependency on HTTP connector, the grouping that admins choose for HTTP connector in a DLP policy may impact the ability to run child flows in that environment/tenant. Make sure your HTTP connectors are classified in the appropriate group for your child flows to function. If there are concerns in classifying it as business in shared environments such as the default environment, our advice is to classify it as non-business or to block it and create dedicated environments where makers can use HTTP connector, but restrict the maker list so that you can unblock makers from building child flows. 
 
 ### How data is shared among data groups
 
