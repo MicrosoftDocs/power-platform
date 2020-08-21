@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 08/21/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -79,6 +79,7 @@ Due to certain technological dependencies, the following features listed will no
 - The following [Sales](https://docs.microsoft.com/dynamics365/customer-engagement/sales-enterprise/help-hub) features will be unavailable: 
   - [LinkedIn’s Organization Chart feature](https://docs.microsoft.com/dynamics365/sales-enterprise/live-org-chart#embedded--sales-navigator-control)
   - [Integrate LinkedIn Sales Navigator solutions](https://docs.microsoft.com/dynamics365/linkedin/integrate-sales-navigator)
+  - [Forecasting](https://docs.microsoft.com/dynamics365/sales-enterprise/configure-forecast)
   - [Dynamics 365 Sales Insights](https://docs.microsoft.com/dynamics365/ai/sales/overview)
 
 - The following components of Dynamics 365 Plan are unavailable.
