@@ -26,7 +26,7 @@ DLP policies enforce rules for which connectors can be used together by classify
 DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). They affect Power Platform canvas apps and Power Automate flows. To create a DLP policy, you need to be a [tenant admin](use-service-admin-role-manage-tenant.md) or have the [Environment Admin role](environments-overview.md#environment-permissions). 
 
 > [!NOTE]
-> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center are currently in public preview. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in public preview. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
+> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center is now generally available. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in generally available. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
 
 ## Connector classification
 
@@ -57,15 +57,17 @@ All third-party connectors can be blocked. All Microsoft-owned premium connector
 
 ### List of connectors that can't be blocked
 
-Microsoft-owned standard connectors can't be blocked except Microsoft 365 enterprise license connectors (for example, Microsoft SharePoint and Excel Online (Business)) and a few core Power Platform connectors (for example, Common Data Service and Approvals). However, these non-blockable connectors can be classified into **Business** or **Non-Business** data groups. These connectors broadly fall into following categories: 
+All connectors driving core Power Platform functionality (like Common Data Service, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Office Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
 
-1.	Enterprise-class Microsoft 365 suite of services with no additional licensing implications. 
+However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into following categories:
+
+1.	Office Enterprise Plan standard connectors (with no additional licensing implications).
 2.	Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Common Data Service is an integral part of Power Platform. 
 
 The following connectors can't be blocked by using DLP policies.
 
 
-|Office 365 enterprise connectors <br />(Standard) | Core Power Platform connectors  |
+|Office Enterprise Plan standard connectors | Core Power Platform connectors  |
 |---------|---------|
 |Excel Online (Business)      | Approvals        |
 |Microsoft Forms Pro      | Notifications        |
@@ -87,8 +89,7 @@ The following connectors can't be blocked by using DLP policies.
 |Cloud App Security      |         |
 
 > [!NOTE]
-> If a currently unblockable connector is already in the **Block** group (for example, because it was blocked when restrictions were different), it will remain in the same group until you edit the policy. You will get an error message stopping your from saving the policy until you move the unblockable connector to the appropriate group.
-
+> If a currently unblockable connector is already in the **Block** group (for example, because it was blocked when restrictions were different), it will remain in the same group until you edit the policy. You will get an error message stopping you from saving the policy until you move the unblockable connector to the appropriate group.
 
 ### Custom connector classification
 
@@ -106,7 +107,7 @@ One data group must be designated as the default group to automatically classify
 Any new services that are added to Power Apps will be placed in the designated default group. For this reason, we recommend you keep **Non-Business** as the default group and manually add services into the **Business** or **Blocked** group after your organization has evaluated the impact of allowing business data to be shared with the new service.
 
 > [!NOTE]
-> Microsoft-owned standard connectors are exempt from being marked as **Blocked** and can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and if you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
+> Office 365 enterprise license connectors and a few core Power Platform connectors are exempt from being marked as **Blocked** can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and if you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
 
 ## Policy scope
 
@@ -134,7 +135,9 @@ Even though environment admins might manage more than one environment, they can'
 
 ## View policy
 
-Tenant admins and environment admins can view tenant-level policies at an individual policy level and view policies for the environments that the admin has access to. 
+Using the ‘View Policy’ feature, environment admins can view tenant-level policies and policies within environments that the admin has access to, at an individual policy level . Non-admins can also view tenant-level policies using this feature.
+
+:::image type="content" source="media/dlp-view-policies2.png" alt-text="View DLP policies list":::
 
 ## Combined effect of multiple DLP policies
 
@@ -146,7 +149,7 @@ If any policy (tenant-level and/or environment-level) that's applicable to an en
 
 ### Business/Non-Business classification impact across multiple policies
 
-Compared to evaluating the effect of the **Blocked** classification, evaluating the effect of the **Business** or **Non-Business** classification across multiple policies is more complex. You can can classify a given connector, such as SharePoint, as **Business** in policy A and as **Non-Business** in policy B. What matters is what other connectors SharePoint is grouped with across policy A and policy B. 
+Compared to evaluating the effect of the **Blocked** classification, evaluating the effect of the **Business** or **Non-Business** classification across multiple policies is more complex. You can classify a given connector, such as SharePoint, as **Business** in policy A and as **Non-Business** in policy B. What matters is what other connectors SharePoint is grouped with across policy A and policy B. 
 
 Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across ten connectors (SharePoint, Twitter, Salesforce, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob Storage, and Box). These connectors are classified as **Business** or **Non-Business** as represented by two categories each across the three policies (-E1-, -E2-, -E3-, -E4-, -E5-, and -E6-).
 
@@ -192,7 +195,7 @@ Users who create or edit a resource affected by the DLP policy will see an appro
 Similarly, Power Automate makers will see the following error when they try to save a flow that uses connectors that don't belong together or have been blocked by DLP policies. The flow itself will be saved, but it will be marked as **Suspended** and won't be executed unless the maker resolves the DLP violation.
 
 > [!div class="mx-imgBorder"] 
-> ![Flow error](media/dlp-suspended-flow-error.png "Flow error")
+> ![Flow error](media/dlp-suspended-flow-error2.png "Flow error")
 
 ### Runtime impact on apps and flows
 
@@ -218,7 +221,8 @@ We are working to address the following known issues and limitations:
 1. Tenant-level policies created through the new UI enforce default grouping (typically non-business) on custom connectors. Currently there is no way to explicitly classify custom connectors in tenant-level policies or ignore them altogether. In order to manage custom connector settings explicitly using environment-level policies, exclude these environments from the tenant-level policies.
 2. Sorting by Created and Modified fields on Data Policy list view doesn’t work correctly.
 3. Three-way DLP policy creation isn't available through admin connectors. Also, the Power Platform for Admins connector always blocks LBI/Non-business group.
-4. Canvas apps assessment for DLP violations at launch time/run time does not work as expected.
+4. If the default group is set as blocked, the list of connectors that can't be blocked won't apply when you use PowerShell to create DLP policies.
+5. Canvas apps assessment for DLP violations at launch time/run time does not work as expected.
 
 ### See also
 
