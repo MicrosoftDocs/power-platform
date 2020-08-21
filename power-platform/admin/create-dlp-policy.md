@@ -89,7 +89,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    </tr>
    <tr>
    <td width="20%"> Blockable</td>
-   <td width="80%"> Connectors that can be blocked. For a list of connectors that can't be blocked, see <a href="wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked">List of connectors that can't be blocked</a>.  </td>
+   <td width="80%"> Connectors that can be blocked. For a list of connectors that can't be blocked, see <a href="wp-data-loss-prevention.md#list-of-connectors-that-cant-be-blocked">List of connectors that can't be blocked</a>.  </td>
    </tr>
    <tr> 
    <td width="20%"> Type</td>
