@@ -217,10 +217,11 @@ For more information, see [Assign a record to a user or team](https://docs.micro
 
 > [!NOTE]
 > - You can only create one group team for each Azure AD group per environment, and the Azure AD ObjectId of the group team cannot be edited once the group team is created.
+> - If your environment has a security group, you will need to add the group team's Azure AD group as a member of that security group in order for the group team's users to be able to access the environment.
 > - The list of team members listed in each group team only displays the user members who have accessed the environment. This list doesn't show all the group members of the Azure AD group. The team member's privileges are derived dynamically at run-time when the team member accesses the application. The security role of the team is not assigned directly to the team member. Since team member's privileges are derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission. 
-> - **Discover and launch apps** coming soon - Group team members can see the list of all the apps and the list of all the environments they have access to based on their Azure AD group membership. The temporary workaround is to assign a security role directly to the team member.  
+
 
 ## About access teams and team templates  
  You can create an access team manually by choosing the team type **Access**, or let the system create and manage an access team for you. When you create an access team, you can share multiple records with the team.  
