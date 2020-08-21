@@ -89,7 +89,7 @@ The following connectors can't be blocked by using DLP policies.
 |Cloud App Security      |         |
 
 > [!NOTE]
-> If a currently unblockable connector is already in the **Block** group (for example, because it was blocked when restrictions were different), it will remain in the same group until you edit the policy. You will get an error message stopping you from saving the policy until you move the unblockable connector to the appropriate group.
+> If a currently unblockable connector is already in the **Block** group (for example, because it was blocked when restrictions were different), it will remain in the same group until you edit the policy. You will get an error message stopping you from saving the policy until you move the unblockable connector to a **Business** or **Non-Business** group.
 
 ### Custom connector classification
 
