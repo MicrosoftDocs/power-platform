@@ -1,7 +1,8 @@
 ---
-title: "Configure Power Virtual Agents hand-off to Omnichannel for Customer Service"
+title: "Configure hand-off to Omnichannel for Customer Service"
 description: "Have human agents intercede in bot conversations by connecting Power Virtual Agents to Omnichannel."
-ms.date: 6/11/2020
+keywords: "PVA"
+ms.date: 8/18/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -25,7 +26,7 @@ For more information about hand off, and how to use hand-off within a bot conver
 
 ## Prerequisites
 * Product license: You need a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for Omnichannel for Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
-* Role: You must be assigned a role that can create add bots into Omnichannel ([see roles required](/dynamics365/omnichannel/administrator/add-users-assign-roles))
+* Role: You must be assigned the Omnichannel administrator role to add bots in Omnichannel for Customer Service. More information: [Understand roles and their privileges](/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges).
 * Azure Application ID: You will need an [application registered in Azure](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) prior to connecting to Omnichannel for Customer Service.
 * [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 

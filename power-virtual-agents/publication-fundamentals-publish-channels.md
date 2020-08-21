@@ -1,15 +1,15 @@
 ---
-title: "Fundamentals - Publish a Power Virtual Agents bot to channels"
+title: "Fundamentals - Publish a chatbot to various channels"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
-keywords: "Publish; demo; demo website; channels"
-ms.date: 1/28/2020
+keywords: "Publish; demo; demo website; channels, PVA"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication, fundamentals"
+ms.custom: "publication, fundamentals, ceX"
 ms.collection: virtual-agent
 ---
 

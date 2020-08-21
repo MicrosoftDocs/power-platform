@@ -1,15 +1,15 @@
 ---
-title: "Rate limits for Power Virtual Agents chatbots"
+title: "Rate limits for chatbots"
 description: "Rate limits determine how often messages can be sent to a chatbot"
-keywords: ""
-ms.date: 4/17/2020
+keywords: "PVA, quotas, rate limits, requests, restrictions"
+ms.date: 8/3/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: quotas, admin
+ms.custom: quotas, admin, ceX
 ms.collection: virtual-agent
 ---
 

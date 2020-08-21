@@ -1,7 +1,7 @@
 ---
-title: "Bot authoring in Power Virtual Agents"
-description: "Discover how to create bots and topics easily and with no coding or long deployment times."
-keywords: ""
+title: "Chatbot authoring"
+description: "Discover how to create bots and topics easily in Power Virtual Agents with no coding or long deployment times."
+keywords: "PVA"
 ms.date: 6/09/2020
 ms.service:
   - dynamics-365-ai

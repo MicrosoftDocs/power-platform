@@ -3,11 +3,10 @@ title: Responding to Data Subject Rights (DSR) requests for Power Apps customer 
 description: Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data
 author: jimholtz
 ms.reviewer: paulliew
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 08/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -71,7 +70,7 @@ Model-driven apps and model-driven app permissions    | Model-driven app design 
 
 Power Apps offers the following experiences to find personal data for a specific user:
 
-- **Website access**: [Power Apps site](https://make.powerapps.com), [Power Apps Admin center](https://admin.powerapps.com/), and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+- **Website access**: [Power Apps site](https://make.powerapps.com) and [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 - **PowerShell access**: Power Apps cmdlets (for [app creators](https://go.microsoft.com/fwlink/?linkid=871448) and [administrators](https://go.microsoft.com/fwlink/?linkid=871804)) and [On-premises gateway cmdlets](https://go.microsoft.com/fwlink/?linkid=872238)
 
 For detailed steps on how you can use these experiences to find personal data for a specific user for each of these types of resources, see [Responding to Data Subject Rights (DSR) requests to export Power Apps customer data](powerapps-gdpr-export-dsr.md).
@@ -100,7 +99,7 @@ If a data subject asks you to rectify the personal data that resides in your org
 You can use Azure Active Directory to manage the identities (personal data) of your users within Power Apps. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services. See [GDPR: Data Subject Requests (DSRs)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) for details.
 
 ## Restrict
-Data subjects may request that you restrict processing of their personal data.  We provide both pre-existing application programming interfaces (APIs) and user interfaces (UIs).  These experiences provide the enterprise customer's Power Platform service admin the capability to manage such DSRs through a combination of data export and data deletion. A customer may request:
+Data subjects may request that you restrict processing of their personal data.  We provide both pre-existing application programming interfaces (APIs) and user interfaces (UIs).  These experiences provide the enterprise customer's Power Platform admin the capability to manage such DSRs through a combination of data export and data deletion. A customer may request:
 
 * Export an electronic copy of the personal data of the user, including:
 

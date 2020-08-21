@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 06/22/2020
+ms.date: 08/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -22,17 +22,13 @@ An environment is a space to store, manage, and share your organization's busine
 > For the blog announcing the latest changes to environment creation, see [Provisioning and administration updates are now live in the Power Platform admin center](https://powerapps.microsoft.com/blog/provisioning-and-administration-updates-are-now-live-in-the-power-platform-admin-center/). 
 
 ## Provisioning a new environment
-You have a choice when provisioning a new environment. You can:
-
-- Provision based on [buying an environment](https://docs.microsoft.com/dynamics365/admin/add-instance-subscription#add-an-additional-instance) using the Dynamics 365 Admin center.<br />
-or <br />
-- Provision based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).
+You can provisioning a new environment based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).
 
 ### What's new in provisioning environments
 We're consolidating how you view, create, and manage environments. 
 
 - **Environments can now be provisioned in the Power Platform admin center**: You can create environments in the Power Platform admin center. Previously, environments could only be created in the Dynamics 365 Admin center and the Power Apps Admin center. 
-- **Admins can govern environment creation**: To limit environment creation to admins (Dynamics 365 service admins, Global admins, or Power Platform service admins), see [Control who can create environments in the Power Platform admin center](control-environment-creation.md). Previously, limiting was done by controlling who had Power Apps P2 licenses.  
+- **Admins can govern environment creation**: To limit environment creation to admins (Dynamics 365 admins, Global admins, or Power Platform admins), see [Control who can create environments in the Power Platform admin center](control-environment-creation.md). Previously, limiting was done by controlling who had Power Apps P2 licenses.  
 - **Admins can see all environments**: Admins can see all environments (environments with and without a database, and environments with apps) in the Power Platform admin center. Previously, admins could not see environments created without a database.
 - **Trial environment provisioning**: You can create one trial environment per user. Previously, you could create two per user. See [About trial environments](trial-environments.md).
 
@@ -54,7 +50,7 @@ Your license determines whether you can create environments.
 To determine which license a user has, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and follow the steps in [Assign licenses to multiple users on the Active users page](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
 > [!NOTE]
-> Global admins and Power Platform service admins can create environments without a license. See [Administer without a license](global-service-administrators-can-administer-without-license.md). 
+> Global admins and Power Platform admins can create environments without a license. See [Administer without a license](global-service-administrators-can-administer-without-license.md). 
 
 ## Create an environment in the Power Platform admin center
 An environment provides storage for apps, flows, data, and various other resources. When users create an app in an environment, that app can connect to any data source, including connections, gateways, and flows. How you choose to leverage environments depends on your organization and the apps you're trying to build. For more information, see [Environments overview](environments-overview.md).
@@ -81,7 +77,7 @@ To create an environment with a database, you need 1GB available database capaci
 
 ### Steps
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Global admin, or Power Platform service admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
@@ -120,7 +116,7 @@ You can create an environment without a database and use your own data store.
 You need 1GB available database capacity.
 
 ### Steps
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Global admin, or Power Platform service admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
 2. In the navigation pane, select **Environments**, and then select **New**.
 
@@ -143,7 +139,7 @@ You need 1GB available database capacity.
 ## Provision a sandbox environment
 To provision a [sandbox environment](sandbox-environments.md), you change a production environment to sandbox.
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Global admin, or Power Platform service admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
 2. From the left-side menu, select **Environments**, and then select a production environment.
 
@@ -169,7 +165,7 @@ You can indicate how often you would prefer an environment to receive updates an
 
 To set refresh cadence:
 
-1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 service admin, Global admin, or Power Platform service admin).
+1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
 2. From the left-side menu, select **Environments**, and then select an environment.
 
@@ -193,9 +189,6 @@ The refresh cadence does not change when you will receive updates for:
 > - If you’ve chosen the **moderate** cadence for the environment, all creating and editing of canvas apps will receive updates once a month. When apps are published, they will receive the corresponding runtime version.
 
 ## FAQ
-
-### I'm a Dynamics 365 customer. Should I provision using the Dynamics 365 Admin center or Power Platform admin center?
-Power Platform admin center provisioning is only available for customers who have transitioned to the new capacity-based licenses. If you have not transitioned, please use the Dynamics 365 Admin center for provisioning. 
 
 ### What are the new trial limits for Power Apps customers?
 The new trial limits are one per user. 
