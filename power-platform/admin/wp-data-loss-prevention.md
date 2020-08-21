@@ -41,7 +41,7 @@ When a new policy is created, by default all connectors are placed in the **Non-
 >
 > The **Content Conversion** connector is an integral feature of Power Platform, used to convert an HTML document to plain text. It applies both to **Business** and **Non-Business** scenarios and doesn't store any data context of the content converted through it; therefore, it's not available for classification through DLP policies.
 >
-> Since child flows have a dependency on HTTP connector, the grouping that admins choose for HTTP connector in a DLP policy may impact the ability to run child flows in that environment/tenant. Make sure your HTTP connectors are classified in the appropriate group for your child flows to function. If there are concerns in classifying it as business in shared environments such as the default environment, our advice is to classify it as non-business or to block it and create dedicated environments where makers can use HTTP connector, but restrict the maker list so that you can unblock makers from building child flows. 
+> Since child flows have a dependency on HTTP connector, the grouping that admins choose for HTTP connector in a DLP policy may impact the ability to run child flows in that environment/tenant. Make sure your HTTP connectors are classified in the appropriate group for your child flows to function. If there are concerns in classifying it as business in shared environments such as the default environment, our advice is to classify it as non-business or to block it and create dedicated environments where makers can use HTTP connector. Then, restrict the maker list so that you can unblock makers from building child flows. 
 
 ### How data is shared among data groups
 
