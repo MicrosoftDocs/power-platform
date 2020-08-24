@@ -2,7 +2,6 @@
 title: "Manage transactions with multiple currencies  | MicrosoftDocs"
 description: Manage transactions with multiple currencies
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -21,9 +20,9 @@ search.app:
 Currencies determine the prices for products in the product catalog and the cost of transactions, such as sales orders. If your customers are spread across geographies, add their currencies to manage your transactions. Add the currencies that are most appropriate for your current and future business needs.  
 
 > [!NOTE]
-> If your environment is a [Common Data Service environment](wp-cds-for-apps.md), you are in the Power Platform admin center, and you select the **Currencies** page (**Environments** > [select environment] > **Settings** > **Business** > **Currencies**), the page will be blank. This is because setting a currency is not supported in Common Data Service environments.
+> If your environment is a [Common Data Service environment](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro), you are in the Power Platform admin center, and you select the **Currencies** page (**Environments** > [select environment] > **Settings** > **Business** > **Currencies**), the page will be blank. This is because setting a currency is not supported in Common Data Service environments.
 
-## Add a currency  
+## Add a currency 
 
 1. [!INCLUDE[proc_permissions_system_admin](../includes/proc-permissions-system-admin.md)]  
 
