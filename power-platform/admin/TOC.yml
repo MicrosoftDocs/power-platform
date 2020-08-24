@@ -462,20 +462,6 @@
         href: web-application-requirements.md
       - name: On-premises server cipher suites and TLS requirements
         href: onpremises-server-cipher-tls-requirements.md
-    - name: Platform architecture
-      items: 
-      - name: About environments 
-        href: wp-environments.md
-      - name: Common Data Service 
-        href: wp-cds-for-apps.md
-      - name: Types of Power Apps 
-        href: wp-types-powerapps.md
-      - name: Power Automate
-        href: wp-about-flows.md
-      - name: Connectors 
-        href: wp-connectors.md
-      - name: Solution Packages 
-        href: wp-solution-packages.md          
     - name: Security
       items:
       - name: Overview
