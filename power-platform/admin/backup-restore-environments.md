@@ -195,7 +195,7 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ## Troubleshooting
 
-### Don't see your environment to restore to?
+### Don't see your environment to restore to? 
 Only sandbox environments can be restored to.
 
 ### See also
