@@ -2,11 +2,10 @@
 title: "Manage email notifications  | MicrosoftDocs"
 description: Manage email notifications
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 08/25/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,9 +15,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Manage email notifications to admins
+# Manage email notifications to admins 
 
-The service team regularly sends email notifications to the administrators in your  organization. Now, with a simple approach of mailbox rules, you have complete control over who should receive these email communications. As an administrator, you can set up mailbox rules to automatically redirect email communications from model-driven apps in Dynamics 365, (crmoln@microsoft.com) to additional recipients that you choose. For example, you can add to the list of recipients:  
+The service team regularly sends email notifications to the administrators in your  organization. 
+
+<!-- Now, with a simple approach of mailbox rules, you have complete control over who should receive these email communications. As an administrator, you can set up mailbox rules to automatically redirect email communications from model-driven apps in Dynamics 365, (crmoln@microsoft.com) to additional recipients that you choose. For example, you can add to the list of recipients:  
   
 - People outside of your organization, such as your partners.  
   
@@ -39,9 +40,10 @@ The service team regularly sends email notifications to the administrators in yo
   If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your admin. If you’re not sure who your  admin is, see: [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
   
   For more information, download the white paper: [Create your Mailbox rule](https://download.microsoft.com/download/D/1/A/D1A64A1D-FD55-43E4-AD71-9D32D16E5F9E/Create%20your%20Mailbox%20rule.docx)  
-    
+-->
+
 ## Set email notifications
- By default, admins will receive update notifications. You can add others to receive update notifications.  
+ By default, admins will receive update notifications. You can specify which notifications to receive and whether the mailbox owner is notified.
   
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
