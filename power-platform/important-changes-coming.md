@@ -50,7 +50,6 @@ Rather than use the Dynamics 365 connector, the [Common Data Service (Current En
 - It does not enable cross-tenant or cross environment connections. 
 - It cannot be used for canvas apps that use the [Power Apps for Windows client](https://www.microsoft.com/p/power-apps/9nblggh5z8f3).
 - Coming soon:
-    - It will soon be available within Flows that are created outside the context of a solution.
     - It will soon be available on US Government cloud.
 
 If you cannot use the Common Data Service (Current Environment) connector, you should use the [Common Data Service connector](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
