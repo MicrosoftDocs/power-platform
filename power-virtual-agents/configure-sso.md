@@ -19,12 +19,15 @@ ms.collection: virtual-agent
 
 Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're in to the page where the bot is deployed.  
 
-For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to).
+For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
 >[!IMPORTANT] 
 >SSO is only supported for Azure Active Directory (Azure AD). Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
 >You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
+>[!IMPORTANT] 
+>SSO is only supported on the Custom Website (web) channel. Microsoft Teams or other channels are not yet supported.
+>You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 ## Prerequisites
 
