@@ -1,6 +1,36 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/wp-connectors.md",
+      "redirect_url": "https://docs.microsoft.com/powerapps/maker/canvas-apps/connections-list",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/wp-cds-for-apps.md",
+      "redirect_url": "https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/wp-types-powerapps.md",
+      "redirect_url": "https://docs.microsoft.com/powerapps/maker/",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/wp-solution-packages.md",
+      "redirect_url": "https://docs.microsoft.com/powerapps/powerapps-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/wp-about-flows.md",
+      "redirect_url": "https://docs.microsoft.com/power-automate/getting-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/wp-environments.md",
+      "redirect_url": "https://docs.microsoft.com/power-platform/admin/environments-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/alm/environment-and-tenant-migration.md",
       "redirect_url": "https://docs.microsoft.com/powerapps/maker/common-data-service/export-solutions",
       "redirect_document_id": "false"
