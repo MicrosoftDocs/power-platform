@@ -2,7 +2,7 @@
 title: "Share and collaborate on chatbots with other users"
 description: "Share Power Virtual Agents chatbots with other users, assign security roles, and work together."
 keywords: "Administration, share, multi-author, PVA"
-ms.date: 8/3/2020
+ms.date: 8/25/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -16,6 +16,10 @@ ms.collection: virtual-agent
 # Share your bot with other users
 
 Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
+
+> 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4DdcM]
+> 
 
 You can stop sharing a bot with individual users at any time. 
 
