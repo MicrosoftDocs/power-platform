@@ -422,7 +422,7 @@
         href: audit-data-user-activity.md
       - name: Common Data Service and model-driven apps
         href: enable-use-comprehensive-auditing.md    
-    - name: PowerShell support for Power Apps (preview) 
+    - name: PowerShell support for Power Apps 
       items:
       - name: About PowerShell support
         href: powerapps-powershell.md           
