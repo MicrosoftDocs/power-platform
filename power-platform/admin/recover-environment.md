@@ -28,7 +28,7 @@ Get-AdminPowerAppSoftDeletedEnvironment
 Recover-AdminPowerAppEnvironment -EnvironmentName $environmentName -WaitUntilFinished $true
 ```  
 
-To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdlets for administrators (preview)](powerapps-powershell.md#power-apps-cmdlets-for-administrators-preview).
+To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdlets for administrators](powerapps-powershell.md#power-apps-cmdlets-for-administrators).
 
  
 > [!NOTE]
