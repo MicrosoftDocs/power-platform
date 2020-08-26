@@ -2,7 +2,7 @@
 title: "Configure single sign-on"
 description: "Enable your bot to authenticate an already-signed-in user"
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 8/24/2020
+ms.date: 8/25/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -19,12 +19,15 @@ ms.collection: virtual-agent
 
 Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're in to the page where the bot is deployed.  
 
-For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to).
+For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
 >[!IMPORTANT] 
 >SSO is only supported for Azure Active Directory (Azure AD). Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
 >You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
+>[!IMPORTANT] 
+>SSO is only supported on the [live website publication channel](publication-connect-bot-to-web-channels.md). Microsoft Teams or other channels are not supported.
+>You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 ## Prerequisites
 
