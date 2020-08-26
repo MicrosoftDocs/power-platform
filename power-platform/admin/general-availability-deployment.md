@@ -34,7 +34,7 @@ Throughout a release wave, your environments will be updated during one of the w
 
 The general availability deployment is based on the regions where environments are created.
 
-|Regions  |Schedule for 2020 wave 2 GA deployment|
+|Regions  |Schedule for 2020 wave 2 general availability deployment|
 |---------|---------|
 |South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, October 2nd – Sunday, October 4th     |
 |Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, October 9th – Sunday, October 11th      |
