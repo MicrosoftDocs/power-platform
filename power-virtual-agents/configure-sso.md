@@ -2,7 +2,7 @@
 title: "Configure single sign-on"
 description: "Enable your bot to authenticate an already-signed-in user"
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 8/3/2020
+ms.date: 8/25/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -17,13 +17,17 @@ ms.collection: virtual-agent
 # Configure single sign-on with Azure Active Directory in Power Virtual Agents
 
 
-Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're already signed in to the page where the bot is deployed.  
+Power Virtual Agents supports single sign-on (SSO), which means chatbots can sign the user in if they're in to the page where the bot is deployed.  
 
-For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to).
+For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
+>[!IMPORTANT] 
+>SSO is only supported for Azure Active Directory (Azure AD). Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
+>You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
-
-
+>[!IMPORTANT] 
+>SSO is only supported on the [live website publication channel](publication-connect-bot-to-web-channels.md). Microsoft Teams or other channels are not supported.
+>You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 ## Prerequisites
 
@@ -38,13 +42,13 @@ The following illustration shows how a user is signed in without seeing a login 
 
   ![Illustration of SSO authentication flow](media/sso-illustration.png)
 
-1. The bot user enters a phrase that [triggers a  sign in topic](advanced-end-user-authentication.md). This topic is designed to sign the user in and use the user's [authenticated token (`AuthToken` variable)](advanced-end-user-authentication.md#authtoken-variable).
+1. The bot user enters a phrase that [triggers a  sign-in topic](advanced-end-user-authentication.md). The sign-in topic is designed to sign the user in and use the user's [authenticated token (`AuthToken` variable)](advanced-end-user-authentication.md#authtoken-variable).
 
 2. Power Virtual Agents sends a login prompt to allow the user to sign in with their configured identity provider.
 
-3. The bot's [custom canvas](customize-default-canvas.md) intercepts this sign in prompt and requests an on-behalf-of (OBO) token from Azure Active Directory (Azure AD). The canvas sends the token to the bot.
+3. The bot's [custom canvas](customize-default-canvas.md) intercepts the sign-in prompt and requests an on-behalf-of (OBO) token from Azure AD. The canvas sends the token to the bot.
 
-4. On receipt of the OBO token, the bot exchanges the OBO token for an "access token" and fills in the `AuthToken` variable using this value. The `IsLoggedIn` variable is also set at this time.
+4. On receipt of the OBO token, the bot exchanges the OBO token for an "access token" and fills in the `AuthToken` variable using the access token's value. The `IsLoggedIn` variable is also set at this time.
 
 
 ## Configure single sign-on
@@ -64,7 +68,7 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 To enable single sign-on, you need to register the custom canvas as an app in Azure AD.
 
-This needs to be a separate app registration from the one you [created when you configured authentication with Azure AD](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
+The custom canvas app registration needs to be a separate app registration from the one you [created when you configured authentication with Azure AD](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
 
 You then need to redirect the app registration to point to your custom canvas.
 
@@ -104,7 +108,7 @@ You then need to redirect the app registration to point to your custom canvas.
 
     ![Screenshot showing the web tile highlighted](media/sso-platform-web.png "Screenshot showing the web tile highlighted")
  
-1. Under **Redirect URIs**  add the full URL to the page where your chat canvas is hosted. Under the **Implicit grant** section, select the **Id Tokens** and **Access Tokens** checkboxes.
+1. Under **Redirect URIs**,  add the full URL to the page where your chat canvas is hosted. Under the **Implicit grant** section, select the **Id Tokens** and **Access Tokens** checkboxes.
 
 1. Select **Configure** to confirm your changes.
 
@@ -153,7 +157,7 @@ This step creates a trust relationship between the authentication app registrati
 ### Configure authentication in Power Virtual Agents to enable single sign-on
 The **Token Exchange URL** in the Power Virtual Agents authentication configuration page is used to exchange the OBO token for the requested access token through the bot framework. 
 
-This calls into Azure AD to perform the actual exchange.
+Power Virtual Agents calls into Azure AD to perform the actual exchange.
 
 **Add the token exchange URL to your bot's authentication page**
 
@@ -165,7 +169,7 @@ This calls into Azure AD to perform the actual exchange.
 
     ![Go to Manage and then Authentication](media/auth-manage-sm.png)
 
-1. Enter the full scope URI from the **Expose an API** blade for the canvas app registration in the **Token exchange URL** field. This will be in the format of `api://1234-4567/scope.name`.
+1. Enter the full scope URI from the **Expose an API** blade for the canvas app registration in the **Token exchange URL** field. The URI will be in the format of `api://1234-4567/scope.name`.
 
     ![Screenshot highlighting the scope's API](media/sso-api.png "Screenshot highlighting the scope's API")  
 
@@ -246,7 +250,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
     </script>
     ```
 
-4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable. 
+4. Insert the following \<script\> in the \<body\> section. Within the `main` method, this code adds a conditional to your `store`, with your bot's unique identifier. It also generates a unique ID as your `userId` variable. 
 
 5. Update `<BOT ID>` with your bot's ID. You can see your bot's ID by going to the **Channels tab** for the bot you're using, and selecting **Mobile app** on the Power Virtual Agents portal.
 

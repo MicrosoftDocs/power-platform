@@ -95,8 +95,7 @@
         - name: Back up and restore environment
           href: backup-restore-environments.md
         - name: Administration mode
-          href: sandbox-environments.md#administration-mode
-    #      href: admin-mode.md
+          href: admin-mode.md
         - name: Customer managed encryption key
           href: manage-encryption-key.md
         - name: Trial environments
@@ -320,8 +319,7 @@
         - name: Multiple online environments or tenants
           href: multiple-online-environments-tenants.md
         - name: Administration mode
-      #    href: admin-mode.md
-          href: sandbox-environments.md#administration-mode         
+          href: admin-mode.md        
         - name: Support environment
           href: support-environment.md     
         - name: Automation of tasks with PowerShell 
@@ -392,9 +390,9 @@
       items: 
       - name: What's new for storage
         href: whats-new-storage.md
-      - name: New model capacity storage
+      - name: New capacity storage model
         href: capacity-storage.md
-      - name: Legacy capacity storage
+      - name: Legacy capacity storage model
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
@@ -424,7 +422,7 @@
         href: audit-data-user-activity.md
       - name: Common Data Service and model-driven apps
         href: enable-use-comprehensive-auditing.md    
-    - name: PowerShell support for Power Apps (preview) 
+    - name: PowerShell support for Power Apps 
       items:
       - name: About PowerShell support
         href: powerapps-powershell.md           
@@ -464,20 +462,6 @@
         href: web-application-requirements.md
       - name: On-premises server cipher suites and TLS requirements
         href: onpremises-server-cipher-tls-requirements.md
-    - name: Platform architecture
-      items: 
-      - name: About environments 
-        href: wp-environments.md
-      - name: Common Data Service 
-        href: wp-cds-for-apps.md
-      - name: Types of Power Apps 
-        href: wp-types-powerapps.md
-      - name: Power Automate
-        href: wp-about-flows.md
-      - name: Connectors 
-        href: wp-connectors.md
-      - name: Solution Packages 
-        href: wp-solution-packages.md          
     - name: Security
       items:
       - name: Overview

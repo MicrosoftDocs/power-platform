@@ -2,11 +2,10 @@
 title: "Model-driven apps in Dynamics 365 - operated by 21Vianet in China  | MicrosoftDocs"
 description: Model-driven apps in Dynamics 365 - operated by 21Vianet in China
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 08/26/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -50,6 +49,7 @@ For information on provisioning environments, see [Create and manage environment
 
 Due to certain technological dependencies, the following features listed will not be available for general availability of Common Data Service services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release notes](https://go.microsoft.com/fwlink/p/?linkid=2010158).
 
+- [Manage your documents using SharePoint](manage-documents-using-sharepoint.md) isn’t supported with Common Data Service services operated by 21Vianet. 
 - [Search for records in an app](https://docs.microsoft.com/powerapps/user/search) or **Categorized Search** used for searching records across multiple entities will be unavailable.
 - [Microsoft 365 Groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups) feature used for shared workspace for emails, conversations, files, and events in Common Data Service services will be unavailable.
 - [Online Management API](https://docs.microsoft.com/powerapps/developer/common-data-service/online-management-api) (Admin API) enables customers to create and manage the Common Data Service environments using REST API will be unavailable.
@@ -79,6 +79,7 @@ Due to certain technological dependencies, the following features listed will no
 - The following [Sales](https://docs.microsoft.com/dynamics365/customer-engagement/sales-enterprise/help-hub) features will be unavailable: 
   - [LinkedIn’s Organization Chart feature](https://docs.microsoft.com/dynamics365/sales-enterprise/live-org-chart#embedded--sales-navigator-control)
   - [Integrate LinkedIn Sales Navigator solutions](https://docs.microsoft.com/dynamics365/linkedin/integrate-sales-navigator)
+  - [Forecasting](https://docs.microsoft.com/dynamics365/sales-enterprise/configure-forecast)
   - [Dynamics 365 Sales Insights](https://docs.microsoft.com/dynamics365/ai/sales/overview)
 
 - The following components of Dynamics 365 Plan are unavailable.

@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 07/10/2020
+ms.date: 08/27/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -24,6 +24,9 @@ Administrators and IT professionals should use this information to prepare for f
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
+## Online management API PowerShell module is deprecated
+
+Effective August 26, 2020, the online management API PowerShell module is deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
 
 ## Company News Timeline solution is deprecated
 
@@ -36,7 +39,7 @@ As an alternative you can install news Power Apps component framework control. F
 
 ## Dynamic 365 Sales bot is deprecated
 ----------------------------------------
-Effective June 2, 2020, the Dynamics 365 [Sales bot](https://docs.microsoft.com/dynamics365/teams-integration/teams-bot-search), a feature that enables users to retrieve sales information through a bot within Dynamics 365 Sales app for Teams will be deprecated. Until July 31, 2020, Microsoft will continue to provide support for the feature, but won't release any additional functionality beyond what is already present.  After July 31, 2020, you will no longer be able to receive responses to conversations. The bot won’t be available for new customers; existing customers may still be able to access the bot from the Chat, however the bot will not respond to questions.
+Effective June 2, 2020, the Dynamics 365 Sales bot, a feature that enables users to retrieve sales information through a bot within Dynamics 365 Sales app for Teams will be deprecated. Until July 31, 2020, Microsoft will continue to provide support for the feature, but won't release any additional functionality beyond what is already present.  After July 31, 2020, you will no longer be able to receive responses to conversations. The bot won’t be available for new customers; existing customers may still be able to access the bot from the Chat, however the bot will not respond to questions.
 
 It is our goal to deliver a powerful bot experience that allows users to retrieve and manage information. Based on usage data and feedback from our customers, we will be working on a powerful, extensible set of capabilities and features that will allow you to intuitively access and interact with sales information—among other entities—through a bot interface. We will keep you updated on timing for when this will be available.
 
@@ -211,7 +214,7 @@ form that requires user input to start and run to completion. When you start the
 dialog process, a wizard-like interface is presented; users make selections or
 enter data as they progress through each page of the wizard.
 
-Process dialogs are deprecated and will be removed by December 1, 2020. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](https://docs.microsoft.com/flow/replace-dialogs)
+Process dialogs are deprecated and will be removed by April 1, 2021. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](https://docs.microsoft.com/flow/replace-dialogs)
 
 Legacy process-related attributes in entities are deprecated
 ------------------------------------------------------------

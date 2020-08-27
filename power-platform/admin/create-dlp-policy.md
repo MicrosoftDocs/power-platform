@@ -20,7 +20,7 @@ search.app:
 
 To protect data in your organization, you can use Power Apps to create and enforce policies that define the consumer connectors that specific business data can be shared with. These policies are called *data loss prevention* (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
 
-DLP policies can be created at the tenant level or at the environment level, and are managed from the Power Platform admin center. The new user interface is now in public preview.
+DLP policies can be created at the tenant level or at the environment level and are managed from the Power Platform admin center. 
 
 ## Prerequisites
 
@@ -89,7 +89,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    </tr>
    <tr>
    <td width="20%"> Blockable</td>
-   <td width="80%"> Connectors that can be blocked. For a list of connectors that can't be blocked, see <a href="wp-data-loss-prevention.md#list-of-connectors-that-cannot-be-blocked">List of connectors that can't be blocked</a>.  </td>
+   <td width="80%"> Connectors that can be blocked. For a list of connectors that can't be blocked, see <a href="wp-data-loss-prevention.md#list-of-connectors-that-cant-be-blocked">List of connectors that can't be blocked</a>.  </td>
    </tr>
    <tr> 
    <td width="20%"> Type</td>
