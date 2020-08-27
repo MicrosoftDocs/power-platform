@@ -20,12 +20,12 @@ search.app:
 
 Before making any changes to the Center of Excellence (CoE) Starter Kit, follow the steps in [Extending the starter kit](setup.md#extending-the-starter-kit) and create a new unmanaged solution for your changes.
 
-## Change the Welcome email from Office 365 Groups to an Azure AD security group
+## Change the Welcome email an Azure AD security group
 
-If you'd prefer to use an Azure Active Directory (Azure AD) security group instead of an Office 365 group for your makers, you can modify the *Admin \| Welcome Email* flow.  
+If you'd prefer to use an Azure Active Directory (Azure AD) security group instead of a Microsoft 365 group for your makers, you can modify the *Admin \| Welcome Email* flow.  
 
 > [!NOTE]
-> Using an Azure AD security group will allow you to share apps with your maker security group. Currently, apps can't be shared with Office 365 Groups.
+> Using an Azure AD security group will allow you to share apps with your maker security group. Currently, apps can't be shared with Microsoft 365 Groups.
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>), and set the current environment to the environment where the CoE solution is installed.
 

@@ -75,9 +75,9 @@ The following connectors can't be blocked by using DLP policies.
 |Microsoft Forms Pro      | Notifications        |
 |Microsoft Teams      | Common Data Service         |
 |Microsoft To-Do (Business)      | Common Data Service <br />(current environment)        |
-|Office 365 Groups      | Power Apps Notifications         |
-|Office 365 Outlook      |         |
-|Office 365 Users      |         |
+|Microsoft 365 Groups      | Power Apps Notifications         |
+|Microsoft 365 Outlook      |         |
+|Microsoft 365 Users      |         |
 |OneDrive for Business      |         |
 |OneNote (Business)      |         |
 |Planner     |         |
@@ -87,7 +87,7 @@ The following connectors can't be blocked by using DLP policies.
 |Power BI      |         |
 |Yammer      |         |
 |Kaizala      |         |
-|Office 365 Groups Mail (Preview)      |         |
+|Microsoft 365 Groups Mail (Preview)      |         |
 |Cloud App Security      |         |
 
 > [!NOTE]

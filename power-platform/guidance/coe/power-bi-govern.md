@@ -78,7 +78,7 @@ The **Flows Risk Assessment** page enables you to filter by:
 
 - Maker
 
-- Connector (Office 365 Users, Common Data Service)
+- Connector (Microsoft 365 Users, Common Data Service)
 
 - Operation (Parse JSON, HTTP)
 
@@ -112,7 +112,7 @@ Select **SQL Server** in the **Connector** drop-down in the right-hand filter se
 
 ### Identify flow actions
 
-- Specific actions or connectors might require you to gather additional information from the maker or educate them on usage. An example might be the Forward Email action of the Office 365 Outlook connector, or HTTP requests.
+- Specific actions or connectors might require you to gather additional information from the maker or educate them on usage. An example might be the Forward Email action of the Outlook connector, or HTTP requests.
 
 Select actions or connectors you're interested in from the **Connector** and **Action** lists on the right side of this page to find flows that use those connectors or actions.
 
