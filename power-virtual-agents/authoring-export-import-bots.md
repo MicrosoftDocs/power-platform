@@ -141,8 +141,10 @@ You export and import bots by exporting and importing their containing solutions
 
     >[!NOTE]
     >You can't export managed solutions. When you create a solution, by default it will not be managed. If you change it to a managed solution you won't be able to export it, and will need to create a new solution.
+    >
     >If your bot has a large number of components (for example, more than 250 topics or more than 100 entities), export the bot using classic Power Apps portal instead.
-    >![Switch to classic view[(media/export-switch-classic.png)
+    >
+    >![Switch to classic view](media/export-switch-classic.png)
 
 
 2. Select **Next** in the **Before you export** panel.
