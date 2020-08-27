@@ -26,45 +26,52 @@ DLP policies enforce rules for which connectors can be used together by classify
 DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). They affect Power Platform canvas apps and Power Automate flows. To create a DLP policy, you need to be a [tenant admin](use-service-admin-role-manage-tenant.md) or have the [Environment Admin role](environments-overview.md#environment-permissions). 
 
 > [!NOTE]
-> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center is now generally available. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also in generally available. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, are currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
+> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center is now generally available. There is new DLP policy PowerShell support for three-way DLP policy classification, which is also generally available. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, is currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](https://docs.microsoft.com/connectors/)
 
 ## Connector classification
 
 Data groups are a simple way to categorize connectors within a DLP policy. The three data groups available are the **Business** data group, the **Non-Business** data group, and the **Blocked** data group. 
 
-A good way to categorize connectors is to place them in groups based on the business centered or personal-use centered services that they connect to in the context of your organization. Connectors that host business-use data should be classified as **Business** and connectors that host personal-use data should be classified as **Non-Business**. Any connectors that you want to restrict usage of across one or more environments should be classified as **Blocked**.
+A good way to categorize connectors is to place them in groups based on the business-centered or personal-use-centered services that they connect to in the context of your organization. Connectors that host business-use data should be classified as **Business** and connectors that host personal-use data should be classified as **Non-Business**. Any connectors that you want to restrict usage of across one or more environments should be classified as **Blocked**.
 
 When a new policy is created, by default all connectors are placed in the **Non-Business** group. From there they can be moved to **Business** or **Blocked** based on your preference. You manage the connectors in a data group when you create or modify the properties of a DLP policy from the admin center. See [Create a data loss prevention (DLP) policy](create-dlp-policy.md). You can also change the initial classification of connectors by editing your DLP policy. See [Edit a DLP policy](prevent-data-loss.md#edit-a-dlp-policy).
+
+
+<!-- editor question: In the following paragraph, should it be "When an HTTP request is received" instead of "a" HTTP request? -->
+
 
 > [!NOTE]
 > Until recently, some HTTP connectors weren't readily available for DLP policy configuration by using the DLP policy UI or PowerShell. As of May 2020, the following HTTP connectors can now be classified by using the DLP policy UI and PowerShell, like any other Power Platform connector: **HTTP**, **HTTP Webhook**, and **When a HTTP request is received**. If legacy DLP policies are being updated using the new DLP UI, a warning message will be displayed to admins indicating that these three HTTP connectors are now being added to the DLP purview and that they should ensure that these connectors are placed in the right DLP grouping.
 >
-> Since child flows share an internal dependency with HTTP connector, the grouping that admins choose for HTTP connector in a DLP policy may impact the ability to run child flows in that environment/tenant. Make sure your HTTP connectors are classified in the appropriate group for your child flows to function. If there are any concerns in classifying it as **Business** in shared environments such as the default environment, our advice is to classify it as **Non-Business** or to block it. Then, create dedicated environments where makers can use HTTP connector, but restrict the maker list so that you can unblock makers from building child flows.
+> Since child flows share an internal dependency with HTTP connector, the grouping that admins choose for HTTP connector in a DLP policy might impact the ability to run child flows in that environment/tenant. Make sure your HTTP connectors are classified in the appropriate group for your child flows to function. If there are any concerns in classifying it as **Business** in shared environments such as the default environment, our advice is to classify it as **Non-Business** or to block it. Then, create dedicated environments where makers can use HTTP connector, but restrict the maker list so that you can unblock makers from building child flows.
 >
-> The **Content Conversion** connector is an integral feature of Power Platform, used to convert an HTML document to plain text. It applies both to **Business** and **Non-Business** scenarios and doesn't store any data context of the content converted through it; therefore, it's not available for classification through DLP policies.
+> The **Content Conversion** connector is an integral feature of Microsoft Power Platform, used to convert an HTML document to plain text. It applies both to **Business** and **Non-Business** scenarios and doesn't store any data context of the content converted through it; therefore, it's not available for classification through DLP policies.
 
 ### How data is shared among data groups
 
-Data can't be shared among connectors that are located in different groups. For example, if you place SharePoint and Salesforce connectors in the **Business** group and you place Gmail in the **Non-Business** group, makers can't create an app or flow that uses both the SharePoint and Gmail connectors. This in turn restricts data flows between these two services in Power Platform. 
+Data can't be shared among connectors that are located in different groups. For example, if you place SharePoint and Salesforce connectors in the **Business** group and you place Gmail in the **Non-Business** group, makers can't create an app or flow that uses both the SharePoint and Gmail connectors. This in turn restricts data flows between these two services in Microsoft Power Platform. 
 
-Although data can't be shared among services in different groups, it can be shared among services within a specific group. From the earlier example, because SharePoint and Salesforce were placed in the same data group, makers can create an app or flow that uses both SharePoint and Salesforce connectors together. This in turn allows data flows between these two services in Power Platform.
+Although data can't be shared among services in different groups, it can be shared among services within a specific group. From the earlier example, because SharePoint and Salesforce were placed in the same data group, makers can create an app or flow that uses both SharePoint and Salesforce connectors together. This in turn allows data flows between these two services in Microsoft Power Platform.
 
-The key point is that connectors in the same group can share data in Power Platform, whereas connectors in different groups can't share data.
+The key point is that connectors in the same group can share data in Microsoft Power Platform, whereas connectors in different groups can't share data.
 
 ### The effect of the Blocked data group
 
-Data flow to a specific service can be blocked altogether by marking that connector as **Blocked**. For example, if you place Facebook in the **Blocked** group, makers can't create an app or flow that uses the Facebook connector. This in turn restricts data flows to this service in Power Platform. 
+Data flow to a specific service can be blocked altogether by marking that connector as **Blocked**. For example, if you place Facebook in the **Blocked** group, makers can't create an app or flow that uses the Facebook connector. This in turn restricts data flows to this service in Microsoft Power Platform. 
 
 All third-party connectors can be blocked. All Microsoft-owned premium connectors (except Common Data Service) can be blocked.
 
 ### List of connectors that can't be blocked
 
-All connectors driving core Power Platform functionality (like Common Data Service, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Office Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
+All connectors driving core Microsoft Power Platform functionality (like Common Data Service, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Office Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
 
-However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into following categories:
+However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into the following categories:
 
-1.	Office Enterprise Plan standard connectors (with no additional licensing implications).
-2.	Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Common Data Service is an integral part of Power Platform. 
+<!-- editor note: I changed the following list from numbered to bullets because there seems to be no reason for an order. -->
+
+
+-	Office Enterprise Plan standard connectors (with no additional licensing implications).
+-	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Common Data Service is an integral part of Microsoft Power Platform. 
 
 The following connectors can't be blocked by using DLP policies.
 
