@@ -1,7 +1,7 @@
 ---
 title: "Review ISO, SOC 2, and HIPAA compliance"
 description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
-ms.date: 8/26/2020
+ms.date: 8/27/2020
 ms.keywords: "PVA, ISO, SOC, certification, compliance"
 ms.service:
   - "dynamics-365-ai"
@@ -24,7 +24,7 @@ You can create chatbots that handle protected health information when your organ
 1. Capture health information and personally identifying information, such as the customer’s IP address or email address.
 
 >![NOTE]
->While Power Virtual Agents is covered under HIPAA, it is still not intended for use as a medical device. See the disclaimer on [limitations on how chatbots can be used in medical scenarios](fundamentals-what-is-power-virtual-agents#important-information).
+>While Power Virtual Agents is covered under HIPAA, it is still not intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents#important-information).
 
 ## System and Organization Controls (SOC) compliance
 
