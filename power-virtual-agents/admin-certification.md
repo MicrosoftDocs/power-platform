@@ -17,7 +17,7 @@ ms.cusom: "certification, ceX"
 
 
 
-Power Virtual Agents is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products), and is compliant with a number of International Organization for Standardization (ISO) certifications. Power Virtual Agents is also compliant with System and Organization Controls (SOC) and is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement BAA).
+Power Virtual Agents is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products), and is compliant with a number of International Organization for Standardization (ISO) certifications. Power Virtual Agents is also compliant with System and Organization Controls (SOC) and is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement (BAA).
 
 You can create chatbots that handle protected health information when your organization is bound by HIPAA, as in the following scenarios where the chatbot can:
 1. Ask individuals to provide their health information (blood pressure, weight, and so on).
