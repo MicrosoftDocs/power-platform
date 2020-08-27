@@ -114,7 +114,7 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 | Read and delete connectors | Get-PowerAppConnector *(previously Get-Connector)* <br> Remove-PowerAppConnector *(previously Remove-Connector)* |
 | Read, update, and delete custom connector permissions | Get-PowerAppConnectorRoleAssignment *(previously Get-ConnectorRoleAssignment)* <br> Set-PowerAppConnectorRoleAssignment *(previously Set-ConnectorRoleAssignment)* <br> Remove-PowerAppConnectorRoleAssignment *(previously Remove-ConnectorRoleAssignment)* |
 | Read, add, and remove policy URL patterns | Get-PowerAppPolicyUrlPatterns<br />New-PowerAppPolicyUrlPatterns<br />Remove-PowerAppPolicyUrlPatterns |
-| Read, register, or remove management apps | Get-PowerAppManagementApp<br /> Get-PowerAppManagementApps <br /> New-PowerAppManagementApp <br /> Remove-PowerAppManagementApp|
+| Read, register, and remove management apps | Get-PowerAppManagementApp<br /> Get-PowerAppManagementApps <br /> New-PowerAppManagementApp <br /> Remove-PowerAppManagementApp|
 
 ## Power Apps cmdlets for administrators
 
