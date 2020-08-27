@@ -17,18 +17,20 @@ ms.cusom: "certification, ceX"
 
 
 
-Power Virtual Agents is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products), and as such is compliant with a number of International Organization for Standardization (ISO) certifications. Power Virtual Agents is also compliant with System and Organization Controls (SOC) 2 and is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement BAA).
+Power Virtual Agents is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products), and is compliant with a number of International Organization for Standardization (ISO) certifications. Power Virtual Agents is also compliant with System and Organization Controls (SOC) and is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement BAA).
 
-This means you can create chatbots that handle protected health information, as in the following scenarios where the chatbot can:
+You can create chatbots that handle protected health information when your organization is bound by HIPAA, as in the following scenarios where the chatbot can:
 1. Ask individuals to provide their health information (blood pressure, weight, and so on).
 1. Capture health information and personally identifying information, such as the customer’s IP address or email address.
-1. Give calculated health recommendations.
+
+>![NOTE]
+>While Power Virtual Agents is covered under HIPAA, it is still not intended for use as a medical device. See the disclaimer on [limitations on how chatbots can be used in medical scenarios](fundamentals-what-is-power-virtual-agents#important-information).
 
 ## System and Organization Controls (SOC) compliance
 
-SOC 2 is a method for assuring control regulation within a service. Power Virtual Agents has been audited to be compliant with SOC 2.
+SOC is a method for assuring control regulation within a service. Power Virtual Agents has been audited to be compliant with SOC.
 
-SOC 2 audit reports are available at the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_SOC_/_SSAE_16_Reports).
+SOC audit reports are available at the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_SOC_/_SSAE_16_Reports).
 
 
 ## International Organization for Standardization (ISO) compliance
@@ -47,7 +49,7 @@ ISO 22301:2012 | [Microsoft Service Trust Portal](https://servicetrust.microsoft
 
 ## Health Insurance Portability and Accountability Act (HIPAA) coverage
 
-[HIPAA is a United States government act](https://www.hhs.gov/hipaa/index.html) that pertains to the use and disclosure of certain information for medical use.
+[HIPAA is a United States healthcare law](https://www.hhs.gov/hipaa/index.html) that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities — doctors’ offices, hospitals, health insurers, and other healthcare companies — with access to patients’ protected health information (PHI), as well as to business associates, such as cloud service and IT providers, that process PHI on their behalf..
 
-While Power Virtual Agents is covered under HIPAA, it's important to be aware of the [limitations on how chatbots can be used in medical scenarios](fundamentals-what-is-power-virtual-agents#important-information).
+
 
