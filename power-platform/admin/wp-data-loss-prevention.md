@@ -215,7 +215,7 @@ Users who use a resource that's in violation of the latest DLP policy will see a
 > [!div class="mx-imgBorder"] 
 > ![App opening error](media/dlp-opening-error.png "App opening error")
 
-Similarly, Power Automate makers and users won't be able to start a flow that uses connectors that don't below together or have been blocked by DLP policies. A background system process marks the flow as **Suspended**, and the flow won't be executed until the maker resolves the DLP policy violation.
+Similarly, Power Automate makers and users won't be able to start a flow that uses connectors that don't belong together or have been blocked by DLP policies. A background system process marks the flow as **Suspended**, and the flow won't be executed until the maker resolves the DLP policy violation.
 
 > [!NOTE]
 > The flow suspension process works in a polling mode. It takes about five minutes for the latest DLP policy changes to be assessed against active flows to mark them as suspended due to DLP policy violations. This change isn't instantaneous.
@@ -231,7 +231,7 @@ We are working to address the following known issues and limitations:
 2. Sorting by Created and Modified fields on Data Policy list view doesn’t work correctly.
 3. Three-way DLP policy creation isn't available through admin connectors. Also, the Power Platform for Admins connector always blocks LBI/Non-business group.
 4. If the default group is set as blocked, the list of connectors that can't be blocked won't apply when you use PowerShell to create DLP policies.
-5. Canvas apps assessment for DLP violations at launch time/run time does not work as expected.
+5. Canvas apps assessment for DLP violations at launch time/runtime does not work as expected.
 
 ### See also
 
