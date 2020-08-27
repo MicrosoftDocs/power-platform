@@ -1,6 +1,6 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and model-driven apps in Dynamics 365"
-ms.date: 07/10/2020
+ms.date: 08/27/2020
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -24,6 +24,9 @@ Administrators and IT professionals should use this information to prepare for f
 > "Deprecated" means we intend to remove the feature or capability from a future major release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation
 notification can span a few years. After removal, the feature or capability will no longer work. We are notifying you now so you have sufficient time to plan and update your code before the feature or capability is removed.
 
+## Online management API PowerShell module is deprecated
+
+Effective August 26, 2020, the online management API PowerShell module is deprecated. The [online management API PowerShell module](/powershell/powerapps/get-started-onlinemanagementapi?view=pa-ps-latest) will be updated in October, 2020 to point to newer underlying APIs and won’t receive further updates. We recommend that you use the Power Apps administration module. More information: [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin?view=pa-ps-latest)
 
 ## Company News Timeline solution is deprecated
 
