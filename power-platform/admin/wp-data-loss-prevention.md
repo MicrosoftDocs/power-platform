@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/24/2020
+ms.date: 08/27/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -36,10 +36,6 @@ A good way to categorize connectors is to place them in groups based on the busi
 
 When a new policy is created, by default all connectors are placed in the **Non-Business** group. From there they can be moved to **Business** or **Blocked** based on your preference. You manage the connectors in a data group when you create or modify the properties of a DLP policy from the admin center. See [Create a data loss prevention (DLP) policy](create-dlp-policy.md). You can also change the initial classification of connectors by editing your DLP policy. See [Edit a DLP policy](prevent-data-loss.md#edit-a-dlp-policy).
 
-
-<!-- editor question: In the following paragraph, should it be "When an HTTP request is received" instead of "a" HTTP request? -->
-
-
 > [!NOTE]
 > Until recently, some HTTP connectors weren't readily available for DLP policy configuration by using the DLP policy UI or PowerShell. As of May 2020, the following HTTP connectors can now be classified by using the DLP policy UI and PowerShell, like any other Power Platform connector: **HTTP**, **HTTP Webhook**, and **When a HTTP request is received**. If legacy DLP policies are being updated using the new DLP UI, a warning message will be displayed to admins indicating that these three HTTP connectors are now being added to the DLP purview and that they should ensure that these connectors are placed in the right DLP grouping.
 >
@@ -66,9 +62,6 @@ All third-party connectors can be blocked. All Microsoft-owned premium connector
 All connectors driving core Microsoft Power Platform functionality (like Common Data Service, Approvals, and Notifications) as well as connectors enabling core Office customization scenarios like Office Enterprise Plan standard connectors will remain non-blockable to ensure core user scenarios remain fully functional.
 
 However, these non-blockable connectors can be classified into Business or Non-Business data groups. These connectors broadly fall into the following categories:
-
-<!-- editor note: I changed the following list from numbered to bullets because there seems to be no reason for an order. -->
-
 
 -	Office Enterprise Plan standard connectors (with no additional licensing implications).
 -	Microsoft Power Platform–specific connectors that are part of the base platform capabilities. Within this, Common Data Service connectors are the only premium connectors that can't be blocked, because Common Data Service is an integral part of Microsoft Power Platform. 
