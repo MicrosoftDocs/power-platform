@@ -111,12 +111,12 @@ Unlike standard and premium connectors, which are available to all environments 
 
 ### Default data group for new connectors
 
-One data group must be designated as the default group to automatically classify any new connectors added to Power Platform after your policy has been created. Initially, the **Non-Business** group is the default group for new connectors and all services. You can [change the default data group](prevent-data-loss.md#change-the-default-data-group) to the **Business** or **Blocked** data group, but we don't recommend that you do so.
+One data group must be designated as the default group to automatically classify any new connectors added to Microsoft Power Platform after your policy has been created. Initially, the **Non-Business** group is the default group for new connectors and all services. You can [change the default data group](prevent-data-loss.md#change-the-default-data-group) to the **Business** or **Blocked** data group, but we don't recommend that you do so.
 
 Any new services that are added to Power Apps will be placed in the designated default group. For this reason, we recommend you keep **Non-Business** as the default group and manually add services into the **Business** or **Blocked** group after your organization has evaluated the impact of allowing business data to be shared with the new service.
 
 > [!NOTE]
-> Office 365 enterprise license connectors and a few core Power Platform connectors are exempt from being marked as **Blocked** can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and if you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
+> Office 365 enterprise license connectors and a few core Microsoft Power Platform connectors are exempt from being marked as **Blocked** and can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and if you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
 
 ## Policy scope
 
@@ -126,9 +126,9 @@ DLP policies can be created at both the tenant and environment level. Tenant adm
 
 Tenant admins can define three types of scopes for tenant-level data policies: 
 
-Option 1: Apply to all environments<br>
-Option 2: Apply to multiple environments (but not all)<br>
-Option 3: Apply to all environments except certain specifically excluded ones
+Option 1: Apply to all environments.<br>
+Option 2: Apply to multiple environments (but not all).<br>
+Option 3: Apply to all environments except certain specifically excluded ones.
 
 It's typical for tenant admins to define DLP policies for their entire tenant but exclude certain environments, as described in option 3. For the excluded environments, tenant admins can define alternate DLP policies and apply them to multiple environments, as described in option 2. Option 1 is for DLP policy rules that must apply across the entire tenant, without exception.
 
@@ -144,7 +144,7 @@ Even though environment admins might manage more than one environment, they can'
 
 ## View policy
 
-Using the ‘View Policy’ feature, environment admins can view tenant-level policies and policies within environments that the admin has access to, at an individual policy level . Non-admins can also view tenant-level policies using this feature.
+Using the view policy feature, environment admins can view tenant-level policies and policies within environments that the admin has access to, at an individual policy level. Non-admins can also view tenant-level policies using this feature.
 
 :::image type="content" source="media/dlp-view-policies2.png" alt-text="View DLP policies list":::
 
@@ -154,25 +154,25 @@ As tenant or environment admins, you can create more than one DLP policy and app
 
 ### Blocked classification impact across multiple policies
 
-If any policy (tenant-level and/or environment-level) that's applicable to an environment marks a connector as **Blocked**, no app or flow can use that connector in the environment. It doesn't matter whether any other policy classifies that connector as **Business** or **Non-Business**, because **Blocked** is the most restrictive classification for the connector; therefore, **Blocked** is always the final outcome of multiple policy evaluations. 
+If any policy (tenant-level or environment-level) that's applicable to an environment marks a connector as **Blocked**, no app or flow can use that connector in the environment. It doesn't matter whether any other policy classifies that connector as **Business** or **Non-Business**, because **Blocked** is the most restrictive classification for the connector; therefore, **Blocked** is always the final outcome of multiple policy evaluations. 
 
 ### Business/Non-Business classification impact across multiple policies
 
 Compared to evaluating the effect of the **Blocked** classification, evaluating the effect of the **Business** or **Non-Business** classification across multiple policies is more complex. You can classify a given connector, such as SharePoint, as **Business** in policy A and as **Non-Business** in policy B. What matters is what other connectors SharePoint is grouped with across policy A and policy B. 
 
-Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across ten connectors (SharePoint, Twitter, Salesforce, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob Storage, and Box). These connectors are classified as **Business** or **Non-Business** as represented by two categories each across the three policies (-E1-, -E2-, -E3-, -E4-, -E5-, and -E6-).
+Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across 10 connectors (SharePoint, Twitter, Salesforce, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob storage, and Box). These connectors are classified as **Business** or **Non-Business** as represented by two categories each across the three policies (-E1-, -E2-, -E3-, -E4-, -E5-, and -E6-).
 
 **Policy A** <br />
 -E1- **Business** – SharePoint, Twitter, Salesforce, Microsoft 365 Outlook, Basecamp 3 <br />
--E2- **Non-Business** – Facebook, Face API, Adobe Sign, Azure Blob Storage, Box
+-E2- **Non-Business** – Facebook, Face API, Adobe Sign, Azure Blob storage, Box
 
 **Policy B** <br />
 -E3- **Business**  – SharePoint, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3 <br />
--E4- **Non-Business** – Twitter, Salesforce, Adobe Sign, Azure Blob Storage, Box
+-E4- **Non-Business** – Twitter, Salesforce, Adobe Sign, Azure Blob storage, Box
 
 **Policy C** <br />
 -E5- **Business**  – Facebook, Face API, Twitter, Salesforce, Microsoft 365 Outlook <br />
--E6- **Non-Business** – SharePoint, Adobe Sign, Azure Blob Storage, Box, Basecamp 3
+-E6- **Non-Business** – SharePoint, Adobe Sign, Azure Blob storage, Box, Basecamp 3
 
 When all three policies are applied together to the same environment, the net result is fragmentation of connectors across eight (2<sup>3</sup> = 8) groups, as depicted below. Only connectors in the same group (out of eight possible combinations) can be used in a given app or flow. 
 
@@ -184,7 +184,7 @@ When all three policies are applied together to the same environment, the net re
 -E2-, -E3-, -E5- Group 5 – Facebook, Face API <br />
 -E2-, -E3-, -E6- Group 6 – NULL <br />
 -E2-, -E4-, -E5- Group 7 – NULL <br />
--E2-, -E4-, -E6- Group 8 – Adobe Sign, Azure Blob Storage, Box
+-E2-, -E4-, -E6- Group 8 – Adobe Sign, Azure Blob storage, Box
 
 To summarize: an app or flow can only use connectors from these individual groups at any given time, and not mix connectors across the eight different groups. From the examples above, note that multiple DLP policies applied to an environment will fragment your connector space in complicated ways. Therefore, we highly recommended that you apply a minimum number of DLP policies to any given environment. 
 
