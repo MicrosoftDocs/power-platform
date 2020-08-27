@@ -88,7 +88,7 @@ The [Sync Flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Flow Orphaned
   - Flow Trigger
 - **Flow Action Detail** Represents the set of actions that occur in a flow. This entity has a n:1 link with the Flow entity. The following information is available for each action or trigger:
-  - Type (Scope, ForEach, Office 365 Users)
+  - Type (Scope, ForEach, Microsoft 365 Users)
   - Operation (for connectors, such as Send Email, List Items)
   - Is Trigger (yes/no)
 - **PowerApps Connector** Represents a standard or custom connector. The following information is available for each connector:
@@ -100,7 +100,7 @@ The [Sync Flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Publisher
   - Tier (Standard/Premium)
 - **Connection Reference** The linking table for the many-to-many relationships among connectors (PowerApps Connector) and flows (Flows) and/or apps (PowerApps App).
-- **Maker** Represents a user who has created an app, flow, custom connector, or environment. The following information is available for each maker (retrieved from Office 365 Users Profiles):
+- **Maker** Represents a user who has created an app, flow, custom connector, or environment. The following information is available for each maker (retrieved from Microsoft 365 Users Profiles):
   - Display Name
   - ID
   - eMail (User Principal Name)
@@ -114,7 +114,7 @@ The [Sync Flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 - **Audit Log** Represents session details for Power Apps. The following information is available for each audit log entry:
   - Operation (Launched App, Deleted App, Deleted Flow)
   - App/Flow Id
-  - User City, Country, Department, Job Title (from Office 365)
+  - User City, Country, Department, Job Title (from Microsoft 365)
   - Audit Log Event Time
 - **CoE Settings** Settings configurations live in a record in this entity. This is an important entity to populate data into during the setup process, because it contains details that are important for configuring the branding and support aspect of the solution. The following settings are available to configure:
   - Brand Logo
@@ -205,7 +205,7 @@ Runs once daily on a schedule, and gets the actions and triggers for all flows.
 
 > [!WARNING]
 > This flow uses [Get Flow as Admin](https://docs.microsoft.com/connectors/flowmanagement/#get-flow-as-admin) for every indivdual flow in your tenant, to get action and trigger details. Thus, it can be a very time and resource consuming flow to run.
-Turning this flow on is optional, and only recommended if you are looking to perform action-level reporting or analysis, such as reporting on who is using the Send Email action of the Office 365 Outlook connector.
+Turning this flow on is optional, and only recommended if you are looking to perform action-level reporting or analysis, such as reporting on who is using the Send Email action of the Microsoft 365 Outlook connector.
 
 ### Admin \| Sync Template v2 (Connectors)
 

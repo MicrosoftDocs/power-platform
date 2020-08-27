@@ -119,12 +119,12 @@ The model-driven apps in Dynamics 365 schema contains fields specific to model-d
 8. Choose **Save**.
 9. Choose **Publish** to publish the customization.
 10. Repeat steps 5 - 9 for other entities you want to audit.
-11. Turn on audit logging in Office 365. See [Turn Office 365 audit log search on or off](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
+11. Turn on audit logging in Microsoft 365. See [Turn audit log search on or off](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
 
 
 ## Review your audit data using reports in Microsoft 365 Security and Compliance Center
 
-You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6).
+You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log for user and admin activity](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6).
 
 To use the preconfigured reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Dynamics 365 activities** tab.
 
@@ -141,7 +141,7 @@ The following are the preconfigured reports:
 |Accessed internal management tool |Signed in or out  |Activated process or plug-in  |
 
 ## Create reports
-You can create your own reports to review your audit data. See [Search the audit log in the Office 365 Security & Compliance Center](https://support.office.com/article/search-the-audit-log-in-the-office-365-security-compliance-center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
+You can create your own reports to review your audit data. See [Search the audit log in the Security & Compliance Center](https://support.office.com/article/search-the-audit-log-in-the-office-365-security-compliance-center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 ## What's logged
 
@@ -249,5 +249,5 @@ When audit log search in the Microsoft 365 Security and Compliance Center is tur
 
 ### See also
  [Audit data and user activity for security and compliance](audit-data-user-activity.md)<br />
- [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6)
+ [Search the audit log for user and admin activity](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6)
  [Office 365 Management APIs overview](https://msdn.microsoft.com/office-365/office-365-managment-apis-overview)

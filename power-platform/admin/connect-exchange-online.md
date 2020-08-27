@@ -37,7 +37,7 @@ With both model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Cust
   
 -   [Exchange Online Service Description](https://technet.microsoft.com/library/jj819276.aspx)  
   
--   [Office 365 service comparison](https://technet.microsoft.com/office/dn788955)  
+-   [Microsoft 365 and Office 365 service descriptions](https://technet.microsoft.com/office/dn788955)  
   
 > [!TIP]
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
@@ -284,4 +284,4 @@ Admins, as described in the Permission model table, can change the settings so m
   
 ### See also  
 [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
-[Test mail flow by validating your Office 365 connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   
+[Test mail flow by validating your connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   

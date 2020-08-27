@@ -92,7 +92,7 @@ search.app:
  You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the Canada datacenter.  Customers can schedule their update. 
   
 ### If I have both Microsoft 365 services and model-driven apps in Dynamics 365, how will migration be handled?  
- The migration of each service will be handled separately. For Dynamics 365 (online), you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  
+ The migration of each service will be handled separately. For Dynamics 365 (online), you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](https://technet.microsoft.com/library/dn878163.aspx).  
   
 ### Can I move Microsoft 365 and model-driven apps in Dynamics 365 at the same time?  
  The move process for each service is handled separately. The move can be requested to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move.  
