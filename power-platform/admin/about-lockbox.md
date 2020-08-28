@@ -40,7 +40,7 @@ Be aware of the following regarding Power Platform Lockbox.
 
 4. After a Microsoft Support manager approves the request, Power Platform Lockbox sends the designated approver at your organization an email notification about the pending access request from Microsoft.
 
-   screenshot
+   [screenshot needed]
 
    Anyone who is assigned the Power Platform Lockbox access approver admin role in the Power Platform admin center can approve Power Platform Lockbox requests.
 
@@ -58,7 +58,7 @@ Be aware of the following regarding Power Platform Lockbox.
 
 ## Turn Power Platform Lockbox request on or off
 
-To set lockbox policy:
+To set Lockbox policy:
 
 1. Sign in to the Power Platform admin center. 
 
@@ -71,10 +71,13 @@ To set lockbox policy:
    |All Power BI workspaces     |  Select this to... [need info]       |
    |Environments with a database     | Select this to... [need info]. The following options are then displayed: <br />**All environments** [need info] <br /> **Some environments** [need info]      |
 
-> [!div class="mx-imgBorder"] 
-> ![Turn lockbox on or off](media/lockbox-turn-on.png "Turn lockbox on or off")
+   > [!div class="mx-imgBorder"] 
+   > ![Turn Lockbox on or off](media/lockbox-turn-on.png "Turn Lockbox on or off")
 
 ## Approve or deny a Power Platform Lockbox request
+
+> [!div class="mx-imgBorder"] 
+> ![Approve or deny Lockbox requests](media/lockbox-requests.png "Approve or deny Lockbox requests")
 
 ## Auditing Power Platform Lockbox requests
 
