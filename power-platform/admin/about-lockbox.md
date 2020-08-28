@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/21/2020
+ms.date: 08/28/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -58,6 +58,22 @@ Be aware of the following regarding Power Platform Lockbox.
 
 ## Turn Power Platform Lockbox request on or off
 
+To set lockbox policy:
+
+1. Sign in to the Power Platform admin center. 
+
+2. Select **Lockbox policy**.
+
+3. Specify settings.
+   
+   |Setting  |Description  |
+   |---------|---------|
+   |All Power BI workspaces     |  Select this to... [need info]       |
+   |Environments with a database     | Select this to... [need info]. The following options are then displayed: <br />**All environments** [need info] <br /> **Some environments** [need info]      |
+
+> [!div class="mx-imgBorder"] 
+> ![Turn lockbox on or off](media/lockbox-turn-on.png "Turn lockbox on or off")
+
 ## Approve or deny a Power Platform Lockbox request
 
 ## Auditing Power Platform Lockbox requests
@@ -68,15 +84,11 @@ Power Platform Lockbox requests aren't triggered in the following engineering su
 
 - A Microsoft engineer needs to do an activity that falls outside of standard operating procedures. For example, to recover or restore services in unexpected or unpredictable scenarios.
 
-- A Microsoft engineer accesses the Power Platform as part of troubleshooting and inadvertently has access to customer data. For example, <need info>.
+- A Microsoft engineer accesses the Power Platform as part of troubleshooting and inadvertently has access to customer data. For example, 
 
+  [need info]
 
-
-
-
-
-
-3. If the support engineer can't troubleshoot the issue by using standard tools and telemetry, the next step is to request elevated permissions by using a Just-In-Time (JIT) access service. This request can be from the original support engineer. Or, it can be from a different engineer because the problem is escalated.
+- If the support engineer can't troubleshoot the issue by using standard tools and telemetry, the next step is to request elevated permissions by using a Just-In-Time (JIT) access service. This request can be from the original support engineer. Or, it can be from a different engineer because the problem is escalated.
 
 After the access request is submitted by the Azure Engineer, Just-In-Time service evaluates the request taking into account factors such as:
 
