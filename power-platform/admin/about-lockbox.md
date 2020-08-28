@@ -105,7 +105,11 @@ To export SQL audit logs to your organization's [Azure data lake](https://docs.m
 
 1. Sign in to the Power Platform admin center. 
 
-2. Select **Export Analytics Data (preview)**
+2. Select **Data export (preview)** from the left-side menu, and then select **New data export**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![New data export](media/lockbox-new-data-export.png "New data export")
+
 
 3. Select **Select analytics data** > **SQL audit logs**.
 
