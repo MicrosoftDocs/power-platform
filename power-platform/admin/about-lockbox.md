@@ -101,7 +101,7 @@ Audit records that correspond to Lockbox requests are logged in SQL audit logs. 
 
 [screenshot of example SQL audit log data]
 
-To export SQL audit logs to my organization's [Azure data lake](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake):
+To export SQL audit logs to your organization's [Azure data lake](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake):
 
 1. Sign in to the Power Platform admin center. 
 
