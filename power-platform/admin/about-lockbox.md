@@ -58,8 +58,6 @@ Be aware of the following regarding Power Platform Lockbox.
 
 ## Turn Power Platform Lockbox request on or off
 
-To set Lockbox policy:
-
 1. Sign in to the Power Platform admin center. 
 
 2. Select **Lockbox policy**.
@@ -76,10 +74,31 @@ To set Lockbox policy:
 
 ## Approve or deny a Power Platform Lockbox request
 
-> [!div class="mx-imgBorder"] 
-> ![Approve or deny Lockbox requests](media/lockbox-requests.png "Approve or deny Lockbox requests")
+1. Sign in to the Power Platform admin center. 
+
+2. Select **Lockbox requests**.
+
+3. Review the request info.
+
+
+   |Field  |Description  |
+   |---------|---------|
+   |Support request ID     |         |
+   |Environment     |         |
+   |Status     |         |
+   |Requested     |         |
+   |Request expiration     |         |
+   |Access period     |         |
+   |Access expiration     |         |
+   |Admin     |         |
+
+3. Select a Lockbox request, and then choose **Approve** or **Deny**.
+   > [!div class="mx-imgBorder"] 
+   > ![Approve or deny Lockbox requests](media/lockbox-requests.png "Approve or deny Lockbox requests")
 
 ## Auditing Power Platform Lockbox requests
+
+[Need steps. ]
 
 ## Exclusions
 
