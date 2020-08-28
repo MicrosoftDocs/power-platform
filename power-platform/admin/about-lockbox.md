@@ -76,9 +76,9 @@ Be aware of the following regarding Power Platform Lockbox.
 
 1. Sign in to the Power Platform admin center. 
 
-2. Select **Lockbox requests**.
+2. Select **Help + Support** > **Lockbox requests**.
 
-3. Review the request info.
+3. Review the request details.
 
 
    |Field  |Description  |
@@ -98,7 +98,33 @@ Be aware of the following regarding Power Platform Lockbox.
 
 ## Auditing Power Platform Lockbox requests
 
-[Need steps. ]
+Audit records that correspond to Lockbox requests are logged in SQL audit logs. You can access these logs by using **Export Analytics Data**. Actions related to a accepting or denying a Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the SQL audit logs. You can search for and review these audit records.
+
+[screenshot of example SQL audit log data]
+
+To export SQL audit logs to my organization's [Azure data lake](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake):
+
+1. Sign in to the Power Platform admin center. 
+
+2. Select **Export Analytics Data (preview)**
+
+3. Select **Select analytics data** > **SQL audit logs**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Export SQL audit logs](media/lockbox-data-export-sql-audit-logs.png "Export SQL audit logs")
+
+4. Enter Data Lake details
+
+
+   |Field  |Description  |
+   |---------|---------|
+   |Subscription     |         |
+   |Resource group     |         |
+   |Storage account     |         |
+
+   > [!div class="mx-imgBorder"] 
+   > ![Enter Data Lake details](media/lockbox-enter-data-lake-details.png "Enter Data Lake details")
+
 
 ## Exclusions
 
