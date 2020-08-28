@@ -42,7 +42,7 @@ Be aware of the following regarding Power Platform Lockbox.
 
    [screenshot needed]
 
-   Anyone who is assigned the Power Platform Lockbox access approver admin role in the Power Platform admin center can approve Power Platform Lockbox requests.
+   Anyone who is a tenant admin or assigned the **Customer Lockbox access approver** role in the Power Platform admin center can approve Power Platform Lockbox requests.
 
 5. The approver signs in to the Power Platform admin center and approves the request. This step triggers the creation of an audit record available by searching the audit log. For more information, see Auditing Customer Lockbox requests.
 
@@ -56,7 +56,12 @@ Be aware of the following regarding Power Platform Lockbox.
    > [!NOTE]
    > All actions performed by a Microsoft engineer are logged in the audit log. You can search for and review these audit records.
 
-## Turn Power Platform Lockbox request on or off
+## Enable a Lockbox policy
+
+Tenant admins can create or update the Lockbox policies. To enable Lockbox policy, tenant admins need to login to the admin portal and enable Lockbox policy for all environments or for some environments.
+
+> [!NOTE]
+> If you enable the Lockbox feature for your organization, every data access by Microsoft will be regulated and will require an explicit approval from the designated approver in your organization​
 
 1. Sign in to the Power Platform admin center. 
 
@@ -201,15 +206,3 @@ If you have an issue that requires Microsoft support to access your data, you ca
 1. Create data-access polices
 2. Approve or reject data access requests
 
-## Create and enable Lockbox policies
-
-Tenant admins can create or update the Lockbox policies,
-
-To enable Lockbox policy, tenant admins need to login to the admin portal and enable Lockbox policy for all environments or for some environments.
-
-
-
-
-
-> [!NOTE]
-> If you enable the Lockbox feature for your organization, every data access by Microsoft will be regulated and will require an explicit approval from the designated approver in your organization​
