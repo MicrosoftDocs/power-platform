@@ -132,6 +132,31 @@ Your export will appear in the list under the **Data Lake** tab.
 > [!div class="mx-imgBorder"] 
 > ![Data export list](media/lockbox-data-export-success.png "Data export list")
 
+**Fields description**
+
+|Field  |Description  |
+|---------|---------|
+|Data package     |         |
+|Environment     |         |
+|Last export status    |         |
+|Data last exported on     |         |
+|Created by     |         |
+|Created on   |        |
+
+## Data export options
+
+You can select **More actions** (...) next to some data export connection fields to take additional actions such as delete the connection or show export history.
+
+1. Sign in to the Power Platform admin center. 
+
+2. Select **Data export (preview)** from the left-side menu.
+
+3. Select the **Data Lake** tab, and then select a data export from the list.
+
+4. Select a field such as **Last export status**, select **More actions** (...), and then select an action.
+
+   [screenshot]
+
 ## Exclusions
 
 Power Platform Lockbox requests aren't triggered in the following engineering support scenarios:
