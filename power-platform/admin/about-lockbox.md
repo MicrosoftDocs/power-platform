@@ -80,7 +80,6 @@ Be aware of the following regarding Power Platform Lockbox.
 
 3. Review the request details.
 
-
    |Field  |Description  |
    |---------|---------|
    |Support request ID     |         |
@@ -113,8 +112,7 @@ To export SQL audit logs to my organization's [Azure data lake](https://docs.mic
    > [!div class="mx-imgBorder"] 
    > ![Export SQL audit logs](media/lockbox-data-export-sql-audit-logs.png "Export SQL audit logs")
 
-4. Enter Data Lake details
-
+4. Enter Data Lake details, and then select **Create**.
 
    |Field  |Description  |
    |---------|---------|
@@ -125,6 +123,10 @@ To export SQL audit logs to my organization's [Azure data lake](https://docs.mic
    > [!div class="mx-imgBorder"] 
    > ![Enter Data Lake details](media/lockbox-enter-data-lake-details.png "Enter Data Lake details")
 
+Your export will appear in the list under the **Data Lake** tab.
+
+> [!div class="mx-imgBorder"] 
+> ![Data export list](media/lockbox-data-export-success.png "Data export list")
 
 ## Exclusions
 
