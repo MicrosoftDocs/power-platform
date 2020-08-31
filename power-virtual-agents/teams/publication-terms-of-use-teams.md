@@ -43,5 +43,6 @@ The following is a default privacy statement and terms of use for chatbots creat
 
 >[!IMPORTANT]
 >This app is not developed by Microsoft.
+>
 >For privacy policy or terms of use, contact the developer of this app.
 
