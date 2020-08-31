@@ -189,7 +189,7 @@
        - name: Key concepts - Publish your bot
          href: teams/publication-fundamentals-publish-channels-teams.md
        - name: Create a privacy statement and terms of use
-         href: publication-terms-of-use-teams.md
+         href: teams/publication-terms-of-use-teams.md
        - name: Configure the demo website and add the bot to your live website
          href: teams/publication-connect-bot-to-web-channels-teams.md
        - name: Add bot to Microsoft Teams
