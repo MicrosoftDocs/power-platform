@@ -64,7 +64,7 @@ To allocate add-ons, select **Manage**. For detailed information, see [Allocate 
 > [!NOTE]
 > As an admin, you can restrict who can allocate add-on capacity to environments. More information: [Control who can allocate add-on capacity](capacity-add-on.md#control-who-can-allocate-add-on-capacity)
 >
-> If there are users who want to transition to per app, follow the two steps below in order
+> If there are users who want to transition to per app, follow the two steps below in order:
 > 1. Allocate capacity of the per app licenses to the required environment.
 > 2. Remove any user license from the user.
 
