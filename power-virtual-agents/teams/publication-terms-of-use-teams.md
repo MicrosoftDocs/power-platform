@@ -13,7 +13,7 @@ ms.custom: "teams, publication, ceX"
 ms.collection: virtual-agent
 ---
 
-# Create and publish privacy and terms of use links
+# Create a privacy statement and terms of use
 
 When you want to publish your bot so other Teams users can access it, you need to provide the following information about your bot:
 
