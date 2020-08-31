@@ -1,0 +1,47 @@
+---
+title: "Include information about the developer of your bot in Teams"
+description: "You need to include certain information about yourself or the developer of your bot when you publish it in Teams, including a privacy statement and terms of use, as well as contact information."
+keywords: "Teams, privacy, terms of use, PVA"
+ms.date: 8/31/2020
+ms.service:
+  - dynamics-365-ai
+ms.topic: article
+author: iaanw
+ms.author: iawilt
+manager: shellyha
+ms.custom: "teams, publication, ceX"
+ms.collection: virtual-agent
+---
+
+# Create and publish privacy and terms of use links
+
+When you want to publish your bot so other Teams users can access it, you need to provide the following information about your bot:
+
+- A link to a privacy statement that describes how you collect a user's data 
+  - [[!!What is the privacy/data collection policy of PVA? Presumably a Teams user isn't going to do any data collection beyond what PVA does to operate - so does it store data in CDS, geo locations, etc? Should we link to the [existing docs on data location](https://review.docs.microsoft.com/en-us/power-virtual-agents/data-location?branch=iawilt-teams#customer-data) and [GDPR](https://review.docs.microsoft.com/en-us/power-virtual-agents/gdpr-summary?branch=iawilt-teams)?!!]]
+- A link to the terms of use (TOU) for the bot
+- A link to the developer website for more information
+- The developer's name
+
+We provide default values for each of these, but you should update them with your own information. See the Teams documentation about [Privacy policy, terms of use, and support URLs](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy-terms-of-use-and-support-urls) for some more ideas on what to include. 
+
+The following table lists the default values that are provided in a Power Virtual Agents chatbot, and suggestions on what you should enter instead:
+
+Requirement | Default value | Suggestions
+-|-|-
+Privacy statement | Link to the [Default privacy statement and terms of use](#default-privacy-statement-and-terms-of-use) section in this topic | You should work with your manager or IT department to determine what you want to say in your privacy statement. This should follow your organization's privacy practices.
+Terms of use | Link to the [Default privacy statement and terms of use](#default-privacy-statement-and-terms-of-use) section in this topic | Work with your manager or IT department to define the terms of use. Typically this would include any limitations you might have on how the information can be used. See [Teams privacy policy guidelines](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy).
+Developer website | The [Power Virtual Agents overview page](https://go.microsoft.com/fwlink/?linkid=2138949) | You could include a link to your Office profile, or a SharePoint site for your team.
+Developer's name | You should include a name of someone who can be contacted in case someone has questions about the bot.
+
+
+
+## Default privacy statement and terms of use
+
+The following is a default privacy statement and terms of use for chatbots created in Power Virtual Agents. You should replace this with your own privacy statement and terms of use.
+
+
+>[!IMPORTANT]
+>This app is not developed by Microsoft.
+>For privacy policy or terms of use, contact the developer of this app.
+
