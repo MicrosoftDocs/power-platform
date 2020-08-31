@@ -189,18 +189,7 @@ At the customer organization, the user who has the Owner role for the Azure subs
 
 Example email:
 
-
-
-
-
-
-
-
-
-
-
-
-
+[screenshot]
 
 If you have an issue that requires Microsoft support to access your data, you can use Power Platform Lockbox to approve or reject data access requests from Microsoft. With Lockbox, you can:
 1. Create data-access polices
