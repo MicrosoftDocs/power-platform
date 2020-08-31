@@ -54,7 +54,7 @@ There are two versions for storage capacity reporting:
 
 If you exceed your storage capacity, you'll receive notifications alerting you to the over-capacity usage. These notifications occur as alerts in the Power Platform admin center. The following admin operations won't be available when a tenant exceeds storage capacity entitlements: 
 
-1. Create environment (currently enforced)
+1. Create environment 
 2. Copy environment (starting August 24th)
 3. Restore environment (starting August 24th)
 
