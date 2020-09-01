@@ -70,6 +70,7 @@ About **manual backups**:
 
 - A backup is created for you when we update your environment.  
 - You can back up production and sandbox environments. 
+- You can't back up the default environment.
 - Sandbox backups are retained for up to 7 days. 
 - Manual backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. Manual backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days.
 - Check your expiration date.  
