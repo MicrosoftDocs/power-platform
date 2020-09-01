@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2020
+ms.date: 09/01/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -107,6 +107,7 @@ A single default environment is automatically created by Power Apps for each ten
 > [!NOTE]
 > - No users will be added to the Environment Admin role of the default environment automatically. More information: [Administer environments in Power Apps](environments-administration.md)
 > - You can't delete the default environment.
+> - You can't backup and restore the default environment.
 > - The default environment is limited to 32 GB of storage capacity. In case you need to store more data, you can create a production environment. More information: [Provisioning a new environment](create-environment.md#provisioning-a-new-environment)
 
 The default environment is named as follows: "{Azure AD tenant name} (default)"
