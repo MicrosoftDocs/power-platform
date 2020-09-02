@@ -128,28 +128,6 @@ To change settings for a Project Oakdale environment, go to **Environments** > [
 <!-- 
 ### Users + permissions -->
 <!-- fwlink 2123134 2127762 -->
-<!-- 
-Because it can take a while to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
-
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to add users. 
-
-2. Select **Users + permissions** > **Users**. 
-
-3. Check to see whether the user you want to add might already be present in the environment by doing a search (because automatic user addition might have added the user already). If you don't find the user in the environment yet, select **Add user**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Enter name](media/add-user-enter-name.png "Enter name")
-
-4. In the **Add user** pane, enter the user's name or email address, select it, and add them to the environment. Note the requirements for successfully adding a user, and see [enable a user in an environment](create-users-assign-online-security-roles.md#enable-or-disable-user-accounts) for details about how to ensure the requirements are met.
-
-5. After a user is added to the environment, [assign a security role to the user](database-security.md) to configure their access to resources in the environment. 
-
-**User access requirements**
-
-- [Enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account)
-- Has an active Office 365 license in a plan that includes Teams. See [Licensing and restrictions](#licensing-and-restrictions).
-- Member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group)
--->
 
 ### Microsoft Teams Integration
 
