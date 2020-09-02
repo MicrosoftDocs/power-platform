@@ -152,7 +152,8 @@ Because it can take a while to automatically add users to an environment, you ca
 -->
 
 ### Microsoft Teams Integration
-Select to open the app in Teams.
+
+Select **Microsoft Teams Integration** to open the app in Teams.
 
 ### Delete a Project Oakdale environment
 
@@ -164,10 +165,6 @@ To delete a Project Oakdale environment, select it from the list of environments
 ### Promote a Project Oakdale environment to production
 
 Select **Promote to production**. See [Promotion Process](#promotion-process).
-
-### Refresh cadence
-
-In **Details**, you'll see information on the refresh cadence. 
 
 ## Capacity limits
 
@@ -223,7 +220,8 @@ A tenant admin will be allowed to promote a Project Oakdale environment to a Com
 
 3. Admins will review the request from the Teams user and will make the decision to promote the environment from Teams to Common Data Service. At this point, the admin will go to the Power Platform admin center environments view to execute the promotion.   
 
-   Note: to successfully carry out the promotion, the tenant must have at least as much available capacity as the size of the Project Oakdale environment that is being promoted. Post promotion, the consumed capacity of the promoted Project Oakdale environment will start counting towards the tenant’s capacity. Should a customer attempt to promote it anyways, the promote operation will be blocked and an appropriate error message will be displayed explaining why it failed.  
+   > [!NOTE]
+   > To successfully carry out the promotion, the tenant must have at least as much available capacity as the size of the Project Oakdale environment that is being promoted. Post promotion, the consumed capacity of the promoted Project Oakdale environment will start counting towards the tenant’s capacity. Should a customer attempt to promote it anyways, the promote operation will be blocked and an appropriate error message will be displayed explaining why it failed.  
 
 4. Admins will be given a message with the implications of promoting and asked to confirm the action.  
 
