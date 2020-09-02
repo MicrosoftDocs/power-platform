@@ -17,7 +17,7 @@ search.app:
 ---
 # About the Project Oakdale environment (preview)
 
-Introduced in September, 2020, the Microsoft Project Oakdale environment is automatically created for the selected team when you add an app in Teams using Power Apps for the first time or [install a Power Apps app](/powerapps/teams/install-personal-app) from the app catalog. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment and all data, apps and flows created using Power Apps inside a team are available from that team's Microsoft Project Oakdale database. Project Oakdale is a new offering from Microsoft that comprises a subset of [Microsoft Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) capabilities. 
+Introduced in September, 2020, the Microsoft Project Oakdale environment is automatically created for the selected team when you add an app in Teams using Power Apps for the first time or [install a Power Apps app](/powerapps/teams/install-personal-app) from the app catalog. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment and all data, apps and flows created using Power Apps inside a team are available from that team's [Microsoft Project Oakdale](/powerapps/teams/overview-tables) database. Project Oakdale is a new offering from Microsoft that comprises a subset of [Microsoft Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) capabilities. 
 
 You can identify a Project Oakdale environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by selecting **Environments** and viewing the list of environments.
 
@@ -157,10 +157,8 @@ The consumption of capacity by Project Oakdale environments will not count towar
 
 |Unit  |Service limit  |
 |---------|---------|
-|Project Oakdale environments      | 5 + 1 per 20 eligible office seats (up to a maximum of 500 environments) <br />
-This limit on the number of environments cannot be extended further in Project Oakdale environments. Should more instances be needed, consider deleting unused environments or promoting to Common Data Service.   |
-|Max Project Oakdale environment storage per tenant      | 10 GB + Project Oakdale environments x 2 GB (up to a max of 1 TB). <br />
-This storage limit cannot be extended further in Project Oakdale environments. Should more storage be needed, consider promoting to Common Data Service.  |
+|Project Oakdale environments      | 5 + 1 per 20 eligible office seats (up to a maximum of 500 environments) <br /> This limit on the number of environments cannot be extended further in Project Oakdale environments. Should more instances be needed, consider deleting unused environments or promoting to Common Data Service.   |
+|Max Project Oakdale environment storage per tenant      | 10 GB + Project Oakdale environments x 2 GB (up to a max of 1 TB). <br /> This storage limit cannot be extended further in Project Oakdale environments. Should more storage be needed, consider promoting to Common Data Service.  |
 |Max Project Oakdale environments API calls  | API requests in Microsoft Power Platform consist of various actions which a user makes across various products.  <br />
 For more information on API calls and the per user limits available, see the following documentation:  https://aka.ms/PowerPlatformRequestEntitlements  |
 
