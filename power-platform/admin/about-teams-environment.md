@@ -159,8 +159,7 @@ The consumption of capacity by Project Oakdale environments will not count towar
 |---------|---------|
 |Project Oakdale environments      | 5 + 1 per 20 eligible office seats (up to a maximum of 500 environments) <br /> This limit on the number of environments cannot be extended further in Project Oakdale environments. Should more instances be needed, consider deleting unused environments or promoting to Common Data Service.   |
 |Max Project Oakdale environment storage per tenant      | 10 GB + Project Oakdale environments x 2 GB (up to a max of 1 TB). <br /> This storage limit cannot be extended further in Project Oakdale environments. Should more storage be needed, consider promoting to Common Data Service.  |
-|Max Project Oakdale environments API calls  | API requests in Microsoft Power Platform consist of various actions which a user makes across various products.  <br />
-For more information on API calls and the per user limits available, see the following documentation:  https://aka.ms/PowerPlatformRequestEntitlements  |
+|Max Project Oakdale environments API calls  | API requests in Microsoft Power Platform consist of various actions which a user makes across various products.  <br /> For more information on API calls and the per user limits available, see the following documentation:  https://aka.ms/PowerPlatformRequestEntitlements  |
 
 ### Enforcement
 
