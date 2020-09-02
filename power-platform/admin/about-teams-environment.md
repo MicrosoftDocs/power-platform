@@ -19,7 +19,7 @@ search.app:
 
 Introduced in September, 2020, the Microsoft Project Oakdale environment is automatically created for the selected team when you add an app in Teams using Power Apps for the first time or [install a Power Apps app](/powerapps/teams/install-personal-app) from the app catalog. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment and all data, apps and flows created using Power Apps inside a team are available from that team's Microsoft Project Oakdale database. Project Oakdale is a new offering from Microsoft that comprises a subset of [Microsoft Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) capabilities. 
 
-You can identify a Project Oakdale environment in the Power Platform admin center by selecting **Environments** and viewing the list of environments.
+You can identify a Project Oakdale environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by selecting **Environments** and viewing the list of environments.
 
 > [!div class="mx-imgBorder"] 
 > ![Project Oakdale environment in list](media/teams-environment-list.png "Project Oakdale environment in list")
