@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 09/02/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -15,9 +15,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About the Project Oakdale environment
+# About the Project Oakdale environment (preview)
 
-Introduced in September, 2020, the Microsoft Project Oakdale environment is automatically created for the selected team when you add an app in Teams using Power Apps for the first time or [install a Power Apps app](/powerapps/teams/install-personal-app) from the app catalog. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment and all data, apps and flows created using Power Apps inside a team are available from that team's Microsoft Project Oakdale database. Project Oakdale is a new offering from Microsoft that comprises a subset of Microsoft Common Data Service capabilities. 
+Introduced in September, 2020, the Microsoft Project Oakdale environment is automatically created for the selected team when you add an app in Teams using Power Apps for the first time or [install a Power Apps app](/powerapps/teams/install-personal-app) from the app catalog. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment and all data, apps and flows created using Power Apps inside a team are available from that team's Microsoft Project Oakdale database. Project Oakdale is a new offering from Microsoft that comprises a subset of [Microsoft Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) capabilities. 
 
 You can identify a Project Oakdale environment in the Power Platform admin center by selecting **Environments** and viewing the list of environments.
 
@@ -38,7 +38,7 @@ Note the following regarding access to Power Platform apps in Teams.
 - No direct API access or pro developer experience will be provided and only Power Apps embedded within the Teams client will be able to access runtime.  
 
 ## Admin experience 
-Tenant owners and members will be allowed to create their first app template or create a blank table app for the Team. For more detailed guidance on creating blank table apps, see [Project Oakdale tables: Overview](https://review.docs.microsoft.com/en-us/powerapps/teams/overview-tables?branch=teams-preview). 
+Tenant owners and members will be allowed to create their first app template or create a blank table app for the Team. For more detailed guidance on creating blank table apps, see [Project Oakdale tables: Overview](/powerapps/teams/overview-tables). 
 
 Team owners will be allowed to delete a team associated to a Project Oakdale environment which will trigger the deletion of that environment.  
 
@@ -88,7 +88,7 @@ For users to access Project Oakdale environment apps, bots, and data, they shoul
 
 ### Conceptual model
 
-Every Microsoft Teams is linked 1:1 to a Microsoft 365 Group.
+Every Microsoft Teams is linked 1:1 to a [Microsoft 365 Group](deploy-office-365-groups.md).
 
 Microsoft 365 Groups support two user membership types: owners and members. Members can be users from the customer‘s own tenant or from a guest tenant. Any user management (addition, removal, user type change) made in a team will be reflected in the Microsoft 365 Group, and vice versa.
 
@@ -109,7 +109,7 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 
 On a user’s first access of an app in their team, a user record will be created in the Project Oakdale environment associated with the team. If an app in a team has a need for a user record to pre-exist in the Project Oakdale environment (for example, a scenario where the app lists the users in the Project Oakdale environment by looking up user records from Project Oakdale), the PowerShell Add-AdminPowerAppsSyncUser command can be invoked from the app to create user records for users on-demand. 
 
-Once a user record is created in the Project Oakdale environment, background sync jobs will run every 24 hours to synchronize any user record changes from Azure Active Directory into the Project Oakdale environment. 
+Once a user record is created in the Project Oakdale environment, background sync jobs will run every 24 hours to synchronize any user record changes from [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) into the Project Oakdale environment. 
 
 It can take up to 24 hours to: 
 - Synchronize changes made to user properties (name, address, etc.) in Azure AD into their user record in the Project Oakdale environment’s Project Oakdale database. 
@@ -216,5 +216,6 @@ Post promotion, the following applies to the newly promoted environment:
 - Teams owners are assigned the System Admin roles on their environment and can access the environment using the Power Platform admin center. 
 - Adding a new Teams Template app to the prior team won’t create a new Project Oakdale Environment for the team. 
 
-
-
+### See also
+[install a Power Apps app](/powerapps/teams/install-personal-app) <br />
+[Power Apps and Teams integration: Overview](/powerapps/teams/overview) 
