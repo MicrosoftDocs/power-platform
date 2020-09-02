@@ -82,13 +82,13 @@ This section summarizes user access to Project Oakdale environments and resource
 ### User access requirements
 For users to access Project Oakdale environment apps, bots, and data, they should:
 
-- [Be enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account)
+- [Be enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account).
 - Have an active Office 365 license in a plan that includes Teams. See [Licensing and restrictions](#licensing-and-restrictions).
-- Be a member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group)
+- Be a member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group).
 
 ### Conceptual model
 
-Every Microsoft Teams is linked 1:1 to a [Microsoft 365 Group](deploy-office-365-groups.md).
+Every Microsoft Teams is linked 1:1 to a [Microsoft 365 Group](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide).
 
 Microsoft 365 Groups support two user membership types: owners and members. Members can be users from the customer‘s own tenant or from a guest tenant. Any user management (addition, removal, user type change) made in a team will be reflected in the Microsoft 365 Group, and vice versa.
 
@@ -217,5 +217,5 @@ Post promotion, the following applies to the newly promoted environment:
 - Adding a new Teams Template app to the prior team won’t create a new Project Oakdale Environment for the team. 
 
 ### See also
-[install a Power Apps app](/powerapps/teams/install-personal-app) <br />
+[Install a Power Apps app](/powerapps/teams/install-personal-app) <br />
 [Power Apps and Teams integration: Overview](/powerapps/teams/overview) 
