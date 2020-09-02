@@ -79,6 +79,13 @@ In an environment such as Teams that can be collaborative in the development and
 
 This section summarizes user access to Project Oakdale environments and resources.
 
+### User access requirements
+For users to access Project Oakdale environment apps, bots, and data, they should:
+
+- [Be enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account)
+- Have an active Office 365 license in a plan that includes Teams. See [Licensing and restrictions](#licensing-and-restrictions).
+- Be a member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group)
+
 ### Conceptual model
 
 Every Microsoft Teams is linked 1:1 to a Microsoft 365 Group.
@@ -94,6 +101,7 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 |Teams owner      | System Customizer, Common Data Service User         |
 |Teams member/guest      | Same as for Teams owner        |
 |Tenant admin / Power Platform admin who is not in the team      | System Admin with Administrative access mode          |
+|Application user | [need info on this role] |
 |Dynamics 365 admin who is not in the team (that is, not in the Microsoft 365 Group)      | No access since a Project Oakdale environment will always have the Team’s Microsoft 365 Group associated with it, and Dynamics 365 service admins are excluded from environments for which they are not in the associated group.         |
 |Tenant/Power Platform/Dynamics 365 admin who is in the team   | All Teams users' roles plus System Admin with Read-Write access mode         |
 
@@ -117,8 +125,10 @@ To change settings for a Project Oakdale environment, go to **Environments** > [
 > [!div class="mx-imgBorder"] 
 > ![Project Oakdale environment settings](media/teams-environment-settings.png "Project Oakdale environment settings")
 
-### Users + permissions
+<!-- 
+### Users + permissions -->
 <!-- fwlink 2123134 2127762 -->
+<!-- 
 Because it can take a while to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to add users. 
@@ -139,6 +149,7 @@ Because it can take a while to automatically add users to an environment, you ca
 - [Enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account)
 - Has an active Office 365 license in a plan that includes Teams. See [Licensing and restrictions](#licensing-and-restrictions).
 - Member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group)
+-->
 
 ### Microsoft Teams Integration
 Select to open the app in Teams.
