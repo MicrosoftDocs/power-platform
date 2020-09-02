@@ -88,7 +88,7 @@ To run the PowerShell cmdlets for app creators, do the following:
     ```powershell
     # Here is how you can pass in credentials (avoiding opening a prompt)
     $pass = ConvertTo-SecureString "password" -AsPlainText -Force
-    Add-PowerAppsAccount -Username foo@bar.com -Password $pass
+    Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
 
 ## Power Apps cmdlets for app creators
