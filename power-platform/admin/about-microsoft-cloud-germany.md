@@ -2,11 +2,10 @@
 title: "About Microsoft Cloud Germany  | MicrosoftDocs"
 description: About Microsoft Cloud Germany
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/03/2018
+ms.date: 09/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -21,7 +20,7 @@ search.app:
 [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] address the needs of the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA). The German datacenter delivers services that bring together the best of Microsoft in productivity, collaboration, intelligence and platform to grow, evolve and transform your business.  
   
 > [!NOTE]
-> Due to the unique nature of [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)], there are some features that have not yet been enabled. The key sales, marketing, and service features for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, will be the same as in other regions. However, there may be external factors that are made available in other clouds, but will not be available to German cloud customers at this time.  
+> Due to the unique nature of [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)], there are some features that have not yet been enabled. The key sales, marketing, and service features for customer engagement apps (such as Dynamics 365 Sales and Customer Service), will be the same as in other regions. However, there may be external factors that are made available in other clouds, but will not be available to German cloud customers at this time.  
 > 
 >  Please check back for the latest information.  
   
@@ -29,7 +28,7 @@ search.app:
 ## German Data Residency  
  Customer Data will be stored at rest in two independent, geographically dispersed datacenter locations in Germany. Replication of  Customer Data across these German datacenters ensures data remains in Germany even in backup, business continuity, and disaster recovery scenarios.  
   
- Customer Data means all data that are provided to Microsoft by, or on behalf of the customer through the use of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
+ Customer Data means all data that are provided to Microsoft by, or on behalf of the customer through the use of customer engagement apps (such as Dynamics 365 Sales and Customer Service).  
   
  Note the following:  
   
@@ -37,7 +36,7 @@ search.app:
   
 - Access control is through  a German Data Trustee.  
   
-- All security and compliance capabilities of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, are included.  
+- All security and compliance capabilities of customer engagement apps (such as Dynamics 365 Sales and Customer Service), are included.  
   
   ![Germany data residence](media/germany-data-residence.png "Germany data residence")  
   <a name="BKMK_DataTrustee"></a>   
@@ -96,7 +95,7 @@ Dynamics 365 Plan is a user subscription that includes [!INCLUDE[pn_ms_dyn_365_f
   
 <a name="BKMK_CompliancyCerts"></a>   
 ## Compliancy and certifications  
- [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] is built in adherence to the cloud security and compliance standards and commitments of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
+ [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] is built in adherence to the cloud security and compliance standards and commitments of customer engagement apps (such as Dynamics 365 Sales and Customer Service).  
   
  [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] is planned to be covered under existing audits.  
   
