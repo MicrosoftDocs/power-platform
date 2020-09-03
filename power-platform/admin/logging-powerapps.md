@@ -66,7 +66,7 @@ Schemas define which Power Apps fields are sent to the Microsoft 365 Security an
 
 ## Review your audit data using reports in Microsoft 365 Security and Compliance Center
 
-You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6).
+You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log for user and admin activity](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6).
 
 To use the preconfigured Power Apps reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Power Apps app activities** tab.
 
@@ -74,6 +74,6 @@ To use the preconfigured Power Apps reports, go to https://protection.office.com
 > ![Audit log search Power Apps](media/audit-log-search-pa.png "Audit log search Power Apps")
 
 ### See also
- [Search the audit log for user and admin activity in Office 365](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6)<br/>
+ [Search the audit log for user and admin activity](https://support.office.com/article/search-the-audit-log-for-user-and-admin-activity-in-office-365-57ca5138-0ae0-4d34-bd40-240441ef2fb6)<br/>
  [Office 365 Management APIs overview](https://msdn.microsoft.com/office-365/office-365-managment-apis-overview)<br/>
- [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
+ [Permissions in the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)

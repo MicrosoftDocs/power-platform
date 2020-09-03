@@ -28,7 +28,7 @@ search.app:
   
 ## Open model-driven apps in Dynamics 365 and other services with the app launcher  
 
- You can open model-driven apps in Dynamics 365 and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open model-driven apps in Dynamics 365. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Office 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher)  
+ You can open model-driven apps in Dynamics 365 and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open model-driven apps in Dynamics 365. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Microsoft 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher).
   
  ![Microsoft 365 app launcher](../admin/media/admin-center-app-launcher.png "Microsoft 365 app launcher")  
    
@@ -83,7 +83,7 @@ More information: [Contact Technical Support](get-help-support.md)
  ![Azure Active Directory password policy](../admin/media/o365-admin-center-azure-ad.png "Azure Active Directory password policy")  
   
 ## Add your domain  
- Use the Manage domains page to add your domain to your subscription. When you add your own domain, user sign-ins can match your company's URL. For example, instead of user@contoso.onmicrosoft.com, it could be user@contoso.com. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Verify your domain in Office 365](https://support.office.com/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)  
+ Use the Manage domains page to add your domain to your subscription. When you add your own domain, user sign-ins can match your company's URL. For example, instead of user@contoso.onmicrosoft.com, it could be user@contoso.com. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add a domain to Microsoft 365](https://support.office.com/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
   
  ![Microsoft 365 admin center add your domain](../admin/media/o365-admin-center-add0domain.png "Microsoft 365 admin center add your domain")  
   
