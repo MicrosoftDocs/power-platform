@@ -24,7 +24,7 @@ You can create chatbots that handle protected health information when your organ
 1. Capture health information and personally identifying information, such as the customer’s IP address or email address.
 
 >[!NOTE]
->While Power Virtual Agents is covered under HIPAA, it is still not intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents#important-information).
+>While Power Virtual Agents is covered under HIPAA, it is still not intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents.md#important-information).
 
 ## System and Organization Controls (SOC) compliance
 
@@ -68,5 +68,5 @@ ISO 27701:2019 | [Microsoft Service Trust Portal](https://servicetrust.microsoft
 [HIPAA is a United States healthcare law](https://www.hhs.gov/hipaa/index.html) that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities — doctors’ offices, hospitals, health insurers, and other healthcare companies — with access to patients’ protected health information (PHI), as well as to business associates, such as cloud service and IT providers, that process PHI on their behalf.
 
 >[!NOTE]
->While Power Virtual Agents is covered under HIPAA, it is still not intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents#important-information).
+>While Power Virtual Agents is covered under HIPAA, it is still not intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents.md#important-information).
 
