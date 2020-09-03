@@ -168,7 +168,7 @@ Services deployed in the Australia East Region will replicate data to the Austra
  Once you have been scheduled for migration, a member of the [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] team will work directly with you to discuss scheduling and any other issues that may come up during the migration.  
   
 ### If I have both Microsoft 365 services and model-driven apps in Dynamics 365, how will migration be handled?  
- The migration of each service will be handled separately. For model-driven apps in Dynamics 365, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [New datacenter regions for Office 365](https://technet.microsoft.com/library/dn878163.aspx).  
+ The migration of each service will be handled separately. For model-driven apps in Dynamics 365, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](https://technet.microsoft.com/library/dn878163.aspx).  
   
 ### Can I move Microsoft 365 and model-driven apps in Dynamics 365 at the same time?  
  The move process for each service is handled separately but the move can be scheduled to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move if requested.  

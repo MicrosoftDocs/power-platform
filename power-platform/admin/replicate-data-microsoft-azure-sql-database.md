@@ -104,7 +104,7 @@ For information about the programmatic interface for managing configuration and 
   - [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
   
 > [!IMPORTANT]
->  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] the model-driven apps in Dynamics 365 and [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] services must operate under the same tenant and within the same [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure integration with Office 365](https://support.office.com/article/Azure-integration-with-Office-365-a5efce5d-9c9c-4190-b61b-fd273c1d425f)  
+>  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] the model-driven apps in Dynamics 365 and [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] services must operate under the same tenant and within the same [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure integration with Microsoft 365](https://support.office.com/article/Azure-integration-with-Office-365-a5efce5d-9c9c-4190-b61b-fd273c1d425f)  
 > 
 >  The [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] service can be in the same or a different tenant from the service.  
   

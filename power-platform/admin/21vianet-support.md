@@ -46,7 +46,7 @@ Here are some examples of billing and subscription management issues:
 
 ## Assisted technical support through 21Vianet
 
-If you experience a technical issue with your deployment, report it to 21Vianet through the [O365 Portal](https://portal.partner.microsoftonline.cn/) or by calling the support hotline at +86 400-089-0365. Technical support hours of operations are Monday through Friday during local business hours, 9:00 to 18:00 China Standard Time (CST).
+If you experience a technical issue with your deployment, report it to 21Vianet through the [Microsoft 365 Portal](https://portal.partner.microsoftonline.cn/) or by calling the support hotline at +86 400-089-0365. Technical support hours of operations are Monday through Friday during local business hours, 9:00 to 18:00 China Standard Time (CST).
 
 A *service request* (SR) is handled within hours depending on the severity of its impact to your business:
 
