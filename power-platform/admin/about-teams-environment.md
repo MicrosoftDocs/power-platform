@@ -15,11 +15,19 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About the Project Oakdale environment (preview)
+# About the Project Oakdale environment (Preview)
 
-Introduced in September, 2020, the Microsoft Project Oakdale environment is automatically created for the selected team when you add an app in Teams using Power Apps for the first time or [install a Power Apps app](/powerapps/teams/install-personal-app) from the app catalog. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment and all data, apps and flows created using Power Apps inside a team are available from that team's [Microsoft Project Oakdale](/powerapps/teams/overview-tables) database. Project Oakdale is a new offering from Microsoft that comprises a subset of [Microsoft Common Data Service](/powerapps/maker/common-data-service/data-platform-intro) capabilities. 
+[!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can identify a Project Oakdale environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by selecting **Environments** and viewing the list of environments.
+Introduced in September, 2020, *Project Oakdale* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps and workflows in Teams using Power Apps and Power Automate. Project Oakdale—built on Common Data Service—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to Teams app store.
+
+The Project Oakdale environment is automatically created for the selected team when you [create an app](/powerapps/teams/create-first-app) using the new *Power Apps app* in Teams for the first time or install a Power Apps app from the app catalog for the first time. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment and all data, apps and flows created using the Power Apps app inside a team are available from that team's [Project Oakdale](/powerapps/teams/overview-tables) database.  
+
+> [NOTE]
+> - This is a preview feature
+> - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
+
+You can identify a Project Oakdale environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using the **Type** column in the list of environments.
 
 > [!div class="mx-imgBorder"] 
 > ![Project Oakdale environment in list](media/teams-environment-list.png "Project Oakdale environment in list")
@@ -27,7 +35,7 @@ You can identify a Project Oakdale environment in the [Power Platform admin cent
 ## Licensing and restrictions 
 Note the following regarding access to Power Platform apps in Teams.
 
-- Microsoft Project Oakdale for Teams capabilities will be available as part of select Office 365 subscriptions. See the licensing guide.
+- Project Oakdale capabilities will be available as part of select Microsoft 365 subscriptions. See the licensing guide.
 
 - Teams can invite guests who can access the apps, flows, and data in the Teams Project Oakdale database within their team. However, they won’t be allowed to install, make, or edit apps. They can only discover and run apps in their team. 
 
@@ -38,9 +46,9 @@ Note the following regarding access to Power Platform apps in Teams.
 - No direct API access or pro developer experience will be provided and only Power Apps embedded within the Teams client will be able to access runtime.  
 
 ## Admin experience 
-Tenant owners and members will be allowed to create their first app template or create a blank table app for the Team. For more detailed guidance on creating blank table apps, see [Project Oakdale tables: Overview](/powerapps/teams/overview-tables). 
+Tenant owners and members will be allowed to create their first app template or create a blank table app for the Team. For detailed guidance on creating blank table apps, see [Project Oakdale tables: Overview](/powerapps/teams/overview-tables). 
 
-Team owners will be allowed to delete a team associated to a Project Oakdale environment which will trigger the deletion of that environment.  
+Team owners will be allowed to delete a team associated to a Project Oakdale environment that will trigger the deletion of that environment.  
 
 <!--
 By design and per GDPR guidelines, tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Project Oakdale environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. 
@@ -142,7 +150,7 @@ To delete a Project Oakdale environment, select it from the list of environments
 
 ### Promote a Project Oakdale environment to production
 
-Select **Promote to production**. See [Promotion Process](#promotion-process).
+Select **Promote to production**. See [Promotion process](#promotion-process).
 
 ## Capacity limits
 
@@ -179,7 +187,7 @@ When a tenant approaches or reaches their tenant-wide Teams limits described abo
 
 As mentioned for the environment-level enforcement, any existing apps will still be able to function as expected.  
 
-## Promotion Process 
+## Promotion process 
 <!-- fwlink 2122620 for failure need 1GB -->
 <!-- fwlink 2134779 for for a few thing to know -->
 
@@ -209,10 +217,9 @@ Post promotion, the following applies to the newly promoted environment:
 - All existing apps will be associated with the promoted environment (Common Data Service) and can leverage the extended set of entities. 
 -	The promoted environment capacity will start counting against the tenant’s Common Data Service capacity. 
 - The Microsoft 365 Group association will become editable. 
--	Azure AD admins (Tenant admin, Power Platform service admin, Dynamics 365 service admin) will continue to be System Admins in the promoted Common Data Service database environment. 
 - Teams owners are assigned the System Admin roles on their environment and can access the environment using the Power Platform admin center. 
 - Adding a new Teams Template app to the prior team won’t create a new Project Oakdale Environment for the team. 
 
-### See also
-[Install a Power Apps app](/powerapps/teams/install-personal-app) <br />
-[Power Apps and Teams integration: Overview](/powerapps/teams/overview) 
+## Related topics
+[Power Apps and Teams integration: Overview](/powerapps/teams/overview) <br/>[Create flows with the Power Apps app in Teams](/power-automate/teams/create-flows-power-apps-app)
+
