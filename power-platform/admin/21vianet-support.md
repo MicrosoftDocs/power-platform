@@ -1,12 +1,11 @@
 ---
-title: "Support for model-driven apps in Dynamics 365 - operated by 21Vianet in China  | MicrosoftDocs"
-description: Support for model-driven apps in Dynamics 365 - operated by 21Vianet in China 
+title: "Support for customer engagement apps - operated by 21Vianet in China  | MicrosoftDocs"
+description: Support for customer engagement apps - operated by 21Vianet in China 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/19/2019
+ms.date: 09/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,9 +15,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Support for model-driven apps in Dynamics 365 - operated by 21Vianet in China
+# Support for customer engagement apps - operated by 21Vianet in China
 
- Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, provide many self-service support options and support through 21Vianet in China.
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), provide many self-service support options and support through 21Vianet in China.
 
 ## Self-help resources
 
