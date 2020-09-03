@@ -218,13 +218,11 @@ There are times when you need to update an existing managed solution. To learn m
 Managed and unmanaged solutions exist at different levels within a Common Data Service environment. To learn more, go to [Solution layers](/powerapps/maker/common-data-service/solution-layers).
 
 
-A managed component (for example, a topic or flow) gets an unmanaged layer when you edit it. This unmanaged active layer lies on top of all other layers coming from the different solutions containing this component. 
-
-The layer on top always wins; therefore you cannot see the new changes coming from new deployments. 
-
-To avoid this issue, use the **See solution layers** option, where you can see all solutions where this component is part of it. You can see one "Active" solution on top of all solutions if you have changed something directly on the instance. 
-
-To remove the unmanaged customizations on the managed component: 
+A managed component (for example, a topic or flow) gets an unmanaged "Active" layer when you edit it, which means you won't see the latest changes after you deploy the solution. 
+ 
+ To show the latest updates, you'll need to remove the unmanaged "Active" layer. 
+ 
+ Use the **See solution layers** option to see all solutions that a component is a part of. You can also see one "Active" solution on top of all other solutions if you have changed something directly.
 
 1. Select **See solution layers** from the contextual ... menu next to the component name.
 
@@ -234,4 +232,5 @@ To remove the unmanaged customizations on the managed component:
 
 
 
+ 
  
