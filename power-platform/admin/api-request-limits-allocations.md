@@ -38,16 +38,15 @@ This table below will describe the common requests limits as well as the allocat
 
 All the users of Microsoft Power Platform can use a certain number of requests based on the license they are assigned. The following table defines the number of requests a user can make in a 24-hour period: 
 
-| **User licenses**                                        | **Number of API requests / 24 hours**                                                                                                         |
-|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Dynamics 365 Enterprise applications<sup>1</sup>                  | 20,000                                                                                                                                        |
-| Dynamics 365 Professional <sup>2</sup>                          | 10,000                                                                                                                                        |
-| Dynamics 365 Team Member                                 | 5,000                                                                                                                                         |
-| Power Apps per user plan                                  | 5,000                                                                                                                                         |
-| Power Automate per user plan                             | 5,000                                                                                                                                         |
-| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 2,000                                                                                                                                         |
-| Application user / Non-interactive users                 | See *Non-licensed user* section below |
-
+| **User licenses**                                        | **Number of API requests / 24 hours**      |     **Storage usage(input/output) / 24 hours**   |
+|----------------------------------------------------------|--------------------------------------------|--------------------------------------------------|
+| Dynamics 365 Enterprise applications<sup>1</sup>         | 20,000                                     | 125GB                                            |
+| Dynamics 365 Professional <sup>2</sup>                   | 10,000                                     | 25GB                                             |
+| Dynamics 365 Team Member                                 | 5,000                                      | 25GB                                             |
+| Power Apps per user plan                                 | 5,000                                      | 25GB                                             |
+| Power Automate per user plan                             | 5,000                                      | 25GB                                             |
+| Office licenses (that include Power Apps/Power Automate)<sup>3</sup>  | 2,000                                | 2.5GB                                     |
+| Application user / Non-interactive users                 | See *Non-licensed user* section below      | 2.5GB            |
 
 <sup>1</sup>Dynamics 365 Enterprise applications include Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365  Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, Dynamics 365 Customer Engagement plan.
 
@@ -59,16 +58,17 @@ All the users of Microsoft Power Platform can use a certain number of requests b
 Users who are running apps and flows without a user license through the Power Apps per app plan or flows licensed through the Power Automate per flow plan are granted the following API request entitlement.
 
 
-| **Non User Licenses **       | **Number of API requests / 24 hours** |
-|------------------------------|---------------------------------------|
-| Power Apps per app plan       | 1,000 per user pass                   |
-| Power Automate per flow plan | 15,000 per flow                       |
+| **Non User Licenses **       | **Number of API requests / 24 hours** | **Storage usage(input/output) / 24 hours** |
+|------------------------------|---------------------------------------|--------------------------------------------|
+| Power Apps per app plan       | 1,000 per user pass                   |      2.5GB per user pass                     |                 |
+| Power Automate per flow plan | 15,000 per flow                       |       125GB per flow                       |
 
 
 If a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license as well as a Power Apps per user license , then that user will have a total of 20000 + 5000 = 25000 requests available per 24 hours.
 
 If a user has multiple licenses allocated within the same product line, for example if a user has a Dynamics 365 Customer Service Enterprise license as the base license and a Dynamics 365 Sales Enterprise license attached, the total number of requests would be what is provided by the base license - Dynamics 365 Customer Service.
 
+Storage limits are maximum of what is allowed among the plans the user has.
 
 ## Power Apps and Power Automate capacity add-on
 
@@ -134,7 +134,15 @@ Currently, integrations won't be stopped for occasional and reasonable overages 
 
 ### Will there be a transition period for existing customers?
 
-Yes, all existing customers will have a transition period until reporting is made available in the Power Platform admin center.
+Yes, all existing customers will have a transition period until reporting is made available in the Power Platform admin center or until the usage data is shown in the flow analytics page.
+
+### When will the storage limits be enforced?
+
+The storage limits will be enforced starting September, 2020.
+
+### How can I see the storage usage of my flow?
+
+We will soon make this data available in the flow analytics page on a per-flow basis.  The current proposed limits do not affect most of our current customers.
 
 ### What tools can an admin use to monitor and analyze API requests across the platform?
 
