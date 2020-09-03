@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About the Project Oakdale environment (Preview)
+# About the Project Oakdale environment
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Introduced in September, 2020, *Project Oakdale* is a built-in, low-code data pl
 
 The Project Oakdale environment is automatically created for the selected team when you [create an app](/powerapps/teams/create-first-app) using the new *Power Apps app* in Teams for the first time or install a Power Apps app from the app catalog for the first time. The Project Oakdale environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment and all data, apps and flows created using the Power Apps app inside a team are available from that team's [Project Oakdale](/powerapps/teams/overview-tables) database.  
 
-> [NOTE]
+> [!NOTE]
 > - This is a preview feature
 > - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
 
