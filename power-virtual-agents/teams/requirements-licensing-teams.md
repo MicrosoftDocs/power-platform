@@ -9,7 +9,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "licensing, admin, ceX"
+ms.custom: "licensing, admin, ceX, teams"
 ms.collection: virtual-agent
 ---
 
@@ -35,23 +35,11 @@ If you need more information about licenses, see the following topics:
 - [Assign licenses and manage access to Power Virtual Agents](../requirements-licensing.md)
 
 
-<!-- are trial plans affected? can you have a trial plan and a teams plan? also, what licenses are required for using PVA in teams - we should call out cds lite etc. are subscription/power automate capacities also applicable for teams?-->
 
-## Trial plans
+## Trial plans, capacity, and Power Automate integration
 
-Users in your organization can try Power Virtual Agents for a limited time period.
 
-You can [disable or enable the ability for users to sign up for a trial themselves](/azure/active-directory/users-groups-roles/directory-self-service-signup) by modifying the **AllowAdHocSubscriptions** flag in your organization settings. 
+Trial plans, subscription capacity, and Power Automate limits are described in the [Quotas and rate limit capacity considerations for Power Virtual Agents](requirements-quotas-teams.md) topic.
 
-## Subscription capacity
 
-When you purchase a license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
-
-The consumption of the capacity isn't reported at the tenant level, but [can be seen for each individual bot](analytics-billed-sessions-teams.md).
-
-See [Quotas and rate limit capacity considerations for Power Virtual Agents](requirements-quotas-teams.md) for more information.
-
-## Using Power Automate with a Power Virtual Agents license
-
-[See how to use Power Automate with Power Virtual Agents](advanced-flow-teams.md). 
 
