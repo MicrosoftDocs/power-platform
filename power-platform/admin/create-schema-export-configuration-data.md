@@ -2,11 +2,10 @@
 title: "Create a schema to export configuration data  | MicrosoftDocs"
 description: Create a schema to export configuration data
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2017
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -60,7 +59,7 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
    -   If you want to remove all the items in the **Selected Fields and Entities** and start over, click **Clear Selection**.  
   
-   ![Remove a relationship in a model-driven apps in Dynamics 365 schema](../admin/media/config-migration-create-schema-2.png "Remove a relationship in a model-driven apps in Dynamics 365 schema")  
+   ![Remove a relationship in a customer engagement apps schema](../admin/media/config-migration-create-schema-2.png "Remove a relationship in a customer engagement apps schema")  
   
 9. To validate the selected data to be exported, click **Tools** > **Validate Schema**.  
   
