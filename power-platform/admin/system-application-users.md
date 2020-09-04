@@ -23,19 +23,20 @@ There is a list of special system and application users that is created when the
 Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users entity.  Do not delete or modify these users including changing or reassigning security role. 
 
 |User type  |Full name  |User name  |Purpose  | Security role assigned |
-|---------|---------|---------|---------|---------|
-|System     | SYSTEM  | n/a        | See below         | n/a |
-|     | Support user     |crmoln@microsoft.com          |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support  |Support user (does not have privilege to customer data)    |
-|    | Delegated admin        |crmoln2@microsoft.com          |See [For partners: the Delegated admin](for-partners-delegated-administrator.md)        |System admin |
-|Application     | Business Application Platform Service account |bap_sa@microsoft.com   |To setup Power Apps system and configurations |System admin   |
-|    | Dynamics 365 Athena-CDStoAzuredatalake        | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com         |Service application to perform data integration between Common Data Service to Azure Data Lake |DataLakeWorkspaceAppAccess   |
-|    | Dynamics 365 Athena2-CDStoAzuredatalake        | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com         |Service application to perform data integration between Common Data Service to Azure Data Lake |DataLakeWorkspaceAppAccess   |
-|    | Dynamics 365 EnterpriseSales-CDStoAzuredatalake        | Dynamics365EnterpriseSales-CDStoAzuredatalake@onmicrosoft.com         |Service application to perform data integration between Common Data Service (Sales) to Azure Data Lake |N/A    |
-|    | Microsoft Project | Project@microsoft.com         |Allow Project for the Web and Roadmap Service to communicate with Common Data Service |Project System and Portfolio User   |
-|    | Power Apps Checker Application        | Pacheckerapp@microsoft.com         |To perform static analysis of Power Apps solutions to assist in identifying performance and stability risks |Export customizations and Solution checker   |
-|    | Powerqueryonline-CDStoAzuredatalake        | Powerqueryonline-CDStoAzuredatalake@onmicrosoft.com         |Service application to perform data query between Common Data Service and Azure Data Lake |N/A    |
-|    | Provision User      | provisionapp@fabrikam.com         |To perform Application installation from AppSource or System updates from Microsoft |System admin   |
-|    | DataLakeStorage     | DataLakeStorage@onmicrosoft.com      | To allow solutions to manage workspaces, workspace permissions and the discovery of workspaces.  | DataLakeWorkspaceAppAccess    |
+|-----------|-----------|-----------|---------|------------------------|
+|System | SYSTEM | n/a | See below | n/a |
+| | Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support |Support user (does not have privilege to customer data) |
+| | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md) |System admin |
+|Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations |System admin |
+| | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Common Data Service to Azure Data Lake |DataLakeWorkspaceAppAccess |
+| | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Common Data Service to Azure Data Lake |DataLakeWorkspaceAppAccess |
+| | Dynamics 365 EnterpriseSales-CDStoAzuredatalake | Dynamics365EnterpriseSales-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Common Data Service (Sales) to Azure Data Lake |N/A |
+| | # SIAutoCapture | SIAutoCapture@onmicrosoft.com | To be used for business requirements that needs the elevation of privileges, such as supporting features that require access to organizational entities and executing plugins from backend services. Also, actions performed by users with this role depend on the privileges that are granted. These privileges are read only for administrator and can only be managed by the first party publisher solution. | n/a |
+| | Microsoft Project | Project@microsoft.com |Allow Project for the Web and Roadmap Service to communicate with Common Data Service |Project System and Portfolio User |
+| | Power Apps Checker Application | Pacheckerapp@microsoft.com |To perform static analysis of Power Apps solutions to assist in identifying performance and stability risks |Export customizations and Solution checker |
+| | Powerqueryonline-CDStoAzuredatalake | Powerqueryonline-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data query between Common Data Service and Azure Data Lake |N/A |
+| | Provision User | provisionapp@fabrikam.com |To perform Application installation from AppSource or System updates from Microsoft |System admin |
+| | DataLakeStorage | DataLakeStorage@onmicrosoft.com | To allow solutions to manage workspaces, workspace permissions and the discovery of workspaces. | DataLakeWorkspaceAppAccess |
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 
