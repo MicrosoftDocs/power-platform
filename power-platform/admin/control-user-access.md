@@ -8,7 +8,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 09/04/2020
 search.audienceType: 
   - admin
 search.app:
@@ -37,11 +37,11 @@ In this example, four security groups provide controlled access to a specific en
 - When users are added to the security group, they are added to the Common Data Service environment.  
 - When users are removed from the group, they are disabled in the Common Data Service environment.  
 - When a security group is associated with an existing environment with users, all users in the environment that are not members of the group will be disabled. 
-- If a Common Data Service environment does not have an associated security group, all users with a Common Data Service license (model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, Power Automate, Power Apps, etc.) will be created as users and enabled in the environment.  
+- If a Common Data Service environment does not have an associated security group, all users with a Common Data Service license (customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation)), Power Automate, Power Apps, etc.) will be created as users and enabled in the environment.  
 - If a security group is associated with an environment, only users with Common Data Service licenses that are members of the environment security group will be created as users in the Common Data Service environment.  
 - When you assign a security group to an environment, that environment will not show up in [home.dynamics.com](https://home.dynamics.com) for users not in the group.  
 - If you do not assign a security group to an environment, the environment will show up in [home.dynamics.com](https://home.dynamics.com) even for those who have not been assigned a security role in that Common Data Service environment.  
-- If you do not specify a security group, all users who have a Common Data Service license, (model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, Power Automate, Power Apps, etc.) will be added to the new environment.
+- If you do not specify a security group, all users who have a Common Data Service license, (customer engagement apps (such as Dynamics 365 Sales and Customer Service)) will be added to the new environment.
 - **New**: Security groups cannot be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
 - Common Data Service environments support associating the following group types: Security and Microsoft 365. Associating [other group types](https://docs.microsoft.com/microsoft-365/admin/create-groups/compare-groups?WT.mc_id=365AdminCSH&view=o365-worldwide) is not supported.
 
