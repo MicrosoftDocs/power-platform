@@ -1,7 +1,7 @@
 ---
-title: "Review ISO, SOC 2, and HIPAA compliance"
+title: "Review ISO, SOC, and HIPAA compliance"
 description: "Power Virtual Agents is compliant with a number of standards and is covered under HIPAA."
-ms.date: 9/3/2020
+ms.date: 9/4/2020
 ms.keywords: "PVA, ISO, SOC, certification, compliance"
 ms.service:
   - "dynamics-365-ai"
@@ -15,7 +15,7 @@ ms.cusom: "certification, ceX"
 
 # Standards compliance and certification
 
-Power Virtual Agents is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products)<!--It looks to me like the ultimate destination for this link should be https://www.microsoft.com/licensing/terms/, but it's a bit ambiguous what the first line of the page this link goes to means when it says "Please visit the new Product Terms site! This site [ed. note: Which is "this site:?] combines all terms from the Product Terms (PT) and Online Services Terms (OST) documents into a single, easy-to-navigate website."-->, and is compliant with a number of International Organization for Standardization (ISO) certifications. Power Virtual Agents is also compliant with System and Organization Controls (SOC)<!--Should you mention "SOC 2" here, as you do in the title metadata?-->, the Cloud Security Alliance (CSA) Security Trust Assurance and Risk (STAR), and is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement (BAA).
+Power Virtual Agents is a Core Online Service, as defined in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1#coreui-contentrichblock-4khwhqo), and is compliant with a number of International Organization for Standardization (ISO) certifications. Power Virtual Agents is also compliant with System and Organization Controls (SOC), the Cloud Security Alliance (CSA) Security Trust Assurance and Risk (STAR), and is covered under the Health Insurance Portability and Accountability Act (HIPAA) Business Associate Agreement (BAA).
 
 You can create chatbots that handle protected health information when your organization is bound by HIPAA, as in the following scenarios where the chatbot can:
 
@@ -46,20 +46,17 @@ Power Virtual Agents has been audited to be compliant with CSA STAR.
 Power Virtual Agents is compliant with the ISO standards listed in the following table. Audit reports for each are available from the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports).
 
 
-| Standard | Audit report<!--It seems odd to have these all be the same link. Would it be possible to give the actual report name as the link text, even if the URL goes to the same page each time as it does now?--> | Link to standard (www.iso.org) |
+| Standard | Name of report and certificate | Link to standard (www.iso.org) |
 | -- | -- | -- |
-| ISO 9001:2015 | [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO 9001:2015](https://www.iso.org/standard/62085.html) |
-| ISO 20000-1:2011 | [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 20000-1:2011](https://www.iso.org/standard/51986.html) |
-| ISO 22301:2012 | [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 22301:2012](https://www.iso.org/standard/50038.html) |
-| ISO 27001:2013 | [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27001:2013](https://www.iso.org/standard/54534.html) |
-| ISO 27017:2015 | [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27017:2015](https://www.iso.org/standard/43757.html) |
-| ISO 27018:2019 | [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27018:2019](https://www.iso.org/standard/76559.html) |
-| ISO 27701:2019 | [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27701:2019](https://www.iso.org/standard/71670.html) |
+| ISO 9001:2015 | [Microsoft Azure, Dynamics 365, and Other Online Service - ISO9001 Certificate and Assessment Report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO 9001:2015](https://www.iso.org/standard/62085.html) |
+| ISO 20000-1:2011 | [Microsoft Azure, Dynamics 365, and Other Online Service - ISO20000-1 Certificate and Assessment Report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 20000-1:2011](https://www.iso.org/standard/51986.html) |
+| ISO 22301:2012 | [Microsoft Azure, Dynamics 365, and Other Online Service - ISO20000-1 Certificatie and Assessment Report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 22301:2012](https://www.iso.org/standard/50038.html) |
+| ISO 27001:2013 | [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27001 and 27701 Certificate](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) and [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27001, 27018, 27017, 27701 Assessment Report] (https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27001:2013](https://www.iso.org/standard/54534.html) |
+| ISO 27017:2015 | [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27017 Certificate](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) and [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27001, 27018, 27017, 27701 Assessment Report] (https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27017:2015](https://www.iso.org/standard/43757.html) |
+| ISO 27018:2019 | [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27018 Certificate](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) and [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27001, 27018, 27017, 27701 Assessment Report] (https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27018:2019](https://www.iso.org/standard/76559.html) |
+| ISO 27701:2019 | [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27701 Certificate](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) and [Microsoft Azure, Dynamics 365, and Other Online Service - ISO27001, 27018, 27017, 27701 Assessment Report] (https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports) | [ISO/IEC 27701:2019](https://www.iso.org/standard/71670.html) |
 
 
 ## HIPAA coverage
 
 [HIPAA](https://www.hhs.gov/hipaa/index.html) is a United States healthcare law that establishes requirements for the use, disclosure, and safeguarding of individually identifiable health information. It applies to covered entities&mdash;doctors' offices, hospitals, health insurers, and other healthcare companies&mdash;that have access to patients' protected health information (PHI), in addition to business associates&mdash;such as cloud service and IT providers&mdash;that process PHI on their behalf.
-<!--I doubt that you really need to repeat this note. Suggest deleting.-->
->[!NOTE]
->Although Power Virtual Agents is covered under HIPAA, it still isn't intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents.md#important-information).
