@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/29/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +18,7 @@ search.app:
 
 # Connect Gmail accounts using OAuth 2.0 
 
-Follow the steps in this article to set up server-side synchronization to send and receive email in model-driven apps in Dynamics 365 from Gmail accounts using OAuth 2.0 as the authorization mechanism.
+Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) from Gmail accounts using OAuth 2.0 as the authorization mechanism.
 
 > [!NOTE]
 > The Gmail OAuth email server profile works for up to 100 users. Create multiple OAuth profiles (steps 1-4) if you want to associate the same profile with multiple users.
