@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/21/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +25,7 @@ A business unit is a logical grouping of related business activities.
   
  Keep the following in mind when creating business units:  
   
-- The organization (also known as the root business unit) is the top level of a business unit hierarchy. Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, automatically create the organization when you install or provision model-driven apps in Dynamics 365. You can’t delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You cannot change the organization name using the Business Unit form but it can be changed using the [Web API](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9).
+- The organization (also known as the root business unit) is the top level of a business unit hierarchy. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), automatically create the organization when you install or provision customer engagement apps. You can’t delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You cannot change the organization name using the Business Unit form but it can be changed using the [Web API](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9).
   
 - Each business unit can have just one parent business unit.  
   
@@ -60,7 +60,7 @@ Make sure you have the System Administrator or System Customizer security role o
  
 2. On the Actions bar, select **New**.  
   
-3. In the **Business Unit** dialog box, type a name for the new business unit. Model-driven apps in Dynamics 365 automatically fills in the **Parent Business** field with the name of the root business unit.  
+3. In the **Business Unit** dialog box, type a name for the new business unit. Customer engagement apps automatically fills in the **Parent Business** field with the name of the root business unit.  
   
 4. If you want to change the parent business unit, select the **Lookup** button (![Lookup button](media/lookup-4.png)), **Look Up More Records**, and then do one of the following:  
   
