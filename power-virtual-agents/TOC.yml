@@ -6,6 +6,8 @@
      href: fundamentals-get-started.md
    - name: Community help and support
      href: fundamentals-support.md
+   - name: Standards compliance and certification
+     href: admin-certification.md
 - name: Administer and manage
   items:
    - name: Assign licenses
