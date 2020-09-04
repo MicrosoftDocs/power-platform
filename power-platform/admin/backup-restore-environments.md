@@ -3,11 +3,10 @@ title: Back up and restore environments | Microsoft Docs
 description: Covers how to back up and restore environments
 services: powerapps
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,7 +18,7 @@ search.app:
 ---
 # Back up and restore environments
 
-Protecting your data in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Dynamics 365 Customer Service, and providing continuous availability of service are important. You have multiple options for backing up and restoring your environments.   
+Protecting your data in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and providing continuous availability of service are important. You have multiple options for backing up and restoring your environments.   
  
 ## System backups  
 Some backups take place without you having to do anything.  
