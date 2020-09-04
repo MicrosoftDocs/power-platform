@@ -20,7 +20,7 @@ search.app:
 [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] address the needs of the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA). The German datacenter delivers services that bring together the best of Microsoft in productivity, collaboration, intelligence and platform to grow, evolve and transform your business.  
   
 > [!NOTE]
-> Due to the unique nature of [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)], there are some features that have not yet been enabled. The key sales, marketing, and service features for customer engagement apps (such as Dynamics 365 Sales and Customer Service), will be the same as in other regions. However, there may be external factors that are made available in other clouds, but will not be available to German cloud customers at this time.  
+> Due to the unique nature of [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)], there are some features that have not yet been enabled. The key sales, marketing, and service features for customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), will be the same as in other regions. However, there may be external factors that are made available in other clouds, but will not be available to German cloud customers at this time.  
 > 
 >  Please check back for the latest information.  
   
