@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2020
+ms.date: 09/03/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -165,7 +165,7 @@ It's well understood that monitoring as a critical aspect of managing software a
 
 [Activity logging for Power Apps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Common Data Service and Microsoft 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
-### Download the Power Apps and Power Automate license report
+### View the Power Apps and Power Automate license report
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
