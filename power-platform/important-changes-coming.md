@@ -211,7 +211,7 @@ form that requires user input to start and run to completion. When you start the
 dialog process, a wizard-like interface is presented; users make selections or
 enter data as they progress through each page of the wizard.
 
-Process dialogs are deprecated and will be removed by April 1, 2021. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](https://docs.microsoft.com/flow/replace-dialogs)
+Process dialogs are deprecated and will be removed by December 1, 2021. Suggested replacement options include Business Process Flows or Canvas Apps. More information: [Replace dialogs with business process flows or canvas apps](https://docs.microsoft.com/flow/replace-dialogs)
 
 Legacy process-related attributes in entities are deprecated
 ------------------------------------------------------------
