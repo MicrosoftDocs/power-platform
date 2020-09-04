@@ -2,11 +2,10 @@
 title: "Analyze your data with Excel templates  | MicrosoftDocs"
 description: Analyze your data with Excel templates
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -34,7 +33,7 @@ search.app:
   
 - And much more…  
   
-  You can try out the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, to get a quick view of what kind of analysis is possible.  
+  You can try out the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), to get a quick view of what kind of analysis is possible.  
   
   ![Example of a pipeline analysis Excel template](../admin/media/excel-template-example-pipeline-analysis.png "Example of a pipeline analysis Excel template")  
   
@@ -191,7 +190,7 @@ search.app:
   
  This template was created from the Settings page so it will appear on the menu under **Excel Templates**. If it had been created from a records list, it would appear under **Personal Excel Templates**.  
   
- If you have [!INCLUDE[pn_microsoft_excel_online](../includes/pn-microsoft-excel-online.md)], you can see the data in place in an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] window in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. If not, or if you'd rather create the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file, click **Download \<template name>**.  
+ If you have [!INCLUDE[pn_microsoft_excel_online](../includes/pn-microsoft-excel-online.md)], you can see the data in place in an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] window in customer engagement apps (such as Dynamics 365 Sales and Customer Service). If not, or if you'd rather create the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file, click **Download \<template name>**.  
   
 <a name="BKMK_UseAnalyze"></a>   
 ### Step 3: Analyze your data in Excel  
@@ -207,7 +206,7 @@ search.app:
   
 <a name="BKMK_SampleTemplates"></a>   
 ## Try out the sample Excel templates  
- There are four [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with model-driven apps in Dynamics 365.  
+ There are four [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with customer engagement apps.  
   
  ![Try out the included Excel templates](../admin/media/excel-template-included.png "Try out the included Excel templates")  
   
@@ -229,7 +228,7 @@ search.app:
 3. Download the template or open it in place in [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)].  
   
 > [!TIP]
->  You can export the templates that are included in model-driven apps in Dynamics 365, modify them, and then reimport them as new templates. This can give you a running start on creating your own custom [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates.  
+>  You can export the templates that are included in customer engagement apps, modify them, and then reimport them as new templates. This can give you a running start on creating your own custom [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates.  
   
 <a name="BKMK_BestPractices"></a>   
 ## Best practices and considerations for using Excel templates  

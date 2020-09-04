@@ -823,7 +823,7 @@
     href: about-flow-guide.md
   - name: Administer Power BI
     href: about-powerbi-guide.md
-  - name: Administer model-driven apps in Dynamics 365    
+  - name: Administer customer engagement apps in Dynamics 365    
     items:
     - name: Overview
       href: about-ce-guide.md
