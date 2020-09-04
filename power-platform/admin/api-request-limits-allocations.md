@@ -5,7 +5,7 @@ author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/18/2020
+ms.date: 09/04/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,7 +18,7 @@ search.app:
 ---
 # Requests limits and allocations
 
-Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), Power Apps, Power Automate, AI Builder, and Power Virtual Agents.
+Effective October 2019, to help ensure service levels, availability and quality, there are entitlement limits to the number of requests users can make each day across customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), Power Apps, Power Automate, AI Builder, and Power Virtual Agents.
 
 ## What is a Microsoft Power Platform request?
 
@@ -114,7 +114,7 @@ Apart from the new daily API request limit, there are other service protection l
 
 Review the following resources for information about *current* service protection limits for each service:
 
-- [Common Data Service service protection API limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service), Power Apps, and Power Automate connecting to Common Data Service/model-driven apps in Dynamics 365
+- [Common Data Service service protection API limits](https://docs.microsoft.com/powerapps/developer/common-data-service/api-limits): applicable for customer engagement apps (such as Dynamics 365 Sales and Customer Service), Power Apps, and Power Automate connecting to Common Data Service/customer engagement apps
 
 - [Microsoft Power Automate limits](https://docs.microsoft.com/flow/limits-and-config#looping-and-debatching-limits): applicable for Power Automate
 
