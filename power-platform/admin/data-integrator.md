@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 07/17/2020
+ms.date: 09/04/2020
 ms.author: sabinn
 search.audienceType: 
   - admin
@@ -486,6 +486,6 @@ You can use the following settings to tune the performance of Dynamics 365 Finan
 
 Consider the following tips to ensure performance while importing or exporting data from Common Data Service environments.
 
-### Importing/Exporting data to/from model-driven apps in Dynamics 365
+### Importing/Exporting data to/from customer engagement apps
 
 - Ensure indexes are defined for integration keys.
