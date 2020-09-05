@@ -2,11 +2,10 @@
 title: "Create templates for email  | MicrosoftDocs"
 description: Create templates for email
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -60,10 +59,10 @@ An email template is attached to an email activity after the activity is created
    >      The text and data fields will be converted to a hyperlink. For example: \<a href="https://contoso.com/q?{!User : City;}">http://contoso.com/q?{!User : City;}\</a>.  
    > 
    >      The hyperlink text will appear as a link when the template is used in an email.  
-   > - There is no spell check built into model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. There might be third-party solutions available. For more information, visit [Microsoft Dynamics Solution Finder](https://www.microsoft.com/dynamics365/partners).  
+   > - There is no spell check built into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). There might be third-party solutions available. For more information, visit [Microsoft Dynamics Solution Finder](https://www.microsoft.com/dynamics365/partners).  
    > - The Formatting toolbar has limited fonts and font sizes. However, you can copy and paste content from [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)]. This allows you to take advantage of features such as spell checking and some advanced text formatting. To single-space a line of text, at the end of the line press **Shift+Enter**.  
   
-9. To insert data fields to display information such as a customer's name or data from a quote, from a model-driven apps in Dynamics 365 record, select **Insert/Update**, and then in the **Data Field Values** dialog box, select **Add**.  
+9. To insert data fields to display information such as a customer's name or data from a quote, from a customer engagement apps record, select **Insert/Update**, and then in the **Data Field Values** dialog box, select **Add**.  
   
 10. In the **Add Data Value** dialog box, select the **Record type** and **Field**, and then select **OK**.  
   
