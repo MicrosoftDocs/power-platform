@@ -2,11 +2,10 @@
 title: "Enable accessible email flow | MicrosoftDocs"
 description: Enable accessible email flow
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/30/2018
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +19,7 @@ search.app:
 
 <!-- legacy procedure -->
 
-To improve accessibility when reading and editing email in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, we're introducing an app that provides an accessible email flow. This topic explains how admins can enable this flow and how end users can access it.
+To improve accessibility when reading and editing email in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), we're introducing an app that provides an accessible email flow. This topic explains how admins can enable this flow and how end users can access it.
 
 ## For admins: Install the app
 
@@ -63,7 +62,7 @@ Once the app is installed, notify users that they need to reload the web applica
 Users with the **Email app access role**, go to **Sales**, **Service**, or **Marketing**. Select **Email Messages** to open emails.
 
 > [!NOTE]
-> - If you don't see **Sales**, **Service**, or **Marketing**, your model-driven apps in Dynamics 365 has been customized. Talk to your administrator or customizer.
+> - If you don't see **Sales**, **Service**, or **Marketing**, your customer engagement app has been customized. Talk to your administrator or customizer.
 > - **Email Messages** will not appear if **Activities** has been customized to not be included in the sitemap.
 
 ![Select Email Messages](media/select-email-messages75.png "Select Email Messages")

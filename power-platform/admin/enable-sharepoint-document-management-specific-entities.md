@@ -2,11 +2,10 @@
 title: "Enable SharePoint document management for specific entities   | MicrosoftDocs"
 description: Enable SharePoint document management for specific entities
 author: Mattp123
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/26/2020
+ms.date: 09/04/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Enable SharePoint document management for specific entities
 
-Store the documents related to entity records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] and quickly access, share, and manage these documents from model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, by enabling document management on the specific entities.  
+Store the documents related to entity records in [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] and quickly access, share, and manage these documents from customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), by enabling document management on the specific entities.  
   
 > [!TIP]
 > If you haven't set up server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] integration, you may want to do that before enabling document management for specific entities. For more information, see [Set up SharePoint integration](set-up-sharepoint-integration.md).  
@@ -46,7 +45,7 @@ Store the documents related to entity records in [!INCLUDE[pn_ms_SharePoint_long
     If you don't want folders automatically created, clear the **Based on entity** check box.  
    
     > [!IMPORTANT]
-    >  If you have model-driven apps in Dynamics 365 and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your Dynamics 365 environments.  
+    >  If you have customer engagement apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your Dynamics 365 environments.  
       
    - Select **Finish**.  
   
