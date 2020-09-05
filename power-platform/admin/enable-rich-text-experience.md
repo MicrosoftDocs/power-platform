@@ -2,11 +2,10 @@
 title: "Rich text experience for appointment activities  | MicrosoftDocs"
 description: "Enable the rich text experience for appointment activities."
 author: Mattp123
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/27/2018
+ms.date: 09/04/2018
 ms.author: matp
 search.audienceType: 
   - admin
@@ -25,8 +24,8 @@ When you enable the rich text experience, server-side synchronization and appoin
 With rich text enabled you get the following benefits:
 
 - Create and synchronize appointments with rich text content in the description for an improved experience in both web and the Unified Interface. 
-- Include content from an HTML web page right into the description field or create your own custom markup using the appointment editor. Appointments tracked from Outlook will also render rich text content in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. 
-- Server-side synchronization synchronizes the rich-text HMTL content of appointment descriptions into model-driven apps in Dynamics 365.
+- Include content from an HTML web page right into the description field or create your own custom markup using the appointment editor. Appointments tracked from Outlook will also render rich text content in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). 
+- Server-side synchronization synchronizes the rich-text HMTL content of appointment descriptions into customer engagement apps.
 
 
 > [!IMPORTANT]
