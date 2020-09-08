@@ -2,11 +2,10 @@
 title: "Enable Unified Interface Only  | MicrosoftDocs"
 description: Enable Unified Interface Only
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Enable Unified Interface Only
 
-In 2018, we introduced [Unified Interface](https://docs.microsoft.com/powerapps/user/unified-interface), the latest generation of web app design for the Power Apps model-driven apps and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. It brings the best in usability, accessibility, functionality, and speed to every user. Improve how your business applications run by using only the Unified Interface. To learn how to enable it, see [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode). For more information, see [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and [FAQs](#faqs).
+In 2018, we introduced [Unified Interface](https://docs.microsoft.com/powerapps/user/unified-interface), the latest generation of web app design for the Power Apps model-driven apps and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). It brings the best in usability, accessibility, functionality, and speed to every user. Improve how your business applications run by using only the Unified Interface. To learn how to enable it, see [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode). For more information, see [What experiences are available in Unified Interface Only](#what-experiences-are-available-in-unified-interface-only-mode) and [FAQs](#faqs).
 
 ## When does the Unified Interface Only experience become available, and which environments are affected?
 
@@ -95,7 +94,7 @@ When Unified Interface Only mode is enabled, environment settings can be accesse
    > ![Advanced Settings](media/uci-advanced-settings.png "Advanced Settings")
 
 > [!NOTE]
-> You need to select Advanced Settings from a model-driven apps in Dynamics 365 page that's displayed in the Unified Interface such as Sales Hub or Customer Service Hub pages.
+> You need to select Advanced Settings from a customer engagement apps page that's displayed in the Unified Interface such as Sales Hub or Customer Service Hub pages.
 
 ## How to enable Unified Interface Only mode
 

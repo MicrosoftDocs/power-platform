@@ -2,11 +2,10 @@
 title: "Import data (all record types)  | MicrosoftDocs"
 description: Import data (all record types) 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/09/2019
+ms.date: 09/08/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -19,7 +18,7 @@ search.app:
 
 # Import data (all record types) from multiple sources
 
-Importing data is often the first important task that you need to perform after you have installed model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. You can import data from various systems and data sources into standard and customized fields of most business and custom entities. You can include related data, such as notes and attachments. To assure data integrity, you can enable duplicate detection that prevents importing duplicate records. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Detect duplicate data](detect-duplicate-data.md). For more complex data import scenarios, you can write code using the data import web service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Import data](https://docs.microsoft.com/powerapps/developer/common-data-service/import-data).
+Importing data is often the first important task that you need to perform after you have installed customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). You can import data from various systems and data sources into standard and customized fields of most business and custom entities. You can include related data, such as notes and attachments. To assure data integrity, you can enable duplicate detection that prevents importing duplicate records. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Detect duplicate data](detect-duplicate-data.md). For more complex data import scenarios, you can write code using the data import web service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Import data](https://docs.microsoft.com/powerapps/developer/common-data-service/import-data).
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Data import wizard**.
   

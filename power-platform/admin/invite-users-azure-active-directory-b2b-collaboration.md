@@ -2,11 +2,10 @@
 title: "Invite users with Azure Active Directory B2B collaboration  | MicrosoftDocs"
 description: Invite users with Azure Active Directory B2B collaboration
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -39,11 +38,11 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
      Invited users will not be able to use their own tenant email addresses when performing email related transactions in the host environment. Server-side synchronization of invited users’ incoming and outgoing emails are not supported as there can be complications, especially for invited users who are already syncing their emails in their own tenant.  
   
-3. Invited users cannot perform email activity using their own email address. Model-driven apps in Dynamics 365 only synchronizes incoming and outgoing emails from [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] that is hosted in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
+3. Invited users cannot perform email activity using their own email address. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) only synchronizes incoming and outgoing emails from [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] that is hosted in the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
   
 4. [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]  
   
-   [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] connects a group to model-driven apps in Dynamics 365. Data (including new conversations and documents) are stored in the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and/or [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] system. Since invited users belong to a different [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant, the invited users do not have permission to create [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] in the invited-to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant. However, they can participate in the [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] conversations as a guest in their [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] Inbox, but not within model-driven apps in Dynamics 365.  
+   [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] connects a group to customer engagement apps. Data (including new conversations and documents) are stored in the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and/or [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] system. Since invited users belong to a different [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant, the invited users do not have permission to create [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] in the invited-to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant. However, they can participate in the [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] conversations as a guest in their [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] Inbox, but not within customer engagement apps.  
   
 <a name="BKMK_InviteUser"></a>   
 
@@ -75,7 +74,7 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
    ![Accept the invitation](../admin/media/accept-invitation-dynamics-365.png "Accept the invitation")  
   
 > [!NOTE]
->  Until you add a license to the user account, the user will not have access to model-driven apps in Dynamics 365. Follow the steps below to add a license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
+>  Until you add a license to the user account, the user will not have access to customer engagement apps. Follow the steps below to add a license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
   
 <a name="BKMK_UpdateUserName"></a>   
 ## Update user’s name and usage location  
@@ -95,7 +94,7 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
 <a name="BKMK_AssignLicense"></a>   
 ## Assign invited users a license and security role  
- Assign your invited users a license and security role so the user can use model-driven apps in Dynamics 365.  
+ Assign your invited users a license and security role so the user can use customer engagement apps.  
   
 1. Go  to **Azure Active Directory** > **Users and groups** > **All users**. If you don't see the newly created user, refresh the page.  
   
