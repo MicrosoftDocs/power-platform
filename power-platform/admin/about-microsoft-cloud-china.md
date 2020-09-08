@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/03/2020
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -28,20 +28,6 @@ Customers in China have two options from which to select how they want to access
 - Services operated by 21Vianet in China - 21Vianet operates and offers Common Data Service services in China. This option provides a consistent customer engagement apps experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
 - Services operated by Microsoft – This option is for customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, customer engagement apps, and Office using an Enterprise Agreement, Microsoft 365 and/or customer engagement apps can co-exist on the tenant. 
-
-There are a few technical limitations during the provisioning of services that need to be taken in to account to avoid potential issues. 
-
-|Scenario  |Recommendation  |
-|---------|---------|
-|**Purchased Azure, Microsoft 365, and customer engagement apps, such as Dynamics 365 Sales and Customer Service, via OSPA.**    |Recommended sequence for provisioning: Microsoft 365 or customer engagement apps must be provisioned first, followed by Azure.|
-|**Purchased Azure via OSPA first and then purchased Microsoft 365 via OSPA. Now purchased customer engagement apps via OSPA.**   | Customer already has two tenants, one for Azure and another for Microsoft 365. Customer engagement apps can be added to the tenant containing Microsoft 365 OSPA.        |
-|**Purchase Microsoft 365 via OSPA and then purchased Azure via OSPA. Now purchased Dynamics 365, such as Dynamics 365 Sales and Customer Service, via OSPA.**     | Customer started with Microsoft 365 and then added Azure. Customer engagement apps can be provisioned on the same tenant.        |
-|**Purchased Microsoft 365 via OSPA and plans to add customer engagement apps.**   |If Microsoft 365 is already provisioned, customer will be able to provision customer engagement apps on the same tenant.         |
-|**Purchased Microsoft 365 via OSSA or CSP and purchased customer engagement apps (such as Dynamics 365 Sales and Customer Service).**    |Customer engagement apps needs to be provisioned on a separate tenant.          |
-
-OSPA = Online Services Premium Agreement<br />
-OSSA = Online Services Standard Agreement<br />
-CSP = Cloud Solution Provider
 
 For information on provisioning environments, see [Create and manage environments in the Power Platform admin center](https://docs.microsoft.com/power-platform/admin/create-environment).
 
