@@ -2,11 +2,10 @@
 title: "Forward mailbox vs. individual mailboxes   | MicrosoftDocs"
 description: Forward mailbox vs. individual mailboxes 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Forward mailbox vs. individual mailboxes 
 
-You can use mailbox monitoring to poll one or more mailboxes for incoming email messages, and then determine what actions model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, will take based on the email message, such as create or update records in the system. You can configure server-side synchronization or the Email Router to monitor either of the following:  
+You can use mailbox monitoring to poll one or more mailboxes for incoming email messages, and then determine what actions customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), will take based on the email message, such as create or update records in the system. You can configure server-side synchronization or the Email Router to monitor either of the following:  
   
 -   A forward mailbox. This is a single, central mailbox.  
   
@@ -35,12 +34,12 @@ By using a forward mailbox, you shift the administrative effort to the task of d
  You can configure users and queues in different ways within the same deployment. For example, you may want to configure some user or queue mailboxes to be monitored directly on one email server, and configure others to use a forward mailbox on a different email server.  
   
 ## Monitor a forward mailbox  
- When you use forward mailbox monitoring, incoming email messages are processed by [!INCLUDE[pn_Exchange_Server_full](../includes/pn-exchange-server-full.md)] or the [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] server and model-driven apps in Dynamics 365 in the following sequence:  
+ When you use forward mailbox monitoring, incoming email messages are processed by [!INCLUDE[pn_Exchange_Server_full](../includes/pn-exchange-server-full.md)] or the [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] server and customer engagement apps in the following sequence:  
   
 1. An email message is received by a user or queue mailbox, on either the [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)] or the [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)] server.  
   
 2. A rule in the user's mailbox sends a copy of the message, as an attachment, to the forward mailbox.  
   
-3. Model-driven apps in Dynamics 365 (by using server-side synchronization or Email Router) retrieve the message from the forward mailbox and creates the appropriate records.  
+3. Customer engagement apps (by using server-side synchronization or Email Router) retrieve the message from the forward mailbox and creates the appropriate records.  
   
 ### See also  

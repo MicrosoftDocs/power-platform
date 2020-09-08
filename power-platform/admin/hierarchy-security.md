@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 09/08/2020
 search.audienceType: 
   - admin
 search.app:
@@ -89,7 +89,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > ![Set up hierarchy security](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security")
 
   
- Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access his or her accounts and the accounts of the reports two levels deep. In our example, if you log in into model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
+ Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access his or her accounts and the accounts of the reports two levels deep. In our example, if you log in into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
 
 > [!div class="mx-imgBorder"] 
 > ![Read access for VP of Sales](../admin/media/sales-vp-access.png "Read access for VP of Sales")
