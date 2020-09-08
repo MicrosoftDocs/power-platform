@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/03/2020
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -40,7 +40,7 @@ Access to Power Apps and Power Automate starts with having a license, the type o
 |Plan  |Description  |
 |---------|---------|
 |Microsoft 365 Included     | This allows users to extend SharePoint and other Office assets they already have. |
-|Dynamics 365 Included     | This allows users to customize and extend model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, they already have.  |
+|Dynamics 365 Included     | This allows users to customize and extend customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), they already have.  |
 |Power Apps plan  | This allows: <ul><li>making enterprise connectors and Common Data Service accessible for use.</li><li>users to use robust business logic across application types and administration capabilities.</li></ul>  |
 |Power Apps Community | This allows a user to use Power Apps, Power Automate, Common Data Service and customer connectors in a single for individual use. There is no ability to share apps. |
 |Power Automate Free | This allows users to create unlimited flows and perform 750 runs. |
@@ -103,7 +103,7 @@ For customers with Azure AD Premium, conditional access policies can be defined 
 3. Select Conditional Access.
 4. Select + New Policy
 5. Select user and groups
-6. Select the cloud apps - select **Common Data Service** to control access to model-driven apps in Dynamics 365 (such as Dynamics 365 Sales and Dynamics 365 Customer Service)
+6. Select the cloud apps - select **Common Data Service** to control access to customer engagement apps
 7. Apply conditions (user/group, device, location) 
 
 ### Prevent data leakage with data loss prevent policies
