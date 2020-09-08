@@ -1,12 +1,11 @@
 ---
-title: "How field security affects synchronization between model-driven apps in Dynamics 365 and Outlook  | MicrosoftDocs"
-description: How field security affects synchronization between model-driven apps in Dynamics 365 and Outlook 
+title: "How field security affects synchronization between customer engagement apps and Outlook  | MicrosoftDocs"
+description: How field security affects synchronization between customer engagement apps and Outlook 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,13 +19,13 @@ search.app:
 
 <!-- legacy procedure -->
 
-Securing a field with field-level security can impact synchronization between model-driven apps in Dynamics 365 and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)]. Consider the following scenario.  
+Securing a field with field-level security can impact synchronization between customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) and [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)]. Consider the following scenario.  
   
 > [!NOTE]
 >  We do not recommend securing a field when the field is set to sync. Best practice is to NOT secure any sync fields. If you do decide to secure sync fields, you'll need to do the following:  
 > 
 > 1. Secure the field using field-level security. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] see "Set field-level security" below.  
-> 2. Change the sync direction so that sync does not attempt to update or write the field during synchronization. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Control field synchronization between model-driven apps in Dynamics 365 and Outlook or Exchange](control-field-synchronization-outlook.md)  
+> 2. Change the sync direction so that sync does not attempt to update or write the field during synchronization. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Control field synchronization between customer engagement apps and Outlook or Exchange](control-field-synchronization-outlook.md)  
   
 ## Scenario: Restrict users from changing Job Title  
  The Contoso company wants to promote consistent data entry. While sales personnel are out in the field, it's easy for them to create different data entries to describe the same thing. For example, the same job title could be entered as "Construction Manager", "Foreman", or "Site Manager". To prevent this, the Job Title field is secured. This has consequences for synchronization.  
@@ -52,7 +51,7 @@ Securing a field with field-level security can impact synchronization between mo
   
 7. Choose **Publish All Customizations**.  
   
-   John also secured the following Contact fields so they won't appear in model-driven apps in Dynamics 365: ftpsiteurl, governmentid  
+   John also secured the following Contact fields so they won't appear in customer engagement apps: ftpsiteurl, governmentid  
   
 ### Create and configure a field security profile  
  John creates a field security profile and assigns sales team members to the profile.  
@@ -91,13 +90,13 @@ Securing a field with field-level security can impact synchronization between mo
   
  ![Contact Rene Valdes form](../admin/media/contact-form-example.png "Contact Rene Valdes form")  
   
- When Nancy synchronizes with model-driven apps in Dynamics 365, she notices that the Job Title field is gone from the contact. This is because Nancy doesn't have update rights for the Job Title field.  
+ When Nancy synchronizes with customer engagement apps, she notices that the Job Title field is gone from the contact. This is because Nancy doesn't have update rights for the Job Title field.  
   
  ![Rene contact with no Job Title](../admin/media/contact-no-job-title.png "Rene contact with no Job Title")  
   
  Nancy's manager, with update rights to the Job Title field, fills in the field with the correct job title: Construction Manager.  
   
- Nancy synchronizes again with model-driven apps in Dynamics 365 and now the Job Title field is in the contact with the correct title.  
+ Nancy synchronizes again with customer engagement apps and now the Job Title field is in the contact with the correct title.  
   
  ![Contact with Job Title form](../admin/media/contact-job-title.png "Contact with Job Title form")  
   
