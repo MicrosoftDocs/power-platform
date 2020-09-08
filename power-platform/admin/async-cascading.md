@@ -36,7 +36,13 @@ If an environment is encountering timeouts or degraded performance while the syn
 |If one of the records in the cascading list has a value that is different than the expected value, the job will fail and roll back. For example, the starting record belongs to *Owner 1* and the cascading operation wants to change it to *Owner 2*. If one of the downstream related records has changed to *Owner 3* or is deleted before the lock occurs, the entire job will roll back.     | For Assign, the operation always works in overwrite mode changing the current value to the new value based on the parent child relationship, there are no job failures due to an original value mismatch.  For Delete if a record that was expected as part of the set is missing, all the records up to the failure point are considered completed. The user or admin can re-execute the failed job which will recalculate the job to continue without the missing record. For Merge, if there is an issue with a missing record the entire job will fail admins or users can run the job again to detect the correct records.      |
 
 ## Asynchronous mode and plug-ins
-When a cascading transaction has more than 100 records and does not have any plug-ins associated with the records, the records will be processed asynchronously. 
+When a cascading transaction meets the threshold for included records and does not have any plug-ins associated with the records, the records will be processed asynchronously. 
+
+|Operation  |Threshold |
+|---------|---------|
+|Assign|1,000 records|
+|Delete|10,000 records|
+|Merge|Always asynchronous|
 
 If inside of the asynchronous batch, there is a plug-in assigned to a record, the single record update/delete along with all associated plug-ins for that record will run synchronously as part of a transaction before moving to the next record in the asynchronous batch. 
 
