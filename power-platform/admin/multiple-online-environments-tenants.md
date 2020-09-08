@@ -2,7 +2,7 @@
 title: "Multiple environments or tenants   | MicrosoftDocs"
 description: Information on multiple environments or tenants 
 ms.custom: ""
-ms.date: 03/16/2020
+ms.date: 09/08/2020
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -14,7 +14,6 @@ author: "jimholtz"
 ms.assetid: 
 caps.latest.revision: 63
 ms.author: "jimholtz"
-manager: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -26,7 +25,7 @@ search.app:
 
 # About multiple online environments or tenants
 
-Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, gives you options for segregating your data and user access. For most companies, adding and using multiple environments in your subscription provides the right mix of functionality and ease of management. Enterprises with separate geographic locations might consider using multiple tenants to separate licenses. Multiple environments can share users among environments; multiple tenants cannot.  
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), gives you options for segregating your data and user access. For most companies, adding and using multiple environments in your subscription provides the right mix of functionality and ease of management. Enterprises with separate geographic locations might consider using multiple tenants to separate licenses. Multiple environments can share users among environments; multiple tenants cannot.  
   
 ## Uses for multiple environments  
  Environments are similar in concept to a high-rise business complex with floors organized according to business functions. Consider each floor within the building as an application (Sales/Service/Marketing, Vendor management, Wealth management) and consider each unit within a floor as an environment for a specific purpose such as production, Training, Testing, and Development.  
