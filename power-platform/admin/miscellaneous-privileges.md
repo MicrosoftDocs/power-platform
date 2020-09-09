@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 09/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,6 +18,7 @@ search.app:
 
 # Miscellaneous privileges
 
+From: https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/hh547441(v=crm.8)#miscellaneous-privileges 
 
 ## Core Records tab
 
