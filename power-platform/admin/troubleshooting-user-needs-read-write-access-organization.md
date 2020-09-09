@@ -2,7 +2,7 @@
 title: "Troubleshooting: Common user access issues  | MicrosoftDocs"
 description: "Troubleshooting: Common user access issues"
 author: jayasreekumar
-ms.author: jayasreekumar
+ms.author: jkumar
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin

@@ -1,12 +1,11 @@
 ---
 title: "Set up OneNote integration  | MicrosoftDocs"
-description: Learn how to integrate OneNote with model-driven apps in Dynamics 365
+description: Learn how to integrate OneNote with customer engagement apps
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 09/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,11 +17,11 @@ search.app:
 ---
 # Set up OneNote integration
 
-Gather your thoughts, ideas, plans and research in one single place with [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
+Gather your thoughts, ideas, plans and research in one single place with [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
   
- When you turn on [!INCLUDE[pn_microsoft_onenote](../includes/pn-microsoft-onenote.md)] integration in model-driven apps in Dynamics 365, you have the benefits of using [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] to take or review customer notes from within your records.  
+ When you turn on [!INCLUDE[pn_microsoft_onenote](../includes/pn-microsoft-onenote.md)] integration in customer engagement apps, you have the benefits of using [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] to take or review customer notes from within your records.  
   
- You can configure [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in model-driven apps in Dynamics 365 when you're also using [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)]. You must have a subscription to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] to use [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in model-driven apps in Dynamics 365.  
+ You can configure [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in customer engagement apps when you're also using [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)]. You must have a subscription to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] to use [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] in customer engagement apps.  
   
 <a name="BKMK_EnableSharePointInt"></a>   
 ## Step 1: Turn on server-based SharePoint integration  
@@ -60,7 +59,7 @@ Gather your thoughts, ideas, plans and research in one single place with [!INCLU
   
    ![Select OneNote integration for an entity](../admin/media/onenote-select-entity.png "Select OneNote integration for an entity")  
   
-6. A [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is automatically created for a record the first time you select the **OneNote** tab in the activities area in model-driven apps in Dynamics 365. After the dedicated [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is created for that record, you can view and navigate to that notebook from any Dynamics 365 apps client.  
+6. A [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is automatically created for a record the first time you select the **OneNote** tab in the activities area in customer engagement apps. After the dedicated [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] notebook is created for that record, you can view and navigate to that notebook from any Dynamics 365 apps client.  
   
 [!INCLUDE[proc-more-information](../includes/proc-more-information.md)]  [Use OneNote](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/use-onenote)
   

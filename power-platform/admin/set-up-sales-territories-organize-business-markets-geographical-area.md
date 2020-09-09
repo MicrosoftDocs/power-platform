@@ -2,11 +2,10 @@
 title: "Set up sales territories to organize business markets by geographical area | MicrosoftDocs"
 description: Set up sales territories to organize business markets by geographical area
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 09/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +19,7 @@ search.app:
 
 <!-- legacy procedure -->
 
-Improve sales potential and revenues by creating territories for customer and market segments in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Then assign appropriate sales people to handle the sales and revenue opportunities for those territories.  
+Improve sales potential and revenues by creating territories for customer and market segments in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Then assign appropriate sales people to handle the sales and revenue opportunities for those territories.  
   
 Sales territories improve the sales potential because the members of a territory are focused on the services or sales within that territory. You can associate the financials directly with a territory and its members, which simplify business analysis. Also, based on the sales territory type and size, you can define sales methodologies and the training required for those locations.  
 
