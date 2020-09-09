@@ -2,7 +2,7 @@
 title: About trial environments | Microsoft Docs
 description: About trial (standard) and trial (subscription-based) environments
 author: imadyanni
-ms.author: imadyanni
+ms.author: iyanni
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
