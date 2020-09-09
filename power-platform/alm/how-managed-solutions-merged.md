@@ -2,7 +2,7 @@
 title: "How managed solutions are merged (Common Data Service) | Microsoft Docs" 
 description: "To avoid multiple installed solutions from interfering with one another, follow best practices while constructing a solution" 
 ms.custom: ""
-ms.date: 05/05/2020
+ms.date: 09/09/2020
 ms.reviewer: ""
 ms.service: powerapps
 ms.topic: "article"
@@ -33,7 +33,21 @@ Form merge occurs on a section-by-section basis. When you add new elements to an
  Managed solutions that contain forms that use new security roles depend on those roles. You should include these security roles with your managed solution. 
   
 > [!NOTE]
->  When a managed solution entity contains multiple forms and the environment entity form also contains multiple forms, the new forms aren't appended to the bottom of the list of available forms&mdash;they're interleaved with the original entity forms.  
+>  When a managed solution entity contains multiple forms and the environment entity form also contains multiple forms, the new forms aren't appended to the bottom of the list of available forms&mdash;they're interleaved with the original entity forms.
+
+### Identifying and resolving form merge conflicts
+
+After you import a solution that includes a form, you may notice that the imported form displays a tab named **Conflicts Tab**. This is an auto-generated tab, which is created when certain form components are unable to merge. To avoid any data loss, the form components that aren’t able to merge are placed under the Conflicts Tab. Merge conflicts usually happen when the source and target customizations are out of sync, which leads to conflicting form customizations.
+
+:::image type="content" source="media/conflicts-tab.png" alt-text="Conflicts tab on imported form.":::
+
+Avoid these situations that can cause form merge conflicts:
+
+- You import two different solutions that add a component, such as a form tab, that uses the same ordinal value.
+
+- You customize a component of the form, such as a section, in the source environment but also make the same or similar customization to the component in the target environment. Then, you export the customization from the source environment and import it into the target environment.
+
+When the Conflicts Tab appears on an imported form, you can move the component displayed somewhere on the form. Once all the components are moved from the Conflicts Tab, you can delete or hide the Conflicts Tab.
   
 <a name="BKMK_MergingNavigationCustomizations"></a>   
 ## Merge navigation (SiteMap) customizations  
