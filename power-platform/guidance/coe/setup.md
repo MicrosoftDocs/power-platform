@@ -97,7 +97,7 @@ Install the updates by importing the latest version to the environment where you
 ## FAQ
 
 **What licenses do I need to run this solution?**
-The apps and flows in the CoE Starter Kit use premium features like custom connectors and Common Data Service, therefore a per app or per user Power Apps license is required to run and play the apps. More information: [Microsoft Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
+The apps and flows in the CoE Starter Kit use premium features like custom connectors and Common Data Service, therefore a per app or per user Power Apps license, as well as a per flow or per flow Power Automate license, is required to run and play the apps. More information: [Microsoft Power Platform licensing overview](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
 
 If you want to use the Power BI report (packaged as part of the solution), you'll need a Power BI license. More information: [Power BI pricing](https://powerbi.microsoft.com/pricing/)
 
