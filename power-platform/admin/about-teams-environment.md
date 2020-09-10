@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/02/2020
+ms.date: 09/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -92,7 +92,7 @@ For users to access Project Oakdale environment apps, bots, and data, they shoul
 
 - [Be enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account).
 - Have an active Office 365 license in a plan that includes Teams. See [Licensing and restrictions](#licensing-and-restrictions).
-- Be a member of the environment's [security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group).
+- Be a member of the Microsoft Teams team.
 
 ### Conceptual model
 
@@ -104,26 +104,14 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 
 ### Role assignments 
 
-|Persona  |Security role auto-assigned   |
-|---------|---------|
-|Teams owner      | System Customizer, Common Data Service User         |
-|Teams member/guest      | Same as for Teams owner        |
-|Tenant admin / Power Platform admin who is not in the team      | System Admin with Administrative access mode          |
-|Application user | [need info on this role] |
-|Dynamics 365 admin who is not in the team (that is, not in the Microsoft 365 Group)      | No access since a Project Oakdale environment will always have the Team’s Microsoft 365 Group associated with it, and Dynamics 365 service admins are excluded from environments for which they are not in the associated group.         |
-|Tenant/Power Platform/Dynamics 365 admin who is in the team   | All Teams users' roles plus System Admin with Read-Write access mode         |
-
-### User sync for Project Oakdale environments
-
-On a user’s first access of an app in their team, a user record will be created in the Project Oakdale environment associated with the team. If an app in a team has a need for a user record to pre-exist in the Project Oakdale environment (for example, a scenario where the app lists the users in the Project Oakdale environment by looking up user records from Project Oakdale), the PowerShell Add-AdminPowerAppsSyncUser command can be invoked from the app to create user records for users on-demand. 
-
-Once a user record is created in the Project Oakdale environment, background sync jobs will run every 24 hours to synchronize any user record changes from [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) into the Project Oakdale environment. 
-
-It can take up to 24 hours to: 
-- Synchronize changes made to user properties (name, address, etc.) in Azure AD into their user record in the Project Oakdale environment’s Project Oakdale database. 
-- Recognize removal of users from a team and disable them in the Project Oakdale environment so they don’t have access to the environment and its resources. 
-- Recognize a user who left the organization (user record deletion in Azure Active Directory) and disable them in the Project Oakdale environment. 
-- Recognize removal of Azure AD admin roles (Tenant admin, Power Platform service admin, Dynamics 365 service admin) from a user, and synchronize the change to the Project Oakdale environment. 
+|Persona  |Description  |  Security role auto-assigned   |
+|---------|---------|---------|
+|Teams owner      | Owners can manage team membership and settings in the team. They have full access to all the environment’s apps/resources and data. They can perform environment maintenance such as backup and restore. | System Administrator     |
+|Teams member      | Members are people in the team.  They can view all environment’s resources, run all apps and resources, and can create/update their own resources.  They have full access to all data.      |Teams member      |
+| Teams guest  | Guests are people from outside the tenant that a team owner invites, such as a partner or a customer. They can view and run all resources in the team.  By default, guests have no access to data. Their data access rights can be granted based on the app/resources that they need to run. | Teams guest | 
+|Global admin / Power Platform admin who is not in the team | These are the tenant’s Global admins who manage the health and maintenance of the tenant environments. They are typically not members of the team. They can perform environment maintenance such as backup and restore.      | System Administrator         |
+|Application user | Application users are people from inside the tenant who are invited to run apps in the team. By default, Application users have no access to data. Their data access rights can be granted based on the app/resources that they need to run. | Common Data Service User |
+|Dynamics 365 admin who is not in the team (that is, not in the Microsoft 365 Group) | These admins will not have access to manage the health and maintenance of the team environment.    | No access since a Project Oakdale environment will always have the Team’s Microsoft 365 Group associated with it, and Dynamics 365 Service admins are excluded from environments for which they are not in the associated group.         |
 
 ## Project Oakdale environments settings and actions
 <!-- fwlink 2133713  -->
