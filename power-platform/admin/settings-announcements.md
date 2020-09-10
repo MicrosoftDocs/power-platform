@@ -2,11 +2,10 @@
 title: "Broadcast announcements to an entire organization  | MicrosoftDocs"
 description: View and manage behavior settings for Common Data Service.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/13/2019
+ms.date: 09/09/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Broadcast announcements to an entire organization 
 
-Circulate information quickly to a wide set of users at one go by using Announcements in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Announcements can also serve as message boards, where you can post topics of your interest that you wish to share, or get answers to.
+Circulate information quickly to a wide set of users at one go by using Announcements in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Announcements can also serve as message boards, where you can post topics of your interest that you wish to share, or get answers to.
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Data management** > **Announcements**.
 
@@ -49,7 +48,7 @@ Make sure you have the System Administrator or System Customizer security role o
    - Expiration Date (optional) - Type the date on which you want to stop the broadcast and the announcement should expire.
 
    > [!NOTE]
-   > You can’t edit/extend this date after expiry. Model-driven apps in Dynamics 365 deletes the announcement after the expiration date.
+   > You can’t edit/extend this date after expiry. Customer engagement apps deletes the announcement after the expiration date.
 
 4. When you’re done, on the command bar, choose **Save** or **Save and Close** to begin the broadcast.
 

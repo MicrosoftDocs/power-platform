@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/31/2020
+ms.date: 09/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -48,7 +48,7 @@ Entities with questions about eligibility for Power Apps US Government should co
 Access to Power Apps US Government plans is restricted to the following offerings; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
 - Power Apps/Power Automate Plan US Government
-- In addition to the standalone plans, Power Apps and Power Automate capabilities are also included in certain Microsoft 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Microsoft 365 and model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
+- In addition to the standalone plans, Power Apps and Power Automate capabilities are also included in certain Microsoft 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Microsoft 365 and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Please note that this licensing will automatically show up and be available in customer tenants around mid-April.
 
 Additional information about the differences in functionality between these groups of licenses is described in more detail on the [Power Apps licensing information](https://powerapps.microsoft.com/pricing/) page. Power Apps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels.
 
@@ -215,7 +215,9 @@ If your organization (tenant) has already configured and successfully connected 
 
 Some of the features available in the commercial version of Power Apps are not available to Power Apps US Government customers. The Power Apps team is actively working on making the following features available to US Government customers and will update this article when these features become available:
 
-- Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) and [Power BI](https://docs.microsoft.com/power-bi/).
+- Embed in [Power BI](https://docs.microsoft.com/power-bi/).
+
+- Ability to add apps to Teams using the [Add to Teams button](https://docs.microsoft.com/powerapps/maker/canvas-apps/embed-teams-app).
 
 - [Integrate data into Common Data Service](data-integrator.md).
 

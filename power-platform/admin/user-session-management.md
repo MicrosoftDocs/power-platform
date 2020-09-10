@@ -33,8 +33,8 @@ This Azure AD ID token refresh cycle continues in the background based on the Az
 > [!NOTE]
 > - The default Azure AD refresh token expiration is 90 days.  This token lifetime properties can be configured. For detailed information, see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#configurable-token-lifetime-properties).
 > - The Azure AD session policy is bypassed and the maximum user session duration is reverted back to 24 hours in the following scenarios:
->   - In a browser session, you went to the **Dynamics 365 Administration Center** and opened an environment by manually keying in the environment URL (either on the same browser tab or a new browser tab).<br/> 
->     **To workaround** the policy bypass and maximum 24 hour user session, open the environment from the Dynamics 365 Administration Center **environments** tab by selecting the **Open** link.
+>   - In a browser session, you went to the **Power Platform admin center** and opened an environment by manually keying in the environment URL (either on the same browser tab or a new browser tab).<br/> 
+>     **To workaround** the policy bypass and maximum 24 hour user session, open the environment from the Power Platform admin center **environments** tab by selecting the **Open** link.
 >   - In the same browser session, open a version 9.1.0.3647 or higher environment and then open a version earlier 9.1.0.3647. <br/>
 >     **To workaround** the policy bypass and user duration change, open the second environment in a separate browser session.
 >

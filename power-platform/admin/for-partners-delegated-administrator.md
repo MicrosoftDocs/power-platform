@@ -2,11 +2,10 @@
 title: "For partners: the Delegated Administrator | MicrosoftDocs"
 description: Use this role to delegate admins to manage users, licenses, permissions, and domains.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -43,7 +42,7 @@ To create a simple custom view to see the delegated admin user:
 ## How to get authorized as a delegated admin  
  Partners can be authorized to be delegated admins for a company in several ways:  
   
-1. A partner can offer the customer to become a delegated admin for their account by sending a link to the delegated admin offer. The customer will need to accept and sign in with their [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]/model-driven apps in Dynamics 365 credentials.  
+1. A partner can offer the customer to become a delegated admin for their account by sending a link to the delegated admin offer. The customer will need to accept and sign in with their [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]/customer engagement apps (such as Dynamics 365 Sales and Customer Service) credentials.  
   
 2. A partner can send the customer a purchase offer link with delegated admin selected as part of the offer. The customer will need to sign up for the offer and accept the delegated admin offer.  
   

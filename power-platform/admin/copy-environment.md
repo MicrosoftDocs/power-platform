@@ -2,11 +2,10 @@
 title: "Copy an environment to a sandbox environment  | MicrosoftDocs"
 description: Learn how to copy a sandbox environment. 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,14 +17,14 @@ search.app:
 ---
 # Copy an environment
 
-You can use Copy environment in the Power Platform admin center to copy the model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
+You can use Copy environment in the Power Platform admin center to copy the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and all data from any environment to a sandbox environment. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
 > [!div class="mx-imgBorder"] 
 > ![Copy menu](media/copy-menu.png "Copy menu")
 
 > [!NOTE]
 > - You can only copy an environment to a sandbox environment.
-> - The source and destination environments must be in the same region.
+> - You can only copy to a sandbox environment in the same tenant and region.
 > - Currently, any components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) will not be copied to the target environment.
 > - You cannot copy from or to a default environment.
 > - You must have sufficient storage capacity to copy an environment.
@@ -162,7 +161,7 @@ Once the copy process is complete, the target environment is placed in [Administ
   
 - **Yammer**. Disable Yammer or redirect to a separate Yammer service to prevent posts made in the copy environment conflicting with posts made in the production environment. Go to **Settings** > **Administration** > **Yammer Configuration**.  
   
-     After creating a new sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you have connected Yammer to model-driven apps in Dynamics 365 there will be Yammer activity streams posted from model-driven apps in Dynamics 365 to Yammer asynchronously. These activity streams are not visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
+     After creating a new sandbox environment, workflows and system jobs might be pending execution. Apart from these jobs, if you have connected Yammer to customer engagement apps there will be Yammer activity streams posted from customer engagement apps to Yammer asynchronously. These activity streams are not visible through the system jobs. If there were any pending Yammer activity streams before the Disable Background Process is turned on, these activity steams will be posted to the current Yammer configuration once the Disable Background Process is turned back off. In the sandbox environment, if you have your current Yammer configuration connected to the same Yammer network as your production environment, you might see duplicate activity streams. To avoid duplicate Yammer activity streams, redirect your sandbox environment to another Yammer network (possibly a test network) before turning background processes back on.  
   
 - **Platform extensibility**. Consider disabling the following that could be running in the copy environment and impacting external service components.  
     - **Server-side plug-ins**.  

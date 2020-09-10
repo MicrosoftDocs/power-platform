@@ -2,11 +2,10 @@
 title: "Set incoming and outgoing email synchronization | MicrosoftDocs"
 description: Set incoming and outgoing email synchronization
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 09/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Set incoming and outgoing email synchronization 
 
-You have several options for synchronizing email messages with model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Use the following information to deploy the best option for your company.  
+You have several options for synchronizing email messages with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Use the following information to deploy the best option for your company.  
   
 ## Set the synchronization method  
  You can set the default synchronization method applied to all newly created user mailboxes:  
@@ -38,7 +37,7 @@ For information on picking a synchronization method, see [Integrate your email s
 ## Incoming email messaging options  
  The available incoming email configurations that you can use when a user or a queue receives email messages are as follows:  
   
-- **None**. Use this option for users or queues that do not use model-driven apps in Dynamics 365 to track received email messages.  
+- **None**. Use this option for users or queues that do not use customer engagement apps to track received email messages.  
   
 - **Dynamics 365 for Outlook**. This option is available for users and requires that [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)] be installed on the user's computer. This option does not require the Email Router component and is not available for queues.  
   
@@ -49,7 +48,7 @@ For information on picking a synchronization method, see [Integrate your email s
 ## Outgoing email messaging options  
  The available outgoing email configurations that you can use when users or queues send email messages are as follows:  
   
-- **None**. Use this option for users or queues that do not use model-driven apps in Dynamics 365 to send email messages.  
+- **None**. Use this option for users or queues that do not use customer engagement apps to send email messages.  
   
 - **Dynamics 365 for Outlook**. This option is available for users and requires that [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)] be installed on the user's computer. This option does not require the Email Router component and is not available for queues.  
   
