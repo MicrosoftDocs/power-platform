@@ -16,22 +16,21 @@ ms.collection: virtual-agent
 
 # Create topics from existing support content on the web in Teams
 
-You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages or support sites. 
+Select the version of Power Virtual Agents you're using here:
 
-Rather than copying and pasting or manually re-creating this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing web content into your bot.
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../admin-share-bots.md)
+> - [Teams (online or app)](admin-share-bots-teams.md)
 
-The AI determines the structure and content on a webpage, isolates content blocks that pertain to a support issue or question, and then classifies them into topics. Lastly, the AI identifies the [**Trigger phrase** and **Message** node](authoring-create-edit-topics-teams.md) for each topic.
+You can import existing help text and automatically create topics for a chatbot, so you don't have to re-create lots of questions and answers.
 
-There are three main steps to using the feature: 
+For example, imagine you already have an FAQ page (like [this one for Microsoft Search](https://docs.microsoft.com/en-us/microsoftsearch/faqs)) and you just want to put these common questions into your bot. Or you might have something similar, but stored in a Word or Excel file.
 
-1. Use the **Suggest topics** command to extract content from FAQ or support pages.
-2. Add the suggested topics to your bot.
-3. Enable the topics.
+Instead of having to manually copy each question and its answer and create new topics in your bot for each question, you can get Power Virtual Agents to do all this for you automatically.
 
-You can [test the topics in the test chat](authoring-test-bot-teams.md), but you'll need to [publish your bot for customers](publication-fundamentals-publish-channels-teams.md) to see the latest changes.
+All you need is a secure link (one that starts with https://) to the file or webpage that has the questions you want to import.
 
->    
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mNOt]
+
 
 
 ## Prerequisites
@@ -39,11 +38,18 @@ You can [test the topics in the test chat](authoring-test-bot-teams.md), but you
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
 
-## Extract content from webpages
+## Get content from webpages and online files
 
-To get suggestions from webpages, you first need to extract suggestions for topics from the pages you want to use that contain support content.
+First you'll need a secure URL (starting with HTTPS) to your content, which must be a publicly available link. For example, you can use a publicly-shared OneDrive .xlsx file, but you can't use a file on a SharePoint site or somewhere where you need to log in.
+
+>[!WARNING]
+>Do we have a list of what files it accepts?
 
 After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
+
+
+
+
 
 >[!IMPORTANT]
 >The **Suggest topics** command is built to run on webpages that are in the form of FAQ pages or support sites. Other types of pages that don't have that structure might not work as expected.
@@ -53,7 +59,9 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Select **Topics** on the side navigation pane.
 
-    ![The Topics menu item on the navigation pane](media/menu-topics-teams.png "The Topics menu item on the navigation pane")
+
+
+    :::image type="content" source="media/topics-web-tab.png" alt-text="The Topics menu item on the navigation pane":::
 
 2. Go to the **Suggested** tab. 
 
@@ -63,11 +71,11 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 4. Select **Get started** or **Suggest topics**. 
 
-5. Enter each webpage you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting **Delete** ![Delete](media/delete-suggested-topic-teams.png).
+5. Enter each webpage or file you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting **Delete** ![Delete](media/delete-suggested-topic-teams.png).
 
     ![The Suggest topics page, where you enter URLs to extract suggested topics from](media/suggested-web-wizard-teams.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
 
-7. When you're done adding pages, select **Start**. The process can take several minutes, depending on the complexity and number of webpages you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
+7. When you're done adding pages, select **Start**. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
     ![An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page](media/suggested-web-wait-teams.png "An alert that says 'Getting your suggestions. This may take several minutes' appears at the top of the page")
 
@@ -75,35 +83,41 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 >You can add multiple webpages, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
 
 >[!IMPORTANT]
->You won't be able to add more URLs while the **Suggest topics** command is running.
+>You won't be able to add more URLs while the **Suggest topics** feature is running.
 
-The tool provides explicit feedback about errors so that you can understand and address the issue. For example, you might be unable to extract content because the site you're referencing is down.
 
-After you've successfully extracted content, a number of suggestions will appear. You can now review these suggestions to see what to add to your bot.
+
+Now the suggested topics will appear. These were all taken from the links you submitter. 
+
+
 
 ![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received](media/suggested-web-topics-teams.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
 
 ## Add suggested topics to an existing bot
 
-After the extraction process has been completed, the topic suggestions appear on the **Suggested** tab. Review them individually to decide which ones you want to include in your bot. You can also just add suggestions without reviewing them. 
+You can now review these suggestions to see what to add to your bot.
 
 **To review suggestions and add them to your bot**
 
 1. Select the name of the suggested topic.  
 
-2. Review the trigger phrases and suggested **Message** node. (Each topic will end with a survey, so your customers can let you know whether they found it helpful.) You have the following three options for dealing with the topic:  
+2. Check the phrases and words that will cause the bot to start talking about that topic, along with what answer the bot will give. Each topic will end with a survey, so your customers can let you know whether they found it helpful.  
+  You have the following three options for dealing with the topic:  
 
-    a. To make edits to the topic, select **Add to topics and edit**. The topic will open, where you can [edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics-teams.md) to make changes to the conversation flow. The topic will also be removed from the list of suggestions.  
+    a. To make edits to the topic, select **Add to topics and edit**. The topic will open, where you can [edit the trigger phrases or enter the authoring canvas](authoring-create-edit-topics-teams.md) to make changes to what the bot says. The topic will also be removed from the list of suggestions.  
 
-    b. To directly add the suggested topic without making any changes, select **Add to topics**. The topic is added and saved, but you'll stay on the list of suggested topics. The topic will also be removed from the list of suggested topics.  
+    b. To directly add the suggested topic without making any changes, select **Add to topics**. The topic is added and saved. The topic will also be removed from the list of suggested topics.  
 
     c. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. Run the **Suggest topics** command again to restore it.  
 
     ![An editing window showing a snapshot of the topic's layout](media/suggested-web-add-edit-teams.png)
 
-1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete. 
+You can also delete or add the suggestion without opening the preview:
 
-    1. To add the topic to your bot, select **Add to topics** ![Add to topics](media/add-to-topics-teams.png). You won't see a preview of the topic, and the topic will be automatically removed from the list of suggested topics.
+1. Hover over the name of the suggested topic you want to add or delete. 
+
+1. To delete, select the trashcan icon.
+1. To add the topic to your bot, select the **Add to topics** icon ![Add to topics](media/add-to-topics-teams.png). You won't see a preview of the topic, and the topic will be automatically moved to the list of "Existing" topics.
 
 
     ![An up arrow icon next to the title of a topic](media/suggested-web-quick-teams.png)
@@ -115,7 +129,7 @@ After the extraction process has been completed, the topic suggestions appear on
 
 ## Enable topics in your bot
 
-Suggested topics are added to the **Existing** tab with their status set to **Off**. This way, topics won't be prematurely added to your bot.
+Suggested topics are added to the **Existing** tab with their status set to **Off**. This way, topics won't be added to your bot by accident.
 
 **To enable topics for use**
 
@@ -127,6 +141,8 @@ Suggested topics are added to the **Existing** tab with their status set to **Of
 
     ![A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column](media/suggested-enable-teams.png "A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column")
 
+    
+You can [test the topics in the test chat](authoring-test-bot-teams.md), but you'll need to [publish your bot for customers](publication-fundamentals-publish-channels-teams.md) to see the latest changes.
 
 ### See also
 

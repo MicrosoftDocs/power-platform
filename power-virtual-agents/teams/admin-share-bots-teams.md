@@ -1,83 +1,96 @@
 ---
-title: "Share and collaborate on chatbots with other users in Teams"
-description: "Share Power Virtual Agents chatbots with other users, assign security roles, and work together."
-keywords: "Administration, share, multi-author, PVA"
-ms.date: 8/3/2020
+title: "Share chatbots with other users in Teams"
+description: "Share Power Virtual Agents chatbots with other people in your group.
+keywords: "Administration, share, multi-author, PVA, teams"
+ms.date: 9/9/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "multi-author, admin, ceX"
+ms.custom: "multi-author, admin, ceX, teams"
 ms.collection: virtual-agent
 ---
 
 # Share and publish your bot so other people can use it
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../admin-share-bots.md)
+> - [Teams (online or app)](admin-share-bots-teams.md)
 
 
-After you've built a bot, you'll want people to use it!
+After you've built a bot, you'll want people to use it.
 
-The first step is to publish the bot, this makes it available to everyone in your orgnization as an app that the ycan find in the Teams App store.
+The first step is to publish the bot, this makes it available to everyone in your orgnization as an app that they can find in the Teams app store.
 
-You can also collaborate on bots that are in teams that you belong to.
+You can customize the way the bot looks on the Teams app store, and you can look at how other people have built their bots.
 
-You can also stop sharing a bot with either everyone on your team or everyone in your organization. This is useful if you need to make changes to your bot and don't bot people using it while you make fixes.
+
 
 
 
 ## Publish a bot
 
-When you publish a bot, you make it available for people in your organization to install it into their Teams. Whenevery you make updates to your bot, those updates will be reflected in everyone's copy of the bot.
-
-
-1. Go to the **Chatbot** tab
-
-    :::image type="content" source="media/chatbot-tab-on-homepage.png" alt-text="Alt text here.":::
-
-
->[!NOTE]
->You can only share the bot with users who have Power Platform licenses. Users who don't have a license can [sign up for a free trial](sign-up-individual-teams.md) so they can edit the bot.
-
-
-1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
-
-    ![Power Virtual Agents bot homepage with the Share button highlighted](media/sharing-home-teams.png)
-
-2. Specify the name or email address of each user that you would like to share the bot with.  
-
-    >[!NOTE]
-    >You can only share a bot with individual users, which means you can't share it with a security group or distribution group in your organization.  
-    >You also can't share with users or groups outside of your organization.  
-
-
-    ![Screenshot showing name input in the share window](media/sharing-input-invitee-teams.png)
-
-3. Review the user's permissions.
- 
-
-    ![Screenshot showing share window with user permissions](media/sharing-view-permission-teams.png)
-
-4. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
-
-5. Select **Share** to share the bot with the new users.
+When you publish a bot, you make it available for people in your organization to install it into their Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
 
 >[!IMPORTANT]
->It can take up to 10 minutes for the bot to show up in the shared user's bot list if the user [was not previously part of the environment](#assign-environment-security-roles) of the shared bot.
+>Make sure to **Publish** your bot if you make changes - otherwise everyone that is using the bot won't see your updates.  
+>It typically takes 15 minutes for published changes to be seen by everone.
 
-### Insufficient environment permissions
+
+:::image type="content" source="media/" alt-text=" ":::
+publish-share-to-store:::image type="content" source="media/" alt-text=" ":::
 
 
-Users in the environment must have the **Environment maker** security role before a bot can be shared with them. 
+:::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
 
-![User does not have sufficient permissions](media/sharing-insufficient-permission-teams.png)
 
-**System administrators** of the environment need to assign the **Environment maker** security role to the user before you share the bot. If you're a **System administrator**, you can [assign the **Environment maker** role when you share the bot](#assign-environment-security-roles).
 
-Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
+1. Go to the **Chatbot** tab.
+
+    :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="Alt text here.":::
+
+3. Open the bot you want to publish.
+3. On the bot's homepage, select **Publish bot**. Select **Publish** and then **Publish** again.
+
+    :::image type="content" source="media/publish-option.png" alt-text="Alt text here.":::
+
+
+4. Select **Open the bot** to have it go to the Teams app store, where it will automatically find and open the bot you just created. Click **Add for me** to have it added as an app in Teams. Note that this only shows the bot for you.
+
+
+5. Select **Make the bot available to others** if you want to share it with other people.
+
+    This pops up a new window where you can customize how the bot will be shown to people searching for it on the Teams app store. 
+    You can also get a link to share directly with other people who want to use this bot: just select **Copy link**.
+
+6. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Teams app store.
+
+    :::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
+
+7. Select **More** to add additional information. We filled this with defaults but you should use your own:  
+    - Developer name  
+    - Website
+    - Privacy Statement
+    - Terms of use
+
+  See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
+
+8. Select Save to return to screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
+9. Select **Make available in Teams** and then choose who can find and use your bot. By default this is everyone on your team. You can also go to the security settings to make additional changes.
+
+This allows other people in your Team to use your bot - but they can't edit or change the topics or answers. They can add the bot as an app by searching for it in the Teams app store, and they can see the list of topics and analytics for the bot, but they won't be able to edit anything.
+
+>[!WARNING]
+> or can they? can they only choose between team and org?
+
+
  
-
+ >[!WARNING]
+ >Are Automate flows still special here, or will they be shared?
 
 ### Share Power Automate flows used in a bot
 You can [add actions to a bot using flows in Power Automate](advanced-flow-teams.md); however flows in a bot aren't automatically shared with other users when sharing a bot. 
@@ -97,6 +110,9 @@ To let other users edit or add flows you'll need to share them in Power Automate
 3. Enter the name or email address of the user you want to give editing permissions to.
 
 
+>[!WARNING]
+>How do I unshare or unpublish a bot?
+
 ## Stop sharing a bot
 
 You can stop sharing a bot with a user, and any shared user can stop the bot from being shared with other users, except for the owner. The owner will always have access to the bot.
@@ -109,46 +125,10 @@ You can stop sharing a bot with a user, and any shared user can stop the bot fro
 
 3. Select **Share** to stop sharing the bot with the user.
 
-## Assign environment security roles
-
-If you're a **System administrator**, you can assign and manage environment security roles when sharing a bot.
-
-The **Environment security roles** section shows when you share a bot and only if you're a **System administrator**. It lets you share bots with users who don't have sufficient environment permissions to use Power Virtual Agents. 
-
-You must be a **System administrator** of the environment where the bot is located to view and add security roles.
-
->[!NOTE]
->You can only *assign* security roles when sharing a bot. You can't remove security roles when sharing. For full security role management, [use the Power Platform Admin Center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
-> Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
 
 
-### Assign the Environment maker security role during bot sharing
-
-You can assign the **Environment maker** security role when sharing a bot with a user who does not have sufficient environment permissions to run Power Virtual Agents.
-
-When [sharing the bot](#share-a-bot), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that **Environment maker** security role will be assigned to the user so they can use the bot.
- 
-![Share panel with permission notice bubble](media/sharing-input-invitee-no-permission-teams.png)
-
-
-
-### Assign the Bot transcript viewer security role during bot sharing
-
-You can assign the **Bot transcript viewer** security role to users who don't have conversation transcript access when sharing a bot. 
-
-Based on the content and target audience of the bot, you may want to give transcript access only to users who have appropriate privacy training.
-
->[!IMPORTANT]
->Conversation transcript access is managed by environment security roles. After assigning the **Bot transcript viewer** security role to a user, that user can access conversation transcripts for all bots that they create or are shared with in the environment.  
->In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](https://docs.microsoft.com/power-virtual-agents/environments-first-run-experience#create-a-new-environment-for-your-bots)
-
-When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer** role by selecting the check box.
- 
-![Share panel with Bot transcript viewer role selected](media/sharing-assign-transcript-viewer-teams.png)
-
- 
-### Manage security roles
-You can [manage environment security roles at the Power Platform admin center](/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-common-data-service-database). 
+>[!WARNING]
+>Does collaboration work - similar to question above about how other team memebers can interact with my bot. Note we still have a 'currently editing' columm in the topics list.
 
 ## Collaborate on bots
 

@@ -15,6 +15,11 @@ ms.collection: virtual-agent
 
 # Share your bot with other users
 
+
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](admin-share-bots.md)
+> - [Teams (online or app)](/teams/admin-share-bots-teams.md)
+
 Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
 
 You can stop sharing a bot with individual users at any time. 

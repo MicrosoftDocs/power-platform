@@ -16,6 +16,12 @@ ms.collection: virtual-agent
 
 # Create topics from existing support content on the web
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](advanced-create-topics-from-web.md)
+> - [Teams (online or app)](/teams/advanced-create-topics-from-web-teams.md)
+
 You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages or support sites. 
 
 Rather than copying and pasting or manually re-creating this content, you can use AI-assisted authoring to automatically extract and insert relevant content from existing web content into your bot.
