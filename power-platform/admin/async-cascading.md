@@ -6,7 +6,7 @@ author: NHelgren
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/12/2020
+ms.date: 09/10/2020
 ms.author: matp
 search.audienceType: 
   - admin
