@@ -13,19 +13,29 @@ ms.custom: "multi-author, admin, ceX"
 ms.collection: virtual-agent
 ---
 
-# Share your bot with other users in Teams
+# Share and publish your bot so other people can use it
 
-Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
 
-You can stop sharing a bot with individual users at any time. 
 
->[!NOTE]
->You don't need to share a bot with another user for them to chat with the bot.  
->See how to make your bot available for users in the [Key concepts - Publish your bot](publication-fundamentals-publish-channels-teams.md) topic.
+After you've built a bot, you'll want people to use it!
 
-## Share a bot
+The first step is to publish the bot, this makes it available to everyone in your orgnization as an app that the ycan find in the Teams App store.
 
-Everyone you share the bot with can view, edit, configure, share, and publish the bot. They can't delete the bot.
+You can also collaborate on bots that are in teams that you belong to.
+
+You can also stop sharing a bot with either everyone on your team or everyone in your organization. This is useful if you need to make changes to your bot and don't bot people using it while you make fixes.
+
+
+
+## Publish a bot
+
+When you publish a bot, you make it available for people in your organization to install it into their Teams. Whenevery you make updates to your bot, those updates will be reflected in everyone's copy of the bot.
+
+
+1. Go to the **Chatbot** tab
+
+    :::image type="content" source="media/chatbot-tab-on-homepage.png" alt-text="Alt text here.":::
+
 
 >[!NOTE]
 >You can only share the bot with users who have Power Platform licenses. Users who don't have a license can [sign up for a free trial](sign-up-individual-teams.md) so they can edit the bot.
