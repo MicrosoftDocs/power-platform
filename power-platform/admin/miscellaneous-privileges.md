@@ -53,6 +53,11 @@ The following table lists the privileges shown in the security role editor misce
 <td><p>prvDeleteAuditPartitions</p></td>
 <td><p><a href="gg334799(v=crm.8).md">DeleteAuditData message privileges</a></p></td>
 </tr>
+<tr>
+<td><p>Delete Audit Record Change History</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
 <tr class="even">
 <td><p>Manage Data Encryption key - Activate</p></td>
 <td><p>prvRestoreSqlEncryptionKey</p></td>
@@ -72,6 +77,11 @@ The following table lists the privileges shown in the security role editor misce
 <td><p>Manage User Synchronization Filters</p></td>
 <td><p>prvAdminFilter</p></td>
 <td><p><a href="gg328205(v=crm.8).md">Offline and Outlook filters and templates</a></p></td>
+</tr>
+<tr>
+<td><p>Promote User to Microsoft Dynamics 365 Administrator Role</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Publish Duplicate Detection Rules</p></td>
@@ -100,6 +110,11 @@ The following table lists the privileges shown in the security role editor misce
 <td><p>prvConfigureSharePoint</p></td>
 <td><p></p></td>
 </tr>
+<tr>
+<td><p>Turn On Tracing</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
 <tr class="odd">
 <td><p>View Audit History</p></td>
 <td><p>prvReadRecordAuditHistory</p></td>
@@ -123,6 +138,8 @@ The following table lists the privileges shown in the security role editor misce
 </table>
 
 ## Marketing tab
+
+Omit this and put in app content?
 
 The following table lists the privileges shown in the security role editor miscellaneous privileges section on the marketing tab.
 
@@ -159,6 +176,8 @@ The following table lists the privileges shown in the security role editor misce
 </table>
 
 ## Sales tab
+
+Omit this and put in app content?
 
 The following table lists the privileges shown in the security role editor miscellaneous privileges section on the sales tab.
 
@@ -205,6 +224,8 @@ The following table lists the privileges shown in the security role editor misce
 </table>
 
 ## Service tab
+
+Omit this and put in app content?
 
 The following table lists the privileges shown in the security role editor miscellaneous privileges section on the service tab.
 
@@ -358,11 +379,6 @@ The following table lists the privileges shown in the security role editor misce
 <td><p>prvSendInviteForLive</p></td>
 <td><p></p></td>
 </tr>
-<tr class="odd">
-<td><p>Update Business Closures</p></td>
-<td><p>prvWriteBusinessClosureCalendar</p></td>
-<td><p></p></td>
-</tr>
 <tr class="even">
 <td><p>Web Mail Merge</p></td>
 <td><p>prvWebMailMerge</p></td>
@@ -395,11 +411,6 @@ The following table lists the privileges shown in the security role editor misce
 <td><p><a href="gg328062(v=crm.8).md">QueryMultipleSchedules message privileges</a></p>
 <p><a href="gg334367(v=crm.8).md">QuerySchedule message privileges</a></p></td>
 </tr>
-<tr class="even">
-<td><p>Control Decrement Terms</p></td>
-<td><p>prvControlDecrementTerm</p></td>
-<td><p><a href="dn689025(v=crm.8).md">Entitlement entities</a></p></td>
-</tr>
 <tr class="odd">
 <td><p>Create own calendar</p></td>
 <td><p>prvCreateOwnCalendar</p></td>
@@ -422,12 +433,6 @@ The following table lists the privileges shown in the security role editor misce
 <p><a href="gg309246(v=crm.8).md">Reschedule message privileges</a></p>
 <p><a href="gg328385(v=crm.8).md">Search message privileges</a></p>
 <p><a href="gg309284(v=crm.8).md">Validate message privileges</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Update Holiday Schedules</p></td>
-<td><p>prvWriteHolidayScheduleCalendar</p></td>
-<td><p></p></td>
-</tr>
 <tr class="even">
 <td><p>Write own calendar</p></td>
 <td><p>prvWriteOwnCalendar</p></td>
@@ -494,10 +499,10 @@ The following table lists the privileges shown in the security role editor misce
 <td><p>prvISVExtensions</p></td>
 <td><p>Not currently in use.</p></td>
 </tr>
-<tr class="odd">
-<td><p>Modify Customization constraints</p></td>
-<td><p>prvAppendConstraint</p></td>
-<td><p>Not currently in use.</p></td>
+<tr>
+<td><p>Learning Path Authoring</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Publish Customizations</p></td>
@@ -508,6 +513,11 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="odd">
 <td><p>Retrieve Multiple Social Insights</p></td>
 <td><p>prvRetrieveMultipleSocialInsights</p></td>
+<td><p></p></td>
+</tr>
+<tr>
+<td><p>Run Flows</p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
