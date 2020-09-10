@@ -21,6 +21,8 @@
       href: setup-powerbi.md
     - name: Set up theming components
       href: setup-theming.md
+    - name: Set up Innovation Backlog components
+      href: setup-innovation-backlog.md
   - name: What's in the CoE Starter Kit
     items:  
     - name: CoE Starter Kit modules
@@ -35,6 +37,8 @@
         href: nurture-components.md
       - name: Theming components
         href: theming-components.md    
+      - name: Innovation Backlog components
+        href: innovation-backlog-components.md    
       - name: Extend and modify components
         href: modify-components.md
   - name: How to use the CoE Starter Kit
@@ -50,7 +54,9 @@
         - name: Nurture
           href: power-bi-nurture.md
       - name: Sample audit process
-        href: example-processes.md  
+        href: example-processes.md 
+      - name: Sample Innovation Backlog process
+        href: example-innovation.md  
   - name: Limitations
     href: limitations.md
   - name: Release Notes
