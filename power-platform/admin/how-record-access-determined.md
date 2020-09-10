@@ -1,6 +1,6 @@
 ---
-title: How Access to a record is determined | Microsoft Docs
-description: How Access to a record is determined 
+title: How access to a record is determined | Microsoft Docs
+description: How access to a record is determined 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,7 +16,7 @@ search.app:
   - Flow
 ---
 
-# How Access to a record is determined
+# How access to a record is determined
 
 There are different ways to obtain access to a particular record in CDS.
 In broad terms, in order to be able to do a certain action with an entity (Read, Write, Create, Delete, Append, Append to, Share, Assign) there are two major checks that are done, privilege and access checks. The access check only takes place once the privilege check was passed
