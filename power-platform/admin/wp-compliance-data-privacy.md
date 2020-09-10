@@ -2,11 +2,10 @@
 title: "Compliance and data privacy  | MicrosoftDocs"
 description: Compliance and data privacy
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 08/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -43,7 +42,7 @@ Data transferred through the on-premises data gateway is also encrypted. Data th
 
 All environments of the Common Data Service database use SQL Server Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.
 
-By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Dynamics 365 admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys [here](manage-encryption-key.md) but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
+By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys [here](manage-encryption-key.md) but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
 
 ## Resources to manage GDPR Compliance
 

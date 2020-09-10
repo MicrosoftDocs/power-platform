@@ -15,18 +15,20 @@ ms.collection: virtual-agent
 
 # Assign licenses and manage access to Power Virtual Agents
 
+
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Online portal (https://powerva.microsoft.com)](requirements-licensing.md)
 > - [Teams (online or app)](teams/requirements-licensing-teams.md)
 
-<!-- what are the licensing differences for teams use?-->
+This documentation is written for tenant admins. If you want to sign up for Power Virtual Agents as an individual, see the [Sign up for a Power Virtual Agents trial](sign-up-individual.md) topic.
+
 
 To create and manage bots with Power Virtual Agents, you need:
 
-- A license for each user, also known as a "per user license."
-- A license for your organization, also known as a "tenant license." 
+- A license for each user, also known as a "per user license" (or "Power Virtual Agent User License" as refered to on the [Microsoft 365 admin center](admin.microsoft.com)), should be assigned to individual users who need access to create and manage chatbots.
+- A license for your organization, also known as a "tenant license" (or "Power Virtual Agent" as refered to on the [Microsoft 365 admin center](admin.microsoft.com)), should be purchased at the tenant level.
 
 >[!NOTE]
 >Users of your bot don't need a special license. After you publish your bot, anyone who can access where you published the bot can interact with the bot.
@@ -34,7 +36,7 @@ To create and manage bots with Power Virtual Agents, you need:
 More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 > [!NOTE]
-> To acquire a Power Virtual Agents user license, you need to use the non-preview version of the admin center. Ensure the **Try the new admin center** setting is turned off.
+> To follow the instructions in this topic, you must use the non-preview version of the admin center (ensure the **Try the new admin center** setting is turned off).
   
 >[!IMPORTANT]
 >If you purchase a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant license and a user licenses through that channel, preferably as part of a single transaction.
@@ -52,7 +54,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
 2. On the navigation pane, expand the **Billing** menu, and then select **Purchase services**.
 
-3. Search for **Power Virtual Agents license**, and complete the checkout process.
+3. Search for **Power Virtual Agent**, and complete the checkout process.
 
 ## Acquire user licenses
 
@@ -60,7 +62,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
 2. Scroll down to the **Add-ons** section.
 
-3. Look for **Power Virtual Agents User License**. Select the number of licenses you need, and complete the checkout process.
+3. Look for **Power Virtual Agent User License**. Select the number of licenses you need, and complete the checkout process.
 
 >[!IMPORTANT]
 >If you purchased a Power Virtual Agents license through volume licensing or any channel other than the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx), you need to acquire both a tenant licence and user licenses through that channel, preferably as part of a single transaction.
@@ -77,7 +79,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
    ![Select a user, and then manage product licenses](media/licensing-manage.png "Select a user, and then manage product licenses")
 
-4. On the flyout panel, select the check box next to **Power Virtual Agents user license**, and then select **Save changes**. 
+4. On the flyout panel, select the check box next to **Power Virtual Agent user license**, and then select **Save changes**. 
 
 Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
 
@@ -85,6 +87,14 @@ Repeat these steps to add more users, or exit the Microsoft 365 admin center if 
   > To simplify user license management, you can assign licenses to an Azure Active Directory (Azure AD) security group. More information: [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
 The users can now sign in to the [Power Virtual Agents portal](https://powerva.microsoft.com).
+
+## How to differentiate between tenant and user licenses
+
+If you are unsure whether you have both of the required licenses, on the [Microsoft 365 admin center](admin.microsoft.com) go to **Billing** and then **Subscriptions** to see the list of active licenses. For Power Virtual Agents you should see two licenses:
+1. Power Virtual Agent.
+2. Power Virtual Agent User License.
+
+You can only assign the "Power Virtual Agent User License" to specific users. You don't need to assign the "Power Virtual Agent" license.
 
 ## Trial plans
 
@@ -102,5 +112,6 @@ See [Quotas and rate limit capacity considerations for Power Virtual Agents](req
 
 ## Using Power Automate with a Power Virtual Agents license
 
+[See Power Automate request limits for Power Virtual Agents](requirements-quotas.md#power-automate-request-limits)
 [See how to use Power Automate with Power Virtual Agents](advanced-flow.md). 
 

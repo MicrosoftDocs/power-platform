@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 09/04/2020
 search.audienceType: 
   - admin
 search.app:
@@ -122,7 +122,7 @@ When you import the solution, it creates the **min prv apps use** role which you
 > [!IMPORTANT]
 > You should try out the solution in a development environment before importing into a production environment. 
   
-- When logging in to model-driven apps in Dynamics 365:  
+- When logging in to customer engagement apps:  
   
   -   Assign the min prv apps use security role or a copy of this security role to your user.
   
@@ -131,7 +131,7 @@ When you import the solution, it creates the **min prv apps use** role which you
 
 - When logging in to [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]:
 
-   - To render navigation for model-driven apps in Dynamics 365 and all buttons: assign the min prv apps use security role or a copy of this security role to your user   
+   - To render navigation for customer engagement apps and all buttons: assign the min prv apps use security role or a copy of this security role to your user   
   
   - To render an entity grid: assign Read privilege on the entity  
   

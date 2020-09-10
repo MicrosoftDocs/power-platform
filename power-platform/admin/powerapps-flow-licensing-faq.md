@@ -2,11 +2,10 @@
 title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Common Data Service, and AI Builder"
 author: dileepsinghmicrosoft
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/10/2020
+ms.date: 08/24/2020
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -66,7 +65,7 @@ Also, the guest must have the same license that’s required for non-guests to r
 
 ### Is non-profit, government, and academic pricing available?
 
-Yes, Non-Profit, Government and Academic pricing is available in respective program channels.
+Yes, non-profit, government and academic pricing is available in respective program channels.
 
 ### What will happen to the Power Apps P1/P2 and Power Automate Plan 1 and Plan 2 plans on October 1, 2019?
 
@@ -106,7 +105,7 @@ More information is available [here](https://aka.ms/platformlimits).
 
 ### How long is the free trial period?
 
-Free trials for Microsoft Power Apps and Microsoft Power Automate last 90 days.
+Free trials for Microsoft Power Apps last 30 days. For Power Automate, they are available for 90 days.
 
 ### Is there a way to develop my Microsoft Power Apps and Power Automate skills for more than 90 days?
 
@@ -202,7 +201,7 @@ Yes, you can use the Dynamics 365 Finance and Operations connector to build canv
 The per user plan is intended to support the broad adoption of an automation culture in an organization. Every user with this plan is entitled to use an unlimited number of flows, within service limits. The per flow plan provides an organization with the flexibility to license by the number of flows, instead of licensing each user accessing the flows individually with the per user plan.
 
 
-### Which flows count in the Power Automate per flow plan?**
+### Which flows count in the Power Automate per flow plan?
 
 All types of enabled flows count: scheduled flows, automated flows, and instant flows. Flows that are triggered by other flows (child flows) do not count against the plan.
 
@@ -281,12 +280,12 @@ Power Apps Portals can be provisioned without requiring a specific license. User
 
 Think of a login as a “day pass” to a portal. Once logged in to a portal, subsequent logins (potentially from different devices) during the 24-hour period will not be billable.
 
-### Does a single login provide access to multiple Power Apps Portals during the 24-hour period?**
+### Does a single login provide access to multiple Power Apps Portals during the 24-hour period?
 
 Logins are specific to a single portal. So if you access multiple portals belonging to the same tenant, it will be counted as one login per portal.
 
 
-### What is the difference between Power Apps Portals and Dynamics 365 Portals in terms of licensing?**
+### What is the difference between Power Apps Portals and Dynamics 365 Portals in terms of licensing?
 
 | **Parameter**                              | **Dynamics 365 Portals**                                            | **New Power Apps Portals**                                                                                                                              |
 |--------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -296,7 +295,7 @@ Logins are specific to a single portal. So if you access multiple portals belong
 | **Monetization**                           | Per portal environment Per page view                                | **Per log in** Per page view                                                                                                                           |
 | **Entitlement for Dynamics 365 customers** | 1 portal environment for the first 10 full Dynamics 365 USLs        | Not applicable―Power Apps Portals environments can be provisioned                                                                                       |
 
-### Can I purchase Power Apps Portals add-on licenses with my existing Power Apps P1 or P2 plans or do I have to upgrade to the new plans to benefit from the new portal capability?**
+### Can I purchase Power Apps Portals add-on licenses with my existing Power Apps P1 or P2 plans or do I have to upgrade to the new plans to benefit from the new portal capability?
 
 Yes. You can purchase Power Apps Portals add-on capacity if you are an existing Power Apps Plan 1 or Plan 2 customer. You can also purchase this capacity if you are a Dynamics 365 customer.
 
@@ -308,7 +307,7 @@ Custom Power Apps Portals use rights: For internal users, use rights to a “cus
 
 - The Team Member license does not get access to custom portal as Team Member licenses do not allow access to a custom app.
 
-### What is the minimum number of logins and page view that I need to assign to a specific portal?**
+### What is the minimum number of logins and page view that I need to assign to a specific portal?
 
 Minimum login quantity to be assigned to a portal is 100 logins/month. Once you have assigned 100 logins, you can assign them in units of 1.
 

@@ -46,7 +46,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
 -  Environment with a Common Data Service instance, where the user installing the solution has the System Administrator security role.
 
--  The environment must have a DLP policy that allows [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/), [Common Data Service (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/), [Azure AD](https://docs.microsoft.com/connectors/azuread/) and HTTP to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment. If you are using the [Audit log](setup-auditlog.md) solution, the custom connector used to connect to the Office 365 Audit Log also must be included in your business data&ndash;only bucket.
+-  The environment must have a DLP policy that allows [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/), [Common Data Service (current environment)](https://docs.microsoft.com/connectors/commondataserviceforapps/), [Office 365 Users](https://docs.microsoft.com/connectors/office365users/), [Power Platform for Admins](https://docs.microsoft.com/connectors/powerplatformforadmins/), [Power Automate Management](https://docs.microsoft.com/connectors/flowmanagement/), [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/), [Power Apps for Admins](https://docs.microsoft.com/connectors/powerappsforadmins/), [Power Apps for Makers](https://docs.microsoft.com/connectors/powerappsforappmakers/), [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/), [Azure AD](https://docs.microsoft.com/connectors/azuread/) and HTTP to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment. If you are using the [Audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 Audit Log also must be included in your business data&ndash;only bucket.
 
 - If there are multiple DLP policies applying to the same environment, either all of them have to have the connectors the CoE Starter Kit uses in business data only or if you have a policy that applies to all environments that you don't want to change you could exclude the CoE environment from that. <br>Learn more about [DLP Policy Scope](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#policy-scope).
 
@@ -94,7 +94,11 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 
 Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or the direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** to update the solution.
+Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** to update the solution and **Overwrite customizations** to receive changes from us to components.
+
+> [!NOTE]
+> **Overwrite Customizations** is not the default selection, and needs explicitly selected or you will not receive updates.
+>![Overwrite Image](media/UpgradeAndOverwrite.png "Upgrade and Overwrite")
 
 >[!WARNING]
 >Currently, only model-driven app components and Common Data Service entities will be updated by using managed solution updates. Canvas apps and flows will be replaced during an update. If you're extending and customizing canvas apps, you'll need to make a copy of the app first (the copy won't receive updates).
@@ -108,4 +112,4 @@ If you want to use the Power BI report (packaged as part of the solution), you'l
 
 **It looks like I found a bug with the app; where should I go?** To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 
-**What features are currently not supported in Government Community Cloud (GCC)?** The Office 365 Audit Log and custom connector aren't available in the Government Community Cloud.
+**What features are currently not supported in Government Community Cloud (GCC)?** The Microsoft 365 Audit Log and custom connector aren't available in the Government Community Cloud.

@@ -2,11 +2,10 @@
 title: "Enhanced service level agreements  | MicrosoftDocs"
 description: Enhanced service level agreements
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -22,7 +21,7 @@ search.app:
 
 Service level agreements (SLAs) are a formalized method to help organizations meet service levels when they provide customer service and support. For example, an organization can have an SLA to complete the first customer response within 48 business hours after a case is created. Another example is to escalate an unresolved case after a specified duration, such as five business days. SLAs are used to define these different aspects of service.  
   
-Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, include two kinds of SLAs, standard and enhanced. Enhanced SLAs include the following features not available in standard SLAs:  
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), include two kinds of SLAs, standard and enhanced. Enhanced SLAs include the following features not available in standard SLAs:  
   
 -   Case-on-hold support  
   

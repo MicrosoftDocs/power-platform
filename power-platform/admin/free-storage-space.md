@@ -2,11 +2,10 @@
 title: "Free up storage space  | MicrosoftDocs"
 description: Methods for reducing storage space consumed.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/08/2020
+ms.date: 09/08/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Free up storage space
 
-These are ways to reduce the amount of storage space used by removing or deleting different types of information from model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. Use one or more of these methods to control your total data storage usage. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
+These are ways to reduce the amount of storage space used by removing or deleting different types of information from customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Use one or more of these methods to control your total data storage usage. You can delete certain categories of data as the need arises, or you can set up bulk deletion jobs to reoccur at set intervals.  
   
 > [!WARNING]
 >  The suggestions in this topic include deleting notes, attachments, import history, and other data. Before you delete data, be sure that the data is no longer needed because you cannot retrieve deleted data. There is no "undo" to restore your data once it has been deleted. This means it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
@@ -57,7 +56,7 @@ Use the following methods to free up storage for each of the capacity types.
 ### Method 3: Remove email attachments using Advanced Find  
   
 > [!WARNING]
->  If you delete this data, the attachments will no longer be available in model-driven apps in Dynamics 365. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
+>  If you delete this data, the attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
 1. Choose **Advanced Find** (![Advanced find button](media/advanced-find-button2.png)).  
   
@@ -82,7 +81,7 @@ Use the following methods to free up storage for each of the capacity types.
 ### Method 4: Remove email messages with attachments using a bulk deletion job  
   
 > [!WARNING]
->  If you delete this data, the email messages and their associated attachments will no longer be available in model-driven apps in Dynamics 365. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
+>  If you delete this data, the email messages and their associated attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
 1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
   
@@ -115,7 +114,7 @@ Use the following methods to free up storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
+9. Select a date and time for the job start time; preferably a time when users are not in customer engagement apps.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -129,7 +128,7 @@ Use the following methods to free up storage for each of the capacity types.
 ### Method 5: Remove notes with attachments using Advanced Find  
   
 > [!WARNING]
->  If you delete this data, notes and their associated attachments will no longer be available in model-driven apps in Dynamics 365.  
+>  If you delete this data, notes and their associated attachments will no longer be available in customer engagement apps.  
   
 1. Choose **Advanced Find**.  
   
@@ -157,7 +156,7 @@ Use the following methods to free up storage for each of the capacity types.
 ### Method 6: Remove notes with attachments using a bulk deletion job  
   
 > [!WARNING]
->  If you delete this data, notes and their associated attachments will no longer be available in model-driven apps in Dynamics 365.  
+>  If you delete this data, notes and their associated attachments will no longer be available in customer engagement apps.  
   
 1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
   
@@ -186,7 +185,7 @@ Use the following methods to free up storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
+9. Select a date and time for the job start time; preferably a time when users are not in customer engagement apps.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -201,7 +200,7 @@ Use the following methods to free up storage for each of the capacity types.
 
 ### Method 10: Delete audit logs  
 
- When you enable auditing, model-driven apps in Dynamics 365 create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
+ When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
   
 > [!WARNING]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
@@ -257,7 +256,7 @@ Use the following methods to free up storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
+9. Select a date and time for the job start time; preferably a time when users are not in customer engagement apps.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -349,7 +348,7 @@ Use the following methods to free up storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
+9. Select a date and time for the job start time; preferably a time when users are not in customer engagement apps.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
@@ -399,7 +398,7 @@ Use the following methods to free up storage for each of the capacity types.
   
 8. In the **Name** text box, type a name for the bulk deletion job.  
   
-9. Select a date and time for the job start time; preferably a time when users are not in model-driven apps in Dynamics 365.  
+9. Select a date and time for the job start time; preferably a time when users are not in customer engagement apps.  
   
 10. Select the **Run this job after every** check box, and then in the **days** list, select the frequency you want the job to run.  
   
