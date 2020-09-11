@@ -1,5 +1,5 @@
 - name: Power Platform guidance
-  href: index.md
+  href: index.yml
   items: 
   - name: Adoption best practices
     href: adoption/methodology.md
