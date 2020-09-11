@@ -46,7 +46,7 @@
         href: wp-management-monitoring.md
       - name: Power Apps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
-      - name: Try Power Apps and model-driven apps in Dynamics 365
+      - name: Try Power Apps and customer engagement apps
         href: try-powerapps-dynamics-365.md
       - name: Move between your apps
         href: quickly-navigate-office-365-app-launcher.md
@@ -528,7 +528,7 @@
       - name: Setup
         href: set-up-sharepoint-integration.md 
         items: 
-        - name: Set up model-driven apps in Dynamics 365 to use SharePoint online
+        - name: Set up customer engagement apps to use SharePoint online
           href: set-up-dynamics-365-online-to-use-sharepoint-online.md
         - name: Configure server-based authentication with SharePoint on-premises
           href: configure-server-based-authentication-sharepoint-on-premises.md  
