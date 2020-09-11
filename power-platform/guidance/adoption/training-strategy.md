@@ -1,12 +1,12 @@
 ---
 title: "Training and upskilling strategy for makers - Microsoft Power Platform | MicrosoftDocs"
 description: "It is important to think about your upskilling strategy for makers - what will be available for new, intermediate, and advanced makers to ensure they are able to learn constantly and can get powered up"
-author: mapichle-msft
+author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 09/11/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
