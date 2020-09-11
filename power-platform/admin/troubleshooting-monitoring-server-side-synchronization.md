@@ -2,11 +2,10 @@
 title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftDocs"
 description: Troubleshooting and monitoring server-side synchronization
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/15/2020
+ms.date: 09/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -65,7 +64,7 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
  **Solution:**  [https://support.microsoft.com/kb/2993502](https://support.microsoft.com/kb/2993502)  
   
 ### Email message has "Pending Send" status  
-If you create an email message in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from model-driven apps in Dynamics 365.  
+If you create an email message in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and click the **Send** button, the message will not be sent unless email integration has been correctly configured and enabled for sending email from customer engagement apps.  
   
  Verify that the user who sent the email is enabled for sending email.  
 
@@ -86,7 +85,7 @@ If you create an email message in model-driven apps in Dynamics 365, such as Dyn
   
  **Cause:**  
   
- This error will occur if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address has not been approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with the global administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between model-driven apps in Dynamics 365 and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between model-driven apps in Dynamics 365 and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. By verifying the email address in model-driven apps in Dynamics 365 as an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator, model-driven apps in Dynamics 365 be able to send and receive email for that user without the need to provide any email credentials within model-driven apps in Dynamics 365.  
+ This error will occur if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address has not been approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with the global administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. By verifying the email address in customer engagement apps as an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator, customer engagement apps be able to send and receive email for that user without the need to provide any email credentials within customer engagement apps.  
   
  **Solution:**  
   
@@ -175,7 +174,7 @@ If you create an email message in model-driven apps in Dynamics 365, such as Dyn
 <a name="BKMK_SSSGmail"></a>   
 
 ### Email fails to be sent or received when server-side synchronization is configured with Gmail  
- If model-driven apps in Dynamics 365 is configured to use Server-Side Synchronization with Gmail, you may encounter one of the following errors:  
+ If customer engagement apps is configured to use Server-Side Synchronization with Gmail, you may encounter one of the following errors:  
   
 -   Email cannot be received for the mailbox \<Mailbox Name>. Make sure that the credentials specified in the mailbox are correct and have sufficient permissions for receiving email. Then, enable the mailbox for email processing.  
   
@@ -186,9 +185,9 @@ For more information, see this [kb article](https://support.microsoft.com/kb/318
 <a name="BKMK_ExchangeOnline"></a>   
 
 ### Using Dynamics 365 apps with Exchange Online  
- If your company is using [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with model-driven apps in Dynamics 365, note the following:  
+ If your company is using [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with customer engagement apps, note the following:  
   
- Model-driven apps in Dynamics 365 support server-side synchronization with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in the same tenant with Server to Server Authentication. Other authentication methods or settings are not recommended or supported, including:  
+ Customer engagement apps support server-side synchronization with [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] in the same tenant with Server to Server Authentication. Other authentication methods or settings are not recommended or supported, including:  
   
 - Using Credentials Specified by a User or Queue  
   
@@ -209,7 +208,7 @@ For more information, see this [kb article](https://support.microsoft.com/kb/318
   
 2. A server error (for example, invalid profile credentials) or a mailbox error (for example, invalid mailbox credentials).  
   
-   Model-driven apps in Dynamics 365 respond to the error as follows:  
+   Customer engagement apps respond to the error as follows:  
   
 -   For server or mailbox permanent errors, the mailbox is disabled as soon as the error is detected.  
   
@@ -228,7 +227,7 @@ Review the troubleshooting steps in this topic and if the issue is successfully 
   
 - [!INCLUDE[pn_ms_Exchange_Server_2003_short](../includes/pn-ms-exchange-server-2003-short.md)] and [!INCLUDE[pn_ms_Exchange_Server_2007_short](../includes/pn-ms-exchange-server-2007-short.md)].  
   
-- Server-side synchronization in model-driven apps in Dynamics 365 require a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail.  
+- Server-side synchronization in customer engagement apps require a [!INCLUDE[pn_POP3_short](../includes/pn-pop3-short.md)]/SMTP email server that is also FIPS 140-2 compliant. Some email servers are not FIPS 140-2 compliant, such as MSN, Outlook.com, or Windows Live Mail.  
   
 For most situations not supported by server-side synchronization, you can use the [!INCLUDE[pn_CRM_E-Mail_Router](../includes/pn-crm-e-mail-router.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Integrate your email system](../admin/integrate-synchronize-your-email-system.md)  
   
@@ -246,14 +245,14 @@ For most situations not supported by server-side synchronization, you can use th
   
 4. In [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the invitee tracks the appointment.  
   
-5. The invitee logs in to model-driven apps in Dynamics 365 and navigates to **Marketing** > **Activities** > **Appointment** > **My Appointments**  
+5. The invitee logs in to customer engagement apps and navigates to **Marketing** > **Activities** > **Appointment** > **My Appointments**  
   
 Result: the appointment is not created for the invitee.  
   
 This is a known issue and is not supported. If the organizer is someone outside of the organization, a user who is an invitee can still track the appointment and have the record created.  
    
-### Service Appointments and Activities don't synchronize from Outlook to model-driven apps in Dynamics 365 
- Changes made to Service Appointments and Activities will update in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] when you synchronize but the reverse is not true. When you make changes to Service Appointments or Activities in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the changes are not synchronized to model-driven apps in Dynamics 365. Service appointments are scheduled by an agent and need free/busy information for resources available only in model-driven apps in Dynamics 365.  
+### Service Appointments and Activities don't synchronize from Outlook to customer engagement apps 
+ Changes made to Service Appointments and Activities will update in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] when you synchronize but the reverse is not true. When you make changes to Service Appointments or Activities in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)], the changes are not synchronized to customer engagement apps. Service appointments are scheduled by an agent and need free/busy information for resources available only in customer engagement apps.  
   
 ### Be aware of Exchange Online receiving and sending limits  
  For enterprise customers with a large mail flow, make sure you're not running up against Exchange Online receiving and sending limits. See [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx)  
