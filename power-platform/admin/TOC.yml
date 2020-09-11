@@ -474,6 +474,8 @@
         href: system-application-users.md
       - name: Configure user security
         href: database-security.md
+      - name: How access to records is determined
+        href: how-record-access-determined.md
       - name: Email exfiltration controls for connectors
         href: block-forwarded-email-from-power-automate.md
       - name: Configure environment security 
