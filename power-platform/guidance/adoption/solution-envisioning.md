@@ -1,7 +1,7 @@
 ---
 title: "Solution envisioning workshops - Microsoft Power Platform | MicrosoftDocs"
 description: "Help makers plan and execute their Power Apps projects. "
-author: mapichle-msft
+author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin

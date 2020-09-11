@@ -1,7 +1,7 @@
 ---
 title: "Create an internal wiki and community | MicrosoftDocs"
 description: "At the heart of growth is a community, a place for people to collaborate, share ideas and discover new ways to apply technology to achieve more."
-author: mapichle-msft
+author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin

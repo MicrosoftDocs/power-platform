@@ -1,7 +1,7 @@
 ---
 title: "Onboard new makers - Microsoft Power Platform | MicrosoftDocs"
 description: "A great way of embracing new users and making sure they get off to a good start is sending them a **welcome email** that includes validated resources, company-specific resources and links to upcoming internal events available to help them with their learning journey."
-author: mapichle-msft
+author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
