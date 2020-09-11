@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 09/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -67,7 +67,7 @@ The following links point to detailed information to help you respond to DSR req
 |Common Data Service     |  [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md)     |
 |Power Automate    | https://docs.microsoft.com/flow/gdpr-dsr-summary        |
 |Microsoft Accounts (MSAs)     | https://docs.microsoft.com/flow/gdpr-dsr-summary-msa        |
-|Model-driven apps in Dynamics 365     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
+|Customer engagement apps     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
 
 ## Microsoft 365 Security and Compliance Center
 
