@@ -1,6 +1,6 @@
 ---
 title: "Manage users | MicrosoftDocs"
-description: ""
+description: "Provides information aboout the multiple layers of security make up the security model of Microsoft Power Platform"
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -18,7 +18,7 @@ search.app:
 ---
 # Manage users
 
-What sets Microsoft Power Platform apart from other low-code options that are in use in your organization already (through Excel or Access) or other Shadow IT, point-solution software as a service (SaaS) providers is that everything is governed and authenticated through Azure Active Directory (Azure AD). You need to sign in with your work or school Azure AD account in order to use this service. This means that as an admin, you have full visibility of everything your makers and users do—it's governable, automatable, auditable, and manageable by default.
+What sets Microsoft Power Platform apart from other low-code options that are used in your organization already (through Excel or Access) or other Shadow IT, point-solution software as a service (SaaS) providers is that everything is governed and authenticated through Azure Active Directory (Azure AD). You need to sign in with your work or school Azure AD account in order to use this service. This means that as an admin, you have full visibility of everything your makers and users do—it's governable, automatable, auditable, and manageable by default.
 
 Conceptually, security in the platform is there to ensure users can do the work they need with the least amount of friction, while still protecting the data and services.
 
