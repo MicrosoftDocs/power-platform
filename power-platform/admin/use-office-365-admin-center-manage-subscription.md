@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/19/2020
+ms.date: 09/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -17,7 +17,7 @@ search.app:
 ---
 # Use the Microsoft 365 admin center to manage your subscription 
 
-[The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
+[The Microsoft 365 admin center](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23) is a portal site rich in features for the administrator. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), take advantage of the features on this site to simplify and consolidate management of user accounts, billing, licensing, and more.  
   
  ![Microsoft 365 admin center](../admin/media/o365-admin-center.png "Microsoft 365 admin center")  
   
@@ -26,14 +26,14 @@ search.app:
 > [!NOTE]
 >  You must have the Global admin role to fully access the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
-## Open model-driven apps in Dynamics 365 and other services with the app launcher  
+## Open customer engagement apps and other services with the app launcher  
 
- You can open model-driven apps in Dynamics 365 and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open model-driven apps in Dynamics 365. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Microsoft 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher).
+ You can open customer engagement apps and other services such as [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] from the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] app launcher. Choose **Admin** to open the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] and **Dynamics 365** to open customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Find help for the latest changes in Microsoft 365](https://support.office.com/client/Find-help-for-the-latest-changes-in-Office-365-22E9A8BF-EF08-4B95-B10F-6E839440339C?NS=O365ENTADMIN&Version=15&HelpId=O365E_NewAppLauncher).
   
  ![Microsoft 365 app launcher](../admin/media/admin-center-app-launcher.png "Microsoft 365 app launcher")  
    
 ## Check your service health  
- You can quickly get real-time status of your model-driven apps in Dynamics 365 and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services. The Service health page on the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] provides a comprehensive view of the service health of your online services. If users are having trouble signing in to model-driven apps in Dynamics 365, check this page to see if there is a service outage.  
+ You can quickly get real-time status of your customer engagement apps and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services. The Service health page on the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] provides a comprehensive view of the service health of your online services. If users are having trouble signing in to customer engagement apps, check this page to see if there is a service outage.  
   
 For more information, see [Check your service health](check-online-service-health.md).  
 
@@ -51,14 +51,14 @@ For more information, see [Check your service health](check-online-service-healt
 More information: [Contact Technical Support](get-help-support.md)
 
 ## Manage users  
- Each user signs in to model-driven apps in Dynamics 365 with an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID (more precisely, an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID, see the following Note). Access to model-driven apps in Dynamics 365 is controlled through the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID.  
+ Each user signs in to customer engagement apps with an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID (more precisely, an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID, see the following Note). Access to customer engagement apps is controlled through the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID.  
   
  You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to add, edit, and delete users and to reset passwords.  
   
  ![Microsoft 365 admin center active users](../admin/media/o365-admin-center-manage-users.png "Microsoft 365 admin center active users")  
   
 > [!NOTE]
-> Model-driven apps in Dynamics 365 use [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) as its identity provider. You access model-driven apps in Dynamics 365 through an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID that is created and managed in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. For simplicity, we'll refer to the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID as the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID in this documentation.  
+> Customer engagement apps use [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) as its identity provider. You access customer engagement apps through an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID that is created and managed in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. For simplicity, we'll refer to the [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] user ID as the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] user ID in this documentation.  
   
  If your company uses on-premises [!INCLUDE[pn_Active_Directory](../includes/pn-active-directory.md)] for user identity, you have options that can simplify user management such as providing a single sign-on experience for your users. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Manage user account synchronization](../admin/manage-user-account-synchronization.md)  
   
