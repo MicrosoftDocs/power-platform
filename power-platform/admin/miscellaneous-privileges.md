@@ -41,12 +41,12 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="odd">
 <td><p>Add Reporting Services Reports</p></td>
 <td><p>prvPublishRSReport</p></td>
-<td><p><a href="gg328437(v=crm.8).md">Publish reports</a></p></td>
+<td><p><a href="analytics-common-data-service.md#download-reports">Download reports</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Bulk Delete</p></td>
 <td><p>prvBulkDelete</p></td>
-<td><p><a href="gg309310(v=crm.8).md">BulkDelete message privileges</a></p></td>
+<td><p><a href="delete-bulk-records.md">Bulk delete</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Delete Audit Partitions</p></td>
