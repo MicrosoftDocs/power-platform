@@ -1,12 +1,12 @@
 ---
 title: "Organize show-and-tell sessions | MicrosoftDocs"
 description: "If you want to create more excitement in your organization and inspire more people to join your Power Apps community, an app showcase is a great way to do so."
-author: mapichle-msft
+author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 09/11/2020
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
