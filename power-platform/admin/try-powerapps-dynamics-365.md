@@ -1,12 +1,11 @@
 ---
-title: "Try Power Apps and model-driven apps in Dynamics 365 | MicrosoftDocs"
-description: Try Power Apps and model-driven apps in Dynamics 365 for free before you buy  
+title: "Try Power Apps and customer engagement apps | MicrosoftDocs"
+description: Try Power Apps and customer engagement apps for free before you buy  
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 09/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -16,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Try Power Apps and model-driven apps in Dynamics 365 apps
+# Try Power Apps and customer engagement apps apps
 
 You can explore all Power Apps and model-driven apps capabilities in Dynamics 365, such as Dynamics 365 Sales and Customer Service, for free by signing up for trial licenses.
 
@@ -27,8 +26,8 @@ You can try Power Apps for free by signing up either for a 30 day trial or commu
 - [Sign up for Community Plan](https://docs.microsoft.com/powerapps/maker/dev-community-plan)
 - Sign up for trial while [purchasing Power Apps](signup-for-powerapps-admin.md) 
 
-## Model-driven apps in Dynamics 365 trial
+## Customer engagement apps trial
 
 Visit <https://trials.dynamics.com> and select the required app to sign up for a 30-day trial.
 
-For detailed information about signing up, purchasing or using individual model-driven apps in Dynamics 365, see the respective app's documentation at [Dynamics 365 documentation](https://docs.microsoft.com/dynamics365/). 
+For detailed information about signing up, purchasing or using individual customer engagement apps, see the respective app's documentation at [Dynamics 365 documentation](https://docs.microsoft.com/dynamics365/). 
