@@ -39,7 +39,7 @@ For example, for Account, the privileges are:
 
 In order to perform an action on a record, the user needs to have either the required privilege assigned through a role directly, or needs to be member of a team that has a security role with the privilege assigned. If this is not the case, then the user will get an access denied error stating that they do not hold the necessary privilege to perform the action.
  
-For example, in a scenario where a user wants to create an Account record, it is necessary that the user has the privilege *prvCreateAccount* either through a security role assigned to them or to a team they belong to.
+For example, in a scenario where a user wants to create an Account record, it is necessary that the user has the Create privilege either through a security role assigned to them or to a team they belong to.
  
 > [!NOTE]
 > When creating or editing a security role, a privilege is granted to that role with a given access level. The access level is not taken into account in the privilege check, this is done in the access check when the privilege check is passed.
@@ -73,8 +73,8 @@ In this case, the user must either have or belong to a team that has a role assi
  
 > [!NOTE]
 > For roles assigned to Teams with Basic-level access user privilege, the role's inheritance configuration also comes into place. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able make use of that privilege for records owned by the Team. For more information, see [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
-
-:::image type="content" source="media/member-privilege-inheritance.png" alt-text="Member's privilege inheritance":::
+> 
+> :::image type="content" source="media/member-privilege-inheritance.png" alt-text="Member's privilege inheritance":::
  
 #### The record belongs to the same business unit as the user.
 In this case, the user must either have or belong to a team that has a role assigned which has the required privilege with at least the access level Business Unit.
