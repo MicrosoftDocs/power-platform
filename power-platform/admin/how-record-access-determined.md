@@ -44,7 +44,7 @@ For example, in a scenario where a user wants to create an Account record, it is
 > [!NOTE]
 > When creating or editing a security role, a privilege is granted to that role with a given access level. The access level is not taken into account in the privilege check, this is done in the access check when the privilege check is passed.
 
-## Access Check
+## Access check
  
 If the privilege check is passed, then the access check takes place. The access check verifies that the user has the required rights to perform the action they are trying to perform.
 
@@ -85,7 +85,7 @@ In this case, the user must either have or belong to a team that has a role assi
 #### The record belongs to a business unit that is not a descendant of the user's business unit
 In this case, the user must either have or belong to a team that has a role assigned which has the required privilege with the access level Organization.
  
-### Shared Access
+### Shared access
  
 Another way to get access to a record without having an explicit role assigned that allows this is through shared access. Shared access is obtained when a record is shared with a user, team, or organization by a user that has appropriate share rights. There are four ways in which a user can have shared access to a record:
  
