@@ -15,15 +15,12 @@ ms.collection: virtual-agent
 
 # Analyze bot performance and usage in Power Virtual Agents in Teams
 
->
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mQpm]
->
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../analytics-summary.md)
+> - [Teams (online or app)](analytics-summary-teams.md)
 
-The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
-![The Analytics summary page](media/overview-analytics-teams.png)
-
-The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
+The Summary page gives you a broad overview of how well your bot is doing with these charts:
 
 * [Summary charts](#summary-charts)
 * [Engagement over time chart](#engagement-over-time-chart)
@@ -32,9 +29,7 @@ The Summary page includes a variety of charts with graphical views of your bot's
 * [Escalation rate drivers chart](#escalation-rate-drivers-chart)
 * [Abandon rate drivers chart](#abandon-rate-drivers-chart)
 
-The Engagement Rate Drivers, Abandon Rate Drivers, and Resolution Rate Drivers charts use natural language understanding to group issues as topics. These charts show you the topics that are having the most impact on the performance of your bot.
- 
-By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
+To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
 ## Prerequisites
 
@@ -45,12 +40,12 @@ By default, the page shows you key performance indicators for the last seven day
 
 ![Summary charts](media/summary-charts-teams.png)
 
-The Summary charts summarize the key performance indicators for the specified time period and the percent change over the period.
+The Summary charts summarize the how well your bot is doing based on different measurements, described in this table:
 
 Description | Details
 ----------- | -------
 Total sessions | The total number of sessions within the specified time period.
-Engagement rate | The percentage of total sessions that are engaged sessions. An engaged session is a session in which a user-created topic (as opposed to a system topic) is triggered, or the session ends in escalation. Engaged sessions can have one of three outcomes—they are either resolved, escalated, or abandoned.
+Engagement rate | The percentage of total sessions that are engaged sessions. An engaged session is a session in which a user-created topic is triggered, or the session ends in escalation. Engaged sessions can have one of three outcomes—they are either resolved, escalated, or abandoned.
 Resolution rate | The percentage of engaged sessions that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey that asks the question *“Did that answer your question?”* and the user either does not respond or responds *Yes*.
 Escalation rate | The percentage of engaged sessions that are escalated. An escalated session is an engaged session that is escalated to a human agent.
 Abandon rate | The percentage of engaged sessions that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.
@@ -60,7 +55,7 @@ A blue up-and-down indicator next to the value indicates the percent change in a
 
 ## Engagement over time chart
 
-The Engagement over time chart provides a graphical view of the number of engaged and unengaged sessions over time. An engaged session is a session in which a user-created topic is triggered or the session ends in escalation.
+The Engagement over time chart shows you engaged and unengaged sessions over time. An engaged session is a session in which a user-created topic is triggered or the session ends in escalation.
 
 Description | Details
 ----------- | -------
@@ -69,7 +64,7 @@ Unengaged | The daily number of unengaged sessions.
 
 ## Session outcomes over time chart
 
-The Session outcomes over time chart provides a graphical view of the daily resolution rate, escalation rate, and abandon rate over the specified time period.
+The Session outcomes over time chart shows you the daily resolution rate, escalation rate, and abandon rate over the specified time period.
 
 Description | Details
 ----------- | -------

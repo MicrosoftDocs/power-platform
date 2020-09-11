@@ -18,6 +18,13 @@ ms.collection: virtual-agent
 
 # Add actions to a bot using Power Automate  in Teams
 
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../advanced-flow.md)
+> - [Teams (online or app)](advanced-flow-teams.md)
+
 You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows with [end-user authentication](advanced-end-user-authentication-teams.md) to retrieve information about a user after they've signed in.
 
 

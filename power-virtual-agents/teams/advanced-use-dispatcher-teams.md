@@ -15,6 +15,12 @@ ms.custom: advanced-authoring, ceX
 
 # Use a Microsoft Bot Framework bot with Power Virtual Agents in Teams
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../advanced-use-dispatcher.md)
+> - [Teams (online or app)](advanced-use-dispatcher-teams.md)
+
 This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with a Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and integrated development environments (IDEs). 
 
 * [Retrieve topics, utterances and secrets from your Power Virtual Agents bot](#retrieve-topics-and-utterances-from-your-bot)

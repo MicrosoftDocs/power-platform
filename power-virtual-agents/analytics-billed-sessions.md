@@ -49,10 +49,11 @@ A session ends for one of the following reasons:
     The first message that occurs after 60 minutes starts a new session.
 
 - The session has more than 100 turns. A *turn* is defined as one exchange between a user and the bot.  
-    The one-hundred-and-first<!--from editor: Style Guide, I swear.--> turn starts a new session. 
+    The one-hundred-and-first turn starts a new session. 
 
 > [!NOTE]
-> Sessions that use the [embedded test chat](authoring-test-bot.md) don't count toward the billed sessions.
+> Sessions that use the [embedded test chat](authoring-test-bot.md) or that only leverage capabilities included with the Power Virtual Agents for Microsoft Teams plan don't count toward the billed sessions.
+> The Billed Session report doesn’t distinguish between the sessions included in the Power Virtual Agents for Microsoft Teams plan and those that are not. You might see an inflated number of billed sessions in the report.
 
 ## Frequently asked questions
 
