@@ -16,8 +16,11 @@ ms.collection: virtual-agent
 
 # Configure Direct Line channel security
 
+>[!NOTE]
+> The location of the Web channel security configuration changed recently to "Web channel security" under Manage -> Security in the navigation bar.
 
-When you create a Power Virtual Agents bot, it is immediately available in the **Demo website** and  **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed. 
+
+When you create a Power Virtual Agents bot, it is immediately available in the **Demo website** and **Custom website** channels to anyone who knows the bot ID. These channels are available by default, and no configuration is needed. 
 
 Users can find the bot ID directly from within Power Virtual Agents or by receiving it from someone. 
 
@@ -38,7 +41,7 @@ Once this option is enabled, channels will need the client to authenticate their
 
 Any access to the bot that doesn't provide this security measure won't work.
 
-1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon.png "Settings icon"), and then select **Web channel security**.
+1. On the left navigation bar, select **Manage**, **Security**, and then select **Web channel security**.
 
     ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security/settings-web-channel.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
 
@@ -47,7 +50,7 @@ Any access to the bot that doesn't provide this security measure won't work.
     ![Screenshot showing the Web channel security page.](media/configure-web-security/enable-web-security.png "Screenshot showing the Web channel security page.")
 
 >[!WARNING] 
-> Once "Require secured access" is enabled or disabled, the system can take up to two hours to propagate the settings and take effect. Until then, the previous setting will be in effect.  
+> Once "Require secured access" is enabled or disabled, the system can take up to two hours to propagate the settings and take effect. Until then, the previous setting will be in effect. You do not need to publish the bot for this change to take effect.
 >You should plan ahead to avoid exposing your bot unintentionally.
 
 If you need to disable the web channel security option, you can do so by switching **Require secured access** to **Disabled**. Disabling secured access can take up to two hours to propagate.
@@ -72,7 +75,7 @@ Choose the security model that works best for your situation.
 
 You'll need the secret so you can specify it in your app's authorization header requests or similar.
 
-1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon.png "Settings icon"), and then select **Web channel security**.
+1. On the left navigation bar, select **Manage**, **Security**, and then select **Web channel security**.
 
     ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security/settings-web-channel.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
 
