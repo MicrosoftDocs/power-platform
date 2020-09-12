@@ -39,11 +39,11 @@ Once this option is enabled, channels will need the client to authenticate their
 Any access to the bot that doesn't provide this security measure won't work.
 
 1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon-teams.png "Settings icon"), and then select **Web channel security**.
-
+<!-- Screenshots needs to be updated to reflect the new location in the UI -->
     ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security-teams/settings-web-channel-teams.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
 
 2. Turn the **Require secured access** switch to **Enabled**. 
- 
+ <!-- Screenshots needs to be updated to reflect the new location in the UI -->
     ![Screenshot showing the Web channel security page.](media/configure-web-security-teams/enable-web-security-teams.png "Screenshot showing the Web channel security page.")
 
 >[!WARNING] 
@@ -73,7 +73,7 @@ Choose the security model that works best for your situation.
 You'll need the secret so you can specify it in your app's authorization header requests or similar.
 
 1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon-teams.png "Settings icon"), and then select **Web channel security**.
-
+<!-- Screenshots needs to be updated to reflect the new location in the UI -->
     ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security-teams/settings-web-channel-teams.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
 
 2. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon ![Visibility icon](media/configure-web-security-teams/visibility-icon-teams.png "Visibility icon") to reveal the secret. A warning prompt will appear before you can reveal it.
