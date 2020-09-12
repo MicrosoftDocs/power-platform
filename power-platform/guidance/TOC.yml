@@ -4,26 +4,26 @@
   - name: Adoption best practices
     href: adoption/methodology.md
     items: 
-    - name: Strategy and Vision
+    - name: Strategy and vision
       href: adoption/strategy-best-practices.md
       items:
       - name: Establishing a Center of Excellence
         href: adoption/coe.md
-      - name: Roles and Responsibilities
+      - name: Roles and responsibilities
         href: adoption/roles.md
-      - name: Delivery Models
+      - name: Delivery models
         href: adoption/delivery-models.md
-    - name: Admin and Governance 
+    - name: Admin and governance 
       items:
-      - name: Best Practices Checklist
+      - name: Best practices checklist
         href: adoption/admin-best-practices.md
       - name: Manage
         items: 
-          - name: Designate a Power Platform Admin
+          - name: Designate a Power Platform admin
             href: adoption/pp-admin.md
           - name: Plan and manage licenses and capacity
             href: adoption/capacity-and-licenses.md
-          - name: Establish an Environment strategy
+          - name: Establish an environment strategy
             href: adoption/environment-strategy.md
       - name: Secure
         items: 
@@ -31,7 +31,7 @@
             href: adoption/dlp-strategy.md
           - name: Set up Azure AD Conditional Access
             href: adoption/conditional-access.md
-          - name: Enable Cross-tenant isolation
+          - name: Enable cross-tenant isolation
             href: adoption/tenant-isolation.md
       - name: Monitor and alert
         items: 
@@ -45,13 +45,13 @@
             href: adoption/new-connectors.md
           - name: Set up sharing alerts and mitigations
             href: adoption/sharing-alerts.md
-    - name: Nurture and Educate
+    - name: Nurture and educate
       items:
-      - name: Best Practices Checklist
+      - name: Best practices checklist
         href: adoption/nurture-best-practices.md
       - name: Community
         items:
-          - name: Identify Champions
+          - name: Identify champions
             href: adoption/champions.md
           - name: Onboard new makers
             href: adoption/onboard-makers.md
@@ -67,7 +67,7 @@
             href: adoption/hackathons.md
       - name: Training
         items:
-          - name: Training and Upskilling strategy
+          - name: Training and upskilling strategy
             href: adoption/training-strategy.md
           - name: Internal training events
             href: adoption/in-a-day.md
