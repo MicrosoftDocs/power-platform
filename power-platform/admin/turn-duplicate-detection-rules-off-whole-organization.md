@@ -2,11 +2,10 @@
 title: "Turn duplicate detection rules on or off for the whole organization  | MicrosoftDocs"
 description: Turn duplicate detection rules on or off for the whole organization 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/13/2019
+ms.date: 09/11/2020
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -33,13 +32,13 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
 2. Select or clear the **Enable duplicate detection** check box.  
   
    > [!NOTE]
-   >  If your system contains a large number of records, checking for duplicates can impact performance.  
+   > If your system contains a large number of records, checking for duplicates can impact performance.  
   
 3. If you’re turning duplicate detection on, select or clear the check boxes to set when duplicates are detected:  
   
    - **When a record is created or updated**  
   
-        The system checks for duplicates when a user enters or updates records.  
+       The system checks for duplicates when a user enters or updates records.  
   
        > [!IMPORTANT]
        >  Duplicates aren’t detected when a user merges two records, activates or deactivates a record, or saves a completed activity.  
@@ -50,11 +49,11 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
   
    - **During data import**  
   
-        When you use the Import Data wizard to bring in contacts, leads, accounts, or other types of data, the wizard detects any duplicate records as long as you enable duplicate detection in the wizard. For more information, see [Import data from multiple sources](import-data-all-record-types.md).  
+       When you use the Import Data wizard to bring in contacts, leads, accounts, or other types of data, the wizard detects any duplicate records as long as you enable duplicate detection in the wizard. For more information, see [Import data from multiple sources](import-data-all-record-types.md).  
   
 4. Select **OK**.  
   
 ### See also  
  [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md)   
- [Frequently asked questions about synchronizing records between model-driven apps in Dynamics 365 and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
+ [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.md)   
  [Run bulk system jobs to detect duplicate records](run-bulk-system-jobs-detect-duplicate-records.md)
