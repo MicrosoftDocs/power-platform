@@ -16,9 +16,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Microsoft Power Platform adoption hub
+# Microsoft Power Platform adoption best practices
 
-Microsoft Power Platform adoption hub gives proven guidance that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed with Microsoft Power Platform. This guidance provides best practices, documentation, and tools that architects, IT pros, and business decision makers need to successfully achieve short-term and long-term objectives.
+Microsoft Power Platform adoption best practices provides proven guidance that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed with Microsoft Power Platform. This guidance provides best practices, documentation, and tools that architects, IT pros, and business decision makers need to successfully achieve short-term and long-term objectives.
 
 By using Microsoft Power Platform adoption best practices, organizations can better align their business and technical strategies to ensure success.
 
