@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/07/2020 #Required; mm/dd/yyyy format.
+  ms.date: 09/11/2020 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -83,12 +83,17 @@ conceptualContent:
       - url: /power-platform/admin/admin-documentation
         itemType: overview
         text: Admin guide
-      - url: /power-platform/guidance/coe/starter-kit
-        itemType: overview
-        text: Center of Excellence (CoE) Starter kit
       - url: /power-platform/alm
         itemType: overview
         text: Application lifecycle management (ALM) guide
+    - title: Best practices guidance
+      links:
+      - url: /power-platform/guidance/adoption/methodology
+        itemType: overview
+        text: Adoption best practices
+      - url: /power-platform/guidance/coe/starter-kit
+        itemType: overview
+        text: Center of Excellence (CoE) Starter kit
     
 additionalContent:
 # Supports up to 3 sections
