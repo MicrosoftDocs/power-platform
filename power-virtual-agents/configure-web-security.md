@@ -43,10 +43,12 @@ Any access to the bot that doesn't provide this security measure won't work.
 
 1. On the left navigation bar, select **Manage**, **Security**, and then select **Web channel security**.
 
+<!-- The location changed, this screenshot needs to be updated -->
     ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security/settings-web-channel.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
 
 2. Turn the **Require secured access** switch to **Enabled**. 
  
+ <!-- The location changed, this screenshot needs to be updated (showing the wrong location on left) -->
     ![Screenshot showing the Web channel security page.](media/configure-web-security/enable-web-security.png "Screenshot showing the Web channel security page.")
 
 >[!WARNING] 
@@ -77,6 +79,7 @@ You'll need the secret so you can specify it in your app's authorization header 
 
 1. On the left navigation bar, select **Manage**, **Security**, and then select **Web channel security**.
 
+<!-- The location changed, this screenshot needs to be updated -->
     ![Screenshot showing the Settings options, with Web channel security highlighted.](media/configure-web-security/settings-web-channel.png "Screenshot showing Web channel security highlighted on the Settings flyout.")
 
 2. Select **Copy** for either **Secret 1** or **Secret 2** to copy it to the clipboard. Select the visibility icon ![Visibility icon](media/configure-web-security/visibility-icon.png "Visibility icon") to reveal the secret. A warning prompt will appear before you can reveal it.
