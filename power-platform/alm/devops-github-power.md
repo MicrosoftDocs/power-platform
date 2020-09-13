@@ -32,7 +32,7 @@ solutions) that contains the various platform components such as customer engage
 <ul><li>Provisioning or de-provisioning
 environments</li></ul>
 
-<ul><li>Perform static analysis checks against solutions by using the Power Apps checker service</li></ul>
+<ul><li>Perform static analysis check against solutions by using the Power Apps checker service</li></ul>
 
 
 GitHub actions for the Power Platform can be used along with any other available
