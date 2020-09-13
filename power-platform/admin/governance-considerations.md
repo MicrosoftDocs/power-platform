@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 09/13/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -123,14 +123,6 @@ A: Connectors are available to all users. With the exception of premium or custo
 ## Alert and action
 
 In addition to monitoring, many customers want to subscribe to software creation, usage or health events so they know when to perform an action. This section outlines a few means to observe events (manually and programmatically) and perform actions triggered by an event occurrence. 
-
-### Leverage the [Microsoft Power Automate admin center](https://admin.powerplatform.microsoft.com/)
-
-Environment and app management requires a Power Apps plan or a Power Automate plan. You can do the following:
-
-1. View and manage environments.
-2. View and manage all apps and flows within an environment.
-     
 
 ### Build Power Automate flows to alert on key audit events
 
