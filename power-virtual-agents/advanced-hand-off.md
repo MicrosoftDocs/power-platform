@@ -16,6 +16,11 @@ ms.custom: handoff, ceX, advanced-authoring
 
 # Trigger hand-off to a live agent
 
+
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](advanced-hand-off.md)
+> - [Teams (online or app)](teams/advanced-hand-off-teams.md)
+
 With Power Virtual Agents, you can hand-off conversations to live agents seamlessly and contextually.
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
