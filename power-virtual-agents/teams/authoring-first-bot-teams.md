@@ -15,9 +15,27 @@ ms.collection: virtual-agent
 
 # Create your first Power Virtual Agents bot in Teams
 
-To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
+You can create chatbots in the Power Virtual Agents app in Teams and then share them with other people in your team, company, or organization.
 
-**Create your first bot:**
+The very first step is to add the Power Virtual Agents app. Then you can create bots.
+
+
+## Add the Power Virtual Agents app in Microsoft Teams
+
+1. Select **Apps** at the bottom of the navigation pane in Microsoft Teams
+
+    :::image type="content" source="media/first-bot-teams-apps.png" alt-text=" ":::
+
+
+- You put the bot into a team - everyone in that team will be able to see and use the bot (but you can share it with people in other teams later on)
+- 
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+
+## Create your first bot
+
 
 1. Go to [Power Virtual Agents marketing page](https://go.microsoft.com/fwlink/?linkid=2106332) and select **Start free**. Sign in using your work account.
 
@@ -37,9 +55,7 @@ During the building process, you'll see a notification at the top of the Power V
 You can navigate to some tabs during this period, after which the banner will change and you'll have full access to the Power Virtual Agents portal. 
  
 
-## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
 
 ## Create additional bots

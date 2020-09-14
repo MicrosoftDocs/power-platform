@@ -16,18 +16,27 @@ ms.collection: virtual-agent
 
 # Create and edit topics in your Power Virtual Agents bot in Teams
 
-In Power Virtual Agents, a topic defines a how a bot conversation plays out. 
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../authoring-create-edit-topics.md)
+> - [Teams (online or app)](authoring-create-edit-topics-teams.md)
 
-You can author topics by [customizing provided templates](authoring-template-topics-teams.md), create new topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web-teams.md). 
+In Power Virtual Agents, a topic determines a how a bot responds to a question from a user. 
 
-A topic has trigger phrases—these are phrases, keywords, or questions that a user is likely to type that is related to a specific issue —and conversation nodes—these are what you use to define how a bot should respond and what it should do.
+You can create topics by [customizing provided templates](authoring-template-topics-teams.md), create new topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web-teams.md). 
 
-The AI uses natural language understanding to parse what a customer actually types and find the most appropriate trigger phrase or node. 
+All topics have trigger phrases and conversation nodes.
 
-For example, a user might type "Open hours" into your bot—the AI will be able to match that to the **Store hours** topic and begin a conversation that asks which store the customer is interested in, and then display the hours the store is open.
+Trigger phrases are phrases, keywords, or questions that a user is likely to type that is related to a specific issue. 
+
+Conversation nodes are what you use to determine how a bot should respond and what it should do.
+
+You don't need to be exact with trigger phrases - the bot can determine what the user meant (their "intent") and match it to the right topic.
+
+For example, a user might type "Open hours" into your bot, which will match that to the trigger phrases for the **Store hours** topic. 
+The bot then asks which store the customer is interested in, and displays the hours the store is open.
 
 
-You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you are ready to deploy it without having to exit the Power Virtual Agents portal.
+You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you're ready to share it.
 
 > [!Note]
 > You can have up to 1,000 topics in a bot.
@@ -42,13 +51,13 @@ You can see how the bot conversation works in practice by testing it in the **Te
 
 When you create a bot, a number of topics will be automatically created for you.
 
-> [!div class="mx-imgBorder"]
-> ![Four lesson topics and a number of system topics are in the Topics list](media/topics-system-teams.png "Four lesson topics and a number of system topics are in the Topics list")
+
+>![Four lesson topics and a number of system topics are in the Topics list](media/topics-system-teams.png "Four lesson topics and a number of system topics are in the Topics list")
 
 These are:
   
   - Four prepopulated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations.
-  - A number of **System Topics**. These are prepopulated topics that you are likely to need during a bot conversation. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
+  - A number of **System Topics**. These are prepopulated topics that you might need during a bot conversation. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
 
 You can edit both of these topic types in the same manner as for topics you create; however, you cannot delete them.
 
@@ -57,17 +66,16 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Go to the **Topics** tab on the side navigation pane to open the topics page.
 
-   > [!div class="mx-imgBorder"]
-   > ![Select Topics on the side navigation menu](media/topics-menu-teams.png "Select Topics on the side navigation menu")
+
+   ![Select Topics on the side navigation menu](media/topics-menu-teams.png "Select Topics on the side navigation menu")
 
 1. On the topics page, select **New topic**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Select New topic at the top of the Topics page](media/topics-new-teams.png "Select New topic at the top of the Topics page")
+   ![Select New topic at the top of the Topics page](media/topics-new-teams.png "Select New topic at the top of the Topics page")
 
 1. Specify a name, description, and one or more trigger phrases for the topic.
 
-   A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
+   A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. It's best to use short phrases and keywords rather than long sentences.
 
    > [!div class="mx-imgBorder"]
    > ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers-teams.png "The Topic details page contains a name, description, and trigger phrases")
