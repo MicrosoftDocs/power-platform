@@ -16,6 +16,13 @@ ms.collection: virtual-agent
 
 # Supported languages
 
+
+
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](authoring-language-support.md)
+> - [Teams (online or app)](teams/authoring-language-support-teams.md)
+
+
 [!INCLUDE [](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can create chatbots in Power Virtual Agents in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.

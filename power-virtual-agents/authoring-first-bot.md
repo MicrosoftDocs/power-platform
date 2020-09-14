@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 > [!div class="op_single_selector"]
 > - [Web service (https://powerva.microsoft.com)](authoring-first-bot.md)
-> - [Teams (online or app)](/teams/authoring-first-bot-teams.md)
+> - [Teams (online or app)](teams/authoring-first-bot-teams.md)
 
 To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 

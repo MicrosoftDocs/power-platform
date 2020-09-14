@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 > [!div class="op_single_selector"]
 > - [Web service (https://powerva.microsoft.com)](../analytics-overview.md)
-> - [Teams (online or app)](analytics-overview-teams.md)
+> - [Teams (online or app)](teams/analytics-overview-teams.md)
 
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 

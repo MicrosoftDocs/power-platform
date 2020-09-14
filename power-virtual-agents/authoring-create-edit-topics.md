@@ -16,6 +16,10 @@ ms.collection: virtual-agent
 
 # Create and edit topics in your Power Virtual Agents bot
 
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](authoring-create-edit-topics.md)
+> - [Teams (online or app)](teams/authoring-create-edit-topics-teams.md)
+
 In Power Virtual Agents, a topic defines a how a bot conversation plays out. 
 
 You can author topics by [customizing provided templates](authoring-template-topics.md), create new topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md). 
@@ -42,8 +46,7 @@ You can see how the bot conversation works in practice by testing it in the **Te
 
 When you create a bot, a number of topics will be automatically created for you.
 
-> [!div class="mx-imgBorder"]
-> ![Four lesson topics and a number of system topics are in the Topics list](media/topics-system.png "Four lesson topics and a number of system topics are in the Topics list")
+![Four lesson topics and a number of system topics are in the Topics list](media/topics-system.png "Four lesson topics and a number of system topics are in the Topics list")
 
 These are:
   
@@ -57,20 +60,17 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Go to the **Topics** tab on the side navigation pane to open the topics page.
 
-   > [!div class="mx-imgBorder"]
-   > ![Select Topics on the side navigation menu](media/topics-menu.png "Select Topics on the side navigation menu")
+   ![Select Topics on the side navigation menu](media/topics-menu.png "Select Topics on the side navigation menu")
 
 1. On the topics page, select **New topic**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Select New topic at the top of the Topics page](media/topics-new.png "Select New topic at the top of the Topics page")
+   ![Select New topic at the top of the Topics page](media/topics-new.png "Select New topic at the top of the Topics page")
 
 1. Specify a name, description, and one or more trigger phrases for the topic.
 
    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
 
-   > [!div class="mx-imgBorder"]
-   > ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers.png "The Topic details page contains a name, description, and trigger phrases")
+   ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers.png "The Topic details page contains a name, description, and trigger phrases")
 
 1. Select **Save topic** to add the topic to the topics list.
 
@@ -90,8 +90,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of adding a node](media/handoff-add-node.png "Screenshot of adding a node")
+   ![Screenshot of adding a node](media/handoff-add-node.png "Screenshot of adding a node")
 
 ### Insert nodes
 
@@ -105,20 +104,17 @@ You can:
 - **Go to another topic**
 - **End the conversation**
 
-  > [!div class="mx-imgBorder"]
-  > ![When adding a node, you can choose from five options](media/topics-nodes.png "When adding a node, you can choose from five options")
+  ![When adding a node, you can choose from five options](media/topics-nodes.png "When adding a node, you can choose from five options")
  
 Additionally, you can **Branch based on a condition** when inserting a node between existing nodes:
 
-> [!div class="mx-imgBorder"]
-> ![Branch based on a condition](media/topics-nodes-branch.png "Branch based on a condition")
+![Branch based on a condition](media/topics-nodes-branch.png "Branch based on a condition")
 
 #### Ask a question:
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-   > [!div class="mx-imgBorder"]
-   > ![Add a new question mode](media/topics-question.png "Add a new question mode")
+   ![Add a new question mode](media/topics-question.png "Add a new question mode")
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
@@ -181,18 +177,15 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
 
-    > [!div class="mx-imgBorder"]
-    > ![End the conversation](media/topics-nodes-end.png "End the conversation")
+    ![End the conversation](media/topics-nodes-end.png "End the conversation")
 
 1. To end with a customer satisfaction survey, select **End with survey**.
     
-    > [!div class="mx-imgBorder"]
-    > ![End with survey](media/topics-nodes-survey.png "End with survey")
+    ![End with survey](media/topics-nodes-survey.png "End with survey")
 
 1. Select **Transfer To Agent** to insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel.md). You can also enter a private message to the agent.
 
-    > [!div class="mx-imgBorder"]
-    > ![Transfer To Agent](media/topics-nodes-handoff.png "Transfer To Agent")
+    ![Transfer To Agent](media/topics-nodes-handoff.png "Transfer To Agent")
 
 
 #### Branch based on a condition
@@ -201,8 +194,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point. For example, if you have set up [end-user authentication](advanced-end-user-authentication.md), then you might want to specify a different message if the user is signed on (which may have happened earlier in the conversation).
 
-    > [!div class="mx-imgBorder"]
-    > ![Choose a variable](media/topics-branch.png "Choose a variable")
+    ![Choose a variable](media/topics-branch.png "Choose a variable")
 
 ### Delete nodes
 
@@ -210,8 +202,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Select **Delete**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Select the menu icon and then the delete button](media/topics-delete.png "Select the menu icon and then the delete button")
+    ![Select the menu icon and then the delete button](media/topics-delete.png "Select the menu icon and then the delete button")
 
 ## Test and publish your bot
 

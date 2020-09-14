@@ -1,15 +1,14 @@
 ---
 title: "Use topics to design a chatbot conversation in Teams"
-description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
-keywords: "PVA"
+description: "Use the authoring canvas in the Power Virtual Agents app in Teams to create an end-to-end conversation."
+keywords: "PVA, authoring canvas, conversation"
 ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring, ceX
+ms.custom: authoring, ceX, teams
 ms.collection: virtual-agent
 ---
 
@@ -49,17 +48,16 @@ You can see how the bot conversation works in practice by testing it in the **Te
 
 ## Use system and sample topics
 
-When you create a bot, a number of topics will be automatically created for you.
+When you create a bot, a number of topics are automatically created.
 
 
->![Four lesson topics and a number of system topics are in the Topics list](media/topics-system-teams.png "Four lesson topics and a number of system topics are in the Topics list")
+![Four lesson topics and a number of system topics are in the Topics list](media/topics-system-teams.png "Four lesson topics and a number of system topics are in the Topics list")
 
-These are:
   
-  - Four prepopulated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations.
-  - A number of **System Topics**. These are prepopulated topics that you might need during a bot conversation. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
+  - Four **User Topics** that can be used as [lesson topics](authoring-template-topics-teams.md) can to help understand how to make a bot conversation.
+  - A number of **System Topics**. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
 
-You can edit both of these topic types in the same manner as for topics you create; however, you cannot delete them.
+You can edit both of these topic types in the same manner as for topics you create but you can't delete them.
 
 
 ## Create a topic
@@ -67,23 +65,29 @@ You can edit both of these topic types in the same manner as for topics you crea
 1. Go to the **Topics** tab on the side navigation pane to open the topics page.
 
 
-   ![Select Topics on the side navigation menu](media/topics-menu-teams.png "Select Topics on the side navigation menu")
+   
+
+   :::image type="content" source="media/topics-menu-teams.png" alt-text="Select Topics on the side navigation menu":::
 
 1. On the topics page, select **New topic**.
 
-   ![Select New topic at the top of the Topics page](media/topics-new-teams.png "Select New topic at the top of the Topics page")
+
+   :::image type="content" source="media/topics-new-teams.png" alt-text="Select New topic at the top of the Topics page":::
 
 1. Specify a name, description, and one or more trigger phrases for the topic.
 
-   A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. It's best to use short phrases and keywords rather than long sentences.
+   A trigger phrase is what someone might start a conversation with. It's best to use short phrases and keywords rather than long sentences.  
+   Remember you don't need to enter in all the different ways someone might ask a question - the bot can determine what the user meant (their "intent") and match it to the right topic.
 
-   > [!div class="mx-imgBorder"]
-   > ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers-teams.png "The Topic details page contains a name, description, and trigger phrases")
+
+   ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers-teams.png "The Topic details page contains a name, description, and trigger phrases")
 
 1. Select **Save topic** to add the topic to the topics list.
 
 
 ## Design the topic's conversation path
+
+A topic's conversation path is how the bot will respond to a person's questions and responses. It consists of special "nodes" that prompt the person with questions or answers. When the bot receives responses to the questions, it determines whether to provide an answer or look for another topic.
 
 1. In the topic details for the topic you want to edit, select **Go to authoring canvas**.
 
@@ -98,8 +102,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of adding a node](media/handoff-add-node-teams.png "Screenshot of adding a node")
+   ![Screenshot of adding a node](media/handoff-add-node-teams.png "Screenshot of adding a node")
 
 ### Insert nodes
 
@@ -108,25 +111,24 @@ When adding a node, you can choose from five options. Each option has a specific
 You can:
 
 - **Ask a question**
+- **Add a condition**
 - **Call an action**
 - **Show a message**
 - **Go to another topic**
 - **End the conversation**
 
-  > [!div class="mx-imgBorder"]
-  > ![When adding a node, you can choose from five options](media/topics-nodes-teams.png "When adding a node, you can choose from five options")
- 
-Additionally, you can **Branch based on a condition** when inserting a node between existing nodes:
 
-> [!div class="mx-imgBorder"]
-> ![Branch based on a condition](media/topics-nodes-branch-teams.png "Branch based on a condition")
+  :::image type="content" source="media/topics-nodes-teams.png" alt-text="When adding a node, you can choose from five options":::
+ 
+Additionally, you can **Branch based on a condition**:
+
+![Branch based on a condition](media/topics-nodes-branch-teams.png "Branch based on a condition")
 
 #### Ask a question:
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-   > [!div class="mx-imgBorder"]
-   > ![Add a new question mode](media/topics-question-teams.png "Add a new question mode")
+    ![Add a new question mode](media/topics-question-teams.png "Add a new question mode")
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
@@ -136,13 +138,13 @@ Additionally, you can **Branch based on a condition** when inserting a node betw
    
    For example, they could be multiple choice options, a number, or a specific string. 
    
-   To understand more about the different options in this flyout, see [Use entities in a conversation](advanced-entities-slot-filling-teams.md#use-entities-in-a-conversation).
+   To understand more about the different options, see [Use entities in a conversation](advanced-entities-slot-filling-teams.md#use-entities-in-a-conversation).
 
 1. Depending on what you choose in the **Identify** field, you can enter what options the user should have. 
    
    For example, if you select **Multiple choice options**, you can then enter the options the user can specify in the **Options for user** field. Each option is presented as a multiple choice button to the user, but users can also type in their answer in the bot.
 
-   The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response. You can add additional nodes to create branching logic, and specify what the bot should respond with for each variable.
+   The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate path for each user response. You can add additional nodes to create branching logic, and specify what the bot should respond with for each variable.
 
 1. You can [save the user response in a variable](authoring-variables-teams.md) to be used later. 
 
@@ -178,8 +180,7 @@ You can [call Power Automate Flows](advanced-flow-teams.md) by selecting **Call 
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
-    > [!div class="mx-imgBorder"]
-    > ![Go to another topic](media/topics-nodes-other-topic-teams.png "Go to another topic")
+    ![Go to another topic](media/topics-nodes-other-topic-teams.png "Go to another topic")
 
 #### End the conversation
 
@@ -189,28 +190,24 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
 
-    > [!div class="mx-imgBorder"]
-    > ![End the conversation](media/topics-nodes-end-teams.png "End the conversation")
+    ![End the conversation](media/topics-nodes-end-teams.png "End the conversation")
 
 1. To end with a customer satisfaction survey, select **End with survey**.
     
-    > [!div class="mx-imgBorder"]
-    > ![End with survey](media/topics-nodes-survey-teams.png "End with survey")
+    ![End with survey](media/topics-nodes-survey-teams.png "End with survey")
 
 1. Select **Transfer To Agent** to insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel-teams.md). You can also enter a private message to the agent.
 
-    > [!div class="mx-imgBorder"]
-    > ![Transfer To Agent](media/topics-nodes-handoff-teams.png "Transfer To Agent")
+    ![Transfer To Agent](media/topics-nodes-handoff-teams.png "Transfer To Agent")
 
 
 #### Branch based on a condition
 
 1. To add branching logic based on [variables](authoring-variables-teams.md), select **+** to add a node, and then **Add a condition** and **Branch based on a condition**.
 
-1. Choose the variable you want to use to determine if the bot conversation should branch at this point. For example, if you have set up [end-user authentication](advanced-end-user-authentication-teams.md), then you might want to specify a different message if the user is signed on (which may have happened earlier in the conversation).
+1. Choose the variable you want to use to determine if the bot conversation should branch at this point. 
 
-    > [!div class="mx-imgBorder"]
-    > ![Choose a variable](media/topics-branch-teams.png "Choose a variable")
+    ![Choose a variable](media/topics-branch-teams.png "Choose a variable")
 
 ### Delete nodes
 
@@ -218,13 +215,12 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Select **Delete**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Select the menu icon and then the delete button](media/topics-delete-teams.png "Select the menu icon and then the delete button")
+    ![Select the menu icon and then the delete button](media/topics-delete-teams.png "Select the menu icon and then the delete button")
 
 ## Test and publish your bot
 
 [Test your bot](authoring-test-bot-teams.md) when you make changes to your topics, to ensure everything is working as expected.
 
-Once you've finished designing and testing your bot, you can consider [publishing it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels-teams.md).
+Once you've finished designing and testing your bot, you can consider [publishing it](publication-fundamentals-publish-channels-teams.md) so other team members can use it.
 
 

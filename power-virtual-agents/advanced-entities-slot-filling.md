@@ -17,7 +17,7 @@ Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Web service (https://powerva.microsoft.com)](advanced-entities-slot-filling.md)
-> - [Teams (online or app)](/teams/advanced-entities-slot-filling-teams.md)
+> - [Teams (online or app)](teams/advanced-entities-slot-filling-teams.md)
 
 A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
 

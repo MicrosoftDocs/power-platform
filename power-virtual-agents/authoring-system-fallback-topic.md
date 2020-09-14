@@ -3,8 +3,7 @@ title: "Use a system fallback topic"
 description: "A system fallback topic can be triggered when the bot doesn't understand the user's questions."
 keywords: "PVA"
 ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -16,6 +15,10 @@ ms.collection: virtual-agent
 
 
 # Configure the system fallback topic in Power Virtual Agents
+
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](authoring-system-fallback-topic.md)
+> - [Teams (online or app)](teams/authoring-system-fallback-topic-teams.md)
 
 During a conversation, a Power Virtual Agents bot [triggers the appropriate topic based on the user's input](authoring-create-edit-topics.md). If the bot can't determine the user's intent, it prompts the user again. After two prompts, the bot escalates to a live agent through the system **Escalate** topic.
 
@@ -30,11 +33,9 @@ You customize these fallback behaviors by adding the system **Fallback** topic. 
 
 ## Add a system fallback topic
 
-1.    On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon.png "Settings icon"), and then select **System fallback**.
+1. On the top navigation pane, select **Settings** ![Settings icon](media/settings-icon.png "Settings icon"), and then go to the **System fallback** tab.
 
-  ![Open System fallback settings](media/settings-system-fallback.png "Open System fallback settings")
-
-2.    Select **"+Add"**.
+2. Select **"+Add"**.
 
   ![Open System fallback settings](media/settings-system-fallback-pane.png "Open System fallback settings")
  

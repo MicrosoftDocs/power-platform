@@ -16,6 +16,10 @@ ms.collection: virtual-agent
 # Key concepts - Authoring Power Virtual Agents bots
 
 
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](authoring-fundamentals.md)
+> - [Teams (online or app)](teams/authoring-fundamentals-teams.md)
+
 When you create bots with Power Virtual Agents, you author and edit topics. 
 
 Topics are discrete conversation paths that, when used together within a single bot, allow for users to have a conversation with a bot that feels natural and flows appropriately.

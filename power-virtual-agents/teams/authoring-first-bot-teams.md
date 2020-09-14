@@ -1,14 +1,14 @@
 ---
 title: "Create conversational chatbots in Teams"
-description: "You can easily create new bots using the bot-builder wizard in Power Virtual Agents."
-keywords: "PVA"
+description: "Create a new bot in the Power Virtual Agents app in Microsoft Teams."
+keywords: "PVA, create"
 ms.date: 8/3/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: onboarding, ceX
+ms.custom: onboarding, ceX, teams
 ms.collection: virtual-agent
 ---
 
@@ -58,21 +58,20 @@ When you create a bot, it has to go into a team - everyone in that team will be 
    >[!NOTE]
    >All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it.
 
-3. Enter a name for your bot. 
-
-   ![New bot dialog](media/create-new-bot-screen-teams.png)
-
-
-  
-1. Select **Create** to begin the bot-building process, which can take up to 15 minutes for the first bot you create in a team. The next time you create a bot it will take much less time.
+   If this is the first time a bot is being created in your team, you'll see a notice explaining that it will take some time (this could take from 1 to 10 minutes):
+   
+   :::image type="content" source="media/first-bot-delay.png" alt-text=" ":::
 
 
-During the building process, you'll see a notification at the top of the Power Virtual Agents portal indicating that the bot is still being built.
+1. Select **Create** to begin the initial bot-building process for your team, which can take a few minutes.
 
-You can go to some tabs while the bot is being built. When the bot is fully built, you'll see a notification and your bot will appear in the list of bots for your team. You'll then have full access to your bot.
- 
+   You can close the loading window, a notification will appear when the bot is ready:
 
+   :::image type="content" source="media/first-bot-notification.png" alt-text=" ":::
 
+1. After the building process is finished, you can give your bot a name and [choose the language](authoring-language-support-teams.md). Select **Create** to make your bot.
+
+   :::image type="content" source="media/first-bot-name.png" alt-text=" ":::
 
 
 
@@ -81,8 +80,13 @@ You can go to some tabs while the bot is being built. When the bot is fully buil
 
 You can delete bots to remove them from your team. 
 
+1. Click the settings cog icon at the bottom of the Power Virtual Agents side navigation pane.
 
-You'll be asked to confirm the deletion of the bot, after which all bot content is immediately deleted.
+    :::image type="content" source="media/settings-cog.png" alt-text="The settings icon is at the bottom of the side navigation pane and looks like a cog or gear":::
 
-If your license has expired, you can delete your bot(s) by selecting **Permanently delete your bots**.
+2. On the **General** tab, select **Delete bot**.
+
+You'll be asked to confirm the deletion of the bot by entering the bot's name, after which all bot content is immediately deleted.
+
+
 

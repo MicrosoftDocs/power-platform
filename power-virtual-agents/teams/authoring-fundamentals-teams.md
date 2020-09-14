@@ -15,18 +15,16 @@ ms.collection: virtual-agent
 
 # Key concepts - Authoring Power Virtual Agents bots in Teams
 
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../authoring-fundamentals.md)
+> - [Teams (online or app)](authoring-fundamentals-teams.md)
+
 
 When you create bots with Power Virtual Agents, you author and edit topics. 
 
 Topics are discrete conversation paths that, when used together within a single bot, allow for users to have a conversation with a bot that feels natural and flows appropriately.
 
-Creating a bot with Power Virtual Agents is easy to do with the [no-code authoring canvas](authoring-create-edit-topics-teams.md), and there are a number of ways you can [manage how topics interact](authoring-topic-management-teams.md), how you want the conversation to flow, and what it should feel like. 
 
-It's also easy to [test the bot](authoring-test-bot-teams.md) without having to fully deploy the bot whenever you make a small change.
-
-There are also [lesson topics](authoring-template-topics-teams.md) that guide you through topic authoring - from simple to complex scenarios, as well as default [system topics](authoring-create-edit-topics-teams.md#use-system-and-sample-topics).
-
-You can also [choose what language you want your bot to use](authoring-language-support-teams.md).
 
 ## Prerequisites
 
@@ -35,9 +33,10 @@ You can also [choose what language you want your bot to use](authoring-language-
 
 ## Accessibility
 
-Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot **Authoring canvas** is built to be accessible from the get-go. 
+Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot authoring canvas is built to be accessible from the get-go. 
 
 In general, using the authoring canvas follows standard navigation patterns. For complex scenarios, we've built keyboard shortcuts tailored to help users authoring content using keyboard navigation.
+In some instances, these shortcuts [may be overwritten by Microsoft Teams shortcuts](https://support.microsoft.com/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2).
 
 ###  Routing anchors
 Press enter or space on a route anchor to go into editing mode for that route. Once in the editing mode, you can tab to other node anchors. Once the anchor is selected, you can:
@@ -52,7 +51,8 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 - ```Alt + Shift + B``` will read out the target node.
 
 > [!NOTE] 
-> If you are using a screen reader, note that the sidebar menu entry labeled **Manage** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded. This is a known issue with our menu control which will be fixed at a future date.
+> If you are using a screen reader, note that the sidebar menu entry labeled **Manage** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded. 
+
 
 ## In this section
 
