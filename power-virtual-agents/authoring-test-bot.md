@@ -15,6 +15,10 @@ ms.collection: virtual-agent
 
 # Test your Power Virtual Agents bot
 
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](authoring-test-bot.md)
+> - [Teams (online or app)](teams/authoring-test-bot-teams.md)
+
 As you design your bot in Power Virtual Agents for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation. 
 
 To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.
@@ -51,10 +55,6 @@ You can return to the authoring canvas for the topic  at any time to revise it's
 ## Track through the topic's conversation path
 
 As you fine-tune your bot, it can be useful to enable tracking between topics so you can follow through the conversation path step by step.
-
-1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
-
-   ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu.png)
 
 
 1. At the top of the **Test bot** pane, set **Track between topics** to **On**.

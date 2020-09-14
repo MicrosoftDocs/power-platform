@@ -196,7 +196,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
     
     ![End with survey](media/topics-nodes-survey-teams.png "End with survey")
 
-1. Select **Transfer To Agent** to insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel-teams.md). You can also enter a private message to the agent.
+1. Select **Transfer To Agent** to insert a hand-off node that will link with your configured hand-off product. You can also enter a private message to the agent. This requires you to [use the Power Virtual Agents app online to configure it](../configure-generic-handoff.md).
 
     ![Transfer To Agent](media/topics-nodes-handoff-teams.png "Transfer To Agent")
 
