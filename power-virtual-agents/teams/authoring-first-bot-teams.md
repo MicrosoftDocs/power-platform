@@ -3,8 +3,7 @@ title: "Create conversational chatbots in Teams"
 description: "You can easily create new bots using the bot-builder wizard in Power Virtual Agents."
 keywords: "PVA"
 ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -15,9 +14,19 @@ ms.collection: virtual-agent
 
 # Create your first Power Virtual Agents bot in Teams
 
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../authoring-first-bot.md)
+> - [Teams (online or app)](authoring-first-bot-teams.md)
+
+
 You can create chatbots in the Power Virtual Agents app in Teams and then share them with other people in your team, company, or organization.
 
 The very first step is to add the Power Virtual Agents app. Then you can create bots.
+
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
 
 ## Add the Power Virtual Agents app in Microsoft Teams
@@ -26,72 +35,54 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 
     :::image type="content" source="media/first-bot-teams-apps.png" alt-text=" ":::
 
+2. In the search box, type *power virtual agents* and then select the tile that appears. Select **Add for me** in the description window that pops up. This adds the app to the navigation panel.
 
-- You put the bot into a team - everyone in that team will be able to see and use the bot (but you can share it with people in other teams later on)
-- 
+    :::image type="content" source="media/first-bot-add-app.png" alt-text=" ":::
 
-## Prerequisites
+3. To make it easier to get back to, right click on the Power Virtual Agents icon and select **Pin**.
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-
-## Create your first bot
+    :::image type="content" source="media/first-bot-pin.png" alt-text=" ":::
 
 
-1. Go to [Power Virtual Agents marketing page](https://go.microsoft.com/fwlink/?linkid=2106332) and select **Start free**. Sign in using your work account.
+## Create a bot
 
-   If you don't have a license, you can sign up for one by following the prompts.
-    
-1. In the **Create a new bot** dialog box, enter a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
+
+When you create a bot, it has to go into a team - everyone in that team will be able to see and use the bot (but you can share it with people in other teams later on). The first bot you create will take 5 to 10 minutes to build, but every bot after that will take much less time (around 1 or 2 minutes).
+
+
+1. Select the **Power Virtual Agents** icon to open the app.
+2. You can create a new bot two ways:
+   - Select **Start now** and then choose the team you want to use.
+   - Go to the **Chatbots** tab, select the team you want to use, and then **New chatbot**.
+
+   >[!NOTE]
+   >All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it.
+
+3. Enter a name for your bot. 
 
    ![New bot dialog](media/create-new-bot-screen-teams.png)
 
-1. Your bot is created in the [default Power Apps environment for your organization or tenant](environments-first-run-experience-teams.md). Usually this is sufficient, but if necessary you can choose a different environment by selecting **More options** to see a list of available environments.
+
   
-1. Select **Create** to begin the bot-building process, which can take up to 15 minutes for the first bot you create in an environment. Subsequent bots take less than a few minutes to create.
+1. Select **Create** to begin the bot-building process, which can take up to 15 minutes for the first bot you create in a team. The next time you create a bot it will take much less time.
 
 
 During the building process, you'll see a notification at the top of the Power Virtual Agents portal indicating that the bot is still being built.
 
-You can navigate to some tabs during this period, after which the banner will change and you'll have full access to the Power Virtual Agents portal. 
+You can go to some tabs while the bot is being built. When the bot is fully built, you'll see a notification and your bot will appear in the list of bots for your team. You'll then have full access to your bot.
  
 
 
 
 
-## Create additional bots
 
-If you have already created a bot, you can create a new bot by selecting the icon on the title bar to open the **Bots** pane and then selecting **New bot**.
-
-   ![New bot icon in title bar](media/first-bot-new-teams.png)
 
 ## Delete a bot
 
-You can delete bots to remove them from your environment. 
+You can delete bots to remove them from your team. 
 
-1. Select the bot icon on the top menu bar, and then select the bot you want to delete.
-
-2. Select the **Settings** icon on the top menu bar, then select **General settings**.
-
-   ![General settings](media/general-settings-teams.png)
-
-3. Select **Delete bot**.
 
 You'll be asked to confirm the deletion of the bot, after which all bot content is immediately deleted.
 
 If your license has expired, you can delete your bot(s) by selecting **Permanently delete your bots**.
 
-## Known issues with creating a bot
-
-When you are creating your bot, you might encounter the following issues.
-
-### Insufficient permissions for the selected environment
-
-In this case, you see this error: "You do not have permissions to any environments. Please get access from an administrator."
-
-You will need to [create a new environment](environments-first-run-experience-teams.md). Use that environment to create your bot.
-
-### The environment I created does not show up in the drop-down menu of Power Virtual Agents
-
-Your environment might not show up in the drop-down menu due to one of the following:
- - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
- - The environment is created in an unsupported region. Learn more about [supported data locations](data-location-teams.md).
