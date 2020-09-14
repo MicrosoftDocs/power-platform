@@ -121,9 +121,10 @@ To change settings for a Project Oakdale environment, go to **Environments** > [
 > [!div class="mx-imgBorder"] 
 > ![Project Oakdale environment settings](media/teams-environment-settings.png "Project Oakdale environment settings")
 
-<!-- 
-### Users + permissions -->
+ 
+### Users + permissions
 <!-- fwlink 2123134 2127762 -->
+
 
 ### Microsoft Teams Integration
 
