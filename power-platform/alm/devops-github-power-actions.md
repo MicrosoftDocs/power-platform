@@ -17,7 +17,7 @@ search.app:
   - D365CE
 ---
 
-# Preview: Microsoft Power Platform Build Tools tasks
+# Preview: GitHub Actions for the Power Platform
 [This topic is pre-release documentation and is subject to change.]
 
 The GitHub actions for the Power Platform are described in the following sections. Afterwards, we will showcase some example GitHub workflows using some of these actions. For information about the GitHub actions for the Power Platform and how to download them, see [GitHub actions for the Power Plaform](devops-github-power.md).
