@@ -35,4 +35,3 @@ The Power BI Dashboard has been updated to show Ui Flow inventory and run detail
 ## Custom Connector
 
 To help with the setup, the custom connector used in the [Audit Log components](../collect-audit-data.md) has been removed from the Audit Log solution and added to this solution.
-
