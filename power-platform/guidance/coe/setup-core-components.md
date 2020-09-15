@@ -54,7 +54,8 @@ This is the first step of the installation process and is required for every oth
     1. Select **Common Data Service**.
      ![Select the Common Data Service connector](media/msi-connection.png "Select the Common Data Service connector")
     1. Select **Create**.
-        ![Create a connection to the Common Data Service](media/msi-create.png "Create a connection to the Common Data Service")
+
+          ![Create a connection to the Common Data Service](media/msi-create.png "Create a connection to the Common Data Service")
     1. Complete these steps for these connectors:
         - Common Data Service
         - Common Data Service (current environment)
@@ -91,7 +92,7 @@ This is the first step of the installation process and is required for every oth
 ## Update environment variables
 
 >[!IMPORTANT]
-> Currently it is necessary to configure Environment Variables after the import from the solution, despite being promoted to do so during the solution import.
+> Currently it is necessary to configure Environment Variables after the import, despite being asked to do so during the solution import.
 
 The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
 
