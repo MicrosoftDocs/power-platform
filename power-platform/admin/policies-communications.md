@@ -87,8 +87,7 @@ Planned maintenance includes updates and changes to the service to provide incre
 ### Maintenance timeline
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
 
-> [!NOTE]
-> The following are service update times. Database updates run 24 hours after service updates.
+The following are service update times. Database updates run 24 hours after service updates.
 
 |Region | URL | Window (UTC) |
 | ------------- | -------------     | ------------- |
