@@ -6,7 +6,7 @@ manager: timrob
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 09/14/2020
 ms.author: astockli
 search.audienceType: 
   - admin
@@ -108,6 +108,11 @@ To limit the impact on users, the maintenance window is planned according to the
 
 ### Service Update Release Schedule
 To see the Service Update release schedule for your regions see our new [Released Versions](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#latest-version-availability) page.  
+
+> [!IMPORTANT]
+> Note the following:
+> - Service updates are scheduled on Saturday (18:00 UTC) to Sunday (3:00 UTC - early morning).
+> - Database updates run one day after service updates, between Sunday (18:00 UTC) to Monday (2:00 UTC - early morning).
 
 **Prior notification**  
   
