@@ -32,9 +32,9 @@ Each time you want to update your bot, you publish it again from within the Powe
 
 ## Publish the latest bot content
 
-You need to publish the bot at least once before your customers can interact with it or you can share it with your teammates. 
+You need to publish the bot at least once before you can share it with your teammates. 
 
-After the first publish, you can do subsequent publishes whenever you would like your customers to engage with the latest bot content.
+After the first publish, you can do subsequent publishes whenever you would like your customers to see the latest bot content.
 
 **Publish the latest bot content:**
 
@@ -59,31 +59,9 @@ Go to the [Configure the demo website and add the bot to your live website](publ
 > The demo website lets you share a URL with other members of your team, or other stakeholders who want to try out the bot. It's not intended for production uses (for example, you shouldn't use it directly with customers). <br/>
 > The test chat is intended for bot authors to test how conversation nodes flow and if there are errors when they are creating and testing their bot.
 
-## Configure channels
-
-After publishing your bot at least once, you can add channels to make the bot reachable by your customers. You can see what channels we currently support by selecting **Manage** and going to the **Channels** tab in the side navigation pane.
-
-![Channel settings](media/channel-channels-menu-teams.png)
-
-Each channel requires different steps and configurations, which can be found in the following topics:
-
-- [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels-teams.md)
-- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md)
-- [Add bot to Facebook](publication-add-bot-to-facebook-teams.md)
-- [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application-teams.md)
-- [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels-teams.md)
 
 
 
-## Channel experience reference table
-Different channels have different end-user experiences. The following table shows a high-level overview of the experiences for each channel. You can take the channel experiences into account when optimizing your bot content for specific channels.
-
- Experience | Website | Microsoft Teams | Facebook
- ---|---|---|---
- [Customer satisfaction survey](authoring-create-edit-topics-teams.md#insert-nodes) | Adaptive card | Text-only | Text-only
- [Multiple-choice options](authoring-create-edit-topics-teams.md#insert-nodes) | Supported | [Supported up to 6](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/)
- [Markdown](https://daringfireball.net/projects/markdown/) | Supported | Supported | [Partially supported](https://www.facebook.com/help/147348452522644?helpref=related)
- [Welcome message](authoring-create-edit-topics-teams.md#insert-nodes) | Supported | Supported | Not supported
 
  ## In this section
 

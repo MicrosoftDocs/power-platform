@@ -15,6 +15,10 @@ ms.collection: virtual-agent
 
 # Add bot to Microsoft Teams
 
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](publication-add-bot-to-microsoft-teams.md)
+> - [Teams (online or app)](teams/publication-add-bot-to-microsoft-teams-teams.md)
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can add your bot to Microsoft Teams so other members of your organization can interact with it. You will need to [publish the bot at least once](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content) before users can interact with the bot on Microsoft Teams.

@@ -15,74 +15,100 @@ ms.collection: virtual-agent
 
 # Add bot to Microsoft Teams in Teams
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](../publication-add-bot-to-microsoft-teams.md)
+> - [Teams (online or app)](publication-add-bot-to-microsoft-teams-teams.md)
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
-You can add your bot to Microsoft Teams so other members of your organization can interact with it. You will need to [publish the bot at least once](publication-fundamentals-publish-channels-teams.md#publish-the-latest-bot-content) before users can interact with the bot on Microsoft Teams.
+After you've built a bot, you'll want people to use it.
 
-You can also delete the bot from Microsoft Teams when you no longer want people to interact with it there, and you can distribute it as an app package within your Microsoft Teams tenant.
+The first step is to publish the bot, this makes it available to everyone in your orgnization as an app that they can find in the Teams app store.
 
-> [!NOTE]
-> By adding the bot to Microsoft Teams, some of your data, such as bot content and end-user chat content, will be shared with Microsoft Teams (meaning that your data will flow outside of your [organization’s compliance and geographic or regional boundaries](data-location-teams.md)). <br/>
-> For more information, see the [Microsoft Teams app privacy policy](/MicrosoftTeams/app-permissions).
+You can customize the way the bot looks on the Teams app store, and you can look at how other people have built their bots.
+
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
 
-## Add your bot to Microsoft Teams
 
-Before adding your bot to Microsoft Teams, you should [publish your bot at least once](publication-fundamentals-publish-channels-teams.md#publish-the-latest-bot-content). You will need to have [permission from your tenant admin to sideload a Teams app](/microsoftteams/teams-app-permission-policies) to complete the following instructions.
+## Publish a bot
 
-**Add bot to Microsoft Teams:**
+When you publish a bot, you make it available for people in your organization to install it into their Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
 
-1. Select **Manage** on the side navigation pane, and then go to the **Channels** tab.
+>[!IMPORTANT]
+>Make sure to **Publish** your bot if you make changes - otherwise everyone that is using the bot won't see your updates.  
+>It typically takes 15 minutes for published changes to be seen by everone.
 
-2. Select **Microsoft Teams** and then select **Add**.
 
-   ![Microsoft Teams channel](media/channel-teams-add-channel-teams.png)
+:::image type="content" source="media/" alt-text=" ":::
+publish-share-to-store:::image type="content" source="media/" alt-text=" ":::
 
-3. After Microsoft Teams is added successfully, copy the *App ID*. You will need this information for later.
 
-   ![Get Microsoft Teams channel App ID](media/channel-teams-get-app-id-teams.png)
+:::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
 
-4. [Install Microsoft Teams App Studio](/microsoftteams/platform/get-started/get-started-app-studio) and launch it in Microsoft Teams. Alternatively, you can also [directly create your application's manifest](/microsoftteams/platform/resources/schema/manifest-schema).
 
-5. In App Studio, select **Manifest editor** and then select **Create a new app**.
 
-   ![Create new Microsoft Teams app](media/channel-teams-create-new-teams-app-teams.png)
+1. Go to the **Chatbot** tab.
 
-6. Enter the necessary information about your bot and organization on the **App details** screen, and then select **Bots** on the side menu. 
+    :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="Alt text here.":::
 
-7. Select **Set up**, select **Existing bot**, and then enter the bot's name.
+3. Open the bot you want to publish.
+3. On the bot's homepage, select **Publish bot**. Select **Publish** and then **Publish** again.
 
-8. Select **Connect to a different bot id** and paste the *App ID* you copied earlier. Under **Scope**, select **Personal** and then select **Save**.
+    :::image type="content" source="media/publish-option.png" alt-text="Alt text here.":::
 
-   ![Set up a bot in Microsoft Teams](media/channel-teams-set-up-a-bot-teams.png)
 
-9. This step is only needed if your bot requires an end user to sign in. Select **Domains and permissions** and add `token.botframework.com` under the **Valid domains** section.
+4. Select **Open the bot** to have it go to the Teams app store, where it will automatically find and open the bot you just created. Click **Add for me** to have it added as an app in Teams. Note that this only shows the bot for you.
 
-   ![Microsoft Teams end user authentication](media/channel-teams-end-user-auth-teams.png)
 
-10. Select **Test and distribute** to install the app directly to your Microsoft Teams instance, or download the app package to share with your teammates.
+5. Select **Make the bot available to others** if you want to share it with other people.
 
-After installing the app package, you will automatically start a chat with the bot on Microsoft Teams.
+    This pops up a new window where you can customize how the bot will be shown to people searching for it on the Teams app store. 
+    You can also get a link to share directly with other people who want to use this bot: just select **Copy link**.
+
+6. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Teams app store.
+
+    :::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
+
+7. Select **More** to add additional information:  
+    - Developer name  
+    - Website
+    - Privacy Statement
+    - Terms of use
+
+   See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
+
+8. Select Save to return to screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
+9. Select **Make available in Teams** and then choose who can find and use your bot. By default this is everyone on your team. You can also go to the security settings to make additional changes.
+
+This allows other people in your Team to use your bot - but they can't edit or change the topics or answers. They can add the bot as an app by searching for it in the Teams app store, and they can see the list of topics and analytics for the bot, but they won't be able to edit anything.
+
+>[!WARNING]
+> or can they? can they only choose between team and org?
+
+
+
 
 
 ## Remove your bot from Microsoft Teams
 
-   > [!NOTE]
-   > You cannot remove your bot from Microsoft Teams if you have set up Dynamics 365 Omnichannel for Customer Service with your bot. <br/> 
-   > You must [remove the Omnichannel for Customer Service configuration](configuration-hand-off-omnichannel-teams.md#remove-omnichannel-for-customer-service-connection) before you can remove the Microsoft Teams publication channel. 
+You can remove the bot from your list of apps if you no longer want to use it. This doesn't delete the bot from the Power Virtual Agents app, it just means you can't access the bot as a separate app.
 
-**Remove bot from Microsoft Teams:**
+1. Right-click the bot's app icon.
 
-1. Select **Manage** on the side navigation pane, and then go to the **Channels** tab.
-
-2. Select **Microsoft Teams** and then select **Delete**.
+2. Select **Uninstall** and then select **Delete**.
 
    ![Delete Microsoft Teams channel](media/channel-teams-delete-channel-teams.png)
 
+
+>[!WARNING]
+>Does this still apply - the updating after 30 minutes etc?
+   
 ## Updating bot content for existing conversations on Teams
 
 To prevent disruptions during a chat between a user and the bot, existing conversations will not be updated to the latest bot content immediately after a new publish. Instead, the content will be updated after the conversation has been idle for 30 minutes. 
@@ -90,15 +116,3 @@ To prevent disruptions during a chat between a user and the bot, existing conver
 New conversations between user and the bot will have the latest published bot content.
 
 
-## Distribute your Microsoft Teams bot
-
-In addition to directly installing the Microsoft Teams app package, you can use Microsoft Teams to [distribute the app within your tenant](/microsoftteams/tenant-apps-catalog-teams) and [distribute the app publicly](/microsoftteams/platform/publishing/apps-publish). 
-
-
-## Known limitations
-- Currently only the **Personal** scope is supported for Microsoft Teams.
-- You will need to create a new bot if the Customer Satisfaction (CSAT) survey shows up as a card with missing icons for bots created during public preview to access the latest CSAT content.
-- The icon and name of your bot on Microsoft Teams is not customizable by Microsoft Teams App Studio when sideloaded and published through the Microsoft Teams Tenant Apps Catalog. The Microsoft Teams App Studio bot icon and name customization will be applied to bots that are published through AppSource. Learn more at the Microsoft Teams [Publishing checklist](/microsoftteams/platform/publishing/office-store-checklist).
-- Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
-- Currently, if your bot supports [end-user authentication](advanced-end-user-authentication-teams.md), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](/office/dev/store/validation-policies).
-- Removing the Microsoft Teams publication channel might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
