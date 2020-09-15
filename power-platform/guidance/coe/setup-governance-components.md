@@ -79,14 +79,8 @@ This step should be completed after you import the solution. Environment variabl
 
 All flows in this solution depend on all environment variables' being configured.
 
-1. You might see an error at the top of the Power Apps maker portal, notifying you that environment variables need to be configured.
-   > [!NOTE]
-   > For the Audit and Report Components solution, five environment variables need to be configured.
-   
-   ![Environment variables need to be updated](media/coe7.png "Environment variables need to be updated")
-
-   >[!TIP]
-   >To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
+>[!TIP]
+>To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
 
 1. Select **See Environment Variables** to set the values as described in the following table.
 
