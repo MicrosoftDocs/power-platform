@@ -85,14 +85,14 @@ This is the first step of the installation process and is required for every oth
 
 1. Update the environment variables. Environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. You can [update your environment variables](#update-environment-variables) after the import.
 
- ![Update the value for each environment variable.](media/msi-envvar.png "Update the value for each environment variable.")
+     ![Update the value for each environment variable.](media/msi-envvar.png "Update the value for each environment variable.")
 
- Configure the following values
+     Configure the following values
 
- | Name | Default Value |
- |------|---------------|
- |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
- |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
+     | Name | Default Value |
+     |------|---------------|
+     |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
+     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
 
 1. Select **Import**
 1. The import can take up to ten minutes to complete.
