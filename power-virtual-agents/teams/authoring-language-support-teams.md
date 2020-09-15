@@ -50,29 +50,29 @@ When you've created your own topic in the target language, you can test the bot 
 Power Virtual Agents supports languages in three stages. The stage indicates how well the bot can understand user input in that language, with general availability being the strongest, followed by preview, and then experimental.
 
 >[!IMPORTANT]
->Microsoft Teams offers additional language support. When you are using a language that is not in the supported list, the Power Virtual Agents app will default to English.
+>Microsoft Teams offers additional language support. When you are using a language that is not in the following supported list, the Power Virtual Agents app will default to English.
 
 | Language | Support |
 | ---- | -----------|  
 |Chinese (Simplified)        | Preview |
 |Chinese (Traditional)       | Preview |
-|Danish                      | Preview |
-|Dutch                       | Preview |
+|Danish                      | General availability |
+|Dutch                       | General availability |
 |English                     | General availability |
-|French                      | Preview |
-|German                      | Preview |
-|Hindi                       | Experimental |
-|Indonesian                  | Preview |
-|Italian                     | Preview |
-|Japanese                    | Preview |
-|Korean                      | Experimental |
-|Norwegian                   | Preview |
-|Polish                      | Experimental |
-|Portuguese (Brazilian)      | Preview |
-|Russian                     | Preview |
-|Spanish                     | Preview |
-|Swedish                     | Preview |
-|Turkish                     | Preview |
+|French                      | General availability |
+|German                      | General availability |
+|Hindi                       | Preview |
+|Indonesian                  | General availability |
+|Italian                     | General availability |
+|Japanese                    | General availability |
+|Korean                      | Preview |
+|Norwegian                   | General availability |
+|Polish                      | Preview |
+|Portuguese (Brazilian)      | General availability |
+|Russian                     | General availability |
+|Spanish                     | General availability |
+|Swedish                     | General availability |
+|Turkish                     | General availability |
 
 ### See also
 

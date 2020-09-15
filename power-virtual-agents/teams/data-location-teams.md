@@ -63,10 +63,14 @@ Data will be stored in the United States if a bot author's tenant location isn't
 |Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong) |
 |Japan | Japan East (Tokyo, Saitama), Japan West (Osaka) |
 |Canada | Canada Central (Toronto), Canada East (Quebec City) |
+|France | 
+|South America |
 
 
 ## Customer data  
 Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when:
+
+- The geo is South America.
 
 - Microsoft must provide customer support, troubleshoot the service, or comply with legal requirements. 
 
