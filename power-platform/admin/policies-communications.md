@@ -112,7 +112,7 @@ To see the Service Update release schedule for your regions see our new [Release
 > [!IMPORTANT]
 > Note the following:
 > - Service updates are scheduled on Saturday (18:00 UTC) to Sunday (3:00 UTC - early morning).
-> - Database updates run one day after service updates between Sunday (18:00 UTC) to Monday (2:00 UTC - early morning).
+> - Database updates run one day after service updates, between Sunday (18:00 UTC) to Monday (2:00 UTC - early morning).
 
 **Prior notification**  
   
