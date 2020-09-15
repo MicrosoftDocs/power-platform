@@ -188,6 +188,10 @@ Nodes that contain references to the deleted bot variable will tell you they con
 
 Topics with nodes that contain references to deleted bot variables might stop working. Ensure that you remove or correct all the topics that were using the deleted variable before publishing.
 
+## Authentication-related bot variables
+
+Depending on the bot's authentication setup, you will have a set of bot variables associated with the authentication provider available to you. For details about which set of variables area avilable and how to use them, please see the [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication) documentation.
+
 ## Related links
 
 - [Use variables](authoring-variables.md)
