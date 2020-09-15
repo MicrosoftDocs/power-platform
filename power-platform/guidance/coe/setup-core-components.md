@@ -80,8 +80,11 @@ This is the first step of the installation process and is required for every oth
 
 1. Review the information and select **Next**
 1. Establish connections to activate your solution. If you create a new connection you must Refresh. You will not lose your import progress.
- ![Establish connections to activate your solution](media/msi-import.png "Establish connections to activate your solution.")
+
+     ![Establish connections to activate your solution](media/msi-import.png "Establish connections to activate your solution.")
+
 1. Update the environment variables. Environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. You can [update your environment variables](#update-environment-variables) after the import.
+
  ![Update the value for each environment variable.](media/msi-envvar.png "Update the value for each environment variable.")
 
  Configure the following values
