@@ -14,6 +14,7 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+  - 
 ---
 # About the Project Oakdale environment
 
@@ -133,7 +134,7 @@ You can specify users in an environment to provide access to Project Oakdale env
 
 3. Select **Users + permissions**, and then select **Users**.
 
-   A list of enabled and disabled users who are members of the Project Oakdale environment appears. By default, [need info] are members.
+   A list of enabled and disabled users who are members of the Project Oakdale environment appears. <!-- By default, [need info] are members. -->
 
    > [!div class="mx-imgBorder"] 
    > ![List of users in Project Oakdale environment](media/teams-environment-user-list.png "List of users in Project Oakdale environment") 
