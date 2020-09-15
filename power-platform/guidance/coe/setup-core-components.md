@@ -91,7 +91,7 @@ This is the first step of the installation process and is required for every oth
 ## Update environment variables
 
 >[!IMPORTANT]
-> Currently it is mandatory to follow the below instructions to configure Environment Variables despite entering the Environment Variable values during the import.
+> Currently it is necessary to configure Environment Variables after the import from the solution, despite being promoted to do so during the solution import.
 
 The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
 

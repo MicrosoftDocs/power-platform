@@ -28,6 +28,9 @@ The Core Components solution is required for the Audit and Report Components sol
 1. Follow the instructions detailed under [Set up core components](setup-core-components.md).
 
 1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
+1. Create a new connection to the **Approvals** connector
+    ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
+1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 
 ## Create a SharePoint document library
 

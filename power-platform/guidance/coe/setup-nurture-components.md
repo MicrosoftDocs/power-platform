@@ -28,6 +28,9 @@ The Core Components solution is required for the Nurture Components solution, or
 1. Follow the instructions detailed under [Set up core components](setup-core-components.md).
 
 1. Import the *CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip* file.
+1. Create a new connection to the **RSS** connector, and set your Common Data Service connection
+    ![Import the Center of Excellence - Nurture components solution](media/msi-nurture.png "Import the Center of Excellence - Nurture components solution")
+1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 
 ## Create a SharePoint document library
 
