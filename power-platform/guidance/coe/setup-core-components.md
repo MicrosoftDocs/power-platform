@@ -54,7 +54,7 @@ This is the first step of the installation process and is required for every oth
     1. Select **Common Data Service**.
      ![Select the Common Data Service connector](media/msi-connection.png "Select the Common Data Service connector")
     1. Select **Create**.
-    ![Create a connection to the Common Data Service](media/msi-create.png "Create a connection to the Common Data Service")
+        ![Create a connection to the Common Data Service](media/msi-create.png "Create a connection to the Common Data Service")
     1. Complete these steps for these connectors:
         - Common Data Service
         - Common Data Service (current environment)
