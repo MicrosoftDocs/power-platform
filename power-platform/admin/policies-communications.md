@@ -87,6 +87,9 @@ Planned maintenance includes updates and changes to the service to provide incre
 ### Maintenance timeline
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
 
+> [!NOTE]
+> The following are service update times. Database updates run 24 hours after service updates.
+
 |Region | URL | Window (UTC) |
 | ------------- | -------------     | ------------- |
 | NAM           | crm.dynamics.com  | 2 AM to 11 AM |
@@ -109,10 +112,6 @@ To limit the impact on users, the maintenance window is planned according to the
 ### Service Update Release Schedule
 To see the Service Update release schedule for your regions see our new [Released Versions](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#latest-version-availability) page.  
 
-> [!IMPORTANT]
-> Note the following:
-> - Service updates are scheduled on Saturday (18:00 UTC) to Sunday (3:00 UTC - early morning).
-> - Database updates run one day after service updates, between Sunday (18:00 UTC) to Monday (2:00 UTC - early morning).
 
 **Prior notification**  
   
