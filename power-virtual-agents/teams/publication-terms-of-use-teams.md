@@ -38,7 +38,7 @@ Developer's name | *Powered by Power Virtual Agents* | You should include a name
 
 ## Empty privacy statement and terms of use
 
-If you do not enter links to a privacy statement or terms of use, then chatbot users are redirected here for the following information:
+
 
 
 >[!IMPORTANT]
@@ -46,3 +46,4 @@ If you do not enter links to a privacy statement or terms of use, then chatbot u
 >
 >For privacy policy or terms of use, contact the developer of this app.
 
+If you do not enter links to a privacy statement or terms of use, then chatbot users are redirected here.
