@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 09/14/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,15 +25,7 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
 
  When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)] and Dynamics 365 apps together, you can use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)]) presence and click-to-call from within Dynamics 365 apps.  
   
- Your organization must have one of the following products or subscriptions:  
-  
-- [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.md)]  
-  
-- [!INCLUDE[pn_skype_for_business_server_2015](../includes/pn-skype-for-business-server-2015.md)]  
-  
-- [!INCLUDE[pn_ms_lync_server_2013](../includes/pn-ms-lync-server-2013.md)]  
-  
-- [!INCLUDE[pn_MS_Lync_Server_2010](../includes/pn-ms-lync-server-2010.md)]  
+ Your organization must have a Skype for Business Online license.
   
   **Client requirements and configuration**  
   
