@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 09/15/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -116,7 +116,7 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 ## Project Oakdale environments settings and actions
 <!-- fwlink 2133713  -->
 
-To change settings for a Project Oakdale environment, go to **Environments** > [select an environment] > **Settings**.
+To change settings for a Project Oakdale environment, go to **Environments** > [select a Project Oakdale environment] > **Settings**.
 
 > [!div class="mx-imgBorder"] 
 > ![Project Oakdale environment settings](media/teams-environment-settings.png "Project Oakdale environment settings")
@@ -131,7 +131,7 @@ You can specify users in an environment to provide access to Project Oakdale env
 
 2. Select **Settings**.
 
-3. Select **Users + permissions**, and the select **Users**.
+3. Select **Users + permissions**, and then select **Users**.
 
    A list of enabled and disabled users who are members of the Project Oakdale environment appears. By default, [need info] are members.
 
