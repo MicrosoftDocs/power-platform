@@ -32,10 +32,45 @@ Power Virtual Agents supports the following authentication providers:
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
+## Chose the best authentication option
 
-## Register a new app with your identity provider
+Power Virtual Agents supports a set of different authentication options, each targeted to a different usage scenario. 
 
-You need to register a new app with your identity provider and get a Client ID and Client Secret before you can configure authentication in Power Virtual Agents. This section describes how to do that with the [Azure portal](https://portal.azure.com) for AAD. If you have a different identity provider, please consult its setup instructions.
+### No Authentication
+
+This configuration option provides no authentication for the bot. This is the standard configuration for bots that are not created from Teams. 
+
+### Only for Teams
+
+This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (AAD) authentication for Teams without the need for any manual configuration. It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in teams, unless there is a need for expanded scope. Only Teams channel is available once this configuration is selected. If you need other channels but still want authentication for your bot, you need to choose the “Manual” authentication option below. This is the standard configuration for bots that are created from Teams.
+
+The following variables will be available in the authoring canvas once “Only for Teams” option is selected:
+* ```UserID```
+* ```UserDisplayName```
+
+For more information about these variables, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication).
+
+AuthToken and IsLoggedIn variables are not available for this configuration option. If you need an authentication token, please use the Manual option below.
+
+### Manual (for any channel including Teams)
+
+You can configure any AAD, AADv2, or OAuth compatible identity provider with this option. The following variables will be available in the authoring canvas once manual authentication is configured:
+
+* ```UserID```
+* ```UserDisplayName```
+* ```AuthToken```
+* ```IsLoggedIn```
+
+For more information about these variables, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication).
+
+Once the configuration is saved, make sure to publish your bot so the changes take effect.
+
+> [!NOTE]
+> Authentication changes only take effect after the bot is published.
+
+## Register a new app with your identity provider when using Manual (for any channel including Teams)
+
+You need to register a new app with your identity provider and get a Client ID and Client Secret before you can configure a manual authentication in Power Virtual Agents. This section describes how to do that with the [Azure portal](https://portal.azure.com) for AAD. If you have a different identity provider, please consult its setup instructions.
 
 Make sure to configure the redirect URL to be `https://token.botframework.com/.auth/web/redirect`, and that the assigned API permissions and scopes for the app are the same permissions you need the bot to access.
 
@@ -65,42 +100,15 @@ Make sure to configure the redirect URL to be `https://token.botframework.com/.a
 2. Under the **Client secrets** section, select  **New client secret**. Enter a description (one will be provided if you leave this blank), and select the expiry period. Select the shortest period that will be relevant for the life of your bot.
 3. Select **Add** to create the secret. Take note of the secret's **Value** and store this in a temporary place (such as an open Notepad document), as you'll enter it in your bot's authentication settings.
 
-## Chose the best authentication option
-Power Virtual Agents supports a set of different authentication options, each targeted to a different usage scenario. 
-
-### No Authentication
-This configuration option provides no authentication for the bot. This is the standard configuration for bots that are not created from Teams. 
-
-### Only for Teams
-This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (AAD) authentication for Teams without the need for any manual configuration. It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in teams, unless there is a need for expanded scope. Only Teams channel is available once this configuration is selected. If you need other channels but still want authentication for your bot, you need to choose the “Manual” authentication option below. This is the standard configuration for bots that are created from Teams.
-
-The following variables will be available in the authoring canvas once “Only for Teams” option is selected:
-* ```UserID```
-* ```UserDisplayName```
-
-For more information about these variables, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication).
-
-AuthToken and IsLoggedIn variables are not available for this configuration option. If you need an authentication token, please use the Manual option below.
-
-### Manual (for any channel including Teams)
-
-You can configure any AAD, AADv2, or OAuth compatible identity provider with this option. The following variables will be available in the authoring canvas once manual authentication is configured:
-
-* ```UserID```
-* ```UserDisplayName```
-* ```AuthToken```
-* ```IsLoggedIn```
-
-For more information about these variables, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication).
-
 ## Configure authentication
 
 This section shows an example of AAD being configured as an OAuth provider. If you select another Service Provider option, you might have fewer fields to configure. If you are using AAD as a provider, we recommend using the “Azure Active Directory” or “Azure Active Directory v2” instead for easier configuration.
 
 1. Sign in to Power Virtual Agents. If you're using Azure AD as your identity provider, ensure you log in on the same tenant where you created the app registration.
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot. 
-1. Select **Manage** on the side navigation pane, and then go to the **Authentication** tab.
-
+1. Select **Manage** on the side navigation pane, and then go to the **Security** tab and select the **Authentication** card.
+ 
+   <!-- This image needs to be updated with the new UI -->
    ![Go to Manage and then Authentication](media/auth-manage-sm.png)
 
 2. Enter the information as described for each of the fields in the following table. The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
@@ -142,11 +150,13 @@ Once you have your authentication configured, make sure to go to Manage -> Secur
 
 ## Remove the authentication configuration
 
-1. Select **Manage** on the side navigation pane, and then go to the **Authentication** tab.
+1. Select **Manage** on the side navigation pane, and then go to the **Security** tab and cick on the **Authentication** card.
 
-2. Select **Delete connection**.
+2. Select **No authentication**.
 
-If authentication is being used in a topic, you'll be warned that the connection can't be deleted until references to it are removed. A list of the affected topics will be provided in the warning note.
+3. Publish the bot.
+
+If authentication variables are being used in a topic, they will become "Unknown" variables. Go to the Topic list page to see which topics have those error and fix them before publishing. 
 
 ### Permanently remove the authentication configuration
 
