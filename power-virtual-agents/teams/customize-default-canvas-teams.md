@@ -37,7 +37,8 @@ and the bot name at any time, and add a long and short description when you publ
     :::image type="content" source="media/custom-canvas-details-teams.png" alt-text=" ":::
 
 2. Make changes to the **Bot name** and icon.  
-    The icon needs to be an image type and can be any size - it will be automatically resized and positioned so it is in the middle of the colored square. We recommend you use a 32x32 pixel or 64x64 pixel .png file with transparency, so that way the color will come through the icon.
+    The icon needs to be an image type and can be any size - it will be automatically resized and positioned so it is in the middle of the colored square. 
+    We recommend you use a 32x32 pixel or 64x64 pixel .png file with transparency, so that way the color will come through the icon.
 
 
 3. When you're finished, select **Save** on the top menu bar.
