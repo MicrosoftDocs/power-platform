@@ -15,11 +15,14 @@ ms.collection: virtual-agent
 
 # Configure end-user authentication in Power Virtual Agents
 
-You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook. 
+You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with an Azure Active Directory (AAD), or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft account, or Facebook. 
 
 To learn how to add authentication to a bot topic, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md).
 
-Power Virtual Agents supports any identity provider that is compliant with the [OAuth2 standard](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+Power Virtual Agents supports the following authentication providers:
+* Azure Active Directory v1
+* Azure Active Directory v2
+* Any identity provider that is compliant with the [OAuth2 standard](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 > 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G2]
@@ -32,7 +35,7 @@ Power Virtual Agents supports any identity provider that is compliant with the [
 
 ## Register a new app with your identity provider
 
-You need to register a new app with your identity provider and get a Client ID and Client Secret before you can configure authentication in Power Virtual Agents. This section describes how to do that with the [Azure portal](https://portal.azure.com).
+You need to register a new app with your identity provider and get a Client ID and Client Secret before you can configure authentication in Power Virtual Agents. This section describes how to do that with the [Azure portal](https://portal.azure.com) for AAD. If you have a different identity provider, please consult its setup instructions.
 
 Make sure to configure the redirect URL to be `https://token.botframework.com/.auth/web/redirect`, and that the assigned API permissions and scopes for the app are the same permissions you need the bot to access.
 
@@ -62,8 +65,37 @@ Make sure to configure the redirect URL to be `https://token.botframework.com/.a
 2. Under the **Client secrets** section, select  **New client secret**. Enter a description (one will be provided if you leave this blank), and select the expiry period. Select the shortest period that will be relevant for the life of your bot.
 3. Select **Add** to create the secret. Take note of the secret's **Value** and store this in a temporary place (such as an open Notepad document), as you'll enter it in your bot's authentication settings.
 
+## Chose the best authentication option
+Power Virtual Agents supports a set of different authentication options, each targeted to a different usage scenario. 
+
+### No Authentication
+This configuration option provides no authentication for the bot. This is the standard configuration for bots that are not created from Teams. 
+
+### Only for Teams
+This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (AAD) authentication for Teams without the need for any manual configuration. It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in teams, unless there is a need for expanded scope. Only Teams channel is available once this configuration is selected. If you need other channels but still want authentication for your bot, you need to choose the “Manual” authentication option below. This is the standard configuration for bots that are created from Teams.
+
+The following variables will be available in the authoring canvas once “Only for Teams” option is selected:
+* ```UserID```
+* ```UserDisplayName```
+
+For more information about these variables, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication).
+
+AuthToken and IsLoggedIn variables are not available for this configuration option. If you need an authentication token, please use the Manual option below.
+
+### Manual (for any channel including Teams)
+
+You can configure any AAD, AADv2, or OAuth compatible identity provider with this option. The following variables will be available in the authoring canvas once manual authentication is configured:
+
+* ```UserID```
+* ```UserDisplayName```
+* ```AuthToken```
+* ```IsLoggedIn```
+
+For more information about these variables, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication).
 
 ## Configure authentication
+
+This section shows an example of AAD being configured as an OAuth provider. If you select another Service Provider option, you might have fewer fields to configure. If you are using AAD as a provider, we recommend using the “Azure Active Directory” or “Azure Active Directory v2” instead for easier configuration.
 
 1. Sign in to Power Virtual Agents. If you're using Azure AD as your identity provider, ensure you log in on the same tenant where you created the app registration.
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot. 
@@ -102,6 +134,10 @@ Authorization URL Query String Template | Query template for authorization, prov
 ## Test your configuration
 
 After the setup steps are complete, save your configuration and test it by [creating a new topic using authentication](advanced-end-user-authentication.md).
+
+## Set the appropriate access control for your end users
+
+Once you have your authentication configured, make sure to go to Manage -> Security -> Access and configure the appropriate access control for your bot. You can learn more about access control in the [“Assign access...” documentation](https://review.docs.microsoft.com/power-virtual-agents/teams/configuration-security-teams) documentation
 
 
 ## Remove the authentication configuration
