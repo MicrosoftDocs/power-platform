@@ -93,7 +93,7 @@ For users to access Project Oakdale environment apps, bots, and data, they shoul
 
 - [Be enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account).
 - Have an active Office 365 license in a plan that includes Teams. See [Licensing and restrictions](#licensing-and-restrictions).
-- Be a member of the Microsoft Teams team.
+- Be a member of the environment's security group.
 
 ### Conceptual model
 
@@ -134,16 +134,16 @@ You can specify users in an environment to provide access to Project Oakdale env
 
 3. Select **Users + permissions**, and then select **Users**.
 
-   A list of enabled and disabled users who are members of the Project Oakdale environment appears. <!-- By default, [need info] are members. -->
+   A list is presented of enabled and disabled users who are members of the Project Oakdale environment. 
 
    > [!div class="mx-imgBorder"] 
    > ![List of users in Project Oakdale environment](media/teams-environment-user-list.png "List of users in Project Oakdale environment") 
 
 4. You can select a user from the list to view user details and do simple user management such as enable, disable or delete a user.
 
-5. Select **+ Add user** to add a user to the selected Project Oakdale environment.
+5. Select **+ Add user** to add a tenant user to the selected Project Oakdale environment. 
 
-6. Enter a name or email address of the user to add to the Project Oakdale environment, and then select **Add**.
+6. Enter a name or email address of a user who meets the [User access requirements](#user-access-requirements) to add the user to the Project Oakdale environment, and then select **Add**.
 
    > [!div class="mx-imgBorder"] 
    > ![Add a user](media/teams-environment-add-user.png "Add a user") 
