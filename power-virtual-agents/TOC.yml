@@ -224,6 +224,8 @@
       items:
        - name: Key concepts - Configuration
          href: teams/configuration-fundamentals-teams.md
+       - name: Assign access and change security options
+         href: configuration-security-teams.md
        - name: Configure end-user authentication
          href: teams/configuration-end-user-authentication-teams.md
        - name: Configure single sign-on

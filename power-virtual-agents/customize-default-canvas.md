@@ -15,9 +15,11 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas
 
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](customize-default-canvas.md)
+> - [Teams (online or app)](teams/customize-default-canvas-teams.md)
 
-
-After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
+After you create and [publish a bot](publication-fundamentals-publish-channels-teams.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels-teams.md).
 
 
 The default look and feel of the bot is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
@@ -29,12 +31,12 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 2. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
 
-You can also combine the customized canvas with [configuring your bot to automatically start the conversation](configure-bot-greeting.md).
+You can also combine the customized canvas with [configuring your bot to automatically start the conversation](configure-bot-greeting-teams.md).
 
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
 >[!IMPORTANT]
 >You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents service. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
@@ -44,7 +46,7 @@ You can also combine the customized canvas with [configuring your bot to automat
 
 To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details. 
 
-You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters). 
+You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application-teams.md#retrieve-your-power-virtual-agents-bot-parameters). 
 
 ## Customize the default canvas (simple)
 
@@ -52,7 +54,7 @@ You can configure how the chat canvas looks with some simple CSS and JavaScript 
 
 First, you need to configure where you're deploying your bot canvas.
 
-1.	[Create and publish a bot](fundamentals-get-started.md).
+1.	[Create and publish a bot](fundamentals-get-started-teams.md).
 
 2.	Copy and paste the HTML code below and save it as *index.html*.  
     You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
@@ -208,7 +210,7 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
     <body>
         <div id="heading">
              <!-- Change the h1 text to change the bot name -->
-             <h1><img src="contosobot.png"> Contoso Bot Name</h1>
+             <h1><img src="contosobot-teams.png"> Contoso Bot Name</h1>
         </div>
 
     ```
@@ -229,11 +231,11 @@ We recommend starting with one of these samples custom-built to work with Power 
 
 * [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
 
-  ![Full bundle custom canvas](media/custom-canvas-full-bundle.png)
+  ![Full bundle custom canvas](media/custom-canvas-full-bundle-teams.png)
 
 * [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Power Virtual Agents. For example:
 
-  ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload.png)
+  ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload-teams.png)
 
 Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Bot Framework.
 

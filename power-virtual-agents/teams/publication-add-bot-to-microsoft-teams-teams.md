@@ -25,31 +25,24 @@ Select the version of Power Virtual Agents you're using here:
 
 After you've built a bot, you'll want people to use it.
 
-The first step is to publish the bot, this makes it available to everyone in your orgnization as an app that they can find in the Teams app store.
-
-You can customize the way the bot looks on the Teams app store, and you can look at how other people have built their bots.
+The first step is to publish the bot, where you can also customize the way the bot looks on the Teams app store. Next, you need to share your bot with Microsoft Teams Users, during which you can choose whether to share in just your own team or in your entire organization.
 
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-
+- Your organization’s [Microsoft Teams app permission policies](/microsoftteams/teams-app-permission-policies) will need to allow Power Platform apps to be added to teams before you or other users can find and add your to Teams.
 
 
 ## Publish a bot
 
 When you publish a bot, you make it available for people in your organization to install it into their Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
 
+You should publish your bot and add it to your own version of Teams before sharing it with others.
+
 >[!IMPORTANT]
 >Make sure to **Publish** your bot if you make changes - otherwise everyone that is using the bot won't see your updates.  
->It typically takes 15 minutes for published changes to be seen by everone.
-
-
-:::image type="content" source="media/" alt-text=" ":::
-publish-share-to-store:::image type="content" source="media/" alt-text=" ":::
-
-
-:::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
+>It typically takes 15 minutes for published changes to be seen by everyone.
 
 
 
@@ -58,38 +51,161 @@ publish-share-to-store:::image type="content" source="media/" alt-text=" ":::
     :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="Alt text here.":::
 
 3. Open the bot you want to publish.
-3. On the bot's homepage, select **Publish bot**. Select **Publish** and then **Publish** again.
+3. On the side navigation pane, select **Publish**. Select **Publish** and then **Publish** again.
 
     :::image type="content" source="media/publish-option.png" alt-text="Alt text here.":::
 
 
 4. Select **Open the bot** to have it go to the Teams app store, where it will automatically find and open the bot you just created. Click **Add for me** to have it added as an app in Teams. Note that this only shows the bot for you.
 
+This allows other people in your Team to use your bot - but they can't edit or change the topics or answers. They can add the bot as an app by searching for it in the Teams app store, and they can see the list of topics and analytics for the bot, but they won't be able to edit anything.
 
-5. Select **Make the bot available to others** if you want to share it with other people.
+## Share the bot with your Team
+
+Once you've published your bot, you'll want to share it with other Microsoft Teams users.
+
+You can share your bot with your team by adding it to the Microsoft Teams apps store, **Built for *your-organization-name*** > **Built by your colleagues** section. Only your teammates will find the bot there.
+
+:::image type="content" source="media/publish-teams-your-colleagues.png" alt-text=" ":::
+
+
+### Add the bot to the Built by your colleague section
+
+
+
+
+1. Go to the **Chatbot** tab.
+
+    :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="Alt text here.":::
+
+3. Open the bot you want to publish.
+3. On the side navigation pane, select **Publish**.
+
+5. Select **Make the bot available to others** 
 
     This pops up a new window where you can customize how the bot will be shown to people searching for it on the Teams app store. 
     You can also get a link to share directly with other people who want to use this bot: just select **Copy link**.
 
-6. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Teams app store.
+    >[!NOTE]
+    >Only users who can access the bot can use the installation link to install the bot. You can configure who access it in the [security settings](configuration-security-teams.md) for the bot.
 
-    :::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
+    1. Select **Edit details** to change the bot's icon and color. You can [change the descriptions in the **Manage** menu](customize-default-canvas-teams.md). These will be shown in the search results in the Teams app store.
 
-7. Select **More** to add additional information:  
-    - Developer name  
-    - Website
-    - Privacy Statement
-    - Terms of use
+        :::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
 
-   See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
+    2. Select **More** to add additional information:  
+        - Developer name  
+        - Website
+        - Privacy Statement
+        - Terms of use
 
-8. Select Save to return to screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
-9. Select **Make available in Teams** and then choose who can find and use your bot. By default this is everyone on your team. You can also go to the security settings to make additional changes.
+       See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
 
-This allows other people in your Team to use your bot - but they can't edit or change the topics or answers. They can add the bot as an app by searching for it in the Teams app store, and they can see the list of topics and analytics for the bot, but they won't be able to edit anything.
+    3. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
 
->[!WARNING]
-> or can they? can they only choose between team and org?
+9. Select **Make available in Teams** and then choose who can find and use your bot. By default this is everyone on your team. You can also go to the [security settings to make additional changes](configuration-security-teams.md).
+
+>[!IMPORTANT]
+>Updates to the bot's icon and color may take up to 24 hours to show on bots that are already published and shared.
+
+### Remove the bot from the Built by your colleagues section
+
+
+You can remove the bot from showing in Microsoft Teams apps store, **Built for *your-organization-name*** > **Built by your colleagues** section. This does not impact users who have already installed the bot.
+
+
+1.	Go to Publish on the left side navigation pane
+2.	Select Share the bot
+3.	Select Remove under Share with my team section
+
+## Share the bot with your organization
+
+
+You can share the bot with your organization by submiting your bot for admin approval to be featured in the **Built for *your-organization-name*** > **Built by your org** section.
+
+
+:::image type="content" source="media/publish-teams-your-org.png" alt-text=" ":::
+
+
+Admins can also preinstall and pin the bot for users in the organization so they can access it directly from their left app bar in Microsoft Teams.  
+
+
+Before submitting the bot to your organization, make sure:
+
+- Your bot is ready for release and in compliance with company standards, rules and policies.
+- You coordinate with your teammates: once the bot have been submitted it can't be re-submitted by a different user until the previous submission is approved or rejected by an admin.
+- You have removed the bot, if applicable, from the **Built by your colleagues** section. Submitting your bot for admin approval could result in your bot showing up in two places. See the instructions on [removing your bot](#remove-the-bot-from-teams-apps-built-by-your-colleagues-section) for details. 
+
+>[!NOTE]
+>Once a bot is approved by an admin, the bot availability in the **Built by your org** section will be completely managed by your admin. Only an admin can remove the bot from the **Built by your org** section.
+
+
+### Submit for the Built by your org section**
+
+1.	Go to Publish on the left side navigation pane
+2.	Select Share the bot
+3.	Confirm the bot is not shared with your team
+4.	Select Submit for admin approval
+5.	Read the check list and select Submit for admin approval
+6.	Fill in the information for your bot. 
+**Note**
+Make sure you review the content and is ready for admin to review.  You will need to submit new requests to the admin to update icon and descriptions for bots that were previously approved.  Once approved, all new and existing users of the bot in Teams will receive the update.
+This only applies to the bot details.  You can continue to make content update to your bot by publishing the latest content without needing to re-submit to admin.
+**Note**
+7.	Select Submit for admin approval
+8.	Confirm the bot will allow everyone in the organization to chat with it and select Yes
+9.  
+**Note**
+After submitting the bot for admin approval, you should not change the bot’s access setting to be less than everyone in your organization.  This will result in users in the organization unable to chat with the bot after installing it from Teams Apps published by your org section.
+**Note**
+
+9.	Wait for admin’s approval.  You can check the latest status by selecting Refresh.
+10.	After admin approves the bot, the status will be updated to approved.  You can directly open the bot and share the approved version’s link with other user.
+Download the bot’s Teams app manifest
+You can download the bot’s Teams app manifest to make detail changes to the manifest directly and share with your admin or users in the tenant. 
+1.	Go to Publish on the left side navigation pane
+2.	Select Share the bot
+3.	Select Submit for admin approval
+4.	Select Download manifest
+5.	Fill in the information for your bot
+6.	Select Download manifest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
