@@ -3,8 +3,7 @@ title: "Overview"
 description: "Power Virtual Agents lets you create chatbots, both in a dedicated online web service and as a Microsoft Teams app."
 keywords: "PVA, portal, online, teams"
 ms.date: 8/3/2020
-ms.service:
-  - "dynamics-365-ai"
+ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt

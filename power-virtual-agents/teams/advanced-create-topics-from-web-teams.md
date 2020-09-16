@@ -3,8 +3,7 @@ title: "Get topic suggestions from support pages in Teams"
 description: "Use existing help and support pages to quickly generate new topics for your Power Virtual Agents bot."
 keywords: "PVA"
 ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt

@@ -3,8 +3,7 @@ title: "Check your chatbot with the Test bot"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
 keywords: "PVA"
 ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt

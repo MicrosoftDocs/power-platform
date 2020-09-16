@@ -3,8 +3,7 @@ title: "Analyze topic performance in Teams"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
 keywords: "PVA"
 ms.date: 8/3/2020
-ms.service:
-  - "dynamics-365-ai"
+ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt

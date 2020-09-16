@@ -3,8 +3,7 @@ title: "Include information about the developer of your bot in Teams"
 description: "You need to include certain information about yourself or the developer of your bot when you publish it in Teams, including a privacy statement and terms of use, as well as contact information."
 keywords: "Teams, privacy, terms of use, PVA"
 ms.date: 8/31/2020
-ms.service:
-  - dynamics-365-ai
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt

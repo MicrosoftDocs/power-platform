@@ -3,8 +3,7 @@ title: "Use hand-off to live agent in Teams"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
 keywords: "PVA"
 ms.date: 8/3/2020
-ms.service:
-  - "dynamics-365-ai"
+ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw 
 ms.author: iawilt

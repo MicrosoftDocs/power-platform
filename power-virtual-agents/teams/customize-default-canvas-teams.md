@@ -3,8 +3,7 @@ title: "Customize how the bot looks to users in Teams"
 description: "Change the name, icon, and color of your bot without needing to know any code."
 keywords: "PVA"
 ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt

@@ -3,8 +3,7 @@ title: "Configuration of advanced features in Teams"
 description: "Incorporate advanced features into your bot, such as sign-in, live agent transfer, custom appearances, dynamic cards, and file uploads."
 keywords: "PVA"
 ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
