@@ -75,7 +75,7 @@ You can also add the bot to your Power Platform admin center.
 
     ![Select only the src URL](media/channel-custom-website-url-teams.png)
 
-1. Go to Power Apps Portal Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your app by selecting **Components** on the side navigation pane, and then **IFrame**.
+1. Go to Power Apps Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your app by selecting **Components** on the side navigation pane, and then **IFrame**.
 
     ![Add IFrame to Power Apps](media/channel-custom-website-portal-iframe-teams.png)
 
