@@ -111,7 +111,7 @@ You can share your bot with your team by adding it to the Microsoft Teams apps s
 ### Remove the bot from the Built by your colleagues section
 
 
-You can remove the bot from showing in Microsoft Teams apps store, **Built for *your-organization-name*** > **Built by your colleagues** section. This does not impact users who have already installed the bot.
+You can remove the bot from showing in the **Built by your colleagues** section. This does not impact users who have already installed the bot.
 
 
 1.	Go to Publish on the left side navigation pane
@@ -147,6 +147,7 @@ Before submitting the bot to your organization, make sure:
     :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="Alt text here.":::
 
 3. Open the bot you want to publish.
+
 3. On the side navigation pane, select **Publish**.
 
 2. Select Share the bot
@@ -192,7 +193,7 @@ You can download the bot’s Teams app manifest to make detail changes to the mani
 
 ## Disconnecting your bot from Teams
 
-You can take your bot offline so users can no longer chat with the bot in Teams. This means the bot won't respond to anyone who tries to chat with it, and will will disrupt anyone who is using the bot. You should thoroughly consider the need to disconnect your bot before you do so.
+You can take your bot offline so users can no longer chat with the bot in Teams. This means the bot won't respond to anyone who tries to chat with it, and will disrupt anyone who is using the bot. You should thoroughly consider the need to disconnect your bot before you do so.
 
 For bots that are shared with a teammate, they will no longer find the bot in the Microsoft Teams apps store **Built by your colleague** section or be able to install it from the shared link.
 

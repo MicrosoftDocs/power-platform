@@ -15,6 +15,10 @@ ms.collection: virtual-agent
 
 # Use variables
 
+> [!div class="op_single_selector"]
+> - [Web service (https://powerva.microsoft.com)](authoring-variables.md)
+> - [Teams (online or app)](teams/authoring-variables-teams.md)
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Variables let you save responses from your customers in a conversation with your bot so that you can reuse them later in the conversation. 

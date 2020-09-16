@@ -58,18 +58,21 @@ When you create a bot, it has to go into a team - everyone in that team will be 
    >[!NOTE]
    >All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it.
 
-   If this is the first time a bot is being created in your team, you'll see a notice explaining that it will take some time (this could take from 1 to 10 minutes):
+If this is the first time a bot is being created in your team, you'll see a notice explaining that it will take some time (this could take from 1 to 10 minutes):
    
    :::image type="content" source="media/first-bot-delay.png" alt-text=" ":::
 
 
 1. Select **Create** to begin the initial bot-building process for your team, which can take a few minutes.
 
-   You can close the loading window, a notification will appear when the bot is ready:
+   You can close the loading window, a notification will appear as a pop-up and also in your list of notifications when the bot is ready:
 
    :::image type="content" source="media/first-bot-notification.png" alt-text=" ":::
 
-1. After the building process is finished, you can give your bot a name and [choose the language](authoring-language-support-teams.md). Select **Create** to make your bot.
+   :::image type="content" source="media/first-bot-alert-notification.png" alt-text=" ":::
+
+
+1. After the building process is finished, you can create a bot in your team. In the list of teams, select your team and then **New chatbot** to make your bot.
 
    :::image type="content" source="media/first-bot-name.png" alt-text=" ":::
 
