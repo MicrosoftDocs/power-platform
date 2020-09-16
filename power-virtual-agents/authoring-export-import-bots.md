@@ -206,6 +206,8 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
     ![List of bots and environments in Power Virtual Agents](media/export-bot-picker.png "List of bots and environments in Power Virtual Agents")
 
+>[!IMPORTANT]
+>You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
 
 ## Upgrade or update a solution with a chatbot
 
