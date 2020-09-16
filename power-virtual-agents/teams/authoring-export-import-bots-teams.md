@@ -57,7 +57,7 @@ You use solutions to export bots from one environment and import them into anoth
 
 2. Under **Export/Import bot**, select **Go to Power Apps Solutions**.
  
-    ![Link to the Power Apps admin center from Power Virtual Agents](media/export-settings-powerapps-teams.png "Link to the Power Apps admin center from Power Virtual Agents")
+    ![Link to the Power Platform admin center from Power Virtual Agents](media/export-settings-powerapps-teams.png "Link to the Power Platform admin center from Power Virtual Agents")
 
 3. Sign in to Power Apps and select **New solution**. Enter the information for each of the fields as described in this table, then select **Create**.
 
