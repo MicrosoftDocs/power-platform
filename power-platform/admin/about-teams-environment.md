@@ -134,12 +134,10 @@ You can specify users in an environment to provide access to Project Oakdale env
 
 3. Select **Users + permissions**, and then select **Users**.
 
-   A list is presented of enabled and disabled users who are members of the Project Oakdale environment. 
+4. You'll see a list of enabled and disabled users who are members of the Project Oakdale environment. You can select a user from the list to view user details and do simple user management such as enable, disable or delete a user.
 
    > [!div class="mx-imgBorder"] 
    > ![List of users in Project Oakdale environment](media/teams-environment-user-list.png "List of users in Project Oakdale environment") 
-
-4. You can select a user from the list to view user details and do simple user management such as enable, disable or delete a user.
 
 5. Select **+ Add user** to add a tenant user to the selected Project Oakdale environment. 
 
