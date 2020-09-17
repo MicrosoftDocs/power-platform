@@ -33,7 +33,7 @@ For example, a user might type "Open hours" into your bot—the AI will be able 
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you are ready to deploy it without having to exit the Power Virtual Agents portal.
 
 > [!Note]
-> You can have up to 1,000 topics in a bot.
+> You can have up to 1,000 topics in a bot and up to 30 nodes in a topic.
 
 
 ## Prerequisites

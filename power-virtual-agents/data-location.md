@@ -13,6 +13,12 @@ ms.cusom: "multi-geo, gdpr, ce06102020"
 
 # Regional settings and data locations for organizations using Power Virtual Agents
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](data-location.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/data-location-teams.md)
+
 Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to live.
 
 ## Prerequisites
@@ -62,10 +68,14 @@ Data will be stored in the United States if a bot author's tenant location isn't
 |Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong) |
 |Japan | Japan East (Tokyo, Saitama), Japan West (Osaka) |
 |Canada | Canada Central (Toronto), Canada East (Quebec City) |
+|France | France Central (Paris), France South (Marseille) |
+|South America | Brazil South (Sao Paulo State) &nbsp;(As there is only one region in Brazil, customer data in Brazil South may be replication to South Central US (Texas) for disaster recovery purposes)
 
 
 ## Customer data  
 Microsoft won't transfer customer data outside the selected Azure geographic location (geos) for Power Virtual Agents except when:
+
+- The geo is South America.
 
 - Microsoft must provide customer support, troubleshoot the service, or comply with legal requirements. 
 

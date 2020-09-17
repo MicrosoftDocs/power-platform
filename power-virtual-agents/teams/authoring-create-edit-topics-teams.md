@@ -38,7 +38,7 @@ The bot then asks which store the customer is interested in, and displays the ho
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you're ready to share it.
 
 > [!Note]
-> You can have up to 1,000 topics in a bot.
+> You can have up to 1,000 topics in a bot and up to 30 nodes in a topic.
 
 
 ## Prerequisites

@@ -15,6 +15,11 @@ ms.collection: virtualagent
 
 # Configure your bot to start the conversation automatically
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](configure-bot-greeting.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/configure-bot-greeting-teams.md)
 
 By default, chatbots created with Power Virtual Agents and [published to a website](publication-connect-bot-to-web-channels.md) will load without a greeting, and will passively wait for the user to start the conversation.
 

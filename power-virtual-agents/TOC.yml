@@ -228,13 +228,13 @@
          href: configuration-security-teams.md
        - name: Configure end-user authentication
          href: teams/configuration-end-user-authentication-teams.md
-       - name: Configure single sign-on
-         href: teams/configure-sso-teams.md
+#       - name: Configure single sign-on
+#         href: teams/configure-sso-teams.md
 #       - name: Configure hand-off to a generic engagement hub
 #         href: teams/configure-generic-handoff-teams.md
 #       - name: Configure hand-off to Omnichannel for Customer Service
 #         href: teams/configuration-hand-off-omnichannel-teams.md
-       - name: Configure the bot to automatically start the conversation
+       - name: Configure how the bot starts the conversation
          href: teams/configure-bot-greeting-teams.md
        - name: Customize the look and feel of the bot
          href: teams/customize-default-canvas-teams.md
