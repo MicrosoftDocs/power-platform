@@ -20,8 +20,6 @@ The service team regularly sends email notifications to the administrators in yo
 - People outside of your organization, such as your partners.  
 - People inside and outside of your company.  
  If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your admin. If you’re not sure who your admin is, see: [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
- 
- <br /><br />
 
 For a complete overview of Cmdlets click [here](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell)
 
