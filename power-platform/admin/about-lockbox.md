@@ -17,65 +17,75 @@ search.app:
 ---
 # Power Platform Lockbox 
 
-Power Platform Lockbox provides an interface for customers to review and approve or reject customer data access requests. It is used in cases where a Microsoft engineer needs to access customer data during a support request.
+Lockbox for Power Platform provides an interface for customers to review and approve or reject customer data access requests. It is usually used in cases where a Microsoft engineer needs to access customer data to resolve a support request. 
 
-This article covers how Power Platform Lockbox requests are initiated, tracked, and stored for later reviews and audits.
+## Summary
 
-## Things to note
+Lockbox for Power Platform allows an organization to define which [Common Data Service databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) and Project Oakdale databases need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. See Configuring lockbox policy to learn more. 
 
-Be aware of the following regarding Power Platform Lockbox.
+Whenever Microsoft attempts to access data that is stored in a database that is protected by lockbox, a lockbox request will be sent to the global administrators and users who are assigned the [Customer Lockbox access approver](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#customer-lockbox-access-approver) admin role. See Reviewing lockbox requests to learn more. 
 
-- We only protect Data Flex Pro databases.
-- There are emergency scenarios where Power Platform Lockbox can be circumvented. See [Exclusions](#exclusions).
-- Users can act upon requests for environments they don't have access to.
-- For Private Preview: Copying an environment with data protected with Power Platform Lockbox to another environment results in the data in the environment copied to no longer being protected with Power Platform Lockbox.
+Once access is granted to Microsoft, any action taking place in the database during the elevated access period is recorded and made available to the organization as SQL audit logs. These can be exported to the customer’s own data lake. See Auditing data access to learn more. 
+
+> [!NOTE]
+> Lockbox only protects Common Data Service databases and Project Oakdale databases. Customer data stored in other data stores is currently out of scope.
 
 ## Workflow
 
 1. Your organization has an issue with Power Platform requiring opening a support request with Microsoft Support.
 
-2. A Microsoft support engineer reviews the service request and determines a need to access the organization's tenant to repair the issue.
+2. A Microsoft support engineer reviews the support request and attempts to troubleshoot the issue by using standard tools and telemetry. If the troubleshooting fails, the support engineer can request elevated permissions by using a Just-In-Time (JIT) access service. 
 
-3. The Microsoft support engineer logs into the Power Platform Lockbox request tool and makes a data access request that includes the organization's tenant name, service request number, and the estimated time the engineer needs access to the data.
+3. After the access request is submitted by the Microsoft support engineer, the Just-In-Time access service evaluates the request by considering factors such as: 
 
-4. After a Microsoft Support manager approves the request, Power Platform Lockbox sends the designated approver at your organization an email notification about the pending access request from Microsoft.
+   - The scope of the resource 
+   - Whether the requester is an isolated identity or using multi-factor authentication 
+   - Permissions levels 
 
-   [screenshot needed]
+   Based on the JIT rule, this request may include an approval from Internal Microsoft Approvers. For example, the approver might be the Customer support lead or the DevOps Manager. 
 
-   Anyone who is a tenant admin or assigned the **Customer Lockbox access approver** role in the Power Platform admin center can approve Power Platform Lockbox requests.
+4. When the request requires direct access to customer data, a lockbox request is generated if the database is protected according to the organization’s lockbox policy. An email notification is sent to the designated approvers about the pending data access request from Microsoft. 
 
-5. The approver signs in to the Power Platform admin center and approves the request. This step triggers the creation of an audit record available by searching the audit log. For more information, see Auditing Customer Lockbox requests.
+   :::image type="content" source="media/lockbox-sample-approval.png" alt-text="Sample lockbox approval ":::
 
-   If you reject the request or don't approve the request within 12 hours, the request expires and no access is granted to the Microsoft engineer.
+5. The approver signs in to the Power Platform admin center and approves the request. If the request is rejected or if it is not approved within 12h, it expires, and no access is granted to the Microsoft engineer. 
 
-> [!IMPORTANT]
-> Microsoft does not include any links in Power Platform Lockbox email notifications requiring you to sign in to the Power Platform admin center.
-
-6. After the approver from your organization approves the request, the Microsoft engineer receives the approval message, logs into the tenant, and fixes the customer's issue. Microsoft engineers have the requested duration to fix the issue after which the access is automatically revoked.
+6. After the approver from your organization approves the request, the Microsoft engineer receives the approval message, logs into the tenant, and fixes the customer's issue. Microsoft engineers have a set amount of time to fix the issue after which the access is automatically revoked. 
 
    > [!NOTE]
-   > All actions performed by a Microsoft engineer are logged in the audit log. You can search for and review these audit records.
+   > All actions performed by a Microsoft engineer are recorded and made available in SQL audit logs.
 
-## Enable a Lockbox policy
+## Configure a lockbox policy
 
-Tenant admins can create or update the Lockbox policies. To enable Lockbox policy, tenant admins need to login to the admin portal and enable Lockbox policy for all environments or for some environments.
+Global administrators can create or update the lockbox policy in the Power Platform admin center. The lockbox policy can protect all environments, some environments, or no environments. 
 
 > [!NOTE]
-> If you enable the Lockbox feature for your organization, every data access by Microsoft will be regulated and will require an explicit approval from the designated approver in your organization​
+> If your organization has a lockbox policy in place, every data access by Microsoft will be regulated and will require an explicit approval from the designated approvers in your organization.
 
-1. Sign in to the Power Platform admin center. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Select **Lockbox policy**.
+2. Select **Governance** > **Lockbox policy**.
 
-3. Specify settings.
+3. Configure the lockbox policy.
    
    |Setting  |Description  |
    |---------|---------|
-   |All Power BI workspaces     |  Select this to... [need info]       |
-   |Environments with a database     | Select this to... [need info]. The following options are then displayed: <br />**All environments** [need info] <br /> **Some environments** [need info]      |
+   |All Power BI workspaces     |  Select this to extend the lockbox protection to all your organization’s Power BI workspaces that store data in the Common Data Service.      |
+   |Environments with a database     | Select this to protect your organization’s environments that are associated with a Common Data Service database.      |
 
    > [!div class="mx-imgBorder"] 
    > ![Turn Lockbox on or off](media/lockbox-turn-on.png "Turn Lockbox on or off")
+
+
+
+
+
+
+
+
+
+
+
 
 ## Approve or deny a Power Platform Lockbox request
 
@@ -195,3 +205,14 @@ If you have an issue that requires Microsoft support to access your data, you ca
 1. Create data-access polices
 2. Approve or reject data access requests
 
+
+
+
+## Things to note
+
+Be aware of the following regarding Power Platform Lockbox.
+
+- We only protect Data Flex Pro databases.
+- There are emergency scenarios where Power Platform Lockbox can be circumvented. See [Exclusions](#exclusions).
+- Users can act upon requests for environments they don't have access to.
+- For Private Preview: Copying an environment with data protected with Power Platform Lockbox to another environment results in the data in the environment copied to no longer being protected with Power Platform Lockbox.
