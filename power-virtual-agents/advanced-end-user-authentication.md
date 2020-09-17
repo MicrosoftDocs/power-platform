@@ -14,8 +14,7 @@ ms.collection: virtual-agent
 
 # Add end-user authentication to a Power Virtual Agents bot
 
-You can enable user authentication directly within a Power Virtual Agents bot conversation. User authentication means you can prompt a user to sign in using single sign-on, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
-
+You can enable user authentication directly within a Power Virtual Agents bot conversation. User authentication means you can get basic user's properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system. You can also configure Single Sign-on so your users don’t need to sign in manually.
 
 > [!IMPORTANT] 
 > Before using this feature, you must follow the [end-user authentication configuration instructions](configuration-end-user-authentication.md).
@@ -24,6 +23,53 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
+
+## Authentication variables
+
+If your bot is configured with either "Only for Teams" or "Manual" authentication options, you will have a set of authentication variables available in your topics. Check the [authentication configuration documentation](https://docs.microsoft.com/en-us/power-virtual-agents/configuration-end-user-authentication) for more information on how to configure authenticatin in your bot.
+
+Authentication variable availability by authentication configuration option
+
+| Authentication Variable | No Authentication | Only for Teams | Manual | 
+| --- | :---: | :---: | :---: |
+| ```UserDisplayName``` | :x: | :heavy_check_mark: | :heavy_check_mark: |
+| ```UserID```          | :x: | :heavy_check_mark: | :heavy_check_mark: |
+| ```IsLoggedIn```      | :x: | :x: | :heavy_check_mark: |
+| ```AuthToken```       | :x: | :x: | :heavy_check_mark: |
+
+#### UserDisplayName variable
+The ```UserDisplayName``` variable contains the user’s display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
+
+This field value is obtained from AAD ```name``` field. For OAuth providers, this is the value stored in the ```name``` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
+
+#### UserID variable
+The ```UserID``` variable contains the user’s ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that takes the UserID as a value.
+This field value is obtained from AAD ```id``` field. For OAuth providers, this is the value stored in the ```user_id``` claim. Power Virtual Agents automatically extracts this field into the variable.
+
+> [!WARNING]
+> The ```UserDisplayName``` and ```UserID``` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Please test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.
+
+#### IsLoggedIn variable
+
+The ```IsLoggedIn``` variable indicates whether the user is signed in (either as a result of signing in or already being signed in, also known as the log-in success path) or not signed in (which would result in the log-in failure path).
+
+```IsLoggedIn``` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
+
+#### AuthToken variable
+
+The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](how-to-flow.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
+
+> [!WARNING] 
+> Make sure you're passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
+
+Do not use `AuthToken` inside **Message** nodes, or on flows that you don't trust. 
+
+## Authentication when using “Only for Teams” configuration
+
+If your authentication option is set to **Only for Teams**, you don’t need to explicitly add authentication to your topics. In this configuration, any user in Teams is automatically signed in via their Teams credentials and they don’t need to explicitly sign in with an authentication card. If your authentication option is set to Manual, then you will need to add the authentication node (even for Teams channel). 
+
+> [!NOTE]
+> If your authentication option is set to “Only for Teams”, you don’t have the option to explicitly add authentication to your topics.
 
 
 ## Add user authentication to a topic
@@ -58,22 +104,10 @@ The **Authenticate** node is where the user, if not already signed in, will be p
 
 Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code, depending on the [channel](publication-fundamentals-publish-channels.md). Some channels, such as Microsoft Teams, do not require the user to enter a validation code.
 
-The **Authenticate** node outputs two variables: `IsLoggedIn` and `AuthToken`. 
+Note that if your bot has [Single Sign on](https://docs.microsoft.com/en-us/power-virtual-agents/configure-sso) configured, the user will not be prompted to sign in.
 
-#### IsLoggedIn variable
+Users are only prompted to sign in once during a conversation, even if they encounter another sign in card.
 
-The `IsLoggedIn` variable indicates whether the user is signed in (either as a result of signing in or already being signed in, also known as the log-in success path) or not signed in (which would result in the log-in failure path).
-
-```IsLoggedIn``` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
-
-#### AuthToken variable
-
-The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](how-to-flow.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
-
-> [!WARNING] 
-> Make sure you're passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
-
-Do not use `AuthToken` inside **Message** nodes, or on flows that you don't trust. 
 
 ## AuthToken usage without an Authenticate node
 

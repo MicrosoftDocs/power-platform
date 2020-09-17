@@ -47,9 +47,11 @@ The following variables will be available in the authoring canvas once “Only f
 * ```UserID```
 * ```UserDisplayName```
 
-For more information about these variables, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication).
+For more information about these variables and how to use them, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication#authentication-variables).
 
-AuthToken and IsLoggedIn variables are not available for this configuration option. If you need an authentication token, please use the Manual option below.
+```AuthToken``` and ```IsLoggedIn``` variables are not available for this configuration option. If you need an authentication token, please use the Manual option below.
+
+If you changed from Manual to "Only for Teams", and your topics contained one of the variables ```AuthToken``` or ```IsLoggedIn```, they will be displayed as "Unknown" variables after the change. Make sure to correct any topics with errors before publishing your bot.
 
 ### Manual (for any channel including Teams)
 
@@ -60,7 +62,7 @@ You can configure any AAD, AADv2, or OAuth compatible identity provider with thi
 * ```AuthToken```
 * ```IsLoggedIn```
 
-For more information about these variables, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication).
+For more information about these variables and how to use them, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication#authentication-variables).
 
 Once the configuration is saved, make sure to publish your bot so the changes take effect.
 
