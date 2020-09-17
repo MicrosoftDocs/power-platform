@@ -51,10 +51,6 @@ Tenant owners and members will be allowed to create their first app template or 
 
 Team owners will be allowed to delete a team associated to a Project Oakdale environment that will trigger the deletion of that environment.  
 
-<!--
-By design and per GDPR guidelines, tenant admins and/or Power Platform admins will not be able to access any of the core customer data in the Project Oakdale environment. However, they will be able to perform all system management operations, including customizations and updating user records, among other options. 
--->
-
 
 ## Environment lifecycle
 
@@ -92,7 +88,7 @@ This section summarizes user access to Project Oakdale environments and resource
 For users to access Project Oakdale environment apps, bots, and data, they should:
 
 - [Be enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account).
-- Have an active Office 365 license in a plan that includes Teams. See [Licensing and restrictions](#licensing-and-restrictions).
+- Have an active Microsoft 365 license with a plan that includes Project Oakdale.
 - Be a member of the environment's security group.
 
 ### Conceptual model
@@ -134,7 +130,7 @@ You can specify users in an environment to provide access to Project Oakdale env
 
 3. Select **Users + permissions**, and then select **Users**.
 
-4. You'll see a list of enabled and disabled users who are members of the Project Oakdale environment. You can select a user from the list to view user details and do simple user management such as enable, disable or delete a user.
+4. You'll see a list of enabled and disabled users who are members of the Project Oakdale environment. You can select a user from the list to run diagnostics and view their access details and status.
 
    > [!div class="mx-imgBorder"] 
    > ![List of users in Project Oakdale environment](media/teams-environment-user-list.png "List of users in Project Oakdale environment") 
