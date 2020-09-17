@@ -65,12 +65,7 @@ If this is the first time a bot is being created in your team, you'll see a noti
 
 1. Select **Create** to begin the initial bot-building process for your team, which can take a few minutes.
 
-   You can close the loading window, a notification will appear as a pop-up and also in your list of notifications when the bot is ready:
-
-   :::image type="content" source="media/first-bot-notification.png" alt-text=" ":::
-
-   :::image type="content" source="media/first-bot-alert-notification.png" alt-text=" ":::
-
+   You can close the loading window, the bot creation process will continue in the background.
 
 1. After the building process is finished, you can create a bot in your team. In the list of teams, select your team and then **New chatbot** to make your bot.
 
