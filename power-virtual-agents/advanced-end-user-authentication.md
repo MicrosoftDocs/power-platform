@@ -30,7 +30,7 @@ If your bot is configured with either "Only for Teams" or "Manual" authenticatio
 
 Authentication variable availability by authentication configuration option
 
-                | No Authentication | Only for Teams | Manual
+Authentication Variable | No Authentication | Only for Teams | Manual
 ---|---
 UserDisplayName | Not Available | Available | Available
 UserID          | Not Available | Available | Available
