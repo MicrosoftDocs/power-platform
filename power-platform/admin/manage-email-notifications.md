@@ -19,7 +19,10 @@ search.app:
 The service team regularly sends email notifications to the administrators in your organization. Now, using a new cmdlets for Power Platform Admin Center, you have control over who should receive these email communications. As an administrator, you can set up a list of additional recipients that you choose. For example, you can add to the list of recipients:  
 - People outside of your organization, such as your partners.  
 - People inside and outside of your company.  
- If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your admin. If you’re not sure who your admin is, see: [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  <br /><br />
+ If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your admin. If you’re not sure who your admin is, see: [Find your administrator or support person](https://docs.microsoft.com/powerapps/user/find-admin).  
+ 
+ <br /><br />
+
 For a complete overview of Cmdlets click [here](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell)
 
 ## Obtain a list of email to be notified
