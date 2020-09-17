@@ -111,7 +111,7 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 |Dynamics 365 admin who is not in the team (that is, not in the Microsoft 365 Group) | These admins will not have access to manage the health and maintenance of the team environment.    | No access since a Project Oakdale environment will always have the Team’s Microsoft 365 Group associated with it, and Dynamics 365 Service admins are excluded from environments for which they are not in the associated group.         |
 
 > [!NOTE]
-> [Record sharing](wp-security-cds.md#record-sharing) is not supported in Project Oakdale.  You can't share a record with another user or team.
+> [Record sharing](wp-security-cds.md#record-sharing) isn't supported in Project Oakdale.  You can't share a record with another user or team.
 
 ## Project Oakdale environments settings and actions
 <!-- fwlink 2133713  -->
