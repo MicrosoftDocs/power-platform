@@ -2,9 +2,8 @@
 title: "Use chatbot variables to carry content across topics"
 description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
-ms.date: 8/19/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/17/2020
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -84,19 +83,19 @@ When the conversation comes to the point in the "Appointment booking" topic wher
 
 After the customer answers the question, the bot will resume the "Appointment booking" topic. 
 
-## Bot variable behavior when implementing Actions via Power Automate flows or Skills
+## Bot variable behavior when implementing Actions via Power Automate flows or skills
 
-Sometimes, you might use a flow or Skill to initialize or fill in a variable in a chatbot.
+Sometimes, you might use a flow or skill to initialize or fill in a variable in a chatbot.
 
 When a user interacts with the chatbot, however, the variable might be filled in at an earlier point in the conversation, or you may have [already set the variables externally](authoring-variables-bot.md#set-a-bot-variables-value-from-external-sources). 
 
-In this situation, the flow or Skill will still run and fill in the variable, overwriting whatever was previously stored in the variable.
+In this situation, the flow or skill will still run and fill in the variable, overwriting whatever was previously stored in the variable.
  
 ## Set a bot variable's value from external sources
 
 You can set a bot variable to be initialized with an external source. This lets the bot start the conversation with some context. 
 
-For example, a customer brings up a bot chat from your web site, and the site already knows the customer's preffered store location. You let the bot know the location before starting the conversation, and the bot can have a more intelligent conversation with the customer without having to ask for the desired location again.
+For example, a customer brings up a bot chat from your web site, and the site already knows the customer's preferred store location. You let the bot know the location before starting the conversation, and the bot can have a more intelligent conversation with the customer without having to ask for the desired location again.
 
 **Set bot variable from external source**
 
@@ -112,7 +111,7 @@ For example, a customer brings up a bot chat from your web site, and the site al
     >[!NOTE]
     >The variable name in the query string must match that of the bot variable, without the `bot.` prefix. For example, a bot variable `bot.pva_StoreLocation` must be rendered as `pva_StoreLocation=`.
 
-In the examples described here, a simple declaration is made for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the store location (for example, if you have the preffered location from a sign-in script).
+In the examples described here, a simple declaration is made for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the store location (for example, if you have the preferred location from a sign-in script).
 
 **To add the variable to an embedded bot**
 
