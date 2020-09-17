@@ -30,12 +30,12 @@ If your bot is configured with either "Only for Teams" or "Manual" authenticatio
 
 Authentication variable availability by authentication configuration option
 
-Authentication Variable | No Authentication | Only for Teams | Manual
----|---
-UserDisplayName | Not Available | Available | Available
-UserID          | Not Available | Available | Available
-IsLoggedIn      | Not Available | Not Available | Available
-AuthToken       | Not Available | Not Available | Available
+| Authentication Variable | No Authentication | Only for Teams | Manual | 
+| --- | --- | --- | --- |
+| ```UserDisplayName``` | Not Available | Available | Available |
+| ```UserID```          | Not Available | Available | Available |
+| ```IsLoggedIn```      | Not Available | Not Available | Available |
+| ```AuthToken```       | Not Available | Not Available | Available |
 
 #### UserDisplayName variable
 The ```UserDisplayName``` variable contains the user’s display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
