@@ -21,14 +21,14 @@ Lockbox for Power Platform provides an interface for customers to review and app
 
 ## Summary
 
-Lockbox for Power Platform allows an organization to define which [Common Data Service databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) and Project Oakdale databases need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. See Configuring lockbox policy to learn more. 
+Lockbox for Power Platform allows an organization to define which [Common Data Service databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. See Configure lockbox policy. 
 
-Whenever Microsoft attempts to access data that is stored in a database that is protected by lockbox, a lockbox request will be sent to the global administrators and users who are assigned the [Customer Lockbox access approver](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#customer-lockbox-access-approver) admin role. See Reviewing lockbox requests to learn more. 
+Whenever Microsoft attempts to access data that is stored in a database that is protected by lockbox, a lockbox request will be sent to the global administrators. See Review lockbox requests. 
 
-Once access is granted to Microsoft, any action taking place in the database during the elevated access period is recorded and made available to the organization as SQL audit logs. These can be exported to the customer’s own data lake. See Auditing data access to learn more. 
+Once access is granted to Microsoft, any action taking place in the database during the elevated access period is recorded and made available to the organization as SQL audit logs. These can be exported to the customer’s own data lake. See Auditing data access.
 
 > [!NOTE]
-> Lockbox only protects Common Data Service databases and Project Oakdale databases. Customer data stored in other data stores is currently out of scope.
+> Lockbox only protects Common Data Service databases. Customer data stored in other data stores is currently out of scope.
 
 ## Workflow
 
@@ -55,7 +55,7 @@ Once access is granted to Microsoft, any action taking place in the database dur
    > [!NOTE]
    > All actions performed by a Microsoft engineer are recorded and made available in SQL audit logs.
 
-## Configure a lockbox policy
+## Configure the lockbox policy
 
 Global administrators can create or update the lockbox policy in the Power Platform admin center. The lockbox policy can protect all environments, some environments, or no environments. 
 
@@ -70,55 +70,53 @@ Global administrators can create or update the lockbox policy in the Power Platf
    
    |Setting  |Description  |
    |---------|---------|
-   |All Power BI workspaces     |  Select this to extend the lockbox protection to all your organization’s Power BI workspaces that store data in the Common Data Service.      |
    |Environments with a database     | Select this to protect your organization’s environments that are associated with a Common Data Service database.      |
 
    > [!div class="mx-imgBorder"] 
    > ![Turn Lockbox on or off](media/lockbox-turn-on.png "Turn Lockbox on or off")
 
-
-
-
-
-
-
-
-
-
-
-
-## Approve or deny a Power Platform Lockbox request
+## Review a lockbox request
 
 1. Sign in to the Power Platform admin center. 
 
-2. Select **Help + Support** > **Lockbox requests**.
+2. Select **Governance** > **Lockbox requests**.
 
 3. Review the request details.
 
    |Field  |Description  |
    |---------|---------|
-   |Support request ID     |         |
-   |Environment     |         |
-   |Status     |         |
-   |Requested     |         |
-   |Request expiration     |         |
-   |Access period     |         |
-   |Access expiration     |         |
-   |Admin     |         |
+   |Support request ID     | The ID of the support ticket associated with the lockbox request.         |
+   |Environment     | The display name of the environment in which data access is being requested.         |
+   |Status     | The status of the lockbox request. <br /> <ul><li>Action needed: Pending approval from the customer </li><li>**Expired**: No approval received from the customer </li><li>**Approved**: Approved by the customer </li><li>**Denied**: Denied by the customer.</li></ul>        |
+   |Requested     | The time at which the Microsoft engineer has requested access to your organization’s data.         |
+   |Request expiration     | The time by which the customer needs to approve the lockbox request. The status of the request will change to “expired” if no approval is received.         |
+   |Access period     | The approximate length of time requested to access your data. It is an estimate and could slightly change.         |
+   |Access expiration     | If access is granted, this is the time until which the Microsoft engineer has access to your data. It is an estimate and could slightly change.         |
+   
 
-3. Select a Lockbox request, and then choose **Approve** or **Deny**.
+4. Select a Lockbox request, and then choose **Approve** or **Deny**.
+   
    > [!div class="mx-imgBorder"] 
    > ![Approve or deny Lockbox requests](media/lockbox-requests.png "Approve or deny Lockbox requests")
 
-## Auditing Power Platform Lockbox requests
+> [!NOTE]
+> The lockbox requests that have occurred in the past 28 days will be displayed in the **Recent** table.
 
-Audit records that correspond to Lockbox requests are logged in SQL audit logs. You can access these logs by using **Export Analytics Data**. Actions related to a accepting or denying a Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the SQL audit logs. You can search for and review these audit records.
+## Audit lockbox requests
 
-[screenshot of example SQL audit log data]
+All actions taken by the Microsoft engineer during the data access period are recorded in the form of SQL audit logs. These logs can be exported to your organization’s data lake for subsequent analysis. You can configure that data export by using the new Data Export functionality.
+
+> [!NOTE]
+> Actions related to accepting or denying a lockbox request are not recorded in the SQL audit logs and are only made available in the lockbox requests page.
+
+Below is an example of the SQL logs that are generated. On row #248, observe that a **SELECT** action has been executed on the TimeZoneDefinitionBase table.
+
+> [!div class="mx-imgBorder"] 
+> ![Example SQL log](media/lockbox-example-sql-log.png.png "Example SQL log")
 
 To export SQL audit logs to your organization's [Azure data lake](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake):
 
-1. Sign in to the Power Platform admin center. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
 2. Select **Data export (preview)** from the left-side menu, and then select **New data export**.
 
@@ -135,84 +133,30 @@ To export SQL audit logs to your organization's [Azure data lake](https://docs.m
 
    |Field  |Description  |
    |---------|---------|
-   |Subscription     |         |
-   |Resource group     |         |
-   |Storage account     |         |
+   |Subscription     | Azure subscription used by the customer for this data export.        |
+   |Resource group     | The resource group under the Azure subscription that will be used for this data export.        |
+   |Storage account     | The account under the resource group that will be used for the data export.        |
 
    > [!div class="mx-imgBorder"] 
    > ![Enter Data Lake details](media/lockbox-enter-data-lake-details.png "Enter Data Lake details")
 
-Your export will appear in the list under the **Data Lake** tab.
+Your export will appear in the list under the **Data Lake** tab of the Export Analytics Data page.
 
 > [!div class="mx-imgBorder"] 
 > ![Data export list](media/lockbox-data-export-success.png "Data export list")
 
-**Fields description**
-
 |Field  |Description  |
 |---------|---------|
-|Data package     |         |
-|Environment     |         |
-|Last export status    |         |
-|Data last exported on     |         |
-|Created by     |         |
-|Created on   |        |
-
-## Data export options
-
-You can select **More actions** (...) next to some data export connection fields to take additional actions such as delete the connection or show export history.
-
-1. Sign in to the Power Platform admin center. 
-
-2. Select **Data export (preview)** from the left-side menu.
-
-3. Select the **Data Lake** tab, and then select a data export from the list.
-
-4. Select a field such as **Last export status**, select **More actions** (...), and then select an action.
-
-   [screenshot]
+|Data package     | The type of data export – will contain “SQL audit logs”.         |
+|Environment     | The environments for which SQL audit logs are being exported to the customer data lake. If the lockbox policy protects all environments, then “All” will be displayed. If it protects some environments, then the names of each environment will be displayed.        |
+|Status   | The status is “Connected” when a connection has been setup. The status becomes “Disabled” if lockbox is not enabled for any environment.        |
 
 ## Exclusions
 
-Power Platform Lockbox requests aren't triggered in the following engineering support scenarios:
+Lockbox requests aren't triggered in the following engineering support scenarios:
 
-- A Microsoft engineer needs to do an activity that falls outside of standard operating procedures. For example, to recover or restore services in unexpected or unpredictable scenarios.
+- A Microsoft engineer needs to do an activity that falls outside of standard operating procedures. For example, to recover or restore services in unexpected or unpredictable scenarios. 
 
-- A Microsoft engineer accesses the Power Platform as part of troubleshooting and inadvertently has access to customer data. For example, 
+- A Microsoft engineer executes scripts on a single or multiple databases to maintain a healthy data infrastructure. These scripts are peer reviewed and require elevated permissions to execute. All operations executed on a database by such scripts are recorded and made available in the SQL audit logs. 
 
-  [need info]
-
-- If the support engineer can't troubleshoot the issue by using standard tools and telemetry, the next step is to request elevated permissions by using a Just-In-Time (JIT) access service. This request can be from the original support engineer. Or, it can be from a different engineer because the problem is escalated.
-
-After the access request is submitted by the Azure Engineer, Just-In-Time service evaluates the request taking into account factors such as:
-
-The scope of the resource
-Whether the requester is an isolated identity or using multi-factor authentication
-Permissions levels
-Based on the JIT rule, this request may also include an approval from Internal Microsoft Approvers. For example, the approver might be the Customer support lead or the DevOps Manager.
-
-When the request requires direct access to customer data, a Customer Lockbox request is initiated. For example, remote desktop access to a customer's virtual machine.
-
-The request is now in a Customer Notified state, waiting for the customer's approval before granting access.
-
-At the customer organization, the user who has the Owner role for the Azure subscription receives an email from Microsoft, to notify them about the pending access request. For Customer Lockbox requests, this person is the designated approver.
-
-Example email:
-
-[screenshot]
-
-If you have an issue that requires Microsoft support to access your data, you can use Power Platform Lockbox to approve or reject data access requests from Microsoft. With Lockbox, you can:
-1. Create data-access polices
-2. Approve or reject data access requests
-
-
-
-
-## Things to note
-
-Be aware of the following regarding Power Platform Lockbox.
-
-- We only protect Data Flex Pro databases.
-- There are emergency scenarios where Power Platform Lockbox can be circumvented. See [Exclusions](#exclusions).
-- Users can act upon requests for environments they don't have access to.
-- For Private Preview: Copying an environment with data protected with Power Platform Lockbox to another environment results in the data in the environment copied to no longer being protected with Power Platform Lockbox.
+Additionally, please note that environment lifecycle operations (create, delete, backup, recover, copy, reset, etc.) have no impact on the lockbox policy. For example, if the data from a lockbox protected environment (environment A) is copied to another environment that is not lockbox-protected (environment B), then the copied data in environment B is not protected by lockbox. 
