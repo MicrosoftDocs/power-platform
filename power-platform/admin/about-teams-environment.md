@@ -105,10 +105,13 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 |---------|---------|---------|
 |Teams owner      | Owners can manage team membership and settings in the team. They have full access to all the environment’s apps/resources and data. They can perform environment maintenance such as backup and restore. | System Administrator     |
 |Teams member      | Members are people in the team.  They can view all environment’s resources, run all apps and resources, and can create/update their own resources.  They have full access to all data.      |Teams member      |
-| Teams guest  | Guests are people from outside the tenant that a team owner invites, such as a partner or a customer. They can view and run all resources in the team.  By default, guests have no access to data. Their data access rights can be granted based on the app/resources that they need to run. | Teams guest | 
+| Teams guest  | Guests are people from outside the tenant that a team owner invites, such as a partner or a customer. They can view and run all resources in the team. By default, guests have full access to records they create and don’t have access to other users’ records.   | Teams guest | 
 |Global admin / Power Platform admin who is not in the team | These are the tenant’s Global admins who manage the health and maintenance of the tenant environments. They are typically not members of the team. They can perform environment maintenance such as backup and restore.      | System Administrator         |
 |Application user | Application users are people from inside the tenant who are invited to run apps in the team. By default, Application users have no access to data. Their data access rights can be granted based on the app/resources that they need to run. | Common Data Service User |
 |Dynamics 365 admin who is not in the team (that is, not in the Microsoft 365 Group) | These admins will not have access to manage the health and maintenance of the team environment.    | No access since a Project Oakdale environment will always have the Team’s Microsoft 365 Group associated with it, and Dynamics 365 Service admins are excluded from environments for which they are not in the associated group.         |
+
+> [!NOTE]
+> [Record sharing](wp-security-cds.md#record-sharing) is not supported in Project Oakdale.  You can't share a record with another user or team.
 
 ## Project Oakdale environments settings and actions
 <!-- fwlink 2133713  -->
