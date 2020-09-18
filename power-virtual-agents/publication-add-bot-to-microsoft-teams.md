@@ -36,7 +36,7 @@ You can:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- Your organization’s [Microsoft Teams app permission policies](/microsoftteams/teams-app-permission-policies) will need to allow Power Platform apps to be added to teams before you or other users can find and add your bot to Microsoft Teams.
+- Your organization’s [Microsoft Teams app permission policies](/microsoftteams/teams-app-permission-policies) will need to allow Power Platform apps to be added to Microsoft Teams before you can install the bot directly or other users can install via shared link in Microsoft Teams.
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels.md).
 
 
@@ -67,10 +67,10 @@ After publishing your bot at least once, you can connect your bot to the Microso
 
 ## Install a bot as an app in Microsoft Teams
 
+After you published a bot, you and people in your organization can install to chat with it in Microsoft Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
 
-When you publish a bot, you make it available for people in your organization to install it into their team. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
+You can add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app, or you can get a link to share with other team members so they can add it to chat with it in Microsoft Teams.
 
-You can then add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app, or you can get a link to share with other team members so they can add it to their Microsoft Teams apps.
 
 >[!IMPORTANT]
 >New content in a freshly published bot won't appear in conversations that are currently ongoing. After 30 minutes of idle time, the bot will be updated.  
@@ -84,7 +84,7 @@ You can then add the bot to your own version of Microsoft Teams directly from th
 
 1.  Select **Microsoft Teams**.
 
-1. Select **Open bot** to have it go to the Teams app store, where it will automatically find and open the bot you just created. Select **Add for me** to have it added as an app in Teams. This only shows the bot for you.
+1. Select **Open bot** to have the installation prompt launch in Microsoft Teams. Select **Add for me** to have it added as an app in Teams. This only installs the bot for you.
 
 
 **Share a link so others can add the bot:**
@@ -100,7 +100,7 @@ You can then add the bot to your own version of Microsoft Teams directly from th
         :::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
 
         >[!IMPORTANT]
-        >Updates to the bot's icon and color may take up to 24 hours to show on bots that are already published and shared.
+        >Updates to the bot's icon and color will not apply to users who have already installed the bot via shared link.  They will need to reinstall to the bot to receive the updates.
 
     2. Select **More** to add additional information:  
         - Developer name
@@ -125,34 +125,6 @@ You can then add the bot to your own version of Microsoft Teams directly from th
 >[!IMPORTANT]
 >Only users who can access the bot can use the installation link to install the bot. You can configure who access it in the [security settings](configuration-security.md) for the bot.
 
-
-
-## Share the bot with your Team
-
-Once you've published your bot, you can share it with other Microsoft Teams users so they can find it in the Microsoft Teams app store. You can share it with just your team, or with your entire organization (with admin approval).
-
-
-### Add the bot to the Built by your colleagues section
-
-You can share your bot with your team by adding it to the Microsoft Teams app store, **Built for *your-organization-name*** > **Built by your colleagues** section. Only your teammates will find the bot there.
-
-:::image type="content" source="media/publish-teams-your-colleagues.png" alt-text=" ":::
-
-1.  Go to **Manage**, then **Channels** on the side navigation pane.
-
-1.  Select **Microsoft Teams**.
-
-5. Select **Make available in Teams**. This will automatically add the bot to the **Built by your colleagues** section.
-
->[!WARNING]
->This is what it looks like in PPE. Is this going to Prod?
-
-### Remove the bot from the Built by your colleagues section
-
->[!WARNING]
->Not sure if this is possible or how to achieve it (can't see options in PPE)
-
-You can remove the bot from showing in the **Built by your colleagues** section. This does not impact users who have already installed the bot.
 
 
 
@@ -250,3 +222,9 @@ For bots that are shared with the organization, the bots will continue to be sho
 You can always reconnect your bot after disconnecting by selecting **Turn on Teams** in the **Share the bot** window on the **Publish** page.
 
 
+## Known limitation
+- Currently only **Personal** scope is supported for Microsoft Teams so users can only have private conversation with the bot
+- By setting bot avatar icon via **Manage -> Detail** will not show up for bots that are approved by admin.  Bots approved by admin will use the app icon as the bot avatar.
+- Teams has [rate limiting](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/rate-limit) on bots.  Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
+- Currently, if your bot supports [end-user authentication](https://docs.microsoft.com/power-virtual-agents/advanced-end-user-authentication), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](https://docs.microsoft.com/en-us/office/dev/store/validation-policies).
+- Disconnecting your bor from Teams might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
