@@ -40,8 +40,8 @@ Developer's name | *Powered by Power Virtual Agents* | You should include a name
 
 
 >[!IMPORTANT]
->This app is not developed by Microsoft.
+>This app is not developed by Microsoft. If you are a user of a bot and sees this page, it means the bot developer did not provide terms of user and privacy statement for the bot.  
 >
 >For privacy policy or terms of use, contact the developer of this app.
 
-If you do not enter links to a privacy statement or terms of use, then chatbot users are redirected here.
+If you do not enter links to a privacy statement or terms of use, then chatbot users are redirected here.  
