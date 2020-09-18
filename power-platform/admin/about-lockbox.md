@@ -112,7 +112,7 @@ All actions taken by the Microsoft engineer during the data access period are re
 Below is an example of the SQL logs that are generated. On row #248, observe that a **SELECT** action has been executed on the TimeZoneDefinitionBase table.
 
 > [!div class="mx-imgBorder"] 
-> ![Example SQL log](media/lockbox-example-sql-log.png.png "Example SQL log")
+> ![Example SQL log](media/lockbox-example-sql-log.png "Example SQL log")
 
 To export SQL audit logs to your organization's [Azure data lake](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake):
 
