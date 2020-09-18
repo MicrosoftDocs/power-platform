@@ -161,9 +161,11 @@ To delete a Project Oakdale environment, select it from the list of environments
 > [!div class="mx-imgBorder"] 
 > ![Delete a Project Oakdale environment](media/teams-environment-manage-delete.png "Delete a Project Oakdale environment")
 
+<!-- 
 ### Promote a Project Oakdale environment to production
 
 Select **Promote to production**. See [Promotion process](#promotion-process).
+-->
 
 ## Capacity limits
 
