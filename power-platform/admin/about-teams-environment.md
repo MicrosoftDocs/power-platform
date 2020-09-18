@@ -234,5 +234,7 @@ Post promotion, the following applies to the newly promoted environment:
 - Adding a new Teams Template app to the prior team won’t create a new Project Oakdale Environment for the team. 
 
 ## Related topics
-[Power Apps and Teams integration: Overview](/powerapps/teams/overview) <br/>[Create flows with the Power Apps app in Teams](/power-automate/teams/create-flows-power-apps-app)
+[Power Apps and Teams](/powerapps/teams/overview) <br/>
+[Power Automate and Teams](/power-automate/teams/overview)<br/>
+[Power Virtual Agents and Teams](https://aka.ms/pva-teams-docs)
 
