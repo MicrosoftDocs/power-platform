@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/28/2020
+ms.date: 09/17/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -21,11 +21,11 @@ Lockbox for Power Platform provides an interface for customers to review and app
 
 ## Summary
 
-Lockbox for Power Platform allows an organization to define which [Common Data Service databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. See Configure lockbox policy. 
+Lockbox for Power Platform allows an organization to define which [Common Data Service databases](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) need to be protected with lockbox by creating a lockbox policy. Global administrators can configure the lockbox policy. See [Configure the lockbox policy](#configure-the-lockbox-policy).
 
-Whenever Microsoft attempts to access data that is stored in a database that is protected by lockbox, a lockbox request will be sent to the global administrators. See Review lockbox requests. 
+Whenever Microsoft attempts to access data that is stored in a database that is protected by lockbox, a lockbox request will be sent to the global administrators. See [Review a lockbox request](#review-a-lockbox-request).
 
-Once access is granted to Microsoft, any action taking place in the database during the elevated access period is recorded and made available to the organization as SQL audit logs. These can be exported to the customer’s own data lake. See Auditing data access.
+Once access is granted to Microsoft, any action taking place in the database during the elevated access period is recorded and made available to the organization as SQL audit logs. These can be exported to the customer’s own data lake. See [Audit lockbox requests](#audit-lockbox-requests).
 
 > [!NOTE]
 > Lockbox only protects Common Data Service databases. Customer data stored in other data stores is currently out of scope.
@@ -46,7 +46,7 @@ Once access is granted to Microsoft, any action taking place in the database dur
 
 4. When the request requires direct access to customer data, a lockbox request is generated if the database is protected according to the organization’s lockbox policy. An email notification is sent to the designated approvers about the pending data access request from Microsoft. 
 
-   :::image type="content" source="media/lockbox-sample-approval.png" alt-text="Sample lockbox approval ":::
+   :::image type="content" source="media/lockbox-sample-approval.png" alt-text="Sample lockbox approval":::
 
 5. The approver signs in to the Power Platform admin center and approves the request. If the request is rejected or if it is not approved within 12h, it expires, and no access is granted to the Microsoft engineer. 
 
