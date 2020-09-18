@@ -58,9 +58,9 @@
     - name: Power Platform Build Tools tasks
       href: devops-build-tool-tasks.md
     - name: GitHub Actions for Power Platform
-      href: devops-github-power.md
+      href: devops-github-actions.md
     - name: Available GitHub Actions
-      href: devops-github-power-actions.md
+      href: devops-github-available-actions.md
     - name: Work with solution components
       href: 
       items:
