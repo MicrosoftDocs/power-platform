@@ -22,7 +22,21 @@ Select the version of Power Virtual Agents you're using here:
 
 To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 
-**Create your first bot:**
+>[!NOTE]
+>You can only see bots in the version of Power Virtual Agents where you created them.  
+>This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at https://powerva.microsoft.com.
+
+
+ 
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+
+## Create your first bot
+
+Creating your first bot requires you to have a license (or trial) to Power Virtual Agents.
 
 1. Go to [Power Virtual Agents marketing page](https://go.microsoft.com/fwlink/?linkid=2106332) and select **Start free**. Sign in using your work account.
 
@@ -40,12 +54,6 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 During the building process, you'll see a notification at the top of the Power Virtual Agents portal indicating that the bot is still being built.
 
 You can navigate to some tabs during this period, after which the banner will change and you'll have full access to the Power Virtual Agents portal. 
- 
-
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 
 ## Create additional bots
 
