@@ -71,7 +71,8 @@ The lifetime of the environment will be tied to the team it was created in. If y
 
 Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you would need this capability, Common Data Service environments should be used. See the previous table for details.
 
-<!-- >> [!IMPORTANT]
+<!-- 
+> [!IMPORTANT]
 > Project Oakdale environments won’t be allowed to change types until the promote operation has been carried out on the environment. Once the promotion completes, the Project Oakdale environment will have the full capabilities found in Common Data Service. In addition to the standard termination of the environments, if the Microsoft Office license expires, there will also be an inactivity clause for these environments. Specifically, when an environment is unused for over 3 months, it will be disabled and ultimately deleted. 
 >
 > If the team is deleted, the Project Oakdale environment that was created will also be deleted. The Project Oakdale environment itself may be deleted from within the team by the team owner. A warning will be provided prior to allowing the deletion to go through, to ensure there are no accidental deletions. 
@@ -102,11 +103,11 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 
 |Persona  |Description  |  Security role auto-assigned   |
 |---------|---------|---------|
-|Teams owner      | Owners can manage team membership and settings in the team. They have full access to all the environment’s apps/resources and data. They can perform environment maintenance such as backup and restore. | System Administrator     |
-|Teams member      | Members are people in the team.  They can view all environment’s resources, run all apps and resources, and can create/update their own resources.  They have full access to all data.      |Teams member      |
+|Teams owner      | Owners can manage team membership and settings in the team. They have full access to the Project Oakdale environment’s apps/resources and data. They can perform environment maintenance such as backup and restore through the Power Platform admin center.  | System Administrator     |
+|Teams member      | Members are people in the team. They can view the Project Oakdale environment’s resources, run all apps and resources, and can create/update their own resources. They have full access to all data.     |Teams member      |
 | Teams guest  | Guests are people from outside the tenant that a team owner invites, such as a partner or a customer. They can view and run all resources in the team. By default, guests have full access to records they create and don’t have access to other users’ records.   | Teams guest | 
-|Global admin / Power Platform admin who is not in the team | These are the tenant’s Global admins who manage the health and maintenance of the tenant environments. They are typically not members of the team. They can perform environment maintenance such as backup and restore.      | System Administrator         |
-|Application user | Application users are people from inside the tenant who are invited to run apps in the team. By default, Application users have no access to data. Their data access rights can be granted based on the app/resources that they need to run. | Common Data Service User |
+|Global admin / Power Platform admin who is not in the team | These are tenant-level admins who manage the health and maintenance of the tenant’s environments. They need not be members of the team, but through their tenant-level admin privileges can perform environment maintenance such as backup and restore for all Project Oakdale environments. They are set to the Administrative access mode as opposed to the Read-Write access mode if they are not in the team, so will only have Administrative access to the Project Oakdale environments. They can be explicitly given Read-Write access by another admin who already has Read-Write access to the environment.      | System Administrator         |
+|Application user | Application users are people in the tenant that aren’t in the team, and are invited to run apps in the team. By default, Application users have no access to data. Their data access rights can be granted based on the app/resources that they need to run. Note: when an Application user is invited to run apps in a team, the Microsoft 365 Group association with the team’s Project Oakdale environment will be auto-removed to allow app run access to the Application user. | Common Data Service User |
 |Dynamics 365 admin who is not in the team (that is, not in the Microsoft 365 Group) | These admins will not have access to manage the health and maintenance of the team environment.    | No access since a Project Oakdale environment will always have the Team’s Microsoft 365 Group associated with it, and Dynamics 365 Service admins are excluded from environments for which they are not in the associated group.         |
 
 > [!NOTE]
