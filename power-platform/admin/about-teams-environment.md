@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/15/2020
+ms.date: 09/18/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -167,9 +167,9 @@ Select **Promote to production**. See [Promotion process](#promotion-process).
 
 ## Capacity limits
 
-The consumption of capacity by Project Oakdale environments will not count towards the tenant’s capacity limits. Instead, we will provide a pool of database capacity for Project Oakdale environments, which will be separate from the tenant’s Power Platform Common Data Service capacity pool. Capacity will not be transferable between these two pools.  
+The consumption of capacity by Project Oakdale environments will not count towards the tenant’s capacity limits. Instead, we will provide a pool of capacity for Project Oakdale environments, which will be separate from the tenant’s Power Platform Common Data Service capacity pool. Capacity will not be transferable between these two pools.  
 
-**Per-environment limits on Project Oakdale environments**: Each Project Oakdale environment will be restricted to 2 GB of database storage. To see the consumption of each Project Oakdale environment in a tenant, navigate to Power Platform admin center (https://aka.ms/ppac), then to **Resources** -> **Capacity** -> **Microsoft Teams Capacity**.   
+**Per-environment limits on Project Oakdale environments**: Each Project Oakdale environment provides 2 GB of combined database and file storage, with a portion of this amount reserved for system use. To see the consumption of each Project Oakdale environment in a tenant, navigate to Power Platform admin center (https://aka.ms/ppac), then to **Resources** -> **Capacity** -> **Microsoft Teams Capacity**.   
 
 > [!div class="mx-imgBorder"] 
 > ![Project Oakdale environment capacity](media/teams-environment-capacity.png "Project Oakdale environment capacity")
@@ -178,8 +178,8 @@ The consumption of capacity by Project Oakdale environments will not count towar
 
 |Unit  |Service limit  |
 |---------|---------|
-|Project Oakdale environments      | 5 + 1 per 20 eligible office seats (up to a maximum of 500 environments) <br /> This limit on the number of environments cannot be extended further in Project Oakdale environments. Should more instances be needed, consider deleting unused environments or promoting to Common Data Service.   |
-|Max Project Oakdale environment storage per tenant      | 10 GB + Project Oakdale environments x 2 GB (up to a max of 1 TB). <br /> This storage limit cannot be extended further in Project Oakdale environments. Should more storage be needed, consider promoting to Common Data Service.  |
+|Project Oakdale environments      | 5 + 1 per 20 eligible office seats (up to a maximum of 500 environments) <br /> This limit on the number of environments can't be extended further. Should more instances be needed, consider deleting unused environments or promoting to Common Data Service.   |
+|Max Project Oakdale environment storage per tenant      | 10 GB + Project Oakdale environments x 2 GB (up to a max of 1 TB). <br /> This storage limit can't be extended further. Should more storage be needed, consider promoting environments to Common Data Service.  |
 |Max Project Oakdale environments API calls  | API requests in Microsoft Power Platform consist of various actions which a user makes across various products.  <br /> For more information on API calls and the per user limits available, see the following documentation:  https://aka.ms/PowerPlatformRequestEntitlements  |
 
 ### Enforcement
@@ -188,11 +188,17 @@ Below are the actions that we will take when customers approach and exceed the e
 
 #### Environment-level enforcement actions  
 
+> [!NOTE]
+> These environment-level enforcement actions will not be in place for the preview but will come into effect at general availability. 
+
 When a Project Oakdale environment in a team approaches or hits the 2 GB capacity limit, the following actions will be taken: 
 - At 80% of the limit, the Teams users will see in the Teams maker experience a message informing them the capacity limit is about to be reached. At this point, customers are encouraged to either reduce storage usage or contact their admin for other options.  
 - At 100% of the limit, any existing apps will continue to work, and existing apps can be updated. However, new apps and flows can't be created or installed as a result of having reached the capacity limit. 
 
 #### Tenant-level enforcement  
+
+> [!NOTE]
+> These tenant-level enforcement actions will come into effect in the preview starting in mid-October 2020.
 
 When a tenant approaches or reaches their tenant-wide Teams limits described above, the following actions will be taken: 
 - At 80% of the limit, a notification will be sent to the Power Platform admin center admin informing of the approaching capacity limit, and to consider reducing storage usage or promoting some of the Project Oakdale environments. 
