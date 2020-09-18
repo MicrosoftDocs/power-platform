@@ -12,16 +12,22 @@ ms.custom: onboarding, ceX, teams
 ms.collection: virtual-agent
 ---
 
-# Create your first Power Virtual Agents bot in Teams
+# Create and delete Power Virtual Agents bots in Teams
+
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../authoring-first-bot.md)
-> - [Teams (online or app)](authoring-first-bot-teams.md)
+> - [Power Virtual Agents web app](https://powerva.microsoft.com)](../authoring-first-bot.md)
+> - [Power Virtual Agents app in Microsoft Teams)](authoring-first-bot-teams.md)
 
 
 You can create chatbots in the Power Virtual Agents app in Teams and then share them with other people in your team, company, or organization.
 
 The very first step is to add the Power Virtual Agents app. Then you can create bots.
+
+>[!NOTE]
+>You can only see bots in the version of Power Virtual Agents where you created them.  
+>This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at https://powerva.microsoft.com.
 
 
 ## Prerequisites
@@ -58,7 +64,7 @@ When you create a bot, it has to go into a team - everyone in that team will be 
    >[!NOTE]
    >All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it.
 
-If this is the first time a bot is being created in your team, you'll see a notice explaining that it will take some time (this could take from 1 to 10 minutes):
+    If this is the first time a bot is being created in your team, you'll see a notice explaining that it will take some time (this could take from 1 to 10 minutes):
    
    :::image type="content" source="media/first-bot-delay.png" alt-text=" ":::
 

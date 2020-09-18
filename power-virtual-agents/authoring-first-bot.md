@@ -12,11 +12,13 @@ ms.custom: onboarding, ceX
 ms.collection: virtual-agent
 ---
 
-# Create your first Power Virtual Agents bot
+# Create and delete Power Virtual Agents bots
+
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](authoring-first-bot.md)
-> - [Teams (online or app)](teams/authoring-first-bot-teams.md)
+> - [Power Virtual Agents web app](authoring-first-bot.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-first-bot-teams.md)
 
 To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 

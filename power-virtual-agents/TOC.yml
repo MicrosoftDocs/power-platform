@@ -32,7 +32,7 @@
       items:
        - name: Key concepts - Authoring
          href: authoring-fundamentals.md
-       - name: Create your first bot
+       - name: Create and delete bots
          href: authoring-first-bot.md
        - name: Use lesson topics
          href: authoring-template-topics.md
@@ -140,8 +140,8 @@
          href: teams/requirements-licensing-teams.md
 #       - name: Sign up for a trial account
 #         href: teams/sign-up-individual-teams.md
-       - name: Working with environments
-         href: teams/environments-first-run-experience-teams.md
+#       - name: Working with environments
+#         href: teams/environments-first-run-experience-teams.md
        - name: Share bots with users in your organization
          href: teams/admin-share-bots-teams.md
 #       - name: Export and import bots with solutions
@@ -152,7 +152,7 @@
       items:
        - name: Key concepts - Authoring
          href: teams/authoring-fundamentals-teams.md
-       - name: Create your first bot
+       - name: Create and delete bots
          href: teams/authoring-first-bot-teams.md
        - name: Use lesson topics
          href: teams/authoring-template-topics-teams.md
