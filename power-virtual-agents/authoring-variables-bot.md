@@ -2,7 +2,7 @@
 title: "Use chatbot variables to carry content across topics"
 description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
-ms.date: 9/17/2020
+ms.date: 9/18/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -125,9 +125,9 @@ In the examples described here, a simple declaration is made for the variables. 
 
     - Your bot's URL is *https:// powerva.microsoft.com/webchat/bots/12345*.
 
-    - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https:// powerva.microsoft.com/webchat/bots/12345?**UserName=Rosane***.
+    - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https:// powerva.microsoft.com/webchat/bots/12345?**UserName=Renata***.
 
-2. The parameter name is case-insensitive. This means `username=Rosane` will also work in this example. 
+2. The parameter name is case-insensitive. This means `username=Renata` will also work in this example. 
 
 **To add the variable to a [custom canvas](customize-default-canvas.md)**
 
