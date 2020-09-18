@@ -26,7 +26,7 @@ You can enable user authentication directly within a Power Virtual Agents bot co
 
 ## Authentication variables
 
-If your bot is configured with either "Only for Teams" or "Manual" authentication options, you will have a set of authentication variables available in your topics. Check the [authentication configuration documentation](https://docs.microsoft.com/en-us/power-virtual-agents/configuration-end-user-authentication) for more information on how to configure authenticatin in your bot.
+If your bot is configured with either "Only for Teams" or "Manual" authentication options, you will have a set of authentication variables available in your topics. Check the [authentication configuration documentation](https://docs.microsoft.com/en-us/power-virtual-agents/configuration-end-user-authentication) for more information on how to configure authentication in your bot.
 
 Authentication variable availability by authentication configuration option
 

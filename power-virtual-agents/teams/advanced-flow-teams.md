@@ -24,8 +24,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Web service (https://powerva.microsoft.com)](../advanced-flow.md)
 > - [Teams (online or app)](advanced-flow-teams.md)
 
-You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows with [end-user authentication](advanced-end-user-authentication-teams.md) to retrieve information about a user after they've signed in.
-
+You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows to send messages to a Teams channel, or access files in a SharePoint folder.
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
 
@@ -52,29 +51,20 @@ For example, you could record someone's answer to a question in one place in the
     ![Create a new Power Automate flow](media/UseCreateFlowOption-teams.png)
 
 
-Using the **Create a flow** option opens a starter flow template in the Power Automate app in Teams, within the Power Virtual Agents app. Select the tile that appears:
+Using the **Create a flow** option opens a template selection screen.
 
 
-:::image type="content" source="media/flow-template-tile.png" alt-text=" ":::
+:::image type="content" source="media/flow-template-tile.png" alt-text="Flow template selection screen":::
 
+>[!NOTE]
+>Save your topic before creating a new flow, as you will be taken to Power Automate for this operation.
+
+You will find a list of templates which helps you quickly get started creating Power Automate flows. For this example, we will pick the basic “Power Virtual Agents Flow Template". 
 
 After that, you'll see a blank flow template.
 
-
-
 :::image type="content" source="media/PVAConnectorTemplate-teams.png" alt-text="The flow action and response boxes of a flow for Power Virtual Agents":::
 
-
-This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action: 
-
-- Flow trigger:  **Power Virtual Agents**  
-
-    ![Power Virtual Agents trigger](media/PVAConnectorTrigger-teams.png)
-
-
-- Response action:  **Power Virtual Agents**  
-
-    ![Power Virtual Agents response](media/PVAConnectorResponse-teams.png)
 
 ## Input and output parameters
 
@@ -92,6 +82,7 @@ For example, you can select **Text** and **Number** to add the following input p
 - **Number_Input** of type `number` 
 
 
+:::image type="content" source="media/PVATemplateInput.png" alt-text="Input and output parameters are defined in the flow":::
 
 ### Output parameters
 
@@ -109,17 +100,9 @@ This example creates a fully functional flow that accepts two parameters, a `str
 Select **Save** to save your new flow.
 
 
-Now when you go to call an action and choose **Flow**, you'll see the flow you created. You can select **More details** to edit the flow, save it, and make other changes.
+Now when you go to call an action and choose **Flow**, you'll see the flow you created. You can select **View flow details** to edit the flow, save it, and make other changes.
 
 :::image type="content" source="media/flow-ready.png" alt-text="The flow is now added as a new node with the inputs and outputs that were defined in the flow":::
-
-Your flow is saved to the **Default Solution** under the **Solutions** tab on the Power Automate portal.
-
->[!WARNING]
->I can't find it on the Power Automate site, not anywhere else. It only shows up again if I choose to call an action > flow. Is there any where else it will show up?
-
-
-![Power Automate flow template - Default Solution](media/default-solution-teams.png)
 
 
 ## Create simple flow
@@ -131,25 +114,26 @@ In this flow, we're going to provide a special message and email when someone as
 
 3. Add a **Question** node that asks "**Do you have any requirements**". By default, it will be set to accept ("identify") multiple choice options - change that to **User's entire response**. At the bottom, click on the variable called "**Var**" and change it to "**Requirements**"
 
-:::image type="content" source="media/flow-test-1.png" alt-text=" ":::
+:::image type="content" source="media/flow-test-1.png" alt-text="Add a question node to canvas":::
 
 
 4. Insert a **Call to action** and choose the flow you created. Set the `String_Input` to **Requirements** and the `Number_Input` to **Numberguests**.
 5. Now insert a message node with those variables. You could add another flow underneath this emails the information.
 
- :::image type="content" source="media/flow-test-2.png" alt-text=" ":::
+ :::image type="content" source="media/flow-test-2.png" alt-text="Insert message node in canvas":::
 
 6. Add a **Call an action** node, and select a new flow
- 7. In the flow template, enter a string input called "Input_Requirements" and a number input called "Number_Attendees".
-8. Add a condition after the input to send an outlook message, and enter the variables in the body. Save the flow and return to the Power Virtual Agents authoring canvas.
+7. Pick the first flow template (Power Virtual Agents Flow Template)
+8. In the flow template, enter a string input called "Input_Requirements" and a number input called "Number_Attendees".
+9. Add an Outlook connector after the input to send an outlook message, and enter the variables in the body. Save the flow and return to the Power Virtual Agents authoring canvas.
 
-:::image type="content" source="media/flow-test-3.png" alt-text=" ":::
+:::image type="content" source="media/flow-test-3.png" alt-text="Send a message via Outlook connector":::
 
-9. Add the flow you just created, and select the two variables as the inputs for the flow.
+10. Add the flow you just created, and select the two variables as the inputs for the flow.
 
 Now when the bot user tells the bot how many people, and any requirements, an email will be sent with that information.
 
-:::image type="content" source="media/flow-test-4.png" alt-text=" ":::
+:::image type="content" source="media/flow-test-4.png" alt-text="Complete topic with a flow call that sends email via Outlook connector":::
 
 
 
