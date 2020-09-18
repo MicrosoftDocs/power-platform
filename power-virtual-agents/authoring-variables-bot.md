@@ -185,7 +185,7 @@ You'll receive a warning about deleting the bot variable before you can confirm 
   
 Nodes that contain references to the deleted bot variable will tell you they contain an unknown variable. 
 
-![Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable](media/bot-variable-unknown-node.png "Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable]")
+:::image type="content" source="media/bot-variable-unknown-node" alt-text="Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable":::
 
 
 Topics with nodes that contain references to deleted bot variables might stop working. Ensure that you remove or correct all the topics that were using the deleted variable before publishing.
