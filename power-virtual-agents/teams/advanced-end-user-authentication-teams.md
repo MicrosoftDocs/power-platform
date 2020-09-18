@@ -102,7 +102,7 @@ If you have logic that uses the `AuthToken` variable (for example, to connect to
 ### Failure path
 The failure path equates to any condition other than `IsLoggedIn = True`. In most cases this is because the user failed to sign in, used the wrong password, or canceled the sign-in experience.
 
-You should add any logic you might want to treat this case. As an example, we have provided options for retrying or to [escalate to a live agent](advanced-hand-off-teams.md). You should customize this for your particular scenario and usage.
+You should add any logic you might want to treat this case. As an example, we have provided options for retrying or to [escalate to a live agent](authoring-create-edit-topics-teams.md#end-the-conversation). You should customize this for your particular scenario and usage.
 
 
 ## Testing your topic

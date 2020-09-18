@@ -186,7 +186,6 @@ You can [call Power Automate Flows](advanced-flow-teams.md) by selecting **Call 
 
 When you end the conversation, you can have a survey appear that asks the user if their question or issue was answered or resolved correctly. This information is collected under the [customer satisfaction analytics page](analytics-csat-teams.md).
 
-You can also have the conversation [handed over to a live agent](advanced-hand-off-teams.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service.
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
 

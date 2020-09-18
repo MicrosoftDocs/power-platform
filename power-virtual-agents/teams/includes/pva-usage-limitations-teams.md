@@ -1,1 +1,1 @@
-[Learn more about what you can do with Power Virtual Agents](https://docs.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+[Learn more about what you can do with Power Virtual Agents](https://docs.microsoft.com/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams).

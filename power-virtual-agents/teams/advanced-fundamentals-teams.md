@@ -1,6 +1,6 @@
 ---
 title: "Advanced authoring of chatbots in Teams"
-description: "Go beyond basic authoring by using slot filling, entities, variables, sign-in, live hand-off, and Power Automate flows."
+description: "Go beyond basic authoring by using slot filling, entities, variables, sign-in, and Power Automate flows."
 keywords: "PVA"
 ms.date: 8/3/2020
 ms.service: dynamics-365-ai
