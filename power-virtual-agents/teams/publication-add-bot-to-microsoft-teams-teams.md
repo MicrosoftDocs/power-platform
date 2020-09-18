@@ -180,7 +180,7 @@ Before submitting the bot to your organization, make sure:
 >Once a bot is approved by an admin, the bot availability in the **Built by your org** section will be completely managed by your admin. Only an admin can remove the bot from the **Built by your org** section.
 
 
-### Submit for the Built by your org section**
+### Submit for the Built by your org section
 
 1. Go to the **Chatbot** tab.
 
