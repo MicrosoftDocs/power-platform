@@ -14,7 +14,6 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
-  - 
 ---
 # About the Project Oakdale environment
 
