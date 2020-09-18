@@ -106,7 +106,7 @@ For example, a customer brings up a bot chat from your web site, and the site al
 
 1. On the **Variable properties** pane, in the **Usage** section, select the checkbox **External sources can set values**.
 
-:::image type="content" source="media/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected
+:::image type="content" source="media/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
 
 
 1. You can append the variables and their definitions if you're simply [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), or you can use a `<script>` code block to call and use variables programatically.
