@@ -20,6 +20,15 @@ After you've published at least once, you can connect your bot to additional cha
 
 Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. This will update the bot across all the channels where you've inserted or connected your bot.
 
+
+
+
+
+This allows other people in your Team to use your bot - but they can't edit or change the topics or answers. They can add the bot as an app by searching for it in the Teams app store, and they can see the list of topics and analytics for the bot, but they won't be able to edit anything.
+
+
+
+
 >   
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mGa9]
 >
