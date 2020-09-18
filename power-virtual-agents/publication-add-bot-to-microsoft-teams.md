@@ -27,7 +27,7 @@ Now that you've published your bot, you can make your bot show up in Microsoft T
 You can:
 
 - Install your bot in Microsoft Teams and share a direct installation link with others.
-- Share the bot with your organization by submitting it for admin approval to be featured in the Microsoft Teams app sore **Built by your org** section
+- Share the bot with your organization by submitting it for admin approval to be featured in the Microsoft Teams app store **Built by your org** section
 
 > [!NOTE]
 > By adding the bot to Microsoft Teams, some of your data, such as bot content and end-user chat content, will be shared with Microsoft Teams (meaning that your data will flow outside of your [organization’s compliance and geographic or regional boundaries](data-location.md)). <br/>
@@ -69,7 +69,7 @@ After publishing your bot at least once, you can connect your bot to the Microso
 
 After you published a bot, you and people in your organization can install to chat with it in Microsoft Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
 
-You can add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app, or you can get a link to share with other team members so they can add it to chat with it in Microsoft Teams.
+You can add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app, or you can get a link to share with other users so they can add it to chat with it in Microsoft Teams.
 
 
 >[!IMPORTANT]
@@ -100,7 +100,7 @@ You can add the bot to your own version of Microsoft Teams directly from the Pow
         :::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
 
         >[!IMPORTANT]
-        >Updates to the bot's icon and color will not apply to users who have already installed the bot via shared link.  They will need to reinstall to the bot to receive the updates.
+        >Updates to the bot's detail will not apply to users who have already installed the bot via shared link.  They will need to reinstall to the bot to receive the updates.
 
     2. Select **More** to add additional information:  
         - Developer name
@@ -204,9 +204,6 @@ You can download the bot’s Teams app manifest to make detail changes to the ma
 ## Disconnect your bot from Teams
 
 You can take your bot offline so users can no longer chat with the bot in Teams. This means the bot won't respond to anyone who tries to chat with it, and will disrupt anyone who is using the bot. You should thoroughly consider the need to disconnect your bot before you do so.
-
-For bots that are shared with a teammate, they will no longer find the bot in the Microsoft Teams app store **Built by your colleague** section or be able to install it from the shared link. Bots that are added by users in Microsoft Teams will continue to exist until the user uninstalls the bot.
-
 
 For bots that are shared with the organization, the bots will continue to be shown in the Microsoft Teams app store **Built by your org** section.  You will need to contact your admin to remove the bot.
 
