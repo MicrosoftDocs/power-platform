@@ -17,7 +17,6 @@ ms.collection: virtual-agent
 When you want to publish your bot so other Microsoft Teams users can access it, you need to provide the following information about your bot:
 
 - A link to a privacy statement that describes how you collect a user's data 
-  - [[!!What is the privacy/data collection policy of PVA? Presumably a Teams user isn't going to do any data collection beyond what PVA does to operate - so does it store data in CDS, geo locations, etc? Should we link to the [existing docs on data location](https://review.docs.microsoft.com/en-us/power-virtual-agents/data-location?branch=iawilt-teams#customer-data) and [GDPR](https://review.docs.microsoft.com/en-us/power-virtual-agents/gdpr-summary?branch=iawilt-teams)?!!]]
 - A link to the terms of use (TOU) for the bot
 - A link to the developer website for more information
 - The developer's name
@@ -28,8 +27,8 @@ The following table lists the default values that are provided in a Power Virtua
 
 Requirement | Default value | Suggestions
 -|-|-
-Privacy statement | *Blank* | You should work with your manager or IT department to determine what you want to say in your privacy statement. This should follow your organization's privacy practices. 
-Terms of use | *Blank* | Work with your manager or IT department to define the terms of use. Typically this would include any limitations you might have on how the information can be used. See [Teams privacy policy guidelines](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy).
+Privacy statement | Link to the Important note below | You should work with your manager or IT department to determine what you want to say in your privacy statement. This should follow your organization's privacy practices. 
+Terms of use | Link to the Important note below | Work with your manager or IT department to define the terms of use. Typically this would include any limitations you might have on how the information can be used. See [Teams privacy policy guidelines](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy).
 Developer website | Link to the [Power Virtual Agents overview page](https://go.microsoft.com/fwlink/?linkid=2138949) | You could include a link to your Office profile, or a SharePoint site for your team.
 Developer's name | *Powered by Power Virtual Agents* | You should include a name of someone who can be contacted in case someone has questions about the bot.
 

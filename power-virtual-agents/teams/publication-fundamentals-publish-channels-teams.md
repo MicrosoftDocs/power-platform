@@ -14,24 +14,15 @@ ms.collection: virtual-agent
 
 # Key Concepts - Publish your bot in Teams
 
-With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook. 
+Select the version of Power Virtual Agents you're using here:
 
-After you've published at least once, you can connect your bot to additional channels. 
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](../publication-fundamentals-publish-channels.md)
+> - [Power Virtual Agents app in Microsoft Teams](publication-fundamentals-publish-channels-teams.md)
 
-Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. This will update the bot across all the channels where you've inserted or connected your bot.
+Once you're satisfied with your bot’s content and quality, you can publish your bot to allow users to engage with your bot. You must publish your bot at least once for the user to chat with the bot in Microsoft Teams.
 
-
-
-
-
-This allows other people in your Team to use your bot - but they can't edit or change the topics or answers. They can add the bot as an app by searching for it in the Teams app store, and they can see the list of topics and analytics for the bot, but they won't be able to edit anything.
-
-
-
-
->   
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mGa9]
->
+Each time you want to update your bot’s content, you publish it again from within the Power Virtual Agents app in Microsoft Teams. This will update the bot’s content with the latest changes you have made.
 
 ## Prerequisites
 
@@ -50,32 +41,26 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 2. Select **Publish** to make the latest bot content available to your customers.
 
-    ![Publish latest bot content](media/channel-publish-latest-content-teams.png)
+    :::image type="content" source="media/channel-publish-latest-content-teams.png" alt-text="Publish latest bot content":::
 
 The publishing process will check for errors in the latest bot content.
 
-![Validate latest bot content for publish](media/channel-publish-validation-teams.png)
+Publication should take less than a few minutes and, when successful, you can view the bot in action in Microsoft Teams by selecting **Open the bot**. 
 
-Publication should take less than a few minutes and, when successful, you can view the bot in action and share it with your team by selecting the **demo website** link. This is useful to gather feedback from stakeholders involved in the bot. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot.
+You can also share the bot with your teammates by selecting **Share the bot** and then **Copy link**. The link will launch Microsoft Teams to prompt the user to install the bot so they can chat with it in Microsoft Teams. Learn more about [installing your bot in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md).
 
-![Go to demo website](media/channel-go-to-demo-website-teams.png)
-
-Go to the [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels-teams.md) topic for details on updating the welcome message and help text on the demo website.
+:::image type="content" source="media/publish-teams-copy-link.png" alt-text="The Copy link option creates a shareable link to the bot":::
 
 > [!TIP]
-> **What's the difference between the test chat and the demo website?** <br/>
-> The demo website lets you share a URL with other members of your team, or other stakeholders who want to try out the bot. It's not intended for production uses (for example, you shouldn't use it directly with customers). <br/>
-> The test chat is intended for bot authors to test how conversation nodes flow and if there are errors when they are creating and testing their bot.
+>You may want to try out the latest published content in Microsoft Teams.  
+>You can do so by typing *start over* in an existing conversation.  
+>This will restart the conversation with the latest content you have published.
 
-
-
+Now that you've published your bot and it's ready for others to use, you can [add your bot to different sections of the Microsoft Teams app store](publication-add-bot-to-microsoft-teams-teams.md).
 
 
  ## In this section
 
 
-- [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels-teams.md) | Publish your bot on your live website, or use a demo website to share internally.
 - [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md) | Use Teams to distribute your bot.
-- [Add bot to Facebook](publication-add-bot-to-facebook-teams.md) | Add your bot to Facebook Messenger.
-- [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application-teams.md) | Add your bot to mobile or custom native apps (developer coding required).
-- [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels-teams.md) | Add your bot to Azure Bot Service channels (developer coding required).
+- [Create a privacy statement and terms of use](publication-terms-of-use-teams.md) | Create and link to a privacy statement and terms of use for bots you create.

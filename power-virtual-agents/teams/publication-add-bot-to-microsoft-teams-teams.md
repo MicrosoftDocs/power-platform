@@ -17,8 +17,8 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../publication-add-bot-to-microsoft-teams.md)
-> - [Teams (online or app)](publication-add-bot-to-microsoft-teams-teams.md)
+> - [Power Virtual Agents web app (https://powerva.microsoft.com)](../publication-add-bot-to-microsoft-teams.md)
+> - [Power Virtual Agents app in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
@@ -45,7 +45,7 @@ You can:
 
 
 
-When you publish a bot, you make it available for people in your organization to install it into their Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
+When you publish a bot, you make it available for people in your organization to install it into their team. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
 
 You can then add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app, or you can get a link to share with other team members so they can add it to their Microsoft Teams apps.
 
@@ -71,7 +71,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
     :::image type="content" source="media/publish-option.png" alt-text="Alt text here.":::
 
-1. To add the bot to your Microsoft Teams list of apps, select **Open the bot** to have it go to the Teams app store, where it will automatically find and open the bot you just created. Click **Add for me** to have it added as an app in Teams. This only shows the bot for you.
+1. Select **Open bot** to have it go to the Teams app store, where it will automatically find and open the bot you just created. Select **Add for me** to have it added as an app in Teams. This only shows the bot for you.
 
 
 **Share a link so others can add the bot:**
@@ -119,7 +119,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 ## Share the bot with your Team
 
-Once you've published your bot, you can share it with other Microsoft Teams users so they can find it in the Microsoft Teams app store. You can share it with just your team, or with your entire organization (with admin approvale).
+Once you've published your bot, you can share it with other Microsoft Teams users so they can find it in the Microsoft Teams app store. You can share it with just your team, or with your entire organization (with admin approval).
 
 
 ### Add the bot to the Built by your colleagues section
@@ -161,7 +161,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 ## Share the bot with your organization
 
 
-You can share the bot with your organization by submiting your bot for admin approval to be featured in the **Built for *your-organization-name*** > **Built by your org** section.
+You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for *your-organization-name*** > **Built by your org** section.
 
 
 :::image type="content" source="media/publish-teams-your-org.png" alt-text=" ":::
