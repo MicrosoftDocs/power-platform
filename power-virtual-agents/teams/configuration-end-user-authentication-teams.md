@@ -37,14 +37,14 @@ Power Virtual Agents supports a set of different authentication options, each ta
 
 To change the authentication settings, go to **Manage** on the side navigation pane, and then go to the **Security** tab and select the **Authentication** card.
 
-:::image type="content" source="media/Teams/security-authentication-teams.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card":::
+:::image type="content" source="teams/media/security-authentication-teams.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card":::
 
 You will see the following three options to configure your authentication
 - No authentication
 - Only for Teams
 - Manual (for any channel including Teams)
 
-:::image type="content" source="media/Teams/security-authentication-pane-teams.png" alt-text="Screenshot of the Authentication pane showing the three authentication options":::
+:::image type="content" source="teams/media/security-authentication-pane-teams.png" alt-text="Screenshot of the Authentication pane showing the three authentication options":::
 
 ### No Authentication
 
