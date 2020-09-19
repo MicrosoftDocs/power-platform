@@ -120,8 +120,7 @@ This section shows an example of AAD being configured as an OAuth provider. If y
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot. 
 1. Select **Manage** on the side navigation pane, and then go to the **Security** tab and select the **Authentication** card.
  
-   <!-- This image needs to be updated with the new UI -->
-   ![Go to Manage and then Authentication](media/auth-manage-sm.png)
+:::image type="content" source="media/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu":::
 
 2. Enter the information as described for each of the fields in the following table. The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
 
