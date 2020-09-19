@@ -35,6 +35,17 @@ Power Virtual Agents supports the following authentication providers:
 
 Power Virtual Agents supports a set of different authentication options, each targeted to a different usage scenario. 
 
+To change the authentication settings, go to **Manage** on the side navigation pane, and then go to the **Security** tab and select the **Authentication** card.
+
+:::image type="content" source="media/security-authentication-teams.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card":::
+
+You will see the following three options to configure your authentication
+- No authentication
+- Only for Teams
+- Manual (for any channel including Teams)
+
+:::image type="content" source="media/security-authentication-pane-teams.png" alt-text="Screenshot of the Authentication pane showing the three authentication options":::
+
 ### No Authentication
 
 This configuration option provides no authentication for the bot. This is the standard configuration for bots that are not created from Teams. 
@@ -49,7 +60,9 @@ The following variables will be available in the authoring canvas once "Only for
 
 For more information about these variables, please see [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication).
 
-AuthToken and IsLoggedIn variables are not available for this configuration option. If you need an authentication token, please use the Manual option below.
+```AuthToken``` and ```IsLoggedIn``` variables are not available for this configuration option. If you need an authentication token, please use the Manual option below.
+
+If you changed from Manual to "Only for Teams", and your topics contained one of the variables ```AuthToken``` or ```IsLoggedIn```, they will be displayed as "Unknown" variables after the change. Make sure to correct any topics with errors before publishing your bot.
 
 ### Manual (for any channel including Teams)
 
@@ -99,7 +112,7 @@ Make sure to configure the redirect URL to be `https://token.botframework.com/.a
 2. Under the **Client secrets** section, select  **New client secret**. Enter a description (one will be provided if you leave this blank), and select the expiry period. Select the shortest period that will be relevant for the life of your bot.
 3. Select **Add** to create the secret. Take note of the secret's **Value** and store this in a temporary place (such as an open Notepad document), as you'll enter it in your bot's authentication settings.
 
-## Configure authentication
+## Configure authentication with Manual AAD
 
 This section shows an example of AAD being configured as an OAuth provider. If you select another Service Provider option, you might have fewer fields to configure. If you are using AAD as a provider, we recommend using the "Azure Active Directory" or "Azure Active Directory v2" instead for easier configuration.
 
@@ -107,8 +120,7 @@ This section shows an example of AAD being configured as an OAuth provider. If y
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot. 
 1. Select **Manage** on the side navigation pane, and then go to the **Security** tab and select the **Authentication** card.
  
-   <!-- This image needs to be updated with the new UI -->
-   ![Go to Manage and then Authentication](media/auth-manage-sm.png)
+:::image type="content" source="media/auth-manage-sm-teams.png" alt-text="Screenshot of the Authentication under Manage left bar menu":::
 
 2. Enter the information as described for each of the fields in the following table. The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
 
@@ -158,7 +170,7 @@ Once you have your authentication configured, make sure to go to Manage -> Secur
 
 ## Remove the authentication configuration
 
-1. Select **Manage** on the side navigation pane, and then go to the **Security** tab and cick on the **Authentication** card.
+1. Select **Manage** on the side navigation pane, and then go to the **Security** tab and click on the **Authentication** card.
 
 2. Select **No authentication**.
 

@@ -38,7 +38,7 @@ You can also configure single sign-on (SSO) so your users don't need to sign in 
 
 If your bot is configured with either "Only for Teams" or "Manual" authentication options, you will have a set of authentication variables available in your topics. Check the [authentication configuration documentation](configuration-end-user-authentication.md) for more information on how to configure authentication in your bot.
 
-The follow table compares authentication variable availability by authentication configuration option:
+The following table compares authentication variable availability by authentication configuration option:
 
 | Authentication Variable | No Authentication | Only for Teams | Manual | 
 | --- | :---: | :---: | :---: |
@@ -48,7 +48,7 @@ The follow table compares authentication variable availability by authentication
 | ```AuthToken```       | :x: | :x: | :heavy_check_mark: |
 
 #### UserDisplayName variable
-The ```UserDisplayName``` variable contains the user's display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
+The ```UserDisplayName``` variable contains the user’s display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
 
 This field value is obtained from the Azure Active Directory (Azure AD) ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
 
@@ -70,7 +70,7 @@ The ```IsLoggedIn``` variable indicates whether the user is signed in (either as
 The ```AuthToken``` variable contains the user's token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](advanced-flow.md) so they can connect to back-end APIs and fetch the user's information, or to take actions on the user's behalf.
 
 > [!WARNING] 
-> Make sure you're passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
+> Make sure you’re passing the `AuthToken` variable only to trusted sources. It contains user authentication information, which, if compromised, could harm the user.
 
 Don't use `AuthToken` inside **Message** nodes, or on flows that you don't trust. 
 
@@ -121,7 +121,7 @@ Users are only prompted to sign in once during a conversation, even if they enco
 
 ## AuthToken usage without an Authenticate node
 
-The ```IsLoggedIn``` and ```AuthToken``` variables are available even if you don't use the template provided by the **Call an action** menu entry. If you pass the `AuthToken` variable without first having the user go through the **Authenticate** node, the user will be prompted to sign in at that step. 
+The ```IsLoggedIn``` and ```AuthToken``` variables are available even if you don’t use the template provided by the **Call an action** menu entry. If you pass the `AuthToken` variable without first having the user go through the **Authenticate** node, the user will be prompted to sign in at that step. 
 
 Passing the `AuthToken` variable can be useful if you always expect the user to be signed in, or if your user is being redirected from a different topic. We suggest you use the template provided by the **Call an action** entry to treat cases where the user fails to sign in.
 
@@ -133,7 +133,7 @@ Passing the `AuthToken` variable can be useful if you always expect the user to 
 
 The success path equates to where ```IsLoggedIn = True``` and accounts for when the user has successfully signed in (or was already signed in). 
 
-If you have logic that uses the `AuthToken` variable (for example, to connect to a back-end system using a flow to retrieve a user's information), it should go under this path.
+If you have logic that uses the `AuthToken` variable (for example, to connect to a back-end system using a flow to retrieve a user’s information), it should go under this path.
 
 ### Failure path
 The failure path equates to any condition other than `IsLoggedIn = True`. In most cases the failure path occurs because the user failed to sign in, used the wrong password, or canceled the sign-in experience.

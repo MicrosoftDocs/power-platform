@@ -49,11 +49,7 @@ For example, if the user's browser locale setting is *en-GB*, the bot knows that
 
 ## Data locations
 
-Whichever data location is set for your Microsoft Teams instance will also be used by Power Virtual Agents. 
-
-For more information on the geographic locations supported by Power Virtual Agents, [see the web app version of this topic](../data-location.md).
-
-
+Power Virtual Agents in Teams can be created in the [supported data locations](data-location.md). You can create a bot if your tenant's location is supported, or you can use Power Virtual Agents web app by choosing the datacenter you want to use when [setting up your environment](environments-first-run-experience.md).
 
 ## See also
 
