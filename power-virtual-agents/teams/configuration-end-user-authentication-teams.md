@@ -41,7 +41,7 @@ This configuration option provides no authentication for the bot. This is the st
 
 ### Only for Teams
 
-This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (AAD) authentication for Teams without the need for any manual configuration. It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in teams, unless there is a need for expanded scope. Only Teams channel is available once this configuration is selected. If you need other channels but still want authentication for your bot, you need to choose the “Manual” authentication option below. This is the standard configuration for bots that are created from Teams.
+This configuration option is the default, out-of-the-box authentication option for bots created in Teams, and it's optimized for Teams channel usage. It automatically sets up Azure Active Directory (AAD) authentication for Teams without the need for any manual configuration. It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in teams, unless there is a need for expanded scope. Only Teams channel is available once this configuration is selected. If you need other channels but still want authentication for your bot, you need to choose the “Manual” authentication option below. 
 
 The following variables will be available in the authoring canvas once “Only for Teams” option is selected:
 * ```UserID```
@@ -124,7 +124,7 @@ Connection name | Friendly name for your identity provider connection. This can 
 Service Provider | This field can't be edited because Power Virtual Agents only supports generic OAuth2 providers. | Not applicable.
 Client ID | Your client ID obtained from the identity provider. | On the app registration's **Overview** page as **Application (client) ID**.
 Client Secret | Your client secret obtained from the identity provider registration. | When generating a new client secret. If you navigate away from the **Certificates & secrets** page, the secret's **Value** will be obfuscated and you'll need to create a new one. 
-Token exchange URL (required for single sign-on) | This is an optional field used when [configuring single sign-on](configure-sso.md). | xx
+Token exchange URL (required for single sign-on) | This is an optional field used when [configuring single sign-on](configure-sso.md). | [Consult the SSO configuration document](configure-sso.md)
 Refresh URL Query String Template | Refresh URL query string separator for the token URL. Usually a question mark '?'. | Use a question mark `?`.
 Refresh Body Template | Template for the refresh body.  | Use `refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}`.
 Scopes | List of [scopes](/azure/active-directory/develop/developer-glossary#scopes) you want authenticated users to have once signed in. Make sure you're only setting the necessary scopes, and follow the [Least privilege access control principle](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models).<br/>For example, `User.Read`. <br/>Note: If you're using a custom scope, use the full URI including the exposed Application ID URI. | On the **API permissions** page, note the scopes listed under the **API / Permissions** name section. Use spaces to separate multiple scopes. For custom scopes defined by an exposed API, include the API ID: on the **Expose an API** page, prepend the **Application ID URI** and ending slash `/` to the scope name. For example, if your custom scope name is `app.scope.sso`, and the **Application ID URI** is `api://1234-4567`, then you would enter `api://1234-4567/app.scope.sso` as the scope. 
@@ -136,7 +136,16 @@ Scope List delimiter | The separator character for the scope list. Empty spaces 
 Authorization URL Template | URL template for authorization, defined by your identity provider. <br />For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize` | On the app registration's **Overview** page, select **Endpoints**. This is listed as the **OAuth 2.0 authorization endpoint (v2)**.
 Authorization URL Query String Template | Query template for authorization, provided by your identity provider. <br />Keys in the query string template will vary depending on the identity provider. | Use `?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}`.
 
+<!--
+### Configuring Application ID URI for SSO
+For compatibility with Teams SSO, please configure your Application ID URI with the following format:
+``api://botid-{TeamsBotID}`` 
+Where ```TeamsBotID``` is the Bot's ID, which you can find under "Manage" -> "Channel" -> "Microsoft Teams" -> "Submit for admin approval" -> "Bot App Id".
 
+If the Bot ID is ```123456789-f897-4760-91db-35a3cb2d11d5```, the Application ID URI should be ```api://botid-123456789-f897-4760-91db-35a3cb2d11d5````
+
+For more information, [consult the SSO configuration document](configure-sso.md)
+-->
 
 ## Test your configuration
 
@@ -170,3 +179,5 @@ If authentication variables are being used in a topic, they will become "Unknown
 
 1. Delete the connection.
 
+## Known limitations
+- If your bot supports end-user authentication, the user will not be able to explicitly sign out in the Teams channel. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](https://docs.microsoft.com/en-us/office/dev/store/validation-policies).
