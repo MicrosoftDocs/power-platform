@@ -44,7 +44,7 @@ When you select the `{x}` button in a message node or question node when you're 
 
 When you use a condition node, a flow action node, or a skill node, you'll also see bot variables available there. 
  
-**Reuse a variable across topics by setting it as bot variable**
+**Reuse a variable across topics by setting it as a bot variable:**
 
 1. Select any variable in the authoring canvas.
 
@@ -157,7 +157,7 @@ In the examples described here, a simple declaration is made for the variables. 
         });
     ```
 
-2. Within your `<scrip>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
+2. Within your `<script>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
 
     ```html
     const BOT_ID = "12345-5678";
@@ -198,7 +198,7 @@ Topics with nodes that contain references to deleted bot variables might stop wo
 
 ## Authentication-related bot variables
 
-Depending on the bot's authentication setup, you will have a set of bot variables associated with the authentication provider available to you. For details about which set of variables area avilable and how to use them, please see the [Add end-user authentication to a Power Virtual Agents bot](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-end-user-authentication) documentation.
+Depending on the bot's authentication setup, you will have a set of bot variables associated with the authentication provider available to you. For details about which set of variables are available and how to use them, see the [Add end-user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) documentation topic.
 
 ## Related links
 

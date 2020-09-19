@@ -41,9 +41,9 @@ This configuration option provides no authentication for the bot. This is the st
 
 ### Only for Teams
 
-This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (AAD) authentication for Teams without the need for any manual configuration. It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in teams, unless there is a need for expanded scope. Only Teams channel is available once this configuration is selected. If you need other channels but still want authentication for your bot, you need to choose the “Manual” authentication option below. This is the standard configuration for bots that are created from Teams.
+This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (AAD) authentication for Teams without the need for any manual configuration. It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in teams, unless there is a need for expanded scope. Only Teams channel is available once this configuration is selected. If you need other channels but still want authentication for your bot, you need to choose the "Manual" authentication option below. This is the standard configuration for bots that are created from Teams.
 
-The following variables will be available in the authoring canvas once “Only for Teams” option is selected:
+The following variables will be available in the authoring canvas once "Only for Teams" option is selected:
 * ```UserID```
 * ```UserDisplayName```
 
@@ -103,7 +103,7 @@ Make sure to configure the redirect URL to be `https://token.botframework.com/.a
 
 ## Configure authentication
 
-This section shows an example of AAD being configured as an OAuth provider. If you select another Service Provider option, you might have fewer fields to configure. If you are using AAD as a provider, we recommend using the “Azure Active Directory” or “Azure Active Directory v2” instead for easier configuration.
+This section shows an example of AAD being configured as an OAuth provider. If you select another Service Provider option, you might have fewer fields to configure. If you are using AAD as a provider, we recommend using the "Azure Active Directory" or "Azure Active Directory v2" instead for easier configuration.
 
 1. Sign in to Power Virtual Agents. If you're using Azure AD as your identity provider, ensure you log in on the same tenant where you created the app registration.
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot. 
@@ -146,7 +146,7 @@ After the setup steps are complete, save your configuration and test it by [crea
 
 ## Set the appropriate access control for your end users
 
-Once you have your authentication configured, make sure to go to Manage -> Security -> Access and configure the appropriate access control for your bot. You can learn more about access control in the [“Assign access...” documentation](https://review.docs.microsoft.com/power-virtual-agents/teams/configuration-security-teams) documentation
+Once you have your authentication configured, make sure to go to Manage -> Security -> Access and configure the appropriate access control for your bot. You can learn more about access control in the ["Assign access..." documentation](https://review.docs.microsoft.com/power-virtual-agents/teams/configuration-security-teams) documentation
 
 
 ## Remove the authentication configuration

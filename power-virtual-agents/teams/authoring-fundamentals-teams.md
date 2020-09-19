@@ -57,10 +57,10 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 
 Topic | Description
 - | -
-[Create your first bot](authoring-first-bot-teams.md) | Create your first bot in less than 30 minutes.
+[Create and delete bots](authoring-first-bot-teams.md) | Create and delete bots.
 [Use lesson topics](authoring-template-topics-teams.md) | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.
-[Create and edit topics](authoring-create-edit-topics-teams.md) | Create and edit topics using the no-code authoring canvas.
+[Create and edit topics](authoring-create-edit-topics-teams.md) | Create and edit topics..
 [Use system fallback topic](authoring-system-fallback-topic-teams.md) | Use a system fallback topic for when your bot can't find an answer.
 [Manage topics](authoring-topic-management-teams.md) | Copy, edit, and manage which topics should be available in your bot.
-[Test your bot](authoring-test-bot-teams.md) | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.
-[Supported languages](authoring-language-support-teams.md) | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization.
+[Test your bot](authoring-test-bot-teams.md) | Test your bot directly within the Power Virtual Agents app as you make changes.
+[Supported languages](authoring-language-support-teams.md) | Choose from a number of languages when you create your bot.

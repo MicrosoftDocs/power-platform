@@ -8,7 +8,8 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: flow, ceX, advanced-authoring
+ms.reviewer: clmori
+ms.custom: flow, ceX, advanced-authoring, teams
 ms.collection: virtual-agent
 ---
 
@@ -59,7 +60,7 @@ Using the **Create a flow** option opens a template selection screen.
 >[!NOTE]
 >Save your topic before creating a new flow, as you will be taken to Power Automate for this operation.
 
-You will find a list of templates which helps you quickly get started creating Power Automate flows. For this example, we will pick the basic “Power Virtual Agents Flow Template". 
+You will find a list of templates which helps you quickly get started creating Power Automate flows. For this example, we will pick the basic "Power Virtual Agents Flow Template". 
 
 After that, you'll see a blank flow template.
 
@@ -68,12 +69,12 @@ After that, you'll see a blank flow template.
 
 ## Input and output parameters
 
-See the [Power Virtual Agents app documentation on flows](../advanced-flow.md) for details on inputs and outputs and restrictions. 
+See the [Power Virtual Agents web app documentation on flows](../advanced-flow.md) for details on inputs and outputs and restrictions. 
 
 
 ### Input parameters
 
-To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface, and then select the type a - `string`, `number`, or a `boolean`.
+To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface, and then select the type: a `string`, `number`, or `boolean`.
 
 
 
@@ -110,9 +111,9 @@ Now when you go to call an action and choose **Flow**, you'll see the flow you c
 In this flow, we're going to provide a special message and email when someone asks about conference rooms.
 
 1. Create a new topic with the trigger phrase "**Is there a conference room available?**". 
-2. Add a **Question** node that asks "**How many people are in the meeting?**". By default, it will be set to accept ("identify") multiple choice options - change that to **Number**. At the bottom, click on the variable called "**Var**" and change it to "**Numberguests**"
+2. Add a **Question** node that asks "**How many people are in the meeting?**". By default, it will be set to accept ("identify") multiple choice options - change that to **Number**. At the bottom, click on the variable called "**Var**" and change it to "**Numberguests**".
 
-3. Add a **Question** node that asks "**Do you have any requirements**". By default, it will be set to accept ("identify") multiple choice options - change that to **User's entire response**. At the bottom, click on the variable called "**Var**" and change it to "**Requirements**"
+3. Add a **Question** node that asks "**Do you have any requirements**". By default, it will be set to accept ("identify") multiple choice options - change that to **User's entire response**. At the bottom, click on the variable called "**Var**" and change it to "**Requirements**".
 
 :::image type="content" source="media/flow-test-1.png" alt-text="Add a question node to canvas":::
 
@@ -122,10 +123,10 @@ In this flow, we're going to provide a special message and email when someone as
 
  :::image type="content" source="media/flow-test-2.png" alt-text="Insert message node in canvas":::
 
-6. Add a **Call an action** node, and select a new flow
-7. Pick the first flow template (Power Virtual Agents Flow Template)
-8. In the flow template, enter a string input called "Input_Requirements" and a number input called "Number_Attendees".
-9. Add an Outlook connector after the input to send an outlook message, and enter the variables in the body. Save the flow and return to the Power Virtual Agents authoring canvas.
+6. Add a **Call an action** node, and select a new flow.
+7. Pick the first flow template (Power Virtual Agents Flow Template).
+8. In the flow template, enter a string input called **Input_Requirements** and a number input called **Number_Attendees**.
+9. Add an Outlook connector after the input to send an Outlook message, and enter the variables in the body. Save the flow and return to the Power Virtual Agents authoring canvas.
 
 :::image type="content" source="media/flow-test-3.png" alt-text="Send a message via Outlook connector":::
 
@@ -137,7 +138,4 @@ Now when the bot user tells the bot how many people, and any requirements, an em
 
 
 
-
-
-
-See the [Power Virtual Agents app documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios using flow.
+See the [Power Virtual Agents app documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios using flows.
