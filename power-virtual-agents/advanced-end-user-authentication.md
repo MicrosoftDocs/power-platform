@@ -43,8 +43,18 @@ The ```UserDisplayName``` variable contains the user’s display name stored in 
 This field value is obtained from AAD ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
 
 #### UserID variable
+The ```UserID``` variable contains the user's ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that takes the UserID as a value.
+This field value is obtained from AAD ```id``` field. For OAuth providers, this is the value stored in the ```user_id``` claim. Power Virtual Agents automatically extracts this field into the variable.
+
+> [!WARNING]
+> The ```UserDisplayName``` and ```UserID``` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Please test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.
+
+#### IsLoggedIn variable
+
+The ```IsLoggedIn``` variable indicates whether the user is signed in (either as a result of signing in or already being signed in, also known as the log-in success path) or not signed in (which would result in the log-in failure path).
 
 ```IsLoggedIn``` is a boolean-type variable containing the signed-in status of the user. You can use this variable to create branching logic in your topics that checks for a successful sign-in (for example, in the template already provided as part of adding the **Authenticate** node), or to opportunistically fetch user information only if the user is signed in.
+
 #### AuthToken variable
 
 The ```AuthToken``` variable contains the user’s token, obtained after the user is signed in. You can pass this variable to [Power Automate flows](how-to-flow.md) so they can connect to back-end APIs and fetch the user’s information, or to take actions on the user’s behalf.
