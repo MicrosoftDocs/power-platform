@@ -32,7 +32,7 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 
 You can also combine the customized canvas with [configuring your bot to automatically start the conversation](configure-bot-greeting-teams.md).
 
-Lastly, you can change the name and bot icon (when the bot is [shared in Microsoft Teams](publication-add-bot-to-microsoft-teams.md)) directly from the portal.
+Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (when the bot is [shared in Microsoft Teams](publication-add-bot-to-microsoft-teams.md)) directly from the portal.
 
 
 ## Prerequisites
