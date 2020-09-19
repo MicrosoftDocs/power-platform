@@ -29,15 +29,19 @@ and the bot name at any time, and add a long and short description when you publ
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
-## Change the bot icon and name
+## Change the bot avatar icon and name
 
 1. On the side navigation pane, select **Manage** and then **Details**.
 
     :::image type="content" source="media/custom-canvas-details-teams.png" alt-text=" ":::
 
-2. Make changes to the **Bot name** and icon.  
-    The icon needs to be an image type and can be any size - it will be automatically resized and positioned so it is in the middle of the colored square. 
+2. Make changes to the **Bot name** and bot avatar icon.  
+    The avatar icon needs to be an image type and can be any size - it will be automatically resized and positioned so it is in the middle of the colored square. 
     We recommend you use a 32x32 pixel or 64x64 pixel .png file with transparency, so that way the color will come through the icon.
+    
+>[!NOTE]
+>Setting the bot avatar icon will not show up for bots that are approved by an admin. Bots approved by an admin will use the Teams app icon as the bot avatar. Learn more on [sharing the bot with organization](#share-the-bot-with-your-organization). 
+    
 
 
 3. When you're finished, select **Save** on the top menu bar.
