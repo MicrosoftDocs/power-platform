@@ -1,7 +1,7 @@
 ---
 title: "Configure user authentication"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
-keywords: "Authentication, IdP, PVA"
+keywords: "Authentication, IdP, PVA, AAD"
 ms.date: 8/3/2020
 ms.service: dynamics-365-ai
 ms.topic: article
@@ -34,6 +34,17 @@ Power Virtual Agents supports the following authentication providers:
 ## Chose the best authentication option
 
 Power Virtual Agents supports a set of different authentication options, each targeted to a different usage scenario. 
+
+To change the authentication settings, go to **Manage** on the side navigation pane, and then go to the **Security** tab and select the **Authentication** card.
+
+:::image type="content" source="media/security-authentication.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card":::
+
+You will see the following three options to configure your authentication
+- No authentication
+- Only for Teams
+- Manual (for any channel including Teams)
+
+:::image type="content" source="media/security-authentication-pane.png" alt-text="Screenshot of the Authentication pane showing the three authentication options":::
 
 ### No Authentication
 
@@ -101,7 +112,7 @@ Make sure to configure the redirect URL to be `https://token.botframework.com/.a
 2. Under the **Client secrets** section, select  **New client secret**. Enter a description (one will be provided if you leave this blank), and select the expiry period. Select the shortest period that will be relevant for the life of your bot.
 3. Select **Add** to create the secret. Take note of the secret's **Value** and store this in a temporary place (such as an open Notepad document), as you'll enter it in your bot's authentication settings.
 
-## Configure authentication
+## Configure authentication with Manual AAD
 
 This section shows an example of AAD being configured as an OAuth provider. If you select another Service Provider option, you might have fewer fields to configure. If you are using AAD as a provider, we recommend using the “Azure Active Directory” or “Azure Active Directory v2” instead for easier configuration.
 
@@ -126,7 +137,7 @@ Connection name | Friendly name for your identity provider connection. This can 
 Service Provider | This field can't be edited because Power Virtual Agents only supports generic OAuth2 providers. | Not applicable.
 Client ID | Your client ID obtained from the identity provider. | On the app registration's **Overview** page as **Application (client) ID**.
 Client Secret | Your client secret obtained from the identity provider registration. | When generating a new client secret. If you navigate away from the **Certificates & secrets** page, the secret's **Value** will be obfuscated and you'll need to create a new one. 
-Token exchange URL (required for single sign-on) | This is an optional field used when [configuring single sign-on](configure-sso.md). | xx
+Token exchange URL (required for single sign-on) | This is an optional field used when [configuring single sign-on](configure-sso.md). | [Consult the SSO configuration document](configure-sso.md)
 Refresh URL Query String Template | Refresh URL query string separator for the token URL. Usually a question mark '?'. | Use a question mark `?`.
 Refresh Body Template | Template for the refresh body.  | Use `refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}`.
 Scopes | List of [scopes](/azure/active-directory/develop/developer-glossary#scopes) you want authenticated users to have once signed in. Make sure you're only setting the necessary scopes, and follow the [Least privilege access control principle](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models).<br/>For example, `User.Read`. <br/>Note: If you're using a custom scope, use the full URI including the exposed Application ID URI. | On the **API permissions** page, note the scopes listed under the **API / Permissions** name section. Use spaces to separate multiple scopes. For custom scopes defined by an exposed API, include the API ID: on the **Expose an API** page, prepend the **Application ID URI** and ending slash `/` to the scope name. For example, if your custom scope name is `app.scope.sso`, and the **Application ID URI** is `api://1234-4567`, then you would enter `api://1234-4567/app.scope.sso` as the scope. 
@@ -139,6 +150,16 @@ Authorization URL Template | URL template for authorization, defined by your ide
 Authorization URL Query String Template | Query template for authorization, provided by your identity provider. <br />Keys in the query string template will vary depending on the identity provider. | Use `?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}`.
 
 
+<!--
+### Configuring Application ID URI for SSO
+For compatibility with Teams SSO, please configure your Application ID URI with the following format:
+``api://botid-{TeamsBotID}`` 
+Where ```TeamsBotID``` is the Bot's ID, which you can find under "Manage" -> "Channel" -> "Microsoft Teams" -> "Submit for admin approval" -> "Bot App Id".
+
+If the Bot ID is ```123456789-f897-4760-91db-35a3cb2d11d5```, the Application ID URI should be ```api://botid-123456789-f897-4760-91db-35a3cb2d11d5````
+
+For more information, [consult the SSO configuration document](configure-sso.md)
+-->
 
 ## Test your configuration
 
