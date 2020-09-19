@@ -45,7 +45,7 @@ You can:
 
 
 
-After you published a bot, you and people in your organization can install to chat with it in Microsoft Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
+After you have published a bot, you and people in your organization can install to chat with it in Microsoft Teams. Whenever you make updates to your bot and publish it, those updates will be reflected in everyone's copy of the bot.
 
 You can add the bot to your own version of Microsoft Teams directly from the Power Virtual Agents app, or you can get a link to share with other team members so they can add it to chat with it in Microsoft Teams.
 
@@ -278,10 +278,10 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 
 
 ## Known limitations
-- Currently only **Personal** scope is supported for Microsoft Teams so users can only have private conversation with the bot
-- By setting bot avatar icon via **Manage -> Detail** will not show up for bots that are approved by admin.  Bots approved by admin will use the app icon as the bot avatar.
-- Teams has [rate limiting](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/rate-limit) on bots.  Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
-- Disconnecting your bor from Teams might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
+- Currently only the **Personal** scope is supported for Microsoft Teams, so users can only have a private conversation with the bot.
+- Setting the bot avatar icon with **Manage** > **Detail** will not show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
+- Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots.  Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
+- Disconnecting your bot might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
 
 
 
