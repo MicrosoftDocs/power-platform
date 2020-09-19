@@ -231,19 +231,26 @@ Turning this flow is optional; and only recommended if you are using Power Virtu
 
 ### Admin \| Sync Template v2 (Check Deleted)
 
-This flow runs weekly, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted.
+This flow runs weekly, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var *Also Delete from CoE* = no) or deletes them from the CoE (if *Also Delete from CoE* = yes).
 
 ### Admin \| Sync Template v2 (Sync Flow Errors)
 
 Runs on a schedule, and sends an email to the admin about environments that failed to sync (with a link to the flow instance).
 
-### Admin \| Sync Template v2 (Check Deleted)
+### Admin \| Sync Template v2 (RPA)
 
-This flow runs weekly, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var *Also Delete from CoE* = no) or deletes them from the CoE (if *Also Delete from CoE* = yes).
+Runs when an environment is created or updated, and retrieves UI flow information. This information is retrieved from underlying CDS entities and requires the user running the flow to have System Administrator privileges to the environment.
+
+Turning this flow is optional; and only recommended if you are using UI flows in your tenant and interested in getting tenant wide overview.
+
+### Admin \| Sync Template v2 (UI flow runs)
+
+This flow runs on a schedule, and gets UI flow run history and session details.
+Turning this flow is optional; and only recommended if you are using UI flows in your tenant and interested in getting tenant wide overview.
 
 ## Apps
 
-### DLP Editor
+<!--### DLP Editor
 
 Canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps that are affected by the policy configurations.
 
@@ -265,7 +272,7 @@ Canvas app you can use to add custom connectors to the Business Data Group of a 
 
 **Permission**: Intended to be used only by admins: Power Platform Service Admin or Global Admin permission required. Share with your CoE Admins.
 
-![DLP Customizer](media/coe52.png)
+![DLP Customizer](media/coe52.png)-->
 
 ### Set App Permissions
 

@@ -21,17 +21,6 @@ search.app:
 
 Multiple governance components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
-## Import the solution
-
-The Core Components solution is required for the Audit and Report Components solution, or any other component in the starter kit, to work.
-
-1. Follow the instructions detailed under [Set up core components](setup-core-components.md).
-
-1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
-1. Create a new connection to the **Approvals** connector
-    ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
-1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
-
 ## Create a SharePoint document library
 
 The *Archive and Clean Up* flows will archive unneeded apps to a SharePoint library. If you intend to use those flows, you need to configure a SharePoint site and document library first.
@@ -73,6 +62,27 @@ If you already have a security group ready, go to [portal.azure.com](<https://po
 
     ![Azure portal group](media/coe13.png "Azure portal group")
 
+## Import the solution
+
+The Core Components solution is required for the Audit and Report Components solution, or any other component in the starter kit, to work.
+
+1. Follow the instructions detailed under [Set up core components](setup-core-components.md).
+
+1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
+1. Create a new connection to the **Approvals** connector
+    ![Import the Center of Excellence - Governance components solution](media/msig-import.png "Import the Center of Excellence - Governance components solution")
+1. Update the Environment Variable values. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
+
+    | Name | Current value |
+   |------|---------------|
+   | Archive Site URL (SharePoint Site)  | The *Archive and Clean Up* flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library).
+   | Archive Folder                      | Folder (document library) in the SharePoint site where the .msapp file should be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library).   |
+   | Auto Delete On Archive | Determines whether apps are deleted when they're archived in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of No is provided. |
+   | Developer Compliance Center         | Leave this blank on import, and [update the enviornment variable](#update-environment-variable) after the import has finished by first navigating to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
+   | Power Platform Admin Security Group | The *Admin \| Find and add admins as owners for apps that leverage certain connectors* flow adds the Admin security group to apps. Configure the Admin security group first, then enter the Azure AD group ID (Object Id) of the group here. Note: Be sure you enter the Object Id, not an email address. |
+
+1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
+
 ## Update environment variables
 
 This step should be completed after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment..
@@ -84,7 +94,7 @@ All flows in this solution depend on all environment variables' being configured
 
 1. Select **See Environment Variables** to set the values as described in the following table.
 
-   | Name | Default value |
+   | Name | Current value |
    |------|---------------|
    | Archive Site URL (SharePoint Site)  | The *Archive and Clean Up* flow archives app files (.msapp) to a SharePoint site. Paste the URL of the team site you created earlier in [Create a SharePoint document library](#create-a-sharepoint-document-library).
    | Archive Folder                      | Folder (document library) in the SharePoint site where the .msapp file should be stored. Paste the name of the [document library you created earlier](#create-a-sharepoint-document-library).   |
@@ -127,15 +137,13 @@ The archive approval flows (*Admin \| App Archive and Clean Up – Start Approva
 
 This Governance Components solution contains seven flows:
 
--  Admin \| App Archive and Clean Up – Start Approval
--  Admin \| App Archive and Clean Up – Check Approval
--  Admin \| Flow Archive and Clean Up – Start Approval
--  Admin \| Flow Archive and Clean Up – Check Approval
--  Admin \| Compliance detail request
--  SETUP REQUIRED \| Admin \| Find and add admins as owners for apps that leverage certain connectors ([Customization Instructions](governance-components.md#setup-required--admin--find-and-add-admins-as-owners-for-apps-that-leverage-certain-connectors))
--  SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors ([Customization Instructions](governance-components.md#setup-required--admin--find-and-disable-flows-that-leverage-certain-connectors))
+- Admin \| App Archive and Clean Up – Start Approval
+- Admin \| App Archive and Clean Up – Check Approval
+- Admin \| Flow Archive and Clean Up – Start Approval
+- Admin \| Flow Archive and Clean Up – Check Approval
+- Admin \| Compliance detail request
 
-Follow the same instructions to configure the flows as explained in [Activate the Sync Template flows](setup-core-components.md#activate-the-sync-template-flows).
+These flows will be turned off on solution import, and you can turn them on once you're ready to use them.
 
 ## Share apps with makers
 

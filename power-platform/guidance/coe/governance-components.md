@@ -110,7 +110,7 @@ On a scheduled interval, checks for approval responses created by the Flow Archi
 
 **Customize**: By default, this flow will archive the flow but not remove it or its permission from the environment, so that we don't inadvertently remove flows from your tenant. Update the [**Auto Delete On** Archive environmental variable](setup-governance-components.md#update-environment-variables) to also delete the flow.
 
-### SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
+<!--### SETUP REQUIRED \| Admin \| Find and disable flows that leverage certain connectors
 
 > [!NOTE]
 > Are you aware of the [Data Loss Prevention Policy](https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention#the-effect-of-the-blocked-data-group) feature to block connectors. Connectors that are blocked can't be used by either flow or app makers. You might want to consider blocking the connector instead of having a reactive flow setup to discover its usage.
@@ -130,7 +130,7 @@ Checks whether any flows are using specific connectors, notifies the flow maker,
 
 Checks for apps that use certain connectors, notifies the app maker, and shares the app with the admin security group.
 
-**Customize**: On setup, the array provided is blank so that we don't inadvertently add owners to apps with connectors in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.  
+**Customize**: On setup, the array provided is blank so that we don't inadvertently add owners to apps with connectors in your tenant. You must specify what connectors you want to audit by editing the flow and updating the *disableConnectorArray* as shown for the connectors of your choice.  -->
 
 ## Apps
 

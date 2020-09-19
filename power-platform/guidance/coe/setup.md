@@ -42,7 +42,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     -  This solution will work for environment admins, but the view will be restricted to only the environments an environment admin has access to.
     -  Dynamics 365 service admin is required for getting details about model-driven apps and solution-aware flows.
 
--  Power Apps Premium license (per app, per user, or Dynamics 365 Online licenses) is required for using Common Data Service.
+-  Power Apps Premium license (per app, per user) is required for using Common Data Service.
 
 -  Environment with a Common Data Service instance, where the user installing the solution has the System Administrator security role.
 
@@ -58,7 +58,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
 These are the requirements for using the solution.
 
-- Power Apps Premium license (per app, per user, or Dynamics 365 Online licenses).
+- Power Apps Premium license (per app, per user).
 
 - For the Core Components solution, only the admins need a Power Apps Premium license. For the Governance Components solution, all makers require a Premium license. For the Nurture Components solution, everyone will require a Premium license.
 

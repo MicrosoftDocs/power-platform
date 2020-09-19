@@ -23,11 +23,11 @@ The Center of Excellence (CoE) Core Components solution provides components that
 
 The Core Components solution contains assets that are only relevant to admins.
 
-Watch the [setup instructions video](https://youtu.be/L8gKjeE5GR4) to help you download and deploy the solution.
+<!-- need to re-record due to new solution import experience Watch the [setup instructions video](https://youtu.be/L8gKjeE5GR4) to help you download and deploy the solution. -->
 
 ## Import the solution
 
-This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. More information about how to decide on the best strategy for your organization: [Establishing an Environment Strategy for Microsoft Power Platform](https://powerapps.microsoft.com/blog/establishing-an-environment-strategy-for-microsoft-power-platform/) and [Application lifecycle management](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management)
+This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. More information about how to decide on the best strategy for your organization: [Establishing an Environment Strategy for Microsoft Power Platform](https://docs.microsoft.com/power-platform/guidance/adoption/environment-strategy) and [Application lifecycle management](https://docs.microsoft.com/power-platform/admin/wp-application-lifecycle-management)
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
@@ -54,9 +54,7 @@ This is the first step of the installation process and is required for every oth
     1. Select **Common Data Service**.
      ![Select the Common Data Service connector](media/msi-connection.png "Select the Common Data Service connector")
     1. Select **Create**.
-
-          ![Create a connection to the Common Data Service](media/msi-create.png "Create a connection to the Common Data Service")
-    1. Complete these steps for these connectors:
+    1. Complete the same steps for these connectors:
         - Common Data Service
         - Common Data Service (current environment)
         - Power Apps for Admins
@@ -71,9 +69,7 @@ This is the first step of the installation process and is required for every oth
 
 1. Select **Solutions** on the left navigation bar.
 
-1. Select **Import**.
-
-1. Select **Browse**.
+1. Select **Import** and **Browse**
 
 1. Choose the **Center Of Excellence Core Components** solution from the file explorer (CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip).
 
@@ -84,35 +80,21 @@ This is the first step of the installation process and is required for every oth
 
      ![Establish connections to activate your solution](media/msi-import.png "Establish connections to activate your solution.")
 
-1. Don't update the environment variable values at this stage. You will update them after the import, see [update environment variables](#update-environment-variables).
-
-1. Select **Import**
-1. The import can take up to ten minutes to complete.
-
-## Update environment variables
-
->[!IMPORTANT]
-> Currently it is necessary to configure Environment Variables after the import, despite being asked to do so during the solution import.
-
-The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
-
-All of the sync flows depend on all environment variables' being configured.
-
->[!TIP]
->To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
-
-- Select a variable, and then configure its **Default Value**.
-
-   ![Edit environment variable](media/coe8.PNG "Edit environment variable")
+1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All of the flows in the solution depend on all environment variables' being configured.
 
     Configure the following variables for the Core Components solution, and then select **Save**.
 
-    | Name | Default Value |
+    | Name | Current Value |
     |------|---------------|
     |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
-    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
-    |Also Delete from CoE | When the **Admin \| Sync Template v2 (Check Deleted)** flow is run, this denotes if you want the items items deleted from CoE (yes) or just mark deleted (no) |
+
+     ![Update environment variable values.](media/msi-envvar.png "Update environment variable values.")
+
+    See [Update environment variables](#update-environment-variables) if you need to change the value of an environment variable after import.
+
+1. Select **Import**
+1. The import can take up to ten minutes to complete.
 
 ## Activate the Sync Template flows
 
@@ -124,44 +106,11 @@ The sync flows are used to write or delete data from the admin connectors into t
 
     ![Ensure all flows are on](media/msi-run.PNG "Ensure all flows are on")
 
-    >[!TIP]
-    >To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Flow**.
-
-1. Select the **Admin \| Sync Template v2** and click **Run** to manually start the first sync of your tenant data into the entities. Going forward, this will happen on a nightly schedule.
-
-The following flows are required to sync data to the resource entities:
-
--  **Admin \| Sync Template v2**  
-    Flow type: Scheduled (daily by default)  
-    Description: This flow syncs environment details to the CoE Common Data Service entity, Environments.
-
--  **Admin \| Sync Template v2 (apps, custom connectors, flows, model-driven apps, PVA, Power Apps Users Shared With, RPA)**  
-    Flow type: Automated  
-    Description: These flows rely on the _Admin \| Sync Template v2_ flow and are triggered automatically when environment details are created or modified in the CoE Common Data Service Environments entity. These flows then crawl environment resources and store data in the PowerApps App, Flow, Connection Reference, PVA, Power Platform Users and Maker entities.
-
-1. (Optional) **Admin \| Sync Template v2 (Flow Action Details)**  
-    Flow type: Scheduled (daily by default)  
-    Description: This flow stores all triggers and actions from all the the Power Automate flows in your tenant.
-    Note that this flow is resource and performance intense; only enable this flow if you are interested in action and trigger specific reporting.
-
-1. **Admin \| Sync Template v2 (Connectors)**  
-    Flow type: Scheduled (daily by default)  
-    Description: This flow stores all connector information in the Common Data Service PowerApps Connector entity.
-
-1. **Admin \| Sync Template v2 (Sync Flow Errors)**  
-    Flow type: Scheduled (daily by default)  
-    Description: If any of the sync flows fail, the failure is stored in the Common Data Service Sync Flow Errors entity. This scheduled flow sends a report of failures to the admin.
-
-1. **Admin \| Sync Template v2 (Check Deleted)**  
-    Flow type: Scheduled (weekly by default)  
-    Description: Compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var *Also Delete from CoE* = no) or deletes them from the CoE (if *Also Delete from CoE* = yes).
-1. **Admin \| Sync Template v2 (UI Flow Sessions)**  
-    Flow type: Scheduled (daily by default)  
-    Description: This flow gets Ui Flow run information and stores it in the RPA Session entity.
+1. The Sync Flows will start after importing the solution, there is no need to manually run them.
 
 ## Configure the CoE Settings entity
 
-This section explains how to enter data in the CoE Settings entity, which is included in the Common Data Service instance from step 2, above.
+This section explains how to enter data in the CoE Settings entity.
 
 This entity will hold a single row of information which contains your logo, brand colors, and so on, which different applications will reference.
 
@@ -170,7 +119,7 @@ The following assets depend on the CoE Settings entity:
 - **Canvas apps**: The optional branding details (logo, brand colors) in all the canvas apps are pulled from this entity. Optional support and community channel links are also used.
 - **Optional flows**: The optional branding details and support channel links are used in the communication flows. You'll also configure links to the canvas apps in the settings. (The main flow that syncs data to the resource entities doesn't depend on this setting configuration.)
 
-1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Apps**, and open the Power Platform Admin View model-driven app in Play mode.
+1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Apps**, and open the **Power Platform Admin View** model-driven app in Play mode.
 
 1. In the left navigation, select **Configure**.
 
@@ -194,7 +143,7 @@ The following assets depend on the CoE Settings entity:
 | Link to Community Channel    | Link to your internal Microsoft Power Platform community (for example, Yammer, Teams)                            |
 Link to Learning Resource    | Link to internal Microsoft Power Platform learning resources, or you might link to aka.ms/PowerUp    |
 Link to Policy Documentation | Link to internal Microsoft Power Platform policies; for example, a Teams channel or SharePoint site |
-Version                      | Set to 1.0                                                                                            |
+Version                      | Set to 1.0                                                                                          |
 
 ## Set up Audit Log sync
 
@@ -225,3 +174,25 @@ After the sync flows have finished running (depending on the number of environme
    This will open a new tab to the **Flow detail** page.
 
 1. View **Runs**.
+
+## Update environment variables
+
+>[!IMPORTANT]
+> You don't have to complete this step during setup, but only when you need to change the environment variable value configured during import.
+
+The environment variables are used to store application and flow configuration data with data specific to your organization or environment. 
+You don't have to complete this step during setup, but only when you need to change the environment variable value configured during import.
+
+>[!TIP]
+>To view all environment variables in the environment, open the default solution for the environment, and set the **Type** filter to **Environment variable**.
+
+- Select a variable, and then configure its **Current Value**.
+
+    Configure the following variables for the Core Components solution, and then select **Save**.
+
+    | Name | Current Value |
+    |------|---------------|
+    |Power Automate Environment Variable | For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
+    |Admin eMail                         | Email address used in flows to send notifications to admins; this should be either your email address or a distribution list |
+    |eMail Header Style                  | CSS style used to format emails that are sent to admins and makers. A default value is provided. [See the provided default value](code-samples/css/default-value-eMail-Header-Style.md). |
+    |Also Delete from CoE | When the **Admin \| Sync Template v2 (Check Deleted)** flow is run, this denotes if you want the items items deleted from CoE (yes) or just mark deleted (no). A default value of no is provided. |

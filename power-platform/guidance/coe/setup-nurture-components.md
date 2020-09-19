@@ -30,7 +30,14 @@ The Core Components solution is required for the Nurture Components solution, or
 1. Import the *CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip* file.
 1. Create a new connection to the **RSS** connector, and set your Common Data Service connection
     ![Import the Center of Excellence - Nurture components solution](media/msi-nurture.png "Import the Center of Excellence - Nurture components solution")
-1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
+1. Update the Environment Variable values. Please note, you can leave the values empty on import and [update the environment variable](#update-environment-variable) after import too.
+
+    | Name | Default value |
+    |------|---------------|
+    | Power Platform Maker Office 365 Group | The *Admin \| Welcome Email* flow sends a welcome email to onboard new makers and adds them to an Office 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
+    | Training in a day - Feedback Form     | The *Training in a day* package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
+    | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform Power Users can use to communicate and share files. You'll use it here to house the Template Library for them. |
+    1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
 
 ## Create a SharePoint document library
 
