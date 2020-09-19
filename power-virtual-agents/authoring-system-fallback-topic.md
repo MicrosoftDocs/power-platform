@@ -17,8 +17,8 @@ ms.collection: virtual-agent
 # Configure the system fallback topic in Power Virtual Agents
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](authoring-system-fallback-topic.md)
-> - [Teams (online or app)](teams/authoring-system-fallback-topic-teams.md)
+> - [Power Virtual Agents web app](authoring-system-fallback-topic.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-system-fallback-topic-teams.md)
 
 During a conversation, a Power Virtual Agents bot [triggers the appropriate topic based on the user's input](authoring-create-edit-topics.md). If the bot can't determine the user's intent, it prompts the user again. After two prompts, the bot escalates to a live agent through the system **Escalate** topic.
 

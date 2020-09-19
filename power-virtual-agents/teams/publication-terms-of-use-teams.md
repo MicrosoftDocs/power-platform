@@ -16,9 +16,9 @@ ms.collection: virtual-agent
 
 When you want to publish your bot so other Microsoft Teams users can access it, you need to provide the following information about your bot:
 
-- A link to a privacy statement that describes how you collect a user's data 
+- A link to a compliant privacy statement
 - A link to the terms of use (TOU) for the bot
-- A link to the developer website for more information
+- A link to the developer's website for more information
 - The developer's name
 
 You should update each of these with your own information. See the Microsoft Teams documentation about [Privacy policy, terms of use, and support URLs](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy-terms-of-use-and-support-urls) for some more ideas on what to include. 
@@ -40,7 +40,7 @@ Developer's name | *Powered by Power Virtual Agents* | You should include a name
 
 
 >[!IMPORTANT]
->This app is not developed by Microsoft. If you are a user of a bot and sees this page, it means the bot developer did not provide terms of user and privacy statement for the bot.  
+>This app is not developed by Microsoft. If you are a user of a bot and see this page, it means the bot developer did not provide a terms of use and privacy statement for the bot.  
 >
 >For privacy policy or terms of use, contact the developer of this app.
 

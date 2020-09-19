@@ -15,15 +15,15 @@ ms.collection: virtual-agent
 # Analysis in Power Virtual Agents in Teams
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../analytics-overview.md)
-> - [Teams (online or app)](teams/analytics-overview-teams.md)
+> - [Power Virtual Agents web app](../analytics-overview.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-overview-teams.md)
 
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 
 Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.
 
 >[!NOTE]
->Sessions analytics are unavailable on the Power Virtual Agents app in Teams. To review and export session information, you'll need to use the [Power Virtual Agents online app](../analytics-sessions.md)
+>Sessions transcripts are unavailable for download on the Power Virtual Agents app in Teams. To review and export session information, you'll need to sign up for the [Power Virtual Agents web app](../requirements-licensing-subscriptions.md)
 
 >
 ## Prerequisites
@@ -36,7 +36,7 @@ Multiple charts show you trends and usage for your bot's topics. These charts us
 The analytics section is divided into a number of pages to give you multiple ways to understand bot performance.
 
 >[!NOTE]
->Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
+>The analytics dashboards are updated every hour, so there will be some delay before you see all data.
 
 #### View analytics
 

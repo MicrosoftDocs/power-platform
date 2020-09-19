@@ -17,61 +17,19 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../admin-share-bots.md)
-> - [Teams (online or app)](admin-share-bots-teams.md)
+> - [Power Virtual Agents web app](../admin-share-bots.md)
+> - [Power Virtual Agents app in Microsoft Teams](admin-share-bots-teams.md)
 
 
-You can collaborate with others when building chatbots in Microsoft Teams. 
+You can collaborate with others when building chatbots in Microsoft Teams. This means other members of your team can make edits and changes, and you can see who else is editing a topic.
+
 Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/assign-roles-permissions) in the team where your bot is created: 
-- Team Owners can create, view, edit, configure, and view transcripts for all bots in the team where they are Team Owners. 
 - Team Members can create, view, edit and configure all bots in the team, unless otherwise specified.
 
 
 
 
-
- 
- >[!WARNING]
- >Are Automate flows still special here, or will they be shared?
-
-### Share Power Automate flows used in a bot
-You can [add actions to a bot using flows in Power Automate](advanced-flow-teams.md); however flows in a bot aren't automatically shared with other users when sharing a bot. 
-
-Users who don't have access to the shared flow can still run it by using the test bot canvas.
-
-To let other users edit or add flows you'll need to share them in Power Automate. You can open flows directly from the topic where the flow is used.
-
-1. Select **View flow details** to go to the flow's details page in Power Automate.
- 
-    ![Highlight of the view flow details on a flow in a topic](media/sharing-view-flow-details-teams.png)
-
-2. Select **Edit** in the **Owners** section.
- 
-    ![Select the Edit link](media/sharing-flow-owners-teams.png)
-
-3. Enter the name or email address of the user you want to give editing permissions to.
-
-
->[!WARNING]
->How do I unshare or unpublish a bot?
-
-## Stop sharing a bot
-
-You can stop sharing a bot with a user, and any shared user can stop the bot from being shared with other users, except for the owner. The owner will always have access to the bot.
-
-1. Sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
-
-2. Select **X** next to the users that you want to stop sharing the bot with.
- 
-    ![Remove bot access ‘X’](media/sharing-remove-user-teams.png) 
-
-3. Select **Share** to stop sharing the bot with the user.
-
-
-
 ## Collaborate on bots
-
-After you've shared a bot, everyone can edit the bot's topics. 
 
 In the **Topics** list, you can see who's working on a topic under the **Currently editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email. 
 

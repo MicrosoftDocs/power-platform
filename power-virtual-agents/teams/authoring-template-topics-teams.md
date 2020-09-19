@@ -17,8 +17,8 @@ ms.collection: virtual-agent
 # Use lesson topics in Power Virtual Agents in Teams
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../authoring-template-topics.md)
-> - [Teams (online or app)](authoring-template-topics-teams.md)
+> - [Power Virtual Agents web app](../authoring-template-topics.md)
+> - [Power Virtual Agents app in Microsoft Teams](authoring-template-topics-teams.md)
 
 
 Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that use of [conditional branching](authoring-create-edit-topics-teams.md) and [custom entities](advanced-entities-slot-filling-teams.md).

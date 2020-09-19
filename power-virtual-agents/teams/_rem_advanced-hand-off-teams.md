@@ -18,14 +18,14 @@ ms.custom: handoff, ceX, advanced-authoring
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../advanced-hand-off.md)
-> - [Teams (online or app)](advanced-hand-off-teams.md)
+> - [Power Virtual Agents web app](../advanced-hand-off.md)
+> - [Power Virtual Agents app in Microsoft Teams](advanced-hand-off-teams.md)
 
 With Power Virtual Agents, you can hand-off conversations to live agents seamlessly and contextually.
 
-You will need to use the Power Virtual Agents online portal at https://powerva.microsoft.com to configure and use hand off.
+You will need to use the Power Virtual Agents web app at https://powerva.microsoft.com to configure and use hand off.
 
-See the online portal version of this topic for more information: [Trigger hand-off to a live agent](../advanced-hand-off.md)
+See the web app version of this topic for more information: [Trigger hand-off to a live agent](../advanced-hand-off.md)
 
 
 

@@ -15,16 +15,19 @@ ms.collection: virtual-agent
 
 
 
-# Power Virtual Agents in Teams
+# Power Virtual Agents app in Microsoft Teams
 
->[!IMPORTANT]
->See the [Important information](#important-information) section for specific usage details.
+
 
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../fundamentals-what-is-power-virtual-agents-portal.md)
 > - [Power Virtual Agents app in Microsoft Teams](fundamentals-what-is-power-virtual-agents-teams.md)
+
+
+>[!IMPORTANT]
+>See the [Important information](#important-information) section for specific usage details.
 
 Power Virtual Agents is available as an app within Microsoft Teams, which means you can easily create your own chatbots that answer questions posed by other employees or team members. 
 
@@ -37,7 +40,7 @@ Some of the scenarios where you might want to create a Power Virtual Agents chat
 - The facilities manager creates a chatbot that answers the common questions they are receiving about coming back to work after a pandemic.
 - A human resources (HR) employee creates a bot that can answer questions about vacation balance, time off, and benefits.
 
-The Power Virtual Agents app in Microsoft Teams makes it easy to fulfill any scenario, especially those that arise within an organization. If you’re looking to create a chatbot you can share externally, such as one that interacts with customers outside your organization, see the [Power Virtual Agents web app version of this topic](link to web app version topic).
+The Power Virtual Agents app in Microsoft Teams makes it easy to fulfill any scenario, especially those that arise within an organization. If you're looking to create a chatbot you can share externally, such as one that interacts with customers outside your organization, see the [Power Virtual Agents web app version of this topic](../fundamentals-what-is-power-virtual-agents-portal.md).
 
 With Power Virtual Agents in Microsoft Teams you can:
 
@@ -45,7 +48,7 @@ With Power Virtual Agents in Microsoft Teams you can:
 - Have bots [take actions on someone's behalf](advanced-fundamentals-teams.md)
 - [Review and analyze the performance of the bot](analytics-overview-teams.md), such as what questions are being asked the most, and how effective the bot is at understanding and answering questions
 
-To see what Power Virtual Agents in Microsoft Teams can do, check out [our guide to build a sample HR bot](fundamentals-get-started-teams.md). The bot can help employees with questions related to time off like paid vacation or national holidays. It also loops in a support expert from the HR team when it can’t help with questions about extended leave.
+To see what Power Virtual Agents in Microsoft Teams can do, check out [our guide to build a sample HR bot](fundamentals-get-started-teams.md). The bot can help employees with questions related to time off like paid vacation or national holidays. It also loops in a support expert from the HR team when it can't help with questions about extended leave.
 
 To get started creating bots in Teams with Power Virtual Agents straight away, see the [Create your first bot topic](authoring-first-bot-teams.md).
 

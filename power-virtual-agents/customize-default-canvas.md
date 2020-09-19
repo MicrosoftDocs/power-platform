@@ -15,8 +15,8 @@ ms.collection: virtual-agent
 # Customize the look and feel of the bot's default canvas
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](customize-default-canvas.md)
-> - [Teams (online or app)](teams/customize-default-canvas-teams.md)
+> - [Power Virtual Agents web app](customize-default-canvas.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/customize-default-canvas-teams.md)
 
 After you create and [publish a bot](publication-fundamentals-publish-channels-teams.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels-teams.md).
 
@@ -38,7 +38,7 @@ You can also combine the customized canvas with [configuring your bot to automat
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 >[!IMPORTANT]
->You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents service. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
+>You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
 >Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 ## Retrieve bot ID and tenant ID details

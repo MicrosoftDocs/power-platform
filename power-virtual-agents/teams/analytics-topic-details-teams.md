@@ -15,8 +15,8 @@ ms.collection: virtual-agent
 # Analyze topic usage in Power Virtual Agents in Teams
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../analytics-topic-details.md)
-> - [Teams (online or app)](analytics-topic-details-teams.md)
+> - [Power Virtual Agents web app](../analytics-topic-details.md)
+> - [Power Virtual Agents app in Microsoft Teams](analytics-topic-details-teams.md)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

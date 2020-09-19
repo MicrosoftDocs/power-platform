@@ -14,9 +14,11 @@ ms.collection: virtual-agent
 
 # Use variables
 
+Select the version of Power Virtual Agents you're using here:
+
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](authoring-variables.md)
-> - [Teams (online or app)](teams/authoring-variables-teams.md)
+> - [Power Virtual Agents web app](authoring-variables.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-variables-teams.md)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

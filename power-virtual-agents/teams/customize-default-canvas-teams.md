@@ -14,10 +14,11 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas in Teams
 
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../customize-default-canvas.md)
-> - [Teams (online or app)](customize-default-canvas-teams.md)
+> - [Power Virtual Agents web app](../customize-default-canvas.md)
+> - [Power Virtual Agents app in Microsoft Teams](customize-default-canvas-teams.md)
 
 You can customize how the bot looks when added as an app in Microsoft Teams. You can change the icon
 and the bot name at any time, and add a long and short description when you publish the bot.

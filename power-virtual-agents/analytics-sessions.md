@@ -83,7 +83,7 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
     ![Screenshot showing Active conversation transcripts expanded](media/export-view-all-fields.png)
  
-1. View the bot’s conversation transcripts.
+1. View the bot's conversation transcripts.
 
     ![Screenshot showing sample bot transcript entries](media/export-view-sessions.png)
 

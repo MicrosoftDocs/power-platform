@@ -192,12 +192,12 @@
       items:
        - name: Key concepts - Publish your bot
          href: teams/publication-fundamentals-publish-channels-teams.md
-       - name: Create a privacy statement and terms of use
-         href: teams/publication-terms-of-use-teams.md
 #       - name: Configure the demo website and add the bot to your live website
 #         href: teams/publication-connect-bot-to-web-channels-teams.md
        - name: Add bot to Microsoft Teams
          href: teams/publication-add-bot-to-microsoft-teams-teams.md
+       - name: Create a privacy statement and terms of use
+         href: teams/publication-terms-of-use-teams.md
 #       - name: Add bot to Facebook
 #         href: teams/publication-add-bot-to-facebook-teams.md
 #       - name: Add bot to mobile or custom apps

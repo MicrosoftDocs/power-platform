@@ -191,7 +191,7 @@ You can rename and modify your flow on the Power Automate portal. For example, t
 
     ![Edit your flow using the Details page](media/FlowEditDetailsPage.png)
 
-    If you want to open a flow on the Power Automate portal, go to the **Solutions** tab and then open your flow's solution. Use the flow’s **Edit menu** to open the flow for editing.
+    If you want to open a flow on the Power Automate portal, go to the **Solutions** tab and then open your flow's solution. Use the flow's **Edit menu** to open the flow for editing.
 
     ![Open your flow for editing](media/EditFlow.jpg)
 
@@ -247,9 +247,9 @@ These instructions use adding weather information to a flow as an example. If yo
 1. Add the following **trigger phrases**:
 
     - will it rain
-    - today’s forecast
+    - today's forecast
     - get weather
-    - what’s the weather
+    - what's the weather
 
 1. Go to the **Authoring canvas** for the new topic.
 
@@ -272,7 +272,7 @@ These instructions use adding weather information to a flow as an example. If yo
 
 1. Map the flow input blocks to the output variables from the question nodes. **City (text)** gets its value from `Var1 (text)` and **Zipcode (number)** gets its value from `Var2 (number)`.
 
-1. Under the flow's node, add a **Message** node and then enter a message that uses the flow’s outputs. For example:
+1. Under the flow's node, add a **Message** node and then enter a message that uses the flow's outputs. For example:
 
     **Today's forecast for `(x)location`:`{x}day_summary`. 
     Chance of rain is `{x}chance_of_rain`%**

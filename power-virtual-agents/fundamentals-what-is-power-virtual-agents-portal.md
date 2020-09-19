@@ -1,5 +1,5 @@
 ---
-title: "Overview of Power Virtual Agents web service"
+title: "Overview of Power Virtual Agents web app"
 description: "Use Power Virtual Agents and start solving problems with its AI-driven natural language processing - without needing to know or deploy any code."
 keywords: "PVA, portal"
 ms.date: 8/3/2020
@@ -15,16 +15,18 @@ ms.collection: virtual-agent
 
 
 
-# Power Virtual Agents web service
+# Power Virtual Agents web app
 
->[!IMPORTANT]
->See the [Important information](#important-information) section for specific usage details.
+
 
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](fundamentals-what-is-power-virtual-agents-portal.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/fundamentals-what-is-power-virtual-agents-teams.md)
+
+>[!IMPORTANT]
+>See the [Important information](#important-information) section for specific usage details.
 
 Power Virtual Agents lets you create powerful chatbots that can be created with a guided, no-code graphical interface - and without the need for data scientists or developers. 
 
@@ -50,13 +52,13 @@ You can read more about Power Virtual Agents, or get started creating bots now a
 
 ## Highlights of Power Virtual Agents
 
-1. **Get started in seconds**. Power Virtual Agents is a software-as-a-service (SaaS) offering. It allows you to easily sign up, create your bot, and embed it into your website with just a few clicks. There’s no infrastructure to maintain or complex systems to deploy. 
+1. **Get started in seconds**. Power Virtual Agents is a software-as-a-service (SaaS) offering. It allows you to easily sign up, create your bot, and embed it into your website with just a few clicks. There's no infrastructure to maintain or complex systems to deploy. 
 
 2. **Empower your subject matter experts**. Using Power Virtual Agents, you are in the driver's seat. Your SMEs can create bots quickly and easily using a **novel, intuitive, code-free graphical interface**, eliminating the need for AI expertise or teams of developers.
 
     ![No-code interface](media/overview-no-code.png)
 
-3. **Enable rich, natural conversations.** Microsoft’s powerful conversational AI capabilities enable your end users to have rich multi-turn conversations that quickly guide them to the right solution. And, unlike most products on the market, there’s no need to retrain AI models. Simply provide a few short examples of the topic you want the bot to handle, build the conversation using our graphical editor and your bot is ready to handle customer requests about it. You can even try out your changes in real-time in the test pane!
+3. **Enable rich, natural conversations.** Microsoft's powerful conversational AI capabilities enable your end users to have rich multi-turn conversations that quickly guide them to the right solution. And, unlike most products on the market, there's no need to retrain AI models. Simply provide a few short examples of the topic you want the bot to handle, build the conversation using our graphical editor and your bot is ready to handle customer requests about it. You can even try out your changes in real-time in the test pane!
 
    ![Natural conversation with a bot](media/overview-conversation.png)
  

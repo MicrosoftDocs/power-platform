@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Power Virtual Agents web app (https://powerva.microsoft.com)](../publication-add-bot-to-microsoft-teams.md)
+> - [Power Virtual Agents web app](../publication-add-bot-to-microsoft-teams.md)
 > - [Power Virtual Agents app in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
@@ -37,7 +37,7 @@ You can:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-- Your organization’s [Microsoft Teams app permission policies](/microsoftteams/teams-app-permission-policies) will need to allow Power Platform apps to be added to teams before you or other users can find and add your bot to Microsoft Teams.
+- Your organization's [Microsoft Teams app permission policies](/microsoftteams/teams-app-permission-policies) will need to allow Power Platform apps to be added to teams before you or other users can find and add your bot to Microsoft Teams.
 - Before installing the bot for yourself or sharing the bot with others, you should [publish the bot at least once](publication-fundamentals-publish-channels-teams.md).
 
 
@@ -208,18 +208,18 @@ Before submitting the bot to your organization, make sure:
     :::image type="content" source="media/publish-share-submit-status.png" alt-text=" ":::
 
     >[!NOTE]
-    >After submitting the bot for admin approval, you should not change the bot’s access setting to be less than everyone in your organization.  
+    >After submitting the bot for admin approval, you should not change the bot's access setting to be less than everyone in your organization.  
     >This will result in users in the organization unable to chat with the bot after installing it from the Microsoft Teams app store **Built by your org** section.
 
-10. You will need to wait for your admin’s approval.  You can check the latest status by selecting **Refresh**, or opening the **Share the bot** window from the **Publish** page.
+10. You will need to wait for your admin's approval.  You can check the latest status by selecting **Refresh**, or opening the **Share the bot** window from the **Publish** page.
 
-11. After your admin approves the bot, the status will be updated to **Approved**. You can directly open the bot and share the approved version’s link with other users.
+11. After your admin approves the bot, the status will be updated to **Approved**. You can directly open the bot and share the approved version's link with other users.
 
 
 
-#### Download the bot’s Teams app manifest (advanced)
+#### Download the bot's Teams app manifest (advanced)
 
-You can download the bot’s Teams app manifest to make detail changes to the manifest directly and share with your admin or users in the tenant. 
+You can download the bot's Teams app manifest to make detail changes to the manifest directly and share with your admin or users in the tenant. 
 
 
 1. Go to the **Chatbot** tab.

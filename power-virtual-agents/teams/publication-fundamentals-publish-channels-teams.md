@@ -20,9 +20,9 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../publication-fundamentals-publish-channels.md)
 > - [Power Virtual Agents app in Microsoft Teams](publication-fundamentals-publish-channels-teams.md)
 
-Once you're satisfied with your bot’s content and quality, you can publish your bot to allow users to engage with your bot. You must publish your bot at least once for the user to chat with the bot in Microsoft Teams.
+Once you're satisfied with your bot's content and quality, you can publish your bot to allow users to engage with your bot. You must publish your bot at least once for the user to chat with the bot in Microsoft Teams.
 
-Each time you want to update your bot’s content, you publish it again from within the Power Virtual Agents app in Microsoft Teams. This will update the bot’s content with the latest changes you have made.
+Each time you want to update your bot's content, you publish it again from within the Power Virtual Agents app in Microsoft Teams. This will update the bot's content with the latest changes you have made.
 
 ## Prerequisites
 

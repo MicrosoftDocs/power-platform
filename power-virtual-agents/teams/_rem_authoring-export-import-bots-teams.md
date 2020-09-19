@@ -65,7 +65,7 @@ You use solutions to export bots from one environment and import them into anoth
     Field | Description
     -- | --
     Display name | The name that is shown in the list of solutions. You can change this later.
-    Name | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can’t change it.
+    Name | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can't change it.
     Publisher | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, see [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix)
     Version | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.
 
@@ -74,7 +74,7 @@ If you don't see the **Export/import bot** section under **Settings**, you will 
 
 >[!IMPORTANT]
 >Only follow these steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
->Newly created bots don’t require an upgrade, and won't show an option to upgrade them.
+>Newly created bots don't require an upgrade, and won't show an option to upgrade them.
 
 ![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot-teams.png "Screenshot highlighting the Upgrade bot button")
 
@@ -103,17 +103,17 @@ If you don't see the **Export/import bot** section under **Settings**, you will 
 
 3. On the filter on the top menu, select **Chatbot** to see the bot (or bots) you've added to the solution. Selecting the name of the bot will open it in the Power Virtual Agents portal.
 
-3. If your bot doesn’t have [Skills](configuration-add-skills-teams.md), you don't need to complete this step. 
+3. If your bot doesn't have [Skills](configuration-add-skills-teams.md), you don't need to complete this step. 
     If your bot does have Skills, you need to add the respective environment variables in the solution. Each Skill has two environment variables: `AppID` and `manifestURL`.
 
     1. Select the solution you want to add your bot to.
 
     1. Select **Add existing** and choose **Environment variables**.
-    1. On the **Add existing environment variables** panel and select the environment variables for your bot’s Skills. Each Skill has two environments variables. The environment variables **Display name** column will show the bot name in square brackets. For example, *[Bot name] Skill name*.
+    1. On the **Add existing environment variables** panel and select the environment variables for your bot's Skills. Each Skill has two environments variables. The environment variables **Display name** column will show the bot name in square brackets. For example, *[Bot name] Skill name*.
 
         ![List of skills selected for export](media/export-skills-teams.png "List of skills selected for export")
  
-    1. Select the environment variables of the bot’s Skills. 
+    1. Select the environment variables of the bot's Skills. 
     1. Select **Next** to add them to the solution.
 
 
@@ -175,7 +175,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 1. You may need to wait a few moments while the import completes. View the results and then select **Close**.
 
-    If the import isn’t successful, you'll see a report showing any errors or warnings that were captured. Select **Download Log File** to capture details about what caused the import to fail in an XML file  
+    If the import isn't successful, you'll see a report showing any errors or warnings that were captured. Select **Download Log File** to capture details about what caused the import to fail in an XML file  
       
     The most common cause for an import to fail is that the solution didn't contain some required components. For example, you may not have any upgraded bots in the environment.
 
@@ -187,8 +187,8 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
     - [Power Automate flows](/power-automate/import-flow-solution): Configure any flow connections for the first time. You don't need to reconfigure the flow connections for subsequent imports of the bot when updating the flow.  
       If you import a solution containing a bot that leverages Power Automate, and any new Flows are included in that import operation, you'll need to visit the Power Virtual Agents portal and select the bot. 
-    - [Skills](advanced-use-skills-teams.md): Add the values for the Skills’ environment variables.
-    - [End-user authentication](configuration-end-user-authentication-teams.md): Configure end-user authentication in the bot so it can take actions on the user’s behalf. The bot can be set up with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook.
+    - [Skills](advanced-use-skills-teams.md): Add the values for the Skills' environment variables.
+    - [End-user authentication](configuration-end-user-authentication-teams.md): Configure end-user authentication in the bot so it can take actions on the user's behalf. The bot can be set up with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook.
     - [Customer service hand-off](advanced-hand-off-teams.md): Configure external services that hand-off bot escalations to a human agent.
     - Multi-channel: – Configure external channels, such as Facebook, and internal non-Power Virtual Agents services, such as Microsoft Teams:
 

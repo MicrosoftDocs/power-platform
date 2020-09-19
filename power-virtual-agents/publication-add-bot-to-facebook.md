@@ -24,7 +24,7 @@ Facebook Messenger and related services are subject to Facebook's own terms and 
 > This article is intended for experienced IT professionals who manage your organization's Facebook page.
 
 > [!NOTE]
-> By publishing your bot to a Facebook page, some of your data such as bot content and end-user chat content will be shared with Facebook (meaning that your data will flow outside of your [organization’s compliance and geographic or regional boundaries](data-location.md)). <br/>
+> By publishing your bot to a Facebook page, some of your data such as bot content and end-user chat content will be shared with Facebook (meaning that your data will flow outside of your [organization's compliance and geographic or regional boundaries](data-location.md)). <br/>
 > For more information, see [Facebook's Platform Policies](https://developers.facebook.com/docs/messenger-platform/policy-overview).
 
 ## Prerequisites

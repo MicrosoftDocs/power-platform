@@ -42,7 +42,7 @@ Code snippets used in this document are available in these articles:
 
 ## Retrieve topics and utterances from your Power Virtual Agents environment
 
-You'll need to retrieve your Power Virtual Agents bot's content (topics and utterances), your tenant’s endpoint, and the direct line secret.
+You'll need to retrieve your Power Virtual Agents bot's content (topics and utterances), your tenant's endpoint, and the direct line secret.
 
 ### Retrieve bot ID and tenant ID from your bot
 

@@ -52,7 +52,7 @@ A session ends for one of the following reasons:
 
 > [!NOTE]
 > Sessions that use the [embedded test chat](authoring-test-bot.md) or that only leverage capabilities included with the Power Virtual Agents for Microsoft Teams plan don't count toward the billed sessions.
-> The Billed Session report doesn’t distinguish between the sessions included in the Power Virtual Agents for Microsoft Teams plan and those that are not. You might see an inflated number of billed sessions in the report.
+> The Billed Session report doesn't distinguish between the sessions included in the Power Virtual Agents for Microsoft Teams plan and those that are not. You might see an inflated number of billed sessions in the report.
 
 ## Frequently asked questions
 

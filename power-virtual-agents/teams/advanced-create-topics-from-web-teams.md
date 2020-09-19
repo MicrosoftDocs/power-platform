@@ -13,13 +13,13 @@ ms.collection: virtual-agent
 ---
 
 
-# Create topics from existing support content on the web in Teams
+# Create topics from existing online support content in Teams
 
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../admin-share-bots.md)
-> - [Teams (online or app)](admin-share-bots-teams.md)
+> - [Power Virtual Agents web app](../advanced-create-topics-from-web.md)
+> - [Power Virtual Agents app in Microsoft Teams](advanced-create-topics-from-web-teams.md)
 
 You can import existing help text and automatically create topics for a chatbot, so you don't have to re-create lots of questions and answers.
 
@@ -40,9 +40,6 @@ All you need is a secure link (one that starts with https://) to the file or web
 ## Get content from webpages and online files
 
 First you'll need a secure URL (starting with HTTPS) to your content, which must be a publicly available link. For example, you can use a publicly-shared OneDrive .xlsx file, but you can't use a file on a SharePoint site or somewhere where you need to log in.
-
->[!WARNING]
->Do we have a list of what files it accepts?
 
 After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
 
@@ -76,7 +73,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 7. When you're done adding pages, select **Start**. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
-    ![An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page](media/suggested-web-wait-teams.png "An alert that says 'Getting your suggestions. This may take several minutes' appears at the top of the page")
+    :::image type="content" source="media/suggested-web-wait-teams.png" alt-text="An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page":::
 
 >[!TIP]
 >You can add multiple webpages, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
@@ -86,7 +83,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 
 
-Now the suggested topics will appear. These were all taken from the links you submitter. 
+Now the suggested topics will appear. These were all taken from the links you submitted. 
 
 
 
@@ -109,7 +106,7 @@ You can now review these suggestions to see what to add to your bot.
 
     c. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. Run the **Suggest topics** command again to restore it.  
 
-    ![An editing window showing a snapshot of the topic's layout](media/suggested-web-add-edit-teams.png)
+    :::image type="content" source="media/suggested-web-add-edit-teams.png" alt-text="n editing window showing a snapshot of the topic's layout":::
 
 You can also delete or add the suggestion without opening the preview:
 
@@ -138,7 +135,6 @@ Suggested topics are added to the **Existing** tab with their status set to **Of
 
 3. For each topic you want to enable, turn on the toggle under **Status**.
 
-    ![A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column](media/suggested-enable-teams.png "A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column")
 
     
 You can [test the topics in the test chat](authoring-test-bot-teams.md), but you'll need to [publish your bot for customers](publication-fundamentals-publish-channels-teams.md) to see the latest changes.

@@ -26,7 +26,7 @@ By default, chatbots created with the Power Virtual Agents app in Microsoft Team
 You can change what the bot says by updating the greeting topic.
 
 
-For example, you could have your bot say, "Hi, I’m Botty, a virtual agent" as soon as the bot loads.
+For example, you could have your bot say, "Hi, I'm Botty, a virtual agent" as soon as the bot loads.
 
 You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas-teams.md).
 

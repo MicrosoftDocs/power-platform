@@ -17,8 +17,8 @@ ms.custom: handoff, ceX, advanced-authoring
 
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](advanced-hand-off.md)
-> - [Teams (online or app)](teams/advanced-hand-off-teams.md)
+> - [Power Virtual Agents web app](advanced-hand-off.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-hand-off-teams.md)
 
 With Power Virtual Agents, you can hand-off conversations to live agents seamlessly and contextually.
 

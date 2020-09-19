@@ -17,8 +17,8 @@ ms.collection: virtual-agent
 
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../analytics-csat.md)
-> - [Teams (online or app)](analytics-csat-teams.md)
+> - [Power Virtual Agents web app](../analytics-csat.md)
+> - [Power Virtual Agents app in Microsoft Teams](analytics-csat-teams.md)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 

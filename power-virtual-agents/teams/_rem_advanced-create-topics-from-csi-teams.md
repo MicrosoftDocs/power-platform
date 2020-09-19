@@ -18,8 +18,8 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../admin-share-bots.md)
-> - [Teams (online or app)](admin-share-bots-teams.md)
+> - [Power Virtual Agents web app](../admin-share-bots.md)
+> - [Power Virtual Agents app in Microsoft Teams](admin-share-bots-teams.md)
 
 If you use [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/overview), you can automatically create new [topics](authoring-create-edit-topics-teams.md) in Power Virtual Agents based on your existing [Customer Service Insights support topics](/dynamics365/ai/customer-service-insights/topics-page).
 

@@ -16,8 +16,8 @@ ms.collection: virtual-agent
 
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](authoring-fundamentals.md)
-> - [Teams (online or app)](teams/authoring-fundamentals-teams.md)
+> - [Power Virtual Agents web app](authoring-fundamentals.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-fundamentals-teams.md)
 
 When you create bots with Power Virtual Agents, you author and edit topics. 
 

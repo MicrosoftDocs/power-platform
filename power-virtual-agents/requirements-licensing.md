@@ -18,8 +18,8 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Online portal (https://powerva.microsoft.com)](requirements-licensing.md)
-> - [Teams (online or app)](teams/requirements-licensing-teams.md)
+> - [Power Virtual Agents web app](requirements-licensing.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/requirements-licensing-teams.md)
 
 This documentation is written for tenant admins. If you want to sign up for Power Virtual Agents as an individual, see the [Sign up for a Power Virtual Agents trial](sign-up-individual.md) topic.
 

@@ -17,10 +17,12 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../configuration-add-skills.md)
-> - [Teams (online or app)](configuration-add-skills-teams.md)
+> - [Power Virtual Agents web app](../configuration-add-skills.md)
+> - [Power Virtual Agents app in Microsoft Teams](configuration-add-skills-teams.md)
 
 Power Virtual Agents enables you to extend your bot using [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0).
 
-You can add a skill from within the Power Virtual Agents app in Microsoft Teams, but you should review and refer to online portal version of this topic for more information: [Extend your bot using Bot Framework skills](../configuration-add-skills.md)
+You can add a skill from within the Power Virtual Agents app in Microsoft Teams, but you need a [Power Virtual Agents standalone subscription](../requirements-licensing-subscriptions.md). 
+
+You should also review and refer to the web app version of this topic for more information: [Extend your bot using Bot Framework skills](../configuration-add-skills.md).
 

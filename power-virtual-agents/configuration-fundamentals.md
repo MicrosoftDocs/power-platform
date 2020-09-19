@@ -39,7 +39,7 @@ Topic | Description
 - | -
 [Assign access and change security options](configuration-security.md) | Determine who can use the bot in Microsoft Teams
 [Configure end-user authentication](configuration-end-user-authentication.md) | Allow users to sign in with any OAuth2 identity provider directly in a bot conversation.
-[Configure single sign-on](configure-sso.md) | Retain a user's authentication to use other signed-in services.
+[Configure single sign-on](configure-sso.md) | Retain a user's authentication to use other signed-in products.
 [Configure hand off to a generic engagement hub](configure-generic-handoff.md) | Hand off conversations to any engagement hub.
 [Configure hand off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) | Seamlessly and contextually hand off bot conversations to live (human) agents using Omnichannel for Dynamics 365 Customer Service.
 [Configure your bot to automatically start the conversation](configure-bot-greeting.md) | Make your bot start the conversation automatically whenever the bot is loaded.

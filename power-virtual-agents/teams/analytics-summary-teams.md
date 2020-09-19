@@ -15,8 +15,8 @@ ms.collection: virtual-agent
 # Analyze bot performance and usage in Power Virtual Agents in Teams
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../analytics-summary.md)
-> - [Teams (online or app)](analytics-summary-teams.md)
+> - [Power Virtual Agents web app](../analytics-summary.md)
+> - [Power Virtual Agents app in Microsoft Teams](analytics-summary-teams.md)
 
 
 The Summary page gives you a broad overview of how well your bot is doing with these charts:

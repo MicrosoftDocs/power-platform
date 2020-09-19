@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Power Virtual Agents web app](https://powerva.microsoft.com)](../authoring-first-bot.md)
+> - [Power Virtual Agents web app](../authoring-first-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams)](authoring-first-bot-teams.md)
 
 

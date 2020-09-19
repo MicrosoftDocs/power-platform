@@ -14,10 +14,11 @@ ms.collection: virtual-agent
 
 # Share your bot with other users
 
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](admin-share-bots.md)
-> - [Teams (online or app)](/teams/admin-share-bots-teams.md)
+> - [Power Virtual Agents web app](admin-share-bots.md)
+> - [Power Virtual Agents app in Microsoft Teams](/teams/admin-share-bots-teams.md)
 
 Share your bot with other users so multiple users can edit, manage, and collaborate on a bot. 
 
@@ -103,7 +104,7 @@ You can stop sharing a bot with a user, and any shared user can stop the bot fro
 
 2. Select **X** next to the users that you want to stop sharing the bot with.
  
-    ![Remove bot access ‘X’](media/sharing-remove-user.png) 
+    ![Remove bot access 'X'](media/sharing-remove-user.png) 
 
 3. Select **Share** to stop sharing the bot with the user.
 

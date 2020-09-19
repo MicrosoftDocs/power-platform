@@ -17,8 +17,8 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Online portal (https://powerva.microsoft.com)](../fundamentals-get-started.md)
-> - [Teams (online or app)](fundamentals-get-started-teams.md)
+> - [Power Virtual Agents web app](../fundamentals-get-started.md)
+> - [Power Virtual Agents app in Microsoft Teams](fundamentals-get-started-teams.md)
 
 
 Create, manage, and publish conversational chatbots easily from within Teams. Share your bots with other people in your organization so they can chat and have their questions answered.
@@ -75,7 +75,7 @@ When you create chatbots, you need to think about the sorts of questions someone
 
 ## Create a topic
 
-1.	Now that you have full functionality within your bot, you can create your own topic—or, in other words, a dialog tree specifying how your bot responds to a user’s question.
+1.	Now that you have full functionality within your bot, you can create your own topic—or, in other words, a dialog tree specifying how your bot responds to a user's question.
 
 2.	Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page.
 
@@ -94,7 +94,7 @@ When you create chatbots, you need to think about the sorts of questions someone
 
 4. After saving your topic, select **Go to authoring canvas**. This is the graphical dialog tree editor that allows you to define bot responses and the overall bot conversation.
 
-   Start by entering 'Hello! I’ll create a personalized greeting for you.' into the first **Message** node. 
+   Start by entering 'Hello! I'll create a personalized greeting for you.' into the first **Message** node. 
    
     ![Add node](media/quickstart-add-node-teams.png)
     
@@ -126,7 +126,7 @@ You now have a very simple branching dialog tree, congratulations! You can begin
  
 ## Test your content in real time
 
-1. Now that you have some content authored into a dialog tree, it’s time to test this out in real time to see if it’s working as you expected. For this, you’ll use the test bot panel.
+1. Now that you have some content authored into a dialog tree, it's time to test this out in real time to see if it's working as you expected. For this, you'll use the test bot panel.
 
     ![Start bot with latest content](media/test-bot-panel-teams.png)
     
@@ -138,21 +138,21 @@ You now have a very simple branching dialog tree, congratulations! You can begin
 
 
   
-2. You can try out your newly authored dialog tree by typing into the test bot window. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You’ll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
+2. You can try out your newly authored dialog tree by typing into the test bot window. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You'll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
 
     ![Start conversation](media/test-bot-track-teams.png)
    
 
 
 
-3. Type "hello world" in the chat window, and send the message to the bot. You’ll see the top portion of your dialog tree highlighted in green, and you’ll see **Seattle** and **Bellevue** presented as user options in the test bot window.
+3. Type "hello world" in the chat window, and send the message to the bot. You'll see the top portion of your dialog tree highlighted in green, and you'll see **Seattle** and **Bellevue** presented as user options in the test bot window.
 The bot is now waiting for you to respond and has provided suggestions on how to respond. These suggestion buttons reflect what you authored within your dialog tree in the 'Ask a question' node. In the test bot, you can either select these suggestion buttons to continue, or you can enter your response into the chat window. 
 
     ![Tracing conversation](media/quickstart-test-bot-03-teams.png)
     
      
 
-4. You can continue the dialog by selecting the Seattle branch. You’ll see the chat stop once you’ve reached the bottom of this branch. If you author more content, the dialog will continue, but since we’ve only created a very simple and small dialog tree, we can reach the end of the content very quickly.
+4. You can continue the dialog by selecting the Seattle branch. You'll see the chat stop once you've reached the bottom of this branch. If you author more content, the dialog will continue, but since we've only created a very simple and small dialog tree, we can reach the end of the content very quickly.
 
     This test experience empowers you to quickly create and test a conversation to ensure that the conversation will flow as anticipated. If the dialog does not reflect your intention, you can change the dialog, and save it. The latest content will be pushed into the test bot, and you can try it out again. None of this changes the published version of the bot, so feel free to play around with your content until you are happy with it.
  
@@ -186,7 +186,7 @@ For more information on publishing your bot to other channels, see the documenta
 
 
 
-2.	You can also view detailed session history and transcripts by selecting **Sessions** from the **Analytics** tab. This enables you to download a CSV file with the full session transcript. This can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot’s efficiency.
+2.	You can also view detailed session history and transcripts by selecting **Sessions** from the **Analytics** tab. This enables you to download a CSV file with the full session transcript. This can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot's efficiency.
 
     ![Download sessions](media/analytics-sessions-teams.png)
     
@@ -195,7 +195,7 @@ For more information on publishing your bot to other channels, see the documenta
     
 ## Conclusion
 
-You’ve now created a bot, created your own topic, tested it out, published it to a demo website, and learned how to analyze your bot’s performance. Congratulations! Your bot has many capabilities beyond this, so please try it out and play with the advanced features.
+You've now created a bot, created your own topic, tested it out, published it to a demo website, and learned how to analyze your bot's performance. Congratulations! Your bot has many capabilities beyond this, so please try it out and play with the advanced features.
 
 For questions not covered in the product documentation or for feature ideas, please [visit our community](https://aka.ms/PowerVirtualAgentsForum) and post questions.
 

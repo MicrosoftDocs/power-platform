@@ -15,9 +15,11 @@ ms.collection: virtual-agent
 
 # Supported languages in Teams
 
+Select the version of Power Virtual Agents you're using here:
+
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../authoring-language-support.md)
-> - [Teams (online or app)](authoring-language-support-teams.md)
+> - [Power Virtual Agents web app](../authoring-language-support.md)
+> - [Power Virtual Agents app in Microsoft Teams](authoring-language-support-teams.md)
 
 [!INCLUDE [](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
@@ -33,24 +35,26 @@ You specify the target language when you first [create a bot](authoring-first-bo
 
 2. Choose the language you want to use. Some languages are listed under **Preview**, as described in the list of supported languages later in this article.
 
-    ![Language selection option](media/language-selection-teams.png "Language selection option")
+
+    :::image type="content" source="media/language-selection-teams.png" alt-text="Language selection option":::
 
 ## Default content in the target language
 
 After your new bot has been created, you'll notice that it already has content in the target language, including the **System Topics** and the template **User Topics**.
 
-![Topics in the target language](media/language-topics-teams.png "Topics in the target language")
+
+:::image type="content" source="media/language-topics-teams.png" alt-text="Topics in the target language":::
+
+You can now move on to creating new topics for your bot, authoring bot trigger phrases, and creating bot messages in your target language.
 
 When you've created your own topic in the target language, you can test the bot in the chat canvas and see how well it understands user input and responds in that language.
 
-![Test in the target language](media/language-testing-teams.png "Test in the target language")
+
+:::image type="content" source="media/language-testing-teams.png" alt-text="Test in the target language":::
 
 ## List of supported languages
 
 Power Virtual Agents supports languages in three stages. The stage indicates how well the bot can understand user input in that language, with general availability being the strongest, followed by preview, and then experimental.
-
->[!IMPORTANT]
->Microsoft Teams offers additional language support. When you are using a language that is not in the following supported list, the Power Virtual Agents app will default to English.
 
 | Language | Support |
 | ---- | -----------|  

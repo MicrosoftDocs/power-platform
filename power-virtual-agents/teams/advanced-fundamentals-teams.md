@@ -18,8 +18,8 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../advanced-fundamentals.md)
-> - [Teams (online or app)](advanced-fundamentals-teams.md)
+> - [Power Virtual Agents web app](../advanced-fundamentals.md)
+> - [Power Virtual Agents app in Microsoft Teams](advanced-fundamentals-teams.md)
 
 You can go beyond basic authoring in Power Virtual Agents by taking advantage of a number of advanced features. These features enhance and improve upon the [authoring experience](authoring-fundamentals-teams.md) by letting you:
 - Expand the types of information the bot understands and can parse back

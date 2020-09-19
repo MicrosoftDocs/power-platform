@@ -16,8 +16,8 @@ ms.collection: virtual-agent
 # Create and edit topics in your Power Virtual Agents bot in Teams
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](../authoring-create-edit-topics.md)
-> - [Teams (online or app)](authoring-create-edit-topics-teams.md)
+> - [Power Virtual Agents web app](../authoring-create-edit-topics.md)
+> - [Power Virtual Agents app in Microsoft Teams](authoring-create-edit-topics-teams.md)
 
 In Power Virtual Agents, a topic determines a how a bot responds to a question from a user. 
 
@@ -132,7 +132,7 @@ Additionally, you can **Branch based on a condition**:
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
-1. You can choose from several options for the user’s response in the **Identify** field. 
+1. You can choose from several options for the user's response in the **Identify** field. 
    
    These options determine what the bot should be listening for in the user's response. 
    

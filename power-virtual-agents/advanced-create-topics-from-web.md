@@ -18,8 +18,8 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Web service (https://powerva.microsoft.com)](advanced-create-topics-from-web.md)
-> - [Teams (online or app)](/teams/advanced-create-topics-from-web-teams.md)
+> - [Power Virtual Agents web app](advanced-create-topics-from-web.md)
+> - [Power Virtual Agents app in Microsoft Teams](/teams/advanced-create-topics-from-web-teams.md)
 
 You can use content from existing webpages when creating a Power Virtual Agents bot. This is useful if you already have help or support content, such as FAQ pages or support sites. 
 
@@ -71,6 +71,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 5. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** ![Delete](media/delete-suggested-topic.png).
 
     ![The Suggest topics page, where you enter URLs to extract suggested topics from](media/suggested-web-wizard.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
+
     
 >[!IMPORTANT]
 >- The URLs must be secure (they must start with *https://*).
@@ -80,7 +81,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
-    ![An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page](media/suggested-web-wait.png "An alert that says 'Getting your suggestions. This may take several minutes' appears at the top of the page")
+    :::image type="content" source="media/suggested-web-wait.png" alt-text="An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page":::
 
 >[!TIP]
 >You can add multiple webpages and links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
