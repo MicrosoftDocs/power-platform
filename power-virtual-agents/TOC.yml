@@ -136,7 +136,7 @@
       items:
        - name: Power Virtual Agents in Teams overview
          href: teams/fundamentals-what-is-power-virtual-agents-teams.md
-       - name: Get started quickly with Power Virtual Agents in Teams
+       - name: Build a sample HR bot
          href: teams/fundamentals-get-started-teams.md
     - name: Administer and manage
       items:
