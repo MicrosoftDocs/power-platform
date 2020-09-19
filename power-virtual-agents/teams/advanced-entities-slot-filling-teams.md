@@ -21,6 +21,8 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-entities-slot-filling.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-entities-slot-filling-teams.md)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 Entities in chatbots let you store information in similar groups. For the most part, they are an advanced feature in chatbot building.
 
 If you're interested in using entities, you should read the [Power Virtual Agents online documentation for entities](../advanced-entities-slot-filling.md).

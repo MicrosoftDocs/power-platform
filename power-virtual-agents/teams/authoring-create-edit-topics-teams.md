@@ -15,9 +15,13 @@ ms.collection: virtual-agent
 
 # Create and edit topics in your Power Virtual Agents bot in Teams
 
+Select the version of Power Virtual Agents you're using here:
+
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../authoring-create-edit-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-create-edit-topics-teams.md)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 In Power Virtual Agents, a topic determines a how a bot responds to a question from a user. 
 
@@ -38,7 +42,7 @@ The bot then asks which store the customer is interested in, and displays the ho
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you're ready to share it.
 
 > [!Note]
-> You can have up to 1,000 topics in a bot and up to 30 nodes in a topic.
+> You can have up to 1,000 topics in a bot.
 
 
 ## Prerequisites
@@ -51,7 +55,7 @@ You can see how the bot conversation works in practice by testing it in the **Te
 When you create a bot, a number of topics are automatically created.
 
 
-![Four lesson topics and a number of system topics are in the Topics list](media/topics-system-teams.png "Four lesson topics and a number of system topics are in the Topics list")
+:::image type="content" source="media/topics-system-teams.png" alt-text="Four lesson topics and a number of system topics are in the Topics list":::
 
   
   - Four **User Topics** that can be used as [lesson topics](authoring-template-topics-teams.md) can to help understand how to make a bot conversation.
@@ -80,7 +84,7 @@ You can edit both of these topic types in the same manner as for topics you crea
    Remember you don't need to enter in all the different ways someone might ask a question - the bot can determine what the user meant (their "intent") and match it to the right topic.
 
 
-   ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers-teams.png "The Topic details page contains a name, description, and trigger phrases")
+   :::image type="content" source="media/topics-details-triggers-teams.png" alt-text="The Topic details page contains a name, description, and trigger phrases":::
 
 1. Select **Save topic** to add the topic to the topics list.
 
@@ -91,7 +95,7 @@ A topic's conversation path is how the bot will respond to a person's questions 
 
 1. In the topic details for the topic you want to edit, select **Go to authoring canvas**.
 
-   ![The Go to authoring canvas is to the side of the trigger phrases](media/topics-details-canvas-teams.png "The Go to authoring canvas is to the side of the trigger phrases")
+   :::image type="content" source="media/topics-details-canvas-teams.png" alt-text="The Go to authoring canvas is to the side of the trigger phrases":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
@@ -114,15 +118,14 @@ You can:
 - **Add a condition**
 - **Call an action**
 - **Show a message**
-- **Go to another topic**
-- **End the conversation**
+- **End with survey**
 
 
-  :::image type="content" source="media/topics-nodes-teams.png" alt-text="When adding a node, you can choose from five options":::
+:::image type="content" source="media/topics-nodes-teams.png" alt-text="When adding a node, you can choose from five options":::
  
-Additionally, you can **Branch based on a condition**:
+If the node you are adding is the last in a topic, you can also add a **Go to another topic** node.
 
-![Branch based on a condition](media/topics-nodes-branch-teams.png "Branch based on a condition")
+:::image type="content" source="media/topics-nodes-other-topic-teams.png" alt-text="Go to another topic":::
 
 #### Ask a question:
 
@@ -138,7 +141,7 @@ Additionally, you can **Branch based on a condition**:
    
    For example, they could be multiple choice options, a number, or a specific string. 
    
-   To understand more about the different options, see [Use entities in a conversation](advanced-entities-slot-filling-teams.md#use-entities-in-a-conversation).
+   To understand more about the different options, see [Use entities in a conversation](advanced-entities-slot-filling-teams.md).
 
 1. Depending on what you choose in the **Identify** field, you can enter what options the user should have. 
    
@@ -160,6 +163,14 @@ Additionally, you can **Branch based on a condition**:
 >
 > 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
 
+#### Add a condition
+
+1. To add branching logic based on [variables](authoring-variables-teams.md), select **+** to add a node, and then **Add a condition**.
+
+1. Choose the variable you want to use to determine if the bot conversation should branch at this point. 
+
+    ![Choose a variable](media/topics-branch-teams.png "Choose a variable")
+
 #### Call an action
 
 You can [call Power Automate Flows](advanced-flow-teams.md) by selecting **Call an action**.
@@ -174,39 +185,25 @@ You can [call Power Automate Flows](advanced-flow-teams.md) by selecting **Call 
    You can also [use variables that you have defined elsewhere](authoring-variables-teams.md) in your bot conversation.
 
 
+
+
+#### End with survey
+
+When you end the conversation, you can have a survey appear that asks the user if their question or issue was answered or resolved correctly. This information is collected under the [customer satisfaction analytics page](analytics-csat-teams.md).
+
+
+1. At the end of a response that resolves the user's issue or answers the question, select **End with survey**.
+    
+    ![End with survey](media/topics-nodes-survey-teams.png "End with survey")
+
 #### Go to another topic
 
 1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Go to another topic**.
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
-    ![Go to another topic](media/topics-nodes-other-topic-teams.png "Go to another topic")
+    :::image type="content" source="media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics":::
 
-#### End the conversation
-
-When you end the conversation, you can have a survey appear that asks the user if their question or issue was answered or resolved correctly. This information is collected under the [customer satisfaction analytics page](analytics-csat-teams.md).
-
-
-1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
-
-    ![End the conversation](media/topics-nodes-end-teams.png "End the conversation")
-
-1. To end with a customer satisfaction survey, select **End with survey**.
-    
-    ![End with survey](media/topics-nodes-survey-teams.png "End with survey")
-
-1. Select **Transfer To Agent** to insert a hand-off node that will link with your configured hand-off product. You can also enter a private message to the agent. This requires you to [use the Power Virtual Agents app online to configure it](../configure-generic-handoff.md).
-
-    ![Transfer To Agent](media/topics-nodes-handoff-teams.png "Transfer To Agent")
-
-
-#### Branch based on a condition
-
-1. To add branching logic based on [variables](authoring-variables-teams.md), select **+** to add a node, and then **Add a condition** and **Branch based on a condition**.
-
-1. Choose the variable you want to use to determine if the bot conversation should branch at this point. 
-
-    ![Choose a variable](media/topics-branch-teams.png "Choose a variable")
 
 ### Delete nodes
 

@@ -25,6 +25,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../fundamentals-what-is-power-virtual-agents-portal.md)
 > - [Power Virtual Agents app in Microsoft Teams](fundamentals-what-is-power-virtual-agents-teams.md)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 >[!IMPORTANT]
 >See the [Important information](#important-information) section for specific usage details.

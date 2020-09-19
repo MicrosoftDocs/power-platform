@@ -20,6 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../fundamentals-get-started.md)
 > - [Power Virtual Agents app in Microsoft Teams](fundamentals-get-started-teams.md)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 Create, manage, and publish conversational chatbots easily from within Teams. Share your bots with other people in your organization so they can chat and have their questions answered.
 

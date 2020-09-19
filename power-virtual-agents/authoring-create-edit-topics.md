@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Create and edit topics in your Power Virtual Agents bot
 
+Select the version of Power Virtual Agents you're using here:
+
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](authoring-create-edit-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-create-edit-topics-teams.md)
@@ -33,7 +35,7 @@ For example, a user might type "Open hours" into your bot—the AI will be able 
 You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you are ready to deploy it without having to exit the Power Virtual Agents portal.
 
 > [!Note]
-> You can have up to 1,000 topics in a bot and up to 30 nodes in a topic.
+> You can have up to 1,000 topics in a bot.
 
 
 ## Prerequisites
@@ -45,7 +47,7 @@ You can see how the bot conversation works in practice by testing it in the **Te
 
 When you create a bot, a number of topics will be automatically created for you.
 
-![Four lesson topics and a number of system topics are in the Topics list](media/topics-system.png "Four lesson topics and a number of system topics are in the Topics list")
+:::image type="content" source="media/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list":::
 
 These are:
   
@@ -93,21 +95,23 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 ### Insert nodes
 
-When adding a node, you can choose from five options. Each option has a specific node or nodes that will be inserted into the conversation path.
+When adding a node, you can choose from several options. Each option has a specific node or nodes that will be inserted into the conversation path.
 
-You can:
+When adding a node after the **Trigger Phrases** node, or between **Message nodes**, you can:
 
 - **Ask a question**
 - **Call an action**
 - **Show a message**
+
+:::image type="content" source="media/topics-node-after-triggers.png" alt-text=" ":::
+
+After the last node, you can also:
+
 - **Go to another topic**
 - **End the conversation**
 
-  ![When adding a node, you can choose from five options](media/topics-nodes.png "When adding a node, you can choose from five options")
- 
-Additionally, you can **Branch based on a condition** when inserting a node between existing nodes:
 
-![Branch based on a condition](media/topics-nodes-branch.png "Branch based on a condition")
+Additionally, you can **Add a condition** when inserting a node after a **Question** node.
 
 #### Ask a question:
 
@@ -147,7 +151,7 @@ Additionally, you can **Branch based on a condition** when inserting a node betw
 
 #### Call an action
 
-You can [call Power Automate Flows](advanced-flow.md) by selecting **Call an action**.
+You can [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md) by selecting **Call an action**.
  
 
 #### Show a message
@@ -165,8 +169,7 @@ You can [call Power Automate Flows](advanced-flow.md) by selecting **Call an act
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
-    > [!div class="mx-imgBorder"]
-    > ![Go to another topic](media/topics-nodes-other-topic.png "Go to another topic")
+    :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics":::
 
 #### End the conversation
 
@@ -187,7 +190,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
     ![Transfer To Agent](media/topics-nodes-handoff.png "Transfer To Agent")
 
 
-#### Branch based on a condition
+#### Add a condition
 
 1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, and then **Add a condition** and **Branch based on a condition**.
 

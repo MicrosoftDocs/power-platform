@@ -20,6 +20,8 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../data-location.md)
 > - [Power Virtual Agents app in Microsoft Teams](data-location-teams.md)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to live.
 
 ## Prerequisites
