@@ -32,4 +32,4 @@ You can enable user authentication within a bot conversation so the bot can:
 - Prompt a user to sign in using an authentication node, so the bot can retrieve the user's information from a back-end system. 
 - Use single sign-on (SSO) so your users don't need to sign in manually.
 
-Read more about using [Configuring and using authentication in the Power Virtual Agents web app documentation](../advanced-end-user-authentication.md).
+Read more about [Configuring and using authentication in the Power Virtual Agents web app documentation](../advanced-end-user-authentication.md).
