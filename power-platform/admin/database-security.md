@@ -150,4 +150,5 @@ When you import the solution, it creates the **min prv apps use** role, which yo
 
 ### See also
 [Grant users access](grant-users-access.md) <br />
-[Control user access to environments: security groups and licenses](control-user-access.md)
+[Control user access to environments: security groups and licenses](control-user-access.md) <br />
+[How access to a record is determined](how-record-access-determined.md)

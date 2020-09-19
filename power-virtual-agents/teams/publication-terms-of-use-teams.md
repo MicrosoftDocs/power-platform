@@ -27,8 +27,8 @@ The following table lists the default values that are provided in a Power Virtua
 
 Requirement | Default value | Suggestions
 -|-|-
-Privacy statement | Link to the Important note below | You should work with your manager or IT department to determine what you want to say in your privacy statement. This should follow your organization's privacy practices. 
-Terms of use | Link to the Important note below | Work with your manager or IT department to define the terms of use. Typically this would include any limitations you might have on how the information can be used. See [Teams privacy policy guidelines](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy).
+Privacy statement | [Empty privacy statement and terms of use](#empty-privacy-statement-and-terms-of-use) | You should work with your manager or IT department to determine what you want to say in your privacy statement. This should follow your organization's privacy practices. 
+Terms of use | [Empty privacy statement and terms of use](#empty-privacy-statement-and-terms-of-use) | Work with your manager or IT department to define the terms of use. Typically this would include any limitations you might have on how the information can be used. See [Teams privacy policy guidelines](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist#privacy-policy).
 Developer website | Link to the [Power Virtual Agents overview page](https://go.microsoft.com/fwlink/?linkid=2138949) | You could include a link to your Office profile, or a SharePoint site for your team.
 Developer's name | *Powered by Power Virtual Agents* | You should include a name of someone who can be contacted in case someone has questions about the bot.
 
@@ -40,8 +40,8 @@ Developer's name | *Powered by Power Virtual Agents* | You should include a name
 
 
 >[!IMPORTANT]
->This app is not developed by Microsoft.
+>This app is not developed by Microsoft. If you are a user of a bot and sees this page, it means the bot developer did not provide terms of user and privacy statement for the bot.  
 >
 >For privacy policy or terms of use, contact the developer of this app.
 
-If you do not enter links to a privacy statement or terms of use, then chatbot users are redirected here.
+If you do not enter links to a privacy statement or terms of use, then chatbot users are redirected here.  

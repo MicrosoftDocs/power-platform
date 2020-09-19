@@ -40,11 +40,11 @@ Authentication variable availability by authentication configuration option
 #### UserDisplayName variable
 The ```UserDisplayName``` variable contains the user’s display name stored in the identity provider. You can use this variable to greet or refer to the end user without them having to explicitly tell it to the bot, making it more personalized.
 
-This field value is obtained from AAD ```name``` field. For OAuth providers, this is the value stored in the ```name``` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
+This field value is obtained from AAD ```name``` claim. For OAuth providers, this is the value stored in the ```name``` claim. Power Virtual Agents automatically extracts this field into the variable, so ensure you have ```profile``` as part of your authentication scope setup.
 
 #### UserID variable
 The ```UserID``` variable contains the user’s ID stored in the identity provider. This value can be used by Power Automate flows to call APIs that takes the UserID as a value.
-This field value is obtained from AAD ```id``` field. For OAuth providers, this is the value stored in the ```user_id``` claim. Power Virtual Agents automatically extracts this field into the variable.
+This field value is obtained from AAD ```id``` claim. For OAuth providers, this is the value stored in the ```user_id``` claim. Power Virtual Agents automatically extracts this field into the variable.
 
 > [!WARNING]
 > The ```UserDisplayName``` and ```UserID``` variables are not guaranteed to be filled, and might be empty strings depending on the user configuration in the identity provider. Please test with a user from your identification provider to ensure your topics work correctly, even if these variables are empty.

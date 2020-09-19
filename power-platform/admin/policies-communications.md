@@ -6,7 +6,7 @@ manager: timrob
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 09/14/2020
 ms.author: astockli
 search.audienceType: 
   - admin
@@ -87,6 +87,8 @@ Planned maintenance includes updates and changes to the service to provide incre
 ### Maintenance timeline
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
 
+The following are service update times. Database updates run 24 hours after service updates.
+
 |Region | URL | Window (UTC) |
 | ------------- | -------------     | ------------- |
 | NAM           | crm.dynamics.com  | 2 AM to 11 AM |
@@ -108,6 +110,7 @@ To limit the impact on users, the maintenance window is planned according to the
 
 ### Service Update Release Schedule
 To see the Service Update release schedule for your regions see our new [Released Versions](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#latest-version-availability) page.  
+
 
 **Prior notification**  
   
