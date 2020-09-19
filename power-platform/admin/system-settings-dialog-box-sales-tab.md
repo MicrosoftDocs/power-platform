@@ -2,11 +2,10 @@
 title: "System Settings Sales tab  | MicrosoftDocs"
 description: System Settings Sales tab 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 09/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # System Settings Sales tab
 
-Use the settings on this page to configure system-level settings for the sales area of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
+Use the settings on this page to configure system-level settings for the sales area of customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 
 <!-- legacy procedure -->
  
@@ -44,7 +43,7 @@ Use the settings on this page to configure system-level settings for the sales a
 |                         **Set maximum number of products in a bundle**                          |                                                                                                                                                                                                                                                                                                                                                                                                      |
 |                             Maximum number of products in a bundle                              |                                                                                                                                                                        Type the maximum number of products a bundle can have.                                                                                                                                                                        |
 |                             **Set pricing calculation preference**                              |                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                 Use system pricing calculations                                 |                                                      Click **Yes** to use the pricing calculations of model-driven apps in Dynamics 365. To use custom pricing by using a plug-in, click **No**. When set to **No**, the default pricing calculations won't be done on opportunity, quote, order and invoice records.                                                      |
+|                                 Use system pricing calculations                                 |                                                      Click **Yes** to use the pricing calculations of customer engagement apps. To use custom pricing by using a plug-in, click **No**. When set to **No**, the default pricing calculations won't be done on opportunity, quote, order and invoice records.                                                      |
 |                **Set whether a discount is applied as a line item or per unit**                 |                                                                                                                                                                                                                                                                                                                                                                                                      |
 |                                   Discount calculation method                                   |                                                             Select **Per unit** if you want the pricing engine to calculate the discount based on the prices per unit instead of a line item. By default, the calculations are done on a line item-basis. \*See the table below that shows the difference between the two calculations.                                                              |
 |              **Set maximum number of properties allowed for a product or bundle**               |                                                                                                                                                                                                                                                                                                                                                                                                      |

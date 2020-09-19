@@ -2,11 +2,10 @@
 title: "Troubleshooting server-based authentication   | MicrosoftDocs"
 description: Troubleshooting server-based authentication
 author: Mattp123
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/02/2019
+ms.date: 09/11/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -36,7 +35,7 @@ search.app:
   
 <a name="BKMK_fail_Author"></a>   
 ### Failed authorization or 401 unauthorized error
- This failure can occur when the claims-based authentication types do not match. For example, in a hybrid deployment such as model-driven apps in Dynamics 365 to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises, when you use the default claims-based authentication mapping, the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address used by the user must match the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] user’s **Work email**. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define custom claim mapping for SharePoint server-based integration](https://docs.microsoft.com/power-platform/admin/configure-server-based-authentication-sharepoint-on-premises) 
+ This failure can occur when the claims-based authentication types do not match. For example, in a hybrid deployment such as customer engagement apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises, when you use the default claims-based authentication mapping, the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] email address used by the user must match the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] user’s **Work email**. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define custom claim mapping for SharePoint server-based integration](https://docs.microsoft.com/power-platform/admin/configure-server-based-authentication-sharepoint-on-premises) 
   
 <a name="BKMK_SP_nosupp"></a>   
 ### SharePoint Version Not Supported  
@@ -49,14 +48,14 @@ search.app:
   
 <a name="BKMK_known_CRMOn_SPop"></a>   
 ## Known issues with server-based authentication  
- This section describes the known issues that may occur when you set up or use model-driven apps in Dynamics 365 and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server-based authentication.  
+ This section describes the known issues that may occur when you set up or use customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server-based authentication.  
   
 ### Failed authentication is returned when validating a SharePoint site even though you have appropriate permission  
- Applies to: model-driven apps in Dynamics 365 with [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)], model-driven apps in Dynamics 365 with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] on-premises.  
+ Applies to: customer engagement apps with [!INCLUDE[pn_microsoft_sharepoint_online](../includes/pn-microsoft-sharepoint-online.md)], customer engagement apps with [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] on-premises.  
   
- This issue can occur when the claims-based authentication mapping that is used provides a situation where the claims type values don’t match between model-driven apps in Dynamics 365 and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. For example, this issue can occur when the following items are true:  
+ This issue can occur when the claims-based authentication mapping that is used provides a situation where the claims type values don’t match between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. For example, this issue can occur when the following items are true:  
   
-- You use the default claims-based authentication mapping type, which for model-driven apps in Dynamics 365 to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] server-based authentication uses the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] unique identifier.  
+- You use the default claims-based authentication mapping type, which for customer engagement apps to [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] server-based authentication uses the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] unique identifier.  
   
 - The identities used for [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)], Dynamics 365 administrator, or [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] administrator don’t use the same [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)], therefore the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] unique identifiers don’t match.  
   
@@ -70,7 +69,7 @@ search.app:
  To resolve this issue, remove the certificates with the same subject name that you don’t need using the Certificate Manager MMC snap-in and note the following.  
   
 > [!IMPORTANT]
->  It can take up to 24 hours before the SharePoint cache will begin using the new certificate. To use the certificate now, follow the steps here to replace the certificate information in model-driven apps in Dynamics 365.  
+>  It can take up to 24 hours before the SharePoint cache will begin using the new certificate. To use the certificate now, follow the steps here to replace the certificate information in customer engagement apps.  
 >   
 >  To resolve this issue by following the steps in this article, the existing certificate cannot be expired.  
   
@@ -78,7 +77,7 @@ search.app:
   
 1. Use an existing or create a new and self-signed certificate. The subject name must be unique to any certificate subject names that are registered in the local certificate store.  
   
-2. Run the following [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] script against the existing certificate, or the certificate that you created in the previous step. This script will add a new certificate in model-driven apps in Dynamics 365, which will then be replaced in a later step. <!-- For more information about the CertificateReconfiguration.ps1[!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] script see, [Prepare Microsoft Customer Engagement server for server-based authentication](Configure%20server-based%20authentication%20with%20Microsoft%20Dynamics%20365%20\(on-premises\)%20and%20SharePoint%20on-premises.md#BKMK_prepare_CRM).  -->
+2. Run the following [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] script against the existing certificate, or the certificate that you created in the previous step. This script will add a new certificate in customer engagement apps, which will then be replaced in a later step. <!-- For more information about the CertificateReconfiguration.ps1[!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] script see, [Prepare Microsoft Customer Engagement server for server-based authentication](Configure%20server-based%20authentication%20with%20Microsoft%20Dynamics%20365%20\(on-premises\)%20and%20SharePoint%20on-premises.md#BKMK_prepare_CRM).  -->
   
 ```powershell
    CertificateReconfiguration.ps1 -certificateFile <Private certificate file (.pfx)> -password <private-certificate-password> -updateCrm -certificateType AlternativeS2STokenIssuer -serviceAccount <serviceAccount> -storeFindType FindBySubjectDistinguishedName  
@@ -97,7 +96,7 @@ search.app:
    ```  
   
 ### You receive “The remote server returned an error: (400) Bad Request” and “Register-SPAppPrincipal: The requested service, '<http://wgwitsp:32843/46fbdd1305a643379b47d761334f6134/AppMng.svc>' could not be activated” error messages  
- Applies to: [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises versions used with model-driven apps in Dynamics 365.  
+ Applies to: [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises versions used with customer engagement apps.  
   
  The remote server returned an error: (400) Bad Request error message can occur after the certificate installation, such as when you run the CertificateReconfiguration.Ps1 script.  
   
