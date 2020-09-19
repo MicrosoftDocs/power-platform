@@ -17,11 +17,11 @@ search.app:
   - Powerplatform
 ---
 
-# Released version Audit Log Components 1.0.0.17
+# Released version Audit Log Components 1.0
 
 ## Introduction
 
-Version 1.0.0.17 for the CoE Starter Kit Audit Log Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 8, 2020.
+Version 1.2 for the CoE Starter Kit Audit Log Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 8, 2020.
 
 ## [Child] Admin | Sync Logs
 

@@ -37,7 +37,7 @@ The [Power BI Dashboard](../power-bi-monitor.md#ui-flows) has been updated to sh
 
 ## Custom Connector
 
-To help with the setup, the custom connector used in the [Audit Log components](../collect-audit-data.md) has been removed from the Audit Log solution and added to this solution.
+To help with the setup, the custom connector used in the [Audit Log components](../setup-auditlog.md) has been removed from the Audit Log solution and added to this solution.
 
 ## Deprecation
 
