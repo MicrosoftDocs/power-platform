@@ -40,8 +40,26 @@ Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (w
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 >[!IMPORTANT]
->You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
+>You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
 >Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
+
+
+## Change the bot name and icon
+
+You can change the bot's name and icon. 
+
+>[!NOTE]
+>Changing the bot's avatar icon only applies to the bot's avatar when it's [added to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
+
+**To change the bot's name and icon:**
+
+1. Select **Manage** on the side navigation pane, and then go to the **Details** tab.
+
+2. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](https://review.docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema#icons)
+
+3. Select **Save** to commit your changes.
+
+    :::image type="content" source="media/custom-canvas-name-icon.png" alt-text=" ":::
 
 ## Retrieve bot ID and tenant ID details
 
@@ -248,19 +266,7 @@ As with customizing the default canvas, you can use `styleSetOptions` to customi
 
 In order to host your custom canvas, deploy all files to a web app.
 
-## Change the bot name and icon
 
-You can change the bot's name and icon. Changing the icon only applies to the bot's icon when it's [added to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
-
-**To change the bot's name and icon:**
-
-1. Select **Manage** on the side navigation pane, and then go to the **Details** tab.
-
-2. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](https://review.docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema#icons)
-
-3. Select **Save** to commit your changes.
-
-    :::image type="content" source="media/custom-canvas-name-icon.png" alt-text=" ":::
 
 ## See also
 
