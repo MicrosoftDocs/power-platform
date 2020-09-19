@@ -81,7 +81,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
-    :::image type="content" source="media/suggested-web-wait.png" alt-text="An alert that says "Getting your suggestions. This may take several minutes" appears at the top of the page":::
+    :::image type="content" source="media/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page":::
 
 >[!TIP]
 >You can add multiple webpages and links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
