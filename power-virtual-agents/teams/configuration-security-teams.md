@@ -1,6 +1,6 @@
 ---
-title: "Regional settings and data locations in Teams"
-description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
+title: "Configure access and authentication in Teams"
+description: "Determine who can access and interact with your bot in the Power Virtual Agents app in Microsoft Teams."
 ms.date: 8/3/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
@@ -23,7 +23,7 @@ Select the version of Power Virtual Agents you're using here:
 
 You can change who can access your bot, and what they can do, with the **Security** options available in Power Virtual Agents.
 
-## Control which users have access to chat with your bot
+## Configure the Access setting
 
 You can determine whether users need to sign in to access your bot, and whether certain users are allowed to access the bot.
 
@@ -51,11 +51,11 @@ This setting controls if users need to sign in before talking to your bot. Bots 
 
 If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 
 
-Bots in this configuration won’t ask users to sign in until they encounter a topic which requires them to do so.
+Bots in this configuration won't ask users to sign in until they encounter a topic which requires them to do so.
 
 When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. 
 
-This topic is automatically triggered for any user who talks to the bot without being authenticated. This topic is read-only and cannot be customized. If the user fails to sign in, this topic redirects the user to the **Escalate** system topic. You can see the topic by clicking “Go to the authoring canvas”.
+This topic is automatically triggered for any user who talks to the bot without being authenticated. This topic is read-only and cannot be customized. If the user fails to sign in, this topic redirects the user to the **Escalate** system topic. You can see the topic by clicking **Go to the authoring canvas**.
 
 
 ### Access
@@ -65,7 +65,7 @@ This option controls who can access your bot. You can select one of two groups:
 - **Everyone on my team**. This lets every member on the team that the bot belongs to access and chat with the bot. Users outside of the team will see an error when trying to chat with the bot. If you want to add users to access your bot in this configuration, you can add them to the team directly in Microsoft Teams.
 - **Everyone in my organization (*Organization name*)**. This lets everyone in the organization access and chat with your bot. Users outside of the organization will see an error when chatting with the bot.
 
-## Authentication
+## Configure the Authentication setting
 
 The **Authentication** setting impacts how you can manage access to the bot. The **Authentication** setting can only be changed with an [upgraded or standalone Power Virtual Agents license](../requirements-licensing-subscriptions.md).
 
