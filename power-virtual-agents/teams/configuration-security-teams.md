@@ -43,11 +43,11 @@ This setting controls if users need to sign in before talking to your bot. Bots 
 
 >[!NOTE]
 >By default, the [**Authentication** setting](#authentication) is set to **Only for Teams**, which requires team users to be signed in to use the bot. Therefore, you won't be able to configure this setting unless you change the **Authentication** setting.
->Read more about different access options in [Assign access and change security options in the Power Virtual Agents web app](../configuration-security.md)
+>Read more about different access options in [Assign access and change security options in the Power Virtual Agents web app](../configuration-security.md#access-settings-based-on-authentication-configuration)
 
 If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 
 
-Bots with this configuration turned **OFF** won't ask users to sign in until they encounter a topic which requires them to do so.
+Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
 
 When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. This topic is only relevant for the "Manual" authentication setting, as users are always authenticated on Teams.
 
@@ -63,6 +63,6 @@ This option controls who can access your bot. You can select one of two groups:
 
 ## Configure the Authentication setting
 
-The **Authentication** setting impacts how you can manage access to the bot. Read more about different access options in [Assign access and change security options in the Power Virtual Agents web app](../configuration-security.md)
+The **Authentication** setting impacts how you can manage access to the bot. 
 
-For more information on configuration the **Authentication** setting, see the [Power Virtual Agents web app](../configuration-security.md) version of this topic.
+For more information on configuration the **Authentication** setting and other access options available, see the [Power Virtual Agents web app](../configuration-security.md#access-settings-based-on-authentication-configuration) version of this topic.

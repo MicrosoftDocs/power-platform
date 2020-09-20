@@ -34,20 +34,15 @@ You can determine whether users need to sign in to access your bot, and whether 
 
     :::image type="content" source="media/security-access.png" alt-text="The Access pane has options to grant access and require sign in":::
 
->[!NOTE]
->Depending on your [authentication settings](#authentication), you will see different options to choose from. Learn more about authentication in [Configure end-user authentication in Power Virtual Agents](configuration-end-user-authentication.md).
-
 The **Access** pane gives you control of two aspects for user access.
 
 ### Require users to sign in
 
 This setting controls if users need to sign in before talking to your bot. Bots that manage private or sensitive information should use this option. 
 
-It's also the default selection for Teams bots. 
-
 If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 
 
-Bots with this configuration turned **OFF** won't ask users to sign in until they encounter a topic which requires them to do so.
+Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
 
 When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. This topic is only relevant for the "Manual" authentication setting, as users are always authenticated on Teams.
 
