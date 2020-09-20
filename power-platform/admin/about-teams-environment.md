@@ -1,5 +1,5 @@
 ---
-title: "About the Project Oakdale environment (preview) | MicrosoftDocs"
+title: "About the Project Oakdale environment (Preview) | MicrosoftDocs"
 description: About Project Oakdale environment
 author: jimholtz
 ms.service: power-platform
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# About the Project Oakdale environment
+# About the Project Oakdale environment (Preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
