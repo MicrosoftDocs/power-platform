@@ -34,11 +34,10 @@ You can determine whether users need to sign in to access your bot, and whether 
 
     :::image type="content" source="media/security-access.png" alt-text="The Access pane has options to grant access and require sign in":::
 
-The **Access** pane gives you control of two aspects for user access.
-
 >[!NOTE]
 >Depending on your [authentication settings](#authentication), you will see different options to choose from. Learn more about authentication in [Configure end-user authentication in Power Virtual Agents](configuration-end-user-authentication.md).
 
+The **Access** pane gives you control of two aspects for user access.
 
 ### Require users to sign in
 
@@ -48,9 +47,9 @@ It's also the default selection for Teams bots.
 
 If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 
 
-Bots in this configuration won't ask users to sign in until they encounter a topic which requires them to do so.
+Bots with this configuration turned **OFF** won't ask users to sign in until they encounter a topic which requires them to do so.
 
-When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. 
+When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. This topic is only relevant for the "Manual" authentication setting, as users are always authenticated on Teams.
 
 This topic is automatically triggered for any user who talks to the bot without being authenticated. This topic is read-only and cannot be customized. If the user fails to sign in, this topic redirects the user to the **Escalate** system topic. You can see the topic by clicking **Go to the authoring canvas**.
 
@@ -62,7 +61,7 @@ This option controls who can access your bot. You can select one of two groups:
 - **All bot managers**. This lets only bot managers to chat with the bot. You can [share your bot](admin-share-bots.md) so other bot managers can access it.
 - **Everyone in my organization (*Organization name*)**. This lets everyone in the organization access and chat with your bot. Users outside of the organization will see an error when chatting with the bot.
 
-## Configure the Authentication setting
+## Access settings based on authentication configuration
 
 The **Authentication** setting impacts how you can manage access to the bot. 
 
