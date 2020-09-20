@@ -22,6 +22,9 @@ Select the version of Power Virtual Agents you're using here:
 
 You can change who can access your bot, and what they can do, with the **Security** options available in Power Virtual Agents.
 
+>[!WARNING]
+>Changes to the Access configuration will only take effect after you publish your bot. Make sure to plan ahead before making Access changes to your bot.
+
 ## Configure the Access setting
 
 You can determine whether users need to sign in to access your bot, and whether certain users are allowed to access the bot.
