@@ -26,10 +26,12 @@ Select the version of Power Virtual Agents you're using here:
 
 >[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
-You can enable user authentication within a bot conversation so the bot can:
+Bots created in Microsoft Teams comes with authentication pre-configured to use Teams' authentication. 
 
-- Get a user's basic properties such as name and ID in bot variables.
+You can also enable user authentication within a bot conversation so the bot can:
+
+- Get a user's basic properties such as user name and ID in bot variables.
 - Prompt a user to sign in using an authentication node, so the bot can retrieve the user's information from a back-end system. 
-- Use single sign-on (SSO) so your users don't need to sign in manually.
+- Use single sign-on (SSO) on Web channels so your users don't need to sign in manually. 
 
 Read more about [Configuring and using authentication in the Power Virtual Agents web app documentation](../advanced-end-user-authentication.md).
