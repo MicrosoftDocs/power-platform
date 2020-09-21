@@ -12,7 +12,7 @@ ms.cusom: "analysis, licensing, ceX. Teams"
 ms.collection: virtual-agent
 ---
 
-# View billed sessions for Power Virtual Agents
+# View billed sessions for Power Virtual Agents web app
 
 Select the version of Power Virtual Agents you're using here:
 

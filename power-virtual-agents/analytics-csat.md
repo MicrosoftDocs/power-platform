@@ -14,6 +14,12 @@ ms.collection: virtual-agent
 
 # Analyze customer satisfaction for Power Virtual Agents bots
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](analytics-csat.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-csat-teams.md)
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

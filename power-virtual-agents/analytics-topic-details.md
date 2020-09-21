@@ -14,7 +14,11 @@ ms.collection: virtual-agent
 
 # Analyze topic usage in Power Virtual Agents
 
+Select the version of Power Virtual Agents you're using here:
 
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](analytics-topic-details.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-topic-details-teams.md)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

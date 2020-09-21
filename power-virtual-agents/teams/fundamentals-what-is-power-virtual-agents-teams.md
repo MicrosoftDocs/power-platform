@@ -39,7 +39,7 @@ Some of the scenarios where you might want to create a Power Virtual Agents chat
 - Someone in the payroll department creates a chatbot that helps teammates get tax filing forms and information
 - The facilities manager creates a chatbot that answers the common questions they are receiving about coming back to work after a pandemic.
 - A human resources (HR) employee creates a bot that can answer questions about vacation balance, time off, and benefits.
-- A member of the finance department creates a chatbot that helps his teammates in finance team to fill out expense reports
+- A member of the finance department creates a chatbot that helps their teammates in the finance team to fill out expense reports
 
 The Power Virtual Agents app in Microsoft Teams makes it easy to fulfill any scenario, especially those that arise within an organization. If you're looking to create a chatbot you can share externally, such as one that interacts with customers outside your organization, see the [Power Virtual Agents web app version of this topic](../fundamentals-what-is-power-virtual-agents-portal.md).
 

@@ -29,7 +29,7 @@ To help you get started making bots, we've created an end-to-end guide that take
 - The scenario and how to map what your needs are to what a chatbot can do
 - How to create a bot in the Power Virtual Agents app in Microsoft Teams
 - How to build and enhance topics that answer commmon HR-style questions
-- How to test, publish, and share the bot with organization
+- How to test, publish, and share the bot with the organization
 
 Download the guide and get started making bots:
 

@@ -15,6 +15,12 @@ ms.collection: virtual-agent
 
 # Key concepts - Enhanced authoring in Power Virtual Agents
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](advanced-fundamentals.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-fundamentals-teams.md)
+
 You can go beyond basic authoring in Power Virtual Agents by taking advantage of a number of advanced features. These features enhance and improve upon the [authoring experience](authoring-fundamentals.md) by letting you:
 - Expand the types of information the bot understands and can parse back
 - Use variables to retrieve information from one part of a topic and use it in another, to ensure a consistent experience for your bot users
