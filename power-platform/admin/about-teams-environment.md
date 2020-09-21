@@ -44,7 +44,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams.
 
 - For any standalone Power Apps or Power Automate usage, which includes API access as well, the Project Oakdale schema will need to be promoted to Common Data Service.  
 
-- No direct API access or pro developer experience will be provided, and only Power Apps embedded within the Teams client will be able to access the runtime.<!--note from editor: Edit assumes this refers to a Teams runtime environment.-->  
+- No direct API access or pro developer experience will be provided, and only Power Apps embedded within the Teams client will be able to access the runtime.
 
 ## Admin experience
 
@@ -88,7 +88,7 @@ This section summarizes user access to Project Oakdale environments and resource
 
 ### User access requirements
 
-For users to access Project Oakdale environment apps, bots, and data, they should:<!--note from editor: Are these "recommended but optional"? If not, can you use "must"?-->
+For users to access Project Oakdale environment apps, bots, and data, they must:
 
 - [Be enabled in Azure Active Directory](create-users-assign-online-security-roles.md#create-a-user-account).
 - Have an active Microsoft 365 license with a plan that includes Project Oakdale.
@@ -110,7 +110,7 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 |Teams member      | Members can view the Project Oakdale environment's resources, run all apps and resources, and create or update their own resources. They have full access to all data.     |Teams member      |
 | Teams guest  | Guests are people from outside the tenant that a team owner invites, such as a partner or a customer. They can view and run all resources in the team. By default, guests have full access to records they create and don't have access to other users' records.   | Teams guest | 
 |Global admin / Power Platform admin who isn't in the team | These are tenant-level admins who manage the health and maintenance of the tenant's environments. They need not be members of the team, but through their tenant-level admin privileges they can perform environment maintenance tasks such as backup and restore for all Project Oakdale environments. They are set to the Administrative access mode as opposed to the Read-Write access mode if they aren't in the team, so they'll only have Administrative access to the Project Oakdale environments. They can be explicitly given Read-Write access by another admin who already has Read-Write access to the environment.    | System Administrator         |
-|Application user | Application users are people in the tenant who aren't in the team but have been invited to run apps in the team. By default, Application users have no access to data. Their data access rights can be granted based on the app or resources that they need to run. Note: when an Application user is invited to run apps in a team, the Microsoft 365 group association with the team's Project Oakdale environment will be automatically removed to allow app run access to the Application user. | Common Data Service User |
+|Colleagues with access | Colleagues with access are people in the tenant who aren't in the team but have been invited to run apps in the team. By default, colleagues with access have no access to data. Their data access rights can be granted based on the app or resources that they need to run. Note: when a colleague with access is invited to run apps in a team, the Microsoft 365 group association with the team's Project Oakdale environment will be automatically removed to allow app run access to the colleague with access. | Common Data Service User |
 |Dynamics 365 admin who isn't in the team (that is, isn't in the Microsoft 365 group) | These admins won't have access to manage the health and maintenance of the team environment.    | No access, because a Project Oakdale environment will always have the team's Microsoft 365 group associated with it, and Dynamics 365 Service admins are excluded from environments for which they aren't in the associated group.         |
 
 > [!NOTE]
@@ -152,7 +152,7 @@ You can specify users in an environment to provide access to Project Oakdale env
 
 ### Microsoft Teams Integration
 
-Tenant admins can select **Microsoft Teams Integration** to enable embedding model-driven apps into Teams. After this<!--note from editor: What is this? Check box, option button...?--> is selected, users can use model-driven apps in Teams without using customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
+Tenant admins can select **Microsoft Teams Integration** to enable embedding model-driven apps into Teams. After making this selection, users can use model-driven apps in Teams without using customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
 > Model-driven apps can execute code that may not be generated by Microsoft. Make sure that the code for the apps in this environment are from a trusted source.
@@ -229,26 +229,28 @@ A tenant admin will be allowed to promote a Project Oakdale environment to a Com
 3. Admins will review the request from the Teams user and make the decision to promote the environment from Teams to Common Data Service. At this point, the admin will go to the Power Platform admin center environments view to execute the promotion.   
 
    > [!NOTE]
-   > To successfully carry out the promotion, the tenant must have at least as much available capacity as the size of the Project Oakdale environment that's being promoted. After its promotion, the consumed capacity of the promoted Project Oakdale environment will start counting towards the tenant's capacity. If an attempt is made to promote a Project Oakdale environment when the tenant doesn't have enough capacity, the promote operation will be blocked and an error message will be displayed.-->
-<!--note from editor: Edity okay?-->  
-<!-->
+   > To successfully carry out the promotion, the tenant must have at least as much available capacity as the size of the Project Oakdale environment that's being promoted. After its promotion, the consumed capacity of the promoted Project Oakdale environment will start counting towards the tenant's capacity. If an attempt is made to promote a Project Oakdale environment when the tenant doesn't have enough capacity, the promote operation will be blocked and an error message will be displayed.
+
 4. Admins will be given a message with the implications of promoting and asked to confirm the action.  
 
 5. If the admin confirms, the promotion will go forward. As the promotion progresses, various notifications will be provided as the operation transitions through the various states.  
 
 After promotion, the following applies to the newly promoted environment:  
--	The promoted environment's lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the promoted environment remains. 
--	Any apps running on the environment will require Microsoft Power Platform (Power Apps, Power Automate) licenses to be accessed. 
--	The apps can run inside and outside of Teams. 
+- The promoted environment's lifecycle will no longer be tied to the lifecycle of that team. If the team is deleted, the promoted environment remains. 
+- Any apps running on the environment will require Microsoft Power Platform (Power Apps, Power Automate) licenses to be accessed. 
+- The apps can run inside and outside of Teams. 
 - All existing apps will be associated with the promoted environment (Common Data Service) and can take advantage of the extended set of entities. 
--	The promoted environment capacity will start counting against the tenant's Common Data Service capacity. 
+- The promoted environment capacity will start counting against the tenant's Common Data Service capacity. 
 - The Microsoft 365 Groups association will become editable. 
-- Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. -->
-
-<!--note from editor: If I understand the following (which I probably don't), it doesn't apply to the newly promoted environment. Suggest either making it a note or just taking it out of the list. I'm not sure what it means by "Teams Template app".-->
-<!--
-Adding a new Teams Template app to the former team won't create a new Project Oakdale environment for the team. 
+- Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. 
+- Adding a new Teams Template app to the former team won't create a new Project Oakdale environment for the team. 
 -->
+
+## Known issues
+
+- Teams environments currently show as created by "SYSTEM" within the Power Platform admin center. Once this issue is fixed, existing environments will be retroactively updated to display the correct creator.
+- Team owners and members who trigger Teams environment creation can temporarily see the newly created environment in the Power Platform admin center. Once this issue is resolved, team owners will be able to successfully administer their environment and team members will not be able to see the environment in the admin center.
+
 
 ## Related topics
 
