@@ -39,7 +39,7 @@ To share your bot with other users, you need to [add them to your team](https://
 >[!NOTE]
 >It could take up to 15 minutes before the new team member sees the team in the Power Virtual Agents app.
 
-You can see a list of the teams you belong to, and each bot within that team by going to the **Chatbots** tab on the top navigation bar. Teams are listed on the lift, selecting a team shows the chatbots in that team.
+You can see a list of the teams you belong to, and each bot within that team by going to the **Chatbots** tab on the top navigation bar. Teams are listed on the lift, selecting a team shows the chatbots in that team. Whereever you are in the app, you can always get back to the list of chatbots by selecting **Chatbots** at the top.
 
 :::image type="content" source="media/admin-share-bots-list.png" alt-text="The teams and chatbots are listed in the Chatbots tab":::
 
