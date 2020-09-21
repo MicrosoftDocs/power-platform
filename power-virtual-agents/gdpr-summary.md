@@ -1,6 +1,6 @@
 ---
 title: "Overview of GDPR compliance"
-description: "Learn how to respond​ to GDPR Data Subject Requests for Power Virtual Agents."
+description: "Review GDPR compliance information Power Virtual Agents."
 ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
