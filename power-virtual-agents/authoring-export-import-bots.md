@@ -25,6 +25,9 @@ This can be useful if you use different environments for different purposes, or 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4CsHl]
 > 
 
+>[!NOTE]
+>You can only import and export bots with the Power Virtual Agents web app. The feature is not available in the Power Virtual Agents app in Microsoft Teams.
+
 ## Prerequisites
 
 
