@@ -1,0 +1,94 @@
+### YamlMime:Landing
+
+title: Power Virtual Agents documentation # < 60 chars
+summary: Build chatbots easily with Power Virtual Agents.  # < 160 chars
+
+metadata:
+  title: Power Virtual Agents documentation and guidance # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: See how Power Virtual Agents can be used to build powerful AI-driven chatbots.  # Required; article description that is displayed in search results. < 160 chars.
+  services: service
+  ms.service:   
+    - "dynamics-365-ai" #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: virtual-agent
+  author: iaanw #Required; your GitHub user alias, with correct capitalization.
+  ms.author: iawilt #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/25/2019 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Power Virtual Agents
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Power Virtual Agents overview
+            url: fundamentals-what-is-power-virtual-agents.md
+          - text: Get started quickly with Power Virtual Agents
+            url: fundamentals-get-started.md
+      - linkListType: reference
+        links:
+          - text: What's new and planned
+            url: https://docs.microsoft.com/dynamics365-release-plan/2019wave2/artificial-intelligence/dynamics365-virtual-agent-for-customer-service/planned-features
+          - text: Forums and community
+            url: https://aka.ms/PowerVirtualAgentsForum
+          - text: Submit ideas
+            url: https://aka.ms/PowerVirtualAgentsIdeas
+            
+  # Card (optional)
+  - title: Create bots and topics
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Create your first bot
+            url: authoring-first-bot.md
+          - text: Use topic lessons
+            url: authoring-template-topics.md
+          - text: Create and edit topics
+            url: authoring-create-edit-topics.md
+
+  # Card (optional)
+  - title: Enhance bot topics
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Use Entities
+            url: advanced-entities-slot-filling.md
+          - text: Create topics from existing web content
+            url: advanced-create-topics-from-web.md
+          - text: Use end-user authentication
+            url: advanced-end-user-authentication.md
+          - text: Use Microsoft Power Automate
+            url: advanced-flow.md
+          - text: Use hand-off to a human agent
+            url: advanced-hand-off.md
+  
+  
+    # Card (optional)
+  - title: Publish and integrate
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Configure demo and live websites
+            url: publication-connect-bot-to-web-channels.md
+          - text: Publish to Microsoft Teams
+            url: publication-add-bot-to-microsoft-teams.md
+          - text: Publish to Facebook
+            url: publication-add-bot-to-facebook.md            
+            
+  
+  # Card
+  - title: Monitor and diagnose
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Use analytics to improve your bot
+            url: analytics-overview.md
+          - text: Analyze bot performance and usage
+            url: analytics-summary.md
+
+
