@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 > - [Power Virtual Agents web app](authoring-test-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-test-bot-teams.md)
 
-As you design your bot in Power Virtual Agents for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation. 
+As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation. 
 
 To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.
 
