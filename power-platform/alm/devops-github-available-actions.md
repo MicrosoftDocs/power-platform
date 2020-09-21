@@ -52,8 +52,8 @@ Imports a solution into a target environment.
 | environment-url| (Required) The URL for the target environment that you want to import the solution into (e.g., [https://powerappsactions.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).|
 |user-name|(Required if you are using username/password authentication) Username of the account you are using to connect with.|
 | password-secret | (Required if you are using username/password authentication) Password for 
- | solution-input-file        | (Required) The path and file name of the solution.zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for a comprehensive list.  |
- | import-as-asynchronous| If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
+ | solution-file        | (Required) Path/filename for the solution to import.   |
+
 <p/>
 
 ### Microsoft Power Platform Export Solution
@@ -67,6 +67,7 @@ Exports a solution from a source environment.
 | password-secret | (Required if you are using username/password authentication) Password for the user-name. Passwords are defined in **Settings** under **Secrets**. Note that you cannot retrieve a secret after it has been defined and saved. |
  | solution-name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |
  | solution-output-file        | (Required) The path and file name of the solution.zip file to export the source environment to.|
+  | managed        | (Required) Export as managed solution; default is to export as unmanaged solution.|
 <p/>
 
 ### Microsoft Power Platform Unpack Solution
@@ -75,8 +76,8 @@ Takes a compressed solution file and decomposes it into multiple XML files so th
 
 | Parameters    | Description       |
 |---------------|-------------------|
-| solution-input-file              | (Required) The path and file name of the solution.zip file to unpack.     |
-| target-folder | (Required) The path and target folder you want to unpack the solution into.      |
+| solution-file              | (Required) The path and file name of the solution.zip file to unpack.     |
+| solution-folder | (Required) The path and target folder you want to unpack the solution into.      |
 | solution-type | (Required) The type of solution you want to unpack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 <p/>
 
@@ -86,9 +87,9 @@ Packs a solution represented in source control into a solution.zip file that can
 
 | Parameters       | Description     |
 |------------------|-----------------|
-| solution-output-file              | (Required) The path and file name of the solution.zip file to pack the solution into.     |
-| source-folder             | (Required) The path and source folder of the solution to pack.      |
-| Type of solution                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
+| solution-file              | (Required) The path and file name of the solution.zip file to pack the solution into. For example out/CI/ALMLab.zip     |
+| solution-folder             | (Required) The path and source folder of the solution to pack.      |
+| solution-type                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
 
 ## Build and release pipelines
