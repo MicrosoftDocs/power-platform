@@ -54,7 +54,8 @@ You can also share the bot with your teammates by selecting **Share the bot** an
 :::image type="content" source="media/publish-teams-copy-link.png" alt-text="The Copy link option creates a shareable link to the bot":::
 
 > [!TIP]
->You may want to try out the latest published content in Microsoft Teams.  
+>To prevent disrupting users who are having existing conversation with the bot, they will not receive the latest published content until a new conversation has started.  A new conversation starts aftet it has been idle for more than 30 minutes.  
+>You may want to try out the latest published content in Microsoft Teams right away.  
 >You can do so by typing *start over* in an existing conversation.  
 >This will restart the conversation with the latest content you have published.
 
