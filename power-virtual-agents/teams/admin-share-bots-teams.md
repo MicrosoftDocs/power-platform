@@ -27,7 +27,7 @@ You can collaborate with others when building chatbots in Microsoft Teams. This 
 Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/assign-roles-permissions) in the team where your bot is created: 
 
 - Team Owners can create, view, edit, and configure all bots in the team where they are Team Owners. 
-- Team Members can create, view, edit and configure all bots in the team, unless otherwise specified.
+- Team Members can create, edit, and configure bots they have created.
 
 
 ## Share bots
