@@ -31,9 +31,7 @@ To help you get started making bots, we've created an end-to-end guide that take
 - How to build and enhance topics that answer commmon HR-style questions
 - How to test, publish, and share the bot with the organization
 
-Download the guide and get started making bots:
 
-- [Build a sample HR bot with Power Virtual Agents in Microsoft Teams](#)
 
 ## Prerequisites
 
