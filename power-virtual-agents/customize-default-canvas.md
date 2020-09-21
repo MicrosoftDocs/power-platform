@@ -173,7 +173,9 @@ The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebC
     ```js
 
     const styleOptions = {
-           
+                botAvatarInitials: 'BT',
+                accent: '#00809d',
+                botAvatarBackgroundColor: "#FFFFFF",
                 botAvatarImage: 'https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg',
                 userAvatarImage: 'https://avatars.githubusercontent.com/u/661465'
             };  
