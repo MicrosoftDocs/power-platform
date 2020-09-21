@@ -3,11 +3,10 @@ title: Back up and restore environments | Microsoft Docs
 description: Covers how to back up and restore environments
 services: powerapps
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,7 +18,7 @@ search.app:
 ---
 # Back up and restore environments
 
-Protecting your data in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Dynamics 365 Customer Service, and providing continuous availability of service are important. You have multiple options for backing up and restoring your environments.   
+Protecting your data in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and providing continuous availability of service are important. You have multiple options for backing up and restoring your environments.   
  
 ## System backups  
 Some backups take place without you having to do anything.  
@@ -70,6 +69,7 @@ About **manual backups**:
 
 - A backup is created for you when we update your environment.  
 - You can back up production and sandbox environments. 
+- You can't back up the default environment.
 - Sandbox backups are retained for up to 7 days. 
 - Manual backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. Manual backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days.
 - Check your expiration date.  
@@ -191,11 +191,11 @@ To be compliant with storage usage requirements, customers can always [free up s
 In order to prevent accidental overwrites, we don't allow users to directly restore to a production environment. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md). Note that changing an environment type to sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
-The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](sandbox-environments.md#set-administration-mode). You can only set administration mode in sandbox environments.
+The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](admin-mode.md#set-administration-mode). You can set administration mode in sandbox or production environments.  
 
 ## Troubleshooting
 
-### Don't see your environment to restore to?
+### Don't see your environment to restore to? 
 Only sandbox environments can be restored to.
 
 ### See also

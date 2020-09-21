@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/13/2020
+ms.date: 09/08/2020
 search.audienceType: 
   - admin
 search.app:
@@ -18,12 +18,12 @@ search.app:
 ---
 # Global admins and Power Platform admins can administer without a license
 
-By default, all Global admin and Power Platform admins who do not have a license are granted the following two levels of permission in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service.  
+By default, all Global admin and Power Platform admins who do not have a license are granted the following two levels of permission in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
   
 - System administrator security role  
 - Administrative access mode  
   
-The System administrator security role is typically granted to administrators giving them unrestricted access to the administrative (Settings) areas, which are used for managing and configuring features of model-driven apps in Dynamics 365.  
+The System administrator security role is typically granted to administrators giving them unrestricted access to the administrative (Settings) areas, which are used for managing and configuring features of customer engagement apps.  
   
 Administrative access mode limits access to those areas of Dynamics 365 apps used to configure or customize the system.  
   

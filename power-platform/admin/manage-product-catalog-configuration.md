@@ -2,11 +2,10 @@
 title: "Manage product catalog configuration   | MicrosoftDocs"
 description: Manage product catalog configuration 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +19,7 @@ search.app:
 
 <!-- legacy procedure -->
 
-Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, offer a rich, easy to configure product catalog that will help your company sell products and services with greater efficiency. A sales operations manager will be able to create the product catalog with fewer SKUs, bundle product and service, as an attractive and cost effective offering, and define up-sell and cross-sell of products. In addition, the product catalog configuration data can be migrated across systems. For example, after the product catalog configuration is fully tested on the test server, you can move the configuration data to the production environment, without having to recreate it. To migrate, you'll be using the Configuration Migration Tool: [Manage configuration data](manage-configuration-data.md).  As an administrator, you will be responsible for configuring and migrating the product catalog configuration data.  
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) offer a rich, easy to configure product catalog that will help your company sell products and services with greater efficiency. A sales operations manager will be able to create the product catalog with fewer SKUs, bundle product and service, as an attractive and cost effective offering, and define up-sell and cross-sell of products. In addition, the product catalog configuration data can be migrated across systems. For example, after the product catalog configuration is fully tested on the test server, you can move the configuration data to the production environment, without having to recreate it. To migrate, you'll be using the Configuration Migration Tool: [Manage configuration data](manage-configuration-data.md).  As an administrator, you will be responsible for configuring and migrating the product catalog configuration data.  
   
 ## Configure product catalog  
  To configure the product catalog:  

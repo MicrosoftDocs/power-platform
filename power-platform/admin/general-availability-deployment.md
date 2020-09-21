@@ -2,13 +2,12 @@
 title: "General availability deployment  | MicrosoftDocs"
 description: About general availability deployment
 author: angelmarshall
-ms.author: angelmarshall
+ms.author: tsmarsha
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/07/2020
-
+ms.date: 08/26/2020
 search.audienceType: 
   - admin
 search.app:
@@ -33,39 +32,16 @@ Throughout a release wave, your environments will be updated during one of the w
 
 ## Deployment schedule  
 
-The deployment schedule will be updated soon.
+The general availability deployment is based on the regions where environments are created.
 
-<!--
-The following is the current schedule for when the 2020 release wave 1 features will be enabled by regions. 
- 
-> [!IMPORTANT]
-> As announced in the [blog post](https://aka.ms/covid19Blog), Microsoft is making some changes to the update schedules in April in response to COVID-19. The 2020 release wave 1, April updates will be generally available as mentioned in the [Dynamics 365](https://aka.ms/Dynamics365ReleasePlan) and [Power Platform](https://aka.ms/PowerPlatformReleasePlan) release plans. However, we are making some changes to the release schedule as explained later in [this article](https://docs.microsoft.com/dynamics365/get-started/release-schedule). Microsoft will continue to release critical updates for Dynamics 365 applications and Power Platform. Microsoft is also extending the deprecation timelines for some capabilities to provide customers and partners additional time to make the transition. Microsoft is committed to providing support to our customers and partners during this period.
-
-
-|Regions  |Automatic update window  |
+|Regions  |Schedule for 2020 wave 2 general availability deployment|
 |---------|---------|
-|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, May 1st – Sunday, May 3rd     |
-|Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, May 8th – Sunday, May 10th        |
-|Europe     | Friday, May 15th – Sunday, May 17th         |
-|North America     |  Friday, May 22nd – Sunday, May 24th       |
-|China | Friday, May 29th – Sunday, May 31st   |
-|GCC<br />GCC High<br />DOD  |Friday, May 29th – Sunday, May 31st <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
-
-During the general availability deployment, your environments will be updated with the latest features and functionality automatically applied to Dynamics 365 applications and Power Platform. It will not require any action from you.
-
-## Additional requirements   
-
-Some of the apps require additional manual steps to enable the new features of a release. If you use of any of following apps, you will need to take additional manual steps after a release wave is automatically deployed to your region. 
-
-
-|Apps  |Description of manual steps |
-|---------|---------|
-|Dynamics 365 Marketing      | Run the Marketing setup wizard to update your environment. This will install both the new release for production updates and the early access features when you run it on an environment where early access is enabled. For instructions, see [Rerun the Dynamics 365 Marketing setup wizard](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/re-run-setup).         |
-|Dynamics 365 Field Service      | If you have Dynamics 365 Field Service version 8.8.6.0 or newer, you'll automatically receive the updates. If you're running on an older version of the Field Service app, you'll need to perform an upgrade. See [Upgrade Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/upgrade-field-service).         |
-|Dynamics 365 Project Service Automation      | If you have Dynamics 365 Project Service Automation version 3.10.2.0 or newer, you'll automatically receive the updates. If you're running on an older version of the Project Service app, you'll need to perform an upgrade. See [Upgrade home page](https://docs.microsoft.com/dynamics365/project-service/upgrade-psa-home-page).         |
-|Dynamics 365 Resource Scheduling Optimization      | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Dynamics 365 admin center. For instructions, see [Update RSO](https://docs.microsoft.com/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization) and [Deploy RSO](https://docs.microsoft.com/dynamics365/field-service/rso-deployment).         |
-|Dynamics 365 Customer Service Team Member      | Customer Service Team Member is a new app module. Users with a Dynamics 365 Team Member license need to manually install this app to enable this feature. For instructions, see [Customer Service Team Member](https://docs.microsoft.com/dynamics365/customer-service/customer-service-team-member).         |
--->
+|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, October 2nd – Sunday, October 4th     |
+|Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, October 9th – Sunday, October 11th      |
+|Europe     | Friday, October 16th – Sunday, October 18th       |
+|North America     |  Friday, October 23nd – Sunday, October 25th        |
+|China | Friday, October 30th – Sunday, November 1st   |
+|GCC<br />GCC High<br />DOD  | Friday, October 30th – Sunday, November 1st <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
 
 ### See also
 [Dynamics 365 release schedule](https://docs.microsoft.com/dynamics365/get-started/release-schedule) <br />

@@ -2,11 +2,10 @@
 title: "Manage Dynamics 365 apps  | MicrosoftDocs"
 description: Manage Dynamics 365 apps
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2020
+ms.date: 08/20/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -27,7 +26,7 @@ You can manage apps from either the tenant level or the environment level.
 
 ## Tenant-level view of apps
 
-App management in the **Applications** tab of the Dynamics 365 admin center  is now done from the tenant-level view of apps in the Power Platform admin center. Follow these steps to see a list of all licensed Dynamics 365 Customer Engagement applications for your tenant.
+App management in the **Applications** tab of the Dynamics 365 admin center  is now done from the tenant-level view of apps in the Power Platform admin center. Follow these steps to see a list of all licensed Dynamics 365 apps for your tenant.
 
 |Legacy app management  | New app management  |
 |---------|---------|

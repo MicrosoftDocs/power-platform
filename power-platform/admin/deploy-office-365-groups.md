@@ -2,11 +2,10 @@
 title: "Deploy Microsoft 365 groups  | MicrosoftDocs"
 description: Deploy Microsoft 365 groups
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Deploy Microsoft 365 groups [!INCLUDE [pn-dynamics-crm-online](../includes/pn-dynamics-crm-online.md)]
 
-Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environment for collaboration with Microsoft 365 users who don't use model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service. For example, use Microsoft 365 Groups when a sales team has a major opportunity requiring input from several people who don't have access to model-driven apps in Dynamics 365. Microsoft 365 Groups provides a single location to share documents, conversations, meetings, and notes. You can enable Microsoft 365 Groups for any entity.  
+Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environment for collaboration with Microsoft 365 users who don't use customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), such as Dynamics 365 Sales and Customer Service. For example, use Microsoft 365 Groups when a sales team has a major opportunity requiring input from several people who don't have access to customer engagement apps. Microsoft 365 Groups provides a single location to share documents, conversations, meetings, and notes. You can enable Microsoft 365 Groups for any entity.  
   
 > [!TIP]
 >  Check out the following for a quick introduction to Microsoft 365 Groups:  
@@ -27,9 +26,9 @@ Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environme
 > - [Learn more about groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)  
 
 ## Requirements  
- The following are required to use Microsoft 365 Groups with model-driven apps in Dynamics 365:  
+ The following are required to use Microsoft 365 Groups with customer engagement apps:  
   
-- Model-driven apps in Dynamics 365   
+- Customer engagement apps
   
 - This feature requires that you have an Microsoft 365 subscription or a subscription to an online service such as SharePoint Online or Exchange Online.
 
@@ -47,7 +46,7 @@ Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environme
 > [!NOTE]
 >  Users must have an Exchange Online mailbox set up to use Microsoft 365 Groups. Exchange Online is already properly configured for organizations as a part of Microsoft 365. You also need to enable server-based SharePoint integration to see documents in an Microsoft 365 Group; you don't have to use SharePoint integration, only set up the connection to SharePoint Online.  Server-based SharePoint integration is also required to enable the group OneNote notebook.  
 > 
-> More information: [Set up model-driven apps in Dynamics 365 to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)  
+> More information: [Set up customer engagement apps to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)  
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -76,7 +75,7 @@ Once installation of the solution has completed, you can configure Microsoft 365
 6. Select **Save and Close**.  
   
 ## Configure Microsoft 365 groups  
- Once you provision Microsoft 365 Groups, you can enable them for any entity. Security group membership is associated with the entity. You configure Microsoft 365 Groups in model-driven apps in Dynamics 365.  
+ Once you provision Microsoft 365 Groups, you can enable them for any entity. Security group membership is associated with the entity. You configure Microsoft 365 Groups in customer engagement apps.  
   
 1. In the web app, go to **Settings** > **Microsoft 365 groups**. You may need to first select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) > **Advanced settings**.
   
@@ -91,7 +90,7 @@ All of your pending system customizations will be published, including those you
 You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleagues using Microsoft 365 groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups).  
   
 ## Use the Microsoft 365 Connectors for Groups  
- Use the Microsoft 365 Connectors for Groups to connect new or existing Microsoft 365 Groups with model-driven apps in Dynamics 365 so the group is notified when new activities are posted. To set it up, follow these steps:  
+ Use the Microsoft 365 Connectors for Groups to connect new or existing Microsoft 365 Groups with customer engagement apps so the group is notified when new activities are posted. To set it up, follow these steps:  
   
 > [!TIP]
 >  Check out the following Blog: [Dynamics CRM Online connector for Microsoft 365 groups](https://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)  
@@ -129,15 +128,15 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
 > - Only task type activities are sent to the group as connector cards.  
 > - The activity appears as a new conversation in a card format in the Group.  
 > - The fields in the card shown in the Group conversation are not customizable.  
-> - Nothing is required in model-driven apps in Dynamics 365 to make the connector work.  
+> - Nothing is required in customer engagement apps to make the connector work.  
 > - For sensitive information, you should connect your record to a private group where only approved members can view contents. For public groups, everyone in the org has access to view contents. See "Public and private Microsoft 365 groups" in [Learn more about groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).  
   
 ## Privacy notice  
- When a user leverages the Microsoft 365 groups feature to connect an Office Group to model-driven apps in Dynamics 365, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  
+ When a user leverages the Microsoft 365 groups feature to connect an Office Group to customer engagement apps, data (including new conversations and documents) will be stored on the Exchange and/or SharePoint system and shared with the members of that Office Group, even if they are not licensed or authorized users. Users will only be able to share the data that they have access to, and Administrators can limit the data that is shared by limiting the access privileges of their users.  
   
 ### See also  
  [Collaborate with your colleagues using Microsoft 365 groups](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups)   
  [CRM Blog: Dynamics CRM Online connector for Microsoft 365 groups](https://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)   
- [Set up model-driven apps in Dynamics 365 to use Exchange Online](connect-exchange-online.md)   
+ [Set up customer engagement apps to use Exchange Online](connect-exchange-online.md)   
 
 

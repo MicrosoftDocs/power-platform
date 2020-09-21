@@ -147,7 +147,7 @@ Version                      | Set to 1.0                                       
 
 ## Set up Audit Log sync
 
-The Audit Log sync flow connects to the Office 365 Audit Log to gather telemetry data (unique users, launches) for apps. The CoE Starter Kit will work without this flow; however, usage information (app launches, unique users) in the Power BI dashboard will be blank.
+The Audit Log sync flow connects to the Microsoft 365 Audit Log to gather telemetry data (unique users, launches) for apps. The CoE Starter Kit will work without this flow; however, usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
 More information: [Set up the Audit Log connector](setup-auditlog.md)
 

@@ -1,0 +1,72 @@
+### YamlMime:Landing
+
+title: Microsoft Power Platform guidance documentation
+summary: The Microsoft Power Platform guidance documentation provides information that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed with Microsoft Power Platform.
+
+metadata:
+  title: Microsoft Power Platform guidance documentation
+  description: Provides access to Microsoft Power Platform guidance documentation
+  services: service
+  ms.service: power-platform 
+  ms.subservice: subservice
+  ms.topic: landing-page 
+  ms.collection: collection
+  author: jimholtz
+  ms.author: jimholtz
+  ms.date: 08/07/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+
+  # Card 
+  - title: Adoption best practices
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Overview
+            url: /power-platform/guidance/adoption/methodology
+          - text: Strategy and vision
+            url: /power-platform/guidance/adoption/strategy-best-practices
+          - text: Admin and governance
+            url: /power-platform/guidance/adoption/admin-best-practices 
+          - text: Nurture and educate
+            url: /power-platform/guidance/adoption/nurture-best-practices                    
+        
+  # Card
+  - title: Center of Excellence (CoE) Kit
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Overview
+            url: /power-platform/guidance/coe/overview
+          - text: What's in the CoE Starter Kit?
+            url: /power-platform/guidance/coe/starter-kit-explained          
+       - linkListType: how-to-guide
+         links:
+          - text: Set up the CoE Starter Kit
+            url: /power-platform/guidance/coe/setup
+          - text: How to use the CoE Starter Kit?
+            url: /power-platform/guidance/coe/power-bi
+     
+  # Card
+  - title: Related resources
+    linkLists:
+       - linkListType: reference
+         links:
+          - text: Power Apps guidance
+            url: https://docs.microsoft.com/powerapps/guidance
+          - text: Power BI guidance
+            url: https://docs.microsoft.com/power-bi/guidance/         
+          - text: Power Automate docs
+            url: https://docs.microsoft.com/power-automate
+          - text: Power Virtual Agents docs
+            url: https://docs.microsoft.com/power-virtual-agents
+          - text: Power Platform admin guide
+            url: https://docs.microsoft.com/power-platform/admin/admin-documentation
+
+
+
+      
+
+  

@@ -50,7 +50,7 @@ The Common Data Service connector might experience some throttling limits if the
 
 ## Government community cloud (GCC) environments
 
-- The CoE Starter Kit is available for GCC environments; however, the custom connector to connect to Office 365 Audit Logs isn't available for GCC environments yet.
+- The CoE Starter Kit is available for GCC environments; however, the custom connector to connect to Microsoft 365 Audit Logs isn't available for GCC environments yet.
 - Embedding Power Apps canvas apps in Power BI Dashboards is not available for GCC environments yet.
 
 ## Developer environments from the Power Apps Community Plan

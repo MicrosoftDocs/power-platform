@@ -19,7 +19,7 @@ search.app:
 
 # Online Management API (REST) to manage environments
 
-The Online Management API is a REST API that lets you create and manage Common Data Service environments in your Office 365 tenant. As application publishers or ISVs, you can use the Online Management API to:
+The Online Management API is a REST API that lets you create and manage Common Data Service environments in your Microsoft 365 organization. As application publishers or ISVs, you can use the Online Management API to:
 
 * Automate the creation of custom demo Common Data Service environments.
 * Manage multiple Common Data Service environments, in case your enterprise includes multiple organizations.

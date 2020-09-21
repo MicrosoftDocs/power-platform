@@ -2,7 +2,6 @@
 title: "Audit data and user activity for security and compliance  | MicrosoftDocs"
 description: Audit data and user activity for security and compliance
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -81,7 +80,7 @@ This task requires the system administrator or customizer security role or equiv
 
 3. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
-  <!--  **Audit user access**. Tracks when a user accesses model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, including the user name and time.  -->
+  <!--  **Audit user access**. Tracks when a user accesses customer engagement apps (such as Dynamics 365 Sales and Customer Service), including the user name and time.  -->
    - **Common Entities**. Tracks common entities like Account, Contact, Goal, Product, and User.  
    - **Sales Entities**. Tracks sales-related entities like Competitor, Opportunity, Invoice, Order, and Quote.  
    - **Marketing Entities**. Tracks Campaign entity activity.  

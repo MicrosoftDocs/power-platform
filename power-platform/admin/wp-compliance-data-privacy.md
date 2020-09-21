@@ -2,11 +2,10 @@
 title: "Compliance and data privacy  | MicrosoftDocs"
 description: Compliance and data privacy
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 09/11/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -43,7 +42,7 @@ Data transferred through the on-premises data gateway is also encrypted. Data th
 
 All environments of the Common Data Service database use SQL Server Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.
 
-By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Dynamics 365 admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys [here](manage-encryption-key.md) but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
+By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys [here](manage-encryption-key.md) but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
 
 ## Resources to manage GDPR Compliance
 
@@ -68,7 +67,7 @@ The following links point to detailed information to help you respond to DSR req
 |Common Data Service     |  [Responding to Data Subject Rights (DSR) requests for Common Data Service customer data](common-data-service-gdpr-dsr-guide.md)     |
 |Power Automate    | https://docs.microsoft.com/flow/gdpr-dsr-summary        |
 |Microsoft Accounts (MSAs)     | https://docs.microsoft.com/flow/gdpr-dsr-summary-msa        |
-|Model-driven apps in Dynamics 365     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
+|Customer engagement apps     |https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-dynamics365         |
 
 ## Microsoft 365 Security and Compliance Center
 
