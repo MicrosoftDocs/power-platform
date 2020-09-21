@@ -65,7 +65,7 @@ changes." The build tasks can largely be categorized into four types:
 
 - Environment management
 
-For more information about the available tasks see [GitHub Power Platform Actions](devops-github-power-actions.md). 
+For more information about the available tasks see [GitHub Power Platform Actions](devops-github-available-actions.md). 
 
 ## Get GitHub actions for the Power Platform
 
@@ -145,4 +145,4 @@ Ensure that the added Application User has the system administrator role assigne
 
 ### See Also
 
-[Available GitHub Actions](devops-github-power-actions.md)
+[Available GitHub Actions](devops-github-available-actions.md)

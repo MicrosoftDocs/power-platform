@@ -20,10 +20,10 @@ search.app:
 # GitHub Actions for the Microsoft Power Platform (Preview)
 [This topic is pre-release documentation and is subject to change.]
 
-The GitHub Actions for the Microsoft Power Platform are described in the following sections. Afterwards, we will showcase some example GitHub workflows using some of these actions. For information about the GitHub Actions for the Microsoft Power Platform and how to download them, see [GitHub Actions for the Microsoft Power Platform](devops-github-power.md).
+The GitHub Actions for the Microsoft Power Platform are described in the following sections. In addition, some example GitHub workflows using some of these actions will be showcased. For information about the GitHub Actions for Microsoft Power Platform and how to download them see [GitHub Actions for the Microsoft Power Platform](devops-github-actions.md).
 
 ## Configure deployment credentials
-Many of the actions require you to connect a Microsoft Power Platform environment. You add credentials as secrets in your the GitHub repository and then use them in the workflow.
+Many of the actions require you to connect a Common Data Service environment. You add credentials as secrets in your the GitHub repository and then use them in the workflow.
 
 ## Helper task
 
@@ -31,13 +31,13 @@ The available helper tasks are described below.
 
 ### Microsoft Power Platform WhoAmI
 
-Verifies a Microsoft Power Platform environment service connection by connecting and making a WhoAmI request. This task can be useful to include early in the pipeline, to verify connectivity before processing begins.
+Verifies the service connection by connecting to the service and sending a WhoAmI [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your DevOps pipeline, to verify connectivity before processing begins.
 
 | Parameters    | Description   |
 |---------------|---------------|
 | environment-url | The URL for the environment you are connecting to.|
-| user-name | Username of the account you are using to connect with |
-| password-secret | password for the user-name. Passwords are defined in **Settings** under **Secrets**. Note that you cannot retrieve a secret after it has been defined and saved |
+| user-name | Username of the account you are using to connect with. |
+| password-secret | Password for the user-name. Passwords are defined in **Settings** under **Secrets**. Note that you cannot retrieve a secret after it has been defined and saved. |
 
 ## Quality check
 
@@ -51,16 +51,16 @@ you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| environment-url                         | (Required) The URL for the environment you are connecting to. A connection to a licensed Common Data Service environment is required to use the Microsoft Power Platform checker.|
-|tenant-id| Tenant ID of the Microsoft Power Platform.|
-|application-id | Azure Application ID to authenticate with. See  [Configure service principal connections for Microsoft Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal) for more information on how to configure service principals name (SPN) |
+| environment-url                         | (Required) The URL for the environment you are connecting to. A connection to a licensed Common Data Service environment is required to use the Microsoft Power Platform Checker.|
+|tenant-id| Tenant ID of the Common Data Service environment.|
+|application-id | Azure application ID to authenticate with. See  [Configure service principal connections for Microsoft Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal) for more information on how to configure service principals name (SPN). |
 |client-secret | Client secret for the application ID. Client secret is defined in **Settings** under **Secrets**| 
-| checker-endpoint       | By default, the geographic location of the checker service will use the same location as the environment you connect to. By unchecking the default, you have an option to specify another location to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the Microsoft Power Platform Checker API](https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
+| checker-endpoint       | By default, the geographic location of the checker service will use the same location as the environment you connect to. By unchecking the default you have an option to specify another location to use - for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the Microsoft Power Platform Checker API](https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography).|
 | location-type       | (Required) Specify whether to reference a local file or a reference file from a shared access signature (SAS) URL.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
-| file-location | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
+| file-location | (Required) Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\\*.zip for all zip files in all subfolders.<p/>If **File from SAS URI** was chosen as the location of files to analyze, simply enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list.     |
 | rule-set                          | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This is the same rule set that is run from the Power Apps [maker portal](https://make.powerapps.com).</li><li>AppSource: This is the extended rule set that is used to certify an application before it can be published to [AppSource](https://appsource.microsoft.com/).</li></ul>    |
-| error-level | Combined with the Error threshold parameter defines the severity of errors and warnings that are allowed. |
-| error-threshold | Defines the number of errors of specified level that are allowed for the checker to pass the solutions being checked. |
+| error-level | Combined with the error threshold parameter defines the severity of errors and warnings that are allowed. |
+| error-threshold | Defines the number of errors of a specified level that are allowed for the checker to pass the solutions being checked. |
 
 ## Solution tasks
 
