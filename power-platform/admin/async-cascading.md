@@ -90,6 +90,30 @@ Assign, Delete, and Merge cascading transactions can be processed asynchronously
 > [!NOTE]
 > Other transactions, such as share/unshare, rollup view, and re-parent are are currently under review for asynchronous processing. 
 
+## Troubleshooting issues with asynchronous cascading operations
+When synchronous cascading jobs fail, they stop and roll back all the changes so that none of the records include the changes requested. 
+This can be a time-consuming process as rollbacks can take as long as the original attempt and retrying the operation will start again 
+from the first record. 
+
+Asynchronous operations will retry numerous times if a failure occurs. In most cases retrying the job results in success and the job can 
+continue to completion. In some rare cases, retrying won’t resolve the issue. When this happens, the asynchronous job will pause, and the administrator and user can troubleshoot the issue and resume the job from the point where it paused.
+
+### Common causes of failures in cascading operations
+Common reasons for failures in processing cascading operations include:
+- Plugin exceptions.
+- Security exceptions.
+
+#### Plugin Exceptions
+Plugins are added to the processing of cascading operations to take specific actions when changes are made to a record, such as sending an email or triggering a different update on other records. These may be provided by third parties or developed in house. If a plugin generates an exception, the cascading operation will fail. Depending on the reason for the exception, a retry may resolve the issue. If the asynchronous cascade job is paused due to failures, validate all plugins that are associated with the operations to make sure they are not generating exceptions. Once fixed, the job can be resumed.
+
+#### Security Exceptions
+Security exceptions occur when the user who executed the cascading operation has insufficient privileges to make a change to one or more records, or the user is disabled or removed from the system. 
+
+If the user is still in the system, validate they have the needed privileges to modify the records and that they have permissions to execute the specified actions. Once this is resolved resume the job.
+
+If the user has been disabled or removed from the system, re-enabling or re-adding the user will resolve the issue and the job can be resumed. However, if the user must be deleted or disabled or is not supposed to have permissions for the actions or records, the job should be cancelled and restarted by someone with appropriate permissions. 
+
+For any other issues with failed jobs, contact Microsoft Support. More information: [Support overview](/power-platform/admin/support-overview)
 
 ### See also
 [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)
