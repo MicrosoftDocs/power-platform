@@ -26,8 +26,9 @@ This documentation is written for tenant admins. If you want to sign up for Powe
 
 To create and manage bots with Power Virtual Agents, you need:
 
+
 - A license for each user, also known as a "per user license" (or "Power Virtual Agent User License" as refered to on the [Microsoft 365 admin center](https://admin.microsoft.com)), should be assigned to individual users who need access to create and manage chatbots.
-- A license for your organization, also known as a "tenant license" (or "Power Virtual Agent" as refered to on the [Microsoft 365 admin center](https://admin.microsoft.com)), should be purchased at the tenant level.
+- A license for your organization, also known as a "tenant license" (or "Power Virtual Agent" as refered to on the [Microsoft 365 admin center](https://admin.microsoft.com)), should be
 
 >[!NOTE]
 >Users of your bot don't need a special license. After you publish your bot, anyone who can access where you published the bot can interact with the bot.
