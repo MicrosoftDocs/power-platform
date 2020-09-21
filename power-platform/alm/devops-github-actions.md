@@ -1,6 +1,6 @@
 ---
-title: "GitHub Actions for the Power Platform | Microsoft Docs"
-description: "Learn about the ALM-related tools, APIs, and services that are available to developers when using Azure DevOps."
+title: "GitHub Actions for the Microsoft Power Platform | Microsoft Docs"
+description: "Learn about the ALM-related tools, APIs, and services that are available to developers when using Microsoft Azure DevOps."
 keywords: 
 author: mikkelsen2000
 ms.author: pemikkel
@@ -17,27 +17,22 @@ search.app:
   - D365CE
 ---
 
-# GitHub Actions for the Power Platform (Preview)
+# GitHub Actions for the Microsoft Power Platform (Preview)
 
 [This topic is pre-release documentation and is subject to change.]
 
-[GitHub Actions](https://help.github.com/articles/about-github-actions) enable developers to build automated software development lifecycle workflows.
-
-With GitHub Actions for the Power Platform you can create workflows that you can set up in your repository to build, test, package, release and deploy apps, automations, bots and other components built on the Power Platform. avaiable actions include: 
+[GitHub Actions](https://help.github.com/articles/about-github-actions) enable developers to build automated software development lifecycle workflows. With GitHub Actions for the Microsoft Power Platform you can create workflows in your repository to build, test, package, release and deploy apps, perform automation, manage bots and other components built on the Microsoft Power Platform. Available GitHub Actions include the following:
 
 <ul><li>Import/export of application metadata (also known as
-solutions) that contains the various platform components such as customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation), canvas apps, model-driven apps, UI flows, virtual agents, AI Builder models, and connectors between development environments and source control</li></ul>
-<ul><li>Deploying to downstream environments</li></ul>
+solutions) that contain the various platform components such as customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), canvas apps, model-driven apps, UI flows, virtual agents, AI Builder models, and connectors between development environments and source control.</li></ul>
+<ul><li>Deploying to downstream environments.</li></ul>
 
 <ul><li>Provisioning or de-provisioning
-environments. (Available October 2020)</li></ul>
+environments (available October 2020).</li></ul>
 
-<ul><li>Perform static analysis check against solutions by using the Power Apps checker service (Available October 2020)</li></ul>
+<ul><li>Perform static analysis check against solutions by using the Power Apps checker service (available October 2020).</li></ul>
 
-
-GitHub actions for the Power Platform can be used along with any other available
-GitHub actions to compose your build and release workflows. Workflows
-that teams commonly put in place include provisioning development environments, Export from Development environment to source control, generate builds, and release.
+GitHub Actions for the Microsoft Power Platform can be used along with any other available GitHub Actions to compose your build and release workflows. Workflows that teams commonly put in place include provisioning development environments, export from development environment to source control, generate builds, and release.
 
 ## Key concepts
 GitHub Actions enable you to create custom software development life cycle (SDLC) workflows directly in your GitHub repository. For an overview of GitHub Actions and core concepts, review the following articles:
@@ -48,14 +43,13 @@ GitHub Actions enable you to create custom software development life cycle (SDLC
 
 [About packaging with GitHub Actions](https://help.github.com/en/actions/publishing-packages-with-github-actions/about-packaging-with-github-actions)
 
-## What are GitHub actions for the Power Platform?
+## What are GitHub Actions for the Microsoft Power Platform?
 
-The GitHub actions for the Power Platform are a collection of Power Platform&ndash;specific GitHub actions that eliminate the need to manually download custom tooling and
-scripts to manage the application lifecycle of apps built on the Power Platform. The tasks can be used
+The GitHub Actions for the Microsoft Power Platform are a collection of Microsoft Power Platform&ndash;specific GitHub Actions that eliminate the need to manually download custom tooling and
+scripts to manage the application lifecycle of apps built on the Microsoft Power Platform. The tasks can be used
 individually to perform a simple task, such as importing a solution into a
 downstream environment, or used together in a workflow to orchestrate a
-scenario such as "generate a build artifact", "deploy to test", or "harvest maker
-changes." The build tasks can largely be categorized into four types:
+scenario such as "generate a build artifact", "deploy to test", or "harvest maker changes." The build tasks can largely be categorized into four types:
 
 - Helper
 
@@ -65,40 +59,40 @@ changes." The build tasks can largely be categorized into four types:
 
 - Environment management
 
-For more information about the available tasks see [GitHub Power Platform Actions](devops-github-available-actions.md). 
+For more information about the available tasks see [GitHub Actions for Microsoft Power Platform](devops-github-available-actions.md).
 
-## Get GitHub actions for the Power Platform
+## Get GitHub Actions for the Microsoft Power Platform
 
-GitHub actions for the Power Platform can added to your repo 
+GitHub Actions for the Microsoft Power Platform can added to your repo
 from [GitHub Marketplace](https://github.com/marketplace?type=actions).
 
 ## Connection to environments
 
-To interact with a Power Platform environment, a secret must be created that enables the various GitHub actions to perform the required task. Two types of connections are available:
+To interact with a Common Data Service environment, a secret must be created that enables the various GitHub Actions to perform the required task. Two types of connections are available:
 
-- Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
-- Service principal and client secret: This connection type uses service principal based authentication and supports multi-factor authentication (Service principal authentication available October 2020).
+- Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication (MFA).
+- Service principal and client secret: This connection type uses service principal based authentication and supports multi-factor authentication. Service principal authentication availability is  October 2020.
 
 ## Available runners
-Actions for Power Platform can only run on windows agent. Cross platform compatibility will be available late fall 2020
+GitHub Actions for Microsoft Power Platform can only run on a Microsoft Windows agent. Cross-platform compatibility availability is late Fall 2020.
 
 ## Frequently asked questions (FAQs)
 
-**Do the GitHub actions only work for Power Apps?**  
+**Do the GitHub Actions only work for Power Apps?**  
 
-*The GitHub actions work for both canvas and model-driven apps, Power Virtual Agents, UI Flows and traditional flows, AI Builder, custom connectors and dataflows, all of which can now be added to a solution. This also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
+*The GitHub Actions work for both canvas and model-driven apps, Power Virtual Agents, UI flows and traditional flows, AI Builder, custom connectors and data-flows, all of which can now be added to a solution. This also includes customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Separate build tasks are available for Dynamics 365 Finance and Operations applications.*
 
 **Can I include flow and canvas apps?**
 
-*Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
+*Yes, flows and canvas apps are solution aware, so if these are added to your solution they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors. A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
-**How much does the GitHub actions for the Power Platform cost?**
+**How much does the GitHub Actions for the Microsoft Power Platform cost?**
 
-*The GitHub actions are available at no cost. However, a valid GitHub subscription is required to utilize the actions on GitHub. 2000 action minutes/month are available for free to get started. More information is available [GitHub Pricing](https://github.com/pricing/).*
+*The GitHub Actions are available at no cost. However, a valid GitHub subscription is required to utilize the actions on GitHub. To get started, 2000 action minutes/month are available for free. More information is available [GitHub Pricing](https://github.com/pricing/).*
 
-**How can developers use the results of the Checker task?**
+**How can developers use the results of the quality check task?**
 
-*The output of the Checker task is a [Sarif file](https://sarifweb.azurewebsites.net/) and both VS Code and Visual Studio extensions are available for viewing and taking action on Sarif files.*
+*The output of the quality check task is a [Sarif file](https://sarifweb.azurewebsites.net/) where both Visual Studio Code and Visual Studio extensions are available for viewing and taking action on Sarif files.*
 
 ### See Also
 
