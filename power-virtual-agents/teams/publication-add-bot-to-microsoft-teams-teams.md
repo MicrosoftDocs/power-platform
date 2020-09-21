@@ -1,5 +1,5 @@
 ---
-title: "Add a chatbot to Microsoft Teams"
+title: "Publish your chatbot with the Power Virtual Agents app in Microsoft Teams"
 description: "Publish and share your bot with teammates in your teams and across your organization."
 keywords: "Publish, channel, Microsoft Teams, Teams"
 ms.date: 9/22/2020
