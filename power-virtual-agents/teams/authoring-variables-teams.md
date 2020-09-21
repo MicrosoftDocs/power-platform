@@ -1,6 +1,6 @@
 ---
-title: "Work with chatbot variables in Teams"
-description: "Use variables to use custom and prebuilt entities to allow for customized conversations in your bot."
+title: "Work with chatbot variables in Microsoft Teams"
+description: "Use variables in the Power Virtual Agents app in Microsoft Teams to use custom and prebuilt entities to allow for customized conversations in your bot."
 keywords: "PVA"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

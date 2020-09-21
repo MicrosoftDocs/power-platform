@@ -1,5 +1,5 @@
 ---
-title: "Use lesson topics to understand capabilities in Teams"
+title: "Use lesson topics to understand capabilities in Microsoft Teams"
 description: "Lesson topics are templates that help you understand how to create conversations in the Power Virtual Agents app in Teams."
 keywords: "PVA"
 ms.date: 9/22/2020

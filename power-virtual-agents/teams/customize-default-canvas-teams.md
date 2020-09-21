@@ -1,6 +1,6 @@
 ---
-title: "Customize how the bot looks to users in Teams"
-description: "Change the name, icon, and color of your bot without needing to know any code."
+title: "Customize how the bot looks to users in Microsoft Teams"
+description: "Change the name, icon, and color of your bot in the Power Virtual Agents app in Microsoft Teams without needing to know any code."
 keywords: "PVA"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

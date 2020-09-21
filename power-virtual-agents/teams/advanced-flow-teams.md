@@ -1,6 +1,6 @@
 ---
-title: "Automate chatbot actions with flows in Teams"
-description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
+title: "Automate chatbot actions with flows in Microsoft Teams"
+description: "Use Power Automate flows in chatbots you build in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, flow, automate"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

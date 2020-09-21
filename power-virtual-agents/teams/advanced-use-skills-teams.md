@@ -1,6 +1,6 @@
 ---
-title: "Use Microsoft Bot Framework Skills in Teams"
-description: "Extend your bot and author complex bot dialogs using pro-code tools to build Microsoft Bot Framework Skills that enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
+title: "Use Microsoft Bot Framework Skills in Microsoft Teams"
+description: "Add skills to your chatbots in the Power Virtual Agents app in Microsoft Teams."
 keywords: "authoring, extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

@@ -1,6 +1,6 @@
 ---
-title: "Create and use entities in Teams"
-description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
+title: "Create and use entities in Microsoft Teams"
+description: "Use entities in your chatbots to create sophisticated conversations."
 keywords: "PVA, teams"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

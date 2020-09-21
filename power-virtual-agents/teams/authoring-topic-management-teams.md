@@ -1,6 +1,6 @@
 ---
-title: "Fix errors, set status, and copy topics in Teams"
-description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time."
+title: "Fix errors, set status, and copy topics in Microsoft Teams"
+description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time, all in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

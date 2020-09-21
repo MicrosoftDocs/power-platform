@@ -1,5 +1,5 @@
 ---
-title: "Create conversational chatbots in Teams"
+title: "Create conversational chatbots in Microsoft Teams"
 description: "Create a new bot in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, create"
 ms.date: 9/22/2020

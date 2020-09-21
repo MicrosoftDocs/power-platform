@@ -1,6 +1,6 @@
 ---
-title: "Language support in Teams"
-description: "Create new chatbots in multiple languages, including tutorial and system topics."
+title: "Language support in Microsoft Teams"
+description: "Create new chatbots in multiple languages, including tutorial and system topics, in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, language, regional, region"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

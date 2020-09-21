@@ -1,5 +1,5 @@
 ---
-title: "Automatically start a chatbot conversation in Teams"
+title: "Automatically start a chatbot conversation in Microsoft Teams"
 description: "Change the default greeting that a chatbot in the Power Virtual Agents app in Microsoft Teams uses."
 keywords: "PVA"
 ms.date: 9/22/2020

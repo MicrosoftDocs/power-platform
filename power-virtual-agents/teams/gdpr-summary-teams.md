@@ -1,6 +1,6 @@
 ---
-title: "Overview of GDPR compliance in Teams"
-description: "Learn how to respond​ to GDPR Data Subject Requests for Power Virtual Agents."
+title: "Overview of GDPR compliance in Microsoft Teams"
+description: "Learn how to respond​ to GDPR Data Subject Requests for the Power Virtual Agents app in Microsoft Teams."
 ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
-title: "Add user authentication to chatbot topics in Teams"
-description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
+title: "Add user authentication to chatbot topics in Microsoft Teams"
+description: "Insert user authentication into a topic using the Power Virtual Agents app in Microsoft Teams to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

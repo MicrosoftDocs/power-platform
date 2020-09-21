@@ -1,6 +1,6 @@
 ---
-title: "Get topic suggestions from support pages in Teams"
-description: "Use existing help and support pages to quickly generate new topics for your Power Virtual Agents bot."
+title: "Get topic suggestions from support pages in Microsoft Teams"
+description: "Get suggestions on what topics to include from existing support content, such as FAQs, help sites, and Word and Excel documents"
 keywords: "PVA"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai
@@ -8,7 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: authoring, ceX
+ms.custom: authoring, ceX, teams
 ms.collection: virtual-agent
 ---
 
