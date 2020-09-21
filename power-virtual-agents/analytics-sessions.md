@@ -2,7 +2,7 @@
 title: "Download chatbot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw

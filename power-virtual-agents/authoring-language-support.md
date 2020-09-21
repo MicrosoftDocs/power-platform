@@ -2,7 +2,7 @@
 title: "Language support"
 description: "Create new chatbots in multiple languages, including tutorial and system topics."
 keywords: "PVA, language, regional, region"
-ms.date: 8/18/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw

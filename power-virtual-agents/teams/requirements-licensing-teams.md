@@ -2,7 +2,7 @@
 title: "Assign user licenses and manage access in Teams"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing, PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -19,6 +19,8 @@ Select the version of Power Virtual Agents you're using here:
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../requirements-licensing.md)
 > - [Power Virtual Agents app in Microsoft Teams](requirements-licensing-teams.md)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 To create and manage Power Virtual Agents chatbots in Teams, you need:
 

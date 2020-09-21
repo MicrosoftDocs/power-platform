@@ -2,7 +2,7 @@
 title: "Add a chatbot to Microsoft Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -60,7 +60,7 @@ After publishing your bot at least once, you can connect your bot to the Microso
 
 1.  Select **Turn on Teams**.
 
-    :::image type="content" source="media/publish-teams-enable.png" alt-text=" ":::
+    :::image type="content" source="media/publish-teams-enable.png" alt-text="In the Microsoft Teams flyout that appears, select Turn on Teams to enable sharing":::
 
     >[!NOTE]
     >If you do not see this option, then the Microsoft Teams channel may already be enabled.
@@ -97,7 +97,7 @@ You can add the bot to your own version of Microsoft Teams directly from the Pow
 
     1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Microsoft Teams app store. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
 
-        :::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
+        :::image type="content" source="media/publish-share-to-store.png" alt-text="You can change the details, copy link, or open the bot and see the changes to your icon and details.":::
 
         >[!IMPORTANT]
         >Updates to the bot's detail will not apply to users who have already installed the bot via shared link.  They will need to reinstall to the bot to receive the updates.
@@ -110,7 +110,7 @@ You can add the bot to your own version of Microsoft Teams directly from the Pow
 
        You should provide this information to keep your user informed about the bot. See the [Privacy statement and terms of use](teams/publication-terms-of-use-teams.md) topic for more details and examples.
 
-       :::image type="content" source="media/publish-share-to-store-edit-details.png" alt-text=" ":::
+       :::image type="content" source="media/publish-share-to-store-edit-details.png" alt-text="Change the icon and color of your icon background, as well as add a short and long description and developer information.":::
 
        >[!NOTE]
        >Changing bot detail won't apply to bots that were approved by an admin until it is re-submitted and approved by the admin.  
@@ -134,7 +134,7 @@ You can add the bot to your own version of Microsoft Teams directly from the Pow
 You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for *your-organization-name*** > **Built by your org** section.
 
 
-:::image type="content" source="media/publish-teams-your-org.png" alt-text=" ":::
+:::image type="content" source="media/publish-teams-your-org.png" alt-text="The Built by your org section as at the top of the Built for COMPANY NAME section in the Teams app store":::
 
 
 Admins can also [preinstall and pin the bot](/microsoftteams/teams-app-setup-policies) for users in the organization so they can access it directly from their left app bar in Microsoft Teams.  
@@ -169,7 +169,6 @@ Before submitting the bot to your organization, make sure:
 
 1. A final confirmation prompt will appear. Select **Yes** to continue. The bot will be sent to your admin [for them to approve it](/microsoftteams/submit-approve-custom-apps#validate), and you will see a note indicating the status of your submission.
 
-    :::image type="content" source="media/publish-share-submit-status.png" alt-text=" ":::
 
     >[!NOTE]
     >After submitting the bot for admin approval, you should not change the bot's access setting to be less than everyone in your organization.  

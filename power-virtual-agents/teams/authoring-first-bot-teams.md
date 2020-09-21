@@ -2,7 +2,7 @@
 title: "Create conversational chatbots in Teams"
 description: "Create a new bot in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, create"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -40,15 +40,15 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 
 1. Select **Apps** at the bottom of the navigation pane in Microsoft Teams
 
-    :::image type="content" source="media/first-bot-teams-apps.png" alt-text=" ":::
+    :::image type="content" source="media/first-bot-teams-apps.png" alt-text="The apps icon is at the bottom of the Teams side navigating bar":::
 
 2. In the search box, type *power virtual agents* and then select the tile that appears. Select **Add for me** in the description window that pops up. This adds the app to the navigation panel.
 
-    :::image type="content" source="media/first-bot-add-app.png" alt-text=" ":::
+    :::image type="content" source="media/first-bot-add-app.png" alt-text="The search box has power virtual agents in it, and the Power Virtual Agents tile appears next to it":::
 
 3. To make it easier to get back to, right click on the Power Virtual Agents icon and select **Pin**.
 
-    :::image type="content" source="media/first-bot-pin.png" alt-text=" ":::
+    :::image type="content" source="media/first-bot-pin.png" alt-text="A menu pops up with options to learn about the app, Ping it or uninstall it":::
 
 
 ## Create a bot
@@ -71,7 +71,7 @@ If you delete a bot
 
     If this is the first time a bot is being created in your team, you'll see a notice explaining that it will take some time (this could take from 1 to 10 minutes):
    
-   :::image type="content" source="media/first-bot-delay.png" alt-text=" ":::
+   :::image type="content" source="media/first-bot-delay.png" alt-text="A message says You're the first person to create a bot in this team. We'll ned to do some setting up, so loading time will be a little longer than usual.":::
 
    >[!NOTE]
    >If you were just recently added to a team that already has a bot, you may still see this message as Microsoft Teams is still adding you to the team. You should wait 15 minutes and then create your bot.
@@ -83,7 +83,7 @@ If you delete a bot
 
 1. After the building process is finished, you can create a bot in your team. In the list of teams, select your team and then **New chatbot** to make your bot.
 
-   :::image type="content" source="media/first-bot-name.png" alt-text=" ":::
+   :::image type="content" source="media/first-bot-name.png" alt-text="The create a new bot window lets you enter a name and choose a language for the bot":::
 
 
 

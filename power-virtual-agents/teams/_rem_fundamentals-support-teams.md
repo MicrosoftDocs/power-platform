@@ -2,7 +2,7 @@
 title: "Find community help and get support in Teams"
 description: "Use the Power Virtual Agents community forums to ask and get help and trips and ideas, or get support directly from Microsoft."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw

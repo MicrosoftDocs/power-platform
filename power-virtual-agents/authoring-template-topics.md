@@ -2,7 +2,7 @@
 title: "Use lesson topics to understand capabilities"
 description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw

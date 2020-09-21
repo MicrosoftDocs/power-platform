@@ -2,7 +2,7 @@
 title: "Configure user authentication"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw

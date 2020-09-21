@@ -2,7 +2,7 @@
 title: "Automatically start a chatbot conversation"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw

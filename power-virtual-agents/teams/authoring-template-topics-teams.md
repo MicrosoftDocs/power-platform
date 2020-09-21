@@ -2,7 +2,7 @@
 title: "Use lesson topics to understand capabilities in Teams"
 description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -20,6 +20,7 @@ ms.collection: virtual-agent
 > - [Power Virtual Agents web app](../authoring-template-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-template-topics-teams.md)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics-teams.md) and [custom entities](advanced-entities-slot-filling-teams.md).
 

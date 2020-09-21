@@ -2,7 +2,7 @@
 title: "Configure web channel security in Teams"
 description: "Use Direct Line tokens or secrets to secure access to your bots."
 keywords: "direct line, token, secret, access, secure, security, channels, PVA"
-ms.date: 7/16/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents app in Microsoft Teams](configure-web-security-teams.md)
 
 
->[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 You can configure advanced web channel security options with the Power Virtual Agents app in Microsoft Teams.
 

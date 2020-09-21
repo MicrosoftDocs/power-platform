@@ -2,7 +2,7 @@
 title: "Get topic suggestions from support pages in Teams"
 description: "Use existing help and support pages to quickly generate new topics for your Power Virtual Agents bot."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -20,6 +20,8 @@ Select the version of Power Virtual Agents you're using here:
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../advanced-create-topics-from-web.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-create-topics-from-web-teams.md)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 You can import existing help text and automatically create topics for a chatbot, so you don't have to re-create lots of questions and answers.
 

@@ -2,7 +2,7 @@
 title: "Configure a chatbot for a live or demo website in Teams"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw

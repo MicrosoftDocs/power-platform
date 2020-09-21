@@ -2,7 +2,7 @@
 title: "Quickstart: Create and deploy a bot on the portal"
 description: "Create and publish a Power Virtual Agents bot on the online portal in minutes with this quickstart guide."
 keywords: "PVA, online, web, portal, quickstart"
-ms.date: 8/30/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw

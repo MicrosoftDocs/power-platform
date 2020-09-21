@@ -2,7 +2,7 @@
 title: "Customize how the bot looks to users in Teams"
 description: "Change the name, icon, and color of your bot without needing to know any code."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -20,6 +20,8 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../customize-default-canvas.md)
 > - [Power Virtual Agents app in Microsoft Teams](customize-default-canvas-teams.md)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
 You can customize how the bot looks when added as an app in Microsoft Teams. You can change the icon
 and the bot name at any time, and add a long and short description when you publish the bot.
 
@@ -34,7 +36,7 @@ and the bot name at any time, and add a long and short description when you publ
 
 1. On the side navigation pane, select **Manage** and then **Details**.
 
-    :::image type="content" source="media/custom-canvas-details-teams.png" alt-text=" ":::
+    :::image type="content" source="media/custom-canvas-details-teams.png" alt-text="The Details tab is found in the Manage section on the side navigation pane":::
 
 2. Make changes to the **Bot name** and bot avatar icon.  
     The avatar icon needs to be an image type and can be any size - it will be automatically resized and positioned so it is in the middle of the colored square. 
@@ -47,7 +49,7 @@ and the bot name at any time, and add a long and short description when you publ
 
 3. When you're finished, select **Save** on the top menu bar.
     
-    :::image type="content" source="media/custom-canvas-save-teams.png" alt-text=" ":::
+    :::image type="content" source="media/custom-canvas-save-teams.png" alt-text="Save is at the top of the window":::
 
 4. Select **Reset** to revert your changes to the previously saved version.
 

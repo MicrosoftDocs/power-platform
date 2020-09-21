@@ -2,7 +2,7 @@
 title: "Add a chatbot to Microsoft Teams in Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -63,13 +63,13 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Go to the **Chatbot** tab.
 
-    :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="Alt text here.":::
+    :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="The chatbot tab is in the top navigation pane.":::
 
 1. Open the bot you want to add.
 
 1. On the side navigation pane, select **Publish**. 
 
-    :::image type="content" source="media/publish-option.png" alt-text="Alt text here.":::
+    :::image type="content" source="media/publish-option.png" alt-text="The publish button is in the Publish tab.":::
 
 1. Select **Open the bot** to have the installation prompt launch in Microsoft Teams. Select **Add for me** to have it added as an app in Teams. This only installs the bot for you.
 
@@ -80,7 +80,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Go to the **Chatbot** tab.
 
-    :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="Alt text here.":::
+    :::image type="content" source="media/publish-chatbot-tab-on-homepage.png" alt-text="The chatbot tab is in the top navigation pane.":::
 
 2. Open the bot you want to share.
 
@@ -90,7 +90,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
     This pops up a new window where you can customize how the bot will be shown to people searching for it on the Teams app store. 
 
-    :::image type="content" source="media/publish-teams-share-flyout.png" alt-text=" ":::
+    :::image type="content" source="media/publish-teams-share-flyout.png" alt-text="Selecting Share the bot opens a new flyout window.":::
 
 
     >[!IMPORTANT]
@@ -98,7 +98,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
     1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the search results in the Microsoft Teams app store. [Review the recommendations on Microsoft Teams icon formats](https://review.docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema#icons).
 
-        :::image type="content" source="media/publish-share-to-store.png" alt-text=" ":::
+        :::image type="content" source="media/publish-share-to-store.png" alt-text="You can make changes to the icon, background color, and descriptions":::
 
         >[!IMPORTANT]
         >Updates to the bot's icon and color will not apply to users who have already installed the bot via shared link or [built by your colleague section](#add-the-bot-to-the-built-by-your-colleagues-section).  They will need to reinstall to the bot to receive the updates.
@@ -126,7 +126,7 @@ Once you've published your bot, you can share it with other Microsoft Teams user
 
 You can share your bot with your team by adding it to the Microsoft Teams app store, **Built for *your-organization-name*** > **Built by your colleagues** section. Only your teammates will find the bot there.
 
-:::image type="content" source="media/publish-teams-your-colleagues.png" alt-text=" ":::
+:::image type="content" source="media/publish-teams-your-colleagues.png" alt-text="The Built by your colleagues section as at the bottom of the Built for COMPANY NAME section in the Teams app store":::
 
 1. Go to the **Chatbot** tab.
 
@@ -138,7 +138,7 @@ You can share your bot with your team by adding it to the Microsoft Teams app st
 
 5. Select **Add to Teams**. This will automatically add the bot to the **Built by your colleagues** section, and will show a green label **Added to Teams**.
 
-:::image type="content" source="media/publish-teams-share-flyout-added.png" alt-text=" ":::
+:::image type="content" source="media/publish-teams-share-flyout-added.png" alt-text="The flyout shows the bot has been added to Teams with a checkmark and green box":::
 
 
 >[!NOTE]
@@ -161,7 +161,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 5. Select **Remove**. This option only appears if you've already added the bot to the **Built by your colleagues** section.
 
-:::image type="content" source="media/publish-teams-share-flyout-remove.png" alt-text=" ":::
+:::image type="content" source="media/publish-teams-share-flyout-remove.png" alt-text="Next to the green box indicating the bot has been Added to Teams you can select Remove":::
 
 ## Share the bot with your organization
 
@@ -169,7 +169,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for *your-organization-name*** > **Built by your org** section.
 
 
-:::image type="content" source="media/publish-teams-your-org.png" alt-text=" ":::
+:::image type="content" source="media/publish-teams-your-org.png" alt-text="The Built by your org section as at the top of the Built for COMPANY NAME section in the Teams app store":::
 
 
 Admins can also [preinstall and pin the bot](/microsoftteams/teams-app-setup-policies) for users in the organization so they can access it directly from their left app bar in Microsoft Teams.  
@@ -210,7 +210,7 @@ Before submitting the bot to your organization, make sure:
 
 9. A final confirmation prompt will appear. Select **Yes** to continue. The bot will be sent to your admin [for them to approve it](/microsoftteams/submit-approve-custom-apps#validate), and you will see a note indicating the status of your submission.
 
-    :::image type="content" source="media/publish-share-submit-status.png" alt-text=" ":::
+    :::image type="content" source="media/publish-share-submit-status.png" alt-text="The status has an organe bag with information about the status of the submissing, including the name of the bot, the version number, and the current status Waiting for approval":::
 
     >[!NOTE]
     >After submitting the bot for admin approval, you should not change the bot's access setting to be less than everyone in your organization.  

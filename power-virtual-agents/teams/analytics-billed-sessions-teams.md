@@ -2,7 +2,7 @@
 title: "View billed sessions in Teams"
 description: "See Power Virtual Agents billed sessions for the last 30 or 7 days."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
@@ -19,6 +19,8 @@ Select the version of Power Virtual Agents you're using here:
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../analytics-billed-sessions.md)
 > - [Power Virtual Agents app in Microsoft Teams](analytics-billed-sessions-teams.md)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 When you purchase a Power Virtual Agents license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant. 
 

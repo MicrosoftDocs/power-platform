@@ -2,7 +2,7 @@
 title: "Review customer satisfaction for your chatbots"
 description: "Use AI-driven analytics to understand how well customers are interacting with your bot, and to identify areas for improvement."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw

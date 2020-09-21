@@ -2,7 +2,7 @@
 title: "Add a chatbot to Facebook"
 description: "Add your bot to Facebook so Facebook users can interact with it."
 keywords: "Channel, publish, Facebook, PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
