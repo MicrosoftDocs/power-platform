@@ -27,10 +27,11 @@ You can collaborate with others when building chatbots in Microsoft Teams. This 
 Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/assign-roles-permissions) in the team where your bot is created: 
 
 - Team Owners can create, view, edit, and configure all bots in the team where they are Team Owners. 
-- Team Members can create, edit, and configure bots they have created.  They can view other member's bots in the team.
+- Team Members can create, edit, and configure bots they have created. They can view other member's bots in the team.
 
 >[!NOTE]
->If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Power Virtual Agents apps in Microsoft Teams. You can add yourself as a member to the team and will resolve the issue after a few minutes.
+>If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Power Virtual Agents apps in Microsoft Teams.  
+>You can add yourself as a member to the team and it will resolve the issue after a few minutes.
 
 ## Share bots
 
@@ -44,7 +45,7 @@ To share your bot with other users, you need to [add them to your team](https://
 You can see a list of the teams you belong to, and each bot within that team by going to the **Chatbots** tab on the top navigation bar. Teams are listed on the left, selecting a team shows the chatbots in that team. Whereever you are in the app, you can always get back to the list of chatbots by selecting **Chatbots** at the top.
 
 >[!TIP]
->**My chabots** shows all the bots you created and is an easy way for you to find your bot across multiple teams.  You can find bots created by other team memebrs by selecting the team.
+>**My chatbots** shows all the bots you created and is an easy way for you to find your bot across multiple teams. You can find bots created by other team members by selecting the team.
 
 :::image type="content" source="media/admin-share-bots-list.png" alt-text="The teams and chatbots are listed in the Chatbots tab":::
 
@@ -58,7 +59,7 @@ If you select the menu icon next the bot's name you can then select **Edit** to 
 
 :::image type="content" source="media/admin-share-bots-hamburger.png" alt-text="The bot's menu lets you edit details, topics, and see analytics":::
 
-If you rename, restore or delete a team.  It could take up to 2 hours for the changes to be reflected in the Power Virtual Agents app.
+If you rename, restore, or delete a team, it could take up to 2 hours for the changes to be reflected in the Power Virtual Agents app.
 
 ## Collaborate on bots
 

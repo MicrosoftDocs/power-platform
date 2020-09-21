@@ -23,7 +23,13 @@ Select the version of Power Virtual Agents you're using here:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
-Entities in chatbots let you store information in similar groups. For the most part, they are an advanced feature in chatbot building.
+Entities in chatbots let you store information in similar groups. 
+
+One fundamental aspect of natural language understanding (which is the ability for chatbots to understand a person's natural way of talking) is to identify *entities* in a user dialog. 
+
+An entity can be thought of as a unit of information that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name. With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use.
+
+Using entities can help you expand what you can make chatbots do, and can increase how impactful your chatbot is for other people.
 
 If you're interested in using entities, you should read the [Power Virtual Agents online documentation for entities](../advanced-entities-slot-filling.md).
 
