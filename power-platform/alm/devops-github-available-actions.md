@@ -89,7 +89,7 @@ Packs a solution represented in source control into a solution.zip file that can
 |------------------|-----------------|
 | solution-file              | (Required) The path and file name of the solution.zip file to pack the solution into. For example out/CI/ALMLab.zip     |
 | solution-folder             | (Required) The path and source folder of the solution to pack.      |
-| solution-type                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
+| solution-type                  | (Optional) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
 
 ## Build and release pipelines
@@ -98,7 +98,6 @@ Now that we've identified which actions you can take, let's see
 how you can use these actions to create workflows that use multiple actions. Sample workflows are outlined below.
 
 To learn more about creating these pipelines and actually do hands-on pipeline
-authoring using GitHub Actions for the Microsoft Power Platform, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab),
-which you can download from GitHub.
+authoring using GitHub Actions for the Microsoft Power Platform, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
 
-For more information about on GitHub Actions, see: [About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions)
+For more information about GitHub Actions, see: [About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions)
