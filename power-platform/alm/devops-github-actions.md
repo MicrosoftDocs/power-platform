@@ -79,6 +79,8 @@ To interact with a Power Platform environment, a secret must be created that ena
 - Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
 - Service principal and client secret: This connection type uses service principal based authentication and supports multi-factor authentication (Service principal authentication available October 2020).
 
+## Available runners
+Actions for Power Platform can only run on windows agent. Cross platform compatibility will be available late fall 2020
 
 ## Frequently asked questions (FAQs)
 
