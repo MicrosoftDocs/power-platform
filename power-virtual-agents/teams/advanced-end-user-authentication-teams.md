@@ -30,7 +30,7 @@ Bots created in Microsoft Teams come with authentication pre-configured to use T
 
 You can also enable user authentication within a bot conversation so the bot can:
 
-- Get a user's basic properties such as user name and ID in bot variables.
+- Get a user's basic properties such as username and ID in bot variables.
 - Prompt a user to sign in using an authentication node, so the bot can retrieve the user's information from a back-end system. 
 - Use single sign-on (SSO) on web channels so your users don't need to sign in manually. 
 
