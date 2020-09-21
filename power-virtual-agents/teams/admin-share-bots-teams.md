@@ -29,6 +29,8 @@ Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/
 - Team Owners can create, view, edit, and configure all bots in the team where they are Team Owners. 
 - Team Members can create, edit, and configure bots they have created.
 
+>![NOTE]
+>If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Power Virtual Agents apps in Microsoft Teams.
 
 ## Share bots
 

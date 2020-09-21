@@ -60,9 +60,6 @@ All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/g
 
 The first time you create a bot in a team, it will take 1 to 10 minutes to build the necessary systems in the backend, but every bot after that will take much less time (around 1 or 2 minutes).
 
-If you delete a bot
-
-
 
 1. Select the **Power Virtual Agents** icon to open the app.
 2. You can create a new bot two ways:
