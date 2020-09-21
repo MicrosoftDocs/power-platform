@@ -1,14 +1,15 @@
 ---
-title: "Report analytics, performance, and usage in Power Virtual Agents"
+title: "Report analytics, performance, and usage"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
-ms.date: 1/24/2020
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis
+ms.cusom: analysis, ceX
 ms.collection: virtual-agent
 ---
 

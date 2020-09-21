@@ -2,11 +2,10 @@
 title: "Enable viewing profile cards  | MicrosoftDocs"
 description: Enable viewing profile cards 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -23,7 +22,7 @@ search.app:
 Microsoft's people experience is centered around profile cards that have been around in Microsoft Outlook and other Office apps and services on the web. When you select someone's name or picture in Outlook or other Office apps, you can find information related to them on their profile card. The profile card is also sometimes referred to as contact card or people card. Profile cards are available on contacts and users in any Unified Interface app.
 
 > [!NOTE]
-> If multi-factor authentication has been enabled for Microsoft 365 services and not enabled for model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, profile cards will not be rendered for users in Unified Interface.
+> If multi-factor authentication has been enabled for Microsoft 365 services and not enabled for customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), profile cards will not be rendered for users in Unified Interface.
 >
 > The profile card feature involves a network call to the Microsoft 365 service to display the card. Please make sure that following endpoints are reachable, by configuring and updating network perimeter devices such as firewalls and proxy servers.
 > 
@@ -37,7 +36,7 @@ Microsoft's people experience is centered around profile cards that have been ar
 
 ## Prerequisites
 
-The following settings/environment are required for profile cards to be enabled in model-driven apps in Dynamics 365.
+The following settings/environment are required for profile cards to be enabled in customer engagement apps.
 
 1. Microsoft 365 (Exchange Online)
 2. Unified Interface Build 9.1.0.4626 or higher
@@ -47,7 +46,7 @@ The following settings/environment are required for profile cards to be enabled 
    3. For **Enable users to view contact cards**, select **Yes**, and then **OK**.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/enable-users-view-contact-cards.png "Enable users to view contact cards")
+> ![Enable users to view contact cards](media/enable-users-view-contact-cards.png "Enable users to view contact cards")
 
 For information on how to use profile cards, see [View the profile card for a contact or user](https://docs.microsoft.com/powerapps/user/profile-cards).
 

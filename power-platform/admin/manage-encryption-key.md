@@ -201,7 +201,7 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 To perform this task using PowerShell, see [Set-CrmProtectWithMicrosoftKey](/powershell/module/microsoft.xrm.onlinemanagementapi/set-crmprotectwithmicrosoftkey?view=dynamics365ce-ps).
   
 #### Lock the tenant  
-Since there is only one active key per tenant, locking the encryption for the tenant *disables all the environments* that are in the tenant. All locked environments remain inaccessible to everyone, including [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)], until a Power Platform service admin in your organization unlocks it by using the key that was used to lock it.  
+Since there is only one active key per tenant, locking the encryption for the tenant *disables all the environments* that are in the tenant. All locked environments remain inaccessible to everyone, including [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)], until a Power Platform admin in your organization unlocks it by using the key that was used to lock it.  
   
 > [!CAUTION]
 >  You should never lock the tenant environments as part of your normal business process. When you lock a Common Data Service tenant, all the environments will be taken completely offline and they can't be accessed by anyone, including Microsoft. Additionally, services such as synchronization and maintenance are all stopped. If you decide to leave the service, locking the tenant can ensure that your online data is never accessed again by anyone.  

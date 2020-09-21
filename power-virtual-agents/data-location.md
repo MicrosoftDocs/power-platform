@@ -1,7 +1,7 @@
 ---
-title: "Regional settings and data locations for Power Virtual Agents"
+title: "Regional settings and data locations"
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
-ms.date: 6/22/2020
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
@@ -30,7 +30,7 @@ Chatbots built with Power Virtual Agents will understand and display content tha
 * Currency
 * Speed
 
-Power Virtual Agents supports the following locales:
+Power Virtual Agents supports the following display formatting locales:
 * en-AU
 * en-CA
 * en-GB
@@ -80,7 +80,7 @@ Microsoft won't transfer customer data outside the selected Azure geographic loc
 
   - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks), which might store multi-factor authentication data globally. 
 
-  - Customer data collected during the onboarding process by the  [Microsoft Office 365 admin center](/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide).
+  - Customer data collected during the onboarding process by the [Microsoft 365 admin center](/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide).
   
   - Services that provide global routing functions and don't process or store customer data. This includes Azure DNS, which provides domain name services that route to different regions; or preview, beta, or other pre-release services, which typically store customer data in the United States but might store it globally. 
 

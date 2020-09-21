@@ -2,11 +2,10 @@
 title: "Datacenter regions  | MicrosoftDocs"
 description: Datacenter regions
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 09/08/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Datacenter regions
 
-Model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, are being hosted in datacenters in more and more regions. After model-driven apps in Dynamics 365 become available in a new region, the following apply:  
+The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are being hosted in datacenters in more and more regions. After customer engagement apps become available in a new region, the following apply:  
   
 - For new organizations, the datacenter will be aligned with the country/region you selected during sign-up.  
   

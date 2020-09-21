@@ -1,14 +1,15 @@
 ---
 title: "Quickstart: Create and deploy a bot"
 description: "Create and publish a Power Virtual Agents bot in minutes with this quickstart guide."
-ms.date: 1/28/2019
+keywords: "PVA"
+ms.date: 8/3/2020
 ms.service:
   - "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: fundamentals
+ms.custom: fundamentals, ceX
 ms.collection: virtual-agent
 ---
 

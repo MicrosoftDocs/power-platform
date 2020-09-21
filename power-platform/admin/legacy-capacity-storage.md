@@ -1,13 +1,12 @@
 ---
 title: "Legacy storage capacity  | MicrosoftDocs"
 description: About the legacy storage model.
-ms.date: 06/10/2020
+ms.date: 08/19/2020
 ms.reviewer: ""
 ms.service: "power-platform"
 ms.topic: "quickstart"
 author: "jimholtz"
 ms.author: "jimholtz"
-manager: "kvivek"
 search.audienceType: 
   - admin
 search.app:
@@ -26,12 +25,12 @@ We're rolling out this feature now so check back if your user experience varies 
 
 The following licenses provide capacity using the legacy storage model. If you have any of the following licenses and none of the new model licenses, you'll see the legacy model report: 
 
-- Microsoft Dynamics CRM Online Additional Non-production Instance 
-- Microsoft Dynamics CRM Online Additional Test Instance 
-- Microsoft Dynamics CRM Online Instance 
-- Microsoft Dynamics CRM Online Storage Add-On 
+- Microsoft Dynamics 365 Additional Non-production Instance 
+- Microsoft Dynamics 365 Additional Test Instance 
+- Microsoft Dynamics 365 Instance 
+- Microsoft Dynamics 365 Storage Add-On 
 
-To see whether you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Products & Services**.
+To see whether you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Licenses**.
 
 > [!NOTE]
 > If you have a mix of the abovementioned legacy model licenses and [new model licenses](capacity-storage.md#licenses-for-the-new-storage-model), you'll see the [new model report](capacity-storage.md).
@@ -115,13 +114,13 @@ The following details are provided:
 
 ## Example storage capacity scenario
 
-### Scenario: Storage is over capacity
+### Scenario: Total storage is over capacity, overage enforcement
 
 |Type  |Entitled  |Consumed  |
 |---------|---------|---------|
-|**Database**     | 100 GB        | 110 GB        |
+|**Total storage**     | 100 GB        | 110 GB        |
 
-This tenant is 10 GB over in storage usage. Therefore, there is a deficit. This tenant should free up storage or purchase more capacity.
+The 110 GB of storage is used by the three types of storage: database, log, and file. This tenant is 10 GB over in storage usage. Therefore, there is a deficit. This tenant should free up storage or purchase more capacity.
 
 ## Actions to take for a storage capacity deficit
 

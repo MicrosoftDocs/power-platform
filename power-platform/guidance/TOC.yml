@@ -1,0 +1,128 @@
+- name: Power Platform guidance
+  href: index.yml
+  items: 
+  - name: Adoption best practices
+    href: adoption/methodology.md
+    items: 
+    - name: Strategy and vision
+      href: adoption/strategy-best-practices.md
+      items:
+      - name: Establishing a Center of Excellence
+        href: adoption/coe.md
+      - name: Roles and responsibilities
+        href: adoption/roles.md
+      - name: Delivery models
+        href: adoption/delivery-models.md
+    - name: Admin and governance 
+      items:
+      - name: Best practices checklist
+        href: adoption/admin-best-practices.md
+      - name: Manage
+        items: 
+          - name: Designate a Power Platform admin
+            href: adoption/pp-admin.md
+          - name: Plan and manage licenses and capacity
+            href: adoption/capacity-and-licenses.md
+          - name: Establish an environment strategy
+            href: adoption/environment-strategy.md
+      - name: Secure
+        items: 
+          - name: Establish DLP policies
+            href: adoption/dlp-strategy.md
+          - name: Set up Azure AD Conditional Access
+            href: adoption/conditional-access.md
+          - name: Enable cross-tenant isolation
+            href: adoption/tenant-isolation.md
+      - name: Monitor and alert
+        items: 
+          - name: Report on resource usage
+            href: adoption/resource-usage.md
+          - name: Track user access
+            href: adoption/access-usage.md
+          - name: Monitor Common Data Service usage
+            href: adoption/cds-usage.md
+          - name: Monitor new connectors
+            href: adoption/new-connectors.md
+          - name: Set up sharing alerts and mitigations
+            href: adoption/sharing-alerts.md
+    - name: Nurture and educate
+      items:
+      - name: Best practices checklist
+        href: adoption/nurture-best-practices.md
+      - name: Community
+        items:
+          - name: Identify champions
+            href: adoption/champions.md
+          - name: Onboard new makers
+            href: adoption/onboard-makers.md
+          - name: Create an internal wiki and community
+            href: adoption/wiki-community.md
+          - name: Share your own templates and re-usable components
+            href: adoption/reusable.md
+      - name: Evangelism
+        items:
+          - name: Share success stories
+            href: adoption/show-and-tell.md
+          - name: Organize hackathons
+            href: adoption/hackathons.md
+      - name: Training
+        items:
+          - name: Training and upskilling strategy
+            href: adoption/training-strategy.md
+          - name: Internal training events
+            href: adoption/in-a-day.md
+          - name: Solution envisioning workshops
+            href: adoption/solution-envisioning.md  
+  - name: Center of Excellence (CoE) Kit
+    href: coe/starter-kit.md
+    items: 
+    - name: Overview
+      href: coe/overview.md
+    - name: Establishing a Center of Excellence
+      href: coe/motivation.md   
+    - name: Set up the CoE Starter Kit    
+      items: 
+      - name: Get started with setup
+        href: coe/setup.md
+      - name: Set up core components
+        href: coe/setup-core-components.md  
+      - name: Set up governance components
+        href: coe/setup-governance-components.md  
+      - name: Set up nurture components
+        href: coe/setup-nurture-components.md
+      - name: Collect audit log data
+        href: coe/setup-auditlog.md
+      - name: Set up Power BI report
+        href: coe/setup-powerbi.md
+    - name: What's in the CoE Starter Kit
+      items:  
+      - name: CoE Starter Kit modules
+        href: coe/starter-kit-explained.md  
+      - name: Components overview     
+        items:  
+        - name: Core components
+          href: coe/core-components.md
+        - name: Governance components
+          href: coe/governance-components.md       
+        - name: Nurture components
+          href: coe/nurture-components.md     
+        - name: Extend and modify components
+          href: coe/modify-components.md
+    - name: How to use the CoE Starter Kit
+      items:
+        - name: CoE Dashboard Explained
+          items:
+          - name: Overview     
+            href: coe/power-bi.md
+          - name: Monitor
+            href: coe/power-bi-monitor.md
+          - name: Govern
+            href: coe/power-bi-govern.md
+          - name: Nurture
+            href: coe/power-bi-nurture.md
+        - name: Sample audit process
+          href: coe/example-processes.md  
+    - name: Limitations
+      href: coe/limitations.md
+    - name: Feedback and support
+      href: coe/feedback-support.md

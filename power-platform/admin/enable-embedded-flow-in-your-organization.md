@@ -2,11 +2,10 @@
 title: "Enable Power Automate integration to automate processes  | MicrosoftDocs"
 description: Enable Power Automate integration to automate processes
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Enable Power Automate integration to automate processes
 
-Microsoft Power Automate lets you create automated processes between your favorite apps and services. The ability to run flows from within model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, make it simple for users to combine a broad spectrum of services that can be initiated from within Dynamics 365 apps, such as messaging, social engagement, and document routing services.  
+Microsoft Power Automate lets you create automated processes between your favorite apps and services. The ability to run flows from within customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), such as Dynamics 365 Sales and Customer Service, make it simple for users to combine a broad spectrum of services that can be initiated from within Dynamics 365 apps, such as messaging, social engagement, and document routing services.  
 
 ![Lead record with Power Automate integration](media/flow-integration.png)
 
@@ -36,9 +35,9 @@ Once the Power Automate integration feature is enabled, the following privileges
   
 ## Prerequisites  
   
-- A Power Automate connection for model-driven apps in Dynamics 365 (recommended). [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Connectors](https://docs.microsoft.com/connectors/)  
+- A Power Automate connection for customer engagement apps (recommended). [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Connectors](https://docs.microsoft.com/connectors/)  
   
-- One or more flows created in the Power Automate environment to use with model-driven apps in Dynamics 365. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using model-driven apps in Dynamics 365](https://docs.microsoft.com/power-automate/connection-dynamics365)  
+- One or more flows created in the Power Automate environment to use with customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using customer engagement apps](https://docs.microsoft.com/power-automate/connection-dynamics365)  
   
 ## Enable or disable Power Automate in your organization  
  By default, all security roles allow users to run flows on the records that they have access to.  

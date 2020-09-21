@@ -7,7 +7,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 09/08/2020
 search.audienceType: 
   - admin
 search.app:
@@ -86,13 +86,13 @@ Make sure you have the System Administrator or System Customizer security role o
  After you have enabled the hierarchy modeling, choose the specific model by selecting the **Manager Hierarchy** or **Custom Position Hierarchy**. All system entities are enabled for hierarchy security out-of-the-box, but, you can exclude selective entities from the hierarchy. The **Hierarchy Security** window shown below:  
   
 > [!div class="mx-imgBorder"] 
-> ![](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security")
+> ![Set up hierarchy security](../admin/media/hierarchy-security-setup2.png "Set up hierarchy security")
 
   
- Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access his or her accounts and the accounts of the reports two levels deep. In our example, if you log in into model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
+ Set the **Depth** to a desired value to limit how many levels deep a manager has a Read-only access to the data of their reports. For example, if the depth equals to 2, a manager can only access his or her accounts and the accounts of the reports two levels deep. In our example, if you log in into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), not as an Administrator, who can see all accounts, but, as the VP of Sales, you’ll only be able to see the active accounts of the users shown in the red rectangle, as illustrated below:  
 
 > [!div class="mx-imgBorder"] 
-> ![](../admin/media/sales-vp-access.png "Read access for VP of Sales")
+> ![Read access for VP of Sales](../admin/media/sales-vp-access.png "Read access for VP of Sales")
   
 > [!NOTE]
 >  While, the hierarchy security grants the VP of Sales access to the records in the red rectangle, additional access can be available based on the security role that the VP of Sales has.  
@@ -101,7 +101,7 @@ Make sure you have the System Administrator or System Customizer security role o
  The Manager hierarchy is easily created by using the manager relationship on the system user record. You use the Manager (**ParentsystemuserID**) lookup field to specify the manager of the user. If you have already created the Position hierarchy, you can also tag the user with a particular position in the Position hierarchy. In the following example, the sales person reports to the sales manager in the Manager hierarchy and also has the Sales position in the Position hierarchy:  
 
 > [!div class="mx-imgBorder"] 
-> ![](../admin/media/appointment-fields-customization.png "Sales person user record")
+> ![Sales person user record](../admin/media/appointment-fields-customization.png "Sales person user record")
   
  To add a user to a particular position in the Position hierarchy, use the lookup field called Position on the user record’s form, as show below:  
   
@@ -109,12 +109,12 @@ Make sure you have the System Administrator or System Customizer security role o
 >  To add a user to a position or change the user’s position, you must have the **Assign position for a user** privilege.  
 
 > [!div class="mx-imgBorder"] 
-> ![](../admin/media/hierarchy-security-add-position2.png "Add user to position in Hierarchy Security")
+> ![Add user to position in Hierarchy Security](../admin/media/hierarchy-security-add-position2.png "Add user to position in Hierarchy Security")
   
  To change the position on the user record’s form, on the nav bar, choose **More** (…) and choose a different position, as shown below:  
   
 > [!div class="mx-imgBorder"] 
-> ![](../admin/media/cust-hs-change-position2.png "Change position in hierarchy security")
+> ![Change position in hierarchy security](../admin/media/cust-hs-change-position2.png "Change position in hierarchy security")
   
  To create a Position hierarchy:  
   
@@ -123,12 +123,12 @@ Make sure you have the System Administrator or System Customizer security role o
    For each position, provide the name of the position, the parent of the position, and the description. Add users to this position by using the lookup field called **Users in this position**. Below is the example of Position hierarchy with the active positions.  
 
    > [!div class="mx-imgBorder"] 
-   > ![](../admin/media/active-positions.png "Active positions in Hierarchy Security")
+   > ![Active positions in Hierarchy Security](../admin/media/active-positions.png "Active positions in Hierarchy Security")
   
    The example of the enabled users with their corresponding positions is shown below:  
   
    > [!div class="mx-imgBorder"] 
-   > ![](../admin/media/hierachy-security-enabled-users.png "Enabled users with assigned positions")
+   > ![Enabled users with assigned positions](../admin/media/hierachy-security-enabled-users.png "Enabled users with assigned positions")
 
 ## Performance considerations  
  To boost the performance, we recommend:  

@@ -46,7 +46,7 @@
         href: wp-management-monitoring.md
       - name: Power Apps enterprise deployment whitepaper
         href: admin-powerapps-enterprise-deployment.md
-      - name: Try Power Apps and model-driven apps in Dynamics 365
+      - name: Try Power Apps and customer engagement apps
         href: try-powerapps-dynamics-365.md
       - name: Move between your apps
         href: quickly-navigate-office-365-app-launcher.md
@@ -95,8 +95,7 @@
         - name: Back up and restore environment
           href: backup-restore-environments.md
         - name: Administration mode
-          href: sandbox-environments.md#administration-mode
-    #      href: admin-mode.md
+          href: admin-mode.md
         - name: Customer managed encryption key
           href: manage-encryption-key.md
         - name: Trial environments
@@ -322,8 +321,7 @@
         - name: Multiple online environments or tenants
           href: multiple-online-environments-tenants.md
         - name: Administration mode
-      #    href: admin-mode.md
-          href: sandbox-environments.md#administration-mode         
+          href: admin-mode.md        
         - name: Support environment
           href: support-environment.md     
         - name: Automation of tasks with PowerShell 
@@ -394,9 +392,9 @@
       items: 
       - name: What's new for storage
         href: whats-new-storage.md
-      - name: New model capacity storage
+      - name: New capacity storage model
         href: capacity-storage.md
-      - name: Legacy capacity storage
+      - name: Legacy capacity storage model
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
@@ -426,16 +424,38 @@
         href: audit-data-user-activity.md
       - name: Common Data Service and model-driven apps
         href: enable-use-comprehensive-auditing.md    
-    - name: PowerShell support for Power Apps (preview) 
+    - name: PowerShell support for Power Apps 
       items:
       - name: About PowerShell support
         href: powerapps-powershell.md           
       - name: Automation of tasks with PowerShell 
         href: wp-task-automation-powershell.md
-    - name: Requirements/supported configurations
+    - name: Requirements
       items:
-      - name: Overview
+      - name: Requirements/supported configurations
         href: online-requirements.md
+      - name: Internet accessible URLs required
+        items:
+        - name: Required URLs for North America-based organizations
+          href: internet-url-north-america.md
+        - name: Required URLs for South America-based organizations
+          href: internet-url-south-america.md          
+        - name: Required URLs for Europe, Africa, and Middle East-based organizations
+          href: internet-url-europe-africa-middle-east.md
+        - name: Required URLs for Asia/Pacific area-based organizations
+          href: internet-url-asia-pacific.md        
+        - name: Required URLs for Japan-based organizations
+          href: internet-url-japan.md
+        - name: Required URLs for India-based organizations
+          href: internet-url-india.md      
+        - name: Required URLs for Canada-based organizations
+          href: internet-url-canada.md
+        - name: Required URLs for Oceania-based organizations
+          href: internet-url-oceania.md         
+        - name: Required URLs for Dynamics 365 US Government-based organizations
+          href: internet-url-us-government.md
+        - name: Required URLs for United Kingdom-based organizations
+          href: internet-url-united-kingdom.md     
       - name: Plan for deployment and administration
         href: plan-for-deployment-and-administration.md
       - name: Supported web browsers and mobile devices
@@ -444,54 +464,6 @@
         href: web-application-requirements.md
       - name: On-premises server cipher suites and TLS requirements
         href: onpremises-server-cipher-tls-requirements.md
-    # - name: Requirements
-    #   items:
-    #   - name: Requirements/supported configurations
-    #     href: online-requirements.md
-    #   - name: Internet accessible URLs required
-    #     items:
-    #     - name: Required URLs for North America-based organizations
-    #       href: internet-url-north-america.md
-    #     - name: Required URLs for South America-based organizations
-    #       href: internet-url-south-america.md          
-    #     - name: Required URLs for Europe, Africa, and Middle East-based organizations
-    #       href: internet-url-europe-africa-middle-east.md
-    #     - name: Required URLs for Asia/Pacific area-based organizations
-    #       href: internet-url-asia-pacific.md        
-    #     - name: Required URLs for Japan-based organizations
-    #       href: internet-url-japan.md
-    #     - name: Required URLs for India-based organizations
-    #       href: internet-url-india.md      
-    #     - name: Required URLs for Canada-based organizations
-    #       href: internet-url-canada.md
-    #     - name: Required URLs for Oceania-based organizations
-    #       href: internet-url-oceania.md         
-    #     - name: Required URLs for Dynamics 365 US Government-based organizations
-    #       href: internet-url-us-government.md
-    #     - name: Required URLs for United Kingdom-based organizations
-    #       href: internet-url-united-kingdom.md     
-    #   - name: Plan for deployment and administration
-    #     href: plan-for-deployment-and-administration.md
-    #   - name: Supported web browsers and mobile devices
-    #     href: supported-web-browsers-and-mobile-devices.md
-    #   - name: Web application requirements
-    #     href: web-application-requirements.md
-    #   - name: On-premises server cipher suites and TLS requirements
-    #     href: onpremises-server-cipher-tls-requirements.md
-    - name: Platform architecture
-      items: 
-      - name: About environments 
-        href: wp-environments.md
-      - name: Common Data Service 
-        href: wp-cds-for-apps.md
-      - name: Types of Power Apps 
-        href: wp-types-powerapps.md
-      - name: Power Automate
-        href: wp-about-flows.md
-      - name: Connectors 
-        href: wp-connectors.md
-      - name: Solution Packages 
-        href: wp-solution-packages.md          
     - name: Security
       items:
       - name: Overview
@@ -504,7 +476,9 @@
         href: system-application-users.md
       - name: Configure user security
         href: database-security.md
-      - name: Email exfiltration controls for Office 365 connectors
+      - name: How access to records is determined
+        href: how-record-access-determined.md
+      - name: Email exfiltration controls for connectors
         href: block-forwarded-email-from-power-automate.md
       - name: Configure environment security 
         items: 
@@ -556,7 +530,7 @@
       - name: Setup
         href: set-up-sharepoint-integration.md 
         items: 
-        - name: Set up model-driven apps in Dynamics 365 to use SharePoint online
+        - name: Set up customer engagement apps to use SharePoint online
           href: set-up-dynamics-365-online-to-use-sharepoint-online.md
         - name: Configure server-based authentication with SharePoint on-premises
           href: configure-server-based-authentication-sharepoint-on-premises.md  
@@ -853,7 +827,7 @@
     href: about-flow-guide.md
   - name: Administer Power BI
     href: about-powerbi-guide.md
-  - name: Administer model-driven apps in Dynamics 365    
+  - name: Administer customer engagement apps in Dynamics 365    
     items:
     - name: Overview
       href: about-ce-guide.md
@@ -874,6 +848,8 @@
     href: ../important-changes-coming.md
   - name: International availability
     href: ../availability.md
+  - name: Adoption best practices
+    href: /power-platform/guidance/adoption/methodology
   - name: Center of Excellence (CoE) Kit
     href: /power-platform/guidance/coe/starter-kit
     

@@ -2,7 +2,7 @@
 title: "Export and import bots using solutions (preview)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: "export, import, transfer, environment, PVA"
-ms.date: 7/16/2020
+ms.date: 7/31/2020
 ms.service:
   - dynamics-365-ai
 ms.topic: article
@@ -21,6 +21,10 @@ ms.collection: virtualagent
 You can export and import bots using [solutions](/power-platform/alm/solution-concepts-alm) so you can move your bots across multiple [environments](https://docs.microsoft.com/power-platform/admin/environments-overview).
 
 This can be useful if you use different environments for different purposes, or you employ ring-deployment methodologies. For example, you might have a specific environment where you internally test and validate bots, another environment where you test bots for only a subset of users, and a final production environment where you share bots with your customers and end users.
+
+> 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4CsHl]
+> 
 
 ## Prerequisites
 
@@ -137,6 +141,9 @@ You export and import bots by exporting and importing their containing solutions
 
     >[!NOTE]
     >You can't export managed solutions. When you create a solution, by default it will not be managed. If you change it to a managed solution you won't be able to export it, and will need to create a new solution.
+    
+    > If your bot has a large number of components (for example, 250+ topics, 100+ entities), export the bot using classic Power Apps portal instead.
+    <add SwitchToClassic image>
 
 2. Select **Next** in the **Before you export** panel.
 
@@ -207,6 +214,12 @@ There are times when you need to update an existing managed solution. To learn m
 
 ## Remove an unmanaged layer from a managed chatbot 
 Managed and unmanaged solutions exist at different levels within a Common Data Service environment. To learn more, go to [Solution layers](/powerapps/maker/common-data-service/solution-layers).
+
+A managed component (for example, topic, flow) gets an unmanaged layer when you edit it. This unmanaged active layer lies on top of all other layers coming from the different solutions containing this component. The layer on top always wins; hence you cannot see the new changes coming from new deployments. To avoid this issue, Microsoft introduced a new feature called **See solution layers**, where you can see all solutions where this component is part of it. You can see one “Active” solution on top of all solutions if you would have changed something directly on the instance. To get rid of the unmanaged customizations on the managed component you have to do the following, 
+1. Select **See solution layers** under the ... menu next to the component name.
+<Add the image solution layer image here>
+
+2. In the Solution layer page, select the unmanaged layer and then select the **Remove unmanaged layer** to remove the layer. 
 
 
 

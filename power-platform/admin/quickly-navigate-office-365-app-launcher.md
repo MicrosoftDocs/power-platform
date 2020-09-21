@@ -2,11 +2,10 @@
 title: "Quickly navigate with the Microsoft 365 app launcher and the Dynamics 365 home page  | MicrosoftDocs"
 description: Quickly navigate with the Microsoft 365 app launcher and the Dynamics 365 home page
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 09/09/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -60,10 +59,6 @@ To see all of the business apps that you have access to across Dynamics 365 and 
   
 
 ## Your business apps are moving
-In the future, the home for all of your business applications across Dynamics and the Power Platform will move to the apps page on [office.com](https://office.com/apps).
-This will help ensure that your end-users have a single spot to find all of their apps across the Microsoft ecosystem. Once the apps on the Dynamics home page have
-moved to [office.com](https://office.com/apps), we will provide a banner redirecting users to their new home.
+In the future, the home for all of your business applications across Dynamics and the Power Platform will move to the apps page on [office.com](https://office.com/apps). This will help ensure that your end-users have a single spot to find all of their apps across the Microsoft ecosystem. Once the apps on the Dynamics home page have moved to [office.com](https://office.com/apps) in October, we will provide a banner redirecting users to their new home.
 
-After October 1, 2020, when users navigate to https://home.dynamics.com, they will be redirected to https://www.office.com/apps with a deep link to their business applications.
-  
-
+After October 31, 2020, when users navigate to [https://home.dynamics.com](https://home.dynamics.com), they will be redirected to [https://www.office.com/apps](https://www.office.com/apps) with a deep link to their business applications.

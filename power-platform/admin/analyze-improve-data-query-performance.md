@@ -2,11 +2,10 @@
 title: "Data query performance  | MicrosoftDocs"
 description: Data query performance 
 author: Mattp123
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 09/04/2020
 ms.author: matp
 search.audienceType: 
   - admin
@@ -17,7 +16,7 @@ search.app:
   - Flow
 ---
 # Data query performance
-To improve query performance, index management is executed automatically using Azure SQL Database automatic tuning. Subsequently, there’s no need to manually configure recommendations to create or drop indexes in model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or Azure SQL Database. More information: [Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning) 
+To improve query performance, index management is executed automatically using Azure SQL Database automatic tuning. Subsequently, there’s no need to manually configure recommendations to create or drop indexes in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), or Azure SQL Database. More information: [Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning) 
 
 <!-- You can analyze and optimize query performance using the Data Performance view, which provides an aggregated list of entities with long-running queries. A long running query is defined as a query that takes three seconds or longer to complete. Typical examples of a component that can have a long running query is a plug-in with custom FetchXML or a sub-grid or view. When you optimize an entity that has long-running queries, it could significantly reduce the amount of time the query takes to load. Behind the scenes, optimizations add one or more [!INCLUDE[pn_MS_SQL_Server](../includes/pn-ms-sql-server.md)] indexes.  
 

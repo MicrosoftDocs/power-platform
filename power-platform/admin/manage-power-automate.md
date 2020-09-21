@@ -31,7 +31,7 @@ Admins can do the following from the Power Platform admin center:
 
 - Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
 
-- Power Apps Environment Admin, Global admin, or Power Platform service admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
+- Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
 
 ## Manage Power Automate flows
 

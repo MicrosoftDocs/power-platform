@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 06/02/2020
+ms.date: 09/04/2020
 ms.service: powerapps
 ms.custom: 
 ms.topic: article
@@ -11,7 +11,6 @@ applies_to:
 ms.assetid: 
 author: Mattp123
 ms.author: matp
-manager: kvivek
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -41,7 +40,7 @@ Examples include the following:
 If you experience unexpected behavior with the document management feature caused by a third-party solution, contact the third-party solution vendor. 
  
 ## "File not found" error when adding a file from a SharePoint site
-If you receive a **File not found** error or encounter a problem while adding a file from a SharePoint site or SharePoint subsite in model-driven apps in Dynamics 365, the likely cause is that you have not created the document location records in the model-driven app to point to these SharePoint document libraries and folders.
+If you receive a **File not found** error or encounter a problem while adding a file from a SharePoint site or SharePoint subsite in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), the likely cause is that you have not created the document location records in the model-driven app to point to these SharePoint document libraries and folders.
 
 SharePoint document locations are records in model-driven apps, such as Dynamics 365 Sales and Customer Service, that point to a SharePoint document library or folder. To use any SharePoint site or subsite in SharePoint integration, you must run the Document Management Settings wizard once with the corresponding site URL, so that the document libraries are created in the site.
 

@@ -2,11 +2,10 @@
 title: "Power Apps analytics   | MicrosoftDocs"
 description: The admin reports provide a view into environment level usage, errors, service performance.
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/02/2020
+ms.date: 08/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,7 +17,7 @@ search.app:
 ---
 # Admin Analytics for Power Apps
 
-Analytics for the environment admin is available at the Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. 
+Analytics for the environment admin is available at the Power Platform admin center. The admin reports provide a view into environment level usage, errors, service performance to drive governance, and change management services to users. These reports are available for canvas apps only and not available for model-driven apps.
 
 To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. Reports appear in a menu bar at the top of the page.
 
@@ -29,8 +28,8 @@ To access these reports, sign in to the Power Platform admin center and select *
 
 Admins with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Apps analytics:
 - Environment Admin - can view reports for the environments that the admin has access to.
-- Power Platform Service admin – can view reports for all environments.
-- Dynamics 365 Service admin - can view reports for all environments.
+- Power Platform admin – can view reports for all environments.
+- Dynamics 365 admin - can view reports for all environments.
 - Microsoft 365 Global admin – can view reports for all environments.
 
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
@@ -92,7 +91,7 @@ The reports are built on Power BI. To download a report, select the ellipsis (�
 
 ## How do I change environments? 
 
-Select **Change Filter** or the **Filter** button (![](media/filters-button.png "Filter button")) in the upper-right corner of the page.
+Select **Change Filter** or the **Filter** button (![Filter button](media/filters-button.png "Filter button")) in the upper-right corner of the page.
 
 > [!div class="mx-imgBorder"] 
 > ![Select Change Filter or Filter](media/powerapps-analytics-filter.png "Select Change Filter or Filter")

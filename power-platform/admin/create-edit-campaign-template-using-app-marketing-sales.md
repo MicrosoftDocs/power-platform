@@ -2,11 +2,10 @@
 title: "Create or edit a campaign template using in-app marketing (Sales)  | MicrosoftDocs"
 description: Create or edit a campaign template using in-app marketing (Sales)
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -40,7 +39,7 @@ Save time when creating multiple campaigns by creating a campaign template. Camp
   
 - Open the campaign that you want to copy. Select **Copy as Template**, type a name for the template, and select **Save**.  
   
-  If you need to back up your campaign templates, or use them in a different implementation of model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, you can copy the data to a different environment using the [Configuration Migration tool](manage-configuration-data.md).
+  If you need to back up your campaign templates, or use them in a different implementation of customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you can copy the data to a different environment using the [Configuration Migration tool](manage-configuration-data.md).
 
 > [!NOTE]
 > [!INCLUDE[cc_CRM_Marketing_and_MDM](../includes/cc-crm-marketing-and-mdm.md)] 

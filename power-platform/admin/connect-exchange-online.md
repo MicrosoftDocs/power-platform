@@ -2,11 +2,10 @@
 title: "Connect to Exchange Online | MicrosoftDocs"
 description: Connect to Exchange Online
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/10/2020
+ms.date: 09/04/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -20,7 +19,7 @@ search.app:
 
 <!-- legacy procedure -->
 
-With both model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, and [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] hosted as online services, connecting the two is a simpler, more straightforward configuration.  
+With both customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] hosted as online services, connecting the two is a simpler, more straightforward configuration.  
   
 > [!TIP]
 > ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Connect to Exchange Online using server-side sync](https://go.microsoft.com/fwlink/p/?linkid=836831).  
@@ -31,13 +30,13 @@ With both model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Cust
 <a name="BKMK_GetExchangeReady"></a>   
 
 ## Get Exchange ready  
- To use [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with model-driven apps in Dynamics 365, you must have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription that comes as part of an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription or that can be subscribed to separately. For information on [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], see:  
+ To use [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] with customer engagement apps, you must have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription that comes as part of an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] subscription or that can be subscribed to separately. For information on [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], see:  
   
 -   [Exchange Online](https://technet.microsoft.com/library/jj200580\(v=exchg.150\).aspx)  
   
 -   [Exchange Online Service Description](https://technet.microsoft.com/library/jj819276.aspx)  
   
--   [Office 365 service comparison](https://technet.microsoft.com/office/dn788955)  
+-   [Microsoft 365 and Office 365 service descriptions](https://technet.microsoft.com/office/dn788955)  
   
 > [!TIP]
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information on what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).  
@@ -45,7 +44,7 @@ With both model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Cust
 <a name="BKMK_VerifyProfile"></a>   
 
 ## Verify you have the profile: Microsoft Exchange Online  
- If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, model-driven apps in Dynamics 365 create a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
+ If you have an [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] subscription in the same tenant as your subscription, customer engagement apps create a default profile for the email connection: **Microsoft Exchange Online**. To verify this profile:  
   
 1. In the Power Platform admin center, select an environment. 
 
@@ -119,7 +118,7 @@ All new users will have these settings applied to their mailbox.
 
 ## Approve email  
 
-To approve emails for model-driven apps in Dynamics 365, a user requires:
+To approve emails for customer engagement apps, a user requires:
 
 1. The **Approve Email Addresses for Users or Queues** privilege. 
 2. The permissions as described in the table below.
@@ -128,7 +127,7 @@ To approve emails for model-driven apps in Dynamics 365, a user requires:
 
 Decide which approach you want your organization to follow for mailbox approval.
 
-![](media/approval-flow-chart.png "Decide on mailbox approval approach")
+![Decide on mailbox approval approach](media/approval-flow-chart.png "Decide on mailbox approval approach")
 
 ### Permission model
 The following table describes the permissions required to approve emails.
@@ -152,7 +151,7 @@ The following table describes the permissions required to approve emails.
     <th>Global admin</th>
   </tr>
   <tr>
-    <td rowspan="2">Model-driven apps in Dynamics 365</td>
+    <td rowspan="2">Customer engagement apps</td>
     <td>Exchange Online</td>
     <td colspan="2"><sup>2</sup>Yes</td>
     <td colspan="2"><sup>2</sup>Yes</td>
@@ -193,8 +192,8 @@ The following table describes the permissions required to approve emails.
 </table>
 
 <sup>1</sup> We recommend you include your Exchange admin in custom business processes your organization follows for this configuration. <br />
-<sup>2</sup> We are updating for model-driven apps in Dynamics 365/Exchange Online, for version 9.1.0.5805 or later.  <br />
-<sup>3</sup> We will be updating for model-driven apps in Dynamics 365/Exchange On-premises. Check back for version information.
+<sup>2</sup> We are updating for customer engagement apps/Exchange Online, for version 9.1.0.5805 or later.  <br />
+<sup>3</sup> We will be updating for customer engagement apps/Exchange On-premises. Check back for version information.
 
  To determine your version, sign in and in the upper-right corner of the screen, select the **Settings** button (![User profile Settings button](media/user-profile-settings-button.png)) > **About**.  
 
@@ -217,7 +216,7 @@ To manually assign the **Approve Email Addresses for Users or Queues** privilege
 4. Under **Miscellaneous Privileges**, set the privilege level for **Approve Email Addresses for Users or Queues**.
   
 > [!div class="mx-imgBorder"] 
-> ![](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
+> ![Approve Email Address for User or Queues](media/approve-email-address-for-user-queues.png "Approve Email Address for User or Queues")
 
 #### Approve mailboxes
 
@@ -252,9 +251,9 @@ Admins, as described in the Permission model table, can change the settings so m
 3. Select the mailboxes you want to test, and then select **Test & Enable Mailbox**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/test-enable-mailbox85.png "Test and enable mailboxes")
+   > ![Test and enable mailboxes](media/test-enable-mailbox85.png "Test and enable mailboxes")
   
-   This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, model-driven apps in Dynamics 365 try to process the email again after some time or disables the mailbox for email processing.  
+   This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the Alerts wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disables the mailbox for email processing.  
   
    To see alerts for an individual mailbox, open the mailbox and then under **Common**, select **Alerts**.  
   
@@ -277,11 +276,11 @@ Admins, as described in the Permission model table, can change the settings so m
   
 3. Select the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, and then select **Test & Enable Mailboxes**.  
   
-    When you test the email configuration, an asynchronous job runs in the background. It may take a few minutes for the test to be completed. Model-driven apps in Dynamics 365 test the email configuration of all the mailboxes associated with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
+    When you test the email configuration, an asynchronous job runs in the background. It may take a few minutes for the test to be completed. Customer engagement apps test the email configuration of all the mailboxes associated with the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile. For the mailboxes configured with server-side synchronization for synchronizing appointments, tasks, and contacts, it also checks to make sure they're configured properly.  
   
 > [!TIP]
 >  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you may want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** check box. [Read more about this check box](when-would-want-use-check-box.md).  
   
 ### See also  
 [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md)   
-[Test mail flow by validating your Office 365 connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   
+[Test mail flow by validating your connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)   
