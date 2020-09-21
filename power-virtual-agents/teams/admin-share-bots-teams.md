@@ -25,6 +25,8 @@ Select the version of Power Virtual Agents you're using here:
 You can collaborate with others when building chatbots in Microsoft Teams. This means other members of your team can make edits and changes, and you can see who else is editing a topic.
 
 Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/assign-roles-permissions) in the team where your bot is created: 
+
+- Team Owners can create, view, edit, and configure all bots in the team where they are Team Owners. 
 - Team Members can create, view, edit and configure all bots in the team, unless otherwise specified.
 
 
