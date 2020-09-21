@@ -178,7 +178,9 @@ Before submitting the bot to your organization, make sure:
 
 1. After your admin approves the bot, the status will be updated to **Approved**. You can directly open the bot and share the approved version's link with other users.
 
-
+>[!NOTE]
+>If your app doesn't appear in the **Built by your org** section even though it's marked as **Approved**, your Teams app might be caching information. 
+>Try signing out and back in again (if you're using the desktop app) or refreshing your browser (if you're using the web app of Teams).
 
 #### Download the bot's Teams app manifest (advanced)
 

@@ -74,7 +74,7 @@ If you delete a bot
    :::image type="content" source="media/first-bot-delay.png" alt-text="A message says You're the first person to create a bot in this team. We'll ned to do some setting up, so loading time will be a little longer than usual.":::
 
    >[!NOTE]
-   >If you were just recently added to a team that already has a bot, you may still see this message as Microsoft Teams is still adding you to the team. You should wait 15 minutes and then create your bot.
+   >If you were just recently added to a team that already has a bot, you may still see this message as Microsoft Teams is still adding you to the team. You should wait 15 minutes and then create your bot.  You should also wait for 15 minutes before finding the team in the **Chatbots** tab.
 
 
 1. Select **Create** to begin the initial bot-building process for your team, which can take a few minutes.
