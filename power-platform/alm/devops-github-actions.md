@@ -17,7 +17,7 @@ search.app:
   - D365CE
 ---
 
-# Preview: GitHub Actions for the Power Platform
+# GitHub Actions for the Power Platform (Preview)
 
 [This topic is pre-release documentation and is subject to change.]
 
@@ -30,9 +30,9 @@ solutions) that contains the various platform components such as customer engage
 <ul><li>Deploying to downstream environments</li></ul>
 
 <ul><li>Provisioning or de-provisioning
-environments</li></ul>
+environments. (Available October 2020)</li></ul>
 
-<ul><li>Perform static analysis check against solutions by using the Power Apps checker service</li></ul>
+<ul><li>Perform static analysis check against solutions by using the Power Apps checker service (Available October 2020)</li></ul>
 
 
 GitHub actions for the Power Platform can be used along with any other available
@@ -42,11 +42,11 @@ that teams commonly put in place include provisioning development environments, 
 ## Key concepts
 GitHub Actions enable you to create custom software development life cycle (SDLC) workflows directly in your GitHub repository. For an overview of GitHub Actions and core concepts, review the following articles:
 
-<ul><LI> [About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions) </li></ul>
+[About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions)
 
-<ul><LI>[Core concepts](https://help.github.com/actions/getting-started-with-github-actions/core-concepts-for-github-actions) </li></ul>
+[Core concepts](https://help.github.com/actions/getting-started-with-github-actions/core-concepts-for-github-actions)
 
-<ul><LI> [About packaging with GitHub Actions](https://help.github.com/en/actions/publishing-packages-with-github-actions/about-packaging-with-github-actions) </li></ul>
+[About packaging with GitHub Actions](https://help.github.com/en/actions/publishing-packages-with-github-actions/about-packaging-with-github-actions)
 
 ## What are GitHub actions for the Power Platform?
 
@@ -77,53 +77,8 @@ from [GitHub Marketplace](https://github.com/marketplace?type=actions).
 To interact with a Power Platform environment, a secret must be created that enables the various GitHub actions to perform the required task. Two types of connections are available:
 
 - Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
-- Service principal and client secret: (recommended) This connection type uses service principal based authentication and supports multi-factor authentication.
+- Service principal and client secret: This connection type uses service principal based authentication and supports multi-factor authentication (Service principal authentication available October 2020).
 
-## Configure service connections using a service principal
-
-To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
-
-### Create service principal and client secret using PowerShell
-
-This PowerShell script assists in creating and configuring the service principal to be used with the Microsoft Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
-
-This application is then added as an administrator user to the Power Platform tenant itself.
-
-**Installation**
-
-Download the following PowerShell cmdlet: https://pabuildtools.blob.core.windows.net/spn-docs-4133a3fe/New-CrmServicePrincipal.ps1
-
-<ul><li>Open a regular Windows PowerShell command prompt (standard, not PS core)
-</li></ul> 
-<ul><li>Navigate to the folder where you saved the script, and unblock the script using the following command: `Unblock-File New-CrmServicePrincipal.ps1`
-</li></ul>
-<ul><li>Run the script: `.\New-CrmServicePrincipal.ps1`</li></ul>
-
-The script will prompt two times with AAD login dialogs:
-
-
-<ul><li>1st prompt: to login as administrator to the AAD instance associated with the Microsoft Power Platform tenant
-</li></ul> 
-<ul><li>2nd prompt: to login as tenant administrator to the Microsoft Power Platform tenant itself
-</li></ul>
-
-
-Once successful, 3 columns are displayed:
-
-<ul><li>Power Platform TenantId</li></ul>
-<ul><li>Application ID</li></ul>
-<ul><li>Client Secret (in clear text)</li></ul>
-
-Use the information displayed to configure the Power Platform service connection. 
-
-> [!IMPORTANT]
-> Keep the client secret safe and secure. Once the PowerShell command prompt is cleared, you cannot retrieve the same client secret again.
-
-
-### Configure environment with the Application ID
-The Application ID must be added as an Application User in the Power Platform environment you are connecting to. Information on how to add an application user is available [here](https://docs.microsoft.com/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#application-user-creation) 
-
-Ensure that the added Application User has the system administrator role assigned (available from “Manage Roles” in the security settings for the application user).
 
 ## Frequently asked questions (FAQs)
 
