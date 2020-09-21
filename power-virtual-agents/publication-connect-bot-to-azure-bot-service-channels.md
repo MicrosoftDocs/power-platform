@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-You can connect your bot to existing [Azure Bot Service channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0). This can be helpful if you want to connect your bot to end users on Azure Bot Service channels. 
+You can connect your bot to existing [Azure Bot Service channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0&preserve-view=true). This can be helpful if you want to connect your bot to end users on Azure Bot Service channels. 
 
 Adding your bot to Azure Bot Service channels requires considerable developer expertise. This topic is written for IT admins or developers who have experience developing and writing code.
 
@@ -47,8 +47,8 @@ Code snippets used in this document are from [relay bot sample code](https://git
 ### References
 The instructions in this document reference the following:
 - [Deploy your bot to Azure](https://aka.ms/azuredeployment) for instructions on deploying the Azure Bot Service bot.
-- [Azure Bot Service Channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) to connect to any Azure Bot Service-supported channel.
-- [Azure Bot Service debug with the emulator](/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0&tabs=csharp) for instructions on debugging the Azure Bot Service bot.
+- [Azure Bot Service Channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0&preserve-view=true) to connect to any Azure Bot Service-supported channel.
+- [Azure Bot Service debug with the emulator](/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) for instructions on debugging the Azure Bot Service bot.
 
 ## Create or use an existing Azure Bot Service bot
 You need an Azure Bot Service bot that can relay conversations between your Power Virtual Agents bot and Azure Bot Service channels.
@@ -165,7 +165,7 @@ The following example uses samples from the [relay bot sample code](https://gith
 
 4. To continue on an existing conversation, upon a new external Azure Bot Service channel message received, retrieve the existing conversation from the mapping table, relay the external conversation activity to your Power Virtual Agents bot, and get a response.
 
-    The following sample shows relaying conversation by overriding the [ActivityHandler.OnMessageActivityAsync((ITurnContext<IMessageActivity>, CancellationToken) method](/dotnet/api/microsoft.bot.builder.activityhandler.onmessageactivityasync?view=botbuilder-dotnet-stable)
+    The following sample shows relaying conversation by overriding the [ActivityHandler.OnMessageActivityAsync((ITurnContext<IMessageActivity>, CancellationToken) method](/dotnet/api/microsoft.bot.builder.activityhandler.onmessageactivityasync?view=botbuilder-dotnet-stable&preserve-view=true)
 
     ```C#
     // Invoked when a message activity is received from the user
@@ -204,5 +204,5 @@ After you have your Azure Bot Service relay bot ready, you need to [deploy the b
 
 
 ## Set up Azure Bot Service channels
-You can set up the channels you want to connect to by signing in to the Azure portal and selecting the Azure Bot Service resource group you have deployed to. View the specific instructions for each channel at [Azure Bot Service Channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0).
+You can set up the channels you want to connect to by signing in to the Azure portal and selecting the Azure Bot Service resource group you have deployed to. View the specific instructions for each channel at [Azure Bot Service Channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0&preserve-view=true).
 

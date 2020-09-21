@@ -84,7 +84,7 @@ You can also add the bot to your Power Platform admin center.
     
 1. You can interact with your bot by clicking on **Browse website** at the top right corner.
 
-    ![Add bot IFrame to Power Apps](media/channel-custom-website-portal-browse-website.png)
+    ![Browse website with IFrame added](media/channel-custom-website-portal-browse-website.png)
 
 
 

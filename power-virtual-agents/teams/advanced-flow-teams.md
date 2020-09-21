@@ -96,7 +96,7 @@ For example, you can select **Text** and **Number** to add the following output 
 - **Number_Output** of type `number`
 
 
-:::image type="content" source="media/PVAConnectorTemplate_SAVE-teams.png" alt-text="Input and output parameters are defined in the flow":::
+:::image type="content" source="media/PVAConnectorTemplate_SAVE-teams.png" alt-text="Input and output parameters that were added are now saved":::
 
 This example creates a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs. 
 

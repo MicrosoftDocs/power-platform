@@ -180,7 +180,7 @@ HTTP/1.1 200 OK
 ```
 
 
-For more details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token) topic.
+For more details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token&preserve-view=true) topic.
 
 ## See also
 - [Key Concepts - Publish your bot](publication-fundamentals-publish-channels.md)

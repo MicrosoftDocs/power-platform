@@ -184,7 +184,7 @@ Once you get the customized canvas working with your bot, you can make changes t
 
 You can use the JavaScript `styleOptions` options to configure a number of pre-defined styles. 
 
-The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0).
+The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true).
 
 
 **To change the bot icon**
@@ -262,7 +262,7 @@ Or you can pick from [other sample web chat canvases](https://github.com/microso
 
 ### Customize canvas using `stylesetOptions`
 
-As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0).
+As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true).
 
 ### Deploy your customized canvas
 
@@ -273,4 +273,4 @@ In order to host your custom canvas, deploy all files to a web app.
 ## See also
 
 -  [Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
--  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token)
+-  [Generating a direct line token](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#generate-token&preserve-view=true)

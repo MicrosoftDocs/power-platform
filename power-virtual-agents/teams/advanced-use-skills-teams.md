@@ -24,7 +24,7 @@ Select the version of Power Virtual Agents you're using here:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
-Power Virtual Agents enables you to extend your bot using [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0).
+Power Virtual Agents enables you to extend your bot using [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
 
 You can add a skill from within the Power Virtual Agents app in Microsoft Teams, but you need a [Power Virtual Agents standalone subscription](../requirements-licensing-subscriptions.md). 
 
