@@ -1,6 +1,6 @@
 ---
 title: "Use lesson topics to understand capabilities in Teams"
-description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
+description: "Lesson topics are templates that help you understand how to create conversations in the Power Virtual Agents app in Teams."
 keywords: "PVA"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai
@@ -80,7 +80,7 @@ In this lesson, the bot uses the State entity and will recognize any US state th
 
 ### Lesson 4 - A topic with conditions, variables and a custom entity
 
-This lesson shows a topic with a conditional branch, [a variable](authoring-variables-teams.md), and [a custom entity](advanced-entities-slot-filling-teams.md#custom-entities). 
+This lesson shows a topic with a conditional branch, [a variable](authoring-variables-teams.md), and [a custom entity](advanced-entities-slot-filling-teams.md). 
 
 You can see the bot bypass a follow-up question. For example, try testing with "I want a business laptop."
 

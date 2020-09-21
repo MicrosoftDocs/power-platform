@@ -60,7 +60,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 - Set **Create a database for this environment?** to **Yes**
 - Select **Next**.
    
-   ![Create environment](media/environments-create-2.png)
+   ![Enter the environment details](media/environments-create-2.png)
    
    > [!NOTE]
    > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a bot.

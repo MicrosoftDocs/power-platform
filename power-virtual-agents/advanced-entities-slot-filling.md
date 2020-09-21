@@ -146,7 +146,7 @@ You can also use what is known as "proactive slot filling" where the user can sp
 
 In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear and also provides a second piece of information—the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
 
-![Variable watch window](media/entities-13(draft).png)
+![Multiple and proactive slot filling](media/entities-13(draft).png)
 
 In tracking between topics, you can see the bot takes in this user input, and intelligently skips the question node asking for the product category. 
 

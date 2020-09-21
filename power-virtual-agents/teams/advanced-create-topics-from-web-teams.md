@@ -25,7 +25,7 @@ Select the version of Power Virtual Agents you're using here:
 
 You can import existing help text and automatically create topics for a chatbot, so you don't have to re-create lots of questions and answers.
 
-For example, imagine you already have an FAQ page (like [this one for Microsoft Search](https://docs.microsoft.com/en-us/microsoftsearch/faqs)) and you just want to put these common questions into your bot. Or you might have something similar, but stored in a Word or Excel file.
+For example, imagine you already have an FAQ page (like [this one for Microsoft Search](/microsoftsearch/faqs)) and you just want to put these common questions into your bot. Or you might have something similar, but stored in a Word or Excel file.
 
 Instead of having to manually copy each question and its answer and create new topics in your bot for each question, you can get Power Virtual Agents to do all this for you automatically.
 

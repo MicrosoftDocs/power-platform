@@ -26,7 +26,7 @@ Variables let you save responses from your customers in a conversation with your
 
 For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
-You can use variables to create logical expressions that dynamically route the customer down different conversation paths. You can also feed variables to [Power Automate](advanced-flow.md) and [Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) as input parameters, and save the output results from those actions.  
+You can use variables to create logical expressions that dynamically route the customer down different conversation paths. You can also feed variables to [Power Automate](advanced-flow.md) and [Bot Framework Skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as input parameters, and save the output results from those actions.  
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to under
 
 Each entity or variable type maps to a base type, as listed in the following table. 
 
-The base type defines the operators that can be used for the corresponding variable when constructing a logical expression. It also defines whether a variable can be used to feed to an input parameter in a [flow](advanced-flow.md) or [Bot Framework Skill](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0) as an input parameter. 
+The base type defines the operators that can be used for the corresponding variable when constructing a logical expression. It also defines whether a variable can be used to feed to an input parameter in a [flow](advanced-flow.md) or [Bot Framework Skill](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as an input parameter. 
 
 For example, a **boolean** base type maps to an operator "is equal to" with possible values being true or false, while a **number** base type will give you a series of numeric operators such as "is equal to", "is greater than", or "is greater than or equal to", and so on.
 

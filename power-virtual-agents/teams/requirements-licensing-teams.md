@@ -1,6 +1,6 @@
 ---
 title: "Assign user licenses and manage access in Teams"
-description: "Assign licenses and manage access to Power Virtual Agents for your organization"
+description: "Manage licensing for the Power Virtual Agents app in Teams."
 keywords: "Administration, licensing, PVA"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

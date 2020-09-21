@@ -1,6 +1,6 @@
 ---
 title: "Share chatbots with other users in Teams"
-description: "Share Power Virtual Agents chatbots with other people in your group.
+description: "Share Power Virtual Agents chatbots with other people in your group."
 keywords: "Administration, share, multi-author, PVA, teams"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

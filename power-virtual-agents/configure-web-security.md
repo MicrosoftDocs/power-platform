@@ -32,7 +32,7 @@ With Direct Line-based security, you can enable access only to locations that yo
 You can also swap and regenerate secrets and refresh tokens, and you can easily disable secured access if you no longer want to use it.
 
 >[!NOTE]
-> Power Virtual Agents uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0) to connect your web page or app to the bot. 
+> Power Virtual Agents uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0&preserve-view=true) to connect your web page or app to the bot. 
 
 ## Enable or disable web channel security
 

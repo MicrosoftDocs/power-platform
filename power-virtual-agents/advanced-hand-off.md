@@ -16,9 +16,6 @@ ms.custom: handoff, ceX, advanced-authoring
 # Trigger hand-off to a live agent
 
 
-> [!div class="op_single_selector"]
-> - [Power Virtual Agents web app](advanced-hand-off.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-hand-off-teams.md)
 
 With Power Virtual Agents, you can hand-off conversations to live agents seamlessly and contextually.
 

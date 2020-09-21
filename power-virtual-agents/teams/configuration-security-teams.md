@@ -45,7 +45,7 @@ The **Access** pane gives you control of two aspects for user access.
 This setting controls if users need to sign in before talking to your bot. Bots that manage private or sensitive information should use this option. 
 
 >[!NOTE]
->By default, the [**Authentication** setting](#authentication) is set to **Only for Teams**, which requires team users to be signed in to use the bot. Therefore, you won't be able to configure this setting unless you change the **Authentication** setting.
+>By default, the [**Authentication** setting](#configure-the-authentication-setting) is set to **Only for Teams**, which requires team users to be signed in to use the bot. Therefore, you won't be able to configure this setting unless you change the **Authentication** setting.
 >Read more about different access options in [Assign access and change security options in the Power Virtual Agents web app](../configuration-security.md#access-settings-based-on-authentication-configuration)
 
 If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 

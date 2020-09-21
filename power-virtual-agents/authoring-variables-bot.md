@@ -60,7 +60,7 @@ When you use a condition node, a flow action node, or a skill node, you'll also 
 
 ## Manage bot variables
 
-After you've created a bot variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-create-edit-topics.md#branch-based-on-a-condition).
+After you've created a bot variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-create-edit-topics.md#add-a-condition).
 
 **Go to the source of a bot variable's definition**
 

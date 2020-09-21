@@ -1,6 +1,6 @@
 ---
 title: "Add a chatbot to Microsoft Teams in Teams"
-description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
+description: "Publish and share your bot with teammates in your teams and across your organization."
 keywords: "Publish, channel, Microsoft Teams, Teams"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai
@@ -8,7 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication, authoring, ceX"
+ms.custom: "publication, authoring, ceX, teams"
 ms.collection: virtual-agent
 ---
 

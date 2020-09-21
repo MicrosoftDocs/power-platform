@@ -1,6 +1,6 @@
 ---
 title: "Use chatbot variables to carry content across topics in Teams"
-description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
+description: "Bot variables can be used in the Power Virtual Agents app in Teams to store and retrieve information across multiple topics within the same bot."
 keywords: "PVA"
 ms.date: 9/22/2020
 ms.service: dynamics-365-ai

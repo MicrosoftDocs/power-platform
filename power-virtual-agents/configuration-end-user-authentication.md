@@ -138,7 +138,7 @@ This section shows an example of Azure AD being configured as an OAuth provider.
 3. Click **Save** to finish the configuration.
 
 > [!NOTE]
-> The examples provided below are for an Azure AD common endpoint. For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2) documentation.  
+> The examples provided below are for an Azure AD common endpoint. For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true) documentation.  
 >Only use Azure AD V2 token endpoints, as specified in the table.
 
 Field name | Description | Where to get this information for Azure AD

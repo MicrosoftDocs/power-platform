@@ -8,7 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.custom: "publication, authoring, ceX"
+ms.custom: "publication, authoring, ceX, teams"
 ms.collection: virtual-agent
 ---
 
@@ -223,6 +223,6 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 ## Known limitations
 - Currently only **Personal** scope is supported for Microsoft Teams so users can only have private conversation with the bot
 - By setting bot avatar icon via **Manage -> Detail** will not show up for bots that are approved by admin. Bots approved by admin will use the app icon as the bot avatar.
-- Teams has [rate limiting](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
-- Currently, if your bot supports [end-user authentication](https://docs.microsoft.com/power-virtual-agents/advanced-end-user-authentication), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](https://docs.microsoft.com/en-us/office/dev/store/validation-policies).
-- Disconnecting your bor from Teams might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
+- Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
+- Currently, if your bot supports [end-user authentication](advanced-end-user-authentication.md), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](/office/dev/store/validation-policies).
+- Disconnecting your bot from Teams might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.

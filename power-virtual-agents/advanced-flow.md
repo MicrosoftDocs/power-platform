@@ -208,7 +208,7 @@ You can rename and modify your flow on the Power Automate portal. For example, t
     - Zipcode (Number)
 
 
-    ![Open your flow for editing](media/RenameFlow.jpg)
+    ![Add inputs to the flow](media/RenameFlow.jpg)
 
    
 
@@ -284,7 +284,7 @@ These instructions use adding weather information to a flow as an example. If yo
     Chance of rain is `{x}chance_of_rain`%**
 
 
-    ![Call action](media/ActionNodeGetWeatherForecast.png)
+    ![Input the variables](media/ActionNodeGetWeatherForecast.png)
 
 
 1. Select **Save** to save your topic. 
