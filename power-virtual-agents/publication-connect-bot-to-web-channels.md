@@ -70,7 +70,7 @@ You can also add the bot to your Power Platform admin center.
 
 1. In the Power Virtual Agents Portal, select **Manage** on the side navigation pane, and then go to the **Channels** tab.
 
-1. Select **Custom website** and then copy only the URL of the IFframe snippet: this is the URL defined by `src="<URL>"`.
+1. Select **Custom website** and then copy only the URL of the IFrame snippet: this is the URL defined by `src="<URL>"`.
 
     ![Select only the src URL](media/channel-custom-website-url.png)
 
