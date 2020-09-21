@@ -101,7 +101,7 @@ You should add your bot to your own version of Teams before sharing it with othe
         :::image type="content" source="media/publish-share-to-store.png" alt-text="You can make changes to the icon, background color, and descriptions":::
 
         >[!IMPORTANT]
-        >Updates to the bot's icon and color will not apply to users who have already installed the bot via shared link or [built by your colleague section](#add-the-bot-to-the-built-by-your-colleagues-section).  They will need to reinstall to the bot to receive the updates.
+        >Updates to the bot's icon and color will not apply to users who have already installed the bot via shared link or [built by your colleague section](#add-the-bot-to-the-built-by-your-colleagues-section). They will need to reinstall to the bot to receive the updates.
 
     2. Select **More** to add additional information:  
         - Developer name
@@ -265,7 +265,7 @@ You can take your bot offline so users can no longer chat with the bot in Teams.
 For bots that are shared with a teammate, they will no longer find the bot in the Microsoft Teams app store **Built by your colleague** section or be able to install it from the shared link. Bots that are added by users in Microsoft Teams will continue to exist until the user [uninstalls the bot](#uninstall-the-bot-from-the-side-navigation-bar).
 
 
-For bots that are shared with the organization, the bots will continue to be shown in the Microsoft Teams app store **Built by your org** section.  You will need to contact your admin to remove the bot
+For bots that are shared with the organization, the bots will continue to be shown in the Microsoft Teams app store **Built by your org** section. You will need to contact your admin to remove the bot
 
 
 1. Go to the **Chatbot** tab.
@@ -287,7 +287,7 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 ## Known limitations
 - Currently only the **Personal** scope is supported for Microsoft Teams, so users can only have a private conversation with the bot.
 - Setting the bot avatar icon with **Manage** > **Detail** will not show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
-- Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots.  Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
+- Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Disconnecting your bot might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
 
 

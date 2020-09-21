@@ -100,7 +100,7 @@ You can add the bot to your own version of Microsoft Teams directly from the Pow
         :::image type="content" source="media/publish-share-to-store.png" alt-text="You can change the details, copy link, or open the bot and see the changes to your icon and details.":::
 
         >[!IMPORTANT]
-        >Updates to the bot's detail will not apply to users who have already installed the bot via shared link.  They will need to reinstall to the bot to receive the updates.
+        >Updates to the bot's detail will not apply to users who have already installed the bot via shared link. They will need to reinstall to the bot to receive the updates.
 
     2. Select **More** to add additional information:  
         - Developer name
@@ -174,7 +174,7 @@ Before submitting the bot to your organization, make sure:
     >After submitting the bot for admin approval, you should not change the bot's access setting to be less than everyone in your organization.  
     >This will result in users in the organization unable to chat with the bot after installing it from the Microsoft Teams app store **Built by your org** section.
 
-1. You will need to wait for your admin's approval.  You can check the latest status by selecting **Refresh**, or opening the **Share the bot** window from the **Publish** page.
+1. You will need to wait for your admin's approval. You can check the latest status by selecting **Refresh**, or opening the **Share the bot** window from the **Publish** page.
 
 1. After your admin approves the bot, the status will be updated to **Approved**. You can directly open the bot and share the approved version's link with other users.
 
@@ -206,7 +206,7 @@ You can download the bot's Teams app manifest to make detail changes to the mani
 
 You can take your bot offline so users can no longer chat with the bot in Teams. This means the bot won't respond to anyone who tries to chat with it, and will disrupt anyone who is using the bot. You should thoroughly consider the need to disconnect your bot before you do so.
 
-For bots that are shared with the organization, the bots will continue to be shown in the Microsoft Teams app store **Built by your org** section.  You will need to contact your admin to remove the bot.
+For bots that are shared with the organization, the bots will continue to be shown in the Microsoft Teams app store **Built by your org** section. You will need to contact your admin to remove the bot.
 
 
 1.  Go to **Manage**, then **Channels** on the side navigation pane.
@@ -220,9 +220,9 @@ For bots that are shared with the organization, the bots will continue to be sho
 You can always reconnect your bot after disconnecting by selecting **Turn on Teams** in the **Share the bot** window on the **Publish** page.
 
 
-## Known limitation
+## Known limitations
 - Currently only **Personal** scope is supported for Microsoft Teams so users can only have private conversation with the bot
-- By setting bot avatar icon via **Manage -> Detail** will not show up for bots that are approved by admin.  Bots approved by admin will use the app icon as the bot avatar.
-- Teams has [rate limiting](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/rate-limit) on bots.  Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
+- By setting bot avatar icon via **Manage -> Detail** will not show up for bots that are approved by admin. Bots approved by admin will use the app icon as the bot avatar.
+- Teams has [rate limiting](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Currently, if your bot supports [end-user authentication](https://docs.microsoft.com/power-virtual-agents/advanced-end-user-authentication), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](https://docs.microsoft.com/en-us/office/dev/store/validation-policies).
 - Disconnecting your bor from Teams might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.

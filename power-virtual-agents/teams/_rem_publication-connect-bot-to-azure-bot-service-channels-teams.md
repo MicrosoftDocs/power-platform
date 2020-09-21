@@ -57,7 +57,7 @@ You need an Azure Bot Service bot that can relay conversations between your Powe
 
 The [relay bot sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/RelayBotSample) is a good starting point if you do not have an existing Azure Bot Service bot. It is built from Microsoft Bot Framework bot [sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore) that can be compiled and deployed to the Azure Bot Service. The sample code is meant to be used as a starting point and not intended to be used in production directly. You will need to add code and optimization to match your business needs.  
 
-If you already have an Azure Bot Service bot, you need to add a Power Virtual Agents connector and code to manage conversation sessions.  You can then deploy the bot to the Azure Bot Service and connect to channels with the Azure portal.
+If you already have an Azure Bot Service bot, you need to add a Power Virtual Agents connector and code to manage conversation sessions. You can then deploy the bot to the Azure Bot Service and connect to channels with the Azure portal.
 
 ## Get your Power Virtual Agents bot parameters
 To connect to the bot you have built with Power Virtual Agents, you will need to retrieve your bot's name, bot ID and tenant ID to identify it.
@@ -129,7 +129,7 @@ The following example uses samples from the [relay bot sample code](https://gith
     
     ```
 
-    To manage the conversation lifecycle, you could refresh the Direct Line tokens or clean up idled conversations. You can learn more about token refresh at [Refresh Direct Line token](publication-connect-bot-to-custom-application-teams.md#refresh-direct-line-token).  A Power Virtual Agents conversation to support those is defined as following:
+    To manage the conversation lifecycle, you could refresh the Direct Line tokens or clean up idled conversations. You can learn more about token refresh at [Refresh Direct Line token](publication-connect-bot-to-custom-application-teams.md#refresh-direct-line-token). A Power Virtual Agents conversation to support those is defined as following:
   
     ```C#
     /// <summary>

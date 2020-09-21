@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 
 You can add your bot to Facebook Messenger to use the Facebook experience to engage with your end users.
 
-Facebook Messenger and related services are subject to Facebook's own terms and conditions.  For support related to Facebook Messenger, contact Facebook directly.
+Facebook Messenger and related services are subject to Facebook's own terms and conditions. For support related to Facebook Messenger, contact Facebook directly.
 
 > [!IMPORTANT]
 > This article is intended for experienced IT professionals who manage your organization's Facebook page.
@@ -91,7 +91,7 @@ You will then need to submit your app for Facebook review before you can publish
 
    ![Messenger permission for page](media/channel-fb-page-messenger-capability.png)
 
-5. Copy the *Page ID* and *Token* for each of the pages that you want to add the bot to.  You'll need to select **Generate Token** for each page. You'll need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
+5. Copy the *Page ID* and *Token* for each of the pages that you want to add the bot to. You'll need to select **Generate Token** for each page. You'll need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
 
    ![Get page ID and token](media/channel-fb-get-page-id-token.png)
 
@@ -146,7 +146,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 ### Submit for Facebook review
 
-You need to submit your app for Facebook review before you can make your Facebook app public.  Facebook requires a Privacy Policy URL and Terms of Service URL.  You need to provide those on the Facebook basic app settings page (after signing in to your app at [Facebook for Developers](https://developers.facebook.com/), select **Basic** under **Settings** on the side menu panel).
+You need to submit your app for Facebook review before you can make your Facebook app public. Facebook requires a Privacy Policy URL and Terms of Service URL. You need to provide those on the Facebook basic app settings page (after signing in to your app at [Facebook for Developers](https://developers.facebook.com/), select **Basic** under **Settings** on the side menu panel).
 
 The [Code of Conduct](https://investor.fb.com/corporate-governance/code-of-conduct/default.aspx) page contains third-party resources to help create a privacy policy. The [Terms of Service](https://www.facebook.com/terms.php) page contains sample terms to help create an appropriate Terms of Service document.
 

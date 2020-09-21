@@ -56,7 +56,7 @@ After reviewing topic details and identifying a candidate for automation, you ca
 3. Review the topic name and trigger phrases, and follow the other steps in the [Create custom topics for your bot](authoring-create-edit-topics.md) article to complete the creation of your bot topic. 
 
 ## Automate topics from the Topics page
-You can also automate topics from  the Topics page by hovering over the topic you want to automate in the topic list, then selecting the **Automate** icon. 
+You can also automate topics from the Topics page by hovering over the topic you want to automate in the topic list, then selecting the **Automate** icon. 
 
 ![Automate topics from Topics page](media/automate-topic-list.png)
 
