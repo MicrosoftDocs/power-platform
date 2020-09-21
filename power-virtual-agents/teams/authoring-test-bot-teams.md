@@ -31,7 +31,8 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
 
-   ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu-teams.png)
+
+   :::image type="content" source="media/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side navigation pane":::
 
 1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 
@@ -57,12 +58,12 @@ As you fine-tune your bot, it can be useful to enable tracking between topics so
 
 1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
 
-   ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu-teams.png)
+   :::image type="content" source="media/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side navigation pane":::
 
 
 1. At the top of the **Test bot** pane, set **Track between topics** to **On**.
 
-   ![Switch the track bettern topics toggle at the top of th test bot pan](media/test-bot-track-teams.png)
+   ![Switch the track between topics toggle at the top of the test bot pan](media/test-bot-track-teams.png)
 
 1. Enter a trigger phrase for the topic you want to check, and then continue testing the conversation.
 

@@ -21,7 +21,9 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-use-skills.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-use-skills-teams.md)
 
-Power Virtual Agents lets you extend your bot using Microsoft Bot Framework Skills. If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a Skill and embed the Skill within a Power Virtual Agents bot in Teams.
+Power Virtual Agents lets you extend your bot using Microsoft Bot Framework skills. 
+
+If you have already built and deployed bots in your organization (using Bot Framework pro-code tools) for specific scenarios, you can convert bots to a skill and embed the skill within a Power Virtual Agents bot in Teams.
 
 Read more about using [Bot Framework Skills in the Power Virtual Agents app documentation](../advanced-use-skills.md).
 
