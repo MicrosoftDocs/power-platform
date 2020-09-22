@@ -24,7 +24,7 @@ highlightedContent:
     # Card
     - title: What is Power Virtual Agents?
       itemType: overview
-      url: powerapps-overview.md
+      url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
 
     # Card
     - title: What's new in Power Virtual Agents?
