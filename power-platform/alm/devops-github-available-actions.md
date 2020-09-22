@@ -96,3 +96,7 @@ Packs a solution represented in source control into a solution.zip file that can
 To learn about creating multiple-action workflows and pipelines through hands-on authoring using GitHub Actions for the Microsoft Power Platform, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
 
 For more information about GitHub Actions, see [About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions).
+
+### See Also
+
+[GitHub Actions for the Microsoft Power Platform](devops-github-actions.md)
