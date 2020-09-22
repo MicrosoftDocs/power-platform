@@ -31,7 +31,7 @@ Power Virtual Agents supports the following authentication providers:
 * Any identity provider that is compliant with the [OAuth2 standard](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 >[!IMPORTANT]
->Changes to the Authentication configuration will only take effect after you publish your bot. Make sure to plan ahead before making Access changes to your bot.
+>Changes to the authentication configuration will only take effect after you publish your bot. Make sure to plan ahead before making authentication changes to your bot.
 
 > 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G2]
