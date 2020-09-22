@@ -2,7 +2,7 @@
 title: "Configure web channel security"
 description: "Use Direct Line tokens or secrets to secure access to your bots."
 keywords: "direct line, token, secret, access, secure, security, channels, PVA"
-ms.date: 7/16/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -32,7 +32,7 @@ With Direct Line-based security, you can enable access only to locations that yo
 You can also swap and regenerate secrets and refresh tokens, and you can easily disable secured access if you no longer want to use it.
 
 >[!NOTE]
-> Power Virtual Agents uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0) to connect your web page or app to the bot. 
+> Power Virtual Agents uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0&preserve-view=true) to connect your web page or app to the bot. 
 
 ## Enable or disable web channel security
 
@@ -180,7 +180,7 @@ HTTP/1.1 200 OK
 ```
 
 
-For more details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token) topic.
+For more details on refreshing a token, see the section **Refresh a Direct Line token** in the [Direct Line API - Authentication]( /azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#refresh-token&preserve-view=true) topic.
 
 ## See also
 - [Key Concepts - Publish your bot](publication-fundamentals-publish-channels.md)

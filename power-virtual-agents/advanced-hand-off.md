@@ -2,7 +2,7 @@
 title: "Use hand-off to live agent"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw 
@@ -16,9 +16,6 @@ ms.custom: handoff, ceX, advanced-authoring
 # Trigger hand-off to a live agent
 
 
-> [!div class="op_single_selector"]
-> - [Power Virtual Agents web app](advanced-hand-off.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-hand-off-teams.md)
 
 With Power Virtual Agents, you can hand-off conversations to live agents seamlessly and contextually.
 

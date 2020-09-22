@@ -2,7 +2,7 @@
 title: "Fix errors, set status, and copy topics"
 description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -35,18 +35,18 @@ When you save a topic, you'll be notified if there are errors or warnings. Warni
 
 Errors will prevent the bot from working and must be fixed before you can publish your bot.
 
-:::image type="content" source="media/topics-errors-save.png" alt-text=" ":::
+:::image type="content" source="media/topics-errors-save.png" alt-text="The message indicates you have errors you should fix.":::
 
 You can see the error state of a topic on the Topics page. 
 
 >[!NOTE]
 >The Topics page only shows errors as they will stop your bot from working, unlike warnings.
 
-:::image type="content" source="media/topics-errors.png" alt-text=" ":::
+:::image type="content" source="media/topics-errors.png" alt-text="The topics page identifies the number of errors in your topic.":::
 
 Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting each error goes directly to the error.  
 
-:::image type="content" source="media/topics-checker.png" alt-text=" ":::
+:::image type="content" source="media/topics-checker.png" alt-text="The topic checker is on the top navigation bar and shows all errors and warnings.":::
 
 >[!NOTE]
 > You can save topics with errors. Topics with errors can't be published.
@@ -79,7 +79,7 @@ When a bot is published, all topics (**On** or **Off**) will be published, but t
 
 You can change this with the toggle in the **Status** column on the Topics page. 
 
-:::image type="content" source="media/topics-status.png" alt-text=" ":::
+:::image type="content" source="media/topics-status.png" alt-text="The Status column shows each topic with an On or Off toggle switch.":::
 
 By default new topics will be created with their status set to **On**. 
 

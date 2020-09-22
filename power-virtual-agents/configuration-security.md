@@ -1,7 +1,7 @@
 ---
 title: "Configure access and authentication"
 description: "Determine who can access your bot in the Power Virtual Agents web app."
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 
 You can change who can access your bot, and what they can do, with the **Security** options available in Power Virtual Agents.
 
->[!WARNING]
+>[!IMPORTANT]
 >Changes to the Access configuration will only take effect after you publish your bot. Make sure to plan ahead before making Access changes to your bot.
 
 ## Configure the Access setting

@@ -142,14 +142,8 @@
       items:
        - name: Assign licenses
          href: teams/requirements-licensing-teams.md
-#       - name: Sign up for a trial account
-#         href: teams/sign-up-individual-teams.md
-#       - name: Working with environments
-#         href: teams/environments-first-run-experience-teams.md
        - name: Share bots with users in your organization
          href: teams/admin-share-bots-teams.md
-#       - name: Export and import bots with solutions
-#         href: teams/authoring-export-import-bots-teams.md
        - name: Regional settings and data locations for organizations
          href: teams/data-location-teams.md
     - name: Author and edit
@@ -182,34 +176,20 @@
          href: teams/authoring-variables-bot-teams.md
        - name: Create topics from existing support content
          href: teams/advanced-create-topics-from-web-teams.md
-#       - name: Create topics from Customer Service Insights
-#         href: teams/advanced-create-topics-from-csi-teams.md
        - name: Add end-user authentication
          href: teams/advanced-end-user-authentication-teams.md
        - name: Add actions using Power Automate
          href: teams/advanced-flow-teams.md
        - name: Use Bot Framework Skills
          href: teams/advanced-use-skills-teams.md
-#       - name: Trigger hand-off to a live agent
-#         href: teams/advanced-hand-off-teams.md
     - name: Publish and integrate
       items:
        - name: Key concepts - Publish your bot
          href: teams/publication-fundamentals-publish-channels-teams.md
-#       - name: Configure the demo website and add the bot to your live website
-#         href: teams/publication-connect-bot-to-web-channels-teams.md
        - name: Add bot to Microsoft Teams
          href: teams/publication-add-bot-to-microsoft-teams-teams.md
        - name: Create a privacy statement and terms of use
          href: teams/publication-terms-of-use-teams.md
-#       - name: Add bot to Facebook
-#         href: teams/publication-add-bot-to-facebook-teams.md
-#       - name: Add bot to mobile or custom apps
-#         href: teams/publication-connect-bot-to-custom-application-teams.md
-#       - name: Add bot to Azure Bot Service channels
-#         href: teams/publication-connect-bot-to-azure-bot-service-channels-teams.md
-#       - name: Use a Bot Framework bot with Power Virtual Agents
-#         href: teams/advanced-use-dispatcher-teams.md
     - name: Monitor and diagnose
       items:
        - name: Key concepts - Analytics
@@ -218,8 +198,6 @@
          href: teams/analytics-summary-teams.md
        - name: Analyze customer satisfaction
          href: teams/analytics-csat-teams.md
-       - name: Analyze session information
-         href: teams/analytics-sessions-teams.md
        - name: Analyze topic usage
          href: teams/analytics-topic-details-teams.md
        - name: Analyze billed session information
@@ -234,12 +212,6 @@
          href: teams/configure-web-security-teams.md
        - name: Configure end-user authentication
          href: teams/configuration-end-user-authentication-teams.md
-#       - name: Configure single sign-on
-#         href: teams/configure-sso-teams.md
-#       - name: Configure hand-off to a generic engagement hub
-#         href: teams/configure-generic-handoff-teams.md
-#       - name: Configure hand-off to Omnichannel for Customer Service
-#         href: teams/configuration-hand-off-omnichannel-teams.md
        - name: Configure how the bot starts the conversation
          href: teams/configure-bot-greeting-teams.md
        - name: Customize the look and feel of the bot

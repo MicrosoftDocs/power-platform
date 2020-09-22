@@ -2,7 +2,7 @@
 title: "Configure user authentication"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -29,6 +29,9 @@ Power Virtual Agents supports the following authentication providers:
 * Azure Active Directory v1
 * Azure Active Directory v2
 * Any identity provider that is compliant with the [OAuth2 standard](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+
+>[!IMPORTANT]
+>Changes to the authentication configuration will only take effect after you publish your bot. Make sure to plan ahead before making authentication changes to your bot.
 
 > 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G2]
@@ -138,7 +141,7 @@ This section shows an example of Azure AD being configured as an OAuth provider.
 3. Click **Save** to finish the configuration.
 
 > [!NOTE]
-> The examples provided below are for an Azure AD common endpoint. For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2) documentation.  
+> The examples provided below are for an Azure AD common endpoint. For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true) documentation.  
 >Only use Azure AD V2 token endpoints, as specified in the table.
 
 Field name | Description | Where to get this information for Azure AD

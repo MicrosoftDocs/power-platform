@@ -1,8 +1,8 @@
 ---
-title: "Automate chatbot actions with flows in Teams"
-description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
+title: "Automate chatbot actions with flows in Microsoft Teams"
+description: "Use Power Automate flows in chatbots you build in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, flow, automate"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -24,6 +24,8 @@ Select the version of Power Virtual Agents you're using here:
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../advanced-flow.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-flow-teams.md)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows to send messages to a Teams channel, or access files in a SharePoint folder.
 
@@ -94,7 +96,7 @@ For example, you can select **Text** and **Number** to add the following output 
 - **Number_Output** of type `number`
 
 
-:::image type="content" source="media/PVAConnectorTemplate_SAVE-teams.png" alt-text="Input and output parameters are defined in the flow":::
+:::image type="content" source="media/PVAConnectorTemplate_SAVE-teams.png" alt-text="Input and output parameters that were added are now saved":::
 
 This example creates a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs. 
 

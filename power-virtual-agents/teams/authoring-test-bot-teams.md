@@ -1,8 +1,8 @@
 ---
-title: "Check your chatbot with the Test bot in Teams"
-description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
+title: "Check your chatbot with the Test bot in Microsoft Teams"
+description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -18,7 +18,9 @@ ms.collection: virtual-agent
 > - [Power Virtual Agents web app](../authoring-test-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-test-bot-teams.md)
 
-As you design your bot in Power Virtual Agents for Customer Service, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation. 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+
+As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads  a user through the bot conversation. 
 
 To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.
 
@@ -29,9 +31,10 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 ## Test a topic in the Test bot pane
 
-1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
+1. If the **Test bot** pane is hidden, open it by selecting the test bot icon at the bottom of the side navigation pane.
 
-   ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu-teams.png)
+
+   :::image type="content" source="media/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side navigation pane":::
 
 1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 
@@ -45,7 +48,8 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 1. Select a response in the **Test bot** pane, which will take you to the response in the conversation editor for that topic. The authoring canvas displays highlighted nodes in green.
 
-  ![Select any response in the conversation to see the authoring canvas highlighted to that response](media/test-bot-response-teams.png)
+
+    :::image type="content" source="media/test-bot-response-teams.png" alt-text="Select any response in the conversation to see the authoring canvas highlighted to that response":::
 
 You can return to the authoring canvas for the topic  at any time to revise it's conversation path. The **Test chat** pane will automatically refresh itself when you save changes to a topic.
 
@@ -55,14 +59,14 @@ You can return to the authoring canvas for the topic  at any time to revise it's
 
 As you fine-tune your bot, it can be useful to enable tracking between topics so you can follow through the conversation path step by step.
 
-1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.
+1. If the **Test bot** pane is hidden, open it by selecting the test bot icon at the bottom of the side navigation pane.
 
-   ![The Test your bot button is at the bottom of the side navigation pane](media/test-bot-menu-teams.png)
+   :::image type="content" source="media/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side navigation pane":::
 
 
 1. At the top of the **Test bot** pane, set **Track between topics** to **On**.
 
-   ![Switch the track bettern topics toggle at the top of th test bot pan](media/test-bot-track-teams.png)
+   ![Switch the track between topics toggle at the top of the test bot pan](media/test-bot-track-teams.png)
 
 1. Enter a trigger phrase for the topic you want to check, and then continue testing the conversation.
 

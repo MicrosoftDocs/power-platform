@@ -1,8 +1,8 @@
 ---
-title: "Use a system fallback topic in Teams"
-description: "A system fallback topic can be triggered when the bot doesn't understand the user's questions."
+title: "Use a system fallback topic in Microsoft Teams"
+description: "A system fallback topic can be triggered when the bot doesn't understand the user's questions in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 
 # Configure the system fallback topic in Power Virtual Agents in Teams
+
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../authoring-system-fallback-topic.md)

@@ -2,7 +2,7 @@
 title: "Export and import bots using solutions (preview)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: "export, import, transfer, environment, PVA"
-ms.date: 7/31/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -24,6 +24,9 @@ This can be useful if you use different environments for different purposes, or 
 > 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4CsHl]
 > 
+
+>[!NOTE]
+>You can only import and export bots with the Power Virtual Agents web app. The feature is not available in the Power Virtual Agents app in Microsoft Teams.
 
 ## Prerequisites
 

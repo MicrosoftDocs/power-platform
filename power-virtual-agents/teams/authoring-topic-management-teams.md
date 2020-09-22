@@ -1,8 +1,8 @@
 ---
-title: "Fix errors, set status, and copy topics in Teams"
-description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time."
+title: "Fix errors, set status, and copy topics in Microsoft Teams"
+description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time, all in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -19,6 +19,8 @@ Select the version of Power Virtual Agents you're using here:
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../authoring-topic-management.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-topic-management-teams.md)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 There are a number of ways you can manage your topics. Power Virtual Agents includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
 
@@ -37,18 +39,18 @@ When you save a topic, you'll be notified if there are errors or warnings. Warni
 
 Errors will prevent the bot from working and must be fixed before you can publish your bot.
 
-:::image type="content" source="media/topics-errors-save-teams.png" alt-text=" ":::
+:::image type="content" source="media/topics-errors-save-teams.png" alt-text="The message indicates you have errors you should fix.":::
 
 You can see the error state of a topic on the Topics page. 
 
 >[!NOTE]
 >The Topics page only shows errors as they will stop your bot from working, unlike warnings.
 
-:::image type="content" source="media/topics-errors-teams.png" alt-text=" ":::
+:::image type="content" source="media/topics-errors-teams.png" alt-text="The topics page identifies the number of errors in your topic.":::
 
-Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting each error goes directly to the error.  
+Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting an error in the topic checker takes you directly to the source of the error in the topic.  
 
-:::image type="content" source="media/topics-checker-teams.png" alt-text=" ":::
+:::image type="content" source="media/topics-checker-teams.png" alt-text="The topic checker is on the top navigation bar and shows all errors and warnings.":::
 
 >[!NOTE]
 > You can save topics with errors. Topics with errors can't be published.
@@ -81,7 +83,7 @@ When a bot is published, all topics (**On** or **Off**) will be published, but t
 
 You can change this with the toggle in the **Status** column on the Topics page. 
 
-:::image type="content" source="media/topics-status-teams.png" alt-text=" ":::
+:::image type="content" source="media/topics-status-teams.png" alt-text="The Status column shows each topic with an On or Off toggle switch.":::
 
 By default new topics will be created with their status set to **On**. 
 

@@ -2,7 +2,7 @@
 title: "Report analytics, performance, and usage"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
@@ -13,6 +13,12 @@ ms.collection: virtual-agent
 ---
 
 # Analyze bot performance and usage in Power Virtual Agents
+
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](analytics-summary.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-summary-teams.md)
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mQpm]

@@ -2,7 +2,7 @@
 title: "Configure a chatbot for a live or demo website"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -70,7 +70,7 @@ You can also add the bot to your Power Platform admin center.
 
 1. In the Power Virtual Agents Portal, select **Manage** on the side navigation pane, and then go to the **Channels** tab.
 
-1. Select **Custom website** and then copy only the URL of the IFframe snippet: this is the URL defined by `src="<URL>"`.
+1. Select **Custom website** and then copy only the URL of the IFrame snippet: this is the URL defined by `src="<URL>"`.
 
     ![Select only the src URL](media/channel-custom-website-url.png)
 
@@ -84,7 +84,7 @@ You can also add the bot to your Power Platform admin center.
     
 1. You can interact with your bot by clicking on **Browse website** at the top right corner.
 
-    ![Add bot IFrame to Power Apps](media/channel-custom-website-portal-browse-website.png)
+    ![Browse website with IFrame added](media/channel-custom-website-portal-browse-website.png)
 
 
 

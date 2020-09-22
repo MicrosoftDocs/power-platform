@@ -1,8 +1,8 @@
 ---
-title: "Analyze topic performance in Teams"
-description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
+title: "Analyze topic performance in Microsoft Teams"
+description: "See how topics are performing, and determine what you can do to improve customer satisfaction in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
@@ -13,6 +13,8 @@ ms.collection: virtual-agent
 ---
 
 # Analyze topic usage in Power Virtual Agents in Teams
+
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../analytics-topic-details.md)

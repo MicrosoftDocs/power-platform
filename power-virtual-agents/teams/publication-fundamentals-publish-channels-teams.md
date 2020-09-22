@@ -1,8 +1,8 @@
 ---
-title: "Fundamentals - Publish a chatbot to various channels in Teams"
-description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
+title: "Fundamentals - Publish a chatbot to various channels in Microsoft Teams"
+description: "Publish your bot to Microsoft Teams."
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -19,6 +19,8 @@ Select the version of Power Virtual Agents you're using here:
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../publication-fundamentals-publish-channels.md)
 > - [Power Virtual Agents app in Microsoft Teams](publication-fundamentals-publish-channels-teams.md)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 Once you're satisfied with your bot's content and quality, you can publish your bot to allow users to engage with your bot. You must publish your bot at least once for the user to chat with the bot in Microsoft Teams.
 
@@ -52,7 +54,8 @@ You can also share the bot with your teammates by selecting **Share the bot** an
 :::image type="content" source="media/publish-teams-copy-link.png" alt-text="The Copy link option creates a shareable link to the bot":::
 
 > [!TIP]
->You may want to try out the latest published content in Microsoft Teams.  
+>To prevent disrupting users who are having an existing conversation with the bot, they will not receive the latest published content until a new conversation has started. A new conversation starts after it has been idle for more than 30 minutes.  
+>You may want to try out the latest published content in Microsoft Teams right away.  
 >You can do so by typing *start over* in an existing conversation.  
 >This will restart the conversation with the latest content you have published.
 

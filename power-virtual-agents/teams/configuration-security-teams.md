@@ -1,7 +1,7 @@
 ---
-title: "Configure access and authentication in Teams"
+title: "Configure access and authentication in Microsoft Teams"
 description: "Determine who can access and interact with your bot in the Power Virtual Agents app in Microsoft Teams."
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
@@ -19,11 +19,11 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../configuration-security.md)
 > - [Power Virtual Agents app in Microsoft Teams](configuration-security-teams.md)
 
->[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
 You can change who can access your bot, and what they can do, with the **Security** options available in Power Virtual Agents.
 
->[!WARNING]
+>[!IMPORTANT]
 >Changes to the Access configuration will only take effect after you publish your bot. Make sure to plan ahead before making Access changes to your bot.
 
 ## Configure the Access setting
@@ -45,7 +45,7 @@ The **Access** pane gives you control of two aspects for user access.
 This setting controls if users need to sign in before talking to your bot. Bots that manage private or sensitive information should use this option. 
 
 >[!NOTE]
->By default, the [**Authentication** setting](#authentication) is set to **Only for Teams**, which requires team users to be signed in to use the bot. Therefore, you won't be able to configure this setting unless you change the **Authentication** setting.
+>By default, the [**Authentication** setting](#configure-the-authentication-setting) is set to **Only for Teams**, which requires team users to be signed in to use the bot. Therefore, you won't be able to configure this setting unless you change the **Authentication** setting.
 >Read more about different access options in [Assign access and change security options in the Power Virtual Agents web app](../configuration-security.md#access-settings-based-on-authentication-configuration)
 
 If you want your bot to be publicly accessible (such as on a web channel), you can turn this option off. 

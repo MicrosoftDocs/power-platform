@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -103,7 +103,7 @@ When adding a node after the **Trigger Phrases** node, or between **Message node
 - **Call an action**
 - **Show a message**
 
-:::image type="content" source="media/topics-node-after-triggers.png" alt-text=" ":::
+:::image type="content" source="media/topics-node-after-triggers.png" alt-text="Add nodes between existing nodes from the options":::
 
 After the last node, you can also:
 

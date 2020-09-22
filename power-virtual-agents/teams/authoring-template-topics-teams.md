@@ -1,8 +1,8 @@
 ---
-title: "Use lesson topics to understand capabilities in Teams"
-description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
+title: "Use lesson topics to understand capabilities in Microsoft Teams"
+description: "Lesson topics are templates that help you understand how to create conversations in the Power Virtual Agents app in Teams."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -16,12 +16,15 @@ ms.collection: virtual-agent
 
 # Use lesson topics in Power Virtual Agents in Teams
 
+Select the version of Power Virtual Agents you're using here:
+
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../authoring-template-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-template-topics-teams.md)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
-Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that use of [conditional branching](authoring-create-edit-topics-teams.md) and [custom entities](advanced-entities-slot-filling-teams.md).
+Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics-teams.md) and [custom entities](advanced-entities-slot-filling-teams.md).
 
 ## Prerequisites
 
@@ -39,7 +42,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. Go to the **Topics** tab.
 
-1. Select **Lesson 1** and work through to **Lesson 4**.  Review the title and description, and see what trigger phrases are being used.  
+1. Select **Lesson 1** and work through to **Lesson 4**. Review the title and description, and see what trigger phrases are being used.  
 
 1. Select **Go to authoring canvas** on each topic's details page to see the bot's flow; including the bot's comments, expected user responses, decision points, and entity references.
 
@@ -77,7 +80,7 @@ In this lesson, the bot uses the State entity and will recognize any US state th
 
 ### Lesson 4 - A topic with conditions, variables and a custom entity
 
-This lesson shows a topic with a conditional branch, [a variable](authoring-variables-teams.md), and [a custom entity](advanced-entities-slot-filling-teams.md#custom-entities). 
+This lesson shows a topic with a conditional branch, [a variable](authoring-variables-teams.md), and [a custom entity](advanced-entities-slot-filling-teams.md). 
 
 You can see the bot bypass a follow-up question. For example, try testing with "I want a business laptop."
 

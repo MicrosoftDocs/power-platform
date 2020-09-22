@@ -1,7 +1,7 @@
 ---
-title: "Regional settings and data locations in Teams"
-description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
-ms.date: 8/3/2020
+title: "Regional settings and data locations in Microsoft Teams"
+description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats, in the Power Virtual Agents app in Microsoft Teams."
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw

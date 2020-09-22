@@ -1,8 +1,8 @@
 ---
-title: "Review customer satisfaction for your chatbots in Teams"
-description: "Use AI-driven analytics to understand how well customers are interacting with your bot, and to identify areas for improvement."
+title: "Review customer satisfaction for your chatbots in Microsoft Teams"
+description: "See how well customers are interacting with your bot, and identify areas for improvement in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, teams"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Analyze customer satisfaction for Power Virtual Agents bots in Teams
 
-
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 > - [Power Virtual Agents web app](../analytics-csat.md)

@@ -2,7 +2,7 @@
 title: "Create and use entities"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: "PVA"
-ms.date: 8/3/2020
+ms.date: 9/22/2020
 ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
@@ -146,7 +146,7 @@ You can also use what is known as "proactive slot filling" where the user can sp
 
 In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear and also provides a second piece of information—the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
 
-![Variable watch window](media/entities-13(draft).png)
+![Multiple and proactive slot filling](media/entities-13(draft).png)
 
 In tracking between topics, you can see the bot takes in this user input, and intelligently skips the question node asking for the product category. 
 
