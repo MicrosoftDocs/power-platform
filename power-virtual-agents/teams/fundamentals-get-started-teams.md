@@ -22,18 +22,22 @@ Select the version of Power Virtual Agents you're using here:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer-teams.md)]
 
+Power Virtual Agents empowers anyone in the organization to build chatbots with our built-in natural language processing and no-code graphical interface. With our latest Teams integration, you can create, author, test, and publish your bot into Teams all within the Microsoft Teams interface.
+
 When you create chatbots, there are lots of things you need to think about, such as the sorts of questions someone might ask it, the different ways they might ask the question, and what the answer should be. You should also consider if the person has follow-up questions or concerns.
 
-To help you get started making bots, we're working on an end-to-end guide that takes you through all the steps needed to make a human resources bot. The guide covers:
+To help you get started making bots, we've created an end-to-end guide that takes you through all the steps needed to make a human resources bot. The guide covers:
 
 - The scenario and how to map what your needs are to what a chatbot can do
 - How to create a bot in the Power Virtual Agents app in Microsoft Teams
 - How to build and enhance topics that answer commmon HR-style questions
 - How to test, publish, and share the bot with the organization
 
-Power Virtual Agents empowers anyone in the organization to build chatbots with our built-in NLP and no-code graphical interface. With our latest Teams integration, you can create, author, test, and publish your bot into Teams all within the Microsoft Teams interface.
+In this guide, **HR Support bot** is a friendly question and answer bot that brings a support professional expert from the HR team into the loop when it is unable to help. An employee can ask the bot a question and the bot responds with an answer if the bot has content for it. 
 
-HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help. One can ask the bot a question and the bot responds with an answer if the bot has content for it. . If not, the bot allows the user to submit a query which then gets posted in a pre-configured team of experts who are able to provide support by acting upon the notifications from within their team itself. HR Support works well for light weight Q&A and is able to reach out for expert help when needed. This is just one example of many use cases of Power Virtual Agents chatbots in Teams.
+If not, the bot allows the user to submit a query which then gets posted to a pre-configured team of experts who can provide support by acting upon the notifications from within their team itself. 
+
+This is just one example of many use cases of Power Virtual Agents chatbots in Teams.
 
 ## Prerequisites
 
@@ -61,7 +65,7 @@ Once this bot is published, Contoso employees can access HR information in Micro
     -   [Publish the bot](#publish-the-bot)
     -   [Open the bot in Teams to chat with it like any employee would](#open-the-bot-in-teams-to-chat-with-it-like-any-employee-would)
     -   [Make the bot available to other employees](#make-the-bot-available-to-other-employees)
--   [End user experience](#detailed-steps-end-user-experience:)
+-   [End user experience](#detailed-steps-end-user-experience)
     -   [Finding the bot in the Teams app store](#finding-the-bot-in-the-teams-app-store)
     -   [Employee chats with the bot to ask about time off](#employee-chats-with-the-bot-to-ask-about-time-off)
 
@@ -77,13 +81,12 @@ Start by launching the Power Virtual Agents app in Microsoft Teams:
 1. Go to the Microsoft Teams app store and search for *power virtual agents*. You'll see the Power Virtual Agents app from Microsoft Corporation in the search results. 
 2. Select the Power Virtual Agents app and then **Add for me**.
 
-![Add the Power Virtual Agents app ](media/get-started-install-app.png)
-
+:::image type="content" source="media/get-started-install-app.png" alt-text="Add the Power Virtual Agents app.":::
 
 
 The app is added and visible in the side navigation bar in Teams, and the app opens to the Power Virtual Agents Home page. This is where Teams users can come and build bots without needing to leave the Microsoft Teams interface.
 
->[!TIP
+>[!TIP]
 >To make it easier to get back to, select and hold (or right-click) the Power Virtual Agents icon and select **Pin**.
 >  
 >:::image type="content" source="media/first-bot-pin.png" alt-text="A menu pops up with options to learn about the app, Pin it or uninstall it":::
@@ -156,9 +159,9 @@ As you can see, user choices are stored in a variable and the topic will be bran
 
 Now you can add different responses for each option. For *paid vacation*, we can have the bot point employees to an internal HR website to look up paid time-off policies.
 
-1. Add a message node specifically for the *Paid vacation* branch with this message to the user: *For paid vacation time off, go to www.contoso.com/HR/PaidTimeOff to learn more on how to submit time-off requests.*. 
+1. Add a message node specifically for the *Paid vacation* branch with this message to the user: *For paid vacation time off, go to www.contoso.com/HR/PaidTimeOff to learn more on how to submit time-off requests.*
 
-2. Add a node by selecting the **+** to end the conversation with a survey. Select **End the conversation**, then **End with survey**.** This is the [customer satisfaction survey](analytics-csat-teams.md) pre-built in the bot for everyone to use in their topics.
+2. Add a node by selecting the **+** to end the conversation with a survey. Select **End the conversation**, then **End with survey**. This is the [customer satisfaction survey](analytics-csat-teams.md) pre-built in the bot for everyone to use in their topics.
 
 3. In the *National Holidays* path, add a message node with the following text:
     ```text
@@ -171,7 +174,7 @@ Now you can add different responses for each option. For *paid vacation*, we can
     -   Christmas Eve and Christmas Day: December 24th - 25th
     ```
 
-4. End this path in the topic with a survey as well: add a node by selecting the **+** then **End the conversation** and **End with survey**.** 
+4. End this path in the topic with a survey as well: add a node by selecting the **+** then **End the conversation** and **End with survey**. 
 
 This is what your topic should look like now:
 
@@ -204,7 +207,7 @@ Power Virtual Agents comes with a built-in test bot that lets you test the bot i
 
 ### Enhance topic to handle more complex queries by escalating to HR experts
 
-Now that we have the basics out of the way, let's add a more complex option to the topic – extended leave.
+Now that we have the basics out of the way, let's add a more complex option to the topic - extended leave.
 
 1. Go back into the topic you created and go to the authoring canvas. 
 2. In the **Ask a question node** add an option for the user named *Extended leave*.
@@ -213,13 +216,13 @@ Now that we have the basics out of the way, let's add a more complex option to t
 
     Given that each employee's personal situation is different, questions about extended leave require a discussion with an HR expert. You'll need to build the bot so it can connect HR experts with the employees.
 
-3. Add a message node that says *Extended leave needs HR expert approval. Let me connect you with them.*.
+3. Add a message node that says *Extended leave needs HR expert approval. Let me connect you with them.*.
 
 Power Virtual Agents bots can take actions by [adding Power Automate flows into a topic](advanced-flow-teams.md). In this instance, you could add a flow that you've previously created that notifies a HR expert. This flow sends an adaptive card to the HR expert channel in Teams to let experts know a user needs them to reach out. 
 
 First, let's create the flow to send a message to a Teams channel and then call it with the appropriate input.
 
-1. Add a question node asking for a description for the issue with the text *How would you describe the issue?*. Save the description in a variable named *Description*.
+1. Add a question node asking for a description for the issue with the text *How would you describe the issue?* Save the description in a variable named *Description*.
 
     :::image type="content" source="media/get-started-variable-description.png" alt-text="Add a question node with the answer as a variable called Description":::
 
@@ -227,7 +230,7 @@ First, let's create the flow to send a message to a Teams channel and then call 
 3. Select **Create a flow**. This launches Power Automate within the Power Virtual Agents app in Teams. We will use a built-in template to send a message to a channel, which makes it very easy to get started.
 
 4. Choose the template **Send a message to a Teams channel**, then select **Continue**.  
-    The flow template takes in two inputs from the bot, the **Subject** (title for the message) and **Message text **(actual message) to post to the channel. 
+    The flow template takes in two inputs from the bot, the **Subject** (title for the message) and **Message text** (actual message) to post to the channel. 
     1. Under the **Post a message (v3)** flow definition, select the **Team ID** and the **Team channel ID** where the message should be posted. 
     2. You can add some text to the message in addition to the description entered by the user, and complete the **Message** field as appropriate. 
     3. Give the flow a name and save it. 
@@ -245,7 +248,7 @@ First, let's create the flow to send a message to a Teams channel and then call 
 
 Now you can let the employee know the experts have been notified of their request and will be reaching out to them.
 
-1. Add a message node with the message *We have notified the expert.  They will be reaching out shortly.*  
+1. Add a message node with the message *We have notified the expert. They will be reaching out shortly.*  
 
 2. End the conversation with a survey.  
 
@@ -267,7 +270,7 @@ Once the topics are constructed and the bot is tested, you are ready to publish 
 
 You will need to follow a few additional actions to actually make the bot available to employees.
 
->![TIP]
+>[!TIP]
 > If you are already in a conversation with the bot, you can type *start over* to the bot after publishing the latest bot content. This will restart the conversation with the bot, with the latest content published.
 
 ### Open the bot in Teams to chat with it like any employee would 
@@ -305,7 +308,7 @@ This is a workaround to see the bot in action since it does not require any admi
 
 #### Share the bot with your organization 
 
-Sharing your bot with the entire organization will feature your bot [in the 'Built by your org' section in the Teams app store](publication-add-bot-to-microsoft-teams-teams.md#share-the-bot-with-your-organization). This requires admin approval.
+Sharing your bot with the entire organization will feature your bot [in the **Built by your org** section in the Teams app store](publication-add-bot-to-microsoft-teams-teams.md#share-the-bot-with-your-organization). This requires admin approval.
 
 1. Select **Submit for admin approval** and follow the steps.
 
@@ -324,7 +327,7 @@ This section of the guide looks at how the experience might be for a team member
 
 Melissa can easily find the bot you built in the Teams app store to install and chat with it in Teams. 
 
-Depending on where the bot was shared, she can find the bot in the **Built by your colleagues** section or the **Built by your org** section. To find the bot in the 'B**uilt by your org** section, it's a pre-requisite that the bot has been approved by an admin. 
+Depending on where the bot was shared, she can find the bot in the **Built by your colleagues** section or the **Built by your org** section. To find the bot in the **Built by your org** section, it's a pre-requisite that the bot has been approved by an admin. 
 
 Melissa selects the chatbot's app tile, and then selects **Add for me**, as in the following screenshot:
 
