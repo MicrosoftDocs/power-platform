@@ -26,7 +26,7 @@ The Project Oakdale environment is automatically created for the selected team w
 > [!NOTE]
 > - This is a preview feature
 > - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
-> - > - The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
+> - The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
 
 You can identify a Project Oakdale environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
 
@@ -124,7 +124,6 @@ To change settings for a Project Oakdale environment, go to **Environments** > [
 
 > [!div class="mx-imgBorder"] 
 > ![Project Oakdale environment settings](media/teams-environment-settings.png "Project Oakdale environment settings")
-
 
 ### Users + permissions
 <!-- fwlink 2123134 2127762 -->
