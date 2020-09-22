@@ -2,9 +2,8 @@
 title: "Extend your chatbot using Bot Framework skills"
 description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
-ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -15,9 +14,15 @@ ms.collection: virtual-agent
 
 # Extend your bot using Bot Framework skills
 
-Power Virtual Agents enables you to extend your bot using [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0). If you have already built and deployed bots in your organization (using Bot Framework SDK and pro-code tools) for specific scenarios, you can convert those bots into a skill and register that skill in a Power Virtual Agents bot.
+Select the version of Power Virtual Agents you're using here:
 
-This article is intended for system administrators or IT professionals who are familiar with [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0). After a skill has been registered with a Power Virtual Agents bot, authors can seamlessly [trigger skill actions in conversation](advanced-use-skills.md).
+> [!div class="op_single_selector"]
+> - [Power Virtual Agents web app](configuration-add-skills.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/configuration-add-skills-teams.md)
+
+Power Virtual Agents enables you to extend your bot using [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true). If you have already built and deployed bots in your organization (using Bot Framework SDK and pro-code tools) for specific scenarios, you can convert those bots into a skill and register that skill in a Power Virtual Agents bot.
+
+This article is intended for system administrators or IT professionals who are familiar with [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true). After a skill has been registered with a Power Virtual Agents bot, authors can seamlessly [trigger skill actions in conversation](advanced-use-skills.md).
 
 ## Prerequisites
 
@@ -40,7 +45,7 @@ The following table will help determine when to use skills for a conversation.
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
 >[!NOTE]
->Power Virtual Agents only supports skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0) or above.
+>Power Virtual Agents only supports skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) or above.
 
 Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allow list](https://go.microsoft.com/fwlink/?linkid=2123148).
 

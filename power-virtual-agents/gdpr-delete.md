@@ -2,9 +2,8 @@
 title: "Responding to GDPR Data Subject Delete Requests"
 description: "Respond to GDPR Data Subject Delete Requests for Power Virtual Agents."
 keywords: "PVA, GDPR, delete data"
-ms.date: 8/3/2020
-ms.service:
-  - "dynamics-365-ai"
+ms.date: 9/22/2020
+ms.service: "dynamics-365-ai"
 ms.topic: article
 author: iaanw
 ms.author: iawilt
