@@ -26,6 +26,7 @@ The Project Oakdale environment is automatically created for the selected team w
 > [!NOTE]
 > - This is a preview feature
 > - [!INCLUDE [cc-preview-features-definition.md](../includes/cc-preview-features-definition.md)]
+> - The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
 
 You can identify a Project Oakdale environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using the **Type** column in the list of environments.
 
@@ -67,18 +68,16 @@ This section provides a summary of key lifecycle operations that will be allowed
 |Create     | Only through Teams. Note: these Project Oakdale environments will be limited to a 1:1 mapping to the Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
 |Delete     | The environment can be deleted by the team owner. Note: the environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
 |Reset     | Not available by default for Project Oakdale environments.        | No        |
-<!-- |Promote     | Unlocks all the functionality of Common Data Service services for the environment.         | Yes        | 
+|Promote     | Unlocks all the functionality of Common Data Service services for the environment.         | Yes        | 
 
-The lifetime of the environment will be tied to the team it was created in. If you promote an environment to Common Data Service, the 1:1 mapping isn't guaranteed because the environment can now be used by applications outside of Teams. The promoted environment is bound by the lifecycle rules associated with the Power Apps license and the configuration of the environment.-->
+The lifetime of the environment will be tied to the team it was created in. If you promote an environment to Common Data Service, the 1:1 mapping isn't guaranteed because the environment can now be used by applications outside of Teams. The promoted environment is bound by the lifecycle rules associated with the Power Apps license and the configuration of the environment.
 
 Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you need this capability, use Common Data Service environments. See the previous table for details.
 
-<!-- 
 > [!IMPORTANT]
 > Project Oakdale environments won't be allowed to change types until the promote operation has been carried out on the environment. After the promotion is complete, the Project Oakdale environment will have the full capabilities found in Common Data Service. In addition to the standard termination of the environments, if the Microsoft Office license expires, there will also be an inactivity clause for these environments. Specifically, when an environment is unused for over three months, it will be disabled and ultimately deleted. 
 >
 > If the team is deleted, the Project Oakdale environment that was created will also be deleted. The Project Oakdale environment itself may be deleted from within the team by the team owner. A warning will be provided prior to allowing the deletion to go through, to ensure there are no accidental deletions. 
--->
 
 ## User access to Project Oakdale environments
 
@@ -164,11 +163,10 @@ To delete a Project Oakdale environment, select it from the list of environments
 > [!div class="mx-imgBorder"] 
 > ![Delete a Project Oakdale environment](media/teams-environment-manage-delete.png "Delete a Project Oakdale environment")
 
-<!-- 
 ### Promote a Project Oakdale environment to production
 
 Select **Promote to production**. See [Promotion process](#promotion-process).
--->
+
 
 ## Capacity limits
 
@@ -211,11 +209,11 @@ When a tenant approaches or reaches their tenant-wide Teams limits described ear
 
 As mentioned for the environment-level enforcement, any existing apps will still be able to function as expected.  
 
-<!-- 
-## Promotion process -->
+
+## Promotion process 
 <!-- fwlink 2122620 for failure need 1GB -->
 <!-- fwlink 2134779 for for a few thing to know -->
-<!-- 
+ 
 The high-level flow and business rules for promoting a Project Oakdale environment follow. 
 
 A tenant admin will be allowed to promote a Project Oakdale environment to a Common Data Service database environment. A typical flow is as follows:  
@@ -244,13 +242,11 @@ After promotion, the following applies to the newly promoted environment:
 - The Microsoft 365 Groups association will become editable. 
 - Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. 
 - Adding a new Teams Template app to the former team won't create a new Project Oakdale environment for the team. 
--->
 
 ## Known issues
 
 - Teams environments currently show as created by "SYSTEM" within the Power Platform admin center. Once this issue is fixed, existing environments will be retroactively updated to display the correct creator.
 - Team owners and members who trigger Teams environment creation can temporarily see the newly created environment in the Power Platform admin center. Once this issue is resolved, team owners will be able to successfully administer their environment and team members will not be able to see the environment in the admin center.
-
 
 ## Related topics
 
