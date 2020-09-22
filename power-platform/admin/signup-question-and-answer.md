@@ -2,11 +2,10 @@
 title: Manage licenses in your organization | Microsoft Docs
 description: Common questions and answers about licenses, administration, and users signing up for Power Apps in your Microsoft 365 tenant
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 09/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -37,7 +36,7 @@ Users can sign up by going to [powerapps.microsoft.com](https://powerapps.micros
 When a user in your organization signs up for Power Apps, that user is assigned a Power Apps license automatically.
 
 > [!NOTE]
-> Users who sign up for a trial license from within Power Apps don't appear in the Microsoft 365 admin portal as Power Apps trial users (unless they have another license to Microsoft 365, model-driven apps in Dynamics 365, such as Dynamics 365 Sales and Customer Service, or Power Apps).
+> Users who sign up for a trial license from within Power Apps don't appear in the Microsoft 365 admin portal as Power Apps trial users (unless they have another license to Microsoft 365, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), or Power Apps).
 
 See [Self-service sign up for Power Apps](/powerapps/maker/signup-for-powerapps) for more details.
 

@@ -17,6 +17,7 @@ search.app:
 ---
 # About the Project Oakdale environment (Preview)
 <!-- fwlink 2143567 -->
+
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Introduced in September, 2020, *Project Oakdale* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps and workflows in Teams by using Power Apps and Power Automate. Project Oakdale—built on Common Data Service—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Teams app store.
@@ -104,7 +105,6 @@ Microsoft 365 Groups supports two user membership types: owners and members. Mem
 Access to a Project Oakdale environment and its resources (apps, data) will be restricted to users in the team. The Microsoft 365 group linked to a team will be automatically associated with the Project Oakdale environment, restricting access to users of that Microsoft 365 group. This Microsoft 365 Groups association with the Project Oakdale environment won't be editable until the environment is promoted to Common Data Service. 
 
 ### Role assignments 
-
 
 <table style="width:100%">
 <tr>
@@ -244,8 +244,8 @@ As mentioned for the environment-level enforcement, any existing apps will still
 <!-- fwlink 2134779 for for a few thing to know -->
 
 > [!IMPORTANT]
-> The capability to promote Project Oakdale environments to Common Data Service isn't be available at public preview, but is expected to be available by general availability (GA).
-
+> The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
+ 
 The high-level flow and business rules for promoting a Project Oakdale environment follow. 
 
 A tenant admin will be allowed to promote a Project Oakdale environment to a Common Data Service database environment. A typical flow is as follows:  
@@ -280,7 +280,6 @@ After promotion, the following applies to the newly promoted environment:
 With the public preview release of Project Oakdale, the ability to create apps or bots using the new Power Apps and Power Virtual Agents apps is enabled by default in Teams. Admins can disable it by using the app permission policies in Teams. 
 
 In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps**. More information: [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
-
 
 ## Known issues
 
