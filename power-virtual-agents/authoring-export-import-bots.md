@@ -2,9 +2,8 @@
 title: "Export and import bots using solutions (preview)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: "export, import, transfer, environment, PVA"
-ms.date: 7/31/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -25,6 +24,9 @@ This can be useful if you use different environments for different purposes, or 
 > 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4CsHl]
 > 
+
+>[!NOTE]
+>You can only import and export bots with the Power Virtual Agents web app. The feature is not available in the Power Virtual Agents app in Microsoft Teams.
 
 ## Prerequisites
 
@@ -57,7 +59,7 @@ You use solutions to export bots from one environment and import them into anoth
 
 2. Under **Export/Import bot**, select **Go to Power Apps Solutions**.
  
-    ![Link to the Power Apps admin center from Power Virtual Agents](media/export-settings-powerapps.png "Link to the Power Apps admin center from Power Virtual Agents")
+    ![Link to the Power Platform admin center from Power Virtual Agents](media/export-settings-powerapps.png "Link to the Power Platform admin center from Power Virtual Agents")
 
 3. Sign in to Power Apps and select **New solution**. Enter the information for each of the fields as described in this table, then select **Create**.
 
@@ -66,7 +68,7 @@ You use solutions to export bots from one environment and import them into anoth
     Field | Description
     -- | --
     Display name | The name that is shown in the list of solutions. You can change this later.
-    Name | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can’t change it.
+    Name | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can't change it.
     Publisher | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, see [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix)
     Version | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.
 
@@ -75,7 +77,7 @@ If you don't see the **Export/import bot** section under **Settings**, you will 
 
 >[!IMPORTANT]
 >Only follow these steps if you don't see an option to **Export/import bot** on the Power Virtual Agents settings page.  
->Newly created bots don’t require an upgrade, and won't show an option to upgrade them.
+>Newly created bots don't require an upgrade, and won't show an option to upgrade them.
 
 ![Screenshot highlighting the Upgrade bot button](media/export-upgrade-bot.png "Screenshot highlighting the Upgrade bot button")
 
@@ -104,17 +106,17 @@ If you don't see the **Export/import bot** section under **Settings**, you will 
 
 3. On the filter on the top menu, select **Chatbot** to see the bot (or bots) you've added to the solution. Selecting the name of the bot will open it in the Power Virtual Agents portal.
 
-3. If your bot doesn’t have [Skills](configuration-add-skills.md), you don't need to complete this step. 
+3. If your bot doesn't have [Skills](configuration-add-skills.md), you don't need to complete this step. 
     If your bot does have Skills, you need to add the respective environment variables in the solution. Each Skill has two environment variables: `AppID` and `manifestURL`.
 
     1. Select the solution you want to add your bot to.
 
     1. Select **Add existing** and choose **Environment variables**.
-    1. On the **Add existing environment variables** panel and select the environment variables for your bot’s Skills. Each Skill has two environments variables. The environment variables **Display name** column will show the bot name in square brackets. For example, *[Bot name] Skill name*.
+    1. On the **Add existing environment variables** panel and select the environment variables for your bot's Skills. Each Skill has two environments variables. The environment variables **Display name** column will show the bot name in square brackets. For example, *[Bot name] Skill name*.
 
         ![List of skills selected for export](media/export-skills.png "List of skills selected for export")
  
-    1. Select the environment variables of the bot’s Skills. 
+    1. Select the environment variables of the bot's Skills. 
     1. Select **Next** to add them to the solution.
 
 
@@ -179,7 +181,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 1. You may need to wait a few moments while the import completes. View the results and then select **Close**.
 
-    If the import isn’t successful, you'll see a report showing any errors or warnings that were captured. Select **Download Log File** to capture details about what caused the import to fail in an XML file  
+    If the import isn't successful, you'll see a report showing any errors or warnings that were captured. Select **Download Log File** to capture details about what caused the import to fail in an XML file  
       
     The most common cause for an import to fail is that the solution didn't contain some required components. For example, you may not have any upgraded bots in the environment.
 
@@ -191,10 +193,10 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
     - [Power Automate flows](/power-automate/import-flow-solution): Configure any flow connections for the first time. You don't need to reconfigure the flow connections for subsequent imports of the bot when updating the flow.  
       If you import a solution containing a bot that leverages Power Automate, and any new Flows are included in that import operation, you'll need to visit the Power Virtual Agents portal and select the bot. 
-    - [Skills](advanced-use-skills.md): Add the values for the Skills’ environment variables.
-    - [End-user authentication](configuration-end-user-authentication.md): Configure end-user authentication in the bot so it can take actions on the user’s behalf. The bot can be set up with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook.
-    - [Customer service hand-off](advanced-hand-off.md): Configure external services that hand-off bot escalations to a human agent.
-    - Multi-channel: – Configure external channels, such as Facebook, and internal non-Power Virtual Agents services, such as Microsoft Teams:
+    - [Skills](advanced-use-skills.md): Add the values for the Skills' environment variables.
+    - [End-user authentication](configuration-end-user-authentication.md): Configure end-user authentication in the bot so it can take actions on the user's behalf. The bot can be set up with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as Azure Active Directory (Azure AD), a Microsoft account, or Facebook.
+    - [Customer service hand-off](advanced-hand-off.md): Configure external products that hand-off bot escalations to a human agent.
+    - Multi-channel: – Configure external channels, such as Facebook, and internal non-Power Virtual Agents products, such as Microsoft Teams:
 
         - [Facebook documentation](publication-add-bot-to-facebook.md)
         - [Microsoft Teams documentation](publication-add-bot-to-microsoft-teams.md)
@@ -206,7 +208,7 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 ## Upgrade or update a solution with a chatbot
 
-If you add new bot components (such as new topics or flows) to your bot in the PVA portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the *...* menu next to the name of the bot.
+If you add new bot components (such as new topics or flows) to your bot in the Power Virtual Agents portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the *...* menu next to the name of the bot.
 
 ![Screenshot highlighting the add required components option under the more menu](media/export-add-required-components.png "Screenshot highlighting the add required components option under the more menu")
 
@@ -215,7 +217,7 @@ There are times when you need to update an existing managed solution. To learn m
 ## Remove an unmanaged layer from a managed chatbot 
 Managed and unmanaged solutions exist at different levels within a Common Data Service environment. To learn more, go to [Solution layers](/powerapps/maker/common-data-service/solution-layers).
 
-A managed component (for example, topic, flow) gets an unmanaged layer when you edit it. This unmanaged active layer lies on top of all other layers coming from the different solutions containing this component. The layer on top always wins; hence you cannot see the new changes coming from new deployments. To avoid this issue, Microsoft introduced a new feature called **See solution layers**, where you can see all solutions where this component is part of it. You can see one “Active” solution on top of all solutions if you would have changed something directly on the instance. To get rid of the unmanaged customizations on the managed component you have to do the following, 
+A managed component (for example, topic, flow) gets an unmanaged layer when you edit it. This unmanaged active layer lies on top of all other layers coming from the different solutions containing this component. The layer on top always wins; hence you cannot see the new changes coming from new deployments. To avoid this issue, Microsoft introduced a new feature called **See solution layers**, where you can see all solutions where this component is part of it. You can see one "Active" solution on top of all solutions if you would have changed something directly on the instance. To get rid of the unmanaged customizations on the managed component you have to do the following, 
 1. Select **See solution layers** under the ... menu next to the component name.
 <Add the image solution layer image here>
 

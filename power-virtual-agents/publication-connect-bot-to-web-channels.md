@@ -2,9 +2,8 @@
 title: "Configure a chatbot for a live or demo website"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
-ms.date: 8/3/2020
-ms.service:
-  - dynamics-365-ai
+ms.date: 9/22/2020
+ms.service: dynamics-365-ai
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -55,7 +54,7 @@ To share the demo website link, simply copy the demo website URL and share it wi
 
 You can add your bot to a live website as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint or Yammer site.
 
-You can also add the bot to your Power Apps admin center.
+You can also add the bot to your Power Platform admin center.
 
 **Add bot to your website:**
 
@@ -75,7 +74,7 @@ You can also add the bot to your Power Apps admin center.
 
     ![Select only the src URL](media/channel-custom-website-url.png)
 
-1. Go to Power Apps Portal Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your app by selecting **Components** on the side navigation pane, and then **IFrame**.
+1. Go to Power Apps Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your app by selecting **Components** on the side navigation pane, and then **IFrame**.
 
     ![Add IFrame to Power Apps](media/channel-custom-website-portal-iframe.png)
 
@@ -85,7 +84,7 @@ You can also add the bot to your Power Apps admin center.
     
 1. You can interact with your bot by clicking on **Browse website** at the top right corner.
 
-    ![Add bot IFrame to Power Apps](media/channel-custom-website-portal-browse-website.png)
+    ![Browse website with IFrame added](media/channel-custom-website-portal-browse-website.png)
 
 
 

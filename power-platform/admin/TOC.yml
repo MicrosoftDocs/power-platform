@@ -102,6 +102,8 @@
           href: trial-environments.md     
         - name: Sandbox environment
           href: sandbox-environments.md
+        - name: Project Oakdale environment (Preview)
+          href: about-teams-environment.md
         - name: View apps in your environments 
           href: admin-view-apps.md
         - name: Language collations 
