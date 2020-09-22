@@ -37,7 +37,7 @@ Verifies the service connection by connecting to the service and sending a `WhoA
 |---------------|---------------|
 | environment-url | The URL for the environment you are connecting to.|
 | user-name | Username of the account you are using to connect with. |
-| password-secret | Password for the user-name. Passwords are defined in **Settings** under **Secrets**. Note that you cannot retrieve a secret after it has been defined and saved. |
+| password-secret | Password for the user-name. GitHub passwords are defined in **Settings** under **Secrets**. Note that you cannot retrieve a secret after it has been defined and saved. |
 
 ## Solution tasks
 
@@ -63,7 +63,7 @@ Exports a solution from a source environment.
 |-----------------|---------------------|
 | environment-url| (Required) The URL for the environment that you want to export the solution from (e.g. [https://powerappsactions.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)).|
 |user-name|(Required) If you are using username/password authentication, the username of the account you are using to connect with.|
-| password-secret | (Required) If you are using username/password authentication, the password for the user-name. Passwords are defined in **Settings** under **Secrets**. Note that you cannot retrieve a secret after it has been defined and saved. |
+| password-secret | (Required) If you are using username/password authentication, the password for the user-name. GitHUb passwords are defined in **Settings** under **Secrets**. Note that you cannot retrieve a secret after it has been defined and saved. |
  | solution-name              | (Required) The name of the solution to export.<p/>Always use the solution's *Name*, not its *Display Name*.    |
  | solution-output-file        | (Required) The path and file name of the solution.zip file to export the source environment to.|
   | managed        | (Required) Export as managed solution; default is to export as unmanaged solution.|
