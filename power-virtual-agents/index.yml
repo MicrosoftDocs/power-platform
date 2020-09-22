@@ -22,7 +22,7 @@ highlightedContent:
 
   items:
     # Card
-    - title: Power Virtual Agents?
+    - title: What is Power Virtual Agents?
       itemType: overview
       url: powerapps-overview.md
 
