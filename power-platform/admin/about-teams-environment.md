@@ -289,7 +289,7 @@ In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual
 
 ## Related topics
 
-[Power Apps and Teams](/powerapps/teams/overview) <br/>
-[Power Automate and Teams](/power-automate/teams/overview)<br/>
+[Power Apps and Teams](https://docs.microsoft.com/powerapps/teams/overview) <br/>
+[Power Automate and Teams](https://docs.microsoft.com/power-automate/teams/overview)<br/>
 [Power Virtual Agents and Teams](https://aka.ms/pva-teams-docs)
 
