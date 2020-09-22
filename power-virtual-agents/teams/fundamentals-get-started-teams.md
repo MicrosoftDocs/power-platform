@@ -52,7 +52,7 @@ Once this bot is published, Contoso employees can access HR information in Micro
 
 ## Steps in bot building
 
--   [Bot Author experience](#bot-author-experience:)
+-   [Bot Author experience](#detailed-steps-bot-author-experience)
     -   [Install the Power Virtual Agents app in Microsoft Teams](#install-the-power-virtual-agents-app-in-microsoft-teams)
     -   [Create a new bot in a team](#create-a-new-bot-in-a-team)
     -   [Build an employee time-off topic for common time-off queries](#build-an-employee-time-off-topic-for-common-time-off-queries)
@@ -61,7 +61,7 @@ Once this bot is published, Contoso employees can access HR information in Micro
     -   [Publish the bot](#publish-the-bot)
     -   [Open the bot in Teams to chat with it like any employee would](#open-the-bot-in-teams-to-chat-with-it-like-any-employee-would)
     -   [Make the bot available to other employees](#make-the-bot-available-to-other-employees)
--   [End user experience](#end-user-experience:)
+-   [End user experience](#detailed-steps-end-user-experience:)
     -   [Finding the bot in the Teams app store](#finding-the-bot-in-the-teams-app-store)
     -   [Employee chats with the bot to ask about time off](#employee-chats-with-the-bot-to-ask-about-time-off)
 
@@ -161,14 +161,15 @@ Now you can add different responses for each option. For *paid vacation*, we can
 2. Add a node by selecting the **+** to end the conversation with a survey. Select **End the conversation**, then **End with survey**.** This is the [customer satisfaction survey](analytics-csat-teams.md) pre-built in the bot for everyone to use in their topics.
 
 3. In the *National Holidays* path, add a message node with the following text:
-
-        National holidays for 2020:
-        -   New Year's Day: January 1st
-        -   Memorial Day: May 25th
-        -   Independence day: July 4th
-        -   Labor Day: September 7th
-        -   Thanksgiving: November 26th - 27th
-        -   Christmas Eve and Christmas Day: December 24th - 25th
+    ```text
+    National holidays for 2020:
+    -   New Year's Day: January 1st
+    -   Memorial Day: May 25th
+    -   Independence day: July 4th
+    -   Labor Day: September 7th
+    -   Thanksgiving: November 26th - 27th
+    -   Christmas Eve and Christmas Day: December 24th - 25th
+    ```
 
 4. End this path in the topic with a survey as well: add a node by selecting the **+** then **End the conversation** and **End with survey**.** 
 
@@ -295,12 +296,12 @@ In this pane, you can edit the bot icon that shows in Teams, and change the shor
 
 This will add the bot to the **Built by your colleagues** section in the Teams app store.
 
-Select **Add to Teams** and you will see a check mark indicating that the bot was added to Teams. With this, anyone in your team [can find the bot in the **Built by your colleagues**](publication-add-bot-to-microsoft-teams-teams.md#share-the-bot-with-your-team*) section in the Teams app store and add the bot to chat with it.
+Select **Add to Teams** and you will see a check mark indicating that the bot was added to Teams. With this, anyone in your team [can find the bot in the **Built by your colleagues**](publication-add-bot-to-microsoft-teams-teams.md#share-the-bot-with-your-team) section in the Teams app store and add the bot to chat with it.
 
 This is a workaround to see the bot in action since it does not require any admin involvement and avoids any spam to the admin. Once you are fully satisfied, you can follow the steps to share the bot with your organization which requires admin approval.
 
 
-:::image type="content" source="media/et-started-edited.png" alt-text="The bot's icon is now a briefcase with a pink background.":::
+:::image type="content" source="media/get-started-edited.png" alt-text="The bot's icon is now a briefcase with a pink background.":::
 
 #### Share the bot with your organization 
 
