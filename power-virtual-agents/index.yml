@@ -45,7 +45,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 conceptualContent:  
   items:
-    - title: Get started with Power Virtual Agents
+    - title: Get started
       links:
         - text: Sign up for free
           url: /power-virtual-agents/sign-up-individual
