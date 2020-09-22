@@ -74,12 +74,13 @@ conceptualContent:
         - text: Use entities and slot filling
           url: /power-virtual-agents/teams/advanced-entities-slot-filling-teams
           itemType: overview
+        - text: Use end-user authentication
+          url: /power-virtual-agents/advanced-end-user-authentication
+          itemType: overview
         - text: Use Microsoft Bot Framework Skills
           url: /power-virtual-agents/teams/advanced-use-skills-teams
           itemType: concept
-      footerLink:
-        url: /power-virtual-agents/teams/advanced-fundamentals-teams
-        text: More
+
 
     - title: Publish and integrate
       links:
