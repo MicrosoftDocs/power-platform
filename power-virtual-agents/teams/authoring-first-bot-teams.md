@@ -46,9 +46,9 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 
     :::image type="content" source="media/first-bot-add-app.png" alt-text="The search box has power virtual agents in it, and the Power Virtual Agents tile appears next to it":::
 
-3. To make it easier to get back to, right click on the Power Virtual Agents icon and select **Pin**.
+3. To make it easier to get back to, select and hold (or right-click) the Power Virtual Agents icon and select **Pin**.
 
-    :::image type="content" source="media/first-bot-pin.png" alt-text="A menu pops up with options to learn about the app, Ping it or uninstall it":::
+    :::image type="content" source="media/first-bot-pin.png" alt-text="A menu pops up with options to learn about the app, Pin it or uninstall it":::
 
 
 ## Create a bot
