@@ -16,6 +16,7 @@ search.app:
   - Flow
 ---
 # About the Project Oakdale environment (Preview)
+<!-- fwlink 2143567 -->
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -51,7 +52,7 @@ See also: [Project Oakdale licensing FAQs](powerapps-flow-licensing-faq.md#proje
 
 ## Admin experience
 
-Tenant owners and members will be allowed to create their first app template or create a blank table app for the team. More information: [Project Oakdale tables: Overview](/powerapps/teams/overview-tables)
+Tenant owners and members will be allowed to create their first app template or create a blank table app for the team. More information: [Project Oakdale tables: Overview](https://docs.microsoft.com/powerapps/teams/create-table)
 
 Team owners will be allowed to delete a team associated with a Project Oakdale environment, which will trigger the deletion of that environment.
 
@@ -105,7 +106,6 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 
 ### Role assignments 
 
-
 <table style="width:100%">
 <tr>
 <th>Persona</th>
@@ -148,7 +148,7 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 > [Record sharing](wp-security-cds.md#record-sharing) isn't supported in Project Oakdale.  You can't share a record with another user or team.
 
 ## Project Oakdale environments settings and actions
-<!-- fwlink 2133713  -->
+<!-- fwlink 2133713 2134780(settings) 213924(backup/restore) -->
 
 To change settings for a Project Oakdale environment, go to **Environments** > [select a Project Oakdale environment] > **Settings**.
 
@@ -181,6 +181,7 @@ You can specify users in an environment to provide access to Project Oakdale env
 7. Select **Refresh** to see the added user in the list.
 
 ### Microsoft Teams Integration
+<!-- fwlink 2134886 -->
 
 Tenant admins can select **Microsoft Teams Integration** to enable embedding model-driven apps into Teams. After making this selection, users can use model-driven apps in Teams without using customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
@@ -244,8 +245,8 @@ As mentioned for the environment-level enforcement, any existing apps will still
 <!-- fwlink 2134779 for for a few thing to know -->
 
 > [!IMPORTANT]
-> The capability to promote Project Oakdale environments to Common Data Service isn't be available at public preview, but is expected to be available by general availability (GA).
-
+> The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
+ 
 The high-level flow and business rules for promoting a Project Oakdale environment follow. 
 
 A tenant admin will be allowed to promote a Project Oakdale environment to a Common Data Service database environment. A typical flow is as follows:  
@@ -281,7 +282,6 @@ With the public preview release of Project Oakdale, the ability to create apps o
 
 In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps**. More information: [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
 
-
 ## Known issues
 
 - Teams environments currently show as created by "SYSTEM" within the Power Platform admin center. Once this issue is fixed, existing environments will be retroactively updated to display the correct creator.
@@ -289,7 +289,7 @@ In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual
 
 ## Related topics
 
-[Power Apps and Teams](/powerapps/teams/overview) <br/>
-[Power Automate and Teams](/power-automate/teams/overview)<br/>
+[Power Apps and Teams](https://docs.microsoft.com/powerapps/teams/overview) <br/>
+[Power Automate and Teams](https://docs.microsoft.com/power-automate/teams/overview)<br/>
 [Power Virtual Agents and Teams](https://aka.ms/pva-teams-docs)
 
