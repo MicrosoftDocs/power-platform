@@ -21,7 +21,7 @@ search.app:
 
 [This topic is pre-release documentation and is subject to change.]
 
-[GitHub Actions](https://help.github.com/articles/about-github-actions) enable developers to build automated software development lifecycle workflows. With GitHub Actions for the Microsoft Power Platform you can create workflows in your repository to build, test, package, release and deploy apps, perform automation, manage bots and other components built on the Microsoft Power Platform. Available GitHub Actions include the following:
+[GitHub Actions](https://help.github.com/articles/about-github-actions) enable developers to build automated software development lifecycle workflows. With GitHub Actions for the Microsoft Power Platform you can create workflows in your repository to build, test, package, release and deploy apps, perform automation, manage bots and other components built on the Microsoft Power Platform. Available GitHub Actions include the following capabilities:
 
 <ul><li>Import/export of application metadata (also known as
 solutions) that contain the various platform components such as customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), canvas apps, model-driven apps, UI flows, virtual agents, AI Builder models, and connectors between development environments and source control.</li></ul>
@@ -59,7 +59,7 @@ scenario such as "generate a build artifact", "deploy to test", or "harvest make
 
 - Environment management
 
-For more information about the available tasks see [GitHub Actions for Microsoft Power Platform](devops-github-available-actions.md).
+For more information, see [GitHub Actions for Microsoft Power Platform](devops-github-available-actions.md).
 
 ## Get GitHub Actions for the Microsoft Power Platform
 
@@ -74,17 +74,17 @@ To interact with a Common Data Service environment, a secret must be created tha
 - Service principal and client secret: This connection type uses service principal based authentication and supports multi-factor authentication. Service principal authentication availability is  October 2020.
 
 ## Available runners
-GitHub Actions for Microsoft Power Platform can only run on a Microsoft Windows agent. Cross-platform compatibility availability is late Fall 2020.
+GitHub Actions for Microsoft Power Platform can only run on a Microsoft Windows agent. Cross-platform compatibility availability is late 3rd quarter 2020.
 
 ## Frequently asked questions (FAQs)
 
 **Do the GitHub Actions only work for Power Apps?**  
 
-*The GitHub Actions work for both canvas and model-driven apps, Power Virtual Agents, UI flows and traditional flows, AI Builder, custom connectors and data-flows, all of which can now be added to a solution. This also includes customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Separate build tasks are available for Dynamics 365 Finance and Operations applications.*
+*The GitHub Actions work for both canvas and model-driven apps, Power Virtual Agents, UI flows and traditional flows, AI Builder, custom connectors and data-flows, all of which can now be added to a solution. Also included customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). Separate build tasks are available for Dynamics 365 Finance and Operations applications.*
 
 **Can I include flow and canvas apps?**
 
-*Yes, flows and canvas apps are solution aware, so if these are added to your solution they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors. A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
+*Yes, flows and canvas apps are solution aware, so if these are added to your solution they can participate in the lifecycle of your app.  However, some steps still require manual configurations which will be addressed later this year when we introduce environment variables and connectors. A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
 **How much does the GitHub Actions for the Microsoft Power Platform cost?**
 
