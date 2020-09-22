@@ -244,7 +244,7 @@ As mentioned for the environment-level enforcement, any existing apps will still
 <!-- fwlink 2134779 for for a few thing to know -->
 
 > [!IMPORTANT]
->> The capability to promote Project Oakdale environments to Common Data Service won’t be available at public preview, but is expected to be available by general availability (GA).
+> The capability to promote Project Oakdale environments to Common Data Service isn't be available at public preview, but is expected to be available by general availability (GA).
 
 The high-level flow and business rules for promoting a Project Oakdale environment follow. 
 
