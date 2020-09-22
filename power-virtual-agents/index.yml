@@ -139,7 +139,7 @@ additionalContent:
         # Card
         - title: Power Apps
           summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
-          url: https://docs.microsoft.com/power-virtual-agents
+          url: https://docs.microsoft.com/powerapps
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
           url: https://docs.microsoft.com/power-automate        
