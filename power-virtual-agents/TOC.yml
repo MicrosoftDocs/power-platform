@@ -142,7 +142,7 @@
          href: teams/fundamentals-get-started-teams.md
     - name: Administer and manage
       items:
-       - name: Assign licenses
+       - name: Licensing for Virtual Power Agents in Teams
          href: teams/requirements-licensing-teams.md
        - name: Share bots with users in your organization
          href: teams/admin-share-bots-teams.md
