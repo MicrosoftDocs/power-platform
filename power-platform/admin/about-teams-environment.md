@@ -275,6 +275,13 @@ After promotion, the following applies to the newly promoted environment:
 - Team owners are assigned the System Admin roles on their environment and can access the environment by using the Power Platform admin center. 
 - Adding a new Teams Template app to the former team won't create a new Project Oakdale environment for the team. 
 
+## Disable the ability to create app or bots using Project Oakdale in Teams
+
+With the public preview release of Project Oakdale, the ability to create apps or bots using the new Power Apps and Power Virtual Agents apps is enabled by default in Teams. Admins can disable it by using the app permission policies in Teams. 
+
+In your Microsoft Teams admin center, disable **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps**. More information: [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies)
+
+
 ## Known issues
 
 - Teams environments currently show as created by "SYSTEM" within the Power Platform admin center. Once this issue is fixed, existing environments will be retroactively updated to display the correct creator.
