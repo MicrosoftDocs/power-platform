@@ -46,6 +46,8 @@ Note the following regarding access to Microsoft Power Platform apps in Teams.
 
 - No direct API access or pro developer experience will be provided, and only Power Apps embedded within the Teams client will be able to access the runtime.
 
+See also: [Project Oakdale licensing FAQs](powerapps-flow-licensing-faq.md#project-oakdale)
+
 ## Admin experience
 
 Tenant owners and members will be allowed to create their first app template or create a blank table app for the team. More information: [Project Oakdale tables: Overview](/powerapps/teams/overview-tables)
