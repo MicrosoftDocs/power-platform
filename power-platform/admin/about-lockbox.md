@@ -1,6 +1,6 @@
 ---
-title: "Power Platform Lockbox | MicrosoftDocs"
-description: Power Platform Lockbox 
+title: "Lockbox for Power Platform | MicrosoftDocs"
+description: Lockbox for Power Platform
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Power Platform Lockbox 
+# Lockbox for Power Platform
 
 Lockbox for Power Platform provides an interface for customers to review and approve or reject customer data access requests. It is usually used in cases where a Microsoft engineer needs to access customer data to resolve a support request. 
 
@@ -87,7 +87,7 @@ Global administrators can create or update the lockbox policy in the Power Platf
    |---------|---------|
    |Support request ID     | The ID of the support ticket associated with the lockbox request.         |
    |Environment     | The display name of the environment in which data access is being requested.         |
-   |Status     | The status of the lockbox request. <br /> <ul><li>Action needed: Pending approval from the customer </li><li>**Expired**: No approval received from the customer </li><li>**Approved**: Approved by the customer </li><li>**Denied**: Denied by the customer.</li></ul>        |
+   |Status     | The status of the lockbox request. <br /> <ul><li>**Action needed**: Pending approval from the customer </li><li>**Expired**: No approval received from the customer </li><li>**Approved**: Approved by the customer </li><li>**Denied**: Denied by the customer.</li></ul>        |
    |Requested     | The time at which the Microsoft engineer has requested access to your organization’s data.         |
    |Request expiration     | The time by which the customer needs to approve the lockbox request. The status of the request will change to “expired” if no approval is received.         |
    |Access period     | The approximate length of time requested to access your data. It is an estimate and could slightly change.         |
