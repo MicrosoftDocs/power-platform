@@ -148,7 +148,7 @@ Access to a Project Oakdale environment and its resources (apps, data) will be r
 > [Record sharing](wp-security-cds.md#record-sharing) isn't supported in Project Oakdale.  You can't share a record with another user or team.
 
 ## Project Oakdale environments settings and actions
-<!-- fwlink 2133713 2134780(settings) 213924(backup/restore) -->-
+<!-- fwlink 2133713 2134780(settings) 213924(backup/restore) -->
 
 To change settings for a Project Oakdale environment, go to **Environments** > [select a Project Oakdale environment] > **Settings**.
 
