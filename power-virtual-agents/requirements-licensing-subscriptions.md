@@ -36,12 +36,15 @@ Azure bot framework skills | Not available | [Ability to extend Power Virtual Ag
 
 
 ### Upgrading your license
-To access the full range of Power Virtual Agents capabilities you need to upgrade your plan to a standalone Power Virtual Agents subscription. Learn more about [how to get Power Virtual Agents subscription].
+To access the full range of Power Virtual Agents capabilities you need to upgrade your plan to a standalone Power Virtual Agents subscription. 
 
-Additionally, there are numerous opportunities within the Power Virtual Agents app in Microsoft Teams where you can upgrade to the full subscription.
+You can do this from within the Power Virtual Agents app for Microsoft Teams when prompted, as in the following example when publishing to additional channels:
+   
+:::image type="content" source="media/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
 
-You can also [start a 60 day free trial of Power Virtual Agents](https://aka.ms/trypva) to try out all the capabilities. 
+You can also [start a 60 day free trial of Power Virtual Agents](https://aka.ms/trypva) to try out all the capabilities. You'll be prompted to do this if you try to create a bot without a license.
 
+:::image type="content" source="media/upgrade-create.png" alt-text="You are prompted to start a free trial or upgrade to a premium when creating a bot without a license.":::
 
 ## Standalone Power Virtual Agents subscription
 The standalone Power Virtual Agents subscription allows you to build chatbots on any supported channel and connect to any data using premium connectors. 
