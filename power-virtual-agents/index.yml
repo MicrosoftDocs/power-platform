@@ -137,16 +137,16 @@ additionalContent:
     - title: Other Microsoft Power Platform products # < 60 chars (optional)
     - items:
         # Card
+        - title: Power Apps
+          summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
+          url: https://docs.microsoft.com/power-virtual-agents
         - title: Power Automate
           summary: Create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
-          url: https://docs.microsoft.com/power-automate
-        # Card
+          url: https://docs.microsoft.com/power-automate        
         - title: Power BI
           summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
           url: https://docs.microsoft.com/power-bi
-        - title: Power Virtual Agents
-          summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
-          url: https://docs.microsoft.com/power-virtual-agents
+
     - title: See also
       items:
       # Card
