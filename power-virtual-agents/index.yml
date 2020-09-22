@@ -65,7 +65,7 @@ conceptualContent:
         - text: Create and edit topics
           url: /power-virtual-agents/authoring-create-edit-topics
           itemType: how-to-guide
-        - text: Test your both
+        - text: Test your bot
           url: /power-virtual-agents/authoring-test-bot
           itemType: how-to-guide             
     
@@ -81,79 +81,52 @@ conceptualContent:
         url: /power-virtual-agents/teams/advanced-fundamentals-teams
         text: More
 
-    - title: Integrate with Microsoft Teams
+    - title: Publish and integrate
       links:
-        - text: Embed a canvas app in Teams
-          url: /powerapps/teams/embed-teams-app
+        - text: Configure demo and live sites
+          url: /power-virtual-agents/publication-connect-bot-to-web-channels
           itemType: overview
-        - text: Create apps in Teams
-          url: /powerapps/teams/create-apps-overview
+        - text: Publish to Microsoft Teams
+          url: /power-virtual-agents/publication-add-bot-to-microsoft-teams
           itemType: overview
-        - text: What is Project Oakdale?
-          url: /powerapps/teams/overview-data-platform
+        - text: Publish to Facebook
+          url: /power-virtual-agents/publication-add-bot-to-facebook
           itemType: overview
 
-    - title: Use solutions for ALM
+    - title: Monitor and diagnose
       links:
-        - text: What are solutions?
-          url: /powerapps/maker/common-data-service/solutions-overview
+        - text: Use analytics to improve your bot
+          url: /power-virtual-agents/analytics-overview
           itemType: overview
-        - text: Implement healthy ALM using solutions
-          url: /power-platform/alm/overview-alm
+        - text: Analyze bot performance and usage
+          url: /power-virtual-agents/analytics-summary
           itemType: overview
-        - text: Use Microsoft Power Platform Build Tools
-          url: /power-platform/alm/devops-build-tools
-          itemType: how-to-guide     
+        - text: Analyze topic usage
+          url: /power-virtual-agents/analytics-topic-details
+          itemType: overview     
 
-    - title: Administer Power Apps
+    - title: Administer and manage
       links:
-        - text: Use Power Platform admin center
-          url: https://docs.microsoft.com/power-platform/admin/admin-documentation
+        - text: Assign licenses
+          url: /power-virtual-agents/requirements-licensing
           itemType: overview
-        - text: Power Apps licensing
-          url: https://docs.microsoft.com/power-platform/admin/pricing-billing-skus
+        - text: Working with environments
+          url: /power-virtual-agents/environments-first-run-experience
           itemType: overview
-        - text: Microsoft Power Platform guidance documentation
-          url: /power-platform/guidance
+        - text: Export and import bots using solutions
+          url: /power-virtual-agents/authoring-export-import-bots
           itemType: how-to-guide     
     
-    - title: Power Apps for developers
+    - title: Support and licensing
       links:
-        - text: Common Data Service developer
-          url: /powerapps/developer/common-data-service/
-          itemType: reference
-        - text: Model-driven apps developer
-          url: /powerapps/developer/model-driven-apps
-          itemType: reference
-        - text: Canvas apps developer
-          url: /powerapps/maker/canvas-apps/dev-enterprise-intro
-          itemType: reference    
-    
-    - title: Sample apps and solutions
-      links:
-        - text: Hospital Emergency Response
-          url: /powerapps/sample-apps/emergency-response/overview
+        - text: Community help and support
+          url: /power-virtual-agents/fundamentals-support
           itemType: overview
-        - text: Regional Government Emergency Response and Monitoring
-          url: /powerapps/sample-apps/regional-emergency-response/overview
-          itemType: overview
-        - text: Return to the Workplace
-          url: /powerapps/sample-apps/return-to-workplace/overview
-          itemType: overview
+        - text: Licensing
+          url: /power-virtual-agents/requirements-licensing-subscriptions
+          itemType: overview 
     
     
-    
-    - title: Learning catalog
-      links:
-        - text: App maker
-          url: /powerapps/learning-catalog/app-maker
-          itemType: learn
-        - text: Developer
-          url: /powerapps/learning-catalog/developer
-          itemType: learn     
-      footerLink:
-        url: /powerapps/learning-catalog/get-started
-        text: More
 
 # additionalContent section (optional)
 # Card with summary style
