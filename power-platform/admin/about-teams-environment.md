@@ -52,7 +52,7 @@ See also: [Project Oakdale licensing FAQs](powerapps-flow-licensing-faq.md#proje
 
 ## Admin experience
 
-Tenant owners and members will be allowed to create their first app template or create a blank table app for the team. More information: [Project Oakdale tables: Overview](/powerapps/teams/overview-tables)
+Tenant owners and members will be allowed to create their first app template or create a blank table app for the team. More information: [Project Oakdale tables: Overview](https://docs.microsoft.com/powerapps/teams/create-table)
 
 Team owners will be allowed to delete a team associated with a Project Oakdale environment, which will trigger the deletion of that environment.
 
