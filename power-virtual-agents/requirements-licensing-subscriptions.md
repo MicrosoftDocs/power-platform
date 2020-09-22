@@ -46,6 +46,9 @@ You can also [start a 60 day free trial of Power Virtual Agents](https://aka.ms/
 
 :::image type="content" source="media/upgrade-create.png" alt-text="You are prompted to start a free trial or upgrade to a premium when creating a bot without a license.":::
 
+>[!NOTE]
+>The option to create a free trial may be disabled. See the [Self-service sign-up disabled section](sign-up-individual.md#self-service-sign-up-disabled) for more information.
+
 ## Standalone Power Virtual Agents subscription
 The standalone Power Virtual Agents subscription allows you to build chatbots on any supported channel and connect to any data using premium connectors. 
 
