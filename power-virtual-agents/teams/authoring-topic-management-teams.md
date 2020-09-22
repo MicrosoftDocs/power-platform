@@ -48,7 +48,7 @@ You can see the error state of a topic on the Topics page.
 
 :::image type="content" source="media/topics-errors-teams.png" alt-text="The topics page identifies the number of errors in your topic.":::
 
-Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting each error goes directly to the error.  
+Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting an error in the topic checker takes you directly to the source of the error in the topic.  
 
 :::image type="content" source="media/topics-checker-teams.png" alt-text="The topic checker is on the top navigation bar and shows all errors and warnings.":::
 
